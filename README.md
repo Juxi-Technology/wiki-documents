@@ -60,7 +60,7 @@ git clone --depth 1 https://github.com/{your repo}}/wiki-documents.git
 
 - USB Driver-free Sound Card
 
-### 配件
+### Accessories
 
 - 0.91-inch OLED Screen
 - KVM Switcher
