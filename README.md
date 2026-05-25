@@ -6,7 +6,7 @@ This is an open platform collecting all the wikis published by JuxiTechnology.
 
 This is the Github source files for JuxiTechnology.
 
-*we recommend pull the latest one(just around 30M):*
+*we recommend pull the latest one:*
 
 ```Bash
 git clone --depth 1 https://github.com/{your repo}}/wiki-documents.git
