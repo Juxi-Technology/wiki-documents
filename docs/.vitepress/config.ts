@@ -5,6 +5,7 @@ export default defineConfig({
   title: 'Juxi Technology Wiki',
   description: 'Juxi Technology 产品教程与文档',
   lang: 'zh-CN',
+  base: '/wiki-documents/',
 
   themeConfig: {
     logo: '/logo.png',
