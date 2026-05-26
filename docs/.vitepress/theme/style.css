@@ -7,108 +7,91 @@
   --vp-c-brand-darker: #047857;
 }
 
-.VPHero .VPButton.medium.brand {
-  background: linear-gradient(135deg, #10b981, #059669);
-  color: white;
+/* Remove all borders */
+* {
+  border: none !important;
 }
 
-.VPHero .VPButton.medium.brand:hover {
-  background: linear-gradient(135deg, #059669, #047857);
+/* Hide anchor links */
+.header-anchor {
+  display: none !important;
 }
 
-.VPNavBarTitle .VPNavBarTitleText {
-  font-weight: 700;
-  color: #1f2937;
-}
-
-.VPSidebar {
-  border-right: 1px solid #e5e7eb;
-}
-
-.VPSidebarGroupTitle {
-  font-weight: 600;
-  color: #374151;
-  font-size: 0.9rem;
-}
-
-.VPSidebarItem {
-  margin-bottom: 2px;
-}
-
-.VPSidebarItem a {
-  border-radius: 6px;
-  transition: all 0.2s ease;
-}
-
-.VPSidebarItem a:hover {
-  background-color: #f3f4f6;
-}
-
-.VPSidebarItem a.active {
-  background-color: #ecfdf5;
-  color: #059669;
-  font-weight: 500;
-}
-
-.VPDoc h1 {
-  font-size: 2.25rem;
-  font-weight: 700;
-  color: #111827;
-}
-
-.VPDoc h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #1f2937;
-  margin-top: 2rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.VPDoc h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #374151;
-}
-
-.VPDoc p {
-  color: #4b5563;
-  line-height: 1.75;
-}
-
-.VPDoc code {
-  background-color: #f3f4f6;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-  font-size: 0.875rem;
-}
-
-.VPDoc pre {
-  background-color: #1f2937;
-  border-radius: 8px;
-  padding: 1rem;
-  overflow-x: auto;
-}
-
-.VPDoc pre code {
-  background-color: transparent;
-  padding: 0;
-  color: #e5e7eb;
-}
-
-.VPFeature {
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 1.5rem;
-  transition: all 0.3s ease;
-}
-
-.VPFeature:hover {
-  border-color: #10b981;
-  box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.1);
-}
-
+/* Footer styles */
 .VPFooter {
-  border-top: 1px solid #e5e7eb;
-  background-color: #f9fafb;
+  background-color: #1e293b !important;
+  padding: 0.625rem 1.5rem !important;
+  margin-top: 1.5rem !important;
 }
+
+.VPFooter .container {
+  text-align: center !important;
+}
+
+.VPFooter .copyright {
+  color: #ffffff !important;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+}
+
+.VPFooter .copyright a {
+  color: #86efac !important;
+  font-weight: 700 !important;
+}
+
+.VPFooter .copyright a:hover {
+  color: #10b981 !important;
+}
+
+.VPFooter .message {
+  display: none !important;
+}
+
+/* Dark mode styles */
+.dark .VPDoc h1,
+.dark .VPDoc h2,
+.dark .VPDoc h3,
+.dark .VPDoc h4,
+.dark .VPDoc h5,
+.dark .VPDoc h6 {
+  color: #f9fafb !important;
+}
+
+.dark .VPDoc p {
+  color: #e5e7eb !important;
+}
+
+.dark .VPSidebarGroupTitle {
+  color: #e5e7eb !important;
+}
+
+.dark .VPSidebarItem a {
+  color: #e5e7eb !important;
+}
+
+.dark .VPSidebarItem a:hover {
+  background-color: #374151 !important;
+}
+
+.dark .VPSidebarItem a.active {
+  background-color: #1f2937 !important;
+  color: #10b981 !important;
+}
+
+.dark .VPNavBarTitle .VPNavBarTitleText {
+  color: #f9fafb !important;
+}
+
+.dark .VPFooter {
+  background-color: #1e293b !important;
+}
+
+.dark .VPFooter .copyright {
+  color: #ffffff !important;
+}
+
+.dark .VPFooter .copyright a {
+  color: #86efac !important;
+}
+
