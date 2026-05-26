@@ -1,66 +1,137 @@
 
-# Juxi Technology Wiki
+# The JuxiTechnology Files Management Platform
 
-Juxi Technology 产品教程与文档中心，基于 VitePress 构建，部署在 GitHub Pages 上。
+![img](https://juxitech.feishu.cn/space/api/box/stream/download/asynccode/?code=OGYyNTczMmUzY2QyM2NhNzA3YjA0Yjg1MDExOWEyZWVfUnpTc2xLQnpFeW40MjVHT2ZtV2Z3UU9NMlNydXc3OHpfVG9rZW46UmtEbWJ4blFzb29STWx4U3VsaGM1S1Vsbm1jXzE3Nzk0NDMxMjg6MTc3OTQ0NjcyOF9WNA)
 
-## 本地开发
+This is an open platform collecting all the wikis published by JuxiTechnology.
+
+This is the Github source files for JuxiTechnology.
+
+We recommend pull the latest one:
 
 ```bash
-# 安装依赖
+git clone --depth 1 https://github.com/Juxi-Technology/wiki-documents.git
+```
+
+# Quick Links
+
+## Robotics Page
+
+### Robot Kit
+
+#### Lerobot
+
+- SO-ARM101 RynnBot Develop kit
+- Lekiwi Mobile Robot
+- Xlerobot
+
+#### End Effectors
+
+- TPU Flexible Gripper
+
+#### Hand
+
+- AmazingHand
+
+#### Actuator
+
+- Feetech STS3215 Motor
+- Feetech SCS0009 Motor
+- JUXI Servo Driver Board
+
+### Sensor
+
+#### IMU
+
+- IMU High-precision Attitude Sensor (6-axis, 9-axis, 10-axis)
+
+#### Camera
+
+- 86° Auto-Focus Camera
+- 100° Fixed-focus Camera
+- IMX219 CSI Camera
+- D405C RealSense Depth Camera
+- D435i RealSense Depth Camera
+
+### AI Voice
+
+- AI Voice Interaction Module
+
+### Audio Module
+
+- USB Driver-free Sound Card
+
+### Accessories
+
+- 0.91-inch OLED Screen
+- KVM Switcher
+- 4K High-definition HDMI Capture Device
+
+---
+
+# Juxi Technology Wiki (VitePress)
+
+This project also includes a VitePress-based wiki website deployed on GitHub Pages.
+
+## Local Development
+
+```bash
+# Install dependencies
 npm install
 
-# 启动开发服务器
+# Start dev server
 npm run docs:dev
 
-# 构建生产版本
+# Build for production
 npm run docs:build
 
-# 预览构建结果
+# Preview build
 npm run docs:preview
 ```
 
-## 目录结构
+## Project Structure
 
 ```
 wiki-document/
 ├── docs/
 │   ├── .vitepress/
-│   │   └── config.ts          # VitePress 配置文件
-│   ├── public/                # 静态资源（图片等）
-│   ├── tutorials/             # 产品教程
-│   ├── tech/                  # 技术文档
-│   └── index.md               # 首页
+│   │   └── config.ts          # VitePress config
+│   ├── public/                # Static assets (images, etc.)
+│   ├── tutorials/             # Product tutorials
+│   ├── tech/                  # Technical docs
+│   └── index.md               # Home page
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml         # GitHub Pages 自动部署配置
+│       └── deploy.yml         # GitHub Pages auto deploy
 └── package.json
 ```
 
-## 部署到 GitHub Pages
+## Deploy to GitHub Pages
 
-1. 将代码推送到 GitHub 组织的仓库
-2. 在仓库设置中启用 GitHub Pages
-3. 在 Settings &gt; Pages 中：
-   - Source 选择 "Deploy from a branch"
-   - 或使用 GitHub Actions（已配置）
-4. 每次推送到 `main` 分支会自动触发部署
+1. Push code to GitHub
+2. Enable GitHub Pages in repo settings
+3. Under Settings &gt; Pages:
+   - Source: Select `GitHub Actions`
+4. Every push to `main` triggers auto deploy
 
-## 添加新文档
+## Add New Documentation
 
-1. 在 `docs/tutorials/` 或 `docs/tech/` 目录下创建新的 `.md` 文件
-2. 在 `docs/.vitepress/config.ts` 中的 `sidebar` 配置中添加链接
-3. 提交并推送到 GitHub，网站会自动更新
+1. Create new `.md` files in `docs/tutorials/` or `docs/tech/`
+2. Add links to `sidebar` in `docs/.vitepress/config.ts`
+3. Commit and push, website updates automatically
 
-## 自定义配置
+## Tech Stack
 
-编辑 `docs/.vitepress/config.ts` 来修改网站配置，包括：
-- 网站标题和描述
-- 导航栏和侧边栏
-- 主题颜色
-- 社交媒体链接
+- [VitePress](https://vitepress.dev/) - Static site generator
+- [GitHub Pages](https://pages.github.com/) - Hosting
+- [GitHub Actions](https://github.com/features/actions) - Auto deployment
 
-## 技术栈
+## 🔗 More Information
 
-- [VitePress](https://vitepress.dev/) - 静态站点生成器
-- [GitHub Pages](https://pages.github.com/) - 托管平台
-- [GitHub Actions](https://github.com/features/actions) - 自动部署
+For business inquiries, ODM cooperation or technical support, please contact us:
+
+- 🌐 Official Website: [https://www.juxitech.com](https://www.juxitech.com/)
+- 💬 Feedback: [pe@juxitech.com](mailto:pe@juxitech.com)
+- 📧 Business: [sales@juxitech.com](mailto:sales@juxitech.com)
+- 📺 Bilibili: [JuxiTech Bilibili](https://space.bilibili.com/3546906737248821)
+- 💴 TaoBao: [JuxiTech Taobao](https://juxitechnology.taobao.com/)
