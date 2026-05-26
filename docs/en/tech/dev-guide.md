@@ -1,21 +1,21 @@
 
-# 开发指南
+# Dev Guide
 
-本指南介绍如何基于 钜犀科技 产品进行二次开发。
+This guide introduces how to develop with Juxi Technology products.
 
-## 开发环境搭建
+## Development Environment Setup
 
-### 安装开发工具
+### Install Dev Tools
 
 ```bash
-# 安装 CLI 工具
+# Install CLI tools
 npm install -g @juxi/cli
 
-# 初始化项目
+# Initialize project
 juxi init my-project
 ```
 
-## 项目结构
+## Project Structure
 
 ```
 my-project/
@@ -26,7 +26,7 @@ my-project/
 └── package.json
 ```
 
-## 代码示例
+## Code Example
 
 ```javascript
 import { Device } from '@juxi/sdk'
