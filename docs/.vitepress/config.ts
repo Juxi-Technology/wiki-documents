@@ -4,6 +4,7 @@ export default defineConfig({
   title: '钜犀科技 Wiki',
   description: '钜犀科技 产品教程与文档',
   base: '/wiki-documents/',
+  ignoreDeadLinks: true,
   
   themeConfig: {
     search: {
