@@ -7,7 +7,7 @@ outline: false
 
 # Juxi Technology Wiki
 
-Since 2026, Juxi Technology has been a robotics and AI hardware partner, committed to realizing smarter and easier-to-use robotic solutions. This is an open platform that brings together all Wiki published by Juxi Technology, showing you our complete landscape in robot learning and automation.
+Juxi Technology has been a robotics and AI hardware partner, committed to realizing smarter and easier-to-use robotic solutions. This is an open platform that brings together all Wiki published by Juxi Technology, showing you our complete landscape in robot learning and automation.
 
 <div class="hero-links">
   <a href="/wiki-documents/en/tutorials/">Get Started</a>
