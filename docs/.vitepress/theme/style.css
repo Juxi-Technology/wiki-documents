@@ -1,4 +1,3 @@
-
 :root {
   --vp-c-brand: #10b981;
   --vp-c-brand-light: #34d399;
@@ -7,91 +6,65 @@
   --vp-c-brand-darker: #047857;
 }
 
-/* Remove all borders */
-* {
-  border: none !important;
+/* 隐藏标题锚点符号 */
+.vp-doc h1:hover .header-anchor,
+.vp-doc h2:hover .header-anchor,
+.vp-doc h3:hover .header-anchor,
+.vp-doc h4:hover .header-anchor,
+.vp-doc h5:hover .header-anchor,
+.vp-doc h6:hover .header-anchor {
+  display: none;
 }
 
-/* Hide anchor links */
-.header-anchor {
-  display: none !important;
+/* 隐藏所有分隔线 */
+.vp-doc hr {
+  display: none;
 }
 
-/* Footer styles */
-.VPFooter {
-  background-color: #1e293b !important;
-  padding: 0.625rem 1.5rem !important;
-  margin-top: 1.5rem !important;
+/* 去掉所有超链接下划线 */
+.vp-doc a {
+  text-decoration: none;
 }
 
-.VPFooter .container {
-  text-align: center !important;
+/* 侧边栏白色背景 - 最直接的方式 */
+.VPSidebar,
+.VPSidebarContainer,
+.VPLayoutSidebar,
+.VPLayoutSidebarContainer,
+.VPSidebarLinkGroup,
+.VPSidebarContent,
+.VPSidebarSpacer,
+.VPSidebarGroup,
+.VPSidebarLinks {
+  background-color: white !important;
 }
 
-.VPFooter .copyright {
-  color: #ffffff !important;
-  font-size: 1rem !important;
-  font-weight: 700 !important;
-  text-align: center !important;
+/* 深色模式下侧边栏适配 */
+.dark .VPSidebar,
+.dark .VPSidebarContainer,
+.dark .VPLayoutSidebar,
+.dark .VPLayoutSidebarContainer,
+.dark .VPSidebarLinkGroup,
+.dark .VPSidebarContent,
+.dark .VPSidebarSpacer,
+.dark .VPSidebarGroup,
+.dark .VPSidebarLinks {
+  background-color: #1e1e1e !important;
 }
 
-.VPFooter .copyright a {
-  color: #86efac !important;
-  font-weight: 700 !important;
+/* 确保导航栏和logo位置白色背景 */
+.VPNav,
+.VPNavBar,
+.VPNavBarTitle,
+.VPNavBarSpacer,
+.VPNavBarContainer {
+  background-color: white !important;
 }
 
-.VPFooter .copyright a:hover {
-  color: #10b981 !important;
+.dark .VPNav,
+.dark .VPNavBar,
+.dark .VPNavBarTitle,
+.dark .VPNavBarSpacer,
+.dark .VPNavBarContainer {
+  background-color: #1e1e1e !important;
 }
-
-.VPFooter .message {
-  display: none !important;
-}
-
-/* Dark mode styles */
-.dark .VPDoc h1,
-.dark .VPDoc h2,
-.dark .VPDoc h3,
-.dark .VPDoc h4,
-.dark .VPDoc h5,
-.dark .VPDoc h6 {
-  color: #f9fafb !important;
-}
-
-.dark .VPDoc p {
-  color: #e5e7eb !important;
-}
-
-.dark .VPSidebarGroupTitle {
-  color: #e5e7eb !important;
-}
-
-.dark .VPSidebarItem a {
-  color: #e5e7eb !important;
-}
-
-.dark .VPSidebarItem a:hover {
-  background-color: #374151 !important;
-}
-
-.dark .VPSidebarItem a.active {
-  background-color: #1f2937 !important;
-  color: #10b981 !important;
-}
-
-.dark .VPNavBarTitle .VPNavBarTitleText {
-  color: #f9fafb !important;
-}
-
-.dark .VPFooter {
-  background-color: #1e293b !important;
-}
-
-.dark .VPFooter .copyright {
-  color: #ffffff !important;
-}
-
-.dark .VPFooter .copyright a {
-  color: #86efac !important;
-}
-

@@ -10,8 +10,8 @@ outline: false
 自 2026 年起，鉅犀科技一直作為機器人與 AI 硬體合作夥伴，致力於實現更智慧、更易用的機器人解決方案。這裡是一個開放平台，彙集了鉅犀科技發布的全部 Wiki，向你展示我們在機器人學習與自動化方面的完整版圖。
 
 <div class="hero-links">
-  <a href="/wiki-documents/zh-TW/tutorials/">快速開始</a>
-  <a href="/wiki-documents/zh-TW/topics/">技術專題</a>
+  <a href="/wiki-documents/zh-HK/tutorials/">快速開始</a>
+  <a href="/wiki-documents/zh-HK/topics/">技術專題</a>
   <a href="https://github.com/Juxi-Technology/wiki-documents" target="_blank">GitHub</a>
 </div>
 
@@ -20,11 +20,11 @@ outline: false
 <div class="card-grid">
   <div class="card">
     <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=250&fit=crop" alt="SO-ARM101 視覺抓取教程">
-    <a href="/wiki-documents/zh-TW/tutorials/so-arm101-tutorial">SO-ARM101 視覺抓取完整教程</a>
+    <a href="/wiki-documents/zh-HK/tutorials/so-arm101-tutorial">SO-ARM101 視覺抓取完整教程</a>
   </div>
   <div class="card">
     <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=250&fit=crop" alt="LeRobot 數據採集進階">
-    <a href="/wiki-documents/zh-TW/tutorials/getting-started">LeRobot 數據採集進階技巧</a>
+    <a href="/wiki-documents/zh-HK/tutorials/getting-started">LeRobot 數據採集進階技巧</a>
   </div>
 </div>
 
@@ -33,11 +33,11 @@ outline: false
 <div class="category-grid">
   <div class="category-card">
     <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=200&fit=crop" alt="SO-ARM101 系列">
-    <a href="/wiki-documents/zh-TW/tutorials/so-arm101-tutorial">SO-ARM101 系列教程</a>
+    <a href="/wiki-documents/zh-HK/tutorials/so-arm101-tutorial">SO-ARM101 系列教程</a>
   </div>
   <div class="category-card">
     <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=200&fit=crop" alt="機器人學習專題">
-    <a href="/wiki-documents/zh-TW/topics/">技術專題</a>
+    <a href="/wiki-documents/zh-HK/topics/">技術專題</a>
   </div>
 </div>
 
