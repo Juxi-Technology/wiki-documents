@@ -36,6 +36,18 @@ outline: false
     <a href="/wiki-documents/tutorials/so-arm101-tutorial">SO-ARM101 系列教程</a>
   </div>
   <div class="category-card">
+    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=200&fit=crop" alt="技术文档">
+    <a href="/wiki-documents/tech/">技术文档</a>
+  </div>
+  <div class="category-card">
+    <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd6c5?w=400&h=200&fit=crop" alt="成功案例">
+    <a href="/wiki-documents/cases/">成功案例</a>
+  </div>
+  <div class="category-card">
+    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=200&fit=crop" alt="贡献者社区">
+    <a href="/wiki-documents/community/">贡献者社区</a>
+  </div>
+  <div class="category-card">
     <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=200&fit=crop" alt="机器人学习专题">
     <a href="/wiki-documents/topics/">技术专题</a>
   </div>

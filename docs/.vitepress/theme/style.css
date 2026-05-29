@@ -68,3 +68,56 @@
 .dark .VPNavBarContainer {
   background-color: #1e1e1e !important;
 }
+
+/* 右侧定位栏样式 */
+.VPOutline {
+  scroll-behavior: smooth;
+}
+
+.VPOutline .outline-link {
+  position: relative;
+  padding: 4px 12px;
+  margin: 2px 0;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  color: var(--vp-c-text-2);
+}
+
+.VPOutline .outline-link:hover {
+  color: var(--vp-c-brand);
+  background-color: rgba(16, 185, 129, 0.08);
+  transform: translateX(4px);
+}
+
+.VPOutline .outline-link.active {
+  color: var(--vp-c-brand);
+  background-color: rgba(16, 185, 129, 0.12);
+  font-weight: 600;
+}
+
+.VPOutline .outline-link.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 16px;
+  background-color: var(--vp-c-brand);
+  border-radius: 0 3px 3px 0;
+}
+
+/* 平滑滚动效果 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 定位栏整体间距优化 */
+.VPOutlineItem {
+  margin: 4px 0;
+  transition: all 0.2s ease;
+}
+
+.VPOutlineItem:hover {
+  transform: translateX(2px);
+}

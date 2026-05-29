@@ -15,57 +15,24 @@ git clone --depth 1 https://github.com/Juxi-Technology/wiki-documents.git
 
 # Quick Links
 
-## Robotics Page
+## 产品教程
+- [SO-ARM101 教程](/tutorials/so-arm101-tutorial)
+- [快速入门](/tutorials/getting-started)
+- [硬件设置](/tutorials/hardware-setup)
+- [软件配置](/tutorials/software-config)
 
-### Robot Kit
+## 技术文档
+- [开发指南](/tech/dev-guide)
+- [API 参考](/tech/api-reference)
 
-#### Lerobot
+## 技术专题
+- [机器人学习](/topics/robot-learning/)
 
-- SO-ARM101 RynnBot Develop kit
-- Lekiwi Mobile Robot
-- Xlerobot
+## 成功案例
+- [用户案例](/cases/)
 
-#### End Effectors
-
-- TPU Flexible Gripper
-
-#### Hand
-
-- AmazingHand
-
-#### Actuator
-
-- Feetech STS3215 Motor
-- Feetech SCS0009 Motor
-- JUXI Servo Driver Board
-
-### Sensor
-
-#### IMU
-
-- IMU High-precision Attitude Sensor (6-axis, 9-axis, 10-axis)
-
-#### Camera
-
-- 86° Auto-Focus Camera
-- 100° Fixed-focus Camera
-- IMX219 CSI Camera
-- D405C RealSense Depth Camera
-- D435i RealSense Depth Camera
-
-### AI Voice
-
-- AI Voice Interaction Module
-
-### Audio Module
-
-- USB Driver-free Sound Card
-
-### Accessories
-
-- 0.91-inch OLED Screen
-- KVM Switcher
-- 4K High-definition HDMI Capture Device
+## 贡献者社区
+- [加入社区](/community/)
 
 ---
 
@@ -99,6 +66,11 @@ wiki-document/
 │   ├── public/                # Static assets (images, etc.)
 │   ├── tutorials/             # Product tutorials
 │   ├── tech/                  # Technical docs
+│   ├── topics/                # Technical topics
+│   ├── cases/                 # User success cases
+│   ├── community/             # Contributor community
+│   ├── en/                    # English content
+│   ├── zh-HK/                 # Hong Kong Traditional Chinese content
 │   └── index.md               # Home page
 ├── .github/
 │   └── workflows/
