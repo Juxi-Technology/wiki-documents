@@ -31,3 +31,6 @@ yarn-error.log*
 .env
 .env.local
 .env.*.local
+
+# Trae specification files (local work)
+.trae

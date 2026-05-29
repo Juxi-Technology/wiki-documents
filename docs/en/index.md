@@ -36,6 +36,18 @@ Juxi Technology has been a robotics and AI hardware partner, committed to realiz
     <a href="/wiki-documents/en/tutorials/so-arm101-tutorial">SO-ARM101 Series Tutorials</a>
   </div>
   <div class="category-card">
+    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=200&fit=crop" alt="Tech Docs">
+    <a href="/wiki-documents/en/tech/">Tech Docs</a>
+  </div>
+  <div class="category-card">
+    <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd6c5?w=400&h=200&fit=crop" alt="Success Cases">
+    <a href="/wiki-documents/en/cases/">Success Cases</a>
+  </div>
+  <div class="category-card">
+    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=200&fit=crop" alt="Contributor Community">
+    <a href="/wiki-documents/en/community/">Contributor Community</a>
+  </div>
+  <div class="category-card">
     <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=200&fit=crop" alt="Robot Learning Topics">
     <a href="/wiki-documents/en/topics/">Tech Topics</a>
   </div>
