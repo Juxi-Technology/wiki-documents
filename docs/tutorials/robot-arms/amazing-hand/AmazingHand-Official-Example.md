@@ -112,7 +112,7 @@ sudo usermod -aG dialout $USER
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NWQ0MjA1OWRmMTI1M2YyYzlkMzU4OGI4YjM3ODg3MzNfMjdjZTVjZTljMmM3Yjk4YWVjMjVhNDA1YWUzMzA2NGRfSUQ6NzU5NTE0OTg1Mjk0MDMwNzQwMF8xNzgwMDUxNzA4OjE3ODAxMzgxMDhfVjM)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDk3YWMwYmVmNzE5M2Q5OTgxZDRiY2YyMWNmZGI1ZGJfMGEyNTZkOGIzZTk5MzcwNGYzOWZkNjg3NzAyM2ExZmZfSUQ6NzU5NTE0OTg5NDU5NzA3MDAyOV8xNzgwMDUxNzA4OjE3ODAxMzgxMDhfVjM)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDk3YWMwYmVmNzE5M2Q5OTgxZDRiY2YyMWNmZGI1ZGJfMGEyNTZkOGIzZTk5MzcwNGYzOWZkNjg3NzAyM2ExZmZfSUQ6NzU9NTE0OTg5NDU5NzA3MDAyOV8xNzgwMDUxNzA4OjE3ODAxMzgxMDhfVjM)
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MWRlNmU2ZGEzNDgxMTU0ZTEwZGIxNmEzZTVjYzcwNTBfMTkwMGY3MzYwODMwNDJjN2NmMDNkYjk3NWQ4MTUxYzNfSUQ6NzU9NTE0OTk3MTQ5NTUyMTQ5OV8xNzgwMDUxNzA4OjE3ODAxMzgxMDhfVjM)
 
@@ -335,7 +335,7 @@ uv pip install mediapipe==0.10.14
 
 根据实际报错情况修改对应的版本，例如dora-message需要0.6.0的，修改成dora-node-api="0.4.0" dora-message="0.6.0"
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjI2YWY1NDJlNTk3ZDM2MGU5MzQwOTI1MjIzMWQ5M2RfOTFhOGNiMGEzZjhkMGY5YjZmZjI1ZDVjNjZkMzRhMGFfSUQ6NzYyNjE4ODEyODY3MTk3NjY2MF8xNzgwMDUxNzA4OjE3ODAxMzgxMDhfVjM)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjI2YWY1NDJlNTk3ZDM6MGU5MzQwOTI1MjIzMWQ5M2RfOTFhOGNiMGEzZjhkMGY5YjZmZjI1ZDVjNjZkMzRhMGFfSUQ6NzYyNjE4ODEyODY3MTk3NjY2MF8xNzgwMDUxNzA4OjE3ODAxMzgxMDhfVjM)
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTVmODNhNzJhN2VlMDY4YzY1ODhhYWRiOGI1OGVlMzVfZGYzM2E4ZThmYjVlM2NjOGYzZDJiMTZkZGJmYWFhNTFfSUQ6NzYyNjE4ODE5NzM0MDg0Mjk0NV8xNzgwMDUxNzA4OjE3ODAxMzgxMDhfVjM)
 
@@ -353,9 +353,9 @@ python -m pip install opencv-contrib-python numpy mediapipe -i https://mirrors.a
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YzI5MDcxYjhhNjkyY2YwNjBmY2EyMWFmYjRiNWEyYzZfMDUzZjhjYzY4ZDcyYmUxNWQ3MzNlNmZkNmU3ODY2YTZfSUQ6NzU5OTk5Mjc0MDcxNzc0MzA3Ml8xNzgwMDUxNzA4OjE3ODAxMzgxMDhfVjM)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZWQ2NDMwM2M2ODE5MDQ2Yzg0MGQyZmQxZDhjNzE4YWFfYThmOGRjMzE1Y2M0NWQxYjQ2NGRhNTczNzcwMDRlNzlfSUQ6NzU5OTk5MjgwODk3NTcxNTUzNF8xNzgwMDUxNzA4OjE3ODAxMzgxMDhfVjM)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZWQ6NDMwM2M2ODE5MDQ2Yzg0MGQyZmQxZDhjNzE4YWFfYThmOGRjMzE1Y2M0NWQxYjQ2NGRhNTczNzcwMDRlNzlfSUQ6NzU9OTk5MjgwODk3NTcxNTUzNF8xNzgwMDUxNzA4OjE3ODAxMzgxMDhfVjM)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NTFmMGVjYWQwYjdjYWI1MmE4NjQ2ZDMyODZkZGY2YjJfNzkxZmNkNTdhMGZmN2E2N2M3YjBlNTExMGQwYTg4OTFfSUQ6NzU5OTk5MjkzODEwMTczODQ0N18xNzgwMDUxNzA4OjE3ODAxMzgxMDhfVjM)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NTFmMGVjYWQwYjdjYWI1MmE4NjQ2ZDMyODZkZGY6YjJfNzkxZmNkNTdhMGZmN2E2N2M3YjBlNTExMGQwYTg4OTFfSUQ6NzU9OTk5MjkzODEwMTczODQ0N18xNzgwMDUxNzA4OjE3ODAxMzgxMDhfVjM)
 
 ### 5、虚拟机22.04调用摄像头
 
@@ -372,8 +372,6 @@ python -m pip install opencv-contrib-python numpy mediapipe -i https://mirrors.a
 2.侧视环境相机套件
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NzNhMmFjZGUyNTNiNDlkYzk1MzFiMTRjNzlhZjI5NGZfMmYyMTBhNzMyMjEzZjkzM2Y4MWRhMjA1NzkyMzdmMGZfSUQ6NzYyNjIwMDAzNjY4MjQ2ODU3Nl8xNzgwMDUxNzA4OjE3ODAxMzgxMDhfVjM)
-
-
 
 ## 虚拟机22.04 直接运行手部追踪
 

@@ -1,3 +1,4 @@
+
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
@@ -41,11 +42,28 @@ export default defineConfig({
                                 collapsible: true,
                                 collapsed: false,
                                 items: [
-                                    { text: 'SO-ARM101 教程', link: '/tutorials/robot-arms/so-arm101-tutorial' },
-                                    { text: 'LeRobot机械臂组装教程', link: '/tutorials/robot-arms/lerobot-assembly' },
-                                    { text: '右灵巧手-界面控制', link: '/tutorials/robot-arms/right-dexterous-hand-ui' },
-                    { text: '灵巧手官方示例运行教程', link: '/tutorials/robot-arms/dexterous-hand-official-examples' },
-                    { text: '灵巧手(TTL串口舵机)调试教程', link: '/tutorials/robot-arms/dexterous-hand-ttl-debug' }
+                                    {
+                                        text: 'SO-ARM101',
+                                        collapsible: true,
+                                        collapsed: false,
+                                        items: [
+                                            { text: 'SO-ARM101-使用教程', link: '/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial' },
+                                            { text: 'SO-ARM101-组装教程', link: '/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly' },
+                                            { text: 'SO-ARM101-Jetson Orin PyTorch兼容性教程', link: '/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility' },
+                                            { text: 'SO-ARM101-臂载支架和环境相机套件安装教程', link: '/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation' },
+                                            { text: 'SO-ARM101-顶置摄像头安装教程', link: '/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation' }
+                                        ]
+                                    },
+                                    {
+                                        text: 'AmazingHand',
+                                        collapsible: true,
+                                        collapsed: false,
+                                        items: [
+                                            { text: 'AmazingHand-官方示例运行教程', link: '/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example' },
+                                            { text: 'AmazingHand-TTL调试教程', link: '/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging' },
+                                            { text: 'AmazingHand-界面控制教程', link: '/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control' }
+                                        ]
+                                    }
                                 ]
                             },
                             {
@@ -53,14 +71,12 @@ export default defineConfig({
                                 collapsible: true,
                                 collapsed: false,
                                 items: [
-                                    { text: '4K高清HDMI采集器教程', link: '/tutorials/accessories/4k-hdmi-capture-tutorial' },
-                                    { text: 'KVM切换器使用教程', link: '/tutorials/accessories/kvm-switch-tutorial' },
-                                    { text: 'USB免驱声卡教程', link: '/tutorials/accessories/usb-audio-card-tutorial' },
-                                    { text: '0.91寸OLED屏幕教程', link: '/tutorials/accessories/0.91-oled-screen-tutorial' },
-                                    { text: '树莓派_Jetson-OLED副屏教程', link: '/tutorials/accessories/raspberry-pi-jetson-oled' },
-                                    { text: '顶置摄像头安装座安装教程', link: '/tutorials/accessories/top-camera-mount' },
+                                    { text: '4K高清HDMI采集器-教程', link: '/tutorials/accessories/4k-hdmi-capture-tutorial' },
+                                    { text: 'KVM切换器-使用教程', link: '/tutorials/accessories/kvm-switch-tutorial' },
+                                    { text: 'USB免驱声卡-教程', link: '/tutorials/accessories/usb-audio-card-tutorial' },
+                                    { text: '0.91寸OLED屏幕-教程', link: '/tutorials/accessories/0.91-oled-screen-tutorial' },
                                     {
-                                        text: 'KWS语音识别模块',
+                                        text: 'KWS语音识别模块-系列教程',
                                         collapsible: true,
                                         collapsed: false,
                                         items: [
@@ -80,9 +96,8 @@ export default defineConfig({
                                 collapsible: true,
                                 collapsed: false,
                                 items: [
-                                    { text: '传感器与感知', link: '/tutorials/sensors' },
                                     {
-                                        text: 'IMU',
+                                        text: 'IMU惯导模块-系列教程',
                                         collapsible: true,
                                         collapsed: false,
                                         items: [
@@ -141,9 +156,7 @@ export default defineConfig({
                                 items: [
                                     { text: '快速入门', link: '/tutorials/learning-resources/getting-started' },
                                     { text: '硬件连接', link: '/tutorials/learning-resources/hardware-setup' },
-                                    { text: '软件配置', link: '/tutorials/learning-resources/software-config' },
-                                    { text: 'Jetson Orin上Pytorch不兼容问题', link: '/tutorials/learning-resources/jetson-orin-pytorch-compatibility' },
-                                    { text: 'SO-ARM100&101臂载支架和环境相机套件 安装教程', link: '/tutorials/learning-resources/so-arm100-101-camera-mount' }
+                                    { text: '软件配置', link: '/tutorials/learning-resources/software-config' }
                                 ]
                             }
                         ]
@@ -227,24 +240,120 @@ export default defineConfig({
                 { text: 'Tutorials Home', link: '/en/tutorials/' },
                 {
                   text: 'Robot Arm Series',
+                  collapsible: true,
+                  collapsed: false,
                   items: [
-                    { text: 'SO-ARM101 Tutorial', link: '/en/tutorials/robot-arms/so-arm101-tutorial' }
+                    {
+                      text: 'SO-ARM101',
+                      collapsible: true,
+                      collapsed: false,
+                      items: [
+                        { text: 'SO-ARM101-Tutorial', link: '/en/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial' },
+                        { text: 'SO-ARM101-Assembly', link: '/en/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly' },
+                        { text: 'SO-ARM101-Jetson-Orin-PyTorch-Compatibility', link: '/en/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility' },
+                        { text: 'SO-ARM101-100-Arm-Mount-Camera-Kit-Installation', link: '/en/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation' },
+                        { text: 'SO-ARM101-Overhead-Camera-Mount-Installation', link: '/en/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation' }
+                      ]
+                    },
+                    {
+                      text: 'AmazingHand',
+                      collapsible: true,
+                      collapsed: false,
+                      items: [
+                        { text: 'AmazingHand-Official-Example', link: '/en/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example' },
+                        { text: 'AmazingHand-TTL-Debugging', link: '/en/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging' },
+                        { text: 'AmazingHand-Interface-Control', link: '/en/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control' }
+                      ]
+                    }
                   ]
                 },
                 {
                   text: 'Robot Accessories',
+                  collapsible: true,
+                  collapsed: false,
                   items: [
-                    { text: 'Robot Accessories', link: '/en/tutorials/robot-accessories' }
+                    { text: '4K HDMI Capture Tutorial', link: '/en/tutorials/accessories/4k-hdmi-capture-tutorial' },
+                    { text: 'KVM Switch Tutorial', link: '/en/tutorials/accessories/kvm-switch-tutorial' },
+                    { text: 'USB Audio Card Tutorial', link: '/en/tutorials/accessories/usb-audio-card-tutorial' },
+                    { text: '0.91 OLED Screen Tutorial', link: '/en/tutorials/accessories/0.91-oled-screen-tutorial' },
+                    {
+                      text: 'KWS Speech Recognition Module Series',
+                      collapsible: true,
+                      collapsed: false,
+                      items: [
+                        { text: 'KWS Speech Recognition Module (Home)', link: '/en/tutorials/accessories/KWS-speech-recognition-module/index' },
+                        { text: 'Jetson Nano Serial Communication', link: '/en/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication' },
+                        { text: 'Jetson Serial Communication', link: '/en/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication' },
+                        { text: 'PC Serial Communication', link: '/en/tutorials/accessories/KWS-speech-recognition-module/PC-serial-communication' },
+                        { text: 'ROS2 RViz2 Visualization', link: '/en/tutorials/accessories/KWS-speech-recognition-module/ROS2-rviz2-visualization' },
+                        { text: 'Chinese and English Recognition Word Firmware Download and Burn', link: '/en/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words' },
+                        { text: 'Raspberry Pi Serial Communication', link: '/en/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication' }
+                      ]
+                    }
                   ]
                 },
                 {
                   text: 'Sensors and Perception',
+                  collapsible: true,
+                  collapsed: false,
                   items: [
-                    { text: 'Sensors and Perception', link: '/en/tutorials/sensors' }
+                    {
+                      text: 'IMU-Inertial Navigation Module-Series',
+                      collapsible: true,
+                      collapsed: false,
+                      items: [
+                        { text: 'IMU Tutorial', link: '/en/tutorials/sensors/imu/index' },
+                        { text: 'Product Info', link: '/en/tutorials/sensors/imu/product-info' },
+                        {
+                          text: 'ROS Examples',
+                          collapsible: true,
+                          collapsed: false,
+                          items: [
+                            { text: 'ROS1', link: '/en/tutorials/sensors/imu/ros-examples/ros1' },
+                            { text: 'ROS2', link: '/en/tutorials/sensors/imu/ros-examples/ros2' }
+                          ]
+                        },
+                        {
+                          text: 'Multi-Board Examples',
+                          collapsible: true,
+                          collapsed: false,
+                          items: [
+                            { text: 'Overview', link: '/en/tutorials/sensors/imu/multi-board-examples/overview' },
+                            { text: 'PC Communication', link: '/en/tutorials/sensors/imu/multi-board-examples/pc-communication' },
+                            {
+                              text: 'I2C Communication',
+                              collapsible: true,
+                              collapsed: false,
+                              items: [
+                                { text: 'Arduino', link: '/en/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino' },
+                                { text: 'Jetson', link: '/en/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson' },
+                                { text: 'RDK', link: '/en/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk' },
+                                { text: 'STM32', link: '/en/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32' },
+                                { text: 'Raspberry Pi', link: '/en/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi' }
+                              ]
+                            },
+                            {
+                              text: 'Serial Communication',
+                              collapsible: true,
+                              collapsed: false,
+                              items: [
+                                { text: 'Arduino', link: '/en/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino' },
+                                { text: 'Jetson', link: '/en/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson' },
+                                { text: 'RDK', link: '/en/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk' },
+                                { text: 'STM32', link: '/en/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32' },
+                                { text: 'Raspberry Pi', link: '/en/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi' }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 },
                 {
                   text: 'Learning Resources',
+                  collapsible: true,
+                  collapsed: false,
                   items: [
                     { text: 'Getting Started', link: '/en/tutorials/learning-resources/getting-started' },
                     { text: 'Hardware Setup', link: '/en/tutorials/learning-resources/hardware-setup' },
@@ -329,24 +438,120 @@ export default defineConfig({
                 { text: '產品教程首頁', link: '/zh-HK/tutorials/' },
                 {
                   text: '機器人機械臂系列',
+                  collapsible: true,
+                  collapsed: false,
                   items: [
-                    { text: 'SO-ARM101 教程', link: '/zh-HK/tutorials/robot-arms/so-arm101-tutorial' }
+                    {
+                      text: 'SO-ARM101',
+                      collapsible: true,
+                      collapsed: false,
+                      items: [
+                        { text: 'SO-ARM101-使用教程', link: '/zh-HK/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial' },
+                        { text: 'SO-ARM101-組裝教程', link: '/zh-HK/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly' },
+                        { text: 'SO-ARM101-Jetson Orin PyTorch兼容性教程', link: '/zh-HK/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility' },
+                        { text: 'SO-ARM101-臂載支架和環境相機套件安裝教程', link: '/zh-HK/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation' },
+                        { text: 'SO-ARM101-頂置攝像頭安裝教程', link: '/zh-HK/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation' }
+                      ]
+                    },
+                    {
+                      text: 'AmazingHand',
+                      collapsible: true,
+                      collapsed: false,
+                      items: [
+                        { text: 'AmazingHand-官方示例運行教程', link: '/zh-HK/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example' },
+                        { text: 'AmazingHand-TTL調試教程', link: '/zh-HK/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging' },
+                        { text: 'AmazingHand-界面控制教程', link: '/zh-HK/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control' }
+                      ]
+                    }
                   ]
                 },
                 {
                   text: '機器人配件',
+                  collapsible: true,
+                  collapsed: false,
                   items: [
-                    { text: '機器人配件', link: '/zh-HK/tutorials/robot-accessories' }
+                    { text: '4K高清HDMI採集器-教程', link: '/zh-HK/tutorials/accessories/4k-hdmi-capture-tutorial' },
+                    { text: 'KVM切換器-使用教程', link: '/zh-HK/tutorials/accessories/kvm-switch-tutorial' },
+                    { text: 'USB免驅聲卡-教程', link: '/zh-HK/tutorials/accessories/usb-audio-card-tutorial' },
+                    { text: '0.91寸OLED屏幕-教程', link: '/zh-HK/tutorials/accessories/0.91-oled-screen-tutorial' },
+                    {
+                      text: 'KWS語音識別模組-系列教程',
+                      collapsible: true,
+                      collapsed: false,
+                      items: [
+                        { text: 'KWS語音識別模組（首頁）', link: '/zh-HK/tutorials/accessories/KWS-speech-recognition-module/index' },
+                        { text: 'Jetson Nano串口通訊', link: '/zh-HK/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication' },
+                        { text: 'Jetson串口通訊', link: '/zh-HK/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication' },
+                        { text: 'PC串口通訊', link: '/zh-HK/tutorials/accessories/KWS-speech-recognition-module/PC-serial-communication' },
+                        { text: 'ROS2 RViz2可視化', link: '/zh-HK/tutorials/accessories/KWS-speech-recognition-module/ROS2-rviz2-visualization' },
+                        { text: '中英文識別詞固件下載與燒錄', link: '/zh-HK/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words' },
+                        { text: '樹莓派串口通訊', link: '/zh-HK/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication' }
+                      ]
+                    }
                   ]
                 },
                 {
                   text: '傳感器與感知',
+                  collapsible: true,
+                  collapsed: false,
                   items: [
-                    { text: '傳感器與感知', link: '/zh-HK/tutorials/sensors' }
+                    {
+                      text: 'IMU慣導模組-系列教程',
+                      collapsible: true,
+                      collapsed: false,
+                      items: [
+                        { text: 'IMU模組使用教程', link: '/zh-HK/tutorials/sensors/imu' },
+                        { text: 'IMU模組產品資料', link: '/zh-HK/tutorials/sensors/imu/product-info' },
+                        {
+                          text: 'ROS應用案例',
+                          collapsible: true,
+                          collapsed: false,
+                          items: [
+                            { text: 'ROS1應用', link: '/zh-HK/tutorials/sensors/imu/ros-examples/ros1' },
+                            { text: 'ROS2應用', link: '/zh-HK/tutorials/sensors/imu/ros-examples/ros2' }
+                          ]
+                        },
+                        {
+                          text: '多主控通訊案例',
+                          collapsible: true,
+                          collapsed: false,
+                          items: [
+                            { text: '多主控通訊案例', link: '/zh-HK/tutorials/sensors/imu/multi-board-examples/overview' },
+                            { text: 'PC通訊', link: '/zh-HK/tutorials/sensors/imu/multi-board-examples/pc-communication' },
+                            {
+                              text: 'IIC通訊',
+                              collapsible: true,
+                              collapsed: false,
+                              items: [
+                                { text: 'Arduino', link: '/zh-HK/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino' },
+                                { text: 'Jetson系列', link: '/zh-HK/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson' },
+                                { text: 'RDK系列', link: '/zh-HK/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk' },
+                                { text: 'STM32 F103C8T6', link: '/zh-HK/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32' },
+                                { text: '樹莓派5', link: '/zh-HK/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi' }
+                              ]
+                            },
+                            {
+                              text: '串口通訊',
+                              collapsible: true,
+                              collapsed: false,
+                              items: [
+                                { text: 'Arduino', link: '/zh-HK/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino' },
+                                { text: 'Jetson系列', link: '/zh-HK/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson' },
+                                { text: 'RDK系列', link: '/zh-HK/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk' },
+                                { text: 'STM32 F103C8T6', link: '/zh-HK/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32' },
+                                { text: '樹莓派5', link: '/zh-HK/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi' }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 },
                 {
                   text: '學習資源',
+                  collapsible: true,
+                  collapsed: false,
                   items: [
                     { text: '快速入門', link: '/zh-HK/tutorials/learning-resources/getting-started' },
                     { text: '硬件連接', link: '/zh-HK/tutorials/learning-resources/hardware-setup' },

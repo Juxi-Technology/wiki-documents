@@ -34,3 +34,4 @@ yarn-error.log*
 
 # Trae specification files (local work)
 .trae
+read-files.js
