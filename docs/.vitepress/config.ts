@@ -231,7 +231,6 @@ export default defineConfig({
         siteTitle: 'Juxi Technology',
         nav: [
           { text: 'Tutorials', link: '/en/tutorials/' },
-          { text: 'Topics', link: '/en/topics/' },
           { text: 'Shop', link: 'https://www.juxitech.com/', target: '_blank' }
         ],
         socialLinks: [
@@ -437,7 +436,6 @@ export default defineConfig({
         siteTitle: '鉅犀科技',
         nav: [
           { text: '產品教程', link: '/zh-HK/tutorials/' },
-          { text: '技術專題', link: '/zh-HK/topics/' },
           { text: '商店', link: 'https://www.juxitech.com/', target: '_blank' }
         ],
         socialLinks: [
