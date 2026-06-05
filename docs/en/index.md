@@ -10,62 +10,62 @@ outline: false
 Juxi Technology has been a robotics and AI hardware partner, committed to realizing smarter and easier-to-use robotic solutions. This is an open platform that brings together all Wiki published by Juxi Technology, showing you our complete landscape in robot learning and automation.
 
 <div class="hero-links">
-  <a href="/wiki-documents/en/tutorials/">Get Started</a>
-  <a href="/wiki-documents/en/topics/">Tech Topics</a>
-  <a href="https://github.com/Juxi-Technology/wiki-documents" target="_blank">GitHub</a>
+  <a href="/en/tutorials/">Get Started</a>
+  <a href="/en/topics/">Tech Topics</a>
+  <a href="https://github.com/Juxi-Technology/" target="_blank">GitHub</a>
 </div>
 
 ## Latest Documents
 
 <div class="card-grid">
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=250&fit=crop" alt="SO-ARM101 Visual Grasping Tutorial">
-    <a href="/wiki-documents/en/tutorials/so-arm101-tutorial">SO-ARM101 Visual Grasping Complete Tutorial</a>
-  </div>
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=250&fit=crop" alt="LeRobot Data Collection Advanced">
-    <a href="/wiki-documents/en/tutorials/getting-started">LeRobot Data Collection Advanced Skills</a>
-  </div>
+  <a href="/en/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial" class="card">
+    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=250&fit=crop" alt="SO-ARM101-Tutorial">
+    <span>SO-ARM101-Tutorial</span>
+  </a>
+  <a href="/en/tutorials/accessories/KWS-speech-recognition-module/index" class="card">
+    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=250&fit=crop" alt="KWS Speech Recognition Module Series">
+    <span>KWS Speech Recognition Module Series</span>
+  </a>
+  <a href="/en/tutorials/sensors/imu/index" class="card">
+    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop" alt="IMU Inertial Navigation Module">
+    <span>IMU Inertial Navigation Module</span>
+  </a>
+  <a href="/en/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control" class="card">
+    <img src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?w=400&h=250&fit=crop" alt="AmazingHand-Interface-Control">
+    <span>AmazingHand-Interface-Control</span>
+  </a>
 </div>
 
 ## Browse Categories
 
 <div class="category-grid">
-  <div class="category-card">
-    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=200&fit=crop" alt="SO-ARM101 Series">
-    <a href="/wiki-documents/en/tutorials/so-arm101-tutorial">SO-ARM101 Series Tutorials</a>
-  </div>
-  <div class="category-card">
-    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=200&fit=crop" alt="Tech Docs">
-    <a href="/wiki-documents/en/tech/">Tech Docs</a>
-  </div>
-  <div class="category-card">
-    <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd6c5?w=400&h=200&fit=crop" alt="Success Cases">
-    <a href="/wiki-documents/en/cases/">Success Cases</a>
-  </div>
-  <div class="category-card">
-    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=200&fit=crop" alt="Contributor Community">
-    <a href="/wiki-documents/en/community/">Contributor Community</a>
-  </div>
-  <div class="category-card">
-    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=200&fit=crop" alt="Robot Learning Topics">
-    <a href="/wiki-documents/en/topics/">Tech Topics</a>
-  </div>
+  <a href="/en/tutorials/robot-arms/" class="category-card">
+    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=200&fit=crop" alt="Robot Arm Series">
+    <span>Robot Arm Series</span>
+  </a>
+  <a href="/en/tutorials/accessories/" class="category-card">
+    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=200&fit=crop" alt="Robot Accessories">
+    <span>Robot Accessories</span>
+  </a>
+  <a href="/en/tutorials/sensors/" class="category-card">
+    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=200&fit=crop" alt="Sensors and Perception">
+    <span>Sensors and Perception</span>
+  </a>
 </div>
 
-## Tech Support & Product Discussion
+## More Information
 
-Thank you for choosing our products! We offer multiple support methods to ensure your usage experience is as smooth as possible. We provide multiple communication channels to meet different preferences and needs.
+Thank you for choosing our products! We offer multiple support methods to ensure your usage experience is as smooth as possible.
 
-- 📧 Email: support@juxitech.com
-- 💬 GitHub Issues: [Issue Feedback](https://github.com/Juxi-Technology/wiki-documents/issues)
 - 🌐 Official Website: [https://www.juxitech.com](https://www.juxitech.com)
+- 💬 Email: support@juxitech.com
+- 📧 Business: sales@juxitech.com
+- 📺 Bilibili: [https://space.bilibili.com/3546906737248821](https://space.bilibili.com/3546906737248821)
 
 <script setup>
 import { ref, onMounted } from 'vue'
 
 onMounted(() => {
-  // Custom JavaScript can be added here
 })
 </script>
 
@@ -105,6 +105,9 @@ onMounted(() => {
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 .card:hover {
@@ -118,11 +121,9 @@ onMounted(() => {
   object-fit: cover;
 }
 
-.card a {
+.card span {
   display: block;
   padding: 16px;
-  text-decoration: none;
-  color: inherit;
   font-weight: 500;
 }
 
@@ -139,6 +140,9 @@ onMounted(() => {
   overflow: hidden;
   text-align: center;
   transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 .category-card:hover {
@@ -152,15 +156,12 @@ onMounted(() => {
   object-fit: cover;
 }
 
-.category-card a {
+.category-card span {
   display: block;
   padding: 16px;
-  text-decoration: none;
-  color: inherit;
   font-weight: 600;
 }
 
-/* Increase section spacing */
 .vp-doc h2 {
   margin-top: 64px;
 }

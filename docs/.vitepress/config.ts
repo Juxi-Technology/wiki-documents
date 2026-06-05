@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: '钜犀科技 Wiki',
   description: '钜犀科技 产品教程与文档',
-  base: '/wiki-documents/',
+  base: '/',
   ignoreDeadLinks: true,
   
   themeConfig: {
@@ -23,7 +23,6 @@ export default defineConfig({
         siteTitle: '钜犀科技',
         nav: [
           { text: '产品教程', link: '/tutorials/' },
-          { text: '技术专题', link: '/topics/' },
           { text: '商店', link: 'https://juxitechnology.taobao.com/', target: '_blank' }
         ],
         socialLinks: [
@@ -39,6 +38,7 @@ export default defineConfig({
                             { text: '产品教程首页', link: '/tutorials/' },
                             {
                                 text: '机器人机械臂系列',
+                                link: '/tutorials/robot-arms/',
                                 collapsible: true,
                                 collapsed: false,
                                 items: [
@@ -68,6 +68,7 @@ export default defineConfig({
                             },
                             {
                                 text: '机器人配件',
+                                link: '/tutorials/accessories/',
                                 collapsible: true,
                                 collapsed: false,
                                 items: [
@@ -77,22 +78,34 @@ export default defineConfig({
                                     { text: '0.91寸OLED屏幕-教程', link: '/tutorials/accessories/0.91-oled-screen-tutorial' },
                                     {
                                         text: 'KWS语音识别模块-系列教程',
-                                        collapsible: true,
-                                        collapsed: false,
-                                        items: [
-                                            { text: 'KWS语音识别模块（首页）', link: '/tutorials/accessories/KWS-speech-recognition-module/index' },
-                                            { text: 'Jetson Nano串口通讯', link: '/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication' },
-                                            { text: 'Jetson串口通讯', link: '/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication' },
-                                            { text: 'PC串口通讯', link: '/tutorials/accessories/KWS-speech-recognition-module/PC-serial-communication' },
-                                            { text: 'ROS2 RViz2可视化', link: '/tutorials/accessories/KWS-speech-recognition-module/ROS2-rviz2-visualization' },
-                                            { text: '中英文识别词固件下载与烧录', link: '/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words' },
-                                            { text: '树莓派串口通讯', link: '/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication' }
-                                        ]
-                                    }
-                                ]
-                            },
+                        collapsible: true,
+                        collapsed: false,
+                        items: [
+                            { text: 'KWS语音识别模块（首页）', link: '/tutorials/accessories/KWS-speech-recognition-module/index' },
+                            { text: 'Jetson Nano串口通讯', link: '/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication' },
+                            { text: 'Jetson串口通讯', link: '/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication' },
+                            { text: 'PC串口通讯', link: '/tutorials/accessories/KWS-speech-recognition-module/PC-serial-communication' },
+                            { text: 'ROS2 RViz2可视化', link: '/tutorials/accessories/KWS-speech-recognition-module/ROS2-rviz2-visualization' },
+                            { text: '中英文识别词固件下载与烧录', link: '/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words' },
+                            { text: '树莓派串口通讯', link: '/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication' }
+                        ]
+                    },
+                    {
+                        text: 'Feetech飞特舵机系列教程',
+                        collapsible: true,
+                        collapsed: false,
+                        items: [
+                            { text: '飞特舵机STS3215&SCS0009调试教程', link: '/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial' },
+                            { text: '舵机SCS通信协议', link: '/tutorials/accessories/feetech/Feetech-SCS_Communication_Protocol' },
+                            { text: '磁编码STS舵机-内存表解析', link: '/tutorials/accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis' },
+                            { text: '电位器SCSCL舵机-内存表解析', link: '/tutorials/accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis' }
+                        ]
+                    }
+                ]
+            },
                             {
                                 text: '传感器与感知',
+                                link: '/tutorials/sensors/',
                                 collapsible: true,
                                 collapsed: false,
                                 items: [
@@ -150,14 +163,8 @@ export default defineConfig({
                                 ]
                             },
                             {
-                                text: '学习资源',
-                                collapsible: true,
-                                collapsed: false,
-                                items: [
-                                    { text: '快速入门', link: '/tutorials/learning-resources/getting-started' },
-                                    { text: '硬件连接', link: '/tutorials/learning-resources/hardware-setup' },
-                                    { text: '软件配置', link: '/tutorials/learning-resources/software-config' }
-                                ]
+                                text: 'Lark Wiki',
+                                link: '/tutorials/lark-wiki'
                             }
                         ]
                     }
@@ -240,6 +247,7 @@ export default defineConfig({
                 { text: 'Tutorials Home', link: '/en/tutorials/' },
                 {
                   text: 'Robot Arm Series',
+                  link: '/en/tutorials/robot-arms/',
                   collapsible: true,
                   collapsed: false,
                   items: [
@@ -269,6 +277,7 @@ export default defineConfig({
                 },
                 {
                   text: 'Robot Accessories',
+                  link: '/en/tutorials/accessories/',
                   collapsible: true,
                   collapsed: false,
                   items: [
@@ -289,11 +298,23 @@ export default defineConfig({
                         { text: 'Chinese and English Recognition Word Firmware Download and Burn', link: '/en/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words' },
                         { text: 'Raspberry Pi Serial Communication', link: '/en/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication' }
                       ]
+                    },
+                    {
+                      text: 'Feetech Servo Series Tutorials',
+                      collapsible: true,
+                      collapsed: false,
+                      items: [
+                        { text: 'Feetech Servo STS3215&SCS0009 Debugging Tutorial', link: '/en/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial' },
+                        { text: 'Servo SCS Communication Protocol', link: '/en/tutorials/accessories/feetech/Feetech-SCS_Communication_Protocol' },
+                        { text: 'Magnetic Encoder STS Servo - Memory Table Analysis', link: '/en/tutorials/accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis' },
+                        { text: 'Potentiometer SCSCL Servo - Memory Table Analysis', link: '/en/tutorials/accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis' }
+                      ]
                     }
                   ]
                 },
                 {
                   text: 'Sensors and Perception',
+                  link: '/en/tutorials/sensors/',
                   collapsible: true,
                   collapsed: false,
                   items: [
@@ -351,14 +372,8 @@ export default defineConfig({
                   ]
                 },
                 {
-                  text: 'Learning Resources',
-                  collapsible: true,
-                  collapsed: false,
-                  items: [
-                    { text: 'Getting Started', link: '/en/tutorials/learning-resources/getting-started' },
-                    { text: 'Hardware Setup', link: '/en/tutorials/learning-resources/hardware-setup' },
-                    { text: 'Software Config', link: '/en/tutorials/learning-resources/software-config' }
-                  ]
+                  text: 'Lark Wiki',
+                  link: '/en/tutorials/lark-wiki'
                 }
               ]
             }
@@ -438,6 +453,7 @@ export default defineConfig({
                 { text: '產品教程首頁', link: '/zh-HK/tutorials/' },
                 {
                   text: '機器人機械臂系列',
+                  link: '/zh-HK/tutorials/robot-arms/',
                   collapsible: true,
                   collapsed: false,
                   items: [
@@ -467,6 +483,7 @@ export default defineConfig({
                 },
                 {
                   text: '機器人配件',
+                  link: '/zh-HK/tutorials/accessories/',
                   collapsible: true,
                   collapsed: false,
                   items: [
@@ -487,11 +504,23 @@ export default defineConfig({
                         { text: '中英文識別詞固件下載與燒錄', link: '/zh-HK/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words' },
                         { text: '樹莓派串口通訊', link: '/zh-HK/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication' }
                       ]
+                    },
+                    {
+                      text: 'Feetech飛特舵機系列教程',
+                      collapsible: true,
+                      collapsed: false,
+                      items: [
+                        { text: '飛特舵機STS3215&SCS0009調試教程', link: '/zh-HK/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial' },
+                        { text: '舵機SCS通信協議', link: '/zh-HK/tutorials/accessories/feetech/Feetech-SCS_Communication_Protocol' },
+                        { text: '磁編碼STS舵機-內存表解析', link: '/zh-HK/tutorials/accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis' },
+                        { text: '電位器SCSCL舵機-內存表解析', link: '/zh-HK/tutorials/accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis' }
+                      ]
                     }
                   ]
                 },
                 {
                   text: '傳感器與感知',
+                  link: '/zh-HK/tutorials/sensors/',
                   collapsible: true,
                   collapsed: false,
                   items: [
@@ -549,14 +578,8 @@ export default defineConfig({
                   ]
                 },
                 {
-                  text: '學習資源',
-                  collapsible: true,
-                  collapsed: false,
-                  items: [
-                    { text: '快速入門', link: '/zh-HK/tutorials/learning-resources/getting-started' },
-                    { text: '硬件連接', link: '/zh-HK/tutorials/learning-resources/hardware-setup' },
-                    { text: '軟件配置', link: '/zh-HK/tutorials/learning-resources/software-config' }
-                  ]
+                  text: 'Lark Wiki',
+                  link: '/en/tutorials/lark-wiki'
                 }
               ]
             }

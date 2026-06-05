@@ -10,62 +10,62 @@ outline: false
 钜犀科技一直作为机器人与 AI 硬件合作伙伴，致力于实现更智能、更易用的机器人解决方案。这里是一个开放平台，汇集了钜犀科技发布的全部 Wiki，向你展示我们在机器人学习与自动化方面的完整版图。
 
 <div class="hero-links">
-  <a href="/wiki-documents/tutorials/">快速开始</a>
-  <a href="/wiki-documents/topics/">技术专题</a>
-  <a href="https://github.com/Juxi-Technology/wiki-documents" target="_blank">GitHub</a>
+  <a href="/tutorials/">快速开始</a>
+  <a href="/topics/">技术专题</a>
+  <a href="https://github.com/Juxi-Technology/" target="_blank">GitHub</a>
 </div>
 
 ## 最新文档
 
 <div class="card-grid">
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=250&fit=crop" alt="SO-ARM101 视觉抓取教程">
-    <a href="/wiki-documents/tutorials/so-arm101-tutorial">SO-ARM101 视觉抓取完整教程</a>
-  </div>
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=250&fit=crop" alt="LeRobot 数据采集进阶">
-    <a href="/wiki-documents/tutorials/getting-started">LeRobot 数据采集进阶技巧</a>
-  </div>
+  <a href="/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial" class="card">
+    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=250&fit=crop" alt="SO-ARM101-使用教程">
+    <span>SO-ARM101-使用教程</span>
+  </a>
+  <a href="/tutorials/accessories/KWS-speech-recognition-module/index" class="card">
+    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=250&fit=crop" alt="KWS语音识别模块-系列教程">
+    <span>KWS语音识别模块-系列教程</span>
+  </a>
+  <a href="/tutorials/sensors/imu/index" class="card">
+    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop" alt="IMU惯性导航模块">
+    <span>IMU惯性导航模块</span>
+  </a>
+  <a href="/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control" class="card">
+    <img src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?w=400&h=250&fit=crop" alt="AmazingHand-界面控制教程">
+    <span>AmazingHand-界面控制教程</span>
+  </a>
 </div>
 
 ## 浏览分类
 
 <div class="category-grid">
-  <div class="category-card">
-    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=200&fit=crop" alt="SO-ARM101 系列">
-    <a href="/wiki-documents/tutorials/so-arm101-tutorial">SO-ARM101 系列教程</a>
-  </div>
-  <div class="category-card">
-    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=200&fit=crop" alt="技术文档">
-    <a href="/wiki-documents/tech/">技术文档</a>
-  </div>
-  <div class="category-card">
-    <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd6c5?w=400&h=200&fit=crop" alt="成功案例">
-    <a href="/wiki-documents/cases/">成功案例</a>
-  </div>
-  <div class="category-card">
-    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=200&fit=crop" alt="贡献者社区">
-    <a href="/wiki-documents/community/">贡献者社区</a>
-  </div>
-  <div class="category-card">
-    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=200&fit=crop" alt="机器人学习专题">
-    <a href="/wiki-documents/topics/">技术专题</a>
-  </div>
+  <a href="/tutorials/robot-arms/" class="category-card">
+    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=200&fit=crop" alt="机器人机械臂系列">
+    <span>机器人机械臂系列</span>
+  </a>
+  <a href="/tutorials/accessories/" class="category-card">
+    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=200&fit=crop" alt="机器人配件">
+    <span>机器人配件</span>
+  </a>
+  <a href="/tutorials/sensors/" class="category-card">
+    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=200&fit=crop" alt="传感器与感知">
+    <span>传感器与感知</span>
+  </a>
 </div>
 
-## 技术支持与产品讨论
+## 更多信息
 
-感谢你选择我们的产品！我们提供多种支持方式，以确保你的使用体验尽可能顺畅。我们提供多个沟通渠道，以满足不同偏好与需求。
+感谢你选择我们的产品！我们提供多种支持方式，以确保你的使用体验尽可能顺畅。
 
-- 📧 邮箱：support@juxitech.com
-- 💬 GitHub Issues：[问题反馈](https://github.com/Juxi-Technology/wiki-documents/issues)
 - 🌐 官方网站：[https://www.juxitech.com](https://www.juxitech.com)
+- 💬 邮箱：support@juxitech.com
+- 📧 商务合作：sales@juxitech.com
+- 📺 B站：[https://space.bilibili.com/3546906737248821](https://space.bilibili.com/3546906737248821)
 
 <script setup>
 import { ref, onMounted } from 'vue'
 
 onMounted(() => {
-  // 这里可以添加自定义的 JavaScript
 })
 </script>
 
@@ -105,6 +105,9 @@ onMounted(() => {
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 .card:hover {
@@ -118,11 +121,9 @@ onMounted(() => {
   object-fit: cover;
 }
 
-.card a {
+.card span {
   display: block;
   padding: 16px;
-  text-decoration: none;
-  color: inherit;
   font-weight: 500;
 }
 
@@ -139,6 +140,9 @@ onMounted(() => {
   overflow: hidden;
   text-align: center;
   transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 .category-card:hover {
@@ -152,15 +156,12 @@ onMounted(() => {
   object-fit: cover;
 }
 
-.category-card a {
+.category-card span {
   display: block;
   padding: 16px;
-  text-decoration: none;
-  color: inherit;
   font-weight: 600;
 }
 
-/* 增加模块间距 */
 .vp-doc h2 {
   margin-top: 64px;
 }

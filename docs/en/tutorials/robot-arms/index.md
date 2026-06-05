@@ -1,27 +1,30 @@
 ---
-title: Robot Arms Tutorials
-description: Complete tutorial collection for various robotic arm products
+title: Robot Arm Series
 ---
 
-# Robot Arms Tutorials
+# Robot Arm Series
 
-Welcome to the robot arms tutorial section! Here you'll find learning resources for all our robotic arm products.
-
----
-
-## Product Series
-
-| SO-ARM101 |
-|---|
-| ![](https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=300&h=200&fit=crop) |
-| Entry-level 6-DOF robotic arm, perfect for education, research, and maker projects |
-| [**📚 Go to Tutorial**](/en/tutorials/so-arm101) |
+Welcome to the robot arm series tutorials! Here you'll find complete guides for various open-source robotic arms and dexterous hands.
 
 ---
 
-## Upcoming Products
+## Product List
 
-More robotic arm product tutorials coming soon! Stay tuned!
+### SO-ARM101
+
+6-axis desktop open-source robotic arm, supporting LeRobot and other AI frameworks.
+
+- [SO-ARM101 Tutorial](./so-arm101/SO-ARM101-Tutorial.md)
+- [SO-ARM101 Assembly Guide](./so-arm101/SO-ARM101-Assembly.md)
+- [SO-ARM101 Jetson Orin PyTorch Compatibility](./so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility.md)
+
+### AmazingHand
+
+Open-source bionic dexterous hand, providing high-precision multi-finger operation capability.
+
+- [AmazingHand Interface Control](./amazing-hand/AmazingHand-Interface-Control.md)
+- [AmazingHand Official Example](./amazing-hand/AmazingHand-Official-Example.md)
+- [AmazingHand TTL Debugging](./amazing-hand/AmazingHand-TTL-Debugging.md)
 
 ---
 
@@ -29,5 +32,5 @@ More robotic arm product tutorials coming soon! Stay tuned!
 
 If you have any questions, please contact:
 
-- 📧 Email：support@juxitech.com
-- 💬 GitHub Issues：[Feedback](https://github.com/Juxi-Technology/wiki-documents/issues)
+- 📧 Email: support@juxitech.com
+- 💬 GitHub Issues: [Feedback](https://github.com/Juxi-Technology/wiki-documents/issues)
