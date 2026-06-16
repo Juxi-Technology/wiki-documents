@@ -19,19 +19,19 @@ Juxi Technology has been a robotics and AI hardware partner, committed to realiz
 
 <div class="card-grid">
   <a href="/en/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial" class="card">
-    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=250&fit=crop" alt="SO-ARM101-Tutorial">
+    <img src="/images/home-cards/SO-ARM101.png" alt="SO-ARM101-Tutorial">
     <span>SO-ARM101-Tutorial</span>
   </a>
   <a href="/en/tutorials/accessories/KWS-speech-recognition-module/index" class="card">
-    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=250&fit=crop" alt="KWS Speech Recognition Module Series">
+    <img src="/images/home-cards/AI_SoundCard.png" alt="KWS Speech Recognition Module Series">
     <span>KWS Speech Recognition Module Series</span>
   </a>
   <a href="/en/tutorials/sensors/imu/index" class="card">
-    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop" alt="IMU Inertial Navigation Module">
+    <img src="/images/home-cards/IMU.png" alt="IMU Inertial Navigation Module">
     <span>IMU Inertial Navigation Module</span>
   </a>
   <a href="/en/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control" class="card">
-    <img src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?w=400&h=250&fit=crop" alt="AmazingHand-Interface-Control">
+    <img src="/images/home-cards/AmazingHand.png" alt="AmazingHand-Interface-Control">
     <span>AmazingHand-Interface-Control</span>
   </a>
 </div>
@@ -40,15 +40,15 @@ Juxi Technology has been a robotics and AI hardware partner, committed to realiz
 
 <div class="category-grid">
   <a href="/en/tutorials/robot-arms/" class="category-card">
-    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=200&fit=crop" alt="Robot Arm Series">
+    <img src="/images/categories/SO-ARM101.png" alt="Robot Arm Series">
     <span>Robot Arm Series</span>
   </a>
   <a href="/en/tutorials/accessories/" class="category-card">
-    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=200&fit=crop" alt="Robot Accessories">
+    <img src="/images/categories/AI_SoundCard.png" alt="Robot Accessories">
     <span>Robot Accessories</span>
   </a>
   <a href="/en/tutorials/sensors/" class="category-card">
-    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=200&fit=crop" alt="Sensors and Perception">
+    <img src="/images/categories/IMU.png" alt="Sensors and Perception">
     <span>Sensors and Perception</span>
   </a>
 </div>

@@ -1,0 +1,12 @@
+/* 增大 Logo 尺寸 */
+.VPNavBar .logo {
+  height: 48px !important;
+  width: auto !important;
+  max-height: 48px !important;
+}
+
+.VPNavBar .logo img {
+  height: 48px !important;
+  width: auto !important;
+  max-height: 48px !important;
+}

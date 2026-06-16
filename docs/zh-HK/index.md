@@ -19,19 +19,19 @@ outline: false
 
 <div class="card-grid">
   <a href="/zh-HK/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial" class="card">
-    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=250&fit=crop" alt="SO-ARM101-使用教程">
+    <img src="/images/home-cards/SO-ARM101.png" alt="SO-ARM101-使用教程">
     <span>SO-ARM101-使用教程</span>
   </a>
   <a href="/zh-HK/tutorials/accessories/KWS-speech-recognition-module/index" class="card">
-    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=250&fit=crop" alt="KWS語音識別模組-系列教程">
+    <img src="/images/home-cards/AI_SoundCard.png" alt="KWS語音識別模組-系列教程">
     <span>KWS語音識別模組-系列教程</span>
   </a>
   <a href="/zh-HK/tutorials/sensors/imu/index" class="card">
-    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop" alt="IMU慣性導航模組">
+    <img src="/images/home-cards/IMU.png" alt="IMU慣性導航模組">
     <span>IMU慣性導航模組</span>
   </a>
   <a href="/zh-HK/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control" class="card">
-    <img src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?w=400&h=250&fit=crop" alt="AmazingHand-界面控制教程">
+    <img src="/images/home-cards/AmazingHand.png" alt="AmazingHand-界面控制教程">
     <span>AmazingHand-界面控制教程</span>
   </a>
 </div>
@@ -40,15 +40,15 @@ outline: false
 
 <div class="category-grid">
   <a href="/zh-HK/tutorials/robot-arms/" class="category-card">
-    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=200&fit=crop" alt="機器人機械臂系列">
+    <img src="/images/categories/SO-ARM101.png" alt="機器人機械臂系列">
     <span>機器人機械臂系列</span>
   </a>
   <a href="/zh-HK/tutorials/accessories/" class="category-card">
-    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=200&fit=crop" alt="機器人配件">
+    <img src="/images/categories/AI_SoundCard.png" alt="機器人配件">
     <span>機器人配件</span>
   </a>
   <a href="/zh-HK/tutorials/sensors/" class="category-card">
-    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=200&fit=crop" alt="傳感器與感知">
+    <img src="/images/categories/IMU.png" alt="傳感器與感知">
     <span>傳感器與感知</span>
   </a>
 </div>

@@ -121,3 +121,16 @@ html {
 .VPOutlineItem:hover {
   transform: translateX(2px);
 }
+
+/* 调大 Logo 尺寸 */
+.VPNavBarTitle img {
+  width: 50px !important;
+  height: 50px !important;
+  min-width: 50px !important;
+  min-height: 50px !important;
+}
+
+/* 隐藏导航栏标题文字，只显示 Logo */
+.VPNavBarTitle .text {
+  display: none !important;
+}

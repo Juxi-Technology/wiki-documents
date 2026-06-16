@@ -19,7 +19,10 @@ export default defineConfig({
       lang: 'zh-CN',
       description: '钜犀科技 产品教程与文档',
       themeConfig: {
-        logo: '/logo.png',
+        logo: {
+          light: '/images/logos/logo-black.png',
+          dark: '/images/logos/logo-white.png'
+        },
         siteTitle: '钜犀科技',
         nav: [
           { text: '产品教程', link: '/tutorials/' },
@@ -227,7 +230,10 @@ export default defineConfig({
       lang: 'en',
       description: 'Juxi Technology Product Tutorials and Documentation',
       themeConfig: {
-        logo: '/logo.png',
+        logo: {
+          light: '/images/logos/logo-black.png',
+          dark: '/images/logos/logo-white.png'
+        },
         siteTitle: 'Juxi Technology',
         nav: [
           { text: 'Tutorials', link: '/en/tutorials/' },
@@ -432,7 +438,10 @@ export default defineConfig({
       lang: 'zh-HK',
       description: '鉅犀科技 產品教程與文檔',
       themeConfig: {
-        logo: '/logo.png',
+        logo: {
+          light: '/images/logos/logo-black.png',
+          dark: '/images/logos/logo-white.png'
+        },
         siteTitle: '鉅犀科技',
         nav: [
           { text: '產品教程', link: '/zh-HK/tutorials/' },
