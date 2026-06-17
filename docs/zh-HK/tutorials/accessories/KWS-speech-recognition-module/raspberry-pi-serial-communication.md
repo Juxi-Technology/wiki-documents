@@ -14,7 +14,7 @@
 ls /dev/ttyUSB*
 ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ODdjZjhmOGYzZjY4M2Y4OThkYjcwODI2YzExZTJiNDRfMTc1MjY4ZTQxYThlNWIxNTEzOGQ2ZDNmZjc1NTM0NjhfSUQ6NzYzODk2MTIxOTgxMTY0MjMyMF8xNzgwNDAzODcxOjE3ODA0OTAyNzFfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/1.png)
 
 ## 2\.代碼實現
 
@@ -149,7 +149,7 @@ if __name__ == "__main__":
 
 其中第一第二個字節AA 55表示的是協議的幀頭，第三個字節00表示的是播報功能，第四個就是播報內容 的ID，這裏能看到“小車前進”是16進制的07，所以程序裏給寄存器0x03發送0x07即可播報對應內容。 第五個字節是結束幀。 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OWUyMDc0NDkwOThlNjQyMzJkYTU4NjM5MWQxMjRlYTVfYTM2NWEwZGNlOTg3YTg5MWZjZDBlZDQ2NWNmZTBkMGJfSUQ6NzYzODk2MTIyMDc1NzgxODMwNF8xNzgwNDAzODcxOjE3ODA0OTAyNzFfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/2.png)
 
 終端輸入以下指令運行程序
 
@@ -161,11 +161,11 @@ python3 -m speech_serial
 
 說“關燈”，控制檯會回覆接收Read\_ID：13
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDNkZmRjMmNhODY5NGMzNTQxM2JlYmUzNzYxYWRmM2NfNWUxYzBjNThmZmJiNGIxYWUyNGJiZGNhNWU2OWRjYzhfSUQ6NzYzODk2MTIxOTY1OTA3NDUzN18xNzgwNDAzODcxOjE3ODA0OTAyNzFfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/3.png)
 
 這時候可以打開附件的 命令詞播報詞協議列表V1\_中文文件 查看“關燈”的協議 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZGZhMWY0YzkyM2IxYWE3YzZhYjI5NjllZDM4NzQzMDVfZDBlOWVlZDRkODE1YTI3ZWZjNTkxZTIzZjE4ZDZmZmJfSUQ6NzYzODk2MTIxOTIzMTM3MDE4OV8xNzgwNDAzODcxOjE3ODA0OTAyNzFfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/4.png)
 
 其中第一第二個字節AA 55表示的是協議的幀頭，第三個字節表示的是芯片的十個功能詞的ID，第四個就 是命令詞的ID，這裏能看到“關燈”是16進制的0D，十進制是13。第五個字節是結束幀。
 

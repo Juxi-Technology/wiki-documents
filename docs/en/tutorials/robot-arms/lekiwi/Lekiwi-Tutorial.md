@@ -16,7 +16,7 @@ The code in this tutorial repository is maintained at the stable version of Lero
 
 Online URDF Preview https://urdf\.d\-robotics\.cc/
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OWE4ZTE4ZDM2MzNiMGQ0ZDE1NTJhZGZlYTc2NDkxZjNfNGFjMGQ1YmFlYjFjN2VlN2JmNjU2MTY5NmMxNDg5YTNfSUQ6NzY0MTIwOTAxNDIzNzE3MDYzNV8xNzgwNjYxOTk4OjE3ODA3NDgzOThfVjM)
+![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
 ## Main Features
 
@@ -143,7 +143,7 @@ This usually installs ffmpeg 7\.X compiled with the libsvtav1 encoder for your p
 
 If you encounter the following error, you can also use the above command to resolve it\. 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NTVjZjUzNWIwNTU2MGFhZTk5MjE3NjZjM2QyYjA0ODVfZmRjZTU3NjhjMTA2ZjI3NmVkNDY1ZTJkMzE1ZTU5ODFfSUQ6NzY0MTIwOTAxMjY5MzgxNDIxMl8xNzgwNjYxOTk4OjE3ODA3NDgzOThfVjM)
+![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
 ### 6\. Install LeRobot with feetech motor dependencies:
 
@@ -168,7 +168,7 @@ On your computer:
 
 Copy and paste the following command in your shell:`source ~/.bashrc` or for Mac users:`source ~/.bash_profile` or `source ~/.zshrc` \(if you are using zshell\)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTc5NmM3ZDA4YWU3OTg5NzI2MDliMGU2YTJhN2RjMGJfOTZmOGRlMDgwZmE5MzQxZjc5MTI5N2E2ZTRmZDdmY2ZfSUQ6NzY0MTIwOTAxNDQ2MjAyNDY1NF8xNzgwNjYxOTk4OjE3ODA3NDgzOThfVjM)
+![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
 ### 3\. Create and activate a new Conda environment for LeRobot
 
@@ -206,7 +206,7 @@ This usually installs ffmpeg 7\.X compiled with the libsvtav1 encoder for your p
 
 If you encounter the following error, you can also use the above command to resolve it\. 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjdhMGY3MzYyMzRmOWUzMGZjMjY0ODg1NGJhNzhlYjhfNDI4MmRjMDgwY2JlNjBhNWVkNDA5NTlmYjc4YTQwNzlfSUQ6NzY0MTIwOTAxNjQwNzkzNTk2Nl8xNzgwNjYxOTk4OjE3ODA3NDgzOThfVjM)
+![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
 ### 6\. Install LeRobot with feetech motor dependencies:
 
@@ -217,9 +217,9 @@ pip install *-e* ".[lekiwi]"
 
 # Configure Motor 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YTgxM2NjYjJlMzk1ZWFlMWIzNWRmOGVlNWEzNjY5NGNfYzg4NjYwMDQ1ZThlZGY0NjJmZGM0ZGJjMmZkZjMzYThfSUQ6NzY0MTIwOTAxMzc5MDg3MDQ4Ml8xNzgwNjYxOTk4OjE3ODA3NDgzOThfVjM)
+![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=M2UzYmVkMmVkYTlhMjk3MjQ3ZjYwMGZmMzJjODI3ZDhfMzg3MmMyYWJlZmYzMDY2NWI4Y2YzNzM4MTM5NjZhMTNfSUQ6NzY0MTIwOTAxMzA2NTU4MzU1Ml8xNzgwNjYxOTk4OjE3ODA3NDgzOThfVjM)
+![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
 ### **1\. Find the USB port associated with the robotic arm**
 
@@ -250,7 +250,7 @@ lerobot-setup-motors \
     *--robot.port*=/dev/tty.usbmodem58760431551 # <- paste here the port found at previous step
 ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YjUwMzU5MjE4ZTZiZGU4NjVlMzQ4ZGFmMzdhYWQwZjhfNzUxYzE5YjJmMzgzMjgzM2QzZTZjYzQzYTJkZGNmZDJfSUQ6NzY0MTIwOTAxNTE5NTk2MjMwMF8xNzgwNjYxOTk4OjE3ODA3NDgzOThfVjM)
+![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
 ### 3\. Set up the domestic mirroring of HuggingFace
 
@@ -291,11 +291,11 @@ source ~/.zshrc
 
 https://huggingface\.co/settings/tokens
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTA0OWQxOGQxMzZiYTU4MTFhZmVjNzEyZDhmMDI5MGJfYTRiOWI5M2EyODVlM2IwOGU1MmFjZDE0OTIxZGJhNzZfSUQ6NzY0MTIwOTAxNDM4MTQxNTM3NF8xNzgwNjYxOTk4OjE3ODA3NDgzOThfVjM)
+![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZmMxNGIzNTc0OTZjZTViMDEyMTUzMGQ0NmQ3YzMxZGVfOTc1MWQ0MjFmYzBkZDNiYjQ5YmUxZWU5NzBkNmE3ZWFfSUQ6NzY0MTIwOTAxNTI3MTQ1OTc5Nl8xNzgwNjYxOTk4OjE3ODA3NDgzOThfVjM)
+![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjFjOTU1NDNjYWQwNzBjMGI1OWExY2EyMTJhYjkwOTVfMjUyNGRiNmY0OWVlZWY1MzFlZmU1NWEyY2VlNTc4ZTVfSUQ6NzY0MTIwOTAxNjI1MjY2NDc3Ml8xNzgwNjYxOTk4OjE3ODA3NDgzOThfVjM)
+![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
 #### ② Record Token
 
@@ -313,17 +313,17 @@ hf auth login
 hf auth whoami
 ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MGExMmEwMWVlMGQ5ODAxMzAyNTZhODZmZmIzZDdkOGNfOTFhNzA2MTVkZTJiMmJkOGI2OTY2MDVkYWVkMjQ5NjdfSUQ6NzY0MTIwOTAxNDEzMDYwOTA4M18xNzgwNjYxOTk4OjE3ODA3NDgzOThfVjM)
+![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
 #### ④Create Dataset Repo
 
 **Record the Owner and Dateset name, which are the \<hf\_username\> and \<dateset\_repo\_id\> required later **
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Y2JhYzRjNWFhOTQ5NDczMDcwYzc4ZjFhZjVmNjMwZjdfZTUzYTliZmYxMjI1YzhiNzUyNjJhMjcyNmVjY2RiMjZfSUQ6NzY0MTIwOTAxMjM2NTExODQyOF8xNzgwNjYxOTk4OjE3ODA3NDgzOThfVjM)
+![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjU3MGMwOWEwYmU1NzcwMjc0MzRkNjM3ZmVhM2NkNWJfZTZhNzVmOTFhYmE5Y2ZhNmE2OWY4OGVhNjY3MjExOTdfSUQ6NzY0MTIwOTAxNDA4NjMwNjc4Nl8xNzgwNjYxOTk4OjE3ODA3NDgzOThfVjM)
+![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NjY5YTI4ZDU4ZDkxZWQyYzU5MTMwZTJhNGZhYzQ3MzZfYzkxYjliMDQyOWVhY2UyMzc0MmEyYzQ1YmFmZWE3ODZfSUQ6NzY0MTIwOTAxNjM5MTA2MDQyOF8xNzgwNjYxOTk4OjE3ODA3NDgzOThfVjM)
+![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
 ### 4\. Update the configuration\!\!\!
 
@@ -340,7 +340,7 @@ Important Note: Now that you have obtained the port number of the active arm and
 
 Modify these four files under the example\\lekiwi directory
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YjRiZTA1ZDFjNTQ3ZTc5NjU1ZWU3ZGJkMDFiMDA3MmZfODZhNWQzNTVjNzc5ZGJjOGFkZDAyZjE1OGVlYjVkNjZfSUQ6NzY0MTIwOTAxNDAwMDY4Mzk4MV8xNzgwNjYxOTk4OjE3ODA3NDgzOThfVjM)
+![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
 #### ①修改teleoperate\.py
 
@@ -348,7 +348,7 @@ remote\_ip: IP address of Raspberry Pi
 
 port: Port Number when the active arm is connected to a computer or Linux
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjQ5ZTkyZTcxMWVhY2EwM2IwNTZmNjMyNWFmNzI4MThfZDRhMTliZjk4NjBhNTI3YTQyZDhlY2Y5ZjY4NzExMThfSUQ6NzY0MTIwOTAxMzU3NzE5MDMzNl8xNzgwNjYxOTk4OjE3ODA3NDgzOThfVjM)
+![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
 #### ②Modify record\.py
 
@@ -358,7 +358,7 @@ remote\_ip: IP address of Raspberry Pi
 
 port: Port Number when the active arm is connected to a computer or Linux
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ODU2YTY2MjZkZWUzZjcxOWQ4YjU0Y2YxYzlkOTk5NmNfNDNmNTMwNjYyYTk1NTlmMTRhMTdhNmJjOGM4NDg0YjlfSUQ6NzY0MTIwOTAxNDgwNzQ0ODUyOV8xNzgwNjYxOTk4OjE3ODA3NDgzOThfVjM)
+![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
 #### ③Modify replay\.py
 
@@ -366,7 +366,7 @@ remote\_ip: IP address of Raspberry Pi
 
 \<hf\_username\>/\<dataset\_repo\_id\>, i\.e\., [the Hugging Face username and dataset name](https://juxitech.feishu.cn/docx/DXtPd0iF1oO3aGxRChBcL3LSnFh?fromScene=spaceOverview#doxcnsAUzU1e1l6XIM07OE8grYg)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OWRjNzcxYTEzZDViZDg4OTVkNjI4ZDgyNDQ1MWZkN2NfNDVkYzVjNDVjZmNjNTIxMjkxZmM4YTUzYjBjNTU1MDhfSUQ6NzY0MTIwOTAxNDg5NTQ0NzAwOV8xNzgwNjYxOTk4OjE3ODA3NDgzOThfVjM)
+![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
 ## Calibration
 
@@ -397,7 +397,7 @@ We unified the calibration methods for most robots\. First, we need to move the 
 
 Open a new Anaconda Prompt
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MDhkYjA2NGJlNDdhZDlhM2E0NDVlMGNiYzU0ODEwZjRfNjgwOTIwNmRhZjllNTg0MzMzYzM3OTZlNDQzNDE1N2VfSUQ6NzY0MTIwOTAxNTY4NjY2MzExMF8xNzgwNjYxOTk4OjE3ODA3NDgzOThfVjM)
+![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
 > If you are using a Mac, you may need to grant "Terminal" permission to access the keyboard for remote operations\. Please go to "System Preferences" \> "Security \& Privacy" \> "Input Monitoring", and then check the "Terminal" checkbox\. 
 > 
@@ -409,7 +409,7 @@ To perform remote operations, log in to your Raspberry Pi via SSH and run the fo
 python -m lerobot.robots.lekiwi.lekiwi_host --robot.id=my_awesome_kiwi
 ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MzllYjM0MDA0NjU2YTZkZDc3YWI3YmI2MGI4YjE0ZGVfYzY1MDRiZTNiZmZiZjY0NWM2N2Y5YzM3MWMxYmZkMjBfSUQ6NzY0MTIwOTAxMzIwNzk5MzMwMF8xNzgwNjYxOTk4OjE3ODA3NDgzOThfVjM)
+![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
 Next, on your laptop, also run the following command to activate the environment `conda activate lerobot`, and then run the following script:
 
@@ -577,7 +577,7 @@ HF\_DATASET\_ID = "\< hf\_username \>/\< eval\_dataset\_id \>" Change the userna
 
 remote\_ip: Raspberry Pi IP address
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjliNjkzYmM3NWE1MmVlNDEyMTIzNDk1ODM2YWU1YWJfMGQzMmQ2NzU5MTVkMzBkMGJmNzc2NDUxMzY5ZTVmZjVfSUQ6NzY0MTIwOTAxNTIwNDk4OTkwNF8xNzgwNjYxOTk4OjE3ODA3NDgzOThfVjM)
+![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
 Then run the following command: 
 

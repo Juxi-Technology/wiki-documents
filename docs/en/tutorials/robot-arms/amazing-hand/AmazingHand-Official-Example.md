@@ -28,9 +28,9 @@ Reference for Rust Environment Variable Setup on Windows \(Important\!\) https:/
 
 Linux Environment Variable Settings:
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OGE0ODQ5ZTVlOTA5ZTllNzY1NTEzYWFjODU0MDU2MjJfYTJkYzJjY2IyOTZkNDNjNWJlZTM5OThkZGI4MzQzOTlfSUQ6NzY0MDA3ODYzOTkwODA0ODA2NV8xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/1.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NGI3NmQyOWMyZDcxYzAxMzlkYzgxODI4NjEwZjFmYzNfYjU5N2E2ZGI4OTQ2ZmMwOGIwOTM4MmI3NjRmNTljNTVfSUQ6NzY0MDA3ODYzODMxODYwMzQ0M18xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/10.png)
 
 Visual Studio Installer may be required for the first installation
 
@@ -48,25 +48,25 @@ registry = "https://mirrors.tuna.tsinghua.edu.cn/git/crates.io-index.git"
 
 **2\. Install uv:** [https://docs\.astral\.sh/uv/getting\-started/installation/](https://docs.astral.sh/uv/getting-started/installation/)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YWI3MjMwYTgyNDJjMzNhNTUyNjUwNTJlNjU3ZWMwYzZfMWI2OGY1OTI4Nzg0NmYwMzE1MDliZDUxYmU0ZGVmOWZfSUQ6NzY0MDA3ODYzNzg1MzE2NjgwMV8xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/11.png)
 
 Open thePowershellterminal on the Windows side, copy and then enter this command to install
 
 **Linux Environment Variable Settings:**
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MzI5OGMyZGU0ZjI1N2RlMjc4ZTMwZWRhYWZhOTA1ZjVfY2E2YmI4ZGMzMjhjN2FhOTFkZmFmMDQ4YjA0NWQyM2VfSUQ6NzY0MDA3ODYzODQ4MjE2NDk1MV8xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/12.png)
 
 **3\. Install dora\-rs:**Please refer to [https://dora\-rs\.ai/docs/guides/Installation/installing](https://dora-rs.ai/docs/guides/Installation/installing) for download and installation
 
 Linux Environment Variable Settings:
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MGI0ZmUwOGZlNDlkODlmZjI4OTIzODFjMzFhZGFjMDFfNTZjZWU5MTM1YWY5N2Q0ZDhkYjc2NjhlNWQ0Nzg0MmRfSUQ6NzY0MDA3ODY0MDcyMTU3OTE5N18xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/13.png)
 
 ## 3\. Wiring Method
 
 The power supply requires at least 5V3A, is externally connected to a servo driver board, and is connected to the computer via USB 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OGIzNWE0ZmI2MzRkZGMyODRiOTk4YWIwMTRiZTljNzJfOWVkNDMwOGVlMzIyYmE3ODM4ZWRiOTdiZWIwNjYzZDZfSUQ6NzY0MDA3ODYzOTM5NjM0Mjk4Ml8xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/14.png)
 
 ## 4\. Example Demonstration
 
@@ -74,7 +74,7 @@ The power supply requires at least 5V3A, is externally connected to a servo driv
 
 - The Windows system is generally COM11, and the Port Number of the servo driver board can be found through Device Manager or Feite Servo Host Computer 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTA1Njc5YjBmYTE5OGFmNTVmNWIyYzg4Nzc3OTFjNjVfNTUyZDQ2YmY3ZDU3Yjg3OGJmY2NlYTIyNWVjOGZhNzlfSUQ6NzY0MDA3ODY0MDQ5MDkyNTI1MV8xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/16.png)
 
 - Ubuntu and Linux systems are generally /dev/ttyACM0
 
@@ -94,13 +94,13 @@ sudo usermod -aG dialout $USER
 
 If the command "ls /dev/ttyUSB\* /dev/ttyACM\*" fails to find the directory in the virtual machine, please check if the dexterous hand is connected to the computer in the lower right corner of the virtual machine\. If so, please choose to disconnect it and connect it to the virtual machine\. 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjdhNjBiNDIwNzI4YTQ4ODk1MWRkMmFjZGFiODRjNWFfYWQxNjc2Nzc1YWVhYzI5YmFjMTYwYzRiNDljZDAzNTRfSUQ6NzY0MDA3ODY0MTE5MTI5MjEyOF8xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
 
 ### **2\. Modify the Port Number in the code**
 
 ① Locate the main\.rs code file under the AmazingHand\-main\\Demo\\AHControl\\src directory, open it in a text editor, and modify it to the port number found on your own host \(COM\* for Windows, and generally /dev/ttyACM\* for Ubuntu and Linux systems\)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OGZiNWY1MWI0ZTEyMDM0MDE0MmU3MDQ5NzIzZjNmYjRfYmMyNWRhZWU2MmYwZGQzZTI1MTcyOWUyZTZlNDU2ZTBfSUQ6NzY0MDA3ODYzNzgxNjk3NDUyNV8xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/19.png)
 
 ② Locate the corresponding instance file 
 
@@ -112,11 +112,11 @@ If the command "ls /dev/ttyUSB\* /dev/ttyACM\*" fails to find the directory in t
 
 Open in text format and modify it to the port number found on your own host \(COM\* for Windows, and generally /dev/ttyACM\* for Ubuntu and Linux systems\) 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjkwZmRmYWE4ZWE2ZjcxODc0ZGI4ZjRkMWY1YjQ0ZTRfZWFkNmI5OGVmZjgwNmY0NzQ4YmUwZjljOGQ1MDRjNmRfSUQ6NzY0MDA3ODYzNzY3NzAzODgwN18xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/2.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NTkxMzk0MjE1MDVmNzY0NzRkZDY2YjM4NTYwNWRjNjZfMDNlNzBhYzg2NDMzOWE0OTljNGU0OWFiN2EwNGMzYzFfSUQ6NzY0MDA3ODYzOTA5NDMwMzk0MF8xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZTNiZjU4NTdhMTEwYjM0ZWRhNTkwNjlmMWNkNjBkODVfOTkyYmNlM2Y5MzU2Mjc5N2Q4OGVmOTg3ZGFjMDhkYWNfSUQ6NzY0MDA3ODY0MTIyNDg2Mjg5OV8xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/21.png)
 
 ### **3\. Code Deployment**
 
@@ -148,7 +148,7 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 source .venv/bin/activate
 ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDdhMjBlNTFkOGExNmMwY2IzNTZkOWU2NGUzMzM3OThfNjA2ZjE1M2FmZDc0NzM0ZTFiMTU5YWQ2ZDBiMzVhODBfSUQ6NzY0MDA3ODY0MDMwNjMyNjcyNV8xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/3.png)
 
 Ensure that the Console has activated the virtual environment\!
 
@@ -220,9 +220,9 @@ dora build dataflow_tracking_simu.yml --uv   *#(Execute only once)*
 dora run dataflow_tracking_simu.yml --uv
 ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NGJhMTM1NTFmYzMzMjI1NTczZDNjYjMwMTAwOWJkZjFfNzFhMGNmYWUyMWNmNmMwZjZkOWYyZDUyZjBkYTA4OWRfSUQ6NzY0MDA3ODYzOTQ1MDkwMTY5M18xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/4.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=M2FiYzhjZGI0OGE3NDBjMjJkMDVhZDgyOTBhY2I3NmJfODZhOGNmZTNjNGQzMDY3MmQyNjk3NjBkYzRiMjE1N2ZfSUQ6NzY0MDA3ODY0MTE5MTI3NTc0NF8xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/5.png)
 
 ### Real hardware operation \(hand tracking\)
 
@@ -250,7 +250,7 @@ dora run dataflow_tracking_simu.yml --uv
 
     #### Dual dexterous hands \(note that both are connected to a servo driver board\) 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjkzMGEwYWUzNTZmYWY1MTM0NmMwMGM2NTNhOWZjNGZfMTMyY2JlYTg3NDA4MDY2NjBkZDBkOTMxNDU4ZDM0MjZfSUQ6NzY0MDA3ODYzOTg1MzQ0MDIwOV8xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/6.png)
 
     ```Plain Text
     dora build dataflow_tracking_real_2hands.yml --uv   *#(Execute only once)*
@@ -260,9 +260,9 @@ dora run dataflow_tracking_simu.yml --uv
     dora run dataflow_tracking_real_2hands.yml --uv
     ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjY4NTYwZTUzZWUwNzhjZDZmMWU1NzYzOTc5ZDEzMWVfYTg3MDUyMWNhZjZmZTdkODIwMGI5MmUzNzBjZTkyNGFfSUQ6NzY0MDA3ODY0MDkxMDMwNjQ5OV8xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/7.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZmY2NzdkYWVjNmY2YjVmZWJlOWFiZmUxM2FkZmYyNmNfZjU1MjU3Mjc2ZmEyOTkzNzc0MmI5NTE4N2ZjNzFmMjFfSUQ6NzY0MDA3ODYzOTE1MzAyNDIwNF8xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/8.png)
 
 ### Simple example to control the angle of the simulated finger
 
@@ -276,9 +276,9 @@ dora run dataflow_tracking_simu.yml --uv
     dora run dataflow_angle_simu.yml --uv
     ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDY4ZjVkOTFkYWEwOWNjYzMyMjJhNzFjZDZhMDgyM2VfZmFhYjcwYTQ5N2Q1MzhiYTY2NTM2ZGQ1Y2M0MWRiMjRfSUQ6NzY0MDA3ODYzODY2MjUwMzY0NF8xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/9.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NjNjYzhmOTQ4M2RlN2RhZGFmNzdiNjlhNmE2NmY0ZDFfZWM3MDQ3YTgxYzY3MDgxYTMzY2IzMTc2MDY5NDg4NzRfSUQ6NzY0MDA3ODY0MTAzMTkyNDk1N18xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/1.png)
 
 Description
 
@@ -306,7 +306,7 @@ uv pip install mediapipe==0.10.14
 
 ### 2\. Dora version incompatibility, message format \(v0\.7\.0 vs v0\.8\.0\)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OGU0ZTEyNDcwN2JhZjQyYjU4NmNiMjYyODQzZWViMTlfYzdiZTdiNTY4OGJhZGE0MGJjMTVhNzM2NDQzYWUwZDZfSUQ6NzY0MDA3ODYzOTA5NDMyMDMyNF8xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/10.png)
 
 Answer: ① First, under the\.cargo/registry/src/github\.xxxxxxxx/ directory in the C drive user directorydelete onlythe corresponding dependency package\!
 
@@ -332,13 +332,13 @@ Answer: ① First, under the\.cargo/registry/src/github\.xxxxxxxx/ directory in 
 
 Modify the corresponding version according to the actual error reporting situation\. For example, if dora\-message requires version 0\.6\.0, change it to dora\-node\-api="0\.4\.0" dora\-message="0\.6\.0"\.
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NjM3MWVhNTZkNzBmMjFlYTE2YjNhNTljMzg3ZmQ5MjlfZTZiYTFhNzI2Y2Y3YmJlYWY3YTg1YTY3MTE2ZTcyM2JfSUQ6NzY0MDA3ODYzOTU4MDkwODc0Nl8xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/11.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MDk0OGMxYTZkODJmZTU4MWNhZmI2Yjc4MDFkNjY5ZmZfZTU1M2VkYzZlNTAxZWEyMWU5NTg2ZjM4Njk5YzMxMTJfSUQ6NzY0MDA3ODY0MTExNTc5NDYyOF8xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/12.png)
 
 ### 3\. No openCV dependency library
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDJiNTYzNWQ3ZDBkNDk4MzNmYjI0YmNjYzA5ZTUwYmFfZTE2NjkyMTkyZjE3ZDc5ZTJlN2IwY2MxNjdhNTNmNTJfSUQ6NzY0MDA3ODYzOTAzMTQ4NzY3OF8xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/13.png)
 
 Enter the following command in the HandTracking directory 
 
@@ -348,11 +348,11 @@ python -m pip install opencv-contrib-python numpy mediapipe -i https://mirrors.a
 
 ### 4\.  Camera Permission Enabled  \(Computer\) 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NzFhNjJlZDZhOGRjNjg1NjIyYjQ2MjNiZDBiYTUyNTlfZmExNWNhOWY2YWM2ODQzODhmMDlmMjk2YWNiMzBlMDNfSUQ6NzY0MDA3ODYzNzQ3MTUwMTUxNV8xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/14.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjJiNzNkMzFkMTRiNmQ5MTg4NzEwMWYwYzU0NjgxZjVfMDZiNGMwNjIyMTIxODk1ZGZhYjEyYzliZTgwNzhkZGFfSUQ6NzY0MDA3ODYzODEzNDA4Njg2NV8xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/16.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZTkxMjVhYWFkNWQwMjIwZjU0ZWYyMzE4NDhiYzgyZmZfYWE1MzViZjI0ZTMxZDI5OTNkZDFhZmM5MjE3NWYyNGVfSUQ6NzY0MDA3ODYzOTg1MzQyMzgyNV8xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
 
 ### 5\. Virtual Machine 22\.04 calls the camera
 
@@ -364,11 +364,11 @@ Reference https://blog\.csdn\.net/qq\_19731521/article/details/124954288
 
 1\. First, fix the fine\-tuning angle bracket
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDQ0NjI3MjcxNzUwY2Y3MjlhOWRkMDFhYWU1NDBhMzVfYjk3NWUxODE5NDMzOGZiYTY2MzA1NjRlNDJhYzllNGRfSUQ6NzY0MDA3ODYzOTQxNzQ5NDczM18xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/19.png)
 
 2\. Side View Environment Camera Kit
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZGY2NWViZjAxYmIxMGMwYjFlYzMzNmE2NzA5OWRhMWZfMmFhNWNhNWZiMTI4MDc0MWUxMzk0MWY1YWFlZjA3NTdfSUQ6NzY0MDA3ODY0MDQyNzg5NTk4Nl8xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/2.png)
 
 
 
@@ -422,7 +422,7 @@ sudo usermod -aG dialout $USER
 
 ① Locate the main\.rs code file under the AmazingHand\-main\\Demo\\AHControl\\src directory, open it in text mode, and modify it to the port number found on your own host \(COM\* for Windows, and generally /dev/ttyACM\* for Ubuntu and Linux systems\)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTg2OTc1NzgzYTUxOTFiMzIyZjVlOTYxZGEzNTNhZTVfNmEwMmU4YzY3NTlhOTk4NGMyY2E0NGEyZTVjMGFkMWJfSUQ6NzY0MDA4Mzk0NjM0NDMyMDE5N18xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
 
 ② Find the corresponding instance file 
 
@@ -434,11 +434,11 @@ sudo usermod -aG dialout $USER
 
 Open in text format and modify it to the port number found on your own host \(COM\* for Windows, and generally /dev/ttyACM\* for Ubuntu and Linux systems\) 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=N2Q0NGU2OTMxMDIxMjJlYjJkNGU5ZmQyZDkyOTFkMzVfMzNmZWYwOTI4YjlhZTk3NTAwZGE5YmU5NjczOWU5NjFfSUQ6NzY0MDA4Mzk0NzI5NjUwODg5MV8xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/21.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZmFmZDI3NDhiZWI5N2RkNjE4ZGVlNjBiMjc0MDE2YjdfMjk5NWFiZjg2ZTdkZjEwYTE2ZjAwZjcwMTY5M2IxMzJfSUQ6NzY0MDA4Mzk1MDU5Mjk2OTY1OV8xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/3.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZTQzODY4NThhZTZiY2E2YWM3NGM0ZWE2MTUzZThkNjFfOTI3YzBiYTc1MjM4OTIxNzU2MjRiYzhmYzU4MDhlNzBfSUQ6NzY0MDA4Mzk0OTQ1NjQxMTgyN18xNzgwMzE3MjU0OjE3ODA0MDM2NTRfVjM)
+![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/4.png)
 
 **5\. Run right hand tracking**
 

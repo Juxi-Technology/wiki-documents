@@ -43,25 +43,25 @@ speaker-test -c 2 -D plughw:X,0
 
 1. 在插入USB声卡之前，我们使用 `lsusb` 命令查看一下USB设备：
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NTE3NWQxYjdhYWFiMjMzZjdjYmYwNTNjNzZhNTU1NWRfZmZhZmU5ODAwYTcwM2QzMmQ1MDA5ZGVkNjI4ZDU4MzdfSUQ6NzU0ODMwODA1NTA0NzM1NjQxN18xNzgwMDUxNTgxOjE3ODAxMzc5ODFfVjM)
+![](../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
 
 2. 然后把USB声卡插上，再使用 `lsusb` 查看一下，可以看到，多出来的那个就是USB声卡：
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MWEyNDc0NWVkMDY1MTA3NDFkYTg2ZDJlMDViNGEzZmZfNTRhNWZjMzFkOGJhODczMjRmMGVjODgzNDZjMzI5ZmVfSUQ6NzU0ODMwODA1NTUyNjYzNzI1Ml8xNzgwMDUxNTgxOjE3ODAxMzc5ODFfVjM)
+![](../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
 
 3. 然后使用 `arecord -l` 可以列出所有录音设备，可以看到，我们的USB声卡设备
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=M2ExNzZkMzhkZDVlOGM5ZTZmYzc0MzMwZTg3ZTM2MDBfNmVmYzhkZDdjOWIxMjc5ZWU5MDkwNmUwNjFlYTZlMjNfSUQ6NzU0ODMwODA1NDUzMTc4NDczMl8xNzgwMDUxNTgxOjE3ODAxMzc5ODFfVjM)
+![](../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
 
 4. 使用 `aplay -l` 可以列出所有播放设备
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NjM3YzIzM2QzYzIzODIwNmZiZGY2NzhjNTU1NzA5MmZfMjNkN2I3NTAwNzkxNDI0NTQwOTU1OGQ2YmZmNDg5YzRfSUQ6NzU0ODMwODA1Njk5NzQyOTI1Ml8xNzgwMDUxNTgxOjE3ODAxMzc5ODFfVjM)
+![](../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
 ### 二、USB声卡使用
 
 `arecord -l`，例如这里显示UACDemoV1.0即是我们的声卡，card 0；device 0，在命令中修改为plughw:0,0指定该录音设备
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NTFjODE4YWIwNDM5MWM1NjNhMzU2NjNjMDc0Y2Y4ZTdfY2RjZjM1YmRjZTFkYmUwMWFlN2E2ZWRhYTY4MjdiZTFfSUQ6NzYzODYxMDU3NDg4MDI2MzM1Nl8xNzgwMDUxNTgxOjE3ODAxMzc5ODFfVjM)
+![](../../public/images/tutorials/accessories/usb-audio-card-tutorial/4.png)
 
 接执行Linux自带的录音命令，录制一段5秒的声音进行测试
 
@@ -80,11 +80,11 @@ speaker-test -c 2 -D plughw:X,0
 
 如果声音过小，输入命令 `alsamixer`，来对音量进行调整，按下`F6`，选择USB声卡，
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NTU5NzFjNWJkMzFkMDFiMDUxZjYwMDE4Y2EyOTNjMTRfZWRmYzZkOWY3NTBlNDVlMzkxNGYxZmE5ZjRmNmIyMzJfSUQ6NzU0ODMwODA1NjI1NTY5MjgwM18xNzgwMDUxNTgxOjE3ODAxMzc5ODFfVjM)
+![](../../public/images/tutorials/accessories/usb-audio-card-tutorial/5.png)
 
 然后按下`F5`，将录音和播音设备都展示出来，我们将录音的音量按上键调高，PCM是播放，CAPTURE MIC是录音
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=N2U4NjgxMDdiY2E4N2RkY2I2MmM5Njk5N2VhY2I3NjlfNTFhYTQ3YzQzMjllN2MyMTVkMTRmMDg3MjJlNDI1OGJfSUQ6NzU0ODMwODA1NzA4OTUwNzMzMl8xNzgwMDUxNTgxOjE3ODAxMzc5ODFfVjM)
+![](../../public/images/tutorials/accessories/usb-audio-card-tutorial/6.png)
 
 然后使用`aplay`命令来播放
 
@@ -104,13 +104,13 @@ speaker-test -c 2 -D plughw:X,0
 
 ## PulseAudio 可视化窗口查看
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDMyYzkwNTAzOTU0NDM1ZDk1NDE0YWUyZDc3NTBkMTBfYWM1MTFhMzdjOTA5MGMxOGI5NWRmNzlhZDg5MDU1NTJfSUQ6NzU0ODMwODA1Njk5MjY2MTUwNV8xNzgwMDUxNTgxOjE3ODAxMzc5ODFfVjM)
+![](../../public/images/tutorials/accessories/usb-audio-card-tutorial/7.png)
 
 通过PulseAudio，[命令行](https://so.csdn.net/so/search?q=%E5%91%BD%E4%BB%A4%E8%A1%8C&amp;spm=1001.2101.3001.7020)方式查看
 
 `pactl list sources short`            # 列出当前 PulseAudio 音频服务器中所有可用的音频源
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MDUzOWNmMmU2NGE5Zjk3YTg4M2IzZGRkYWQ5ZjZmYTRfMWQyZDcyMzRhNjg4MWI3MTkyNDJiNTgxNjQxYzJjMjFfSUQ6NzU0ODMwODA1NjQxNjIzOTYxOF8xNzgwMDUxNTgxOjE3ODAxMzc5ODFfVjM)
+![](../../public/images/tutorials/accessories/usb-audio-card-tutorial/8.png)
 
 &gt; 49 代表源索引
 &gt;
@@ -138,7 +138,7 @@ speaker-test -c 2 -D plughw:X,0
 
 1. 设备被占用问题
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MWM0NjFkZDFmNjI5ZjZmODhkZDIxMTdhNDA2MzU1MGVfYTRmZjQ0OGJlYzY1ZGEyNmE3ZGNmMWIxZWU1ZTA0YTNfSUQ6NzU0ODMwODA1NjI1NTcyNTU3MV8xNzgwMDUxNTgxOjE3ODAxMzc5ODFfVjM)
+![](../../public/images/tutorials/accessories/usb-audio-card-tutorial/9.png)
 
 关闭设置页面，重新运行命令
 
@@ -150,11 +150,11 @@ speaker-test -c 2 -D plughw:X,0
 
 插上声卡前
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MDA4MGZlMzMzYTEyNWI5NGU2YmU4MTNiNDM3Y2NhZDRfMmViOGUxMDE5MGMxZjM0ODQyNTNiYmJkNzMyNWQwNGRfSUQ6NzU0ODMwODA1NzU0MjMxMTkzOF8xNzgwMDUxNTgxOjE3ODAxMzc5ODFfVjM)
+![](../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
 
 插上声卡后
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YTUyMWUxNjE1YTI2ZTRjNzhmOTNkN2FiYWZlZWZiMjRfOTQxNTYwYTc4OTNmODVkNjA3MWUyZTEwMDdhYTc2NzhfSUQ6NzU0ODMwODA1NDI0ODEyODUxNF8xNzgwMDUxNTgxOjE3ODAxMzc5ODFfVjM)
+![](../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
 
 杀死进程 `kill -9 PID`，PID为插上声卡后出现的PID，截图里是33739
 
@@ -243,11 +243,11 @@ by-path/   controlC0  pcmC0D0c   pcmC0D0p   timer
 
 如果声音过小，输入命令 `alsamixer`，来对音量进行调整，按下`F6`，选择USB声卡，
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MmFmNzY0YmRlMTQ1ZDkyYWViNDNiOTViYzdiYTRmY2RfYTkzZTVlOTRlZjMzMWEwNDJmOTMwYjE2NjU1M2JlOGZfSUQ6NzU2Njk2OTA2MDA0OTAyNzEwMF8xNzgwMDUxNTgxOjE3ODAxMzc5ODFfVjM)
+![](../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
 
 然后按下`F5`，将录音和播音设备都展示出来，我们将录音的音量按上键调高，PCM是播放，CAPTURE MIC是录音
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZWUwMWUzMzc0ZmJmZmFkNjgwMTc3YWNhZmEyNTFlN2ZfZTMzOGVkZDBkNDA3ZTMxYmEyNDdiZTg5YTVlNzEzZTFfSUQ6NzU2Njk2OTA2MDYxNDI5MTQ2Ml8xNzgwMDUxNTgxOjE3ODAxMzc5ODFfVjM)
+![](../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
 然后使用`aplay`命令来播放
 

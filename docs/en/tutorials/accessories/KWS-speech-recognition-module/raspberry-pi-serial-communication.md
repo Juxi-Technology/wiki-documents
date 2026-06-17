@@ -14,7 +14,7 @@ When inputting at the terminal, the appearance of the ttyUSB0 device indicates n
 ls /dev/ttyUSB*
 ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZWZhZGY1MDE5OTMyZTJkMjgzZDJmYmM0NGYyMWQzNmNfNjAyMzBjNzlkOGI5ZWNhOGM2ZjRhOTM2NWYyMGY4OGNfSUQ6NzYzODk0NzM4MDAyMTA1NDQxNF8xNzgwMzg1ODUxOjE3ODA0NzIyNTFfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/1.png)
 
 ## 2\. Code Implementation
 
@@ -149,7 +149,7 @@ The content of the broadcast can be viewed according to the protocol in the \<Co
 
 Among them, the first and second bytes AA 55 represent the frame header of the protocol, the third byte 00 represents the broadcast function, the fourth is the ID of the broadcast content, where we can see that "the car moves forward" is 0x07 in hexadecimal, so sending 0x07 to register 0x03 in the program will broadcast the corresponding content\. The fifth byte is the end frame\. 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MWFjZDgwMGFhMzNhMmM0ZmYxMTk2NTEyOWI4YWRjMWJfNWZiZjY4OGJlMDZiNjNmZjMzYmY4NGI1ZDBkMzNiOGJfSUQ6NzYzODk0NzM4MDg3MjQ0ODk4MV8xNzgwMzg1ODUxOjE3ODA0NzIyNTFfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/2.png)
 
 Enter the following command in the terminal to run the program 
 
@@ -161,11 +161,11 @@ After saying the wake word  Wake , the Console will reply with the received Read
 
 says "Turn off the light", and the Console will reply with Receiving Read\_ID: 13 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MGJlYzg0ODE1ODRlOTllMzkzYmI0YmU1YmIzMjdmZjFfMGExZDlhYWVhNWVlMTU1YTFlNjlhYzcxNGY3NTc1ODhfSUQ6NzYzODk0NzM4MDgxNjE4NjMyNF8xNzgwMzg1ODUxOjE3ODA0NzIyNTFfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/3.png)
 
 At this time, you can open the attached "Command Word and Announcement Word Protocol List V1\_Chinese File" to view the protocol for "Turn off the light" 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YmY2NGRjNDg2ZjAzODI0MWYyZGVhMTAyOWU4YWI5YWRfOTJlYzlmOTY0YzExNGIyYWQwZDQ0MmNmNzkzODQzZmNfSUQ6NzYzODk0NzM3OTYwMTUyNTcwN18xNzgwMzg1ODUxOjE3ODA0NzIyNTFfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/4.png)
 
 Among them, the first and second ByteDances AA 55 represent the frame header of the protocol, the third ByteDance represents the ID of the ten functional words of the chip, the fourth is the ID of the command word, where we can see that "turn off the light" is 0D in hexadecimal and 13 in decimal\. The fifth ByteDance is the end frame\.
 

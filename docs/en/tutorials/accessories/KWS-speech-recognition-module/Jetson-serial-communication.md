@@ -12,7 +12,7 @@ When inputting at the terminal, the appearance of the ttyUSB0 device indicates n
 ls /dev/ttyUSB*
 ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDJkNDk0ZWRkODg0ZThkMWM0MTc0ZTJkYzAxODA4Y2NfMjFkMWU4Y2RlOWEwZDkzNWIxNWE0ZDgwNDM0Y2RkMWNfSUQ6NzYzODk0NzQ4MzAyODc2OTcyM18xNzgwMzg1ODYxOjE3ODA0NzIyNjFfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/1.png)
 
 ## 2\. Code Implementation
 
@@ -147,7 +147,7 @@ The content of the broadcast can be viewed according to the protocol in the \<Co
 
 Among them, the first and second bytes AA 55 represent the frame header of the protocol, the third byte 00 represents the broadcast function, the fourth is the ID of the broadcast content, where we can see that "the car moves forward" is 0x07 in hexadecimal, so sending 0x07 to register 0x03 in the program will broadcast the corresponding content\. The fifth byte is the end frame\. 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZWM0YWI1NzRjOWVkMzA3YTQwNjM3Mjc0ZDYxY2QzMDlfYWQ1N2I4MmYxYmYwM2FkYzRiYzFhOGM1OTQ4ZTc0YjJfSUQ6NzYzODk0NzQ4NTQ1MjcxNzAyN18xNzgwMzg1ODYxOjE3ODA0NzIyNjFfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/2.png)
 
 Enter the following command in the terminal to run the program 
 
@@ -159,11 +159,11 @@ After saying the wake word  Wake , the Console will reply with the received Read
 
 says "Turn off the light", and the Console will reply with Receiving Read\_ID: 13 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YTUzNTM5MTE0ZjdhMzZmYmZhZTE5MDc3NTVmZTI4MGNfYTI4MDE0YWVhMzIzYWUzNDRmZjMwNTNmNmY2OTg1NGNfSUQ6NzYzODk0NzQ4NjgyMDA0Mzc0NF8xNzgwMzg1ODYxOjE3ODA0NzIyNjFfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/3.png)
 
 At this time, you can open the attached "Command Word and Announcement Word Protocol List V1\_Chinese File" to view the protocol for "Turn off the light" 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NWQ1MWYxNTMwNWMxZjMwNDk1MzE0Yzc3ZGJmYWVlMWZfZDY5N2I5NDRjYTNkZmY4YTEwNDVmYWFjNTYzNTIyZDVfSUQ6NzYzODk0NzQ4NjgyMDA2MDEyOF8xNzgwMzg1ODYxOjE3ODA0NzIyNjFfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/4.png)
 
 Among them, the first and second ByteDances AA 55 represent the frame header of the protocol, the third ByteDance represents the ID of the ten functional words of the chip, the fourth is the ID of the command word, where we can see that "turn off the light" is 0D in hexadecimal and 13 in decimal\. The fifth ByteDance is the end frame\.
 

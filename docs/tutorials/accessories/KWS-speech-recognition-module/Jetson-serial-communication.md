@@ -12,7 +12,7 @@
 ls /dev/ttyUSB*
 ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NGYwMjIyMjNlMDk2ODdhODk4ZDA5MmU1MzdlOWE5ZmJfM2VkYThhZjA2MDJkNjlhZDIwNzE0MDUzM2UxMGRlMjNfSUQ6NzYyNzA1MTQ2MzYxODU0NjY0OF8xNzgwMDU2OTIyOjE3ODAxNDMzMjJfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/1.png)
 
 ## 2\.代码实现
 
@@ -147,7 +147,7 @@ if __name__ == "__main__":
 
 其中第一第二个字节AA 55表示的是协议的帧头，第三个字节00表示的是播报功能，第四个就是播报内容 的ID，这里能看到“小车前进”是16进制的07，所以程序里给寄存器0x03发送0x07即可播报对应内容。 第五个字节是结束帧。 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MGUyMTdjMjlhZWZjN2M0YWY5ZWU4ZGMyZDIzNzgyNGJfMDQ3MmE0ZTA2MWMxMWUwMzc5NWZlODVjZmFkZDdkOWZfSUQ6NzYyNzA1MTQ2MTE3Njc0MDgyNV8xNzgwMDU2OTIyOjE3ODAxNDMzMjJfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/2.png)
 
 终端输入以下指令运行程序
 
@@ -159,11 +159,11 @@ python3 -m speech_serial
 
 说“关灯”，控制台会回复接收Read\_ID：13
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Mjk1ZTY1MGY0ODM0ZmI1MDRhN2IyNmE4ZGFjYjRjYzJfMTYzNWVkNTIxNmNlZWU5OGI2ODJiYmRlNTE2OWRlZjZfSUQ6NzYyNzA0NzczNzIxNzEyNTMzNl8xNzgwMDU2OTIyOjE3ODAxNDMzMjJfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/3.png)
 
 这时候可以打开附件的 命令词播报词协议列表V1\_中文文件 查看“关灯”的协议 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YjQ2YjhkMWNjZWJlOGE3YjczNzVhZWI5MDc1YzkwNmZfNmZkZjI4NDAwYjZiZTZhN2NiYjJlYzE2MjhkYmM0MTlfSUQ6NzYyNzA1MTQ1OTg3MjY1NjU3OF8xNzgwMDU2OTIyOjE3ODAxNDMzMjJfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/4.png)
 
 其中第一第二个字节AA 55表示的是协议的帧头，第三个字节表示的是芯片的十个功能词的ID，第四个就 是命令词的ID，这里能看到“关灯”是16进制的0D，十进制是13。第五个字节是结束帧。
 

@@ -10,25 +10,25 @@
 
 #### Click on the top menu "Platform Features", and select "In\-depth Development of Product Firmware and SDK"
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Y2NhODBhNDg0YzVmNzZhNThmYTMyN2NhYjllOTYyNzFfOWFiMjYzODc0MmI2OWQ0Y2ExNWRiMzAwYzg1MGEyMzFfSUQ6NzYzODk0Njk4ODE3NTgwNTQxN18xNzgwMzg1ODA2OjE3ODA0NzIyMDZfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/1.png)
 
 ---
 
 #### Click "Offline Speech Recognition Large Model Application"
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTQ0YTBiYjBiOTdiY2ZlYmViN2QxMDViMTdkYTg5ZDZfZGY0ZGJlMDQ2ZWI5YmE2NWVkMzRiMTFmZTNhYmYxNDdfSUQ6NzYzODk0Njk4Njc0MTUzMzY2Nl8xNzgwMzg1ODA2OjE3ODA0NzIyMDZfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/10.png)
 
 ---
 
 #### Click "Speech Recognition Firmware and SDK Development"
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OGU1MGZjOTAwYmMwNjFjYTUzMTgxODUzNjI0NTdiNThfNGU5OTgyYzU5Y2E0N2NkMGFlMGRhZTJjODk2NzcwMGFfSUQ6NzYzODk0Njk4NTk2NTcwMjA4Ml8xNzgwMzg1ODA2OjE3ODA0NzIyMDZfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/11.png)
 
 ---
 
 #### New Project
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZWFhMGQ3NGNjNDQ1OTFhYzNlOTJmZTFlMWU4ZWUxYzJfODk0MGM5ZGRjZmRhOWMzZTFkNjQ0MTRlNTk1YjVjNjNfSUQ6NzYzODk0Njk4Njk1MTI2NTI0Nl8xNzgwMzg1ODA2OjE3ODA0NzIyMDZfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/12.png)
 
 ---
 
@@ -48,7 +48,7 @@
 
 7. **Description:**Just follow your own description rules
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OGJjNTMzMDZmNDk1MWE4ZTgwMjE1Mjk2ZWZjNzlhNWNfMjg0MDdmNTM3YjM2M2VjYzBhNWU1ZTg2NjZjOTE5Y2FfSUQ6NzYzODk0Njk4NTA5ODA3MDk3OF8xNzgwMzg1ODA2OjE3ODA0NzIyMDZfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/13.png)
 
 ---
 
@@ -70,13 +70,13 @@
 
 4. **Module Board Selection:**CI\-D02GS02S
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTM3MTIyOGM5Yzk2NWFjMjZhMGY3M2ZkNGE3ZTgxYzdfOWExZGU2MDAwMGU1NTVkZWU5ODI3Yjc1ZTVkOTU0OGJfSUQ6NzYzODk0Njk4NTIyMzY4NzExNV8xNzgwMzg1ODA2OjE3ODA0NzIyMDZfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/14.png)
 
 ---
 
 #### Firmware Configuration 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDNlYTZiZGVmYWQ0N2E3Yjg2Njg0MDc1OGZmZTBiM2NfNmIwYTdiMTQ0Yjg3YmQ2NzNlNzA2Njc4ZGY0M2E3OWNfSUQ6NzYzODk0Njk4NjUyODA4Mjg5NF8xNzgwMzg1ODA2OjE3ODA0NzIyMDZfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/2.png)
 
 ---
 
@@ -94,9 +94,9 @@
 
     \[命令词播报词协议列表V3\_英文模板\.xlsx\]
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MThkNjVkZDBlNjk5ZWUxY2EwMjU3OTNkY2RkNjIwZTRfMDZkNjA3MTRiNDU0M2ViZjNmMzcwYTg5YjFjMjFjNThfSUQ6NzYzODk0Njk4NzUzODMwMzk3N18xNzgwMzg1ODA2OjE3ODA0NzIyMDZfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/3.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZTRkMjM1OTY2MTMwYWYwODBhODcyZjRkOGM2NzlhMzFfMmYwYmE2NzdmZGFhZTYxYzEwZGE2YmQ0MWNhYmY0NGVfSUQ6NzYzODk0Njk4NDgwODQ2NzM5NF8xNzgwMzg1ODA2OjE3ODA0NzIyMDZfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/4.png)
 
 ---
 
@@ -112,23 +112,23 @@
 > 
 > 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NjRlYWZiN2YyM2FmMmI4ZGNkNTc3NzEyZTNiOGZjYmZfNzExODYxMTAyZjcwZDRjMDhmNDE3M2E5MDJkMzllYjNfSUQ6NzYzODk0Njk4NTcxNDEwOTQxM18xNzgwMzg1ODA2OjE3ODA0NzIyMDZfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/5.png)
 
 2. Plug the sound card into the computer and open Device Manager 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTAyYmQzN2EyOTEwZTJhNzI3NDFkZTcyODk1MzU5YTBfMDcxZWZkMDI5ZDAyNThjZWZlYjcwOTlkOTFmNjY3NzFfSUQ6NzYzODk0Njk4NDU3NTM3MjI1NV8xNzgwMzg1ODA2OjE3ODA0NzIyMDZfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/6.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NmI5ZTdjMTNkNWQ0YWI0MDJlMzg1NWMxMzZjMmE2NjJfMWMyM2RmMWZkZDhjNDMyYzJmNmYzYzcyMzA4MTRmYjhfSUQ6NzYzODk0Njk4Nzk0NTE1MTQzNl8xNzgwMzg1ODA2OjE3ODA0NzIyMDZfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/7.png)
 
 3. Move to the firmware burning software page 
 
 > Sound card button position
 > 
-> ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDdiN2Y2NzQyMTI4M2Q0Y2VhZWIzYzk5M2VlZDdkNzFfNWEzZjMyZTJjYWUyN2FlYjg5OWZjMTViODE0MTg5MjRfSUQ6NzYzODk0Njk4NDU4MjE1NTIzM18xNzgwMzg1ODA2OjE3ODA0NzIyMDZfVjM)
+> ![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/8.png)
 > 
 > 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MWM5ODEwOTc2N2IwZTZiYjljYTI1ODM4NmE3N2RlY2FfMTI2YjYzYTRjZmEzNDY4ZDFjYzg1MzkzYTZiYTAzMjhfSUQ6NzYzODk0Njk4ODEwMDI5MTU1Ml8xNzgwMzg1ODA2OjE3ODA0NzIyMDZfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/9.png)
 
 #### After completion, you can move to the corresponding other tutorials on the left 
 

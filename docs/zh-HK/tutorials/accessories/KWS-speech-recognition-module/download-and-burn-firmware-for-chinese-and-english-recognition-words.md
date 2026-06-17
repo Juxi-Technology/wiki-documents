@@ -10,25 +10,25 @@
 
 #### 點擊頂部菜單“平臺功能”，選擇“產品固件及SDK深度開發”
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YTE3NTNhOGQ2ZTMxYWRjZGRjZWQ2OGQ0ZGYwOGQzYTVfYmFhMjdlNTJhYTQ1OTAxNGMxNTVlOThjMWU1NmRkMWNfSUQ6NzYzODk2MTAwNjYyMjExNjgxNF8xNzgwNDAzODUwOjE3ODA0OTAyNTBfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/1.png)
 
 ---
 
 #### 點擊“離線語音識別大模型應用”
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NjU0ZjA0NGY5NDVjM2YzNjM5ZGM5ZThiOWE5ZDNkNTZfMGQ3MjMzMDAzYzg5YWJlMzBjN2FhMDg0NmNjY2MxY2NfSUQ6NzYzODk2MTAwNzY0NTM0Njc4NF8xNzgwNDAzODUwOjE3ODA0OTAyNTBfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/10.png)
 
 ---
 
 #### 點擊“語音識別固件及SDK開發”
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=M2M0NDVlY2YwYTI3MzYzYTBlMjIzNDg3NjQyMTU0MGNfNTgzNjlhMTQwNjUyYjI1MTMxNDQwNzdlY2VhYWY1ZThfSUQ6NzYzODk2MTAwNzY3NDU5MjIwNV8xNzgwNDAzODUwOjE3ODA0OTAyNTBfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/11.png)
 
 ---
 
 #### 新建項目
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjdkMzAyOTI4NDFhNjIxODRiNDA2N2Q5ZDk3MDg4MjNfZGRjYWUzNzkyZDg2ODE1OWMyYzkxYjExNGUxYTc3ZGZfSUQ6NzYzODk2MTAwNTA2MjA4MTUwNV8xNzgwNDAzODUwOjE3ODA0OTAyNTBfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/12.png)
 
 ---
 
@@ -48,7 +48,7 @@
 
 7. **描述：**按自己描述規則來即可
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZTYxNjgwODEyZThhOGI0NmQyOGViZTVhMTA0YWI1NGJfOTRhZDk5ZWI5N2JkZDZlMGQ1NjA3MzFmMDBjOTU4NjVfSUQ6NzYzODk2MTAwNjMxMTczODMwNF8xNzgwNDAzODUwOjE3ODA0OTAyNTBfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/13.png)
 
 ---
 
@@ -70,13 +70,13 @@
 
 4. **模塊板選擇：**CI\-D02GS02S
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDc5ODg1NDA1NzVmN2RmNThmNGRjNzllZDM3YTVmNTVfOWM1YzY1OWE4Y2UzNjFmZWQ0Yjc1NzUxZWNmNTUzODNfSUQ6NzYzODk2MTAwNjc5NTcyMTY2Nl8xNzgwNDAzODUwOjE3ODA0OTAyNTBfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/14.png)
 
 ---
 
 #### 固件配置
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OWJhMTMwY2I5ZGE2YjlkZWIyODc4MDVkY2FjNDY5YWNfNGMzNWRjMmQ0MmZjNjlkMTBhYTIyY2UyZDg5Y2JlN2RfSUQ6NzYzODk2MTAwNzY0NTMzMDQwMF8xNzgwNDAzODUwOjE3ODA0OTAyNTBfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/2.png)
 
 ---
 
@@ -94,9 +94,9 @@
 
     \[命令词播报词协议列表V3\_英文模板\.xlsx\]
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MzQ1YTJkZDE4ZTUzM2FhNmY1MWI3MDZjMjNhZTc1MTdfZmJjZjc3NWRkNTk1Yzc2OTFiOWFlNmQ4ZjIxMzIxMDlfSUQ6NzYzODk2MTAwNzIwMTA2MTg1Nl8xNzgwNDAzODUwOjE3ODA0OTAyNTBfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/3.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZGM1NmQ4MzA4NTUyMTgwYTY1YzMwMmVhYjQ3OTQ1ZjZfYmJjNTdlYTg1ZWQ2ZDcxOTk1ZDMyZTIxNzk2YjQwNjFfSUQ6NzYzODk2MTAwNzkzODkxNTI2MF8xNzgwNDAzODUwOjE3ODA0OTAyNTBfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/4.png)
 
 ---
 
@@ -112,23 +112,23 @@
 > 
 > 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=N2QxNjE3NTNiMWRhOTljMzYzZTFiNTEyNTg2MTIwOWVfOWVjMGRmZDBiNTU1YmQ5ZjhlOTk3OGY2M2Y5ODI2ZjVfSUQ6NzYzODk2MTAwNjYyMjEzMzE5OF8xNzgwNDAzODUwOjE3ODA0OTAyNTBfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/5.png)
 
 2. 將聲卡插上電腦，打開設備管理器
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZmJjZmE3MzQ1ZWQwZGEyYmEzNzMyOGUzMGY2ODI2NzVfYjhhNWU3MmY5YmQ0M2MzODc4NGE2ZjQ2NGZjNTcxZWNfSUQ6NzYzODk2MTAwNTA4MzE4NDA5OF8xNzgwNDAzODUwOjE3ODA0OTAyNTBfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/6.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZWRmM2MyN2ZjNjE0NjgyZjNkMTEyNjFjNTAxNmFjMTNfYjQ5YmIxM2I4N2NkOTBlZTkzYjdjZmFjOTkzZjUyZGJfSUQ6NzYzODk2MTAwNDkwMjY5Nzk0MV8xNzgwNDAzODUwOjE3ODA0OTAyNTBfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/7.png)
 
 3. 移至固件燒錄軟件頁面
 
 > 聲卡按鍵位置
 > 
-> ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YzM1Y2VjMDQxYzk0OTJkZDVkMzk0MzcxZThiMDRhMWJfMDBmMDdlNzU2MjdmMGMwNDgzYzQ3MTljMjljMDU4NWFfSUQ6NzYzODk2MTAwNDc1NjA0NDc1Ml8xNzgwNDAzODUwOjE3ODA0OTAyNTBfVjM)
+> ![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/8.png)
 > 
 > 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YmRiNmFlYjVhNjVlYjM3MTQ5MDg2MWQzOTA5YzkxNDRfYmIzMDYzMGZhYzY2MmM4NTk2ZjE2NmVhNWNkMzJjZjdfSUQ6NzYzODk2MTAwNTM3MjUyNTUyMF8xNzgwNDAzODUwOjE3ODA0OTAyNTBfVjM)
+![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/9.png)
 
 #### 完成後可移步到左側對應的其他教程
 

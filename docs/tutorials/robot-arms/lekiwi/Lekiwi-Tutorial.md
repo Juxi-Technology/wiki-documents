@@ -16,7 +16,7 @@
 
 在线URDF预览https://urdf\.d\-robotics\.cc/
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjUzM2ZmNmJkNWZiYWI5ODA0Zjg2ZTVkYWYzYzBkNzhfNmY3OTg5ZGY3Y2ZkYWExMGQ1M2QxOWNmZTY4ZGI2NTRfSUQ6NzYxMjQ2ODg2MzgwOTA0NzQ5MV8xNzgwNjYwODY4OjE3ODA3NDcyNjhfVjM)
+![](../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
 ## 主要特点
 
@@ -143,7 +143,7 @@ conda install ffmpeg -c conda-forge
 
 如果你遇到以下报错，也可以使用上述命令解决。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDc0MDgxZTA0Y2MzZWU1OWM3MmM1YzhmNzg1NTdiNzBfNzdlZDdhOTQwZDkyYzM4MDVjYTU0MmViMzUxMmU2ZjZfSUQ6NzYxMjU2NDI0MzM5NzU5NDA2MF8xNzgwNjYwODY4OjE3ODA3NDcyNjhfVjM)
+![](../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
 ### 6\. 安装带有 feetech 电机依赖的 LeRobot：
 
@@ -158,7 +158,7 @@ pip install *-e* ".[lekiwi]"
 
 connection\_time\_s: int = 7200 \# 也就是2小时
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MWY4NTkyYTRiNzZlZjNlZmNhMTllZjdkZjYwMjRiYTFfMjBjMTMzMDFmYjg0OTYyMGQ3ODQzM2NhYmVmYTk5YzVfSUQ6NzY0MTgwMDU1OTg2OTM5ODIzM18xNzgwNjYwODY4OjE3ODA3NDcyNjhfVjM)
+![](../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
 ## C\. 在笔记本电脑上安装 LeRobot
 
@@ -176,7 +176,7 @@ connection\_time\_s: int = 7200 \# 也就是2小时
 
 在您的 Shell 中复制粘贴以下命令：`source ~/.bashrc` 或对于 Mac 用户：`source ~/.bash_profile` 或 `source ~/.zshrc`（如果您使用的是 zshell）
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ODMzMDM4MTU4NjkxYTQzYzAwNDRiNzYxZjhlYzJmMzRfZWQ4YjI4NmNkYjdmNDAyYzcwYWJkYTk0ZDZhZTFlODVfSUQ6NzYzODYwNjc4NzI1MTU1NTU0Nl8xNzgwNjYwODY4OjE3ODA3NDcyNjhfVjM)
+![](../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
 ### 3\. 为 LeRobot 创建并激活一个新的 Conda 环境
 
@@ -214,7 +214,7 @@ conda install ffmpeg -c conda-forge
 
 如果你遇到以下报错，也可以使用上述命令解决。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NjhmZDk0ZGY3NGYzZjc0NWRmYjU4NWQzODg3N2I5YmVfZmZkYTQ3YTU2M2FiZmM5ZjFkYjY2ZGI1NDU1ODU4ZmFfSUQ6NzYxMjU2MzkyODYzOTUwNzM5Nl8xNzgwNjYwODY4OjE3ODA3NDcyNjhfVjM)
+![](../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
 ### 6\. 安装带有 feetech 电机依赖的 LeRobot：
 
@@ -225,9 +225,9 @@ pip install *-e* ".[lekiwi]"
 
 # 配置电机
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjZkZjcxMDJiYTcxYzE3YWVlMDQ5ZmVlOGQwZWM1ZWZfYzBhY2UxMGY3Njg5ZjEzYTM1ZDRmNjgzMWRlZjNkY2FfSUQ6NzYzODQ3MTg3NTMyOTU3NTg4NF8xNzgwNjYwODY4OjE3ODA3NDcyNjhfVjM)
+![](../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MDNlZGVjZDdlNDQxNDgzZjYxMTU1NDMzYzA1ZDk0YTVfNmFmYjdkNzdlNzM5OGI2YWQxYTVlZTc2MmQ4MWQ4ZTdfSUQ6NzYzODQ3MTkwMTY4NjE4OTI1Nl8xNzgwNjYwODY4OjE3ODA3NDcyNjhfVjM)
+![](../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
 ### **1\.查找与机械臂相关联的 USB 端口**
 
@@ -258,7 +258,7 @@ lerobot-setup-motors \
     *--robot.port*=/dev/tty.usbmodem58760431551 # <- paste here the port found at previous step
 ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZTc4NzA4OTk0ZTc5YTNkYzAyNGE2YzU2NDQ3Njg2NjBfYThmNGIwOWZmOWE4ZWUyOWZiNzBiYmViOGM5YjQyOTFfSUQ6NzYxMjU2MTU2NzE3NTc1NjczOF8xNzgwNjYwODY4OjE3ODA3NDcyNjhfVjM)
+![](../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
 ### 3\.设置HuggingFace国内镜像
 
@@ -299,11 +299,11 @@ source ~/.zshrc
 
 https://huggingface\.co/settings/tokens
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YjJiNjhhZDkzODVhMmZmZmVmM2JhMTYxMzI5ZGUxYWRfMGRlM2FlNzRmZGEwNDA0MmIzMGYzOWRhYjY2MDMxNGZfSUQ6NzYzODU4MzgxNTAzNjA3OTMwOV8xNzgwNjYwODY4OjE3ODA3NDcyNjhfVjM)
+![](../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MDljODdmZjc0ZmJlODA4NzRiZDRkNzUxOWE3OWExZTJfYTY1NjMyZTNjMDE4ZGY2OWUwYjg2NzliZDA2NjBlOWVfSUQ6NzYzODU4MzgxNTM3MTQyNzAxM18xNzgwNjYwODY4OjE3ODA3NDcyNjhfVjM)
+![](../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MDY3NTUyMzBmMzJlOTZjZWVmMzRhNmEwMDU0ZmMxZjlfZDNhZDZhNDlmYWI1MTE2ZTNlMGUxOTU3ZGI4ZjRhYTFfSUQ6NzYzODU4MzgxNzAyMzc4NTk1MV8xNzgwNjYwODY4OjE3ODA3NDcyNjhfVjM)
+![](../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
 #### ②记录Token
 
@@ -321,17 +321,17 @@ hf auth login
 hf auth whoami
 ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTkwMzFlZjhkYTg2NTlhYmQxNmNkZGQxOGQ4YjYwNDhfMTllOTJmMzlkMGVkZjk4YzAzY2ZkYjJhZjFlMTEyZDRfSUQ6NzYzODU4MzgxNTk1NTM2OTE3N18xNzgwNjYwODY4OjE3ODA3NDcyNjhfVjM)
+![](../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
 #### ④创建Dataset Repo
 
 **记下Owner和Dateset name，即后续需要的\<hf\_username\>和\<dateset\_repo\_id\>**
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Mjg1NTkxMDczYWM5ZGRhOWFlNTk2YzJlMzBlZThjMzVfOWVkZjc1OWRmZDUyZDM1Y2FlYmJlY2Y2OWZmZTFlYWNfSUQ6NzYzODU4MzgxNDkxMDQ3OTU2MV8xNzgwNjYwODY4OjE3ODA3NDcyNjhfVjM)
+![](../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZTkzNThkNjBjZWI2MzhiOTM0ODkwYjRkY2RkNmNiN2VfMWNiYzJjMjk2NGMwZmZjMjY2YjYyNThjYzRjNzEzYTdfSUQ6NzYzODU4MzgxMzAyNzI2OTgyMF8xNzgwNjYwODY4OjE3ODA3NDcyNjhfVjM)
+![](../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZWE0NzQ2ZjAwN2FjMzBjZTdmMGIxZTE2YTljZjJlMWFfZGJkZjQyZmUyZDViMzdhY2Q0ZjYzZmZlMjc3ZWUzYzZfSUQ6NzYzODU4MzgxNjk1MjYxMzg0OV8xNzgwNjYwODY4OjE3ODA3NDcyNjhfVjM)
+![](../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
 ### 4\.更新配置！！！
 
@@ -348,7 +348,7 @@ sudo chmod 666 /dev/ttyACM1
 
 在example\\lekiwi目录下修改这四个文件
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NzdhNGI2NTE3YjVjN2FhNjFiM2I3N2VhMzg0ZTY5YmNfZWQwYTA3M2MwMDkyMmRhNmY2Y2ExYTc1ZjZiNDA3NmNfSUQ6NzYzODQ3NTM0MjA2ODUzNDI0MF8xNzgwNjYwODY4OjE3ODA3NDcyNjhfVjM)
+![](../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
 #### ①修改teleoperate\.py
 
@@ -356,7 +356,7 @@ remote\_ip:树莓派的ip地址
 
 port:主动臂连接到电脑或者linux时的端口号
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NGE3NzY0MzE1NGFiNTc0MzUxYjJiMGY2ZTkxOGViZGZfMzNmYTRiZjI3ZjJlMjIwNGFiOTRiYzY1ZmRkNjA2NmRfSUQ6NzYzODQ3NTkyNDQ0MjMzNjE4N18xNzgwNjYwODY4OjE3ODA3NDcyNjhfVjM)
+![](../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
 #### ②修改record\.py
 
@@ -366,7 +366,7 @@ remote\_ip:树莓派的ip地址
 
 port:主动臂连接到电脑或者linux时的端口号
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ODlkNzgyMTM4ZDI0M2JmYTkwNmQzODQ4NDEwYjA2M2NfZGRkOGYwNTQ3MWE2MmEwODY4YTRhZTAwMjk1MDBkMjFfSUQ6NzYzODQ3NTYxNzQ5OTE4ODQxOF8xNzgwNjYwODY4OjE3ODA3NDcyNjhfVjM)
+![](../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
 #### ③修改replay\.py
 
@@ -374,7 +374,7 @@ remote\_ip:树莓派的ip地址
 
 \<hf\_username\>/\<dataset\_repo\_id\>，即[huggingface的用户名和数据集名称](https://juxitech.feishu.cn/wiki/A2orwQ9xzidMCjk10SVcAAWVnhd?fromScene=spaceOverview#share-TYrIdHmPPobd1mx9xB7c75WEn0d)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MGM5NmRmYmJiOTVjMTI5MDVmMGIwNzk4YWRkZjg1M2VfZDVlYzU2MWFhY2Q1YWRhYjg2YjM1MjQwMzIyOGUzNDVfSUQ6NzYzODQ3NTY5OTg5MjE2MTc1N18xNzgwNjYwODY4OjE3ODA3NDcyNjhfVjM)
+![](../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
 ## 校准
 
@@ -405,7 +405,7 @@ lerobot-calibrate \
 
 打开新的Anaconda Prompt
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NWRlZDFkNzBlZmU1ZWYxNjQwYzlmMmYxOWQzZDQ5MWZfNjdjZmNhNDI5MWY0YThiZTllNDQzODk2NWE3NzI4NWFfSUQ6NzYzODYwNzQ2MzQxMTI0MDE0MF8xNzgwNjYwODY4OjE3ODA3NDcyNjhfVjM)
+![](../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
 > 如果您使用的是 Mac，可能需要授予“终端”访问键盘进行远程操作的权限。请前往“系统偏好设置”\>“安全性与隐私”\>“输入监视”，然后勾选“终端”复选框。
 > 
@@ -417,7 +417,7 @@ lerobot-calibrate \
 python -m lerobot.robots.lekiwi.lekiwi_host --robot.id=my_awesome_kiwi
 ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MzA0MTQ0NjgwYWI2Zjg1ZjliY2M3ZWMzODk5NzFmNzZfZGIzMDIwN2MxOTNiNDgzODdlMTkwZjdmODQ4Mzc4ZjlfSUQ6NzYzODU3NTc5NDk5NTkwNzc3MF8xNzgwNjYwODY4OjE3ODA3NDcyNjhfVjM)
+![](../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
 接着，在您的笔记本电脑上，也运行以下命令激活环境 `conda activate lerobot`，然后运行以下脚本：
 
@@ -585,7 +585,7 @@ HF\_DATASET\_ID="\<hf\_username\>/\<eval\_dataset\_id\>" 改为自己创建的�
 
 remote\_ip：树莓派ip地址
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NmZkNDY1YzFkMjFhZmU5NDYzNThkNzdhMmU5YTllNzVfMWQzNmVkODllZjE0MDI1N2NlMzI1MzFjYTllMWI0MDhfSUQ6NzYzODQ3NTg0NTczMjg5NTk1NF8xNzgwNjYwODY4OjE3ODA3NDcyNjhfVjM)
+![](../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
 然后运行以下命令：
 
