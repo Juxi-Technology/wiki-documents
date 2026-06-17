@@ -1,6 +1,6 @@
 # Lerobot机械臂组装教程
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YzBjNzNiYjg3NzhkNTBkNTM2ZWZmYzU4Nzc1NmYxMDZfYTMyNjk4ODAzZDAxN2IwZWExNWFjOGY2OTYwM2IwNGFfSUQ6NzU5Mjk0NjQxNTQxMzA1NDY3N18xNzgwMDUxNTUwOjE3ODAxMzc5NTBfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
 
 **Pro版 主动臂使用5V6A电源适配器，从动臂使用12V5A电源适配器**
 
@@ -8,7 +8,7 @@
 
 # 第一步：设置舵机ID，安装舵盘（除5号舵机）
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MzY3ZDVjNDY5YTJkMWZhOWQ1MmZmMDE0NzUzYzAxMmNfYmM1NzdhZmI1M2E5YzFkMjQzYTA4ZmJlMzZjMDMxY2NfSUQ6NzU5NTQ4Mzg0NzY2ODk3NjYwMF8xNzgwMDUxNTUwOjE3ODAxMzc5NTBfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
 
 再次提醒，请确保舵机关节 ID 和齿轮比与 **SO\-ARM101** 的严格对应。
 
@@ -88,10 +88,10 @@ lerobot-setup-motors \
 
 舵机驱动板的安装：先安装4个铜柱，然后用四个M2\.5\*8的螺丝固定驱动板
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTdjMDNmYWY1ZjFlOTU5NTMzYmNjOGJiMzI5NjAxNTlfNzk1NmY5N2ViOGM1OWFiYjBmYjY2NjcxN2VjNzIyZDBfSUQ6NzU5NTUxMjE2OTIyNDkzMjU1NV8xNzgwMDUxNTUwOjE3ODAxMzc5NTBfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/7.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MDVkMjRkZjNmOGE0NWNiNTBiYjQ0YmJiMDZhNGQzMDlfZGM2NmU2NTM4YzY3YjFhYWJjNjk4YjY5MjM5YjdkZGVfSUQ6NzU5NTUxMjE3MDQyODI3ODI3OF8xNzgwMDUxNTUwOjE3ODAxMzc5NTBfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/8.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZTk5OGJiMzRhOTUyZTdiYjcxMjY5ODYxODAzMThlZWNfODJiYzRjNDgyOWJjMTIxNGRhOWEzOGM1MWFhOWZhNjJfSUQ6NzU5NTUxMjc4ODU2NDM2NDUwNV8xNzgwMDUxNTUwOjE3ODAxMzc5NTBfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
 
 **Pro版 黑色主动臂使用5V6A电源适配器，白色从动臂使用12V5A电源适配器**

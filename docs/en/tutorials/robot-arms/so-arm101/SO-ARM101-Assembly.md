@@ -1,6 +1,6 @@
 # Lerobot SO\-ARM101 Assembly Tutorial
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OGQ0YzViNzE0NDEzYzdhNzczZmE4YTBiMGM3NmVmNWJfNTQyNGJjZDgwYjUxYzRmZTVjMzI1NGJiYmQyYmIwZTdfSUQ6NzYzOTA0MDIyNzQ4MzkyOTU1Ml8xNzgwMzE1NTMyOjE3ODA0MDE5MzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
 
 **The Pro version's active arm uses a 5V6A power adapter, while the passive arm uses a 12V5A power adapter **
 
@@ -8,7 +8,7 @@ Servo ID setting, servo angle calibration, and assembly should be completed in a
 
 # Step 1: Set the servo ID and install the servo horn \(excluding servo No\. 5\) 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YTI4MGNlNmJmZmYyZjY4ZWI4YmQxZTE4ZTgzYWI5NzlfZmY0NzZkNDA1OGIxNTIxNDUwYWNlODllM2U5ODA3NWZfSUQ6NzYzOTA0MDIyNzQ4MzkxMzE2OF8xNzgwMzE1NTMyOjE3ODA0MDE5MzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
 
 Once again, please ensure that the steering gear joint ID and gear ratio strictly correspond to those of **SO\-ARM101**\.
 
@@ -88,11 +88,11 @@ lerobot-setup-motors \
 
 Installation of the servo driver board: First install 4 copper pillars, then secure the driver board with four M2\.5\*8 screws
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZWVmM2ZjYjIyNGM2NTRjY2RiYmNmZDMwZTI5NDExNjVfMGNiODk4NjNjZjczZWI2NWQ2NWRlODY0OWYwOWY5ZDJfSUQ6NzYzOTA0MDIyNTA0OTc1ODY5MV8xNzgwMzE1NTMyOjE3ODA0MDE5MzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/7.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZTFkNzUwMjVkNmE1NWY1MDE4OTJiNjk3ZTU5NDg1MDhfYWQ1Mjk4ZjU1MzQ5MDIyZmRjY2IwZjZjNjRlNGE3OWFfSUQ6NzYzOTA0MDIyNzQyMzYyMDA1MF8xNzgwMzE1NTMyOjE3ODA0MDE5MzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/8.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NTU1YjY4NzQyODAyOTk0MTcxODQ5Y2E3NzFiMWE5NzBfMGRlYTYyYTQwM2UzNDA0NGRmNDMzNmIxMDk0MWY4MTNfSUQ6NzYzOTA0MDIyNzM5ODQ1NDIyOF8xNzgwMzE1NTMyOjE3ODA0MDE5MzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
 
 **The Pro version's black active arm uses a 5V6A power adapter, while the white passive arm uses a 12V5A power adapter **
 

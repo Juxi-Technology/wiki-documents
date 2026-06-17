@@ -6,12 +6,12 @@ USB自动对接摄像头调试请参考该教程[USB自动对焦摄像头教程]
 
 需要[官方模型文件](https://github.com/TheRobotStudio/SO-ARM100/tree/main/Optional/Overhead-Cam-Mount-Webcam)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YWVlOGU4Y2I1ZDRiMzc1ZDFmMzM1NzE4N2Y0M2Y1MmJfMzEwNmY2NjY2NjRiZDQyOGQyNmE5ZTkwM2M2ZmQzMGJfSUQ6NzU3MTI5NTM0NTQzMzcwNjQ5OF8xNzgwMDUxNTUwOjE3ODAxMzc5NjVfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/1.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YjAxNWM2YWQ3ZjUwNGEzMGVjN2NjNjEwMDk2YWMzMDRfNWI0MmM1YmVhMDE3YWY1NDY2N2UzYjZjYzNkYmU3M2VfSUQ6NzU3MTI5NTM4MTkxNDg3Nzk1NF8xNzgwMDUxNTUwOjE3ODAxMzc5NjVfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/2.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NjdkNzhkYzM0ZTAxNDYyZjJlNWIyNDRlN2ViMjBjMjFfMmI5Mzk0OGVmYjUxNjQwZDExMTI1ODJhMzUxZWYxZmNfSUQ6NzU3MTMwMDc2MjI3OTM3ODk3Ml8xNzgwMDUxNTUwOjE3ODAxMzc5NjVfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/3.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NTEwZTUyZjAyOGU2YTViYmQxZjEzOTRkMjk1MjkxODRfMGI3YzVmZWFmMjg0ZWZiMGEyNWVjMzlkYzdhMGE1ZjVfSUQ6NzU3MTI5NTQyMzc3OTg0ODIxMV8xNzgwMDUxNTUwOjE3ODAxMzc5NjVfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/4.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjMyMmU1Y2U0MGM2NDE4NmMyMzY1N2I0YzRkYjEyZTJfMjJhNDgyN2QxOTRhYjdkZTdmZmY0MmYxMjAyMDhiMGZfSUQ6NzU3MTI5NTQ1NDA0ODQxOTg2OF8xNzgwMDUxNTUwOjE3ODAxMzc5NjVfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/5.png)
