@@ -43,25 +43,25 @@
 
 1. Before inserting the USB sound card, we use the `lsusb` command to check the USB devices:
 
-![](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
+![](/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
 
 2. Then plug in the USB sound card, and use `lsusb`  to check. You can see that the extra one is the USB sound card: 
 
-![](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
+![](/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
 
 3. Then use ` arecord -l `  to list all recording devices. As you can see, our USB sound card device 
 
-![](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
+![](/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
 
 4. Using `aplay -l` can list all playback devices
 
-![](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
+![](/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
 ### 2. Using USB Sound Card
 
 `arecord -l`, for example, here UACDemoV1.0 is shown, which is our sound card, card 0; device 0, and in the command, modify it to plughw:0,0 to specify this recording device
 
-![](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/4.png)
+![](/images/tutorials/accessories/usb-audio-card-tutorial/4.png)
 
 Execute the built-in Linux recording command to record a 5-second sound for testing
 
@@ -80,11 +80,11 @@ Among them `plughw:0,0` represents`card 0, device 0`, which is our USB sound car
 
 If the sound is too low, enter the command ` alsamixer ` , to adjust the volume, press ` F6 `, select the USB sound card, 
 
-![](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/5.png)
+![](/images/tutorials/accessories/usb-audio-card-tutorial/5.png)
 
 Then press ` F5 `, display both recording and playback devices, we increase the recording volume by pressing the up key, PCM is for playback, and CAPTURE MIC is for recording 
 
-![](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/6.png)
+![](/images/tutorials/accessories/usb-audio-card-tutorial/6.png)
 
 Then use ` aplay ` command to play 
 
@@ -106,13 +106,13 @@ Parameter descriptions are as follows:
 
 ## View PulseAudio Visualization Window
 
-![](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/7.png)
+![](/images/tutorials/accessories/usb-audio-card-tutorial/7.png)
 
 View via PulseAudio, [ command line ](https://so.csdn.net/so/search?q=%E5%91%BD%E4%BB%A4%E8%A1%8C&spm=1001.2101.3001.7020) method 
 
 `pactl list sources short`            # Lists all available audio sources in the current PulseAudio audio server
 
-![](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/8.png)
+![](/images/tutorials/accessories/usb-audio-card-tutorial/8.png)
 
 > 49 represents the source index
 > 
@@ -144,7 +144,7 @@ Search for code examples on your own, such as searching for “[Python calling U
 
 1. Device Occupancy Issue
 
-![](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/9.png)
+![](/images/tutorials/accessories/usb-audio-card-tutorial/9.png)
 
 Close the settings page and re-run the command
 
@@ -158,11 +158,11 @@ Check which process is occupying the audio device
 
 Before plugging in the sound card 
 
-![](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
+![](/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
 
 After plugging in the sound card 
 
-![](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
+![](/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
 
 Kill the process ` kill -9 PID ` , where PID is the PID that appears after plugging in the sound card, and in the screenshot it is 33739 
 
@@ -266,11 +266,11 @@ Among them `plughw:0,0` represents`card 0, device 0`, which is our USB sound car
 
 If the sound is too low, enter the command ` alsamixer ` , to adjust the volume, press ` F6 `, select the USB sound card, 
 
-![](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
+![](/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
 
 Then press ` F5 `, display both recording and playback devices, we increase the recording volume by pressing the up key, PCM is for playback, and CAPTURE MIC is for recording 
 
-![](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
+![](/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
 Then use ` aplay ` command to play 
 

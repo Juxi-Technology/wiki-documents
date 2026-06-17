@@ -16,7 +16,7 @@ The code in this tutorial repository is maintained at the stable version of Lero
 
 Online URDF Preview https://urdf.d-robotics.cc/
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
 ## Main Features
 
@@ -143,7 +143,7 @@ This usually installs ffmpeg 7.X compiled with the libsvtav1 encoder for your pl
 
 If you encounter the following error, you can also use the above command to resolve it. 
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
 ### 6. Install LeRobot with feetech motor dependencies:
 
@@ -168,7 +168,7 @@ On your computer:
 
 Copy and paste the following command in your shell:`source ~/.bashrc` or for Mac users:`source ~/.bash_profile` or `source ~/.zshrc` (if you are using zshell)
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
 ### 3. Create and activate a new Conda environment for LeRobot
 
@@ -206,7 +206,7 @@ This usually installs ffmpeg 7.X compiled with the libsvtav1 encoder for your pl
 
 If you encounter the following error, you can also use the above command to resolve it. 
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
 ### 6. Install LeRobot with feetech motor dependencies:
 
@@ -217,9 +217,9 @@ pip install *-e* ".[lekiwi]"
 
 # Configure Motor 
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
 ### **1. Find the USB port associated with the robotic arm**
 
@@ -250,7 +250,7 @@ lerobot-setup-motors \
     *--robot.port*=/dev/tty.usbmodem58760431551 # <- paste here the port found at previous step
 ```
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
 ### 3. Set up the domestic mirroring of HuggingFace
 
@@ -291,11 +291,11 @@ source ~/.zshrc
 
 https://huggingface.co/settings/tokens
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
 #### ② Record Token
 
@@ -313,17 +313,17 @@ hf auth login
 hf auth whoami
 ```
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
 #### ④Create Dataset Repo
 
 **Record the Owner and Dateset name, which are the \<hf_username\> and \<dateset_repo_id\> required later **
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
 ### 4. Update the configuration!!!
 
@@ -340,7 +340,7 @@ Important Note: Now that you have obtained the port number of the active arm and
 
 Modify these four files under the example\\lekiwi directory
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
 #### ①修改teleoperate.py
 
@@ -348,7 +348,7 @@ remote_ip: IP address of Raspberry Pi
 
 port: Port Number when the active arm is connected to a computer or Linux
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
 #### ②Modify record.py
 
@@ -358,7 +358,7 @@ remote_ip: IP address of Raspberry Pi
 
 port: Port Number when the active arm is connected to a computer or Linux
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
 #### ③Modify replay.py
 
@@ -366,7 +366,7 @@ remote_ip: IP address of Raspberry Pi
 
 \<hf_username\>/\<dataset_repo_id\>, i.e., [the Hugging Face username and dataset name](https://juxitech.feishu.cn/docx/DXtPd0iF1oO3aGxRChBcL3LSnFh?fromScene=spaceOverview#doxcnsAUzU1e1l6XIM07OE8grYg)
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
 ## Calibration
 
@@ -397,7 +397,7 @@ We unified the calibration methods for most robots. First, we need to move the r
 
 Open a new Anaconda Prompt
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
 > If you are using a Mac, you may need to grant "Terminal" permission to access the keyboard for remote operations. Please go to "System Preferences" \> "Security &amp; Privacy" \> "Input Monitoring", and then check the "Terminal" checkbox. 
 > 
@@ -409,7 +409,7 @@ To perform remote operations, log in to your Raspberry Pi via SSH and run the fo
 python -m lerobot.robots.lekiwi.lekiwi_host --robot.id=my_awesome_kiwi
 ```
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
 Next, on your laptop, also run the following command to activate the environment `conda activate lerobot`, and then run the following script:
 
@@ -577,7 +577,7 @@ HF_DATASET_ID = "\< hf_username \>/\< eval_dataset_id \>" Change the username an
 
 remote_ip: Raspberry Pi IP address
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
 Then run the following command: 
 

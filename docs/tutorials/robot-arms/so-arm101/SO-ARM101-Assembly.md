@@ -1,6 +1,6 @@
 # Lerobot机械臂组装教程
 
-![Image](../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
+![Image](/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
 
 **Pro版 主动臂使用5V6A电源适配器，从动臂使用12V5A电源适配器**
 
@@ -8,7 +8,7 @@
 
 # 第一步：设置舵机ID，安装舵盘（除5号舵机）
 
-![Image](../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
+![Image](/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
 
 再次提醒，请确保舵机关节 ID 和齿轮比与 **SO-ARM101** 的严格对应。
 
@@ -88,10 +88,10 @@ lerobot-setup-motors \
 
 舵机驱动板的安装：先安装4个铜柱，然后用四个M2.5\*8的螺丝固定驱动板
 
-![Image](../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/7.png)
+![Image](/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/7.png)
 
-![Image](../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/8.png)
+![Image](/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/8.png)
 
-![Image](../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
+![Image](/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
 
 **Pro版 黑色主动臂使用5V6A电源适配器，白色从动臂使用12V5A电源适配器**

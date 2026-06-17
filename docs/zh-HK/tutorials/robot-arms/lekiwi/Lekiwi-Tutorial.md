@@ -16,7 +16,7 @@
 
 在線URDF預覽 https://urdf.d-robotics.cc/
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
 ## 主要特點
 
@@ -143,7 +143,7 @@ conda install ffmpeg -c conda-forge
 
 如果遇到以下錯誤，也可以使用上述命令解決。
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
 ### 6.安裝具有feetech電機依賴項的LeRobot：
 
@@ -168,7 +168,7 @@ pip install *-e* ".[lekiwi]"
 
 在shell中複製並粘貼以下命令：`source~/. bashrc`或Mac用戶：`source~/.bash_profile`或`source~/.zshrc`（如果您使用的是zshell）
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
 ### 3.爲LeRobot創建和激活一個新的Conda環境
 
@@ -206,7 +206,7 @@ conda install ffmpeg -c conda-forge
 
 如果遇到以下錯誤，也可以使用上述命令解決。
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
 ### 6.安裝具有feetech電機依賴項的LeRobot：
 
@@ -217,9 +217,9 @@ pip install *-e* ".[lekiwi]"
 
 # 配置電機
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
 ### **1.找到與機械臂關聯的USB端口**
 
@@ -250,7 +250,7 @@ lerobot-setup-motors \
     *--robot.port*=/dev/tty.usbmodem58760431551 # <- paste here the port found at previous step
 ```
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
 ### 3.設置HuggingFace國內鏡像
 
@@ -291,11 +291,11 @@ source ~/.zshrc
 
 https://huggingface.co/settings/tokens
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
 #### ②記錄令牌
 
@@ -313,17 +313,17 @@ hf auth login
 hf auth whoami
 ```
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
 #### 創建數據集回購
 
 **記錄Owner和Dateset名稱，這是後面需要的\<hf_username\>和\<dateset_repo_id\>**
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
 ### 4.更新配置！！！
 
@@ -340,7 +340,7 @@ sudo chmod 666 /dev/ttyACM1
 
 修改example\\lekiwi目錄下的這四個文件
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
 #### ①修改teleoperate.py
 
@@ -348,7 +348,7 @@ remote_ip：樹莓派的IP地址
 
 端口：活動臂連接到計算機或Linux時的端口號
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
 #### 修改record.py
 
@@ -358,7 +358,7 @@ remote_ip：樹莓派的IP地址
 
 端口：活動臂連接到計算機或Linux時的端口號
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
 #### 修改replay.py
 
@@ -366,7 +366,7 @@ remote_ip：樹莓派的IP地址
 
 \<hf_username\>/\<dataset_repo_id\>，即[擁抱臉的用戶名和數據集名稱](https://juxitech.feishu.cn/docx/ML3KdzbJAogL4UxJnbXcThVkngg?fromScene=spaceOverview#doxcnbVewyqzNCN91akCqNmlwld)
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
 ## 校準
 
@@ -397,7 +397,7 @@ lerobot-calibrate \
 
 打開新的蟒蛇提示
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
 > 如果您使用的是Mac，您可能需要授予“終端”權限才能訪問鍵盤進行遠程操作。請轉到“系統偏好設置”\>“安全和隱私”\>“輸入監控”，然後選中“終端”複選框。
 > 
@@ -409,7 +409,7 @@ lerobot-calibrate \
 python -m lerobot.robots.lekiwi.lekiwi_host --robot.id=my_awesome_kiwi
 ```
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
 接下來，在您的筆記本電腦上，也運行以下命令來激活環境`conda激活lerobot`，然後運行以下腳本：
 
@@ -577,7 +577,7 @@ HF_DATASET_ID="\<hf_username\>/\<eval_dataset_id\>"更改您創建的用戶名�
 
 remote_ip：樹莓派IP地址
 
-![](../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
+![](/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
 然後運行以下命令：
 

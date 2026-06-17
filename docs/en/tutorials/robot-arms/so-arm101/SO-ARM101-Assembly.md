@@ -1,6 +1,6 @@
 # Lerobot SO-ARM101 Assembly Tutorial
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
+![Image](..//images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
 
 **The Pro version's active arm uses a 5V6A power adapter, while the passive arm uses a 12V5A power adapter **
 
@@ -8,7 +8,7 @@ Servo ID setting, servo angle calibration, and assembly should be completed in a
 
 # Step 1: Set the servo ID and install the servo horn (excluding servo No. 5) 
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
+![Image](..//images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
 
 Once again, please ensure that the steering gear joint ID and gear ratio strictly correspond to those of **SO-ARM101**.
 
@@ -88,11 +88,11 @@ lerobot-setup-motors \
 
 Installation of the servo driver board: First install 4 copper pillars, then secure the driver board with four M2.5\*8 screws
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/7.png)
+![Image](..//images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/7.png)
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/8.png)
+![Image](..//images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/8.png)
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
+![Image](..//images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
 
 **The Pro version's black active arm uses a 5V6A power adapter, while the white passive arm uses a 12V5A power adapter **
 
