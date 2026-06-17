@@ -205,6 +205,7 @@ export default defineConfig({
               ]
             }
           ],
+
           '/community/': [
             {
               text: '社区',
@@ -416,6 +417,7 @@ export default defineConfig({
               ]
             }
           ],
+
           '/en/community/': [
             {
               text: 'Community',
@@ -624,6 +626,7 @@ export default defineConfig({
               ]
             }
           ],
+
           '/zh-HK/community/': [
             {
               text: '社區',

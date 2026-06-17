@@ -113,7 +113,7 @@ Without graphical dependencies \(gdk\-pixbuf, librsvg\), use this command to ins
 
 If you encounter the following error, you can also use the above command to resolve it\. 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDRiY2VkYjg1NDI0NjZjNjJjOWVkMzc1ZjE2MzY0MGNfYzI2M2MzZDZjZTEyMDcxYTUzNzJhZDNiMzE3NWU0OWNfSUQ6NzYzODkxNTY4MDg0MzQ2Nzc0NF8xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/1.png)
 
 #### 6\. Enter the lerobot directory and install LeRobot with feetech motor dependencies: 
 
@@ -256,9 +256,9 @@ lerobot-calibrate \
 
 First, you need to move the robot to a position where all joints are located at the  middle of their movable range  and keep the robotic arm still\. Then, after pressing the Enter key, you must move each joint through its full range of motion, and the calibration file will record the  median ,  maximum , and  minimum  values of the range of motion, and save them in the ` ~/.cache/huggingface/lerobot/calibration/robots ` or ` ~/.cache/huggingface/lerobot/calibration/teleoperators ` directory in a JSON file\. 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjczNWRiZTBjMzAzMWNmMDQwYjFjZWNlOGM1NmUyMDhfMzhhMTFiNzcwZjU1MzgwNWNiMjljZWFhNzNkY2UwMThfSUQ6NzYzODkxNTY4MzUwMzQyNjQ4OF8xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/2.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MDdmOTg2ZWQ3ZjMxM2Y4NDcwNDRjMWZlMjM3ODJhY2ZfZDVmYzA1MmNmNzA3ODBlNDkwNjYyN2Y2ZDZlNmFhOWNfSUQ6NzYzODkxNTY4MTgzMjIwOTM1NV8xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/3.png)
 
 #### **4\. Calibrate the Leader robotic arm**
 
@@ -318,7 +318,7 @@ lerobot-find-cameras realsense # or realsense for Intel Realsense cameras
 
 The terminal will print relevant camera information\. 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZTM0NDljNTdkMjUxNzI4MTdiMWZhY2Q5NzU5YTRiMTVfYjFlY2YxZmNjMDk5ZTMwYTNkNDA4OWE5MjgxZDYyZjhfSUQ6NzYzODkxNTY4MjEzMDc5MTM2OV8xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/4.png)
 
 You can find the images captured by each camera in the `~/lerobot/outputs/captured_images` directory\.
 
@@ -358,7 +358,7 @@ lerobot-teleoperate \
 
 If you want to add a RealSense depth camera, first run `python -m lerobot.find_cameras realsense` to get the ID, and replace the serial\_number\_or\_name: "323622271780" parameter of robot\.cameras in this command with the ID of your own depth camera, `use_depth: true` to enable the depth stream: 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDhkNTQxMTU2NWNiNDYxOGFmOTk2NGYzNjA0ZTdjNTZfN2U1ZmQwOGEwMWM3NjNhNGExNWQ1YjZhNjc5OGE4MzdfSUQ6NzYzODkxNTY4MDk2NTIwMDg0OF8xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/5.png)
 
 
 
@@ -525,7 +525,7 @@ lerobot-dataset-viz \
 
 Here, `juxi` is the custom `repo_id` name during data collection\. 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjE4YTU5MzgwYzY2N2RkNDc4YTk4NDUzYWNkOTBlOGJfZGNiYzMwNjZhZWY3Nzc3MDk5YWE5OTViOTFiMzBiYjhfSUQ6NzYzODkxNTY4MTgzMjE5Mjk3MV8xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/6.png)
 
 ### Playback a clip\(skippable, tryable\)
 
@@ -591,7 +591,7 @@ Command Explanation
 
 If you encounter the following error: 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjE4ZTE4OGRmYzA3NWY4YWFiYjY1ZWY4ZGM2OGIxY2NfNTM5NTQ3ZDhmOWU4NjM4ZGVlMGMwYzE4Y2Y2NTdiNGFfSUQ6NzYzODkxNTY4MzM2MzU1NjMyMl8xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/7.png)
 
 Try running the following command to resolve: 
 
@@ -772,15 +772,15 @@ Taking AutoDL Computing Power Cloud as an example, www\.autodl\.com , register, 
 
 #### **1\. Click "Computing Power Market", select the desired graphics card, and try to choose one with more cores\.**
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTgxMWNjYTkxYjllYTY4ZmI0YjdlNDA1ZWVhZWRjYzhfMjE2OGY1MWJlNWYzZjViYTM1NmVhOWFlMDg2ZGE2ZThfSUQ6NzYzODkxNTY4MzQ1MTE2MTUzMV8xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/8.png)
 
 #### **2\. Select "Pay\-as\-you\-go", choose "Miniconda/conda3/3\.8\(ubuntu20\.04\)/11\.8" for the base mirroring, and click "Create Now"\.**
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZWM4YTRjODU0NDQwZDE1NzE3MjllZjU3YzgxMDQ4MGNfOWMxNTY3NWIxNWNjNjVkOWZlYTU5ZTFlYmQ4YmE1YWRfSUQ6NzYzODkxNTY4MTQ5MDgxNTk1Nl8xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/9.png)
 
 #### **3\. Click "JupyterLab" to enter the control interface and open the terminal**
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Y2QzMzhjM2FiMzZjNzA2YTJkNjc5M2Q0YjQ2MjEwNzdfMjU1MDI4YzZiYThjNmUwYjgyOWU1YTk5YTdiZTY5NjBfSUQ6NzYzODkxNTY4MzU5Mzg4MjU3Ml8xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/10.png)
 
 #### **4\. Initialize the conda environment**
 
@@ -796,7 +796,7 @@ conda activate base
 conda init
 ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTNmMDE0NGY1ODU1ZmVmMmFmNTlmNzUwMDFjZDk2OGFfZTk0NDdjMWFhODJjNmVjOGUyNTliYzRmODVhMTUxNTJfSUQ6NzYzODkxNTY4MDY4MzgzODQxM18xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/11.png)
 
 #### **5\. Close this terminal, open**** a new terminal ****, and configure academic resource acceleration **
 
@@ -806,7 +806,7 @@ Reference https://www\.autodl\.com/docs/network\_turbo/
 source /etc/network_turbo
 ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDUxOTY1MzIxMTFkNDIyOWU4ZmMwYzRiNzJmYWRmMjJfZTQ4YjViNjEyMTUzNzM3OWI2MjhlM2M2NDhiMDZmNDVfSUQ6NzYzODkxNTY4MzM4ODQxMDg1MV8xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/12.png)
 
 #### **6\. Create the lerobot environment**
 
@@ -842,7 +842,7 @@ There are two scenarios, one is**when the dataset has been uploaded to the Huggi
 
 **① If the dataset has been uploaded to the Hugging Face database during Data Acquisition, it can be obtained via the key obtained by configuring the Hugging Face database\.**
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZmYzOTMzNmM5ZTM0M2I4ZDJkNzhkZTJlYzZiMjBjODhfMTlkZjI2ODI5NWI2NmVkMmU1MGUxNzJjZDQxYmI1ZWNfSUQ6NzYzODkxNTY4Mzk4ODEzMDc1Ml8xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/13.png)
 
 ```Plain Text
 huggingface-cli login --token ${HUGGINGFACE_TOKEN} --add-to-git-credential
@@ -856,7 +856,7 @@ HF_USER=$(huggingface-cli whoami | head -n 1)
 echo $HF_USER
 ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ODJiYmQ0Y2QwOTYyNDkyZDRkODNhZjJhYmZkMGRhODdfZWFiYzkzMzJmYTc0ZWIzNTkxZTNjOTEzYWU0NjYxZDNfSUQ6NzYzODkxNTY4MTQ5MDgzMjM0MF8xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/14.png)
 
 ```Plain Text
 export HYDRA_FULL_ERROR=1
@@ -876,29 +876,29 @@ filezilla
 
 Open FileZilla, click "File", select "Site Manager", create a "New Site", and select "SFTP Protocol" 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Y2I5MzFlN2VlYjFiNDk2MjdhMGQwMTczNGRiYWNlYmVfYTVjNWFhNDA5ZmQxMDQxNWVhNWE3ZTQxMWQ1YWE1NjJfSUQ6NzYzODkxNTY4NDI2NDc0MTgyNF8xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/15.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTRmMmYwMDVkOTE0NTAwYjRhNDBlOTQzOGE4MWE5YjRfN2FiMTM1MmNhNzAwNjNlMTVmYmVhNmMwYWQ4MTI4MDBfSUQ6NzYzODkxNTY4MjI5ODQ2NTI1MV8xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/16.png)
 
 Return to AutoDL Computing Power Cloud, copy the "Login Command", paste it somewhere convenient for viewing, copy and paste the corresponding information into it, and click "Connect" 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Y2UwNDlmMjhhZjFjMTdkNmY1MTI1MzE5MjU4NGI5ZTFfZGI5MGM5YjU5ZjQwZTY5MzA4Yjk0MWYwZjQ2ZDkyNzZfSUQ6NzYzODkxNTY4MjQ0OTM5NDYzOF8xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/17.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NTNmZGVjMWIwY2Y2YzRjMzhlNjI2YTFmOTlmNTUzNmFfNjY2NjFmMWM4NzdjNzBkZmM2NjdiNmNiN2Y3YjQ2ZDFfSUQ6NzYzODkxNTY4NDI2OTE4MTkyMF8xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/18.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NGY4YmVkNzIwMzkxZTk2MGE0OWViMDVkMzI4Yjc3ZGJfNjk4MjRjZTc3MTg1NWM1NDk0ZTkwZDcwMThjY2I4MDVfSUQ6NzYzODkxNTY4MzM4ODQyNzIzNV8xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/19.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YmI5MDgxOWYxYjdmN2E2OTYyMzgyMjQyNjNmOGQwNTJfZjU2NGVhYWQwODVmYWE1OGY3MDE0NDdjOTU0MjUzNmRfSUQ6NzYzODkxNTY4MDUxMTgyMjc3OV8xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/20.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NTE3MTg5NmM3OGFmZWMyNjZmYTFkNWVjNTljYjcyZWNfYzRjNmNlNGQ5M2VjZWQwOGQxMTBkMDc1ZDY2OTE2MjNfSUQ6NzYzODkxNTY4Mzk4Nzk5OTcxM18xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/21.png)
 
 Create a data folder under the lerobot directory of the cloud server
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NmIxMWRjYWUyOTYxZGI0ODA4ZDBiMTIyOWY5YzcwNjNfNDY0OTA0NjM4NjY2OWZhMGZkNDQ2ZDM1OTFlMDlmZTdfSUQ6NzYzODkxNTY4MzU3NzEwNTM1MV8xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/22.png)
 
 Drag the dataset folder to the right for transfer and wait for the transfer to complete 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjFkZThlYThmNjA5MDcyOGZlNTc2MGExZTM5OTI5YzdfN2IxOTdkN2YzYzYxODI4Nzc1OTIzZDMxNzRlMjBhNGJfSUQ6NzYzODkxNTY4NDQxMTYwODAzMF8xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/23.png)
 
 #### 9\. Dataset Training
 
@@ -908,7 +908,7 @@ Refer to [E\. Dataset Training and Evaluation ](https://juxitech.feishu.cn/docx/
 
 After training is completed, export the trained model corresponding to the train directory 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDJjNzQ0ZDk0NDVmZmJmMDk2MjA3NmEzYTIwNjBkYTZfMDNjMTNiZGYyMjgzODM4OWU0NmMwODZiYjEzYmU5Y2NfSUQ6NzYzODkxNTY4MzA5NDkwNzg3NV8xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/24.png)
 
 ## G \.  Frequently Asked Questions 
 
@@ -967,7 +967,7 @@ No valid stream found in input file. Is -1 of the desired media type?
 
 Please install ffmpeg7\.1\.1,`conda install ffmpeg=7.1.1 -c conda-forge`。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTgzMzE5MDc2NjdmZjM1MjRmYTdlZGRlYmZmYTYyZjNfYThlZjNjN2YwYjIwZDUxNTI0MjI5ZmQxYzk5MmM5NmFfSUQ6NzYzODkxNTY4MTQ5MDc1MDQyMF8xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/25.png)
 
 - If you encounter 
 
@@ -1021,7 +1021,7 @@ For debugging, any Windows PC can program, debug, or test the servo via USB conn
 
 Select the Port Number, set the Baud Rate to1000000, open it, and click "Search"
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ODhjYmQ1MDA1ZjY2YmJjMTA1MzJjMzE5ZGZhNWUzNmNfNzBiOGM5MjdmMDViMmI5ZjA4Zjc4NTUyMmZlYTQ1MzNfSUQ6NzYzODkxNTY4MzU3NzEyMTczNV8xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/26.png)
 
 
 
@@ -1039,11 +1039,11 @@ https://bambot\.org/feetech\.js?lang=zh
 
 1\. Enter 0 or 1 based on the servo model, then click "Connect"\.
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YWM4M2RiZjgzN2QyZGRlNzNlMDc3YTgwYTk0MDM0OTNfMWZjYWVjNjg5OTQyMjkxN2U1NGIwMzcxYzYwNDc4MTNfSUQ6NzYzODkxNTY4MTIyMzkwNDIwNl8xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/27.png)
 
 2\. Scan the servos with IDs 1 to 6, and the corresponding ID servo can be confirmed based on the FOUND in the scan results\. For example, servo ID 1 in the picture has been scanned\.
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OGZmYzliYThiZjMwZDEyNWVmNjMwZDA3Mjk2NWZkZmRfMTUwZDI2MDJjMTU1M2ZiMjY0YzY2MTI1MDZkNDU4NmFfSUQ6NzYzODkxNTY4Mzk2MzE2MTUzMF8xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/28.png)
 
 3\. ID Setting and Median Calibration
 
@@ -1057,7 +1057,7 @@ STS Servo: Enter 2047 in "Position Control" and click "Set"
 
 SCS Servo: Enter 511 in "Position Control" and click "Set"\. 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=N2UwOTRhZTNmODYyNmEwN2Y5NGZhNTAxNjMxMzU2MDNfOTVlYTU3ZmQ1ZmZkN2Y2YzA3Y2NhZTJmMjM2OWY4YmRfSUQ6NzYzODkxNTY4MDk2NTE4NDQ2NF8xNzgwMzE1NDkxOjE3ODA0MDE4OTFfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/29.png)
 
 
 

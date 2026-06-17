@@ -113,7 +113,7 @@ conda install ffmpeg -c conda-forge
 
 如果你遇到以下報錯，也可以使用上述命令解決。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YWI0OWNkOTc5NDcyNjkxOGVjOGYzMTBiYjExNTk5ZGFfOTAxYmIxNTJhMDM3MjgzMDNiOThhNzFkMzdkMzE1MjJfSUQ6NzYzODkxNDkyNjE3NDQ4OTU3M18xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/1.png)
 
 #### 6\. 進入lerobot目錄下，安裝帶有 feetech 電機依賴的 LeRobot：
 
@@ -256,9 +256,9 @@ lerobot-calibrate \
 
 首先，您需要將機器人移動到所有關節都位於其 可活動範圍中間 的位置 並 保持機械臂不動。然後，按下回車鍵後，您必須將每個關節在其完整的運動範圍內移動，校準文件會記錄下可活動範圍的中位、最大值和最小值,並保存在`~/.cache/huggingface/lerobot/calibration/robots`或者`~/.cache/huggingface/lerobot/calibration/teleoperators` 目錄下json文件中。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZGVjYzFiN2NjZGJhNjViNjFjMzBiZjI4MmM5MzExNGFfNzZiMDA5OGQ0ZjlkMTc5Y2UzOGY5ODBiYTA5N2M4MjBfSUQ6NzYzODkxNDkyNDAxODMyMjM3OV8xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/2.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=M2ZjN2YwZjgwNmRhYjFkOWYwNzUwMjJlMDJmMzk4NGFfZWJmMWJjNDFlNDI5MmNjZTRlZWE3MGY5NTQ4MDU5ZmVfSUQ6NzYzODkxNDkyMzI2NTU3NTg2NF8xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/3.png)
 
 #### **4\. 校準Leader機械臂**
 
@@ -318,7 +318,7 @@ lerobot-find-cameras realsense # or realsense for Intel Realsense cameras
 
 終端會打印相關攝像頭信息。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MzQ5ZGRhYWQ5N2YzNjVhN2NiYmY4NjZmNGVlM2E0OGFfZDY2N2VkZjBiNjkyNTEzOWYyOGQ2MDI2MzY4YWI3MmVfSUQ6NzYzODkxNDkyMjM3NDc0NTAzOF8xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/4.png)
 
 您可以在 `~/lerobot/outputs/captured_images` 目錄中找到每臺攝像頭拍攝的圖片。
 
@@ -358,7 +358,7 @@ lerobot-teleoperate \
 
 如果你想添加RealSense深度相機，先運行`python -m lerobot.find_cameras realsense` 獲取Id，並將此命令中robot\.cameras參數的serial\_number\_or\_name: "323622271780" 替換爲自己的深度相機Id，`use_depth: true` 啓用深度流：
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YWFmZmMxN2IzMmZhNWQzMTFlZGNmNmQ5ZWFiODg4MTNfNzdkYWRiYzc3MDgyODRhOWEzMjU5NjU2ZjUwY2M0YjVfSUQ6NzYzODkxNDkyMzMwMTM1ODU0MF8xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/5.png)
 
 
 
@@ -525,7 +525,7 @@ lerobot-dataset-viz \
 
 這裏，`juxi` 是數據收集時自定義的 `repo_id` 名稱。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NGM5YTkzNGQ4YTc5OTM0ZTNiZDA0OGM3NjU0YjAwZTdfOTdiZDhmYjExZGUzZWVjNjNjZjJiY2RmYzZlNTMyNDhfSUQ6NzYzODkxNDkyNTMwNjg1ODQyN18xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/6.png)
 
 ### 回放一個片段（可跳過，可嘗試）
 
@@ -591,7 +591,7 @@ lerobot-train \
 
 如果你遇到了以下報錯：
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OGJiNzRkMTMwY2FlM2I0N2M1NTQzYTI4ZTlhMjZlZTlfNTk0MTQ1YTdhM2ZjMWM3Y2Y4NzBkOWJmODMzMDg1YzRfSUQ6NzYzODkxNDkyNTAyMDQzMzM1OF8xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/7.png)
 
 嘗試運行以下命令來解決:
 
@@ -772,15 +772,15 @@ lerobot-record \
 
 #### **1\.點擊“算力市場”，選擇需要的顯卡，儘量選多核心**
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MGFhODUxZjUyZWM5YTM3ZmU4ZDU1NmMxZTgyNzBmZmNfNmZkZGFiYTU3MDVhMTQ0NzFjNTE2NzgyNDRjMTY0ODBfSUQ6NzYzODkxNDkyNjM4NzM5OTYyOF8xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/8.png)
 
 #### **2\.選擇“按量計費”，基礎鏡像選擇“Miniconda/conda3/3\.8\(ubuntu20\.04\)/11\.8”，點擊“立即創建”**
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NTE2NmRhNzU2YTgzZjRiNWIxM2Y5YTBhODBjMmRiYzBfZjc4ZDM4YmEyY2E2ZDcxNGY4M2I5NDNhMDYzNmY3ODdfSUQ6NzYzODkxNDkyMzE2NzIyMjc1N18xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/9.png)
 
 #### **3\.點擊“JupyterLab”進入控制界面，打開終端**
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MDc5YWNkNGQ3NTliYjFmYzFiYWFiZjE4YjczNWNhNDNfZmRlMTI3ODQyODBjMzg0YmNkNWRlNjM1MjQ5MGI1NWNfSUQ6NzYzODkxNDkyMjk0NTAwNjU1OV8xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/10.png)
 
 #### **4\.初始化conda環境**
 
@@ -796,7 +796,7 @@ conda activate base
 conda init
 ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YjQxY2RiMjcxZjBkMmVlMjA2MjEwMjc1MWNhZTM5OTVfOTEwZjY0OTg5OThiMGQwNjM4YjBlZWU2ZmMzMzFkOTJfSUQ6NzYzODkxNDkyMzI1OTQ5NzQyOF8xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/11.png)
 
 #### **5\.關閉此終端，打開****新的終端****，配置學術資源加速**
 
@@ -806,7 +806,7 @@ conda init
 source /etc/network_turbo
 ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ODg5ZjRlYjZlMTgwY2YxYWQ0YTg4ZmQzMDc2NmFkMGJfNDliODAxNDE0ZTYzNGVlN2QyZWJlNmNlNWNkNDBiNmJfSUQ6NzYzODkxNDkyNDgxNTI4OTMxMF8xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/12.png)
 
 #### **6\.創建lerobot環境**
 
@@ -842,7 +842,7 @@ cd ~/lerobot && pip install -e ".[feetech]"
 
 **①若 數據採集 時已上傳數據集到huggingface數據庫裏，可通過配置huggingface數據庫得到的key獲取**
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YWNmMzc4NmYyYmM0N2VhYTYyNDRmZDZiZGNlMjM4NDFfY2VhNzRlMTUyNzY2OTA3ODc3MjMxZDRmYjdlOWI4ZjhfSUQ6NzYzODkxNDkyMzk4MDU5MDAxMl8xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/13.png)
 
 ```Plain Text
 huggingface-cli login --token ${HUGGINGFACE_TOKEN} --add-to-git-credential
@@ -856,7 +856,7 @@ HF_USER=$(huggingface-cli whoami | head -n 1)
 echo $HF_USER
 ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=M2VhYTdjZGNlYmU0MWVjNmFmOWViYjc4OTMzNDJlYmZfZGNlMjk3Y2U4OTJiODFjYWJiNDVjNzNhODhkZTE5YTdfSUQ6NzYzODkxNDkyMjU4MDE1MTI2NF8xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/14.png)
 
 ```Plain Text
 export HYDRA_FULL_ERROR=1
@@ -876,29 +876,29 @@ filezilla
 
 打開filezilla，點擊“文件”選擇“站點管理器”，創建“新站點”，選擇“SFTP協議”
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDM3OGMyMGVkMGMxNGJjYzUzMjA5MzQ5N2U0OGNkYzlfNmEyYmM4Mjg2MWUxYTc5ZWZhZGExNmQzZjY1ODJmNjlfSUQ6NzYzODkxNDkyNjAyNjg2OTcwOV8xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/15.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZmExYmI3MjI1ZTlmZmJhNjA3MDNiZjU4OGQ2NGU4MzRfOGUyYzM3YzMzNDg2YmNmNjEwNzljN2JiOTlmNmUxZDZfSUQ6NzYzODkxNDkyNjAxNDMxOTU2NF8xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/16.png)
 
 返回AutoDL算力雲複製“登錄指令”並粘貼到方便查看的地方，將對應信息複製粘貼進去，點擊“連接”
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTQyYzRmYjMzZDUxYWE5YzE3NDY2YzEwNzg1ZDk5NzVfNmNlNTk1YWUzZTRlZWFkNzdmYjM1NTRkYmY2MGFmZDRfSUQ6NzYzODkxNDkyMjI5OTE4MjAyOV8xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/17.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTg0ZWJlM2IwOTllN2ZlZWI0MTEzZDI1MTBiYzQzMThfMmFhNjMyNjkzMGZiNDE4ODQ2MmJjNzZiMWEzMGE0ZjFfSUQ6NzYzODkxNDkyNTE3NTYzODk3OF8xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/18.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OGQzMmQ3MzI3ZDM1M2JlYjA3MGFhNGY2Nzk4MGRiMzZfOTkxNjk1NDg1OTc0NTkyOTI3ODc1ZjIxMWYzNWQ4NDJfSUQ6NzYzODkxNDkyNDU3MDE2ODI2OF8xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/19.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YTJjNWQyMzgwZjViMGFlZGI5YjVkZDQ5ZjJlNTFiNjRfN2Y4YjZkOWVhMzFiNjhmZDA5NzdiMjc3M2RhNjhkMmZfSUQ6NzYzODkxNDkyNDc3MDcyNDgyNF8xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/20.png)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZTIyMzg0ZWU4NWMwYjQ0YzFhOWM0N2Q1MjQ3ZDA0MjdfMjNkNjE2YWZjNzg5Y2Y1NTAyYThmYmU0OWYzNTJkZmFfSUQ6NzYzODkxNDkyMzM0MzMxNzk3M18xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/21.png)
 
 在雲服務器的lerobot目錄下 創建 data 文件夾
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YzgxYThlYTIwM2Y1MWM2ZDQ4M2FkMzczZTdmZDM5MGNfMjZlNThlMzNlYzZmMjViZmM4M2RhN2Q1ZDcxNDM5NTlfSUQ6NzYzODkxNDkyNDQ0NzkyNzIzOV8xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/22.png)
 
 將數據集文件夾 拉到 右邊 進行傳輸，等待傳輸完成
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MzUzYjAwZGIyOGNlMWFiN2QwNDI0ZjJjYjgzMTVkZjBfZmE1NDAwODcyY2FmZGYzZjFlNzY4ZTg1Y2Y2MTZhZjlfSUQ6NzYzODkxNDkyNjI0OTA2OTUyNV8xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/23.png)
 
 #### 9\.數據集訓練
 
@@ -908,7 +908,7 @@ filezilla
 
 訓練完成後，將對應train目錄下的訓練模型導出
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NTNlZDYzMzA4MTBlZjZkMTFiOTBmYzM0Y2ExZjFhNTFfNDBlNTkwYjRlMDk0NTUyMjA1ZjM3ODMzYzI0ZTc5NzFfSUQ6NzYzODkxNDkyMjQxNjY4ODA5N18xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/24.png)
 
 ## G\. 常見問題
 
@@ -967,7 +967,7 @@ No valid stream found in input file. Is -1 of the desired media type?
 
 請安裝ffmpeg7\.1\.1，`conda install ffmpeg=7.1.1-c conda-forge`。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YmZiYTQzZGQ4NjYwOWI5YjBkY2U1Y2FlM2I5Y2M3M2NfN2YzMWY2MTQ1MTA4YjQyZDM4NjYzNDdhZmI4YWU2MGNfSUQ6NzYzODkxNDkyNTkxMzcyMTgyNl8xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/25.png)
 
 - 如果遇到
 
@@ -1021,7 +1021,7 @@ File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'
 
 選擇端口號，波特率選1000000，打開，並點擊“搜索”
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZTFlNjUyNDEyOWFhNTMzMWZlNTc1YWJjNzMyZmExYzRfZmMxMTRmNzQxNzZiOTg5YzI3YTNhZjQ2YzYzYTM2MzBfSUQ6NzYzODkxNDkyMjkxOTc1ODc5NV8xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/26.png)
 
 
 
@@ -1039,11 +1039,11 @@ https://bambot\.org/feetech\.js?lang=zh
 
 1、根據舵機型號輸入0或1，點擊“連接”
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OGMxNTFiNDllMDQ4NmUyMTAzYWUwZGNjMDM1NTY1YmZfNjM5MGU1MGQzNWIyMzRhZGE3YjNmZThkNjM3ZGExZTFfSUQ6NzYzODkxNDkyMjU1NDkzNjI1MF8xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/27.png)
 
 2、掃描ID 1\~6 的舵機，可以根據掃描結果裏的FOUND確認對應ID舵機。例如圖片裏舵機 ID 1 被掃描到了
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MDI4ZTk1YzIwN2EzOTY0MzJjOTE5YWE2OTU3OTYzN2NfMDU1NGNmZTQyMTUxYTA4OGJhNGNkZGM4NjFkNWQ2ZTZfSUQ6NzYzODkxNDkyNDAxODM4NzkxNV8xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/28.png)
 
 3、ID設置和中位校準
 
@@ -1057,7 +1057,7 @@ STS舵機：在“位置控制”輸入2047，並點擊“Set”
 
 SCS舵機：在“位置控制”輸入511，並點擊“Set”
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YzQyODJmMDUyOGQ0NjQ0ODNhOTc3N2U0YjgxNDA3NGJfMTIzOWI3ZDlkN2NlZDEyZDMzNGYxZDY5NWRlMjU4YTZfSUQ6NzYzODkxNDkyMzM2NDMzODY1OF8xNzgwNDAzMjcyOjE3ODA0ODk2NzJfVjM)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/29.png)
 
 
 
