@@ -2,9 +2,9 @@
 
 本次例程使用的是Arduino Nano開發版，一臺windows電腦、杜邦線若干、IMU姿態傳感器、USB轉TTL模塊。
 
-\[Arduino\.rar\]
+[Arduino.rar]
 
-## 1\.連接設備
+## 1.連接設備
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NzkzYjVlMWY0NjU4ZjIwZjU4ZmUzZGIwN2IyNWFiYTRfNzA5Zjk2ZDM1MDUzMmYwOTgwNjZjMWM3YTc4NzRkNzFfSUQ6NzYzODk2NTgxNTM1NDEzMzQ1Nl8xNzgwNDA0NDQ2OjE3ODA0OTA4NDZfVjM)
 
@@ -12,7 +12,7 @@
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ODBmMDFiNGNiYmVmMmI2MjExMzRhMWE2OWM3ZWM2YjdfYmViOWE3ODliMjkwYjk1MWUyNTQwODFlYjNhMWUwN2RfSUQ6NzYzODk2NTgxOTA3ODEwMTk2M18xNzgwNDA0NDQ2OjE3ODA0OTA4NDZfVjM)
 
-## 2\.關鍵代碼解析
+## 2.關鍵代碼解析
 
 具體代碼請看資料中的源碼。
 
@@ -175,11 +175,11 @@ static void _parse_frame_data(uint8_t frame_function, const uint8_t *frame_data)
 }
 ```
 
-IMU\_UART\_Process\(\): 讀取緩存的數據，並調用\_parse\_frame\_data解析符合通信協議的數據。
+IMU_UART_Process(): 讀取緩存的數據，並調用_parse_frame_data解析符合通信協議的數據。
 
-\_parse\_frame\_data\(\)：解析數據幀。
+_parse_frame_data()：解析數據幀。
 
-## 3\.讀取imu數據
+## 3.讀取imu數據
 
 程序下載進入Arduino後，打開串口助手（配置參數如下圖所示），可以看到一直打印IMU模塊的數據，當我們改變IMU模塊的姿態，數據會發生變化。
 

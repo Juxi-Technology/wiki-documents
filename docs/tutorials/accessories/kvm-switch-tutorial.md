@@ -34,7 +34,7 @@ KVM切换器包含HUB功能、TTL串口、蓝牙模块
 
 ### 2、主板（无显示器）+主机（有显示器）
 
-只需要额外使用一个 4K高清HDMI采集器 连接到主机端，在**主机端**使用OBS、Potplay等软件即可采集**主板（无显示器）**的画面
+只需要额外使用一个 4K高清HDMI采集器 连接到主机端，在**主机端使用OBS、Potplay等软件即可采集**的画面
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NzlhYWI3YWMyMDFmZTdiMTljMWUzYjJmNGRkYTBhMmJfZDg0MzAyYjA1NzU5ODRhNzY4YzViM2YxMzBlY2E0ZGRfSUQ6NzYxNjY2NzczMzQ3MjQ5NjU3OV8xNzgwMDUxNjY4OjE3ODAxMzgwNjhfVjM)
 

@@ -1,12 +1,12 @@
-# Multi\-master communication case
+# Multi-master communication case
 
 ## Precautions 
 
-1. CH341 Driver Installation \(Install as Administrator\)
+1. CH341 Driver Installation (Install as Administrator)
 
-https://www\.wch\.cn/downloads/CH341SER\_EXE\.html
+https://www.wch.cn/downloads/CH341SER_EXE.html
 
-If the PC device is recognized as an unknown device such as "usb single serial" or "usb serial" in Device Manager, please first right\-click to uninstall it, and then install the driver\! 
+If the PC device is recognized as an unknown device such as "usb single serial" or "usb serial" in Device Manager, please first right-click to uninstall it, and then install the driver! 
 
 
 

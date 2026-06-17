@@ -1,12 +1,12 @@
-# 靈巧手\(TTL串口舵機\)調試教程
+# 靈巧手(TTL串口舵機)調試教程
 
-首先，下載“[靈巧手調試\.zip](https://juxitech.feishu.cn/wiki/QjYBwL0A0iJVlNkEpUUclLYGnBc)”壓縮包，解壓後可通過“使用arduio程序調試靈巧手過程（TTL舵機）”文檔進行舵機ID設置、標定、校準中位及演示程序運行，或 參考[官方開源代碼](https://github.com/pollen-robotics/AmazingHand/tree/main/ArduinoExample)。
+首先，下載“[靈巧手調試.zip](https://juxitech.feishu.cn/wiki/QjYBwL0A0iJVlNkEpUUclLYGnBc)”壓縮包，解壓後可通過“使用arduio程序調試靈巧手過程（TTL舵機）”文檔進行舵機ID設置、標定、校準中位及演示程序運行，或 參考[官方開源代碼](https://github.com/pollen-robotics/AmazingHand/tree/main/ArduinoExample)。
 
-**成品無拆卸****情況下（出廠 舵機ID設置、標定、校準中位已調試好）可以直接跳到**[**第6點 運行“02 演示程序”**](https://juxitech.feishu.cn/docx/MaBndXRkkoRuXaxgdSfc5nAZnkz#doxcnq15qT2cLMtHW6PsARcSGsf)** 和 第7點 **[**手部追蹤**](https://juxitech.feishu.cn/docx/MaBndXRkkoRuXaxgdSfc5nAZnkz#doxcncgX5XgyRUFRpYJytV7gV7e)**。**
+**成品無拆卸**情況下（出廠 舵機ID設置、標定、校準中位已調試好）可以直接跳到**[**第6點 運行“02 演示程序”**](https://juxitech.feishu.cn/docx/MaBndXRkkoRuXaxgdSfc5nAZnkz#doxcnq15qT2cLMtHW6PsARcSGsf)** 和 第7點 **[**手部追蹤**](https://juxitech.feishu.cn/docx/MaBndXRkkoRuXaxgdSfc5nAZnkz#doxcncgX5XgyRUFRpYJytV7gV7e)**。**
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MWUwNmZiY2VmNTcwNTY2YzZkNGI2NDRlNWNiNWZkMjFfMDFhNzcwZTRjOWIwNzc1YzY0ZDNhYWYwN2Y0YTE2MWRfSUQ6NzYzODk2MDg2OTQ3NDc2NTc4NV8xNzgwNDAzMzA0OjE3ODA0ODk3MDRfVjM)
 
-## 1\. 調試靈巧手的接線方式
+## 1. 調試靈巧手的接線方式
 
 一種是使用電腦運行python等上位機軟件，如飛特舵機上位機或者python代碼運行
 
@@ -18,7 +18,7 @@
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MmE3ODA4Y2I3ODIyMDhiMGU5NmY4NTI1NTliYmFlZDFfYjI3OGZlNDJkMGMxMzRhMmViZGRmMzBhZjNmYWNjMDZfSUQ6NzYzODk2MDg3MjU1NTI4NTQ1OF8xNzgwNDAzMzA0OjE3ODA0ODk3MDRfVjM)
 
-（2）MEGA328P開發板調試時的接線方式（舵機驅動板\+328P開發板）：
+（2）MEGA328P開發板調試時的接線方式（舵機驅動板+328P開發板）：
 
 **看清楚MEGA328P開發板的針腳位置！**
 
@@ -32,19 +32,19 @@
 
 下面描述的是使用單片機的調試過程，單片機本身是會不斷循環演示程序的，只需斷開數據線即可停止。
 
-## 2\.設置舵機ID
+## 2.設置舵機ID
 
-單個靈巧手共使用了8個舵機，右手 ID需要設置爲1\-8 ，左手 ID需要設置爲11\-18
+單個靈巧手共使用了8個舵機，右手 ID需要設置爲1-8 ，左手 ID需要設置爲11-18
 
-中位校準 成品默認 右手\[451,571,451,571,451,571,451,571\] 左手\[571,451,571,451,571,451,571,451\]
+中位校準 成品默認 右手[451,571,451,571,451,571,451,571] 左手[571,451,571,451,571,451,571,451]
 
 1、連線：依次將 **單個** 舵機、舵機驅動板連接起來。
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Y2Q4MzBjODVhNDhiMmYwNDBkNzViMDNhNmE3ZDkyMTFfNTU4OTM1ODIzNmZhZjUyYjBhMTQzNjNjODUwN2I5MTRfSUQ6NzYzODk2MDg3MDUwMDUwMjQ2MF8xNzgwNDAzMzA0OjE3ODA0ODk3MDRfVjM)
 
-2、使用舵機廠家提供的上位機軟件FD1\.9\.8\.2進行設置
+2、使用舵機廠家提供的上位機軟件FD1.9.8.2進行設置
 
-\[FD\.rar\]
+[FD.rar]
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NmM5N2YxYzJhZWQyZDgxNTM5YWIxOGRkMzRjOTAwOGJfMjY2OTA1MWI2ZTg0Yjg3ZjY4NDE1ZGEzZGI2ZGIzN2RfSUQ6NzYzODk2MDg3Mjc1NjU0NjUyN18xNzgwNDAzMzA0OjE3ODA0ODk3MDRfVjM)
 
@@ -52,7 +52,7 @@
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YjM1OWRmMWMwYmMwMGE4YjYzMzQ0MzI0N2QxMjhhZjZfOTliZTMyYzQ5YTZkZTZlOTQ4ZTE3YzIyNmY2OTY1YjhfSUQ6NzYzODk2MDg3Mjc1NjUzMDE0M18xNzgwNDAzMzA0OjE3ODA0ODk3MDRfVjM)
 
-## 3\.**固定伺服喇叭**
+## 3.**固定伺服喇叭**
 
 1、上傳代碼程序“安裝白色伺服喇叭時使用” 到開發板中
 
@@ -104,23 +104,23 @@
 
 步驟同上
 
-## 4\.**微調中間值**
+## 4.**微調中間值**
 
 1、上傳代碼程序“01 微調MiddlePos值時使用” 到 開發板中
 
-2、手指處於閉合位置時，立即停止程序（斷開數據線即可），並檢查伺服喇叭是否正確對齊（如下圖）。如果未對齊，調整程序中MiddlePos\_1、MiddlePos\_2的值，直到對齊爲止。記錄下該值（8個舵機對應8個值），最後的程序中要使用。
+2、手指處於閉合位置時，立即停止程序（斷開數據線即可），並檢查伺服喇叭是否正確對齊（如下圖）。如果未對齊，調整程序中MiddlePos_1、MiddlePos_2的值，直到對齊爲止。記錄下該值（8個舵機對應8個值），最後的程序中要使用。
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Y2E4NmU4M2MzZWQ5MjczZmY4Yjc2YjYyMzYyYzM1MjlfYmIyYTFlZmY5OWUxYTI4MWE2YjA0ZjA4ZWUxMjQzOTVfSUQ6NzYzODk2MDg3MjYwNTYxNzA5N18xNzgwNDAzMzA0OjE3ODA0ODk3MDRfVjM)
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YzRiM2VjNWM4NjIzYjJlMWYyYjAzOWJjYjdlZWI3MWNfMzA5Y2VkY2MyNGRkN2Q5ZGRkOTMxNzYyY2ZjOWFjMWRfSUQ6NzYzODk2MDg2OTc1ODE3NjIwNF8xNzgwNDAzMzA0OjE3ODA0ODk3MDRfVjM)
 
-## 5\.**運行測試程序**
+## 5.**運行測試程序**
 
-1、將上面保存的MiddlePos\_1、MiddlePos\_2的值填入下面數組中，下載程序即可。
+1、將上面保存的MiddlePos_1、MiddlePos_2的值填入下面數組中，下載程序即可。
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZGI1YjdhOWZhYmE4NGFhZjgyMGU3ODkwMDMwNzhlNDNfOGRjMTgyOGQ3NjE0ODY5YjliOGRmYjNkYmJhZWRhYzZfSUQ6NzYzODk2MDg2OTQ3NzA5MjMxOF8xNzgwNDAzMzA0OjE3ODA0ODk3MDRfVjM)
 
-## 6\.**運行“02 演示程序”**
+## 6.**運行“02 演示程序”**
 
 （1）自行安裝軟件arduino，根據自身系統參考[安裝教程](https://blog.csdn.net/weixin_35509395/article/details/156188274)
 
@@ -148,7 +148,7 @@
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjA0OWZmODFiNzY2NjA4NjJkNjIxYzgyNTQ2YWU5OGRfOGE1MTU3NjY4Njg1ZmM1NWZkOTc0MDQwYmE1Y2M1YjBfSUQ6NzYzODk2MDg3MDg4MTkyMjAyNV8xNzgwNDAzMzA0OjE3ODA0ODk3MDRfVjM)
 
-## [7\.手部追蹤](https://juxitech.feishu.cn/wiki/ZpHmwYARQiN2fwkqFJecqUFZnQg)
+## [7.手部追蹤](https://juxitech.feishu.cn/wiki/ZpHmwYARQiN2fwkqFJecqUFZnQg)
 
 
 

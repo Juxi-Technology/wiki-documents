@@ -2,7 +2,7 @@
 
 注意：语音交互模块需要烧录出厂固件，语音芯片到手之后没有刷过固件的则不需要 
 
-## 1\.查看端口
+## 1.查看端口
 
 通过USB接口插到树莓派上。
 
@@ -16,9 +16,9 @@ ls /dev/ttyUSB*
 
 ![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/1.png)
 
-## 2\.代码实现
+## 2.代码实现
 
-将speech\_serial\.py下载到对应的目录下
+将speech_serial.py下载到对应的目录下
 
 ```Python
 #!/usr/bin/env python3
@@ -143,9 +143,9 @@ if __name__ == "__main__":
 
 ```
 
-## 3\.实现效果
+## 3.实现效果
 
-播报的内容可以根据附件提供的 命令词播报词协议列表V1\_中文文件 查看协议。
+播报的内容可以根据附件提供的 命令词播报词协议列表V1_中文文件 查看协议。
 
 其中第一第二个字节AA 55表示的是协议的帧头，第三个字节00表示的是播报功能，第四个就是播报内容 的ID，这里能看到“小车前进”是16进制的07，所以程序里给寄存器0x03发送0x07即可播报对应内容。 第五个字节是结束帧。 
 
@@ -157,13 +157,13 @@ if __name__ == "__main__":
 python3 -m speech_serial
 ```
 
-当说出唤醒词唤醒之后，控制台会回复接收Read\_ID：0
+当说出唤醒词唤醒之后，控制台会回复接收Read_ID：0
 
-说“关灯”，控制台会回复接收Read\_ID：13
+说“关灯”，控制台会回复接收Read_ID：13
 
 ![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/3.png)
 
-这时候可以打开附件的 命令词播报词协议列表V1\_中文文件 查看“关灯”的协议 
+这时候可以打开附件的 命令词播报词协议列表V1_中文文件 查看“关灯”的协议 
 
 ![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/4.png)
 

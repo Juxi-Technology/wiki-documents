@@ -1,6 +1,6 @@
 # 樹莓派5
 
-## 1\.連接設備
+## 1.連接設備
 
 本教程以樹莓派5主板，官方64位版本的鏡像爲例。
 
@@ -10,7 +10,7 @@
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZGJjNjIzMzE5ZmEyNjY1NWJlNGY5OGE0OTkyYzc1MWJfZTlkMmZlMThiNWI4MDhkMmE5YzM2OWRiM2U5NGU3YzFfSUQ6NzYzODk2NjYyNzE5MDY1NTk1N18xNzgwNDA0MzI4OjE3ODA0OTA3MjhfVjM)
 
-## 2\.查看設備狀態
+## 2.查看設備狀態
 
 首先安裝 I2Ctool，終端輸入：
 
@@ -27,9 +27,9 @@ sudo i2cdetect -y -r -a 1
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTI0MDNiMjliNWIzOTc5NWViNmJiMDc0N2ViMWNmZTdfNTg4ODAwNmQ1MjM5NDA0ZTA5MjllNTI2MTIxYmM5ZGFfSUQ6NzYzODk2NjYyNjA2Njg5Mzc5M18xNzgwNDA0MzI4OjE3ODA0OTA3MjhfVjM)
 
-## 3\.安裝驅動庫
+## 3.安裝驅動庫
 
-3\.1**安裝代碼所需python庫**
+3.1**安裝代碼所需python庫**
 
 ```PowerShell
 sudo apt update
@@ -37,9 +37,9 @@ sudo apt install -y python3-serial
 sudo apt install -y python3-smbus2
 ```
 
-3\.2傳輸文件
+3.2傳輸文件
 
-\[IMU\_ROS2\.zip\]
+[IMU_ROS2.zip]
 
 如果還不會使用MobaXterm傳輸文件的朋友，請查看以下網頁MobaXterm詳細安裝和操作方法：[文件远程传输](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 
@@ -47,9 +47,9 @@ sudo apt install -y python3-smbus2
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YzM2ZWNlZjllZjY0OGE3Mzk3OGE3NTkzNjVjN2MyNjNfZjc5YTVmYzkxMTcyMGY2MGUwNjViZDIxNTY3YWEwYjhfSUQ6NzYzODk2NjYyNDkwNDg3NDkzOV8xNzgwNDA0MzI4OjE3ODA0OTA3MjhfVjM)
 
-## 4\.查看imu數據
+## 4.查看imu數據
 
-**進入 \~/IMU\_Library目錄，運行IMU\_Serial\_Library\.py文件**
+**進入 ~/IMU_Library目錄，運行IMU_Serial_Library.py文件**
 
 ```PowerShell
 cd ~/imu_ros2/src/IMU_ROS1/IMU_Library
@@ -62,9 +62,9 @@ python3 -m IMU_Library.IMU_I2C_Library
 
 注意：以上爲10軸IMU的數據讀取，6軸無磁力計（Magnetometer）與氣壓計（Barometer）數據，9軸無氣壓計（Barometer）數據。
 
-## **5\.IMU校準**
+## **5.IMU校準**
 
-**進入 \~/IMU\_Library目錄，運行imu\_calibration\_tool\.py文件**
+**進入 ~/IMU_Library目錄，運行imu_calibration_tool.py文件**
 
 ```PowerShell
 cd ~/IMU_Library
@@ -85,7 +85,7 @@ python3-m IMU_Library.imu_calibration_tool --mode i2c --port 1 --calibrate temp
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MDU2YzMyMjIzZWIwYjY1NWNhM2EzMTA4NGQ2ZDE4MThfMmEwYTQ3Y2YyMDdiMWYxNWFmOTY5MTNiYWYxYjFhNGNfSUQ6NzYzODk2NjYyNzQxMjkzNzY1Nl8xNzgwNDA0MzI4OjE3ODA0OTA3MjhfVjM)
 
-## 6\.注意事項
+## 6.注意事項
 
 樹莓派5需要提前開啓i2c引腳。
 

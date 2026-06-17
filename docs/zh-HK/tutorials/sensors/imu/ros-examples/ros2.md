@@ -1,6 +1,6 @@
 # ROS2應用
 
-**系統配置：ubuntu22\.04**
+**系統配置：ubuntu22.04**
 
 **ROS2版本：humble**
 
@@ -54,11 +54,11 @@ ll /dev/imu-serial
 
 ### 導入準備好的壓縮包
 
-1. **飛書同級目錄下有**[IMU\_ROS2\.zip](https://juxitech.feishu.cn/wiki/ElvZwpfqniF9EikmSVoc3xMgn5c)
+1. **飛書同級目錄下有**[IMU_ROS2.zip](https://juxitech.feishu.cn/wiki/ElvZwpfqniF9EikmSVoc3xMgn5c)
 
 2. **通過文件傳輸軟件傳輸到虛擬機中**
 
-3. **安裝IMU\_Library庫**
+3. **安裝IMU_Library庫**
 
 ```PowerShell
 # 下载解压IMU_ROS2压缩文件后，进入到IMU_Library目录下，运行setup.py
@@ -80,14 +80,14 @@ sudo pip3 install smbus2
 
 ### 構建ROS2項目
 
-1. **返回到\~/IMU\_ROS2目錄**
+1. **返回到~/IMU_ROS2目錄**
 
 ```PowerShell
 cd IMU_ROS2
 colcon build --symlink-install
 ```
 
-1. **把工作目錄\~/IMU\_ROS2寫入到環境變量中**
+1. **把工作目錄~/IMU_ROS2寫入到環境變量中**
 
 ```PowerShell
 # 编辑 ~/.bashrc
@@ -97,7 +97,7 @@ sudo gedit ~/.bashrc
 source ~/IMU_ROS2/install/setup.bash
 ```
 
-編譯成功後，執行以下命令查看imu\_ros2功能包下是否有可執行文件
+編譯成功後，執行以下命令查看imu_ros2功能包下是否有可執行文件
 
 `ROS2 pkg可執行文件imu_ros2`
 

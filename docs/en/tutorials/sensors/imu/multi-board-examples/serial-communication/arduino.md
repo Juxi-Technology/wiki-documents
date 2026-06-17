@@ -1,10 +1,10 @@
 # Arduino
 
-This routine uses an Arduino Nano development board, a Windows computer, several DuPont wires, an IMU attitude sensor, and a USB to TTL module\. 
+This routine uses an Arduino Nano development board, a Windows computer, several DuPont wires, an IMU attitude sensor, and a USB to TTL module. 
 
-\[Arduino\.rar\]
+[Arduino.rar]
 
-## 1\. Connect the device
+## 1. Connect the device
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YWM5MTU0YWFlYmU4MDRiMmJiZGFjNWNmNDFiZGY3YjFfOTc0ZTA5ZGJlNjE0ZDYyN2RhYjVlNGU3MzQ4NzcxM2VfSUQ6NzYzODkzMDIyOTQ2NTM2OTU3NF8xNzgwMzE4MzU3OjE3ODA0MDQ3NTdfVjM)
 
@@ -12,9 +12,9 @@ This routine uses an Arduino Nano development board, a Windows computer, several
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjBiODcyZWZiZjFjMTQxODM3NDRkN2U3MDFhMzI3NWRfNjk5NDZhOGE1YjY5Mzg2MTJlZWFlMzE0OTZjYjE4YTdfSUQ6NzY0MjE3MzQ1MjI5MjAzMzc1OF8xNzgwMzE4MzU3OjE3ODA0MDQ3NTdfVjM)
 
-## 2\. Key Code Analysis
+## 2. Key Code Analysis
 
-Please refer to the source code in the materials for the specific code\.
+Please refer to the source code in the materials for the specific code.
 
 ```C++
 //解析环形缓冲中的数据，提取完整帧并更新缓存
@@ -175,17 +175,17 @@ static void _parse_frame_data(uint8_t frame_function, const uint8_t *frame_data)
 }
 ```
 
-IMU\_UART\_Process\(\): Reads the data from the buffer and calls \_parse\_frame\_data to parse the data that conforms to the Communication Protocol\. 
+IMU_UART_Process(): Reads the data from the buffer and calls _parse_frame_data to parse the data that conforms to the Communication Protocol. 
 
-\_parse\_frame\_data\(\): Parse the data frame\.
+_parse_frame_data(): Parse the data frame.
 
-## 3\. Read IMU data
+## 3. Read IMU data
 
-After the program is downloaded into Arduino, open the serial assistant \(configure the parameters as shown in the figure below\), and you can see that the data of the IMU module is continuously printed\. When we change the attitude of the IMU module, the data will change\. 
+After the program is downloaded into Arduino, open the serial assistant (configure the parameters as shown in the figure below), and you can see that the data of the IMU module is continuously printed. When we change the attitude of the IMU module, the data will change. 
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YzM4NjU4ZmU1NWVkOWU2NmYzZTNjMWU5YzcyZDRmMmFfZWEwNTU5MTM2ODhmYzA3MzMwZDdjNDkwMWMwMTAwOTJfSUQ6NzYzODkzMDIyODE3MDQ0MzcwNF8xNzgwMzE4MzU2OjE3ODA0MDQ3NTZfVjM)
 
-Note: The above is the data reading for a 10\-axis IMU\. The 6\-axis has no Magnetometer and Barometer data, and the 9\-axis has no Barometer data\.
+Note: The above is the data reading for a 10-axis IMU. The 6-axis has no Magnetometer and Barometer data, and the 9-axis has no Barometer data.
 
 
 

@@ -277,7 +277,7 @@ lerobot-calibrate \
 
 然后，您就可以准备遥操作您的机器人了！运行这个简单的脚本（它不会连接和显示摄像头）：
 
-请注意，与机器人关联的 **ID** 用于存储校准文件。在使用相同设置进行遥控操作、录制和评估时，使用相同的 **ID** 至关重要。
+请注意，与机器人关联的 **ID 用于存储校准文件。在使用相同设置进行遥控操作、录制和评估时，使用相同的 ** 至关重要。
 
 先对串口给予权限：
 
@@ -559,7 +559,7 @@ lerobot-train \
   --steps=300000 
 ```
 
-**如果您想在本地数据集上进行训练，请确保 ****`repo_id`**** 与数据收集时使用的名称匹配，并添加 ****`--policy.push_to_hub=false`****。**
+**如果您想在本地数据集上进行训练，请确保 **`repo_id`** 与数据收集时使用的名称匹配，并添加 **`--policy.push_to_hub=false`**。**
 
 ```Python
 lerobot-train \
@@ -632,7 +632,7 @@ lerobot-record \
 
 2. 数据集的名称`dataset.repo_id`以 `eval_` 开头，这个操作会在你评估的时候为你单独录制评估时候的视频和数据，将保存在eval_开头的文件夹下，例如`juxi/eval_test123`。
 
-3. 如果评估阶段遇到`File exists: \&\#39;home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx\&\#39;`请先删除`eval_`开头的这个文件夹再次运行程序。
+3. 如果评估阶段遇到`File exists: &amp;#39;home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx&amp;#39;`请先删除`eval_`开头的这个文件夹再次运行程序。
 
 4. 当遇到`mean is infinity. You should either initialize with stats as an argument or use a pretrained model`请注意`--robot.cameras`这个参数中的front和side等关键词必须和采集数据集的时候保持严格一致。
 
@@ -794,7 +794,7 @@ conda init
 
 ![Image](../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/11.png)
 
-#### **5.关闭此终端，打开****新的终端****，配置学术资源加速**
+#### **5.关闭此终端，打开新的终端**
 
 参考https://www.autodl.com/docs/network_turbo/
 
@@ -834,7 +834,7 @@ cd ~/lerobot && pip install -e ".[feetech]"
 
 #### **8.数据集导入到云服务器里**
 
-分为两种情况，一种是**数据采集 时已上传数据集到huggingface数据库里，**一种是**未上传数据集到huggingface数据库里，通过FileZilla上传本地数据集到云服务器里。**
+分为两种情况，一种是**数据采集 时已上传数据集到huggingface数据库里，一种是**
 
 **①若 数据采集 时已上传数据集到huggingface数据库里，可通过配置huggingface数据库得到的key获取**
 

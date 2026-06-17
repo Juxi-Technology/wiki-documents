@@ -38,13 +38,13 @@
 
 2. **應用方案：**選擇“單麥語音識別”
 
-3. **產品類型：**“通用\-\>智能中控”
+3. **產品類型：**“通用-\>智能中控”
 
 4. **芯片型號：**Cl1302
 
-5. **SDK名稱：**Cl13XX\_SDK\_ASR\_Offline
+5. **SDK名稱：**Cl13XX_SDK_ASR_Offline
 
-6. **sdk版本：**1\.12\.16
+6. **sdk版本：**1.12.16
 
 7. **描述：**按自己描述規則來即可
 
@@ -64,11 +64,11 @@
 
 3. **選擇聲學類型：**
 
-    1. **中文選擇：**VO0681\_中文\_ASR\_通用\_0\.9M
+    1. **中文選擇：**VO0681_中文_ASR_通用_0.9M
 
-    2. **英文選擇：**VO0916\_英文\_ASR\_通用\_1\.1M
+    2. **英文選擇：**VO0916_英文_ASR_通用_1.1M
 
-4. **模塊板選擇：**CI\-D02GS02S
+4. **模塊板選擇：**CI-D02GS02S
 
 ![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/14.png)
 
@@ -82,7 +82,7 @@
 
 #### 下載喚醒詞固件
 
-1. 上傳\-選擇對應語言的喚醒詞表格
+1. 上傳-選擇對應語言的喚醒詞表格
 
 2. 點擊“立即提交”
 
@@ -90,9 +90,9 @@
 
 4. 這裏提供了兩份命令詞播報詞協議列表，有需要的可以根據這份表格自行更改
 
-    \[命令词播报词协议列表V3\_中文模板\.xlsx\]
+    [命令词播报词协议列表V3_中文模板.xlsx]
 
-    \[命令词播报词协议列表V3\_英文模板\.xlsx\]
+    [命令词播报词协议列表V3_英文模板.xlsx]
 
 ![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/3.png)
 
@@ -104,7 +104,7 @@
 
 #### 下載語音模塊燒錄軟件壓縮包
 
-\[语音模块固件烧录软件\.7z\]
+[语音模块固件烧录软件.7z]
 
 1. 解壓後打開軟件
 
@@ -134,9 +134,9 @@
 
 #### 這裏有準備好的固件資料，可直接燒錄
 
-\[CI1302\_中文\_单麦\_V00681\_UART0\_115200\_2M\.bin\]
+[CI1302_中文_单麦_V00681_UART0_115200_2M.bin]
 
-\[CI1302\_英文\_单麦\_V00916\_UART0\_115200\_2M\.bin\]
+[CI1302_英文_单麦_V00916_UART0_115200_2M.bin]
 
 
 
@@ -146,7 +146,7 @@
 
 1. CH341驅動安裝（以管理員身份安裝）
 
-https://www\.wch\.cn/downloads/CH341SER\_EXE\.html
+https://www.wch.cn/downloads/CH341SER_EXE.html
 
 若在設備管理器被識別成未知設備usb single serial 或usb serial，請先右鍵卸載，再安裝驅動！
 

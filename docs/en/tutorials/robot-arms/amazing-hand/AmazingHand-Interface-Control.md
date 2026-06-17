@@ -1,8 +1,8 @@
-# Right AmazingHand \- Interface Control 
+# Right AmazingHand - Interface Control 
 
-https://github\.com/Betatester777/AmazingHandControl
+https://github.com/Betatester777/AmazingHandControl
 
-\[AmazingHandControl\.zip\]
+[AmazingHandControl.zip]
 
 
 

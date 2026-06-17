@@ -1,10 +1,10 @@
 # USB Driverless Sound Card Tutorial
 
-# Visual Testing Software \(Windows\)
+# Visual Testing Software (Windows)
 
-[audio\_tools\.7z](https://juxitech.feishu.cn/wiki/NThUwAgW5iLyB3kEWzOcyO35nvW)
+[audio_tools.7z](https://juxitech.feishu.cn/wiki/NThUwAgW5iLyB3kEWzOcyO35nvW)
 
-**Command Summary \(Optional\)**
+**Command Summary (Optional)**
 
 - Update the system and install tools:
 
@@ -20,36 +20,36 @@
 
 - Basic Configuration and Verification: 
 
-    - Run the configuration wizard:`sudo alsaconf`\(if available\)
+    - Run the configuration wizard:`sudo alsaconf`(if available)
 
-    - Adjust volume:`alsamixer` \(Press **M** to unmute, use arrow keys to adjust volume, and ESC to exit\)
+    - Adjust volume:`alsamixer` (Press **M** to unmute, use arrow keys to adjust volume, and ESC to exit)
 
     - Save settings:`sudo alsactl store`
 
-    - Playback Test: Test audio output \(ensure speakers/headphones are connected\):
+    - Playback Test: Test audio output (ensure speakers/headphones are connected):
 
     ```Bash
     # Play test tone, -D specifies the USB sound card device (X is the card number displayed by aplay -l)
     speaker-test -c 2 -D plughw:X,0
     ```
 
-    - Restart the audio service:`sudo systemctl restart alsa`\(Some environments may require a system restart:`sudo reboot`\)
+    - Restart the audio service:`sudo systemctl restart alsa`(Some environments may require a system restart:`sudo reboot`)
 
-# Jetson Series Main Controller \& Ubuntu System \& Raspberry Pi
+# Jetson Series Main Controller &amp; Ubuntu System &amp; Raspberry Pi
 
-## Command\-line debugging
+## Command-line debugging
 
-### 1\. USB Sound Card Connection
+### 1. USB Sound Card Connection
 
 1. Before inserting the USB sound card, we use the `lsusb` command to check the USB devices:
 
 ![](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
 
-2. Then plug in the USB sound card, and use `lsusb`  to check\. You can see that the extra one is the USB sound card: 
+2. Then plug in the USB sound card, and use `lsusb`  to check. You can see that the extra one is the USB sound card: 
 
 ![](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
 
-3. Then use ` arecord -l `  to list all recording devices\. As you can see, our USB sound card device 
+3. Then use ` arecord -l `  to list all recording devices. As you can see, our USB sound card device 
 
 ![](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
 
@@ -57,26 +57,26 @@
 
 ![](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
-### 2\. Using USB Sound Card
+### 2. Using USB Sound Card
 
-`arecord -l`, for example, here UACDemoV1\.0 is shown, which is our sound card, card 0; device 0, and in the command, modify it to plughw:0,0 to specify this recording device
+`arecord -l`, for example, here UACDemoV1.0 is shown, which is our sound card, card 0; device 0, and in the command, modify it to plughw:0,0 to specify this recording device
 
 ![](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/4.png)
 
-Execute the built\-in Linux recording command to record a 5\-second sound for testing
+Execute the built-in Linux recording command to record a 5-second sound for testing
 
 `arecord -D plughw:0,0 -f S16_LE -r 16000 -d 5 -t wav test.wav`
 
-Among them `plughw:0,0` represents`card 0, device 0`, which is our USB sound card\. It needs to be modified according to the device number found by`arecord -l` \. If your UACDemoV1\.0 is our sound card and it shows card 1; device 1, you need to change`plughw:0,0`in the command to`plughw:1,1`\. `plughw`parameter provides automatic format conversion and can bridge between different data formats and hardware\. Other parameters of arecord are as follows:
+Among them `plughw:0,0` represents`card 0, device 0`, which is our USB sound card. It needs to be modified according to the device number found by`arecord -l` . If your UACDemoV1.0 is our sound card and it shows card 1; device 1, you need to change`plughw:0,0`in the command to`plughw:1,1`. `plughw`parameter provides automatic format conversion and can bridge between different data formats and hardware. Other parameters of arecord are as follows:
 
 |Instruction|Meaning |Meaning of this instruction|
 |---|---|---|
-|\-D|Select device name|Use the external USB sound card "plughw:1\.0"|
-|\-f|Recording Format|S16\_LE represents signed 16\-bit little\-endian|
-|\-r|Sampling Rate|16000 is a 16KHz sampling rate|
-|\-d|Recording Duration|Record for 5 seconds|
-|\-t|Recording Format|wav format|
-|test\.wav|File name, which can include a path|The file name is test\.wav |
+|-D|Select device name|Use the external USB sound card "plughw:1.0"|
+|-f|Recording Format|S16_LE represents signed 16-bit little-endian|
+|-r|Sampling Rate|16000 is a 16KHz sampling rate|
+|-d|Recording Duration|Record for 5 seconds|
+|-t|Recording Format|wav format|
+|test.wav|File name, which can include a path|The file name is test.wav |
 
 If the sound is too low, enter the command ` alsamixer ` , to adjust the volume, press ` F6 `, select the USB sound card, 
 
@@ -92,15 +92,15 @@ Then use ` aplay ` command to play
 
 Parameter descriptions are as follows:
 
-- \-D plughw:0,0: Specifies the recording device\. plughw:0,0 indicates using the first device of the first sound card\.
+- -D plughw:0,0: Specifies the recording device. plughw:0,0 indicates using the first device of the first sound card.
 
-- \-f S16\_LE: Sets the audio file format\. S16\_LE represents 16\-bit little endian format \(Signed 16\-bit Little Endian\), a commonly used audio data format, where "little endian" means that the low\-order ByteDance of the data is stored at the low address end of memory\.
+- -f S16_LE: Sets the audio file format. S16_LE represents 16-bit little endian format (Signed 16-bit Little Endian), a commonly used audio data format, where "little endian" means that the low-order ByteDance of the data is stored at the low address end of memory.
 
-- \-r 16000: Set the sampling rate\.
+- -r 16000: Set the sampling rate.
 
-- \-c 1: Set the number of channels\.
+- -c 1: Set the number of channels.
 
-- \-d 5: Set the recording duration/seconds\.
+- -d 5: Set the recording duration/seconds.
 
 
 
@@ -110,17 +110,17 @@ Parameter descriptions are as follows:
 
 View via PulseAudio, [ command line ](https://so.csdn.net/so/search?q=%E5%91%BD%E4%BB%A4%E8%A1%8C&spm=1001.2101.3001.7020) method 
 
-`pactl list sources short`            \# Lists all available audio sources in the current PulseAudio audio server
+`pactl list sources short`            # Lists all available audio sources in the current PulseAudio audio server
 
 ![](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/8.png)
 
 > 49 represents the source index
 > 
-> Alsa \_input\.usb indicates that this is a USB input device, representing a microphone
+> Alsa _input.usb indicates that this is a USB input device, representing a microphone
 > 
-> s16le represents the 16\-bit little endian \(Signed 16\-bit Little Endian\) audio sample format\.
+> s16le represents the 16-bit little endian (Signed 16-bit Little Endian) audio sample format.
 > 
-> 1ch represents mono\.
+> 1ch represents mono.
 > 
 > 48000Hz is the sampling rate, indicating 48000 samples per second
 > 
@@ -146,9 +146,9 @@ Search for code examples on your own, such as searching for “[Python calling U
 
 ![](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/9.png)
 
-Close the settings page and re\-run the command
+Close the settings page and re-run the command
 
-If it still doesn't work, try re\-plugging or restarting 
+If it still doesn't work, try re-plugging or restarting 
 
 
 
@@ -166,13 +166,13 @@ After plugging in the sound card
 
 Kill the process ` kill -9 PID ` , where PID is the PID that appears after plugging in the sound card, and in the screenshot it is 33739 
 
-Then re\-record and play 
+Then re-record and play 
 
 
 
 ### Raspberry Pi 
 
-1\. Problem of relatively high noise
+1. Problem of relatively high noise
 
 First, set the microphone volume to 100
 Open the terminal 
@@ -194,7 +194,7 @@ Then restart
 $ reboot
 ```
 
-2\. Each restart will initialize the volume settings\.
+2. Each restart will initialize the volume settings.
 
 After resetting the volume, 
 
@@ -211,17 +211,17 @@ sudo alsactl store
 
 1. There is noise and interference during recording
 
-Solution: Change the USB controller compatibility to 3\.0 or 3\.1 
+Solution: Change the USB controller compatibility to 3.0 or 3.1 
 
 
 
 
 
-# RDK x3\&x5
+# RDK x3&amp;x5
 
 ## View device number
 
-Check if the sound card exists and verify the device number\. 
+Check if the sound card exists and verify the device number. 
 
 Confirm whether the sound card is registered through the `cat /proc/asound/cards` command
 
@@ -247,22 +247,22 @@ root@ubuntu:~# ls /dev/snd/
 by-path/   controlC0  pcmC0D0c   pcmC0D0p   timer    
 ```
 
-Through the above query, it can be confirmed that sound card 0 corresponds to the onboard sound card; the device also exists, and its device number is `0-0`\. In fact, the devices we operate should be `pcmC0D0p` and `pcmC0D0c`\.
+Through the above query, it can be confirmed that sound card 0 corresponds to the onboard sound card; the device also exists, and its device number is `0-0`. In fact, the devices we operate should be `pcmC0D0p` and `pcmC0D0c`.
 
-## Record a 5\-second sound for testing
+## Record a 5-second sound for testing
 
 `arecord -D plughw:0,0 -f S16_LE -r 16000 -d 5 -t wav test.wav`
 
-Among them `plughw:0,0` represents`card 0, device 0`, which is our USB sound card,`the plughw`parameter provides automatic format conversion and can bridge between different data formats and hardware\. Other parameters of arecord are as follows:
+Among them `plughw:0,0` represents`card 0, device 0`, which is our USB sound card,`the plughw`parameter provides automatic format conversion and can bridge between different data formats and hardware. Other parameters of arecord are as follows:
 
 |Instruction|Meaning |Meaning of this instruction|
 |---|---|---|
-|\-D|Select device name|Use external USB sound card "plughw:1\.0" |
-|\-f|Recording Format|S16\_LE represents signed 16\-bit little\-endian|
-|\-r|Sampling Rate|16000 is a 16KHz sampling rate|
-|\-d|Recording Duration|Record for 5 seconds|
-|\-t|Recording Format|wav format|
-|test\.wav|File name, which can include a path|The file name is test\.wav |
+|-D|Select device name|Use external USB sound card "plughw:1.0" |
+|-f|Recording Format|S16_LE represents signed 16-bit little-endian|
+|-r|Sampling Rate|16000 is a 16KHz sampling rate|
+|-d|Recording Duration|Record for 5 seconds|
+|-t|Recording Format|wav format|
+|test.wav|File name, which can include a path|The file name is test.wav |
 
 If the sound is too low, enter the command ` alsamixer ` , to adjust the volume, press ` F6 `, select the USB sound card, 
 
@@ -278,15 +278,15 @@ Then use ` aplay ` command to play
 
 Parameter descriptions are as follows:
 
-- \-D plughw:0,0: Specifies the recording device\. plughw:0,0 indicates using the first device of the first sound card\.
+- -D plughw:0,0: Specifies the recording device. plughw:0,0 indicates using the first device of the first sound card.
 
-- \-f S16\_LE: Sets the audio file format\. S16\_LE represents 16\-bit little endian format \(Signed 16\-bit Little Endian\), a commonly used audio data format, where "little endian" means that the low\-order ByteDance of the data is stored at the low address end of memory\.
+- -f S16_LE: Sets the audio file format. S16_LE represents 16-bit little endian format (Signed 16-bit Little Endian), a commonly used audio data format, where "little endian" means that the low-order ByteDance of the data is stored at the low address end of memory.
 
-- \-r 16000: Set the sampling rate\.
+- -r 16000: Set the sampling rate.
 
-- \-c 1: Set the number of channels\.
+- -c 1: Set the number of channels.
 
-- \-d 5: Set the recording duration/seconds\.
+- -d 5: Set the recording duration/seconds.
 
 ## Frequently Asked Questions 
 
@@ -306,13 +306,13 @@ Refer to [RDK Multimedia Processing and Applications](https://developer.d-roboti
 
 Whether a USB driverless sound card can be used ** ultimately depends on the kernel **
 
-- Whether USB Audio Class support \(i\.e\., `CONFIG_USB_AUDIO`\) is enabled;
+- Whether USB Audio Class support (i.e., `CONFIG_USB_AUDIO`) is enabled;
 
-- Is the corresponding kernel module \(such as `snd-usb-audio`\) loaded?
+- Is the corresponding kernel module (such as `snd-usb-audio`) loaded?
 
-As long as the kernel supports it, simply install the basic audio tools to use it normally; if the kernel has been trimmed, you need to recompile the kernel to enable the driver\. 
+As long as the kernel supports it, simply install the basic audio tools to use it normally; if the kernel has been trimmed, you need to recompile the kernel to enable the driver. 
 
-**Step 1: Check if the kernel supports snd\_usb\_audio **
+**Step 1: Check if the kernel supports snd_usb_audio **
 
 ```Plain Text
 *# **Method 1: Check whether the driver module has been loaded*
@@ -322,7 +322,7 @@ lsmod | grep snd_usb_audio
 modinfo snd_usb_audio  *# **Output exists = Kernel support; No output = The module is not compiled into the kernel*
 ```
 
-**If ****` modinfo `**** has no output **: It indicates that the system kernel has trimmed this driver, and the kernel needs to be recompiled\. Enable it in `.config `: 
+**If ` modinfo `**: It indicates that the system kernel has trimmed this driver, and the kernel needs to be recompiled. Enable it in `.config `: 
 
 ```Plain Text
 CONFIG_SND_USB_AUDIO=m  # Compile as a module, or =y to build into the kernel
@@ -330,15 +330,15 @@ CONFIG_SND_USB_UA101=y
 CONFIG_SND_USB_CAIAQ=y
 ```
 
-**If ****` modinfo `**** has output **: directly load the module: 
+**If ` modinfo `**: directly load the module: 
 
 ```Bash
 sudo modprobe snd_usb_audio
 ```
 
-#### Step 2: Install basic audio tools \(not included by default in the Lite version\) 
+#### Step 2: Install basic audio tools (not included by default in the Lite version) 
 
-The stripped\-down system usually does not have ` alsa-utils ` and other such tools, which need to be manually installed: 
+The stripped-down system usually does not have ` alsa-utils ` and other such tools, which need to be manually installed: 
 
 ```Bash
 # Ubuntu/Debian
@@ -349,7 +349,7 @@ sudo apt update && sudo apt install -y alsa-utils usbutils
 
 #### Step 3: Verify USB Sound Card Recognition and Functionality
 
-1\. Insert the USB sound card and execute the command to confirm device recognition:
+1. Insert the USB sound card and execute the command to confirm device recognition:
 
 ```Bash
 # View USB device enumeration
@@ -359,16 +359,16 @@ lsusb | grep -i audio
 aplay -l
 ```
 
-The appearance of ` USB Audio ` related ` card X ` entries in the output indicates successful recognition\. 
+The appearance of ` USB Audio ` related ` card X ` entries in the output indicates successful recognition. 
 
-2\. Test audio output \(ensure speakers/headphones are connected\):
+2. Test audio output (ensure speakers/headphones are connected):
 
 ```Bash
 # Play test tone, -D specifies the USB sound card device (X is the card number displayed by aplay -l)
 speaker-test -c 2 -D plughw:X,0
 ```
 
-#### Step 4: \(Optional\) Install audio service \(for desktop/background playback requirements\) 
+#### Step 4: (Optional) Install audio service (for desktop/background playback requirements) 
 
 If you need to play audio in the background or use it with a desktop environment, the Lite version requires additional installation of audio services: 
 
@@ -382,7 +382,7 @@ sudo apt install -y pipewire pipewire-alsa
 
 ### Common Pitfalls and Solutions of the Lite Version System
 
-**1\. Insufficient permissions, ordinary users cannot access the sound card**
+**1. Insufficient permissions, ordinary users cannot access the sound card**
 
 Solution: Add the user to the ` audio ` group, which will take effect after restart: 
 
@@ -390,15 +390,15 @@ Solution: Add the user to the ` audio ` group, which will take effect after rest
 sudo usermod -aG audio $USER
 ```
 
-2\.** No sound, but device recognition is normal **
+2.** No sound, but device recognition is normal **
 
-Solution: Use ` alsamixer ` to increase the volume and unmute \(press the ` M ` key to unmute\): 
+Solution: Use ` alsamixer ` to increase the volume and unmute (press the ` M ` key to unmute): 
 
 ```Bash
 alsamixer -c X  # X refers to the card number of the USB sound card
 ```
 
-3\.** When the kernel version is too low and does not support the new USB sound card, the following two scenarios apply **
+3.** When the kernel version is too low and does not support the new USB sound card, the following two scenarios apply **
 
 ```Bash
 sudo apt install -y linux-generic && sudo reboot

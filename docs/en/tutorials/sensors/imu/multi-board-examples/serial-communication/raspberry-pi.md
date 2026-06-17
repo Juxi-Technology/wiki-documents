@@ -1,14 +1,14 @@
 # Raspberry Pi 5 
 
-## 1\. Connect the device
+## 1. Connect the device
 
-This tutorial takes the Raspberry Pi 5 motherboard and the official 64\-bit version of the mirroring as an example\. 
+This tutorial takes the Raspberry Pi 5 motherboard and the official 64-bit version of the mirroring as an example. 
 
-Connect the IMU attitude sensor to the USB port of the main controller via a Type\-C cable\. 
+Connect the IMU attitude sensor to the USB port of the main controller via a Type-C cable. 
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NjdhZGI0ZDhmNTgxYmQ3MTFlZjA4NjU4YzdhZmFjYzZfN2ZlMTg5ZWEyMGYxZmVlZGI0MmY0YzY3NTI2Mjg3ZDJfSUQ6NzYzODkzMDQ0NDk2MDQxODc0NF8xNzgwMzE4NDA3OjE3ODA0MDQ4MDdfVjM)
 
-## 2\. Check device status
+## 2. Check device status
 
 View device ID
 
@@ -54,9 +54,9 @@ ll /dev/imu-serial
 lrwxrwxrwx 1 root root 7 1月 22 10:00 /dev/imu-serial -> ttyUSB0
 ```
 
-## 3\. Install the driver library
+## 3. Install the driver library
 
-**3\.1 Install the Python libraries required for the code**
+**3.1 Install the Python libraries required for the code**
 
 ```PowerShell
 sudo apt update
@@ -64,19 +64,19 @@ sudo apt install -y python3-serial
 sudo apt install -y python3-smbus2
 ```
 
-**3\.2 Transfer Files**
+**3.2 Transfer Files**
 
-\[IMU\_ROS2\.zip\]
+[IMU_ROS2.zip]
 
 Friends who are not yet familiar with using MobaXterm to transfer files, please refer to the following webpage for detailed installation and operation methods of MobaXterm:[文件远程传输](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 
-Drag the decompressed files onto Raspberry Pi 5 via MobaXterm software\. 
+Drag the decompressed files onto Raspberry Pi 5 via MobaXterm software. 
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MDA1ZDAwMTU5ZDIxMDE4YmI1NmE0YjQ0ZGVkNzdhYjlfZmE2NTdhNmM5YjYwMzk3OTkwNGJiZDIxODdmYmM5NTlfSUQ6NzYzODkzMDQ0MjY0MTczODcyOV8xNzgwMzE4NDA3OjE3ODA0MDQ4MDdfVjM)
 
-## 4\. View IMU data
+## 4. View IMU data
 
-**Enter the \~/IMU\_Library directory and run the IMU\_Serial\_Library\.py file **
+**Enter the ~/IMU_Library directory and run the IMU_Serial_Library.py file **
 
 ```PowerShell
 cd ~/IMU_ROS2/IMU_Library
@@ -87,11 +87,11 @@ python3 -m IMU_Library.IMU_Serial_Library
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MGJjMGI3NzIwOGY4NDk3NjFhY2YyM2FjMmViZWU0ZDBfYjcwY2ZiMTgxODQ0MWNmZDMwOTg1ZWU5MmFiOTQwYmJfSUQ6NzYzODkzMDQ0NDE0NjkwNDAzMF8xNzgwMzE4NDA3OjE3ODA0MDQ4MDdfVjM)
 
-Note: The above is the data reading for a 10\-axis IMU\. The 6\-axis has no Magnetometer and Barometer data, and the 9\-axis has no Barometer data\.
+Note: The above is the data reading for a 10-axis IMU. The 6-axis has no Magnetometer and Barometer data, and the 9-axis has no Barometer data.
 
-## **5\. IMU Calibration**
+## **5. IMU Calibration**
 
-**Enter the \~/IMU\_Library directory and run the imu\_calibration\_tool\.py file **
+**Enter the ~/IMU_Library directory and run the imu_calibration_tool.py file **
 
 ```PowerShell
 cd ~/IMU_Library
@@ -110,7 +110,7 @@ python3 -m IMU_Library.imu_calibration_tool --mode serial --port /dev/imu-serial
 python3 -m IMU_Library.imu_calibration_tool --mode serial --port /dev/imu-serial --calibrate temp
 ```
 
-## 6\. Precautions
+## 6. Precautions
 
 If the device ID can be found but the device number cannot, you can refer to the following command to install the ch34x driver 
 

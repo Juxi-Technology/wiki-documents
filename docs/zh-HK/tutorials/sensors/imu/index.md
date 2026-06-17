@@ -1,6 +1,6 @@
 # 高精度IMU姿態傳感器 使用教程
 
-### 下載壓縮包 [IMU\_ROS1\.zip](https://juxitech.feishu.cn/wiki/GNgWwGnYIiBd4Gk81yccEN6jnNf)，解壓後進入\~/IMU\_Library
+### 下載壓縮包 [IMU_ROS1.zip](https://juxitech.feishu.cn/wiki/GNgWwGnYIiBd4Gk81yccEN6jnNf)，解壓後進入~/IMU_Library
 
 1. **安裝代碼所需python庫**
 
@@ -9,7 +9,7 @@ pip install pyserial
 pip install smbus2
 ```
 
-2. **安裝IMU\_Library庫**
+2. **安裝IMU_Library庫**
 
 ```PowerShell
 # 安装库及其依赖
@@ -51,7 +51,7 @@ lrwxrwxrwx 1 root root 7 1月 22 10:00 /dev/imu-serial -> ttyUSB0
 
 ### 串口通訊
 
-1. **進入 \~/IMU\_Library/IMU\_Library目錄，運行IMU\_Serial\_Library\.py文件**
+1. **進入 ~/IMU_Library/IMU_Library目錄，運行IMU_Serial_Library.py文件**
 
 ```PowerShell
 cd ~/imu_ros1/src/IMU_ROS1/IMU_Library/IMU_Library 
@@ -64,7 +64,7 @@ python3 IMU_Serial_Library.py
 
 ### I2C通訊
 
-1. **進入 \~/IMU\_Library/IMU\_Library目錄，運行IMU\_I2C\_Library\.py文件**
+1. **進入 ~/IMU_Library/IMU_Library目錄，運行IMU_I2C_Library.py文件**
 
 ```PowerShell
 cd ~/IMU_Library/IMU_Library
@@ -75,7 +75,7 @@ python3 IMU_I2C_Library.py
 
 ### imu校準
 
-1. **進入 \~/IMU\_Library/IMU\_Library目錄，運行imu\_calibration\_tool\.py文件**
+1. **進入 ~/IMU_Library/IMU_Library目錄，運行imu_calibration_tool.py文件**
 
 ```PowerShell
 cd ~/IMU_Library/IMU_Library

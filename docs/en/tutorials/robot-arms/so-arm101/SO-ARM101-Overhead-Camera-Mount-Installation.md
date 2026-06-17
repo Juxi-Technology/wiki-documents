@@ -1,6 +1,6 @@
-# Installation Tutorial for the Top\-mounted Camera Mount
+# Installation Tutorial for the Top-mounted Camera Mount
 
-Please refer to this tutorial for debugging the USB auto\-docking camera[USB Auto\-Focus Camera Tutorial](https://juxitech.feishu.cn/wiki/EangwaLy2ig8oGkqHsFc83tznuc)
+Please refer to this tutorial for debugging the USB auto-docking camera[USB Auto-Focus Camera Tutorial](https://juxitech.feishu.cn/wiki/EangwaLy2ig8oGkqHsFc83tznuc)
 
 
 

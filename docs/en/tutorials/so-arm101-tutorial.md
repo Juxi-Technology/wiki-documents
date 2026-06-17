@@ -269,7 +269,7 @@ lerobot-calibrate \
 
 Then you are ready to teleoperate your robot! Run this simple script (it won't connect and display the camera):
 
-Please note that the **ID** associated with the robot is used to store calibration files. It is crucial to use the same **ID** when using the same setup for teleoperation, recording, and evaluation.
+Please note that the **ID associated with the robot is used to store calibration files. It is crucial to use the same ** when using the same setup for teleoperation, recording, and evaluation.
 
 First give permissions to the serial port:
 

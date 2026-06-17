@@ -1,10 +1,10 @@
-# ROS2\-rviz2可视化
+# ROS2-rviz2可视化
 
 ## 1、环境准备
 
 #### 系统要求
 
-- **操作系统**：Ubuntu 22\.04
+- **操作系统**：Ubuntu 22.04
 
 - **ROS2 版本**：Humble
 
@@ -71,11 +71,11 @@ ros2 pkg create --build-type ament_python juxi_voice --license MIT
 
 ## 3、文件内容与放置
 
-请进入 `\~/juxi\_speech\_ws/src/juxi\_voice/juxi\_voice/` 目录，下载以下两个 Python 文件，并放到这个目录下。
+请进入 `~/juxi_speech_ws/src/juxi_voice/juxi_voice/` 目录，下载以下两个 Python 文件，并放到这个目录下。
 
-#### 文件 1：`voice\_node\.py` \(语音控制节点\)
+#### 文件 1：`voice_node.py` (语音控制节点)
 
-**位置**：`\~/juxi\_speech\_ws/src/juxi\_voice/juxi\_voice/voice\_node\.py`
+**位置**：`~/juxi_speech_ws/src/juxi_voice/juxi_voice/voice_node.py`
 
 ```Python
 
@@ -188,9 +188,9 @@ def main(args=None):
 if __name__ == '__main__': main()
 ```
 
-#### 文件 2：`rviz\_control\.py` \(RViz 控制节点\)
+#### 文件 2：`rviz_control.py` (RViz 控制节点)
 
-**位置**：`\~/juxi\_speech\_ws/src/juxi\_voice/juxi\_voice/rviz\_control\.py`
+**位置**：`~/juxi_speech_ws/src/juxi_voice/juxi_voice/rviz_control.py`
 
 ```Python
 #!/usr/bin/env python3
@@ -275,11 +275,11 @@ def main(args=None):
 if __name__ == '__main__': main()
 ```
 
-#### 文件 3：修改 `setup\.py`
+#### 文件 3：修改 `setup.py`
 
-**位置**：`\~/juxi\_speech\_ws/src/juxi\_voice/setup\.py`
+**位置**：`~/juxi_speech_ws/src/juxi_voice/setup.py`
 
-找到 `entry\_points` 部分，修改为如下内容（告诉 ROS2 这两个程序在哪里）：
+找到 `entry_points` 部分，修改为如下内容（告诉 ROS2 这两个程序在哪里）：
 
 ```Python
 entry_points={
@@ -303,7 +303,7 @@ colcon build --symlink-install
 
 #### 刷新环境变量
 
-**每次打开新终端都必须执行这一步**，或者将其添加到 `\~/\.bashrc`：
+**每次打开新终端都必须执行这一步**，或者将其添加到 `~/.bashrc`：
 
 ```Python
 cd ~/juxi_speech_ws
@@ -347,11 +347,11 @@ rviz2
 
 1. 左下角点击 **Add**。
 
-2. 找到 `rviz\_default\_plugins` 下的 **Marker**，点击 OK。
+2. 找到 `rviz_default_plugins` 下的 **Marker**，点击 OK。
 
 3. 在左侧面板顶部，将 **Fixed Frame** 改为 `map`。
 
-4. 在左侧列表中找到刚添加的 **Marker**，点击展开，将 **Topic** 改为 `/juxi\_visual\_marker`。
+4. 在左侧列表中找到刚添加的 **Marker，点击展开，将 ** 改为 `/juxi_visual_marker`。
 
 此时你会看到一个白色的立方体出现在屏幕中央。
 
@@ -381,11 +381,11 @@ rviz2
 
 **RViz 里没有方块**：
 
-- 解决：检查 Fixed Frame 是否为 `map`，Topic 是否为 `/juxi\_visual\_marker`。
+- 解决：检查 Fixed Frame 是否为 `map`，Topic 是否为 `/juxi_visual_marker`。
 
 **说完指令没反应**：
 
-- 排查：新开一个终端，输入 `ros2 topic echo /juxi\_voice\_cmd`。
+- 排查：新开一个终端，输入 `ros2 topic echo /juxi_voice_cmd`。
 
 - 如果有数据显示：说明语音正常，问题在 RViz 配置。
 

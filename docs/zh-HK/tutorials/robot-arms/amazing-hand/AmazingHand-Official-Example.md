@@ -1,28 +1,28 @@
 # 靈巧手官方示例運行教程
 
-## 1\.代碼下載
+## 1.代碼下載
 
-建議下載本使用教程下的代碼壓縮包進行Demo示例演示，或克隆 官方開源代碼倉庫 https://github\.com/pollen\-robotics/AmazingHand\.git ，官方開源代碼或有錯漏請務必注意。
+建議下載本使用教程下的代碼壓縮包進行Demo示例演示，或克隆 官方開源代碼倉庫 https://github.com/pollen-robotics/AmazingHand.git ，官方開源代碼或有錯漏請務必注意。
 
 Windows 代碼壓縮包
 
-\[AmazingHand\-main\.zip\]
+[AmazingHand-main.zip]
 
 Linux 代碼壓縮包
 
-\[AmazingHand\-main\.zip\]
+[AmazingHand-main.zip]
 
 ```Plain Text
 git clone https://github.com/pollen-robotics/AmazingHand.git
 ```
 
-## 2\.環境安裝
+## 2.環境安裝
 
-根據系統自行安裝Rust、uv、dora\-rs
+根據系統自行安裝Rust、uv、dora-rs
 
-**1、安裝 Rust：** [https://www\.rust\-lang\.org/tools/install](https://www.rust-lang.org/tools/install)
+**1、安裝 Rust：** [https://www.rust-lang.org/tools/install](https://www.rust-lang.org/tools/install)
 
-windows端 Rust環境變量設置（重點！） 參考 https://zhuanlan\.zhihu\.com/p/1958936613276087180
+windows端 Rust環境變量設置（重點！） 參考 https://zhuanlan.zhihu.com/p/1958936613276087180
 
 Linux端環境變量設置：
 
@@ -44,7 +44,7 @@ replace-with = 'tuna'
 registry = "https://mirrors.tuna.tsinghua.edu.cn/git/crates.io-index.git"
 ```
 
-**2、安裝 uv：** [https://docs\.astral\.sh/uv/getting\-started/installation/](https://docs.astral.sh/uv/getting-started/installation/)
+**2、安裝 uv：** [https://docs.astral.sh/uv/getting-started/installation/](https://docs.astral.sh/uv/getting-started/installation/)
 
 ![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/11.png)
 
@@ -54,19 +54,19 @@ windows端打開Powershell終端，複製後輸入此命令進行安裝
 
 ![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/12.png)
 
-**3、安裝 dora\-rs：**請參考 [https://dora\-rs\.ai/docs/guides/Installation/installing](https://dora-rs.ai/docs/guides/Installation/installing) 下載安裝
+**3、安裝 dora-rs：**請參考 [https://dora-rs.ai/docs/guides/Installation/installing](https://dora-rs.ai/docs/guides/Installation/installing) 下載安裝
 
 linux端環境變量設置：
 
 ![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/13.png)
 
-## 3\.接線方式
+## 3.接線方式
 
 電源要求至少5V3A，外接 舵機驅動板，通過USB連接到電腦端
 
 ![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/14.png)
 
-## 4\.示例演示
+## 4.示例演示
 
 ### **1、查看舵機驅動板端口號**
 
@@ -96,17 +96,17 @@ sudo usermod -aG dialout $USER
 
 ### **2、修改代碼中的端口號**
 
-①找到AmazingHand\-main\\Demo\\AHControl\\src目錄下的main\.rs代碼文件，文本打開，修改爲自身主機查找到的端口號（windows爲COM\*，ubuntu、linux系統一般爲/dev/ttyACM\*）
+①找到AmazingHand-main\\Demo\\AHControl\\src目錄下的main.rs代碼文件，文本打開，修改爲自身主機查找到的端口號（windows爲COM\*，ubuntu、linux系統一般爲/dev/ttyACM\*）
 
 ![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/19.png)
 
 ②找到對應的實例文件
 
-**右靈巧手** 找到AmazingHand\-main\\Demo目錄下的 dataflow\_tracking\_real\_right\.yml
+**右靈巧手** 找到AmazingHand-main\\Demo目錄下的 dataflow_tracking_real_right.yml
 
-**左靈巧手** 找到AmazingHand\-main\\Demo目錄下的 dataflow\_tracking\_real\_left\.yml
+**左靈巧手** 找到AmazingHand-main\\Demo目錄下的 dataflow_tracking_real_left.yml
 
-**雙靈巧手** 找到AmazingHand\-main\\Demo目錄下的 dataflow\_tracking\_real\_2hands\.yml
+**雙靈巧手** 找到AmazingHand-main\\Demo目錄下的 dataflow_tracking_real_2hands.yml
 
 文本格式打開，修改爲自身主機查找到的端口號（windows爲COM\*，ubuntu、linux系統一般爲/dev/ttyACM\*）
 
@@ -280,11 +280,11 @@ dora run dataflow_tracking_simu.yml --uv
 
 描述說明
 
-- [AHControl](https://github.com/pollen-robotics/AmazingHand/blob/main/Demo/AHControl)包含一個 dora\-rs 節點來控制電機，以及一些用於配置電機的實用工具。
+- [AHControl](https://github.com/pollen-robotics/AmazingHand/blob/main/Demo/AHControl)包含一個 dora-rs 節點來控制電機，以及一些用於配置電機的實用工具。
 
-- [AHSimulation](https://github.com/pollen-robotics/AmazingHand/blob/main/Demo/AHSimulation)包含一個 dora\-rs 節點，用於模擬手部運動並獲得逆運動學。
+- [AHSimulation](https://github.com/pollen-robotics/AmazingHand/blob/main/Demo/AHSimulation)包含一個 dora-rs 節點，用於模擬手部運動並獲得逆運動學。
 
-- [HandTracking](https://github.com/pollen-robotics/AmazingHand/blob/main/Demo/HandTracking)包含一個 dora\-rs 節點，用於從網絡攝像頭跟蹤手部並將其用作控制 AH\! 的目標。
+- [HandTracking](https://github.com/pollen-robotics/AmazingHand/blob/main/Demo/HandTracking)包含一個 dora-rs 節點，用於從網絡攝像頭跟蹤手部並將其用作控制 AH! 的目標。
 
 
 
@@ -292,7 +292,7 @@ dora run dataflow_tracking_simu.yml --uv
 
 ### 1、mediapipe版本問題
 
-pyproject\.toml 中配置 mediapipe\>=0\.10\.14，但安裝後的 mediapipe 包缺少 solutions 子模塊，大概率是mediapipe 版本與 Python 3\.12 不兼容（高版本 mediapipe 對 Python 3\.12 的支持存在問題），或安裝過程中包文件損壞。
+pyproject.toml 中配置 mediapipe\>=0.10.14，但安裝後的 mediapipe 包缺少 solutions 子模塊，大概率是mediapipe 版本與 Python 3.12 不兼容（高版本 mediapipe 對 Python 3.12 的支持存在問題），或安裝過程中包文件損壞。
 
 ```Plain Text
 uv pip uninstall mediapipe
@@ -302,11 +302,11 @@ uv pip uninstall mediapipe
 uv pip install mediapipe==0.10.14
 ```
 
-### 2、Dora 版本不兼容，消息格式（v0\.7\.0 vs v0\.8\.0）
+### 2、Dora 版本不兼容，消息格式（v0.7.0 vs v0.8.0）
 
 ![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/10.png)
 
-答：①先在C盤用戶目錄下的\.cargo/registry/src/github\.xxxxxxxx/ 下只刪除對應的依賴包\!
+答：①先在C盤用戶目錄下的.cargo/registry/src/github.xxxxxxxx/ 下只刪除對應的依賴包!
 
 **`dora-message-0.7.0`**（核心！這是舊版消息格式文件夾，必須刪）
 
@@ -322,13 +322,13 @@ uv pip install mediapipe==0.10.14
 
 `const-random-macro-0.1.16`（Dora 依賴的輔助庫，隨舊版一起刪）
 
-②打開Demo/AHControl文件夾修改Cargo\.toml裏的dora\-node\-api="0\.5\.0" dora\-message="0\.8\.0"
+②打開Demo/AHControl文件夾修改Cargo.toml裏的dora-node-api="0.5.0" dora-message="0.8.0"
 
-③控制檯進入到AHControl目錄下重新運行cargo build \-\-release
+③控制檯進入到AHControl目錄下重新運行cargo build --release
 
 ④在重新跟着“[真實硬件運行](https://juxitech.feishu.cn/docx/NF4ndlQswoYbRQxNbg5cR4IOnEc#doxcnhAOlJGD8dKFyx70JSJ012b)”重新進行build
 
-根據實際報錯情況修改對應的版本，例如dora\-message需要0\.6\.0的，修改成dora\-node\-api="0\.4\.0" dora\-message="0\.6\.0"
+根據實際報錯情況修改對應的版本，例如dora-message需要0.6.0的，修改成dora-node-api="0.4.0" dora-message="0.6.0"
 
 ![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/11.png)
 
@@ -352,39 +352,39 @@ python -m pip install opencv-contrib-python numpy mediapipe -i https://mirrors.a
 
 ![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
 
-### 5、虛擬機22\.04調用攝像頭
+### 5、虛擬機22.04調用攝像頭
 
-參考 https://blog\.csdn\.net/qq\_19731521/article/details/124954288
+參考 https://blog.csdn.net/qq_19731521/article/details/124954288
 
 ### 6、桌面攝像頭安裝
 
 #### 環境相機套件支架安裝步驟
 
-1\.先固定微調角度支架
+1.先固定微調角度支架
 
 ![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/19.png)
 
-2\.側視環境相機套件
+2.側視環境相機套件
 
 ![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/2.png)
 
 
 
-## 虛擬機22\.04 直接運行手部追蹤
+## 虛擬機22.04 直接運行手部追蹤
 
-將這四個文件下載並放在同一個英文目錄下，用虛擬機軟件直接打開\.ovf文件進入系統
+將這四個文件下載並放在同一個英文目錄下，用虛擬機軟件直接打開.ovf文件進入系統
 
 密碼ubuntu
 
-\[ubuntu22\.04\_amazinghand\.mf\]
+[ubuntu22.04_amazinghand.mf]
 
-\[ubuntu22\.04\_amazinghand\.ovf\]
+[ubuntu22.04_amazinghand.ovf]
 
-\[ubuntu22\.04\_amazinghand\-disk1\.vmdk\]
+[ubuntu22.04_amazinghand-disk1.vmdk]
 
-\[ubuntu22\.04\_amazinghand\-file1\.iso\]
+[ubuntu22.04_amazinghand-file1.iso]
 
-**1\.在Demo目錄下打開控制檯：**
+**1.在Demo目錄下打開控制檯：**
 
 ```Plain Text
 dora up
@@ -396,11 +396,11 @@ dora up
 source .venv/bin/activate
 ```
 
-**2\.虛擬機調用攝像頭權限**
+**2.虛擬機調用攝像頭權限**
 
-虛擬機22\.04調用攝像頭參考 https://blog\.csdn\.net/qq\_19731521/article/details/124954288
+虛擬機22.04調用攝像頭參考 https://blog.csdn.net/qq_19731521/article/details/124954288
 
-**3\.通過命令行查看舵機驅動板的端口：**
+**3.通過命令行查看舵機驅動板的端口：**
 
 ```Bash
 ls /dev/ttyUSB* /dev/ttyACM*
@@ -414,19 +414,19 @@ sudo chmod 666 /dev/ttyACM*
 sudo usermod -aG dialout $USER
 ```
 
-**4\.修改代碼文件裏的端口號**
+**4.修改代碼文件裏的端口號**
 
-①找到AmazingHand\-main\\Demo\\AHControl\\src目錄下的main\.rs代碼文件，文本打開，修改爲自身主機查找到的端口號（windows爲COM\*，ubuntu、linux系統一般爲/dev/ttyACM\*）
+①找到AmazingHand-main\\Demo\\AHControl\\src目錄下的main.rs代碼文件，文本打開，修改爲自身主機查找到的端口號（windows爲COM\*，ubuntu、linux系統一般爲/dev/ttyACM\*）
 
 ![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
 
 ②找到對應的實例文件
 
-**右靈巧手** 找到AmazingHand\-main\\Demo目錄下的 dataflow\_tracking\_real\_right\.yml
+**右靈巧手** 找到AmazingHand-main\\Demo目錄下的 dataflow_tracking_real_right.yml
 
-**左靈巧手** 找到AmazingHand\-main\\Demo目錄下的 dataflow\_tracking\_real\_left\.yml
+**左靈巧手** 找到AmazingHand-main\\Demo目錄下的 dataflow_tracking_real_left.yml
 
-**雙靈巧手** 找到AmazingHand\-main\\Demo目錄下的 dataflow\_tracking\_real\_2hands\.yml
+**雙靈巧手** 找到AmazingHand-main\\Demo目錄下的 dataflow_tracking_real_2hands.yml
 
 文本格式打開，修改爲自身主機查找到的端口號（windows爲COM\*，ubuntu、linux系統一般爲/dev/ttyACM\*）
 
@@ -436,7 +436,7 @@ sudo usermod -aG dialout $USER
 
 ![](../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/4.png)
 
-**5\.運行 右手 手部追蹤**
+**5.運行 右手 手部追蹤**
 
 ```Plain Text
 dora run dataflow_tracking_real_right.yml --uv

@@ -2,17 +2,17 @@
 
 本次例程使用的是STM32F103C8T6，一臺windows電腦、杜邦線若干、IMU姿態傳感器。
 
-\[STM32\.zip\]
+[STM32.zip]
 
-使用keil5軟件打開I2C\.uvprojx，燒錄程序到STM32F103C8T6核心板中
+使用keil5軟件打開I2C.uvprojx，燒錄程序到STM32F103C8T6核心板中
 
-## 1\.連接設備
+## 1.連接設備
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=M2Q0Mjk2NGViMmQ1OWZkNzgyNTg5MmNjYTlmNDFmYmJfODkyNjBjYzY2YWQyMjYwMTNlOTVmYjg5ZGZmMThjMjhfSUQ6NzYzODk2NjM4NjgxNTE1OTI1M18xNzgwNDA0MzA1OjE3ODA0OTA3MDVfVjM)
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YWQwMzQwOWFiMThiZjdjMzg5ZjY4N2VhZjY3NGM1NzJfN2Y1ZTQ4ZTQ2OTgwNzE2YzgwOTk3NWRiOTRkOTg2ODRfSUQ6NzYzODk2NjM4NjA3Mjg0OTM1MV8xNzgwNDA0MzA1OjE3ODA0OTA3MDVfVjM)
 
-## 2\.關鍵代碼解析
+## 2.關鍵代碼解析
 
 具體代碼請看資料中的源碼。
 
@@ -122,19 +122,19 @@ int IMU_I2C_ReadBarometer(float out[4])
 
 ```
 
-read\_sensor\_data\(\):通用讀取傳感器數據的輔助函數
+read_sensor_data():通用讀取傳感器數據的輔助函數
 
-IMU\_I2C\_ReadAccelerometer\(\):讀取加速度數據（單位 g）
+IMU_I2C_ReadAccelerometer():讀取加速度數據（單位 g）
 
-IMU\_I2C\_ReadGyroscope\(\):讀取角速度（單位 rad/s）
+IMU_I2C_ReadGyroscope():讀取角速度（單位 rad/s）
 
-IMU\_I2C\_ReadQuaternion\(\):讀取四元數
+IMU_I2C_ReadQuaternion():讀取四元數
 
-IMU\_I2C\_ReadEuler\(\): 讀取歐拉角（弧度）
+IMU_I2C_ReadEuler(): 讀取歐拉角（弧度）
 
-IMU\_I2C\_ReadBarometer\(\):讀取氣壓相關數據：高度、溫度、氣壓、氣壓差
+IMU_I2C_ReadBarometer():讀取氣壓相關數據：高度、溫度、氣壓、氣壓差
 
-## 3\.讀取imu數據
+## 3.讀取imu數據
 
 程序下載進入STM32後，打開串口助手（配置參數如下圖所示），可以看到一直打印IMU模塊的數據，當我們改變IMU模塊的姿態，數據會發生變化。
 

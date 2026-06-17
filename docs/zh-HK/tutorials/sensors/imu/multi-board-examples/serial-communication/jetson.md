@@ -1,14 +1,14 @@
 # Jetson系列
 
-## 1\.連接設備
+## 1.連接設備
 
 本教程以Jetson orin nx主板爲例。
 
-將IMU姿態傳感器通過type\-c線插在主控的USB上。
+將IMU姿態傳感器通過type-c線插在主控的USB上。
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OGFjMjdlMjczNmNjMjc2OTdkMDI3NjNkMzY0N2I0MzlfMDUxMzJlNDFmNDgxMTZkYWVmYjEyYWNkMWQ1N2M3ZjJfSUQ6NzYzODk2NjAxNzkxOTI5MDMwNl8xNzgwNDA0NDcyOjE3ODA0OTA4NzJfVjM)
 
-## 2\.查看設備狀態
+## 2.查看設備狀態
 
 查看設備id
 
@@ -54,9 +54,9 @@ ll /dev/imu-serial
 lrwxrwxrwx 1 root root 7 1月 22 10:00 /dev/imu-serial -> ttyUSB0
 ```
 
-## 3\.安裝驅動庫
+## 3.安裝驅動庫
 
-**3\.1安裝代碼所需python庫**
+**3.1安裝代碼所需python庫**
 
 ```PowerShell
 sudo apt update
@@ -64,9 +64,9 @@ sudo apt install -y python3-serial
 sudo apt install -y python3-smbus2
 ```
 
-**3\.2傳輸文件**
+**3.2傳輸文件**
 
-\[IMU\_ROS2\.zip\]
+[IMU_ROS2.zip]
 
 如果還不會使用MobaXterm傳輸文件的朋友，請查看以下網頁MobaXterm詳細安裝和操作方法：[文件远程传输](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 
@@ -74,9 +74,9 @@ sudo apt install -y python3-smbus2
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDU5NjBjMjIwMDhlMTE1ZjM3OTcwNTEyZGNkNTM3YjlfZjY4OWRlNDYyZTdlMzIzMmQ4OWQ2NzkzOTU4MWY1OTNfSUQ6NzYzODk2NjAxNjE4OTg5MzYwMl8xNzgwNDA0NDcyOjE3ODA0OTA4NzJfVjM)
 
-## 4\.查看imu數據
+## 4.查看imu數據
 
-**進入 \~/IMU\_Library目錄，運行IMU\_Serial\_Library\.py文件**
+**進入 ~/IMU_Library目錄，運行IMU_Serial_Library.py文件**
 
 ```PowerShell
 cd ~/IMU_ROS2/IMU_Library
@@ -89,9 +89,9 @@ python3 -m IMU_Library.IMU_Serial_Library
 
 注意：以上爲10軸IMU的數據讀取，6軸無磁力計（Magnetometer）與氣壓計（Barometer）數據，9軸無氣壓計（Barometer）數據。
 
-## **5\.IMU校準**
+## **5.IMU校準**
 
-**進入 \~/IMU\_Library目錄，運行imu\_calibration\_tool\.py文件**
+**進入 ~/IMU_Library目錄，運行imu_calibration_tool.py文件**
 
 ```PowerShell
 cd ~/IMU_Library
@@ -112,7 +112,7 @@ python3 -m IMU_Library.imu_calibration_tool --mode serial --port /dev/imu-serial
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MDA2NTBiNGQ4YWYyNTQ1OGQ2Mjg5ZTIxNjQ1MWQ2MThfZDU5ZmNlM2U2OGI2ZjIwODI3MmFhMDUyZTQxNGY1NjdfSUQ6NzYzODk2NjAxNDY4ODU0NTc0Ml8xNzgwNDA0NDcyOjE3ODA0OTA4NzJfVjM)
 
-## 6\.注意事項
+## 6.注意事項
 
 如果可以查到設備ID，但是無法查到設備號，可以參考下面的命令安裝ch34x驅動
 

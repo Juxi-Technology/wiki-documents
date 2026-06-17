@@ -1,6 +1,6 @@
 # Jetson系列
 
-## 1\.連接設備
+## 1.連接設備
 
 本教程以Jetson Orin NX主板爲例。
 
@@ -10,7 +10,7 @@
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NWRlOTM4NzdkYTQwMWRjOTIwOTllOWJiMjRhZTE4YTFfNDNlY2ExYTY1OWY3YjNmNzI3YWY4NGMzNjZhZjViOWZfSUQ6NzYzODk2NjcyOTkwOTM0MTE1NV8xNzgwNDA0MzQxOjE3ODA0OTA3NDFfVjM)
 
-## 2\.查看設備狀態
+## 2.查看設備狀態
 
 首先安裝 I2Ctool，終端輸入：
 
@@ -27,9 +27,9 @@ sudo i2cdetect -y -r -a 7
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTVmYjg3MDdmMDA5NDlhZmIyOGMyM2M0N2M5NDliMjVfOWRmNjQ0ZjZlZjVhZWZiNTM1YTgxNzhmYThlMDA2NDNfSUQ6NzYzODk2NjcyODEwMTg1ODI2MV8xNzgwNDA0MzQxOjE3ODA0OTA3NDFfVjM)
 
-## 3\.安裝驅動庫
+## 3.安裝驅動庫
 
-3\.1**安裝代碼所需python庫**
+3.1**安裝代碼所需python庫**
 
 ```PowerShell
 sudo apt update
@@ -37,9 +37,9 @@ sudo apt install -y python3-serial
 sudo apt install -y python3-smbus2
 ```
 
-3\.2傳輸文件
+3.2傳輸文件
 
-\[IMU\_ROS2\.zip\]
+[IMU_ROS2.zip]
 
 如果還不會使用MobaXterm傳輸文件的朋友，請查看以下網頁MobaXterm詳細安裝和操作方法：[文件远程传输](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 
@@ -47,9 +47,9 @@ sudo apt install -y python3-smbus2
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YTFjYmY3NTQwZjA3NTM5ODliZTIxMTg2ZDdjNWEzMzJfMjJjMzIzOGI4ODA2M2ExZDkzZWMxMjFiM2EzNDhhMGNfSUQ6NzYzODk2NjcyOTMxMzc5OTA5OV8xNzgwNDA0MzQxOjE3ODA0OTA3NDFfVjM)
 
-## 4\.查看imu數據
+## 4.查看imu數據
 
-**進入 \~/IMU\_Library目錄，運行IMU\_Serial\_Library\.py文件**
+**進入 ~/IMU_Library目錄，運行IMU_Serial_Library.py文件**
 
 ```PowerShell
 cd ~/imu_ros2/src/IMU_ROS2/IMU_Library
@@ -62,9 +62,9 @@ python3 -m IMU_Library.IMU_I2C_Library
 
 注意：以上爲10軸IMU的數據讀取，6軸無磁力計（Magnetometer）與氣壓計（Barometer）數據，9軸無氣壓計（Barometer）數據。
 
-## **5\.IMU校準**
+## **5.IMU校準**
 
-**進入 \~/IMU\_Library目錄，運行imu\_calibration\_tool\.py文件**
+**進入 ~/IMU_Library目錄，運行imu_calibration_tool.py文件**
 
 ```PowerShell
 cd ~/IMU_Library
@@ -85,7 +85,7 @@ python3-m IMU_Library.imu_calibration_tool --mode i2c --port 7 --calibrate temp
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDIwMTRlZTAzNDdmNDkzYmZjZmE5OGNhMTliMTQ4Y2ZfMGY4Zjc4NDM4NTQ0ZjI2ZTAzNzQ5ZDhjNzk4YmUxNDdfSUQ6NzYzODk2NjcyODE5MDEzNTI1Ml8xNzgwNDA0MzQxOjE3ODA0OTA3NDFfVjM)
 
-## 6\.注意事項
+## 6.注意事項
 
 使用 orin系列主板 時，需要根據實際情況修改I2C的總線的序號，修改位置如下圖。通常是7號總線
 

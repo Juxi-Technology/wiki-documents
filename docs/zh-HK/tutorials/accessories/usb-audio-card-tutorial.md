@@ -2,7 +2,7 @@
 
 # 可視化測試軟件（Windows）
 
-[audio\_tools\.7z](https://juxitech.feishu.cn/wiki/Uz8wwCB4tiTWwMk0pFMctXxTn2b)
+[audio_tools.7z](https://juxitech.feishu.cn/wiki/Uz8wwCB4tiTWwMk0pFMctXxTn2b)
 
 **命令彙總（可跳過）**
 
@@ -35,7 +35,7 @@
 
     - 重啓音頻服務：`sudo systemctl restart alsa`（部分環境可能需要重啓系統：`sudo reboot`）
 
-# Jetson系列主控\&Ubuntu系統\&樹莓派
+# Jetson系列主控&amp;Ubuntu系統&amp;樹莓派
 
 ## 命令行調試
 
@@ -59,7 +59,7 @@
 
 ### 二、USB聲卡使用
 
-`arecord -l`，例如這裏顯示UACDemoV1\.0即是我們的聲卡，card 0；device 0，在命令中修改爲plughw:0,0指定該錄音設備
+`arecord -l`，例如這裏顯示UACDemoV1.0即是我們的聲卡，card 0；device 0，在命令中修改爲plughw:0,0指定該錄音設備
 
 ![](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/4.png)
 
@@ -67,16 +67,16 @@
 
 `記錄-D plughw： 0,0-fS16_LE-r 16000-d 5-t wav test.wav`
 
-其中 `plughw:0,0` 表示`card 0 , device 0`，即我們的USB聲卡，需根據`arecord -l` 找到自身設備號進行修改，如果你的UACDemoV1\.0即是我們的聲卡，顯示card 1；device 1，就需要將命令中的`plughw:0,0`改爲`plughw:1,1`。 `plughw`參數提供了自動的格式轉換，可以在不同的數據格式和硬件之間進行橋接。arecord 其他的參數如下：
+其中 `plughw:0,0` 表示`card 0 , device 0`，即我們的USB聲卡，需根據`arecord -l` 找到自身設備號進行修改，如果你的UACDemoV1.0即是我們的聲卡，顯示card 1；device 1，就需要將命令中的`plughw:0,0`改爲`plughw:1,1`。 `plughw`參數提供了自動的格式轉換，可以在不同的數據格式和硬件之間進行橋接。arecord 其他的參數如下：
 
 |指令|含義|本指令含義|
 |---|---|---|
-|\-D|選擇設備名稱|使用外接USB聲卡“plughw:1\.0”|
-|\-f|錄音格式|S16\_LE代表有符號16位小端序|
-|\-r|採樣率|16000是16KHz採樣|
-|\-d|錄音時長|錄音5秒|
-|\-t|錄音格式|wav格式|
-|test\. wav|文件名，可以包含路徑|文件名字叫test\.wav|
+|-D|選擇設備名稱|使用外接USB聲卡“plughw:1.0”|
+|-f|錄音格式|S16_LE代表有符號16位小端序|
+|-r|採樣率|16000是16KHz採樣|
+|-d|錄音時長|錄音5秒|
+|-t|錄音格式|wav格式|
+|test. wav|文件名，可以包含路徑|文件名字叫test.wav|
 
 如果聲音過小，輸入命令 `alsamixer` ，來對音量進行調整，按下`F6`，選擇USB聲卡，
 
@@ -92,15 +92,15 @@
 
 參數說明如下：
 
-- \-D plughw:0,0：指定錄音設備。plughw:0,0 表示使用第一個聲卡的第一個設備。
+- -D plughw:0,0：指定錄音設備。plughw:0,0 表示使用第一個聲卡的第一個設備。
 
-- \-f S16\_LE：設置音頻文件格式。S16\_LE 表示 16 位小端格式（Signed 16\-bit Little Endian），一種常用的音頻數據格式，“小端”指數據的低位字節存儲在內存的低地址端。
+- -f S16_LE：設置音頻文件格式。S16_LE 表示 16 位小端格式（Signed 16-bit Little Endian），一種常用的音頻數據格式，“小端”指數據的低位字節存儲在內存的低地址端。
 
-- \-r 16000：設置採樣率。
+- -r 16000：設置採樣率。
 
-- \-c 1：設置聲道數。
+- -c 1：設置聲道數。
 
-- \-d 5：設置錄音時長/秒。
+- -d 5：設置錄音時長/秒。
 
 
 
@@ -110,15 +110,15 @@
 
 通過PulseAudio，[命令行](https://so.csdn.net/so/search?q=%E5%91%BD%E4%BB%A4%E8%A1%8C&spm=1001.2101.3001.7020)方式查看
 
-`pactl list sources short`            \#  列出當前 PulseAudio 音頻服務器中所有可用的音頻源
+`pactl list sources short`            #  列出當前 PulseAudio 音頻服務器中所有可用的音頻源
 
 ![](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/8.png)
 
 > 49 代表源索引
 > 
-> Alsa \_input\.usb 表示這是一個USB輸入設備，表示是一個麥克風
+> Alsa _input.usb 表示這是一個USB輸入設備，表示是一個麥克風
 > 
-> s16le 表示 16 位小端（Signed 16\-bit Little Endian）的音頻採樣格式。
+> s16le 表示 16 位小端（Signed 16-bit Little Endian）的音頻採樣格式。
 > 
 > 1ch 表示單聲道。
 > 
@@ -172,7 +172,7 @@
 
 ### 樹莓派
 
-1\.噪音較大問題
+1.噪音較大問題
 
 先將麥克風音量置於100
 打開終端
@@ -195,7 +195,7 @@ ESC輸入:wq退出保存
 $ reboot
 ```
 
-2\.每次重新啓動會初始化音量設置
+2.每次重新啓動會初始化音量設置
 
 重新設置好音量後，
 
@@ -212,13 +212,13 @@ sudo alsactl store
 
 1. 錄音時有噪音雜音
 
-解決辦法：USB控制器兼容性改爲3\.0或3\.1
+解決辦法：USB控制器兼容性改爲3.0或3.1
 
 
 
 
 
-# RDK x3\&x5
+# RDK x3&amp;x5
 
 ## 查看設備編號
 
@@ -258,12 +258,12 @@ by-path/   controlC0  pcmC0D0c   pcmC0D0p   timer
 
 |指令|含義|本指令含義|
 |---|---|---|
-|\-D|選擇設備名稱|使用外接USB聲卡“plughw:1\.0”|
-|\-f|錄音格式|S16\_LE代表有符號16位小端序|
-|\-r|採樣率|16000是16KHz採樣|
-|\-d|錄音時長|錄音5秒|
-|\-t|錄音格式|wav格式|
-|test\. wav|文件名，可以包含路徑|文件名字叫test\.wav|
+|-D|選擇設備名稱|使用外接USB聲卡“plughw:1.0”|
+|-f|錄音格式|S16_LE代表有符號16位小端序|
+|-r|採樣率|16000是16KHz採樣|
+|-d|錄音時長|錄音5秒|
+|-t|錄音格式|wav格式|
+|test. wav|文件名，可以包含路徑|文件名字叫test.wav|
 
 如果聲音過小，輸入命令 `alsamixer` ，來對音量進行調整，按下`F6`，選擇USB聲卡，
 
@@ -279,15 +279,15 @@ by-path/   controlC0  pcmC0D0c   pcmC0D0p   timer
 
 參數說明如下：
 
-- \-D plughw:0,0：指定錄音設備。plughw:0,0 表示使用第一個聲卡的第一個設備。
+- -D plughw:0,0：指定錄音設備。plughw:0,0 表示使用第一個聲卡的第一個設備。
 
-- \-f S16\_LE：設置音頻文件格式。S16\_LE 表示 16 位小端格式（Signed 16\-bit Little Endian），一種常用的音頻數據格式，“小端”指數據的低位字節存儲在內存的低地址端。
+- -f S16_LE：設置音頻文件格式。S16_LE 表示 16 位小端格式（Signed 16-bit Little Endian），一種常用的音頻數據格式，“小端”指數據的低位字節存儲在內存的低地址端。
 
-- \-r 16000：設置採樣率。
+- -r 16000：設置採樣率。
 
-- \-c 1：設置聲道數。
+- -c 1：設置聲道數。
 
-- \-d 5：設置錄音時長/秒。
+- -d 5：設置錄音時長/秒。
 
 ## 常見問題
 
@@ -313,7 +313,7 @@ by-path/   controlC0  pcmC0D0c   pcmC0D0p   timer
 
 只要內核支持，再補裝基礎音頻工具，就能正常使用；若內核被裁剪，則需要重新編譯內核啓用驅動。
 
-**步驟 1： 檢查內核是否支持 snd\_usb\_audio**
+**步驟 1： 檢查內核是否支持 snd_usb_audio**
 
 ```Plain Text
 *# 方法1： 检查是否已加载驱动模块*
@@ -323,7 +323,7 @@ lsmod | grep snd_usb_audio
 modinfo snd_usb_audio  *# 有输出=内核支持；无输出=内核未编译该模块*
 ```
 
-**若 ****`modinfo`**** 無輸出**：說明系統內核裁剪了該驅動，需重新編譯內核，在 `.config` 中開啓：
+**若 `modinfo`**：說明系統內核裁剪了該驅動，需重新編譯內核，在 `.config` 中開啓：
 
 ```Plain Text
 CONFIG_SND_USB_AUDIO=m  # 编译为模块，或=y 内置到内核
@@ -331,7 +331,7 @@ CONFIG_SND_USB_UA101=y
 CONFIG_SND_USB_CAIAQ=y
 ```
 
-**若 ****`modinfo`**** 有輸出**：直接加載模塊：
+**若 `modinfo`**：直接加載模塊：
 
 ```Bash
 sudo modprobe snd_usb_audio
@@ -350,7 +350,7 @@ sudo apt update && sudo apt install -y alsa-utils usbutils
 
 #### 步驟 3： 驗證 USB 聲卡識別與功能
 
-1\.插入 USB 聲卡，執行命令確認設備識別：
+1.插入 USB 聲卡，執行命令確認設備識別：
 
 ```Bash
 # 查看 USB 设备枚举
@@ -362,7 +362,7 @@ aplay -l
 
 輸出中出現 `USB Audio` 相關的 `card X` 條目，說明識別成功。
 
-2\.測試音頻輸出（確保揚聲器 / 耳機已連接）：
+2.測試音頻輸出（確保揚聲器 / 耳機已連接）：
 
 ```Bash
 # 播放测试音，-D 指定 USB 声卡设备（X 为 aplay -l 显示的 card 编号）
@@ -383,7 +383,7 @@ sudo apt install -y pipewire pipewire-alsa
 
 ### 精簡版系統的常見坑點及解決
 
-**1\.權限不足，普通用戶無法訪問聲卡**
+**1.權限不足，普通用戶無法訪問聲卡**
 
 解決：將用戶加入 `audio`組，重啓後生效：
 
@@ -391,7 +391,7 @@ sudo apt install -y pipewire pipewire-alsa
 sudo usermod -aG audio $USER
 ```
 
-2\.**無聲音，但設備識別正常**
+2.**無聲音，但設備識別正常**
 
 解決：用 `alsamixer`調大音量、解除靜音（按 `M` 鍵取消靜音）：
 
@@ -399,7 +399,7 @@ sudo usermod -aG audio $USER
 alsamixer -c X  # X 为 USB 声卡的 card 编号
 ```
 
-3\.**內核版本過低，不支持新型 USB 聲卡時，分以下兩種情況**
+3.**內核版本過低，不支持新型 USB 聲卡時，分以下兩種情況**
 
 ```Bash
 sudo apt install -y linux-generic && sudo reboot

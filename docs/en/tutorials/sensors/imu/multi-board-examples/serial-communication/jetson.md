@@ -1,14 +1,14 @@
 # Jetson Series
 
-## 1\. Connect the device
+## 1. Connect the device
 
-This tutorial takes the Jetson Orin NX motherboard as an example\. 
+This tutorial takes the Jetson Orin NX motherboard as an example. 
 
-Connect the IMU attitude sensor to the USB port of the main controller via a Type\-C cable\. 
+Connect the IMU attitude sensor to the USB port of the main controller via a Type-C cable. 
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZTkxN2M3NTQyODhjYWNkYmM2ZWE2YWUzZDBiY2RlZTZfYjY2MGZiOGIyMzA3M2Y0M2NhMzIzNzliMWZiMzFjNDBfSUQ6NzYzODkzMDc1NzMyMjk1MTYyNV8xNzgwMzE4NDQ0OjE3ODA0MDQ4NDRfVjM)
 
-## 2\. Check device status
+## 2. Check device status
 
 View device ID
 
@@ -54,9 +54,9 @@ ll /dev/imu-serial
 lrwxrwxrwx 1 root root 7 1月 22 10:00 /dev/imu-serial -> ttyUSB0
 ```
 
-## 3\. Install the driver library
+## 3. Install the driver library
 
-**3\.1 Install the Python libraries required for the code**
+**3.1 Install the Python libraries required for the code**
 
 ```PowerShell
 sudo apt update
@@ -64,19 +64,19 @@ sudo apt install -y python3-serial
 sudo apt install -y python3-smbus2
 ```
 
-**3\.2 Transfer Files**
+**3.2 Transfer Files**
 
-\[IMU\_ROS2\.zip\]
+[IMU_ROS2.zip]
 
 Friends who are not yet familiar with using MobaXterm to transfer files, please refer to the following webpage for detailed installation and operation methods of MobaXterm:[文件远程传输](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 
-Drag the extracted files onto Jetson via MobaXterm software\. 
+Drag the extracted files onto Jetson via MobaXterm software. 
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTA2ZTg2MWU3YjQ1NDJmY2E2MGM2MWM2MjVlMjQ4N2RfNTQ3YTFiMzMxODQxNzVmMDE0YTk0OGZlZmUyZjg1MWFfSUQ6NzYzODkzMDc1ODIyMDEyMzA3Ml8xNzgwMzE4NDQ0OjE3ODA0MDQ4NDRfVjM)
 
-## 4\. View IMU data
+## 4. View IMU data
 
-**Enter the \~/IMU\_Library directory and run the IMU\_Serial\_Library\.py file **
+**Enter the ~/IMU_Library directory and run the IMU_Serial_Library.py file **
 
 ```PowerShell
 cd ~/IMU_ROS2/IMU_Library
@@ -87,11 +87,11 @@ python3 -m IMU_Library.IMU_Serial_Library
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=N2U1YWFlNDUyODgzYTI4OTY4YzY0ZDczMmQxNzFhZTFfMjQwZGUwNGQ3YTNmMDQ5YzVhMTIyZDMxNDM0OTY2MDdfSUQ6NzYzODkzMDc1NzI3MjUzODA3Ml8xNzgwMzE4NDQ0OjE3ODA0MDQ4NDRfVjM)
 
-Note: The above is the data reading for a 10\-axis IMU\. The 6\-axis has no Magnetometer and Barometer data, and the 9\-axis has no Barometer data\.
+Note: The above is the data reading for a 10-axis IMU. The 6-axis has no Magnetometer and Barometer data, and the 9-axis has no Barometer data.
 
-## **5\. IMU Calibration**
+## **5. IMU Calibration**
 
-**Enter the \~/IMU\_Library directory and run the imu\_calibration\_tool\.py file **
+**Enter the ~/IMU_Library directory and run the imu_calibration_tool.py file **
 
 ```PowerShell
 cd ~/IMU_Library
@@ -112,7 +112,7 @@ python3 -m IMU_Library.imu_calibration_tool --mode serial --port /dev/imu-serial
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTlhYzY2ZjJhNzQ4NzUxMTE3MDBjOWJmMjA5MWNlZTNfNDM0YzY1ZmExMjFiNWQ1ZTVlZDc1ZDAyNzQyZjE5NzdfSUQ6NzYzODkzMDc1NjY2ODY3Mjk2OV8xNzgwMzE4NDQ0OjE3ODA0MDQ4NDRfVjM)
 
-## 6\. Precautions
+## 6. Precautions
 
 If the device ID can be found but the device number cannot, you can refer to the following command to install the ch34x driver 
 

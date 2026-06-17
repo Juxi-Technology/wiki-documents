@@ -1,12 +1,12 @@
 # Jetson Nano Serial Communication
 
-Note: The voice interaction module needs to be flashed with the factory firmware\. If the voice chip has not been flashed with firmware after being received, it does not need to be flashed\. 
+Note: The voice interaction module needs to be flashed with the factory firmware. If the voice chip has not been flashed with firmware after being received, it does not need to be flashed. 
 
-## 1\. Check the port
+## 1. Check the port
 
-Connect to the Jetson Nano motherboard via the USB interface\. 
+Connect to the Jetson Nano motherboard via the USB interface. 
 
-When inputting at the terminal, the appearance of the ttyUSB0 device indicates normal recognition \(usually it is ttyUSB0, but it could also be other device numbers\) 
+When inputting at the terminal, the appearance of the ttyUSB0 device indicates normal recognition (usually it is ttyUSB0, but it could also be other device numbers) 
 
 ```Plain Text
 ls /dev/ttyUSB*
@@ -14,9 +14,9 @@ ls /dev/ttyUSB*
 
 ![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/1.png)
 
-## 2\. Code Implementation
+## 2. Code Implementation
 
-Download speech\_serial\.py to the corresponding directory
+Download speech_serial.py to the corresponding directory
 
 ```Python
 #!/usr/bin/env python3
@@ -141,11 +141,11 @@ if __name__ == "__main__":
 
 ```
 
-## 3\. Implementation Effect
+## 3. Implementation Effect
 
-The content of the broadcast can be viewed according to the protocol in the \<Command Word and Broadcast Word Protocol List V1\_Chinese File\> provided in the attachment\. 
+The content of the broadcast can be viewed according to the protocol in the \<Command Word and Broadcast Word Protocol List V1_Chinese File\> provided in the attachment. 
 
-Among them, the first and second bytes AA 55 represent the frame header of the protocol, the third byte 00 represents the broadcast function, the fourth is the ID of the broadcast content, where we can see that "the car moves forward" is 0x07 in hexadecimal, so sending 0x07 to register 0x03 in the program will broadcast the corresponding content\. The fifth byte is the end frame\. 
+Among them, the first and second bytes AA 55 represent the frame header of the protocol, the third byte 00 represents the broadcast function, the fourth is the ID of the broadcast content, where we can see that "the car moves forward" is 0x07 in hexadecimal, so sending 0x07 to register 0x03 in the program will broadcast the corresponding content. The fifth byte is the end frame. 
 
 ![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/2.png)
 
@@ -155,19 +155,19 @@ Enter the following command in the terminal to run the program
 python3 -m speech_serial
 ```
 
-After saying the wake word  Wake , the Console will reply with the received Read\_ID: 0 
+After saying the wake word  Wake , the Console will reply with the received Read_ID: 0 
 
-says "Turn off the light", and the Console will reply with Receiving Read\_ID: 13 
+says "Turn off the light", and the Console will reply with Receiving Read_ID: 13 
 
 ![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/3.png)
 
-At this time, you can open the attached "Command Word and Announcement Word Protocol List V1\_Chinese File" to view the protocol for "Turn off the light" 
+At this time, you can open the attached "Command Word and Announcement Word Protocol List V1_Chinese File" to view the protocol for "Turn off the light" 
 
 ![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/4.png)
 
-Among them, the first and second ByteDances AA 55 represent the frame header of the protocol, the third ByteDance represents the ID of the ten functional words of the chip, the fourth is the ID of the command word, where we can see that "turn off the light" is 0D in hexadecimal and 13 in decimal\. The fifth ByteDance is the end frame\.
+Among them, the first and second ByteDances AA 55 represent the frame header of the protocol, the third ByteDance represents the ID of the ten functional words of the chip, the fourth is the ID of the command word, where we can see that "turn off the light" is 0D in hexadecimal and 13 in decimal. The fifth ByteDance is the end frame.
 
-If you say other command words, the Console will also print the corresponding command word ID\. You can try it yourself\. 
+If you say other command words, the Console will also print the corresponding command word ID. You can try it yourself. 
 
 
 

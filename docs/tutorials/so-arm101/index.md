@@ -7,7 +7,7 @@ description: SO-ARM101 机械臂完整教程
 
 欢迎来到 SO-ARM101 机械臂完整教程！这里包含从入门到精通的所有内容。
 
-[**🖱️ 产品购买**](https://www.juxitech.com) [**📚 LeRobot 文档**](https://github.com/huggingface/lerobot)
+[**🖱️ 产品购买](https://www.juxitech.com) [**](https://github.com/huggingface/lerobot)
 
 ---
 

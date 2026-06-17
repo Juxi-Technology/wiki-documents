@@ -10,7 +10,7 @@
 
 ![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
 
-再次提醒，请确保舵机关节 ID 和齿轮比与 **SO\-ARM101** 的严格对应。
+再次提醒，请确保舵机关节 ID 和齿轮比与 **SO-ARM101** 的严格对应。
 
 总线上每个电机都有一个唯一的ID。新电机通常带有一个默认ID `1`。为了确保电机和控制器之间的通信正常，我们首先需要为每个电机设置一个唯一的ID。此外，总线上的数据传输速度由波特率决定。为了能够相互通信，控制器和所有电机都需要配置相同的波特率，本机械臂舵机的波特率为100000。
 
@@ -22,19 +22,19 @@
 
 ## Windows系统
 
-\[飞特舵机上位机\.zip\]
+[飞特舵机上位机.zip]
 
 使用飞特舵机上位机设置舵机ID并校准中位，ID设置是从1到6的！
 
-\[机械臂舵机设置ID\-Windows系统\.mp4\]
+[机械臂舵机设置ID-Windows系统.mp4]
 
 ## Linux/ubuntu系统
 
-如需飞特舵机上位机可参考https://gitee\.com/ftservo/FTServo_Linux
+如需飞特舵机上位机可参考https://gitee.com/ftservo/FTServo_Linux
 
-请先按照 [LeRobot机械臂教程](https://juxitech.feishu.cn/wiki/Wztzw95Cui2F9LkbMk8cnAoanCc) 跟进到 **C\. 机械臂控制**下 的 **端口授权 的 ****运行脚本以查找端口**
+请先按照 [LeRobot机械臂教程](https://juxitech.feishu.cn/wiki/Wztzw95Cui2F9LkbMk8cnAoanCc) 跟进到 **C. 机械臂控制**下 的 **端口授权 的 **运行脚本以查找端口**
 
-使用 USB 数据线从电脑连接到从动臂的舵机驱动板，并接通电源。然后，运行以下命令。请将命令中的\-\-robot\.port=/dev/ttyACM0 修改为找到的端口号。如查找的端口为/dev/ttyACM1，则修改为\-\-robot\.port=/dev/ttyACM1
+使用 USB 数据线从电脑连接到从动臂的舵机驱动板，并接通电源。然后，运行以下命令。请将命令中的--robot.port=/dev/ttyACM0 修改为找到的端口号。如查找的端口为/dev/ttyACM1，则修改为--robot.port=/dev/ttyACM1
 
 ```Python
 lerobot-setup-motors \
@@ -48,7 +48,7 @@ lerobot-setup-motors \
 Connect the controller board to the 'gripper' motor only and press enter.
 ```
 
-依照指示，连接夹爪的舵机。请确保它是唯一连接到舵机驱动板的舵机，并且该舵机尚未与其他任何舵机进行连接。当您按下 **\[Enter\]** 键后，脚本将自动设置该舵机的 ID 和波特率，ID设置是从6到1的！
+依照指示，连接夹爪的舵机。请确保它是唯一连接到舵机驱动板的舵机，并且该舵机尚未与其他任何舵机进行连接。当您按下 **[Enter]** 键后，脚本将自动设置该舵机的 ID 和波特率，ID设置是从6到1的！
 
 之后，您应该会看到以下信息：
 
@@ -78,15 +78,15 @@ lerobot-setup-motors \
     --teleop.port=/dev/ttyACM0
 ```
 
-\[机械臂舵机设置ID\-Linux系统\.mp4\]
+[机械臂舵机设置ID-Linux系统.mp4]
 
 # 第二步：组装
 
 从动臂的组装步骤与主动臂基本相同。唯一的区别在于第12步之后，末端执行器（夹爪和手柄）的安装方式有所不同。
 
-\[SO\-ARM101机械臂组装教程\.mp4\]
+[SO-ARM101机械臂组装教程.mp4]
 
-舵机驱动板的安装：先安装4个铜柱，然后用四个M2\.5\*8的螺丝固定驱动板
+舵机驱动板的安装：先安装4个铜柱，然后用四个M2.5\*8的螺丝固定驱动板
 
 ![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/7.png)
 

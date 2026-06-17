@@ -1,10 +1,10 @@
-# ROS2\-rviz2 Visualization
+# ROS2-rviz2 Visualization
 
-## 1\. Environment Preparation
+## 1. Environment Preparation
 
 #### System Requirements
 
-- **Operating System**: Ubuntu 22\.04
+- **Operating System**: Ubuntu 22.04
 
 - **ROS2 Version**: Humble
 
@@ -27,7 +27,7 @@ pip3 install pyserial
 
 ---
 
-## 2\. Create workspace and directory structure
+## 2. Create workspace and directory structure
 
 #### Create Directory
 
@@ -48,7 +48,7 @@ ros2 pkg create --build-type ament_python juxi_voice --license MIT
 
 #### Final Directory Structure
 
-After completion, your directory tree should be as follows \(please place files strictly according to this structure\): 
+After completion, your directory tree should be as follows (please place files strictly according to this structure): 
 
 ```Bash
 ~/juxi_speech_ws/
@@ -69,11 +69,11 @@ After completion, your directory tree should be as follows \(please place files 
 
 ---
 
-## 3\. File Content and Placement
+## 3. File Content and Placement
 
-Please enter the `~/juxi_speech_ws/src/juxi_voice/juxi_voice/` directory, download the following two Python files, and place them in this directory\.
+Please enter the `~/juxi_speech_ws/src/juxi_voice/juxi_voice/` directory, download the following two Python files, and place them in this directory.
 
-#### File 1:`voice_node.py` \(Voice Control Node\)
+#### File 1:`voice_node.py` (Voice Control Node)
 
 **位置**：`~/juxi_speech_ws/src/juxi_voice/juxi_voice/voice_node.py`
 
@@ -188,7 +188,7 @@ def main(args=None):
 if __name__ == '__main__': main()
 ```
 
-#### File 2:`rviz_control.py` \(RViz control node\)
+#### File 2:`rviz_control.py` (RViz control node)
 
 **位置**：`~/juxi_speech_ws/src/juxi_voice/juxi_voice/rviz_control.py`
 
@@ -279,7 +279,7 @@ if __name__ == '__main__': main()
 
 **位置**：`~/juxi_speech_ws/src/juxi_voice/setup.py`
 
-Find the `entry_points` section and modify it to the following content \(tell ROS2 where these two programs are located\):
+Find the `entry_points` section and modify it to the following content (tell ROS2 where these two programs are located):
 
 ```Python
 entry_points={
@@ -292,7 +292,7 @@ entry_points={
 
 ---
 
-## 4\. Compile and Run
+## 4. Compile and Run
 
 #### Compile
 
@@ -312,7 +312,7 @@ source install/setup.bash
 source ~/juxi_speech_ws/install/setup.bash
 ```
 
-#### Run the node \(requires 3 terminals\)
+#### Run the node (requires 3 terminals)
 
 Terminal 1: Run the voice node
 
@@ -343,53 +343,53 @@ rviz2
 
 ---
 
-## 5\. RViz Interface Configuration
+## 5. RViz Interface Configuration
 
-1. Click at the bottom left corner **Add**\. 
+1. Click at the bottom left corner **Add**. 
 
-2. Find `Marker` under **rviz\_default\_plugins**, and click OK\.
+2. Find `Marker` under **rviz_default_plugins**, and click OK.
 
-3. At the top of the left panel, change **Fixed Frame** to `map`\.
+3. At the top of the left panel, change **Fixed Frame** to `map`.
 
-4. Find the newly added **Marker** in the left list, click to expand it, and change **Topic** to `/juxi_visual_marker`\.
+4. Find the newly added **Marker in the left list, click to expand it, and change ** to `/juxi_visual_marker`.
 
-At this point, you will see a white cube appear in the center of the screen\. 
-
----
-
-## 6\. Usage Method
-
-**Wake up **: Say "Hello, Xiaoxi" to the module\. 
-
-- The module will reply "I'm here"\. 
-
-- Terminal 1 will display "🔔 Wakeup completed"\.
-
-**Send commands**: Then say "car move forward", "turn on red light", "turn off light", etc\.
-
-- The module will automatically broadcast the corresponding response\. 
-
-- The cube in RViz will move or change color\. 
+At this point, you will see a white cube appear in the center of the screen. 
 
 ---
 
-## 7\. Troubleshooting Common Issues
+## 6. Usage Method
+
+**Wake up **: Say "Hello, Xiaoxi" to the module. 
+
+- The module will reply "I'm here". 
+
+- Terminal 1 will display "🔔 Wakeup completed".
+
+**Send commands**: Then say "car move forward", "turn on red light", "turn off light", etc.
+
+- The module will automatically broadcast the corresponding response. 
+
+- The cube in RViz will move or change color. 
+
+---
+
+## 7. Troubleshooting Common Issues
 
 **Serial port permission error**: 
 
-- Solution: Execute ` sudo chmod 777 /dev/ttyUSB0 `\. 
+- Solution: Execute ` sudo chmod 777 /dev/ttyUSB0 `. 
 
 **There is no cube in RViz**: 
 
-- Solution: Check if Fixed Frame is ` map ` and if Topic is `/juxi_visual_marker `\. 
+- Solution: Check if Fixed Frame is ` map ` and if Topic is `/juxi_visual_marker `. 
 
 **No response after giving the instruction **: 
 
-- Troubleshooting: Open a new terminal and enter `ros2 topic echo /juxi_voice_cmd`\.
+- Troubleshooting: Open a new terminal and enter `ros2 topic echo /juxi_voice_cmd`.
 
-- If there is data showing: it indicates that the voice is normal, and the problem lies in the RViz configuration\. 
+- If there is data showing: it indicates that the voice is normal, and the problem lies in the RViz configuration. 
 
-- If no data is displayed: it indicates that there is no wake\-up or no data on the serial port\. 
+- If no data is displayed: it indicates that there is no wake-up or no data on the serial port. 
 
 
 

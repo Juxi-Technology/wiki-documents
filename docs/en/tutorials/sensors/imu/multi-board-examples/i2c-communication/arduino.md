@@ -1,18 +1,18 @@
 # Arduino
 
-This routine uses an Arduino Nano development board, a Windows computer, several DuPont wires, and an IMU attitude sensor\. 
+This routine uses an Arduino Nano development board, a Windows computer, several DuPont wires, and an IMU attitude sensor. 
 
-\[Arduino\.rar\]
+[Arduino.rar]
 
-## 1\. Connect the device
+## 1. Connect the device
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjdiZGFhZTI2YzNiMmU1ODQ4M2RiODU5YWFlMmQzOGJfNTNlMTY2Y2Y3MjE2ZDA2ZTU5YjJiYTkwMWMyOThkYTVfSUQ6NzYzODkzMTM3MTkzMTY4MzgxNF8xNzgwMzE4NTU4OjE3ODA0MDQ5NThfVjM)
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NTYxZDM4MDQzMTI2ZDI1ZTQwYjc5NmY4ODUyZGJjNGFfN2Q4MWQ4YTFjMDA1NTk2YjMxM2Q1ZWU0YjIxZTRiMGNfSUQ6NzY0MjE3MzgyOTMzNTIzOTY1MF8xNzgwMzE4NTU4OjE3ODA0MDQ5NThfVjM)
 
-## 2\. Key Code Analysis
+## 2. Key Code Analysis
 
-Please refer to the source code in the materials for the specific code\.
+Please refer to the source code in the materials for the specific code.
 
 ```C++
 /**
@@ -120,23 +120,23 @@ int IMU_I2C_ReadBarometer(float out[4])
 
 ```
 
-read\_sensor\_data\(\): A generic helper function for reading sensor data
+read_sensor_data(): A generic helper function for reading sensor data
 
-IMU\_I2C\_ReadAccelerometer\(\): Read acceleration data \(unit: g\)
+IMU_I2C_ReadAccelerometer(): Read acceleration data (unit: g)
 
-IMU\_I2C\_ReadGyroscope\(\): Read angular velocity \(unit: rad/s\)
+IMU_I2C_ReadGyroscope(): Read angular velocity (unit: rad/s)
 
-IMU\_I2C\_ReadQuaternion\(\): Read Quaternion
+IMU_I2C_ReadQuaternion(): Read Quaternion
 
-IMU\_I2C\_ReadEuler\(\): Read Euler angles \(radians\)
+IMU_I2C_ReadEuler(): Read Euler angles (radians)
 
-IMU\_I2C\_ReadBarometer\(\): Read barometer\-related data: altitude, temperature, barometric pressure, and pressure difference
+IMU_I2C_ReadBarometer(): Read barometer-related data: altitude, temperature, barometric pressure, and pressure difference
 
-## 3\. Read IMU data
+## 3. Read IMU data
 
-After the program is downloaded into Arduino, open the serial assistant \(configure the parameters as shown in the figure below\), and you can see that the data of the IMU module is continuously printed\. When we change the attitude of the IMU module, the data will change\. 
+After the program is downloaded into Arduino, open the serial assistant (configure the parameters as shown in the figure below), and you can see that the data of the IMU module is continuously printed. When we change the attitude of the IMU module, the data will change. 
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MmFlMzc4ZTA4MjYwMGE2NWU3MjNjNWUxNmQ4ZDM1MDdfMjg5MGQ3YzY5OTRkYjM0NjU3YTQ0ZDk1OGNhZWQ1ZDBfSUQ6NzYzODkzMTM3MzQwMzAxNjE1OV8xNzgwMzE4NTU4OjE3ODA0MDQ5NThfVjM)
 
-Note: The above is the data reading for a 10\-axis IMU\. The 6\-axis has no Magnetometer and Barometer data, and the 9\-axis has no Barometer data\.
+Note: The above is the data reading for a 10-axis IMU. The 6-axis has no Magnetometer and Barometer data, and the 9-axis has no Barometer data.
 

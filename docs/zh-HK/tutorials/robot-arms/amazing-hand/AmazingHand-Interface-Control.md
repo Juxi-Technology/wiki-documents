@@ -1,8 +1,8 @@
-# 右靈巧手\-界面控制
+# 右靈巧手-界面控制
 
-https://github\.com/JuxiTechnology/AmazingHandControl
+https://github.com/JuxiTechnology/AmazingHandControl
 
-\[AmazingHandControl\.zip\]
+[AmazingHandControl.zip]
 
 
 

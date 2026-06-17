@@ -2,7 +2,7 @@
 
 注意：語音交互模塊需要燒錄出廠固件，語音芯片到手之後沒有刷過固件的則不需要 
 
-## 1\.查看端口
+## 1.查看端口
 
 通過USB接口插到Jetson主板上。
 
@@ -14,9 +14,9 @@ ls /dev/ttyUSB*
 
 ![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/1.png)
 
-## 2\.代碼實現
+## 2.代碼實現
 
-將speech\_serial\.py下載到對應的目錄下
+將speech_serial.py下載到對應的目錄下
 
 ```Python
 #!/usr/bin/env python3
@@ -141,9 +141,9 @@ if __name__ == "__main__":
 
 ```
 
-## 3\.實現效果
+## 3.實現效果
 
-播報的內容可以根據附件提供的 命令詞播報詞協議列表V1\_中文文件 查看協議。
+播報的內容可以根據附件提供的 命令詞播報詞協議列表V1_中文文件 查看協議。
 
 其中第一第二個字節AA 55表示的是協議的幀頭，第三個字節00表示的是播報功能，第四個就是播報內容 的ID，這裏能看到“小車前進”是16進制的07，所以程序裏給寄存器0x03發送0x07即可播報對應內容。 第五個字節是結束幀。 
 
@@ -155,13 +155,13 @@ if __name__ == "__main__":
 python3 -m speech_serial
 ```
 
-當說出喚醒詞喚醒之後，控制檯會回覆接收Read\_ID：0
+當說出喚醒詞喚醒之後，控制檯會回覆接收Read_ID：0
 
-說“關燈”，控制檯會回覆接收Read\_ID：13
+說“關燈”，控制檯會回覆接收Read_ID：13
 
 ![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/3.png)
 
-這時候可以打開附件的 命令詞播報詞協議列表V1\_中文文件 查看“關燈”的協議 
+這時候可以打開附件的 命令詞播報詞協議列表V1_中文文件 查看“關燈”的協議 
 
 ![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/4.png)
 

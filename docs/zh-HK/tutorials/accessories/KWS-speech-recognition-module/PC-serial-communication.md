@@ -2,7 +2,7 @@
 
 ## 1、下載串口助手
 
-\[uartassist5\.0\.2\.zip\]
+[uartassist5.0.2.zip]
 
 ---
 
@@ -16,7 +16,7 @@
 
 ![](../../../public/images/tutorials/accessories/KWS-speech-recognition-module/PC-serial-communication/2.png)
 
-#### 打開“命令詞播報詞協議列表V1\_中文模板”文件
+#### 打開“命令詞播報詞協議列表V1_中文模板”文件
 
 > 選擇燒錄固件對應的語言模板
 > 

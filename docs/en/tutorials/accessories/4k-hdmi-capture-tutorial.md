@@ -4,11 +4,11 @@
 
 According to the motherboard interface, there are the following three wiring operations 
 
-**HDMI Interface** ——\> HDMI Cable ——\> HDMI Interface of the Collector ——\> USB/Type\-C ——\> Displays such as Laptops, Computers, All in One, Phones/Tablets, etc\.
+**HDMI Interface** ——\> HDMI Cable ——\> HDMI Interface of the Collector ——\> USB/Type-C ——\> Displays such as Laptops, Computers, All in One, Phones/Tablets, etc.
 
-**Micro HAMI Interface** ——\> Micro to HDMI Adapter ——\> HDMI Cable ——\> HDMI Interface of the Collector ——\> USB/Type\-C ——\> Displays such as Laptops, Computers, All in One, Phones/Tablets, etc\.
+**Micro HAMI Interface** ——\> Micro to HDMI Adapter ——\> HDMI Cable ——\> HDMI Interface of the Collector ——\> USB/Type-C ——\> Displays such as Laptops, Computers, All in One, Phones/Tablets, etc.
 
-**DP Interface** ——\> DP to HDMI Adapter ——\> HDMI Cable ——\> HDMI Interface of the Collector ——\> USB/Type\-C ——\> Displays such as Laptops, Computers, All in One, Phones/Tablets, etc\.
+**DP Interface** ——\> DP to HDMI Adapter ——\> HDMI Cable ——\> HDMI Interface of the Collector ——\> USB/Type-C ——\> Displays such as Laptops, Computers, All in One, Phones/Tablets, etc.
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTg2NDRiZmNmMzhiMzJmYTNlMDUwNTI5MjM1NmNkNTdfMDdkM2VmYmM0NWJhMTI2NjU1NTc2ZWM1ODBjZjgyNzVfSUQ6NzYzODkzMTQxMzk4NzI2NTQ4NF8xNzgwMzg0OTkxOjE3ODA0NzEzOTFfVjM)
 

@@ -2,17 +2,17 @@
 
 本次例程使用的是STM32F103C8T6核心板，一臺windows電腦、杜邦線若干、IMU姿態傳感器。
 
-\[STM32\.zip\]
+[STM32.zip]
 
-使用keil5軟件打開USART\.uvprojx，燒錄程序到STM32F103C8T6核心板中
+使用keil5軟件打開USART.uvprojx，燒錄程序到STM32F103C8T6核心板中
 
-## 1\.連接設備
+## 1.連接設備
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MzRhZDRjNDJmNDc4MmNlYjYwMmQwZWY3NzZjOWQyMmNfNjU1OWIyMTgwNzg3NTQ4NGUzN2ZhNjNlZGNhM2MxNjlfSUQ6NzYzODk2NTcxMjI3MDk1MzQwMF8xNzgwNDA0NDI4OjE3ODA0OTA4MjhfVjM)
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjU0ZWRkODdkMGM0NjY3MTlhZjkyOTc0Yjk3ZjI5ZWZfNTdmN2ZkNTgwYTYzZDM4YWNkODNkOGI5MTA0NDI1YmRfSUQ6NzYzODk2NTcxMjUwMTU0MTgzN18xNzgwNDA0NDI4OjE3ODA0OTA4MjhfVjM)
 
-## 2\.關鍵代碼解析
+## 2.關鍵代碼解析
 
 具體代碼請看資料中的源碼。
 
@@ -175,11 +175,11 @@ static void _parse_frame_data(uint8_t frame_function, const uint8_t *frame_data)
 }
 ```
 
-IMU\_UART\_Process\(\): 讀取緩存的數據，並調用\_parse\_frame\_data解析符合通信協議的數據。
+IMU_UART_Process(): 讀取緩存的數據，並調用_parse_frame_data解析符合通信協議的數據。
 
-\_parse\_frame\_data\(\)：解析數據。
+_parse_frame_data()：解析數據。
 
-## 3\.讀取imu數據
+## 3.讀取imu數據
 
 程序下載進入STM32後，打開串口助手（配置參數如下圖所示），可以看到一直打印IMU模塊的數據，當我們改變IMU模塊的姿態，數據會發生變化。
 

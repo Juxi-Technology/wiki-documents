@@ -4,11 +4,11 @@
 
 根據主板的接口分以下三種接線操作
 
-**HDMI接口**——\>HDMI線——\>採集器的HDMI接口——\> USB/Type\-C ——\>筆記本、電腦、一體機、手機/平板等顯示器
+**HDMI接口**——\>HDMI線——\>採集器的HDMI接口——\> USB/Type-C ——\>筆記本、電腦、一體機、手機/平板等顯示器
 
-**Micro HAMI接口**——\>Micro轉HDMI轉接頭——\>HDMI線——\>採集器的HDMI接口——\> USB/Type\-C ——\>筆記本、電腦、一體機、手機/平板等顯示器
+**Micro HAMI接口**——\>Micro轉HDMI轉接頭——\>HDMI線——\>採集器的HDMI接口——\> USB/Type-C ——\>筆記本、電腦、一體機、手機/平板等顯示器
 
-**DP接口**——\>DP轉HDMI轉接頭——\>HDMI線——\>採集器的HDMI接口——\> USB/Type\-C ——\>筆記本、電腦、一體機、手機/平板等顯示器
+**DP接口**——\>DP轉HDMI轉接頭——\>HDMI線——\>採集器的HDMI接口——\> USB/Type-C ——\>筆記本、電腦、一體機、手機/平板等顯示器
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZmFjMDQzOWQ4YjQ5ZTUzNTA5YmRiOGJjMDk1MTk4NzZfNTFkNzcwMzkyZWU3ZGVlZmQyZDZjZjI0NWY5N2FjYzlfSUQ6NzYzODk1OTQxODc4NDM4NTk3Nl8xNzgwNDAzMzgxOjE3ODA0ODk3ODFfVjM)
 

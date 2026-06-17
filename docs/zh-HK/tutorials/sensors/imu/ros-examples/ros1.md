@@ -1,12 +1,12 @@
 # ROS1應用
 
-**系統配置：ubuntu20\.04**
+**系統配置：ubuntu20.04**
 
-**ROS1****版本：noetic**
+**ROS1**版本：noetic**
 
 ### ROS1環境配置
 
-1. **設置****ROS1****安裝源**
+1. **設置ROS1**
 
 ```PowerShell
 sudo sh -c '. /etc/lsb-release && echo "deb http://mirrors.tuna.tsinghua.edu.cn/ros/ubuntu/ `lsb_release -cs` main" > /etc/apt/sources.list.d/ros-latest.list'
@@ -22,7 +22,7 @@ sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31
 sudo apt update
 ```
 
-3. **安裝****ROS1（官方下載）**
+3. **安裝**ROS1（官方下載）**
 
 ```PowerShell
 sudo apt install ros-noetic-desktop-full
@@ -30,7 +30,7 @@ sudo apt install ros-noetic-desktop-full
 
 代理加速下載安裝ROS1
 
-wgethttp://fishros\.com/install\-O Fishros\&\&\.
+wgethttp://fishros.com/install-O Fishros&amp;&amp;.
 
 4. **配置環境變量**
 
@@ -88,11 +88,11 @@ sudo usermod -aG dialout ash
 
 ### 導入準備好的壓縮包
 
-1. **飛書同級目錄下有**[IMU\_ROS1\.zip](https://juxitech.feishu.cn/wiki/GNgWwGnYIiBd4Gk81yccEN6jnNf)
+1. **飛書同級目錄下有**[IMU_ROS1.zip](https://juxitech.feishu.cn/wiki/GNgWwGnYIiBd4Gk81yccEN6jnNf)
 
 2. **通過文件傳輸軟件傳輸到虛擬機中**
 
-3. **安裝IMU\_Library庫**
+3. **安裝IMU_Library庫**
 
 ```PowerShell
 cd IMU_ROS1
@@ -132,7 +132,7 @@ cd src/
 catkin_init_workspace
 ```
 
-2. **將傳輸過來的文件IMU\_ROS1文件夾複製到\~/imu\_ros1/src/目錄下**
+2. **將傳輸過來的文件IMU_ROS1文件夾複製到~/imu_ros1/src/目錄下**
 
 ```PowerShell
 # 复制 IMU_ROS1 文件夹到新建的 src 目录下
@@ -141,7 +141,7 @@ cd ~/imu_ros1
 catkin_make
 ```
 
-3. **把工作目錄\~/imu\_ros1寫入到環境變量中**
+3. **把工作目錄~/imu_ros1寫入到環境變量中**
 
 ```PowerShell
 # 编辑 ~/.bashrc
@@ -178,7 +178,7 @@ chmod +x imu_driver.py
 chmod +x mag_visualizer.py
 ```
 
-返回imu\_ros1文件夾下運行imu\_driver\.py
+返回imu_ros1文件夾下運行imu_driver.py
 
 ```Plain Text
 cd ~/imu_ros1
@@ -209,7 +209,7 @@ rostopic echo /imu/mag
 
 ### RViz可視化
 
-1. **運行命令啓動rviz****\(\)**
+1. **運行命令啓動rviz**()**
 
 ```PowerShell
 roslaunch IMU_ROS1 imu_display.launch

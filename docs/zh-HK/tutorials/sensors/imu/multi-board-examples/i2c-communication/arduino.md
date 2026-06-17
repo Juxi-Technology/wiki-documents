@@ -2,15 +2,15 @@
 
 本次例程使用的是Arduino Nano開發板，一臺windows電腦、杜邦線若干、IMU姿態傳感器。
 
-\[Arduino\.rar\]
+[Arduino.rar]
 
-## 1\.連接設備
+## 1.連接設備
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NmY0NWI1YWQ4NGYxYWIzNDk5MTU2YmNmMzI5NDM0OTZfZTU2OWM2YTc5N2IzMDA2OTY5YzdiMDk4OWQ0NWQyMGJfSUQ6NzYzODk2NjUxNTk1NzY4MTExMl8xNzgwNDA0MzE3OjE3ODA0OTA3MTdfVjM)
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZTJmNDRjOGI0OGNjOTUzMjU4M2VjOTFlYjA3MmM3MDRfZmM4NDA3MTk5YTY2MWJjMThmNDM5ZDVmODIyNWJkMmVfSUQ6NzYzODk2NjUxMzM4NzAxNTEzOV8xNzgwNDA0MzE3OjE3ODA0OTA3MTdfVjM)
 
-## 2\.關鍵代碼解析
+## 2.關鍵代碼解析
 
 具體代碼請看資料中的源碼。
 
@@ -120,19 +120,19 @@ int IMU_I2C_ReadBarometer(float out[4])
 
 ```
 
-read\_sensor\_data\(\):通用讀取傳感器數據的輔助函數
+read_sensor_data():通用讀取傳感器數據的輔助函數
 
-IMU\_I2C\_ReadAccelerometer\(\):讀取加速度數據（單位 g）
+IMU_I2C_ReadAccelerometer():讀取加速度數據（單位 g）
 
-IMU\_I2C\_ReadGyroscope\(\):讀取角速度（單位 rad/s）
+IMU_I2C_ReadGyroscope():讀取角速度（單位 rad/s）
 
-IMU\_I2C\_ReadQuaternion\(\):讀取四元數
+IMU_I2C_ReadQuaternion():讀取四元數
 
-IMU\_I2C\_ReadEuler\(\): 讀取歐拉角（弧度）
+IMU_I2C_ReadEuler(): 讀取歐拉角（弧度）
 
-IMU\_I2C\_ReadBarometer\(\):讀取氣壓相關數據：高度、溫度、氣壓、氣壓差
+IMU_I2C_ReadBarometer():讀取氣壓相關數據：高度、溫度、氣壓、氣壓差
 
-## 3\.讀取imu數據
+## 3.讀取imu數據
 
 程序下載進入Arduino後，打開串口助手（配置參數如下圖所示），可以看到一直打印IMU模塊的數據，當我們改變IMU模塊的姿態，數據會發生變化。
 

@@ -1,10 +1,10 @@
-# ROS2\-rviz2可視化
+# ROS2-rviz2可視化
 
 ## 1、環境準備
 
 #### 系統要求
 
-- **操作系統**：Ubuntu 22\.04
+- **操作系統**：Ubuntu 22.04
 
 - **ROS2 版本**：Humble
 
@@ -73,7 +73,7 @@ ros2 pkg create --build-type ament_python juxi_voice --license MIT
 
 請進入 `~/juxi_speech_ws/src/juxi_voice/juxi_voice/` 目錄，下載以下兩個 Python 文件，並放到這個目錄下。
 
-#### 文件 1：`voice_node.py` \(語音控制節點\)
+#### 文件 1：`voice_node.py` (語音控制節點)
 
 **位置**：`~/juxi_speech_ws/src/juxi_voice/juxi_voice/voice_node.py`
 
@@ -188,7 +188,7 @@ def main(args=None):
 if __name__ == '__main__': main()
 ```
 
-#### 文件 2：`rviz_control.py` \(RViz 控制節點\)
+#### 文件 2：`rviz_control.py` (RViz 控制節點)
 
 **位置**：`~/juxi_speech_ws/src/juxi_voice/juxi_voice/rviz_control.py`
 
@@ -351,7 +351,7 @@ rviz2
 
 3. 在左側面板頂部，將 **Fixed Frame** 改爲 `map`。
 
-4. 在左側列表中找到剛添加的 **Marker**，點擊展開，將 **Topic** 改爲 `/juxi_visual_marker`。
+4. 在左側列表中找到剛添加的 **Marker，點擊展開，將 ** 改爲 `/juxi_visual_marker`。
 
 此時你會看到一個白色的立方體出現在屏幕中央。
 

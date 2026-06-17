@@ -1,6 +1,6 @@
-# High\-precision IMU Attitude Sensor Usage Tutorial
+# High-precision IMU Attitude Sensor Usage Tutorial
 
-### Download the Compressed Packet[IMU\_ROS1\.zip](https://juxitech.feishu.cn/wiki/GNgWwGnYIiBd4Gk81yccEN6jnNf), unzip it, and then enter \~/IMU\_Library
+### Download the Compressed Packet[IMU_ROS1.zip](https://juxitech.feishu.cn/wiki/GNgWwGnYIiBd4Gk81yccEN6jnNf), unzip it, and then enter ~/IMU_Library
 
 1. **Install the required Python libraries for the code **
 
@@ -9,7 +9,7 @@ pip install pyserial
 pip install smbus2
 ```
 
-2. **Install the IMU\_Library **
+2. **Install the IMU_Library **
 
 ```PowerShell
 # 安装库及其依赖
@@ -51,7 +51,7 @@ lrwxrwxrwx 1 root root 7 1月 22 10:00 /dev/imu-serial -> ttyUSB0
 
 ### Serial Communication
 
-1. **Enter the \~/IMU\_Library/IMU\_Library directory and run the IMU\_Serial\_Library\.py file **
+1. **Enter the ~/IMU_Library/IMU_Library directory and run the IMU_Serial_Library.py file **
 
 ```PowerShell
 cd ~/imu_ros1/src/IMU_ROS1/IMU_Library/IMU_Library 
@@ -64,7 +64,7 @@ python3 IMU_Serial_Library.py
 
 ### I2C Communication
 
-1. **Enter the \~/IMU\_Library/IMU\_Library directory and run the IMU\_I2C\_Library\.py file **
+1. **Enter the ~/IMU_Library/IMU_Library directory and run the IMU_I2C_Library.py file **
 
 ```PowerShell
 cd ~/IMU_Library/IMU_Library
@@ -75,7 +75,7 @@ python3 IMU_I2C_Library.py
 
 ### IMU Calibration
 
-1. **Enter the \~/IMU\_Library/IMU\_Library directory and run the imu\_calibration\_tool\.py file **
+1. **Enter the ~/IMU_Library/IMU_Library directory and run the imu_calibration_tool.py file **
 
 ```PowerShell
 cd ~/IMU_Library/IMU_Library

@@ -1,8 +1,8 @@
 # LeRobot機械臂教程
 
-本教程已更新至12月15日，可選擇跟隨最新版[官方文檔進行操作](https://github.com/huggingface/lerobot/tree/main)，官方文檔具體教程可以參考[本鏈接](https://zihao-ai.feishu.cn/wiki/TS6swApHbinx01kHDi5cf5n5n8c)。若需要URDF等文件請參考[本鏈接](https://github.com/TheRobotStudio/SO-ARM100)。9月15日舊版本請參考該[鏈接](https://juxitech.feishu.cn/docx/DJkBdcwzooBqamxl0kgcvVUbngh?from=from_copylink)。SO\-ARM101與SO\-ARM100運行代碼相互兼容。
+本教程已更新至12月15日，可選擇跟隨最新版[官方文檔進行操作](https://github.com/huggingface/lerobot/tree/main)，官方文檔具體教程可以參考[本鏈接](https://zihao-ai.feishu.cn/wiki/TS6swApHbinx01kHDi5cf5n5n8c)。若需要URDF等文件請參考[本鏈接](https://github.com/TheRobotStudio/SO-ARM100)。9月15日舊版本請參考該[鏈接](https://juxitech.feishu.cn/docx/DJkBdcwzooBqamxl0kgcvVUbngh?from=from_copylink)。SO-ARM101與SO-ARM100運行代碼相互兼容。
 
-## A\. 教程說明
+## A. 教程說明
 
 **Pro版 黑色主動臂使用5V6A電源適配器，白色從動臂使用12V5A電源適配器！**
 
@@ -14,25 +14,25 @@
 
 讓我們先從安裝 LeRobot 環境開始。
 
-## B\. 環境準備
+## B. 環境準備
 
 For Ubuntu X86:
 
-- Ubuntu 22\.04
+- Ubuntu 22.04
 
-- CUDA 12\+
+- CUDA 12+
 
-- Python 3\.10
+- Python 3.10
 
-- Torch 2\.6\+
+- Torch 2.6+
 
 For Jetson Orin:
 
-- Jetson Jetpack 6\.0\+
+- Jetson Jetpack 6.0+
 
-- Python 3\.10
+- Python 3.10
 
-- Torch 2\.5\.0a0\+872d972e41
+- Torch 2.5.0a0+872d972e41
 
 [RealSense深度攝像頭D400系列安裝構建指南](https://dev.realsenseai.com/docs/installation)
 
@@ -40,7 +40,7 @@ For Jetson Orin:
 
 ### 安裝 LeRobot 環境
 
-#### 1\. [安裝 Miniconda](https://docs.anaconda.com/miniconda/install/#quick-command-line-install)環境:
+#### 1. [安裝 Miniconda](https://docs.anaconda.com/miniconda/install/#quick-command-line-install)環境:
 
 需要根據你的 CUDA 版本安裝 pytorch 和 torchvision 等環境。
 
@@ -53,7 +53,7 @@ bash ~/Miniconda3-latest-Linux-aarch64.sh
 source ~/.bashrc
 ```
 
-或者，對於 X86 Ubuntu 22\.04：
+或者，對於 X86 Ubuntu 22.04：
 
 ```Bash
 mkdir -p ~/miniconda3
@@ -65,9 +65,9 @@ source ~/miniconda3/bin/activate
 conda init --all
 ```
 
-#### 2\. 在想要部署的 目錄（創建例如：lerobot） 下爲 lerobot 創建並激活一個新的 conda 環境：
+#### 2. 在想要部署的 目錄（創建例如：lerobot） 下爲 lerobot 創建並激活一個新的 conda 環境：
 
-> 請不要在 \~/miniconda3目錄下創建或者導入lerobot項目
+> 請不要在 ~/miniconda3目錄下創建或者導入lerobot項目
 > 
 > 
 
@@ -75,23 +75,23 @@ conda init --all
 conda create -y -n lerobot python=3.10
 ```
 
-#### 3\. 然後激活您的 `conda` 環境（每次打開終端使用 lerobot 時都需要執行此操作！）：
+#### 3. 然後激活您的 `conda` 環境（每次打開終端使用 lerobot 時都需要執行此操作！）：
 
 ```PowerShell
 conda activate lerobot
 ```
 
-#### 4\. 克隆 LeRobot：
+#### 4. 克隆 LeRobot：
 
 ```PowerShell
 git clone https://github.com/Juxi-Technology/lerobot.git
 ```
 
-可選擇跟隨最新版： https://github\.com/huggingface/lerobot\.git  
+可選擇跟隨最新版： https://github.com/huggingface/lerobot.git  
 
 注：最新版本的命令代碼可能不一致！
 
-#### 5\. 在您的環境中安裝 ffmpeg：
+#### 5. 在您的環境中安裝 ffmpeg：
 
 使用 `miniconda` 時，在您的環境中安裝 `ffmpeg`：
 
@@ -99,13 +99,13 @@ git clone https://github.com/Juxi-Technology/lerobot.git
 conda install ffmpeg -c conda-forge
 ```
 
-這通常會爲你的平臺安裝使用 libsvtav1 編碼器編譯的 ffmpeg 7\.X。如果不支持 libsvtav1（可以通過 `ffmpeg -encoders` 查看支持的編碼器），你可以：
+這通常會爲你的平臺安裝使用 libsvtav1 編碼器編譯的 ffmpeg 7.X。如果不支持 libsvtav1（可以通過 `ffmpeg -encoders` 查看支持的編碼器），你可以：
 
-【適用於所有平臺】顯式安裝 ffmpeg 7\.X：
+【適用於所有平臺】顯式安裝 ffmpeg 7.X：
 
 `安裝ffmpeg=7.1.1-c conda-forge`
 
-無圖形依賴（gdk\-pixbuf、librsvg）用此命令安裝：
+無圖形依賴（gdk-pixbuf、librsvg）用此命令安裝：
 
 `安裝ffmpeg=7.1.1-c conda-forge--no-deps`
 
@@ -115,13 +115,13 @@ conda install ffmpeg -c conda-forge
 
 ![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/1.png)
 
-#### 6\. 進入lerobot目錄下，安裝帶有 feetech 電機依賴的 LeRobot：
+#### 6. 進入lerobot目錄下，安裝帶有 feetech 電機依賴的 LeRobot：
 
 ```PowerShell
 cd ~/lerobot && pip install -e ".[feetech]"
 ```
 
-對於 Jetson Jetpack 6\.0\+ 設備（請確保在執行此步驟前按照[此鏈接教程](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/tree/main/3-Basic-Tools-and-Getting-Started)第 5 步安裝了 Pytorch\-gpu 和 Torchvision）：
+對於 Jetson Jetpack 6.0+ 設備（請確保在執行此步驟前按照[此鏈接教程](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/tree/main/3-Basic-Tools-and-Getting-Started)第 5 步安裝了 Pytorch-gpu 和 Torchvision）：
 
 ```Plain Text
 conda install -y -c conda-forge "opencv>=4.10.0.84"  # 通过 conda 安装 OpenCV 和其他依赖，仅适用于 Jetson Jetpack 6.0+
@@ -132,7 +132,7 @@ conda uninstall numpy
 pip3 install numpy==1.26.0  # 该版本需与 torchvision 兼容
 ```
 
-#### 7\. 檢查 Pytorch 和 Torchvision
+#### 7. 檢查 Pytorch 和 Torchvision
 
 由於通過 pip 安裝 lerobot 環境時會卸載原有的 Pytorch 和 Torchvision 並安裝 CPU 版本，因此需要在 Python 中進行檢查。
 
@@ -147,7 +147,7 @@ print(torch.cuda.is_available())
 
 [Jetson Orin上Pytorch不兼容](https://juxitech.feishu.cn/wiki/AJWBwSbXiinQT5kM1SZc7N3Tn8d)
 
-#### 8\.  intelRealSense深度相機SDK依賴環境安裝（若有intelRealSense深度相機）
+#### 8.  intelRealSense深度相機SDK依賴環境安裝（若有intelRealSense深度相機）
 
 若需使用RealSense深度攝像頭，在`lerobot/src/lerobot/`下安裝pyrealsense2：
 
@@ -155,7 +155,7 @@ print(torch.cuda.is_available())
 pip install pyrealsense2
 ```
 
-## C\. 機械臂控制
+## C. 機械臂控制
 
 ### 端口授權
 
@@ -173,7 +173,7 @@ cd ~/lerobot/src/lerobot/
 conda activate lerobot
 ```
 
-#### 1\. 運行腳本以查找端口
+#### 1. 運行腳本以查找端口
 
 查找機械臂對應的 USB 端口 爲了找到每個機械臂正確的端口，請運行實用腳本兩次：：
 
@@ -181,7 +181,7 @@ conda activate lerobot
 lerobot-find-port
 ```
 
-#### 2\. 示例輸出
+#### 2. 示例輸出
 
 識別Leader機械臂端口時的示例輸出（例如，Mac 上爲 `/dev/tty.usbmodem575E0031751`，或 Linux 上可能爲 `/dev/ttyACM0`）：
 
@@ -211,7 +211,7 @@ Reconnect the USB cable.
 
 請記住要拔出 USB 接頭，否則將無法檢測到接口。
 
-#### 3\. 疑難解答
+#### 3. 疑難解答
 
 在 Linux 上，您需要通過運行以下命令來授予對 USB 端口的訪問權限：
 
@@ -225,17 +225,17 @@ sudo chmod 666 /dev/ttyACM1
 
 ### 校準機械臂
 
-接下來，你需要對你的 SO\-10x 機器人接上電源和數據線進行校準，以確保在相同的物理位置時，Leader機械臂和 Follower機械臂的位置信息一致。這個校準過程至關重要，因爲它可以讓在一個 SO\-10x 機器人上訓練的神經網絡在另一個機器人上也能正常工作。如果需要重新校準機械臂，請完全刪除`~/.cache/huggingface/lerobot/calibration/robots`或者`~/.cache/huggingface/lerobot/calibration/teleoperators`下的文件並重新校準機械臂，否者會出現報錯提示，校準的機械臂信息會存儲該目錄下的json文件中。
+接下來，你需要對你的 SO-10x 機器人接上電源和數據線進行校準，以確保在相同的物理位置時，Leader機械臂和 Follower機械臂的位置信息一致。這個校準過程至關重要，因爲它可以讓在一個 SO-10x 機器人上訓練的神經網絡在另一個機器人上也能正常工作。如果需要重新校準機械臂，請完全刪除`~/.cache/huggingface/lerobot/calibration/robots`或者`~/.cache/huggingface/lerobot/calibration/teleoperators`下的文件並重新校準機械臂，否者會出現報錯提示，校準的機械臂信息會存儲該目錄下的json文件中。
 
-#### 1\. Follower機械臂的手動校準
+#### 1. Follower機械臂的手動校準
 
 請通過 3 針接口連接 6 個機器人舵機的接口，並將底盤舵機連接到舵機驅動板，然後運行以下命令或 API 示例來校準機械臂：
 
-以PC\(linux\)和jetson板卡爲例，`第一個`插入usb接口會映射爲`ttyACM0`，`第二個`插入usb接口會映射爲`ttyACM1`。
+以PC(linux)和jetson板卡爲例，`第一個`插入usb接口會映射爲`ttyACM0`，`第二個`插入usb接口會映射爲`ttyACM1`。
 
 在運行代碼前請注意leader和follower的映射接口。
 
-#### 2\. 接口授權
+#### 2. 接口授權
 
 首先，您需要授予接口權限，運行以下命令：
 
@@ -243,7 +243,7 @@ sudo chmod 666 /dev/ttyACM1
 sudo chmod 666 /dev/ttyACM*
 ```
 
-#### 3\. 然後校準Follower機械臂
+#### 3. 然後校準Follower機械臂
 
 接下來，通過運行以下 Python 命令來校準從動臂：
 
@@ -260,7 +260,7 @@ lerobot-calibrate \
 
 ![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/3.png)
 
-#### **4\. 校準Leader機械臂**
+#### **4. 校準Leader機械臂**
 
 對主機械臂進行校準的步驟與上述相同，請運行以下命令或 API 示例：
 
@@ -271,15 +271,15 @@ lerobot-calibrate \
     --teleop.id=my_awesome_leader_arm
 ```
 
-\[机械臂中位校准视频\.mp4\]
+[机械臂中位校准视频.mp4]
 
 ### 遙感操作
 
-#### **1\. ****簡單****遙感****操作**
+#### **1. **簡單**遙感**操作**
 
 然後，您就可以準備遙操作您的機器人了！運行這個簡單的腳本（它不會連接和顯示攝像頭）：
 
-請注意，與機器人關聯的 **ID** 用於存儲校準文件。在使用相同設置進行遙控操作、錄製和評估時，使用相同的 **ID** 至關重要。
+請注意，與機器人關聯的 **ID 用於存儲校準文件。在使用相同設置進行遙控操作、錄製和評估時，使用相同的 ** 至關重要。
 
 先對串口給予權限：
 
@@ -305,7 +305,7 @@ lerobot-teleoperate \
 
 2. 連接機器人和遙控設備，並開始遙控操作。
 
-#### 2\. 帶攝像頭顯示的遠程操作
+#### 2. 帶攝像頭顯示的遠程操作
 
 爲了實例化攝像頭，您需要一個攝像頭標識符。這個標識符可能會在您重啓電腦或重新插拔攝像頭時發生變化，這主要取決於您的操作系統。
 
@@ -356,7 +356,7 @@ lerobot-teleoperate \
     --display_data=true
 ```
 
-如果你想添加RealSense深度相機，先運行`python -m lerobot.find_cameras realsense` 獲取Id，並將此命令中robot\.cameras參數的serial\_number\_or\_name: "323622271780" 替換爲自己的深度相機Id，`use_depth: true` 啓用深度流：
+如果你想添加RealSense深度相機，先運行`python -m lerobot.find_cameras realsense` 獲取Id，並將此命令中robot.cameras參數的serial_number_or_name: "323622271780" 替換爲自己的深度相機Id，`use_depth: true` 啓用深度流：
 
 ![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/5.png)
 
@@ -374,7 +374,7 @@ lerobot-teleoperate \
     --display_data=true
 ```
 
-## D\. 數據採集
+## D. 數據採集
 
 ### 記錄一個數據集
 
@@ -441,13 +441,13 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 
 **參數說明**
 
-- episode\_time\_s: 表示每次收集數據的時間。
+- episode_time_s: 表示每次收集數據的時間。
 
-- reset\_time\_s: 是每次數據收集之間的準備時間。
+- reset_time_s: 是每次數據收集之間的準備時間。
 
-- num\_episodes: 表示預期收集多少組數據。
+- num_episodes: 表示預期收集多少組數據。
 
-- push\_to\_hub: 決定是否將數據上傳到 HuggingFace Hub。
+- push_to_hub: 決定是否將數據上傳到 HuggingFace Hub。
 
 |按鍵|動作|
 |---|---|
@@ -485,7 +485,7 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 
 - 避免快速添加過多變化，因爲這可能會阻礙您的結果。
 
-- "如果你希望將數據保存在本地 \(`--dataset.push_to_hub=false`\)，請將 `--dataset.repo_id=${HF_USER}/so101_test` 替換爲一個自定義的本地文件夾名稱，例如 `--dataset.repo_id=juxi/so101_test`。數據將存儲在系統主目錄下的 `~/.cache/huggingface/lerobot`\."
+- "如果你希望將數據保存在本地 (`--dataset.push_to_hub=false`)，請將 `--dataset.repo_id=${HF_USER}/so101_test` 替換爲一個自定義的本地文件夾名稱，例如 `--dataset.repo_id=juxi/so101_test`。數據將存儲在系統主目錄下的 `~/.cache/huggingface/lerobot`."
 
 - 如果你通過 `--dataset.push_to_hub=true` 將數據集上傳到了 Hugging Face Hub，可以通過 [在線可視化你的數據集](https://huggingface.co/spaces/lerobot/visualize_dataset)，只需複製粘貼你的 repo id。
 
@@ -499,7 +499,7 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 
 - 在 Linux 上，如果在數據記錄期間左右箭頭鍵和 Esc 鍵沒有效果，請確保您已設置 $DISPLAY 環境變量。參見 [pynput 限制](https://pynput.readthedocs.io/en/latest/limitations.html#linux)。
 
-如果你的鍵盤按下後沒有反應，可能你需要降低你pynput的版本，例如安裝個1\.6\.8版本的。
+如果你的鍵盤按下後沒有反應，可能你需要降低你pynput的版本，例如安裝個1.6.8版本的。
 
 `安裝`*`pynput`*`==1.6.8`
 
@@ -542,7 +542,7 @@ lerobot-replay \
 
 此時，機器人應該做出與你遙操記錄時一樣的動作。
 
-## E\. 數據集訓練及評估
+## E. 數據集訓練及評估
 
 ### ACT
 
@@ -563,7 +563,7 @@ lerobot-train \
   --steps=300000 
 ```
 
-**如果您想在本地數據集上進行訓練，請確保 ****`repo_id`**** 與數據收集時使用的名稱匹配，並添加 ****`--policy.push_to_hub=false`****。**
+**如果您想在本地數據集上進行訓練，請確保 **`repo_id`** 與數據收集時使用的名稱匹配，並添加 **`--policy.push_to_hub=false`**。**
 
 ```Python
 lerobot-train \
@@ -583,7 +583,7 @@ lerobot-train \
 
 - **訓練步數**：我們通過 `--steps=300000` 修改訓練步數，算法默認爲800000，根據自己的任務難易程度，觀察訓練時候的loss來進行調整。
 
-- **策略類型**：我們使用 `policy.type=act` 提供了策略，同樣你可以更換\[act,diffusion,pi0,pi0fast,pi0\.5,sac,smolvla\]等策略，這將從 `configuration_act.py` 加載配置。重要的是，這個策略會自動適應您機器人（例如 `laptop` 和 `phone`）的電機狀態、電機動作和攝像頭數量，這些信息已保存在您的數據集中。
+- **策略類型**：我們使用 `policy.type=act` 提供了策略，同樣你可以更換[act,diffusion,pi0,pi0fast,pi0.5,sac,smolvla]等策略，這將從 `configuration_act.py` 加載配置。重要的是，這個策略會自動適應您機器人（例如 `laptop` 和 `phone`）的電機狀態、電機動作和攝像頭數量，這些信息已保存在您的數據集中。
 
 - **設備選擇**：我們提供了 `policy.device=cuda`，因爲我們正在 Nvidia GPU 上進行訓練，但您可以使用 `policy.device=mps` 在 Apple Silicon 上進行訓練。
 
@@ -634,11 +634,11 @@ lerobot-record \
 
 1. `--policy.path` 參數，指示您的策略訓練結果權重文件的路徑（例如 `outputs/train/act_so101_test/checkpoints/last/pretrained_model`）。如果您將模型訓練結果權重文件上傳到 Hub，也可以使用模型倉庫（例如 `${HF_USER}/act_so101_test`）。
 
-2. 數據集的名稱`dataset.repo_id`以 `eval_` 開頭，這個操作會在你評估的時候爲你單獨錄製評估時候的視頻和數據，將保存在eval\_開頭的文件夾下，例如`juxi/eval_test123`。
+2. 數據集的名稱`dataset.repo_id`以 `eval_` 開頭，這個操作會在你評估的時候爲你單獨錄製評估時候的視頻和數據，將保存在eval_開頭的文件夾下，例如`juxi/eval_test123`。
 
 3. 如果評估階段遇到`File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'`請先刪除`eval_`開頭的這個文件夾再次運行程序。
 
-4. 當遇到`mean is infinity. You should either initialize with stats as an argument or use a pretrained model`請注意\-\-robot\.cameras這個參數中的front和side等關鍵詞必須和採集數據集的時候保持嚴格一致。
+4. 當遇到`mean is infinity. You should either initialize with stats as an argument or use a pretrained model`請注意--robot.cameras這個參數中的front和side等關鍵詞必須和採集數據集的時候保持嚴格一致。
 
 ### 斯莫夫拉
 
@@ -722,9 +722,9 @@ lerobot-record \
   --policy.path=outputs/pi0_training/checkpoints/last/pretrained_model
 ```
 
-### Pi0\.5
+### Pi0.5
 
-參考官方教程[Pi0\.5](https://huggingface.co/docs/lerobot/pi05)
+參考官方教程[Pi0.5](https://huggingface.co/docs/lerobot/pi05)
 
 ```Bash
 pip install -e ".[pi]"
@@ -762,27 +762,27 @@ lerobot-record \
   --policy.path=outputs/pi05_training/checkpoints/last/pretrained_model
 ```
 
-### GR00T N1\.5
+### GR00T N1.5
 
-請參考官方教程[GR00T N1\.5](https://huggingface.co/docs/lerobot/groot)
+請參考官方教程[GR00T N1.5](https://huggingface.co/docs/lerobot/groot)
 
-## F\.雲服務器訓練部署及模型導出
+## F.雲服務器訓練部署及模型導出
 
-以 AutoDL算力雲 爲例， www\.autodl\.com ，註冊登錄充值餘額
+以 AutoDL算力雲 爲例， www.autodl.com ，註冊登錄充值餘額
 
-#### **1\.點擊“算力市場”，選擇需要的顯卡，儘量選多核心**
+#### **1.點擊“算力市場”，選擇需要的顯卡，儘量選多核心**
 
 ![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/8.png)
 
-#### **2\.選擇“按量計費”，基礎鏡像選擇“Miniconda/conda3/3\.8\(ubuntu20\.04\)/11\.8”，點擊“立即創建”**
+#### **2.選擇“按量計費”，基礎鏡像選擇“Miniconda/conda3/3.8(ubuntu20.04)/11.8”，點擊“立即創建”**
 
 ![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/9.png)
 
-#### **3\.點擊“JupyterLab”進入控制界面，打開終端**
+#### **3.點擊“JupyterLab”進入控制界面，打開終端**
 
 ![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/10.png)
 
-#### **4\.初始化conda環境**
+#### **4.初始化conda環境**
 
 ```Plain Text
 conda env list
@@ -798,9 +798,9 @@ conda init
 
 ![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/11.png)
 
-#### **5\.關閉此終端，打開****新的終端****，配置學術資源加速**
+#### **5.關閉此終端，打開新的終端**
 
-參考 https://www\.autodl\.com/docs/network\_turbo/
+參考 https://www.autodl.com/docs/network_turbo/
 
 ```Plain Text
 source /etc/network_turbo
@@ -808,7 +808,7 @@ source /etc/network_turbo
 
 ![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/12.png)
 
-#### **6\.創建lerobot環境**
+#### **6.創建lerobot環境**
 
 ```PowerShell
 conda create -y -n lerobot python=3.10
@@ -822,7 +822,7 @@ conda activate lerobot
 git clone https://github.com/JuxiTechnology/lerobot.git
 ```
 
-可選擇跟隨最新版： https://github\.com/huggingface/lerobot\.git  
+可選擇跟隨最新版： https://github.com/huggingface/lerobot.git  
 
 注：最新版本的命令代碼可能不一致！
 
@@ -830,15 +830,15 @@ git clone https://github.com/JuxiTechnology/lerobot.git
 conda install ffmpeg -c conda-forge
 ```
 
-#### **7\.進入src目錄下的lerobot，安裝帶有 feetech 電機依賴的 LeRobot：**
+#### **7.進入src目錄下的lerobot，安裝帶有 feetech 電機依賴的 LeRobot：**
 
 ```PowerShell
 cd ~/lerobot && pip install -e ".[feetech]"
 ```
 
-#### **8\.數據集導入到雲服務器裏**
+#### **8.數據集導入到雲服務器裏**
 
-分爲兩種情況，一種是**數據採集 時已上傳數據集到huggingface數據庫裏，**一種是**未上傳數據集到huggingface數據庫裏，通過FileZilla上傳本地數據集到雲服務器裏。**
+分爲兩種情況，一種是**數據採集 時已上傳數據集到huggingface數據庫裏，一種是**
 
 **①若 數據採集 時已上傳數據集到huggingface數據庫裏，可通過配置huggingface數據庫得到的key獲取**
 
@@ -862,7 +862,7 @@ echo $HF_USER
 export HYDRA_FULL_ERROR=1
 ```
 
-**②通過FileZilla上傳本地數據集，參考** https://www\.autodl\.com/docs/filezilla/
+**②通過FileZilla上傳本地數據集，參考** https://www.autodl.com/docs/filezilla/
 
 Linux最簡單的安裝方式：
 
@@ -900,25 +900,25 @@ filezilla
 
 ![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/23.png)
 
-#### 9\.數據集訓練
+#### 9.數據集訓練
 
-參考本教程的 [E\.數據集訓練及評估](https://juxitech.feishu.cn/docx/QdDydq66zoqeHWxRSk8cAKHynue#doxcnxPAaGMZNAXH0fIR5OFkgRf)，在雲服務器中運行訓練命令
+參考本教程的 [E.數據集訓練及評估](https://juxitech.feishu.cn/docx/QdDydq66zoqeHWxRSk8cAKHynue#doxcnxPAaGMZNAXH0fIR5OFkgRf)，在雲服務器中運行訓練命令
 
-#### 10\.模型文件導出
+#### 10.模型文件導出
 
 訓練完成後，將對應train目錄下的訓練模型導出
 
 ![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/24.png)
 
-## G\. 常見問題
+## G. 常見問題
 
-如果使用本文檔教程，請git clone本文檔推薦的github倉庫 https://github\.com/JuxiTechnology/lerobot\.git
+如果使用本文檔教程，請git clone本文檔推薦的github倉庫 https://github.com/JuxiTechnology/lerobot.git
 
 本文檔推薦的倉庫是驗證過後的穩定版本，Lerobot官方倉庫是實時更新的最新版本，會出現一些無法預知的問題，例如數據集版本不同，指令不同等。
 
 - [若使用RealSense深度相機，可自行參考並修改運行命令](https://juxitech.feishu.cn/docx/QdDydq66zoqeHWxRSk8cAKHynue#doxcnICJPiA21VEwYP58k5CjB5b)
 
-- 在Jetson設備中，運行評估命令後未設置回合數和回合時間只能通過ctrl\+z中斷進程會導致機械臂和相機斷連，重連後所有端口都改變
+- 在Jetson設備中，運行評估命令後未設置回合數和回合時間只能通過ctrl+z中斷進程會導致機械臂和相機斷連，重連後所有端口都改變
 
 在命令中加入評估的回合數和回合時長的參數
 
@@ -957,7 +957,7 @@ lerobot-record \
 Could not connect on port "/dev/ttyACM0"
 ```
 
-並且通過`ls /dev/ttyACM*`看到是有ACM0存在的，則是忘記給串口權限了，終端輸入`sudo chmod 666 /dev/ttyACM*` 即可\`
+並且通過`ls /dev/ttyACM*`看到是有ACM0存在的，則是忘記給串口權限了，終端輸入`sudo chmod 666 /dev/ttyACM*` 即可`
 
 - 如果遇到
 
@@ -965,7 +965,7 @@ Could not connect on port "/dev/ttyACM0"
 No valid stream found in input file. Is -1 of the desired media type?
 ```
 
-請安裝ffmpeg7\.1\.1，`conda install ffmpeg=7.1.1-c conda-forge`。
+請安裝ffmpeg7.1.1，`conda install ffmpeg=7.1.1-c conda-forge`。
 
 ![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/25.png)
 
@@ -999,15 +999,15 @@ File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'
 `mean` is infinity. You should either initialize with `stats` as an argument or use a pretrained model
 ```
 
-請注意\-\-robot\.cameras這個參數中的front和side等關鍵詞必須和採集數據集的時候保持嚴格一致。
+請注意--robot.cameras這個參數中的front和side等關鍵詞必須和採集數據集的時候保持嚴格一致。
 
 - 如果你維修或者更換過機械臂零件，請完全刪除`~/.cache/huggingface/lerobot/calibration/robots`或者`~/.cache/huggingface/lerobot/calibration/teleoperators`下的文件並重新校準機械臂，否者會出現報錯提示，校準的機械臂信息會存儲該目錄下的json文件中。
 
-- 在3060的8G筆記本上訓練ACT的50組數據的時間大概爲6小時，在4090和A100的電腦上訓練50組數據時間大概爲2\~3小時。
+- 在3060的8G筆記本上訓練ACT的50組數據的時間大概爲6小時，在4090和A100的電腦上訓練50組數據時間大概爲2~3小時。
 
 - 數據採集過程中要確保攝像頭位置和角度和環境光線的穩定，並且減少攝像頭採集到過多的不穩定背景和行人，否則部署的環境變化過大會導致機械臂無法正常抓取。
 
-- 數據採集命令的num\-episodes要確保採集數據足夠，不可中途手動暫停，因爲在數據採集結束後纔會計算數據的均值和方差，這在訓練中是必要的數據。
+- 數據採集命令的num-episodes要確保採集數據足夠，不可中途手動暫停，因爲在數據採集結束後纔會計算數據的均值和方差，這在訓練中是必要的數據。
 
 - 如果程序提示無法讀取USB攝像頭圖像數據，請確保USB攝像頭不是接在Hub上的，USB攝像頭必須直接接入設備，確保圖像傳輸速率快。
 
@@ -1015,9 +1015,9 @@ File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'
 
 ## Windows查找舵機（飛特舵機上位機調試軟件）
 
-爲了進行調試，任何 Windows PC 都可以通過 USB 連接來對舵機進行編程、調試或測試。爲此，請下載[Feetech 軟件](https://www.feetechrc.com/software.html)。對於 Ubuntu 系統，您可以使用[FT\_SCServo\_Debug\_Qt 工具](https://github.com/Kotakku/FT_SCServo_Debug_Qt)。
+爲了進行調試，任何 Windows PC 都可以通過 USB 連接來對舵機進行編程、調試或測試。爲此，請下載[Feetech 軟件](https://www.feetechrc.com/software.html)。對於 Ubuntu 系統，您可以使用[FT_SCServo_Debug_Qt 工具](https://github.com/Kotakku/FT_SCServo_Debug_Qt)。
 
-\[fddebug\-master\.zip\]
+[fddebug-master.zip]
 
 選擇端口號，波特率選1000000，打開，並點擊“搜索”
 
@@ -1029,19 +1029,19 @@ File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'
 
 ## ROS2 仿真控制（可自行實現）
 
-https://github\.com/holmsslk/so\-arm\-moveit\-hardware
+https://github.com/holmsslk/so-arm-moveit-hardware
 
 
 
 ## 網頁端設置舵機ID和中位校準
 
-https://bambot\.org/feetech\.js?lang=zh
+https://bambot.org/feetech.js?lang=zh
 
 1、根據舵機型號輸入0或1，點擊“連接”
 
 ![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/27.png)
 
-2、掃描ID 1\~6 的舵機，可以根據掃描結果裏的FOUND確認對應ID舵機。例如圖片裏舵機 ID 1 被掃描到了
+2、掃描ID 1~6 的舵機，可以根據掃描結果裏的FOUND確認對應ID舵機。例如圖片裏舵機 ID 1 被掃描到了
 
 ![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/28.png)
 
