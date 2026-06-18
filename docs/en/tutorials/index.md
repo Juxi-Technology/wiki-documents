@@ -25,6 +25,9 @@ Welcome to the Tutorials page! Here, you can find all product usage tutorials, c
   - [AmazingHand-Official-Example](./robot-arms/amazing-hand/AmazingHand-Official-Example)
   - [AmazingHand-TTL-Debugging](./robot-arms/amazing-hand/AmazingHand-TTL-Debugging)
   - [AmazingHand-Interface-Control](./robot-arms/amazing-hand/AmazingHand-Interface-Control)
+- **Lekiwi**
+  - [Lekiwi-Tutorial](./robot-arms/lekiwi/Lekiwi-Tutorial)
+  - [Lekiwi-Assembly](./robot-arms/lekiwi/Lekiwi-Assembly)
 
 ### Robot Accessories
 - [Robot Accessories](./accessories/)

@@ -58,15 +58,24 @@ export default defineConfig({
                                         ]
                                     },
                                     {
-                                        text: 'AmazingHand',
-                                        collapsible: true,
-                                        collapsed: false,
-                                        items: [
-                                            { text: 'AmazingHand-官方示例运行教程', link: '/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example' },
-                                            { text: 'AmazingHand-TTL调试教程', link: '/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging' },
-                                            { text: 'AmazingHand-界面控制教程', link: '/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control' }
-                                        ]
-                                    }
+                        text: 'AmazingHand',
+                        collapsible: true,
+                        collapsed: false,
+                        items: [
+                            { text: 'AmazingHand-官方示例运行教程', link: '/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example' },
+                            { text: 'AmazingHand-TTL调试教程', link: '/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging' },
+                            { text: 'AmazingHand-界面控制教程', link: '/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control' }
+                        ]
+                    },
+                    {
+                        text: 'Lekiwi',
+                        collapsible: true,
+                        collapsed: false,
+                        items: [
+                            { text: 'Lekiwi-使用教程', link: '/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial' },
+                            { text: 'Lekiwi-组装教程', link: '/tutorials/robot-arms/lekiwi/Lekiwi-Assembly' }
+                        ]
+                    }
                                 ]
                             },
                             {
@@ -278,6 +287,15 @@ export default defineConfig({
                         { text: 'AmazingHand-TTL-Debugging', link: '/en/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging' },
                         { text: 'AmazingHand-Interface-Control', link: '/en/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control' }
                       ]
+                    },
+                    {
+                      text: 'Lekiwi',
+                      collapsible: true,
+                      collapsed: false,
+                      items: [
+                        { text: 'Lekiwi-Tutorial', link: '/en/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial' },
+                        { text: 'Lekiwi-Assembly', link: '/en/tutorials/robot-arms/lekiwi/Lekiwi-Assembly' }
+                      ]
                     }
                   ]
                 },
@@ -486,6 +504,15 @@ export default defineConfig({
                         { text: 'AmazingHand-官方示例運行教程', link: '/zh-HK/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example' },
                         { text: 'AmazingHand-TTL調試教程', link: '/zh-HK/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging' },
                         { text: 'AmazingHand-界面控制教程', link: '/zh-HK/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control' }
+                      ]
+                    },
+                    {
+                      text: 'Lekiwi',
+                      collapsible: true,
+                      collapsed: false,
+                      items: [
+                        { text: 'Lekiwi-使用教程', link: '/zh-HK/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial' },
+                        { text: 'Lekiwi-組裝教程', link: '/zh-HK/tutorials/robot-arms/lekiwi/Lekiwi-Assembly' }
                       ]
                     }
                   ]

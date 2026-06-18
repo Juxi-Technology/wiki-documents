@@ -12,7 +12,7 @@
 ls /dev/ttyUSB*
 ```
 
-![](/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/1.png)
+![](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/1.png)
 
 ## 2.代碼實現
 
@@ -147,7 +147,7 @@ if __name__ == "__main__":
 
 其中第一第二個字節AA 55表示的是協議的幀頭，第三個字節00表示的是播報功能，第四個就是播報內容 的ID，這裏能看到“小車前進”是16進制的07，所以程序裏給寄存器0x03發送0x07即可播報對應內容。 第五個字節是結束幀。 
 
-![](/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/2.png)
+![](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/2.png)
 
 終端輸入以下指令運行程序
 
@@ -159,11 +159,11 @@ python3 -m speech_serial
 
 說“關燈”，控制檯會回覆接收Read_ID：13
 
-![](/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/3.png)
+![](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/3.png)
 
 這時候可以打開附件的 命令詞播報詞協議列表V1_中文文件 查看“關燈”的協議 
 
-![](/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/4.png)
+![](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/4.png)
 
 其中第一第二個字節AA 55表示的是協議的幀頭，第三個字節表示的是芯片的十個功能詞的ID，第四個就 是命令詞的ID，這裏能看到“關燈”是16進制的0D，十進制是13。第五個字節是結束幀。
 

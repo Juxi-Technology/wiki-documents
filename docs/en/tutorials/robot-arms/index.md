@@ -26,6 +26,13 @@ Open-source bionic dexterous hand, providing high-precision multi-finger operati
 - [AmazingHand Official Example](./amazing-hand/AmazingHand-Official-Example.md)
 - [AmazingHand TTL Debugging](./amazing-hand/AmazingHand-TTL-Debugging.md)
 
+### Lekiwi
+
+Fully open-source mobile robot cart, compatible with LeRobot imitation learning framework, supporting SO101 arm.
+
+- [Lekiwi Tutorial](./lekiwi/Lekiwi-Tutorial.md)
+- [Lekiwi Assembly Guide](./lekiwi/Lekiwi-Assembly.md)
+
 ---
 
 ## Technical Support

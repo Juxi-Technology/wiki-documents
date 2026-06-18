@@ -43,25 +43,25 @@ speaker-test -c 2 -D plughw:X,0
 
 1. 在插入USB声卡之前，我们使用 `lsusb` 命令查看一下USB设备：
 
-![](/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
+![](../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
 
 2. 然后把USB声卡插上，再使用 `lsusb` 查看一下，可以看到，多出来的那个就是USB声卡：
 
-![](/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
+![](../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
 
 3. 然后使用 `arecord -l` 可以列出所有录音设备，可以看到，我们的USB声卡设备
 
-![](/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
+![](../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
 
 4. 使用 `aplay -l` 可以列出所有播放设备
 
-![](/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
+![](../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
 ### 二、USB声卡使用
 
 `arecord -l`，例如这里显示UACDemoV1.0即是我们的声卡，card 0；device 0，在命令中修改为plughw:0,0指定该录音设备
 
-![](/images/tutorials/accessories/usb-audio-card-tutorial/4.png)
+![](../../public/images/tutorials/accessories/usb-audio-card-tutorial/4.png)
 
 接执行Linux自带的录音命令，录制一段5秒的声音进行测试
 
@@ -80,11 +80,11 @@ speaker-test -c 2 -D plughw:X,0
 
 如果声音过小，输入命令 `alsamixer`，来对音量进行调整，按下`F6`，选择USB声卡，
 
-![](/images/tutorials/accessories/usb-audio-card-tutorial/5.png)
+![](../../public/images/tutorials/accessories/usb-audio-card-tutorial/5.png)
 
 然后按下`F5`，将录音和播音设备都展示出来，我们将录音的音量按上键调高，PCM是播放，CAPTURE MIC是录音
 
-![](/images/tutorials/accessories/usb-audio-card-tutorial/6.png)
+![](../../public/images/tutorials/accessories/usb-audio-card-tutorial/6.png)
 
 然后使用`aplay`命令来播放
 
@@ -104,13 +104,13 @@ speaker-test -c 2 -D plughw:X,0
 
 ## PulseAudio 可视化窗口查看
 
-![](/images/tutorials/accessories/usb-audio-card-tutorial/7.png)
+![](../../public/images/tutorials/accessories/usb-audio-card-tutorial/7.png)
 
 通过PulseAudio，[命令行](https://so.csdn.net/so/search?q=%E5%91%BD%E4%BB%A4%E8%A1%8C&amp;spm=1001.2101.3001.7020)方式查看
 
 `pactl list sources short`            # 列出当前 PulseAudio 音频服务器中所有可用的音频源
 
-![](/images/tutorials/accessories/usb-audio-card-tutorial/8.png)
+![](../../public/images/tutorials/accessories/usb-audio-card-tutorial/8.png)
 
 &gt; 49 代表源索引
 &gt;
@@ -138,7 +138,7 @@ speaker-test -c 2 -D plughw:X,0
 
 1. 设备被占用问题
 
-![](/images/tutorials/accessories/usb-audio-card-tutorial/9.png)
+![](../../public/images/tutorials/accessories/usb-audio-card-tutorial/9.png)
 
 关闭设置页面，重新运行命令
 
@@ -150,11 +150,11 @@ speaker-test -c 2 -D plughw:X,0
 
 插上声卡前
 
-![](/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
+![](../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
 
 插上声卡后
 
-![](/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
+![](../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
 
 杀死进程 `kill -9 PID`，PID为插上声卡后出现的PID，截图里是33739
 
@@ -243,11 +243,11 @@ by-path/   controlC0  pcmC0D0c   pcmC0D0p   timer
 
 如果声音过小，输入命令 `alsamixer`，来对音量进行调整，按下`F6`，选择USB声卡，
 
-![](/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
+![](../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
 
 然后按下`F5`，将录音和播音设备都展示出来，我们将录音的音量按上键调高，PCM是播放，CAPTURE MIC是录音
 
-![](/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
+![](../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
 然后使用`aplay`命令来播放
 

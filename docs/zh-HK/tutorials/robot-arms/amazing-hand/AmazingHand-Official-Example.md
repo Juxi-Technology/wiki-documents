@@ -26,9 +26,9 @@ windows端 Rust環境變量設置（重點！） 參考 https://zhuanlan.zhihu.c
 
 Linux端環境變量設置：
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/1.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/1.png)
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/10.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/10.png)
 
 首次安裝可能需要Visual Studio Installer
 
@@ -46,25 +46,25 @@ registry = "https://mirrors.tuna.tsinghua.edu.cn/git/crates.io-index.git"
 
 **2、安裝 uv：** [https://docs.astral.sh/uv/getting-started/installation/](https://docs.astral.sh/uv/getting-started/installation/)
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/11.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/11.png)
 
 windows端打開Powershell終端，複製後輸入此命令進行安裝
 
 **Linux端**環境變量設置：
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/12.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/12.png)
 
 **3、安裝 dora-rs：**請參考 [https://dora-rs.ai/docs/guides/Installation/installing](https://dora-rs.ai/docs/guides/Installation/installing) 下載安裝
 
 linux端環境變量設置：
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/13.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/13.png)
 
 ## 3.接線方式
 
 電源要求至少5V3A，外接 舵機驅動板，通過USB連接到電腦端
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/14.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/14.png)
 
 ## 4.示例演示
 
@@ -72,7 +72,7 @@ linux端環境變量設置：
 
 - windows系統一般爲COM11，可通過 設備管理器 或者 飛特舵機上位機 找到 舵機驅動板 的端口號
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/16.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/16.png)
 
 - Ubuntu、Linux系統一般爲/dev/ttyACM0
 
@@ -92,13 +92,13 @@ sudo usermod -aG dialout $USER
 
 若是在虛擬機裏 ls /dev/ttyUSB\* /dev/ttyACM\* 找不到目錄，請檢查虛擬機右下角是否將靈巧手連接到電腦，若是，請選擇斷開，並連接到虛擬機裏
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
 
 ### **2、修改代碼中的端口號**
 
 ①找到AmazingHand-main\\Demo\\AHControl\\src目錄下的main.rs代碼文件，文本打開，修改爲自身主機查找到的端口號（windows爲COM\*，ubuntu、linux系統一般爲/dev/ttyACM\*）
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/19.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/19.png)
 
 ②找到對應的實例文件
 
@@ -110,11 +110,11 @@ sudo usermod -aG dialout $USER
 
 文本格式打開，修改爲自身主機查找到的端口號（windows爲COM\*，ubuntu、linux系統一般爲/dev/ttyACM\*）
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/2.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/2.png)
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/21.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/21.png)
 
 ### **3、代碼部署**
 
@@ -146,7 +146,7 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 source .venv/bin/activate
 ```
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/3.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/3.png)
 
 確保控制檯已經激活虛擬環境！
 
@@ -218,9 +218,9 @@ dora build dataflow_tracking_simu.yml --uv   *#（只需执行一次）*
 dora run dataflow_tracking_simu.yml --uv
 ```
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/4.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/4.png)
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/5.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/5.png)
 
 ### 真實硬件運行（手部追蹤）
 
@@ -248,7 +248,7 @@ dora run dataflow_tracking_simu.yml --uv
 
     #### 雙靈巧手（注意都連接到一個舵機驅動板上）
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/6.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/6.png)
 
     ```Plain Text
     dora build dataflow_tracking_real_2hands.yml --uv   *#（只需执行一次）*
@@ -258,9 +258,9 @@ dora run dataflow_tracking_simu.yml --uv
     dora run dataflow_tracking_real_2hands.yml --uv
     ```
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/7.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/7.png)
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/8.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/8.png)
 
 ### 簡單示例控制仿真手指角度
 
@@ -274,9 +274,9 @@ dora run dataflow_tracking_simu.yml --uv
     dora run dataflow_angle_simu.yml --uv
     ```
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/9.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/9.png)
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/1.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/1.png)
 
 描述說明
 
@@ -304,7 +304,7 @@ uv pip install mediapipe==0.10.14
 
 ### 2、Dora 版本不兼容，消息格式（v0.7.0 vs v0.8.0）
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/10.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/10.png)
 
 答：①先在C盤用戶目錄下的.cargo/registry/src/github.xxxxxxxx/ 下只刪除對應的依賴包!
 
@@ -330,13 +330,13 @@ uv pip install mediapipe==0.10.14
 
 根據實際報錯情況修改對應的版本，例如dora-message需要0.6.0的，修改成dora-node-api="0.4.0" dora-message="0.6.0"
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/11.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/11.png)
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/12.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/12.png)
 
 ### 3、沒有openCV依賴庫
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/13.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/13.png)
 
 在HandTracking目錄下輸入以下命令
 
@@ -346,11 +346,11 @@ python -m pip install opencv-contrib-python numpy mediapipe -i https://mirrors.a
 
 ### 4、相機權限開啓（電腦端）
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/14.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/14.png)
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/16.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/16.png)
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
 
 ### 5、虛擬機22.04調用攝像頭
 
@@ -362,11 +362,11 @@ python -m pip install opencv-contrib-python numpy mediapipe -i https://mirrors.a
 
 1.先固定微調角度支架
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/19.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/19.png)
 
 2.側視環境相機套件
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/2.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/2.png)
 
 
 
@@ -418,7 +418,7 @@ sudo usermod -aG dialout $USER
 
 ①找到AmazingHand-main\\Demo\\AHControl\\src目錄下的main.rs代碼文件，文本打開，修改爲自身主機查找到的端口號（windows爲COM\*，ubuntu、linux系統一般爲/dev/ttyACM\*）
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
 
 ②找到對應的實例文件
 
@@ -430,11 +430,11 @@ sudo usermod -aG dialout $USER
 
 文本格式打開，修改爲自身主機查找到的端口號（windows爲COM\*，ubuntu、linux系統一般爲/dev/ttyACM\*）
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/21.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/21.png)
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/3.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/3.png)
 
-![](/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/4.png)
+![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/4.png)
 
 **5.運行 右手 手部追蹤**
 

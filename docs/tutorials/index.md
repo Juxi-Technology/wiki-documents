@@ -25,6 +25,9 @@ head:
   - [AmazingHand-官方示例运行教程](./robot-arms/amazing-hand/AmazingHand-Official-Example)
   - [AmazingHand-TTL调试教程](./robot-arms/amazing-hand/AmazingHand-TTL-Debugging)
   - [AmazingHand-界面控制教程](./robot-arms/amazing-hand/AmazingHand-Interface-Control)
+- **Lekiwi**
+  - [Lekiwi-使用教程](./robot-arms/lekiwi/Lekiwi-Tutorial)
+  - [Lekiwi-组装教程](./robot-arms/lekiwi/Lekiwi-Assembly)
 
 ### 机器人配件
 - [机器人配件](./accessories/)

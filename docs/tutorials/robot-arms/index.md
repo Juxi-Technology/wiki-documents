@@ -26,6 +26,13 @@ title: 机器人机械臂系列
 - [AmazingHand 官方示例](./amazing-hand/AmazingHand-Official-Example.md)
 - [AmazingHand TTL调试](./amazing-hand/AmazingHand-TTL-Debugging.md)
 
+### Lekiwi
+
+完全开源的移动机器人小车，与 LeRobot 模仿学习框架兼容，支持 SO101 机械臂。
+
+- [Lekiwi 使用教程](./lekiwi/Lekiwi-Tutorial.md)
+- [Lekiwi 组装教程](./lekiwi/Lekiwi-Assembly.md)
+
 ---
 
 ## 技术支持
