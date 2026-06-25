@@ -6,6 +6,9 @@ export default defineConfig({
   description: '钜犀科技 产品教程与文档',
   base: '/',
   ignoreDeadLinks: true,
+  head: [
+    ['meta', { name: 'baidu-site-verification', content: 'codeva-Lzl2d4xzcv' }]
+  ],
   
   themeConfig: {
     search: {
