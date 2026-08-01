@@ -1,0 +1,55 @@
+/* ============================================
+   钜犀科技 Wiki 主题样式
+   品牌色 + 导航/侧边栏修复 + Logo 尺寸
+   ============================================ */
+
+/* ---- 品牌辅助色 ---- */
+:root {
+  --vp-c-brand-soft: rgba(16, 185, 129, 0.08);
+  --vp-c-brand-mute: rgba(16, 185, 129, 0.16);
+  /* 导航栏高度:默认 64px 调整为更紧凑的 56px */
+  --vp-nav-height: 56px;
+}
+
+/* ---- 导航/侧边栏背景统一使用 CSS 变量(适配暗色模式) ---- */
+.VPSidebar {
+  background-color: var(--vp-c-bg) !important;
+}
+
+.dark .VPSidebar {
+  background-color: var(--vp-c-bg) !important;
+}
+
+.VPNav {
+  background-color: var(--vp-c-bg) !important;
+}
+
+.dark .VPNav {
+  background-color: var(--vp-c-bg) !important;
+}
+
+/* ---- 侧边栏分组间距(呼吸感) ---- */
+.VPSidebarGroup + .VPSidebarGroup {
+  margin-top: 16px;
+}
+
+.VPSidebarItem .VPSidebarItem {
+  margin: 2px 0;
+}
+
+.VPSidebarItem .text {
+  line-height: 1.6;
+}
+
+/* ---- Logo 尺寸(原 docs/public/style.css,移入主题统一管理) ---- */
+.VPNavBar .logo {
+  height: 36px;
+  width: auto;
+  max-height: 36px;
+}
+
+.VPNavBar .logo img {
+  height: 36px;
+  width: auto;
+  max-height: 36px;
+}
