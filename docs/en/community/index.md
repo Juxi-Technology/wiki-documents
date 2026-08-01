@@ -1,4 +1,3 @@
-
 ---
 title: Contributor Community
 description: Join Juxi Technology Contributor Community
@@ -18,110 +17,98 @@ Welcome to join the Juxi Technology Contributor Community! We warmly invite pass
 
 ---
 
+## Community Channels
+
+| Channel | Purpose | Link |
+|---------|---------|------|
+| 💬 GitHub Issues | Questions, discussions, bug reports | [github.com/Juxi-Technology/wiki-documents/issues](https://github.com/Juxi-Technology/wiki-documents/issues) |
+| 📧 Email | Technical support & business | [support@juxitech.com](mailto:support@juxitech.com) |
+| 🛒 Store | Buy products | [www.juxitech.com](https://www.juxitech.com) |
+| 📚 Feishu Wiki | Open-source resources (schematics/firmware/CAD) | [juxitech.feishu.cn](https://juxitech.feishu.cn) |
+| 💬 Instant Messaging | Discord/WeChat/QQ group | Coming soon |
+
+> 💡 Instant messaging communities (Discord/WeChat/QQ) are in preparation — we'll announce them here as soon as they're open.
+
+---
+
 ## How to Contribute
 
 ### 1. Write Tutorials
 
-Share your experience using SO-ARM101 and write tutorials to help others.
+Share your SO-ARM101 experience by writing tutorials to help others.
 
-**How to get started:**
-- Choose a topic (application scenarios, technical analysis, etc.)
-- Refer to our [tutorial template](/tutorials/so-arm101/template-tutorial)
+**Getting started:**
+- Pick a topic (application scenarios, technical deep-dives, etc.)
+- Follow the existing tutorial structure
 - Submit a Pull Request
 
 ### 2. Translate Documentation
 
-Help us translate documentation into more languages to benefit more users.
+Help us translate docs into more languages so more users benefit.
 
-**Existing languages:**
-- Simplified Chinese
-- English
-- Traditional Chinese
-
-**Translation Guide:** [How to Participate in Translation](/community/translation-guide)
+**Current languages:** Simplified Chinese / English / Traditional Chinese
 
 ### 3. Submit Cases
 
-Share your use cases and showcase your project achievements.
-
-**Case types:**
-- Educational applications
-- Research projects
-- Commercial applications
+Share your use cases and showcase your project results. See the [Success Stories page](/en/cases/).
 
 ### 4. Report Issues
 
-Found a bug or have improvement suggestions? Submit an Issue to help us improve.
+Found a bug or have a suggestion? Submit an Issue to help us improve.
 
 ### 5. Code Contributions
 
-Contribute code to related open source projects, including LeRobot and others.
+Contribute code to related open-source projects, including LeRobot.
 
 ---
 
-## Contributor Honor Roll
+## Contributor Wall
 
-Thank you for the support from the following contributors!
+Thank you to all our contributors!
 
-&lt;div class="contributors-grid"&gt;
-  &lt;div class="contributor-card"&gt;
-    &lt;div class="avatar"&gt;👤&lt;/div&gt;
-    &lt;h4&gt;Contributor A&lt;/h4&gt;
-    &lt;p&gt;Wrote the visual grasping tutorial&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class="contributor-card"&gt;
-    &lt;div class="avatar"&gt;👤&lt;/div&gt;
-    &lt;h4&gt;Contributor B&lt;/h4&gt;
-    &lt;p&gt;Translated English documentation&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class="contributor-card"&gt;
-    &lt;div class="avatar"&gt;👤&lt;/div&gt;
-    &lt;h4&gt;Contributor C&lt;/h4&gt;
-    &lt;p&gt;Submitted teaching cases&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+<div class="contributors-grid">
+  <div class="contributor-card">
+    <div class="avatar">👤</div>
+    <h4>TBD</h4>
+    <p>We are collecting the contributor list</p>
+  </div>
+</div>
 
 ---
 
-## Current Tasks Needing Help
+## Open Tasks
 
 | Task Type | Description | Difficulty |
 |---|---|---|
-| 📝 Tutorial Writing | Write SO-ARM101 sorting task tutorial | ⭐⭐ |
-| 🌐 Documentation Translation | Translate core tutorials into English | ⭐ |
-| 📚 Case Collection | Collect user use cases | ⭐ |
-| 🔧 Technical Analysis | In-depth analysis of ACT algorithm | ⭐⭐⭐ |
+| 📝 Tutorial writing | Write SO-ARM101 sorting task tutorial | ⭐⭐ |
+| 🌐 Translation | Translate core tutorials to English | ⭐ |
+| 📚 Case collection | Collect user cases | ⭐ |
+| 🔧 Technical deep-dive | Analyze ACT algorithm | ⭐⭐⭐ |
 
-For more tasks, please visit: [GitHub Task Board](https://github.com/orgs/Juxi-Technology/projects/)
-
----
-
-## Contribution Guide
-
-### First Contribution?
-
-Don't worry! We have prepared a detailed contribution guide to help you get started:
-
-1. [How to Submit a Pull Request](/community/pr-guide)
-2. [Markdown Writing Guidelines](/community/markdown-guide)
-3. [Tutorial Writing Tips](/community/tutorial-tips)
-
-### Contact Information
-
-- 💬 GitHub Issues: [Discussion Area](https://github.com/Juxi-Technology/wiki-documents/issues)
-- 📧 Email: community@juxitech.com
-- 💬 Discord: [Join Our Community](https://discord.gg/...)
+More tasks: [GitHub Project Board](https://github.com/orgs/Juxi-Technology/projects/)
 
 ---
 
-## Technical Support and Product Discussion
+## Contributing Guide
 
-Thank you for choosing our products! We offer multiple support channels to ensure your experience is as smooth as possible.
+### First-time contributor?
+
+Check out our detailed [Contributing Guide](/en/community/contributing) to get started.
+
+### Contact
+
+- 💬 GitHub Issues: [Discussions](https://github.com/Juxi-Technology/wiki-documents/issues)
+- 📧 Email: support@juxitech.com
+- 📧 Community: pe@juxitech.com
+
+---
+
+## Technical Support
 
 - 📧 Email: support@juxitech.com
-- 💬 GitHub Issues: [Issue Feedback](https://github.com/Juxi-Technology/wiki-documents/issues)
+- 💬 GitHub Issues: [Feedback](https://github.com/Juxi-Technology/wiki-documents/issues)
 
-&lt;style&gt;
+<style>
 .contributors-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -150,5 +137,4 @@ Thank you for choosing our products! We offer multiple support channels to ensur
   color: #666;
   font-size: 14px;
 }
-&lt;/style&gt;
-
+</style>

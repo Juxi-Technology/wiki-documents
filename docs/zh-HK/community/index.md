@@ -13,7 +13,21 @@ description: 加入鉅犀科技貢獻者社區
 
 | 提升影響力 | 技術成長 | 社區人脈 |
 |---|---|---|
-| 你的貢獻將幫助全球用戶學習機器人技術 | 與核心團隊交流，獲得技術指導和回饋 | 結識志同道合的朋友，拓展專業人脈 |
+| 你的貢獻將幫助全球用戶學習機器人技術 | 與核心團隊交流，獲得技術指導和反饋 | 結識志同道合的朋友，拓展專業人脈 |
+
+---
+
+## 社區渠道
+
+| 渠道 | 用途 | 入口 |
+|------|------|------|
+| 💬 GitHub Issues | 提問、討論、報告問題 | [github.com/Juxi-Technology/wiki-documents/issues](https://github.com/Juxi-Technology/wiki-documents/issues) |
+| 📧 郵箱 | 技術支持與商務 | [support@juxitech.com](mailto:support@juxitech.com) |
+| 🛒 商城 | 購買產品 | [www.juxitech.com](https://www.juxitech.com) |
+| 📚 Feishu Wiki | 開源資料(原理圖/固件/CAD) | [juxitech.feishu.cn](https://juxitech.feishu.cn) |
+| 💬 即時社群 | QQ 群/微信群/Discord | 即將開放 |
+
+> 💡 即時社群(QQ 群/微信群/Discord)正在籌備中,開放後第一時間在此公佈。
 
 ---
 
@@ -21,40 +35,30 @@ description: 加入鉅犀科技貢獻者社區
 
 ### 1. 撰寫教程
 
-分享你使用 SO-ARM101 的經驗，撰寫教程幫助他人。
+分享你使用 SO-ARM101 的經驗,撰寫教程幫助他人。
 
 **如何開始：**
-- 選擇一個主題（應用場景、技術解析等）
-- 參考我們的[教程模板](/zh-HK/tutorials/so-arm101/template-tutorial)
+- 選擇一個主題(應用場景、技術解析等)
+- 參照現有教程結構編寫
 - 提交 Pull Request
 
-### 2. 翻譯文件
+### 2. 翻譯文檔
 
-幫助我們將文件翻譯成更多語言，讓更多用戶受益。
+幫助我們將文檔翻譯成更多語言,讓更多用戶受益。
 
-**現有語言：**
-- 簡體中文
-- 英文
-- 繁體中文
-
-**翻譯指南：** [如何參與翻譯](/zh-HK/community/translation-guide)
+**現有語言：** 簡體中文 / 英文 / 繁體中文
 
 ### 3. 提交案例
 
-分享你的使用案例，展示你的專案成果。
-
-**案例類型：**
-- 教育應用
-- 研究專案
-- 商業應用
+分享你的使用案例,展示你的項目成果。參考[成功案例頁](/zh-HK/cases/)。
 
 ### 4. 報告問題
 
 發現 Bug 或有改進建議？提交 Issue 幫助我們改進。
 
-### 5. 程式碼貢獻
+### 5. 代碼貢獻
 
-對相關開源專案的程式碼貢獻，包括 LeRobot 等。
+對相關開源項目的代碼貢獻,包括 LeRobot 等。
 
 ---
 
@@ -65,18 +69,8 @@ description: 加入鉅犀科技貢獻者社區
 <div class="contributors-grid">
   <div class="contributor-card">
     <div class="avatar">👤</div>
-    <h4>貢獻者 A</h4>
-    <p>撰寫了視覺抓取教程</p>
-  </div>
-  <div class="contributor-card">
-    <div class="avatar">👤</div>
-    <h4>貢獻者 B</h4>
-    <p>翻譯了英文文件</p>
-  </div>
-  <div class="contributor-card">
-    <div class="avatar">👤</div>
-    <h4>貢獻者 C</h4>
-    <p>提交了教學案例</p>
+    <h4>待公佈</h4>
+    <p>我們正在收集貢獻者名單</p>
   </div>
 </div>
 
@@ -87,9 +81,9 @@ description: 加入鉅犀科技貢獻者社區
 | 任務類型 | 描述 | 難度 |
 |---|---|---|
 | 📝 教程撰寫 | 撰寫 SO-ARM101 分揀任務教程 | ⭐⭐ |
-| 🌐 文件翻譯 | 將核心教程翻譯成英文 | ⭐ |
+| 🌐 文檔翻譯 | 將核心教程翻譯成英文 | ⭐ |
 | 📚 案例收集 | 收集用戶使用案例 | ⭐ |
-| 🔧 技術解析 | 深入解析 ACT 演算法 | ⭐⭐⭐ |
+| 🔧 技術解析 | 深入解析 ACT 算法 | ⭐⭐⭐ |
 
 更多任務請查看：[GitHub 任務看板](https://github.com/orgs/Juxi-Technology/projects/)
 
@@ -99,28 +93,22 @@ description: 加入鉅犀科技貢獻者社區
 
 ### 第一次貢獻？
 
-別擔心！我們準備了詳細的貢獻指南幫助你開始：
+我們準備了詳細的[貢獻指南](/zh-HK/community/contributing)幫助你開始。
 
-1. [如何提交 Pull Request](/zh-HK/community/pr-guide)
-2. [Markdown 寫作規範](/zh-HK/community/markdown-guide)
-3. [教程寫作建議](/zh-HK/community/tutorial-tips)
-
-### 聯絡方式
+### 聯繫方式
 
 - 💬 GitHub Issues：[討論區](https://github.com/Juxi-Technology/wiki-documents/issues)
-- 📧 郵箱：community@juxitech.com
-- 💬 Discord：[加入我們的社群](https://discord.gg/...)
+- 📧 郵箱：support@juxitech.com
+- 📧 社區：pe@juxitech.com
 
 ---
 
-## 技術支援與產品討論
-
-感謝您選擇我們的產品！我們提供多種支援方式，以確保您的使用體驗盡可能順暢。
+## 技術支持
 
 - 📧 郵箱：support@juxitech.com
-- 💬 GitHub Issues：[問題回饋](https://github.com/Juxi-Technology/wiki-documents/issues)
+- 💬 GitHub Issues：[問題反饋](https://github.com/Juxi-Technology/wiki-documents/issues)
 
-&lt;style&gt;
+<style>
 .contributors-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -149,4 +137,4 @@ description: 加入鉅犀科技貢獻者社區
   color: #666;
   font-size: 14px;
 }
-&lt;/style&gt;
+</style>

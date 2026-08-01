@@ -17,36 +17,41 @@ description: 加入钜犀科技贡献者社区
 
 ---
 
+## 社区渠道
+
+| 渠道 | 用途 | 入口 |
+|------|------|------|
+| 💬 GitHub Issues | 提问、讨论、报告问题 | [github.com/Juxi-Technology/wiki-documents/issues](https://github.com/Juxi-Technology/wiki-documents/issues) |
+| 📧 邮箱 | 技术支持与商务 | [support@juxitech.com](mailto:support@juxitech.com) |
+| 🛒 商城 | 购买产品 | [www.juxitech.com](https://www.juxitech.com) |
+| 📺 B站 | 产品演示与教程视频 | [space.bilibili.com/3546906737248821](https://space.bilibili.com/3546906737248821) |
+| 📚 Feishu Wiki | 开源资料(原理图/固件/CAD) | [juxitech.feishu.cn](https://juxitech.feishu.cn) |
+| 💬 即时社群 | QQ 群/微信群/Discord | 即将开放 |
+
+> 💡 即时社群(QQ 群/微信群/Discord)正在筹备中,开放后第一时间在此公布。
+
+---
+
 ## 如何贡献
 
 ### 1. 撰写教程
 
-分享你使用 SO-ARM101 的经验，撰写教程帮助他人。
+分享你使用 SO-ARM101 的经验,撰写教程帮助他人。
 
 **如何开始：**
-- 选择一个主题（应用场景、技术解析等）
-- 参考我们的[教程模板](/tutorials/so-arm101/template-tutorial)
+- 选择一个主题(应用场景、技术解析等)
+- 参考现有教程结构编写
 - 提交 Pull Request
 
 ### 2. 翻译文档
 
-帮助我们将文档翻译成更多语言，让更多用户受益。
+帮助我们将文档翻译成更多语言,让更多用户受益。
 
-**现有语言：**
-- 简体中文
-- 英文
-- 繁体中文
-
-**翻译指南：** [如何参与翻译](/community/translation-guide)
+**现有语言：** 简体中文 / 英文 / 繁体中文
 
 ### 3. 提交案例
 
-分享你的使用案例，展示你的项目成果。
-
-**案例类型：**
-- 教育应用
-- 研究项目
-- 商业应用
+分享你的使用案例,展示你的项目成果。参考[成功案例页](/cases/)。
 
 ### 4. 报告问题
 
@@ -54,7 +59,7 @@ description: 加入钜犀科技贡献者社区
 
 ### 5. 代码贡献
 
-对相关开源项目的代码贡献，包括 LeRobot 等。
+对相关开源项目的代码贡献,包括 LeRobot 等。
 
 ---
 
@@ -65,18 +70,8 @@ description: 加入钜犀科技贡献者社区
 <div class="contributors-grid">
   <div class="contributor-card">
     <div class="avatar">👤</div>
-    <h4>贡献者 A</h4>
-    <p>撰写了视觉抓取教程</p>
-  </div>
-  <div class="contributor-card">
-    <div class="avatar">👤</div>
-    <h4>贡献者 B</h4>
-    <p>翻译了英文文档</p>
-  </div>
-  <div class="contributor-card">
-    <div class="avatar">👤</div>
-    <h4>贡献者 C</h4>
-    <p>提交了教学案例</p>
+    <h4>待公布</h4>
+    <p>我们正在收集贡献者名单</p>
   </div>
 </div>
 
@@ -99,23 +94,17 @@ description: 加入钜犀科技贡献者社区
 
 ### 第一次贡献？
 
-别担心！我们准备了详细的贡献指南帮助你开始：
-
-1. [如何提交 Pull Request](/community/pr-guide)
-2. [Markdown 写作规范](/community/markdown-guide)
-3. [教程写作建议](/community/tutorial-tips)
+我们准备了详细的[贡献指南](/community/contributing)帮助你开始。
 
 ### 联系方式
 
 - 💬 GitHub Issues：[讨论区](https://github.com/Juxi-Technology/wiki-documents/issues)
-- 📧 邮箱：community@juxitech.com
-- 💬 Discord：[加入我们的社群](https://discord.gg/...)
+- 📧 邮箱：support@juxitech.com
+- 📧 社区：pe@juxitech.com
 
 ---
 
-## 技术支持与产品讨论
-
-感谢您选择我们的产品！我们提供多种支持方式，以确保您的使用体验尽可能顺畅。
+## 技术支持
 
 - 📧 邮箱：support@juxitech.com
 - 💬 GitHub Issues：[问题反馈](https://github.com/Juxi-Technology/wiki-documents/issues)
