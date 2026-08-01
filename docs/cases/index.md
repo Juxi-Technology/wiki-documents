@@ -1,65 +1,53 @@
 ---
 title: 用户成功案例
-description: 钜犀科技产品用户成功案例
+description: 使用钜犀科技开源硬件的研究者与开发者真实案例
 ---
 
 # 用户成功案例
 
-欢迎来到用户成功案例页面！这里汇集了使用我们产品的真实用户案例，涵盖教育、研究、商业应用等多个领域。
+这里汇集了使用钜犀科技产品的真实用户案例,涵盖教育、研究与商业应用。
 
 ---
 
-## 教育领域案例
+## 教育 · 机器人学实验室
 
-| 大学机器人教学 | 高中机器人社团 | 职业技术学院 |
-|---|---|---|
-| ![](https://images.unsplash.com/photo-1523050854058-8df90110c9a1?w=300&h=200&fit=crop) | ![](https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=300&h=200&fit=crop) | ![](https://images.unsplash.com/photo-1509062522246-3755977927d7?w=300&h=200&fit=crop) |
-| 某知名大学使用 SO-ARM101 进行机器人教学，开设机器人学习课程 | 某高中机器人社团使用 SO-ARM101 参加比赛，获得优异成绩 | 某职业技术学院将 SO-ARM101 用于工业机器人培训 |
-| [**📚 了解更多**](/cases/education/university) | [**📚 了解更多**](/cases/education/high-school) | [**📚 了解更多**](/cases/education/vocational) |
+> "SO-ARM101 正是开源机器人社区所需要的——价格亲民、可自由改装、开箱即用兼容 ROS 2。我们在大学实验室里用它向研究生教授机械臂操作算法。"
 
----
+**—— 机器人学研究者,香港科技大学 (HKUST)**
 
-## 研究领域案例
-
-| 机器人学习研究 | 抓取策略研究 | 人机交互研究 |
-|---|---|---|
-| ![](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=300&h=200&fit=crop) | ![](https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=300&h=200&fit=crop) | ![](https://images.unsplash.com/photo-1518770660439-4636190af475?w=300&h=200&fit=crop) |
-| 某研究机构使用 SO-ARM101 进行机器人学习算法研究 | 某实验室研究新型抓取策略，SO-ARM101 作为验证平台 | 某研究团队使用 SO-ARM101 研究人机交互技术 |
-| [**📚 了解更多**](/cases/research/robot-learning) | [**📚 了解更多**](/cases/research/grasping) | [**📚 了解更多**](/cases/research/hri) |
+**使用产品**:SO-ARM101 机械臂
+**应用场景**:研究生机械臂操作算法教学
+**核心价值**:开源 + ROS 2 兼容 + 可自由改装
 
 ---
 
-## 商业应用案例
+## 商业 · 边缘 AI 部署
 
-| 轻量装配 | 创客空间 | 自动化演示 |
-|---|---|---|
-| ![](https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=300&h=200&fit=crop) | ![](https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=300&h=200&fit=crop) | ![](https://images.unsplash.com/photo-1531746790731-6c087fecd6c5?w=300&h=200&fit=crop) |
-| 某公司使用 SO-ARM101 进行轻量级产品装配任务 | 某创客空间引入 SO-ARM101，吸引了大量创客学习 | 某企业使用 SO-ARM101 进行产品自动化演示 |
-| [**📚 了解更多**](/cases/business/assembly) | [**📚 了解更多**](/cases/business/makerspace) | [**📚 了解更多**](/cases/business/demo) |
+> "JuxiTech 的 Jetson 边缘 AI 平台让我们能用 TensorRT 在生产环境中部署计算机视觉模型,成本远低于其他方案。开源的 SDK 为我们节省了数周的集成时间。"
 
----
+**—— 边缘 AI 开发者,社区贡献者**
 
-## 分享你的案例！
-
-如果你也在使用我们的产品，欢迎分享你的使用经验！我们将：
-
-- 在 Wiki 上展示你的案例
-- 提供技术支持和指导
-- 邀请你加入我们的贡献者社区
-
-**如何提交案例：**
-
-1. 撰写你的案例内容，包含：项目背景、解决方案、成果展示
-2. 附上相关图片或视频
-3. 提交到 GitHub Issues 或发送邮件给我们
-
-了解更多：[如何分享你的案例](/cases/share-your-story)
+**使用产品**:NVIDIA Jetson 边缘计算平台
+**应用场景**:生产环境计算机视觉模型部署
+**核心价值**:TensorRT 优化 + 开源 SDK + 成本优势
 
 ---
 
-## 技术支持
+## 研究 · 具身智能
 
-如有问题，请联系：
+> "AmazingHand 在其价位上设计得相当出色。我们的团队用它做灵巧操作研究,开源的 CAD 文件让我们能够修改手指设计,以适应我们特定的抓取实验。"
 
-- 📧 邮箱：support@juxitech.com
-- 💬 GitHub Issues：[问题反馈](https://github.com/Juxi-Technology/wiki-documents/issues)
+**—— 具身 AI 研究者,欧洲实验室**
+
+**使用产品**:AmazingHand 灵巧手
+**应用场景**:灵巧操作与抓取策略研究
+**核心价值**:开源 CAD 文件 + 可定制手指设计
+
+---
+
+## 想分享你的案例?
+
+如果你在使用钜犀科技产品,欢迎分享你的故事!
+
+- 📧 邮箱：pe@juxitech.com
+- 💬 GitHub Issues：[提交案例](https://github.com/Juxi-Technology/wiki-documents/issues)
