@@ -38,6 +38,7 @@ const zhCN = {
       { text: '社区', link: '/community/', activeMatch: '/community/' },
       { text: '下载', link: '/downloads/', activeMatch: '/downloads/' },
       { text: '关于我们', link: '/about/', activeMatch: '/about/' },
+      { text: '更新日志', link: '/changelog/', activeMatch: '/changelog/' },
     ],
     sidebar: {
       '/tutorials/': [
@@ -204,6 +205,9 @@ const zhCN = {
       '/about/': [
         { text: '关于', items: [{ text: '关于我们', link: '/about/' }] },
       ],
+      '/changelog/': [
+        { text: '更新', items: [{ text: '更新日志', link: '/changelog/' }] },
+      ],
     },
   },
 }
@@ -227,6 +231,7 @@ const en = {
       { text: 'Community', link: '/en/community/', activeMatch: '/en/community/' },
       { text: 'Downloads', link: '/en/downloads/', activeMatch: '/en/downloads/' },
       { text: 'About', link: '/en/about/', activeMatch: '/en/about/' },
+      { text: 'Changelog', link: '/en/changelog/', activeMatch: '/en/changelog/' },
     ],
     sidebar: {
       '/en/tutorials/': [
@@ -393,6 +398,9 @@ const en = {
       '/en/about/': [
         { text: 'About', items: [{ text: 'About Us', link: '/en/about/' }] },
       ],
+      '/en/changelog/': [
+        { text: 'Updates', items: [{ text: 'Changelog', link: '/en/changelog/' }] },
+      ],
     },
   },
 }
@@ -416,6 +424,7 @@ const zhHK = {
       { text: '社區', link: '/zh-HK/community/', activeMatch: '/zh-HK/community/' },
       { text: '下載', link: '/zh-HK/downloads/', activeMatch: '/zh-HK/downloads/' },
       { text: '關於我們', link: '/zh-HK/about/', activeMatch: '/zh-HK/about/' },
+      { text: '更新日誌', link: '/zh-HK/changelog/', activeMatch: '/zh-HK/changelog/' },
     ],
     sidebar: {
       '/zh-HK/tutorials/': [
@@ -581,6 +590,9 @@ const zhHK = {
       ],
       '/zh-HK/about/': [
         { text: '關於', items: [{ text: '關於我們', link: '/zh-HK/about/' }] },
+      ],
+      '/zh-HK/changelog/': [
+        { text: '更新', items: [{ text: '更新日誌', link: '/zh-HK/changelog/' }] },
       ],
     },
   },
