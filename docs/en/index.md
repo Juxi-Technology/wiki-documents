@@ -15,8 +15,8 @@ outline: false
 <p class="hero-desc">From robot arms to sensors — build your intelligent robotic system</p>
 
 <div class="hero-links">
-  <a href="/en/tutorials/" class="hero-btn primary">🚀 Get Started</a>
-  <a href="/en/tutorials/" class="hero-btn secondary">📚 Tutorials</a>
+  <a :href="withBase('/en/tutorials/')" class="hero-btn primary">🚀 Get Started</a>
+  <a :href="withBase('/en/tutorials/')" class="hero-btn secondary">📚 Tutorials</a>
   <a href="https://github.com/Juxi-Technology/" target="_blank" class="hero-btn secondary">⭐ GitHub</a>
 </div>
 
@@ -25,20 +25,20 @@ outline: false
 ## Latest Documents
 
 <div class="card-grid">
-  <a href="/en/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial" class="card">
-    <img src="/images/home-cards/SO-ARM101.png" alt="SO-ARM101-Tutorial">
+  <a :href="withBase('/en/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial')" class="card">
+    <img :src="withBase('/images/home-cards/SO-ARM101.png')" alt="SO-ARM101-Tutorial">
     <span>SO-ARM101-Tutorial</span>
   </a>
-  <a href="/en/tutorials/accessories/KWS-speech-recognition-module/index" class="card">
-    <img src="/images/home-cards/AI_SoundCard.png" alt="KWS Speech Recognition Module Series">
+  <a :href="withBase('/en/tutorials/accessories/KWS-speech-recognition-module/index')" class="card">
+    <img :src="withBase('/images/home-cards/AI_SoundCard.png')" alt="KWS Speech Recognition Module Series">
     <span>KWS Speech Recognition Module Series</span>
   </a>
-  <a href="/en/tutorials/sensors/imu/index" class="card">
-    <img src="/images/home-cards/IMU.png" alt="IMU Inertial Navigation Module">
+  <a :href="withBase('/en/tutorials/sensors/imu/index')" class="card">
+    <img :src="withBase('/images/home-cards/IMU.png')" alt="IMU Inertial Navigation Module">
     <span>IMU Inertial Navigation Module</span>
   </a>
-  <a href="/en/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control" class="card">
-    <img src="/images/home-cards/AmazingHand.png" alt="AmazingHand-Interface-Control">
+  <a :href="withBase('/en/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control')" class="card">
+    <img :src="withBase('/images/home-cards/AmazingHand.png')" alt="AmazingHand-Interface-Control">
     <span>AmazingHand-Interface-Control</span>
   </a>
 </div>
@@ -46,16 +46,16 @@ outline: false
 ## Browse Categories
 
 <div class="category-grid">
-  <a href="/en/tutorials/robot-arms/" class="category-card">
-    <img src="/images/categories/SO-ARM101.png" alt="Robot Arm Series">
+  <a :href="withBase('/en/tutorials/robot-arms/')" class="category-card">
+    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="Robot Arm Series">
     <span>Robot Arm Series</span>
   </a>
-  <a href="/en/tutorials/accessories/" class="category-card">
-    <img src="/images/categories/AI_SoundCard.png" alt="Robot Accessories">
+  <a :href="withBase('/en/tutorials/accessories/')" class="category-card">
+    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="Robot Accessories">
     <span>Robot Accessories</span>
   </a>
-  <a href="/en/tutorials/sensors/" class="category-card">
-    <img src="/images/categories/IMU.png" alt="Sensors and Perception">
+  <a :href="withBase('/en/tutorials/sensors/')" class="category-card">
+    <img :src="withBase('/images/categories/IMU.png')" alt="Sensors and Perception">
     <span>Sensors and Perception</span>
   </a>
 </div>
@@ -70,10 +70,7 @@ Thank you for choosing our products! We offer multiple support methods to ensure
 - 📺 Bilibili: [https://space.bilibili.com/3546906737248821](https://space.bilibili.com/3546906737248821)
 
 <script setup>
-import { ref, onMounted } from 'vue'
-
-onMounted(() => {
-})
+import { withBase } from 'vitepress'
 </script>
 
 <style>

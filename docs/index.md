@@ -15,8 +15,8 @@ outline: false
 <p class="hero-desc">从机械臂到传感器，助你搭建智能机器人系统</p>
 
 <div class="hero-links">
-  <a href="/tutorials/" class="hero-btn primary">🚀 快速开始</a>
-  <a href="/tutorials/" class="hero-btn secondary">📚 浏览教程</a>
+  <a :href="withBase('/tutorials/')" class="hero-btn primary">🚀 快速开始</a>
+  <a :href="withBase('/tutorials/')" class="hero-btn secondary">📚 浏览教程</a>
   <a href="https://github.com/Juxi-Technology/" target="_blank" class="hero-btn secondary">⭐ GitHub</a>
 </div>
 
@@ -25,20 +25,20 @@ outline: false
 ## 最新文档
 
 <div class="card-grid">
-  <a href="/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial" class="card">
-    <img src="/images/home-cards/SO-ARM101.png" alt="SO-ARM101-使用教程">
+  <a :href="withBase('/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial')" class="card">
+    <img :src="withBase('/images/home-cards/SO-ARM101.png')" alt="SO-ARM101-使用教程">
     <span>SO-ARM101-使用教程</span>
   </a>
-  <a href="/tutorials/accessories/KWS-speech-recognition-module/index" class="card">
-    <img src="/images/home-cards/AI_SoundCard.png" alt="KWS语音识别模块-系列教程">
+  <a :href="withBase('/tutorials/accessories/KWS-speech-recognition-module/index')" class="card">
+    <img :src="withBase('/images/home-cards/AI_SoundCard.png')" alt="KWS语音识别模块-系列教程">
     <span>KWS语音识别模块-系列教程</span>
   </a>
-  <a href="/tutorials/sensors/imu/index" class="card">
-    <img src="/images/home-cards/IMU.png" alt="IMU惯性导航模块">
+  <a :href="withBase('/tutorials/sensors/imu/index')" class="card">
+    <img :src="withBase('/images/home-cards/IMU.png')" alt="IMU惯性导航模块">
     <span>IMU惯性导航模块</span>
   </a>
-  <a href="/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control" class="card">
-    <img src="/images/home-cards/AmazingHand.png" alt="AmazingHand-界面控制教程">
+  <a :href="withBase('/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control')" class="card">
+    <img :src="withBase('/images/home-cards/AmazingHand.png')" alt="AmazingHand-界面控制教程">
     <span>AmazingHand-界面控制教程</span>
   </a>
 </div>
@@ -46,16 +46,16 @@ outline: false
 ## 浏览分类
 
 <div class="category-grid">
-  <a href="/tutorials/robot-arms/" class="category-card">
-    <img src="/images/categories/SO-ARM101.png" alt="机器人机械臂系列">
+  <a :href="withBase('/tutorials/robot-arms/')" class="category-card">
+    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="机器人机械臂系列">
     <span>机器人机械臂系列</span>
   </a>
-  <a href="/tutorials/accessories/" class="category-card">
-    <img src="/images/categories/AI_SoundCard.png" alt="机器人配件">
+  <a :href="withBase('/tutorials/accessories/')" class="category-card">
+    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="机器人配件">
     <span>机器人配件</span>
   </a>
-  <a href="/tutorials/sensors/" class="category-card">
-    <img src="/images/categories/IMU.png" alt="传感器与感知">
+  <a :href="withBase('/tutorials/sensors/')" class="category-card">
+    <img :src="withBase('/images/categories/IMU.png')" alt="传感器与感知">
     <span>传感器与感知</span>
   </a>
 </div>
@@ -70,10 +70,7 @@ outline: false
 - 📺 B站：[https://space.bilibili.com/3546906737248821](https://space.bilibili.com/3546906737248821)
 
 <script setup>
-import { ref, onMounted } from 'vue'
-
-onMounted(() => {
-})
+import { withBase } from 'vitepress'
 </script>
 
 <style>
