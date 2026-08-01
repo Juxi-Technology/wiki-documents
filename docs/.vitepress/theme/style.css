@@ -53,3 +53,12 @@
   width: auto;
   max-height: 36px;
 }
+
+/* ---- 表格移动端滚动(选型表/对比表在窄屏不溢出) ---- */
+@media (max-width: 767px) {
+  .vp-doc table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

@@ -220,6 +220,17 @@ const noResultsText = computed(() => {
   justify-content: space-between;
 }
 
+/* 移动端:压缩为图标按钮,隐藏 "/" 提示 */
+@media (max-width: 767px) {
+  .search-trigger {
+    min-width: 0;
+    padding: 6px 8px;
+  }
+  .search-hint {
+    display: none;
+  }
+}
+
 .search-trigger:hover {
   border-color: var(--vp-c-brand);
   color: var(--vp-c-text-1);
@@ -245,6 +256,7 @@ const noResultsText = computed(() => {
 
 .search-modal {
   width: 560px;
+  max-width: calc(100vw - 32px);
   max-height: 70vh;
   background: var(--vp-c-bg);
   border-radius: 12px;
