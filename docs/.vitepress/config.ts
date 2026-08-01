@@ -37,6 +37,7 @@ const zhCN = {
       { text: '用户案例', link: '/cases/', activeMatch: '/cases/' },
       { text: '社区', link: '/community/', activeMatch: '/community/' },
       { text: '下载', link: '/downloads/', activeMatch: '/downloads/' },
+      { text: '关于我们', link: '/about/', activeMatch: '/about/' },
     ],
     sidebar: {
       '/tutorials/': [
@@ -200,6 +201,9 @@ const zhCN = {
       '/downloads/': [
         { text: '下载', items: [{ text: '下载中心', link: '/downloads/' }] },
       ],
+      '/about/': [
+        { text: '关于', items: [{ text: '关于我们', link: '/about/' }] },
+      ],
     },
   },
 }
@@ -222,6 +226,7 @@ const en = {
       { text: 'Cases', link: '/en/cases/', activeMatch: '/en/cases/' },
       { text: 'Community', link: '/en/community/', activeMatch: '/en/community/' },
       { text: 'Downloads', link: '/en/downloads/', activeMatch: '/en/downloads/' },
+      { text: 'About', link: '/en/about/', activeMatch: '/en/about/' },
     ],
     sidebar: {
       '/en/tutorials/': [
@@ -385,6 +390,9 @@ const en = {
       '/en/downloads/': [
         { text: 'Downloads', items: [{ text: 'Download Center', link: '/en/downloads/' }] },
       ],
+      '/en/about/': [
+        { text: 'About', items: [{ text: 'About Us', link: '/en/about/' }] },
+      ],
     },
   },
 }
@@ -407,6 +415,7 @@ const zhHK = {
       { text: '用戶案例', link: '/zh-HK/cases/', activeMatch: '/zh-HK/cases/' },
       { text: '社區', link: '/zh-HK/community/', activeMatch: '/zh-HK/community/' },
       { text: '下載', link: '/zh-HK/downloads/', activeMatch: '/zh-HK/downloads/' },
+      { text: '關於我們', link: '/zh-HK/about/', activeMatch: '/zh-HK/about/' },
     ],
     sidebar: {
       '/zh-HK/tutorials/': [
@@ -569,6 +578,9 @@ const zhHK = {
       ],
       '/zh-HK/downloads/': [
         { text: '下載', items: [{ text: '下載中心', link: '/zh-HK/downloads/' }] },
+      ],
+      '/zh-HK/about/': [
+        { text: '關於', items: [{ text: '關於我們', link: '/zh-HK/about/' }] },
       ],
     },
   },
