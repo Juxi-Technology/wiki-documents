@@ -2,30 +2,57 @@
 import { computed } from 'vue'
 import { useData } from 'vitepress'
 
-const { localeIndex, frontmatter } = useData()
+const { localeIndex, frontmatter, page } = useData()
 
-// 购买链接(README 中的淘宝店 + 官网)
-const STORE_URL = 'https://juxitechnology.taobao.com/'
+// 购买链接
 const SITE_URL = 'https://www.juxitech.com'
 
-// 首页/About 等非教程页不显示(通过 frontmatter 控制,Layout 按路径过滤)
-const isVisible = computed(() => frontmatter.value.purchase !== false)
+// 产品路径 → Shopify 商品页映射(按教程路径片段匹配)
+const PRODUCT_MAP = [
+  { match: 'so-arm101', url: 'https://www.juxitech.com/products/so-arm101-developers-kit' },
+  { match: 'amazing-hand', url: 'https://www.juxitech.com/products/amazinghand' },
+  { match: 'lekiwi', url: 'https://www.juxitech.com/products/lekiwi-embodied-intelligence-mobile-robotic-car' },
+  { match: 'imu', url: 'https://www.juxitech.com/products/imu-module-ahrs-attitude-and-heading-angle-sensor' },
+  { match: 'KWS', url: 'https://www.juxitech.com/products/ai-voice-recognition-module' },
+  { match: 'feetech', url: 'https://www.juxitech.com/products/feetech-scs0009-serial-bus-servo' },
+  { match: '2dof-camera-gimbal', url: 'https://www.juxitech.com/products/2-dof-servo-pan-tilt-unit' },
+  { match: 'heart-rate-spo2', url: 'https://www.juxitech.com/collections/perception' },
+  { match: '0.91-oled', url: 'https://www.juxitech.com/collections/all' },
+  { match: '4k-hdmi', url: 'https://www.juxitech.com/products/4k-hd-hdmi-capture-card' },
+  { match: 'kvm-switch', url: 'https://www.juxitech.com/products/4-in-1-kvm-switch-hub-ttl-serial-bluetooth-docking-station' },
+  { match: 'usb-audio-card', url: 'https://www.juxitech.com/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction' },
+  { match: 'jetson-csi', url: 'https://www.juxitech.com/collections/edge-computing' },
+  { match: 'usb-auto-focus', url: 'https://www.juxitech.com/collections/perception' },
+]
+
+// 根据当前页面路径匹配产品购买链接
+const productUrl = computed(() => {
+  const path = page.value.relativePath
+  const matched = PRODUCT_MAP.find((p) => path.includes(p.match))
+  return matched ? matched.url : SITE_URL
+})
+
+// 非教程页不显示
+const isVisible = computed(() => {
+  if (frontmatter.value.purchase === false) return false
+  return !page.value.relativePath.endsWith('index.md')
+})
 
 const copy = computed(() => {
   if (localeIndex.value === 'en') {
-    return { buy: 'Buy This Product', store: 'Taobao Store', site: 'Official Website' }
+    return { buy: 'Buy This Product', store: 'Official Store', site: 'Official Website' }
   }
   if (localeIndex.value === 'zh-HK') {
-    return { buy: '購買此產品', store: '淘寶店', site: '官方網站' }
+    return { buy: '購買此產品', store: '官方商城', site: '官方網站' }
   }
-  return { buy: '购买此产品', store: '淘宝店', site: '官方网站' }
+  return { buy: '购买此产品', store: '官方商城', site: '官方网站' }
 })
 </script>
 
 <template>
   <div v-if="isVisible" class="purchase-bar">
     <span class="purchase-text">{{ copy.buy }}</span>
-    <a :href="STORE_URL" target="_blank" rel="noopener" class="purchase-btn primary">{{ copy.store }}</a>
+    <a :href="productUrl" target="_blank" rel="noopener" class="purchase-btn primary">{{ copy.store }}</a>
     <a :href="SITE_URL" target="_blank" rel="noopener" class="purchase-btn">{{ copy.site }}</a>
   </div>
 </template>
