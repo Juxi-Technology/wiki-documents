@@ -1,3 +1,8 @@
+---
+title: STM32 F103C8T6
+description: "本次例程使用的是STM32F103C8T6核心板，一台windows电脑、杜邦线若干、IMU姿态传感器。"
+---
+
 # STM32 F103C8T6
 
 本次例程使用的是STM32F103C8T6核心板，一台windows电脑、杜邦线若干、IMU姿态传感器。

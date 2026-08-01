@@ -1,3 +1,8 @@
+---
+title: LeRobot機械臂教程
+description: "本教程已更新至12月15日，可選擇跟隨最新版官方文檔進行操作，官方文檔具體教程可以參考本鏈接。若需要URDF等文件請參考本鏈接。9月15日舊版本請參考該鏈接。SO-ARM101與SO-ARM100運行代碼相互兼容。"
+---
+
 # LeRobot機械臂教程
 
 本教程已更新至12月15日，可選擇跟隨最新版[官方文檔進行操作](https://github.com/huggingface/lerobot/tree/main)，官方文檔具體教程可以參考[本鏈接](https://zihao-ai.feishu.cn/wiki/TS6swApHbinx01kHDi5cf5n5n8c)。若需要URDF等文件請參考[本鏈接](https://github.com/TheRobotStudio/SO-ARM100)。9月15日舊版本請參考該[鏈接](https://juxitech.feishu.cn/docx/DJkBdcwzooBqamxl0kgcvVUbngh?from=from_copylink)。SO-ARM101與SO-ARM100運行代碼相互兼容。

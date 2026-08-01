@@ -1,3 +1,8 @@
+---
+title: Hardware Setup
+description: "This chapter details the product hardware connection method."
+---
+
 
 # Hardware Setup
 

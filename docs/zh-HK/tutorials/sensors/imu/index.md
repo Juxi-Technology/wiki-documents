@@ -1,3 +1,8 @@
+---
+title: 高精度IMU姿態傳感器 使用教程
+description: "1. 安裝代碼所需python庫"
+---
+
 # 高精度IMU姿態傳感器 使用教程
 
 ### 下載壓縮包 [IMU_ROS1.zip](https://juxitech.feishu.cn/wiki/GNgWwGnYIiBd4Gk81yccEN6jnNf)，解壓後進入~/IMU_Library

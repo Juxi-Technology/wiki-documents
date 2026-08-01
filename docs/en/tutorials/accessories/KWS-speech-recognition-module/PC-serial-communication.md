@@ -1,3 +1,8 @@
+---
+title: PC Serial Communication
+description: "[uartassist5.0.2.zip]"
+---
+
 # PC Serial Communication
 
 ## 1. Download Serial Assistant

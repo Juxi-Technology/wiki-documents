@@ -1,6 +1,6 @@
 ---
 title: Heart Rate & SpO2 Sensor
-description: Juxi Technology MAX30102 Heart Rate & SpO2 Sensor Module — Arduino / Python Tutorial
+description: "Juxi Technology MAX30102 Heart Rate & SpO2 Sensor Module — Arduino / Python Tutorial"
 ---
 
 # Heart Rate & SpO2 Sensor

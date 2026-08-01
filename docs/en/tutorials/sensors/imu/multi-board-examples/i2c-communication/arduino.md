@@ -1,3 +1,8 @@
+---
+title: Arduino
+description: "This routine uses an Arduino Nano development board, a Windows computer, several DuPont wires, and an IMU attitude sensor."
+---
+
 # Arduino
 
 This routine uses an Arduino Nano development board, a Windows computer, several DuPont wires, and an IMU attitude sensor. 

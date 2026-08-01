@@ -1,6 +1,6 @@
 ---
 title: Jetson CSI 摄像头
-description: 钜犀科技 NVIDIA Jetson Orin CSI 摄像头模块使用教程
+description: "钜犀科技 NVIDIA Jetson Orin CSI 摄像头模块使用教程"
 ---
 
 # Jetson CSI 摄像头

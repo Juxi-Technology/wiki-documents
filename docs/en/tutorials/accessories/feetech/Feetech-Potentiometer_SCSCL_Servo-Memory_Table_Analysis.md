@@ -1,3 +1,8 @@
+---
+title: Potentiometer SCSCL Servo - Memory Table Analysis
+description: "The servo uses the FT-SCS custom Communication Protocol. The default baud rate of the servo is 1M or 500k, using TTL single bus communication, with 8"
+---
+
 # Potentiometer SCSCL Servo - Memory Table Analysis
 
 # 1 Servo Communication Protocol

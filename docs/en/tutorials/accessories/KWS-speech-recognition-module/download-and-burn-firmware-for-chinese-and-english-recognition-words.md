@@ -1,3 +1,8 @@
+---
+title: Download and Burn Firmware for Chinese and English Recognition Words
+description: "The module has been pre-flashed with the voice recognition function firmware at the factory, and the factory firmware is also provided in the attached"
+---
+
 # Download and Burn Firmware for Chinese and English Recognition Words
 
 > The module has been pre-flashed with the voice recognition function firmware at the factory, and the factory firmware is also provided in the attached materials. If you need to re-create the firmware, you can follow the steps below to make the firmware. 

@@ -1,3 +1,8 @@
+---
+title: Lekiwi移動機器人組裝教程
+description: "在Fusion360 在線 CAD中可以可視化精確的組件位置。"
+---
+
 # Lekiwi移動機器人組裝教程
 
 [*在Fusion360 在線 CAD*](https://a360.co/4k1P8yO)*中可以可視化精確的組件位置。*

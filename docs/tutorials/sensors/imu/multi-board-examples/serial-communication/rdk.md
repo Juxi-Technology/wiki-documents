@@ -1,3 +1,8 @@
+---
+title: RDK系列
+description: "本教程以RDK X5主板的版本的镜像为例。"
+---
+
 # RDK系列
 
 ## 1. 连接设备

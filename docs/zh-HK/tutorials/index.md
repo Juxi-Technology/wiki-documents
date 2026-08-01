@@ -1,7 +1,7 @@
 ---
 title: 教程首頁
 titleTemplate: 產品教程與指南
-description: 探索所有產品教程、指南與範例，快速上手鉅犀科技產品
+description: "探索所有產品教程、指南與範例，快速上手鉅犀科技產品"
 head:
   - [ meta, { property: "og:title", content: "教程首頁 | 產品教程與指南" } ]
   - [ meta, { property: "og:description", content: "探索所有產品教程、指南與範例，快速上手鉅犀科技產品" } ]

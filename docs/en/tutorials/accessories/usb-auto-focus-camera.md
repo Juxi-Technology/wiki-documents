@@ -1,6 +1,6 @@
 ---
 title: USB Auto-Focus Camera
-description: Juxi Technology USB Driver-Free 86° Wide Angle Auto-Focus 1080P Camera Tutorial
+description: "Juxi Technology USB Driver-Free 86° Wide Angle Auto-Focus 1080P Camera Tutorial"
 ---
 
 # USB Auto-Focus Camera

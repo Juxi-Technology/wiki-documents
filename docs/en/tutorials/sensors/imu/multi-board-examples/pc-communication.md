@@ -1,3 +1,8 @@
+---
+title: PC Communication
+description: "Note: If the serial port cannot be recognized, please install the CH340 driver"
+---
+
 # PC Communication
 
 **Note: If the serial port cannot be recognized, please install the CH340 driver**

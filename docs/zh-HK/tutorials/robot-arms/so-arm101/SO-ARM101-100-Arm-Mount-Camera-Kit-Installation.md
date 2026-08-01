@@ -1,3 +1,8 @@
+---
+title: SO-ARM100&amp;101臂載支架和環境相機套件 安裝教程
+description: "USB自動對接攝像頭調試請參考該教程USB自动对焦摄像头教程"
+---
+
 # SO-ARM100&amp;101臂載支架和環境相機套件 安裝教程
 
 USB自動對接攝像頭調試請參考該教程[USB自动对焦摄像头教程](https://juxitech.feishu.cn/docx/JXstdNbN6oiL1WxiqJrc2OJDnrf?from=from_copylink)

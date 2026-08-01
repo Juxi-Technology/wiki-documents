@@ -1,3 +1,8 @@
+---
+title: 靈巧手(TTL串口舵機)調試教程
+description: "首先，下載“靈巧手調試.zip”壓縮包，解壓後可通過“使用arduio程序調試靈巧手過程（TTL舵機）”文檔進行舵機ID設置、標定、校準中位及演示程序運行，或 參考官方開源代碼。"
+---
+
 # 靈巧手(TTL串口舵機)調試教程
 
 首先，下載“[靈巧手調試.zip](https://juxitech.feishu.cn/wiki/QjYBwL0A0iJVlNkEpUUclLYGnBc)”壓縮包，解壓後可通過“使用arduio程序調試靈巧手過程（TTL舵機）”文檔進行舵機ID設置、標定、校準中位及演示程序運行，或 參考[官方開源代碼](https://github.com/pollen-robotics/AmazingHand/tree/main/ArduinoExample)。

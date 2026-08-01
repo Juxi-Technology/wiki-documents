@@ -1,3 +1,8 @@
+---
+title: 顶置摄像头安装座安装教程
+description: "USB自动对接摄像头调试请参考该教程USB自动对焦摄像头教程"
+---
+
 # 顶置摄像头安装座安装教程
 
 USB自动对接摄像头调试请参考该教程[USB自动对焦摄像头教程](https://juxitech.feishu.cn/docx/JXstdNbN6oiL1WxiqJrc2OJDnrf?from=from_copylink)

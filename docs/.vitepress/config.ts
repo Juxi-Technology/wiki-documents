@@ -18,7 +18,6 @@ const zhCN = {
   head: [
     ['meta', { property: 'og:title', content: '钜犀科技 Wiki - 产品教程与文档中心' }],
     ['meta', { property: 'og:description', content: '钜犀科技 Wiki，涵盖机器人机械臂、传感器、配件等完整产品教程与技术文档。从 SO-ARM101 到 IMU 惯导模块，为机器人与 AI 硬件开发者提供全流程指南。' }],
-    ['meta', { name: 'description', content: '钜犀科技 Wiki，涵盖机器人机械臂、传感器、配件等完整产品教程与技术文档。' }],
   ],
   themeConfig: {
     siteTitle: '钜犀科技 Wiki',
@@ -199,7 +198,6 @@ const en = {
   head: [
     ['meta', { property: 'og:title', content: 'Juxi Technology Wiki - Product Tutorials & Documentation' }],
     ['meta', { property: 'og:description', content: 'Juxi Technology Wiki — comprehensive tutorials and docs for robot arms, sensors, and accessories. From SO-ARM101 to IMU modules, a complete guide for robotics and AI hardware developers.' }],
-    ['meta', { name: 'description', content: 'Juxi Technology Wiki — comprehensive tutorials and docs for robot arms, sensors, and accessories.' }],
   ],
   themeConfig: {
     siteTitle: 'Juxi Technology Wiki',
@@ -380,7 +378,6 @@ const zhHK = {
   head: [
     ['meta', { property: 'og:title', content: '鉅犀科技 Wiki - 產品教程與文檔中心' }],
     ['meta', { property: 'og:description', content: '鉅犀科技 Wiki，涵蓋機器人機械臂、傳感器、配件等完整產品教程與技術文檔。從 SO-ARM101 到 IMU 慣導模組，為機器人與 AI 硬件開發者提供全流程指南。' }],
-    ['meta', { name: 'description', content: '鉅犀科技 Wiki，涵蓋機器人機械臂、傳感器、配件等完整產品教程與技術文檔。' }],
   ],
   themeConfig: {
     siteTitle: '鉅犀科技 Wiki',

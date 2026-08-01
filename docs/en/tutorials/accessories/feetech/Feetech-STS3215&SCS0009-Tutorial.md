@@ -1,3 +1,8 @@
+---
+title: Debugging Tutorial for FEETECH Servos STS3215 &amp; SCS0009
+description: "FEETECH Host Computer FD Softwarehttps://gitee.com/ftservo"
+---
+
 # Debugging Tutorial for FEETECH Servos STS3215 &amp; SCS0009
 
 [FEETECH Host Computer FD Software](https://gitee.com/ftservo)[https://gitee.com/ftservo](https://gitee.com/ftservo)

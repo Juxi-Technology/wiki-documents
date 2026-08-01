@@ -1,3 +1,8 @@
+---
+title: 4K HD HDMI Capture Device Tutorial
+description: "According to the motherboard interface, there are the following three wiring operations"
+---
+
 # 4K HD HDMI Capture Device Tutorial
 
 ## Wiring Operation 

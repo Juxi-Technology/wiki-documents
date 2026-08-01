@@ -1,3 +1,8 @@
+---
+title: Lerobot机械臂组装教程
+description: "Pro版 主动臂使用5V6A电源适配器，从动臂使用12V5A电源适配器"
+---
+
 # Lerobot机械臂组装教程
 
 ![Image](../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)

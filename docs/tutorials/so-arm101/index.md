@@ -1,6 +1,6 @@
 ---
 title: SO-ARM101 系列教程
-description: SO-ARM101 机械臂完整教程
+description: "SO-ARM101 机械臂完整教程"
 ---
 
 # SO-ARM101 系列教程

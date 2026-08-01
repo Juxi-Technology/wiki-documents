@@ -1,3 +1,8 @@
+---
+title: Steering Gear SCS Communication Protocol
+description: "The communication level uses the TTL level method compatible with high-speed communication and the RS485 method with strong anti-interference ability."
+---
+
 # Steering Gear SCS Communication Protocol
 
 # 1 Summary of Communication Protocol

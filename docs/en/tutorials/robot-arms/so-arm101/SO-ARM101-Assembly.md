@@ -1,3 +1,8 @@
+---
+title: Lerobot SO-ARM101 Assembly Tutorial
+description: "The Pro version's active arm uses a 5V6A power adapter, while the passive arm uses a 12V5A power adapter"
+---
+
 # Lerobot SO-ARM101 Assembly Tutorial
 
 ![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)

@@ -1,6 +1,6 @@
 ---
 title: Jetson CSI Camera
-description: Juxi Technology NVIDIA Jetson Orin CSI Camera Module Tutorial
+description: "Juxi Technology NVIDIA Jetson Orin CSI Camera Module Tutorial"
 ---
 
 # Jetson CSI Camera

@@ -1,7 +1,7 @@
 ---
 title: Tutorials Home
 titleTemplate: Product Tutorials & Guides
-description: Explore all product tutorials, guides, and examples to quickly get started with Juxi Technology products
+description: "Explore all product tutorials, guides, and examples to quickly get started with Juxi Technology products"
 head:
   - [ meta, { property: "og:title", content: "Tutorials Home | Product Tutorials & Guides" } ]
   - [ meta, { property: "og:description", content: "Explore all product tutorials, guides, and examples to quickly get started with Juxi Technology products" } ]

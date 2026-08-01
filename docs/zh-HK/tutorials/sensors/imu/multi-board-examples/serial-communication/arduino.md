@@ -1,3 +1,8 @@
+---
+title: Arduino
+description: "本次例程使用的是Arduino Nano開發版，一臺windows電腦、杜邦線若干、IMU姿態傳感器、USB轉TTL模塊。"
+---
+
 # Arduino
 
 本次例程使用的是Arduino Nano開發版，一臺windows電腦、杜邦線若干、IMU姿態傳感器、USB轉TTL模塊。

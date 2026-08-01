@@ -1,3 +1,8 @@
+---
+title: Arduino
+description: "本次例程使用的是Arduino Nano开发板，一台windows电脑、杜邦线若干、IMU姿态传感器。"
+---
+
 # Arduino
 
 本次例程使用的是Arduino Nano开发板，一台windows电脑、杜邦线若干、IMU姿态传感器。

@@ -1,3 +1,8 @@
+---
+title: STM32 F103C8T6
+description: "This routine uses an STM32F103C8T6, a Windows computer, several DuPont wires, and an IMU attitude sensor."
+---
+
 # STM32 F103C8T6
 
 This routine uses an STM32F103C8T6, a Windows computer, several DuPont wires, and an IMU attitude sensor. 

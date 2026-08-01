@@ -1,3 +1,8 @@
+---
+title: High-precision IMU Attitude Sensor Usage Tutorial
+description: "1. Install the required Python libraries for the code"
+---
+
 # High-precision IMU Attitude Sensor Usage Tutorial
 
 ### Download the Compressed Packet[IMU_ROS1.zip](https://juxitech.feishu.cn/wiki/GNgWwGnYIiBd4Gk81yccEN6jnNf), unzip it, and then enter ~/IMU_Library

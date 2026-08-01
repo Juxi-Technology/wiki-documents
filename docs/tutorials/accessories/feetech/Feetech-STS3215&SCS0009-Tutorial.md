@@ -1,3 +1,8 @@
+---
+title: 飞特舵机STS3215&amp;SCS0009调试教程
+description: "飞特上位机FD软件 https://gitee.com/ftservo"
+---
+
 # 飞特舵机STS3215&amp;SCS0009调试教程
 
 [飞特上位机FD软件 ](https://gitee.com/ftservo)[https://gitee.com/ftservo](https://gitee.com/ftservo)

@@ -1,6 +1,6 @@
 ---
 title: 心率血氧传感器
-description: 钜犀科技 MAX30102 心率血氧传感器模块 Arduino / Python 使用教程
+description: "钜犀科技 MAX30102 心率血氧传感器模块 Arduino / Python 使用教程"
 ---
 
 # 心率血氧传感器

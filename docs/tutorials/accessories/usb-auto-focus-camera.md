@@ -1,6 +1,6 @@
 ---
 title: USB 自动对焦摄像头
-description: 钜犀科技 USB 免驱 86° 广角自动对焦 1080P 摄像头使用教程
+description: "钜犀科技 USB 免驱 86° 广角自动对焦 1080P 摄像头使用教程"
 ---
 
 # USB 自动对焦摄像头

@@ -1,6 +1,6 @@
 ---
 title: 心率血氧感測器
-description: 鉅犀科技 MAX30102 心率血氧感測器模組 Arduino / Python 使用教學
+description: "鉅犀科技 MAX30102 心率血氧感測器模組 Arduino / Python 使用教學"
 ---
 
 # 心率血氧感測器

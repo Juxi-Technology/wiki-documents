@@ -1,3 +1,8 @@
+---
+title: 高精度IMU姿态传感器 使用教程
+description: "1. 安装代码所需python库"
+---
+
 # 高精度IMU姿态传感器 使用教程
 
 ### 下载压缩包 [IMU_ROS1.zip](https://juxitech.feishu.cn/wiki/BcWGwW2yDiXex9k6qjTcleTvnPb) 或者[IMU_ROS2.zip](https://juxitech.feishu.cn/wiki/ZL8XwrPriifnASk41AhcoPj1nnb)，解压后进入~/IMU_Library

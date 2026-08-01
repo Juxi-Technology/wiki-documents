@@ -1,3 +1,8 @@
+---
+title: 灵巧手官方示例运行教程
+description: "建议下载本使用教程下的代码压缩包进行Demo示例演示，或克隆 官方开源代码仓库https://github.com/pollen-robotics/AmazingHand.git，官方开源代码或有错漏请务必注意。"
+---
+
 # 灵巧手官方示例运行教程
 
 ## 1.代码下载

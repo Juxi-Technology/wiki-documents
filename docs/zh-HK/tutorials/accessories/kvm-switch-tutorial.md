@@ -1,3 +1,8 @@
+---
+title: KVM切換器使用教程
+description: "KVM切換器包含HUB功能、TTL串口、藍牙模塊"
+---
+
 # KVM切換器使用教程
 
 KVM切換器包含HUB功能、TTL串口、藍牙模塊

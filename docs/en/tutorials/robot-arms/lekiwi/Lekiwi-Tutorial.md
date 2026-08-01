@@ -1,3 +1,8 @@
+---
+title: Lekiwi Mobile Robot User Guide
+description: "The black active arm uses a 5V 6A power adapter, while the white passive arm uses a 12V 5A power adapter"
+---
+
 # Lekiwi Mobile Robot User Guide 
 
 The black active arm uses a 5V 6A power adapter, while the white passive arm uses a 12V 5A power adapter 

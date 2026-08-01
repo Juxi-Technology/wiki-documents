@@ -1,3 +1,8 @@
+---
+title: IMU Module Usage Tutorial
+description: "Built-in high-precision IMU attitude sensor72MHz high-performance 32-bit processor, capable of real-time attitude calculation and dynamic compensation"
+---
+
 # IMU Module Usage Tutorial
 
 # Introduction to IMU Module

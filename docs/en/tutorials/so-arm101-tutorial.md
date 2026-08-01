@@ -1,3 +1,8 @@
+---
+title: LeRobot SO-ARM101 Tutorial
+description: "This tutorial is updated as of December 15th, you can choose to follow the latest official documentation, and refer to this link for specific tutorial"
+---
+
 # LeRobot SO-ARM101 Tutorial
 
 This tutorial is updated as of December 15th, you can choose to follow the latest [official documentation](https://github.com/huggingface/lerobot/tree/main), and refer to [this link](https://zihao-ai.feishu.cn/wiki/TS6swApHbinx01kHDi5cf5n5n8c) for specific tutorials in official documentation. If you need URDF and other files please refer to [this link](https://github.com/TheRobotStudio/SO-ARM100). For the September 15th old version please refer to [this link](https://juxitech.feishu.cn/docx/DJkBdcwzooBqamxl0kgcvVUbngh?from=from_copylink). SO-ARM101 and SO-ARM100 running code are compatible with each other.

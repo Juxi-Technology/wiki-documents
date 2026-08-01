@@ -1,3 +1,8 @@
+---
+title: Jetson Nano Serial Communication
+description: "Note: The voice interaction module needs to be flashed with the factory firmware. If the voice chip has not been flashed with firmware after being rec"
+---
+
 # Jetson Nano Serial Communication
 
 Note: The voice interaction module needs to be flashed with the factory firmware. If the voice chip has not been flashed with firmware after being received, it does not need to be flashed. 

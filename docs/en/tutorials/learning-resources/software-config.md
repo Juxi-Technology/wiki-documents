@@ -1,3 +1,8 @@
+---
+title: Software Config
+description: "This chapter introduces the product software configuration method."
+---
+
 
 # Software Config
 

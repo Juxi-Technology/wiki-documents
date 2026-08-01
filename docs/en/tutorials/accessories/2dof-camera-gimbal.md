@@ -1,6 +1,6 @@
 ---
 title: 2-DOF Camera Gimbal
-description: Juxi Technology 2-DOF Camera Gimbal module with color tracking, face detection, and auto-tracking
+description: "Juxi Technology 2-DOF Camera Gimbal module with color tracking, face detection, and auto-tracking"
 ---
 
 # 2-DOF Camera Gimbal

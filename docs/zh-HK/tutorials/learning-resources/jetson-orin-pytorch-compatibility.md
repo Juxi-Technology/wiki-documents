@@ -1,3 +1,8 @@
+---
+title: Jetson Orin 上 PyTorch 不相容問題
+description: "安裝 jetson 版本的 pytorch"
+---
+
 # Jetson Orin 上 PyTorch 不相容問題
 
 可能出現的問題一：

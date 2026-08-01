@@ -1,3 +1,8 @@
+---
+title: RDK Series
+description: "This tutorial takes the mirroring of the? version of the RDK X5 motherboard as an example."
+---
+
 # RDK Series
 
 ## Step 1 Connect devices
