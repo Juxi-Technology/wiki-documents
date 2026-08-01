@@ -36,6 +36,7 @@ const zhCN = {
       { text: '技术文档', link: '/tech/', activeMatch: '/tech/' },
       { text: '用户案例', link: '/cases/', activeMatch: '/cases/' },
       { text: '社区', link: '/community/', activeMatch: '/community/' },
+      { text: '下载', link: '/downloads/', activeMatch: '/downloads/' },
     ],
     sidebar: {
       '/tutorials/': [
@@ -195,6 +196,9 @@ const zhCN = {
       '/community/': [
         { text: '社区', items: [{ text: '社区首页', link: '/community/' }, { text: '贡献指南', link: '/community/contributing' }] },
       ],
+      '/downloads/': [
+        { text: '下载', items: [{ text: '下载中心', link: '/downloads/' }] },
+      ],
     },
   },
 }
@@ -216,6 +220,7 @@ const en = {
       { text: 'Tech Docs', link: '/en/tech/', activeMatch: '/en/tech/' },
       { text: 'Cases', link: '/en/cases/', activeMatch: '/en/cases/' },
       { text: 'Community', link: '/en/community/', activeMatch: '/en/community/' },
+      { text: 'Downloads', link: '/en/downloads/', activeMatch: '/en/downloads/' },
     ],
     sidebar: {
       '/en/tutorials/': [
@@ -375,6 +380,9 @@ const en = {
       '/en/community/': [
         { text: 'Community', items: [{ text: 'Community Home', link: '/en/community/' }, { text: 'Contributing Guide', link: '/en/community/contributing' }] },
       ],
+      '/en/downloads/': [
+        { text: 'Downloads', items: [{ text: 'Download Center', link: '/en/downloads/' }] },
+      ],
     },
   },
 }
@@ -396,6 +404,7 @@ const zhHK = {
       { text: '技術文檔', link: '/zh-HK/tech/', activeMatch: '/zh-HK/tech/' },
       { text: '用戶案例', link: '/zh-HK/cases/', activeMatch: '/zh-HK/cases/' },
       { text: '社區', link: '/zh-HK/community/', activeMatch: '/zh-HK/community/' },
+      { text: '下載', link: '/zh-HK/downloads/', activeMatch: '/zh-HK/downloads/' },
     ],
     sidebar: {
       '/zh-HK/tutorials/': [
@@ -554,6 +563,9 @@ const zhHK = {
       ],
       '/zh-HK/community/': [
         { text: '社區', items: [{ text: '社區首頁', link: '/zh-HK/community/' }, { text: '貢獻指南', link: '/zh-HK/community/contributing' }] },
+      ],
+      '/zh-HK/downloads/': [
+        { text: '下載', items: [{ text: '下載中心', link: '/zh-HK/downloads/' }] },
       ],
     },
   },
