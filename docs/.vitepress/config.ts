@@ -583,4 +583,42 @@ export default defineConfig({
       copyright: '© 2026 Juxi Technology',
     },
   },
+  // 结构化数据:每页注入 JSON-LD(首页 Organization,其余 Article)
+  transformHead({ pageData }) {
+    const base = 'https://juxi-technology.github.io/wiki-documents'
+    const isHome = pageData.relativePath === 'index.md'
+    let ld
+    if (isHome) {
+      ld = {
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: '钜犀科技 Juxi Technology',
+        url: base + '/',
+        logo: base + '/images/logos/logo-black.png',
+        description: '机器人与 AI 硬件的开放文档平台 — 机械臂、传感器、配件产品教程与技术文档',
+        contactPoint: {
+          '@type': 'ContactPoint',
+          email: 'support@juxitech.com',
+          contactType: 'customer service',
+        },
+      }
+    } else {
+      ld = {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: pageData.title || 'Juxi Technology Wiki',
+        description: pageData.description || '',
+        url: base + '/' + pageData.relativePath.replace(/(^|\/)index\.md$/, '$1').replace(/\.md$/, ''),
+        publisher: {
+          '@type': 'Organization',
+          name: 'Juxi Technology',
+          url: base + '/',
+        },
+        inLanguage: pageData.lang || 'zh-CN',
+      }
+    }
+    return [
+      ['script', { type: 'application/ld+json' }, JSON.stringify(ld)],
+    ]
+  },
 })
