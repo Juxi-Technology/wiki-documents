@@ -2,3 +2,8 @@ node_modules/
 docs/.vitepress/dist/
 .DS_Store
 .remember/
+
+# 磁盘残留(root 所有,git 层面已移出,待 sudo 清理)
+docs/superpowers/
+docs/test.md
+docs/tutorials/so-arm101/
