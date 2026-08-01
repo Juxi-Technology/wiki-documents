@@ -63,6 +63,7 @@ const zhCN = {
           text: '机械臂',
           items: [
             { text: '机械臂总览', link: '/tutorials/robot-arms/' },
+                { text: '选型指南', link: '/tutorials/robot-arms/select-guide' },
             {
               text: 'SO-ARM101 系列',
               collapsed: false,
@@ -247,6 +248,7 @@ const en = {
           text: 'Robot Arms',
           items: [
             { text: 'Robot Arms Overview', link: '/en/tutorials/robot-arms/' },
+                { text: 'Selection Guide', link: '/en/tutorials/robot-arms/select-guide' },
             {
               text: 'SO-ARM101 Series',
               collapsed: false,
@@ -431,6 +433,7 @@ const zhHK = {
           text: '機械臂',
           items: [
             { text: '機械臂總覽', link: '/zh-HK/tutorials/robot-arms/' },
+                { text: '選型指南', link: '/zh-HK/tutorials/robot-arms/select-guide' },
             {
               text: 'SO-ARM101 系列',
               collapsed: false,
