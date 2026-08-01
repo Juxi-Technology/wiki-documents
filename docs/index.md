@@ -81,7 +81,7 @@ outline: false
 
 感谢你选择我们的产品！我们提供多种支持方式，以确保你的使用体验尽可能顺畅。
 
-- 🌐 官方网站：[https://www.juxitech.com](https://www.juxitech.com)
+- 🌐 官方网站：[https://www.juxitech.com](https://www.juxitech.com/zh-hans)
 - 💬 邮箱：support@juxitech.com
 - 📧 商务合作：sales@juxitech.com
 - 📺 B站：[https://space.bilibili.com/3546906737248821](https://space.bilibili.com/3546906737248821)

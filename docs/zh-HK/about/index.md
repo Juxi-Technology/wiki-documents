@@ -54,8 +54,8 @@ description: 鉅犀科技(Juxi Technology)——來自深圳前海的开源機�
 - 📧 支持：support@juxitech.com
 - 📧 產品：pe@juxitech.com
 - 📍 地址：深圳市前海區,廣東省,中國
-- 🌐 官網：[www.juxitech.com](https://www.juxitech.com)
-- 🛒 商城：[Shopify 商店](https://www.juxitech.com)
+- 🌐 官網：[www.juxitech.com](https://www.juxitech.com/zh-hant)
+- 🛒 商城：[Shopify 商店](https://www.juxitech.com/zh-hant)
 - 💻 GitHub：[Juxi-Technology](https://github.com/Juxi-Technology)
 
 ## 加入我們

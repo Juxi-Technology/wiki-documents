@@ -11,7 +11,7 @@ description: 基於 LeRobot 的全棧機器人學習技術
 
 ## 由 SO-ARM101 機械臂驅動
 
-[**🖱️ 產品購買**](https://www.juxitech.com) · [**📚 SO-ARM101 使用教程**](/zh-HK/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial)
+[**🖱️ 產品購買**](https://www.juxitech.com/zh-hant) · [**📚 SO-ARM101 使用教程**](/zh-HK/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial)
 
 ---
 

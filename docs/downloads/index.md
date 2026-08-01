@@ -61,5 +61,5 @@ description: 钜犀科技产品固件、SDK、上位机与开源代码下载中�
 ## 技术支持
 
 - 📧 邮箱：support@juxitech.com
-- 🌐 官方网站：[www.juxitech.com](https://www.juxitech.com)
+- 🌐 官方网站：[www.juxitech.com](https://www.juxitech.com/zh-hans)
 - 💻 GitHub 组织：[Juxi-Technology](https://github.com/Juxi-Technology)

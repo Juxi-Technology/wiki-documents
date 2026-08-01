@@ -81,7 +81,7 @@ outline: false
 
 感謝你選擇我們的產品！我們提供多種支援方式，以確保你的使用體驗盡可能順暢。
 
-- 🌐 官方網站：[https://www.juxitech.com](https://www.juxitech.com)
+- 🌐 官方網站：[https://www.juxitech.com](https://www.juxitech.com/zh-hant)
 - 💬 郵箱：support@juxitech.com
 - 📧 商務合作：sales@juxitech.com
 - 📺 B站：[https://space.bilibili.com/3546906737248821](https://space.bilibili.com/3546906737248821)

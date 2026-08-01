@@ -54,8 +54,8 @@ description: 钜犀科技(Juxi Technology)——来自深圳前海的开源机�
 - 📧 支持：support@juxitech.com
 - 📧 产品：pe@juxitech.com
 - 📍 地址：深圳市前海区,广东省,中国
-- 🌐 官网：[www.juxitech.com](https://www.juxitech.com)
-- 🛒 商城：[Shopify 商店](https://www.juxitech.com)
+- 🌐 官网：[www.juxitech.com](https://www.juxitech.com/zh-hans)
+- 🛒 商城：[Shopify 商店](https://www.juxitech.com/zh-hans)
 - 💻 GitHub：[Juxi-Technology](https://github.com/Juxi-Technology)
 - 📺 B站：[space.bilibili.com/3546906737248821](https://space.bilibili.com/3546906737248821)
 

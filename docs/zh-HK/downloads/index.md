@@ -61,5 +61,5 @@ description: 鉅犀科技產品固件、SDK、上位機與開源代碼下載中�
 ## 技術支援
 
 - 📧 郵箱：support@juxitech.com
-- 🌐 官方網站：[www.juxitech.com](https://www.juxitech.com)
+- 🌐 官方網站：[www.juxitech.com](https://www.juxitech.com/zh-hant)
 - 💻 GitHub 組織：[Juxi-Technology](https://github.com/Juxi-Technology)

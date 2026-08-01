@@ -23,7 +23,7 @@ description: 加入钜犀科技贡献者社区
 |------|------|------|
 | 💬 GitHub Issues | 提问、讨论、报告问题 | [github.com/Juxi-Technology/wiki-documents/issues](https://github.com/Juxi-Technology/wiki-documents/issues) |
 | 📧 邮箱 | 技术支持与商务 | [support@juxitech.com](mailto:support@juxitech.com) |
-| 🛒 商城 | 购买产品 | [www.juxitech.com](https://www.juxitech.com) |
+| 🛒 商城 | 购买产品 | [www.juxitech.com](https://www.juxitech.com/zh-hans) |
 | 📺 B站 | 产品演示与教程视频 | [space.bilibili.com/3546906737248821](https://space.bilibili.com/3546906737248821) |
 | 📚 Feishu Wiki | 开源资料(原理图/固件/CAD) | [juxitech.feishu.cn](https://juxitech.feishu.cn) |
 | 💬 即时社群 | QQ 群/微信群/Discord | 即将开放 |

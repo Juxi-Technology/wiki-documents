@@ -11,7 +11,7 @@ description: 基于 LeRobot 的全栈机器人学习技术
 
 ## 由 SO-ARM101 机械臂驱动
 
-[**🖱️ 产品购买**](https://www.juxitech.com) · [**📚 SO-ARM101 使用教程**](/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial)
+[**🖱️ 产品购买**](https://www.juxitech.com/zh-hans) · [**📚 SO-ARM101 使用教程**](/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial)
 
 ---
 
