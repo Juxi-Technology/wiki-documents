@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://juxi-technology.github.io/wiki-documents/sitemap.xml
+Sitemap: https://wiki.juxitech.com/sitemap.xml

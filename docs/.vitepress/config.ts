@@ -4,9 +4,9 @@ import { defineConfig } from 'vitepress'
 const globalHead = [
   ['meta', { name: 'baidu-site-verification', content: 'codeva-Lzl2d4xzcv' }],
   ['meta', { property: 'og:type', content: 'website' }],
-  ['meta', { property: 'og:image', content: 'https://juxi-technology.github.io/wiki-documents/images/logos/logo-black.png' }],
+  ['meta', { property: 'og:image', content: 'https://wiki.juxitech.com/images/logos/logo-black.png' }],
   ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-  ['link', { rel: 'canonical', href: 'https://juxi-technology.github.io/wiki-documents/' }],
+  ['link', { rel: 'canonical', href: 'https://wiki.juxitech.com/' }],
   ['meta', { name: 'robots', content: 'index, follow' }],
   // 百度统计(替换 YOUR_BAIDU_ID 为真实统计 ID;不配置则脚本为空 no-op)
   ['script', {}, `(function(){
@@ -578,7 +578,7 @@ export default defineConfig({
   lang: 'zh-CN',
   title: '钜犀科技 Wiki',
   description: '钜犀科技产品教程与文档中心',
-  base: '/wiki-documents/',
+  base: '/',
   cleanUrls: true,
   ignoreDeadLinks: true,
   lastUpdated: true,
@@ -609,7 +609,7 @@ export default defineConfig({
   },
   // 结构化数据:每页注入 JSON-LD(首页 Organization,其余 Article)
   transformHead({ pageData }) {
-    const base = 'https://juxi-technology.github.io/wiki-documents'
+    const base = 'https://wiki.juxitech.com'
     const isHome = pageData.relativePath === 'index.md'
     let ld
     if (isHome) {

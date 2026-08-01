@@ -4,7 +4,7 @@
 
 Open documentation platform for Juxi Technology's robotics and AI hardware products. Covers robot arms, sensors, accessories, and developer guides — from SO-ARM101 to IMU modules.
 
-🌐 **[juxi-technology.github.io/wiki-documents](https://juxi-technology.github.io/wiki-documents/)**
+🌐 **[wiki.juxitech.com](https://wiki.juxitech.com/)**
 
 ## Local Development
 
@@ -22,7 +22,7 @@ npm run docs:preview    # Preview production build
 
 ## Contributing
 
-See [Contributing Guide](https://juxi-technology.github.io/wiki-documents/community/contributing) and [Pull Request Template](.github/PULL_REQUEST_TEMPLATE.md).
+See [Contributing Guide](https://wiki.juxitech.com/community/contributing) and [Pull Request Template](.github/PULL_REQUEST_TEMPLATE.md).
 
 ## Tech Stack
 

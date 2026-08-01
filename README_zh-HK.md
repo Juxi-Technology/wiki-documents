@@ -4,7 +4,7 @@
 
 鉅犀科技機器人與 AI 硬體產品的開放文檔平台。涵蓋機器人機械臂、傳感器、配件及開發者指南。
 
-🌐 **[juxi-technology.github.io/wiki-documents](https://juxi-technology.github.io/wiki-documents/)**
+🌐 **[wiki.juxitech.com](https://wiki.juxitech.com/)**
 
 ## 本地開發
 
@@ -22,7 +22,7 @@ npm run docs:preview    # 預覽生產構建
 
 ## 貢獻
 
-參見[貢獻指南](https://juxi-technology.github.io/wiki-documents/community/contributing)和 [Pull Request 模板](.github/PULL_REQUEST_TEMPLATE.md)。
+參見[貢獻指南](https://wiki.juxitech.com/community/contributing)和 [Pull Request 模板](.github/PULL_REQUEST_TEMPLATE.md)。
 
 ## 技術堆疊
 
