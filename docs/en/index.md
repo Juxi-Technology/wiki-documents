@@ -22,6 +22,23 @@ outline: false
 
 </div>
 
+## Product Series
+
+<div class="category-grid">
+  <a :href="withBase('/en/tutorials/robot-arms/')" class="category-card">
+    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="Robot Arms">
+    <span>Robot Arms</span>
+  </a>
+  <a :href="withBase('/en/tutorials/sensors/')" class="category-card">
+    <img :src="withBase('/images/categories/IMU.png')" alt="Sensors">
+    <span>Sensors</span>
+  </a>
+  <a :href="withBase('/en/tutorials/accessories/')" class="category-card">
+    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="Accessories">
+    <span>Accessories</span>
+  </a>
+</div>
+
 ## Latest Documents
 
 <div class="card-grid">

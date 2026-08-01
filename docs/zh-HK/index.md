@@ -22,6 +22,23 @@ outline: false
 
 </div>
 
+## 產品系列
+
+<div class="category-grid">
+  <a :href="withBase('/zh-HK/tutorials/robot-arms/')" class="category-card">
+    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="機械臂系列">
+    <span>機械臂系列</span>
+  </a>
+  <a :href="withBase('/zh-HK/tutorials/sensors/')" class="category-card">
+    <img :src="withBase('/images/categories/IMU.png')" alt="傳感器系列">
+    <span>傳感器系列</span>
+  </a>
+  <a :href="withBase('/zh-HK/tutorials/accessories/')" class="category-card">
+    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="配件系列">
+    <span>配件系列</span>
+  </a>
+</div>
+
 ## 最新文件
 
 <div class="card-grid">

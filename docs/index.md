@@ -22,6 +22,23 @@ outline: false
 
 </div>
 
+## 产品系列
+
+<div class="category-grid">
+  <a :href="withBase('/tutorials/robot-arms/')" class="category-card">
+    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="机械臂系列">
+    <span>机械臂系列</span>
+  </a>
+  <a :href="withBase('/tutorials/sensors/')" class="category-card">
+    <img :src="withBase('/images/categories/IMU.png')" alt="传感器系列">
+    <span>传感器系列</span>
+  </a>
+  <a :href="withBase('/tutorials/accessories/')" class="category-card">
+    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="配件系列">
+    <span>配件系列</span>
+  </a>
+</div>
+
 ## 最新文档
 
 <div class="card-grid">
