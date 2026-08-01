@@ -8,6 +8,15 @@ const globalHead = [
   ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
   ['link', { rel: 'canonical', href: 'https://juxi-technology.github.io/wiki-documents/' }],
   ['meta', { name: 'robots', content: 'index, follow' }],
+  // 百度统计(替换 YOUR_BAIDU_ID 为真实统计 ID;不配置则脚本为空 no-op)
+  ['script', {}, `(function(){
+    if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') return;
+    var _hmt = _hmt || [];
+    var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?' + 'YOUR_BAIDU_ID';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(hm, s);
+  })();`],
 ]
 
 // ---- 简体中文 (root) ----
