@@ -563,7 +563,12 @@ export default defineConfig({
   lastUpdated: true,
   // public/ 下的 .md 是历史遗留占位/草稿(飞书链接),不应渲染为页面
   // test.md / superpowers/ 已在阶段 1 移出 docs/(git 层面),磁盘残留待 sudo 清理,构建时一并排除
-  srcExclude: ['public/**/*.md', 'test.md', 'superpowers/**/*.md'],
+  srcExclude: [
+    'public/**/*.md',
+    'superpowers/**/*.md',
+    'test.md',
+    'tutorials/so-arm101/**/*.md',
+  ],
   head: globalHead,
   locales: {
     root: zhCN,
