@@ -4,33 +4,44 @@ import { useData } from 'vitepress'
 
 const { localeIndex, frontmatter, page } = useData()
 
-// 购买链接
 const SITE_URL = 'https://www.juxitech.com'
 
-// 产品路径 → Shopify 商品页映射(按教程路径片段匹配)
+// 产品路径 → Shopify 商品路径映射(不含语言前缀,由 localePrefix 拼接)
 const PRODUCT_MAP = [
-  { match: 'so-arm101', url: 'https://www.juxitech.com/products/so-arm101-developers-kit' },
-  { match: 'amazing-hand', url: 'https://www.juxitech.com/products/amazinghand' },
-  { match: 'lekiwi', url: 'https://www.juxitech.com/products/lekiwi-embodied-intelligence-mobile-robotic-car' },
-  { match: 'imu', url: 'https://www.juxitech.com/products/imu-module-ahrs-attitude-and-heading-angle-sensor' },
-  { match: 'KWS', url: 'https://www.juxitech.com/products/ai-voice-recognition-module' },
-  { match: 'feetech', url: 'https://www.juxitech.com/products/feetech-scs0009-serial-bus-servo' },
-  { match: '2dof-camera-gimbal', url: 'https://www.juxitech.com/products/2-dof-servo-pan-tilt-unit' },
-  { match: 'heart-rate-spo2', url: 'https://www.juxitech.com/collections/perception' },
-  { match: '0.91-oled', url: 'https://www.juxitech.com/collections/all' },
-  { match: '4k-hdmi', url: 'https://www.juxitech.com/products/4k-hd-hdmi-capture-card' },
-  { match: 'kvm-switch', url: 'https://www.juxitech.com/products/4-in-1-kvm-switch-hub-ttl-serial-bluetooth-docking-station' },
-  { match: 'usb-audio-card', url: 'https://www.juxitech.com/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction' },
-  { match: 'jetson-csi', url: 'https://www.juxitech.com/collections/edge-computing' },
-  { match: 'usb-auto-focus', url: 'https://www.juxitech.com/collections/perception' },
+  { match: 'so-arm101', path: 'products/so-arm101-developers-kit' },
+  { match: 'amazing-hand', path: 'products/amazinghand' },
+  { match: 'lekiwi', path: 'products/lekiwi-embodied-intelligence-mobile-robotic-car' },
+  { match: 'imu', path: 'products/imu-module-ahrs-attitude-and-heading-angle-sensor' },
+  { match: 'KWS', path: 'products/ai-voice-recognition-module' },
+  { match: 'feetech', path: 'products/feetech-scs0009-serial-bus-servo' },
+  { match: '2dof-camera-gimbal', path: 'products/2-dof-servo-pan-tilt-unit' },
+  { match: 'heart-rate-spo2', path: 'collections/perception' },
+  { match: '0.91-oled', path: 'collections/all' },
+  { match: '4k-hdmi', path: 'products/4k-hd-hdmi-capture-card' },
+  { match: 'kvm-switch', path: 'products/4-in-1-kvm-switch-hub-ttl-serial-bluetooth-docking-station' },
+  { match: 'usb-audio-card', path: 'products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction' },
+  { match: 'jetson-csi', path: 'collections/edge-computing' },
+  { match: 'usb-auto-focus', path: 'collections/perception' },
 ]
 
-// 根据当前页面路径匹配产品购买链接
+// Shopify 语言前缀:Wiki 语言 → Shopify 语言
+// zh-CN(root)→ zh-hans;zh-HK → zh-hant;en → 无前缀
+const localePrefix = computed(() => {
+  if (localeIndex.value === 'zh-HK') return 'zh-hant/'
+  if (localeIndex.value === 'root') return 'zh-hans/'
+  return ''
+})
+
+// 根据当前页面路径匹配产品购买链接(带语言前缀)
 const productUrl = computed(() => {
   const path = page.value.relativePath
   const matched = PRODUCT_MAP.find((p) => path.includes(p.match))
-  return matched ? matched.url : SITE_URL
+  const basePath = matched ? matched.path : ''
+  return `${SITE_URL}/${localePrefix.value}${basePath}`
 })
+
+// 官网链接同样带语言前缀
+const siteUrl = computed(() => `${SITE_URL}/${localePrefix.value}`)
 
 // 非教程页不显示
 const isVisible = computed(() => {
@@ -53,7 +64,7 @@ const copy = computed(() => {
   <div v-if="isVisible" class="purchase-bar">
     <span class="purchase-text">{{ copy.buy }}</span>
     <a :href="productUrl" target="_blank" rel="noopener" class="purchase-btn primary">{{ copy.store }}</a>
-    <a :href="SITE_URL" target="_blank" rel="noopener" class="purchase-btn">{{ copy.site }}</a>
+    <a :href="siteUrl" target="_blank" rel="noopener" class="purchase-btn">{{ copy.site }}</a>
   </div>
 </template>
 
