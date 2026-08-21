@@ -613,6 +613,11 @@ export default defineConfig({
     'superpowers/**/*.md',
     'test.md',
     'tutorials/so-arm101/**/*.md',
+    // 冗余的 so-arm101-tutorial 副本(与 canonical 内容发散,暂不发布)
+    'tutorials/so-arm101-tutorial.md',
+    'en/tutorials/so-arm101-tutorial.md',
+    'en/tutorials/robot-arms/so-arm101-tutorial.md',
+    'zh-HK/tutorials/so-arm101-tutorial.md',
   ],
   head: globalHead,
   locales: {
