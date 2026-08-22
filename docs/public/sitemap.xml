@@ -14,8 +14,13 @@
   <url><loc>https://wiki.juxitech.com/en/community/</loc></url>
   <url><loc>https://wiki.juxitech.com/en/community/contributing</loc></url>
   <url><loc>https://wiki.juxitech.com/en/downloads/</loc></url>
+  <url><loc>https://wiki.juxitech.com/en/products/esp32-s3-wifi-module</loc></url>
+  <url><loc>https://wiki.juxitech.com/en/products/gps-beidou-module</loc></url>
   <url><loc>https://wiki.juxitech.com/en/products/jetson-orin-nx-super-kit</loc></url>
   <url><loc>https://wiki.juxitech.com/en/products/realsense-depth-camera</loc></url>
+  <url><loc>https://wiki.juxitech.com/en/products/robot-vision-kit</loc></url>
+  <url><loc>https://wiki.juxitech.com/en/products/servo-driver-board</loc></url>
+  <url><loc>https://wiki.juxitech.com/en/products/tpu-flexible-gripper</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tech/</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tech/api-reference</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tech/dev-guide</loc></url>
@@ -63,6 +68,7 @@
   <url><loc>https://wiki.juxitech.com/en/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial</loc></url>
+  <url><loc>https://wiki.juxitech.com/en/tutorials/ros-intro</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tutorials/sensors/</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tutorials/sensors/imu/</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tutorials/sensors/imu/calibration</loc></url>
@@ -82,8 +88,13 @@
   <url><loc>https://wiki.juxitech.com/en/tutorials/sensors/imu/ros-examples/ros1</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tutorials/sensors/imu/ros-examples/ros2</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tutorials/software-config</loc></url>
+  <url><loc>https://wiki.juxitech.com/products/esp32-s3-wifi-module</loc></url>
+  <url><loc>https://wiki.juxitech.com/products/gps-beidou-module</loc></url>
   <url><loc>https://wiki.juxitech.com/products/jetson-orin-nx-super-kit</loc></url>
   <url><loc>https://wiki.juxitech.com/products/realsense-depth-camera</loc></url>
+  <url><loc>https://wiki.juxitech.com/products/robot-vision-kit</loc></url>
+  <url><loc>https://wiki.juxitech.com/products/servo-driver-board</loc></url>
+  <url><loc>https://wiki.juxitech.com/products/tpu-flexible-gripper</loc></url>
   <url><loc>https://wiki.juxitech.com/tech/</loc></url>
   <url><loc>https://wiki.juxitech.com/tech/api-reference</loc></url>
   <url><loc>https://wiki.juxitech.com/tech/dev-guide</loc></url>
@@ -131,6 +142,7 @@
   <url><loc>https://wiki.juxitech.com/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility</loc></url>
   <url><loc>https://wiki.juxitech.com/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation</loc></url>
   <url><loc>https://wiki.juxitech.com/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial</loc></url>
+  <url><loc>https://wiki.juxitech.com/tutorials/ros-intro</loc></url>
   <url><loc>https://wiki.juxitech.com/tutorials/sensors/</loc></url>
   <url><loc>https://wiki.juxitech.com/tutorials/sensors/imu/</loc></url>
   <url><loc>https://wiki.juxitech.com/tutorials/sensors/imu/calibration</loc></url>
@@ -157,8 +169,13 @@
   <url><loc>https://wiki.juxitech.com/zh-HK/community/</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/community/contributing</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/downloads/</loc></url>
+  <url><loc>https://wiki.juxitech.com/zh-HK/products/esp32-s3-wifi-module</loc></url>
+  <url><loc>https://wiki.juxitech.com/zh-HK/products/gps-beidou-module</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/products/jetson-orin-nx-super-kit</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/products/realsense-depth-camera</loc></url>
+  <url><loc>https://wiki.juxitech.com/zh-HK/products/robot-vision-kit</loc></url>
+  <url><loc>https://wiki.juxitech.com/zh-HK/products/servo-driver-board</loc></url>
+  <url><loc>https://wiki.juxitech.com/zh-HK/products/tpu-flexible-gripper</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tech/</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tech/api-reference</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tech/dev-guide</loc></url>
@@ -206,6 +223,7 @@
   <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial</loc></url>
+  <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/ros-intro</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/sensors/</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/calibration</loc></url>

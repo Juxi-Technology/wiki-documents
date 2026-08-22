@@ -6,8 +6,13 @@
 ## Simplified Chinese (简体中文)
 
 - [贡献指南](https://wiki.juxitech.com/community/contributing): 如何为钜犀科技 Wiki 贡献内容
+- [ESP32-S3 WiFi 视频模块](https://wiki.juxitech.com/products/esp32-s3-wifi-module): 钜犀科技 ESP32-S3 WiFi 图传模块——200 万像素摄像头,WiFi 实时图传,AI 视觉识别(颜色/人脸/二维码),AP+STA 双模式
+- [GPS & 北斗 GNSS 定位模块](https://wiki.juxitech.com/products/gps-beidou-module): 钜犀科技 GPS & 北斗 GNSS 定位模块——ATGM336H-5N 芯片,四大卫星系统联合定位,2.5m 精度,支持 ROS
 - [Jetson Orin NX Super 开发套件](https://wiki.juxitech.com/products/jetson-orin-nx-super-kit): 钜犀科技 NVIDIA Jetson Orin NX SUPER 开发套件——117/157 TOPS 边缘 AI 计算平台,预装 Ubuntu 22.04 与 256GB NVMe SSD
 - [3D RealSense 深度相机](https://wiki.juxitech.com/products/realsense-depth-camera): 钜犀科技 3D RealSense 深度相机——D435i/D405/D405CB 三型号,高精度深度感知,适配 XLeRobot 与 SO-ARM101
+- [SO-ARM101 机械臂视觉套件](https://wiki.juxitech.com/products/robot-vision-kit): 钜犀科技 SO-ARM101 机械臂视觉套件——腕部/侧方/俯视三视角安装,60FPS 定焦或 30FPS 自动对焦变焦相机,兼容 ACT/Smolvla/Pi0/GR00T 训练框架
+- [JUXI 总线舵机驱动板](https://wiki.juxitech.com/products/servo-driver-board): 钜犀科技 JUXI 总线舵机驱动板——单总线控制 253 个舵机,7~12.6V 宽电压,Type-C 即插即用,专为 LeRobot SO-ARM 设计
+- [SO-ARM101 TPU 柔性夹爪](https://wiki.juxitech.com/products/tpu-flexible-gripper): 钜犀科技 SO-ARM101 TPU 柔性夹爪——软 TPU 材质安全抓取不规则/易碎物品,支持臂载相机,可选 30FPS 变焦或 60FPS 定焦
 - [/tech/api-reference](https://wiki.juxitech.com/tech/api-reference)
 - [/tech/dev-guide](https://wiki.juxitech.com/tech/dev-guide)
 - [树莓派/Jetson-OLED副屏教程](https://wiki.juxitech.com/tutorials/accessories/0.91-oled-screen-tutorial): 使用0.91寸OLED测试I2C通讯功能，按照下面接线进行连接：
@@ -47,6 +52,7 @@
 - [Jetson Orin上Pytorch不兼容问题](https://wiki.juxitech.com/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility): 安装jetson版本的pytorch
 - [顶置摄像头安装座安装教程](https://wiki.juxitech.com/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation): USB自动对接摄像头调试请参考该教程USB自动对焦摄像头教程
 - [LeRobot机械臂教程](https://wiki.juxitech.com/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial): 本教程已更新至12月15日，可选择跟随最新版官方文档进行操作，官方文档具体教程可以参考本链接。若需要URDF等文件请参考本链接。9月15日旧版本请参考该链接。SO-ARM101与SO-ARM100运行代码相互兼容。
+- [ROS 入门教程](https://wiki.juxitech.com/tutorials/ros-intro): 钜犀科技 ROS 入门教程——ROS 1/ROS 2 环境安装、话题/服务/launch 基础概念,结合 IMU 与 SO-ARM101 机器人实践
 - [IMU 校准指南](https://wiki.juxitech.com/tutorials/sensors/imu/calibration): 钜犀科技高精度 IMU 模块校准指南——整体校准、磁力计校准、温度校准,支持串口与 I2C 双模式
 - [Arduino](https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino): 本次例程使用的是Arduino Nano开发板，一台windows电脑、杜邦线若干、IMU姿态传感器。
 - [Jetson系列](https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson): 本教程以Jetson Orin NX主板为例。
@@ -70,8 +76,13 @@
 ## English
 
 - [Contributing Guide](https://wiki.juxitech.com/en/community/contributing): How to contribute to the Juxi Technology Wiki
+- [ESP32-S3 WiFi Video Module](https://wiki.juxitech.com/en/products/esp32-s3-wifi-module): Juxi Technology ESP32-S3 WiFi video module — 2MP camera, real-time WiFi streaming, AI vision (color/face/QR), AP+STA dual mode
+- [GPS & BeiDou GNSS Positioning Module](https://wiki.juxitech.com/en/products/gps-beidou-module): Juxi Technology GPS & BeiDou GNSS module — ATGM336H-5N, four satellite systems, 2.5m accuracy, ROS ready
 - [Jetson Orin NX Super Developer Kit](https://wiki.juxitech.com/en/products/jetson-orin-nx-super-kit): Juxi Technology NVIDIA Jetson Orin NX SUPER dev kit — 117/157 TOPS edge AI platform, preinstalled Ubuntu 22.04 & 256GB NVMe SSD
 - [3D RealSense Depth Camera](https://wiki.juxitech.com/en/products/realsense-depth-camera): Juxi Technology 3D RealSense depth camera — D435i/D405/D405CB models, high-precision depth perception for XLeRobot & SO-ARM101
+- [SO-ARM101 Robot Vision Kit](https://wiki.juxitech.com/en/products/robot-vision-kit): Juxi Technology SO-ARM101 robot vision kit — wrist/side/overhead mounts, 60FPS fixed or 30FPS autofocus zoom camera, compatible with ACT/Smolvla/Pi0/GR00T frameworks
+- [JUXI Bus Servo Driver Board](https://wiki.juxitech.com/en/products/servo-driver-board): Juxi Technology JUXI bus servo driver board — single-bus control of 253 servos, 7-12.6V wide input, Type-C plug-and-play, designed for LeRobot SO-ARM
+- [SO-ARM101 TPU Flexible Gripper](https://wiki.juxitech.com/en/products/tpu-flexible-gripper): Juxi Technology SO-ARM101 TPU flexible gripper — soft TPU safely grasps irregular/fragile items, arm camera compatible, 30FPS zoom or 60FPS fixed options
 - [/tech/api-reference](https://wiki.juxitech.com/en/tech/api-reference)
 - [/tech/dev-guide](https://wiki.juxitech.com/en/tech/dev-guide)
 - [Raspberry Pi / Jetson - OLED Secondary Screen Tutorial](https://wiki.juxitech.com/en/tutorials/accessories/0.91-oled-screen-tutorial): Use a 0.91-inch OLED to test the I2C communication function, and connect according to the following wiring:
@@ -112,6 +123,7 @@
 - [Pytorch Incompatibility Issue on Jetson Orin](https://wiki.juxitech.com/en/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility): Possible Problem 1:
 - [Installation Tutorial for the Top-mounted Camera Mount](https://wiki.juxitech.com/en/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation): Please refer to this tutorial for debugging the USB auto-docking cameraUSB Auto-Focus Camera Tutorial
 - [LeRobot Robot Arm Tutorial](https://wiki.juxitech.com/en/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial): This tutorial has been updated to December 15th, and you can choose to follow the latest version  of the official documentation for operation . For th
+- [ROS Intro Tutorial](https://wiki.juxitech.com/en/tutorials/ros-intro): Juxi Technology ROS tutorial — ROS 1/ROS 2 environment setup, topics/services/launch basics, hands-on with IMU & SO-ARM101
 - [IMU Calibration Guide](https://wiki.juxitech.com/en/tutorials/sensors/imu/calibration): Juxi Technology high-precision IMU module calibration — full, magnetometer, and temperature calibration over serial & I2C
 - [Arduino](https://wiki.juxitech.com/en/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino): This routine uses an Arduino Nano development board, a Windows computer, several DuPont wires, and an IMU attitude sensor.
 - [Jetson Series](https://wiki.juxitech.com/en/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson): This tutorial takes the Jetson Orin NX motherboard as an example.
@@ -134,8 +146,13 @@
 ## Traditional Chinese (繁體中文)
 
 - [貢獻指南](https://wiki.juxitech.com/zh-HK/community/contributing): 如何為鉅犀科技 Wiki 貢獻內容
+- [ESP32-S3 WiFi 視頻模組](https://wiki.juxitech.com/zh-HK/products/esp32-s3-wifi-module): 鉅犀科技 ESP32-S3 WiFi 圖傳模組——200 萬像素攝像頭,WiFi 實時圖傳,AI 視覺識別(顏色/人臉/二維碼),AP+STA 雙模式
+- [GPS & 北斗 GNSS 定位模組](https://wiki.juxitech.com/zh-HK/products/gps-beidou-module): 鉅犀科技 GPS & 北斗 GNSS 定位模組——ATGM336H-5N 芯片,四大衛星系統聯合定位,2.5m 精度,支持 ROS
 - [Jetson Orin NX Super 開發套件](https://wiki.juxitech.com/zh-HK/products/jetson-orin-nx-super-kit): 鉅犀科技 NVIDIA Jetson Orin NX SUPER 開發套件——117/157 TOPS 邊緣 AI 計算平台,預裝 Ubuntu 22.04 與 256GB NVMe SSD
 - [3D RealSense 深度相機](https://wiki.juxitech.com/zh-HK/products/realsense-depth-camera): 鉅犀科技 3D RealSense 深度相機——D435i/D405/D405CB 三型號,高精度深度感知,適配 XLeRobot 與 SO-ARM101
+- [SO-ARM101 機械臂視覺套件](https://wiki.juxitech.com/zh-HK/products/robot-vision-kit): 鉅犀科技 SO-ARM101 機械臂視覺套件——腕部/側方/俯視三視角安裝,60FPS 定焦或 30FPS 自動對焦變焦相機,兼容 ACT/Smolvla/Pi0/GR00T 訓練框架
+- [JUXI 總線舵機驅動板](https://wiki.juxitech.com/zh-HK/products/servo-driver-board): 鉅犀科技 JUXI 總線舵機驅動板——單總線控制 253 個舵機,7~12.6V 寬電壓,Type-C 即插即用,專為 LeRobot SO-ARM 設計
+- [SO-ARM101 TPU 柔性夾爪](https://wiki.juxitech.com/zh-HK/products/tpu-flexible-gripper): 鉅犀科技 SO-ARM101 TPU 柔性夾爪——軟 TPU 材質安全抓取不規則/易碎物品,支持臂載相機,可選 30FPS 變焦或 60FPS 定焦
 - [/tech/api-reference](https://wiki.juxitech.com/zh-HK/tech/api-reference)
 - [/tech/dev-guide](https://wiki.juxitech.com/zh-HK/tech/dev-guide)
 - [樹莓派/Jetson-OLED副屏教程](https://wiki.juxitech.com/zh-HK/tutorials/accessories/0.91-oled-screen-tutorial): 使用0.91寸OLED測試I2C通訊功能，按照下面接線進行連接：
@@ -175,6 +192,7 @@
 - [Jetson Orin上Pytorch不兼容问题](https://wiki.juxitech.com/zh-HK/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility): 安装jetson版本的pytorch
 - [顶置摄像头安装座安装教程](https://wiki.juxitech.com/zh-HK/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation): USB自动对接摄像头调试请参考该教程USB自动对焦摄像头教程
 - [LeRobot機械臂教程](https://wiki.juxitech.com/zh-HK/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial): 本教程已更新至12月15日，可選擇跟隨最新版官方文檔進行操作，官方文檔具體教程可以參考本鏈接。若需要URDF等文件請參考本鏈接。9月15日舊版本請參考該鏈接。SO-ARM101與SO-ARM100運行代碼相互兼容。
+- [ROS 入門教程](https://wiki.juxitech.com/zh-HK/tutorials/ros-intro): 鉅犀科技 ROS 入門教程——ROS 1/ROS 2 環境安裝、話題/服務/launch 基礎概念,結合 IMU 與 SO-ARM101 機器人實踐
 - [IMU 校準指南](https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/calibration): 鉅犀科技高精度 IMU 模組校準指南——整體校準、磁力計校準、溫度校準,支持串口與 I2C 雙模式
 - [Arduino](https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino): 本次例程使用的是Arduino Nano開發板，一臺windows電腦、杜邦線若干、IMU姿態傳感器。
 - [Jetson系列](https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson): 本教程以Jetson Orin NX主板爲例。

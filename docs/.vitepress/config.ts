@@ -46,6 +46,7 @@ const zhCN = {
           text: '快速开始',
           items: [
             { text: '常见问题 FAQ', link: '/tutorials/faq' },
+            { text: 'ROS 入门', link: '/tutorials/ros-intro' },
             { text: '快速开始', link: '/tutorials/getting-started' },
             { text: '硬件设置', link: '/tutorials/hardware-setup' },
             { text: '软件配置', link: '/tutorials/software-config' },
@@ -204,6 +205,11 @@ const zhCN = {
         { text: '产品', items: [
           { text: 'Jetson Orin NX Super 开发套件', link: '/products/jetson-orin-nx-super-kit' },
           { text: '3D RealSense 深度相机', link: '/products/realsense-depth-camera' },
+          { text: '总线舵机驱动板', link: '/products/servo-driver-board' },
+          { text: 'GPS & 北斗 GNSS 定位模块', link: '/products/gps-beidou-module' },
+          { text: 'ESP32-S3 WiFi 视频模块', link: '/products/esp32-s3-wifi-module' },
+          { text: 'SO-ARM101 TPU 柔性夹爪', link: '/products/tpu-flexible-gripper' },
+          { text: 'SO-ARM101 机械臂视觉套件', link: '/products/robot-vision-kit' },
         ] },
       ],
       '/downloads/': [
@@ -246,6 +252,7 @@ const en = {
           text: 'Getting Started',
           items: [
             { text: 'FAQ', link: '/en/tutorials/faq' },
+            { text: 'ROS Intro', link: '/en/tutorials/ros-intro' },
             { text: 'Getting Started', link: '/en/tutorials/getting-started' },
             { text: 'Hardware Setup', link: '/en/tutorials/hardware-setup' },
             { text: 'Software Config', link: '/en/tutorials/software-config' },
@@ -404,6 +411,11 @@ const en = {
         { text: 'Products', items: [
           { text: 'Jetson Orin NX Super Dev Kit', link: '/en/products/jetson-orin-nx-super-kit' },
           { text: '3D RealSense Depth Camera', link: '/en/products/realsense-depth-camera' },
+          { text: 'Bus Servo Driver Board', link: '/en/products/servo-driver-board' },
+          { text: 'GPS & BeiDou GNSS Module', link: '/en/products/gps-beidou-module' },
+          { text: 'ESP32-S3 WiFi Video Module', link: '/en/products/esp32-s3-wifi-module' },
+          { text: 'SO-ARM101 TPU Flexible Gripper', link: '/en/products/tpu-flexible-gripper' },
+          { text: 'SO-ARM101 Robot Vision Kit', link: '/en/products/robot-vision-kit' },
         ] },
       ],
       '/en/downloads/': [
@@ -446,6 +458,7 @@ const zhHK = {
           text: '快速開始',
           items: [
             { text: '常見問題 FAQ', link: '/zh-HK/tutorials/faq' },
+            { text: 'ROS 入門', link: '/zh-HK/tutorials/ros-intro' },
             { text: '快速開始', link: '/zh-HK/tutorials/getting-started' },
             { text: '硬件設置', link: '/zh-HK/tutorials/hardware-setup' },
             { text: '軟件配置', link: '/zh-HK/tutorials/software-config' },
@@ -604,6 +617,11 @@ const zhHK = {
         { text: '產品', items: [
           { text: 'Jetson Orin NX Super 開發套件', link: '/zh-HK/products/jetson-orin-nx-super-kit' },
           { text: '3D RealSense 深度相機', link: '/zh-HK/products/realsense-depth-camera' },
+          { text: '總線舵機驅動板', link: '/zh-HK/products/servo-driver-board' },
+          { text: 'GPS & 北斗 GNSS 定位模組', link: '/zh-HK/products/gps-beidou-module' },
+          { text: 'ESP32-S3 WiFi 視頻模組', link: '/zh-HK/products/esp32-s3-wifi-module' },
+          { text: 'SO-ARM101 TPU 柔性夾爪', link: '/zh-HK/products/tpu-flexible-gripper' },
+          { text: 'SO-ARM101 機械臂視覺套件', link: '/zh-HK/products/robot-vision-kit' },
         ] },
       ],
       '/zh-HK/downloads/': [
