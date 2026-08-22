@@ -67,12 +67,16 @@
   <url><loc>https://wiki.juxitech.com/de/tutorials/learning-resources/jetson-orin-pytorch-compatibility</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/learning-resources/software-config</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/robot-arms/lekiwi/Lekiwi-Assembly</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/robot-arms/select-guide</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/ros-intro</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/sensors/imu/calibration</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino</loc></url>
@@ -249,12 +253,16 @@
   <url><loc>https://wiki.juxitech.com/es/tutorials/learning-resources/jetson-orin-pytorch-compatibility</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/learning-resources/software-config</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/robot-arms/lekiwi/Lekiwi-Assembly</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/robot-arms/select-guide</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/ros-intro</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/sensors/imu/calibration</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino</loc></url>
@@ -334,11 +342,15 @@
   <url><loc>https://wiki.juxitech.com/fr/tutorials/learning-resources/jetson-orin-pytorch-compatibility</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/tutorials/learning-resources/software-config</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/robot-arms/lekiwi/Lekiwi-Assembly</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/tutorials/robot-arms/select-guide</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/tutorials/ros-intro</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/tutorials/sensors/imu/calibration</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino</loc></url>
@@ -418,12 +430,16 @@
   <url><loc>https://wiki.juxitech.com/it/tutorials/learning-resources/jetson-orin-pytorch-compatibility</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/learning-resources/software-config</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/robot-arms/lekiwi/Lekiwi-Assembly</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/robot-arms/select-guide</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/ros-intro</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/sensors/imu/calibration</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino</loc></url>
@@ -503,12 +519,16 @@
   <url><loc>https://wiki.juxitech.com/ja/tutorials/learning-resources/jetson-orin-pytorch-compatibility</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/learning-resources/software-config</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/robot-arms/lekiwi/Lekiwi-Assembly</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/robot-arms/select-guide</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/ros-intro</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/sensors/imu/calibration</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino</loc></url>
@@ -588,11 +608,15 @@
   <url><loc>https://wiki.juxitech.com/ko/tutorials/learning-resources/jetson-orin-pytorch-compatibility</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/tutorials/learning-resources/software-config</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/robot-arms/lekiwi/Lekiwi-Assembly</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/tutorials/robot-arms/select-guide</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/tutorials/ros-intro</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/tutorials/sensors/imu/calibration</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino</loc></url>
