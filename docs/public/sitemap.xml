@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://wiki.juxitech.com/</loc></url>
+  <url><loc>https://wiki.juxitech.com/about/</loc></url>
   <url><loc>https://wiki.juxitech.com/cases/</loc></url>
+  <url><loc>https://wiki.juxitech.com/changelog/</loc></url>
   <url><loc>https://wiki.juxitech.com/community/</loc></url>
   <url><loc>https://wiki.juxitech.com/community/contributing</loc></url>
+  <url><loc>https://wiki.juxitech.com/downloads/</loc></url>
   <url><loc>https://wiki.juxitech.com/en/</loc></url>
+  <url><loc>https://wiki.juxitech.com/en/about/</loc></url>
   <url><loc>https://wiki.juxitech.com/en/cases/</loc></url>
+  <url><loc>https://wiki.juxitech.com/en/changelog/</loc></url>
   <url><loc>https://wiki.juxitech.com/en/community/</loc></url>
   <url><loc>https://wiki.juxitech.com/en/community/contributing</loc></url>
+  <url><loc>https://wiki.juxitech.com/en/downloads/</loc></url>
+  <url><loc>https://wiki.juxitech.com/en/products/jetson-orin-nx-super-kit</loc></url>
+  <url><loc>https://wiki.juxitech.com/en/products/realsense-depth-camera</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tech/</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tech/api-reference</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tech/dev-guide</loc></url>
@@ -34,6 +42,7 @@
   <url><loc>https://wiki.juxitech.com/en/tutorials/accessories/kvm-switch-tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tutorials/accessories/usb-audio-card-tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tutorials/accessories/usb-auto-focus-camera</loc></url>
+  <url><loc>https://wiki.juxitech.com/en/tutorials/faq</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tutorials/getting-started</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tutorials/hardware-setup</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tutorials/lark-wiki</loc></url>
@@ -48,7 +57,7 @@
   <url><loc>https://wiki.juxitech.com/en/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tutorials/robot-arms/lekiwi/Lekiwi-Assembly</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial</loc></url>
-  <url><loc>https://wiki.juxitech.com/en/tutorials/robot-arms/so-arm101-tutorial</loc></url>
+  <url><loc>https://wiki.juxitech.com/en/tutorials/robot-arms/select-guide</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility</loc></url>
@@ -56,6 +65,7 @@
   <url><loc>https://wiki.juxitech.com/en/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tutorials/sensors/</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tutorials/sensors/imu/</loc></url>
+  <url><loc>https://wiki.juxitech.com/en/tutorials/sensors/imu/calibration</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi</loc></url>
@@ -71,8 +81,9 @@
   <url><loc>https://wiki.juxitech.com/en/tutorials/sensors/imu/product-info</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tutorials/sensors/imu/ros-examples/ros1</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tutorials/sensors/imu/ros-examples/ros2</loc></url>
-  <url><loc>https://wiki.juxitech.com/en/tutorials/so-arm101-tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tutorials/software-config</loc></url>
+  <url><loc>https://wiki.juxitech.com/products/jetson-orin-nx-super-kit</loc></url>
+  <url><loc>https://wiki.juxitech.com/products/realsense-depth-camera</loc></url>
   <url><loc>https://wiki.juxitech.com/tech/</loc></url>
   <url><loc>https://wiki.juxitech.com/tech/api-reference</loc></url>
   <url><loc>https://wiki.juxitech.com/tech/dev-guide</loc></url>
@@ -99,6 +110,7 @@
   <url><loc>https://wiki.juxitech.com/tutorials/accessories/kvm-switch-tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/tutorials/accessories/usb-audio-card-tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/tutorials/accessories/usb-auto-focus-camera</loc></url>
+  <url><loc>https://wiki.juxitech.com/tutorials/faq</loc></url>
   <url><loc>https://wiki.juxitech.com/tutorials/getting-started</loc></url>
   <url><loc>https://wiki.juxitech.com/tutorials/hardware-setup</loc></url>
   <url><loc>https://wiki.juxitech.com/tutorials/lark-wiki</loc></url>
@@ -113,6 +125,7 @@
   <url><loc>https://wiki.juxitech.com/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging</loc></url>
   <url><loc>https://wiki.juxitech.com/tutorials/robot-arms/lekiwi/Lekiwi-Assembly</loc></url>
   <url><loc>https://wiki.juxitech.com/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial</loc></url>
+  <url><loc>https://wiki.juxitech.com/tutorials/robot-arms/select-guide</loc></url>
   <url><loc>https://wiki.juxitech.com/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation</loc></url>
   <url><loc>https://wiki.juxitech.com/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly</loc></url>
   <url><loc>https://wiki.juxitech.com/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility</loc></url>
@@ -120,6 +133,7 @@
   <url><loc>https://wiki.juxitech.com/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/tutorials/sensors/</loc></url>
   <url><loc>https://wiki.juxitech.com/tutorials/sensors/imu/</loc></url>
+  <url><loc>https://wiki.juxitech.com/tutorials/sensors/imu/calibration</loc></url>
   <url><loc>https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino</loc></url>
   <url><loc>https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson</loc></url>
   <url><loc>https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi</loc></url>
@@ -135,12 +149,16 @@
   <url><loc>https://wiki.juxitech.com/tutorials/sensors/imu/product-info</loc></url>
   <url><loc>https://wiki.juxitech.com/tutorials/sensors/imu/ros-examples/ros1</loc></url>
   <url><loc>https://wiki.juxitech.com/tutorials/sensors/imu/ros-examples/ros2</loc></url>
-  <url><loc>https://wiki.juxitech.com/tutorials/so-arm101-tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/tutorials/software-config</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/</loc></url>
+  <url><loc>https://wiki.juxitech.com/zh-HK/about/</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/cases/</loc></url>
+  <url><loc>https://wiki.juxitech.com/zh-HK/changelog/</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/community/</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/community/contributing</loc></url>
+  <url><loc>https://wiki.juxitech.com/zh-HK/downloads/</loc></url>
+  <url><loc>https://wiki.juxitech.com/zh-HK/products/jetson-orin-nx-super-kit</loc></url>
+  <url><loc>https://wiki.juxitech.com/zh-HK/products/realsense-depth-camera</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tech/</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tech/api-reference</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tech/dev-guide</loc></url>
@@ -167,6 +185,7 @@
   <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/accessories/kvm-switch-tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/accessories/usb-audio-card-tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/accessories/usb-auto-focus-camera</loc></url>
+  <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/faq</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/getting-started</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/hardware-setup</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/lark-wiki</loc></url>
@@ -181,6 +200,7 @@
   <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/robot-arms/lekiwi/Lekiwi-Assembly</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial</loc></url>
+  <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/robot-arms/select-guide</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility</loc></url>
@@ -188,6 +208,7 @@
   <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/sensors/</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/</loc></url>
+  <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/calibration</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi</loc></url>
@@ -203,6 +224,5 @@
   <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/product-info</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/ros-examples/ros1</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/ros-examples/ros2</loc></url>
-  <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/so-arm101-tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tutorials/software-config</loc></url>
 </urlset>

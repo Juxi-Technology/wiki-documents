@@ -45,6 +45,7 @@ const zhCN = {
         {
           text: '快速开始',
           items: [
+            { text: '常见问题 FAQ', link: '/tutorials/faq' },
             { text: '快速开始', link: '/tutorials/getting-started' },
             { text: '硬件设置', link: '/tutorials/hardware-setup' },
             { text: '软件配置', link: '/tutorials/software-config' },
@@ -199,6 +200,12 @@ const zhCN = {
       '/community/': [
         { text: '社区', items: [{ text: '社区首页', link: '/community/' }, { text: '贡献指南', link: '/community/contributing' }] },
       ],
+      '/products/': [
+        { text: '产品', items: [
+          { text: 'Jetson Orin NX Super 开发套件', link: '/products/jetson-orin-nx-super-kit' },
+          { text: '3D RealSense 深度相机', link: '/products/realsense-depth-camera' },
+        ] },
+      ],
       '/downloads/': [
         { text: '下载', items: [{ text: '下载中心', link: '/downloads/' }] },
       ],
@@ -238,6 +245,7 @@ const en = {
         {
           text: 'Getting Started',
           items: [
+            { text: 'FAQ', link: '/en/tutorials/faq' },
             { text: 'Getting Started', link: '/en/tutorials/getting-started' },
             { text: 'Hardware Setup', link: '/en/tutorials/hardware-setup' },
             { text: 'Software Config', link: '/en/tutorials/software-config' },
@@ -392,6 +400,12 @@ const en = {
       '/en/community/': [
         { text: 'Community', items: [{ text: 'Community Home', link: '/en/community/' }, { text: 'Contributing Guide', link: '/en/community/contributing' }] },
       ],
+      '/en/products/': [
+        { text: 'Products', items: [
+          { text: 'Jetson Orin NX Super Dev Kit', link: '/en/products/jetson-orin-nx-super-kit' },
+          { text: '3D RealSense Depth Camera', link: '/en/products/realsense-depth-camera' },
+        ] },
+      ],
       '/en/downloads/': [
         { text: 'Downloads', items: [{ text: 'Download Center', link: '/en/downloads/' }] },
       ],
@@ -431,6 +445,7 @@ const zhHK = {
         {
           text: '快速開始',
           items: [
+            { text: '常見問題 FAQ', link: '/zh-HK/tutorials/faq' },
             { text: '快速開始', link: '/zh-HK/tutorials/getting-started' },
             { text: '硬件設置', link: '/zh-HK/tutorials/hardware-setup' },
             { text: '軟件配置', link: '/zh-HK/tutorials/software-config' },
@@ -584,6 +599,12 @@ const zhHK = {
       ],
       '/zh-HK/community/': [
         { text: '社區', items: [{ text: '社區首頁', link: '/zh-HK/community/' }, { text: '貢獻指南', link: '/zh-HK/community/contributing' }] },
+      ],
+      '/zh-HK/products/': [
+        { text: '產品', items: [
+          { text: 'Jetson Orin NX Super 開發套件', link: '/zh-HK/products/jetson-orin-nx-super-kit' },
+          { text: '3D RealSense 深度相機', link: '/zh-HK/products/realsense-depth-camera' },
+        ] },
       ],
       '/zh-HK/downloads/': [
         { text: '下載', items: [{ text: '下載中心', link: '/zh-HK/downloads/' }] },
