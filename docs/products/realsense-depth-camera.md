@@ -130,9 +130,6 @@ lerobot-teleoperate \\
 **Q: 支持 jetson 吗?**
 支持。pyrealsense2 在 Jetson 平台可直接安装,与 SO-ARM101 教程的 LeRobot 流程兼容。
 
-**Q: 有运费和发票吗?**
-中国大陆订单顺丰包邮,支持官方增值税发票(3%)。
-
 ---
 
 ## 技术支持

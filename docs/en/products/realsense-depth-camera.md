@@ -128,9 +128,6 @@ lerobot-teleoperate \\
 **Q: Does it support Jetson?**
 Yes. pyrealsense2 installs directly on Jetson and is compatible with the SO-ARM101 LeRobot workflow.
 
-**Q: Shipping and invoices?**
-Free SF Express shipping within mainland China; official VAT invoices supported.
-
 ---
 
 ## Support
