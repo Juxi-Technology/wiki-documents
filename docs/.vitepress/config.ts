@@ -734,11 +734,11 @@ export default defineConfig({
           { text: 'センサー', items: [
             { text: 'IMU キャリブレーション', link: '/ja/tutorials/sensors/imu/calibration' },
           ] },
-        ],
-        { text: 'アクセサリー', items: [
+          { text: 'アクセサリー', items: [
                 { text: '2自由度ジンバル', link: '/ja/tutorials/accessories/2dof-camera-gimbal' },
             { text: 'KVMスイッチ', link: '/ja/tutorials/accessories/kvm-switch-tutorial' },
           ] },
+        ],
         '/ja/topics/': [{ text: 'トピック', items: [{ text: 'トピック', link: '/ja/topics/' }] }],
         '/ja/tech/': [{ text: '技術ドキュメント', items: [{ text: '技術ドキュメント', link: '/ja/tech/' }] }],
         '/ja/community/': [{ text: 'コミュニティ', items: [{ text: 'コミュニティ', link: '/ja/community/' }] }],
@@ -788,11 +788,11 @@ export default defineConfig({
           { text: '센서', items: [
             { text: 'IMU 캘리브레이션', link: '/ko/tutorials/sensors/imu/calibration' },
           ] },
-        ],
-        { text: '액세서리', items: [
+          { text: '액세서리', items: [
                 { text: '2자유도 짐벌', link: '/ko/tutorials/accessories/2dof-camera-gimbal' },
             { text: 'KVM 스위치', link: '/ko/tutorials/accessories/kvm-switch-tutorial' },
           ] },
+        ],
         '/ko/topics/': [{ text: '토픽', items: [{ text: '토픽', link: '/ko/topics/' }] }],
         '/ko/tech/': [{ text: '기술 문서', items: [{ text: '기술 문서', link: '/ko/tech/' }] }],
         '/ko/community/': [{ text: '커뮤니티', items: [{ text: '커뮤니티', link: '/ko/community/' }] }],
@@ -842,11 +842,11 @@ export default defineConfig({
           { text: 'Sensoren', items: [
             { text: 'IMU-Kalibrierung', link: '/de/tutorials/sensors/imu/calibration' },
           ] },
-        ],
-        { text: 'Zubehör', items: [
+          { text: 'Zubehör', items: [
                 { text: '2-DOF-Gimbal', link: '/de/tutorials/accessories/2dof-camera-gimbal' },
             { text: 'KVM-Switch', link: '/de/tutorials/accessories/kvm-switch-tutorial' },
           ] },
+        ],
         '/de/topics/': [{ text: 'Themen', items: [{ text: 'Themen', link: '/de/topics/' }] }],
         '/de/tech/': [{ text: 'Technische Doku', items: [{ text: 'Technische Doku', link: '/de/tech/' }] }],
         '/de/community/': [{ text: 'Community', items: [{ text: 'Community', link: '/de/community/' }] }],
@@ -896,11 +896,11 @@ export default defineConfig({
           { text: 'Capteurs', items: [
             { text: 'Calibration IMU', link: '/fr/tutorials/sensors/imu/calibration' },
           ] },
-        ],
-        { text: 'Accessoires', items: [
+          { text: 'Accessoires', items: [
                 { text: 'Cardan 2-DOF', link: '/fr/tutorials/accessories/2dof-camera-gimbal' },
             { text: 'Switch KVM', link: '/fr/tutorials/accessories/kvm-switch-tutorial' },
           ] },
+        ],
         '/fr/topics/': [{ text: 'Sujets', items: [{ text: 'Sujets', link: '/fr/topics/' }] }],
         '/fr/tech/': [{ text: 'Documentation', items: [{ text: 'Documentation', link: '/fr/tech/' }] }],
         '/fr/community/': [{ text: 'Communauté', items: [{ text: 'Communauté', link: '/fr/community/' }] }],
@@ -950,11 +950,11 @@ export default defineConfig({
           { text: 'Sensores', items: [
             { text: 'Calibración IMU', link: '/es/tutorials/sensors/imu/calibration' },
           ] },
-        ],
-        { text: 'Accesorios', items: [
+          { text: 'Accesorios', items: [
                 { text: 'Cardán 2-DOF', link: '/es/tutorials/accessories/2dof-camera-gimbal' },
             { text: 'Conmutador KVM', link: '/es/tutorials/accessories/kvm-switch-tutorial' },
           ] },
+        ],
         '/es/topics/': [{ text: 'Temas', items: [{ text: 'Temas', link: '/es/topics/' }] }],
         '/es/tech/': [{ text: 'Documentación', items: [{ text: 'Documentación', link: '/es/tech/' }] }],
         '/es/community/': [{ text: 'Comunidad', items: [{ text: 'Comunidad', link: '/es/community/' }] }],
@@ -1004,11 +1004,11 @@ export default defineConfig({
           { text: 'Sensori', items: [
             { text: 'Calibrazione IMU', link: '/it/tutorials/sensors/imu/calibration' },
           ] },
-        ],
-        { text: 'Accessori', items: [
+          { text: 'Accessori', items: [
                 { text: 'Gimbal 2-DOF', link: '/it/tutorials/accessories/2dof-camera-gimbal' },
             { text: 'Switch KVM', link: '/it/tutorials/accessories/kvm-switch-tutorial' },
           ] },
+        ],
         '/it/topics/': [{ text: 'Argomenti', items: [{ text: 'Argomenti', link: '/it/topics/' }] }],
         '/it/tech/': [{ text: 'Documentazione', items: [{ text: 'Documentazione', link: '/it/tech/' }] }],
         '/it/community/': [{ text: 'Community', items: [{ text: 'Community', link: '/it/community/' }] }],
