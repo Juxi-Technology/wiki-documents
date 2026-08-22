@@ -21,6 +21,17 @@
   <url><loc>https://wiki.juxitech.com/de/tutorials/accessories/0.91-oled-screen-tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/accessories/2dof-camera-gimbal</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/accessories/4k-hdmi-capture-tutorial</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/accessories/KWS-speech-recognition-module/PC-serial-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/accessories/KWS-speech-recognition-module/ROS2-rviz2-visualization</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/accessories/KWS-speech-recognition-module/index</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/accessories/feetech/Feetech-SCS_Communication_Protocol</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/accessories/heart-rate-spo2</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/accessories/jetson-csi-camera</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/accessories/kvm-switch-tutorial</loc></url>
@@ -37,7 +48,21 @@
   <url><loc>https://wiki.juxitech.com/de/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/ros-intro</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/sensors/imu/calibration</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/sensors/imu/multi-board-examples/overview</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/sensors/imu/multi-board-examples/pc-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/sensors/imu/product-info</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/sensors/imu/ros-examples/ros1</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/sensors/imu/ros-examples/ros2</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/software-config</loc></url>
   <url><loc>https://wiki.juxitech.com/downloads/index</loc></url>
   <url><loc>https://wiki.juxitech.com/en/about/index</loc></url>
@@ -151,6 +176,17 @@
   <url><loc>https://wiki.juxitech.com/es/tutorials/accessories/0.91-oled-screen-tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/accessories/2dof-camera-gimbal</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/accessories/4k-hdmi-capture-tutorial</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/accessories/KWS-speech-recognition-module/PC-serial-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/accessories/KWS-speech-recognition-module/ROS2-rviz2-visualization</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/accessories/KWS-speech-recognition-module/index</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/accessories/feetech/Feetech-SCS_Communication_Protocol</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/accessories/heart-rate-spo2</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/accessories/jetson-csi-camera</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/accessories/kvm-switch-tutorial</loc></url>
@@ -167,7 +203,21 @@
   <url><loc>https://wiki.juxitech.com/es/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/ros-intro</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/sensors/imu/calibration</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/sensors/imu/multi-board-examples/overview</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/sensors/imu/multi-board-examples/pc-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/sensors/imu/product-info</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/sensors/imu/ros-examples/ros1</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/sensors/imu/ros-examples/ros2</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/software-config</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/about/index</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/community/index</loc></url>
@@ -184,6 +234,17 @@
   <url><loc>https://wiki.juxitech.com/fr/tutorials/accessories/0.91-oled-screen-tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/tutorials/accessories/2dof-camera-gimbal</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/tutorials/accessories/4k-hdmi-capture-tutorial</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/accessories/KWS-speech-recognition-module/PC-serial-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/accessories/KWS-speech-recognition-module/ROS2-rviz2-visualization</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/accessories/KWS-speech-recognition-module/index</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/accessories/feetech/Feetech-SCS_Communication_Protocol</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/tutorials/accessories/heart-rate-spo2</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/tutorials/accessories/jetson-csi-camera</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/tutorials/accessories/kvm-switch-tutorial</loc></url>
@@ -200,7 +261,21 @@
   <url><loc>https://wiki.juxitech.com/fr/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/tutorials/ros-intro</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/tutorials/sensors/imu/calibration</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/sensors/imu/multi-board-examples/overview</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/sensors/imu/multi-board-examples/pc-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/tutorials/sensors/imu/product-info</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/sensors/imu/ros-examples/ros1</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/sensors/imu/ros-examples/ros2</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/tutorials/software-config</loc></url>
   <url><loc>https://wiki.juxitech.com/it/about/index</loc></url>
   <url><loc>https://wiki.juxitech.com/it/community/index</loc></url>
@@ -217,6 +292,17 @@
   <url><loc>https://wiki.juxitech.com/it/tutorials/accessories/0.91-oled-screen-tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/accessories/2dof-camera-gimbal</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/accessories/4k-hdmi-capture-tutorial</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/accessories/KWS-speech-recognition-module/PC-serial-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/accessories/KWS-speech-recognition-module/ROS2-rviz2-visualization</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/accessories/KWS-speech-recognition-module/index</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/accessories/feetech/Feetech-SCS_Communication_Protocol</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/accessories/heart-rate-spo2</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/accessories/jetson-csi-camera</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/accessories/kvm-switch-tutorial</loc></url>
@@ -233,7 +319,21 @@
   <url><loc>https://wiki.juxitech.com/it/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/ros-intro</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/sensors/imu/calibration</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/sensors/imu/multi-board-examples/overview</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/sensors/imu/multi-board-examples/pc-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/sensors/imu/product-info</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/sensors/imu/ros-examples/ros1</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/sensors/imu/ros-examples/ros2</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/software-config</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/about/index</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/community/index</loc></url>
@@ -250,6 +350,17 @@
   <url><loc>https://wiki.juxitech.com/ja/tutorials/accessories/0.91-oled-screen-tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/accessories/2dof-camera-gimbal</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/accessories/4k-hdmi-capture-tutorial</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/accessories/KWS-speech-recognition-module/PC-serial-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/accessories/KWS-speech-recognition-module/ROS2-rviz2-visualization</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/accessories/KWS-speech-recognition-module/index</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/accessories/feetech/Feetech-SCS_Communication_Protocol</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/accessories/heart-rate-spo2</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/accessories/jetson-csi-camera</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/accessories/kvm-switch-tutorial</loc></url>
@@ -266,7 +377,21 @@
   <url><loc>https://wiki.juxitech.com/ja/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/ros-intro</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/sensors/imu/calibration</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/sensors/imu/multi-board-examples/overview</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/sensors/imu/multi-board-examples/pc-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/sensors/imu/product-info</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/sensors/imu/ros-examples/ros1</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/sensors/imu/ros-examples/ros2</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/software-config</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/about/index</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/community/index</loc></url>
@@ -283,6 +408,17 @@
   <url><loc>https://wiki.juxitech.com/ko/tutorials/accessories/0.91-oled-screen-tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/tutorials/accessories/2dof-camera-gimbal</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/tutorials/accessories/4k-hdmi-capture-tutorial</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/accessories/KWS-speech-recognition-module/PC-serial-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/accessories/KWS-speech-recognition-module/ROS2-rviz2-visualization</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/accessories/KWS-speech-recognition-module/index</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/accessories/feetech/Feetech-SCS_Communication_Protocol</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/tutorials/accessories/heart-rate-spo2</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/tutorials/accessories/jetson-csi-camera</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/tutorials/accessories/kvm-switch-tutorial</loc></url>
@@ -299,7 +435,21 @@
   <url><loc>https://wiki.juxitech.com/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/tutorials/ros-intro</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/tutorials/sensors/imu/calibration</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/sensors/imu/multi-board-examples/overview</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/sensors/imu/multi-board-examples/pc-communication</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/tutorials/sensors/imu/product-info</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/sensors/imu/ros-examples/ros1</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/sensors/imu/ros-examples/ros2</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/tutorials/software-config</loc></url>
   <url><loc>https://wiki.juxitech.com/products/2dof-gimbal</loc></url>
   <url><loc>https://wiki.juxitech.com/products/4k-hdmi-capture</loc></url>

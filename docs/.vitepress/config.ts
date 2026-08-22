@@ -733,10 +733,74 @@ export default defineConfig({
           ] },
           { text: 'センサー', items: [
             { text: 'IMU キャリブレーション', link: '/ja/tutorials/sensors/imu/calibration' },
+            {
+              text: 'IMU 慣性ナビゲーション',
+              collapsed: true,
+              items: [
+                { text: '製品情報', link: '/ja/tutorials/sensors/imu/product-info' },
+                {
+                  text: 'マルチボード例',
+                  items: [
+                    { text: 'マルチホスト通信ケース概要', link: '/ja/tutorials/sensors/imu/multi-board-examples/overview' },
+                    { text: 'PC 通信', link: '/ja/tutorials/sensors/imu/multi-board-examples/pc-communication' },
+                    {
+                      text: 'I2C 通信',
+                      items: [
+                        { text: 'Arduino', link: '/ja/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino' },
+                        { text: 'Jetson', link: '/ja/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson' },
+                        { text: 'ラズベリーパイ', link: '/ja/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi' },
+                        { text: 'RDK', link: '/ja/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk' },
+                        { text: 'STM32', link: '/ja/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32' },
+                      ],
+                    },
+                    {
+                      text: 'シリアル通信',
+                      items: [
+                        { text: 'Arduino', link: '/ja/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino' },
+                        { text: 'Jetson', link: '/ja/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson' },
+                        { text: 'ラズベリーパイ', link: '/ja/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi' },
+                        { text: 'RDK', link: '/ja/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk' },
+                        { text: 'STM32', link: '/ja/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32' },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  text: 'ROS サンプル',
+                  items: [
+                    { text: 'ROS1 応用', link: '/ja/tutorials/sensors/imu/ros-examples/ros1' },
+                    { text: 'ROS2 応用', link: '/ja/tutorials/sensors/imu/ros-examples/ros2' },
+                  ],
+                },
+              ],
+            },
           ] },
           { text: 'アクセサリー', items: [
                 { text: 'USB オートフォーカスカメラ', link: '/ja/tutorials/accessories/usb-auto-focus-camera' },
                 { text: 'Jetson CSI カメラ', link: '/ja/tutorials/accessories/jetson-csi-camera' },
+                {
+                    text: 'KWS 音声認識モジュール',
+                    collapsed: true,
+                    items: [
+                      { text: 'シリーズチュートリアルホーム', link: '/ja/tutorials/accessories/KWS-speech-recognition-module/' },
+                      { text: 'Jetson Nano シリアル通信', link: '/ja/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication' },
+                      { text: 'Jetson シリアル通信', link: '/ja/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication' },
+                      { text: 'PC シリアル通信', link: '/ja/tutorials/accessories/KWS-speech-recognition-module/PC-serial-communication' },
+                      { text: 'ラズベリーパイシリアル通信', link: '/ja/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication' },
+                      { text: 'ROS2 RViz2 可視化', link: '/ja/tutorials/accessories/KWS-speech-recognition-module/ROS2-rviz2-visualization' },
+                      { text: '中英認識語ファームウェアのダウンロードと書き込み', link: '/ja/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words' },
+                    ],
+                },
+                {
+                    text: 'Feetech サーボ',
+                    collapsed: true,
+                    items: [
+                      { text: 'STS3215 & SCS0009 デバッグチュートリアル', link: '/ja/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial' },
+                      { text: 'SCS 通信プロトコル', link: '/ja/tutorials/accessories/feetech/Feetech-SCS_Communication_Protocol' },
+                      { text: '磁気エンコーダ STS サーボ - メモリテーブル解析', link: '/ja/tutorials/accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis' },
+                      { text: 'ポテンショメータ SCSCL サーボ - メモリテーブル解析', link: '/ja/tutorials/accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis' },
+                    ],
+                },
                 { text: '2自由度ジンバル', link: '/ja/tutorials/accessories/2dof-camera-gimbal' },
             { text: '心拍・血中酸素センサー', link: '/ja/tutorials/accessories/heart-rate-spo2' },
             { text: '0.91 インチ OLED スクリーン', link: '/ja/tutorials/accessories/0.91-oled-screen-tutorial' },
@@ -793,10 +857,74 @@ export default defineConfig({
           ] },
           { text: '센서', items: [
             { text: 'IMU 캘리브레이션', link: '/ko/tutorials/sensors/imu/calibration' },
+            {
+              text: 'IMU 관성 내비게이션',
+              collapsed: true,
+              items: [
+                { text: '제품 정보', link: '/ko/tutorials/sensors/imu/product-info' },
+                {
+                  text: '멀티 보드 예제',
+                  items: [
+                    { text: '멀티 호스트 통신 케이스 개요', link: '/ko/tutorials/sensors/imu/multi-board-examples/overview' },
+                    { text: 'PC 통신', link: '/ko/tutorials/sensors/imu/multi-board-examples/pc-communication' },
+                    {
+                      text: 'I2C 통신',
+                      items: [
+                        { text: 'Arduino', link: '/ko/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino' },
+                        { text: 'Jetson', link: '/ko/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson' },
+                        { text: '라즈베리파이', link: '/ko/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi' },
+                        { text: 'RDK', link: '/ko/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk' },
+                        { text: 'STM32', link: '/ko/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32' },
+                      ],
+                    },
+                    {
+                      text: '직렬 통신',
+                      items: [
+                        { text: 'Arduino', link: '/ko/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino' },
+                        { text: 'Jetson', link: '/ko/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson' },
+                        { text: '라즈베리파이', link: '/ko/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi' },
+                        { text: 'RDK', link: '/ko/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk' },
+                        { text: 'STM32', link: '/ko/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32' },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  text: 'ROS 예제',
+                  items: [
+                    { text: 'ROS1 응용', link: '/ko/tutorials/sensors/imu/ros-examples/ros1' },
+                    { text: 'ROS2 응용', link: '/ko/tutorials/sensors/imu/ros-examples/ros2' },
+                  ],
+                },
+              ],
+            },
           ] },
           { text: '액세서리', items: [
                 { text: 'USB 자동 초점 카메라', link: '/ko/tutorials/accessories/usb-auto-focus-camera' },
                 { text: 'Jetson CSI 카메라', link: '/ko/tutorials/accessories/jetson-csi-camera' },
+                {
+                    text: 'KWS 음성 인식 모듈',
+                    collapsed: true,
+                    items: [
+                      { text: '시리즈 튜토리얼 홈', link: '/ko/tutorials/accessories/KWS-speech-recognition-module/' },
+                      { text: 'Jetson Nano 직렬 통신', link: '/ko/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication' },
+                      { text: 'Jetson 직렬 통신', link: '/ko/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication' },
+                      { text: 'PC 직렬 통신', link: '/ko/tutorials/accessories/KWS-speech-recognition-module/PC-serial-communication' },
+                      { text: '라즈베리파이 직렬 통신', link: '/ko/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication' },
+                      { text: 'ROS2 RViz2 시각화', link: '/ko/tutorials/accessories/KWS-speech-recognition-module/ROS2-rviz2-visualization' },
+                      { text: '중문/영문 인식어 펌웨어 다운로드 및 굽기', link: '/ko/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words' },
+                    ],
+                },
+                {
+                    text: 'Feetech 서보',
+                    collapsed: true,
+                    items: [
+                      { text: 'STS3215 & SCS0009 디버깅 튜토리얼', link: '/ko/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial' },
+                      { text: 'SCS 통신 프로토콜', link: '/ko/tutorials/accessories/feetech/Feetech-SCS_Communication_Protocol' },
+                      { text: '자기 엔코더 STS 서보 - 메모리 테이블 분석', link: '/ko/tutorials/accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis' },
+                      { text: '전위차계 SCSCL 서보 - 메모리 테이블 분석', link: '/ko/tutorials/accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis' },
+                    ],
+                },
                 { text: '2자유도 짐벌', link: '/ko/tutorials/accessories/2dof-camera-gimbal' },
             { text: '심박·혈중 산소 센서', link: '/ko/tutorials/accessories/heart-rate-spo2' },
             { text: '0.91인치 OLED 화면', link: '/ko/tutorials/accessories/0.91-oled-screen-tutorial' },
@@ -853,10 +981,74 @@ export default defineConfig({
           ] },
           { text: 'Sensoren', items: [
             { text: 'IMU-Kalibrierung', link: '/de/tutorials/sensors/imu/calibration' },
+            {
+              text: 'IMU-Trägheitsnavigation',
+              collapsed: true,
+              items: [
+                { text: 'Produktinformation', link: '/de/tutorials/sensors/imu/product-info' },
+                {
+                  text: 'Multi-Board-Beispiele',
+                  items: [
+                    { text: 'Multi-Host-Kommunikationsfälle Übersicht', link: '/de/tutorials/sensors/imu/multi-board-examples/overview' },
+                    { text: 'PC-Kommunikation', link: '/de/tutorials/sensors/imu/multi-board-examples/pc-communication' },
+                    {
+                      text: 'I2C-Kommunikation',
+                      items: [
+                        { text: 'Arduino', link: '/de/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino' },
+                        { text: 'Jetson', link: '/de/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson' },
+                        { text: 'Raspberry Pi', link: '/de/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi' },
+                        { text: 'RDK', link: '/de/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk' },
+                        { text: 'STM32', link: '/de/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32' },
+                      ],
+                    },
+                    {
+                      text: 'Serielle Kommunikation',
+                      items: [
+                        { text: 'Arduino', link: '/de/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino' },
+                        { text: 'Jetson', link: '/de/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson' },
+                        { text: 'Raspberry Pi', link: '/de/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi' },
+                        { text: 'RDK', link: '/de/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk' },
+                        { text: 'STM32', link: '/de/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32' },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  text: 'ROS-Beispiele',
+                  items: [
+                    { text: 'ROS1-Anwendung', link: '/de/tutorials/sensors/imu/ros-examples/ros1' },
+                    { text: 'ROS2-Anwendung', link: '/de/tutorials/sensors/imu/ros-examples/ros2' },
+                  ],
+                },
+              ],
+            },
           ] },
           { text: 'Zubehör', items: [
                 { text: 'USB-Kamera mit Autofokus', link: '/de/tutorials/accessories/usb-auto-focus-camera' },
                 { text: 'Jetson-CSI-Kamera', link: '/de/tutorials/accessories/jetson-csi-camera' },
+                {
+                    text: 'KWS-Spracherkennungsmodul',
+                    collapsed: true,
+                    items: [
+                      { text: 'Tutorial-Startseite', link: '/de/tutorials/accessories/KWS-speech-recognition-module/' },
+                      { text: 'Jetson Nano serielle Kommunikation', link: '/de/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication' },
+                      { text: 'Jetson serielle Kommunikation', link: '/de/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication' },
+                      { text: 'PC serielle Kommunikation', link: '/de/tutorials/accessories/KWS-speech-recognition-module/PC-serial-communication' },
+                      { text: 'Raspberry Pi serielle Kommunikation', link: '/de/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication' },
+                      { text: 'ROS2 RViz2-Visualisierung', link: '/de/tutorials/accessories/KWS-speech-recognition-module/ROS2-rviz2-visualization' },
+                      { text: 'Firmware für Wake-Wörter herunterladen und flashen', link: '/de/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words' },
+                    ],
+                },
+                {
+                    text: 'Feetech-Servo',
+                    collapsed: true,
+                    items: [
+                      { text: 'STS3215 & SCS0009 – Debug-Tutorial', link: '/de/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial' },
+                      { text: 'SCS-Kommunikationsprotokoll', link: '/de/tutorials/accessories/feetech/Feetech-SCS_Communication_Protocol' },
+                      { text: 'Magnetencoder-STS-Servo – Speichertabelle', link: '/de/tutorials/accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis' },
+                      { text: 'Potentiometer-SCSCL-Servo – Speichertabelle', link: '/de/tutorials/accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis' },
+                    ],
+                },
                 { text: '2-DOF-Gimbal', link: '/de/tutorials/accessories/2dof-camera-gimbal' },
             { text: 'Herzfrequenz- und SpO2-Sensor', link: '/de/tutorials/accessories/heart-rate-spo2' },
             { text: '0,91-Zoll-OLED-Display', link: '/de/tutorials/accessories/0.91-oled-screen-tutorial' },
@@ -913,10 +1105,74 @@ export default defineConfig({
           ] },
           { text: 'Capteurs', items: [
             { text: 'Calibration IMU', link: '/fr/tutorials/sensors/imu/calibration' },
+            {
+              text: 'Navigation inertielle IMU',
+              collapsed: true,
+              items: [
+                { text: 'Informations produit', link: '/fr/tutorials/sensors/imu/product-info' },
+                {
+                  text: 'Exemples multi-cartes',
+                  items: [
+                    { text: 'Aperçu des cas multi-hôtes', link: '/fr/tutorials/sensors/imu/multi-board-examples/overview' },
+                    { text: 'Communication PC', link: '/fr/tutorials/sensors/imu/multi-board-examples/pc-communication' },
+                    {
+                      text: 'Communication I2C',
+                      items: [
+                        { text: 'Arduino', link: '/fr/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino' },
+                        { text: 'Jetson', link: '/fr/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson' },
+                        { text: 'Raspberry Pi', link: '/fr/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi' },
+                        { text: 'RDK', link: '/fr/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk' },
+                        { text: 'STM32', link: '/fr/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32' },
+                      ],
+                    },
+                    {
+                      text: 'Communication série',
+                      items: [
+                        { text: 'Arduino', link: '/fr/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino' },
+                        { text: 'Jetson', link: '/fr/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson' },
+                        { text: 'Raspberry Pi', link: '/fr/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi' },
+                        { text: 'RDK', link: '/fr/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk' },
+                        { text: 'STM32', link: '/fr/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32' },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  text: 'Exemples ROS',
+                  items: [
+                    { text: 'Application ROS1', link: '/fr/tutorials/sensors/imu/ros-examples/ros1' },
+                    { text: 'Application ROS2', link: '/fr/tutorials/sensors/imu/ros-examples/ros2' },
+                  ],
+                },
+              ],
+            },
           ] },
           { text: 'Accessoires', items: [
                 { text: 'Caméra USB à autofocus', link: '/fr/tutorials/accessories/usb-auto-focus-camera' },
                 { text: 'Caméra CSI Jetson', link: '/fr/tutorials/accessories/jetson-csi-camera' },
+                {
+                    text: 'Module de reconnaissance vocale KWS',
+                    collapsed: true,
+                    items: [
+                      { text: 'Accueil des tutoriels', link: '/fr/tutorials/accessories/KWS-speech-recognition-module/' },
+                      { text: 'Communication série Jetson Nano', link: '/fr/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication' },
+                      { text: 'Communication série Jetson', link: '/fr/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication' },
+                      { text: 'Communication série PC', link: '/fr/tutorials/accessories/KWS-speech-recognition-module/PC-serial-communication' },
+                      { text: 'Communication série Raspberry Pi', link: '/fr/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication' },
+                      { text: 'Visualisation ROS2 RViz2', link: '/fr/tutorials/accessories/KWS-speech-recognition-module/ROS2-rviz2-visualization' },
+                      { text: 'Flashage du firmware chinois/anglais', link: '/fr/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words' },
+                    ],
+                },
+                {
+                    text: 'Servos Feetech',
+                    collapsed: true,
+                    items: [
+                      { text: 'Tutoriel de débogage STS3215 & SCS0009', link: '/fr/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial' },
+                      { text: 'Protocole de communication SCS', link: '/fr/tutorials/accessories/feetech/Feetech-SCS_Communication_Protocol' },
+                      { text: 'Table mémoire du servo STS à encodeur magnétique', link: '/fr/tutorials/accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis' },
+                      { text: 'Table mémoire du servo SCSCL à potentiomètre', link: '/fr/tutorials/accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis' },
+                    ],
+                },
                 { text: 'Cardan 2-DOF', link: '/fr/tutorials/accessories/2dof-camera-gimbal' },
             { text: 'Capteur de fréquence cardiaque et SpO2', link: '/fr/tutorials/accessories/heart-rate-spo2' },
             { text: 'Écran OLED 0,91 pouce', link: '/fr/tutorials/accessories/0.91-oled-screen-tutorial' },
@@ -973,10 +1229,74 @@ export default defineConfig({
           ] },
           { text: 'Sensores', items: [
             { text: 'Calibración IMU', link: '/es/tutorials/sensors/imu/calibration' },
+            {
+              text: 'Navegación inercial IMU',
+              collapsed: true,
+              items: [
+                { text: 'Información del producto', link: '/es/tutorials/sensors/imu/product-info' },
+                {
+                  text: 'Ejemplos multi-placa',
+                  items: [
+                    { text: 'Resumen de casos multi-host', link: '/es/tutorials/sensors/imu/multi-board-examples/overview' },
+                    { text: 'Comunicación PC', link: '/es/tutorials/sensors/imu/multi-board-examples/pc-communication' },
+                    {
+                      text: 'Comunicación I2C',
+                      items: [
+                        { text: 'Arduino', link: '/es/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino' },
+                        { text: 'Jetson', link: '/es/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson' },
+                        { text: 'Raspberry Pi', link: '/es/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi' },
+                        { text: 'RDK', link: '/es/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk' },
+                        { text: 'STM32', link: '/es/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32' },
+                      ],
+                    },
+                    {
+                      text: 'Comunicación serie',
+                      items: [
+                        { text: 'Arduino', link: '/es/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino' },
+                        { text: 'Jetson', link: '/es/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson' },
+                        { text: 'Raspberry Pi', link: '/es/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi' },
+                        { text: 'RDK', link: '/es/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk' },
+                        { text: 'STM32', link: '/es/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32' },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  text: 'Ejemplos ROS',
+                  items: [
+                    { text: 'Aplicación ROS1', link: '/es/tutorials/sensors/imu/ros-examples/ros1' },
+                    { text: 'Aplicación ROS2', link: '/es/tutorials/sensors/imu/ros-examples/ros2' },
+                  ],
+                },
+              ],
+            },
           ] },
           { text: 'Accesorios', items: [
                 { text: 'Cámara USB con enfoque automático', link: '/es/tutorials/accessories/usb-auto-focus-camera' },
                 { text: 'Cámara CSI Jetson', link: '/es/tutorials/accessories/jetson-csi-camera' },
+                {
+                    text: 'Módulo de reconocimiento de voz KWS',
+                    collapsed: true,
+                    items: [
+                      { text: 'Inicio de tutoriales', link: '/es/tutorials/accessories/KWS-speech-recognition-module/' },
+                      { text: 'Comunicación serie Jetson Nano', link: '/es/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication' },
+                      { text: 'Comunicación serie Jetson', link: '/es/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication' },
+                      { text: 'Comunicación serie PC', link: '/es/tutorials/accessories/KWS-speech-recognition-module/PC-serial-communication' },
+                      { text: 'Comunicación serie Raspberry Pi', link: '/es/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication' },
+                      { text: 'Visualización ROS2 RViz2', link: '/es/tutorials/accessories/KWS-speech-recognition-module/ROS2-rviz2-visualization' },
+                      { text: 'Grabación de firmware chino/inglés', link: '/es/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words' },
+                    ],
+                },
+                {
+                    text: 'Servos Feetech',
+                    collapsed: true,
+                    items: [
+                      { text: 'Tutorial de depuración STS3215 & SCS0009', link: '/es/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial' },
+                      { text: 'Protocolo de comunicación SCS', link: '/es/tutorials/accessories/feetech/Feetech-SCS_Communication_Protocol' },
+                      { text: 'Tabla de memoria del servo STS con encoder magnético', link: '/es/tutorials/accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis' },
+                      { text: 'Tabla de memoria del servo SCSCL con potenciómetro', link: '/es/tutorials/accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis' },
+                    ],
+                },
                 { text: 'Cardán 2-DOF', link: '/es/tutorials/accessories/2dof-camera-gimbal' },
             { text: 'Sensor de frecuencia cardíaca y SpO2', link: '/es/tutorials/accessories/heart-rate-spo2' },
             { text: 'Pantalla OLED de 0,91 pulgadas', link: '/es/tutorials/accessories/0.91-oled-screen-tutorial' },
@@ -1033,10 +1353,74 @@ export default defineConfig({
           ] },
           { text: 'Sensori', items: [
             { text: 'Calibrazione IMU', link: '/it/tutorials/sensors/imu/calibration' },
+            {
+              text: 'Navigazione inerziale IMU',
+              collapsed: true,
+              items: [
+                { text: 'Informazioni prodotto', link: '/it/tutorials/sensors/imu/product-info' },
+                {
+                  text: 'Esempi multi-scheda',
+                  items: [
+                    { text: 'Panoramica dei casi multi-host', link: '/it/tutorials/sensors/imu/multi-board-examples/overview' },
+                    { text: 'Comunicazione PC', link: '/it/tutorials/sensors/imu/multi-board-examples/pc-communication' },
+                    {
+                      text: 'Comunicazione I2C',
+                      items: [
+                        { text: 'Arduino', link: '/it/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino' },
+                        { text: 'Jetson', link: '/it/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson' },
+                        { text: 'Raspberry Pi', link: '/it/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi' },
+                        { text: 'RDK', link: '/it/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk' },
+                        { text: 'STM32', link: '/it/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32' },
+                      ],
+                    },
+                    {
+                      text: 'Comunicazione seriale',
+                      items: [
+                        { text: 'Arduino', link: '/it/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino' },
+                        { text: 'Jetson', link: '/it/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson' },
+                        { text: 'Raspberry Pi', link: '/it/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi' },
+                        { text: 'RDK', link: '/it/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk' },
+                        { text: 'STM32', link: '/it/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32' },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  text: 'Esempi ROS',
+                  items: [
+                    { text: 'Applicazione ROS1', link: '/it/tutorials/sensors/imu/ros-examples/ros1' },
+                    { text: 'Applicazione ROS2', link: '/it/tutorials/sensors/imu/ros-examples/ros2' },
+                  ],
+                },
+              ],
+            },
           ] },
           { text: 'Accessori', items: [
                 { text: 'Fotocamera USB con autofocus', link: '/it/tutorials/accessories/usb-auto-focus-camera' },
                 { text: 'Fotocamera CSI Jetson', link: '/it/tutorials/accessories/jetson-csi-camera' },
+                {
+                    text: 'Modulo di riconoscimento vocale KWS',
+                    collapsed: true,
+                    items: [
+                      { text: 'Home dei tutorial', link: '/it/tutorials/accessories/KWS-speech-recognition-module/' },
+                      { text: 'Comunicazione seriale Jetson Nano', link: '/it/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication' },
+                      { text: 'Comunicazione seriale Jetson', link: '/it/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication' },
+                      { text: 'Comunicazione seriale PC', link: '/it/tutorials/accessories/KWS-speech-recognition-module/PC-serial-communication' },
+                      { text: 'Comunicazione seriale Raspberry Pi', link: '/it/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication' },
+                      { text: 'Visualizzazione ROS2 RViz2', link: '/it/tutorials/accessories/KWS-speech-recognition-module/ROS2-rviz2-visualization' },
+                      { text: 'Flashing firmware cinese/inglese', link: '/it/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words' },
+                    ],
+                },
+                {
+                    text: 'Servomotori Feetech',
+                    collapsed: true,
+                    items: [
+                      { text: 'Tutorial di debug STS3215 & SCS0009', link: '/it/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial' },
+                      { text: 'Protocollo di comunicazione SCS', link: '/it/tutorials/accessories/feetech/Feetech-SCS_Communication_Protocol' },
+                      { text: 'Tabella di memoria del servo STS a encoder magnetico', link: '/it/tutorials/accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis' },
+                      { text: 'Tabella di memoria del servo SCSCL a potenziometro', link: '/it/tutorials/accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis' },
+                    ],
+                },
                 { text: 'Gimbal 2-DOF', link: '/it/tutorials/accessories/2dof-camera-gimbal' },
             { text: 'Sensore di frequenza cardiaca e SpO2', link: '/it/tutorials/accessories/heart-rate-spo2' },
             { text: 'Display OLED da 0,91 pollici', link: '/it/tutorials/accessories/0.91-oled-screen-tutorial' },
