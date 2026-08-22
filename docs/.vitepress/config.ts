@@ -720,7 +720,21 @@ export default defineConfig({
         { text: '会社概要', link: '/ja/about/', activeMatch: '/ja/about/' },
       ],
       sidebar: {
-        '/ja/tutorials/': [{ text: 'チュートリアル', items: [{ text: 'チュートリアル', link: '/ja/tutorials/' }] }],
+        '/ja/tutorials/': [
+          { text: 'クイックスタート', items: [
+            { text: 'FAQ', link: '/ja/tutorials/faq' },
+            { text: 'クイックスタート', link: '/ja/tutorials/getting-started' },
+            { text: 'ハードウェア接続', link: '/ja/tutorials/hardware-setup' },
+            { text: 'ソフトウェア設定', link: '/ja/tutorials/software-config' },
+            { text: 'ROS 入門', link: '/ja/tutorials/ros-intro' },
+          ] },
+          { text: 'ロボットアーム', items: [
+            { text: '選定ガイド', link: '/ja/tutorials/robot-arms/select-guide' },
+          ] },
+          { text: 'センサー', items: [
+            { text: 'IMU キャリブレーション', link: '/ja/tutorials/sensors/imu/calibration' },
+          ] },
+        ],
         '/ja/topics/': [{ text: 'トピック', items: [{ text: 'トピック', link: '/ja/topics/' }] }],
         '/ja/tech/': [{ text: '技術ドキュメント', items: [{ text: '技術ドキュメント', link: '/ja/tech/' }] }],
         '/ja/community/': [{ text: 'コミュニティ', items: [{ text: 'コミュニティ', link: '/ja/community/' }] }],
@@ -756,7 +770,21 @@ export default defineConfig({
         { text: '회사 소개', link: '/ko/about/', activeMatch: '/ko/about/' },
       ],
       sidebar: {
-        '/ko/tutorials/': [{ text: '튜토리얼', items: [{ text: '튜토리얼', link: '/ko/tutorials/' }] }],
+        '/ko/tutorials/': [
+          { text: '빠른 시작', items: [
+            { text: 'FAQ', link: '/ko/tutorials/faq' },
+            { text: '빠른 시작', link: '/ko/tutorials/getting-started' },
+            { text: '하드웨어 연결', link: '/ko/tutorials/hardware-setup' },
+            { text: '소프트웨어 설정', link: '/ko/tutorials/software-config' },
+            { text: 'ROS 입문', link: '/ko/tutorials/ros-intro' },
+          ] },
+          { text: '로봇 암', items: [
+            { text: '선택 가이드', link: '/ko/tutorials/robot-arms/select-guide' },
+          ] },
+          { text: '센서', items: [
+            { text: 'IMU 캘리브레이션', link: '/ko/tutorials/sensors/imu/calibration' },
+          ] },
+        ],
         '/ko/topics/': [{ text: '토픽', items: [{ text: '토픽', link: '/ko/topics/' }] }],
         '/ko/tech/': [{ text: '기술 문서', items: [{ text: '기술 문서', link: '/ko/tech/' }] }],
         '/ko/community/': [{ text: '커뮤니티', items: [{ text: '커뮤니티', link: '/ko/community/' }] }],
@@ -792,7 +820,21 @@ export default defineConfig({
         { text: 'Über uns', link: '/de/about/', activeMatch: '/de/about/' },
       ],
       sidebar: {
-        '/de/tutorials/': [{ text: 'Tutorials', items: [{ text: 'Tutorials', link: '/de/tutorials/' }] }],
+        '/de/tutorials/': [
+          { text: 'Schnellstart', items: [
+            { text: 'FAQ', link: '/de/tutorials/faq' },
+            { text: 'Schnellstart', link: '/de/tutorials/getting-started' },
+            { text: 'Hardware-Verbindung', link: '/de/tutorials/hardware-setup' },
+            { text: 'Software-Konfiguration', link: '/de/tutorials/software-config' },
+            { text: 'ROS-Einführung', link: '/de/tutorials/ros-intro' },
+          ] },
+          { text: 'Roboterarme', items: [
+            { text: 'Auswahlhilfe', link: '/de/tutorials/robot-arms/select-guide' },
+          ] },
+          { text: 'Sensoren', items: [
+            { text: 'IMU-Kalibrierung', link: '/de/tutorials/sensors/imu/calibration' },
+          ] },
+        ],
         '/de/topics/': [{ text: 'Themen', items: [{ text: 'Themen', link: '/de/topics/' }] }],
         '/de/tech/': [{ text: 'Technische Doku', items: [{ text: 'Technische Doku', link: '/de/tech/' }] }],
         '/de/community/': [{ text: 'Community', items: [{ text: 'Community', link: '/de/community/' }] }],
@@ -828,7 +870,21 @@ export default defineConfig({
         { text: 'À propos', link: '/fr/about/', activeMatch: '/fr/about/' },
       ],
       sidebar: {
-        '/fr/tutorials/': [{ text: 'Tutoriels', items: [{ text: 'Tutoriels', link: '/fr/tutorials/' }] }],
+        '/fr/tutorials/': [
+          { text: 'Démarrage rapide', items: [
+            { text: 'FAQ', link: '/fr/tutorials/faq' },
+            { text: 'Démarrage rapide', link: '/fr/tutorials/getting-started' },
+            { text: 'Connexion matérielle', link: '/fr/tutorials/hardware-setup' },
+            { text: 'Configuration logicielle', link: '/fr/tutorials/software-config' },
+            { text: 'Introduction à ROS', link: '/fr/tutorials/ros-intro' },
+          ] },
+          { text: 'Bras robotiques', items: [
+            { text: 'Guide de sélection', link: '/fr/tutorials/robot-arms/select-guide' },
+          ] },
+          { text: 'Capteurs', items: [
+            { text: 'Calibration IMU', link: '/fr/tutorials/sensors/imu/calibration' },
+          ] },
+        ],
         '/fr/topics/': [{ text: 'Sujets', items: [{ text: 'Sujets', link: '/fr/topics/' }] }],
         '/fr/tech/': [{ text: 'Documentation', items: [{ text: 'Documentation', link: '/fr/tech/' }] }],
         '/fr/community/': [{ text: 'Communauté', items: [{ text: 'Communauté', link: '/fr/community/' }] }],
@@ -864,7 +920,21 @@ export default defineConfig({
         { text: 'Sobre nosotros', link: '/es/about/', activeMatch: '/es/about/' },
       ],
       sidebar: {
-        '/es/tutorials/': [{ text: 'Tutoriales', items: [{ text: 'Tutoriales', link: '/es/tutorials/' }] }],
+        '/es/tutorials/': [
+          { text: 'Inicio rápido', items: [
+            { text: 'FAQ', link: '/es/tutorials/faq' },
+            { text: 'Inicio rápido', link: '/es/tutorials/getting-started' },
+            { text: 'Conexión de hardware', link: '/es/tutorials/hardware-setup' },
+            { text: 'Configuración de software', link: '/es/tutorials/software-config' },
+            { text: 'Introducción a ROS', link: '/es/tutorials/ros-intro' },
+          ] },
+          { text: 'Brazos robóticos', items: [
+            { text: 'Guía de selección', link: '/es/tutorials/robot-arms/select-guide' },
+          ] },
+          { text: 'Sensores', items: [
+            { text: 'Calibración IMU', link: '/es/tutorials/sensors/imu/calibration' },
+          ] },
+        ],
         '/es/topics/': [{ text: 'Temas', items: [{ text: 'Temas', link: '/es/topics/' }] }],
         '/es/tech/': [{ text: 'Documentación', items: [{ text: 'Documentación', link: '/es/tech/' }] }],
         '/es/community/': [{ text: 'Comunidad', items: [{ text: 'Comunidad', link: '/es/community/' }] }],
@@ -900,7 +970,21 @@ export default defineConfig({
         { text: 'Chi siamo', link: '/it/about/', activeMatch: '/it/about/' },
       ],
       sidebar: {
-        '/it/tutorials/': [{ text: 'Tutorial', items: [{ text: 'Tutorial', link: '/it/tutorials/' }] }],
+        '/it/tutorials/': [
+          { text: 'Guida rapida', items: [
+            { text: 'FAQ', link: '/it/tutorials/faq' },
+            { text: 'Guida rapida', link: '/it/tutorials/getting-started' },
+            { text: 'Collegamento hardware', link: '/it/tutorials/hardware-setup' },
+            { text: 'Configurazione software', link: '/it/tutorials/software-config' },
+            { text: 'Introduzione a ROS', link: '/it/tutorials/ros-intro' },
+          ] },
+          { text: 'Bracci robotici', items: [
+            { text: 'Guida alla scelta', link: '/it/tutorials/robot-arms/select-guide' },
+          ] },
+          { text: 'Sensori', items: [
+            { text: 'Calibrazione IMU', link: '/it/tutorials/sensors/imu/calibration' },
+          ] },
+        ],
         '/it/topics/': [{ text: 'Argomenti', items: [{ text: 'Argomenti', link: '/it/topics/' }] }],
         '/it/tech/': [{ text: 'Documentazione', items: [{ text: 'Documentazione', link: '/it/tech/' }] }],
         '/it/community/': [{ text: 'Community', items: [{ text: 'Community', link: '/it/community/' }] }],
