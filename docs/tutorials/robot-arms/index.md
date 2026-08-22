@@ -1,5 +1,6 @@
 ---
 title: 机器人机械臂系列
+description: "钜犀科技机械臂系列教程首页——SO-ARM101、AmazingHand、Lekiwi"
 ---
 
 # 机器人机械臂系列

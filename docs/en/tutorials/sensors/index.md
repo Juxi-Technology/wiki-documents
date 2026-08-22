@@ -1,5 +1,6 @@
 ---
 title: Sensors and Perception
+description: "Juxi Technology sensors tutorial home — IMU inertial modules"
 ---
 
 # Sensors and Perception

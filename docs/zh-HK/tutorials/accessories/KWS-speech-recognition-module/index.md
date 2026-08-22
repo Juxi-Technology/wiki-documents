@@ -1,5 +1,6 @@
 ---
 title: KWS語音識別模組
+description: "KWS 語音識別模組系列教程——串口通信、固件燒錄、ROS2 可視化"
 ---
 
 # KWS語音識別模組

@@ -1,5 +1,6 @@
 ---
 title: KWS语音识别模块
+description: "KWS 语音识别模块系列教程——串口通信、固件烧录、ROS2 可视化"
 ---
 
 # KWS语音识别模块

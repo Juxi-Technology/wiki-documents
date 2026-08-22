@@ -1,5 +1,6 @@
 ---
 title: Robot Accessories
+description: "Juxi Technology accessories tutorial home — KWS voice, Feetech servos, cameras"
 ---
 
 # Robot Accessories

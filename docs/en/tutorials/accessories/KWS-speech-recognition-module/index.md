@@ -1,5 +1,6 @@
 ---
 title: KWS Speech Recognition Module
+description: "KWS speech recognition module series — serial, firmware, ROS2"
 ---
 
 # KWS Speech Recognition Module

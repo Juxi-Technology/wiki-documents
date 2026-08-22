@@ -1,5 +1,6 @@
 ---
 title: Robot Arm Series
+description: "Juxi Technology robot arms tutorial home — SO-ARM101, AmazingHand, Lekiwi"
 ---
 
 # Robot Arm Series

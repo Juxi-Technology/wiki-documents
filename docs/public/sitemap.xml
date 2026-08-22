@@ -6,6 +6,18 @@
   <url><loc>https://wiki.juxitech.com/changelog/</loc></url>
   <url><loc>https://wiki.juxitech.com/community/</loc></url>
   <url><loc>https://wiki.juxitech.com/community/contributing</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/about/</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/community/</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/downloads/</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/products/amazinghand</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/products/imu-module</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/products/jetson-orin-nx-super-kit</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/products/realsense-depth-camera</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/products/so-arm101</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tech/</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/topics/</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/</loc></url>
   <url><loc>https://wiki.juxitech.com/downloads/</loc></url>
   <url><loc>https://wiki.juxitech.com/en/</loc></url>
   <url><loc>https://wiki.juxitech.com/en/about/</loc></url>
@@ -14,13 +26,25 @@
   <url><loc>https://wiki.juxitech.com/en/community/</loc></url>
   <url><loc>https://wiki.juxitech.com/en/community/contributing</loc></url>
   <url><loc>https://wiki.juxitech.com/en/downloads/</loc></url>
+  <url><loc>https://wiki.juxitech.com/en/products/2dof-gimbal</loc></url>
+  <url><loc>https://wiki.juxitech.com/en/products/4k-hdmi-capture</loc></url>
+  <url><loc>https://wiki.juxitech.com/en/products/amazinghand</loc></url>
   <url><loc>https://wiki.juxitech.com/en/products/esp32-s3-wifi-module</loc></url>
+  <url><loc>https://wiki.juxitech.com/en/products/feetech-servo</loc></url>
   <url><loc>https://wiki.juxitech.com/en/products/gps-beidou-module</loc></url>
+  <url><loc>https://wiki.juxitech.com/en/products/imu-module</loc></url>
+  <url><loc>https://wiki.juxitech.com/en/products/imx219-csi-camera</loc></url>
   <url><loc>https://wiki.juxitech.com/en/products/jetson-orin-nx-super-kit</loc></url>
+  <url><loc>https://wiki.juxitech.com/en/products/kvm-switch</loc></url>
+  <url><loc>https://wiki.juxitech.com/en/products/kws-voice-module</loc></url>
+  <url><loc>https://wiki.juxitech.com/en/products/lekiwi</loc></url>
+  <url><loc>https://wiki.juxitech.com/en/products/overhead-camera-mount</loc></url>
   <url><loc>https://wiki.juxitech.com/en/products/realsense-depth-camera</loc></url>
   <url><loc>https://wiki.juxitech.com/en/products/robot-vision-kit</loc></url>
   <url><loc>https://wiki.juxitech.com/en/products/servo-driver-board</loc></url>
+  <url><loc>https://wiki.juxitech.com/en/products/so-arm101</loc></url>
   <url><loc>https://wiki.juxitech.com/en/products/tpu-flexible-gripper</loc></url>
+  <url><loc>https://wiki.juxitech.com/en/products/usb-sound-card</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tech/</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tech/api-reference</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tech/dev-guide</loc></url>
@@ -91,13 +115,85 @@
   <url><loc>https://wiki.juxitech.com/en/tutorials/sensors/imu/ros-examples/ros1</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tutorials/sensors/imu/ros-examples/ros2</loc></url>
   <url><loc>https://wiki.juxitech.com/en/tutorials/software-config</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/about/</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/community/</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/downloads/</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/products/amazinghand</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/products/imu-module</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/products/jetson-orin-nx-super-kit</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/products/realsense-depth-camera</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/products/so-arm101</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tech/</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/topics/</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/about/</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/community/</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/downloads/</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/products/amazinghand</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/products/imu-module</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/products/jetson-orin-nx-super-kit</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/products/realsense-depth-camera</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/products/so-arm101</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tech/</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/topics/</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/about/</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/community/</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/downloads/</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/products/amazinghand</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/products/imu-module</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/products/jetson-orin-nx-super-kit</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/products/realsense-depth-camera</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/products/so-arm101</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tech/</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/topics/</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/about/</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/community/</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/downloads/</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/products/amazinghand</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/products/imu-module</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/products/jetson-orin-nx-super-kit</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/products/realsense-depth-camera</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/products/so-arm101</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tech/</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/topics/</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/about/</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/community/</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/downloads/</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/products/amazinghand</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/products/imu-module</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/products/jetson-orin-nx-super-kit</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/products/realsense-depth-camera</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/products/so-arm101</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tech/</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/topics/</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/</loc></url>
+  <url><loc>https://wiki.juxitech.com/products/2dof-gimbal</loc></url>
+  <url><loc>https://wiki.juxitech.com/products/4k-hdmi-capture</loc></url>
+  <url><loc>https://wiki.juxitech.com/products/amazinghand</loc></url>
   <url><loc>https://wiki.juxitech.com/products/esp32-s3-wifi-module</loc></url>
+  <url><loc>https://wiki.juxitech.com/products/feetech-servo</loc></url>
   <url><loc>https://wiki.juxitech.com/products/gps-beidou-module</loc></url>
+  <url><loc>https://wiki.juxitech.com/products/imu-module</loc></url>
+  <url><loc>https://wiki.juxitech.com/products/imx219-csi-camera</loc></url>
   <url><loc>https://wiki.juxitech.com/products/jetson-orin-nx-super-kit</loc></url>
+  <url><loc>https://wiki.juxitech.com/products/kvm-switch</loc></url>
+  <url><loc>https://wiki.juxitech.com/products/kws-voice-module</loc></url>
+  <url><loc>https://wiki.juxitech.com/products/lekiwi</loc></url>
+  <url><loc>https://wiki.juxitech.com/products/overhead-camera-mount</loc></url>
   <url><loc>https://wiki.juxitech.com/products/realsense-depth-camera</loc></url>
   <url><loc>https://wiki.juxitech.com/products/robot-vision-kit</loc></url>
   <url><loc>https://wiki.juxitech.com/products/servo-driver-board</loc></url>
+  <url><loc>https://wiki.juxitech.com/products/so-arm101</loc></url>
   <url><loc>https://wiki.juxitech.com/products/tpu-flexible-gripper</loc></url>
+  <url><loc>https://wiki.juxitech.com/products/usb-sound-card</loc></url>
   <url><loc>https://wiki.juxitech.com/tech/</loc></url>
   <url><loc>https://wiki.juxitech.com/tech/api-reference</loc></url>
   <url><loc>https://wiki.juxitech.com/tech/dev-guide</loc></url>
@@ -175,13 +271,25 @@
   <url><loc>https://wiki.juxitech.com/zh-HK/community/</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/community/contributing</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/downloads/</loc></url>
+  <url><loc>https://wiki.juxitech.com/zh-HK/products/2dof-gimbal</loc></url>
+  <url><loc>https://wiki.juxitech.com/zh-HK/products/4k-hdmi-capture</loc></url>
+  <url><loc>https://wiki.juxitech.com/zh-HK/products/amazinghand</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/products/esp32-s3-wifi-module</loc></url>
+  <url><loc>https://wiki.juxitech.com/zh-HK/products/feetech-servo</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/products/gps-beidou-module</loc></url>
+  <url><loc>https://wiki.juxitech.com/zh-HK/products/imu-module</loc></url>
+  <url><loc>https://wiki.juxitech.com/zh-HK/products/imx219-csi-camera</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/products/jetson-orin-nx-super-kit</loc></url>
+  <url><loc>https://wiki.juxitech.com/zh-HK/products/kvm-switch</loc></url>
+  <url><loc>https://wiki.juxitech.com/zh-HK/products/kws-voice-module</loc></url>
+  <url><loc>https://wiki.juxitech.com/zh-HK/products/lekiwi</loc></url>
+  <url><loc>https://wiki.juxitech.com/zh-HK/products/overhead-camera-mount</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/products/realsense-depth-camera</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/products/robot-vision-kit</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/products/servo-driver-board</loc></url>
+  <url><loc>https://wiki.juxitech.com/zh-HK/products/so-arm101</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/products/tpu-flexible-gripper</loc></url>
+  <url><loc>https://wiki.juxitech.com/zh-HK/products/usb-sound-card</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tech/</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tech/api-reference</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-HK/tech/dev-guide</loc></url>
