@@ -19,13 +19,19 @@
   <url><loc>https://wiki.juxitech.com/de/tech/</loc></url>
   <url><loc>https://wiki.juxitech.com/de/topics/</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/accessories/2dof-camera-gimbal</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/accessories/kvm-switch-tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/faq</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/getting-started</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/hardware-setup</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/learning-resources/jetson-orin-pytorch-compatibility</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/robot-arms/select-guide</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/ros-intro</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/sensors/imu/calibration</loc></url>
+  <url><loc>https://wiki.juxitech.com/de/tutorials/sensors/imu/product-info</loc></url>
   <url><loc>https://wiki.juxitech.com/de/tutorials/software-config</loc></url>
   <url><loc>https://wiki.juxitech.com/downloads/</loc></url>
   <url><loc>https://wiki.juxitech.com/en/</loc></url>
@@ -137,13 +143,19 @@
   <url><loc>https://wiki.juxitech.com/es/tech/</loc></url>
   <url><loc>https://wiki.juxitech.com/es/topics/</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/accessories/2dof-camera-gimbal</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/accessories/kvm-switch-tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/faq</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/getting-started</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/hardware-setup</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/learning-resources/jetson-orin-pytorch-compatibility</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/robot-arms/select-guide</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/ros-intro</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/sensors/imu/calibration</loc></url>
+  <url><loc>https://wiki.juxitech.com/es/tutorials/sensors/imu/product-info</loc></url>
   <url><loc>https://wiki.juxitech.com/es/tutorials/software-config</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/about/</loc></url>
@@ -158,13 +170,19 @@
   <url><loc>https://wiki.juxitech.com/fr/tech/</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/topics/</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/tutorials/</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/accessories/2dof-camera-gimbal</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/accessories/kvm-switch-tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/tutorials/faq</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/tutorials/getting-started</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/tutorials/hardware-setup</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/tutorials/learning-resources/jetson-orin-pytorch-compatibility</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/tutorials/robot-arms/select-guide</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/tutorials/ros-intro</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/tutorials/sensors/imu/calibration</loc></url>
+  <url><loc>https://wiki.juxitech.com/fr/tutorials/sensors/imu/product-info</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/tutorials/software-config</loc></url>
   <url><loc>https://wiki.juxitech.com/it/</loc></url>
   <url><loc>https://wiki.juxitech.com/it/about/</loc></url>
@@ -179,13 +197,19 @@
   <url><loc>https://wiki.juxitech.com/it/tech/</loc></url>
   <url><loc>https://wiki.juxitech.com/it/topics/</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/accessories/2dof-camera-gimbal</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/accessories/kvm-switch-tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/faq</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/getting-started</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/hardware-setup</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/learning-resources/jetson-orin-pytorch-compatibility</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/robot-arms/select-guide</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/ros-intro</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/sensors/imu/calibration</loc></url>
+  <url><loc>https://wiki.juxitech.com/it/tutorials/sensors/imu/product-info</loc></url>
   <url><loc>https://wiki.juxitech.com/it/tutorials/software-config</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/about/</loc></url>
@@ -200,13 +224,19 @@
   <url><loc>https://wiki.juxitech.com/ja/tech/</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/topics/</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/accessories/2dof-camera-gimbal</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/accessories/kvm-switch-tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/faq</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/getting-started</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/hardware-setup</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/learning-resources/jetson-orin-pytorch-compatibility</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/robot-arms/select-guide</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/ros-intro</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/sensors/imu/calibration</loc></url>
+  <url><loc>https://wiki.juxitech.com/ja/tutorials/sensors/imu/product-info</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/tutorials/software-config</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/about/</loc></url>
@@ -221,13 +251,19 @@
   <url><loc>https://wiki.juxitech.com/ko/tech/</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/topics/</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/tutorials/</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/accessories/2dof-camera-gimbal</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/accessories/kvm-switch-tutorial</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/tutorials/faq</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/tutorials/getting-started</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/tutorials/hardware-setup</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/tutorials/learning-resources/jetson-orin-pytorch-compatibility</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/tutorials/robot-arms/select-guide</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/tutorials/ros-intro</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/tutorials/sensors/imu/calibration</loc></url>
+  <url><loc>https://wiki.juxitech.com/ko/tutorials/sensors/imu/product-info</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/tutorials/software-config</loc></url>
   <url><loc>https://wiki.juxitech.com/products/2dof-gimbal</loc></url>
   <url><loc>https://wiki.juxitech.com/products/4k-hdmi-capture</loc></url>
