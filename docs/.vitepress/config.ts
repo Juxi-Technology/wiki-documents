@@ -190,7 +190,7 @@ const zhCN = {
         },
       ],
       '/topics/': [
-        { text: '技术专题', items: [{ text: '专题首页', link: '/topics/' }, { text: '机器人学习', link: '/topics/robot-learning/' }] },
+        { text: '技术专题', items: [{ text: '专题首页', link: '/topics/' }, { text: 'JetPack 刷机与系统配置', link: '/topics/jetpack-setup' }, { text: '边缘 AI 部署入门', link: '/topics/edge-ai-intro' }, { text: '具身智能入门（LeRobot）', link: '/topics/embodied-ai-intro' }, { text: '机器人学习', link: '/topics/robot-learning/' }] },
       ],
       '/tech/': [
         { text: '技术文档', items: [{ text: '技术文档首页', link: '/tech/' }, { text: 'API 参考', link: '/tech/api-reference' }, { text: '开发指南', link: '/tech/dev-guide' }] },
@@ -396,7 +396,7 @@ const en = {
         },
       ],
       '/en/topics/': [
-        { text: 'Topics', items: [{ text: 'Topics Home', link: '/en/topics/' }, { text: 'Robot Learning', link: '/en/topics/robot-learning/' }] },
+        { text: 'Topics', items: [{ text: 'Topics Home', link: '/en/topics/' }, { text: 'JetPack Flashing & Setup', link: '/en/topics/jetpack-setup' }, { text: 'Edge AI Deployment Intro', link: '/en/topics/edge-ai-intro' }, { text: 'Embodied AI Intro (LeRobot)', link: '/en/topics/embodied-ai-intro' }, { text: 'Robot Learning', link: '/en/topics/robot-learning/' }] },
       ],
       '/en/tech/': [
         { text: 'Tech Docs', items: [{ text: 'Tech Docs Home', link: '/en/tech/' }, { text: 'API Reference', link: '/en/tech/api-reference' }, { text: 'Developer Guide', link: '/en/tech/dev-guide' }] },
@@ -602,7 +602,7 @@ const zhHK = {
         },
       ],
       '/zh-HK/topics/': [
-        { text: '技術專題', items: [{ text: '專題首頁', link: '/zh-HK/topics/' }, { text: '機器人學習', link: '/zh-HK/topics/robot-learning/' }] },
+        { text: '技術專題', items: [{ text: '專題首頁', link: '/zh-HK/topics/' }, { text: 'JetPack 刷機與系統配置', link: '/zh-HK/topics/jetpack-setup' }, { text: '邊緣 AI 部署入門', link: '/zh-HK/topics/edge-ai-intro' }, { text: '具身智能入門（LeRobot）', link: '/zh-HK/topics/embodied-ai-intro' }, { text: '機器人學習', link: '/zh-HK/topics/robot-learning/' }] },
       ],
       '/zh-HK/tech/': [
         { text: '技術文檔', items: [{ text: '技術文檔首頁', link: '/zh-HK/tech/' }, { text: 'API 參考', link: '/zh-HK/tech/api-reference' }, { text: '開發指南', link: '/zh-HK/tech/dev-guide' }] },
