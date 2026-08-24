@@ -1,7 +1,7 @@
 ---
 title: KWS-Sprachinteraktionsmodul
-description: "JUXI KWS-Spracherkennungsmodul – chinesische/englische Wake-Wörter, serielle/RViz2-Visualisierung, kompatibel mit Jetson/Raspberry Pi, Open-Source-Firmware"
-keywords: [KWS, Spracherkennung, Sprachinteraktion, Wake-Wort]
+description: Juxi Technology KWS-Spracherkennungsmodul — chinesische/englische Wake-Words, seriell/RViz2-Visualisierung, Jetson/Raspberry Pi, Open-Source-Firmware
+keywords: [kws, spracherkennung, sprachinteraktion, wake-word, ai voice]
 ---
 
 # KWS-Sprachinteraktionsmodul
@@ -10,41 +10,48 @@ keywords: [KWS, Spracherkennung, Sprachinteraktion, Wake-Wort]
 
 ## Produktübersicht
 
-**Hauptmerkmale**:
+Das KWS-Modul (Keyword Spotting) unterstützt das Herunterladen und Brennen chinesischer/englischer Erkennungswörter. Der Sprachchip muss **nach Erhalt zuerst mit der Werksfirmware gebrannt** werden. Kommunikation per Seriellschnittstelle mit Jetson, Raspberry Pi usw.; ROS2-RViz2-Visualisierung.
 
-- Firmware für chinesische/englische Erkennungswörter (Download & Flashen)
+**Kernfunktionen**:
+
+- CN/EN-Erkennungswort-Firmware (Download & Brennen)
 - Serielle Kommunikation (PC/Jetson/Raspberry Pi/Jetson Nano)
 - ROS2 + RViz2-Visualisierung
-- Open-Source-Repository, Python-Serial-Beispiel
+- Open-Source-Repository, Python-Serial-Beispiele
+- 100% Offline-Erkennung, keine Internetverbindung (Datenschutz + geringe Latenz)
+- >95% Genauigkeit in normalen Umgebungen, Antwort <300ms
+- Bis zu 100 benutzerdefinierte Sprachbefehle, anpassbare Wake-Words
+- Niedriger Stromverbrauch: <50mA im Mittel
 
-## Produktspezifikationen
+## Spezifikationen
 
 | Kategorie | Spezifikation |
 |------|------|
 | Kommunikation | Seriell (UART) |
-| Erkennung | Chinesische/englische Wake-Wörter |
-| Plattform | Jetson, Nano, Raspberry Pi, PC |
+| Erkennung | CN/EN-Wake-Words |
+| Plattformen | Jetson, Nano, Raspberry Pi, PC |
 | Visualisierung | ROS2 RViz2 |
-| Firmware | Open-Source-Flash-Tool |
+| Firmware | Open-Source-Brenntool |
 
 ## Schnellstart
 
-```python
+```bash
+# 烧录固件(参考教程)
+# Python 串口通信示例
 import serial
 ser = serial.Serial('/dev/ttyUSB0', 115200)
 while True:
     if ser.in_waiting:
         data = ser.readline().decode().strip()
-        print(f"Erkennungsergebnis: {data}")
+        print(f"识别结果: {data}")
 ```
-
 ## Verwandte Tutorials
 
-- [Tutorials zur KWS-Spracherkennungsmodul-Serie](/de/tutorials/accessories/KWS-speech-recognition-module/)
+- [KWS-Spracherkennungsmodul-Serie](/de/tutorials/accessories/KWS-speech-recognition-module/)
 - [Firmware für Wake-Wörter herunterladen und flashen](/de/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words)
 - [ROS2 RViz2-Visualisierung](/de/tutorials/accessories/KWS-speech-recognition-module/ROS2-rviz2-visualization)
 
-## Technischer Support
+## Support
 
-- 📧 E-Mail：support@juxitech.com
-- 🌐 Offizielle Website：[www.juxitech.com](https://www.juxitech.com)
+- 📧 E-Mail: support@juxitech.com
+- 🌐 Offizielle Website: [www.juxitech.com](https://www.juxitech.com)

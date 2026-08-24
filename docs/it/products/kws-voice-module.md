@@ -1,50 +1,57 @@
 ---
 title: Modulo di interazione vocale KWS
-description: "Modulo di interazione vocale JUXI KWS – parole di attivazione cinesi/inglesi, visualizzazione seriale/RViz2, compatibile con Jetson/Raspberry Pi, firmware open source"
-keywords: [KWS, riconoscimento vocale, interazione vocale, parola di attivazione]
+description: Modulo di riconoscimento vocale KWS di Juxi Technology — parole di attivazione cinese/inglese, seriale/RViz2, Jetson/Raspberry Pi, firmware open source
+keywords: [kws, riconoscimento vocale, interazione vocale, parola di attivazione, ai voice]
 ---
 
 # Modulo di interazione vocale KWS
 
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/ai-voice-recognition-module)**
 
-## Panoramica del prodotto
+## Panoramica
+
+Il modulo KWS (Keyword Spotting) supporta il download e il flashing di parole di riconoscimento cinese/inglese. Il chip vocale deve essere **prima flashato con il firmware di fabbrica** dopo la ricezione. Comunicazione seriale con Jetson, Raspberry Pi, ecc. ; visualizzazione ROS2 RViz2.
 
 **Caratteristiche principali**:
 
-- Firmware cinese/inglese (download e flashing)
+- Firmware parole CN/EN (download e flashing)
 - Comunicazione seriale (PC/Jetson/Raspberry Pi/Jetson Nano)
 - Visualizzazione ROS2 + RViz2
-- Repository open source, esempio seriale Python
+- Repository open source, esempi seriale Python
+- Riconoscimento 100% offline, senza internet (privacy + bassa latenza)
+- Precisione >95% in ambienti normali, risposta <300ms
+- Fino a 100 comandi vocali personalizzati, parole di attivazione configurabili
+- Basso consumo: <50mA medi
 
-## Specifiche del prodotto
+## Specifiche
 
 | Categoria | Specifica |
 |------|------|
 | Comunicazione | Seriale (UART) |
-| Riconoscimento | Parole di attivazione cinesi/inglesi |
-| Piattaforma | Jetson, Nano, Raspberry Pi, PC |
+| Riconoscimento | Parole di attivazione CN/EN |
+| Piattaforme | Jetson, Nano, Raspberry Pi, PC |
 | Visualizzazione | ROS2 RViz2 |
 | Firmware | Strumento di flashing open source |
 
-## Guida rapida
+## Avvio rapido
 
-```python
+```bash
+# 烧录固件(参考教程)
+# Python 串口通信示例
 import serial
 ser = serial.Serial('/dev/ttyUSB0', 115200)
 while True:
     if ser.in_waiting:
         data = ser.readline().decode().strip()
-        print(f"Risultato riconoscimento: {data}")
+        print(f"识别结果: {data}")
 ```
+## Tutorial
 
-## Tutorial correlati
-
-- [Tutorial della serie modulo KWS](/it/tutorials/accessories/KWS-speech-recognition-module/)
+- [Serie del modulo di riconoscimento vocale KWS](/it/tutorials/accessories/KWS-speech-recognition-module/)
 - [Flashing firmware cinese/inglese](/it/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words)
 - [Visualizzazione ROS2 RViz2](/it/tutorials/accessories/KWS-speech-recognition-module/ROS2-rviz2-visualization)
 
-## Supporto tecnico
+## Supporto
 
 - 📧 E-mail: support@juxitech.com
 - 🌐 Sito ufficiale: [www.juxitech.com](https://www.juxitech.com)

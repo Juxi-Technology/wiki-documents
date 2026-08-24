@@ -1,47 +1,52 @@
 ---
-title: Servo de bus Feetech (SCS0009 / STS3215)
-description: "Servos de bus serie Feetech JUXI SCS0009 y STS3215 – protocolo SCS, versiones de encoder magnético / potenciómetro, análisis de tabla de memoria, depuración de host"
-keywords: [feetech, servo, SCS, STS, bus serie]
+title: Servos de bus Feetech (SCS0009 / STS3215)
+description: Servos de bus serie Feetech de Juxi Technology — protocolo SCS, versiones con encoder magnético/potenciómetro, análisis de tablas de memoria, depuración FD
+keywords: [feetech, servo, scs, sts, bus serie]
 ---
 
-# Servo de bus Feetech (SCS0009 / STS3215)
+# Servos de bus Feetech (SCS0009 / STS3215)
 
 > **[Comprar en la tienda](https://www.juxitech.com/es/products/feetech-scs0009-serial-bus-servo)**
 
-## Descripción del producto
+## Descripción general
 
-**Características principales**:
+Los servos de bus serie Feetech son el núcleo de accionamiento de brazos robóticos como el SO-ARM101. Compatibles con el **protocolo SCS**, conectan varios servos en un solo bus. Dos versiones (encoder magnético STS / potenciómetro SCSCL) con depuración por host FD en Windows.
 
-- Comunicación de bus serie, varios servos en un bus
-- Versiones de encoder magnético (STS) / potenciómetro (SCSCL)
-- Retroalimentación en tiempo real de posición / velocidad / par
-- Documentación completa de la tabla de memoria
-- Depuración de host FD (Windows)
+**Características clave**:
 
-## Especificaciones del producto
+- Comunicación por bus serie, múltiples servos en un bus
+- Versiones encoder magnético (STS) / potenciómetro (SCSCL)
+- Retorno en tiempo real de posición/velocidad/par
+- Documentación completa de tablas de memoria
+- Doble comunicación: TTL (rápida) / RS485 (antirruido)
+- Hasta 254 servos por bus (ID 0-253, difusión ID 254)
+- 1M baudios por defecto, 8 bits de datos, 1 bit de parada
+- Protecciones sobrecalentamiento/sobretensión/sobrecorriente/sobrecarga
+- Depuración con host FD (Windows)
+
+## Especificaciones
 
 | Categoría | Especificación |
 |------|------|
 | Protocolo | Bus serie SCS |
-| Versión | STS3215 (encoder magnético) / SCS0009 (potenciómetro) |
-| Depuración | Software host FD (Windows) |
-| Velocidad | 1.000.000 (predeterminado del host) |
+| Versiones | STS3215 (encoder magnético) / SCS0009 (potenciómetro) |
+| Depuración | Host FD (Windows) |
+| Velocidad | 1.000.000 (por defecto del host) |
 
 ## Inicio rápido
 
 ```bash
-# Depuración de host (Windows): descargar de feetechrc.com/software.html
-# Seleccionar puerto, velocidad 1000000, clic en Buscar
+# 上位机调试(Windows):下载 feetechrc.com/software.html
+# 选择端口,波特率 1000000,点击搜索
 ```
+## Tutoriales
 
-## Tutoriales relacionados
-
-- [Tutorial de depuración Feetech STS3215 & SCS0009](/es/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial)
+- [Tutorial de depuración Feetech STS3215 y SCS0009](/es/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial)
 - [Protocolo de comunicación SCS](/es/tutorials/accessories/feetech/Feetech-SCS_Communication_Protocol)
 - [Tabla de memoria del servo STS con encoder magnético](/es/tutorials/accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis)
 - [Tabla de memoria del servo SCSCL con potenciómetro](/es/tutorials/accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis)
 
-## Soporte técnico
+## Soporte
 
 - 📧 Correo: support@juxitech.com
 - 🌐 Sitio oficial: [www.juxitech.com](https://www.juxitech.com)

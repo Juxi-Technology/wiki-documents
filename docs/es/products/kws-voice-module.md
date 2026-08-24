@@ -1,50 +1,57 @@
 ---
-title: Módulo de interacción de voz KWS
-description: "Módulo de interacción de voz JUXI KWS – palabras de activación chinas/inglesas, visualización serie/RViz2, compatible con Jetson/Raspberry Pi, firmware de código abierto"
-keywords: [KWS, reconocimiento de voz, interacción de voz, palabra de activación]
+title: Módulo de interacción por voz KWS
+description: Módulo de reconocimiento de voz KWS de Juxi Technology — palabras de activación chino/inglés, serie/RViz2, Jetson/Raspberry Pi, firmware open source
+keywords: [kws, reconocimiento de voz, interacción por voz, palabra de activación, ai voice]
 ---
 
-# Módulo de interacción de voz KWS
+# Módulo de interacción por voz KWS
 
 > **[Comprar en la tienda](https://www.juxitech.com/es/products/ai-voice-recognition-module)**
 
-## Descripción del producto
+## Descripción general
 
-**Características principales**:
+El módulo KWS (Keyword Spotting) admite la descarga y grabación de palabras de reconocimiento chino/inglés. El chip de voz debe **grabarse primero con el firmware de fábrica** tras su recepción. Comunicación serie con Jetson, Raspberry Pi, etc. ; visualización ROS2 RViz2.
 
-- Firmware chino/inglés (descarga y grabación)
+**Características clave**:
+
+- Firmware de palabras CN/EN (descarga y grabación)
 - Comunicación serie (PC/Jetson/Raspberry Pi/Jetson Nano)
 - Visualización ROS2 + RViz2
-- Repositorio de código abierto, ejemplo serie en Python
+- Repositorio open source, ejemplos serie Python
+- Reconocimiento 100% sin conexión, sin internet (privacidad + baja latencia)
+- Precisión >95% en entornos normales, respuesta <300ms
+- Hasta 100 comandos de voz personalizados, palabras de activación configurables
+- Bajo consumo: <50mA promedio
 
-## Especificaciones del producto
+## Especificaciones
 
 | Categoría | Especificación |
 |------|------|
 | Comunicación | Serie (UART) |
-| Reconocimiento | Palabras de activación chinas/inglesas |
-| Plataforma | Jetson, Nano, Raspberry Pi, PC |
+| Reconocimiento | Palabras de activación CN/EN |
+| Plataformas | Jetson, Nano, Raspberry Pi, PC |
 | Visualización | ROS2 RViz2 |
-| Firmware | Herramienta de grabación de código abierto |
+| Firmware | Herramienta de grabación open source |
 
 ## Inicio rápido
 
-```python
+```bash
+# 烧录固件(参考教程)
+# Python 串口通信示例
 import serial
 ser = serial.Serial('/dev/ttyUSB0', 115200)
 while True:
     if ser.in_waiting:
         data = ser.readline().decode().strip()
-        print(f"Resultado de reconocimiento: {data}")
+        print(f"识别结果: {data}")
 ```
+## Tutoriales
 
-## Tutoriales relacionados
-
-- [Tutoriales de la serie del módulo KWS](/es/tutorials/accessories/KWS-speech-recognition-module/)
+- [Serie del módulo de reconocimiento de voz KWS](/es/tutorials/accessories/KWS-speech-recognition-module/)
 - [Grabación de firmware chino/inglés](/es/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words)
 - [Visualización ROS2 RViz2](/es/tutorials/accessories/KWS-speech-recognition-module/ROS2-rviz2-visualization)
 
-## Soporte técnico
+## Soporte
 
 - 📧 Correo: support@juxitech.com
 - 🌐 Sitio oficial: [www.juxitech.com](https://www.juxitech.com)
