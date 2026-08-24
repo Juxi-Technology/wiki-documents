@@ -30,6 +30,8 @@ High-precision IMU attitude sensor with a 72MHz 32-bit processor for real-time a
 | Output | 3-axis accel/gyro/euler/mag/pressure/temp/quaternion |
 | Power | 5V or 3.3V, 11mA |
 | Size/Weight | 27.4×22.6×12mm, 3.8g |
+| Operating temp | -40°C ~ +85°C (storage -40°C ~ +100°C) |
+| Shock resistance | 20kg (bare board) |
 | ROS | ROS1 / ROS2 |
 
 ## Quick Start

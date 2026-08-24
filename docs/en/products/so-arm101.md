@@ -29,6 +29,10 @@ The SO-ARM101 is Juxi Technology's open-source 6-DOF dual-arm robot development 
 | Host | PC (Linux) / Jetson |
 | Ecosystem | LeRobot, ROS 2, ROS 1 |
 | Power | Leader 5V6A / Follower 12V5A |
+| Payload | 500g |
+| Repeatability | ±0.1mm |
+| Working radius | 520mm |
+| Communication | USB-C |
 
 ## Quick Start
 

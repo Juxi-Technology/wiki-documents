@@ -26,6 +26,7 @@ USB driver-free sound card with onboard microphone and speaker — the system au
 | Interface | USB 2.0 |
 | Audio | Input (mic) + Output (speaker) |
 | Platforms | Raspberry Pi / Jetson / PC |
+| Sample rate | 16KHz / 48KHz, 16-bit |
 
 ## Quick Start
 

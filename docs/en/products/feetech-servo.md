@@ -18,6 +18,10 @@ Feetech serial bus servos are the driving core of SO-ARM101-class arms, using th
 - Magnetic (STS) / potentiometer (SCSCL) versions
 - Position/speed/torque real-time feedback
 - Full memory table documentation
+- Dual communication: TTL (high-speed) / RS485 (anti-interference)
+- Up to 254 servos on one bus (ID 0-253, broadcast ID 254)
+- Default 1M baud, 8 data bits, 1 stop bit
+- Over-temperature / over-voltage / over-current / overload protection
 - FD host tool (Windows)
 
 ## Specifications

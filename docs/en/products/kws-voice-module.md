@@ -18,6 +18,10 @@ KWS (Keyword Spotting) voice interaction module supports Chinese/English recogni
 - Serial communication (PC/Jetson/Pi/Jetson Nano)
 - ROS2 + RViz2 visualization
 - Open-source repo with Python serial examples
+- 100% offline recognition, no internet needed (privacy + low latency)
+- >95% accuracy in normal environments, response within 300ms
+- Up to 100 custom voice commands, customizable wake words
+- Low power: average current <50mA
 
 ## Specifications
 

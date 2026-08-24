@@ -18,6 +18,10 @@ AmazingHand is Juxi Technology's open-source bionic dexterous hand with 5-finger
 - TTL serial bus control, mainstream controller compatible
 - Open CAD/source, customizable
 - Pairs with SO-ARM101 for full manipulation platforms
+- Real-time hand tracking: track gestures via webcam and control the hand live
+- Simulation demos: run hand-tracking demos without hardware (dora-rs ecosystem)
+- Individual finger angle control; single (left/right) or dual-hand
+- Power: 5V3A servo driver board, USB connection to host
 
 ## Specifications
 
