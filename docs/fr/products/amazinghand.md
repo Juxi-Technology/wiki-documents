@@ -1,25 +1,36 @@
 ---
-title: Main robotique AmazingHand
-description: 5 doigts multi-articulés, bus TTL, CAD ouvert, recherche Embodied AI
-keywords: [amazinghand]
+title: Main dexterous AmazingHand
+description: Main bionique open source de Juxi Technology — 5 doigts multi-articulations, contrôle bus TTL, CAO ouverte, recherche IA incarnée et HRI
+keywords: [amazinghand, main dexterous, dexterous hand, ia incarnée]
 ---
 
-# Main robotique AmazingHand
+# Main dexterous AmazingHand
 
 > **[Acheter en boutique](https://www.juxitech.com/fr/products/amazinghand)**
 
-## Aperçu
+## Présentation
 
-Main bionique à 5 doigts multi-articulés. Contrôle par bus série TTL, CAD ouvert pour des designs de doigts personnalisés.
+AmazingHand est la main bionique open source de Juxi Technology, avec un design à 5 doigts multi-articulations et un contrôle par bus série TTL. Les fichiers CAO ouverts permettent de personnaliser librement les doigts pour la manipulation fine, les stratégies de préhension et la recherche en interaction homme-robot (HRI).
+
+**Caractéristiques clés** :
+
+- 5 doigts multi-articulations, proportions proches de la main humaine
+- Contrôle par bus série TTL, compatible avec les contrôleurs courants
+- CAO/source ouverts, personnalisables
+- Se combine avec SO-ARM101 pour des plateformes de manipulation complètes
+- Suivi de main en temps réel : suivi gestuel par webcam et contrôle en direct
+- Démonstrations de simulation : suivi de main sans matériel (écosystème dora-rs)
+- Contrôle d'angle de chaque doigt, une ou deux mains
+- Alimentation : carte driver de servos 5V3A, connexion USB à l'hôte
 
 ## Spécifications
 
-| カテゴリ | 仕様 |
+| Catégorie | Spécification |
 |------|------|
-| Type | Main 5 doigts multi-articulés |
+| Type | Main 5 doigts multi-articulations |
 | Contrôle | Bus série TTL |
-| Écosystème | Python SDK, ROS |
-| Open source | CAD/source ouverts |
+| Écosystème | SDK Python, ROS |
+| Open source | CAO/source sur GitHub |
 
 ## Démarrage rapide
 
@@ -30,9 +41,13 @@ pip install -r requirements.txt
 python examples/basic_control.py
 ```
 
----
+## Tutoriels
+
+- [Contrôle d'interface AmazingHand](/fr/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control)
+- [Exemple officiel AmazingHand](/fr/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example)
+- [Débogage TTL AmazingHand](/fr/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging)
 
 ## Support
 
-- 📧 E-mail: support@juxitech.com
-- 🌐 Site web: [www.juxitech.com](https://www.juxitech.com)
+- 📧 E-mail : support@juxitech.com
+- 🌐 Site officiel : [www.juxitech.com](https://www.juxitech.com)

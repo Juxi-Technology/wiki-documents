@@ -1,6 +1,6 @@
 ---
 title: USB ドライバ不要サウンドカード
-description: "JUXI USB ドライバ不要サウンドカード——オンボードマイク+スピーカー、プラグアンドプレイ、ノイズ低減、ラズベリーパイ/Jetson/PC 音声対話対応"
+description: 鉅犀科技 USB ドライバ不要サウンドカード——オンボードマイク+スピーカー、プラグアンドプレイ、ノイズ低減、Raspberry Pi/Jetson/PC 対応
 keywords: [sound card, サウンドカード, usb audio, 音声対話]
 ---
 
@@ -10,36 +10,38 @@ keywords: [sound card, サウンドカード, usb audio, 音声対話]
 
 ## 製品概要
 
-**主な特長**：
+USB ドライバ不要サウンドカードは、オンボードのマイクとスピーカーを備えたプラグアンドプレイの音声デバイスです。システムが自動的に音声入出力デバイスとして認識します。ロボット音声対話、AI 音声アシスタント開発(KWS モジュール、LLM ボイスアシスタントとの併用)に最適です。
+
+**主な特長**:
 
 - プラグアンドプレイ、ドライバ不要
 - オンボードマイク + スピーカー
-- ラズベリーパイ、Jetson、PC 互換
-- USB オーディオキットと併用して Jetson 開発
+- Raspberry Pi、Jetson、PC 対応
+- USB オーディオキットと併用して Jetson 開発に使用
 
-## 製品仕様
+## 仕様
 
 | カテゴリ | 仕様 |
 |------|------|
 | インターフェース | USB 2.0 |
-| オーディオ | 入力(マイク) + 出力(スピーカー) |
+| オーディオ | 入力(マイク)+ 出力(スピーカー) |
 | プラットフォーム | Raspberry Pi / Jetson / PC |
+| サンプルレート | 16KHz / 48KHz、16 ビット |
 
 ## クイックスタート
 
 ```bash
-# USB を挿すと自動認識
-# デバイス確認
-arecord -l    # 録音デバイス
-aplay -l      # 再生デバイス
+# 插入 USB 即自动识别
+# 验证设备
+arecord -l    # 录音设备
+aplay -l      # 播放设备
 ```
-
 ## 関連チュートリアル
 
 - [USB ドライバ不要サウンドカードチュートリアル](/ja/tutorials/accessories/usb-audio-card-tutorial)
-- [可視化テストソフトウェアダウンロード](/ja/downloads/)
+- [ダウンロードセンター](/ja/downloads/)
 
-## 技術サポート
+## サポート
 
-- 📧 メール：support@juxitech.com
-- 🌐 公式サイト：[www.juxitech.com](https://www.juxitech.com)
+- 📧 メール: support@juxitech.com
+- 🌐 公式サイト: [www.juxitech.com](https://www.juxitech.com)

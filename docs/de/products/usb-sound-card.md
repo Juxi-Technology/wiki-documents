@@ -1,45 +1,47 @@
 ---
-title: USB-Soundkarte ohne Treiber
-description: "JUXI USB-Soundkarte ohne Treiber – Onboard-Mikrofon + Lautsprecher, Plug-and-Play, Rauschunterdrückung, für Raspberry Pi/Jetson/PC Sprachinteraktion"
-keywords: [Soundkarte, USB-Audio, Sprachinteraktion]
+title: USB Soundkarte ohne Treiber
+description: Juxi Technology USB-Soundkarte — Onboard-Mikrofon + Lautsprecher, Plug-and-Play, Rauschunterdrückung, Raspberry Pi/Jetson/PC
+keywords: [soundkarte, usb audio, sprachinteraktion]
 ---
 
-# USB-Soundkarte ohne Treiber
+# USB Soundkarte ohne Treiber
 
 > **[Im Shop kaufen](https://www.juxitech.com/de/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction)**
 
 ## Produktübersicht
 
-**Hauptmerkmale**:
+Die treiberfreie USB-Soundkarte mit Onboard-Mikrofon und Lautsprecher wird vom System automatisch als Audio-Ein-/Ausgabegerät erkannt. Ideal für Roboter-Sprachinteraktion und KI-Sprachassistenten (kombiniert mit KWS-Modulen und LLM-Sprachassistenten).
 
-- Plug-and-Play, kein Treiber nötig
+**Kernfunktionen**:
+
+- Plug-and-Play, kein Treiber
 - Onboard-Mikrofon + Lautsprecher
 - Kompatibel mit Raspberry Pi, Jetson, PC
 - Mit USB-Audio-Kit für Jetson-Entwicklung
 
-## Produktspezifikationen
+## Spezifikationen
 
 | Kategorie | Spezifikation |
 |------|------|
 | Schnittstelle | USB 2.0 |
 | Audio | Eingang (Mikrofon) + Ausgang (Lautsprecher) |
-| Plattform | Raspberry Pi / Jetson / PC |
+| Plattformen | Raspberry Pi / Jetson / PC |
+| Abtastrate | 16KHz / 48KHz, 16 Bit |
 
 ## Schnellstart
 
 ```bash
-# USB einstecken – automatische Erkennung
-# Gerät prüfen
-arecord -l    # Aufnahmegerät
-aplay -l      # Wiedergabegerät
+# 插入 USB 即自动识别
+# 验证设备
+arecord -l    # 录音设备
+aplay -l      # 播放设备
 ```
-
 ## Verwandte Tutorials
 
-- [Tutorial USB-Soundkarte ohne Treiber](/de/tutorials/accessories/usb-audio-card-tutorial)
-- [Download Visualisierungs-Software](/de/downloads/)
+- [USB-Soundkarten-Tutorial](/de/tutorials/accessories/usb-audio-card-tutorial)
+- [Download-Center](/de/downloads/)
 
-## Technischer Support
+## Support
 
-- 📧 E-Mail：support@juxitech.com
-- 🌐 Offizielle Website：[www.juxitech.com](https://www.juxitech.com)
+- 📧 E-Mail: support@juxitech.com
+- 🌐 Offizielle Website: [www.juxitech.com](https://www.juxitech.com)

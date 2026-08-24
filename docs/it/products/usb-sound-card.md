@@ -1,45 +1,47 @@
 ---
 title: Scheda audio USB senza driver
-description: "Scheda audio USB senza driver JUXI – microfono + altoparlante integrati, plug-and-play, riduzione rumore, per interazione vocale Raspberry Pi/Jetson/PC"
-keywords: [scheda audio, USB audio, interazione vocale]
+description: Scheda audio USB di Juxi Technology — microfono + altoparlante integrati, plug-and-play, riduzione del rumore, Raspberry Pi/Jetson/PC
+keywords: [scheda audio, usb audio, interazione vocale]
 ---
 
 # Scheda audio USB senza driver
 
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction)**
 
-## Panoramica del prodotto
+## Panoramica
+
+La scheda audio USB senza driver integra microfono e altoparlante — il sistema la rileva automaticamente come dispositivo audio. Ideale per interazione vocale robotica e assistenti vocali AI (con moduli KWS e assistenti vocali LLM).
 
 **Caratteristiche principali**:
 
-- Plug-and-play, senza driver
+- Plug-and-play, nessun driver
 - Microfono + altoparlante integrati
 - Compatibile con Raspberry Pi, Jetson, PC
-- Con kit audio USB per sviluppo Jetson
+- Kit audio USB per sviluppo Jetson
 
-## Specifiche del prodotto
+## Specifiche
 
 | Categoria | Specifica |
 |------|------|
 | Interfaccia | USB 2.0 |
-| Audio | Ingresso (microfono) + uscita (altoparlante) |
-| Piattaforma | Raspberry Pi / Jetson / PC |
+| Audio | Ingresso (microfono) + Uscita (altoparlante) |
+| Piattaforme | Raspberry Pi / Jetson / PC |
+| Frequenza di campionamento | 16KHz / 48KHz, 16 bit |
 
-## Guida rapida
+## Avvio rapido
 
 ```bash
-# Inserire USB – riconoscimento automatico
-# Verifica dispositivo
-arecord -l    # dispositivo di registrazione
-aplay -l      # dispositivo di riproduzione
+# 插入 USB 即自动识别
+# 验证设备
+arecord -l    # 录音设备
+aplay -l      # 播放设备
 ```
+## Tutorial
 
-## Tutorial correlati
+- [Tutorial scheda audio USB](/it/tutorials/accessories/usb-audio-card-tutorial)
+- [Centro download](/it/downloads/)
 
-- [Tutorial scheda audio USB senza driver](/it/tutorials/accessories/usb-audio-card-tutorial)
-- [Download software di test](/it/downloads/)
-
-## Supporto tecnico
+## Supporto
 
 - 📧 E-mail: support@juxitech.com
 - 🌐 Sito ufficiale: [www.juxitech.com](https://www.juxitech.com)

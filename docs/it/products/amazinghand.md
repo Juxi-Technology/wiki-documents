@@ -1,25 +1,36 @@
 ---
-title: Mano robotica AmazingHand
-description: 5 dita multi-articolate, bus TTL, CAD aperto, ricerca Embodied AI
-keywords: [amazinghand]
+title: Mano dexterous AmazingHand
+description: Mano bionica open source di Juxi Technology — 5 dita multi-articolazione, controllo bus TTL, CAD aperto, ricerca IA incarnata e HRI
+keywords: [amazinghand, mano dexterous, dexterous hand, ia incarnata]
 ---
 
-# Mano robotica AmazingHand
+# Mano dexterous AmazingHand
 
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/amazinghand)**
 
 ## Panoramica
 
-Mano bionica a 5 dita multi-articolate. Controllo bus seriale TTL, CAD aperto per design personalizzati delle dita.
+AmazingHand è la mano bionica open source di Juxi Technology, con design a 5 dita multi-articolazione e controllo tramite bus seriale TTL. I file CAD aperti consentono di personalizzare liberamente le dita per manipolazione fine, strategie di presa e ricerca nell'interazione uomo-robot (HRI).
+
+**Caratteristiche principali**:
+
+- 5 dita multi-articolazione, proporzioni simili alla mano umana
+- Controllo bus seriale TTL, compatibile con i controller più comuni
+- CAD/sorgente aperti, personalizzabili
+- Si combina con SO-ARM101 per piattaforme di manipolazione complete
+- Tracking della mano in tempo reale: gesti via webcam e controllo live
+- Demo di simulazione: tracking della mano senza hardware (ecosistema dora-rs)
+- Controllo angolo per singolo dito, una o due mani
+- Alimentazione: scheda driver servo 5V3A, collegamento USB all'host
 
 ## Specifiche
 
-| カテゴリ | 仕様 |
+| Categoria | Specifica |
 |------|------|
-| Tipo | Mano 5 dita multi-articolate |
+| Tipo | Mano 5 dita multi-articolazione |
 | Controllo | Bus seriale TTL |
-| Ecosistema | Python SDK, ROS |
-| Open source | CAD/codice aperti |
+| Ecosistema | SDK Python, ROS |
+| Open source | CAD/sorgente su GitHub |
 
 ## Avvio rapido
 
@@ -30,9 +41,13 @@ pip install -r requirements.txt
 python examples/basic_control.py
 ```
 
----
+## Tutorial
+
+- [Controllo interfaccia AmazingHand](/it/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control)
+- [Esempio ufficiale AmazingHand](/it/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example)
+- [Debug TTL AmazingHand](/it/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging)
 
 ## Supporto
 
-- 📧 Email: support@juxitech.com
-- 🌐 Sito web: [www.juxitech.com](https://www.juxitech.com)
+- 📧 E-mail: support@juxitech.com
+- 🌐 Sito ufficiale: [www.juxitech.com](https://www.juxitech.com)

@@ -1,45 +1,47 @@
 ---
-title: Tarjeta de sonido USB sin controlador
-description: "Tarjeta de sonido USB sin controlador JUXI – micrófono + altavoz integrados, plug-and-play, reducción de ruido, para interacción de voz Raspberry Pi/Jetson/PC"
-keywords: [tarjeta de sonido, USB de audio, interacción de voz]
+title: Tarjeta de sonido USB sin controladores
+description: Tarjeta de sonido USB de Juxi Technology — micrófono + altavoz integrados, plug-and-play, reducción de ruido, Raspberry Pi/Jetson/PC
+keywords: [tarjeta de sonido, usb audio, interacción por voz]
 ---
 
-# Tarjeta de sonido USB sin controlador
+# Tarjeta de sonido USB sin controladores
 
 > **[Comprar en la tienda](https://www.juxitech.com/es/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction)**
 
-## Descripción del producto
+## Descripción general
 
-**Características principales**:
+La tarjeta de sonido USB sin controladores integra micrófono y altavoz — el sistema la detecta automáticamente como dispositivo de audio. Ideal para interacción por voz robótica y asistentes de voz con IA (con módulos KWS y asistentes de voz LLM).
 
-- Plug-and-play, sin controlador
+**Características clave**:
+
+- Plug-and-play, sin controladores
 - Micrófono + altavoz integrados
 - Compatible con Raspberry Pi, Jetson, PC
-- Con kit de audio USB para desarrollo Jetson
+- Kit de audio USB para desarrollo con Jetson
 
-## Especificaciones del producto
+## Especificaciones
 
 | Categoría | Especificación |
 |------|------|
 | Interfaz | USB 2.0 |
-| Audio | Entrada (micrófono) + salida (altavoz) |
-| Plataforma | Raspberry Pi / Jetson / PC |
+| Audio | Entrada (micrófono) + Salida (altavoz) |
+| Plataformas | Raspberry Pi / Jetson / PC |
+| Frecuencia de muestreo | 16KHz / 48KHz, 16 bits |
 
 ## Inicio rápido
 
 ```bash
-# Insertar USB – reconocimiento automático
-# Comprobar dispositivo
-arecord -l    # dispositivo de grabación
-aplay -l      # dispositivo de reproducción
+# 插入 USB 即自动识别
+# 验证设备
+arecord -l    # 录音设备
+aplay -l      # 播放设备
 ```
+## Tutoriales
 
-## Tutoriales relacionados
+- [Tutorial de tarjeta de sonido USB](/es/tutorials/accessories/usb-audio-card-tutorial)
+- [Centro de descargas](/es/downloads/)
 
-- [Tutorial de tarjeta de sonido USB sin controlador](/es/tutorials/accessories/usb-audio-card-tutorial)
-- [Descarga del software de prueba](/es/downloads/)
-
-## Soporte técnico
+## Soporte
 
 - 📧 Correo: support@juxitech.com
 - 🌐 Sitio oficial: [www.juxitech.com](https://www.juxitech.com)
