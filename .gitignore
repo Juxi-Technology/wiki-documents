@@ -1,4 +1,6 @@
 node_modules/
+# 构建环境符号链接(docs/node_modules -> /tmp/wiki-build3/node_modules),精确路径以匹配 symlink
+docs/node_modules
 docs/.vitepress/dist/
 .DS_Store
 .remember/

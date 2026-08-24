@@ -190,7 +190,7 @@ const zhCN = {
         },
       ],
       '/topics/': [
-        { text: '技术专题', items: [{ text: '专题首页', link: '/topics/' }, { text: 'JetPack 刷机与系统配置', link: '/topics/jetpack-setup' }, { text: '边缘 AI 部署入门', link: '/topics/edge-ai-intro' }, { text: '具身智能入门（LeRobot）', link: '/topics/embodied-ai-intro' }, { text: '机器人学习', link: '/topics/robot-learning/' }] },
+        { text: '技术专题', items: [{ text: '专题首页', link: '/topics/' }, { text: 'JetPack 刷机与系统配置', link: '/topics/jetpack-setup' }, { text: '边缘 AI 部署入门', link: '/topics/edge-ai-intro' }, { text: '具身智能入门（LeRobot）', link: '/topics/embodied-ai-intro' }, { text: '机器人学习', link: '/topics/robot-learning/' }, { text: '开源硬件理念', link: '/topics/open-source-hardware' }] },
       ],
       '/tech/': [
         { text: '技术文档', items: [{ text: '技术文档首页', link: '/tech/' }, { text: 'API 参考', link: '/tech/api-reference' }, { text: '开发指南', link: '/tech/dev-guide' }] },
@@ -408,7 +408,7 @@ const en = {
         },
       ],
       '/en/topics/': [
-        { text: 'Topics', items: [{ text: 'Topics Home', link: '/en/topics/' }, { text: 'JetPack Flashing & Setup', link: '/en/topics/jetpack-setup' }, { text: 'Edge AI Deployment Intro', link: '/en/topics/edge-ai-intro' }, { text: 'Embodied AI Intro (LeRobot)', link: '/en/topics/embodied-ai-intro' }, { text: 'Robot Learning', link: '/en/topics/robot-learning/' }] },
+        { text: 'Topics', items: [{ text: 'Topics Home', link: '/en/topics/' }, { text: 'JetPack Flashing & Setup', link: '/en/topics/jetpack-setup' }, { text: 'Edge AI Deployment Intro', link: '/en/topics/edge-ai-intro' }, { text: 'Embodied AI Intro (LeRobot)', link: '/en/topics/embodied-ai-intro' }, { text: 'Robot Learning', link: '/en/topics/robot-learning/' }, { text: 'Open-Source Hardware Philosophy', link: '/en/topics/open-source-hardware' }] },
       ],
       '/en/tech/': [
         { text: 'Tech Docs', items: [{ text: 'Tech Docs Home', link: '/en/tech/' }, { text: 'API Reference', link: '/en/tech/api-reference' }, { text: 'Developer Guide', link: '/en/tech/dev-guide' }] },
@@ -626,7 +626,7 @@ const zhHK = {
         },
       ],
       '/zh-HK/topics/': [
-        { text: '技術專題', items: [{ text: '專題首頁', link: '/zh-HK/topics/' }, { text: 'JetPack 刷機與系統配置', link: '/zh-HK/topics/jetpack-setup' }, { text: '邊緣 AI 部署入門', link: '/zh-HK/topics/edge-ai-intro' }, { text: '具身智能入門（LeRobot）', link: '/zh-HK/topics/embodied-ai-intro' }, { text: '機器人學習', link: '/zh-HK/topics/robot-learning/' }] },
+        { text: '技術專題', items: [{ text: '專題首頁', link: '/zh-HK/topics/' }, { text: 'JetPack 刷機與系統配置', link: '/zh-HK/topics/jetpack-setup' }, { text: '邊緣 AI 部署入門', link: '/zh-HK/topics/edge-ai-intro' }, { text: '具身智能入門（LeRobot）', link: '/zh-HK/topics/embodied-ai-intro' }, { text: '機器人學習', link: '/zh-HK/topics/robot-learning/' }, { text: '開源硬件理念', link: '/zh-HK/topics/open-source-hardware' }] },
       ],
       '/zh-HK/tech/': [
         { text: '技術文檔', items: [{ text: '技術文檔首頁', link: '/zh-HK/tech/' }, { text: 'API 參考', link: '/zh-HK/tech/api-reference' }, { text: '開發指南', link: '/zh-HK/tech/dev-guide' }] },
@@ -809,7 +809,7 @@ export default defineConfig({
             { text: 'USB ドライバ不要サウンドカード', link: '/ja/tutorials/accessories/usb-audio-card-tutorial' },
           ] },
         ],
-        '/ja/topics/': [{ text: 'トピック', items: [{ text: 'トピック', link: '/ja/topics/' }] }],
+        '/ja/topics/': [{ text: 'トピック', items: [{ text: 'トピック', link: '/ja/topics/' }, { text: 'オープンソースハードウェアの理念', link: '/ja/topics/open-source-hardware' }] }],
         '/ja/tech/': [{ text: '技術ドキュメント', items: [{ text: '技術ドキュメント', link: '/ja/tech/' }] }],
         '/ja/community/': [{ text: 'コミュニティ', items: [{ text: 'コミュニティ', link: '/ja/community/' }] }],
         '/ja/products/': [
@@ -961,7 +961,7 @@ export default defineConfig({
             { text: 'USB 무드라이버 사운드 카드', link: '/ko/tutorials/accessories/usb-audio-card-tutorial' },
           ] },
         ],
-        '/ko/topics/': [{ text: '토픽', items: [{ text: '토픽', link: '/ko/topics/' }] }],
+        '/ko/topics/': [{ text: '토픽', items: [{ text: '토픽', link: '/ko/topics/' }, { text: '오픈소스 하드웨어 철학', link: '/ko/topics/open-source-hardware' }] }],
         '/ko/tech/': [{ text: '기술 문서', items: [{ text: '기술 문서', link: '/ko/tech/' }] }],
         '/ko/community/': [{ text: '커뮤니티', items: [{ text: '커뮤니티', link: '/ko/community/' }] }],
         '/ko/products/': [
@@ -1113,7 +1113,7 @@ export default defineConfig({
             { text: 'USB-Soundkarte ohne Treiber', link: '/de/tutorials/accessories/usb-audio-card-tutorial' },
           ] },
         ],
-        '/de/topics/': [{ text: 'Themen', items: [{ text: 'Themen', link: '/de/topics/' }] }],
+        '/de/topics/': [{ text: 'Themen', items: [{ text: 'Themen', link: '/de/topics/' }, { text: 'Open-Source-Hardware-Philosophie', link: '/de/topics/open-source-hardware' }] }],
         '/de/tech/': [{ text: 'Technische Doku', items: [{ text: 'Technische Doku', link: '/de/tech/' }] }],
         '/de/community/': [{ text: 'Community', items: [{ text: 'Community', link: '/de/community/' }] }],
         '/de/products/': [
@@ -1265,7 +1265,7 @@ export default defineConfig({
             { text: 'Carte son USB sans pilote', link: '/fr/tutorials/accessories/usb-audio-card-tutorial' },
           ] },
         ],
-        '/fr/topics/': [{ text: 'Sujets', items: [{ text: 'Sujets', link: '/fr/topics/' }] }],
+        '/fr/topics/': [{ text: 'Sujets', items: [{ text: 'Sujets', link: '/fr/topics/' }, { text: "Philosophie du matériel open source", link: '/fr/topics/open-source-hardware' }] }],
         '/fr/tech/': [{ text: 'Documentation', items: [{ text: 'Documentation', link: '/fr/tech/' }] }],
         '/fr/community/': [{ text: 'Communauté', items: [{ text: 'Communauté', link: '/fr/community/' }] }],
         '/fr/products/': [
@@ -1417,7 +1417,7 @@ export default defineConfig({
             { text: 'Tarjeta de sonido USB sin controlador', link: '/es/tutorials/accessories/usb-audio-card-tutorial' },
           ] },
         ],
-        '/es/topics/': [{ text: 'Temas', items: [{ text: 'Temas', link: '/es/topics/' }] }],
+        '/es/topics/': [{ text: 'Temas', items: [{ text: 'Temas', link: '/es/topics/' }, { text: 'Filosofía del hardware de código abierto', link: '/es/topics/open-source-hardware' }] }],
         '/es/tech/': [{ text: 'Documentación', items: [{ text: 'Documentación', link: '/es/tech/' }] }],
         '/es/community/': [{ text: 'Comunidad', items: [{ text: 'Comunidad', link: '/es/community/' }] }],
         '/es/products/': [
@@ -1569,7 +1569,7 @@ export default defineConfig({
             { text: 'Scheda audio USB senza driver', link: '/it/tutorials/accessories/usb-audio-card-tutorial' },
           ] },
         ],
-        '/it/topics/': [{ text: 'Argomenti', items: [{ text: 'Argomenti', link: '/it/topics/' }] }],
+        '/it/topics/': [{ text: 'Argomenti', items: [{ text: 'Argomenti', link: '/it/topics/' }, { text: "Filosofia dell'hardware open source", link: '/it/topics/open-source-hardware' }] }],
         '/it/tech/': [{ text: 'Documentazione', items: [{ text: 'Documentazione', link: '/it/tech/' }] }],
         '/it/community/': [{ text: 'Community', items: [{ text: 'Community', link: '/it/community/' }] }],
         '/it/products/': [
