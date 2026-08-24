@@ -1,42 +1,81 @@
 ---
-title: Kit vision robotique SO-ARM101
-description: "Kit vision robotique SO-ARM101 JUXI – montage poignet/côté/plafond, caméra 60FPS à focale fixe ou 30FPS autofocus zoom, compatible frameworks d'entraînement ACT/Smolvla/Pi0/GR00T"
-keywords: [vision robotique, kit vision, caméra de poignet, SO-ARM101]
+title: Kit vision bras robotique SO-ARM101
+description: Kit vision SO-ARM101 de Juxi Technology — montage poignet/latéral/dessus, caméra 60FPS fixe ou 30FPS autofocus zoom, compatible ACT/Smolvla/Pi0/GR00T
+keywords: [kit vision, support caméra, so-arm101, vision robotique]
 ---
 
-# Kit vision robotique SO-ARM101
+# Kit vision bras robotique SO-ARM101
 
 > **[Acheter en boutique](https://www.juxitech.com/fr/products/so-arm101-wrist-camera-mount)**
 
-## Présentation du produit
+## Présentation
 
-**Caractéristiques principales** :
+Le kit vision SO-ARM101 est un accessoire caméra conçu pour les bras robotiques, avec deux options : **60FPS à focale fixe** et **30FPS autofocus zoom**. Compatible SO-ARM101, LeKiwi et XLerobot, ainsi qu'avec les frameworks d'IA incarnée **ACT, Smolvla, Pi0, Pi0.5, GR00T N1.5**.
 
-- Trois positions de montage : **poignet / côté / plafond**
-- Choix de deux caméras : 60FPS à focale fixe (capture de mouvements rapides) / 30FPS autofocus zoom (développement vision flexible)
-- Adaptation parfaite au SO-ARM101, aucune modification
-- Patins de préhension antidérapants inclus
+**Caractéristiques clés** :
 
-## Spécifications du produit
+- Trois positions de montage : **poignet / latéral / dessus**
+- Double caméra : 60FPS fixe (mouvements rapides) / 30FPS autofocus zoom (vision flexible)
+- Adapté au SO-ARM101 sans modification
+- Patins de serrage antidérapants inclus
+
+## Spécifications
 
 | Catégorie | Spécification |
 |------|------|
-| Plateformes compatibles | SO-ARM101, LeKiwi, XLerobot, M3 (trous de montage) |
-| Position de montage | Poignet / côté / plafond |
-| Choix de caméra | 60FPS à focale fixe / 30FPS autofocus zoom |
-| Frameworks d'entraînement | ACT, Smolvla, Pi0, Pi0.5, GR00T N1.5 |
+| Plateformes | SO-ARM101, LeKiwi, XLerobot, compatibles trous M3 |
+| Montage | Poignet / latéral / dessus |
+| Caméra | 60FPS fixe / 30FPS autofocus zoom |
+| Frameworks | ACT, Smolvla, Pi0, Pi0.5, GR00T N1.5 |
+
+## Comparaison caméras
+
+| Caméra | Usage |
+|------|---------|
+| **60FPS fixe** | Haute cadence, image stable, mouvements rapides, distance fixe |
+| **30FPS autofocus zoom** | Focalisation flexible, distance variable |
 
 ## Démarrage rapide
 
-- **Poignet** : vue de préhension (recommandé pour les tâches de saisie)
-- **Côté** : vue globale de l'environnement
-- **Plafond** : vue plongeante sur le bureau (idéal pour la collecte de données)
+### 1. Choisir la position
 
-## Tutoriels associés
+- **Poignet** : perspective de préhension (recommandé)
+- **Latéral** : perspective globale
+- **Dessus** : perspective bureau (idéale pour la collecte)
 
-- [Kit vision robotique SO-ARM101](/fr/products/robot-vision-kit)
+### 2. Montage
 
-## Support technique
+Fixer le module caméra au support, connecter en USB à l'hôte (Jetson/Raspberry Pi).
+
+### 3. Intégration framework
+
+Exemple de collecte LeRobot :
+
+```bash
+# 查找相机
+python -m lerobot.find_cameras
+
+# 采集带视觉数据
+lerobot-record \
+  --robot.type=so101_follower \
+  --robot.port=/dev/ttyACM0 \
+  --robot.cameras='{ front: {type: opencv, index_or_path: 0, width: 640, height: 480} }' \
+  --dataset.repo_id=juxi/vision_test \
+  --dataset.num_episodes=50
+```
+## FAQ
+
+**Q : Quelle caméra choisir ?**
+Mouvements rapides (préhension) : 60FPS fixe ; distance variable : 30FPS autofocus zoom.
+
+**Q : Quels frameworks ?**
+ACT, Smolvla, Pi0, Pi0.5, GR00T N1.5 — tous les frameworks d'IA incarnée majeurs.
+
+**Q : Autres bras robotiques ?**
+SO-ARM101, LeKiwi, XLerobot et plateformes compatibles M3.
+
+## Support
 
 - 📧 E-mail : support@juxitech.com
 - 🌐 Site officiel : [www.juxitech.com](https://www.juxitech.com)
+- 💬 [Retour](https://github.com/Juxi-Technology/wiki-documents/issues)

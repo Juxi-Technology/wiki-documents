@@ -1,42 +1,81 @@
 ---
-title: Kit de visión robótica SO-ARM101
-description: "Kit de visión robótica SO-ARM101 JUXI – montaje en muñeca/lateral/superior, cámara de enfoque fijo 60FPS o zoom autofoco 30FPS, compatible con frameworks de entrenamiento ACT/Smolvla/Pi0/GR00T"
-keywords: [visión robótica, kit de visión, cámara de muñeca, SO-ARM101]
+title: Kit de visión de brazo robótico SO-ARM101
+description: Kit de visión SO-ARM101 de Juxi Technology — montaje muñeca/lateral/cenital, cámara 60FPS fija o 30FPS autofoco zoom, compatible ACT/Smolvla/Pi0/GR00T
+keywords: [kit de visión, soporte de cámara, so-arm101, visión robótica]
 ---
 
-# Kit de visión robótica SO-ARM101
+# Kit de visión de brazo robótico SO-ARM101
 
 > **[Comprar en la tienda](https://www.juxitech.com/es/products/so-arm101-wrist-camera-mount)**
 
-## Descripción del producto
+## Descripción general
 
-**Características principales**:
+El kit de visión SO-ARM101 es un accesorio de cámara diseñado para brazos robóticos, con dos opciones: **60FPS de focal fija** y **30FPS autofoco zoom**. Compatible con SO-ARM101, LeKiwi y XLerobot, y con los frameworks de IA corporizada **ACT, Smolvla, Pi0, Pi0.5, GR00T N1.5**.
 
-- Tres posiciones de montaje: **muñeca / lateral / superior**
-- Selección de dos cámaras: enfoque fijo 60FPS (captura de movimientos rápidos) / zoom autofoco 30FPS (desarrollo de visión flexible)
-- Compatibilidad perfecta con SO-ARM101, sin modificaciones
-- Incluye almohadillas de agarre antideslizantes
+**Características clave**:
 
-## Especificaciones del producto
+- Tres posiciones de montaje: **muñeca / lateral / cenital**
+- Cámara dual: 60FPS fija (movimiento rápido) / 30FPS autofoco zoom (visión flexible)
+- Compatible con SO-ARM101 sin modificaciones
+- Almohadillas antideslizantes incluidas
+
+## Especificaciones
 
 | Categoría | Especificación |
 |------|------|
-| Plataformas compatibles | SO-ARM101, LeKiwi, XLerobot, M3 (agujeros de montaje) |
-| Posición de montaje | Muñeca / lateral / superior |
-| Selección de cámara | Enfoque fijo 60FPS / zoom autofoco 30FPS |
-| Frameworks de entrenamiento | ACT, Smolvla, Pi0, Pi0.5, GR00T N1.5 |
+| Plataformas | SO-ARM101, LeKiwi, XLerobot, compatibles con orificios M3 |
+| Montaje | Muñeca / lateral / cenital |
+| Cámara | 60FPS fija / 30FPS autofoco zoom |
+| Frameworks | ACT, Smolvla, Pi0, Pi0.5, GR00T N1.5 |
+
+## Comparación de cámaras
+
+| Cámara | Uso |
+|------|---------|
+| **60FPS fija** | Alta cadencia, imagen estable, movimiento rápido, distancia fija |
+| **30FPS autofoco zoom** | Enfoque flexible, distancia variable |
 
 ## Inicio rápido
 
-- **Muñeca**: vista de agarre (recomendado para tareas de agarre)
-- **Lateral**: vista global del entorno
-- **Superior**: vista superior del escritorio (adecuada para recolección de datos)
+### 1. Elegir posición
 
-## Tutoriales relacionados
+- **Muñeca**: perspectiva de agarre (recomendada)
+- **Lateral**: perspectiva global
+- **Cenital**: perspectiva de escritorio (ideal para recolección)
 
-- [Kit de visión robótica SO-ARM101](/es/products/robot-vision-kit)
+### 2. Montaje
 
-## Soporte técnico
+Fijar el módulo de cámara al soporte y conectar por USB al host (Jetson/Raspberry Pi).
+
+### 3. Integración de frameworks
+
+Ejemplo de recolección LeRobot:
+
+```bash
+# 查找相机
+python -m lerobot.find_cameras
+
+# 采集带视觉数据
+lerobot-record \
+  --robot.type=so101_follower \
+  --robot.port=/dev/ttyACM0 \
+  --robot.cameras='{ front: {type: opencv, index_or_path: 0, width: 640, height: 480} }' \
+  --dataset.repo_id=juxi/vision_test \
+  --dataset.num_episodes=50
+```
+## Preguntas frecuentes
+
+**P: ¿Qué cámara elegir?**
+Movimiento rápido (agarre): 60FPS fija; distancia variable: 30FPS autofoco zoom.
+
+**P: ¿Qué frameworks soporta?**
+ACT, Smolvla, Pi0, Pi0.5, GR00T N1.5 — los principales frameworks de IA corporizada.
+
+**P: ¿Otros brazos robóticos?**
+SO-ARM101, LeKiwi, XLerobot y plataformas compatibles M3.
+
+## Soporte
 
 - 📧 Correo: support@juxitech.com
 - 🌐 Sitio oficial: [www.juxitech.com](https://www.juxitech.com)
+- 💬 [Comentarios](https://github.com/Juxi-Technology/wiki-documents/issues)

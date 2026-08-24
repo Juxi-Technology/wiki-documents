@@ -1,50 +1,81 @@
 ---
-title: Placa driver de servo de bus JUXI
-description: "Placa driver de servo de bus JUXI – controla hasta 253 servos en un bus, voltaje amplio de 7 a 12,6 V, Type-C plug-and-play, diseñada para LeRobot SO-ARM"
-keywords: [driver de servo, servo de bus, LeRobot, SO-ARM]
+title: Placa driver de servos de bus JUXI
+description: Placa driver JUXI de Juxi Technology — 253 servos en un bus, amplio rango de tensión 7–12.6V, Type-C plug-and-play, diseñada para LeRobot SO-ARM
+keywords: [driver de servos, placa driver, bus servo, leRobot, so-arm101]
 ---
 
-# Placa driver de servo de bus JUXI
+# Placa driver de servos de bus JUXI
 
 > **[Comprar en la tienda](https://www.juxitech.com/es/products/bus-servo-driver-board)**
 
-## Descripción del producto
+## Descripción general
 
-**Características principales**:
+El adaptador de servos de bus JUXI es una solución integral de control de servos de bus serie para brazos robóticos LeRobot SO-ARM100/101 y proyectos multi-servo. Alimentación y circuito de control integrados en una placa compacta — sin cableado complejo ni desarrollo de bajo nivel.
 
-- Controla hasta **253** servos de bus serie en un solo bus
-- Entrada de voltaje amplio de **7 a 12,6 V**, alimentación integrada (conector DC 5521)
-- Retroalimentación en tiempo real: posición, velocidad, par, modo de operación
-- **Type-C plug-and-play**, compatible con Raspberry Pi/Jetson/RDK/PC
-- Orificios de montaje precisos, instalación directa en SO-ARM100/101 en 2 minutos
-- Circuito de protección TVS (protección contra sobrevoltaje y sobrecorriente)
+**Características clave**:
 
-## Especificaciones del producto
+- Hasta **253 servos** de bus serie en un solo bus
+- Entrada de amplio rango **7–12.6V**, alimentación integrada (DC 5521)
+- Retorno en tiempo real: posición, velocidad, par, modo
+- **Type-C plug-and-play**, Raspberry Pi/Jetson/RDK/PC
+- Perforaciones precisas, montaje en SO-ARM100/101 en 2 minutos
+- Protección TVS (sobretensión/sobrecorriente)
+
+## Especificaciones
 
 | Categoría | Especificación |
 |------|------|
-| Voltaje de entrada | DC 7 V – 12,6 V |
+| Tensión de entrada | DC 7V ~ 12.6V |
 | Interfaces | USB Type-C / UART |
-| Soporte de servos | hasta 253 servos de bus serie |
-| Retroalimentación de datos | Posición, velocidad, par, modo de operación |
-| Tamaño de la placa | 42,00 × 33,00 mm |
-| Distancia de orificios | 37,00 × 28,00 mm (coincide con SO-ARM) |
-| Servos compatibles | la mayoría de los servos de bus serie del mercado |
-| Hosts compatibles | Raspberry Pi, NVIDIA Jetson (Nano/Orin/Xavier), RDK, PC (Win/macOS/Linux), Orange Pi |
+| Servos | Hasta 253 servos de bus serie |
+| Retorno | Posición, velocidad, par, modo |
+| Dimensiones | 42.00mm × 33.00mm |
+| Separación de orificios | 37.00mm × 28.00mm (SO-ARM) |
+| Compatibilidad | La mayoría de servos de bus serie |
+| Hosts | Raspberry Pi, NVIDIA Jetson (Nano/Orin/Xavier), RDK, PC (Win/macOS/Linux), Orange Pi |
 
 ## Inicio rápido
 
-```bash
-# Ejemplo de arranque SO-ARM101
-python3 examples/arm_boot.py --port /dev/ttyACM0
-```
+### Montaje SO-ARM en 3 pasos
 
-## Tutoriales relacionados
+1. Alinear la placa con la base impresa en 3D del SO-ARM
+2. Fijar con los tornillos M2.5 incluidos
+3. Conectar el cable de bus, la alimentación y el Type-C al controlador
 
-- [Kit de desarrollo SO-ARM101](/es/products/so-arm101)
-- [Servo de bus Feetech (SCS0009 / STS3215)](/es/products/feetech-servo)
+### Selección de alimentación
 
-## Soporte técnico
+| Adaptador | Uso |
+|--------|---------|
+| **5V 6A** | Servos estándar, SO-ARM (estándar 7V) |
+| **12V 5A** | Servos de alto par, robots multi-servo (12V) |
+
+> Clavija US/EU a elegir.
+
+## Plataformas compatibles
+
+- ✅ Desarrollo LeRobot SO-ARM100/101
+- ✅ Desarrollo LeKiwi
+- ✅ Robots multiarticulados (cuadrúpedos, humanoides)
+- ✅ Entrenamiento de IA corporizada y control en lazo cerrado
+- ✅ Robótica educativa
+- ✅ Prototipos robóticos con servos personalizados
+
+## Preguntas frecuentes
+
+**P: ¿Qué servos soporta?**
+Casi todos los servos de bus serie (Feetech SCS/STS, etc.) — máxima flexibilidad.
+
+**P: ¿Hay que instalar un driver?**
+No. Type-C plug-and-play — control y retorno inmediatos.
+
+**P: ¿Por qué protección TVS?**
+Protege contra picos de tensión para un funcionamiento estable en entornos exigentes.
+
+**P: ¿Qué alimentación elegir?**
+Estándar: 5V 6A; alto par: 12V 5A.
+
+## Soporte
 
 - 📧 Correo: support@juxitech.com
 - 🌐 Sitio oficial: [www.juxitech.com](https://www.juxitech.com)
+- 💬 [Comentarios](https://github.com/Juxi-Technology/wiki-documents/issues)

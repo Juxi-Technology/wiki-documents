@@ -1,42 +1,81 @@
 ---
-title: SO-ARM101 ロボットビジョンキット
-description: "JUXI SO-ARM101 ロボットビジョンキット——手首/側方/頭上 3 視点での取り付け、60FPS 固定焦点または 30FPS オートフォーカスズームカメラ、ACT/Smolvla/Pi0/GR00T トレーニングフレームワーク互換"
-keywords: [robot vision, ビジョンキット, wrist camera, so-arm101]
+title: SO-ARM101 ロボットアームビジョンキット
+description: 鉅犀科技 SO-ARM101 ロボットアームビジョンキット——手首/側面/真上 3 視点取付、60FPS 固定焦点または 30FPS オートフォーカスズームカメラ、ACT/Smolvla/Pi0/GR00T トレーニングフレームワーク対応
+keywords: [camera mount, ビジョンキット, カメラマウント, so-arm101, ロボットアームビジョン]
 ---
 
-# SO-ARM101 ロボットビジョンキット
+# SO-ARM101 ロボットアームビジョンキット
 
 > **[ストアで購入](https://www.juxitech.com/ja/products/so-arm101-wrist-camera-mount)**
 
 ## 製品概要
 
-**主な特長**：
+SO-ARM101 ロボットアームビジョンキットは、ロボットアーム向けに設計されたカメラアクセサリです。2 種類のカメラから選択可能:**60FPS 固定焦点**と**30FPS オートフォーカスズーム**。SO-ARM101、LeKiwi、XLerobot プラットフォームに対応し、**ACT、Smolvla、Pi0、Pi0.5、GR00T N1.5** などの主要な具身知能トレーニングフレームワークと互換です。
 
-- 3 つの取り付け位置：**手首 / 側方 / 頭上**
-- デュアルカメラ選択：60FPS 固定焦点（高速動作キャプチャ）/ 30FPS オートフォーカスズーム（柔軟なビジョン開発）
-- SO-ARM101 と完全マッチング、追加修正不要
-- 滑り止めグリップパッド付き
+**主な特長**:
+
+- 3 つの取付位置:**手首 / 側面 / 真上**
+- デュアルカメラ選択:60FPS 固定焦点(高速モーションキャプチャ)/ 30FPS オートフォーカスズーム(柔軟なビジョン開発)
+- SO-ARM101 に完全適合、追加改造不要
+- 滑り止めクランプパッド付属
 
 ## 製品仕様
 
 | カテゴリ | 仕様 |
 |------|------|
-| 互換プラットフォーム | SO-ARM101、LeKiwi、XLerobot、M3 取り付け穴互換プラットフォーム |
-| 取り付け位置 | 手首 / 側方 / 頭上 |
+| 対応プラットフォーム | SO-ARM101、LeKiwi、XLerobot、M3 取付穴互換プラットフォーム |
+| 取付位置 | 手首 / 側面 / 真上 |
 | カメラ選択 | 60FPS 固定焦点 / 30FPS オートフォーカスズーム |
 | トレーニングフレームワーク互換 | ACT、Smolvla、Pi0、Pi0.5、GR00T N1.5 |
 
+## カメラ比較
+
+| カメラ | 用途 |
+|------|---------|
+| **60FPS 固定焦点** | 高フレームレート、安定した鮮明な画像、高速モーションキャプチャ、固定距離ビジョン |
+| **30FPS オートフォーカスズーム** | 焦点距離を柔軟に調整、可変距離ビジョン |
+
 ## クイックスタート
 
-- **手首**：把持操作視点（把持タスクにおすすめ）
-- **側方**：全体環境視点
-- **頭上**：デスクトップ操作の俯瞰視点（データ収集に適しています）
+### 1. 取付位置の選択
 
-## 関連チュートリアル
+- **手首**:把持操作の視点(把持タスクに推奨)
+- **側面**:グローバル環境の視点
+- **真上**:デスクトップ操作の俯瞰視点(データ収集に適)
 
-- [SO-ARM101 ロボットビジョンキット](/ja/products/robot-vision-kit)
+### 2. 取付
 
-## 技術サポート
+カメラモジュールを対応するマウントに固定し、USB でホスト(Jetson/Raspberry Pi)に接続。
 
-- 📧 メール：support@juxitech.com
-- 🌐 公式サイト：[www.juxitech.com](https://www.juxitech.com)
+### 3. トレーニングフレームワーク連携
+
+LeRobot データ収集を例に:
+
+```bash
+# 查找相机
+python -m lerobot.find_cameras
+
+# 采集带视觉数据
+lerobot-record \
+  --robot.type=so101_follower \
+  --robot.port=/dev/ttyACM0 \
+  --robot.cameras='{ front: {type: opencv, index_or_path: 0, width: 640, height: 480} }' \
+  --dataset.repo_id=juxi/vision_test \
+  --dataset.num_episodes=50
+```
+## よくある質問
+
+**Q: カメラの選び方は?**
+高速モーションキャプチャ(把持など)は 60FPS 固定焦点、可変距離ビジョン開発は 30FPS オートフォーカスズームを。
+
+**Q: 対応トレーニングフレームワークは?**
+ACT、Smolvla、Pi0、Pi0.5、GR00T N1.5。主要な具身知能モデルトレーニングフレームワークを網羅。
+
+**Q: 他のロボットアームでも使えますか?**
+SO-ARM101、LeKiwi、XLerobot、その他 M3 取付穴互換プラットフォーム。
+
+## サポート
+
+- 📧 メール: support@juxitech.com
+- 🌐 公式サイト: [www.juxitech.com](https://www.juxitech.com)
+- 💬 [問題フィードバック](https://github.com/Juxi-Technology/wiki-documents/issues)

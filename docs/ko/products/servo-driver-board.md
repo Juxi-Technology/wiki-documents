@@ -1,7 +1,7 @@
 ---
 title: JUXI 버스 서보 드라이버 보드
-description: "JUXI 버스 서보 드라이버 보드——단일 버스로 253개 서보 제어, 7~12.6V 광전압, Type-C 플러그 앤 플레이, LeRobot SO-ARM 전용 설계"
-keywords: [servo driver, 서보 드라이버, 버스 서보, lerobot, so-arm]
+description: 鉅犀科技 JUXI 버스 서보 드라이버 보드 — 단일 버스 253개 서보 제어, 7~12.6V 광범위 전압, Type-C 플러그 앤 플레이, LeRobot SO-ARM 전용 설계
+keywords: [servo driver, 서보 드라이버 보드, 버스 서보, leRobot, so-arm101]
 ---
 
 # JUXI 버스 서보 드라이버 보드
@@ -10,41 +10,72 @@ keywords: [servo driver, 서보 드라이버, 버스 서보, lerobot, so-arm]
 
 ## 제품 개요
 
+JUXI 버스 서보 어댑터는 LeRobot SO-ARM100/101 로봇 팔과 다중 서보 로봇 프로젝트를 위해 설계된 일체형 직렬 버스 서보 제어 솔루션입니다. 서보 전원과 제어 회로를 컴팩트한 보드 하나에 통합해 복잡한 배선, 독립 전원 회로, 저수준 제어 개발의 번거로움을 제거합니다.
+
 **주요 특징**:
 
 - 단일 버스로 최대 **253개** 직렬 버스 서보 제어
-- **7~12.6V** 광전압 입력, 전원 통합(DC 5521 인터페이스)
+- **7~12.6V** 광범위 전압 입력, 전원 통합(DC 5521 커넥터)
 - 실시간 데이터 피드백: 위치, 속도, 토크, 동작 모드
 - **Type-C 플러그 앤 플레이**, 라즈베리파이/Jetson/RDK/PC 호환
-- 정밀 보정 장착 홀, 2분 만에 SO-ARM100/101 직접 장착
-- TVS 보호 회로(과전압 과전류 보호)
+- 정밀한 장착 홀 배치, 2분 내 SO-ARM100/101 직접 설치
+- TVS 보호 회로(과전압·과전류 보호)
 
 ## 제품 사양
 
-| 항목 | 사양 |
+| 카테고리 | 사양 |
 |------|------|
 | 입력 전압 | DC 7V ~ 12.6V |
 | 인터페이스 | USB Type-C / UART |
 | 서보 지원 | 최대 253개 직렬 버스 서보 |
 | 데이터 피드백 | 위치, 속도, 토크 상태, 동작 모드 |
 | 보드 크기 | 42.00mm × 33.00mm |
-| 장착 홀 간격 | 37.00mm × 28.00mm(SO-ARM 장착 홀 일치) |
+| 장착 홀 간격 | 37.00mm × 28.00mm(SO-ARM 장착 홀과 일치) |
 | 호환 서보 | 시중 주요 직렬 버스 서보 대부분 |
-| 호환 보드 | 라즈베리파이, NVIDIA Jetson (Nano/Orin/Xavier), RDK, PC(Win/macOS/Linux), Orange Pi |
+| 호환 호스트 | 라즈베리파이, NVIDIA Jetson (Nano/Orin/Xavier), RDK, PC(Win/macOS/Linux), Orange Pi |
 
 ## 빠른 시작
 
-```bash
-# SO-ARM101 부팅 예제
-python3 examples/arm_boot.py --port /dev/ttyACM0
-```
+### SO-ARM 로봇 팔 3단계 설치
 
-## 관련 튜토리얼
+1. 드라이버 보드를 SO-ARM 3D 프린트 베이스의 장착 홀에 맞춤
+2. 동봉된 M2.5 나사로 고정
+3. 서보 버스 케이블을 연결하고 전원과 Type-C USB를 컨트롤러에 연결
 
-- [SO-ARM101 개발 키트](/ko/products/so-arm101)
-- [Feetech 버스 서보(SCS0009 / STS3215)](/ko/products/feetech-servo)
+### 전원 선택
 
-## 기술 지원
+| 어댑터 | 적용 범위 |
+|--------|---------|
+| **5V 6A** | 표준 버스 서보 프로젝트, SO-ARM 로봇 팔(표준 서보 7V) |
+| **12V 5A** | 고토크 서보 프로젝트, 다중 서보 로봇(고토크 서보 12V) |
 
-- 📧 이메일：support@juxitech.com
-- 🌐 공식 사이트：[www.juxitech.com](https://www.juxitech.com)
+> 전원 어댑터 플러그는 미국/유럽 사양 선택 가능.
+
+## 지원 플랫폼
+
+- ✅ LeRobot SO-ARM100/101 로봇 팔 개발
+- ✅ LeKiwi 로봇 팔 개발
+- ✅ 다관절 로봇 프로젝트(사족/육족, 휴머노이드)
+- ✅ 임베디드 지능 모델 훈련 및 폐루프 제어 개발
+- ✅ 교육 로봇 수업과 실험
+- ✅ 커스텀 서보 구동 로봇 프로토타입 설계
+
+## 자주 묻는 질문
+
+**Q: 어떤 서보를 지원하나요?**
+시중의 거의 모든 직렬 버스 서보(Feetech SCS/STS 시리즈 등). 최대한의 유연성을 제공합니다.
+
+**Q: 드라이버를 별도 설치해야 하나요?**
+아니요. Type-C로 호스트에 연결하면 플러그 앤 플레이입니다. 개봉 즉시 서보 제어와 데이터 피드백을 사용할 수 있습니다.
+
+**Q: TVS 보호가 왜 필요한가요?**
+전압 스파이크로 인한 드라이버 보드와 서보 손상을 방지해 복잡한 환경에서도 안정적인 동작을 보장합니다.
+
+**Q: 전원 어댑터는 어떻게 선택하나요?**
+표준 서보는 5V 6A, 고토크 서보는 12V 5A. 서보 요구사항에 맞춰 입력 전압을 조정하세요.
+
+## 지원
+
+- 📧 이메일: support@juxitech.com
+- 🌐 공식 사이트: [www.juxitech.com](https://www.juxitech.com)
+- 💬 [문제 피드백](https://github.com/Juxi-Technology/wiki-documents/issues)
