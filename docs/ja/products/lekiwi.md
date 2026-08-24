@@ -1,43 +1,45 @@
 ---
-title: Lekiwi 具身知能移動ロボット
-description: "JUXI Lekiwi 具身知能移動ロボット——低コスト教育ロボットアーム/移動シャーシ、サーボ制御、教育と入門の第一選択"
-keywords: [lekiwi, 移動ロボット, 教育ロボットアーム, ロボット]
+title: Lekiwi 具身知能モバイルロボット
+description: 鉅犀科技 Lekiwi 具身知能モバイルロボット——低コスト教育用ロボットアーム/モバイルベース、サーボ制御、教育・初心者向け
+keywords: [lekiwi, モバイルロボット, 教育用ロボットアーム, 教育ロボット]
 ---
 
-# Lekiwi 具身知能移動ロボット
+# Lekiwi 具身知能モバイルロボット
 
 > **[ストアで購入](https://www.juxitech.com/ja/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
 
 ## 製品概要
 
-**主な特長**：
+Lekiwi は鉅犀科技の低コスト具身知能モバイルロボットです。サーボ制御方式を採用し、構造がシンプルで直感的。授業、初級者向け学習、メイカープロジェクトに適しています。12V 電源対応(5521 DC プラグ電源をオプション選択可)。
 
-- シンプル構造、低コスト、一括教育展開に適しています
-- サーボ制御で直感的、習得が速い
-- SO-ARM101 と LeRobot エコシステムを共有
+**主な特長**:
+
+- シンプルな構造と低コストで、教育現場への大量導入に最適
+- 直感的なサーボ制御、すぐに使いこなせる
+- SO-ARM101 と同じ LeRobot エコシステムを共有
 
 ## 製品仕様
 
 | カテゴリ | 仕様 |
 |------|------|
-| タイプ | 移動ロボット/教育用ロボットアーム |
+| タイプ | モバイルロボット/教育用ロボットアーム |
 | 制御 | サーボ駆動 |
-| 電源 | 12V（DC 5521） |
+| 電源 | 12V(DC 5521) |
 | プラットフォーム | PC / マイコン |
 
 ## クイックスタート
 
 ```bash
-# リポジトリ README を参照して組み立てと配線
-# 12V 電源を接続、USB でホストに接続
+# 参考仓库 README 组装与接线
+# 12V 电源接入,USB 连接主控
 ```
-
 ## 関連チュートリアル
 
-- [Lekiwi 使用チュートリアル](/ja/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial)
+- [Lekiwi チュートリアル](/ja/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial)
 - [Lekiwi 組み立てチュートリアル](/ja/tutorials/robot-arms/lekiwi/Lekiwi-Assembly)
+- [ロボットアーム選定ガイド](/ja/tutorials/robot-arms/select-guide)
 
-## 技術サポート
+## サポート
 
-- 📧 メール：support@juxitech.com
-- 🌐 公式サイト：[www.juxitech.com](https://www.juxitech.com)
+- 📧 メール: support@juxitech.com
+- 🌐 公式サイト: [www.juxitech.com](https://www.juxitech.com)

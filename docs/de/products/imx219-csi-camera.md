@@ -1,45 +1,47 @@
 ---
-title: 79°-IMX219-CSI-Kamera
-description: "JUXI 79°-IMX219-CSI-Kamera – 8-MP nativ über CSI, 77° FOV, NVIDIA-Jetson-Vision mit geringer Latenz"
-keywords: [CSI-Kamera, IMX219, 8 MP, Jetson]
+title: 79° IMX219 CSI-Kamera
+description: Juxi Technology 79°-IMX219-CSI-Kamera — 8MP, natives CSI, 77° FOV, NVIDIA-Jetson-Vision mit geringer Latenz
+keywords: [imx219, csi-kamera, jetson, kamera]
 ---
 
-# 79°-IMX219-CSI-Kamera
+# 79° IMX219 CSI-Kamera
 
 > **[Im Shop kaufen](https://www.juxitech.com/de/products/79-imx219-csi-camera)**
 
 ## Produktübersicht
 
-**Hauptmerkmale**:
+Die 79°-IMX219-CSI-Kamera ist speziell für die NVIDIA-Jetson-Orin-Serie entwickelt. Über CSI (Camera Serial Interface) liefert sie Videoübertragung mit geringer Latenz und hoher Bandbreite. 8MP für KI-Visionsinferenz, Robotik-Wahrnehmung und Edge Computing.
 
-- CSI-2-Schnittstelle, direkter Anschluss an das Jetson-Orin-Board
-- 77° FOV, 8 MP
-- Sofort einsetzbare OpenCV- und GStreamer-Beispiele
+**Kernfunktionen**:
+
+- CSI-2-Schnittstelle, direkt an Jetson-Orin-Boards
+- 77° FOV, 8MP
+- OpenCV + GStreamer Beispiele
 - Videoübertragung mit geringer Latenz
 
-## Produktspezifikationen
+## Spezifikationen
 
 | Kategorie | Spezifikation |
 |------|------|
-| Sensor | IMX219, 8 MP |
-| Blickwinkel | 77° |
+| Sensor | IMX219, 8MP |
+| Sichtfeld | 77° |
 | Schnittstelle | CSI-2 (MIPI) |
 | Plattform | NVIDIA Jetson Orin Serie |
 | SDK | JetPack 5.0+ / GStreamer / OpenCV |
 
 ## Schnellstart
 
-```bash
-sudo apt install -y python3-opencv
-# Aufnahme mit GStreamer + OpenCV
-python3 examples/csi_capture.py
+```python
+import cv2
+# CSI 摄像头 GStreamer 管道
+pipe = "nvarguscamerasrc ! video/x-raw(memory:NVMM) ! nvvidconv ! appsink"
+cap = cv2.VideoCapture(pipe, cv2.CAP_GSTREAMER)
 ```
-
 ## Verwandte Tutorials
 
-- [Tutorial Jetson-CSI-Kamera](/de/tutorials/accessories/jetson-csi-camera)
+- [Jetson-CSI-Kamera-Tutorial](/de/tutorials/accessories/jetson-csi-camera)
 
-## Technischer Support
+## Support
 
-- 📧 E-Mail：support@juxitech.com
-- 🌐 Offizielle Website：[www.juxitech.com](https://www.juxitech.com)
+- 📧 E-Mail: support@juxitech.com
+- 🌐 Offizielle Website: [www.juxitech.com](https://www.juxitech.com)

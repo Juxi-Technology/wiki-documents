@@ -1,45 +1,47 @@
 ---
 title: Fotocamera CSI IMX219 79°
-description: "Fotocamera CSI IMX219 79° JUXI – 8 MP nativa via CSI, FOV 77°, visione NVIDIA Jetson a bassa latenza"
-keywords: [fotocamera CSI, IMX219, 8 MP, Jetson]
+description: Fotocamera CSI IMX219 79° di Juxi Technology — 8MP, interfaccia CSI nativa, FOV 77°, visione Jetson a bassa latenza
+keywords: [imx219, fotocamera csi, jetson, fotocamera]
 ---
 
 # Fotocamera CSI IMX219 79°
 
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/79-imx219-csi-camera)**
 
-## Panoramica del prodotto
+## Panoramica
+
+La fotocamera CSI IMX219 79° è progettata per la serie NVIDIA Jetson Orin. Via CSI (Camera Serial Interface) offre trasmissione video a bassa latenza e alta banda. 8MP per inferenza visione AI, percezione robotica ed edge computing.
 
 **Caratteristiche principali**:
 
-- Interfaccia CSI-2, collegamento diretto alla scheda Jetson Orin
-- FOV 77°, 8 MP
-- Esempi pronti OpenCV + GStreamer
+- Interfaccia CSI-2, collegamento diretto alle schede Jetson Orin
+- FOV 77°, 8MP
+- Esempi OpenCV + GStreamer pronti all'uso
 - Trasmissione video a bassa latenza
 
-## Specifiche del prodotto
+## Specifiche
 
 | Categoria | Specifica |
 |------|------|
-| Sensore | IMX219, 8 MP |
-| Angolo di campo | 77° |
+| Sensore | IMX219, 8MP |
+| Campo visivo | 77° |
 | Interfaccia | CSI-2 (MIPI) |
 | Piattaforma | Serie NVIDIA Jetson Orin |
 | SDK | JetPack 5.0+ / GStreamer / OpenCV |
 
-## Guida rapida
+## Avvio rapido
 
-```bash
-sudo apt install -y python3-opencv
-# Acquisizione con GStreamer + OpenCV
-python3 examples/csi_capture.py
+```python
+import cv2
+# CSI 摄像头 GStreamer 管道
+pipe = "nvarguscamerasrc ! video/x-raw(memory:NVMM) ! nvvidconv ! appsink"
+cap = cv2.VideoCapture(pipe, cv2.CAP_GSTREAMER)
 ```
-
-## Tutorial correlati
+## Tutorial
 
 - [Tutorial fotocamera CSI Jetson](/it/tutorials/accessories/jetson-csi-camera)
 
-## Supporto tecnico
+## Supporto
 
 - 📧 E-mail: support@juxitech.com
 - 🌐 Sito ufficiale: [www.juxitech.com](https://www.juxitech.com)

@@ -1,43 +1,45 @@
 ---
-title: Lekiwi – verkörperter intelligenter Mobilitätsroboter
-description: "JUXI Lekiwi – kostengünstiger verkörperter intelligenter Mobilitätsroboter, Servosteuerung, ideal für Unterricht und Einstieg"
-keywords: [Lekiwi, Mobilitätsroboter, Roboterarm, Bildung]
+title: Lekiwi Embodied-Intelligence-Mobileroboter
+description: Juxi Technology Lekiwi — kostengünstiger Lehr-Roboterarm/Mobilroboter, Servosteuerung, ideal für Bildung und Einsteiger
+keywords: [lekiwi, mobileroboter, lehr-roboterarm, bildungsrobotik]
 ---
 
-# Lekiwi – verkörperter intelligenter Mobilitätsroboter
+# Lekiwi Embodied-Intelligence-Mobileroboter
 
 > **[Im Shop kaufen](https://www.juxitech.com/de/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
 
 ## Produktübersicht
 
-**Hauptmerkmale**:
+Lekiwi ist der kostengünstige Embodied-Intelligence-Mobileroboter von Juxi Technology. Servogesteuert, einfache und intuitive Struktur — ideal für Unterricht, Einstieg und Maker-Projekte. 12V-Stromversorgung (5521-DC-Netzteil optional).
 
-- Einfache Struktur, geringe Kosten, geeignet für Massenlehr-Einsatz
+**Kernfunktionen**:
+
+- Einfache Struktur, niedrige Kosten — ideal für Serieneinsatz im Unterricht
 - Intuitive Servosteuerung, schneller Einstieg
-- Gemeinsames LeRobot-Ökosystem mit dem SO-ARM101
+- Gemeinsames LeRobot-Ökosystem mit SO-ARM101
 
-## Produktspezifikationen
+## Spezifikationen
 
 | Kategorie | Spezifikation |
 |------|------|
-| Typ | Mobilitätsroboter / pädagogischer Roboterarm |
-| Steuerung | Servo-Antrieb |
-| Stromversorgung | 12 V (DC 5521) |
+| Typ | Mobileroboter/Lehr-Roboterarm |
+| Steuerung | Servoantrieb |
+| Stromversorgung | 12V (DC 5521) |
 | Plattform | PC / Mikrocontroller |
 
 ## Schnellstart
 
 ```bash
-# Montage und Verkabelung siehe README des Repositories
-# 12-V-Stromversorgung anschließen, per USB mit dem Host verbinden
+# 参考仓库 README 组装与接线
+# 12V 电源接入,USB 连接主控
 ```
-
 ## Verwandte Tutorials
 
-- [Lekiwi-Bedienungstutorial](/de/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial)
-- [Lekiwi-Montagetutorial](/de/tutorials/robot-arms/lekiwi/Lekiwi-Assembly)
+- [Lekiwi-Tutorial](/de/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial)
+- [Lekiwi Montage](/de/tutorials/robot-arms/lekiwi/Lekiwi-Assembly)
+- [Roboterarm-Auswahlleitfaden](/de/tutorials/robot-arms/select-guide)
 
-## Technischer Support
+## Support
 
-- 📧 E-Mail：support@juxitech.com
-- 🌐 Offizielle Website：[www.juxitech.com](https://www.juxitech.com)
+- 📧 E-Mail: support@juxitech.com
+- 🌐 Offizielle Website: [www.juxitech.com](https://www.juxitech.com)

@@ -1,43 +1,45 @@
 ---
-title: Robot móvil de inteligencia incorporada Lekiwi
-description: "Robot móvil de inteligencia incorporada Lekiwi JUXI – brazo robótico educativo / chasis móvil de bajo costo, control por servo, primera opción para la enseñanza"
-keywords: [Lekiwi, robot móvil, brazo robótico, educación]
+title: Robot móvil de inteligencia corporizada Lekiwi
+description: Robot móvil Lekiwi de Juxi Technology — brazo robótico educativo de bajo costo, control por servos, ideal para educación
+keywords: [lekiwi, robot móvil, brazo educativo, robótica educativa]
 ---
 
-# Robot móvil de inteligencia incorporada Lekiwi
+# Robot móvil de inteligencia corporizada Lekiwi
 
 > **[Comprar en la tienda](https://www.juxitech.com/es/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
 
-## Descripción del producto
+## Descripción general
 
-**Características principales**:
+Lekiwi es el robot móvil de inteligencia corporizada de bajo costo de Juxi Technology. Control por servos, estructura simple e intuitiva — ideal para aulas, iniciación y proyectos maker. Alimentación 12V (adaptador DC 5521 opcional).
 
-- Estructura simple, bajo costo, adecuado para despliegue docente masivo
-- Control por servo intuitivo, aprendizaje rápido
-- Ecosistema LeRobot compartido con el SO-ARM101
+**Características clave**:
 
-## Especificaciones del producto
+- Estructura simple y bajo costo — ideal para despliegue en aulas
+- Control por servos intuitivo, aprendizaje rápido
+- Ecosistema LeRobot compartido con SO-ARM101
+
+## Especificaciones
 
 | Categoría | Especificación |
 |------|------|
-| Tipo | Robot móvil / brazo robótico educativo |
-| Control | Accionamiento por servo |
-| Alimentación | 12 V (DC 5521) |
+| Tipo | Robot móvil / brazo educativo |
+| Control | Servos |
+| Alimentación | 12V (DC 5521) |
 | Plataforma | PC / microcontrolador |
 
 ## Inicio rápido
 
 ```bash
-# Montaje y cableado: consultar el README del repositorio
-# Conectar alimentación de 12 V, conectar al host por USB
+# 参考仓库 README 组装与接线
+# 12V 电源接入,USB 连接主控
 ```
+## Tutoriales
 
-## Tutoriales relacionados
+- [Tutorial Lekiwi](/es/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial)
+- [Montaje Lekiwi](/es/tutorials/robot-arms/lekiwi/Lekiwi-Assembly)
+- [Guía de selección de brazos robóticos](/es/tutorials/robot-arms/select-guide)
 
-- [Tutorial de uso de Lekiwi](/es/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial)
-- [Tutorial de ensamblaje de Lekiwi](/es/tutorials/robot-arms/lekiwi/Lekiwi-Assembly)
-
-## Soporte técnico
+## Soporte
 
 - 📧 Correo: support@juxitech.com
 - 🌐 Sitio oficial: [www.juxitech.com](https://www.juxitech.com)

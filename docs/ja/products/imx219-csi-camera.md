@@ -1,7 +1,7 @@
 ---
 title: 79° IMX219 CSI カメラ
-description: "JUXI 79° IMX219 CSI カメラ——800万画素ネイティブ CSI インターフェース、77° FOV、NVIDIA Jetson 低遅延ビジョン"
-keywords: [csi camera, imx219, 8mp, jetson]
+description: 鉅犀科技 79° IMX219 CSI カメラ——800 万画素ネイティブ CSI インターフェース、77° FOV、NVIDIA Jetson 低遅延ビジョン
+keywords: [imx219, csi camera, jetson, カメラ]
 ---
 
 # 79° IMX219 CSI カメラ
@@ -10,10 +10,12 @@ keywords: [csi camera, imx219, 8mp, jetson]
 
 ## 製品概要
 
-**主な特長**：
+79° IMX219 CSI カメラは NVIDIA Jetson Orin シリーズ専用設計。CSI(Camera Serial Interface)経由で低遅延・高帯域の映像転送を実現します。8MP 高画質で、AI ビジョン推論、ロボット知覚、エッジコンピューティングに最適。
+
+**主な特長**:
 
 - CSI-2 インターフェース、Jetson Orin 開発ボードに直結
-- 77° FOV、800万画素
+- 77° FOV、800 万画素
 - OpenCV + GStreamer 即用サンプル
 - 低遅延映像転送
 
@@ -29,17 +31,17 @@ keywords: [csi camera, imx219, 8mp, jetson]
 
 ## クイックスタート
 
-```bash
-sudo apt install -y python3-opencv
-# GStreamer + OpenCV で撮影
-python3 examples/csi_capture.py
+```python
+import cv2
+# CSI 摄像头 GStreamer 管道
+pipe = "nvarguscamerasrc ! video/x-raw(memory:NVMM) ! nvvidconv ! appsink"
+cap = cv2.VideoCapture(pipe, cv2.CAP_GSTREAMER)
 ```
-
 ## 関連チュートリアル
 
 - [Jetson CSI カメラチュートリアル](/ja/tutorials/accessories/jetson-csi-camera)
 
-## 技術サポート
+## サポート
 
-- 📧 メール：support@juxitech.com
-- 🌐 公式サイト：[www.juxitech.com](https://www.juxitech.com)
+- 📧 メール: support@juxitech.com
+- 🌐 公式サイト: [www.juxitech.com](https://www.juxitech.com)
