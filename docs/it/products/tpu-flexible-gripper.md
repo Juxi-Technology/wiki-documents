@@ -1,42 +1,74 @@
 ---
-title: Pinza flessibile TPU SO-ARM101
-description: "Pinza flessibile TPU SO-ARM101 JUXI – presa sicura di oggetti irregolari/fragili con TPU morbido, compatibile con fotocamera da braccio, opzionale zoom 30FPS o fuoco fisso 60FPS"
-keywords: [pinza, TPU, flessibile, SO-ARM101]
+title: Pinza flessibile in TPU SO-ARM101
+description: Pinza flessibile TPU SO-ARM101 di Juxi Technology — presa sicura di oggetti irregolari/fragili, fotocamera sul braccio, zoom 30FPS o fissa 60FPS
+keywords: [pinza, tpu, flessibile, so-arm101, presa]
 ---
 
-# Pinza flessibile TPU SO-ARM101
+# Pinza flessibile in TPU SO-ARM101
 
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/so-arm101-tpu-flexible-gripper)**
 
-## Panoramica del prodotto
+## Panoramica
+
+Questa pinza flessibile TPU SO-ARM101 è progettata per il braccio XLerobot e supporta il supporto/kit fotocamera SO-ARM101. Il **TPU morbido** afferra oggetti irregolari e fragili senza danneggiarli. Con fotocamera opzionale (zoom 30FPS / fissa 60FPS) per sviluppo di presa e visione guidata.
 
 **Caratteristiche principali**:
 
-- Montaggio diretto sul braccio robotico XLerobot, nessuna modifica
-- TPU morbido: flessibile, resistente all'usura, antiscivolo – presa sicura di oggetti fragili/irregolari
-- Compatibile con supporto/kit fotocamera da braccio SO-ARM101 (presa guidata da visione)
-- Fissaggio a vite, plug-and-play, nessun cablaggio complesso
+- Montaggio diretto sul braccio XLerobot, senza modifiche
+- TPU morbido: flessibile, resistente all'abrasione, antiscivolo
+- Compatibile supporto/kit fotocamera SO-ARM101 (presa guidata)
+- Fissaggio a viti, plug-and-play, senza cablaggi complessi
 
-## Specifiche del prodotto
+## Specifiche
 
 | Categoria | Specifica |
 |------|------|
-| Bracci compatibili | SO-ARM101 (serie XLerobot) |
-| Materiale | TPU morbido (poliuretano termoplastico, flessibile/resistente/antiscivolo) |
-| Azionamento | A servo |
-| Fotocamera opzionale | Zoom 30FPS / fuoco fisso 60FPS |
-| Montaggio | Fissaggio a vite, plug-and-play |
+| Braccio compatibile | SO-ARM101 (serie XLerobot) |
+| Materiale | TPU morbido (flessibile, resistente, antiscivolo) |
+| Azionamento | Servo |
+| Fotocamera opzionale | Zoom 30FPS / fissa 60FPS |
+| Montaggio | Viti dirette, plug-and-play |
 
-## Guida rapida
+## Contenuto del kit
 
-- Zoom 30FPS: focale flessibile, adatto a distanze variabili
-- Fuoco fisso 60FPS: frame rate elevato, adatto a movimenti rapidi
+| Kit | Contenuto |
+|------|------|
+| **Pinza base** | 1× pinza flessibile TPU |
+| **Kit fotocamera zoom** | Pinza + fotocamera zoom autofocus 30FPS |
+| **Kit fotocamera fissa** | Pinza + fotocamera fissa 60FPS |
 
-## Tutorial correlati
+## Avvio rapido
 
-- [Kit di sviluppo SO-ARM101](/it/products/so-arm101)
+1. Allineare i fori delle viti con l'end-effector del braccio
+2. Fissaggio a viti (nessuna modifica al cablaggio)
+3. Aggiungere il supporto fotocamera SO-ARM101 per la visione guidata
 
-## Supporto tecnico
+### Presa guidata dalla visione
+
+Con fotocamera sul braccio e LeRobot:
+
+```bash
+# 录制视觉抓取数据
+lerobot-record \
+  --robot.type=so101_follower \
+  --robot.port=/dev/ttyACM0 \
+  --robot.cameras='{ front: {type: opencv, index_or_path: 0} }' \
+  --dataset.repo_id=juxi/gripper_test \
+  --dataset.num_episodes=50
+```
+## FAQ
+
+**D: Perché afferra anche oggetti irregolari/fragili?**
+Il TPU morbido si adatta alla forma dell'oggetto e distribuisce la forza — nessun danno.
+
+**D: Quale fotocamera?**
+Zoom 30FPS: messa a fuoco flessibile; fissa 60FPS: alta cadenza.
+
+**D: Quali piattaforme?**
+Serie SO-ARM101 / XLerobot, compatibile con ACT, Smolvla, Pi0, ecc.
+
+## Supporto
 
 - 📧 E-mail: support@juxitech.com
 - 🌐 Sito ufficiale: [www.juxitech.com](https://www.juxitech.com)
+- 💬 [Feedback](https://github.com/Juxi-Technology/wiki-documents/issues)
