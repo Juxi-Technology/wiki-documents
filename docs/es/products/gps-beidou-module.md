@@ -1,53 +1,104 @@
 ---
 title: Módulo de posicionamiento GNSS GPS y Beidou
-description: "Módulo GNSS GPS y Beidou JUXI – chip ATGM336H-5N, posicionamiento combinado de cuatro sistemas de satélites, precisión de 2,5 m, compatible con ROS"
-keywords: [GPS, Beidou, GNSS, posicionamiento, ATGM336H]
+description: Módulo GNSS de Juxi Technology — chip ATGM336H-5N, combinación de cuatro constelaciones, precisión 2.5m, soporte ROS
+keywords: [gps, beidou, gnss, módulo de posicionamiento, ros]
 ---
 
 # Módulo de posicionamiento GNSS GPS y Beidou
 
 > **[Comprar en la tienda](https://www.juxitech.com/es/products/gps-beidou-gnss-positioning-module)**
 
-## Descripción del producto
+## Descripción general
 
-**Características principales**:
+El módulo GPS y BDS se basa en el chip **ATGM336H-5N** de Unicore y admite Beidou Gen. 2/3 (todos los satélites 1-63), GPS, GLONASS y QZSS, con recepción simultánea multisistema para posicionamiento, navegación y sincronización horaria.
 
-- Compatible con **BDS/GPS/QZSS/GLONASS** (individual o combinado)
-- Receptor de **32 canales** de alta sensibilidad, posicionamiento estable
-- Precisión de **2,5 m (CEP50)**, arranque en frío de 32 s
-- Serie USB y serie TTL plug-and-play
-- Tutoriales de código abierto para Arduino/Jetson/Raspberry Pi/ROS
+**Características clave**:
 
-## Especificaciones del producto
+- Cuatro sistemas **BDS/GPS/QZSS/GLONASS** (solo o combinados)
+- Receptor **32 canales** de alta sensibilidad, posicionamiento estable
+- Precisión **2.5m (CEP50)**, arranque en frío 32 s
+- USB serie + TTL serie plug-and-play
+- Tutoriales open source Arduino/Jetson/Raspberry Pi/ROS
+
+## Especificaciones
 
 | Categoría | Especificación |
 |------|------|
 | Chip | ATGM336H-5N |
 | Sistemas de satélites | BDS / GPS / QZSS / GLONASS |
-| Canales | 32 canales, recepción multisistema simultánea |
-| Precisión | <2,5 m (CEP50) |
-| Frecuencia de actualización | 1 Hz por defecto, máx. 10 Hz |
-| Velocidad | 4800-115200 bps (9600 por defecto) |
-| Sensibilidad | Arranque en frío −148 dBm, seguimiento −162 dBm |
-| Consumo | 25 mA @ 3,3 V |
-| Temperatura de funcionamiento | −40 °C ~ +85 °C |
-| Interfaces | USB Type-C / serie TTL (PH2.0) |
+| Canales | 32 canales, multisistema simultáneo |
+| Precisión | <2.5m (CEP50) |
+| Frecuencia de actualización | 1Hz por defecto, máx. 10Hz |
+| Velocidad en baudios | 4800–115200bps (9600 por defecto) |
+| Sensibilidad | Arranque en frío -148dBm, seguimiento -162dBm |
+| Consumo | 25mA @ 3.3V |
+| Temperatura de trabajo | -40℃ ~ +85℃ |
+| Interfaces | USB Type-C / TTL serie (PH2.0) |
+
+## Descripción de pines
+
+| Pin | Función |
+|------|------|
+| 5V | Alimentación |
+| RES | Reinicio del módulo |
+| PPS | Pulso por segundo |
+| TX | Salida serie |
+| RX | Entrada serie (opcional) |
 
 ## Inicio rápido
 
+### 1. Conectar antena y módulo
+
+Antena GPS activa de 3 m conectada al módulo, colocada en zona despejada (exterior o ventana) para adquisición rápida.
+
+### 2. Conexión USB
+
+Cable Type-C directo, plug-and-play (9600bps por defecto).
+
+### 3. Verificar el posicionamiento
+
 ```bash
-# Comprobar el puerto serie USB
-ls /dev/ttyUSB*
-# Recibir datos (p. ej. /dev/ttyUSB0, 9600 bps)
-sudo gpsd /dev/ttyUSB0 -n
-cgps
+# 安装 pynmea2 解析 NMEA 数据
+pip install pynmea2
+
+# 读取定位数据示例
+import serial
+import pynmea2
+
+ser = serial.Serial('/dev/ttyUSB0', 9600, timeout=1)
+while True:
+    line = ser.readline().decode(errors='ignore')
+    if line.startswith('$GPRMC') or line.startswith('$GNRMC'):
+        msg = pynmea2.parse(line)
+        print(f'纬度: {msg.latitude}, 经度: {msg.longitude}')
 ```
+### 4. Integración ROS
 
-## Tutoriales relacionados
+Nodo de posicionamiento ROS compatible, fusión con IMU y navegación Move_Base.
 
-- [Repositorio oficial](https://github.com/Juxi-Technology)
+## Herramientas y recursos
 
-## Soporte técnico
+- **GnssToolKit3** : visualización, estado de satélites, registro, exportación KML
+- **Conversión de coordenadas** : WGS-84 → GCJ-02 → BD-09
+- **Código de ejemplo** : tutoriales Arduino / Python / Jetson Nano
+- [Repositorio oficial](https://github.com/Juxi-Technology)(código IMU/posicionamiento)
+
+## Preguntas frecuentes
+
+**P: ¿Posicionamiento lento o sin señal?**
+Colocar la antena en zona despejada (exterior/ventana); verificar la conexión; el arranque en frío tarda 32 s.
+
+**P: ¿Qué sistemas de satélites admite?**
+BDS, GPS, QZSS, GLONASS — solos o combinados.
+
+**P: ¿Se conecta a microcontroladores?**
+Sí, TTL serie (PH2.0) para placas MCU, con tutoriales 51/Arduino/STM32.
+
+**P: ¿Formato de salida?**
+Protocolo estándar NMEA 0183.
+
+## Soporte
 
 - 📧 Correo: support@juxitech.com
 - 🌐 Sitio oficial: [www.juxitech.com](https://www.juxitech.com)
+- 💬 [Comentarios](https://github.com/Juxi-Technology/wiki-documents/issues)
