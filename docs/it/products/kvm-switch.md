@@ -1,41 +1,42 @@
 ---
 title: Switch KVM 4-in-1
-description: "Switch KVM 4-in-1 JUXI – docking station TTL seriale / Bluetooth, commutazione multi-dispositivo con un tasto, compagno di sviluppo robotico"
-keywords: [KVM, switch, docking station, TTL, Bluetooth]
+description: Switch KVM 4-in-1 di Juxi Technology — docking station TTL seriale/Bluetooth, commutazione multi-dispositivo, debug robotico
+keywords: [kvm, switch, docking station, ttl, bluetooth]
 ---
 
 # Switch KVM 4-in-1
 
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/4-in-1-kvm-switch-hub-ttl-serial-bluetooth-docking-station)**
 
-## Panoramica del prodotto
+## Panoramica
+
+Lo switch KVM 4-in-1 combina commutazione HDMI, seriale TTL, Bluetooth ed espansione USB, progettato per sviluppo e debug robotico. Commuta tra più dispositivi (controllore braccio/display/periferiche) con un tasto.
 
 **Caratteristiche principali**:
 
 - Commutazione HDMI multi-dispositivo
 - Debug seriale TTL (UART)
-- Connessione wireless Bluetooth
+- Connessione Bluetooth
 - Docking station USB
 
-## Specifiche del prodotto
+## Specifiche
 
 | Categoria | Specifica |
 |------|------|
-| Funzione | Commutazione HDMI + seriale TTL + Bluetooth + HUB USB |
+| Funzioni | Commutazione HDMI + seriale TTL + Bluetooth + HUB USB |
 | Interfacce | HDMI / TTL / USB |
-| Applicazione | PC (Windows/Linux), Jetson |
+| Adatto a | PC (Windows/Linux), Jetson |
 
-## Guida rapida
+## Avvio rapido
 
-1. Collegare più dispositivi alle interfacce KVM corrispondenti
-2. Commutare display e dispositivi di input con pulsante/software
-3. La seriale TTL si usa per il debug di Raspberry Pi/Jetson
-
-## Tutorial correlati
+1. 将多台设备接入 KVM 对应接口
+2. 按键/软件切换显示与输入设备
+3. TTL 串口用于调试树莓派/Jetson
+## Tutorial
 
 - [Tutorial switch KVM](/it/tutorials/accessories/kvm-switch-tutorial)
 
-## Supporto tecnico
+## Supporto
 
 - 📧 E-mail: support@juxitech.com
 - 🌐 Sito ufficiale: [www.juxitech.com](https://www.juxitech.com)

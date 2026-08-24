@@ -1,42 +1,43 @@
 ---
-title: SO-ARM101 Overhead-Kamerahalterung
-description: "JUXI SO-ARM101-Overhead-Kamerahalterung – Montage aus der Vogelperspektive, RealSense-kompatibel, Robotervisions-Datenerfassung"
-keywords: [Kamerahalterung, Overhead, RealSense]
+title: SO-ARM101 Overhead-Kamera-Halterung
+description: Juxi Technology SO-ARM101 Overhead-Kamera-Halterung — Draufsicht-Montage, RealSense-kompatibel, Robotik-Visionsdatenerfassung
+keywords: [kamera-halterung, overhead, realsense, visionserfassung]
 ---
 
-# SO-ARM101 Overhead-Kamerahalterung
+# SO-ARM101 Overhead-Kamera-Halterung
 
 > **[Im Shop kaufen](https://www.juxitech.com/de/products/overhead-camera-mount-for-so-arm100-so-arm101-realsense-compatible)**
 
 ## Produktübersicht
 
-**Hauptmerkmale**:
+Die SO-ARM101 Overhead-Kamera-Halterung bietet eine Draufsicht-Montage und ist mit RealSense-Tiefenkameras sowie herkömmlichen USB-Kameras kompatibel. Für die Visionsdatenerfassung des Roboterarms (Draufsicht ist vorteilhaft für LeRobot-Trainingsdaten).
 
-- Montage aus der Vogelperspektive
-- Kompatibel mit RealSense / USB-Kameras
+**Kernfunktionen**:
+
+- Draufsicht-Montage
+- RealSense / USB-Kamera kompatibel
 - Passend für SO-ARM100/101
 - Einfache Montage
 
-## Produktspezifikationen
+## Spezifikationen
 
 | Kategorie | Spezifikation |
 |------|------|
-| Perspektive | Top-down |
+| Blickwinkel | Draufsicht (top-down) |
 | Kompatibilität | RealSense / USB-Kamera |
 | Plattform | SO-ARM100/101 |
 
 ## Schnellstart
 
-1. Halterung am SO-ARM-Montagepunkt befestigen
-2. Kamera montieren (RealSense oder USB)
-3. Mit dem Host verbinden, Erkennung mit `python -m lerobot.find_cameras` prüfen
-
+1. 将支架固定到 SO-ARM 安装点
+2. 安装相机(RealSense 或 USB)
+3. 连接主控,`python -m lerobot.find_cameras` 确认识别
 ## Verwandte Tutorials
 
-- [Tutorial SO-ARM101-Overhead-Kameramontage](/de/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation)
-- [SO-ARM101 Robotervisions-Kit](/de/products/robot-vision-kit)
+- [SO-ARM101 Overhead-Kamera-Montage](/de/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation)
+- [SO-ARM101 Robotik-Visions-Kit](/de/products/robot-vision-kit)
 
-## Technischer Support
+## Support
 
-- 📧 E-Mail：support@juxitech.com
-- 🌐 Offizielle Website：[www.juxitech.com](https://www.juxitech.com)
+- 📧 E-Mail: support@juxitech.com
+- 🌐 Offizielle Website: [www.juxitech.com](https://www.juxitech.com)

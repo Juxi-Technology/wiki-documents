@@ -1,42 +1,43 @@
 ---
-title: SO-ARM101 頭上カメラマウント
-description: "JUXI SO-ARM101 頭上カメラマウント——俯瞰視点での設置、RealSense 互換、機械腕ビジョンデータ収集"
-keywords: [camera mount, カメラマウント, overhead, realsense]
+title: SO-ARM101 オーバーヘッドカメラマウント
+description: 鉅犀科技 SO-ARM101 オーバーヘッドカメラマウント——真上視点設置、RealSense 対応、ロボットアームビジョンデータ収集
+keywords: [camera mount, カメラマウント, overhead, realsense, ビジョン収集]
 ---
 
-# SO-ARM101 頭上カメラマウント
+# SO-ARM101 オーバーヘッドカメラマウント
 
 > **[ストアで購入](https://www.juxitech.com/ja/products/overhead-camera-mount-for-so-arm100-so-arm101-realsense-compatible)**
 
 ## 製品概要
 
-**主な特長**：
+SO-ARM101 オーバーヘッドカメラマウントは真上視点での設置に対応し、RealSense 深度カメラや一般的な USB カメラと互換。ロボットアームのビジョンデータ収集に使用します(真上視点は LeRobot トレーニングデータに有利)。
 
-- 俯瞰視点での設置
-- RealSense / USB カメラ互換
-- SO-ARM100/101 とマッチング
-- 取り付け簡単
+**主な特長**:
 
-## 製品仕様
+- 真上視点設置
+- RealSense / USB カメラ対応
+- SO-ARM100/101 と互換
+- 簡単取付
+
+## 仕様
 
 | カテゴリ | 仕様 |
 |------|------|
-| 視点 | 俯瞰（top-down） |
-| 互換 | RealSense / USB カメラ |
+| 視点 | 真上(top-down) |
+| 対応 | RealSense / USB カメラ |
 | プラットフォーム | SO-ARM100/101 |
 
 ## クイックスタート
 
-1. マウントを SO-ARM の取り付けポイントに固定
-2. カメラを取り付け（RealSense または USB）
-3. ホストに接続、`python -m lerobot.find_cameras` で認識確認
-
+1. 将支架固定到 SO-ARM 安装点
+2. 安装相机(RealSense 或 USB)
+3. 连接主控,`python -m lerobot.find_cameras` 确认识别
 ## 関連チュートリアル
 
-- [SO-ARM101 頭上カメラ取り付けチュートリアル](/ja/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation)
-- [SO-ARM101 ロボットビジョンキット](/ja/products/robot-vision-kit)
+- [SO-ARM101 オーバーヘッドカメラ設置チュートリアル](/ja/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation)
+- [SO-ARM101 ロボットアームビジョンキット](/ja/products/robot-vision-kit)
 
-## 技術サポート
+## サポート
 
-- 📧 メール：support@juxitech.com
-- 🌐 公式サイト：[www.juxitech.com](https://www.juxitech.com)
+- 📧 メール: support@juxitech.com
+- 🌐 公式サイト: [www.juxitech.com](https://www.juxitech.com)

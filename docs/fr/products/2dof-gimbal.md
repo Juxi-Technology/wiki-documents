@@ -1,45 +1,51 @@
 ---
-title: Cardan servo 2-DOF
-description: "Unité pan-tilt servo 2 DOF JUXI – servo bus SCS0009, 180° horizontal / 90° vertical, caméra 2 MP, suivi vision IA"
-keywords: [cardan, pan-tilt, SCS0009, suivi visuel]
+title: Unité pan-tilt servo 2 DDL
+description: Unité pan-tilt de Juxi Technology — servos bus SCS0009, 180° horizontal / 90° vertical, caméra 2MP, suivi vision IA
+keywords: [gimbal, pan-tilt, 2dof, suivi vision, scs0009]
 ---
 
-# Cardan servo 2-DOF
+# Unité pan-tilt servo 2 DDL
 
 > **[Acheter en boutique](https://www.juxitech.com/fr/products/2-dof-servo-pan-tilt-unit)**
 
-## Présentation du produit
+## Présentation
 
-**Caractéristiques principales** :
+L'unité pan-tilt servo 2 DDL embarque des servos bus série SCS0009 de haute précision pour 180° horizontal / 90° vertical. Caméra USB 2MP standard (module 1080P zoom/fixe optionnel) pour la reconnaissance visage/couleur/QR code et le suivi en temps réel.
+
+**Caractéristiques clés** :
 
 - 2 degrés de liberté (180° horizontal / 90° vertical)
-- Servo bus SCS0009 : couple 2,5 kg·cm, précision 0,293°, retour en temps réel
-- Protections blocage/surchauffe/tension + carte driver à protection TVS
-- Caméra 2 MP, au choix zoom 30FPS / focale fixe 60FPS
-- Câblage caché de conception fermée
+- Servos bus SCS0009 : couple 2.5kg.cm, précision 0.293°, retour temps réel
+- Protections blocage/surchauffe/tension + carte driver régulateur TVS
+- Caméra 2MP, zoom 30FPS / fixe 60FPS
+- Design fermé à câbles dissimulés
 
-## Spécifications du produit
+## Spécifications
 
 | Catégorie | Spécification |
 |------|------|
-| Servo | FEETECH SCS0009 × 2 |
+| Servos | FEETECH SCS0009 × 2 |
 | Plage de rotation | 180° horizontal, 90° vertical |
-| Caméra | USB 2 MP plug-and-play (zoom / focale fixe au choix) |
-| Capacité vision | Reconnaissance et suivi visage / couleur / QR code |
-| Hôtes compatibles | Raspberry Pi, Jetson, RDK |
+| Caméra | USB 2MP plug-and-play (zoom/fixe optionnel) |
+| Vision | Suivi visage/couleur/QR code |
+| Hôtes | Raspberry Pi, Jetson, RDK |
 
 ## Démarrage rapide
-
 ```bash
-# Exemple de contrôle des servos (protocole SCS)
-python3 examples/demo_pan_tilt.py
+# USB 连接主控,摄像头即插即用
+# Python SDK 控制云台
+from sc_servo import SCServo, Gimbal
+servo = SCServo("COM3")  # Linux: /dev/ttyUSB0
+servo.connect()
+gimbal = Gimbal(servo)
+gimbal.enable_all()
+gimbal.set_angle(0, 30)
 ```
+## Tutoriels
 
-## Tutoriels associés
+- [Tutoriel caméra pan-tilt 2 DDL](/fr/tutorials/accessories/2dof-camera-gimbal)
 
-- [Tutoriel cardan caméra 2-DOF](/fr/tutorials/accessories/2dof-camera-gimbal)
-
-## Support technique
+## Support
 
 - 📧 E-mail : support@juxitech.com
 - 🌐 Site officiel : [www.juxitech.com](https://www.juxitech.com)

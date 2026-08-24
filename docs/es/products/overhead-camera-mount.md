@@ -1,42 +1,43 @@
 ---
-title: Montaje de cámara superior SO-ARM101
-description: "Montaje de cámara superior SO-ARM101 JUXI – instalación en vista superior, compatible con RealSense, recolección de datos de visión robótica"
-keywords: [montaje de cámara, superior, RealSense]
+title: Soporte de cámara superior SO-ARM101
+description: Soporte de cámara superior SO-ARM101 de Juxi Technology — vista cenital, compatible con RealSense, captura de datos de visión robótica
+keywords: [soporte de cámara, superior, realsense, visión robótica]
 ---
 
-# Montaje de cámara superior SO-ARM101
+# Soporte de cámara superior SO-ARM101
 
 > **[Comprar en la tienda](https://www.juxitech.com/es/products/overhead-camera-mount-for-so-arm100-so-arm101-realsense-compatible)**
 
-## Descripción del producto
+## Descripción general
 
-**Características principales**:
+El soporte de cámara superior SO-ARM101 permite el montaje en vista cenital, compatible con cámaras de profundidad RealSense y cámaras USB convencionales. Se usa para la captura de datos de visión del brazo robótico (la vista cenital favorece los datos de entrenamiento de LeRobot).
 
-- Instalación en vista superior
-- Compatible con RealSense / cámaras USB
-- Compatibilidad con SO-ARM100/101
+**Características clave**:
+
+- Montaje en vista cenital
+- Compatible con RealSense / USB
+- Compatible con SO-ARM100/101
 - Instalación sencilla
 
-## Especificaciones del producto
+## Especificaciones
 
 | Categoría | Especificación |
 |------|------|
-| Vista | Superior (top-down) |
+| Vista | Cenital (top-down) |
 | Compatibilidad | RealSense / cámara USB |
 | Plataforma | SO-ARM100/101 |
 
 ## Inicio rápido
 
-1. Fijar el montaje al punto de montaje del SO-ARM
-2. Instalar la cámara (RealSense o USB)
-3. Conectar al host, verificar con `python -m lerobot.find_cameras`
+1. 将支架固定到 SO-ARM 安装点
+2. 安装相机(RealSense 或 USB)
+3. 连接主控,`python -m lerobot.find_cameras` 确认识别
+## Tutoriales
 
-## Tutoriales relacionados
+- [Instalación de la cámara superior SO-ARM101](/es/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation)
+- [Kit de visión de brazo robótico SO-ARM101](/es/products/robot-vision-kit)
 
-- [Tutorial de instalación de cámara superior SO-ARM101](/es/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation)
-- [Kit de visión robótica SO-ARM101](/es/products/robot-vision-kit)
-
-## Soporte técnico
+## Soporte
 
 - 📧 Correo: support@juxitech.com
 - 🌐 Sitio oficial: [www.juxitech.com](https://www.juxitech.com)

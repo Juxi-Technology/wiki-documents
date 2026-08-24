@@ -1,7 +1,7 @@
 ---
 title: 4K-HDMI-Capture-Karte
-description: "JUXI 4K-HDMI-Capture-Karte – 4K-Capture, HDMI/Micro-HDMI/DP-Anschlüsse, USB-Direktverbindung, für Streaming und Aufnahme"
-keywords: [HDMI-Capture, Capture-Karte, 4K, Aufnahme]
+description: Juxi Technology 4K-Capture-Karte — 4K-Aufnahme, HDMI/Micro HDMI/DP, USB-Direktanschluss, Streaming und Aufzeichnung
+keywords: [hdmi capture, capture-karte, 4k, aufzeichnung]
 ---
 
 # 4K-HDMI-Capture-Karte
@@ -10,33 +10,34 @@ keywords: [HDMI-Capture, Capture-Karte, 4K, Aufnahme]
 
 ## Produktübersicht
 
-**Hauptmerkmale**:
+Die 4K-HDMI-Capture-Karte unterstützt HDMI / Micro HDMI / DP und verbindet Laptop, PC und Handy/Tablet per USB/Type-C. Ideal für Streaming, Aufzeichnung und Lehrdemo.
 
-- 4K-HD-Capture
-- HDMI / Micro-HDMI / DP-Interface-kompatibel
+**Kernfunktionen**:
+
+- 4K-Aufnahme
+- HDMI / Micro HDMI / DP kompatibel
 - USB / Type-C Plug-and-Play
-- Unterstützt OBS / PotPlayer
+- OBS / PotPlayer Unterstützung
 
-## Produktspezifikationen
+## Spezifikationen
 
 | Kategorie | Spezifikation |
 |------|------|
 | Eingang | HDMI / Micro HDMI / DP (Adapter) |
 | Ausgang | USB / Type-C |
-| Capture | 4K HD |
+| Aufnahme | 4K |
 | Software | OBS / PotPlayer |
 
 ## Schnellstart
 
-1. Je nach Mainboard-Anschluss Verbindungsart wählen (HDMI / Micro HDMI / DP-Adapter)
-2. USB der Capture-Karte mit dem Anzeigegerät verbinden
-3. In OBS / PotPlayer das Capture-Gerät auswählen
-
+1. 按主板接口选择接线方式(HDMI / Micro HDMI / DP 转接)
+2. 连接采集器 USB 到显示端
+3. OBS / PotPlayer 中选择采集设备即可
 ## Verwandte Tutorials
 
-- [Tutorial 4K-HDMI-Capture-Karte](/de/tutorials/accessories/4k-hdmi-capture-tutorial)
+- [4K-HDMI-Capture-Tutorial](/de/tutorials/accessories/4k-hdmi-capture-tutorial)
 
-## Technischer Support
+## Support
 
-- 📧 E-Mail：support@juxitech.com
-- 🌐 Offizielle Website：[www.juxitech.com](https://www.juxitech.com)
+- 📧 E-Mail: support@juxitech.com
+- 🌐 Offizielle Website: [www.juxitech.com](https://www.juxitech.com)

@@ -1,6 +1,6 @@
 ---
 title: 4K HDMI 캡처 카드
-description: "JUXI 4K HDMI 캡처 카드——4K 고화질 캡처, HDMI/Micro HDMI/DP 다중 인터페이스, USB 직접 연결, 캡처·방송·녹화"
+description: 鉅犀科技 4K HDMI 캡처 카드 — 4K 고화질 캡처, HDMI/Micro HDMI/DP 다중 인터페이스, USB 직결, 방송·녹화
 keywords: [hdmi capture, 캡처 카드, 4k, 녹화]
 ---
 
@@ -10,6 +10,8 @@ keywords: [hdmi capture, 캡처 카드, 4k, 녹화]
 
 ## 제품 개요
 
+4K 고화질 HDMI 캡처 카드는 HDMI / Micro HDMI / DP 세 가지 메인보드 인터페이스 변환을 지원하며, USB/Type-C로 노트북, PC, 스마트폰/태블릿 디스플레이에 직접 연결할 수 있습니다. 라이브 방송, 화면 녹화, 교육 시연에 적합합니다.
+
 **주요 특징**:
 
 - 4K 고화질 캡처
@@ -17,9 +19,9 @@ keywords: [hdmi capture, 캡처 카드, 4k, 녹화]
 - USB / Type-C 플러그 앤 플레이
 - OBS / PotPlayer 주요 소프트웨어 지원
 
-## 제품 사양
+## 사양
 
-| 항목 | 사양 |
+| 카테고리 | 사양 |
 |------|------|
 | 입력 | HDMI / Micro HDMI / DP(변환) |
 | 출력 | USB / Type-C |
@@ -28,15 +30,14 @@ keywords: [hdmi capture, 캡처 카드, 4k, 녹화]
 
 ## 빠른 시작
 
-1. 메인보드 인터페이스에 따라 연결 방식 선택(HDMI / Micro HDMI / DP 변환)
-2. 캡처 카드 USB를 표시 단말에 연결
-3. OBS / PotPlayer에서 캡처 장치 선택
-
+1. 按主板接口选择接线方式(HDMI / Micro HDMI / DP 转接)
+2. 连接采集器 USB 到显示端
+3. OBS / PotPlayer 中选择采集设备即可
 ## 관련 튜토리얼
 
-- [4K HDMI 캡처 카드 튜토리얼](/ko/tutorials/accessories/4k-hdmi-capture-tutorial)
+- [4K HDMI 캡처 튜토리얼](/ko/tutorials/accessories/4k-hdmi-capture-tutorial)
 
-## 기술 지원
+## 지원
 
-- 📧 이메일：support@juxitech.com
-- 🌐 공식 사이트：[www.juxitech.com](https://www.juxitech.com)
+- 📧 이메일: support@juxitech.com
+- 🌐 공식 사이트: [www.juxitech.com](https://www.juxitech.com)

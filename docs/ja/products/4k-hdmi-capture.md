@@ -1,6 +1,6 @@
 ---
 title: 4K HDMI キャプチャカード
-description: "JUXI 4K HDMI キャプチャカード——4K 高解像度キャプチャ、HDMI/Micro HDMI/DP マルチインターフェース、USB 直結、キャプチャ・配信・録画"
+description: 鉅犀科技 4K HDMI キャプチャカード——4K 高画質キャプチャ、HDMI/Micro HDMI/DP 多インターフェース、USB 直結、配信・録画
 keywords: [hdmi capture, キャプチャカード, 4k, 録画]
 ---
 
@@ -10,33 +10,34 @@ keywords: [hdmi capture, キャプチャカード, 4k, 録画]
 
 ## 製品概要
 
-**主な特長**：
+4K 高画質 HDMI キャプチャカードは HDMI / Micro HDMI / DP の 3 種のマザーボードインターフェース変換に対応し、USB/Type-C でノート PC、PC、スマホ/タブレットのディスプレイに直接接続できます。ライブ配信、録画、教育デモに最適です。
 
-- 4K 高解像度キャプチャ
-- HDMI / Micro HDMI / DP インターフェース互換
+**主な特長**:
+
+- 4K 高画質キャプチャ
+- HDMI / Micro HDMI / DP インターフェース対応
 - USB / Type-C プラグアンドプレイ
-- OBS / PotPlayer 主流ソフトウェア対応
+- OBS / PotPlayer 主要ソフト対応
 
-## 製品仕様
+## 仕様
 
 | カテゴリ | 仕様 |
 |------|------|
-| 入力 | HDMI / Micro HDMI / DP（変換） |
+| 入力 | HDMI / Micro HDMI / DP(変換) |
 | 出力 | USB / Type-C |
-| キャプチャ | 4K 高解像度 |
+| キャプチャ | 4K 高画質 |
 | ソフトウェア | OBS / PotPlayer |
 
 ## クイックスタート
 
-1. マザーボードのインターフェースに応じて接続方式を選択（HDMI / Micro HDMI / DP 変換）
-2. キャプチャカードの USB を表示端末に接続
-3. OBS / PotPlayer でキャプチャデバイスを選択すれば完了
-
+1. 按主板接口选择接线方式(HDMI / Micro HDMI / DP 转接)
+2. 连接采集器 USB 到显示端
+3. OBS / PotPlayer 中选择采集设备即可
 ## 関連チュートリアル
 
-- [4K HDMI キャプチャカードチュートリアル](/ja/tutorials/accessories/4k-hdmi-capture-tutorial)
+- [4K HDMI キャプチャチュートリアル](/ja/tutorials/accessories/4k-hdmi-capture-tutorial)
 
-## 技術サポート
+## サポート
 
-- 📧 メール：support@juxitech.com
-- 🌐 公式サイト：[www.juxitech.com](https://www.juxitech.com)
+- 📧 メール: support@juxitech.com
+- 🌐 公式サイト: [www.juxitech.com](https://www.juxitech.com)

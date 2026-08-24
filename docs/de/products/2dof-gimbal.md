@@ -1,45 +1,51 @@
 ---
-title: 2-DOF-Servo-Pan-Tilt
-description: "JUXI 2-DOF-Servo-Schwenk-Neige-Einheit – SCS0009-Bus-Servo, horizontal 180°/vertikal 90°, 2-MP-Kamera, KI-Vision-Tracking"
-keywords: [Gimbal, Pan-Tilt, SCS0009, visuelles Tracking]
+title: 2-DOF-Servo-Pan-Tilt-Einheit
+description: Juxi Technology 2-DOF-Servo-Pan-Tilt — SCS0009-Bus-Servos, 180° horizontal / 90° vertikal, 2MP-Kamera, KI-Vision-Tracking
+keywords: [gimbal, pan-tilt, 2dof, vision-tracking, scs0009]
 ---
 
-# 2-DOF-Servo-Pan-Tilt
+# 2-DOF-Servo-Pan-Tilt-Einheit
 
 > **[Im Shop kaufen](https://www.juxitech.com/de/products/2-dof-servo-pan-tilt-unit)**
 
 ## Produktübersicht
 
-**Hauptmerkmale**:
+Die 2-DOF-Servo-Pan-Tilt-Einheit nutzt hochpräzise SCS0009-Serienbus-Servos für 180° horizontal / 90° vertikal. Standardmäßig mit 2MP-USB-Kamera (1080P Zoom/Fixfokus optional) für Gesichts-, Farb- und QR-Code-Erkennung mit Echtzeit-Tracking.
 
-- 2 Freiheitsgrade (horizontal 180° / vertikal 90°)
-- SCS0009-Bus-Servo: 2,5 kg·cm Drehmoment, 0,293° Auflösung, Echtzeit-Feedback
-- Blockier-/Übertemperatur-/Spannungsschutz + TVS-Schutz-Treiberplatine
-- 2-MP-Kamera, wählbar Zoom 30FPS / Fixfokus 60FPS
-- Geschlossene verdeckte Kabelführung
+**Kernfunktionen**:
 
-## Produktspezifikationen
+- 2 Freiheitsgrade (180° horizontal / 90° vertikal)
+- SCS0009-Bus-Servos: 2.5kg.cm Drehmoment, 0.293° Präzision, Echtzeit-Feedback
+- Blockier-/Übertemperatur-/Spannungsschutz + TVS-Regler-Treiberplatine
+- 2MP-Kamera, Zoom 30FPS / Fixfokus 60FPS
+- Geschlossenes, Kabel verdeckendes Design
+
+## Spezifikationen
 
 | Kategorie | Spezifikation |
 |------|------|
-| Servo | FEETECH SCS0009 × 2 |
-| Drehbereich | horizontal 180°, vertikal 90° |
-| Kamera | 2-MP-USB plug-and-play (Zoom/Fixfokus wählbar) |
-| Vision-Fähigkeit | Gesichts-/Farb-/QR-Code-Erkennung und Tracking |
-| Kompatible Hosts | Raspberry Pi, Jetson, RDK |
+| Servos | FEETECH SCS0009 × 2 |
+| Drehbereich | Horizontal 180°, vertikal 90° |
+| Kamera | 2MP USB Plug-and-Play (Zoom/Fixfokus optional) |
+| Vision | Gesicht/Farbe/QR-Code-Tracking |
+| Hosts | Raspberry Pi, Jetson, RDK |
 
 ## Schnellstart
-
 ```bash
-# Servo-Steuerungsbeispiel (SCS-Protokoll)
-python3 examples/demo_pan_tilt.py
+# USB 连接主控,摄像头即插即用
+# Python SDK 控制云台
+from sc_servo import SCServo, Gimbal
+servo = SCServo("COM3")  # Linux: /dev/ttyUSB0
+servo.connect()
+gimbal = Gimbal(servo)
+gimbal.enable_all()
+gimbal.set_angle(0, 30)
 ```
-
 ## Verwandte Tutorials
 
-- [Tutorial 2-DOF-Kamera-Gimbal](/de/tutorials/accessories/2dof-camera-gimbal)
+- [2-DOF-Kamera-Pan-Tilt-Tutorial](/de/tutorials/accessories/2dof-camera-gimbal)
 
-## Technischer Support
+## Support
 
-- 📧 E-Mail：support@juxitech.com
-- 🌐 Offizielle Website：[www.juxitech.com](https://www.juxitech.com)
+- 📧 E-Mail: support@juxitech.com
+- 🌐 Offizielle Website: [www.juxitech.com](https://www.juxitech.com)
