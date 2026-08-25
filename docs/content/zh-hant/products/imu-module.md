@@ -6,7 +6,7 @@ keywords: [imu, 慣導, 姿態傳感器, ahrs, ros]
 
 # IMU 高精度慣導模組
 
-> **[淘寶店鋪](https://juxitechnology.taobao.com)imu-module-ahrs-attitude-and-heading-angle-sensor)**
+> **[淘寶店鋪](https://juxitechnology.taobao.com)**
 
 ## 產品概述
 

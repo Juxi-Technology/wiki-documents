@@ -6,7 +6,7 @@ keywords: [imx219, csi camera, jetson, 攝像頭]
 
 # 79° IMX219 CSI 攝像頭
 
-> **[淘寶店鋪](https://juxitechnology.taobao.com)79-imx219-csi-camera)**
+> **[淘寶店鋪](https://juxitechnology.taobao.com)**
 
 ## 產品概述
 

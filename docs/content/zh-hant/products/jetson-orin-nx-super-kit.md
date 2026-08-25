@@ -6,7 +6,7 @@ keywords: [jetson, orin nx, edge ai, 邊緣計算, leRobot, 機器人]
 
 # Jetson Orin NX Super 開發套件
 
-> **[淘寶店鋪](https://juxitechnology.taobao.com)nvidia-jetson-orin-nx-super-developer-kit)**
+> **[淘寶店鋪](https://juxitechnology.taobao.com)**
 
 ## 產品概述
 

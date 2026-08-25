@@ -6,7 +6,7 @@ keywords: [servo driver, 舵机驱动板, 总线舵机, leRobot, so-arm101]
 
 # JUXI 总线舵机驱动板
 
-> **[淘宝店铺](https://juxitechnology.taobao.com)bus-servo-driver-board)**
+> **[淘宝店铺](https://juxitechnology.taobao.com)**
 
 ## 产品概述
 

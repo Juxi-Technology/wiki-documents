@@ -6,7 +6,7 @@ keywords: [gimbal, 雲台, 2dof, 視覺追蹤, scs0009]
 
 # 2 自由度舵機雲台
 
-> **[淘寶店鋪](https://juxitechnology.taobao.com)2-dof-servo-pan-tilt-unit)**
+> **[淘寶店鋪](https://juxitechnology.taobao.com)**
 
 ## 產品概述
 
