@@ -5,6 +5,9 @@ description: "First, download the \" Amazing Debugging.zip \" Compressed Packet.
 
 # Debugging Tutorial for AmazingHand (TTL Serial Servo)
 
+> **[Buy in Store](https://www.juxitech.com/products/amazinghand)**
+
+
 First, download the " [Amazing Debugging.zip ](https://juxitech.feishu.cn/wiki/I4K0w3W0Ri7u7EkY1qfcVoGon6e)" Compressed Packet. After decompression, you can use the "Debugging Dexterous Hand Process with Arduio Program (TTL Servo) " document to set the servo ID, calibrate, calibrate the median, and run the demonstration program, or refer to the [official open source code ](https://github.com/pollen-robotics/AmazingHand/tree/main/ArduinoExample).
 
 **Without disassembling the finished product ** (the factory servo ID settings, calibration, and calibration of the neutral position have been adjusted), you can directly skip to **[** Point 6 Run "02 Demo Program" **](https://juxitech.feishu.cn/docx/OmmSdaXt7oZXBUxIwUacAI3Jnrc#doxcn2d0kH1XOXx1SlxvsF1x5df)** and Point 7 **[** Hand Tracking **](https://juxitech.feishu.cn/docx/OmmSdaXt7oZXBUxIwUacAI3Jnrc#doxcnjsmqox3aQVF6pVKanOCRng)**. **

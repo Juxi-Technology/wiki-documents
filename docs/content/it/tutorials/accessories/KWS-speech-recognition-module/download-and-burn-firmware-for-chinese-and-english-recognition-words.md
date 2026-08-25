@@ -5,6 +5,9 @@ description: "Il modulo viene di fabbrica con il firmware di riconoscimento voca
 
 # Download e flashing firmware cinese/inglese
 
+> **[Acquista nel negozio](https://www.juxitech.com/it/products/ai-voice-recognition-module)**
+
+
 > Il modulo viene di fabbrica con il firmware di riconoscimento vocale, fornito anche negli allegati. Se è necessario ricreare il firmware, seguire i passaggi seguenti.
 >
 

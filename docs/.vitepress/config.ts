@@ -673,6 +673,23 @@ const zhHK = {
   },
 }
 
+
+// ---- hreflang:注入 9 语言 alternate + x-default(多语 SEO 必备)----
+const HREFLANG_LANGS = ['', 'zh-hans', 'zh-hant', 'ja', 'ko', 'de', 'fr', 'es', 'it']
+function injectHreflang(pageData) {
+  const u = pageData.url || '/'
+  const seg = u.split('/')[1]
+  const hasLang = HREFLANG_LANGS.includes(seg)
+  const core = hasLang ? '/' + u.split('/').slice(2).join('/') : u
+  const seen = new Set()
+  const heads = HREFLANG_LANGS.map((l) => {
+    const href = 'https://wiki.juxitech.com' + (l ? '/' + l : '') + core
+    const langCode = l === '' ? 'en' : (l === 'zh-hans' ? 'zh-Hans' : l === 'zh-hant' ? 'zh-HK' : l)
+    return ['link', { rel: 'alternate', hreflang: langCode, href: href }]
+  }).concat([['link', { rel: 'alternate', hreflang: 'x-default', href: 'https://wiki.juxitech.com' + core }]])
+  return heads
+}
+
 export default defineConfig({
   srcDir: 'content',
   vite: {
@@ -1664,6 +1681,8 @@ export default defineConfig({
       }
     }
     return [
+      // hreflang:9 语言 alternate + x-default(置顶,爬虫优先识别语言对应)
+      ...injectHreflang(pageData),
       ['script', { type: 'application/ld+json' }, JSON.stringify(ld)],
     ]
   },

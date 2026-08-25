@@ -5,6 +5,9 @@ description: "1. CH341 Driver Installation (Install as Administrator)"
 
 # Multi-master communication case
 
+> **[Buy in Store](https://www.juxitech.com/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
+
+
 ## Precautions 
 
 1. CH341 Driver Installation (Install as Administrator)

@@ -5,6 +5,9 @@ description: "Tutorial de la tarjeta de sonido USB sin controlador JUXI: softwar
 
 # Tutorial de tarjeta de sonido USB sin controlador
 
+> **[Comprar en la tienda](https://www.juxitech.com/es/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction)**
+
+
 # Software de prueba visual (Windows)
 
 [audio_tools.7z](https://juxitech.feishu.cn/wiki/Wuc3wAppNi5elfkSI6VccrNDnfE)

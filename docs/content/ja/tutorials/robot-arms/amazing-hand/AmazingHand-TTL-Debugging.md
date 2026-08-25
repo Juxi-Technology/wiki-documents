@@ -5,6 +5,9 @@ description: "まず「灵巧手调试.zip」圧縮パッケージをダウン�
 
 # 器用ハンド（TTL シリアルサーボ）デバッグチュートリアル
 
+> **[ストアで購入](https://www.juxitech.com/ja/products/amazinghand)**
+
+
 まず「[灵巧手调试.zip](https://juxitech.feishu.cn/wiki/QjYBwL0A0iJVlNkEpUUclLYGnBc)」圧縮パッケージをダウンロードし、解凍後「使用arduio程序调试灵巧手过程（TTL舵机）」ドキュメントでサーボID設定、キャリブレーション、中位校正、デモプログラム実行を行うか、[公式オープンソースコード](https://github.com/pollen-robotics/AmazingHand/tree/main/ArduinoExample)を参照してください。
 
 **完成品で分解しない場合**（出荷時にサーボID設定・キャリブレーション・中位校正済み）は、直接**[第6点「02 演示程序」の実行](https://juxitech.feishu.cn/wiki/WqxUwGrGHiNi7wkqFkmcCGpXnE?node-id=1758747871229188003&from=from_node_link)** と 第7点の**[ハンドトラッキング](https://juxitech.feishu.cn/wiki/WqxUwGrGHiNi7wkqFkmcCGpXnE?node-id=1758747871229188027&from=from_node_link)** に進めます。

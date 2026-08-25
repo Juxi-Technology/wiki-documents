@@ -5,6 +5,9 @@ description: "Tutoriel de la carte son USB sans pilote JUXI : logiciel de test, 
 
 # Tutoriel carte son USB sans pilote
 
+> **[Acheter en boutique](https://www.juxitech.com/fr/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction)**
+
+
 # Logiciel de test visuel (Windows)
 
 [audio_tools.7z](https://juxitech.feishu.cn/wiki/Wuc3wAppNi5elfkSI6VccrNDnfE)

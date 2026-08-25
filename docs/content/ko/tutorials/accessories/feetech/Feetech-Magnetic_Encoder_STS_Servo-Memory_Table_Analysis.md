@@ -5,6 +5,9 @@ description: "서보는 FT-SCS 자체 프로토콜 사용. 출고 시 직렬 기
 
 # 자기 엔코더 STS 서보 - 메모리 테이블 분석
 
+> **[스토어에서 구매](https://www.juxitech.com/ko/products/feetech-scs0009-serial-bus-servo)**
+
+
 # 1 서보 통신 프로토콜
 
 서보는 FT-SCS 자체 프로토콜을 사용합니다. 출고 시 직렬 기본 설정: STS 서보 기본 보율은 1M으로 TTL 단일 버스 통신, 데이터 비트 8, 패리티 없음, 스톱 비트 1. 보율은 38400~1Mbps로 설정 가능, 기본 통신 주소(국번)는 1.

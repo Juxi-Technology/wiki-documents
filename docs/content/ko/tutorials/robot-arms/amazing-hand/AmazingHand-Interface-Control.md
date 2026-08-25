@@ -5,6 +5,9 @@ description: "[AmazingHandControl.zip]"
 
 # 로봇 핸드 인터페이스 제어
 
+> **[스토어에서 구매](https://www.juxitech.com/ko/products/amazinghand)**
+
+
 https://github.com/Betatester777/AmazingHandControl
 
 ## 공식 저장소 예제

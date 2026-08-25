@@ -5,6 +5,9 @@ description: "Ce tutoriel est à jour au 15 décembre. Vous pouvez suivre la doc
 
 # Tutoriel bras robotique LeRobot
 
+> **[Acheter en boutique](https://www.juxitech.com/fr/products/so-arm101-developers-kit)**
+
+
 Ce tutoriel est à jour au 15 décembre. Vous pouvez suivre la [documentation officielle la plus récente](https://github.com/huggingface/lerobot/tree/main). Tutoriel détaillé : [ce lien](https://zihao-ai.feishu.cn/wiki/TS6swApHbinx01kHDi5cf5n5n8c). Pour les fichiers URDF : [ce lien](https://github.com/TheRobotStudio/SO-ARM100). Ancienne version du 15 septembre : [ce lien](https://juxitech.feishu.cn/docx/DJkBdcwzooBqamxl0kgcvVUbngh?from=from_copylink). SO-ARM101 et SO-ARM100 sont compatibles dans le code exécuté.
 
 ## A. Remarques du tutoriel

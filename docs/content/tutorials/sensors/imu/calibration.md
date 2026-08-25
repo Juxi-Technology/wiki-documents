@@ -6,6 +6,9 @@ keywords: [imu, calibration, magnetometer, temperature calibration]
 
 # IMU Calibration Guide
 
+> **[Buy in Store](https://www.juxitech.com/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
+
+
 > Calibrate your IMU module before first use for the best attitude accuracy. Based on the official `imu_calibration_tool.py` from `IMU_Library`.
 
 ## Calibration Types

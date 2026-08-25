@@ -5,6 +5,9 @@ description: "Le module est livré avec le firmware de reconnaissance vocale d'u
 
 # Téléchargement et flashage du firmware chinois/anglais
 
+> **[Acheter en boutique](https://www.juxitech.com/fr/products/ai-voice-recognition-module)**
+
+
 > Le module est livré avec le firmware de reconnaissance vocale d'usine, également fourni en pièces jointes. Si vous devez recréer le firmware, suivez les étapes ci-dessous.
 >
 

@@ -5,6 +5,9 @@ description: "Il servo utilizza il protocollo personalizzato FT-SCS. Configurazi
 
 # Analisi della tabella di memoria del servo STS a encoder magnetico
 
+> **[Acquista nel negozio](https://www.juxitech.com/it/products/feetech-scs0009-serial-bus-servo)**
+
+
 # 1 Protocollo di comunicazione del servo
 
 Il servo utilizza il protocollo personalizzato FT-SCS. Configurazione seriale predefinita di fabbrica: servo STS a 1M, comunicazione TTL a bus singolo, 8 bit di dati, nessuna parità, 1 bit di stop; baudrate configurabile 38400~1Mbps, indirizzo di comunicazione predefinito (n. stazione) 1.

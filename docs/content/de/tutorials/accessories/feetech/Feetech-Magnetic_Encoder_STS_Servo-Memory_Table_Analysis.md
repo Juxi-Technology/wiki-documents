@@ -5,6 +5,9 @@ description: "Der Servo verwendet das FT-SCS-Eigenprotokoll. Serielle Standardko
 
 # Magnetencoder-STS-Servo – Analyse der Speichertabelle
 
+> **[Im Shop kaufen](https://www.juxitech.com/de/products/feetech-scs0009-serial-bus-servo)**
+
+
 # 1 Servo-Kommunikationsprotokoll
 
 Der Servo verwendet das FT-SCS-Eigenprotokoll. Serielle Standardkonfiguration ab Werk: STS-Servo Standard-Baudrate 1M, TTL-Einzelbus-Kommunikation, 8 Datenbits, keine Parität, 1 Stoppbit; Baudrate konfigurierbar 38400–1 Mbit/s, Standard-Adresse (Stationsnummer) 1.

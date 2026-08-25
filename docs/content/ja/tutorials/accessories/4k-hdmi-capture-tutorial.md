@@ -5,6 +5,9 @@ description: "マザーボードのインターフェースに応じて、以下
 
 # 4K高解像度HDMIキャプチャカードチュートリアル
 
+> **[ストアで購入](https://www.juxitech.com/ja/products/4k-hd-hdmi-capture-card)**
+
+
 ## 配線方法
 
 マザーボードのインターフェースに応じて、以下の3つの配線方法があります

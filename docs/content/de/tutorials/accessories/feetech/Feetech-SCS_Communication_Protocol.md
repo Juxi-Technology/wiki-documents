@@ -5,6 +5,9 @@ description: "Der Kommunikationspegel nutzt TTL für Hochgeschwindigkeitskommuni
 
 # Servo-SCS-Kommunikationsprotokoll
 
+> **[Im Shop kaufen](https://www.juxitech.com/de/products/feetech-scs0009-serial-bus-servo)**
+
+
 # 1 Protokollübersicht
 
   Der Kommunikationspegel nutzt TTL für Hochgeschwindigkeitskommunikation und RS485 mit starker Störfestigkeit; die Kommunikation erfolgt asynchron-duplex, Senden und Empfangen werden asynchron verarbeitet.

@@ -6,6 +6,9 @@ keywords: [imu, kalibrierung, magnetometer]
 
 # IMU-Kalibrierungsanleitung
 
+> **[Im Shop kaufen](https://www.juxitech.com/de/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
+
+
 > Kalibrierung vor Erstnutzung empfohlen. Nutzung von `imu_calibration_tool.py` aus `IMU_Library`.
 
 ## Kalibrierungstypen

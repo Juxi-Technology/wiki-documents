@@ -5,6 +5,9 @@ description: "Juxi Technology USB driver-free sound card tutorial — visualizat
 
 # USB Driverless Sound Card Tutorial
 
+> **[Buy in Store](https://www.juxitech.com/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction)**
+
+
 # Visual Testing Software (Windows)
 
 [audio_tools.7z](https://juxitech.feishu.cn/wiki/NThUwAgW5iLyB3kEWzOcyO35nvW)

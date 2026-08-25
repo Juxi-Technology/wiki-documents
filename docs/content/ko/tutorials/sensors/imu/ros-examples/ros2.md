@@ -5,6 +5,9 @@ description: "시스템 구성: ubuntu22.04"
 
 # ROS2 응용
 
+> **[스토어에서 구매](https://www.juxitech.com/ko/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
+
+
 **시스템 구성: ubuntu22.04**
 
 **ROS2 버전: humble**

@@ -5,6 +5,9 @@ description: "The servo uses the FT-SCS custom Communication Protocol. The defau
 
 # Potentiometer SCSCL Servo - Memory Table Analysis
 
+> **[Buy in Store](https://www.juxitech.com/products/feetech-scs0009-serial-bus-servo)**
+
+
 # 1 Servo Communication Protocol
 
 The servo uses the FT-SCS custom Communication Protocol. The default baud rate of the servo is 1M or 500k, using TTL single bus communication, with 8 data bits, no parity, and 1 stop bit. The configurable range of the baud rate is 38400~1Mbps (500k), and the default communication address (station number) is 1. [FT-SCS Custom Communication Protocol](https://juxitech.feishu.cn/wiki/MTPLw8xCniTidGkm3amc27FXnKg)

@@ -5,6 +5,9 @@ description: "FEETECH Host Computer FD Softwarehttps://gitee.com/ftservo"
 
 # Debugging Tutorial for FEETECH Servos STS3215 &amp; SCS0009
 
+> **[Buy in Store](https://www.juxitech.com/products/feetech-scs0009-serial-bus-servo)**
+
+
 [FEETECH Host Computer FD Software](https://gitee.com/ftservo)[https://gitee.com/ftservo](https://gitee.com/ftservo)
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NjdjNjRkZDQyYWExZjE3NTMwYzRiYWFjNWIyOGQ4NWRfZmEzZmY0NDE4YjE4NmYwNDdiM2M5NjdhYjdiOTA4NDJfSUQ6NzYzODkxOTU3NDc0MjAyNzIzOF8xNzgwNjYzMTg4OjE3ODA3NDk1ODhfVjM)

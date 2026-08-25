@@ -5,6 +5,9 @@ description: "Tutorial della scheda audio USB senza driver JUXI: software di tes
 
 # Tutorial scheda audio USB senza driver
 
+> **[Acquista nel negozio](https://www.juxitech.com/it/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction)**
+
+
 # Software di test visuale (Windows)
 
 [audio_tools.7z](https://juxitech.feishu.cn/wiki/Wuc3wAppNi5elfkSI6VccrNDnfE)

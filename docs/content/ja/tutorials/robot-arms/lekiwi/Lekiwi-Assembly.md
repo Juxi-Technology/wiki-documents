@@ -5,6 +5,9 @@ description: "Fusion360 オンライン CAD で正確なコンポーネント位
 
 # Lekiwi 移動ロボット組み立てチュートリアル
 
+> **[ストアで購入](https://www.juxitech.com/ja/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
+
+
 [*Fusion360 オンライン CAD*](https://a360.co/4k1P8yO)*で正確なコンポーネント位置を可視化できます。*
 [URDFファイル](https://gitcode.com/gh_mirrors/le/LeKiwi/tree/main)
 オンラインURDFプレビュー https://urdf.d-robotics.cc/

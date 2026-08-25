@@ -5,6 +5,9 @@ description: "KWS 음성 인식 모듈 시리즈 튜토리얼——직렬 통신
 
 # KWS 음성 인식 모듈
 
+> **[스토어에서 구매](https://www.juxitech.com/ko/products/ai-voice-recognition-module)**
+
+
 KWS 음성 인식 모듈에 오신 것을 환영합니다! 여기는 관련 튜토리얼 목차입니다.
 
 ## 튜토리얼 목록

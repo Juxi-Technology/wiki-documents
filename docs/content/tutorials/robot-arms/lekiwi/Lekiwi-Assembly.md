@@ -5,6 +5,9 @@ description: "Precise component positions can be visualized in Fusion360 Online 
 
 # Lekiwi Mobile Robot Assembly Tutorial
 
+> **[Buy in Store](https://www.juxitech.com/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
+
+
 [*Precise component positions can be visualized in Fusion360 Online CAD*](https://a360.co/4k1P8yO)*.*
 
 [URDF File](https://gitcode.com/gh_mirrors/le/LeKiwi/tree/main)

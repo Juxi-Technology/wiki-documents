@@ -5,6 +5,9 @@ description: "Laden Sie zuerst das Archiv „灵巧手调试.zip“ herunter und
 
 # Dexterous Hand (TTL-Servo) Debug-Tutorial
 
+> **[Im Shop kaufen](https://www.juxitech.com/de/products/amazinghand)**
+
+
 Laden Sie zuerst das Archiv „[灵巧手调试.zip](https://juxitech.feishu.cn/wiki/QjYBwL0A0iJVlNkEpUUclLYGnBc)" herunter und entpacken Sie es. Anschließend können Sie über das Dokument „使用arduio程序调试灵巧手过程（TTL舵机）" Servo-ID setzen, kalibrieren, die Mittelstellung ausrichten und das Demo-Programm ausführen – oder Sie nutzen den [offiziellen Open-Source-Code](https://github.com/pollen-robotics/AmazingHand/tree/main/ArduinoExample).
 
 **Ohne Demontage des fertigen Produkts** (Servo-IDs, Kalibrierung und Mittelstellung ab Werk eingestellt) können Sie direkt zu **[Punkt 6: „02 演示程序" ausführen](https://juxitech.feishu.cn/wiki/WqxUwGrGHiNi7wkqFkmcCGpXnE?node-id=1758747871229188003&from=from_node_link)** und Punkt 7 **[Hand-Tracking](https://juxitech.feishu.cn/wiki/WqxUwGrGHiNi7wkqFkmcCGpXnE?node-id=1758747871229188027&from=from_node_link)** springen.

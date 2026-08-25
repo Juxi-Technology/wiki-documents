@@ -5,6 +5,9 @@ description: "Pro-Version: Leader-Arm 5V6A, Follower-Arm 12V5A Netzteil"
 
 # Lerobot-Roboterarm-Montageanleitung
 
+> **[Im Shop kaufen](https://www.juxitech.com/de/products/so-arm101-developers-kit)**
+
+
 **Pro-Version: Leader-Arm (schwarz) 5V6A, Follower-Arm (weiß) 12V5A Netzteil**
 
 Servo-ID-Einstellung, Winkel-Kalibrierung und Montage im Voraus erledigen. Siehe [offizielle Montageanleitung](https://huggingface.co/docs/lerobot/so101).

@@ -5,6 +5,9 @@ description: "Conmutador KVM: función HUB, TTL serie, módulo Bluetooth"
 
 # Uso del conmutador KVM
 
+> **[Comprar en la tienda](https://www.juxitech.com/es/products/4-in-1-kvm-switch-hub-ttl-serial-bluetooth-docking-station)**
+
+
 El conmutador KVM ofrece función HUB, TTL serie y módulo Bluetooth.
 
 ## Funciones de los módulos

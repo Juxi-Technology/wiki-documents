@@ -5,6 +5,9 @@ description: "Switch KVM: funzione HUB, seriale TTL, modulo Bluetooth"
 
 # Uso dello switch KVM
 
+> **[Acquista nel negozio](https://www.juxitech.com/it/products/4-in-1-kvm-switch-hub-ttl-serial-bluetooth-docking-station)**
+
+
 Lo switch KVM offre funzione HUB, seriale TTL e modulo Bluetooth.
 
 ## Funzioni dei moduli

@@ -5,6 +5,9 @@ description: "Prima scaricare l'archivio «灵巧手调试.zip» ed estrarlo; po
 
 # Tutorial di debug della mano dexterous (servo TTL)
 
+> **[Acquista nel negozio](https://www.juxitech.com/it/products/amazinghand)**
+
+
 Prima scaricare l'archivio «[灵巧手调试.zip](https://juxitech.feishu.cn/wiki/QjYBwL0A0iJVlNkEpUUclLYGnBc)» ed estrarlo. Poi, tramite il documento «使用arduio程序调试灵巧手过程（TTL舵机）», è possibile impostare gli ID dei servo, calibrare, allineare il centro ed eseguire il programma demo, oppure consultare il [codice open source ufficiale](https://github.com/pollen-robotics/AmazingHand/tree/main/ArduinoExample).
 
 **Senza smontare il prodotto finito** (ID servo, calibrazione e centro già impostati in fabbrica) si può saltare direttamente al **[punto 6: eseguire «02 演示程序»](https://juxitech.feishu.cn/wiki/WqxUwGrGHiNi7wkqFkmcCGpXnE?node-id=1758747871229188003&from=from_node_link)** e al punto 7 **[tracciamento della mano](https://juxitech.feishu.cn/wiki/WqxUwGrGHiNi7wkqFkmcCGpXnE?node-id=1758747871229188027&from=from_node_link)**.

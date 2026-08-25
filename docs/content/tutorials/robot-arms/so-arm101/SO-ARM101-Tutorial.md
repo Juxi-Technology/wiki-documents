@@ -5,6 +5,9 @@ description: "This tutorial has been updated to December 15th, and you can choos
 
 # LeRobot Robot Arm Tutorial
 
+> **[Buy in Store](https://www.juxitech.com/products/so-arm101-developers-kit)**
+
+
 This tutorial has been updated to December 15th, and you can choose to follow the latest version [ of the official documentation for operation ](https://github.com/huggingface/lerobot/tree/main). For the specific tutorial in the official documentation, please refer to [ this link ](https://zihao-ai.feishu.cn/wiki/TS6swApHbinx01kHDi5cf5n5n8c). If you need files such as URDF, please refer to [ this link ](https://github.com/TheRobotStudio/SO-ARM100). For the old version of September 15th, please refer to this [ link ](https://juxitech.feishu.cn/docx/DJkBdcwzooBqamxl0kgcvVUbngh?from=from_copylink). The running codes of SO-ARM101 and SO-ARM100 are mutually compatible. 
 
 ## A. Tutorial Instructions

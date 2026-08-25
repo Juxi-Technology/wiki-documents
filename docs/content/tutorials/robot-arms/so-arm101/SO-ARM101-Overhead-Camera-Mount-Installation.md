@@ -5,6 +5,9 @@ description: "Please refer to this tutorial for debugging the USB auto-docking c
 
 # Installation Tutorial for the Top-mounted Camera Mount
 
+> **[Buy in Store](https://www.juxitech.com/products/overhead-camera-mount-for-so-arm100-so-arm101-realsense-compatible)**
+
+
 Please refer to this tutorial for debugging the USB auto-docking camera[USB Auto-Focus Camera Tutorial](https://juxitech.feishu.cn/wiki/EangwaLy2ig8oGkqHsFc83tznuc)
 
 

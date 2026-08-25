@@ -5,6 +5,9 @@ description: "1. CH341-Treiber installieren (als Administrator)"
 
 # Multi-Host-Kommunikationsfälle
 
+> **[Im Shop kaufen](https://www.juxitech.com/de/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
+
+
 ## Hinweise
 
 1. CH341-Treiber installieren (als Administrator)

@@ -5,6 +5,9 @@ description: "Juxi Technology 2-DOF カメラジンバル:カラートラッキ�
 
 # 2自由度カメラジンバル
 
+> **[ストアで購入](https://www.juxitech.com/ja/products/2-dof-servo-pan-tilt-unit)**
+
+
 ## 製品概要
 
 Juxi Technology の 2-DOF カメラジンバルはオープンソースの2自由度カメラ安定プラットフォーム。Python 制御、カラートラッキング、顔検出、自動目標追跡に対応します。

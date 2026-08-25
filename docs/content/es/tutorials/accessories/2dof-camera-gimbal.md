@@ -5,6 +5,9 @@ description: "Cardán de cámara Juxi Technology 2-DOF: seguimiento de color, de
 
 # Cámara con cardán 2-DOF
 
+> **[Comprar en la tienda](https://www.juxitech.com/es/products/2-dof-servo-pan-tilt-unit)**
+
+
 ## Presentación
 
 Plataforma de estabilización de cámara open source 2-DOF. Control Python, seguimiento de color, detección facial y seguimiento automático de objetivo.

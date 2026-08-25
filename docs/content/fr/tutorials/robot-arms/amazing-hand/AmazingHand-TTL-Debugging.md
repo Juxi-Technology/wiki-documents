@@ -5,6 +5,9 @@ description: "Téléchargez d'abord l'archive « 灵巧手调试.zip » et extra
 
 # Tutoriel de débogage de la main robotique (servo TTL)
 
+> **[Acheter en boutique](https://www.juxitech.com/fr/products/amazinghand)**
+
+
 Téléchargez d'abord l'archive « [灵巧手调试.zip](https://juxitech.feishu.cn/wiki/QjYBwL0A0iJVlNkEpUUclLYGnBc) » et extrayez-la. Vous pouvez ensuite, via le document « 使用arduio程序调试灵巧手过程（TTL舵机）», définir les IDs de servos, calibrer, aligner la position centrale et exécuter le programme de démonstration, ou consulter le [code open source officiel](https://github.com/pollen-robotics/AmazingHand/tree/main/ArduinoExample).
 
 **Sans démontage du produit fini** (IDs de servos, calibrage et position centrale réglés en usine), vous pouvez passer directement au **[point 6 : exécuter « 02 演示程序 »](https://juxitech.feishu.cn/wiki/WqxUwGrGHiNi7wkqFkmcCGpXnE?node-id=1758747871229188003&from=from_node_link)** et au point 7 **[suivi de la main](https://juxitech.feishu.cn/wiki/WqxUwGrGHiNi7wkqFkmcCGpXnE?node-id=1758747871229188027&from=from_node_link)**.

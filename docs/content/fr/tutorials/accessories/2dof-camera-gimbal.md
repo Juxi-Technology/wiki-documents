@@ -5,6 +5,9 @@ description: "Cardan caméra Juxi Technology 2-DOF : suivi de couleur, détectio
 
 # Caméra à cardan 2-DOF
 
+> **[Acheter en boutique](https://www.juxitech.com/fr/products/2-dof-servo-pan-tilt-unit)**
+
+
 ## Présentation
 
 Plateforme de stabilisation de caméra open source 2-DOF. Contrôle Python, suivi de couleur, détection de visage et suivi automatique de cible.

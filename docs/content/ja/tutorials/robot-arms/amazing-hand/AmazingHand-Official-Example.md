@@ -5,6 +5,9 @@ description: "本チュートリアル付属のコード圧縮パッケージを
 
 # 器用ハンド公式サンプル実行チュートリアル
 
+> **[ストアで購入](https://www.juxitech.com/ja/products/amazinghand)**
+
+
 ## 1.コードのダウンロード
 
 本チュートリアル付属のコード圧縮パッケージをダウンロードしてデモを行っていただくか、公式オープンソースコードリポジトリ https://github.com/pollen-robotics/AmazingHand.git をクローンしてください。公式コードには誤りや不足がある可能性がありますのでご注意ください。

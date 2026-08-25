@@ -5,6 +5,9 @@ description: "Versione Pro: braccio leader 5V6A, braccio follower 12V5A"
 
 # Guida di montaggio del braccio robotico Lerobot
 
+> **[Acquista nel negozio](https://www.juxitech.com/it/products/so-arm101-developers-kit)**
+
+
 **Versione Pro: braccio leader (nero) 5V6A, braccio follower (bianco) 12V5A**
 
 Impostazione ID servo, calibrazione angolo e montaggio da fare in anticipo. Vedi [guida ufficiale](https://huggingface.co/docs/lerobot/so101).

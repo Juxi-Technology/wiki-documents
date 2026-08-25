@@ -5,6 +5,9 @@ description: "In Fusion360 Online-CAD können die genauen Bauteilpositionen visu
 
 # Lekiwi-Mobilitätsroboter – Montage-Tutorial
 
+> **[Im Shop kaufen](https://www.juxitech.com/de/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
+
+
 [*Fusion360 Online-CAD*](https://a360.co/4k1P8yO)*zeigt die genauen Bauteilpositionen.*
 [URDF-Datei](https://gitcode.com/gh_mirrors/le/LeKiwi/tree/main)
 Online-URDF-Vorschau https://urdf.d-robotics.cc/

@@ -5,6 +5,9 @@ description: Solutions pour les problèmes GPU PyTorch sur Jetson Orin
 
 # Incompatibilités PyTorch sur Jetson Orin
 
+> **[Acheter en boutique](https://www.juxitech.com/fr/products/nvidia-jetson-orin-nx-super-developer-kit)**
+
+
 ## Problème 1 : GPU indisponible
 
 Installer la version Jetson de PyTorch :

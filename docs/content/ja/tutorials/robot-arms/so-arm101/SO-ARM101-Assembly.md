@@ -5,6 +5,9 @@ description: "Pro版 主動腕は5V6A電源アダプタ、從動腕は12V5A電�
 
 # Lerobot ロボットアーム組立ガイド
 
+> **[ストアで購入](https://www.juxitech.com/ja/products/so-arm101-developers-kit)**
+
+
 **Pro版:主動腕(リーダー)は 5V6A 電源アダプタ、從動腕(フォロワー)は 12V5A 電源アダプタを使用**
 
 サーボID設定・角度キャリブレーション・組立は事前に実施してください。[公式組立ガイド](https://huggingface.co/docs/lerobot/so101) を参照。

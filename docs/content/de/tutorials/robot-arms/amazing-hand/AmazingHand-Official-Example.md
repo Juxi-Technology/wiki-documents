@@ -5,6 +5,9 @@ description: "Laden Sie das Code-Archiv dieses Tutorials für die Demo herunter 
 
 # Tutorial zum offiziellen Beispiel der Roboterhand
 
+> **[Im Shop kaufen](https://www.juxitech.com/de/products/amazinghand)**
+
+
 ## 1. Code herunterladen
 
 Laden Sie das Code-Archiv dieses Tutorials für die Demo herunter oder klonen Sie das offizielle Open-Source-Repository https://github.com/pollen-robotics/AmazingHand.git ; der offizielle Code kann Fehler enthalten.

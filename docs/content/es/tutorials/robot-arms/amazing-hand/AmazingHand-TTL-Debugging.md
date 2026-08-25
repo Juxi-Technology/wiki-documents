@@ -5,6 +5,9 @@ description: "Primero descargue el paquete comprimido «灵巧手调试.zip» y 
 
 # Tutorial de depuración de la mano hábil (servo TTL)
 
+> **[Comprar en la tienda](https://www.juxitech.com/es/products/amazinghand)**
+
+
 Primero descargue el paquete comprimido «[灵巧手调试.zip](https://juxitech.feishu.cn/wiki/QjYBwL0A0iJVlNkEpUUclLYGnBc)» y extráigalo. Luego, mediante el documento «使用arduio程序调试灵巧手过程（TTL舵机）», puede configurar IDs de servos, calibrar, alinear la posición central y ejecutar el programa demo, o consultar el [código de código abierto oficial](https://github.com/pollen-robotics/AmazingHand/tree/main/ArduinoExample).
 
 **Sin desmontar el producto terminado** (IDs de servos, calibración y posición central ya ajustados de fábrica) puede saltar directamente al **[punto 6: ejecutar «02 演示程序»](https://juxitech.feishu.cn/wiki/WqxUwGrGHiNi7wkqFkmcCGpXnE?node-id=1758747871229188003&from=from_node_link)** y al punto 7 **[seguimiento de la mano](https://juxitech.feishu.cn/wiki/WqxUwGrGHiNi7wkqFkmcCGpXnE?node-id=1758747871229188027&from=from_node_link)**.

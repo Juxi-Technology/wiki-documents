@@ -5,6 +5,9 @@ description: "본 튜토리얼은 12월 15일까지 업데이트되었습니다.
 
 # LeRobot 로봇팔 튜토리얼
 
+> **[스토어에서 구매](https://www.juxitech.com/ko/products/so-arm101-developers-kit)**
+
+
 본 튜토리얼은 12월 15일까지 업데이트되었습니다. 최신 버전의 [공식 문서](https://github.com/huggingface/lerobot/tree/main)를 따라도 됩니다. 구체적인 튜토리얼은 [이 링크](https://zihao-ai.feishu.cn/wiki/TS6swApHbinx01kHDi5cf5n5n8c)를 참조하세요. URDF 등 파일이 필요하면 [이 링크](https://github.com/TheRobotStudio/SO-ARM100)를 참조하세요. 9월 15일 구버전은 [이 링크](https://juxitech.feishu.cn/docx/DJkBdcwzooBqamxl0kgcvVUbngh?from=from_copylink)를 참조하세요. SO-ARM101과 SO-ARM100은 실행 코드가 상호 호환됩니다.
 
 ## A. 튜토리얼 설명

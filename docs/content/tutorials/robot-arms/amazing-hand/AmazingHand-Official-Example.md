@@ -5,6 +5,9 @@ description: "It is recommended to download the Compressed Packet of the code un
 
 # Running Tutorial for AmazingHand Official Example
 
+> **[Buy in Store](https://www.juxitech.com/products/amazinghand)**
+
+
 ## 1. Code Download
 
 It is recommended to download the Compressed Packet of the code under this usage tutorial for Demo example demonstration, or clone the official open source code repository  https://github.com/pollen-robotics/AmazingHand.git . Please note that there may be errors or omissions in the official open source code. 

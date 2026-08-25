@@ -5,6 +5,9 @@ description: "JUXI USBドライバ不要サウンドカードのチュートリ�
 
 # USBドライバ不要サウンドカードチュートリアル
 
+> **[ストアで購入](https://www.juxitech.com/ja/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction)**
+
+
 # 可視化テストソフトウェア(Windows)
 
 [audio_tools.7z](https://juxitech.feishu.cn/wiki/Wuc3wAppNi5elfkSI6VccrNDnfE)

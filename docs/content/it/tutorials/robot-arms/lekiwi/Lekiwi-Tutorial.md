@@ -5,6 +5,9 @@ description: "Guida completa al robot mobile Lekiwi basato su LeRobot: setup, co
 
 # Tutorial d'uso del robot mobile Lekiwi
 
+> **[Acquista nel negozio](https://www.juxitech.com/it/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
+
+
 > [!Nota] Questo tutorial segue la documentazione ufficiale LeRobot. Per problemi software o di dipendenze irrisolvibili, segnala alla [piattaforma LeRobot](https://github.com/huggingface/lerobot) o al [canale Discord LeRobot](https://discord.gg/8TnwDdjFGU).
 
 ## Caratteristiche principali

@@ -5,6 +5,9 @@ description: "Descargue el paquete comprimido de código de este tutorial para l
 
 # Tutorial de ejecución del ejemplo oficial de la mano robótica
 
+> **[Comprar en la tienda](https://www.juxitech.com/es/products/amazinghand)**
+
+
 ## 1. Descarga del código
 
 Descargue el paquete comprimido de código de este tutorial para la demo, o clone el repositorio de código abierto oficial https://github.com/pollen-robotics/AmazingHand.git ; el código oficial puede contener errores.

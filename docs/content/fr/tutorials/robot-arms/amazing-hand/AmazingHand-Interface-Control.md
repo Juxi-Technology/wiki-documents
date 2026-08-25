@@ -5,6 +5,9 @@ description: "[AmazingHandControl.zip]"
 
 # Contrôle d'interface main robotique
 
+> **[Acheter en boutique](https://www.juxitech.com/fr/products/amazinghand)**
+
+
 https://github.com/Betatester777/AmazingHandControl
 
 ## Exemple du dépôt officiel

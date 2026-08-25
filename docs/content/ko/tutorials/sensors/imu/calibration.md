@@ -6,6 +6,9 @@ keywords: [imu, 캘리브레이션, 자력계]
 
 # IMU 캘리브레이션 가이드
 
+> **[스토어에서 구매](https://www.juxitech.com/ko/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
+
+
 > 첫 사용 전 캘리브레이션 권장. 공식 `IMU_Library`의 `imu_calibration_tool.py` 사용.
 
 ## 캘리브레이션 종류

@@ -5,6 +5,9 @@ description: "고정밀 IMU 자세 센서: 72MHz 32비트 프로세서, 실시�
 
 # IMU 모듈 소개
 
+> **[스토어에서 구매](https://www.juxitech.com/ko/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
+
+
 고정밀 IMU 자세 센서는 **72MHz 32비트 프로세서**를 내장하고 실시간 자세 연산 및 동적 보상, 최대 **100Hz** 데이터 업데이트를 지원합니다. IIC 및 직렬 이중 통신 모드, MCU·Linux 호스트·ROS 시스템에 대응합니다.
 
 ## 버전 소개

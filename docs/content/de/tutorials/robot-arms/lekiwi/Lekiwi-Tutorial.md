@@ -5,6 +5,9 @@ description: "Kompletter Leitfaden für den LeRobot-basierten Lekiwi-Mobilitäts
 
 # Lekiwi-Mobilitätsroboter – Bedienungstutorial
 
+> **[Im Shop kaufen](https://www.juxitech.com/de/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
+
+
 > [!Hinweis] Dieses Tutorial basiert auf der offiziellen LeRobot-Dokumentation. Bei unlösbaren Software- oder Umgebungsproblemen wenden Sie sich an die [LeRobot-Plattform](https://github.com/huggingface/lerobot) oder den [LeRobot-Discord-Kanal](https://discord.gg/8TnwDdjFGU).
 
 ## Hauptmerkmale

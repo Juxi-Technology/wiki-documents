@@ -5,6 +5,9 @@ description: "Der Servo verwendet das FT-SCS-Eigenprotokoll. Serielle Standardko
 
 # Potentiometer-SCSCL-Servo – Analyse der Speichertabelle
 
+> **[Im Shop kaufen](https://www.juxitech.com/de/products/feetech-scs0009-serial-bus-servo)**
+
+
 # 1 Servo-Kommunikationsprotokoll
 
 Der Servo verwendet das FT-SCS-Eigenprotokoll. Standard-Baudrate 1M oder 500k, TTL-Einzelbus-Kommunikation, 8 Datenbits, keine Parität, 1 Stoppbit; Baudrate konfigurierbar 38400–1 Mbit/s (500k), Standard-Adresse (Stationsnummer) 1.

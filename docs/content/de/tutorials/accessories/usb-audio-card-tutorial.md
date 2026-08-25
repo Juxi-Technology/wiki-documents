@@ -5,6 +5,9 @@ description: "JUXI USB-Soundkarte ohne Treiber: Testsoftware, Befehle und Audio-
 
 # USB-Soundkarte ohne Treiber – Tutorial
 
+> **[Im Shop kaufen](https://www.juxitech.com/de/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction)**
+
+
 # Visualisierungs-Testsoftware (Windows)
 
 [audio_tools.7z](https://juxitech.feishu.cn/wiki/Wuc3wAppNi5elfkSI6VccrNDnfE)

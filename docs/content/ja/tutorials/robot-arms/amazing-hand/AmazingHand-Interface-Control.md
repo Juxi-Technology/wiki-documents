@@ -5,6 +5,9 @@ description: "[AmazingHandControl.zip]"
 
 # ロボットハンド インターフェース制御
 
+> **[ストアで購入](https://www.juxitech.com/ja/products/amazinghand)**
+
+
 https://github.com/Betatester777/AmazingHandControl
 
 ## 公式リポジトリの例

@@ -5,6 +5,9 @@ description: "Según la interfaz de la placa base, hay tres formas de conexión"
 
 # Tutorial de capturadora HDMI 4K
 
+> **[Comprar en la tienda](https://www.juxitech.com/es/products/4k-hd-hdmi-capture-card)**
+
+
 ## Conexión
 
 Según la interfaz de la placa base, hay tres formas de conexión

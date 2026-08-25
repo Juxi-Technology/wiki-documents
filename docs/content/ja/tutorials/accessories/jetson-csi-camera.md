@@ -5,6 +5,9 @@ description: "NVIDIA Jetson Orin CSI カメラモジュールの使用方法"
 
 # Jetson CSI カメラ
 
+> **[ストアで購入](https://www.juxitech.com/ja/products/79-imx219-csi-camera)**
+
+
 ## 製品概要
 
 JUXI CSI カメラモジュールは NVIDIA Jetson Orin 開発者キット向けに設計されており、CSI (Camera Serial Interface) 経由で低遅延・高帯域の映像転送を提供します。AI ビジョン推論、ロボット知覚、エッジコンピューティングのシーンに適しています。

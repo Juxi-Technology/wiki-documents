@@ -5,6 +5,9 @@ description: Jetson Orin에서 PyTorch GPU가 안 될 때 해결법
 
 # Jetson Orin에서 PyTorch 비호환 문제
 
+> **[스토어에서 구매](https://www.juxitech.com/ko/products/nvidia-jetson-orin-nx-super-developer-kit)**
+
+
 ## 문제 1: GPU 사용 불가
 
 Jetson용 PyTorch 설치:

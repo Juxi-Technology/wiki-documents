@@ -5,6 +5,9 @@ description: "Juxi Technology NVIDIA Jetson Orin CSI Camera Module Tutorial"
 
 # Jetson CSI Camera
 
+> **[Buy in Store](https://www.juxitech.com/products/79-imx219-csi-camera)**
+
+
 ## Overview
 
 The Juxi Technology CSI Camera Module is designed for the NVIDIA Jetson Orin Developer Kit, delivering low-latency, high-bandwidth video via the CSI (Camera Serial Interface) interface. Ideal for AI vision inference, robot perception, and edge computing.

@@ -5,6 +5,9 @@ description: "系统配置：ubuntu22.04"
 
 # ROS2应用
 
+> **[Buy in Store](https://www.juxitech.com/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
+
+
 **系统配置：ubuntu22.04**
 
 **ROS2版本：humble**

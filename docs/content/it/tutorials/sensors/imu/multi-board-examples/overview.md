@@ -5,6 +5,9 @@ description: "1. Installare il driver CH341 (come amministratore)"
 
 # Casi di comunicazione multi-host
 
+> **[Acquista nel negozio](https://www.juxitech.com/it/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
+
+
 ## Note
 
 1. Installare il driver CH341 (come amministratore)

@@ -5,6 +5,9 @@ description: "Install the Jetson-specific build of PyTorch."
 
 # PyTorch Compatibility Issues on Jetson Orin
 
+> **[Buy in Store](https://www.juxitech.com/products/nvidia-jetson-orin-nx-super-developer-kit)**
+
+
 ## Possible Issue 1: GPU Not Available
 
 Install the Jetson-specific build of PyTorch.

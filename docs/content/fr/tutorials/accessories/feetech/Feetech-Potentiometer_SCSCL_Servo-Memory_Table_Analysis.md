@@ -5,6 +5,9 @@ description: "Le servo utilise le protocole personnalisé FT-SCS. Configuration 
 
 # Analyse de la table mémoire du servo SCSCL à potentiomètre
 
+> **[Acheter en boutique](https://www.juxitech.com/fr/products/feetech-scs0009-serial-bus-servo)**
+
+
 # 1 Protocole de communication du servo
 
 Le servo utilise le protocole personnalisé FT-SCS. Débit par défaut 1M ou 500k, communication TTL mono-bus, 8 bits de données, sans parité, 1 bit d'arrêt ; débit configurable 38400 à 1 Mbit/s (500k), adresse de communication par défaut (n° de station) 1.

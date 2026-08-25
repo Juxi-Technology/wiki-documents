@@ -5,6 +5,9 @@ description: "Juxi Technology 2-DOF Camera Gimbal module with color tracking, fa
 
 # 2-DOF Camera Gimbal
 
+> **[Buy in Store](https://www.juxitech.com/products/2-dof-servo-pan-tilt-unit)**
+
+
 ## Overview
 
 The Juxi Technology 2-DOF Camera Gimbal is an open-source two-degree-of-freedom camera stabilization platform that supports Python-based control, color tracking, face detection, and automatic target tracking. It is suitable for robot vision, surveillance, and automation applications.

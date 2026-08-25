@@ -5,6 +5,9 @@ description: "본 튜토리얼에 첨부된 코드 압축 패키지를 다운로
 
 # 로봇핸드 공식 예제 실행 튜토리얼
 
+> **[스토어에서 구매](https://www.juxitech.com/ko/products/amazinghand)**
+
+
 ## 1.코드 다운로드
 
 본 튜토리얼에 첨부된 코드 압축 패키지를 다운로드하여 데모를 진행하거나, 공식 오픈소스 코드 저장소 https://github.com/pollen-robotics/AmazingHand.git 를 클론하세요. 공식 코드에는 오류가 있을 수 있으니 주의하세요.

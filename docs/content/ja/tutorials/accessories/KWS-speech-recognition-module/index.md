@@ -5,6 +5,9 @@ description: "KWS 音声認識モジュールシリーズチュートリアル�
 
 # KWS音声認識モジュール
 
+> **[ストアで購入](https://www.juxitech.com/ja/products/ai-voice-recognition-module)**
+
+
 KWS音声認識モジュールへようこそ！ここは関連チュートリアルの目次です。
 
 ## チュートリアル一覧

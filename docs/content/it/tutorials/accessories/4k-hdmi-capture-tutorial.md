@@ -5,6 +5,9 @@ description: "In base all'interfaccia della scheda madre, esistono tre metodi di
 
 # Tutorial scheda di acquisizione HDMI 4K
 
+> **[Acquista nel negozio](https://www.juxitech.com/it/products/4k-hd-hdmi-capture-card)**
+
+
 ## Cablaggio
 
 In base all'interfaccia della scheda madre, esistono tre metodi di cablaggio

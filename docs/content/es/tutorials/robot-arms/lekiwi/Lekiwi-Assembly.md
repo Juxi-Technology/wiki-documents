@@ -5,6 +5,9 @@ description: "En Fusion360 CAD en línea se pueden visualizar las posiciones exa
 
 # Tutorial de ensamblaje del robot móvil Lekiwi
 
+> **[Comprar en la tienda](https://www.juxitech.com/es/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
+
+
 [*Fusion360 CAD en línea*](https://a360.co/4k1P8yO)*permite visualizar las posiciones exactas de los componentes.*
 [Archivo URDF](https://gitcode.com/gh_mirrors/le/LeKiwi/tree/main)
 Vista previa URDF en línea https://urdf.d-robotics.cc/

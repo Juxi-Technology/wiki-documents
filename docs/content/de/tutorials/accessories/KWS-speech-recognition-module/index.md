@@ -5,6 +5,9 @@ description: "Tutorials zur KWS-Spracherkennungsmodul-Serie – serielle Kommuni
 
 # KWS-Spracherkennungsmodul
 
+> **[Im Shop kaufen](https://www.juxitech.com/de/products/ai-voice-recognition-module)**
+
+
 Willkommen beim KWS-Spracherkennungsmodul! Hier finden Sie das Verzeichnis aller zugehörigen Tutorials.
 
 ## Tutorial-Liste

@@ -5,6 +5,9 @@ description: "In Fusion360 CAD online è possibile visualizzare le posizioni esa
 
 # Tutorial di assemblaggio del robot mobile Lekiwi
 
+> **[Acquista nel negozio](https://www.juxitech.com/it/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
+
+
 [*Fusion360 CAD online*](https://a360.co/4k1P8yO)*permette di visualizzare le posizioni esatte dei componenti.*
 [File URDF](https://gitcode.com/gh_mirrors/le/LeKiwi/tree/main)
 Anteprima URDF online https://urdf.d-robotics.cc/

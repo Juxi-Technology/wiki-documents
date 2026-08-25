@@ -5,6 +5,9 @@ description: "Este tutorial está actualizado al 15 de diciembre. Puede seguir l
 
 # Tutorial del brazo robótico LeRobot
 
+> **[Comprar en la tienda](https://www.juxitech.com/es/products/so-arm101-developers-kit)**
+
+
 Este tutorial está actualizado al 15 de diciembre. Puede seguir la [documentación oficial más reciente](https://github.com/huggingface/lerobot/tree/main). Tutorial detallado: [este enlace](https://zihao-ai.feishu.cn/wiki/TS6swApHbinx01kHDi5cf5n5n8c). Para archivos URDF: [este enlace](https://github.com/TheRobotStudio/SO-ARM100). Versión antigua del 15 de septiembre: [este enlace](https://juxitech.feishu.cn/docx/DJkBdcwzooBqamxl0kgcvVUbngh?from=from_copylink). SO-ARM101 y SO-ARM100 son compatibles en el código ejecutado.
 
 ## A. Notas del tutorial

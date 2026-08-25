@@ -5,6 +5,9 @@ description: "Version Pro : bras leader 5V6A, bras follower 12V5A"
 
 # Guide de montage du bras robotique Lerobot
 
+> **[Acheter en boutique](https://www.juxitech.com/fr/products/so-arm101-developers-kit)**
+
+
 **Version Pro : bras leader (noir) 5V6A, bras follower (blanc) 12V5A**
 
 Réglage des ID de servo, calibration d'angle et montage à faire au préalable. Voir [guide officiel](https://huggingface.co/docs/lerobot/so101).

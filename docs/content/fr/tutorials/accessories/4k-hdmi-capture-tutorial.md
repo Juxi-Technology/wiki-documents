@@ -5,6 +5,9 @@ description: "Selon l'interface de la carte mère, il existe trois méthodes de 
 
 # Tutoriel carte de capture HDMI 4K
 
+> **[Acheter en boutique](https://www.juxitech.com/fr/products/4k-hd-hdmi-capture-card)**
+
+
 ## Câblage
 
 Selon l'interface de la carte mère, il existe trois méthodes de câblage

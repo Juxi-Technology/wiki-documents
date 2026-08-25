@@ -5,6 +5,9 @@ description: "本教程は12月15日までに更新済み。最新版の公式�
 
 # LeRobot ロボットアーム教程
 
+> **[ストアで購入](https://www.juxitech.com/ja/products/so-arm101-developers-kit)**
+
+
 本教程は12月15日までに更新済み。最新版の[公式ドキュメント](https://github.com/huggingface/lerobot/tree/main)に従うこともできます。具体教程は[このリンク](https://zihao-ai.feishu.cn/wiki/TS6swApHbinx01kHDi5cf5n5n8c)を参照。URDF などのファイルが必要な場合は[このリンク](https://github.com/TheRobotStudio/SO-ARM100)を参照。9月15日の旧バージョンは[このリンク](https://juxitech.feishu.cn/docx/DJkBdcwzooBqamxl0kgcvVUbngh?from=from_copylink)を参照。SO-ARM101 と SO-ARM100 は実行コードが相互互換です。
 
 ## A. 教程の説明

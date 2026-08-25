@@ -5,6 +5,9 @@ description: "According to the motherboard interface, there are the following th
 
 # 4K HD HDMI Capture Device Tutorial
 
+> **[Buy in Store](https://www.juxitech.com/products/4k-hd-hdmi-capture-card)**
+
+
 ## Wiring Operation 
 
 According to the motherboard interface, there are the following three wiring operations 

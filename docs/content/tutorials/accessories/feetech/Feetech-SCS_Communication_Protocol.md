@@ -5,6 +5,9 @@ description: "The communication level uses the TTL level method compatible with 
 
 # Steering Gear SCS Communication Protocol
 
+> **[Buy in Store](https://www.juxitech.com/products/feetech-scs0009-serial-bus-servo)**
+
+
 # 1 Summary of Communication Protocol
 
 The communication level uses the TTL level method compatible with high-speed communication and the RS485 method with strong anti-interference ability. Communication still uses asynchronous duplex, and the sending and receiving signals are processed asynchronously. 

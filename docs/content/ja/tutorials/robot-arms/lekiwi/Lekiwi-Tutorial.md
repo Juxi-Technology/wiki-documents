@@ -5,6 +5,9 @@ description: "LeRobot ベースの Lekiwi 移動ロボットのセットアッ�
 
 # Lekiwi 移動ロボット使用チュートリアル
 
+> **[ストアで購入](https://www.juxitech.com/ja/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
+
+
 > [!注意] このチュートリアルは LeRobot 公式ドキュメントに基づいています。ソフトウェアの問題や環境依存の問題が解決できない場合は、[LeRobot プラットフォーム](https://github.com/huggingface/lerobot) または [LeRobot Discord チャンネル](https://discord.gg/8TnwDdjFGU) に報告してください。
 
 ## 主な特徴

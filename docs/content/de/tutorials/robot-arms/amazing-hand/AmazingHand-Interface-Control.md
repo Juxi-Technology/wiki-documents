@@ -5,6 +5,9 @@ description: "[AmazingHandControl.zip]"
 
 # Roboterhand Interface-Steuerung
 
+> **[Im Shop kaufen](https://www.juxitech.com/de/products/amazinghand)**
+
+
 https://github.com/Betatester777/AmazingHandControl
 
 ## Offizielles Beispiel-Repo

@@ -5,6 +5,9 @@ description: "Fusion360 온라인 CAD에서 정확한 부품 위치를 시각화
 
 # Lekiwi 이동 로봇 조립 튜토리얼
 
+> **[스토어에서 구매](https://www.juxitech.com/ko/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
+
+
 [*Fusion360 온라인 CAD*](https://a360.co/4k1P8yO)*에서 정확한 부품 위치를 시각화할 수 있습니다.*
 [URDF 파일](https://gitcode.com/gh_mirrors/le/LeKiwi/tree/main)
 온라인 URDF 미리보기 https://urdf.d-robotics.cc/

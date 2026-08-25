@@ -5,6 +5,9 @@ description: "KVM 스위치: HUB 기능, TTL 직렬, Bluetooth 모듈 탑재"
 
 # KVM 스위치 사용법
 
+> **[스토어에서 구매](https://www.juxitech.com/ko/products/4-in-1-kvm-switch-hub-ttl-serial-bluetooth-docking-station)**
+
+
 KVM 스위치에는 HUB 기능, TTL 직렬, Bluetooth 모듈이 탑재되어 있습니다.
 
 ## 각 모듈 기능

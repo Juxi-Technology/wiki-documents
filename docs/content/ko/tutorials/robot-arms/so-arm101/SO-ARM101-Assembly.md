@@ -5,6 +5,9 @@ description: "Pro 버전: 리더 암은 5V6A, 팔로워 암은 12V5A 전원 어�
 
 # Lerobot 로봇 암 조립 가이드
 
+> **[스토어에서 구매](https://www.juxitech.com/ko/products/so-arm101-developers-kit)**
+
+
 **Pro 버전: 리더(검정) 암은 5V6A 전원 어댑터, 팔로워(흰색) 암은 12V5A 전원 어댑터 사용**
 
 서보 ID 설정·각도 캘리브레이션·조립은 사전에 완료하세요. [공식 조립 가이드](https://huggingface.co/docs/lerobot/so101) 참조.

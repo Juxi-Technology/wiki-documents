@@ -5,6 +5,9 @@ description: "El nivel de comunicación utiliza TTL compatible con alta velocida
 
 # Protocolo de comunicación SCS de servos
 
+> **[Comprar en la tienda](https://www.juxitech.com/es/products/feetech-scs0009-serial-bus-servo)**
+
+
 # 1 Resumen del protocolo de comunicación
 
   El nivel de comunicación utiliza TTL compatible con alta velocidad y RS485 con fuerte inmunidad a interferencias; la comunicación sigue siendo dúplex asíncrona, la transmisión y recepción se procesan de forma asíncrona.

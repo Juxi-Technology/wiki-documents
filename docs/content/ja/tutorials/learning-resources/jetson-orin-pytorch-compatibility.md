@@ -5,6 +5,9 @@ description: Jetson Orin で PyTorch の GPU が使えない場合の対処法
 
 # Jetson Orin での PyTorch 非互換問題
 
+> **[ストアで購入](https://www.juxitech.com/ja/products/nvidia-jetson-orin-nx-super-developer-kit)**
+
+
 ## 問題 1: GPU が使えない
 
 Jetson 版 PyTorch をインストール:

@@ -5,6 +5,9 @@ description: "Tutorial della serie modulo di riconoscimento vocale KWS – comun
 
 # Modulo di riconoscimento vocale KWS
 
+> **[Acquista nel negozio](https://www.juxitech.com/it/products/ai-voice-recognition-module)**
+
+
 Benvenuto al modulo di riconoscimento vocale KWS! Qui trovi l'indice di tutti i tutorial correlati.
 
 ## Elenco tutorial

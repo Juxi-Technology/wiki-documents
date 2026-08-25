@@ -5,6 +5,9 @@ description: "USB 자동 포커스 카메라 조정은 USB 카메라 튜토리�
 
 # 오버헤드 카메라 마운트 설치 가이드
 
+> **[스토어에서 구매](https://www.juxitech.com/ko/products/overhead-camera-mount-for-so-arm100-so-arm101-realsense-compatible)**
+
+
 - USB 자동 포커스 카메라 조정: [USB 자동 포커스 카메라 튜토리얼](https://juxitech.feishu.cn/docx/JXstdNbN6oiL1WxiqJrc2OJDnrf)
 - D405C 깊이 카메라 키트 구매자는 [RealSense D405C 튜토리얼](https://juxitech.feishu.cn/wiki/OSElwwOmYiVMNTkzo56c40g8nQe) 참조
 - [공식 모델 파일](https://github.com/TheRobotStudio/SO-ARM100/tree/main/Optional/Overhead-Cam-Mount-Webcam)

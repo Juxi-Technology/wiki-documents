@@ -5,6 +5,9 @@ description: "Juxi Technology 2-DOF 카메라 짐벌: 컬러 추적, 얼굴 감�
 
 # 2자유도 카메라 짐벌
 
+> **[스토어에서 구매](https://www.juxitech.com/ko/products/2-dof-servo-pan-tilt-unit)**
+
+
 ## 제품 개요
 
 Juxi Technology의 2-DOF 카메라 짐벌은 오픈소스 2자유도 카메라 안정 플랫폼입니다. Python 제어, 컬러 추적, 얼굴 감지, 자동 목표 추적 지원.

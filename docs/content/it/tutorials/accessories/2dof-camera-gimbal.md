@@ -5,6 +5,9 @@ description: "Gimbal camera Juxi Technology 2-DOF: tracking colore, rilevamento 
 
 # Camera gimbal 2-DOF
 
+> **[Acquista nel negozio](https://www.juxitech.com/it/products/2-dof-servo-pan-tilt-unit)**
+
+
 ## Presentazione
 
 Piattaforma di stabilizzazione camera open source 2-DOF. Controllo Python, tracking colore, rilevamento volto e tracking automatico del target.

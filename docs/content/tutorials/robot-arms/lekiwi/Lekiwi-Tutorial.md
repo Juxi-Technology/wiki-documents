@@ -5,6 +5,9 @@ description: "The black active arm uses a 5V 6A power adapter, while the white p
 
 # Lekiwi Mobile Robot User Guide 
 
+> **[Buy in Store](https://www.juxitech.com/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
+
+
 The black active arm uses a 5V 6A power adapter, while the white passive arm uses a 12V 5A power adapter 
 
 [lerobot-Lekiwi.zip]

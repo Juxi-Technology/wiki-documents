@@ -5,6 +5,9 @@ description: "Utilizzo del modulo fotocamera CSI NVIDIA Jetson Orin"
 
 # Fotocamera CSI Jetson
 
+> **[Acquista nel negozio](https://www.juxitech.com/it/products/79-imx219-csi-camera)**
+
+
 ## Panoramica del prodotto
 
 Il modulo fotocamera CSI JUXI è progettato per il kit sviluppatori NVIDIA Jetson Orin e offre trasmissione video a bassa latenza e grande larghezza di banda tramite CSI (Camera Serial Interface). Adatto a inferenza visione IA, percezione robotica ed edge computing.

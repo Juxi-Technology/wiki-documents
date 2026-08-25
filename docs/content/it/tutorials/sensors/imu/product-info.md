@@ -5,6 +5,9 @@ description: "Sensore di assetto IMU ad alta precisione: processore 72MHz 32 bit
 
 # Presentazione del modulo IMU
 
+> **[Acquista nel negozio](https://www.juxitech.com/it/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
+
+
 Sensore di assetto IMU ad alta precisione con **processore 72MHz 32 bit**, calcolo dell'assetto in tempo reale e compensazione dinamica, fino a **100Hz**. Comunicazione doppia IIC e seriale, compatibile con MCU/host Linux e ROS.
 
 ## Versioni

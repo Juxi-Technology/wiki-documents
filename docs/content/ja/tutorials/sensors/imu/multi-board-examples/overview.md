@@ -5,6 +5,9 @@ description: "1. CH341ドライバのインストール（管理者として）"
 
 # マルチホスト通信ケース
 
+> **[ストアで購入](https://www.juxitech.com/ja/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
+
+
 ## 注意事項
 
 1. CH341ドライバのインストール（管理者として）

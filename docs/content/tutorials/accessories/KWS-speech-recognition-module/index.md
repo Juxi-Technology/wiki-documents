@@ -5,6 +5,9 @@ description: "KWS speech recognition module series — serial, firmware, ROS2"
 
 # KWS Speech Recognition Module
 
+> **[Buy in Store](https://www.juxitech.com/products/ai-voice-recognition-module)**
+
+
 Welcome to the KWS Speech Recognition Module! Here is the directory of all related tutorials.
 
 ## Tutorial List

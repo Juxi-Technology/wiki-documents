@@ -5,6 +5,9 @@ description: "LeRobot 기반 Lekiwi 이동 로봇의 설정, 모터 구성, 원�
 
 # Lekiwi 이동 로봇 사용 튜토리얼
 
+> **[스토어에서 구매](https://www.juxitech.com/ko/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
+
+
 > [!참고] 이 튜토리얼은 LeRobot 공식 문서를 기반으로 합니다. 해결할 수 없는 소프트웨어 문제나 환경 의존 문제는 [LeRobot 플랫폼](https://github.com/huggingface/lerobot) 또는 [LeRobot Discord 채널](https://discord.gg/8TnwDdjFGU)에 보고해 주세요.
 
 ## 주요 특징

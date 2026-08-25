@@ -6,6 +6,9 @@ keywords: [imu, キャリブレーション, 磁力計]
 
 # IMU キャリブレーションガイド
 
+> **[ストアで購入](https://www.juxitech.com/ja/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
+
+
 > 初回使用前にキャリブレーションを推奨。公式 `IMU_Library` の `imu_calibration_tool.py` を使用します。
 
 ## キャリブレーションの種類

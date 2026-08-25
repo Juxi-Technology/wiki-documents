@@ -5,6 +5,9 @@ description: "The Pro version's active arm uses a 5V6A power adapter, while the 
 
 # Lerobot SO-ARM101 Assembly Tutorial
 
+> **[Buy in Store](https://www.juxitech.com/products/so-arm101-developers-kit)**
+
+
 ![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
 
 **The Pro version's active arm uses a 5V6A power adapter, while the passive arm uses a 12V5A power adapter **

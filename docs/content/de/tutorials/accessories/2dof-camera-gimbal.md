@@ -5,6 +5,9 @@ description: "Juxi Technology 2-DOF Kamera-Gimbal: Farbverfolgung, Gesichtserken
 
 # 2-DOF-Kamera-Gimbal
 
+> **[Im Shop kaufen](https://www.juxitech.com/de/products/2-dof-servo-pan-tilt-unit)**
+
+
 ## Produktübersicht
 
 Open-Source-2-DOF-Kamera-Stabilisierungsplattform. Python-Steuerung, Farbverfolgung, Gesichtserkennung und automatische Zielverfolgung.

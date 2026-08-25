@@ -5,6 +5,9 @@ description: "Utilisation du module caméra CSI NVIDIA Jetson Orin"
 
 # Caméra CSI Jetson
 
+> **[Acheter en boutique](https://www.juxitech.com/fr/products/79-imx219-csi-camera)**
+
+
 ## Présentation du produit
 
 Le module caméra CSI JUXI est conçu pour le kit développeur NVIDIA Jetson Orin et offre une transmission vidéo à faible latence et haut débit via CSI (Camera Serial Interface). Adapté à l'inférence vision IA, à la perception robotique et à l'informatique de périphérie.

@@ -5,6 +5,9 @@ description: "The servo uses the FT-SCS Custom Communication Protocol, with the 
 
 # Magnetic Encoded STS Servo - Memory Table Parsing
 
+> **[Buy in Store](https://www.juxitech.com/products/feetech-scs0009-serial-bus-servo)**
+
+
 # 1 Servo Communication Protocol
 
 The servo uses the FT-SCS Custom Communication Protocol, with the default serial port configuration at the factory. The default baud rate for the STS servo is 1M, using TTL single-bus communication, with 8 data bits, no parity, and 1 stop bit. The configurable range of the baud rate is 38400~1Mbps, and the default communication address (station number) is 1. [FT-SCS Custom Communication Protocol](https://juxitech.feishu.cn/wiki/MTPLw8xCniTidGkm3amc27FXnKg) (Servo SCS Communication Protocol) 

@@ -5,6 +5,9 @@ description: "KVMスイッチ:HUB機能、TTLシリアル、Bluetoothモジュ�
 
 # KVMスイッチ使用方法
 
+> **[ストアで購入](https://www.juxitech.com/ja/products/4-in-1-kvm-switch-hub-ttl-serial-bluetooth-docking-station)**
+
+
 KVMスイッチには HUB 機能、TTL シリアル、Bluetooth モジュールが搭載されています。
 
 ## 各モジュール機能

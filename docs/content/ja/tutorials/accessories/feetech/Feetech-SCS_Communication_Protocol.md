@@ -5,6 +5,9 @@ description: "通信レベルは高速通信に対応するTTLレベル方式と
 
 # サーボSCS通信プロトコル
 
+> **[ストアで購入](https://www.juxitech.com/ja/products/feetech-scs0009-serial-bus-servo)**
+
+
 # 1 通信プロトコル概要
 
   通信レベルは高速通信に対応するTTLレベル方式と、耐干渉性の強いRS485方式を採用しています。通信は非同期全二重で、送信と受信信号は非同期処理されます。

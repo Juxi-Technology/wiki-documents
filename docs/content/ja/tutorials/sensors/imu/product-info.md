@@ -5,6 +5,9 @@ description: "高精度IMU姿勢センサー:72MHz 32ビットプロセッサ内
 
 # IMUモジュール紹介
 
+> **[ストアで購入](https://www.juxitech.com/ja/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
+
+
 高精度 IMU 姿勢センサーは **72MHz 32ビットプロセッサ** を内蔵し、リアルタイム姿勢演算と動的補償、最大 **100Hz** のデータ更新に対応。IIC とシリアルの双通信モード、単体マイコン・Linux 主機・ROS システムに対応します。
 
 ## バージョン紹介

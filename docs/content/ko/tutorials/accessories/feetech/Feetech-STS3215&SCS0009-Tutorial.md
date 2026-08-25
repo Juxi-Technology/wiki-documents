@@ -5,6 +5,9 @@ description: "Feetech 상위 프로그램 FD 소프트웨어 https://gitee.com/f
 
 # Feetech 서보 STS3215 &amp; SCS0009 디버깅 튜토리얼
 
+> **[스토어에서 구매](https://www.juxitech.com/ko/products/feetech-scs0009-serial-bus-servo)**
+
+
 [Feetech 상위 프로그램 FD 소프트웨어](https://gitee.com/ftservo)[https://gitee.com/ftservo](https://gitee.com/ftservo)
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTU5ZWIzNjQzODEwMjhlMzRhMDA4ZjIxNGNjMTM1NjZfYzRlYWYyMDAxOTZiYjM0MGQyZTE1OTQyYmNiMTM5YTZfSUQ6NzYyNTg1MDA4MjM4NjU3ODY1N18xNzgwNjYzNDMwOjE3ODA3NDk4MzBfVjM)

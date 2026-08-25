@@ -5,6 +5,9 @@ description: "Systemkonfiguration: Ubuntu 20.04"
 
 # ROS1-Anwendung
 
+> **[Im Shop kaufen](https://www.juxitech.com/de/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
+
+
 **Systemkonfiguration: Ubuntu 20.04**
 
 **ROS1-Version: noetic**

@@ -5,6 +5,9 @@ description: "- Operating System: Ubuntu 22.04"
 
 # ROS2-rviz2 Visualization
 
+> **[Buy in Store](https://www.juxitech.com/products/ai-voice-recognition-module)**
+
+
 ## 1. Environment Preparation
 
 #### System Requirements

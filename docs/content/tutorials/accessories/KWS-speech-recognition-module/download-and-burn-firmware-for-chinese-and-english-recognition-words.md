@@ -5,6 +5,9 @@ description: "The module has been pre-flashed with the voice recognition functio
 
 # Download and Burn Firmware for Chinese and English Recognition Words
 
+> **[Buy in Store](https://www.juxitech.com/products/ai-voice-recognition-module)**
+
+
 > The module has been pre-flashed with the voice recognition function firmware at the factory, and the factory firmware is also provided in the attached materials. If you need to re-create the firmware, you can follow the steps below to make the firmware. 
 > 
 > 

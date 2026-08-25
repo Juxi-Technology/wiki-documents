@@ -5,6 +5,9 @@ description: "Je nach Anschluss der Hauptplatine gibt es drei Verkabelungsmögli
 
 # 4K-HDMI-Capture-Karte – Tutorial
 
+> **[Im Shop kaufen](https://www.juxitech.com/de/products/4k-hd-hdmi-capture-card)**
+
+
 ## Verkabelung
 
 Je nach Anschluss der Hauptplatine gibt es drei Verkabelungsmöglichkeiten

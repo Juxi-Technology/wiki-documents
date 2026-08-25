@@ -5,6 +5,9 @@ description: "먼저 「灵巧手调试.zip」 압축 패키지를 다운로드�
 
 # 로봇핸드(TTL 직렬 서보) 디버깅 튜토리얼
 
+> **[스토어에서 구매](https://www.juxitech.com/ko/products/amazinghand)**
+
+
 먼저 「[灵巧手调试.zip](https://juxitech.feishu.cn/wiki/QjYBwL0A0iJVlNkEpUUclLYGnBc)」 압축 패키지를 다운로드하고, 압축 해제 후 「使用arduio程序调试灵巧手过程(TTL舵机)」 문서로 서보 ID 설정, 캘리브레이션, 중앙 교정, 데모 프로그램 실행을 하거나, [공식 오픈소스 코드](https://github.com/pollen-robotics/AmazingHand/tree/main/ArduinoExample)를 참조하세요.
 
 **완성품을 분해하지 않을 경우**(출고 시 서보 ID 설정·캘리브레이션·중앙 교정 완료) 바로 **[6번 항목 「02 演示程序」 실행](https://juxitech.feishu.cn/wiki/WqxUwGrGHiNi7wkqFkmcCGpXnE?node-id=1758747871229188003&from=from_node_link)** 과 7번 항목 **[손 추적](https://juxitech.feishu.cn/wiki/WqxUwGrGHiNi7wkqFkmcCGpXnE?node-id=1758747871229188027&from=from_node_link)** 으로 이동할 수 있습니다.
