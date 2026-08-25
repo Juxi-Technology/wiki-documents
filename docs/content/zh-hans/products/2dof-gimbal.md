@@ -6,7 +6,7 @@ keywords: [gimbal, 云台, 2dof, 视觉追踪, scs0009]
 
 # 2 自由度舵机云台
 
-> **[淘宝店铺](https://juxitechnology.taobao.com)**
+> **[淘宝购买](https://item.taobao.com/item.htm?id=1061569321161)**
 
 ## 产品概述
 

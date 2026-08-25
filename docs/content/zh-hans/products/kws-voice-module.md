@@ -6,7 +6,7 @@ keywords: [kws, 语音识别, 语音交互, 唤醒词, ai voice]
 
 # KWS 语音交互模块
 
-> **[淘宝店铺](https://juxitechnology.taobao.com)**
+> **[淘宝购买](https://item.taobao.com/item.htm?id=1036785921723)**
 
 ## 产品概述
 

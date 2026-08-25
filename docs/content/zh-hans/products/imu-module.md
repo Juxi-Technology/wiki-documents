@@ -6,7 +6,7 @@ keywords: [imu, 惯导, 姿态传感器, ahrs, ros]
 
 # IMU 高精度惯导模块
 
-> **[淘宝店铺](https://juxitechnology.taobao.com)**
+> **[淘宝购买](https://item.taobao.com/item.htm?id=1018033125500)**
 
 ## 产品概述
 

@@ -6,7 +6,7 @@ keywords: [sound card, 聲卡, usb audio, 語音交互]
 
 # USB 免驅聲卡
 
-> **[淘寶店鋪](https://juxitechnology.taobao.com)**
+> **[淘寶購買](https://item.taobao.com/item.htm?id=909788853795)**
 
 ## 產品概述
 

@@ -6,7 +6,7 @@ keywords: [gps, beidou, gnss, 北斗, 定位模組, ros]
 
 # GPS & 北斗 GNSS 定位模組
 
-> **[淘寶店鋪](https://juxitechnology.taobao.com)**
+> **[淘寶購買](https://item.taobao.com/item.htm?id=1057400460049)**
 
 ## 產品概述
 

@@ -6,7 +6,7 @@ keywords: [lekiwi, 移動機器人, 教學機械臂, 教育機器人]
 
 # Lekiwi 具身智能移動機器人
 
-> **[淘寶店鋪](https://juxitechnology.taobao.com)**
+> **[淘寶購買](https://item.taobao.com/item.htm?id=1049963638910)**
 
 ## 產品概述
 

@@ -6,7 +6,7 @@ keywords: [gripper, 夹爪, tpu, 柔性, so-arm101, 抓取]
 
 # SO-ARM101 TPU 柔性夹爪
 
-> **[淘宝店铺](https://juxitechnology.taobao.com)**
+> **[淘宝购买](https://item.taobao.com/item.htm?id=1016135072975)**
 
 ## 产品概述
 

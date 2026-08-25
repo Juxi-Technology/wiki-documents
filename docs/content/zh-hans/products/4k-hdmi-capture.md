@@ -6,7 +6,7 @@ keywords: [hdmi capture, 采集卡, 4k, 录屏]
 
 # 4K HDMI 采集卡
 
-> **[淘宝店铺](https://juxitechnology.taobao.com)**
+> **[淘宝购买](https://item.taobao.com/item.htm?id=997252743314)**
 
 ## 产品概述
 

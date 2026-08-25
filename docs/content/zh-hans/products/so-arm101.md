@@ -6,7 +6,7 @@ keywords: [so-arm101, 机械臂, leRobot, 遥操作, 双臂机器人]
 
 # SO-ARM101 开发套件
 
-> **[淘宝店铺](https://juxitechnology.taobao.com)**
+> **[淘宝购买](https://item.taobao.com/item.htm?id=1002551208989)**
 
 ## 产品概述
 

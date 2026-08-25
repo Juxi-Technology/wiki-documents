@@ -6,7 +6,7 @@ keywords: [kvm, 切换器, docking station, ttl, 蓝牙]
 
 # 4 合 1 KVM 切换器
 
-> **[淘宝店铺](https://juxitechnology.taobao.com)**
+> **[淘宝购买](https://item.taobao.com/item.htm?id=1032258048803)**
 
 ## 产品概述
 

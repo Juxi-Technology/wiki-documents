@@ -6,7 +6,7 @@ keywords: [gps, beidou, gnss, 北斗, 定位模块, ros]
 
 # GPS & 北斗 GNSS 定位模块
 
-> **[淘宝店铺](https://juxitechnology.taobao.com)**
+> **[淘宝购买](https://item.taobao.com/item.htm?id=1057400460049)**
 
 ## 产品概述
 

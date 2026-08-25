@@ -6,7 +6,7 @@ keywords: [camera mount, 頂置支架, overhead, realsense, 視覺採集]
 
 # SO-ARM101 頂置相機支架
 
-> **[淘寶店鋪](https://juxitechnology.taobao.com)**
+> **[淘寶購買](https://item.taobao.com/item.htm?id=987942774005)**
 
 ## 產品概述
 

@@ -6,7 +6,7 @@ keywords: [gimbal, 雲台, 2dof, 視覺追蹤, scs0009]
 
 # 2 自由度舵機雲台
 
-> **[淘寶店鋪](https://juxitechnology.taobao.com)**
+> **[淘寶購買](https://item.taobao.com/item.htm?id=1061569321161)**
 
 ## 產品概述
 

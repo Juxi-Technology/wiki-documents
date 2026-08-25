@@ -6,7 +6,7 @@ keywords: [servo driver, 舵機驅動板, 總線舵機, leRobot, so-arm101]
 
 # JUXI 總線舵機驅動板
 
-> **[淘寶店鋪](https://juxitechnology.taobao.com)**
+> **[淘寶購買](https://item.taobao.com/item.htm?id=910782102628)**
 
 ## 產品概述
 

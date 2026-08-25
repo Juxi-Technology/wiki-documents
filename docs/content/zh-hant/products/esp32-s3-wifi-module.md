@@ -6,7 +6,7 @@ keywords: [esp32, wifi, 圖傳, 攝像頭, ai vision]
 
 # ESP32-S3 WiFi 視頻模組
 
-> **[淘寶店鋪](https://juxitechnology.taobao.com)**
+> **[淘寶購買](https://item.taobao.com/item.htm?id=1060833276782)**
 
 ## 產品概述
 

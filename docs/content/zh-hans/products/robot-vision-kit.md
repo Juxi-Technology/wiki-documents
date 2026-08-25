@@ -6,7 +6,7 @@ keywords: [camera mount, 视觉套件, 相机支架, so-arm101, 机械臂视觉]
 
 # SO-ARM101 机械臂视觉套件
 
-> **[淘宝店铺](https://juxitechnology.taobao.com)**
+> **[淘宝购买](https://item.taobao.com/item.htm?id=912105917442)**
 
 ## 产品概述
 

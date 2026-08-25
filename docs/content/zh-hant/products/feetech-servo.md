@@ -6,7 +6,7 @@ keywords: [feetech, 舵機, scs, sts, 串行總線]
 
 # Feetech 總線舵機(SCS0009 / STS3215)
 
-> **[淘寶店鋪](https://juxitechnology.taobao.com)**
+> **[淘寶購買](https://item.taobao.com/item.htm?id=1031232356224)**
 
 ## 產品概述
 
