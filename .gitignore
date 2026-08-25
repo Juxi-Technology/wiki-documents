@@ -7,3 +7,8 @@ docs/.vitepress/dist/
 
 # 磁盘残留(root 所有,待 sudo 清理)
 docs/test.md
+docs/tutorials/so-arm101-tutorial.md
+docs/tutorials/so-arm101/
+docs/en/tutorials/so-arm101-tutorial.md
+docs/en/tutorials/robot-arms/so-arm101-tutorial.md
+docs/zh-HK/tutorials/so-arm101-tutorial.md
