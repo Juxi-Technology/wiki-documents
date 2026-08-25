@@ -5,6 +5,9 @@ description: "Pro版 主动臂使用5V6A电源适配器，从动臂使用12V5A�
 
 # Lerobot机械臂组装教程
 
+> **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
+
+
 ![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
 
 **Pro版 主动臂使用5V6A电源适配器，从动臂使用12V5A电源适配器**

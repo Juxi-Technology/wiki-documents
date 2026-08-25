@@ -5,6 +5,9 @@ description: "KWS 语音识别模块系列教程——串口通信、固件烧�
 
 # KWS语音识别模块
 
+> **[ 淘宝店铺 ](https://juxitechnology.taobao.com)**
+
+
 欢迎使用KWS语音识别模块！这里是所有相关教程的目录。
 
 ## 教程列表

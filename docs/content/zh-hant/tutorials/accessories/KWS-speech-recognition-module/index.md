@@ -5,6 +5,9 @@ description: "KWS 語音識別模組系列教程——串口通信、固件燒�
 
 # KWS語音識別模組
 
+> **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
+
+
 歡迎使用KWS語音識別模組！這裡是所有相關教程的目錄。
 
 ## 教程列表

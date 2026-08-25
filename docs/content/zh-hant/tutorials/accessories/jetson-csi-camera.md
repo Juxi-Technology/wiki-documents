@@ -5,6 +5,9 @@ description: "鉅犀科技 NVIDIA Jetson Orin CSI 攝像頭模組使用教程"
 
 # Jetson CSI 攝像頭
 
+> **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
+
+
 ## 產品概述
 
 鉅犀科技 CSI 攝像頭模組專為 NVIDIA Jetson Orin 開發者套件設計，通過 CSI (Camera Serial Interface) 接口提供低延遲、高帶寬的視頻傳輸。適用於 AI 視覺推理、機器人感知和邊緣計算場景。

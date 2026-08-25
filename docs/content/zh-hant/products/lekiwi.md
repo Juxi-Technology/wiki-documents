@@ -6,7 +6,7 @@ keywords: [lekiwi, 移動機器人, 教學機械臂, 教育機器人]
 
 # Lekiwi 具身智能移動機器人
 
-> **[在商店購買](https://www.juxitech.com/zh-hant/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
+> **[淘寶店鋪](https://juxitechnology.taobao.com)lekiwi-embodied-intelligence-mobile-robotic-car)**
 
 ## 產品概述
 

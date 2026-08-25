@@ -5,6 +5,9 @@ description: "鉅犀科技 USB 免驅聲卡教程，涵蓋可視化測試軟件�
 
 # USB免驅聲卡教程
 
+> **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
+
+
 # 可視化測試軟件（Windows）
 
 [audio_tools.7z](https://juxitech.feishu.cn/wiki/Uz8wwCB4tiTWwMk0pFMctXxTn2b)

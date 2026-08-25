@@ -6,7 +6,7 @@ keywords: [kws, 語音識別, 語音交互, 喚醒詞, ai voice]
 
 # KWS 語音交互模組
 
-> **[在商店購買](https://www.juxitech.com/zh-hant/products/ai-voice-recognition-module)**
+> **[淘寶店鋪](https://juxitechnology.taobao.com)ai-voice-recognition-module)**
 
 ## 產品概述
 

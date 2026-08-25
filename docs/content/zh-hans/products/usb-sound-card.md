@@ -6,7 +6,7 @@ keywords: [sound card, 声卡, usb audio, 语音交互]
 
 # USB 免驱声卡
 
-> **[在商店购买](https://www.juxitech.com/zh-hans/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction)**
+> **[淘宝店铺](https://juxitechnology.taobao.com)usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction)**
 
 ## 产品概述
 

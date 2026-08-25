@@ -5,6 +5,9 @@ description: "[AmazingHandControl.zip]"
 
 # 右灵巧手-界面控制
 
+> **[ 淘宝店铺 ](https://juxitechnology.taobao.com)**
+
+
 https://github.com/Betatester777/AmazingHandControl
 
 [AmazingHandControl.zip]

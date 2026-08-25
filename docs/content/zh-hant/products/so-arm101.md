@@ -6,7 +6,7 @@ keywords: [so-arm101, 機械臂, leRobot, 遙操作, 雙臂機器人]
 
 # SO-ARM101 開發套件
 
-> **[在商店購買](https://www.juxitech.com/zh-hant/products/so-arm101-developers-kit)**
+> **[淘寶店鋪](https://juxitechnology.taobao.com)so-arm101-developers-kit)**
 
 ## 產品概述
 

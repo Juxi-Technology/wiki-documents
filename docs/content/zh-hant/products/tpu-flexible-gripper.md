@@ -6,7 +6,7 @@ keywords: [gripper, 夾爪, tpu, 柔性, so-arm101, 抓取]
 
 # SO-ARM101 TPU 柔性夾爪
 
-> **[在商店購買](https://www.juxitech.com/zh-hant/products/so-arm101-tpu-flexible-gripper)**
+> **[淘寶店鋪](https://juxitechnology.taobao.com)so-arm101-tpu-flexible-gripper)**
 
 ## 產品概述
 

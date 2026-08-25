@@ -6,6 +6,9 @@ keywords: [imu, calibration, 校準, 磁力計, 溫度校準]
 
 # IMU 校準指南
 
+> **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
+
+
 > 在正式使用 IMU 模組前,建議先完成校準,以獲得最佳姿態解算精度。本文檔基於官方 `IMU_Library` 的 `imu_calibration_tool.py`。
 
 ## 校準類型

@@ -5,6 +5,9 @@ description: "黑色主动臂使用5V6A电源适配器，白色从动臂使用12
 
 # Lekiwi移动机器人使用教程
 
+> **[ 淘宝店铺 ](https://juxitechnology.taobao.com)**
+
+
 黑色主动臂使用5V6A电源适配器，白色从动臂使用12V5A电源适配器
 
 [lerobot-Lekiwi.zip]

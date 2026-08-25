@@ -6,7 +6,7 @@ keywords: [esp32, wifi, 圖傳, 攝像頭, ai vision]
 
 # ESP32-S3 WiFi 視頻模組
 
-> **[在商店購買](https://www.juxitech.com/zh-hant/products/esp32-s3-wifi-video-module)**
+> **[淘寶店鋪](https://juxitechnology.taobao.com)esp32-s3-wifi-video-module)**
 
 ## 產品概述
 

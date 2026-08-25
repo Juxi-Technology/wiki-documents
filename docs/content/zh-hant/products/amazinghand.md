@@ -6,7 +6,7 @@ keywords: [amazinghand, 靈巧手, dexterous hand, 具身智能]
 
 # AmazingHand 開源靈巧手
 
-> **[在商店購買](https://www.juxitech.com/zh-hant/products/amazinghand)**
+> **[淘寶店鋪](https://juxitechnology.taobao.com)amazinghand)**
 
 ## 產品概述
 

@@ -5,6 +5,9 @@ description: "根據主板的接口分以下三種接線操作"
 
 # 4K高清HDMI採集器教程
 
+> **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
+
+
 ## 接線操作
 
 根據主板的接口分以下三種接線操作

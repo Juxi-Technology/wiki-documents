@@ -5,6 +5,9 @@ description: "钜犀科技 USB 免驱声卡教程，涵盖可视化测试软件�
 
 # USB免驱声卡教程
 
+> **[ 淘宝店铺 ](https://juxitechnology.taobao.com)**
+
+
 # 可视化测试软件（Windows）
 
 [audio_tools.7z](https://juxitech.feishu.cn/wiki/Wuc3wAppNi5elfkSI6VccrNDnfE)

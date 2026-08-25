@@ -5,6 +5,9 @@ description: "钜犀科技 NVIDIA Jetson Orin CSI 摄像头模块使用教程"
 
 # Jetson CSI 摄像头
 
+> **[ 淘宝店铺 ](https://juxitechnology.taobao.com)**
+
+
 ## 产品概述
 
 钜犀科技 CSI 摄像头模块专为 NVIDIA Jetson Orin 开发者套件设计，通过 CSI (Camera Serial Interface) 接口提供低延迟、高带宽的视频传输。适用于 AI 视觉推理、机器人感知和边缘计算场景。

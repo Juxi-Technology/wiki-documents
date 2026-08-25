@@ -5,6 +5,9 @@ description: "黑色主動臂使用5V 6A電源適配器，白色被動臂使用1
 
 # Lekiwi移動機器人用戶指南
 
+> **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
+
+
 黑色主動臂使用5V 6A電源適配器，白色被動臂使用12V 5A電源適配器
 
 [lerobot-Lekiwi.zip]

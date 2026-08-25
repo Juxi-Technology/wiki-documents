@@ -5,6 +5,9 @@ description: "安裝 jetson 版本的 pytorch"
 
 # Jetson Orin 上 PyTorch 不相容問題
 
+> **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
+
+
 可能出現的問題一：
 
 `GPU無法使用`

@@ -5,6 +5,9 @@ description: "建議下載本使用教程下的代碼壓縮包進行Demo示例�
 
 # 靈巧手官方示例運行教程
 
+> **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
+
+
 ## 1.代碼下載
 
 建議下載本使用教程下的代碼壓縮包進行Demo示例演示，或克隆 官方開源代碼倉庫 https://github.com/pollen-robotics/AmazingHand.git ，官方開源代碼或有錯漏請務必注意。

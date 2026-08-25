@@ -5,6 +5,9 @@ description: "飛特上位機FD軟件 https://gitee.com/ftservo"
 
 # 飛特舵機STS3215&amp;SCS0009調試教程
 
+> **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
+
+
 [飛特上位機FD軟件 ](https://gitee.com/ftservo)[https://gitee.com/ftservo](https://gitee.com/ftservo)
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjBhNDI2MDNhMTZlOTQ0OTUyZjQwOWJjZTY0ZTdiN2VfOWQzNzcxM2I2MGFiYzE5MjBjYjdlMjBmNWQ4ZTM4MTBfSUQ6NzYzODk1ODc4NDYxODE3MTM2Nl8xNzgwNjYyNDM4OjE3ODA3NDg4MzhfVjM)

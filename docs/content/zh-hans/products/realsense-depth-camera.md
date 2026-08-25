@@ -6,7 +6,7 @@ keywords: [realsense, depth camera, 深度相机, 3d vision, 深度感知, 机�
 
 # 3D RealSense 深度相机
 
-> **[在商店购买](https://www.juxitech.com/zh-hans/products/3d-realsense-depth-camera)**
+> **[淘宝店铺](https://juxitechnology.taobao.com)3d-realsense-depth-camera)**
 
 ## 产品概述
 

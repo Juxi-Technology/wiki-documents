@@ -5,6 +5,9 @@ description: "KVM切换器包含HUB功能、TTL串口、蓝牙模块"
 
 # KVM切换器使用教程
 
+> **[ 淘宝店铺 ](https://juxitechnology.taobao.com)**
+
+
 KVM切换器包含HUB功能、TTL串口、蓝牙模块
 
 ![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ODcwMWQ3MjgyYzlkOGU3MWYxMGM5YzI3NTBlY2YyYmNfMGJjMDFhYWJlY2VkZTU5MzBmOTRhNTg0YzQ0ZTFiZDJfSUQ6NzYxNjY2MjUyNDQ5NDcxMTc2NF8xNzgwMDUxNjY4OjE3ODAxMzgwNjhfVjM)
