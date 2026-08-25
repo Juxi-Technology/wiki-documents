@@ -12,3 +12,22 @@ docs/tutorials/so-arm101/
 docs/en/tutorials/so-arm101-tutorial.md
 docs/en/tutorials/robot-arms/so-arm101-tutorial.md
 docs/zh-HK/tutorials/so-arm101-tutorial.md
+
+# 旧内容树(docs/ 根)已被 srcDir: 'content' 取代,索引已迁至 docs/content/
+docs/en/
+docs/zh-HK/
+docs/ja/
+docs/ko/
+docs/de/
+docs/fr/
+docs/es/
+docs/it/
+docs/tutorials/
+docs/products/
+docs/topics/
+docs/tech/
+docs/community/
+docs/cases/
+docs/about/
+docs/downloads/
+docs/index.md
