@@ -1,0 +1,40 @@
+---
+title: Accessori robotici
+description: "Home dei tutorial sugli accessori di Juxi Technology — KWS vocale, servo Feetech, fotocamere, schede audio"
+---
+
+# Accessori robotici
+
+Benvenuti nei tutorial sugli accessori! Guide d'uso per accessori e periferiche robotiche.
+
+---
+
+## Elenco prodotti
+
+### Modulo di riconoscimento vocale KWS
+
+Scheda audio con wake AI — wake vocale offline, parole di attivazione personalizzabili, basso consumo.
+
+- [Home del modulo KWS](./KWS-speech-recognition-module/index.md)
+- [Comunicazione seriale Jetson Nano](./KWS-speech-recognition-module/Jetson-Nano-serial-communication.md)
+- [Comunicazione seriale Jetson](./KWS-speech-recognition-module/Jetson-serial-communication.md)
+- [Comunicazione seriale PC](./KWS-speech-recognition-module/PC-serial-communication.md)
+- [Visualizzazione ROS2 RViz2](./KWS-speech-recognition-module/ROS2-rviz2-visualization.md)
+- [Flashing firmware cinese/inglese](./KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words.md)
+- [Comunicazione seriale Raspberry Pi](./KWS-speech-recognition-module/raspberry-pi-serial-communication.md)
+
+### Altri accessori
+
+- [Tutorial schermo OLED 0.91"](./0.91-oled-screen-tutorial.md)
+- [Tutorial acquisizione HDMI 4K](./4k-hdmi-capture-tutorial.md)
+- [Tutorial switch KVM](./kvm-switch-tutorial.md)
+- [Tutorial scheda audio USB](./usb-audio-card-tutorial.md)
+
+---
+
+## Supporto
+
+Per domande, contattaci:
+
+- 📧 E-mail: support@juxitech.com
+- 💬 GitHub Issues: [Feedback](https://github.com/Juxi-Technology/wiki-documents/issues)

@@ -1,0 +1,44 @@
+---
+title: Serie bracci robotici
+description: "Home dei tutorial dei bracci robotici di Juxi Technology — SO-ARM101, AmazingHand, Lekiwi"
+---
+
+# Serie bracci robotici
+
+Benvenuti nei tutorial della serie bracci robotici! Guide complete per bracci robotici open source e mani dexterous.
+
+---
+
+## Elenco prodotti
+
+### SO-ARM101
+
+Braccio robotico da scrivania open source a 6 assi, compatibile con framework IA come LeRobot.
+
+- [Tutorial SO-ARM101](./so-arm101/SO-ARM101-Tutorial.md)
+- [Montaggio SO-ARM101](./so-arm101/SO-ARM101-Assembly.md)
+- [Compatibilità PyTorch Jetson Orin SO-ARM101](./so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility.md)
+
+### AmazingHand
+
+Mano dexterous open source con manipolazione multi-dito ad alta precisione.
+
+- [Controllo interfaccia AmazingHand](./amazing-hand/AmazingHand-Interface-Control.md)
+- [Esempio ufficiale AmazingHand](./amazing-hand/AmazingHand-Official-Example.md)
+- [Debug TTL AmazingHand](./amazing-hand/AmazingHand-TTL-Debugging.md)
+
+### Lekiwi
+
+Robot mobile completamente open source, compatibile con LeRobot imitation learning e braccio SO101.
+
+- [Tutorial Lekiwi](./lekiwi/Lekiwi-Tutorial.md)
+- [Montaggio Lekiwi](./lekiwi/Lekiwi-Assembly.md)
+
+---
+
+## Supporto
+
+Per domande, contattaci:
+
+- 📧 E-mail: support@juxitech.com
+- 💬 GitHub Issues: [Feedback](https://github.com/Juxi-Technology/wiki-documents/issues)

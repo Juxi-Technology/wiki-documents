@@ -1,0 +1,120 @@
+---
+title: Tutorial sensore di assetto IMU ad alta precisione
+description: "1. Installare le librerie Python necessarie"
+# ---
+
+Tutorial sensore di assetto IMU ad alta precisione
+
+### Scarica l'archivio [IMU_ROS1.zip](https://juxitech.feishu.cn/wiki/BcWGwW2yDiXex9k6qjTcleTvnPb) o [IMU_ROS2.zip](https://juxitech.feishu.cn/wiki/ZL8XwrPriifnASk41AhcoPj1nnb), decomprimilo e vai in ~/IMU_Library
+
+1. **Installare le librerie Python necessarie**
+
+```PowerShell
+pip install pyserial
+pip install smbus2
+```
+
+2. **Installare la libreria IMU_Library**
+
+```PowerShell
+# Installare le librerie Python necessarie
+pip install -e .
+
+# Installare la libreria e le sue dipendenze
+python setup.py install
+```
+
+3. **Impostare la mappatura delle porte**
+
+```PowerShell
+# Impostare la mappatura delle porte per evitare cambiamenti dopo la disconnessione
+sudo gedit /etc/udev/rules.d/99-serial-imu.rules
+
+# Se gedit non è disponibile, installarlo prima
+sudo apt install gedit
+
+# Compilare la mappatura
+KERNEL=="ttyUSB*", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", MODE:="0777", SYMLINK+="imu-serial"
+
+# Spiegazione dei parametri:
+`--mode`: Modalità di comunicazione: `serial` (seriale) o `i2c`
+`--port`: Nome della porta seriale (es. `/dev/ttyUSB0`) o numero di porta I2C (es. `7`)
+`--rate`: Frequenza di stampa (Hz), 10Hz predefinito
+`--debug`: Attivare la modalità debug per i dettagli
+
+# Salvare ed uscire, eseguire i comandi per attivare le regole
+sudo udevadm trigger
+sudo service udev reload
+sudo service udev restart
+
+# Verificare
+ll /dev/imu-serial
+
+# Esempio di output:
+lrwxrwxrwx 1 root root 7 1月 22 10:00 /dev/imu-serial -> ttyUSB0
+```
+
+### Comunicazione seriale
+
+1. **Entrare in ~/IMU_Library ed eseguire IMU_Serial_Library.py**
+
+```PowerShell
+cd ~/imu_ros1/src/IMU_ROS1/IMU_Library/IMU_Library
+# Eseguire il file di output dati seriali IMU
+cd ~/imu_ros2/src/IMU_ROS2/IMU_Library
+
+# oppure
+python3 IMU_Serial_Library.py
+```
+
+### Comunicazione I2C
+
+1. **Entrare in ~/IMU_Library ed eseguire IMU_I2C_Library.py**
+
+```PowerShell
+cd ~/IMU_Library/IMU_Library
+
+# Eseguire il file di output dati I2C IMU
+python3 IMU_I2C_Library.py
+```
+
+### Calibrazione IMU
+
+1. **Entrare in ~/IMU_Library ed eseguire imu_calibration_tool.py**
+
+```PowerShell
+cd ~/IMU_Library/IMU_Library
+
+# Eseguire il codice di calibrazione IMU -- Comunicazione seriale
+# Eseguire tutte le calibrazioni (globale, magnetometro, temperatura)
+python3 imu_calibration_tool.py --mode serial --port /dev/imu-serial
+
+# Solo globale
+python3 imu_calibration_tool.py --mode serial --port /dev/imu-serial --calibrate imu
+
+# Solo magnetometro
+python3 imu_calibration_tool.py --mode serial --port /dev/imu-serial --calibrate mag
+
+# Solo temperatura
+python3 imu_calibration_tool.py --mode serial --port /dev/imu-serial --calibrate temp
+
+# Calibrazione I2C
+# Eseguire il codice di calibrazione IMU -- I2C
+python3 imu_calibration_tool.py --mode i2c --port 1
+
+# Solo globale
+python3 imu_calibration_tool.py --mode i2c --port 1 --calibrate imu
+
+# Solo magnetometro
+python3 imu_calibration_tool.py --mode i2c --port 1 --calibrate mag
+
+# Solo temperatura
+python3 imu_calibration_tool.py --mode i2c --port 1 --calibrate temp
+```
+
+
+---
+
+## Esempio del repository ufficiale
+
+Juxi Technology fornisce il codice open source completo per il modulo IMU: [GitHub](https://github.com/Juxi-Technology/ICM42670P-High-Precision-IMU-Module)
