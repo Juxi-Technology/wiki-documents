@@ -1,9 +1,9 @@
 ---
 title: 고정밀 IMU 자세 센서 사용 튜토리얼
 description: "1. 코드 실행에 필요한 python 라이브러리 설치"
-# ---
+---
 
-고정밀 IMU 자세 센서 사용 튜토리얼
+# 고정밀 IMU 자세 센서 사용 튜토리얼
 
 ### 압축 패키지 [IMU_ROS1.zip](https://juxitech.feishu.cn/wiki/BcWGwW2yDiXex9k6qjTcleTvnPb) 또는 [IMU_ROS2.zip](https://juxitech.feishu.cn/wiki/ZL8XwrPriifnASk41AhcoPj1nnb)를 다운로드하고 압축 해제 후 ~/IMU_Library로 이동하세요
 

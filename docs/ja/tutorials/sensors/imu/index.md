@@ -1,9 +1,9 @@
 ---
 title: 高精度IMU姿勢センサー 使用チュートリアル
 description: "1. コード実行に必要なpythonライブラリをインストール"
-# ---
+---
 
-高精度IMU姿勢センサー 使用チュートリアル
+# 高精度IMU姿勢センサー 使用チュートリアル
 
 ### 圧縮パッケージ [IMU_ROS1.zip](https://juxitech.feishu.cn/wiki/BcWGwW2yDiXex9k6qjTcleTvnPb) または [IMU_ROS2.zip](https://juxitech.feishu.cn/wiki/ZL8XwrPriifnASk41AhcoPj1nnb) をダウンロードし、解凍後に ~/IMU_Library に移動してください
 

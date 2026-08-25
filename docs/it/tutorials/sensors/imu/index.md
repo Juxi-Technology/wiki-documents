@@ -1,9 +1,9 @@
 ---
 title: Tutorial sensore di assetto IMU ad alta precisione
 description: "1. Installare le librerie Python necessarie"
-# ---
+---
 
-Tutorial sensore di assetto IMU ad alta precisione
+# Tutorial sensore di assetto IMU ad alta precisione
 
 ### Scarica l'archivio [IMU_ROS1.zip](https://juxitech.feishu.cn/wiki/BcWGwW2yDiXex9k6qjTcleTvnPb) o [IMU_ROS2.zip](https://juxitech.feishu.cn/wiki/ZL8XwrPriifnASk41AhcoPj1nnb), decomprimilo e vai in ~/IMU_Library
 

@@ -1,9 +1,9 @@
 ---
 title: Tutoriel capteur d'attitude IMU haute précision
 description: "1. Installer les bibliothèques Python requises"
-# ---
+---
 
-Tutoriel capteur d'attitude IMU haute précision
+# Tutoriel capteur d'attitude IMU haute précision
 
 ### Téléchargez l'archive [IMU_ROS1.zip](https://juxitech.feishu.cn/wiki/BcWGwW2yDiXex9k6qjTcleTvnPb) ou [IMU_ROS2.zip](https://juxitech.feishu.cn/wiki/ZL8XwrPriifnASk41AhcoPj1nnb), extrayez-la puis allez dans ~/IMU_Library
 

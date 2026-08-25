@@ -1,9 +1,9 @@
 ---
 title: Tutorial del sensor de actitud IMU de alta precisión
 description: "1. Instalar las librerías Python necesarias"
-# ---
+---
 
-Tutorial del sensor de actitud IMU de alta precisión
+# Tutorial del sensor de actitud IMU de alta precisión
 
 ### Descargue el paquete [IMU_ROS1.zip](https://juxitech.feishu.cn/wiki/BcWGwW2yDiXex9k6qjTcleTvnPb) o [IMU_ROS2.zip](https://juxitech.feishu.cn/wiki/ZL8XwrPriifnASk41AhcoPj1nnb), extráigalo y entre en ~/IMU_Library
 

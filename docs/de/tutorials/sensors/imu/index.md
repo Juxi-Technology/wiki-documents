@@ -1,9 +1,9 @@
 ---
 title: Tutorial hochpräziser IMU-Attitüdensensor
 description: "1. Erforderliche Python-Bibliotheken installieren"
-# ---
+---
 
-Tutorial hochpräziser IMU-Attitüdensensor
+# Tutorial hochpräziser IMU-Attitüdensensor
 
 ### Archiv [IMU_ROS1.zip](https://juxitech.feishu.cn/wiki/BcWGwW2yDiXex9k6qjTcleTvnPb) oder [IMU_ROS2.zip](https://juxitech.feishu.cn/wiki/ZL8XwrPriifnASk41AhcoPj1nnb) herunterladen, entpacken und in ~/IMU_Library wechseln
 
