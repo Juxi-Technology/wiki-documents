@@ -32,3 +32,4 @@ docs/about/
 docs/downloads/
 docs/index.md
 .playwright-mcp/
+accept-*.png
