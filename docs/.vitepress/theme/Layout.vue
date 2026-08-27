@@ -8,18 +8,20 @@ import TopBanner from './components/TopBanner.vue'
 import LanguageSwitcher from './components/LanguageSwitcher.vue'
 import Breadcrumb from './components/Breadcrumb.vue'
 import PrevNext from './components/PrevNext.vue'
+import NotFound404 from './components/NotFound404.vue'
 
 const { Layout } = DefaultTheme
 const { page } = useData()
 
 // 首页与各 section 首页不显示购买入口
 const showPurchase = computed(() => !page.value.relativePath.endsWith('index.md'))
-// 404 页不显示面包屑/购买
-const is404 = computed(() => /404/.test(page.value.relativePath))
+// 404 页不显示面包屑/购买,并整页替换为品牌 404
+const is404 = computed(() => page.value.isNotFound === true || /404/.test(page.value.relativePath))
 </script>
 
 <template>
-  <Layout>
+  <NotFound404 v-if="is404" />
+  <Layout v-else>
     <template #layout-top>
       <TopBanner />
     </template>

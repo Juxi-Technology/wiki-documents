@@ -5,6 +5,6 @@ import './style.css'
 import './auto-lang-redirect'
 
 export default {
-  ...DefaultTheme,
+  extends: DefaultTheme,
   Layout,
 }

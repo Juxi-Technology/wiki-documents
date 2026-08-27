@@ -4,6 +4,10 @@
    ============================================ */
 
 /* ---- 品牌辅助色 ---- */
+/* 顶部公告条占位:nav fixed 下移,避免与 layout-top 重叠 */
+:root {
+  --vp-layout-top-height: 36px;
+}
 :root {
   --vp-c-brand-soft: rgba(16, 185, 129, 0.08);
   --vp-c-brand-mute: rgba(16, 185, 129, 0.16);
