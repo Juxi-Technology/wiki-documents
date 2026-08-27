@@ -26,15 +26,16 @@ const current = computed(() => {
 })
 
 function switchTo(code: string) {
-  const base = site.value.base || '/'
-  // 安全校验:rest 必须是站内相对路径(防 Open Redirect,拒绝 // 开头/非 / 开头的值)
+  const base = (site.value.base || '/').replace(/\/$/, '')
   const rest = route.path.replace(/^\/(zh-hans|zh-hant|ja|ko|de|fr|es|it)(?=\/|$)/, '')
-  if (rest !== '' && (!rest.startsWith('/') || rest.startsWith('//'))) return
-  if (!code) {
-    // 英文 root:保留中文语言前缀之外的路径
-    window.location.href = base.replace(/\/$/, '') + (rest || '/')
-  } else {
-    window.location.href = base.replace(/\/$/, '') + code + (rest || '/')
+  // 强校验:用 URL 构造并断言同源(防 Open Redirect/协议相对跳转)
+  try {
+    if (rest !== '' && (!rest.startsWith('/') || rest.startsWith('//'))) return
+    const dest = new URL((code || '') + (rest || '/'), window.location.origin + base + '/')
+    if (dest.origin !== window.location.origin) return
+    window.location.href = dest.pathname + dest.search + dest.hash
+  } catch {
+    return
   }
 }
 </script>
