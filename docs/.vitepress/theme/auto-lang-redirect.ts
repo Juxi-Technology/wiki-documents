@@ -3,7 +3,7 @@
 // 2) 手动点击语言切换后记住偏好,下次直接进入所选语言
 // 3) 已带语言前缀的 URL(爬虫/直接链接)绝不跳转 → 对 SEO 无害
 if (typeof window !== 'undefined') {
-  const URL_LANG_RE = /^\/(zh-hans|zh-hant|ja|ko|de|fr|es|it)(?=\/|$)/
+  const URL_LANG_RE = /^\/(zh-hans|zh-hant|ja|ko|de|fr|es|it|en)(?=\/|$)/
   const PREF_KEY = 'wiki-lang'
 
   // 手动切换语言时记录偏好

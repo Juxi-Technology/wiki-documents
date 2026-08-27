@@ -31,14 +31,14 @@ const zhCN = {
   themeConfig: {
     siteTitle: '钜犀科技 Wiki',
     nav: [
-      { text: '教程', link: '/zh-hans/tutorials/', activeMatch: '/tutorials/' },
-      { text: '技术专题', link: '/zh-hans/topics/', activeMatch: '/topics/' },
-      { text: '技术文档', link: '/zh-hans/tech/', activeMatch: '/tech/' },
-      { text: '用户案例', link: '/zh-hans/cases/', activeMatch: '/cases/' },
-      { text: '社区', link: '/zh-hans/community/', activeMatch: '/community/' },
-      { text: '下载', link: '/zh-hans/downloads/', activeMatch: '/downloads/' },
-      { text: '关于我们', link: '/zh-hans/about/', activeMatch: '/about/' },
-      { text: '更新日志', link: '/zh-hans/changelog/', activeMatch: '/changelog/' },
+      { text: '教程', link: '/zh-hans/tutorials/', activeMatch: '/zh-hans/tutorials/' },
+      { text: '技术专题', link: '/zh-hans/topics/', activeMatch: '/zh-hans/topics/' },
+      { text: '技术文档', link: '/zh-hans/tech/', activeMatch: '/zh-hans/tech/' },
+      { text: '用户案例', link: '/zh-hans/cases/', activeMatch: '/zh-hans/cases/' },
+      { text: '社区', link: '/zh-hans/community/', activeMatch: '/zh-hans/community/' },
+      { text: '下载', link: '/zh-hans/downloads/', activeMatch: '/zh-hans/downloads/' },
+      { text: '关于我们', link: '/zh-hans/about/', activeMatch: '/zh-hans/about/' },
+      { text: '更新日志', link: '/zh-hans/changelog/', activeMatch: '/zh-hans/changelog/' },
     ],
     sidebar: {
       '/tutorials/': [
@@ -190,16 +190,16 @@ const zhCN = {
         },
       ],
       '/topics/': [
-        { text: '技术专题', items: [{ text: '专题首页', link: '/zh-hans/topics/' }, { text: 'JetPack 刷机与系统配置', link: '/topics/jetpack-setup' }, { text: '边缘 AI 部署入门', link: '/topics/edge-ai-intro' }, { text: '具身智能入门（LeRobot）', link: '/topics/embodied-ai-intro' }, { text: '机器人学习', link: '/topics/robot-learning/' }, { text: '开源硬件理念', link: '/topics/open-source-hardware' }] },
+        { text: '技术专题', items: [{ text: '专题首页', link: '/zh-hans/topics/' }, { text: 'JetPack 刷机与系统配置', link: '/zh-hans/topics/jetpack-setup' }, { text: '边缘 AI 部署入门', link: '/zh-hans/topics/edge-ai-intro' }, { text: '具身智能入门（LeRobot）', link: '/zh-hans/topics/embodied-ai-intro' }, { text: '机器人学习', link: '/zh-hans/topics/robot-learning/' }, { text: '开源硬件理念', link: '/zh-hans/topics/open-source-hardware' }] },
       ],
       '/tech/': [
-        { text: '技术文档', items: [{ text: '技术文档首页', link: '/zh-hans/tech/' }, { text: 'API 参考', link: '/tech/api-reference' }, { text: '开发指南', link: '/tech/dev-guide' }] },
+        { text: '技术文档', items: [{ text: '技术文档首页', link: '/zh-hans/tech/' }, { text: 'API 参考', link: '/zh-hans/tech/api-reference' }, { text: '开发指南', link: '/zh-hans/tech/dev-guide' }] },
       ],
       '/cases/': [
         { text: '用户案例', items: [{ text: '案例首页', link: '/zh-hans/cases/' }] },
       ],
       '/community/': [
-        { text: '社区', items: [{ text: '社区首页', link: '/zh-hans/community/' }, { text: '贡献指南', link: '/community/contributing' }] },
+        { text: '社区', items: [{ text: '社区首页', link: '/zh-hans/community/' }, { text: '贡献指南', link: '/zh-hans/community/contributing' }] },
       ],
       '/products/': [
         { text: '产品', items: [
@@ -673,6 +673,49 @@ const zhHK = {
   },
 }
 
+
+
+// ---- 上一篇/下一篇:从各语言 sidebar 链接序列计算相邻页 ----
+function collectSidebarLinks(sidebar) {
+  const out = []
+  const walk = (items) => {
+    if (!Array.isArray(items)) return
+    for (const sub of items) {
+      if (sub && sub.link) out.push(sub.link.replace(/\/$/g, ''))
+      if (sub && sub.items) walk(sub.items)
+    }
+  }
+  if (!sidebar) return out
+  for (const group of Object.values(sidebar)) {
+    walk(group)
+  }
+  return out
+}
+
+const LANG_PREFIX_RE = /^\/(zh-hans|zh-hant|ja|ko|de|fr|es|it)(?=\/|$)/
+function resolveLangPrefix(relativePath) {
+  const seg = relativePath.split('/')[0]
+  return LANG_PREFIX_RE.test('/' + seg) ? '/' + seg : ''
+}
+
+function computePrevNext(userConfig, pageData) {
+  const prefix = resolveLangPrefix(pageData.relativePath)
+  const locales = userConfig && userConfig.locales
+  const langKey = prefix ? prefix.slice(1) : 'root'
+  const localeCfg = locales && (locales[langKey] || (langKey === 'root' && locales.root))
+  const sidebar = localeCfg && localeCfg.themeConfig && localeCfg.themeConfig.sidebar
+  if (!sidebar) return
+  const links = collectSidebarLinks(sidebar)
+  const target = ('/' + pageData.relativePath.replace(/\.md$/, '').replace(/index$/, '')).replace(/\/$/, '')
+  const i = links.indexOf(target)
+  if (i < 0) return undefined
+  return {
+    prevNext: {
+      prev: i > 0 ? links[i - 1] : undefined,
+      next: i < links.length - 1 ? links[i + 1] : undefined,
+    },
+  }
+}
 
 // ---- hreflang:注入 9 语言 alternate + x-default(多语 SEO 必备)----
 const HREFLANG_LANGS = ['', 'zh-hans', 'zh-hant', 'ja', 'ko', 'de', 'fr', 'es', 'it']
@@ -1647,6 +1690,7 @@ export default defineConfig({
     },
   },
   // 结构化数据:每页注入 JSON-LD(首页 Organization,其余 Article)
+  transformPageData: (pageData, { siteConfig }) => computePrevNext(siteConfig && siteConfig.userConfig, pageData),
   transformHead({ pageData }) {
     const base = 'https://wiki.juxitech.com'
     const isHome = pageData.relativePath === 'index.md'

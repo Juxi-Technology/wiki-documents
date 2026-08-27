@@ -120,9 +120,11 @@ function onKeyDown(e) {
 
 // 全局快捷键 /
 function onGlobalKeydown(e) {
-  if (e.key === '/' && !showModal.value && !isEditing(e.target)) {
-    e.preventDefault()
-    openSearch()
+  if (!showModal.value && !isEditing(e.target)) {
+    if (e.key === '/' || ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k')) {
+      e.preventDefault()
+      openSearch()
+    }
   }
 }
 
@@ -153,7 +155,7 @@ const noResultsText = computed(() => {
 
 <template>
   <!-- 导航栏搜索按钮 -->
-  <div class="search-trigger" @click="openSearch" title="Search (/)">
+  <div class="search-trigger" @click="openSearch" title="Search ( / or Ctrl/Cmd+K )">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
       <circle cx="11" cy="11" r="6" />
       <path d="M21 21l-4.35-4.35" />
