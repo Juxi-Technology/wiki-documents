@@ -27,12 +27,13 @@ const current = computed(() => {
 
 function switchTo(code: string) {
   const base = site.value.base || '/'
+  // 安全校验:rest 必须是站内相对路径(防 Open Redirect,拒绝 // 开头/非 / 开头的值)
+  const rest = route.path.replace(/^\/(zh-hans|zh-hant|ja|ko|de|fr|es|it)(?=\/|$)/, '')
+  if (rest !== '' && (!rest.startsWith('/') || rest.startsWith('//'))) return
   if (!code) {
-    // 英文 root:剥掉当前语言前缀
-    const rest = route.path.replace(/^\/(zh-hans|zh-hant|ja|ko|de|fr|es|it)(?=\/|$)/, '')
+    // 英文 root:保留中文语言前缀之外的路径
     window.location.href = base.replace(/\/$/, '') + (rest || '/')
   } else {
-    const rest = route.path.replace(/^\/(zh-hans|zh-hant|ja|ko|de|fr|es|it)(?=\/|$)/, '')
     window.location.href = base.replace(/\/$/, '') + code + (rest || '/')
   }
 }
