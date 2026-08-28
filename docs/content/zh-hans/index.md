@@ -14,7 +14,7 @@ outline: false
 <p class="hero-subtitle">机器人与 AI 硬件的开放文档平台</p>
 <p class="hero-desc">从机械臂到传感器，助你搭建智能机器人系统</p>
 
-<div class="hero-links">
+<div class="hero-links four">
   <a :href="withBase('/tutorials/')" class="hero-btn primary">🚀 快速开始</a>
   <a v-if="isZh" href="https://juxitechnology.taobao.com" target="_blank" rel="noopener" class="hero-btn taobao">🛒 淘宝店铺</a>
   <a :href="storeUrl" target="_blank" rel="noopener" class="hero-btn shop">🛍️ 官方商城</a>
@@ -289,5 +289,32 @@ const storeUrl = computed(() => {
 .hero-btn.taobao,
 .hero-btn.shop {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+/* ---- 按钮等宽对齐:3 按钮一行,中/繁 2×2 (2026-08) ---- */
+.hero-links {
+  display: grid;
+  gap: 12px;
+  justify-items: stretch;
+  width: 100%;
+}
+
+.hero-links.three {
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 620px;
+}
+
+.hero-links.four {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 480px;
+}
+
+.hero-btn {
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .hero-links.three {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
 }
 </style>

@@ -14,7 +14,7 @@ outline: false
 <p class="hero-subtitle">Piattaforma documentale aperta per robotica e hardware AI</p>
 <p class="hero-desc">Dai bracci robotici ai sensori — costruisci il tuo sistema robotico intelligente</p>
 
-<div class="hero-links">
+<div class="hero-links three">
   <a :href="withBase('/it/tutorials/')" class="hero-btn primary">🚀 Inizia</a>
   <a :href="storeUrl" target="_blank" rel="noopener" class="hero-btn shop">🛍️ Negozio ufficiale</a>
   <a href="https://github.com/Juxi-Technology/" target="_blank" rel="noopener" class="hero-btn secondary">⭐ GitHub</a>
@@ -202,6 +202,33 @@ const storeUrl = computed(() => {
 
 .vp-doc h1 {
   display: none;
+}
+/* ---- 按钮等宽对齐:3 按钮一行,中/繁 2×2 (2026-08) ---- */
+.hero-links {
+  display: grid;
+  gap: 12px;
+  justify-items: stretch;
+  width: 100%;
+}
+
+.hero-links.three {
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 620px;
+}
+
+.hero-links.four {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 480px;
+}
+
+.hero-btn {
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .hero-links.three {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
 }
 </style>
 /* ---- 首页升级:hero 卡片化 + 商店按钮 (2026-08) ---- */

@@ -14,7 +14,7 @@ outline: false
 <p class="hero-subtitle">Open Documentation Platform for Robotics & AI Hardware</p>
 <p class="hero-desc">From robot arms to sensors — build your intelligent robotic system</p>
 
-<div class="hero-links">
+<div class="hero-links three">
   <a :href="withBase('/tutorials/')" class="hero-btn primary">🚀 Get Started</a>
   <a :href="storeUrl" target="_blank" rel="noopener" class="hero-btn shop">🛍️ Official Store</a>
   <a href="https://github.com/Juxi-Technology/" target="_blank" rel="noopener" class="hero-btn secondary">⭐ GitHub</a>
@@ -288,5 +288,32 @@ const storeUrl = computed(() => {
 .hero-btn.taobao,
 .hero-btn.shop {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+/* ---- 按钮等宽对齐:3 按钮一行,中/繁 2×2 (2026-08) ---- */
+.hero-links {
+  display: grid;
+  gap: 12px;
+  justify-items: stretch;
+  width: 100%;
+}
+
+.hero-links.three {
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 620px;
+}
+
+.hero-links.four {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 480px;
+}
+
+.hero-btn {
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .hero-links.three {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
 }
 </style>
