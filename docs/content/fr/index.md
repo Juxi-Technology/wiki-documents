@@ -48,10 +48,21 @@ import { useData } from 'vitepress'
 const { localeIndex } = useData()
 // 简体/繁体首页展示淘宝店铺按钮,其余语言仅 Shopify 官方商店
 const isZh = computed(() => localeIndex.value === 'zh-hans' || localeIndex.value === 'zh-hant')
+// 商店路径显式对应每个语言:Shopify root 会按访客浏览器语言 302,
+// 不能作为静态链接(zh-TW 浏览器点 English 页的商店会跳到 /zh-hant)
 const storeUrl = computed(() => {
-  if (localeIndex.value === 'zh-hans') return 'https://www.juxitech.com/zh-hans'
-  if (localeIndex.value === 'zh-hant') return 'https://www.juxitech.com/zh-hant'
-  return 'https://www.juxitech.com'
+  const dirs = {
+    'zh-hans': 'zh-hans',
+    'zh-hant': 'zh-hant',
+    ja: 'ja',
+    ko: 'ko',
+    de: 'de',
+    fr: 'fr',
+    es: 'es',
+    it: 'it',
+  }
+  const langDir = dirs[localeIndex.value]
+  return langDir ? `https://www.juxitech.com/${langDir}` : 'https://www.juxitech.com'
 })
 </script>
 

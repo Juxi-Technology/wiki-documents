@@ -25,11 +25,20 @@ const PRODUCT_MAP = [
 ]
 
 // Shopify 语言前缀:Wiki locale → Shopify 语言
-// zh-hans → zh-hans/;zh-hant → zh-hant/;en(root)与 ja/ko/de/fr/es/it → 无前缀
+// 9 语言全显式:Shopify root 按访客浏览器语言 302,不能当静态链接
+// (zh-hans → zh-hans/;zh-hant → zh-hant/;ja/ko/de/fr/es/it 各自目录;en root → 无前缀)
 const localePrefix = computed(() => {
-  if (localeIndex.value === 'zh-hans') return 'zh-hans/'
-  if (localeIndex.value === 'zh-hant') return 'zh-hant/'
-  return ''
+  const dirs = {
+    'zh-hans': 'zh-hans/',
+    'zh-hant': 'zh-hant/',
+    ja: 'ja/',
+    ko: 'ko/',
+    de: 'de/',
+    fr: 'fr/',
+    es: 'es/',
+    it: 'it/',
+  }
+  return dirs[localeIndex.value] || ''
 })
 
 // 根据当前页面路径匹配产品购买链接(带语言前缀)

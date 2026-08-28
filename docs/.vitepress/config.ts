@@ -738,7 +738,6 @@ export default defineConfig({
   vite: {
     publicDir: 'public',
   },
-  srcDir: 'content',
   lang: 'zh-CN',
   title: '钜犀科技 Wiki',
   description: '钜犀科技产品教程与文档中心',
