@@ -48,6 +48,9 @@ const is404 = computed(() => page.value.isNotFound === true || /404/.test(page.v
   display: flex;
   align-items: center;
   gap: 10px;
+  /* 与官方暗色开关(VPNavBarAppearance)留呼吸间距,并在 resize 时禁止被压缩重叠 */
+  margin-left: 12px;
+  flex-shrink: 0;
 }
 
 /* 隐藏 VitePress 默认语言切换器(.VPNavBarTranslations,VitePress 1.6 实际类名;
