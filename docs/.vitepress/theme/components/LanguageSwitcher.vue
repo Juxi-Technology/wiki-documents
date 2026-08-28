@@ -28,6 +28,13 @@ const current = computed(() => {
 function switchTo(code: string) {
   const base = (site.value.base || '/').replace(/\/$/, '')
   const rest = route.path.replace(/^\/(zh-hans|zh-hant|ja|ko|de|fr|es|it)(?=\/|$)/, '')
+  // 记录语言偏好:选择 English(code='')时写 'en'。
+  // 否则跳转到无前缀英文页后会被 auto-lang-redirect 按旧偏好(如 zh-hans)拉回
+  try {
+    localStorage.setItem('wiki-lang', code === '' ? 'en' : code)
+  } catch {
+    /* private mode */
+  }
   // 强校验:用 URL 构造并断言同源(防 Open Redirect/协议相对跳转)
   try {
     if (rest !== '' && (!rest.startsWith('/') || rest.startsWith('//'))) return
