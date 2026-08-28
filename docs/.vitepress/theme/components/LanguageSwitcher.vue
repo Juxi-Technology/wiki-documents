@@ -78,6 +78,17 @@ function switchTo(code: string) {
   align-items: center;
 }
 
+/* 悬停桥接:菜单 top gap(6px)是悬停空窗,鼠标经过时 mouseleave 会误关列表;
+   用不可见伪元素把缝隙收进 switcher 悬停区 */
+.lang-switcher::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 12px;
+}
+
 .lang-btn {
   display: inline-flex;
   align-items: center;
