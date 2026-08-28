@@ -23,11 +23,12 @@ function stripBase(url) {
   return url
 }
 
-// 当前 locale 的页面过滤
+// 当前 locale 的页面过滤(root=en;其余语言目录带各自前缀)
+const LANG_DIRS = ['zh-hans', 'zh-hant', 'ja', 'ko', 'de', 'fr', 'es', 'it']
 function isInLocale(url) {
   const rel = stripBase(url)
   if (localeIndex.value === 'root') {
-    return !rel.startsWith('/en/') && !rel.startsWith('/zh-HK/')
+    return !LANG_DIRS.some((d) => rel.startsWith(`/${d}/`))
   }
   return rel.startsWith(`/${localeIndex.value}/`)
 }
@@ -141,15 +142,15 @@ onUnmounted(() => {
 })
 
 const placeholder = computed(() => {
-  if (localeIndex.value === 'en') return 'Search docs...'
-  if (localeIndex.value === 'zh-HK') return '搜尋文件...'
-  return '搜索文档...'
+  if (localeIndex.value === 'zh-hans') return '搜索文档...'
+  if (localeIndex.value === 'zh-hant') return '搜尋文件...'
+  return 'Search docs...'
 })
 
 const noResultsText = computed(() => {
-  if (localeIndex.value === 'en') return 'No results found'
-  if (localeIndex.value === 'zh-HK') return '無匹配結果'
-  return '无匹配结果'
+  if (localeIndex.value === 'zh-hans') return '无匹配结果'
+  if (localeIndex.value === 'zh-hant') return '無匹配結果'
+  return 'No results found'
 })
 </script>
 

@@ -22,9 +22,9 @@ const msg = computed(() => MESSAGES[lang.value] || MESSAGES['zh-CN'])
 
 <template>
   <div class="top-banner">
-    <a class="top-banner-inner" href="#quick-start" @click.prevent>
+    <span class="top-banner-inner">
       {{ msg }}
-    </a>
+    </span>
   </div>
 </template>
 

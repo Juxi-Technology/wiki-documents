@@ -41,7 +41,7 @@ const zhCN = {
       { text: '更新日志', link: '/zh-hans/changelog/', activeMatch: '/zh-hans/changelog/' },
     ],
     sidebar: {
-      '/tutorials/': [
+      '/zh-hans/tutorials/': [
         {
           text: '快速开始',
           items: [
@@ -189,19 +189,19 @@ const zhCN = {
           ],
         },
       ],
-      '/topics/': [
+      '/zh-hans/topics/': [
         { text: '技术专题', items: [{ text: '专题首页', link: '/zh-hans/topics/' }, { text: 'JetPack 刷机与系统配置', link: '/zh-hans/topics/jetpack-setup' }, { text: '边缘 AI 部署入门', link: '/zh-hans/topics/edge-ai-intro' }, { text: '具身智能入门（LeRobot）', link: '/zh-hans/topics/embodied-ai-intro' }, { text: '机器人学习', link: '/zh-hans/topics/robot-learning/' }, { text: '开源硬件理念', link: '/zh-hans/topics/open-source-hardware' }] },
       ],
-      '/tech/': [
+      '/zh-hans/tech/': [
         { text: '技术文档', items: [{ text: '技术文档首页', link: '/zh-hans/tech/' }, { text: 'API 参考', link: '/zh-hans/tech/api-reference' }, { text: '开发指南', link: '/zh-hans/tech/dev-guide' }] },
       ],
-      '/cases/': [
+      '/zh-hans/cases/': [
         { text: '用户案例', items: [{ text: '案例首页', link: '/zh-hans/cases/' }] },
       ],
-      '/community/': [
+      '/zh-hans/community/': [
         { text: '社区', items: [{ text: '社区首页', link: '/zh-hans/community/' }, { text: '贡献指南', link: '/zh-hans/community/contributing' }] },
       ],
-      '/products/': [
+      '/zh-hans/products/': [
         { text: '产品', items: [
           { text: 'Jetson Orin NX Super 开发套件', link: '/zh-hans/products/jetson-orin-nx-super-kit' },
           { text: '3D RealSense 深度相机', link: '/zh-hans/products/realsense-depth-camera' },
@@ -224,13 +224,13 @@ const zhCN = {
           { text: 'SO-ARM101 顶置相机支架', link: '/zh-hans/products/overhead-camera-mount' },
         ] },
       ],
-      '/downloads/': [
+      '/zh-hans/downloads/': [
         { text: '下载', items: [{ text: '下载中心', link: '/zh-hans/downloads/' }] },
       ],
-      '/about/': [
+      '/zh-hans/about/': [
         { text: '关于', items: [{ text: '关于我们', link: '/zh-hans/about/' }] },
       ],
-      '/changelog/': [
+      '/zh-hans/changelog/': [
         { text: '更新', items: [{ text: '更新日志', link: '/zh-hans/changelog/' }] },
       ],
     },

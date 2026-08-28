@@ -1,27 +1,26 @@
 import { createContentLoader } from 'vitepress'
 
-// 冗余副本:内容与 canonical(robot-arms/so-arm101/SO-ARM101-Tutorial)发散,不参与搜索
-const EXCLUDED_URLS = [
-  '/tutorials/so-arm101-tutorial',
-  '/en/tutorials/so-arm101-tutorial',
-  '/en/tutorials/robot-arms/so-arm101-tutorial',
-  '/zh-HK/tutorials/so-arm101-tutorial',
-]
-
-// 构建期数据加载器:收集全部内容页用于搜索索引
+// 构建期数据加载器:收集全部内容页(所有语言目录)用于搜索索引
+// 注意 srcDir 为 content/,直接用 '**/xx/**/*.md' 才能覆盖各语言子目录;
+// public/ 下有历史草稿 md(旧版教程,已被 content 树多语正版取代),必须排除
 export default createContentLoader(
-  ['tutorials/**/*.md', 'topics/**/*.md', 'tech/**/*.md', 'cases/**/*.md', 'community/**/*.md'],
+  [
+    '**/tutorials/**/*.md',
+    '!**/public/**',
+    '**/topics/**/*.md',
+    '**/tech/**/*.md',
+    '**/cases/**/*.md',
+    '**/community/**/*.md',
+  ],
   {
     render: false,
     excerpt: false,
     transform(raw) {
-      return raw
-        .filter(({ url }) => !EXCLUDED_URLS.includes(url))
-        .map(({ url, frontmatter }) => ({
-          url,
-          title: frontmatter.title || url.split('/').pop() || url,
-          description: frontmatter.description || '',
-        }))
+      return raw.map(({ url, frontmatter }) => ({
+        url,
+        title: frontmatter.title || url.split('/').pop() || url,
+        description: frontmatter.description || '',
+      }))
     },
   },
 )

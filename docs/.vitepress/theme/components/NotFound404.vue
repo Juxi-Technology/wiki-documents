@@ -1,13 +1,9 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useData } from 'vitepress'
-
-const { lang } = useData()
 
 // 9 语文案(未命中语言回退英文)
 const T: Record<string, { title: string; subtitle: string; cta: string; home: string; tutorials: string; search: string; report: string }> = {
   'zh-CN': { title: '页面未找到', subtitle: '您访问的页面不存在或已被移动。', cta: '带你去首页', home: '首页', tutorials: '查看全部教程', search: '使用搜索查找( / 或 ⌘K )', report: '报告失效链接' },
-  zh_CN: { title: '页面未找到', subtitle: '您访问的页面不存在或已被移动。', cta: '带你去首页', home: '首页', tutorials: '查看全部教程', search: '使用搜索查找( / 或 ⌘K )', report: '报告失效链接' },
   en: { title: 'Page Not Found', subtitle: 'The page you are looking for doesn’t exist or may have moved.', cta: 'Take me home', home: 'Home', tutorials: 'Browse Tutorials', search: 'Search ( / or ⌘K )', report: 'Report a broken link' },
   'zh-HK': { title: '頁面未找到', subtitle: '您訪問的頁面不存在或已被移動。', cta: '帶你去首頁', home: '首頁', tutorials: '瀏覽全部教程', search: '使用搜尋查找( / 或 ⌘K )', report: '回報失效連結' },
   ja: { title: 'ページが見つかりません', subtitle: 'アクセスしたページは存在しないか、移動しました。', cta: 'ホームへ', home: 'ホーム', tutorials: 'チュートリアル一覧', search: '検索( / または ⌘K )', report: 'リンク切れを報告' },
@@ -18,8 +14,28 @@ const T: Record<string, { title: string; subtitle: string; cta: string; home: st
   it: { title: 'Pagina non trovata', subtitle: 'La pagina richiesta non esiste o è stata spostata.', cta: 'Torna alla home', home: 'Home', tutorials: 'Vedi i tutorial', search: 'Cerca ( / o ⌘K )', report: 'Segnala link rotto' },
 }
 
-const t = computed(() => T[lang.value as keyof typeof T] || T.en)
-const base = '/zh-hans/'
+// 404 页为 CSR 渲染,语言无法由 useData 提供,从请求路径推断;
+// 据此得出 CTA 语言及 base,避免英文/日文环境下按钮误跳 /zh-hans/
+const match = typeof window !== 'undefined'
+  ? window.location.pathname.match(/^\/(zh-hans|zh-hant|ja|ko|de|fr|es|it)\//)
+  : null
+
+const t = computed(() => {
+  if (!match) return T.en
+  const langMap: Record<string, string> = {
+    'zh-hans': 'zh-CN',
+    'zh-hant': 'zh-HK',
+    ja: 'ja',
+    ko: 'ko',
+    de: 'de',
+    fr: 'fr',
+    es: 'es',
+    it: 'it',
+  }
+  return T[langMap[match[1]]] || T.en
+})
+
+const base = computed(() => (match ? '/' + match[1] + '/' : '/'))
 </script>
 
 <template>
@@ -31,8 +47,8 @@ const base = '/zh-hans/'
       <a class="nf-btn" :href="base">{{ t.cta }}</a>
       <span class="nf-links">
         <a :href="base" class="nf-link">{{ t.home }}</a> ·
-        <a :href="base" class="nf-link">{{ t.tutorials }}</a> ·
-        <a :href="base" class="nf-link">{{ t.search }}</a> ·
+        <a :href="base + 'tutorials/'" class="nf-link">{{ t.tutorials }}</a> ·
+        <span class="nf-plain">{{ t.search }}</span> ·
         <a href="https://github.com/Juxi-Technology/wiki-documents/issues" target="_blank" class="nf-link">{{ t.report }}</a>
       </span>
     </div>
@@ -105,6 +121,10 @@ const base = '/zh-hans/'
   color: var(--vp-c-text-2);
   text-decoration: underline;
   text-underline-offset: 2px;
+}
+
+.nf-plain {
+  color: var(--vp-c-text-2);
 }
 
 .nf-link:hover {

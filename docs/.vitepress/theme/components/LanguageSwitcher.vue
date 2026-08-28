@@ -54,7 +54,7 @@ function switchTo(code: string) {
           :key="l.code"
           class="lang-item"
           :class="{ active: l.code === current.code }"
-          href="javascript:void(0)"
+          href="#"
           @click.prevent="switchTo(l.code)"
         >
           {{ l.label }}
