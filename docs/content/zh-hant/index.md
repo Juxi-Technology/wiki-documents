@@ -1,6 +1,7 @@
 ---
 title: 鉅犀科技 Wiki
 description: 鉅犀科技產品教程與文檔中心
+aside: false
 sidebar: false
 outline: false
 ---
@@ -296,6 +297,7 @@ const storeUrl = computed(() => {
   gap: 12px;
   justify-items: stretch;
   width: 100%;
+  margin: 0 auto;
 }
 
 .hero-links.three {

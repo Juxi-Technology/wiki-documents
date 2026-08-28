@@ -1,6 +1,7 @@
 ---
 title: Juxi Technology Wiki
 description: Juxi Technology Produkt-Tutorials und Dokumentationszentrum
+aside: false
 sidebar: false
 outline: false
 ---
@@ -209,6 +210,7 @@ const storeUrl = computed(() => {
   gap: 12px;
   justify-items: stretch;
   width: 100%;
+  margin: 0 auto;
 }
 
 .hero-links.three {

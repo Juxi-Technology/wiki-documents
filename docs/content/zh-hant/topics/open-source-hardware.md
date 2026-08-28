@@ -24,4 +24,4 @@ keywords: [開源, open source, 硬件, 理念, 機器人, juxitech]
 
 我們將繼續擴展產品線,加入更多具身智能平台、物理 AI 工具和邊緣計算解決方案。全部開源,全部有文件,全部為社群而建。關注我們的維基與部落格,獲取即將發布的產品、技術深潛與社群展示。
 
-> 相關頁面:[SO-ARM101 開發套件](/products/so-arm101) · [AmazingHand 靈巧機械手](/products/amazinghand) · [具身智能入門(LeRobot)](/topics/embodied-ai-intro)
+> 相關頁面:[SO-ARM101 開發套件](/zh-hant/products/so-arm101) · [AmazingHand 靈巧機械手](/zh-hant/products/amazinghand) · [具身智能入門(LeRobot)](/zh-hant/topics/embodied-ai-intro)

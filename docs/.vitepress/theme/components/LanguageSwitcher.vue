@@ -143,7 +143,9 @@ function switchTo(code: string) {
   opacity: 0;
 }
 
-@media (max-width: 640px) {
+/* 中窄屏(平板/小桌面)导航空间不足时,语言切换缩为图标
+   (因自定义 switcher 带文字标签,默认 translations 收进 flyout 的方案已弃用) */
+@media (max-width: 959px) {
   .lang-current,
   .lang-arrow {
     display: none;

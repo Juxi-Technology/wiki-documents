@@ -1,6 +1,7 @@
 ---
 title: 钜犀科技 Wiki
 description: 钜犀科技产品教程与文档中心
+aside: false
 sidebar: false
 outline: false
 ---
@@ -15,7 +16,7 @@ outline: false
 <p class="hero-desc">从机械臂到传感器，助你搭建智能机器人系统</p>
 
 <div class="hero-links four">
-  <a :href="withBase('/tutorials/')" class="hero-btn primary">🚀 快速开始</a>
+  <a :href="withBase('/zh-hans/tutorials/')" class="hero-btn primary">🚀 快速开始</a>
   <a v-if="isZh" href="https://juxitechnology.taobao.com" target="_blank" rel="noopener" class="hero-btn taobao">🛒 淘宝店铺</a>
   <a :href="storeUrl" target="_blank" rel="noopener" class="hero-btn shop">🛍️ 官方商城</a>
   <a href="https://github.com/Juxi-Technology/" target="_blank" rel="noopener" class="hero-btn secondary">⭐ GitHub</a>
@@ -26,15 +27,15 @@ outline: false
 ## 产品系列
 
 <div class="category-grid">
-  <a :href="withBase('/tutorials/robot-arms/')" class="category-card">
+  <a :href="withBase('/zh-hans/tutorials/robot-arms/')" class="category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="机械臂系列">
     <span>机械臂系列</span>
   </a>
-  <a :href="withBase('/tutorials/sensors/')" class="category-card">
+  <a :href="withBase('/zh-hans/tutorials/sensors/')" class="category-card">
     <img :src="withBase('/images/categories/IMU.png')" alt="传感器系列">
     <span>传感器系列</span>
   </a>
-  <a :href="withBase('/tutorials/accessories/')" class="category-card">
+  <a :href="withBase('/zh-hans/tutorials/accessories/')" class="category-card">
     <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="配件系列">
     <span>配件系列</span>
   </a>
@@ -43,19 +44,19 @@ outline: false
 ## 最新文档
 
 <div class="card-grid">
-  <a :href="withBase('/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial')" class="card">
+  <a :href="withBase('/zh-hans/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial')" class="card">
     <img :src="withBase('/images/home-cards/SO-ARM101.png')" alt="SO-ARM101-使用教程">
     <span>SO-ARM101-使用教程</span>
   </a>
-  <a :href="withBase('/tutorials/accessories/KWS-speech-recognition-module/index')" class="card">
+  <a :href="withBase('/zh-hans/tutorials/accessories/KWS-speech-recognition-module/index')" class="card">
     <img :src="withBase('/images/home-cards/AI_SoundCard.png')" alt="KWS语音识别模块-系列教程">
     <span>KWS语音识别模块-系列教程</span>
   </a>
-  <a :href="withBase('/tutorials/sensors/imu/index')" class="card">
+  <a :href="withBase('/zh-hans/tutorials/sensors/imu/index')" class="card">
     <img :src="withBase('/images/home-cards/IMU.png')" alt="IMU惯性导航模块">
     <span>IMU惯性导航模块</span>
   </a>
-  <a :href="withBase('/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control')" class="card">
+  <a :href="withBase('/zh-hans/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control')" class="card">
     <img :src="withBase('/images/home-cards/AmazingHand.png')" alt="AmazingHand-界面控制教程">
     <span>AmazingHand-界面控制教程</span>
   </a>
@@ -64,15 +65,15 @@ outline: false
 ## 浏览分类
 
 <div class="category-grid">
-  <a :href="withBase('/tutorials/robot-arms/')" class="category-card">
+  <a :href="withBase('/zh-hans/tutorials/robot-arms/')" class="category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="机器人机械臂系列">
     <span>机器人机械臂系列</span>
   </a>
-  <a :href="withBase('/tutorials/accessories/')" class="category-card">
+  <a :href="withBase('/zh-hans/tutorials/accessories/')" class="category-card">
     <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="机器人配件">
     <span>机器人配件</span>
   </a>
-  <a :href="withBase('/tutorials/sensors/')" class="category-card">
+  <a :href="withBase('/zh-hans/tutorials/sensors/')" class="category-card">
     <img :src="withBase('/images/categories/IMU.png')" alt="传感器与感知">
     <span>传感器与感知</span>
   </a>
@@ -296,6 +297,7 @@ const storeUrl = computed(() => {
   gap: 12px;
   justify-items: stretch;
   width: 100%;
+  margin: 0 auto;
 }
 
 .hero-links.three {
