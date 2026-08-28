@@ -12,7 +12,7 @@ description: 鉅犀科技機器人學習與自動化技術專題
 <div class="topic-cards">
   <div class="topic-card">
     <div class="topic-icon">🤖</div>
-    <h3><a href="/zh-HK/topics/robot-learning/">機器人學習</a></h3>
+    <h3><a href="/zh-hant/topics/robot-learning/">機器人學習</a></h3>
     <p>基於 LeRobot 的全棧機器人學習，從數據採集到模型部署</p>
   </div>
 </div>
@@ -66,15 +66,15 @@ description: 鉅犀科技機器人學習與自動化技術專題
 ## 相關教程
 
 <div class="tutorial-links">
-  <a href="/zh-HK/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial" class="tutorial-link">
+  <a href="/zh-hant/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial" class="tutorial-link">
     <strong>SO-ARM101 使用教程</strong>
     <span>基於 LeRobot 訓練機器人操作策略的完整指南</span>
   </a>
-  <a href="/zh-HK/tutorials/sensors/imu/" class="tutorial-link">
+  <a href="/zh-hant/tutorials/sensors/imu/" class="tutorial-link">
     <strong>IMU 慣導模組</strong>
     <span>傳感器數據採集與應用案例</span>
   </a>
-  <a href="/zh-HK/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control" class="tutorial-link">
+  <a href="/zh-hant/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control" class="tutorial-link">
     <strong>AmazingHand 界面控制</strong>
     <span>機器人末端執行器控制與應用</span>
   </a>

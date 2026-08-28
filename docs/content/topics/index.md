@@ -12,7 +12,7 @@ Deep dive into robotics and automation technologies with real products and runna
 <div class="topic-cards">
   <div class="topic-card">
     <div class="topic-icon">🤖</div>
-    <h3><a href="/en/topics/robot-learning/">Robot Learning</a></h3>
+    <h3><a href="/topics/robot-learning/">Robot Learning</a></h3>
     <p>Full-stack robot learning based on LeRobot, from data collection to deployment</p>
   </div>
 </div>
@@ -66,15 +66,15 @@ Deep dive into robotics and automation technologies with real products and runna
 ## Related Tutorials
 
 <div class="tutorial-links">
-  <a href="/en/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial" class="tutorial-link">
+  <a href="/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial" class="tutorial-link">
     <strong>SO-ARM101 Tutorial</strong>
     <span>Complete guide to training robot manipulation policies with LeRobot</span>
   </a>
-  <a href="/en/tutorials/sensors/imu/" class="tutorial-link">
+  <a href="/tutorials/sensors/imu/" class="tutorial-link">
     <strong>IMU Inertial Navigation Module</strong>
     <span>Sensor data collection and application examples</span>
   </a>
-  <a href="/en/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control" class="tutorial-link">
+  <a href="/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control" class="tutorial-link">
     <strong>AmazingHand Interface Control</strong>
     <span>Robot end-effector control and applications</span>
   </a>

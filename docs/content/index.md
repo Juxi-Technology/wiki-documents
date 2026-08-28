@@ -15,9 +15,9 @@ outline: false
 <p class="hero-desc">From robot arms to sensors — build your intelligent robotic system</p>
 
 <div class="hero-links">
-  <a :href="withBase('/en/tutorials/')" class="hero-btn primary">🚀 Get Started</a>
-  <a :href="withBase('/en/tutorials/')" class="hero-btn secondary">📚 Tutorials</a>
-  <a href="https://github.com/Juxi-Technology/" target="_blank" class="hero-btn secondary">⭐ GitHub</a>
+  <a :href="withBase('/tutorials/')" class="hero-btn primary">🚀 Get Started</a>
+  <a :href="storeUrl" target="_blank" rel="noopener" class="hero-btn shop">🛍️ Official Store</a>
+  <a href="https://github.com/Juxi-Technology/" target="_blank" rel="noopener" class="hero-btn secondary">⭐ GitHub</a>
 </div>
 
 </div>
@@ -25,15 +25,15 @@ outline: false
 ## Product Series
 
 <div class="category-grid">
-  <a :href="withBase('/en/tutorials/robot-arms/')" class="category-card">
+  <a :href="withBase('/tutorials/robot-arms/')" class="category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="Robot Arms">
     <span>Robot Arms</span>
   </a>
-  <a :href="withBase('/en/tutorials/sensors/')" class="category-card">
+  <a :href="withBase('/tutorials/sensors/')" class="category-card">
     <img :src="withBase('/images/categories/IMU.png')" alt="Sensors">
     <span>Sensors</span>
   </a>
-  <a :href="withBase('/en/tutorials/accessories/')" class="category-card">
+  <a :href="withBase('/tutorials/accessories/')" class="category-card">
     <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="Accessories">
     <span>Accessories</span>
   </a>
@@ -42,19 +42,19 @@ outline: false
 ## Latest Documents
 
 <div class="card-grid">
-  <a :href="withBase('/en/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial')" class="card">
+  <a :href="withBase('/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial')" class="card">
     <img :src="withBase('/images/home-cards/SO-ARM101.png')" alt="SO-ARM101-Tutorial">
     <span>SO-ARM101-Tutorial</span>
   </a>
-  <a :href="withBase('/en/tutorials/accessories/KWS-speech-recognition-module/index')" class="card">
+  <a :href="withBase('/tutorials/accessories/KWS-speech-recognition-module/index')" class="card">
     <img :src="withBase('/images/home-cards/AI_SoundCard.png')" alt="KWS Speech Recognition Module Series">
     <span>KWS Speech Recognition Module Series</span>
   </a>
-  <a :href="withBase('/en/tutorials/sensors/imu/index')" class="card">
+  <a :href="withBase('/tutorials/sensors/imu/index')" class="card">
     <img :src="withBase('/images/home-cards/IMU.png')" alt="IMU Inertial Navigation Module">
     <span>IMU Inertial Navigation Module</span>
   </a>
-  <a :href="withBase('/en/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control')" class="card">
+  <a :href="withBase('/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control')" class="card">
     <img :src="withBase('/images/home-cards/AmazingHand.png')" alt="AmazingHand-Interface-Control">
     <span>AmazingHand-Interface-Control</span>
   </a>
@@ -63,15 +63,15 @@ outline: false
 ## Browse Categories
 
 <div class="category-grid">
-  <a :href="withBase('/en/tutorials/robot-arms/')" class="category-card">
+  <a :href="withBase('/tutorials/robot-arms/')" class="category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="Robot Arm Series">
     <span>Robot Arm Series</span>
   </a>
-  <a :href="withBase('/en/tutorials/accessories/')" class="category-card">
+  <a :href="withBase('/tutorials/accessories/')" class="category-card">
     <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="Robot Accessories">
     <span>Robot Accessories</span>
   </a>
-  <a :href="withBase('/en/tutorials/sensors/')" class="category-card">
+  <a :href="withBase('/tutorials/sensors/')" class="category-card">
     <img :src="withBase('/images/categories/IMU.png')" alt="Sensors and Perception">
     <span>Sensors and Perception</span>
   </a>
@@ -88,6 +88,17 @@ Thank you for choosing our products! We offer multiple support methods to ensure
 
 <script setup>
 import { withBase } from 'vitepress'
+import { computed } from 'vue'
+import { useData } from 'vitepress'
+
+const { localeIndex } = useData()
+// 简体/繁体首页展示淘宝店铺按钮,其余语言仅 Shopify 官方商店
+const isZh = computed(() => localeIndex.value === 'zh-hans' || localeIndex.value === 'zh-hant')
+const storeUrl = computed(() => {
+  if (localeIndex.value === 'zh-hans') return 'https://www.juxitech.com/zh-hans'
+  if (localeIndex.value === 'zh-hant') return 'https://www.juxitech.com/zh-hant'
+  return 'https://www.juxitech.com'
+})
 </script>
 
 <style>
@@ -238,5 +249,44 @@ import { withBase } from 'vitepress'
 
 .vp-doc h1 {
   display: none;
+}
+/* ---- 首页升级:hero 卡片化 + 商店按钮 (2026-08) ---- */
+.hero-section {
+  border: 1px solid var(--vp-c-gutter);
+  border-radius: 16px;
+  background: linear-gradient(180deg, var(--vp-c-brand-soft) 0%, var(--vp-c-bg) 92%);
+}
+
+.hero-btn:hover {
+  transform: translateY(-2px);
+}
+
+.hero-btn.taobao {
+  background-color: #ff5000;
+  border-color: #ff5000;
+  color: #ffffff;
+}
+
+.hero-btn.taobao:hover {
+  background-color: #d64400;
+  border-color: #d64400;
+  color: #ffffff;
+}
+
+.hero-btn.shop {
+  background-color: #95bf47;
+  border-color: #95bf47;
+  color: #ffffff;
+}
+
+.hero-btn.shop:hover {
+  background-color: #7aa53a;
+  border-color: #7aa53a;
+  color: #ffffff;
+}
+
+.hero-btn.taobao,
+.hero-btn.shop {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 </style>

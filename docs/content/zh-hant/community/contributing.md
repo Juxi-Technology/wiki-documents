@@ -42,7 +42,7 @@ npm run docs:dev
 
 ### 翻譯貢獻
 
-項目支援三語：簡體中文 (root)、English (`/en/`)、繁體中文 (`/zh-HK/`)。翻譯遵循以下規則：
+項目支援 9 種語言：英文為 root 主目錄（無前綴），其餘語言位於子目錄：`zh-hans/`、`zh-hant/`、`ja/`、`ko/`、`de/`、`fr/`、`es/`、`it/`。翻譯遵循以下規則：
 
 - 每個 `.md` 檔案在三語目錄中應有對應檔案
 - 圖片共用 `docs/public/images/` 下的資源

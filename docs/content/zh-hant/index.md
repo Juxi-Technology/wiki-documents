@@ -15,9 +15,10 @@ outline: false
 <p class="hero-desc">從機械臂到傳感器，助你搭建智能機器人系統</p>
 
 <div class="hero-links">
-  <a :href="withBase('/zh-HK/tutorials/')" class="hero-btn primary">🚀 快速開始</a>
-  <a :href="withBase('/zh-HK/tutorials/')" class="hero-btn secondary">📚 瀏覽教程</a>
-  <a href="https://github.com/Juxi-Technology/" target="_blank" class="hero-btn secondary">⭐ GitHub</a>
+  <a :href="withBase('/zh-hant/tutorials/')" class="hero-btn primary">🚀 快速開始</a>
+  <a v-if="isZh" href="https://juxitechnology.taobao.com" target="_blank" rel="noopener" class="hero-btn taobao">🛒 淘寶店鋪</a>
+  <a :href="storeUrl" target="_blank" rel="noopener" class="hero-btn shop">🛍️ 官方商城</a>
+  <a href="https://github.com/Juxi-Technology/" target="_blank" rel="noopener" class="hero-btn secondary">⭐ GitHub</a>
 </div>
 
 </div>
@@ -25,15 +26,15 @@ outline: false
 ## 產品系列
 
 <div class="category-grid">
-  <a :href="withBase('/zh-HK/tutorials/robot-arms/')" class="category-card">
+  <a :href="withBase('/zh-hant/tutorials/robot-arms/')" class="category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="機械臂系列">
     <span>機械臂系列</span>
   </a>
-  <a :href="withBase('/zh-HK/tutorials/sensors/')" class="category-card">
+  <a :href="withBase('/zh-hant/tutorials/sensors/')" class="category-card">
     <img :src="withBase('/images/categories/IMU.png')" alt="傳感器系列">
     <span>傳感器系列</span>
   </a>
-  <a :href="withBase('/zh-HK/tutorials/accessories/')" class="category-card">
+  <a :href="withBase('/zh-hant/tutorials/accessories/')" class="category-card">
     <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="配件系列">
     <span>配件系列</span>
   </a>
@@ -42,19 +43,19 @@ outline: false
 ## 最新文件
 
 <div class="card-grid">
-  <a :href="withBase('/zh-HK/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial')" class="card">
+  <a :href="withBase('/zh-hant/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial')" class="card">
     <img :src="withBase('/images/home-cards/SO-ARM101.png')" alt="SO-ARM101-使用教程">
     <span>SO-ARM101-使用教程</span>
   </a>
-  <a :href="withBase('/zh-HK/tutorials/accessories/KWS-speech-recognition-module/index')" class="card">
+  <a :href="withBase('/zh-hant/tutorials/accessories/KWS-speech-recognition-module/index')" class="card">
     <img :src="withBase('/images/home-cards/AI_SoundCard.png')" alt="KWS語音識別模組-系列教程">
     <span>KWS語音識別模組-系列教程</span>
   </a>
-  <a :href="withBase('/zh-HK/tutorials/sensors/imu/index')" class="card">
+  <a :href="withBase('/zh-hant/tutorials/sensors/imu/index')" class="card">
     <img :src="withBase('/images/home-cards/IMU.png')" alt="IMU慣性導航模組">
     <span>IMU慣性導航模組</span>
   </a>
-  <a :href="withBase('/zh-HK/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control')" class="card">
+  <a :href="withBase('/zh-hant/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control')" class="card">
     <img :src="withBase('/images/home-cards/AmazingHand.png')" alt="AmazingHand-界面控制教程">
     <span>AmazingHand-界面控制教程</span>
   </a>
@@ -63,15 +64,15 @@ outline: false
 ## 瀏覽分類
 
 <div class="category-grid">
-  <a :href="withBase('/zh-HK/tutorials/robot-arms/')" class="category-card">
+  <a :href="withBase('/zh-hant/tutorials/robot-arms/')" class="category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="機器人機械臂系列">
     <span>機器人機械臂系列</span>
   </a>
-  <a :href="withBase('/zh-HK/tutorials/accessories/')" class="category-card">
+  <a :href="withBase('/zh-hant/tutorials/accessories/')" class="category-card">
     <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="機器人配件">
     <span>機器人配件</span>
   </a>
-  <a :href="withBase('/zh-HK/tutorials/sensors/')" class="category-card">
+  <a :href="withBase('/zh-hant/tutorials/sensors/')" class="category-card">
     <img :src="withBase('/images/categories/IMU.png')" alt="傳感器與感知">
     <span>傳感器與感知</span>
   </a>
@@ -88,6 +89,17 @@ outline: false
 
 <script setup>
 import { withBase } from 'vitepress'
+import { computed } from 'vue'
+import { useData } from 'vitepress'
+
+const { localeIndex } = useData()
+// 简体/繁体首页展示淘宝店铺按钮,其余语言仅 Shopify 官方商店
+const isZh = computed(() => localeIndex.value === 'zh-hans' || localeIndex.value === 'zh-hant')
+const storeUrl = computed(() => {
+  if (localeIndex.value === 'zh-hans') return 'https://www.juxitech.com/zh-hans'
+  if (localeIndex.value === 'zh-hant') return 'https://www.juxitech.com/zh-hant'
+  return 'https://www.juxitech.com'
+})
 </script>
 
 <style>
@@ -238,5 +250,44 @@ import { withBase } from 'vitepress'
 
 .vp-doc h1 {
   display: none;
+}
+/* ---- 首页升级:hero 卡片化 + 商店按钮 (2026-08) ---- */
+.hero-section {
+  border: 1px solid var(--vp-c-gutter);
+  border-radius: 16px;
+  background: linear-gradient(180deg, var(--vp-c-brand-soft) 0%, var(--vp-c-bg) 92%);
+}
+
+.hero-btn:hover {
+  transform: translateY(-2px);
+}
+
+.hero-btn.taobao {
+  background-color: #ff5000;
+  border-color: #ff5000;
+  color: #ffffff;
+}
+
+.hero-btn.taobao:hover {
+  background-color: #d64400;
+  border-color: #d64400;
+  color: #ffffff;
+}
+
+.hero-btn.shop {
+  background-color: #95bf47;
+  border-color: #95bf47;
+  color: #ffffff;
+}
+
+.hero-btn.shop:hover {
+  background-color: #7aa53a;
+  border-color: #7aa53a;
+  color: #ffffff;
+}
+
+.hero-btn.taobao,
+.hero-btn.shop {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 </style>

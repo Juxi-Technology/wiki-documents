@@ -24,11 +24,11 @@ const PRODUCT_MAP = [
   { match: 'usb-auto-focus', path: 'collections/perception' },
 ]
 
-// Shopify 语言前缀:Wiki 语言 → Shopify 语言
-// zh-CN(root)→ zh-hans;zh-HK → zh-hant;en → 无前缀
+// Shopify 语言前缀:Wiki locale → Shopify 语言
+// zh-hans → zh-hans/;zh-hant → zh-hant/;en(root)与 ja/ko/de/fr/es/it → 无前缀
 const localePrefix = computed(() => {
-  if (localeIndex.value === 'zh-HK') return 'zh-hant/'
-  if (localeIndex.value === 'root') return 'zh-hans/'
+  if (localeIndex.value === 'zh-hans') return 'zh-hans/'
+  if (localeIndex.value === 'zh-hant') return 'zh-hant/'
   return ''
 })
 
@@ -50,13 +50,13 @@ const isVisible = computed(() => {
 })
 
 const copy = computed(() => {
-  if (localeIndex.value === 'en') {
-    return { buy: 'Buy This Product', store: 'Official Store', site: 'Official Website' }
+  if (localeIndex.value === 'zh-hans') {
+    return { buy: '购买此产品', store: '官方商城', site: '官方网站' }
   }
-  if (localeIndex.value === 'zh-HK') {
+  if (localeIndex.value === 'zh-hant') {
     return { buy: '購買此產品', store: '官方商城', site: '官方網站' }
   }
-  return { buy: '购买此产品', store: '官方商城', site: '官方网站' }
+  return { buy: 'Buy This Product', store: 'Official Store', site: 'Official Website' }
 })
 </script>
 

@@ -31,8 +31,10 @@ if (typeof window !== 'undefined') {
       pref = null
     }
     let target: string | null = null
-    if (pref && pref !== 'en') target = pref
-    if (!target) {
+    if (pref && pref !== 'en') {
+      target = pref // 手选过非英文语言 → 按其回落
+    } else if (!pref) {
+      // 无手选偏好时按浏览器语言(手选过英文则停留英文,不再被浏览器语言覆盖)
       if (/^(zh-HK|zh-TW|zh-Hant)/i.test(nav)) target = 'zh-hant'
       else if (/^zh/i.test(nav)) target = 'zh-hans'
       else if (/^ja/i.test(nav)) target = 'ja'
