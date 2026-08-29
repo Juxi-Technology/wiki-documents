@@ -9,7 +9,7 @@ description: 钜犀科技(Juxi Technology)——来自深圳前海的开源机�
 
 **钜犀科技(Juxi Technology)** 总部位于**深圳前海**,专注于**智能硬件与具身智能(Embodied Intelligence)**。我们的核心技术覆盖**多模态感知、边缘 AI、机器人控制**三大领域,通过开源协作向全球开发者提供本地化解决方案。
 
-秉持 **"Leverage HK, serve mainland, go global"**(立足香港、服务内地、走向全球)的理念,我们从深圳前海出发,将开源机器人与边缘 AI 带给全球开发者。
+秉持 **"依托香港、服务内地、面向世界"** 的理念,我们从深圳前海出发,将开源机器人与边缘 AI 带给全球开发者。
 
 > **Building the Future of Open-Source Robotics** — 我们相信,机器人的未来属于开放生态。
 

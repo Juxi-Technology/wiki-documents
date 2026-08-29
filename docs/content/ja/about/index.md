@@ -9,7 +9,7 @@ description: Juxi Technology — 中国深圳前海発のオープンソース�
 
 **Juxi Technology(鉅犀科技)** は**深圳前海**に本拠を置き、**インテリジェントハードウェアと具身知能(Embodied Intelligence)** に特化しています。コア技術は**マルチモーダル知覚、エッジAI、ロボティクス制御**の3分野をカバーし、オープンソース協働を通じてグローバル開発者にローカライズソリューションを提供します。
 
-**"Leverage HK, serve mainland, go global"** の理念のもと、深圳前海からオープンソースロボティクスとエッジAIを世界の開発者へ。
+**"With Hong Kong · For the Mainland · To the World"** の理念のもと、深圳前海からオープンソースロボティクスとエッジAIを世界の開発者へ。
 
 ## オープンソースコミットメント
 

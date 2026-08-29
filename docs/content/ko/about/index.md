@@ -9,7 +9,7 @@ description: Juxi Technology — 선전 첸하이 발 오픈소스 로보틱스 
 
 **Juxi Technology(鉅犀科技)** 는 **선전 첸하이**에 본사를 둔 **지능형 하드웨어 및 임베디드 지능(Embodied Intelligence)** 전문 기업입니다. 핵심 기술은 **멀티모달 인지, 엣지 AI, 로보틱스 제어** 3개 분야를 다루며, 오픈소스 협업을 통해 글로벌 개발자에게 현지화 솔루션을 제공합니다.
 
-**"Leverage HK, serve mainland, go global"** 이념 아래 선전 첸하이에서 오픈소스 로보틱스와 엣지 AI를 전 세계 개발자에게 전달합니다.
+**"With Hong Kong · For the Mainland · To the World"** 이념 아래 선전 첸하이에서 오픈소스 로보틱스와 엣지 AI를 전 세계 개발자에게 전달합니다.
 
 ## 오픈소스 약속
 

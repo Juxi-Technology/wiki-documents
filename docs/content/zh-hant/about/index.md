@@ -9,7 +9,7 @@ description: 鉅犀科技(Juxi Technology)——來自深圳前海的开源機�
 
 **鉅犀科技(Juxi Technology)** 總部位於**深圳前海**,專注於**智能硬件與具身智能(Embodied Intelligence)**。我們的核心技術覆蓋**多模態感知、邊緣 AI、機器人控制**三大領域,通過開源協作向全球開發者提供本地化解決方案。
 
-秉持 **"Leverage HK, serve mainland, go global"**(立足香港、服務內地、走向全球)的理念,我們從深圳前海出發,將開源機器人與邊緣 AI 帶給全球開發者。
+秉持 **"依託香港、服務內地、面向世界"** 的理念,我們從深圳前海出發,將開源機器人與邊緣 AI 帶給全球開發者。
 
 > **Building the Future of Open-Source Robotics** — 我們相信,機器人的未來屬於開放生態。
 
