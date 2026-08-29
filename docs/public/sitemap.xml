@@ -2,13 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://wiki.juxitech.com/about</loc></url>
   <url><loc>https://wiki.juxitech.com/cases</loc></url>
-  <url><loc>https://wiki.juxitech.com/changelog</loc></url>
   <url><loc>https://wiki.juxitech.com/community</loc></url>
   <url><loc>https://wiki.juxitech.com/community/contributing</loc></url>
   <url><loc>https://wiki.juxitech.com/de</loc></url>
   <url><loc>https://wiki.juxitech.com/de/about</loc></url>
   <url><loc>https://wiki.juxitech.com/de/cases</loc></url>
-  <url><loc>https://wiki.juxitech.com/de/changelog</loc></url>
   <url><loc>https://wiki.juxitech.com/de/community</loc></url>
   <url><loc>https://wiki.juxitech.com/de/community/contributing</loc></url>
   <url><loc>https://wiki.juxitech.com/de/downloads</loc></url>
@@ -106,7 +104,6 @@
   <url><loc>https://wiki.juxitech.com/es</loc></url>
   <url><loc>https://wiki.juxitech.com/es/about</loc></url>
   <url><loc>https://wiki.juxitech.com/es/cases</loc></url>
-  <url><loc>https://wiki.juxitech.com/es/changelog</loc></url>
   <url><loc>https://wiki.juxitech.com/es/community</loc></url>
   <url><loc>https://wiki.juxitech.com/es/community/contributing</loc></url>
   <url><loc>https://wiki.juxitech.com/es/downloads</loc></url>
@@ -203,7 +200,6 @@
   <url><loc>https://wiki.juxitech.com/fr</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/about</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/cases</loc></url>
-  <url><loc>https://wiki.juxitech.com/fr/changelog</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/community</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/community/contributing</loc></url>
   <url><loc>https://wiki.juxitech.com/fr/downloads</loc></url>
@@ -301,7 +297,6 @@
   <url><loc>https://wiki.juxitech.com/it</loc></url>
   <url><loc>https://wiki.juxitech.com/it/about</loc></url>
   <url><loc>https://wiki.juxitech.com/it/cases</loc></url>
-  <url><loc>https://wiki.juxitech.com/it/changelog</loc></url>
   <url><loc>https://wiki.juxitech.com/it/community</loc></url>
   <url><loc>https://wiki.juxitech.com/it/community/contributing</loc></url>
   <url><loc>https://wiki.juxitech.com/it/downloads</loc></url>
@@ -398,7 +393,6 @@
   <url><loc>https://wiki.juxitech.com/ja</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/about</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/cases</loc></url>
-  <url><loc>https://wiki.juxitech.com/ja/changelog</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/community</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/community/contributing</loc></url>
   <url><loc>https://wiki.juxitech.com/ja/downloads</loc></url>
@@ -495,7 +489,6 @@
   <url><loc>https://wiki.juxitech.com/ko</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/about</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/cases</loc></url>
-  <url><loc>https://wiki.juxitech.com/ko/changelog</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/community</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/community/contributing</loc></url>
   <url><loc>https://wiki.juxitech.com/ko/downloads</loc></url>
@@ -682,7 +675,6 @@
   <url><loc>https://wiki.juxitech.com/zh-hans</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-hans/about</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-hans/cases</loc></url>
-  <url><loc>https://wiki.juxitech.com/zh-hans/changelog</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-hans/community</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-hans/community/contributing</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-hans/downloads</loc></url>
@@ -779,7 +771,6 @@
   <url><loc>https://wiki.juxitech.com/zh-hant</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-hant/about</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-hant/cases</loc></url>
-  <url><loc>https://wiki.juxitech.com/zh-hant/changelog</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-hant/community</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-hant/community/contributing</loc></url>
   <url><loc>https://wiki.juxitech.com/zh-hant/downloads</loc></url>

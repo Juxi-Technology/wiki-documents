@@ -15,7 +15,6 @@ const SEG_NAMES: Record<string, Record<string, string>> = {
   community: { 'zh-CN': '社区', en: 'Community', 'zh-HK': '社區', ja: 'コミュニティ', ko: '커뮤니티', de: 'Community', fr: 'Communauté', es: 'Comunidad', it: 'Community' },
   downloads: { 'zh-CN': '下载', en: 'Downloads', 'zh-HK': '下載', ja: 'ダウンロード', ko: '다운로드', de: 'Downloads', fr: 'Téléchargements', es: 'Descargas', it: 'Download' },
   about: { 'zh-CN': '关于我们', en: 'About', 'zh-HK': '關於我們', ja: '私たちについて', ko: '소개', de: 'Über uns', fr: 'À propos', es: 'Sobre nosotros', it: 'Chi siamo' },
-  changelog: { 'zh-CN': '更新日志', en: 'Changelog', 'zh-HK': '更新日誌', ja: '更新ログ', ko: '업데이트 로그', de: 'Changelog', fr: 'Journal', es: 'Changelog', it: 'Changelog' },
 }
 
 const HOME_TEXT: Record<string, string> = {

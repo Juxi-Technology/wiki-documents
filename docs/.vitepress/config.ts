@@ -38,7 +38,6 @@ const zhCN = {
       { text: '社区', link: '/zh-hans/community/', activeMatch: '/zh-hans/community/' },
       { text: '下载', link: '/zh-hans/downloads/', activeMatch: '/zh-hans/downloads/' },
       { text: '关于我们', link: '/zh-hans/about/', activeMatch: '/zh-hans/about/' },
-      { text: '更新日志', link: '/zh-hans/changelog/', activeMatch: '/zh-hans/changelog/' },
     ],
     sidebar: {
       '/zh-hans/tutorials/': [
@@ -230,9 +229,6 @@ const zhCN = {
       '/zh-hans/about/': [
         { text: '关于', items: [{ text: '关于我们', link: '/zh-hans/about/' }] },
       ],
-      '/zh-hans/changelog/': [
-        { text: '更新', items: [{ text: '更新日志', link: '/zh-hans/changelog/' }] },
-      ],
     },
   },
 }
@@ -256,7 +252,6 @@ const en = {
       { text: 'Community', link: '/community/', activeMatch: '/community/' },
       { text: 'Downloads', link: '/downloads/', activeMatch: '/downloads/' },
       { text: 'About', link: '/about/', activeMatch: '/about/' },
-      { text: 'Changelog', link: '/changelog/', activeMatch: '/changelog/' },
     ],
     sidebar: {
       '/tutorials/': [
@@ -448,9 +443,6 @@ const en = {
       '/about/': [
         { text: 'About', items: [{ text: 'About Us', link: '/about/' }] },
       ],
-      '/changelog/': [
-        { text: 'Updates', items: [{ text: 'Changelog', link: '/changelog/' }] },
-      ],
     },
   },
 }
@@ -474,7 +466,6 @@ const zhHK = {
       { text: '社區', link: '/zh-hant/community/', activeMatch: '/zh-hant/community/' },
       { text: '下載', link: '/zh-hant/downloads/', activeMatch: '/zh-hant/downloads/' },
       { text: '關於我們', link: '/zh-hant/about/', activeMatch: '/zh-hant/about/' },
-      { text: '更新日誌', link: '/zh-hant/changelog/', activeMatch: '/zh-hant/changelog/' },
     ],
     sidebar: {
       '/zh-hant/tutorials/': [
@@ -665,9 +656,6 @@ const zhHK = {
       ],
       '/zh-hant/about/': [
         { text: '關於', items: [{ text: '關於我們', link: '/zh-hant/about/' }] },
-      ],
-      '/zh-hant/changelog/': [
-        { text: '更新', items: [{ text: '更新日誌', link: '/zh-hant/changelog/' }] },
       ],
     },
   },
