@@ -63,6 +63,14 @@ const is404 = computed(() => page.value.isNotFound === true || /404/.test(page.v
   display: none !important;
 }
 
+/* 有 sidebar 的页面:页脚左侧栏避让 fixed sidebar 面板,
+   否则页脚品牌列会被白色侧栏面板遮挡 */
+@media (min-width: 960px) {
+  body:has(.VPDoc.has-sidebar) .site-footer {
+    margin-left: var(--vp-sidebar-width);
+  }
+}
+
 /* 无内置搜索配置,默认搜索模块为空占位;自定义 SearchModal 接管 */
 .VPNavBarSearch {
   display: none !important;
