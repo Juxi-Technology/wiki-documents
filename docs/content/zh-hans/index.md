@@ -330,4 +330,22 @@ const storeUrl = computed(() => {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
+/* ---- hero 渐变标题与分区标题装饰线 (2026-08) ---- */
+.hero-subtitle {
+  font-size: 26px;
+  background: linear-gradient(92deg, #0f9d63 0%, #35c47f 55%, #0ea5b7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.vp-doc h2::after {
+  content: '';
+  display: block;
+  width: 56px;
+  height: 4px;
+  border-radius: 2px;
+  margin: 14px auto 0;
+  background: linear-gradient(90deg, #0f9d63, #35c47f 60%, #0ea5b7);
+}
 </style>

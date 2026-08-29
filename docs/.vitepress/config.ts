@@ -1683,10 +1683,6 @@ export default defineConfig({
       dark: '/images/logos/logo-white.png',
     },
     // 三语 nav/sidebar 定义在各 locales.themeConfig 中,这里只放公共 logo
-    footer: {
-      message: 'Juxi Technology',
-      copyright: '© 2026 Juxi Technology',
-    },
   },
   // 结构化数据:每页注入 JSON-LD(首页 Organization,其余 Article)
   transformPageData: (pageData, { siteConfig }) => computePrevNext(siteConfig && siteConfig.userConfig, pageData),
