@@ -5,8 +5,10 @@ const BANNER_H = 36
 
 if (typeof window !== 'undefined') {
   function syncTopOffset() {
-    const h = window.scrollY > BANNER_H ? '0px' : `${BANNER_H}px`
-    document.documentElement.style.setProperty('--vp-layout-top-height', h)
+    // 连续函数:scrollY 0→36 期间偏移 36→0 线性过渡,nav 随滚动平滑升至顶端
+    // (阶跃写法 scrolled ? 0 : 36 会让 nav 在越过阈值时瞬间跳变)
+    const h = Math.max(0, BANNER_H - window.scrollY)
+    document.documentElement.style.setProperty('--vp-layout-top-height', `${h}px`)
   }
 
   window.addEventListener('scroll', syncTopOffset, { passive: true })
