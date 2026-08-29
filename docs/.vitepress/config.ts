@@ -730,6 +730,11 @@ export default defineConfig({
   title: '钜犀科技 Wiki',
   description: '钜犀科技产品教程与文档中心',
   base: '/',
+  // 内置 sitemap 生成:从构建页面自动产出 sitemap.xml(hostname 用线上域名)
+  // 取代原手工维护的 public/sitemap.xml(内容增删会脱节)
+  sitemap: {
+    hostname: 'https://wiki.juxitech.com',
+  },
   cleanUrls: true,
   ignoreDeadLinks: true,
   lastUpdated: true,
