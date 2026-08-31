@@ -71,6 +71,15 @@ const is404 = computed(() => page.value.isNotFound === true || /404/.test(page.v
   }
 }
 
+/* 官方仅在 ≥960 将 VPNav 设为 fixed,<960 为 relative(top: var)
+   → 移动/平板出现滚动丢失置顶 + banner 与 nav 之间 36px 空隙。
+   统一全断点固定:顶部偏移跟随 --vp-layout-top-height(由
+   scroll-top-offset.ts 在滚动越过公告条后清零) */
+.VPNav {
+  position: fixed !important;
+  top: var(--vp-layout-top-height, 0px);
+}
+
 /* 无内置搜索配置,默认搜索模块为空占位;自定义 SearchModal 接管 */
 .VPNavBarSearch {
   display: none !important;

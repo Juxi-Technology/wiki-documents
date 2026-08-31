@@ -34,8 +34,13 @@ const msg = computed(() => MESSAGES[lang.value] || MESSAGES['zh-CN'])
   border-bottom: 1px solid #c9ecd9;
   text-align: center;
   font-size: 13px;
+  height: 36px;
   line-height: 36px;
+  overflow: hidden;
   padding: 0 16px;
+  /* 单行锁高:行盒基线/descender 会令实际高度漂移(如 51px),
+     导致 --vp-layout-top-height(36px) 占位与真实高度错位出空白 */
+  box-sizing: border-box;
 }
 
 .dark .top-banner {
