@@ -21,7 +21,9 @@ const t = computed(() => T[lang.value] || T.en)
 
 // 语言目录前缀(root=en 无前缀)
 const pref = computed(() => {
-  const dirs: Record<string, string> = { 'zh-CN': 'zh-hans/', 'zh-HK': 'zh-hant/', ja: 'ja/', ko: 'ko/', de: 'de/', fr: 'fr/', es: 'es/', it: 'it/' }
+  // 必须带前导 "/":withBase 对非 "/" 开头的路径原样返回(相对 URL),
+  // 浏览器会按当前页语言前缀再解析一层,导致 /zh-hans/zh-hans/... 双前缀 404
+  const dirs: Record<string, string> = { 'zh-CN': '/zh-hans/', 'zh-HK': '/zh-hant/', ja: '/ja/', ko: '/ko/', de: '/de/', fr: '/fr/', es: '/es/', it: '/it/', en: '/' }
   return dirs[lang.value] || ''
 })
 </script>
