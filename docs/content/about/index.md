@@ -7,9 +7,9 @@ description: Juxi Technology — open-source robotics hardware company from Qian
 
 ## Company Overview
 
-**Juxi Technology** is headquartered in **Qianhai, Shenzhen**, specializing in **intelligent hardware and embodied intelligence**. Our core technology covers **multimodal perception, edge AI, and robotics control**, delivering localized solutions to global markets through open-source collaboration.
+**Juxi Technology**, based in **Qianhai Shenzhen**, follows **"With Hong Kong · For the Mainland · To the World"**.
 
-Following our philosophy of **"With Hong Kong · For the Mainland · To the World"**, we bring open-source robotics and edge AI from Shenzhen to developers worldwide.
+We develop **physical AI, embodied robotics and edge AI**, delivering **open-source solutions** to developers worldwide.
 
 > **Building the Future of Open-Source Robotics** — we believe the future of robotics belongs to open ecosystems.
 
