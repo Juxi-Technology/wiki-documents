@@ -403,25 +403,31 @@ const storeUrl = computed(() => {
   max-width: 44ch;
 }
 
+/* 按钮一律等宽网格:桌面 1×N(4 枚 4 列 / 3 枚 3 列),手机 2×2 */
 .hero-links {
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 12px;
+  justify-items: stretch;
   width: auto;
   margin: 0;
 }
 
-.hero-links.three,
+.hero-links.three {
+  grid-template-columns: repeat(3, 1fr);
+  max-width: none;
+}
+
 .hero-links.four {
-  grid-template-columns: none;
+  grid-template-columns: repeat(4, 1fr);
   max-width: none;
 }
 
 .hero-btn {
-  padding: 14px 32px;
+  padding: 14px 16px;
   border-radius: 999px;
-  font-size: 16px;
+  font-size: 15px;
+  white-space: nowrap;
 }
 
 /* 主按钮:参考图 GETTING STARTED 的亮绿大胶囊 */
@@ -440,7 +446,8 @@ const storeUrl = computed(() => {
 
 /* 右侧巨型品牌字(参考图 Wiki / seed studio) */
 .hero-brand {
-  flex: 1 1 42%;
+  flex: 0 0 42%;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -448,6 +455,7 @@ const storeUrl = computed(() => {
 }
 
 .brand-wiki {
+  font-family: "Avenir Next", "Century Gothic", "Futura", "Poppins", "Montserrat", "Helvetica Neue", sans-serif;
   font-size: min(15vw, 200px);
   font-weight: 900;
   letter-spacing: -0.05em;
@@ -459,9 +467,10 @@ const storeUrl = computed(() => {
 
 .brand-name {
   margin-top: 10px;
-  font-size: min(4.4vw, 54px);
+  font-family: "Avenir Next", "Century Gothic", "Futura", "Poppins", "Montserrat", "Helvetica Neue", sans-serif;
+  font-size: min(3.2vw, 40px);
   font-weight: 800;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.1em;
   color: var(--vp-c-text-1);
   text-transform: uppercase;
 }
@@ -507,15 +516,14 @@ const storeUrl = computed(() => {
     font-size: 17px;
     max-width: none;
   }
-  /* 主按钮整行,其余两枚一行(参照 Getting Started + 两枚黑胶囊) */
-  .hero-links {
+  /* 手机 2×2 等宽 */
+  .hero-links,
+  .hero-links.three,
+  .hero-links.four {
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
-  .hero-btn.primary {
-    flex: 1 1 100%;
-  }
   .hero-btn {
-    flex: 1 1 calc(50% - 6px);
     padding: 12px 20px;
     font-size: 15px;
   }
