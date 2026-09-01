@@ -7,8 +7,8 @@ outline: false
 ---
 
 <div class="hero-section">
-
-![logo](../../public/images/logos/logo-black.png)
+<div class="hero-inner">
+  <div class="hero-main">
 
 # Juxi Technology Wiki
 
@@ -19,8 +19,13 @@ outline: false
   <a :href="withBase('/de/tutorials/')" class="hero-btn primary">🚀 Loslegen</a>
   <a :href="storeUrl" target="_blank" rel="noopener" class="hero-btn shop">🛍️ Offizieller Shop</a>
   <a href="https://github.com/Juxi-Technology/" target="_blank" rel="noopener" class="hero-btn secondary">⭐ GitHub</a>
+  </div>
 </div>
-
+  <div class="hero-brand">
+    <span class="brand-wiki">Wiki</span>
+    <span class="brand-name">Juxi Technology</span>
+  </div>
+</div>
 </div>
 
 ## Produktreihen
@@ -299,5 +304,151 @@ const storeUrl = computed(() => {
   border-radius: 2px;
   margin: 14px auto 0;
   background: linear-gradient(90deg, #0f9d63, #35c47f 60%, #0ea5b7);
+}
+/* ---- hero 改版 v2:照 Seeed Studio Wiki 首页(满宽 hero,左文右巨型品牌字) ---- */
+.hero-section {
+  margin: 0 calc(50% - 50vw);
+  padding: 56px 0 40px;
+  text-align: left;
+  border: none;
+  border-radius: 0;
+  background: none;
+}
+
+.hero-inner {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 64px;
+}
+
+.hero-main {
+  flex: 1 1 58%;
+  min-width: 0;
+}
+
+/* 恢复主标题(hallway早前 display:none 隐藏) */
+.vp-doc h1 {
+  display: block;
+}
+
+.hero-main h1 {
+  font-size: 52px;
+  line-height: 1.15;
+  margin: 0 0 16px;
+  font-weight: 800;
+  color: var(--vp-c-text-1);
+}
+
+.hero-subtitle {
+  font-size: 22px;
+  margin: 0 0 10px;
+}
+
+.hero-desc {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--vp-c-text-2);
+  margin: 0 0 32px;
+  max-width: 44ch;
+}
+
+.hero-links {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: auto;
+  margin: 0;
+}
+
+.hero-links.three,
+.hero-links.four {
+  grid-template-columns: none;
+  max-width: none;
+}
+
+.hero-btn {
+  padding: 14px 32px;
+  border-radius: 999px;
+  font-size: 16px;
+}
+
+/* 主按钮:参考图 GETTING STARTED 的亮绿大胶囊 */
+.hero-btn.primary {
+  background-color: #7fc93c;
+  border-color: #7fc93c;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.hero-btn.primary:hover {
+  background-color: #6fb832;
+  border-color: #6fb832;
+  color: #ffffff;
+}
+
+/* 右侧巨型品牌字(参考图 Wiki / seed studio) */
+.hero-brand {
+  flex: 1 1 42%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+}
+
+.brand-wiki {
+  font-size: min(15vw, 200px);
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  background: linear-gradient(180deg, #9fdc5a 0%, #35c47f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.brand-name {
+  margin-top: 10px;
+  font-size: min(4.4vw, 54px);
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  color: var(--vp-c-text-1);
+  text-transform: uppercase;
+}
+
+/* 标题锚点 # 常显,遮挡视觉,全站隐藏(原生锚点跳转不受影响) */
+.vp-doc .header-anchor {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  .hero-section {
+    padding-top: 40px;
+    padding-bottom: 48px;
+    text-align: center;
+  }
+  .hero-inner {
+    flex-direction: column;
+    gap: 28px;
+    padding: 0 20px;
+  }
+  .hero-main h1 {
+    font-size: 34px;
+  }
+  .hero-subtitle {
+    font-size: 18px;
+  }
+  .hero-links {
+    justify-content: center;
+  }
+  .brand-wiki {
+    font-size: min(26vw, 130px);
+  }
+  .brand-name {
+    font-size: 22px;
+  }
 }
 </style>
