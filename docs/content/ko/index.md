@@ -13,7 +13,7 @@ outline: false
 # Juxi Technology Wiki
 
 <p class="hero-subtitle">로보틱스 및 AI 하드웨어 오픈 문서 플랫폼</p>
-<p class="hero-desc">로봇 암부터 센서까지, 스마트 로봇 시스템 구축 지원</p>
+<p class="hero-desc">Juxi Technology 는 선전 첸하이에 기반을 두고 &quot;With Hong Kong · For the Mainland · To the World&quot; 의 이념 아래 물리 AI, 구체적 로봇공학, 엣지 AI 를 개발하여 전 세계 개발자에게 오픈소스 솔루션을 제공합니다.</p>
 
 <div class="hero-links three">
   <a :href="withBase('/ko/tutorials/')" class="hero-btn primary">🚀 시작하기</a>
@@ -426,29 +426,51 @@ const storeUrl = computed(() => {
 
 @media (max-width: 767px) {
   .hero-section {
-    padding-top: 40px;
-    padding-bottom: 48px;
-    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 40px;
+    text-align: left;
   }
+  /* 移动端参照 Seeed:先巨型品牌字,再标题 → 描述 → 按钮,整体左对齐 */
   .hero-inner {
     flex-direction: column;
-    gap: 28px;
+    gap: 20px;
     padding: 0 20px;
   }
-  .hero-main h1 {
-    font-size: 34px;
-  }
-  .hero-subtitle {
-    font-size: 18px;
-  }
-  .hero-links {
-    justify-content: center;
+  .hero-brand {
+    order: -1;
+    flex: none;
+    align-items: flex-start;
+    margin-bottom: 12px;
   }
   .brand-wiki {
-    font-size: min(26vw, 130px);
+    font-size: min(30vw, 130px);
   }
   .brand-name {
+    font-size: min(8vw, 56px);
+    margin-top: 6px;
+  }
+  .hero-main h1 {
+    font-size: 40px;
+    text-align: left;
+  }
+  .hero-subtitle {
     font-size: 22px;
+  }
+  .hero-desc {
+    font-size: 17px;
+    max-width: none;
+  }
+  /* 主按钮整行,其余两枚一行(参照 Getting Started + 两枚黑胶囊) */
+  .hero-links {
+    gap: 10px;
+  }
+  .hero-btn.primary {
+    flex: 1 1 100%;
+  }
+  .hero-btn {
+    flex: 1 1 calc(50% - 6px);
+    padding: 12px 20px;
+    font-size: 15px;
   }
 }
 </style>

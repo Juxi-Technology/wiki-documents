@@ -13,7 +13,7 @@ outline: false
 # 钜犀科技 Wiki
 
 <p class="hero-subtitle">机器人与 AI 硬件的开放文档平台</p>
-<p class="hero-desc">从机械臂到传感器，助你搭建智能机器人系统</p>
+<p class="hero-desc">钜犀科技(Juxi Technology)立足深圳前海，秉持“依托香港、服务内地、面向世界”的理念。我们发展物理 AI、具身机器人与边缘 AI，向全球开发者提供开源解决方案。</p>
 
 <div class="hero-links four">
   <a :href="withBase('/zh-hans/tutorials/')" class="hero-btn primary">🚀 快速开始</a>
@@ -474,29 +474,51 @@ const storeUrl = computed(() => {
 
 @media (max-width: 767px) {
   .hero-section {
-    padding-top: 40px;
-    padding-bottom: 48px;
-    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 40px;
+    text-align: left;
   }
+  /* 移动端参照 Seeed:先巨型品牌字,再标题 → 描述 → 按钮,整体左对齐 */
   .hero-inner {
     flex-direction: column;
-    gap: 28px;
+    gap: 20px;
     padding: 0 20px;
   }
-  .hero-main h1 {
-    font-size: 34px;
-  }
-  .hero-subtitle {
-    font-size: 18px;
-  }
-  .hero-links {
-    justify-content: center;
+  .hero-brand {
+    order: -1;
+    flex: none;
+    align-items: flex-start;
+    margin-bottom: 12px;
   }
   .brand-wiki {
-    font-size: min(26vw, 130px);
+    font-size: min(30vw, 130px);
   }
   .brand-name {
+    font-size: min(8vw, 56px);
+    margin-top: 6px;
+  }
+  .hero-main h1 {
+    font-size: 40px;
+    text-align: left;
+  }
+  .hero-subtitle {
     font-size: 22px;
+  }
+  .hero-desc {
+    font-size: 17px;
+    max-width: none;
+  }
+  /* 主按钮整行,其余两枚一行(参照 Getting Started + 两枚黑胶囊) */
+  .hero-links {
+    gap: 10px;
+  }
+  .hero-btn.primary {
+    flex: 1 1 100%;
+  }
+  .hero-btn {
+    flex: 1 1 calc(50% - 6px);
+    padding: 12px 20px;
+    font-size: 15px;
   }
 }
 </style>

@@ -13,7 +13,7 @@ outline: false
 # Juxi Technology Wiki
 
 <p class="hero-subtitle">Plateforme documentaire ouverte pour la robotique & l'IA matérielle</p>
-<p class="hero-desc">Des bras robotiques aux capteurs — construisez votre système robotique intelligent</p>
+<p class="hero-desc">Juxi Technology, basée à Qianhai Shenzhen, suit &quot;With Hong Kong · For the Mainland · To the World&quot;. Nous développons l&apos;IA physique, la robotique incarnée et l&apos;IA de périphérie, fournissant des solutions open source aux développeurs du monde entier.</p>
 
 <div class="hero-links three">
   <a :href="withBase('/fr/tutorials/')" class="hero-btn primary">🚀 Commencer</a>
@@ -426,29 +426,51 @@ const storeUrl = computed(() => {
 
 @media (max-width: 767px) {
   .hero-section {
-    padding-top: 40px;
-    padding-bottom: 48px;
-    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 40px;
+    text-align: left;
   }
+  /* 移动端参照 Seeed:先巨型品牌字,再标题 → 描述 → 按钮,整体左对齐 */
   .hero-inner {
     flex-direction: column;
-    gap: 28px;
+    gap: 20px;
     padding: 0 20px;
   }
-  .hero-main h1 {
-    font-size: 34px;
-  }
-  .hero-subtitle {
-    font-size: 18px;
-  }
-  .hero-links {
-    justify-content: center;
+  .hero-brand {
+    order: -1;
+    flex: none;
+    align-items: flex-start;
+    margin-bottom: 12px;
   }
   .brand-wiki {
-    font-size: min(26vw, 130px);
+    font-size: min(30vw, 130px);
   }
   .brand-name {
+    font-size: min(8vw, 56px);
+    margin-top: 6px;
+  }
+  .hero-main h1 {
+    font-size: 40px;
+    text-align: left;
+  }
+  .hero-subtitle {
     font-size: 22px;
+  }
+  .hero-desc {
+    font-size: 17px;
+    max-width: none;
+  }
+  /* 主按钮整行,其余两枚一行(参照 Getting Started + 两枚黑胶囊) */
+  .hero-links {
+    gap: 10px;
+  }
+  .hero-btn.primary {
+    flex: 1 1 100%;
+  }
+  .hero-btn {
+    flex: 1 1 calc(50% - 6px);
+    padding: 12px 20px;
+    font-size: 15px;
   }
 }
 </style>
