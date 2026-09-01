@@ -96,8 +96,19 @@ const is404 = computed(() => page.value.isNotFound === true || /404/.test(page.v
    localNav 上移钻进固定 nav 底下被裁上半;补回流位,并把 sticky 吸附基准
    从视口顶改为 nav 底边(滚动后 nav 固定,吸附点必须同步,否则整行被 nav 盖住) */
 .VPLocalNav {
+  /* 官方自带 padding-top: var(--vp-layout-top-height)(吸附时"模拟 banner 高度"用);
+     导航固定顶部后,顶部状态下它显示为 Menu 行上方一段真实空白带;
+     去掉后 Menu 行全程紧贴导航底(滚动后 var 归零时它本为 0,无视觉回归) */
+  padding-top: 0 !important;
   margin-top: var(--vp-nav-height);
   top: calc(var(--vp-layout-top-height, 0px) + var(--vp-nav-height)) !important;
+}
+
+/* 空态(无大纲且无侧栏,如首页滚动后出现 "Return to top")官方会转为
+   position:fixed——fixed 的 top 与 margin-top 叠加导致偏移翻倍(56+56=112),
+   fixed 状态不占文档流,补流 margin 应清零 */
+.VPLocalNav.fixed {
+  margin-top: 0;
 }
 
 /* 官方断点:menu≥768 显示但 7 项菜单在 768-959 必然溢出(官方无兜底),
