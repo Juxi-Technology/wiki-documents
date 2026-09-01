@@ -456,10 +456,10 @@ const storeUrl = computed(() => {
 }
 
 .brand-wiki {
-  font-family: "Avenir Next", "Century Gothic", "Futura", "Poppins", "Montserrat", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-size: min(15vw, 200px);
-  font-weight: 900;
-  letter-spacing: -0.05em;
+  font-weight: 800;
+  letter-spacing: -0.03em;
   background: linear-gradient(180deg, #9fdc5a 0%, #35c47f 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -468,10 +468,10 @@ const storeUrl = computed(() => {
 
 .brand-name {
   margin-top: 10px;
-  font-family: "Avenir Next", "Century Gothic", "Futura", "Poppins", "Montserrat", "Helvetica Neue", sans-serif;
-  font-size: min(3.2vw, 40px);
-  font-weight: 800;
-  letter-spacing: 0.1em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: min(3vw, 38px);
+  font-weight: 700;
+  letter-spacing: 0.16em;
   color: var(--vp-c-text-1);
   text-transform: uppercase;
 }
