@@ -91,6 +91,15 @@ const is404 = computed(() => page.value.isNotFound === true || /404/.test(page.v
   display: none !important;
 }
 
+/* VPLocalNav(<960 的 "Menu ⏤ On this page" 行)官方 <960 依赖 VPNav 占文档流
+   (relative)排位,而我们将 VPNav 全面改为 fixed(脱流)→ 流缺 nav-height,
+   localNav 上移钻进固定 nav 底下被裁上半;补回流位,并把 sticky 吸附基准
+   从视口顶改为 nav 底边(滚动后 nav 固定,吸附点必须同步,否则整行被 nav 盖住) */
+.VPLocalNav {
+  margin-top: var(--vp-nav-height);
+  top: calc(var(--vp-layout-top-height, 0px) + var(--vp-nav-height)) !important;
+}
+
 /* 官方断点:menu≥768 显示但 7 项菜单在 768-959 必然溢出(官方无兜底),
    此区间收进官方汉堡菜单;VPNavScreen 官方 CSS 在 ≥768 强制 display:none,
    需一并覆盖否则出现"✕ 已点击但菜单不出现"的死锁 */
