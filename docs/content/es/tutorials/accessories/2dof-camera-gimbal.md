@@ -77,15 +77,15 @@ while True:
 
 **Q: ¿La conexión serie falla?**
 
-Verificar el puerto. Windows `COMx`, Linux `/dev/ttyUSBx`.
+**A:** Verificar el puerto. Windows `COMx`, Linux `/dev/ttyUSBx`.
 
 **Q: ¿El servo no responde?**
 
-Verificar alimentación (SCS: 6-8.4V externa).
+**A:** Verificar alimentación (SCS: 6-8.4V externa).
 
 **Q: ¿Seguimiento inestable?**
 
-Ajustar PID, reducir resolución.
+**A:** Ajustar PID, reducir resolución.
 
 ## Soporte
 

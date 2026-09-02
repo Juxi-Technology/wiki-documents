@@ -89,15 +89,15 @@ python3 imu_calibration_tool.py --mode i2c --port 1 --calibrate temp
 
 **Q: Attitude still drifts after calibration?**
 
-Verify full calibration (`imu`) was executed; check the IMU is firmly mounted (vibration adds noise); add temperature calibration for large thermal changes.
+**A:** Verify full calibration (`imu`) was executed; check the IMU is firmly mounted (vibration adds noise); add temperature calibration for large thermal changes.
 
 **Q: Magnetometer calibration fails?**
 
-Strong magnetic interference in the environment; verify the `--calibrate mag` flag; ensure full-orientation rotation during calibration.
+**A:** Strong magnetic interference in the environment; verify the `--calibrate mag` flag; ensure full-orientation rotation during calibration.
 
 **Q: What value for `--port` in I2C mode?**
 
-Your host's I2C bus number. Default 1 on Raspberry Pi; check STM32's hardware I2C mapping; verify with `i2cdetect -l`.
+**A:** Your host's I2C bus number. Default 1 on Raspberry Pi; check STM32's hardware I2C mapping; verify with `i2cdetect -l`.
 
 ---
 

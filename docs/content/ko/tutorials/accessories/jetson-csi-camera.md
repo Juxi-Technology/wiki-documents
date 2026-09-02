@@ -136,15 +136,15 @@ cv2.destroyAllWindows()
 
 **Q: 카메라가 인식되지 않나요?**
 
-먼저 플랫 케이블 연결과 방향을 확인하세요. `ls /dev/video*`로 디바이스 노드를 확인합니다. 그래도 인식되지 않으면 JetPack을 재설치해 보세요.
+**A:** 먼저 플랫 케이블 연결과 방향을 확인하세요. `ls /dev/video*`로 디바이스 노드를 확인합니다. 그래도 인식되지 않으면 JetPack을 재설치해 보세요.
 
 **Q: GStreamer 파이프라인 오류가 발생하나요?**
 
-JetPack 버전이 5.0 이상인지 확인하세요. `apt list --installed | grep nvarguscamerasrc`로 관련 GStreamer 플러그인이 설치되었는지 확인합니다.
+**A:** JetPack 버전이 5.0 이상인지 확인하세요. `apt list --installed | grep nvarguscamerasrc`로 관련 GStreamer 플러그인이 설치되었는지 확인합니다.
 
 **Q: 카메라를 전환하려면?**
 
-`sensor-id` 매개변수를 변경하세요: `sensor_id=0`은 첫 번째 카메라, `sensor_id=1`은 두 번째입니다.
+**A:** `sensor-id` 매개변수를 변경하세요: `sensor_id=0`은 첫 번째 카메라, `sensor_id=1`은 두 번째입니다.
 
 ## 기술 지원
 

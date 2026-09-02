@@ -117,15 +117,15 @@ gst-launch-1.0 v4l2src device=/dev/video0 ! videoconvert ! autovideosink
 
 **Q: ¿La cámara no se reconoce?**
 
-Compruebe que el cable USB esté bien conectado. Pruebe con otro puerto USB. Ejecute `lsusb` para ver la lista de dispositivos USB.
+**A:** Compruebe que el cable USB esté bien conectado. Pruebe con otro puerto USB. Ejecute `lsusb` para ver la lista de dispositivos USB.
 
 **Q: ¿La imagen está borrosa?**
 
-La cámara tiene enfoque automático: tras la primera conexión, espere 2-3 segundos a que se ajuste automáticamente. Si sigue borrosa, compruebe que la lente esté limpia.
+**A:** La cámara tiene enfoque automático: tras la primera conexión, espere 2-3 segundos a que se ajuste automáticamente. Si sigue borrosa, compruebe que la lente esté limpia.
 
 **Q: ¿Cómo cambio la resolución?**
 
-Use `cap.set(cv2.CAP_PROP_FRAME_WIDTH, width)` y `cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)`.
+**A:** Use `cap.set(cv2.CAP_PROP_FRAME_WIDTH, width)` y `cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)`.
 
 ## Soporte técnico
 

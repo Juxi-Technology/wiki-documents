@@ -98,15 +98,15 @@ ros2 launch pkg file.launch.py # Launch
 
 **Q: `source /opt/ros/humble/setup.bash` errors?**
 
-Verify your installed version and path; on Jetson, activate conda first if used.
+**A:** Verify your installed version and path; on Jetson, activate conda first if used.
 
 **Q: Port permission errors?**
 
-`sudo chmod 666 /dev/ttyACM*`.
+**A:** `sudo chmod 666 /dev/ttyACM*`.
 
 **Q: Using Jetson?**
 
-Watch PyTorch compatibility — see [Jetson PyTorch Compatibility](/tutorials/learning-resources/jetson-orin-pytorch-compatibility).
+**A:** Watch PyTorch compatibility — see [Jetson PyTorch Compatibility](/tutorials/learning-resources/jetson-orin-pytorch-compatibility).
 
 ---
 

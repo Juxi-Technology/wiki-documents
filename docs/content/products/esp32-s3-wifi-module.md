@@ -80,19 +80,19 @@ Type-C to PC for one-click firmware upgrade; switch recognition targets via UART
 
 **Q: How to watch live video?**
 
-The module creates an AP hotspot — connect and open the provided page/App.
+**A:** The module creates an AP hotspot — connect and open the provided page/App.
 
 **Q: What recognition is supported?**
 
-Color threshold segmentation + lightweight CNN: color, face, QR code, switchable via commands.
+**A:** Color threshold segmentation + lightweight CNN: color, face, QR code, switchable via commands.
 
 **Q: Can it return detection coordinates?**
 
-Yes — via I2C/UART interfaces for secondary development.
+**A:** Yes — via I2C/UART interfaces for secondary development.
 
 **Q: How to update firmware?**
 
-Type-C to PC, one-click upgrade.
+**A:** Type-C to PC, one-click upgrade.
 
 ---
 

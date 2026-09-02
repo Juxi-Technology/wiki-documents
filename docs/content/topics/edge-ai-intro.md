@@ -88,19 +88,19 @@ context = engine.create_execution_context()
 
 **Q: TensorRT errors with `Unsupported layer`?**
 
-The model has operators TensorRT doesn't support. Try: newer TensorRT, `onnx-simplifier`, lower opset.
+**A:** The model has operators TensorRT doesn't support. Try: newer TensorRT, `onnx-simplifier`, lower opset.
 
 **Q: Does fp16 hurt accuracy?**
 
-Most CV models are nearly lossless; validate mAP for detection/segmentation.
+**A:** Most CV models are nearly lossless; validate mAP for detection/segmentation.
 
 **Q: Out of memory (workspace)?**
 
-Lower workspace or input resolution; the 16GB model is more comfortable.
+**A:** Lower workspace or input resolution; the 16GB model is more comfortable.
 
 **Q: Still slow with TensorRT?**
 
-Verify GPU is actually used (`nvidia-smi`); avoid repeated GPU↔CPU copies.
+**A:** Verify GPU is actually used (`nvidia-smi`); avoid repeated GPU↔CPU copies.
 
 ---
 

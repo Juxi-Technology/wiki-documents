@@ -117,15 +117,15 @@ gst-launch-1.0 v4l2src device=/dev/video0 ! videoconvert ! autovideosink
 
 **Q: 카메라가 인식되지 않나요?**
 
-USB 케이블이 단단히 연결되었는지 확인하세요. 다른 USB 포트를 시도해 보세요. `lsusb`로 USB 장치 목록을 확인합니다.
+**A:** USB 케이블이 단단히 연결되었는지 확인하세요. 다른 USB 포트를 시도해 보세요. `lsusb`로 USB 장치 목록을 확인합니다.
 
 **Q: 화면이 흐릿한가요?**
 
-카메라는 자동 초점 기능이 있으며, 처음 연결 후 2~3초 뒤 자동으로 초점이 맞춰집니다. 여전히 흐리면 렌즈 표면이 깨끗한지 확인하세요.
+**A:** 카메라는 자동 초점 기능이 있으며, 처음 연결 후 2~3초 뒤 자동으로 초점이 맞춰집니다. 여전히 흐리면 렌즈 표면이 깨끗한지 확인하세요.
 
 **Q: 해상도를 어떻게 변경하나요?**
 
-`cap.set(cv2.CAP_PROP_FRAME_WIDTH, width)`와 `cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)`를 사용합니다.
+**A:** `cap.set(cv2.CAP_PROP_FRAME_WIDTH, width)`와 `cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)`를 사용합니다.
 
 ## 기술 지원
 

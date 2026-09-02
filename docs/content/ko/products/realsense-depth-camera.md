@@ -108,13 +108,15 @@ lerobot-teleoperate \
 
 **Q: 모델은 어떻게 선택하나요?**
 
+**A:**
+
 - 이동 로봇 내비게이션/환경 재구성 → D435i(중장거리, IMU 포함)
 - 로봇 팔 파지/근거리 인식 → D405(초소형 고정밀)
 - 저조도/복잡한 환경 → D405CB(D405 강화판)
 
 **Q: Jetson을 지원하나요?**
 
-네. pyrealsense2를 Jetson 플랫폼에 직접 설치할 수 있으며 SO-ARM101 튜토리얼의 LeRobot 흐름과 호환됩니다.
+**A:** 네. pyrealsense2를 Jetson 플랫폼에 직접 설치할 수 있으며 SO-ARM101 튜토리얼의 LeRobot 흐름과 호환됩니다.
 
 ## 지원
 

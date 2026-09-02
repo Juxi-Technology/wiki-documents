@@ -102,15 +102,15 @@ sudo resize2fs /dev/nvme0n1p1                    # según el dispositivo real
 
 **Q: ¿Sin WiFi tras el flasheo?**
 
-Las placas core Orin requieren un módulo WiFi M.2 externo; revise las antenas de doble banda.
+**A:** Las placas core Orin requieren un módulo WiFi M.2 externo; revise las antenas de doble banda.
 
 **Q: ¿Cómo entrar en modo Recovery?**
 
-Apagar → mantener REC (o BOOT) y conectar alimentación/Type-C → si `lsusb` muestra `NVIDIA Corp.` = éxito.
+**A:** Apagar → mantener REC (o BOOT) y conectar alimentación/Type-C → si `lsusb` muestra `NVIDIA Corp.` = éxito.
 
 **Q: ¿Cuánto almacenamiento se necesita?**
 
-Se recomiendan ≥128 GB SSD (las SD son un cuello de botella de escritura). 256 GB es la configuración estándar del kit.
+**A:** Se recomiendan ≥128 GB SSD (las SD son un cuello de botella de escritura). 256 GB es la configuración estándar del kit.
 
 ---
 

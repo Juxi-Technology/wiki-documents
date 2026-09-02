@@ -105,15 +105,15 @@ cv2.destroyAllWindows()
 
 **Q: Camera not detected?**
 
-Verify the ribbon cable is correctly connected and oriented. Run `ls /dev/video*`. If still not detected, try re-flashing JetPack.
+**A:** Verify the ribbon cable is correctly connected and oriented. Run `ls /dev/video*`. If still not detected, try re-flashing JetPack.
 
 **Q: GStreamer pipeline errors?**
 
-Ensure JetPack ≥ 5.0. Run `apt list --installed | grep nvarguscamerasrc` to verify GStreamer plugins.
+**A:** Ensure JetPack ≥ 5.0. Run `apt list --installed | grep nvarguscamerasrc` to verify GStreamer plugins.
 
 **Q: How to switch cameras?**
 
-Change the `sensor-id` parameter: `sensor_id=0` for first camera, `sensor_id=1` for second.
+**A:** Change the `sensor-id` parameter: `sensor_id=0` for first camera, `sensor_id=1` for second.
 
 ## Support
 

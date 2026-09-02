@@ -64,16 +64,18 @@ lerobot-record \
 
 **Q: Why can it grasp irregular/fragile items?**
 
-The flexible TPU adapts to object shapes with even force, avoiding damage.
+**A:** The flexible TPU adapts to object shapes with even force, avoiding damage.
 
 **Q: How to choose a camera?**
+
+**A:**
 
 - Zoom 30FPS: flexible focal length for variable-distance vision
 - Fixed 60FPS: high frame rate for fast motion capture
 
 **Q: Which platforms?**
 
-SO-ARM101 / XLerobot arms, compatible with ACT, Smolvla, Pi0 LeRobot frameworks.
+**A:** SO-ARM101 / XLerobot arms, compatible with ACT, Smolvla, Pi0 LeRobot frameworks.
 
 ---
 

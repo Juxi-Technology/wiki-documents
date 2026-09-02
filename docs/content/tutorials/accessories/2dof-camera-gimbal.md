@@ -148,15 +148,15 @@ The repository's `examples/auto_tracking_demo.py` implements a complete auto-tra
 
 **Q: Serial port cannot connect?**
 
-Verify the correct port name. Windows uses `COMx`, Linux uses `/dev/ttyUSBx`. Run `python examples/list_ports.py` to list available ports.
+**A:** Verify the correct port name. Windows uses `COMx`, Linux uses `/dev/ttyUSBx`. Run `python examples/list_ports.py` to list available ports.
 
 **Q: Servo not responding?**
 
-Check if the servo power supply is sufficient. SCS servos require external power (6-8.4V).
+**A:** Check if the servo power supply is sufficient. SCS servos require external power (6-8.4V).
 
 **Q: Tracking is unstable?**
 
-Adjust PID parameters and tracking frequency. Reducing frame resolution can improve real-time performance.
+**A:** Adjust PID parameters and tracking frequency. Reducing frame resolution can improve real-time performance.
 
 ## Support
 

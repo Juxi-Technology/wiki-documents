@@ -136,15 +136,15 @@ cv2.destroyAllWindows()
 
 **Q: Kamera wird nicht erkannt?**
 
-Prüfen Sie zuerst Kabelanschluss und Ausrichtung. Führen Sie `ls /dev/video*` aus, um den Geräteknoten zu prüfen. Falls weiterhin nicht erkannt, installieren Sie JetPack neu.
+**A:** Prüfen Sie zuerst Kabelanschluss und Ausrichtung. Führen Sie `ls /dev/video*` aus, um den Geräteknoten zu prüfen. Falls weiterhin nicht erkannt, installieren Sie JetPack neu.
 
 **Q: Fehler in der GStreamer-Pipeline?**
 
-Stellen Sie sicher, dass JetPack ≥ 5.0 ist. Prüfen Sie mit `apt list --installed | grep nvarguscamerasrc`, ob die GStreamer-Plugins installiert sind.
+**A:** Stellen Sie sicher, dass JetPack ≥ 5.0 ist. Prüfen Sie mit `apt list --installed | grep nvarguscamerasrc`, ob die GStreamer-Plugins installiert sind.
 
 **Q: Wie wechsle ich die Kamera?**
 
-Ändern Sie den Parameter `sensor-id`: `sensor_id=0` für die erste, `sensor_id=1` für die zweite Kamera.
+**A:** Ändern Sie den Parameter `sensor-id`: `sensor_id=0` für die erste, `sensor_id=1` für die zweite Kamera.
 
 ## Technischer Support
 

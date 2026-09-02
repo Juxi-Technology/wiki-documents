@@ -88,19 +88,19 @@ context = engine.create_execution_context()
 
 **Q: TensorRT가 `Unsupported layer` 보고?**
 
-모델에 TensorRT가 지원하지 않는 연산자(동적 제어 흐름 등)가 있음. 대응: 새 TensorRT 버전, ONNX 단순화 도구(`onnx-simplifier`), opset 낮추기.
+**A:** 모델에 TensorRT가 지원하지 않는 연산자(동적 제어 흐름 등)가 있음. 대응: 새 TensorRT 버전, ONNX 단순화 도구(`onnx-simplifier`), opset 낮추기.
 
 **Q: fp16 정밀도 영향이 큰가요?**
 
-대부분의 CV 모델은 거의 무손실. 검출/분할 태스크는 mAP 실제 비교 권장.
+**A:** 대부분의 CV 모델은 거의 무손실. 검출/분할 태스크는 mAP 실제 비교 권장.
 
 **Q: 메모리 부족(workspace)?**
 
-tensorrt engine의 workspace 또는 입력 해상도 낮추기. Orin 16GB 버전이 여유 있음.
+**A:** tensorrt engine의 workspace 또는 입력 해상도 낮추기. Orin 16GB 버전이 여유 있음.
 
 **Q: TensorRT인데도 느린가요?**
 
-실제로 GPU를 쓰는지 확인(`nvidia-smi` 관찰). GPU와 CPU 간 데이터 복사 반복이 없는지 확인.
+**A:** 실제로 GPU를 쓰는지 확인(`nvidia-smi` 관찰). GPU와 CPU 간 데이터 복사 반복이 없는지 확인.
 
 ---
 

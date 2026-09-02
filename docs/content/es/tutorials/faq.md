@@ -12,23 +12,23 @@ Preguntas frecuentes por categoría de producto.
 
 **Q: ¿El puerto no se detecta?**
 
-Comprobar con `lerobot-find-port`. En Linux: `sudo chmod 666 /dev/ttyACM*`.
+**A:** Comprobar con `lerobot-find-port`. En Linux: `sudo chmod 666 /dev/ttyACM*`.
 
 **Q: Error `Could not connect on port "/dev/ttyACM0"`?**
 
-Verificar que `/dev/ttyACM*` existe y los permisos son correctos.
+**A:** Verificar que `/dev/ttyACM*` existe y los permisos son correctos.
 
 ## Sensores · IMU
 
 **Q: ¿Los datos del IMU derivan?**
 
-Ejecutar la [calibración](/es/tutorials/sensors/imu/calibration). Verificar la fijación.
+**A:** Ejecutar la [calibración](/es/tutorials/sensors/imu/calibration). Verificar la fijación.
 
 ## Accesorios · KWS
 
 **Q: ¿El módulo de voz no responde?**
 
-Verificar el flasheo del firmware. Ver [descarga de firmware](/es/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words).
+**A:** Verificar el flasheo del firmware. Ver [descarga de firmware](/es/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words).
 
 ## General
 

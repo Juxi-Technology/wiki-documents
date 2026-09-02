@@ -14,27 +14,27 @@ Frequently asked questions across Juxi Technology products, organized by categor
 
 **Q: Robot arm port not detected?**
 
-Run `lerobot-find-port` to find the port. Confirm USB connections — leader/follower arms on their respective ports. On Linux, grant serial permissions: `sudo chmod 666 /dev/ttyACM*`.
+**A:** Run `lerobot-find-port` to find the port. Confirm USB connections — leader/follower arms on their respective ports. On Linux, grant serial permissions: `sudo chmod 666 /dev/ttyACM*`.
 
 **Q: Getting `Could not connect on port "/dev/ttyACM0"`?**
 
-Verify `/dev/ttyACM*` exists and permissions are granted, then retry.
+**A:** Verify `/dev/ttyACM*` exists and permissions are granted, then retry.
 
 **Q: `Magnitude 30841 exceeds 2047` during calibration?**
 
-Power-cycle the robot arm and try calibrating again.
+**A:** Power-cycle the robot arm and try calibrating again.
 
 **Q: Servo error `ConnectionError: Failed to sync read 'Present_Position' on ids=[1,...,6]`?**
 
-Check that the arm for that port is powered and the bus servos are connected properly.
+**A:** Check that the arm for that port is powered and the bus servos are connected properly.
 
 **Q: `Motor 'gripper' was not found`?**
 
-Check servo communication cables and supply voltage.
+**A:** Check servo communication cables and supply voltage.
 
 **Q: GPU unavailable with PyTorch?**
 
-See [PyTorch Compatibility Issues on Jetson Orin](/tutorials/learning-resources/jetson-orin-pytorch-compatibility).
+**A:** See [PyTorch Compatibility Issues on Jetson Orin](/tutorials/learning-resources/jetson-orin-pytorch-compatibility).
 
 ---
 
@@ -42,15 +42,15 @@ See [PyTorch Compatibility Issues on Jetson Orin](/tutorials/learning-resources/
 
 **Q: IMU data drifts badly?**
 
-Run [full calibration](/tutorials/sensors/imu/calibration) first; confirm the module is firmly mounted; add temperature calibration for large thermal changes.
+**A:** Run [full calibration](/tutorials/sensors/imu/calibration) first; confirm the module is firmly mounted; add temperature calibration for large thermal changes.
 
 **Q: Magnetometer readings off?**
 
-Run magnetometer calibration — slowly rotate through all orientations during the process, away from motors and magnets.
+**A:** Run magnetometer calibration — slowly rotate through all orientations during the process, away from motors and magnets.
 
 **Q: No data in ROS topics?**
 
-Check serial permissions (`sudo chmod 666 /dev/ttyUSB*`) and port parameters in your launch file.
+**A:** Check serial permissions (`sudo chmod 666 /dev/ttyUSB*`) and port parameters in your launch file.
 
 ---
 
@@ -58,11 +58,11 @@ Check serial permissions (`sudo chmod 666 /dev/ttyUSB*`) and port parameters in 
 
 **Q: Voice module not responding?**
 
-Confirm factory firmware is flashed. Unflashed chips need burning first — see [Firmware Download & Burn](/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words).
+**A:** Confirm factory firmware is flashed. Unflashed chips need burning first — see [Firmware Download & Burn](/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words).
 
 **Q: No data from serial communication?**
 
-Verify baud rate matches the tutorial and wiring is correct (RX/TX crossed).
+**A:** Verify baud rate matches the tutorial and wiring is correct (RX/TX crossed).
 
 ---
 
@@ -70,11 +70,11 @@ Verify baud rate matches the tutorial and wiring is correct (RX/TX crossed).
 
 **Q: Initialization fails (init fail)?**
 
-Check wiring: I2C address default 0x57; UART baud 9600.
+**A:** Check wiring: I2C address default 0x57; UART baud 9600.
 
 **Q: Unstable readings?**
 
-Ensure good sensor-skin contact; keep the finger still.
+**A:** Ensure good sensor-skin contact; keep the finger still.
 
 ---
 
@@ -82,15 +82,15 @@ Ensure good sensor-skin contact; keep the finger still.
 
 **Q: Camera not detected?**
 
-Check USB cable and ports; run `ls /dev/video*` and `v4l2-ctl --list-devices`.
+**A:** Check USB cable and ports; run `ls /dev/video*` and `v4l2-ctl --list-devices`.
 
 **Q: CSI camera not recognized?**
 
-Check the ribbon cable orientation (metal contacts facing the board), connect only **while powered off**; verify JetPack ≥ 5.0.
+**A:** Check the ribbon cable orientation (metal contacts facing the board), connect only **while powered off**; verify JetPack ≥ 5.0.
 
 **Q: GStreamer pipeline error?**
 
-Confirm JetPack ≥ 5.0; check `apt list --installed | grep nvarguscamerasrc`.
+**A:** Confirm JetPack ≥ 5.0; check `apt list --installed | grep nvarguscamerasrc`.
 
 ---
 
@@ -98,19 +98,19 @@ Confirm JetPack ≥ 5.0; check `apt list --installed | grep nvarguscamerasrc`.
 
 **Q: 4K HDMI capture shows black screen?**
 
-Verify the HDMI interface type (HDMI/Micro HDMI/DP adapter) and use the right converter.
+**A:** Verify the HDMI interface type (HDMI/Micro HDMI/DP adapter) and use the right converter.
 
 **Q: OLED screen not lighting up?**
 
-Check I2C wiring (SCL/SDA); pin shorts can damage the host board.
+**A:** Check I2C wiring (SCL/SDA); pin shorts can damage the host board.
 
 **Q: USB sound card not detected?**
 
-Plug-and-play device; verify USB power; switch the default audio output device.
+**A:** Plug-and-play device; verify USB power; switch the default audio output device.
 
 **Q: 2-DOF gimbal servos not responding?**
 
-Check servo power supply (SCS servos need external 6-8.4V).
+**A:** Check servo power supply (SCS servos need external 6-8.4V).
 
 ---
 

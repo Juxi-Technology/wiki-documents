@@ -122,13 +122,15 @@ lerobot-teleoperate \\
 
 **Q: How to choose a model?**
 
+**A:**
+
 - Mobile robot navigation / reconstruction → D435i (mid-range, with IMU)
 - Robot arm grasping / close-range → D405 (compact, high precision)
 - Low-light / complex environments → D405CB (D405 enhanced)
 
 **Q: Does it support Jetson?**
 
-Yes. pyrealsense2 installs directly on Jetson and is compatible with the SO-ARM101 LeRobot workflow.
+**A:** Yes. pyrealsense2 installs directly on Jetson and is compatible with the SO-ARM101 LeRobot workflow.
 
 ---
 

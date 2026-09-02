@@ -117,15 +117,15 @@ gst-launch-1.0 v4l2src device=/dev/video0 ! videoconvert ! autovideosink
 
 **Q: 摄像头无法识别？**
 
-确认 USB 线缆连接牢固。尝试换一个 USB 端口。运行 `lsusb` 查看 USB 设备列表。
+**A:** 确认 USB 线缆连接牢固。尝试换一个 USB 端口。运行 `lsusb` 查看 USB 设备列表。
 
 **Q: 画面模糊？**
 
-摄像头具备自动对焦功能，首次连接后等待 2-3 秒自动对焦完成。如果仍然模糊，确认镜头表面清洁。
+**A:** 摄像头具备自动对焦功能，首次连接后等待 2-3 秒自动对焦完成。如果仍然模糊，确认镜头表面清洁。
 
 **Q: 如何调整分辨率？**
 
-使用 `cap.set(cv2.CAP_PROP_FRAME_WIDTH, width)` 和 `cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)`。
+**A:** 使用 `cap.set(cv2.CAP_PROP_FRAME_WIDTH, width)` 和 `cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)`。
 
 ## 技术支持
 

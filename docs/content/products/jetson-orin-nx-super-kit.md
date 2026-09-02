@@ -103,19 +103,19 @@ pip install -e ".[feetech]"
 
 **Q: How much faster than standard Orin NX?**
 
-1.7x faster (SUPER optimization).
+**A:** 1.7x faster (SUPER optimization).
 
 **Q: Do I need to install the OS myself?**
 
-No. Ubuntu 22.04 and 256GB SSD come preconfigured — power on and develop.
+**A:** No. Ubuntu 22.04 and 256GB SSD come preconfigured — power on and develop.
 
 **Q: Does it support SO-ARM101?**
 
-Fully compatible, with dedicated robot vision kits (camera + mounts) and seamless LeRobot integration.
+**A:** Fully compatible, with dedicated robot vision kits (camera + mounts) and seamless LeRobot integration.
 
 **Q: How noisy is the fan?**
 
-PWM ball-bearing fan is stable and quiet even at 40W full load, with 50,000-hour lifespan (10x more durable than hydraulic fans).
+**A:** PWM ball-bearing fan is stable and quiet even at 40W full load, with 50,000-hour lifespan (10x more durable than hydraulic fans).
 
 ---
 

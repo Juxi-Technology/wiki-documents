@@ -117,15 +117,15 @@ gst-launch-1.0 v4l2src device=/dev/video0 ! videoconvert ! autovideosink
 
 **Q: カメラが認識されない?**
 
-USBケーブルがしっかり接続されているか確認してください。別のUSBポートを試してください。`lsusb` でUSBデバイス一覧を確認します。
+**A:** USBケーブルがしっかり接続されているか確認してください。別のUSBポートを試してください。`lsusb` でUSBデバイス一覧を確認します。
 
 **Q: 映像がぼやける?**
 
-カメラはオートフォーカス機能を搭載しており、初回接続後2〜3秒で自動的にピントが合います。それでもぼやける場合は、レンズ表面の汚れを確認してください。
+**A:** カメラはオートフォーカス機能を搭載しており、初回接続後2〜3秒で自動的にピントが合います。それでもぼやける場合は、レンズ表面の汚れを確認してください。
 
 **Q: 解像度を変更するには?**
 
-`cap.set(cv2.CAP_PROP_FRAME_WIDTH, width)` と `cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)` を使用します。
+**A:** `cap.set(cv2.CAP_PROP_FRAME_WIDTH, width)` と `cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)` を使用します。
 
 ## 技術サポート
 

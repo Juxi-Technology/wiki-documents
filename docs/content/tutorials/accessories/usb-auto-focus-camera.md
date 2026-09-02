@@ -112,15 +112,15 @@ gst-launch-1.0 v4l2src device=/dev/video0 ! videoconvert ! autovideosink
 
 **Q: Camera not detected?**
 
-Ensure the USB cable is firmly connected. Try a different USB port. Run `lsusb` to check USB device list.
+**A:** Ensure the USB cable is firmly connected. Try a different USB port. Run `lsusb` to check USB device list.
 
 **Q: Blurry image?**
 
-The camera has auto-focus — wait 2-3 seconds after first connection. If still blurry, clean the lens surface.
+**A:** The camera has auto-focus — wait 2-3 seconds after first connection. If still blurry, clean the lens surface.
 
 **Q: How to change resolution?**
 
-Use `cap.set(cv2.CAP_PROP_FRAME_WIDTH, width)` and `cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)`.
+**A:** Use `cap.set(cv2.CAP_PROP_FRAME_WIDTH, width)` and `cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)`.
 
 ## Support
 
