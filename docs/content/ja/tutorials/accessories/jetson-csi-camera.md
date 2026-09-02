@@ -135,12 +135,15 @@ cv2.destroyAllWindows()
 ## よくある質問
 
 **Q: カメラが認識されない?**
+
 まずフラットケーブルの接続と向きを確認してください。`ls /dev/video*` でデバイスノードを確認します。それでも認識されない場合は JetPack を再インストールしてください。
 
 **Q: GStreamer パイプラインでエラーが出る?**
+
 JetPack バージョンが 5.0 以上であることを確認してください。`apt list --installed | grep nvarguscamerasrc` で関連する GStreamer プラグインがインストールされているか確認します。
 
 **Q: カメラを切り替えるには?**
+
 `sensor-id` パラメータを変更します: `sensor_id=0` が 1 台目、`sensor_id=1` が 2 台目です。
 
 ## 技術サポート

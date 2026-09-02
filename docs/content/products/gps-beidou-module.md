@@ -93,15 +93,19 @@ Supports ROS positioning nodes, combinable with IMU fusion and Move_Base navigat
 ## FAQ
 
 **Q: Slow positioning or no signal?**
+
 The antenna must be in an open area; check the connection; cold start takes 32s — be patient on first boot.
 
 **Q: How many satellite systems?**
+
 BDS, GPS, QZSS, GLONASS — single or any combination.
 
 **Q: Can I connect to an MCU?**
+
 Yes. TTL serial (PH2.0) supports MCU boards, with 51/Arduino/STM32 tutorials.
 
 **Q: Output format?**
+
 Standard NMEA 0183 protocol.
 
 ---

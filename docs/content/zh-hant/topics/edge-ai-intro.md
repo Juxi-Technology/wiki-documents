@@ -87,15 +87,19 @@ context = engine.create_execution_context()
 ## 5. 常見問題
 
 **Q: TensorRT 報 `Unsupported layer`?**
+
 模型裡有 TensorRT 不支持的算子。對策:換新版本 TensorRT、用 `onnx-simplifier`、降 opset。
 
 **Q: fp16 精度影響大嗎?**
+
 大多數 CV 模型幾乎無損;檢測/分割任務建議實測對比 mAP。
 
 **Q: 內存不足(workspace)?**
+
 降低 workspace 或輸入分辨率;Orin 16GB 版本更從容。
 
 **Q: 為什麼用 TensorRT 還是慢?**
+
 檢查是否真的用了 GPU(`nvidia-smi`);確認沒有在 GPU 與 CPU 間反复拷貝數據。
 
 ---

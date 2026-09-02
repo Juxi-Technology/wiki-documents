@@ -96,12 +96,15 @@ sudo resize2fs /dev/nvme0n1p1
 ## 5. FAQ
 
 **Q: No WiFi after flashing?**
+
 Orin core boards need an external M.2 WiFi module; check the dual-band antenna connection.
 
 **Q: How to enter Recovery mode?**
+
 Power off → hold REC (or BOOT) → power on / connect Type-C → verify `lsusb` shows `NVIDIA Corp.`.
 
 **Q: Storage requirement?**
+
 ≥128GB SSD recommended (SD cards are a bottleneck). 256GB is the kit standard.
 
 ---

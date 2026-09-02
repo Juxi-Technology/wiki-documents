@@ -135,12 +135,15 @@ cv2.destroyAllWindows()
 ## 常見問題
 
 **Q: 攝像頭未被識別？**
+
 首先確認排線連接正確且方向無誤。運行 `ls /dev/video*` 檢查裝置節點。如果仍未識別，嘗試重新安裝 JetPack。
 
 **Q: GStreamer 管道報錯？**
+
 確認 JetPack 版本 ≥ 5.0。運行 `apt list --installed | grep nvarguscamerasrc` 確認相關 GStreamer 插件已安裝。
 
 **Q: 如何切換攝像頭？**
+
 修改 `sensor-id` 參數：`sensor_id=0` 為第一個攝像頭，`sensor_id=1` 為第二個。
 
 ## 技術支援

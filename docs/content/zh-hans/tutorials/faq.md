@@ -13,21 +13,27 @@ keywords: [faq, 常见问题, 故障排除, troubleshooting]
 ## 机械臂 · SO-ARM101
 
 **Q: 机械臂无法识别端口?**
+
 运行 `lerobot-find-port` 查找端口。确认 USB 连接牢固,主动臂/从动臂分别插在 leader/follower 对应接口。Linux 下需要授权串口:`sudo chmod 666 /dev/ttyACM*`。
 
 **Q: 出现 `Could not connect on port "/dev/ttyACM0"` 报错?**
+
 确认 `/dev/ttyACM*` 存在且已授权串口权限,然后重试。
 
 **Q: 校准时报 `Magnitude 30841 exceeds 2047`?**
+
 对机械臂重新断电再上电,再次尝试校准。
 
 **Q: 舵机报 `ConnectionError: Failed to sync read 'Present_Position' on ids=[1,2,...,6]`?**
+
 检查对应端口号的机械臂是否接通电源,总线舵机是否连接正常。
 
 **Q: 出现 `Motor 'gripper' was not found`?**
+
 检查通讯线是否与舵机连接正常,电源电压是否正确。
 
 **Q: 需要更高版本的 PyTorch 但 GPU 不可用?**
+
 参考 [Jetson Orin 上 PyTorch 不兼容问题](/zh-hans/tutorials/learning-resources/jetson-orin-pytorch-compatibility)。
 
 ---
@@ -35,12 +41,15 @@ keywords: [faq, 常见问题, 故障排除, troubleshooting]
 ## 传感器 · IMU 惯导模块
 
 **Q: IMU 数据漂移严重?**
+
 先执行[整体校准](/zh-hans/tutorials/sensors/imu/calibration);确认模块固定牢固;环境温度变化大时补充温度校准。
 
 **Q: 磁力计数据不准?**
+
 执行磁力计校准,校准过程中水平缓慢旋转覆盖所有朝向,远离电机等强磁场源。
 
 **Q: ROS 话题收不到数据?**
+
 确认串口权限(`sudo chmod 666 /dev/ttyUSB*`),检查 launch 文件中的端口参数。
 
 ---
@@ -48,9 +57,11 @@ keywords: [faq, 常见问题, 故障排除, troubleshooting]
 ## 配件 · KWS 语音识别模块
 
 **Q: 语音模块没有响应?**
+
 确认已烧录出厂固件。未烧录固件的芯片到手后需要先烧录,参考[固件下载与烧录](/zh-hans/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words)。
 
 **Q: 串口通信无数据返回?**
+
 确认波特率与教程一致,接线无误(RX/TX 交叉)。
 
 ---
@@ -58,9 +69,11 @@ keywords: [faq, 常见问题, 故障排除, troubleshooting]
 ## 配件 · 心率血氧传感器
 
 **Q: 初始化失败(init fail)?**
+
 确认接线正确:IIC 模式下设备地址默认 0x57,UART 模式波特率 9600。
 
 **Q: 数据读数不稳定?**
+
 确保传感器与皮肤接触良好,手指平稳放置避免移动。
 
 ---
@@ -68,12 +81,15 @@ keywords: [faq, 常见问题, 故障排除, troubleshooting]
 ## 配件 · USB 摄像头 / CSI 摄像头
 
 **Q: 摄像头无法识别?**
+
 确认 USB 线缆连接牢固,换 USB 端口;运行 `ls /dev/video*` 与 `v4l2-ctl --list-devices` 查看设备。
 
 **Q: CSI 摄像头未被识别?**
+
 确认排线连接正确且方向无误(金属触点朝向主板),并在**断电状态**下连接;检查 JetPack 版本 ≥ 5.0。
 
 **Q: GStreamer 管道报错?**
+
 确认 JetPack 版本 ≥ 5.0,运行 `apt list --installed | grep nvarguscamerasrc` 确认 GStreamer 插件已安装。
 
 ---
@@ -81,15 +97,19 @@ keywords: [faq, 常见问题, 故障排除, troubleshooting]
 ## 配件 · 其他
 
 **Q: 4K HDMI 采集卡画面黑屏?**
+
 确认 HDMI 接口类型(HDMI/Micro HDMI/DP 转 HDMI),使用对应转接头。
 
 **Q: OLED 屏幕不亮?**
+
 检查 I2C 接线(SCL/SDA)是否正确,确认引脚无短路——接错可能导致主板硬件损坏。
 
 **Q: USB 免驱声卡无法识别?**
+
 即插即用设备,确认 USB 口供电正常,系统音频输出设备中切换默认设备。
 
 **Q: 2 自由度云台舵机不响应?**
+
 检查舵机电源供电是否充足(SCS 舵机需外部供电 6-8.4V)。
 
 ---

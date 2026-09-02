@@ -147,12 +147,15 @@ cv2.destroyAllWindows()
 ## 常见问题
 
 **Q: 串口无法连接？**
+
 确认端口号正确。Windows 使用 `COMx`，Linux 使用 `/dev/ttyUSBx`。运行 `python examples/list_ports.py` 列出可用端口。
 
 **Q: 舵机不响应？**
+
 检查舵机电源供电是否充足。SCS 舵机需要外部供电（6-8.4V）。
 
 **Q: 追踪不稳定？**
+
 调整 PID 参数和追踪频率。减少帧分辨率可以提升实时性。
 
 ## 技术支持

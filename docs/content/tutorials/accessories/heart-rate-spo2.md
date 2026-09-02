@@ -144,12 +144,15 @@ Juxi Technology provides a Windows visual host application for real-time heart r
 ## FAQ
 
 **Q: Initialization fails (init fail)?**
+
 Verify wiring is correct. For IIC mode, check the device address (default 0x57). For UART mode, confirm the baud rate is 9600.
 
 **Q: Unstable readings?**
+
 Ensure the sensor has good skin contact. Keep your finger steady on the sensor and avoid movement.
 
 **Q: How to use on Windows?**
+
 Refer to the example code and documentation in the repo's `python/windows/` directory.
 
 ## Support

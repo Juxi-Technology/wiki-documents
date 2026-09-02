@@ -102,15 +102,19 @@ lerobot-record \
 ## 7. FAQ
 
 **Q: Training is slow?**
+
 Data size, steps, and compute scale together; start with 50 episodes / 100k steps to validate the pipeline.
 
 **Q: Policy only does one action?**
+
 Single-task training needs multi-task datasets; GR00T/Pi0 foundation models can be fine-tuned with small data to multi-task.
 
 **Q: Jerky actions after training?**
+
 Check data quality (stable demos), add smoothing, lower the control frequency.
 
 **Q: Out of memory?**
+
 Reduce batch_size, lower image resolution, use the 16GB Jetson model.
 
 ---

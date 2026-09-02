@@ -87,15 +87,19 @@ context = engine.create_execution_context()
 ## 5. よくある質問
 
 **Q: TensorRT が `Unsupported layer` を報告?**
+
 モデルに TensorRT が未対応の演算子(動的制御フローなど)がある。対策: 新しい TensorRT バージョン、ONNX 簡略化ツール(`onnx-simplifier`)、opset 引き下げ。
 
 **Q: fp16 精度への影響は大きい?**
+
 ほとんどの CV モデルはほぼ無損失。検出/分割タスクは mAP の実測比較を推奨。
 
 **Q: メモリ不足(workspace)?**
+
 tensorrt engine の workspace または入力解像度を下げる。Orin 16GB 版なら余裕あり。
 
 **Q: TensorRT でも遅い?**
+
 本当に GPU を使っているか確認(`nvidia-smi` で監視)。GPU と CPU 間のデータコピー繰り返しがないか確認。
 
 ---

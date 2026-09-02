@@ -76,12 +76,15 @@ while True:
 ## FAQ
 
 **Q: La connessione seriale fallisce?**
+
 Verificare la porta. Windows `COMx`, Linux `/dev/ttyUSBx`.
 
 **Q: Il servo non risponde?**
+
 Verificare l'alimentazione (SCS: 6-8.4V esterna).
 
 **Q: Tracking instabile?**
+
 Regolare PID, ridurre la risoluzione.
 
 ## Supporto

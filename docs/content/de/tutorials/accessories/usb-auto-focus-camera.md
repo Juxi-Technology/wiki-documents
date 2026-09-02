@@ -116,12 +116,15 @@ gst-launch-1.0 v4l2src device=/dev/video0 ! videoconvert ! autovideosink
 ## Häufige Fragen
 
 **Q: Kamera wird nicht erkannt?**
+
 Prüfen Sie, ob das USB-Kabel fest sitzt. Versuchen Sie einen anderen USB-Port. Führen Sie `lsusb` aus, um die USB-Geräteliste anzuzeigen.
 
 **Q: Bild ist unscharf?**
+
 Die Kamera verfügt über Autofokus; nach dem ersten Anschließen dauert es 2–3 Sekunden, bis der Fokus automatisch eingestellt ist. Falls weiterhin unscharf, reinigen Sie die Linsenoberfläche.
 
 **Q: Wie ändere ich die Auflösung?**
+
 Verwenden Sie `cap.set(cv2.CAP_PROP_FRAME_WIDTH, width)` und `cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)`.
 
 ## Technischer Support

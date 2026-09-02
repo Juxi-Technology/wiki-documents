@@ -103,12 +103,15 @@ sudo resize2fs /dev/nvme0n1p1                    # 以实际设备为准
 ## 5. 常见问题
 
 **Q: 刷机后没有 WiFi?**
+
 Orin 系列核心板需外接 M.2 WiFi 模块;检查驱动的双频天线是否接好。
 
 **Q: 如何进入 Recovery 模式?**
+
 断电 → 按住 REC(或 BOOT)键 → 插入电源/Type-C → `lsusb` 确认出现 `NVIDIA Corp.` 设备即成功。
 
 **Q: 需要多大的存储?**
+
 建议 ≥128GB SSD(SD 卡写入速度瓶颈明显)。256GB 是开发套件标准配置。
 
 ---

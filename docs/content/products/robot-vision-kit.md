@@ -71,12 +71,15 @@ lerobot-record \
 ## FAQ
 
 **Q: Which camera?**
+
 60FPS fixed for fast motion capture (e.g., grasping); 30FPS autofocus zoom for variable-distance vision.
 
 **Q: Which training frameworks?**
+
 ACT, Smolvla, Pi0, Pi0.5, GR00T N1.5 — full coverage of mainstream embodied AI frameworks.
 
 **Q: Other arms?**
+
 SO-ARM101, LeKiwi, XLerobot, and other M3-hole compatible platforms.
 
 ---

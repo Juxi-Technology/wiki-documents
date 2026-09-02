@@ -100,15 +100,19 @@ lerobot-record \
 ## 7. Preguntas frecuentes
 
 **Q: ¿El entrenamiento es lento?**
+
 Cantidad de datos, steps y potencia son proporcionales. Empezar con 50 episodios / 100k steps, validar el flujo y luego escalar.
 
 **Q: ¿La política solo hace una acción?**
+
 El entrenamiento de una sola tarea necesita un dataset de tarea; los modelos de base GR00T/Pi0 se pueden ajustar a multitarea con pocos datos.
 
 **Q: ¿Los movimientos tiemblan tras entrenar?**
+
 Comprobar la calidad de los datos (demos estables), añadir filtro de suavizado, reducir la frecuencia de control.
 
 **Q: ¿Falta de memoria/VRAM?**
+
 Reducir batch_size, resolución de imagen; en Jetson usar la versión de 16 GB.
 
 ---

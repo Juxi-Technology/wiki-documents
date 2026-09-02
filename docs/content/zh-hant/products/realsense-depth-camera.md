@@ -121,11 +121,13 @@ lerobot-teleoperate \\
 ## 常見問題
 
 **Q: 如何選擇型號?**
+
 - 移動機器人導航/環境重建 → D435i(中遠距離,含 IMU)
 - 機械臂抓取/近距離識別 → D405(超緊湊高精度)
 - 弱光/複雜環境 → D405CB(D405 增強版)
 
 **Q: 支持 jetson 嗎?**
+
 支持。pyrealsense2 在 Jetson 平台可直接安裝,與 SO-ARM101 教程的 LeRobot 流程兼容。
 
 ---

@@ -144,12 +144,15 @@ JUXI ofrece un software para Windows que muestra en tiempo real las curvas de fr
 ## Preguntas frecuentes
 
 **Q: ¿Falla la inicialización (init fail)?**
+
 Verifique la conexión. En modo IIC, compruebe la dirección del dispositivo (0x57 por defecto). En modo UART, asegúrese de que la velocidad sea 9600.
 
 **Q: ¿Las lecturas son inestables?**
+
 Asegúrese de que el sensor esté en buen contacto con la piel. Coloque el dedo firmemente sobre el sensor y evite movimientos.
 
 **Q: ¿Cómo se usa en Windows?**
+
 Consulte los ejemplos y la documentación en la carpeta `python/windows/` del repositorio.
 
 ## Soporte técnico

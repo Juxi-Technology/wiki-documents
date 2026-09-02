@@ -67,15 +67,19 @@ The JUXI bus servo adapter is an all-in-one serial bus servo control solution de
 ## FAQ
 
 **Q: Which servos are supported?**
+
 Almost all mainstream serial bus servos (Feetech SCS/STS series, etc.).
 
 **Q: Do I need separate drivers?**
+
 No. Type-C connects to the host with plug-and-play servo control and data feedback.
 
 **Q: What is TVS protection for?**
+
 Prevents voltage spikes from damaging the board and servos, ensuring stable operation in complex environments.
 
 **Q: Which power adapter?**
+
 5V 6A for standard servos, 12V 5A for high-torque servos.
 
 ---

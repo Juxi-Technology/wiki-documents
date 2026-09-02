@@ -76,12 +76,15 @@ while True:
 ## FAQ
 
 **Q: Serielle Verbindung schlägt fehl?**
+
 Port prüfen. Windows `COMx`, Linux `/dev/ttyUSBx`.
 
 **Q: Servo reagiert nicht?**
+
 Servo-Stromversorgung prüfen (SCS: 6-8.4V extern).
 
 **Q: Tracking instabil?**
+
 PID anpassen, Auflösung reduzieren.
 
 ## Support

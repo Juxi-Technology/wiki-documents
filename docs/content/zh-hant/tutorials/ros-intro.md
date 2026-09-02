@@ -98,12 +98,15 @@ ros2 launch pkg file.launch.py  # 啟動 launch
 ## 常見問題
 
 **Q: `source /opt/ros/humble/setup.bash` 報錯?**
+
 確認安裝版本與實際路徑;Jetson 設備可能需要先激活 conda。
 
 **Q: 端口權限報錯?**
+
 串口設備授權:`sudo chmod 666 /dev/ttyACM*`。
 
 **Q: 想在 Jetson 上用?**
+
 Jetson 平台注意 PyTorch 版本兼容性,參考 [Jetson PyTorch 兼容性](/zh-hant/tutorials/learning-resources/jetson-orin-pytorch-compatibility)。
 
 ---

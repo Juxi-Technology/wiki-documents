@@ -144,12 +144,15 @@ JUXI bietet eine Windows-Software, die Herzfrequenz- und SpO2-Kurven in Echtzeit
 ## Häufige Fragen
 
 **Q: Initialisierung schlägt fehl (init fail)?**
+
 Prüfen Sie die Verkabelung. Im IIC-Modus die Geräteadresse prüfen (Standard 0x57). Im UART-Modus sicherstellen, dass die Baudrate 9600 beträgt.
 
 **Q: Messwerte sind instabil?**
+
 Stellen Sie sicher, dass der Sensor gut auf der Haut aufliegt. Legen Sie den Finger ruhig auf den Sensor und vermeiden Sie Bewegungen.
 
 **Q: Wie verwende ich es unter Windows?**
+
 Siehe die Beispiele und die Dokumentation im Ordner `python/windows/` des Repositories.
 
 ## Technischer Support

@@ -87,15 +87,19 @@ context = engine.create_execution_context()
 ## 5. Preguntas frecuentes
 
 **Q: ¿TensorRT reporta `Unsupported layer`?**
+
 El modelo contiene operadores no soportados (flujos de control dinámicos, etc.). Soluciones: versión de TensorRT más nueva, simplificador ONNX (`onnx-simplifier`), opset más bajo.
 
 **Q: ¿La precisión fp16 se ve afectada?**
+
 Casi sin pérdida en la mayoría de modelos CV; en detección/segmentación conviene comparar mAP en la práctica.
 
 **Q: ¿Memoria insuficiente (workspace)?**
+
 Reducir el workspace del engine o la resolución de entrada; la versión Orin de 16 GB es más holgada.
 
 **Q: ¿Por qué TensorRT sigue siendo lento?**
+
 Comprobar que se usa realmente la GPU (`nvidia-smi`); asegurar que no se copian datos repetidamente entre GPU y CPU.
 
 ---

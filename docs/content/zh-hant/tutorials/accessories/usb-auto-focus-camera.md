@@ -116,12 +116,15 @@ gst-launch-1.0 v4l2src device=/dev/video0 ! videoconvert ! autovideosink
 ## 常見問題
 
 **Q: 攝像頭無法識別？**
+
 確認 USB 線纜連接牢固。嘗試換一個 USB 端口。運行 `lsusb` 查看 USB 裝置列表。
 
 **Q: 畫面模糊？**
+
 攝像頭具備自動對焦功能，首次連接後等待 2-3 秒自動對焦完成。如果仍然模糊，確認鏡頭表面清潔。
 
 **Q: 如何調整分辨率？**
+
 使用 `cap.set(cv2.CAP_PROP_FRAME_WIDTH, width)` 和 `cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)`。
 
 ## 技術支援
