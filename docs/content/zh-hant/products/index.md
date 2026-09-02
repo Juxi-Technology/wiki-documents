@@ -20,8 +20,8 @@ outline: false
     <p class="pc-desc">鉅犀科技 4K HDMI 採集卡——4K 高清採集,HDMI/Micro HDMI/DP 多接口,USB 直連,採集直播錄屏</p>
   </a>
   <a :href="withBase('/zh-hant/products/amazinghand')" class="category-card">
-    <span class="pc-title">AmazingHand 開源靈巧手</span>
-    <p class="pc-desc">鉅犀科技 AmazingHand 開源仿生靈巧手——5 指多關節,TTL 總線控制,開源 CAD,具身智能與人機交互研究</p>
+    <span class="pc-title">AmazingHand 開源 4 指仿生手</span>
+    <p class="pc-desc">鉅犀科技 AmazingHand 開源4 指仿生手,TTL 總線控制,開源 CAD,具身智能與人機交互研究</p>
   </a>
   <a :href="withBase('/zh-hant/products/esp32-s3-wifi-module')" class="category-card">
     <span class="pc-title">ESP32-S3 WiFi 視頻模組</span>

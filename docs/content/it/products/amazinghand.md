@@ -1,20 +1,20 @@
 ---
-title: Mano dexterous AmazingHand
-description: Mano bionica open source di Juxi Technology — 5 dita multi-articolazione, controllo bus TTL, CAD aperto, ricerca IA incarnata e HRI
+title: Mano bionica AmazingHand
+description: Mano bionica open source a 4 dita di Juxi Technology, controllo bus TTL, CAD aperto, ricerca IA incarnata e HRI
 keywords: [amazinghand, mano dexterous, dexterous hand, ia incarnata]
 ---
 
-# Mano dexterous AmazingHand
+# Mano bionica AmazingHand
 
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/amazinghand)**
 
 ## Panoramica
 
-AmazingHand è la mano bionica open source di Juxi Technology, con design a 5 dita multi-articolazione e controllo tramite bus seriale TTL. I file CAD aperti consentono di personalizzare liberamente le dita per manipolazione fine, strategie di presa e ricerca nell'interazione uomo-robot (HRI).
+AmazingHand è la mano bionica open source a 4 dita di Juxi Technology e controllo tramite bus seriale TTL. I file CAD aperti consentono di personalizzare liberamente le dita per manipolazione fine, strategie di presa e ricerca nell'interazione uomo-robot (HRI).
 
 **Caratteristiche principali**:
 
-- 5 dita multi-articolazione, proporzioni simili alla mano umana
+- 4 dita, proporzioni simili alla mano umana
 - Controllo bus seriale TTL, compatibile con i controller più comuni
 - CAD/sorgente aperti, personalizzabili
 - Si combina con SO-ARM101 per piattaforme di manipolazione complete
@@ -27,7 +27,7 @@ AmazingHand è la mano bionica open source di Juxi Technology, con design a 5 di
 
 | Categoria | Specifica |
 |------|------|
-| Tipo | Mano 5 dita multi-articolazione |
+| Tipo | Mano bionica a 4 dita |
 | Controllo | Bus seriale TTL |
 | Ecosistema | SDK Python, ROS |
 | Open source | CAD/sorgente su GitHub |

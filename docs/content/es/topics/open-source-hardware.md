@@ -24,4 +24,4 @@ Nuestra ubicación en Qianhai nos sitúa en el centro de la fabricación global 
 
 Estamos ampliando nuestra línea de productos con más plataformas de inteligencia corporizada, herramientas de IA física y soluciones de computación en el borde. Todo abierto. Todo documentado. Todo construido para la comunidad. Sigue nuestro Wiki y blog para próximos lanzamientos, análisis técnicos en profundidad y muestras de la comunidad.
 
-> Páginas relacionadas: [Kit de desarrollo SO-ARM101](/products/so-arm101) · [Mano diestra AmazingHand](/products/amazinghand) · [Introducción a la IA corporizada (LeRobot)](/topics/embodied-ai-intro)
+> Páginas relacionadas: [Kit de desarrollo SO-ARM101](/products/so-arm101) · [Mano biónica AmazingHand](/products/amazinghand) · [Introducción a la IA corporizada (LeRobot)](/topics/embodied-ai-intro)

@@ -17,7 +17,7 @@ description: 钜犀科技产品固件、SDK、上位机与开源代码下载中�
 - 🔧 [SO-ARM101 组装教程](/zh-hans/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly)
 - 📦 [SO-ARM101 开源仓库](https://github.com/Juxi-Technology/lerobot)(LeRobot 生态)
 
-### AmazingHand 灵巧手
+### AmazingHand 4 指仿生手
 
 - 📦 [AmazingHand 开源仓库](https://github.com/Juxi-Technology/AmazingHand)(Python 控制代码 + TTL 协议)
 

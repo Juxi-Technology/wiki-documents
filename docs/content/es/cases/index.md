@@ -39,7 +39,7 @@ Aquí se reúnen casos reales de usuarios de productos Juxi Technology — educa
 
 **—— Investigador de IA corporizada, laboratorio europeo**
 
-**Producto**: Mano diestra AmazingHand
+**Producto**: Mano biónica AmazingHand
 **Uso**: Investigación en manipulación dexterous
 **Valor**: Archivos CAD abiertos + dedos personalizables
 

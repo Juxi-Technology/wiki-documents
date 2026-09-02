@@ -30,7 +30,7 @@ Juxi Technology offers several robot arm products for different application scen
 
 ### 🤖 Grasping & Manipulation Research → AmazingHand
 
-- 5-finger dexterous hand for grasping strategy and gesture control research
+- 4-finger bionic hand for grasping strategy and gesture control research
 - TTL serial bus control, compatible with mainstream controllers
 
 ### 🧠 AI Imitation Learning / Teleoperation → SO-ARM101

@@ -17,7 +17,7 @@ https://github.com/Betatester777/AmazingHandControl
 
 ## 官方仓库示例
 
-钜犀科技为 AmazingHand 灵巧手提供开源控制代码：[GitHub](https://github.com/Juxi-Technology/AmazingHand)
+钜犀科技为 AmazingHand 4 指仿生手提供开源控制代码：[GitHub](https://github.com/Juxi-Technology/AmazingHand)
 
 ### 基础控制
 

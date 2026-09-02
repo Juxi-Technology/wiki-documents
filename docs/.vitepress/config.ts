@@ -210,7 +210,7 @@ const zhCN = {
           { text: 'SO-ARM101 TPU 柔性夹爪', link: '/zh-hans/products/tpu-flexible-gripper' },
           { text: 'SO-ARM101 机械臂视觉套件', link: '/zh-hans/products/robot-vision-kit' },
           { text: 'SO-ARM101 开发套件', link: '/zh-hans/products/so-arm101' },
-          { text: 'AmazingHand 开源灵巧手', link: '/zh-hans/products/amazinghand' },
+          { text: 'AmazingHand 开源 4 指仿生手', link: '/zh-hans/products/amazinghand' },
           { text: 'Lekiwi 具身智能移动机器人', link: '/zh-hans/products/lekiwi' },
           { text: '2 自由度舵机云台', link: '/zh-hans/products/2dof-gimbal' },
           { text: 'KWS 语音交互模块', link: '/zh-hans/products/kws-voice-module' },
@@ -424,7 +424,7 @@ const en = {
           { text: 'SO-ARM101 TPU Flexible Gripper', link: '/products/tpu-flexible-gripper' },
           { text: 'SO-ARM101 Robot Vision Kit', link: '/products/robot-vision-kit' },
           { text: 'SO-ARM101 Developer Kit', link: '/products/so-arm101' },
-          { text: 'AmazingHand Dexterous Hand', link: '/products/amazinghand' },
+          { text: 'AmazingHand 4-Finger Bionic Hand', link: '/products/amazinghand' },
           { text: 'Lekiwi Mobile Robot', link: '/products/lekiwi' },
           { text: '2-DOF Servo Pan-Tilt Unit', link: '/products/2dof-gimbal' },
           { text: 'KWS Voice Module', link: '/products/kws-voice-module' },
@@ -638,7 +638,7 @@ const zhHK = {
           { text: 'SO-ARM101 TPU 柔性夾爪', link: '/zh-hant/products/tpu-flexible-gripper' },
           { text: 'SO-ARM101 機械臂視覺套件', link: '/zh-hant/products/robot-vision-kit' },
           { text: 'SO-ARM101 開發套件', link: '/zh-hant/products/so-arm101' },
-          { text: 'AmazingHand 開源靈巧手', link: '/zh-hant/products/amazinghand' },
+          { text: 'AmazingHand 開源 4 指仿生手', link: '/zh-hant/products/amazinghand' },
           { text: 'Lekiwi 具身智能移動機器人', link: '/zh-hant/products/lekiwi' },
           { text: '2 自由度舵機雲台', link: '/zh-hant/products/2dof-gimbal' },
           { text: 'KWS 語音交互模組', link: '/zh-hant/products/kws-voice-module' },
@@ -872,7 +872,7 @@ export default defineConfig({
         '/ja/products/': [
           { text: '製品', items: [
             { text: 'SO-ARM101 開発キット', link: '/ja/products/so-arm101' },
-            { text: 'AmazingHand 器用ハンド', link: '/ja/products/amazinghand' },
+            { text: 'AmazingHand 4指バイオニックハンド', link: '/ja/products/amazinghand' },
             { text: 'Jetson Orin NX Super 開発キット', link: '/ja/products/jetson-orin-nx-super-kit' },
             { text: 'IMU 慣性ナビゲーションモジュール', link: '/ja/products/imu-module' },
             { text: 'バスサーボドライバ基板', link: '/ja/products/servo-driver-board' },
@@ -1024,7 +1024,7 @@ export default defineConfig({
         '/ko/products/': [
           { text: '제품', items: [
             { text: 'SO-ARM101 개발 키트', link: '/ko/products/so-arm101' },
-            { text: 'AmazingHand 로봇 손', link: '/ko/products/amazinghand' },
+            { text: 'AmazingHand 4손가락 바이오닉 핸드', link: '/ko/products/amazinghand' },
             { text: 'Jetson Orin NX Super 개발 키트', link: '/ko/products/jetson-orin-nx-super-kit' },
             { text: 'IMU 관성 모듈', link: '/ko/products/imu-module' },
             { text: '버스 서보 드라이버 보드', link: '/ko/products/servo-driver-board' },
@@ -1176,7 +1176,7 @@ export default defineConfig({
         '/de/products/': [
           { text: 'Produkte', items: [
             { text: 'SO-ARM101 Entwickler-Kit', link: '/de/products/so-arm101' },
-            { text: 'AmazingHand Robotikhand', link: '/de/products/amazinghand' },
+            { text: 'AmazingHand 4-Finger-Bionikhand', link: '/de/products/amazinghand' },
             { text: 'Jetson Orin NX Super Dev-Kit', link: '/de/products/jetson-orin-nx-super-kit' },
             { text: 'IMU-Trägheitsmodul', link: '/de/products/imu-module' },
             { text: 'Bus-Servo-Treiberplatine', link: '/de/products/servo-driver-board' },
@@ -1328,7 +1328,7 @@ export default defineConfig({
         '/fr/products/': [
           { text: 'Produits', items: [
             { text: 'Kit développeur SO-ARM101', link: '/fr/products/so-arm101' },
-            { text: 'Main robotique AmazingHand', link: '/fr/products/amazinghand' },
+            { text: 'Main bionique 4 doigts AmazingHand', link: '/fr/products/amazinghand' },
             { text: 'Kit Jetson Orin NX Super', link: '/fr/products/jetson-orin-nx-super-kit' },
             { text: 'Module inertiel IMU', link: '/fr/products/imu-module' },
             { text: 'Carte driver servo bus', link: '/fr/products/servo-driver-board' },
@@ -1480,7 +1480,7 @@ export default defineConfig({
         '/es/products/': [
           { text: 'Productos', items: [
             { text: 'Kit desarrollador SO-ARM101', link: '/es/products/so-arm101' },
-            { text: 'Mano robótica AmazingHand', link: '/es/products/amazinghand' },
+            { text: 'Mano biónica 4 dedos AmazingHand', link: '/es/products/amazinghand' },
             { text: 'Kit Jetson Orin NX Super', link: '/es/products/jetson-orin-nx-super-kit' },
             { text: 'Módulo inercial IMU', link: '/es/products/imu-module' },
             { text: 'Placa driver de servo de bus', link: '/es/products/servo-driver-board' },
@@ -1632,7 +1632,7 @@ export default defineConfig({
         '/it/products/': [
           { text: 'Prodotti', items: [
             { text: 'Kit sviluppatore SO-ARM101', link: '/it/products/so-arm101' },
-            { text: 'Mano robotica AmazingHand', link: '/it/products/amazinghand' },
+            { text: 'Mano bionica 4 dita AmazingHand', link: '/it/products/amazinghand' },
             { text: 'Kit Jetson Orin NX Super', link: '/it/products/jetson-orin-nx-super-kit' },
             { text: 'Modulo inerziale IMU', link: '/it/products/imu-module' },
             { text: 'Scheda driver servo bus', link: '/it/products/servo-driver-board' },

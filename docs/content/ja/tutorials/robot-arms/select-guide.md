@@ -21,5 +21,5 @@ Juxi Technology は複数のロボットアーム製品を提供しています�
 ## 選び方
 
 - 🎓 学生/教育 → **Lekiwi**(低コスト、シンプル)
-- 🤖 把持研究 → **AmazingHand**(5 指、TTL 制御)
+- 🤖 把持研究 → **AmazingHand**(4 指、TTL 制御)
 - 🧠 AI 研究 → **SO-ARM101**(LeRobot 深統合、Jetson 対応)

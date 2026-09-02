@@ -1,20 +1,20 @@
 ---
-title: Mano diestra AmazingHand
-description: Mano biónica de código abierto de Juxi Technology — 5 dedos multiarticulares, control por bus TTL, CAD abierto, investigación en IA corporizada y HRI
+title: Mano biónica AmazingHand
+description: Mano biónica de código abierto de 4 dedos de Juxi Technology, control por bus TTL, CAD abierto, investigación en IA corporizada y HRI
 keywords: [amazinghand, mano diestra, dexterous hand, ia corporizada]
 ---
 
-# Mano diestra AmazingHand
+# Mano biónica AmazingHand
 
 > **[Comprar en la tienda](https://www.juxitech.com/es/products/amazinghand)**
 
 ## Descripción general
 
-AmazingHand es la mano biónica de código abierto de Juxi Technology, con diseño de 5 dedos multiarticulares y control por bus serie TTL. Los archivos CAD abiertos permiten personalizar libremente los dedos para manipulación fina, estrategias de agarre e investigación en interacción humano-robot (HRI).
+AmazingHand es la mano biónica de código abierto de 4 dedos de Juxi Technology y control por bus serie TTL. Los archivos CAD abiertos permiten personalizar libremente los dedos para manipulación fina, estrategias de agarre e investigación en interacción humano-robot (HRI).
 
 **Características clave**:
 
-- 5 dedos multiarticulares, proporciones humanas
+- 4 dedos, proporciones humanas
 - Control por bus serie TTL, compatible con controladores comunes
 - CAD/código abiertos, personalizable
 - Se combina con SO-ARM101 para plataformas de manipulación completas
@@ -27,7 +27,7 @@ AmazingHand es la mano biónica de código abierto de Juxi Technology, con dise�
 
 | Categoría | Especificación |
 |------|------|
-| Tipo | Mano 5 dedos multiarticulares |
+| Tipo | Mano biónica de 4 dedos |
 | Control | Bus serie TTL |
 | Ecosistema | SDK Python, ROS |
 | Código abierto | CAD/código en GitHub |

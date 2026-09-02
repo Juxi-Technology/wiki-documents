@@ -20,8 +20,8 @@ outline: false
     <p class="pc-desc">鉅犀科技 4K HDMI 캡처 카드 — 4K 고화질 캡처, HDMI/Micro HDMI/DP 다중 인터페이스, USB 직결, 방송·녹화</p>
   </a>
   <a :href="withBase('/ko/products/amazinghand')" class="category-card">
-    <span class="pc-title">AmazingHand 오픈소스 정교 손</span>
-    <p class="pc-desc">鉅犀科技 AmazingHand 오픈소스 바이오닉 정교 손 — 5손가락 다관절, TTL 버스 제어, 오픈 CAD, 임베디드 지능·HRI 연구</p>
+    <span class="pc-title">AmazingHand 오픈소스 4손가락 바이오닉 핸드</span>
+    <p class="pc-desc">鉅犀科技 AmazingHand 오픈소스 4손가락 바이오닉 핸드, TTL 버스 제어, 오픈 CAD, 임베디드 지능·HRI 연구</p>
   </a>
   <a :href="withBase('/ko/products/esp32-s3-wifi-module')" class="category-card">
     <span class="pc-title">ESP32-S3 WiFi 영상 모듈</span>

@@ -14,7 +14,7 @@ description: SO-ARM101 vs AmazingHand vs Lekiwi 機械臂對比與選型建議
 | 特性 | SO-ARM101 | AmazingHand | Lekiwi |
 |------|-----------|-------------|--------|
 | **類型** | 雙臂遙操作機器人 | 靈巧手 | 低成本教學機械臂 |
-| **自由度** | 雙臂各 6 DOF | 5 指多關節 | 6 DOF |
+| **自由度** | 雙臂各 6 DOF | 4 指仿生手 | 6 DOF |
 | **控制方式** | LeRobot 生態 / Python API | TTL 串行總線 | 舵機控制 |
 | **主控平台** | PC(Linux) / Jetson | 主控板 | PC / 單片機 |
 | **適用場景** | AI 模仿學習、遙操作研究 | 抓取操作、手勢複現 | 教學、入門學習 |
@@ -30,7 +30,7 @@ description: SO-ARM101 vs AmazingHand vs Lekiwi 機械臂對比與選型建議
 
 ### 🤖 抓取與操作研究 → AmazingHand
 
-- 5 指靈巧手，適合抓取策略、手勢控制研究
+- 4 指仿生手，適合抓取策略、手勢控制研究
 - TTL 串行總線控制，與主流主控兼容
 
 ### 🧠 AI 模仿學習 / 遙操作 → SO-ARM101
