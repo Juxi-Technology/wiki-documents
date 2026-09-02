@@ -20,8 +20,8 @@ outline: false
     <p class="pc-desc">钜犀科技 4K HDMI 采集卡——4K 高清采集,HDMI/Micro HDMI/DP 多接口,USB 直连,采集直播录屏</p>
   </a>
   <a :href="withBase('/zh-hans/products/amazinghand')" class="category-card">
-    <span class="pc-title">AmazingHand 开源 4 指仿生手</span>
-    <p class="pc-desc">钜犀科技 AmazingHand 开源4 指仿生手,TTL 总线控制,开源 CAD,具身智能与人机交互研究</p>
+    <span class="pc-title">AmazingHand 开源 4 指灵巧手</span>
+    <p class="pc-desc">钜犀科技 AmazingHand 开源4 指灵巧手,TTL 总线控制,开源 CAD,具身智能与人机交互研究</p>
   </a>
   <a :href="withBase('/zh-hans/products/esp32-s3-wifi-module')" class="category-card">
     <span class="pc-title">ESP32-S3 WiFi 视频模块</span>

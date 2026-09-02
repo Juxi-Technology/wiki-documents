@@ -44,7 +44,7 @@ description: 钜犀科技(Juxi Technology)——来自深圳前海的开源机�
 ## 产品体系
 
 - **机器人机械臂**:开源的 6 轴机械臂,面向研究、教学与工业自动化
-- **仿生手**:4 指仿生手(AmazingHand),面向具身 AI 与人机交互研究
+- **灵巧手**:4 指灵巧手(AmazingHand),面向具身 AI 与人机交互研究
 - **边缘计算平台**:NVIDIA Jetson 驱动的开发套件,PyTorch 与 TensorRT 优化
 - **传感器与 IMU 模块**:高精度惯性导航与姿态感知,用于自主系统
 

@@ -1,20 +1,20 @@
 ---
-title: AmazingHand Open-Source 4-Finger Bionic Hand
-description: Juxi Technology AmazingHand open-source 4-finger bionic hand, TTL bus control, open CAD, embodied AI & HRI research
+title: AmazingHand Open-Source 4-Finger Dexterous Hand
+description: Juxi Technology AmazingHand open-source 4-finger dexterous hand, TTL bus control, open CAD, embodied AI & HRI research
 keywords: [amazinghand, dexterous hand, embodied ai]
 ---
 
-# AmazingHand Open-Source 4-Finger Bionic Hand
+# AmazingHand Open-Source 4-Finger Dexterous Hand
 
 > **[Buy in Store](https://www.juxitech.com/products/amazinghand)**
 
 ## Overview
 
-AmazingHand is Juxi Technology's open-source 4-finger bionic hand with multi-joint design and TTL serial bus control. Open CAD files allow custom finger designs for dexterous manipulation, grasping strategy, and HRI research.
+AmazingHand is Juxi Technology's open-source 4-finger dexterous hand with multi-joint design and TTL serial bus control. Open CAD files allow custom finger designs for dexterous manipulation, grasping strategy, and HRI research.
 
 **Key features**:
 
-- 4-finger bionic, human-like proportions
+- 4-finger multi-joint, human-like proportions
 - TTL serial bus control, mainstream controller compatible
 - Open CAD/source, customizable
 - Pairs with SO-ARM101 for full manipulation platforms
@@ -27,7 +27,7 @@ AmazingHand is Juxi Technology's open-source 4-finger bionic hand with multi-joi
 
 | Category | Spec |
 |----------|------|
-| Type | 4-finger bionic hand |
+| Type | 4-finger dexterous hand |
 | Control | TTL serial bus |
 | Ecosystem | Python SDK, ROS |
 | Open-source | CAD/source on GitHub |

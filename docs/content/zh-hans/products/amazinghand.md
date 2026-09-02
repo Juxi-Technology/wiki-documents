@@ -1,20 +1,20 @@
 ---
-title: AmazingHand 开源 4 指仿生手
-description: 钜犀科技 AmazingHand 开源4 指仿生手,TTL 总线控制,开源 CAD,具身智能与人机交互研究
+title: AmazingHand 开源 4 指灵巧手
+description: 钜犀科技 AmazingHand 开源4 指灵巧手,TTL 总线控制,开源 CAD,具身智能与人机交互研究
 keywords: [amazinghand, 灵巧手, dexterous hand, 具身智能]
 ---
 
-# AmazingHand 开源 4 指仿生手
+# AmazingHand 开源 4 指灵巧手
 
 > **[淘宝购买](https://item.taobao.com/item.htm?id=1007323867930)**
 
 ## 产品概述
 
-AmazingHand 是钜犀科技开源的4 指仿生手,仿生多关节设计,支持 TTL 串行总线控制。开源 CAD 文件可自由修改手指设计,广泛用于灵巧操作、抓取策略、人机交互研究。
+AmazingHand 是钜犀科技开源的4 指灵巧手,多关节仿生设计,支持 TTL 串行总线控制。开源 CAD 文件可自由修改手指设计,广泛用于灵巧操作、抓取策略、人机交互研究。
 
 **核心特性**:
 
-- 4 指仿生设计,类人手比例
+- 4 指多关节,类人手比例
 - TTL 串行总线控制,与主流主控兼容
 - 开源 CAD/源码,支持定制改装
 - 与 SO-ARM101 组合构建完整操作平台
@@ -27,7 +27,7 @@ AmazingHand 是钜犀科技开源的4 指仿生手,仿生多关节设计,支持 
 
 | 类别 | 规格 |
 |------|------|
-| 类型 | 4 指仿生手 |
+| 类型 | 4 指灵巧手 |
 | 控制 | TTL 串行总线 |
 | 生态 | Python SDK,ROS |
 | 开源 | CAD/源码 GitHub 公开 |

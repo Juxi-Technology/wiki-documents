@@ -20,8 +20,8 @@ outline: false
     <p class="pc-desc">Juxi Technology 4K-Capture-Karte — 4K-Aufnahme, HDMI/Micro HDMI/DP, USB-Direktanschluss, Stre…</p>
   </a>
   <a :href="withBase('/de/products/amazinghand')" class="category-card">
-    <span class="pc-title">AmazingHand Open-Source-Bionikhand mit 4 Fingern</span>
-    <p class="pc-desc">Juxi Technology AmazingHand — Open-Source-Bionikhand mit 4 Fingern…</p>
+    <span class="pc-title">AmazingHand 4-Finger-Greifhand</span>
+    <p class="pc-desc">Juxi Technology AmazingHand — 4-Finger-Greifhand…</p>
   </a>
   <a :href="withBase('/de/products/esp32-s3-wifi-module')" class="category-card">
     <span class="pc-title">ESP32-S3 WiFi-Videomodul</span>

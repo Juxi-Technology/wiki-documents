@@ -1,20 +1,20 @@
 ---
-title: AmazingHand Open-Source-Bionikhand mit 4 Fingern
-description: Juxi Technology AmazingHand — Open-Source-Bionikhand mit 4 Fingern, TTL-Bussteuerung, offenes CAD, Embodied-AI- und HRI-Forschung
+title: AmazingHand 4-Finger-Greifhand
+description: Juxi Technology AmazingHand — 4-Finger-Greifhand, TTL-Bussteuerung, offenes CAD, Embodied-AI- und HRI-Forschung
 keywords: [amazinghand, greifhand, dexterous hand, embodied ai]
 ---
 
-# AmazingHand Open-Source-Bionikhand mit 4 Fingern
+# AmazingHand 4-Finger-Greifhand
 
 > **[Im Shop kaufen](https://www.juxitech.com/de/products/amazinghand)**
 
 ## Produktübersicht
 
-AmazingHand ist Juxi Technologys Open-Source-Bionikhand mit 4 Fingern und Mehrgelenk-Design und TTL-Serienbussteuerung. Offene CAD-Dateien ermöglichen frei anpassbare Fingerdesigns für feinfühlige Manipulation, Greifstrategien und Mensch-Roboter-Interaktionsforschung (HRI).
+AmazingHand ist Juxi Technologys 4-Finger-Greifhand und Mehrgelenk-Design und TTL-Serienbussteuerung. Offene CAD-Dateien ermöglichen frei anpassbare Fingerdesigns für feinfühlige Manipulation, Greifstrategien und Mensch-Roboter-Interaktionsforschung (HRI).
 
 **Kernfunktionen**:
 
-- 4 Finger, menschenähnliche Proportionen
+- 4 Finger mit mehreren Gelenken, menschenähnliche Proportionen
 - TTL-Serienbussteuerung, kompatibel mit gängigen Controllern
 - Offenes CAD/Quellcode, anpassbar
 - Kombinierbar mit SO-ARM101 für vollständige Manipulationsplattformen
@@ -27,7 +27,7 @@ AmazingHand ist Juxi Technologys Open-Source-Bionikhand mit 4 Fingern und Mehrge
 
 | Kategorie | Spezifikation |
 |------|------|
-| Typ | 4-Finger-Bionikhand |
+| Typ | 4-Finger-Greifhand |
 | Steuerung | TTL-Serienbus |
 | Ökosystem | Python SDK, ROS |
 | Open Source | CAD/Quellcode auf GitHub |

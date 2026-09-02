@@ -44,7 +44,7 @@ Out-of-the-box support for:
 ## Product Lineup
 
 - **Robot Arms**: open-source 6-axis arms for research, education, and industrial automation
-- **Bionic Hands**: AmazingHand 4-finger bionic hands for embodied AI and human-robot interaction research
+- **Dexterous Hands**: AmazingHand 4-finger dexterous hands for embodied AI and human-robot interaction research
 - **Edge Computing**: NVIDIA Jetson-powered dev kits with PyTorch and TensorRT optimization
 - **Sensors & IMU**: high-precision inertial navigation and attitude sensing for autonomous systems
 

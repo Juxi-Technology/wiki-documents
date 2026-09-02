@@ -24,4 +24,4 @@ Notre implantation à Qianhai nous place au cœur de la fabrication matérielle 
 
 Nous élargissons notre gamme avec davantage de plateformes d'intelligence incarnée, d'outils d'IA physique et de solutions d'edge computing. Tout est ouvert. Tout est documenté. Tout est construit pour la communauté. Suivez notre Wiki et notre blog pour les prochaines sorties, les analyses techniques approfondies et les vitrines communautaires.
 
-> Pages liées : [Kit de développement SO-ARM101](/products/so-arm101) · [Main bionique AmazingHand](/products/amazinghand) · [Introduction à l'IA incarnée (LeRobot)](/topics/embodied-ai-intro)
+> Pages liées : [Kit de développement SO-ARM101](/products/so-arm101) · [Main dexterous AmazingHand](/products/amazinghand) · [Introduction à l'IA incarnée (LeRobot)](/topics/embodied-ai-intro)

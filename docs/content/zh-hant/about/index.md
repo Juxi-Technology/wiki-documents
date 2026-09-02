@@ -44,7 +44,7 @@ description: 鉅犀科技(Juxi Technology)——來自深圳前海的开源機�
 ## 產品體系
 
 - **機器人機械臂**:開源的 6 軸機械臂,面向研究、教學與工業自動化
-- **仿生手**:4 指仿生手(AmazingHand),面向具身 AI 與人機交互研究
+- **靈巧手**:4 指靈巧手(AmazingHand),面向具身 AI 與人機交互研究
 - **邊緣計算平台**:NVIDIA Jetson 驅動的開發套件,PyTorch 與 TensorRT 優化
 - **傳感器與 IMU 模組**:高精度慣性導航與姿態感知,用於自主系統
 

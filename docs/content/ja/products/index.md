@@ -20,8 +20,8 @@ outline: false
     <p class="pc-desc">鉅犀科技 4K HDMI キャプチャカード——4K 高画質キャプチャ、HDMI/Micro HDMI/DP 多インターフェース、USB 直結、配信・録画</p>
   </a>
   <a :href="withBase('/ja/products/amazinghand')" class="category-card">
-    <span class="pc-title">AmazingHand オープンソース 4指バイオニックハンド</span>
-    <p class="pc-desc">鉅犀科技 AmazingHand オープンソース 4指バイオニックハンド、TTLバス制御、オープンCAD、具身知能・HRI研究</p>
+    <span class="pc-title">AmazingHand オープンソース 4指器用ハンド</span>
+    <p class="pc-desc">鉅犀科技 AmazingHand オープンソース 4指器用ハンド、TTLバス制御、オープンCAD、具身知能・HRI研究</p>
   </a>
   <a :href="withBase('/ja/products/esp32-s3-wifi-module')" class="category-card">
     <span class="pc-title">ESP32-S3 WiFi 動画モジュール</span>

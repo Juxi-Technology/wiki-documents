@@ -20,7 +20,7 @@ outline: false
     <p class="pc-desc">Capture HDMI 4K de Juxi Technology — HDMI/Micro HDMI/DP, connexion USB directe, streaming et …</p>
   </a>
   <a :href="withBase('/fr/products/amazinghand')" class="category-card">
-    <span class="pc-title">Main bionique AmazingHand</span>
+    <span class="pc-title">Main dexterous AmazingHand</span>
     <p class="pc-desc">Main bionique open source à 4 doigts de Juxi Technology, contrôle bus TTL…</p>
   </a>
   <a :href="withBase('/fr/products/esp32-s3-wifi-module')" class="category-card">
