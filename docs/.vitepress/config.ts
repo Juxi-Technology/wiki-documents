@@ -731,6 +731,19 @@ export default defineConfig({
   vite: {
     publicDir: 'public',
   },
+  // 正文图片懒加载:SSR 阶段给 markdown 图片注入 loading="lazy" + decoding="async",
+  // 视口外图片滚动到才下载(教程页 29 图不再一次性全下)
+  markdown: {
+    config(md) {
+      const defaultImage = md.renderer.rules.image
+      md.renderer.rules.image = (tokens, idx, options, env, self) => {
+        const token = tokens[idx]
+        token.attrSet('loading', 'lazy')
+        token.attrSet('decoding', 'async')
+        return defaultImage(tokens, idx, options, env, self)
+      }
+    },
+  },
   lang: 'zh-CN',
   title: '钜犀科技 Wiki',
   description: '钜犀科技产品教程与文档中心',
