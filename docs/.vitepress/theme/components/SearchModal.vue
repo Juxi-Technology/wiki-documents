@@ -33,6 +33,22 @@ function isInLocale(url) {
   return rel.startsWith(`/${localeIndex.value}/`)
 }
 
+// CJK 分词:中文按"单字 + 双字词"切分(查询串经同一 encode),
+// 否则整段中文会被当成一个 token,搜索"机械"无法命中"机械臂"
+function encode(str) {
+  const cjk = str
+    .toLowerCase()
+    .replace(/[一-鿿]+/g, (s) => {
+      const grams = []
+      for (let i = 0; i < s.length; i++) {
+        grams.push(s[i])
+        if (i + 1 < s.length) grams.push(s.slice(i, i + 2))
+      }
+      return ' ' + grams.join(' ') + ' '
+    })
+  return cjk.split(/[^\p{L}\p{N}]+/u).filter(Boolean)
+}
+
 function buildIndex() {
   index = new FlexSearch.Document({
     document: {
@@ -41,7 +57,7 @@ function buildIndex() {
       store: ['title', 'path'],
     },
     tokenize: 'forward',
-    charset: 'latin:extra',
+    encode,
   })
 
   searchData.forEach((page, i) => {
@@ -49,7 +65,7 @@ function buildIndex() {
       index.add({
         id: i,
         title: page.title || '',
-        text: page.description || '',
+        text: page.text || '',
         path: page.url,
       })
     }
@@ -141,17 +157,29 @@ onUnmounted(() => {
   document.removeEventListener('keydown', onGlobalKeydown)
 })
 
-const placeholder = computed(() => {
-  if (localeIndex.value === 'zh-hans') return '搜索文档...'
-  if (localeIndex.value === 'zh-hant') return '搜尋文件...'
-  return 'Search docs...'
-})
+const PLACEHOLDERS = {
+  'zh-hans': '搜索文档...',
+  'zh-hant': '搜尋文件...',
+  ja: 'ドキュメントを検索...',
+  ko: '문서 검색...',
+  de: 'Dokumente durchsuchen...',
+  fr: 'Rechercher...',
+  es: 'Buscar documentos...',
+  it: 'Cerca documenti...',
+}
+const NO_RESULTS = {
+  'zh-hans': '无匹配结果',
+  'zh-hant': '無匹配結果',
+  ja: '一致する結果がありません',
+  ko: '검색 결과가 없습니다',
+  de: 'Keine Ergebnisse gefunden',
+  fr: 'Aucun résultat',
+  es: 'Sin resultados',
+  it: 'Nessun risultato',
+}
 
-const noResultsText = computed(() => {
-  if (localeIndex.value === 'zh-hans') return '无匹配结果'
-  if (localeIndex.value === 'zh-hant') return '無匹配結果'
-  return 'No results found'
-})
+const placeholder = computed(() => PLACEHOLDERS[localeIndex.value] || 'Search docs...')
+const noResultsText = computed(() => NO_RESULTS[localeIndex.value] || 'No results found')
 </script>
 
 <template>

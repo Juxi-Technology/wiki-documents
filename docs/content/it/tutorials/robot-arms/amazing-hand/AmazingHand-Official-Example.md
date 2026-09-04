@@ -32,6 +32,10 @@ Linux: impostare le variabili d'ambiente:
 
 
 
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/1.png)
+
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/10.png)
+
 
 
 La prima installazione può richiedere l'installer di Visual Studio
@@ -86,8 +90,12 @@ sudo chmod 666 /dev/ttyACM*
 ```Plain Text
 sudo usermod -aG dialout $USER
 ```
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
+
 
 Se nella VM `ls /dev/ttyUSB* /dev/ttyACM*` non trova nulla, controllare in basso a destra della VM se la mano è collegata al PC. Se sì, scollegarla e collegarla alla VM
+
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/19.png)
 
 
 
@@ -101,6 +109,10 @@ Se nella VM `ls /dev/ttyUSB* /dev/ttyACM*` non trova nulla, controllare in basso
 **Mano destra** …\Demo\dataflow_tracking_real_right.yml
 **Mano sinistra** …\Demo\dataflow_tracking_real_left.yml
 **Due mani** …\Demo\dataflow_tracking_real_2hands.yml
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
+
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/21.png)
+
 
 Aprire in editor di testo e sostituire con la porta trovata (Windows COM*, Ubuntu/Linux di solito /dev/ttyACM*)
 
@@ -233,6 +245,10 @@ dora run dataflow_tracking_simu.yml --uv
     #### Due mani (entrambe su una sola scheda driver!)
 
 
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/7.png)
+
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/8.png)
+
 
     ```Plain Text
     dora build dataflow_tracking_real_2hands.yml --uv   #(solo una volta)
@@ -241,6 +257,10 @@ dora run dataflow_tracking_simu.yml --uv
     ```Plain Text
     dora run dataflow_tracking_real_2hands.yml --uv
     ```
+
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/9.png)
+
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/1.png)
 
 
 
@@ -297,6 +317,8 @@ Soluzione: ①Nella directory utente, sotto .cargo/registry/src/github.xxxxxxxx/
 ③Nella console, entrare in AHControl e rieseguire `cargo build --release`
 ④Ricompilare secondo [«Esecuzione su hardware reale»](https://juxitech.feishu.cn/wiki/ZpHmwYARQiN2fwkqFJecqUFZnQg?node-id=1759567650651511609&from=from_node_link)
 Adattare le versioni in base all'errore – es. se serve dora-message 0.6.0: dora-node-api="0.4.0" dora-message="0.6.0"
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
+
 
 
 
@@ -361,6 +383,8 @@ Per la fotocamera in VM 22.04: https://blog.csdn.net/qq_19731521/article/details
 ```Bash
 ls /dev/ttyUSB* /dev/ttyACM*
 ```
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
+
 
 ```Plain Text
 sudo chmod 666 /dev/ttyACM*
@@ -372,6 +396,10 @@ sudo usermod -aG dialout $USER
 
 **4. Modificare la porta nel codice**
 ①Aprire `main.rs` in AmazingHand-main\Demo\AHControl\src, sostituire con la porta trovata (Windows COM*, Ubuntu/Linux di solito /dev/ttyACM*)
+
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/3.png)
+
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/4.png)
 
 
 

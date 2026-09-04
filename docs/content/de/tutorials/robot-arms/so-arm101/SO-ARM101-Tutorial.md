@@ -106,6 +106,8 @@ Ohne Grafikabhängigkeiten (gdk-pixbuf, librsvg) diesen Befehl nutzen:
 【Nur Linux】Build-Abhängigkeiten installieren und ffmpeg mit libsvtav1 aus dem Quellcode kompilieren; mit `which ffmpeg` den richtigen ausführbaren Pfad prüfen.
 
 Bei folgendem Fehler hilft der obige Befehl ebenfalls.
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/1.png)
+
 
 
 
@@ -243,7 +245,11 @@ lerobot-calibrate \
 ```
 
 Zuerst den Roboter so positionieren, dass alle Gelenke in der Mitte des Bewegungsbereichs stehen, und stillhalten. Nach dem Drücken von Enter jeden Gelenkwinkel über den gesamten Bereich bewegen. Die Kalibrierdatei speichert Mittel-, Max- und Min-Werte im json unter `~/.cache/huggingface/lerobot/calibration/robots` oder `~/.cache/huggingface/lerobot/calibration/teleoperators`.
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/2.png)
 
+
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/3.png)
 
 
 
@@ -302,6 +308,8 @@ lerobot-find-cameras realsense # or realsense for Intel Realsense cameras
 ```
 
 Das Terminal zeigt die Kamerainformationen.
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/4.png)
+
 
 
 
@@ -342,6 +350,8 @@ lerobot-teleoperate \
 ```
 
 Für die RealSense-Tiefenkamera zuerst `python -m lerobot.find_cameras realsense` ausführen, `serial_number_or_name: "323622271780"` durch die eigene ID ersetzen und `use_depth: true` setzen:
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/5.png)
 
 
 
@@ -450,6 +460,8 @@ lerobot-dataset-viz \
 ```
 
 `juxi` ist der bei der Erfassung verwendete eigene `repo_id`.
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/6.png)
+
 
 ### Episode abspielen (überspringbar, optional)
 
@@ -511,6 +523,8 @@ Erklärung
 - **Visualisierung**: `wandb.enable=true` nutzt [Weights and Biases](https://docs.wandb.ai/quickstart); optional, aber dann `wandb login` nicht vergessen.
 
 Bei folgendem Fehler:
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/7.png)
+
 
 
 
@@ -655,12 +669,20 @@ Training wie Pi0, Politiktyp `gr00t`.
 ## F. Cloud-Training, Deployment und Modellexport
 
 #### **1. Auf „Rechenmarkt" klicken, passende GPU wählen – möglichst viele Kerne**
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/8.png)
+
 
 #### **2. „Abrechnung nach Nutzung" wählen, Basis-Image „Miniconda/conda3/3.8(ubuntu20.04)/11.8", dann „Sofort erstellen"**
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/9.png)
+
 
 #### **3. Auf „JupyterLab" klicken, Terminal öffnen**
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/10.png)
+
 
 #### **4. conda-Umgebung initialisieren**
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/11.png)
+
 
 #### **5. Dieses Terminal schließen, neues öffnen**
 
@@ -669,6 +691,8 @@ Siehe https://www.autodl.com/docs/network_turbo/
 ```Plain Text
 source /etc/network_turbo
 ```
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/12.png)
+
 
 
 
@@ -691,6 +715,8 @@ Alternativ: https://github.com/huggingface/lerobot.git – Befehle der neuesten 
 ```PowerShell
 conda install ffmpeg -c conda-forge
 ```
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/13.png)
+
 
 #### **7. Ins lerobot-Verzeichnis wechseln, LeRobot mit feetech installieren:**
 
@@ -717,6 +743,8 @@ HF_USER=$(huggingface-cli whoami | head -n 1)
 ```Plain Text
 echo $HF_USER
 ```
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/14.png)
+
 
 
 
@@ -737,28 +765,46 @@ filezilla
 ```
 
 FileZilla öffnen, „Datei" → „Standortmanager", „Neuer Standort", „SFTP-Protokoll" wählen
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/15.png)
 
+
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/16.png)
 
 
 
 
 Zurück zu AutoDL: „Anmeldebefehl" kopieren, Informationen einfügen und „Verbinden" klicken
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/17.png)
 
 
 
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/18.png)
 
 
 
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/19.png)
 
+
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/20.png)
+
+
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/21.png)
 
 
 
 
 Im lerobot-Verzeichnis des Servers den Ordner `data` anlegen
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/22.png)
+
 
 
 
 Datensatz-Ordner nach rechts ziehen und auf Übertragung warten
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/23.png)
+
 
 
 
@@ -769,6 +815,8 @@ Siehe [E. Datensatz-Training und -Evaluation] dieses Tutorials, Trainingsbefehl 
 #### 10. Modellexport
 
 Nach dem Training das trainierte Modell im entsprechenden train-Verzeichnis exportieren
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/24.png)
+
 
 
 
@@ -825,6 +873,8 @@ No valid stream found in input file. Is -1 of the desired media type?
 ```
 
 ffmpeg 7.1.1 installieren: `conda install ffmpeg=7.1.1 -c conda-forge`.
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/25.png)
+
 
 
 

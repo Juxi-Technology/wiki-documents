@@ -1,213 +1,217 @@
 # Juxi Technology Wiki
 
 > Open documentation platform for Juxi Technology robotics and AI hardware products.
-> Available in Simplified Chinese, English, and Traditional Chinese.
+> Available in 9 languages: English (root, no prefix), Simplified Chinese (/zh-hans/), Traditional Chinese (/zh-hant/), Japanese (/ja/), Korean (/ko/), German (/de/), French (/fr/), Spanish (/es/), Italian (/it/).
 
 ## Simplified Chinese (简体中文)
 
-- [贡献指南](https://wiki.juxitech.com/community/contributing): 如何为钜犀科技 Wiki 贡献内容
-- [ESP32-S3 WiFi 视频模块](https://wiki.juxitech.com/products/esp32-s3-wifi-module): 钜犀科技 ESP32-S3 WiFi 图传模块——200 万像素摄像头,WiFi 实时图传,AI 视觉识别(颜色/人脸/二维码),AP+STA 双模式
-- [GPS & 北斗 GNSS 定位模块](https://wiki.juxitech.com/products/gps-beidou-module): 钜犀科技 GPS & 北斗 GNSS 定位模块——ATGM336H-5N 芯片,四大卫星系统联合定位,2.5m 精度,支持 ROS
-- [Jetson Orin NX Super 开发套件](https://wiki.juxitech.com/products/jetson-orin-nx-super-kit): 钜犀科技 NVIDIA Jetson Orin NX SUPER 开发套件——117/157 TOPS 边缘 AI 计算平台,预装 Ubuntu 22.04 与 256GB NVMe SSD
-- [3D RealSense 深度相机](https://wiki.juxitech.com/products/realsense-depth-camera): 钜犀科技 3D RealSense 深度相机——D435i/D405/D405CB 三型号,高精度深度感知,适配 XLeRobot 与 SO-ARM101
-- [SO-ARM101 机械臂视觉套件](https://wiki.juxitech.com/products/robot-vision-kit): 钜犀科技 SO-ARM101 机械臂视觉套件——腕部/侧方/俯视三视角安装,60FPS 定焦或 30FPS 自动对焦变焦相机,兼容 ACT/Smolvla/Pi0/GR00T 训练框架
-- [JUXI 总线舵机驱动板](https://wiki.juxitech.com/products/servo-driver-board): 钜犀科技 JUXI 总线舵机驱动板——单总线控制 253 个舵机,7~12.6V 宽电压,Type-C 即插即用,专为 LeRobot SO-ARM 设计
-- [SO-ARM101 TPU 柔性夹爪](https://wiki.juxitech.com/products/tpu-flexible-gripper): 钜犀科技 SO-ARM101 TPU 柔性夹爪——软 TPU 材质安全抓取不规则/易碎物品,支持臂载相机,可选 30FPS 变焦或 60FPS 定焦
-- [/tech/api-reference](https://wiki.juxitech.com/tech/api-reference)
-- [/tech/dev-guide](https://wiki.juxitech.com/tech/dev-guide)
-- [树莓派/Jetson-OLED副屏教程](https://wiki.juxitech.com/tutorials/accessories/0.91-oled-screen-tutorial): 使用0.91寸OLED测试I2C通讯功能，按照下面接线进行连接：
-- [2 自由度相机云台](https://wiki.juxitech.com/tutorials/accessories/2dof-camera-gimbal): 钜犀科技 2-DOF 相机云台模块，支持颜色追踪、人脸检测和自动追踪
-- [4K高清HDMI采集器教程](https://wiki.juxitech.com/tutorials/accessories/4k-hdmi-capture-tutorial): 根据主板的接口分以下三种接线操作
-- [Jetson Nano串口通信](https://wiki.juxitech.com/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication): 注意：语音交互模块需要烧录出厂固件，语音芯片到手之后没有刷过固件的则不需要
-- [Jetson串口通信](https://wiki.juxitech.com/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication): 注意：语音交互模块需要烧录出厂固件，语音芯片到手之后没有刷过固件的则不需要
-- [PC串口通信](https://wiki.juxitech.com/tutorials/accessories/KWS-speech-recognition-module/PC-serial-communication): [uartassist5.0.2.zip]
-- [ROS2-rviz2可视化](https://wiki.juxitech.com/tutorials/accessories/KWS-speech-recognition-module/ROS2-rviz2-visualization): - 操作系统：Ubuntu 22.04
-- [中英文识别词固件下载及烧录](https://wiki.juxitech.com/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words): 模块出厂已经烧录语音识别功能固件，资料附件里面也提供了出厂固件，如果需要重新制作固件可以根据下面步骤进行固件制作
-- [树莓派串口通信](https://wiki.juxitech.com/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication): 注意：语音交互模块需要烧录出厂固件，语音芯片到手之后没有刷过固件的则不需要
-- [磁编码STS舵机-内存表解析](https://wiki.juxitech.com/tutorials/accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis): 舵机使用FT-SCS自定义协议，出厂时的串口默认配置，STS舵机默认波特率为1M使用TTL单总线通信，数据位 8，无校验，停止位 1；波特率可配置范围38400~1Mbps，默认通信地址（站号）为1。
-- [电位器SCSCL舵机-内存表解析](https://wiki.juxitech.com/tutorials/accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis): 舵机使用FT-SCS自定义协议，舵机默认波特率为1M或500k使用TTL单总线通信，数据位 8，无校验，停止位 1；波特率可配置范围38400~1Mbps(500k)，默认通信地址（站号）为1。
-- [舵机SCS通信协议](https://wiki.juxitech.com/tutorials/accessories/feetech/Feetech-SCS_Communication_Protocol): 通讯电平采用兼容高速通信的TTL电平方式与具有较强抗干扰能力的RS485方式，通讯仍是采用异步双工，发送与接收信号是异步处理。
-- [飞特舵机STS3215&amp;SCS0009调试教程](https://wiki.juxitech.com/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial): 飞特上位机FD软件 https://gitee.com/ftservo
-- [心率血氧传感器](https://wiki.juxitech.com/tutorials/accessories/heart-rate-spo2): 钜犀科技 MAX30102 心率血氧传感器模块 Arduino / Python 使用教程
-- [Jetson CSI 摄像头](https://wiki.juxitech.com/tutorials/accessories/jetson-csi-camera): 钜犀科技 NVIDIA Jetson Orin CSI 摄像头模块使用教程
-- [KVM切换器使用教程](https://wiki.juxitech.com/tutorials/accessories/kvm-switch-tutorial): KVM切换器包含HUB功能、TTL串口、蓝牙模块
-- [USB免驱声卡教程](https://wiki.juxitech.com/tutorials/accessories/usb-audio-card-tutorial): 钜犀科技 USB 免驱声卡教程，涵盖可视化测试软件、命令操作与音频调试方法，适用于树莓派、Jetson、PC 等设备。
-- [USB 自动对焦摄像头](https://wiki.juxitech.com/tutorials/accessories/usb-auto-focus-camera): 钜犀科技 USB 免驱 86° 广角自动对焦 1080P 摄像头使用教程
-- [常见问题 FAQ](https://wiki.juxitech.com/tutorials/faq): 钜犀科技产品常见问题合集——机械臂、传感器、配件安装与调试高频问题汇总
-- [快速入门](https://wiki.juxitech.com/tutorials/getting-started): 欢迎使用 钜犀科技 产品！本教程将帮助你快速开始使用我们的产品。
-- [硬件连接](https://wiki.juxitech.com/tutorials/hardware-setup): 本章节详细介绍产品的硬件连接方法。
-- [Lark Wiki](https://wiki.juxitech.com/tutorials/lark-wiki)
-- [快速入门](https://wiki.juxitech.com/tutorials/learning-resources/getting-started): 欢迎使用 钜犀科技 产品！本教程将帮助您快速开始使用我们的产品。
-- [硬件连接](https://wiki.juxitech.com/tutorials/learning-resources/hardware-setup): 本章节详细介绍产品的硬件连接方法。
-- [Jetson Orin上Pytorch不兼容问题](https://wiki.juxitech.com/tutorials/learning-resources/jetson-orin-pytorch-compatibility): 安装jetson版本的pytorch
-- [软件配置](https://wiki.juxitech.com/tutorials/learning-resources/software-config): 本章节介绍产品的软件配置方法。
-- [右灵巧手-界面控制](https://wiki.juxitech.com/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control): [AmazingHandControl.zip]
-- [灵巧手官方示例运行教程](https://wiki.juxitech.com/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example): 建议下载本使用教程下的代码压缩包进行Demo示例演示，或克隆 官方开源代码仓库https://github.com/pollen-robotics/AmazingHand.git，官方开源代码或有错漏请务必注意。
-- [灵巧手(TTL串口舵机)调试教程](https://wiki.juxitech.com/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging): 首先，下载\"灵巧手调试.zip\"压缩包，解压后可通过\"使用arduio程序调试灵巧手过程（TTL舵机）\"文档进行舵机ID设置、标定、校准中位及演示程序运行，或 参考官方开源代码。
-- [Lekiwi移动机器人组装教程](https://wiki.juxitech.com/tutorials/robot-arms/lekiwi/Lekiwi-Assembly): 在Fusion360 在线 CAD中可以可视化精确的组件位置。
-- [Lekiwi移动机器人使用教程](https://wiki.juxitech.com/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial): 黑色主动臂使用5V6A电源适配器，白色从动臂使用12V5A电源适配器
-- [机械臂选型指南](https://wiki.juxitech.com/tutorials/robot-arms/select-guide): SO-ARM101 vs AmazingHand vs Lekiwi 机械臂对比与选型建议
-- [SO-ARM100&amp;101臂载支架和环境相机套件 安装教程](https://wiki.juxitech.com/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation): USB自动对接摄像头调试请参考该教程USB自动对焦摄像头教程
-- [Lerobot机械臂组装教程](https://wiki.juxitech.com/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly): Pro版 主动臂使用5V6A电源适配器，从动臂使用12V5A电源适配器
-- [Jetson Orin上Pytorch不兼容问题](https://wiki.juxitech.com/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility): 安装jetson版本的pytorch
-- [顶置摄像头安装座安装教程](https://wiki.juxitech.com/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation): USB自动对接摄像头调试请参考该教程USB自动对焦摄像头教程
-- [LeRobot机械臂教程](https://wiki.juxitech.com/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial): 本教程已更新至12月15日，可选择跟随最新版官方文档进行操作，官方文档具体教程可以参考本链接。若需要URDF等文件请参考本链接。9月15日旧版本请参考该链接。SO-ARM101与SO-ARM100运行代码相互兼容。
-- [ROS 入门教程](https://wiki.juxitech.com/tutorials/ros-intro): 钜犀科技 ROS 入门教程——ROS 1/ROS 2 环境安装、话题/服务/launch 基础概念,结合 IMU 与 SO-ARM101 机器人实践
-- [IMU 校准指南](https://wiki.juxitech.com/tutorials/sensors/imu/calibration): 钜犀科技高精度 IMU 模块校准指南——整体校准、磁力计校准、温度校准,支持串口与 I2C 双模式
-- [Arduino](https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino): 本次例程使用的是Arduino Nano开发板，一台windows电脑、杜邦线若干、IMU姿态传感器。
-- [Jetson系列](https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson): 本教程以Jetson Orin NX主板为例。
-- [树莓派5](https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi): 本教程以树莓派5主板，官方64位版本的镜像为例。
-- [RDK系列](https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk): 本教程以RDK X5主板的版本的镜像为例。
-- [STM32 F103C8T6](https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32): 本次例程使用的是STM32F103C8T6，一台windows电脑、杜邦线若干、IMU姿态传感器。
-- [多主控通讯案例](https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/overview): 1. CH341驱动安装（以管理员身份安装）
-- [PC通讯](https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/pc-communication): 注意：如果无法识别串口，请安装ch34x驱动
-- [Arduino](https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino): 本次例程使用的是Arduino Nano开发版，一台windows电脑、杜邦线若干、IMU姿态传感器、USB转TTL模块。
-- [Jetson系列](https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson): 本教程以Jetson orin nx主板为例。
-- [树莓派5](https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi): 本教程以树莓派5主板，官方64位版本的镜像为例。
-- [RDK系列](https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk): 本教程以RDK X5主板的版本的镜像为例。
-- [STM32 F103C8T6](https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32): 本次例程使用的是STM32F103C8T6核心板，一台windows电脑、杜邦线若干、IMU姿态传感器。
-- [IMU模块介绍](https://wiki.juxitech.com/tutorials/sensors/imu/product-info): 高精度 IMU 姿态传感器内置72MHz 高性能 32 位处理器，可实时姿态解算与动态补偿，数据更新频率高达 100Hz，兼具响应迅捷、输出稳定的优势。支持 IIC 与串口双通信模式，兼容单片机、Linux 主控，并可无缝集成 ROS 系统，广泛适用于机器人运动控制、无人机航姿稳定、智能导航定位等高
-- [ROS1应用](https://wiki.juxitech.com/tutorials/sensors/imu/ros-examples/ros1): 系统配置：ubuntu20.04
-- [ROS2应用](https://wiki.juxitech.com/tutorials/sensors/imu/ros-examples/ros2): 系统配置：ubuntu22.04
-- [LeRobot SO-ARM101机械臂教程](https://wiki.juxitech.com/tutorials/so-arm101-tutorial): 本教程已更新至12月15日，可选择跟随最新版官方文档进行操作，官方文档具体教程可以参考本链接。若需要URDF等文件请参考本链接。9月15日旧版本请参考该链接。SO-ARM101与SO-ARM100运行代码相互兼容。
-- [教程标题](https://wiki.juxitech.com/tutorials/so-arm101/template-tutorial): 教程描述
-- [软件配置](https://wiki.juxitech.com/tutorials/software-config): 本章节介绍产品的软件配置方法。
+- [贡献指南](https://wiki.juxitech.com/zh-hans/community/contributing): 如何为钜犀科技 Wiki 贡献内容
+- [ESP32-S3 WiFi 视频模块](https://wiki.juxitech.com/zh-hans/products/esp32-s3-wifi-module): 钜犀科技 ESP32-S3 WiFi 图传模块——200 万像素摄像头,WiFi 实时图传,AI 视觉识别(颜色/人脸/二维码),AP+STA 双模式
+- [GPS & 北斗 GNSS 定位模块](https://wiki.juxitech.com/zh-hans/products/gps-beidou-module): 钜犀科技 GPS & 北斗 GNSS 定位模块——ATGM336H-5N 芯片,四大卫星系统联合定位,2.5m 精度,支持 ROS
+- [Jetson Orin NX Super 开发套件](https://wiki.juxitech.com/zh-hans/products/jetson-orin-nx-super-kit): 钜犀科技 NVIDIA Jetson Orin NX SUPER 开发套件——117/157 TOPS 边缘 AI 计算平台,预装 Ubuntu 22.04 与 256GB NVMe SSD
+- [3D RealSense 深度相机](https://wiki.juxitech.com/zh-hans/products/realsense-depth-camera): 钜犀科技 3D RealSense 深度相机——D435i/D405/D405CB 三型号,高精度深度感知,适配 XLeRobot 与 SO-ARM101
+- [SO-ARM101 机械臂视觉套件](https://wiki.juxitech.com/zh-hans/products/robot-vision-kit): 钜犀科技 SO-ARM101 机械臂视觉套件——腕部/侧方/俯视三视角安装,60FPS 定焦或 30FPS 自动对焦变焦相机,兼容 ACT/Smolvla/Pi0/GR00T 训练框架
+- [JUXI 总线舵机驱动板](https://wiki.juxitech.com/zh-hans/products/servo-driver-board): 钜犀科技 JUXI 总线舵机驱动板——单总线控制 253 个舵机,7~12.6V 宽电压,Type-C 即插即用,专为 LeRobot SO-ARM 设计
+- [SO-ARM101 TPU 柔性夹爪](https://wiki.juxitech.com/zh-hans/products/tpu-flexible-gripper): 钜犀科技 SO-ARM101 TPU 柔性夹爪——软 TPU 材质安全抓取不规则/易碎物品,支持臂载相机,可选 30FPS 变焦或 60FPS 定焦
+- [/tech/api-reference](https://wiki.juxitech.com/zh-hans/tech/api-reference)
+- [/tech/dev-guide](https://wiki.juxitech.com/zh-hans/tech/dev-guide)
+- [树莓派/Jetson-OLED副屏教程](https://wiki.juxitech.com/zh-hans/tutorials/accessories/0.91-oled-screen-tutorial): 使用0.91寸OLED测试I2C通讯功能，按照下面接线进行连接：
+- [2 自由度相机云台](https://wiki.juxitech.com/zh-hans/tutorials/accessories/2dof-camera-gimbal): 钜犀科技 2-DOF 相机云台模块，支持颜色追踪、人脸检测和自动追踪
+- [4K高清HDMI采集器教程](https://wiki.juxitech.com/zh-hans/tutorials/accessories/4k-hdmi-capture-tutorial): 根据主板的接口分以下三种接线操作
+- [Jetson Nano串口通信](https://wiki.juxitech.com/zh-hans/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication): 注意：语音交互模块需要烧录出厂固件，语音芯片到手之后没有刷过固件的则不需要
+- [Jetson串口通信](https://wiki.juxitech.com/zh-hans/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication): 注意：语音交互模块需要烧录出厂固件，语音芯片到手之后没有刷过固件的则不需要
+- [PC串口通信](https://wiki.juxitech.com/zh-hans/tutorials/accessories/KWS-speech-recognition-module/PC-serial-communication): [uartassist5.0.2.zip]
+- [ROS2-rviz2可视化](https://wiki.juxitech.com/zh-hans/tutorials/accessories/KWS-speech-recognition-module/ROS2-rviz2-visualization): - 操作系统：Ubuntu 22.04
+- [中英文识别词固件下载及烧录](https://wiki.juxitech.com/zh-hans/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words): 模块出厂已经烧录语音识别功能固件，资料附件里面也提供了出厂固件，如果需要重新制作固件可以根据下面步骤进行固件制作
+- [树莓派串口通信](https://wiki.juxitech.com/zh-hans/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication): 注意：语音交互模块需要烧录出厂固件，语音芯片到手之后没有刷过固件的则不需要
+- [磁编码STS舵机-内存表解析](https://wiki.juxitech.com/zh-hans/tutorials/accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis): 舵机使用FT-SCS自定义协议，出厂时的串口默认配置，STS舵机默认波特率为1M使用TTL单总线通信，数据位 8，无校验，停止位 1；波特率可配置范围38400~1Mbps，默认通信地址（站号）为1。
+- [电位器SCSCL舵机-内存表解析](https://wiki.juxitech.com/zh-hans/tutorials/accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis): 舵机使用FT-SCS自定义协议，舵机默认波特率为1M或500k使用TTL单总线通信，数据位 8，无校验，停止位 1；波特率可配置范围38400~1Mbps(500k)，默认通信地址（站号）为1。
+- [舵机SCS通信协议](https://wiki.juxitech.com/zh-hans/tutorials/accessories/feetech/Feetech-SCS_Communication_Protocol): 通讯电平采用兼容高速通信的TTL电平方式与具有较强抗干扰能力的RS485方式，通讯仍是采用异步双工，发送与接收信号是异步处理。
+- [飞特舵机STS3215&amp;SCS0009调试教程](https://wiki.juxitech.com/zh-hans/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial): 飞特上位机FD软件 https://gitee.com/ftservo
+- [心率血氧传感器](https://wiki.juxitech.com/zh-hans/tutorials/accessories/heart-rate-spo2): 钜犀科技 MAX30102 心率血氧传感器模块 Arduino / Python 使用教程
+- [Jetson CSI 摄像头](https://wiki.juxitech.com/zh-hans/tutorials/accessories/jetson-csi-camera): 钜犀科技 NVIDIA Jetson Orin CSI 摄像头模块使用教程
+- [KVM切换器使用教程](https://wiki.juxitech.com/zh-hans/tutorials/accessories/kvm-switch-tutorial): KVM切换器包含HUB功能、TTL串口、蓝牙模块
+- [USB免驱声卡教程](https://wiki.juxitech.com/zh-hans/tutorials/accessories/usb-audio-card-tutorial): 钜犀科技 USB 免驱声卡教程，涵盖可视化测试软件、命令操作与音频调试方法，适用于树莓派、Jetson、PC 等设备。
+- [USB 自动对焦摄像头](https://wiki.juxitech.com/zh-hans/tutorials/accessories/usb-auto-focus-camera): 钜犀科技 USB 免驱 86° 广角自动对焦 1080P 摄像头使用教程
+- [常见问题 FAQ](https://wiki.juxitech.com/zh-hans/tutorials/faq): 钜犀科技产品常见问题合集——机械臂、传感器、配件安装与调试高频问题汇总
+- [快速入门](https://wiki.juxitech.com/zh-hans/tutorials/getting-started): 欢迎使用 钜犀科技 产品！本教程将帮助你快速开始使用我们的产品。
+- [硬件连接](https://wiki.juxitech.com/zh-hans/tutorials/hardware-setup): 本章节详细介绍产品的硬件连接方法。
+- [Lark Wiki](https://wiki.juxitech.com/zh-hans/tutorials/lark-wiki)
+- [快速入门](https://wiki.juxitech.com/zh-hans/tutorials/learning-resources/getting-started): 欢迎使用 钜犀科技 产品！本教程将帮助您快速开始使用我们的产品。
+- [硬件连接](https://wiki.juxitech.com/zh-hans/tutorials/learning-resources/hardware-setup): 本章节详细介绍产品的硬件连接方法。
+- [Jetson Orin上Pytorch不兼容问题](https://wiki.juxitech.com/zh-hans/tutorials/learning-resources/jetson-orin-pytorch-compatibility): 安装jetson版本的pytorch
+- [软件配置](https://wiki.juxitech.com/zh-hans/tutorials/learning-resources/software-config): 本章节介绍产品的软件配置方法。
+- [右灵巧手-界面控制](https://wiki.juxitech.com/zh-hans/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control): [AmazingHandControl.zip]
+- [灵巧手官方示例运行教程](https://wiki.juxitech.com/zh-hans/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example): 建议下载本使用教程下的代码压缩包进行Demo示例演示，或克隆 官方开源代码仓库https://github.com/pollen-robotics/AmazingHand.git，官方开源代码或有错漏请务必注意。
+- [灵巧手(TTL串口舵机)调试教程](https://wiki.juxitech.com/zh-hans/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging): 首先，下载\"灵巧手调试.zip\"压缩包，解压后可通过\"使用arduio程序调试灵巧手过程（TTL舵机）\"文档进行舵机ID设置、标定、校准中位及演示程序运行，或 参考官方开源代码。
+- [Lekiwi移动机器人组装教程](https://wiki.juxitech.com/zh-hans/tutorials/robot-arms/lekiwi/Lekiwi-Assembly): 在Fusion360 在线 CAD中可以可视化精确的组件位置。
+- [Lekiwi移动机器人使用教程](https://wiki.juxitech.com/zh-hans/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial): 黑色主动臂使用5V6A电源适配器，白色从动臂使用12V5A电源适配器
+- [机械臂选型指南](https://wiki.juxitech.com/zh-hans/tutorials/robot-arms/select-guide): SO-ARM101 vs AmazingHand vs Lekiwi 机械臂对比与选型建议
+- [SO-ARM100&amp;101臂载支架和环境相机套件 安装教程](https://wiki.juxitech.com/zh-hans/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation): USB自动对接摄像头调试请参考该教程USB自动对焦摄像头教程
+- [Lerobot机械臂组装教程](https://wiki.juxitech.com/zh-hans/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly): Pro版 主动臂使用5V6A电源适配器，从动臂使用12V5A电源适配器
+- [Jetson Orin上Pytorch不兼容问题](https://wiki.juxitech.com/zh-hans/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility): 安装jetson版本的pytorch
+- [顶置摄像头安装座安装教程](https://wiki.juxitech.com/zh-hans/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation): USB自动对接摄像头调试请参考该教程USB自动对焦摄像头教程
+- [LeRobot机械臂教程](https://wiki.juxitech.com/zh-hans/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial): 本教程已更新至12月15日，可选择跟随最新版官方文档进行操作，官方文档具体教程可以参考本链接。若需要URDF等文件请参考本链接。9月15日旧版本请参考该链接。SO-ARM101与SO-ARM100运行代码相互兼容。
+- [ROS 入门教程](https://wiki.juxitech.com/zh-hans/tutorials/ros-intro): 钜犀科技 ROS 入门教程——ROS 1/ROS 2 环境安装、话题/服务/launch 基础概念,结合 IMU 与 SO-ARM101 机器人实践
+- [IMU 校准指南](https://wiki.juxitech.com/zh-hans/tutorials/sensors/imu/calibration): 钜犀科技高精度 IMU 模块校准指南——整体校准、磁力计校准、温度校准,支持串口与 I2C 双模式
+- [Arduino](https://wiki.juxitech.com/zh-hans/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino): 本次例程使用的是Arduino Nano开发板，一台windows电脑、杜邦线若干、IMU姿态传感器。
+- [Jetson系列](https://wiki.juxitech.com/zh-hans/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson): 本教程以Jetson Orin NX主板为例。
+- [树莓派5](https://wiki.juxitech.com/zh-hans/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi): 本教程以树莓派5主板，官方64位版本的镜像为例。
+- [RDK系列](https://wiki.juxitech.com/zh-hans/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk): 本教程以RDK X5主板的版本的镜像为例。
+- [STM32 F103C8T6](https://wiki.juxitech.com/zh-hans/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32): 本次例程使用的是STM32F103C8T6，一台windows电脑、杜邦线若干、IMU姿态传感器。
+- [多主控通讯案例](https://wiki.juxitech.com/zh-hans/tutorials/sensors/imu/multi-board-examples/overview): 1. CH341驱动安装（以管理员身份安装）
+- [PC通讯](https://wiki.juxitech.com/zh-hans/tutorials/sensors/imu/multi-board-examples/pc-communication): 注意：如果无法识别串口，请安装ch34x驱动
+- [Arduino](https://wiki.juxitech.com/zh-hans/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino): 本次例程使用的是Arduino Nano开发版，一台windows电脑、杜邦线若干、IMU姿态传感器、USB转TTL模块。
+- [Jetson系列](https://wiki.juxitech.com/zh-hans/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson): 本教程以Jetson orin nx主板为例。
+- [树莓派5](https://wiki.juxitech.com/zh-hans/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi): 本教程以树莓派5主板，官方64位版本的镜像为例。
+- [RDK系列](https://wiki.juxitech.com/zh-hans/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk): 本教程以RDK X5主板的版本的镜像为例。
+- [STM32 F103C8T6](https://wiki.juxitech.com/zh-hans/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32): 本次例程使用的是STM32F103C8T6核心板，一台windows电脑、杜邦线若干、IMU姿态传感器。
+- [IMU模块介绍](https://wiki.juxitech.com/zh-hans/tutorials/sensors/imu/product-info): 高精度 IMU 姿态传感器内置72MHz 高性能 32 位处理器，可实时姿态解算与动态补偿，数据更新频率高达 100Hz，兼具响应迅捷、输出稳定的优势。支持 IIC 与串口双通信模式，兼容单片机、Linux 主控，并可无缝集成 ROS 系统，广泛适用于机器人运动控制、无人机航姿稳定、智能导航定位等高
+- [ROS1应用](https://wiki.juxitech.com/zh-hans/tutorials/sensors/imu/ros-examples/ros1): 系统配置：ubuntu20.04
+- [ROS2应用](https://wiki.juxitech.com/zh-hans/tutorials/sensors/imu/ros-examples/ros2): 系统配置：ubuntu22.04
+- [LeRobot SO-ARM101机械臂教程](https://wiki.juxitech.com/zh-hans/tutorials/so-arm101-tutorial): 本教程已更新至12月15日，可选择跟随最新版官方文档进行操作，官方文档具体教程可以参考本链接。若需要URDF等文件请参考本链接。9月15日旧版本请参考该链接。SO-ARM101与SO-ARM100运行代码相互兼容。
+- [教程标题](https://wiki.juxitech.com/zh-hans/tutorials/so-arm101/template-tutorial): 教程描述
+- [软件配置](https://wiki.juxitech.com/zh-hans/tutorials/software-config): 本章节介绍产品的软件配置方法。
 
 ## English
 
-- [Contributing Guide](https://wiki.juxitech.com/en/community/contributing): How to contribute to the Juxi Technology Wiki
-- [ESP32-S3 WiFi Video Module](https://wiki.juxitech.com/en/products/esp32-s3-wifi-module): Juxi Technology ESP32-S3 WiFi video module — 2MP camera, real-time WiFi streaming, AI vision (color/face/QR), AP+STA dual mode
-- [GPS & BeiDou GNSS Positioning Module](https://wiki.juxitech.com/en/products/gps-beidou-module): Juxi Technology GPS & BeiDou GNSS module — ATGM336H-5N, four satellite systems, 2.5m accuracy, ROS ready
-- [Jetson Orin NX Super Developer Kit](https://wiki.juxitech.com/en/products/jetson-orin-nx-super-kit): Juxi Technology NVIDIA Jetson Orin NX SUPER dev kit — 117/157 TOPS edge AI platform, preinstalled Ubuntu 22.04 & 256GB NVMe SSD
-- [3D RealSense Depth Camera](https://wiki.juxitech.com/en/products/realsense-depth-camera): Juxi Technology 3D RealSense depth camera — D435i/D405/D405CB models, high-precision depth perception for XLeRobot & SO-ARM101
-- [SO-ARM101 Robot Vision Kit](https://wiki.juxitech.com/en/products/robot-vision-kit): Juxi Technology SO-ARM101 robot vision kit — wrist/side/overhead mounts, 60FPS fixed or 30FPS autofocus zoom camera, compatible with ACT/Smolvla/Pi0/GR00T frameworks
-- [JUXI Bus Servo Driver Board](https://wiki.juxitech.com/en/products/servo-driver-board): Juxi Technology JUXI bus servo driver board — single-bus control of 253 servos, 7-12.6V wide input, Type-C plug-and-play, designed for LeRobot SO-ARM
-- [SO-ARM101 TPU Flexible Gripper](https://wiki.juxitech.com/en/products/tpu-flexible-gripper): Juxi Technology SO-ARM101 TPU flexible gripper — soft TPU safely grasps irregular/fragile items, arm camera compatible, 30FPS zoom or 60FPS fixed options
-- [/tech/api-reference](https://wiki.juxitech.com/en/tech/api-reference)
-- [/tech/dev-guide](https://wiki.juxitech.com/en/tech/dev-guide)
-- [Raspberry Pi / Jetson - OLED Secondary Screen Tutorial](https://wiki.juxitech.com/en/tutorials/accessories/0.91-oled-screen-tutorial): Use a 0.91-inch OLED to test the I2C communication function, and connect according to the following wiring:
-- [2-DOF Camera Gimbal](https://wiki.juxitech.com/en/tutorials/accessories/2dof-camera-gimbal): Juxi Technology 2-DOF Camera Gimbal module with color tracking, face detection, and auto-tracking
-- [4K HD HDMI Capture Device Tutorial](https://wiki.juxitech.com/en/tutorials/accessories/4k-hdmi-capture-tutorial): According to the motherboard interface, there are the following three wiring operations
-- [Jetson Nano Serial Communication](https://wiki.juxitech.com/en/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication): Note: The voice interaction module needs to be flashed with the factory firmware. If the voice chip has not been flashed with firmware after being rec
-- [Jetson Serial Communication](https://wiki.juxitech.com/en/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication): Note: The voice interaction module needs to be flashed with the factory firmware. If the voice chip has not been flashed with firmware after being rec
-- [PC Serial Communication](https://wiki.juxitech.com/en/tutorials/accessories/KWS-speech-recognition-module/PC-serial-communication): [uartassist5.0.2.zip]
-- [ROS2-rviz2 Visualization](https://wiki.juxitech.com/en/tutorials/accessories/KWS-speech-recognition-module/ROS2-rviz2-visualization): - Operating System: Ubuntu 22.04
-- [Download and Burn Firmware for Chinese and English Recognition Words](https://wiki.juxitech.com/en/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words): The module has been pre-flashed with the voice recognition function firmware at the factory, and the factory firmware is also provided in the attached
-- [Raspberry Pi Serial Communication](https://wiki.juxitech.com/en/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication): Note: The voice interaction module needs to be flashed with the factory firmware. If the voice chip has not been flashed with firmware after being rec
-- [Magnetic Encoded STS Servo - Memory Table Parsing](https://wiki.juxitech.com/en/tutorials/accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis): The servo uses the FT-SCS Custom Communication Protocol, with the default serial port configuration at the factory. The default baud rate for the STS
-- [Potentiometer SCSCL Servo - Memory Table Analysis](https://wiki.juxitech.com/en/tutorials/accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis): The servo uses the FT-SCS custom Communication Protocol. The default baud rate of the servo is 1M or 500k, using TTL single bus communication, with 8
-- [Steering Gear SCS Communication Protocol](https://wiki.juxitech.com/en/tutorials/accessories/feetech/Feetech-SCS_Communication_Protocol): The communication level uses the TTL level method compatible with high-speed communication and the RS485 method with strong anti-interference ability.
-- [Debugging Tutorial for FEETECH Servos STS3215 &amp; SCS0009](https://wiki.juxitech.com/en/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial): FEETECH Host Computer FD Softwarehttps://gitee.com/ftservo
-- [Heart Rate & SpO2 Sensor](https://wiki.juxitech.com/en/tutorials/accessories/heart-rate-spo2): Juxi Technology MAX30102 Heart Rate & SpO2 Sensor Module — Arduino / Python Tutorial
-- [Jetson CSI Camera](https://wiki.juxitech.com/en/tutorials/accessories/jetson-csi-camera): Juxi Technology NVIDIA Jetson Orin CSI Camera Module Tutorial
-- [Tutorial on Using KVM Switches](https://wiki.juxitech.com/en/tutorials/accessories/kvm-switch-tutorial): The KVM switch includes HUB functionality, TTL serial port, and Bluetooth module
-- [USB Driverless Sound Card Tutorial](https://wiki.juxitech.com/en/tutorials/accessories/usb-audio-card-tutorial): Juxi Technology USB driver-free sound card tutorial — visualization test software, command-line operations, and audio debugging for Raspberry Pi, Jetson, and PC.
-- [USB Auto-Focus Camera](https://wiki.juxitech.com/en/tutorials/accessories/usb-auto-focus-camera): Juxi Technology USB Driver-Free 86° Wide Angle Auto-Focus 1080P Camera Tutorial
-- [FAQ](https://wiki.juxitech.com/en/tutorials/faq): Juxi Technology product FAQ — common issues for robot arms, sensors, and accessories
-- [Getting Started](https://wiki.juxitech.com/en/tutorials/getting-started): Welcome to Juxi Technology products! This tutorial will help you get started quickly.
-- [Hardware Setup](https://wiki.juxitech.com/en/tutorials/hardware-setup): This chapter details the product hardware connection method.
-- [Lark Wiki](https://wiki.juxitech.com/en/tutorials/lark-wiki)
-- [Getting Started](https://wiki.juxitech.com/en/tutorials/learning-resources/getting-started): Welcome to Juxi Technology products! This tutorial will help you get started quickly.
-- [Hardware Setup](https://wiki.juxitech.com/en/tutorials/learning-resources/hardware-setup): This chapter details the product hardware connection method.
-- [PyTorch Compatibility Issues on Jetson Orin](https://wiki.juxitech.com/en/tutorials/learning-resources/jetson-orin-pytorch-compatibility): Install the Jetson-specific build of PyTorch.
-- [Software Config](https://wiki.juxitech.com/en/tutorials/learning-resources/software-config): This chapter introduces the product software configuration method.
-- [Right AmazingHand - Interface Control](https://wiki.juxitech.com/en/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control): [AmazingHandControl.zip]
-- [Running Tutorial for AmazingHand Official Example](https://wiki.juxitech.com/en/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example): It is recommended to download the Compressed Packet of the code under this usage tutorial for Demo example demonstration, or clone the official open s
-- [Debugging Tutorial for AmazingHand (TTL Serial Servo)](https://wiki.juxitech.com/en/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging): First, download the \" Amazing Debugging.zip \" Compressed Packet. After decompression, you can use the \"Debugging Dexterous Hand Process with Arduio Pr
-- [Lekiwi Mobile Robot Assembly Tutorial](https://wiki.juxitech.com/en/tutorials/robot-arms/lekiwi/Lekiwi-Assembly): Precise component positions can be visualized in Fusion360 Online CAD.
-- [Lekiwi Mobile Robot User Guide](https://wiki.juxitech.com/en/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial): The black active arm uses a 5V 6A power adapter, while the white passive arm uses a 12V 5A power adapter
-- [Robot Arm Selection Guide](https://wiki.juxitech.com/en/tutorials/robot-arms/select-guide): SO-ARM101 vs AmazingHand vs Lekiwi comparison and selection guide
-- [LeRobot Robot Arm Tutorial](https://wiki.juxitech.com/en/tutorials/robot-arms/so-arm101-tutorial): This tutorial has been updated to December 15th, and you can choose to follow the latest version  of the official documentation for operation . For th
-- [Installation Tutorial for SO-ARM100&amp;101 Arm Mount Bracket and Environmental Camera Kit](https://wiki.juxitech.com/en/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation): Please refer to this tutorial for debugging the USB auto-docking cameraUSB Auto-Focus Camera Tutorial
-- [Lerobot SO-ARM101 Assembly Tutorial](https://wiki.juxitech.com/en/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly): The Pro version's active arm uses a 5V6A power adapter, while the passive arm uses a 12V5A power adapter
-- [Pytorch Incompatibility Issue on Jetson Orin](https://wiki.juxitech.com/en/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility): Possible Problem 1:
-- [Installation Tutorial for the Top-mounted Camera Mount](https://wiki.juxitech.com/en/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation): Please refer to this tutorial for debugging the USB auto-docking cameraUSB Auto-Focus Camera Tutorial
-- [LeRobot Robot Arm Tutorial](https://wiki.juxitech.com/en/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial): This tutorial has been updated to December 15th, and you can choose to follow the latest version  of the official documentation for operation . For th
-- [ROS Intro Tutorial](https://wiki.juxitech.com/en/tutorials/ros-intro): Juxi Technology ROS tutorial — ROS 1/ROS 2 environment setup, topics/services/launch basics, hands-on with IMU & SO-ARM101
-- [IMU Calibration Guide](https://wiki.juxitech.com/en/tutorials/sensors/imu/calibration): Juxi Technology high-precision IMU module calibration — full, magnetometer, and temperature calibration over serial & I2C
-- [Arduino](https://wiki.juxitech.com/en/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino): This routine uses an Arduino Nano development board, a Windows computer, several DuPont wires, and an IMU attitude sensor.
-- [Jetson Series](https://wiki.juxitech.com/en/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson): This tutorial takes the Jetson Orin NX motherboard as an example.
-- [Raspberry Pi 5](https://wiki.juxitech.com/en/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi): This tutorial takes the Raspberry Pi 5 motherboard and the official 64-bit version of the mirroring as an example.
-- [RDK Series](https://wiki.juxitech.com/en/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk): This tutorial takes the mirroring of the? version of the RDK X5 motherboard as an example.
-- [STM32 F103C8T6](https://wiki.juxitech.com/en/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32): This routine uses an STM32F103C8T6, a Windows computer, several DuPont wires, and an IMU attitude sensor.
-- [Multi-master communication case](https://wiki.juxitech.com/en/tutorials/sensors/imu/multi-board-examples/overview): 1. CH341 Driver Installation (Install as Administrator)
-- [PC Communication](https://wiki.juxitech.com/en/tutorials/sensors/imu/multi-board-examples/pc-communication): Note: If the serial port cannot be recognized, please install the CH340 driver
-- [Arduino](https://wiki.juxitech.com/en/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino): This routine uses an Arduino Nano development board, a Windows computer, several DuPont wires, an IMU attitude sensor, and a USB to TTL module.
-- [Jetson Series](https://wiki.juxitech.com/en/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson): This tutorial takes the Jetson Orin NX motherboard as an example.
-- [Raspberry Pi 5](https://wiki.juxitech.com/en/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi): This tutorial takes the Raspberry Pi 5 motherboard and the official 64-bit version of the mirroring as an example.
-- [RDK Series](https://wiki.juxitech.com/en/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk): This tutorial takes the mirroring of the? version of the RDK X5 motherboard as an example.
-- [STM32 F103C8T6](https://wiki.juxitech.com/en/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32): This routine uses an STM32F103C8T6 core board, a Windows computer, several DuPont wires, and an IMU attitude sensor.
-- [IMU Module Usage Tutorial](https://wiki.juxitech.com/en/tutorials/sensors/imu/product-info): Built-in high-precision IMU attitude sensor72MHz high-performance 32-bit processor, capable of real-time attitude calculation and dynamic compensation
-- [ROS1应用](https://wiki.juxitech.com/en/tutorials/sensors/imu/ros-examples/ros1): 系统配置：ubuntu20.04
-- [ROS2应用](https://wiki.juxitech.com/en/tutorials/sensors/imu/ros-examples/ros2): 系统配置：ubuntu22.04
-- [LeRobot SO-ARM101 Tutorial](https://wiki.juxitech.com/en/tutorials/so-arm101-tutorial): This tutorial is updated as of December 15th, you can choose to follow the latest official documentation, and refer to this link for specific tutorial
-- [Software Config](https://wiki.juxitech.com/en/tutorials/software-config): This chapter introduces the product software configuration method.
+- [Contributing Guide](https://wiki.juxitech.com/community/contributing): How to contribute to the Juxi Technology Wiki
+- [ESP32-S3 WiFi Video Module](https://wiki.juxitech.com/products/esp32-s3-wifi-module): Juxi Technology ESP32-S3 WiFi video module — 2MP camera, real-time WiFi streaming, AI vision (color/face/QR), AP+STA dual mode
+- [GPS & BeiDou GNSS Positioning Module](https://wiki.juxitech.com/products/gps-beidou-module): Juxi Technology GPS & BeiDou GNSS module — ATGM336H-5N, four satellite systems, 2.5m accuracy, ROS ready
+- [Jetson Orin NX Super Developer Kit](https://wiki.juxitech.com/products/jetson-orin-nx-super-kit): Juxi Technology NVIDIA Jetson Orin NX SUPER dev kit — 117/157 TOPS edge AI platform, preinstalled Ubuntu 22.04 & 256GB NVMe SSD
+- [3D RealSense Depth Camera](https://wiki.juxitech.com/products/realsense-depth-camera): Juxi Technology 3D RealSense depth camera — D435i/D405/D405CB models, high-precision depth perception for XLeRobot & SO-ARM101
+- [SO-ARM101 Robot Vision Kit](https://wiki.juxitech.com/products/robot-vision-kit): Juxi Technology SO-ARM101 robot vision kit — wrist/side/overhead mounts, 60FPS fixed or 30FPS autofocus zoom camera, compatible with ACT/Smolvla/Pi0/GR00T frameworks
+- [JUXI Bus Servo Driver Board](https://wiki.juxitech.com/products/servo-driver-board): Juxi Technology JUXI bus servo driver board — single-bus control of 253 servos, 7-12.6V wide input, Type-C plug-and-play, designed for LeRobot SO-ARM
+- [SO-ARM101 TPU Flexible Gripper](https://wiki.juxitech.com/products/tpu-flexible-gripper): Juxi Technology SO-ARM101 TPU flexible gripper — soft TPU safely grasps irregular/fragile items, arm camera compatible, 30FPS zoom or 60FPS fixed options
+- [/tech/api-reference](https://wiki.juxitech.com/tech/api-reference)
+- [/tech/dev-guide](https://wiki.juxitech.com/tech/dev-guide)
+- [Raspberry Pi / Jetson - OLED Secondary Screen Tutorial](https://wiki.juxitech.com/tutorials/accessories/0.91-oled-screen-tutorial): Use a 0.91-inch OLED to test the I2C communication function, and connect according to the following wiring:
+- [2-DOF Camera Gimbal](https://wiki.juxitech.com/tutorials/accessories/2dof-camera-gimbal): Juxi Technology 2-DOF Camera Gimbal module with color tracking, face detection, and auto-tracking
+- [4K HD HDMI Capture Device Tutorial](https://wiki.juxitech.com/tutorials/accessories/4k-hdmi-capture-tutorial): According to the motherboard interface, there are the following three wiring operations
+- [Jetson Nano Serial Communication](https://wiki.juxitech.com/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication): Note: The voice interaction module needs to be flashed with the factory firmware. If the voice chip has not been flashed with firmware after being rec
+- [Jetson Serial Communication](https://wiki.juxitech.com/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication): Note: The voice interaction module needs to be flashed with the factory firmware. If the voice chip has not been flashed with firmware after being rec
+- [PC Serial Communication](https://wiki.juxitech.com/tutorials/accessories/KWS-speech-recognition-module/PC-serial-communication): [uartassist5.0.2.zip]
+- [ROS2-rviz2 Visualization](https://wiki.juxitech.com/tutorials/accessories/KWS-speech-recognition-module/ROS2-rviz2-visualization): - Operating System: Ubuntu 22.04
+- [Download and Burn Firmware for Chinese and English Recognition Words](https://wiki.juxitech.com/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words): The module has been pre-flashed with the voice recognition function firmware at the factory, and the factory firmware is also provided in the attached
+- [Raspberry Pi Serial Communication](https://wiki.juxitech.com/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication): Note: The voice interaction module needs to be flashed with the factory firmware. If the voice chip has not been flashed with firmware after being rec
+- [Magnetic Encoded STS Servo - Memory Table Parsing](https://wiki.juxitech.com/tutorials/accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis): The servo uses the FT-SCS Custom Communication Protocol, with the default serial port configuration at the factory. The default baud rate for the STS
+- [Potentiometer SCSCL Servo - Memory Table Analysis](https://wiki.juxitech.com/tutorials/accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis): The servo uses the FT-SCS custom Communication Protocol. The default baud rate of the servo is 1M or 500k, using TTL single bus communication, with 8
+- [Steering Gear SCS Communication Protocol](https://wiki.juxitech.com/tutorials/accessories/feetech/Feetech-SCS_Communication_Protocol): The communication level uses the TTL level method compatible with high-speed communication and the RS485 method with strong anti-interference ability.
+- [Debugging Tutorial for FEETECH Servos STS3215 &amp; SCS0009](https://wiki.juxitech.com/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial): FEETECH Host Computer FD Softwarehttps://gitee.com/ftservo
+- [Heart Rate & SpO2 Sensor](https://wiki.juxitech.com/tutorials/accessories/heart-rate-spo2): Juxi Technology MAX30102 Heart Rate & SpO2 Sensor Module — Arduino / Python Tutorial
+- [Jetson CSI Camera](https://wiki.juxitech.com/tutorials/accessories/jetson-csi-camera): Juxi Technology NVIDIA Jetson Orin CSI Camera Module Tutorial
+- [Tutorial on Using KVM Switches](https://wiki.juxitech.com/tutorials/accessories/kvm-switch-tutorial): The KVM switch includes HUB functionality, TTL serial port, and Bluetooth module
+- [USB Driverless Sound Card Tutorial](https://wiki.juxitech.com/tutorials/accessories/usb-audio-card-tutorial): Juxi Technology USB driver-free sound card tutorial — visualization test software, command-line operations, and audio debugging for Raspberry Pi, Jetson, and PC.
+- [USB Auto-Focus Camera](https://wiki.juxitech.com/tutorials/accessories/usb-auto-focus-camera): Juxi Technology USB Driver-Free 86° Wide Angle Auto-Focus 1080P Camera Tutorial
+- [FAQ](https://wiki.juxitech.com/tutorials/faq): Juxi Technology product FAQ — common issues for robot arms, sensors, and accessories
+- [Getting Started](https://wiki.juxitech.com/tutorials/getting-started): Welcome to Juxi Technology products! This tutorial will help you get started quickly.
+- [Hardware Setup](https://wiki.juxitech.com/tutorials/hardware-setup): This chapter details the product hardware connection method.
+- [Lark Wiki](https://wiki.juxitech.com/tutorials/lark-wiki)
+- [Getting Started](https://wiki.juxitech.com/tutorials/learning-resources/getting-started): Welcome to Juxi Technology products! This tutorial will help you get started quickly.
+- [Hardware Setup](https://wiki.juxitech.com/tutorials/learning-resources/hardware-setup): This chapter details the product hardware connection method.
+- [PyTorch Compatibility Issues on Jetson Orin](https://wiki.juxitech.com/tutorials/learning-resources/jetson-orin-pytorch-compatibility): Install the Jetson-specific build of PyTorch.
+- [Software Config](https://wiki.juxitech.com/tutorials/learning-resources/software-config): This chapter introduces the product software configuration method.
+- [Right AmazingHand - Interface Control](https://wiki.juxitech.com/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control): [AmazingHandControl.zip]
+- [Running Tutorial for AmazingHand Official Example](https://wiki.juxitech.com/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example): It is recommended to download the Compressed Packet of the code under this usage tutorial for Demo example demonstration, or clone the official open s
+- [Debugging Tutorial for AmazingHand (TTL Serial Servo)](https://wiki.juxitech.com/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging): First, download the \" Amazing Debugging.zip \" Compressed Packet. After decompression, you can use the \"Debugging Dexterous Hand Process with Arduio Pr
+- [Lekiwi Mobile Robot Assembly Tutorial](https://wiki.juxitech.com/tutorials/robot-arms/lekiwi/Lekiwi-Assembly): Precise component positions can be visualized in Fusion360 Online CAD.
+- [Lekiwi Mobile Robot User Guide](https://wiki.juxitech.com/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial): The black active arm uses a 5V 6A power adapter, while the white passive arm uses a 12V 5A power adapter
+- [Robot Arm Selection Guide](https://wiki.juxitech.com/tutorials/robot-arms/select-guide): SO-ARM101 vs AmazingHand vs Lekiwi comparison and selection guide
+- [LeRobot Robot Arm Tutorial](https://wiki.juxitech.com/tutorials/robot-arms/so-arm101-tutorial): This tutorial has been updated to December 15th, and you can choose to follow the latest version  of the official documentation for operation . For th
+- [Installation Tutorial for SO-ARM100&amp;101 Arm Mount Bracket and Environmental Camera Kit](https://wiki.juxitech.com/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation): Please refer to this tutorial for debugging the USB auto-docking cameraUSB Auto-Focus Camera Tutorial
+- [Lerobot SO-ARM101 Assembly Tutorial](https://wiki.juxitech.com/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly): The Pro version's active arm uses a 5V6A power adapter, while the passive arm uses a 12V5A power adapter
+- [Pytorch Incompatibility Issue on Jetson Orin](https://wiki.juxitech.com/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility): Possible Problem 1:
+- [Installation Tutorial for the Top-mounted Camera Mount](https://wiki.juxitech.com/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation): Please refer to this tutorial for debugging the USB auto-docking cameraUSB Auto-Focus Camera Tutorial
+- [LeRobot Robot Arm Tutorial](https://wiki.juxitech.com/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial): This tutorial has been updated to December 15th, and you can choose to follow the latest version  of the official documentation for operation . For th
+- [ROS Intro Tutorial](https://wiki.juxitech.com/tutorials/ros-intro): Juxi Technology ROS tutorial — ROS 1/ROS 2 environment setup, topics/services/launch basics, hands-on with IMU & SO-ARM101
+- [IMU Calibration Guide](https://wiki.juxitech.com/tutorials/sensors/imu/calibration): Juxi Technology high-precision IMU module calibration — full, magnetometer, and temperature calibration over serial & I2C
+- [Arduino](https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino): This routine uses an Arduino Nano development board, a Windows computer, several DuPont wires, and an IMU attitude sensor.
+- [Jetson Series](https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson): This tutorial takes the Jetson Orin NX motherboard as an example.
+- [Raspberry Pi 5](https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi): This tutorial takes the Raspberry Pi 5 motherboard and the official 64-bit version of the mirroring as an example.
+- [RDK Series](https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk): This tutorial takes the mirroring of the? version of the RDK X5 motherboard as an example.
+- [STM32 F103C8T6](https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32): This routine uses an STM32F103C8T6, a Windows computer, several DuPont wires, and an IMU attitude sensor.
+- [Multi-master communication case](https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/overview): 1. CH341 Driver Installation (Install as Administrator)
+- [PC Communication](https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/pc-communication): Note: If the serial port cannot be recognized, please install the CH340 driver
+- [Arduino](https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino): This routine uses an Arduino Nano development board, a Windows computer, several DuPont wires, an IMU attitude sensor, and a USB to TTL module.
+- [Jetson Series](https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson): This tutorial takes the Jetson Orin NX motherboard as an example.
+- [Raspberry Pi 5](https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi): This tutorial takes the Raspberry Pi 5 motherboard and the official 64-bit version of the mirroring as an example.
+- [RDK Series](https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk): This tutorial takes the mirroring of the? version of the RDK X5 motherboard as an example.
+- [STM32 F103C8T6](https://wiki.juxitech.com/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32): This routine uses an STM32F103C8T6 core board, a Windows computer, several DuPont wires, and an IMU attitude sensor.
+- [IMU Module Usage Tutorial](https://wiki.juxitech.com/tutorials/sensors/imu/product-info): Built-in high-precision IMU attitude sensor72MHz high-performance 32-bit processor, capable of real-time attitude calculation and dynamic compensation
+- [ROS1应用](https://wiki.juxitech.com/tutorials/sensors/imu/ros-examples/ros1): 系统配置：ubuntu20.04
+- [ROS2应用](https://wiki.juxitech.com/tutorials/sensors/imu/ros-examples/ros2): 系统配置：ubuntu22.04
+- [LeRobot SO-ARM101 Tutorial](https://wiki.juxitech.com/tutorials/so-arm101-tutorial): This tutorial is updated as of December 15th, you can choose to follow the latest official documentation, and refer to this link for specific tutorial
+- [Software Config](https://wiki.juxitech.com/tutorials/software-config): This chapter introduces the product software configuration method.
 
 ## Traditional Chinese (繁體中文)
 
-- [貢獻指南](https://wiki.juxitech.com/zh-HK/community/contributing): 如何為鉅犀科技 Wiki 貢獻內容
-- [ESP32-S3 WiFi 視頻模組](https://wiki.juxitech.com/zh-HK/products/esp32-s3-wifi-module): 鉅犀科技 ESP32-S3 WiFi 圖傳模組——200 萬像素攝像頭,WiFi 實時圖傳,AI 視覺識別(顏色/人臉/二維碼),AP+STA 雙模式
-- [GPS & 北斗 GNSS 定位模組](https://wiki.juxitech.com/zh-HK/products/gps-beidou-module): 鉅犀科技 GPS & 北斗 GNSS 定位模組——ATGM336H-5N 芯片,四大衛星系統聯合定位,2.5m 精度,支持 ROS
-- [Jetson Orin NX Super 開發套件](https://wiki.juxitech.com/zh-HK/products/jetson-orin-nx-super-kit): 鉅犀科技 NVIDIA Jetson Orin NX SUPER 開發套件——117/157 TOPS 邊緣 AI 計算平台,預裝 Ubuntu 22.04 與 256GB NVMe SSD
-- [3D RealSense 深度相機](https://wiki.juxitech.com/zh-HK/products/realsense-depth-camera): 鉅犀科技 3D RealSense 深度相機——D435i/D405/D405CB 三型號,高精度深度感知,適配 XLeRobot 與 SO-ARM101
-- [SO-ARM101 機械臂視覺套件](https://wiki.juxitech.com/zh-HK/products/robot-vision-kit): 鉅犀科技 SO-ARM101 機械臂視覺套件——腕部/側方/俯視三視角安裝,60FPS 定焦或 30FPS 自動對焦變焦相機,兼容 ACT/Smolvla/Pi0/GR00T 訓練框架
-- [JUXI 總線舵機驅動板](https://wiki.juxitech.com/zh-HK/products/servo-driver-board): 鉅犀科技 JUXI 總線舵機驅動板——單總線控制 253 個舵機,7~12.6V 寬電壓,Type-C 即插即用,專為 LeRobot SO-ARM 設計
-- [SO-ARM101 TPU 柔性夾爪](https://wiki.juxitech.com/zh-HK/products/tpu-flexible-gripper): 鉅犀科技 SO-ARM101 TPU 柔性夾爪——軟 TPU 材質安全抓取不規則/易碎物品,支持臂載相機,可選 30FPS 變焦或 60FPS 定焦
-- [/tech/api-reference](https://wiki.juxitech.com/zh-HK/tech/api-reference)
-- [/tech/dev-guide](https://wiki.juxitech.com/zh-HK/tech/dev-guide)
-- [樹莓派/Jetson-OLED副屏教程](https://wiki.juxitech.com/zh-HK/tutorials/accessories/0.91-oled-screen-tutorial): 使用0.91寸OLED測試I2C通訊功能，按照下面接線進行連接：
-- [2 自由度相機雲台](https://wiki.juxitech.com/zh-HK/tutorials/accessories/2dof-camera-gimbal): 鉅犀科技 2-DOF 相機雲台模組，支援顏色追蹤、人臉檢測和自動追蹤
-- [4K高清HDMI採集器教程](https://wiki.juxitech.com/zh-HK/tutorials/accessories/4k-hdmi-capture-tutorial): 根據主板的接口分以下三種接線操作
-- [Jetson Nano串口通信](https://wiki.juxitech.com/zh-HK/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication): 注意：語音交互模塊需要燒錄出廠固件，語音芯片到手之後沒有刷過固件的則不需要
-- [Jetson串口通信](https://wiki.juxitech.com/zh-HK/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication): 注意：語音交互模塊需要燒錄出廠固件，語音芯片到手之後沒有刷過固件的則不需要
-- [PC串口通信](https://wiki.juxitech.com/zh-HK/tutorials/accessories/KWS-speech-recognition-module/PC-serial-communication): [uartassist5.0.2.zip]
-- [ROS2-rviz2可視化](https://wiki.juxitech.com/zh-HK/tutorials/accessories/KWS-speech-recognition-module/ROS2-rviz2-visualization): - 操作系統：Ubuntu 22.04
-- [中英文識別詞固件下載及燒錄](https://wiki.juxitech.com/zh-HK/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words): 模塊出廠已經燒錄語音識別功能固件，資料附件裏面也提供了出廠固件，如果需要重新制作固件可以根據下面步驟進行固件製作
-- [樹莓派串口通信](https://wiki.juxitech.com/zh-HK/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication): 注意：語音交互模塊需要燒錄出廠固件，語音芯片到手之後沒有刷過固件的則不需要
-- [磁編碼STS舵機-內存表解析](https://wiki.juxitech.com/zh-HK/tutorials/accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis): 舵機使用FT-SCS自定義協議，出廠時的串口默認配置，STS舵機默認波特率爲1M使用TTL單總線通信，數據位 8，無校驗，停止位 1；波特率可配置範圍38400~1Mbps，默認通信地址（站號）爲1。
-- [電位器SCSCL舵機-內存表解析](https://wiki.juxitech.com/zh-HK/tutorials/accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis): 舵機使用FT-SCS自定義協議，舵機默認波特率爲1M或500k使用TTL單總線通信，數據位 8，無校驗，停止位 1；波特率可配置範圍38400~1Mbps(500k)，默認通信地址（站號）爲1。
-- [舵機SCS通信協議](https://wiki.juxitech.com/zh-HK/tutorials/accessories/feetech/Feetech-SCS_Communication_Protocol): 通訊電平採用兼容高速通信的TTL電平方式與具有較強抗干擾能力的RS485方式，通訊仍是採用異步雙工，發送與接收信號是異步處理。
-- [飛特舵機STS3215&amp;SCS0009調試教程](https://wiki.juxitech.com/zh-HK/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial): 飛特上位機FD軟件 https://gitee.com/ftservo
-- [心率血氧感測器](https://wiki.juxitech.com/zh-HK/tutorials/accessories/heart-rate-spo2): 鉅犀科技 MAX30102 心率血氧感測器模組 Arduino / Python 使用教學
-- [Jetson CSI 攝像頭](https://wiki.juxitech.com/zh-HK/tutorials/accessories/jetson-csi-camera): 鉅犀科技 NVIDIA Jetson Orin CSI 攝像頭模組使用教程
-- [KVM切換器使用教程](https://wiki.juxitech.com/zh-HK/tutorials/accessories/kvm-switch-tutorial): KVM切換器包含HUB功能、TTL串口、藍牙模塊
-- [USB免驅聲卡教程](https://wiki.juxitech.com/zh-HK/tutorials/accessories/usb-audio-card-tutorial): 鉅犀科技 USB 免驅聲卡教程，涵蓋可視化測試軟件、命令操作與音頻調試方法，適用於樹莓派、Jetson、PC 等設備。
-- [USB 自動對焦攝像頭](https://wiki.juxitech.com/zh-HK/tutorials/accessories/usb-auto-focus-camera): 鉅犀科技 USB 免驅 86° 廣角自動對焦 1080P 攝像頭使用教程
-- [常見問題 FAQ](https://wiki.juxitech.com/zh-HK/tutorials/faq): 鉅犀科技產品常見問題合集——機械臂、傳感器、配件安裝與調試高頻問題匯總
-- [快速入門](https://wiki.juxitech.com/zh-HK/tutorials/getting-started)
-- [硬件連接](https://wiki.juxitech.com/zh-HK/tutorials/hardware-setup)
-- [Lark Wiki](https://wiki.juxitech.com/zh-HK/tutorials/lark-wiki)
-- [快速入門](https://wiki.juxitech.com/zh-HK/tutorials/learning-resources/getting-started): 歡迎使用鉅犀科技產品！本教程將幫助您快速開始。
-- [硬體連接](https://wiki.juxitech.com/zh-HK/tutorials/learning-resources/hardware-setup): 本章節詳細介紹產品硬體連接方法。
-- [Jetson Orin 上 PyTorch 不相容問題](https://wiki.juxitech.com/zh-HK/tutorials/learning-resources/jetson-orin-pytorch-compatibility): 安裝 jetson 版本的 pytorch
-- [軟體配置](https://wiki.juxitech.com/zh-HK/tutorials/learning-resources/software-config): 本章節介紹鉅犀科技產品的軟件配置方法，包括系統設置與驅動安裝步驟。
-- [右靈巧手-界面控制](https://wiki.juxitech.com/zh-HK/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control): [AmazingHandControl.zip]
-- [靈巧手官方示例運行教程](https://wiki.juxitech.com/zh-HK/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example): 建議下載本使用教程下的代碼壓縮包進行Demo示例演示，或克隆 官方開源代碼倉庫 https://github.com/pollen-robotics/AmazingHand.git ，官方開源代碼或有錯漏請務必注意。
-- [靈巧手(TTL串口舵機)調試教程](https://wiki.juxitech.com/zh-HK/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging): 首先，下載“靈巧手調試.zip”壓縮包，解壓後可通過“使用arduio程序調試靈巧手過程（TTL舵機）”文檔進行舵機ID設置、標定、校準中位及演示程序運行，或 參考官方開源代碼。
-- [Lekiwi移動機器人組裝教程](https://wiki.juxitech.com/zh-HK/tutorials/robot-arms/lekiwi/Lekiwi-Assembly): 在Fusion360 在線 CAD中可以可視化精確的組件位置。
-- [Lekiwi移動機器人用戶指南](https://wiki.juxitech.com/zh-HK/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial): 黑色主動臂使用5V 6A電源適配器，白色被動臂使用12V 5A電源適配器
-- [機械臂選型指南](https://wiki.juxitech.com/zh-HK/tutorials/robot-arms/select-guide): SO-ARM101 vs AmazingHand vs Lekiwi 機械臂對比與選型建議
-- [SO-ARM100&amp;101臂載支架和環境相機套件 安裝教程](https://wiki.juxitech.com/zh-HK/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation): USB自動對接攝像頭調試請參考該教程USB自动对焦摄像头教程
-- [Lerobot机械臂组装教程](https://wiki.juxitech.com/zh-HK/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly): Pro版 主动臂使用5V6A电源适配器，从动臂使用12V5A电源适配器
-- [Jetson Orin上Pytorch不兼容问题](https://wiki.juxitech.com/zh-HK/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility): 安装jetson版本的pytorch
-- [顶置摄像头安装座安装教程](https://wiki.juxitech.com/zh-HK/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation): USB自动对接摄像头调试请参考该教程USB自动对焦摄像头教程
-- [LeRobot機械臂教程](https://wiki.juxitech.com/zh-HK/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial): 本教程已更新至12月15日，可選擇跟隨最新版官方文檔進行操作，官方文檔具體教程可以參考本鏈接。若需要URDF等文件請參考本鏈接。9月15日舊版本請參考該鏈接。SO-ARM101與SO-ARM100運行代碼相互兼容。
-- [ROS 入門教程](https://wiki.juxitech.com/zh-HK/tutorials/ros-intro): 鉅犀科技 ROS 入門教程——ROS 1/ROS 2 環境安裝、話題/服務/launch 基礎概念,結合 IMU 與 SO-ARM101 機器人實踐
-- [IMU 校準指南](https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/calibration): 鉅犀科技高精度 IMU 模組校準指南——整體校準、磁力計校準、溫度校準,支持串口與 I2C 雙模式
-- [Arduino](https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino): 本次例程使用的是Arduino Nano開發板，一臺windows電腦、杜邦線若干、IMU姿態傳感器。
-- [Jetson系列](https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson): 本教程以Jetson Orin NX主板爲例。
-- [樹莓派5](https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi): 本教程以樹莓派5主板，官方64位版本的鏡像爲例。
-- [RDK系列](https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk): 本教程以RDK X5主板的？版本的鏡像爲例。
-- [STM32 F103C8T6](https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32): 本次例程使用的是STM32F103C8T6，一臺windows電腦、杜邦線若干、IMU姿態傳感器。
-- [多主控通訊案例](https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/multi-board-examples/overview): 1. CH341驅動安裝（以管理員身份安裝）
-- [PC通訊](https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/multi-board-examples/pc-communication): 注意：如果無法識別串口，請安裝ch340驅動
-- [Arduino](https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino): 本次例程使用的是Arduino Nano開發版，一臺windows電腦、杜邦線若干、IMU姿態傳感器、USB轉TTL模塊。
-- [Jetson系列](https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson): 本教程以Jetson orin nx主板爲例。
-- [樹莓派5](https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi): 本教程以樹莓派5主板，官方64位版本的鏡像爲例。
-- [RDK系列](https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk): 本教程以RDK X5主板的？版本的鏡像爲例。
-- [STM32 F103C8T6](https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32): 本次例程使用的是STM32F103C8T6核心板，一臺windows電腦、杜邦線若干、IMU姿態傳感器。
-- [IMU模塊使用教程](https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/product-info): 高精度 IMU 姿態傳感器內置72MHz 高性能 32 位處理器，可實時姿態解算與動態補償，數據更新頻率高達 100Hz，兼具響應迅捷、輸出穩定的優勢。支持 IIC 與串口雙通信模式，兼容單片機、Linux 主控，並可無縫集成 ROS 系統，廣泛適用於機器人運動控制、無人機航姿穩定、智能導航定位等高
-- [ROS1應用](https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/ros-examples/ros1): 系統配置：ubuntu20.04
-- [ROS2應用](https://wiki.juxitech.com/zh-HK/tutorials/sensors/imu/ros-examples/ros2): 系統配置：ubuntu22.04
-- [LeRobot SO-ARM101機械臂教程](https://wiki.juxitech.com/zh-HK/tutorials/so-arm101-tutorial): 本教學已更新至12月15日，可選擇跟隨最新版官方文檔進行操作，官方文檔具體教學可以參考本鏈接。若需要URDF等文件請參考本鏈接。9月15日舊版本請參考該鏈接。SO-ARM101與SO-ARM100運行代碼相互兼容。
-- [軟件配置](https://wiki.juxitech.com/zh-HK/tutorials/software-config)
+- [貢獻指南](https://wiki.juxitech.com/zh-hant/community/contributing): 如何為鉅犀科技 Wiki 貢獻內容
+- [ESP32-S3 WiFi 視頻模組](https://wiki.juxitech.com/zh-hant/products/esp32-s3-wifi-module): 鉅犀科技 ESP32-S3 WiFi 圖傳模組——200 萬像素攝像頭,WiFi 實時圖傳,AI 視覺識別(顏色/人臉/二維碼),AP+STA 雙模式
+- [GPS & 北斗 GNSS 定位模組](https://wiki.juxitech.com/zh-hant/products/gps-beidou-module): 鉅犀科技 GPS & 北斗 GNSS 定位模組——ATGM336H-5N 芯片,四大衛星系統聯合定位,2.5m 精度,支持 ROS
+- [Jetson Orin NX Super 開發套件](https://wiki.juxitech.com/zh-hant/products/jetson-orin-nx-super-kit): 鉅犀科技 NVIDIA Jetson Orin NX SUPER 開發套件——117/157 TOPS 邊緣 AI 計算平台,預裝 Ubuntu 22.04 與 256GB NVMe SSD
+- [3D RealSense 深度相機](https://wiki.juxitech.com/zh-hant/products/realsense-depth-camera): 鉅犀科技 3D RealSense 深度相機——D435i/D405/D405CB 三型號,高精度深度感知,適配 XLeRobot 與 SO-ARM101
+- [SO-ARM101 機械臂視覺套件](https://wiki.juxitech.com/zh-hant/products/robot-vision-kit): 鉅犀科技 SO-ARM101 機械臂視覺套件——腕部/側方/俯視三視角安裝,60FPS 定焦或 30FPS 自動對焦變焦相機,兼容 ACT/Smolvla/Pi0/GR00T 訓練框架
+- [JUXI 總線舵機驅動板](https://wiki.juxitech.com/zh-hant/products/servo-driver-board): 鉅犀科技 JUXI 總線舵機驅動板——單總線控制 253 個舵機,7~12.6V 寬電壓,Type-C 即插即用,專為 LeRobot SO-ARM 設計
+- [SO-ARM101 TPU 柔性夾爪](https://wiki.juxitech.com/zh-hant/products/tpu-flexible-gripper): 鉅犀科技 SO-ARM101 TPU 柔性夾爪——軟 TPU 材質安全抓取不規則/易碎物品,支持臂載相機,可選 30FPS 變焦或 60FPS 定焦
+- [/tech/api-reference](https://wiki.juxitech.com/zh-hant/tech/api-reference)
+- [/tech/dev-guide](https://wiki.juxitech.com/zh-hant/tech/dev-guide)
+- [樹莓派/Jetson-OLED副屏教程](https://wiki.juxitech.com/zh-hant/tutorials/accessories/0.91-oled-screen-tutorial): 使用0.91寸OLED測試I2C通訊功能，按照下面接線進行連接：
+- [2 自由度相機雲台](https://wiki.juxitech.com/zh-hant/tutorials/accessories/2dof-camera-gimbal): 鉅犀科技 2-DOF 相機雲台模組，支援顏色追蹤、人臉檢測和自動追蹤
+- [4K高清HDMI採集器教程](https://wiki.juxitech.com/zh-hant/tutorials/accessories/4k-hdmi-capture-tutorial): 根據主板的接口分以下三種接線操作
+- [Jetson Nano串口通信](https://wiki.juxitech.com/zh-hant/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication): 注意：語音交互模塊需要燒錄出廠固件，語音芯片到手之後沒有刷過固件的則不需要
+- [Jetson串口通信](https://wiki.juxitech.com/zh-hant/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication): 注意：語音交互模塊需要燒錄出廠固件，語音芯片到手之後沒有刷過固件的則不需要
+- [PC串口通信](https://wiki.juxitech.com/zh-hant/tutorials/accessories/KWS-speech-recognition-module/PC-serial-communication): [uartassist5.0.2.zip]
+- [ROS2-rviz2可視化](https://wiki.juxitech.com/zh-hant/tutorials/accessories/KWS-speech-recognition-module/ROS2-rviz2-visualization): - 操作系統：Ubuntu 22.04
+- [中英文識別詞固件下載及燒錄](https://wiki.juxitech.com/zh-hant/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words): 模塊出廠已經燒錄語音識別功能固件，資料附件裏面也提供了出廠固件，如果需要重新制作固件可以根據下面步驟進行固件製作
+- [樹莓派串口通信](https://wiki.juxitech.com/zh-hant/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication): 注意：語音交互模塊需要燒錄出廠固件，語音芯片到手之後沒有刷過固件的則不需要
+- [磁編碼STS舵機-內存表解析](https://wiki.juxitech.com/zh-hant/tutorials/accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis): 舵機使用FT-SCS自定義協議，出廠時的串口默認配置，STS舵機默認波特率爲1M使用TTL單總線通信，數據位 8，無校驗，停止位 1；波特率可配置範圍38400~1Mbps，默認通信地址（站號）爲1。
+- [電位器SCSCL舵機-內存表解析](https://wiki.juxitech.com/zh-hant/tutorials/accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis): 舵機使用FT-SCS自定義協議，舵機默認波特率爲1M或500k使用TTL單總線通信，數據位 8，無校驗，停止位 1；波特率可配置範圍38400~1Mbps(500k)，默認通信地址（站號）爲1。
+- [舵機SCS通信協議](https://wiki.juxitech.com/zh-hant/tutorials/accessories/feetech/Feetech-SCS_Communication_Protocol): 通訊電平採用兼容高速通信的TTL電平方式與具有較強抗干擾能力的RS485方式，通訊仍是採用異步雙工，發送與接收信號是異步處理。
+- [飛特舵機STS3215&amp;SCS0009調試教程](https://wiki.juxitech.com/zh-hant/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial): 飛特上位機FD軟件 https://gitee.com/ftservo
+- [心率血氧感測器](https://wiki.juxitech.com/zh-hant/tutorials/accessories/heart-rate-spo2): 鉅犀科技 MAX30102 心率血氧感測器模組 Arduino / Python 使用教學
+- [Jetson CSI 攝像頭](https://wiki.juxitech.com/zh-hant/tutorials/accessories/jetson-csi-camera): 鉅犀科技 NVIDIA Jetson Orin CSI 攝像頭模組使用教程
+- [KVM切換器使用教程](https://wiki.juxitech.com/zh-hant/tutorials/accessories/kvm-switch-tutorial): KVM切換器包含HUB功能、TTL串口、藍牙模塊
+- [USB免驅聲卡教程](https://wiki.juxitech.com/zh-hant/tutorials/accessories/usb-audio-card-tutorial): 鉅犀科技 USB 免驅聲卡教程，涵蓋可視化測試軟件、命令操作與音頻調試方法，適用於樹莓派、Jetson、PC 等設備。
+- [USB 自動對焦攝像頭](https://wiki.juxitech.com/zh-hant/tutorials/accessories/usb-auto-focus-camera): 鉅犀科技 USB 免驅 86° 廣角自動對焦 1080P 攝像頭使用教程
+- [常見問題 FAQ](https://wiki.juxitech.com/zh-hant/tutorials/faq): 鉅犀科技產品常見問題合集——機械臂、傳感器、配件安裝與調試高頻問題匯總
+- [快速入門](https://wiki.juxitech.com/zh-hant/tutorials/getting-started)
+- [硬件連接](https://wiki.juxitech.com/zh-hant/tutorials/hardware-setup)
+- [Lark Wiki](https://wiki.juxitech.com/zh-hant/tutorials/lark-wiki)
+- [快速入門](https://wiki.juxitech.com/zh-hant/tutorials/learning-resources/getting-started): 歡迎使用鉅犀科技產品！本教程將幫助您快速開始。
+- [硬體連接](https://wiki.juxitech.com/zh-hant/tutorials/learning-resources/hardware-setup): 本章節詳細介紹產品硬體連接方法。
+- [Jetson Orin 上 PyTorch 不相容問題](https://wiki.juxitech.com/zh-hant/tutorials/learning-resources/jetson-orin-pytorch-compatibility): 安裝 jetson 版本的 pytorch
+- [軟體配置](https://wiki.juxitech.com/zh-hant/tutorials/learning-resources/software-config): 本章節介紹鉅犀科技產品的軟件配置方法，包括系統設置與驅動安裝步驟。
+- [右靈巧手-界面控制](https://wiki.juxitech.com/zh-hant/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control): [AmazingHandControl.zip]
+- [靈巧手官方示例運行教程](https://wiki.juxitech.com/zh-hant/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example): 建議下載本使用教程下的代碼壓縮包進行Demo示例演示，或克隆 官方開源代碼倉庫 https://github.com/pollen-robotics/AmazingHand.git ，官方開源代碼或有錯漏請務必注意。
+- [靈巧手(TTL串口舵機)調試教程](https://wiki.juxitech.com/zh-hant/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging): 首先，下載“靈巧手調試.zip”壓縮包，解壓後可通過“使用arduio程序調試靈巧手過程（TTL舵機）”文檔進行舵機ID設置、標定、校準中位及演示程序運行，或 參考官方開源代碼。
+- [Lekiwi移動機器人組裝教程](https://wiki.juxitech.com/zh-hant/tutorials/robot-arms/lekiwi/Lekiwi-Assembly): 在Fusion360 在線 CAD中可以可視化精確的組件位置。
+- [Lekiwi移動機器人用戶指南](https://wiki.juxitech.com/zh-hant/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial): 黑色主動臂使用5V 6A電源適配器，白色被動臂使用12V 5A電源適配器
+- [機械臂選型指南](https://wiki.juxitech.com/zh-hant/tutorials/robot-arms/select-guide): SO-ARM101 vs AmazingHand vs Lekiwi 機械臂對比與選型建議
+- [SO-ARM100&amp;101臂載支架和環境相機套件 安裝教程](https://wiki.juxitech.com/zh-hant/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation): USB自動對接攝像頭調試請參考該教程USB自动对焦摄像头教程
+- [Lerobot机械臂组装教程](https://wiki.juxitech.com/zh-hant/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly): Pro版 主动臂使用5V6A电源适配器，从动臂使用12V5A电源适配器
+- [Jetson Orin上Pytorch不兼容问题](https://wiki.juxitech.com/zh-hant/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility): 安装jetson版本的pytorch
+- [顶置摄像头安装座安装教程](https://wiki.juxitech.com/zh-hant/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation): USB自动对接摄像头调试请参考该教程USB自动对焦摄像头教程
+- [LeRobot機械臂教程](https://wiki.juxitech.com/zh-hant/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial): 本教程已更新至12月15日，可選擇跟隨最新版官方文檔進行操作，官方文檔具體教程可以參考本鏈接。若需要URDF等文件請參考本鏈接。9月15日舊版本請參考該鏈接。SO-ARM101與SO-ARM100運行代碼相互兼容。
+- [ROS 入門教程](https://wiki.juxitech.com/zh-hant/tutorials/ros-intro): 鉅犀科技 ROS 入門教程——ROS 1/ROS 2 環境安裝、話題/服務/launch 基礎概念,結合 IMU 與 SO-ARM101 機器人實踐
+- [IMU 校準指南](https://wiki.juxitech.com/zh-hant/tutorials/sensors/imu/calibration): 鉅犀科技高精度 IMU 模組校準指南——整體校準、磁力計校準、溫度校準,支持串口與 I2C 雙模式
+- [Arduino](https://wiki.juxitech.com/zh-hant/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino): 本次例程使用的是Arduino Nano開發板，一臺windows電腦、杜邦線若干、IMU姿態傳感器。
+- [Jetson系列](https://wiki.juxitech.com/zh-hant/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson): 本教程以Jetson Orin NX主板爲例。
+- [樹莓派5](https://wiki.juxitech.com/zh-hant/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi): 本教程以樹莓派5主板，官方64位版本的鏡像爲例。
+- [RDK系列](https://wiki.juxitech.com/zh-hant/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk): 本教程以RDK X5主板的？版本的鏡像爲例。
+- [STM32 F103C8T6](https://wiki.juxitech.com/zh-hant/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32): 本次例程使用的是STM32F103C8T6，一臺windows電腦、杜邦線若干、IMU姿態傳感器。
+- [多主控通訊案例](https://wiki.juxitech.com/zh-hant/tutorials/sensors/imu/multi-board-examples/overview): 1. CH341驅動安裝（以管理員身份安裝）
+- [PC通訊](https://wiki.juxitech.com/zh-hant/tutorials/sensors/imu/multi-board-examples/pc-communication): 注意：如果無法識別串口，請安裝ch340驅動
+- [Arduino](https://wiki.juxitech.com/zh-hant/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino): 本次例程使用的是Arduino Nano開發版，一臺windows電腦、杜邦線若干、IMU姿態傳感器、USB轉TTL模塊。
+- [Jetson系列](https://wiki.juxitech.com/zh-hant/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson): 本教程以Jetson orin nx主板爲例。
+- [樹莓派5](https://wiki.juxitech.com/zh-hant/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi): 本教程以樹莓派5主板，官方64位版本的鏡像爲例。
+- [RDK系列](https://wiki.juxitech.com/zh-hant/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk): 本教程以RDK X5主板的？版本的鏡像爲例。
+- [STM32 F103C8T6](https://wiki.juxitech.com/zh-hant/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32): 本次例程使用的是STM32F103C8T6核心板，一臺windows電腦、杜邦線若干、IMU姿態傳感器。
+- [IMU模塊使用教程](https://wiki.juxitech.com/zh-hant/tutorials/sensors/imu/product-info): 高精度 IMU 姿態傳感器內置72MHz 高性能 32 位處理器，可實時姿態解算與動態補償，數據更新頻率高達 100Hz，兼具響應迅捷、輸出穩定的優勢。支持 IIC 與串口雙通信模式，兼容單片機、Linux 主控，並可無縫集成 ROS 系統，廣泛適用於機器人運動控制、無人機航姿穩定、智能導航定位等高
+- [ROS1應用](https://wiki.juxitech.com/zh-hant/tutorials/sensors/imu/ros-examples/ros1): 系統配置：ubuntu20.04
+- [ROS2應用](https://wiki.juxitech.com/zh-hant/tutorials/sensors/imu/ros-examples/ros2): 系統配置：ubuntu22.04
+- [LeRobot SO-ARM101機械臂教程](https://wiki.juxitech.com/zh-hant/tutorials/so-arm101-tutorial): 本教學已更新至12月15日，可選擇跟隨最新版官方文檔進行操作，官方文檔具體教學可以參考本鏈接。若需要URDF等文件請參考本鏈接。9月15日舊版本請參考該鏈接。SO-ARM101與SO-ARM100運行代碼相互兼容。
+- [軟件配置](https://wiki.juxitech.com/zh-hant/tutorials/software-config)
+## Other Languages (日本語 / 한국어 / Deutsch / Français / Español / Italiano)
+
+Same documentation tree as the English section, localized under URL prefixes: /ja/, /ko/, /de/, /fr/, /es/, /it/.
+All pages above (tutorials, topics, tech, cases, community, downloads) exist in every language with the same relative path.

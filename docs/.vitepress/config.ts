@@ -8,12 +8,14 @@ const globalHead = [
   ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
   ['link', { rel: 'canonical', href: 'https://wiki.juxitech.com/' }],
   ['meta', { name: 'robots', content: 'index, follow' }],
-  // 百度统计(替换 YOUR_BAIDU_ID 为真实统计 ID;不配置则脚本为空 no-op)
+  // 百度统计:默认占位 ID 时 no-op(不发请求);替换 JUXI_BAIDU_ID 为真实统计 ID 后生效
   ['script', {}, `(function(){
     if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') return;
+    var JUXI_BAIDU_ID = 'YOUR_BAIDU_ID';
+    if (JUXI_BAIDU_ID === 'YOUR_BAIDU_ID') return;
     var _hmt = _hmt || [];
     var hm = document.createElement('script');
-    hm.src = 'https://hm.baidu.com/hm.js?' + 'YOUR_BAIDU_ID';
+    hm.src = 'https://hm.baidu.com/hm.js?' + JUXI_BAIDU_ID;
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(hm, s);
   })();`],
@@ -34,6 +36,7 @@ const zhCN = {
       { text: '教程', link: '/zh-hans/tutorials/', activeMatch: '/zh-hans/tutorials/' },
       { text: '技术专题', link: '/zh-hans/topics/', activeMatch: '/zh-hans/topics/' },
       { text: '技术文档', link: '/zh-hans/tech/', activeMatch: '/zh-hans/tech/' },
+      { text: '产品', link: '/zh-hans/products/', activeMatch: '/zh-hans/products/' },
       { text: '用户案例', link: '/zh-hans/cases/', activeMatch: '/zh-hans/cases/' },
       { text: '社区', link: '/zh-hans/community/', activeMatch: '/zh-hans/community/' },
       { text: '下载', link: '/zh-hans/downloads/', activeMatch: '/zh-hans/downloads/' },
@@ -248,6 +251,7 @@ const en = {
       { text: 'Tutorials', link: '/tutorials/', activeMatch: '/tutorials/' },
       { text: 'Topics', link: '/topics/', activeMatch: '/topics/' },
       { text: 'Tech Docs', link: '/tech/', activeMatch: '/tech/' },
+      { text: 'Products', link: '/products/', activeMatch: '/products/' },
       { text: 'Cases', link: '/cases/', activeMatch: '/cases/' },
       { text: 'Community', link: '/community/', activeMatch: '/community/' },
       { text: 'Downloads', link: '/downloads/', activeMatch: '/downloads/' },
@@ -462,6 +466,7 @@ const zhHK = {
       { text: '教程', link: '/zh-hant/tutorials/', activeMatch: '/zh-hant/tutorials/' },
       { text: '技術專題', link: '/zh-hant/topics/', activeMatch: '/zh-hant/topics/' },
       { text: '技術文檔', link: '/zh-hant/tech/', activeMatch: '/zh-hant/tech/' },
+      { text: '產品', link: '/zh-hant/products/', activeMatch: '/zh-hant/products/' },
       { text: '用戶案例', link: '/zh-hant/cases/', activeMatch: '/zh-hant/cases/' },
       { text: '社區', link: '/zh-hant/community/', activeMatch: '/zh-hant/community/' },
       { text: '下載', link: '/zh-hant/downloads/', activeMatch: '/zh-hant/downloads/' },
@@ -739,17 +744,8 @@ export default defineConfig({
   ignoreDeadLinks: true,
   lastUpdated: true,
   // public/ 下的 .md 是历史遗留占位/草稿(飞书链接),不应渲染为页面
-  // test.md / superpowers/ 已在阶段 1 移出 docs/(git 层面),磁盘残留待 sudo 清理,构建时一并排除
   srcExclude: [
     'public/**/*.md',
-    'superpowers/**/*.md',
-    'test.md',
-    'tutorials/so-arm101/**/*.md',
-    // 冗余的 so-arm101-tutorial 副本(与 canonical 内容发散,暂不发布)
-    'tutorials/so-arm101-tutorial.md',
-    'en/tutorials/so-arm101-tutorial.md',
-    'en/tutorials/robot-arms/so-arm101-tutorial.md',
-    'zh-HK/tutorials/so-arm101-tutorial.md',
   ],
   head: globalHead,
   locales: {
@@ -771,9 +767,10 @@ export default defineConfig({
         { text: 'チュートリアル', link: '/ja/tutorials/', activeMatch: '/ja/tutorials/' },
         { text: 'トピック', link: '/ja/topics/', activeMatch: '/ja/topics/' },
         { text: '技術ドキュメント', link: '/ja/tech/', activeMatch: '/ja/tech/' },
-        { text: 'ダウンロード', link: '/ja/downloads/', activeMatch: '/ja/downloads/' },
         { text: '製品', link: '/ja/products/', activeMatch: '/ja/products/' },
+        { text: 'ケーススタディ', link: '/ja/cases/', activeMatch: '/ja/cases/' },
         { text: 'コミュニティ', link: '/ja/community/', activeMatch: '/ja/community/' },
+        { text: 'ダウンロード', link: '/ja/downloads/', activeMatch: '/ja/downloads/' },
         { text: '会社概要', link: '/ja/about/', activeMatch: '/ja/about/' },
       ],
       sidebar: {
@@ -784,11 +781,49 @@ export default defineConfig({
             { text: 'ハードウェア接続', link: '/ja/tutorials/hardware-setup' },
             { text: 'ソフトウェア設定', link: '/ja/tutorials/software-config' },
             { text: 'ROS 入門', link: '/ja/tutorials/ros-intro' },
+            { text: 'Lark Wiki', link: '/ja/tutorials/lark-wiki' },
+          ] },
+          { text: '学習リソース', items: [
+            { text: '学習リソース', link: '/ja/tutorials/learning-resources/' },
+            { text: 'クイックスタート', link: '/ja/tutorials/learning-resources/getting-started' },
+            { text: 'ハードウェア接続', link: '/ja/tutorials/learning-resources/hardware-setup' },
+            { text: 'ソフトウェア設定', link: '/ja/tutorials/learning-resources/software-config' },
+            { text: 'Jetson Orin での PyTorch 非互換問題', link: '/ja/tutorials/learning-resources/jetson-orin-pytorch-compatibility' },
           ] },
           { text: 'ロボットアーム', items: [
+            { text: 'ロボットアームシリーズ', link: '/ja/tutorials/robot-arms/' },
             { text: '選定ガイド', link: '/ja/tutorials/robot-arms/select-guide' },
+            {
+              text: 'SO-ARM101 シリーズ',
+              collapsed: false,
+              items: [
+                { text: 'LeRobot ロボットアーム教程', link: '/ja/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial' },
+                { text: 'Lerobot ロボットアーム組立ガイド', link: '/ja/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly' },
+                { text: 'Jetson Orin での PyTorch 非互換問題', link: '/ja/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility' },
+                { text: 'SO-ARM100&101 アーム搭載ブラケットと環境カメラキット 取付チュートリアル', link: '/ja/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation' },
+                { text: 'オーバーヘッドカメラマウント取付ガイド', link: '/ja/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation' },
+              ],
+            },
+            {
+              text: 'AmazingHand',
+              collapsed: true,
+              items: [
+                { text: 'ロボットハンド インターフェース制御', link: '/ja/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control' },
+                { text: '器用ハンド公式サンプル実行チュートリアル', link: '/ja/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example' },
+                { text: '器用ハンド（TTL シリアルサーボ）デバッグチュートリアル', link: '/ja/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging' },
+              ],
+            },
+            {
+              text: 'Lekiwi',
+              collapsed: true,
+              items: [
+                { text: 'Lekiwi 移動ロボット使用チュートリアル', link: '/ja/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial' },
+                { text: 'Lekiwi 移動ロボット組み立てチュートリアル', link: '/ja/tutorials/robot-arms/lekiwi/Lekiwi-Assembly' },
+              ],
+            },
           ] },
           { text: 'センサー', items: [
+            { text: 'センサーと知覚', link: '/ja/tutorials/sensors/' },
             { text: 'IMU キャリブレーション', link: '/ja/tutorials/sensors/imu/calibration' },
             {
               text: 'IMU 慣性ナビゲーション',
@@ -833,6 +868,7 @@ export default defineConfig({
             },
           ] },
           { text: 'アクセサリー', items: [
+            { text: 'ロボットアクセサリ', link: '/ja/tutorials/accessories/' },
                 { text: 'USB オートフォーカスカメラ', link: '/ja/tutorials/accessories/usb-auto-focus-camera' },
                 { text: 'Jetson CSI カメラ', link: '/ja/tutorials/accessories/jetson-csi-camera' },
                 {
@@ -866,29 +902,16 @@ export default defineConfig({
             { text: 'USB ドライバ不要サウンドカード', link: '/ja/tutorials/accessories/usb-audio-card-tutorial' },
           ] },
         ],
-        '/ja/topics/': [{ text: 'トピック', items: [{ text: 'トピック', link: '/ja/topics/' }, { text: 'オープンソースハードウェアの理念', link: '/ja/topics/open-source-hardware' }] }],
-        '/ja/tech/': [{ text: '技術ドキュメント', items: [{ text: '技術ドキュメント', link: '/ja/tech/' }] }],
-        '/ja/community/': [{ text: 'コミュニティ', items: [{ text: 'コミュニティ', link: '/ja/community/' }] }],
+        '/ja/topics/': [{ text: 'トピック', items: [{ text: 'トピック', link: '/ja/topics/' }, { text: 'JetPack フラッシングとシステム設定', link: '/ja/topics/jetpack-setup' }, { text: 'エッジ AI 導入入門', link: '/ja/topics/edge-ai-intro' }, { text: '具身知能入門（LeRobot）', link: '/ja/topics/embodied-ai-intro' }, { text: 'ロボット学習特集', link: '/ja/topics/robot-learning/' }, { text: 'オープンソースハードウェアの理念', link: '/ja/topics/open-source-hardware' }] }],
+        '/ja/tech/': [{ text: '技術ドキュメント', items: [{ text: '技術ドキュメント', link: '/ja/tech/' }, { text: 'API リファレンス', link: '/ja/tech/api-reference' }, { text: '開発ガイド', link: '/ja/tech/dev-guide' }] }],
+        '/ja/community/': [{ text: 'コミュニティ', items: [{ text: 'コミュニティ', link: '/ja/community/' }, { text: '貢献ガイド', link: '/ja/community/contributing' }] }],
+        '/ja/cases/': [{ text: 'ケーススタディ', items: [{ text: 'ユーザー成功事例', link: '/ja/cases/' }] }],
         '/ja/products/': [
           { text: '製品', items: [
             { text: 'SO-ARM101 開発キット', link: '/ja/products/so-arm101' },
             { text: 'AmazingHand 4指器用ハンド', link: '/ja/products/amazinghand' },
             { text: 'Jetson Orin NX Super 開発キット', link: '/ja/products/jetson-orin-nx-super-kit' },
             { text: 'IMU 慣性ナビゲーションモジュール', link: '/ja/products/imu-module' },
-            { text: 'バスサーボドライバ基板', link: '/ja/products/servo-driver-board' },
-            { text: 'GPS & 北斗 GNSS 測位モジュール', link: '/ja/products/gps-beidou-module' },
-            { text: 'ESP32-S3 WiFi 映像モジュール', link: '/ja/products/esp32-s3-wifi-module' },
-            { text: 'SO-ARM101 TPU フレキシブルグリッパー', link: '/ja/products/tpu-flexible-gripper' },
-            { text: 'SO-ARM101 ロボットビジョンキット', link: '/ja/products/robot-vision-kit' },
-            { text: 'Lekiwi 具身知能移動ロボット', link: '/ja/products/lekiwi' },
-            { text: '2自由度サーボジンバル', link: '/ja/products/2dof-gimbal' },
-            { text: 'KWS 音声対話モジュール', link: '/ja/products/kws-voice-module' },
-            { text: '79° IMX219 CSI カメラ', link: '/ja/products/imx219-csi-camera' },
-            { text: 'Feetech バスサーボ', link: '/ja/products/feetech-servo' },
-            { text: '4 in 1 KVM スイッチ', link: '/ja/products/kvm-switch' },
-            { text: 'USB ドライバ不要サウンドカード', link: '/ja/products/usb-sound-card' },
-            { text: '4K HDMI キャプチャカード', link: '/ja/products/4k-hdmi-capture' },
-            { text: 'SO-ARM101 頭上カメラマウント', link: '/ja/products/overhead-camera-mount' },
             { text: 'バスサーボドライバ基板', link: '/ja/products/servo-driver-board' },
             { text: 'GPS & 北斗 GNSS 測位モジュール', link: '/ja/products/gps-beidou-module' },
             { text: 'ESP32-S3 WiFi 映像モジュール', link: '/ja/products/esp32-s3-wifi-module' },
@@ -923,9 +946,10 @@ export default defineConfig({
         { text: '튜토리얼', link: '/ko/tutorials/', activeMatch: '/ko/tutorials/' },
         { text: '토픽', link: '/ko/topics/', activeMatch: '/ko/topics/' },
         { text: '기술 문서', link: '/ko/tech/', activeMatch: '/ko/tech/' },
-        { text: '다운로드', link: '/ko/downloads/', activeMatch: '/ko/downloads/' },
         { text: '제품', link: '/ko/products/', activeMatch: '/ko/products/' },
+        { text: '사용자 사례', link: '/ko/cases/', activeMatch: '/ko/cases/' },
         { text: '커뮤니티', link: '/ko/community/', activeMatch: '/ko/community/' },
+        { text: '다운로드', link: '/ko/downloads/', activeMatch: '/ko/downloads/' },
         { text: '회사 소개', link: '/ko/about/', activeMatch: '/ko/about/' },
       ],
       sidebar: {
@@ -936,11 +960,49 @@ export default defineConfig({
             { text: '하드웨어 연결', link: '/ko/tutorials/hardware-setup' },
             { text: '소프트웨어 설정', link: '/ko/tutorials/software-config' },
             { text: 'ROS 입문', link: '/ko/tutorials/ros-intro' },
+            { text: 'Lark Wiki', link: '/ko/tutorials/lark-wiki' },
+          ] },
+          { text: '학습 리소스', items: [
+            { text: '학습 리소스', link: '/ko/tutorials/learning-resources/' },
+            { text: '빠른 시작', link: '/ko/tutorials/learning-resources/getting-started' },
+            { text: '하드웨어 연결', link: '/ko/tutorials/learning-resources/hardware-setup' },
+            { text: '소프트웨어 설정', link: '/ko/tutorials/learning-resources/software-config' },
+            { text: 'Jetson Orin에서 PyTorch 비호환 문제', link: '/ko/tutorials/learning-resources/jetson-orin-pytorch-compatibility' },
           ] },
           { text: '로봇 암', items: [
+            { text: '로봇 팔 시리즈', link: '/ko/tutorials/robot-arms/' },
             { text: '선택 가이드', link: '/ko/tutorials/robot-arms/select-guide' },
+            {
+              text: 'SO-ARM101 시리즈',
+              collapsed: false,
+              items: [
+                { text: 'LeRobot 로봇팔 튜토리얼', link: '/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial' },
+                { text: 'Lerobot 로봇 암 조립 가이드', link: '/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly' },
+                { text: 'Jetson Orin에서 PyTorch 비호환 문제', link: '/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility' },
+                { text: 'SO-ARM100&101 암 장착 브래킷 및 환경 카메라 키트 설치 튜토리얼', link: '/ko/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation' },
+                { text: '오버헤드 카메라 마운트 설치 가이드', link: '/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation' },
+              ],
+            },
+            {
+              text: 'AmazingHand',
+              collapsed: true,
+              items: [
+                { text: '로봇 핸드 인터페이스 제어', link: '/ko/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control' },
+                { text: '로봇핸드 공식 예제 실행 튜토리얼', link: '/ko/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example' },
+                { text: '로봇핸드(TTL 직렬 서보) 디버깅 튜토리얼', link: '/ko/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging' },
+              ],
+            },
+            {
+              text: 'Lekiwi',
+              collapsed: true,
+              items: [
+                { text: 'Lekiwi 이동 로봇 사용 튜토리얼', link: '/ko/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial' },
+                { text: 'Lekiwi 이동 로봇 조립 튜토리얼', link: '/ko/tutorials/robot-arms/lekiwi/Lekiwi-Assembly' },
+              ],
+            },
           ] },
           { text: '센서', items: [
+            { text: '센서와 인지', link: '/ko/tutorials/sensors/' },
             { text: 'IMU 캘리브레이션', link: '/ko/tutorials/sensors/imu/calibration' },
             {
               text: 'IMU 관성 내비게이션',
@@ -985,6 +1047,7 @@ export default defineConfig({
             },
           ] },
           { text: '액세서리', items: [
+            { text: '로봇 액세서리', link: '/ko/tutorials/accessories/' },
                 { text: 'USB 자동 초점 카메라', link: '/ko/tutorials/accessories/usb-auto-focus-camera' },
                 { text: 'Jetson CSI 카메라', link: '/ko/tutorials/accessories/jetson-csi-camera' },
                 {
@@ -1018,29 +1081,16 @@ export default defineConfig({
             { text: 'USB 무드라이버 사운드 카드', link: '/ko/tutorials/accessories/usb-audio-card-tutorial' },
           ] },
         ],
-        '/ko/topics/': [{ text: '토픽', items: [{ text: '토픽', link: '/ko/topics/' }, { text: '오픈소스 하드웨어 철학', link: '/ko/topics/open-source-hardware' }] }],
-        '/ko/tech/': [{ text: '기술 문서', items: [{ text: '기술 문서', link: '/ko/tech/' }] }],
-        '/ko/community/': [{ text: '커뮤니티', items: [{ text: '커뮤니티', link: '/ko/community/' }] }],
+        '/ko/topics/': [{ text: '토픽', items: [{ text: '토픽', link: '/ko/topics/' }, { text: 'JetPack 플래싱 및 시스템 설정', link: '/ko/topics/jetpack-setup' }, { text: '엣지 AI 배포 입문', link: '/ko/topics/edge-ai-intro' }, { text: '구현 지능 입문(LeRobot)', link: '/ko/topics/embodied-ai-intro' }, { text: '로봇 학습 특집', link: '/ko/topics/robot-learning/' }, { text: '오픈소스 하드웨어 철학', link: '/ko/topics/open-source-hardware' }] }],
+        '/ko/tech/': [{ text: '기술 문서', items: [{ text: '기술 문서', link: '/ko/tech/' }, { text: 'API 참조', link: '/ko/tech/api-reference' }, { text: '개발 가이드', link: '/ko/tech/dev-guide' }] }],
+        '/ko/community/': [{ text: '커뮤니티', items: [{ text: '커뮤니티', link: '/ko/community/' }, { text: '기여 가이드', link: '/ko/community/contributing' }] }],
+        '/ko/cases/': [{ text: '사용자 사례', items: [{ text: '사용자 성공 사례', link: '/ko/cases/' }] }],
         '/ko/products/': [
           { text: '제품', items: [
             { text: 'SO-ARM101 개발 키트', link: '/ko/products/so-arm101' },
             { text: 'AmazingHand 4손가락 정교 손', link: '/ko/products/amazinghand' },
             { text: 'Jetson Orin NX Super 개발 키트', link: '/ko/products/jetson-orin-nx-super-kit' },
             { text: 'IMU 관성 모듈', link: '/ko/products/imu-module' },
-            { text: '버스 서보 드라이버 보드', link: '/ko/products/servo-driver-board' },
-            { text: 'GPS & 北斗 GNSS 측위 모듈', link: '/ko/products/gps-beidou-module' },
-            { text: 'ESP32-S3 WiFi 영상 모듈', link: '/ko/products/esp32-s3-wifi-module' },
-            { text: 'SO-ARM101 TPU 플렉시블 그리퍼', link: '/ko/products/tpu-flexible-gripper' },
-            { text: 'SO-ARM101 로봇 비전 키트', link: '/ko/products/robot-vision-kit' },
-            { text: 'Lekiwi 구현 지능 이동 로봇', link: '/ko/products/lekiwi' },
-            { text: '2자유도 서보 짐벌', link: '/ko/products/2dof-gimbal' },
-            { text: 'KWS 음성 상호작용 모듈', link: '/ko/products/kws-voice-module' },
-            { text: '79° IMX219 CSI 카메라', link: '/ko/products/imx219-csi-camera' },
-            { text: 'Feetech 버스 서보', link: '/ko/products/feetech-servo' },
-            { text: '4 in 1 KVM 스위치', link: '/ko/products/kvm-switch' },
-            { text: 'USB 무드라이버 사운드 카드', link: '/ko/products/usb-sound-card' },
-            { text: '4K HDMI 캡처 카드', link: '/ko/products/4k-hdmi-capture' },
-            { text: 'SO-ARM101 오버헤드 카메라 마운트', link: '/ko/products/overhead-camera-mount' },
             { text: '버스 서보 드라이버 보드', link: '/ko/products/servo-driver-board' },
             { text: 'GPS & 北斗 GNSS 측위 모듈', link: '/ko/products/gps-beidou-module' },
             { text: 'ESP32-S3 WiFi 영상 모듈', link: '/ko/products/esp32-s3-wifi-module' },
@@ -1075,9 +1125,10 @@ export default defineConfig({
         { text: 'Tutorials', link: '/de/tutorials/', activeMatch: '/de/tutorials/' },
         { text: 'Themen', link: '/de/topics/', activeMatch: '/de/topics/' },
         { text: 'Technische Doku', link: '/de/tech/', activeMatch: '/de/tech/' },
-        { text: 'Downloads', link: '/de/downloads/', activeMatch: '/de/downloads/' },
         { text: 'Produkte', link: '/de/products/', activeMatch: '/de/products/' },
+        { text: 'Fallstudien', link: '/de/cases/', activeMatch: '/de/cases/' },
         { text: 'Community', link: '/de/community/', activeMatch: '/de/community/' },
+        { text: 'Downloads', link: '/de/downloads/', activeMatch: '/de/downloads/' },
         { text: 'Über uns', link: '/de/about/', activeMatch: '/de/about/' },
       ],
       sidebar: {
@@ -1088,11 +1139,49 @@ export default defineConfig({
             { text: 'Hardware-Verbindung', link: '/de/tutorials/hardware-setup' },
             { text: 'Software-Konfiguration', link: '/de/tutorials/software-config' },
             { text: 'ROS-Einführung', link: '/de/tutorials/ros-intro' },
+            { text: 'Lark Wiki', link: '/de/tutorials/lark-wiki' },
+          ] },
+          { text: 'Lernressourcen', items: [
+            { text: 'Lernressourcen', link: '/de/tutorials/learning-resources/' },
+            { text: 'Schnellstart', link: '/de/tutorials/learning-resources/getting-started' },
+            { text: 'Hardware-Verbindung', link: '/de/tutorials/learning-resources/hardware-setup' },
+            { text: 'Software-Konfiguration', link: '/de/tutorials/learning-resources/software-config' },
+            { text: 'PyTorch-Inkompatibilitäten auf Jetson Orin', link: '/de/tutorials/learning-resources/jetson-orin-pytorch-compatibility' },
           ] },
           { text: 'Roboterarme', items: [
+            { text: 'Serie Roboterarme', link: '/de/tutorials/robot-arms/' },
             { text: 'Auswahlhilfe', link: '/de/tutorials/robot-arms/select-guide' },
+            {
+              text: 'SO-ARM101-Serie',
+              collapsed: false,
+              items: [
+                { text: 'LeRobot-Roboterarm-Tutorial', link: '/de/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial' },
+                { text: 'Lerobot-Roboterarm-Montageanleitung', link: '/de/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly' },
+                { text: 'PyTorch-Inkompatibilität auf Jetson Orin', link: '/de/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility' },
+                { text: 'SO-ARM100&101 Armhalterung und Umgebungskamera-Kit – Montage-Tutorial', link: '/de/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation' },
+                { text: 'Overhead-Kamera-Halterung Montage', link: '/de/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation' },
+              ],
+            },
+            {
+              text: 'AmazingHand',
+              collapsed: true,
+              items: [
+                { text: 'Roboterhand Interface-Steuerung', link: '/de/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control' },
+                { text: 'Tutorial zum offiziellen Beispiel der Roboterhand', link: '/de/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example' },
+                { text: 'Dexterous Hand (TTL-Servo) Debug-Tutorial', link: '/de/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging' },
+              ],
+            },
+            {
+              text: 'Lekiwi',
+              collapsed: true,
+              items: [
+                { text: 'Lekiwi-Mobilitätsroboter – Bedienungstutorial', link: '/de/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial' },
+                { text: 'Lekiwi-Mobilitätsroboter – Montage-Tutorial', link: '/de/tutorials/robot-arms/lekiwi/Lekiwi-Assembly' },
+              ],
+            },
           ] },
           { text: 'Sensoren', items: [
+            { text: 'Sensoren & Wahrnehmung', link: '/de/tutorials/sensors/' },
             { text: 'IMU-Kalibrierung', link: '/de/tutorials/sensors/imu/calibration' },
             {
               text: 'IMU-Trägheitsnavigation',
@@ -1137,6 +1226,7 @@ export default defineConfig({
             },
           ] },
           { text: 'Zubehör', items: [
+            { text: 'Roboter-Accessoires', link: '/de/tutorials/accessories/' },
                 { text: 'USB-Kamera mit Autofokus', link: '/de/tutorials/accessories/usb-auto-focus-camera' },
                 { text: 'Jetson-CSI-Kamera', link: '/de/tutorials/accessories/jetson-csi-camera' },
                 {
@@ -1170,29 +1260,16 @@ export default defineConfig({
             { text: 'USB-Soundkarte ohne Treiber', link: '/de/tutorials/accessories/usb-audio-card-tutorial' },
           ] },
         ],
-        '/de/topics/': [{ text: 'Themen', items: [{ text: 'Themen', link: '/de/topics/' }, { text: 'Open-Source-Hardware-Philosophie', link: '/de/topics/open-source-hardware' }] }],
-        '/de/tech/': [{ text: 'Technische Doku', items: [{ text: 'Technische Doku', link: '/de/tech/' }] }],
-        '/de/community/': [{ text: 'Community', items: [{ text: 'Community', link: '/de/community/' }] }],
+        '/de/topics/': [{ text: 'Themen', items: [{ text: 'Themen', link: '/de/topics/' }, { text: 'JetPack-Flashing und Systemkonfiguration', link: '/de/topics/jetpack-setup' }, { text: 'Einstieg in Edge-KI-Deployment', link: '/de/topics/edge-ai-intro' }, { text: 'Einstieg in die verkörperte Intelligenz (LeRobot)', link: '/de/topics/embodied-ai-intro' }, { text: 'Robot-Learning-Schwerpunkt', link: '/de/topics/robot-learning/' }, { text: 'Open-Source-Hardware-Philosophie', link: '/de/topics/open-source-hardware' }] }],
+        '/de/tech/': [{ text: 'Technische Doku', items: [{ text: 'Technische Doku', link: '/de/tech/' }, { text: 'API-Referenz', link: '/de/tech/api-reference' }, { text: 'Entwicklungsleitfaden', link: '/de/tech/dev-guide' }] }],
+        '/de/community/': [{ text: 'Community', items: [{ text: 'Community', link: '/de/community/' }, { text: 'Mitwirkungsleitfaden', link: '/de/community/contributing' }] }],
+        '/de/cases/': [{ text: 'Fallstudien', items: [{ text: 'Nutzer-Erfolgsgeschichten', link: '/de/cases/' }] }],
         '/de/products/': [
           { text: 'Produkte', items: [
             { text: 'SO-ARM101 Entwickler-Kit', link: '/de/products/so-arm101' },
             { text: 'AmazingHand 4-Finger-Greifhand', link: '/de/products/amazinghand' },
             { text: 'Jetson Orin NX Super Dev-Kit', link: '/de/products/jetson-orin-nx-super-kit' },
             { text: 'IMU-Trägheitsmodul', link: '/de/products/imu-module' },
-            { text: 'Bus-Servo-Treiberplatine', link: '/de/products/servo-driver-board' },
-            { text: 'GPS- & Beidou-GNSS-Positionsmodul', link: '/de/products/gps-beidou-module' },
-            { text: 'ESP32-S3-WiFi-Videomodul', link: '/de/products/esp32-s3-wifi-module' },
-            { text: 'SO-ARM101 TPU-Flex-Greifer', link: '/de/products/tpu-flexible-gripper' },
-            { text: 'SO-ARM101-Robotervisions-Kit', link: '/de/products/robot-vision-kit' },
-            { text: 'Lekiwi Mobilitätsroboter', link: '/de/products/lekiwi' },
-            { text: '2-DOF-Servo-Pan-Tilt', link: '/de/products/2dof-gimbal' },
-            { text: 'KWS-Sprachinteraktionsmodul', link: '/de/products/kws-voice-module' },
-            { text: '79°-IMX219-CSI-Kamera', link: '/de/products/imx219-csi-camera' },
-            { text: 'Feetech-Bus-Servo', link: '/de/products/feetech-servo' },
-            { text: '4-in-1-KVM-Switch', link: '/de/products/kvm-switch' },
-            { text: 'USB-Soundkarte ohne Treiber', link: '/de/products/usb-sound-card' },
-            { text: '4K-HDMI-Capture-Karte', link: '/de/products/4k-hdmi-capture' },
-            { text: 'SO-ARM101-Overhead-Kamerahalterung', link: '/de/products/overhead-camera-mount' },
             { text: 'Bus-Servo-Treiberplatine', link: '/de/products/servo-driver-board' },
             { text: 'GPS- & Beidou-GNSS-Positionsmodul', link: '/de/products/gps-beidou-module' },
             { text: 'ESP32-S3-WiFi-Videomodul', link: '/de/products/esp32-s3-wifi-module' },
@@ -1227,9 +1304,10 @@ export default defineConfig({
         { text: 'Tutoriels', link: '/fr/tutorials/', activeMatch: '/fr/tutorials/' },
         { text: 'Sujets', link: '/fr/topics/', activeMatch: '/fr/topics/' },
         { text: 'Documentation', link: '/fr/tech/', activeMatch: '/fr/tech/' },
-        { text: 'Téléchargements', link: '/fr/downloads/', activeMatch: '/fr/downloads/' },
         { text: 'Produits', link: '/fr/products/', activeMatch: '/fr/products/' },
+        { text: 'Cas clients', link: '/fr/cases/', activeMatch: '/fr/cases/' },
         { text: 'Communauté', link: '/fr/community/', activeMatch: '/fr/community/' },
+        { text: 'Téléchargements', link: '/fr/downloads/', activeMatch: '/fr/downloads/' },
         { text: 'À propos', link: '/fr/about/', activeMatch: '/fr/about/' },
       ],
       sidebar: {
@@ -1240,11 +1318,49 @@ export default defineConfig({
             { text: 'Connexion matérielle', link: '/fr/tutorials/hardware-setup' },
             { text: 'Configuration logicielle', link: '/fr/tutorials/software-config' },
             { text: 'Introduction à ROS', link: '/fr/tutorials/ros-intro' },
+            { text: 'Lark Wiki', link: '/fr/tutorials/lark-wiki' },
+          ] },
+          { text: 'Ressources pédagogiques', items: [
+            { text: 'Ressources pédagogiques', link: '/fr/tutorials/learning-resources/' },
+            { text: 'Démarrage rapide', link: '/fr/tutorials/learning-resources/getting-started' },
+            { text: 'Connexion matérielle', link: '/fr/tutorials/learning-resources/hardware-setup' },
+            { text: 'Configuration logicielle', link: '/fr/tutorials/learning-resources/software-config' },
+            { text: 'Incompatibilités PyTorch sur Jetson Orin', link: '/fr/tutorials/learning-resources/jetson-orin-pytorch-compatibility' },
           ] },
           { text: 'Bras robotiques', items: [
+            { text: 'Série bras robotiques', link: '/fr/tutorials/robot-arms/' },
             { text: 'Guide de sélection', link: '/fr/tutorials/robot-arms/select-guide' },
+            {
+              text: 'Série SO-ARM101',
+              collapsed: false,
+              items: [
+                { text: 'Tutoriel bras robotique LeRobot', link: '/fr/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial' },
+                { text: 'Guide de montage du bras robotique Lerobot', link: '/fr/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly' },
+                { text: 'Incompatibilité PyTorch sur Jetson Orin', link: '/fr/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility' },
+                { text: "Support de bras et kit caméra d'environnement SO-ARM100&101 – Tutoriel d'installation", link: '/fr/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation' },
+                { text: 'Installation du support caméra plafond', link: '/fr/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation' },
+              ],
+            },
+            {
+              text: 'AmazingHand',
+              collapsed: true,
+              items: [
+                { text: "Contrôle d'interface main robotique", link: '/fr/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control' },
+                { text: "Tutoriel d'exécution de l'exemple officiel de la main robotique", link: '/fr/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example' },
+                { text: 'Tutoriel de débogage de la main robotique (servo TTL)', link: '/fr/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging' },
+              ],
+            },
+            {
+              text: 'Lekiwi',
+              collapsed: true,
+              items: [
+                { text: "Tutoriel d'utilisation du robot mobile Lekiwi", link: '/fr/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial' },
+                { text: "Tutoriel d'assemblage du robot mobile Lekiwi", link: '/fr/tutorials/robot-arms/lekiwi/Lekiwi-Assembly' },
+              ],
+            },
           ] },
           { text: 'Capteurs', items: [
+            { text: 'Capteurs et perception', link: '/fr/tutorials/sensors/' },
             { text: 'Calibration IMU', link: '/fr/tutorials/sensors/imu/calibration' },
             {
               text: 'Navigation inertielle IMU',
@@ -1289,6 +1405,7 @@ export default defineConfig({
             },
           ] },
           { text: 'Accessoires', items: [
+            { text: 'Accessoires robotiques', link: '/fr/tutorials/accessories/' },
                 { text: 'Caméra USB à autofocus', link: '/fr/tutorials/accessories/usb-auto-focus-camera' },
                 { text: 'Caméra CSI Jetson', link: '/fr/tutorials/accessories/jetson-csi-camera' },
                 {
@@ -1322,29 +1439,16 @@ export default defineConfig({
             { text: 'Carte son USB sans pilote', link: '/fr/tutorials/accessories/usb-audio-card-tutorial' },
           ] },
         ],
-        '/fr/topics/': [{ text: 'Sujets', items: [{ text: 'Sujets', link: '/fr/topics/' }, { text: "Philosophie du matériel open source", link: '/fr/topics/open-source-hardware' }] }],
-        '/fr/tech/': [{ text: 'Documentation', items: [{ text: 'Documentation', link: '/fr/tech/' }] }],
-        '/fr/community/': [{ text: 'Communauté', items: [{ text: 'Communauté', link: '/fr/community/' }] }],
+        '/fr/topics/': [{ text: 'Sujets', items: [{ text: 'Sujets', link: '/fr/topics/' }, { text: 'Flashage JetPack et configuration système', link: '/fr/topics/jetpack-setup' }, { text: 'Introduction au déploiement IA en périphérie', link: '/fr/topics/edge-ai-intro' }, { text: "Introduction à l'intelligence incarnée (LeRobot)", link: '/fr/topics/embodied-ai-intro' }, { text: 'Thématique Robot Learning', link: '/fr/topics/robot-learning/' }, { text: "Philosophie du matériel open source", link: '/fr/topics/open-source-hardware' }] }],
+        '/fr/tech/': [{ text: 'Documentation', items: [{ text: 'Documentation', link: '/fr/tech/' }, { text: 'Référence API', link: '/fr/tech/api-reference' }, { text: 'Guide de développement', link: '/fr/tech/dev-guide' }] }],
+        '/fr/community/': [{ text: 'Communauté', items: [{ text: 'Communauté', link: '/fr/community/' }, { text: 'Guide de contribution', link: '/fr/community/contributing' }] }],
+        '/fr/cases/': [{ text: 'Cas clients', items: [{ text: "Témoignages d'utilisateurs", link: '/fr/cases/' }] }],
         '/fr/products/': [
           { text: 'Produits', items: [
             { text: 'Kit développeur SO-ARM101', link: '/fr/products/so-arm101' },
             { text: 'Main dexterous 4 doigts AmazingHand', link: '/fr/products/amazinghand' },
             { text: 'Kit Jetson Orin NX Super', link: '/fr/products/jetson-orin-nx-super-kit' },
             { text: 'Module inertiel IMU', link: '/fr/products/imu-module' },
-            { text: 'Carte driver servo bus', link: '/fr/products/servo-driver-board' },
-            { text: 'Module GNSS GPS & Beidou', link: '/fr/products/gps-beidou-module' },
-            { text: 'Module vidéo WiFi ESP32-S3', link: '/fr/products/esp32-s3-wifi-module' },
-            { text: 'Pince flexible TPU SO-ARM101', link: '/fr/products/tpu-flexible-gripper' },
-            { text: 'Kit vision robotique SO-ARM101', link: '/fr/products/robot-vision-kit' },
-            { text: 'Robot mobile Lekiwi', link: '/fr/products/lekiwi' },
-            { text: 'Cardan servo 2-DOF', link: '/fr/products/2dof-gimbal' },
-            { text: "Module d'interaction vocale KWS", link: '/fr/products/kws-voice-module' },
-            { text: 'Caméra CSI IMX219 79°', link: '/fr/products/imx219-csi-camera' },
-            { text: 'Servo bus Feetech', link: '/fr/products/feetech-servo' },
-            { text: 'Commutateur KVM 4-en-1', link: '/fr/products/kvm-switch' },
-            { text: 'Carte son USB sans pilote', link: '/fr/products/usb-sound-card' },
-            { text: 'Carte de capture HDMI 4K', link: '/fr/products/4k-hdmi-capture' },
-            { text: 'Support caméra plafonnier SO-ARM101', link: '/fr/products/overhead-camera-mount' },
             { text: 'Carte driver servo bus', link: '/fr/products/servo-driver-board' },
             { text: 'Module GNSS GPS & Beidou', link: '/fr/products/gps-beidou-module' },
             { text: 'Module vidéo WiFi ESP32-S3', link: '/fr/products/esp32-s3-wifi-module' },
@@ -1379,9 +1483,10 @@ export default defineConfig({
         { text: 'Tutoriales', link: '/es/tutorials/', activeMatch: '/es/tutorials/' },
         { text: 'Temas', link: '/es/topics/', activeMatch: '/es/topics/' },
         { text: 'Documentación', link: '/es/tech/', activeMatch: '/es/tech/' },
-        { text: 'Descargas', link: '/es/downloads/', activeMatch: '/es/downloads/' },
         { text: 'Productos', link: '/es/products/', activeMatch: '/es/products/' },
+        { text: 'Casos de éxito', link: '/es/cases/', activeMatch: '/es/cases/' },
         { text: 'Comunidad', link: '/es/community/', activeMatch: '/es/community/' },
+        { text: 'Descargas', link: '/es/downloads/', activeMatch: '/es/downloads/' },
         { text: 'Sobre nosotros', link: '/es/about/', activeMatch: '/es/about/' },
       ],
       sidebar: {
@@ -1392,11 +1497,49 @@ export default defineConfig({
             { text: 'Conexión de hardware', link: '/es/tutorials/hardware-setup' },
             { text: 'Configuración de software', link: '/es/tutorials/software-config' },
             { text: 'Introducción a ROS', link: '/es/tutorials/ros-intro' },
+            { text: 'Lark Wiki', link: '/es/tutorials/lark-wiki' },
+          ] },
+          { text: 'Recursos didácticos', items: [
+            { text: 'Recursos didácticos', link: '/es/tutorials/learning-resources/' },
+            { text: 'Inicio rápido', link: '/es/tutorials/learning-resources/getting-started' },
+            { text: 'Conexión de hardware', link: '/es/tutorials/learning-resources/hardware-setup' },
+            { text: 'Configuración de software', link: '/es/tutorials/learning-resources/software-config' },
+            { text: 'Incompatibilidades de PyTorch en Jetson Orin', link: '/es/tutorials/learning-resources/jetson-orin-pytorch-compatibility' },
           ] },
           { text: 'Brazos robóticos', items: [
+            { text: 'Serie de brazos robóticos', link: '/es/tutorials/robot-arms/' },
             { text: 'Guía de selección', link: '/es/tutorials/robot-arms/select-guide' },
+            {
+              text: 'Serie SO-ARM101',
+              collapsed: false,
+              items: [
+                { text: 'Tutorial del brazo robótico LeRobot', link: '/es/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial' },
+                { text: 'Guía de montaje del brazo robótico Lerobot', link: '/es/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly' },
+                { text: 'Incompatibilidad de PyTorch en Jetson Orin', link: '/es/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility' },
+                { text: 'Soporte de brazo y kit de cámara ambiental SO-ARM100&101 – Tutorial de instalación', link: '/es/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation' },
+                { text: 'Instalación del soporte de cámara superior', link: '/es/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation' },
+              ],
+            },
+            {
+              text: 'AmazingHand',
+              collapsed: true,
+              items: [
+                { text: 'Control de interfaz de mano robótica', link: '/es/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control' },
+                { text: 'Tutorial de ejecución del ejemplo oficial de la mano robótica', link: '/es/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example' },
+                { text: 'Tutorial de depuración de la mano hábil (servo TTL)', link: '/es/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging' },
+              ],
+            },
+            {
+              text: 'Lekiwi',
+              collapsed: true,
+              items: [
+                { text: 'Tutorial de uso del robot móvil Lekiwi', link: '/es/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial' },
+                { text: 'Tutorial de ensamblaje del robot móvil Lekiwi', link: '/es/tutorials/robot-arms/lekiwi/Lekiwi-Assembly' },
+              ],
+            },
           ] },
           { text: 'Sensores', items: [
+            { text: 'Sensores y percepción', link: '/es/tutorials/sensors/' },
             { text: 'Calibración IMU', link: '/es/tutorials/sensors/imu/calibration' },
             {
               text: 'Navegación inercial IMU',
@@ -1441,6 +1584,7 @@ export default defineConfig({
             },
           ] },
           { text: 'Accesorios', items: [
+            { text: 'Accesorios robóticos', link: '/es/tutorials/accessories/' },
                 { text: 'Cámara USB con enfoque automático', link: '/es/tutorials/accessories/usb-auto-focus-camera' },
                 { text: 'Cámara CSI Jetson', link: '/es/tutorials/accessories/jetson-csi-camera' },
                 {
@@ -1474,29 +1618,16 @@ export default defineConfig({
             { text: 'Tarjeta de sonido USB sin controlador', link: '/es/tutorials/accessories/usb-audio-card-tutorial' },
           ] },
         ],
-        '/es/topics/': [{ text: 'Temas', items: [{ text: 'Temas', link: '/es/topics/' }, { text: 'Filosofía del hardware de código abierto', link: '/es/topics/open-source-hardware' }] }],
-        '/es/tech/': [{ text: 'Documentación', items: [{ text: 'Documentación', link: '/es/tech/' }] }],
-        '/es/community/': [{ text: 'Comunidad', items: [{ text: 'Comunidad', link: '/es/community/' }] }],
+        '/es/topics/': [{ text: 'Temas', items: [{ text: 'Temas', link: '/es/topics/' }, { text: 'Flasheo de JetPack y configuración del sistema', link: '/es/topics/jetpack-setup' }, { text: 'Introducción al despliegue de IA en el borde', link: '/es/topics/edge-ai-intro' }, { text: 'Introducción a la inteligencia incorporada (LeRobot)', link: '/es/topics/embodied-ai-intro' }, { text: 'Tema Robot Learning', link: '/es/topics/robot-learning/' }, { text: 'Filosofía del hardware de código abierto', link: '/es/topics/open-source-hardware' }] }],
+        '/es/tech/': [{ text: 'Documentación', items: [{ text: 'Documentación', link: '/es/tech/' }, { text: 'Referencia de API', link: '/es/tech/api-reference' }, { text: 'Guía de desarrollo', link: '/es/tech/dev-guide' }] }],
+        '/es/community/': [{ text: 'Comunidad', items: [{ text: 'Comunidad', link: '/es/community/' }, { text: 'Guía de contribución', link: '/es/community/contributing' }] }],
+        '/es/cases/': [{ text: 'Casos de éxito', items: [{ text: 'Casos de éxito de usuarios', link: '/es/cases/' }] }],
         '/es/products/': [
           { text: 'Productos', items: [
             { text: 'Kit desarrollador SO-ARM101', link: '/es/products/so-arm101' },
             { text: 'Mano diestra 4 dedos AmazingHand', link: '/es/products/amazinghand' },
             { text: 'Kit Jetson Orin NX Super', link: '/es/products/jetson-orin-nx-super-kit' },
             { text: 'Módulo inercial IMU', link: '/es/products/imu-module' },
-            { text: 'Placa driver de servo de bus', link: '/es/products/servo-driver-board' },
-            { text: 'Módulo GNSS GPS y Beidou', link: '/es/products/gps-beidou-module' },
-            { text: 'Módulo de video WiFi ESP32-S3', link: '/es/products/esp32-s3-wifi-module' },
-            { text: 'Pinza flexible de TPU SO-ARM101', link: '/es/products/tpu-flexible-gripper' },
-            { text: 'Kit de visión robótica SO-ARM101', link: '/es/products/robot-vision-kit' },
-            { text: 'Robot móvil Lekiwi', link: '/es/products/lekiwi' },
-            { text: 'Cardán servo 2-DOF', link: '/es/products/2dof-gimbal' },
-            { text: 'Módulo de interacción de voz KWS', link: '/es/products/kws-voice-module' },
-            { text: 'Cámara CSI IMX219 de 79°', link: '/es/products/imx219-csi-camera' },
-            { text: 'Servo de bus Feetech', link: '/es/products/feetech-servo' },
-            { text: 'Conmutador KVM 4 en 1', link: '/es/products/kvm-switch' },
-            { text: 'Tarjeta de sonido USB sin controlador', link: '/es/products/usb-sound-card' },
-            { text: 'Capturadora HDMI 4K', link: '/es/products/4k-hdmi-capture' },
-            { text: 'Montaje de cámara superior SO-ARM101', link: '/es/products/overhead-camera-mount' },
             { text: 'Placa driver de servo de bus', link: '/es/products/servo-driver-board' },
             { text: 'Módulo GNSS GPS y Beidou', link: '/es/products/gps-beidou-module' },
             { text: 'Módulo de video WiFi ESP32-S3', link: '/es/products/esp32-s3-wifi-module' },
@@ -1531,9 +1662,10 @@ export default defineConfig({
         { text: 'Tutorial', link: '/it/tutorials/', activeMatch: '/it/tutorials/' },
         { text: 'Argomenti', link: '/it/topics/', activeMatch: '/it/topics/' },
         { text: 'Documentazione', link: '/it/tech/', activeMatch: '/it/tech/' },
-        { text: 'Download', link: '/it/downloads/', activeMatch: '/it/downloads/' },
         { text: 'Prodotti', link: '/it/products/', activeMatch: '/it/products/' },
+        { text: 'Casi di successo', link: '/it/cases/', activeMatch: '/it/cases/' },
         { text: 'Community', link: '/it/community/', activeMatch: '/it/community/' },
+        { text: 'Download', link: '/it/downloads/', activeMatch: '/it/downloads/' },
         { text: 'Chi siamo', link: '/it/about/', activeMatch: '/it/about/' },
       ],
       sidebar: {
@@ -1544,11 +1676,49 @@ export default defineConfig({
             { text: 'Collegamento hardware', link: '/it/tutorials/hardware-setup' },
             { text: 'Configurazione software', link: '/it/tutorials/software-config' },
             { text: 'Introduzione a ROS', link: '/it/tutorials/ros-intro' },
+            { text: 'Lark Wiki', link: '/it/tutorials/lark-wiki' },
+          ] },
+          { text: 'Risorse didattiche', items: [
+            { text: 'Risorse didattiche', link: '/it/tutorials/learning-resources/' },
+            { text: 'Guida rapida', link: '/it/tutorials/learning-resources/getting-started' },
+            { text: 'Collegamento hardware', link: '/it/tutorials/learning-resources/hardware-setup' },
+            { text: 'Configurazione software', link: '/it/tutorials/learning-resources/software-config' },
+            { text: 'Incompatibilità PyTorch su Jetson Orin', link: '/it/tutorials/learning-resources/jetson-orin-pytorch-compatibility' },
           ] },
           { text: 'Bracci robotici', items: [
+            { text: 'Serie bracci robotici', link: '/it/tutorials/robot-arms/' },
             { text: 'Guida alla scelta', link: '/it/tutorials/robot-arms/select-guide' },
+            {
+              text: 'Serie SO-ARM101',
+              collapsed: false,
+              items: [
+                { text: 'Tutorial braccio robotico LeRobot', link: '/it/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial' },
+                { text: 'Guida di montaggio del braccio robotico Lerobot', link: '/it/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly' },
+                { text: 'Incompatibilità PyTorch su Jetson Orin', link: '/it/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility' },
+                { text: "Supporto da braccio e kit camera ambientale SO-ARM100&101 – Tutorial di installazione", link: '/it/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation' },
+                { text: 'Installazione del supporto camera overhead', link: '/it/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation' },
+              ],
+            },
+            {
+              text: 'AmazingHand',
+              collapsed: true,
+              items: [
+                { text: 'Controllo interfaccia mano robotica', link: '/it/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control' },
+                { text: "Tutorial di esecuzione dell'esempio ufficiale della mano robotica", link: '/it/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example' },
+                { text: 'Tutorial di debug della mano dexterous (servo TTL)', link: '/it/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging' },
+              ],
+            },
+            {
+              text: 'Lekiwi',
+              collapsed: true,
+              items: [
+                { text: "Tutorial d'uso del robot mobile Lekiwi", link: '/it/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial' },
+                { text: 'Tutorial di assemblaggio del robot mobile Lekiwi', link: '/it/tutorials/robot-arms/lekiwi/Lekiwi-Assembly' },
+              ],
+            },
           ] },
           { text: 'Sensori', items: [
+            { text: 'Sensori e percezione', link: '/it/tutorials/sensors/' },
             { text: 'Calibrazione IMU', link: '/it/tutorials/sensors/imu/calibration' },
             {
               text: 'Navigazione inerziale IMU',
@@ -1593,6 +1763,7 @@ export default defineConfig({
             },
           ] },
           { text: 'Accessori', items: [
+            { text: 'Accessori robotici', link: '/it/tutorials/accessories/' },
                 { text: 'Fotocamera USB con autofocus', link: '/it/tutorials/accessories/usb-auto-focus-camera' },
                 { text: 'Fotocamera CSI Jetson', link: '/it/tutorials/accessories/jetson-csi-camera' },
                 {
@@ -1626,29 +1797,16 @@ export default defineConfig({
             { text: 'Scheda audio USB senza driver', link: '/it/tutorials/accessories/usb-audio-card-tutorial' },
           ] },
         ],
-        '/it/topics/': [{ text: 'Argomenti', items: [{ text: 'Argomenti', link: '/it/topics/' }, { text: "Filosofia dell'hardware open source", link: '/it/topics/open-source-hardware' }] }],
-        '/it/tech/': [{ text: 'Documentazione', items: [{ text: 'Documentazione', link: '/it/tech/' }] }],
-        '/it/community/': [{ text: 'Community', items: [{ text: 'Community', link: '/it/community/' }] }],
+        '/it/topics/': [{ text: 'Argomenti', items: [{ text: 'Argomenti', link: '/it/topics/' }, { text: 'Flashing JetPack e configurazione di sistema', link: '/it/topics/jetpack-setup' }, { text: 'Introduzione al deploy AI edge', link: '/it/topics/edge-ai-intro' }, { text: "Introduzione all'intelligenza incarnata (LeRobot)", link: '/it/topics/embodied-ai-intro' }, { text: 'Tema Robot Learning', link: '/it/topics/robot-learning/' }, { text: "Filosofia dell'hardware open source", link: '/it/topics/open-source-hardware' }] }],
+        '/it/tech/': [{ text: 'Documentazione', items: [{ text: 'Documentazione', link: '/it/tech/' }, { text: 'Riferimento API', link: '/it/tech/api-reference' }, { text: 'Guida di sviluppo', link: '/it/tech/dev-guide' }] }],
+        '/it/community/': [{ text: 'Community', items: [{ text: 'Community', link: '/it/community/' }, { text: 'Guida alla contribuzione', link: '/it/community/contributing' }] }],
+        '/it/cases/': [{ text: 'Casi di successo', items: [{ text: 'Storie di successo degli utenti', link: '/it/cases/' }] }],
         '/it/products/': [
           { text: 'Prodotti', items: [
             { text: 'Kit sviluppatore SO-ARM101', link: '/it/products/so-arm101' },
             { text: 'Mano dexterous 4 dita AmazingHand', link: '/it/products/amazinghand' },
             { text: 'Kit Jetson Orin NX Super', link: '/it/products/jetson-orin-nx-super-kit' },
             { text: 'Modulo inerziale IMU', link: '/it/products/imu-module' },
-            { text: 'Scheda driver servo bus', link: '/it/products/servo-driver-board' },
-            { text: 'Modulo GNSS GPS e Beidou', link: '/it/products/gps-beidou-module' },
-            { text: 'Modulo video WiFi ESP32-S3', link: '/it/products/esp32-s3-wifi-module' },
-            { text: 'Pinza flessibile TPU SO-ARM101', link: '/it/products/tpu-flexible-gripper' },
-            { text: 'Kit visione robotica SO-ARM101', link: '/it/products/robot-vision-kit' },
-            { text: 'Robot mobile Lekiwi', link: '/it/products/lekiwi' },
-            { text: 'Pan-tilt servo 2-DOF', link: '/it/products/2dof-gimbal' },
-            { text: 'Modulo di interazione vocale KWS', link: '/it/products/kws-voice-module' },
-            { text: 'Fotocamera CSI IMX219 79°', link: '/it/products/imx219-csi-camera' },
-            { text: 'Servo bus Feetech', link: '/it/products/feetech-servo' },
-            { text: 'Switch KVM 4-in-1', link: '/it/products/kvm-switch' },
-            { text: 'Scheda audio USB senza driver', link: '/it/products/usb-sound-card' },
-            { text: 'Scheda di acquisizione HDMI 4K', link: '/it/products/4k-hdmi-capture' },
-            { text: 'Supporto fotocamera overhead SO-ARM101', link: '/it/products/overhead-camera-mount' },
             { text: 'Scheda driver servo bus', link: '/it/products/servo-driver-board' },
             { text: 'Modulo GNSS GPS e Beidou', link: '/it/products/gps-beidou-module' },
             { text: 'Modulo video WiFi ESP32-S3', link: '/it/products/esp32-s3-wifi-module' },

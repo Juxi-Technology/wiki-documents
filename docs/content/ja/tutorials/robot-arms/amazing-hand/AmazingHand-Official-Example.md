@@ -32,6 +32,10 @@ Linux の場合の環境変数設定：
 
 
 
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/1.png)
+
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/10.png)
+
 
 
 初回インストールに Visual Studio Installer が必要な場合があります
@@ -86,8 +90,12 @@ sudo chmod 666 /dev/ttyACM*
 ```Plain Text
 sudo usermod -aG dialout $USER
 ```
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
+
 
 仮想マシン内で ls /dev/ttyUSB* /dev/ttyACM* がディレクトリを見つけられない場合は、仮想マシン右下のアイコンで灵巧手（ロボットハンド）が PC に接続されているかを確認してください。接続されている場合は切断し、仮想マシンに接続してください
+
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/19.png)
 
 
 
@@ -101,6 +109,10 @@ sudo usermod -aG dialout $USER
 **右手灵巧手** AmazingHand-main\Demo ディレクトリの dataflow_tracking_real_right.yml
 **左手灵巧手** AmazingHand-main\Demo ディレクトリの dataflow_tracking_real_left.yml
 **両手灵巧手** AmazingHand-main\Demo ディレクトリの dataflow_tracking_real_2hands.yml
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
+
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/21.png)
+
 
 テキストで開き、自身のホストで確認したポート番号に変更します（windows は COM*、ubuntu、linux システムは通常 /dev/ttyACM*）
 
@@ -233,6 +245,10 @@ dora run dataflow_tracking_simu.yml --uv
     #### 両手灵巧手（両方を1つのサーボドライバ基板に接続することに注意）
 
 
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/7.png)
+
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/8.png)
+
 
     ```Plain Text
     dora build dataflow_tracking_real_2hands.yml --uv   #（一度だけ実行）
@@ -241,6 +257,10 @@ dora run dataflow_tracking_simu.yml --uv
     ```Plain Text
     dora run dataflow_tracking_real_2hands.yml --uv
     ```
+
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/9.png)
+
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/1.png)
 
 
 
@@ -297,6 +317,8 @@ uv pip install mediapipe==0.10.14
 ③コンソールで AHControl ディレクトリに入り cargo build --release を再実行
 ④[実ハードウェアでの実行](https://juxitech.feishu.cn/wiki/ZpHmwYARQiN2fwkqFJecqUFZnQg?node-id=1759567650651511609&from=from_node_link)に従って再度 build
 実際のエラー内容に応じてバージョンを修正します。例：dora-message が 0.6.0 必要な場合は dora-node-api="0.4.0" dora-message="0.6.0" に変更
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
+
 
 
 
@@ -361,6 +383,8 @@ source .venv/bin/activate
 ```Bash
 ls /dev/ttyUSB* /dev/ttyACM*
 ```
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
+
 
 ```Plain Text
 sudo chmod 666 /dev/ttyACM*
@@ -372,6 +396,10 @@ sudo usermod -aG dialout $USER
 
 **4.コードファイルのポート番号を変更**
 ①AmazingHand-main\Demo\AHControl\src ディレクトリの main.rs コードファイルをテキストで開き、自身のホストで確認したポート番号に変更します（windows は COM*、ubuntu、linux システムは通常 /dev/ttyACM*）
+
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/3.png)
+
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/4.png)
 
 
 

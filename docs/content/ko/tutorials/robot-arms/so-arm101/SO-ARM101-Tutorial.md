@@ -106,6 +106,8 @@ conda install ffmpeg -c conda-forge
 【Linux만】ffmpeg 빌드 의존성 설치 후 libsvtav1 지원 ffmpeg를 소스에서 컴파일, `which ffmpeg`로 올바른 실행 파일 확인.
 
 아래 오류가 발생해도 위 명령으로 해결할 수 있습니다.
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/1.png)
+
 
 
 
@@ -243,7 +245,11 @@ lerobot-calibrate \
 ```
 
 먼저 로봇을 모든 관절이 가동 범위 중앙에 오도록 이동하고 그대로 두세요. 다음, Enter 키를 누른 후 각 관절을 전체 가동 범위로 움직여야 합니다. 캘리브레이션 파일은 가동 범위의 중앙값, 최대값, 최소값을 기록하고 `~/.cache/huggingface/lerobot/calibration/robots` 또는 `~/.cache/huggingface/lerobot/calibration/teleoperators` 디렉터리의 json 파일에 저장됩니다.
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/2.png)
 
+
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/3.png)
 
 
 
@@ -303,6 +309,8 @@ lerobot-find-cameras realsense # or realsense for Intel Realsense cameras
 ```
 
 터미널에 관련 카메라 정보가 출력됩니다.
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/4.png)
+
 
 
 
@@ -343,6 +351,8 @@ lerobot-teleoperate \
 ```
 
 RealSense 깊이 카메라를 추가하려면 먼저 `python -m lerobot.find_cameras realsense`로 Id를 얻고, 이 명령의 robot.cameras 파라미터에 있는 serial_number_or_name: "323622271780"을 자신의 깊이 카메라 Id로 교체하고 `use_depth: true`로 깊이 스트림 활성화:
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/5.png)
 
 
 
@@ -451,6 +461,8 @@ lerobot-dataset-viz \
 ```
 
 여기서 `juxi`는 데이터 수집 시 커스터마이즈한 `repo_id` 이름입니다.
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/6.png)
+
 
 ### 에피소드 리플레이(건너뛰기 가능, 시도 가능)
 
@@ -512,6 +524,8 @@ lerobot-train \
 - **시각화 도구**: `wandb.enable=true`로 [Weights and Biases](https://docs.wandb.ai/quickstart) 훈련 그래프 시각화 사용 가능. 선택 사항이지만 사용 시 `wandb login`으로 로그인했는지 확인하세요.
 
 아래 오류 발생 시:
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/7.png)
+
 
 
 
@@ -656,12 +670,20 @@ lerobot-record \
 ## F. 클라우드 서버 훈련 배포 및 모델 내보내기
 
 #### **1.「AI 시장」을 클릭해 필요한 GPU 선택, 가능한 한 멀티코어 선택**
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/8.png)
+
 
 #### **2.「사용량제」선택, 기본 이미지「Miniconda/conda3/3.8(ubuntu20.04)/11.8」선택,「즉시 생성」클릭**
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/9.png)
+
 
 #### **3.「JupyterLab」클릭해 제어 화면 진입, 터미널 열기**
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/10.png)
+
 
 #### **4.conda 환경 초기화**
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/11.png)
+
 
 #### **5.이 터미널 닫고 새 터미널 열기**
 
@@ -670,6 +692,8 @@ https://www.autodl.com/docs/network_turbo/ 참조
 ```Plain Text
 source /etc/network_turbo
 ```
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/12.png)
+
 
 
 
@@ -693,6 +717,8 @@ git clone https://github.com/Juxi-Technology/lerobot.git
 ```PowerShell
 conda install ffmpeg -c conda-forge
 ```
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/13.png)
+
 
 #### **7.src 디렉터리의 lerobot에 들어가 feetech 모터 의존성 포함 LeRobot 설치:**
 
@@ -719,6 +745,8 @@ HF_USER=$(huggingface-cli whoami | head -n 1)
 ```Plain Text
 echo $HF_USER
 ```
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/14.png)
+
 
 
 
@@ -739,28 +767,46 @@ filezilla
 ```
 
 filezilla를 열고「파일」클릭 후「사이트 관리자」선택,「새 사이트」생성,「SFTP 프로토콜」선택
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/15.png)
 
+
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/16.png)
 
 
 
 
 AutoDL AI 클라우드로 돌아가「로그인 명령」을 복사해 보기 쉬운 곳에 붙여넣고, 해당 정보를 복사 입력하고「연결」클릭
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/17.png)
 
 
 
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/18.png)
 
 
 
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/19.png)
 
+
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/20.png)
+
+
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/21.png)
 
 
 
 
 클라우드 서버의 lerobot 디렉터리에 data 폴더 생성
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/22.png)
+
 
 
 
 데이터셋 폴더를 오른쪽으로 끌어 전송하고 완료를 기다림
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/23.png)
+
 
 
 
@@ -771,6 +817,8 @@ AutoDL AI 클라우드로 돌아가「로그인 명령」을 복사해 보기 �
 #### 10.모델 파일 내보내기
 
 훈련 완료 후 해당 train 디렉터리의 훈련 모델을 내보냅니다
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/24.png)
+
 
 
 
@@ -827,6 +875,8 @@ Could not connect on port "/dev/ttyACM0"
 ```Bash
 No valid stream found in input file. Is -1 of the desired media type?
 ```
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/25.png)
+
 
 ffmpeg7.1.1 설치: `conda install ffmpeg=7.1.1 -c conda-forge`.
 

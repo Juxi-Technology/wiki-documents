@@ -32,6 +32,10 @@ Linux 환경변수 설정:
 
 
 
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/1.png)
+
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/10.png)
+
 
 
 최초 설치 시 Visual Studio Installer가 필요할 수 있습니다
@@ -86,8 +90,12 @@ sudo chmod 666 /dev/ttyACM*
 ```Plain Text
 sudo usermod -aG dialout $USER
 ```
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
+
 
 가상 머신에서 ls /dev/ttyUSB* /dev/ttyACM*로 디렉터리를 찾지 못하면, 가상 머신 오른쪽 아래 아이콘으로 로봇핸드가 PC에 연결되어 있는지 확인하세요. 연결되어 있다면 해제하고 가상 머신에 연결하세요
+
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/19.png)
 
 
 
@@ -101,6 +109,10 @@ sudo usermod -aG dialout $USER
 **오른손** AmazingHand-main\Demo 디렉터리의 dataflow_tracking_real_right.yml
 **왼손** AmazingHand-main\Demo 디렉터리의 dataflow_tracking_real_left.yml
 **양손** AmazingHand-main\Demo 디렉터리의 dataflow_tracking_real_2hands.yml
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
+
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/21.png)
+
 
 텍스트로 열어, 자신의 호스트에서 찾은 포트 번호로 수정(windows는 COM*, ubuntu, linux 시스템은 보통 /dev/ttyACM*)
 
@@ -233,6 +245,10 @@ dora run dataflow_tracking_simu.yml --uv
     #### 양손(둘 다 하나의 서보 드라이버 보드에 연결하는 것에 주의)
 
 
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/7.png)
+
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/8.png)
+
 
     ```Plain Text
     dora build dataflow_tracking_real_2hands.yml --uv   #(한 번만 실행)
@@ -241,6 +257,10 @@ dora run dataflow_tracking_simu.yml --uv
     ```Plain Text
     dora run dataflow_tracking_real_2hands.yml --uv
     ```
+
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/9.png)
+
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/1.png)
 
 
 
@@ -297,6 +317,8 @@ uv pip install mediapipe==0.10.14
 ③콘솔에서 AHControl 디렉터리로 이동해 cargo build --release 재실행
 ④[실제 하드웨어 실행](https://juxitech.feishu.cn/wiki/ZpHmwYARQiN2fwkqFJecqUFZnQg?node-id=1759567650651511609&from=from_node_link)에 따라 다시 build
 실제 오류 내용에 따라 버전을 수정합니다. 예: dora-message가 0.6.0 필요하면 dora-node-api="0.4.0" dora-message="0.6.0"로 변경
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
+
 
 
 
@@ -361,6 +383,8 @@ source .venv/bin/activate
 ```Bash
 ls /dev/ttyUSB* /dev/ttyACM*
 ```
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
+
 
 ```Plain Text
 sudo chmod 666 /dev/ttyACM*
@@ -372,6 +396,10 @@ sudo usermod -aG dialout $USER
 
 **4.코드 파일 포트 번호 수정**
 ①AmazingHand-main\Demo\AHControl\src 디렉터리의 main.rs 코드 파일을 텍스트로 열어, 자신의 호스트에서 찾은 포트 번호로 수정(windows는 COM*, ubuntu, linux 시스템은 보통 /dev/ttyACM*)
+
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/3.png)
+
+![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/4.png)
 
 
 

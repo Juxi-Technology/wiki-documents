@@ -6,18 +6,37 @@
 
 🌐 **[wiki.juxitech.com](https://wiki.juxitech.com/)**
 
+支持 **9 种语言**:English(默认,无前缀)、简体中文(`/zh-hans/`)、繁體中文(`/zh-hant/`)、日本語(`/ja/`)、한국어(`/ko/`)、Deutsch(`/de/`)、Français(`/fr/`)、Español(`/es/`)、Italiano(`/it/`)。
+
+## 仓库结构
+
+```
+docs/
+├── content/                  # 内容源(构建时校验)
+│   ├── tutorials/  topics/  tech/  cases/  community/   # 英文(root,无前缀)
+│   ├── products/  downloads/  about/
+│   ├── zh-hans/  zh-hant/    # 中文语言,与英文同构
+│   └── ja/  ko/  de/  fr/  es/  it/                     # 其余 6 语
+├── .vitepress/
+│   ├── config.ts             # 全语言配置:nav / sidebar / SEO(hreflang、JSON-LD)
+│   ├── search.data.ts        # 站内搜索索引(标题 + 正文)
+│   └── theme/                # 自定义主题(布局、搜索、语言切换、页脚等)
+└── public/                   # 静态资源(图片、llms.txt、robots.txt)
+```
+
 ## 本地开发
 
 ```bash
 npm ci
-npm run docs:dev   # http://localhost:5173
+npm run docs:dev      # http://localhost:5173
 ```
 
-## 构建
+## 构建与检查
 
 ```bash
-npm run docs:build      # 生产构建到 docs/.vitepress/dist
-npm run docs:preview    # 预览生产构建
+npm run check:links   # 校验站内 sidebar/正文链接(CI 也会执行)
+npm run docs:build    # 生产构建到 docs/.vitepress/dist
+npm run docs:preview  # 预览生产构建
 ```
 
 ## 贡献

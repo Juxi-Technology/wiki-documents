@@ -7,12 +7,16 @@ description: "Pro-Version: Leader-Arm 5V6A, Follower-Arm 12V5A Netzteil"
 
 > **[Im Shop kaufen](https://www.juxitech.com/de/products/so-arm101-developers-kit)**
 
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
+
 
 **Pro-Version: Leader-Arm (schwarz) 5V6A, Follower-Arm (weiß) 12V5A Netzteil**
 
 Servo-ID-Einstellung, Winkel-Kalibrierung und Montage im Voraus erledigen. Siehe [offizielle Montageanleitung](https://huggingface.co/docs/lerobot/so101).
 
 ## Schritt 1: Servo-IDs einstellen, Servohörner montieren (außer Nr. 5)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
+
 
 **Achtung**: Servo-Gelenk-IDs und Übersetzungsverhältnis müssen exakt zu **SO-ARM101** passen.
 

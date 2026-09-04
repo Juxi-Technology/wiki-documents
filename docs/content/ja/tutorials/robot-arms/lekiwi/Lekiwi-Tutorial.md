@@ -118,6 +118,8 @@ conda install ffmpeg -c conda-forge
 以下のエラーに遭遇した場合も、上記のコマンドで解決できます。
 
 
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
+
 
 ### 6. feetech モーター依存関係を含む LeRobot のインストール:
 
@@ -174,6 +176,10 @@ git clone https://github.com/huggingface/lerobot.git ~/lerobot
 ```PowerShell
 conda install ffmpeg -c conda-forge
 ```
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
+
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
+
 
 これにより通常は libsvtav1 エンコーダでコンパイルされた ffmpeg 7.X がインストールされます。libsvtav1 をサポートしていない場合は（`ffmpeg -encoders` で確認できます）:
 
@@ -228,6 +234,12 @@ lerobot-setup-motors \
     *--robot.port*=/dev/tty.usbmodem58760431551 # <- paste here the port found at previous step
 ```
 
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
+
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
+
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
+
 
 
 ### 3.HuggingFace 国内ミラーの設定
@@ -267,7 +279,15 @@ https://huggingface.co/settings/tokens
 
 
 
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
+
+
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
+
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
+
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
 
 
@@ -356,6 +376,8 @@ sudo raspi-config
 ノートPC/PC とラズベリーパイの設定ファイルが完全に一致していることを確認してください。
 
 # G. データセットの記録
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
+
 
 遠隔操作に慣れたら、LeKiwi で最初のデータセットを記録できます。
 
@@ -366,6 +388,8 @@ python -m lerobot.robots.lekiwi.lekiwi_host --robot.id=my_awesome_kiwi
 ```
 
 Hugging Face hub 機能でデータセットをアップロードする場合、以前にログインしていなければ、[Hugging Face 設定](https://huggingface.co/settings/tokens)から生成できる書き込み権限付きトークンでログインしてください:
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
+
 
 ```Shell
 hf auth login

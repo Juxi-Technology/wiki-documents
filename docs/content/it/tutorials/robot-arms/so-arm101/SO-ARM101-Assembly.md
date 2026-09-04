@@ -7,12 +7,16 @@ description: "Versione Pro: braccio leader 5V6A, braccio follower 12V5A"
 
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/so-arm101-developers-kit)**
 
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
+
 
 **Versione Pro: braccio leader (nero) 5V6A, braccio follower (bianco) 12V5A**
 
 Impostazione ID servo, calibrazione angolo e montaggio da fare in anticipo. Vedi [guida ufficiale](https://huggingface.co/docs/lerobot/so101).
 
 ## Passo 1: Impostare gli ID dei servo, montare i pignoni (tranne n.5)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
+
 
 **Attenzione**: gli ID delle articolazioni e il rapporto di trasmissione devono corrispondere esattamente al **SO-ARM101**.
 

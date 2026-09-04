@@ -118,6 +118,8 @@ conda install ffmpeg -c conda-forge
 아래 오류가 발생해도 위 명령으로 해결할 수 있습니다.
 
 
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
+
 
 ### 6. feetech 모터 의존성을 포함한 LeRobot 설치:
 
@@ -174,6 +176,10 @@ git clone https://github.com/huggingface/lerobot.git ~/lerobot
 ```PowerShell
 conda install ffmpeg -c conda-forge
 ```
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
+
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
+
 
 이렇게 하면 일반적으로 libsvtav1 인코더로 컴파일된 ffmpeg 7.X가 설치됩니다. libsvtav1 미지원 시(`ffmpeg -encoders`로 확인):
 
@@ -228,6 +234,12 @@ lerobot-setup-motors \
     *--robot.port*=/dev/tty.usbmodem58760431551 # <- paste here the port found at previous step
 ```
 
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
+
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
+
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
+
 
 
 ### 3.HuggingFace 국내 미러 설정
@@ -267,7 +279,15 @@ https://huggingface.co/settings/tokens
 
 
 
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
+
+
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
+
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
+
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
 
 
@@ -356,6 +376,8 @@ sudo raspi-config
 노트북/PC와 라즈베리파이의 설정 파일이 완전히 일치하는지 확인하세요.
 
 # G. 데이터세트 기록
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
+
 
 원격 조작에 익숙해지면 LeKiwi로 첫 데이터세트를 기록할 수 있습니다.
 
@@ -366,6 +388,8 @@ python -m lerobot.robots.lekiwi.lekiwi_host --robot.id=my_awesome_kiwi
 ```
 
 Hugging Face hub 기능으로 데이터세트를 업로드하려면, 이전에 로그인하지 않았다면 [Hugging Face 설정](https://huggingface.co/settings/tokens)에서 생성할 수 있는 쓰기 권한 토큰으로 로그인하세요:
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
+
 
 ```Shell
 hf auth login

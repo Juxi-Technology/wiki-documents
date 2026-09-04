@@ -106,6 +106,8 @@ conda install ffmpeg -c conda-forge
 【Linux のみ】ffmpeg のビルド依存をインストールし、libsvtav1 サポート付き ffmpeg をソースからコンパイルし、使用する ffmpeg 実行ファイルが正しいことを `which ffmpeg` で確認してください。
 
 以下のエラーに遭遇した場合も、上記のコマンドで解決できます。
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/1.png)
+
 
 
 
@@ -243,7 +245,11 @@ lerobot-calibrate \
 ```
 
 まず、ロボットをすべての関節が可動範囲の中央にある位置に移動し、そのまま動かさないでください。次に、Enter キーを押した後、各関節を可動範囲全体で動かす必要があります。キャリブレーションファイルは可動範囲の中位、最大値、最小値を記録し、`~/.cache/huggingface/lerobot/calibration/robots` または `~/.cache/huggingface/lerobot/calibration/teleoperators` ディレクトリの json ファイルに保存されます。
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/2.png)
 
+
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/3.png)
 
 
 
@@ -303,6 +309,8 @@ lerobot-find-cameras realsense # or realsense for Intel Realsense cameras
 ```
 
 ターミナルに関連カメラ情報が出力されます。
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/4.png)
+
 
 
 
@@ -343,6 +351,8 @@ lerobot-teleoperate \
 ```
 
 RealSense 深度カメラを追加する場合、まず `python -m lerobot.find_cameras realsense` で Id を取得し、このコマンドの robot.cameras パラメータの serial_number_or_name: "323622271780" を自分の深度カメラ Id に置き換え、`use_depth: true` で深度ストリームを有効にします:
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/5.png)
 
 
 
@@ -451,6 +461,8 @@ lerobot-dataset-viz \
 ```
 
 ここで、`juxi` はデータ収集時にカスタムした `repo_id` 名です。
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/6.png)
+
 
 ### エピソードのリプレイ（スキップ可能、試すことも可能）
 
@@ -512,6 +524,8 @@ lerobot-train \
 - **可視化ツール**: `wandb.enable=true` で [Weights and Biases](https://docs.wandb.ai/quickstart) による訓練グラフ可視化を利用できます。これは任意ですが、使用する場合は `wandb login` でログインしていることを確認してください。
 
 以下のエラーが出た場合:
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/7.png)
+
 
 
 
@@ -656,12 +670,20 @@ lerobot-record \
 ## F. クラウドサーバーでの訓練展開とモデルエクスポート
 
 #### **1.「算力市場」をクリックし、必要なGPUを選択。できるだけ多コアを選ぶ**
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/8.png)
+
 
 #### **2.「按量計費」を選択し、ベースイメージは「Miniconda/conda3/3.8(ubuntu20.04)/11.8」を選択、「立即創建」をクリック**
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/9.png)
+
 
 #### **3.「JupyterLab」をクリックしてコントロール画面に入り、ターミナルを開く**
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/10.png)
+
 
 #### **4.conda環境を初期化**
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/11.png)
+
 
 #### **5.このターミナルを閉じて、新しいターミナルを開く**
 
@@ -670,6 +692,8 @@ https://www.autodl.com/docs/network_turbo/ を参照
 ```Plain Text
 source /etc/network_turbo
 ```
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/12.png)
+
 
 
 
@@ -693,6 +717,8 @@ git clone https://github.com/Juxi-Technology/lerobot.git
 ```PowerShell
 conda install ffmpeg -c conda-forge
 ```
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/13.png)
+
 
 #### **7.srcディレクトリのlerobotに入り、feetechモーター依存を含むLeRobotをインストール:**
 
@@ -719,6 +745,8 @@ HF_USER=$(huggingface-cli whoami | head -n 1)
 ```Plain Text
 echo $HF_USER
 ```
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/14.png)
+
 
 
 
@@ -739,28 +767,46 @@ filezilla
 ```
 
 filezillaを開き、「ファイル」をクリックし「サイトマネージャー」を選択、「新規サイト」を作成、「SFTPプロトコル」を選択
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/15.png)
 
+
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/16.png)
 
 
 
 
 AutoDL算力雲に戻り「ログイン指令」をコピーして見やすい場所に貼り付け、対応情報をコピーして入力し、「接続」をクリック
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/17.png)
 
 
 
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/18.png)
 
 
 
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/19.png)
 
+
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/20.png)
+
+
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/21.png)
 
 
 
 
 クラウドサーバーのlerobotディレクトリに data フォルダを作成
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/22.png)
+
 
 
 
 データセットフォルダを右側にドラッグして転送し、転送完了を待つ
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/23.png)
+
 
 
 
@@ -771,6 +817,8 @@ AutoDL算力雲に戻り「ログイン指令」をコピーして見やすい�
 #### 10.モデルファイルのエクスポート
 
 訓練完了後、対応するtrainディレクトリの訓練モデルをエクスポート
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/24.png)
+
 
 
 
@@ -827,6 +875,8 @@ Could not connect on port "/dev/ttyACM0"
 ```Bash
 No valid stream found in input file. Is -1 of the desired media type?
 ```
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/25.png)
+
 
 ffmpeg7.1.1 をインストールしてください。`conda install ffmpeg=7.1.1 -c conda-forge`。
 

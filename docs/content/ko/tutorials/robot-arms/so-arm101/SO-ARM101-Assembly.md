@@ -7,12 +7,16 @@ description: "Pro 버전: 리더 암은 5V6A, 팔로워 암은 12V5A 전원 어�
 
 > **[스토어에서 구매](https://www.juxitech.com/ko/products/so-arm101-developers-kit)**
 
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
+
 
 **Pro 버전: 리더(검정) 암은 5V6A 전원 어댑터, 팔로워(흰색) 암은 12V5A 전원 어댑터 사용**
 
 서보 ID 설정·각도 캘리브레이션·조립은 사전에 완료하세요. [공식 조립 가이드](https://huggingface.co/docs/lerobot/so101) 참조.
 
 ## 1단계: 서보 ID 설정, 서보 혼 장착(5번 제외)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
+
 
 **주의**: 서보 관절 ID와 기어비는 **SO-ARM101**과 정확히 일치해야 합니다.
 

@@ -24,6 +24,8 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
+      # 站内链接完整性校验(新增/移动页面时防死链回归)
+      - run: npm run check:links
       - run: npm run docs:build
       # VitePress 1.4 构建不会自动生成 .nojekyll,必须显式创建,
       # 否则 GitHub Pages 的 Jekyll 处理会吞掉 _ 前缀/无扩展文件

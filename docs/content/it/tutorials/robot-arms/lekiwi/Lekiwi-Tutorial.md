@@ -118,6 +118,8 @@ Questo installa di solito ffmpeg 7.X compilato con l'encoder libsvtav1. Se libsv
 Se incontri l'errore seguente, i comandi sopra lo risolvono.
 
 
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
+
 
 ### 6. Installare LeRobot con le dipendenze motori feetech:
 
@@ -174,6 +176,10 @@ Con `miniconda`, installare `ffmpeg`:
 ```PowerShell
 conda install ffmpeg -c conda-forge
 ```
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
+
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
+
 
 Questo installa di solito ffmpeg 7.X con libsvtav1. Se non supportato (`ffmpeg -encoders`):
 
@@ -228,6 +234,12 @@ lerobot-setup-motors \
     *--robot.port*=/dev/tty.usbmodem58760431551 # <- paste here the port found at previous step
 ```
 
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
+
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
+
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
+
 
 
 ### 3. Configurare il mirror HuggingFace
@@ -267,7 +279,15 @@ https://huggingface.co/settings/tokens
 
 
 
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
+
+
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
+
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
+
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
 
 
@@ -356,6 +376,8 @@ sudo raspi-config
 Assicurati che i file di configurazione su laptop/PC e Raspberry Pi siano identici.
 
 # G. Registrare un dataset
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
+
 
 Dopo la familiarità con la teleoperazione, registra il tuo primo dataset con LeKiwi.
 
@@ -366,6 +388,8 @@ python -m lerobot.robots.lekiwi.lekiwi_host --robot.id=my_awesome_kiwi
 ```
 
 Per caricare sul Hub, se non hai già effettuato il login, accedi con un token in scrittura (generabile su [Hugging Face Settings](https://huggingface.co/settings/tokens)):
+![](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
+
 
 ```Shell
 hf auth login

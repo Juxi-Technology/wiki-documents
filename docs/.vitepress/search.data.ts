@@ -13,14 +13,24 @@ export default createContentLoader(
     '**/community/**/*.md',
   ],
   {
-    render: false,
+    render: true, // 渲染出 html,以提取正文纯文本进索引(此前仅标题+描述)
     excerpt: false,
     transform(raw) {
-      return raw.map(({ url, frontmatter }) => ({
-        url,
-        title: frontmatter.title || url.split('/').pop() || url,
-        description: frontmatter.description || '',
-      }))
+      return raw.map(({ url, frontmatter, html }) => {
+        // 正文纯文本:去标签、去 HTML 实体、压缩空白;截断 6000 字符控制索引体积
+        const text = (html || '')
+          .replace(/<[^>]+>/g, ' ')
+          .replace(/&[a-zA-Z#0-9]+;/g, ' ')
+          .replace(/\s+/g, ' ')
+          .trim()
+          .slice(0, 6000)
+        return {
+          url,
+          title: frontmatter.title || url.split('/').pop() || url,
+          description: frontmatter.description || '',
+          text,
+        }
+      })
     },
   },
 )

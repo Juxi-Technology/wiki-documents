@@ -7,12 +7,16 @@ description: "Pro版 主動腕は5V6A電源アダプタ、從動腕は12V5A電�
 
 > **[ストアで購入](https://www.juxitech.com/ja/products/so-arm101-developers-kit)**
 
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
+
 
 **Pro版:主動腕(リーダー)は 5V6A 電源アダプタ、從動腕(フォロワー)は 12V5A 電源アダプタを使用**
 
 サーボID設定・角度キャリブレーション・組立は事前に実施してください。[公式組立ガイド](https://huggingface.co/docs/lerobot/so101) を参照。
 
 ## ステップ1: サーボID設定、サーボホーン取付(5番を除く)
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
+
 
 **注意**: サーボ関節IDとギア比は **SO-ARM101** と厳密に対応させること。
 
