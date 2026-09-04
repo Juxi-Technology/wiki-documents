@@ -121,7 +121,7 @@ conda install ffmpeg -c conda-forge
 
 如果你遇到以下報錯，也可以使用上述命令解決。
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/1.png)
+![5. 在您的環境中安裝 ffmpeg： – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/1.png)
 
 #### 6. 進入lerobot目錄下，安裝帶有 feetech 電機依賴的 LeRobot：
 
@@ -264,9 +264,9 @@ lerobot-calibrate \
 
 首先，您需要將機器人移動到所有關節都位於其 可活動範圍中間 的位置 並 保持機械臂不動。然後，按下回車鍵後，您必須將每個關節在其完整的運動範圍內移動，校準文件會記錄下可活動範圍的中位、最大值和最小值,並保存在`~/.cache/huggingface/lerobot/calibration/robots`或者`~/.cache/huggingface/lerobot/calibration/teleoperators` 目錄下json文件中。
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/2.png)
+![3. 然後校準Follower機械臂 – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/2.png)
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/3.png)
+![3. 然後校準Follower機械臂 – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/3.png)
 
 #### **4. 校準Leader機械臂**
 
@@ -326,7 +326,7 @@ lerobot-find-cameras realsense # or realsense for Intel Realsense cameras
 
 終端會打印相關攝像頭信息。
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/4.png)
+![2. 帶攝像頭顯示的遠程操作 – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/4.png)
 
 您可以在 `~/lerobot/outputs/captured_images` 目錄中找到每臺攝像頭拍攝的圖片。
 
@@ -366,7 +366,7 @@ lerobot-teleoperate \
 
 如果你想添加RealSense深度相機，先運行`python -m lerobot.find_cameras realsense` 獲取Id，並將此命令中robot.cameras參數的serial_number_or_name: "323622271780" 替換爲自己的深度相機Id，`use_depth: true` 啓用深度流：
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/5.png)
+![2. 帶攝像頭顯示的遠程操作 – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/5.png)
 
 
 
@@ -533,7 +533,7 @@ lerobot-dataset-viz \
 
 這裏，`juxi` 是數據收集時自定義的 `repo_id` 名稱。
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/6.png)
+![可視化一個數據集（可跳過，可嘗試） – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/6.png)
 
 ### 回放一個片段（可跳過，可嘗試）
 
@@ -599,7 +599,7 @@ lerobot-train \
 
 如果你遇到了以下報錯：
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/7.png)
+![ACT – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/7.png)
 
 嘗試運行以下命令來解決:
 
@@ -780,15 +780,15 @@ lerobot-record \
 
 #### **1.點擊“算力市場”，選擇需要的顯卡，儘量選多核心**
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/8.png)
+![1.點擊“算力市場”，選擇需要的顯卡，儘量選多核心 – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/8.png)
 
 #### **2.選擇“按量計費”，基礎鏡像選擇“Miniconda/conda3/3.8(ubuntu20.04)/11.8”，點擊“立即創建”**
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/9.png)
+![2.選擇“按量計費”，基礎鏡像選擇“Miniconda/conda3/3.8ubuntu20.04/11.8”，點擊“立即創建” – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/9.png)
 
 #### **3.點擊“JupyterLab”進入控制界面，打開終端**
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/10.png)
+![3.點擊“JupyterLab”進入控制界面，打開終端 – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/10.png)
 
 #### **4.初始化conda環境**
 
@@ -804,7 +804,7 @@ conda activate base
 conda init
 ```
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/11.png)
+![4.初始化conda環境 – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/11.png)
 
 #### **5.關閉此終端，打開新的終端**
 
@@ -814,7 +814,7 @@ conda init
 source /etc/network_turbo
 ```
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/12.png)
+![5.關閉此終端，打開新的終端 – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/12.png)
 
 #### **6.創建lerobot環境**
 
@@ -850,7 +850,7 @@ cd ~/lerobot && pip install -e ".[feetech]"
 
 **①若 數據採集 時已上傳數據集到huggingface數據庫裏，可通過配置huggingface數據庫得到的key獲取**
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/13.png)
+![8.數據集導入到雲服務器裏 – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/13.png)
 
 ```Plain Text
 huggingface-cli login --token ${HUGGINGFACE_TOKEN} --add-to-git-credential
@@ -864,7 +864,7 @@ HF_USER=$(huggingface-cli whoami | head -n 1)
 echo $HF_USER
 ```
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/14.png)
+![8.數據集導入到雲服務器裏 – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/14.png)
 
 ```Plain Text
 export HYDRA_FULL_ERROR=1
@@ -884,29 +884,29 @@ filezilla
 
 打開filezilla，點擊“文件”選擇“站點管理器”，創建“新站點”，選擇“SFTP協議”
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/15.png)
+![8.數據集導入到雲服務器裏 – 3](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/15.png)
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/16.png)
+![8.數據集導入到雲服務器裏 – 4](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/16.png)
 
 返回AutoDL算力雲複製“登錄指令”並粘貼到方便查看的地方，將對應信息複製粘貼進去，點擊“連接”
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/17.png)
+![8.數據集導入到雲服務器裏 – 5](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/17.png)
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/18.png)
+![8.數據集導入到雲服務器裏 – 6](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/18.png)
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/19.png)
+![8.數據集導入到雲服務器裏 – 7](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/19.png)
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/20.png)
+![8.數據集導入到雲服務器裏 – 8](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/20.png)
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/21.png)
+![8.數據集導入到雲服務器裏 – 9](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/21.png)
 
 在雲服務器的lerobot目錄下 創建 data 文件夾
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/22.png)
+![8.數據集導入到雲服務器裏 – 10](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/22.png)
 
 將數據集文件夾 拉到 右邊 進行傳輸，等待傳輸完成
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/23.png)
+![8.數據集導入到雲服務器裏 – 11](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/23.png)
 
 #### 9.數據集訓練
 
@@ -916,7 +916,7 @@ filezilla
 
 訓練完成後，將對應train目錄下的訓練模型導出
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/24.png)
+![10.模型文件導出 – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/24.png)
 
 ## G. 常見問題
 
@@ -975,7 +975,7 @@ No valid stream found in input file. Is -1 of the desired media type?
 
 請安裝ffmpeg7.1.1，`conda install ffmpeg=7.1.1-c conda-forge`。
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/25.png)
+![G. 常見問題 – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/25.png)
 
 - 如果遇到
 
@@ -1029,7 +1029,7 @@ File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'
 
 選擇端口號，波特率選1000000，打開，並點擊“搜索”
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/26.png)
+![Windows查找舵機（飛特舵機上位機調試軟件） – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/26.png)
 
 
 
@@ -1047,11 +1047,11 @@ https://bambot.org/feetech.js?lang=zh
 
 1、根據舵機型號輸入0或1，點擊“連接”
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/27.png)
+![網頁端設置舵機ID和中位校準 – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/27.png)
 
 2、掃描ID 1~6 的舵機，可以根據掃描結果裏的FOUND確認對應ID舵機。例如圖片裏舵機 ID 1 被掃描到了
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/28.png)
+![網頁端設置舵機ID和中位校準 – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/28.png)
 
 3、ID設置和中位校準
 
@@ -1065,7 +1065,7 @@ STS舵機：在“位置控制”輸入2047，並點擊“Set”
 
 SCS舵機：在“位置控制”輸入511，並點擊“Set”
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/29.png)
+![網頁端設置舵機ID和中位校準 – 3](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/29.png)
 
 
 

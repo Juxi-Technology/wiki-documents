@@ -51,25 +51,25 @@ speaker-test -c 2 -D plughw:X,0
 
 1. Antes de insertar la tarjeta de sonido USB, ver los dispositivos USB con `lsusb`:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
+![1. Conectar la tarjeta de sonido USB – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
 
 2. Insertar la tarjeta de sonido USB y volver a ejecutar `lsusb`: el dispositivo adicional es la tarjeta de sonido USB:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
+![1. Conectar la tarjeta de sonido USB – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
 
 3. `arecord -l` lista todos los dispositivos de grabación; ahí se ve nuestra tarjeta de sonido USB:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
+![1. Conectar la tarjeta de sonido USB – 3](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
 
 4. `aplay -l` lista todos los dispositivos de reproducción:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
+![1. Conectar la tarjeta de sonido USB – 4](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
 ### 2. Usar la tarjeta de sonido USB
 
 Si `arecord -l` muestra por ejemplo UACDemoV1.0, esa es nuestra tarjeta de sonido. Si es card 0; device 0, en el comando se cambia a plughw:0,0 para designar ese dispositivo de grabación:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/4.png)
+![2. Usar la tarjeta de sonido USB – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/4.png)
 
 Ejecutar el comando de grabación nativo de Linux para grabar 5 segundos y probar:
 
@@ -88,11 +88,11 @@ Aquí `plughw:0,0` significa `card 0, device 0`, es decir, nuestra tarjeta de so
 
 Si el sonido es muy bajo, ejecutar `alsamixer` y pulsar `F6` para seleccionar la tarjeta de sonido USB:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/5.png)
+![2. Usar la tarjeta de sonido USB – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/5.png)
 
 Luego pulsar `F5` para mostrar los dispositivos de grabación y reproducción. Subir el volumen de grabación con la flecha hacia arriba. PCM es reproducción, CAPTURE MIC es grabación:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/6.png)
+![2. Usar la tarjeta de sonido USB – 3](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/6.png)
 
 Después, reproducir con el comando `aplay`:
 
@@ -112,13 +112,13 @@ Explicación de parámetros:
 
 ## Visualización con PulseAudio
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/7.png)
+![Visualización con PulseAudio – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/7.png)
 
 Ver PulseAudio por [línea de comandos](https://so.csdn.net/so/search?q=%E5%91%BD%E4%BB%A4%E8%A1%8C&spm=1001.2101.3001.7020):
 
 `pactl list sources short`            # Lista todas las fuentes de audio disponibles del servidor PulseAudio
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/8.png)
+![Visualización con PulseAudio – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/8.png)
 
 > 49 representa el índice de la fuente
 >
@@ -144,7 +144,7 @@ Buscar ejemplos de código, por ejemplo «[Python调用USB免驱声卡](https://
 
 1. Dispositivo ocupado
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/9.png)
+![Jetson – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/9.png)
 
 Cerrar la página de configuración y volver a ejecutar el comando
 
@@ -156,11 +156,11 @@ Ver qué proceso ocupa el dispositivo de audio:
 
 Antes de insertar la tarjeta de sonido:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
+![Jetson – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
 
 Después de insertar la tarjeta de sonido:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
+![Jetson – 3](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
 
 Matar el proceso `kill -9 PID`, donde PID es el que aparece tras insertar la tarjeta (33739 en la captura)
 
@@ -249,11 +249,11 @@ Aquí `plughw:0,0` significa `card 0, device 0`, es decir, nuestra tarjeta de so
 
 Si el sonido es muy bajo, ejecutar `alsamixer` y pulsar `F6` para seleccionar la tarjeta de sonido USB:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
+![Grabar 5 segundos de sonido para probar – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
 
 Luego pulsar `F5` para mostrar los dispositivos de grabación y reproducción. Subir el volumen de grabación con la flecha hacia arriba. PCM es reproducción, CAPTURE MIC es grabación:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
+![Grabar 5 segundos de sonido para probar – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
 Después, reproducir con el comando `aplay`:
 

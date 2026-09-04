@@ -7,7 +7,7 @@ description: "Versión Pro: brazo líder 5V6A, brazo seguidor 12V5A"
 
 > **[Comprar en la tienda](https://www.juxitech.com/es/products/so-arm101-developers-kit)**
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
+![image – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
 
 **La versión Pro del brazo activo usa un adaptador de alimentación de 5V6A, mientras que el brazo pasivo usa un adaptador de alimentación de 12V5A**
 
@@ -15,7 +15,7 @@ La configuración del ID de los servos, la calibración del ángulo de los servo
 
 # Paso 1: Configurar el ID del servo e instalar la cruceta del servo (excepto el servo n.º 5)
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
+![image – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
 
 Una vez más, asegúrese de que el ID de articulación de los servos y la relación de engranajes correspondan estrictamente a los del **SO-ARM101**.
 
@@ -95,10 +95,10 @@ lerobot-setup-motors \
 
 Instalación de la placa del controlador de servos: primero instale 4 pilares de cobre y luego fije la placa del controlador con cuatro tornillos M2.5\*8
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/7.png)
+![Sistema Linux/Ubuntu – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/7.png)
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/8.png)
+![Sistema Linux/Ubuntu – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/8.png)
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
+![Sistema Linux/Ubuntu – 3](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
 
 **La versión Pro del brazo activo negro usa un adaptador de alimentación de 5V6A, mientras que el brazo pasivo blanco usa un adaptador de alimentación de 12V5A**

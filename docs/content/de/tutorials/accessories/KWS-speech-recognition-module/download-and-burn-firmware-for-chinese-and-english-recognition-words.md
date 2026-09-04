@@ -17,25 +17,25 @@ description: "Das Modul ist ab Werk mit der Spracherkennungs-Firmware geflasht; 
 
 #### Im oberen Menü „平台功能" (Plattformfunktionen) anklicken, „产品固件及SDK深度开发" (Firmware & SDK-Entwicklung) wählen
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/1.png)
+![Im oberen Menü „平台功能" Plattformfunktionen anklicken, „产品固件及SDK深度开发" Firmware & SDK-Entwicklung wählen – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/1.png)
 
 ---
 
 #### „离线语音识别大模型应用" (Offline-Spracherkennungs-Großmodell) anklicken
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/10.png)
+![Im oberen Menü „平台功能" Plattformfunktionen anklicken, „产品固件及SDK深度开发" Firmware & SDK-Entwicklung wählen – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/10.png)
 
 ---
 
 #### „语音识别固件及SDK开发" (Spracherkennungs-Firmware & SDK-Entwicklung) anklicken
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/11.png)
+![„语音识别固件及SDK开发" Spracherkennungs-Firmware & SDK-Entwicklung anklicken – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/11.png)
 
 ---
 
 #### Neues Projekt erstellen
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/12.png)
+![„语音识别固件及SDK开发" Spracherkennungs-Firmware & SDK-Entwicklung anklicken – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/12.png)
 
 ---
 
@@ -55,7 +55,7 @@ description: "Das Modul ist ab Werk mit der Spracherkennungs-Firmware geflasht; 
 
 7. **Beschreibung:** nach eigener Beschreibungsregel
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/13.png)
+![Produktinformationen ausfüllen – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/13.png)
 
 ---
 
@@ -76,13 +76,13 @@ description: "Das Modul ist ab Werk mit der Spracherkennungs-Firmware geflasht; 
 
 4. **Modulboard wählen:** CI-D02GS02S
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/14.png)
+![Produktinformationen ausfüllen – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/14.png)
 
 ---
 
 #### Firmware-Konfiguration
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/2.png)
+![Firmware-Konfiguration – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/2.png)
 
 ---
 
@@ -100,9 +100,9 @@ description: "Das Modul ist ab Werk mit der Spracherkennungs-Firmware geflasht; 
 
     [命令詞播報詞協議列表V3_英文模板.xlsx]
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/3.png)
+![Firmware-Konfiguration – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/3.png)
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/4.png)
+![Firmware-Konfiguration – 3](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/4.png)
 
 ---
 
@@ -117,22 +117,22 @@ description: "Das Modul ist ab Werk mit der Spracherkennungs-Firmware geflasht; 
 > Firmware „CI1302" wählen, „固件升级" (Firmware-Upgrade) anklicken
 >
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/5.png)
+![Komprimiertes Paket der Flash-Software herunterladen – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/5.png)
 
 2. Soundkarte an den PC anschließen, Geräte-Manager öffnen
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/6.png)
+![Komprimiertes Paket der Flash-Software herunterladen – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/6.png)
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/7.png)
+![Komprimiertes Paket der Flash-Software herunterladen – 3](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/7.png)
 
 3. Zur Flash-Software-Seite wechseln
 
 > Tastenposition der Soundkarte
 >
-> ![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/8.png)
+> ![Komprimiertes Paket der Flash-Software herunterladen – 4](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/8.png)
 >
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/9.png)
+![Komprimiertes Paket der Flash-Software herunterladen – 5](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/9.png)
 
 #### Nach dem Abschluss zu den anderen Tutorials auf der linken Seite wechseln
 

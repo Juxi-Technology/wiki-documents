@@ -17,25 +17,25 @@ description: "Il modulo viene di fabbrica con il firmware di riconoscimento voca
 
 #### Cliccare su « 平台功能 » nel menu in alto, scegliere « 产品固件及SDK深度开发 »
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/1.png)
+![Cliccare su « 平台功能 » nel menu in alto, scegliere « 产品固件及SDK深度开发 » – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/1.png)
 
 ---
 
 #### Cliccare su « 离线语音识别大模型应用 »
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/10.png)
+![Cliccare su « 平台功能 » nel menu in alto, scegliere « 产品固件及SDK深度开发 » – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/10.png)
 
 ---
 
 #### Cliccare su « 语音识别固件及SDK开发 »
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/11.png)
+![Cliccare su « 语音识别固件及SDK开发 » – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/11.png)
 
 ---
 
 #### Creare un nuovo progetto
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/12.png)
+![Cliccare su « 语音识别固件及SDK开发 » – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/12.png)
 
 ---
 
@@ -55,7 +55,7 @@ description: "Il modulo viene di fabbrica con il firmware di riconoscimento voca
 
 7. **Descrizione:** secondo le proprie regole
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/13.png)
+![Compilare le informazioni del prodotto – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/13.png)
 
 ---
 
@@ -76,13 +76,13 @@ description: "Il modulo viene di fabbrica con il firmware di riconoscimento voca
 
 4. **Scegliere la scheda modulo:** CI-D02GS02S
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/14.png)
+![Compilare le informazioni del prodotto – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/14.png)
 
 ---
 
 #### Configurazione del firmware
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/2.png)
+![Configurazione del firmware – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/2.png)
 
 ---
 
@@ -100,9 +100,9 @@ description: "Il modulo viene di fabbrica con il firmware di riconoscimento voca
 
     [命令詞播報詞協議列表V3_英文模板.xlsx]
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/3.png)
+![Configurazione del firmware – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/3.png)
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/4.png)
+![Configurazione del firmware – 3](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/4.png)
 
 ---
 
@@ -117,22 +117,22 @@ description: "Il modulo viene di fabbrica con il firmware di riconoscimento voca
 > Scegliere « CI1302 » come firmware, cliccare su « 固件升级 » (aggiornamento firmware)
 >
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/5.png)
+![Scaricare l'archivio del software di flashing – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/5.png)
 
 2. Collegare la scheda audio al PC, aprire il gestore dispositivi
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/6.png)
+![Scaricare l'archivio del software di flashing – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/6.png)
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/7.png)
+![Scaricare l'archivio del software di flashing – 3](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/7.png)
 
 3. Passare alla pagina del software di flashing
 
 > Posizione del pulsante della scheda audio
 >
-> ![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/8.png)
+> ![Scaricare l'archivio del software di flashing – 4](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/8.png)
 >
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/9.png)
+![Scaricare l'archivio del software di flashing – 5](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/9.png)
 
 #### Dopo il flashing, passare agli altri tutorial a sinistra
 

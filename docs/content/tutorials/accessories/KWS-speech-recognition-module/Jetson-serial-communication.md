@@ -17,7 +17,7 @@ When inputting at the terminal, the appearance of the ttyUSB0 device indicates n
 ls /dev/ttyUSB*
 ```
 
-![](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/1.png)
+![1. Check the port – 1](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/1.png)
 
 ## 2. Code Implementation
 
@@ -152,7 +152,7 @@ The content of the broadcast can be viewed according to the protocol in the \<Co
 
 Among them, the first and second bytes AA 55 represent the frame header of the protocol, the third byte 00 represents the broadcast function, the fourth is the ID of the broadcast content, where we can see that "the car moves forward" is 0x07 in hexadecimal, so sending 0x07 to register 0x03 in the program will broadcast the corresponding content. The fifth byte is the end frame. 
 
-![](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/2.png)
+![3. Implementation Effect – 1](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/2.png)
 
 Enter the following command in the terminal to run the program 
 
@@ -164,11 +164,11 @@ After saying the wake word  Wake , the Console will reply with the received Read
 
 says "Turn off the light", and the Console will reply with Receiving Read_ID: 13 
 
-![](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/3.png)
+![3. Implementation Effect – 2](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/3.png)
 
 At this time, you can open the attached "Command Word and Announcement Word Protocol List V1_Chinese File" to view the protocol for "Turn off the light" 
 
-![](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/4.png)
+![3. Implementation Effect – 3](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/4.png)
 
 Among them, the first and second ByteDances AA 55 represent the frame header of the protocol, the third ByteDance represents the ID of the ten functional words of the chip, the fourth is the ID of the command word, where we can see that "turn off the light" is 0D in hexadecimal and 13 in decimal. The fifth ByteDance is the end frame.
 

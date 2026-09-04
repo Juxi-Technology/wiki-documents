@@ -17,7 +17,7 @@ USB 인터페이스를 통해 라즈베리파이에 꽂습니다.
 ls /dev/ttyUSB*
 ```
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/1.png)
+![1. 포트 확인 – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/1.png)
 
 ## 2. 코드 구현
 
@@ -153,7 +153,7 @@ if __name__ == "__main__":
 
 첫 번째와 두 번째 바이트 AA 55는 프로토콜 프레임 헤더, 세 번째 바이트 00은 알림 기능, 네 번째가 알림 내용의 ID입니다. 여기서 "차량 전진"이 16진수 07임을 알 수 있으므로 프로그램에서 레지스터 0x03에 0x07을 보내면 해당 내용이 알림됩니다. 다섯 번째 바이트는 종료 프레임입니다.
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/2.png)
+![3. 구현 효과 – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/2.png)
 
 터미널에 다음 명령을 입력하여 프로그램 실행
 
@@ -165,11 +165,11 @@ python3 -m speech_serial
 
 "등 끄기"라고 말하면 콘솔이 수신 Read_ID: 13을 응답합니다
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/3.png)
+![3. 구현 효과 – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/3.png)
 
 이때 첨부된 命令詞播報詞協議列表V1_中文文件 을 열어 "등 끄기"의 프로토콜을 확인할 수 있습니다
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/4.png)
+![3. 구현 효과 – 3](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/4.png)
 
 첫 번째와 두 번째 바이트 AA 55는 프로토콜 프레임 헤더, 세 번째 바이트는 칩의 10개 기능어 ID, 네 번째가 명령어 ID입니다. 여기서 "등 끄기"가 16진수 0D, 10진수 13임을 알 수 있습니다. 다섯 번째 바이트는 종료 프레임입니다.
 

@@ -11,7 +11,7 @@ This tutorial takes the mirroring of the? version of the RDK X5 motherboard as a
 
 Connect the IMU attitude sensor to the USB port of the main controller via a Type-C cable. 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NGU5NjhmNDI5MmQ1Yjg5ZTViZjg4NDdjMmRkNzFhMTZfMTRlZTQ2NmI5MGIxODI3NTRjMDVkMDU0ZDQ3NDhmNWJfSUQ6NzYzODkzMDkyMTQwMzc0NzI4NV8xNzgwMzE4NDgwOjE3ODA0MDQ4ODBfVjM)
+![1. Connect the device – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NGU5NjhmNDI5MmQ1Yjg5ZTViZjg4NDdjMmRkNzFhMTZfMTRlZTQ2NmI5MGIxODI3NTRjMDVkMDU0ZDQ3NDhmNWJfSUQ6NzYzODkzMDkyMTQwMzc0NzI4NV8xNzgwMzE4NDgwOjE3ODA0MDQ4ODBfVjM)
 
 ## 2. Check device status
 
@@ -27,7 +27,7 @@ View Device Number
 ls -l /dev/ttyU*
 ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Njk0ODk4ZWE2ZTBiNjNhMmM3NGZmMDZmNmNjY2I3ZmZfMTY2OTgwNTQ5ZGMwNjUxN2E4MzI2NWQ3NTYzODllNmFfSUQ6NzYzODkzMDkyMDg0MjEzNjUyNV8xNzgwMzE4NDgwOjE3ODA0MDQ4ODBfVjM)
+![2. Check device status – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Njk0ODk4ZWE2ZTBiNjNhMmM3NGZmMDZmNmNjY2I3ZmZfMTY2OTgwNTQ5ZGMwNjUxN2E4MzI2NWQ3NTYzODllNmFfSUQ6NzYzODkzMDkyMDg0MjEzNjUyNV8xNzgwMzE4NDgwOjE3ODA0MDQ4ODBfVjM)
 
 Set Port Mapping
 
@@ -77,7 +77,7 @@ Friends who are not yet familiar with using MobaXterm to transfer files, please 
 
 Drag the extracted files onto RDK X5 via MobaXterm software.
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MzQ2NGE4MmVmZGIzNjdmNGU3ZjYzMGRiMTIyM2E1YzFfMTFlMmJhNzU0Mjg2ODI5M2ZlMmNiYTY1ZDI4OTNmMWVfSUQ6NzYzODkzMDkyMjE2NzA0NTA4Nl8xNzgwMzE4NDgwOjE3ODA0MDQ4ODBfVjM)
+![3. Install the driver library – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MzQ2NGE4MmVmZGIzNjdmNGU3ZjYzMGRiMTIyM2E1YzFfMTFlMmJhNzU0Mjg2ODI5M2ZlMmNiYTY1ZDI4OTNmMWVfSUQ6NzYzODkzMDkyMjE2NzA0NTA4Nl8xNzgwMzE4NDgwOjE3ODA0MDQ4ODBfVjM)
 
 ## 4. View IMU data
 
@@ -90,7 +90,7 @@ cd ~/IMU_ROS2/IMU_Library
 python3 -m IMU_Library.IMU_Serial_Library
 ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDM4Y2Y2MzUxY2E4NDkzMjg4NmI0NTYzNTNiMDI4MzNfM2FkNDJmODNlMjU5NzJlZGRlZDM4Njg2NjAzNDI5ZDVfSUQ6NzYzODkzMDkyMDQ5MDAyNzk4MV8xNzgwMzE4NDgwOjE3ODA0MDQ4ODBfVjM)
+![4. View IMU data – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDM4Y2Y2MzUxY2E4NDkzMjg4NmI0NTYzNTNiMDI4MzNfM2FkNDJmODNlMjU5NzJlZGRlZDM4Njg2NjAzNDI5ZDVfSUQ6NzYzODkzMDkyMDQ5MDAyNzk4MV8xNzgwMzE4NDgwOjE3ODA0MDQ4ODBfVjM)
 
 Note: The above is the data reading for a 10-axis IMU. The 6-axis has no Magnetometer and Barometer data, and the 9-axis has no Barometer data.
 

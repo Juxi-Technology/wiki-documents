@@ -51,25 +51,25 @@ speaker-test -c 2 -D plughw:X,0
 
 1. USB 사운드 카드를 꽂기 전에 `lsusb` 명령으로 USB 장치를 확인합니다:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
+![1. USB 사운드 카드 연결 – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
 
 2. USB 사운드 카드를 꽂은 후 다시 `lsusb`를 실행하면, 새로 생긴 장치가 USB 사운드 카드입니다:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
+![1. USB 사운드 카드 연결 – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
 
 3. `arecord -l`로 모든 녹음 장치를 나열할 수 있으며, USB 사운드 카드 장치를 확인할 수 있습니다:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
+![1. USB 사운드 카드 연결 – 3](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
 
 4. `aplay -l`로 모든 재생 장치를 나열할 수 있습니다:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
+![1. USB 사운드 카드 연결 – 4](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
 ### 2. USB 사운드 카드 사용
 
 `arecord -l`에서 예를 들어 UACDemoV1.0이 표시되면 그것이 우리 사운드 카드입니다. card 0; device 0이면 명령에서 plughw:0,0으로 변경해 해당 녹음 장치를 지정합니다:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/4.png)
+![2. USB 사운드 카드 사용 – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/4.png)
 
 Linux 기본 녹음 명령으로 5초간 소리를 녹음하여 테스트합니다:
 
@@ -88,11 +88,11 @@ Linux 기본 녹음 명령으로 5초간 소리를 녹음하여 테스트합니�
 
 소리가 작으면 `alsamixer` 명령으로 볼륨을 조정합니다. `F6`를 눌러 USB 사운드 카드를 선택:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/5.png)
+![2. USB 사운드 카드 사용 – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/5.png)
 
 그 다음 `F5`를 눌러 녹음 및 재생 장치를 모두 표시합니다. 녹음 볼륨은 위쪽 방향키로 올립니다. PCM은 재생, CAPTURE MIC는 녹음입니다:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/6.png)
+![2. USB 사운드 카드 사용 – 3](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/6.png)
 
 그 다음 `aplay` 명령으로 재생합니다:
 
@@ -112,13 +112,13 @@ Linux 기본 녹음 명령으로 5초간 소리를 녹음하여 테스트합니�
 
 ## PulseAudio 시각화 창으로 확인
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/7.png)
+![PulseAudio 시각화 창으로 확인 – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/7.png)
 
 PulseAudio를 [명령줄](https://so.csdn.net/so/search?q=%E5%91%BD%E4%BB%A4%E8%A1%8C&spm=1001.2101.3001.7020)로 확인:
 
 `pactl list sources short`            # 현재 PulseAudio 오디오 서버에서 사용 가능한 모든 오디오 소스 나열
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/8.png)
+![PulseAudio 시각화 창으로 확인 – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/8.png)
 
 > 49는 소스 인덱스를 나타냅니다
 >
@@ -144,7 +144,7 @@ PulseAudio를 [명령줄](https://so.csdn.net/so/search?q=%E5%91%BD%E4%BB%A4%E8%
 
 1. 장치 점유 문제
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/9.png)
+![Jetson – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/9.png)
 
 설정 페이지를 닫고 명령을 다시 실행합니다
 
@@ -156,11 +156,11 @@ PulseAudio를 [명령줄](https://so.csdn.net/so/search?q=%E5%91%BD%E4%BB%A4%E8%
 
 사운드 카드를 꽂기 전:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
+![Jetson – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
 
 사운드 카드를 꽂은 후:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
+![Jetson – 3](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
 
 프로세스 종료 `kill -9 PID`, PID는 사운드 카드 꽂은 후 나타난 PID입니다. 스크린샷에서는 33739입니다
 
@@ -249,11 +249,11 @@ by-path/   controlC0  pcmC0D0c   pcmC0D0p   timer
 
 소리가 작으면 `alsamixer` 명령으로 볼륨을 조정합니다. `F6`를 눌러 USB 사운드 카드를 선택:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
+![5초간 소리를 녹음하여 테스트 – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
 
 그 다음 `F5`를 눌러 녹음 및 재생 장치를 모두 표시합니다. 녹음 볼륨은 위쪽 방향키로 올립니다. PCM은 재생, CAPTURE MIC는 녹음입니다:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
+![5초간 소리를 녹음하여 테스트 – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
 그 다음 `aplay` 명령으로 재생합니다:
 

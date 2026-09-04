@@ -17,25 +17,25 @@ description: "모듈은 출고 시 음성 인식 기능 펌웨어가 이미 구�
 
 #### 상단 메뉴 "平台功能" 클릭, "产品固件及SDK深度开发" 선택
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/1.png)
+![상단 메뉴 "平台功能" 클릭, "产品固件及SDK深度开发" 선택 – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/1.png)
 
 ---
 
 #### "离线语音识别大模型应用" 클릭
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/10.png)
+![상단 메뉴 "平台功能" 클릭, "产品固件及SDK深度开发" 선택 – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/10.png)
 
 ---
 
 #### "语音识别固件及SDK开发" 클릭
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/11.png)
+!["语音识别固件及SDK开发" 클릭 – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/11.png)
 
 ---
 
 #### 새 프로젝트 생성
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/12.png)
+!["语音识别固件及SDK开发" 클릭 – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/12.png)
 
 ---
 
@@ -55,7 +55,7 @@ description: "모듈은 출고 시 음성 인식 기능 펌웨어가 이미 구�
 
 7. **설명:** 자신의 설명 규칙대로 하면 됩니다
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/13.png)
+![제품 정보 입력 – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/13.png)
 
 ---
 
@@ -76,13 +76,13 @@ description: "모듈은 출고 시 음성 인식 기능 펌웨어가 이미 구�
 
 4. **모듈 보드 선택:** CI-D02GS02S
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/14.png)
+![제품 정보 입력 – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/14.png)
 
 ---
 
 #### 펌웨어 구성
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/2.png)
+![펌웨어 구성 – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/2.png)
 
 ---
 
@@ -100,9 +100,9 @@ description: "모듈은 출고 시 음성 인식 기능 펌웨어가 이미 구�
 
     [命令詞播報詞協議列表V3_英文模板.xlsx]
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/3.png)
+![펌웨어 구성 – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/3.png)
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/4.png)
+![펌웨어 구성 – 3](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/4.png)
 
 ---
 
@@ -117,22 +117,22 @@ description: "모듈은 출고 시 음성 인식 기능 펌웨어가 이미 구�
 > 펌웨어 "CI1302" 선택, "固件升级" 클릭
 >
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/5.png)
+![음성 모듈 굽기 소프트웨어 압축 패키지 다운로드 – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/5.png)
 
 2. 사운드 카드를 PC에 꽂고 장치 관리자 열기
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/6.png)
+![음성 모듈 굽기 소프트웨어 압축 패키지 다운로드 – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/6.png)
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/7.png)
+![음성 모듈 굽기 소프트웨어 압축 패키지 다운로드 – 3](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/7.png)
 
 3. 펌웨어 굽기 소프트웨어 페이지로 이동
 
 > 사운드 카드 버튼 위치
 >
-> ![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/8.png)
+> ![음성 모듈 굽기 소프트웨어 압축 패키지 다운로드 – 4](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/8.png)
 >
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/9.png)
+![음성 모듈 굽기 소프트웨어 압축 패키지 다운로드 – 5](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/9.png)
 
 #### 완료 후 왼쪽의 다른 튜토리얼로 이동할 수 있습니다
 

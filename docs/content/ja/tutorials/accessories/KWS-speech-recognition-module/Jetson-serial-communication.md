@@ -17,7 +17,7 @@ USBインターフェースを介してJetsonメインボードに挿します�
 ls /dev/ttyUSB*
 ```
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/1.png)
+![1.ポートの確認 – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/1.png)
 
 ## 2.コード実装
 
@@ -153,7 +153,7 @@ if __name__ == "__main__":
 
 1つ目と2つ目のバイトAA 55はプロトコルのフレームヘッダ、3つ目のバイト00は播報機能、4つ目が播報内容のIDです。ここで「車前進」が16進数の07であることがわかるので、プログラムでレジスタ0x03に0x07を送信すると対応する内容が播報されます。5つ目のバイトは終了フレームです。
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/2.png)
+![3.実装効果 – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/2.png)
 
 以下のコマンドをターミナルに入力してプログラムを実行します
 
@@ -165,11 +165,11 @@ python3 -m speech_serial
 
 「関灯（ライトオフ）」と言うと、コンソールが受信Read_ID：13を返します
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/3.png)
+![3.実装効果 – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/3.png)
 
 このとき添付の 命令詞播報詞協議列表V1_中文文件 を開いて「関灯」のプロトコルを確認できます
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/4.png)
+![3.実装効果 – 3](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication/4.png)
 
 1つ目と2つ目のバイトAA 55はプロトコルのフレームヘッダ、3つ目のバイトはチップの10個の機能語のID、4つ目が命令語のIDです。ここで「関灯」が16進数の0D、10進数で13であることがわかります。5つ目のバイトは終了フレームです。
 

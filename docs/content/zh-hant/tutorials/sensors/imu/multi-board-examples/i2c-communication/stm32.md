@@ -13,9 +13,9 @@ description: "本次例程使用的是STM32F103C8T6，一臺windows電腦、杜�
 
 ## 1.連接設備
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=M2Q0Mjk2NGViMmQ1OWZkNzgyNTg5MmNjYTlmNDFmYmJfODkyNjBjYzY2YWQyMjYwMTNlOTVmYjg5ZGZmMThjMjhfSUQ6NzYzODk2NjM4NjgxNTE1OTI1M18xNzgwNDA0MzA1OjE3ODA0OTA3MDVfVjM)
+![1.連接設備 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=M2Q0Mjk2NGViMmQ1OWZkNzgyNTg5MmNjYTlmNDFmYmJfODkyNjBjYzY2YWQyMjYwMTNlOTVmYjg5ZGZmMThjMjhfSUQ6NzYzODk2NjM4NjgxNTE1OTI1M18xNzgwNDA0MzA1OjE3ODA0OTA3MDVfVjM)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YWQwMzQwOWFiMThiZjdjMzg5ZjY4N2VhZjY3NGM1NzJfN2Y1ZTQ4ZTQ2OTgwNzE2YzgwOTk3NWRiOTRkOTg2ODRfSUQ6NzYzODk2NjM4NjA3Mjg0OTM1MV8xNzgwNDA0MzA1OjE3ODA0OTA3MDVfVjM)
+![1.連接設備 – 2](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YWQwMzQwOWFiMThiZjdjMzg5ZjY4N2VhZjY3NGM1NzJfN2Y1ZTQ4ZTQ2OTgwNzE2YzgwOTk3NWRiOTRkOTg2ODRfSUQ6NzYzODk2NjM4NjA3Mjg0OTM1MV8xNzgwNDA0MzA1OjE3ODA0OTA3MDVfVjM)
 
 ## 2.關鍵代碼解析
 
@@ -143,7 +143,7 @@ IMU_I2C_ReadBarometer():讀取氣壓相關數據：高度、溫度、氣壓、�
 
 程序下載進入STM32後，打開串口助手（配置參數如下圖所示），可以看到一直打印IMU模塊的數據，當我們改變IMU模塊的姿態，數據會發生變化。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjA1ZmMyNDNjODU2ZTBhZDAyNTg2ZWQ0YzBjZmY2NTdfMTE0ZmI5ODVkMjg4OGFhMzRlOGIyMTc4Mzk3OTA2ZWZfSUQ6NzYzODk2NjM4NTk3MjIwMjQyN18xNzgwNDA0MzA1OjE3ODA0OTA3MDVfVjM)
+![3.讀取imu數據 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjA1ZmMyNDNjODU2ZTBhZDAyNTg2ZWQ0YzBjZmY2NTdfMTE0ZmI5ODVkMjg4OGFhMzRlOGIyMTc4Mzk3OTA2ZWZfSUQ6NzYzODk2NjM4NTk3MjIwMjQyN18xNzgwNDA0MzA1OjE3ODA0OTA3MDVfVjM)
 
 注意：以上爲10軸IMU的數據讀取，6軸無磁力計（Magnetometer）與氣壓計（Barometer）數據，9軸無氣壓計（Barometer）數據。
 

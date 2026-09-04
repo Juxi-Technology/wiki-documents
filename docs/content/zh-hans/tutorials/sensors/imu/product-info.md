@@ -89,5 +89,5 @@ IMU数据性能参数
 
 # 四、尺寸参数
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NzFjMzk3MzliNWE3MGJkMzFhZjQ1MjkwYjI1MzdlMDlfY2MwODQzNjI1ZjNlOWJkY2NiYjY0NmViNzJjMzg3MmZfSUQ6NzYxMDY5MTEzNDQxOTYwMjYzNF8xNzgwMDUyMDgxOjE3ODAxMzg0ODFfVjM)
+![引脚功能说明 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NzFjMzk3MzliNWE3MGJkMzFhZjQ1MjkwYjI1MzdlMDlfY2MwODQzNjI1ZjNlOWJkY2NiYjY0NmViNzJjMzg3MmZfSUQ6NzYxMDY5MTEzNDQxOTYwMjYzNF8xNzgwMDUyMDgxOjE3ODAxMzg0ODFfVjM)
 

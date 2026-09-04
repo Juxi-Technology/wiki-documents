@@ -36,9 +36,9 @@ Riferimento per la configurazione delle variabili d'ambiente di Rust su Windows 
 
 Impostazioni delle variabili d'ambiente per Linux:
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/1.png)
+![2. Installazione dell'ambiente – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/1.png)
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/10.png)
+![2. Installazione dell'ambiente – 2](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/10.png)
 
 Per la prima installazione potrebbe essere richiesto l'installer di Visual Studio
 
@@ -56,25 +56,25 @@ registry = "https://mirrors.tuna.tsinghua.edu.cn/git/crates.io-index.git"
 
 **2. Installare uv:** [https://docs.astral.sh/uv/getting-started/installation/](https://docs.astral.sh/uv/getting-started/installation/)
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/11.png)
+![2. Installazione dell'ambiente – 3](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/11.png)
 
 Sul lato Windows, apri il terminale PowerShell, copia e poi inserisci questo comando per installare
 
 **Impostazioni delle variabili d'ambiente per Linux:**
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/12.png)
+![2. Installazione dell'ambiente – 4](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/12.png)
 
 **3. Installare dora-rs:** per il download e l'installazione fai riferimento a [https://dora-rs.ai/docs/guides/Installation/installing](https://dora-rs.ai/docs/guides/Installation/installing)
 
 Impostazioni delle variabili d'ambiente per Linux:
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/13.png)
+![2. Installazione dell'ambiente – 5](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/13.png)
 
 ## 3. Cablaggio
 
 L'alimentazione richiede almeno 5V3A, è collegata esternamente a una scheda driver servo e si connette al computer via USB
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/14.png)
+![3. Cablaggio – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/14.png)
 
 ## 4. Demo d'esempio
 
@@ -82,7 +82,7 @@ L'alimentazione richiede almeno 5V3A, è collegata esternamente a una scheda dri
 
 - Su Windows di solito è COM11; il numero di porta della scheda driver servo si trova tramite il Gestione dispositivi o il software host dei servo Feetech
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/16.png)
+![1. Controllare il numero di porta della scheda driver servo – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/16.png)
 
 - I sistemi Ubuntu e Linux di solito usano /dev/ttyACM0
 
@@ -102,13 +102,13 @@ sudo usermod -aG dialout $USER
 
 Se il comando "ls /dev/ttyUSB\* /dev/ttyACM\*" non trova la directory nella macchina virtuale, controlla se la mano robotica è collegata al computer nell'angolo in basso a destra della macchina virtuale. In tal caso, scegli di scollegarla e collegala alla macchina virtuale.
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
+![1. Controllare il numero di porta della scheda driver servo – 2](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
 
 ### **2. Modificare il numero di porta nel codice**
 
 ① Individua il file di codice main.rs nella directory AmazingHand-main\Demo\AHControl\src, aprilo con un editor di testo e modificalo con il numero di porta trovato sul tuo host (COM\* per Windows, di solito /dev/ttyACM\* per i sistemi Ubuntu e Linux)
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/19.png)
+![2. Modificare il numero di porta nel codice – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/19.png)
 
 ② Individua il file dell'esempio corrispondente
 
@@ -120,11 +120,11 @@ Se il comando "ls /dev/ttyUSB\* /dev/ttyACM\*" non trova la directory nella macc
 
 Aprilo in formato testo e modificalo con il numero di porta trovato sul tuo host (COM\* per Windows, di solito /dev/ttyACM\* per i sistemi Ubuntu e Linux)
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/2.png)
+![2. Modificare il numero di porta nel codice – 2](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/2.png)
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
+![2. Modificare il numero di porta nel codice – 3](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/21.png)
+![2. Modificare il numero di porta nel codice – 4](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/21.png)
 
 ### **3. Deploy del codice**
 
@@ -156,7 +156,7 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 source .venv/bin/activate
 ```
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/3.png)
+![3. Deploy del codice – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/3.png)
 
 Assicurati che la console abbia attivato l'ambiente virtuale!
 
@@ -228,9 +228,9 @@ dora build dataflow_tracking_simu.yml --uv   *#(Execute only once)*
 dora run dataflow_tracking_simu.yml --uv
 ```
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/4.png)
+![Ambiente di simulazione – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/4.png)
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/5.png)
+![Ambiente di simulazione – 2](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/5.png)
 
 ### Esecuzione su hardware reale (tracking della mano)
 
@@ -258,7 +258,7 @@ dora run dataflow_tracking_simu.yml --uv
 
     #### Doppia mano robotica (nota che entrambe sono collegate a una scheda driver servo)
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/6.png)
+![Esecuzione su hardware reale tracking della mano – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/6.png)
 
     ```Plain Text
     dora build dataflow_tracking_real_2hands.yml --uv   *#(Execute only once)*
@@ -268,9 +268,9 @@ dora run dataflow_tracking_simu.yml --uv
     dora run dataflow_tracking_real_2hands.yml --uv
     ```
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/7.png)
+![Esecuzione su hardware reale tracking della mano – 2](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/7.png)
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/8.png)
+![Esecuzione su hardware reale tracking della mano – 3](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/8.png)
 
 ### Esempio semplice per controllare l'angolo delle dita simulate
 
@@ -284,9 +284,9 @@ dora run dataflow_tracking_simu.yml --uv
     dora run dataflow_angle_simu.yml --uv
     ```
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/9.png)
+![Esempio semplice per controllare l'angolo delle dita simulate – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/9.png)
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/1.png)
+![Esempio semplice per controllare l'angolo delle dita simulate – 2](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/1.png)
 
 Descrizione
 
@@ -314,7 +314,7 @@ uv pip install mediapipe==0.10.14
 
 ### 2. Incompatibilità di versione di Dora, formato dei messaggi (v0.7.0 vs v0.8.0)
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/10.png)
+![2. Incompatibilità di versione di Dora, formato dei messaggi v0.7.0 vs v0.8.0 – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/10.png)
 
 Risposta: ① Per prima cosa, sotto la directory .cargo/registry/src/github.xxxxxxxx/ nella directory utente dell'unità C, elimina solo il pacchetto di dipendenza corrispondente!
 
@@ -340,13 +340,13 @@ Risposta: ① Per prima cosa, sotto la directory .cargo/registry/src/github.xxxx
 
 Modifica la versione corrispondente in base all'errore effettivamente segnalato. Per esempio, se dora-message richiede la versione 0.6.0, cambialo in dora-node-api="0.4.0" dora-message="0.6.0".
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/11.png)
+![2. Incompatibilità di versione di Dora, formato dei messaggi v0.7.0 vs v0.8.0 – 2](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/11.png)
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/12.png)
+![2. Incompatibilità di versione di Dora, formato dei messaggi v0.7.0 vs v0.8.0 – 3](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/12.png)
 
 ### 3. Libreria openCV mancante
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/13.png)
+![3. Libreria openCV mancante – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/13.png)
 
 Nella directory HandTracking inserisci il seguente comando
 
@@ -356,11 +356,11 @@ python -m pip install opencv-contrib-python numpy mediapipe -i https://mirrors.a
 
 ### 4. Permesso fotocamera abilitato (computer)
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/14.png)
+![4. Permesso fotocamera abilitato computer – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/14.png)
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/16.png)
+![4. Permesso fotocamera abilitato computer – 2](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/16.png)
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
+![4. Permesso fotocamera abilitato computer – 3](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
 
 ### 5. La macchina virtuale 22.04 usa la fotocamera
 
@@ -372,11 +372,11 @@ Riferimento: https://blog.csdn.net/qq_19731521/article/details/124954288
 
 1. Per prima cosa, fissa la staffa dell'angolo di regolazione fine
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/19.png)
+![Passaggi di installazione della staffa del kit fotocamera ambientale – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/19.png)
 
 2. Kit fotocamera ambientale vista laterale
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/2.png)
+![Passaggi di installazione della staffa del kit fotocamera ambientale – 2](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/2.png)
 
 ## La macchina virtuale 22.04 esegue direttamente il tracking della mano
 
@@ -426,7 +426,7 @@ sudo usermod -aG dialout $USER
 
 ① Individua il file di codice main.rs nella directory AmazingHand-main\Demo\AHControl\src, aprilo in modalità testo e modificalo con il numero di porta trovato sul tuo host (COM\* per Windows, di solito /dev/ttyACM\* per i sistemi Ubuntu e Linux)
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
+![La macchina virtuale 22.04 esegue direttamente il tracking della mano – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
 
 ② Individua il file dell'esempio corrispondente
 
@@ -438,11 +438,11 @@ sudo usermod -aG dialout $USER
 
 Aprilo in formato testo e modificalo con il numero di porta trovato sul tuo host (COM\* per Windows, di solito /dev/ttyACM\* per i sistemi Ubuntu e Linux)
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/21.png)
+![La macchina virtuale 22.04 esegue direttamente il tracking della mano – 2](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/21.png)
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/3.png)
+![La macchina virtuale 22.04 esegue direttamente il tracking della mano – 3](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/3.png)
 
-![](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/4.png)
+![La macchina virtuale 22.04 esegue direttamente il tracking della mano – 4](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/4.png)
 
 **5. Avvia il tracking della mano destra**
 

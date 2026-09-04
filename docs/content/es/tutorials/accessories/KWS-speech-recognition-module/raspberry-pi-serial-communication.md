@@ -17,7 +17,7 @@ Al introducir en el terminal, la aparición del dispositivo ttyUSB0 indica que s
 ls /dev/ttyUSB*
 ```
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/1.png)
+![1. Comprobar el puerto – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/1.png)
 
 ## 2. Implementación del código
 
@@ -153,7 +153,7 @@ El contenido de los anuncios puede consultarse mediante el archivo adjunto 命�
 
 El primer y segundo byte AA 55 son la cabecera de la trama del protocolo, el tercer byte 00 es la función de anuncio, el cuarto es el ID del contenido anunciado. Aquí se ve que «vehículo avanza» es 07 en hexadecimal: enviar 0x07 al registro 0x03 para anunciar el contenido correspondiente. El quinto byte es la trama de final.
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/2.png)
+![3. Resultado – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/2.png)
 
 Ejecutar el siguiente comando en el terminal
 
@@ -165,11 +165,11 @@ Al decir la palabra de activación, la consola responde con Read_ID: 0
 
 Al decir «apagar la luz», la consola responde con Read_ID: 13
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/3.png)
+![3. Resultado – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/3.png)
 
 Entonces se puede abrir el archivo adjunto 命令詞播報詞協議列表V1_中文文件 y consultar el protocolo de «apagar la luz»
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/4.png)
+![3. Resultado – 3](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/4.png)
 
 El primer y segundo byte AA 55 son la cabecera de la trama, el tercer byte es el ID de las diez palabras de función del chip, el cuarto es el ID de la palabra de comando. Aquí se ve que «apagar la luz» es 0D en hexadecimal, 13 en decimal. El quinto byte es la trama de final.
 

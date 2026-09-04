@@ -11,7 +11,7 @@ This tutorial takes the Raspberry Pi 5 motherboard and the official 64-bit versi
 
 Connect the IMU attitude sensor to the USB port of the main controller via a Type-C cable. 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NjdhZGI0ZDhmNTgxYmQ3MTFlZjA4NjU4YzdhZmFjYzZfN2ZlMTg5ZWEyMGYxZmVlZGI0MmY0YzY3NTI2Mjg3ZDJfSUQ6NzYzODkzMDQ0NDk2MDQxODc0NF8xNzgwMzE4NDA3OjE3ODA0MDQ4MDdfVjM)
+![1. Connect the device – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NjdhZGI0ZDhmNTgxYmQ3MTFlZjA4NjU4YzdhZmFjYzZfN2ZlMTg5ZWEyMGYxZmVlZGI0MmY0YzY3NTI2Mjg3ZDJfSUQ6NzYzODkzMDQ0NDk2MDQxODc0NF8xNzgwMzE4NDA3OjE3ODA0MDQ4MDdfVjM)
 
 ## 2. Check device status
 
@@ -27,7 +27,7 @@ View Device Number
 ls -l /dev/ttyU*
 ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NGYxOGY5NTY4ZGYzNmRiMzZiZWFkYzcwN2EyODk3NGNfZmJlYWZiMGY5NWMwMmQ3MjI3Y2UzNjJlZDA4M2I4ZWNfSUQ6NzYzODkzMDQ0NTE3MDAxOTI2MF8xNzgwMzE4NDA3OjE3ODA0MDQ4MDdfVjM)
+![2. Check device status – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NGYxOGY5NTY4ZGYzNmRiMzZiZWFkYzcwN2EyODk3NGNfZmJlYWZiMGY5NWMwMmQ3MjI3Y2UzNjJlZDA4M2I4ZWNfSUQ6NzYzODkzMDQ0NTE3MDAxOTI2MF8xNzgwMzE4NDA3OjE3ODA0MDQ4MDdfVjM)
 
 Set Port Mapping
 
@@ -77,7 +77,7 @@ Friends who are not yet familiar with using MobaXterm to transfer files, please 
 
 Drag the decompressed files onto Raspberry Pi 5 via MobaXterm software. 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MDA1ZDAwMTU5ZDIxMDE4YmI1NmE0YjQ0ZGVkNzdhYjlfZmE2NTdhNmM5YjYwMzk3OTkwNGJiZDIxODdmYmM5NTlfSUQ6NzYzODkzMDQ0MjY0MTczODcyOV8xNzgwMzE4NDA3OjE3ODA0MDQ4MDdfVjM)
+![3. Install the driver library – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MDA1ZDAwMTU5ZDIxMDE4YmI1NmE0YjQ0ZGVkNzdhYjlfZmE2NTdhNmM5YjYwMzk3OTkwNGJiZDIxODdmYmM5NTlfSUQ6NzYzODkzMDQ0MjY0MTczODcyOV8xNzgwMzE4NDA3OjE3ODA0MDQ4MDdfVjM)
 
 ## 4. View IMU data
 
@@ -90,7 +90,7 @@ cd ~/IMU_ROS2/IMU_Library
 python3 -m IMU_Library.IMU_Serial_Library
 ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MGJjMGI3NzIwOGY4NDk3NjFhY2YyM2FjMmViZWU0ZDBfYjcwY2ZiMTgxODQ0MWNmZDMwOTg1ZWU5MmFiOTQwYmJfSUQ6NzYzODkzMDQ0NDE0NjkwNDAzMF8xNzgwMzE4NDA3OjE3ODA0MDQ4MDdfVjM)
+![4. View IMU data – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MGJjMGI3NzIwOGY4NDk3NjFhY2YyM2FjMmViZWU0ZDBfYjcwY2ZiMTgxODQ0MWNmZDMwOTg1ZWU5MmFiOTQwYmJfSUQ6NzYzODkzMDQ0NDE0NjkwNDAzMF8xNzgwMzE4NDA3OjE3ODA0MDQ4MDdfVjM)
 
 Note: The above is the data reading for a 10-axis IMU. The 6-axis has no Magnetometer and Barometer data, and the 9-axis has no Barometer data.
 

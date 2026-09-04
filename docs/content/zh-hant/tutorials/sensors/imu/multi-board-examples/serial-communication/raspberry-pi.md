@@ -11,7 +11,7 @@ description: "本教程以樹莓派5主板，官方64位版本的鏡像爲例。
 
 將IMU姿態傳感器通過type-c線插在主控的USB上。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YWE2NWYzZGUzNzgzMGFkYjY4NWUwYjc0ZDMxOGEwMzhfZWYxNGI4OTg2NGJkNTYwYTU3ZTM5NzJkYzhlYmU2NWJfSUQ6NzYzODk2NTkxMDMxNzM3MDMzNV8xNzgwNDA0NDYyOjE3ODA0OTA4NjJfVjM)
+![1.連接設備 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YWE2NWYzZGUzNzgzMGFkYjY4NWUwYjc0ZDMxOGEwMzhfZWYxNGI4OTg2NGJkNTYwYTU3ZTM5NzJkYzhlYmU2NWJfSUQ6NzYzODk2NTkxMDMxNzM3MDMzNV8xNzgwNDA0NDYyOjE3ODA0OTA4NjJfVjM)
 
 ## 2.查看設備狀態
 
@@ -27,7 +27,7 @@ lsusb
 ls -l /dev/ttyU*
 ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTY4NmMwZjg0NDEzZmNiODJmYjE0N2RkZWVlZTM2ODNfMjBmYTY1MGIyNGFhYzU0Y2NkZjk5NzMyZWQyYTcwM2FfSUQ6NzYzODk2NTkxMzg2OTM3MjM0OF8xNzgwNDA0NDYyOjE3ODA0OTA4NjJfVjM)
+![2.查看設備狀態 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTY4NmMwZjg0NDEzZmNiODJmYjE0N2RkZWVlZTM2ODNfMjBmYTY1MGIyNGFhYzU0Y2NkZjk5NzMyZWQyYTcwM2FfSUQ6NzYzODk2NTkxMzg2OTM3MjM0OF8xNzgwNDA0NDYyOjE3ODA0OTA4NjJfVjM)
 
 設置端口映射
 
@@ -77,7 +77,7 @@ sudo apt install -y python3-smbus2
 
 通過MobaXterm軟件將 解壓後的文件 拖入 樹莓派5 上。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZmM2NjBjMmJhYmQ2Y2JkMTYzOWZjNjNiMGRlYmExMDhfYzk4NjVlYzNjYjY3ZTk5Y2VmYTFkZDY4NjY3YzlkNTZfSUQ6NzYzODk2NTkxMjg2NzE5NTg3N18xNzgwNDA0NDYyOjE3ODA0OTA4NjJfVjM)
+![3.安裝驅動庫 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZmM2NjBjMmJhYmQ2Y2JkMTYzOWZjNjNiMGRlYmExMDhfYzk4NjVlYzNjYjY3ZTk5Y2VmYTFkZDY4NjY3YzlkNTZfSUQ6NzYzODk2NTkxMjg2NzE5NTg3N18xNzgwNDA0NDYyOjE3ODA0OTA4NjJfVjM)
 
 ## 4.查看imu數據
 
@@ -90,7 +90,7 @@ cd ~/IMU_ROS2/IMU_Library
 python3 -m IMU_Library.IMU_Serial_Library
 ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NTc4MDYzNTczZjE4ZTk3YjQ4Y2ExOTk2ZTBhOTY4NGNfMTliMTlkNThjYTQ0ZmI1ODg2NTdlNWVkOGEwODZmYzFfSUQ6NzYzODk2NTkxMzU2MzM2ODQyMl8xNzgwNDA0NDYyOjE3ODA0OTA4NjJfVjM)
+![4.查看imu數據 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NTc4MDYzNTczZjE4ZTk3YjQ4Y2ExOTk2ZTBhOTY4NGNfMTliMTlkNThjYTQ0ZmI1ODg2NTdlNWVkOGEwODZmYzFfSUQ6NzYzODk2NTkxMzU2MzM2ODQyMl8xNzgwNDA0NDYyOjE3ODA0OTA4NjJfVjM)
 
 注意：以上爲10軸IMU的數據讀取，6軸無磁力計（Magnetometer）與氣壓計（Barometer）數據，9軸無氣壓計（Barometer）數據。
 

@@ -1,4 +1,48 @@
 import { defineConfig } from 'vitepress'
+import fs from 'node:fs'
+import path from 'node:path'
+
+// FAQ 页 → FAQPage JSON-LD:构建期解析各语 tutorials/faq.md 的 Q/A 对
+// (格式: **Q: xxx?** / **A:** yyy;fr 为 **Q :** 与 **A :**,正则兼容空白)
+function buildFaqPageLd(relativePath: string) {
+  if (!/tutorials\/faq\.md$/.test(relativePath)) return null
+  const file = path.join(process.cwd(), 'docs/content', relativePath)
+  if (!fs.existsSync(file)) return null
+  const src = fs.readFileSync(file, 'utf8')
+  const segs = src.split(/\*\*Q\s*:/).slice(1)
+  const mainEntity = []
+  for (const seg of segs) {
+    const q = seg.split('**')[0].replace(/\s*\?+\s*$/, '').trim()
+    const am = seg.match(/\*\*A\s*:\*\*\s*([\s\S]*?)(?=\n\*\*Q\s*:|\n---|$)/)
+    if (!am) continue
+    const a = am[1].trim()
+    if (!q || !a) continue
+    mainEntity.push({
+      '@type': 'Question',
+      name: q,
+      acceptedAnswer: { '@type': 'Answer', text: a },
+    })
+  }
+  if (!mainEntity.length) return null
+  return { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity }
+}
+
+// 面包屑 JSON-LD:按 URL 段生成(站点根 → 各段 → 当前页),skip 首页
+function buildBreadcrumbLd(url: string, title: string) {
+  if (url === '/' || url === '') return null
+  const segs = url.split('/').filter(Boolean)
+  const LANG_SEGS = ['zh-hans', 'zh-hant', 'ja', 'ko', 'de', 'fr', 'es', 'it']
+  if (LANG_SEGS.includes(segs[0])) segs.shift()
+  if (!segs.length) return null
+  const items = [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://wiki.juxitech.com/' }]
+  let acc = ''
+  for (let i = 0; i < segs.length; i++) {
+    acc += '/' + segs[i]
+    const name = i === segs.length - 1 ? title : segs[i]
+    items.push({ '@type': 'ListItem', position: i + 2, name, item: 'https://wiki.juxitech.com' + acc })
+  }
+  return { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: items }
+}
 
 // 全局 head:SEO 基础标签(baidu 验证 + Open Graph + Twitter Card + canonical)
 const globalHead = [
@@ -712,8 +756,19 @@ function computePrevNext(userConfig, pageData) {
 
 // ---- hreflang:注入 9 语言 alternate + x-default(多语 SEO 必备)----
 const HREFLANG_LANGS = ['', 'zh-hans', 'zh-hant', 'ja', 'ko', 'de', 'fr', 'es', 'it']
-function injectHreflang(pageData) {
-  const u = pageData.url || '/'
+
+// PageData 没有 url 字段(types/shared.d.ts),必须由 relativePath 推导站点路径;
+// 此前用 pageData.url 取到 undefined → hreflang 全部错指站点根(多语 SEO 失效)
+function pageUrlOf(relativePath: string) {
+  if (relativePath === 'index.md') return '/'
+  let p = relativePath.replace(/\.md$/, '')
+  // index 页的真实 URL 是目录路径(带尾斜杠),hreflang 目标必须精确匹配
+  if (p.endsWith('/index')) p = p.slice(0, -6) + '/'
+  return '/' + p
+}
+
+function injectHreflang(pageData: { relativePath: string }) {
+  const u = pageUrlOf(pageData.relativePath)
   const seg = u.split('/')[1]
   const hasLang = HREFLANG_LANGS.includes(seg)
   const core = hasLang ? '/' + u.split('/').slice(2).join('/') : u
@@ -1853,6 +1908,8 @@ export default defineConfig({
   transformHead({ pageData }) {
     const base = 'https://wiki.juxitech.com'
     const isHome = pageData.relativePath === 'index.md'
+    const faqLd = buildFaqPageLd(pageData.relativePath)
+    const breadcrumbLd = buildBreadcrumbLd(pageUrlOf(pageData.relativePath), pageData.title || '')
     let ld
     if (isHome) {
       ld = {
@@ -1862,12 +1919,20 @@ export default defineConfig({
         url: base + '/',
         logo: base + '/images/logos/logo-black.png',
         description: '机器人与 AI 硬件的开放文档平台 — 机械臂、传感器、配件产品教程与技术文档',
+        sameAs: [
+          'https://github.com/Juxi-Technology',
+          'https://space.bilibili.com/3546906737248821',
+          'https://www.juxitech.com',
+        ],
         contactPoint: {
           '@type': 'ContactPoint',
           email: 'support@juxitech.com',
           contactType: 'customer service',
         },
       }
+    } else if (faqLd) {
+      // FAQ 页用 FAQPage 替代 Article(富媒体收割 + AI 引用,避免类型混杂)
+      ld = faqLd
     } else {
       ld = {
         '@context': 'https://schema.org',
@@ -1883,10 +1948,12 @@ export default defineConfig({
         inLanguage: pageData.lang || 'zh-CN',
       }
     }
-    return [
+    const heads: any[] = [
       // hreflang:9 语言 alternate + x-default(置顶,爬虫优先识别语言对应)
       ...injectHreflang(pageData),
       ['script', { type: 'application/ld+json' }, JSON.stringify(ld)],
     ]
+    if (breadcrumbLd) heads.push(['script', { type: 'application/ld+json' }, JSON.stringify(breadcrumbLd)])
+    return heads
   },
 })

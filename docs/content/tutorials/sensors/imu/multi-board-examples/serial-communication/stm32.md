@@ -13,9 +13,9 @@ Use Keil5 software to open USART.uvprojx, and burn the program into the STM32F10
 
 ## 1. Connect the device
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTk0NjM5YjE0ODAxZGEzOTI4ZmZkMzAxZTNhZTdhNjlfMzU5N2IzZDY0NDFmYTJhZjY0NjBhMjA1Y2RmYmMxNDlfSUQ6NzYzODkyMjc4MTg4MzA5MTkyOV8xNzgwMzE4MzE1OjE3ODA0MDQ3MTVfVjM)
+![1. Connect the device – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTk0NjM5YjE0ODAxZGEzOTI4ZmZkMzAxZTNhZTdhNjlfMzU5N2IzZDY0NDFmYTJhZjY0NjBhMjA1Y2RmYmMxNDlfSUQ6NzYzODkyMjc4MTg4MzA5MTkyOV8xNzgwMzE4MzE1OjE3ODA0MDQ3MTVfVjM)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=N2I3NjJlY2I0NDkzZmYwN2I4NDEyOTc2Njc1ZDllODhfNzNlNDYyMzg1MDJjMDQwNjk0YTI2NzE1ZGExNWI0MzJfSUQ6NzYzODkyMjc4MDY3MTM4MDQyN18xNzgwMzE4MzE1OjE3ODA0MDQ3MTVfVjM)
+![1. Connect the device – 2](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=N2I3NjJlY2I0NDkzZmYwN2I4NDEyOTc2Njc1ZDllODhfNzNlNDYyMzg1MDJjMDQwNjk0YTI2NzE1ZGExNWI0MzJfSUQ6NzYzODkyMjc4MDY3MTM4MDQyN18xNzgwMzE4MzE1OjE3ODA0MDQ3MTVfVjM)
 
 ## 2. Key Code Analysis
 
@@ -188,7 +188,7 @@ _parse_frame_data(): Parse data.
 
 After the program is downloaded into the STM32, open the serial port assistant (with configuration parameters as shown in the figure below), and you can see that the data of the IMU module is continuously printed. When we change the attitude of the IMU module, the data will change. 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MmZjNzYwZDQ4MjZjZjc3NGE2ZDUyYjI4N2IzN2U5YTRfZDczMzQ1MGE0MTQ5NzJmNzVjZGY4NDBjOTAxODczNDRfSUQ6NzYzODkyMjc4MTU2ODUwMjczMV8xNzgwMzE4MzE1OjE3ODA0MDQ3MTVfVjM)
+![3. Read IMU data – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MmZjNzYwZDQ4MjZjZjc3NGE2ZDUyYjI4N2IzN2U5YTRfZDczMzQ1MGE0MTQ5NzJmNzVjZGY4NDBjOTAxODczNDRfSUQ6NzYzODkyMjc4MTU2ODUwMjczMV8xNzgwMzE4MzE1OjE3ODA0MDQ3MTVfVjM)
 
 Note: The above is the data reading for a 10-axis IMU. The 6-axis has no Magnetometer and Barometer data, and the 9-axis has no Barometer data.
 

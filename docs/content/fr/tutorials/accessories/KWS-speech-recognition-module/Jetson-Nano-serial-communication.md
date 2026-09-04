@@ -17,7 +17,7 @@ En saisissant dans le terminal, l'apparition du périphérique ttyUSB0 indique u
 ls /dev/ttyUSB*
 ```
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/1.png)
+![1. Vérifier le port – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/1.png)
 
 ## 2. Implémentation du code
 
@@ -153,7 +153,7 @@ Le contenu des annonces peut être vérifié via le fichier joint 命令詞播�
 
 Les premier et deuxième octets AA 55 sont l'en-tête de trame du protocole, le troisième octet 00 est la fonction d'annonce, le quatrième l'ID du contenu annoncé. Ici, « véhicule avance » est 07 en hexadécimal : envoyer 0x07 au registre 0x03 pour annoncer le contenu correspondant. Le cinquième octet est la trame de fin.
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/2.png)
+![3. Résultat – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/2.png)
 
 Exécuter la commande suivante dans le terminal
 
@@ -165,11 +165,11 @@ Après le mot de réveil, la console répond avec Read_ID : 0
 
 En disant « éteindre la lumière », la console répond avec Read_ID : 13
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/3.png)
+![3. Résultat – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/3.png)
 
 On peut alors ouvrir le fichier joint 命令詞播報詞協議列表V1_中文文件 et vérifier le protocole de « éteindre la lumière »
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/4.png)
+![3. Résultat – 3](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/4.png)
 
 Les premier et deuxième octets AA 55 sont l'en-tête de trame, le troisième octet l'ID des dix mots de fonction de la puce, le quatrième l'ID du mot de commande. Ici, « éteindre la lumière » est 0D en hexadécimal, soit 13 en décimal. Le cinquième octet est la trame de fin.
 

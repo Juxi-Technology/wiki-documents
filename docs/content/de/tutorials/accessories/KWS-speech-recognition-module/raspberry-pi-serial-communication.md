@@ -17,7 +17,7 @@ Im Terminal erscheint das Gerät ttyUSB0, wenn es korrekt erkannt wurde (normale
 ls /dev/ttyUSB*
 ```
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/1.png)
+![1. Port prüfen – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/1.png)
 
 ## 2. Code-Implementierung
 
@@ -153,7 +153,7 @@ Der Inhalt der Ansagen kann über die beigefügte Datei 命令詞播報詞協議
 
 Das erste und zweite Byte AA 55 sind der Frame-Header des Protokolls, das dritte Byte 00 ist die Ansagefunktion, das vierte der ID der Ansage. Hier sieht man, dass „Fahrzeug vorwärts" hexadezimal 07 ist: im Programm 0x07 an Register 0x03 senden, um den Inhalt anzusagen. Das fünfte Byte ist der Endrahmen.
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/2.png)
+![3. Ergebnis – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/2.png)
 
 Folgenden Befehl im Terminal ausführen
 
@@ -165,11 +165,11 @@ Nach dem Aufweckwort antwortet die Konsole mit Read_ID: 0
 
 Bei „Licht aus" antwortet die Konsole mit Read_ID: 13
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/3.png)
+![3. Ergebnis – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/3.png)
 
 Jetzt die beigefügte Datei 命令詞播報詞協議列表V1_中文文件 öffnen und das Protokoll für „Licht aus" prüfen
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/4.png)
+![3. Ergebnis – 3](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/4.png)
 
 Das erste und zweite Byte AA 55 sind der Frame-Header, das dritte Byte die ID der zehn Funktionswörter des Chips, das vierte die ID des Befehlsworts. Hier sieht man, dass „Licht aus" hexadezimal 0D, dezimal 13 ist. Das fünfte Byte ist der Endrahmen.
 

@@ -8,7 +8,7 @@ description: "Pro 버전: 리더 암은 5V6A, 팔로워 암은 12V5A 전원 어�
 > **[스토어에서 구매](https://www.juxitech.com/ko/products/so-arm101-developers-kit)**
 
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
+![image – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
 
 **Pro 버전의 액티브 암은 5V6A 전원 어댑터를, 패시브 암은 12V5A 전원 어댑터를 사용합니다**
 
@@ -16,7 +16,7 @@ description: "Pro 버전: 리더 암은 5V6A, 팔로워 암은 12V5A 전원 어�
 
 # 1단계: 서보 ID 설정 및 서보 혼 장착(5번 서보 제외)
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
+![image – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
 
 다시 한번, 서보 관절 ID와 기어비가 **SO-ARM101**과 엄밀히 일치하는지 확인해 주세요.
 
@@ -96,10 +96,10 @@ lerobot-setup-motors \
 
 서보 드라이버 보드 설치: 먼저 구리 기둥 4개를 설치한 후, M2.5*8 나사 4개로 드라이버 보드를 고정합니다.
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/7.png)
+![Linux/Ubuntu 시스템 – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/7.png)
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/8.png)
+![Linux/Ubuntu 시스템 – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/8.png)
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
+![Linux/Ubuntu 시스템 – 3](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
 
 **Pro 버전의 검은색 액티브 암은 5V6A 전원 어댑터를, 흰색 패시브 암은 12V5A 전원 어댑터를 사용합니다**

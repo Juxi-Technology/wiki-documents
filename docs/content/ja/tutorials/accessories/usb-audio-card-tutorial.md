@@ -51,25 +51,25 @@ speaker-test -c 2 -D plughw:X,0
 
 1. USBサウンドカードを挿す前に、`lsusb` コマンドでUSBデバイスを確認します:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
+![一、USBサウンドカードの接続 – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
 
 2. USBサウンドカードを挿してから、もう一度 `lsusb` を実行すると、増えているデバイスがUSBサウンドカードです:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
+![一、USBサウンドカードの接続 – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
 
 3. `arecord -l` で全ての録音デバイスを一覧表示できます。USBサウンドカードデバイスが確認できます:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
+![一、USBサウンドカードの接続 – 3](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
 
 4. `aplay -l` で全ての再生デバイスを一覧表示できます:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
+![一、USBサウンドカードの接続 – 4](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
 ### 二、USBサウンドカードの使用
 
 `arecord -l` で、例えば UACDemoV1.0 と表示されるのが私たちのサウンドカードです。card 0; device 0 なら、コマンドでは plughw:0,0 に変更して録音デバイスを指定します:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/4.png)
+![二、USBサウンドカードの使用 – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/4.png)
 
 Linux 付属の録音コマンドで、5秒間の音声を録音してテストします:
 
@@ -88,11 +88,11 @@ Linux 付属の録音コマンドで、5秒間の音声を録音してテスト�
 
 音が小さい場合は `alsamixer` コマンドで音量を調整します。`F6` を押してUSBサウンドカードを選択:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/5.png)
+![二、USBサウンドカードの使用 – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/5.png)
 
 次に `F5` を押して録音デバイスと再生デバイスの両方を表示します。録音音量は上矢印キーで上げます。PCM は再生、CAPTURE MIC は録音です:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/6.png)
+![二、USBサウンドカードの使用 – 3](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/6.png)
 
 続いて `aplay` コマンドで再生します:
 
@@ -112,13 +112,13 @@ Linux 付属の録音コマンドで、5秒間の音声を録音してテスト�
 
 ## PulseAudio 可視化ウィンドウでの表示
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/7.png)
+![PulseAudio 可視化ウィンドウでの表示 – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/7.png)
 
 PulseAudio を[コマンドライン](https://so.csdn.net/so/search?q=%E5%91%BD%E4%BB%A4%E8%A1%8C&spm=1001.2101.3001.7020)で確認:
 
 `pactl list sources short`            # 現在の PulseAudio オーディオサーバーで利用可能な全てのオーディオソースを一覧表示
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/8.png)
+![PulseAudio 可視化ウィンドウでの表示 – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/8.png)
 
 > 49 はソースインデックスを表します
 >
@@ -144,7 +144,7 @@ PulseAudio を[コマンドライン](https://so.csdn.net/so/search?q=%E5%91%BD%
 
 1. デバイス使用中の問題
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/9.png)
+![Jetson – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/9.png)
 
 設定ページを閉じて、コマンドを再実行します
 
@@ -156,11 +156,11 @@ PulseAudio を[コマンドライン](https://so.csdn.net/so/search?q=%E5%91%BD%
 
 サウンドカードを挿す前:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
+![Jetson – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
 
 サウンドカードを挿した後:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
+![Jetson – 3](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
 
 プロセスを終了 `kill -9 PID`、PID はサウンドカード挿入後に現れたPIDです。スクリーンショットでは 33739 です
 
@@ -249,11 +249,11 @@ by-path/   controlC0  pcmC0D0c   pcmC0D0p   timer
 
 音が小さい場合は `alsamixer` コマンドで音量を調整します。`F6` を押してUSBサウンドカードを選択:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
+![5秒間の音声を録音してテスト – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
 
 次に `F5` を押して録音デバイスと再生デバイスの両方を表示します。録音音量は上矢印キーで上げます。PCM は再生、CAPTURE MIC は録音です:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
+![5秒間の音声を録音してテスト – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
 続いて `aplay` コマンドで再生します:
 

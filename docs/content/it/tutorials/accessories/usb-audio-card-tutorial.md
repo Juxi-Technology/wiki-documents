@@ -51,25 +51,25 @@ speaker-test -c 2 -D plughw:X,0
 
 1. Prima di inserire la scheda audio USB, visualizzare i dispositivi USB con `lsusb`:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
+![1. Collegare la scheda audio USB – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
 
 2. Inserire la scheda audio USB ed eseguire di nuovo `lsusb`: il dispositivo aggiuntivo è la scheda audio USB:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
+![1. Collegare la scheda audio USB – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
 
 3. `arecord -l` elenca tutti i dispositivi di registrazione; qui si vede la nostra scheda audio USB:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
+![1. Collegare la scheda audio USB – 3](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
 
 4. `aplay -l` elenca tutti i dispositivi di riproduzione:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
+![1. Collegare la scheda audio USB – 4](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
 ### 2. Usare la scheda audio USB
 
 Se `arecord -l` mostra ad esempio UACDemoV1.0, quella è la nostra scheda audio. Se è card 0; device 0, nel comando si usa plughw:0,0 per specificare quel dispositivo di registrazione:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/4.png)
+![2. Usare la scheda audio USB – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/4.png)
 
 Eseguire il comando di registrazione nativo di Linux per registrare 5 secondi di audio e testare:
 
@@ -88,11 +88,11 @@ Qui `plughw:0,0` significa `card 0, device 0`, cioè la nostra scheda audio USB;
 
 Se il suono è troppo basso, eseguire `alsamixer` e premere `F6` per selezionare la scheda audio USB:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/5.png)
+![2. Usare la scheda audio USB – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/5.png)
 
 Poi premere `F5` per mostrare i dispositivi di registrazione e riproduzione. Alzare il volume di registrazione con la freccia su. PCM è riproduzione, CAPTURE MIC è registrazione:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/6.png)
+![2. Usare la scheda audio USB – 3](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/6.png)
 
 Infine, riprodurre con il comando `aplay`:
 
@@ -112,13 +112,13 @@ Spiegazione dei parametri:
 
 ## Visualizzazione con PulseAudio
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/7.png)
+![Visualizzazione con PulseAudio – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/7.png)
 
 Verificare PulseAudio da [riga di comando](https://so.csdn.net/so/search?q=%E5%91%BD%E4%BB%A4%E8%A1%8C&spm=1001.2101.3001.7020):
 
 `pactl list sources short`            # Elenca tutte le sorgenti audio disponibili del server PulseAudio
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/8.png)
+![Visualizzazione con PulseAudio – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/8.png)
 
 > 49 rappresenta l'indice della sorgente
 >
@@ -144,7 +144,7 @@ Cercare esempi di codice, ad esempio «[Python调用USB免驱声卡](https://blo
 
 1. Dispositivo occupato
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/9.png)
+![Jetson – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/9.png)
 
 Chiudere la pagina delle impostazioni e rieseguire il comando
 
@@ -156,11 +156,11 @@ Vedere quale processo occupa il dispositivo audio:
 
 Prima di inserire la scheda audio:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
+![Jetson – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
 
 Dopo aver inserito la scheda audio:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
+![Jetson – 3](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
 
 Terminare il processo `kill -9 PID`, dove PID è quello apparso dopo l'inserimento (33739 nello screenshot)
 
@@ -249,11 +249,11 @@ Qui `plughw:0,0` significa `card 0, device 0`, cioè la nostra scheda audio USB.
 
 Se il suono è troppo basso, eseguire `alsamixer` e premere `F6` per selezionare la scheda audio USB:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
+![Registrare 5 secondi di audio per testare – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
 
 Poi premere `F5` per mostrare i dispositivi di registrazione e riproduzione. Alzare il volume di registrazione con la freccia su. PCM è riproduzione, CAPTURE MIC è registrazione:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
+![Registrare 5 secondi di audio per testare – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
 Infine, riprodurre con il comando `aplay`:
 

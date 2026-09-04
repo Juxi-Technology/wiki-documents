@@ -51,25 +51,25 @@ speaker-test -c 2 -D plughw:X,0
 
 1. Vor dem Einstecken der USB-Soundkarte die USB-Geräte mit `lsusb` anzeigen:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
+![1. USB-Soundkarte anschließen – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
 
 2. USB-Soundkarte einstecken und erneut `lsusb` ausführen – das zusätzlich erscheinende Gerät ist die USB-Soundkarte:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
+![1. USB-Soundkarte anschließen – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
 
 3. Mit `arecord -l` alle Aufnahmegeräte auflisten – unsere USB-Soundkarte ist sichtbar:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
+![1. USB-Soundkarte anschließen – 3](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
 
 4. Mit `aplay -l` alle Wiedergabegeräte auflisten:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
+![1. USB-Soundkarte anschließen – 4](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
 ### 2. USB-Soundkarte verwenden
 
 Zeigt `arecord -l` z. B. UACDemoV1.0, so ist das unsere Soundkarte. Bei card 0; device 0 wird im Befehl plughw:0,0 angegeben, um dieses Aufnahmegerät zu wählen:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/4.png)
+![2. USB-Soundkarte verwenden – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/4.png)
 
 Mit dem Linux-eigenen Aufnahmebefehl 5 Sekunden Ton aufnehmen und testen:
 
@@ -88,11 +88,11 @@ Mit dem Linux-eigenen Aufnahmebefehl 5 Sekunden Ton aufnehmen und testen:
 
 Bei zu leiser Aufnahme `alsamixer` verwenden und `F6` drücken, um die USB-Soundkarte zu wählen:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/5.png)
+![2. USB-Soundkarte verwenden – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/5.png)
 
 Dann `F5` drücken, um Aufnahme- und Wiedergabegeräte anzuzeigen. Aufnahmelautstärke mit Pfeil-nach-oben erhöhen. PCM = Wiedergabe, CAPTURE MIC = Aufnahme:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/6.png)
+![2. USB-Soundkarte verwenden – 3](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/6.png)
 
 Anschließend mit `aplay` wiedergeben:
 
@@ -112,13 +112,13 @@ Parametererklärung:
 
 ## PulseAudio-Anzeige
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/7.png)
+![PulseAudio-Anzeige – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/7.png)
 
 PulseAudio [per Befehlszeile](https://so.csdn.net/so/search?q=%E5%91%BD%E4%BB%A4%E8%A1%8C&spm=1001.2101.3001.7020) anzeigen:
 
 `pactl list sources short`            # Alle verfügbaren Audioquellen des PulseAudio-Servers auflisten
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/8.png)
+![PulseAudio-Anzeige – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/8.png)
 
 > 49 = Quellenindex
 >
@@ -144,7 +144,7 @@ Codebeispiele selbst suchen, z. B. „[Python调用USB免驱声卡](https://blog
 
 1. Gerät belegt
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/9.png)
+![Jetson – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/9.png)
 
 Einstellungsseite schließen und Befehl erneut ausführen
 
@@ -156,11 +156,11 @@ Prozess anzeigen, der das Audiogerät belegt:
 
 Vor dem Einstecken der Soundkarte:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
+![Jetson – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
 
 Nach dem Einstecken:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
+![Jetson – 3](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
 
 Prozess beenden mit `kill -9 PID` (PID = der nach dem Einstecken neu erscheinende Prozess, im Screenshot 33739)
 
@@ -247,11 +247,11 @@ Daraus ergibt sich: Soundkarte 0 ist die Onboard-Soundkarte; die Geräte existie
 
 Bei zu leiser Aufnahme `alsamixer` verwenden und `F6` drücken, um die USB-Soundkarte zu wählen:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
+![5 Sekunden Ton aufnehmen und testen – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
 
 Dann `F5` drücken, um Aufnahme- und Wiedergabegeräte anzuzeigen. Aufnahmelautstärke mit Pfeil-nach-oben erhöhen. PCM = Wiedergabe, CAPTURE MIC = Aufnahme:
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
+![5 Sekunden Ton aufnehmen und testen – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
 Anschließend mit `aplay` wiedergeben:
 

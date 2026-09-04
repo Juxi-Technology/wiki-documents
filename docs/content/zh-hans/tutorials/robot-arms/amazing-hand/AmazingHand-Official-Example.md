@@ -34,9 +34,9 @@ windows端 Rust环境变量设置（重点！） 参考https://zhuanlan.zhihu.co
 
 Linux端环境变量设置：
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/1.png)
+![2.环境安装 – 1](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/1.png)
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/10.png)
+![2.环境安装 – 2](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/10.png)
 
 首次安装可能需要Visual Studio Installer
 
@@ -54,25 +54,25 @@ registry = "https://mirrors.tuna.tsinghua.edu.cn/git/crates.io-index.git"
 
 **2、安装 uv：**https://docs.astral.sh/uv/getting-started/installation/
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/11.png)
+![2.环境安装 – 3](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/11.png)
 
 windows端打开Powershell终端，复制后输入此命令进行安装
 
 **Linux端**环境变量设置：
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/12.png)
+![2.环境安装 – 4](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/12.png)
 
 **3、安装 dora-rs：**请参考https://dora-rs.ai/docs/guides/Installation/installing下载安装
 
 linux端环境变量设置：
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/13.png)
+![2.环境安装 – 5](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/13.png)
 
 ## 3.接线方式
 
 电源要求至少5V3A，外接 舵机驱动板，通过USB连接到电脑端
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/14.png)
+![3.接线方式 – 1](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/14.png)
 
 ## 4.示例演示
 
@@ -80,7 +80,7 @@ linux端环境变量设置：
 
 - windows系统一般为COM11，可通过 设备管理器 或者 飞特舵机上位机 找到 舵机驱动板 的端口号
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/16.png)
+![1、查看舵机驱动板端口号 – 1](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/16.png)
 
 - Ubuntu、Linux系统一般为/dev/ttyACM0
 
@@ -100,13 +100,13 @@ sudo usermod -aG dialout $USER
 
 若是在虚拟机里 ls /dev/ttyUSB* /dev/ttyACM* 找不到目录，请检查虚拟机右下角是否将灵巧手连接到电脑，若是，请选择断开，并连接到虚拟机里
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
+![1、查看舵机驱动板端口号 – 2](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
 
 ### **2、修改代码中的端口号**
 
 ①找到AmazingHand-main\Demo\AHControl\src目录下的main.rs代码文件，文本打开，修改为自身主机查找到的端口号（windows为COM*，ubuntu、linux系统一般为/dev/ttyACM*）
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/19.png)
+![2、修改代码中的端口号 – 1](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/19.png)
 
 ②找到对应的实例文件
 
@@ -118,21 +118,21 @@ sudo usermod -aG dialout $USER
 
 文本格式打开，修改为自身主机查找到的端口号（windows为COM*，ubuntu、linux系统一般为/dev/ttyACM*）
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/2.png)
+![2、修改代码中的端口号 – 2](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/2.png)
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
+![2、修改代码中的端口号 – 3](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/21.png)
+![2、修改代码中的端口号 – 4](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/21.png)
 
 ### **3、代码部署**
 
 - 打开Demo文件夹
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/3.png)
+![3、代码部署 – 1](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/3.png)
 
 - Windows系统 在目录中输入Powershell 回车打开
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/4.png)
+![3、代码部署 – 2](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/4.png)
 
 - 启动守护进程（每次都要）：
 
@@ -160,7 +160,7 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 source .venv/bin/activate
 ```
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/5.png)
+![3、代码部署 – 3](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/5.png)
 
 确保控制台已经激活虚拟环境！
 
@@ -232,9 +232,9 @@ dora build dataflow_tracking_simu.yml --uv   #（只需执行一次）
 dora run dataflow_tracking_simu.yml --uv
 ```
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/6.png)
+![模拟环境 – 1](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/6.png)
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/7.png)
+![模拟环境 – 2](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/7.png)
 
 ### 真实硬件运行（手部追踪）
 
@@ -262,7 +262,7 @@ dora run dataflow_tracking_simu.yml --uv
 
     #### 双灵巧手（注意都连接到一个舵机驱动板上）
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/8.png)
+![真实硬件运行（手部追踪） – 1](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/8.png)
 
     ```Plain Text
     dora build dataflow_tracking_real_2hands.yml --uv   #（只需执行一次）
@@ -272,9 +272,9 @@ dora run dataflow_tracking_simu.yml --uv
     dora run dataflow_tracking_real_2hands.yml --uv
     ```
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/9.png)
+![真实硬件运行（手部追踪） – 2](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/9.png)
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/1.png)
+![真实硬件运行（手部追踪） – 3](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/1.png)
 
 ### 简单示例控制仿真手指角度
 
@@ -288,9 +288,9 @@ dora run dataflow_tracking_simu.yml --uv
     dora run dataflow_angle_simu.yml --uv
     ```
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/10.png)
+![简单示例控制仿真手指角度 – 1](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/10.png)
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/11.png)
+![简单示例控制仿真手指角度 – 2](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/11.png)
 
 描述说明
 
@@ -317,7 +317,7 @@ uv pip install mediapipe==0.10.14
 
 ### 2、Dora 版本不兼容，消息格式（v0.7.0 vs v0.8.0）
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/12.png)
+![2、Dora 版本不兼容，消息格式（v0.7.0 vs v0.8.0） – 1](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/12.png)
 
 答：①先在C盘用户目录下的.cargo/registry/src/github.xxxxxxxx/ 下只删除对应的依赖包！
 
@@ -343,13 +343,13 @@ uv pip install mediapipe==0.10.14
 
 根据实际报错情况修改对应的版本，例如dora-message需要0.6.0的，修改成dora-node-api="0.4.0" dora-message="0.6.0"
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/13.png)
+![2、Dora 版本不兼容，消息格式（v0.7.0 vs v0.8.0） – 2](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/13.png)
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/14.png)
+![2、Dora 版本不兼容，消息格式（v0.7.0 vs v0.8.0） – 3](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/14.png)
 
 ### 3、没有openCV依赖库
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/16.png)
+![3、没有openCV依赖库 – 1](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/16.png)
 
 在HandTracking目录下输入以下命令
 
@@ -359,11 +359,11 @@ python -m pip install opencv-contrib-python numpy mediapipe -i https://mirrors.a
 
 ### 4、相机权限开启（电脑端）
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
+![4、相机权限开启（电脑端） – 1](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/19.png)
+![4、相机权限开启（电脑端） – 2](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/19.png)
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/2.png)
+![4、相机权限开启（电脑端） – 3](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/2.png)
 
 ### 5、虚拟机22.04调用摄像头
 
@@ -375,11 +375,11 @@ python -m pip install opencv-contrib-python numpy mediapipe -i https://mirrors.a
 
 1.先固定微调角度支架
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
+![环境相机套件支架安装步骤 – 1](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
 
 2.侧视环境相机套件
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/21.png)
+![环境相机套件支架安装步骤 – 2](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/21.png)
 
 ## 虚拟机22.04 直接运行手部追踪
 
@@ -429,7 +429,7 @@ sudo usermod -aG dialout $USER
 
 ①找到AmazingHand-main\Demo\AHControl\src目录下的main.rs代码文件，文本打开，修改为自身主机查找到的端口号（windows为COM*，ubuntu、linux系统一般为/dev/ttyACM*）
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/3.png)
+![虚拟机22.04 直接运行手部追踪 – 1](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/3.png)
 
 ②找到对应的实例文件
 
@@ -441,11 +441,11 @@ sudo usermod -aG dialout $USER
 
 文本格式打开，修改为自身主机查找到的端口号（windows为COM*，ubuntu、linux系统一般为/dev/ttyACM*）
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/4.png)
+![虚拟机22.04 直接运行手部追踪 – 2](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/4.png)
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/5.png)
+![虚拟机22.04 直接运行手部追踪 – 3](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/5.png)
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/6.png)
+![虚拟机22.04 直接运行手部追踪 – 4](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/6.png)
 
 **5.运行 右手 手部追踪**
 

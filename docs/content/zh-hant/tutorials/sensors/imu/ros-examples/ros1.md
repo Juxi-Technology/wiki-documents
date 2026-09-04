@@ -237,7 +237,7 @@ sudo chmod 666 /dev/imu-serial
 
 2. RVIZ可視化中三軸顯示很小，重新勾選 Enable axes
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDFlMzg2OGIyZDY0ZTY0MjU5YTdmNGU4YTA2MDM3NThfYTFmYTViNTJiNWE5YzM4ZDA5YzJlZjk0YmNlMWFmYTRfSUQ6NzYzODk2NzQyMDMzOTcxOTE0MV8xNzgwNDA0NTc4OjE3ODA0OTA5NzhfVjM)
+![常見問題 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDFlMzg2OGIyZDY0ZTY0MjU5YTdmNGU4YTA2MDM3NThfYTFmYTViNTJiNWE5YzM4ZDA5YzJlZjk0YmNlMWFmYTRfSUQ6NzYzODk2NzQyMDMzOTcxOTE0MV8xNzgwNDA0NTc4OjE3ODA0OTA5NzhfVjM)
 
 
 

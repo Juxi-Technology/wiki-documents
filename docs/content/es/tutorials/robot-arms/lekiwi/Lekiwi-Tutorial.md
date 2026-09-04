@@ -21,7 +21,7 @@ El código del repositorio de este tutorial se mantiene en la versión estable d
 
 Vista previa de URDF en línea https://urdf.d-robotics.cc/
 
-![Image](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
+![image – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
 ## Características principales
 
@@ -148,7 +148,7 @@ Esto suele instalar ffmpeg 7.X compilado con el codificador libsvtav1 para su pl
 
 Si encuentra el siguiente error, también puede usar los comandos anteriores para resolverlo.
 
-![Image](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
+![5. Instalar ffmpeg en su entorno: – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
 ### 6. Instalar LeRobot con las dependencias de motores feetech:
 
@@ -163,7 +163,7 @@ Buscar config_lekiwi.py en el directorio `lerobot\src\lerobot\robots\lekiwi`
 
 connection_time_s: int = 7200 # 也就是2小时
 
-![](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
+![7. Configurar el tiempo de conexión – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
 
 
@@ -183,7 +183,7 @@ En su ordenador:
 
 Copie y pegue el siguiente comando en su Shell: `source ~/.bashrc`; o, para usuarios de Mac: `source ~/.bash_profile` o `source ~/.zshrc` (si usa zshell)
 
-![Image](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
+![2. Reiniciar el Shell – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
 ### 3. Crear y activar un nuevo entorno Conda para LeRobot
 
@@ -221,7 +221,7 @@ Esto suele instalar ffmpeg 7.X compilado con el codificador libsvtav1 para su pl
 
 Si encuentra el siguiente error, también puede usar los comandos anteriores para resolverlo.
 
-![Image](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
+![5. Instalar ffmpeg en su entorno: – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
 ### 6. Instalar LeRobot con las dependencias de motores feetech:
 
@@ -232,9 +232,9 @@ pip install *-e* ".[lekiwi]"
 
 # Configurar los motores
 
-![Image](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
+![6. Instalar LeRobot con las dependencias de motores feetech: – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
-![Image](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
+![6. Instalar LeRobot con las dependencias de motores feetech: – 2](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
 ### **1. Encontrar el puerto USB asociado al brazo robótico**
 
@@ -265,7 +265,7 @@ lerobot-setup-motors \
     *--robot.port*=/dev/tty.usbmodem58760431551 # <- paste here the port found at previous step
 ```
 
-![Image](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
+![2. Configurar su motor los productos terminados pueden saltarse este paso – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
 ### 3. Configurar el espejo doméstico de HuggingFace
 
@@ -306,11 +306,11 @@ source ~/.zshrc
 
 https://huggingface.co/settings/tokens
 
-![Image](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
+![① Crear token – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
-![Image](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
+![① Crear token – 2](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
-![Image](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
+![① Crear token – 3](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
 #### ② Anotar el token
 
@@ -328,17 +328,17 @@ hf auth login
 hf auth whoami
 ```
 
-![Image](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
+![③ Vincular el token – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
 #### ④ Crear el repositorio del dataset
 
 **Anote el nombre del propietario (Owner) y el nombre del dataset, que son el \<hf_username\> y el \<dateset_repo_id\> necesarios más adelante**
 
-![Image](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
+![④ Crear el repositorio del dataset – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
-![Image](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
+![④ Crear el repositorio del dataset – 2](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
-![Image](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
+![④ Crear el repositorio del dataset – 3](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
 ### 4. ¡¡¡Actualizar la configuración!!!
 
@@ -355,7 +355,7 @@ Nota importante: una vez obtenidos el número de puerto del brazo activo y la di
 
 Modifique estos cuatro archivos en el directorio example\lekiwi
 
-![Image](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
+![4. ¡¡¡Actualizar la configuración!!! – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
 #### ① Modificar teleoperate.py
 
@@ -363,7 +363,7 @@ remote_ip: dirección IP del Raspberry Pi
 
 port: número de puerto cuando el brazo activo está conectado a una computadora o a Linux
 
-![Image](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
+![① Modificar teleoperate.py – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
 #### ② Modificar record.py
 
@@ -373,7 +373,7 @@ remote_ip: dirección IP del Raspberry Pi
 
 port: número de puerto cuando el brazo activo está conectado a una computadora o a Linux
 
-![Image](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
+![② Modificar record.py – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
 #### ③ Modificar replay.py
 
@@ -381,7 +381,7 @@ remote_ip: dirección IP del Raspberry Pi
 
 \<hf_username\>/\<dataset_repo_id\>, es decir, [el nombre de usuario y de dataset de Hugging Face](https://juxitech.feishu.cn/docx/DXtPd0iF1oO3aGxRChBcL3LSnFh?fromScene=spaceOverview#doxcnsAUzU1e1l6XIM07OE8grYg)
 
-![Image](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
+![③ Modificar replay.py – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
 ## Calibración
 
@@ -412,7 +412,7 @@ Unificamos los métodos de calibración para la mayoría de los robots. Primero,
 
 Abra un nuevo Anaconda Prompt
 
-![Image](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
+![Calibrar el brazo seguidor montado en la base Lekiwi – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
 > Si usa una Mac, puede ser necesario conceder al «Terminal» el permiso de acceso al teclado para las operaciones remotas. Vaya a «System Preferences» \> «Security &amp; Privacy» \> «Input Monitoring» y marque la casilla «Terminal».
 > 
@@ -424,7 +424,7 @@ Para realizar operaciones remotas, inicie sesión en su Raspberry Pi por SSH y e
 python -m lerobot.robots.lekiwi.lekiwi_host --robot.id=my_awesome_kiwi
 ```
 
-![Image](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
+![Calibrar el brazo seguidor montado en la base Lekiwi – 2](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
 A continuación, en su portátil, ejecute también el siguiente comando para activar el entorno `conda activate lerobot` y luego ejecute el siguiente script:
 
@@ -590,7 +590,7 @@ HF_DATASET_ID = "\< hf_username \>/\< eval_dataset_id \>" Cambie el nombre de us
 
 remote_ip: dirección IP del Raspberry Pi
 
-![Image](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
+![Modificar evaluate.py – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
 Luego ejecute el siguiente comando:
 

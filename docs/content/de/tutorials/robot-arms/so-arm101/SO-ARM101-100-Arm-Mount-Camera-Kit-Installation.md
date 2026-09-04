@@ -11,24 +11,24 @@ Zum Debugging der USB-Kamera siehe das [Tutorial zur USB-Kamera mit Autofokus](h
 
 Beim fertigen Produkt sind die Muttern im Greifer bereits montiert – direkt zu Schritt 2 springen
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/1.png)
+![Montage der SO-ARM101-Armhalterung – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/1.png)
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/2.png)
+![Montage der SO-ARM101-Armhalterung – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/2.png)
 
 ## Montage des Umgebungskamera-Kits
 
 1. Zuerst den Winkel-Feinjustierungsbügel fixieren
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/3.png)
+![Montage des Umgebungskamera-Kits – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/3.png)
 
 2. Seitliches Umgebungskamera-Kit
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/4.png)
+![Montage des Umgebungskamera-Kits – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/4.png)
 
 3. Oben montiertes Umgebungskamera-Kit
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/5.png)
+![Montage des Umgebungskamera-Kits – 3](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/5.png)
 
 ## Gummi-Antirutschpads – selbst zuschneiden
 
-![Image](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/6.png)
+![Gummi-Antirutschpads – selbst zuschneiden – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/6.png)

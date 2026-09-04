@@ -17,7 +17,7 @@ Inserendo nel terminale, la comparsa del dispositivo ttyUSB0 indica il riconosci
 ls /dev/ttyUSB*
 ```
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/1.png)
+![1. Verificare la porta – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/1.png)
 
 ## 2. Implementazione del codice
 
@@ -153,7 +153,7 @@ Il contenuto degli annunci può essere verificato tramite il file allegato 命�
 
 Il primo e il secondo byte AA 55 sono l'intestazione di trama del protocollo, il terzo byte 00 è la funzione di annuncio, il quarto è l'ID del contenuto annunciato. Qui si vede che «veicolo avanti» è 07 in esadecimale: inviare 0x07 al registro 0x03 per annunciare il contenuto corrispondente. Il quinto byte è la trama di fine.
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/2.png)
+![3. Risultato – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/2.png)
 
 Eseguire il seguente comando nel terminale
 
@@ -165,11 +165,11 @@ Dopo la parola di attivazione, la console risponde con Read_ID: 0
 
 Dicendo «spegnere la luce», la console risponde con Read_ID: 13
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/3.png)
+![3. Risultato – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/3.png)
 
 A questo punto si può aprire il file allegato 命令詞播報詞協議列表V1_中文文件 e verificare il protocollo di «spegnere la luce»
 
-![](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/4.png)
+![3. Risultato – 3](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/4.png)
 
 Il primo e il secondo byte AA 55 sono l'intestazione di trama, il terzo byte è l'ID delle dieci parole di funzione del chip, il quarto è l'ID della parola di comando. Qui si vede che «spegnere la luce» è 0D in esadecimale, cioè 13 in decimale. Il quinto byte è la trama di fine.
 

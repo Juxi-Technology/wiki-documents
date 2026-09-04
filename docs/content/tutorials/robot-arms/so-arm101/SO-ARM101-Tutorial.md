@@ -121,7 +121,7 @@ Without graphical dependencies (gdk-pixbuf, librsvg), use this command to instal
 
 If you encounter the following error, you can also use the above command to resolve it. 
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/1.png)
+![5. Install ffmpeg in your environment: – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/1.png)
 
 #### 6. Enter the lerobot directory and install LeRobot with feetech motor dependencies: 
 
@@ -264,9 +264,9 @@ lerobot-calibrate \
 
 First, you need to move the robot to a position where all joints are located at the  middle of their movable range  and keep the robotic arm still. Then, after pressing the Enter key, you must move each joint through its full range of motion, and the calibration file will record the  median ,  maximum , and  minimum  values of the range of motion, and save them in the ` ~/.cache/huggingface/lerobot/calibration/robots ` or ` ~/.cache/huggingface/lerobot/calibration/teleoperators ` directory in a JSON file. 
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/2.png)
+![3. Then calibrate the Follower robotic arm – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/2.png)
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/3.png)
+![3. Then calibrate the Follower robotic arm – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/3.png)
 
 #### **4. Calibrate the Leader robotic arm**
 
@@ -326,7 +326,7 @@ lerobot-find-cameras realsense # or realsense for Intel Realsense cameras
 
 The terminal will print relevant camera information. 
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/4.png)
+![2. Remote operation with camera display – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/4.png)
 
 You can find the images captured by each camera in the `~/lerobot/outputs/captured_images` directory.
 
@@ -366,7 +366,7 @@ lerobot-teleoperate \
 
 If you want to add a RealSense depth camera, first run `python -m lerobot.find_cameras realsense` to get the ID, and replace the serial_number_or_name: "323622271780" parameter of robot.cameras in this command with the ID of your own depth camera, `use_depth: true` to enable the depth stream: 
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/5.png)
+![2. Remote operation with camera display – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/5.png)
 
 
 
@@ -533,7 +533,7 @@ lerobot-dataset-viz \
 
 Here, `juxi` is the custom `repo_id` name during data collection. 
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/6.png)
+![Visualize a dataset  optional, can be attempted – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/6.png)
 
 ### Playback a clip(skippable, tryable)
 
@@ -599,7 +599,7 @@ Command Explanation
 
 If you encounter the following error: 
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/7.png)
+![ACT – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/7.png)
 
 Try running the following command to resolve: 
 
@@ -780,15 +780,15 @@ Taking AutoDL Computing Power Cloud as an example, www.autodl.com , register, lo
 
 #### **1. Click "Computing Power Market", select the desired graphics card, and try to choose one with more cores.**
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/8.png)
+![1. Click "Computing Power Market", select the desired graphics card, and try to choose one with more cores. – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/8.png)
 
 #### **2. Select "Pay-as-you-go", choose "Miniconda/conda3/3.8(ubuntu20.04)/11.8" for the base mirroring, and click "Create Now".**
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/9.png)
+![2. Select "Pay-as-you-go", choose "Miniconda/conda3/3.8ubuntu20.04/11.8" for the base mirroring, and click "Create Now". – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/9.png)
 
 #### **3. Click "JupyterLab" to enter the control interface and open the terminal**
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/10.png)
+![3. Click "JupyterLab" to enter the control interface and open the terminal – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/10.png)
 
 #### **4. Initialize the conda environment**
 
@@ -804,7 +804,7 @@ conda activate base
 conda init
 ```
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/11.png)
+![4. Initialize the conda environment – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/11.png)
 
 #### **5. Close this terminal, open a new terminal **
 
@@ -814,7 +814,7 @@ Reference https://www.autodl.com/docs/network_turbo/
 source /etc/network_turbo
 ```
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/12.png)
+![5. Close this terminal, open a new terminal – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/12.png)
 
 #### **6. Create the lerobot environment**
 
@@ -850,7 +850,7 @@ There are two scenarios, one is**when the dataset has been uploaded to the Huggi
 
 **① If the dataset has been uploaded to the Hugging Face database during Data Acquisition, it can be obtained via the key obtained by configuring the Hugging Face database.**
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/13.png)
+![8. Import the dataset into the cloud server – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/13.png)
 
 ```Plain Text
 huggingface-cli login --token ${HUGGINGFACE_TOKEN} --add-to-git-credential
@@ -864,7 +864,7 @@ HF_USER=$(huggingface-cli whoami | head -n 1)
 echo $HF_USER
 ```
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/14.png)
+![8. Import the dataset into the cloud server – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/14.png)
 
 ```Plain Text
 export HYDRA_FULL_ERROR=1
@@ -884,29 +884,29 @@ filezilla
 
 Open FileZilla, click "File", select "Site Manager", create a "New Site", and select "SFTP Protocol" 
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/15.png)
+![8. Import the dataset into the cloud server – 3](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/15.png)
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/16.png)
+![8. Import the dataset into the cloud server – 4](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/16.png)
 
 Return to AutoDL Computing Power Cloud, copy the "Login Command", paste it somewhere convenient for viewing, copy and paste the corresponding information into it, and click "Connect" 
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/17.png)
+![8. Import the dataset into the cloud server – 5](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/17.png)
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/18.png)
+![8. Import the dataset into the cloud server – 6](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/18.png)
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/19.png)
+![8. Import the dataset into the cloud server – 7](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/19.png)
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/20.png)
+![8. Import the dataset into the cloud server – 8](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/20.png)
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/21.png)
+![8. Import the dataset into the cloud server – 9](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/21.png)
 
 Create a data folder under the lerobot directory of the cloud server
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/22.png)
+![8. Import the dataset into the cloud server – 10](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/22.png)
 
 Drag the dataset folder to the right for transfer and wait for the transfer to complete 
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/23.png)
+![8. Import the dataset into the cloud server – 11](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/23.png)
 
 #### 9. Dataset Training
 
@@ -916,7 +916,7 @@ Refer to [E. Dataset Training and Evaluation ](https://juxitech.feishu.cn/docx/P
 
 After training is completed, export the trained model corresponding to the train directory 
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/24.png)
+![10. Model File Export – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/24.png)
 
 ## G .  Frequently Asked Questions 
 
@@ -975,7 +975,7 @@ No valid stream found in input file. Is -1 of the desired media type?
 
 Please install ffmpeg7.1.1,`conda install ffmpeg=7.1.1 -c conda-forge`。
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/25.png)
+![G .  Frequently Asked Questions – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/25.png)
 
 - If you encounter 
 
@@ -1029,7 +1029,7 @@ For debugging, any Windows PC can program, debug, or test the servo via USB conn
 
 Select the Port Number, set the Baud Rate to1000000, open it, and click "Search"
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/26.png)
+![Windows Find Servo Feite Servo Host Debugging Software – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/26.png)
 
 
 
@@ -1047,11 +1047,11 @@ https://bambot.org/feetech.js?lang=zh
 
 1. Enter 0 or 1 based on the servo model, then click "Connect".
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/27.png)
+![Set Servo ID and Median Calibration on the Web – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/27.png)
 
 2. Scan the servos with IDs 1 to 6, and the corresponding ID servo can be confirmed based on the FOUND in the scan results. For example, servo ID 1 in the picture has been scanned.
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/28.png)
+![Set Servo ID and Median Calibration on the Web – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/28.png)
 
 3. ID Setting and Median Calibration
 
@@ -1065,7 +1065,7 @@ STS Servo: Enter 2047 in "Position Control" and click "Set"
 
 SCS Servo: Enter 511 in "Position Control" and click "Set". 
 
-![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/29.png)
+![Set Servo ID and Median Calibration on the Web – 3](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/29.png)
 
 
 

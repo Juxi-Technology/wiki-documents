@@ -11,7 +11,7 @@ This tutorial takes the Jetson Orin NX motherboard as an example.
 
 Connect the IMU attitude sensor to the USB port of the main controller via a Type-C cable. 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZTkxN2M3NTQyODhjYWNkYmM2ZWE2YWUzZDBiY2RlZTZfYjY2MGZiOGIyMzA3M2Y0M2NhMzIzNzliMWZiMzFjNDBfSUQ6NzYzODkzMDc1NzMyMjk1MTYyNV8xNzgwMzE4NDQ0OjE3ODA0MDQ4NDRfVjM)
+![1. Connect the device – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZTkxN2M3NTQyODhjYWNkYmM2ZWE2YWUzZDBiY2RlZTZfYjY2MGZiOGIyMzA3M2Y0M2NhMzIzNzliMWZiMzFjNDBfSUQ6NzYzODkzMDc1NzMyMjk1MTYyNV8xNzgwMzE4NDQ0OjE3ODA0MDQ4NDRfVjM)
 
 ## 2. Check device status
 
@@ -27,7 +27,7 @@ View Device Number
 ls -l /dev/ttyU*
 ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTRiZmM1MjRkOWQ3YWQwMjNmMWZjYmYwYmRhMzQwYzBfZmZjYzI1MjRmM2Q2N2M5Y2RjNTM1ZDNhMjA3ZWI5ZDNfSUQ6NzYzODkzMDc1NTAzNzU0NzQ4Nl8xNzgwMzE4NDQ0OjE3ODA0MDQ4NDRfVjM)
+![2. Check device status – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTRiZmM1MjRkOWQ3YWQwMjNmMWZjYmYwYmRhMzQwYzBfZmZjYzI1MjRmM2Q2N2M5Y2RjNTM1ZDNhMjA3ZWI5ZDNfSUQ6NzYzODkzMDc1NTAzNzU0NzQ4Nl8xNzgwMzE4NDQ0OjE3ODA0MDQ4NDRfVjM)
 
 Set Port Mapping
 
@@ -77,7 +77,7 @@ Friends who are not yet familiar with using MobaXterm to transfer files, please 
 
 Drag the extracted files onto Jetson via MobaXterm software. 
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTA2ZTg2MWU3YjQ1NDJmY2E2MGM2MWM2MjVlMjQ4N2RfNTQ3YTFiMzMxODQxNzVmMDE0YTk0OGZlZmUyZjg1MWFfSUQ6NzYzODkzMDc1ODIyMDEyMzA3Ml8xNzgwMzE4NDQ0OjE3ODA0MDQ4NDRfVjM)
+![3. Install the driver library – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTA2ZTg2MWU3YjQ1NDJmY2E2MGM2MWM2MjVlMjQ4N2RfNTQ3YTFiMzMxODQxNzVmMDE0YTk0OGZlZmUyZjg1MWFfSUQ6NzYzODkzMDc1ODIyMDEyMzA3Ml8xNzgwMzE4NDQ0OjE3ODA0MDQ4NDRfVjM)
 
 ## 4. View IMU data
 
@@ -90,7 +90,7 @@ cd ~/IMU_ROS2/IMU_Library
 python3 -m IMU_Library.IMU_Serial_Library
 ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=N2U1YWFlNDUyODgzYTI4OTY4YzY0ZDczMmQxNzFhZTFfMjQwZGUwNGQ3YTNmMDQ5YzVhMTIyZDMxNDM0OTY2MDdfSUQ6NzYzODkzMDc1NzI3MjUzODA3Ml8xNzgwMzE4NDQ0OjE3ODA0MDQ4NDRfVjM)
+![4. View IMU data – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=N2U1YWFlNDUyODgzYTI4OTY4YzY0ZDczMmQxNzFhZTFfMjQwZGUwNGQ3YTNmMDQ5YzVhMTIyZDMxNDM0OTY2MDdfSUQ6NzYzODkzMDc1NzI3MjUzODA3Ml8xNzgwMzE4NDQ0OjE3ODA0MDQ4NDRfVjM)
 
 Note: The above is the data reading for a 10-axis IMU. The 6-axis has no Magnetometer and Barometer data, and the 9-axis has no Barometer data.
 
@@ -115,7 +115,7 @@ python3 -m IMU_Library.imu_calibration_tool --mode serial --port /dev/imu-serial
 python3 -m IMU_Library.imu_calibration_tool --mode serial --port /dev/imu-serial --calibrate temp
 ```
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTlhYzY2ZjJhNzQ4NzUxMTE3MDBjOWJmMjA5MWNlZTNfNDM0YzY1ZmExMjFiNWQ1ZTVlZDc1ZDAyNzQyZjE5NzdfSUQ6NzYzODkzMDc1NjY2ODY3Mjk2OV8xNzgwMzE4NDQ0OjE3ODA0MDQ4NDRfVjM)
+![5. IMU Calibration – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTlhYzY2ZjJhNzQ4NzUxMTE3MDBjOWJmMjA5MWNlZTNfNDM0YzY1ZmExMjFiNWQ1ZTVlZDc1ZDAyNzQyZjE5NzdfSUQ6NzYzODkzMDc1NjY2ODY3Mjk2OV8xNzgwMzE4NDQ0OjE3ODA0MDQ4NDRfVjM)
 
 ## 6. Precautions
 

@@ -70,7 +70,7 @@ logo: '/logo.png'
 
 ### 使用方式
 ```markdown
-![Image](./images/TutorialName/1.png)
+![使用方式 – 1](./images/TutorialName/1.png)
 ```
 
 ---

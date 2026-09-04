@@ -51,25 +51,25 @@ speaker-test -c 2 -D plughw:X,0
 
 1. Avant d'insérer la carte son USB, afficher les périphériques USB avec `lsusb` :
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
+![1. Brancher la carte son USB – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
 
 2. Insérer la carte son USB puis relancer `lsusb` : le périphérique supplémentaire est la carte son USB :
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
+![1. Brancher la carte son USB – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
 
 3. `arecord -l` liste tous les périphériques d'enregistrement ; notre carte son USB y figure :
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
+![1. Brancher la carte son USB – 3](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
 
 4. `aplay -l` liste tous les périphériques de lecture :
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
+![1. Brancher la carte son USB – 4](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
 ### 2. Utiliser la carte son USB
 
 Si `arecord -l` affiche par exemple UACDemoV1.0, c'est notre carte son. Pour card 0 ; device 0, remplacer dans la commande par plughw:0,0 afin de désigner ce périphérique d'enregistrement :
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/4.png)
+![2. Utiliser la carte son USB – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/4.png)
 
 Exécuter la commande d'enregistrement native de Linux pour tester un enregistrement de 5 secondes :
 
@@ -88,11 +88,11 @@ Exécuter la commande d'enregistrement native de Linux pour tester un enregistre
 
 Si le son est trop faible, utiliser `alsamixer` et appuyer sur `F6` pour sélectionner la carte son USB :
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/5.png)
+![2. Utiliser la carte son USB – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/5.png)
 
 Puis appuyer sur `F5` pour afficher les périphériques d'enregistrement et de lecture. Augmenter le volume d'enregistrement avec la flèche haut. PCM = lecture, CAPTURE MIC = enregistrement :
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/6.png)
+![2. Utiliser la carte son USB – 3](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/6.png)
 
 Ensuite, lire avec la commande `aplay` :
 
@@ -112,13 +112,13 @@ Explication des paramètres :
 
 ## Affichage visuel avec PulseAudio
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/7.png)
+![Affichage visuel avec PulseAudio – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/7.png)
 
 Vérifier PulseAudio en [ligne de commande](https://so.csdn.net/so/search?q=%E5%91%BD%E4%BB%A4%E8%A1%8C&spm=1001.2101.3001.7020) :
 
 `pactl list sources short`            # Liste toutes les sources audio disponibles du serveur PulseAudio
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/8.png)
+![Affichage visuel avec PulseAudio – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/8.png)
 
 > 49 = index de la source
 >
@@ -144,7 +144,7 @@ Chercher vous-même des exemples, par exemple « [Python调用USB免驱声卡](h
 
 1. Périphérique occupé
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/9.png)
+![Jetson – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/9.png)
 
 Fermer la page de paramètres et réexécuter la commande
 
@@ -156,11 +156,11 @@ Voir quel processus occupe le périphérique audio :
 
 Avant de brancher la carte son :
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
+![Jetson – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
 
 Après avoir branché la carte son :
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
+![Jetson – 3](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
 
 Tuer le processus `kill -9 PID` ; PID = celui apparu après le branchement (33739 sur la capture)
 
@@ -249,11 +249,11 @@ Ces vérifications confirment : la carte son 0 est la carte son embarquée ; les
 
 Si le son est trop faible, utiliser `alsamixer` et appuyer sur `F6` pour sélectionner la carte son USB :
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
+![Enregistrer 5 secondes de son pour tester – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
 
 Puis appuyer sur `F5` pour afficher les périphériques d'enregistrement et de lecture. Augmenter le volume d'enregistrement avec la flèche haut. PCM = lecture, CAPTURE MIC = enregistrement :
 
-![](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
+![Enregistrer 5 secondes de son pour tester – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
 Ensuite, lire avec la commande `aplay` :
 

@@ -11,9 +11,9 @@ description: "本次例程使用的是Arduino Nano開發板，一臺windows電�
 
 ## 1.連接設備
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NmY0NWI1YWQ4NGYxYWIzNDk5MTU2YmNmMzI5NDM0OTZfZTU2OWM2YTc5N2IzMDA2OTY5YzdiMDk4OWQ0NWQyMGJfSUQ6NzYzODk2NjUxNTk1NzY4MTExMl8xNzgwNDA0MzE3OjE3ODA0OTA3MTdfVjM)
+![1.連接設備 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NmY0NWI1YWQ4NGYxYWIzNDk5MTU2YmNmMzI5NDM0OTZfZTU2OWM2YTc5N2IzMDA2OTY5YzdiMDk4OWQ0NWQyMGJfSUQ6NzYzODk2NjUxNTk1NzY4MTExMl8xNzgwNDA0MzE3OjE3ODA0OTA3MTdfVjM)
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZTJmNDRjOGI0OGNjOTUzMjU4M2VjOTFlYjA3MmM3MDRfZmM4NDA3MTk5YTY2MWJjMThmNDM5ZDVmODIyNWJkMmVfSUQ6NzYzODk2NjUxMzM4NzAxNTEzOV8xNzgwNDA0MzE3OjE3ODA0OTA3MTdfVjM)
+![1.連接設備 – 2](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZTJmNDRjOGI0OGNjOTUzMjU4M2VjOTFlYjA3MmM3MDRfZmM4NDA3MTk5YTY2MWJjMThmNDM5ZDVmODIyNWJkMmVfSUQ6NzYzODk2NjUxMzM4NzAxNTEzOV8xNzgwNDA0MzE3OjE3ODA0OTA3MTdfVjM)
 
 ## 2.關鍵代碼解析
 
@@ -141,7 +141,7 @@ IMU_I2C_ReadBarometer():讀取氣壓相關數據：高度、溫度、氣壓、�
 
 程序下載進入Arduino後，打開串口助手（配置參數如下圖所示），可以看到一直打印IMU模塊的數據，當我們改變IMU模塊的姿態，數據會發生變化。
 
-![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Njc0NDdjNWNjYTU5YTAxYTJkMDQ2YmQ1YjQ5ZWM3ZGNfODNmZTE3Y2U5MGY0ZWQ4NzE1MzA1OGI3NTE5MTkxNWJfSUQ6NzYzODk2NjUxNjE2MzI1MTE2MV8xNzgwNDA0MzE3OjE3ODA0OTA3MTdfVjM)
+![3.讀取imu數據 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Njc0NDdjNWNjYTU5YTAxYTJkMDQ2YmQ1YjQ5ZWM3ZGNfODNmZTE3Y2U5MGY0ZWQ4NzE1MzA1OGI3NTE5MTkxNWJfSUQ6NzYzODk2NjUxNjE2MzI1MTE2MV8xNzgwNDA0MzE3OjE3ODA0OTA3MTdfVjM)
 
 注意：以上爲10軸IMU的數據讀取，6軸無磁力計（Magnetometer）與氣壓計（Barometer）數據，9軸無氣壓計（Barometer）數據。
 
