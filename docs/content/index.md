@@ -30,7 +30,7 @@ outline: false
 
 ## Product Series
 
-<div class="category-grid">
+<div class="category-grid reveal">
   <a :href="withBase('/tutorials/robot-arms/')" class="category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="Robot Arms">
     <span>Robot Arms</span>
@@ -45,30 +45,10 @@ outline: false
   </a>
 </div>
 
-## Latest Documents
-
-<div class="card-grid">
-  <a :href="withBase('/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial')" class="card">
-    <img :src="withBase('/images/home-cards/SO-ARM101.png')" alt="SO-ARM101-Tutorial">
-    <span>SO-ARM101-Tutorial</span>
-  </a>
-  <a :href="withBase('/tutorials/accessories/KWS-speech-recognition-module/index')" class="card">
-    <img :src="withBase('/images/home-cards/AI_SoundCard.png')" alt="KWS Speech Recognition Module Series">
-    <span>KWS Speech Recognition Module Series</span>
-  </a>
-  <a :href="withBase('/tutorials/sensors/imu/index')" class="card">
-    <img :src="withBase('/images/home-cards/IMU.png')" alt="IMU Inertial Navigation Module">
-    <span>IMU Inertial Navigation Module</span>
-  </a>
-  <a :href="withBase('/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control')" class="card">
-    <img :src="withBase('/images/home-cards/AmazingHand.png')" alt="AmazingHand-Interface-Control">
-    <span>AmazingHand-Interface-Control</span>
-  </a>
-</div>
-
+<HomeLatestDocs />
 ## Browse Categories
 
-<div class="category-grid">
+<div class="category-grid reveal">
   <a :href="withBase('/tutorials/robot-arms/')" class="category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="Robot Arm Series">
     <span>Robot Arm Series</span>
@@ -92,6 +72,8 @@ Thank you for choosing our products! We offer multiple support methods to ensure
 - 📧 Business: sales@juxitech.com
 - 📺 Bilibili: [https://space.bilibili.com/3546906737248821](https://space.bilibili.com/3546906737248821)
 
+
+<CommunityStrip />
 <script setup>
 import { withBase } from 'vitepress'
 import { computed } from 'vue'

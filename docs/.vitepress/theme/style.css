@@ -66,3 +66,156 @@
     white-space: nowrap;
   }
 }
+
+/* ============================================
+   首页/全局增强(2026-09)
+   ============================================ */
+
+/* ---- 卡片 hover 力反馈(首页文档卡/分类卡) ---- */
+.card,
+.category-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover,
+.category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.14);
+}
+
+.card img,
+.category-card img {
+  transition: transform 0.35s ease;
+}
+
+.card:hover img,
+.category-card:hover img {
+  transform: scale(1.05);
+}
+
+/* ---- 区块滚动渐入(首页各 section) ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.reveal.in {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---- 文档页阅读进度条 ---- */
+#reading-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: var(--vp-c-brand);
+  z-index: 1000;
+  pointer-events: none;
+  transition: width 0.1s linear;
+}
+
+/* ---- 图片灯箱(正文图点击放大,DOM 由 effects.ts 创建) ---- */
+#image-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.82);
+  backdrop-filter: blur(4px);
+}
+
+#image-lightbox.open {
+  display: flex;
+}
+
+#image-lightbox .lb-figure {
+  margin: 0;
+  max-width: 92vw;
+  max-height: 86vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#image-lightbox .lb-figure img {
+  max-width: 92vw;
+  max-height: 78vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+#image-lightbox .lb-figure figcaption {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 13px;
+  display: flex;
+  gap: 12px;
+}
+
+#image-lightbox .lb-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#image-lightbox .lb-close:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+#image-lightbox .lb-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 72px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 34px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#image-lightbox .lb-nav:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+#image-lightbox .lb-prev { left: 12px; }
+
+#image-lightbox .lb-next { right: 12px; }
+
+/* ---- 减少动效偏好:全部停用 ---- */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .card,
+  .category-card,
+  .card img,
+  .category-card img {
+    transition: none;
+  }
+
+  #reading-bar {
+    transition: none;
+  }
+}

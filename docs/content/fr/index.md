@@ -30,7 +30,7 @@ outline: false
 
 ## Gammes de produits
 
-<div class="category-grid">
+<div class="category-grid reveal">
   <a :href="withBase('/fr/products/so-arm101')" class="category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="Bras robotiques">
     <span>Bras robotiques</span>
@@ -45,6 +45,10 @@ outline: false
   </a>
 </div>
 
+<HomeLatestDocs />
+
+
+<CommunityStrip />
 <script setup>
 import { withBase } from 'vitepress'
 import { computed } from 'vue'

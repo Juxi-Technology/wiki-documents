@@ -30,7 +30,7 @@ outline: false
 
 ## 제품 시리즈
 
-<div class="category-grid">
+<div class="category-grid reveal">
   <a :href="withBase('/ko/products/so-arm101')" class="category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="로봇 암">
     <span>로봇 암</span>
@@ -45,6 +45,10 @@ outline: false
   </a>
 </div>
 
+<HomeLatestDocs />
+
+
+<CommunityStrip />
 <script setup>
 import { withBase } from 'vitepress'
 import { computed } from 'vue'

@@ -19,6 +19,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # 全量 git 历史:首页卡片"最后更新日期"取自 git 时间,
+          # fetch-depth 1 会让 CI 里全部变为构建日
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 20

@@ -31,7 +31,7 @@ outline: false
 
 ## 產品系列
 
-<div class="category-grid">
+<div class="category-grid reveal">
   <a :href="withBase('/zh-hant/tutorials/robot-arms/')" class="category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="機械臂系列">
     <span>機械臂系列</span>
@@ -46,30 +46,11 @@ outline: false
   </a>
 </div>
 
-## 最新文件
-
-<div class="card-grid">
-  <a :href="withBase('/zh-hant/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial')" class="card">
-    <img :src="withBase('/images/home-cards/SO-ARM101.png')" alt="SO-ARM101-使用教程">
-    <span>SO-ARM101-使用教程</span>
-  </a>
-  <a :href="withBase('/zh-hant/tutorials/accessories/KWS-speech-recognition-module/index')" class="card">
-    <img :src="withBase('/images/home-cards/AI_SoundCard.png')" alt="KWS語音識別模組-系列教程">
-    <span>KWS語音識別模組-系列教程</span>
-  </a>
-  <a :href="withBase('/zh-hant/tutorials/sensors/imu/index')" class="card">
-    <img :src="withBase('/images/home-cards/IMU.png')" alt="IMU慣性導航模組">
-    <span>IMU慣性導航模組</span>
-  </a>
-  <a :href="withBase('/zh-hant/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control')" class="card">
-    <img :src="withBase('/images/home-cards/AmazingHand.png')" alt="AmazingHand-界面控制教程">
-    <span>AmazingHand-界面控制教程</span>
-  </a>
-</div>
+<HomeLatestDocs />
 
 ## 瀏覽分類
 
-<div class="category-grid">
+<div class="category-grid reveal">
   <a :href="withBase('/zh-hant/tutorials/robot-arms/')" class="category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="機器人機械臂系列">
     <span>機器人機械臂系列</span>
@@ -93,6 +74,8 @@ outline: false
 - 📧 商務合作：sales@juxitech.com
 - 📺 B站：[https://space.bilibili.com/3546906737248821](https://space.bilibili.com/3546906737248821)
 
+
+<CommunityStrip />
 <script setup>
 import { withBase } from 'vitepress'
 import { computed } from 'vue'
