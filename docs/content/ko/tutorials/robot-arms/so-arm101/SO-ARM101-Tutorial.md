@@ -913,3 +913,43 @@ File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'
 ```
 
 --robot.cameras 파라미터의 front, side 등 키워드가 데이터 수집 시와 정확히 일치하는지 확인하세요.
+
+## Windows에서 서보 찾기(Feetech 서보 상위 프로그램 디버깅 소프트웨어)
+
+디버깅을 위해 모든 Windows PC에서 USB 연결로 서보를 프로그래밍, 디버깅 또는 테스트할 수 있습니다. 이를 위해 [Feetech 소프트웨어](https://www.feetechrc.com/software.html)를 다운로드하세요. Ubuntu 시스템에서는 [FT_SCServo_Debug_Qt 도구](https://github.com/Kotakku/FT_SCServo_Debug_Qt)를 사용할 수 있습니다.
+
+[fddebug-master.zip]
+
+포트 번호를 선택하고, 보드레이트를 1000000으로 설정한 뒤 열고 "Search"를 클릭합니다
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/26.png)
+
+## ROS2 시뮬레이션 제어(독립적으로 구현 가능)
+
+https://github.com/holmsslk/so-arm-moveit-hardware
+
+## 웹에서 서보 ID 설정 및 중앙값 캘리브레이션
+
+https://bambot.org/feetech.js?lang=zh
+
+1. 서보 모델에 따라 0 또는 1을 입력한 후 "Connect"를 클릭합니다.
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/27.png)
+
+2. ID 1~6 서보를 스캔하면, 스캔 결과의 FOUND를 통해 해당 ID 서보를 확인할 수 있습니다. 예: 사진의 서보 ID 1이 스캔되었습니다.
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/28.png)
+
+3. ID 설정 및 중앙값 캘리브레이션
+
+① 현재 서보 ID 입력란에는 스캔된 서보의 ID를 입력합니다
+
+② "ID 관리"에 숫자를 입력하고 "Change ID"를 클릭하여 ID를 설정합니다
+
+③ 중앙값 캘리브레이션(STS3215 서보의 중앙값은 2047, SCS0009 서보는 511)
+
+STS 서보: "Position Control"에 2047을 입력하고 "Set" 클릭
+
+SCS 서보: "Position Control"에 511을 입력하고 "Set" 클릭.
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/29.png)

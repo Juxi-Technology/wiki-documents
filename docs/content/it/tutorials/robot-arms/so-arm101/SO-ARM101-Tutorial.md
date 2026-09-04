@@ -909,3 +909,43 @@ Eliminare la cartella `eval_` e rilanciare.
 ```
 
 Le chiavi (front, side ...) di `--robot.cameras` devono corrispondere esattamente alla raccolta.
+
+## Trovare il servo su Windows (software host di debug Feetech)
+
+Per il debug, qualsiasi PC Windows può programmare, eseguire il debug o testare il servo via USB. A tal fine, scaricare il [software Feetech](https://www.feetechrc.com/software.html). Per i sistemi Ubuntu è possibile usare il [tool FT_SCServo_Debug_Qt](https://github.com/Kotakku/FT_SCServo_Debug_Qt).
+
+[fddebug-master.zip]
+
+Selezionare il numero di porta, impostare il baud rate su 1000000, aprirla e fare clic su "Search"
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/26.png)
+
+## Controllo di simulazione ROS2 (implementabile in modo indipendente)
+
+https://github.com/holmsslk/so-arm-moveit-hardware
+
+## Impostare ID servo e calibrazione mediana sul web
+
+https://bambot.org/feetech.js?lang=zh
+
+1. Inserire 0 o 1 in base al modello di servo, quindi fare clic su "Connect".
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/27.png)
+
+2. Scansionare i servo con ID da 1 a 6; l'ID corrispondente si conferma tramite FOUND nei risultati della scansione. Esempio: il servo ID 1 nell'immagine è stato scansionato.
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/28.png)
+
+3. Impostazione ID e calibrazione mediana
+
+① Il campo ID servo corrente richiede l'ID del servo scansionato
+
+② Inserire un numero in "Gestione ID" e fare clic su "Change ID" per impostare l'ID
+
+③ Calibrazione mediana (il valore mediano del servo STS3215 è 2047, quello del SCS0009 è 511)
+
+Servo STS: inserire 2047 in "Position Control" e fare clic su "Set"
+
+Servo SCS: inserire 511 in "Position Control" e fare clic su "Set".
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/29.png)

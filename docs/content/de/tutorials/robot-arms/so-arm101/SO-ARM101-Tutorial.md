@@ -909,3 +909,43 @@ Den `eval_`-Ordner löschen und erneut starten.
 ```
 
 Die Schlüssel (front, side ...) in `--robot.cameras` müssen exakt mit der Aufnahme übereinstimmen.
+
+## Servo unter Windows finden (Feetech-Servo-Hostsoftware)
+
+Zum Debuggen kann jeder Windows-PC den Servo per USB programmieren, debuggen oder testen. Dazu die [Feetech-Software](https://www.feetechrc.com/software.html) herunterladen. Für Ubuntu-Systeme kann das [FT_SCServo_Debug_Qt-Tool](https://github.com/Kotakku/FT_SCServo_Debug_Qt) verwendet werden.
+
+[fddebug-master.zip]
+
+Portnummer auswählen, Baudrate auf 1000000 setzen, öffnen und „Search" klicken
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/26.png)
+
+## ROS2-Simulationssteuerung (kann unabhängig umgesetzt werden)
+
+https://github.com/holmsslk/so-arm-moveit-hardware
+
+## Servo-ID und Mittelkalibrierung im Web einstellen
+
+https://bambot.org/feetech.js?lang=zh
+
+1. Je nach Servomodell 0 oder 1 eingeben, dann „Connect" klicken.
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/27.png)
+
+2. Die Servos mit den IDs 1 bis 6 scannen; die zugehörige ID lässt sich anhand von FOUND im Scanergebnis bestätigen. Beispiel: Servo-ID 1 im Bild wurde gescannt.
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/28.png)
+
+3. ID-Einstellung und Mittelkalibrierung
+
+① Die aktuelle Servo-ID-Eingabe ist die ID des gescannten Servos
+
+② In „ID-Verwaltung" eine Zahl eingeben und „Change ID" klicken, um die ID zu setzen
+
+③ Mittelkalibrierung (Mittelwert des STS3215-Servos ist 2047, der des SCS0009-Servos ist 511)
+
+STS-Servo: 2047 in „Position Control" eingeben und „Set" klicken
+
+SCS-Servo: 511 in „Position Control" eingeben und „Set" klicken.
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/29.png)

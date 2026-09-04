@@ -913,3 +913,43 @@ File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'
 ```
 
 --robot.cameras パラメータの front や side などのキーワードがデータ収集時と厳密に一致していることを確認してください。
+
+## Windows でのサーボ検出（飛特サーボ上位機デバッグソフトウェア）
+
+デバッグ用に、任意の Windows PC で USB 接続によるサーボのプログラミング・デバッグ・テストが可能です。そのためには [Feetech ソフトウェア](https://www.feetechrc.com/software.html) をダウンロードしてください。Ubuntu システムでは [FT_SCServo_Debug_Qt ツール](https://github.com/Kotakku/FT_SCServo_Debug_Qt) を使用できます。
+
+[fddebug-master.zip]
+
+ポート番号を選択し、ボーレートを 1000000 に設定して開き、「Search」をクリックします
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/26.png)
+
+## ROS2 シミュレーション制御（別途実装可能）
+
+https://github.com/holmsslk/so-arm-moveit-hardware
+
+## ウェブ上でサーボ ID を設定し中位キャリブレーションを行う
+
+https://bambot.org/feetech.js?lang=zh
+
+1. サーボモデルに応じて 0 または 1 を入力し、「Connect」をクリックします。
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/27.png)
+
+2. ID 1〜6 のサーボをスキャンし、スキャン結果の FOUND から対応する ID を確認できます。例: 画像のサーボ ID 1 がスキャン済みです。
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/28.png)
+
+3. ID 設定と中位キャリブレーション
+
+① 現在のサーボ ID 入力欄には、スキャンされたサーボの ID を入力します
+
+② 「ID 管理」に数値を入力し、「Change ID」をクリックして ID を設定します
+
+③ 中位キャリブレーション（STS3215 サーボの中位値は 2047、SCS0009 サーボは 511）
+
+STS サーボ: 「Position Control」に 2047 を入力し「Set」をクリック
+
+SCS サーボ: 「Position Control」に 511 を入力し「Set」をクリックします。
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/29.png)

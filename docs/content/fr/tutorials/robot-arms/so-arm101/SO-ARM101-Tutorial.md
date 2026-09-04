@@ -909,3 +909,43 @@ Supprimer le dossier `eval_` et relancer.
 ```
 
 Les clés (front, side ...) de `--robot.cameras` doivent correspondre exactement à la collecte.
+
+## Trouver le servo sous Windows (logiciel de débogage hôte Feetech)
+
+Pour le débogage, n'importe quel PC Windows peut programmer, déboguer ou tester le servo via USB. Pour cela, téléchargez le [logiciel Feetech](https://www.feetechrc.com/software.html). Pour les systèmes Ubuntu, utilisez l'[outil FT_SCServo_Debug_Qt](https://github.com/Kotakku/FT_SCServo_Debug_Qt).
+
+[fddebug-master.zip]
+
+Sélectionner le numéro de port, régler la vitesse en bauds sur 1000000, ouvrir, puis cliquer sur « Search »
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/26.png)
+
+## Contrôle par simulation ROS2 (peut être implémenté indépendamment)
+
+https://github.com/holmsslk/so-arm-moveit-hardware
+
+## Définir l'ID du servo et la calibration médiane sur le web
+
+https://bambot.org/feetech.js?lang=zh
+
+1. Saisir 0 ou 1 selon le modèle du servo, puis cliquer sur « Connect ».
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/27.png)
+
+2. Scanner les servos avec les IDs 1 à 6 ; l'ID correspondant se confirme via FOUND dans les résultats du scan. Exemple : le servo ID 1 de l'image a été scanné.
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/28.png)
+
+3. Définition de l'ID et calibration médiane
+
+① Le champ ID de servo actuel attend l'ID du servo scanné
+
+② Saisir un nombre dans « Gestion des ID », cliquer sur « Change ID » pour définir l'ID
+
+③ Calibration médiane (la valeur médiane du servo STS3215 est 2047, celle du SCS0009 est 511)
+
+Servo STS : saisir 2047 dans « Position Control » et cliquer sur « Set »
+
+Servo SCS : saisir 511 dans « Position Control » et cliquer sur « Set ».
+
+![Image](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/29.png)
