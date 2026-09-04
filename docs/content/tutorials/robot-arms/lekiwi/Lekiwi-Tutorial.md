@@ -160,6 +160,16 @@ cd ~/lerobot && pip install --no-binary=av -e ".[feetech]"
 pip install *-e* ".[lekiwi]"
 ```
 
+### 7. Set the connection time
+
+Find `config_lekiwi.py` under the `lerobot\src\lerobot\robots\lekiwi` directory
+
+connection_time_s: int = 7200 # 也就是2小时
+
+![](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
+
+
+
 ## C. Install LeRobot on a laptop
 
 If you have already installed LeRobot on your laptop, you can skip this step; otherwise, please follow the same steps as we did on the Raspberry Pi ** to proceed **. 

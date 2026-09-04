@@ -30,12 +30,9 @@ git clone https://github.com/pollen-robotics/AmazingHand.git
 Windows の場合 Rust 環境変数の設定（重要！） 参考 https://zhuanlan.zhihu.com/p/1933164131969659101
 Linux の場合の環境変数設定：
 
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/1.png)
 
-
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/1.png)
-
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/10.png)
-
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/10.png)
 
 
 初回インストールに Visual Studio Installer が必要な場合があります
@@ -47,26 +44,31 @@ Linux の場合の環境変数設定：
 ```Bash
 [source.crates-io]
 replace-with = 'tuna'
+
 [source.tuna]
 registry = "https://mirrors.tuna.tsinghua.edu.cn/git/crates.io-index.git"
 ```
 
 **2、uv のインストール：**https://docs.astral.sh/uv/getting-started/installation/
+
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/11.png)
+
 Windows では Powershell ターミナルを開き、コピーしてこのコマンドを入力してインストールします
 **Linux の場合の環境変数設定：**
 
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/12.png)
 
 
 **3、dora-rs のインストール：**https://dora-rs.ai/docs/guides/Installation/installing を参照してダウンロード・インストール
 Linux の場合の環境変数設定：
 
-
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/13.png)
 
 ## 3.配線方法
 
 電源は最低 5V3A 必要です。外部のサーボドライバ基板を接続し、USB で PC に接続します
 
-
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/14.png)
 
 ## 4.サンプルデモ
 
@@ -74,7 +76,7 @@ Linux の場合の環境変数設定：
 
 - windows システムは通常 COM11。デバイスマネージャーまたは飛特サーボ上位機で サーボドライバ基板 のポート番号を確認できます
 
-
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/16.png)
 
 - Ubuntu、Linux システムは通常 /dev/ttyACM0
 コマンドラインでサーボドライバ基板のポートを確認：
@@ -90,47 +92,36 @@ sudo chmod 666 /dev/ttyACM*
 ```Plain Text
 sudo usermod -aG dialout $USER
 ```
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
-
 
 仮想マシン内で ls /dev/ttyUSB* /dev/ttyACM* がディレクトリを見つけられない場合は、仮想マシン右下のアイコンで灵巧手（ロボットハンド）が PC に接続されているかを確認してください。接続されている場合は切断し、仮想マシンに接続してください
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/19.png)
-
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
 
 
 ### **2、コード内のポート番号の変更**
 
 ①AmazingHand-main\Demo\AHControl\src ディレクトリの main.rs コードファイルをテキストで開き、自身のホストで確認したポート番号に変更します（windows は COM*、ubuntu、linux システムは通常 /dev/ttyACM*）
 
-
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/19.png)
 
 ②対応するインスタンスファイルを見つけます
 **右手灵巧手** AmazingHand-main\Demo ディレクトリの dataflow_tracking_real_right.yml
 **左手灵巧手** AmazingHand-main\Demo ディレクトリの dataflow_tracking_real_left.yml
 **両手灵巧手** AmazingHand-main\Demo ディレクトリの dataflow_tracking_real_2hands.yml
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
-
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/21.png)
-
 
 テキストで開き、自身のホストで確認したポート番号に変更します（windows は COM*、ubuntu、linux システムは通常 /dev/ttyACM*）
 
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/2.png)
 
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
 
-
-
-
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/21.png)
 
 ### **3、コードのデプロイ**
 
 - Demo フォルダを開きます
 
-
-
 - Windows システム はディレクトリで Powershell と入力し Enter で開きます
-
-
 
 - デーモンプロセスを起動します（毎回必要）：
 Linux システム は直接コンソールで開き、デーモンプロセスを起動します（毎回必要）：
@@ -146,6 +137,7 @@ uv venv --python 3.12
 - 仮想環境を有効化（毎回必要）システムに応じて入力・実行：
 ```Plain Text
 Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+
 .venv\Scripts\activate
 ```
 
@@ -153,7 +145,7 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 source .venv/bin/activate
 ```
 
-
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/3.png)
 
 コンソールが仮想環境を有効化していることを確認してください！
 
@@ -210,23 +202,23 @@ source .venv/bin/activate
 
 - シミュレーション環境のみでネットワークカメラのハンドトラッキングデモを実行：
 ```Plain Text
-dora build dataflow_tracking_simu.yml --uv   #（一度だけ実行）
+dora build dataflow_tracking_simu.yml --uv   *#(Execute only once)*
 ```
 
 ```Plain Text
 dora run dataflow_tracking_simu.yml --uv
 ```
 
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/4.png)
 
-
-
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/5.png)
 
 ### 実ハードウェアでの実行（ハンドトラッキング）
 
 - 実ハードウェアでネットワークカメラのハンドトラッキングデモを実行：
     #### 右手灵巧手
     ```Plain Text
-    dora build dataflow_tracking_real_right.yml --uv   #（一度だけ実行）
+    dora build dataflow_tracking_real_right.yml --uv   *#(Execute only once)*
     ```
 
     ```Plain Text
@@ -235,7 +227,7 @@ dora run dataflow_tracking_simu.yml --uv
 
     #### 左手灵巧手
     ```Plain Text
-    dora build dataflow_tracking_real_left.yml --uv   #（一度だけ実行）
+    dora build dataflow_tracking_real_left.yml --uv   *#(Execute only once)*
     ```
 
     ```Plain Text
@@ -244,42 +236,34 @@ dora run dataflow_tracking_simu.yml --uv
 
     #### 両手灵巧手（両方を1つのサーボドライバ基板に接続することに注意）
 
-
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/7.png)
-
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/8.png)
-
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/6.png)
 
     ```Plain Text
-    dora build dataflow_tracking_real_2hands.yml --uv   #（一度だけ実行）
+    dora build dataflow_tracking_real_2hands.yml --uv   *#(Execute only once)*
     ```
 
     ```Plain Text
     dora run dataflow_tracking_real_2hands.yml --uv
     ```
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/9.png)
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/7.png)
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/1.png)
-
-
-
-
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/8.png)
 
 ### 簡単なサンプルでシミュレーションの指角度を制御
 
 - シミュレーション内の指角度を制御する簡単なサンプルを実行します：
     ```Plain Text
-    dora build dataflow_angle_simu.yml --uv   #（一度だけ実行）
+    dora build dataflow_angle_simu.yml --uv   *#(Execute only once)*
     ```
 
     ```Plain Text
     dora run dataflow_angle_simu.yml --uv
     ```
 
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/9.png)
 
-
-
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/1.png)
 
 説明
 - [AHControl](https://github.com/pollen-robotics/AmazingHand/blob/main/Demo/AHControl)にはモーターを制御する dora-rs ノードと、モーター設定用のユーティリティツールが含まれています。
@@ -302,7 +286,7 @@ uv pip install mediapipe==0.10.14
 
 ### 2、Dora バージョン非互換、メッセージ形式（v0.7.0 vs v0.8.0）
 
-
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/10.png)
 
 答：①まず C ドライブユーザーディレクトリの .cargo/registry/src/github.xxxxxxxx/ で対応する依存パッケージのみを削除します！
 **`dora-message-0.7.0`**（最重要！旧バージョンのメッセージ形式フォルダ、必ず削除）
@@ -317,16 +301,14 @@ uv pip install mediapipe==0.10.14
 ③コンソールで AHControl ディレクトリに入り cargo build --release を再実行
 ④[実ハードウェアでの実行](https://juxitech.feishu.cn/wiki/ZpHmwYARQiN2fwkqFJecqUFZnQg?node-id=1759567650651511609&from=from_node_link)に従って再度 build
 実際のエラー内容に応じてバージョンを修正します。例：dora-message が 0.6.0 必要な場合は dora-node-api="0.4.0" dora-message="0.6.0" に変更
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
 
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/11.png)
 
-
-
-
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/12.png)
 
 ### 3、openCV 依存ライブラリがない
 
-
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/13.png)
 
 HandTracking ディレクトリで以下のコマンドを入力します
 ```Python
@@ -335,11 +317,11 @@ python -m pip install opencv-contrib-python numpy mediapipe -i https://mirrors.a
 
 ### 4、カメラ権限の有効化（PC側）
 
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/14.png)
 
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/16.png)
 
-
-
-
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
 
 ### 5、仮想マシン22.04からのカメラ呼び出し
 
@@ -351,11 +333,11 @@ https://blog.csdn.net/qq_19731521/article/details/124954288 を参照
 
 1.まず微調整角度ブラケットを固定します
 
-
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/19.png)
 
 2.側視環境カメラキット
 
-
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/2.png)
 
 ## 仮想マシン22.04 で直接ハンドトラッキングを実行
 
@@ -383,8 +365,6 @@ source .venv/bin/activate
 ```Bash
 ls /dev/ttyUSB* /dev/ttyACM*
 ```
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
-
 
 ```Plain Text
 sudo chmod 666 /dev/ttyACM*
@@ -397,11 +377,7 @@ sudo usermod -aG dialout $USER
 **4.コードファイルのポート番号を変更**
 ①AmazingHand-main\Demo\AHControl\src ディレクトリの main.rs コードファイルをテキストで開き、自身のホストで確認したポート番号に変更します（windows は COM*、ubuntu、linux システムは通常 /dev/ttyACM*）
 
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/3.png)
-
-![](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/4.png)
-
-
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
 
 ②対応するインスタンスファイルを見つけます
 **右手灵巧手** AmazingHand-main\Demo ディレクトリの dataflow_tracking_real_right.yml
@@ -410,11 +386,11 @@ sudo usermod -aG dialout $USER
 
 テキストで開き、自身のホストで確認したポート番号に変更します（windows は COM*、ubuntu、linux システムは通常 /dev/ttyACM*）
 
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/21.png)
 
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/3.png)
 
-
-
-
+![Image](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/4.png)
 
 **5.右手のハンドトラッキングを実行**
 ```Plain Text
