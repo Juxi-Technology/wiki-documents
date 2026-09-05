@@ -1,5 +1,6 @@
 ---
 title: Lekiwi 具身智能移動機器人
+category: robot
 description: 鉅犀科技 Lekiwi 具身智能移動機器人——低成本教學機械臂/移動底盤,舵機控制,教育與入門首選
 keywords: [lekiwi, 移動機器人, 教學機械臂, 教育機器人]
 ---

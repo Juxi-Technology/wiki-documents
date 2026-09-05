@@ -1,5 +1,6 @@
 ---
 title: Unità pan-tilt servo a 2 DOF
+category: accessory
 description: Unità pan-tilt di Juxi Technology — servo bus SCS0009, 180° orizzontale / 90° verticale, fotocamera 2MP, tracking visione AI
 keywords: [gimbal, pan-tilt, 2dof, tracking visione, scs0009]
 ---

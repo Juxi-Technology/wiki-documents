@@ -1,5 +1,6 @@
 ---
 title: SO-ARM101 개발 키트
+category: robot
 description: 鉅犀科技 SO-ARM101 양팔 로봇 개발 키트 — 6 DOF 오픈소스 로봇 팔, LeRobot 생태계, 원격 조작/모방 학습/AI 연구의 첫 번째 선택
 keywords: [so-arm101, 로봇 팔, leRobot, 원격 조작, 양팔 로봇]
 ---

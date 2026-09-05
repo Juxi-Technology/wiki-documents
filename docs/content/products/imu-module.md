@@ -1,5 +1,6 @@
 ---
 title: IMU High-Precision Inertial Module
+category: sensor
 description: Juxi Technology IMU module — 100Hz attitude, 6/9/10-axis options, IIC+UART, ROS integration
 keywords: [imu, inertial, attitude sensor, ahrs, ros]
 ---

@@ -1,5 +1,6 @@
 ---
 title: Fotocamera CSI IMX219 79°
+category: compute-vision
 description: Fotocamera CSI IMX219 79° di Juxi Technology — 8MP, interfaccia CSI nativa, FOV 77°, visione Jetson a bassa latenza
 keywords: [imx219, fotocamera csi, jetson, fotocamera]
 ---

@@ -1,5 +1,6 @@
 ---
 title: AmazingHand 開源 4 指靈巧手
+category: robot
 description: 鉅犀科技 AmazingHand 開源4 指靈巧手,TTL 總線控制,開源 CAD,具身智能與人機交互研究
 keywords: [amazinghand, 靈巧手, dexterous hand, 具身智能]
 ---

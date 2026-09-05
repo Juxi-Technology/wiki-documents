@@ -1,5 +1,6 @@
 ---
 title: Placa driver de servos de bus JUXI
+category: robot
 description: Placa driver JUXI de Juxi Technology — 253 servos en un bus, amplio rango de tensión 7–12.6V, Type-C plug-and-play, diseñada para LeRobot SO-ARM
 keywords: [driver de servos, placa driver, bus servo, leRobot, so-arm101]
 ---

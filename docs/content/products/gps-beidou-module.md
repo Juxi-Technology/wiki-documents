@@ -1,5 +1,6 @@
 ---
 title: GPS & BeiDou GNSS Positioning Module
+category: sensor
 description: Juxi Technology GPS & BeiDou GNSS module — ATGM336H-5N, four satellite systems, 2.5m accuracy, ROS ready
 keywords: [gps, beidou, gnss, positioning, ros]
 ---

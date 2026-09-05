@@ -1,5 +1,6 @@
 ---
 title: Carte son USB sans pilote
+category: accessory
 description: Carte son USB de Juxi Technology — micro + haut-parleur intégrés, plug-and-play, réduction de bruit, Raspberry Pi/Jetson/PC
 keywords: [carte son, usb audio, interaction vocale]
 ---

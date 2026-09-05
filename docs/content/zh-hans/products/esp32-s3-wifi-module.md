@@ -1,5 +1,6 @@
 ---
 title: ESP32-S3 WiFi 视频模块
+category: compute-vision
 description: 钜犀科技 ESP32-S3 WiFi 图传模块——200 万像素摄像头,WiFi 实时图传,AI 视觉识别(颜色/人脸/二维码),AP+STA 双模式
 keywords: [esp32, wifi, 图传, 摄像头, ai vision]
 ---

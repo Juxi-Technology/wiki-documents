@@ -1,5 +1,6 @@
 ---
 title: Scheda di acquisizione HDMI 4K
+category: accessory
 description: Acquisizione HDMI 4K di Juxi Technology — HDMI/Micro HDMI/DP, collegamento USB diretto, streaming e registrazione
 keywords: [hdmi capture, scheda di acquisizione, 4k, registrazione]
 ---

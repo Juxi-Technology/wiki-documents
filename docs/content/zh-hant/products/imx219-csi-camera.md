@@ -1,5 +1,6 @@
 ---
 title: 79° IMX219 CSI 攝像頭
+category: compute-vision
 description: 鉅犀科技 79° IMX219 CSI 攝像頭——800 萬像素原生 CSI 接口,77° FOV,NVIDIA Jetson 低延遲視覺
 keywords: [imx219, csi camera, jetson, 攝像頭]
 ---

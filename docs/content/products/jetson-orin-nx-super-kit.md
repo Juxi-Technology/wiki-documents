@@ -1,5 +1,6 @@
 ---
 title: Jetson Orin NX Super Developer Kit
+category: compute-vision
 description: Juxi Technology NVIDIA Jetson Orin NX SUPER dev kit — 117/157 TOPS edge AI platform, preinstalled Ubuntu 22.04 & 256GB NVMe SSD
 keywords: [jetson, orin nx, edge ai, edge computing, leRobot, robotics]
 ---

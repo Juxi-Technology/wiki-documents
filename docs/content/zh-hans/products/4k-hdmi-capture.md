@@ -1,5 +1,6 @@
 ---
 title: 4K HDMI 采集卡
+category: accessory
 description: 钜犀科技 4K HDMI 采集卡——4K 高清采集,HDMI/Micro HDMI/DP 多接口,USB 直连,采集直播录屏
 keywords: [hdmi capture, 采集卡, 4k, 录屏]
 ---

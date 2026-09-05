@@ -1,5 +1,6 @@
 ---
 title: KWS 语音交互模块
+category: accessory
 description: 钜犀科技 KWS 语音识别交互模块——中英文唤醒词识别,串口/RViz2 可视化,适配 Jetson/树莓派,固件开源
 keywords: [kws, 语音识别, 语音交互, 唤醒词, ai voice]
 ---

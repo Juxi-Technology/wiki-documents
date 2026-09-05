@@ -1,5 +1,6 @@
 ---
 title: 4K HDMI 캡처 카드
+category: accessory
 description: 鉅犀科技 4K HDMI 캡처 카드 — 4K 고화질 캡처, HDMI/Micro HDMI/DP 다중 인터페이스, USB 직결, 방송·녹화
 keywords: [hdmi capture, 캡처 카드, 4k, 녹화]
 ---

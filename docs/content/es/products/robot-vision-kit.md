@@ -1,5 +1,6 @@
 ---
 title: Kit de visión de brazo robótico SO-ARM101
+category: robot
 description: Kit de visión SO-ARM101 de Juxi Technology — montaje muñeca/lateral/cenital, cámara 60FPS fija o 30FPS autofoco zoom, compatible ACT/Smolvla/Pi0/GR00T
 keywords: [kit de visión, soporte de cámara, so-arm101, visión robótica]
 ---

@@ -1,5 +1,6 @@
 ---
 title: Lekiwi Embodied Intelligence Mobile Robot
+category: robot
 description: Juxi Technology Lekiwi — low-cost teaching robot/mobile base, servo control, education & beginner friendly
 keywords: [lekiwi, mobile robot, teaching robot, education]
 ---

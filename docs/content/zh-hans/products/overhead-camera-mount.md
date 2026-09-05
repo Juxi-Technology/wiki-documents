@@ -1,5 +1,6 @@
 ---
 title: SO-ARM101 顶置相机支架
+category: robot
 description: 钜犀科技 SO-ARM101 顶置相机支架——俯视视角安装,兼容 RealSense,机械臂视觉数据采集
 keywords: [camera mount, 顶置支架, overhead, realsense, 视觉采集]
 ---

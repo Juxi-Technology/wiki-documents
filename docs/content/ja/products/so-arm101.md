@@ -1,5 +1,6 @@
 ---
 title: SO-ARM101 開発キット
+category: robot
 description: 鉅犀科技 SO-ARM101 双腕ロボット開発キット——6 DOF オープンソース機械腕、LeRobot エコシステム、遠隔操作/模倣学習/AI 研究の第一候補
 keywords: [so-arm101, 機械腕, leRobot, 遠隔操作, 双腕ロボット]
 ---

@@ -1,5 +1,6 @@
 ---
 title: Mano diestra AmazingHand
+category: robot
 description: Mano biónica de código abierto de 4 dedos de Juxi Technology, control por bus TTL, CAD abierto, investigación en IA corporizada y HRI
 keywords: [amazinghand, mano diestra, dexterous hand, ia corporizada]
 ---

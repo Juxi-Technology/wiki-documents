@@ -1,5 +1,6 @@
 ---
 title: SO-ARM101 Overhead-Kamera-Halterung
+category: robot
 description: Juxi Technology SO-ARM101 Overhead-Kamera-Halterung — Draufsicht-Montage, RealSense-kompatibel, Robotik-Visionsdatenerfassung
 keywords: [kamera-halterung, overhead, realsense, visionserfassung]
 ---

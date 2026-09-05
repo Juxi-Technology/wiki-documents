@@ -1,5 +1,6 @@
 ---
 title: 4-in-1 KVM Switch
+category: accessory
 description: Juxi Technology 4-in-1 KVM switch — HDMI switcher with TTL serial/Bluetooth docking, one-click device switching for dev
 keywords: [kvm, switch, docking station, ttl, bluetooth]
 ---

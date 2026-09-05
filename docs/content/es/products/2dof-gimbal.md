@@ -1,5 +1,6 @@
 ---
 title: Unidad pan-tilt de servo de 2 GDL
+category: accessory
 description: Unidad pan-tilt de Juxi Technology — servos de bus SCS0009, 180° horizontal / 90° vertical, cámara 2MP, seguimiento con visión IA
 keywords: [gimbal, pan-tilt, 2dof, seguimiento visual, scs0009]
 ---

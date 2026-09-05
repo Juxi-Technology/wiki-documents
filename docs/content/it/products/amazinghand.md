@@ -1,5 +1,6 @@
 ---
 title: Mano dexterous AmazingHand
+category: robot
 description: Mano bionica open source a 4 dita di Juxi Technology, controllo bus TTL, CAD aperto, ricerca IA incarnata e HRI
 keywords: [amazinghand, mano dexterous, dexterous hand, ia incarnata]
 ---

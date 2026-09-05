@@ -1,5 +1,6 @@
 ---
 title: GPS & 北斗 GNSS 定位模块
+category: sensor
 description: 钜犀科技 GPS & 北斗 GNSS 定位模块——ATGM336H-5N 芯片,四大卫星系统联合定位,2.5m 精度,支持 ROS
 keywords: [gps, beidou, gnss, 北斗, 定位模块, ros]
 ---

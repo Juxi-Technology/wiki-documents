@@ -1,5 +1,6 @@
 ---
 title: Lekiwi 임베디드 지능 모바일 로봇
+category: robot
 description: 鉅犀科技 Lekiwi 임베디드 지능 모바일 로봇 — 저비용 교육용 로봇 팔/모바일 베이스, 서보 제어, 교육·입문 추천
 keywords: [lekiwi, 모바일 로봇, 교육용 로봇 팔, 교육 로봇]
 ---

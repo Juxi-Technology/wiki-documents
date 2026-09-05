@@ -1,5 +1,6 @@
 ---
 title: SO-ARM101 TPU 柔性夾爪
+category: robot
 description: 鉅犀科技 SO-ARM101 TPU 柔性夾爪——軟 TPU 材質安全抓取不規則/易碎物品,支持臂載相機,可選 30FPS 變焦或 60FPS 定焦
 keywords: [gripper, 夾爪, tpu, 柔性, so-arm101, 抓取]
 ---

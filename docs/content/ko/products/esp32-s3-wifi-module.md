@@ -1,5 +1,6 @@
 ---
 title: ESP32-S3 WiFi 영상 모듈
+category: compute-vision
 description: 鉅犀科技 ESP32-S3 WiFi 영상 전송 모듈 — 200만 화소 카메라, WiFi 실시간 전송, AI 비전 인식(색상/얼굴/QR), AP+STA 듀얼 모드
 keywords: [esp32, wifi, 영상 전송, 카메라, ai vision]
 ---

@@ -1,5 +1,6 @@
 ---
 title: Lekiwi 具身知能モバイルロボット
+category: robot
 description: 鉅犀科技 Lekiwi 具身知能モバイルロボット——低コスト教育用ロボットアーム/モバイルベース、サーボ制御、教育・初心者向け
 keywords: [lekiwi, モバイルロボット, 教育用ロボットアーム, 教育ロボット]
 ---

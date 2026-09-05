@@ -1,5 +1,6 @@
 ---
 title: 2-DOF-Servo-Pan-Tilt-Einheit
+category: accessory
 description: Juxi Technology 2-DOF-Servo-Pan-Tilt — SCS0009-Bus-Servos, 180° horizontal / 90° vertikal, 2MP-Kamera, KI-Vision-Tracking
 keywords: [gimbal, pan-tilt, 2dof, vision-tracking, scs0009]
 ---

@@ -1,5 +1,6 @@
 ---
 title: 2 自由度舵机云台
+category: accessory
 description: 钜犀科技 2 自由度舵机云台——SCS0009 总线舵机,180° 水平/90° 垂直,200 万摄像头,AI 视觉追踪
 keywords: [gimbal, 云台, 2dof, 视觉追踪, scs0009]
 ---

@@ -1,5 +1,6 @@
 ---
 title: 4 合 1 KVM 切換器
+category: accessory
 description: 鉅犀科技 4 合 1 KVM 切換器——TTL 串口/藍牙擴展塢,多設備一鍵切換,機器人開發調試伴侶
 keywords: [kvm, 切換器, docking station, ttl, 藍牙]
 ---

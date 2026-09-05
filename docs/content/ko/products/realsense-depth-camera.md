@@ -1,5 +1,6 @@
 ---
 title: 3D RealSense 깊이 카메라
+category: compute-vision
 description: 鉅犀科技 3D RealSense 깊이 카메라 — D435i/D405/D405CB 3개 모델, 고정밀 깊이 인식, XLeRobot 및 SO-ARM101 지원
 keywords: [realsense, depth camera, 깊이 카메라, 3d vision, 깊이 인식, 로봇 비전]
 ---

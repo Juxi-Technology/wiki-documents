@@ -1,5 +1,6 @@
 ---
 title: Scheda audio USB senza driver
+category: accessory
 description: Scheda audio USB di Juxi Technology — microfono + altoparlante integrati, plug-and-play, riduzione del rumore, Raspberry Pi/Jetson/PC
 keywords: [scheda audio, usb audio, interazione vocale]
 ---

@@ -1,5 +1,6 @@
 ---
 title: Module de positionnement GNSS GPS & Beidou
+category: sensor
 description: Module GNSS de Juxi Technology — puce ATGM336H-5N, combinaison de quatre constellations, précision 2.5m, support ROS
 keywords: [gps, beidou, gnss, module de positionnement, ros]
 ---

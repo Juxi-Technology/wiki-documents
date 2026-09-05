@@ -1,5 +1,6 @@
 ---
 title: Modulo di interazione vocale KWS
+category: accessory
 description: Modulo di riconoscimento vocale KWS di Juxi Technology — parole di attivazione cinese/inglese, seriale/RViz2, Jetson/Raspberry Pi, firmware open source
 keywords: [kws, riconoscimento vocale, interazione vocale, parola di attivazione, ai voice]
 ---

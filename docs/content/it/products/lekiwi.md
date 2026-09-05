@@ -1,5 +1,6 @@
 ---
 title: Robot mobile a intelligenza incarnata Lekiwi
+category: robot
 description: Robot mobile Lekiwi di Juxi Technology — braccio robotico didattico a basso costo, controllo servo, ideale per l'educazione
 keywords: [lekiwi, robot mobile, braccio didattico, robotica educativa]
 ---

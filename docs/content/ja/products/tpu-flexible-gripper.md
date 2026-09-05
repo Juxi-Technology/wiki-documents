@@ -1,5 +1,6 @@
 ---
 title: SO-ARM101 TPU フレキシブルグリッパー
+category: robot
 description: 鉅犀科技 SO-ARM101 TPU フレキシブルグリッパー——柔らかい TPU 素材で不規則・壊れやすい物体を安全に把持、アーム搭載カメラ対応、30FPS ズーム/60FPS 固定焦点選択可
 keywords: [gripper, グリッパー, tpu, フレキシブル, so-arm101, 把持]
 ---

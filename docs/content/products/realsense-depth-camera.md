@@ -1,5 +1,6 @@
 ---
 title: 3D RealSense Depth Camera
+category: compute-vision
 description: Juxi Technology 3D RealSense depth camera — D435i/D405/D405CB models, high-precision depth perception for XLeRobot & SO-ARM101
 keywords: [realsense, depth camera, 3d vision, depth perception, robot vision]
 ---

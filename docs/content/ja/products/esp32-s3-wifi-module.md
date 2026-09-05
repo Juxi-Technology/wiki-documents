@@ -1,5 +1,6 @@
 ---
 title: ESP32-S3 WiFi 動画モジュール
+category: compute-vision
 description: 鉅犀科技 ESP32-S3 WiFi 動画転送モジュール——200 万画素カメラ、WiFi リアルタイム転送、AI ビジョン認識(色/顔/QR)、AP+STA デュアルモード
 keywords: [esp32, wifi, 動画転送, カメラ, ai vision]
 ---

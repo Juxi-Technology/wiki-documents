@@ -1,5 +1,6 @@
 ---
 title: Tarjeta de sonido USB sin controladores
+category: accessory
 description: Tarjeta de sonido USB de Juxi Technology — micrófono + altavoz integrados, plug-and-play, reducción de ruido, Raspberry Pi/Jetson/PC
 keywords: [tarjeta de sonido, usb audio, interacción por voz]
 ---

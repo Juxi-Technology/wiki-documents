@@ -1,5 +1,6 @@
 ---
 title: ESP32-S3 WiFi 視頻模組
+category: compute-vision
 description: 鉅犀科技 ESP32-S3 WiFi 圖傳模組——200 萬像素攝像頭,WiFi 實時圖傳,AI 視覺識別(顏色/人臉/二維碼),AP+STA 雙模式
 keywords: [esp32, wifi, 圖傳, 攝像頭, ai vision]
 ---

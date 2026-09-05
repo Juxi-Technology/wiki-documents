@@ -1,5 +1,6 @@
 ---
 title: JUXI Bus Servo Driver Board
+category: robot
 description: Juxi Technology JUXI bus servo driver board — single-bus control of 253 servos, 7-12.6V wide input, Type-C plug-and-play, designed for LeRobot SO-ARM
 keywords: [servo driver, bus servo, leRobot, so-arm101]
 ---

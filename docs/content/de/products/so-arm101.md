@@ -1,5 +1,6 @@
 ---
 title: SO-ARM101 Entwicklungs-Kit
+category: robot
 description: Das Open-Source-Doppelarm-Robotik-Kit von Juxi Technology — 6-DOF-Arme, LeRobot-Ökosystem, Teleoperation/Imitation Learning für KI-Forschung
 keywords: [so-arm101, roboterarm, leRobot, teleoperation, doppelarm]
 ---

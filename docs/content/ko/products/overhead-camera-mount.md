@@ -1,5 +1,6 @@
 ---
 title: SO-ARM101 오버헤드 카메라 마운트
+category: robot
 description: 鉅犀科技 SO-ARM101 오버헤드 카메라 마운트 — 정면 위 시점 설치, RealSense 호환, 로봇 팔 비전 데이터 수집
 keywords: [camera mount, 카메라 마운트, overhead, realsense, 비전 수집]
 ---

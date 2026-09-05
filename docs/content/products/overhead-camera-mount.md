@@ -1,5 +1,6 @@
 ---
 title: SO-ARM101 Overhead Camera Mount
+category: robot
 description: Juxi Technology SO-ARM101 overhead camera mount — top-down view, RealSense compatible, vision data collection
 keywords: [camera mount, overhead, realsense, vision collection]
 ---

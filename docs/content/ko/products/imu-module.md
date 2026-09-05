@@ -1,5 +1,6 @@
 ---
 title: IMU 고정밀 관성항법 모듈
+category: sensor
 description: 鉅犀科技 IMU 고정밀 관성항법 모듈 — 100Hz 자세 연산, 6/9/10축 선택, IIC+직렬 이중 통신, ROS 통합
 keywords: [imu, 관성항법, 자세 센서, ahrs, ros]
 ---

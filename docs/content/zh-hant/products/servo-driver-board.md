@@ -1,5 +1,6 @@
 ---
 title: JUXI 總線舵機驅動板
+category: robot
 description: 鉅犀科技 JUXI 總線舵機驅動板——單總線控制 253 個舵機,7~12.6V 寬電壓,Type-C 即插即用,專為 LeRobot SO-ARM 設計
 keywords: [servo driver, 舵機驅動板, 總線舵機, leRobot, so-arm101]
 ---

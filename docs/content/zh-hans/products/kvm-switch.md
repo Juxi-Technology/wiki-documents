@@ -1,5 +1,6 @@
 ---
 title: 4 合 1 KVM 切换器
+category: accessory
 description: 钜犀科技 4 合 1 KVM 切换器——TTL 串口/蓝牙扩展坞,多设备一键切换,机器人开发调试伴侣
 keywords: [kvm, 切换器, docking station, ttl, 蓝牙]
 ---

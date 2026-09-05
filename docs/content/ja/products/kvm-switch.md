@@ -1,5 +1,6 @@
 ---
 title: 4-in-1 KVM スイッチャー
+category: accessory
 description: 鉅犀科技 4-in-1 KVM スイッチャー——TTL シリアル/Bluetooth ドッキングステーション、複数デバイスワンキー切替、ロボット開発デバッグの相棒
 keywords: [kvm, スイッチャー, ドッキングステーション, ttl, bluetooth]
 ---

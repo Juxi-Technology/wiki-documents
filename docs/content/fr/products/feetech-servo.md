@@ -1,5 +1,6 @@
 ---
 title: Servos bus Feetech (SCS0009 / STS3215)
+category: accessory
 description: Servos bus série Feetech de Juxi Technology — protocole SCS, versions à encodeur magnétique/potentiomètre, analyse des tables mémoire, débogage FD
 keywords: [feetech, servo, scs, sts, bus série]
 ---

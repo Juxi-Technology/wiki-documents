@@ -1,5 +1,6 @@
 ---
 title: Carte driver de servos bus JUXI
+category: robot
 description: Carte driver JUXI de Juxi Technology — 253 servos sur un bus, large tension 7–12.6V, Type-C plug-and-play, conçue pour LeRobot SO-ARM
 keywords: [driver servo, carte driver, bus servo, leRobot, so-arm101]
 ---

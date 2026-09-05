@@ -1,5 +1,6 @@
 ---
 title: SO-ARM101 TPU-Flex-Greifer
+category: robot
 description: Juxi Technology SO-ARM101 TPU-Flex-Greifer — weiches TPU greift unregelmäßige/zerbrechliche Objekte sicher, Armkamera, 30FPS-Zoom oder 60FPS-Fixfokus
 keywords: [greifer, tpu, flex, so-arm101, greifen]
 ---

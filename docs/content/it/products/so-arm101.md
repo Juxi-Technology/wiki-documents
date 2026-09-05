@@ -1,5 +1,6 @@
 ---
 title: Kit di sviluppo SO-ARM101
+category: robot
 description: Il kit robotico a doppio braccio open source di Juxi Technology — bracci 6 DOF, ecosistema LeRobot, teleoperazione/apprendimento per imitazione
 keywords: [so-arm101, braccio robotico, leRobot, teleoperazione, doppio braccio]
 ---

@@ -1,5 +1,6 @@
 ---
 title: Jetson Orin NX Super 개발 키트
+category: compute-vision
 description: 鉅犀科技 NVIDIA Jetson Orin NX SUPER 개발 키트 — 117/157 TOPS 엣지 AI 컴퓨팅 플랫폼, Ubuntu 22.04 및 256GB NVMe SSD 사전 설치
 keywords: [jetson, orin nx, edge ai, 엣지 컴퓨팅, leRobot, 로봇]
 ---

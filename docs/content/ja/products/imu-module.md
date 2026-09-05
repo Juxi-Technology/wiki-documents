@@ -1,5 +1,6 @@
 ---
 title: IMU 高精度慣性航法モジュール
+category: sensor
 description: 鉅犀科技 IMU 高精度慣性航法モジュール——100Hz 姿勢演算、6/9/10軸選択、IIC+シリアル双通信、ROS 統合
 keywords: [imu, 慣性航法, 姿勢センサー, ahrs, ros]
 ---

@@ -1,5 +1,6 @@
 ---
 title: 4K HDMI 採集卡
+category: accessory
 description: 鉅犀科技 4K HDMI 採集卡——4K 高清採集,HDMI/Micro HDMI/DP 多接口,USB 直連,採集直播錄屏
 keywords: [hdmi capture, 採集卡, 4k, 錄屏]
 ---

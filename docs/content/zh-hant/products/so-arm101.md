@@ -1,5 +1,6 @@
 ---
 title: SO-ARM101 開發套件
+category: robot
 description: 鉅犀科技 SO-ARM101 雙臂機器人開發套件——6 DOF 開源機械臂,LeRobot 生態,遙操作/模仿學習/AI 研究首選
 keywords: [so-arm101, 機械臂, leRobot, 遙操作, 雙臂機器人]
 ---

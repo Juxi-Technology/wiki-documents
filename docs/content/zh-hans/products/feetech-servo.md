@@ -1,5 +1,6 @@
 ---
 title: Feetech 总线舵机(SCS0009 / STS3215)
+category: accessory
 description: 钜犀科技 Feetech 串行总线舵机 SCS0009 与 STS3215——SCS 通信协议,磁编码/电位器双版本,内存表解析,上位机调试
 keywords: [feetech, 舵机, scs, sts, 串行总线]
 ---

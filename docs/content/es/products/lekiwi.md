@@ -1,5 +1,6 @@
 ---
 title: Robot móvil de inteligencia corporizada Lekiwi
+category: robot
 description: Robot móvil Lekiwi de Juxi Technology — brazo robótico educativo de bajo costo, control por servos, ideal para educación
 keywords: [lekiwi, robot móvil, brazo educativo, robótica educativa]
 ---

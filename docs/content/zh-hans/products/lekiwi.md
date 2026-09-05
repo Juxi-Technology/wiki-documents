@@ -1,5 +1,6 @@
 ---
 title: Lekiwi 具身智能移动机器人
+category: robot
 description: 钜犀科技 Lekiwi 具身智能移动机器人——低成本教学机械臂/移动底盘,舵机控制,教育与入门首选
 keywords: [lekiwi, 移动机器人, 教学机械臂, 教育机器人]
 ---

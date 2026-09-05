@@ -1,5 +1,6 @@
 ---
 title: Jetson Orin NX Super 開發套件
+category: compute-vision
 description: 鉅犀科技 NVIDIA Jetson Orin NX SUPER 開發套件——117/157 TOPS 邊緣 AI 計算平台,預裝 Ubuntu 22.04 與 256GB NVMe SSD
 keywords: [jetson, orin nx, edge ai, 邊緣計算, leRobot, 機器人]
 ---

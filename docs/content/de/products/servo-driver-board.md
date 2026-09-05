@@ -1,5 +1,6 @@
 ---
 title: JUXI-Bus-Servo-Treiberplatine
+category: robot
 description: Juxi Technology JUXI-Bus-Servo-Treiberplatine — 253 Servos an einem Bus, 7–12.6V, Type-C Plug-and-Play, für LeRobot SO-ARM
 keywords: [servo-treiber, bus-servo, leRobot, so-arm101]
 ---

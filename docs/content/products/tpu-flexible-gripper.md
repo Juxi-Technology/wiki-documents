@@ -1,5 +1,6 @@
 ---
 title: SO-ARM101 TPU Flexible Gripper
+category: robot
 description: Juxi Technology SO-ARM101 TPU flexible gripper — soft TPU safely grasps irregular/fragile items, arm camera compatible, 30FPS zoom or 60FPS fixed options
 keywords: [gripper, tpu, flexible, so-arm101, grasping]
 ---

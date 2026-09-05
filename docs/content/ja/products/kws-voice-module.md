@@ -1,5 +1,6 @@
 ---
 title: KWS 音声対話モジュール
+category: accessory
 description: 鉅犀科技 KWS 音声認識対話モジュール——中英認識語、シリアル/RViz2 可視化、Jetson/Raspberry Pi 対応、ファームウェアオープンソース
 keywords: [kws, 音声認識, 音声対話, ウェイクワード, ai voice]
 ---

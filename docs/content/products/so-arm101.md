@@ -1,5 +1,6 @@
 ---
 title: SO-ARM101 Developer Kit
+category: robot
 description: Juxi Technology SO-ARM101 dual-arm robot dev kit — 6-DOF open-source arms, LeRobot ecosystem, teleoperation/imitation learning
 keywords: [so-arm101, robot arm, leRobot, teleoperation, dual-arm]
 ---
