@@ -11,6 +11,7 @@ export default createContentLoader(
     '**/tech/**/*.md',
     '**/cases/**/*.md',
     '**/community/**/*.md',
+    '**/products/**/*.md',
   ],
   {
     render: true, // 渲染出 html,以提取正文纯文本进索引(此前仅标题+描述)
