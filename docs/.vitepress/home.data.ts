@@ -3,19 +3,33 @@ import { existsSync } from 'node:fs'
 import path from 'node:path'
 import { createContentLoader } from 'vitepress'
 
-// 首页最新文档卡片数据:url → 最后更新日期(YYYY-MM-DD)
-// createContentLoader 项不含 lastUpdated,这里按 url 反推文件路径,
-// 用 git log 取真实提交日期(CI 已配 fetch-depth: 0)
-function gitDate(rel: string) {
+// 首页最新文档卡片数据:url → 最后更新日期(YYYY-MM-DD)。
+// createContentLoader 项不含 lastUpdated;一次 git log 取全历史
+// (每条 commit 的日期+变更文件,首个出现即该文件最后修改日),
+// 避免逐文件 fork git(此前 873 次调用拖慢构建 ~7s)。
+function gitDates() {
   try {
-    return execFileSync('git', ['log', '-1', '--format=%cs', '--', rel], {
-      cwd: process.cwd(),
-      encoding: 'utf8',
-    }).trim()
+    const out = execFileSync(
+      'git',
+      ['log', '--pretty=format:%x1e%cs%x1f', '--name-only', '--no-renames'],
+      { cwd: process.cwd(), encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 },
+    )
+    const map = new Map<string, string>()
+    let cur = ''
+    for (const line of out.split('\n')) {
+      if (line.startsWith('\x1e')) {
+        cur = line.slice(1).split('\x1f')[1] ?? ''
+        continue
+      }
+      if (line && !map.has(line) && cur) map.set(line, cur)
+    }
+    return map
   } catch {
-    return ''
+    return new Map<string, string>()
   }
 }
+
+const dateMap = gitDates()
 
 export default createContentLoader(
   [
@@ -34,7 +48,7 @@ export default createContentLoader(
           const file = existsSync(base + '.md') ? base + '.md' : path.join(base, 'index.md')
           return {
             url,
-            lastUpdated: existsSync(file) ? gitDate(file) : '',
+            lastUpdated: dateMap.get(file) || '',
           }
         })
         .filter((x) => x.lastUpdated)

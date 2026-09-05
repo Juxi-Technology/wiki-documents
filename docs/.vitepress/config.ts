@@ -44,13 +44,13 @@ function buildBreadcrumbLd(url: string, title: string) {
   return { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: items }
 }
 
-// 全局 head:SEO 基础标签(baidu 验证 + Open Graph + Twitter Card + canonical)
+// 全局 head:SEO 基础标签(baidu 验证 + Open Graph + Twitter Card)
+// canonical 不在此处:逐页 unique canonical 由 transformHead 生成(此前钉死首页导致全站声明首页)
 const globalHead = [
   ['meta', { name: 'baidu-site-verification', content: 'codeva-Lzl2d4xzcv' }],
   ['meta', { property: 'og:type', content: 'website' }],
   ['meta', { property: 'og:image', content: 'https://wiki.juxitech.com/images/logos/logo-black.png' }],
   ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-  ['link', { rel: 'canonical', href: 'https://wiki.juxitech.com/' }],
   ['meta', { name: 'robots', content: 'index, follow' }],
   // 百度统计:默认占位 ID 时 no-op(不发请求);替换 JUXI_BAIDU_ID 为真实统计 ID 后生效
   ['script', {}, `(function(){
@@ -2003,10 +2003,12 @@ export default defineConfig({
       }
     }
     const heads: any[] = [
+      // 逐页 canonical(与 hreflang 同一 URL 推导,404 等虚拟页不注入)
+      !pageData.isNotFound && ['link', { rel: 'canonical', href: base + pageUrlOf(pageData.relativePath) }],
       // hreflang:9 语言 alternate + x-default(置顶,爬虫优先识别语言对应)
       ...injectHreflang(pageData),
       ['script', { type: 'application/ld+json' }, JSON.stringify(ld)],
-    ]
+    ].filter(Boolean)
     if (breadcrumbLd) heads.push(['script', { type: 'application/ld+json' }, JSON.stringify(breadcrumbLd)])
     return heads
   },

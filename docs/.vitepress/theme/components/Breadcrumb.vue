@@ -22,17 +22,20 @@ const HOME_TEXT: Record<string, string> = {
 }
 
 const crumbs = computed(() => {
-  const segs = route.path.split('/').filter(Boolean)
-  // 去掉语言前缀段
+  const rawSegs = route.path.split('/').filter(Boolean)
+  // 去掉语言前缀段(并记住前缀,链接必须带)
   const LANG_RE = /^(zh-hans|zh-hant|ja|ko|de|fr|es|it|en)$/
-  if (segs.length && LANG_RE.test(segs[0])) segs.shift()
+  const hasLang = rawSegs.length && LANG_RE.test(rawSegs[0])
+  const langPrefix = hasLang ? rawSegs[0] : null
+  const segs = rawSegs.slice(hasLang ? 1 : 0)
   // 去掉索引页(已在语言根)
   if (segs.length && segs[segs.length - 1] === 'index') segs.pop()
   if (!segs.length) return [{ text: HOME_TEXT[lang.value] || 'Home', path: '/' }]
   return [{ text: HOME_TEXT[lang.value] || 'Home', path: '/' }]
     .concat(segs.slice(0, 1).map((s) => ({
       text: SEG_NAMES[s]?.[lang.value] || s,
-      path: route.path.split('/').slice(0, 2).join('/') || '/',
+      // 语言前缀 + 一级目录(如 /zh-hans/tutorials),此前错算成 /zh-hans
+      path: `${langPrefix ? '/' + langPrefix : ''}/${s}`,
     })))
 })
 </script>
