@@ -953,3 +953,5 @@ STS 서보: "Position Control"에 2047을 입력하고 "Set" 클릭
 SCS 서보: "Position Control"에 511을 입력하고 "Set" 클릭.
 
 ![웹에서 서보 ID 설정 및 중앙값 캘리브레이션 – 3](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/29.png)
+
+<RelatedProducts slugs="so-arm101,robot-vision-kit,tpu-flexible-gripper" />

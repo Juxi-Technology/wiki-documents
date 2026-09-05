@@ -1063,5 +1063,4 @@ SCS舵机：在“位置控制”输入511，并点击“Set”
 
 ![网页端设置舵机ID和中位校准 – 3](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/29.png)
 
-
-
+<RelatedProducts slugs="so-arm101,robot-vision-kit,tpu-flexible-gripper" />

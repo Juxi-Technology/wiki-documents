@@ -953,3 +953,5 @@ STS サーボ: 「Position Control」に 2047 を入力し「Set」をクリッ�
 SCS サーボ: 「Position Control」に 511 を入力し「Set」をクリックします。
 
 ![ウェブ上でサーボ ID を設定し中位キャリブレーションを行う – 3](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/29.png)
+
+<RelatedProducts slugs="so-arm101,robot-vision-kit,tpu-flexible-gripper" />

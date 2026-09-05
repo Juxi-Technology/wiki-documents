@@ -1569,6 +1569,7 @@ export default defineConfig({
           ] },
           { text: 'Accessoires', items: [
             { text: 'Cardan servo 2-DOF', link: '/fr/products/2dof-gimbal' },
+            { text: "Module d'interaction vocale KWS", link: '/fr/products/kws-voice-module' },
             { text: 'Servo bus Feetech', link: '/fr/products/feetech-servo' },
             { text: 'Commutateur KVM 4-en-1', link: '/fr/products/kvm-switch' },
             { text: 'Carte son USB sans pilote', link: '/fr/products/usb-sound-card' },

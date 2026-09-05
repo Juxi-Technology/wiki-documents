@@ -102,3 +102,5 @@ Montage der Servo-Treiberplatine: Zuerst 4 Kupfersäulen montieren, dann die Tre
 ![Linux/Ubuntu-System – 3](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
 
 **Der schwarze Leader-Arm der Pro-Version verwendet ein 5V6A-Netzteil, der weiße Follower-Arm ein 12V5A-Netzteil**
+
+<RelatedProducts slugs="so-arm101,servo-driver-board,overhead-camera-mount" />

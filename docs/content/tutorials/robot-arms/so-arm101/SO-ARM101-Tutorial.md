@@ -1067,5 +1067,4 @@ SCS Servo: Enter 511 in "Position Control" and click "Set".
 
 ![Set Servo ID and Median Calibration on the Web – 3](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/29.png)
 
-
-
+<RelatedProducts slugs="so-arm101,robot-vision-kit,tpu-flexible-gripper" />

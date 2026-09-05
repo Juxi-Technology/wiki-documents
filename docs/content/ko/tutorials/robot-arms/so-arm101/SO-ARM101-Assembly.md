@@ -103,3 +103,5 @@ lerobot-setup-motors \
 ![Linux/Ubuntu 시스템 – 3](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
 
 **Pro 버전의 검은색 액티브 암은 5V6A 전원 어댑터를, 흰색 패시브 암은 12V5A 전원 어댑터를 사용합니다**
+
+<RelatedProducts slugs="so-arm101,servo-driver-board,overhead-camera-mount" />

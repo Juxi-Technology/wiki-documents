@@ -102,3 +102,5 @@ lerobot-setup-motors \
 ![Linux/Ubuntu システム – 3](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
 
 **Pro版の黑色の能動アームは5V6A電源アダプター、白色の従動アームは12V5A電源アダプターを使用**
+
+<RelatedProducts slugs="so-arm101,servo-driver-board,overhead-camera-mount" />

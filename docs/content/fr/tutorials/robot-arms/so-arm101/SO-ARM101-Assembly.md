@@ -103,3 +103,5 @@ Installation de la carte driver des servos : installez d'abord 4 entretoises en 
 ![Système Linux/Ubuntu – 3](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
 
 **Version Pro : le bras leader (noir) utilise un adaptateur 5V6A, tandis que le bras follower (blanc) utilise un adaptateur 12V5A**
+
+<RelatedProducts slugs="so-arm101,servo-driver-board,overhead-camera-mount" />

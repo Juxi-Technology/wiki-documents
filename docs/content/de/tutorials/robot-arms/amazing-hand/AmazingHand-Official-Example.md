@@ -446,3 +446,5 @@ Im Texteditor öffnen und auf die eigene Portnummer setzen (Windows COM*, Ubuntu
 ```Plain Text
 dora run dataflow_tracking_real_right.yml --uv
 ```
+
+<RelatedProducts slugs="amazinghand,servo-driver-board" />

@@ -103,3 +103,5 @@ Installazione della scheda driver dei servo: installa prima 4 pilastrini in rame
 ![Sistema Linux/Ubuntu – 3](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
 
 **Il braccio leader nero della versione Pro usa un alimentatore 5V6A, mentre il braccio follower bianco usa un alimentatore 12V5A**
+
+<RelatedProducts slugs="so-arm101,servo-driver-board,overhead-camera-mount" />

@@ -607,3 +607,5 @@ Bei Hardware-Problemen wenden Sie sich bitte an den Kundendienst. Bei Anwendungs
 [LeRobot-Plattform](https://github.com/huggingface/lerobot)
 
 [LeRobot-Discord-Kanal](https://discord.gg/8TnwDdjFGU)
+
+<RelatedProducts slugs="lekiwi,so-arm101,servo-driver-board" />

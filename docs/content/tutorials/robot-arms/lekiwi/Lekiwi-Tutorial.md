@@ -625,5 +625,4 @@ For hardware issues, please contact customer service. For usage issues, please j
 
 [LeRobot Discord Channel](https://discord.gg/8TnwDdjFGU)
 
-
-
+<RelatedProducts slugs="lekiwi,so-arm101,servo-driver-board" />

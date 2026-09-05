@@ -104,3 +104,4 @@ Installation of the servo driver board: First install 4 copper pillars, then sec
 
 **The Pro version's black active arm uses a 5V6A power adapter, while the white passive arm uses a 12V5A power adapter **
 
+<RelatedProducts slugs="so-arm101,servo-driver-board,overhead-camera-mount" />

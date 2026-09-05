@@ -949,3 +949,5 @@ Servo STS: introducir 2047 en "Position Control" y hacer clic en "Set"
 Servo SCS: introducir 511 en "Position Control" y hacer clic en "Set".
 
 ![Configurar el ID del servo y la calibración mediana en la web – 3](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/29.png)
+
+<RelatedProducts slugs="so-arm101,robot-vision-kit,tpu-flexible-gripper" />

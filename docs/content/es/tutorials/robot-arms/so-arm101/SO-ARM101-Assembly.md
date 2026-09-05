@@ -102,3 +102,5 @@ Instalación de la placa del controlador de servos: primero instale 4 pilares de
 ![Sistema Linux/Ubuntu – 3](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
 
 **La versión Pro del brazo activo negro usa un adaptador de alimentación de 5V6A, mientras que el brazo pasivo blanco usa un adaptador de alimentación de 12V5A**
+
+<RelatedProducts slugs="so-arm101,servo-driver-board,overhead-camera-mount" />

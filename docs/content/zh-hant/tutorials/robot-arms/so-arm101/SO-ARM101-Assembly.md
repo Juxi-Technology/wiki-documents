@@ -103,3 +103,5 @@ lerobot-setup-motors \
 ![Linux/ubuntu系统 – 3](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
 
 **Pro版 黑色主动臂使用5V6A电源适配器，白色从动臂使用12V5A电源适配器**
+
+<RelatedProducts slugs="so-arm101,servo-driver-board,overhead-camera-mount" />

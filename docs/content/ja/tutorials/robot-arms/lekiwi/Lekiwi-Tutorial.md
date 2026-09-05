@@ -588,3 +588,5 @@ https://github.com/SIGRobotics-UIUC/LeKiwi-sim
 [LeRobot プラットフォーム](https://github.com/huggingface/lerobot)
 
 [LeRobot Discord チャンネル](https://discord.gg/8TnwDdjFGU)
+
+<RelatedProducts slugs="lekiwi,so-arm101,servo-driver-board" />

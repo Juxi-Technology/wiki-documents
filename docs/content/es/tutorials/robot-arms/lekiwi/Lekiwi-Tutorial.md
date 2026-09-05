@@ -615,3 +615,5 @@ Para problemas de hardware, contacte con el servicio de atención al cliente. Pa
 [Plataforma LeRobot](https://github.com/huggingface/lerobot)
 
 [Canal de Discord de LeRobot](https://discord.gg/8TnwDdjFGU)
+
+<RelatedProducts slugs="lekiwi,so-arm101,servo-driver-board" />
