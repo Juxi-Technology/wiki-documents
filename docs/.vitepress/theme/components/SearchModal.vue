@@ -87,16 +87,24 @@ watch(query, () => {
     results.value = []
     return
   }
-  const searchResults = index.search(query.value, { limit: 10, enrich: true })
-  if (searchResults.length > 0) {
-    results.value = searchResults[0].result.map((r) => ({
-      id: r.id,
-      title: r.doc.title,
-      path: r.doc.path,
-    }))
-  } else {
-    results.value = []
+  // 分字段查询:标题优先,正文补全(去重)。
+  // 注意:Document.search 默认按字段返回分组数组,直接取 [0] 会丢正文命中
+  const byTitle = index.search(query.value, { index: 'title', limit: 10, enrich: true })
+  const byText = index.search(query.value, { index: 'text', limit: 10, enrich: true })
+  const seen = new Set()
+  const merged = []
+  for (const group of [byTitle, byText]) {
+    const items = group && group[0] && group[0].result
+    if (!items) continue
+    for (const r of items) {
+      if (seen.has(r.id)) continue
+      seen.add(r.id)
+      merged.push({ id: r.id, title: r.doc.title, path: r.doc.path })
+      if (merged.length >= 10) break
+    }
+    if (merged.length >= 10) break
   }
+  results.value = merged
 })
 
 function openSearch() {

@@ -4,6 +4,7 @@
 const BANNER_H = 36
 
 if (typeof window !== 'undefined') {
+  let raf = 0
   function syncTopOffset() {
     // 连续函数:scrollY 0→36 期间偏移 36→0 线性过渡,nav 随滚动平滑升至顶端
     // (阶跃写法 scrolled ? 0 : 36 会让 nav 在越过阈值时瞬间跳变)
@@ -11,6 +12,10 @@ if (typeof window !== 'undefined') {
     document.documentElement.style.setProperty('--vp-layout-top-height', `${h}px`)
   }
 
-  window.addEventListener('scroll', syncTopOffset, { passive: true })
+  // rAF 节流:scroll 高频率事件下合并到每帧一次 DOM 写
+  window.addEventListener('scroll', () => {
+    cancelAnimationFrame(raf)
+    raf = requestAnimationFrame(syncTopOffset)
+  }, { passive: true })
   syncTopOffset()
 }

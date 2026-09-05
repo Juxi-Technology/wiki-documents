@@ -59,13 +59,17 @@ const isVisible = computed(() => {
 })
 
 const copy = computed(() => {
-  if (localeIndex.value === 'zh-hans') {
-    return { buy: '购买此产品', store: '官方商城', site: '官方网站' }
+  const T = {
+    'zh-hans': { buy: '购买此产品', store: '官方商城', site: '官方网站' },
+    'zh-hant': { buy: '購買此產品', store: '官方商城', site: '官方網站' },
+    ja: { buy: 'この製品を購入', store: '公式ストア', site: '公式サイト' },
+    ko: { buy: '이 제품 구매', store: '공식 스토어', site: '공식 웹사이트' },
+    de: { buy: 'Dieses Produkt kaufen', store: 'Offizieller Shop', site: 'Offizielle Website' },
+    fr: { buy: 'Acheter ce produit', store: 'Boutique officielle', site: 'Site officiel' },
+    es: { buy: 'Comprar este producto', store: 'Tienda oficial', site: 'Sitio web oficial' },
+    it: { buy: 'Acquista questo prodotto', store: 'Negozio ufficiale', site: 'Sito ufficiale' },
   }
-  if (localeIndex.value === 'zh-hant') {
-    return { buy: '購買此產品', store: '官方商城', site: '官方網站' }
-  }
-  return { buy: 'Buy This Product', store: 'Official Store', site: 'Official Website' }
+  return T[localeIndex.value] || { buy: 'Buy This Product', store: 'Official Store', site: 'Official Website' }
 })
 </script>
 

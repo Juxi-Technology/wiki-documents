@@ -7,16 +7,16 @@ import { data as dates } from '../../home.data'
 const { lang } = useData()
 
 // 9 语文案(键与 config lang 一致)
-const T: Record<string, { title: string; all: string; arm: string; sensor: string; accessory: string }> = {
-  'zh-CN': { title: '最新文档', all: '全部', arm: '机械臂', sensor: '传感器', accessory: '配件' },
-  en: { title: 'Latest Documents', all: 'All', arm: 'Robot Arms', sensor: 'Sensors', accessory: 'Accessories' },
-  'zh-HK': { title: '最新文檔', all: '全部', arm: '機械臂', sensor: '傳感器', accessory: '配件' },
-  ja: { title: '最新ドキュメント', all: 'すべて', arm: 'ロボットアーム', sensor: 'センサー', accessory: 'アクセサリー' },
-  ko: { title: '최신 문서', all: '전체', arm: '로봇 암', sensor: '센서', accessory: '액세서리' },
-  de: { title: 'Neueste Dokumente', all: 'Alle', arm: 'Roboterarme', sensor: 'Sensoren', accessory: 'Zubehör' },
-  fr: { title: 'Documents récents', all: 'Tous', arm: 'Bras robotiques', sensor: 'Capteurs', accessory: 'Accessoires' },
-  es: { title: 'Documentos recientes', all: 'Todos', arm: 'Brazos robóticos', sensor: 'Sensores', accessory: 'Accesorios' },
-  it: { title: 'Documenti recenti', all: 'Tutti', arm: 'Bracci robotici', sensor: 'Sensori', accessory: 'Accessori' },
+const T: Record<string, { title: string; all: string; robot: string; sensor: string; accessory: string }> = {
+  'zh-CN': { title: '最新文档', all: '全部', robot: '机械臂', sensor: '传感器', accessory: '配件' },
+  en: { title: 'Latest Documents', all: 'All', robot: 'Robot Arms', sensor: 'Sensors', accessory: 'Accessories' },
+  'zh-HK': { title: '最新文檔', all: '全部', robot: '機械臂', sensor: '傳感器', accessory: '配件' },
+  ja: { title: '最新ドキュメント', all: 'すべて', robot: 'ロボットアーム', sensor: 'センサー', accessory: 'アクセサリー' },
+  ko: { title: '최신 문서', all: '전체', robot: '로봇 암', sensor: '센서', accessory: '액세서리' },
+  de: { title: 'Neueste Dokumente', all: 'Alle', robot: 'Roboterarme', sensor: 'Sensoren', accessory: 'Zubehör' },
+  fr: { title: 'Documents récents', all: 'Tous', robot: 'Bras robotiques', sensor: 'Capteurs', accessory: 'Accessoires' },
+  es: { title: 'Documentos recientes', all: 'Todos', robot: 'Brazos robóticos', sensor: 'Sensores', accessory: 'Accesorios' },
+  it: { title: 'Documenti recenti', all: 'Tutti', robot: 'Bracci robotici', sensor: 'Sensori', accessory: 'Accessori' },
 }
 
 // 卡片标题(各语,与既有首页卡片一致)
@@ -32,12 +32,12 @@ const TITLES: Record<string, string[]> = {
   it: ['Tutorial SO-ARM101', 'Modulo KWS – serie di tutorial', 'Modulo di navigazione inerziale IMU', 'Controllo interfaccia AmazingHand'],
 }
 
-// 卡片:相对路径(语言前缀由组件拼接)、分类、图片
+// 卡片:相对路径(语言前缀由组件拼接)、分类(与产品页 category 枚举对齐)、图片
 const CARDS = [
-  { href: 'tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial', cat: 'arm', img: 'SO-ARM101.png' },
+  { href: 'tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial', cat: 'robot', img: 'SO-ARM101.png' },
   { href: 'tutorials/accessories/KWS-speech-recognition-module/index', cat: 'accessory', img: 'AI_SoundCard.png' },
   { href: 'tutorials/sensors/imu/index', cat: 'sensor', img: 'IMU.png' },
-  { href: 'tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control', cat: 'arm', img: 'AmazingHand.png' },
+  { href: 'tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control', cat: 'robot', img: 'AmazingHand.png' },
 ]
 
 const t = computed(() => T[lang.value] || T.en)
@@ -48,7 +48,7 @@ const langDir = computed(() => {
 })
 
 const filter = ref('all')
-const FILTERS = ['all', 'arm', 'sensor', 'accessory'] as const
+const FILTERS = ['all', 'robot', 'sensor', 'accessory'] as const
 
 // 卡片日期(带语言前缀的 URL → lastUpdated)
 const dateMap = new Map(dates.map((d) => [d.url.replace(/\/$/, ''), d.lastUpdated]))
@@ -82,7 +82,7 @@ const filtered = computed(() =>
         <img :src="withBase('/images/home-cards/' + c.img)" :alt="c.title" loading="lazy">
         <span class="card-title">{{ c.title }}</span>
         <span class="card-meta">
-          <span class="card-cat">{{ t[c.cat as 'all' | 'arm' | 'sensor' | 'accessory'] }}</span>
+          <span class="card-cat">{{ t[c.cat as 'all' | 'robot' | 'sensor' | 'accessory'] }}</span>
           <span v-if="c.date" class="card-date">{{ c.date }}</span>
         </span>
       </a>
