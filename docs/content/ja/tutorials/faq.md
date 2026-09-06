@@ -125,7 +125,7 @@ keywords: [faq, トラブルシューティング]
 **A:** PC(Linux/Windows)、Jetson、Raspberry Pi — 各チュートリアルの「システム要件」を参照してください。
 
 **Q: サポートを受けるには?**
-
+**A:**
 - 📧 support@juxitech.com
 - 💬 [GitHub Issues](https://github.com/Juxi-Technology/wiki-documents/issues)
 

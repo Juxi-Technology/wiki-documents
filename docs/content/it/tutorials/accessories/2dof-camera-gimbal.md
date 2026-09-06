@@ -30,6 +30,23 @@ Piattaforma di stabilizzazione camera open source 2-DOF. Controllo Python, track
 | Tracking | Colore/volto/QR |
 | Linguaggio | Python 3 |
 
+## Guida rapida
+
+### Collegamento hardware
+
+1. Collegare il servo all'interfaccia del bus seriale
+2. Collegare il modulo USB-seriale a computer/Jetson/Raspberry Pi
+3. Montare la camera sul supporto del gimbal
+4. Collegare la camera USB
+
+### Installare le dipendenze
+
+```bash
+pip install -r requirements.txt
+# Oppure installazione manuale
+pip install opencv-python pyserial numpy
+```
+
 ## Controllo base
 
 ```python
@@ -73,6 +90,16 @@ while True:
     if cv2.waitKey(1) & 0xFF == ord('q'): break
 ```
 
+## Funzionalità avanzate
+
+### Rilevamento del volto
+
+Il file `src/detectors/face_detector.py` del repository fornisce un rilevatore di volti basato su OpenCV DNN, utilizzabile per il tracciamento automatico del volto.
+
+### Tracking automatico
+
+L'esempio `examples/auto_tracking_demo.py` del repository implementa un flusso di tracking automatico completo, che include selezione del target, controllo PID e inseguimento fluido.
+
 ## FAQ
 
 **Q: La connessione seriale fallisce?**
@@ -91,3 +118,4 @@ while True:
 
 - 📧 support@juxitech.com
 - 🌐 [www.juxitech.com](https://www.juxitech.com)
+- 💻 Repository open source: [GitHub](https://github.com/Juxi-Technology/2dof-camera-gimbal)

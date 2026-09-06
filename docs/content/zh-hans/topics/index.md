@@ -12,12 +12,35 @@ description: 钜犀科技机器人学习与自动化技术专题
 <div class="topic-cards">
   <div class="topic-card">
     <div class="topic-icon">🤖</div>
-    <h3><a href="/topics/robot-learning/">机器人学习</a></h3>
-    <p>基于 LeRobot 的全栈机器人学习，从数据采集到模型部署</p>
+    <h3><a href="/zh-hans/topics/robot-learning/">机器人学习专题</a></h3>
+    <p>基于 LeRobot 的全栈机器人学习技术</p>
   </div>
-</div>
-
-<style>
+  <div class="topic-card">
+    <div class="topic-icon">⚙️</div>
+    <h3><a href="/zh-hans/topics/jetpack-setup">JetPack 刷机与系统配置</a></h3>
+    <p>NVIDIA Jetson 平台 JetPack 刷机指南</p>
+  </div>
+  <div class="topic-card">
+    <div class="topic-icon">⚡</div>
+    <h3><a href="/zh-hans/topics/edge-ai-intro">边缘 AI 部署入门</a></h3>
+    <p>Jetson 边缘 AI 部署入门</p>
+  </div>
+  <div class="topic-card">
+    <div class="topic-icon">🦾</div>
+    <h3><a href="/zh-hans/topics/embodied-ai-intro">具身智能入门(LeRobot)</a></h3>
+    <p>具身智能入门</p>
+  </div>
+  <div class="topic-card">
+    <div class="topic-icon">🔓</div>
+    <h3><a href="/zh-hans/topics/open-source-hardware">我们为何构建开源——开源机器人硬件的案例</a></h3>
+    <p>钜犀科技开源硬件理念:每件出厂产品附带完整原理图、固件源码与 CAD 文件</p>
+  </div>
+  <div class="topic-card">
+    <div class="topic-icon">📚</div>
+    <h3><a href="/zh-hans/topics/">Topics</a></h3>
+    <p>钜犀科技全部技术专题与自动化指南总览</p>
+  </div>
+</div><style>
 .topic-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));

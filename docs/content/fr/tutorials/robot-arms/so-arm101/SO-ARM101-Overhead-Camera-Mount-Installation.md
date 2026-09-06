@@ -13,3 +13,13 @@ description: "Caméra USB autofocus : voir le tutoriel caméra USB"
 - [Fichiers de modèle officiels](https://github.com/TheRobotStudio/SO-ARM100/tree/main/Optional/Overhead-Cam-Mount-Webcam)
 
 Voir les images.
+
+![image – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/1.png)
+
+![image – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/2.png)
+
+![image – 3](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/3.png)
+
+![image – 4](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/4.png)
+
+![image – 5](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/5.png)

@@ -125,7 +125,7 @@ Preguntas frecuentes por categoría de producto.
 **A:** PC (Linux/Windows), Jetson, Raspberry Pi — consulta los «requisitos del sistema» en cada tutorial.
 
 **Q: ¿Cómo obtener soporte?**
-
+**A:**
 - 📧 support@juxitech.com
 - 💬 [GitHub Issues](https://github.com/Juxi-Technology/wiki-documents/issues)
 

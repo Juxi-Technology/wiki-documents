@@ -1,3 +1,8 @@
+---
+title: Guida di sviluppo
+description: Questa guida spiega come sviluppare sulla base dei prodotti JUXI.
+---
+
 # Guida di sviluppo
 
 Questa guida spiega come sviluppare sulla base dei prodotti JUXI.

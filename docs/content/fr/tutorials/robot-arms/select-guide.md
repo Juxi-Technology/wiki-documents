@@ -6,7 +6,9 @@ keywords: [sélection, bras robotique, comparaison]
 
 # Guide de sélection des bras robotiques
 
-Juxi Technology propose plusieurs bras robotiques pour différents usages.
+Juxi Technology propose plusieurs bras robotiques pour différents usages. Ce guide vous aide à comparer et choisir le modèle adapté.
+
+> Remarque : consultez la documentation officielle de chaque produit pour les spécifications détaillées. Ce tableau sert uniquement de référence pour le choix.
 
 ## Comparaison
 
@@ -17,9 +19,30 @@ Juxi Technology propose plusieurs bras robotiques pour différents usages.
 | **Contrôle** | LeRobot / API Python | Bus série TTL | Servos |
 | **Usage** | Apprentissage IA, téléop | Préhension, gestes | Éducation, débutant |
 | **Open source** | [LeRobot](https://github.com/Juxi-Technology/lerobot) | [AmazingHand](https://github.com/Juxi-Technology/AmazingHand) | Doc officielle |
+| **Plateforme hôte** | PC (Linux) / Jetson | Carte de contrôle | PC / MCU |
+| **Idéal pour** | Chercheurs, développeurs IA | Chercheurs en manipulation | Étudiants, makers |
 
 ## Comment choisir
 
 - 🎓 Étudiants/éducation → **Lekiwi**(économique, simple)
 - 🤖 Recherche en préhension → **AmazingHand**(5 doigts, TTL)
 - 🧠 Recherche IA → **SO-ARM101**(intégration LeRobot, Jetson)
+
+## Combinaisons recommandées
+
+| Besoin | Configuration recommandée |
+|------|-------------------|
+| Recherche en téléopération IA | SO-ARM101 + AmazingHand (manipulation dextre) |
+| Laboratoire d'enseignement | Plusieurs unités Lekiwi |
+| Système robotique complet | SO-ARM101 + module IMU + accessoires de vision |
+
+## Tutoriels associés
+
+- [Tutoriel SO-ARM101](/fr/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial)
+- [Contrôle d'interface main robotique](/fr/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control)
+- [Tutoriel d'utilisation du robot mobile Lekiwi](/fr/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial)
+
+## Support
+
+- 📧 E-mail : support@juxitech.com
+- 🌐 Site officiel : [www.juxitech.com](https://www.juxitech.com)

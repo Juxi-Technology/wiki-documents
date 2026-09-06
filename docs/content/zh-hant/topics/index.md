@@ -12,12 +12,35 @@ description: 鉅犀科技機器人學習與自動化技術專題
 <div class="topic-cards">
   <div class="topic-card">
     <div class="topic-icon">🤖</div>
-    <h3><a href="/zh-hant/topics/robot-learning/">機器人學習</a></h3>
-    <p>基於 LeRobot 的全棧機器人學習，從數據採集到模型部署</p>
+    <h3><a href="/zh-hant/topics/robot-learning/">機器人學習專題</a></h3>
+    <p>基於 LeRobot 的全棧機器人學習技術</p>
   </div>
-</div>
-
-<style>
+  <div class="topic-card">
+    <div class="topic-icon">⚙️</div>
+    <h3><a href="/zh-hant/topics/jetpack-setup">JetPack 刷機與系統配置</a></h3>
+    <p>NVIDIA Jetson 平台 JetPack 刷機指南</p>
+  </div>
+  <div class="topic-card">
+    <div class="topic-icon">⚡</div>
+    <h3><a href="/zh-hant/topics/edge-ai-intro">邊緣 AI 部署入門</a></h3>
+    <p>Jetson 邊緣 AI 部署入門</p>
+  </div>
+  <div class="topic-card">
+    <div class="topic-icon">🦾</div>
+    <h3><a href="/zh-hant/topics/embodied-ai-intro">具身智能入門(LeRobot)</a></h3>
+    <p>具身智能入門</p>
+  </div>
+  <div class="topic-card">
+    <div class="topic-icon">🔓</div>
+    <h3><a href="/zh-hant/topics/open-source-hardware">我們為何構建開源——開源機器人硬體的案例</a></h3>
+    <p>鉅犀科技開源硬件理念:每件出廠產品附帶完整原理圖、韌體原始碼與 CAD 檔案</p>
+  </div>
+  <div class="topic-card">
+    <div class="topic-icon">📚</div>
+    <h3><a href="/zh-hant/topics/">Topics</a></h3>
+    <p>鉅犀科技全部技術專題與自動化指南總覽</p>
+  </div>
+</div><style>
 .topic-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));

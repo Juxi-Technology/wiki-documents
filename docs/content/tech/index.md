@@ -1,3 +1,8 @@
+---
+title: Tech Docs
+description: Here are all the technical docs!
+---
+
 
 # Tech Docs
 

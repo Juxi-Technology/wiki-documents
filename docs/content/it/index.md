@@ -31,22 +31,47 @@ outline: false
 ## Gamme di prodotti
 
 <div class="category-grid reveal">
-  <a :href="withBase('/it/products/so-arm101')" class="category-card">
+  <a :href="withBase('/it/tutorials/robot-arms/')" class="category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="Bracci robotici">
     <span>Bracci robotici</span>
   </a>
-  <a :href="withBase('/it/products/imu-module')" class="category-card">
+  <a :href="withBase('/it/tutorials/sensors/')" class="category-card">
     <img :src="withBase('/images/categories/IMU.png')" alt="Sensori">
     <span>Sensori</span>
   </a>
-  <a :href="withBase('/it/downloads/')" class="category-card">
-    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="Download">
-    <span>Download</span>
+  <a :href="withBase('/it/tutorials/accessories/')" class="category-card">
+    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="Accessori">
+    <span>Accessori</span>
   </a>
 </div>
 
 <HomeLatestDocs />
 
+## Esplora le categorie
+
+<div class="category-grid reveal">
+  <a :href="withBase('/it/tutorials/robot-arms/')" class="category-card">
+    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="Serie bracci robotici">
+    <span>Serie bracci robotici</span>
+  </a>
+  <a :href="withBase('/it/tutorials/accessories/')" class="category-card">
+    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="Accessori robotici">
+    <span>Accessori robotici</span>
+  </a>
+  <a :href="withBase('/it/tutorials/sensors/')" class="category-card">
+    <img :src="withBase('/images/categories/IMU.png')" alt="Sensori e percezione">
+    <span>Sensori e percezione</span>
+  </a>
+</div>
+
+## Ulteriori informazioni
+
+Grazie per aver scelto i nostri prodotti! Offriamo diversi metodi di supporto per rendere la tua esperienza il più fluida possibile.
+
+- 🌐 Sito ufficiale: [https://www.juxitech.com](https://www.juxitech.com/it)
+- 💬 Email: support@juxitech.com
+- 📧 Commerciale: sales@juxitech.com
+- 📺 Bilibili: [https://space.bilibili.com/3546906737248821](https://space.bilibili.com/3546906737248821)
 
 <CommunityStrip />
 <script setup>

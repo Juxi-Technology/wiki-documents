@@ -27,3 +27,38 @@ Test :
 import torch
 torch.cuda.is_available()
 ```
+
+Problème possible 2 :
+
+`ImportError: libcusparseLt.so.0: cannot open shared object file: No such file or directory`
+
+Solution :
+
+Installer la bibliothèque cuSPARSELt correspondant à la version CUDA supportée par la plateforme Jetson Orin.
+
+Lien de téléchargement :
+
+[https://developer.nvidia.com/cuda-12-6-0-download-archive?target_os=Linux&target_arch=aarch64-jetson&Compilation=Native&Distribution=Ubuntu&target_version=22.04&target_type=deb_local](https://developer.nvidia.com/cuda-12-6-0-download-archive?target_os=Linux&target_arch=aarch64-jetson&Compilation=Native&Distribution=Ubuntu&target_version=22.04&target_type=deb_local)
+
+[https://developer.nvidia.com/cusparselt-downloads](https://developer.nvidia.com/cusparselt-downloads)
+
+Problème possible 3 :
+
+`torchvision n'est pas disponible`
+
+Solution :
+
+Installer manuellement la version de torchvision correspondante. torch 2.5 → torchvision 0.20.0
+
+```Python
+git clone --branch v0.20.0 https://github.com/pytorch/vision.git
+```
+
+Compiler après téléchargement :
+
+```Plain Text
+export BUILD_VERSION=0.20.0
+python3 setup.py install --user
+```
+
+Lien de référence : https://zhuanlan.zhihu.com/p/1933164131969659101

@@ -1,3 +1,8 @@
+---
+title: Guía de desarrollo
+description: Esta guía explica cómo realizar un desarrollo secundario basado en los productos de JUXI.
+---
+
 # Guía de desarrollo
 
 Esta guía explica cómo realizar un desarrollo secundario basado en los productos de JUXI.

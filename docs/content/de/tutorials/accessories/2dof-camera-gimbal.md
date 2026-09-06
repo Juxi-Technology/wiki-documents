@@ -30,7 +30,24 @@ Open-Source-2-DOF-Kamera-Stabilisierungsplattform. Python-Steuerung, Farbverfolg
 | Tracking | Farbe/Gesicht/QR |
 | Sprache | Python 3 |
 
-## Grundsteuerung
+## Schnellstart
+
+### Hardware-Anschluss
+
+1. Servo an die serielle Busschnittstelle anschließen
+2. USB-zu-Seriell-Modul mit Computer/Jetson/Raspberry Pi verbinden
+3. Kamera an der Gimbal-Halterung montieren
+4. USB-Kamera anschließen
+
+### Abhängigkeiten installieren
+
+```bash
+pip install -r requirements.txt
+# Oder manuell installieren
+pip install opencv-python pyserial numpy
+```
+
+### Grundsteuerung
 
 ```python
 from sc_servo import SCServo, Gimbal
@@ -43,7 +60,7 @@ time.sleep(1)
 gimbal.set_angle(1, -20)  # pitch
 ```
 
-## Farbverfolgung
+### Farbverfolgung
 
 ```python
 import cv2, sys
@@ -72,6 +89,16 @@ while True:
     cv2.imshow('Color Tracking', frame)
     if cv2.waitKey(1) & 0xFF == ord('q'): break
 ```
+
+## Erweiterte Funktionen
+
+### Gesichtserkennungs-Tracking
+
+Der Gesichtsdetektor `src/detectors/face_detector.py` im Repository basiert auf OpenCV-DNN und kann für die automatische Gesichtsverfolgung genutzt werden.
+
+### Automatisches Tracking
+
+`examples/auto_tracking_demo.py` im Repository implementiert einen vollständigen Auto-Tracking-Ablauf, inklusive Zielauswahl, PID-Regelung und ruhigem Nachführen.
 
 ## FAQ
 

@@ -1,3 +1,8 @@
+---
+title: Référence API
+description: Cette page fournit la documentation de référence des API produits.
+---
+
 # Référence API
 
 Cette page fournit la documentation de référence des API produits.

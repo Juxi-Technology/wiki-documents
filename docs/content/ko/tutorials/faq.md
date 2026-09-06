@@ -125,7 +125,7 @@ keywords: [faq, 문제해결]
 **A:** PC(Linux/Windows), Jetson, Raspberry Pi — 각 튜토리얼의 "시스템 요구 사항"을 참조하세요.
 
 **Q: 지원을 받으려면?**
-
+**A:**
 - 📧 support@juxitech.com
 - 💬 [GitHub Issues](https://github.com/Juxi-Technology/wiki-documents/issues)
 

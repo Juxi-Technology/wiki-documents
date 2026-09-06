@@ -117,12 +117,13 @@ Frequently asked questions across Juxi Technology products, organized by categor
 ## General
 
 **Q: Feishu links in tutorials won't open?**
-Feishu docs are internal/collaborator-only. Prefer this wiki, or contact support@juxitech.com.
+**A:** Feishu docs are internal/collaborator-only. Prefer this wiki, or contact support@juxitech.com.
 
 **Q: Which platforms are supported?**
-PC (Linux/Windows), Jetson, Raspberry Pi — see the "System Requirements" in each tutorial.
+**A:** PC (Linux/Windows), Jetson, Raspberry Pi — see the "System Requirements" in each tutorial.
 
 **Q: How to get support?**
+**A:**
 - 📧 support@juxitech.com
 - 💬 [GitHub Issues](https://github.com/Juxi-Technology/wiki-documents/issues)
 

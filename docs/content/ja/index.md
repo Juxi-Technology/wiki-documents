@@ -31,22 +31,47 @@ outline: false
 ## 製品シリーズ
 
 <div class="category-grid reveal">
-  <a :href="withBase('/ja/products/so-arm101')" class="category-card">
+  <a :href="withBase('/ja/tutorials/robot-arms/')" class="category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="ロボットアーム">
     <span>ロボットアーム</span>
   </a>
-  <a :href="withBase('/ja/products/imu-module')" class="category-card">
+  <a :href="withBase('/ja/tutorials/sensors/')" class="category-card">
     <img :src="withBase('/images/categories/IMU.png')" alt="センサー">
     <span>センサー</span>
   </a>
-  <a :href="withBase('/ja/downloads/')" class="category-card">
-    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="ダウンロード">
-    <span>ダウンロード</span>
+  <a :href="withBase('/ja/tutorials/accessories/')" class="category-card">
+    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="アクセサリー">
+    <span>アクセサリー</span>
   </a>
 </div>
 
 <HomeLatestDocs />
 
+## カテゴリを見る
+
+<div class="category-grid reveal">
+  <a :href="withBase('/ja/tutorials/robot-arms/')" class="category-card">
+    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="ロボットアームシリーズ">
+    <span>ロボットアームシリーズ</span>
+  </a>
+  <a :href="withBase('/ja/tutorials/accessories/')" class="category-card">
+    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="ロボットアクセサリ">
+    <span>ロボットアクセサリ</span>
+  </a>
+  <a :href="withBase('/ja/tutorials/sensors/')" class="category-card">
+    <img :src="withBase('/images/categories/IMU.png')" alt="センサーと知覚">
+    <span>センサーと知覚</span>
+  </a>
+</div>
+
+## 詳細情報
+
+ご購入ありがとうございます！私たちは、あなたの利用体験をよりスムーズにするため、複数のサポート方法を用意しています。
+
+- 🌐 公式サイト：[https://www.juxitech.com](https://www.juxitech.com/ja)
+- 💬 メール：support@juxitech.com
+- 📧 ビジネス：sales@juxitech.com
+- 📺 Bilibili：[https://space.bilibili.com/3546906737248821](https://space.bilibili.com/3546906737248821)
 
 <CommunityStrip />
 <script setup>

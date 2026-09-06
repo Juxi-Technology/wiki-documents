@@ -15,7 +15,13 @@ function buildFaqPageLd(relativePath: string) {
     const q = seg.split('**')[0].replace(/\s*\?+\s*$/, '').trim()
     const am = seg.match(/\*\*A\s*:\*\*\s*([\s\S]*?)(?=\n\*\*Q\s*:|\n---|$)/)
     if (!am) continue
-    const a = am[1].trim()
+    const a = am[1]
+      // 答案清洗为纯文本:markdown 链接保留文字、列表记号/行内代码去掉、压缩空白
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+      .replace(/^\s*[-*]\s+/gm, '')
+      .replace(/`([^`]+)`/g, '$1')
+      .replace(/\s*\n+\s*/g, ' ')
+      .trim()
     if (!q || !a) continue
     mainEntity.push({
       '@type': 'Question',
@@ -27,19 +33,39 @@ function buildFaqPageLd(relativePath: string) {
   return { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity }
 }
 
-// 面包屑 JSON-LD:按 URL 段生成(站点根 → 各段 → 当前页),skip 首页
-function buildBreadcrumbLd(url: string, title: string) {
+// 面包屑段名(与 theme/components/Breadcrumb.vue 同源;lang 值同 config lang)
+const SEG_NAMES: Record<string, Record<string, string>> = {
+  tutorials: { 'zh-CN': '教程', en: 'Tutorials', 'zh-HK': '教程', ja: 'チュートリアル', ko: '튜토리얼', de: 'Tutorials', fr: 'Tutoriels', es: 'Tutoriales', it: 'Tutorial' },
+  products: { 'zh-CN': '产品', en: 'Products', 'zh-HK': '產品', ja: '製品', ko: '제품', de: 'Produkte', fr: 'Produits', es: 'Productos', it: 'Prodotti' },
+  topics: { 'zh-CN': '技术专题', en: 'Topics', 'zh-HK': '技術專題', ja: 'トピック', ko: '토픽', de: 'Themen', fr: 'Sujets', es: 'Temas', it: 'Argomenti' },
+  tech: { 'zh-CN': '技术文档', en: 'Tech Docs', 'zh-HK': '技術文件', ja: '技術ドキュメント', ko: '기술 문서', de: 'Technikdoku', fr: 'Documentation tech', es: 'Docs técnicos', it: 'Documentazione' },
+  cases: { 'zh-CN': '用户案例', en: 'Cases', 'zh-HK': '用戶案例', ja: '事例', ko: '사례', de: 'Fälle', fr: 'Cas', es: 'Casos', it: 'Casi' },
+  community: { 'zh-CN': '社区', en: 'Community', 'zh-HK': '社區', ja: 'コミュニティ', ko: '커뮤니티', de: 'Community', fr: 'Communauté', es: 'Comunidad', it: 'Community' },
+  downloads: { 'zh-CN': '下载', en: 'Downloads', 'zh-HK': '下載', ja: 'ダウンロード', ko: '다운로드', de: 'Downloads', fr: 'Téléchargements', es: 'Descargas', it: 'Download' },
+  about: { 'zh-CN': '关于我们', en: 'About', 'zh-HK': '關於我們', ja: '私たちについて', ko: '소개', de: 'Über uns', fr: 'À propos', es: 'Sobre nosotros', it: 'Chi siamo' },
+}
+const HOME_NAMES: Record<string, string> = { 'zh-CN': '首页', en: 'Home', 'zh-HK': '首頁', ja: 'ホーム', ko: '홈', de: 'Start', fr: 'Accueil', es: 'Inicio', it: 'Home' }
+
+// 语言目录 → config lang 值(PageData 没有 lang 字段,须由 relativePath 推导)
+const LANG_CODE: Record<string, string> = { 'zh-hans': 'zh-CN', 'zh-hant': 'zh-HK', ja: 'ja', ko: 'ko', de: 'de', fr: 'fr', es: 'es', it: 'it' }
+function langOf(relativePath: string) {
+  return LANG_CODE[relativePath.split('/')[0]] || 'en'
+}
+
+// 面包屑 JSON-LD:按 URL 段生成(站点根 → 各段 → 当前页),skip 首页;
+// 中间段名按当前语言映射,item 保留语言前缀(否则 zh 页面面包屑指向 en URL)
+function buildBreadcrumbLd(url: string, title: string, lang: string) {
   if (url === '/' || url === '') return null
   const segs = url.split('/').filter(Boolean)
   const LANG_SEGS = ['zh-hans', 'zh-hant', 'ja', 'ko', 'de', 'fr', 'es', 'it']
-  if (LANG_SEGS.includes(segs[0])) segs.shift()
+  const langSeg = LANG_SEGS.includes(segs[0]) ? segs.shift() : ''
   if (!segs.length) return null
-  const items = [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://wiki.juxitech.com/' }]
+  const items = [{ '@type': 'ListItem', position: 1, name: HOME_NAMES[lang] || 'Home', item: 'https://wiki.juxitech.com/' }]
   let acc = ''
   for (let i = 0; i < segs.length; i++) {
     acc += '/' + segs[i]
-    const name = i === segs.length - 1 ? title : segs[i]
-    items.push({ '@type': 'ListItem', position: i + 2, name, item: 'https://wiki.juxitech.com' + acc })
+    const name = i === segs.length - 1 ? title : (SEG_NAMES[segs[i]]?.[lang] || segs[i])
+    items.push({ '@type': 'ListItem', position: i + 2, name, item: 'https://wiki.juxitech.com' + (langSeg ? '/' + langSeg : '') + acc })
   }
   return { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: items }
 }
@@ -48,6 +74,9 @@ function buildBreadcrumbLd(url: string, title: string) {
 // canonical 不在此处:逐页 unique canonical 由 transformHead 生成(此前钉死首页导致全站声明首页)
 const globalHead = [
   ['meta', { name: 'baidu-site-verification', content: 'codeva-Lzl2d4xzcv' }],
+  // favicon 复用现有 logo(此前缺失,浏览器访问会 404;PNG 可直接作 favicon)
+  ['link', { rel: 'icon', type: 'image/png', href: '/images/logos/logo-black.png' }],
+  ['link', { rel: 'apple-touch-icon', href: '/images/logos/logo-black.png' }],
   ['meta', { property: 'og:type', content: 'website' }],
   ['meta', { property: 'og:image', content: 'https://wiki.juxitech.com/images/logos/logo-black.png' }],
   ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
@@ -196,6 +225,7 @@ const zhCN = {
               collapsed: true,
               items: [
                 { text: '产品信息', link: '/zh-hans/tutorials/sensors/imu/product-info' },
+                { text: 'IMU 校准', link: '/zh-hans/tutorials/sensors/imu/calibration' },
                 {
                   text: '多板卡示例',
                   items: [
@@ -417,6 +447,7 @@ const en = {
               collapsed: true,
               items: [
                 { text: 'Product Info', link: '/tutorials/sensors/imu/product-info' },
+                { text: 'IMU Calibration', link: '/tutorials/sensors/imu/calibration' },
                 {
                   text: 'Multi-Board Examples',
                   items: [
@@ -638,6 +669,7 @@ const zhHK = {
               collapsed: true,
               items: [
                 { text: '產品資料', link: '/zh-hant/tutorials/sensors/imu/product-info' },
+                { text: 'IMU 校準', link: '/zh-hant/tutorials/sensors/imu/calibration' },
                 {
                   text: '多板卡示例',
                   items: [
@@ -1963,7 +1995,8 @@ export default defineConfig({
     const base = 'https://wiki.juxitech.com'
     const isHome = pageData.relativePath === 'index.md'
     const faqLd = buildFaqPageLd(pageData.relativePath)
-    const breadcrumbLd = buildBreadcrumbLd(pageUrlOf(pageData.relativePath), pageData.title || '')
+    const pageLang = langOf(pageData.relativePath)
+    const breadcrumbLd = buildBreadcrumbLd(pageUrlOf(pageData.relativePath), pageData.title || '', pageLang)
     let ld
     if (isHome) {
       ld = {
@@ -1999,14 +2032,15 @@ export default defineConfig({
           name: 'Juxi Technology',
           url: base + '/',
         },
-        inLanguage: pageData.lang || 'zh-CN',
+        inLanguage: pageLang,
       }
     }
     const heads: any[] = [
       // 逐页 canonical(与 hreflang 同一 URL 推导,404 等虚拟页不注入)
       !pageData.isNotFound && ['link', { rel: 'canonical', href: base + pageUrlOf(pageData.relativePath) }],
-      // hreflang:9 语言 alternate + x-default(置顶,爬虫优先识别语言对应)
-      ...injectHreflang(pageData),
+      // hreflang:9 语言 alternate + x-default(置顶,爬虫优先识别语言对应);
+      // 404 虚拟页无对应内容,跳过(与 canonical 同步)
+      ...(pageData.isNotFound ? [] : injectHreflang(pageData)),
       ['script', { type: 'application/ld+json' }, JSON.stringify(ld)],
     ].filter(Boolean)
     if (breadcrumbLd) heads.push(['script', { type: 'application/ld+json' }, JSON.stringify(breadcrumbLd)])

@@ -31,22 +31,47 @@ outline: false
 ## Produktreihen
 
 <div class="category-grid reveal">
-  <a :href="withBase('/de/products/so-arm101')" class="category-card">
+  <a :href="withBase('/de/tutorials/robot-arms/')" class="category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="Roboterarme">
     <span>Roboterarme</span>
   </a>
-  <a :href="withBase('/de/products/imu-module')" class="category-card">
+  <a :href="withBase('/de/tutorials/sensors/')" class="category-card">
     <img :src="withBase('/images/categories/IMU.png')" alt="Sensoren">
     <span>Sensoren</span>
   </a>
-  <a :href="withBase('/de/downloads/')" class="category-card">
-    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="Downloads">
-    <span>Downloads</span>
+  <a :href="withBase('/de/tutorials/accessories/')" class="category-card">
+    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="Zubehör">
+    <span>Zubehör</span>
   </a>
 </div>
 
 <HomeLatestDocs />
 
+## Kategorien durchstöbern
+
+<div class="category-grid reveal">
+  <a :href="withBase('/de/tutorials/robot-arms/')" class="category-card">
+    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="Serie Roboterarme">
+    <span>Serie Roboterarme</span>
+  </a>
+  <a :href="withBase('/de/tutorials/accessories/')" class="category-card">
+    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="Roboter-Accessoires">
+    <span>Roboter-Accessoires</span>
+  </a>
+  <a :href="withBase('/de/tutorials/sensors/')" class="category-card">
+    <img :src="withBase('/images/categories/IMU.png')" alt="Sensoren und Wahrnehmung">
+    <span>Sensoren und Wahrnehmung</span>
+  </a>
+</div>
+
+## Weitere Informationen
+
+Vielen Dank, dass Sie sich für unsere Produkte entschieden haben! Wir bieten mehrere Support-Möglichkeiten, damit Ihre Nutzung so reibungslos wie möglich verläuft.
+
+- 🌐 Offizielle Website: [https://www.juxitech.com](https://www.juxitech.com/de)
+- 💬 E-Mail: support@juxitech.com
+- 📧 Geschäftlich: sales@juxitech.com
+- 📺 Bilibili: [https://space.bilibili.com/3546906737248821](https://space.bilibili.com/3546906737248821)
 
 <CommunityStrip />
 <script setup>

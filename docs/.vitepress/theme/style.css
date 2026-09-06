@@ -94,13 +94,15 @@
 }
 
 /* ---- 区块滚动渐入(首页各 section) ---- */
-.reveal {
+/* 门控在 html.js-anim(effects.ts 启动时添加):无 JS 时内容直接可见,
+   否则 SSG 页面在脚本加载失败/禁用时整块区块保持透明不可读 */
+.js-anim .reveal {
   opacity: 0;
   transform: translateY(18px);
   transition: opacity 0.55s ease, transform 0.55s ease;
 }
 
-.reveal.in {
+.js-anim .reveal.in {
   opacity: 1;
   transform: none;
 }
@@ -202,7 +204,7 @@
 
 /* ---- 减少动效偏好:全部停用 ---- */
 @media (prefers-reduced-motion: reduce) {
-  .reveal {
+  .js-anim .reveal {
     opacity: 1;
     transform: none;
     transition: none;

@@ -117,12 +117,13 @@ keywords: [faq, 常見問題, 故障排除, troubleshooting]
 ## 通用問題
 
 **Q: 教程裡的飛書鏈接打不開?**
-飛書文檔僅對內部/協作者可見。公開文檔請優先使用本 wiki 頁面,或聯繫 support@juxitech.com。
+**A:** 飛書文檔僅對內部/協作者可見。公開文檔請優先使用本 wiki 頁面,或聯繫 support@juxitech.com。
 
 **Q: 需要在哪個平台上運行?**
-產品均支持 PC(Linux/Windows)、Jetson、樹莓派等主流平台,詳見各教程「系統要求」。
+**A:** 產品均支持 PC(Linux/Windows)、Jetson、樹莓派等主流平台,詳見各教程「系統要求」。
 
 **Q: 如何獲得技術支援?**
+**A:**
 - 📧 support@juxitech.com
 - 💬 [GitHub Issues](https://github.com/Juxi-Technology/wiki-documents/issues)
 - 📺 [B站](https://space.bilibili.com/3546906737248821) 評論區

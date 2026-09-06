@@ -31,22 +31,47 @@ outline: false
 ## Gamas de productos
 
 <div class="category-grid reveal">
-  <a :href="withBase('/es/products/so-arm101')" class="category-card">
+  <a :href="withBase('/es/tutorials/robot-arms/')" class="category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="Brazos robóticos">
     <span>Brazos robóticos</span>
   </a>
-  <a :href="withBase('/es/products/imu-module')" class="category-card">
+  <a :href="withBase('/es/tutorials/sensors/')" class="category-card">
     <img :src="withBase('/images/categories/IMU.png')" alt="Sensores">
     <span>Sensores</span>
   </a>
-  <a :href="withBase('/es/downloads/')" class="category-card">
-    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="Descargas">
-    <span>Descargas</span>
+  <a :href="withBase('/es/tutorials/accessories/')" class="category-card">
+    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="Accesorios">
+    <span>Accesorios</span>
   </a>
 </div>
 
 <HomeLatestDocs />
 
+## Explorar categorías
+
+<div class="category-grid reveal">
+  <a :href="withBase('/es/tutorials/robot-arms/')" class="category-card">
+    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="Serie de brazos robóticos">
+    <span>Serie de brazos robóticos</span>
+  </a>
+  <a :href="withBase('/es/tutorials/accessories/')" class="category-card">
+    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="Accesorios robóticos">
+    <span>Accesorios robóticos</span>
+  </a>
+  <a :href="withBase('/es/tutorials/sensors/')" class="category-card">
+    <img :src="withBase('/images/categories/IMU.png')" alt="Sensores y percepción">
+    <span>Sensores y percepción</span>
+  </a>
+</div>
+
+## Más información
+
+¡Gracias por elegir nuestros productos! Ofrecemos varios métodos de soporte para que tu experiencia sea lo más fluida posible.
+
+- 🌐 Sitio web oficial: [https://www.juxitech.com](https://www.juxitech.com/es)
+- 💬 Correo electrónico: support@juxitech.com
+- 📧 Negocios: sales@juxitech.com
+- 📺 Bilibili: [https://space.bilibili.com/3546906737248821](https://space.bilibili.com/3546906737248821)
 
 <CommunityStrip />
 <script setup>

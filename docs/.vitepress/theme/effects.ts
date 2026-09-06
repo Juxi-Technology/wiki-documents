@@ -2,6 +2,8 @@
 if (typeof window !== 'undefined') {
   // 模块执行标志(供调试)
   ;(window as any).__juxiEffects = true
+  // 渐入门控:style.css 中 .reveal 的初始隐藏仅在 html.js-anim 下生效
+  document.documentElement.classList.add('js-anim')
 
   // ---- 滚动渐入:元素顶部进入视口即加 .in ----
   // 不用 IntersectionObserver:页面可被一键滚到底/锚点跳转,元素会被"跨帧越过",

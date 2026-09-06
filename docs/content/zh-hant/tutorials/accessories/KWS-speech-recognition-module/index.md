@@ -18,3 +18,23 @@ description: "KWS 語音識別模組系列教程——串口通信、固件燒�
 - [ROS2 RViz2可視化](./ROS2-rviz2-visualization.md)
 - [中英文識別詞固件下載與燒錄](./download-and-burn-firmware-for-chinese-and-english-recognition-words.md)
 - [樹莓派串口通訊](./raspberry-pi-serial-communication.md)
+
+
+---
+
+## 官方倉庫示例
+
+鉅犀科技為 KWS 語音識別模組提供開源代碼：[GitHub](https://github.com/Juxi-Technology/Sound-card-for-KWS-speech-recognition-module)
+
+### Python 串口通信
+
+倉庫中的 Python 示例演示了如何通過串口與 KWS 模組通信，獲取喚醒詞識別結果：
+
+```python
+import serial
+ser = serial.Serial('/dev/ttyUSB0', 115200)
+while True:
+    if ser.in_waiting:
+        data = ser.readline().decode().strip()
+        print(f"識別結果: {data}")
+```

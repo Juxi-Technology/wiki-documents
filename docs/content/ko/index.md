@@ -31,22 +31,47 @@ outline: false
 ## 제품 시리즈
 
 <div class="category-grid reveal">
-  <a :href="withBase('/ko/products/so-arm101')" class="category-card">
+  <a :href="withBase('/ko/tutorials/robot-arms/')" class="category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="로봇 암">
     <span>로봇 암</span>
   </a>
-  <a :href="withBase('/ko/products/imu-module')" class="category-card">
+  <a :href="withBase('/ko/tutorials/sensors/')" class="category-card">
     <img :src="withBase('/images/categories/IMU.png')" alt="센서">
     <span>센서</span>
   </a>
-  <a :href="withBase('/ko/downloads/')" class="category-card">
-    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="다운로드">
-    <span>다운로드</span>
+  <a :href="withBase('/ko/tutorials/accessories/')" class="category-card">
+    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="액세서리">
+    <span>액세서리</span>
   </a>
 </div>
 
 <HomeLatestDocs />
 
+## 카테고리 둘러보기
+
+<div class="category-grid reveal">
+  <a :href="withBase('/ko/tutorials/robot-arms/')" class="category-card">
+    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="로봇 팔 시리즈">
+    <span>로봇 팔 시리즈</span>
+  </a>
+  <a :href="withBase('/ko/tutorials/accessories/')" class="category-card">
+    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="로봇 액세서리">
+    <span>로봇 액세서리</span>
+  </a>
+  <a :href="withBase('/ko/tutorials/sensors/')" class="category-card">
+    <img :src="withBase('/images/categories/IMU.png')" alt="센서와 인지">
+    <span>센서와 인지</span>
+  </a>
+</div>
+
+## 추가 정보
+
+제품을 선택해 주셔서 감사합니다! 사용 경험이 최대한 원활하도록 다양한 지원 방법을 제공하고 있습니다.
+
+- 🌐 공식 웹사이트: [https://www.juxitech.com](https://www.juxitech.com/ko)
+- 💬 이메일: support@juxitech.com
+- 📧 비즈니스: sales@juxitech.com
+- 📺 Bilibili: [https://space.bilibili.com/3546906737248821](https://space.bilibili.com/3546906737248821)
 
 <CommunityStrip />
 <script setup>

@@ -42,20 +42,24 @@ const localePrefix = computed(() => {
 })
 
 // 根据当前页面路径匹配产品购买链接(带语言前缀)
-const productUrl = computed(() => {
+const matched = computed(() => {
   const path = page.value.relativePath
-  const matched = PRODUCT_MAP.find((p) => path.includes(p.match))
-  const basePath = matched ? matched.path : ''
-  return `${SITE_URL}/${localePrefix.value}${basePath}`
+  return PRODUCT_MAP.find((p) => path.includes(p.match))
 })
+const productUrl = computed(() => `${SITE_URL}/${localePrefix.value}${matched.value ? matched.value.path : ''}`)
 
 // 官网链接同样带语言前缀
 const siteUrl = computed(() => `${SITE_URL}/${localePrefix.value}`)
 
-// 非教程页不显示
+// 栏目判定:跳过语言前缀段(topics/tech 等非产品栏目不显示购买条,
+// 否则"购买此产品"无上下文且按钮落空)
+const NON_PRODUCT_SECTIONS = ['topics', 'tech', 'community', 'cases', 'about', 'downloads']
 const isVisible = computed(() => {
   if (frontmatter.value.purchase === false) return false
-  return !page.value.relativePath.endsWith('index.md')
+  if (page.value.relativePath.endsWith('index.md')) return false
+  const segs = page.value.relativePath.split('/')
+  const section = localeIndex.value === 'root' ? segs[0] : segs[1]
+  return !NON_PRODUCT_SECTIONS.includes(section)
 })
 
 const copy = computed(() => {
@@ -75,8 +79,8 @@ const copy = computed(() => {
 
 <template>
   <div v-if="isVisible" class="purchase-bar">
-    <span class="purchase-text">{{ copy.buy }}</span>
-    <a :href="productUrl" target="_blank" rel="noopener" class="purchase-btn primary">{{ copy.store }}</a>
+    <span v-if="matched" class="purchase-text">{{ copy.buy }}</span>
+    <a v-if="matched" :href="productUrl" target="_blank" rel="noopener" class="purchase-btn primary">{{ copy.store }}</a>
     <a :href="siteUrl" target="_blank" rel="noopener" class="purchase-btn">{{ copy.site }}</a>
   </div>
 </template>

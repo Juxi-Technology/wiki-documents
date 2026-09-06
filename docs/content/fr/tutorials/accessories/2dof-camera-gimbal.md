@@ -30,7 +30,24 @@ Plateforme de stabilisation de caméra open source 2-DOF. Contrôle Python, suiv
 | Suivi | Couleur/visage/QR |
 | Langage | Python 3 |
 
-## Contrôle de base
+## Démarrage rapide
+
+### Connexion matérielle
+
+1. Connecter le servo à l'interface du bus série
+2. Connecter le module USB-série à votre PC / Jetson / Raspberry Pi
+3. Monter la caméra sur le support du cardan
+4. Connecter la caméra USB
+
+### Installation des dépendances
+
+```bash
+pip install -r requirements.txt
+# Ou installation manuelle
+pip install opencv-python pyserial numpy
+```
+
+### Contrôle de base
 
 ```python
 from sc_servo import SCServo, Gimbal
@@ -43,7 +60,7 @@ time.sleep(1)
 gimbal.set_angle(1, -20)  # pitch
 ```
 
-## Suivi de couleur
+### Suivi de couleur
 
 ```python
 import cv2, sys
@@ -73,6 +90,16 @@ while True:
     if cv2.waitKey(1) & 0xFF == ord('q'): break
 ```
 
+## Fonctions avancées
+
+### Suivi par détection de visage
+
+Le fichier `src/detectors/face_detector.py` du dépôt fournit un détecteur de visage basé sur OpenCV DNN, utilisable pour le suivi automatique de visage.
+
+### Suivi automatique
+
+Le fichier `examples/auto_tracking_demo.py` du dépôt implémente un flux complet de suivi automatique, incluant la sélection de cible, le contrôle PID et un suivi fluide.
+
 ## FAQ
 
 **Q : Connexion série échoue ?**
@@ -88,3 +115,4 @@ Ajuster PID, réduire la résolution.
 
 - 📧 support@juxitech.com
 - 🌐 [www.juxitech.com](https://www.juxitech.com)
+- 💻 Dépôt open source : [GitHub](https://github.com/Juxi-Technology/2dof-camera-gimbal)

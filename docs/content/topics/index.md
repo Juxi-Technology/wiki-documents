@@ -13,11 +13,34 @@ Deep dive into robotics and automation technologies with real products and runna
   <div class="topic-card">
     <div class="topic-icon">🤖</div>
     <h3><a href="/topics/robot-learning/">Robot Learning</a></h3>
-    <p>Full-stack robot learning based on LeRobot, from data collection to deployment</p>
+    <p>Full-stack robot learning technologies based o…</p>
   </div>
-</div>
-
-<style>
+  <div class="topic-card">
+    <div class="topic-icon">⚙️</div>
+    <h3><a href="/topics/jetpack-setup">JetPack Flashing & System Setup</a></h3>
+    <p>NVIDIA Jetson JetPack flashing guide</p>
+  </div>
+  <div class="topic-card">
+    <div class="topic-icon">⚡</div>
+    <h3><a href="/topics/edge-ai-intro">Edge AI Deployment Intro</a></h3>
+    <p>Edge AI deployment on Jetson</p>
+  </div>
+  <div class="topic-card">
+    <div class="topic-icon">🦾</div>
+    <h3><a href="/topics/embodied-ai-intro">Embodied AI Intro (LeRobot)</a></h3>
+    <p>Embodied AI intro</p>
+  </div>
+  <div class="topic-card">
+    <div class="topic-icon">🔓</div>
+    <h3><a href="/topics/open-source-hardware">Why We Build Open</a></h3>
+    <p>JuxiTech's open-source hardware philosophy</p>
+  </div>
+  <div class="topic-card">
+    <div class="topic-icon">📚</div>
+    <h3><a href="/topics/">Topics</a></h3>
+    <p>All Juxi Technology technical topics and automation guides in one place</p>
+  </div>
+</div><style>
 .topic-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
