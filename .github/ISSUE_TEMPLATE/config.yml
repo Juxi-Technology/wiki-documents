@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📋 Open Tasks & Project Board
+    url: https://github.com/orgs/Juxi-Technology/projects/
+    about: 查看社区需求看板(查看进行中任务)
+  - name: 📧 Support Email
+    url: mailto:support@juxitech.com
+    about: 产品售后/技术支持

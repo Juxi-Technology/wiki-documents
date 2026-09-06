@@ -1,6 +1,9 @@
 # <img src="docs/public/images/logos/logo-black.png" width="80" align="left" style="margin-right: 16px;"> 钜犀科技 Wiki
 
 [![Deploy](https://github.com/Juxi-Technology/wiki-documents/actions/workflows/deploy.yml/badge.svg)](https://github.com/Juxi-Technology/wiki-documents/actions/workflows/deploy.yml)
+[![9 Languages](https://img.shields.io/badge/languages-9%20locales-10b981)](https://wiki.juxitech.com/)
+[![llms.txt](https://img.shields.io/badge/LLM%20ready-llms.txt-634b8f)](https://wiki.juxitech.com/llms.txt)
+[![VitePress](https://img.shields.io/badge/VitePress-1.x-646cff)](https://vitepress.dev/)
 
 钜犀科技机器人与 AI 硬件产品的开放文档平台。涵盖机器人机械臂、传感器、配件及开发者指南。
 
@@ -39,6 +42,15 @@ npm run docs:build    # 生产构建到 docs/.vitepress/dist
 npm run docs:preview  # 预览生产构建
 ```
 
+## 部署
+
+站点通过 `.github/workflows/deploy.yml` 发布到 **GitHub Pages** 的 `wiki.juxitech.com`:
+
+- **触发**:推送到 `main`(或手动 `workflow_dispatch`);OIDC 构建+部署(`actions/deploy-pages`)
+- **域名**:自定义域名由 `docs/public/CNAME` 声明;**DNS**:`wiki.juxitech.com` CNAME → `<user>.github.io`,然后在仓库启用 GitHub Pages
+- **CI 检查**:每次构建前执行 `check:links`(死链防护)与 `gen:llms`(重新生成 `llms-full.txt`)
+- **需要完整 git 历史**:workflow 使用 `fetch-depth: 0`,首页"最后更新"日期来自真实提交时间
+
 ## 贡献
 
 参见[贡献指南](https://wiki.juxitech.com/community/contributing)和 [Pull Request 模板](.github/PULL_REQUEST_TEMPLATE.md)。
@@ -51,9 +63,9 @@ npm run docs:preview  # 预览生产构建
 
 ## 联系我们
 
-- 🌐 [juxitech.com](https://www.juxitech.com)
+- 🌐 [juxitech.com](https://www.juxitech.com/zh-hans)
 - 🛒 [钜犀科技 淘宝](https://juxitechnology.taobao.com/)
 - 📧 [support@juxitech.com](mailto:support@juxitech.com)
 - 📧 [sales@juxitech.com](mailto:sales@juxitech.com)
 
-[English](README.md) | [繁體中文](README_zh-HK.md)
+[English](README.md) | [繁體中文](README_zh-HK.md) | [日本語](README_ja.md) | [한국어](README_ko.md) | [Deutsch](README_de.md) | [Français](README_fr.md) | [Español](README_es.md) | [Italiano](README_it.md)
