@@ -2028,6 +2028,8 @@ export default defineConfig({
         headline: pageData.title || 'Juxi Technology Wiki',
         description: pageData.description || '',
         url: base + '/' + pageData.relativePath.replace(/(^|\/)index\.md$/, '$1').replace(/\.md$/, ''),
+        // git 最后修改时间(毫秒时间戳,getGitTimestamp 返回 +new Date)→ ISO8601
+        ...(pageData.lastUpdated ? { dateModified: new Date(pageData.lastUpdated).toISOString() } : {}),
         publisher: {
           '@type': 'Organization',
           name: 'Juxi Technology',
