@@ -12,6 +12,8 @@ export default createContentLoader(
     '**/cases/**/*.md',
     '**/community/**/*.md',
     '**/products/**/*.md',
+    '**/downloads/**/*.md',
+    '**/about/**/*.md',
   ],
   {
     render: true, // 渲染出 html,以提取正文纯文本进索引(此前仅标题+描述)
@@ -28,7 +30,6 @@ export default createContentLoader(
         return {
           url,
           title: frontmatter.title || url.split('/').pop() || url,
-          description: frontmatter.description || '',
           text,
         }
       })

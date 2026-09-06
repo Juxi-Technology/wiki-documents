@@ -13,6 +13,18 @@
 - [SO-ARM101 机械臂视觉套件](https://wiki.juxitech.com/zh-hans/products/robot-vision-kit): 钜犀科技 SO-ARM101 机械臂视觉套件——腕部/侧方/俯视三视角安装,60FPS 定焦或 30FPS 自动对焦变焦相机,兼容 ACT/Smolvla/Pi0/GR00T 训练框架
 - [JUXI 总线舵机驱动板](https://wiki.juxitech.com/zh-hans/products/servo-driver-board): 钜犀科技 JUXI 总线舵机驱动板——单总线控制 253 个舵机,7~12.6V 宽电压,Type-C 即插即用,专为 LeRobot SO-ARM 设计
 - [SO-ARM101 TPU 柔性夹爪](https://wiki.juxitech.com/zh-hans/products/tpu-flexible-gripper): 钜犀科技 SO-ARM101 TPU 柔性夹爪——软 TPU 材质安全抓取不规则/易碎物品,支持臂载相机,可选 30FPS 变焦或 60FPS 定焦
+- [2 自由度舵机云台](https://wiki.juxitech.com/zh-hans/products/2dof-gimbal): 钜犀科技 2 自由度舵机云台——SCS0009 总线舵机,180° 水平/90° 垂直,200 万摄像头,AI 视觉追踪
+- [4K HDMI 采集卡](https://wiki.juxitech.com/zh-hans/products/4k-hdmi-capture): 钜犀科技 4K HDMI 采集卡——4K 高清采集,HDMI/Micro HDMI/DP 多接口,USB 直连,采集直播录屏
+- [AmazingHand 开源 4 指灵巧手](https://wiki.juxitech.com/zh-hans/products/amazinghand): 钜犀科技 AmazingHand 开源4 指灵巧手,TTL 总线控制,开源 CAD,具身智能与人机交互研究
+- [Feetech 总线舵机(SCS0009 / STS3215)](https://wiki.juxitech.com/zh-hans/products/feetech-servo): 钜犀科技 Feetech 串行总线舵机 SCS0009 与 STS3215——SCS 通信协议,磁编码/电位器双版本,内存表解析,上位机调试
+- [IMU 高精度惯导模块](https://wiki.juxitech.com/zh-hans/products/imu-module): 钜犀科技 IMU 高精度惯导模块——100Hz 姿态解算,六轴/九轴/十轴可选,IIC+串口双通信,ROS 集成
+- [79° IMX219 CSI 摄像头](https://wiki.juxitech.com/zh-hans/products/imx219-csi-camera): 钜犀科技 79° IMX219 CSI 摄像头——800 万像素原生 CSI 接口,77° FOV,NVIDIA Jetson 低延迟视觉
+- [4 合 1 KVM 切换器](https://wiki.juxitech.com/zh-hans/products/kvm-switch): 钜犀科技 4 合 1 KVM 切换器——TTL 串口/蓝牙扩展坞,多设备一键切换,机器人开发调试伴侣
+- [KWS 语音交互模块](https://wiki.juxitech.com/zh-hans/products/kws-voice-module): 钜犀科技 KWS 语音识别交互模块——中英文唤醒词识别,串口/RViz2 可视化,适配 Jetson/树莓派,固件开源
+- [Lekiwi 具身智能移动机器人](https://wiki.juxitech.com/zh-hans/products/lekiwi): 钜犀科技 Lekiwi 具身智能移动机器人——低成本教学机械臂/移动底盘,舵机控制,教育与入门首选
+- [SO-ARM101 顶置相机支架](https://wiki.juxitech.com/zh-hans/products/overhead-camera-mount): 钜犀科技 SO-ARM101 顶置相机支架——俯视视角安装,兼容 RealSense,机械臂视觉数据采集
+- [SO-ARM101 开发套件](https://wiki.juxitech.com/zh-hans/products/so-arm101): 钜犀科技 SO-ARM101 双臂机器人开发套件——6 DOF 开源机械臂,LeRobot 生态,遥操作/模仿学习/AI 研究首选
+- [USB 免驱声卡](https://wiki.juxitech.com/zh-hans/products/usb-sound-card): 钜犀科技 USB 免驱声卡——板载麦克风+扬声器,即插即用,降噪,适配树莓派/Jetson/PC 语音交互
 - [/tech/api-reference](https://wiki.juxitech.com/zh-hans/tech/api-reference)
 - [/tech/dev-guide](https://wiki.juxitech.com/zh-hans/tech/dev-guide)
 - [树莓派/Jetson-OLED副屏教程](https://wiki.juxitech.com/zh-hans/tutorials/accessories/0.91-oled-screen-tutorial): 使用0.91寸OLED测试I2C通讯功能，按照下面接线进行连接：
@@ -69,8 +81,7 @@
 - [IMU模块介绍](https://wiki.juxitech.com/zh-hans/tutorials/sensors/imu/product-info): 高精度 IMU 姿态传感器内置72MHz 高性能 32 位处理器，可实时姿态解算与动态补偿，数据更新频率高达 100Hz，兼具响应迅捷、输出稳定的优势。支持 IIC 与串口双通信模式，兼容单片机、Linux 主控，并可无缝集成 ROS 系统，广泛适用于机器人运动控制、无人机航姿稳定、智能导航定位等高
 - [ROS1应用](https://wiki.juxitech.com/zh-hans/tutorials/sensors/imu/ros-examples/ros1): 系统配置：ubuntu20.04
 - [ROS2应用](https://wiki.juxitech.com/zh-hans/tutorials/sensors/imu/ros-examples/ros2): 系统配置：ubuntu22.04
-- [LeRobot SO-ARM101机械臂教程](https://wiki.juxitech.com/zh-hans/tutorials/so-arm101-tutorial): 本教程已更新至12月15日，可选择跟随最新版官方文档进行操作，官方文档具体教程可以参考本链接。若需要URDF等文件请参考本链接。9月15日旧版本请参考该链接。SO-ARM101与SO-ARM100运行代码相互兼容。
-- [教程标题](https://wiki.juxitech.com/zh-hans/tutorials/so-arm101/template-tutorial): 教程描述
+- [LeRobot SO-ARM101机械臂教程](https://wiki.juxitech.com/zh-hans/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial): 本教程已更新至12月15日，可选择跟随最新版官方文档进行操作，官方文档具体教程可以参考本链接。若需要URDF等文件请参考本链接。9月15日旧版本请参考该链接。SO-ARM101与SO-ARM100运行代码相互兼容。
 - [软件配置](https://wiki.juxitech.com/zh-hans/tutorials/software-config): 本章节介绍产品的软件配置方法。
 
 ## English
@@ -83,6 +94,19 @@
 - [SO-ARM101 Robot Vision Kit](https://wiki.juxitech.com/products/robot-vision-kit): Juxi Technology SO-ARM101 robot vision kit — wrist/side/overhead mounts, 60FPS fixed or 30FPS autofocus zoom camera, compatible with ACT/Smolvla/Pi0/GR00T frameworks
 - [JUXI Bus Servo Driver Board](https://wiki.juxitech.com/products/servo-driver-board): Juxi Technology JUXI bus servo driver board — single-bus control of 253 servos, 7-12.6V wide input, Type-C plug-and-play, designed for LeRobot SO-ARM
 - [SO-ARM101 TPU Flexible Gripper](https://wiki.juxitech.com/products/tpu-flexible-gripper): Juxi Technology SO-ARM101 TPU flexible gripper — soft TPU safely grasps irregular/fragile items, arm camera compatible, 30FPS zoom or 60FPS fixed options
+- [2-DOF Servo Pan-Tilt Unit](https://wiki.juxitech.com/products/2dof-gimbal): Juxi Technology 2-DOF camera gimbal — SCS0009 bus servos, 180° pan / 90° tilt, 2MP camera, AI vision tracking
+- [4K HDMI Capture Card](https://wiki.juxitech.com/products/4k-hdmi-capture): Juxi Technology 4K HDMI capture card — HDMI/Micro HDMI/DP inputs, USB direct, streaming & recording
+- [AmazingHand Open-Source 4-Finger Dexterous Hand](https://wiki.juxitech.com/products/amazinghand): Juxi Technology AmazingHand open-source 4-finger dexterous hand, TTL bus control, open CAD, embodied AI & HRI research
+- [Feetech Bus Servos (SCS0009 / STS3215)](https://wiki.juxitech.com/products/feetech-servo): Juxi Technology Feetech serial bus servos SCS0009 & STS3215 — SCS protocol, magnetic/potentiometer versions, memory table analysis, FD tool
+- [IMU High-Precision Inertial Module](https://wiki.juxitech.com/products/imu-module): Juxi Technology IMU module — 100Hz attitude, 6/9/10-axis options, IIC+UART, ROS integration
+- [79° IMX219 CSI Camera](https://wiki.juxitech.com/products/imx219-csi-camera): Juxi Technology 79° IMX219 CSI camera — 8MP native CSI-2, 77° FOV, NVIDIA Jetson low-latency vision
+- [4-in-1 KVM Switch](https://wiki.juxitech.com/products/kvm-switch): Juxi Technology 4-in-1 KVM switch — HDMI switcher with TTL serial/Bluetooth docking, one-click device switching for dev
+- [KWS Voice Interaction Module](https://wiki.juxitech.com/products/kws-voice-module): Juxi Technology KWS voice recognition module — CN/EN wake word recognition, UART, RViz2 visualization, Jetson/Raspberry Pi
+- [Lekiwi Embodied Intelligence Mobile Robot](https://wiki.juxitech.com/products/lekiwi): Juxi Technology Lekiwi — low-cost teaching robot/mobile base, servo control, education & beginner friendly
+- [SO-ARM101 Overhead Camera Mount](https://wiki.juxitech.com/products/overhead-camera-mount): Juxi Technology SO-ARM101 overhead camera mount — top-down view, RealSense compatible, vision data collection
+- [SO-ARM101 Developer Kit](https://wiki.juxitech.com/products/so-arm101): Juxi Technology SO-ARM101 dual-arm robot dev kit — 6-DOF open-source arms, LeRobot ecosystem, teleoperation/imitation learning
+- [USB Driver-Free Sound Card](https://wiki.juxitech.com/products/usb-sound-card): Juxi Technology USB sound card — onboard mic + speaker, plug-and-play, noise-reduction, Raspberry Pi/Jetson/PC
+
 - [/tech/api-reference](https://wiki.juxitech.com/tech/api-reference)
 - [/tech/dev-guide](https://wiki.juxitech.com/tech/dev-guide)
 - [Raspberry Pi / Jetson - OLED Secondary Screen Tutorial](https://wiki.juxitech.com/tutorials/accessories/0.91-oled-screen-tutorial): Use a 0.91-inch OLED to test the I2C communication function, and connect according to the following wiring:
@@ -117,7 +141,7 @@
 - [Lekiwi Mobile Robot Assembly Tutorial](https://wiki.juxitech.com/tutorials/robot-arms/lekiwi/Lekiwi-Assembly): Precise component positions can be visualized in Fusion360 Online CAD.
 - [Lekiwi Mobile Robot User Guide](https://wiki.juxitech.com/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial): The black active arm uses a 5V 6A power adapter, while the white passive arm uses a 12V 5A power adapter
 - [Robot Arm Selection Guide](https://wiki.juxitech.com/tutorials/robot-arms/select-guide): SO-ARM101 vs AmazingHand vs Lekiwi comparison and selection guide
-- [LeRobot Robot Arm Tutorial](https://wiki.juxitech.com/tutorials/robot-arms/so-arm101-tutorial): This tutorial has been updated to December 15th, and you can choose to follow the latest version  of the official documentation for operation . For th
+- [LeRobot Robot Arm Tutorial](https://wiki.juxitech.com/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial): This tutorial has been updated to December 15th, and you can choose to follow the latest version  of the official documentation for operation . For th
 - [Installation Tutorial for SO-ARM100&amp;101 Arm Mount Bracket and Environmental Camera Kit](https://wiki.juxitech.com/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation): Please refer to this tutorial for debugging the USB auto-docking cameraUSB Auto-Focus Camera Tutorial
 - [Lerobot SO-ARM101 Assembly Tutorial](https://wiki.juxitech.com/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly): The Pro version's active arm uses a 5V6A power adapter, while the passive arm uses a 12V5A power adapter
 - [Pytorch Incompatibility Issue on Jetson Orin](https://wiki.juxitech.com/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility): Possible Problem 1:
@@ -140,7 +164,7 @@
 - [IMU Module Usage Tutorial](https://wiki.juxitech.com/tutorials/sensors/imu/product-info): Built-in high-precision IMU attitude sensor72MHz high-performance 32-bit processor, capable of real-time attitude calculation and dynamic compensation
 - [ROS1应用](https://wiki.juxitech.com/tutorials/sensors/imu/ros-examples/ros1): 系统配置：ubuntu20.04
 - [ROS2应用](https://wiki.juxitech.com/tutorials/sensors/imu/ros-examples/ros2): 系统配置：ubuntu22.04
-- [LeRobot SO-ARM101 Tutorial](https://wiki.juxitech.com/tutorials/so-arm101-tutorial): This tutorial is updated as of December 15th, you can choose to follow the latest official documentation, and refer to this link for specific tutorial
+- [LeRobot SO-ARM101 Tutorial](https://wiki.juxitech.com/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial): This tutorial is updated as of December 15th, you can choose to follow the latest official documentation, and refer to this link for specific tutorial
 - [Software Config](https://wiki.juxitech.com/tutorials/software-config): This chapter introduces the product software configuration method.
 
 ## Traditional Chinese (繁體中文)
@@ -153,6 +177,18 @@
 - [SO-ARM101 機械臂視覺套件](https://wiki.juxitech.com/zh-hant/products/robot-vision-kit): 鉅犀科技 SO-ARM101 機械臂視覺套件——腕部/側方/俯視三視角安裝,60FPS 定焦或 30FPS 自動對焦變焦相機,兼容 ACT/Smolvla/Pi0/GR00T 訓練框架
 - [JUXI 總線舵機驅動板](https://wiki.juxitech.com/zh-hant/products/servo-driver-board): 鉅犀科技 JUXI 總線舵機驅動板——單總線控制 253 個舵機,7~12.6V 寬電壓,Type-C 即插即用,專為 LeRobot SO-ARM 設計
 - [SO-ARM101 TPU 柔性夾爪](https://wiki.juxitech.com/zh-hant/products/tpu-flexible-gripper): 鉅犀科技 SO-ARM101 TPU 柔性夾爪——軟 TPU 材質安全抓取不規則/易碎物品,支持臂載相機,可選 30FPS 變焦或 60FPS 定焦
+- [2 自由度舵機雲台](https://wiki.juxitech.com/zh-hant/products/2dof-gimbal): 鉅犀科技 2 自由度舵機雲台——SCS0009 總線舵機,180° 水平/90° 垂直,200 萬攝像頭,AI 視覺追蹤
+- [4K HDMI 採集卡](https://wiki.juxitech.com/zh-hant/products/4k-hdmi-capture): 鉅犀科技 4K HDMI 採集卡——4K 高清採集,HDMI/Micro HDMI/DP 多接口,USB 直連,採集直播錄屏
+- [AmazingHand 開源 4 指靈巧手](https://wiki.juxitech.com/zh-hant/products/amazinghand): 鉅犀科技 AmazingHand 開源4 指靈巧手,TTL 總線控制,開源 CAD,具身智能與人機交互研究
+- [Feetech 總線舵機(SCS0009 / STS3215)](https://wiki.juxitech.com/zh-hant/products/feetech-servo): 鉅犀科技 Feetech 串行總線舵機 SCS0009 與 STS3215——SCS 通信協議,磁編碼/電位器雙版本,內存表解析,上位機調試
+- [IMU 高精度慣導模組](https://wiki.juxitech.com/zh-hant/products/imu-module): 鉅犀科技 IMU 高精度慣導模組——100Hz 姿態解算,六軸/九軸/十軸可選,IIC+串口雙通信,ROS 集成
+- [79° IMX219 CSI 攝像頭](https://wiki.juxitech.com/zh-hant/products/imx219-csi-camera): 鉅犀科技 79° IMX219 CSI 攝像頭——800 萬像素原生 CSI 接口,77° FOV,NVIDIA Jetson 低延遲視覺
+- [4 合 1 KVM 切換器](https://wiki.juxitech.com/zh-hant/products/kvm-switch): 鉅犀科技 4 合 1 KVM 切換器——TTL 串口/藍牙擴展塢,多設備一鍵切換,機器人開發調試伴侶
+- [KWS 語音交互模組](https://wiki.juxitech.com/zh-hant/products/kws-voice-module): 鉅犀科技 KWS 語音識別交互模組——中英文喚醒詞識別,串口/RViz2 可視化,適配 Jetson/樹莓派,固件開源
+- [Lekiwi 具身智能移動機器人](https://wiki.juxitech.com/zh-hant/products/lekiwi): 鉅犀科技 Lekiwi 具身智能移動機器人——低成本教學機械臂/移動底盤,舵機控制,教育與入門首選
+- [SO-ARM101 頂置相機支架](https://wiki.juxitech.com/zh-hant/products/overhead-camera-mount): 鉅犀科技 SO-ARM101 頂置相機支架——俯視視角安裝,兼容 RealSense,機械臂視覺數據採集
+- [SO-ARM101 開發套件](https://wiki.juxitech.com/zh-hant/products/so-arm101): 鉅犀科技 SO-ARM101 雙臂機器人開發套件——6 DOF 開源機械臂,LeRobot 生態,遙操作/模仿學習/AI 研究首選
+- [USB 免驅聲卡](https://wiki.juxitech.com/zh-hant/products/usb-sound-card): 鉅犀科技 USB 免驅聲卡——板載麥克風+揚聲器,即插即用,降噪,適配樹莓派/Jetson/PC 語音交互
 - [/tech/api-reference](https://wiki.juxitech.com/zh-hant/tech/api-reference)
 - [/tech/dev-guide](https://wiki.juxitech.com/zh-hant/tech/dev-guide)
 - [樹莓派/Jetson-OLED副屏教程](https://wiki.juxitech.com/zh-hant/tutorials/accessories/0.91-oled-screen-tutorial): 使用0.91寸OLED測試I2C通訊功能，按照下面接線進行連接：
@@ -209,7 +245,7 @@
 - [IMU模塊使用教程](https://wiki.juxitech.com/zh-hant/tutorials/sensors/imu/product-info): 高精度 IMU 姿態傳感器內置72MHz 高性能 32 位處理器，可實時姿態解算與動態補償，數據更新頻率高達 100Hz，兼具響應迅捷、輸出穩定的優勢。支持 IIC 與串口雙通信模式，兼容單片機、Linux 主控，並可無縫集成 ROS 系統，廣泛適用於機器人運動控制、無人機航姿穩定、智能導航定位等高
 - [ROS1應用](https://wiki.juxitech.com/zh-hant/tutorials/sensors/imu/ros-examples/ros1): 系統配置：ubuntu20.04
 - [ROS2應用](https://wiki.juxitech.com/zh-hant/tutorials/sensors/imu/ros-examples/ros2): 系統配置：ubuntu22.04
-- [LeRobot SO-ARM101機械臂教程](https://wiki.juxitech.com/zh-hant/tutorials/so-arm101-tutorial): 本教學已更新至12月15日，可選擇跟隨最新版官方文檔進行操作，官方文檔具體教學可以參考本鏈接。若需要URDF等文件請參考本鏈接。9月15日舊版本請參考該鏈接。SO-ARM101與SO-ARM100運行代碼相互兼容。
+- [LeRobot SO-ARM101機械臂教程](https://wiki.juxitech.com/zh-hant/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial): 本教學已更新至12月15日，可選擇跟隨最新版官方文檔進行操作，官方文檔具體教學可以參考本鏈接。若需要URDF等文件請參考本鏈接。9月15日舊版本請參考該鏈接。SO-ARM101與SO-ARM100運行代碼相互兼容。
 - [軟件配置](https://wiki.juxitech.com/zh-hant/tutorials/software-config)
 ## Other Languages (日本語 / 한국어 / Deutsch / Français / Español / Italiano)
 
