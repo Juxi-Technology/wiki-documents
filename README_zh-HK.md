@@ -40,6 +40,7 @@ npm run docs:dev      # http://localhost:5173
 npm run check:links   # 校驗站內 sidebar/正文鏈接(CI 也會執行)
 npm run docs:build    # 生產構建到 docs/.vitepress/dist
 npm run docs:preview  # 預覽生產構建
+npm run gen:llms     # 重新生成 llms-full.txt(CI 構建時自動執行)
 ```
 
 ## 部署

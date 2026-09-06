@@ -40,6 +40,7 @@ npm run docs:dev      # http://localhost:5173
 npm run check:links   # sidebar/본문 내부 링크 검증(CI에서도 실행)
 npm run docs:build    # 프로덕션 빌드 → docs/.vitepress/dist
 npm run docs:preview  # 프로덕션 빌드 미리보기
+npm run gen:llms     # llms-full.txt 재생성(CI 빌드 시 자동 실행)
 ```
 
 ## 배포

@@ -6,14 +6,6 @@ docs/.vitepress/dist/
 .DS_Store
 .remember/
 
-# 磁盘残留(root 所有,待 sudo 清理)
-docs/test.md
-docs/tutorials/so-arm101-tutorial.md
-docs/tutorials/so-arm101/
-docs/en/tutorials/so-arm101-tutorial.md
-docs/en/tutorials/robot-arms/so-arm101-tutorial.md
-docs/zh-HK/tutorials/so-arm101-tutorial.md
-
 # 旧内容树(docs/ 根)已被 srcDir: 'content' 取代,索引已迁至 docs/content/
 docs/en/
 docs/zh-HK/
@@ -35,3 +27,5 @@ docs/index.md
 .playwright-mcp/
 accept-*.png
 seeed-ref-*.png
+# llms-full.txt 为构建生成物(gen:llms,CI 构建前执行),不入库避免历史膨胀
+docs/public/llms-full.txt

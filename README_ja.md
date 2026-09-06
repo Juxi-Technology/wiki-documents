@@ -40,6 +40,7 @@ npm run docs:dev      # http://localhost:5173
 npm run check:links   # sidebar/本文内リンクを検証(CI でも実行)
 npm run docs:build    # 本番ビルド → docs/.vitepress/dist
 npm run docs:preview  # 本番ビルドのプレビュー
+npm run gen:llms     # llms-full.txt を再生成(CI ビルド時に自動実行)
 ```
 
 ## デプロイ

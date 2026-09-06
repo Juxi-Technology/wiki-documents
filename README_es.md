@@ -40,6 +40,7 @@ npm run docs:dev      # http://localhost:5173
 npm run check:links   # Verifica todos los enlaces internos (sidebar + cuerpo), también en CI
 npm run docs:build    # Build de producción a docs/.vitepress/dist
 npm run docs:preview  # Vista previa del build de producción
+npm run gen:llms     # regenerar llms-full.txt (se hace automáticamente en CI)
 ```
 
 ## Despliegue
