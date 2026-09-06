@@ -21,7 +21,7 @@ Benvenuto nella community Juxi Technology! [GitHub](https://github.com/Juxi-Tech
 
 | Canale | Scopo | Link |
 |---------|---------|------|
-| 💬 GitHub Issues | Domande, discussioni, segnalazione bug | [github.com/Juxi-Technology/wiki-documents/issues](https://github.com/Juxi-Technology/wiki-documents/issues) |
+| 🧠 Hugging Face | Modelli, dataset e pesi aperti | [huggingface.co/Juxi-Technology](https://huggingface.co/Juxi-Technology) |
 | 📧 Email | Supporto tecnico e commerciale | [support@juxitech.com](mailto:support@juxitech.com) |
 | 🛒 Negozio | Acquisto prodotti | [www.juxitech.com](https://www.juxitech.com) |
 | 📚 Wiki Feishu | Risorse open source (schemi/firmware/CAD) | [juxitech.feishu.cn](https://juxitech.feishu.cn) |

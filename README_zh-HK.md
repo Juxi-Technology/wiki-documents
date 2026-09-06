@@ -64,6 +64,8 @@ npm run docs:preview  # 預覽生產構建
 ## 聯繫我們
 
 - 🌐 [juxitech.com](https://www.juxitech.com/zh-hant)
+- 🐙 [GitHub 組織](https://github.com/Juxi-Technology/)
+- 🧠 [Hugging Face](https://huggingface.co/Juxi-Technology)
 - 🛒 [鉅犀科技 淘寶](https://juxitechnology.taobao.com/)
 - 📧 [support@juxitech.com](mailto:support@juxitech.com)
 - 📧 [sales@juxitech.com](mailto:sales@juxitech.com)

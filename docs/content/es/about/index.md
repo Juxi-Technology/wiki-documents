@@ -30,7 +30,7 @@ Desarrollamos **IA física, robótica corporizada e IA perimetral**, ofreciendo 
 - 🖥️ Archivos CAD
 - 📦 Código SDK
 
-Todo disponible gratuitamente en la [Wiki de Feishu](https://juxitech.feishu.cn) y en la [Organización GitHub](https://github.com/Juxi-Technology). Nuestra comunidad de desarrolladores e investigadores contribuye y mejora continuamente esta plataforma.
+Todo disponible gratuitamente en la [Wiki de Feishu](https://juxitech.feishu.cn) y en la [Organización GitHub](https://github.com/Juxi-Technology), así como nuestro [Hugging Face](https://huggingface.co/Juxi-Technology). Nuestra comunidad de desarrolladores e investigadores contribuye y mejora continuamente esta plataforma.
 
 ## Ecosistemas compatibles
 
@@ -57,6 +57,7 @@ Compatibilidad lista para usar con:
 - 🌐 Web: [www.juxitech.com](https://www.juxitech.com)
 - 🛒 Tienda: [Tienda Shopify](https://www.juxitech.com/es)
 - 💻 GitHub: [Juxi-Technology](https://github.com/Juxi-Technology)
+- 🧠 Hugging Face: [Juxi-Technology](https://huggingface.co/Juxi-Technology)
 
 ## Únete a nosotros
 

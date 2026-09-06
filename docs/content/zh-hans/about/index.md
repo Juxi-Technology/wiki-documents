@@ -30,7 +30,7 @@ description: 钜犀科技(Juxi Technology)——来自深圳前海的开源机�
 - 🖥️ CAD 文件
 - 📦 SDK 代码
 
-以上全部可在我们的 [Feishu Wiki](https://juxitech.feishu.cn) 与 [GitHub 组织](https://github.com/Juxi-Technology) 免费获取。我们的开发者与研究者社区持续贡献并改进这一平台。
+以上全部可在我们的 [Feishu Wiki](https://juxitech.feishu.cn) 与 [GitHub 组织](https://github.com/Juxi-Technology)、[Hugging Face](https://huggingface.co/Juxi-Technology) 免费获取。我们的开发者与研究者社区持续贡献并改进这一平台。
 
 ## 生态支持
 
@@ -57,6 +57,7 @@ description: 钜犀科技(Juxi Technology)——来自深圳前海的开源机�
 - 🌐 官网：[www.juxitech.com](https://www.juxitech.com/zh-hans)
 - 🛒 商城：[Shopify 商店](https://www.juxitech.com/zh-hans)
 - 💻 GitHub：[Juxi-Technology](https://github.com/Juxi-Technology)
+- 🧠 Hugging Face: [Juxi-Technology](https://huggingface.co/Juxi-Technology)
 - 📺 B站：[space.bilibili.com/3546906737248821](https://space.bilibili.com/3546906737248821)
 
 ## 加入我们

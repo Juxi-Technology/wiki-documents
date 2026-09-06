@@ -64,6 +64,8 @@ Voir le [Guide de contribution](https://wiki.juxitech.com/fr/community/contribut
 ## Contact
 
 - 🌐 [juxitech.com](https://www.juxitech.com/fr)
+- 🐙 [Organisation GitHub](https://github.com/Juxi-Technology/)
+- 🧠 [Hugging Face](https://huggingface.co/Juxi-Technology)
 - 🛒 [JuxiTech Taobao](https://juxitechnology.taobao.com/)
 - 📧 [support@juxitech.com](mailto:support@juxitech.com)
 - 📧 [sales@juxitech.com](mailto:sales@juxitech.com)

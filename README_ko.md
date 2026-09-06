@@ -64,6 +64,8 @@ npm run docs:preview  # 프로덕션 빌드 미리보기
 ## 문의
 
 - 🌐 [juxitech.com](https://www.juxitech.com/ko)
+- 🐙 [GitHub 조직](https://github.com/Juxi-Technology/)
+- 🧠 [Hugging Face](https://huggingface.co/Juxi-Technology)
 - 🛒 [JuxiTech Taobao](https://juxitechnology.taobao.com/)
 - 📧 [support@juxitech.com](mailto:support@juxitech.com)
 - 📧 [sales@juxitech.com](mailto:sales@juxitech.com)

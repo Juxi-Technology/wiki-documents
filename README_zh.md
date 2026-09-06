@@ -64,6 +64,8 @@ npm run docs:preview  # 预览生产构建
 ## 联系我们
 
 - 🌐 [juxitech.com](https://www.juxitech.com/zh-hans)
+- 🐙 [GitHub 组织](https://github.com/Juxi-Technology/)
+- 🧠 [Hugging Face](https://huggingface.co/Juxi-Technology)
 - 🛒 [钜犀科技 淘宝](https://juxitechnology.taobao.com/)
 - 📧 [support@juxitech.com](mailto:support@juxitech.com)
 - 📧 [sales@juxitech.com](mailto:sales@juxitech.com)

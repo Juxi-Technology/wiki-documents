@@ -23,7 +23,7 @@ Juxi Technology 커뮤니티에 오신 것을 환영합니다! [GitHub](https://
 
 | 채널 | 용도 | 링크 |
 |---------|---------|------|
-| 💬 GitHub Issues | 질문, 토론, 버그 신고 | [github.com/Juxi-Technology/wiki-documents/issues](https://github.com/Juxi-Technology/wiki-documents/issues) |
+| 🧠 Hugging Face | 모델, 데이터셋, 오픈 웨이트 | [huggingface.co/Juxi-Technology](https://huggingface.co/Juxi-Technology) |
 | 📧 이메일 | 기술 지원 및 비즈니스 | [support@juxitech.com](mailto:support@juxitech.com) |
 | 🛒 스토어 | 제품 구매 | [www.juxitech.com](https://www.juxitech.com) |
 | 📚 Feishu Wiki | 오픈소스 자료(회로도/펌웨어/CAD) | [juxitech.feishu.cn](https://juxitech.feishu.cn) |

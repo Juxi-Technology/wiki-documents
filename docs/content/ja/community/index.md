@@ -21,7 +21,7 @@ Juxi Technology コントリビューターコミュニティへのご参加を�
 
 | チャンネル | 用途 | リンク |
 |---------|---------|------|
-| 💬 GitHub Issues | 質問、議論、バグ報告 | [github.com/Juxi-Technology/wiki-documents/issues](https://github.com/Juxi-Technology/wiki-documents/issues) |
+| 🧠 Hugging Face | モデル・データセット・オープンウェイト | [huggingface.co/Juxi-Technology](https://huggingface.co/Juxi-Technology) |
 | 📧 Email | 技術サポートとビジネス | [support@juxitech.com](mailto:support@juxitech.com) |
 | 🛒 ストア | 製品の購入 | [www.juxitech.com](https://www.juxitech.com) |
 | 📚 Feishu Wiki | オープンソース資料(回路図/ファームウェア/CAD) | [juxitech.feishu.cn](https://juxitech.feishu.cn) |

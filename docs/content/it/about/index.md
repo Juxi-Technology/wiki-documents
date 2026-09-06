@@ -30,7 +30,7 @@ Sviluppiamo **intelligenza artificiale fisica, robotica incarnata e AI di perife
 - 🖥️ File CAD
 - 📦 Codice SDK
 
-Tutto disponibile gratuitamente sul nostro [Wiki Feishu](https://juxitech.feishu.cn) e sull'[organizzazione GitHub](https://github.com/Juxi-Technology). La nostra community di sviluppatori e ricercatori contribuisce e migliora costantemente questa piattaforma.
+Tutto disponibile gratuitamente sul nostro [Wiki Feishu](https://juxitech.feishu.cn) e sull'[organizzazione GitHub](https://github.com/Juxi-Technology), oltre al nostro [Hugging Face](https://huggingface.co/Juxi-Technology). La nostra community di sviluppatori e ricercatori contribuisce e migliora costantemente questa piattaforma.
 
 ## Supporto agli ecosistemi
 
@@ -57,6 +57,7 @@ Supporto immediato per:
 - 🌐 Sito: [www.juxitech.com](https://www.juxitech.com)
 - 🛒 Negozio: [Negozio Shopify](https://www.juxitech.com/it)
 - 💻 GitHub: [Juxi-Technology](https://github.com/Juxi-Technology)
+- 🧠 Hugging Face: [Juxi-Technology](https://huggingface.co/Juxi-Technology)
 
 ## Unisciti a noi
 

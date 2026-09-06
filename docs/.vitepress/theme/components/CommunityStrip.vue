@@ -33,6 +33,7 @@ const pref = computed(() => {
     <div class="cs-links">
       <a :href="withBase(pref + 'community/contributing')" class="cs-link">{{ t.contribute }}</a>
       <a href="https://github.com/Juxi-Technology/" target="_blank" rel="noopener" class="cs-link">{{ t.github }}</a>
+      <a href="https://huggingface.co/Juxi-Technology" target="_blank" rel="noopener" class="cs-link">Hugging Face</a>
       <a href="https://space.bilibili.com/3546906737248821" target="_blank" rel="noopener" class="cs-link">{{ t.bilibili }}</a>
       <a href="mailto:support@juxitech.com" class="cs-link">{{ t.email }}</a>
     </div>

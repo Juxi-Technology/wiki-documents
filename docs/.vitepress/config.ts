@@ -2008,6 +2008,7 @@ export default defineConfig({
         description: '机器人与 AI 硬件的开放文档平台 — 机械臂、传感器、配件产品教程与技术文档',
         sameAs: [
           'https://github.com/Juxi-Technology',
+          'https://huggingface.co/Juxi-Technology',
           'https://space.bilibili.com/3546906737248821',
           'https://www.juxitech.com',
         ],

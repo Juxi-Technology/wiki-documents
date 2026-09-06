@@ -21,7 +21,7 @@ description: Juxi Technology Wiki — Comunidad
 
 | Canal | Propósito | Enlace |
 |---------|---------|------|
-| 💬 Issues de GitHub | Preguntas, debates, informes de errores | [github.com/Juxi-Technology/wiki-documents/issues](https://github.com/Juxi-Technology/wiki-documents/issues) |
+| 🧠 Hugging Face | Modelos, conjuntos de datos y pesos abiertos | [huggingface.co/Juxi-Technology](https://huggingface.co/Juxi-Technology) |
 | 📧 Correo electrónico | Soporte técnico y comercial | [support@juxitech.com](mailto:support@juxitech.com) |
 | 🛒 Tienda | Comprar productos | [www.juxitech.com](https://www.juxitech.com) |
 | 📚 Wiki Feishu | Recursos open source (esquemas/firmware/CAD) | [juxitech.feishu.cn](https://juxitech.feishu.cn) |

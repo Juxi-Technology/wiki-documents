@@ -21,7 +21,7 @@ description: 加入钜犀科技贡献者社区
 
 | 渠道 | 用途 | 入口 |
 |------|------|------|
-| 💬 GitHub Issues | 提问、讨论、报告问题 | [github.com/Juxi-Technology/wiki-documents/issues](https://github.com/Juxi-Technology/wiki-documents/issues) |
+| 🧠 Hugging Face | 模型、数据集与开源权重 | [huggingface.co/Juxi-Technology](https://huggingface.co/Juxi-Technology) |
 | 📧 邮箱 | 技术支持与商务 | [support@juxitech.com](mailto:support@juxitech.com) |
 | 🛒 商城 | 购买产品 | [www.juxitech.com](https://www.juxitech.com/zh-hans) |
 | 📺 B站 | 产品演示与教程视频 | [space.bilibili.com/3546906737248821](https://space.bilibili.com/3546906737248821) |

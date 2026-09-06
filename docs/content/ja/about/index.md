@@ -28,7 +28,7 @@ description: Juxi Technology — 中国深圳前海発のオープンソース�
 - 🖥️ CADファイル
 - 📦 SDKコード
 
-これらはすべて [Feishu Wiki](https://juxitech.feishu.cn) と [GitHub Organization](https://github.com/Juxi-Technology) で無料公開しています。開発者と研究者のコミュニティがこのプラットフォームに継続的に貢献し、改善を続けています。
+これらはすべて [Feishu Wiki](https://juxitech.feishu.cn) と [GitHub Organization](https://github.com/Juxi-Technology)、および [Hugging Face](https://huggingface.co/Juxi-Technology) で無料公開しています。開発者と研究者のコミュニティがこのプラットフォームに継続的に貢献し、改善を続けています。
 
 ## エコシステムサポート
 
@@ -55,6 +55,7 @@ description: Juxi Technology — 中国深圳前海発のオープンソース�
 - 🌐 公式サイト: [www.juxitech.com](https://www.juxitech.com)
 - 🛒 ストア: [Shopifyストア](https://www.juxitech.com/ja)
 - 💻 GitHub: [Juxi-Technology](https://github.com/Juxi-Technology)
+- 🧠 Hugging Face: [Juxi-Technology](https://huggingface.co/Juxi-Technology)
 
 ## 採用情報
 

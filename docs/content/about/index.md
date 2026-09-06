@@ -30,7 +30,7 @@ We develop **physical AI, embodied robotics and edge AI**, delivering **open-sou
 - 🖥️ CAD files
 - 📦 SDK code
 
-All freely available on our [Feishu Wiki](https://juxitech.feishu.cn) and [GitHub Organization](https://github.com/Juxi-Technology). Our community of developers and researchers continuously contributes to and improves this platform.
+All freely available on our [Feishu Wiki](https://juxitech.feishu.cn) and [GitHub Organization](https://github.com/Juxi-Technology), plus our [Hugging Face](https://huggingface.co/Juxi-Technology). Our community of developers and researchers continuously contributes to and improves this platform.
 
 ## Ecosystem Support
 
@@ -57,6 +57,7 @@ Out-of-the-box support for:
 - 🌐 Website: [www.juxitech.com](https://www.juxitech.com)
 - 🛒 Store: [Shopify Store](https://www.juxitech.com)
 - 💻 GitHub: [Juxi-Technology](https://github.com/Juxi-Technology)
+- 🧠 Hugging Face: [Juxi-Technology](https://huggingface.co/Juxi-Technology)
 
 ## Join Us
 

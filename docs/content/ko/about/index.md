@@ -28,7 +28,7 @@ description: Juxi Technology — 선전 첸하이 발 오픈소스 로보틱스 
 - 🖥️ CAD 파일
 - 📦 SDK 코드
 
-모든 자료는 [Feishu Wiki](https://juxitech.feishu.cn) 및 [GitHub 조직](https://github.com/Juxi-Technology)에서 자유롭게 이용할 수 있습니다. 개발자와 연구자 커뮤니티가 이 플랫폼에 지속적으로 기여하며 함께 개선해 나가고 있습니다.
+모든 자료는 [Feishu Wiki](https://juxitech.feishu.cn) 및 [GitHub 조직](https://github.com/Juxi-Technology), 그리고 [Hugging Face](https://huggingface.co/Juxi-Technology)에서 자유롭게 이용할 수 있습니다. 개발자와 연구자 커뮤니티가 이 플랫폼에 지속적으로 기여하며 함께 개선해 나가고 있습니다.
 
 ## 에코시스템 지원
 
@@ -55,6 +55,7 @@ description: Juxi Technology — 선전 첸하이 발 오픈소스 로보틱스 
 - 🌐 공식 사이트: [www.juxitech.com](https://www.juxitech.com)
 - 🛒 스토어: [Shopify 스토어](https://www.juxitech.com/ko)
 - 💻 GitHub: [Juxi-Technology](https://github.com/Juxi-Technology)
+- 🧠 Hugging Face: [Juxi-Technology](https://huggingface.co/Juxi-Technology)
 
 ## 함께하기
 

@@ -47,6 +47,7 @@ const pref = computed(() => {
         <a :href="withBase(pref + 'community/')">{{ t.communityItem }}</a>
         <a :href="withBase(pref + 'about/')">{{ t.aboutItem }}</a>
         <a href="https://github.com/Juxi-Technology/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://huggingface.co/Juxi-Technology" target="_blank" rel="noopener">Hugging Face</a>
         <a href="https://space.bilibili.com/3546906737248821" target="_blank" rel="noopener">Bilibili</a>
       </div>
       <div class="sf-col">

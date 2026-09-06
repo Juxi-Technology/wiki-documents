@@ -30,7 +30,7 @@ Nous développons **l'IA physique, la robotique incarnée et l'IA de périphéri
 - 🖥️ Fichiers CAD
 - 📦 Code SDK
 
-Le tout gratuitement sur notre [Wiki Feishu](https://juxitech.feishu.cn) et notre [organisation GitHub](https://github.com/Juxi-Technology). Notre communauté de développeurs et de chercheurs contribue et améliore en permanence cette plateforme.
+Le tout gratuitement sur notre [Wiki Feishu](https://juxitech.feishu.cn) et notre [organisation GitHub](https://github.com/Juxi-Technology), ainsi que notre [Hugging Face](https://huggingface.co/Juxi-Technology). Notre communauté de développeurs et de chercheurs contribue et améliore en permanence cette plateforme.
 
 ## Écosystèmes supportés
 
@@ -57,6 +57,7 @@ Prise en charge native de :
 - 🌐 Site web : [www.juxitech.com](https://www.juxitech.com)
 - 🛒 Boutique : [Boutique Shopify](https://www.juxitech.com/fr)
 - 💻 GitHub : [Juxi-Technology](https://github.com/Juxi-Technology)
+- 🧠 Hugging Face: [Juxi-Technology](https://huggingface.co/Juxi-Technology)
 
 ## Rejoignez-nous
 

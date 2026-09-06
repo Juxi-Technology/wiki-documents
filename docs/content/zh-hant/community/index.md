@@ -21,7 +21,7 @@ description: 加入鉅犀科技貢獻者社區
 
 | 渠道 | 用途 | 入口 |
 |------|------|------|
-| 💬 GitHub Issues | 提問、討論、報告問題 | [github.com/Juxi-Technology/wiki-documents/issues](https://github.com/Juxi-Technology/wiki-documents/issues) |
+| 🧠 Hugging Face | 模型、數據集與開源權重 | [huggingface.co/Juxi-Technology](https://huggingface.co/Juxi-Technology) |
 | 📧 郵箱 | 技術支持與商務 | [support@juxitech.com](mailto:support@juxitech.com) |
 | 🛒 商城 | 購買產品 | [www.juxitech.com](https://www.juxitech.com/zh-hant) |
 | 📚 Feishu Wiki | 開源資料(原理圖/固件/CAD) | [juxitech.feishu.cn](https://juxitech.feishu.cn) |
