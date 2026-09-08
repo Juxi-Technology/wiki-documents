@@ -65,7 +65,10 @@ function buildBreadcrumbLd(url: string, title: string, lang: string) {
   for (let i = 0; i < segs.length; i++) {
     acc += '/' + segs[i]
     const name = i === segs.length - 1 ? title : (SEG_NAMES[segs[i]]?.[lang] || segs[i])
-    items.push({ '@type': 'ListItem', position: i + 2, name, item: 'https://wiki.juxitech.com' + (langSeg ? '/' + langSeg : '') + acc })
+    // 最后一项必须等于页面自身 URL(canonical):url 参数保留尾斜杠(index 页 /about/)
+    const item = i === segs.length - 1 ? 'https://wiki.juxitech.com' + url
+      : 'https://wiki.juxitech.com' + (langSeg ? '/' + langSeg : '') + acc
+    items.push({ '@type': 'ListItem', position: i + 2, name, item })
   }
   return { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: items }
 }
