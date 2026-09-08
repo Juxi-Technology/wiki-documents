@@ -507,7 +507,7 @@ Se você quiser usar o recurso do Hub do Hugging Face para enviar um dataset e a
 hf auth login
 ```
 
-Guarde o nome do seu repositório do Hugging Face em uma variável para executar o comando a seguir: 
+Salve o nome do seu repositório do Hugging Face em uma variável para executar o comando a seguir: 
 
 ```Bash
 *hf auth whoami*

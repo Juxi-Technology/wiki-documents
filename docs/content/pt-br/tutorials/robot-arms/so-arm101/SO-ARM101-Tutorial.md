@@ -414,7 +414,7 @@ Entre eles, `dataset.repo_id` e `dataset.single_task` podem ser personalizados e
 huggingface-cli login --token ${HUGGINGFACE_TOKEN} --add-to-git-credential
 ```
 
-Guarde o nome do seu repositório do Hugging Face em uma variável para executar o seguinte comando: 
+Salve o nome do seu repositório do Hugging Face em uma variável para executar o seguinte comando: 
 
 ```Bash
 HF_USER=$(huggingface-cli whoami | head -n 1)
