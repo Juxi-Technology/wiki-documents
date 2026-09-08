@@ -24,7 +24,7 @@ function stripBase(url) {
 }
 
 // 当前 locale 的页面过滤(root=en;其余语言目录带各自前缀)
-const LANG_DIRS = ['zh-hans', 'zh-hant', 'ja', 'ko', 'de', 'fr', 'es', 'it']
+const LANG_DIRS = ['zh-hans', 'zh-hant', 'ja', 'ko', 'de', 'fr', 'es', 'it', 'pt-br', 'pt-pt']
 function isInLocale(url) {
   const rel = stripBase(url)
   if (localeIndex.value === 'root') {
@@ -174,6 +174,8 @@ const PLACEHOLDERS = {
   fr: 'Rechercher...',
   es: 'Buscar documentos...',
   it: 'Cerca documenti...',
+  'pt-br': 'Pesquisar documentos...',
+  'pt-pt': 'Pesquisar documentos...',
 }
 const NO_RESULTS = {
   'zh-hans': '无匹配结果',
@@ -184,6 +186,8 @@ const NO_RESULTS = {
   fr: 'Aucun résultat',
   es: 'Sin resultados',
   it: 'Nessun risultato',
+  'pt-br': 'Nenhum resultado',
+  'pt-pt': 'Nenhum resultado',
 }
 
 const placeholder = computed(() => PLACEHOLDERS[localeIndex.value] || 'Search docs...')

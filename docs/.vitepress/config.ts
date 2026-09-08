@@ -35,19 +35,19 @@ function buildFaqPageLd(relativePath: string) {
 
 // 面包屑段名(与 theme/components/Breadcrumb.vue 同源;lang 值同 config lang)
 const SEG_NAMES: Record<string, Record<string, string>> = {
-  tutorials: { 'zh-CN': '教程', en: 'Tutorials', 'zh-HK': '教程', ja: 'チュートリアル', ko: '튜토리얼', de: 'Tutorials', fr: 'Tutoriels', es: 'Tutoriales', it: 'Tutorial' },
-  products: { 'zh-CN': '产品', en: 'Products', 'zh-HK': '產品', ja: '製品', ko: '제품', de: 'Produkte', fr: 'Produits', es: 'Productos', it: 'Prodotti' },
-  topics: { 'zh-CN': '技术专题', en: 'Topics', 'zh-HK': '技術專題', ja: 'トピック', ko: '토픽', de: 'Themen', fr: 'Sujets', es: 'Temas', it: 'Argomenti' },
-  tech: { 'zh-CN': '技术文档', en: 'Tech Docs', 'zh-HK': '技術文件', ja: '技術ドキュメント', ko: '기술 문서', de: 'Technikdoku', fr: 'Documentation tech', es: 'Docs técnicos', it: 'Documentazione' },
-  cases: { 'zh-CN': '用户案例', en: 'Cases', 'zh-HK': '用戶案例', ja: '事例', ko: '사례', de: 'Fälle', fr: 'Cas', es: 'Casos', it: 'Casi' },
-  community: { 'zh-CN': '社区', en: 'Community', 'zh-HK': '社區', ja: 'コミュニティ', ko: '커뮤니티', de: 'Community', fr: 'Communauté', es: 'Comunidad', it: 'Community' },
-  downloads: { 'zh-CN': '下载', en: 'Downloads', 'zh-HK': '下載', ja: 'ダウンロード', ko: '다운로드', de: 'Downloads', fr: 'Téléchargements', es: 'Descargas', it: 'Download' },
-  about: { 'zh-CN': '关于我们', en: 'About', 'zh-HK': '關於我們', ja: '私たちについて', ko: '소개', de: 'Über uns', fr: 'À propos', es: 'Sobre nosotros', it: 'Chi siamo' },
+  tutorials: { 'zh-CN': '教程', en: 'Tutorials', 'zh-HK': '教程', ja: 'チュートリアル', ko: '튜토리얼', de: 'Tutorials', fr: 'Tutoriels', es: 'Tutoriales', it: 'Tutorial', pt: 'Tutoriais' },
+  products: { 'zh-CN': '产品', en: 'Products', 'zh-HK': '產品', ja: '製品', ko: '제품', de: 'Produkte', fr: 'Produits', es: 'Productos', it: 'Prodotti', pt: 'Produtos' },
+  topics: { 'zh-CN': '技术专题', en: 'Topics', 'zh-HK': '技術專題', ja: 'トピック', ko: '토픽', de: 'Themen', fr: 'Sujets', es: 'Temas', it: 'Argomenti', pt: 'Tópicos' },
+  tech: { 'zh-CN': '技术文档', en: 'Tech Docs', 'zh-HK': '技術文件', ja: '技術ドキュメント', ko: '기술 문서', de: 'Technikdoku', fr: 'Documentation tech', es: 'Docs técnicos', it: 'Documentazione', pt: 'Docs Técnicos' },
+  cases: { 'zh-CN': '用户案例', en: 'Cases', 'zh-HK': '用戶案例', ja: '事例', ko: '사례', de: 'Fälle', fr: 'Cas', es: 'Casos', it: 'Casi', pt: 'Casos' },
+  community: { 'zh-CN': '社区', en: 'Community', 'zh-HK': '社區', ja: 'コミュニティ', ko: '커뮤니티', de: 'Community', fr: 'Communauté', es: 'Comunidad', it: 'Community', pt: 'Comunidade' },
+  downloads: { 'zh-CN': '下载', en: 'Downloads', 'zh-HK': '下載', ja: 'ダウンロード', ko: '다운로드', de: 'Downloads', fr: 'Téléchargements', es: 'Descargas', it: 'Download', pt: 'Downloads' },
+  about: { 'zh-CN': '关于我们', en: 'About', 'zh-HK': '關於我們', ja: '私たちについて', ko: '소개', de: 'Über uns', fr: 'À propos', es: 'Sobre nosotros', it: 'Chi siamo', pt: 'Sobre' },
 }
-const HOME_NAMES: Record<string, string> = { 'zh-CN': '首页', en: 'Home', 'zh-HK': '首頁', ja: 'ホーム', ko: '홈', de: 'Start', fr: 'Accueil', es: 'Inicio', it: 'Home' }
+const HOME_NAMES: Record<string, string> = { 'zh-CN': '首页', en: 'Home', 'zh-HK': '首頁', ja: 'ホーム', ko: '홈', de: 'Start', fr: 'Accueil', es: 'Inicio', it: 'Home', pt: 'Início' }
 
 // 语言目录 → config lang 值(PageData 没有 lang 字段,须由 relativePath 推导)
-const LANG_CODE: Record<string, string> = { 'zh-hans': 'zh-CN', 'zh-hant': 'zh-HK', ja: 'ja', ko: 'ko', de: 'de', fr: 'fr', es: 'es', it: 'it' }
+const LANG_CODE: Record<string, string> = { 'zh-hans': 'zh-CN', 'zh-hant': 'zh-HK', ja: 'ja', ko: 'ko', de: 'de', fr: 'fr', es: 'es', it: 'it', 'pt-br': 'pt-BR', 'pt-pt': 'pt-PT' }
 function langOf(relativePath: string) {
   return LANG_CODE[relativePath.split('/')[0]] || 'en'
 }
@@ -57,7 +57,7 @@ function langOf(relativePath: string) {
 function buildBreadcrumbLd(url: string, title: string, lang: string) {
   if (url === '/' || url === '') return null
   const segs = url.split('/').filter(Boolean)
-  const LANG_SEGS = ['zh-hans', 'zh-hant', 'ja', 'ko', 'de', 'fr', 'es', 'it']
+  const LANG_SEGS = ['zh-hans', 'zh-hant', 'ja', 'ko', 'de', 'fr', 'es', 'it', 'pt-br', 'pt-pt']
   const langSeg = LANG_SEGS.includes(segs[0]) ? segs.shift() : ''
   if (!segs.length) return null
   const items = [{ '@type': 'ListItem', position: 1, name: HOME_NAMES[lang] || 'Home', item: 'https://wiki.juxitech.com/' }]
@@ -779,7 +779,7 @@ function collectSidebarLinks(sidebar) {
   return out
 }
 
-const LANG_PREFIX_RE = /^\/(zh-hans|zh-hant|ja|ko|de|fr|es|it)(?=\/|$)/
+const LANG_PREFIX_RE = /^\/(zh-hans|zh-hant|ja|ko|de|fr|es|it|pt-br|pt-pt)(?=\/|$)/
 function resolveLangPrefix(relativePath) {
   const seg = relativePath.split('/')[0]
   return LANG_PREFIX_RE.test('/' + seg) ? '/' + seg : ''
@@ -805,7 +805,7 @@ function computePrevNext(userConfig, pageData) {
 }
 
 // ---- hreflang:注入 9 语言 alternate + x-default(多语 SEO 必备)----
-const HREFLANG_LANGS = ['', 'zh-hans', 'zh-hant', 'ja', 'ko', 'de', 'fr', 'es', 'it']
+const HREFLANG_LANGS = ['', 'zh-hans', 'zh-hant', 'ja', 'ko', 'de', 'fr', 'es', 'it', 'pt-br', 'pt-pt']
 
 // PageData 没有 url 字段(types/shared.d.ts),必须由 relativePath 推导站点路径;
 // 此前用 pageData.url 取到 undefined → hreflang 全部错指站点根(多语 SEO 失效)
@@ -825,7 +825,7 @@ function injectHreflang(pageData: { relativePath: string }) {
   const seen = new Set()
   const heads = HREFLANG_LANGS.map((l) => {
     const href = 'https://wiki.juxitech.com' + (l ? '/' + l : '') + core
-    const langCode = l === '' ? 'en' : (l === 'zh-hans' ? 'zh-Hans' : l === 'zh-hant' ? 'zh-HK' : l)
+    const langCode = l === '' ? 'en' : (l === 'zh-hans' ? 'zh-Hans' : l === 'zh-hant' ? 'zh-HK' : l === 'pt-br' ? 'pt-BR' : l === 'pt-pt' ? 'pt-PT' : l)
     return ['link', { rel: 'alternate', hreflang: langCode, href: href }]
   }).concat([['link', { rel: 'alternate', hreflang: 'x-default', href: 'https://wiki.juxitech.com' + core }]])
   return heads
@@ -1978,6 +1978,422 @@ export default defineConfig({
             { text: 'Scheda di acquisizione HDMI 4K', link: '/it/products/4k-hdmi-capture' },
           ] },
         ],
+      },
+    },
+  },
+  'pt-br': {
+    label: 'Português (Brasil)',
+    lang: 'pt-BR',
+    description: 'Central de tutoriais e documentação Juxi Technology',
+    head: [
+      ['meta', { property: 'og:title', content: 'Juxi Technology Wiki - Tutoriais e Documentação' }],
+      ['meta', { property: 'og:description', content: 'Juxi Technology Wiki — tutoriais e documentação completos para braços robóticos, sensores e acessórios. De SO-ARM101 a módulos IMU.' }],
+    ],
+    themeConfig: {
+      siteTitle: 'Juxi Technology Wiki',
+      nav: [
+        { text: 'Tutoriais', link: '/pt-br/tutorials/', activeMatch: '/pt-br/tutorials/' },
+        { text: 'Tópicos', link: '/pt-br/topics/', activeMatch: '/pt-br/topics/' },
+        { text: 'Docs Técnicos', link: '/pt-br/tech/', activeMatch: '/pt-br/tech/' },
+        { text: 'Produtos', link: '/pt-br/products/', activeMatch: '/pt-br/products/' },
+        { text: 'Casos', link: '/pt-br/cases/', activeMatch: '/pt-br/cases/' },
+        { text: 'Comunidade', link: '/pt-br/community/', activeMatch: '/pt-br/community/' },
+        { text: 'Downloads', link: '/pt-br/downloads/', activeMatch: '/pt-br/downloads/' },
+        { text: 'Sobre', link: '/pt-br/about/', activeMatch: '/pt-br/about/' },
+      ],
+      sidebar: {
+        '/pt-br/tutorials/': [
+          {
+            text: 'Guia Rápido',
+            items: [
+              { text: 'FAQ', link: '/pt-br/tutorials/faq' },
+              { text: 'Introdução ao ROS', link: '/pt-br/tutorials/ros-intro' },
+              { text: 'Guia Rápido', link: '/pt-br/tutorials/getting-started' },
+              { text: 'Configuração de Hardware', link: '/pt-br/tutorials/hardware-setup' },
+              { text: 'Configuração de Software', link: '/pt-br/tutorials/software-config' },
+              { text: 'Docs Lark', link: '/pt-br/tutorials/lark-wiki' },
+            ],
+          },
+          {
+            text: 'Recursos de Aprendizado',
+            items: [
+              { text: 'Recursos de Aprendizado', link: '/pt-br/tutorials/learning-resources/' },
+              { text: 'Guia Rápido', link: '/pt-br/tutorials/learning-resources/getting-started' },
+              { text: 'Configuração de Hardware', link: '/pt-br/tutorials/learning-resources/hardware-setup' },
+              { text: 'Configuração de Software', link: '/pt-br/tutorials/learning-resources/software-config' },
+              { text: 'Compatibilidade PyTorch no Jetson Orin', link: '/pt-br/tutorials/learning-resources/jetson-orin-pytorch-compatibility' },
+            ],
+          },
+          {
+            text: 'Braços Robóticos',
+            items: [
+              { text: 'Visão Geral dos Braços Robóticos', link: '/pt-br/tutorials/robot-arms/' },
+              { text: 'Guia de Seleção', link: '/pt-br/tutorials/robot-arms/select-guide' },
+              {
+                text: 'Série SO-ARM101',
+                collapsed: false,
+                items: [
+                  { text: 'Tutorial do Braço Robótico LeRobot', link: '/pt-br/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial' },
+                  { text: 'Guia de Montagem do Braço Robótico Lerobot', link: '/pt-br/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly' },
+                  { text: 'Compatibilidade PyTorch no Jetson Orin', link: '/pt-br/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility' },
+                  { text: 'Instalação do Suporte de Braço e Kit de Câmera SO-ARM100&101', link: '/pt-br/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation' },
+                  { text: 'Instalação da Câmera Superior', link: '/pt-br/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation' },
+                ],
+              },
+              {
+                text: 'AmazingHand',
+                collapsed: true,
+                items: [
+                  { text: 'Controle de Interface da Mão Robótica', link: '/pt-br/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control' },
+                  { text: 'Tutorial do Exemplo Oficial da Mão Robótica', link: '/pt-br/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example' },
+                  { text: 'Tutorial de Depuração da Mão Hábil (servo TTL)', link: '/pt-br/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging' },
+                ],
+              },
+              {
+                text: 'Lekiwi',
+                collapsed: true,
+                items: [
+                  { text: 'Tutorial de Uso do Robô Móvel Lekiwi', link: '/pt-br/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial' },
+                  { text: 'Tutorial de Montagem do Robô Móvel Lekiwi', link: '/pt-br/tutorials/robot-arms/lekiwi/Lekiwi-Assembly' },
+                ],
+              },
+            ],
+          },
+          {
+            text: 'Acessórios',
+            items: [
+              { text: 'Visão Geral dos Acessórios', link: '/pt-br/tutorials/accessories/' },
+              {
+                text: 'Módulo de Reconhecimento de Voz KWS',
+                collapsed: true,
+                items: [
+                  { text: 'Início da Série', link: '/pt-br/tutorials/accessories/KWS-speech-recognition-module/' },
+                  { text: 'Comunicação Serial Jetson Nano', link: '/pt-br/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication' },
+                  { text: 'Comunicação Serial Jetson', link: '/pt-br/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication' },
+                  { text: 'Comunicação Serial PC', link: '/pt-br/tutorials/accessories/KWS-speech-recognition-module/PC-serial-communication' },
+                  { text: 'Comunicação Serial Raspberry Pi', link: '/pt-br/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication' },
+                  { text: 'Visualização ROS2 RViz2', link: '/pt-br/tutorials/accessories/KWS-speech-recognition-module/ROS2-rviz2-visualization' },
+                  { text: 'Download e Gravação de Firmware de Palavras de Ativação', link: '/pt-br/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words' },
+                ],
+              },
+              {
+                text: 'Servos Feetech',
+                collapsed: true,
+                items: [
+                  { text: 'Tutorial de Depuração STS3215 & SCS0009', link: '/pt-br/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial' },
+                  { text: 'Protocolo de Comunicação SCS', link: '/pt-br/tutorials/accessories/feetech/Feetech-SCS_Communication_Protocol' },
+                  { text: 'Tabela de Memória do Servo STS com Encoder Magnético', link: '/pt-br/tutorials/accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis' },
+                  { text: 'Tabela de Memória do Servo SCSCL com Potenciômetro', link: '/pt-br/tutorials/accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis' },
+                ],
+              },
+              {
+                text: 'Outros Acessórios',
+                collapsed: true,
+                items: [
+                  { text: 'Câmera USB com Foco Automático', link: '/pt-br/tutorials/accessories/usb-auto-focus-camera' },
+                  { text: 'Câmera CSI Jetson', link: '/pt-br/tutorials/accessories/jetson-csi-camera' },
+                  { text: 'Gimbal de Câmera 2-DOF', link: '/pt-br/tutorials/accessories/2dof-camera-gimbal' },
+                  { text: 'Sensor de Frequência Cardíaca e SpO2', link: '/pt-br/tutorials/accessories/heart-rate-spo2' },
+                  { text: 'Tela OLED de 0,91"', link: '/pt-br/tutorials/accessories/0.91-oled-screen-tutorial' },
+                  { text: 'Captura HDMI 4K', link: '/pt-br/tutorials/accessories/4k-hdmi-capture-tutorial' },
+                  { text: 'Chaveador KVM', link: '/pt-br/tutorials/accessories/kvm-switch-tutorial' },
+                  { text: 'Placa de Som USB sem Driver', link: '/pt-br/tutorials/accessories/usb-audio-card-tutorial' },
+                ],
+              },
+            ],
+          },
+          {
+            text: 'Sensores',
+            items: [
+              { text: 'Visão Geral dos Sensores', link: '/pt-br/tutorials/sensors/' },
+              {
+                text: 'Módulo de Navegação Inercial IMU',
+                collapsed: true,
+                items: [
+                  { text: 'Informações do Produto', link: '/pt-br/tutorials/sensors/imu/product-info' },
+                  { text: 'Calibração IMU', link: '/pt-br/tutorials/sensors/imu/calibration' },
+                  {
+                    text: 'Exemplos Multi-Placa',
+                    items: [
+                      { text: 'Visão Geral dos Casos Multi-Host', link: '/pt-br/tutorials/sensors/imu/multi-board-examples/overview' },
+                      { text: 'Comunicação PC', link: '/pt-br/tutorials/sensors/imu/multi-board-examples/pc-communication' },
+                      {
+                        text: 'Comunicação I2C',
+                        items: [
+                          { text: 'Arduino', link: '/pt-br/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino' },
+                          { text: 'Jetson', link: '/pt-br/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson' },
+                          { text: 'Raspberry Pi', link: '/pt-br/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi' },
+                          { text: 'RDK', link: '/pt-br/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk' },
+                          { text: 'STM32', link: '/pt-br/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32' },
+                        ],
+                      },
+                      {
+                        text: 'Comunicação Serial',
+                        items: [
+                          { text: 'Arduino', link: '/pt-br/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino' },
+                          { text: 'Jetson', link: '/pt-br/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson' },
+                          { text: 'Raspberry Pi', link: '/pt-br/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi' },
+                          { text: 'RDK', link: '/pt-br/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk' },
+                          { text: 'STM32', link: '/pt-br/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32' },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    text: 'Exemplos ROS',
+                    items: [
+                      { text: 'Aplicação ROS1', link: '/pt-br/tutorials/sensors/imu/ros-examples/ros1' },
+                      { text: 'Aplicação ROS2', link: '/pt-br/tutorials/sensors/imu/ros-examples/ros2' },
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+        '/pt-br/topics/': [{ text: 'Tópicos', items: [{ text: 'Tópicos', link: '/pt-br/topics/' }, { text: 'Flasheamento JetPack e Configuração do Sistema', link: '/pt-br/topics/jetpack-setup' }, { text: 'Introdução ao Deploy de IA Edge', link: '/pt-br/topics/edge-ai-intro' }, { text: 'Introdução à Inteligência Incorporada (LeRobot)', link: '/pt-br/topics/embodied-ai-intro' }, { text: 'Tema Robot Learning', link: '/pt-br/topics/robot-learning/' }, { text: 'Filosofia de Hardware Open Source', link: '/pt-br/topics/open-source-hardware' }] }],
+        '/pt-br/tech/': [{ text: 'Docs Técnicos', items: [{ text: 'Docs Técnicos', link: '/pt-br/tech/' }, { text: 'Referência de API', link: '/pt-br/tech/api-reference' }, { text: 'Guia de Desenvolvimento', link: '/pt-br/tech/dev-guide' }] }],
+        '/pt-br/community/': [{ text: 'Comunidade', items: [{ text: 'Comunidade', link: '/pt-br/community/' }, { text: 'Guia de Contribuição', link: '/pt-br/community/contributing' }] }],
+        '/pt-br/cases/': [{ text: 'Casos', items: [{ text: 'Histórias de Sucesso de Usuários', link: '/pt-br/cases/' }] }],
+        '/pt-br/products/': [
+          { text: 'Robôs', items: [
+            { text: 'Kit Desenvolvedor SO-ARM101', link: '/pt-br/products/so-arm101' },
+            { text: 'Mão Dexterous de 4 Dedos AmazingHand', link: '/pt-br/products/amazinghand' },
+            { text: 'Placa Driver de Servo de Barramento', link: '/pt-br/products/servo-driver-board' },
+            { text: 'Garra Flexível TPU SO-ARM101', link: '/pt-br/products/tpu-flexible-gripper' },
+            { text: 'Kit de Visão Robótica SO-ARM101', link: '/pt-br/products/robot-vision-kit' },
+            { text: 'Robô Móvel Lekiwi', link: '/pt-br/products/lekiwi' },
+            { text: 'Suporte de Câmera Superior SO-ARM101', link: '/pt-br/products/overhead-camera-mount' },
+          ] },
+          { text: 'Computação & Visão', items: [
+            { text: 'Kit Jetson Orin NX Super', link: '/pt-br/products/jetson-orin-nx-super-kit' },
+            { text: 'Câmera de Profundidade RealSense', link: '/pt-br/products/realsense-depth-camera' },
+            { text: 'Módulo de Vídeo WiFi ESP32-S3', link: '/pt-br/products/esp32-s3-wifi-module' },
+            { text: 'Câmera CSI IMX219 79°', link: '/pt-br/products/imx219-csi-camera' },
+          ] },
+          { text: 'Sensores', items: [
+            { text: 'Módulo Inercial IMU', link: '/pt-br/products/imu-module' },
+            { text: 'Módulo GNSS GPS e Beidou', link: '/pt-br/products/gps-beidou-module' },
+          ] },
+          { text: 'Acessórios', items: [
+            { text: 'Pan-tilt de Servo 2-DOF', link: '/pt-br/products/2dof-gimbal' },
+            { text: 'Módulo de Interação de Voz KWS', link: '/pt-br/products/kws-voice-module' },
+            { text: 'Servo de Barramento Feetech', link: '/pt-br/products/feetech-servo' },
+            { text: 'Chaveador KVM 4-em-1', link: '/pt-br/products/kvm-switch' },
+            { text: 'Placa de Som USB sem Driver', link: '/pt-br/products/usb-sound-card' },
+            { text: 'Capturadora HDMI 4K', link: '/pt-br/products/4k-hdmi-capture' },
+          ] },
+        ],
+        '/pt-br/downloads/': [{ text: 'Downloads', items: [{ text: 'Central de Downloads', link: '/pt-br/downloads/' }] }],
+        '/pt-br/about/': [{ text: 'Sobre', items: [{ text: 'Sobre Nós', link: '/pt-br/about/' }] }],
+      },
+    },
+  },
+  'pt-pt': {
+    label: 'Português (Portugal)',
+    lang: 'pt-PT',
+    description: 'Central de tutoriais e documentação Juxi Technology',
+    head: [
+      ['meta', { property: 'og:title', content: 'Juxi Technology Wiki - Tutoriais e Documentação (Portugal)' }],
+      ['meta', { property: 'og:description', content: 'Juxi Technology Wiki — tutoriais e documentação completos para braços robóticos, sensores e acessórios. De SO-ARM101 a módulos IMU.' }],
+    ],
+    themeConfig: {
+      siteTitle: 'Juxi Technology Wiki',
+      nav: [
+        { text: 'Tutoriais', link: '/pt-pt/tutorials/', activeMatch: '/pt-pt/tutorials/' },
+        { text: 'Tópicos', link: '/pt-pt/topics/', activeMatch: '/pt-pt/topics/' },
+        { text: 'Docs Técnicos', link: '/pt-pt/tech/', activeMatch: '/pt-pt/tech/' },
+        { text: 'Produtos', link: '/pt-pt/products/', activeMatch: '/pt-pt/products/' },
+        { text: 'Casos', link: '/pt-pt/cases/', activeMatch: '/pt-pt/cases/' },
+        { text: 'Comunidade', link: '/pt-pt/community/', activeMatch: '/pt-pt/community/' },
+        { text: 'Downloads', link: '/pt-pt/downloads/', activeMatch: '/pt-pt/downloads/' },
+        { text: 'Sobre', link: '/pt-pt/about/', activeMatch: '/pt-pt/about/' },
+      ],
+      sidebar: {
+        '/pt-pt/tutorials/': [
+          {
+            text: 'Guia Rápido',
+            items: [
+              { text: 'FAQ', link: '/pt-pt/tutorials/faq' },
+              { text: 'Introdução ao ROS', link: '/pt-pt/tutorials/ros-intro' },
+              { text: 'Guia Rápido', link: '/pt-pt/tutorials/getting-started' },
+              { text: 'Configuração de Hardware', link: '/pt-pt/tutorials/hardware-setup' },
+              { text: 'Configuração de Software', link: '/pt-pt/tutorials/software-config' },
+              { text: 'Docs Lark', link: '/pt-pt/tutorials/lark-wiki' },
+            ],
+          },
+          {
+            text: 'Recursos de Aprendizado',
+            items: [
+              { text: 'Recursos de Aprendizado', link: '/pt-pt/tutorials/learning-resources/' },
+              { text: 'Guia Rápido', link: '/pt-pt/tutorials/learning-resources/getting-started' },
+              { text: 'Configuração de Hardware', link: '/pt-pt/tutorials/learning-resources/hardware-setup' },
+              { text: 'Configuração de Software', link: '/pt-pt/tutorials/learning-resources/software-config' },
+              { text: 'Compatibilidade PyTorch no Jetson Orin', link: '/pt-pt/tutorials/learning-resources/jetson-orin-pytorch-compatibility' },
+            ],
+          },
+          {
+            text: 'Braços Robóticos',
+            items: [
+              { text: 'Visão Geral dos Braços Robóticos', link: '/pt-pt/tutorials/robot-arms/' },
+              { text: 'Guia de Seleção', link: '/pt-pt/tutorials/robot-arms/select-guide' },
+              {
+                text: 'Série SO-ARM101',
+                collapsed: false,
+                items: [
+                  { text: 'Tutorial do Braço Robótico LeRobot', link: '/pt-pt/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial' },
+                  { text: 'Guia de Montagem do Braço Robótico Lerobot', link: '/pt-pt/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly' },
+                  { text: 'Compatibilidade PyTorch no Jetson Orin', link: '/pt-pt/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility' },
+                  { text: 'Instalação do Suporte de Braço e Kit de Câmara SO-ARM100&101', link: '/pt-pt/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation' },
+                  { text: 'Instalação da Câmara Superior', link: '/pt-pt/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation' },
+                ],
+              },
+              {
+                text: 'AmazingHand',
+                collapsed: true,
+                items: [
+                  { text: 'Controle de Interface da Mão Robótica', link: '/pt-pt/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control' },
+                  { text: 'Tutorial do Exemplo Oficial da Mão Robótica', link: '/pt-pt/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example' },
+                  { text: 'Tutorial de Depuração da Mão Hábil (servo TTL)', link: '/pt-pt/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging' },
+                ],
+              },
+              {
+                text: 'Lekiwi',
+                collapsed: true,
+                items: [
+                  { text: 'Tutorial de Uso do Robô Móvel Lekiwi', link: '/pt-pt/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial' },
+                  { text: 'Tutorial de Montagem do Robô Móvel Lekiwi', link: '/pt-pt/tutorials/robot-arms/lekiwi/Lekiwi-Assembly' },
+                ],
+              },
+            ],
+          },
+          {
+            text: 'Acessórios',
+            items: [
+              { text: 'Visão Geral dos Acessórios', link: '/pt-pt/tutorials/accessories/' },
+              {
+                text: 'Módulo de Reconhecimento de Voz KWS',
+                collapsed: true,
+                items: [
+                  { text: 'Início da Série', link: '/pt-pt/tutorials/accessories/KWS-speech-recognition-module/' },
+                  { text: 'Comunicação Serial Jetson Nano', link: '/pt-pt/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication' },
+                  { text: 'Comunicação Serial Jetson', link: '/pt-pt/tutorials/accessories/KWS-speech-recognition-module/Jetson-serial-communication' },
+                  { text: 'Comunicação Serial PC', link: '/pt-pt/tutorials/accessories/KWS-speech-recognition-module/PC-serial-communication' },
+                  { text: 'Comunicação Serial Raspberry Pi', link: '/pt-pt/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication' },
+                  { text: 'Visualização ROS2 RViz2', link: '/pt-pt/tutorials/accessories/KWS-speech-recognition-module/ROS2-rviz2-visualization' },
+                  { text: 'Download e Gravação de Firmware de Palavras de Ativação', link: '/pt-pt/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words' },
+                ],
+              },
+              {
+                text: 'Servos Feetech',
+                collapsed: true,
+                items: [
+                  { text: 'Tutorial de Depuração STS3215 & SCS0009', link: '/pt-pt/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial' },
+                  { text: 'Protocolo de Comunicação SCS', link: '/pt-pt/tutorials/accessories/feetech/Feetech-SCS_Communication_Protocol' },
+                  { text: 'Tabela de Memória do Servo STS com Encoder Magnético', link: '/pt-pt/tutorials/accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis' },
+                  { text: 'Tabela de Memória do Servo SCSCL com Potenciômetro', link: '/pt-pt/tutorials/accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis' },
+                ],
+              },
+              {
+                text: 'Outros Acessórios',
+                collapsed: true,
+                items: [
+                  { text: 'Câmara USB com Foco Automático', link: '/pt-pt/tutorials/accessories/usb-auto-focus-camera' },
+                  { text: 'Câmara CSI Jetson', link: '/pt-pt/tutorials/accessories/jetson-csi-camera' },
+                  { text: 'Gimbal de Câmara 2-DOF', link: '/pt-pt/tutorials/accessories/2dof-camera-gimbal' },
+                  { text: 'Sensor de Frequência Cardíaca e SpO2', link: '/pt-pt/tutorials/accessories/heart-rate-spo2' },
+                  { text: 'Tela OLED de 0,91"', link: '/pt-pt/tutorials/accessories/0.91-oled-screen-tutorial' },
+                  { text: 'Captura HDMI 4K', link: '/pt-pt/tutorials/accessories/4k-hdmi-capture-tutorial' },
+                  { text: 'Chaveador KVM', link: '/pt-pt/tutorials/accessories/kvm-switch-tutorial' },
+                  { text: 'Placa de Som USB sem Driver', link: '/pt-pt/tutorials/accessories/usb-audio-card-tutorial' },
+                ],
+              },
+            ],
+          },
+          {
+            text: 'Sensores',
+            items: [
+              { text: 'Visão Geral dos Sensores', link: '/pt-pt/tutorials/sensors/' },
+              {
+                text: 'Módulo de Navegação Inercial IMU',
+                collapsed: true,
+                items: [
+                  { text: 'Informações do Produto', link: '/pt-pt/tutorials/sensors/imu/product-info' },
+                  { text: 'Calibração IMU', link: '/pt-pt/tutorials/sensors/imu/calibration' },
+                  {
+                    text: 'Exemplos Multi-Placa',
+                    items: [
+                      { text: 'Visão Geral dos Casos Multi-Host', link: '/pt-pt/tutorials/sensors/imu/multi-board-examples/overview' },
+                      { text: 'Comunicação PC', link: '/pt-pt/tutorials/sensors/imu/multi-board-examples/pc-communication' },
+                      {
+                        text: 'Comunicação I2C',
+                        items: [
+                          { text: 'Arduino', link: '/pt-pt/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino' },
+                          { text: 'Jetson', link: '/pt-pt/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson' },
+                          { text: 'Raspberry Pi', link: '/pt-pt/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi' },
+                          { text: 'RDK', link: '/pt-pt/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk' },
+                          { text: 'STM32', link: '/pt-pt/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32' },
+                        ],
+                      },
+                      {
+                        text: 'Comunicação Serial',
+                        items: [
+                          { text: 'Arduino', link: '/pt-pt/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino' },
+                          { text: 'Jetson', link: '/pt-pt/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson' },
+                          { text: 'Raspberry Pi', link: '/pt-pt/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi' },
+                          { text: 'RDK', link: '/pt-pt/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk' },
+                          { text: 'STM32', link: '/pt-pt/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32' },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    text: 'Exemplos ROS',
+                    items: [
+                      { text: 'Aplicação ROS1', link: '/pt-pt/tutorials/sensors/imu/ros-examples/ros1' },
+                      { text: 'Aplicação ROS2', link: '/pt-pt/tutorials/sensors/imu/ros-examples/ros2' },
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+        '/pt-pt/topics/': [{ text: 'Tópicos', items: [{ text: 'Tópicos', link: '/pt-pt/topics/' }, { text: 'Flasheamento JetPack e Configuração do Sistema', link: '/pt-pt/topics/jetpack-setup' }, { text: 'Introdução ao Deploy de IA Edge', link: '/pt-pt/topics/edge-ai-intro' }, { text: 'Introdução à Inteligência Incorporada (LeRobot)', link: '/pt-pt/topics/embodied-ai-intro' }, { text: 'Tema Robot Learning', link: '/pt-pt/topics/robot-learning/' }, { text: 'Filosofia de Hardware Open Source', link: '/pt-pt/topics/open-source-hardware' }] }],
+        '/pt-pt/tech/': [{ text: 'Docs Técnicos', items: [{ text: 'Docs Técnicos', link: '/pt-pt/tech/' }, { text: 'Referência de API', link: '/pt-pt/tech/api-reference' }, { text: 'Guia de Desenvolvimento', link: '/pt-pt/tech/dev-guide' }] }],
+        '/pt-pt/community/': [{ text: 'Comunidade', items: [{ text: 'Comunidade', link: '/pt-pt/community/' }, { text: 'Guia de Contribuição', link: '/pt-pt/community/contributing' }] }],
+        '/pt-pt/cases/': [{ text: 'Casos', items: [{ text: 'Histórias de Sucesso de Usuários', link: '/pt-pt/cases/' }] }],
+        '/pt-pt/products/': [
+          { text: 'Robôs', items: [
+            { text: 'Kit Desenvolvedor SO-ARM101', link: '/pt-pt/products/so-arm101' },
+            { text: 'Mão Dexterous de 4 Dedos AmazingHand', link: '/pt-pt/products/amazinghand' },
+            { text: 'Placa Driver de Servo de Barramento', link: '/pt-pt/products/servo-driver-board' },
+            { text: 'Garra Flexível TPU SO-ARM101', link: '/pt-pt/products/tpu-flexible-gripper' },
+            { text: 'Kit de Visão Robótica SO-ARM101', link: '/pt-pt/products/robot-vision-kit' },
+            { text: 'Robô Móvel Lekiwi', link: '/pt-pt/products/lekiwi' },
+            { text: 'Suporte de Câmara Superior SO-ARM101', link: '/pt-pt/products/overhead-camera-mount' },
+          ] },
+          { text: 'Computação & Visão', items: [
+            { text: 'Kit Jetson Orin NX Super', link: '/pt-pt/products/jetson-orin-nx-super-kit' },
+            { text: 'Câmara de Profundidade RealSense', link: '/pt-pt/products/realsense-depth-camera' },
+            { text: 'Módulo de Vídeo WiFi ESP32-S3', link: '/pt-pt/products/esp32-s3-wifi-module' },
+            { text: 'Câmara CSI IMX219 79°', link: '/pt-pt/products/imx219-csi-camera' },
+          ] },
+          { text: 'Sensores', items: [
+            { text: 'Módulo Inercial IMU', link: '/pt-pt/products/imu-module' },
+            { text: 'Módulo GNSS GPS e Beidou', link: '/pt-pt/products/gps-beidou-module' },
+          ] },
+          { text: 'Acessórios', items: [
+            { text: 'Pan-tilt de Servo 2-DOF', link: '/pt-pt/products/2dof-gimbal' },
+            { text: 'Módulo de Interação de Voz KWS', link: '/pt-pt/products/kws-voice-module' },
+            { text: 'Servo de Barramento Feetech', link: '/pt-pt/products/feetech-servo' },
+            { text: 'Chaveador KVM 4-em-1', link: '/pt-pt/products/kvm-switch' },
+            { text: 'Placa de Som USB sem Driver', link: '/pt-pt/products/usb-sound-card' },
+            { text: 'Capturadora HDMI 4K', link: '/pt-pt/products/4k-hdmi-capture' },
+          ] },
+        ],
+        '/pt-pt/downloads/': [{ text: 'Downloads', items: [{ text: 'Central de Downloads', link: '/pt-pt/downloads/' }] }],
+        '/pt-pt/about/': [{ text: 'Sobre', items: [{ text: 'Sobre Nós', link: '/pt-pt/about/' }] }],
       },
     },
   },

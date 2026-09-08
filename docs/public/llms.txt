@@ -1,7 +1,7 @@
 # Juxi Technology Wiki
 
 > Open documentation platform for Juxi Technology robotics and AI hardware products.
-> Available in 9 languages: English (root, no prefix), Simplified Chinese (/zh-hans/), Traditional Chinese (/zh-hant/), Japanese (/ja/), Korean (/ko/), German (/de/), French (/fr/), Spanish (/es/), Italian (/it/).
+> Available in 11 languages: English (root, no prefix), Simplified Chinese (/zh-hans/), Traditional Chinese (/zh-hant/), Japanese (/ja/), Korean (/ko/), German (/de/), French (/fr/), Spanish (/es/), Italian (/it/), Portuguese (Brazil) (/pt-br/), Portuguese (Portugal) (/pt-pt/).
 
 ## Simplified Chinese (简体中文)
 
@@ -249,5 +249,5 @@
 - [軟件配置](https://wiki.juxitech.com/zh-hant/tutorials/software-config)
 ## Other Languages (日本語 / 한국어 / Deutsch / Français / Español / Italiano)
 
-Same documentation tree as the English section, localized under URL prefixes: /ja/, /ko/, /de/, /fr/, /es/, /it/.
+Same documentation tree as the English section, localized under URL prefixes: /ja/, /ko/, /de/, /fr/, /es/, /it/, /pt-br/, /pt-pt/.
 All pages above (tutorials, topics, tech, cases, community, downloads) exist in every language with the same relative path.

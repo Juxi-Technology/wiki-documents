@@ -17,6 +17,8 @@ const T: Record<string, { title: string; all: string; robot: string; sensor: str
   fr: { title: 'Documents récents', all: 'Tous', robot: 'Bras robotiques', sensor: 'Capteurs', accessory: 'Accessoires' },
   es: { title: 'Documentos recientes', all: 'Todos', robot: 'Brazos robóticos', sensor: 'Sensores', accessory: 'Accesorios' },
   it: { title: 'Documenti recenti', all: 'Tutti', robot: 'Bracci robotici', sensor: 'Sensori', accessory: 'Accessori' },
+  'pt-BR': { title: 'Documentos recentes', all: 'Todos', robot: 'Braços robóticos', sensor: 'Sensores', accessory: 'Acessórios' },
+  'pt-PT': { title: 'Documentos recentes', all: 'Todos', robot: 'Braços robóticos', sensor: 'Sensores', accessory: 'Acessórios' },
 }
 
 // 卡片标题(各语,与既有首页卡片一致)
@@ -30,6 +32,8 @@ const TITLES: Record<string, string[]> = {
   fr: ['Tutoriel SO-ARM101', 'Module KWS – série de tutoriels', 'Module de navigation inertielle IMU', "Contrôle d'interface AmazingHand"],
   es: ['Tutorial SO-ARM101', 'Módulo KWS – serie de tutoriales', 'Módulo de navegación inercial IMU', 'Control de interfaz AmazingHand'],
   it: ['Tutorial SO-ARM101', 'Modulo KWS – serie di tutorial', 'Modulo di navigazione inerziale IMU', 'Controllo interfaccia AmazingHand'],
+  'pt-BR': ['Tutorial SO-ARM101', 'Módulo KWS – série de tutoriais', 'Módulo de navegação inercial IMU', 'Controle de interface AmazingHand'],
+  'pt-PT': ['Tutorial SO-ARM101', 'Módulo KWS – série de tutoriais', 'Módulo de navegação inercial IMU', 'Controle de interface AmazingHand'],
 }
 
 // 卡片:相对路径(语言前缀由组件拼接)、分类(与产品页 category 枚举对齐)、图片
@@ -43,7 +47,7 @@ const CARDS = [
 const t = computed(() => T[lang.value] || T.en)
 const titles = computed(() => TITLES[lang.value] || TITLES.en)
 const langDir = computed(() => {
-  const dirs: Record<string, string> = { 'zh-CN': '/zh-hans/', 'zh-HK': '/zh-hant/', ja: '/ja/', ko: '/ko/', de: '/de/', fr: '/fr/', es: '/es/', it: '/it/', en: '/' }
+  const dirs: Record<string, string> = { 'zh-CN': '/zh-hans/', 'zh-HK': '/zh-hant/', ja: '/ja/', ko: '/ko/', de: '/de/', fr: '/fr/', es: '/es/', it: '/it/', 'pt-BR': '/pt-br/', 'pt-PT': '/pt-pt/', en: '/' }
   return dirs[lang.value] || '/'
 })
 

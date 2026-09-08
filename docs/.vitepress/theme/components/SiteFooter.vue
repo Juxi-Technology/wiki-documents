@@ -15,6 +15,8 @@ const T: Record<string, { tagline: string; docs: string; community: string; supp
   fr: { tagline: 'Plateforme de documentation ouverte pour la robotique et le matériel IA.', docs: 'Docs', community: 'Communauté', support: 'Support', rights: 'Tous droits réservés', tut: 'Tutoriels', prod: 'Produits', topic: 'Sujets', dl: 'Téléchargements', communityItem: 'Communauté', aboutItem: 'À propos', faq: 'FAQ', contributing: 'Guide de contribution' },
   es: { tagline: 'Plataforma de documentación abierta para robótica y hardware de IA.', docs: 'Docs', community: 'Comunidad', support: 'Soporte', rights: 'Todos los derechos reservados', tut: 'Tutoriales', prod: 'Productos', topic: 'Temas', dl: 'Descargas', communityItem: 'Comunidad', aboutItem: 'Sobre nosotros', faq: 'Preguntas frecuentes', contributing: 'Guía de contribución' },
   it: { tagline: 'Piattaforma di documentazione aperta per robotica e hardware AI.', docs: 'Docs', community: 'Community', support: 'Supporto', rights: 'Tutti i diritti riservati', tut: 'Tutorial', prod: 'Prodotti', topic: 'Argomenti', dl: 'Download', communityItem: 'Community', aboutItem: 'Chi siamo', faq: 'Domande frequenti', contributing: 'Guida alla contribuzione' },
+  'pt-BR': { tagline: 'Plataforma aberta de documentação para robótica e hardware de IA.', docs: 'Docs', community: 'Comunidade', support: 'Suporte', rights: 'Todos os direitos reservados', tut: 'Tutoriais', prod: 'Produtos', topic: 'Tópicos', dl: 'Downloads', communityItem: 'Comunidade', aboutItem: 'Sobre nós', faq: 'Perguntas frequentes', contributing: 'Guia de contribuição' },
+  'pt-PT': { tagline: 'Plataforma aberta de documentação para robótica e hardware de IA.', docs: 'Docs', community: 'Comunidade', support: 'Suporte', rights: 'Todos os direitos reservados', tut: 'Tutoriais', prod: 'Produtos', topic: 'Tópicos', dl: 'Downloads', communityItem: 'Comunidade', aboutItem: 'Sobre nós', faq: 'Perguntas frequentes', contributing: 'Guia de contribuição' },
 }
 
 const t = computed(() => T[lang.value] || T.en)
@@ -23,7 +25,7 @@ const t = computed(() => T[lang.value] || T.en)
 const pref = computed(() => {
   // 必须带前导 "/":withBase 对非 "/" 开头的路径原样返回(相对 URL),
   // 浏览器会按当前页语言前缀再解析一层,导致 /zh-hans/zh-hans/... 双前缀 404
-  const dirs: Record<string, string> = { 'zh-CN': '/zh-hans/', 'zh-HK': '/zh-hant/', ja: '/ja/', ko: '/ko/', de: '/de/', fr: '/fr/', es: '/es/', it: '/it/', en: '/' }
+  const dirs: Record<string, string> = { 'zh-CN': '/zh-hans/', 'zh-HK': '/zh-hant/', ja: '/ja/', ko: '/ko/', de: '/de/', fr: '/fr/', es: '/es/', it: '/it/', 'pt-BR': '/pt-br/', 'pt-PT': '/pt-pt/', en: '/' }
   return dirs[lang.value] || ''
 })
 </script>

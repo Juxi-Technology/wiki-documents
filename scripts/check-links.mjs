@@ -19,7 +19,7 @@ function checkSidebarLinks() {
   const cfg = fs.readFileSync(cfgFile, 'utf8')
   const links = [...cfg.matchAll(/link:\s*'(\/[^']*)'/g)].map((m) => m[1])
   const unique = [...new Set(links)]
-  const LANGS = ['zh-hans', 'zh-hant', 'ja', 'ko', 'de', 'fr', 'es', 'it']
+  const LANGS = ['zh-hans', 'zh-hant', 'ja', 'ko', 'de', 'fr', 'es', 'it', 'pt']
   const missing = []
   for (const l of unique) {
     const parts = l.split('/').filter(Boolean)

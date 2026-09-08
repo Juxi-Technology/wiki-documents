@@ -3,14 +3,14 @@
 // 2) 手动点击语言切换后记住偏好,下次直接进入所选语言
 // 3) 已带语言前缀的 URL(爬虫/直接链接)绝不跳转 → 对 SEO 无害
 if (typeof window !== 'undefined') {
-  const URL_LANG_RE = /^\/(zh-hans|zh-hant|ja|ko|de|fr|es|it|en)(?=\/|$)/
+  const URL_LANG_RE = /^\/(zh-hans|zh-hant|ja|ko|de|fr|es|it|pt-br|pt-pt|en)(?=\/|$)/
   const PREF_KEY = 'wiki-lang'
 
   // 手动切换语言时记录偏好
   document.addEventListener('click', (e) => {
-    const a = (e.target as HTMLElement | null)?.closest?.('a[href*="/zh-hans"], a[href*="/zh-hant"], a[href*="/ja/"], a[href*="/ko/"], a[href*="/de/"], a[href*="/fr/"], a[href*="/es/"], a[href*="/it/"]')
+    const a = (e.target as HTMLElement | null)?.closest?.('a[href*="/zh-hans"], a[href*="/zh-hant"], a[href*="/ja/"], a[href*="/ko/"], a[href*="/de/"], a[href*="/fr/"], a[href*="/es/"], a[href*="/it/"], a[href*="/pt/"]')
     if (!a) return
-    const m = (a as HTMLAnchorElement).pathname.match(/^\/(zh-hans|zh-hant|ja|ko|de|fr|es|it)/)
+    const m = (a as HTMLAnchorElement).pathname.match(/^\/(zh-hans|zh-hant|ja|ko|de|fr|es|it|pt-br|pt-pt)/)
     if (m) {
       try {
         localStorage.setItem(PREF_KEY, m[1])
@@ -43,6 +43,8 @@ if (typeof window !== 'undefined') {
       else if (/^fr/i.test(nav)) target = 'fr'
       else if (/^es/i.test(nav)) target = 'es'
       else if (/^it/i.test(nav)) target = 'it'
+      else if (/^pt[-_]BR|^pt[-_]br/i.test(nav)) target = 'pt-br'
+      else if (/^pt/i.test(nav)) target = 'pt-pt'
     }
     if (target && target !== 'en') {
       try {

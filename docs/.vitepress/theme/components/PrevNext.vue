@@ -20,6 +20,8 @@ const T = {
   fr: { prev: 'Précédent', next: 'Suivant' },
   es: { prev: 'Anterior', next: 'Siguiente' },
   it: { prev: 'Precedente', next: 'Successivo' },
+  'pt-BR': { prev: 'Anterior', next: 'Próximo' },
+  'pt-PT': { prev: 'Anterior', next: 'Próximo' },
 }
 const label = computed(() => ({ prev: T[lang.value as keyof typeof T]?.prev || 'Prev', next: T[lang.value as keyof typeof T]?.next || 'Next' }))
 </script>

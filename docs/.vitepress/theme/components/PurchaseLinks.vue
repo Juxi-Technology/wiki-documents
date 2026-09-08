@@ -37,6 +37,8 @@ const localePrefix = computed(() => {
     fr: 'fr/',
     es: 'es/',
     it: 'it/',
+    'pt-br': 'pt-br/',
+    'pt-pt': 'pt/', // Shopify 仅 pt(巴西葡语),wiki 双变体共享
   }
   return dirs[localeIndex.value] || ''
 })
@@ -72,6 +74,8 @@ const copy = computed(() => {
     fr: { buy: 'Acheter ce produit', store: 'Boutique officielle', site: 'Site officiel' },
     es: { buy: 'Comprar este producto', store: 'Tienda oficial', site: 'Sitio web oficial' },
     it: { buy: 'Acquista questo prodotto', store: 'Negozio ufficiale', site: 'Sito ufficiale' },
+    'pt-br': { buy: 'Compre este produto', store: 'Loja oficial', site: 'Site oficial' },
+    'pt-pt': { buy: 'Compre este produto', store: 'Loja oficial', site: 'Site oficial' },
   }
   return T[localeIndex.value] || { buy: 'Buy This Product', store: 'Official Store', site: 'Official Website' }
 })

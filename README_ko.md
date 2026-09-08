@@ -1,7 +1,7 @@
 # <img src="docs/public/images/logos/logo-black.png" width="80" align="left" style="margin-right: 16px;"> Juxi Technology Wiki
 
 [![Deploy](https://github.com/Juxi-Technology/wiki-documents/actions/workflows/deploy.yml/badge.svg)](https://github.com/Juxi-Technology/wiki-documents/actions/workflows/deploy.yml)
-[![9 Languages](https://img.shields.io/badge/languages-9%20locales-10b981)](https://wiki.juxitech.com/)
+[![9 Languages](https://img.shields.io/badge/languages-11%20locales-10b981)](https://wiki.juxitech.com/)
 [![llms.txt](https://img.shields.io/badge/LLM%20ready-llms.txt-634b8f)](https://wiki.juxitech.com/llms.txt)
 [![VitePress](https://img.shields.io/badge/VitePress-1.x-646cff)](https://vitepress.dev/)
 
@@ -9,7 +9,7 @@ Juxi Technology 로봇 및 AI 하드웨어 제품을 위한 오픈 문서 플랫
 
 🌐 **[wiki.juxitech.com](https://wiki.juxitech.com/)**
 
-**9개 언어 지원**:English(기본, 접두사 없음)、简体中文(`/zh-hans/`)、繁體中文(`/zh-hant/`)、日本語(`/ja/`)、한국어(`/ko/`)、Deutsch(`/de/`)、Français(`/fr/`)、Español(`/es/`)、Italiano(`/it/`).
+**11개 언어 지원**:English(기본, 접두사 없음)、简体中文(`/zh-hans/`)、繁體中文(`/zh-hant/`)、日本語(`/ja/`)、한국어(`/ko/`)、Deutsch(`/de/`)、Français(`/fr/`)、Español(`/es/`)、Italiano(`/it/`), Português (Brasil)(`/pt-br/`), Português (Portugal)(`/pt-pt/`).
 
 ## 저장소 구조
 
@@ -71,4 +71,4 @@ npm run gen:llms     # llms-full.txt 재생성(CI 빌드 시 자동 실행)
 - 📧 [support@juxitech.com](mailto:support@juxitech.com)
 - 📧 [sales@juxitech.com](mailto:sales@juxitech.com)
 
-[English](README.md) | [简体中文](README_zh.md) | [繁體中文](README_zh-HK.md) | [日本語](README_ja.md) | [Deutsch](README_de.md) | [Français](README_fr.md) | [Español](README_es.md) | [Italiano](README_it.md)
+[English](README.md) | [简体中文](README_zh.md) | [繁體中文](README_zh-HK.md) | [日本語](README_ja.md) | [Deutsch](README_de.md) | [Français](README_fr.md) | [Español](README_es.md) | [Italiano](README_it.md) | [Português (Brasil)](README_pt-BR.md) | [Português (Portugal)](README_pt-PT.md)

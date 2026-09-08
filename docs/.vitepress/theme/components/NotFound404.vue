@@ -12,6 +12,8 @@ const T: Record<string, { title: string; subtitle: string; cta: string; home: st
   fr: { title: 'Page introuvable', subtitle: 'La page demandée n’existe pas ou a été déplacée.', cta: 'Accueil', home: 'Accueil', tutorials: 'Voir les tutoriels', search: 'Recherche ( / ou ⌘K )', report: 'Signaler un lien cassé' },
   es: { title: 'Página no encontrada', subtitle: 'La página solicitada no existe o se ha movido.', cta: 'Ir al inicio', home: 'Inicio', tutorials: 'Ver tutoriales', search: 'Buscar ( / o ⌘K )', report: 'Reportar enlace roto' },
   it: { title: 'Pagina non trovata', subtitle: 'La pagina richiesta non esiste o è stata spostata.', cta: 'Torna alla home', home: 'Home', tutorials: 'Vedi i tutorial', search: 'Cerca ( / o ⌘K )', report: 'Segnala link rotto' },
+  'pt-BR': { title: 'Página não encontrada', subtitle: 'A página solicitada não existe ou foi movida.', cta: 'Ir para a página inicial', home: 'Início', tutorials: 'Ver tutoriais', search: 'Pesquisar ( / ou ⌘K )', report: 'Reportar link quebrado' },
+  'pt-PT': { title: 'Página não encontrada', subtitle: 'A página solicitada não existe ou foi movida.', cta: 'Ir para a página inicial', home: 'Início', tutorials: 'Ver tutoriais', search: 'Pesquisar ( / ou ⌘K )', report: 'Reportar link quebrado' },
 }
 
 // 404 页为 CSR 渲染,语言无法由 useData 提供,从请求路径推断;
@@ -31,6 +33,8 @@ const t = computed(() => {
     fr: 'fr',
     es: 'es',
     it: 'it',
+    'pt-br': 'pt-BR',
+    'pt-pt': 'pt-PT',
   }
   return T[langMap[match[1]]] || T.en
 })

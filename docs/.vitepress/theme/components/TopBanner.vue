@@ -15,6 +15,8 @@ const MESSAGES: Record<string, string> = {
   'fr': '🧪 De nouveaux tutoriels arrivent — du bras robotique au capteur',
   'es': '🧪 Se publican nuevos tutoriales — del brazo robótico al sensor',
   'it': '🧪 Stanno arrivando nuovi tutorial — dal braccio robotico al sensore',
+  'pt-BR': '🧪 Novos tutoriais em andamento — do braço robótico ao sensor',
+  'pt-PT': '🧪 Novos tutoriais em andamento — do braço robótico ao sensor',
 }
 
 const msg = computed(() => MESSAGES[lang.value] || MESSAGES['zh-CN'])

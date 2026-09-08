@@ -1,7 +1,7 @@
 # <img src="docs/public/images/logos/logo-black.png" width="80" align="left" style="margin-right: 16px;"> 钜犀科技 Wiki
 
 [![Deploy](https://github.com/Juxi-Technology/wiki-documents/actions/workflows/deploy.yml/badge.svg)](https://github.com/Juxi-Technology/wiki-documents/actions/workflows/deploy.yml)
-[![9 Languages](https://img.shields.io/badge/languages-9%20locales-10b981)](https://wiki.juxitech.com/)
+[![9 Languages](https://img.shields.io/badge/languages-11%20locales-10b981)](https://wiki.juxitech.com/)
 [![llms.txt](https://img.shields.io/badge/LLM%20ready-llms.txt-634b8f)](https://wiki.juxitech.com/llms.txt)
 [![VitePress](https://img.shields.io/badge/VitePress-1.x-646cff)](https://vitepress.dev/)
 
@@ -9,7 +9,7 @@
 
 🌐 **[wiki.juxitech.com](https://wiki.juxitech.com/)**
 
-支持 **9 种语言**:English(默认,无前缀)、简体中文(`/zh-hans/`)、繁體中文(`/zh-hant/`)、日本語(`/ja/`)、한국어(`/ko/`)、Deutsch(`/de/`)、Français(`/fr/`)、Español(`/es/`)、Italiano(`/it/`)。
+支持 **11 种语言**:English(默认,无前缀)、简体中文(`/zh-hans/`)、繁體中文(`/zh-hant/`)、日本語(`/ja/`)、한국어(`/ko/`)、Deutsch(`/de/`)、Français(`/fr/`)、Español(`/es/`)、Italiano(`/it/`)、Português (Brasil)(`/pt-br/`)、Português (Portugal)(`/pt-pt/`)。
 
 ## 仓库结构
 
@@ -71,4 +71,4 @@ npm run gen:llms     # 重新生成 llms-full.txt(CI 构建时自动执行)
 - 📧 [support@juxitech.com](mailto:support@juxitech.com)
 - 📧 [sales@juxitech.com](mailto:sales@juxitech.com)
 
-[English](README.md) | [繁體中文](README_zh-HK.md) | [日本語](README_ja.md) | [한국어](README_ko.md) | [Deutsch](README_de.md) | [Français](README_fr.md) | [Español](README_es.md) | [Italiano](README_it.md)
+[English](README.md) | [繁體中文](README_zh-HK.md) | [日本語](README_ja.md) | [한국어](README_ko.md) | [Deutsch](README_de.md) | [Français](README_fr.md) | [Español](README_es.md) | [Italiano](README_it.md) | [Português (Brasil)](README_pt-BR.md) | [Português (Portugal)](README_pt-PT.md)

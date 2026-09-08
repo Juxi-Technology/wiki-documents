@@ -15,11 +15,13 @@ const T: Record<string, { title: string; desc: string; contribute: string; githu
   fr: { title: 'Participer & Support', desc: 'Contribuer des tutoriels ou obtenir du support', contribute: 'Guide de contribution', github: 'Organisation GitHub', bilibili: 'Bilibili', email: 'support@juxitech.com' },
   es: { title: 'Participar y soporte', desc: 'Contribuye con tutoriales u obtén soporte técnico', contribute: 'Guía de contribución', github: 'Organización GitHub', bilibili: 'Bilibili', email: 'support@juxitech.com' },
   it: { title: 'Partecipa e supporto', desc: 'Contribuisci con tutorial o ricevi supporto tecnico', contribute: 'Guida alla contribuzione', github: 'Organizzazione GitHub', bilibili: 'Bilibili', email: 'support@juxitech.com' },
+  'pt-BR': { title: 'Participe e Suporte', desc: 'Contribua com tutoriais ou receba suporte técnico', contribute: 'Guia de contribuição', github: 'Organização GitHub', bilibili: 'Bilibili', email: 'support@juxitech.com' },
+  'pt-PT': { title: 'Participe e Suporte', desc: 'Contribua com tutoriais ou receba suporte técnico', contribute: 'Guia de contribuição', github: 'Organização GitHub', bilibili: 'Bilibili', email: 'support@juxitech.com' },
 }
 
 const t = computed(() => T[lang.value] || T.en)
 const pref = computed(() => {
-  const dirs: Record<string, string> = { 'zh-CN': '/zh-hans/', 'zh-HK': '/zh-hant/', ja: '/ja/', ko: '/ko/', de: '/de/', fr: '/fr/', es: '/es/', it: '/it/', en: '/' }
+  const dirs: Record<string, string> = { 'zh-CN': '/zh-hans/', 'zh-HK': '/zh-hant/', ja: '/ja/', ko: '/ko/', de: '/de/', fr: '/fr/', es: '/es/', it: '/it/', 'pt-BR': '/pt-br/', 'pt-PT': '/pt-pt/', en: '/' }
   return dirs[lang.value] || '/'
 })
 </script>
