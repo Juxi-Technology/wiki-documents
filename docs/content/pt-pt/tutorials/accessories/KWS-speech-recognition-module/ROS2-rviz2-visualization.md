@@ -79,9 +79,9 @@ Após a conclusão, a árvore de diretórios deve ser a seguinte (coloque os fic
 
 ## 3. Conteúdo e posicionamento dos ficheiros
 
-Entre no diretório `~/juxi_speech_ws/src/juxi_voice/juxi_voice/`, baixe os dois ficheiros Python a seguir e coloque-os neste diretório.
+Entre no diretório `~/juxi_speech_ws/src/juxi_voice/juxi_voice/`, descarregue os dois ficheiros Python a seguir e coloque-os neste diretório.
 
-#### Arquivo 1: `voice_node.py` (nó de controle de voz)
+#### Ficheiro 1: `voice_node.py` (nó de controle de voz)
 
 **Localização**: `~/juxi_speech_ws/src/juxi_voice/juxi_voice/voice_node.py`
 
@@ -196,7 +196,7 @@ def main(args=None):
 if __name__ == '__main__': main()
 ```
 
-#### Arquivo 2: `rviz_control.py` (nó de controle RViz)
+#### Ficheiro 2: `rviz_control.py` (nó de controle RViz)
 
 **Localização**: `~/juxi_speech_ws/src/juxi_voice/juxi_voice/rviz_control.py`
 
@@ -283,7 +283,7 @@ def main(args=None):
 if __name__ == '__main__': main()
 ```
 
-#### Arquivo 3: Modificar o `setup.py`
+#### Ficheiro 3: Modificar o `setup.py`
 
 **Localização**: `~/juxi_speech_ws/src/juxi_voice/setup.py`
 

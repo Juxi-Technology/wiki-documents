@@ -386,7 +386,7 @@ lerobot-teleoperate \
 
 ### Registrar um dataset
 
-- Se você quiser salvar o dataset localmente, pode executar diretamente: 
+- Se você quiser guardar o dataset localmente, pode executar diretamente: 
 
 ```Python
 lerobot-record \
@@ -493,7 +493,7 @@ Se você quiser se aprofundar nesse tópico importante, confira nossa [postagem 
 
 - Evite adicionar muitas mudanças de uma vez, pois isso pode prejudicar seus resultados. 
 
-- Se você quiser salvar os dados localmente (`--dataset.push_to_hub=false`), substitua `--dataset.repo_id=${HF_USER}/so101_test` por um nome de pasta local personalizado, por exemplo `--dataset.repo_id=juxi/so101_test`. Os dados serão armazenados em `~/.cache/huggingface/lerobot`, no diretório home do sistema.
+- Se você quiser guardar os dados localmente (`--dataset.push_to_hub=false`), substitua `--dataset.repo_id=${HF_USER}/so101_test` por um nome de pasta local personalizado, por exemplo `--dataset.repo_id=juxi/so101_test`. Os dados serão armazenados em `~/.cache/huggingface/lerobot`, no diretório home do sistema.
 
 - Se você enviou seu dataset ao Hugging Face Hub via `--dataset.push_to_hub=true`, pode visualizá-lo [online](https://huggingface.co/spaces/lerobot/visualize_dataset) basta copiar e colar o ID do seu repositório. 
 
@@ -882,7 +882,7 @@ sudo apt install filezilla
 filezilla
 ```
 
-Abra o FileZilla, clique em "Arquivo", selecione "Gerenciador de sites", crie um "Novo site" e selecione "Protocolo SFTP" 
+Abra o FileZilla, clique em "Ficheiro", selecione "Gerenciador de sites", crie um "Novo site" e selecione "Protocolo SFTP" 
 
 ![8. Importe o dataset para o servidor na nuvem – 3](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/15.png)
 
@@ -1023,7 +1023,7 @@ Se você encontrar problemas de software ou de dependências de ambiente que nã
 
 ## Encontrar o servo no Windows (software de depuração de servos Feite)
 
-Para depuração, qualquer PC Windows pode programar, depurar ou testar o servo por conexão USB. Para isso, baixe o [software Feetech](https://www.feetechrc.com/software.html). Para sistemas Ubuntu, você pode usar a [ferramenta FT_SCServo_Debug_Qt](https://github.com/Kotakku/FT_SCServo_Debug_Qt). 
+Para depuração, qualquer PC Windows pode programar, depurar ou testar o servo por conexão USB. Para isso, descarregue o [software Feetech](https://www.feetechrc.com/software.html). Para sistemas Ubuntu, você pode usar a [ferramenta FT_SCServo_Debug_Qt](https://github.com/Kotakku/FT_SCServo_Debug_Qt). 
 
 [fddebug-master.zip]
 
@@ -1057,7 +1057,7 @@ https://bambot.org/feetech.js?lang=zh
 
 ① O ID de servo atual informado é o ID do servo que foi encontrado na varredura 
 
-② Digite um número em "Gerenciamento de ID" e clique em "Alterar ID" para definir o ID 
+② Digite um número em "Gestão de ID" e clique em "Alterar ID" para definir o ID 
 
 ③ Calibração do ponto médio (o valor central do servo STS3215 é 2047 e o do servo SCS0009 é 511)
 

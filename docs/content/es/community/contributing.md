@@ -42,7 +42,7 @@ Si quiere compartir un tutorial sobre productos de JUXI:
 
 ### Contribuir con traducciones
 
-El proyecto admite 9 idiomas. Las traducciones siguen estas reglas:
+El proyecto admite 11 idiomas. Las traducciones siguen estas reglas:
 
 - Cada archivo `.md` debe tener su equivalente en cada directorio de idioma
 - Las imágenes se comparten desde `docs/public/images/`

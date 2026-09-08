@@ -27,7 +27,7 @@ Desenvolvemos **IA física, robótica incorporada e IA de borda**, entregando **
 
 - 📐 Esquemáticos de hardware completos
 - 🔧 Código-fonte do firmware
-- 🖥️ Arquivos CAD
+- 🖥️ Ficheiros CAD
 - 📦 Código do SDK
 
 Tudo disponível gratuitamente no nosso [Wiki Feishu](https://juxitech.feishu.cn) e [Organização GitHub](https://github.com/Juxi-Technology), além do nosso [Hugging Face](https://huggingface.co/Juxi-Technology). Nossa comunidade de desenvolvedores e pesquisadores contribui continuamente para melhorar esta plataforma.

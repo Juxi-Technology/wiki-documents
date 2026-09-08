@@ -41,7 +41,7 @@ Uma solução compacta e econômica de visão por IA, com arquitetura modular de
 
 Firmware pré-instalado — o módulo cria seu próprio hotspot WiFi ao ligar:
 
-- Conecte o celular/PC ao hotspot do módulo
+- Conecte o telemóvel/PC ao hotspot do módulo
 - Abra a página/App fornecida para ver o vídeo ao vivo
 
 ### 2. Dois Modos

@@ -20,7 +20,7 @@ O código deste repositório de tutorial é mantido na versão estável do Lerob
 
 [*As posições precisas dos componentes podem ser visualizadas no CAD online Fusion360*](https://a360.co/4k1P8yO)*.*
 
-[Arquivo URDF](https://gitcode.com/gh_mirrors/le/LeKiwi/tree/main)
+[Ficheiro URDF](https://gitcode.com/gh_mirrors/le/LeKiwi/tree/main)
 
 Visualização online do URDF https://urdf.d-robotics.cc/
 
@@ -561,7 +561,7 @@ Aqui, `juxi` é o nome personalizado do `repo_id` durante a coleta de dados.
 
 #### Técnicas de coleta de dados
 
-Depois que você se familiarizar com o registro de dados, poderá criar datasets maiores para o treinamento. Uma boa tarefa inicial é agarrar objetos de posições diferentes e colocá-los em recipientes. Recomendamos registrar pelo menos 50 segmentos, com 10 segmentos para cada posição. Mantenha a posição da câmara fixa e mantenha ações de preensão consistentes durante todo o registro. Além disso, garanta que os objetos manipulados estejam claramente visíveis no quadro da câmara. Um critério simples é que você consiga concluir a tarefa apenas observando o feed da câmara. 
+Depois que você se familiarizar com o registo de dados, poderá criar datasets maiores para o treinamento. Uma boa tarefa inicial é agarrar objetos de posições diferentes e colocá-los em recipientes. Recomendamos registrar pelo menos 50 segmentos, com 10 segmentos para cada posição. Mantenha a posição da câmara fixa e mantenha ações de preensão consistentes durante todo o registo. Além disso, garanta que os objetos manipulados estejam claramente visíveis no quadro da câmara. Um critério simples é que você consiga concluir a tarefa apenas observando o feed da câmara. 
 
 Nos capítulos a seguir, você treinará sua rede neural. Depois de obter um desempenho confiável de preensão, você pode começar a introduzir mais variações durante o processo de coleta de dados, como aumentar as posições de preensão, adotar técnicas diferentes de preensão e alterar as posições da câmara. 
 

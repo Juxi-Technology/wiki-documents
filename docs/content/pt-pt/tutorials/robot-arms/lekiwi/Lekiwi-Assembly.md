@@ -10,7 +10,7 @@ description: "As posições precisas dos componentes podem ser visualizadas no C
 
 [*As posições precisas dos componentes podem ser visualizadas no CAD online Fusion360*](https://a360.co/4k1P8yO)*.*
 
-[Arquivo URDF](https://gitcode.com/gh_mirrors/le/LeKiwi/tree/main)
+[Ficheiro URDF](https://gitcode.com/gh_mirrors/le/LeKiwi/tree/main)
 
 Visualização online do URDF https://urdf.d-robotics.cc/
 

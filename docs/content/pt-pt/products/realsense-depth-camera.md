@@ -112,7 +112,7 @@ lerobot-teleoperate \
 | Cenário | Descrição |
 |----------|-------------|
 | **Análise Facial** | Reconhecimento, expressão, análise de atributos |
-| **Realidade Aumentada** | Sobreposição, localização espacial, registro 3D |
+| **Realidade Aumentada** | Sobreposição, localização espacial, registo 3D |
 | **Rastreamento de Objetos** | Detecção, rastreamento, contagem |
 | **Escaneamento 3D** | Reconstrução de modelos, medição de volume, verificação de dimensões |
 | **IA Incorporada** | Percepção do ambiente, desvio de obstáculos, manipulação |

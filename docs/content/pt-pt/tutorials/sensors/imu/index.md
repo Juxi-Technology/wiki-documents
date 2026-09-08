@@ -5,7 +5,7 @@ description: "1. Instale as bibliotecas Python necessárias para o código"
 
 # Tutorial de Uso do Sensor de Atitude IMU de Alta Precisão
 
-### Baixe o pacote compactado [IMU_ROS1.zip](https://juxitech.feishu.cn/wiki/GNgWwGnYIiBd4Gk81yccEN6jnNf), descompacte-o e depois entre em ~/IMU_Library
+### Descarregue o pacote compactado [IMU_ROS1.zip](https://juxitech.feishu.cn/wiki/GNgWwGnYIiBd4Gk81yccEN6jnNf), descompacte-o e depois entre em ~/IMU_Library
 
 1. **Instale as bibliotecas Python necessárias para o código**
 

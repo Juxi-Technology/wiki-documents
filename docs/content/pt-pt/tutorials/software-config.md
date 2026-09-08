@@ -27,7 +27,7 @@ cd your-repo
 npm install
 ```
 
-## Arquivo de Configuração
+## Ficheiro de Configuração
 
 Edite o `config.json` para configurar conforme necessário:
 

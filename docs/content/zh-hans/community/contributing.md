@@ -42,7 +42,7 @@ npm run docs:dev
 
 ### 翻译贡献
 
-项目支持 9 种语言：英文为 root 主目录（无前缀），其余语言位于子目录：`zh-hans/`、`zh-hant/`、`ja/`、`ko/`、`de/`、`fr/`、`es/`、`it/`。翻译遵循以下规则：
+项目支持 11 种语言：英文为 root 主目录（无前缀），其余语言位于子目录：`zh-hans/`、`zh-hant/`、`ja/`、`ko/`、`de/`、`fr/`、`es/`、`it/`、`pt-br/`、`pt-pt/`。翻译遵循以下规则：
 
 - 每个 `.md` 文件在三语目录中应有对应文件
 - 图片共用 `docs/public/images/` 下的资源

@@ -12,11 +12,11 @@ description: "De acordo com a interface da placa-mãe, existem as três operaç�
 
 De acordo com a interface da placa-mãe, existem as três operações de fiação a seguir:
 
-**Interface HDMI** ——\> Cabo HDMI ——\> Interface HDMI do coletor ——\> USB/Type-C ——\> Ecrãs como notebooks, computadores, all-in-one, celulares/tablets, etc.
+**Interface HDMI** ——\> Cabo HDMI ——\> Interface HDMI do coletor ——\> USB/Type-C ——\> Ecrãs como notebooks, computadores, all-in-one, telemóveis/tablets, etc.
 
-**Interface Micro HDMI** ——\> Adaptador Micro para HDMI ——\> Cabo HDMI ——\> Interface HDMI do coletor ——\> USB/Type-C ——\> Ecrãs como notebooks, computadores, all-in-one, celulares/tablets, etc.
+**Interface Micro HDMI** ——\> Adaptador Micro para HDMI ——\> Cabo HDMI ——\> Interface HDMI do coletor ——\> USB/Type-C ——\> Ecrãs como notebooks, computadores, all-in-one, telemóveis/tablets, etc.
 
-**Interface DP** ——\> Adaptador DP para HDMI ——\> Cabo HDMI ——\> Interface HDMI do coletor ——\> USB/Type-C ——\> Ecrãs como notebooks, computadores, all-in-one, celulares/tablets, etc.
+**Interface DP** ——\> Adaptador DP para HDMI ——\> Cabo HDMI ——\> Interface HDMI do coletor ——\> USB/Type-C ——\> Ecrãs como notebooks, computadores, all-in-one, telemóveis/tablets, etc.
 
 ![Operação de fiação – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTg2NDRiZmNmMzhiMzJmYTNlMDUwNTI5MjM1NmNkNTdfMDdkM2VmYmM0NWJhMTI2NjU1NTc2ZWM1ODBjZjgyNzVfSUQ6NzYzODkzMTQxMzk4NzI2NTQ4NF8xNzgwMzg0OTkxOjE3ODA0NzEzOTFfVjM)
 

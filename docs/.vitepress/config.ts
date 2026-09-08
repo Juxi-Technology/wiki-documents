@@ -804,7 +804,7 @@ function computePrevNext(userConfig, pageData) {
   }
 }
 
-// ---- hreflang:注入 9 语言 alternate + x-default(多语 SEO 必备)----
+// ---- hreflang:注入 11 语言 alternate + x-default(多语 SEO 必备)----
 const HREFLANG_LANGS = ['', 'zh-hans', 'zh-hant', 'ja', 'ko', 'de', 'fr', 'es', 'it', 'pt-br', 'pt-pt']
 
 // PageData 没有 url 字段(types/shared.d.ts),必须由 relativePath 推导站点路径;
@@ -2302,7 +2302,7 @@ export default defineConfig({
                   { text: 'Câmara CSI Jetson', link: '/pt-pt/tutorials/accessories/jetson-csi-camera' },
                   { text: 'Gimbal de Câmara 2-DOF', link: '/pt-pt/tutorials/accessories/2dof-camera-gimbal' },
                   { text: 'Sensor de Frequência Cardíaca e SpO2', link: '/pt-pt/tutorials/accessories/heart-rate-spo2' },
-                  { text: 'Tela OLED de 0,91"', link: '/pt-pt/tutorials/accessories/0.91-oled-screen-tutorial' },
+                  { text: 'Ecrã OLED de 0,91"', link: '/pt-pt/tutorials/accessories/0.91-oled-screen-tutorial' },
                   { text: 'Captura HDMI 4K', link: '/pt-pt/tutorials/accessories/4k-hdmi-capture-tutorial' },
                   { text: 'Chaveador KVM', link: '/pt-pt/tutorials/accessories/kvm-switch-tutorial' },
                   { text: 'Placa de Som USB sem Driver', link: '/pt-pt/tutorials/accessories/usb-audio-card-tutorial' },
@@ -2362,7 +2362,7 @@ export default defineConfig({
         '/pt-pt/topics/': [{ text: 'Tópicos', items: [{ text: 'Tópicos', link: '/pt-pt/topics/' }, { text: 'Flasheamento JetPack e Configuração do Sistema', link: '/pt-pt/topics/jetpack-setup' }, { text: 'Introdução ao Deploy de IA Edge', link: '/pt-pt/topics/edge-ai-intro' }, { text: 'Introdução à Inteligência Incorporada (LeRobot)', link: '/pt-pt/topics/embodied-ai-intro' }, { text: 'Tema Robot Learning', link: '/pt-pt/topics/robot-learning/' }, { text: 'Filosofia de Hardware Open Source', link: '/pt-pt/topics/open-source-hardware' }] }],
         '/pt-pt/tech/': [{ text: 'Docs Técnicos', items: [{ text: 'Docs Técnicos', link: '/pt-pt/tech/' }, { text: 'Referência de API', link: '/pt-pt/tech/api-reference' }, { text: 'Guia de Desenvolvimento', link: '/pt-pt/tech/dev-guide' }] }],
         '/pt-pt/community/': [{ text: 'Comunidade', items: [{ text: 'Comunidade', link: '/pt-pt/community/' }, { text: 'Guia de Contribuição', link: '/pt-pt/community/contributing' }] }],
-        '/pt-pt/cases/': [{ text: 'Casos', items: [{ text: 'Histórias de Sucesso de Usuários', link: '/pt-pt/cases/' }] }],
+        '/pt-pt/cases/': [{ text: 'Casos', items: [{ text: 'Histórias de Sucesso de Utilizadores', link: '/pt-pt/cases/' }] }],
         '/pt-pt/products/': [
           { text: 'Robôs', items: [
             { text: 'Kit Desenvolvedor SO-ARM101', link: '/pt-pt/products/so-arm101' },
@@ -2409,7 +2409,10 @@ export default defineConfig({
   transformPageData: (pageData, { siteConfig }) => computePrevNext(siteConfig && siteConfig.userConfig, pageData),
   transformHead({ pageData }) {
     const base = 'https://wiki.juxitech.com'
-    const isHome = pageData.relativePath === 'index.md'
+    // 首页 = 各语树根 index.md(root 或 {lang}/index.md);目录 index(tutorials/index.md 等)不算首页
+    const segs = pageData.relativePath.split('/')
+    const isHome = segs.length === 1 ? segs[0] === 'index.md'
+      : (segs.length === 2 && segs[1] === 'index.md' && !!LANG_CODE[segs[0]])
     const faqLd = buildFaqPageLd(pageData.relativePath)
     const pageLang = langOf(pageData.relativePath)
     const breadcrumbLd = buildBreadcrumbLd(pageUrlOf(pageData.relativePath), pageData.title || '', pageLang)
@@ -2457,7 +2460,7 @@ export default defineConfig({
     const heads: any[] = [
       // 逐页 canonical(与 hreflang 同一 URL 推导,404 等虚拟页不注入)
       !pageData.isNotFound && ['link', { rel: 'canonical', href: base + pageUrlOf(pageData.relativePath) }],
-      // hreflang:9 语言 alternate + x-default(置顶,爬虫优先识别语言对应);
+      // hreflang:11 语言 alternate + x-default(置顶,爬虫优先识别语言对应);
       // 404 虚拟页无对应内容,跳过(与 canonical 同步)
       ...(pageData.isNotFound ? [] : injectHreflang(pageData)),
       ['script', { type: 'application/ld+json' }, JSON.stringify(ld)],

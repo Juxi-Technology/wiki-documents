@@ -88,7 +88,7 @@ description: "O módulo já vem gravado de fábrica com o firmware de reconhecim
 
 ---
 
-#### Baixar o firmware de palavras de ativação
+#### Descarregar o firmware de palavras de ativação
 
 1. Enviar - Selecione a tabela de palavras de ativação do idioma correspondente
 
@@ -110,7 +110,7 @@ description: "O módulo já vem gravado de fábrica com o firmware de reconhecim
 
 ## Gravação do firmware do módulo de voz
 
-#### Baixar o pacote compactado do software de gravação do módulo de voz
+#### Descarregar o pacote compactado do software de gravação do módulo de voz
 
 [语音模块固件烧录软件.7z]
 
@@ -120,23 +120,23 @@ description: "O módulo já vem gravado de fábrica com o firmware de reconhecim
 > 
 > 
 
-![Baixar o pacote compactado do software de gravação do módulo de voz – 1](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/5.png)
+![Descarregar o pacote compactado do software de gravação do módulo de voz – 1](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/5.png)
 
 2. Conecte a placa de som ao computador e abra o Gerenciador de Dispositivos
 
-![Baixar o pacote compactado do software de gravação do módulo de voz – 2](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/6.png)
+![Descarregar o pacote compactado do software de gravação do módulo de voz – 2](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/6.png)
 
-![Baixar o pacote compactado do software de gravação do módulo de voz – 3](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/7.png)
+![Descarregar o pacote compactado do software de gravação do módulo de voz – 3](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/7.png)
 
 3. Vá para a página do software de gravação de firmware
 
 > Posição do botão da placa de som
 > 
-> ![Baixar o pacote compactado do software de gravação do módulo de voz – 4](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/8.png)
+> ![Descarregar o pacote compactado do software de gravação do módulo de voz – 4](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/8.png)
 > 
 > 
 
-![Baixar o pacote compactado do software de gravação do módulo de voz – 5](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/9.png)
+![Descarregar o pacote compactado do software de gravação do módulo de voz – 5](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/9.png)
 
 #### Após a conclusão, você pode ir para os outros tutoriais correspondentes à esquerda
 

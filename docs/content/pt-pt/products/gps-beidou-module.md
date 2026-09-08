@@ -85,7 +85,7 @@ Suporta nós de posicionamento ROS, combináveis com fusão IMU e navegação Mo
 
 ## Ferramentas e Recursos
 
-- **GnssToolKit3**: ferramenta de visualização — status dos satélites, registro de dados, exportação KML
+- **GnssToolKit3**: ferramenta de visualização — status dos satélites, registo de dados, exportação KML
 - **Conversão de coordenadas**: solução completa WGS-84 → GCJ-02 → BD-09
 - **Exemplos**: tutoriais Arduino / Python / Jetson Nano
 

@@ -1,6 +1,6 @@
 ---
 title: Tutorial de depuração do AmazingHand (servo serial TTL)
-description: "Primeiro, baixe o pacote compactado \"Amazing Debugging.zip\". Após a descompactação, você pode usar o documento \"Processo de depuração da mão hábil com programa Arduino (servo TTL)\" para definir o ID do servo, calibrar, calibrar o ponto médio e executar o programa de demonstração, ou consultar o código oficial open source"
+description: "Primeiro, descarregue o pacote compactado \"Amazing Debugging.zip\". Após a descompactação, você pode usar o documento \"Processo de depuração da mão hábil com programa Arduino (servo TTL)\" para definir o ID do servo, calibrar, calibrar o ponto médio e executar o programa de demonstração, ou consultar o código oficial open source"
 ---
 
 # Tutorial de depuração do AmazingHand (servo serial TTL)
@@ -8,7 +8,7 @@ description: "Primeiro, baixe o pacote compactado \"Amazing Debugging.zip\". Ap�
 > **[Comprar na loja](https://www.juxitech.com/products/amazinghand)**
 
 
-Primeiro, baixe o pacote compactado "[Amazing Debugging.zip](https://juxitech.feishu.cn/wiki/I4K0w3W0Ri7u7EkY1qfcVoGon6e)". Após a descompactação, você pode usar o documento "Processo de depuração da mão hábil com programa Arduino (servo TTL)" para definir o ID do servo, calibrar, calibrar o ponto médio e executar o programa de demonstração, ou consultar o [código oficial open source](https://github.com/pollen-robotics/AmazingHand/tree/main/ArduinoExample).
+Primeiro, descarregue o pacote compactado "[Amazing Debugging.zip](https://juxitech.feishu.cn/wiki/I4K0w3W0Ri7u7EkY1qfcVoGon6e)". Após a descompactação, você pode usar o documento "Processo de depuração da mão hábil com programa Arduino (servo TTL)" para definir o ID do servo, calibrar, calibrar o ponto médio e executar o programa de demonstração, ou consultar o [código oficial open source](https://github.com/pollen-robotics/AmazingHand/tree/main/ArduinoExample).
 
 **Sem desmontar o produto pronto** (as definições de ID de fábrica dos servos, a calibração e a calibração da posição neutra já foram ajustadas), você pode ir direto para o **[Ponto 6 "Executar '02 Demo Program'"](https://juxitech.feishu.cn/docx/OmmSdaXt7oZXBUxIwUacAI3Jnrc#doxcn2d0kH1XOXx1SlxvsF1x5df)** e o Ponto 7 **[Rastreamento de mão](https://juxitech.feishu.cn/docx/OmmSdaXt7oZXBUxIwUacAI3Jnrc#doxcnjsmqox3aQVF6pVKanOCRng)**.
 
@@ -66,7 +66,7 @@ Calibração do ponto médio — padrão do produto pronto: mão direita [451,57
 
 Função deste programa: posicionar a engrenagem do servo motor em uma posição aproximadamente central; todos os ângulos de movimento posteriores são baseados nessa posição central.
 
-(1) Instale o software Arduino por conta própria e consulte o [tutorial de instalação](https://blog.csdn.net/weixin_35509395/article/details/156188274) de acordo com o seu sistema. Para compilar e baixar o programa Arduino, você precisa instalar antes as bibliotecas FTServo e SCServo no Gerenciador de Bibliotecas.
+(1) Instale o software Arduino por conta própria e consulte o [tutorial de instalação](https://blog.csdn.net/weixin_35509395/article/details/156188274) de acordo com o seu sistema. Para compilar e descarregar o programa Arduino, você precisa instalar antes as bibliotecas FTServo e SCServo no Gerenciador de Bibliotecas.
 
 ![3.Fixar a palheta do servo – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YjU0NGRjM2VhZDU4NGViMmU4YjBkNjQ3OGRmYzMxOGFfMzYxMzAxMDM1NmFhYjFjM2ZhMTlmODMwNDBiOWUwMzlfSUQ6NzYzODkzOTYwNzU1MjI4MTUzOF8xNzgwMzE3MjM0OjE3ODA0MDM2MzRfVjM)
 
@@ -124,7 +124,7 @@ Os passos são os mesmos acima
 
 ## 5. **Execute o programa de teste**
 
-1. Preencha o array a seguir com os valores de MiddlePos_1 e MiddlePos_2 salvos acima e, em seguida, baixe o programa.
+1. Preencha o array a seguir com os valores de MiddlePos_1 e MiddlePos_2 salvos acima e, em seguida, descarregue o programa.
 
 ![5.Execute o programa de teste – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NzA4ZmVjODQzYzU3ZjIwMjU2NGQ1NjQ4YzFkZjFjZDdfMmU3ZDU0NGJiODU3OWI4ZDQzNDNiNzY0YjNkYzllYWZfSUQ6NzYzODkzOTYxMTI2MzQzNzc2Ml8xNzgwMzE3MjM0OjE3ODA0MDM2MzRfVjM)
 

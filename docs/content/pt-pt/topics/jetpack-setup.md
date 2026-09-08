@@ -55,7 +55,7 @@ sudo ./flash.sh <board-name> mmcblk0p1
 |---------|-------|
 | Não entra no modo Recovery | Segure REC ao ligar; confirme com `lsusb` que um dispositivo NVIDIA aparece |
 | Gravação falha no meio | Tente um **cabo de dados diferente** primeiro; desative a economia de energia do PC; tente novamente |
-| Tela preta após a gravação | Verifique a porta de display (DP no Orin); entre em Recovery novamente e regrave |
+| Ecrã preto após a gravação | Verifique a porta de display (DP no Orin); entre em Recovery novamente e regrave |
 | Incompatibilidade de versão | Confirme se o modelo da placa corresponde à versão do JetPack (serigrafia na placa) |
 
 ## 4. Configuração Básica do Sistema

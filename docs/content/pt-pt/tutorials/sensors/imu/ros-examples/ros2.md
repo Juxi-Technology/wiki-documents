@@ -46,7 +46,7 @@ sudo gedit /etc/udev/rules.d/99-serial-imu.rules
 KERNEL=="ttyUSB*", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", MODE:="0777", SYMLINK+="imu-serial"
 ```
 
-4. **Salvar, sair e executar os comandos para ativar as regras**
+4. **Guardar, sair e executar os comandos para ativar as regras**
 
 ```PowerShell
 sudo udevadm trigger

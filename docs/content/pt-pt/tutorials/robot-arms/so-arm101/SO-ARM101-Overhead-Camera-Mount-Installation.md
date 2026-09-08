@@ -12,9 +12,9 @@ Consulte este tutorial para depurar a câmara USB com acoplamento automático: [
 
 
 
-Usuários que comprarem o Kit de câmara de profundidade D405C podem obter a senha do \<a i=1\>Tutorial do RealSense D405C\</a\> enviando o número do pedido ao atendimento ao cliente do Taobao
+Utilizadores que comprarem o Kit de câmara de profundidade D405C podem obter a palavra-passe do \<a i=1\>Tutorial do RealSense D405C\</a\> enviando o número do pedido ao atendimento ao cliente do Taobao
 
-Requer o [Arquivo de modelo oficial](https://github.com/TheRobotStudio/SO-ARM100/tree/main/Optional/Overhead_Cam_Mount_Webcam)
+Requer o [Ficheiro de modelo oficial](https://github.com/TheRobotStudio/SO-ARM100/tree/main/Optional/Overhead_Cam_Mount_Webcam)
 
 ![imagem – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/1.png)
 

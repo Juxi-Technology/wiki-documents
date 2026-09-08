@@ -35,7 +35,7 @@ sudo apt install -y python3-serial
 sudo apt install -y python3-smbus2
 ```
 
-3.2 Transferir Arquivos
+3.2 Transferir Ficheiros
 
 [IMU_ROS2.zip]
 

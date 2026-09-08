@@ -21,7 +21,7 @@ ls /dev/ttyUSB*
 
 ## 2. Implementação do código
 
-Baixe speech_serial.py para o diretório correspondente
+Descarregue speech_serial.py para o diretório correspondente
 
 ```Python
 #!/usr/bin/env python3

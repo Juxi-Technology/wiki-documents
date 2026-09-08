@@ -37,12 +37,12 @@ Encontrou um erro de digitação, link quebrado ou informação desatualizada? E
 Se você tem um tutorial sobre produtos da Juxi Technology que gostaria de compartilhar:
 
 1. Abra primeiro uma Proposta em [GitHub Issues](https://github.com/Juxi-Technology/wiki-documents/issues), descrevendo o tópico do tutorial e um esboço geral
-2. Escreva o tutorial a seguir a estrutura de tutorial existente após a confirmação dos mantenedores
+2. Escreva o tutorial seguindo a estrutura de tutorial existente após a confirmação dos mantenedores
 3. Envie um PR
 
 ### Contribuições de Tradução
 
-O projeto oferece suporte a dez idiomas. O inglês é o locale raiz (sem prefixo); os demais locales ficam em subdiretórios: `zh-hans/`, `zh-hant/`, `ja/`, `ko/`, `de/`, `fr/`, `es/`, `it/`, `pt/`. Regras de tradução:
+O projeto oferece suporte a onze idiomas. O inglês é o locale raiz (sem prefixo); os demais locales ficam em subdiretórios: `zh-hans/`, `zh-hant/`, `ja/`, `ko/`, `de/`, `fr/`, `es/`, `it/`, `pt-br/`, `pt-pt/`. Regras de tradução:
 
 - Cada ficheiro `.md` deve ter um equivalente em cada diretório de idioma
 - As imagens são compartilhadas em `docs/public/images/`
@@ -60,9 +60,9 @@ O projeto oferece suporte a dez idiomas. O inglês é o locale raiz (sem prefixo
 ![description](../../public/images/tutorials/xxx/xxx.png)
 ```
 
-### Nomenclatura de Arquivos
+### Nomenclatura de Ficheiros
 
-- Arquivos de tutorial usam nomes em inglês em kebab-case
+- Ficheiros de tutorial usam nomes em inglês em kebab-case
 - Cada ficheiro `.md` precisa dos campos frontmatter `title` e `description`
 
 ### Blocos de Código

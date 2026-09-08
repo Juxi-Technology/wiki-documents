@@ -1,6 +1,6 @@
 ---
 title: Tutorial de execução do exemplo oficial do AmazingHand
-description: "Recomenda-se baixar o pacote compactado do código deste tutorial para a demonstração do exemplo Demo, ou clonar o repositório oficial open source"
+description: "Recomenda-se descarregar o pacote compactado do código deste tutorial para a demonstração do exemplo Demo, ou clonar o repositório oficial open source"
 ---
 
 # Tutorial de execução do exemplo oficial do AmazingHand
@@ -10,7 +10,7 @@ description: "Recomenda-se baixar o pacote compactado do código deste tutorial 
 
 ## 1. Download do código
 
-Recomenda-se baixar o pacote compactado do código deste tutorial para a demonstração do exemplo Demo, ou clonar o repositório de código oficial open source  https://github.com/pollen-robotics/AmazingHand.git . Observe que pode haver erros ou omissões no código oficial open source. 
+Recomenda-se descarregar o pacote compactado do código deste tutorial para a demonstração do exemplo Demo, ou clonar o repositório de código oficial open source  https://github.com/pollen-robotics/AmazingHand.git . Observe que pode haver erros ou omissões no código oficial open source. 
 
 [Tutorial de execução do exemplo oficial do AmazingHand](https://juxitech.feishu.cn/wiki/SfUCweM6ni4IookxjOMcLf5cnwd)
 
@@ -44,7 +44,7 @@ O Visual Studio Installer pode ser necessário na primeira instalação
 
 **Configure o espelho (mirror) do Cargo**
 
-Crie o ficheiro de configuração `config.toml` na pasta `.cargo` e configure o espelho `crates.io-index` da Tsinghua, para que o Cargo use a fonte de espelho da Universidade Tsinghua para baixar as crates.
+Crie o ficheiro de configuração `config.toml` na pasta `.cargo` e configure o espelho `crates.io-index` da Tsinghua, para que o Cargo use a fonte de espelho da Universidade Tsinghua para descarregar as crates.
 
 ```Bash
 [source.crates-io]
@@ -384,9 +384,9 @@ Referência https://blog.csdn.net/qq_19731521/article/details/124954288
 
 ## Máquina virtual 22.04 a executar o rastreamento de mão diretamente 
 
-Baixe estes quatro ficheiros e coloque-os no mesmo diretório (com nome em inglês); em seguida, use o software de máquina virtual para abrir diretamente o ficheiro .ovf e entrar no sistema
+Descarregue estes quatro ficheiros e coloque-os no mesmo diretório (com nome em inglês); em seguida, use o software de máquina virtual para abrir diretamente o ficheiro .ovf e entrar no sistema
 
-Senha: ubuntu
+Palavra-passe: ubuntu
 
 [ubuntu22.04_amazinghand.ovf]
 

@@ -1,9 +1,9 @@
 ---
-title: Histórias de Sucesso de Usuários
+title: Histórias de Sucesso de Utilizadores
 description: Histórias reais de pesquisadores e desenvolvedores que usam o hardware open source da Juxi Technology
 ---
 
-# Histórias de Sucesso de Usuários
+# Histórias de Sucesso de Utilizadores
 
 Histórias reais de utilizadors construindo com os produtos da Juxi Technology — na educação, pesquisa e negócios.
 
@@ -41,7 +41,7 @@ Histórias reais de utilizadors construindo com os produtos da Juxi Technology �
 
 **Produto**: Mão Dexterous AmazingHand
 **Caso de Uso**: Pesquisa em manipulação dexterous e preensão
-**Valor**: Arquivos CAD open source + design de dedos personalizável
+**Valor**: Ficheiros CAD open source + design de dedos personalizável
 
 ---
 

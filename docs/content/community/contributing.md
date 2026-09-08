@@ -42,7 +42,7 @@ If you have a tutorial for Juxi Technology products you'd like to share:
 
 ### Translation Contributions
 
-The project supports nine languages. English is the root locale (no prefix); the other locales live in subdirectories: `zh-hans/`, `zh-hant/`, `ja/`, `ko/`, `de/`, `fr/`, `es/`, `it/`. Translation rules:
+The project supports eleven languages. English is the root locale (no prefix); the other locales live in subdirectories: `zh-hans/`, `zh-hant/`, `ja/`, `ko/`, `de/`, `fr/`, `es/`, `it/`, `pt-br/`, `pt-pt/`. Translation rules:
 
 - Every `.md` file should have a counterpart in each language directory
 - Images are shared under `docs/public/images/`

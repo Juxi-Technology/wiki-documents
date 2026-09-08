@@ -59,7 +59,7 @@ Ver `Hello World: N` em loop significa sucesso.
 | **Tópico** | Fluxo de dados publish/subscribe | `/imu/data` atitude |
 | **Mensagem** | Tipo de dado do tópico | `sensor_msgs/Imu` |
 | **Serviço** | Requisição/resposta | Acionar reset do servo |
-| **Arquivo launch** | Orquestração de inicialização de vários nós | `imu_launch.py` |
+| **Ficheiro launch** | Orquestração de inicialização de vários nós | `imu_launch.py` |
 
 ## 4. Prática com Produtos Juxi
 

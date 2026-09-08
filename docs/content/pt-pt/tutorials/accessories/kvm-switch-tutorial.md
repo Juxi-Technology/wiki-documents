@@ -30,7 +30,7 @@ Os pinos, da esquerda para a direita, são GND, RXD, TXD, TNOW, 3V3 e 5V, respec
 
 ![3. Módulo Bluetooth – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZWUxNDY1MGFkMzU0MzUyYjQ4NTIwN2I4N2FiMmVhMzZfMDgxN2YzMmRjZmJjN2Q4NWNhYjQ2YjY2ZTIwZmUwNDJfSUQ6NzYzODkzMTc5NTU1OTYzMTgzMl8xNzgwMzg1MDExOjE3ODA0NzE0MTFfVjM)
 
-Conecte a usar comandos AT, ou alterne para o modo escravo, e o celular deve se conectar pelo protocolo 4.2
+Conecte a usar comandos AT, ou alterne para o modo escravo, e o telemóvel deve se conectar pelo protocolo 4.2
 
 
 
@@ -52,11 +52,11 @@ Basta usar adicionalmente um dispositivo de captura HDMI 4K HD conectado ao host
 
 De acordo com a interface da placa-mãe, existem as três operações de fiação a seguir:
 
-**Interface HDMI** ——\> Cabo HDMI ——\> Interface HDMI do coletor ——\> USB/Type-C ——\> Ecrãs como notebooks, computadores, all-in-one, celulares/tablets, etc.
+**Interface HDMI** ——\> Cabo HDMI ——\> Interface HDMI do coletor ——\> USB/Type-C ——\> Ecrãs como notebooks, computadores, all-in-one, telemóveis/tablets, etc.
 
-**Interface Micro HDMI** ——\> Adaptador Micro para HDMI ——\> Cabo HDMI ——\> Interface HDMI do coletor ——\> USB/Type-C ——\> Ecrãs como notebooks, computadores, all-in-one, celulares/tablets, etc.
+**Interface Micro HDMI** ——\> Adaptador Micro para HDMI ——\> Cabo HDMI ——\> Interface HDMI do coletor ——\> USB/Type-C ——\> Ecrãs como notebooks, computadores, all-in-one, telemóveis/tablets, etc.
 
-**Interface DP** ——\> Adaptador DP para HDMI ——\> Cabo HDMI ——\> Interface HDMI do coletor ——\> USB/Type-C ——\> Ecrãs como notebooks, computadores, all-in-one, celulares/tablets, etc.
+**Interface DP** ——\> Adaptador DP para HDMI ——\> Cabo HDMI ——\> Interface HDMI do coletor ——\> USB/Type-C ——\> Ecrãs como notebooks, computadores, all-in-one, telemóveis/tablets, etc.
 
 ![2. Placa-mãe sem monitor + Host com monitor – 2](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjgxYmM4NGUyZWZjNTVkOTdiNGNkMDI1MjExYTE0ZDZfMWY1YmMyYmZkN2U5ZmQ4NDBkNjQxYzE0NjU1YmVkNWJfSUQ6NzYzODkzMTc5NTE4ODEwODIxOV8xNzgwMzg1MDExOjE3ODA0NzE0MTFfVjM)
 

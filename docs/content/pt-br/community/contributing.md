@@ -42,7 +42,7 @@ Se você tem um tutorial sobre produtos da Juxi Technology que gostaria de compa
 
 ### Contribuições de Tradução
 
-O projeto oferece suporte a dez idiomas. O inglês é o locale raiz (sem prefixo); os demais locales ficam em subdiretórios: `zh-hans/`, `zh-hant/`, `ja/`, `ko/`, `de/`, `fr/`, `es/`, `it/`, `pt/`. Regras de tradução:
+O projeto oferece suporte a onze idiomas. O inglês é o locale raiz (sem prefixo); os demais locales ficam em subdiretórios: `zh-hans/`, `zh-hant/`, `ja/`, `ko/`, `de/`, `fr/`, `es/`, `it/`, `pt-br/`, `pt-pt/`. Regras de tradução:
 
 - Cada arquivo `.md` deve ter um equivalente em cada diretório de idioma
 - As imagens são compartilhadas em `docs/public/images/`

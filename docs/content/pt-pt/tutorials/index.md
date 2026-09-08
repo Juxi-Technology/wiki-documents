@@ -34,7 +34,7 @@ Bem-vindo à página de Tutoriais! Aqui você encontra todos os tutoriais de uso
 - [Tutorial de Captura HDMI 4K](./accessories/4k-hdmi-capture-tutorial)
 - [Tutorial do Switch KVM](./accessories/kvm-switch-tutorial)
 - [Tutorial da Placa de Som USB](./accessories/usb-audio-card-tutorial)
-- [Tutorial da Tela OLED 0.91](./accessories/0.91-oled-screen-tutorial)
+- [Tutorial do Ecrã OLED 0.91](./accessories/0.91-oled-screen-tutorial)
 - **Série do Módulo de Reconhecimento de Voz KWS**
   - [Módulo de Reconhecimento de Voz KWS (Início)](./accessories/KWS-speech-recognition-module/index)
   - [Comunicação Serial Jetson Nano](./accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication)

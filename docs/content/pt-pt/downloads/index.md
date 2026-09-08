@@ -47,9 +47,9 @@ Central de downloads para os produtos da Juxi Technology — firmware, SDK, soft
 
 - 📦 [Repositório 2dof-camera-gimbal](https://github.com/Juxi-Technology/2dof-camera-gimbal)(exemplos de rastreamento Python)
 
-### Tela OLED de 0,91"
+### Ecrã OLED de 0,91"
 
-- 📦 [Repositório da Tela Secundária OLED](https://github.com/Juxi-Technology/OLED-Secondary-Display-RaspberryPi-Jetson)(driver I2C)
+- 📦 [Repositório do Ecrã Secundário OLED](https://github.com/Juxi-Technology/OLED-Secondary-Display-RaspberryPi-Jetson)(driver I2C)
 
 ### Placa de Som USB sem Driver
 

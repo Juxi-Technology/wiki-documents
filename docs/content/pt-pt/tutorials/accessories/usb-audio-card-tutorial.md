@@ -32,7 +32,7 @@ description: "Tutorial da placa de som USB sem driver da Juxi Technology — sof
 
     - Ajuste o volume:`alsamixer` (Pressione **M** para desmutar, use as teclas de seta para ajustar o volume e ESC para sair)
 
-    - Salve as configurações:`sudo alsactl store`
+    - Guarde as configurações:`sudo alsactl store`
 
     - Teste de reprodução: teste a saída de áudio (garanta que os alto-falantes/fones estejam conectados):
 
@@ -195,7 +195,7 @@ Adicione no final do texto
 audio_pwm_mode = 2
 ```
 
-Pressione ESC, digite: wq para sair e salvar
+Pressione ESC, digite: wq para sair e guardar
 Em seguida, reinicie
 
 ```Bash
@@ -206,7 +206,7 @@ $ reboot
 
 Após redefinir o volume, 
 
-é necessário salvar a configuração de volume atual no ficheiro de configuração padrão do sistema
+é necessário guardar a configuração de volume atual no ficheiro de configuração padrão do sistema
 
 Execute o seguinte comando para persistir as configurações atuais
 
