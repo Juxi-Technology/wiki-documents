@@ -5,7 +5,7 @@ description: "Série de módulos de reconhecimento de voz KWS — serial, firmwa
 
 # Módulo de reconhecimento de voz KWS
 
-> **[Comprar na loja](https://www.juxitech.com/pt-pt/products/ai-voice-recognition-module)**
+> **[Comprar na loja](https://www.juxitech.com/products/ai-voice-recognition-module)**
 
 
 Bem-vindo ao módulo de reconhecimento de voz KWS! Aqui está o índice de todos os tutoriais relacionados.

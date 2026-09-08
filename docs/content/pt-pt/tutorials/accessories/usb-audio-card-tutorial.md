@@ -5,7 +5,7 @@ description: "Tutorial da placa de som USB sem driver da Juxi Technology — sof
 
 # Tutorial da placa de som USB sem driver
 
-> **[Comprar na loja](https://www.juxitech.com/pt-pt/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction)**
+> **[Comprar na loja](https://www.juxitech.com/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction)**
 
 
 # Software de teste visual (Windows)

@@ -5,7 +5,7 @@ description: "O módulo já vem gravado de fábrica com o firmware de reconhecim
 
 # Download e gravação de firmware de reconhecimento de palavras em chinês e inglês
 
-> **[Comprar na loja](https://www.juxitech.com/pt-br/products/ai-voice-recognition-module)**
+> **[Comprar na loja](https://www.juxitech.com/pt/products/ai-voice-recognition-module)**
 
 
 > O módulo já vem gravado de fábrica com o firmware de reconhecimento de voz, e o firmware de fábrica também é fornecido nos materiais anexos. Se você precisar recriar o firmware, pode seguir os passos abaixo para gerá-lo. 

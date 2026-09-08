@@ -5,7 +5,7 @@ description: "Módulo de gimbal de câmara 2-DOF da Juxi Technology com rastream
 
 # Gimbal de câmara 2 graus de liberdade
 
-> **[Comprar na loja](https://www.juxitech.com/pt-pt/products/2-dof-servo-pan-tilt-unit)**
+> **[Comprar na loja](https://www.juxitech.com/products/2-dof-servo-pan-tilt-unit)**
 
 
 ## Visão geral

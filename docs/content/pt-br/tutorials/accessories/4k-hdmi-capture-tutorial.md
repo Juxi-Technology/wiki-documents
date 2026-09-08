@@ -5,7 +5,7 @@ description: "De acordo com a interface da placa-mãe, existem as três operaç�
 
 # Tutorial do dispositivo de captura HDMI 4K HD
 
-> **[Comprar na loja](https://www.juxitech.com/pt-br/products/4k-hd-hdmi-capture-card)**
+> **[Comprar na loja](https://www.juxitech.com/pt/products/4k-hd-hdmi-capture-card)**
 
 
 ## Operação de fiação

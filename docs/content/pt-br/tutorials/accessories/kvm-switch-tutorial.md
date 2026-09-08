@@ -5,7 +5,7 @@ description: "O switch KVM inclui funcionalidade de HUB, porta serial TTL e mód
 
 # Tutorial de uso do switch KVM
 
-> **[Comprar na loja](https://www.juxitech.com/pt-br/products/4-in-1-kvm-switch-hub-ttl-serial-bluetooth-docking-station)**
+> **[Comprar na loja](https://www.juxitech.com/pt/products/4-in-1-kvm-switch-hub-ttl-serial-bluetooth-docking-station)**
 
 
 O switch KVM inclui funcionalidade de HUB, porta serial TTL e módulo Bluetooth

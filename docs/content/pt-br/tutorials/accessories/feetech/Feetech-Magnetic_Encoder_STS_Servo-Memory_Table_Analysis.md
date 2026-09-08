@@ -5,7 +5,7 @@ description: "O servo utiliza o Protocolo de Comunicação Personalizado FT-SCS,
 
 # Servo STS com encoder magnético - Análise da tabela de memória
 
-> **[Comprar na loja](https://www.juxitech.com/pt-br/products/feetech-scs0009-serial-bus-servo)**
+> **[Comprar na loja](https://www.juxitech.com/pt/products/feetech-scs0009-serial-bus-servo)**
 
 
 # 1 Protocolo de comunicação do servo

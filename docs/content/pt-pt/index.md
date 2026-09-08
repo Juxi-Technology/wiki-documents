@@ -94,7 +94,7 @@ const storeUrl = computed(() => {
     fr: 'fr',
     es: 'es',
     it: 'it',
-    'pt-pt': 'pt', // Shopify:仅 pt(巴西),wiki 双变体共享
+    'pt-pt': '', // Shopify:无欧洲葡语,跳英文店(root)
     'pt-br': 'pt',
   }
   const langDir = dirs[localeIndex.value]

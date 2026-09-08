@@ -5,7 +5,7 @@ description: "Software FD do computador host FEETECH https://gitee.com/ftservo"
 
 # Tutorial para depuração dos servos FEETECH STS3215 &amp; SCS0009
 
-> **[Comprar na loja](https://www.juxitech.com/pt-br/products/feetech-scs0009-serial-bus-servo)**
+> **[Comprar na loja](https://www.juxitech.com/pt/products/feetech-scs0009-serial-bus-servo)**
 
 
 [Software FD do computador host FEETECH](https://gitee.com/ftservo)[https://gitee.com/ftservo](https://gitee.com/ftservo)

@@ -5,7 +5,7 @@ description: "O nível de comunicação utiliza o método de nível TTL, compat�
 
 # Protocolo de comunicação SCS de servos
 
-> **[Comprar na loja](https://www.juxitech.com/pt-pt/products/feetech-scs0009-serial-bus-servo)**
+> **[Comprar na loja](https://www.juxitech.com/products/feetech-scs0009-serial-bus-servo)**
 
 
 # 1 Resumo do protocolo de comunicação

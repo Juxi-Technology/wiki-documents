@@ -37,8 +37,8 @@ const localePrefix = computed(() => {
     fr: 'fr/',
     es: 'es/',
     it: 'it/',
-    'pt-br': 'pt-br/',
-    'pt-pt': 'pt/', // Shopify 仅 pt(巴西葡语),wiki 双变体共享
+    'pt-br': 'pt/', // Shopify pt = 巴西葡语
+    'pt-pt': '', // Shopify 无欧洲葡语:pt-pt 页面 → 英文店(root)
   }
   return dirs[localeIndex.value] || ''
 })

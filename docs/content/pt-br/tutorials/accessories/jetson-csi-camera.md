@@ -5,7 +5,7 @@ description: "Tutorial do módulo de câmera CSI NVIDIA Jetson Orin da Juxi Tech
 
 # Câmera CSI Jetson
 
-> **[Comprar na loja](https://www.juxitech.com/pt-br/products/79-imx219-csi-camera)**
+> **[Comprar na loja](https://www.juxitech.com/pt/products/79-imx219-csi-camera)**
 
 
 ## Visão geral
