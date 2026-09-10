@@ -822,7 +822,7 @@ Dopo il training, esportare il modello dalla directory train
 
 ## G. Domande frequenti
 
-Con questo tutorial, clonare il repository consigliato https://github.com/JuxiTechnology/lerobot.git
+Con questo tutorial, clonare il repository consigliato https://github.com/Juxi-Technology/lerobot.git
 
 Il repository consigliato è la versione stabile validata; il repository ufficiale Lerobot viene aggiornato in tempo reale e può causare problemi imprevisti (versioni di dataset diverse, comandi diversi).
 

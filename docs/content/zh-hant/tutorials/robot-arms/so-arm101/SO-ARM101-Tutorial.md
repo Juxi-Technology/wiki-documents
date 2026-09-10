@@ -827,7 +827,7 @@ conda activate lerobot
 ```
 
 ```PowerShell
-git clone https://github.com/JuxiTechnology/lerobot.git
+git clone https://github.com/Juxi-Technology/lerobot.git
 ```
 
 可選擇跟隨最新版： https://github.com/huggingface/lerobot.git  
@@ -920,7 +920,7 @@ filezilla
 
 ## G. 常見問題
 
-如果使用本文檔教程，請git clone本文檔推薦的github倉庫 https://github.com/JuxiTechnology/lerobot.git
+如果使用本文檔教程，請git clone本文檔推薦的github倉庫 https://github.com/Juxi-Technology/lerobot.git
 
 本文檔推薦的倉庫是驗證過後的穩定版本，Lerobot官方倉庫是實時更新的最新版本，會出現一些無法預知的問題，例如數據集版本不同，指令不同等。
 

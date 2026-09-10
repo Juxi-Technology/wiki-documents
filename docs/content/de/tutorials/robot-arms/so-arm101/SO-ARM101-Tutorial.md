@@ -822,7 +822,7 @@ Nach dem Training das trainierte Modell im entsprechenden train-Verzeichnis expo
 
 ## G. Häufige Fragen
 
-Bei diesem Tutorial bitte das empfohlene Repository https://github.com/JuxiTechnology/lerobot.git klonen.
+Bei diesem Tutorial bitte das empfohlene Repository https://github.com/Juxi-Technology/lerobot.git klonen.
 
 Das empfohlene Repository ist die geprüfte stabile Version; das offizielle Lerobot-Repo wird laufend aktualisiert und kann unerwartete Probleme verursachen (andersartige Dataset-Versionen, andere Befehle).
 

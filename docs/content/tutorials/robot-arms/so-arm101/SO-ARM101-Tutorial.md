@@ -827,7 +827,7 @@ conda activate lerobot
 ```
 
 ```PowerShell
-git clone https://github.com/JuxiTechnology/lerobot.git
+git clone https://github.com/Juxi-Technology/lerobot.git
 ```
 
 You can choose to follow the latest version: https://github.com/huggingface/lerobot.git  
@@ -920,7 +920,7 @@ After training is completed, export the trained model corresponding to the train
 
 ## G .  Frequently Asked Questions 
 
-If  you  use this document tutorial, please git clone the github repository recommended in this document  https://github.com/JuxiTechnology/lerobot.git
+If  you  use this document tutorial, please git clone the github repository recommended in this document  https://github.com/Juxi-Technology/lerobot.git
 
 The repository recommended in this document is a verified stable version, while the official Lerobot repository is the latest version updated in real-time, which may present some unpredictable issues, such as different dataset versions, different instructions, etc. 
 
@@ -954,7 +954,7 @@ lerobot-record \
 - If you encounter issues when calibrating the servo ID 
 
 ```Bash
-`Motor ‘gripper’ was not found, Make sure it is connected`
+`Motor 'gripper' was not found, Make sure it is connected`
 ```
 
 Please carefully check whether the communication cable is properly connected to the servo motor and whether the power supply is providing the correct voltage.

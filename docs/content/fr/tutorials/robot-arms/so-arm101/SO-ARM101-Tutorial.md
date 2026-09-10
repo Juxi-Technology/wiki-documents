@@ -822,7 +822,7 @@ Après l'entraînement, exporter le modèle depuis le répertoire train
 
 ## G. Questions fréquentes
 
-Avec ce tutoriel, cloner le dépôt recommandé https://github.com/JuxiTechnology/lerobot.git
+Avec ce tutoriel, cloner le dépôt recommandé https://github.com/Juxi-Technology/lerobot.git
 
 Le dépôt recommandé est la version stable validée ; le dépôt officiel Lerobot est mis à jour en continu et peut causer des problèmes imprévus (versions de dataset différentes, commandes différentes).
 

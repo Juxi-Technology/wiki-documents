@@ -659,7 +659,41 @@ lerobot-record \
 
 公式チュートリアル [Pi0.5](https://huggingface.co/docs/lerobot/pi05) を参照
 
-トレーニングは Pi0 と同じで、ポリシータイプを `pi0.5` に変更します。
+```Bash
+pip install -e ".[pi]"
+```
+
+**トレーニング**
+
+```Bash
+lerobot-train \
+    --dataset.repo_id=juxi/eval_test123 \
+    --policy.type=pi05 \
+    --output_dir=outputs/pi05_training \
+    --job_name=pi05_training \
+    --policy.pretrained_path=lerobot/pi05_base \
+    --policy.compile_model=true \
+    --policy.gradient_checkpointing=true \
+    --wandb.enable=false \
+    --policy.dtype=bfloat16 \
+    --steps=3000 \
+    --policy.device=cuda \
+    --batch_size=32
+```
+
+**検証**
+
+```Bash
+lerobot-record \
+  --robot.type=so101_follower \
+  --robot.port=/dev/ttyACM0 \
+  --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"},   side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30,fourcc: "MJPG"}}" \
+  --robot.id=my_awesome_follower_arm \
+  --display_data=false \
+  --dataset.repo_id=juxi/eval_test123 \
+  --dataset.single_task="Put the blue cube on the black box" \
+  --policy.path=outputs/pi05_training/checkpoints/last/pretrained_model
+```
 
 ### GR00T N1.5
 
@@ -682,6 +716,19 @@ lerobot-record \
 
 
 #### **4.conda環境を初期化**
+
+```Plain Text
+conda env list
+```
+
+```Plain Text
+conda activate base
+```
+
+```Plain Text
+conda init
+```
+
 ![4.conda環境を初期化 – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/11.png)
 
 
@@ -824,7 +871,7 @@ AutoDL算力雲に戻り「ログイン指令」をコピーして見やすい�
 
 ## G. よくある質問
 
-本チュートリアルを使用する場合は、本ドキュメントで推奨している github リポジトリ https://github.com/JuxiTechnology/lerobot.git を git clone してください。
+本チュートリアルを使用する場合は、本ドキュメントで推奨している github リポジトリ https://github.com/Juxi-Technology/lerobot.git を git clone してください。
 
 本ドキュメントで推奨しているリポジトリは検証済みの安定版です。Lerobot公式リポジトリはリアルタイム更新の最新版で、予期しない問題(データセットバージョン違い、コマンド違いなど)が発生する可能性があります。
 

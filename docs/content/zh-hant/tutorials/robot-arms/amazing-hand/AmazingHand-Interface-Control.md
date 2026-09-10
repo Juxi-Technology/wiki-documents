@@ -8,7 +8,7 @@ description: "[AmazingHandControl.zip]"
 > **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
 
 
-https://github.com/JuxiTechnology/AmazingHandControl
+https://github.com/Betatester777/AmazingHandControl
 
 [AmazingHandControl.zip]
 

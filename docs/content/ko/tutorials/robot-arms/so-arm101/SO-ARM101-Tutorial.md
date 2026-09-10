@@ -824,7 +824,7 @@ AutoDL AI 클라우드로 돌아가「로그인 명령」을 복사해 보기 �
 
 ## G. 자주 묻는 질문
 
-본 문서 튜토리얼을 사용한다면 이 문서가 추천하는 github 저장소 https://github.com/JuxiTechnology/lerobot.git 를 git clone 하세요.
+본 문서 튜토리얼을 사용한다면 이 문서가 추천하는 github 저장소 https://github.com/Juxi-Technology/lerobot.git 를 git clone 하세요.
 
 이 문서가 추천하는 저장소는 검증된 안정 버전입니다. Lerobot 공식 저장소는 실시간 업데이트되는 최신 버전으로 예상치 못한 문제(데이터셋 버전 차이, 명령 차이 등)가 발생할 수 있습니다.
 

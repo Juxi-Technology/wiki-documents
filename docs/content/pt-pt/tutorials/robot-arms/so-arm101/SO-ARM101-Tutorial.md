@@ -827,7 +827,7 @@ conda activate lerobot
 ```
 
 ```PowerShell
-git clone https://github.com/JuxiTechnology/lerobot.git
+git clone https://github.com/Juxi-Technology/lerobot.git
 ```
 
 Você pode optar por seguir a versão mais recente: https://github.com/huggingface/lerobot.git  
@@ -920,7 +920,7 @@ Após a conclusão do treinamento, exporte o modelo treinado correspondente na p
 
 ## G. Perguntas frequentes
 
-Se você usar este tutorial, faça git clone do repositório GitHub recomendado neste documento:  https://github.com/JuxiTechnology/lerobot.git
+Se você usar este tutorial, faça git clone do repositório GitHub recomendado neste documento:  https://github.com/Juxi-Technology/lerobot.git
 
 O repositório recomendado neste documento é uma versão estável verificada, enquanto o repositório oficial do LeRobot é a versão mais recente, atualizada em tempo real, que pode apresentar alguns problemas imprevisíveis, como versões diferentes de dataset, instruções diferentes etc. 
 
