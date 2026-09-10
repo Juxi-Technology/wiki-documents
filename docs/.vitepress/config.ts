@@ -110,6 +110,8 @@ const zhCN = {
   ],
   themeConfig: {
     siteTitle: '钜犀科技 Wiki',
+    docFooter: { prev: '上一篇', next: '下一篇' },
+    lastUpdated: { text: '最后更新于' },
     nav: [
       { text: '教程', link: '/zh-hans/tutorials/', activeMatch: '/zh-hans/tutorials/' },
       { text: '技术专题', link: '/zh-hans/topics/', activeMatch: '/zh-hans/topics/' },
@@ -330,6 +332,8 @@ const en = {
   ],
   themeConfig: {
     siteTitle: 'Juxi Technology Wiki',
+    docFooter: { prev: 'Previous', next: 'Next' },
+    lastUpdated: { text: 'Last updated' },
     nav: [
       { text: 'Tutorials', link: '/tutorials/', activeMatch: '/tutorials/' },
       { text: 'Topics', link: '/topics/', activeMatch: '/topics/' },
@@ -550,6 +554,8 @@ const zhHK = {
   ],
   themeConfig: {
     siteTitle: '鉅犀科技 Wiki',
+    docFooter: { prev: '上一篇', next: '下一篇' },
+    lastUpdated: { text: '最後更新於' },
     nav: [
       { text: '教程', link: '/zh-hant/tutorials/', activeMatch: '/zh-hant/tutorials/' },
       { text: '技術專題', link: '/zh-hant/topics/', activeMatch: '/zh-hant/topics/' },
@@ -761,50 +767,6 @@ const zhHK = {
   },
 }
 
-
-
-// ---- 上一篇/下一篇:从各语言 sidebar 链接序列计算相邻页 ----
-function collectSidebarLinks(sidebar) {
-  const out = []
-  const walk = (items) => {
-    if (!Array.isArray(items)) return
-    for (const sub of items) {
-      if (sub && sub.link) out.push(sub.link.replace(/\/$/g, ''))
-      if (sub && sub.items) walk(sub.items)
-    }
-  }
-  if (!sidebar) return out
-  for (const group of Object.values(sidebar)) {
-    walk(group)
-  }
-  return out
-}
-
-const LANG_PREFIX_RE = /^\/(zh-hans|zh-hant|ja|ko|de|fr|es|it|pt-br|pt-pt)(?=\/|$)/
-function resolveLangPrefix(relativePath) {
-  const seg = relativePath.split('/')[0]
-  return LANG_PREFIX_RE.test('/' + seg) ? '/' + seg : ''
-}
-
-function computePrevNext(userConfig, pageData) {
-  const prefix = resolveLangPrefix(pageData.relativePath)
-  const locales = userConfig && userConfig.locales
-  const langKey = prefix ? prefix.slice(1) : 'root'
-  const localeCfg = locales && (locales[langKey] || (langKey === 'root' && locales.root))
-  const sidebar = localeCfg && localeCfg.themeConfig && localeCfg.themeConfig.sidebar
-  if (!sidebar) return
-  const links = collectSidebarLinks(sidebar)
-  const target = ('/' + pageData.relativePath.replace(/\.md$/, '').replace(/index$/, '')).replace(/\/$/, '')
-  const i = links.indexOf(target)
-  if (i < 0) return undefined
-  return {
-    prevNext: {
-      prev: i > 0 ? links[i - 1] : undefined,
-      next: i < links.length - 1 ? links[i + 1] : undefined,
-    },
-  }
-}
-
 // ---- hreflang:注入 11 语言 alternate + x-default(多语 SEO 必备)----
 const HREFLANG_LANGS = ['', 'zh-hans', 'zh-hant', 'ja', 'ko', 'de', 'fr', 'es', 'it', 'pt-br', 'pt-pt']
 
@@ -880,6 +842,8 @@ export default defineConfig({
     ],
     themeConfig: {
       siteTitle: 'Juxi Technology Wiki',
+      docFooter: { prev: '前へ', next: '次へ' },
+      lastUpdated: { text: '最終更新' },
       nav: [
         { text: 'チュートリアル', link: '/ja/tutorials/', activeMatch: '/ja/tutorials/' },
         { text: 'トピック', link: '/ja/topics/', activeMatch: '/ja/topics/' },
@@ -1063,6 +1027,8 @@ export default defineConfig({
     ],
     themeConfig: {
       siteTitle: 'Juxi Technology Wiki',
+      docFooter: { prev: '이전', next: '다음' },
+      lastUpdated: { text: '마지막 업데이트' },
       nav: [
         { text: '튜토리얼', link: '/ko/tutorials/', activeMatch: '/ko/tutorials/' },
         { text: '토픽', link: '/ko/topics/', activeMatch: '/ko/topics/' },
@@ -1246,6 +1212,8 @@ export default defineConfig({
     ],
     themeConfig: {
       siteTitle: 'Juxi Technology Wiki',
+      docFooter: { prev: 'Zurück', next: 'Weiter' },
+      lastUpdated: { text: 'Zuletzt aktualisiert' },
       nav: [
         { text: 'Tutorials', link: '/de/tutorials/', activeMatch: '/de/tutorials/' },
         { text: 'Themen', link: '/de/topics/', activeMatch: '/de/topics/' },
@@ -1429,6 +1397,8 @@ export default defineConfig({
     ],
     themeConfig: {
       siteTitle: 'Juxi Technology Wiki',
+      docFooter: { prev: 'Précédent', next: 'Suivant' },
+      lastUpdated: { text: 'Dernière mise à jour' },
       nav: [
         { text: 'Tutoriels', link: '/fr/tutorials/', activeMatch: '/fr/tutorials/' },
         { text: 'Sujets', link: '/fr/topics/', activeMatch: '/fr/topics/' },
@@ -1612,6 +1582,8 @@ export default defineConfig({
     ],
     themeConfig: {
       siteTitle: 'Juxi Technology Wiki',
+      docFooter: { prev: 'Anterior', next: 'Siguiente' },
+      lastUpdated: { text: 'Última actualización' },
       nav: [
         { text: 'Tutoriales', link: '/es/tutorials/', activeMatch: '/es/tutorials/' },
         { text: 'Temas', link: '/es/topics/', activeMatch: '/es/topics/' },
@@ -1795,6 +1767,8 @@ export default defineConfig({
     ],
     themeConfig: {
       siteTitle: 'Juxi Technology Wiki',
+      docFooter: { prev: 'Precedente', next: 'Successivo' },
+      lastUpdated: { text: 'Ultimo aggiornamento' },
       nav: [
         { text: 'Tutorial', link: '/it/tutorials/', activeMatch: '/it/tutorials/' },
         { text: 'Argomenti', link: '/it/topics/', activeMatch: '/it/topics/' },
@@ -1978,6 +1952,8 @@ export default defineConfig({
     ],
     themeConfig: {
       siteTitle: 'Juxi Technology Wiki',
+      docFooter: { prev: 'Anterior', next: 'Próximo' },
+      lastUpdated: { text: 'Última atualização' },
       nav: [
         { text: 'Tutoriais', link: '/pt-br/tutorials/', activeMatch: '/pt-br/tutorials/' },
         { text: 'Tópicos', link: '/pt-br/topics/', activeMatch: '/pt-br/topics/' },
@@ -2184,6 +2160,8 @@ export default defineConfig({
     ],
     themeConfig: {
       siteTitle: 'Juxi Technology Wiki',
+      docFooter: { prev: 'Anterior', next: 'Próximo' },
+      lastUpdated: { text: 'Última atualização' },
       nav: [
         { text: 'Tutoriais', link: '/pt-pt/tutorials/', activeMatch: '/pt-pt/tutorials/' },
         { text: 'Tópicos', link: '/pt-pt/topics/', activeMatch: '/pt-pt/topics/' },
@@ -2390,8 +2368,6 @@ export default defineConfig({
     },
     // 三语 nav/sidebar 定义在各 locales.themeConfig 中,这里只放公共 logo
   },
-  // 结构化数据:每页注入 JSON-LD(首页 Organization,其余 Article)
-  transformPageData: (pageData, { siteConfig }) => computePrevNext(siteConfig && siteConfig.userConfig, pageData),
   transformHead({ pageData }) {
     const base = 'https://wiki.juxitech.com'
     // 首页 = 各语树根 index.md(root 或 {lang}/index.md);目录 index(tutorials/index.md 等)不算首页

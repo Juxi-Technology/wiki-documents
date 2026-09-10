@@ -7,7 +7,6 @@ import PurchaseLinks from './components/PurchaseLinks.vue'
 import TopBanner from './components/TopBanner.vue'
 import LanguageSwitcher from './components/LanguageSwitcher.vue'
 import Breadcrumb from './components/Breadcrumb.vue'
-import PrevNext from './components/PrevNext.vue'
 import NotFound404 from './components/NotFound404.vue'
 import SiteFooter from './components/SiteFooter.vue'
 
@@ -37,9 +36,6 @@ const is404 = computed(() => page.value.isNotFound === true || /404/.test(page.v
         <Breadcrumb />
         <PurchaseLinks v-if="showPurchase" />
       </template>
-    </template>
-    <template #doc-footer-before>
-      <PrevNext v-if="!is404" />
     </template>
     <template #layout-bottom>
       <SiteFooter />
