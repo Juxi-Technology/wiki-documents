@@ -51,7 +51,7 @@ function switchTo(code: string) {
 
 <template>
   <div class="lang-switcher" @mouseleave="open = false">
-    <button class="lang-btn" aria-label="切换语言 / Switch Language" @click="open = !open">
+    <button class="lang-btn" :aria-label="(lang === 'zh-CN' ? '切换语言' : lang === 'zh-HK' ? '切換語言' : lang === 'ja' ? '言語を切り替え' : lang === 'ko' ? '언어 전환' : lang === 'de' ? 'Sprache wechseln' : lang === 'fr' ? 'Changer de langue' : lang === 'es' ? 'Cambiar idioma' : lang === 'it' ? 'Cambia lingua' : lang?.startsWith('pt') ? 'Mudar de idioma' : 'Switch Language')" @click="open = !open">
       <span class="lang-globe">🌐</span>
       <span class="lang-current">{{ current.text }}</span>
       <span class="lang-arrow">▾</span>

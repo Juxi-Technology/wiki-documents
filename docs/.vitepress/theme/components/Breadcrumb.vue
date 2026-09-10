@@ -21,6 +21,11 @@ const HOME_TEXT: Record<string, string> = {
   'zh-CN': '首页', en: 'Home', 'zh-HK': '首頁', ja: 'ホーム', ko: '홈', de: 'Start', fr: 'Accueil', es: 'Inicio', it: 'Home', 'pt-BR': 'Início', 'pt-PT': 'Início',
 }
 
+// 屏幕阅读器标签(11 语言)
+const ARIA_TEXT: Record<string, string> = {
+  'zh-CN': '面包屑', en: 'Breadcrumb', 'zh-HK': '麵包屑', ja: 'パンくずリスト', ko: '브레드크럼', de: 'Brotkrümelnavigation', fr: "Fil d'Ariane", es: 'Ruta de navegación', it: 'Percorso di navigazione', 'pt-BR': 'Trilha de navegação', 'pt-PT': 'Trilha de navegação',
+}
+
 const crumbs = computed(() => {
   const rawSegs = route.path.split('/').filter(Boolean)
   // 去掉语言前缀段(并记住前缀,链接必须带)
@@ -41,9 +46,9 @@ const crumbs = computed(() => {
 </script>
 
 <template>
-  <nav v-if="crumbs.length > 1" class="breadcrumb" aria-label="面包屑">
+  <nav v-if="crumbs.length > 1" class="breadcrumb" :aria-label="ARIA_TEXT[lang] || 'Breadcrumb'">
     <template v-for="(c, i) in crumbs" :key="i">
-      <a v-if="i > 0" class="breadcrumb-sep">/</a>
+      <span v-if="i > 0" class="breadcrumb-sep">/</span>
       <a
         class="breadcrumb-link"
         :class="{ muted: i === crumbs.length - 1 }"

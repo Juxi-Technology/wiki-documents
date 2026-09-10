@@ -93,7 +93,7 @@ python3 imu_calibration_tool.py --mode i2c --port 1 --calibrate temp
 
 ## Verwandte Links
 
-- [IMU-Modul]( /de/products/imu-module)
+- [IMU-Modul](/de/products/imu-module)
 - [IMU-Modul Übersicht (Produktinfo)](/de/tutorials/sensors/imu/product-info)
 - [IMU ROS1](/de/tutorials/sensors/imu/ros-examples/ros1)
 - [IMU ROS2](/de/tutorials/sensors/imu/ros-examples/ros2)
