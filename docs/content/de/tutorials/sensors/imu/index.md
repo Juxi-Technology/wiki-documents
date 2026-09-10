@@ -118,3 +118,24 @@ python3 imu_calibration_tool.py --mode i2c --port 1 --calibrate temp
 ## Offizielles Repository-Beispiel
 
 Juxi Technology stellt den vollständigen Open-Source-Code für das IMU-Modul bereit: [GitHub](https://github.com/Juxi-Technology/ICM42670P-High-Precision-IMU-Module)
+
+### ROS1-/ROS2-Beispiele
+
+Das Repository unterstützt ROS1 und ROS2 nativ, inklusive Kalibrierungstools und Visualisierungs-Nodes:
+
+```bash
+git clone https://github.com/Juxi-Technology/ICM42670P-High-Precision-IMU-Module.git
+cd ICM42670P-High-Precision-IMU-Module
+
+# ROS2
+colcon build
+source install/setup.bash
+ros2 launch icm42670p imu_launch.py
+```
+
+### Python-Kalibrierungstool
+
+```bash
+# 运行六面校准获取精确的加速度计和陀螺仪零偏
+python calibration/calibrate.py --port /dev/ttyUSB0
+```

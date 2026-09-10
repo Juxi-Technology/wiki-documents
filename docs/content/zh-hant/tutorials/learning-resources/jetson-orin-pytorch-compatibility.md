@@ -8,9 +8,7 @@ description: "安裝 jetson 版本的 pytorch"
 > **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
 
 
-可能出現的問題一：
-
-`GPU無法使用`
+## 可能出現的問題一：GPU無法使用
 
 安裝 jetson 版本的 pytorch
 
@@ -39,7 +37,7 @@ import torch
 torch.cuda.is_available()
 ```
 
-可能出現的問題二：
+## 可能出現的問題二：缺少 cuSPARSELt 庫
 
 報錯 `ImportError: libcusparseLt.so.0: cannot open shared object file: No such file or directory`
 
@@ -53,9 +51,7 @@ torch.cuda.is_available()
 
 [https://developer.nvidia.com/cusparselt-downloads](https://link.zhihu.com/?target=https%3A//developer.nvidia.com/cusparselt-downloads)
 
-可能出現的問題三：
-
-`沒有torchvision`
+## 可能出現的問題三：沒有torchvision
 
 解決方法：
 

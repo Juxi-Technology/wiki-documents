@@ -68,3 +68,29 @@ description: LeRobot ベースのフルスタックロボット学習技術
 </style>
 
 ---
+
+## 関連チュートリアル
+
+- [SO-ARM101 チュートリアル](/ja/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial) — LeRobot でロボット操作ポリシーをトレーニング
+- [SO-ARM101 Jetson Orin PyTorch 互換性](/ja/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility)
+- [IMU モジュールチュートリアル](/ja/tutorials/sensors/imu/) — センサーデータの収集
+- [AmazingHand インターフェース制御](/ja/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control)
+
+---
+
+## ✨ コントリビューター募集
+
+コミュニティからのコントリビューターを歓迎します！チュートリアル、ケーススタディ、技術分析をお持ちの方は、ぜひ PR を送ってください。
+
+- [ロボットモデルトレーニングの経験を共有する](https://github.com/Juxi-Technology/wiki-documents/issues)
+- [ロボット学習アルゴリズムを深く掘り下げる](https://github.com/Juxi-Technology/wiki-documents/issues)
+- その他の[プロジェクトのニーズ](https://github.com/orgs/Juxi-Technology/projects/)
+
+---
+
+## テクニカルサポート
+
+私たちの製品をお選びいただきありがとうございます！
+
+- 📧 メール: support@juxitech.com
+- 💬 GitHub Issues: [フィードバック](https://github.com/Juxi-Technology/wiki-documents/issues)

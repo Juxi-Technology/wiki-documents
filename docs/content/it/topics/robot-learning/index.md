@@ -68,3 +68,29 @@ Soluzioni di robot learning più rapide, flessibili e scalabili per tutti. Copri
 </style>
 
 ---
+
+## Tutorial correlati
+
+- [Tutorial SO-ARM101](/it/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial) — Addestra politiche di manipolazione robotica con LeRobot
+- [Compatibilità SO-ARM101 Jetson Orin PyTorch](/it/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility)
+- [Tutorial del modulo IMU](/it/tutorials/sensors/imu/) — Raccolta dati dei sensori
+- [Controllo interfaccia AmazingHand](/it/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control)
+
+---
+
+## ✨ Invito ai contributori
+
+Accogliamo con favore i contributori della comunità! Se hai tutorial, casi di studio o analisi tecniche, sentiti libero di inviare una PR.
+
+- [Condividi la tua esperienza di addestramento di modelli robotici](https://github.com/Juxi-Technology/wiki-documents/issues)
+- [Approfondisci un algoritmo di robot learning](https://github.com/Juxi-Technology/wiki-documents/issues)
+- Ulteriori [esigenze del progetto](https://github.com/orgs/Juxi-Technology/projects/)
+
+---
+
+## Supporto tecnico
+
+Grazie per aver scelto i nostri prodotti!
+
+- 📧 Email: support@juxitech.com
+- 💬 GitHub Issues: [Feedback](https://github.com/Juxi-Technology/wiki-documents/issues)

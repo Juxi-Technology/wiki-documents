@@ -24,9 +24,21 @@ Juxi Technology offre diversi bracci robotici per esigenze diverse.
 
 ## Come scegliere
 
-- 🎓 Studenti/educazione → **Lekiwi**(economico, semplice)
-- 🤖 Ricerca sulla presa → **AmazingHand**(5 dita, TTL)
-- 🧠 Ricerca IA → **SO-ARM101**(integrazione LeRobot, Jetson)
+### 🎓 Studenti / Principianti → Lekiwi
+
+- Struttura semplice, costo contenuto — ideale per la didattica in aula e per iniziare
+- Controllo intuitivo tramite servo
+
+### 🤖 Ricerca su presa e manipolazione → AmazingHand
+
+- Mano dexterous a 4 dita per la ricerca su strategie di presa e controllo dei gesti
+- Controllo tramite bus seriale TTL, compatibile con i controller mainstream
+
+### 🧠 Imitazione IA / Teleoperazione → SO-ARM101
+
+- Design a doppio braccio con teleoperazione leader-follower
+- Profonda integrazione con l'ecosistema LeRobot, ideale per l'imitation learning
+- Supporto Jetson per flussi di lavoro IA senza interruzioni
 
 ## Combinazioni consigliate
 
