@@ -222,7 +222,7 @@ source .venv/bin/activate
 - Handtracking-Demo der Webcam nur in der Simulationsumgebung:
 
 ```Plain Text
-dora build dataflow_tracking_simu.yml --uv   *#(Execute only once)*
+dora build dataflow_tracking_simu.yml --uv   #(Execute only once)
 ```
 
 ```Plain Text
@@ -240,7 +240,7 @@ dora run dataflow_tracking_simu.yml --uv
     #### Rechte Hand
 
     ```Plain Text
-    dora build dataflow_tracking_real_right.yml --uv   *#(Execute only once)*
+    dora build dataflow_tracking_real_right.yml --uv   #(Execute only once)
     ```
 
     ```Plain Text
@@ -250,7 +250,7 @@ dora run dataflow_tracking_simu.yml --uv
     #### Linke Hand
 
     ```Plain Text
-    dora build dataflow_tracking_real_left.yml --uv   *#(Execute only once)*
+    dora build dataflow_tracking_real_left.yml --uv   #(Execute only once)
     ```
 
     ```Plain Text
@@ -262,7 +262,7 @@ dora run dataflow_tracking_simu.yml --uv
 ![Auf echter Hardware Hand-Tracking – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/6.png)
 
     ```Plain Text
-    dora build dataflow_tracking_real_2hands.yml --uv   *#(Execute only once)*
+    dora build dataflow_tracking_real_2hands.yml --uv   #(Execute only once)
     ```
 
     ```Plain Text
@@ -278,7 +278,7 @@ dora run dataflow_tracking_simu.yml --uv
 - Einfaches Beispiel zur Steuerung der Fingerwinkel in der Simulation:
 
     ```Plain Text
-    dora build dataflow_angle_simu.yml --uv   *#(Execute only once)*
+    dora build dataflow_angle_simu.yml --uv   #(Execute only once)
     ```
 
     ```Plain Text

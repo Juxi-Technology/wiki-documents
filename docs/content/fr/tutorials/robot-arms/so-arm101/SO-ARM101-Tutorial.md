@@ -441,6 +441,49 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 |---|---|
 |Flèche droite →|terminer/réinitialiser l'épisode courant ; passer au suivant.|
 |Flèche gauche ←|annuler l'épisode courant ; réenregistrer.|
+|ESC|arrêter immédiatement la session, encoder la vidéo et uploader le dataset.|
+
+**Techniques de collecte de données**
+
+- **Suggestion de tâche** : saisir des objets à différentes positions et les placer dans la boîte.
+
+- **Échelle** : enregistrer ≥ 50 épisodes (10 épisodes par position).
+
+- **Cohérence** :
+
+    - Garder la caméra fixe.
+
+    - Conserver le même comportement de saisie.
+
+    - Veiller à ce que l'objet manipulé soit visible dans le champ de la caméra.
+
+- **Progresser graduellement** :
+
+    - Commencer par des saisies fiables, puis ajouter des variations (nouvelles positions, techniques de saisie, ajustements de caméra).
+
+    - Éviter une augmentation brutale de la complexité afin de prévenir les échecs.
+
+💡 **Règle d'or** : utiliser uniquement le flux de la caméra comme guide et contrôler le bras robotique pour accomplir les tâches en se basant uniquement sur les images vidéo retransmises à l'écran.
+
+Si vous souhaitez approfondir ce sujet important, consultez notre [article de blog](https://huggingface.co/blog/lerobot-datasets#what-makes-a-good-dataset) sur ce qui fait un bon dataset.
+
+- Dans les chapitres suivants, vous entraînerez votre réseau de neurones. Après avoir obtenu des performances de saisie fiables, vous pourrez introduire davantage de variations pendant la collecte de données, comme ajouter des positions de saisie, différentes techniques de saisie et changer la position des caméras.
+
+- Éviter d'ajouter trop de changements trop rapidement, car cela pourrait nuire à vos résultats.
+
+- À tout moment pendant l'enregistrement d'un épisode, appuyer sur la flèche droite → permet de l'arrêter prématurément et d'entrer dans l'état de réinitialisation. De même, pendant la réinitialisation, on peut l'arrêter prématurément pour passer à l'enregistrement de l'épisode suivant.
+
+- Lors de l'enregistrement ou de la réinitialisation, appuyer à tout moment sur la flèche gauche ← pour arrêter prématurément l'épisode courant et le réenregistrer.
+
+- Pendant l'enregistrement, appuyer à tout moment sur ESCAPE ESC pour terminer la session prématurément et passer directement à l'encodage de la vidéo et à l'upload du dataset.
+
+- L'enregistrement peut être repris en réexécutant la même commande et en ajoutant `--resume=true`. ⚠️ **Remarque importante** : lors de la reprise, définissez `--dataset.num_episodes` sur le nombre d'épisodes supplémentaires à enregistrer (et non le nombre total d'épisodes cibles du dataset). Si vous souhaitez repartir de zéro, supprimez manuellement le dossier du dataset.
+
+- Sous Linux, si les flèches gauche et droite ainsi que la touche Échap n'ont aucun effet pendant l'enregistrement des données, assurez-vous d'avoir bien défini la variable d'environnement $DISPLAY. Voir les [limitations de pynput](https://pynput.readthedocs.io/en/latest/limitations.html#linux).
+
+Si votre clavier ne répond pas après avoir appuyé sur une touche, vous devrez peut-être rétrograder votre version de pynput, p. ex. installer la version 1.6.8.
+
+`pip install pynput==1.6.8`
 
 ### Visualiser un dataset
 
@@ -505,14 +548,14 @@ lerobot-train \
 
 ```Python
 lerobot-train \
-  *--dataset.repo_id*=juxi/test \
-  *--policy.type*=act \
-  *--output_dir*=outputs/train/act_so101_test \
-  *--job_name*=act_so101_test \
-  *--policy.device*=cuda \
-  *--wandb.enable*=false \
-  *--policy.push_to_hub*=false\
-  *--steps*=300000
+  --dataset.repo_id=juxi/test \
+  --policy.type=act \
+  --output_dir=outputs/train/act_so101_test \
+  --job_name=act_so101_test \
+  --policy.device=cuda \
+  --wandb.enable=false \
+  --policy.push_to_hub=false\
+  --steps=300000
 ```
 
 Explication

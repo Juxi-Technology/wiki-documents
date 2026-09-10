@@ -105,9 +105,9 @@ JUXI는 하드웨어 자체의 품질에만 책임을 집니다. 튜토리얼은
 ### 1. [Miniconda 설치](https://docs.anaconda.com/miniconda/install/#quick-command-line-install):
 
 ```Python
-mkdir *-p* ~/miniconda3
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh *-O* ~/miniconda3/miniconda.sh
-bash ~/miniconda3/miniconda.sh *-b* *-u* *-p* ~/miniconda3
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 rm ~/miniconda3/miniconda.sh
 ```
 
@@ -157,7 +157,7 @@ conda install ffmpeg -c conda-forge
 
 ```Bash
 cd ~/lerobot && pip install --no-binary=av -e ".[feetech]"
-pip install *-e* ".[lekiwi]"
+pip install -e ".[lekiwi]"
 ```
 
 ### 7. 연결 시간 설정
@@ -191,7 +191,7 @@ connection_time_s: int = 7200 # 也就是2小时
 ### 3. LeRobot용 새 Conda 환경 생성 및 활성화
 
 ```Bash
-conda create *-y* *-n* lerobot *python*=3.10
+conda create -y -n lerobot python=3.10
 ```
 
 그다음 Conda 환경을 활성화합니다(LeRobot을 사용하기 위해 셸을 열 때마다 수행해야 합니다!):
@@ -230,7 +230,7 @@ conda install ffmpeg -c conda-forge
 
 ```Bash
 cd ~/lerobot && pip install --no-binary=av -e ".[feetech]"
-pip install *-e* ".[lekiwi]"
+pip install -e ".[lekiwi]"
 ```
 
 # 모터 설정
@@ -264,8 +264,8 @@ sudo chmod 666 /dev/ttyACM1
 
 ```Bash
 lerobot-setup-motors \
-    *--robot.type*=lekiwi \
-    *--robot.port*=/dev/tty.usbmodem58760431551 # <- paste here the port found at previous step
+    --robot.type=lekiwi \
+    --robot.port=/dev/tty.usbmodem58760431551 # <- paste here the port found at previous step
 ```
 
 ![2. 모터 설정완성품은 이 단계 생략 가능 – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
@@ -448,7 +448,7 @@ python examples/lekiwi/teleoperate.py
 구성 파일에 올바른 라즈베리파이 IP 주소가 설정되었는지 확인합니다. 라즈베리파이의 IP 주소를 확인하려면 다음 명령을 실행합니다(Pi의 명령줄에서):
 
 ```Bash
-hostname *-I*
+hostname -I
 ```
 
 ### 2. 노트북/PC에서 Pi에 접근 가능한지 확인
@@ -510,7 +510,7 @@ hf auth login
 Hugging Face 저장소 이름을 변수에 저장하여 다음 명령을 실행합니다:
 
 ```Bash
-*hf auth whoami*
+hf auth whoami
 ```
 
 그다음 노트북에서 다음 명령을 실행하여 2라운드를 기록하고 데이터세트를 hub에 업로드합니다:

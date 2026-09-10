@@ -324,11 +324,11 @@ by-path/   controlC0  pcmC0D0c   pcmC0D0p   timer
 **步驟 1： 檢查內核是否支持 snd_usb_audio**
 
 ```Plain Text
-*# 方法1： 检查是否已加载驱动模块*
+# 方法1： 检查是否已加载驱动模块
 lsmod | grep snd_usb_audio
 
-*# 方法2： 检查内核是否内置该模块（即使未加载）*
-modinfo snd_usb_audio  *# 有输出=内核支持；无输出=内核未编译该模块*
+# 方法2： 检查内核是否内置该模块（即使未加载）
+modinfo snd_usb_audio  # 有输出=内核支持；无输出=内核未编译该模块
 ```
 
 **若 `modinfo`**：說明系統內核裁剪了該驅動，需重新編譯內核，在 `.config` 中開啓：

@@ -441,6 +441,34 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 |---|---|
 |Freccia destra →|terminare/ripristinare l'episodio corrente; passare al successivo.|
 |Freccia sinistra ←|annullare l'episodio corrente; registrare di nuovo.|
+|ESC|interrompere immediatamente la sessione, codificare il video e caricare il dataset.|
+
+**Tecniche di raccolta dati**
+- **Suggerimento per l'attività**: afferrare oggetti in posizioni diverse e metterli nella scatola.
+- **Quantità**: registrare ≥ 50 episodi (10 episodi per posizione).
+- **Coerenza**:
+    - mantenere la fotocamera fissa.
+    - mantenere lo stesso comportamento di presa.
+    - assicurarsi che l'oggetto manipolato sia visibile nell'inquadratura della fotocamera.
+- **Progredire gradualmente**:
+    - iniziare con prese affidabili, poi aggiungere variazioni (nuove posizioni, tecniche di presa, regolazioni della fotocamera).
+    - evitare un aumento brusco della complessità per prevenire fallimenti.
+
+💡 **Regola pratica**: usare solo il flusso della fotocamera come guida e controllare il braccio robotico per completare le attività basandosi esclusivamente sulle immagini video mostrate sullo schermo.
+
+Per approfondire questo importante argomento, consultare il nostro [post del blog](https://huggingface.co/blog/lerobot-datasets#what-makes-a-good-dataset) su cosa rende un buon dataset.
+
+- Nei capitoli successivi addestrerai la tua rete neurale. Dopo aver ottenuto prestazioni di presa affidabili, puoi introdurre più variazioni durante la raccolta dei dati, ad esempio aggiungendo posizioni di presa, tecniche di presa diverse e cambiando la posizione delle fotocamere.
+- Evitare di aggiungere troppe modifiche in una volta sola, poiché ciò può compromettere i risultati.
+- In qualsiasi momento durante la registrazione di un episodio, premendo la freccia destra → è possibile interrompere la registrazione in anticipo ed entrare nello stato di ripristino. Analogamente, durante il ripristino è possibile interromperlo in anticipo e passare alla registrazione dell'episodio successivo.
+- Durante la registrazione o il ripristino, premere in qualsiasi momento la freccia sinistra ← per interrompere in anticipo l'episodio corrente e registrare di nuovo.
+- Durante la registrazione, premere ESCAPE ESC in qualsiasi momento per terminare in anticipo la sessione e passare direttamente alla codifica del video e al caricamento del dataset.
+- La registrazione può essere ripresa rieseguendo lo stesso comando e aggiungendo `--resume=true`. ⚠️ **Nota importante**: alla ripresa, impostare `--dataset.num_episodes` al numero di episodi aggiuntivi da registrare (non al numero totale di episodi previsti nel dataset). Per iniziare la registrazione da zero, eliminare manualmente la cartella del dataset.
+- Su Linux, se i tasti freccia sinistra e destra e il tasto Esc non hanno effetto durante la registrazione dei dati, assicurarsi di aver impostato la variabile d'ambiente $DISPLAY. Vedere le [limitazioni di pynput](https://pynput.readthedocs.io/en/latest/limitations.html#linux).
+
+Se la tastiera non risponde dopo la pressione di un tasto, potrebbe essere necessario eseguire il downgrade della versione di pynput, ad esempio installando la versione 1.6.8.
+
+`pip install pynput==1.6.8`
 
 ### Visualizzare un dataset
 
@@ -505,14 +533,14 @@ lerobot-train \
 
 ```Python
 lerobot-train \
-  *--dataset.repo_id*=juxi/test \
-  *--policy.type*=act \
-  *--output_dir*=outputs/train/act_so101_test \
-  *--job_name*=act_so101_test \
-  *--policy.device*=cuda \
-  *--wandb.enable*=false \
-  *--policy.push_to_hub*=false\
-  *--steps*=300000
+  --dataset.repo_id=juxi/test \
+  --policy.type=act \
+  --output_dir=outputs/train/act_so101_test \
+  --job_name=act_so101_test \
+  --policy.device=cuda \
+  --wandb.enable=false \
+  --policy.push_to_hub=false\
+  --steps=300000
 ```
 
 Spiegazione

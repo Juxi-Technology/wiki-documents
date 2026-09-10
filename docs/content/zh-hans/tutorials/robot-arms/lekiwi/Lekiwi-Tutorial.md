@@ -105,9 +105,9 @@ JUXI 仅对硬件本身的质量负责。教程严格按照官方文档更新。
 ### 1. [安装 Miniconda](https://docs.anaconda.com/miniconda/install/#quick-command-line-install):
 
 ```Python
-mkdir *-p* ~/miniconda3
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh *-O* ~/miniconda3/miniconda.sh
-bash ~/miniconda3/miniconda.sh *-b* *-u* *-p* ~/miniconda3
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 rm ~/miniconda3/miniconda.sh
 ```
 
@@ -157,7 +157,7 @@ conda install ffmpeg -c conda-forge
 
 ```Bash
 cd ~/lerobot && pip install --no-binary=av -e ".[feetech]"
-pip install *-e* ".[lekiwi]"
+pip install -e ".[lekiwi]"
 ```
 
 ### 7. 设置连接时间
@@ -189,7 +189,7 @@ connection_time_s: int = 7200 # 也就是2小时
 ### 3. 为 LeRobot 创建并激活一个新的 Conda 环境
 
 ```Bash
-conda create *-y* *-n* lerobot *python*=3.10
+conda create -y -n lerobot python=3.10
 ```
 
 然后激活您的 Conda 环境（每次打开 Shell 使用 LeRobot 时都需要执行此操作！）：
@@ -228,7 +228,7 @@ conda install ffmpeg -c conda-forge
 
 ```Bash
 cd ~/lerobot && pip install --no-binary=av -e ".[feetech]"
-pip install *-e* ".[lekiwi]"
+pip install -e ".[lekiwi]"
 ```
 
 # 配置电机
@@ -262,8 +262,8 @@ sudo chmod 666 /dev/ttyACM1
 
 ```Bash
 lerobot-setup-motors \
-    *--robot.type*=lekiwi \
-    *--robot.port*=/dev/tty.usbmodem58760431551 # <- paste here the port found at previous step
+    --robot.type=lekiwi \
+    --robot.port=/dev/tty.usbmodem58760431551 # <- paste here the port found at previous step
 ```
 
 ![2.配置您的电机（成品可跳过该步骤） – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
@@ -446,7 +446,7 @@ python examples/lekiwi/teleoperate.py
 确保配置文件中设置了正确的 Raspberry Pi IP 地址。要检查 Raspberry Pi 的 IP 地址，请运行以下命令（在 Pi 的命令行中）：
 
 ```Bash
-hostname *-I*
+hostname -I
 ```
 
 ### 2.检查笔记本电脑/PC 是否能访问 Pi
@@ -508,7 +508,7 @@ hf auth login
 将您的 Hugging Face 仓库名称存储在变量中以运行以下命令：
 
 ```Bash
-*hf auth whoami*
+hf auth whoami
 ```
 
 然后在您的笔记本电脑上运行以下命令以记录 2 个回合并将数据集上传到 hub：

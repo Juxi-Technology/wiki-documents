@@ -202,7 +202,7 @@ source .venv/bin/activate
 
 - シミュレーション環境のみでネットワークカメラのハンドトラッキングデモを実行：
 ```Plain Text
-dora build dataflow_tracking_simu.yml --uv   *#(Execute only once)*
+dora build dataflow_tracking_simu.yml --uv   #(Execute only once)
 ```
 
 ```Plain Text
@@ -218,7 +218,7 @@ dora run dataflow_tracking_simu.yml --uv
 - 実ハードウェアでネットワークカメラのハンドトラッキングデモを実行：
     #### 右手灵巧手
     ```Plain Text
-    dora build dataflow_tracking_real_right.yml --uv   *#(Execute only once)*
+    dora build dataflow_tracking_real_right.yml --uv   #(Execute only once)
     ```
 
     ```Plain Text
@@ -227,7 +227,7 @@ dora run dataflow_tracking_simu.yml --uv
 
     #### 左手灵巧手
     ```Plain Text
-    dora build dataflow_tracking_real_left.yml --uv   *#(Execute only once)*
+    dora build dataflow_tracking_real_left.yml --uv   #(Execute only once)
     ```
 
     ```Plain Text
@@ -239,7 +239,7 @@ dora run dataflow_tracking_simu.yml --uv
 ![実ハードウェアでの実行（ハンドトラッキング） – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/6.png)
 
     ```Plain Text
-    dora build dataflow_tracking_real_2hands.yml --uv   *#(Execute only once)*
+    dora build dataflow_tracking_real_2hands.yml --uv   #(Execute only once)
     ```
 
     ```Plain Text
@@ -254,7 +254,7 @@ dora run dataflow_tracking_simu.yml --uv
 
 - シミュレーション内の指角度を制御する簡単なサンプルを実行します：
     ```Plain Text
-    dora build dataflow_angle_simu.yml --uv   *#(Execute only once)*
+    dora build dataflow_angle_simu.yml --uv   #(Execute only once)
     ```
 
     ```Plain Text

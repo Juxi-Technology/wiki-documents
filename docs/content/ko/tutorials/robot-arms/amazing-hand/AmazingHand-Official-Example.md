@@ -221,7 +221,7 @@ source .venv/bin/activate
 - 시뮬레이션 환경에서만 웹캠 핸드 트래킹 데모를 실행합니다:
 
 ```Plain Text
-dora build dataflow_tracking_simu.yml --uv   *#(Execute only once)*
+dora build dataflow_tracking_simu.yml --uv   #(Execute only once)
 ```
 
 ```Plain Text
@@ -239,7 +239,7 @@ dora run dataflow_tracking_simu.yml --uv
     #### 오른손 로봇핸드
 
     ```Plain Text
-    dora build dataflow_tracking_real_right.yml --uv   *#(Execute only once)*
+    dora build dataflow_tracking_real_right.yml --uv   #(Execute only once)
     ```
 
     ```Plain Text
@@ -249,7 +249,7 @@ dora run dataflow_tracking_simu.yml --uv
     #### 왼손 로봇핸드
 
     ```Plain Text
-    dora build dataflow_tracking_real_left.yml --uv   *#(Execute only once)*
+    dora build dataflow_tracking_real_left.yml --uv   #(Execute only once)
     ```
 
     ```Plain Text
@@ -261,7 +261,7 @@ dora run dataflow_tracking_simu.yml --uv
 ![실제 하드웨어 실행핸드 트래킹 – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/6.png)
 
     ```Plain Text
-    dora build dataflow_tracking_real_2hands.yml --uv   *#(Execute only once)*
+    dora build dataflow_tracking_real_2hands.yml --uv   #(Execute only once)
     ```
 
     ```Plain Text
@@ -277,7 +277,7 @@ dora run dataflow_tracking_simu.yml --uv
 - 시뮬레이션에서 손가락 각도를 제어하는 간단한 예제를 실행합니다:
 
     ```Plain Text
-    dora build dataflow_angle_simu.yml --uv   *#(Execute only once)*
+    dora build dataflow_angle_simu.yml --uv   #(Execute only once)
     ```
 
     ```Plain Text

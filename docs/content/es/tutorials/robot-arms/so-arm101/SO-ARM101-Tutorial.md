@@ -441,6 +441,35 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 |---|---|
 |Flecha derecha →|terminar/reiniciar el episodio actual; pasar al siguiente.|
 |Flecha izquierda ←|cancelar el episodio actual; regrabar.|
+|ESC|detener la sesión de inmediato, codificar el video y subir el dataset.|
+
+**Técnicas de recolección de datos**
+
+- **Sugerencia de tarea**: agarrar objetos en distintas posiciones y colocarlos en la caja.
+- **Escala**: registrar ≥ 50 episodios (10 episodios por posición).
+- **Consistencia**:
+    - Mantener la cámara fija.
+    - Mantener el mismo comportamiento de agarre.
+    - Asegurar que el objeto manipulado sea visible en el encuadre de la cámara.
+- **Avanzar gradualmente**:
+    - Empezar con agarres fiables y luego añadir variaciones (nuevas posiciones, técnicas de agarre, ajustes de cámara).
+    - Evitar un aumento brusco de la complejidad para prevenir fallos.
+
+💡 **Regla general**: usar solo la imagen de la cámara como guía y controlar el brazo robótico para completar las tareas basándose únicamente en las imágenes de video que se muestran en la pantalla.
+
+Si se quiere profundizar en este tema tan importante, consultar nuestra [entrada de blog](https://huggingface.co/blog/lerobot-datasets#what-makes-a-good-dataset) sobre qué hace que un dataset sea bueno.
+
+- En los capítulos siguientes se entrenará la red neuronal. Tras conseguir un agarre fiable, se pueden introducir más variaciones durante la recolección, como añadir posiciones de agarre, distintas técnicas de agarre y cambiar las posiciones de las cámaras.
+- Evitar añadir demasiados cambios demasiado rápido, ya que puede perjudicar los resultados.
+- Durante la grabación de una ronda, pulsar la flecha derecha → en cualquier momento detiene la grabación antes de tiempo y entra en el estado de reinicio. Del mismo modo, durante el reinicio se puede detener antes de tiempo y pasar a la siguiente ronda de grabación.
+- Al estar grabando o reiniciando a una fase anterior, pulsar la flecha izquierda ← en cualquier momento para detener el episodio actual antes de tiempo y volver a grabar.
+- Durante la grabación, pulsar ESCAPE ESC en cualquier momento para finalizar la sesión antes de tiempo y pasar directamente a la codificación del video y a la subida del dataset.
+- La grabación se puede reanudar volviendo a ejecutar el mismo comando y añadiendo `--resume=true`. ⚠️ **Nota importante**: al reanudar, definir `--dataset.num_episodes` como el número de episodios adicionales que se van a grabar (no el número total de episodios objetivo del dataset). Si se quiere empezar a grabar desde cero, eliminar manualmente el directorio del dataset.
+- En Linux, si las flechas izquierda y derecha y la tecla Esc no tienen efecto durante la grabación de datos, comprobar que esté definida la variable de entorno $DISPLAY. Ver [limitaciones de pynput](https://pynput.readthedocs.io/en/latest/limitations.html#linux).
+
+Si el teclado no responde tras pulsar una tecla, puede que sea necesario bajar la versión de pynput, por ejemplo, instalar la versión 1.6.8.
+
+`pip install pynput==1.6.8`
 
 ### Visualizar un dataset
 
@@ -505,14 +534,14 @@ lerobot-train \
 
 ```Python
 lerobot-train \
-  *--dataset.repo_id*=juxi/test \
-  *--policy.type*=act \
-  *--output_dir*=outputs/train/act_so101_test \
-  *--job_name*=act_so101_test \
-  *--policy.device*=cuda \
-  *--wandb.enable*=false \
-  *--policy.push_to_hub*=false\
-  *--steps*=300000
+  --dataset.repo_id=juxi/test \
+  --policy.type=act \
+  --output_dir=outputs/train/act_so101_test \
+  --job_name=act_so101_test \
+  --policy.device=cuda \
+  --wandb.enable=false \
+  --policy.push_to_hub=false\
+  --steps=300000
 ```
 
 Explicación

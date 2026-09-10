@@ -105,9 +105,9 @@ On your Raspberry Pi:
 ### 1. [Install Miniconda](https://docs.anaconda.com/miniconda/install/#quick-command-line-install): 
 
 ```Python
-mkdir *-p* ~/miniconda3
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh *-O* ~/miniconda3/miniconda.sh
-bash ~/miniconda3/miniconda.sh *-b* *-u* *-p* ~/miniconda3
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 rm ~/miniconda3/miniconda.sh
 ```
 
@@ -157,7 +157,7 @@ If you encounter the following error, you can also use the above command to reso
 
 ```Bash
 cd ~/lerobot && pip install --no-binary=av -e ".[feetech]"
-pip install *-e* ".[lekiwi]"
+pip install -e ".[lekiwi]"
 ```
 
 ### 7. Set the connection time
@@ -191,7 +191,7 @@ Copy and paste the following command in your shell:`source ~/.bashrc` or for Mac
 ### 3. Create and activate a new Conda environment for LeRobot
 
 ```Bash
-conda create *-y* *-n* lerobot *python*=3.10
+conda create -y -n lerobot python=3.10
 ```
 
 Then activate your Conda environment (you need to do this every time you open the Shell to use LeRobot!): 
@@ -230,7 +230,7 @@ If you encounter the following error, you can also use the above command to reso
 
 ```Bash
 cd ~/lerobot && pip install --no-binary=av -e ".[feetech]"
-pip install *-e* ".[lekiwi]"
+pip install -e ".[lekiwi]"
 ```
 
 # Configure Motor 
@@ -264,8 +264,8 @@ Insert each motor of your chassis in sequence and run the following script. It w
 
 ```Bash
 lerobot-setup-motors \
-    *--robot.type*=lekiwi \
-    *--robot.port*=/dev/tty.usbmodem58760431551 # <- paste here the port found at previous step
+    --robot.type=lekiwi \
+    --robot.port=/dev/tty.usbmodem58760431551 # <- paste here the port found at previous step
 ```
 
 ![2. Configure your motor finished products can skip this step – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
@@ -448,7 +448,7 @@ If you encounter problems when connecting to the mobile robot SO101, please foll
 Ensure that the correct Raspberry Pi IP address is set in the configuration file. To check the IP address of the Raspberry Pi, run the following command (in the Pi's command line):
 
 ```Bash
-hostname *-I*
+hostname -I
 ```
 
 ### 2. Check if the laptop/PC can access Pi
@@ -510,7 +510,7 @@ hf auth login
 Store your Hugging Face repository name in a variable to run the following command: 
 
 ```Bash
-*hf auth whoami*
+hf auth whoami
 ```
 
 Then run the following command on your laptop to record 2 rounds and upload the dataset to the hub: 

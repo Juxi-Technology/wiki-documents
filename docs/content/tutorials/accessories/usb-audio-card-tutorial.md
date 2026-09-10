@@ -323,11 +323,11 @@ As long as the kernel supports it, simply install the basic audio tools to use i
 **Step 1: Check if the kernel supports snd_usb_audio **
 
 ```Plain Text
-*# **Method 1: Check whether the driver module has been loaded*
+# Method 1: Check whether the driver module has been loaded
 lsmod | grep snd_usb_audio
 
-*# **Method 2: Check if the module is built into the kernel (even if not loaded)*
-modinfo snd_usb_audio  *# **Output exists = Kernel support; No output = The module is not compiled into the kernel*
+# Method 2: Check if the module is built into the kernel (even if not loaded)
+modinfo snd_usb_audio  # Output exists = Kernel support; No output = The module is not compiled into the kernel
 ```
 
 **If ` modinfo `**: It indicates that the system kernel has trimmed this driver, and the kernel needs to be recompiled. Enable it in `.config `: 

@@ -441,6 +441,34 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 |---|---|
 |Pfeil rechts →|aktuelle Episode beenden/zurücksetzen; zur nächsten.|
 |Pfeil links ←|aktuelle Episode abbrechen; neu aufnehmen.|
+|ESC|Session sofort beenden, Video kodieren und Datensatz hochladen.|
+
+**Techniken der Datenerfassung**
+- **Aufgabenvorschlag**: Objekte an verschiedenen Positionen greifen und in die Box legen.
+- **Umfang**: Mindestens 50 Episoden aufnehmen (10 Episoden pro Position).
+- **Konsistenz**:
+    - Die Kamera fest positioniert lassen.
+    - Immer dasselbe Greifverhalten beibehalten.
+    - Sicherstellen, dass das manipulierte Objekt im Kamerabild sichtbar ist.
+- **Schrittweise steigern**:
+    - Mit zuverlässigen Griffen beginnen, dann Variationen ergänzen (neue Positionen, Greiftechniken, Kameraanpassungen).
+    - Komplexität nicht abrupt erhöhen, um Fehlschläge zu vermeiden.
+
+💡 **Faustregel**: Nur das Kamerabild als Orientierung nutzen und den Roboterarm ausschließlich anhand der auf dem Bildschirm zurückgemeldeten Videobilder steuern, um die Aufgaben zu erledigen.
+
+Wenn Sie tiefer in dieses wichtige Thema eintauchen möchten, lesen Sie unseren [Blogbeitrag](https://huggingface.co/blog/lerobot-datasets#what-makes-a-good-dataset) darüber, was einen guten Datensatz ausmacht.
+
+- In den folgenden Kapiteln trainieren Sie Ihr neuronales Netz. Nachdem Sie zuverlässige Greifleistungen erreicht haben, können Sie während der Datenerfassung weitere Variationen einführen, z. B. zusätzliche Greifpositionen, andere Greiftechniken und veränderte Kamerapositionen.
+- Vermeiden Sie zu viele Änderungen zu schnell, da dies Ihre Ergebnisse beeinträchtigen kann.
+- Während der Aufzeichnung einer Episode kann jederzeit mit der rechten Pfeiltaste → vorzeitig gestoppt und in den Reset-Zustand gewechselt werden. Ebenso kann der Reset-Prozess vorzeitig beendet und mit der nächsten Aufzeichnung begonnen werden.
+- Beim Aufnehmen oder Zurücksetzen kann jederzeit die linke Pfeiltaste ← gedrückt werden, um die aktuelle Episode vorzeitig zu beenden und neu aufzunehmen.
+- Während der Aufzeichnung kann jederzeit ESCAPE (ESC) gedrückt werden, um die Session vorzeitig zu beenden und direkt zur Videokodierung und zum Hochladen des Datensatzes überzugehen.
+- Die Aufzeichnung kann fortgesetzt werden, indem derselbe Befehl erneut ausgeführt und `--resume=true` hinzugefügt wird. ⚠️ **Wichtiger Hinweis**: Beim Fortsetzen `--dataset.num_episodes` auf die Anzahl der zusätzlich aufzuzeichnenden Episoden setzen (nicht auf die Gesamtzahl der Ziel-Episoden im Datensatz). Wenn die Aufzeichnung von Grund auf neu gestartet werden soll, das Datensatzverzeichnis manuell löschen.
+- Falls die Pfeiltasten und die Esc-Taste unter Linux während der Datenaufzeichnung keine Wirkung zeigen, stellen Sie sicher, dass die Umgebungsvariable $DISPLAY gesetzt ist. Siehe [pynput-Einschränkungen](https://pynput.readthedocs.io/en/latest/limitations.html#linux).
+
+Falls Ihre Tastatur nach einem Tastendruck nicht reagiert, müssen Sie möglicherweise die pynput-Version herunterstufen, z. B. Version 1.6.8 installieren.
+
+`pip install pynput==1.6.8`
 
 ### Datensatz visualisieren
 
@@ -505,14 +533,14 @@ lerobot-train \
 
 ```Python
 lerobot-train \
-  *--dataset.repo_id*=juxi/test \
-  *--policy.type*=act \
-  *--output_dir*=outputs/train/act_so101_test \
-  *--job_name*=act_so101_test \
-  *--policy.device*=cuda \
-  *--wandb.enable*=false \
-  *--policy.push_to_hub*=false\
-  *--steps*=300000
+  --dataset.repo_id=juxi/test \
+  --policy.type=act \
+  --output_dir=outputs/train/act_so101_test \
+  --job_name=act_so101_test \
+  --policy.device=cuda \
+  --wandb.enable=false \
+  --policy.push_to_hub=false\
+  --steps=300000
 ```
 
 Erklärung

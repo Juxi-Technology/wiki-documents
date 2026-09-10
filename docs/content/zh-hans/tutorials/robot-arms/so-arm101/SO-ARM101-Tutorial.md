@@ -505,7 +505,7 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 
 如果你的键盘按下后没有反应，可能你需要降低你pynput的版本，例如安装个1.6.8版本的。
 
-`pip install `*`pynput`*`==1.6.8`
+`pip install pynput==1.6.8`
 
 ### 可视化一个数据集（可跳过，可尝试）
 
@@ -571,14 +571,14 @@ lerobot-train \
 
 ```Python
 lerobot-train \
-  *--dataset.repo_id*=juxi/test \
-  *--policy.type*=act \
-  *--output_dir*=outputs/train/act_so101_test \
-  *--job_name*=act_so101_test \
-  *--policy.device*=cuda \
-  *--wandb.enable*=false \
-  *--policy.push_to_hub*=false\
-  *--steps*=300000 
+  --dataset.repo_id=juxi/test \
+  --policy.type=act \
+  --output_dir=outputs/train/act_so101_test \
+  --job_name=act_so101_test \
+  --policy.device=cuda \
+  --wandb.enable=false \
+  --policy.push_to_hub=false\
+  --steps=300000 
 ```
 
 命令解释

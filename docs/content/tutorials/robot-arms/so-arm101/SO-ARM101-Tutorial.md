@@ -509,7 +509,7 @@ If you want to delve deeper into this important topic, you can check out our [ b
 
 If your keyboard does not respond after a key press, you may need to downgrade your pynput version, for example, install version 1.6.8. 
 
-`pip install `*`pynput`*`==1.6.8`
+`pip install pynput==1.6.8`
 
 ### Visualize a dataset  (optional, can be attempted) 
 
@@ -575,14 +575,14 @@ lerobot-train \
 
 ```Python
 lerobot-train \
-  *--dataset.repo_id*=juxi/test \
-  *--policy.type*=act \
-  *--output_dir*=outputs/train/act_so101_test \
-  *--job_name*=act_so101_test \
-  *--policy.device*=cuda \
-  *--wandb.enable*=false \
-  *--policy.push_to_hub*=false\
-  *--steps*=300000 
+  --dataset.repo_id=juxi/test \
+  --policy.type=act \
+  --output_dir=outputs/train/act_so101_test \
+  --job_name=act_so101_test \
+  --policy.device=cuda \
+  --wandb.enable=false \
+  --policy.push_to_hub=false\
+  --steps=300000 
 ```
 
 Command Explanation

@@ -509,7 +509,7 @@ Se você quiser se aprofundar nesse tópico importante, confira nossa [postagem 
 
 Se o seu teclado não responder após pressionar uma tecla, talvez seja necessário fazer downgrade da versão do pynput; por exemplo, instale a versão 1.6.8. 
 
-`pip install `*`pynput`*`==1.6.8`
+`pip install pynput==1.6.8`
 
 ### Visualizar um dataset (opcional, pode ser tentado) 
 
@@ -575,14 +575,14 @@ lerobot-train \
 
 ```Python
 lerobot-train \
-  *--dataset.repo_id*=juxi/test \
-  *--policy.type*=act \
-  *--output_dir*=outputs/train/act_so101_test \
-  *--job_name*=act_so101_test \
-  *--policy.device*=cuda \
-  *--wandb.enable*=false \
-  *--policy.push_to_hub*=false\
-  *--steps*=300000 
+  --dataset.repo_id=juxi/test \
+  --policy.type=act \
+  --output_dir=outputs/train/act_so101_test \
+  --job_name=act_so101_test \
+  --policy.device=cuda \
+  --wandb.enable=false \
+  --policy.push_to_hub=false\
+  --steps=300000 
 ```
 
 Explicação dos comandos

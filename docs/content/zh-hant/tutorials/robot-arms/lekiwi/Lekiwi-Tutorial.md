@@ -105,9 +105,9 @@ JUXI僅對硬件本身質量負責，教程嚴格按照官方文檔更新，如�
 ### 1.[安裝Miniconda](https://docs.anaconda.com/miniconda/install/#quick-command-line-install)：
 
 ```Python
-mkdir *-p* ~/miniconda3
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh *-O* ~/miniconda3/miniconda.sh
-bash ~/miniconda3/miniconda.sh *-b* *-u* *-p* ~/miniconda3
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 rm ~/miniconda3/miniconda.sh
 ```
 
@@ -157,7 +157,7 @@ conda install ffmpeg -c conda-forge
 
 ```Bash
 cd ~/lerobot && pip install --no-binary=av -e ".[feetech]"
-pip install *-e* ".[lekiwi]"
+pip install -e ".[lekiwi]"
 ```
 
 ### 7. 設置連接時間
@@ -191,7 +191,7 @@ connection_time_s: int = 7200 # 也就是2小时
 ### 3.爲LeRobot創建和激活一個新的Conda環境
 
 ```Bash
-conda create *-y* *-n* lerobot *python*=3.10
+conda create -y -n lerobot python=3.10
 ```
 
 然後激活您的Conda環境（每次打開Shell以使用LeRobot時都需要這樣做！）：
@@ -230,7 +230,7 @@ conda install ffmpeg -c conda-forge
 
 ```Bash
 cd ~/lerobot && pip install --no-binary=av -e ".[feetech]"
-pip install *-e* ".[lekiwi]"
+pip install -e ".[lekiwi]"
 ```
 
 # 配置電機
@@ -264,8 +264,8 @@ sudo chmod 666 /dev/ttyACM1
 
 ```Bash
 lerobot-setup-motors \
-    *--robot.type*=lekiwi \
-    *--robot.port*=/dev/tty.usbmodem58760431551 # <- paste here the port found at previous step
+    --robot.type=lekiwi \
+    --robot.port=/dev/tty.usbmodem58760431551 # <- paste here the port found at previous step
 ```
 
 ![2.配置您的電機（成品可以跳過此步驟） – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
@@ -448,7 +448,7 @@ python examples/lekiwi/teleoperate.py
 確保在配置文件中設置了正確的Raspberry Pi IP地址。要檢查Raspberry Pi的IP地址，請運行以下命令（在Pi的命令行中）：
 
 ```Bash
-hostname *-I*
+hostname -I
 ```
 
 ### 2.檢查筆記本電腦/PC是否可以訪問Pi
@@ -510,7 +510,7 @@ hf auth login
 將您的Hugging Face存儲庫名稱存儲在一個變量中以運行以下命令：
 
 ```Bash
-*hf auth whoami*
+hf auth whoami
 ```
 
 然後在您的筆記本電腦上運行以下命令以記錄2輪並將數據集上傳到Hub：

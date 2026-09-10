@@ -442,6 +442,35 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 |---|---|
 |오른쪽 화살표 →|현재 에피소드 조기 종료/리셋 후 다음으로.|
 |왼쪽 화살표 ←|현재 에피소드 취소 후 재녹화.|
+|ESC|즉시 세션 중지 후 영상 인코딩 및 데이터셋 업로드.|
+
+**데이터 수집 기법**
+- **과제 제안**: 다양한 위치에 있는 물체를 집어 상자에 넣습니다.
+- **규모**: 에피소드 50개 이상을 기록합니다(위치당 10개 에피소드).
+- **일관성**:
+    - 카메라를 고정하세요.
+    - 동일한 집기 동작을 유지하세요.
+    - 조작하는 물체가 카메라 프레임에 보이도록 하세요.
+- **점진적 진행**:
+    - 먼저 안정적인 집기부터 시작한 후, 변형(새로운 위치, 집기 기법, 카메라 조정)을 추가하세요.
+    - 실패를 방지하기 위해 복잡도를 급격히 높이지 마세요.
+
+💡 **경험 법칙**: 카메라 피드만을 가이드로 사용하고, 화면을 통해 피드백되는 영상 이미지만을 기준으로 로봇팔을 제어해 작업을 완료하세요.
+
+이 중요한 주제를 더 깊이 파고들고 싶다면, 좋은 데이터셋이란 무엇인지에 관한 [블로그 글](https://huggingface.co/blog/lerobot-datasets#what-makes-a-good-dataset)을 확인해 보세요.
+
+- 이후 챕터에서는 신경망을 훈련합니다. 안정적인 집기 성능을 확보한 후에는 데이터 수집 과정에서 집기 위치 추가, 다양한 집기 기법, 카메라 위치 변경 등 더 많은 변형을 도입할 수 있습니다.
+- 너무 많은 변경을 너무 빠르게 추가하면 결과에 악영향을 줄 수 있으므로 피하세요.
+- 데이터를 로컬에 저장하려면(`--dataset.push_to_hub=false`), `--dataset.repo_id=${HF_USER}/so101_test`를 원하는 로컬 폴더 이름으로 변경하세요. 예: `--dataset.repo_id=juxi/so101_test`. 데이터는 시스템 홈 디렉터리의 `~/.cache/huggingface/lerobot`에 저장됩니다.
+- 에피소드 녹화 과정 중 언제든지 오른쪽 화살표 →를 누르면 조기 종료하고 리셋 상태로 들어갑니다. 마찬가지로 리셋 과정에서도 조기 종료하고 다음 에피소드 녹화로 넘어갈 수 있습니다.
+- 녹화나 리셋 도중 이전 단계로 돌아가려면 언제든지 왼쪽 화살표 ←를 눌러 현재 에피소드를 조기 종료하고 다시 녹화하세요.
+- 녹화 과정 중 언제든지 ESC 키를 누르면 세션을 조기 종료하고 곧바로 영상 인코딩 및 데이터셋 업로드로 진행합니다.
+- 동일한 명령을 다시 실행하면서 `--resume=true`를 추가하면 녹화를 재개할 수 있습니다. ⚠️ **중요 사항**: 재개할 때 `--dataset.num_episodes`는 추가로 녹화할 에피소드 수로 설정하세요(데이터셋의 전체 목표 에피소드 수가 아닙니다). 처음부터 녹화하려면 데이터셋 디렉터리를 수동으로 삭제하세요.
+- Linux에서 데이터 녹화 중 왼쪽/오른쪽 화살표 키와 ESC 키가 작동하지 않으면 $DISPLAY 환경 변수가 설정되어 있는지 확인하세요. [pynput 제한 사항](https://pynput.readthedocs.io/en/latest/limitations.html#linux)을 참고하세요.
+
+키를 눌러도 키보드가 반응하지 않으면 pynput 버전을 다운그레이드해야 할 수 있습니다. 예를 들어 1.6.8 버전을 설치하세요.
+
+`pip install pynput==1.6.8`
 
 ### 데이터셋 시각화
 
@@ -506,14 +535,14 @@ lerobot-train \
 
 ```Python
 lerobot-train \
-  *--dataset.repo_id*=juxi/test \
-  *--policy.type*=act \
-  *--output_dir*=outputs/train/act_so101_test \
-  *--job_name*=act_so101_test \
-  *--policy.device*=cuda \
-  *--wandb.enable*=false \
-  *--policy.push_to_hub*=false\
-  *--steps*=300000
+  --dataset.repo_id=juxi/test \
+  --policy.type=act \
+  --output_dir=outputs/train/act_so101_test \
+  --job_name=act_so101_test \
+  --policy.device=cuda \
+  --wandb.enable=false \
+  --policy.push_to_hub=false\
+  --steps=300000
 ```
 
 명령 설명

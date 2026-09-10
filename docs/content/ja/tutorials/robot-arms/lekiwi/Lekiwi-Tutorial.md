@@ -84,9 +84,9 @@ JUXI はハードウェア自体の品質のみに責任を負います。チュ
 ### 1. [Miniconda のインストール](https://docs.anaconda.com/miniconda/install/#quick-command-line-install):
 
 ```Python
-mkdir *-p* ~/miniconda3
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh *-O* ~/miniconda3/miniconda.sh
-bash ~/miniconda3/miniconda.sh *-b* *-u* *-p* ~/miniconda3
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 rm ~/miniconda3/miniconda.sh
 ```
 
@@ -135,7 +135,7 @@ conda install ffmpeg -c conda-forge
 
 ```Bash
 cd ~/lerobot && pip install --no-binary=av -e ".[feetech]"
-pip install *-e* ".[lekiwi]"
+pip install -e ".[lekiwi]"
 ```
 
 ### 7. 接続時間の設定
@@ -167,7 +167,7 @@ connection_time_s: int = 7200 # 也就是2小时
 ### 3. LeRobot 用の新しい Conda 環境を作成して有効化
 
 ```Bash
-conda create *-y* *-n* lerobot *python*=3.10
+conda create -y -n lerobot python=3.10
 ```
 
 その後、Conda 環境を有効化します（LeRobot を使用するたびにシェルを開くたびに実行が必要です!）:
@@ -205,7 +205,7 @@ conda install ffmpeg -c conda-forge
 
 ```Bash
 cd ~/lerobot && pip install --no-binary=av -e ".[feetech]"
-pip install *-e* ".[lekiwi]"
+pip install -e ".[lekiwi]"
 ```
 
 # モーターの設定
@@ -239,8 +239,8 @@ sudo chmod 666 /dev/ttyACM1
 
 ```Bash
 lerobot-setup-motors \
-    *--robot.type*=lekiwi \
-    *--robot.port*=/dev/tty.usbmodem58760431551 # <- paste here the port found at previous step
+    --robot.type=lekiwi \
+    --robot.port=/dev/tty.usbmodem58760431551 # <- paste here the port found at previous step
 ```
 
 ![2.モーターの設定（完成品はスキップ可能） – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
@@ -421,7 +421,7 @@ python examples/lekiwi/teleoperate.py
 設定ファイルに正しいラズベリーパイ IP アドレスが設定されていることを確認します。IP アドレスを確認するには、次のコマンドを実行します（Pi のコマンドラインで）:
 
 ```Bash
-hostname *-I*
+hostname -I
 ```
 
 ### 2.ノートPC/PC が Pi にアクセスできるか確認
@@ -480,7 +480,7 @@ hf auth login
 Hugging Face のリポジトリ名を変数に保存して、以下のコマンドを実行します:
 
 ```Bash
-*hf auth whoami*
+hf auth whoami
 ```
 
 その後、ノートPC で以下のコマンドを実行して 2 ラウンドを記録し、データセットを hub にアップロードします:

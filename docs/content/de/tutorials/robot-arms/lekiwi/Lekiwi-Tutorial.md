@@ -96,9 +96,9 @@ Auf Ihrem Raspberry Pi:
 ### 1. [Miniconda installieren](https://docs.anaconda.com/miniconda/install/#quick-command-line-install):
 
 ```Python
-mkdir *-p* ~/miniconda3
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh *-O* ~/miniconda3/miniconda.sh
-bash ~/miniconda3/miniconda.sh *-b* *-u* *-p* ~/miniconda3
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 rm ~/miniconda3/miniconda.sh
 ```
 
@@ -148,7 +148,7 @@ Bei folgendem Fehler hilft der obige Befehl ebenfalls.
 
 ```Bash
 cd ~/lerobot && pip install --no-binary=av -e ".[feetech]"
-pip install *-e* ".[lekiwi]"
+pip install -e ".[lekiwi]"
 ```
 
 ### 7. Verbindungszeit einstellen
@@ -181,7 +181,7 @@ In Ihrer Shell einfügen: `source ~/.bashrc` bzw. für Mac: `source ~/.bash_prof
 ### 3. Conda-Umgebung für LeRobot erstellen und aktivieren
 
 ```Bash
-conda create *-y* *-n* lerobot *python*=3.10
+conda create -y -n lerobot python=3.10
 ```
 
 Dann Conda-Umgebung aktivieren (bei jeder Nutzung von LeRobot nötig!):
@@ -220,7 +220,7 @@ Bei folgendem Fehler hilft der obige Befehl ebenfalls.
 
 ```Bash
 cd ~/lerobot && pip install --no-binary=av -e ".[feetech]"
-pip install *-e* ".[lekiwi]"
+pip install -e ".[lekiwi]"
 ```
 
 # Motoren konfigurieren
@@ -254,8 +254,8 @@ Jeden Motor des Chassis nacheinander einstecken und das folgende Skript ausführ
 
 ```Bash
 lerobot-setup-motors \
-    *--robot.type*=lekiwi \
-    *--robot.port*=/dev/tty.usbmodem58760431551 # <- paste here the port found at previous step
+    --robot.type=lekiwi \
+    --robot.port=/dev/tty.usbmodem58760431551 # <- paste here the port found at previous step
 ```
 
 ![2. Motoren konfigurieren beim fertigen Produkt überspringbar – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
@@ -437,7 +437,7 @@ Bei Verbindungsproblemen mit dem Mobilitätsroboter SO101 wie folgt vorgehen.
 Sicherstellen, dass die richtige Raspberry-Pi-IP im Konfigurationsfile steht. IP abfragen (in der Pi-Konsole):
 
 ```Bash
-hostname *-I*
+hostname -I
 ```
 
 ### 2. Prüfen, ob der Laptop/PC den Pi erreicht
@@ -499,7 +499,7 @@ hf auth login
 Speichern Sie den Namen Ihres Hugging-Face-Repositorys in einer Variablen, um den folgenden Befehl auszuführen:
 
 ```Bash
-*hf auth whoami*
+hf auth whoami
 ```
 
 Führen Sie dann auf Ihrem Laptop den folgenden Befehl aus, um 2 Runden aufzuzeichnen und den Datensatz in den Hub hochzuladen:
