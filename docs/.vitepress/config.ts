@@ -118,10 +118,10 @@ const zhCN = {
     lightModeSwitchTitle: '切换到浅色模式',
     darkModeSwitchTitle: '切换到深色模式',
     lastUpdated: {
-      text: '最后更新于',
+      text: '最后更新于 (UTC)',
       // forceLocale:日期格式跟随页面语言(默认跟随访客系统区域,英文页会显示中文格式)
       // timeZone: UTC 统一,timeZoneName 显式标注
-      formatOptions: { forceLocale: true, timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZoneName: 'short' },
+      formatOptions: { forceLocale: true, timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' },
     },
     nav: [
       { text: '教程', link: '/zh-hans/tutorials/', activeMatch: '/zh-hans/tutorials/' },
@@ -351,10 +351,10 @@ const en = {
     lightModeSwitchTitle: 'Switch to light theme',
     darkModeSwitchTitle: 'Switch to dark theme',
     lastUpdated: {
-      text: 'Last updated',
+      text: 'Last updated (UTC)',
       // forceLocale:日期格式跟随页面语言(默认跟随访客系统区域,英文页会显示中文格式)
       // timeZone: UTC 统一,timeZoneName 显式标注
-      formatOptions: { forceLocale: true, timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZoneName: 'short' },
+      formatOptions: { forceLocale: true, timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' },
     },
     nav: [
       { text: 'Tutorials', link: '/tutorials/', activeMatch: '/tutorials/' },
@@ -584,10 +584,10 @@ const zhHK = {
     lightModeSwitchTitle: '切換到淺色模式',
     darkModeSwitchTitle: '切換到深色模式',
     lastUpdated: {
-      text: '最後更新於',
+      text: '最後更新於 (UTC)',
       // forceLocale:日期格式跟随页面语言(默认跟随访客系统区域,英文页会显示中文格式)
       // timeZone: UTC 统一,timeZoneName 显式标注
-      formatOptions: { forceLocale: true, timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZoneName: 'short' },
+      formatOptions: { forceLocale: true, timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' },
     },
     nav: [
       { text: '教程', link: '/zh-hant/tutorials/', activeMatch: '/zh-hant/tutorials/' },
@@ -883,10 +883,10 @@ export default defineConfig({
       lightModeSwitchTitle: 'ライトモードに切り替え',
       darkModeSwitchTitle: 'ダークモードに切り替え',
       lastUpdated: {
-        text: '最終更新',
+        text: '最終更新 (UTC)',
         // forceLocale:日期格式跟随页面语言(默认跟随访客系统区域,英文页会显示中文格式)
         // timeZone: UTC 统一,timeZoneName 显式标注
-        formatOptions: { forceLocale: true, timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZoneName: 'short' },
+        formatOptions: { forceLocale: true, timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' },
       },
       nav: [
         { text: 'チュートリアル', link: '/ja/tutorials/', activeMatch: '/ja/tutorials/' },
@@ -1079,10 +1079,10 @@ export default defineConfig({
       lightModeSwitchTitle: '라이트 모드로 전환',
       darkModeSwitchTitle: '다크 모드로 전환',
       lastUpdated: {
-        text: '마지막 업데이트',
+        text: '마지막 업데이트 (UTC)',
         // forceLocale:日期格式跟随页面语言(默认跟随访客系统区域,英文页会显示中文格式)
         // timeZone: UTC 统一,timeZoneName 显式标注
-        formatOptions: { forceLocale: true, timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZoneName: 'short' },
+        formatOptions: { forceLocale: true, timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' },
       },
       nav: [
         { text: '튜토리얼', link: '/ko/tutorials/', activeMatch: '/ko/tutorials/' },
@@ -1275,10 +1275,10 @@ export default defineConfig({
       lightModeSwitchTitle: 'Zum hellen Design wechseln',
       darkModeSwitchTitle: 'Zum dunklen Design wechseln',
       lastUpdated: {
-        text: 'Zuletzt aktualisiert',
+        text: 'Zuletzt aktualisiert (UTC)',
         // forceLocale:日期格式跟随页面语言(默认跟随访客系统区域,英文页会显示中文格式)
         // timeZone: UTC 统一,timeZoneName 显式标注
-        formatOptions: { forceLocale: true, timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZoneName: 'short' },
+        formatOptions: { forceLocale: true, timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' },
       },
       nav: [
         { text: 'Tutorials', link: '/de/tutorials/', activeMatch: '/de/tutorials/' },
@@ -1471,10 +1471,10 @@ export default defineConfig({
       lightModeSwitchTitle: 'Passer au thème clair',
       darkModeSwitchTitle: 'Passer au thème sombre',
       lastUpdated: {
-        text: 'Dernière mise à jour',
+        text: 'Dernière mise à jour (UTC)',
         // forceLocale:日期格式跟随页面语言(默认跟随访客系统区域,英文页会显示中文格式)
         // timeZone: UTC 统一,timeZoneName 显式标注
-        formatOptions: { forceLocale: true, timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZoneName: 'short' },
+        formatOptions: { forceLocale: true, timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' },
       },
       nav: [
         { text: 'Tutoriels', link: '/fr/tutorials/', activeMatch: '/fr/tutorials/' },
@@ -1667,10 +1667,10 @@ export default defineConfig({
       lightModeSwitchTitle: 'Cambiar al tema claro',
       darkModeSwitchTitle: 'Cambiar al tema oscuro',
       lastUpdated: {
-        text: 'Última actualización',
+        text: 'Última actualización (UTC)',
         // forceLocale:日期格式跟随页面语言(默认跟随访客系统区域,英文页会显示中文格式)
         // timeZone: UTC 统一,timeZoneName 显式标注
-        formatOptions: { forceLocale: true, timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZoneName: 'short' },
+        formatOptions: { forceLocale: true, timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' },
       },
       nav: [
         { text: 'Tutoriales', link: '/es/tutorials/', activeMatch: '/es/tutorials/' },
@@ -1863,10 +1863,10 @@ export default defineConfig({
       lightModeSwitchTitle: 'Passa al tema chiaro',
       darkModeSwitchTitle: 'Passa al tema scuro',
       lastUpdated: {
-        text: 'Ultimo aggiornamento',
+        text: 'Ultimo aggiornamento (UTC)',
         // forceLocale:日期格式跟随页面语言(默认跟随访客系统区域,英文页会显示中文格式)
         // timeZone: UTC 统一,timeZoneName 显式标注
-        formatOptions: { forceLocale: true, timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZoneName: 'short' },
+        formatOptions: { forceLocale: true, timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' },
       },
       nav: [
         { text: 'Tutorial', link: '/it/tutorials/', activeMatch: '/it/tutorials/' },
@@ -2059,10 +2059,10 @@ export default defineConfig({
       lightModeSwitchTitle: 'Mudar para o tema claro',
       darkModeSwitchTitle: 'Mudar para o tema escuro',
       lastUpdated: {
-        text: 'Última atualização',
+        text: 'Última atualização (UTC)',
         // forceLocale:日期格式跟随页面语言(默认跟随访客系统区域,英文页会显示中文格式)
         // timeZone: UTC 统一,timeZoneName 显式标注
-        formatOptions: { forceLocale: true, timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZoneName: 'short' },
+        formatOptions: { forceLocale: true, timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' },
       },
       nav: [
         { text: 'Tutoriais', link: '/pt-br/tutorials/', activeMatch: '/pt-br/tutorials/' },
@@ -2278,10 +2278,10 @@ export default defineConfig({
       lightModeSwitchTitle: 'Mudar para o tema claro',
       darkModeSwitchTitle: 'Mudar para o tema escuro',
       lastUpdated: {
-        text: 'Última atualização',
+        text: 'Última atualização (UTC)',
         // forceLocale:日期格式跟随页面语言(默认跟随访客系统区域,英文页会显示中文格式)
         // timeZone: UTC 统一,timeZoneName 显式标注
-        formatOptions: { forceLocale: true, timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZoneName: 'short' },
+        formatOptions: { forceLocale: true, timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' },
       },
       nav: [
         { text: 'Tutoriais', link: '/pt-pt/tutorials/', activeMatch: '/pt-pt/tutorials/' },
