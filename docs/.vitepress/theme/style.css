@@ -9,10 +9,21 @@
   --vp-layout-top-height: 36px;
 }
 :root {
-  --vp-c-brand-soft: rgba(16, 185, 129, 0.08);
-  --vp-c-brand-mute: rgba(16, 185, 129, 0.16);
+  --vp-c-brand-1: #24467c;
+  --vp-c-brand-2: #1d3a68;
+  --vp-c-brand-3: #162e52;
+  --vp-c-brand-soft: rgba(36, 70, 124, 0.08);
+  --vp-c-brand-mute: rgba(36, 70, 124, 0.16);
   /* 导航栏高度:默认 64px 调整为更紧凑的 56px */
   --vp-nav-height: 56px;
+}
+
+.dark {
+  --vp-c-brand-1: #7ea6e0;
+  --vp-c-brand-2: #9dbcec;
+  --vp-c-brand-3: #5c86c4;
+  --vp-c-brand-soft: rgba(126, 166, 224, 0.14);
+  --vp-c-brand-mute: rgba(126, 166, 224, 0.22);
 }
 
 /* ---- 导航/侧边栏背景统一使用 CSS 变量(适配暗色模式) ---- */
@@ -220,4 +231,80 @@
   #reading-bar {
     transition: none;
   }
+}
+
+/* ============================================
+   首页元素集中样式(2026-09 暗蓝主题)
+   从 11 份 index.md 迁移而来:页面 <style> 为动态注入,
+   同特异性时晚于全局样式生效;html 前缀提升特异性保证覆盖
+   ============================================ */
+
+/* ---- 巨型品牌字渐变 ---- */
+html .brand-wiki {
+  background: linear-gradient(180deg, #6f9bd8 0%, #24467c 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.dark .brand-wiki {
+  background: linear-gradient(180deg, #8ab2e8 0%, #3d6aa8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* ---- Hero 副标题渐变字 ---- */
+html .hero-subtitle {
+  background: linear-gradient(92deg, #1e4a7a 0%, #3a7bd5 55%, #2b6cb0 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.dark .hero-subtitle {
+  background: linear-gradient(92deg, #5b87c9 0%, #7ea6e0 55%, #4a90d9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* ---- 主按钮(唯一实底,海军蓝) ---- */
+html .hero-btn.primary {
+  background-color: #1e3a5f;
+  border-color: #1e3a5f;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+html .hero-btn.primary:hover {
+  background-color: #152a45;
+  border-color: #152a45;
+  color: #ffffff;
+}
+
+.dark .hero-btn.primary {
+  background-color: #2c5282;
+  border-color: #2c5282;
+}
+
+.dark .hero-btn.primary:hover {
+  background-color: #35619a;
+  border-color: #35619a;
+}
+
+/* ---- 次级按钮统一(淘宝/商城/GitHub 同款描边) ---- */
+html .hero-btn.taobao,
+html .hero-btn.shop,
+html .hero-btn.secondary {
+  background-color: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-gutter);
+  color: var(--vp-c-text-1);
+  box-shadow: none;
+}
+
+html .hero-btn.taobao:hover,
+html .hero-btn.shop:hover,
+html .hero-btn.secondary:hover {
+  border-color: var(--vp-c-brand-1);
+  color: var(--vp-c-brand-1);
+  background-color: var(--vp-c-brand-soft);
 }
