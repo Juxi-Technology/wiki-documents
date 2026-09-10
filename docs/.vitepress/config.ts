@@ -111,6 +111,9 @@ const zhCN = {
   themeConfig: {
     siteTitle: '钜犀科技 Wiki',
     docFooter: { prev: '上一篇', next: '下一篇' },
+    sidebarMenuLabel: '菜单',
+    returnToTopLabel: '回到顶部',
+    outline: { level: [2, 3], label: '本页目录' },
     lastUpdated: { text: '最后更新于' },
     nav: [
       { text: '教程', link: '/zh-hans/tutorials/', activeMatch: '/zh-hans/tutorials/' },
@@ -333,6 +336,9 @@ const en = {
   themeConfig: {
     siteTitle: 'Juxi Technology Wiki',
     docFooter: { prev: 'Previous', next: 'Next' },
+    sidebarMenuLabel: 'Menu',
+    returnToTopLabel: 'Return to top',
+    outline: { level: [2, 3], label: 'On this page' },
     lastUpdated: { text: 'Last updated' },
     nav: [
       { text: 'Tutorials', link: '/tutorials/', activeMatch: '/tutorials/' },
@@ -555,6 +561,9 @@ const zhHK = {
   themeConfig: {
     siteTitle: '鉅犀科技 Wiki',
     docFooter: { prev: '上一篇', next: '下一篇' },
+    sidebarMenuLabel: '選單',
+    returnToTopLabel: '回到頂部',
+    outline: { level: [2, 3], label: '本頁目錄' },
     lastUpdated: { text: '最後更新於' },
     nav: [
       { text: '教程', link: '/zh-hant/tutorials/', activeMatch: '/zh-hant/tutorials/' },
@@ -843,6 +852,9 @@ export default defineConfig({
     themeConfig: {
       siteTitle: 'Juxi Technology Wiki',
       docFooter: { prev: '前へ', next: '次へ' },
+      sidebarMenuLabel: 'メニュー',
+      returnToTopLabel: 'トップへ戻る',
+      outline: { level: [2, 3], label: '目次' },
       lastUpdated: { text: '最終更新' },
       nav: [
         { text: 'チュートリアル', link: '/ja/tutorials/', activeMatch: '/ja/tutorials/' },
@@ -1028,6 +1040,9 @@ export default defineConfig({
     themeConfig: {
       siteTitle: 'Juxi Technology Wiki',
       docFooter: { prev: '이전', next: '다음' },
+      sidebarMenuLabel: '메뉴',
+      returnToTopLabel: '맨 위로',
+      outline: { level: [2, 3], label: '목차' },
       lastUpdated: { text: '마지막 업데이트' },
       nav: [
         { text: '튜토리얼', link: '/ko/tutorials/', activeMatch: '/ko/tutorials/' },
@@ -1213,6 +1228,9 @@ export default defineConfig({
     themeConfig: {
       siteTitle: 'Juxi Technology Wiki',
       docFooter: { prev: 'Zurück', next: 'Weiter' },
+      sidebarMenuLabel: 'Menü',
+      returnToTopLabel: 'Zurück nach oben',
+      outline: { level: [2, 3], label: 'Auf dieser Seite' },
       lastUpdated: { text: 'Zuletzt aktualisiert' },
       nav: [
         { text: 'Tutorials', link: '/de/tutorials/', activeMatch: '/de/tutorials/' },
@@ -1398,6 +1416,9 @@ export default defineConfig({
     themeConfig: {
       siteTitle: 'Juxi Technology Wiki',
       docFooter: { prev: 'Précédent', next: 'Suivant' },
+      sidebarMenuLabel: 'Menu',
+      returnToTopLabel: 'Retour en haut',
+      outline: { level: [2, 3], label: 'Sur cette page' },
       lastUpdated: { text: 'Dernière mise à jour' },
       nav: [
         { text: 'Tutoriels', link: '/fr/tutorials/', activeMatch: '/fr/tutorials/' },
@@ -1583,6 +1604,9 @@ export default defineConfig({
     themeConfig: {
       siteTitle: 'Juxi Technology Wiki',
       docFooter: { prev: 'Anterior', next: 'Siguiente' },
+      sidebarMenuLabel: 'Menú',
+      returnToTopLabel: 'Volver arriba',
+      outline: { level: [2, 3], label: 'En esta página' },
       lastUpdated: { text: 'Última actualización' },
       nav: [
         { text: 'Tutoriales', link: '/es/tutorials/', activeMatch: '/es/tutorials/' },
@@ -1768,6 +1792,9 @@ export default defineConfig({
     themeConfig: {
       siteTitle: 'Juxi Technology Wiki',
       docFooter: { prev: 'Precedente', next: 'Successivo' },
+      sidebarMenuLabel: 'Menu',
+      returnToTopLabel: 'Torna su',
+      outline: { level: [2, 3], label: 'In questa pagina' },
       lastUpdated: { text: 'Ultimo aggiornamento' },
       nav: [
         { text: 'Tutorial', link: '/it/tutorials/', activeMatch: '/it/tutorials/' },
@@ -1953,6 +1980,9 @@ export default defineConfig({
     themeConfig: {
       siteTitle: 'Juxi Technology Wiki',
       docFooter: { prev: 'Anterior', next: 'Próximo' },
+      sidebarMenuLabel: 'Menu',
+      returnToTopLabel: 'Voltar ao topo',
+      outline: { level: [2, 3], label: 'Nesta página' },
       lastUpdated: { text: 'Última atualização' },
       nav: [
         { text: 'Tutoriais', link: '/pt-br/tutorials/', activeMatch: '/pt-br/tutorials/' },
@@ -2161,6 +2191,9 @@ export default defineConfig({
     themeConfig: {
       siteTitle: 'Juxi Technology Wiki',
       docFooter: { prev: 'Anterior', next: 'Próximo' },
+      sidebarMenuLabel: 'Menu',
+      returnToTopLabel: 'Voltar ao topo',
+      outline: { level: [2, 3], label: 'Nesta página' },
       lastUpdated: { text: 'Última atualização' },
       nav: [
         { text: 'Tutoriais', link: '/pt-pt/tutorials/', activeMatch: '/pt-pt/tutorials/' },
