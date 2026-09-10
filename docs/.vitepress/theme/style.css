@@ -296,7 +296,7 @@ html .hero-btn.taobao,
 html .hero-btn.shop,
 html .hero-btn.secondary {
   background-color: var(--vp-c-bg-soft);
-  border: 1px solid var(--vp-c-gutter);
+  border: 1px solid var(--vp-c-divider);
   color: var(--vp-c-text-1);
   box-shadow: none;
 }
@@ -307,4 +307,52 @@ html .hero-btn.secondary:hover {
   border-color: var(--vp-c-brand-1);
   color: var(--vp-c-brand-1);
   background-color: var(--vp-c-brand-soft);
+}
+
+/* ============================================
+   阅读体验(2026-09 暗蓝主题)
+   ============================================ */
+
+/* ---- 引用块:品牌色竖线 + 柔和底 ---- */
+.vp-doc blockquote {
+  border-left: 3px solid var(--vp-c-brand-1);
+  border-radius: 0 8px 8px 0;
+  background: var(--vp-c-brand-soft);
+  padding: 12px 16px;
+}
+
+.vp-doc blockquote > p {
+  margin: 8px 0;
+}
+
+/* ---- 表格:表头品牌浅底(斑马纹官方已有 bg-soft,不重复) ---- */
+.vp-doc table th {
+  background-color: var(--vp-c-brand-soft);
+}
+
+/* ---- 正文图片:圆角 + 细边框(divider 而非 gutter:后者暗色下是纯黑) ---- */
+.vp-doc img {
+  border-radius: 8px;
+  border: 1px solid var(--vp-c-divider);
+}
+
+/* ---- 外链标记(先做后评) ---- */
+.vp-doc a[href^='http']::after {
+  content: '↗';
+  display: inline-block;
+  font-size: 0.8em;
+  margin-left: 2px;
+  opacity: 0.5;
+}
+
+.vp-doc a[href^='http']:hover::after {
+  opacity: 1;
+  color: var(--vp-c-brand-1);
+}
+
+.vp-doc a:has(img)::after,
+.vp-doc a.header-anchor::after,
+.vp-doc a.hero-btn::after,
+.vp-doc a.cs-link::after {
+  content: none;
 }
