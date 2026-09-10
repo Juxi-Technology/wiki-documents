@@ -157,6 +157,6 @@ JUXI bietet eine Windows-Software, die Herzfrequenz- und SpO2-Kurven in Echtzeit
 
 ## Technischer Support
 
-- E-Mail：support@juxitech.com
-- Offizielle Website：[www.juxitech.com](https://www.juxitech.com)
-- Open-Source-Repository：[GitHub](https://github.com/Juxi-Technology/JUXI_HeartRate_SPO2)
+- E-Mail:support@juxitech.com
+- Offizielle Website:[www.juxitech.com](https://www.juxitech.com)
+- Open-Source-Repository:[GitHub](https://github.com/Juxi-Technology/JUXI_HeartRate_SPO2)

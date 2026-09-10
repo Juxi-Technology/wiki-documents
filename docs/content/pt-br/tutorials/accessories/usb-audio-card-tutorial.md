@@ -16,7 +16,7 @@ description: "Tutorial da placa de som USB sem driver da Juxi Technology — sof
 
 - Atualize o sistema e instale as ferramentas:
 
-    - Execute：`sudo apt update && sudo apt full-upgrade`
+    - Execute:`sudo apt update && sudo apt full-upgrade`
 
     - Instale o ALSA:`sudo apt install alsa-base alsa-utils`
 

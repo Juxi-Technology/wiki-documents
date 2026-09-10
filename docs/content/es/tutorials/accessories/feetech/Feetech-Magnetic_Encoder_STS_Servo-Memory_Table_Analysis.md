@@ -33,21 +33,21 @@ Si una dirección de función utiliza datos de dos bytes, el byte bajo está en 
 
 - Bits / peso: descripción
 
-- BIT0（1）: fase de dirección de accionamiento; (0) directo, (1) inverso
+- BIT0(1): fase de dirección de accionamiento; (0) directo, (1) inverso
 
-- BIT1（2）: modo de puente de accionamiento; (0) sin escobillas, (1) con escobillas, efectivo tras reiniciar
+- BIT1(2): modo de puente de accionamiento; (0) sin escobillas, (1) con escobillas, efectivo tras reiniciar
 
-- BIT2（4）: unidad de velocidad; (0) 0.732 RPM, (1) 0.0146 RPM
+- BIT2(4): unidad de velocidad; (0) 0.732 RPM, (1) 0.0146 RPM
 
-- BIT3（8）: modo de velocidad; (0) velocidad 0 = parada, (1) velocidad 0 = velocidad máxima
+- BIT3(8): modo de velocidad; (0) velocidad 0 = parada, (1) velocidad 0 = velocidad máxima
 
-- BIT4（16）: modo de retroalimentación de ángulo; (0) retroalimentación de ángulo de una vuelta, (1) retroalimentación de ángulo completo
+- BIT4(16): modo de retroalimentación de ángulo; (0) retroalimentación de ángulo de una vuelta, (1) retroalimentación de ángulo completo
 
-- BIT5（32）: configuración del puente de accionamiento / muestreo de voltaje; (0) puente H independiente / muestreo 1K de alto voltaje, (1) puente H integrado / muestreo 1.5K de bajo voltaje / sin retroalimentación de corriente
+- BIT5(32): configuración del puente de accionamiento / muestreo de voltaje; (0) puente H independiente / muestreo 1K de alto voltaje, (1) puente H integrado / muestreo 1.5K de bajo voltaje / sin retroalimentación de corriente
 
-- BIT6（64）: frecuencia PWM; (0) 24 kHz, (1) 16 kHz
+- BIT6(64): frecuencia PWM; (0) 24 kHz, (1) 16 kHz
 
-- BIT7（128）: fase de dirección de la retroalimentación de posición; (0) directo, (1) inverso
+- BIT7(128): fase de dirección de la retroalimentación de posición; (0) directo, (1) inverso
 
 Si se configuran varios bits simultáneamente, el valor de fase del servo es la suma de los valores de los bits. Ejemplo: fase original 0, servo funcionando en sentido inverso, fase = 128+1=129;
 
@@ -57,21 +57,21 @@ Estado del servo: 0 = normal, 1 = anormal
 
 - Bits / peso: descripción
 
-- BIT0（1）: estado de voltaje
+- BIT0(1): estado de voltaje
 
-- BIT1（2）: estado del encoder magnético
+- BIT1(2): estado del encoder magnético
 
-- BIT2（4）: estado de temperatura
+- BIT2(4): estado de temperatura
 
-- BIT3（8）: estado de corriente
+- BIT3(8): estado de corriente
 
-- BIT4（16）: ----
+- BIT4(16): ----
 
-- BIT5（32）: estado de carga
+- BIT5(32): estado de carga
 
-- BIT6（64）: ----
+- BIT6(64): ----
 
-- BIT7（128）: ----
+- BIT7(128): ----
 
 Si hay varios estados simultáneos, el valor de estado del servo es la suma de los valores de los bits. Ejemplo: sobre/subtensión y sobrecalentamiento del servo, estado = 4+1=5;
 
@@ -81,21 +81,21 @@ Condiciones de descarga: 0 = desactivado, 1 = activado
 
 - Bits / peso: descripción
 
-- BIT0（1）: protección de voltaje
+- BIT0(1): protección de voltaje
 
-- BIT1（2）: protección del encoder magnético
+- BIT1(2): protección del encoder magnético
 
-- BIT2（4）: protección contra sobrecalentamiento
+- BIT2(4): protección contra sobrecalentamiento
 
-- BIT3（8）: protección contra sobrecorriente
+- BIT3(8): protección contra sobrecorriente
 
-- BIT4（16）: ----
+- BIT4(16): ----
 
-- BIT5（32）: sobrecarga de carga
+- BIT5(32): sobrecarga de carga
 
-- BIT6（64）: ----
+- BIT6(64): ----
 
-- BIT7（128）: ----
+- BIT7(128): ----
 
 Si se configuran varios bits simultáneamente, el valor de descarga es la suma de los valores de los bits. Ejemplo: protección de voltaje y protección de sobrecalentamiento activadas, descarga = 4+1=5;
 
@@ -105,20 +105,20 @@ Condiciones de alarma LED: 0 = desactivada, 1 = activada
 
 - Bits / peso: descripción
 
-- BIT0（1）: alarma de voltaje
+- BIT0(1): alarma de voltaje
 
-- BIT1（2）: alarma del encoder magnético
+- BIT1(2): alarma del encoder magnético
 
-- BIT2（4）: alarma de sobrecalentamiento
+- BIT2(4): alarma de sobrecalentamiento
 
-- BIT3（8）: alarma de sobrecorriente
+- BIT3(8): alarma de sobrecorriente
 
-- BIT4（16）: ----
+- BIT4(16): ----
 
-- BIT5（32）: alarma de sobrecarga
+- BIT5(32): alarma de sobrecarga
 
-- BIT6（64）: ----
+- BIT6(64): ----
 
-- BIT7（128）: ----
+- BIT7(128): ----
 
 Si se configuran varios bits simultáneamente, el valor de alarma LED es la suma de los valores de los bits. Ejemplo: alarma de voltaje y alarma de sobrecalentamiento activadas, alarma = 4+1=5;

@@ -119,5 +119,5 @@ Strom aus → REC- (oder BOOT-) Taste gedrückt Strom/Type-C anschließen → `l
 
 ## Technischer Support
 
-- 📧 E-Mail：support@juxitech.com
-- 🌐 Offizielle Website：[www.juxitech.com](https://www.juxitech.com)
+- 📧 E-Mail:support@juxitech.com
+- 🌐 Offizielle Website:[www.juxitech.com](https://www.juxitech.com)

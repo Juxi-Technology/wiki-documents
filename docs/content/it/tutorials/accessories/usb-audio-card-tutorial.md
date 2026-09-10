@@ -24,7 +24,7 @@ description: "Tutorial della scheda audio USB senza driver JUXI: software di tes
 
     - Elencare i dispositivi audio: `aplay -l`
 
-    - Vedere i dispositivi audio PCI/USB: `lspci | grep -i audio`、`lsusb`
+    - Vedere i dispositivi audio PCI/USB: `lspci | grep -i audio`,`lsusb`
 
 - Configurazione e verifica di base:
 

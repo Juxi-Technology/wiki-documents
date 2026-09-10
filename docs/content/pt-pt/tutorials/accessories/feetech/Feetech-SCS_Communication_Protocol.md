@@ -249,7 +249,7 @@ Response Frame：None
 
 - Função: usada para controlar vários servos simultaneamente.
 
-- ID：0xFE
+- ID:0xFE
 
 - Comprimento: (L+1)\*n+4 (L: comprimento dos dados enviados a cada servo, n: número de servos)
 
@@ -302,7 +302,7 @@ Checksum：58
 
 - Função: usada para consultar vários servos simultaneamente.
 
-- ID：0xFE
+- ID:0xFE
 
 - Comprimento: n+4 (n é o número de servos)
 

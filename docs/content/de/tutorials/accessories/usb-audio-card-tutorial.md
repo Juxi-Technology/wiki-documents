@@ -24,7 +24,7 @@ description: "JUXI USB-Soundkarte ohne Treiber: Testsoftware, Befehle und Audio-
 
     - Audiogeräte auflisten: `aplay -l`
 
-    - PCI/USB-Audiogeräte anzeigen: `lspci | grep -i audio`、`lsusb`
+    - PCI/USB-Audiogeräte anzeigen: `lspci | grep -i audio`,`lsusb`
 
 - Grundkonfiguration und Überprüfung:
 

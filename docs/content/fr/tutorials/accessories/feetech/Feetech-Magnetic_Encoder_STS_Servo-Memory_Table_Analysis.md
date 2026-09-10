@@ -33,21 +33,21 @@ Si une adresse de fonction utilise des données sur deux octets, l'octet de poid
 
 - Bits / poids : description
 
-- BIT0（1）: phase du sens d'entraînement ; (0) direct, (1) inverse
+- BIT0(1): phase du sens d'entraînement ; (0) direct, (1) inverse
 
-- BIT1（2）: mode de pont d'entraînement ; (0) sans balais, (1) avec balais, effectif après redémarrage
+- BIT1(2): mode de pont d'entraînement ; (0) sans balais, (1) avec balais, effectif après redémarrage
 
-- BIT2（4）: unité de vitesse ; (0) 0,732 tr/min, (1) 0,0146 tr/min
+- BIT2(4): unité de vitesse ; (0) 0,732 tr/min, (1) 0,0146 tr/min
 
-- BIT3（8）: mode de vitesse ; (0) vitesse 0 = arrêt, (1) vitesse 0 = vitesse maximale
+- BIT3(8): mode de vitesse ; (0) vitesse 0 = arrêt, (1) vitesse 0 = vitesse maximale
 
-- BIT4（16）: mode de retour d'angle ; (0) retour d'angle sur un tour, (1) retour d'angle complet
+- BIT4(16): mode de retour d'angle ; (0) retour d'angle sur un tour, (1) retour d'angle complet
 
-- BIT5（32）: configuration du pont d'entraînement / échantillonnage de tension ; (0) pont H indépendant / échantillonnage 1K haute tension, (1) pont H intégré / échantillonnage 1,5K basse tension / sans retour de courant
+- BIT5(32): configuration du pont d'entraînement / échantillonnage de tension ; (0) pont H indépendant / échantillonnage 1K haute tension, (1) pont H intégré / échantillonnage 1,5K basse tension / sans retour de courant
 
-- BIT6（64）: fréquence PWM ; (0) 24 kHz, (1) 16 kHz
+- BIT6(64): fréquence PWM ; (0) 24 kHz, (1) 16 kHz
 
-- BIT7（128）: phase de sens du retour de position ; (0) direct, (1) inverse
+- BIT7(128): phase de sens du retour de position ; (0) direct, (1) inverse
 
 Si plusieurs bits sont définis simultanément, la valeur de phase du servo est la somme des valeurs des bits. Exemple : phase initiale 0, servo fonctionne en sens inverse, phase = 128+1=129 ;
 
@@ -57,21 +57,21 @@ Si plusieurs bits sont définis simultanément, la valeur de phase du servo est 
 
 - Bits / poids : description
 
-- BIT0（1）: état de tension
+- BIT0(1): état de tension
 
-- BIT1（2）: état de l'encodeur magnétique
+- BIT1(2): état de l'encodeur magnétique
 
-- BIT2（4）: état de température
+- BIT2(4): état de température
 
-- BIT3（8）: état de courant
+- BIT3(8): état de courant
 
-- BIT4（16）: ----
+- BIT4(16): ----
 
-- BIT5（32）: état de charge
+- BIT5(32): état de charge
 
-- BIT6（64）: ----
+- BIT6(64): ----
 
-- BIT7（128）: ----
+- BIT7(128): ----
 
 Si plusieurs états coexistent, la valeur d'état du servo est la somme des valeurs des bits. Exemple : surtension/sous-tension et surchauffe du servo, état = 4+1=5 ;
 
@@ -81,21 +81,21 @@ Conditions de délestage : 0 = désactivé, 1 = activé
 
 - Bits / poids : description
 
-- BIT0（1）: protection de tension
+- BIT0(1): protection de tension
 
-- BIT1（2）: protection de l'encodeur magnétique
+- BIT1(2): protection de l'encodeur magnétique
 
-- BIT2（4）: protection contre la surchauffe
+- BIT2(4): protection contre la surchauffe
 
-- BIT3（8）: protection contre les surintensités
+- BIT3(8): protection contre les surintensités
 
-- BIT4（16）: ----
+- BIT4(16): ----
 
-- BIT5（32）: surcharge de charge
+- BIT5(32): surcharge de charge
 
-- BIT6（64）: ----
+- BIT6(64): ----
 
-- BIT7（128）: ----
+- BIT7(128): ----
 
 Si plusieurs bits sont définis simultanément, la valeur de délestage est la somme des valeurs des bits. Exemple : protection de tension et protection de surchauffe activées, délestage = 4+1=5 ;
 
@@ -105,20 +105,20 @@ Conditions d'alarme LED : 0 = désactivée, 1 = activée
 
 - Bits / poids : description
 
-- BIT0（1）: alarme de tension
+- BIT0(1): alarme de tension
 
-- BIT1（2）: alarme de l'encodeur magnétique
+- BIT1(2): alarme de l'encodeur magnétique
 
-- BIT2（4）: alarme de surchauffe
+- BIT2(4): alarme de surchauffe
 
-- BIT3（8）: alarme de surintensité
+- BIT3(8): alarme de surintensité
 
-- BIT4（16）: ----
+- BIT4(16): ----
 
-- BIT5（32）: alarme de surcharge
+- BIT5(32): alarme de surcharge
 
-- BIT6（64）: ----
+- BIT6(64): ----
 
-- BIT7（128）: ----
+- BIT7(128): ----
 
 Si plusieurs bits sont définis simultanément, la valeur d'alarme LED est la somme des valeurs des bits. Exemple : alarme de tension et alarme de surchauffe activées, alarme = 4+1=5 ;

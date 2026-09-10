@@ -24,7 +24,7 @@ description: "Tutorial de la tarjeta de sonido USB sin controlador JUXI: softwar
 
     - Listar dispositivos de audio: `aplay -l`
 
-    - Ver dispositivos de audio PCI/USB: `lspci | grep -i audio`、`lsusb`
+    - Ver dispositivos de audio PCI/USB: `lspci | grep -i audio`,`lsusb`
 
 - Configuración y verificación básica:
 

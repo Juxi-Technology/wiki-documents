@@ -129,6 +129,6 @@ gst-launch-1.0 v4l2src device=/dev/video0 ! videoconvert ! autovideosink
 
 ## Technischer Support
 
-- 📧 E-Mail：support@juxitech.com
-- 🌐 Offizielle Website：[www.juxitech.com](https://www.juxitech.com)
-- 💬 GitHub Issues：[Fehler melden](https://github.com/Juxi-Technology/wiki-documents/issues)
+- 📧 E-Mail:support@juxitech.com
+- 🌐 Offizielle Website:[www.juxitech.com](https://www.juxitech.com)
+- 💬 GitHub Issues:[Fehler melden](https://github.com/Juxi-Technology/wiki-documents/issues)

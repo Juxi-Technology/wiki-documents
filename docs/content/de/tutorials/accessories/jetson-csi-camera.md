@@ -148,6 +148,6 @@ cv2.destroyAllWindows()
 
 ## Technischer Support
 
-- 📧 E-Mail：support@juxitech.com
-- 🌐 Offizielle Website：[www.juxitech.com](https://www.juxitech.com)
-- 💬 GitHub Issues：[Fehler melden](https://github.com/Juxi-Technology/wiki-documents/issues)
+- 📧 E-Mail:support@juxitech.com
+- 🌐 Offizielle Website:[www.juxitech.com](https://www.juxitech.com)
+- 💬 GitHub Issues:[Fehler melden](https://github.com/Juxi-Technology/wiki-documents/issues)

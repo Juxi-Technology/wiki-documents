@@ -33,21 +33,21 @@ Se un indirizzo di funzione usa dati a due byte, il byte alto si trova all'indir
 
 - Bit / peso: descrizione
 
-- BIT0（1）: fase della direzione di comando; (0) diretta, (1) inversa
+- BIT0(1): fase della direzione di comando; (0) diretta, (1) inversa
 
-- BIT1（2）: ----
+- BIT1(2): ----
 
-- BIT2（4）: ----
+- BIT2(4): ----
 
-- BIT3（8）: modalità di velocità; (0) velocità 0 = arresto, (1) velocità 0 = velocità massima
+- BIT3(8): modalità di velocità; (0) velocità 0 = arresto, (1) velocità 0 = velocità massima
 
-- BIT4（16）: ----
+- BIT4(16): ----
 
-- BIT5（32）: fase PWM; (0) in fase, (1) in controfase
+- BIT5(32): fase PWM; (0) in fase, (1) in controfase
 
-- BIT6（64）: modalità di tensione; (0) campionamento 1.5K bassa tensione, (1) campionamento 1K alta tensione
+- BIT6(64): modalità di tensione; (0) campionamento 1.5K bassa tensione, (1) campionamento 1K alta tensione
 
-- BIT7（128）: ----
+- BIT7(128): ----
 
 Se si impostano più bit contemporaneamente, il valore di fase del servo è la somma dei valori dei bit.
 
@@ -57,21 +57,21 @@ Stato del servo: 0 = normale, 1 = anomalo
 
 - Bit / peso: descrizione
 
-- BIT0（1）: stato della tensione
+- BIT0(1): stato della tensione
 
-- BIT1（2）: ----
+- BIT1(2): ----
 
-- BIT2（4）: stato della temperatura
+- BIT2(4): stato della temperatura
 
-- BIT3（8）: ----
+- BIT3(8): ----
 
-- BIT4（16）: ----
+- BIT4(16): ----
 
-- BIT5（32）: stato del carico
+- BIT5(32): stato del carico
 
-- BIT6（64）: ----
+- BIT6(64): ----
 
-- BIT7（128）: ----
+- BIT7(128): ----
 
 Se coesistono più stati, il valore di stato del servo è la somma dei valori dei bit. Esempio: sovratensione/sottotensione e surriscaldamento del servo, stato = 4+1=5;
 
@@ -81,21 +81,21 @@ Condizioni di rilascio: 0 = disattivato, 1 = attivato
 
 - Bit / peso: descrizione
 
-- BIT0（1）: protezione della tensione
+- BIT0(1): protezione della tensione
 
-- BIT1（2）: ----
+- BIT1(2): ----
 
-- BIT2（4）: protezione dal surriscaldamento
+- BIT2(4): protezione dal surriscaldamento
 
-- BIT3（8）: ----
+- BIT3(8): ----
 
-- BIT4（16）: ----
+- BIT4(16): ----
 
-- BIT5（32）: sovraccarico
+- BIT5(32): sovraccarico
 
-- BIT6（64）: ----
+- BIT6(64): ----
 
-- BIT7（128）: ----
+- BIT7(128): ----
 
 Se si impostano più bit contemporaneamente, il valore di rilascio è la somma dei valori dei bit. Esempio: protezione della tensione e protezione dal surriscaldamento attive, rilascio = 4+1=5;
 
@@ -105,20 +105,20 @@ Condizioni di allarme LED: 0 = disattivato, 1 = attivato
 
 - Bit / peso: descrizione
 
-- BIT0（1）: allarme di tensione
+- BIT0(1): allarme di tensione
 
-- BIT1（2）: ----
+- BIT1(2): ----
 
-- BIT2（4）: allarme di surriscaldamento
+- BIT2(4): allarme di surriscaldamento
 
-- BIT3（8）: ----
+- BIT3(8): ----
 
-- BIT4（16）: ----
+- BIT4(16): ----
 
-- BIT5（32）: allarme di sovraccarico
+- BIT5(32): allarme di sovraccarico
 
-- BIT6（64）: ----
+- BIT6(64): ----
 
-- BIT7（128）: ----
+- BIT7(128): ----
 
 Se si impostano più bit contemporaneamente, il valore di allarme LED è la somma dei valori dei bit. Esempio: allarme di tensione e allarme di surriscaldamento attivi, allarme = 4+1=5;

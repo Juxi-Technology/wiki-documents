@@ -36,5 +36,5 @@ AI-Wake-Soundkarte — Offline-Sprachweckung, anpassbare Wake-Words, geringer St
 
 Bei Fragen kontaktieren Sie uns:
 
-- 📧 E-Mail：support@juxitech.com
-- 💬 GitHub Issues：[Feedback](https://github.com/Juxi-Technology/wiki-documents/issues)
+- 📧 E-Mail:support@juxitech.com
+- 💬 GitHub Issues:[Feedback](https://github.com/Juxi-Technology/wiki-documents/issues)

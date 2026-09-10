@@ -48,6 +48,9 @@ const HOME_NAMES: Record<string, string> = { 'zh-CN': '首页', en: 'Home', 'zh-
 
 // 语言目录 → config lang 值(PageData 没有 lang 字段,须由 relativePath 推导)
 const LANG_CODE: Record<string, string> = { 'zh-hans': 'zh-CN', 'zh-hant': 'zh-HK', ja: 'ja', ko: 'ko', de: 'de', fr: 'fr', es: 'es', it: 'it', 'pt-br': 'pt-BR', 'pt-pt': 'pt-PT' }
+
+// Open Graph locale(og:locale 标准格式 language_TERRITORY)
+const OG_LOCALE: Record<string, string> = { en: 'en_US', 'zh-CN': 'zh_CN', 'zh-HK': 'zh_HK', ja: 'ja_JP', ko: 'ko_KR', de: 'de_DE', fr: 'fr_FR', es: 'es_ES', it: 'it_IT', 'pt-BR': 'pt_BR', 'pt-PT': 'pt_PT' }
 function langOf(relativePath: string) {
   return LANG_CODE[relativePath.split('/')[0]] || 'en'
 }
@@ -81,6 +84,7 @@ const globalHead = [
   ['link', { rel: 'icon', type: 'image/png', href: '/images/logos/logo-black.png' }],
   ['link', { rel: 'apple-touch-icon', href: '/images/logos/logo-black.png' }],
   ['meta', { property: 'og:type', content: 'website' }],
+  ['meta', { property: 'og:site_name', content: '钜犀科技 Wiki' }],
   ['meta', { property: 'og:image', content: 'https://wiki.juxitech.com/images/logos/logo-black.png' }],
   ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
   ['meta', { name: 'robots', content: 'index, follow' }],
@@ -103,8 +107,6 @@ const zhCN = {
   lang: 'zh-CN',
   description: '钜犀科技产品教程与文档中心',
   head: [
-    ['meta', { property: 'og:title', content: '钜犀科技 Wiki - 产品教程与文档中心' }],
-    ['meta', { property: 'og:description', content: '钜犀科技 Wiki，涵盖机器人机械臂、传感器、配件等完整产品教程与技术文档。从 SO-ARM101 到 IMU 惯导模块，为机器人与 AI 硬件开发者提供全流程指南。' }],
   ],
   themeConfig: {
     siteTitle: '钜犀科技 Wiki',
@@ -325,8 +327,6 @@ const en = {
   lang: 'en',
   description: 'Juxi Technology Product Tutorials and Documentation Center',
   head: [
-    ['meta', { property: 'og:title', content: 'Juxi Technology Wiki - Product Tutorials & Documentation' }],
-    ['meta', { property: 'og:description', content: 'Juxi Technology Wiki — comprehensive tutorials and docs for robot arms, sensors, and accessories. From SO-ARM101 to IMU modules, a complete guide for robotics and AI hardware developers.' }],
   ],
   themeConfig: {
     siteTitle: 'Juxi Technology Wiki',
@@ -547,8 +547,6 @@ const zhHK = {
   lang: 'zh-HK',
   description: '鉅犀科技產品教程與文檔中心',
   head: [
-    ['meta', { property: 'og:title', content: '鉅犀科技 Wiki - 產品教程與文檔中心' }],
-    ['meta', { property: 'og:description', content: '鉅犀科技 Wiki，涵蓋機器人機械臂、傳感器、配件等完整產品教程與技術文檔。從 SO-ARM101 到 IMU 慣導模組，為機器人與 AI 硬件開發者提供全流程指南。' }],
   ],
   themeConfig: {
     siteTitle: '鉅犀科技 Wiki',
@@ -879,8 +877,6 @@ export default defineConfig({
     lang: 'ja',
     description: 'Juxi Technology 製品チュートリアルとドキュメントセンター',
     head: [
-      ['meta', { property: 'og:title', content: 'Juxi Technology Wiki - 製品チュートリアルとドキュメント' }],
-      ['meta', { property: 'og:description', content: 'Juxi Technology Wiki — ロボットアーム、センサー、アクセサリーの包括的なチュートリアルと技術ドキュメント。SO-ARM101 から IMU モジュールまで。' }],
     ],
     themeConfig: {
       siteTitle: 'Juxi Technology Wiki',
@@ -1064,8 +1060,6 @@ export default defineConfig({
     lang: 'ko',
     description: 'Juxi Technology 제품 튜토리얼 및 문서 센터',
     head: [
-      ['meta', { property: 'og:title', content: 'Juxi Technology Wiki - 제품 튜토리얼 및 문서' }],
-      ['meta', { property: 'og:description', content: 'Juxi Technology Wiki — 로봇 암, 센서, 액세서리에 대한 포괄적인 튜토리얼과 기술 문서. SO-ARM101부터 IMU 모듈까지.' }],
     ],
     themeConfig: {
       siteTitle: 'Juxi Technology Wiki',
@@ -1249,8 +1243,6 @@ export default defineConfig({
     lang: 'de',
     description: 'Juxi Technology Produkt-Tutorials und Dokumentationszentrum',
     head: [
-      ['meta', { property: 'og:title', content: 'Juxi Technology Wiki - Produkt-Tutorials & Dokumentation' }],
-      ['meta', { property: 'og:description', content: 'Juxi Technology Wiki — umfassende Tutorials und Dokumentation für Roboterarme, Sensoren und Zubehör. Von SO-ARM101 bis IMU-Module.' }],
     ],
     themeConfig: {
       siteTitle: 'Juxi Technology Wiki',
@@ -1434,8 +1426,6 @@ export default defineConfig({
     lang: 'fr',
     description: 'Centre de tutoriels et de documentation Juxi Technology',
     head: [
-      ['meta', { property: 'og:title', content: 'Juxi Technology Wiki - Tutoriels & Documentation' }],
-      ['meta', { property: 'og:description', content: 'Juxi Technology Wiki — tutoriels et documentation complets pour bras robotiques, capteurs et accessoires. De SO-ARM101 aux modules IMU.' }],
     ],
     themeConfig: {
       siteTitle: 'Juxi Technology Wiki',
@@ -1619,8 +1609,6 @@ export default defineConfig({
     lang: 'es',
     description: 'Centro de tutoriales y documentación de Juxi Technology',
     head: [
-      ['meta', { property: 'og:title', content: 'Juxi Technology Wiki - Tutoriales y Documentación' }],
-      ['meta', { property: 'og:description', content: 'Juxi Technology Wiki — tutoriales y documentación completos para brazos robóticos, sensores y accesorios. De SO-ARM101 a módulos IMU.' }],
     ],
     themeConfig: {
       siteTitle: 'Juxi Technology Wiki',
@@ -1804,8 +1792,6 @@ export default defineConfig({
     lang: 'it',
     description: 'Centro tutorial e documentazione Juxi Technology',
     head: [
-      ['meta', { property: 'og:title', content: 'Juxi Technology Wiki - Tutorial e Documentazione' }],
-      ['meta', { property: 'og:description', content: 'Juxi Technology Wiki — tutorial e documentazione completi per bracci robotici, sensori e accessori. Da SO-ARM101 ai moduli IMU.' }],
     ],
     themeConfig: {
       siteTitle: 'Juxi Technology Wiki',
@@ -1989,8 +1975,6 @@ export default defineConfig({
     lang: 'pt-BR',
     description: 'Central de tutoriais e documentação Juxi Technology',
     head: [
-      ['meta', { property: 'og:title', content: 'Juxi Technology Wiki - Tutoriais e Documentação' }],
-      ['meta', { property: 'og:description', content: 'Juxi Technology Wiki — tutoriais e documentação completos para braços robóticos, sensores e acessórios. De SO-ARM101 a módulos IMU.' }],
     ],
     themeConfig: {
       siteTitle: 'Juxi Technology Wiki',
@@ -2197,8 +2181,6 @@ export default defineConfig({
     lang: 'pt-PT',
     description: 'Central de tutoriais e documentação Juxi Technology',
     head: [
-      ['meta', { property: 'og:title', content: 'Juxi Technology Wiki - Tutoriais e Documentação (Portugal)' }],
-      ['meta', { property: 'og:description', content: 'Juxi Technology Wiki — tutoriais e documentação completos para braços robóticos, sensores e acessórios. De SO-ARM101 a módulos IMU.' }],
     ],
     themeConfig: {
       siteTitle: 'Juxi Technology Wiki',
@@ -2468,6 +2450,24 @@ export default defineConfig({
       ...(pageData.isNotFound ? [] : injectHreflang(pageData)),
       ['script', { type: 'application/ld+json' }, JSON.stringify(ld)],
     ].filter(Boolean)
+    // 页面级 Open Graph(索引页与 404 跳过:与 canonical 同步)
+    if (!pageData.isNotFound) {
+      // 复刻 VitePress 的 <title> 规则:frontmatter titleTemplate 优先;
+      // 页面 title 与站点 title 相同(zh 首页)或缺失时不加后缀,避免 "X | X"
+      const tpl = (pageData as any).frontmatter?.titleTemplate
+      const siteTitle = '钜犀科技 Wiki'
+      const pgTitle = pageData.title || ''
+      const ogTitle = tpl
+        ? (String(tpl).includes(':title') ? String(tpl).replace(/:title/g, pgTitle)
+          : (pgTitle ? pgTitle + ' | ' + String(tpl) : String(tpl)))
+        : (!pgTitle || pgTitle === siteTitle ? siteTitle : pgTitle + ' | ' + siteTitle)
+      heads.push(
+        ['meta', { property: 'og:title', content: ogTitle }],
+        ['meta', { property: 'og:description', content: pageData.description || 'Juxi Technology Wiki' }],
+        ['meta', { property: 'og:url', content: base + pageUrlOf(pageData.relativePath) }],
+        ['meta', { property: 'og:locale', content: OG_LOCALE[LANG_CODE[pageData.relativePath.split('/')[0]] || 'en'] || 'en_US' }],
+      )
+    }
     if (breadcrumbLd) heads.push(['script', { type: 'application/ld+json' }, JSON.stringify(breadcrumbLd)])
     return heads
   },

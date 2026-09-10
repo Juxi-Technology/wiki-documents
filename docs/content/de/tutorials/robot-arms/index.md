@@ -40,5 +40,5 @@ Vollständig Open-Source-Mobilroboter, kompatibel mit LeRobot Imitation-Learning
 
 Bei Fragen kontaktieren Sie uns:
 
-- 📧 E-Mail：support@juxitech.com
-- 💬 GitHub Issues：[Feedback](https://github.com/Juxi-Technology/wiki-documents/issues)
+- 📧 E-Mail:support@juxitech.com
+- 💬 GitHub Issues:[Feedback](https://github.com/Juxi-Technology/wiki-documents/issues)

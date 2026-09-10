@@ -27,5 +27,5 @@ Hochpräzise 6/9/10-Achsen-IMU mit integrierter Sensor-Fusion für stabile Echtz
 
 Bei Fragen kontaktieren Sie uns:
 
-- 📧 E-Mail：support@juxitech.com
-- 💬 GitHub Issues：[Feedback](https://github.com/Juxi-Technology/wiki-documents/issues)
+- 📧 E-Mail:support@juxitech.com
+- 💬 GitHub Issues:[Feedback](https://github.com/Juxi-Technology/wiki-documents/issues)

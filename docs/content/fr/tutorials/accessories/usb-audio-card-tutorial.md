@@ -24,7 +24,7 @@ description: "Tutoriel de la carte son USB sans pilote JUXI : logiciel de test, 
 
     - Lister les périphériques audio : `aplay -l`
 
-    - Voir les périphériques audio PCI/USB : `lspci | grep -i audio`、`lsusb`
+    - Voir les périphériques audio PCI/USB : `lspci | grep -i audio`,`lsusb`
 
 - Configuration et vérification de base :
 
