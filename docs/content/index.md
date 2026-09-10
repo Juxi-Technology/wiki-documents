@@ -142,26 +142,6 @@ const storeUrl = computed(() => {
   transition: all 0.2s;
 }
 
-.hero-btn.primary {
-  background-color: #1e3a5f;
-  color: #ffffff;
-}
-
-.hero-btn.primary:hover {
-  background-color: #152a45;
-}
-
-.hero-btn.secondary {
-  background-color: var(--vp-c-bg-soft);
-  color: var(--vp-c-text-1);
-  border: 1px solid var(--vp-c-gutter);
-}
-
-.hero-btn.secondary:hover {
-  border-color: var(--vp-c-brand);
-  color: var(--vp-c-brand);
-}
-
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -259,35 +239,6 @@ const storeUrl = computed(() => {
 .hero-btn:hover {
   transform: translateY(-2px);
 }
-
-.hero-btn.taobao {
-  background-color: #ff5000;
-  border-color: #ff5000;
-  color: #ffffff;
-}
-
-.hero-btn.taobao:hover {
-  background-color: #d64400;
-  border-color: #d64400;
-  color: #ffffff;
-}
-
-.hero-btn.shop {
-  background-color: #95bf47;
-  border-color: #95bf47;
-  color: #ffffff;
-}
-
-.hero-btn.shop:hover {
-  background-color: #7aa53a;
-  border-color: #7aa53a;
-  color: #ffffff;
-}
-
-.hero-btn.taobao,
-.hero-btn.shop {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
 /* ---- 按钮等宽对齐:3 按钮一行,中/繁 2×2 (2026-08) ---- */
 .hero-links {
   display: grid;
@@ -319,10 +270,6 @@ const storeUrl = computed(() => {
 /* ---- hero 渐变标题与分区标题装饰线 (2026-08) ---- */
 .hero-subtitle {
   font-size: 26px;
-  background: linear-gradient(92deg, #0f9d63 0%, #35c47f 55%, #0ea5b7 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
 }
 
 .vp-doc h2::after {
@@ -332,7 +279,11 @@ const storeUrl = computed(() => {
   height: 4px;
   border-radius: 2px;
   margin: 14px auto 0;
-  background: linear-gradient(90deg, #0f9d63, #35c47f 60%, #0ea5b7);
+  background: linear-gradient(90deg, #1e4a7a, #3a7bd5 60%, #2b6cb0);
+}
+
+.dark .vp-doc h2::after {
+  background: linear-gradient(90deg, #5b87c9, #7ea6e0 60%, #4a90d9);
 }
 /* ---- hero 改版 v2:照 Seeed Studio Wiki 首页(满宽 hero,左文右巨型品牌字) ---- */
 .hero-section {
@@ -412,20 +363,6 @@ const storeUrl = computed(() => {
   white-space: nowrap;
 }
 
-/* 主按钮:参考图 GETTING STARTED 的亮绿大胶囊 */
-.hero-btn.primary {
-  background-color: #7fc93c;
-  border-color: #7fc93c;
-  color: #ffffff;
-  font-weight: 700;
-}
-
-.hero-btn.primary:hover {
-  background-color: #6fb832;
-  border-color: #6fb832;
-  color: #ffffff;
-}
-
 /* 右侧巨型品牌字(参考图 Wiki / seed studio) */
 .hero-brand {
   flex: 0 0 42%;
@@ -441,10 +378,6 @@ const storeUrl = computed(() => {
   font-size: min(15vw, 200px);
   font-weight: 800;
   letter-spacing: -0.03em;
-  background: linear-gradient(180deg, #9fdc5a 0%, #35c47f 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
 }
 
 .brand-name {
