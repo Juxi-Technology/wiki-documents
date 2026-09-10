@@ -44,7 +44,7 @@ Botão de comutação &amp; Controle remoto por infravermelho
 
 ### 2. Placa-mãe (sem monitor) + Host (com monitor)
 
-Basta usar adicionalmente um dispositivo de captura HDMI 4K HD conectado ao host e, em seguida, **no host, usar softwares como OBS e Potplayer para capturar a ecrã**
+Basta usar adicionalmente um dispositivo de captura HDMI 4K HD conectado ao host e, em seguida, **no host, usar softwares como OBS e Potplayer para capturar o ecrã**
 
 ![2. Placa-mãe sem monitor + Host com monitor – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MmRjYWRkNDVmMGZkMDU4YTMxNzIzYWNjZDlkNTc0ZDZfZTNmYTlmYjM2MjY2YWM3ZjM1MmZlM2I1MTg2MGMzMjhfSUQ6NzYzODkzMTc5MzU5Mjg4MDA3Nl8xNzgwMzg1MDExOjE3ODA0NzE0MTFfVjM)
 

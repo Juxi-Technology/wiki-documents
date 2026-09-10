@@ -116,7 +116,7 @@ Os passos são os mesmos acima
 
 1. Envie para a placa de desenvolvimento o programa "01 — Usado no ajuste fino do valor MiddlePos"
 
-2. Quando o dedo estiver na posição fechada, interrompa imediatamente o programa (basta desconectar o cabo de dados) e verifique se a palheta do servo está alinhada corretamente (como mostra a figura abaixo). Se não estiver alinhada, ajuste os valores de MiddlePos_1 e MiddlePos_2 no programa até alinhar. Registre esses valores (8 valores correspondentes aos 8 servos), que serão usados no programa final.
+2. Quando o dedo estiver na posição fechada, interrompa imediatamente o programa (basta desconectar o cabo de dados) e verifique se a palheta do servo está alinhada corretamente (como mostra a figura abaixo). Se não estiver alinhada, ajuste os valores de MiddlePos_1 e MiddlePos_2 no programa até alinhar. Registe esses valores (8 valores correspondentes aos 8 servos), que serão usados no programa final.
 
 ![4.Ajuste fino dos valores intermediários – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZmExMWZhZTY2NTUxMWE0OGJkMjg5OWJjM2QwNjcwMmJfNDE3MzY4ODI3OGRjNTU0YjlhMDA3ZDViMGNkZmUxNjZfSUQ6NzYzODkzOTYxMTE5MjAxOTkyMF8xNzgwMzE3MjM0OjE3ODA0MDM2MzRfVjM)
 

@@ -5,7 +5,7 @@ description: Histórias reais de pesquisadores e desenvolvedores que usam o hard
 
 # Histórias de Sucesso de Utilizadores
 
-Histórias reais de utilizadors construindo com os produtos da Juxi Technology — na educação, pesquisa e negócios.
+Histórias reais de utilizadores construindo com os produtos da Juxi Technology — na educação, pesquisa e negócios.
 
 ---
 

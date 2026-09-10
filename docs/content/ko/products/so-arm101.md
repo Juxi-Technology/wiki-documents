@@ -52,7 +52,7 @@ lerobot-teleoperate --robot.type=so101_follower --robot.port=/dev/ttyACM0 \
 - [SO-ARM101 튜토리얼](/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial)
 - [SO-ARM101 조립 튜토리얼](/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly)
 - [로봇 팔 선택 가이드](/ko/tutorials/robot-arms/select-guide)
-- [임베디드 지능 입문(LeRobot)](/ko/topics/embodied-ai-intro)
+- [구현 지능 입문(LeRobot)](/ko/topics/embodied-ai-intro)
 
 ## 지원
 

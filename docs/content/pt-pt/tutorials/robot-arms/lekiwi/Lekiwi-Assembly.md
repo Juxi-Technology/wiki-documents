@@ -130,7 +130,7 @@ Fixe o módulo da câmara com 4 parafusos com arruela m2\*5\*5
 
 
 
-Insira o adaptador com plugue cilíndrico CC na placa de acionamento de servos e conecte o conector USB-C de 5V ao Raspberry Pi 5 para alimentar os dispositivos eletrônicos. Os cabos de dados USB da placa de acionamento de servos e da câmara podem ser conectados diretamente ao Raspberry Pi.
+Insira o adaptador com ficha cilíndrico CC na placa de acionamento de servos e conecte o conector USB-C de 5V ao Raspberry Pi 5 para alimentar os dispositivos eletrônicos. Os cabos de dados USB da placa de acionamento de servos e da câmara podem ser conectados diretamente ao Raspberry Pi.
 
 ![Opção 2 Instalar uma câmara montada no braço – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/9.jpg)
 

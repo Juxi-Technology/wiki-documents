@@ -21,7 +21,7 @@ outline: false
   </a>
   <a :href="withBase('/ko/products/amazinghand')" class="category-card">
     <span class="pc-title">AmazingHand 오픈소스 4손가락 정교 손</span>
-    <p class="pc-desc">Juxi Technology AmazingHand 오픈소스 4손가락 정교 손, TTL 버스 제어, 오픈 CAD, 임베디드 지능·HRI 연구</p>
+    <p class="pc-desc">Juxi Technology AmazingHand 오픈소스 4손가락 정교 손, TTL 버스 제어, 오픈 CAD, 구현 지능·HRI 연구</p>
   </a>
   <a :href="withBase('/ko/products/esp32-s3-wifi-module')" class="category-card">
     <span class="pc-title">ESP32-S3 WiFi 영상 모듈</span>
@@ -56,8 +56,8 @@ outline: false
     <p class="pc-desc">Juxi Technology KWS 음성 인식 상호작용 모듈 — 중문/영문 인식어, 직렬/RViz2 시각화, Jetson/라즈베리파이 지원, 펌웨어 오픈소스</p>
   </a>
   <a :href="withBase('/ko/products/lekiwi')" class="category-card">
-    <span class="pc-title">Lekiwi 임베디드 지능 모바일 로봇</span>
-    <p class="pc-desc">Juxi Technology Lekiwi 임베디드 지능 모바일 로봇 — 저비용 교육용 로봇 팔/모바일 베이스, 서보 제어, 교육·입문 추천</p>
+    <span class="pc-title">Lekiwi 구현 지능 모바일 로봇</span>
+    <p class="pc-desc">Juxi Technology Lekiwi 구현 지능 모바일 로봇 — 저비용 교육용 로봇 팔/모바일 베이스, 서보 제어, 교육·입문 추천</p>
   </a>
   <a :href="withBase('/ko/products/overhead-camera-mount')" class="category-card">
     <span class="pc-title">SO-ARM101 오버헤드 카메라 마운트</span>

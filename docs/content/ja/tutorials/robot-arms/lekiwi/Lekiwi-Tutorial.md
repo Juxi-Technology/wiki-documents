@@ -8,7 +8,7 @@ description: "LeRobot ベースの Lekiwi 移動ロボットのセットアッ�
 > **[ストアで購入](https://www.juxitech.com/ja/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
 
 
-黑色の能動アームは5V6A電源アダプター、白色の従動アームは12V5A電源アダプターを使用
+黒色の能動アームは5V6A電源アダプター、白色の従動アームは12V5A電源アダプターを使用
 
 [lerobot-Lekiwi.zip]
 

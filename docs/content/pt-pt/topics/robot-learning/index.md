@@ -5,7 +5,7 @@ description: Tecnologias de robot learning full-stack baseadas em LeRobot
 
 # Aprendizado de Robôs
 
-Fornecendo soluções de aprendizado de robôs mais rápidas, flexíveis e escaláveis para todos. Temos o compromisso de cobrir vários cenários de robot learning em plataformas open source.
+Fornecendo soluções de aprendizagem de robôs mais rápidas, flexíveis e escaláveis para todos. Temos o compromisso de cobrir vários cenários de robot learning em plataformas open source.
 
 ---
 
@@ -82,7 +82,7 @@ Fornecendo soluções de aprendizado de robôs mais rápidas, flexíveis e escal
 
 Damos as boas-vindas aos colaboradores da comunidade! Se você tem tutoriais, estudos de caso ou análises técnicas, sinta-se à vontade para enviar um PR.
 
-- [Compartilhe sua experiência de treinamento de modelos de robôs](https://github.com/Juxi-Technology/wiki-documents/issues)
+- [Compartilhe sua experiência de treino de modelos de robôs](https://github.com/Juxi-Technology/wiki-documents/issues)
 - [Aprofunde-se em um algoritmo de robot learning](https://github.com/Juxi-Technology/wiki-documents/issues)
 - Mais [necessidades do projeto](https://github.com/orgs/Juxi-Technology/projects/)
 

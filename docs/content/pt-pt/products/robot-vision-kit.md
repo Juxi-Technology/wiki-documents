@@ -11,7 +11,7 @@ keywords: [suporte de câmara, kit de visão, so-arm101, visão robótica]
 
 ## Visão Geral
 
-Um acessório de câmara dedicado para braços robóticos com duas opções de câmara: **fixa 60FPS** e **zoom com foco automático 30FPS**. Suporta as plataformas SO-ARM101, LeKiwi e XLerobot, compatível com os frameworks de treinamento de IA incorporada **ACT, Smolvla, Pi0, Pi0.5, GR00T N1.5**.
+Um acessório de câmara dedicado para braços robóticos com duas opções de câmara: **fixa 60FPS** e **zoom com foco automático 30FPS**. Suporta as plataformas SO-ARM101, LeKiwi e XLerobot, compatível com os frameworks de treino de IA incorporada **ACT, Smolvla, Pi0, Pi0.5, GR00T N1.5**.
 
 **Principais recursos**:
 
@@ -46,7 +46,7 @@ Um acessório de câmara dedicado para braços robóticos com duas opções de c
 
 - **Pulso**: ponto de vista da preensão (recomendado para manipulação)
 - **Lateral**: visão global do ambiente
-- **Superior**: de cima para baixo para coleta de dados
+- **Superior**: de cima para baixo para recolha de dados
 
 ### 2. Instalação
 
@@ -75,7 +75,7 @@ lerobot-record \
 
 **R:** Fixa 60FPS para captura de movimento rápido (ex.: preensão); zoom com foco automático 30FPS para visão de distância variável.
 
-**P: Quais frameworks de treinamento?**
+**P: Quais frameworks de treino?**
 
 **R:** ACT, Smolvla, Pi0, Pi0.5, GR00T N1.5 — cobertura completa dos frameworks de IA incorporada mainstream.
 

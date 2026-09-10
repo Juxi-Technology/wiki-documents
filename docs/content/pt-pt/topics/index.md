@@ -91,7 +91,7 @@ Aprofunde-se em robótica e tecnologias de automação com produtos reais e tuto
 <div class="tutorial-links">
   <a href="/pt-pt/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial" class="tutorial-link">
     <strong>Tutorial SO-ARM101</strong>
-    <span>Guia completo de treinamento de políticas de manipulação robótica com LeRobot</span>
+    <span>Guia completo de treino de políticas de manipulação robótica com LeRobot</span>
   </a>
   <a href="/pt-pt/tutorials/sensors/imu/" class="tutorial-link">
     <strong>Módulo de Navegação Inercial IMU</strong>

@@ -362,7 +362,7 @@ python -m pip install opencv-contrib-python numpy mediapipe -i https://mirrors.a
 
 ![4.  Permissão de câmara habilitada  computador – 3](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
 
-### 5. Máquina virtual 22.04 acessando a câmara
+### 5. Máquina virtual 22.04 acedendo a câmara
 
 Referência https://blog.csdn.net/qq_19731521/article/details/124954288
 
@@ -410,7 +410,7 @@ source .venv/bin/activate
 
 **2. Permissão de câmara na máquina virtual**
 
-Referência para a máquina virtual 22.04 acessar a câmara https://blog.csdn.net/qq_19731521/article/details/124954288
+Referência para a máquina virtual 22.04 aceder a câmara https://blog.csdn.net/qq_19731521/article/details/124954288
 
 **3. Verifique a porta da placa de acionamento de servos pela linha de comando:**
 

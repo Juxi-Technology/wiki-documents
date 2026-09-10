@@ -659,7 +659,41 @@ lerobot-record \
 
 공식 튜토리얼 [Pi0.5](https://huggingface.co/docs/lerobot/pi05) 참조
 
-훈련은 Pi0과 동일하며 정책 유형을 `pi0.5`로 변경합니다.
+```Bash
+pip install -e ".[pi]"
+```
+
+**훈련**
+
+```Bash
+lerobot-train \
+    --dataset.repo_id=juxi/eval_test123 \
+    --policy.type=pi05 \
+    --output_dir=outputs/pi05_training \
+    --job_name=pi05_training \
+    --policy.pretrained_path=lerobot/pi05_base \
+    --policy.compile_model=true \
+    --policy.gradient_checkpointing=true \
+    --wandb.enable=false \
+    --policy.dtype=bfloat16 \
+    --steps=3000 \
+    --policy.device=cuda \
+    --batch_size=32
+```
+
+**검증**
+
+```Bash
+lerobot-record \
+  --robot.type=so101_follower \
+  --robot.port=/dev/ttyACM0 \
+  --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"},   side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30,fourcc: "MJPG"}}" \
+  --robot.id=my_awesome_follower_arm \
+  --display_data=false \
+  --dataset.repo_id=juxi/eval_test123 \
+  --dataset.single_task="Put the blue cube on the black box" \
+  --policy.path=outputs/pi05_training/checkpoints/last/pretrained_model
+```
 
 ### GR00T N1.5
 
@@ -682,6 +716,18 @@ lerobot-record \
 
 
 #### **4.conda 환경 초기화**
+
+```Plain Text
+conda env list
+```
+
+```Plain Text
+conda activate base
+```
+
+```Plain Text
+conda init
+```
 ![4.conda 환경 초기화 – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/11.png)
 
 

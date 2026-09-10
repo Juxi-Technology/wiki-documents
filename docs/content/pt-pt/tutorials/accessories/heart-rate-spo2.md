@@ -7,7 +7,7 @@ description: "Módulo sensor de batimentos cardíacos e SpO2 MAX30102 da Juxi Te
 
 ## Visão geral
 
-O sensor de batimentos cardíacos e SpO2 da Juxi Technology é baseado no chip MAX30102, com suporte aos modos de comunicação IIC e UART para coleta em tempo real de batimentos cardíacos e saturação de oxigênio no sangue. Inclui uma biblioteca para Arduino e um SDK Python (Raspberry Pi / Windows / Jetson), além de um aplicação gráfico de host.
+O sensor de batimentos cardíacos e SpO2 da Juxi Technology é baseado no chip MAX30102, com suporte aos modos de comunicação IIC e UART para recolha em tempo real de batimentos cardíacos e saturação de oxigênio no sangue. Inclui uma biblioteca para Arduino e um SDK Python (Raspberry Pi / Windows / Jetson), além de um aplicação gráfico de host.
 
 **Características**:
 - Chip MAX30102 de alta precisão para batimentos cardíacos e SpO2

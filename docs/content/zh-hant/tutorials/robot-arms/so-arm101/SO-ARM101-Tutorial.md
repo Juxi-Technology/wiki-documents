@@ -111,11 +111,11 @@ conda install ffmpeg -c conda-forge
 
 【適用於所有平臺】顯式安裝 ffmpeg 7.X：
 
-`安裝ffmpeg=7.1.1-c conda-forge`
+`conda install ffmpeg=7.1.1 -c conda-forge`
 
 無圖形依賴（gdk-pixbuf、librsvg）用此命令安裝：
 
-`安裝ffmpeg=7.1.1-c conda-forge--no-deps`
+`conda install ffmpeg=7.1.1 -c conda-forge --no-deps`
 
 【僅限 Linux】安裝 ffmpeg 的構建依賴並從源碼編譯支持 libsvtav1 的 ffmpeg，並確保使用的 ffmpeg 可執行文件是正確的，可以通過 `which ffmpeg` 確認。
 
@@ -973,7 +973,7 @@ Could not connect on port "/dev/ttyACM0"
 No valid stream found in input file. Is -1 of the desired media type?
 ```
 
-請安裝ffmpeg7.1.1，`conda install ffmpeg=7.1.1-c conda-forge`。
+請安裝ffmpeg7.1.1，`conda install ffmpeg=7.1.1 -c conda-forge`。
 
 ![G. 常見問題 – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/25.png)
 

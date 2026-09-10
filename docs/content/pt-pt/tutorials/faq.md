@@ -100,7 +100,7 @@ Perguntas frequentes sobre os produtos da Juxi Technology, organizadas por categ
 
 **A:** Verifique o tipo de interface HDMI (adaptador HDMI/Micro HDMI/DP) e use o conversor correto.
 
-**Q: A ecrã OLED não acende?**
+**Q: O ecrã OLED não acende?**
 
 **A:** Verifique a fiação I2C (SCL/SDA); curtos nos pinos podem danificar a placa host.
 

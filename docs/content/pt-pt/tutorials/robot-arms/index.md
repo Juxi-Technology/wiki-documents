@@ -29,7 +29,7 @@ Mão hábil biônica open source, que oferece operação com múltiplos dedos de
 
 ### Lekiwi
 
-Carrinho robótico móvel totalmente open source, compatível com o framework de aprendizado por imitação LeRobot e com o braço SO101.
+Carrinho robótico móvel totalmente open source, compatível com o framework de aprendizagem por imitação LeRobot e com o braço SO101.
 
 - [Tutorial do Lekiwi](./lekiwi/Lekiwi-Tutorial.md)
 - [Guia de montagem do Lekiwi](./lekiwi/Lekiwi-Assembly.md)

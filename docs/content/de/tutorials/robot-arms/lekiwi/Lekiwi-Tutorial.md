@@ -165,7 +165,7 @@ connection_time_s: int = 7200 # 也就是2小时
 
 Wenn LeRobot bereits auf dem Laptop installiert ist, diesen Schritt überspringen; andernfalls die **gleichen Schritte** wie auf dem Raspberry Pi ausführen.
 
-> [!Tipp] Wir nutzen häufig die Eingabeaufforderung (cmd). Bei Unerfahrenheit: [Crash-Kurs Kommandozeile](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Environment_setup/Command_line).
+> [!Tip] Wir nutzen häufig die Eingabeaufforderung (cmd). Bei Unerfahrenheit: [Crash-Kurs Kommandozeile](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Environment_setup/Command_line).
 > 
 
 Auf Ihrem Rechner:
@@ -424,7 +424,7 @@ Als Nächstes auf dem Laptop ebenfalls den folgenden Befehl ausführen, um die U
 python examples/lekiwi/teleoperate.py
 ```
 
-Der Laptop-Bildschirm sollte eine Oberfläche ähnlich der folgenden anzeigen: `[INFO] Connected to remote robot at tcp://172.17.133.91:5555 and video stream at tcp://172.17.133.91:5556.` Jetzt können Sie den Steuerarm bewegen und mit den Tasten (W, A, S, D) der Tastatur den Roboter vorwärts, links, rückwärts und rechts bewegen. Mit den Tasten (Z, X) den Roboter links bzw. rechts drehen. Mit den Tasten (R, F) die Geschwindigkeit des mobilen Roboters erhöhen oder verringern. Insgesamt gibt es drei Geschwindigkeitsmodi – siehe folgende Tabelle:
+Der Laptop-Bildschirm sollte eine Oberfläche ähnlich der folgenden anzeigen: `[INFO] Connected to remote robot at tcp://172.17.133.91:5555 and video stream at tcp://172.17.133.91:5556.` Jetzt können Sie den Steuerarm bewegen und mit den Tasten (W, A, S, D) der Tastatur den Roboter vorwärts, nach links drehen, rückwärts und nach rechts drehen. Mit den Tasten (Z, X) den Roboter links bzw. rechts drehen. Mit den Tasten (R, F) die Geschwindigkeit des mobilen Roboters erhöhen oder verringern. Insgesamt gibt es drei Geschwindigkeitsmodi – siehe folgende Tabelle:
 
 Bei einer anderen Tastatur können Sie die Tastenbelegung für jeden Befehl in [`LeKiwiClientConfig`](https://github.com/huggingface/lerobot/blob/main/src/lerobot/robots/lekiwi/config_lekiwi.py) ändern.
 

@@ -332,7 +332,7 @@ Você pode encontrar as imagens capturadas por cada câmara no diretório `~/ler
 
 Ao usar uma câmara Intel RealSense no **macOS**, você pode encontrar o erro **"Error finding RealSense cameras: failed to set power state"**. Isso pode ser resolvido a executar o mesmo comando com privilégios `sudo`. Observe que o uso de uma câmara RealSense no **macOS** é instável. 
 
-Depois disso, você pode exibir o feed da câmara no seu computador durante a operação remota a executar simplesmente o código a seguir. Isso é muito útil para preparar sua configuração antes de registrar o primeiro dataset. 
+Depois disso, você pode exibir o feed da câmara no seu computador durante a operação remota a executar simplesmente o código a seguir. Isso é muito útil para preparar sua configuração antes de registar o primeiro dataset. 
 
 ```Python
 lerobot-teleoperate \
@@ -421,7 +421,7 @@ HF_USER=$(huggingface-cli whoami | head -n 1)
 echo $HF_USER
 ```
 
-Registre 5 rodadas e envie seu dataset para o Hub: 
+Registe 5 rodadas e envie seu dataset para o Hub: 
 
 ```Python
 lerobot-record \
@@ -449,11 +449,11 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 
 **Descrição dos parâmetros**
 
-- episode_time_s: representa o tempo de cada coleta de dados.
+- episode_time_s: representa o tempo de cada recolha de dados.
 
-- reset_time_s: é o tempo de preparação entre cada coleta de dados.
+- reset_time_s: é o tempo de preparação entre cada recolha de dados.
 
-- num_episodes: indica quantos conjuntos de dados se espera coletar.
+- num_episodes: indica quantos conjuntos de dados se espera recolher.
 
 - push_to_hub: determina se os dados serão enviados ao Hugging Face Hub.
 
@@ -465,11 +465,11 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 
 
 
-**Técnicas de coleta de dados**
+**Técnicas de recolha de dados**
 
 - **Sugestão de tarefa**: agarre objetos em posições diferentes e coloque-os na caixa.
 
-- **Quantidade**: registre ≥ 50 episódios (10 episódios por posição). 
+- **Quantidade**: registe ≥ 50 episódios (10 episódios por posição). 
 
 - **Consistência**: 
 
@@ -489,7 +489,7 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 
 Se você quiser se aprofundar nesse tópico importante, confira nossa [postagem no blog](https://huggingface.co/blog/lerobot-datasets#what-makes-a-good-dataset) sobre o que torna um dataset bom. 
 
-- Nos capítulos a seguir, você treinará sua rede neural. Depois de obter um desempenho confiável de preensão, você pode introduzir mais variações durante a coleta de dados, como adicionar posições de preensão, técnicas diferentes de preensão e alterar as posições da câmara. 
+- Nos capítulos a seguir, você treinará sua rede neural. Depois de obter um desempenho confiável de preensão, você pode introduzir mais variações durante a recolha de dados, como adicionar posições de preensão, técnicas diferentes de preensão e alterar as posições da câmara. 
 
 - Evite adicionar muitas mudanças de uma vez, pois isso pode prejudicar seus resultados. 
 
@@ -503,7 +503,7 @@ Se você quiser se aprofundar nesse tópico importante, confira nossa [postagem 
 
 - Durante a gravação, pressione ESCAPE ESC a qualquer momento para encerrar a sessão antes do tempo e ir direto para a codificação do vídeo e o envio do dataset. 
 
-- A gravação pode ser retomada a executar o mesmo comando novamente e adicionando `--resume=true`. ⚠️ **Observação importante**: ao retomar, defina `--dataset.num_episodes` como o número de episódios adicionais a registrar (não o número total de episódios alvo do dataset). Se você quiser começar a gravação do zero, exclua manualmente o diretório do dataset.
+- A gravação pode ser retomada a executar o mesmo comando novamente e adicionando `--resume=true`. ⚠️ **Observação importante**: ao retomar, defina `--dataset.num_episodes` como o número de episódios adicionais a registar (não o número total de episódios alvo do dataset). Se você quiser começar a gravação do zero, exclua manualmente o diretório do dataset.
 
 - No Linux, se as teclas de seta esquerda e direita e a tecla Esc não tiverem efeito durante a gravação de dados, certifique-se de ter definido a variável de ambiente $DISPLAY. Consulte as [limitações do pynput](https://pynput.readthedocs.io/en/latest/limitations.html#linux).
 
@@ -531,7 +531,7 @@ lerobot-dataset-viz \
   --repo-id juxi/test \
 ```
 
-Aqui, `juxi` é o nome personalizado do `repo_id` durante a coleta de dados. 
+Aqui, `juxi` é o nome personalizado do `repo_id` durante a recolha de dados. 
 
 ![Visualizar um dataset opcional, pode ser tentado – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/6.png)
 
@@ -571,7 +571,7 @@ lerobot-train \
   --steps=300000 
 ```
 
-**Se você quiser treinar com um dataset local, certifique-se de que o `repo_id` corresponda ao nome usado na coleta de dados e adicione `--policy.push_to_hub=false`.** 
+**Se você quiser treinar com um dataset local, certifique-se de que o `repo_id` corresponda ao nome usado na recolha de dados e adicione `--policy.push_to_hub=false`.** 
 
 ```Python
 lerobot-train \
@@ -589,13 +589,13 @@ Explicação dos comandos
 
 - **Especificação do dataset**: fornecemos o dataset pelo parâmetro `--dataset.repo_id=${HF_USER}/so101_test`.
 
-- **Passos de treinamento**: alteramos os passos de treinamento com `--steps=300000`. O valor padrão do algoritmo é 800000. Ajuste-o observando a perda durante o treinamento, de acordo com a dificuldade da sua tarefa.
+- **Passos de treino**: alteramos os passos de treino com `--steps=300000`. O valor padrão do algoritmo é 800000. Ajuste-o observando a perda durante o treino, de acordo com a dificuldade da sua tarefa.
 
 - **Tipo de política**: usamos `policy.type=act` para fornecer a política. Da mesma forma, você pode mudar para outras políticas, como [act, diffusion, pi0, pi0fast, pi0.5, sac, smolvla], que carregarão a configuração de `configuration_act.py`. Importante: essa política se adapta automaticamente ao estado do motor, à ação do motor e ao número de câmaras do seu robô (por exemplo, `laptop` e `phone`), que foram salvos no seu dataset.
 
 - **Seleção de dispositivo**: usamos `policy.device=cuda` porque estamos treinando em uma GPU Nvidia, mas você pode usar `policy.device=mps` para treinar em Apple Silicon.
 
-- **Ferramenta de visualização**: usamos `wandb.enable=true` para usar o [Weights and Biases](https://docs.wandb.ai/quickstart) na visualização dos gráficos de treinamento. Isso é opcional, mas, se você usar, certifique-se de ter feito login a executar `wandb login`.
+- **Ferramenta de visualização**: usamos `wandb.enable=true` para usar o [Weights and Biases](https://docs.wandb.ai/quickstart) na visualização dos gráficos de treino. Isso é opcional, mas, se você usar, certifique-se de ter feito login a executar `wandb login`.
 
 Se você encontrar o seguinte erro: 
 
@@ -607,9 +607,9 @@ Tente executar o seguinte comando para resolver:
 pip install datasets==2.19
 ```
 
-O treinamento pode levar várias horas. Você encontrará os ficheiros de pesos do treinamento no diretório `outputs/train/act_so101_test/checkpoints`.
+O treino pode levar várias horas. Você encontrará os ficheiros de pesos do treino no diretório `outputs/train/act_so101_test/checkpoints`.
 
-Para retomar o treinamento a partir de um ficheiro de pesos específico, o seguinte é um comando de exemplo para retomar o treinamento a partir do último ficheiro de pesos da política `act_so101_test`:
+Para retomar o treino a partir de um ficheiro de pesos específico, o seguinte é um comando de exemplo para retomar o treino a partir do último ficheiro de pesos da política `act_so101_test`:
 
 ```Bash
 lerobot-train \
@@ -619,7 +619,7 @@ lerobot-train \
 
 **Avaliação**
 
-Você pode usar a função [`record`](https://github.com/huggingface/lerobot/blob/main/lerobot/record.py) em `lerobot/record.py`, mas precisa usar o ficheiro de pesos dos resultados do treinamento da política como entrada. Por exemplo, execute o seguinte comando para registrar 10 rodadas de avaliação:
+Você pode usar a função [`record`](https://github.com/huggingface/lerobot/blob/main/lerobot/record.py) em `lerobot/record.py`, mas precisa usar o ficheiro de pesos dos resultados do treino da política como entrada. Por exemplo, execute o seguinte comando para registar 10 rodadas de avaliação:
 
 ```Python
 lerobot-record \
@@ -640,13 +640,13 @@ lerobot-record \
   --dataset.push_to_hub=false
 ```
 
-1. O parâmetro `--policy.path` indica o caminho para o ficheiro de pesos do treinamento da sua política (por exemplo, `outputs/train/act_so101_test/checkpoints/last/pretrained_model`). Se você enviou o ficheiro de pesos do treinamento para o Hub, também pode usar o repositório do modelo (por exemplo, `${HF_USER}/act_so101_test`). 
+1. O parâmetro `--policy.path` indica o caminho para o ficheiro de pesos do treino da sua política (por exemplo, `outputs/train/act_so101_test/checkpoints/last/pretrained_model`). Se você enviou o ficheiro de pesos do treino para o Hub, também pode usar o repositório do modelo (por exemplo, `${HF_USER}/act_so101_test`). 
 
 2. O nome do dataset `dataset.repo_id` começa com `eval_`; essa operação grava separadamente o vídeo e os dados durante a avaliação, que serão salvos em uma pasta que começa com eval_, por exemplo `juxi/eval_test123`. 
 
 3. Se na fase de avaliação aparecer `File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'`, exclua primeiro a pasta que começa com `eval_` e execute o programa novamente. 
 
-4. Ao encontrar `mean is infinity. You should either initialize with stats as an argument or use a pretrained model`, observe que as palavras-chave como front e side no parâmetro --robot.cameras devem ser estritamente as mesmas usadas na coleta do dataset. 
+4. Ao encontrar `mean is infinity. You should either initialize with stats as an argument or use a pretrained model`, observe que as palavras-chave como front e side no parâmetro --robot.cameras devem ser estritamente as mesmas usadas na recolha do dataset. 
 
 ### Smolvla
 
@@ -846,9 +846,9 @@ cd ~/lerobot && pip install -e ".[feetech]"
 
 #### **8. Importe o dataset para o servidor na nuvem**
 
-Há dois cenários: um é quando o dataset foi enviado ao banco de dados do Hugging Face durante a coleta de dados, e o outro é quando o dataset está apenas armazenado localmente no seu computador.
+Há dois cenários: um é quando o dataset foi enviado ao banco de dados do Hugging Face durante a recolha de dados, e o outro é quando o dataset está apenas armazenado localmente no seu computador.
 
-**① Se o dataset foi enviado ao Hugging Face durante a coleta de dados, ele pode ser obtido com a chave gerada na configuração da conta do Hugging Face.**
+**① Se o dataset foi enviado ao Hugging Face durante a recolha de dados, ele pode ser obtido com a chave gerada na configuração da conta do Hugging Face.**
 
 ![8. Importe o dataset para o servidor na nuvem – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/13.png)
 
@@ -910,11 +910,11 @@ Arraste a pasta do dataset para o lado direito para transferir e aguarde a trans
 
 #### 9. Treinamento do dataset
 
-Consulte [E. Treinamento e avaliação do dataset](https://juxitech.feishu.cn/docx/PsgFdioh2olGRmxgAqCcQM9znCc#doxcnHPqbNP74wfV6gZqtbPVytb) neste tutorial e execute o comando de treinamento no servidor na nuvem
+Consulte [E. Treinamento e avaliação do dataset](https://juxitech.feishu.cn/docx/PsgFdioh2olGRmxgAqCcQM9znCc#doxcnHPqbNP74wfV6gZqtbPVytb) neste tutorial e execute o comando de treino no servidor na nuvem
 
 #### 10. Exportação do ficheiro do modelo
 
-Após a conclusão do treinamento, exporte o modelo treinado correspondente na pasta train 
+Após a conclusão do treino, exporte o modelo treinado correspondente na pasta train 
 
 ![10. Exportação do ficheiro do modelo – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/24.png)
 
@@ -1007,15 +1007,15 @@ Exclua primeiro a pasta que começa com `eval_` e execute o programa novamente.
 `mean` is infinity. You should either initialize with `stats` as an argument or use a pretrained model
 ```
 
-Observe que as palavras-chave como "front" e "side" no parâmetro "robot.cameras" devem ser estritamente as mesmas usadas durante a coleta de dados. 
+Observe que as palavras-chave como "front" e "side" no parâmetro "robot.cameras" devem ser estritamente as mesmas usadas durante a recolha de dados. 
 
 - Se você reparou ou substituiu peças do braço robótico, exclua completamente os ficheiros em `~/.cache/huggingface/lerobot/calibration/robots` ou `~/.cache/huggingface/lerobot/calibration/teleoperators` e recalibre o braço robótico. Caso contrário, aparecerá uma mensagem de erro. As informações do braço robótico calibrado serão armazenadas no ficheiro JSON nesse diretório. 
 
 - O tempo necessário para treinar 50 conjuntos de dados ACT em um notebook 3060 de 8GB é de aproximadamente 6 horas; em um computador com 4090 ou A100, leva cerca de 2 a 3 horas. 
 
-- Durante a coleta de dados, é necessário garantir a estabilidade da posição e do ângulo da câmara e da iluminação ambiente, e reduzir a captura de fundos instáveis e de pedestres em excesso. Caso contrário, mudanças excessivas no ambiente farão o braço robótico falhar na preensão. 
+- Durante a recolha de dados, é necessário garantir a estabilidade da posição e do ângulo da câmara e da iluminação ambiente, e reduzir a captura de fundos instáveis e de pedestres em excesso. Caso contrário, mudanças excessivas no ambiente farão o braço robótico falhar na preensão. 
 
-- O num_episodes do comando de coleta de dados deve garantir coleta suficiente e não deve ser pausado manualmente no meio do processo, pois a média e a variância dos dados só serão calculadas após a conclusão da coleta, e são dados necessários para o treinamento. 
+- O num_episodes do comando de recolha de dados deve garantir recolha suficiente e não deve ser pausado manualmente no meio do processo, pois a média e a variância dos dados só serão calculadas após a conclusão da recolha, e são dados necessários para o treino. 
 
 - Se o programa indicar que não consegue ler os dados de imagem da câmara USB, garanta que a câmara USB não esteja conectada a um hub. A câmara USB deve ser conectada diretamente ao dispositivo para garantir uma taxa rápida de transmissão de imagem. 
 

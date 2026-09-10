@@ -1,18 +1,18 @@
 ---
 title: Introdução à IA Incorporada (LeRobot)
-description: Introdução à IA incorporada — framework LeRobot, coleta/treinamento/avaliação do SO-ARM101, seleção de ACT/Diffusion/SmolVLA
-keywords: [lerobot, ia incorporada, aprendizado por imitação, act, so-arm101]
+description: Introdução à IA incorporada — framework LeRobot, recolha/treino/avaliação do SO-ARM101, seleção de ACT/Diffusion/SmolVLA
+keywords: [lerobot, ia incorporada, aprendizagem por imitação, act, so-arm101]
 ---
 
 # Introdução à IA Incorporada (LeRobot)
 
-> Para desenvolvedores a fazer robot learning pela primeira vez. Usando HuggingFace LeRobot + SO-ARM101 da Juxi Technology como exemplo: pipeline completo de **coletar → treinar → avaliar**.
+> Para desenvolvedores a fazer robot learning pela primeira vez. Usando HuggingFace LeRobot + SO-ARM101 da Juxi Technology como exemplo: pipeline completo de **recolher → treinar → avaliar**.
 
 ## 1. O que é IA Incorporada?
 
-IA incorporada permite que agentes interajam com o mundo físico por meio de sensores corporais. O aprendizado por imitação é um caminho central: demonstrações por teleoperação humana → coleta de dados → treinamento de políticas → o robô reproduz as ações.
+IA incorporada permite que agentes interajam com o mundo físico por meio de sensores corporais. O aprendizagem por imitação é um caminho central: demonstrações por teleoperação humana → recolha de dados → treino de políticas → o robô reproduz as ações.
 
-**Por que importa**: a programação tradicional não cobre manipulações complexas (aparafusar, dobrar roupas), mas o aprendizado por imitação só precisa de "demonstrar + treinar".
+**Por que importa**: a programação tradicional não cobre manipulações complexas (aparafusar, dobrar roupas), mas o aprendizagem por imitação só precisa de "demonstrar + treinar".
 
 ## 2. Configuração de Hardware
 
@@ -53,7 +53,7 @@ lerobot-record \
   --dataset.episode_time_s=30
 ```
 
-**Dicas de coleta**:
+**Dicas de recolha**:
 
 - ≥50 episódios por tarefa, varie posições/técnicas
 - Mantenha as câmaras fixas e os objetos visíveis
@@ -109,7 +109,7 @@ lerobot-record \
 
 **R:** Treinamento de tarefa única precisa de datasets multi-tarefa; os modelos base GR00T/Pi0 podem ser ajustados com poucos dados para multi-tarefa.
 
-**P: Ações instáveis após o treinamento?**
+**P: Ações instáveis após o treino?**
 
 **R:** Verifique a qualidade dos dados (demonstrações estáveis), adicione suavização, reduza a frequência de controle.
 

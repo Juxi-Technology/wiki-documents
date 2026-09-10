@@ -16,7 +16,7 @@ O código deste repositório de tutorial é mantido na versão estável do Lerob
 
 
 
-[LeKiwi](https://github.com/SIGRobotics-UIUC/LeKiwi) é um projeto de carro-robô totalmente open source criado pela [SIGRobotics-UIUC](https://github.com/SIGRobotics-UIUC). Ele inclui ficheiros detalhados de impressão 3D e guias de operação, e foi projetado para ser compatível com o framework de aprendizado por imitação [LeRobot](https://github.com/huggingface/lerobot/tree/main). Ele suporta o braço robótico SO101, possibilitando um processo completo de aprendizado por imitação.
+[LeKiwi](https://github.com/SIGRobotics-UIUC/LeKiwi) é um projeto de carro-robô totalmente open source criado pela [SIGRobotics-UIUC](https://github.com/SIGRobotics-UIUC). Ele inclui ficheiros detalhados de impressão 3D e guias de operação, e foi projetado para ser compatível com o framework de aprendizagem por imitação [LeRobot](https://github.com/huggingface/lerobot/tree/main). Ele suporta o braço robótico SO101, possibilitando um processo completo de aprendizagem por imitação.
 
 [*As posições precisas dos componentes podem ser visualizadas no CAD online Fusion360*](https://a360.co/4k1P8yO)*.*
 
@@ -32,19 +32,19 @@ Visualização online do URDF https://urdf.d-robotics.cc/
 
 2. **Integração com o LeRobot**: projetado especificamente para integração com a [plataforma LeRobot](https://github.com/huggingface/lerobot).
 
-3. **Recursos de aprendizado abundantes**: oferece recursos de aprendizado open source abrangentes, incluindo guias de montagem e calibração, além de tutoriais sobre testes, coleta de dados, treinamento e implantação, para ajudar os utilizadors a começar rapidamente e desenvolver aplicações robóticas.
+3. **Recursos de aprendizagem abundantes**: oferece recursos de aprendizagem open source abrangentes, incluindo guias de montagem e calibração, além de tutoriais sobre testes, recolha de dados, treino e implantação, para ajudar os utilizadores a começar rapidamente e desenvolver aplicações robóticas.
 
 4. **Compatível com Nvidia**: pode ser usado em conjunto com o reComputer Mini J4012 Orin NX 16 GB. 
 
-5. **Aplicação em múltiplos cenários**: adequado para as áreas de educação, pesquisa científica, produção automatizada e robótica, ajudando os utilizadors a realizar operações robóticas eficientes e precisas em diversas tarefas complexas.
+5. **Aplicação em múltiplos cenários**: adequado para as áreas de educação, pesquisa científica, produção automatizada e robótica, ajudando os utilizadores a realizar operações robóticas eficientes e precisas em diversas tarefas complexas.
 
 A JUXI é responsável apenas pela qualidade do hardware em si. Os tutoriais são atualizados estritamente de acordo com a documentação oficial. Se você encontrar problemas de software ou de dependências de ambiente que realmente não consiga resolver, reporte-os prontamente à [plataforma LeRobot](https://github.com/huggingface/lerobot) ou ao [canal do LeRobot no Discord](https://discord.gg/8TnwDdjFGU).
 
 **Atenção**
 
-- Todos os servos do chassis do Lekiwi precisam de alimentação de 12V. Para utilizadors que usam um braço robótico de 5V, fornecemos um módulo conversor redutor de 12V para 5V. Observe que você precisará modificar o circuito por conta própria.
+- Todos os servos do chassis do Lekiwi precisam de alimentação de 12V. Para utilizadores que usam um braço robótico de 5V, fornecemos um módulo conversor redutor de 12V para 5V. Observe que você precisará modificar o circuito por conta própria.
 
-- Fonte de alimentação de 12V — se necessário, você pode selecionar essa opção no checkout. Se você já tiver uma fonte de 12V, basta converter a interface de saída de energia para um plugue CC 5521.
+- Fonte de alimentação de 12V — se necessário, você pode selecionar essa opção no checkout. Se você já tiver uma fonte de 12V, basta converter a interface de saída de energia para um ficha CC 5521.
 
 - O controlador Raspberry Pi e a câmara precisam ser comprados separadamente pela interface de pedido. 
 
@@ -113,7 +113,7 @@ rm ~/miniconda3/miniconda.sh
 
 ### 2. Reiniciar o Shell
 
-Copie e cole o seguinte comando no seu Shell:`source ~/.bashrc` ou, para utilizadors de Mac:`source ~/.bash_profile` ou `source ~/.zshrc` (se você usar zshell)
+Copie e cole o seguinte comando no seu Shell:`source ~/.bashrc` ou, para utilizadores de Mac:`source ~/.bash_profile` ou `source ~/.zshrc` (se você usar zshell)
 
 ### 3. Criar e ativar um novo ambiente Conda para o LeRobot
 
@@ -184,7 +184,7 @@ No seu computador:
 
 ### 2. Reiniciar o Shell
 
-Copie e cole o seguinte comando no seu shell:`source ~/.bashrc` ou, para utilizadors de Mac:`source ~/.bash_profile` ou `source ~/.zshrc` (se você usar zshell)
+Copie e cole o seguinte comando no seu shell:`source ~/.bashrc` ou, para utilizadores de Mac:`source ~/.bash_profile` ou `source ~/.zshrc` (se você usar zshell)
 
 ![2. Reiniciar o Shell – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
@@ -335,7 +335,7 @@ hf auth whoami
 
 #### ④ Criar repositório de dataset
 
-**Registre o Owner e o nome do Dataset, que são o \<hf_username\> e o \<dataset_repo_id\> necessários adiante**
+**Registe o Owner e o nome do Dataset, que são o \<hf_username\> e o \<dataset_repo_id\> necessários adiante**
 
 ![④ Criar repositório de dataset – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
@@ -435,7 +435,7 @@ Em seguida, no seu notebook, execute também o comando a seguir para ativar o am
 python examples/lekiwi/teleoperate.py
 ```
 
-A ecrã do seu notebook deve exibir uma interface semelhante a esta:`[INFO] Connected to remote robot at tcp://172.17.133.91:5555 and video stream at tcp://172.17.133.91:5556.`Agora você pode mover o braço de controle e usar as teclas (W, A, S, D) do teclado para controlar o robô: avançar, virar à esquerda, recuar e virar à direita. Use as teclas (Z, X) para controlar o robô virando à esquerda ou à direita. Use as teclas (R, F) para aumentar ou diminuir a velocidade do robô móvel. Há três modos de velocidade no total; consulte a tabela a seguir: 
+O ecrã do seu notebook deve exibir uma interface semelhante a esta:`[INFO] Connected to remote robot at tcp://172.17.133.91:5555 and video stream at tcp://172.17.133.91:5556.`Agora você pode mover o braço de controle e usar as teclas (W, A, S, D) do teclado para controlar o robô: avançar, virar à esquerda, recuar e virar à direita. Use as teclas (Z, X) para controlar o robô virando à esquerda ou à direita. Use as teclas (R, F) para aumentar ou diminuir a velocidade do robô móvel. Há três modos de velocidade no total; consulte a tabela a seguir: 
 
 Se você usar um teclado diferente, pode alterar as configurações de teclas de cada comando [`em LeKiwiClientConfig`](https://github.com/huggingface/lerobot/blob/main/src/lerobot/robots/lekiwi/config_lekiwi.py) . 
 
@@ -451,7 +451,7 @@ Certifique-se de que o endereço IP correto do Raspberry Pi esteja definido no f
 hostname *-I*
 ```
 
-### 2. Verifique se o notebook/PC consegue acessar o Pi
+### 2. Verifique se o notebook/PC consegue aceder o Pi
 
 Tente dar ping no Raspberry Pi a partir do notebook: 
 
@@ -491,7 +491,7 @@ Certifique-se de que os ficheiros de configuração no notebook/PC e no Raspberr
 
 # G. Registrar dataset 
 
-Depois de se familiarizar com a operação remota, você pode usar o LeKiwi para registrar seu primeiro dataset. 
+Depois de se familiarizar com a operação remota, você pode usar o LeKiwi para registar seu primeiro dataset. 
 
 Para iniciar o programa no LeKiwi, conecte-se ao seu Raspberry Pi via SSH e execute os comandos a seguir para ativar o ambiente e iniciar o script:
 
@@ -513,7 +513,7 @@ Guarde o nome do seu repositório do Hugging Face em uma variável para executar
 *hf auth whoami*
 ```
 
-Em seguida, execute o seguinte comando no seu notebook para registrar 2 rodadas e enviar o dataset ao Hub: 
+Em seguida, execute o seguinte comando no seu notebook para registar 2 rodadas e enviar o dataset ao Hub: 
 
 ```Bash
 python examples/lekiwi/record.py
@@ -555,15 +555,15 @@ lerobot-dataset-viz \
   --repo-id juxi/my_lekiwi_dataset \
 ```
 
-Aqui, `juxi` é o nome personalizado do `repo_id` durante a coleta de dados. 
+Aqui, `juxi` é o nome personalizado do `repo_id` durante a recolha de dados. 
 
 
 
-#### Técnicas de coleta de dados
+#### Técnicas de recolha de dados
 
-Depois que você se familiarizar com o registo de dados, poderá criar datasets maiores para o treinamento. Uma boa tarefa inicial é agarrar objetos de posições diferentes e colocá-los em recipientes. Recomendamos registrar pelo menos 50 segmentos, com 10 segmentos para cada posição. Mantenha a posição da câmara fixa e mantenha ações de preensão consistentes durante todo o registo. Além disso, garanta que os objetos manipulados estejam claramente visíveis no quadro da câmara. Um critério simples é que você consiga concluir a tarefa apenas observando o feed da câmara. 
+Depois que você se familiarizar com o registo de dados, poderá criar datasets maiores para o treino. Uma boa tarefa inicial é agarrar objetos de posições diferentes e colocá-los em recipientes. Recomendamos registar pelo menos 50 segmentos, com 10 segmentos para cada posição. Mantenha a posição da câmara fixa e mantenha ações de preensão consistentes durante todo o registo. Além disso, garanta que os objetos manipulados estejam claramente visíveis no quadro da câmara. Um critério simples é que você consiga concluir a tarefa apenas observando o feed da câmara. 
 
-Nos capítulos a seguir, você treinará sua rede neural. Depois de obter um desempenho confiável de preensão, você pode começar a introduzir mais variações durante o processo de coleta de dados, como aumentar as posições de preensão, adotar técnicas diferentes de preensão e alterar as posições da câmara. 
+Nos capítulos a seguir, você treinará sua rede neural. Depois de obter um desempenho confiável de preensão, você pode começar a introduzir mais variações durante o processo de recolha de dados, como aumentar as posições de preensão, adotar técnicas diferentes de preensão e alterar as posições da câmara. 
 
 Evite adicionar muitas mudanças de uma vez, pois isso pode afetar seus resultados. 
 
@@ -571,7 +571,7 @@ Se você quiser se aprofundar nesse tópico importante, confira nossa postagem n
 
 #### Solução de problemas:
 
-Em sistemas Linux, se as teclas de seta esquerda e direita e a tecla Esc não funcionarem durante a coleta de dados, certifique-se de que a variável de ambiente `$DISPLAY` esteja definida. Consulte as [limitações do pynput](https://pynput.readthedocs.io/en/latest/limitations.html#linux)
+Em sistemas Linux, se as teclas de seta esquerda e direita e a tecla Esc não funcionarem durante a recolha de dados, certifique-se de que a variável de ambiente `$DISPLAY` esteja definida. Consulte as [limitações do pynput](https://pynput.readthedocs.io/en/latest/limitations.html#linux)
 
 # I. Reproduzir uma rodada
 
@@ -581,7 +581,7 @@ Agora tente reproduzir a primeira rodada no seu robô:
 python examples/lekiwi/replay.py
 ```
 
-Parabéns 🎉, seu robô está pronto para tarefas de aprendizado autônomo. Siga a seção de treinamento deste tutorial para começar a treiná-lo: [Introdução a robôs do mundo real](https://huggingface.co/docs/lerobot/il_robots)
+Parabéns 🎉, seu robô está pronto para tarefas de aprendizagem autônomo. Siga a seção de treino deste tutorial para começar a treiná-lo: [Introdução a robôs do mundo real](https://huggingface.co/docs/lerobot/il_robots)
 
 ## K. Avalie sua política
 
@@ -589,7 +589,7 @@ Certifique-se de alterar remote_ip, port e HF_MODEL_ID
 
 #### Modificar evaluate.py
 
-HF_MODEL_ID="\<hf_username\>/\<model_repo_id\>" deve ser alterado para o nome do dataset enviado ao Hugging Face após o treinamento (se tiver sido enviado ao Hugging Face) ou para o diretório onde o modelo foi exportado localmente após o treinamento
+HF_MODEL_ID="\<hf_username\>/\<model_repo_id\>" deve ser alterado para o nome do dataset enviado ao Hugging Face após o treino (se tiver sido enviado ao Hugging Face) ou para o diretório onde o modelo foi exportado localmente após o treino
 
 HF_DATASET_ID = "\<hf_username\>/\<eval_dataset_id\>" Altere para o nome de utilizador e o nome do dataset eval_ que você criou
 
@@ -609,7 +609,7 @@ python examples/lekiwi/evaluate.py
 
 
 
-O treinamento em simulação pode consultar
+O treino em simulação pode consultar
 
 https://github.com/Ekumen-OS/lekiwi/tree/main
 

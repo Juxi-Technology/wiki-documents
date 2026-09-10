@@ -390,7 +390,7 @@ sudo apt install -y pipewire pipewire-alsa
 
 ### Armadilhas comuns e soluções do sistema da versão Lite
 
-**1. Permissões insuficientes: utilizadors comuns não podem acessar a placa de som**
+**1. Permissões insuficientes: utilizadores comuns não podem aceder a placa de som**
 
 Solução: adicione o utilizador ao grupo `audio`, o que terá efeito após reiniciar: 
 

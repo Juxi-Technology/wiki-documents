@@ -11,7 +11,7 @@ keywords: [lekiwi, robô móvel, robô de ensino, educação]
 
 ## Visão Geral
 
-O Lekiwi é o robô móvel de inteligência incorporada de baixo custo da Juxi Technology com controle intuitivo por servo — ideal para ensino em sala de aula, aprendizado de iniciantes e projetos maker. Alimentação opcional de 12V (DC 5521).
+O Lekiwi é o robô móvel de inteligência incorporada de baixo custo da Juxi Technology com controle intuitivo por servo — ideal para ensino em sala de aula, aprendizagem de iniciantes e projetos maker. Alimentação opcional de 12V (DC 5521).
 
 **Principais recursos**:
 

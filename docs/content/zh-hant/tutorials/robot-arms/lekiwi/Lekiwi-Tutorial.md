@@ -12,7 +12,7 @@ description: "黑色主動臂使用5V 6A電源適配器，白色被動臂使用1
 
 [lerobot-Lekiwi.zip]
 
-本教程庫中的代碼保持在2026年3月1日之前測試的Lerobot穩定版，目前Huggingface對Lerobot進行了非常大幅度的升級，增加了大量新功能，如需體驗最新教程，請跟隨[官方留檔進行操作](https://huggingface.co/docs/lerobot/lekiwi)。
+本教程庫中的代碼保持在2026年3月1日之前測試的Lerobot穩定版，目前Huggingface對Lerobot進行了非常大幅度的升級，增加了大量新功能，如需體驗最新教程，請跟隨[官方文檔進行操作](https://huggingface.co/docs/lerobot/lekiwi)。
 
 
 
@@ -38,11 +38,11 @@ description: "黑色主動臂使用5V 6A電源適配器，白色被動臂使用1
 
 5. **多場景應用**：適用於教育、科研、自動化生產、機器人領域，幫助用戶在各種複雜任務中實現高效精準的機器人操作。
 
-JUXI僅對硬件本身質量負責，教程嚴格按照官方留檔更新，如遇到軟件問題或環境依賴問題確實無法解決，請及時向[樂機器人平臺](https://github.com/huggingface/lerobot)或[樂機器人不和頻道](https://discord.gg/8TnwDdjFGU)反映問題。
+JUXI僅對硬件本身質量負責，教程嚴格按照官方文檔更新，如遇到軟件問題或環境依賴問題確實無法解決，請及時向[LeRobot 平臺](https://github.com/huggingface/lerobot)或[LeRobotDiscord](https://discord.gg/8TnwDdjFGU)反映問題。
 
 **注意**
 
-- Lekiwi機箱中的所有伺服都需要12V電源。對於使用5V機械臂的用戶，我們提供12V至5V降壓轉換模塊。請注意，您需要自己修改電路。
+- Lekiwi底盤中的所有伺服都需要12V電源。對於使用5V機械臂的用戶，我們提供12V至5V降壓轉換模塊。請注意，您需要自己修改電路。
 
 - 12V電源-如果需要，您可以在結賬時選擇此選項。如果您已經有12V電源，只需將電源輸出接口轉換爲5521 DC插頭即可。
 
@@ -102,7 +102,7 @@ JUXI僅對硬件本身質量負責，教程嚴格按照官方留檔更新，如�
 
 在您的樹莓派上：
 
-### 1.[安裝Minicon da](https://docs.anaconda.com/miniconda/install/#quick-command-line-install)：
+### 1.[安裝Miniconda](https://docs.anaconda.com/miniconda/install/#quick-command-line-install)：
 
 ```Python
 mkdir *-p* ~/miniconda3
@@ -113,7 +113,7 @@ rm ~/miniconda3/miniconda.sh
 
 ### 2.重啓Shell
 
-在Shell中複製並粘貼以下命令：`source~/. bashrc`或Mac用戶：`source~/.bash_profile`或`source~/.zshrc`（如果您使用的是zshell）
+在Shell中複製並粘貼以下命令：`source ~/.bashrc`或Mac用戶：`source ~/.bash_profile`或`source ~/.zshrc`（如果您使用的是zshell）
 
 ### 3.爲LeRobot創建和激活一個新的Conda環境
 
@@ -141,13 +141,13 @@ git clone https://github.com/huggingface/lerobot.git ~/lerobot
 conda install ffmpeg -c conda-forge
 ```
 
-這通常會爲您的平臺安裝使用libsvtav1編碼器編譯的ffmpeg 7. X。如果不支持libsvtav1（您可以通過`ffmpeg-編碼器`檢查支持的編碼器），您可以：
+這通常會爲您的平臺安裝使用libsvtav1編碼器編譯的ffmpeg 7. X。如果不支持libsvtav1（您可以通過`ffmpeg -encoders`檢查支持的編碼器），您可以：
 
 [適用於所有平臺]顯式安裝ffmpeg 7. X：
 
-`安裝ffmpeg=7.1.1-c conda-forge`
+`conda install ffmpeg=7.1.1 -c conda-forge`
 
-[僅Linux]安裝ffmpeg的構建依賴項並從源代碼編譯支持libsvtav1的ffmpeg，並確保使用的ffmpeg可執行文件是正確的，這可以通過`哪個ffmpeg`來確認。
+[僅Linux]安裝ffmpeg的構建依賴項並從源代碼編譯支持libsvtav1的ffmpeg，並確保使用的ffmpeg可執行文件是正確的，這可以通過`which ffmpeg`來確認。
 
 如果遇到以下錯誤，也可以使用上述命令解決。
 
@@ -180,11 +180,11 @@ connection_time_s: int = 7200 # 也就是2小时
 
 在您的計算機上：
 
-### 1.[安裝Minicon da](https://docs.anaconda.com/miniconda/install/#quick-command-line-install)：
+### 1.[安裝Miniconda](https://docs.anaconda.com/miniconda/install/#quick-command-line-install)：
 
 ### 2.重啓Shell
 
-在shell中複製並粘貼以下命令：`source~/. bashrc`或Mac用戶：`source~/.bash_profile`或`source~/.zshrc`（如果您使用的是zshell）
+在shell中複製並粘貼以下命令：`source ~/.bashrc`或Mac用戶：`source ~/.bash_profile`或`source ~/.zshrc`（如果您使用的是zshell）
 
 ![2.重啓Shell – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
@@ -214,13 +214,13 @@ git clone https://github.com/huggingface/lerobot.git ~/lerobot
 conda install ffmpeg -c conda-forge
 ```
 
-這通常會爲您的平臺安裝使用libsvtav1編碼器編譯的ffmpeg 7. X。如果不支持libsvtav1（您可以通過`ffmpeg-編碼器`檢查支持的編碼器），您可以：
+這通常會爲您的平臺安裝使用libsvtav1編碼器編譯的ffmpeg 7. X。如果不支持libsvtav1（您可以通過`ffmpeg -encoders`檢查支持的編碼器），您可以：
 
 [適用於所有平臺]顯式安裝ffmpeg 7. X：
 
-`安裝ffmpeg=7.1.1-c conda-forge`
+`conda install ffmpeg=7.1.1 -c conda-forge`
 
-[僅Linux]安裝ffmpeg的構建依賴項並從源代碼編譯支持libsvtav1的ffmpeg，並確保使用的ffmpeg可執行文件是正確的，這可以通過`哪個ffmpeg`來確認。
+[僅Linux]安裝ffmpeg的構建依賴項並從源代碼編譯支持libsvtav1的ffmpeg，並確保使用的ffmpeg可執行文件是正確的，這可以通過`which ffmpeg`來確認。
 
 如果遇到以下錯誤，也可以使用上述命令解決。
 
@@ -260,7 +260,7 @@ sudo chmod 666 /dev/ttyACM1
 
 ### **2.配置您的電機（成品可以跳過此步驟）**
 
-按順序插入機箱的每個電機並運行以下腳本。它將首先初始化機械臂的伺服系統（ID 6…1），然後初始化機箱伺服系統，將它們的ID設置爲（ID 9…7）。如果您已經校準了機械臂，您可以連續按Enter覆蓋並跳過：
+按順序插入底盤的每個電機並運行以下腳本。它將首先初始化機械臂的伺服系統（ID 6…1），然後初始化底盤伺服系統，將它們的ID設置爲（ID 9…7）。如果您已經校準了機械臂，您可以連續按Enter覆蓋並跳過：
 
 ```Bash
 lerobot-setup-motors \
@@ -333,15 +333,15 @@ hf auth whoami
 
 ![③綁定Token – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
-#### 創建數據集回購
+#### 創建數據集倉庫
 
 **記錄Owner和Dateset名稱，這是後面需要的\<hf_username\>和\<dateset_repo_id\>**
 
-![創建數據集回購 – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
+![創建數據集倉庫 – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
-![創建數據集回購 – 2](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
+![創建數據集倉庫 – 2](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
-![創建數據集回購 – 3](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
+![創建數據集倉庫 – 3](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
 ### 4.更新配置！！！
 
@@ -370,7 +370,7 @@ remote_ip：樹莓派的IP地址
 
 #### 修改record.py
 
-[HF_REPO_ID：擁抱臉上的用戶名和數據集名稱](https://juxitech.feishu.cn/docx/ML3KdzbJAogL4UxJnbXcThVkngg?fromScene=spaceOverview#doxcnbVewyqzNCN91akCqNmlwld)
+[HF_REPO_ID：Hugging Face上的用戶名和數據集名稱](https://juxitech.feishu.cn/docx/ML3KdzbJAogL4UxJnbXcThVkngg?fromScene=spaceOverview#doxcnbVewyqzNCN91akCqNmlwld)
 
 remote_ip：樹莓派的IP地址
 
@@ -382,7 +382,7 @@ remote_ip：樹莓派的IP地址
 
 remote_ip：樹莓派的IP地址
 
-\<hf_username\>/\<dataset_repo_id\>，即[擁抱臉的用戶名和數據集名稱](https://juxitech.feishu.cn/docx/ML3KdzbJAogL4UxJnbXcThVkngg?fromScene=spaceOverview#doxcnbVewyqzNCN91akCqNmlwld)
+\<hf_username\>/\<dataset_repo_id\>，即[Hugging Face的用戶名和數據集名稱](https://juxitech.feishu.cn/docx/ML3KdzbJAogL4UxJnbXcThVkngg?fromScene=spaceOverview#doxcnbVewyqzNCN91akCqNmlwld)
 
 ![修改replay.py – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
@@ -401,7 +401,7 @@ lerobot-calibrate \
     --teleop.id=my_awesome_leader_arm
 ```
 
-現在在Raspberry Pi上運行以下命令來校準LeKiwi上的從屬臂。忽略它在桌子上的當前位置-安裝在Lekiwi機箱上時應執行正常校準。
+現在在Raspberry Pi上運行以下命令來校準LeKiwi上的從屬臂。忽略它在桌子上的當前位置-安裝在Lekiwi底盤上時應執行正常校準。
 
 ```Bash
 lerobot-calibrate \
@@ -413,7 +413,7 @@ lerobot-calibrate \
 
 # F.遠程操作
 
-打開新的蟒蛇提示
+打開新的Anaconda Prompt
 
 ![校準從動臂（安裝在Lekiwi底座上） – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
@@ -421,7 +421,7 @@ lerobot-calibrate \
 > 
 > 
 
-要執行遠程操作，請通過SSH登錄您的Raspberry Pi並運行以下命令來激活`環境conda激活lerobot`，然後運行以下腳本：
+要執行遠程操作，請通過SSH登錄您的Raspberry Pi並運行以下命令來激活`conda activate lerobot`，然後運行以下腳本：
 
 ```Bash
 python -m lerobot.robots.lekiwi.lekiwi_host --robot.id=my_awesome_kiwi
@@ -429,13 +429,13 @@ python -m lerobot.robots.lekiwi.lekiwi_host --robot.id=my_awesome_kiwi
 
 ![校準從動臂（安裝在Lekiwi底座上） – 2](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
-接下來，在您的筆記本電腦上，也運行以下命令來激活環境`conda激活lerobot`，然後運行以下腳本：
+接下來，在您的筆記本電腦上，也運行以下命令來激活環境`conda activate lerobot`，然後運行以下腳本：
 
 ```Bash
 python examples/lekiwi/teleoperate.py
 ```
 
-您的筆記本電腦屏幕應該顯示類似於這樣的界面：`[INFO]在tcp://172.17.133.91:5555連接到遠程機器人，在tcp://172.17.133.91:5556連接到視頻流。`現在您可以移動控制臂，使用鍵盤上的（W、A、S、D）鍵控制機器人前進、左轉、後退和右轉。使用（Z、X）鍵控制機器人左轉或右轉。使用（R、F）鍵增加或降低移動機器人的速度。一共有三種速度模式，請參考下表：
+您的筆記本電腦屏幕應該顯示類似於這樣的界面：`[INFO] Connected to remote robot at tcp://172.17.133.91:5555 and video stream at tcp://172.17.133.91:5556.`現在您可以移動控制臂，使用鍵盤上的（W、A、S、D）鍵控制機器人前進、左轉、後退和右轉。使用（Z、X）鍵控制機器人左轉或右轉。使用（R、F）鍵增加或降低移動機器人的速度。一共有三種速度模式，請參考下表：
 
 如果您使用不同的鍵盤，您可以更改[`LeKiwiClientConfig中`](https://github.com/huggingface/lerobot/blob/main/src/lerobot/robots/lekiwi/config_lekiwi.py) 每個命令的鍵設置。
 
@@ -473,7 +473,7 @@ ping <your_pi_ip_address>
 ssh <your_pi_user_name>@<your_pi_ip_address>
 ```
 
-例如`sshpi@192.168.0.106`
+例如`ssh pi@192.168.0.106`
 
 如果發生連接錯誤：
 
@@ -501,19 +501,19 @@ conda activate lerobot
 python -m lerobot.robots.lekiwi.lekiwi_host --robot.id=my_awesome_kiwi
 ```
 
-如果您希望使用擁抱臉集線器功能上傳數據集，但之前沒有登錄，請確保您使用具有寫入權限的令牌登錄，該令牌可以從[擁抱臉設置](https://huggingface.co/settings/tokens)中生成：
+如果您希望使用Hugging Face Hub功能上傳數據集，但之前沒有登錄，請確保您使用具有寫入權限的令牌登錄，該令牌可以從[Hugging Face 設置](https://huggingface.co/settings/tokens)中生成：
 
 ```Bash
 hf auth login
 ```
 
-將您的擁抱臉存儲庫名稱存儲在一個變量中以運行以下命令：
+將您的Hugging Face存儲庫名稱存儲在一個變量中以運行以下命令：
 
 ```Bash
 *hf auth whoami*
 ```
 
-然後在您的筆記本電腦上運行以下命令以記錄2輪並將數據集上傳到集線器：
+然後在您的筆記本電腦上運行以下命令以記錄2輪並將數據集上傳到Hub：
 
 ```Bash
 python examples/lekiwi/record.py
@@ -555,7 +555,7 @@ lerobot-dataset-viz \
   --repo-id juxi/my_lekiwi_dataset \
 ```
 
-在這裏，`聚喜`是數據採集時的自定義`repo_id`名稱。
+在這裏，`juxi`是數據採集時的自定義`repo_id`名稱。
 
 
 
@@ -573,7 +573,7 @@ lerobot-dataset-viz \
 
 在Linux系統中，如果左右箭頭鍵和Esc鍵在數據採集過程中不起作用，請確保設置了`$DISPLAY`環境變量。請參閱[pynput的限制](https://pynput.readthedocs.io/en/latest/limitations.html#linux)
 
-# 一、回放一輪
+# I. 回放一個回合
 
 現在嘗試在您的機器人上重播第一輪：
 
@@ -589,7 +589,7 @@ python examples/lekiwi/replay.py
 
 #### 修改evaluate.py
 
-HF_MODEL_ID="\<hf_username\>/\<model_repo_id\>"應該修改爲訓練後上傳到HugingFace的數據集的名稱（如果上傳到HugingFace）或者訓練後在本地導出模型的目錄
+HF_MODEL_ID="\<hf_username\>/\<model_repo_id\>"應該修改爲訓練後上傳到Hugging Face的數據集的名稱（如果上傳到Hugging Face）或者訓練後在本地導出模型的目錄
 
 HF_DATASET_ID="\<hf_username\>/\<eval_dataset_id\>"更改您創建的用戶名和eval_數據集名稱
 
@@ -605,7 +605,7 @@ python examples/lekiwi/evaluate.py
 
 1. 數據集的名稱以`eval`開頭，以反映您正在運行推理（例如，`${HF_USER}/eval_act_lekiwi_test`）。
 
-2. 如果評估階段遇到`文件存在：'home/xxxx/. cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'`請先刪除`以eval_開頭的文件夾`，然後再次運行程序。
+2. 如果評估階段遇到`File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'`請先刪除`以eval_開頭的文件夾`，然後再次運行程序。
 
 
 
@@ -619,10 +619,10 @@ https://github.com/SIGRobotics-UIUC/LeKiwi-sim
 
 ## 幫助🙋
 
-硬件問題，請聯繫客服。使用問題，請加入不和諧。
+硬件問題，請聯繫客服。使用問題，請加入Discord。
 
 [LeRobot平臺](https://github.com/huggingface/lerobot)
 
-[LeRobot不和頻道](https://discord.gg/8TnwDdjFGU)
+[LeRobotDiscord](https://discord.gg/8TnwDdjFGU)
 
 <RelatedProducts slugs="lekiwi,so-arm101,servo-driver-board" />

@@ -18,7 +18,7 @@ Listo para usar, sin comprar almacenamiento ni instalar el sistema:
 - **Ubuntu 22.04** preinstalado
 - **SSD NVMe PCIe 3.0 x4 de 256GB** preconfigurado (lectura hasta 2800MB/s)
 - WiFi 5 de doble banda 2.4G/5G + Bluetooth 5.0 (antena 4dBi)
-- Ventilador de bolas PWM (50 000 horas)
+- Ventilador con rodamiento de bolas PWM (50 000 horas)
 - Carcasa acrílica con perforaciones para soporte de cámara
 
 **Casos de uso**: implementación de LLM en el borde, visión por computador avanzada, desarrollo robótico LeRobot SO-ARM.
@@ -104,7 +104,7 @@ No. Ubuntu 22.04 y SSD 256GB preinstalados — solo encender.
 Totalmente. Kit de visión robótica dedicado (cámara + soporte), integración perfecta con LeRobot.
 
 **P: ¿Ruido de la refrigeración?**
-Ventilador PWM de bolas: estable a 40W, silencioso, 50 000 horas (10× más duradero que uno hidráulico).
+Ventilador PWM con rodamiento de bolas: estable a 40W, silencioso, 50 000 horas (10× más duradero que uno hidráulico).
 
 ## Soporte
 

@@ -174,7 +174,7 @@ connection_time_s: int = 7200 # 也就是2小时
 
 Se LeRobot è già installato sul tuo laptop, puoi saltare questo passaggio; altrimenti segui gli **stessi passaggi** che abbiamo fatto sul Raspberry Pi.
 
-> [!Suggerimento] Useremo spesso il prompt dei comandi (cmd). Se non hai familiarità con l'uso di cmd o vuoi ripassare l'uso della riga di comando, puoi fare riferimento a questo: [Corso accelerato di riga di comando](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Environment_setup/Command_line)
+> [!Tip] Useremo spesso il prompt dei comandi (cmd). Se non hai familiarità con l'uso di cmd o vuoi ripassare l'uso della riga di comando, puoi fare riferimento a questo: [Corso accelerato di riga di comando](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Environment_setup/Command_line)
 > 
 > 
 

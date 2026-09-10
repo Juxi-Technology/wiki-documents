@@ -17,7 +17,7 @@ A Juxi Technology oferece vários braços robóticos para diferentes cenários d
 | **DOF** | 6 DOF por braço | 5 dedos, multiarticulado | 6 DOF |
 | **Controle** | Ecossistema LeRobot / API Python | Barramento serial TTL | Controle por servo |
 | **Plataforma host** | PC (Linux) / Jetson | Placa controladora | PC / MCU |
-| **Casos de uso** | Aprendizado por imitação com IA, pesquisa em teleoperação | Preensão, replicação de gestos | Educação, aprendizado para iniciantes |
+| **Casos de uso** | Aprendizado por imitação com IA, pesquisa em teleoperação | Preensão, replicação de gestos | Educação, aprendizagem para iniciantes |
 | **Open Source** | [LeRobot](https://github.com/Juxi-Technology/lerobot) | [AmazingHand](https://github.com/Juxi-Technology/AmazingHand) | Documentação oficial |
 | **Ideal para** | Pesquisadores, desenvolvedores de IA | Pesquisadores de manipulação | Estudiantes e makers |
 
@@ -36,7 +36,7 @@ A Juxi Technology oferece vários braços robóticos para diferentes cenários d
 ### 🧠 Aprendizado por imitação com IA / Teleoperação → SO-ARM101
 
 - Design de braço duplo com teleoperação líder-seguidor
-- Integração profunda com o ecossistema LeRobot, ideal para aprendizado por imitação
+- Integração profunda com o ecossistema LeRobot, ideal para aprendizagem por imitação
 - Suporte a Jetson para fluxos de trabalho de IA sem interrupções
 
 ## Combinações recomendadas

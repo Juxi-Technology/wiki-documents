@@ -79,7 +79,7 @@ O projeto oferece suporte a onze idiomas. O inglês é o locale raiz (sem prefix
 
 ## Código de Conduta
 
-- Respeite todos os colaboradores e utilizadors
+- Respeite todos os colaboradores e utilizadores
 - Forneça conteúdo técnico objetivo e preciso
 - Não envie código ou comandos não testados
 

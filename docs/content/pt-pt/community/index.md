@@ -13,7 +13,7 @@ Bem-vindo à Comunidade de Colaboradores da Juxi Technology! Convidamos calorosa
 
 | Amplie seu Impacto | Crescimento Técnico | Rede de Comunidade |
 |---|---|---|
-| Suas contribuições ajudarão utilizadors do mundo todo a aprender robótica | Comunique-se com a equipa central, receba orientação técnica e feedback | Conheça pessoas com interesses afins e expanda sua rede profissional |
+| Suas contribuições ajudarão utilizadores do mundo todo a aprender robótica | Comunique-se com a equipa central, receba orientação técnica e feedback | Conheça pessoas com interesses afins e expanda sua rede profissional |
 
 ---
 
@@ -44,7 +44,7 @@ Compartilhe sua experiência com o SO-ARM101 escrevendo tutoriais para ajudar ou
 
 ### 2. Traduza a Documentação
 
-Ajude-nos a traduzir a documentação para mais idiomas, para que mais utilizadors se beneficiem.
+Ajude-nos a traduzir a documentação para mais idiomas, para que mais utilizadores se beneficiem.
 
 **Idiomas atuais:** chinês simplificado / inglês / chinês tradicional
 
@@ -70,7 +70,7 @@ Obrigado a todos os nossos colaboradores!
   <div class="contributor-card">
     <div class="avatar">👤</div>
     <h4>TBD</h4>
-    <p>Estamos coletando a lista de colaboradores</p>
+    <p>Estamos recolhendo a lista de colaboradores</p>
   </div>
 </div>
 
@@ -82,7 +82,7 @@ Obrigado a todos os nossos colaboradores!
 |---|---|---|
 | 📝 Escrita de tutoriais | Escrever o tutorial da tarefa de classificação do SO-ARM101 | ⭐⭐ |
 | 🌐 Tradução | Traduzir os tutoriais principais para o inglês | ⭐ |
-| 📚 Coleta de casos | Coletar casos de utilizadors | ⭐ |
+| 📚 Coleta de casos | Coletar casos de utilizadores | ⭐ |
 | 🔧 Aprofundamento técnico | Analisar o algoritmo ACT | ⭐⭐⭐ |
 
 Mais tarefas: [Quadro de Projetos do GitHub](https://github.com/orgs/Juxi-Technology/projects/)

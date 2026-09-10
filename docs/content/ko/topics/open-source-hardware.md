@@ -24,4 +24,4 @@ Juxi Technology(JuxiTech)에서는 출하하는 모든 제품에 완전한 하�
 
 우리는 더 많은 임베디드 인텔리전스 플랫폼, 물리 AI 도구, 엣지 컴퓨팅 솔루션으로 제품 라인을 확장하고 있습니다. 전부 오픈, 전부 문서화, 전부 커뮤니티를 위해. 곧 출시될 제품, 기술 심층 분석, 커뮤니티 쇼케이스는 우리의 위키와 블로그를 팔로우하세요.
 
-> 관련 페이지:[SO-ARM101 개발 키트](/products/so-arm101) · [AmazingHand 정교 손](/products/amazinghand) · [임베디드 지능 입문(LeRobot)](/topics/embodied-ai-intro)
+> 관련 페이지:[SO-ARM101 개발 키트](/products/so-arm101) · [AmazingHand 정교 손](/products/amazinghand) · [구현 지능 입문(LeRobot)](/topics/embodied-ai-intro)
