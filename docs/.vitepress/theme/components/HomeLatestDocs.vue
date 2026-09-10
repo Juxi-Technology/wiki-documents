@@ -7,18 +7,18 @@ import { data as dates } from '../../home.data'
 const { lang } = useData()
 
 // 9 语文案(键与 config lang 一致)
-const T: Record<string, { title: string; all: string; robot: string; sensor: string; accessory: string }> = {
-  'zh-CN': { title: '最新文档', all: '全部', robot: '机械臂', sensor: '传感器', accessory: '配件' },
-  en: { title: 'Latest Documents', all: 'All', robot: 'Robot Arms', sensor: 'Sensors', accessory: 'Accessories' },
-  'zh-HK': { title: '最新文檔', all: '全部', robot: '機械臂', sensor: '傳感器', accessory: '配件' },
-  ja: { title: '最新ドキュメント', all: 'すべて', robot: 'ロボットアーム', sensor: 'センサー', accessory: 'アクセサリー' },
-  ko: { title: '최신 문서', all: '전체', robot: '로봇 암', sensor: '센서', accessory: '액세서리' },
-  de: { title: 'Neueste Dokumente', all: 'Alle', robot: 'Roboterarme', sensor: 'Sensoren', accessory: 'Zubehör' },
-  fr: { title: 'Documents récents', all: 'Tous', robot: 'Bras robotiques', sensor: 'Capteurs', accessory: 'Accessoires' },
-  es: { title: 'Documentos recientes', all: 'Todos', robot: 'Brazos robóticos', sensor: 'Sensores', accessory: 'Accesorios' },
-  it: { title: 'Documenti recenti', all: 'Tutti', robot: 'Bracci robotici', sensor: 'Sensori', accessory: 'Accessori' },
-  'pt-BR': { title: 'Documentos recentes', all: 'Todos', robot: 'Braços robóticos', sensor: 'Sensores', accessory: 'Acessórios' },
-  'pt-PT': { title: 'Documentos recentes', all: 'Todos', robot: 'Braços robóticos', sensor: 'Sensores', accessory: 'Acessórios' },
+const T: Record<string, { title: string; filterLabel: string; all: string; robot: string; sensor: string; accessory: string }> = {
+  'zh-CN': { title: '最新文档', filterLabel: '筛选', all: '全部', robot: '机械臂', sensor: '传感器', accessory: '配件' },
+  en: { title: 'Latest Documents', filterLabel: 'Filter', all: 'All', robot: 'Robot Arms', sensor: 'Sensors', accessory: 'Accessories' },
+  'zh-HK': { title: '最新文檔', filterLabel: '篩選', all: '全部', robot: '機械臂', sensor: '傳感器', accessory: '配件' },
+  ja: { title: '最新ドキュメント', filterLabel: '絞り込み', all: 'すべて', robot: 'ロボットアーム', sensor: 'センサー', accessory: 'アクセサリー' },
+  ko: { title: '최신 문서', filterLabel: '필터', all: '전체', robot: '로봇 암', sensor: '센서', accessory: '액세서리' },
+  de: { title: 'Neueste Dokumente', filterLabel: 'Filter', all: 'Alle', robot: 'Roboterarme', sensor: 'Sensoren', accessory: 'Zubehör' },
+  fr: { title: 'Documents récents', filterLabel: 'Filtrer', all: 'Tous', robot: 'Bras robotiques', sensor: 'Capteurs', accessory: 'Accessoires' },
+  es: { title: 'Documentos recientes', filterLabel: 'Filtrar', all: 'Todos', robot: 'Brazos robóticos', sensor: 'Sensores', accessory: 'Accesorios' },
+  it: { title: 'Documenti recenti', filterLabel: 'Filtra', all: 'Tutti', robot: 'Bracci robotici', sensor: 'Sensori', accessory: 'Accessori' },
+  'pt-BR': { title: 'Documentos recentes', filterLabel: 'Filtrar', all: 'Todos', robot: 'Braços robóticos', sensor: 'Sensores', accessory: 'Acessórios' },
+  'pt-PT': { title: 'Documentos recentes', filterLabel: 'Filtrar', all: 'Todos', robot: 'Braços robóticos', sensor: 'Sensores', accessory: 'Acessórios' },
 }
 
 // 卡片标题(各语,与既有首页卡片一致)
@@ -68,7 +68,7 @@ const filtered = computed(() =>
 <template>
   <section class="latest-docs reveal">
     <h2>{{ t.title }}</h2>
-    <div class="doc-filters" role="tablist" aria-label="filter">
+    <div class="doc-filters" role="tablist" :aria-label="t.filterLabel">
       <button
         v-for="f in FILTERS"
         :key="f"

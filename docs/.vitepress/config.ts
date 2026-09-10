@@ -114,6 +114,9 @@ const zhCN = {
     sidebarMenuLabel: '菜单',
     returnToTopLabel: '回到顶部',
     outline: { level: [2, 3], label: '本页目录' },
+    skipToContentLabel: '跳到主要内容',
+    lightModeSwitchTitle: '切换到浅色模式',
+    darkModeSwitchTitle: '切换到深色模式',
     lastUpdated: { text: '最后更新于' },
     nav: [
       { text: '教程', link: '/zh-hans/tutorials/', activeMatch: '/zh-hans/tutorials/' },
@@ -339,6 +342,9 @@ const en = {
     sidebarMenuLabel: 'Menu',
     returnToTopLabel: 'Return to top',
     outline: { level: [2, 3], label: 'On this page' },
+    skipToContentLabel: 'Skip to content',
+    lightModeSwitchTitle: 'Switch to light theme',
+    darkModeSwitchTitle: 'Switch to dark theme',
     lastUpdated: { text: 'Last updated' },
     nav: [
       { text: 'Tutorials', link: '/tutorials/', activeMatch: '/tutorials/' },
@@ -564,6 +570,9 @@ const zhHK = {
     sidebarMenuLabel: '選單',
     returnToTopLabel: '回到頂部',
     outline: { level: [2, 3], label: '本頁目錄' },
+    skipToContentLabel: '跳到主要內容',
+    lightModeSwitchTitle: '切換到淺色模式',
+    darkModeSwitchTitle: '切換到深色模式',
     lastUpdated: { text: '最後更新於' },
     nav: [
       { text: '教程', link: '/zh-hant/tutorials/', activeMatch: '/zh-hant/tutorials/' },
@@ -855,6 +864,9 @@ export default defineConfig({
       sidebarMenuLabel: 'メニュー',
       returnToTopLabel: 'トップへ戻る',
       outline: { level: [2, 3], label: '目次' },
+      skipToContentLabel: 'コンテンツへスキップ',
+      lightModeSwitchTitle: 'ライトモードに切り替え',
+      darkModeSwitchTitle: 'ダークモードに切り替え',
       lastUpdated: { text: '最終更新' },
       nav: [
         { text: 'チュートリアル', link: '/ja/tutorials/', activeMatch: '/ja/tutorials/' },
@@ -1043,6 +1055,9 @@ export default defineConfig({
       sidebarMenuLabel: '메뉴',
       returnToTopLabel: '맨 위로',
       outline: { level: [2, 3], label: '목차' },
+      skipToContentLabel: '본문으로 건너뛰기',
+      lightModeSwitchTitle: '라이트 모드로 전환',
+      darkModeSwitchTitle: '다크 모드로 전환',
       lastUpdated: { text: '마지막 업데이트' },
       nav: [
         { text: '튜토리얼', link: '/ko/tutorials/', activeMatch: '/ko/tutorials/' },
@@ -1231,6 +1246,9 @@ export default defineConfig({
       sidebarMenuLabel: 'Menü',
       returnToTopLabel: 'Zurück nach oben',
       outline: { level: [2, 3], label: 'Auf dieser Seite' },
+      skipToContentLabel: 'Zum Inhalt springen',
+      lightModeSwitchTitle: 'Zum hellen Design wechseln',
+      darkModeSwitchTitle: 'Zum dunklen Design wechseln',
       lastUpdated: { text: 'Zuletzt aktualisiert' },
       nav: [
         { text: 'Tutorials', link: '/de/tutorials/', activeMatch: '/de/tutorials/' },
@@ -1419,6 +1437,9 @@ export default defineConfig({
       sidebarMenuLabel: 'Menu',
       returnToTopLabel: 'Retour en haut',
       outline: { level: [2, 3], label: 'Sur cette page' },
+      skipToContentLabel: 'Aller au contenu',
+      lightModeSwitchTitle: 'Passer au thème clair',
+      darkModeSwitchTitle: 'Passer au thème sombre',
       lastUpdated: { text: 'Dernière mise à jour' },
       nav: [
         { text: 'Tutoriels', link: '/fr/tutorials/', activeMatch: '/fr/tutorials/' },
@@ -1607,6 +1628,9 @@ export default defineConfig({
       sidebarMenuLabel: 'Menú',
       returnToTopLabel: 'Volver arriba',
       outline: { level: [2, 3], label: 'En esta página' },
+      skipToContentLabel: 'Saltar al contenido',
+      lightModeSwitchTitle: 'Cambiar al tema claro',
+      darkModeSwitchTitle: 'Cambiar al tema oscuro',
       lastUpdated: { text: 'Última actualización' },
       nav: [
         { text: 'Tutoriales', link: '/es/tutorials/', activeMatch: '/es/tutorials/' },
@@ -1795,6 +1819,9 @@ export default defineConfig({
       sidebarMenuLabel: 'Menu',
       returnToTopLabel: 'Torna su',
       outline: { level: [2, 3], label: 'In questa pagina' },
+      skipToContentLabel: 'Vai al contenuto',
+      lightModeSwitchTitle: 'Passa al tema chiaro',
+      darkModeSwitchTitle: 'Passa al tema scuro',
       lastUpdated: { text: 'Ultimo aggiornamento' },
       nav: [
         { text: 'Tutorial', link: '/it/tutorials/', activeMatch: '/it/tutorials/' },
@@ -1983,6 +2010,9 @@ export default defineConfig({
       sidebarMenuLabel: 'Menu',
       returnToTopLabel: 'Voltar ao topo',
       outline: { level: [2, 3], label: 'Nesta página' },
+      skipToContentLabel: 'Ir para o conteúdo',
+      lightModeSwitchTitle: 'Mudar para o tema claro',
+      darkModeSwitchTitle: 'Mudar para o tema escuro',
       lastUpdated: { text: 'Última atualização' },
       nav: [
         { text: 'Tutoriais', link: '/pt-br/tutorials/', activeMatch: '/pt-br/tutorials/' },
@@ -2194,6 +2224,9 @@ export default defineConfig({
       sidebarMenuLabel: 'Menu',
       returnToTopLabel: 'Voltar ao topo',
       outline: { level: [2, 3], label: 'Nesta página' },
+      skipToContentLabel: 'Ir para o conteúdo',
+      lightModeSwitchTitle: 'Mudar para o tema claro',
+      darkModeSwitchTitle: 'Mudar para o tema escuro',
       lastUpdated: { text: 'Última atualização' },
       nav: [
         { text: 'Tutoriais', link: '/pt-pt/tutorials/', activeMatch: '/pt-pt/tutorials/' },
