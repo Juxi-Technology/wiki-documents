@@ -32,8 +32,8 @@ const msg = computed(() => MESSAGES[lang.value] || MESSAGES['zh-CN'])
 
 <style scoped>
 .top-banner {
-  background: #eefcf5;
-  border-bottom: 1px solid #c9ecd9;
+  background: #eef4fc;
+  border-bottom: 1px solid #c9dcf0;
   text-align: center;
   font-size: 13px;
   height: 36px;
@@ -46,12 +46,12 @@ const msg = computed(() => MESSAGES[lang.value] || MESSAGES['zh-CN'])
 }
 
 .dark .top-banner {
-  background: #10392a;
-  border-bottom-color: #1d5c41;
+  background: #14273f;
+  border-bottom-color: #23486e;
 }
 
 .top-banner-inner {
-  color: #166534;
+  color: #1e4a7a;
   text-decoration: none;
   font-weight: 500;
   white-space: nowrap;
@@ -59,5 +59,9 @@ const msg = computed(() => MESSAGES[lang.value] || MESSAGES['zh-CN'])
   text-overflow: ellipsis;
   display: inline-block;
   max-width: 100%;
+}
+
+.dark .top-banner-inner {
+  color: #9dc1e8;
 }
 </style>
