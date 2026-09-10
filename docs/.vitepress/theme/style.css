@@ -356,3 +356,78 @@ html .hero-btn.secondary:hover {
 .vp-doc a.cs-link::after {
   content: none;
 }
+
+/* ============================================
+   微交互(2026-09)
+   ============================================ */
+
+/* ---- 分类卡 hover 标题变色 ---- */
+.category-card span {
+  transition: color 0.25s;
+}
+
+.category-card:hover span {
+  color: var(--vp-c-brand-1);
+}
+
+/* ---- 回顶按钮 ---- */
+#back-to-top {
+  position: fixed;
+  right: 24px;
+  bottom: 32px;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: #1e3a5f;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.25s, transform 0.25s, visibility 0.25s;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  z-index: 900;
+}
+
+#back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+#back-to-top:hover {
+  background: #152a45;
+}
+
+/* 暗色下按钮为亮蓝底,白字对比不足——改深色字 */
+.dark #back-to-top {
+  background: #7ea6e0;
+  color: #16283f;
+}
+
+.dark #back-to-top:hover {
+  background: #9dbcec;
+}
+
+/* ---- 路由切换淡入 ---- */
+.VPDoc .container {
+  animation: vp-route-in 0.18s ease;
+}
+
+@keyframes vp-route-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .VPDoc .container {
+    animation: none;
+  }
+
+  #back-to-top {
+    transition: none;
+  }
+}

@@ -48,6 +48,7 @@ if (typeof window !== 'undefined') {
     raf = requestAnimationFrame(() => {
       updateBar()
       checkReveal()
+      backTop.classList.toggle('show', window.scrollY > 800)
     })
   }
 
@@ -128,6 +129,17 @@ if (typeof window !== 'undefined') {
     prevBtn.addEventListener('click', () => show(idx - 1))
     nextBtn.addEventListener('click', () => show(idx + 1))
   }
+
+  // ---- 回顶按钮:滚动超过 800px 淡入(显隐随 onScroll 节流更新) ----
+  const backTop = document.createElement('button')
+  backTop.id = 'back-to-top'
+  backTop.setAttribute('aria-label', 'Back to top')
+  backTop.textContent = '↑'
+  backTop.addEventListener('click', () => {
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' })
+  })
+  document.body.appendChild(backTop)
 
   // VitePress 路由切换不刷新页面;hydration/导航会替换 DOM 节点,
   // 需要在新 DOM 就绪后重新检查 reveal 与进度条
