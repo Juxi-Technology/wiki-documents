@@ -1,7 +1,7 @@
 ---
 title: 79° IMX219 CSI カメラ
 category: compute-vision
-description: 鉅犀科技 79° IMX219 CSI カメラ——800 万画素ネイティブ CSI インターフェース、77° FOV、NVIDIA Jetson 低遅延ビジョン
+description: Juxi Technology 79° IMX219 CSI カメラ——800 万画素ネイティブ CSI インターフェース、77° FOV、NVIDIA Jetson 低遅延ビジョン
 keywords: [imx219, csi camera, jetson, カメラ]
 ---
 

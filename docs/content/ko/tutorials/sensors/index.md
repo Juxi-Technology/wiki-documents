@@ -1,6 +1,6 @@
 ---
 title: 센서와 인지
-description: "鉅犀科技 센서 시리즈 튜토리얼 홈——IMU 관성항법 모듈 등 인지 제품"
+description: "Juxi Technology 센서 시리즈 튜토리얼 홈——IMU 관성항법 모듈 등 인지 제품"
 ---
 
 # 센서와 인지

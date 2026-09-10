@@ -1,7 +1,7 @@
 ---
 title: 2 자유도 서보 팬틸트
 category: accessory
-description: 鉅犀科技 2 자유도 서보 팬틸트 — SCS0009 버스 서보, 수평 180°/수직 90°, 200만 화소 카메라, AI 비전 추적
+description: Juxi Technology 2 자유도 서보 팬틸트 — SCS0009 버스 서보, 수평 180°/수직 90°, 200만 화소 카메라, AI 비전 추적
 keywords: [gimbal, 팬틸트, 2dof, 비전 추적, scs0009]
 ---
 

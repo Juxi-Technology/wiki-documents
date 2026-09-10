@@ -30,9 +30,9 @@ El soporte de cámara superior SO-ARM101 permite el montaje en vista cenital, co
 
 ## Inicio rápido
 
-1. 将支架固定到 SO-ARM 安装点
-2. 安装相机(RealSense 或 USB)
-3. 连接主控,`python -m lerobot.find_cameras` 确认识别
+1. Fije el soporte a los puntos de montaje del SO-ARM
+2. Instale la cámara (RealSense o USB)
+3. Conecte el host y confirme con `python -m lerobot.find_cameras`
 ## Tutoriales
 
 - [Instalación de la cámara superior SO-ARM101](/es/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation)

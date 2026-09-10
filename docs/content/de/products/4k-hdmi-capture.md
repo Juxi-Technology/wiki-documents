@@ -31,9 +31,9 @@ Die 4K-HDMI-Capture-Karte unterstützt HDMI / Micro HDMI / DP und verbindet Lapt
 
 ## Schnellstart
 
-1. 按主板接口选择接线方式(HDMI / Micro HDMI / DP 转接)
-2. 连接采集器 USB 到显示端
-3. OBS / PotPlayer 中选择采集设备即可
+1. Verkabelung je nach Board-Schnittstelle wählen (HDMI / Micro HDMI / DP)
+2. Capture-USB am Anzeigegerät anschließen
+3. Aufnahmegerät in OBS / PotPlayer auswählen
 ## Verwandte Tutorials
 
 - [4K-HDMI-Capture-Tutorial](/de/tutorials/accessories/4k-hdmi-capture-tutorial)

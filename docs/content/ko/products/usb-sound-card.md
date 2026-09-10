@@ -1,7 +1,7 @@
 ---
 title: USB 드라이버 프리 사운드 카드
 category: accessory
-description: 鉅犀科技 USB 드라이버 프리 사운드 카드 — 온보드 마이크+스피커, 플러그 앤 플레이, 노이즈 저감, Raspberry Pi/Jetson/PC 지원
+description: Juxi Technology USB 드라이버 프리 사운드 카드 — 온보드 마이크+스피커, 플러그 앤 플레이, 노이즈 저감, Raspberry Pi/Jetson/PC 지원
 keywords: [sound card, 사운드 카드, usb audio, 음성 상호작용]
 ---
 

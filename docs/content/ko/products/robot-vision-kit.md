@@ -1,7 +1,7 @@
 ---
 title: SO-ARM101 로봇 팔 비전 키트
 category: robot
-description: 鉅犀科技 SO-ARM101 로봇 팔 비전 키트 — 손목/측면/정면 위 3시점 설치, 60FPS 고정 초점 또는 30FPS 자동 초점 줌 카메라, ACT/Smolvla/Pi0/GR00T 훈련 프레임워크 호환
+description: Juxi Technology SO-ARM101 로봇 팔 비전 키트 — 손목/측면/정면 위 3시점 설치, 60FPS 고정 초점 또는 30FPS 자동 초점 줌 카메라, ACT/Smolvla/Pi0/GR00T 훈련 프레임워크 호환
 keywords: [camera mount, 비전 키트, 카메라 마운트, so-arm101, 로봇 팔 비전]
 ---
 

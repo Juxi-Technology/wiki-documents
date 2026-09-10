@@ -13,79 +13,79 @@ outline: false
 <div class="category-grid">
   <a :href="withBase('/ko/products/2dof-gimbal')" class="category-card">
     <span class="pc-title">2 자유도 서보 팬틸트</span>
-    <p class="pc-desc">鉅犀科技 2 자유도 서보 팬틸트 — SCS0009 버스 서보, 수평 180°/수직 90°, 200만 화소 카메라, AI 비전 추적</p>
+    <p class="pc-desc">Juxi Technology 2 자유도 서보 팬틸트 — SCS0009 버스 서보, 수평 180°/수직 90°, 200만 화소 카메라, AI 비전 추적</p>
   </a>
   <a :href="withBase('/ko/products/4k-hdmi-capture')" class="category-card">
     <span class="pc-title">4K HDMI 캡처 카드</span>
-    <p class="pc-desc">鉅犀科技 4K HDMI 캡처 카드 — 4K 고화질 캡처, HDMI/Micro HDMI/DP 다중 인터페이스, USB 직결, 방송·녹화</p>
+    <p class="pc-desc">Juxi Technology 4K HDMI 캡처 카드 — 4K 고화질 캡처, HDMI/Micro HDMI/DP 다중 인터페이스, USB 직결, 방송·녹화</p>
   </a>
   <a :href="withBase('/ko/products/amazinghand')" class="category-card">
     <span class="pc-title">AmazingHand 오픈소스 4손가락 정교 손</span>
-    <p class="pc-desc">鉅犀科技 AmazingHand 오픈소스 4손가락 정교 손, TTL 버스 제어, 오픈 CAD, 임베디드 지능·HRI 연구</p>
+    <p class="pc-desc">Juxi Technology AmazingHand 오픈소스 4손가락 정교 손, TTL 버스 제어, 오픈 CAD, 임베디드 지능·HRI 연구</p>
   </a>
   <a :href="withBase('/ko/products/esp32-s3-wifi-module')" class="category-card">
     <span class="pc-title">ESP32-S3 WiFi 영상 모듈</span>
-    <p class="pc-desc">鉅犀科技 ESP32-S3 WiFi 영상 전송 모듈 — 200만 화소 카메라, WiFi 실시간 전송, AI 비전 인식(색상/얼굴/QR), AP+STA 듀얼 모드</p>
+    <p class="pc-desc">Juxi Technology ESP32-S3 WiFi 영상 전송 모듈 — 200만 화소 카메라, WiFi 실시간 전송, AI 비전 인식(색상/얼굴/QR), AP+STA 듀얼 모드</p>
   </a>
   <a :href="withBase('/ko/products/feetech-servo')" class="category-card">
     <span class="pc-title">Feetech 버스 서보(SCS0009 / STS3215)</span>
-    <p class="pc-desc">鉅犀科技 Feetech 직렬 버스 서보 SCS0009 / STS3215——SCS 통신 프로토콜, 자기 엔코더/전위차계 두 버전, 메모리 테이블 분석, 상위 프로그램 디버깅</p>
+    <p class="pc-desc">Juxi Technology Feetech 직렬 버스 서보 SCS0009 / STS3215——SCS 통신 프로토콜, 자기 엔코더/전위차계 두 버전, 메모리 테이블 분석, 상위 프로그램 디버깅</p>
   </a>
   <a :href="withBase('/ko/products/gps-beidou-module')" class="category-card">
     <span class="pc-title">GPS & 北斗 GNSS 측위 모듈</span>
-    <p class="pc-desc">鉅犀科技 GPS & 北斗 GNSS 측위 모듈 — ATGM336H-5N 칩, 4대 위성 시스템 연합 측위, 2.5m 정밀도, ROS 지원</p>
+    <p class="pc-desc">Juxi Technology GPS & 北斗 GNSS 측위 모듈 — ATGM336H-5N 칩, 4대 위성 시스템 연합 측위, 2.5m 정밀도, ROS 지원</p>
   </a>
   <a :href="withBase('/ko/products/imu-module')" class="category-card">
     <span class="pc-title">IMU 고정밀 관성항법 모듈</span>
-    <p class="pc-desc">鉅犀科技 IMU 고정밀 관성항법 모듈 — 100Hz 자세 연산, 6/9/10축 선택, IIC+직렬 이중 통신, ROS 통합</p>
+    <p class="pc-desc">Juxi Technology IMU 고정밀 관성항법 모듈 — 100Hz 자세 연산, 6/9/10축 선택, IIC+직렬 이중 통신, ROS 통합</p>
   </a>
   <a :href="withBase('/ko/products/imx219-csi-camera')" class="category-card">
     <span class="pc-title">79° IMX219 CSI 카메라</span>
-    <p class="pc-desc">鉅犀科技 79° IMX219 CSI 카메라 — 800만 화소 네이티브 CSI 인터페이스, 77° FOV, NVIDIA Jetson 저지연 비전</p>
+    <p class="pc-desc">Juxi Technology 79° IMX219 CSI 카메라 — 800만 화소 네이티브 CSI 인터페이스, 77° FOV, NVIDIA Jetson 저지연 비전</p>
   </a>
   <a :href="withBase('/ko/products/jetson-orin-nx-super-kit')" class="category-card">
     <span class="pc-title">Jetson Orin NX Super 개발 키트</span>
-    <p class="pc-desc">鉅犀科技 NVIDIA Jetson Orin NX SUPER 개발 키트 — 117/157 TOPS 엣지 AI 컴퓨팅 플랫폼, Ubuntu 22.04 및 256GB NVM…</p>
+    <p class="pc-desc">Juxi Technology NVIDIA Jetson Orin NX SUPER 개발 키트 — 117/157 TOPS 엣지 AI 컴퓨팅 플랫폼, Ubuntu 22.04 및 256GB NVM…</p>
   </a>
   <a :href="withBase('/ko/products/kvm-switch')" class="category-card">
     <span class="pc-title">4-in-1 KVM 스위처</span>
-    <p class="pc-desc">鉅犀科技 4-in-1 KVM 스위처 — TTL 직렬/블루투스 도킹 스테이션, 다중 기기 원클릭 전환, 로봇 개발 디버깅 파트너</p>
+    <p class="pc-desc">Juxi Technology 4-in-1 KVM 스위처 — TTL 직렬/블루투스 도킹 스테이션, 다중 기기 원클릭 전환, 로봇 개발 디버깅 파트너</p>
   </a>
   <a :href="withBase('/ko/products/kws-voice-module')" class="category-card">
     <span class="pc-title">KWS 음성 상호작용 모듈</span>
-    <p class="pc-desc">鉅犀科技 KWS 음성 인식 상호작용 모듈 — 중문/영문 인식어, 직렬/RViz2 시각화, Jetson/라즈베리파이 지원, 펌웨어 오픈소스</p>
+    <p class="pc-desc">Juxi Technology KWS 음성 인식 상호작용 모듈 — 중문/영문 인식어, 직렬/RViz2 시각화, Jetson/라즈베리파이 지원, 펌웨어 오픈소스</p>
   </a>
   <a :href="withBase('/ko/products/lekiwi')" class="category-card">
     <span class="pc-title">Lekiwi 임베디드 지능 모바일 로봇</span>
-    <p class="pc-desc">鉅犀科技 Lekiwi 임베디드 지능 모바일 로봇 — 저비용 교육용 로봇 팔/모바일 베이스, 서보 제어, 교육·입문 추천</p>
+    <p class="pc-desc">Juxi Technology Lekiwi 임베디드 지능 모바일 로봇 — 저비용 교육용 로봇 팔/모바일 베이스, 서보 제어, 교육·입문 추천</p>
   </a>
   <a :href="withBase('/ko/products/overhead-camera-mount')" class="category-card">
     <span class="pc-title">SO-ARM101 오버헤드 카메라 마운트</span>
-    <p class="pc-desc">鉅犀科技 SO-ARM101 오버헤드 카메라 마운트 — 정면 위 시점 설치, RealSense 호환, 로봇 팔 비전 데이터 수집</p>
+    <p class="pc-desc">Juxi Technology SO-ARM101 오버헤드 카메라 마운트 — 정면 위 시점 설치, RealSense 호환, 로봇 팔 비전 데이터 수집</p>
   </a>
   <a :href="withBase('/ko/products/realsense-depth-camera')" class="category-card">
     <span class="pc-title">3D RealSense 깊이 카메라</span>
-    <p class="pc-desc">鉅犀科技 3D RealSense 깊이 카메라 — D435i/D405/D405CB 3개 모델, 고정밀 깊이 인식, XLeRobot 및 SO-ARM101 지원</p>
+    <p class="pc-desc">Juxi Technology 3D RealSense 깊이 카메라 — D435i/D405/D405CB 3개 모델, 고정밀 깊이 인식, XLeRobot 및 SO-ARM101 지원</p>
   </a>
   <a :href="withBase('/ko/products/robot-vision-kit')" class="category-card">
     <span class="pc-title">SO-ARM101 로봇 팔 비전 키트</span>
-    <p class="pc-desc">鉅犀科技 SO-ARM101 로봇 팔 비전 키트 — 손목/측면/정면 위 3시점 설치, 60FPS 고정 초점 또는 30FPS 자동 초점 줌 카메라, ACT/Smolvla/…</p>
+    <p class="pc-desc">Juxi Technology SO-ARM101 로봇 팔 비전 키트 — 손목/측면/정면 위 3시점 설치, 60FPS 고정 초점 또는 30FPS 자동 초점 줌 카메라, ACT/Smolvla/…</p>
   </a>
   <a :href="withBase('/ko/products/servo-driver-board')" class="category-card">
     <span class="pc-title">JUXI 버스 서보 드라이버 보드</span>
-    <p class="pc-desc">鉅犀科技 JUXI 버스 서보 드라이버 보드 — 단일 버스 253개 서보 제어, 7~12.6V 광범위 전압, Type-C 플러그 앤 플레이, LeRobot SO-ARM …</p>
+    <p class="pc-desc">Juxi Technology JUXI 버스 서보 드라이버 보드 — 단일 버스 253개 서보 제어, 7~12.6V 광범위 전압, Type-C 플러그 앤 플레이, LeRobot SO-ARM …</p>
   </a>
   <a :href="withBase('/ko/products/so-arm101')" class="category-card">
     <span class="pc-title">SO-ARM101 개발 키트</span>
-    <p class="pc-desc">鉅犀科技 SO-ARM101 양팔 로봇 개발 키트 — 6 DOF 오픈소스 로봇 팔, LeRobot 생태계, 원격 조작/모방 학습/AI 연구의 첫 번째 선택</p>
+    <p class="pc-desc">Juxi Technology SO-ARM101 양팔 로봇 개발 키트 — 6 DOF 오픈소스 로봇 팔, LeRobot 생태계, 원격 조작/모방 학습/AI 연구의 첫 번째 선택</p>
   </a>
   <a :href="withBase('/ko/products/tpu-flexible-gripper')" class="category-card">
     <span class="pc-title">SO-ARM101 TPU 플렉서블 그리퍼</span>
-    <p class="pc-desc">鉅犀科技 SO-ARM101 TPU 플렉서블 그리퍼 — 부드러운 TPU 소재로 불규칙/깨지기 쉬운 물체를 안전하게 파지, 암 장착 카메라 지원, 30FPS 줌 또는 60…</p>
+    <p class="pc-desc">Juxi Technology SO-ARM101 TPU 플렉서블 그리퍼 — 부드러운 TPU 소재로 불규칙/깨지기 쉬운 물체를 안전하게 파지, 암 장착 카메라 지원, 30FPS 줌 또는 60…</p>
   </a>
   <a :href="withBase('/ko/products/usb-sound-card')" class="category-card">
     <span class="pc-title">USB 드라이버 프리 사운드 카드</span>
-    <p class="pc-desc">鉅犀科技 USB 드라이버 프리 사운드 카드 — 온보드 마이크+스피커, 플러그 앤 플레이, 노이즈 저감, Raspberry Pi/Jetson/PC 지원</p>
+    <p class="pc-desc">Juxi Technology USB 드라이버 프리 사운드 카드 — 온보드 마이크+스피커, 플러그 앤 플레이, 노이즈 저감, Raspberry Pi/Jetson/PC 지원</p>
   </a>
 </div>
 

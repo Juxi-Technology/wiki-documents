@@ -1,7 +1,7 @@
 ---
 title: SO-ARM101 오버헤드 카메라 마운트
 category: robot
-description: 鉅犀科技 SO-ARM101 오버헤드 카메라 마운트 — 정면 위 시점 설치, RealSense 호환, 로봇 팔 비전 데이터 수집
+description: Juxi Technology SO-ARM101 오버헤드 카메라 마운트 — 정면 위 시점 설치, RealSense 호환, 로봇 팔 비전 데이터 수집
 keywords: [camera mount, 카메라 마운트, overhead, realsense, 비전 수집]
 ---
 
@@ -30,9 +30,9 @@ SO-ARM101 오버헤드 카메라 마운트는 정면 위 시점 설치를 지원
 
 ## 빠른 시작
 
-1. 将支架固定到 SO-ARM 安装点
-2. 安装相机(RealSense 或 USB)
-3. 连接主控,`python -m lerobot.find_cameras` 确认识别
+1. 브래킷을 SO-ARM 장착 지점에 고정
+2. 카메라 설치(RealSense 또는 USB)
+3. 호스트 연결 후 `python -m lerobot.find_cameras`로 확인
 ## 관련 튜토리얼
 
 - [SO-ARM101 오버헤드 카메라 설치 튜토리얼](/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation)

@@ -1,7 +1,7 @@
 ---
 title: JUXI バスサーボドライバボード
 category: robot
-description: 鉅犀科技 JUXI バスサーボドライバボード——単一バスで 253 個のサーボ制御、7~12.6V 広電圧、Type-C プラグアンドプレイ、LeRobot SO-ARM 専用設計
+description: Juxi Technology JUXI バスサーボドライバボード——単一バスで 253 個のサーボ制御、7~12.6V 広電圧、Type-C プラグアンドプレイ、LeRobot SO-ARM 専用設計
 keywords: [servo driver, サーボドライバボード, バスサーボ, leRobot, so-arm101]
 ---
 

@@ -481,8 +481,8 @@ const en = {
                 {
                   text: 'ROS Examples',
                   items: [
-                    { text: 'ROS1', link: '/tutorials/sensors/imu/ros-examples/ros1' },
-                    { text: 'ROS2', link: '/tutorials/sensors/imu/ros-examples/ros2' },
+                    { text: 'ROS1 Application', link: '/tutorials/sensors/imu/ros-examples/ros1' },
+                    { text: 'ROS2 Application', link: '/tutorials/sensors/imu/ros-examples/ros2' },
                   ],
                 },
               ],
@@ -918,7 +918,7 @@ export default defineConfig({
               text: 'SO-ARM101 シリーズ',
               collapsed: false,
               items: [
-                { text: 'LeRobot ロボットアーム教程', link: '/ja/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial' },
+                { text: 'LeRobot ロボットアームチュートリアル', link: '/ja/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial' },
                 { text: 'Lerobot ロボットアーム組立ガイド', link: '/ja/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly' },
                 { text: 'Jetson Orin での PyTorch 非互換問題', link: '/ja/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility' },
                 { text: 'SO-ARM100&101 アーム搭載ブラケットと環境カメラキット 取付チュートリアル', link: '/ja/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation' },

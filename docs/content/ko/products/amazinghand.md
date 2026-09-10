@@ -1,7 +1,7 @@
 ---
 title: AmazingHand 오픈소스 4손가락 정교 손
 category: robot
-description: 鉅犀科技 AmazingHand 오픈소스 4손가락 정교 손, TTL 버스 제어, 오픈 CAD, 임베디드 지능·HRI 연구
+description: Juxi Technology AmazingHand 오픈소스 4손가락 정교 손, TTL 버스 제어, 오픈 CAD, 임베디드 지능·HRI 연구
 keywords: [amazinghand, 정교 손, dexterous hand, 임베디드 지능]
 ---
 
@@ -11,7 +11,7 @@ keywords: [amazinghand, 정교 손, dexterous hand, 임베디드 지능]
 
 ## 제품 개요
 
-AmazingHand은 鉅犀科技가 오픈소스로 제공하는 4손가락 정교 손입니다. 다관절 설계로 TTL 직렬 버스 제어를 지원합니다. 오픈 CAD 파일로 손가락 설계를 자유롭게 커스터마이즈할 수 있으며, 정교한 조작, 파지 전략, 인간-로봇 상호작용(HRI) 연구에 널리 사용됩니다.
+AmazingHand은 Juxi Technology가 오픈소스로 제공하는 4손가락 정교 손입니다. 다관절 설계로 TTL 직렬 버스 제어를 지원합니다. 오픈 CAD 파일로 손가락 설계를 자유롭게 커스터마이즈할 수 있으며, 정교한 조작, 파지 전략, 인간-로봇 상호작용(HRI) 연구에 널리 사용됩니다.
 
 **주요 특징**:
 

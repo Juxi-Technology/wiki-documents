@@ -33,7 +33,7 @@ description: Juxi Technology Wiki — 토픽
   <div class="topic-card">
     <div class="topic-icon">🔓</div>
     <h3><a href="/ko/topics/open-source-hardware">왜 우리는 오픈소스로 만드는가</a></h3>
-    <p>鉅犀科技(JuxiTech) 오픈소스 하드웨어 철학: 모든 제품에 회로도</p>
+    <p>Juxi Technology(JuxiTech) 오픈소스 하드웨어 철학: 모든 제품에 회로도</p>
   </div>
   <div class="topic-card">
     <div class="topic-icon">📚</div>

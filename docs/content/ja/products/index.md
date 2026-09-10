@@ -13,79 +13,79 @@ outline: false
 <div class="category-grid">
   <a :href="withBase('/ja/products/2dof-gimbal')" class="category-card">
     <span class="pc-title">2 自由度サーボパンチルト</span>
-    <p class="pc-desc">鉅犀科技 2 自由度サーボ雲台——SCS0009 バスサーボ、水平 180°/垂直 90°、200 万画素カメラ、AI ビジョントラッキング</p>
+    <p class="pc-desc">Juxi Technology 2 自由度サーボ雲台——SCS0009 バスサーボ、水平 180°/垂直 90°、200 万画素カメラ、AI ビジョントラッキング</p>
   </a>
   <a :href="withBase('/ja/products/4k-hdmi-capture')" class="category-card">
     <span class="pc-title">4K HDMI キャプチャカード</span>
-    <p class="pc-desc">鉅犀科技 4K HDMI キャプチャカード——4K 高画質キャプチャ、HDMI/Micro HDMI/DP 多インターフェース、USB 直結、配信・録画</p>
+    <p class="pc-desc">Juxi Technology 4K HDMI キャプチャカード——4K 高画質キャプチャ、HDMI/Micro HDMI/DP 多インターフェース、USB 直結、配信・録画</p>
   </a>
   <a :href="withBase('/ja/products/amazinghand')" class="category-card">
     <span class="pc-title">AmazingHand オープンソース 4指器用ハンド</span>
-    <p class="pc-desc">鉅犀科技 AmazingHand オープンソース 4指器用ハンド、TTLバス制御、オープンCAD、具身知能・HRI研究</p>
+    <p class="pc-desc">Juxi Technology AmazingHand オープンソース 4指器用ハンド、TTLバス制御、オープンCAD、具身知能・HRI研究</p>
   </a>
   <a :href="withBase('/ja/products/esp32-s3-wifi-module')" class="category-card">
     <span class="pc-title">ESP32-S3 WiFi 動画モジュール</span>
-    <p class="pc-desc">鉅犀科技 ESP32-S3 WiFi 動画転送モジュール——200 万画素カメラ、WiFi リアルタイム転送、AI ビジョン認識(色/顔/QR)、AP+STA デュアルモード</p>
+    <p class="pc-desc">Juxi Technology ESP32-S3 WiFi 動画転送モジュール——200 万画素カメラ、WiFi リアルタイム転送、AI ビジョン認識(色/顔/QR)、AP+STA デュアルモード</p>
   </a>
   <a :href="withBase('/ja/products/feetech-servo')" class="category-card">
     <span class="pc-title">Feetech バスサーボ(SCS0009 / STS3215)</span>
-    <p class="pc-desc">鉅犀科技 Feetech シリアルバスサーボ SCS0009 / STS3215——SCS 通信プロトコル、磁気エンコーダ/ポテンショメータ 2 バージョン、メモリテーブル解析、上位機デバッグ</p>
+    <p class="pc-desc">Juxi Technology Feetech シリアルバスサーボ SCS0009 / STS3215——SCS 通信プロトコル、磁気エンコーダ/ポテンショメータ 2 バージョン、メモリテーブル解析、上位機デバッグ</p>
   </a>
   <a :href="withBase('/ja/products/gps-beidou-module')" class="category-card">
     <span class="pc-title">GPS & 北斗 GNSS 測位モジュール</span>
-    <p class="pc-desc">鉅犀科技 GPS & 北斗 GNSS 測位モジュール——ATGM336H-5N チップ、四大衛星システム連合測位、2.5m 精度、ROS 対応</p>
+    <p class="pc-desc">Juxi Technology GPS & 北斗 GNSS 測位モジュール——ATGM336H-5N チップ、四大衛星システム連合測位、2.5m 精度、ROS 対応</p>
   </a>
   <a :href="withBase('/ja/products/imu-module')" class="category-card">
     <span class="pc-title">IMU 高精度慣性航法モジュール</span>
-    <p class="pc-desc">鉅犀科技 IMU 高精度慣性航法モジュール——100Hz 姿勢演算、6/9/10軸選択、IIC+シリアル双通信、ROS 統合</p>
+    <p class="pc-desc">Juxi Technology IMU 高精度慣性航法モジュール——100Hz 姿勢演算、6/9/10軸選択、IIC+シリアル双通信、ROS 統合</p>
   </a>
   <a :href="withBase('/ja/products/imx219-csi-camera')" class="category-card">
     <span class="pc-title">79° IMX219 CSI カメラ</span>
-    <p class="pc-desc">鉅犀科技 79° IMX219 CSI カメラ——800 万画素ネイティブ CSI インターフェース、77° FOV、NVIDIA Jetson 低遅延ビジョン</p>
+    <p class="pc-desc">Juxi Technology 79° IMX219 CSI カメラ——800 万画素ネイティブ CSI インターフェース、77° FOV、NVIDIA Jetson 低遅延ビジョン</p>
   </a>
   <a :href="withBase('/ja/products/jetson-orin-nx-super-kit')" class="category-card">
     <span class="pc-title">Jetson Orin NX Super 開発キット</span>
-    <p class="pc-desc">鉅犀科技 NVIDIA Jetson Orin NX SUPER 開発キット——117/157 TOPS エッジ AI コンピューティングプラットフォーム、Ubuntu 22.04 と …</p>
+    <p class="pc-desc">Juxi Technology NVIDIA Jetson Orin NX SUPER 開発キット——117/157 TOPS エッジ AI コンピューティングプラットフォーム、Ubuntu 22.04 と …</p>
   </a>
   <a :href="withBase('/ja/products/kvm-switch')" class="category-card">
     <span class="pc-title">4-in-1 KVM スイッチャー</span>
-    <p class="pc-desc">鉅犀科技 4-in-1 KVM スイッチャー——TTL シリアル/Bluetooth ドッキングステーション、複数デバイスワンキー切替、ロボット開発デバッグの相棒</p>
+    <p class="pc-desc">Juxi Technology 4-in-1 KVM スイッチャー——TTL シリアル/Bluetooth ドッキングステーション、複数デバイスワンキー切替、ロボット開発デバッグの相棒</p>
   </a>
   <a :href="withBase('/ja/products/kws-voice-module')" class="category-card">
     <span class="pc-title">KWS 音声対話モジュール</span>
-    <p class="pc-desc">鉅犀科技 KWS 音声認識対話モジュール——中英認識語、シリアル/RViz2 可視化、Jetson/Raspberry Pi 対応、ファームウェアオープンソース</p>
+    <p class="pc-desc">Juxi Technology KWS 音声認識対話モジュール——中英認識語、シリアル/RViz2 可視化、Jetson/Raspberry Pi 対応、ファームウェアオープンソース</p>
   </a>
   <a :href="withBase('/ja/products/lekiwi')" class="category-card">
     <span class="pc-title">Lekiwi 具身知能モバイルロボット</span>
-    <p class="pc-desc">鉅犀科技 Lekiwi 具身知能モバイルロボット——低コスト教育用ロボットアーム/モバイルベース、サーボ制御、教育・初心者向け</p>
+    <p class="pc-desc">Juxi Technology Lekiwi 具身知能モバイルロボット——低コスト教育用ロボットアーム/モバイルベース、サーボ制御、教育・初心者向け</p>
   </a>
   <a :href="withBase('/ja/products/overhead-camera-mount')" class="category-card">
     <span class="pc-title">SO-ARM101 オーバーヘッドカメラマウント</span>
-    <p class="pc-desc">鉅犀科技 SO-ARM101 オーバーヘッドカメラマウント——真上視点設置、RealSense 対応、ロボットアームビジョンデータ収集</p>
+    <p class="pc-desc">Juxi Technology SO-ARM101 オーバーヘッドカメラマウント——真上視点設置、RealSense 対応、ロボットアームビジョンデータ収集</p>
   </a>
   <a :href="withBase('/ja/products/realsense-depth-camera')" class="category-card">
     <span class="pc-title">3D RealSense 深度カメラ</span>
-    <p class="pc-desc">鉅犀科技 3D RealSense 深度カメラ——D435i/D405/D405CB の 3 モデル、高精度深度知覚、XLeRobot と SO-ARM101 に対応</p>
+    <p class="pc-desc">Juxi Technology 3D RealSense 深度カメラ——D435i/D405/D405CB の 3 モデル、高精度深度知覚、XLeRobot と SO-ARM101 に対応</p>
   </a>
   <a :href="withBase('/ja/products/robot-vision-kit')" class="category-card">
     <span class="pc-title">SO-ARM101 ロボットアームビジョンキット</span>
-    <p class="pc-desc">鉅犀科技 SO-ARM101 ロボットアームビジョンキット——手首/側面/真上 3 視点取付、60FPS 固定焦点または 30FPS オートフォーカスズームカメラ、ACT/Smolvla…</p>
+    <p class="pc-desc">Juxi Technology SO-ARM101 ロボットアームビジョンキット——手首/側面/真上 3 視点取付、60FPS 固定焦点または 30FPS オートフォーカスズームカメラ、ACT/Smolvla…</p>
   </a>
   <a :href="withBase('/ja/products/servo-driver-board')" class="category-card">
     <span class="pc-title">JUXI バスサーボドライバボード</span>
-    <p class="pc-desc">鉅犀科技 JUXI バスサーボドライバボード——単一バスで 253 個のサーボ制御、7~12.6V 広電圧、Type-C プラグアンドプレイ、LeRobot SO-ARM 専用設計</p>
+    <p class="pc-desc">Juxi Technology JUXI バスサーボドライバボード——単一バスで 253 個のサーボ制御、7~12.6V 広電圧、Type-C プラグアンドプレイ、LeRobot SO-ARM 専用設計</p>
   </a>
   <a :href="withBase('/ja/products/so-arm101')" class="category-card">
     <span class="pc-title">SO-ARM101 開発キット</span>
-    <p class="pc-desc">鉅犀科技 SO-ARM101 双腕ロボット開発キット——6 DOF オープンソース機械腕、LeRobot エコシステム、遠隔操作/模倣学習/AI 研究の第一候補</p>
+    <p class="pc-desc">Juxi Technology SO-ARM101 双腕ロボット開発キット——6 DOF オープンソース機械腕、LeRobot エコシステム、遠隔操作/模倣学習/AI 研究の第一候補</p>
   </a>
   <a :href="withBase('/ja/products/tpu-flexible-gripper')" class="category-card">
     <span class="pc-title">SO-ARM101 TPU フレキシブルグリッパー</span>
-    <p class="pc-desc">鉅犀科技 SO-ARM101 TPU フレキシブルグリッパー——柔らかい TPU 素材で不規則・壊れやすい物体を安全に把持、アーム搭載カメラ対応、30FPS ズーム/60FPS 固定焦点選択可</p>
+    <p class="pc-desc">Juxi Technology SO-ARM101 TPU フレキシブルグリッパー——柔らかい TPU 素材で不規則・壊れやすい物体を安全に把持、アーム搭載カメラ対応、30FPS ズーム/60FPS 固定焦点選択可</p>
   </a>
   <a :href="withBase('/ja/products/usb-sound-card')" class="category-card">
     <span class="pc-title">USB ドライバ不要サウンドカード</span>
-    <p class="pc-desc">鉅犀科技 USB ドライバ不要サウンドカード——オンボードマイク+スピーカー、プラグアンドプレイ、ノイズ低減、Raspberry Pi/Jetson/PC 対応</p>
+    <p class="pc-desc">Juxi Technology USB ドライバ不要サウンドカード——オンボードマイク+スピーカー、プラグアンドプレイ、ノイズ低減、Raspberry Pi/Jetson/PC 対応</p>
   </a>
 </div>
 

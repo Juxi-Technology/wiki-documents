@@ -1,11 +1,11 @@
 ---
 title: 貢献ガイド
-description: 鉅犀科技 Wiki にコンテンツを貢献する方法
+description: Juxi Technology Wiki にコンテンツを貢献する方法
 ---
 
 # 貢献ガイド
 
-鉅犀科技 Wiki へ貢献をご検討いただきありがとうございます！本ドキュメントが貢献フローを案内します。
+Juxi Technology Wiki へ貢献をご検討いただきありがとうございます！本ドキュメントが貢献フローを案内します。
 
 ## 準備
 
@@ -34,7 +34,7 @@ npm run docs:dev
 
 ### 新規チュートリアルの追加
 
-鉅犀科技製品のチュートリアルを共有したい場合：
+Juxi Technology製品のチュートリアルを共有したい場合：
 
 1. まず [GitHub Issues](https://github.com/Juxi-Technology/wiki-documents/issues) に Proposal を投稿し、チュートリアルのテーマと概要を説明
 2. メンテナーが確認したら、既存のチュートリアル構成に沿って執筆

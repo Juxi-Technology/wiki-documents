@@ -1,7 +1,7 @@
 ---
 title: 4K HDMI キャプチャカード
 category: accessory
-description: 鉅犀科技 4K HDMI キャプチャカード——4K 高画質キャプチャ、HDMI/Micro HDMI/DP 多インターフェース、USB 直結、配信・録画
+description: Juxi Technology 4K HDMI キャプチャカード——4K 高画質キャプチャ、HDMI/Micro HDMI/DP 多インターフェース、USB 直結、配信・録画
 keywords: [hdmi capture, キャプチャカード, 4k, 録画]
 ---
 
@@ -31,9 +31,9 @@ keywords: [hdmi capture, キャプチャカード, 4k, 録画]
 
 ## クイックスタート
 
-1. 按主板接口选择接线方式(HDMI / Micro HDMI / DP 转接)
-2. 连接采集器 USB 到显示端
-3. OBS / PotPlayer 中选择采集设备即可
+1. ボードのインターフェースに応じて配線を選択(HDMI / Micro HDMI / DP)
+2. キャプチャの USB を表示デバイスに接続
+3. OBS / PotPlayer でキャプチャデバイスを選択
 ## 関連チュートリアル
 
 - [4K HDMI キャプチャチュートリアル](/ja/tutorials/accessories/4k-hdmi-capture-tutorial)

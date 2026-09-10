@@ -31,9 +31,9 @@ La tarjeta de captura HDMI 4K admite HDMI / Micro HDMI / DP y se conecta por USB
 
 ## Inicio rápido
 
-1. 按主板接口选择接线方式(HDMI / Micro HDMI / DP 转接)
-2. 连接采集器 USB 到显示端
-3. OBS / PotPlayer 中选择采集设备即可
+1. Elija el cableado según la interfaz de la placa (HDMI / Micro HDMI / DP)
+2. Conecte el USB del capturador al dispositivo de visualización
+3. Seleccione el dispositivo de captura en OBS / PotPlayer
 ## Tutoriales
 
 - [Tutorial de captura HDMI 4K](/es/tutorials/accessories/4k-hdmi-capture-tutorial)

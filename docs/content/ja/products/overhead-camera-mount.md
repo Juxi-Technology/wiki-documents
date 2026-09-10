@@ -1,7 +1,7 @@
 ---
 title: SO-ARM101 オーバーヘッドカメラマウント
 category: robot
-description: 鉅犀科技 SO-ARM101 オーバーヘッドカメラマウント——真上視点設置、RealSense 対応、ロボットアームビジョンデータ収集
+description: Juxi Technology SO-ARM101 オーバーヘッドカメラマウント——真上視点設置、RealSense 対応、ロボットアームビジョンデータ収集
 keywords: [camera mount, カメラマウント, overhead, realsense, ビジョン収集]
 ---
 
@@ -30,9 +30,9 @@ SO-ARM101 オーバーヘッドカメラマウントは真上視点での設置�
 
 ## クイックスタート
 
-1. 将支架固定到 SO-ARM 安装点
-2. 安装相机(RealSense 或 USB)
-3. 连接主控,`python -m lerobot.find_cameras` 确认识别
+1. ブラケットを SO-ARM のマウントポイントに固定
+2. カメラを取り付け(RealSense または USB)
+3. ホストに接続し、`python -m lerobot.find_cameras` で確認
 ## 関連チュートリアル
 
 - [SO-ARM101 オーバーヘッドカメラ設置チュートリアル](/ja/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation)

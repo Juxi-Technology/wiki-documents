@@ -1,7 +1,7 @@
 ---
 title: SO-ARM101 ロボットアームビジョンキット
 category: robot
-description: 鉅犀科技 SO-ARM101 ロボットアームビジョンキット——手首/側面/真上 3 視点取付、60FPS 固定焦点または 30FPS オートフォーカスズームカメラ、ACT/Smolvla/Pi0/GR00T トレーニングフレームワーク対応
+description: Juxi Technology SO-ARM101 ロボットアームビジョンキット——手首/側面/真上 3 視点取付、60FPS 固定焦点または 30FPS オートフォーカスズームカメラ、ACT/Smolvla/Pi0/GR00T トレーニングフレームワーク対応
 keywords: [camera mount, ビジョンキット, カメラマウント, so-arm101, ロボットアームビジョン]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: SO-ARM101 개발 키트
 category: robot
-description: 鉅犀科技 SO-ARM101 양팔 로봇 개발 키트 — 6 DOF 오픈소스 로봇 팔, LeRobot 생태계, 원격 조작/모방 학습/AI 연구의 첫 번째 선택
+description: Juxi Technology SO-ARM101 양팔 로봇 개발 키트 — 6 DOF 오픈소스 로봇 팔, LeRobot 생태계, 원격 조작/모방 학습/AI 연구의 첫 번째 선택
 keywords: [so-arm101, 로봇 팔, leRobot, 원격 조작, 양팔 로봇]
 ---
 
@@ -11,7 +11,7 @@ keywords: [so-arm101, 로봇 팔, leRobot, 원격 조작, 양팔 로봇]
 
 ## 제품 개요
 
-SO-ARM101은 鉅犀科技가 오픈소스로 제공하는 6-DOF 양팔 로봇 개발 키트입니다. **LeRobot** 생태계에 깊이 통합되어 리더-팔로워 원격 조작, 모방 학습 데이터 수집, 정책 훈련을 지원합니다. 검은색 리더 암 + 흰색 팔로워 암, 개봉 즉시 사용 가능합니다.
+SO-ARM101은 Juxi Technology가 오픈소스로 제공하는 6-DOF 양팔 로봇 개발 키트입니다. **LeRobot** 생태계에 깊이 통합되어 리더-팔로워 원격 조작, 모방 학습 데이터 수집, 정책 훈련을 지원합니다. 검은색 리더 암 + 흰색 팔로워 암, 개봉 즉시 사용 가능합니다.
 
 **주요 특징**:
 

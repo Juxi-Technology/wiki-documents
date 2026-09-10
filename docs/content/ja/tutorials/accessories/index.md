@@ -1,6 +1,6 @@
 ---
 title: ロボットアクセサリ
-description: "鉅犀科技ロボットアクセサリシリーズチュートリアルホーム——KWS音声、Feetechサーボ、カメラ、サウンドカードなど"
+description: "Juxi Technologyロボットアクセサリシリーズチュートリアルホーム——KWS音声、Feetechサーボ、カメラ、サウンドカードなど"
 ---
 
 # ロボットアクセサリ

@@ -30,9 +30,9 @@ Der 4-in-1-KVM-Switch vereint HDMI-Umschaltung, TTL-Serial, Bluetooth und USB-Er
 
 ## Schnellstart
 
-1. 将多台设备接入 KVM 对应接口
-2. 按键/软件切换显示与输入设备
-3. TTL 串口用于调试树莓派/Jetson
+1. Geräte an die jeweiligen Anschlüsse anschließen
+2. Display/Eingabe per Taste oder Software umschalten
+3. TTL-Seriell zum Debuggen von Pi/Jetson
 ## Verwandte Tutorials
 
 - [KVM-Switch-Tutorial](/de/tutorials/accessories/kvm-switch-tutorial)

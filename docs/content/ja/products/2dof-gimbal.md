@@ -1,7 +1,7 @@
 ---
 title: 2 自由度サーボパンチルト
 category: accessory
-description: 鉅犀科技 2 自由度サーボ雲台——SCS0009 バスサーボ、水平 180°/垂直 90°、200 万画素カメラ、AI ビジョントラッキング
+description: Juxi Technology 2 自由度サーボ雲台——SCS0009 バスサーボ、水平 180°/垂直 90°、200 万画素カメラ、AI ビジョントラッキング
 keywords: [gimbal, 雲台, 2dof, ビジョントラッキング, scs0009]
 ---
 

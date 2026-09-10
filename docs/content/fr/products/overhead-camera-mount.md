@@ -30,9 +30,9 @@ Le support caméra aérienne SO-ARM101 offre un montage en vue de dessus, compat
 
 ## Démarrage rapide
 
-1. 将支架固定到 SO-ARM 安装点
-2. 安装相机(RealSense 或 USB)
-3. 连接主控,`python -m lerobot.find_cameras` 确认识别
+1. Fixez le support aux points de montage SO-ARM
+2. Installez la caméra (RealSense ou USB)
+3. Connectez l'hôte, vérifiez avec `python -m lerobot.find_cameras`
 ## Tutoriels
 
 - [Installation caméra aérienne SO-ARM101](/fr/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation)

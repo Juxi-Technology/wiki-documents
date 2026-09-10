@@ -1,48 +1,48 @@
 ---
-title: Lerobot机械臂组装教程
-description: "Pro版 主动臂使用5V6A电源适配器，从动臂使用12V5A电源适配器"
+title: Lerobot機械臂組裝教程
+description: "Pro版 主動臂使用5V6A電源適配器，從動臂使用12V5A電源適配器"
 ---
 
-# Lerobot机械臂组装教程
+# Lerobot機械臂組裝教程
 
 > **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
 
 
 ![image – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
 
-**Pro版 主动臂使用5V6A电源适配器，从动臂使用12V5A电源适配器**
+**Pro版 主動臂使用5V6A電源適配器，從動臂使用12V5A電源適配器**
 
-舵机ID设置和舵机角度校准及组装要提前做好，可参考[官方组装教程](https://huggingface.co/docs/lerobot/so101)
+舵機ID設置和舵機角度校準及組裝要提前做好，可參考[官方組裝教程](https://huggingface.co/docs/lerobot/so101)
 
-# 第一步：设置舵机ID，安装舵盘（除5号舵机）
+# 第一步：設置舵機ID，安裝舵盤（除5號舵機）
 
 ![image – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
 
-再次提醒，请确保舵机关节 ID 和齿轮比与 **SO-ARM101** 的严格对应。
+再次提醒，請確保舵機關節 ID 和齒輪比與 **SO-ARM101** 的嚴格對應。
 
-总线上每个电机都有一个唯一的ID。新电机通常带有一个默认ID `1`。为了确保电机和控制器之间的通信正常，我们首先需要为每个电机设置一个唯一的ID。此外，总线上的数据传输速度由波特率决定。为了能够相互通信，控制器和所有电机都需要配置相同的波特率，本机械臂舵机的波特率为100000。
+總線上每個電機都有一個唯一的ID。新電機通常帶有一個默認ID `1`。為了確保電機和控制器之間的通信正常，我們首先需要為每個電機設置一個唯一的ID。此外，總線上的數據傳輸速度由波特率決定。為了能夠相互通信，控制器和所有電機都需要配置相同的波特率，本機械臂舵機的波特率為100000。
 
-为此，我们首先需要将控制器分别连接到每个电机，以便进行设置。由于我们会将这些参数写入电机内部存储器（EEPROM）的非易失性区域，因此只需操作一次即可。
+為此，我們首先需要將控制器分別連接到每個電機，以便進行設置。由於我們會將這些參數寫入電機內部存儲器（EEPROM）的非易失性區域，因此只需操作一次即可。
 
-如果您要重新利用其他机器人的电机，您可能还需要执行此步骤，因为 ID 和波特率可能不匹配。
+如果您要重新利用其他機器人的電機，您可能還需要執行此步驟，因為 ID 和波特率可能不匹配。
 
-下面的视频展示了设置电机 ID 的步骤顺序。
+下面的視頻展示了設置電機 ID 的步驟順序。
 
-## Windows系统
+## Windows系統
 
 [飞特舵机上位机.zip]
 
-使用飞特舵机上位机设置舵机ID并校准中位，ID设置是从1到6的！
+使用飛特舵機上位機設置舵機ID並校準中位，ID設置是從1到6的！
 
 [机械臂舵机设置ID-Windows系统.mp4]
 
-## Linux/ubuntu系统
+## Linux/ubuntu系統
 
-如需飞特舵机上位机可参考https://gitee.com/ftservo/FTServo_Linux
+如需飛特舵機上位機可參考https://gitee.com/ftservo/FTServo_Linux
 
-请先按照 [LeRobot机械臂教程](https://juxitech.feishu.cn/wiki/Wztzw95Cui2F9LkbMk8cnAoanCc) 跟进到 **C. 机械臂控制**下 的 **端口授权 的 **运行脚本以查找端口**
+請先按照 [LeRobot机械臂教程](https://juxitech.feishu.cn/wiki/Wztzw95Cui2F9LkbMk8cnAoanCc) 跟進到 **C. 機械臂控制**下 的 **端口授權 的 **運行腳本以查找端口**
 
-使用 USB 数据线从电脑连接到从动臂的舵机驱动板，并接通电源。然后，运行以下命令。请将命令中的--robot.port=/dev/ttyACM0 修改为找到的端口号。如查找的端口为/dev/ttyACM1，则修改为--robot.port=/dev/ttyACM1
+使用 USB 數據線從電腦連接到從動臂的舵機驅動板，並接通電源。然後，運行以下命令。請將命令中的--robot.port=/dev/ttyACM0 修改為找到的端口號。如查找的端口為/dev/ttyACM1，則修改為--robot.port=/dev/ttyACM1
 
 ```Python
 lerobot-setup-motors \
@@ -50,35 +50,35 @@ lerobot-setup-motors \
     --robot.port=/dev/ttyACM0
 ```
 
-您会看到以下输出。
+您會看到以下輸出。
 
 ```Python
 Connect the controller board to the 'gripper' motor only and press enter.
 ```
 
-依照指示，连接夹爪的舵机。请确保它是唯一连接到舵机驱动板的舵机，并且该舵机尚未与其他任何舵机进行连接。当您按下 **[Enter]** 键后，脚本将自动设置该舵机的 ID 和波特率，ID设置是从6到1的！
+依照指示，連接夾爪的舵機。請確保它是唯一連接到舵機驅動板的舵機，並且該舵機尚未與其他任何舵機進行連接。當您按下 **[Enter]** 鍵後，腳本將自動設置該舵機的 ID 和波特率，ID設置是從6到1的！
 
-之后，您应该会看到以下信息：
+之後，您應該會看到以下信息：
 
 ```Python
 'gripper' motor id set to 6
 ```
 
-接着是下一条输出是:
+接著是下一條輸出是:
 
 ```Python
 Connect the controller board to the 'wrist_roll' motor only and press enter.
 ```
 
-**注意 根据指示，对每个舵机重复上述操作。
+**注意 根據指示，對每個舵機重複上述操作。
 
-与之前的舵机一样，请确保它是唯一连接到驱动板的舵机，并且舵机本身没有连接到任何其他舵机。
+與之前的舵機一樣，請確保它是唯一連接到驅動板的舵機，並且舵機本身沒有連接到任何其他舵機。
 
-在每次按 **Enter** 键之前，请务必检查您的线缆连接。例如，在操作电路板时，电源线可能会断开。
+在每次按 **Enter** 鍵之前，請務必檢查您的線纜連接。例如，在操作電路板時，電源線可能會斷開。
 
-当您完成所有步骤后，脚本将自动结束，此时舵机即可投入使用。现在，您可以将每根舵机的 3 针接口依次连接，并将第一个舵机（ID 为 1 的"shoulder pan"舵机）的线缆连接到驱动板。现在可以将驱动板安装到机械臂的底座上。
+當您完成所有步驟後，腳本將自動結束，此時舵機即可投入使用。現在，您可以將每根舵機的 3 針接口依次連接，並將第一個舵機（ID 為 1 的"shoulder pan"舵機）的線纜連接到驅動板。現在可以將驅動板安裝到機械臂的底座上。
 
-对主动臂重复相同的步骤。
+對主動臂重複相同的步驟。
 
 ```Python
 lerobot-setup-motors \
@@ -88,20 +88,20 @@ lerobot-setup-motors \
 
 [机械臂舵机设置ID-Linux系统.mp4]
 
-# 第二步：组装
+# 第二步：組裝
 
-从动臂的组装步骤与主动臂基本相同。唯一的区别在于第12步之后，末端执行器（夹爪和手柄）的安装方式有所不同。
+從動臂的組裝步驟與主動臂基本相同。唯一的區別在於第12步之後，末端執行器（夾爪和手柄）的安裝方式有所不同。
 
 [SO-ARM101机械臂组装教程.mp4]
 
-舵机驱动板的安装：先安装4个铜柱，然后用四个M2.5\*8的螺丝固定驱动板
+舵機驅動板的安裝：先安裝4個銅柱，然後用四個M2.5\*8的螺絲固定驅動板
 
-![Linux/ubuntu系统 – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/7.png)
+![Linux/ubuntu系統 – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/7.png)
 
-![Linux/ubuntu系统 – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/8.png)
+![Linux/ubuntu系統 – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/8.png)
 
-![Linux/ubuntu系统 – 3](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
+![Linux/ubuntu系統 – 3](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
 
-**Pro版 黑色主动臂使用5V6A电源适配器，白色从动臂使用12V5A电源适配器**
+**Pro版 黑色主動臂使用5V6A電源適配器，白色從動臂使用12V5A電源適配器**
 
 <RelatedProducts slugs="so-arm101,servo-driver-board,overhead-camera-mount" />

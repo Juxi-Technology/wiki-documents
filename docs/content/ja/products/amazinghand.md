@@ -1,7 +1,7 @@
 ---
 title: AmazingHand オープンソース 4指器用ハンド
 category: robot
-description: 鉅犀科技 AmazingHand オープンソース 4指器用ハンド、TTLバス制御、オープンCAD、具身知能・HRI研究
+description: Juxi Technology AmazingHand オープンソース 4指器用ハンド、TTLバス制御、オープンCAD、具身知能・HRI研究
 keywords: [amazinghand, 器用ハンド, dexterous hand, 具身知能]
 ---
 
@@ -11,7 +11,7 @@ keywords: [amazinghand, 器用ハンド, dexterous hand, 具身知能]
 
 ## 製品概要
 
-AmazingHand は鉅犀科技がオープンソースで提供する4指器用ハンドです。多関節設計で、TTLシリアルバス制御に対応。オープンCADファイルで指の設計を自由にカスタマイズでき、器用操作、把持戦略、人とロボットのインタラクション(HRI)研究に広く使われています。
+AmazingHand はJuxi Technologyがオープンソースで提供する4指器用ハンドです。多関節設計で、TTLシリアルバス制御に対応。オープンCADファイルで指の設計を自由にカスタマイズでき、器用操作、把持戦略、人とロボットのインタラクション(HRI)研究に広く使われています。
 
 **主な特長**:
 

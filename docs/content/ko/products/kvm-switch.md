@@ -1,7 +1,7 @@
 ---
 title: 4-in-1 KVM 스위처
 category: accessory
-description: 鉅犀科技 4-in-1 KVM 스위처 — TTL 직렬/블루투스 도킹 스테이션, 다중 기기 원클릭 전환, 로봇 개발 디버깅 파트너
+description: Juxi Technology 4-in-1 KVM 스위처 — TTL 직렬/블루투스 도킹 스테이션, 다중 기기 원클릭 전환, 로봇 개발 디버깅 파트너
 keywords: [kvm, 스위처, 도킹 스테이션, ttl, 블루투스]
 ---
 
@@ -30,9 +30,9 @@ keywords: [kvm, 스위처, 도킹 스테이션, ttl, 블루투스]
 
 ## 빠른 시작
 
-1. 将多台设备接入 KVM 对应接口
-2. 按键/软件切换显示与输入设备
-3. TTL 串口用于调试树莓派/Jetson
+1. 각 기기를 해당 포트에 연결
+2. 버튼 또는 소프트웨어로 디스플레이/입력 전환
+3. Pi/Jetson 디버깅용 TTL 시리얼
 ## 관련 튜토리얼
 
 - [KVM 스위처 튜토리얼](/ko/tutorials/accessories/kvm-switch-tutorial)

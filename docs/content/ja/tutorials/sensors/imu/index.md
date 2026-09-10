@@ -117,4 +117,4 @@ python3 imu_calibration_tool.py --mode i2c --port 1 --calibrate temp
 
 ## 公式リポジトリサンプル
 
-鉅犀科技は IMU 慣性航法モジュール向けの完全なオープンソースコードを提供しています：[GitHub](https://github.com/Juxi-Technology/ICM42670P-High-Precision-IMU-Module)
+Juxi Technologyは IMU 慣性航法モジュール向けの完全なオープンソースコードを提供しています：[GitHub](https://github.com/Juxi-Technology/ICM42670P-High-Precision-IMU-Module)

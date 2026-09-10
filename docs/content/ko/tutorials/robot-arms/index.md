@@ -1,6 +1,6 @@
 ---
 title: 로봇 팔 시리즈
-description: "鉅犀科技 로봇 팔 시리즈 튜토리얼 홈——SO-ARM101, AmazingHand, Lekiwi"
+description: "Juxi Technology 로봇 팔 시리즈 튜토리얼 홈——SO-ARM101, AmazingHand, Lekiwi"
 ---
 
 # 로봇 팔 시리즈

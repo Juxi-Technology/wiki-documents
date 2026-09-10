@@ -1,7 +1,7 @@
 ---
 title: 4K HDMI 캡처 카드
 category: accessory
-description: 鉅犀科技 4K HDMI 캡처 카드 — 4K 고화질 캡처, HDMI/Micro HDMI/DP 다중 인터페이스, USB 직결, 방송·녹화
+description: Juxi Technology 4K HDMI 캡처 카드 — 4K 고화질 캡처, HDMI/Micro HDMI/DP 다중 인터페이스, USB 직결, 방송·녹화
 keywords: [hdmi capture, 캡처 카드, 4k, 녹화]
 ---
 
@@ -31,9 +31,9 @@ keywords: [hdmi capture, 캡처 카드, 4k, 녹화]
 
 ## 빠른 시작
 
-1. 按主板接口选择接线方式(HDMI / Micro HDMI / DP 转接)
-2. 连接采集器 USB 到显示端
-3. OBS / PotPlayer 中选择采集设备即可
+1. 보드 인터페이스에 따라 배선 선택(HDMI / Micro HDMI / DP)
+2. 캡처 USB를 디스플레이 기기에 연결
+3. OBS / PotPlayer에서 캡처 장치 선택
 ## 관련 튜토리얼
 
 - [4K HDMI 캡처 튜토리얼](/ko/tutorials/accessories/4k-hdmi-capture-tutorial)

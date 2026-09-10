@@ -1,6 +1,6 @@
 ---
 title: ロボットアームシリーズ
-description: "鉅犀科技ロボットアームシリーズチュートリアルホーム——SO-ARM101、AmazingHand、Lekiwi"
+description: "Juxi Technologyロボットアームシリーズチュートリアルホーム——SO-ARM101、AmazingHand、Lekiwi"
 ---
 
 # ロボットアームシリーズ

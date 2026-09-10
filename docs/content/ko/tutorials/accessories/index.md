@@ -1,6 +1,6 @@
 ---
 title: 로봇 액세서리
-description: "鉅犀科技 로봇 액세서리 시리즈 튜토리얼 홈——KWS 음성, Feetech 서보, 카메라, 사운드 카드 등"
+description: "Juxi Technology 로봇 액세서리 시리즈 튜토리얼 홈——KWS 음성, Feetech 서보, 카메라, 사운드 카드 등"
 ---
 
 # 로봇 액세서리

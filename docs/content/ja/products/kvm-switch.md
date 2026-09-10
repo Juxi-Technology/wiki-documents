@@ -1,7 +1,7 @@
 ---
 title: 4-in-1 KVM スイッチャー
 category: accessory
-description: 鉅犀科技 4-in-1 KVM スイッチャー——TTL シリアル/Bluetooth ドッキングステーション、複数デバイスワンキー切替、ロボット開発デバッグの相棒
+description: Juxi Technology 4-in-1 KVM スイッチャー——TTL シリアル/Bluetooth ドッキングステーション、複数デバイスワンキー切替、ロボット開発デバッグの相棒
 keywords: [kvm, スイッチャー, ドッキングステーション, ttl, bluetooth]
 ---
 
@@ -30,9 +30,9 @@ keywords: [kvm, スイッチャー, ドッキングステーション, ttl, blue
 
 ## クイックスタート
 
-1. 将多台设备接入 KVM 对应接口
-2. 按键/软件切换显示与输入设备
-3. TTL 串口用于调试树莓派/Jetson
+1. 各デバイスを対応するポートに接続
+2. ボタンまたはソフトウェアでディスプレイ/入力を切り替え
+3. Pi/Jetson のデバッグ用 TTL シリアル
 ## 関連チュートリアル
 
 - [KVM スイッチャーチュートリアル](/ja/tutorials/accessories/kvm-switch-tutorial)

@@ -1,22 +1,22 @@
 ---
-title: LeRobot ロボットアーム教程
-description: "本教程は12月15日までに更新済み。最新版の公式ドキュメントに従うこともできます。リンク参照。SO-ARM101 と SO-ARM100 は実行コードが相互互換。"
+title: LeRobot ロボットアームチュートリアル
+description: "本チュートリアルは12月15日までに更新済み。最新版の公式ドキュメントに従うこともできます。リンク参照。SO-ARM101 と SO-ARM100 は実行コードが相互互換。"
 ---
 
-# LeRobot ロボットアーム教程
+# LeRobot ロボットアームチュートリアル
 
 > **[ストアで購入](https://www.juxitech.com/ja/products/so-arm101-developers-kit)**
 
 
-本教程は12月15日までに更新済み。最新版の[公式ドキュメント](https://github.com/huggingface/lerobot/tree/main)に従うこともできます。具体教程は[このリンク](https://zihao-ai.feishu.cn/wiki/TS6swApHbinx01kHDi5cf5n5n8c)を参照。URDF などのファイルが必要な場合は[このリンク](https://github.com/TheRobotStudio/SO-ARM100)を参照。9月15日の旧バージョンは[このリンク](https://juxitech.feishu.cn/docx/DJkBdcwzooBqamxl0kgcvVUbngh?from=from_copylink)を参照。SO-ARM101 と SO-ARM100 は実行コードが相互互換です。
+本チュートリアルは12月15日までに更新済み。最新版の[公式ドキュメント](https://github.com/huggingface/lerobot/tree/main)に従うこともできます。具体的なチュートリアルは[このリンク](https://zihao-ai.feishu.cn/wiki/TS6swApHbinx01kHDi5cf5n5n8c)を参照。URDF などのファイルが必要な場合は[このリンク](https://github.com/TheRobotStudio/SO-ARM100)を参照。9月15日の旧バージョンは[このリンク](https://juxitech.feishu.cn/docx/DJkBdcwzooBqamxl0kgcvVUbngh?from=from_copylink)を参照。SO-ARM101 と SO-ARM100 は実行コードが相互互換です。
 
-## A. 教程の説明
+## A. チュートリアルの説明
 
 **Pro版 黑色の能動アームは5V6A電源アダプター、白色の従動アームは12V5A電源アダプターを使用！**
 
-サーボの取り付けと角度キャリブレーションは事前に済ませてください。[公式アセンブリ教程](https://huggingface.co/docs/lerobot/so101)を参照。本教程では扱いません！
+サーボの取り付けと角度キャリブレーションは事前に済ませてください。[公式アセンブリチュートリアル](https://huggingface.co/docs/lerobot/so101)を参照。本チュートリアルでは扱いません！
 
-アセンブリ教程は [Lerobotロボットアームアセンブリ教程](https://juxitech.feishu.cn/wiki/IAhYwcDRQiShY1kH1oHcZzKined)を参照
+アセンブリチュートリアルは [Lerobotロボットアームアセンブリ教程](https://juxitech.feishu.cn/wiki/IAhYwcDRQiShY1kH1oHcZzKined)を参照
 
 サーボが未設定または未アセンブルの場合は、まずこの[README](https://github.com/TheRobotStudio/SO-ARM100)の内容に従ってください。材料リスト、部品入手リンク、3Dプリント部品の説明、初めて印刷する場合や3Dプリンターがない場合のアドバイスが含まれています。
 
@@ -117,7 +117,7 @@ conda install ffmpeg -c conda-forge
 cd ~/lerobot && pip install -e ".[feetech]"
 ```
 
-Jetson Jetpack 6.0+ デバイスの場合（このステップの前に[このリンクの教程](https://pytorch.org/get-started/locally/)に従って Pytorch-gpu と Torchvision をインストールしてください）:
+Jetson Jetpack 6.0+ デバイスの場合（このステップの前に[このリンクのチュートリアル](https://pytorch.org/get-started/locally/)に従って Pytorch-gpu と Torchvision をインストールしてください）:
 
 ```Plain Text
 conda install -y -c conda-forge "opencv>=4.10.0.84"  # 通过 conda 安装 OpenCV 和其他依赖，仅适用于 Jetson Jetpack 6.0+
@@ -137,7 +137,7 @@ import torch
 print(torch.cuda.is_available())
 ```
 
-出力が False の場合は、[公式教程](https://pytorch.org/)に従って Pytorch と Torchvision を再インストールしてください。
+出力が False の場合は、[公式チュートリアル](https://pytorch.org/)に従って Pytorch と Torchvision を再インストールしてください。
 
 [Jetson Orin の Pytorch 非互換](https://juxitech.feishu.cn/wiki/AJWBwSbXiinQT5kM1SZc7N3Tn8d)
 
@@ -487,7 +487,7 @@ lerobot-record \
 
 ### ACT
 
-参考公式教程 [ACT](https://huggingface.co/docs/lerobot/training#act)
+公式チュートリアル [ACT](https://huggingface.co/docs/lerobot/training#act) を参照
 
 **訓練**
 
@@ -575,7 +575,7 @@ lerobot-record \
 
 ### Smolvla
 
-参考公式教程 [SmolVLA](https://huggingface.co/docs/lerobot/smolvla)
+公式チュートリアル [SmolVLA](https://huggingface.co/docs/lerobot/smolvla) を参照
 
 ```Bash
 pip install -e ".[smolvla]"
@@ -617,7 +617,7 @@ lerobot-record \
 
 ### Pi0
 
-参考公式教程 [Pi0](https://huggingface.co/docs/lerobot/pi0)
+公式チュートリアル [Pi0](https://huggingface.co/docs/lerobot/pi0) を参照
 
 ```Bash
 pip install -e ".[pi]"
@@ -657,15 +657,15 @@ lerobot-record \
 
 ### Pi0.5
 
-参考公式教程 [Pi0.5](https://huggingface.co/docs/lerobot/pi05)
+公式チュートリアル [Pi0.5](https://huggingface.co/docs/lerobot/pi05) を参照
 
-训练与 Pi0 相同,策略类型改为 `pi0.5`。
+トレーニングは Pi0 と同じで、ポリシータイプを `pi0.5` に変更します。
 
 ### GR00T N1.5
 
-参考官方教程 [GR00T](https://huggingface.co/docs/lerobot/gr00t)
+公式チュートリアル [GR00T](https://huggingface.co/docs/lerobot/gr00t) を参照
 
-训练与 Pi0 相同,策略类型改为 `gr00t`。
+トレーニングは Pi0 と同じで、ポリシータイプを `gr00t` に変更します。
 
 ## F. クラウドサーバーでの訓練展開とモデルエクスポート
 
@@ -812,7 +812,7 @@ AutoDL算力雲に戻り「ログイン指令」をコピーして見やすい�
 
 #### 9.データセット訓練
 
-本教程の [E.データセット訓練と評価] を参照し、クラウドサーバーで訓練コマンドを実行
+本チュートリアルの [E.データセット訓練と評価] を参照し、クラウドサーバーで訓練コマンドを実行
 
 #### 10.モデルファイルのエクスポート
 
@@ -824,7 +824,7 @@ AutoDL算力雲に戻り「ログイン指令」をコピーして見やすい�
 
 ## G. よくある質問
 
-本教程を使用する場合は、本ドキュメントで推奨している github リポジトリ https://github.com/JuxiTechnology/lerobot.git を git clone してください。
+本チュートリアルを使用する場合は、本ドキュメントで推奨している github リポジトリ https://github.com/JuxiTechnology/lerobot.git を git clone してください。
 
 本ドキュメントで推奨しているリポジトリは検証済みの安定版です。Lerobot公式リポジトリはリアルタイム更新の最新版で、予期しない問題(データセットバージョン違い、コマンド違いなど)が発生する可能性があります。
 

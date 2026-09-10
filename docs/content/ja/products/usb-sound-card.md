@@ -1,7 +1,7 @@
 ---
 title: USB ドライバ不要サウンドカード
 category: accessory
-description: 鉅犀科技 USB ドライバ不要サウンドカード——オンボードマイク+スピーカー、プラグアンドプレイ、ノイズ低減、Raspberry Pi/Jetson/PC 対応
+description: Juxi Technology USB ドライバ不要サウンドカード——オンボードマイク+スピーカー、プラグアンドプレイ、ノイズ低減、Raspberry Pi/Jetson/PC 対応
 keywords: [sound card, サウンドカード, usb audio, 音声対話]
 ---
 

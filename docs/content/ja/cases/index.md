@@ -1,11 +1,11 @@
 ---
 title: ユーザー成功事例
-description: 鉅犀科技のオープンソースハードウェアを用いた研究者・開発者の事例
+description: Juxi Technologyのオープンソースハードウェアを用いた研究者・開発者の事例
 ---
 
 # ユーザー成功事例
 
-鉅犀科技の製品を実際に使用した事例を集めました。教育、研究、商業応用をカバーします。
+Juxi Technologyの製品を実際に使用した事例を集めました。教育、研究、商業応用をカバーします。
 
 ---
 
@@ -47,7 +47,7 @@ description: 鉅犀科技のオープンソースハードウェアを用いた�
 
 ## あなたの事例を共有しませんか?
 
-鉅犀科技の製品をご利用なら、ぜひストーリーを共有してください!
+Juxi Technologyの製品をご利用なら、ぜひストーリーを共有してください!
 
 - 📧 メール: pe@juxitech.com
 - 💬 GitHub Issues: [事例を投稿](https://github.com/Juxi-Technology/wiki-documents/issues)

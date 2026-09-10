@@ -30,9 +30,9 @@ Lo switch KVM 4-in-1 combina commutazione HDMI, seriale TTL, Bluetooth ed espans
 
 ## Avvio rapido
 
-1. 将多台设备接入 KVM 对应接口
-2. 按键/软件切换显示与输入设备
-3. TTL 串口用于调试树莓派/Jetson
+1. Collegare i dispositivi alle rispettive porte
+2. Commutare display/input tramite pulsante o software
+3. Seriale TTL per il debug di Pi/Jetson
 ## Tutorial
 
 - [Tutorial switch KVM](/it/tutorials/accessories/kvm-switch-tutorial)

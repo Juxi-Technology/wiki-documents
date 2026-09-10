@@ -1,16 +1,16 @@
 ---
-title: 顶置摄像头安装座安装教程
-description: "USB自动对接摄像头调试请参考该教程USB自动对焦摄像头教程"
+title: 頂置攝像頭安裝座安裝教程
+description: "USB自動對接攝像頭調試請參考該教程USB自动对焦摄像头教程"
 ---
 
-# 顶置摄像头安装座安装教程
+# 頂置攝像頭安裝座安裝教程
 
 > **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
 
 
-USB自动对接摄像头调试请参考该教程[USB自动对焦摄像头教程](https://juxitech.feishu.cn/docx/JXstdNbN6oiL1WxiqJrc2OJDnrf?from=from_copylink)
+USB自動對接攝像頭調試請參考該教程[USB自动对焦摄像头教程](https://juxitech.feishu.cn/docx/JXstdNbN6oiL1WxiqJrc2OJDnrf?from=from_copylink)
 
-购买 D405C深度相机 套件的用户可通过淘宝客服发送 订单号 询问[RealSense D405C 教程](https://juxitech.feishu.cn/wiki/OSElwwOmYiVMNTkzo56c40g8nQe?from=from_copylink)密码
+購買 D405C深度相機 套件的用戶可通過淘寶客服發送 訂單號 詢問[RealSense D405C 教程](https://juxitech.feishu.cn/wiki/OSElwwOmYiVMNTkzo56c40g8nQe?from=from_copylink)密碼
 
 需要[官方模型文件](https://github.com/TheRobotStudio/SO-ARM100/tree/main/Optional/Overhead-Cam-Mount-Webcam)
 

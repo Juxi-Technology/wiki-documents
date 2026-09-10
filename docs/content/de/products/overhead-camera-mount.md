@@ -30,9 +30,9 @@ Die SO-ARM101 Overhead-Kamera-Halterung bietet eine Draufsicht-Montage und ist m
 
 ## Schnellstart
 
-1. 将支架固定到 SO-ARM 安装点
-2. 安装相机(RealSense 或 USB)
-3. 连接主控,`python -m lerobot.find_cameras` 确认识别
+1. Halterung an den SO-ARM-Montagepunkten befestigen
+2. Kamera installieren (RealSense oder USB)
+3. Host verbinden, mit `python -m lerobot.find_cameras` bestätigen
 ## Verwandte Tutorials
 
 - [SO-ARM101 Overhead-Kamera-Montage](/de/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation)

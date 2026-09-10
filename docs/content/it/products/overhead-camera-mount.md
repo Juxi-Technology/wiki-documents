@@ -30,9 +30,9 @@ Il supporto fotocamera overhead SO-ARM101 offre un montaggio dall'alto, compatib
 
 ## Avvio rapido
 
-1. 将支架固定到 SO-ARM 安装点
-2. 安装相机(RealSense 或 USB)
-3. 连接主控,`python -m lerobot.find_cameras` 确认识别
+1. Fissare il supporto ai punti di montaggio SO-ARM
+2. Installare la fotocamera (RealSense o USB)
+3. Collegare l'host e verificare con `python -m lerobot.find_cameras`
 ## Tutorial
 
 - [Installazione fotocamera overhead SO-ARM101](/it/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation)

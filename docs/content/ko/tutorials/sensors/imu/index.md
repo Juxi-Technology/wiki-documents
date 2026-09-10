@@ -117,4 +117,4 @@ python3 imu_calibration_tool.py --mode i2c --port 1 --calibrate temp
 
 ## 공식 저장소 예제
 
-鉅犀科技는 IMU 관성항법 모듈용 완전한 오픈소스 코드를 제공합니다：[GitHub](https://github.com/Juxi-Technology/ICM42670P-High-Precision-IMU-Module)
+Juxi Technology는 IMU 관성항법 모듈용 완전한 오픈소스 코드를 제공합니다：[GitHub](https://github.com/Juxi-Technology/ICM42670P-High-Precision-IMU-Module)

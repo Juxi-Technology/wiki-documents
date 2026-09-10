@@ -1,52 +1,52 @@
 ---
-title: ROS2应用
-description: "系统配置：ubuntu22.04"
+title: ROS2 Application
+description: "System configuration: Ubuntu 22.04"
 ---
 
-# ROS2应用
+# ROS2 Application
 
 > **[Buy in Store](https://www.juxitech.com/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
 
 
-**系统配置：ubuntu22.04**
+**System configuration: Ubuntu 22.04**
 
-**ROS2版本：humble**
+**ROS2 version: humble**
 
-### ROS2环境配置
+### ROS2 environment setup
 
-1. **更新下载源**
+1. **Update the download sources**
 
 ```PowerShell
 sudo apt update
 ```
 
-2. **输入ros2下载指令**
+2. **Enter the ros2 installation command**
 
 ```PowerShell
 wget http://fishros.com/install -O fishros && . fishros
 ```
 
-### 设备连接至虚拟机
+### Connect the device to the VM
 
-1. **查看设备**
+1. **Check the device**
 
 ```PowerShell
 ll /dev/ttyUSB*
 ```
 
-2. **建立端口映射**
+2. **Create the port mapping**
 
 ```PowerShell
 sudo gedit /etc/udev/rules.d/99-serial-imu.rules
 ```
 
-3. **填写映射文件内容**
+3. **Fill in the mapping file contents**
 
 ```PowerShell
 KERNEL=="ttyUSB*", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", MODE:="0777", SYMLINK+="imu-serial"
 ```
 
-4. **保存退出，运行命令使规则生效**
+4. **Save and exit, then run the commands to apply the rules**
 
 ```PowerShell
 sudo udevadm trigger
@@ -54,19 +54,19 @@ sudo service udev reload
 sudo service udev restart
 ```
 
-5. **验证**
+5. **Verify**
 
 ```PowerShell
 ll /dev/imu-serial
 ```
 
-### 导入准备好的压缩包
+### Import the prepared archive
 
-1. **飞书同级目录下有**[IMU_ROS2.zip](https://juxitech.feishu.cn/wiki/ZL8XwrPriifnASk41AhcoPj1nnb)
+1. **Available in the same Feishu directory**: [IMU_ROS2.zip](https://juxitech.feishu.cn/wiki/ZL8XwrPriifnASk41AhcoPj1nnb)
 
-2. **通过文件传输软件传输到虚拟机中**
+2. **Transfer it to the VM with a file transfer tool**
 
-3. **安装IMU_Library库**
+3. **Install the IMU_Library library**
 
 ```PowerShell
 # 下载解压IMU_ROS2压缩文件后，进入到IMU_Library目录下，运行setup.py
@@ -79,23 +79,23 @@ pip install -e .
 python setup.py install
 ```
 
-### python相关库安装
+### Install Python libraries
 
 ```PowerShell
 sudo pip3 install pyserial
 sudo pip3 install smbus2
 ```
 
-### 构建ROS2项目
+### Build the ROS2 project
 
-1. **返回到~/IMU_ROS2目录**
+1. **Return to the ~/IMU_ROS2 directory**
 
 ```PowerShell
 cd IMU_ROS2
 colcon build --symlink-install
 ```
 
-1. **把工作目录~/IMU_ROS2写入到环境变量中**
+1. **Add the workspace ~/IMU_ROS2 to the environment variables**
 
 ```PowerShell
 # 编辑 ~/.bashrc
@@ -105,48 +105,48 @@ sudo gedit ~/.bashrc
 source ~/IMU_ROS2/install/setup.bash
 ```
 
-编译成功后，执行以下命令查看imu_ros2功能包下是否有可执行文件
+After a successful build, run the following command to check whether the imu_ros2 package contains executables
 
 `ros2 pkg executables imu_ros2`
 
-### 开启ROS2节点
+### Start the ROS2 nodes
 
 ```PowerShell
 source install/setup.bash
 ros2 run imu_ros2 imu_publisher
 ```
 
-### IMU数据打印
+### IMU data output
 
-1. **打开新的终端，查看imu话题**
+1. **Open a new terminal and list the imu topics**
 
 ```PowerShell
 ros2 topic list
 ```
 
-2. **打印/imu/data话题数据**
+2. **Print the /imu/data topic data**
 
 ```PowerShell
 ros2 topic echo /imu/data
 ```
 
-3. **打开新的终端，查看msg话题**
+3. **Open a new terminal and check the msg topic**
 
 ```PowerShell
 ros2 topic echo /imu/mag
 ```
 
-### RViz2可视化
+### RViz2 visualization
 
-1. **运行命令，打开rviz可视化界面**
+1. **Run the command to open the rviz interface**
 
 ```PowerShell
 ros2 launch imu_ros2 imu_visualization.launch.py
 ```
 
-### 常见问题
+### FAQ
 
-1. 启动节点如出现打开失败，请尝试以下指令
+1. If the node fails to start, try the following commands
 
 ```PowerShell
 # 在~/IMU_ROS2目录下运行
@@ -155,4 +155,3 @@ source install/setup.bash
 # 端口号问题
 sudo chmod 666 /dev/imu-serial
 ```
-

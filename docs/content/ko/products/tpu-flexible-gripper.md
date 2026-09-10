@@ -1,7 +1,7 @@
 ---
 title: SO-ARM101 TPU 플렉서블 그리퍼
 category: robot
-description: 鉅犀科技 SO-ARM101 TPU 플렉서블 그리퍼 — 부드러운 TPU 소재로 불규칙/깨지기 쉬운 물체를 안전하게 파지, 암 장착 카메라 지원, 30FPS 줌 또는 60FPS 고정 초점 선택
+description: Juxi Technology SO-ARM101 TPU 플렉서블 그리퍼 — 부드러운 TPU 소재로 불규칙/깨지기 쉬운 물체를 안전하게 파지, 암 장착 카메라 지원, 30FPS 줌 또는 60FPS 고정 초점 선택
 keywords: [gripper, 그리퍼, tpu, 플렉서블, so-arm101, 파지]
 ---
 
