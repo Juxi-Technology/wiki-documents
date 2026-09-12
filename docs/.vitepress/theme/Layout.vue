@@ -9,6 +9,7 @@ import LanguageSwitcher from './components/LanguageSwitcher.vue'
 import Breadcrumb from './components/Breadcrumb.vue'
 import NotFound404 from './components/NotFound404.vue'
 import SiteFooter from './components/SiteFooter.vue'
+import NavLinks from './components/NavLinks.vue'
 
 const { Layout } = DefaultTheme
 const { page } = useData()
@@ -26,6 +27,7 @@ const is404 = computed(() => page.value.isNotFound === true || /404/.test(page.v
       <TopBanner />
     </template>
     <template #nav-bar-content-after>
+      <NavLinks />
       <div class="nav-right">
         <LanguageSwitcher />
         <SearchModal />
@@ -51,6 +53,67 @@ const is404 = computed(() => page.value.isNotFound === true || /404/.test(page.v
   /* 与官方暗色开关(VPNavBarAppearance)留呼吸间距,并在 resize 时禁止被压缩重叠 */
   margin-left: 12px;
   flex-shrink: 0;
+}
+
+/* ---- 导航外链图标组(GitHub / Hugging Face / 官方商城)----
+   插在暗色开关左侧:官方 DOM 中 VPNavBarAppearance 位于插槽内容之前,
+   直接插入会落在开关右侧;用 order 重排 content-body 内全部可见子元素,
+   目标视觉:菜单 … [图标组] [暗色开关] [语言] [搜索] */
+.VPNavBarMenu {
+  order: 1;
+}
+
+.nav-icons {
+  order: 2;
+}
+
+.VPNavBarAppearance {
+  order: 3;
+}
+
+.nav-right {
+  order: 4;
+}
+
+.VPNavBarHamburger {
+  order: 5;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0 2px 0 6px;
+  flex-shrink: 0;
+}
+
+.nav-icon {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--vp-c-text-1);
+  transition: background-color 0.2s;
+}
+
+.nav-icon:hover {
+  background-color: var(--vp-c-bg-soft);
+}
+
+.nav-icon svg {
+  display: block;
+}
+
+/* 窄屏(菜单收进汉堡)同步收起图标组,保持导航简洁 */
+@media (max-width: 959px) {
+  .nav-icons {
+    display: none;
+  }
 }
 
 /* 隐藏 VitePress 默认语言切换器(.VPNavBarTranslations,VitePress 1.6 实际类名;
