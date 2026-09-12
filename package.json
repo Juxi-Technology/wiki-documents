@@ -9,7 +9,8 @@
     "docs:preview": "vitepress preview docs",
     "check:links": "node scripts/check-links.mjs",
     "gen:llms": "node scripts/gen-llms.mjs",
-    "deploy": "npm run gen:llms && npm run docs:build && wrangler pages deploy docs/.vitepress/dist --project-name juxi-wiki --branch main",
+    "indexnow": "node scripts/indexnow.mjs",
+    "deploy": "npm run gen:llms && npm run docs:build && wrangler pages deploy docs/.vitepress/dist --project-name juxi-wiki --branch main && (npm run indexnow || true)",
     "preview": "npm run docs:build && wrangler pages dev docs/.vitepress/dist"
   },
   "devDependencies": {
