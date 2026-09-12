@@ -46,6 +46,9 @@ const storeLabel = computed(() => STORE_LABEL[lang.value] || STORE_LABEL.en)
       </svg>
     </a>
     <a class="nav-icon" href="https://huggingface.co/Juxi-Technology" target="_blank" rel="noopener" aria-label="Hugging Face">🤗</a>
-    <a class="nav-icon" :href="storeUrl" target="_blank" rel="noopener" :aria-label="storeLabel">🛍️</a>
+    <a class="nav-store" :href="storeUrl" target="_blank" rel="noopener">
+      <span class="store-emoji" aria-hidden="true">🛍️</span>
+      <span class="store-text">{{ storeLabel }}</span>
+    </a>
   </div>
 </template>

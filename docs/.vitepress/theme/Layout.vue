@@ -109,6 +109,55 @@ const is404 = computed(() => page.value.isNotFound === true || /404/.test(page.v
   display: block;
 }
 
+/* 商城按钮带文字(仅图标不易理解):与语言切换按钮同款式样 */
+.nav-store {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border: 1px solid var(--vp-c-gutter);
+  border-radius: 6px;
+  background-color: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+  font-size: 13px;
+  line-height: 1.4;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: border-color 0.2s;
+}
+
+.nav-store:hover {
+  border-color: var(--vp-c-brand-1);
+}
+
+.nav-store .store-emoji {
+  font-size: 14px;
+  line-height: 1;
+}
+
+/* <1600:导航空间有限,商城按钮退化为纯图标(与 GitHub/HF 圆图标同款),
+   避免长菜单语言(ja/de/fr/es/it)的导航溢出 */
+@media (max-width: 1599px) {
+  .nav-store {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    justify-content: center;
+    border-color: transparent;
+    background-color: transparent;
+    border-radius: 50%;
+  }
+
+  .nav-store:hover {
+    border-color: transparent;
+    background-color: var(--vp-c-bg-soft);
+  }
+
+  .nav-store .store-text {
+    display: none;
+  }
+}
+
 /* 窄屏(菜单收进汉堡)同步收起图标组,保持导航简洁 */
 @media (max-width: 959px) {
   .nav-icons {
@@ -170,10 +219,11 @@ const is404 = computed(() => page.value.isNotFound === true || /404/.test(page.v
   margin-top: 0;
 }
 
-/* 官方断点:menu≥768 显示但 7 项菜单在 768-959 必然溢出(官方无兜底),
-   此区间收进官方汉堡菜单;VPNavScreen 官方 CSS 在 ≥768 强制 display:none,
-   需一并覆盖否则出现"✕ 已点击但菜单不出现"的死锁 */
-@media (min-width: 768px) and (max-width: 959px) {
+/* 官方断点:menu≥768 显示,但多语言菜单在窄于 1600 的桌面必然溢出
+   (实测 ja/de/fr/es/it 1440 下已溢出 90-140px,官方无兜底),
+   故 768-1599 一律收进官方汉堡菜单;VPNavScreen 官方 CSS 在 ≥768
+   强制 display:none,需一并覆盖否则出现"✕ 已点击但菜单不出现"的死锁 */
+@media (min-width: 768px) and (max-width: 1599px) {
   .VPNavBarMenu {
     display: none !important;
   }

@@ -116,6 +116,7 @@ const zhCN = {
     outline: { level: [2, 3], label: '本页目录' },
     skipToContentLabel: '跳到主要内容',
     lightModeSwitchTitle: '切换到浅色模式',
+    darkModeSwitchLabel: '显示模式',
     darkModeSwitchTitle: '切换到深色模式',
     lastUpdated: {
       text: '最后更新于 (UTC)',
@@ -349,6 +350,7 @@ const en = {
     outline: { level: [2, 3], label: 'On this page' },
     skipToContentLabel: 'Skip to content',
     lightModeSwitchTitle: 'Switch to light theme',
+    darkModeSwitchLabel: 'Appearance',
     darkModeSwitchTitle: 'Switch to dark theme',
     lastUpdated: {
       text: 'Last updated (UTC)',
@@ -582,6 +584,7 @@ const zhHK = {
     outline: { level: [2, 3], label: '本頁目錄' },
     skipToContentLabel: '跳到主要內容',
     lightModeSwitchTitle: '切換到淺色模式',
+    darkModeSwitchLabel: '外觀模式',
     darkModeSwitchTitle: '切換到深色模式',
     lastUpdated: {
       text: '最後更新於 (UTC)',
@@ -881,6 +884,7 @@ export default defineConfig({
       outline: { level: [2, 3], label: '目次' },
       skipToContentLabel: 'コンテンツへスキップ',
       lightModeSwitchTitle: 'ライトモードに切り替え',
+      darkModeSwitchLabel: '外観モード',
       darkModeSwitchTitle: 'ダークモードに切り替え',
       lastUpdated: {
         text: '最終更新 (UTC)',
@@ -1077,6 +1081,7 @@ export default defineConfig({
       outline: { level: [2, 3], label: '목차' },
       skipToContentLabel: '본문으로 건너뛰기',
       lightModeSwitchTitle: '라이트 모드로 전환',
+      darkModeSwitchLabel: '화면 모드',
       darkModeSwitchTitle: '다크 모드로 전환',
       lastUpdated: {
         text: '마지막 업데이트 (UTC)',
@@ -1273,6 +1278,7 @@ export default defineConfig({
       outline: { level: [2, 3], label: 'Auf dieser Seite' },
       skipToContentLabel: 'Zum Inhalt springen',
       lightModeSwitchTitle: 'Zum hellen Design wechseln',
+      darkModeSwitchLabel: 'Darstellung',
       darkModeSwitchTitle: 'Zum dunklen Design wechseln',
       lastUpdated: {
         text: 'Zuletzt aktualisiert (UTC)',
@@ -1469,6 +1475,7 @@ export default defineConfig({
       outline: { level: [2, 3], label: 'Sur cette page' },
       skipToContentLabel: 'Aller au contenu',
       lightModeSwitchTitle: 'Passer au thème clair',
+      darkModeSwitchLabel: 'Apparence',
       darkModeSwitchTitle: 'Passer au thème sombre',
       lastUpdated: {
         text: 'Dernière mise à jour (UTC)',
@@ -1665,6 +1672,7 @@ export default defineConfig({
       outline: { level: [2, 3], label: 'En esta página' },
       skipToContentLabel: 'Saltar al contenido',
       lightModeSwitchTitle: 'Cambiar al tema claro',
+      darkModeSwitchLabel: 'Apariencia',
       darkModeSwitchTitle: 'Cambiar al tema oscuro',
       lastUpdated: {
         text: 'Última actualización (UTC)',
@@ -1861,6 +1869,7 @@ export default defineConfig({
       outline: { level: [2, 3], label: 'In questa pagina' },
       skipToContentLabel: 'Vai al contenuto',
       lightModeSwitchTitle: 'Passa al tema chiaro',
+      darkModeSwitchLabel: 'Aspetto',
       darkModeSwitchTitle: 'Passa al tema scuro',
       lastUpdated: {
         text: 'Ultimo aggiornamento (UTC)',
@@ -2057,6 +2066,7 @@ export default defineConfig({
       outline: { level: [2, 3], label: 'Nesta página' },
       skipToContentLabel: 'Ir para o conteúdo',
       lightModeSwitchTitle: 'Mudar para o tema claro',
+      darkModeSwitchLabel: 'Aparência',
       darkModeSwitchTitle: 'Mudar para o tema escuro',
       lastUpdated: {
         text: 'Última atualização (UTC)',
@@ -2276,6 +2286,7 @@ export default defineConfig({
       outline: { level: [2, 3], label: 'Nesta página' },
       skipToContentLabel: 'Ir para o conteúdo',
       lightModeSwitchTitle: 'Mudar para o tema claro',
+      darkModeSwitchLabel: 'Aparência',
       darkModeSwitchTitle: 'Mudar para o tema escuro',
       lastUpdated: {
         text: 'Última atualização (UTC)',
