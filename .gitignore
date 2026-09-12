@@ -29,3 +29,10 @@ accept-*.png
 seeed-ref-*.png
 # llms-full.txt 为构建生成物(gen:llms,CI 构建前执行),不入库避免历史膨胀
 docs/public/llms-full.txt
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
