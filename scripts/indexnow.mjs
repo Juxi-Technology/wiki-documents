@@ -20,17 +20,27 @@ if (!urls.length) {
   process.exit(1)
 }
 
-const res = await fetch('https://api.indexnow.org/indexnow', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json; charset=utf-8' },
-  body: JSON.stringify({
-    host: HOST,
-    key,
-    keyLocation: `https://${HOST}/${keyFile}`,
-    urlList: urls,
-  }),
+const body = JSON.stringify({
+  host: HOST,
+  key,
+  keyLocation: `https://${HOST}/${keyFile}`,
+  urlList: urls,
 })
-console.log(`IndexNow: 已提交 ${urls.length} 条 URL → HTTP ${res.status}(${urls.length > 0 ? '200=成功, 202=已接受待校验' : ''})`)
+const submit = () =>
+  fetch('https://api.indexnow.org/indexnow', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json; charset=utf-8' },
+    body,
+  })
+
+let res = await submit()
+// 403 = key 校验失败;部署链中紧跟 deploy 运行时,key 文件可能尚未在边缘就绪,延迟重试一次
+if (res.status === 403) {
+  console.log('IndexNow: key 校验未通过(边缘可能未就绪),30 秒后重试…')
+  await new Promise((r) => setTimeout(r, 30000))
+  res = await submit()
+}
+console.log(`IndexNow: 已提交 ${urls.length} 条 URL → HTTP ${res.status}(200=成功, 202=已接受待校验)`)
 if (res.status >= 400 && res.status !== 429) {
   console.error(`IndexNow 提交失败: HTTP ${res.status}`)
   process.exit(1)
