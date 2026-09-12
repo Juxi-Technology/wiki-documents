@@ -135,9 +135,9 @@ const is404 = computed(() => page.value.isNotFound === true || /404/.test(page.v
   line-height: 1;
 }
 
-/* <1600:导航空间有限,商城按钮退化为纯图标(与 GitHub/HF 圆图标同款),
-   避免长菜单语言(ja/de/fr/es/it)的导航溢出 */
-@media (max-width: 1599px) {
+/* <1280:导航空间有限,商城按钮退化为纯图标(与 GitHub/HF 圆图标同款),
+   避免长菜单语言的导航溢出 */
+@media (max-width: 1279px) {
   .nav-store {
     width: 34px;
     height: 34px;
@@ -219,11 +219,11 @@ const is404 = computed(() => page.value.isNotFound === true || /404/.test(page.v
   margin-top: 0;
 }
 
-/* 官方断点:menu≥768 显示,但多语言菜单在窄于 1600 的桌面必然溢出
-   (实测 ja/de/fr/es/it 1440 下已溢出 90-140px,官方无兜底),
-   故 768-1599 一律收进官方汉堡菜单;VPNavScreen 官方 CSS 在 ≥768
-   强制 display:none,需一并覆盖否则出现"✕ 已点击但菜单不出现"的死锁 */
-@media (min-width: 768px) and (max-width: 1599px) {
+/* 官方断点:menu≥768 显示。导航已重构为 3 项平铺 + 1 个"更多"下拉(NavLinks
+   结构变更后菜单由 ~800px 压缩到 ~400px),1152 起可容纳全部语言;
+   768-1151 收进官方汉堡菜单。VPNavScreen 官方 CSS 在 ≥768 强制 display:none,
+   需一并覆盖否则出现"✕ 已点击但菜单不出现"的死锁 */
+@media (min-width: 768px) and (max-width: 1151px) {
   .VPNavBarMenu {
     display: none !important;
   }

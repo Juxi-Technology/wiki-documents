@@ -126,13 +126,15 @@ const zhCN = {
     },
     nav: [
       { text: '教程', link: '/zh-hans/tutorials/', activeMatch: '/zh-hans/tutorials/' },
-      { text: '技术专题', link: '/zh-hans/topics/', activeMatch: '/zh-hans/topics/' },
-      { text: '技术文档', link: '/zh-hans/tech/', activeMatch: '/zh-hans/tech/' },
       { text: '产品', link: '/zh-hans/products/', activeMatch: '/zh-hans/products/' },
-      { text: '用户案例', link: '/zh-hans/cases/', activeMatch: '/zh-hans/cases/' },
       { text: '社区', link: '/zh-hans/community/', activeMatch: '/zh-hans/community/' },
-      { text: '下载', link: '/zh-hans/downloads/', activeMatch: '/zh-hans/downloads/' },
-      { text: '关于我们', link: '/zh-hans/about/', activeMatch: '/zh-hans/about/' },
+      { text: '更多', items: [
+        { text: '技术专题', link: '/zh-hans/topics/' },
+        { text: '技术文档', link: '/zh-hans/tech/' },
+        { text: '用户案例', link: '/zh-hans/cases/' },
+        { text: '下载', link: '/zh-hans/downloads/' },
+        { text: '关于我们', link: '/zh-hans/about/' },
+      ] },
     ],
     sidebar: {
       '/zh-hans/tutorials/': [
@@ -360,13 +362,15 @@ const en = {
     },
     nav: [
       { text: 'Tutorials', link: '/tutorials/', activeMatch: '/tutorials/' },
-      { text: 'Topics', link: '/topics/', activeMatch: '/topics/' },
-      { text: 'Tech Docs', link: '/tech/', activeMatch: '/tech/' },
       { text: 'Products', link: '/products/', activeMatch: '/products/' },
-      { text: 'Cases', link: '/cases/', activeMatch: '/cases/' },
       { text: 'Community', link: '/community/', activeMatch: '/community/' },
-      { text: 'Downloads', link: '/downloads/', activeMatch: '/downloads/' },
-      { text: 'About', link: '/about/', activeMatch: '/about/' },
+      { text: 'More', items: [
+        { text: 'Topics', link: '/topics/' },
+        { text: 'Tech Docs', link: '/tech/' },
+        { text: 'Cases', link: '/cases/' },
+        { text: 'Downloads', link: '/downloads/' },
+        { text: 'About', link: '/about/' },
+      ] },
     ],
     sidebar: {
       '/tutorials/': [
@@ -594,13 +598,15 @@ const zhHK = {
     },
     nav: [
       { text: '教程', link: '/zh-hant/tutorials/', activeMatch: '/zh-hant/tutorials/' },
-      { text: '技術專題', link: '/zh-hant/topics/', activeMatch: '/zh-hant/topics/' },
-      { text: '技術文檔', link: '/zh-hant/tech/', activeMatch: '/zh-hant/tech/' },
       { text: '產品', link: '/zh-hant/products/', activeMatch: '/zh-hant/products/' },
-      { text: '用戶案例', link: '/zh-hant/cases/', activeMatch: '/zh-hant/cases/' },
       { text: '社區', link: '/zh-hant/community/', activeMatch: '/zh-hant/community/' },
-      { text: '下載', link: '/zh-hant/downloads/', activeMatch: '/zh-hant/downloads/' },
-      { text: '關於我們', link: '/zh-hant/about/', activeMatch: '/zh-hant/about/' },
+      { text: '更多', items: [
+        { text: '技術專題', link: '/zh-hant/topics/' },
+        { text: '技術文檔', link: '/zh-hant/tech/' },
+        { text: '用戶案例', link: '/zh-hant/cases/' },
+        { text: '下載', link: '/zh-hant/downloads/' },
+        { text: '關於我們', link: '/zh-hant/about/' },
+      ] },
     ],
     sidebar: {
       '/zh-hant/tutorials/': [
@@ -894,13 +900,15 @@ export default defineConfig({
       },
       nav: [
         { text: 'チュートリアル', link: '/ja/tutorials/', activeMatch: '/ja/tutorials/' },
-        { text: 'トピック', link: '/ja/topics/', activeMatch: '/ja/topics/' },
-        { text: '技術ドキュメント', link: '/ja/tech/', activeMatch: '/ja/tech/' },
         { text: '製品', link: '/ja/products/', activeMatch: '/ja/products/' },
-        { text: 'ケーススタディ', link: '/ja/cases/', activeMatch: '/ja/cases/' },
         { text: 'コミュニティ', link: '/ja/community/', activeMatch: '/ja/community/' },
-        { text: 'ダウンロード', link: '/ja/downloads/', activeMatch: '/ja/downloads/' },
-        { text: '会社概要', link: '/ja/about/', activeMatch: '/ja/about/' },
+        { text: 'その他', items: [
+          { text: 'トピック', link: '/ja/topics/' },
+          { text: '技術ドキュメント', link: '/ja/tech/' },
+          { text: 'ケーススタディ', link: '/ja/cases/' },
+          { text: 'ダウンロード', link: '/ja/downloads/' },
+          { text: '会社概要', link: '/ja/about/' },
+        ] },
       ],
       sidebar: {
         '/ja/tutorials/': [
@@ -1091,13 +1099,15 @@ export default defineConfig({
       },
       nav: [
         { text: '튜토리얼', link: '/ko/tutorials/', activeMatch: '/ko/tutorials/' },
-        { text: '토픽', link: '/ko/topics/', activeMatch: '/ko/topics/' },
-        { text: '기술 문서', link: '/ko/tech/', activeMatch: '/ko/tech/' },
         { text: '제품', link: '/ko/products/', activeMatch: '/ko/products/' },
-        { text: '사용자 사례', link: '/ko/cases/', activeMatch: '/ko/cases/' },
         { text: '커뮤니티', link: '/ko/community/', activeMatch: '/ko/community/' },
-        { text: '다운로드', link: '/ko/downloads/', activeMatch: '/ko/downloads/' },
-        { text: '회사 소개', link: '/ko/about/', activeMatch: '/ko/about/' },
+        { text: '더 보기', items: [
+          { text: '토픽', link: '/ko/topics/' },
+          { text: '기술 문서', link: '/ko/tech/' },
+          { text: '사용자 사례', link: '/ko/cases/' },
+          { text: '다운로드', link: '/ko/downloads/' },
+          { text: '회사 소개', link: '/ko/about/' },
+        ] },
       ],
       sidebar: {
         '/ko/tutorials/': [
@@ -1288,13 +1298,15 @@ export default defineConfig({
       },
       nav: [
         { text: 'Tutorials', link: '/de/tutorials/', activeMatch: '/de/tutorials/' },
-        { text: 'Themen', link: '/de/topics/', activeMatch: '/de/topics/' },
-        { text: 'Technische Doku', link: '/de/tech/', activeMatch: '/de/tech/' },
         { text: 'Produkte', link: '/de/products/', activeMatch: '/de/products/' },
-        { text: 'Fallstudien', link: '/de/cases/', activeMatch: '/de/cases/' },
         { text: 'Community', link: '/de/community/', activeMatch: '/de/community/' },
-        { text: 'Downloads', link: '/de/downloads/', activeMatch: '/de/downloads/' },
-        { text: 'Über uns', link: '/de/about/', activeMatch: '/de/about/' },
+        { text: 'Mehr', items: [
+          { text: 'Themen', link: '/de/topics/' },
+          { text: 'Technische Doku', link: '/de/tech/' },
+          { text: 'Fallstudien', link: '/de/cases/' },
+          { text: 'Downloads', link: '/de/downloads/' },
+          { text: 'Über uns', link: '/de/about/' },
+        ] },
       ],
       sidebar: {
         '/de/tutorials/': [
@@ -1485,13 +1497,15 @@ export default defineConfig({
       },
       nav: [
         { text: 'Tutoriels', link: '/fr/tutorials/', activeMatch: '/fr/tutorials/' },
-        { text: 'Sujets', link: '/fr/topics/', activeMatch: '/fr/topics/' },
-        { text: 'Documentation', link: '/fr/tech/', activeMatch: '/fr/tech/' },
         { text: 'Produits', link: '/fr/products/', activeMatch: '/fr/products/' },
-        { text: 'Cas clients', link: '/fr/cases/', activeMatch: '/fr/cases/' },
         { text: 'Communauté', link: '/fr/community/', activeMatch: '/fr/community/' },
-        { text: 'Téléchargements', link: '/fr/downloads/', activeMatch: '/fr/downloads/' },
-        { text: 'À propos', link: '/fr/about/', activeMatch: '/fr/about/' },
+        { text: 'Plus', items: [
+          { text: 'Sujets', link: '/fr/topics/' },
+          { text: 'Documentation', link: '/fr/tech/' },
+          { text: 'Cas clients', link: '/fr/cases/' },
+          { text: 'Téléchargements', link: '/fr/downloads/' },
+          { text: 'À propos', link: '/fr/about/' },
+        ] },
       ],
       sidebar: {
         '/fr/tutorials/': [
@@ -1682,13 +1696,15 @@ export default defineConfig({
       },
       nav: [
         { text: 'Tutoriales', link: '/es/tutorials/', activeMatch: '/es/tutorials/' },
-        { text: 'Temas', link: '/es/topics/', activeMatch: '/es/topics/' },
-        { text: 'Documentación', link: '/es/tech/', activeMatch: '/es/tech/' },
         { text: 'Productos', link: '/es/products/', activeMatch: '/es/products/' },
-        { text: 'Casos de éxito', link: '/es/cases/', activeMatch: '/es/cases/' },
         { text: 'Comunidad', link: '/es/community/', activeMatch: '/es/community/' },
-        { text: 'Descargas', link: '/es/downloads/', activeMatch: '/es/downloads/' },
-        { text: 'Sobre nosotros', link: '/es/about/', activeMatch: '/es/about/' },
+        { text: 'Más', items: [
+          { text: 'Temas', link: '/es/topics/' },
+          { text: 'Documentación', link: '/es/tech/' },
+          { text: 'Casos de éxito', link: '/es/cases/' },
+          { text: 'Descargas', link: '/es/downloads/' },
+          { text: 'Sobre nosotros', link: '/es/about/' },
+        ] },
       ],
       sidebar: {
         '/es/tutorials/': [
@@ -1879,13 +1895,15 @@ export default defineConfig({
       },
       nav: [
         { text: 'Tutorial', link: '/it/tutorials/', activeMatch: '/it/tutorials/' },
-        { text: 'Argomenti', link: '/it/topics/', activeMatch: '/it/topics/' },
-        { text: 'Documentazione', link: '/it/tech/', activeMatch: '/it/tech/' },
         { text: 'Prodotti', link: '/it/products/', activeMatch: '/it/products/' },
-        { text: 'Casi di successo', link: '/it/cases/', activeMatch: '/it/cases/' },
         { text: 'Community', link: '/it/community/', activeMatch: '/it/community/' },
-        { text: 'Download', link: '/it/downloads/', activeMatch: '/it/downloads/' },
-        { text: 'Chi siamo', link: '/it/about/', activeMatch: '/it/about/' },
+        { text: 'Altro', items: [
+          { text: 'Argomenti', link: '/it/topics/' },
+          { text: 'Documentazione', link: '/it/tech/' },
+          { text: 'Casi di successo', link: '/it/cases/' },
+          { text: 'Download', link: '/it/downloads/' },
+          { text: 'Chi siamo', link: '/it/about/' },
+        ] },
       ],
       sidebar: {
         '/it/tutorials/': [
@@ -2076,13 +2094,15 @@ export default defineConfig({
       },
       nav: [
         { text: 'Tutoriais', link: '/pt-br/tutorials/', activeMatch: '/pt-br/tutorials/' },
-        { text: 'Tópicos', link: '/pt-br/topics/', activeMatch: '/pt-br/topics/' },
-        { text: 'Docs Técnicos', link: '/pt-br/tech/', activeMatch: '/pt-br/tech/' },
         { text: 'Produtos', link: '/pt-br/products/', activeMatch: '/pt-br/products/' },
-        { text: 'Casos', link: '/pt-br/cases/', activeMatch: '/pt-br/cases/' },
         { text: 'Comunidade', link: '/pt-br/community/', activeMatch: '/pt-br/community/' },
-        { text: 'Downloads', link: '/pt-br/downloads/', activeMatch: '/pt-br/downloads/' },
-        { text: 'Sobre', link: '/pt-br/about/', activeMatch: '/pt-br/about/' },
+        { text: 'Mais', items: [
+          { text: 'Tópicos', link: '/pt-br/topics/' },
+          { text: 'Docs Técnicos', link: '/pt-br/tech/' },
+          { text: 'Casos', link: '/pt-br/cases/' },
+          { text: 'Downloads', link: '/pt-br/downloads/' },
+          { text: 'Sobre', link: '/pt-br/about/' },
+        ] },
       ],
       sidebar: {
         '/pt-br/tutorials/': [
@@ -2296,13 +2316,15 @@ export default defineConfig({
       },
       nav: [
         { text: 'Tutoriais', link: '/pt-pt/tutorials/', activeMatch: '/pt-pt/tutorials/' },
-        { text: 'Tópicos', link: '/pt-pt/topics/', activeMatch: '/pt-pt/topics/' },
-        { text: 'Docs Técnicos', link: '/pt-pt/tech/', activeMatch: '/pt-pt/tech/' },
         { text: 'Produtos', link: '/pt-pt/products/', activeMatch: '/pt-pt/products/' },
-        { text: 'Casos', link: '/pt-pt/cases/', activeMatch: '/pt-pt/cases/' },
         { text: 'Comunidade', link: '/pt-pt/community/', activeMatch: '/pt-pt/community/' },
-        { text: 'Downloads', link: '/pt-pt/downloads/', activeMatch: '/pt-pt/downloads/' },
-        { text: 'Sobre', link: '/pt-pt/about/', activeMatch: '/pt-pt/about/' },
+        { text: 'Mais', items: [
+          { text: 'Tópicos', link: '/pt-pt/topics/' },
+          { text: 'Docs Técnicos', link: '/pt-pt/tech/' },
+          { text: 'Casos', link: '/pt-pt/cases/' },
+          { text: 'Downloads', link: '/pt-pt/downloads/' },
+          { text: 'Sobre', link: '/pt-pt/about/' },
+        ] },
       ],
       sidebar: {
         '/pt-pt/tutorials/': [
