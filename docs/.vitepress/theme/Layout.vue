@@ -135,26 +135,21 @@ const is404 = computed(() => page.value.isNotFound === true || /404/.test(page.v
   line-height: 1;
 }
 
-/* <1280:导航空间有限,商城按钮退化为纯图标(与 GitHub/HF 圆图标同款),
-   避免长菜单语言的导航溢出 */
-@media (max-width: 1279px) {
-  .nav-store {
-    width: 34px;
-    height: 34px;
-    padding: 0;
-    justify-content: center;
-    border-color: transparent;
-    background-color: transparent;
-    border-radius: 50%;
+/* 960-1279:菜单保持平铺,但收紧各元素间距(菜单项/图标组/搜索),
+   使最长的语言(法语/英语)在 960 起也能容纳 */
+@media (min-width: 960px) and (max-width: 1279px) {
+  .VPNavBar .VPNavBarMenu .VPNavBarMenuLink,
+  .VPNavBar .VPNavBarMenu .VPNavBarMenuGroup .button {
+    padding: 0 8px;
   }
 
-  .nav-store:hover {
-    border-color: transparent;
-    background-color: var(--vp-c-bg-soft);
+  .nav-icons {
+    gap: 2px;
+    margin: 0 2px 0 4px;
   }
 
-  .nav-store .store-text {
-    display: none;
+  .nav-right {
+    margin-left: 8px;
   }
 }
 
@@ -219,11 +214,12 @@ const is404 = computed(() => page.value.isNotFound === true || /404/.test(page.v
   margin-top: 0;
 }
 
-/* 官方断点:menu≥768 显示。导航已重构为 3 项平铺 + 1 个"更多"下拉(NavLinks
-   结构变更后菜单由 ~800px 压缩到 ~400px),1152 起可容纳全部语言;
-   768-1151 收进官方汉堡菜单。VPNavScreen 官方 CSS 在 ≥768 强制 display:none,
-   需一并覆盖否则出现"✕ 已点击但菜单不出现"的死锁 */
-@media (min-width: 768px) and (max-width: 1151px) {
+/* 官方默认 menu≥768 显示、<768 汉堡。导航重构为 3 项平铺 + 1 个"更多"下拉
+   后,配合 960-1279 的收紧间距,960 起即可容纳全部 11 种语言(Safari 实测
+   法语/英语最宽,~920px);<960 则收进官方汉堡菜单(768-959 需强制显示)。
+   VPNavScreen 官方 CSS 在 ≥768 强制 display:none,需一并覆盖,
+   否则出现"✕ 已点击但菜单不出现"的死锁 */
+@media (min-width: 768px) and (max-width: 959px) {
   .VPNavBarMenu {
     display: none !important;
   }

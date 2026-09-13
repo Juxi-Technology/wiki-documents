@@ -263,11 +263,12 @@ const noResultsText = computed(() => NO_RESULTS[localeIndex.value] || 'No result
   justify-content: space-between;
 }
 
-/* 移动端:压缩为图标按钮,隐藏 "/" 提示 */
-@media (max-width: 767px) {
+/* <1280:导航空间紧张,压缩为纯图标按钮并隐藏 "/" 提示,
+   为菜单平铺(960 起需容纳全部 11 种语言)+ 图标组让出空间 */
+@media (max-width: 1279px) {
   .search-trigger {
     min-width: 0;
-    padding: 6px 8px;
+    padding: 6px 10px;
   }
   .search-hint {
     display: none;

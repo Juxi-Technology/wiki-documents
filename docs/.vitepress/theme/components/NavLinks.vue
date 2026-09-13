@@ -18,18 +18,19 @@ const STORE: Record<string, string> = {
   'pt-PT': 'https://www.juxitech.com/pt-pt',
   en: 'https://www.juxitech.com',
 }
+// 导航内用短标签(单行不换行);完整名称见首页 hero 按钮
 const STORE_LABEL: Record<string, string> = {
   'zh-CN': '官方商城',
   'zh-HK': '官方商城',
-  ja: '公式ストア',
-  ko: '공식 스토어',
-  de: 'Offizieller Shop',
-  fr: 'Boutique officielle',
-  es: 'Tienda oficial',
-  it: 'Negozio ufficiale',
-  'pt-BR': 'Loja oficial',
-  'pt-PT': 'Loja oficial',
-  en: 'Official Store',
+  ja: 'ストア',
+  ko: '스토어',
+  de: 'Shop',
+  fr: 'Boutique',
+  es: 'Tienda',
+  it: 'Negozio',
+  'pt-BR': 'Loja',
+  'pt-PT': 'Loja',
+  en: 'Store',
 }
 const storeUrl = computed(() => STORE[lang.value] || STORE.en)
 const storeLabel = computed(() => STORE_LABEL[lang.value] || STORE_LABEL.en)
