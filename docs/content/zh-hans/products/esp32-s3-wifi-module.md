@@ -11,13 +11,15 @@ keywords: [esp32, wifi, 图传, 摄像头, ai vision]
 
 ## 产品概述
 
-ESP32-WiFi 图传模块是一款紧凑、高性价比的 AI 视觉解决方案,采用双板模块化架构(核心处理板 + 通信扩展板)。核心板搭载 **ESP32-S3** 高性能处理器与 200 万像素高清摄像头,支持 WiFi 视频流传输、人脸识别、颜色识别等 AI 视觉功能,预装固件开箱即用。
+ESP32-WiFi 图传模块（型号 **ESP32-NanoCam**）是一款紧凑、高性价比的 AI 视觉解决方案,采用双板模块化架构(核心处理板 + 通信扩展板)。核心板搭载 **ESP32-S3** 高性能处理器与 200 万像素高清摄像头,支持 WiFi 视频流传输、AI 视觉识别与语音交互功能,预装固件开箱即用。
 
 **核心特性**:
 
 - 200 万像素高清摄像头(1600×1200@30FPS)
 - **AP + STA 双模式** WiFi 实时图传
-- AI 视觉:颜色阈值分割 + 轻量 CNN(颜色/人脸/二维码识别)
+- 8 种 AI 模式:猫脸检测、人脸检测、颜色识别、人脸识别、二维码扫描、LLM 语音对话(小智 AI)、ESP-Claw 语音控制
+- 板载 ES8311 音频(麦克风 + 扬声器),支持语音交互
+- WS2812 RGB 状态灯
 - Type-C 一键固件升级
 - 标准 PH2.0 I2C / UART 通信接口
 
@@ -27,13 +29,16 @@ ESP32-WiFi 图传模块是一款紧凑、高性价比的 AI 视觉解决方案,�
 
 | 类别 | 规格 |
 |------|------|
-| 主控芯片 | ESP32-S3(乐鑫官方,双核) |
-| 摄像头 | 200 万像素 CMOS(1600×1200@30FPS) |
+| 主控芯片 | ESP32-S3 N16R8(乐鑫官方,双核 240MHz) |
+| 存储 | 16MB Flash + 8MB PSRAM |
+| 摄像头 | 200 万像素 CMOS GC2145(1600×1200@30FPS) |
 | 视角 | 对角线 68°,水平 49.5° |
+| 音频 | ES8311 编解码 + MEMS 麦克风 + D 类功放扬声器 |
+| 状态灯 | WS2812 RGB |
 | 无线 | WiFi(BT 双模)AP/STA + 高增益天线 |
 | 接口 | Type-C / I2C / UART(PH2.0) |
-| 功能键 | 复位键 + 可编程自定义按键 |
-| 识别能力 | 颜色、人脸、二维码 |
+| 功能键 | 复位键 + BOOT 键 |
+| 识别能力 | 猫脸、人脸检测、人脸识别、颜色、二维码、语音对话 |
 
 ## 快速开始
 
@@ -64,7 +69,17 @@ ESP32 模块 TX → 主控 RX
 
 ### 4. 二次开发
 
-Type-C 连接电脑,一键固件升级;通过 UART/I2C 指令切换识别目标(颜色/人脸/二维码)。
+Type-C 连接电脑,一键固件升级;通过串口指令切换 AI 模式(猫脸/人脸检测/颜色/人脸识别/二维码/语音对话),完整指令参考[串口协议手册](/zh-hans/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Serial-Protocol)。
+
+---
+
+## 完整教程
+
+- [快速开始——3 分钟烧录固件、连接 WiFi、打开画面](/zh-hans/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Quick-Start)
+- [硬件规格书——完整 GPIO 引脚映射与电源设计](/zh-hans/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec)
+- [串口协议手册——WiFi 配置与 AI 模式完整 AT 指令](/zh-hans/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Serial-Protocol)
+- [AI 视觉教程——11 章递进式实战(人脸/猫脸/颜色/二维码/语音)](/zh-hans/tutorials/accessories/esp32-nanocam/Ch01-Environment-Setup)
+- [ESP32-NanoCam 作为 SO-ARM101 无线从臂控制器](/zh-hans/tutorials/robot-arms/so-arm101/SO-ARM101-NanoCam-Wireless-Teleop)
 
 ---
 

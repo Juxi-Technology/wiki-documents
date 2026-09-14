@@ -1,0 +1,101 @@
+---
+title: 第 5 章:猫脸检测
+description: "ESP32-NanoCam 教程第 5 章:使用 CatFaceDetectMN03 模型检测猫脸,对比与人脸检测的模型差异,并读取坐标驱动舵机跟踪。"
+---
+
+# 第 5 章:猫脸检测
+
+> **[ 淘宝店铺 ](https://juxitechnology.taobao.com)**
+
+**本章目标**:让 NanoCam 检测猫咪的脸,并了解它与人脸检测模型的差异。
+
+## 原理
+
+猫脸检测使用 CatFaceDetectMN03 模型,专为猫脸部特征(三角耳部/宽瞳距/鼻部)优化训练。输入 320x240 RGB565 图像,输出猫脸边界框列表。与[第 4 章](./Ch04-Face-Detection.md)人脸检测共用同一套 `print_detection_result` 输出格式。
+
+### 猫脸 vs 人脸检测模型差异
+
+|对比维度|人脸检测 (ai_mode:2)|猫脸检测 (ai_mode:1)|
+|---|---|---|
+|模型|MSR01 + MNP01 双级联|CatFaceDetectMN03 单级|
+|关键点|10 个(双眼/鼻尖/嘴角)|无(模型不输出)|
+|置信度阈值|MSR01=0.3, MNP01=0.4|0.4|
+|检测框绘制|绿色空心矩形 + 5 关键点|绿色空心矩形(无关键点)|
+
+## 步骤
+
+### 5.1 切换模式
+
+```Plain
+ai_mode:1
+```
+
+设备自动重启进入猫脸检测模式
+
+> 完整指令见[串口协议手册](./ESP32-NanoCam-Serial-Protocol.md)。
+
+### 5.2 观察效果
+
+将猫或猫图片放在摄像头前,浏览器打开 `http://<IP>` 看到绿色检测框标注猫脸。
+
+### 5.3 串口输出
+
+检测到猫脸时串口输出:
+
+```Plain
+I (xxxxx) detection_result: [ 0]: ( 45,  30, 180, 210)
+```
+
+- 格式：`[序号] (x, y, w, h)` — 猫脸框左上角坐标 + 宽高
+
+- 猫脸模型不输出关键点(与人脸检测不同)
+
+## 代码
+
+### 核心检测逻辑
+
+`components/modules/ai/who_cat_face_detection.cpp`:
+
+```C++
+CatFaceDetectMN03 detector(0.4F, 0.3F, 10, 0.3F);
+std::list<dl::detect::result_t> &detect_results = detector.infer(
+    (uint16_t *)frame->buf, {(int)frame->height, (int)frame->width, 3});
+
+if (detect_results.size() > 0) {
+    draw_detection_result((uint16_t *)frame->buf, frame->height, frame->width, detect_results);
+    print_detection_result(detect_results);  // 串口输出坐标
+}
+```
+
+### Arduino 读取坐标控制舵机
+
+```C++
+// 解析 $face:x,y,w,h# 格式
+if (nanoSerial.available()) {
+    String line = nanoSerial.readStringUntil('\n');
+    if (line.startsWith("$face:")) {
+        int x = line.substring(6).toInt();
+        int y = line.substring(line.indexOf(',')+1).toInt();
+        servoX.write(map(x, 0, 320, 0, 180));
+    }
+}
+```
+
+### Python 串口读取
+
+```Python
+import serial
+ser = serial.Serial("COM3", 115200)
+while True:
+    line = ser.readline().decode().strip()
+    if "detection_result" in line:
+        print(line)
+```
+
+## 效果
+
+猫出现→画面标注绿框→串口输出坐标。可用 Arduino/Python 读取坐标驱动舵机跟踪。
+
+下一章:[第 6 章:颜色识别](./Ch06-Color-Recognition.md)
+
+<RelatedProducts slugs="esp32-s3-wifi-module" />

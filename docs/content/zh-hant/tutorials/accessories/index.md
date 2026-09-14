@@ -23,6 +23,15 @@ AI喚醒聲卡，支持離線語音喚醒、自定義喚醒詞和低功耗運行
 - [中英文識別詞固件下載與燒錄](./KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words.md)
 - [樹莓派串列通信](./KWS-speech-recognition-module/raspberry-pi-serial-communication.md)
 
+### ESP32-NanoCam 圖傳模組
+
+ESP32-S3 圖傳與 AI 視覺模組，支援 8 種 AI 模式、AP+STA 雙模圖傳與語音交互。
+
+- [快速開始](./esp32-nanocam/ESP32-NanoCam-Quick-Start.md)
+- [硬體規格書](./esp32-nanocam/ESP32-NanoCam-Hardware-Spec.md)
+- [串口協議手冊](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
+- [AI 視覺教程第 1 章：環境搭建](./esp32-nanocam/Ch01-Environment-Setup.md)
+
 ### 其他配件
 
 - [0.91 OLED 螢幕教程](./0.91-oled-screen-tutorial.md)

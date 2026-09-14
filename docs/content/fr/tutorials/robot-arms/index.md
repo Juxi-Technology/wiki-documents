@@ -18,6 +18,10 @@ Bras robotique de bureau open source 6 axes, compatible avec les frameworks IA c
 - [Tutoriel SO-ARM101](./so-arm101/SO-ARM101-Tutorial.md)
 - [Montage SO-ARM101](./so-arm101/SO-ARM101-Assembly.md)
 - [Compatibilité PyTorch Jetson Orin SO-ARM101](./so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility.md)
+- [Téléopération sans fil SO-ARM101 (version ESP32-NanoCam)](./so-arm101/SO-ARM101-NanoCam-Wireless-Teleop.md)
+- [Tutoriel SO-ARM101 bi-bras (double suiveur)](./so-arm101/SO-ARM101-Bi-Arm-Tutorial.md)
+- [Mise à niveau 7-DOF du SO-ARM101 et utilisation avec LeRobot](./so-arm101/SO-ARM101-7DOF-LeRobot.md)
+- [Outil de calibration des servomoteurs série SoARM](./so-arm101/SO-ARM101-Servo-Calibration-Tool.md)
 
 ### AmazingHand
 

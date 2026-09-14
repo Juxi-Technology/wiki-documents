@@ -11,13 +11,15 @@ keywords: [esp32, wifi, trasmissione video, fotocamera, visione ai]
 
 ## Panoramica
 
-Il modulo video WiFi ESP32 è una soluzione di visione AI compatta ed economica con architettura modulare a doppia scheda (scheda di elaborazione + scheda di espansione comunicazione). La scheda principale monta il processore **ESP32-S3** e una fotocamera 2MP per streaming video WiFi, riconoscimento facciale e dei colori — firmware preinstallato, pronto all'uso.
+Il modulo video WiFi ESP32 (modello **ESP32-NanoCam**) è una soluzione di visione AI compatta ed economica con architettura modulare a doppia scheda (scheda di elaborazione + scheda di espansione comunicazione). La scheda principale monta il processore **ESP32-S3** e una fotocamera 2MP per streaming video WiFi, riconoscimento visivo AI e interazione vocale — firmware preinstallato, pronto all'uso.
 
 **Caratteristiche principali**:
 
 - Fotocamera HD 2MP (1600×1200@30FPS)
 - **Doppia modalità AP + STA** trasmissione WiFi in tempo reale
-- Visione AI: segmentazione a soglia colore + CNN leggera (colore/viso/QR)
+- 8 modalità AI: rilevamento del muso del gatto, rilevamento volti, riconoscimento colori, riconoscimento facciale, scansione di codici QR, dialogo vocale LLM (XiaoZhi AI), controllo vocale ESP-Claw
+- Audio ES8311 integrato (microfono + altoparlante), supporto all'interazione vocale
+- LED di stato RGB WS2812
 - Aggiornamento firmware con un clic via Type-C
 - Interfacce I2C / UART standard PH2.0
 
@@ -25,13 +27,16 @@ Il modulo video WiFi ESP32 è una soluzione di visione AI compatta ed economica 
 
 | Categoria | Specifica |
 |------|------|
-| MCU | ESP32-S3 (Espressif, dual-core) |
-| Fotocamera | CMOS 2MP (1600×1200@30FPS) |
+| MCU | ESP32-S3 N16R8 (Espressif, dual-core 240MHz) |
+| Memoria | 16MB Flash + 8MB PSRAM |
+| Fotocamera | CMOS 2MP GC2145 (1600×1200@30FPS) |
 | Campo visivo | Diagonale 68°, orizzontale 49.5° |
+| Audio | Codec ES8311 + microfono MEMS + altoparlante con amplificatore in classe D |
+| LED di stato | RGB WS2812 |
 | Wireless | WiFi (BT doppia modalità) AP/STA + antenna ad alto guadagno |
 | Interfacce | Type-C / I2C / UART (PH2.0) |
-| Tasti | Reset + tasto programmabile |
-| Riconoscimento | Colore, viso, codice QR |
+| Tasti | Reset + tasto BOOT |
+| Riconoscimento | Muso del gatto, rilevamento volti, riconoscimento facciale, colori, codici QR, dialogo vocale |
 
 ## Avvio rapido
 
@@ -62,7 +67,17 @@ ESP32 模块 TX → 主控 RX
 
 ### 4. Sviluppo personalizzato
 
-Type-C al PC, aggiornamento firmware con un clic; cambiare il bersaglio di riconoscimento (colore/viso/QR) tramite comandi UART/I2C.
+Type-C al PC, aggiornamento firmware con un clic; cambiare la modalità AI (muso del gatto/rilevamento volti/colori/riconoscimento facciale/codici QR/dialogo vocale) tramite comandi seriali; riferimento completo dei comandi nel [manuale del protocollo seriale](/it/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Serial-Protocol).
+
+---
+
+## Tutorial completi
+
+- [Avvio rapido — flashing del firmware, connessione WiFi e apertura dell'immagine in 3 minuti](/it/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Quick-Start)
+- [Specifiche hardware — mappatura completa dei pin GPIO e progettazione dell'alimentazione](/it/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec)
+- [Manuale del protocollo seriale — comandi AT completi per configurazione WiFi e modalità AI](/it/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Serial-Protocol)
+- [Tutorial di visione AI — 11 capitoli pratici progressivi (volti/muso del gatto/colori/codici QR/voce)](/it/tutorials/accessories/esp32-nanocam/Ch01-Environment-Setup)
+- [ESP32-NanoCam come controller wireless dello slave SO-ARM101](/it/tutorials/robot-arms/so-arm101/SO-ARM101-NanoCam-Wireless-Teleop)
 
 ---
 

@@ -23,6 +23,15 @@ Tarjeta de sonido de activación IA — activación por voz sin conexión, palab
 - [Grabación de firmware chino/inglés](./KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words.md)
 - [Comunicación serie Raspberry Pi](./KWS-speech-recognition-module/raspberry-pi-serial-communication.md)
 
+### Módulo de transmisión de vídeo ESP32-NanoCam
+
+Módulo de transmisión de vídeo y visión IA ESP32-S3, compatible con 8 modos de IA, transmisión en modo dual AP+STA e interacción por voz.
+
+- [Inicio rápido](./esp32-nanocam/ESP32-NanoCam-Quick-Start.md)
+- [Especificaciones de hardware](./esp32-nanocam/ESP32-NanoCam-Hardware-Spec.md)
+- [Manual del protocolo serie](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
+- [Tutorial de visión IA, capítulo 1: configuración del entorno](./esp32-nanocam/Ch01-Environment-Setup.md)
+
 ### Otros accesorios
 
 - [Tutorial de pantalla OLED 0.91"](./0.91-oled-screen-tutorial.md)

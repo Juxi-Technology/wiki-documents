@@ -18,6 +18,10 @@ Brazo robótico de escritorio open source de 6 ejes, compatible con frameworks d
 - [Tutorial SO-ARM101](./so-arm101/SO-ARM101-Tutorial.md)
 - [Montaje SO-ARM101](./so-arm101/SO-ARM101-Assembly.md)
 - [Compatibilidad PyTorch Jetson Orin SO-ARM101](./so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility.md)
+- [Teleoperación inalámbrica SO-ARM101 (versión ESP32-NanoCam)](./so-arm101/SO-ARM101-NanoCam-Wireless-Teleop.md)
+- [Tutorial de doble brazo (doble brazo seguidor) del SO-ARM101](./so-arm101/SO-ARM101-Bi-Arm-Tutorial.md)
+- [Tutorial de conversión a 7-DOF del SO-ARM101 y uso con LeRobot](./so-arm101/SO-ARM101-7DOF-LeRobot.md)
+- [Herramienta de calibración de servos de la serie SoARM](./so-arm101/SO-ARM101-Servo-Calibration-Tool.md)
 
 ### AmazingHand
 

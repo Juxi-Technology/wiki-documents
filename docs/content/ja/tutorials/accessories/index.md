@@ -23,6 +23,15 @@ AIウェイクサウンドカード。オフライン音声ウェイク、カス
 - [中英認識語ファームウェアダウンロードと書き込み](./KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words.md)
 - [Raspberry Piシリアル通信](./KWS-speech-recognition-module/raspberry-pi-serial-communication.md)
 
+### ESP32-NanoCam 動画転送モジュール
+
+ESP32-S3 動画転送・AI ビジョンモジュール。8 種類の AI モード、AP+STA デュアルモード動画転送、音声対話に対応。
+
+- [クイックスタート](./esp32-nanocam/ESP32-NanoCam-Quick-Start.md)
+- [ハードウェア仕様書](./esp32-nanocam/ESP32-NanoCam-Hardware-Spec.md)
+- [シリアルプロトコルマニュアル](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
+- [AI ビジョンチュートリアル第 1 章:環境構築](./esp32-nanocam/Ch01-Environment-Setup.md)
+
 ### その他のアクセサリ
 
 - [0.91 OLEDスクリーンチュートリアル](./0.91-oled-screen-tutorial.md)

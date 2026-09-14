@@ -25,7 +25,7 @@ outline: false
   </a>
   <a :href="withBase('/ja/products/esp32-s3-wifi-module')" class="category-card">
     <span class="pc-title">ESP32-S3 WiFi 動画モジュール</span>
-    <p class="pc-desc">Juxi Technology ESP32-S3 WiFi 動画転送モジュール——200 万画素カメラ、WiFi リアルタイム転送、AI ビジョン認識(色/顔/QR)、AP+STA デュアルモード</p>
+    <p class="pc-desc">Juxi Technology ESP32-S3 WiFi 動画転送モジュール(ESP32-NanoCam)——200 万画素カメラ、WiFi リアルタイム転送、AI ビジョンと音声対話、AP+STA デュアルモード、8 種類の AI モード</p>
   </a>
   <a :href="withBase('/ja/products/feetech-servo')" class="category-card">
     <span class="pc-title">Feetech バスサーボ(SCS0009 / STS3215)</span>

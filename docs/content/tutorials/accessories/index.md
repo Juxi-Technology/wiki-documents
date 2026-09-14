@@ -23,6 +23,15 @@ AI wake-up sound card, supporting offline voice wake-up, custom wake-up words, a
 - [Chinese and English Recognition Word Firmware Download and Burn](./KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words.md)
 - [Raspberry Pi Serial Communication](./KWS-speech-recognition-module/raspberry-pi-serial-communication.md)
 
+### ESP32-NanoCam Video Module
+
+ESP32-S3 video streaming and AI vision module, supporting 8 AI modes, AP+STA dual-mode streaming and voice interaction.
+
+- [Quick Start](./esp32-nanocam/ESP32-NanoCam-Quick-Start.md)
+- [Hardware Spec](./esp32-nanocam/ESP32-NanoCam-Hardware-Spec.md)
+- [Serial Protocol Manual](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
+- [AI Vision Tutorial Chapter 1: Environment Setup](./esp32-nanocam/Ch01-Environment-Setup.md)
+
 ### Other Accessories
 
 - [0.91 OLED Screen Tutorial](./0.91-oled-screen-tutorial.md)

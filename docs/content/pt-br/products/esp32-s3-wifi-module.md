@@ -11,13 +11,15 @@ keywords: [esp32, wifi, câmera, vídeo, visão por ia]
 
 ## Visão Geral
 
-Uma solução compacta e econômica de visão por IA, com arquitetura modular de duas placas (placa de processamento principal + placa de expansão de comunicação). A placa principal conta com o processador **ESP32-S3** e uma câmera HD de 2MP, suportando streaming de vídeo WiFi, reconhecimento facial e reconhecimento de cores — o firmware pré-instalado funciona de fábrica.
+O módulo de vídeo WiFi ESP32-S3 (modelo **ESP32-NanoCam**) é uma solução compacta e econômica de visão por IA, com arquitetura modular de duas placas (placa de processamento principal + placa de expansão de comunicação). A placa principal conta com o processador **ESP32-S3** e uma câmera HD de 2MP, suportando streaming de vídeo WiFi, visão por IA e interação por voz — o firmware pré-instalado funciona de fábrica.
 
 **Principais recursos**:
 
 - Câmera HD de 2MP (1600×1200@30FPS)
 - Streaming em tempo real com **modo duplo AP + STA** WiFi
-- Visão por IA: segmentação por limiar de cor + CNN leve (cor/rosto/QR)
+- 8 modos de IA: detecção de rosto de gato, detecção de rostos, reconhecimento de cor, reconhecimento facial, leitura de QR code, diálogo por voz com LLM (XiaoZhi AI), controle por voz ESP-Claw
+- Áudio ES8311 integrado (microfone + alto-falante), com suporte a interação por voz
+- LED de status RGB WS2812
 - Atualização de firmware com um clique via Type-C
 - Interfaces padrão PH2.0 I2C / UART
 
@@ -27,13 +29,16 @@ Uma solução compacta e econômica de visão por IA, com arquitetura modular de
 
 | Categoria | Especificação |
 |----------|------|
-| MCU | ESP32-S3 (Espressif oficial, dual-core) |
-| Câmera | CMOS de 2MP (1600×1200@30FPS) |
+| MCU | ESP32-S3 N16R8 (Espressif oficial, dual-core 240MHz) |
+| Armazenamento | 16MB Flash + 8MB PSRAM |
+| Câmera | CMOS de 2MP GC2145 (1600×1200@30FPS) |
 | FOV | Diagonal 68°, horizontal 49,5° |
+| Áudio | Codec ES8311 + microfone MEMS + alto-falante com amplificador classe D |
+| LED de status | WS2812 RGB |
 | Sem fio | WiFi (BT modo duplo) AP/STA + antena de alto ganho |
 | Interface | Type-C / I2C / UART (PH2.0) |
-| Botões | Reset + tecla customizável programável |
-| Reconhecimento | Cor, rosto, QR code |
+| Botões | Reset + botão BOOT |
+| Reconhecimento | Rosto de gato, detecção de rostos, reconhecimento facial, cor, QR code, diálogo por voz |
 
 ## Início Rápido
 
@@ -64,7 +69,17 @@ ESP32 TX → Host RX
 
 ### 4. Desenvolvimento
 
-Type-C ao PC para atualização de firmware com um clique; alterne os alvos de reconhecimento por comandos UART/I2C.
+Type-C ao PC para atualização de firmware com um clique; alterne os modos de IA por comandos seriais (rosto de gato/detecção de rostos/cor/reconhecimento facial/QR code/diálogo por voz); consulte o [Manual do protocolo serial](/pt-br/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Serial-Protocol) para a referência completa dos comandos.
+
+---
+
+## Tutoriais completos
+
+- [Início rápido — grave o firmware, conecte ao WiFi e veja o vídeo em 3 minutos](/pt-br/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Quick-Start)
+- [Especificações de hardware — mapeamento completo de GPIO e projeto de alimentação](/pt-br/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec)
+- [Manual do protocolo serial — comandos AT completos para configuração de WiFi e modos de IA](/pt-br/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Serial-Protocol)
+- [Tutorial de visão por IA — 11 capítulos progressivos (rostos/rosto de gato/cor/QR code/voz)](/pt-br/tutorials/accessories/esp32-nanocam/Ch01-Environment-Setup)
+- [ESP32-NanoCam como controlador de braço escravo sem fio SO-ARM101](/pt-br/tutorials/robot-arms/so-arm101/SO-ARM101-NanoCam-Wireless-Teleop)
 
 ---
 

@@ -18,6 +18,10 @@ Willkommen zur Tutorial-Serie Roboterarme! Hier finden Sie vollständige Anleitu
 - [SO-ARM101-Tutorial](./so-arm101/SO-ARM101-Tutorial.md)
 - [SO-ARM101-Montage](./so-arm101/SO-ARM101-Assembly.md)
 - [SO-ARM101 Jetson-Orin-PyTorch-Kompatibilität](./so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility.md)
+- [SO-ARM101 Drahtlose Teleoperation (ESP32-NanoCam-Version)](./so-arm101/SO-ARM101-NanoCam-Wireless-Teleop.md)
+- [SO-ARM101 Zweiarm-Tutorial (zwei Folgearme)](./so-arm101/SO-ARM101-Bi-Arm-Tutorial.md)
+- [SO-ARM101 7-DOF-Umbau und LeRobot-Nutzung](./so-arm101/SO-ARM101-7DOF-LeRobot.md)
+- [SoARM-Servo-Kalibrierungstool](./so-arm101/SO-ARM101-Servo-Calibration-Tool.md)
 
 ### AmazingHand
 

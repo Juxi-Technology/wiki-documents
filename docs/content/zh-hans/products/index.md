@@ -25,7 +25,7 @@ outline: false
   </a>
   <a :href="withBase('/zh-hans/products/esp32-s3-wifi-module')" class="category-card">
     <span class="pc-title">ESP32-S3 WiFi 视频模块</span>
-    <p class="pc-desc">钜犀科技 ESP32-S3 WiFi 图传模块——200 万像素摄像头,WiFi 实时图传,AI 视觉识别(颜色/人脸/二维码),AP+STA 双模式</p>
+    <p class="pc-desc">钜犀科技 ESP32-S3 WiFi 图传模块(ESP32-NanoCam)——200 万像素摄像头,WiFi 实时图传,AI 视觉与语音交互,AP+STA 双模式,8 种 AI 模式</p>
   </a>
   <a :href="withBase('/zh-hans/products/feetech-servo')" class="category-card">
     <span class="pc-title">Feetech 总线舵机(SCS0009 / STS3215)</span>

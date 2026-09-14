@@ -1,0 +1,89 @@
+---
+title: 第 2 章:クイックスタート
+description: "ESP32-NanoCam チュートリアル第 2 章:ファームウェアを書き込み、WiFi 設定(シリアルまたは AP ホットスポット)を完了し、ブラウザで最初のリアルタイム MJPEG 映像を表示、各 HTTP エンドポイントを理解します。"
+---
+
+# 第 2 章:クイックスタート
+
+> **[ストアで購入](https://www.juxitech.com/ja/products/esp32-s3-wifi-video-module)**
+
+**この章の目標**:ファームウェアを書き込み、WiFi 設定を完了し、ブラウザで NanoCam の最初のリアルタイム映像を確認します。
+
+## 2.1 ファームウェア書き込み
+
+### 手順
+
+1. フォルダを解凍 → `nanocam_xxx.bin`
+
+2. [esptool-js](https://espressif.github.io/esptool-js/) を開く
+
+3. Type-C で NanoCam を接続
+
+4. Connect をクリック → シリアルポートを選択
+
+5. ファームウェアファイルを選択し、アドレスに `0x0` を入力
+
+6. START をクリック → 完了を待つ
+
+### 確認
+
+シリアルツール(115200 8N1)で NanoCam に接続すると、次のように表示されます:
+
+```Plain
+NanoCam Board Ver:0.3.0
+```
+
+---
+
+## 2.2 WiFi 設定
+
+> 成果: **NanoCam が WiFi に接続し、IP を取得**
+
+### 方法A: シリアル設定(最も一般的)
+
+```Plain
+sta_ssid:あなたのWiFi名
+sta_pd:あなたのWiFiパスワード
+```
+
+`OK` を受信 → 設定成功。パスワード変更後は自動的に再起動します。
+
+> 完全なシリアルコマンドは[シリアルプロトコルマニュアル](./ESP32-NanoCam-Serial-Protocol.md)を参照。
+
+### 方法B: AP ホットスポット直接接続
+
+NanoCam 内蔵ホットスポット: `NanoCam-AP`、パスワード `12345678`
+スマートフォンで接続後、ブラウザで `http://192.168.4.1` を開きます
+
+### 確認
+
+```Plain
+sta_ip
+```
+
+戻り値: `sta_ip:192.168.x.x` ✅
+
+---
+
+## 2.3 最初のフレーム
+
+> 成果: **ブラウザで NanoCam のリアルタイム映像が見える**
+
+1. ブラウザで `http://<IPアドレス>` を入力
+
+2. リアルタイム MJPEG 映像が表示される
+
+3. シリアルで `ai_mode:1` を送信 → 猫顔検出に切り替え → 画面に検出枠が表示される
+
+### エンドポイントの説明
+
+|URL|用途|
+|---|---|
+|`http://<IP>/`|リアルタイム映像(HTML)|
+|`http://<IP>/stream`|純粋な MJPEG ストリーム(OpenCV/VLC で再生可能)|
+|`http://<IP>/status`|デバイス状態 JSON|
+|`http://<IP>/admin`|Web 管理画面|
+
+次の章:[第 3 章:カメラの基礎](./Ch03-Camera-Basics.md)
+
+<RelatedProducts slugs="esp32-s3-wifi-module" />

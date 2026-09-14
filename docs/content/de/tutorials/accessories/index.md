@@ -23,6 +23,15 @@ AI-Wake-Soundkarte — Offline-Sprachweckung, anpassbare Wake-Words, geringer St
 - [Firmware für Wake-Wörter herunterladen und flashen](./KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words.md)
 - [Raspberry-Pi-Serialkommunikation](./KWS-speech-recognition-module/raspberry-pi-serial-communication.md)
 
+### ESP32-NanoCam-Videoübertragungsmodul
+
+ESP32-S3-Videoübertragungs- und KI-Visionsmodul, unterstützt 8 KI-Modi, AP+STA-Dualmodus-Videoübertragung und Sprachinteraktion.
+
+- [Schnellstart](./esp32-nanocam/ESP32-NanoCam-Quick-Start.md)
+- [Hardware-Spezifikation](./esp32-nanocam/ESP32-NanoCam-Hardware-Spec.md)
+- [Handbuch zum seriellen Protokoll](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
+- [KI-Vision-Tutorial Kapitel 1: Umgebung einrichten](./esp32-nanocam/Ch01-Environment-Setup.md)
+
 ### Weitere Accessoires
 
 - [0.91-OLED-Screen-Tutorial](./0.91-oled-screen-tutorial.md)

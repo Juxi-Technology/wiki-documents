@@ -11,13 +11,15 @@ keywords: [esp32, wifi, videoübertragung, kamera, ai vision]
 
 ## Produktübersicht
 
-Das ESP32-WiFi-Videoübertragungsmodul ist eine kompakte, kostengünstige KI-Vision-Lösung mit Dual-Board-Modulararchitektur (Kernverarbeitungsboard + Kommunikationsboard). Das Kernboard nutzt den **ESP32-S3** Hochleistungsprozessor mit 2MP-Kamera für WiFi-Videostreaming, Gesichts- und Farberkennung — Firmware vorinstalliert, sofort einsatzbereit.
+Das ESP32-WiFi-Videoübertragungsmodul (Modell **ESP32-NanoCam**) ist eine kompakte, kostengünstige KI-Vision-Lösung mit Dual-Board-Modulararchitektur (Kernverarbeitungsboard + Kommunikationsboard). Das Kernboard nutzt den **ESP32-S3** Hochleistungsprozessor mit 2MP-Kamera für WiFi-Videostreaming, KI-Vision-Erkennung und Sprachinteraktion — Firmware vorinstalliert, sofort einsatzbereit.
 
 **Kernfunktionen**:
 
 - 2MP-Kamera (1600×1200@30FPS)
 - **AP + STA-Dualmodus** WiFi-Echtzeitübertragung
-- KI-Vision: Farbschwellen-Segmentierung + leichtes CNN (Farbe/Gesicht/QR)
+- 8 KI-Modi: Katzengesicht-Erkennung, Gesichtsdetektion, Farberkennung, Gesichtserkennung, QR-Code-Scan, LLM-Sprachdialog (XiaoZhi AI), ESP-Claw-Sprachsteuerung
+- Onboard-ES8311-Audio (Mikrofon + Lautsprecher), unterstützt Sprachinteraktion
+- WS2812-RGB-Status-LED
 - Type-C-Firmware-Update per Knopfdruck
 - Standard-PH2.0-I2C/UART-Schnittstelle
 
@@ -25,13 +27,16 @@ Das ESP32-WiFi-Videoübertragungsmodul ist eine kompakte, kostengünstige KI-Vis
 
 | Kategorie | Spezifikation |
 |------|------|
-| MCU | ESP32-S3 (Espressif, Dual-Core) |
-| Kamera | 2MP CMOS (1600×1200@30FPS) |
+| MCU | ESP32-S3 N16R8 (Espressif, Dual-Core 240MHz) |
+| Speicher | 16MB Flash + 8MB PSRAM |
+| Kamera | 2MP CMOS GC2145 (1600×1200@30FPS) |
 | Sichtfeld | Diagonal 68°, horizontal 49.5° |
+| Audio | ES8311-Codec + MEMS-Mikrofon + Klasse-D-Verstärker-Lautsprecher |
+| Status-LED | WS2812 RGB |
 | Funk | WiFi (BT-Dualmodus) AP/STA + Hochgewinnantenne |
 | Schnittstellen | Type-C / I2C / UART (PH2.0) |
-| Tasten | Reset + programmierbare Taste |
-| Erkennung | Farbe, Gesicht, QR-Code |
+| Tasten | Reset-Taste + BOOT-Taste |
+| Erkennung | Katzengesicht, Gesichtsdetektion, Gesichtserkennung, Farbe, QR-Code, Sprachdialog |
 
 ## Schnellstart
 
@@ -62,7 +67,17 @@ ESP32 模块 TX → 主控 RX
 
 ### 4. Eigenentwicklung
 
-Per Type-C am PC, Firmware-Update per Knopfdruck; Erkennungsziel (Farbe/Gesicht/QR) über UART/I2C-Befehle wechseln.
+Per Type-C am PC, Firmware-Update per Knopfdruck; KI-Modi (Katzengesicht/Gesichtsdetektion/Farbe/Gesichtserkennung/QR-Code/Sprachdialog) über serielle Befehle umschalten, vollständige Befehle siehe [Handbuch zum seriellen Protokoll](/de/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Serial-Protocol).
+
+---
+
+## Komplette Tutorials
+
+- [Schnellstart — Firmware in 3 Minuten flashen, WiFi verbinden, Bild anzeigen](/de/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Quick-Start)
+- [Hardware-Spezifikation — vollständige GPIO-Pinbelegung und Stromversorgungsdesign](/de/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec)
+- [Handbuch zum seriellen Protokoll — vollständige AT-Befehle für WiFi-Konfiguration und KI-Modi](/de/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Serial-Protocol)
+- [KI-Vision-Tutorial — 11 aufbauende Praxiskapitel (Gesicht/Katze/Farbe/QR-Code/Sprache)](/de/tutorials/accessories/esp32-nanocam/Ch01-Environment-Setup)
+- [ESP32-NanoCam als drahtloser Follower-Arm-Controller für SO-ARM101](/de/tutorials/robot-arms/so-arm101/SO-ARM101-NanoCam-Wireless-Teleop)
 
 ---
 

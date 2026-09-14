@@ -23,6 +23,15 @@ AI 웨이크 사운드 카드. 오프라인 음성 웨이크, 사용자 지정 �
 - [중문/영문 인식어 펌웨어 다운로드 및 굽기](./KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words.md)
 - [라즈베리파이 직렬 통신](./KWS-speech-recognition-module/raspberry-pi-serial-communication.md)
 
+### ESP32-NanoCam 영상 전송 모듈
+
+ESP32-S3 영상 전송과 AI 비전 모듈. 8가지 AI 모드, AP+STA 듀얼 모드 영상 전송과 음성 상호작용을 지원합니다.
+
+- [빠른 시작](./esp32-nanocam/ESP32-NanoCam-Quick-Start.md)
+- [하드웨어 사양서](./esp32-nanocam/ESP32-NanoCam-Hardware-Spec.md)
+- [시리얼 프로토콜 매뉴얼](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
+- [AI 비전 튜토리얼 제1장: 환경 구축](./esp32-nanocam/Ch01-Environment-Setup.md)
+
 ### 기타 액세서리
 
 - [0.91 OLED 스크린 튜토리얼](./0.91-oled-screen-tutorial.md)

@@ -18,6 +18,10 @@ Braccio robotico da scrivania open source a 6 assi, compatibile con framework IA
 - [Tutorial SO-ARM101](./so-arm101/SO-ARM101-Tutorial.md)
 - [Montaggio SO-ARM101](./so-arm101/SO-ARM101-Assembly.md)
 - [Compatibilità PyTorch Jetson Orin SO-ARM101](./so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility.md)
+- [SO-ARM101 Teleoperazione wireless (versione ESP32-NanoCam)](./so-arm101/SO-ARM101-NanoCam-Wireless-Teleop.md)
+- [SO-ARM101 Tutorial bi-braccio (doppio follower)](./so-arm101/SO-ARM101-Bi-Arm-Tutorial.md)
+- [SO-ARM101 Conversione a 7-DOF e utilizzo con LeRobot](./so-arm101/SO-ARM101-7DOF-LeRobot.md)
+- [Strumento di calibrazione servomotori serie SoARM](./so-arm101/SO-ARM101-Servo-Calibration-Tool.md)
 
 ### AmazingHand
 

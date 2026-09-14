@@ -18,6 +18,10 @@ Braço robótico de mesa open source de 6 eixos, com suporte ao LeRobot e a outr
 - [Tutorial do SO-ARM101](./so-arm101/SO-ARM101-Tutorial.md)
 - [Guia de montagem do SO-ARM101](./so-arm101/SO-ARM101-Assembly.md)
 - [Compatibilidade do SO-ARM101 com PyTorch no Jetson Orin](./so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility.md)
+- [Teleoperação sem fio do SO-ARM101 (versão ESP32-NanoCam)](./so-arm101/SO-ARM101-NanoCam-Wireless-Teleop.md)
+- [Tutorial de dois braços (dois seguidores) do SO-ARM101](./so-arm101/SO-ARM101-Bi-Arm-Tutorial.md)
+- [Tutorial de conversão do SO-ARM101 para 7-DOF e uso com LeRobot](./so-arm101/SO-ARM101-7DOF-LeRobot.md)
+- [Ferramenta de calibração de servos da série SoARM](./so-arm101/SO-ARM101-Servo-Calibration-Tool.md)
 
 ### AmazingHand
 

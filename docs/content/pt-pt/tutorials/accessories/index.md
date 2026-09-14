@@ -23,6 +23,15 @@ Placa de som de ativação por IA, com suporte a ativação por voz offline, pal
 - [Download e gravação de firmware de reconhecimento de palavras em chinês e inglês](./KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words.md)
 - [Comunicação serial Raspberry Pi](./KWS-speech-recognition-module/raspberry-pi-serial-communication.md)
 
+### Módulo de transmissão de vídeo ESP32-NanoCam
+
+Módulo de transmissão de vídeo e visão por IA ESP32-S3, com suporte a 8 modos de IA, transmissão de vídeo com modo duplo AP+STA e interação por voz.
+
+- [Início rápido](./esp32-nanocam/ESP32-NanoCam-Quick-Start.md)
+- [Especificações de hardware](./esp32-nanocam/ESP32-NanoCam-Hardware-Spec.md)
+- [Manual do protocolo serial](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
+- [Tutorial de visão por IA, Capítulo 1: Configuração do ambiente](./esp32-nanocam/Ch01-Environment-Setup.md)
+
 ### Outros acessórios
 
 - [Tutorial da ecrã OLED 0.91"](./0.91-oled-screen-tutorial.md)

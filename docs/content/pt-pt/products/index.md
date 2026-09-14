@@ -25,7 +25,7 @@ outline: false
   </a>
   <a :href="withBase('/pt-pt/products/esp32-s3-wifi-module')" class="category-card">
     <span class="pc-title">Módulo de Vídeo WiFi ESP32-S3</span>
-    <p class="pc-desc">Módulo de vídeo WiFi ESP32-S3 da Juxi Technology — câmara de 2MP, streaming WiFi em tempo real, vi…</p>
+    <p class="pc-desc">Módulo de vídeo WiFi ESP32-S3 (ESP32-NanoCam) da Juxi Technology — câmara de 2MP, streaming WiFi em tempo real, visão por IA e interação por voz, modo duplo AP+STA, 8 modos de IA</p>
   </a>
   <a :href="withBase('/pt-pt/products/feetech-servo')" class="category-card">
     <span class="pc-title">Servos de Barramento Feetech (SCS0009 / STS3215)</span>

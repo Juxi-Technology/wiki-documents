@@ -25,7 +25,7 @@ outline: false
   </a>
   <a :href="withBase('/it/products/esp32-s3-wifi-module')" class="category-card">
     <span class="pc-title">Modulo video WiFi ESP32-S3</span>
-    <p class="pc-desc">Modulo video WiFi ESP32-S3 di Juxi Technology — fotocamera 2MP, trasmissione WiFi in tempo re…</p>
+    <p class="pc-desc">Modulo video WiFi ESP32-S3 di Juxi Technology (ESP32-NanoCam) — fotocamera 2MP, trasmissione …</p>
   </a>
   <a :href="withBase('/it/products/feetech-servo')" class="category-card">
     <span class="pc-title">Servo bus Feetech (SCS0009 / STS3215)</span>

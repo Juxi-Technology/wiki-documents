@@ -25,7 +25,7 @@ outline: false
   </a>
   <a :href="withBase('/ko/products/esp32-s3-wifi-module')" class="category-card">
     <span class="pc-title">ESP32-S3 WiFi 영상 모듈</span>
-    <p class="pc-desc">Juxi Technology ESP32-S3 WiFi 영상 전송 모듈 — 200만 화소 카메라, WiFi 실시간 전송, AI 비전 인식(색상/얼굴/QR), AP+STA 듀얼 모드</p>
+    <p class="pc-desc">Juxi Technology ESP32-S3 WiFi 영상 전송 모듈(ESP32-NanoCam) — 200만 화소 카메라, WiFi 실시간 전송, AI 비전과 음성 상호작용, AP+STA 듀얼 모드, 8가지 AI 모드</p>
   </a>
   <a :href="withBase('/ko/products/feetech-servo')" class="category-card">
     <span class="pc-title">Feetech 버스 서보(SCS0009 / STS3215)</span>

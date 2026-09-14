@@ -11,13 +11,15 @@ keywords: [esp32, wifi, camera, video, ai vision]
 
 ## Overview
 
-A compact, cost-effective AI vision solution with a dual-board modular architecture (core processing board + communication expansion board). The core board features the **ESP32-S3** processor and a 2MP HD camera, supporting WiFi video streaming, face recognition, and color recognition — preinstalled firmware works out of the box.
+The ESP32-S3 WiFi video module (model **ESP32-NanoCam**) is a compact, cost-effective AI vision solution with a dual-board modular architecture (core processing board + communication expansion board). The core board features the **ESP32-S3** processor and a 2MP HD camera, supporting WiFi video streaming, AI vision recognition, and voice interaction — preinstalled firmware works out of the box.
 
 **Key features**:
 
 - 2MP HD camera (1600×1200@30FPS)
 - **AP + STA dual-mode** WiFi real-time streaming
-- AI vision: color threshold segmentation + lightweight CNN (color/face/QR)
+- 8 AI modes: cat face detection, face detection, color recognition, face recognition, QR code scanning, LLM voice chat (XiaoZhi AI), ESP-Claw voice control
+- Onboard ES8311 audio (microphone + speaker), supporting voice interaction
+- WS2812 RGB status LED
 - Type-C one-click firmware upgrade
 - Standard PH2.0 I2C / UART interfaces
 
@@ -27,13 +29,16 @@ A compact, cost-effective AI vision solution with a dual-board modular architect
 
 | Category | Spec |
 |----------|------|
-| MCU | ESP32-S3 (Espressif official, dual-core) |
-| Camera | 2MP CMOS (1600×1200@30FPS) |
+| MCU | ESP32-S3 N16R8 (Espressif official, dual-core 240MHz) |
+| Storage | 16MB Flash + 8MB PSRAM |
+| Camera | 2MP CMOS GC2145 (1600×1200@30FPS) |
 | FOV | Diagonal 68°, horizontal 49.5° |
+| Audio | ES8311 codec + MEMS microphone + class-D amplifier speaker |
+| Status LED | WS2812 RGB |
 | Wireless | WiFi (dual-mode BT) AP/STA + high-gain antenna |
 | Interface | Type-C / I2C / UART (PH2.0) |
-| Buttons | Reset + programmable custom key |
-| Recognition | Color, face, QR code |
+| Buttons | Reset + BOOT key |
+| Recognition | Cat face, face detection, face recognition, color, QR code, voice chat |
 
 ## Quick Start
 
@@ -64,7 +69,17 @@ ESP32 TX → Host RX
 
 ### 4. Development
 
-Type-C to PC for one-click firmware upgrade; switch recognition targets via UART/I2C commands.
+Type-C to PC for one-click firmware upgrade; switch AI modes via serial commands (cat face / face detection / color / face recognition / QR code / voice chat). See the complete command reference in the [Serial Protocol Manual](/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Serial-Protocol).
+
+---
+
+## Complete Tutorials
+
+- [Quick Start — flash the firmware, connect WiFi and view the live video in 3 minutes](/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Quick-Start)
+- [Hardware Spec — complete GPIO pin mapping and power design](/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec)
+- [Serial Protocol Manual — complete AT commands for WiFi configuration and AI modes](/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Serial-Protocol)
+- [AI Vision Tutorial — 11-chapter progressive hands-on course (face / cat face / color / QR code / voice)](/tutorials/accessories/esp32-nanocam/Ch01-Environment-Setup)
+- [ESP32-NanoCam as an SO-ARM101 wireless follower-arm controller](/tutorials/robot-arms/so-arm101/SO-ARM101-NanoCam-Wireless-Teleop)
 
 ---
 

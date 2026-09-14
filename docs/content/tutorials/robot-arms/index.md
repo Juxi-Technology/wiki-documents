@@ -18,6 +18,10 @@ Welcome to the robot arm series tutorials! Here you'll find complete guides for 
 - [SO-ARM101 Tutorial](./so-arm101/SO-ARM101-Tutorial.md)
 - [SO-ARM101 Assembly Guide](./so-arm101/SO-ARM101-Assembly.md)
 - [SO-ARM101 Jetson Orin PyTorch Compatibility](./so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility.md)
+- [SO-ARM101 Wireless Teleoperation (ESP32-NanoCam Version)](./so-arm101/SO-ARM101-NanoCam-Wireless-Teleop.md)
+- [SO-ARM101 Bi-Arm (Dual Follower) Tutorial](./so-arm101/SO-ARM101-Bi-Arm-Tutorial.md)
+- [SO-ARM101 7-DOF Modification and LeRobot Usage](./so-arm101/SO-ARM101-7DOF-LeRobot.md)
+- [SoARM Series Servo Calibration Tool](./so-arm101/SO-ARM101-Servo-Calibration-Tool.md)
 
 ### AmazingHand
 

@@ -23,6 +23,15 @@ Carte son à réveil IA — réveil vocal hors ligne, mots de réveil personnali
 - [Flashage du firmware chinois/anglais](./KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words.md)
 - [Communication série Raspberry Pi](./KWS-speech-recognition-module/raspberry-pi-serial-communication.md)
 
+### Module de transmission vidéo ESP32-NanoCam
+
+Module de transmission vidéo et de vision IA ESP32-S3, prenant en charge 8 modes IA, la transmission vidéo en double mode AP+STA et l'interaction vocale.
+
+- [Démarrage rapide](./esp32-nanocam/ESP32-NanoCam-Quick-Start.md)
+- [Spécifications matérielles](./esp32-nanocam/ESP32-NanoCam-Hardware-Spec.md)
+- [Manuel du protocole série](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
+- [Tutoriel vision IA chapitre 1 : configuration de l'environnement](./esp32-nanocam/Ch01-Environment-Setup.md)
+
 ### Autres accessoires
 
 - [Tutoriel écran OLED 0.91"](./0.91-oled-screen-tutorial.md)

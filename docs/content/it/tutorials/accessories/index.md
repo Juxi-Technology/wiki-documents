@@ -23,6 +23,15 @@ Scheda audio con wake AI — wake vocale offline, parole di attivazione personal
 - [Flashing firmware cinese/inglese](./KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words.md)
 - [Comunicazione seriale Raspberry Pi](./KWS-speech-recognition-module/raspberry-pi-serial-communication.md)
 
+### Modulo di trasmissione video ESP32-NanoCam
+
+Modulo di trasmissione video e visione AI ESP32-S3, supporta 8 modalità AI, trasmissione in doppia modalità AP+STA e interazione vocale.
+
+- [Avvio rapido](./esp32-nanocam/ESP32-NanoCam-Quick-Start.md)
+- [Specifiche hardware](./esp32-nanocam/ESP32-NanoCam-Hardware-Spec.md)
+- [Manuale del protocollo seriale](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
+- [Tutorial di visione AI, Capitolo 1: Configurazione dell'ambiente](./esp32-nanocam/Ch01-Environment-Setup.md)
+
 ### Altri accessori
 
 - [Tutorial schermo OLED 0.91"](./0.91-oled-screen-tutorial.md)

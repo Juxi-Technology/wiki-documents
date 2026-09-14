@@ -9,6 +9,7 @@ const SITE_URL = 'https://www.juxitech.com'
 // 产品路径 → Shopify 商品路径映射(不含语言前缀,由 localePrefix 拼接)
 const PRODUCT_MAP = [
   { match: 'so-arm101', path: 'products/so-arm101-developers-kit' },
+  { match: 'esp32-nanocam', path: 'products/esp32-s3-wifi-video-module' },
   { match: 'amazing-hand', path: 'products/amazinghand' },
   { match: 'lekiwi', path: 'products/lekiwi-embodied-intelligence-mobile-robotic-car' },
   { match: 'imu', path: 'products/imu-module-ahrs-attitude-and-heading-angle-sensor' },

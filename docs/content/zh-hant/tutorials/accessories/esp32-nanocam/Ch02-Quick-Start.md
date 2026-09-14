@@ -1,0 +1,89 @@
+---
+title: 第 2 章:快速上手
+description: "ESP32-NanoCam 教程第 2 章:燒錄固件並完成 WiFi 配網（串口或 AP 熱點），在瀏覽器打開第一幀實時 MJPEG 畫面，了解各 HTTP 端點。"
+---
+
+# 第 2 章:快速上手
+
+> **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
+
+**本章目標**:燒錄固件、完成 WiFi 配網，並在瀏覽器裏看到 NanoCam 的第一幀實時畫面。
+
+## 2.1 固件燒錄
+
+### 步驟
+
+1. 解壓資料夾 → `nanocam_xxx.bin`
+
+2. 打開 [esptool-js](https://espressif.github.io/esptool-js/)
+
+3. Type-C 連接 NanoCam
+
+4. 點擊 Connect → 選擇串口
+
+5. 選擇固件檔案，地址填 `0x0`
+
+6. 點擊 START → 等待完成
+
+### 驗證
+
+串口工具（115200 8N1）連接 NanoCam，應看到:
+
+```Plain
+NanoCam Board Ver:0.3.0
+```
+
+---
+
+## 2.2 WiFi 配網
+
+> 產出: **NanoCam 連上 WiFi，取得 IP**
+
+### 方式A: 串口配網（最常用）
+
+```Plain
+sta_ssid:你的WiFi名
+sta_pd:你的WiFi密碼
+```
+
+收到 `OK` → 設定成功。密碼修改後自動重啟。
+
+> 完整串口指令見[串口協議手冊](./ESP32-NanoCam-Serial-Protocol.md)。
+
+### 方式B: AP 熱點直連
+
+NanoCam 自帶熱點: `NanoCam-AP`，密碼 `12345678`
+手機連上後，瀏覽器打開 `http://192.168.4.1`
+
+### 驗證
+
+```Plain
+sta_ip
+```
+
+返回: `sta_ip:192.168.x.x` ✅
+
+---
+
+## 2.3 第一幀畫面
+
+> 產出: **瀏覽器看到 NanoCam 實時畫面**
+
+1. 瀏覽器輸入 `http://<IP地址>`
+
+2. 看到實時 MJPEG 畫面
+
+3. 串口發 `ai_mode:1` → 切換到貓臉檢測 → 畫面出現檢測框
+
+### 端點說明
+
+|URL|用途|
+|---|---|
+|`http://<IP>/`|實時畫面(HTML)|
+|`http://<IP>/stream`|純 MJPEG 流(OpenCV/VLC 可讀)|
+|`http://<IP>/status`|設備狀態 JSON|
+|`http://<IP>/admin`|Web 管理後台|
+
+下一章:[第 3 章:攝像頭基礎](./Ch03-Camera-Basics.md)
+
+<RelatedProducts slugs="esp32-s3-wifi-module" />

@@ -18,6 +18,10 @@ description: "钜犀科技机械臂系列教程首页——SO-ARM101、AmazingHa
 - [SO-ARM101 使用教程](./so-arm101/SO-ARM101-Tutorial.md)
 - [SO-ARM101 组装指南](./so-arm101/SO-ARM101-Assembly.md)
 - [SO-ARM101 Jetson Orin PyTorch 兼容性](./so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility.md)
+- [SO-ARM101 无线遥操作(ESP32-NanoCam 版)](./so-arm101/SO-ARM101-NanoCam-Wireless-Teleop.md)
+- [SO-ARM101 双臂(双从臂)教程](./so-arm101/SO-ARM101-Bi-Arm-Tutorial.md)
+- [SO-ARM101 7-DOF 改造与 LeRobot 使用](./so-arm101/SO-ARM101-7DOF-LeRobot.md)
+- [SoARM 系列舵机校准工具](./so-arm101/SO-ARM101-Servo-Calibration-Tool.md)
 
 ### AmazingHand
 
