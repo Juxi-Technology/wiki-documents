@@ -13,7 +13,7 @@ description: "SO-ARM101 LeRobot ロボットアームの組立ガイド。Window
 
 サーボ ID の設定、サーボ角度のキャリブレーション、組立は事前に完了しておいてください。[公式組立ガイド](https://huggingface.co/docs/lerobot/so101) を参照できます。
 
-# ステップ1: サーボ ID の設定とサーボホーンの取付け(5番サーボを除く)
+## ステップ1: サーボ ID の設定とサーボホーンの取付け(5番サーボを除く)
 
 ![image – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
 
@@ -27,7 +27,7 @@ description: "SO-ARM101 LeRobot ロボットアームの組立ガイド。Window
 
 以下のビデオは、モーター ID の設定手順を示しています。
 
-## Windows システム
+### Windows システム
 
 飞特舵机上位机.zip
 
@@ -35,7 +35,7 @@ description: "SO-ARM101 LeRobot ロボットアームの組立ガイド。Window
 
 机械臂舵机设置ID-Windows系统.mp4
 
-## Linux/Ubuntu システム
+### Linux/Ubuntu システム
 
 FTServo 上位機については https://gitee.com/ftservo/FTServo_Linux を参照してください。
 
@@ -87,7 +87,7 @@ lerobot-setup-motors \
 
 机械臂舵机设置ID-Linux系统.mp4
 
-# ステップ2: 組立
+## ステップ2: 組立
 
 - 従動アームの組立手順は、能動アームと基本的に同じです。唯一の違いは、ステップ 12 以降のエンドエフェクタ(グリッパーとハンドル)の取付方法が異なる点です。
 

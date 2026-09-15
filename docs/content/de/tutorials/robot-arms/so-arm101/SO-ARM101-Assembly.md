@@ -13,7 +13,7 @@ description: "Pro-Version: Leader-Arm 5V6A, Follower-Arm 12V5A Netzteil"
 
 Servo-ID-Einstellung, Winkel-Kalibrierung und Montage im Voraus erledigen. Siehe [offizielle Montageanleitung](https://huggingface.co/docs/lerobot/so101).
 
-# Schritt 1: Servo-IDs einstellen und Servohörner montieren (außer Servo Nr. 5)
+## Schritt 1: Servo-IDs einstellen und Servohörner montieren (außer Servo Nr. 5)
 
 ![image – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
 
@@ -27,7 +27,7 @@ Falls Sie die Motoren anderer Roboter weiterverwenden möchten, kann dieser Schr
 
 Das folgende Video zeigt die einzelnen Schritte zum Einstellen der Motor-IDs.
 
-## Windows-System
+### Windows-System
 
 飞特舵机上位机.zip
 
@@ -35,7 +35,7 @@ Mit der Feetech-Servo-Software die Servo-IDs einstellen und die Mittelstellung k
 
 机械臂舵机设置ID-Windows系统.mp4
 
-## Linux/Ubuntu-System
+### Linux/Ubuntu-System
 
 Für den FTServo-Hostcomputer siehe https://gitee.com/ftservo/FTServo_Linux
 
@@ -87,7 +87,7 @@ lerobot-setup-motors \
 
 机械臂舵机设置ID-Linux系统.mp4
 
-# Schritt 2: Montage
+## Schritt 2: Montage
 
 - Die Montageschritte des Follower-Arms entsprechen im Wesentlichen denen des Leader-Arms. Der einzige Unterschied: Nach Schritt 12 ist die Montage des Endeffektors (Gripper und Griff) anders.
 

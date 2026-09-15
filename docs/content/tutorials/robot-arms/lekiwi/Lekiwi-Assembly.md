@@ -14,7 +14,7 @@ description: "Precise component positions can be visualized in Fusion360 Online 
 
 Online URDF Preview https://urdf.d-robotics.cc/
 
-# 1. Assemble the wheel module (3 per robot)
+## 1. Assemble the wheel module (3 per robot)
 
 1. Secure the drive motor to the motor bracket using 12 **M2x6** self-tapping screws. (Supplied with the servo box)
 
@@ -52,7 +52,7 @@ After all three wheels are installed on the base plate:
 
 ![image – 10](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/18.jpg)
 
-# 2. Base Plate Assembly
+## 2. Base Plate Assembly
 
 1. Insert M3 nuts into the holes of the servo driver board and battery mount. Secure both to the base plate with 4 M3x12 machine screws.
 
@@ -84,7 +84,7 @@ The cable can be connected as shown in the figure below:
 
 ![image – 18](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/5.jpg)
 
-# 3. Roof Panel Assembly
+## 3. Roof Panel Assembly
 
 1. Place the Raspberry Pi 5 into the bottom of the Raspberry Pi case, then snap on the top of the case.
 
@@ -92,7 +92,7 @@ The cable can be connected as shown in the figure below:
 
 ![image – 19](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/6.jpg)
 
-# IV.
+## IV.
 
 1. Thread the USB-C to USB-A cable of the servo driver board, the 5V USB-C power cable, and the SO0-101 servo cable through the holes in the top and bottom plates.
 
@@ -106,11 +106,11 @@ The cable can be connected as shown in the figure below:
 
 
 
-# 5. Install the camera
+## 5. Install the camera
 
 *Note: The bracket we designed is specifically tailored for the camera we selected. Modifications may be required for different camera modules.*
 
-## (Option 1) Install the front-view camera 
+### (Option 1) Install the front-view camera 
 
 Install the front-view camera bracket to the base plate using 3 M3\*12 machine screws and 3 M3 nuts 
 
@@ -120,13 +120,13 @@ Secure the camera module with 4 m2\*5\*5 washer screws
 
 
 
-## (Option 2) Install an arm-mounted camera 
+### (Option 2) Install an arm-mounted camera 
 
 
 
 Secure the camera module with 4 m2\*5\*5 washer screws 
 
-# 6. Plug in the power supply
+## 6. Plug in the power supply
 
 
 

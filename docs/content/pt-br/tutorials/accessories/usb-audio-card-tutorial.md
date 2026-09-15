@@ -8,7 +8,7 @@ description: "Tutorial da placa de som USB sem driver da Juxi Technology — sof
 > **[Comprar na loja](https://www.juxitech.com/pt/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction)**
 
 
-# Software de teste visual (Windows)
+## Software de teste visual (Windows)
 
 [audio_tools.7z](https://juxitech.feishu.cn/wiki/NThUwAgW5iLyB3kEWzOcyO35nvW)
 
@@ -43,11 +43,11 @@ description: "Tutorial da placa de som USB sem driver da Juxi Technology — sof
 
     - Reinicie o serviço de áudio:`sudo systemctl restart alsa`(Alguns ambientes podem exigir reinicialização do sistema:`sudo reboot`)
 
-# Controlador principal da série Jetson &amp; sistema Ubuntu &amp; Raspberry Pi
+## Controlador principal da série Jetson &amp; sistema Ubuntu &amp; Raspberry Pi
 
-## Depuração por linha de comando
+### Depuração por linha de comando
 
-### 1. Conexão da placa de som USB
+#### 1. Conexão da placa de som USB
 
 1. Antes de inserir a placa de som USB, usamos o comando `lsusb` para verificar os dispositivos USB:
 
@@ -65,7 +65,7 @@ description: "Tutorial da placa de som USB sem driver da Juxi Technology — sof
 
 ![1. Conexão da placa de som USB – 4](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
-### 2. Uso da placa de som USB
+#### 2. Uso da placa de som USB
 
 `arecord -l`, por exemplo, aqui o UACDemoV1.0 é exibido, que é a nossa placa de som, card 0; device 0, e no comando, modifique-o para plughw:0,0 para especificar este dispositivo de gravação
 
@@ -112,7 +112,7 @@ As descrições dos parâmetros são as seguintes:
 
 
 
-## Visualizar a janela de visualização do PulseAudio
+### Visualizar a janela de visualização do PulseAudio
 
 ![Visualizar a janela de visualização do PulseAudio – 1](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/7.png)
 
@@ -140,15 +140,15 @@ Visualize via PulseAudio, método de [linha de comando](https://so.csdn.net/so/s
 
 
 
-## Python chamando a placa de som USB sem driver
+### Python chamando a placa de som USB sem driver
 
 Procure exemplos de código por conta própria, como pesquisar "[Python chamando placa de som USB sem driver](https://blog.csdn.net/weixin_44463519/article/details/157463731?spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EYuanLiJiHua%7ECtr-3-157463731-blog-105694458.235%5Ev43%5Epc_blog_bottom_relevance_base9&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EYuanLiJiHua%7ECtr-3-157463731-blog-105694458.235%5Ev43%5Epc_blog_bottom_relevance_base9&utm_relevant_index=4)"
 
 
 
-## Resumo de problemas
+### Resumo de problemas
 
-### Jetson
+#### Jetson
 
 1. Problema de ocupação do dispositivo
 
@@ -178,7 +178,7 @@ Em seguida, regrave e reproduza
 
 
 
-### Raspberry Pi 
+#### Raspberry Pi 
 
 1. Problema de ruído relativamente alto
 
@@ -215,7 +215,7 @@ sudo chmod 664 /var/lib/alsa/asound.state
 sudo alsactl store
 ```
 
-### Máquina virtual Ubuntu
+#### Máquina virtual Ubuntu
 
 1. Há ruído e interferência durante a gravação
 
@@ -225,9 +225,9 @@ Solução: altere a compatibilidade do controlador USB para 3.0 ou 3.1
 
 
 
-# RDK x3&amp;x5
+## RDK x3&amp;x5
 
-## Ver o número do dispositivo
+### Ver o número do dispositivo
 
 Verifique se a placa de som existe e confirme o número do dispositivo. 
 
@@ -257,7 +257,7 @@ by-path/   controlC0  pcmC0D0c   pcmC0D0p   timer
 
 Por meio da consulta acima, pode-se confirmar que a placa de som 0 corresponde à placa de som integrada; o dispositivo também existe e seu número de dispositivo é `0-0`. Na verdade, os dispositivos que operamos devem ser `pcmC0D0p` e `pcmC0D0c`.
 
-## Gravar um som de 5 segundos para teste
+### Gravar um som de 5 segundos para teste
 
 `arecord -D plughw:0,0 -f S16_LE -r 16000 -d 5 -t wav test.wav`
 
@@ -296,13 +296,13 @@ As descrições dos parâmetros são as seguintes:
 
 - -d 5: define a duração da gravação/segundos.
 
-## Perguntas frequentes 
+### Perguntas frequentes 
 
-### Como a placa RDK diferencia entre placas de som USB e placas de som integradas?
+#### Como a placa RDK diferencia entre placas de som USB e placas de som integradas?
 
-### Como a placa filha de áudio da série RDK X3 pode coexistir e ser usada simultaneamente com uma placa de som USB?
+#### Como a placa filha de áudio da série RDK X3 pode coexistir e ser usada simultaneamente com uma placa de som USB?
 
-### Como a RDKS100 suporta o uso de funções de áudio por meio de uma interface gráfica?
+#### Como a RDKS100 suporta o uso de funções de áudio por meio de uma interface gráfica?
 
 Consulte [Processamento multimídia e aplicações RDK](https://developer.d-robotics.cc/rdk_doc/FAQ/multimedia#usb-%E5%A3%B0%E5%8D%A1%E5%92%8C%E6%9D%BF%E8%BD%BD%E5%A3%B0%E5%8D%A1%E5%A6%82%E4%BD%95%E5%8C%BA%E5%88%86%E4%BD%BF%E7%94%A8)
 
@@ -310,7 +310,7 @@ Consulte [Processamento multimídia e aplicações RDK](https://developer.d-robo
 
 
 
-# Verificação do driver de áudio mais básico
+## Verificação do driver de áudio mais básico
 
 Se uma placa de som USB sem driver pode ser usada **depende, em última análise, do kernel** 
 
@@ -344,7 +344,7 @@ CONFIG_SND_USB_CAIAQ=y
 sudo modprobe snd_usb_audio
 ```
 
-#### Etapa 2: instalar as ferramentas básicas de áudio (não incluídas por padrão na versão Lite) 
+##### Etapa 2: instalar as ferramentas básicas de áudio (não incluídas por padrão na versão Lite) 
 
 O sistema reduzido geralmente não possui `alsa-utils` e ferramentas semelhantes, que precisam ser instaladas manualmente: 
 
@@ -355,7 +355,7 @@ sudo apt update && sudo apt install -y alsa-utils usbutils
 # Offline environment: Download the alsa-utils offline package and install it with dpkg -i
 ```
 
-#### Etapa 3: verificar o reconhecimento e o funcionamento da placa de som USB
+##### Etapa 3: verificar o reconhecimento e o funcionamento da placa de som USB
 
 1. Insira a placa de som USB e execute o comando para confirmar o reconhecimento do dispositivo:
 
@@ -376,7 +376,7 @@ O aparecimento de entradas `card X` relacionadas a `USB Audio` na saída indica 
 speaker-test -c 2 -D plughw:X,0
 ```
 
-#### Etapa 4: (Opcional) instalar o serviço de áudio (para necessidades de reprodução em desktop/segundo plano) 
+##### Etapa 4: (Opcional) instalar o serviço de áudio (para necessidades de reprodução em desktop/segundo plano) 
 
 Se você precisar reproduzir áudio em segundo plano ou usá-lo com um ambiente de desktop, a versão Lite requer a instalação adicional de serviços de áudio: 
 
@@ -388,7 +388,7 @@ sudo apt install -y pulseaudio
 sudo apt install -y pipewire pipewire-alsa
 ```
 
-### Armadilhas comuns e soluções do sistema da versão Lite
+#### Armadilhas comuns e soluções do sistema da versão Lite
 
 **1. Permissões insuficientes: usuários comuns não podem acessar a placa de som**
 

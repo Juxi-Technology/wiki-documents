@@ -12,7 +12,7 @@ description: "En Fusion360 CAD en línea se pueden visualizar las posiciones exa
 [Archivo URDF](https://gitcode.com/gh_mirrors/le/LeKiwi/tree/main)
 Vista previa URDF en línea https://urdf.d-robotics.cc/
 
-# 1. Montar el módulo de rueda (3 por robot)
+## 1. Montar el módulo de rueda (3 por robot)
 
 1. Fijar el motor de accionamiento al soporte del motor con 12 tornillos autorroscantes **M2x6** (incluidos con la caja del servo).
 
@@ -68,7 +68,7 @@ Tras montar las tres ruedas en la placa base:
 
 
 
-# 2. Ensamblaje de la placa base
+## 2. Ensamblaje de la placa base
 
 1. Insertar las tuercas M3 en los orificios de la placa driver de servos y del soporte de batería. Fijar ambos a la placa base con 4 tornillos M3x12.
 
@@ -115,7 +115,7 @@ Los cables se conectan como se muestra:
 
 
 
-# 3. Ensamblaje de la placa superior
+## 3. Ensamblaje de la placa superior
 
 1. Colocar el Raspberry Pi 5 en la parte inferior de la carcasa y encajar la tapa superior.
 2. Fijar el Raspberry Pi a la placa superior con dos tornillos M3x12 y dos contratuercas M3, y montar la base del brazo SO-101 con cuatro tornillos M4x25 y cuatro contratuercas M4. Se puede usar nuestra base SO-101 mejorada o la original: la placa tiene orificios para ambas.
@@ -124,7 +124,7 @@ Los cables se conectan como se muestra:
 
 
 
-# 4.
+## 4.
 
 1. Pasar el cable USB-C a USB-A de la placa driver, el cable de alimentación USB-C de 5 V y el cable del servo SO0-101 por los orificios de la placa superior.
 
@@ -140,20 +140,20 @@ Los cables se conectan como se muestra:
 
 3. Unir placa superior y placa base con 6 separadores de latón M3*50 y 6 tornillos de máquina M3*
 
-# 5. Instalar la cámara
+## 5. Instalar la cámara
 
 *Nota: nuestro soporte está diseñado específicamente para la cámara elegida. Otros módulos de cámara pueden requerir modificaciones.*
 
-## (Opción 1) Instalar la cámara frontal
+### (Opción 1) Instalar la cámara frontal
 
 Montar el soporte de cámara frontal en la placa base con 3 tornillos m3*12 y tres tuercas m3
 Fijar el módulo de cámara con 4 tornillos separadores m2*5*5
 
-## (Opción 2) Instalar la cámara montada en el brazo
+### (Opción 2) Instalar la cámara montada en el brazo
 
 Fijar el módulo de cámara con 4 tornillos separadores m2*5*5
 
-# 6. Conectar la alimentación
+## 6. Conectar la alimentación
 
 Insertar el adaptador cilíndrico DC en la placa driver y el conector USB-C de 5 V en el Raspberry Pi 5 para alimentar la electrónica. Los cables de datos USB de la placa driver y de la cámara se conectan directamente al Raspberry Pi.
 

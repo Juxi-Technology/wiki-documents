@@ -8,7 +8,7 @@ description: "The communication level uses the TTL level method compatible with 
 > **[Buy in Store](https://www.juxitech.com/products/feetech-scs0009-serial-bus-servo)**
 
 
-# 1 Summary of Communication Protocol
+## 1 Summary of Communication Protocol
 
 The communication level uses the TTL level method compatible with high-speed communication and the RS485 method with strong anti-interference ability. Communication still uses asynchronous duplex, and the sending and receiving signals are processed asynchronously. 
 
@@ -20,7 +20,7 @@ The communication mode is serial asynchronous, with one frame of data divided in
 
 When some parameters of the memory table use a two-byte value range, the order of the two bytes is distinguished according to the servo model. For potentiometer-type servos, it is in big-endian format (high byte first, low byte second), and for magnetic encoder-type servos, it is in little-endian format (low byte first, high byte second). Since each servo has slightly different functions, please refer to the memory table of the specific model during actual control. 
 
-# 2 Instruction Frame
+## 2 Instruction Frame
 
 - Header: Receiving two consecutive 0xFF bytes indicates the arrival of a data packet.
 ID Number: Each servo has an ID number. The ID number ranges from 0 to 253, which translates to 0x00 to 0xFD in hexadecimal.
@@ -36,13 +36,13 @@ ID Number: Each servo has an ID number. The ID number ranges from 0 to 253, whic
 - Checksum: Checksum, the calculation method is as follows
 Check Sum = ~ (ID + Length + Instruction + Parameter1 + … Parameter N). If the sum of the calculation within the parentheses exceeds 255, take the lowest ByteDance, where "~" denotes bitwise negation.
 
-# 3 Response Frame
+## 3 Response Frame
 
 The returned response frame contains the current state ERROR of the servo. If the current operating state of the servo is abnormal, it will be reflected through this ByteDance (for details on the meaning represented by each state, please refer to the Memory Control Table in the manual). If ERROR is 0, the servo has no error information. 
 
-# 4 Instruction Types
+## 4 Instruction Types
 
-## 4.1 Query Status Command PING
+### 4.1 Query Status Command PING
 
 - Function: Read the operating status of the servo motor
 
@@ -76,7 +76,7 @@ Instruction：00
 Checksum：FC
 ```
 
-## 4.2 Read Instruction READ DATA
+### 4.2 Read Instruction READ DATA
 
 - Function: Read data from the servo memory control table
 
@@ -114,7 +114,7 @@ Checksum：DD
 
 The two bytes of data read out (in little-endian structure) are: low byte L 0x18, high byte H 0x05. The two bytes combined form a 16-bit data 0X0518, and the current position represented in decimal is 1304. 
 
-## 4.3 Write Instruction WRITE DATA
+### 4.3 Write Instruction WRITE DATA
 
 - Function: Write data to the servo memory control table
 
@@ -181,7 +181,7 @@ Checksum：FC
 
 Returning a working status of 0 indicates that the servo has correctly received the command without error and has started execution. The ID of the sent command packet uses a non-broadcast ID (0xFE), so the servo will return a status packet after the command reception is completed. 
 
-## 4.4 Asynchronous Write Instruction REG WRITE
+### 4.4 Asynchronous Write Instruction REG WRITE
 
 The REG WRITE instruction is similar to WRITE DATA, except that the execution time is different. When a REG WRITE instruction frame is received, the received data is stored in the buffer for later use, and the asynchronous write flag register is set to 1. After receiving the ACTION instruction, the stored instruction is finally executed. 
 
@@ -222,7 +222,7 @@ ID10：Asynchronous Write Command Frame：FF FF 0A 09 04 2A 00 08 00 00 E8 03 CB
 ID10：Response Frame：FF FF 0A 02 00 F3
 ```
 
-## 4.5 Execute asynchronous write instruction ACTION
+### 4.5 Execute asynchronous write instruction ACTION
 
 - Function: Trigger REG WRITE instruction
 
@@ -245,7 +245,7 @@ Command Frame：FF FF FE 02 05 FA
 Response Frame：None
 ```
 
-## 4.6 Synchronous Write Instruction SYNC WRITE
+### 4.6 Synchronous Write Instruction SYNC WRITE
 
 - Function: Used to control multiple servos simultaneously.
 
@@ -298,7 +298,7 @@ Parameter：
 Checksum：58
 ```
 
-## 4.7 Synchronous Read Instruction SYNC READ
+### 4.7 Synchronous Read Instruction SYNC READ
 
 - Function: Used to query multiple servos simultaneously.
 
@@ -345,7 +345,7 @@ ID02 servo motor：FF FF 02 0A 00 FF 07 00 00 00 00 77 23 53
 
 The response frame can be decoded according to the read command 
 
-## 4.8 Status Reset Command RESET
+### 4.8 Status Reset Command RESET
 
 - Function: Reset servo state (reset servo rotation count)
 
@@ -362,7 +362,7 @@ Command Frame：FF FF 01 02 0A F2（Send in hexadecimal format）
 Response Frame：FF FF 01 02 00 FC（Hexadecimal display）
 ```
 
-## 4.9 Position Calibration Instruction
+### 4.9 Position Calibration Instruction
 
 - Function: Recalibrate the current position to the set value
 
@@ -404,7 +404,7 @@ Status：00
 Checksum：FC
 ```
 
-## 4.10 Parameter Restoration Instruction
+### 4.10 Parameter Restoration Instruction
 
 - Function: Restore other parameters of the servo except the ID number
 
@@ -423,7 +423,7 @@ Response Frame：FF FF 01 02 00 FC（Hexadecimal display）
 
 Note: Unlock the EPROM parameters before restoring the servo parameters.
 
-## 4.11 Parameter Backup Instruction
+### 4.11 Parameter Backup Instruction
 
 - Function: Parameter backup (used for parameter restoration instruction)
 
@@ -442,7 +442,7 @@ Response Frame：FF FF 01 02 00 FC（Hexadecimal display）
 
 Note: Unlock the eprom parameters before backing up the servo parameters
 
-## 4.12 Restart Command
+### 4.12 Restart Command
 
 - Function: Restart command (restart the servo)
 

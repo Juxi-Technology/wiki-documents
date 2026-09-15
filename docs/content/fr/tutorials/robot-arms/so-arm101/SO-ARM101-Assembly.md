@@ -14,7 +14,7 @@ description: "Version Pro : bras leader 5V6A, bras follower 12V5A"
 
 Le réglage des ID des servos, la calibration des angles et le montage doivent être effectués à l'avance ; voir le [tutoriel de montage officiel](https://huggingface.co/docs/lerobot/so101).
 
-# Étape 1 : Régler les ID des servos et installer les pignons (sauf le servo n° 5)
+## Étape 1 : Régler les ID des servos et installer les pignons (sauf le servo n° 5)
 
 ![image – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
 
@@ -28,7 +28,7 @@ Si vous prévoyez de réutiliser les moteurs d'autres robots, cette étape peut 
 
 La vidéo suivante montre la procédure pas à pas de réglage de l'ID des moteurs.
 
-## Système Windows
+### Système Windows
 
 飞特舵机上位机.zip
 
@@ -36,7 +36,7 @@ Utilisez le logiciel hôte de servos Feetech pour définir l'ID des servos et ca
 
 机械臂舵机设置ID-Windows系统.mp4
 
-## Système Linux/Ubuntu
+### Système Linux/Ubuntu
 
 Pour le logiciel hôte FTServo, voir https://gitee.com/ftservo/FTServo_Linux
 
@@ -88,7 +88,7 @@ lerobot-setup-motors \
 
 机械臂舵机设置ID-Linux系统.mp4
 
-# Étape 2 : Montage
+## Étape 2 : Montage
 
 - Les étapes de montage du bras follower sont pratiquement les mêmes que celles du bras leader. La seule différence : après l'étape 12, la méthode d'installation de l'effecteur (pince et poignée) est différente.
 

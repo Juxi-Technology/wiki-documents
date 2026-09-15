@@ -10,7 +10,7 @@ description: "Sensore di assetto IMU ad alta precisione: processore 72MHz 32 bit
 
 Sensore di assetto IMU ad alta precisione con **processore 32 bit ad alte prestazioni da 72MHz**, in grado di calcolare l'assetto in tempo reale e di effettuare la compensazione dinamica, con frequenza di aggiornamento dei dati fino a **100Hz**, che unisce i vantaggi di una risposta rapida e di un'uscita stabile. Supporta sia la modalità di comunicazione IIC che quella seriale, è compatibile con microcontrollori e host Linux e si integra senza soluzione di continuità con il sistema ROS; ampiamente applicabile a scenari ad alte prestazioni come il controllo del movimento dei robot, la stabilizzazione dell'assetto dei droni e la navigazione e il posizionamento intelligenti.
 
-# 1. Panoramica delle versioni
+## 1. Panoramica delle versioni
 
 | Confronto delle prestazioni |                                                      |                                                              |                                                              |
 | --------------------------- | ---------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -26,7 +26,7 @@ Sensore di assetto IMU ad alta precisione con **processore 32 bit ad alte presta
 | Metodo di comunicazione     | IIC / seriale                                        |                                                              |                                                              |
 | Posizionamento / scenari applicativi | Progettato per applicazioni sensibili ai costi, conforme agli standard delle applicazioni ad alta risposta dinamica | Basato sull'architettura hardware a 6 assi con modulo magnetometro a 3 assi integrato, calibrato con l'algoritmo di fusione dei dati di assetto AHRS, migliora notevolmente la stabilità e la precisione di misura dei dati in uscita | Aggiunge un barometro all'architettura di rilevamento a 9 assi, in grado di fornire informazioni precise sull'altitudine, adatto a scenari applicativi con requisiti più elevati di percezione dell'assetto e della posizione nello spazio tridimensionale |
 
-## Descrizione delle funzioni dei pin
+### Descrizione delle funzioni dei pin
 
 | SDA  | Linea dati seriale I2C               |
 | ---- | ------------------------------------ |
@@ -38,7 +38,7 @@ Sensore di assetto IMU ad alta precisione con **processore 32 bit ad alte presta
 | GND  | Massa                                |
 | 5V   | 5V                                   |
 
-# 2. Parametri del prodotto
+## 2. Parametri del prodotto
 
 | Parametri del prodotto |                                                              |
 | ---------------------- | ------------------------------------------------------------ |
@@ -58,7 +58,7 @@ Sensore di assetto IMU ad alta precisione con **processore 32 bit ad alte presta
 | Peso del prodotto      | 3.8g                                                         |
 | Supporto ROS           | ROS1/ROS2                                                    |
 
-# 3. Parametri prestazionali dei sensori
+## 3. Parametri prestazionali dei sensori
 
 Parametri prestazionali dei dati IMU
 
@@ -87,6 +87,6 @@ Parametri prestazionali del barometro
 | Rumore RMS          | Modalità standard | 1Pa-RMS       |
 | Precisione relativa |                  | ±0.12hPa      |
 
-# 4. Parametri dimensionali
+## 4. Parametri dimensionali
 
 ![Descrizione delle funzioni dei pin – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjA3NmQ5NzIzMzdkYWZlMzZkYzcwOGIyOGRmMmYxYWJfNTAxNTBiYzRjZTk4MzJiY2YzMWZhMWY4NDI5ZTFjYTZfSUQ6NzYzODkyMjc2MDI5MDcxNjYwMl8xNzgwMzE3OTcyOjE3ODA0MDQzNzJfVjM)

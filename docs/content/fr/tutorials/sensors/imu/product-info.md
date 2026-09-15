@@ -10,7 +10,7 @@ description: "Capteur d'attitude IMU haute précision : processeur 72MHz 32 bits
 
 Capteur d'attitude IMU haute précision intégrant un **processeur 32 bits haute performance à 72MHz**, capable de calcul d'attitude en temps réel et de compensation dynamique, avec une fréquence de mise à jour des données pouvant atteindre 100Hz, alliant les avantages d'une réponse rapide et d'une sortie stable. Il prend en charge les deux modes de communication IIC et série, est compatible avec les microcontrôleurs et les contrôleurs hôtes Linux, et peut s'intégrer en toute transparence au système ROS ; il s'applique largement aux scénarios d'application hautes performances tels que le contrôle du mouvement des robots, la stabilisation d'attitude des drones et la navigation et le positionnement intelligents.
 
-# 1. Présentation des versions
+## 1. Présentation des versions
 
 | Comparaison des performances |                                                     |                                                              |                                                              |
 | ---------------------------- | --------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -26,7 +26,7 @@ Capteur d'attitude IMU haute précision intégrant un **processeur 32 bits haute
 | Mode de communication        | IIC / série                                          |                                                              |                                                              |
 | Positionnement / Scénarios d'application | Conçu pour les applications sensibles au coût, répondant aux exigences des applications à réponse dynamique élevée | Construit sur l'architecture matérielle 6 axes avec un module magnétomètre 3 axes intégré, réglé grâce à l'algorithme de fusion de données d'attitude AHRS, améliorant considérablement la stabilité et la précision de mesure des données de sortie | Ajoute un baromètre à l'architecture de détection 9 axes, capable de fournir des informations d'altitude précises, adapté aux scénarios d'application exigeant une meilleure perception de l'attitude spatiale 3D et de la position |
 
-## Description des broches
+### Description des broches
 
 | SDA  | Ligne de données série I2C           |
 | ---- | ------------------------------------ |
@@ -38,7 +38,7 @@ Capteur d'attitude IMU haute précision intégrant un **processeur 32 bits haute
 | GND  | Masse                                |
 | 5V   | 5V                                   |
 
-# 2. Paramètres du produit
+## 2. Paramètres du produit
 
 | Paramètres du produit |                                                              |
 | --------------------- | ------------------------------------------------------------ |
@@ -58,7 +58,7 @@ Capteur d'attitude IMU haute précision intégrant un **processeur 32 bits haute
 | Poids du produit      | 3.8g                                                         |
 | Support ROS           | ROS1/ROS2                                                    |
 
-# 3. Paramètres de performance des capteurs
+## 3. Paramètres de performance des capteurs
 
 Paramètres de performance des données IMU
 
@@ -87,7 +87,7 @@ Paramètres de performance du baromètre
 | Bruit RMS          | Mode standard | 1Pa-RMS        |
 | Précision relative |               | ±0.12hPa       |
 
-# 4. Paramètres de dimensions
+## 4. Paramètres de dimensions
 
 ![Description des broches – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjA3NmQ5NzIzMzdkYWZlMzZkYzcwOGIyOGRmMmYxYWJfNTAxNTBiYzRjZTk4MzJiY2YzMWZhMWY4NDI5ZTFjYTZfSUQ6NzYzODkyMjc2MDI5MDcxNjYwMl8xNzgwMzE3OTcyOjE3ODA0MDQzNzJfVjM)
 

@@ -8,7 +8,7 @@ description: "O nível de comunicação utiliza o método de nível TTL, compat�
 > **[Comprar na loja](https://www.juxitech.com/pt/products/feetech-scs0009-serial-bus-servo)**
 
 
-# 1 Resumo do protocolo de comunicação
+## 1 Resumo do protocolo de comunicação
 
 O nível de comunicação utiliza o método de nível TTL, compatível com comunicação de alta velocidade, e o método RS485, com forte capacidade anti-interferência. A comunicação continua sendo duplex assíncrona, e os sinais de envio e recebimento são processados de forma assíncrona. 
 
@@ -20,7 +20,7 @@ O modo de comunicação é serial assíncrono, com um quadro de dados dividido e
 
 Quando alguns parâmetros da tabela de memória usam uma faixa de valores de dois bytes, a ordem dos dois bytes é diferenciada conforme o modelo do servo. Para servos do tipo potenciômetro, o formato é big-endian (byte alto primeiro, byte baixo depois); para servos do tipo encoder magnético, o formato é little-endian (byte baixo primeiro, byte alto depois). Como cada servo tem funções ligeiramente diferentes, consulte a tabela de memória do modelo específico durante o controle real. 
 
-# 2 Quadro de instruções
+## 2 Quadro de instruções
 
 - Cabeçalho: receber dois bytes 0xFF consecutivos indica a chegada de um pacote de dados.
 Número de ID: cada servo possui um número de ID. A faixa de números de ID vai de 0 a 253, o que corresponde a 0x00 a 0xFD em hexadecimal.
@@ -36,13 +36,13 @@ Número de ID: cada servo possui um número de ID. A faixa de números de ID vai
 - Soma de verificação: o método de cálculo é o seguinte
 Check Sum = ~ (ID + Length + Instruction + Parameter1 + … Parameter N). Se a soma do cálculo dentro dos parênteses exceder 255, considera-se apenas o byte mais baixo, onde "~" denota a negação bit a bit.
 
-# 3 Quadro de resposta
+## 3 Quadro de resposta
 
 O quadro de resposta retornado contém o estado atual ERROR do servo. Se o estado operacional atual do servo estiver anormal, isso será refletido por meio desse byte (para detalhes sobre o significado de cada estado, consulte a Tabela de Controle de Memória do manual). Se ERROR for 0, o servo não possui informações de erro. 
 
-# 4 Tipos de instruções
+## 4 Tipos de instruções
 
-## 4.1 Instrução de consulta de estado PING
+### 4.1 Instrução de consulta de estado PING
 
 - Função: ler o estado operacional do servomotor
 
@@ -76,7 +76,7 @@ Instruction：00
 Checksum：FC
 ```
 
-## 4.2 Instrução de leitura READ DATA
+### 4.2 Instrução de leitura READ DATA
 
 - Função: ler dados da tabela de controle de memória do servo
 
@@ -114,7 +114,7 @@ Checksum：DD
 
 Os dois bytes de dados lidos (em estrutura little-endian) são: byte baixo L 0x18, byte alto H 0x05. Os dois bytes combinados formam um dado de 16 bits 0X0518, e a posição atual representada em decimal é 1304. 
 
-## 4.3 Instrução de escrita WRITE DATA
+### 4.3 Instrução de escrita WRITE DATA
 
 - Função: gravar dados na tabela de controle de memória do servo
 
@@ -181,7 +181,7 @@ Checksum：FC
 
 Retornar um estado de funcionamento igual a 0 indica que o servo recebeu corretamente o comando, sem erros, e iniciou a execução. O ID do pacote de comando enviado usa um ID que não é de difusão (0xFE), portanto o servo retornará um pacote de estado após a conclusão do recebimento do comando. 
 
-## 4.4 Instrução de escrita assíncrona REG WRITE
+### 4.4 Instrução de escrita assíncrona REG WRITE
 
 A instrução REG WRITE é semelhante à WRITE DATA, exceto que o tempo de execução é diferente. Quando um quadro de instrução REG WRITE é recebido, os dados recebidos são armazenados no buffer para uso posterior, e o registrador de sinalização de escrita assíncrona é definido como 1. Após receber a instrução ACTION, a instrução armazenada é finalmente executada. 
 
@@ -222,7 +222,7 @@ ID10：Asynchronous Write Command Frame：FF FF 0A 09 04 2A 00 08 00 00 E8 03 CB
 ID10：Response Frame：FF FF 0A 02 00 F3
 ```
 
-## 4.5 Executar instrução de escrita assíncrona ACTION
+### 4.5 Executar instrução de escrita assíncrona ACTION
 
 - Função: acionar a instrução REG WRITE
 
@@ -245,7 +245,7 @@ Command Frame：FF FF FE 02 05 FA
 Response Frame：None
 ```
 
-## 4.6 Instrução de escrita síncrona SYNC WRITE
+### 4.6 Instrução de escrita síncrona SYNC WRITE
 
 - Função: usada para controlar vários servos simultaneamente.
 
@@ -298,7 +298,7 @@ Parameter：
 Checksum：58
 ```
 
-## 4.7 Instrução de leitura síncrona SYNC READ
+### 4.7 Instrução de leitura síncrona SYNC READ
 
 - Função: usada para consultar vários servos simultaneamente.
 
@@ -345,7 +345,7 @@ ID02 servo motor：FF FF 02 0A 00 FF 07 00 00 00 00 77 23 53
 
 O quadro de resposta pode ser decodificado de acordo com o comando de leitura 
 
-## 4.8 Instrução de reinicialização de estado RESET
+### 4.8 Instrução de reinicialização de estado RESET
 
 - Função: reinicializar o estado do servo (reinicializar a contagem de rotações do servo)
 
@@ -362,7 +362,7 @@ Command Frame：FF FF 01 02 0A F2（Send in hexadecimal format）
 Response Frame：FF FF 01 02 00 FC（Hexadecimal display）
 ```
 
-## 4.9 Instrução de calibração de posição
+### 4.9 Instrução de calibração de posição
 
 - Função: recalibrar a posição atual para o valor definido
 
@@ -404,7 +404,7 @@ Status：00
 Checksum：FC
 ```
 
-## 4.10 Instrução de restauração de parâmetros
+### 4.10 Instrução de restauração de parâmetros
 
 - Função: restaurar os demais parâmetros do servo, exceto o número de ID
 
@@ -423,7 +423,7 @@ Response Frame：FF FF 01 02 00 FC（Hexadecimal display）
 
 Observação: desbloqueie os parâmetros EPROM antes de restaurar os parâmetros do servo.
 
-## 4.11 Instrução de backup de parâmetros
+### 4.11 Instrução de backup de parâmetros
 
 - Função: backup de parâmetros (usada para a instrução de restauração de parâmetros)
 
@@ -442,7 +442,7 @@ Response Frame：FF FF 01 02 00 FC（Hexadecimal display）
 
 Observação: desbloqueie os parâmetros EPROM antes de fazer o backup dos parâmetros do servo
 
-## 4.12 Comando de reinicialização
+### 4.12 Comando de reinicialização
 
 - Função: comando de reinicialização (reiniciar o servo)
 

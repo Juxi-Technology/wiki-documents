@@ -24,7 +24,7 @@ lerobot-Lekiwi.zip
 
 ![image – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
-## 主な特徴
+### 主な特徴
 
 1. **オープンソースで低コスト**： [Lekiwi](https://github.com/SIGRobotics-UIUC/LeKiwi) はオープンソースの低コストロボットカーソリューションを提供します。
 2. **LeRobot との統合**： [LeRobot プラットフォーム](https://github.com/huggingface/lerobot) との統合用に設計されています。
@@ -39,9 +39,9 @@ JUXI はハードウェア自体の品質のみに責任を負います。チュ
 - 12V 電源 - 必要に応じて、チェックアウト時にこのオプションを選択できます。すでに 12V 電源をお持ちの場合は、出力インターフェースを 5521 DC プラグに変換するだけで済みます。
 - ラズベリーパイコントローラとカメラ - 注文画面から個別に購入する必要があります。
 
-## 部品表 (BOM)
+### 部品表 (BOM)
 
-## 初期システム環境
+### 初期システム環境
 
 **Ubuntu x86 の場合:**
 - Ubuntu 22.04
@@ -57,17 +57,17 @@ JUXI はハードウェア自体の品質のみに責任を負います。チュ
 **ラズベリーパイの場合:**
 - ラズベリーパイ5 4G~16G
 
-### SSH の設定
+#### SSH の設定
 
 ラズベリーパイの設定が完了したら、[SSH](https://www.raspberrypi.com/news/coding-on-raspberry-pi-remotely-with-visual-studio-code/)（セキュアシェルプロトコル）を有効化して設定してください。これにより、ラズベリーパイに画面・キーボード・マウスを接続せずにノートPCからログインできます。[こちら](https://www.raspberrypi.com/documentation/computers/remote-access.html#ssh)に素晴らしいチュートリアルがあります。コマンドプロンプト (cmd) でラズベリーパイにログインするか、VSCode を使用する場合は[この](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)拡張機能を使用できます。
 
-## 3Dプリントガイド
+### 3Dプリントガイド
 
-### 部品
+#### 部品
 
 以下3Dプリント部品の印刷可能な STL ファイルを提供します。これらの部品は一般的な PLA フィラメントでコンシューマーグレードの FDM プリンターで印刷できます。Bambu Lab P1S プリンターでテスト済みです。すべてのコンポーネントについて、bambuslicer に読み込むだけで自動回転・配置され、推奨サポートを有効にして印刷できます。
 
-### 印刷パラメータ
+#### 印刷パラメータ
 
 提供された STL ファイルは多くの FDM プリンターで直接印刷できます。以下はテストおよび推奨設定です。他の設定も有効な場合があります。
 
@@ -77,11 +77,11 @@ JUXI はハードウェア自体の品質のみに責任を負います。チュ
 - 印刷速度: 150 mm/s
 - 必要に応じて、Gコード（スライスファイル）をプリンターにアップロードして印刷
 
-# LeRobot のインストール
+## LeRobot のインストール
 
 ラズベリーパイ上で:
 
-### 1. [Miniconda のインストール](https://docs.anaconda.com/miniconda/install/#quick-command-line-install):
+#### 1. [Miniconda のインストール](https://docs.anaconda.com/miniconda/install/#quick-command-line-install):
 
 ```Python
 mkdir -p ~/miniconda3
@@ -90,11 +90,11 @@ bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 rm ~/miniconda3/miniconda.sh
 ```
 
-### 2. シェルの再起動
+#### 2. シェルの再起動
 
 シェルで以下をコピーして貼り付けます: `source ~/.bashrc` または Mac ユーザー: `source ~/.bash_profile` または `source ~/.zshrc`（zshell を使用している場合）
 
-### 3. LeRobot 用の新しい Conda 環境を作成して有効化
+#### 3. LeRobot 用の新しい Conda 環境を作成して有効化
 
 ```Python
 conda create -y -n lerobot python=3.10
@@ -106,13 +106,13 @@ conda create -y -n lerobot python=3.10
 conda activate lerobot
 ```
 
-### 4. LeRobot のクローン:
+#### 4. LeRobot のクローン:
 
 ```Bash
 git clone https://github.com/huggingface/lerobot.git ~/lerobot
 ```
 
-### 5. 環境に ffmpeg をインストール:
+#### 5. 環境に ffmpeg をインストール:
 
 `miniconda` を使用する場合、環境に `ffmpeg` をインストールします:
 
@@ -131,14 +131,14 @@ conda install ffmpeg -c conda-forge
 
 ![5. 環境に ffmpeg をインストール: – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
-### 6. feetech モーター依存関係を含む LeRobot のインストール:
+#### 6. feetech モーター依存関係を含む LeRobot のインストール:
 
 ```Bash
 cd ~/lerobot && pip install --no-binary=av -e ".[feetech]"
 pip install -e ".[lekiwi]"
 ```
 
-### 7. 接続時間の設定
+#### 7. 接続時間の設定
 
 `lerobot\src\lerobot\robots\lekiwi` ディレクトリ内の config_lekiwi.py を探してください
 
@@ -148,7 +148,7 @@ connection_time_s: int = 7200 # 也就是2小时
 
 
 
-## C. ノートPCに LeRobot をインストール
+### C. ノートPCに LeRobot をインストール
 
 ノートPCにすでに LeRobot をインストールしている場合は、このステップをスキップできます。それ以外の場合は、ラズベリーパイでの**同じ手順**に従ってください。
 
@@ -156,15 +156,15 @@ connection_time_s: int = 7200 # 也就是2小时
 
 コンピューター上で:
 
-### 1. [Miniconda のインストール](https://docs.anaconda.com/miniconda/install/#quick-command-line-install):
+#### 1. [Miniconda のインストール](https://docs.anaconda.com/miniconda/install/#quick-command-line-install):
 
-### 2. シェルの再起動
+#### 2. シェルの再起動
 
 シェルで以下をコピーして貼り付けます: `source ~/.bashrc` または Mac ユーザー: `source ~/.bash_profile` または `source ~/.zshrc`（zshell を使用している場合）
 
 ![2. シェルの再起動 – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
-### 3. LeRobot 用の新しい Conda 環境を作成して有効化
+#### 3. LeRobot 用の新しい Conda 環境を作成して有効化
 
 ```Bash
 conda create -y -n lerobot python=3.10
@@ -176,13 +176,13 @@ conda create -y -n lerobot python=3.10
 conda activate lerobot
 ```
 
-### 4. LeRobot のクローン:
+#### 4. LeRobot のクローン:
 
 ```Bash
 git clone https://github.com/huggingface/lerobot.git ~/lerobot
 ```
 
-### 5. 環境に ffmpeg をインストール:
+#### 5. 環境に ffmpeg をインストール:
 
 `miniconda` を使用する場合、環境に `ffmpeg` をインストールします:
 
@@ -201,20 +201,20 @@ conda install ffmpeg -c conda-forge
 
 ![5. 環境に ffmpeg をインストール: – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
-### 6. feetech モーター依存関係を含む LeRobot のインストール:
+#### 6. feetech モーター依存関係を含む LeRobot のインストール:
 
 ```Bash
 cd ~/lerobot && pip install --no-binary=av -e ".[feetech]"
 pip install -e ".[lekiwi]"
 ```
 
-# モーターの設定
+## モーターの設定
 
 ![6. feetech モーター依存関係を含む LeRobot のインストール: – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
 ![6. feetech モーター依存関係を含む LeRobot のインストール: – 2](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
-### **1.ロボットアームに関連する USB ポートを見つける**
+#### **1.ロボットアームに関連する USB ポートを見つける**
 
 個々のモーターの正しいポートを見つけるには、以下のユーティリティスクリプトを2回実行します:
 
@@ -233,7 +233,7 @@ sudo chmod 666 /dev/ttyACM0
 sudo chmod 666 /dev/ttyACM1
 ```
 
-### **2.モーターの設定（完成品はスキップ可能）**
+#### **2.モーターの設定（完成品はスキップ可能）**
 
 シャーシの各モーターを順番に挿入し、以下のスクリプトを実行します。まずロボットアームのサーボ（ID 6..1）を初期化し、その後シャーシのサーボを初期化して、その ID を（ID 9..7）に設定します。アームをすでにキャリブレーション済みの場合は、Enter を連打してどんどん上書きしてスキップできます:
 
@@ -245,7 +245,7 @@ lerobot-setup-motors \
 
 ![2.モーターの設定（完成品はスキップ可能） – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
-### 3.HuggingFace 国内ミラーの設定
+#### 3.HuggingFace 国内ミラーの設定
 
 - Ubuntu
 
@@ -280,7 +280,7 @@ source ~/.zshrc
 # https://hf-mirror.com
 ```
 
-#### ①トークンの作成
+##### ①トークンの作成
 
 https://huggingface.co/settings/tokens
 
@@ -290,7 +290,7 @@ https://huggingface.co/settings/tokens
 
 ![①トークンの作成 – 3](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
-#### ②トークンの記録
+##### ②トークンの記録
 
 例えば、私のもの:
 
@@ -298,7 +298,7 @@ https://huggingface.co/settings/tokens
 hf_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-#### ③トークンのバインド
+##### ③トークンのバインド
 
 ```Shell
 hf auth login
@@ -308,7 +308,7 @@ hf auth whoami
 
 ![③トークンのバインド – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
-#### ④データセットリポジトリの作成
+##### ④データセットリポジトリの作成
 
 **後で必要になる \<hf_username\> と \<dateset_repo_id\> にあたる Owner とデータセット名を控えておいてください**
 
@@ -318,7 +318,7 @@ hf auth whoami
 
 ![④データセットリポジトリの作成 – 3](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
-### 4. 設定の更新!!!
+#### 4. 設定の更新!!!
 
 LeKiwi の LeRobot 側とノートPC 側の設定ファイルは一致している必要があります。まず、移動ロボットアームのラズベリーパイの **IP アドレス**を見つける必要があります。これは SSH に使用する IP アドレスと同じです。また、ノートPC 側で能動アームのサーボドライバ基板の **USB ポート**と、LeKiwi 側の **サーボドライバ基板のポート**を見つける必要もあります。これらのポートは以下のスクリプトで確認できます。
 
@@ -335,7 +335,7 @@ example\lekiwi ディレクトリにある以下の4つのファイルを変更�
 
 ![4. 設定の更新!!! – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
-#### ①teleoperate.py の変更
+##### ①teleoperate.py の変更
 
 remote_ip: Raspberry Pi の IP アドレス
 
@@ -343,7 +343,7 @@ port: 能動アームをコンピューターまたは Linux に接続した際�
 
 ![①teleoperate.py の変更 – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
-#### ②record.py の変更
+##### ②record.py の変更
 
 HF_REPO_ID: [Hugging Face 上のユーザー名とデータセット名](https://juxitech.feishu.cn/docx/DXtPd0iF1oO3aGxRChBcL3LSnFh?fromScene=spaceOverview#doxcnsAUzU1e1l6XIM07OE8grYg)
 
@@ -353,7 +353,7 @@ port: 能動アームをコンピューターまたは Linux に接続した際�
 
 ![②record.py の変更 – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
-#### ③replay.py の変更
+##### ③replay.py の変更
 
 remote_ip: Raspberry Pi の IP アドレス
 
@@ -361,11 +361,11 @@ remote_ip: Raspberry Pi の IP アドレス
 
 ![③replay.py の変更 – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
-## キャリブレーション
+### キャリブレーション
 
 ここで能動アームと従動アームをキャリブレーションする必要があります。全方向ホイールのステアリングギアはキャリブレーション不要です。
 
-### 従動アームのキャリブレーション（Lekiwi ベースに搭載）
+#### 従動アームのキャリブレーション（Lekiwi ベースに搭載）
 
 コンピューターで以下のコマンドを実行して能動アームをキャリブレーションします。注意: ここに示す画像は SO101 モデルの例です。
 
@@ -386,7 +386,7 @@ lerobot-calibrate \
 
 私たちはほとんどのロボットでキャリブレーション方法を統一しています。まず、ロボットを各関節が**可動範囲の中間点**に来る位置まで動かし、ボタンを押します。次に、すべての関節を**可動範囲全体**にわたって動かします。SO101 の同じキャリブレーションプロセスのビデオは、[こちら](https://huggingface.co/docs/lerobot/en/so101#calibration-video)で参照できます。
 
-# F. 遠隔操作
+## F. 遠隔操作
 
 新しい Anaconda Prompt を開きます
 
@@ -412,11 +412,11 @@ python examples/lekiwi/teleoperate.py
 
 別のキーボードを使用する場合は、[`LeKiwiClientConfig`](https://github.com/huggingface/lerobot/blob/main/src/lerobot/robots/lekiwi/config_lekiwi.py) で各コマンドのキー設定を変更できます。
 
-## 通信トラブルシューティング
+### 通信トラブルシューティング
 
 移動ロボット SO101 の接続に問題がある場合は、以下の手順で診断・解決してください。
 
-### 1.IP アドレス設定の確認
+#### 1.IP アドレス設定の確認
 
 設定ファイルに正しいラズベリーパイ IP アドレスが設定されていることを確認します。IP アドレスを確認するには、次のコマンドを実行します（Pi のコマンドラインで）:
 
@@ -424,7 +424,7 @@ python examples/lekiwi/teleoperate.py
 hostname -I
 ```
 
-### 2.ノートPC/PC が Pi にアクセスできるか確認
+#### 2.ノートPC/PC が Pi にアクセスできるか確認
 
 ノートPCからラズベリーパイに ping してみます:
 
@@ -436,7 +436,7 @@ ping が失敗する場合:
 - Pi が起動し、同じネットワークに接続されていることを確認。
 - Pi で SSH が有効になっているか確認。
 
-### 3.SSH 接続を試す
+#### 3.SSH 接続を試す
 
 SSH で Pi にログインできない場合、接続が正しくない可能性があります。以下のコマンドを使用します:
 
@@ -455,11 +455,11 @@ sudo raspi-config
 
 - そしてナビゲート: **Interfacing Options -\> SSH** を有効にします。
 
-### 4.設定ファイルの一致!!!
+#### 4.設定ファイルの一致!!!
 
 ノートPC/PC とラズベリーパイの設定ファイルが完全に一致していることを確認してください。
 
-# G. データセットの記録
+## G. データセットの記録
 
 遠隔操作に慣れたら、LeKiwi で最初のデータセットを記録できます。
 
@@ -489,7 +489,7 @@ hf auth whoami
 python examples/lekiwi/record.py
 ```
 
-# H. データセットの可視化
+## H. データセットの可視化
 
 データセットをアップロードした場合は、[オンラインで可視化](https://huggingface.co/spaces/lerobot/visualize_dataset)できます。以下のコマンドで生成されたリポジトリ ID をコピーして貼り付けます:
 
@@ -505,7 +505,7 @@ python lerobot/scripts/visualize_dataset_html.py \
   --local-files-only 1
 ```
 
-### データセットの可視化（スキップ可能、試すことも可能）
+#### データセットの可視化（スキップ可能、試すことも可能）
 
 ```Bash
 echo ${HF_USER}/my_lekiwi_dataset
@@ -527,7 +527,7 @@ lerobot-dataset-viz \
 
 ここで、`juxi` はデータ収集時にカスタムした `repo_id` 名です。
 
-#### データ収集のコツ
+##### データ収集のコツ
 
 データ記録に慣れたら、トレーニング用のより大きなデータセットを作成できます。良い入門タスクは、異なる位置の物体を掴んでコンテナに入れることです。少なくとも 50 エピソード、各位置 10 エピソードの録画を推奨します。カメラ位置は固定し、録画全体で一貫した掴み動作を維持してください。また、操作する物体がカメラ画像に明確に見えるようにしてください。簡単な判断基準は、カメラ画像だけを見てタスクを完了できることです。
 
@@ -537,11 +537,11 @@ lerobot-dataset-viz \
 
 この重要なトピックについて詳しく知りたい場合は、優れたデータセットの構成要素についての[ブログ記事](https://huggingface.co/blog/lerobot-datasets#what-makes-a-good-dataset)をご覧ください。
 
-#### トラブルシューティング:
+##### トラブルシューティング:
 
 Linux システムで、データ収集中に左右の矢印キーと Esc キーが機能しない場合は、`$DISPLAY` 環境変数が設定されていることを確認してください。[pynput の制限](https://pynput.readthedocs.io/en/latest/limitations.html#linux) を参照してください。
 
-# I. 1ラウンドの再生
+## I. 1ラウンドの再生
 
 では、ロボットで最初のラウンドを再生してみましょう:
 
@@ -551,11 +551,11 @@ python examples/lekiwi/replay.py
 
 おめでとうございます 🎉、ロボットは自律学習タスクの準備ができました。このチュートリアルのトレーニングセクションに従ってトレーニングを開始してください: [実世界ロボット入門](https://huggingface.co/docs/lerobot/il_robots)
 
-## K. 戦略の評価
+### K. 戦略の評価
 
 remote_ip、port、HF_MODEL_ID を必ず変更してください
 
-#### evaluate.py の変更
+##### evaluate.py の変更
 
 HF_MODEL_ID="\<hf_username\>/\<model_repo_id\>" は、トレーニング後に Hugging Face にアップロードしたデータセット名（アップロードした場合）、またはトレーニング後にローカルにエクスポートしたモデルのディレクトリに変更します
 
@@ -581,7 +581,7 @@ https://github.com/Ekumen-OS/lekiwi/tree/main
 
 https://github.com/SIGRobotics-UIUC/LeKiwi-sim
 
-## ヘルプ 🙋
+### ヘルプ 🙋
 
 ハードウェアの問題については、カスタマーサービスにお問い合わせください。使用方法の問題については、Discord にご参加ください。
 

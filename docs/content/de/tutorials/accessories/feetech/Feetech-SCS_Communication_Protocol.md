@@ -8,7 +8,7 @@ description: "Der Kommunikationspegel nutzt TTL für Hochgeschwindigkeitskommuni
 > **[Im Shop kaufen](https://www.juxitech.com/de/products/feetech-scs0009-serial-bus-servo)**
 
 
-# 1 Protokollübersicht
+## 1 Protokollübersicht
 
   Der Kommunikationspegel nutzt TTL für Hochgeschwindigkeitskommunikation und RS485 mit starker Störfestigkeit; die Kommunikation erfolgt asynchron-duplex, Senden und Empfangen werden asynchron verarbeitet.
 
@@ -20,7 +20,7 @@ Die Kommunikation erfolgt seriell-asynchron: Ein Rahmen besteht aus 1 Startbit, 
 
   Wenn einige Parameter der Speichertabelle zwei Bytes verwenden, hängt die Byte-Reihenfolge vom Servomodell ab: Potentiometer-Servos im Big-Endian-Format (hohes Byte zuerst, niederes Byte danach), Magnetencoder-Servos im Little-Endian-Format (niederes Byte zuerst, hohes Byte danach). Da sich die Funktionen der Servos leicht unterscheiden, beachten Sie bei der Steuerung die Speichertabelle des jeweiligen Modells.
 
-# 2 Befehlsrahmen
+## 2 Befehlsrahmen
 
 - Kopf: Zweimal hintereinander 0xFF empfangen bedeutet, dass ein Datenpaket angekommen ist.
 ID-Nummer: Jeder Servo hat eine ID-Nummer. Bereich 0–253, hexadezimal 0x00–0xFD.
@@ -36,13 +36,13 @@ ID-Nummer: Jeder Servo hat eine ID-Nummer. Bereich 0–253, hexadezimal 0x00–0
 - Prüfsumme: Berechnung der Prüfsumme (Check Sum):
 Check Sum = ~ (ID + Length + Instruction + Parameter1 + … Parameter N) Übersteigt die Summe in Klammern 255, wird das niederwertigste Byte genommen. „~“ bedeutet Bit-Invertierung.
 
-# 3 Antwortrahmen
+## 3 Antwortrahmen
 
 Der Antwortrahmen enthält den aktuellen Servo-Status ERROR. Ist der Servo nicht in Ordnung, wird dies über dieses Byte sichtbar (Bedeutung der Zustände siehe Speichertabelle im Handbuch). Ist ERROR 0, liegt kein Fehler vor.
 
-# 4 Befehlstypen
+## 4 Befehlstypen
 
-## 4.1 Statusabfrage PING
+### 4.1 Statusabfrage PING
 
 - Funktion: Arbeitsstatus des Servos lesen
 
@@ -76,7 +76,7 @@ Status: 00
 Prüfsumme: FC
 ```
 
-## 4.2 Lesebefehl READ DATA
+### 4.2 Lesebefehl READ DATA
 
 - Funktion: Daten aus der Speichertabelle des Servos lesen
 
@@ -114,7 +114,7 @@ Prüfsumme: DD
 
 Die gelesenen zwei Bytes (Little-Endian): niederes Byte L 0x18, hohes Byte H 0x05. Zusammen als 16-Bit-Wert 0X0518, dezimal beträgt die aktuelle Position 1304.
 
-## 4.3 Schreibbefehl WRITE DATA
+### 4.3 Schreibbefehl WRITE DATA
 
 - Funktion: Daten in die Speichertabelle des Servos schreiben
 
@@ -181,7 +181,7 @@ Prüfsumme: FC
 
 Der zurückgegebene Status 0 bedeutet: Der Servo hat den Befehl fehlerfrei empfangen und mit der Ausführung begonnen. Da die gesendete Paket-ID keine Broadcast-ID (0xFE) ist, sendet der Servo nach dem Empfang ein Statuspaket zurück.
 
-## 4.4 Asynchroner Schreibbefehl REG WRITE
+### 4.4 Asynchroner Schreibbefehl REG WRITE
 
 REG WRITE ähnelt WRITE DATA, nur der Ausführungszeitpunkt ist anders. Beim Empfang eines REG-WRITE-Rahmens werden die Daten im Puffer gespeichert und das Asynchron-Schreib-Flag-Register auf 1 gesetzt. Mit dem ACTION-Befehl wird der gespeicherte Befehl schließlich ausgeführt.
 
@@ -222,7 +222,7 @@ ID10: Asynchroner Schreibrahmen: FF FF 0A 09 04 2A 00 08 00 00 E8 03 CB
 ID10: Antwortrahmen: FF FF 0A 02 00 F3
 ```
 
-## 4.5 Asynchronen Schreibbefehl ausführen ACTION
+### 4.5 Asynchronen Schreibbefehl ausführen ACTION
 
 - Funktion: REG-WRITE-Befehl auslösen
 
@@ -245,7 +245,7 @@ Befehlsrahmen: FF FF FE 02 05 FA
 Antwortrahmen: keine
 ```
 
-## 4.6 Synchroner Schreibbefehl SYNC WRITE
+### 4.6 Synchroner Schreibbefehl SYNC WRITE
 
 - Funktion: mehrere Servos gleichzeitig steuern.
 
@@ -298,7 +298,7 @@ Parameter:
 Prüfsumme: 58
 ```
 
-## 4.7 Synchroner Lesebefehl SYNC READ
+### 4.7 Synchroner Lesebefehl SYNC READ
 
 - Funktion: mehrere Servos gleichzeitig abfragen.
 
@@ -345,7 +345,7 @@ Servo ID02: FF FF 02 0A 00 FF 07 00 00 00 00 77 23 53
 
 Der Antwortrahmen lässt sich gemäß Lesebefehl dekodieren
 
-## 4.8 Status-Reset-Befehl RESET
+### 4.8 Status-Reset-Befehl RESET
 
 - Funktion: Servo-Status zurücksetzen (Servo-Umdrehungen zurücksetzen)
 
@@ -362,7 +362,7 @@ Befehlsrahmen: FF FF 01 02 0A F2 (hexadezimal senden)
 Antwortrahmen: FF FF 01 02 00 FC (hexadezimale Anzeige)
 ```
 
-## 4.9 Positions-Kalibrierungsbefehl
+### 4.9 Positions-Kalibrierungsbefehl
 
 - Funktion: aktuelle Position auf den festgelegten Wert neu kalibrieren
 
@@ -404,7 +404,7 @@ Status: 00
 Prüfsumme: FC
 ```
 
-## 4.10 Parameter-Wiederherstellungsbefehl
+### 4.10 Parameter-Wiederherstellungsbefehl
 
 - Funktion: alle Servo-Parameter außer der ID-Nummer wiederherstellen
 
@@ -423,7 +423,7 @@ Antwortrahmen: FF FF 01 02 00 FC (hexadezimale Anzeige)
 
 Hinweis: Vor dem Wiederherstellen der Parameter die EPROM-Parameter entsperren
 
-## 4.11 Parameter-Backup-Befehl
+### 4.11 Parameter-Backup-Befehl
 
 - Funktion: Parameter sichern (für die Parameter-Wiederherstellung)
 
@@ -442,7 +442,7 @@ Antwortrahmen: FF FF 01 02 00 FC (hexadezimale Anzeige)
 
 Hinweis: Vor dem Sichern der Parameter die EPROM-Parameter entsperren
 
-## 4.12 Neustart-Befehl
+### 4.12 Neustart-Befehl
 
 - Funktion: Neustart-Befehl (Servo neu starten)
 

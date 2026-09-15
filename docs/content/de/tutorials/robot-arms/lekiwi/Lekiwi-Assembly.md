@@ -12,7 +12,7 @@ description: "In Fusion360 Online-CAD können die genauen Bauteilpositionen visu
 [URDF-Datei](https://gitcode.com/gh_mirrors/le/LeKiwi/tree/main)
 Online-URDF-Vorschau https://urdf.d-robotics.cc/
 
-# 1. Radmodul montieren (3 pro Roboter)
+## 1. Radmodul montieren (3 pro Roboter)
 
 1. Antriebsmotor mit 12 **M2x6**-Selbstschneidern am Motorbügel befestigen (im Servogehäuse enthalten).
 
@@ -68,7 +68,7 @@ Nachdem alle drei Räder am Bodenblech montiert sind:
 
 
 
-# 2. Bodenblech-Baugruppe
+## 2. Bodenblech-Baugruppe
 
 1. M3-Muttern in die Löcher von Servo-Treiberplatine und Batteriehalterung einsetzen. Beide mit 4 M3x12-Maschinenschrauben am Bodenblech befestigen.
 
@@ -115,7 +115,7 @@ Kabel wie unten abgebildet anschließen:
 
 
 
-# 3. Deckelplatten-Baugruppe
+## 3. Deckelplatten-Baugruppe
 
 1. Raspberry Pi 5 in die Gehäuseunterschale legen und den Deckel aufsetzen.
 2. Raspberry Pi mit zwei M3x12-Maschinenschrauben und zwei M3-Sicherungsmuttern an der oberen Bodenplatte befestigen und den SO-101-Roboterarm-Sockel mit vier M4x25-Maschinenschrauben und vier M4-Sicherungsmuttern montieren. Es kann unser verbesserter SO-101-Sockel oder der originale verwendet werden – die Bodenplatte hat Bohrungen für beide.
@@ -124,7 +124,7 @@ Kabel wie unten abgebildet anschließen:
 
 
 
-# 4.
+## 4.
 
 1. USB-C-auf-USB-A-Kabel der Servo-Treiberplatine, 5-V-USB-C-Stromkabel und SO0-101-Servokabel durch die Löcher der oberen Bodenplatte führen.
 
@@ -140,20 +140,20 @@ Kabel wie unten abgebildet anschließen:
 
 3. Deckelplatte und Bodenplatte mit 6 M3*50-Messingabstandshaltern und 6 M3*-Maschinenschrauben verbinden
 
-# 5. Kamera montieren
+## 5. Kamera montieren
 
 *Hinweis: Unser Bügel ist speziell für die gewählte Kamera konstruiert. Bei anderen Kameramodulen sind ggf. Anpassungen nötig.*
 
-## (Option 1) Frontkamera montieren
+### (Option 1) Frontkamera montieren
 
 Frontkamerabügel mit 3 M3*12-Maschinenschrauben und drei M3-Muttern am Bodenblech montieren
 Kameramodul mit 4 M2*5*5-Abstandsschrauben befestigen
 
-## (Option 2) Armkamera montieren
+### (Option 2) Armkamera montieren
 
 Kameramodul mit 4 M2*5*5-Abstandsschrauben befestigen
 
-# 6. Strom einschalten
+## 6. Strom einschalten
 
 Gleichstrom-Hohlstecker-Adapter in die Servo-Treiberplatine stecken und den 5-V-USB-C-Stecker in den Raspberry Pi 5 – damit ist die Elektronik versorgt. Die USB-Datenkabel von Servo-Treiberplatine und Kamera können direkt in den Raspberry Pi gesteckt werden.
 

@@ -14,7 +14,7 @@ description: "SO-ARM101 機械臂組裝教程：舵機 ID 設置、舵盤安裝�
 
 舵機ID設置和舵機角度校準及組裝要提前做好，可參考[官方組裝教程](https://huggingface.co/docs/lerobot/so101)
 
-# 第一步：設置舵機ID，安裝舵盤（除5號舵機）
+## 第一步：設置舵機ID，安裝舵盤（除5號舵機）
 
 ![image – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
 
@@ -28,7 +28,7 @@ description: "SO-ARM101 機械臂組裝教程：舵機 ID 設置、舵盤安裝�
 
 下面的視頻展示了設置電機 ID 的步驟順序。
 
-## Windows系統
+### Windows系統
 
 飞特舵机上位机.zip
 
@@ -36,7 +36,7 @@ description: "SO-ARM101 機械臂組裝教程：舵機 ID 設置、舵盤安裝�
 
 机械臂舵机设置ID-Windows系统.mp4
 
-## Linux/ubuntu系統
+### Linux/ubuntu系統
 
 如需飛特舵機上位機可參考https://gitee.com/ftservo/FTServo_Linux
 
@@ -88,7 +88,7 @@ lerobot-setup-motors \
 
 机械臂舵机设置ID-Linux系统.mp4
 
-# 第二步：組裝
+## 第二步：組裝
 
 從動臂的組裝步驟與主動臂基本相同。唯一的區別在於第12步之後，末端執行器（夾爪和手柄）的安裝方式有所不同。
 

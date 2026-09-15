@@ -8,7 +8,7 @@ description: "Tutorial della scheda audio USB senza driver JUXI: software di tes
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction)**
 
 
-# Software di test visuale (Windows)
+## Software di test visuale (Windows)
 
 [audio_tools.7z](https://juxitech.feishu.cn/wiki/Wuc3wAppNi5elfkSI6VccrNDnfE)
 
@@ -43,11 +43,11 @@ speaker-test -c 2 -D plughw:X,0
 
 - Riavviare il servizio audio: `sudo systemctl restart alsa` (in alcuni ambienti serve il riavvio del sistema: `sudo reboot`)
 
-# Serie Jetson e sistema Ubuntu e Raspberry Pi
+## Serie Jetson e sistema Ubuntu e Raspberry Pi
 
-## Debug da riga di comando
+### Debug da riga di comando
 
-### 1. Collegare la scheda audio USB
+#### 1. Collegare la scheda audio USB
 
 1. Prima di inserire la scheda audio USB, visualizzare i dispositivi USB con `lsusb`:
 
@@ -65,7 +65,7 @@ speaker-test -c 2 -D plughw:X,0
 
 ![1. Collegare la scheda audio USB – 4](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
-### 2. Usare la scheda audio USB
+#### 2. Usare la scheda audio USB
 
 Se `arecord -l` mostra ad esempio UACDemoV1.0, quella è la nostra scheda audio. Se è card 0; device 0, nel comando si usa plughw:0,0 per specificare quel dispositivo di registrazione:
 
@@ -110,7 +110,7 @@ Spiegazione dei parametri:
 
 - -d 5: imposta la durata di registrazione in secondi.
 
-## Visualizzazione con PulseAudio
+### Visualizzazione con PulseAudio
 
 ![Visualizzazione con PulseAudio – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/7.png)
 
@@ -134,13 +134,13 @@ Verificare PulseAudio da [riga di comando](https://so.csdn.net/so/search?q=%E5%9
 >
 > RUNNING indica che il microfono è in uso
 
-## Chiamare la scheda audio USB senza driver da Python
+### Chiamare la scheda audio USB senza driver da Python
 
 Cercare esempi di codice, ad esempio «[Python调用USB免驱声卡](https://blog.csdn.net/weixin_44463519/article/details/157463731?spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EYuanLiJiHua%7ECtr-3-157463731-blog-105694458.235%5Ev43%5Epc_blog_bottom_relevance_base9&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EYuanLiJiHua%7ECtr-3-157463731-blog-105694458.235%5Ev43%5Epc_blog_bottom_relevance_base9&utm_relevant_index=4)»
 
-## Riepilogo problemi
+### Riepilogo problemi
 
-### Jetson
+#### Jetson
 
 1. Dispositivo occupato
 
@@ -166,7 +166,7 @@ Terminare il processo `kill -9 PID`, dove PID è quello apparso dopo l'inserimen
 
 Poi registrare e riprodurre di nuovo
 
-### Raspberry Pi
+#### Raspberry Pi
 
 1. Molto rumore
 
@@ -194,15 +194,15 @@ sudo chmod 664 /var/lib/alsa/asound.state
 sudo alsactl store
 ```
 
-### Macchina virtuale Ubuntu
+#### Macchina virtuale Ubuntu
 
 1. Rumore durante la registrazione
 
 Soluzione: cambiare la compatibilità del controller USB a 3.0 o 3.1
 
-# RDK x3&x5
+## RDK x3&x5
 
-## Verificare il numero di dispositivo
+### Verificare il numero di dispositivo
 
 Verificare che la scheda audio esista e quale sia il numero di dispositivo.
 
@@ -232,7 +232,7 @@ by-path/   controlC0  pcmC0D0c   pcmC0D0p   timer
 
 Da queste verifiche si conferma: la scheda audio 0 è quella integrata; i dispositivi esistono e il numero è `0-0`. I dispositivi effettivamente operati sono `pcmC0D0p` e `pcmC0D0c`.
 
-## Registrare 5 secondi di audio per testare
+### Registrare 5 secondi di audio per testare
 
 `arecord -D plughw:0,0 -f S16_LE -r 16000 -d 5 -t wav test.wav`
 
@@ -271,17 +271,17 @@ Spiegazione dei parametri:
 
 - -d 5: imposta la durata di registrazione in secondi.
 
-## Domande frequenti
+### Domande frequenti
 
-### Come distinguere la scheda audio USB da quella integrata su una board RDK?
+#### Come distinguere la scheda audio USB da quella integrata su una board RDK?
 
-### Come far coesistere la sub-scheda audio della serie RDK X3 con la scheda audio USB e usarle contemporaneamente?
+#### Come far coesistere la sub-scheda audio della serie RDK X3 con la scheda audio USB e usarle contemporaneamente?
 
-### Come abilitare le funzioni audio del RDKS100 tramite interfaccia grafica?
+#### Come abilitare le funzioni audio del RDKS100 tramite interfaccia grafica?
 
 Vedere [Elaborazione e applicazione multimediale RDK](https://developer.d-robotics.cc/rdk_doc/FAQ/multimedia#usb-%E5%A3%B0%E5%8D%A1%E5%92%8C%E6%9D%BF%E8%BD%BD%E5%A3%B0%E5%8D%A1%E5%A6%82%E4%BD%95%E5%8C%BA%E5%88%86%E4%BD%BF%E7%94%A8)
 
-# Verificare il driver audio di base
+## Verificare il driver audio di base
 
 Che la scheda audio USB senza driver funzioni dipende **essenzialmente dal kernel**
 
@@ -315,7 +315,7 @@ CONFIG_SND_USB_CAIAQ=y
 sudo modprobe snd_usb_audio
 ```
 
-#### Passo 2: installare gli strumenti audio di base (assenti di default nella versione ridotta)
+##### Passo 2: installare gli strumenti audio di base (assenti di default nella versione ridotta)
 
 I sistemi ridotti di solito non hanno `alsa-utils`; vanno installati manualmente:
 
@@ -326,7 +326,7 @@ sudo apt update && sudo apt install -y alsa-utils usbutils
 # Senza rete: scaricare il pacchetto offline di alsa-utils e installarlo con dpkg -i
 ```
 
-#### Passo 3: verificare il riconoscimento e il funzionamento della scheda audio USB
+##### Passo 3: verificare il riconoscimento e il funzionamento della scheda audio USB
 
 1. Inserire la scheda audio USB e verificare il riconoscimento:
 
@@ -347,7 +347,7 @@ Se nell'output compare una voce `card X` relativa a `USB Audio`, il riconoscimen
 speaker-test -c 2 -D plughw:X,0
 ```
 
-#### Passo 4: (facoltativo) installare un servizio audio (per desktop / riproduzione in background)
+##### Passo 4: (facoltativo) installare un servizio audio (per desktop / riproduzione in background)
 
 Per riprodurre in background o con ambiente desktop, nelle versioni ridotte serve un servizio audio aggiuntivo:
 
@@ -359,7 +359,7 @@ sudo apt install -y pulseaudio
 sudo apt install -y pipewire pipewire-alsa
 ```
 
-### Problemi comuni dei sistemi ridotti e soluzioni
+#### Problemi comuni dei sistemi ridotti e soluzioni
 
 **1. Permessi insufficienti: l'utente normale non può accedere alla scheda audio**
 
@@ -393,7 +393,7 @@ sudo reboot
 
 ---
 
-## Repository ufficiale
+### Repository ufficiale
 
 Repository open source della scheda audio USB senza driver JUXI: [GitHub](https://github.com/Juxi-Technology/Driver-Free-Sound-Card)
 

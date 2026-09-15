@@ -8,11 +8,11 @@ description: "Built-in high-precision IMU attitude sensor72MHz high-performance 
 > **[Buy in Store](https://www.juxitech.com/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
 
 
-# Introduction to IMU Module
+## Introduction to IMU Module
 
 Built-in high-precision IMU attitude sensor **72MHz high-performance 32-bit processor**, capable of real-time attitude calculation and dynamic compensation, with a data update frequency of up to 100Hz, combining the advantages of rapid response and stable output. It supports both IIC and serial communication modes, is compatible with single-chip microcomputers and Linux main controllers, and can be seamlessly integrated with the ROS system, widely applicable to high-performance application scenarios such as robot motion control, UAV attitude stabilization, and intelligent navigation and positioning.
 
-# 1. Version Overview
+## 1. Version Overview
 
 | Performance Comparison |                                                     |                                                              |                                                              |
 | ---------------------- | --------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -28,7 +28,7 @@ Built-in high-precision IMU attitude sensor **72MHz high-performance 32-bit proc
 | Communication method   | IIC / serial                                        |                                                              |                                                              |
 | Positioning / Application scenarios | Designed for cost-sensitive applications, meeting the standard for high-dynamic-response applications | Built on the 6-axis hardware architecture with an integrated 3-axis magnetometer module, tuned with the AHRS attitude data fusion algorithm, greatly enhancing the stability and measurement accuracy of data output | Adds a barometer on top of the 9-axis sensing architecture, capable of outputting precise altitude information, suitable for application scenarios with higher requirements for 3D spatial attitude and position perception |
 
-## Pin Function Description
+### Pin Function Description
 
 | SDA  | I2C serial data line   |
 | ---- | ---------------------- |
@@ -40,7 +40,7 @@ Built-in high-precision IMU attitude sensor **72MHz high-performance 32-bit proc
 | GND  | Ground                 |
 | 5V   | 5V                     |
 
-# 2. Product Parameters
+## 2. Product Parameters
 
 | Product Parameters |                                                              |
 | ------------------ | ------------------------------------------------------------ |
@@ -60,7 +60,7 @@ Built-in high-precision IMU attitude sensor **72MHz high-performance 32-bit proc
 | Product weight     | 3.8g                                                         |
 | ROS support        | ROS1/ROS2                                                    |
 
-# 3. Sensor Performance Parameters
+## 3. Sensor Performance Parameters
 
 IMU Data Performance Parameters
 
@@ -89,6 +89,6 @@ Barometer Performance Parameters
 | RMS noise        | Standard mode | 1Pa-RMS       |
 | Relative accuracy |              | ±0.12hPa      |
 
-# 4. Dimension Parameters
+## 4. Dimension Parameters
 
 ![Pin Function Description – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjA3NmQ5NzIzMzdkYWZlMzZkYzcwOGIyOGRmMmYxYWJfNTAxNTBiYzRjZTk4MzJiY2YzMWZhMWY4NDI5ZTFjYTZfSUQ6NzYzODkyMjc2MDI5MDcxNjYwMl8xNzgwMzE3OTcyOjE3ODA0MDQzNzJfVjM)

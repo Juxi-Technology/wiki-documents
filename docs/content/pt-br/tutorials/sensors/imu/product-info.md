@@ -8,11 +8,11 @@ description: "Sensor de atitude IMU de alta precisão integrado, processador de 
 > **[Comprar na Loja](https://www.juxitech.com/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
 
 
-# Introdução ao Módulo IMU
+## Introdução ao Módulo IMU
 
 Sensor de atitude IMU de alta precisão integrado com **processador de 32 bits de alto desempenho de 72MHz**, capaz de realizar cálculo de atitude em tempo real e compensação dinâmica, com frequência de atualização de dados de até 100Hz, combinando as vantagens de resposta rápida e saída estável. Suporta os modos de comunicação IIC e serial, é compatível com microcontroladores e controladores principais Linux, e pode ser integrado perfeitamente ao sistema ROS, sendo amplamente aplicável a cenários de alto desempenho, como controle de movimento de robôs, estabilização de atitude de drones e navegação e posicionamento inteligentes.
 
-# 1. Visão Geral das Versões
+## 1. Visão Geral das Versões
 
 | Comparação de Desempenho |                                                     |                                                              |                                                              |
 | ------------------------ | --------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -28,7 +28,7 @@ Sensor de atitude IMU de alta precisão integrado com **processador de 32 bits d
 | Método de comunicação    | IIC / serial                                        |                                                              |                                                              |
 | Posicionamento / Cenários de aplicação | Projetado para aplicações sensíveis a custo, atendendo ao padrão de aplicações de alta resposta dinâmica | Construído sobre a arquitetura de hardware de 6 eixos com um módulo magnetômetro de 3 eixos integrado, ajustado com o algoritmo de fusão de dados de atitude AHRS, aumentando consideravelmente a estabilidade e a precisão de medição da saída de dados | Adiciona um barômetro à arquitetura de detecção de 9 eixos, capaz de fornecer informações precisas de altitude, adequado para cenários de aplicação com requisitos mais elevados de percepção de atitude espacial 3D e posição |
 
-## Descrição das Funções dos Pinos
+### Descrição das Funções dos Pinos
 
 | SDA  | Linha de dados serial I2C   |
 | ---- | --------------------------- |
@@ -40,7 +40,7 @@ Sensor de atitude IMU de alta precisão integrado com **processador de 32 bits d
 | GND  | Terra                        |
 | 5V   | 5V                           |
 
-# 2. Parâmetros do Produto
+## 2. Parâmetros do Produto
 
 | Parâmetros do Produto |                                                              |
 | --------------------- | ------------------------------------------------------------ |
@@ -60,7 +60,7 @@ Sensor de atitude IMU de alta precisão integrado com **processador de 32 bits d
 | Peso do produto        | 3.8g                                                         |
 | Suporte a ROS          | ROS1/ROS2                                                    |
 
-# 3. Parâmetros de Desempenho do Sensor
+## 3. Parâmetros de Desempenho do Sensor
 
 Parâmetros de desempenho dos dados do IMU
 
@@ -89,6 +89,6 @@ Parâmetros de desempenho do barômetro
 | Ruído RMS        | Modo padrão  | 1Pa-RMS      |
 | Precisão relativa |             | ±0.12hPa     |
 
-# 4. Parâmetros de Dimensão
+## 4. Parâmetros de Dimensão
 
 ![Pin Function Description – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjA3NmQ5NzIzMzdkYWZlMzZkYzcwOGIyOGRmMmYxYWJfNTAxNTBiYzRjZTk4MzJiY2YzMWZhMWY4NDI5ZTFjYTZfSUQ6NzYzODkyMjc2MDI5MDcxNjYwMl8xNzgwMzE3OTcyOjE3ODA0MDQzNzJfVjM)

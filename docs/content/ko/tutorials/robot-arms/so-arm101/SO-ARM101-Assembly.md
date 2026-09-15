@@ -14,7 +14,7 @@ description: "Pro 버전: 리더 암은 5V6A, 팔로워 암은 12V5A 전원 어�
 
 서보 ID 설정·서보 각도 캘리브레이션·조립은 사전에 완료해야 하며, [공식 조립 튜토리얼](https://huggingface.co/docs/lerobot/so101)을 참고할 수 있습니다.
 
-# 1단계: 서보 ID 설정 및 서보 혼 장착(5번 서보 제외)
+## 1단계: 서보 ID 설정 및 서보 혼 장착(5번 서보 제외)
 
 ![image – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
 
@@ -28,7 +28,7 @@ description: "Pro 버전: 리더 암은 5V6A, 팔로워 암은 12V5A 전원 어�
 
 다음 영상은 모터 ID를 설정하는 순서를 보여줍니다.
 
-## Windows 시스템
+### Windows 시스템
 
 飞特舵机上位机.zip
 
@@ -36,7 +36,7 @@ Feite 서보 컨트롤러를 사용하여 서보 ID를 설정하고 미드포인
 
 机械臂舵机设置ID-Windows系统.mp4
 
-## Linux/Ubuntu 시스템
+### Linux/Ubuntu 시스템
 
 FTServo 상위 프로그램은 https://gitee.com/ftservo/FTServo_Linux 를 참고하세요.
 
@@ -88,7 +88,7 @@ lerobot-setup-motors \
 
 机械臂舵机设置ID-Linux系统.mp4
 
-# 2단계: 조립
+## 2단계: 조립
 
 - 팔로워 암의 조립 절차는 액티브 암과 기본적으로 동일합니다. 유일한 차이는 12단계 이후 엔드이펙터(gripper와 핸들)의 설치 방식입니다.
 

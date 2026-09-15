@@ -8,27 +8,27 @@ description: "O servo utiliza o Protocolo de Comunicação Personalizado FT-SCS,
 > **[Comprar na loja](https://www.juxitech.com/pt/products/feetech-scs0009-serial-bus-servo)**
 
 
-# 1 Protocolo de comunicação do servo
+## 1 Protocolo de comunicação do servo
 
 O servo utiliza o Protocolo de Comunicação Personalizado FT-SCS, com a configuração padrão da porta serial definida na fábrica. A taxa de transmissão padrão do servo STS é 1M, usando comunicação de barramento único TTL, com 8 bits de dados, sem paridade e 1 bit de parada. A faixa configurável da taxa de transmissão é 38400~1Mbps, e o endereço de comunicação padrão (número de estação) é 1. [Protocolo de Comunicação Personalizado FT-SCS](https://juxitech.feishu.cn/wiki/MTPLw8xCniTidGkm3amc27FXnKg) (Protocolo de comunicação SCS do servo) 
 
-# 2 Definição da tabela de memória do servo
+## 2 Definição da tabela de memória do servo
 
 Se o endereço de função usar dados de dois bytes, o byte de ordem baixa fica no endereço frontal e o byte de ordem alta fica no endereço posterior 
 
-## 2.1 Informações de versão
+### 2.1 Informações de versão
 
-## 2.2 Configuração EPROM
+### 2.2 Configuração EPROM
 
-## 2.3 Controle SRAM
+### 2.3 Controle SRAM
 
-## 2.4 Feedback SRAM
+### 2.4 Feedback SRAM
 
-## 2.5 Parâmetros de fábrica
+### 2.5 Parâmetros de fábrica
 
-# 3 Explicação dos bytes especiais
+## 3 Explicação dos bytes especiais
 
-## 3.1 Fase do servo
+### 3.1 Fase do servo
 
 - Peso do dígito/bit: Descrição
 
@@ -50,7 +50,7 @@ Se o endereço de função usar dados de dois bytes, o byte de ordem baixa fica 
 
 Se vários bits forem definidos simultaneamente, o valor de fase do servo é a soma dos valores de cada bit. Por exemplo: se o valor de fase original for 0 e o servo operar em sentido reverso, o valor de fase é 128 + 1 = 129; 
 
-## 3.2 Estado do servo
+### 3.2 Estado do servo
 
 Estado do servo: 0 indica normal, 1 indica anormal
 
@@ -74,7 +74,7 @@ Estado do servo: 0 indica normal, 1 indica anormal
 
 Se houver vários estados simultaneamente, o valor de estado do servo é a soma dos valores dos bits individuais. Por exemplo, se houver sobretensão/subtensão e superaquecimento do servo, o valor de estado do servo é 4 + 1 = 5; 
 
-## 3.3 Condições de desenergização
+### 3.3 Condições de desenergização
 
 Condição de desenergização: 0 indica desativada, 1 indica ativada
 
@@ -98,7 +98,7 @@ Condição de desenergização: 0 indica desativada, 1 indica ativada
 
 Se vários bits forem definidos simultaneamente, o valor da condição de desenergização do servo é a soma dos valores de cada bit. Por exemplo, se tanto a proteção de tensão quanto a proteção contra superaquecimento estiverem ativadas, o valor da condição de desenergização é 4 + 1 = 5; 
 
-## 3.4 Condições de alarme do LED
+### 3.4 Condições de alarme do LED
 
 Condição de alarme do LED: 0 indica desativada, 1 indica ativada
 

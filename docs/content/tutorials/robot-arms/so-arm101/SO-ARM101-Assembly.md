@@ -14,7 +14,7 @@ description: "The Pro version's active arm uses a 5V6A power adapter, while the 
 
 Servo ID setting, servo angle calibration, and assembly should be completed in advance, and you can refer to [ the official assembly tutorial ](https://huggingface.co/docs/lerobot/so101)
 
-# Step 1: Set the servo ID and install the servo horn (excluding servo No. 5) 
+## Step 1: Set the servo ID and install the servo horn (excluding servo No. 5) 
 
 ![image – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
 
@@ -28,7 +28,7 @@ If you plan to reuse the motors of other robots, you may also need to perform th
 
 The following video shows the sequential steps for setting the motor ID. 
 
-## Windows System
+### Windows System
 
 飞特舵机上位机.zip
 
@@ -36,7 +36,7 @@ Use the Feite servo controller to set the servo ID and calibrate the midpoint,  
 
 机械臂舵机设置ID-Windows系统.mp4
 
-## Linux/Ubuntu System
+### Linux/Ubuntu System
 
 For the FTServo Host Computer, please refer to  https://gitee.com/ftservo/FTServo_Linux
 
@@ -88,7 +88,7 @@ lerobot-setup-motors \
 
 机械臂舵机设置ID-Linux系统.mp4
 
-# Step 2: Assembly
+## Step 2: Assembly
 
 - The assembly steps of the follower arm are basically the same as those of the active arm. The only difference is that after Step 12, the installation method of the end effector (gripper and handle) is different. 
 

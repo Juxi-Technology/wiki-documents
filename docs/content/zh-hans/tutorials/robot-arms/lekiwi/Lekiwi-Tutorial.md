@@ -26,7 +26,7 @@ lerobot-Lekiwi.zip
 
 ![image – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
-## 主要特点
+### 主要特点
 
 1. **开源且低成本**： [Lekiwi](https://github.com/SIGRobotics-UIUC/LeKiwi) 提供了一种开源、低成本的机器人小车解决方案。
 
@@ -48,9 +48,9 @@ JUXI 仅对硬件本身的质量负责。教程严格按照官方文档更新。
 
 - 树莓派控制器和摄像头 - 这些需要通过订单界面单独购买。
 
-## 物料清单 (BOM)
+### 物料清单 (BOM)
 
-## 初始系统环境
+### 初始系统环境
 
 **对于 Ubuntu x86:**
 
@@ -74,17 +74,17 @@ JUXI 仅对硬件本身的质量负责。教程严格按照官方文档更新。
 
 - 树莓派5 4G~16G
 
-### 设置 SSH
+#### 设置 SSH
 
 设置好树莓派后，您应该启用并配置[SSH](https://www.raspberrypi.com/news/coding-on-raspberry-pi-remotely-with-visual-studio-code/)（安全外壳协议），这样您就可以从笔记本电脑登录到树莓派，而无需在树莓派上连接屏幕、键盘和鼠标。您可以[在这里](https://www.raspberrypi.com/documentation/computers/remote-access.html#ssh)找到一个很棒的教程。您可以通过命令提示符 (cmd) 登录到树莓派，或者如果您使用 VSCode，则可以使用[此](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)扩展程序。
 
-## 3D打印指南
+### 3D打印指南
 
-### 部件
+#### 部件
 
 我们提供以下3D打印部件的可打印STL文件。这些部件可以使用通用PLA耗材在消费级FDM打印机上打印。我们在Bambu Lab P1S打印机上进行了测试。对于所有组件，我们只需加载到bambuslicer中，自动旋转和排列，启用任何推荐的支撑，然后打印。
 
-### 打印参数
+#### 打印参数
 
 提供的STL文件可以在许多FDM打印机上直接打印。以下是测试和建议的设置，其他设置也可能有效。
 
@@ -98,11 +98,11 @@ JUXI 仅对硬件本身的质量负责。教程严格按照官方文档更新。
 
 - 如果需要，将G代码（切片文件）上传到打印机并打印
 
-# 安装 LeRobot
+## 安装 LeRobot
 
 在您的 Raspberry Pi 上：
 
-### 1. [安装 Miniconda](https://docs.anaconda.com/miniconda/install/#quick-command-line-install):
+#### 1. [安装 Miniconda](https://docs.anaconda.com/miniconda/install/#quick-command-line-install):
 
 ```Python
 mkdir -p ~/miniconda3
@@ -111,11 +111,11 @@ bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 rm ~/miniconda3/miniconda.sh
 ```
 
-### 2. 重启 Shell
+#### 2. 重启 Shell
 
 在您的 Shell 中复制粘贴以下命令：`source ~/.bashrc` 或对于 Mac 用户：`source ~/.bash_profile` 或 `source ~/.zshrc`（如果您使用的是 zshell）
 
-### 3. 为 LeRobot 创建并激活一个新的 Conda 环境
+#### 3. 为 LeRobot 创建并激活一个新的 Conda 环境
 
 ```Python
 conda create -y -n lerobot python=3.10
@@ -127,13 +127,13 @@ conda create -y -n lerobot python=3.10
 conda activate lerobot
 ```
 
-### 4. 克隆 LeRobot：
+#### 4. 克隆 LeRobot：
 
 ```Bash
 git clone https://github.com/huggingface/lerobot.git ~/lerobot
 ```
 
-### 5. 在您的环境中安装 ffmpeg：
+#### 5. 在您的环境中安装 ffmpeg：
 
 使用 `miniconda` 时，在您的环境中安装 `ffmpeg`：
 
@@ -153,14 +153,14 @@ conda install ffmpeg -c conda-forge
 
 ![5. 在您的环境中安装 ffmpeg： – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
-### 6. 安装带有 feetech 电机依赖的 LeRobot：
+#### 6. 安装带有 feetech 电机依赖的 LeRobot：
 
 ```Bash
 cd ~/lerobot && pip install --no-binary=av -e ".[feetech]"
 pip install -e ".[lekiwi]"
 ```
 
-### 7. 设置连接时间
+#### 7. 设置连接时间
 
 `lerobot\src\lerobot\robots\lekiwi`目录下找到config_lekiwi.py
 
@@ -168,7 +168,7 @@ connection_time_s: int = 7200 # 也就是2小时
 
 ![7. 设置连接时间 – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
-## C. 在笔记本电脑上安装 LeRobot
+### C. 在笔记本电脑上安装 LeRobot
 
 如果您已经在笔记本电脑上安装了 LeRobot，可以跳过此步骤，否则请按照我们在 Raspberry Pi 上的**相同步骤**进行操作。
 
@@ -178,15 +178,15 @@ connection_time_s: int = 7200 # 也就是2小时
 
 在您的电脑上：
 
-### 1. [安装 Miniconda](https://docs.anaconda.com/miniconda/install/#quick-command-line-install):
+#### 1. [安装 Miniconda](https://docs.anaconda.com/miniconda/install/#quick-command-line-install):
 
-### 2. 重启 Shell
+#### 2. 重启 Shell
 
 在您的 Shell 中复制粘贴以下命令：`source ~/.bashrc` 或对于 Mac 用户：`source ~/.bash_profile` 或 `source ~/.zshrc`（如果您使用的是 zshell）
 
 ![2. 重启 Shell – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
-### 3. 为 LeRobot 创建并激活一个新的 Conda 环境
+#### 3. 为 LeRobot 创建并激活一个新的 Conda 环境
 
 ```Bash
 conda create -y -n lerobot python=3.10
@@ -198,13 +198,13 @@ conda create -y -n lerobot python=3.10
 conda activate lerobot
 ```
 
-### 4. 克隆 LeRobot：
+#### 4. 克隆 LeRobot：
 
 ```Bash
 git clone https://github.com/huggingface/lerobot.git ~/lerobot
 ```
 
-### 5. 在您的环境中安装 ffmpeg：
+#### 5. 在您的环境中安装 ffmpeg：
 
 使用 `miniconda` 时，在您的环境中安装 `ffmpeg`：
 
@@ -224,20 +224,20 @@ conda install ffmpeg -c conda-forge
 
 ![5. 在您的环境中安装 ffmpeg： – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
-### 6. 安装带有 feetech 电机依赖的 LeRobot：
+#### 6. 安装带有 feetech 电机依赖的 LeRobot：
 
 ```Bash
 cd ~/lerobot && pip install --no-binary=av -e ".[feetech]"
 pip install -e ".[lekiwi]"
 ```
 
-# 配置电机
+## 配置电机
 
 ![6. 安装带有 feetech 电机依赖的 LeRobot： – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
 ![6. 安装带有 feetech 电机依赖的 LeRobot： – 2](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
-### **1.查找与机械臂相关联的 USB 端口**
+#### **1.查找与机械臂相关联的 USB 端口**
 
 要找到单个电机的正确端口，请运行以下实用脚本两次：
 
@@ -256,7 +256,7 @@ sudo chmod 666 /dev/ttyACM0
 sudo chmod 666 /dev/ttyACM1
 ```
 
-### **2.配置您的电机（成品可跳过该步骤）**
+#### **2.配置您的电机（成品可跳过该步骤）**
 
 依次插入您的底盘的每一个电机并运行以下脚本，他会先初始化机械臂（ID 6..1）的舵机，然后再初始化底盘舵机，将其 ID 设置为（ID 9..7）的舵机，如果你已经校准过机械臂，可以连续按回车不断覆盖和跳过：
 
@@ -268,7 +268,7 @@ lerobot-setup-motors \
 
 ![2.配置您的电机（成品可跳过该步骤） – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
-### 3.设置HuggingFace国内镜像
+#### 3.设置HuggingFace国内镜像
 
 - Ubuntu
 
@@ -303,7 +303,7 @@ source ~/.zshrc
 # https://hf-mirror.com
 ```
 
-#### ①创建Token
+##### ①创建Token
 
 https://huggingface.co/settings/tokens
 
@@ -313,7 +313,7 @@ https://huggingface.co/settings/tokens
 
 ![①创建Token – 3](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
-#### ②记录Token
+##### ②记录Token
 
 例如，我的是：
 
@@ -321,7 +321,7 @@ https://huggingface.co/settings/tokens
 hf_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-#### ③绑定Token
+##### ③绑定Token
 
 ```Shell
 hf auth login
@@ -331,7 +331,7 @@ hf auth whoami
 
 ![③绑定Token – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
-#### ④创建Dataset Repo
+##### ④创建Dataset Repo
 
 **记下Owner和Dateset name，即后续需要的\<hf_username\>和\<dateset_repo_id\>**
 
@@ -341,7 +341,7 @@ hf auth whoami
 
 ![④创建Dataset Repo – 3](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
-### 4.更新配置！！！
+#### 4.更新配置！！！
 
 LeKiwi LeRobot 和笔记本电脑上的配置文件应保持一致。首先，我们需要找到移动机械臂的树莓派的 **IP 地址**。这与用于 SSH 的 IP 地址相同。我们还需要找到笔记本电脑上主动臂舵机驱动板的 **USB 端口**以及 **LeKiwi 上舵机驱动板的端口**。可以通过以下脚本找到这些端口。
 
@@ -358,7 +358,7 @@ sudo chmod 666 /dev/ttyACM1
 
 ![4.更新配置！！！ – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
-#### ①修改teleoperate.py
+##### ①修改teleoperate.py
 
 remote_ip:树莓派的ip地址
 
@@ -366,7 +366,7 @@ port:主动臂连接到电脑或者linux时的端口号
 
 ![①修改teleoperate.py – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
-#### ②修改record.py
+##### ②修改record.py
 
 HF_REPO_ID：[huggingface的用户名和数据集名称](https://juxitech.feishu.cn/wiki/A2orwQ9xzidMCjk10SVcAAWVnhd?fromScene=spaceOverview#share-TYrIdHmPPobd1mx9xB7c75WEn0d)
 
@@ -376,7 +376,7 @@ port:主动臂连接到电脑或者linux时的端口号
 
 ![②修改record.py – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
-#### ③修改replay.py
+##### ③修改replay.py
 
 remote_ip:树莓派的ip地址
 
@@ -384,11 +384,11 @@ remote_ip:树莓派的ip地址
 
 ![③修改replay.py – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
-## 校准
+### 校准
 
 现在我们需要校准主动臂和从动臂。全向轮的舵机无需校准。
 
-### 校准从动臂（安装在Lekiwi底座上）
+#### 校准从动臂（安装在Lekiwi底座上）
 
 在您的电脑上运行以下命令以校准主动臂。注意：这里显示的图片是 SO101 型号的示例。
 
@@ -409,7 +409,7 @@ lerobot-calibrate \
 
 我们统一了大多数机器人的标定方法。首先，我们需要将机器人移动到每个关节都处于其**可活动范围中间的位置，然后按下按钮。其次，我们将所有关节在其**移动一遍。您可以[在这里](https://huggingface.co/docs/lerobot/en/so101#calibration-video)`Enter`找到SO101的相同标定过程视频作为参考。
 
-# F. 远程操作
+## F. 远程操作
 
 打开新的Anaconda Prompt
 
@@ -437,11 +437,11 @@ python examples/lekiwi/teleoperate.py
 
 如果您使用不同的键盘，您可以在[`LeKiwiClientConfig`](https://github.com/huggingface/lerobot/blob/main/src/lerobot/robots/lekiwi/config_lekiwi.py)中更改每个命令的按键设置。
 
-## 通信故障排查
+### 通信故障排查
 
 如果您在连接移动机器人 SO101 时遇到问题，请按照以下步骤诊断并解决问题。
 
-### 1.验证 IP 地址配置
+#### 1.验证 IP 地址配置
 
 确保配置文件中设置了正确的 Raspberry Pi IP 地址。要检查 Raspberry Pi 的 IP 地址，请运行以下命令（在 Pi 的命令行中）：
 
@@ -449,7 +449,7 @@ python examples/lekiwi/teleoperate.py
 hostname -I
 ```
 
-### 2.检查笔记本电脑/PC 是否能访问 Pi
+#### 2.检查笔记本电脑/PC 是否能访问 Pi
 
 尝试从笔记本电脑 ping Raspberry Pi：
 
@@ -463,7 +463,7 @@ ping <your_pi_ip_address>
 
 - 检查 Pi 上是否启用了 SSH。
 
-### 3.尝试 SSH 连接
+#### 3.尝试 SSH 连接
 
 如果无法通过 SSH 登录到 Pi，可能是连接不正确。请使用以下命令：
 
@@ -483,11 +483,11 @@ sudo raspi-config
 
 - 然后导航到：**Interfacing Options -\> SSH** 并启用它。
 
-### 4.配置文件一致性！！！
+#### 4.配置文件一致性！！！
 
 确保笔记本电脑/PC 和 Raspberry Pi 上的配置文件完全一致。
 
-# G. 记录数据集
+## G. 记录数据集
 
 在熟悉远程操作后，您可以使用 LeKiwi 记录您的第一个数据集。
 
@@ -517,7 +517,7 @@ hf auth whoami
 python examples/lekiwi/record.py
 ```
 
-# H. 可视化数据集
+## H. 可视化数据集
 
 如果您上传了数据集，可以通过 [在线可视化您的数据集](https://huggingface.co/spaces/lerobot/visualize_dataset)，复制并粘贴以下命令生成的仓库 ID：
 
@@ -533,7 +533,7 @@ python lerobot/scripts/visualize_dataset_html.py \
   --local-files-only 1
 ```
 
-### 可视化一个数据集（可跳过，可尝试）
+#### 可视化一个数据集（可跳过，可尝试）
 
 ```Bash
 echo ${HF_USER}/my_lekiwi_dataset
@@ -557,7 +557,7 @@ lerobot-dataset-viz \
 
 
 
-#### 数据收集技巧
+##### 数据收集技巧
 
 一旦您熟悉了数据记录，就可以创建更大的数据集用于训练。一个不错的入门任务是抓取不同位置的物体并将其放入容器中。我们建议至少录制 50 个片段，每个位置 10 个片段。保持摄像头位置固定，并在整个录制过程中保持一致的抓取动作。同时，确保您操作的物体在摄像头画面中清晰可见。一个简单的判断标准是，您应该能够仅通过观察摄像头画面就完成这项任务。
 
@@ -567,11 +567,11 @@ lerobot-dataset-viz \
 
 如果您想深入了解这个重要话题，可以查看我们撰写的关于优秀数据集构成要素的[博客文章。](https://huggingface.co/blog/lerobot-datasets#what-makes-a-good-dataset)
 
-#### 故障排除：
+##### 故障排除：
 
 在 Linux 系统中，如果在数据记录过程中左右箭头键和 Esc 键不起作用，请确保已设置`$DISPLAY`环境变量。请参阅[pynput 的限制](https://pynput.readthedocs.io/en/latest/limitations.html#linux)
 
-# I. 回放一个回合
+## I. 回放一个回合
 
 现在尝试在您的机器人上回放第一个回合：
 
@@ -581,11 +581,11 @@ python examples/lekiwi/replay.py
 
 恭喜🎉，你的机器人已经准备好自主学习任务了。请按照本教程的训练部分开始训练它：[真实世界机器人入门](https://huggingface.co/docs/lerobot/il_robots)
 
-## K. 评估你的策略
+### K. 评估你的策略
 
 确保更改remote_ip, port, HF_MODEL_ID
 
-#### 修改evaluate.py
+##### 修改evaluate.py
 
 HF_MODEL_ID="\<hf_username\>/\<model_repo_id\>" 修改为训练上传到huggingface上的数据集名称（如果上传到huggingface的话）或 训练后将模型导出到本地的目录
 
@@ -615,7 +615,7 @@ https://github.com/SIGRobotics-UIUC/LeKiwi-sim
 
 
 
-## 帮助 🙋
+### 帮助 🙋
 
 对于硬件问题，请联系客户服务。对于使用问题，请加入 Discord。
 

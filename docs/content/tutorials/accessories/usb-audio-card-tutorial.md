@@ -8,7 +8,7 @@ description: "Juxi Technology USB driver-free sound card tutorial — visualizat
 > **[Buy in Store](https://www.juxitech.com/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction)**
 
 
-# Visual Testing Software (Windows)
+## Visual Testing Software (Windows)
 
 [audio_tools.7z](https://juxitech.feishu.cn/wiki/NThUwAgW5iLyB3kEWzOcyO35nvW)
 
@@ -43,11 +43,11 @@ description: "Juxi Technology USB driver-free sound card tutorial — visualizat
 
     - Restart the audio service:`sudo systemctl restart alsa`(Some environments may require a system restart:`sudo reboot`)
 
-# Jetson Series Main Controller &amp; Ubuntu System &amp; Raspberry Pi
+## Jetson Series Main Controller &amp; Ubuntu System &amp; Raspberry Pi
 
-## Command-line debugging
+### Command-line debugging
 
-### 1. USB Sound Card Connection
+#### 1. USB Sound Card Connection
 
 1. Before inserting the USB sound card, we use the `lsusb` command to check the USB devices:
 
@@ -65,7 +65,7 @@ description: "Juxi Technology USB driver-free sound card tutorial — visualizat
 
 ![1. USB Sound Card Connection – 4](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
-### 2. Using USB Sound Card
+#### 2. Using USB Sound Card
 
 `arecord -l`, for example, here UACDemoV1.0 is shown, which is our sound card, card 0; device 0, and in the command, modify it to plughw:0,0 to specify this recording device
 
@@ -112,7 +112,7 @@ Parameter descriptions are as follows:
 
 
 
-## View PulseAudio Visualization Window
+### View PulseAudio Visualization Window
 
 ![View PulseAudio Visualization Window – 1](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/7.png)
 
@@ -140,15 +140,15 @@ View via PulseAudio, [ command line ](https://so.csdn.net/so/search?q=%E5%91%BD%
 
 
 
-## Python calls USB driverless sound card
+### Python calls USB driverless sound card
 
 Search for code examples on your own, such as searching for “[Python calling USB driverless sound card](https://blog.csdn.net/weixin_44463519/article/details/157463731?spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EYuanLiJiHua%7ECtr-3-157463731-blog-105694458.235%5Ev43%5Epc_blog_bottom_relevance_base9&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EYuanLiJiHua%7ECtr-3-157463731-blog-105694458.235%5Ev43%5Epc_blog_bottom_relevance_base9&utm_relevant_index=4)”
 
 
 
-## Problem Summary
+### Problem Summary
 
-### Jetson
+#### Jetson
 
 1. Device Occupancy Issue
 
@@ -178,7 +178,7 @@ Then re-record and play
 
 
 
-### Raspberry Pi 
+#### Raspberry Pi 
 
 1. Problem of relatively high noise
 
@@ -215,7 +215,7 @@ sudo chmod 664 /var/lib/alsa/asound.state
 sudo alsactl store
 ```
 
-### Ubuntu Virtual Machine
+#### Ubuntu Virtual Machine
 
 1. There is noise and interference during recording
 
@@ -225,9 +225,9 @@ Solution: Change the USB controller compatibility to 3.0 or 3.1
 
 
 
-# RDK x3&amp;x5
+## RDK x3&amp;x5
 
-## View device number
+### View device number
 
 Check if the sound card exists and verify the device number. 
 
@@ -257,7 +257,7 @@ by-path/   controlC0  pcmC0D0c   pcmC0D0p   timer
 
 Through the above query, it can be confirmed that sound card 0 corresponds to the onboard sound card; the device also exists, and its device number is `0-0`. In fact, the devices we operate should be `pcmC0D0p` and `pcmC0D0c`.
 
-## Record a 5-second sound for testing
+### Record a 5-second sound for testing
 
 `arecord -D plughw:0,0 -f S16_LE -r 16000 -d 5 -t wav test.wav`
 
@@ -296,13 +296,13 @@ Parameter descriptions are as follows:
 
 - -d 5: Set the recording duration/seconds.
 
-## Frequently Asked Questions 
+### Frequently Asked Questions 
 
-### How does the RDK board distinguish between USB sound cards and onboard sound cards?
+#### How does the RDK board distinguish between USB sound cards and onboard sound cards?
 
-### How can the audio daughterboard of the RDK X3 series coexist and be used simultaneously with a USB sound card?
+#### How can the audio daughterboard of the RDK X3 series coexist and be used simultaneously with a USB sound card?
 
-### How does RDKS100 support the use of audio functions through a graphical interface?
+#### How does RDKS100 support the use of audio functions through a graphical interface?
 
 Refer to [RDK Multimedia Processing and Applications](https://developer.d-robotics.cc/rdk_doc/FAQ/multimedia#usb-%E5%A3%B0%E5%8D%A1%E5%92%8C%E6%9D%BF%E8%BD%BD%E5%A3%B0%E5%8D%A1%E5%A6%82%E4%BD%95%E5%8C%BA%E5%88%86%E4%BD%BF%E7%94%A8)
 
@@ -310,7 +310,7 @@ Refer to [RDK Multimedia Processing and Applications](https://developer.d-roboti
 
 
 
-# Check the most basic audio driver
+## Check the most basic audio driver
 
 Whether a USB driverless sound card can be used ** ultimately depends on the kernel **
 
@@ -344,7 +344,7 @@ CONFIG_SND_USB_CAIAQ=y
 sudo modprobe snd_usb_audio
 ```
 
-#### Step 2: Install basic audio tools (not included by default in the Lite version) 
+##### Step 2: Install basic audio tools (not included by default in the Lite version) 
 
 The stripped-down system usually does not have ` alsa-utils ` and other such tools, which need to be manually installed: 
 
@@ -355,7 +355,7 @@ sudo apt update && sudo apt install -y alsa-utils usbutils
 # Offline environment: Download the alsa-utils offline package and install it with dpkg -i
 ```
 
-#### Step 3: Verify USB Sound Card Recognition and Functionality
+##### Step 3: Verify USB Sound Card Recognition and Functionality
 
 1. Insert the USB sound card and execute the command to confirm device recognition:
 
@@ -376,7 +376,7 @@ The appearance of ` USB Audio ` related ` card X ` entries in the output indicat
 speaker-test -c 2 -D plughw:X,0
 ```
 
-#### Step 4: (Optional) Install audio service (for desktop/background playback requirements) 
+##### Step 4: (Optional) Install audio service (for desktop/background playback requirements) 
 
 If you need to play audio in the background or use it with a desktop environment, the Lite version requires additional installation of audio services: 
 
@@ -388,7 +388,7 @@ sudo apt install -y pulseaudio
 sudo apt install -y pipewire pipewire-alsa
 ```
 
-### Common Pitfalls and Solutions of the Lite Version System
+#### Common Pitfalls and Solutions of the Lite Version System
 
 **1. Insufficient permissions, ordinary users cannot access the sound card**
 

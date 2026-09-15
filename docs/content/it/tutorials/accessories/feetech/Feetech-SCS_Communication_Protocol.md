@@ -8,7 +8,7 @@ description: "Il livello di comunicazione usa TTL compatibile con la comunicazio
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/feetech-scs0009-serial-bus-servo)**
 
 
-# 1 Panoramica del protocollo di comunicazione
+## 1 Panoramica del protocollo di comunicazione
 
   Il livello di comunicazione usa TTL compatibile con la comunicazione ad alta velocità e RS485 con forte immunità ai disturbi; la comunicazione è asincrona full-duplex, trasmissione e ricezione sono elaborate in modo asincrono.
 
@@ -20,7 +20,7 @@ La comunicazione è seriale asincrona: una trama è composta da 1 bit di start, 
 
   Quando alcuni parametri della tabella di memoria usano due byte, il loro ordine dipende dal modello di servo: i servo a potenziometro usano il formato big-endian (byte alto prima, byte basso dopo), i servo a encoder magnetico il formato little-endian (byte basso prima, byte alto dopo). Poiché ogni servo ha funzioni leggermente diverse, per il controllo reale fare riferimento alla tabella di memoria del modello specifico.
 
-# 2 Trama di comando
+## 2 Trama di comando
 
 - Intestazione: due 0xFF consecutivi ricevuti indicano l'arrivo di un pacchetto dati.
 Numero ID: ogni servo ha un ID. Intervallo 0–253, in esadecimale 0x00–0xFD.
@@ -36,13 +36,13 @@ Numero ID: ogni servo ha un ID. Intervallo 0–253, in esadecimale 0x00–0xFD.
 - Checksum: calcolo del Check Sum:
 Check Sum = ~ (ID + Length + Instruction + Parameter1 + … Parameter N) Se la somma tra parentesi supera 255, prendere solo il byte più basso. «~» rappresenta l'inversione bit per bit.
 
-# 3 Trama di risposta
+## 3 Trama di risposta
 
 La trama di risposta contiene lo stato attuale ERROR del servo. Se lo stato operativo non è normale, si riflette in questo byte (significato degli stati: vedi tabella di controllo memoria del manuale). Se ERROR è 0, il servo non ha errori.
 
-# 4 Tipi di comando
+## 4 Tipi di comando
 
-## 4.1 Comando di interrogazione stato PING
+### 4.1 Comando di interrogazione stato PING
 
 - Funzione: leggere lo stato operativo del servo
 
@@ -76,7 +76,7 @@ Stato: 00
 Checksum: FC
 ```
 
-## 4.2 Comando di lettura READ DATA
+### 4.2 Comando di lettura READ DATA
 
 - Funzione: leggere dati dalla tabella di controllo memoria del servo
 
@@ -114,7 +114,7 @@ Checksum: DD
 
 I due byte letti (struttura little-endian): byte basso L 0x18, byte alto H 0x05. I due byte compongono il dato a 16 bit 0X0518, in decimale la posizione attuale è 1304.
 
-## 4.3 Comando di scrittura WRITE DATA
+### 4.3 Comando di scrittura WRITE DATA
 
 - Funzione: scrivere dati nella tabella di controllo memoria del servo
 
@@ -181,7 +181,7 @@ Checksum: FC
 
 Lo stato operativo restituito è 0: il servo ha ricevuto il comando senza errori e ha iniziato a eseguirlo. Poiché l'ID del pacchetto inviato non è quello broadcast (0xFE), il servo restituisce un pacchetto di stato dopo la ricezione.
 
-## 4.4 Comando di scrittura asincrona REG WRITE
+### 4.4 Comando di scrittura asincrona REG WRITE
 
 REG WRITE è simile a WRITE DATA, ma il momento di esecuzione è diverso. Alla ricezione di una trama REG WRITE, i dati vengono memorizzati in un buffer e il registro di scrittura asincrona viene impostato a 1. Alla ricezione del comando ACTION, il comando memorizzato viene infine eseguito.
 
@@ -222,7 +222,7 @@ ID10: trama di scrittura asincrona: FF FF 0A 09 04 2A 00 08 00 00 E8 03 CB
 ID10: trama di risposta: FF FF 0A 02 00 F3
 ```
 
-## 4.5 Eseguire la scrittura asincrona ACTION
+### 4.5 Eseguire la scrittura asincrona ACTION
 
 - Funzione: innesca il comando REG WRITE
 
@@ -245,7 +245,7 @@ Trama di comando: FF FF FE 02 05 FA
 Trama di risposta: nessuna
 ```
 
-## 4.6 Comando di scrittura sincrona SYNC WRITE
+### 4.6 Comando di scrittura sincrona SYNC WRITE
 
 - Funzione: controllare più servos contemporaneamente.
 
@@ -298,7 +298,7 @@ Parametri:
 Checksum: 58
 ```
 
-## 4.7 Comando di lettura sincrona SYNC READ
+### 4.7 Comando di lettura sincrona SYNC READ
 
 - Funzione: interrogare più servos contemporaneamente.
 
@@ -345,7 +345,7 @@ Servo ID02: FF FF 02 0A 00 FF 07 00 00 00 00 77 23 53
 
 La trama di risposta può essere decodificata in base al comando di lettura
 
-## 4.8 Comando di reset dello stato RESET
+### 4.8 Comando di reset dello stato RESET
 
 - Funzione: resettare lo stato del servo (resettare i giri del servo)
 
@@ -362,7 +362,7 @@ Trama di comando: FF FF 01 02 0A F2 (invio in esadecimale)
 Trama di risposta: FF FF 01 02 00 FC (visualizzazione esadecimale)
 ```
 
-## 4.9 Comando di calibrazione posizione
+### 4.9 Comando di calibrazione posizione
 
 - Funzione: ricalibrare la posizione attuale al valore impostato
 
@@ -404,7 +404,7 @@ Stato: 00
 Checksum: FC
 ```
 
-## 4.10 Comando di ripristino parametri
+### 4.10 Comando di ripristino parametri
 
 - Funzione: ripristinare i parametri del servo tranne l'ID
 
@@ -423,7 +423,7 @@ Trama di risposta: FF FF 01 02 00 FC (visualizzazione esadecimale)
 
 Nota: sbloccare i parametri EPROM prima di ripristinare i parametri del servo
 
-## 4.11 Comando di backup parametri
+### 4.11 Comando di backup parametri
 
 - Funzione: backup dei parametri (per il ripristino)
 
@@ -442,7 +442,7 @@ Trama di risposta: FF FF 01 02 00 FC (visualizzazione esadecimale)
 
 Nota: sbloccare i parametri EPROM prima di eseguire il backup dei parametri del servo
 
-## 4.12 Comando di riavvio
+### 4.12 Comando di riavvio
 
 - Funzione: riavviare il servo
 

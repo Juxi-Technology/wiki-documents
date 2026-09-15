@@ -8,7 +8,7 @@ description: "JUXI USB 드라이버 불필요 사운드 카드 튜토리얼. 시
 > **[스토어에서 구매](https://www.juxitech.com/ko/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction)**
 
 
-# 시각화 테스트 소프트웨어(Windows)
+## 시각화 테스트 소프트웨어(Windows)
 
 [audio_tools.7z](https://juxitech.feishu.cn/wiki/Wuc3wAppNi5elfkSI6VccrNDnfE)
 
@@ -43,11 +43,11 @@ speaker-test -c 2 -D plughw:X,0
 
 - 오디오 서비스 재시작: `sudo systemctl restart alsa`(일부 환경에서는 시스템 재부팅 필요: `sudo reboot`)
 
-# Jetson시리즈 주장치&Ubuntu시스템&라즈베리파이
+## Jetson시리즈 주장치&Ubuntu시스템&라즈베리파이
 
-## 명령줄 디버깅
+### 명령줄 디버깅
 
-### 1. USB 사운드 카드 연결
+#### 1. USB 사운드 카드 연결
 
 1. USB 사운드 카드를 꽂기 전에 `lsusb` 명령으로 USB 장치를 확인합니다:
 
@@ -65,7 +65,7 @@ speaker-test -c 2 -D plughw:X,0
 
 ![1. USB 사운드 카드 연결 – 4](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
-### 2. USB 사운드 카드 사용
+#### 2. USB 사운드 카드 사용
 
 `arecord -l`에서 예를 들어 UACDemoV1.0이 표시되면 그것이 우리 사운드 카드입니다. card 0; device 0이면 명령에서 plughw:0,0으로 변경해 해당 녹음 장치를 지정합니다:
 
@@ -110,7 +110,7 @@ Linux 기본 녹음 명령으로 5초간 소리를 녹음하여 테스트합니�
 
 - -d 5: 녹음 시간(초) 설정.
 
-## PulseAudio 시각화 창으로 확인
+### PulseAudio 시각화 창으로 확인
 
 ![PulseAudio 시각화 창으로 확인 – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/7.png)
 
@@ -134,13 +134,13 @@ PulseAudio를 [명령줄](https://so.csdn.net/so/search?q=%E5%91%BD%E4%BB%A4%E8%
 >
 > RUNNING은 마이크가 사용 중임을 나타냅니다
 
-## python에서 USB 드라이버 불필요 사운드 카드 호출
+### python에서 USB 드라이버 불필요 사운드 카드 호출
 
 코드 예시는 직접 검색하세요. 예: "[Python调用USB免驱声卡](https://blog.csdn.net/weixin_44463519/article/details/157463731?spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EYuanLiJiHua%7ECtr-3-157463731-blog-105694458.235%5Ev43%5Epc_blog_bottom_relevance_base9&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EYuanLiJiHua%7ECtr-3-157463731-blog-105694458.235%5Ev43%5Epc_blog_bottom_relevance_base9&utm_relevant_index=4)"
 
-## 문제 정리
+### 문제 정리
 
-### Jetson
+#### Jetson
 
 1. 장치 점유 문제
 
@@ -166,7 +166,7 @@ PulseAudio를 [명령줄](https://so.csdn.net/so/search?q=%E5%91%BD%E4%BB%A4%E8%
 
 그 다음 다시 녹음, 재생합니다
 
-### 라즈베리파이
+#### 라즈베리파이
 
 1.노이즈가 많은 문제
 
@@ -194,15 +194,15 @@ sudo chmod 664 /var/lib/alsa/asound.state
 sudo alsactl store
 ```
 
-### Ubuntu 가상 머신
+#### Ubuntu 가상 머신
 
 1. 녹음 시 노이즈가 섞임
 
 해결 방법: USB 컨트롤러 호환성을 3.0 또는 3.1로 변경
 
-# RDK x3&x5
+## RDK x3&x5
 
-## 장치 번호 확인
+### 장치 번호 확인
 
 사운드 카드가 존재하는지, 장치 번호를 확인합니다.
 
@@ -232,7 +232,7 @@ by-path/   controlC0  pcmC0D0c   pcmC0D0p   timer
 
 위 조회를 통해 사운드 카드 0이 온보드 사운드 카드임을 확인할 수 있습니다. 장치도 존재하며 장치 번호는 `0-0`입니다. 실제로 조작할 장치는 `pcmC0D0p`와 `pcmC0D0c`입니다.
 
-## 5초간 소리를 녹음하여 테스트
+### 5초간 소리를 녹음하여 테스트
 
 `arecord -D plughw:0,0 -f S16_LE -r 16000 -d 5 -t wav test.wav`
 
@@ -271,17 +271,17 @@ by-path/   controlC0  pcmC0D0c   pcmC0D0p   timer
 
 - -d 5: 녹음 시간(초) 설정.
 
-## 자주 묻는 질문
+### 자주 묻는 질문
 
-### RDK 보드에서 USB 사운드 카드와 온보드 사운드 카드를 구분하는 방법?
+#### RDK 보드에서 USB 사운드 카드와 온보드 사운드 카드를 구분하는 방법?
 
-### RDK X3 시리즈의 오디오 서브보드와 USB 사운드 카드를 공존시켜 동시에 사용하는 방법?
+#### RDK X3 시리즈의 오디오 서브보드와 USB 사운드 카드를 공존시켜 동시에 사용하는 방법?
 
-### RDKS100에서 그래픽 인터페이스로 오디오 기능을 사용하는 방법?
+#### RDKS100에서 그래픽 인터페이스로 오디오 기능을 사용하는 방법?
 
 [RDK 멀티미디어 처리 및 응용](https://developer.d-robotics.cc/rdk_doc/FAQ/multimedia#usb-%E5%A3%B0%E5%8D%A1%E5%92%8C%E6%9D%BF%E8%BD%BD%E5%A3%B0%E5%8D%A1%E5%A6%82%E4%BD%95%E5%8C%BA%E5%88%86%E4%BD%BF%E7%94%A8) 참조
 
-# 기본 오디오 드라이버 확인
+## 기본 오디오 드라이버 확인
 
 USB 드라이버 불필요 사운드 카드를 사용할 수 있는지의 **핵심은 커널**입니다
 
@@ -315,7 +315,7 @@ CONFIG_SND_USB_CAIAQ=y
 sudo modprobe snd_usb_audio
 ```
 
-#### 2단계: 기본 오디오 도구 설치(경량 버전에는 기본으로 없음)
+##### 2단계: 기본 오디오 도구 설치(경량 버전에는 기본으로 없음)
 
 경량 시스템에는 보통 `alsa-utils` 같은 도구가 없어 수동 설치가 필요합니다:
 
@@ -326,7 +326,7 @@ sudo apt update && sudo apt install -y alsa-utils usbutils
 # 네트워크 없는 환경: alsa-utils 오프라인 패키지를 내려받아 dpkg -i로 설치
 ```
 
-#### 3단계: USB 사운드 카드 인식 및 기능 검증
+##### 3단계: USB 사운드 카드 인식 및 기능 검증
 
 1.USB 사운드 카드를 꽂고 장치 인식 확인:
 
@@ -347,7 +347,7 @@ aplay -l
 speaker-test -c 2 -D plughw:X,0
 ```
 
-#### 4단계: (선택) 오디오 서비스 설치(데스크톱/백그라운드 재생 필요 시)
+##### 4단계: (선택) 오디오 서비스 설치(데스크톱/백그라운드 재생 필요 시)
 
 백그라운드에서 오디오를 재생하거나 데스크톱 환경과 함께 사용하려면 경량 버전에는 오디오 서비스 추가 설치가 필요합니다:
 
@@ -359,7 +359,7 @@ sudo apt install -y pulseaudio
 sudo apt install -y pipewire pipewire-alsa
 ```
 
-### 경량 시스템의 흔한 문제 및 해결
+#### 경량 시스템의 흔한 문제 및 해결
 
 **1.권한 부족으로 일반 사용자가 사운드 카드에 접근 불가**
 
@@ -393,7 +393,7 @@ sudo reboot
 
 ---
 
-## 공식 저장소
+### 공식 저장소
 
 JUXI USB 드라이버 불필요 사운드 카드 오픈소스 저장소: [GitHub](https://github.com/Juxi-Technology/Driver-Free-Sound-Card)
 

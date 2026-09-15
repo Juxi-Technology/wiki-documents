@@ -8,7 +8,7 @@ description: "JUXI USB-Soundkarte ohne Treiber: Testsoftware, Befehle und Audio-
 > **[Im Shop kaufen](https://www.juxitech.com/de/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction)**
 
 
-# Visualisierungs-Testsoftware (Windows)
+## Visualisierungs-Testsoftware (Windows)
 
 [audio_tools.7z](https://juxitech.feishu.cn/wiki/Wuc3wAppNi5elfkSI6VccrNDnfE)
 
@@ -43,11 +43,11 @@ speaker-test -c 2 -D plughw:X,0
 
 - Audiodienst neu starten: `sudo systemctl restart alsa` (in manchen Umgebungen Neustart nötig: `sudo reboot`)
 
-# Jetson-Serie & Ubuntu-System & Raspberry Pi
+## Jetson-Serie & Ubuntu-System & Raspberry Pi
 
-## Debugging über die Befehlszeile
+### Debugging über die Befehlszeile
 
-### 1. USB-Soundkarte anschließen
+#### 1. USB-Soundkarte anschließen
 
 1. Vor dem Einstecken der USB-Soundkarte die USB-Geräte mit `lsusb` anzeigen:
 
@@ -65,7 +65,7 @@ speaker-test -c 2 -D plughw:X,0
 
 ![1. USB-Soundkarte anschließen – 4](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
-### 2. USB-Soundkarte verwenden
+#### 2. USB-Soundkarte verwenden
 
 Zeigt `arecord -l` z. B. UACDemoV1.0, so ist das unsere Soundkarte. Bei card 0; device 0 wird im Befehl plughw:0,0 angegeben, um dieses Aufnahmegerät zu wählen:
 
@@ -110,7 +110,7 @@ Parametererklärung:
 
 - -d 5: Aufnahmedauer in Sekunden.
 
-## PulseAudio-Anzeige
+### PulseAudio-Anzeige
 
 ![PulseAudio-Anzeige – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/7.png)
 
@@ -134,13 +134,13 @@ PulseAudio [per Befehlszeile](https://so.csdn.net/so/search?q=%E5%91%BD%E4%BB%A4
 >
 > RUNNING = Mikrofon in Benutzung
 
-## Python: USB-Soundkarte ohne Treiber ansprechen
+### Python: USB-Soundkarte ohne Treiber ansprechen
 
 Codebeispiele selbst suchen, z. B. „[Python调用USB免驱声卡](https://blog.csdn.net/weixin_44463519/article/details/157463731?spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EYuanLiJiHua%7ECtr-3-157463731-blog-105694458.235%5Ev43%5Epc_blog_bottom_relevance_base9&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EYuanLiJiHua%7ECtr-3-157463731-blog-105694458.235%5Ev43%5Epc_blog_bottom_relevance_base9&utm_relevant_index=4)"
 
-## Problemübersicht
+### Problemübersicht
 
-### Jetson
+#### Jetson
 
 1. Gerät belegt
 
@@ -166,7 +166,7 @@ Prozess beenden mit `kill -9 PID` (PID = der nach dem Einstecken neu erscheinend
 
 Danach erneut aufnehmen und abspielen
 
-### Raspberry Pi
+#### Raspberry Pi
 
 1. Starke Störgeräusche
 
@@ -192,15 +192,15 @@ sudo chmod 664 /var/lib/alsa/asound.state
 sudo alsactl store
 ```
 
-### Ubuntu-VM
+#### Ubuntu-VM
 
 1. Rauschen bei der Aufnahme
 
 Lösung: USB-Controller-Kompatibilität auf 3.0 oder 3.1 ändern
 
-# RDK x3&x5
+## RDK x3&x5
 
-## Gerätenummer prüfen
+### Gerätenummer prüfen
 
 Prüfen, ob die Soundkarte existiert und welche Gerätenummer sie hat.
 
@@ -230,7 +230,7 @@ by-path/   controlC0  pcmC0D0c   pcmC0D0p   timer
 
 Daraus ergibt sich: Soundkarte 0 ist die Onboard-Soundkarte; die Geräte existieren mit Nummer `0-0`. Die tatsächlich verwendeten Geräte sind `pcmC0D0p` und `pcmC0D0c`.
 
-## 5 Sekunden Ton aufnehmen und testen
+### 5 Sekunden Ton aufnehmen und testen
 
 `arecord -D plughw:0,0 -f S16_LE -r 16000 -d 5 -t wav test.wav`
 
@@ -269,17 +269,17 @@ Parametererklärung:
 
 - -d 5: Aufnahmedauer in Sekunden.
 
-## Häufige Fragen
+### Häufige Fragen
 
-### Wie unterscheidet man auf einem RDK-Board die USB-Soundkarte von der Onboard-Soundkarte?
+#### Wie unterscheidet man auf einem RDK-Board die USB-Soundkarte von der Onboard-Soundkarte?
 
-### Wie können das Audio-Subboard der RDK-X3-Serie und die USB-Soundkarte gleichzeitig koexistieren und verwendet werden?
+#### Wie können das Audio-Subboard der RDK-X3-Serie und die USB-Soundkarte gleichzeitig koexistieren und verwendet werden?
 
-### Wie nutzt man die Audiofunktionen auf dem RDKS100 über die grafische Oberfläche?
+#### Wie nutzt man die Audiofunktionen auf dem RDKS100 über die grafische Oberfläche?
 
 Siehe [RDK Multimedia-Verarbeitung und -Anwendung](https://developer.d-robotics.cc/rdk_doc/FAQ/multimedia#usb-%E5%A3%B0%E5%8D%A1%E5%92%8C%E6%9D%BF%E8%BD%BD%E5%A3%B0%E5%8D%A1%E5%A6%82%E4%BD%95%E5%8C%BA%E5%88%86%E4%BD%BF%E7%94%A8)
 
-# Grundlegenden Audiotreiber prüfen
+## Grundlegenden Audiotreiber prüfen
 
 Ob die treiberfreie USB-Soundkarte funktioniert, **hängt vom Kernel ab**
 
@@ -313,7 +313,7 @@ CONFIG_SND_USB_CAIAQ=y
 sudo modprobe snd_usb_audio
 ```
 
-#### Schritt 2: Basis-Audiotools installieren (in der Minimalversion nicht enthalten)
+##### Schritt 2: Basis-Audiotools installieren (in der Minimalversion nicht enthalten)
 
 Minimalsysteme haben oft kein `alsa-utils` – manuell installieren:
 
@@ -324,7 +324,7 @@ sudo apt update && sudo apt install -y alsa-utils usbutils
 # Ohne Netzwerk: Offline-Paket von alsa-utils herunterladen und mit dpkg -i installieren
 ```
 
-#### Schritt 3: Erkennung und Funktion der USB-Soundkarte prüfen
+##### Schritt 3: Erkennung und Funktion der USB-Soundkarte prüfen
 
 1. USB-Soundkarte einstecken und Geräteerkennung prüfen:
 
@@ -345,7 +345,7 @@ Erscheint ein Eintrag `card X` mit `USB Audio`, ist die Erkennung erfolgreich.
 speaker-test -c 2 -D plughw:X,0
 ```
 
-#### Schritt 4: (Optional) Audiodienst installieren (für Desktop/Hintergrundwiedergabe)
+##### Schritt 4: (Optional) Audiodienst installieren (für Desktop/Hintergrundwiedergabe)
 
 Für Hintergrundwiedergabe oder Desktop-Umgebungen muss in Minimalversionen ein Audiodienst installiert werden:
 
@@ -357,7 +357,7 @@ sudo apt install -y pulseaudio
 sudo apt install -y pipewire pipewire-alsa
 ```
 
-### Typische Probleme der Minimalversion und Lösungen
+#### Typische Probleme der Minimalversion und Lösungen
 
 **1. Fehlende Berechtigungen – Normalnutzer kann nicht auf die Soundkarte zugreifen**
 
@@ -391,7 +391,7 @@ sudo reboot
 
 ---
 
-## Offizielles Repository
+### Offizielles Repository
 
 Open-Source-Repository der JUXI-treiberfreien USB-Soundkarte: [GitHub](https://github.com/Juxi-Technology/Driver-Free-Sound-Card)
 

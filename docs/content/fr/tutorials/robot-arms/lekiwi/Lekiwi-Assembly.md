@@ -12,7 +12,7 @@ description: "Dans Fusion360 CAD en ligne, les positions exactes des composants 
 [Fichier URDF](https://gitcode.com/gh_mirrors/le/LeKiwi/tree/main)
 Prévisualisation URDF en ligne https://urdf.d-robotics.cc/
 
-# 1. Monter le module de roue (3 par robot)
+## 1. Monter le module de roue (3 par robot)
 
 1. Fixer le moteur d'entraînement au support moteur avec 12 vis autotaraudeuses **M2x6** (fournies avec le boîtier servo).
 
@@ -68,7 +68,7 @@ Une fois les trois roues montées sur la plaque de base :
 
 
 
-# 2. Assemblage de la plaque de base
+## 2. Assemblage de la plaque de base
 
 1. Insérer les écrous M3 dans les trous de la carte driver de servos et du support de batterie. Fixer les deux à la plaque de base avec 4 vis M3x12.
 
@@ -115,7 +115,7 @@ Les câbles se connectent comme sur la figure :
 
 
 
-# 3. Assemblage de la plaque supérieure
+## 3. Assemblage de la plaque supérieure
 
 1. Placer le Raspberry Pi 5 dans la partie inférieure du boîtier et encliqueter le couvercle.
 2. Fixer le Raspberry Pi à la plaque supérieure avec deux vis M3x12 et deux écrous frein M3, puis monter le socle du bras SO-101 avec quatre vis M4x25 et quatre écrous frein M4. On peut utiliser notre socle SO-101 amélioré ou l'original – la plaque a des trous pour les deux.
@@ -124,7 +124,7 @@ Les câbles se connectent comme sur la figure :
 
 
 
-# 4.
+## 4.
 
 1. Faire passer le câble USB-C vers USB-A de la carte driver, le câble d'alimentation USB-C 5 V et le câble servo SO0-101 par les trous de la plaque supérieure.
 
@@ -140,20 +140,20 @@ Les câbles se connectent comme sur la figure :
 
 3. Relier plaque supérieure et plaque de base avec 6 entretoises laiton M3*50 et 6 vis à métaux M3*
 
-# 5. Installer la caméra
+## 5. Installer la caméra
 
 *Remarque : notre support est conçu pour la caméra choisie. D'autres modules caméra peuvent nécessiter des modifications.*
 
-## (Option 1) Installer la caméra avant
+### (Option 1) Installer la caméra avant
 
 Monter le support de caméra avant sur la plaque de base avec 3 vis m3*12 et trois écrous m3
 Fixer le module caméra avec 4 vis entretoises m2*5*5
 
-## (Option 2) Installer la caméra montée sur bras
+### (Option 2) Installer la caméra montée sur bras
 
 Fixer le module caméra avec 4 vis entretoises m2*5*5
 
-# 6. Brancher l'alimentation
+## 6. Brancher l'alimentation
 
 Insérer l'adaptateur cylindrique DC dans la carte driver et le connecteur USB-C 5 V dans le Raspberry Pi 5 pour alimenter l'électronique. Les câbles de données USB de la carte driver et de la caméra se branchent directement sur le Raspberry Pi.
 

@@ -14,7 +14,7 @@ description: "As posições precisas dos componentes podem ser visualizadas no C
 
 Visualização online do URDF https://urdf.d-robotics.cc/
 
-# 1. Monte o módulo de rodas (3 por robô)
+## 1. Monte o módulo de rodas (3 por robô)
 
 1. Fixe o motor de tração ao suporte do motor a usar 12 parafusos autorroscantes **M2x6**. (Acompanham a caixa de servos)
 
@@ -52,7 +52,7 @@ Depois que as três rodas forem instaladas na placa base:
 
 ![imagem – 10](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/18.jpg)
 
-# 2. Montagem da placa base
+## 2. Montagem da placa base
 
 1. Insira as porcas M3 nos furos da placa de acionamento de servos e do suporte da bateria. Fixe ambos à placa base com 4 parafusos de máquina M3x12.
 
@@ -84,7 +84,7 @@ O cabo pode ser conectado como mostra a figura abaixo:
 
 ![imagem – 18](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/5.jpg)
 
-# 3. Montagem da placa superior
+## 3. Montagem da placa superior
 
 1. Coloque o Raspberry Pi 5 na parte inferior do gabinete do Raspberry Pi e encaixe a tampa do gabinete.
 
@@ -92,7 +92,7 @@ O cabo pode ser conectado como mostra a figura abaixo:
 
 ![imagem – 19](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/6.jpg)
 
-# 4.
+## 4.
 
 1. Passe o cabo USB-C para USB-A da placa de acionamento de servos, o cabo de alimentação USB-C de 5V e o cabo do servo SO0-101 pelos furos das placas superior e inferior.
 
@@ -106,11 +106,11 @@ O cabo pode ser conectado como mostra a figura abaixo:
 
 
 
-# 5. Instale a câmara
+## 5. Instale a câmara
 
 *Observação: o suporte que projetamos é específico para a câmara que selecionamos. Podem ser necessárias modificações para módulos de câmara diferentes.*
 
-## (Opção 1) Instalar a câmara de visão frontal 
+### (Opção 1) Instalar a câmara de visão frontal 
 
 Instale o suporte da câmara de visão frontal na placa base com 3 parafusos de máquina M3\*12 e 3 porcas M3 
 
@@ -120,13 +120,13 @@ Fixe o módulo da câmara com 4 parafusos com arruela m2\*5\*5
 
 
 
-## (Opção 2) Instalar uma câmara montada no braço 
+### (Opção 2) Instalar uma câmara montada no braço 
 
 
 
 Fixe o módulo da câmara com 4 parafusos com arruela m2\*5\*5 
 
-# 6. Conecte a alimentação
+## 6. Conecte a alimentação
 
 
 

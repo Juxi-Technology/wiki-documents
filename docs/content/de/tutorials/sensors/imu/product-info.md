@@ -8,11 +8,11 @@ description: "Hochpräzises IMU-Attitude-Sensor: 72MHz 32-Bit-Prozessor, Echtzei
 > **[Im Shop kaufen](https://www.juxitech.com/de/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
 
 
-# Einführung in das IMU-Modul
+## Einführung in das IMU-Modul
 
 Hochpräziser IMU-Attitüdensensor mit integriertem **72-MHz-Hochleistungs-32-Bit-Prozessor** für Echtzeit-Attitüdenberechnung und dynamische Kompensation bei einer Datenausgabefrequenz von bis zu 100 Hz – vereint die Vorteile schneller Reaktion und stabiler Ausgabe. Unterstützt sowohl IIC- als auch serielle Kommunikationsmodi, ist kompatibel mit Mikrocontroller- und Linux-Hosts und lässt sich nahtlos in das ROS-System integrieren; weit verbreitet in leistungsstarken Anwendungsszenarien wie der Bewegungssteuerung von Robotern, der Lagestabilisierung von UAVs sowie der intelligenten Navigation und Positionierung.
 
-# 1. Versionsübersicht
+## 1. Versionsübersicht
 
 | Leistungsvergleich                |                                                      |                                                              |                                                              |
 | --------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -28,7 +28,7 @@ Hochpräziser IMU-Attitüdensensor mit integriertem **72-MHz-Hochleistungs-32-Bi
 | Kommunikationsart                 | IIC / seriell                                        |                                                              |                                                              |
 | Positionierung / Anwendungsszenarien | Für kostenorientierte Anwendungen entwickelt, erfüllt die Anforderungen für Anwendungen mit hoher dynamischer Reaktion | Basiert auf der 6-Achsen-Hardwarearchitektur mit integriertem 3-Achsen-Magnetometermodul und ist mit dem AHRS-Attitüden-Datenfusionsalgorithmus abgestimmt, was die Stabilität und Messgenauigkeit der Datenausgabe erheblich erhöht | Ergänzt die 9-Achsen-Sensorarchitektur um ein Barometer, das präzise Höheninformationen ausgeben kann, und eignet sich für Anwendungsszenarien mit höheren Anforderungen an die Wahrnehmung von Lage und Position im 3D-Raum |
 
-## Pin-Funktionsbeschreibung
+### Pin-Funktionsbeschreibung
 
 | SDA  | I2C-serielle Datenleitung     |
 | ---- | ----------------------------- |
@@ -40,7 +40,7 @@ Hochpräziser IMU-Attitüdensensor mit integriertem **72-MHz-Hochleistungs-32-Bi
 | GND  | Masse                         |
 | 5V   | 5V                            |
 
-# 2. Produktparameter
+## 2. Produktparameter
 
 | Produktparameter    |                                                              |
 | ------------------- | ------------------------------------------------------------ |
@@ -60,7 +60,7 @@ Hochpräziser IMU-Attitüdensensor mit integriertem **72-MHz-Hochleistungs-32-Bi
 | Produktgewicht      | 3.8g                                                         |
 | ROS-Unterstützung   | ROS1/ROS2                                                    |
 
-# 3. Sensor-Leistungsparameter
+## 3. Sensor-Leistungsparameter
 
 Leistungsparameter der IMU-Daten
 
@@ -89,6 +89,6 @@ Leistungsparameter des Barometers
 | RMS-Rauschen         | Standardmodus | 1Pa-RMS        |
 | Relative Genauigkeit |               | ±0.12hPa       |
 
-# 4. Abmessungsparameter
+## 4. Abmessungsparameter
 
 ![Pin-Funktionsbeschreibung – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjA3NmQ5NzIzMzdkYWZlMzZkYzcwOGIyOGRmMmYxYWJfNTAxNTBiYzRjZTk4MzJiY2YzMWZhMWY4NDI5ZTFjYTZfSUQ6NzYzODkyMjc2MDI5MDcxNjYwMl8xNzgwMzE3OTcyOjE3ODA0MDQzNzJfVjM)

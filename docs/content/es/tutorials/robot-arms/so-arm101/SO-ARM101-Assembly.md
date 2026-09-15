@@ -13,7 +13,7 @@ description: "Versión Pro: brazo líder 5V6A, brazo seguidor 12V5A"
 
 La configuración del ID de los servos, la calibración del ángulo de los servos y el montaje deben completarse con antelación; puede consultar el [tutorial de ensamblaje oficial](https://huggingface.co/docs/lerobot/so101)
 
-# Paso 1: Configurar el ID del servo e instalar la cruceta del servo (excepto el servo n.º 5)
+## Paso 1: Configurar el ID del servo e instalar la cruceta del servo (excepto el servo n.º 5)
 
 ![image – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
 
@@ -27,7 +27,7 @@ Si planea reutilizar motores de otros robots, es posible que también deba reali
 
 El siguiente video muestra los pasos secuenciales para configurar el ID del motor.
 
-## Sistema Windows
+### Sistema Windows
 
 飞特舵机上位机.zip
 
@@ -35,7 +35,7 @@ Use el controlador de servos Feite para configurar el ID del servo y calibrar el
 
 机械臂舵机设置ID-Windows系统.mp4
 
-## Sistema Linux/Ubuntu
+### Sistema Linux/Ubuntu
 
 Para el programa de host de FTServo, consulte https://gitee.com/ftservo/FTServo_Linux
 
@@ -87,7 +87,7 @@ lerobot-setup-motors \
 
 机械臂舵机设置ID-Linux系统.mp4
 
-# Paso 2: Montaje
+## Paso 2: Montaje
 
 - Los pasos de montaje del brazo seguidor son básicamente los mismos que los del brazo activo. La única diferencia es que, a partir del Paso 12, el método de instalación del efector final (pinza y mango) es diferente.
 

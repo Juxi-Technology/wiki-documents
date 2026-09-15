@@ -8,7 +8,7 @@ description: "Tutorial de la tarjeta de sonido USB sin controlador JUXI: softwar
 > **[Comprar en la tienda](https://www.juxitech.com/es/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction)**
 
 
-# Software de prueba visual (Windows)
+## Software de prueba visual (Windows)
 
 [audio_tools.7z](https://juxitech.feishu.cn/wiki/Wuc3wAppNi5elfkSI6VccrNDnfE)
 
@@ -43,11 +43,11 @@ speaker-test -c 2 -D plughw:X,0
 
 - Reiniciar el servicio de audio: `sudo systemctl restart alsa` (en algunos entornos puede requerir reinicio: `sudo reboot`)
 
-# Serie Jetson y sistema Ubuntu y Raspberry Pi
+## Serie Jetson y sistema Ubuntu y Raspberry Pi
 
-## Depuración por línea de comandos
+### Depuración por línea de comandos
 
-### 1. Conectar la tarjeta de sonido USB
+#### 1. Conectar la tarjeta de sonido USB
 
 1. Antes de insertar la tarjeta de sonido USB, ver los dispositivos USB con `lsusb`:
 
@@ -65,7 +65,7 @@ speaker-test -c 2 -D plughw:X,0
 
 ![1. Conectar la tarjeta de sonido USB – 4](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
-### 2. Usar la tarjeta de sonido USB
+#### 2. Usar la tarjeta de sonido USB
 
 Si `arecord -l` muestra por ejemplo UACDemoV1.0, esa es nuestra tarjeta de sonido. Si es card 0; device 0, en el comando se cambia a plughw:0,0 para designar ese dispositivo de grabación:
 
@@ -110,7 +110,7 @@ Explicación de parámetros:
 
 - -d 5: establece la duración de grabación en segundos.
 
-## Visualización con PulseAudio
+### Visualización con PulseAudio
 
 ![Visualización con PulseAudio – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/7.png)
 
@@ -134,13 +134,13 @@ Ver PulseAudio por [línea de comandos](https://so.csdn.net/so/search?q=%E5%91%B
 >
 > RUNNING indica que el micrófono está en uso
 
-## Llamar a la tarjeta de sonido USB sin controlador desde Python
+### Llamar a la tarjeta de sonido USB sin controlador desde Python
 
 Buscar ejemplos de código, por ejemplo «[Python调用USB免驱声卡](https://blog.csdn.net/weixin_44463519/article/details/157463731?spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EYuanLiJiHua%7ECtr-3-157463731-blog-105694458.235%5Ev43%5Epc_blog_bottom_relevance_base9&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EYuanLiJiHua%7ECtr-3-157463731-blog-105694458.235%5Ev43%5Epc_blog_bottom_relevance_base9&utm_relevant_index=4)»
 
-## Resumen de problemas
+### Resumen de problemas
 
-### Jetson
+#### Jetson
 
 1. Dispositivo ocupado
 
@@ -166,7 +166,7 @@ Matar el proceso `kill -9 PID`, donde PID es el que aparece tras insertar la tar
 
 Luego volver a grabar y reproducir
 
-### Raspberry Pi
+#### Raspberry Pi
 
 1. Mucho ruido
 
@@ -194,15 +194,15 @@ sudo chmod 664 /var/lib/alsa/asound.state
 sudo alsactl store
 ```
 
-### Máquina virtual Ubuntu
+#### Máquina virtual Ubuntu
 
 1. Ruido al grabar
 
 Solución: cambiar la compatibilidad del controlador USB a 3.0 o 3.1
 
-# RDK x3&x5
+## RDK x3&x5
 
-## Comprobar el número de dispositivo
+### Comprobar el número de dispositivo
 
 Comprobar si existe la tarjeta de sonido y su número de dispositivo.
 
@@ -232,7 +232,7 @@ by-path/   controlC0  pcmC0D0c   pcmC0D0p   timer
 
 Con estas comprobaciones se confirma: la tarjeta de sonido 0 es la tarjeta integrada; los dispositivos existen y su número es `0-0`. Los dispositivos que realmente operamos son `pcmC0D0p` y `pcmC0D0c`.
 
-## Grabar 5 segundos de sonido para probar
+### Grabar 5 segundos de sonido para probar
 
 `arecord -D plughw:0,0 -f S16_LE -r 16000 -d 5 -t wav test.wav`
 
@@ -271,17 +271,17 @@ Explicación de parámetros:
 
 - -d 5: establece la duración de grabación en segundos.
 
-## Preguntas frecuentes
+### Preguntas frecuentes
 
-### ¿Cómo distinguir la tarjeta de sonido USB de la tarjeta integrada en una placa RDK?
+#### ¿Cómo distinguir la tarjeta de sonido USB de la tarjeta integrada en una placa RDK?
 
-### ¿Cómo hacer que la subplaca de audio de la serie RDK X3 coexista con la tarjeta de sonido USB y se usen a la vez?
+#### ¿Cómo hacer que la subplaca de audio de la serie RDK X3 coexista con la tarjeta de sonido USB y se usen a la vez?
 
-### ¿Cómo activar las funciones de audio del RDKS100 mediante la interfaz gráfica?
+#### ¿Cómo activar las funciones de audio del RDKS100 mediante la interfaz gráfica?
 
 Consultar [Procesamiento y aplicación multimedia RDK](https://developer.d-robotics.cc/rdk_doc/FAQ/multimedia#usb-%E5%A3%B0%E5%8D%A1%E5%92%8C%E6%9D%BF%E8%BD%BD%E5%A3%B0%E5%8D%A1%E5%A6%82%E4%BD%95%E5%8C%BA%E5%88%86%E4%BD%BF%E7%94%A8)
 
-# Comprobar el controlador de audio básico
+## Comprobar el controlador de audio básico
 
 Si la tarjeta de sonido USB sin controlador funciona depende **fundamentalmente del kernel**
 
@@ -315,7 +315,7 @@ CONFIG_SND_USB_CAIAQ=y
 sudo modprobe snd_usb_audio
 ```
 
-#### Paso 2: instalar las herramientas de audio básicas (ausentes por defecto en la versión ligera)
+##### Paso 2: instalar las herramientas de audio básicas (ausentes por defecto en la versión ligera)
 
 Los sistemas ligeros normalmente no tienen `alsa-utils`; hay que instalarlos manualmente:
 
@@ -326,7 +326,7 @@ sudo apt update && sudo apt install -y alsa-utils usbutils
 # Sin red: descargar el paquete offline de alsa-utils e instalarlo con dpkg -i
 ```
 
-#### Paso 3: verificar el reconocimiento y funcionamiento de la tarjeta de sonido USB
+##### Paso 3: verificar el reconocimiento y funcionamiento de la tarjeta de sonido USB
 
 1. Insertar la tarjeta de sonido USB y comprobar el reconocimiento:
 
@@ -347,7 +347,7 @@ Si en la salida aparece una entrada `card X` relacionada con `USB Audio`, el rec
 speaker-test -c 2 -D plughw:X,0
 ```
 
-#### Paso 4: (opcional) instalar un servicio de audio (para escritorio / reproducción en segundo plano)
+##### Paso 4: (opcional) instalar un servicio de audio (para escritorio / reproducción en segundo plano)
 
 Para reproducir en segundo plano o con entorno de escritorio, en versiones ligeras hay que instalar un servicio de audio adicional:
 
@@ -359,7 +359,7 @@ sudo apt install -y pulseaudio
 sudo apt install -y pipewire pipewire-alsa
 ```
 
-### Problemas comunes de los sistemas ligeros y soluciones
+#### Problemas comunes de los sistemas ligeros y soluciones
 
 **1. Permisos insuficientes: el usuario normal no puede acceder a la tarjeta de sonido**
 
@@ -393,7 +393,7 @@ sudo reboot
 
 ---
 
-## Repositorio oficial
+### Repositorio oficial
 
 Repositorio open source de la tarjeta de sonido USB sin controlador JUXI: [GitHub](https://github.com/Juxi-Technology/Driver-Free-Sound-Card)
 

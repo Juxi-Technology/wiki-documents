@@ -8,7 +8,7 @@ description: "Tutoriel de la carte son USB sans pilote JUXI : logiciel de test, 
 > **[Acheter en boutique](https://www.juxitech.com/fr/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction)**
 
 
-# Logiciel de test visuel (Windows)
+## Logiciel de test visuel (Windows)
 
 [audio_tools.7z](https://juxitech.feishu.cn/wiki/Wuc3wAppNi5elfkSI6VccrNDnfE)
 
@@ -43,11 +43,11 @@ speaker-test -c 2 -D plughw:X,0
 
 - Redémarrer le service audio : `sudo systemctl restart alsa` (un redémarrage du système peut être nécessaire : `sudo reboot`)
 
-# Série Jetson & système Ubuntu & Raspberry Pi
+## Série Jetson & système Ubuntu & Raspberry Pi
 
-## Débogage en ligne de commande
+### Débogage en ligne de commande
 
-### 1. Brancher la carte son USB
+#### 1. Brancher la carte son USB
 
 1. Avant d'insérer la carte son USB, afficher les périphériques USB avec `lsusb` :
 
@@ -65,7 +65,7 @@ speaker-test -c 2 -D plughw:X,0
 
 ![1. Brancher la carte son USB – 4](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
-### 2. Utiliser la carte son USB
+#### 2. Utiliser la carte son USB
 
 Si `arecord -l` affiche par exemple UACDemoV1.0, c'est notre carte son. Pour card 0 ; device 0, remplacer dans la commande par plughw:0,0 afin de désigner ce périphérique d'enregistrement :
 
@@ -110,7 +110,7 @@ Explication des paramètres :
 
 - -d 5 : définit la durée d'enregistrement en secondes.
 
-## Affichage visuel avec PulseAudio
+### Affichage visuel avec PulseAudio
 
 ![Affichage visuel avec PulseAudio – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/7.png)
 
@@ -134,13 +134,13 @@ Vérifier PulseAudio en [ligne de commande](https://so.csdn.net/so/search?q=%E5%
 >
 > RUNNING = micro en cours d'utilisation
 
-## Appeler la carte son USB sans pilote depuis Python
+### Appeler la carte son USB sans pilote depuis Python
 
 Chercher vous-même des exemples, par exemple « [Python调用USB免驱声卡](https://blog.csdn.net/weixin_44463519/article/details/157463731?spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EYuanLiJiHua%7ECtr-3-157463731-blog-105694458.235%5Ev43%5Epc_blog_bottom_relevance_base9&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EYuanLiJiHua%7ECtr-3-157463731-blog-105694458.235%5Ev43%5Epc_blog_bottom_relevance_base9&utm_relevant_index=4) »
 
-## Récapitulatif des problèmes
+### Récapitulatif des problèmes
 
-### Jetson
+#### Jetson
 
 1. Périphérique occupé
 
@@ -166,7 +166,7 @@ Tuer le processus `kill -9 PID` ; PID = celui apparu après le branchement (3373
 
 Puis relancer l'enregistrement et la lecture
 
-### Raspberry Pi
+#### Raspberry Pi
 
 1. Bruit important
 
@@ -194,15 +194,15 @@ sudo chmod 664 /var/lib/alsa/asound.state
 sudo alsactl store
 ```
 
-### Machine virtuelle Ubuntu
+#### Machine virtuelle Ubuntu
 
 1. Parasites à l'enregistrement
 
 Solution : changer la compatibilité du contrôleur USB en 3.0 ou 3.1
 
-# RDK x3&x5
+## RDK x3&x5
 
-## Vérifier les numéros de périphérique
+### Vérifier les numéros de périphérique
 
 Vérifier que la carte son existe et quel est son numéro.
 
@@ -232,7 +232,7 @@ by-path/   controlC0  pcmC0D0c   pcmC0D0p   timer
 
 Ces vérifications confirment : la carte son 0 est la carte son embarquée ; les périphériques existent avec le numéro `0-0`. Les périphériques réellement utilisés sont `pcmC0D0p` et `pcmC0D0c`.
 
-## Enregistrer 5 secondes de son pour tester
+### Enregistrer 5 secondes de son pour tester
 
 `arecord -D plughw:0,0 -f S16_LE -r 16000 -d 5 -t wav test.wav`
 
@@ -271,17 +271,17 @@ Explication des paramètres :
 
 - -d 5 : définit la durée d'enregistrement en secondes.
 
-## Questions fréquentes
+### Questions fréquentes
 
-### Comment distinguer la carte son USB de la carte son embarquée sur un board RDK ?
+#### Comment distinguer la carte son USB de la carte son embarquée sur un board RDK ?
 
-### Comment faire coexister la sous-carte audio de la série RDK X3 avec la carte son USB et les utiliser simultanément ?
+#### Comment faire coexister la sous-carte audio de la série RDK X3 avec la carte son USB et les utiliser simultanément ?
 
-### Comment activer les fonctions audio du RDKS100 via l'interface graphique ?
+#### Comment activer les fonctions audio du RDKS100 via l'interface graphique ?
 
 Voir [Traitement et applications multimédia RDK](https://developer.d-robotics.cc/rdk_doc/FAQ/multimedia#usb-%E5%A3%B0%E5%8D%A1%E5%92%8C%E6%9D%BF%E8%BD%BD%E5%A3%B0%E5%8D%A1%E5%A6%82%E4%BD%95%E5%8C%BA%E5%88%86%E4%BD%BF%E7%94%A8)
 
-# Vérifier le pilote audio de base
+## Vérifier le pilote audio de base
 
 Que la carte son USB sans pilote fonctionne dépend **essentiellement du noyau**
 
@@ -315,7 +315,7 @@ CONFIG_SND_USB_CAIAQ=y
 sudo modprobe snd_usb_audio
 ```
 
-#### Étape 2 : installer les outils audio de base (absents par défaut en version allégée)
+##### Étape 2 : installer les outils audio de base (absents par défaut en version allégée)
 
 Les systèmes allégés n'ont généralement pas `alsa-utils` ; les installer manuellement :
 
@@ -326,7 +326,7 @@ sudo apt update && sudo apt install -y alsa-utils usbutils
 # Sans réseau : télécharger le paquet offline d'alsa-utils et l'installer avec dpkg -i
 ```
 
-#### Étape 3 : vérifier la reconnaissance et le fonctionnement de la carte son USB
+##### Étape 3 : vérifier la reconnaissance et le fonctionnement de la carte son USB
 
 1. Insérer la carte son USB et vérifier la reconnaissance :
 
@@ -347,7 +347,7 @@ Une entrée `card X` liée à `USB Audio` dans la sortie signifie que la reconna
 speaker-test -c 2 -D plughw:X,0
 ```
 
-#### Étape 4 : (facultatif) installer un service audio (pour le bureau / la lecture en arrière-plan)
+##### Étape 4 : (facultatif) installer un service audio (pour le bureau / la lecture en arrière-plan)
 
 Pour la lecture en arrière-plan ou avec un environnement de bureau, les versions allégées nécessitent un service audio supplémentaire :
 
@@ -359,7 +359,7 @@ sudo apt install -y pulseaudio
 sudo apt install -y pipewire pipewire-alsa
 ```
 
-### Problèmes courants des versions allégées et solutions
+#### Problèmes courants des versions allégées et solutions
 
 **1. Droits insuffisants : l'utilisateur normal ne peut pas accéder à la carte son**
 
@@ -393,7 +393,7 @@ sudo reboot
 
 ---
 
-## Dépôt officiel
+### Dépôt officiel
 
 Dépôt open source de la carte son USB sans pilote JUXI : [GitHub](https://github.com/Juxi-Technology/Driver-Free-Sound-Card)
 

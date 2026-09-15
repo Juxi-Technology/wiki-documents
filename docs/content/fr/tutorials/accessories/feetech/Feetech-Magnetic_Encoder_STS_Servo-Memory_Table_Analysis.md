@@ -8,28 +8,28 @@ description: "Le servo utilise le protocole personnalisé FT-SCS. Configuration 
 > **[Acheter en boutique](https://www.juxitech.com/fr/products/feetech-scs0009-serial-bus-servo)**
 
 
-# 1 Protocole de communication du servo
+## 1 Protocole de communication du servo
 
 Le servo utilise le protocole personnalisé FT-SCS. Configuration série par défaut en usine : servo STS à 1 Mbit/s, communication TTL mono-bus, 8 bits de données, sans parité, 1 bit d'arrêt ; débit configurable 38400 à 1 Mbit/s, adresse de communication par défaut (n° de station) 1.
 [Protocole personnalisé FT-SCS](https://juxitech.feishu.cn/wiki/MTPLw8xCniTidGkm3amc27FXnKg) (protocole de communication SCS des servos)
 
-# 2 Définition de la table mémoire du servo
+## 2 Définition de la table mémoire du servo
 
 Si une adresse de fonction utilise des données sur deux octets, l'octet de poids faible est à l'adresse antérieure, l'octet de poids fort à l'adresse postérieure
 
-## 2.1 Informations de version
+### 2.1 Informations de version
 
-## 2.2 Configuration EPROM
+### 2.2 Configuration EPROM
 
-## 2.3 Contrôle SRAM
+### 2.3 Contrôle SRAM
 
-## 2.4 Retour SRAM
+### 2.4 Retour SRAM
 
-## 3.5 Paramètres d'usine
+### 3.5 Paramètres d'usine
 
-# 3 Explication des octets spéciaux
+## 3 Explication des octets spéciaux
 
-## 3.1 Phase du servo
+### 3.1 Phase du servo
 
 - Bits / poids : description
 
@@ -51,7 +51,7 @@ Si une adresse de fonction utilise des données sur deux octets, l'octet de poid
 
 Si plusieurs bits sont définis simultanément, la valeur de phase du servo est la somme des valeurs des bits. Exemple : phase initiale 0, servo fonctionne en sens inverse, phase = 128+1=129 ;
 
-## 3.2 État du servo
+### 3.2 État du servo
 
 État du servo : 0 = normal, 1 = anormal
 
@@ -75,7 +75,7 @@ Si plusieurs bits sont définis simultanément, la valeur de phase du servo est 
 
 Si plusieurs états coexistent, la valeur d'état du servo est la somme des valeurs des bits. Exemple : surtension/sous-tension et surchauffe du servo, état = 4+1=5 ;
 
-## 3.3 Conditions de délestage
+### 3.3 Conditions de délestage
 
 Conditions de délestage : 0 = désactivé, 1 = activé
 
@@ -99,7 +99,7 @@ Conditions de délestage : 0 = désactivé, 1 = activé
 
 Si plusieurs bits sont définis simultanément, la valeur de délestage est la somme des valeurs des bits. Exemple : protection de tension et protection de surchauffe activées, délestage = 4+1=5 ;
 
-## 3.4 Conditions d'alarme LED
+### 3.4 Conditions d'alarme LED
 
 Conditions d'alarme LED : 0 = désactivée, 1 = activée
 

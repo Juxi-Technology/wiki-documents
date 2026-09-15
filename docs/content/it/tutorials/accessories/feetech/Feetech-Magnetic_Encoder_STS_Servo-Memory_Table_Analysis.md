@@ -8,28 +8,28 @@ description: "Il servo utilizza il protocollo personalizzato FT-SCS. Configurazi
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/feetech-scs0009-serial-bus-servo)**
 
 
-# 1 Protocollo di comunicazione del servo
+## 1 Protocollo di comunicazione del servo
 
 Il servo utilizza il protocollo personalizzato FT-SCS. Configurazione seriale predefinita di fabbrica: servo STS a 1M, comunicazione TTL a bus singolo, 8 bit di dati, nessuna parità, 1 bit di stop; baudrate configurabile 38400~1Mbps, indirizzo di comunicazione predefinito (n. stazione) 1.
 [Protocollo personalizzato FT-SCS](https://juxitech.feishu.cn/wiki/MTPLw8xCniTidGkm3amc27FXnKg) (protocollo di comunicazione SCS dei servo)
 
-# 2 Definizione della tabella di memoria del servo
+## 2 Definizione della tabella di memoria del servo
 
 Se un indirizzo di funzione usa dati a due byte, il byte basso si trova all'indirizzo anteriore, il byte alto all'indirizzo posteriore
 
-## 2.1 Informazioni sulla versione
+### 2.1 Informazioni sulla versione
 
-## 2.2 Configurazione EPROM
+### 2.2 Configurazione EPROM
 
-## 2.3 Controllo SRAM
+### 2.3 Controllo SRAM
 
-## 2.4 Feedback SRAM
+### 2.4 Feedback SRAM
 
-## 3.5 Parametri di fabbrica
+### 3.5 Parametri di fabbrica
 
-# 3 Spiegazione dei byte speciali
+## 3 Spiegazione dei byte speciali
 
-## 3.1 Fase del servo
+### 3.1 Fase del servo
 
 - Bit / peso: descrizione
 
@@ -51,7 +51,7 @@ Se un indirizzo di funzione usa dati a due byte, il byte basso si trova all'indi
 
 Se si impostano più bit contemporaneamente, il valore di fase del servo è la somma dei valori dei bit. Esempio: fase originale 0, servo in rotazione inversa, fase = 128+1=129;
 
-## 3.2 Stato del servo
+### 3.2 Stato del servo
 
 Stato del servo: 0 = normale, 1 = anomalo
 
@@ -75,7 +75,7 @@ Stato del servo: 0 = normale, 1 = anomalo
 
 Se coesistono più stati, il valore di stato del servo è la somma dei valori dei bit. Esempio: sovratensione/sottotensione e surriscaldamento del servo, stato = 4+1=5;
 
-## 3.3 Condizioni di rilascio
+### 3.3 Condizioni di rilascio
 
 Condizioni di rilascio: 0 = disattivato, 1 = attivato
 
@@ -99,7 +99,7 @@ Condizioni di rilascio: 0 = disattivato, 1 = attivato
 
 Se si impostano più bit contemporaneamente, il valore di rilascio è la somma dei valori dei bit. Esempio: protezione della tensione e protezione dal surriscaldamento attive, rilascio = 4+1=5;
 
-## 3.4 Condizioni di allarme LED
+### 3.4 Condizioni di allarme LED
 
 Condizioni di allarme LED: 0 = disattivato, 1 = attivato
 

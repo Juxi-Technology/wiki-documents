@@ -14,7 +14,7 @@ description: "O braço ativo da versão Pro usa um adaptador de energia de 5V6A,
 
 A definição dos IDs dos servos, a calibração dos ângulos dos servos e a montagem devem ser concluídas antecipadamente; você pode consultar o [tutorial oficial de montagem](https://huggingface.co/docs/lerobot/so101)
 
-# Passo 1: Definir o ID do servo e instalar a palheta do servo (exceto o servo nº 5) 
+## Passo 1: Definir o ID do servo e instalar a palheta do servo (exceto o servo nº 5) 
 
 ![imagem – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
 
@@ -28,7 +28,7 @@ Se você planeja reutilizar motores de outros robôs, talvez também precise exe
 
 O vídeo a seguir mostra os passos sequenciais para definir o ID do motor. 
 
-## Sistema Windows
+### Sistema Windows
 
 飞特舵机上位机.zip
 
@@ -36,7 +36,7 @@ Use o software de controle de servos Feite para definir o ID dos servos e calibr
 
 机械臂舵机设置ID-Windows系统.mp4
 
-## Sistema Linux/Ubuntu
+### Sistema Linux/Ubuntu
 
 Para o software de host FTServo, consulte  https://gitee.com/ftservo/FTServo_Linux
 
@@ -88,7 +88,7 @@ lerobot-setup-motors \
 
 机械臂舵机设置ID-Linux系统.mp4
 
-# Passo 2: Montagem
+## Passo 2: Montagem
 
 - Os passos de montagem do braço seguidor são basicamente os mesmos do braço ativo. A única diferença é que, após o passo 12, o método de instalação do efetuador final (garra e alça) é diferente. 
 

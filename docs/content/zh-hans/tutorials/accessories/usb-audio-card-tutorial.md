@@ -8,7 +8,7 @@ description: "钜犀科技 USB 免驱声卡教程，涵盖可视化测试软件�
 > **[ 淘宝店铺 ](https://juxitechnology.taobao.com)**
 
 
-# 可视化测试软件（Windows）
+## 可视化测试软件（Windows）
 
 [audio_tools.7z](https://juxitech.feishu.cn/wiki/Wuc3wAppNi5elfkSI6VccrNDnfE)
 
@@ -43,11 +43,11 @@ speaker-test -c 2 -D plughw:X,0
 
 - 重启音频服务：`sudo systemctl restart alsa`（部分环境可能需要重启系统：`sudo reboot`）
 
-# Jetson系列主控&amp;Ubuntu系统&amp;树莓派
+## Jetson系列主控&amp;Ubuntu系统&amp;树莓派
 
-## 命令行调试
+### 命令行调试
 
-### 一、USB声卡接入
+#### 一、USB声卡接入
 
 1. 在插入USB声卡之前，我们使用 `lsusb` 命令查看一下USB设备：
 
@@ -65,7 +65,7 @@ speaker-test -c 2 -D plughw:X,0
 
 ![一、USB声卡接入 – 4](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
-### 二、USB声卡使用
+#### 二、USB声卡使用
 
 `arecord -l`，例如这里显示UACDemoV1.0即是我们的声卡，card 0；device 0，在命令中修改为plughw:0,0指定该录音设备
 
@@ -110,7 +110,7 @@ speaker-test -c 2 -D plughw:X,0
 
 - -d 5：设置录音时长/秒。
 
-## PulseAudio 可视化窗口查看
+### PulseAudio 可视化窗口查看
 
 ![PulseAudio 可视化窗口查看 – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/7.png)
 
@@ -136,13 +136,13 @@ speaker-test -c 2 -D plughw:X,0
 &gt;
 &gt;
 
-## python调用USB免驱声卡
+### python调用USB免驱声卡
 
 自行查找代码案例，例如搜索"[Python调用USB免驱声卡](https://blog.csdn.net/weixin_44463519/article/details/157463731?spm=1001.2101.3001.6650.3&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EYuanLiJiHua%7ECtr-3-157463731-blog-105694458.235%5Ev43%5Epc_blog_bottom_relevance_base9&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EYuanLiJiHua%7ECtr-3-157463731-blog-105694458.235%5Ev43%5Epc_blog_bottom_relevance_base9&amp;utm_relevant_index=4)"
 
-## 问题汇总
+### 问题汇总
 
-### Jetson
+#### Jetson
 
 1. 设备被占用问题
 
@@ -168,7 +168,7 @@ speaker-test -c 2 -D plughw:X,0
 
 然后重新录音、播放
 
-### 树莓派
+#### 树莓派
 
 1.噪音较大问题
 
@@ -196,15 +196,15 @@ sudo chmod 664 /var/lib/alsa/asound.state
 sudo alsactl store
 ```
 
-### Ubuntu虚拟机
+#### Ubuntu虚拟机
 
 1. 录音时有噪音杂音
 
 解决办法：USB控制器兼容性改为3.0或3.1
 
-# RDK x3&amp;x5
+## RDK x3&amp;x5
 
-## 查看设备编号
+### 查看设备编号
 
 检查声卡是否存在，检查设备编号。
 
@@ -234,7 +234,7 @@ by-path/   controlC0  pcmC0D0c   pcmC0D0p   timer
 
 通过上述查询，可以确认，声卡0对应的是板载声卡；设备也是存在的, 且设备号为 `0-0`, 实际我们操作的设备应该是 `pcmC0D0p` 和 `pcmC0D0c`。
 
-## 录制一段5秒的声音进行测试
+### 录制一段5秒的声音进行测试
 
 `arecord -D plughw:0,0 -f S16_LE -r 16000 -d 5 -t wav test.wav`
 
@@ -273,17 +273,17 @@ by-path/   controlC0  pcmC0D0c   pcmC0D0p   timer
 
 - -d 5：设置录音时长/秒。
 
-## 常见问题
+### 常见问题
 
-### RDK 板卡如何区分 USB 声卡与板载声卡？
+#### RDK 板卡如何区分 USB 声卡与板载声卡？
 
-### RDK X3 系列的音频子板如何与 USB 声卡共存并同时使用？
+#### RDK X3 系列的音频子板如何与 USB 声卡共存并同时使用？
 
-### RDKS100 如何通过图形化界面方式支持音频功能使用？
+#### RDKS100 如何通过图形化界面方式支持音频功能使用？
 
 参考 [RDK多媒体处理与应用](https://developer.d-robotics.cc/rdk_doc/FAQ/multimedia#usb-%E5%A3%B0%E5%8D%A1%E5%92%8C%E6%9D%BF%E8%BD%BD%E5%A3%B0%E5%8D%A1%E5%A6%82%E4%BD%95%E5%8C%BA%E5%88%86%E4%BD%BF%E7%94%A8)
 
-# 检查最基本的音频驱动
+## 检查最基本的音频驱动
 
 能否使用 USB 免驱声卡，**核心取决于内核**
 
@@ -317,7 +317,7 @@ CONFIG_SND_USB_CAIAQ=y
 sudo modprobe snd_usb_audio
 ```
 
-#### 步骤 2： 安装基础音频工具（精简版默认无）
+##### 步骤 2： 安装基础音频工具（精简版默认无）
 
 精简版系统通常没有 `alsa-utils` 这类工具，需手动安装：
 
@@ -328,7 +328,7 @@ sudo apt update &amp;&amp; sudo apt install -y alsa-utils usbutils
 # 无网络环境： 下载 alsa-utils 离线包，用 dpkg -i 安装
 ```
 
-#### 步骤 3： 验证 USB 声卡识别与功能
+##### 步骤 3： 验证 USB 声卡识别与功能
 
 1.插入 USB 声卡，执行命令确认设备识别：
 
@@ -349,7 +349,7 @@ aplay -l
 speaker-test -c 2 -D plughw:X,0
 ```
 
-#### 步骤 4： （可选）安装音频服务（桌面 / 后台播放需求）
+##### 步骤 4： （可选）安装音频服务（桌面 / 后台播放需求）
 
 若需要在后台播放音频、或搭配桌面环境使用，精简版需额外安装音频服务：
 
@@ -361,7 +361,7 @@ sudo apt install -y pulseaudio
 sudo apt install -y pipewire pipewire-alsa
 ```
 
-### 精简版系统的常见坑点及解决
+#### 精简版系统的常见坑点及解决
 
 **1.权限不足，普通用户无法访问声卡**
 
@@ -395,7 +395,7 @@ sudo reboot
 
 ---
 
-## 官方仓库
+### 官方仓库
 
 钜犀科技 USB 免驱声卡开源仓库：[GitHub](https://github.com/Juxi-Technology/Driver-Free-Sound-Card)
 

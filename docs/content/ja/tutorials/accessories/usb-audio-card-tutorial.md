@@ -8,7 +8,7 @@ description: "JUXI USBドライバ不要サウンドカードのチュートリ�
 > **[ストアで購入](https://www.juxitech.com/ja/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction)**
 
 
-# 可視化テストソフトウェア(Windows)
+## 可視化テストソフトウェア(Windows)
 
 [audio_tools.7z](https://juxitech.feishu.cn/wiki/Wuc3wAppNi5elfkSI6VccrNDnfE)
 
@@ -43,11 +43,11 @@ speaker-test -c 2 -D plughw:X,0
 
 - オーディオサービスの再起動: `sudo systemctl restart alsa`(環境によっては再起動が必要: `sudo reboot`)
 
-# Jetsonシリーズ主控&Ubuntuシステム&Raspberry Pi
+## Jetsonシリーズ主控&Ubuntuシステム&Raspberry Pi
 
-## コマンドラインによるデバッグ
+### コマンドラインによるデバッグ
 
-### 一、USBサウンドカードの接続
+#### 一、USBサウンドカードの接続
 
 1. USBサウンドカードを挿す前に、`lsusb` コマンドでUSBデバイスを確認します:
 
@@ -65,7 +65,7 @@ speaker-test -c 2 -D plughw:X,0
 
 ![一、USBサウンドカードの接続 – 4](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
-### 二、USBサウンドカードの使用
+#### 二、USBサウンドカードの使用
 
 `arecord -l` で、例えば UACDemoV1.0 と表示されるのが私たちのサウンドカードです。card 0; device 0 なら、コマンドでは plughw:0,0 に変更して録音デバイスを指定します:
 
@@ -110,7 +110,7 @@ Linux 付属の録音コマンドで、5秒間の音声を録音してテスト�
 
 - -d 5：録音時間(秒)を設定。
 
-## PulseAudio 可視化ウィンドウでの表示
+### PulseAudio 可視化ウィンドウでの表示
 
 ![PulseAudio 可視化ウィンドウでの表示 – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/7.png)
 
@@ -134,13 +134,13 @@ PulseAudio を[コマンドライン](https://so.csdn.net/so/search?q=%E5%91%BD%
 >
 > RUNNING はマイクが使用中であることを表します
 
-## pythonからUSBドライバ不要サウンドカードを呼び出す
+### pythonからUSBドライバ不要サウンドカードを呼び出す
 
 コード例はご自身で検索してください。例: "[Python调用USB免驱声卡](https://blog.csdn.net/weixin_44463519/article/details/157463731?spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EYuanLiJiHua%7ECtr-3-157463731-blog-105694458.235%5Ev43%5Epc_blog_bottom_relevance_base9&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EYuanLiJiHua%7ECtr-3-157463731-blog-105694458.235%5Ev43%5Epc_blog_bottom_relevance_base9&utm_relevant_index=4)"
 
-## 問題まとめ
+### 問題まとめ
 
-### Jetson
+#### Jetson
 
 1. デバイス使用中の問題
 
@@ -166,7 +166,7 @@ PulseAudio を[コマンドライン](https://so.csdn.net/so/search?q=%E5%91%BD%
 
 その後、録音・再生をやり直します
 
-### Raspberry Pi
+#### Raspberry Pi
 
 1.ノイズが多い問題
 
@@ -194,15 +194,15 @@ sudo chmod 664 /var/lib/alsa/asound.state
 sudo alsactl store
 ```
 
-### Ubuntu仮想マシン
+#### Ubuntu仮想マシン
 
 1. 録音時にノイズが入る
 
 解決方法：USBコントローラの互換性を3.0または3.1に変更
 
-# RDK x3&x5
+## RDK x3&x5
 
-## デバイス番号の確認
+### デバイス番号の確認
 
 サウンドカードが存在するか、デバイス番号を確認します。
 
@@ -232,7 +232,7 @@ by-path/   controlC0  pcmC0D0c   pcmC0D0p   timer
 
 上記の確認により、サウンドカード0がオンボードサウンドカードであると確認できます。デバイスも存在し、デバイス番号は `0-0` です。実際に操作するデバイスは `pcmC0D0p` と `pcmC0D0c` です。
 
-## 5秒間の音声を録音してテスト
+### 5秒間の音声を録音してテスト
 
 `arecord -D plughw:0,0 -f S16_LE -r 16000 -d 5 -t wav test.wav`
 
@@ -271,17 +271,17 @@ by-path/   controlC0  pcmC0D0c   pcmC0D0p   timer
 
 - -d 5：録音時間(秒)を設定。
 
-## よくある質問
+### よくある質問
 
-### RDKボードでUSBサウンドカードとオンボードサウンドカードを区別するには?
+#### RDKボードでUSBサウンドカードとオンボードサウンドカードを区別するには?
 
-### RDK X3 シリーズのオーディオサブボードとUSBサウンドカードを共存させて同時に使用するには?
+#### RDK X3 シリーズのオーディオサブボードとUSBサウンドカードを共存させて同時に使用するには?
 
-### RDKS100 でグラフィカルインターフェースからオーディオ機能を使用するには?
+#### RDKS100 でグラフィカルインターフェースからオーディオ機能を使用するには?
 
 [RDKマルチメディア処理と応用](https://developer.d-robotics.cc/rdk_doc/FAQ/multimedia#usb-%E5%A3%B0%E5%8D%A1%E5%92%8C%E6%9D%BF%E8%BD%BD%E5%A3%B0%E5%8D%A1%E5%A6%82%E4%BD%95%E5%8C%BA%E5%88%86%E4%BD%BF%E7%94%A8)を参照
 
-# 基本的なオーディオドライバの確認
+## 基本的なオーディオドライバの確認
 
 USBドライバ不要サウンドカードが使えるかどうかは、**カーネルが鍵**です
 
@@ -315,7 +315,7 @@ CONFIG_SND_USB_CAIAQ=y
 sudo modprobe snd_usb_audio
 ```
 
-#### 手順 2: 基本的なオーディオツールのインストール(最小構成版にはデフォルトで入っていない)
+##### 手順 2: 基本的なオーディオツールのインストール(最小構成版にはデフォルトで入っていない)
 
 最小構成システムには通常 `alsa-utils` などのツールがなく、手動インストールが必要です:
 
@@ -326,7 +326,7 @@ sudo apt update && sudo apt install -y alsa-utils usbutils
 # ネットワークのない環境: alsa-utils のオフラインパッケージをダウンロードし、dpkg -i でインストール
 ```
 
-#### 手順 3: USBサウンドカードの認識と機能の検証
+##### 手順 3: USBサウンドカードの認識と機能の検証
 
 1.USBサウンドカードを挿し、デバイス認識を確認:
 
@@ -347,7 +347,7 @@ aplay -l
 speaker-test -c 2 -D plughw:X,0
 ```
 
-#### 手順 4: (任意)オーディオサービスのインストール(デスクトップ/バックグラウンド再生用)
+##### 手順 4: (任意)オーディオサービスのインストール(デスクトップ/バックグラウンド再生用)
 
 バックグラウンドでオーディオ再生する場合、またはデスクトップ環境で使用する場合、最小構成版ではオーディオサービスの追加インストールが必要です:
 
@@ -359,7 +359,7 @@ sudo apt install -y pulseaudio
 sudo apt install -y pipewire pipewire-alsa
 ```
 
-### 最小構成システムのよくある問題と解決
+#### 最小構成システムのよくある問題と解決
 
 **1.権限不足で一般ユーザーがサウンドカードにアクセスできない**
 
@@ -393,7 +393,7 @@ sudo reboot
 
 ---
 
-## 公式リポジトリ
+### 公式リポジトリ
 
 JUXI USBドライバ不要サウンドカードのオープンソースリポジトリ: [GitHub](https://github.com/Juxi-Technology/Driver-Free-Sound-Card)
 

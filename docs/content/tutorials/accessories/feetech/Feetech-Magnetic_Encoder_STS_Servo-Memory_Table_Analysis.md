@@ -8,27 +8,27 @@ description: "The servo uses the FT-SCS Custom Communication Protocol, with the 
 > **[Buy in Store](https://www.juxitech.com/products/feetech-scs0009-serial-bus-servo)**
 
 
-# 1 Servo Communication Protocol
+## 1 Servo Communication Protocol
 
 The servo uses the FT-SCS Custom Communication Protocol, with the default serial port configuration at the factory. The default baud rate for the STS servo is 1M, using TTL single-bus communication, with 8 data bits, no parity, and 1 stop bit. The configurable range of the baud rate is 38400~1Mbps, and the default communication address (station number) is 1. [FT-SCS Custom Communication Protocol](https://juxitech.feishu.cn/wiki/MTPLw8xCniTidGkm3amc27FXnKg) (Servo SCS Communication Protocol) 
 
-# 2 Servo Memory Table Definition
+## 2 Servo Memory Table Definition
 
 If the function address uses two-byte data, the low-order byte is at the front address and the high-order byte is at the back address 
 
-## 2.1 Version Information
+### 2.1 Version Information
 
-## 2.2 EPROM Configuration
+### 2.2 EPROM Configuration
 
-## 2.3 SRAM Control
+### 2.3 SRAM Control
 
-## 2.4 SRAM Feedback
+### 2.4 SRAM Feedback
 
-## 2.5 Factory Parameters
+### 2.5 Factory Parameters
 
-# 3 Special Byte Explanation
+## 3 Special Byte Explanation
 
-## 3.1 Servo Phase
+### 3.1 Servo Phase
 
 - Digit/bit weight: Description
 
@@ -50,7 +50,7 @@ If the function address uses two-byte data, the low-order byte is at the front a
 
 If multiple bits are set simultaneously, the phase value of the servo is the sum of the values of each bit. For example: if the original phase value is 0 and the servo runs in reverse, the phase value is 128 + 1 = 129; 
 
-## 3.2 Servo Status
+### 3.2 Servo Status
 
 Steering gear status: 0 indicates normal, 1 indicates abnormal
 
@@ -74,7 +74,7 @@ Steering gear status: 0 indicates normal, 1 indicates abnormal
 
 If there are multiple states simultaneously, the state value of the servo is the sum of the individual bit values. For example, if there is overvoltage/undervoltage and servo overheating, the servo state value is 4 + 1 = 5; 
 
-## 3.3 Unloading Conditions
+### 3.3 Unloading Conditions
 
 Uninstall condition: 0 indicates off, 1 indicates on
 
@@ -98,7 +98,7 @@ Uninstall condition: 0 indicates off, 1 indicates on
 
 If multiple bits are set simultaneously, the unloading condition value of the servo is the sum of the values of each bit. For example, if both voltage protection and overheat protection are enabled, the unloading condition value is 4 + 1 = 5; 
 
-## 3.4 LED Alarm Conditions
+### 3.4 LED Alarm Conditions
 
 LED alarm condition: 0 indicates off, 1 indicates on
 

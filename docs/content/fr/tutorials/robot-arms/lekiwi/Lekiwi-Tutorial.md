@@ -24,7 +24,7 @@ Aperçu URDF en ligne https://urdf.d-robotics.cc/
 
 ![image – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
-## Principales caractéristiques
+### Principales caractéristiques
 
 1. **Open source et économique** : [Lekiwi](https://github.com/SIGRobotics-UIUC/LeKiwi) propose une solution de robot mobile open source à faible coût.
 
@@ -46,9 +46,9 @@ JUXI n'est responsable que de la qualité du matériel lui-même. Les tutoriels 
 
 - Contrôleur Raspberry Pi et caméra – à acheter séparément via l'interface de commande.
 
-## Liste de matériel (BOM)
+### Liste de matériel (BOM)
 
-## Environnement système initial
+### Environnement système initial
 
 **Pour Ubuntu x86 :**
 
@@ -72,17 +72,17 @@ JUXI n'est responsable que de la qualité du matériel lui-même. Les tutoriels 
 
 - Raspberry Pi 5 4G~16G
 
-### Configurer SSH
+#### Configurer SSH
 
 Après la configuration du Raspberry Pi, vous devez activer et configurer [SSH](https://www.raspberrypi.com/news/coding-on-raspberry-pi-remotely-with-visual-studio-code/) (Secure Shell Protocol), afin de pouvoir vous connecter au Raspberry Pi depuis votre ordinateur portable sans lui brancher d'écran, de clavier ni de souris. Vous pouvez [trouver un excellent tutoriel ici](https://www.raspberrypi.com/documentation/computers/remote-access.html#ssh). Vous pouvez vous connecter au Raspberry Pi via l'invite de commande (cmd), ou si vous utilisez VSCode, vous pouvez utiliser [cette](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) extension.
 
-## Guide d'impression 3D
+### Guide d'impression 3D
 
-### Pièces
+#### Pièces
 
 Nous fournissons des fichiers STL imprimables pour les pièces imprimées en 3D suivantes. Ces pièces peuvent être imprimées sur des imprimantes FDM grand public avec des filaments PLA génériques. Nous les avons testées sur l'imprimante Bambu Lab P1S. Pour tous les composants, nous les avons simplement chargés dans bambuslicer, automatiquement tournés et disposés, activé les supports recommandés, puis imprimés.
 
-### Paramètres d'impression
+#### Paramètres d'impression
 
 Les fichiers STL fournis peuvent être imprimés directement sur de nombreuses imprimantes FDM. Voici les réglages testés et recommandés ; d'autres réglages peuvent également fonctionner.
 
@@ -96,11 +96,11 @@ Les fichiers STL fournis peuvent être imprimés directement sur de nombreuses i
 
 - Si nécessaire, téléverser le G-code (fichier slicé) sur l'imprimante et imprimer
 
-# Installer LeRobot
+## Installer LeRobot
 
 Sur votre Raspberry Pi :
 
-### 1. [Installer Miniconda](https://docs.anaconda.com/miniconda/install/#quick-command-line-install) :
+#### 1. [Installer Miniconda](https://docs.anaconda.com/miniconda/install/#quick-command-line-install) :
 
 ```Python
 mkdir -p ~/miniconda3
@@ -109,11 +109,11 @@ bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 rm ~/miniconda3/miniconda.sh
 ```
 
-### 2. Redémarrer le Shell
+#### 2. Redémarrer le Shell
 
 Copier et coller la commande suivante dans votre Shell : `source ~/.bashrc` ou pour les utilisateurs Mac : `source ~/.bash_profile` ou `source ~/.zshrc` (si vous utilisez zsh)
 
-### 3. Créer et activer un nouvel environnement Conda pour LeRobot
+#### 3. Créer et activer un nouvel environnement Conda pour LeRobot
 
 ```Python
 conda create -y -n lerobot python=3.10
@@ -125,13 +125,13 @@ Puis activer votre environnement Conda (à faire à chaque ouverture du Shell po
 conda activate lerobot
 ```
 
-### 4. Cloner LeRobot :
+#### 4. Cloner LeRobot :
 
 ```Bash
 git clone https://github.com/huggingface/lerobot.git ~/lerobot
 ```
 
-### 5. Installer ffmpeg dans votre environnement :
+#### 5. Installer ffmpeg dans votre environnement :
 
 Avec `miniconda`, installer `ffmpeg` dans votre environnement :
 
@@ -151,14 +151,14 @@ Si vous rencontrez l'erreur suivante, vous pouvez également utiliser la command
 
 ![5. Installer ffmpeg dans votre environnement : – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
-### 6. Installer LeRobot avec les dépendances moteurs feetech :
+#### 6. Installer LeRobot avec les dépendances moteurs feetech :
 
 ```Bash
 cd ~/lerobot && pip install --no-binary=av -e ".[feetech]"
 pip install -e ".[lekiwi]"
 ```
 
-### 7. Régler le temps de connexion
+#### 7. Régler le temps de connexion
 
 Trouver le fichier config_lekiwi.py dans le répertoire `lerobot\src\lerobot\robots\lekiwi`
 
@@ -168,7 +168,7 @@ connection_time_s: int = 7200 # 也就是2小时
 
 
 
-## C. Installer LeRobot sur l'ordinateur portable
+### C. Installer LeRobot sur l'ordinateur portable
 
 Si LeRobot est déjà installé sur votre ordinateur portable, vous pouvez passer cette étape ; sinon, suivez les mêmes étapes que nous avons suivies sur le Raspberry Pi **pour continuer**.
 
@@ -177,15 +177,15 @@ Si LeRobot est déjà installé sur votre ordinateur portable, vous pouvez passe
 
 Sur votre ordinateur :
 
-### 1. [Installer Miniconda](https://docs.anaconda.com/miniconda/install/#quick-command-line-install) :
+#### 1. [Installer Miniconda](https://docs.anaconda.com/miniconda/install/#quick-command-line-install) :
 
-### 2. Redémarrer le Shell
+#### 2. Redémarrer le Shell
 
 Copier et coller la commande suivante dans votre Shell : `source ~/.bashrc` ou pour les utilisateurs Mac : `source ~/.bash_profile` ou `source ~/.zshrc` (si vous utilisez zsh)
 
 ![2. Redémarrer le Shell – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
-### 3. Créer et activer un nouvel environnement Conda pour LeRobot
+#### 3. Créer et activer un nouvel environnement Conda pour LeRobot
 
 ```Bash
 conda create -y -n lerobot python=3.10
@@ -197,13 +197,13 @@ Puis activer votre environnement Conda (à faire à chaque ouverture du Shell po
 conda activate lerobot
 ```
 
-### 4. Cloner LeRobot :
+#### 4. Cloner LeRobot :
 
 ```Bash
 git clone https://github.com/huggingface/lerobot.git ~/lerobot
 ```
 
-### 5. Installer ffmpeg dans votre environnement :
+#### 5. Installer ffmpeg dans votre environnement :
 
 Avec `miniconda`, installer `ffmpeg` dans votre environnement :
 
@@ -223,20 +223,20 @@ Si vous rencontrez l'erreur suivante, vous pouvez également utiliser la command
 
 ![5. Installer ffmpeg dans votre environnement : – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
-### 6. Installer LeRobot avec les dépendances moteurs feetech :
+#### 6. Installer LeRobot avec les dépendances moteurs feetech :
 
 ```Bash
 cd ~/lerobot && pip install --no-binary=av -e ".[feetech]"
 pip install -e ".[lekiwi]"
 ```
 
-# Configurer les moteurs
+## Configurer les moteurs
 
 ![6. Installer LeRobot avec les dépendances moteurs feetech : – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
 ![6. Installer LeRobot avec les dépendances moteurs feetech : – 2](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
-### **1. Trouver le port USB associé au bras robotique**
+#### **1. Trouver le port USB associé au bras robotique**
 
 Pour trouver le bon port d'un moteur, exécuter le script utilitaire suivant deux fois :
 
@@ -255,7 +255,7 @@ sudo chmod 666 /dev/ttyACM0
 sudo chmod 666 /dev/ttyACM1
 ```
 
-### **2. Configurer vos moteurs (les produits finis peuvent passer cette étape)**
+#### **2. Configurer vos moteurs (les produits finis peuvent passer cette étape)**
 
 Insérer chaque moteur de votre châssis en séquence et exécuter le script suivant. Il initialisera d'abord les servos du bras robotique (ID 6..1), puis initialisera les servos du châssis, en définissant leurs ID (ID 9..7). Si vous avez déjà calibré le bras robotique, vous pouvez appuyer continuellement sur Entrée pour écraser et passer :
 
@@ -267,7 +267,7 @@ lerobot-setup-motors \
 
 ![2. Configurer vos moteurs les produits finis peuvent passer cette étape – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
-### 3. Configurer le miroir HuggingFace domestique
+#### 3. Configurer le miroir HuggingFace domestique
 
 - Ubuntu
 
@@ -302,7 +302,7 @@ source ~/.zshrc
 # https://hf-mirror.com
 ```
 
-#### ①Créer un token
+##### ①Créer un token
 
 https://huggingface.co/settings/tokens
 
@@ -312,7 +312,7 @@ https://huggingface.co/settings/tokens
 
 ![①Créer un token – 3](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
-#### ②Noter le token
+##### ②Noter le token
 
 Par exemple, le mien est :
 
@@ -320,7 +320,7 @@ Par exemple, le mien est :
 hf_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-#### ③Lier le token
+##### ③Lier le token
 
 ```Shell
 hf auth login
@@ -330,7 +330,7 @@ hf auth whoami
 
 ![③Lier le token – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
-#### ④Créer un dépôt de dataset
+##### ④Créer un dépôt de dataset
 
 **Noter le nom du Owner et du Dataset, qui sont les \<hf_username\> et \<dateset_repo_id\> nécessaires plus tard**
 
@@ -340,7 +340,7 @@ hf auth whoami
 
 ![④Créer un dépôt de dataset – 3](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
-### 4. Mettre à jour la configuration !!!
+#### 4. Mettre à jour la configuration !!!
 
 Les fichiers de configuration sur LeKiwi LeRobot et l'ordinateur portable doivent être cohérents. Tout d'abord, nous devons trouver l'**adresse IP** du Raspberry Pi pour le robot mobile. Il s'agit de la même adresse IP que celle utilisée pour SSH. Nous devons également trouver le **port USB** de la carte driver de servos du bras leader sur l'ordinateur portable et le **port de la carte driver de servos sur LeKiwi**. Ces ports peuvent être trouvés via le script suivant.
 
@@ -357,7 +357,7 @@ Modifier ces quatre fichiers sous le répertoire example\\lekiwi
 
 ![4. Mettre à jour la configuration !!! – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
-#### ①Modifier teleoperate.py
+##### ①Modifier teleoperate.py
 
 remote_ip : adresse IP du Raspberry Pi
 
@@ -365,7 +365,7 @@ port : numéro de port lorsque le bras leader est connecté à un ordinateur ou 
 
 ![①Modifier teleoperate.py – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
-#### ②Modifier record.py
+##### ②Modifier record.py
 
 HF_REPO_ID : [nom d'utilisateur et nom du dataset sur Hugging Face](https://juxitech.feishu.cn/docx/DXtPd0iF1oO3aGxRChBcL3LSnFh?fromScene=spaceOverview#doxcnsAUzU1e1l6XIM07OE8grYg)
 
@@ -375,7 +375,7 @@ port : numéro de port lorsque le bras leader est connecté à un ordinateur ou 
 
 ![②Modifier record.py – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
-#### ③Modifier replay.py
+##### ③Modifier replay.py
 
 remote_ip : adresse IP du Raspberry Pi
 
@@ -383,11 +383,11 @@ remote_ip : adresse IP du Raspberry Pi
 
 ![③Modifier replay.py – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
-## Calibration
+### Calibration
 
 Nous devons maintenant calibrer le bras leader et le bras follower. Les servos des roues omnidirectionnelles n'ont pas besoin de calibration.
 
-### Calibrer le bras follower (monté sur la base Lekiwi)
+#### Calibrer le bras follower (monté sur la base Lekiwi)
 
 Exécuter la commande suivante sur votre ordinateur pour calibrer le bras leader. Remarque : l'image affichée ici est un exemple pour le modèle SO101.
 
@@ -408,7 +408,7 @@ lerobot-calibrate \
 
 Nous avons unifié les méthodes de calibration pour la plupart des robots. Premièrement, nous devons déplacer le robot vers une position où chaque articulation est à son **milieu de la plage de mouvement**, puis appuyer sur le bouton. Deuxièmement, nous déplaçons toutes les articulations sur toute leur plage. Vous pouvez [trouver ici](https://huggingface.co/docs/lerobot/en/so101#calibration-video) une vidéo du même processus de calibration pour le SO101 comme référence.
 
-# F. Téléopération
+## F. Téléopération
 
 Ouvrir une nouvelle invite Anaconda
 
@@ -435,11 +435,11 @@ L'écran de votre ordinateur portable doit afficher une interface similaire à c
 
 Si vous utilisez un autre clavier, vous pouvez modifier les réglages de touches de chaque commande dans [`LeKiwiClientConfig`](https://github.com/huggingface/lerobot/blob/main/src/lerobot/robots/lekiwi/config_lekiwi.py).
 
-## Dépannage de la communication
+### Dépannage de la communication
 
 Si vous rencontrez des problèmes de connexion au robot mobile SO101, suivez les étapes ci-dessous pour diagnostiquer et résoudre le problème.
 
-### 1. Vérifier la configuration de l'adresse IP
+#### 1. Vérifier la configuration de l'adresse IP
 
 Assurez-vous que la bonne adresse IP du Raspberry Pi est définie dans le fichier de configuration. Pour vérifier l'adresse IP du Raspberry Pi, exécutez la commande suivante (dans la ligne de commande du Pi) :
 
@@ -447,7 +447,7 @@ Assurez-vous que la bonne adresse IP du Raspberry Pi est définie dans le fichie
 hostname -I
 ```
 
-### 2. Vérifier si l'ordinateur portable/PC peut accéder au Pi
+#### 2. Vérifier si l'ordinateur portable/PC peut accéder au Pi
 
 Essayez de pinger le Raspberry Pi depuis l'ordinateur portable :
 
@@ -461,7 +461,7 @@ Si le ping échoue :
 
 - Vérifiez si SSH est activé sur le Pi.
 
-### 3. Essayer une connexion SSH
+#### 3. Essayer une connexion SSH
 
 Si vous ne pouvez pas vous connecter au Pi via SSH, cela peut être dû à une connexion incorrecte. Veuillez utiliser la commande suivante :
 
@@ -481,11 +481,11 @@ sudo raspi-config
 
 - Puis naviguer vers : **Interfacing Options -\> SSH** et l'activer.
 
-### 4. Cohérence des fichiers de configuration !!!
+#### 4. Cohérence des fichiers de configuration !!!
 
 Assurez-vous que les fichiers de configuration sur l'ordinateur portable/PC et le Raspberry Pi sont exactement les mêmes.
 
-# G. Enregistrer un dataset
+## G. Enregistrer un dataset
 
 Après vous être familiarisé avec la téléopération, vous pouvez utiliser LeKiwi pour enregistrer votre premier dataset.
 
@@ -515,7 +515,7 @@ Puis exécutez la commande suivante sur votre ordinateur portable pour enregistr
 python examples/lekiwi/record.py
 ```
 
-# H. Visualiser le dataset
+## H. Visualiser le dataset
 
 Si vous avez téléversé un dataset, vous pouvez [visualiser votre dataset en ligne](https://huggingface.co/spaces/lerobot/visualize_dataset) et copier-coller l'ID de dépôt généré par la commande suivante :
 
@@ -531,7 +531,7 @@ python lerobot/scripts/visualize_dataset_html.py \
   --local-files-only 1
 ```
 
-### Visualiser un dataset (optionnel, peut être tenté)
+#### Visualiser un dataset (optionnel, peut être tenté)
 
 ```Bash
 echo ${HF_USER}/my_lekiwi_dataset
@@ -553,7 +553,7 @@ lerobot-dataset-viz \
 
 Ici, `juxi` est le nom `repo_id` personnalisé lors de la collecte de données.
 
-#### Techniques de collecte de données
+##### Techniques de collecte de données
 
 Une fois que vous maîtrisez l'enregistrement de données, vous pouvez créer des datasets plus volumineux pour l'entraînement. Une bonne tâche de départ consiste à saisir des objets depuis différentes positions et à les placer dans des conteneurs. Nous recommandons d'enregistrer au moins 50 épisodes, avec 10 épisodes pour chaque position. Gardez la position de la caméra fixe et maintenez des gestes de saisie cohérents pendant l'enregistrement. De plus, assurez-vous que les objets que vous manipulez sont clairement visibles dans le cadre de la caméra. Un critère simple : vous devriez pouvoir accomplir cette tâche en observant uniquement le flux de la caméra.
 
@@ -563,11 +563,11 @@ Dans les chapitres suivants, vous entraînerez votre réseau de neurones. Après
 
 Si vous souhaitez approfondir ce sujet important, consultez notre article de blog sur ce qui constitue un excellent dataset [.](https://huggingface.co/blog/lerobot-datasets#what-makes-a-good-dataset)
 
-#### Dépannage :
+##### Dépannage :
 
 Sous Linux, si les touches fléchées gauche et droite et la touche Échap ne fonctionnent pas pendant la collecte de données, assurez-vous que la variable d'environnement `$DISPLAY` est définie. Voir [Limitations de pynput](https://pynput.readthedocs.io/en/latest/limitations.html#linux)
 
-# I. Rejouer un épisode
+## I. Rejouer un épisode
 
 Essayez maintenant de rejouer le premier épisode sur votre robot :
 
@@ -577,11 +577,11 @@ python examples/lekiwi/replay.py
 
 Félicitations 🎉, votre robot est prêt pour les tâches d'apprentissage autonome. Veuillez suivre la section d'entraînement de ce tutoriel pour commencer à l'entraîner : [Introduction aux robots du monde réel](https://huggingface.co/docs/lerobot/il_robots)
 
-## K. Évaluer votre stratégie
+### K. Évaluer votre stratégie
 
 Assurez-vous de modifier remote_ip, port et HF_MODEL_ID
 
-#### Modifier evaluate.py
+##### Modifier evaluate.py
 
 HF_MODEL_ID="\<hf_username\>/\<model_repo_id\>" doit être modifié en le nom du dataset téléversé sur Hugging Face après l'entraînement (si téléversé sur Hugging Face) ou le répertoire où le modèle est exporté en local après l'entraînement
 
@@ -607,7 +607,7 @@ https://github.com/Ekumen-OS/lekiwi/tree/main
 
 https://github.com/SIGRobotics-UIUC/LeKiwi-sim
 
-## Aide 🙋
+### Aide 🙋
 
 Pour les problèmes matériels, veuillez contacter le service client. Pour les problèmes d'utilisation, veuillez rejoindre Discord.
 
