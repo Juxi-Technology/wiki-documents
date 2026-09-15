@@ -19,6 +19,10 @@ outline: false
     <span class="pc-title">4K HDMI 캡처 카드</span>
     <p class="pc-desc">Juxi Technology 4K HDMI 캡처 카드 — 4K 고화질 캡처, HDMI/Micro HDMI/DP 다중 인터페이스, USB 직결, 방송·녹화</p>
   </a>
+  <a :href="withBase('/ko/products/ai-voice-module')" class="category-card">
+    <span class="pc-title">AI 음성 인터랙션 모듈</span>
+    <p class="pc-desc">Juxi Technology AI 음성 인터랙션 모듈(CI1302) — 110+개 오프라인 음성 명령어, 5m 이내 인식률 99%, 사용자 정의 중국어/영어 명령어 지원, 시리얼/IIC 통신, Arduino/Jetson/RDK/Raspberry Pi/PC 지원</p>
+  </a>
   <a :href="withBase('/ko/products/amazinghand')" class="category-card">
     <span class="pc-title">AmazingHand 오픈소스 4손가락 정교 손</span>
     <p class="pc-desc">Juxi Technology AmazingHand 오픈소스 4손가락 정교 손, TTL 버스 제어, 오픈 CAD, 구현 지능·HRI 연구</p>
@@ -86,6 +90,10 @@ outline: false
   <a :href="withBase('/ko/products/usb-sound-card')" class="category-card">
     <span class="pc-title">USB 드라이버 프리 사운드 카드</span>
     <p class="pc-desc">Juxi Technology USB 드라이버 프리 사운드 카드 — 온보드 마이크+스피커, 플러그 앤 플레이, 노이즈 저감, Raspberry Pi/Jetson/PC 지원</p>
+  </a>
+  <a :href="withBase('/ko/products/xlerobot')" class="category-card">
+    <span class="pc-title">XLeRobot 양팔 이동 로봇</span>
+    <p class="pc-desc">Juxi Technology XLeRobot 양팔 이동 로봇 — SO-ARM101 양팔 + 전방향 바퀴 섀시 + 카메라 타워, 듀얼 서보 드라이버 보드 12V 전원, LeRobot 생태계, 완제품/부품 키트 두 가지 형태</p>
   </a>
 </div>
 

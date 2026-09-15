@@ -31,3 +31,4 @@ Mova a chave deslizante para o modo de porta serial STC8
 
 Você poderá ouvir o módulo de voz reproduzindo normalmente.
 
+<RelatedProducts slugs="ai-voice-module" />

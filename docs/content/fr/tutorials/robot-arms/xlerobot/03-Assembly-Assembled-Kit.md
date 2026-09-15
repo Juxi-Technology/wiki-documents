@@ -91,3 +91,4 @@ Câble d'alimentation PD vers DC12V3A
 
 ![Image 20](../../../../../public/images/tutorials/robot-arms/xlerobot/03-Assembly-Assembled-Kit/20.png)
 
+<RelatedProducts slugs="xlerobot" />

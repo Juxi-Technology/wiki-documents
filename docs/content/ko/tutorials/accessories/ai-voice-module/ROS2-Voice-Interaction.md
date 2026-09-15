@@ -347,3 +347,4 @@ ros2 topic echo /juxi_voice_cmd
 
 데이터가 있음 → RViz 설정 문제, 데이터가 없음 → 배선/통신 이상.
 
+<RelatedProducts slugs="ai-voice-module" />

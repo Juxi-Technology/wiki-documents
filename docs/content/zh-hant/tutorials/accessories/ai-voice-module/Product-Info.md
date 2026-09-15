@@ -51,7 +51,4 @@ CI1302 晶片具有腦神經網路處理器核(BNPU)，支援離線 NN 加速運
 
 ![圖 1](../../../../../public/images/tutorials/accessories/ai-voice-module/Product-Info/1.png)
 
-
-
-
-
+<RelatedProducts slugs="ai-voice-module" />

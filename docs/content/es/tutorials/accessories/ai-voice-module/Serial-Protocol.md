@@ -43,3 +43,4 @@ Cuando necesitamos reproducir “初始化完成”, el controlador anfitrión d
 
 ![Imagen 5](../../../../../public/images/tutorials/accessories/ai-voice-module/Serial-Protocol/5.png)
 
+<RelatedProducts slugs="ai-voice-module" />

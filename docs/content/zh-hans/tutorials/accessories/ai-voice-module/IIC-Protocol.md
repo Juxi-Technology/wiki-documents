@@ -73,5 +73,4 @@ description: "注意：主机设备与语音交互模块的供电电源可以不
 
 ![图 8](../../../../../public/images/tutorials/accessories/ai-voice-module/IIC-Protocol/8.png)
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

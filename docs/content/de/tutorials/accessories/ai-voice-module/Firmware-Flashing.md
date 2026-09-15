@@ -47,3 +47,4 @@ Nachdem Sie den Schalter auf die entsprechende Position gebracht haben, drücken
 
 ![Abb. 9](../../../../../public/images/tutorials/accessories/ai-voice-module/Firmware-Flashing/9.png)
 
+<RelatedProducts slugs="ai-voice-module" />

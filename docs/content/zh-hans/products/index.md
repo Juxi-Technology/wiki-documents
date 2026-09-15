@@ -19,6 +19,10 @@ outline: false
     <span class="pc-title">4K HDMI 采集卡</span>
     <p class="pc-desc">钜犀科技 4K HDMI 采集卡——4K 高清采集,HDMI/Micro HDMI/DP 多接口,USB 直连,采集直播录屏</p>
   </a>
+  <a :href="withBase('/zh-hans/products/ai-voice-module')" class="category-card">
+    <span class="pc-title">AI 语音交互模块</span>
+    <p class="pc-desc">钜犀科技 AI 语音交互模块(CI1302)——110+ 条离线语音指令,5 米识别率 99%,支持自定义中英文指令词,串口/IIC 通信,适配 Arduino/Jetson/RDK/树莓派/PC</p>
+  </a>
   <a :href="withBase('/zh-hans/products/amazinghand')" class="category-card">
     <span class="pc-title">AmazingHand 开源 4 指灵巧手</span>
     <p class="pc-desc">钜犀科技 AmazingHand 开源4 指灵巧手,TTL 总线控制,开源 CAD,具身智能与人机交互研究</p>
@@ -86,6 +90,10 @@ outline: false
   <a :href="withBase('/zh-hans/products/usb-sound-card')" class="category-card">
     <span class="pc-title">USB 免驱声卡</span>
     <p class="pc-desc">钜犀科技 USB 免驱声卡——板载麦克风+扬声器,即插即用,降噪,适配树莓派/Jetson/PC 语音交互</p>
+  </a>
+  <a :href="withBase('/zh-hans/products/xlerobot')" class="category-card">
+    <span class="pc-title">XLeRobot 双臂移动机器人</span>
+    <p class="pc-desc">钜犀科技 XLeRobot 双臂移动机器人——SO-ARM101 双臂 + 全向轮底盘 + 相机塔,双舵机驱动板 12V 供电,LeRobot 生态,支持成品/散件两种形态</p>
   </a>
 </div>
 

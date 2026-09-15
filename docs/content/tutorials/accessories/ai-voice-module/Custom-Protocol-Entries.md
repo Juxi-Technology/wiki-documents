@@ -149,5 +149,4 @@ After finishing the modifications, save. Then follow the steps in “1.2 Firmwar
 
 After re-creating the firmware, you also need to flash the firmware into the voice interaction module; this way you can add new command entries.
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

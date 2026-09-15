@@ -73,5 +73,4 @@ IIC 信号の割り込みを待ち、IIC でデータを受信した場合は、
 
 ![図 8](../../../../../public/images/tutorials/accessories/ai-voice-module/IIC-Protocol/8.png)
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

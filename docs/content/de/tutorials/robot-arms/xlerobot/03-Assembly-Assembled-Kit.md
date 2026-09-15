@@ -91,3 +91,4 @@ PD-auf-DC12V3A-Stromkabel
 
 ![Abb. 20](../../../../../public/images/tutorials/robot-arms/xlerobot/03-Assembly-Assembled-Kit/20.png)
 
+<RelatedProducts slugs="xlerobot" />

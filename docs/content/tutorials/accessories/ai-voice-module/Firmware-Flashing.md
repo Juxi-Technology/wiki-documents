@@ -47,3 +47,4 @@ After switching to the corresponding position, press the RST button on the voice
 
 ![Image 9](../../../../public/images/tutorials/accessories/ai-voice-module/Firmware-Flashing/9.png)
 
+<RelatedProducts slugs="ai-voice-module" />

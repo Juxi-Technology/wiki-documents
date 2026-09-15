@@ -51,7 +51,4 @@ El módulo admite la modificación de la palabra de activación, la modificació
 
 ![Imagen 1](../../../../../public/images/tutorials/accessories/ai-voice-module/Product-Info/1.png)
 
-
-
-
-
+<RelatedProducts slugs="ai-voice-module" />

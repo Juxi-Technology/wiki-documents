@@ -19,6 +19,10 @@ outline: false
     <span class="pc-title">4K HDMI キャプチャカード</span>
     <p class="pc-desc">Juxi Technology 4K HDMI キャプチャカード——4K 高画質キャプチャ、HDMI/Micro HDMI/DP 多インターフェース、USB 直結、配信・録画</p>
   </a>
+  <a :href="withBase('/ja/products/ai-voice-module')" class="category-card">
+    <span class="pc-title">AI 音声対話モジュール</span>
+    <p class="pc-desc">Juxi Technology AI 音声対話モジュール(CI1302)——110+ 個のオフライン音声コマンド、5 メートルで認識率 99%、中国語/英語のカスタムコマンドワード対応、シリアル/IIC 通信、Arduino/Jetson/RDK/Raspberry Pi/PC 対応</p>
+  </a>
   <a :href="withBase('/ja/products/amazinghand')" class="category-card">
     <span class="pc-title">AmazingHand オープンソース 4指器用ハンド</span>
     <p class="pc-desc">Juxi Technology AmazingHand オープンソース 4指器用ハンド、TTLバス制御、オープンCAD、具身知能・HRI研究</p>
@@ -86,6 +90,10 @@ outline: false
   <a :href="withBase('/ja/products/usb-sound-card')" class="category-card">
     <span class="pc-title">USB ドライバ不要サウンドカード</span>
     <p class="pc-desc">Juxi Technology USB ドライバ不要サウンドカード——オンボードマイク+スピーカー、プラグアンドプレイ、ノイズ低減、Raspberry Pi/Jetson/PC 対応</p>
+  </a>
+  <a :href="withBase('/ja/products/xlerobot')" class="category-card">
+    <span class="pc-title">XLeRobot 双腕移動ロボット</span>
+    <p class="pc-desc">Juxi Technology XLeRobot 双腕移動ロボット——SO-ARM101 双腕 + 全方向ホイールシャーシ + カメラタワー、2 台のサーボドライバ基板 12V 給電、LeRobot エコシステム、完成品/パーツキットの 2 形態</p>
   </a>
 </div>
 

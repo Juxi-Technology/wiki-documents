@@ -427,6 +427,7 @@ const zhCN = {
           { text: 'AmazingHand 开源 4 指灵巧手', link: '/zh-hans/products/amazinghand' },
           { text: 'Lekiwi 具身智能移动机器人', link: '/zh-hans/products/lekiwi' },
           { text: 'SO-ARM101 顶置相机支架', link: '/zh-hans/products/overhead-camera-mount' },
+          { text: 'XLeRobot 双臂移动机器人', link: '/zh-hans/products/xlerobot' },
         ] },
         { text: '计算与视觉', items: [
           { text: 'Jetson Orin NX Super 开发套件', link: '/zh-hans/products/jetson-orin-nx-super-kit' },
@@ -445,6 +446,7 @@ const zhCN = {
           { text: '4 合 1 KVM 切换器', link: '/zh-hans/products/kvm-switch' },
           { text: 'USB 免驱声卡', link: '/zh-hans/products/usb-sound-card' },
           { text: '4K HDMI 采集卡', link: '/zh-hans/products/4k-hdmi-capture' },
+          { text: 'AI 语音交互模块', link: '/zh-hans/products/ai-voice-module' },
         ] },
       ],
       '/zh-hans/downloads/': [
@@ -783,6 +785,7 @@ const en = {
           { text: 'AmazingHand 4-Finger Dexterous Hand', link: '/products/amazinghand' },
           { text: 'Lekiwi Mobile Robot', link: '/products/lekiwi' },
           { text: 'Overhead Camera Mount', link: '/products/overhead-camera-mount' },
+          { text: 'XLeRobot Dual-Arm Mobile Robot', link: '/products/xlerobot' },
         ] },
         { text: 'Compute & Vision', items: [
           { text: 'Jetson Orin NX Super Dev Kit', link: '/products/jetson-orin-nx-super-kit' },
@@ -801,6 +804,7 @@ const en = {
           { text: '4-in-1 KVM Switch', link: '/products/kvm-switch' },
           { text: 'USB Sound Card', link: '/products/usb-sound-card' },
           { text: '4K HDMI Capture', link: '/products/4k-hdmi-capture' },
+          { text: 'AI Voice Interaction Module', link: '/products/ai-voice-module' },
         ] },
       ],
       '/downloads/': [
@@ -1139,6 +1143,7 @@ const zhHK = {
           { text: 'AmazingHand 開源 4 指靈巧手', link: '/zh-hant/products/amazinghand' },
           { text: 'Lekiwi 具身智能移動機器人', link: '/zh-hant/products/lekiwi' },
           { text: 'SO-ARM101 頂置相機支架', link: '/zh-hant/products/overhead-camera-mount' },
+          { text: 'XLeRobot 雙臂移動機器人', link: '/zh-hant/products/xlerobot' },
         ] },
         { text: '計算與視覺', items: [
           { text: 'Jetson Orin NX Super 開發套件', link: '/zh-hant/products/jetson-orin-nx-super-kit' },
@@ -1157,6 +1162,7 @@ const zhHK = {
           { text: '4 合 1 KVM 切換器', link: '/zh-hant/products/kvm-switch' },
           { text: 'USB 免驅聲卡', link: '/zh-hant/products/usb-sound-card' },
           { text: '4K HDMI 採集卡', link: '/zh-hant/products/4k-hdmi-capture' },
+          { text: 'AI 語音交互模組', link: '/zh-hant/products/ai-voice-module' },
         ] },
       ],
       '/zh-hant/downloads/': [
@@ -1532,6 +1538,7 @@ export default defineConfig({
             { text: 'SO-ARM101 ロボットビジョンキット', link: '/ja/products/robot-vision-kit' },
             { text: 'Lekiwi 具身知能移動ロボット', link: '/ja/products/lekiwi' },
             { text: 'SO-ARM101 頭上カメラマウント', link: '/ja/products/overhead-camera-mount' },
+            { text: 'XLeRobot 双腕移動ロボット', link: '/ja/products/xlerobot' },
           ] },
           { text: '計算とビジョン', items: [
             { text: 'Jetson Orin NX Super 開発キット', link: '/ja/products/jetson-orin-nx-super-kit' },
@@ -1550,6 +1557,7 @@ export default defineConfig({
             { text: '4 in 1 KVM スイッチ', link: '/ja/products/kvm-switch' },
             { text: 'USB ドライバ不要サウンドカード', link: '/ja/products/usb-sound-card' },
             { text: '4K HDMI キャプチャカード', link: '/ja/products/4k-hdmi-capture' },
+            { text: 'AI 音声対話モジュール', link: '/ja/products/ai-voice-module' },
           ] },
         ],
       },
@@ -1851,6 +1859,7 @@ export default defineConfig({
             { text: 'SO-ARM101 로봇 비전 키트', link: '/ko/products/robot-vision-kit' },
             { text: 'Lekiwi 구현 지능 이동 로봇', link: '/ko/products/lekiwi' },
             { text: 'SO-ARM101 오버헤드 카메라 마운트', link: '/ko/products/overhead-camera-mount' },
+            { text: 'XLeRobot 양팔 이동 로봇', link: '/ko/products/xlerobot' },
           ] },
           { text: '컴퓨팅 & 비전', items: [
             { text: 'Jetson Orin NX Super 개발 키트', link: '/ko/products/jetson-orin-nx-super-kit' },
@@ -1869,6 +1878,7 @@ export default defineConfig({
             { text: '4 in 1 KVM 스위치', link: '/ko/products/kvm-switch' },
             { text: 'USB 무드라이버 사운드 카드', link: '/ko/products/usb-sound-card' },
             { text: '4K HDMI 캡처 카드', link: '/ko/products/4k-hdmi-capture' },
+            { text: 'AI 음성 인터랙션 모듈', link: '/ko/products/ai-voice-module' },
           ] },
         ],
       },
@@ -2170,6 +2180,7 @@ export default defineConfig({
             { text: 'SO-ARM101-Robotervisions-Kit', link: '/de/products/robot-vision-kit' },
             { text: 'Lekiwi Mobilitätsroboter', link: '/de/products/lekiwi' },
             { text: 'SO-ARM101-Overhead-Kamerahalterung', link: '/de/products/overhead-camera-mount' },
+            { text: 'XLeRobot Zweiarm-Mobilroboter', link: '/de/products/xlerobot' },
           ] },
           { text: 'Computing & Vision', items: [
             { text: 'Jetson Orin NX Super Dev-Kit', link: '/de/products/jetson-orin-nx-super-kit' },
@@ -2188,6 +2199,7 @@ export default defineConfig({
             { text: '4-in-1-KVM-Switch', link: '/de/products/kvm-switch' },
             { text: 'USB-Soundkarte ohne Treiber', link: '/de/products/usb-sound-card' },
             { text: '4K-HDMI-Capture-Karte', link: '/de/products/4k-hdmi-capture' },
+            { text: 'AI-Sprachinteraktionsmodul', link: '/de/products/ai-voice-module' },
           ] },
         ],
       },
@@ -2489,6 +2501,7 @@ export default defineConfig({
             { text: 'Kit vision robotique SO-ARM101', link: '/fr/products/robot-vision-kit' },
             { text: 'Robot mobile Lekiwi', link: '/fr/products/lekiwi' },
             { text: 'Support caméra plafonnier SO-ARM101', link: '/fr/products/overhead-camera-mount' },
+            { text: 'Robot mobile à deux bras XLeRobot', link: '/fr/products/xlerobot' },
           ] },
           { text: 'Calcul & Vision', items: [
             { text: 'Kit Jetson Orin NX Super', link: '/fr/products/jetson-orin-nx-super-kit' },
@@ -2507,6 +2520,7 @@ export default defineConfig({
             { text: 'Commutateur KVM 4-en-1', link: '/fr/products/kvm-switch' },
             { text: 'Carte son USB sans pilote', link: '/fr/products/usb-sound-card' },
             { text: 'Carte de capture HDMI 4K', link: '/fr/products/4k-hdmi-capture' },
+            { text: 'Module d\'interaction vocale IA', link: '/fr/products/ai-voice-module' },
           ] },
         ],
       },
@@ -2808,6 +2822,7 @@ export default defineConfig({
             { text: 'Kit de visión robótica SO-ARM101', link: '/es/products/robot-vision-kit' },
             { text: 'Robot móvil Lekiwi', link: '/es/products/lekiwi' },
             { text: 'Montaje de cámara superior SO-ARM101', link: '/es/products/overhead-camera-mount' },
+            { text: 'Robot móvil de dos brazos XLeRobot', link: '/es/products/xlerobot' },
           ] },
           { text: 'Cómputo y visión', items: [
             { text: 'Kit Jetson Orin NX Super', link: '/es/products/jetson-orin-nx-super-kit' },
@@ -2826,6 +2841,7 @@ export default defineConfig({
             { text: 'Conmutador KVM 4 en 1', link: '/es/products/kvm-switch' },
             { text: 'Tarjeta de sonido USB sin controlador', link: '/es/products/usb-sound-card' },
             { text: 'Capturadora HDMI 4K', link: '/es/products/4k-hdmi-capture' },
+            { text: 'Módulo de interacción de voz IA', link: '/es/products/ai-voice-module' },
           ] },
         ],
       },
@@ -3127,6 +3143,7 @@ export default defineConfig({
             { text: 'Kit visione robotica SO-ARM101', link: '/it/products/robot-vision-kit' },
             { text: 'Robot mobile Lekiwi', link: '/it/products/lekiwi' },
             { text: 'Supporto fotocamera overhead SO-ARM101', link: '/it/products/overhead-camera-mount' },
+            { text: 'Robot mobile a due bracci XLeRobot', link: '/it/products/xlerobot' },
           ] },
           { text: 'Calcolo e visione', items: [
             { text: 'Kit Jetson Orin NX Super', link: '/it/products/jetson-orin-nx-super-kit' },
@@ -3145,6 +3162,7 @@ export default defineConfig({
             { text: 'Switch KVM 4-in-1', link: '/it/products/kvm-switch' },
             { text: 'Scheda audio USB senza driver', link: '/it/products/usb-sound-card' },
             { text: 'Scheda di acquisizione HDMI 4K', link: '/it/products/4k-hdmi-capture' },
+            { text: 'Modulo di interazione vocale IA', link: '/it/products/ai-voice-module' },
           ] },
         ],
       },
@@ -3467,6 +3485,7 @@ export default defineConfig({
             { text: 'Kit de Visão Robótica SO-ARM101', link: '/pt-br/products/robot-vision-kit' },
             { text: 'Robô Móvel Lekiwi', link: '/pt-br/products/lekiwi' },
             { text: 'Suporte de Câmera Superior SO-ARM101', link: '/pt-br/products/overhead-camera-mount' },
+            { text: 'Robô móvel de dois braços XLeRobot', link: '/pt-br/products/xlerobot' },
           ] },
           { text: 'Computação & Visão', items: [
             { text: 'Kit Jetson Orin NX Super', link: '/pt-br/products/jetson-orin-nx-super-kit' },
@@ -3485,6 +3504,7 @@ export default defineConfig({
             { text: 'Chaveador KVM 4-em-1', link: '/pt-br/products/kvm-switch' },
             { text: 'Placa de Som USB sem Driver', link: '/pt-br/products/usb-sound-card' },
             { text: 'Capturadora HDMI 4K', link: '/pt-br/products/4k-hdmi-capture' },
+            { text: 'Módulo de interação por voz IA', link: '/pt-br/products/ai-voice-module' },
           ] },
         ],
         '/pt-br/downloads/': [{ text: 'Downloads', items: [{ text: 'Central de Downloads', link: '/pt-br/downloads/' }] }],
@@ -3809,6 +3829,7 @@ export default defineConfig({
             { text: 'Kit de Visão Robótica SO-ARM101', link: '/pt-pt/products/robot-vision-kit' },
             { text: 'Robô Móvel Lekiwi', link: '/pt-pt/products/lekiwi' },
             { text: 'Suporte de Câmara Superior SO-ARM101', link: '/pt-pt/products/overhead-camera-mount' },
+            { text: 'Robô móvel de dois braços XLeRobot', link: '/pt-pt/products/xlerobot' },
           ] },
           { text: 'Computação & Visão', items: [
             { text: 'Kit Jetson Orin NX Super', link: '/pt-pt/products/jetson-orin-nx-super-kit' },
@@ -3827,6 +3848,7 @@ export default defineConfig({
             { text: 'Chaveador KVM 4-em-1', link: '/pt-pt/products/kvm-switch' },
             { text: 'Placa de Som USB sem Driver', link: '/pt-pt/products/usb-sound-card' },
             { text: 'Capturadora HDMI 4K', link: '/pt-pt/products/4k-hdmi-capture' },
+            { text: 'Módulo de interação por voz IA', link: '/pt-pt/products/ai-voice-module' },
           ] },
         ],
         '/pt-pt/downloads/': [{ text: 'Downloads', items: [{ text: 'Central de Downloads', link: '/pt-pt/downloads/' }] }],

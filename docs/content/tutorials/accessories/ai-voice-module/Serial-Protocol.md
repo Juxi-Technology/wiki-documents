@@ -43,3 +43,4 @@ When we need to play “初始化完成”, the host controller must send FE EF 
 
 ![Image 5](../../../../public/images/tutorials/accessories/ai-voice-module/Serial-Protocol/5.png)
 
+<RelatedProducts slugs="ai-voice-module" />

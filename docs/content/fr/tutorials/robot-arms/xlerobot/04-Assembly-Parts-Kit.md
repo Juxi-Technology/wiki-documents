@@ -201,5 +201,4 @@ Important
 
 Une fois le XLeRobot entièrement assemblé, ne le poussez pas partout comme un chariot, car cela pourrait endommager les engrenages des servos. Au contraire, lorsque vous devez le déplacer manuellement, soulevez le robot (~12kg).
 
-
-
+<RelatedProducts slugs="xlerobot" />

@@ -31,3 +31,4 @@ Move the slide switch to STC8 serial port mode
 
 You can hear the voice module playing back normally.
 
+<RelatedProducts slugs="ai-voice-module" />

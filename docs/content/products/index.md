@@ -19,6 +19,10 @@ outline: false
     <span class="pc-title">4K HDMI Capture Card</span>
     <p class="pc-desc">Juxi Technology 4K HDMI capture card — HDMI/Micro HDMI/DP inputs, USB direct, streaming & rec…</p>
   </a>
+  <a :href="withBase('/products/ai-voice-module')" class="category-card">
+    <span class="pc-title">AI Voice Interaction Module</span>
+    <p class="pc-desc">Juxi Technology AI Voice Interaction Module (CI1302) — 110+ offline voice commands, 99% recognition within 5 m, custom Chinese/English command words, serial/IIC communication, works with Arduino/Jetson/RDK/Raspberry Pi/PC</p>
+  </a>
   <a :href="withBase('/products/amazinghand')" class="category-card">
     <span class="pc-title">AmazingHand Open-Source 4-Finger Dexterous Hand</span>
     <p class="pc-desc">Juxi Technology AmazingHand open-source 4-finger dexterous hand, TTL bus control, …</p>
@@ -86,6 +90,10 @@ outline: false
   <a :href="withBase('/products/usb-sound-card')" class="category-card">
     <span class="pc-title">USB Driver-Free Sound Card</span>
     <p class="pc-desc">Juxi Technology USB sound card — onboard mic + speaker, plug-and-play, noise-reduction, Raspb…</p>
+  </a>
+  <a :href="withBase('/products/xlerobot')" class="category-card">
+    <span class="pc-title">XLeRobot Dual-Arm Mobile Robot</span>
+    <p class="pc-desc">Juxi Technology XLeRobot dual-arm mobile robot — two SO-ARM101 follower arms, omni-wheel base and camera tower, dual servo driver boards on 12V, LeRobot ecosystem, assembled or parts kit</p>
   </a>
 </div>
 

@@ -51,7 +51,4 @@ CI1302 칩이 해당 음성 항목을 인식하면 시리얼 포트, IIC 인터�
 
 ![그림 1](../../../../../public/images/tutorials/accessories/ai-voice-module/Product-Info/1.png)
 
-
-
-
-
+<RelatedProducts slugs="ai-voice-module" />

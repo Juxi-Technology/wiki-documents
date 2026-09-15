@@ -47,3 +47,4 @@ Dopo aver portato l'interruttore nella posizione corrispondente, premere il tast
 
 ![Immagine 9](../../../../../public/images/tutorials/accessories/ai-voice-module/Firmware-Flashing/9.png)
 
+<RelatedProducts slugs="ai-voice-module" />

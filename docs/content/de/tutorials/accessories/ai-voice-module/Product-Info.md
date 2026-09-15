@@ -51,7 +51,4 @@ Das Modul unterstützt das Ändern des Weckworts, das Ändern von Befehlswörter
 
 ![Abb. 1](../../../../../public/images/tutorials/accessories/ai-voice-module/Product-Info/1.png)
 
-
-
-
-
+<RelatedProducts slugs="ai-voice-module" />

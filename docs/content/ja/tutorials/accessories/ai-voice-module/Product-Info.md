@@ -51,7 +51,4 @@ CI1302 チップが対応する音声エントリーを認識すると、シリ�
 
 ![図 1](../../../../../public/images/tutorials/accessories/ai-voice-module/Product-Info/1.png)
 
-
-
-
-
+<RelatedProducts slugs="ai-voice-module" />

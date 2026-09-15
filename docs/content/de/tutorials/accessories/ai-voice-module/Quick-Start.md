@@ -35,5 +35,4 @@ Aktive Ansage: Wenn wir gemäß der Tabelle ein Befehlswort sprechen, sagt das M
 
 Passive Ansage: Die entsprechende Ansage erfolgt erst, wenn ein Befehl aus der Protokolltabelle über die serielle Schnittstelle an das Sprachmodul gesendet wird. Alternativ können Sie gemäß dem IIC-Protokoll durch Schreiben der entsprechenden Ansagedaten in das Register für die passive Ansage die Ansage auslösen. Einzelheiten finden Sie unter „Multi-Master-Kommunikation“.
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

@@ -73,5 +73,4 @@ Quando o utilizador precisa de reproduzir “好的，正在前进”, o control
 
 ![Imagem 8](../../../../../public/images/tutorials/accessories/ai-voice-module/IIC-Protocol/8.png)
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

@@ -47,3 +47,4 @@ description: "打开附件中的语音芯片固件烧录工具文件夹点击”
 
 ![图 9](../../../../../public/images/tutorials/accessories/ai-voice-module/Firmware-Flashing/9.png)
 
+<RelatedProducts slugs="ai-voice-module" />

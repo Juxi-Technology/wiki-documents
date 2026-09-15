@@ -91,3 +91,4 @@ PD to DC12V3A 전원 케이블
 
 ![그림 20](../../../../../public/images/tutorials/robot-arms/xlerobot/03-Assembly-Assembled-Kit/20.png)
 
+<RelatedProducts slugs="xlerobot" />

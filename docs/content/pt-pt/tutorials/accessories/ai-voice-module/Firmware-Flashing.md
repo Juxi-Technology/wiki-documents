@@ -47,3 +47,4 @@ Depois de o colocar na posição correspondente, prima a tecla RST no módulo de
 
 ![Imagem 9](../../../../../public/images/tutorials/accessories/ai-voice-module/Firmware-Flashing/9.png)
 
+<RelatedProducts slugs="ai-voice-module" />

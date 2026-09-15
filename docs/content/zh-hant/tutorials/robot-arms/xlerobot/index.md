@@ -1,9 +1,9 @@
 ---
-title: "Xlerobot"
-description: "使用教學https://xlerobot.readthedocs.io/zh-cn/latest/software/index.html"
+title: "XLeRobot 教程"
+description: "XLeRobot 雙臂移動機器人教程:環境搭建(LeRobot + conda 鏡像)、文件部署、成品與散件組裝。"
 ---
 
-# Xlerobot
+# XLeRobot 教程
 
 使用教學https://xlerobot.readthedocs.io/zh-cn/latest/software/index.html
 
@@ -15,3 +15,5 @@ description: "使用教學https://xlerobot.readthedocs.io/zh-cn/latest/software/
 - [移動 XLeRobot 文件](./02-Move-Xlerobot-Files.md)
 - [成品組裝教程](./03-Assembly-Assembled-Kit.md)
 - [散件組裝教程](./04-Assembly-Parts-Kit.md)
+
+<RelatedProducts slugs="xlerobot" />

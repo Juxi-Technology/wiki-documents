@@ -201,5 +201,4 @@ Importante
 
 Una volta che l'XLeRobot è completamente assemblato, non spingerlo in giro come un carrello, poiché ciò potrebbe danneggiare gli ingranaggi dei servomotori. Al contrario, quando devi spostarlo manualmente, sollevalo (~12kg).
 
-
-
+<RelatedProducts slugs="xlerobot" />

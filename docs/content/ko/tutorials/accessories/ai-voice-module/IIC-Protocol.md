@@ -73,5 +73,4 @@ IIC 신호 인터럽트를 기다리며, IIC 로 데이터가 수신되면 IIC �
 
 ![그림 8](../../../../../public/images/tutorials/accessories/ai-voice-module/IIC-Protocol/8.png)
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

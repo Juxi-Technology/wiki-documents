@@ -73,5 +73,4 @@ description: "注意：主機裝置與語音互動模組的供電電源可以不
 
 ![圖 8](../../../../../public/images/tutorials/accessories/ai-voice-module/IIC-Protocol/8.png)
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

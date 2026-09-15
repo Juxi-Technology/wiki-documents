@@ -149,5 +149,4 @@ Após terminar as modificações, salve. Em seguida, siga os passos de "1.2 Cria
 
 Depois de refazer o firmware, também é preciso gravá-lo no módulo de interação por voz; assim é possível implementar a função de adicionar novas entradas de comando.
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

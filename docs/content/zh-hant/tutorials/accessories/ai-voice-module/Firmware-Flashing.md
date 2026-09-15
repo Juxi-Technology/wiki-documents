@@ -47,3 +47,4 @@ description: "開啟附件中的語音晶片韌體燒錄工具資料夾點擊”
 
 ![圖 9](../../../../../public/images/tutorials/accessories/ai-voice-module/Firmware-Flashing/9.png)
 
+<RelatedProducts slugs="ai-voice-module" />

@@ -31,5 +31,4 @@ Sprechen Sie „你好，小犀“ zum Sprachinteraktionsmodul, um es aufzuwecke
 
 Hinweis: Die Befehlswörter in der Werks-Firmware sind grundlegende Befehlswörter und können nicht per Sprache geändert oder gelöscht werden. Von Benutzern per Sprache geänderte Befehlswörter können nur jeweils einzeln existieren und bestehen gemeinsam mit den grundlegenden Befehlswörtern.
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

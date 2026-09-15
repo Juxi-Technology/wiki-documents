@@ -1,9 +1,9 @@
 ---
-title: "Xlerobot"
-description: "튜토리얼 https://xlerobot.readthedocs.io/zh-cn/latest/software/index.html"
+title: "XLeRobot 튜토리얼"
+description: "XLeRobot 양팔 이동 로봇 튜토리얼: 환경 구축, 파일 배치, 완제품/부품 키트 조립."
 ---
 
-# Xlerobot
+# XLeRobot 튜토리얼
 
 튜토리얼 https://xlerobot.readthedocs.io/zh-cn/latest/software/index.html
 
@@ -15,3 +15,5 @@ description: "튜토리얼 https://xlerobot.readthedocs.io/zh-cn/latest/software
 - [XLeRobot 파일 이동](./02-Move-Xlerobot-Files.md)
 - [완제품 조립](./03-Assembly-Assembled-Kit.md)
 - [부품 키트 조립](./04-Assembly-Parts-Kit.md)
+
+<RelatedProducts slugs="xlerobot" />

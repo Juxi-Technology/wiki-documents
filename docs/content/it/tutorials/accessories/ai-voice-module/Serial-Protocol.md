@@ -43,3 +43,4 @@ Quando dobbiamo riprodurre “初始化完成”, il controller host deve inviar
 
 ![Immagine 5](../../../../../public/images/tutorials/accessories/ai-voice-module/Serial-Protocol/5.png)
 
+<RelatedProducts slugs="ai-voice-module" />

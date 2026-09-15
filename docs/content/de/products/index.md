@@ -19,6 +19,10 @@ outline: false
     <span class="pc-title">4K-HDMI-Capture-Karte</span>
     <p class="pc-desc">Juxi Technology 4K-Capture-Karte — 4K-Aufnahme, HDMI/Micro HDMI/DP, USB-Direktanschluss, Stre…</p>
   </a>
+  <a :href="withBase('/de/products/ai-voice-module')" class="category-card">
+    <span class="pc-title">AI-Sprachinteraktionsmodul</span>
+    <p class="pc-desc">Juxi Technology AI-Sprachinteraktionsmodul (CI1302) — 110+ Offline-Sprachbefehle, 99 % Erkennungsrate im Umkreis von 5 m, benutzerdefinierte chinesische/englische Befehlswörter, serielle/IIC-Kommunikation, für Arduino/Jetson/RDK/Raspberry Pi/PC</p>
+  </a>
   <a :href="withBase('/de/products/amazinghand')" class="category-card">
     <span class="pc-title">AmazingHand 4-Finger-Greifhand</span>
     <p class="pc-desc">Juxi Technology AmazingHand — 4-Finger-Greifhand…</p>
@@ -86,6 +90,10 @@ outline: false
   <a :href="withBase('/de/products/usb-sound-card')" class="category-card">
     <span class="pc-title">USB Soundkarte ohne Treiber</span>
     <p class="pc-desc">Juxi Technology USB-Soundkarte — Onboard-Mikrofon + Lautsprecher, Plug-and-Play, Rauschunterd…</p>
+  </a>
+  <a :href="withBase('/de/products/xlerobot')" class="category-card">
+    <span class="pc-title">XLeRobot Zweiarm-Mobilroboter</span>
+    <p class="pc-desc">Juxi Technology XLeRobot Zweiarm-Mobilroboter — SO-ARM101-Doppelarm + Omnidirektionalrad-Fahrgestell + Kamera-Turm, zwei Servo-Treiberplatinen mit 12V-Stromversorgung, LeRobot-Ökosystem, als Fertigbaugruppe oder Bausatz erhältlich</p>
   </a>
 </div>
 

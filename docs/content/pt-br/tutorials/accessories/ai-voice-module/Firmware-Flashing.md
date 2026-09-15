@@ -47,3 +47,4 @@ Depois de mover para a posição correspondente, pressione o botão RST no módu
 
 ![Imagem 9](../../../../../public/images/tutorials/accessories/ai-voice-module/Firmware-Flashing/9.png)
 
+<RelatedProducts slugs="ai-voice-module" />

@@ -1,9 +1,9 @@
 ---
-title: "Xlerobot"
-description: "Tutorial de utilização https://xlerobot.readthedocs.io/zh-cn/latest/software/index.html"
+title: "Tutoriais do XLeRobot"
+description: "Tutoriais do XLeRobot: configuração, implementação de ficheiros e montagem (kit montado/em peças)."
 ---
 
-# Xlerobot
+# Tutoriais do XLeRobot
 
 Tutorial de utilização https://xlerobot.readthedocs.io/zh-cn/latest/software/index.html
 
@@ -15,3 +15,5 @@ Tutorial de utilização https://xlerobot.readthedocs.io/zh-cn/latest/software/i
 - [Mover ficheiros do XLeRobot](./02-Move-Xlerobot-Files.md)
 - [Montagem do kit montado](./03-Assembly-Assembled-Kit.md)
 - [Montagem do kit em peças](./04-Assembly-Parts-Kit.md)
+
+<RelatedProducts slugs="xlerobot" />

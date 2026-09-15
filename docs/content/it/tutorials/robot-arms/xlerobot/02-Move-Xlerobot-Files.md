@@ -49,5 +49,4 @@ Copiare tutti i file sotto `~\XLeRobot\software\examples文件夹` in
 
 Tutorial https://xlerobot.readthedocs.io/zh-cn/latest/software/index.html
 
-
-
+<RelatedProducts slugs="xlerobot" />

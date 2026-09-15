@@ -31,5 +31,4 @@ Dites "你好，小犀" au module d'interaction vocale pour le réveiller ; lors
 
 Remarque : les mots de commande du micrologiciel d'usine sont des mots de commande de base ; ils ne peuvent pas être modifiés ni supprimés par la voix. Un seul mot de commande modifié par la voix peut exister à la fois, et il coexiste avec les mots de commande de base.
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

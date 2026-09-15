@@ -149,5 +149,4 @@ description: "模組出廠已經燒錄語音辨識功能韌體，資料壓縮包
 
 重新製作韌體後，還需要將韌體燒錄到語音互動模組中，這樣就能實現新增命令詞條的功能了。
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

@@ -31,5 +31,4 @@ Say "你好，小犀" to the voice interaction module to wake it up; when the mo
 
 Note: the command words in the factory firmware are basic command words and cannot be modified or deleted by voice. Only one voice-modified command word can exist at a time, and it coexists with the basic command words.
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

@@ -115,5 +115,4 @@ import scservo_sdk
 
 ![그림 6](../../../../../public/images/tutorials/robot-arms/xlerobot/01-Environment-Setup-macOS/6.png)
 
-
-
+<RelatedProducts slugs="xlerobot" />

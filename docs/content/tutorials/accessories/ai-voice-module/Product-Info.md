@@ -51,7 +51,4 @@ The module supports wake word modification, command word modification and custom
 
 ![Image 1](../../../../public/images/tutorials/accessories/ai-voice-module/Product-Info/1.png)
 
-
-
-
-
+<RelatedProducts slugs="ai-voice-module" />

@@ -149,5 +149,4 @@ Après avoir terminé les modifications, enregistrez. Suivez ensuite les étapes
 
 Après avoir recréé le micrologiciel, vous devez également le flasher dans le module d'interaction vocale ; vous pourrez ainsi ajouter de nouvelles entrées de mots de commande.
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

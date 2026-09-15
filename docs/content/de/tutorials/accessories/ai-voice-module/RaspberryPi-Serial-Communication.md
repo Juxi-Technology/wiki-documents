@@ -67,5 +67,4 @@ ID:1
 ID:10
 ```
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

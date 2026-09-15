@@ -31,3 +31,4 @@ description: "滑動開關移動到STC8串列埠模式"
 
 可以聽到語音模組正常播報。
 
+<RelatedProducts slugs="ai-voice-module" />

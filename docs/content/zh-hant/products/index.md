@@ -19,6 +19,10 @@ outline: false
     <span class="pc-title">4K HDMI 採集卡</span>
     <p class="pc-desc">鉅犀科技 4K HDMI 採集卡——4K 高清採集,HDMI/Micro HDMI/DP 多接口,USB 直連,採集直播錄屏</p>
   </a>
+  <a :href="withBase('/zh-hant/products/ai-voice-module')" class="category-card">
+    <span class="pc-title">AI 語音交互模組</span>
+    <p class="pc-desc">鉅犀科技 AI 語音交互模組(CI1302)——110+ 條離線語音指令,5 米辨識率 99%,支援自訂中英文指令詞,串列埠/IIC 通訊,適配 Arduino/Jetson/RDK/樹莓派/PC</p>
+  </a>
   <a :href="withBase('/zh-hant/products/amazinghand')" class="category-card">
     <span class="pc-title">AmazingHand 開源 4 指靈巧手</span>
     <p class="pc-desc">鉅犀科技 AmazingHand 開源4 指靈巧手,TTL 總線控制,開源 CAD,具身智能與人機交互研究</p>
@@ -86,6 +90,10 @@ outline: false
   <a :href="withBase('/zh-hant/products/usb-sound-card')" class="category-card">
     <span class="pc-title">USB 免驅聲卡</span>
     <p class="pc-desc">鉅犀科技 USB 免驅聲卡——板載麥克風+揚聲器,即插即用,降噪,適配樹莓派/Jetson/PC 語音交互</p>
+  </a>
+  <a :href="withBase('/zh-hant/products/xlerobot')" class="category-card">
+    <span class="pc-title">XLeRobot 雙臂移動機器人</span>
+    <p class="pc-desc">鉅犀科技 XLeRobot 雙臂移動機器人——SO-ARM101 雙臂 + 全向輪底盤 + 相機塔,雙伺服馬達驅動板 12V 供電,LeRobot 生態,支援成品/散件兩種形態</p>
   </a>
 </div>
 

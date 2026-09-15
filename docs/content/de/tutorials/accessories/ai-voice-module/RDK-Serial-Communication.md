@@ -226,3 +226,4 @@ ls -l /dev/ttyAMA0   # 查看串口设备
 groups                # 查看用户组权限
 ```
 
+<RelatedProducts slugs="ai-voice-module" />

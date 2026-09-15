@@ -120,5 +120,4 @@ import scservo_sdk
 
 ![圖 7](../../../../../public/images/tutorials/robot-arms/xlerobot/01-Environment-Setup-Ubuntu/7.png)
 
-
-
+<RelatedProducts slugs="xlerobot" />

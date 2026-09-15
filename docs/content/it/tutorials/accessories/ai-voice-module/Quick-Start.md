@@ -35,5 +35,4 @@ Riproduzione attiva: dopo che abbiamo pronunciato una parola di comando secondo 
 
 Riproduzione passiva: è necessario inviare al modulo vocale il comando presente nella tabella dei protocolli tramite la porta seriale, e solo allora il modulo riproduce la frase corrispondente; è inoltre possibile scrivere i corrispondenti dati di riproduzione nel registro della riproduzione passiva secondo il protocollo IIC. Per i dettagli si veda "Comunicazione multi-controller host".
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

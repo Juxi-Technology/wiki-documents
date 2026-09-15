@@ -31,3 +31,4 @@ Mova o interruptor de corrediça para o modo de porta série STC8
 
 É possível ouvir o módulo de voz a reproduzir normalmente.
 
+<RelatedProducts slugs="ai-voice-module" />

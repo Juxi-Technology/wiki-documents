@@ -149,5 +149,4 @@ Al termine delle modifiche, salvare. Seguire quindi i passaggi di “1.2 Creazio
 
 Dopo aver ricreato il firmware, occorre anche caricarlo nel modulo di interazione vocale: in questo modo sarà possibile aggiungere nuove voci di comando.
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

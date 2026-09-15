@@ -73,5 +73,4 @@ Lorsque l'utilisateur doit diffuser “好的，正在前进”, le contrôleur 
 
 ![Image 8](../../../../../public/images/tutorials/accessories/ai-voice-module/IIC-Protocol/8.png)
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

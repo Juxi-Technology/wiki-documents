@@ -19,6 +19,10 @@ outline: false
     <span class="pc-title">Scheda di acquisizione HDMI 4K</span>
     <p class="pc-desc">Acquisizione HDMI 4K di Juxi Technology — HDMI/Micro HDMI/DP, collegamento USB diretto, strea…</p>
   </a>
+  <a :href="withBase('/it/products/ai-voice-module')" class="category-card">
+    <span class="pc-title">Modulo di interazione vocale IA</span>
+    <p class="pc-desc">Modulo di interazione vocale IA di Juxi Technology (CI1302) — 110+ comandi vocali offline, tasso di riconoscimento del 99% entro 5 m, parole di comando personalizzabili in cinese e inglese, comunicazione seriale/IIC, compatibile con Arduino/Jetson/RDK/Raspberry Pi/PC</p>
+  </a>
   <a :href="withBase('/it/products/amazinghand')" class="category-card">
     <span class="pc-title">Mano dexterous AmazingHand</span>
     <p class="pc-desc">Mano bionica open source a 4 dita di Juxi Technology, controllo bus TTL, …</p>
@@ -86,6 +90,10 @@ outline: false
   <a :href="withBase('/it/products/usb-sound-card')" class="category-card">
     <span class="pc-title">Scheda audio USB senza driver</span>
     <p class="pc-desc">Scheda audio USB di Juxi Technology — microfono + altoparlante integrati, plug-and-play, ridu…</p>
+  </a>
+  <a :href="withBase('/it/products/xlerobot')" class="category-card">
+    <span class="pc-title">Robot mobile a due bracci XLeRobot</span>
+    <p class="pc-desc">Robot mobile a due bracci XLeRobot di Juxi Technology — due bracci SO-ARM101, base a ruote omnidirezionali e torre della telecamera, doppia scheda di driver del servo a 12V, ecosistema LeRobot, disponibile assemblato o come kit a pezzi</p>
   </a>
 </div>
 

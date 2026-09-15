@@ -35,5 +35,4 @@ Active playback: after we say a command word according to the table, the module 
 
 Passive playback: the corresponding sentence is played back by the module only after the command in the protocol table is sent to the voice module through the serial port. You can also write the corresponding playback data to the passive playback register according to the IIC protocol. For details, see "Multi-Host Controller Communication".
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

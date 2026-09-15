@@ -149,5 +149,4 @@ Depois de terminar as modificações, guarde e siga os passos de “1.2 Criaçã
 
 Depois de criar novamente o firmware, ainda é necessário gravá-lo no módulo de interação por voz; assim, é possível adicionar novas entradas de palavras de comando.
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

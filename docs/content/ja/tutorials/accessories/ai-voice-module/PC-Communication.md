@@ -31,3 +31,4 @@ description: "スライドスイッチを STC8 シリアルモードに移動し
 
 音声モジュールが正常に再生されるのを聞くことができます。
 
+<RelatedProducts slugs="ai-voice-module" />

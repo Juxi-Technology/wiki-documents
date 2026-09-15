@@ -51,7 +51,4 @@ CI1302 芯片具有脑神经网络处理器核(BNPU)，支持离线 NN 加速运
 
 ![图 1](../../../../../public/images/tutorials/accessories/ai-voice-module/Product-Info/1.png)
 
-
-
-
-
+<RelatedProducts slugs="ai-voice-module" />

@@ -149,5 +149,4 @@ Speichern Sie nach der Änderung und importieren Sie die Tabelle anschließend g
 
 Nachdem die Firmware neu erstellt wurde, müssen Sie sie noch auf das Sprachinteraktionsmodul flashen. So können Sie neue Befehlswörter hinzufügen.
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

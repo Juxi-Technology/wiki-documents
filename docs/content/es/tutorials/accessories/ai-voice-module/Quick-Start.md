@@ -35,5 +35,4 @@ Reproducción activa: después de que decimos una palabra de comando según la t
 
 Reproducción pasiva: es necesario enviar la instrucción de la tabla de protocolo al módulo de voz a través del puerto serie para que el módulo reproduzca la frase correspondiente. También puede escribir los datos de reproducción correspondientes en el registro de reproducción pasiva según el protocolo IIC. Para más detalles, consulte «Comunicación multi-controlador».
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

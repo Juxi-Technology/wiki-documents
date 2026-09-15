@@ -47,3 +47,4 @@ CI1302 チップを選択し、次に “ファームウェア更新” をク�
 
 ![図 9](../../../../../public/images/tutorials/accessories/ai-voice-module/Firmware-Flashing/9.png)
 
+<RelatedProducts slugs="ai-voice-module" />

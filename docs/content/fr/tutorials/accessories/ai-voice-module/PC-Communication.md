@@ -31,3 +31,4 @@ Déplacez l'interrupteur à glissière en mode port série STC8
 
 Vous pouvez entendre le module vocal diffuser normalement.
 
+<RelatedProducts slugs="ai-voice-module" />

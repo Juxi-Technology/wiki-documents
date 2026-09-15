@@ -35,5 +35,4 @@ Diffusion active : après que nous avons prononcé un mot de commande conformém
 
 Diffusion passive : la phrase correspondante n'est diffusée par le module qu'après l'envoi de la commande du tableau de protocole au module vocal via le port série. Vous pouvez également, conformément au protocole IIC, écrire les données de diffusion correspondantes dans le registre de diffusion passive. Pour plus de détails, consultez « Communication multi-contrôleurs ».
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

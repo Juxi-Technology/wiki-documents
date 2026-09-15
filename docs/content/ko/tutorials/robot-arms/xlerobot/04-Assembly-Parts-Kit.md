@@ -201,5 +201,4 @@ sudo chmod 666 /dev/ttyACM0
 
 XLeRobot 이 완전히 조립된 후에는 서보 기어가 손상될 수 있으므로 카트처럼 밀고 다니지 마십시오. 수동으로 이동해야 할 때는 로봇을 들어 옮기십시오 (~12kg)。
 
-
-
+<RelatedProducts slugs="xlerobot" />

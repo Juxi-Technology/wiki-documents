@@ -49,5 +49,4 @@ Raspberry Pi 기반으로 구축하려면 `~\lerobot\src\lerobot\robots\xlerobot
 
 튜토리얼 https://xlerobot.readthedocs.io/zh-cn/latest/software/index.html
 
-
-
+<RelatedProducts slugs="xlerobot" />

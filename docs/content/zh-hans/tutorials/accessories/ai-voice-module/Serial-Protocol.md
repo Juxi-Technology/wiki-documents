@@ -43,3 +43,4 @@ description: "打开附件中的命令词播报词协议列表V1中文文件，�
 
 ![图 5](../../../../../public/images/tutorials/accessories/ai-voice-module/Serial-Protocol/5.png)
 
+<RelatedProducts slugs="ai-voice-module" />

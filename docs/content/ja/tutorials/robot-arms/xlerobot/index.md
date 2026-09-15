@@ -1,9 +1,9 @@
 ---
-title: "Xlerobot"
-description: "使用チュートリアルhttps://xlerobot.readthedocs.io/zh-cn/latest/software/index.html"
+title: "XLeRobot チュートリアル"
+description: "XLeRobot 双腕移動ロボットのチュートリアル:環境構築、ファイル配置、完成品/パーツキットの組み立て。"
 ---
 
-# Xlerobot
+# XLeRobot チュートリアル
 
 使用チュートリアルhttps://xlerobot.readthedocs.io/zh-cn/latest/software/index.html
 
@@ -15,3 +15,5 @@ description: "使用チュートリアルhttps://xlerobot.readthedocs.io/zh-cn/l
 - [XLeRobot ファイルの移動](./02-Move-Xlerobot-Files.md)
 - [完成品組み立て](./03-Assembly-Assembled-Kit.md)
 - [パーツキット組み立て](./04-Assembly-Parts-Kit.md)
+
+<RelatedProducts slugs="xlerobot" />

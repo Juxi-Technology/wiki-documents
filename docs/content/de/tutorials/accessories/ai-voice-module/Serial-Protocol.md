@@ -43,3 +43,4 @@ Wenn wir „初始化完成“ ansagen möchten, muss die Hauptsteuerung über d
 
 ![Abb. 5](../../../../../public/images/tutorials/accessories/ai-voice-module/Serial-Protocol/5.png)
 
+<RelatedProducts slugs="ai-voice-module" />

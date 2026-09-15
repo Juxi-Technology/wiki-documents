@@ -31,3 +31,4 @@ Portare l'interruttore a slitta in modalità porta seriale STC8
 
 È possibile sentire il modulo vocale riprodurre correttamente.
 
+<RelatedProducts slugs="ai-voice-module" />

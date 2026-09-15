@@ -201,5 +201,4 @@ Importante
 
 Depois de o XLeRobot estar completamente montado, não o empurre de um lado para o outro como se fosse um carrinho, pois isso pode danificar as engrenagens dos servos. Em vez disso, quando precisar de o mover manualmente, levante o robô (~12kg).
 
-
-
+<RelatedProducts slugs="xlerobot" />

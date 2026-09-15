@@ -43,3 +43,4 @@ description: "첨부 파일의 命令词播报词协议列表V1中文 파일을 
 
 ![그림 5](../../../../../public/images/tutorials/accessories/ai-voice-module/Serial-Protocol/5.png)
 
+<RelatedProducts slugs="ai-voice-module" />

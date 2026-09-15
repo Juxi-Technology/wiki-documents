@@ -49,5 +49,4 @@ Raspberry Pi をベースに構築したい場合は、`~\lerobot\src\lerobot\ro
 
 使用チュートリアルhttps://xlerobot.readthedocs.io/zh-cn/latest/software/index.html
 
-
-
+<RelatedProducts slugs="xlerobot" />

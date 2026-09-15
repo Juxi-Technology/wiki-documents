@@ -47,3 +47,4 @@ CI1302 칩을 선택한 후 “펌웨어 업그레이드” 를 클릭합니다
 
 ![그림 9](../../../../../public/images/tutorials/accessories/ai-voice-module/Firmware-Flashing/9.png)
 
+<RelatedProducts slugs="ai-voice-module" />

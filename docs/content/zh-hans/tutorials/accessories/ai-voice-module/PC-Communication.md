@@ -31,3 +31,4 @@ description: "滑动开关移动到STC8串口模式"
 
 可以听到语音模块正常播报。
 
+<RelatedProducts slugs="ai-voice-module" />

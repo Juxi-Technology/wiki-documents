@@ -201,5 +201,4 @@ Wichtig
 
 Schieben Sie den vollständig montierten XLeRobot nicht wie einen Wagen durch die Gegend, da dies die Servo-Getriebe beschädigen kann. Heben Sie den Roboter stattdessen an (~12kg), wenn Sie ihn manuell bewegen müssen.
 
-
-
+<RelatedProducts slugs="xlerobot" />

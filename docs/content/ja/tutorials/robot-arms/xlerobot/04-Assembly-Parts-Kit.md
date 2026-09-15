@@ -201,5 +201,4 @@ sudo chmod 666 /dev/ttyACM0
 
 XLeRobot が完全に組み立てられた後は、カートのように押して移動しないでください。サーボのギアが破損する可能性があります。手動で移動する必要がある場合は、代わりにロボットを持ち上げてください(~12kg)。
 
-
-
+<RelatedProducts slugs="xlerobot" />

@@ -201,5 +201,4 @@ Important
 
 Once the XLeRobot is fully assembled, do not push it around like a cart, as this may damage the servo gears. Instead, lift the robot (~12kg) when you need to move it manually.
 
-
-
+<RelatedProducts slugs="xlerobot" />

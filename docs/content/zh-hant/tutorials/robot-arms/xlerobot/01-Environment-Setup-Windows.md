@@ -113,5 +113,4 @@ torch.cuda.is_available()
 
 ![圖 7](../../../../../public/images/tutorials/robot-arms/xlerobot/01-Environment-Setup-Windows/7.png)
 
-
-
+<RelatedProducts slugs="xlerobot" />

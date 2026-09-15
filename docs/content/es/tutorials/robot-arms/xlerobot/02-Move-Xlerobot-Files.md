@@ -49,5 +49,4 @@ Copie todos los archivos que se encuentran en `~\XLeRobot\software\examplesæ–‡ä»
 
 Tutorial https://xlerobot.readthedocs.io/zh-cn/latest/software/index.html
 
-
-
+<RelatedProducts slugs="xlerobot" />

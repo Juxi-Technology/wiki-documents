@@ -19,6 +19,10 @@ outline: false
     <span class="pc-title">Carte de capture HDMI 4K</span>
     <p class="pc-desc">Capture HDMI 4K de Juxi Technology — HDMI/Micro HDMI/DP, connexion USB directe, streaming et …</p>
   </a>
+  <a :href="withBase('/fr/products/ai-voice-module')" class="category-card">
+    <span class="pc-title">Module d'interaction vocale IA</span>
+    <p class="pc-desc">Module d'interaction vocale IA de Juxi Technology (CI1302) — 110+ commandes vocales hors ligne, 99% de reconnaissance à 5 m, mots de commande personnalisés en chinois et en anglais, communication série/IIC, compatible Arduino/Jetson/RDK/Raspberry Pi/PC</p>
+  </a>
   <a :href="withBase('/fr/products/amazinghand')" class="category-card">
     <span class="pc-title">Main dexterous AmazingHand</span>
     <p class="pc-desc">Main bionique open source à 4 doigts de Juxi Technology, contrôle bus TTL…</p>
@@ -86,6 +90,10 @@ outline: false
   <a :href="withBase('/fr/products/usb-sound-card')" class="category-card">
     <span class="pc-title">Carte son USB sans pilote</span>
     <p class="pc-desc">Carte son USB de Juxi Technology — micro + haut-parleur intégrés, plug-and-play, réduction de…</p>
+  </a>
+  <a :href="withBase('/fr/products/xlerobot')" class="category-card">
+    <span class="pc-title">Robot mobile à deux bras XLeRobot</span>
+    <p class="pc-desc">Robot mobile à deux bras XLeRobot de Juxi Technology — deux bras SO-ARM101, châssis à roues omnidirectionnelles et tour de caméra, deux cartes de commande des servos en 12V, écosystème LeRobot, disponible en kit monté ou en kit en pièces</p>
   </a>
 </div>
 

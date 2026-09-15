@@ -31,3 +31,4 @@ Schieben Sie den Schiebeschalter in den STC8-Serielle-Schnittstelle-Modus
 
 Sie können hören, dass das Sprachmodul normal ansagt.
 
+<RelatedProducts slugs="ai-voice-module" />

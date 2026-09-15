@@ -31,5 +31,4 @@ Pronunciare "你好，小犀" al modulo di interazione vocale per attivarlo; qua
 
 Nota: le parole di comando del firmware di fabbrica sono parole di comando di base e non possono essere modificate o eliminate tramite voce; la parola di comando modificata dall'utente tramite voce può esistere una sola alla volta e coesiste con le parole di comando di base.
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

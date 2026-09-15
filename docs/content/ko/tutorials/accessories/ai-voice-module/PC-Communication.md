@@ -31,3 +31,4 @@ description: "슬라이드 스위치를 STC8 시리얼 포트 모드로 이동�
 
 음성 모듈이 정상적으로 재생되는 것을 들을 수 있습니다.
 
+<RelatedProducts slugs="ai-voice-module" />

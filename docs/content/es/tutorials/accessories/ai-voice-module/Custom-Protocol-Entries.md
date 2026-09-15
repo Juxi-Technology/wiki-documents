@@ -149,5 +149,4 @@ Cuando termine de modificarlo, guarde. A continuación, siga los pasos de “1.2
 
 Después de volver a crear el firmware, también debe grabar el firmware en el módulo de interacción por voz; de este modo podrá añadir nuevas entradas de comando.
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

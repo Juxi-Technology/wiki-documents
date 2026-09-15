@@ -70,5 +70,4 @@ ID:10
 sudo chmod 666 /dev/i2c-1
 ```
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

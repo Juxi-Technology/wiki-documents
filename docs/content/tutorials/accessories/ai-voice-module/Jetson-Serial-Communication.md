@@ -107,5 +107,4 @@ sudo systemctl stop nvgetty
 sudo systemctl disable nvgetty
 ```
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

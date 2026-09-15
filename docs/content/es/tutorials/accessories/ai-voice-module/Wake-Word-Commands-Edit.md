@@ -31,5 +31,4 @@ Diga "你好，小犀" al módulo de interacción por voz para activarlo; cuando
 
 Nota: las palabras de comando del firmware de fábrica son palabras de comando básicas y no se pueden modificar ni eliminar por voz. Solo puede existir una palabra de comando modificada por voz a la vez, y coexiste con las palabras de comando básicas.
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

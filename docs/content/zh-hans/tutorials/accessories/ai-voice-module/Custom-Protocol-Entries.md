@@ -149,5 +149,4 @@ description: "模块出厂已经烧录语音识别功能固件，资料压缩包
 
 重新制作固件后，还需要将固件烧录到语音交互模块中，这样就能实现新增命令词条的功能了。
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

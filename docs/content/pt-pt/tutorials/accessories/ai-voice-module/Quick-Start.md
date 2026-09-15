@@ -35,5 +35,4 @@ Reprodução ativa: depois de dizermos uma palavra de comando de acordo com a ta
 
 Reprodução passiva: a frase correspondente só é reproduzida pelo módulo depois de o comando da tabela de protocolos lhe ser enviado através da porta série; também é possível, de acordo com o protocolo IIC, escrever os dados de reprodução correspondentes no registo de reprodução passiva. Para mais detalhes, consulte «Comunicação com vários controladores».
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

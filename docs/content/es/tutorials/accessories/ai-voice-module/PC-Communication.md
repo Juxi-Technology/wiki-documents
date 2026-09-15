@@ -31,3 +31,4 @@ Desplace el interruptor deslizante al modo de puerto serie STC8
 
 Puede escuchar que el módulo de voz reproduce con normalidad.
 
+<RelatedProducts slugs="ai-voice-module" />

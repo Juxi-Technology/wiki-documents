@@ -347,3 +347,4 @@ ros2 topic echo /juxi_voice_cmd
 
 Há dados → problema de configuração do RViz; sem dados → cabeamento/comunicação anormal.
 
+<RelatedProducts slugs="ai-voice-module" />

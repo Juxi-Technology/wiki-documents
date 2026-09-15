@@ -397,5 +397,4 @@ chmod +x ~/juxi_speech_ws/src/juxi_voice/scripts/voice_node.py
 chmod +x ~/juxi_speech_ws/src/juxi_voice/scripts/rviz_control.py
 ```
 
-
-
+<RelatedProducts slugs="ai-voice-module" />

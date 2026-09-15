@@ -201,5 +201,4 @@ sudo chmod 666 /dev/ttyACM0
 
 XLeRobot完全組裝後，不要像推車那樣推著它到處走，因為這可能損壞伺服馬達齒輪。相反，當你需要手動移動時，請抬起機器人(~12kg)。
 
-
-
+<RelatedProducts slugs="xlerobot" />
