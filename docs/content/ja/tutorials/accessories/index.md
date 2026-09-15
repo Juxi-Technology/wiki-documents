@@ -32,6 +32,16 @@ ESP32-S3 動画転送・AI ビジョンモジュール。8 種類の AI モー�
 - [シリアルプロトコルマニュアル](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
 - [AI ビジョンチュートリアル第 1 章:環境構築](./esp32-nanocam/Ch01-Environment-Setup.md)
 
+### CSI カメラ使用チュートリアル
+
+Jetson / Raspberry Pi の CSI カメラ、オートフォーカスカメラ、JetCam / Jupyter Lab の完全ガイド。
+
+- [Jetson CSI カメラ設定](./csi-camera/01-Jetson-CSI-Setup.md)
+- [オートフォーカスカメラの使用](./csi-camera/02-Auto-Focus-Camera.md)
+- [Jupyter Lab の使用](./csi-camera/03-JupyterLab.md)
+- [JetCam の使用](./csi-camera/04-JetCam.md)
+- [IMX219(ラズベリーパイ)](./csi-camera/05-IMX219-RaspberryPi.md)
+
 ### その他のアクセサリ
 
 - [0.91 OLEDスクリーンチュートリアル](./0.91-oled-screen-tutorial.md)

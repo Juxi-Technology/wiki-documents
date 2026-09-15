@@ -32,6 +32,16 @@ ESP32-S3 영상 전송과 AI 비전 모듈. 8가지 AI 모드, AP+STA 듀얼 모
 - [시리얼 프로토콜 매뉴얼](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
 - [AI 비전 튜토리얼 제1장: 환경 구축](./esp32-nanocam/Ch01-Environment-Setup.md)
 
+### CSI 카메라 사용 튜토리얼
+
+Jetson / 라즈베리파이 CSI 카메라, 자동 초점 카메라, JetCam / Jupyter Lab 사용 가이드.
+
+- [Jetson CSI 카메라 설정](./csi-camera/01-Jetson-CSI-Setup.md)
+- [자동 초점 카메라 사용](./csi-camera/02-Auto-Focus-Camera.md)
+- [Jupyter Lab 사용](./csi-camera/03-JupyterLab.md)
+- [JetCam 사용](./csi-camera/04-JetCam.md)
+- [IMX219(라즈베리파이)](./csi-camera/05-IMX219-RaspberryPi.md)
+
 ### 기타 액세서리
 
 - [0.91 OLED 스크린 튜토리얼](./0.91-oled-screen-tutorial.md)

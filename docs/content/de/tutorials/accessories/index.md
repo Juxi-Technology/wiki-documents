@@ -32,6 +32,16 @@ ESP32-S3-Videoübertragungs- und KI-Visionsmodul, unterstützt 8 KI-Modi, AP+STA
 - [Handbuch zum seriellen Protokoll](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
 - [KI-Vision-Tutorial Kapitel 1: Umgebung einrichten](./esp32-nanocam/Ch01-Environment-Setup.md)
 
+### CSI-Kamera-Tutorials
+
+Vollständige Anleitungen für Jetson-/Raspberry-Pi-CSI-Kameras, Autofokus-Kameras sowie JetCam und Jupyter Lab.
+
+- [Jetson CSI-Kamera einrichten](./csi-camera/01-Jetson-CSI-Setup.md)
+- [Autofokus-Kamera verwenden](./csi-camera/02-Auto-Focus-Camera.md)
+- [Jupyter Lab verwenden](./csi-camera/03-JupyterLab.md)
+- [JetCam verwenden](./csi-camera/04-JetCam.md)
+- [IMX219 am Raspberry Pi](./csi-camera/05-IMX219-RaspberryPi.md)
+
 ### Weitere Accessoires
 
 - [0.91-OLED-Screen-Tutorial](./0.91-oled-screen-tutorial.md)

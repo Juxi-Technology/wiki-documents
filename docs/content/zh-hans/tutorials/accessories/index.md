@@ -32,6 +32,16 @@ ESP32-S3 图传与 AI 视觉模块，支持 8 种 AI 模式、AP+STA 双模图�
 - [串口协议手册](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
 - [AI 视觉教程第 1 章：环境搭建](./esp32-nanocam/Ch01-Environment-Setup.md)
 
+### CSI 摄像头使用教程
+
+Jetson / 树莓派 CSI 摄像头、自动对焦摄像头以及 JetCam / Jupyter Lab 的完整使用指南。
+
+- [Jetson CSI 摄像头配置](./csi-camera/01-Jetson-CSI-Setup.md)
+- [自动对焦摄像头使用](./csi-camera/02-Auto-Focus-Camera.md)
+- [Jupyter Lab 使用](./csi-camera/03-JupyterLab.md)
+- [JetCam 使用](./csi-camera/04-JetCam.md)
+- [IMX219(树莓派)教程](./csi-camera/05-IMX219-RaspberryPi.md)
+
 ### 其他配件
 
 - [0.91 OLED 屏幕教程](./0.91-oled-screen-tutorial.md)

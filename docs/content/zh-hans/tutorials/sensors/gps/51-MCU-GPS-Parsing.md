@@ -1,0 +1,42 @@
+---
+title: "GPS数据解析"
+description: "本次课程我们主要学习使用STC89C52RC型号的51单片机和GPS模块实现位置信息解析功能。"
+---
+
+# GPS数据解析
+
+**1. 学习目标**
+
+本次课程我们主要学习使用STC89C52RC型号的51单片机和GPS模块实现位置信息解析功能。
+
+**2. 课前准备**
+
+GPS模块采用的是UART和USB通讯，这里使用C51的UART口读取信息，将模块的TX连接51板子的P3.0引脚。VCC和GND分别连接5V和GND。
+
+![图 1](../../../../../public/images/tutorials/sensors/gps/51-MCU-GPS-Parsing/1.png)
+
+**3.** **程序**
+
+初始化串口和数据数组
+
+![图 2](../../../../../public/images/tutorials/sensors/gps/51-MCU-GPS-Parsing/2.jpg) 
+
+读取并解析接收到的数据。
+
+![图 3](../../../../../public/images/tutorials/sensors/gps/51-MCU-GPS-Parsing/3.jpg) 
+
+通过串口打印接收到的数据。
+
+![图 4](../../../../../public/images/tutorials/sensors/gps/51-MCU-GPS-Parsing/4.jpg) 
+
+**4****. 实验现象**
+
+模块通电后，需要32s左右的时间启动，之后模块上的串口打印状态灯会持续闪烁，此时可以正常接收数据。
+
+程序下载后运行，打开串口软件，波特率设置为9600，串口会循环打印现在的位置信息。
+
+![图 5](../../../../../public/images/tutorials/sensors/gps/51-MCU-GPS-Parsing/5.jpg) 
+
+注意，模块天线需要在室外，否则可能搜索不到GPS信号。
+
+<RelatedProducts slugs="gps-beidou-module" />

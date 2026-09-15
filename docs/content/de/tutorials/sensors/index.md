@@ -21,6 +21,26 @@ Hochpräzise 6/9/10-Achsen-IMU mit integrierter Sensor-Fusion für stabile Echtz
 - [ROS2-Beispiel](./imu/ros-examples/ros2.md)
 - [Multi-Board-Beispiele](./imu/multi-board-examples/overview.md)
 
+### GPS- & BeiDou-Modul
+
+Plattformübergreifende GPS- & BeiDou-Tutorials: 51-MCU, Arduino, STM32, Jetson, Raspberry Pi und ROS, inkl. AGNSS-Unterstützung und Kartenfehler-Analyse.
+
+- [Modul-Informationen](./gps/GPS-Module-Info.md)
+- [51-MCU: GPS-Auswertung](./gps/51-MCU-GPS-Parsing.md)
+- [Arduino: Positionsausgabe](./gps/Arduino-Location-Reading.md)
+- [Arduino: Positionsauswertung](./gps/Arduino-Location-Parsing.md)
+- [STM32F103: GPS-Auswertung](./gps/STM32F103-GPS-Parsing.md)
+- [Jetson: GPS-Auswertung](./gps/Jetson-GPS-Parsing.md)
+- [Jetson: AGNSS-Unterstützung](./gps/Jetson-AGNSS.md)
+- [Jetson: Baidu-Maps-API](./gps/Jetson-Baidu-Map-API.md)
+- [Raspberry Pi: GPS-Auswertung](./gps/RaspberryPi-GPS-Parsing.md)
+- [Raspberry Pi: AGNSS-Unterstützung](./gps/RaspberryPi-AGNSS.md)
+- [Raspberry Pi: Baidu-Maps-API](./gps/RaspberryPi-Baidu-Map-API.md)
+- [ROS: Vorbereitung](./gps/ROS-Preparation.md)
+- [ROS: GPS-Daten lesen](./gps/ROS-Read-GPS-Data.md)
+- [ROS: GPS-Spur zeichnen](./gps/ROS-Draw-GPS-Track.md)
+- [Kartenpositionsfehler](./gps/Map-Location-Error.md)
+
 ---
 
 ## Support

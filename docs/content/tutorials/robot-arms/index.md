@@ -38,6 +38,24 @@ Fully open-source mobile robot cart, compatible with LeRobot imitation learning 
 - [Lekiwi Tutorial](./lekiwi/Lekiwi-Tutorial.md)
 - [Lekiwi Assembly Guide](./lekiwi/Lekiwi-Assembly.md)
 
+### SO-ARM101 + AmazingHand Course
+
+Complete workflow for the SO-ARM101 follower + AmazingHand: setup, calibration, teleoperation, data collection, model training and deployment (Windows / Linux tracks).
+
+- [Course Overview](./so-arm-amazinghand/index.md)
+- [Stage 1: Environment Setup (Linux)](./so-arm-amazinghand/01-Environment-Setup-Linux.md)
+- [Stage 1: Environment Setup (Windows)](./so-arm-amazinghand/01-Environment-Setup-Windows.md)
+- [Stage 2: Hand & Arm Calibration (Linux)](./so-arm-amazinghand/02-Hand-Arm-Calibration-Linux.md)
+- [Stage 2: Hand & Arm Calibration (Windows)](./so-arm-amazinghand/02-Hand-Arm-Calibration-Windows.md)
+- [Stage 3: Teleoperation (Linux)](./so-arm-amazinghand/03-Teleoperation-Linux.md)
+- [Stage 3: Teleoperation (Windows)](./so-arm-amazinghand/03-Teleoperation-Windows.md)
+- [Stage 4: Data Collection (Linux)](./so-arm-amazinghand/04-Data-Collection-Linux.md)
+- [Stage 4: Data Collection (Windows)](./so-arm-amazinghand/04-Data-Collection-Windows.md)
+- [Stage 5: Model Training (Linux)](./so-arm-amazinghand/05-Model-Training-Linux.md)
+- [Stage 5: Model Training (Windows)](./so-arm-amazinghand/05-Model-Training-Windows.md)
+- [Stage 6: Model Deployment (Linux)](./so-arm-amazinghand/06-Model-Deployment-Linux.md)
+- [Stage 6: Model Deployment (Windows)](./so-arm-amazinghand/06-Model-Deployment-Windows.md)
+
 ---
 
 ## Technical Support

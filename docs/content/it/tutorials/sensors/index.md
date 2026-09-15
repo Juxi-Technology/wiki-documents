@@ -21,6 +21,26 @@ Unità di misura inerziale 6/9/10 assi ad alta precisione, sensor fusion integra
 - [Esempio ROS2](./imu/ros-examples/ros2.md)
 - [Esempi multi-scheda](./imu/multi-board-examples/overview.md)
 
+### Modulo GPS e BeiDou
+
+Tutorial multipiattaforma del modulo GPS e BeiDou: 51 MCU, Arduino, STM32, Jetson, Raspberry Pi e ROS, con AGNSS e correzione degli errori di posizione.
+
+- [Informazioni modulo](./gps/GPS-Module-Info.md)
+- [51 MCU: analisi GPS](./gps/51-MCU-GPS-Parsing.md)
+- [Arduino: lettura posizione](./gps/Arduino-Location-Reading.md)
+- [Arduino: analisi posizione](./gps/Arduino-Location-Parsing.md)
+- [STM32F103: output analisi GPS](./gps/STM32F103-GPS-Parsing.md)
+- [Jetson: analisi GPS](./gps/Jetson-GPS-Parsing.md)
+- [Jetson: posizionamento AGNSS](./gps/Jetson-AGNSS.md)
+- [Jetson: API Baidu Maps](./gps/Jetson-Baidu-Map-API.md)
+- [Raspberry Pi: analisi GPS](./gps/RaspberryPi-GPS-Parsing.md)
+- [Raspberry Pi: posizionamento AGNSS](./gps/RaspberryPi-AGNSS.md)
+- [Raspberry Pi: API Baidu Maps](./gps/RaspberryPi-Baidu-Map-API.md)
+- [ROS: preparazione](./gps/ROS-Preparation.md)
+- [ROS: lettura dati GPS](./gps/ROS-Read-GPS-Data.md)
+- [ROS: tracciare il percorso GPS](./gps/ROS-Draw-GPS-Track.md)
+- [Errore di posizione sulla mappa](./gps/Map-Location-Error.md)
+
 ---
 
 ## Supporto

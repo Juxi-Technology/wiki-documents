@@ -32,6 +32,16 @@ Módulo ESP32-S3 de transmissão de vídeo e visão por IA, com suporte a 8 modo
 - [Manual do protocolo serial](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
 - [Tutorial de visão por IA — Capítulo 1: configuração do ambiente](./esp32-nanocam/Ch01-Environment-Setup.md)
 
+### Tutoriais da câmera CSI
+
+Guias completos para câmeras CSI Jetson/Raspberry Pi, câmeras com autofoco, JetCam e Jupyter Lab.
+
+- [Configuração da câmera CSI no Jetson](./csi-camera/01-Jetson-CSI-Setup.md)
+- [Uso da câmera com autofoco](./csi-camera/02-Auto-Focus-Camera.md)
+- [Uso do Jupyter Lab](./csi-camera/03-JupyterLab.md)
+- [Uso do JetCam](./csi-camera/04-JetCam.md)
+- [IMX219 no Raspberry Pi](./csi-camera/05-IMX219-RaspberryPi.md)
+
 ### Outros acessórios
 
 - [Tutorial da tela OLED 0.91"](./0.91-oled-screen-tutorial.md)

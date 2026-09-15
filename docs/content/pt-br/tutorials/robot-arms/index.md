@@ -38,6 +38,24 @@ Carrinho robótico móvel totalmente open source, compatível com o framework de
 - [Tutorial do Lekiwi](./lekiwi/Lekiwi-Tutorial.md)
 - [Guia de montagem do Lekiwi](./lekiwi/Lekiwi-Assembly.md)
 
+### Curso SO-ARM101 + AmazingHand
+
+Fluxo completo SO-ARM101 + AmazingHand: configuração, calibração, teleoperação, coleta de dados, treinamento e implantação (Windows / Linux).
+
+- [Visão geral do curso](./so-arm-amazinghand/index.md)
+- [Etapa 1: configuração de ambiente (Linux)](./so-arm-amazinghand/01-Environment-Setup-Linux.md)
+- [Etapa 1: configuração de ambiente (Windows)](./so-arm-amazinghand/01-Environment-Setup-Windows.md)
+- [Etapa 2: calibração de mão e braços (Linux)](./so-arm-amazinghand/02-Hand-Arm-Calibration-Linux.md)
+- [Etapa 2: calibração de mão e braços (Windows)](./so-arm-amazinghand/02-Hand-Arm-Calibration-Windows.md)
+- [Etapa 3: teleoperação (Linux)](./so-arm-amazinghand/03-Teleoperation-Linux.md)
+- [Etapa 3: teleoperação (Windows)](./so-arm-amazinghand/03-Teleoperation-Windows.md)
+- [Etapa 4: coleta de dados (Linux)](./so-arm-amazinghand/04-Data-Collection-Linux.md)
+- [Etapa 4: coleta de dados (Windows)](./so-arm-amazinghand/04-Data-Collection-Windows.md)
+- [Etapa 5: treinamento do modelo (Linux)](./so-arm-amazinghand/05-Model-Training-Linux.md)
+- [Etapa 5: treinamento do modelo (Windows)](./so-arm-amazinghand/05-Model-Training-Windows.md)
+- [Etapa 6: implantação do modelo (Linux)](./so-arm-amazinghand/06-Model-Deployment-Linux.md)
+- [Etapa 6: implantação do modelo (Windows)](./so-arm-amazinghand/06-Model-Deployment-Windows.md)
+
 ---
 
 ## Suporte Técnico

@@ -32,6 +32,16 @@ ESP32-S3 video streaming and AI vision module, supporting 8 AI modes, AP+STA dua
 - [Serial Protocol Manual](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
 - [AI Vision Tutorial Chapter 1: Environment Setup](./esp32-nanocam/Ch01-Environment-Setup.md)
 
+### CSI Camera Tutorials
+
+Complete guides for Jetson / Raspberry Pi CSI cameras, auto-focus cameras, JetCam and Jupyter Lab.
+
+- [Jetson CSI Camera Setup](./csi-camera/01-Jetson-CSI-Setup.md)
+- [Auto-Focus Camera Usage](./csi-camera/02-Auto-Focus-Camera.md)
+- [Using JupyterLab](./csi-camera/03-JupyterLab.md)
+- [Using JetCam](./csi-camera/04-JetCam.md)
+- [IMX219 on Raspberry Pi](./csi-camera/05-IMX219-RaspberryPi.md)
+
 ### Other Accessories
 
 - [0.91 OLED Screen Tutorial](./0.91-oled-screen-tutorial.md)

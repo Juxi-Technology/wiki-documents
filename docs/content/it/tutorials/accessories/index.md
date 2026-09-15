@@ -32,6 +32,16 @@ Modulo di trasmissione video e visione AI ESP32-S3, supporta 8 modalità AI, tra
 - [Manuale del protocollo seriale](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
 - [Tutorial di visione AI, Capitolo 1: Configurazione dell'ambiente](./esp32-nanocam/Ch01-Environment-Setup.md)
 
+### Tutorial della fotocamera CSI
+
+Guide complete per fotocamere CSI Jetson/Raspberry Pi, fotocamere autofocus, JetCam e Jupyter Lab.
+
+- [Configurazione fotocamera CSI su Jetson](./csi-camera/01-Jetson-CSI-Setup.md)
+- [Uso della fotocamera autofocus](./csi-camera/02-Auto-Focus-Camera.md)
+- [Uso di Jupyter Lab](./csi-camera/03-JupyterLab.md)
+- [Uso di JetCam](./csi-camera/04-JetCam.md)
+- [IMX219 su Raspberry Pi](./csi-camera/05-IMX219-RaspberryPi.md)
+
 ### Altri accessori
 
 - [Tutorial schermo OLED 0.91"](./0.91-oled-screen-tutorial.md)

@@ -38,6 +38,24 @@ description: "鉅犀科技機械臂系列教程首頁——SO-ARM101、AmazingHa
 - [Lekiwi 使用教程](./lekiwi/Lekiwi-Tutorial.md)
 - [Lekiwi 組裝教程](./lekiwi/Lekiwi-Assembly.md)
 
+### SO-ARM101 + AmazingHand 教程
+
+SO-ARM101 從動臂 + AmazingHand 靈巧手的完整工作流:環境搭建、校準、遙操作、數據採集、模型訓練與部署(Windows / Linux 分冊)。
+
+- [課程總覽](./so-arm-amazinghand/index.md)
+- [階段一:環境搭建(Linux)](./so-arm-amazinghand/01-Environment-Setup-Linux.md)
+- [階段一:環境搭建(Windows)](./so-arm-amazinghand/01-Environment-Setup-Windows.md)
+- [階段二:靈巧手與雙臂校準(Linux)](./so-arm-amazinghand/02-Hand-Arm-Calibration-Linux.md)
+- [階段二:靈巧手與雙臂校準(Windows)](./so-arm-amazinghand/02-Hand-Arm-Calibration-Windows.md)
+- [階段三:遠程遙操(Linux)](./so-arm-amazinghand/03-Teleoperation-Linux.md)
+- [階段三:遠程遙操(Windows)](./so-arm-amazinghand/03-Teleoperation-Windows.md)
+- [階段四:數據採集(Linux)](./so-arm-amazinghand/04-Data-Collection-Linux.md)
+- [階段四:數據採集(Windows)](./so-arm-amazinghand/04-Data-Collection-Windows.md)
+- [階段五:模型訓練(Linux)](./so-arm-amazinghand/05-Model-Training-Linux.md)
+- [階段五:模型訓練(Windows)](./so-arm-amazinghand/05-Model-Training-Windows.md)
+- [階段六:模型部署(Linux)](./so-arm-amazinghand/06-Model-Deployment-Linux.md)
+- [階段六:模型部署(Windows)](./so-arm-amazinghand/06-Model-Deployment-Windows.md)
+
 ---
 
 ## 技術支援
