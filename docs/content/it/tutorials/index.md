@@ -1,6 +1,6 @@
 ---
 title: Tutorial
-description: Juxi Technology Wiki — Tutorial
+description: "Tutti i tutorial Juxi Technology: bracci robotici SO-ARM101 e XLeRobot, sensori GPS e IMU, fotocamere CSI, moduli vocali KWS e IA, schede e accessori."
 ---
 
 # Tutorial

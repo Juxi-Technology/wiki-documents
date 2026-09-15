@@ -1,6 +1,6 @@
 ---
 title: "3장: 카메라 기초"
-description: "ESP32-NanoCam 튜토리얼 3장: DVP 카메라 인터페이스, MJPEG 스트리밍, PSRAM 프레임 버퍼 원리를 이해하고, 기본 화면을 확인하며 펌웨어에 내장된 ai_mode 각 모드를 알아봅니다."
+description: "ESP32-NanoCam 3장 카메라 기초 — DVP 인터페이스와 MJPEG 스트리밍, PSRAM 프레임 버퍼 원리와 AI 모드를 알아봅니다."
 ---
 
 # 3장: 카메라 기초

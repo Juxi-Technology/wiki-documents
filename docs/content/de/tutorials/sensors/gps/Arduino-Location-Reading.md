@@ -1,6 +1,6 @@
 ---
 title: "Arduino: Positionsausgabe"
-description: "In dieser Lektion lernen wir hauptsächlich, mit Arduino und dem GPS-Modul die Funktion zum Auslesen der Posit…"
+description: "Arduino UNO und GPS-Modul: Positionsinformationen über UART auslesen und im seriellen Monitor ausgeben, mit Vorbereitung und Beispielcode."
 ---
 
 # Arduino: Positionsausgabe

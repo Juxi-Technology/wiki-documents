@@ -1,6 +1,6 @@
 ---
 title: "Jetson : positionnement AGNSS"
-description: "Dans cette leçon, nous allons principalement apprendre à réaliser la lecture et l'analyse des informations de…"
+description: "Positionnement AGNSS accéléré sur Jetson Orin avec le module GPS BeiDou : rôle du serveur d'assistance et lecture des données en signal faible."
 ---
 
 # Jetson : positionnement AGNSS
@@ -149,7 +149,7 @@ Connectez Jetson Orin et le module GPS avec un câble Type-C, exécutez la comma
 
 **3.2. Demande de l'ak Baidu Maps**
 
-Veuillez consulter le document [Tutoriel de demande de l'API Baidu Maps]()
+Veuillez consulter le document [Tutoriel de demande de l'API Baidu Maps](./Jetson-Baidu-Map-API.md)
 
  
 

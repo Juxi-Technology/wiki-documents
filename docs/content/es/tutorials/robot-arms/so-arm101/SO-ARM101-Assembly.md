@@ -29,11 +29,11 @@ El siguiente video muestra los pasos secuenciales para configurar el ID del moto
 
 ## Sistema Windows
 
-[飞特舵机上位机.zip]
+飞特舵机上位机.zip
 
 Use el controlador de servos Feite para configurar el ID del servo y calibrar el punto medio. ¡El rango de configuración del ID va de 1 a 6!
 
-[机械臂舵机设置ID-Windows系统.mp4]
+机械臂舵机设置ID-Windows系统.mp4
 
 ## Sistema Linux/Ubuntu
 
@@ -85,13 +85,13 @@ lerobot-setup-motors \
     --teleop.port=/dev/ttyACM0
 ```
 
-[机械臂舵机设置ID-Linux系统.mp4]
+机械臂舵机设置ID-Linux系统.mp4
 
 # Paso 2: Montaje
 
 - Los pasos de montaje del brazo seguidor son básicamente los mismos que los del brazo activo. La única diferencia es que, a partir del Paso 12, el método de instalación del efector final (pinza y mango) es diferente.
 
-[SO-ARM101机械臂组装教程.mp4]
+SO-ARM101机械臂组装教程.mp4
 
 Instalación de la placa del controlador de servos: primero instale 4 pilares de cobre y luego fije la placa del controlador con cuatro tornillos M2.5\*8
 

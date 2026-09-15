@@ -1,6 +1,6 @@
 ---
 title: "Etapa 6: despliegue del modelo (Windows)"
-description: "En esta fase se carga la política ya entrenada para que el robot ejecute la tarea de forma autónoma y se grab…"
+description: "Fase 6 en Windows: despliega la política entrenada para que el SO-ARM101 con AmazingHand ejecute la tarea de forma autónoma y evalúa los resultados."
 ---
 
 

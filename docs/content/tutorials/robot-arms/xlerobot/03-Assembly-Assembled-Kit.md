@@ -1,6 +1,6 @@
 ---
 title: "Assembled-Kit Assembly"
-description: "Parts List"
+description: "XLeRobot assembled-kit assembly guide: mount the chassis car, camera tower base, and two SO-ARM101 follower arms onto the cart."
 ---
 
 # Assembled-Kit Assembly

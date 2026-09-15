@@ -96,9 +96,9 @@ description: "Le module est livré avec le firmware de reconnaissance vocale d'u
 
 4. Deux fichiers 命令詞播報詞協議列表 (liste des protocoles d'annonce) sont fournis ; modifiez-les selon ce tableau si besoin
 
-    [命令詞播報詞協議列表V3_中文模板.xlsx]
+    命令詞播報詞協議列表V3_中文模板.xlsx
 
-    [命令詞播報詞協議列表V3_英文模板.xlsx]
+    命令詞播報詞協議列表V3_英文模板.xlsx
 
 ![Configuration du firmware – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/3.png)
 
@@ -110,7 +110,7 @@ description: "Le module est livré avec le firmware de reconnaissance vocale d'u
 
 #### Télécharger l'archive du logiciel de flashage
 
-[Logiciel de flashage du firmware du module vocal.7z]
+Logiciel de flashage du firmware du module vocal.7z
 
 1. Extraire puis ouvrir le logiciel
 
@@ -138,9 +138,9 @@ description: "Le module est livré avec le firmware de reconnaissance vocale d'u
 
 #### Des fichiers de firmware prêts à flasher sont fournis ici
 
-[CI1302_中文_单麦_V00681_UART0_115200_2M.bin]
+CI1302_中文_单麦_V00681_UART0_115200_2M.bin
 
-[CI1302_英文_单麦_V00916_UART0_115200_2M.bin]
+CI1302_英文_单麦_V00916_UART0_115200_2M.bin
 
 
 

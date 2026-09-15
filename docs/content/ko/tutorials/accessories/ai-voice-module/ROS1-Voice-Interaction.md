@@ -1,6 +1,6 @@
 ---
 title: "ROS1 음성 인터랙션"
-description: "AI 음성 인터랙션 모듈은 다음 세 가지 배선 방식을 지원합니다."
+description: "AI 음성 인터랙션 모듈 ROS1 음성 인터랙션 — Ubuntu 20.04와 Noetic에서 배선, 프로토콜, RViz 사용법을 다룹니다."
 ---
 
 # ROS1 음성 인터랙션

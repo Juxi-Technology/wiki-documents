@@ -7,7 +7,7 @@ description: "本次例程使用的是Arduino Nano开发版，一台windows电�
 
 本次例程使用的是Arduino Nano开发版，一台windows电脑、杜邦线若干、IMU姿态传感器、USB转TTL模块。
 
-[Arduino.rar]
+Arduino.rar
 
 ## 1. 连接设备
 

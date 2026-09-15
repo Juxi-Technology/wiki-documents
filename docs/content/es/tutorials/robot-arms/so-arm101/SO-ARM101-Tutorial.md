@@ -265,7 +265,7 @@ lerobot-calibrate \
     --teleop.id=my_awesome_leader_arm
 ```
 
-[Vídeo de calibración central.mp4]
+Vídeo de calibración central.mp4
 
 ### Teleoperación
 
@@ -989,7 +989,7 @@ Las claves (front, side ...) de `--robot.cameras` deben coincidir exactamente co
 
 Para la depuración, cualquier PC Windows puede programar, depurar o probar el servo mediante USB. Para ello, descargue el [software Feetech](https://www.feetechrc.com/software.html). Para sistemas Ubuntu puede usarse la [herramienta FT_SCServo_Debug_Qt](https://github.com/Kotakku/FT_SCServo_Debug_Qt).
 
-[fddebug-master.zip]
+fddebug-master.zip
 
 Seleccionar el número de puerto, establecer la velocidad en baudios en 1000000, abrirlo y hacer clic en "Search"
 

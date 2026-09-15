@@ -1,6 +1,6 @@
 ---
 title: "SO-ARM101 + AmazingHand 사용 튜토리얼"
-description: "본 튜토리얼은 SO-ARM101 팔로워 암 + AmazingHand 정교한 핸드의 원격 조작, 데이터 수집, 학습 전 과정을 재현하기 위한 것입니다. LeRobot(공식 리포지토리 커스텀 버전)를…"
+description: "SO-ARM101 팔로워 암과 AmazingHand 정교한 핸드를 LeRobot으로 원격 조작하고 데이터 수집과 모델 학습까지 진행하는 전체 튜토리얼."
 ---
 
 

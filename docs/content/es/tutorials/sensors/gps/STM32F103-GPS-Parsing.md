@@ -1,6 +1,6 @@
 ---
 title: "STM32F103: salida de análisis GPS"
-description: "En esta lección aprenderemos principalmente a utilizar el STM32F103C8T6 y el módulo GPS para implementar la f…"
+description: "Módulo GPS/BeiDou con STM32F103C8T6: lee y analiza los datos del módulo y envía la información de posición por el puerto serie."
 ---
 
 # STM32F103: salida de análisis GPS

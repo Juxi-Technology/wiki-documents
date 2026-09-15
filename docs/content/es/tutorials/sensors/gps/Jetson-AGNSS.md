@@ -1,6 +1,6 @@
 ---
 title: "Jetson: posicionamiento AGNSS"
-description: "En esta lección aprenderemos principalmente a utilizar el Jetson Orin, el módulo GPS y un servidor agnss para…"
+description: "Módulo GPS/BeiDou con NVIDIA Jetson Orin: posicionamiento asistido AGNSS con servidor externo para obtener la ubicación con mayor rapidez."
 ---
 
 # Jetson: posicionamiento AGNSS
@@ -149,7 +149,7 @@ Utilice un cable type-c para conectar el Jetson Orin y el módulo GPS; ejecute e
 
 **3.2. Solicitar la ak de 百度地图**
 
-Consulte el documento [Tutorial para solicitar la api de 百度地图]()
+Consulte el documento [Tutorial para solicitar la api de 百度地图](./Jetson-Baidu-Map-API.md)
 
  
 

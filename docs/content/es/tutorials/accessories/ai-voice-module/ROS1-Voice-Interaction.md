@@ -1,6 +1,6 @@
 ---
 title: "Interacción por voz en ROS1"
-description: "El módulo de interacción por voz de IA admite los siguientes tres métodos de cableado:"
+description: "Módulo de voz IA en ROS1: entorno Ubuntu 20.04 con ROS1 Noetic, detección automática del cableado serie o I2C y ejecución del nodo de voz."
 ---
 
 # Interacción por voz en ROS1

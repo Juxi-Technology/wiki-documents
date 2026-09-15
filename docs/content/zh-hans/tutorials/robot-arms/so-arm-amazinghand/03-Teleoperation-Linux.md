@@ -1,6 +1,6 @@
 ---
 title: "阶段三：遥操作（Linux）"
-description: "本阶段启动遥操作闭环：主动臂控制从动臂运动、夹爪控制 AmazingHand 开合。这是验证整套系统是否正常工作的关键阶段。"
+description: "SO-ARM101 从动臂与 AmazingHand 灵巧手教程——在 Linux 上启动遥操作闭环，验证主动臂与灵巧手的跟随方向。"
 ---
 
 

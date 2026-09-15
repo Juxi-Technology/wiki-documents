@@ -1,6 +1,6 @@
 ---
 title: "IMX219 am Raspberry Pi"
-description: "Wenn nicht, liegt möglicherweise ein Problem mit dem Kernel oder der Gerätehardware vor; versuchen Sie, das S…"
+description: "IMX219-Kamera am Raspberry Pi aktivieren und nutzen: Geräteknoten prüfen, CSI-Kamera freischalten, Status testen und Foto aufnehmen."
 ---
 
 # IMX219 am Raspberry Pi

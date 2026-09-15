@@ -1,6 +1,6 @@
 ---
 title: "Phase 3 : Téléopération (Windows)"
-description: "Cette phase met en route la boucle de téléopération : le bras maître commande les mouvements du bras esclave,…"
+description: "Phase 3 sous Windows : lancer la téléopération SO-ARM101 et AmazingHand, vérifier les directions et le suivi proportionnel dès le premier lancement."
 ---
 
 

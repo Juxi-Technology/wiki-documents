@@ -1,6 +1,6 @@
 ---
 title: "ROS2 Voice Interaction"
-description: "The AI voice interaction module supports the following three wiring methods:"
+description: "ROS2 voice interaction node for the AI Voice Interaction Module on Ubuntu 22.04 with Humble: three wiring methods, auto detection, and RViz2 command control."
 ---
 
 # ROS2 Voice Interaction

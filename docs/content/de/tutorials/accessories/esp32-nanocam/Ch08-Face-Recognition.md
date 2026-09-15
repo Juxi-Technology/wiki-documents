@@ -1,6 +1,6 @@
 ---
 title: "Kapitel 8: Gesichtserkennung"
-description: "Kapitel 8 des ESP32-NanoCam-Tutorials: Gesichtsmerkmale registrieren und fortlaufend erkennen (ID/who?) — Befehle face_eril, face_rz, face_del, face_detect, Frame-Skipping-Strategie und Fehlerbehebung."
+description: "Kapitel 8 des ESP32-NanoCam-Tutorials: Gesichter registrieren, unterscheiden und löschen sowie Tipps zur Gesichtserkennung und Fehlerbehebung."
 ---
 
 # Kapitel 8: Gesichtserkennung

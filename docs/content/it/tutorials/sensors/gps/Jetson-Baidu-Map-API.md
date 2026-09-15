@@ -1,6 +1,6 @@
 ---
 title: "Jetson: API Baidu Maps"
-description: "1. Metodo di registrazione"
+description: "API Baidu Maps su NVIDIA Jetson: registrarsi alla piattaforma, creare l'applicazione, ottenere la chiave e convertire le coordinate GPS per la visualizzazione."
 ---
 
 # Jetson: API Baidu Maps

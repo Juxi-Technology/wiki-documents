@@ -7,7 +7,7 @@ description: "This routine uses an Arduino Nano development board, a Windows com
 
 This routine uses an Arduino Nano development board, a Windows computer, several DuPont wires, an IMU attitude sensor, and a USB to TTL module. 
 
-[Arduino.rar]
+Arduino.rar
 
 ## 1. Connect the device
 
@@ -23,9 +23,9 @@ Please refer to the source code in the materials for the specific code.
 
 ```C++
 //解析环形缓冲中的数据，提取完整帧并更新缓存
-​
+
 //Process RX ring buffer, parse frames and update internal cache
-​
+
 void IMU_UART_Process(void)
 {
     enum {
@@ -118,8 +118,8 @@ void IMU_UART_Process(void)
         }
     }
 }
-​
-​
+
+
 /* ---------- 解析数据帧 / Parse one complete frame ---------- */
 static void _parse_frame_data(uint8_t frame_function, const uint8_t *frame_data)
 {

@@ -1,6 +1,6 @@
 ---
 title: "Phase 5: Modelltraining (Linux)"
-description: "In dieser Phase trainieren Sie mit dem erfassten Datensatz eine Policy (z. B. ACT) und erzeugen ein einsetzba…"
+description: "Phase 5 unter Linux: mit dem erfassten Datensatz eine ACT-Policy trainieren und ein einsetzbares Modell für SO-ARM101 und AmazingHand erzeugen."
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: Tutorial sensore di assetto IMU ad alta precisione
-description: "1. Installare le librerie Python necessarie"
+description: "Tutorial del sensore di assetto IMU ad alta precisione: installare le librerie Python, configurare la porta seriale e leggere i dati di assetto."
 ---
 
 # Tutorial sensore di assetto IMU ad alta precisione

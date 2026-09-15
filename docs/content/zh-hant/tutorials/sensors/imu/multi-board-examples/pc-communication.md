@@ -1,6 +1,6 @@
 ---
 title: "PC 通信"
-description: "注意：如果無法識別串口，請安裝ch340驅動"
+description: "IMU 慣導模組 PC 通信教程：透過 Type-C 連接電腦並安裝驅動，以串列埠工具檢視原始資料輸出。"
 ---
 
 # PC 通信

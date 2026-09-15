@@ -1,6 +1,6 @@
 ---
 title: "Overhead Camera Mount Installation"
-description: "Please refer to this tutorial for debugging the USB auto-docking cameraUSB Auto-Focus Camera Tutorial"
+description: "SO-ARM100 and SO-ARM101 overhead camera mount installation: assemble the top-down bracket for webcam and RealSense depth camera setups."
 ---
 
 # Overhead Camera Mount Installation

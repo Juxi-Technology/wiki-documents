@@ -1,6 +1,6 @@
 ---
 title: "4K HDMI 采集器"
-description: "根据主板的接口分以下三种接线操作"
+description: "钜犀科技 4K HDMI 采集卡使用教程——HDMI、Micro HDMI、DP 三种接线方式与 OBS、Potplayer 录屏设置。"
 ---
 
 # 4K HDMI 采集器

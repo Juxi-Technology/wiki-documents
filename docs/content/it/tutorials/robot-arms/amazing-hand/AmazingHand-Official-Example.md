@@ -1,6 +1,6 @@
 ---
 title: Tutorial di esecuzione dell'esempio ufficiale della mano robotica
-description: "Scaricare l'archivio di codice allegato a questo tutorial per la demo, oppure clonare il repository open source ufficiale https://github.com/pollen-robotics/AmazingHand.git ; il codice ufficiale può contenere errori."
+description: "Esempio ufficiale della mano robotica AmazingHand: scaricare il codice di Pollen Robotics, installare Rust e seguire le istruzioni per Windows e Linux."
 ---
 
 # Tutorial di esecuzione dell'esempio ufficiale della mano robotica
@@ -16,11 +16,11 @@ Si consiglia di scaricare l'archivio compresso del codice allegato a questo tuto
 
 Archivio compresso del codice per Windows
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 Archivio compresso del codice per Linux
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 ```Plain Text
 git clone https://github.com/pollen-robotics/AmazingHand.git

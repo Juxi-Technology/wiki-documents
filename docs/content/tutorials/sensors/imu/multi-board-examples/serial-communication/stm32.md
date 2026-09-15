@@ -7,7 +7,7 @@ description: "This routine uses an STM32F103C8T6 core board, a Windows computer,
 
 This routine uses an STM32F103C8T6 core board, a Windows computer, several DuPont wires, and an IMU attitude sensor. 
 
-[STM32.zip]
+STM32.zip
 
 Use Keil5 software to open USART.uvprojx, and burn the program into the STM32F103C8T6 core board 
 
@@ -23,9 +23,9 @@ Please refer to the source code in the materials for the specific code.
 
 ```Python
 //解析环形缓冲中的数据，提取完整帧并更新缓存
-​
+
 //Process RX ring buffer, parse frames and update internal cache
-​
+
 void IMU_UART_Process(void)
 {
     enum {
@@ -118,8 +118,8 @@ void IMU_UART_Process(void)
         }
     }
 }
-​
-​
+
+
 /* ---------- 解析数据帧 / Parse one complete frame ---------- */
 static void _parse_frame_data(uint8_t frame_function, const uint8_t *frame_data)
 {

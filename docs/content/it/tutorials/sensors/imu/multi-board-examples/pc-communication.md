@@ -19,5 +19,5 @@ Configurare l'assistente seriale come mostrato sotto
 
 L'uscita seriale contiene dati grezzi; il loro significato è descritto nel documento « **Protocollo di comunicazione** ».
 
-[Modulo IMU – protocollo di comunicazione seriale e I2C.xlsx]
+Modulo IMU – protocollo di comunicazione seriale e I2C.xlsx
 

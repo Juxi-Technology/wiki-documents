@@ -1,6 +1,6 @@
 ---
 title: "階段三：遙操作（Linux）"
-description: "本階段啟動遙操作閉環：主動臂控制從動臂運動、夾爪控制 AmazingHand 開合。這是驗證整套系統是否正常工作的關鍵階段。"
+description: "SO-ARM101 與 AmazingHand 的階段三遙操作教程(Linux)——設定串列埠後,主動臂帶動從動臂、夾爪控制靈巧手開合。"
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "ROS1語音互動"
-description: "AI語音互動模組支援以下三種接線方式："
+description: "AI 語音互動模組教程(ROS1 環境)——三種接線方式自動偵測,支援串列埠與 IIC 通訊的互動節點。"
 ---
 
 # ROS1語音互動

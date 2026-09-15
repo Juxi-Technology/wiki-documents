@@ -1,6 +1,6 @@
 ---
 title: "Jetson: IIC 통신"
-description: "로그아웃 후 다시 로그인하면 적용됩니다."
+description: "AI 음성 인터랙션 모듈 Jetson IIC 통신 — 의존성 설치, i2c-tools로 장치 확인, IIC 배선과 실행 방법을 정리했습니다."
 ---
 
 # Jetson: IIC 통신

@@ -1,6 +1,6 @@
 ---
 title: "RDK"
-description: "本教程以RDK X5主板的？版本的鏡像爲例。"
+description: "IMU 慣導模組 I2C 通訊教程(RDK X5 版)：設備連接、驅動庫安裝與 IMU 校準操作。"
 ---
 
 # RDK
@@ -37,7 +37,7 @@ sudo apt install -y python3-smbus2
 
 3.2傳輸文件
 
-[IMU_ROS2.zip]
+IMU_ROS2.zip
 
 如果還不會使用MobaXterm傳輸文件的朋友，請查看以下網頁MobaXterm詳細安裝和操作方法：[文件远程传输](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 

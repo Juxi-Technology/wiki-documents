@@ -1,6 +1,6 @@
 ---
 title: "Arduino: Location Parsing"
-description: "In this lesson, we will mainly learn to use Arduino and a GPS module to implement the position information pa…"
+description: "Arduino GPS position parsing tutorial: read data from the GPS/BeiDou module on an Arduino UNO and parse latitude, longitude, and time values."
 ---
 
 # Arduino: Location Parsing

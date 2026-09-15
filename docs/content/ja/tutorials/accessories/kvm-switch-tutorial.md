@@ -1,6 +1,6 @@
 ---
 title: "KVMスイッチ"
-description: "KVMスイッチ:HUB機能、TTLシリアル、Bluetoothモジュール搭載"
+description: "KVM スイッチの使い方。HUB、TTL シリアル、Bluetooth モジュールの機能と、2 台のデバイスを切り替える方法を解説します。"
 ---
 
 # KVMスイッチ

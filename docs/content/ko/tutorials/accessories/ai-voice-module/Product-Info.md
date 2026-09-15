@@ -1,6 +1,6 @@
 ---
 title: "제품 자료"
-description: "CI1302 는 Chipintelli 가 개발한 차세대 고성능 신경망 지능형 음성 칩으로, Chipintelli 가 자체 개발한 두뇌 신경망 프로세서 BNPU V3 와 CPU 코어를 통합했으며, …"
+description: "AI 음성 인터랙션 모듈 제품 자료 — CI1302 칩 소개와 제품 특징, 작동 원리, 하드웨어 인터페이스 설명을 모았습니다."
 ---
 
 # 제품 자료

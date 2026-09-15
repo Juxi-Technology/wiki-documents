@@ -1,6 +1,6 @@
 ---
 title: "Arduino: análisis de posición"
-description: "En esta lección aprenderemos principalmente a utilizar Arduino y el módulo GPS para implementar la función de…"
+description: "Módulo GPS/BeiDou con Arduino UNO: interpreta las tramas y muestra la información de posición ya analizada en el monitor serie."
 ---
 
 # Arduino: análisis de posición

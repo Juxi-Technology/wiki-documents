@@ -1,6 +1,6 @@
 ---
 title: "Lekiwi 使用教程"
-description: "黑色主动臂使用5V6A电源适配器，白色从动臂使用12V5A电源适配器"
+description: "Lekiwi 开源移动机器人小车使用教程：基于 LeRobot 框架完成校准、数据采集与训练部署，兼容 SO-ARM101 机械臂。"
 ---
 
 # Lekiwi 使用教程
@@ -10,7 +10,7 @@ description: "黑色主动臂使用5V6A电源适配器，白色从动臂使用12
 
 黑色主动臂使用5V6A电源适配器，白色从动臂使用12V5A电源适配器
 
-[lerobot-Lekiwi.zip]
+lerobot-Lekiwi.zip
 
 本教程仓库代码保持为2026年3月1日之前的Lerobot经过测试的稳定版本，目前Huggingface对Lerobot进行了非常庞大的升级，增加了非常多的新功能，如果需要体验最新的教程请跟随[官方文档进行操作](https://huggingface.co/docs/lerobot/lekiwi)。
 
@@ -615,7 +615,7 @@ https://github.com/SIGRobotics-UIUC/LeKiwi-sim
 
 
 
-## 帮助 🙋‍
+## 帮助 🙋
 
 对于硬件问题，请联系客户服务。对于使用问题，请加入 Discord。
 

@@ -1,6 +1,6 @@
 ---
 title: Application ROS2
-description: "Configuration système : ubuntu22.04"
+description: "Application ROS2 du module IMU sous Ubuntu 22.04 : installer ROS2 Humble, compiler le paquet et afficher les données d'attitude sur les topics."
 ---
 
 # Application ROS2

@@ -1,6 +1,6 @@
 ---
 title: "Schnellstart"
-description: "Ab Werk ist bereits die Firmware mit Spracherkennungsfunktion geflasht, sodass Sie ohne Flashen schnell erste…"
+description: "Schnellstart für das AI-Sprachinteraktionsmodul: Geräte anschließen und ohne Flashen erste Spracherkennung und Ansagen mit der Werk-Firmware testen."
 ---
 
 # Schnellstart

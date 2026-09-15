@@ -10,7 +10,7 @@ description: "LeRobot ベースの Lekiwi 移動ロボットのセットアッ�
 
 黒色の能動アームは5V6A電源アダプター、白色の従動アームは12V5A電源アダプターを使用
 
-[lerobot-Lekiwi.zip]
+lerobot-Lekiwi.zip
 
 このチュートリアルのリポジトリのコードは、2026年3月1日より前にテストされた Lerobot の安定版で維持されています。現在、Huggingface は Lerobot を大幅にアップグレードし、多数の新機能を追加しています。最新のチュートリアルを体験したい場合は、[公式ドキュメントの手順](https://huggingface.co/docs/lerobot/lekiwi) に従って操作してください。
 

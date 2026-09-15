@@ -1,6 +1,6 @@
 ---
 title: "Arduino: Comunicação IIC"
-description: "1. Abra o arquivo IICVoice.ino"
+description: "Exemplo de comunicação IIC do módulo de interação por voz IA da Juxi Technology com o Arduino — estrutura BSP, mapa de registradores e solução de problemas."
 ---
 
 # Arduino: Comunicação IIC

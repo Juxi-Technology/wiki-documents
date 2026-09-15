@@ -1,6 +1,6 @@
 ---
 title: "Jetson: Comunicazione IIC"
-description: "La modifica ha effetto dopo la disconnessione e un nuovo accesso."
+description: "Modulo di interazione vocale IA su Jetson via IIC: installazione delle dipendenze, gruppi utente i2c e dialout e codice Python per controllare il modulo."
 ---
 
 # Jetson: Comunicazione IIC

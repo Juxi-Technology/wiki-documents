@@ -1,6 +1,6 @@
 ---
 title: 贡献指南
-description: 如何为钜犀科技 Wiki 贡献内容
+description: "为钜犀科技 Wiki 贡献内容的完整指南——从 Fork 仓库、提交 Pull Request 到新增教程的流程说明。"
 ---
 
 # 贡献指南

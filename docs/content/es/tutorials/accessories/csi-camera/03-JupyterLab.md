@@ -1,6 +1,6 @@
 ---
 title: "Uso de Jupyter Lab"
-description: "Utilice el siguiente comando para instalar Jupyter Lab: si la velocidad de descarga de Jupyter Lab es lenta, …"
+description: "Instala y usa Jupyter Lab en NVIDIA Jetson: instalación con pip, arranque, configuración del acceso y primeros pasos en el entorno."
 ---
 
 # Uso de Jupyter Lab

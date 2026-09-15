@@ -1,6 +1,6 @@
 ---
 title: "Arduino: Comunicação IIC"
-description: "1. Abra o ficheiro IICVoice.ino"
+description: "Comunicação IIC entre o Arduino e o módulo de interação por voz IA CI1302: ligação de hardware, compilação, mapa de registos e teste pela porta série."
 ---
 
 # Arduino: Comunicação IIC

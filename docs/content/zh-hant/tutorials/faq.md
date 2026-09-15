@@ -1,6 +1,6 @@
 ---
 title: 常見問題 FAQ
-description: 鉅犀科技產品常見問題合集——機械臂、傳感器、配件安裝與調試高頻問題匯總
+description: "鉅犀科技產品常見問題 FAQ——機械臂、感測器、配件安裝與調試的高頻問題解答。"
 keywords: [faq, 常見問題, 故障排除, troubleshooting]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: 第 3 章:摄像头基础
-description: "ESP32-NanoCam 教程第 3 章:理解 DVP 摄像头接口、MJPEG 推流与 PSRAM 帧缓冲原理,并查看默认画面、认识固件内置的 ai_mode 各模式。"
+description: "ESP32-NanoCam 教程第 3 章——DVP 摄像头接口、MJPEG 推流与 PSRAM 帧缓冲原理,认识内置 AI 模式。"
 ---
 
 # 第 3 章:摄像头基础

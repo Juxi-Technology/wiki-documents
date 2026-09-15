@@ -1,6 +1,6 @@
 ---
 title: "Stage 4: Data Collection (Linux)"
-description: "This stage records a teleoperation dataset: under manual control, it collects \"joint angle + camera image\" sa…"
+description: "Stage 4 data collection on Linux: record a local dataset of joint angles and camera images for training, with no Hugging Face login required."
 ---
 
 

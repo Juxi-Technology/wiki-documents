@@ -1,6 +1,6 @@
 ---
 title: "Configurazione (Windows)"
-description: "Il braccio leader nero utilizza un adattatore di alimentazione 5V6A"
+description: "XLeRobot: configurazione dell'ambiente su Windows con installazione di Miniconda, mirror conda e creazione dell'ambiente Python per LeRobot."
 ---
 
 # Configurazione (Windows)

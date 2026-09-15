@@ -1,6 +1,6 @@
 ---
 title: "Stage 6: Model Deployment (Windows)"
-description: "This stage loads the trained policy so the robot can execute tasks autonomously, and records evaluation video…"
+description: "Stage 6 model deployment on Windows: run the trained checkpoint so the robot executes pick tasks autonomously and save evaluation recordings."
 ---
 
 

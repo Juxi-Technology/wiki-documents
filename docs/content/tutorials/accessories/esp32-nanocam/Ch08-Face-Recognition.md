@@ -1,6 +1,6 @@
 ---
 title: "Chapter 8: Face Recognition"
-description: "ESP32-NanoCam tutorial Chapter 8: enroll face features and recognize faces continuously (ID/who?), mastering the face_eril, face_rz, face_del, and face_detect commands, the frame-skipping strategy, and troubleshooting."
+description: "ESP32-NanoCam tutorial Chapter 8: enroll face features and recognize faces by ID, covering the detection pipeline, frame skipping, and troubleshooting."
 ---
 
 # Chapter 8: Face Recognition

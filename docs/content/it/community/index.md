@@ -1,6 +1,6 @@
 ---
 title: Community
-description: Juxi Technology Wiki — Community
+description: "La community Juxi Technology: canali ufficiali su Hugging Face, email e negozio, vantaggi della partecipazione e come contribuire alla robotica open source."
 ---
 
 # Community

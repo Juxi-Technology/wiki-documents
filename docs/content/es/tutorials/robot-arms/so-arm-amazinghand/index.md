@@ -1,6 +1,6 @@
 ---
 title: "Tutorial de uso de SO-ARM101 + AmazingHand"
-description: "Este tutorial está orientado a reproducir el flujo completo de teleoperación, recolección de datos y entrenam…"
+description: "Tutorial de SO-ARM101 con AmazingHand: guía completa de teleoperación, recolección de datos, entrenamiento de políticas y despliegue, en Linux y Windows."
 ---
 
 

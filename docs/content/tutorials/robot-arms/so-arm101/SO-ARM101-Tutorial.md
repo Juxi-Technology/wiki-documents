@@ -279,7 +279,7 @@ lerobot-calibrate \
     --teleop.id=my_awesome_leader_arm
 ```
 
-[机械臂中位校准视频.mp4]
+机械臂中位校准视频.mp4
 
 ### Remote Sensing Operation 
 
@@ -1025,7 +1025,7 @@ If you encounter software issues or environment dependency issues that cannot be
 
 For debugging, any Windows PC can program, debug, or test the servo via USB connection. To do this, please download [ Feetech Software ](https://www.feetechrc.com/software.html). For Ubuntu systems, you can use [ FT_SCServo_Debug_Qt Tool ](https://github.com/Kotakku/FT_SCServo_Debug_Qt). 
 
-[fddebug-master.zip]
+fddebug-master.zip
 
 Select the Port Number, set the Baud Rate to1000000, open it, and click "Search"
 

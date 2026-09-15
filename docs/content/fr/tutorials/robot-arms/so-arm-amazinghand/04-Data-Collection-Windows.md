@@ -1,6 +1,6 @@
 ---
 title: "Phase 4 : Collecte de données (Windows)"
-description: "Cette phase consiste à enregistrer un jeu de données de téléopération : collecter des échantillons « angles d…"
+description: "Phase 4 sous Windows : collecter un jeu de données de téléopération SO-ARM101 et AmazingHand et vérifier les épisodes enregistrés."
 ---
 
 

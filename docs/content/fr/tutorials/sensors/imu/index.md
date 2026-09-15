@@ -1,6 +1,6 @@
 ---
 title: Tutoriel capteur d'attitude IMU haute précision
-description: "1. Installer les bibliothèques Python requises"
+description: "Tutoriel du capteur d'attitude IMU haute précision : installer la bibliothèque, configurer le mappage des ports, communication série ou IIC et calibration."
 ---
 
 # Tutoriel capteur d'attitude IMU haute précision

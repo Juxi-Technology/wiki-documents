@@ -1,6 +1,6 @@
 ---
 title: "Interazione vocale ROS2"
-description: "Il modulo di interazione vocale AI supporta le seguenti tre modalità di cablaggio:"
+description: "Interazione vocale del modulo IA su ROS2 Humble: nodo che rileva automaticamente il cablaggio seriale o I2C e comanda il modulo su Ubuntu 22.04."
 ---
 
 # Interazione vocale ROS2

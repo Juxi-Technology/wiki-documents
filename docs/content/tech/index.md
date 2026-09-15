@@ -1,6 +1,6 @@
 ---
 title: Tech Docs
-description: Here are all the technical docs!
+description: "Technical documentation index for Juxi Technology products, with API reference and developer guides for robot arms, cameras, sensors, and accessories."
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "移动 XLeRobot 文件"
-description: "在https://github.com/Vector-Wangel/XLeRobot下载压缩包解压"
+description: "XLeRobot 文件部署教程：将软件仓库中的模型、机器人、遥操作与示例文件复制到 LeRobot 目录下的步骤。"
 ---
 
 # 移动 XLeRobot 文件

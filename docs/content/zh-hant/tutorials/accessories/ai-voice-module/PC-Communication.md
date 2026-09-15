@@ -1,6 +1,6 @@
 ---
 title: "PC通訊"
-description: "滑動開關移動到STC8串列埠模式"
+description: "AI 語音互動模組教程(PC 平台)——滑動開關切至串列埠模式,以除錯助手收發協定測試。"
 ---
 
 # PC通訊

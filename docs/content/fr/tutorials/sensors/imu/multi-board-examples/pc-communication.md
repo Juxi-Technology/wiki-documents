@@ -19,5 +19,5 @@ Configurer l'assistant série comme illustré ci-dessous
 
 La sortie série contient des données brutes ; leur signification est détaillée dans le document « **Protocole de communication** ».
 
-[Module IMU – protocole de communication série et I2C.xlsx]
+Module IMU – protocole de communication série et I2C.xlsx
 

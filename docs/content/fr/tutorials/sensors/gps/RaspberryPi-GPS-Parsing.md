@@ -1,6 +1,6 @@
 ---
 title: "Raspberry Pi : analyse GPS"
-description: "Dans cette leçon, nous allons principalement apprendre à lire et à analyser les informations de position à l'…"
+description: "Lecture et analyse des données du module GPS BeiDou sur Raspberry Pi via USB : filtrage des trames GNGGA et GNVTG et affichage en boucle."
 ---
 
 # Raspberry Pi : analyse GPS

@@ -1,6 +1,6 @@
 ---
 title: "Interface Control Tutorial"
-description: "[AmazingHandControl.zip]"
+description: "AmazingHand interface control tutorial: open-source Python control examples for the 4-finger dexterous hand over the TTL serial bus."
 ---
 
 # Interface Control Tutorial
@@ -10,7 +10,7 @@ description: "[AmazingHandControl.zip]"
 
 https://github.com/Betatester777/AmazingHandControl
 
-[AmazingHandControl.zip]
+AmazingHandControl.zip
 
 
 ---

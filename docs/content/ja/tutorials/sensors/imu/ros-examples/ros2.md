@@ -1,6 +1,6 @@
 ---
 title: "ROS2 応用"
-description: "システム構成：ubuntu22.04"
+description: "高精度 IMU 姿勢センサーの ROS2 応用チュートリアル。Ubuntu 22.04 と Humble の環境設定からデータ取得までの手順を解説します。"
 ---
 
 # ROS2 応用

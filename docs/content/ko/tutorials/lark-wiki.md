@@ -1,6 +1,6 @@
 ---
 title: Lark Wiki
-description: "JUXI 튜토리얼의 페이수 문서 미러 입구 및 설명"
+description: "Lark Wiki 미러 — 페이수 문서로 제공되는 JUXI 튜토리얼의 중국어·영어·번체 버전 입구를 안내합니다."
 ---
 
 # Lark Wiki

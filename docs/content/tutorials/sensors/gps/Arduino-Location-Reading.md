@@ -1,6 +1,6 @@
 ---
 title: "Arduino: Location Reading"
-description: "In this lesson, we will mainly learn to use Arduino and a GPS module to implement the position information re…"
+description: "Arduino GPS raw data reading tutorial: print the unprocessed output from the GPS/BeiDou module on the Arduino UNO serial monitor at 9600 baud."
 ---
 
 # Arduino: Location Reading

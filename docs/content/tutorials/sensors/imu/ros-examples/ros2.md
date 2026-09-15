@@ -1,6 +1,6 @@
 ---
 title: ROS2 Application
-description: "System configuration: Ubuntu 22.04"
+description: "IMU ROS2 application tutorial: set up ROS2 Humble on Ubuntu 22.04, add a serial port mapping, and view the high-precision IMU attitude data."
 ---
 
 # ROS2 Application

@@ -1,6 +1,6 @@
 ---
 title: Sujets
-description: Juxi Technology Wiki — Sujets
+description: "Panorama des sujets techniques du Wiki Juxi Technology : robot learning, JetPack, IA embarquée, intelligence incarnée et matériel open source."
 ---
 
 # Sujets

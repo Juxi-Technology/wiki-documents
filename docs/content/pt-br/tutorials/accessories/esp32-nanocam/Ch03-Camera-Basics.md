@@ -1,6 +1,6 @@
 ---
 title: "Capítulo 3: Fundamentos da câmera"
-description: "Capítulo 3 do tutorial do ESP32-NanoCam: entenda a interface de câmera DVP, a transmissão MJPEG e o buffer de quadros em PSRAM, veja a imagem padrão e conheça os modos ai_mode integrados ao firmware."
+description: "Capítulo 3 do tutorial do ESP32-NanoCam (módulo de vídeo WiFi ESP32-S3): interface de câmera DVP, transmissão MJPEG, buffer em PSRAM e modos de IA do firmware."
 ---
 
 # Capítulo 3: Fundamentos da câmera

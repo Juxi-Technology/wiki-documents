@@ -1,6 +1,6 @@
 ---
 title: 贡献者社区
-description: 加入钜犀科技贡献者社区
+description: "加入钜犀科技贡献者社区——Hugging Face、B站、邮箱与商城等渠道一览,欢迎创客与开发者参与。"
 ---
 
 # 贡献者社区

@@ -1,6 +1,6 @@
 ---
 title: "Modificar a palavra de ativação e as palavras de comando"
-description: "Faça a modificação da palavra de ativação em um ambiente silencioso; ambientes barulhentos afetam a precisão …"
+description: "Como modificar a palavra de ativação e as palavras de comando do módulo de interação por voz IA da Juxi Technology por aprendizado de voz."
 ---
 
 # Modificar a palavra de ativação e as palavras de comando

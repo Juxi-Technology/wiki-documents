@@ -1,6 +1,6 @@
 ---
 title: "Jetson: AGNSS Positioning"
-description: "In this lesson, we will mainly learn to use Jetson Orin, a GPS module, and an AGNSS server to implement posit…"
+description: "Jetson AGNSS positioning tutorial: connect a Jetson Orin to an AGNSS server so the GPS/BeiDou module gets a fast first fix under weak signals."
 ---
 
 # Jetson: AGNSS Positioning
@@ -149,7 +149,7 @@ Use a type-c cable to connect the Jetson Orin and the GPS module, run the comman
 
 **3.2. Apply for a Baidu Maps ak**
 
-Please see the document [Baidu Maps API Application Tutorial]()
+Please see the document [Baidu Maps API Application Tutorial](./Jetson-Baidu-Map-API.md)
 
  
 

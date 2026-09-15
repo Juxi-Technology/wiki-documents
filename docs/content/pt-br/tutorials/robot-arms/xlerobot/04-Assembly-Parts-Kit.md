@@ -1,6 +1,6 @@
 ---
 title: "Montagem do kit em peças"
-description: "Se você preferir pular a diversão de apertar parafusos, você também pode comprar o kit pré-montado do braço s…"
+description: "Montagem do kit em peças do XLeRobot — montar os braços SO-ARM101, configurar os servos, o carrinho de transporte, a base com rodas e fazer a fiação."
 ---
 
 # Montagem do kit em peças
@@ -69,7 +69,7 @@ sudo chmod 666 /dev/ttyACM0
 
 ![Imagem 6](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/6.png)
 
-## 🧑‍🦼‍➡ Base com rodas
+## 🧑🦼➡ Base com rodas
 
 > Se você já tem uma base Lekiwi, remova a bateria, o suporte dos servos etc. Na placa inferior, basta instalar 3 servos com rodas (mantenha a fiação).
 > 

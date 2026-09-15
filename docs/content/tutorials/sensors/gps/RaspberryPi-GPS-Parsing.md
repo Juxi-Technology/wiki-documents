@@ -1,6 +1,6 @@
 ---
 title: "Raspberry Pi: GPS Parsing"
-description: "In this lesson, we will mainly learn to use a Raspberry Pi and a GPS module to read and parse position inform…"
+description: "Raspberry Pi GPS parsing tutorial: connect the GPS/BeiDou module over USB and parse sentences into latitude, longitude, and heading values."
 ---
 
 # Raspberry Pi: GPS Parsing

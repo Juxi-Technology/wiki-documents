@@ -98,9 +98,9 @@ description: "模块出厂已经烧录语音识别功能固件，资料附件里
 
 4. 这里提供了两份命令词播报词协议列表，有需要的可以根据这份表格自行更改
 
-    [命令词播报词协议列表V3_中文模板.xlsx]
+    命令词播报词协议列表V3_中文模板.xlsx
 
-    [命令词播报词协议列表V3_英文模板.xlsx]
+    命令词播报词协议列表V3_英文模板.xlsx
 
 ![固件配置 – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/3.png)
 
@@ -112,7 +112,7 @@ description: "模块出厂已经烧录语音识别功能固件，资料附件里
 
 #### 下载语音模块烧录软件压缩包
 
-[语音模块固件烧录软件.7z]
+语音模块固件烧录软件.7z
 
 1. 解压后打开软件
 
@@ -142,9 +142,9 @@ description: "模块出厂已经烧录语音识别功能固件，资料附件里
 
 #### 这里有准备好的固件资料，可直接烧录
 
-[CI1302_中文_单麦_V00681_UART0_115200_2M.bin]
+CI1302_中文_单麦_V00681_UART0_115200_2M.bin
 
-[CI1302_英文_单麦_V00916_UART0_115200_2M.bin]
+CI1302_英文_单麦_V00916_UART0_115200_2M.bin
 
 
 

@@ -265,7 +265,7 @@ lerobot-calibrate \
     --teleop.id=my_awesome_leader_arm
 ```
 
-[Video calibrazione centrale.mp4]
+Video calibrazione centrale.mp4
 
 ### Teleoperazione
 
@@ -988,7 +988,7 @@ Le chiavi (front, side ...) di `--robot.cameras` devono corrispondere esattament
 
 Per il debug, qualsiasi PC Windows può programmare, eseguire il debug o testare il servo via USB. A tal fine, scaricare il [software Feetech](https://www.feetechrc.com/software.html). Per i sistemi Ubuntu è possibile usare il [tool FT_SCServo_Debug_Qt](https://github.com/Kotakku/FT_SCServo_Debug_Qt).
 
-[fddebug-master.zip]
+fddebug-master.zip
 
 Selezionare il numero di porta, impostare il baud rate su 1000000, aprirla e fare clic su "Search"
 

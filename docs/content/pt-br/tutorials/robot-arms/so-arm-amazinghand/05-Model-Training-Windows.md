@@ -1,6 +1,6 @@
 ---
 title: "Etapa 5: Treinamento do modelo (Windows)"
-description: "Esta etapa usa o conjunto de dados coletado para treinar a política (ACT e outras) e produzir um modelo impla…"
+description: "Etapa 5 do tutorial SO-ARM101 + AmazingHand no Windows — treinar a política (ACT e outras) com o conjunto de dados e gerar o modelo para implantação."
 ---
 
 

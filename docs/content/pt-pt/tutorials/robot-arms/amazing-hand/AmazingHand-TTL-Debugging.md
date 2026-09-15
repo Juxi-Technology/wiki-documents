@@ -52,7 +52,7 @@ Calibração do ponto médio — padrão do produto pronto: mão direita [451,57
 
 2. Use o software de host FD1.9.8.2 fornecido pelo fabricante do servo para a configuração
 
-[FD.rar]
+FD.rar
 
 ![2. Definir o ID do servo – 2](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NmI3MTMyZTFlMjRmM2U1OTY3M2JkN2ZlYWYwM2MyMzdfYjA0NzhmZDNjODMyYjNiNmYyZjBkN2Q2NzJkNDUxMmVfSUQ6NzYzODkzOTYwODM0OTAxOTA5MF8xNzgwMzE3MjM0OjE3ODA0MDM2MzRfVjM)
 

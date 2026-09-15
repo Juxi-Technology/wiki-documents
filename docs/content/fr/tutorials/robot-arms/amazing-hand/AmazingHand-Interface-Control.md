@@ -1,6 +1,6 @@
 ---
 title: Contrôle d'interface main robotique
-description: "[AmazingHandControl.zip]"
+description: "Contrôle d'interface de la main robotique AmazingHand : dépôt open source de Juxi Technology, commandes de base et protocole TTL du bus de servos."
 ---
 
 # Contrôle d'interface main robotique

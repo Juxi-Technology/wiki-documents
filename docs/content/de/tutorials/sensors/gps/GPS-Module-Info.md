@@ -1,11 +1,11 @@
 ---
 title: "Modul-Informationen"
-description: "​ Das GPS-Modul ist ein hochleistungsfähiges BDS/GNSS-Modul für Positionierung und Navigation auf Basis des A…"
+description: "Modulinformationen zum GPS-Modul mit ATGM336H-5N: Unterstützung für BeiDou, GPS, GLONASS und QZSS, technische Daten und Einsatzbereiche."
 ---
 
 # Modul-Informationen
 
-​		Das GPS-Modul ist ein hochleistungsfähiges BDS/GNSS-Modul für Positionierung und Navigation auf Basis des ATGM336H-5N. Das Modul unterstützt mehrere Satellitennavigationssysteme, darunter alle Satelliten von BeiDou-2 und BeiDou-3 in China, das GPS der USA, das GLONASS Russlands und das QZSS Japans. Es kann gleichzeitig die Satellitensignale der genannten Satellitennavigationssysteme empfangen und eine gemeinsame Positionierung, Navigation und Zeitgebung realisieren. Das Modul bietet Vorteile wie hohe Empfindlichkeit, geringen Stromverbrauch und niedrige Kosten und eignet sich für Fahrzeugnavigation, Handheld-Positionierung und Wearables.
+		Das GPS-Modul ist ein hochleistungsfähiges BDS/GNSS-Modul für Positionierung und Navigation auf Basis des ATGM336H-5N. Das Modul unterstützt mehrere Satellitennavigationssysteme, darunter alle Satelliten von BeiDou-2 und BeiDou-3 in China, das GPS der USA, das GLONASS Russlands und das QZSS Japans. Es kann gleichzeitig die Satellitensignale der genannten Satellitennavigationssysteme empfangen und eine gemeinsame Positionierung, Navigation und Zeitgebung realisieren. Das Modul bietet Vorteile wie hohe Empfindlichkeit, geringen Stromverbrauch und niedrige Kosten und eignet sich für Fahrzeugnavigation, Handheld-Positionierung und Wearables.
 
 **1. Modulmerkmale:**
 

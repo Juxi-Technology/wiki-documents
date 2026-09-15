@@ -1,6 +1,6 @@
 ---
 title: Comunicación serie Raspberry Pi
-description: "Nota: el módulo de interacción de voz requiere flashear el firmware de fábrica; si el chip de voz es nuevo y no se ha flasheado, no es necesario"
+description: "Módulo de voz KWS en Raspberry Pi: conexión por USB, comprobación del puerto serie y ejemplo para leer y enviar comandos de voz."
 ---
 
 # Comunicación serie Raspberry Pi

@@ -1,6 +1,6 @@
 ---
 title: "Configurazione (Ubuntu)"
-description: "Il braccio leader nero utilizza un adattatore di alimentazione 5V6A"
+description: "XLeRobot: configurazione dell'ambiente su Ubuntu con Miniconda, cambio delle sorgenti pip e conda e ambiente Python per LeRobot."
 ---
 
 # Configurazione (Ubuntu)

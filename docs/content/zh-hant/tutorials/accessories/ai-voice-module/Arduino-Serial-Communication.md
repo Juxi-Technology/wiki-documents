@@ -1,6 +1,6 @@
 ---
 title: "Arduino: 串列埠通訊"
-description: "1. 開啟 UARTVoice.ino 檔案"
+description: "AI 語音互動模組教程(Arduino 平台)——串列埠接線、程式上傳與 UART 訊框格式解析。"
 ---
 
 # Arduino: 串列埠通訊

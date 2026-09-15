@@ -96,9 +96,9 @@ description: "Das Modul ist ab Werk mit der Spracherkennungs-Firmware geflasht; 
 
 4. Hier liegen zwei 命令詞播報詞協議列表 (Befehlswort-Ansageprotokollliste) bei; bei Bedarf anhand dieser Tabelle anpassen
 
-    [命令詞播報詞協議列表V3_中文模板.xlsx]
+    命令詞播報詞協議列表V3_中文模板.xlsx
 
-    [命令詞播報詞協議列表V3_英文模板.xlsx]
+    命令詞播報詞協議列表V3_英文模板.xlsx
 
 ![Firmware-Konfiguration – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/3.png)
 
@@ -110,7 +110,7 @@ description: "Das Modul ist ab Werk mit der Spracherkennungs-Firmware geflasht; 
 
 #### Komprimiertes Paket der Flash-Software herunterladen
 
-[Sprachmodul-Firmware-Flash-Software.7z]
+Sprachmodul-Firmware-Flash-Software.7z
 
 1. Entpacken und Software öffnen
 
@@ -138,9 +138,9 @@ description: "Das Modul ist ab Werk mit der Spracherkennungs-Firmware geflasht; 
 
 #### Hier liegen vorbereitete Firmware-Dateien, die direkt geflasht werden können
 
-[CI1302_中文_单麦_V00681_UART0_115200_2M.bin]
+CI1302_中文_单麦_V00681_UART0_115200_2M.bin
 
-[CI1302_英文_单麦_V00916_UART0_115200_2M.bin]
+CI1302_英文_单麦_V00916_UART0_115200_2M.bin
 
 
 

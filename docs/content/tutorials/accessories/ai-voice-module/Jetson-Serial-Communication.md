@@ -1,6 +1,6 @@
 ---
 title: "Jetson: Serial Port Communication"
-description: "Log out and log back in for it to take effect."
+description: "Jetson serial port communication example for the AI Voice Interaction Module: wire the UART pins, detect the ttyTHS port, and run the Python control script."
 ---
 
 # Jetson: Serial Port Communication

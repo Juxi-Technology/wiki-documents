@@ -1,6 +1,6 @@
 ---
 title: "Jetson: GPS Parsing"
-description: "In this lesson, we will mainly learn to use Jetson Orin and a GPS module to read and parse position informati…"
+description: "Jetson GPS parsing tutorial: connect the GPS/BeiDou module to a Jetson Orin over USB and parse sentences into latitude, longitude, and heading."
 ---
 
 # Jetson: GPS Parsing

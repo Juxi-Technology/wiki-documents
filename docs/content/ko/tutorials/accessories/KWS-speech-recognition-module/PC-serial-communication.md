@@ -1,13 +1,13 @@
 ---
 title: PC 직렬 통신
-description: "[uartassist5.0.2.zip]"
+description: "KWS 음성 인식 모듈 PC 직렬 통신 튜토리얼 — 시리얼 어시스턴트 연결과 115200 보율 설정, 웨이크업 테스트 방법을 안내합니다."
 ---
 
 # PC 직렬 통신
 
 ## 1. 시리얼 어시스턴트 다운로드
 
-[uartassist5.0.2.zip]
+uartassist5.0.2.zip
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Serial Port Protocol"
-description: "Open the command word / playback word protocol list V1中文 file in the attachments; you can see the send protoc…"
+description: "Serial port protocol reference for the AI Voice Interaction Module: frame format, functional entry parsing, and command and response phrase examples."
 ---
 
 # Serial Port Protocol

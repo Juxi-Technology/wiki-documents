@@ -1,6 +1,6 @@
 ---
 title: "Fase 1: Preparación del entorno (Linux)"
-description: "Usa Miniforge para crear un entorno de Python independiente e instalar LeRobot y el soporte de AmazingHand. E…"
+description: "Fase 1 del tutorial SO-ARM101 más AmazingHand en Linux: crea el entorno con Miniforge, instala LeRobot y verifica el puerto serie antes de calibrar."
 ---
 
 

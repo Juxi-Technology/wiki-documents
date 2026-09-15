@@ -7,7 +7,7 @@ description: "Cet exemple utilise la carte cœur STM32F103C8T6, un PC Windows, p
 
 Cet exemple utilise la carte cœur STM32F103C8T6, un PC Windows, plusieurs câbles de liaison et le capteur d'attitude IMU.
 
-[STM32.zip]
+STM32.zip
 
 Ouvrir USART.uvprojx avec keil5 et flasher le programme sur la carte cœur STM32F103C8T6
 

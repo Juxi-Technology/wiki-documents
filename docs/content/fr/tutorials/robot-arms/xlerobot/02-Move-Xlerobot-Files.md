@@ -1,6 +1,6 @@
 ---
 title: "Déplacer les fichiers XLeRobot"
-description: "Téléchargez et extrayez l'archive à l'adresse https://github.com/Vector-Wangel/XLeRobot"
+description: "Déplacer les fichiers XLeRobot vers l'environnement LeRobot : copier les modèles, robots et téléopérateurs, et activer le mode Raspberry Pi."
 ---
 
 # Déplacer les fichiers XLeRobot

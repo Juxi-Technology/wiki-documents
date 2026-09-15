@@ -1,6 +1,6 @@
 ---
 title: "Map Location Error"
-description: "The coordinates used by Tencent and Amap differ from those of our host computer. Our host computer calls the …"
+description: "Map location error explained: why GPS/BeiDou coordinates are offset on Amap and Baidu maps, and how WGS-84, GCJ-02, and BD-09 systems convert."
 ---
 
 

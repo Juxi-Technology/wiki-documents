@@ -1,6 +1,6 @@
 ---
 title: "Multi-Host-Kommunikationsfälle Übersicht"
-description: "1. CH341-Treiber installieren (als Administrator)"
+description: "Übersicht der Multi-Host-Kommunikationsbeispiele für die IMU: CH341-Treiber installieren und die Sensordaten mit verschiedenen Hosts nutzen."
 ---
 
 # Multi-Host-Kommunikationsfälle Übersicht

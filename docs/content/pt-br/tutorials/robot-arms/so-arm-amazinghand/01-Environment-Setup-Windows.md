@@ -1,6 +1,6 @@
 ---
 title: "Etapa 1: Configuração do ambiente (Windows)"
-description: "Use o Miniconda para criar um ambiente Python isolado e instalar o LeRobot e o suporte ao AmazingHand. Esta p…"
+description: "Etapa 1 do tutorial SO-ARM101 + AmazingHand no Windows — criar o ambiente Python com Miniconda e instalar o LeRobot, as dependências e as portas seriais COM."
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Arduino: Communication IIC"
-description: "1. Ouvrez le fichier IICVoice.ino"
+description: "Communication IIC entre un Arduino et le module d'interaction vocale IA : câblage, compilation du projet, téléversement et test sur le moniteur série."
 ---
 
 # Arduino: Communication IIC

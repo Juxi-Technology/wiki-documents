@@ -1,6 +1,6 @@
 ---
 title: "ROS1 应用"
-description: "系统配置：ubuntu20.04"
+description: "IMU 姿态传感器 ROS1 应用教程：基于 Ubuntu 20.04 与 ROS Noetic 完成环境配置、端口映射与数据读取。"
 ---
 
 # ROS1 应用

@@ -1,6 +1,6 @@
 ---
 title: "ROS:绘制 GPS 轨迹"
-description: "GPS的信息直接可视化是不可能，我们需要转换下坐标系，将GPS轨迹，从经纬度WGS-84坐标转换到真实世界xyz坐标系下。有了在真实世界的xyz坐标，我们就可以通过rviz2去显示路径，模拟出是GPS的轨迹。轨迹就是累…"
+description: "ROS 绘制 GPS 轨迹教程：将经纬度坐标从 WGS-84 转换到真实世界 xyz 坐标系，并在 rviz2 中实时显示运动轨迹。"
 ---
 
 # ROS:绘制 GPS 轨迹

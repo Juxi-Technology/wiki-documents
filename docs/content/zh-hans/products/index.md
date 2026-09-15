@@ -1,6 +1,6 @@
 ---
 title: 产品中心
-description: 钜犀科技产品中心——机械臂、灵巧手、传感器与配件全系手册
+description: "钜犀科技产品中心——机械臂、灵巧手、视觉传感器与配件全系产品手册、规格参数与购买入口。"
 aside: false
 sidebar: false
 outline: false

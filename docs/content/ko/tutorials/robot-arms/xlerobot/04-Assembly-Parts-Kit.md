@@ -69,7 +69,7 @@ sudo chmod 666 /dev/ttyACM0
 
 ![그림 6](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/6.png)
 
-## 🧑‍🦼‍➡ 바퀴형 베이스
+## 🧑🦼➡ 바퀴형 베이스
 
 > 이미 Lekiwi 베이스가 있다면 배터리, 서보 브래킷 등을 분리하십시오. 하판에는 바퀴가 달린 서보 3 개만 설치하면 됩니다 (배선은 유지)。
 > 

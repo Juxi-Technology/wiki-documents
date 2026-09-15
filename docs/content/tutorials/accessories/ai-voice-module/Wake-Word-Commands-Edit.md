@@ -1,6 +1,6 @@
 ---
 title: "Modify the Wake Word and Command Words"
-description: "Please modify the wake word in a quiet environment; a noisy environment will affect the recognition accuracy …"
+description: "Modify the wake word and command words of the AI Voice Interaction Module by voice learning, with precautions and entry deletion steps."
 ---
 
 # Modify the Wake Word and Command Words

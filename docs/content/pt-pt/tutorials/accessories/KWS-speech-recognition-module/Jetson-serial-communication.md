@@ -1,6 +1,6 @@
 ---
 title: "Comunicação Serial Jetson"
-description: "Nota: o módulo de interação por voz precisa ser gravado com o firmware de fábrica. Se o chip de voz ainda não tiver sido gravado com firmware após o recebimento, não é necessário gravá-lo."
+description: "Comunicação série entre o módulo de reconhecimento de voz KWS e a placa Jetson: identificação da porta USB e execução do código de comunicação fornecido."
 ---
 
 # Comunicação Serial Jetson

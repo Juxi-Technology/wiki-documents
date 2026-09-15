@@ -1,6 +1,6 @@
 ---
 title: "Arduino: análise de posição"
-description: "Nesta lição, vamos aprender principalmente a usar o arduino e o módulo GPS para implementar a função de anali…"
+description: "Análise de posição com Arduino UNO e o módulo GPS e BeiDou ATGM336H-5N — ler os dados pela UART, analisar e imprimir latitude e longitude."
 ---
 
 # Arduino: análise de posição

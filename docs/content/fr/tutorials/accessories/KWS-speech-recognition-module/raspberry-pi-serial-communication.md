@@ -1,6 +1,6 @@
 ---
 title: Communication série Raspberry Pi
-description: "Attention : le module d'interaction vocale nécessite le flashage du firmware d'usine ; si la puce vocale est neuve et non flashée, ce n'est pas nécessaire"
+description: "Communication série entre la Raspberry Pi et le module de reconnaissance vocale KWS : détecter le port USB et tester le mot d'éveil en Python."
 ---
 
 # Communication série Raspberry Pi

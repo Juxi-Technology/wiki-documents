@@ -1,6 +1,6 @@
 ---
 title: "SO-ARM101 组装教程"
-description: "Pro版 主动臂使用5V6A电源适配器，从动臂使用12V5A电源适配器"
+description: "SO-ARM101 机械臂组装教程：舵机 ID 设置、舵机校准与本体组装的分步说明，含 Windows 与 Linux 系统操作方法。"
 ---
 
 # SO-ARM101 组装教程
@@ -30,11 +30,11 @@ description: "Pro版 主动臂使用5V6A电源适配器，从动臂使用12V5A�
 
 ## Windows系统
 
-[飞特舵机上位机.zip]
+飞特舵机上位机.zip
 
 使用飞特舵机上位机设置舵机ID并校准中位，ID设置是从1到6的！
 
-[机械臂舵机设置ID-Windows系统.mp4]
+机械臂舵机设置ID-Windows系统.mp4
 
 ## Linux/ubuntu系统
 
@@ -86,13 +86,13 @@ lerobot-setup-motors \
     --teleop.port=/dev/ttyACM0
 ```
 
-[机械臂舵机设置ID-Linux系统.mp4]
+机械臂舵机设置ID-Linux系统.mp4
 
 # 第二步：组装
 
 从动臂的组装步骤与主动臂基本相同。唯一的区别在于第12步之后，末端执行器（夹爪和手柄）的安装方式有所不同。
 
-[SO-ARM101机械臂组装教程.mp4]
+SO-ARM101机械臂组装教程.mp4
 
 舵机驱动板的安装：先安装4个铜柱，然后用四个M2.5\*8的螺丝固定驱动板
 

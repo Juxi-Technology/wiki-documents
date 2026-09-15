@@ -1,6 +1,6 @@
 ---
 title: "Produktinformationen"
-description: "CI1302 ist ein intelligenter Sprachchip der neuen Generation mit hoher Leistung und neuronalem Netzwerk, der …"
+description: "Produktinformationen zum AI-Sprachinteraktionsmodul mit CI1302-Chip: Einführung, Produktmerkmale, Funktionsprinzip, Hardwareschnittstellen und Hinweise."
 ---
 
 # Produktinformationen

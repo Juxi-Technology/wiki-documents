@@ -1,6 +1,6 @@
 ---
 title: "Información del producto"
-description: "CI1302 es un chip de voz inteligente con red neuronal de alto rendimiento de nueva generación desarrollado po…"
+description: "Información del módulo de interacción de voz IA: chip CI1302, características, principio de funcionamiento, precauciones e interfaces de hardware."
 ---
 
 # Información del producto

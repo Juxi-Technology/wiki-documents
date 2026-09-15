@@ -1,6 +1,6 @@
 ---
 title: "ROS2 RViz2 可視化"
-description: "- オペレーティングシステム: Ubuntu 22.04"
+description: "KWS 音声認識モジュールの ROS2 可視化チュートリアル。Ubuntu 22.04 での環境構築から RViz2 の表示設定と使い方までを解説します。"
 ---
 
 # ROS2 RViz2 可視化

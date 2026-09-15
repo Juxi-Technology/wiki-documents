@@ -1,6 +1,6 @@
 ---
 title: "Phase 4: Datenerfassung (Windows)"
-description: "In dieser Phase zeichnen Sie einen Teleoperations-Datensatz auf: Unter manueller Steuerung werden Proben aus …"
+description: "Phase 4 unter Windows: Teleoperations-Datensätze mit SO-ARM101 und AmazingHand aufzeichnen und die Verwaltung der Aufnahmen kennenlernen."
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Mover arquivos do XLeRobot"
-description: "Baixe e descompacte o pacote compactado em https://github.com/Vector-Wangel/XLeRobot"
+description: "Como mover os arquivos do XLeRobot para o LeRobot — copiar as pastas de modelos, robots e teleoperators do pacote oficial e preparar a versão com Raspberry Pi."
 ---
 
 # Mover arquivos do XLeRobot

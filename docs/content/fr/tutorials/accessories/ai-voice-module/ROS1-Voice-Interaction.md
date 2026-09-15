@@ -1,6 +1,6 @@
 ---
 title: "Interaction vocale ROS1"
-description: "Le module d'interaction vocale prend en charge les trois méthodes de câblage suivantes :"
+description: "Interaction vocale ROS1 avec le module d'interaction vocale IA : préparer Ubuntu 20.04 et ROS Noetic, puis détecter automatiquement le câblage série ou IIC."
 ---
 
 # Interaction vocale ROS1

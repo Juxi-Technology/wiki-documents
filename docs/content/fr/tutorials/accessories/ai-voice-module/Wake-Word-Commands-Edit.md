@@ -1,6 +1,6 @@
 ---
 title: "Modifier le mot de réveil et les mots de commande"
-description: "Veuillez modifier le mot de réveil dans un environnement calme ; un environnement bruyant affectera la précis…"
+description: "Modifier le mot d'éveil et les mots de commande du module d'interaction vocale IA par apprentissage vocal : précautions et procédure pas à pas."
 ---
 
 # Modifier le mot de réveil et les mots de commande

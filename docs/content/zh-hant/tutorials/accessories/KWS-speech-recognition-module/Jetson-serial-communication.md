@@ -1,6 +1,6 @@
 ---
 title: "Jetson 串口通信"
-description: "注意：語音交互模塊需要燒錄出廠固件，語音芯片到手之後沒有刷過固件的則不需要"
+description: "KWS 語音識別模組教程——在 Jetson 系列開發板上以串列埠通訊取得命令詞 ID 並驗證結果。"
 ---
 
 # Jetson 串口通信

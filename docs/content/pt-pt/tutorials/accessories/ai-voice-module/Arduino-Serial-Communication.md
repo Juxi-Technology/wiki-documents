@@ -1,6 +1,6 @@
 ---
 title: "Arduino: Comunicação de porta série"
-description: "1. Abra o ficheiro UARTVoice.ino"
+description: "Comunicação por porta série entre o Arduino e o módulo de interação por voz IA CI1302: ligação, formato da trama de protocolo e teste do código."
 ---
 
 # Arduino: Comunicação de porta série

@@ -1,6 +1,6 @@
 ---
 title: 로봇핸드 공식 예제 실행 튜토리얼
-description: "본 튜토리얼에 첨부된 코드 압축 패키지를 다운로드하여 데모를 진행하거나, 공식 오픈소스 코드 저장소 https://github.com/pollen-robotics/AmazingHand.git 를 클론하세요. 공식 코드에는 오류가 있을 수 있으니 주의하세요."
+description: "AmazingHand 공식 예제 실행 튜토리얼 — Rust와 dora-rs 환경 구성을 거쳐 배선하고 핸드 트래킹 데모를 실행하는 방법을 다룹니다."
 ---
 
 # 로봇핸드 공식 예제 실행 튜토리얼
@@ -16,11 +16,11 @@ description: "본 튜토리얼에 첨부된 코드 압축 패키지를 다운로
 
 Windows 코드 압축 패키지
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 Linux 코드 압축 패키지
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 ```Plain Text
 git clone https://github.com/pollen-robotics/AmazingHand.git

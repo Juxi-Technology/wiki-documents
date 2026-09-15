@@ -1,6 +1,6 @@
 ---
 title: Jetson Nano 직렬 통신
-description: "주의: 음성 대화 모듈에는 출고 펌웨어 플래싱이 필요합니다. 음성 칩이 새 제품으로 미플래시된 경우는 불필요"
+description: "KWS 음성 인식 모듈 직렬 통신 — Jetson Nano에서 USB 시리얼로 웨이크업과 명령어 인식 결과를 읽습니다."
 ---
 
 # Jetson Nano 직렬 통신

@@ -1,6 +1,6 @@
 ---
 title: "Protocolo IIC"
-description: "Nota: o dispositivo anfitrião e o módulo de interação por voz podem ter fontes de alimentação diferentes, mas…"
+description: "Protocolo IIC do módulo de interação por voz IA: o módulo como escravo, o endereço do dispositivo e a função dos registos de comando e reprodução."
 ---
 
 # Protocolo IIC

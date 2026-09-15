@@ -1,6 +1,6 @@
 ---
 title: "ROS2 rviz2 可视化"
-description: "- 操作系统：Ubuntu 22.04"
+description: "KWS 语音识别模块教程——在 Ubuntu 22.04 与 ROS2 Humble 下实现识别结果 rviz2 可视化。"
 ---
 
 # ROS2 rviz2 可视化

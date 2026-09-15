@@ -1,6 +1,6 @@
 ---
 title: "IIC Protocol"
-description: "Note: the host device and the voice interaction module may use different power supplies, but they must share …"
+description: "IIC protocol reference for the AI Voice Interaction Module: slave address, register map, and command word and playback entries for host controllers."
 ---
 
 # IIC Protocol

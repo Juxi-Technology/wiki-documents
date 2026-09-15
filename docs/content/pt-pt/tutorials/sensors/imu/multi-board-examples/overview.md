@@ -1,6 +1,6 @@
 ---
 title: "Visão Geral dos Casos Multi-Host"
-description: "1. Instalação do driver CH341 (Instalar como Administrador)"
+description: "Casos multi-host do módulo IMU: instalação do driver USB CH341 e resolução de problemas quando o dispositivo não é reconhecido."
 ---
 
 # Visão Geral dos Casos Multi-Host

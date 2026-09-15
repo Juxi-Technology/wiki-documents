@@ -1,6 +1,6 @@
 ---
 title: "STM32F103: GPS-Auswertung"
-description: "In dieser Lektion lernen wir hauptsächlich, mit STM32F103C8T6 und dem GPS-Modul die Funktion zur Analyse und …"
+description: "STM32F103 und GPS-Modul: Positionsinformationen über UART analysieren und ausgeben, mit Lernziel, Vorbereitung und Beispielcode."
 ---
 
 # STM32F103: GPS-Auswertung

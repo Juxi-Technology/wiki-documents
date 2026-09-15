@@ -1,6 +1,6 @@
 ---
 title: "Etapa 6: implementação do modelo (Windows)"
-description: "Esta etapa carrega a política treinada para que o robô execute a tarefa de forma autónoma e grava vídeos de a…"
+description: "Etapa 6 do tutorial SO-ARM101 + AmazingHand no Windows: implementação e avaliação da política treinada, gravação de vídeos de avaliação e otimização iterativa."
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Fase 4: Acquisizione dati (Linux)"
-description: "In questa fase si registra il dataset di teleoperazione: sotto controllo manuale si raccolgono campioni di “a…"
+description: "Fase 4 del tutorial SO-ARM101 e AmazingHand su Linux: registrare il dataset di teleoperazione con le telecamere e verificarne la qualità."
 ---
 
 

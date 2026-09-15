@@ -1,6 +1,6 @@
 ---
 title: "ROS: desenhar trajeto GPS"
-description: "Não é possível visualizar diretamente as informações de GPS; precisamos converter o sistema de coordenadas, c…"
+description: "Desenhar o trajeto do GPS no ROS — converter as coordenadas WGS-84 em xyz do mundo real e exibir a trajetória em tempo real no RViz2."
 ---
 
 # ROS: desenhar trajeto GPS

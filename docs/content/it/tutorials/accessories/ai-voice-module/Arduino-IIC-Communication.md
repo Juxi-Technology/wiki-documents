@@ -1,6 +1,6 @@
 ---
 title: "Arduino: Comunicazione IIC"
-description: "1. Aprire il file IICVoice.ino"
+description: "Modulo di interazione vocale IA e Arduino via IIC: connessione hardware e codice di esempio per leggere gli ID delle parole di comando riconosciute."
 ---
 
 # Arduino: Comunicazione IIC

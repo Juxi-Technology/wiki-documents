@@ -96,9 +96,9 @@ description: "모듈은 출고 시 음성 인식 기능 펌웨어가 이미 구�
 
 4. 여기에 命令詞播報詞協議列表 2부가 제공됩니다. 필요에 따라 이 표를 기준으로 변경할 수 있습니다
 
-    [命令詞播報詞協議列表V3_中文模板.xlsx]
+    命令詞播報詞協議列表V3_中文模板.xlsx
 
-    [命令詞播報詞協議列表V3_英文模板.xlsx]
+    命令詞播報詞協議列表V3_英文模板.xlsx
 
 ![펌웨어 구성 – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/3.png)
 
@@ -110,7 +110,7 @@ description: "모듈은 출고 시 음성 인식 기능 펌웨어가 이미 구�
 
 #### 음성 모듈 굽기 소프트웨어 압축 패키지 다운로드
 
-[음성 모듈 펌웨어 굽기 소프트웨어.7z]
+음성 모듈 펌웨어 굽기 소프트웨어.7z
 
 1. 압축 해제 후 소프트웨어 열기
 
@@ -138,9 +138,9 @@ description: "모듈은 출고 시 음성 인식 기능 펌웨어가 이미 구�
 
 #### 여기에 준비된 펌웨어 자료가 있어 바로 굽기 가능합니다
 
-[CI1302_中文_单麦_V00681_UART0_115200_2M.bin]
+CI1302_中文_单麦_V00681_UART0_115200_2M.bin
 
-[CI1302_英文_单麦_V00916_UART0_115200_2M.bin]
+CI1302_英文_单麦_V00916_UART0_115200_2M.bin
 
 
 

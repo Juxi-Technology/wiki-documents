@@ -1,6 +1,6 @@
 ---
 title: "Jetson: Comunicación IIC"
-description: "Cierre la sesión y vuelva a iniciarla para que surta efecto."
+description: "Módulo de voz IA con Jetson por IIC: instalación de dependencias, configuración de permisos, cableado y detección del dispositivo I2C."
 ---
 
 # Jetson: Comunicación IIC

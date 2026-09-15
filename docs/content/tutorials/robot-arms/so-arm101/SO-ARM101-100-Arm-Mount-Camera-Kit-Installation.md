@@ -1,6 +1,6 @@
 ---
 title: "Arm Mount & Camera Kit Installation"
-description: "Please refer to this tutorial for debugging the USB auto-docking cameraUSB Auto-Focus Camera Tutorial"
+description: "SO-ARM100 and SO-ARM101 arm mount bracket and environment camera kit installation: mount the camera on the gripper and build the top-view rig."
 ---
 
 # Arm Mount & Camera Kit Installation

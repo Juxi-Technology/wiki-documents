@@ -1,6 +1,6 @@
 ---
 title: "Etapa 6: implantação do modelo (Linux)"
-description: "Esta etapa carrega a política treinada para que o robô execute a tarefa de forma autônoma e grava vídeos de a…"
+description: "Etapa 6 do tutorial SO-ARM101 + AmazingHand no Linux — implantar a política treinada, executar a tarefa de forma autônoma e gravar vídeos de avaliação."
 ---
 
 

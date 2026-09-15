@@ -1,6 +1,6 @@
 ---
 title: "51 MCU: analisi GPS"
-description: "In questa lezione impareremo principalmente a utilizzare il microcontrollore 51 modello STC89C52RC e il modul…"
+description: "Analisi dei dati GPS con il microcontrollore 51 STC89C52RC: collegare il modulo via UART e stampare sulla seriale latitudine e longitudine."
 ---
 
 # 51 MCU: analisi GPS

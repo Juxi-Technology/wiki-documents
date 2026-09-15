@@ -1,6 +1,6 @@
 ---
 title: "Raspberry Pi: IIC Communication"
-description: "Select Interface Options -> I2C -> Yes"
+description: "Raspberry Pi IIC communication example for the AI Voice Interaction Module: enable the I2C interface and run the control script to print command IDs."
 ---
 
 # Raspberry Pi: IIC Communication

@@ -1,6 +1,6 @@
 ---
 title: "Mover ficheiros do XLeRobot"
-description: "Transfira e descomprima o pacote comprimido em https://github.com/Vector-Wangel/XLeRobot"
+description: "Mova os ficheiros do XLeRobot para o repositório LeRobot: cinemática inversa, robôs, teleoperadores e exemplos, com nota para o Raspberry Pi."
 ---
 
 # Mover ficheiros do XLeRobot

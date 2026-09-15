@@ -7,7 +7,7 @@ description: "Este exemplo usa um STM32F103C8T6, um computador Windows, alguns f
 
 Este exemplo usa um STM32F103C8T6, um computador Windows, alguns fios Dupont e um sensor de atitude IMU. 
 
-[STM32.zip]
+STM32.zip
 
 Abra o I2C.uvprojx a usar o software Keil5 e grave o programa na placa núcleo STM32F103C8T6 
 

@@ -1,6 +1,6 @@
 ---
 title: "樹莓派: IIC通訊"
-description: "選擇 Interface Options -> I2C -> Yes"
+description: "AI 語音互動模組教程(樹莓派平台)——啟用 I2C 介面、接線說明與 Python 範例程式輸出。"
 ---
 
 # 樹莓派: IIC通訊

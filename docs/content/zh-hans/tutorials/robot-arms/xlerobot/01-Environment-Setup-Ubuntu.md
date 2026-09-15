@@ -1,6 +1,6 @@
 ---
 title: "安装环境(Ubuntu)"
-description: "黑色主动臂使用 5V6A 电源适配器"
+description: "XLeRobot 环境安装教程 Ubuntu 篇：在 Ubuntu 系统上安装 Miniconda，并完成 pip 与 conda 镜像源配置。"
 ---
 
 # 安装环境(Ubuntu)

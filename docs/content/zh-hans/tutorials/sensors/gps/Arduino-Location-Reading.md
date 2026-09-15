@@ -1,6 +1,6 @@
 ---
 title: "Arduino:位置信息读取"
-description: "本次课程我们主要学习使用arduino和GPS模块实现位置信息读取功能。"
+description: "Arduino 与 GPS 北斗模块位置信息读取教程：使用 UNO 读取模块输出的原始串口数据并在串口监视器打印。"
 ---
 
 # Arduino:位置信息读取

@@ -1,6 +1,6 @@
 ---
 title: "Montaggio kit a pezzi"
-description: "Suggerimento"
+description: "Montaggio del kit XLeRobot a pezzi: costruire i due bracci SO101, configurare i servomotori e assemblare carrello, base a ruote, testa e cablaggio passo passo."
 ---
 
 # Montaggio kit a pezzi
@@ -69,7 +69,7 @@ sudo chmod 666 /dev/ttyACM0
 
 ![Immagine 6](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/6.png)
 
-## 🧑‍🦼‍➡ Base a ruote
+## 🧑🦼➡ Base a ruote
 
 > Se disponi già di una base Lekiwi, rimuovi la batteria, i supporti dei servomotori, ecc. Alla piastra inferiore è sufficiente installare 3 servomotori con ruote (mantieni il cablaggio).
 > 

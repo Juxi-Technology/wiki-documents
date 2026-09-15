@@ -1,6 +1,6 @@
 ---
 title: Software Config
-description: "This chapter introduces the product software configuration method."
+description: "Software configuration chapter in the tutorials section: system requirements, installation steps, and how to edit the configuration file."
 ---
 
 

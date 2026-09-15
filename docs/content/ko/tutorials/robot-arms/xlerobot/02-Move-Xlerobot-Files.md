@@ -1,6 +1,6 @@
 ---
 title: "XLeRobot 파일 이동"
-description: "https://github.com/Vector-Wangel/XLeRobot 에서 압축 파일을 다운로드하여 압축을 해제합니다"
+description: "XLeRobot 파일 이동 단계 — XLeRobot 저장소의 SO101 해석적 역기구학 솔버 파일을 LeRobot 프로젝트 폴더로 복사하는 방법."
 ---
 
 # XLeRobot 파일 이동

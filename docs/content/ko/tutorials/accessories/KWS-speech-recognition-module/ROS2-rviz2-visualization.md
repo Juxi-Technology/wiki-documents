@@ -1,6 +1,6 @@
 ---
 title: "ROS2 RViz2 시각화"
-description: "- 운영체제: Ubuntu 22.04"
+description: "KWS 음성 인식 모듈 ROS2 시각화 튜토리얼 — Ubuntu 22.04와 Humble 환경에서 RViz2로 인식 결과를 시각화합니다."
 ---
 
 # ROS2 RViz2 시각화

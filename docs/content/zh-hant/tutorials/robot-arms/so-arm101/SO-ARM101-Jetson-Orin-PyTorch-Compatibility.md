@@ -1,6 +1,6 @@
 ---
 title: "SO-ARM101 Jetson Orin PyTorch 相容性"
-description: "安裝jetson版本的pytorch"
+description: "SO-ARM101 專案在 Jetson Orin 上安裝 PyTorch 的相容性整理：GPU、cuSPARSELt 與 torchvision 解法。"
 ---
 
 # SO-ARM101 Jetson Orin PyTorch 相容性

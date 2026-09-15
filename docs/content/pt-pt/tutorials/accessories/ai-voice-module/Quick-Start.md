@@ -1,6 +1,6 @@
 ---
 title: "Iniciação rápida"
-description: "O firmware da função de reconhecimento de voz já vem gravado de fábrica, pelo que o utilizador pode experimen…"
+description: "Iniciação rápida ao módulo de interação por voz IA: ligação por cabo type-c, palavra de ativação, reconhecimento de voz e reprodução de fábrica."
 ---
 
 # Iniciação rápida

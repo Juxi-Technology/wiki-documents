@@ -1,6 +1,6 @@
 ---
 title: "Interacción por voz en ROS2"
-description: "El módulo de interacción por voz de IA admite los siguientes tres métodos de cableado:"
+description: "Módulo de voz IA en ROS2: entorno Ubuntu 22.04 con ROS2 Humble, detección automática del cableado serie o I2C y nodo de interacción por voz."
 ---
 
 # Interacción por voz en ROS2

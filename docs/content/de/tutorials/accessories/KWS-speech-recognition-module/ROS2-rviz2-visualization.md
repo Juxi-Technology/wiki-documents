@@ -1,6 +1,6 @@
 ---
 title: "ROS2 RViz2-Visualisierung"
-description: "- Betriebssystem: Ubuntu 22.04"
+description: "KWS-Spracherkennungsmodul unter ROS2: Umgebung und Workspace vorbereiten und erkannte Befehlswörter in RViz2 visualisieren."
 ---
 
 # ROS2 RViz2-Visualisierung

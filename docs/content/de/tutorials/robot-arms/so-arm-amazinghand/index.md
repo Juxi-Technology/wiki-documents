@@ -1,6 +1,6 @@
 ---
 title: "SO-ARM101 + AmazingHand Tutorial"
-description: "Dieses Tutorial dient der Reproduktion des gesamten Ablaufs aus Teleoperation, Datenerfassung und Training fü…"
+description: "Gesamtübersicht des SO-ARM101 und AmazingHand-Tutorials: Hardware, alle Phasen von Umgebung bis Deployment und empfohlener Lesepfad."
 ---
 
 

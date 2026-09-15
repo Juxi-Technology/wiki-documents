@@ -10,7 +10,7 @@ description: "The black active arm uses a 5V 6A power adapter, while the white p
 
 The black active arm uses a 5V 6A power adapter, while the white passive arm uses a 12V 5A power adapter 
 
-[lerobot-Lekiwi.zip]
+lerobot-Lekiwi.zip
 
 The code in this tutorial repository is maintained at the stable version of Lerobot tested before March 1, 2026. Currently, Huggingface has made a very substantial upgrade to Lerobot, adding a large number of new features. If you need to experience the latest tutorial, please follow [ the official documentation for operation ](https://huggingface.co/docs/lerobot/lekiwi). 
 

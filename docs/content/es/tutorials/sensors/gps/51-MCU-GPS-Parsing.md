@@ -1,6 +1,6 @@
 ---
 title: "51 MCU: análisis GPS"
-description: "En esta lección aprenderemos principalmente a utilizar el microcontrolador 51 modelo STC89C52RC y el módulo G…"
+description: "Módulo GPS/BeiDou con el microcontrolador 51 STC89C52RC: lee y analiza las tramas del módulo para obtener latitud, longitud y altitud."
 ---
 
 # 51 MCU: análisis GPS

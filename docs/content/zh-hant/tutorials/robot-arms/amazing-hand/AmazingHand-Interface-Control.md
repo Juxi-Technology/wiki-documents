@@ -1,6 +1,6 @@
 ---
 title: "界面控制教程"
-description: "[AmazingHandControl.zip]"
+description: "AmazingHand 靈巧手界面控制教程：透過官方開源倉庫的 Python 範例與 TTL 總線通信進行控制。"
 ---
 
 # 界面控制教程
@@ -10,7 +10,7 @@ description: "[AmazingHandControl.zip]"
 
 https://github.com/Betatester777/AmazingHandControl
 
-[AmazingHandControl.zip]
+AmazingHandControl.zip
 
 
 ---

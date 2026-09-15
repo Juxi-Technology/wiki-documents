@@ -7,7 +7,7 @@ description: "Este ejemplo usa la placa núcleo STM32F103C8T6, un PC Windows, va
 
 Este ejemplo usa la placa núcleo STM32F103C8T6, un PC Windows, varios cables de puente y el sensor de actitud IMU.
 
-[STM32.zip]
+STM32.zip
 
 Abrir USART.uvprojx con keil5 y grabar el programa en la placa núcleo STM32F103C8T6
 

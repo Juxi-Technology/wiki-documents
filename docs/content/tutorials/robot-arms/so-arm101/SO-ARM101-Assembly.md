@@ -30,11 +30,11 @@ The following video shows the sequential steps for setting the motor ID.
 
 ## Windows System
 
-[飞特舵机上位机.zip]
+飞特舵机上位机.zip
 
 Use the Feite servo controller to set the servo ID and calibrate the midpoint,  the ID setting ranges from 1 to 6! 
 
-[机械臂舵机设置ID-Windows系统.mp4]
+机械臂舵机设置ID-Windows系统.mp4
 
 ## Linux/Ubuntu System
 
@@ -86,13 +86,13 @@ lerobot-setup-motors \
     --teleop.port=/dev/ttyACM0
 ```
 
-[机械臂舵机设置ID-Linux系统.mp4]
+机械臂舵机设置ID-Linux系统.mp4
 
 # Step 2: Assembly
 
 - The assembly steps of the follower arm are basically the same as those of the active arm. The only difference is that after Step 12, the installation method of the end effector (gripper and handle) is different. 
 
-[SO-ARM101机械臂组装教程.mp4]
+SO-ARM101机械臂组装教程.mp4
 
 Installation of the servo driver board: First install 4 copper pillars, then secure the driver board with four M2.5\*8 screws
 

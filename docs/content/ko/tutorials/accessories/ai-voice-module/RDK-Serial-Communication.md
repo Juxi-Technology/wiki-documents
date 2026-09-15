@@ -1,6 +1,6 @@
 ---
 title: "RDK: 시리얼 통신"
-description: "이 저장소는 RDK X5(Raspberry Pi) 플랫폼과 AI 음성 인터랙션 모듈 간의 통신을 위한 Python 예제 코드를 제공하며, I2C 와 UART 두 가지 통신 방식을 지원합니다."
+description: "AI 음성 인터랙션 모듈 RDK X5 시리얼 통신 — UART 배선과 Python 예제 실행, 명령 ID 출력 확인을 안내합니다."
 ---
 
 # RDK: 시리얼 통신

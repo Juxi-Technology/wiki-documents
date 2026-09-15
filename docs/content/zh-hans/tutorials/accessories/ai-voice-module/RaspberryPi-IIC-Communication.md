@@ -1,6 +1,6 @@
 ---
 title: "树莓派: IIC通讯"
-description: "选择 Interface Options -> I2C -> Yes"
+description: "钜犀科技 AI 语音交互模块教程——在树莓派上启用 I2C 并运行 Python 示例与模块通信。"
 ---
 
 # 树莓派: IIC通讯

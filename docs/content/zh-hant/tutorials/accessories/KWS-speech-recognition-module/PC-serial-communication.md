@@ -1,13 +1,13 @@
 ---
 title: "PC 串口通信"
-description: "[uartassist5.0.2.zip]"
+description: "KWS 語音識別模組教程——在 PC 上以串列埠工具連接模組,完成喚醒詞與命令詞測試。"
 ---
 
 # PC 串口通信
 
 ## 1、下載串口助手
 
-[uartassist5.0.2.zip]
+uartassist5.0.2.zip
 
 ---
 

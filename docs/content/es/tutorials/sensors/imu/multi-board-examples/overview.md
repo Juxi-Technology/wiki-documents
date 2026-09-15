@@ -1,6 +1,6 @@
 ---
 title: "Resumen de casos multi-host"
-description: "1. Instalar el controlador CH341 (como administrador)"
+description: "Casos de ejemplo del módulo IMU en varias placas host: instalación del controlador CH341 y notas para conectar el sensor en Windows y Linux."
 ---
 
 # Resumen de casos multi-host

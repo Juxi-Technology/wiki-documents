@@ -1,6 +1,6 @@
 ---
 title: "4K HDMI 採集器"
-description: "根據主板的接口分以下三種接線操作"
+description: "鉅犀科技 4K HDMI 採集器教程——三種主板接線方式,以及 OBS 與 PotPlayer 錄製直播畫面。"
 ---
 
 # 4K HDMI 採集器

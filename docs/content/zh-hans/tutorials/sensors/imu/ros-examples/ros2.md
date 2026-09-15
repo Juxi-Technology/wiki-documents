@@ -1,6 +1,6 @@
 ---
 title: "ROS2 应用"
-description: "系统配置：ubuntu22.04"
+description: "IMU 姿态传感器 ROS2 应用教程：基于 Ubuntu 22.04 与 ROS 2 Humble 完成环境配置、端口映射与数据读取。"
 ---
 
 # ROS2 应用

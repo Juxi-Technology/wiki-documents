@@ -1,6 +1,6 @@
 ---
 title: ROS2 응용
-description: "시스템 구성: ubuntu22.04"
+description: "Ubuntu 22.04의 ROS2 humble 환경에서 IMU 자세 센서 사용 — 패키지 빌드와 노드 실행, RViz2 시각화 방법."
 ---
 
 # ROS2 응용

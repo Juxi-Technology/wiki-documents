@@ -1,6 +1,6 @@
 ---
 title: "Jetson: IIC-Kommunikation"
-description: "Abmelden und erneut anmelden, damit die Änderung wirksam wird."
+description: "AI-Sprachinteraktionsmodul am Jetson per I2C steuern: Abhängigkeiten und Benutzergruppen einrichten, Verkabelung prüfen und Geräteadresse 0x2A testen."
 ---
 
 # Jetson: IIC-Kommunikation

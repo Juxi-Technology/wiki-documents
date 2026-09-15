@@ -1,10 +1,10 @@
 ---
 title: 教程首页
 titleTemplate: 产品教程与指南
-description: "探索所有产品教程、指南与示例，快速上手钜犀科技产品"
+description: "钜犀科技产品教程总入口，汇总 SO-ARM101、XLeRobot 机械臂与 GPS 北斗、IMU 传感器等模块的使用教程与文档。"
 head:
   - [ meta, { property: "og:title", content: "教程首页 | 产品教程与指南" } ]
-  - [ meta, { property: "og:description", content: "探索所有产品教程、指南与示例，快速上手钜犀科技产品" } ]
+  - [ meta, { property: "og:description", content: "钜犀科技产品教程总入口，汇总 SO-ARM101、XLeRobot 机械臂与 GPS 北斗、IMU 传感器等模块的使用教程与文档。" } ]
 ---
 
 # 产品教程首页

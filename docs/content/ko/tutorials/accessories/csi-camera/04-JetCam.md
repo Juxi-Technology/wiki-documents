@@ -1,6 +1,6 @@
 ---
 title: "JetCam 사용"
-description: "JetCam 사용"
+description: "JetCam 사용 튜토리얼 — Jetson에서 JetCam을 설치하고 CSI 카메라를 호출하는 방법과 주요 코드를 설명합니다."
 ---
 
 # JetCam 사용

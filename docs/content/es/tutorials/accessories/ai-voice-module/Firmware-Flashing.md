@@ -1,6 +1,6 @@
 ---
 title: "Grabación del firmware del módulo"
-description: "Abra la carpeta de la herramienta de grabación de firmware del chip de voz en los archivos adjuntos y haga cl…"
+description: "Grabación del firmware del módulo de voz IA: conexión del chip de voz, uso de la herramienta de grabación y pasos para flashear el módulo."
 ---
 
 # Grabación del firmware del módulo

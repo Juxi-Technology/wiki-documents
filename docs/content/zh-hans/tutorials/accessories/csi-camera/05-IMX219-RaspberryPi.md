@@ -1,6 +1,6 @@
 ---
 title: "IMX219(树莓派)教程"
-description: "如果没有，则可能是内核或者设备硬件存在问题，可尝试重刷系统或更换硬件。"
+description: "IMX219 CSI 摄像头树莓派教程——检查 vchiq 节点、raspi-config 使能摄像头并拍照验证。"
 ---
 
 # IMX219(树莓派)教程

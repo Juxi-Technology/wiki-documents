@@ -1,6 +1,6 @@
 ---
 title: "階段四：數據採集（Windows）"
-description: "本階段錄製遙操作數據集：在人工操控下採集\"關節角 + 相機圖像\"樣本，供後續訓練。數據集質素直接決定策略效果，操作要規範、一致。本階段全程本地錄製，無需 HF 登入。"
+description: "SO-ARM101 與 AmazingHand 的階段四數據採集教程(Windows)——以 PowerShell 錄製關節角度與相機影像,建立訓練用數據集。"
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Lekiwi 使用教程"
-description: "黑色主動臂使用5V 6A電源適配器，白色被動臂使用12V 5A電源適配器"
+description: "Lekiwi 使用教程：物料清單、3D 列印、LeRobot 環境安裝與遙操作等完整使用說明與注意事項。"
 ---
 
 # Lekiwi 使用教程
@@ -10,7 +10,7 @@ description: "黑色主動臂使用5V 6A電源適配器，白色被動臂使用1
 
 黑色主動臂使用5V 6A電源適配器，白色被動臂使用12V 5A電源適配器
 
-[lerobot-Lekiwi.zip]
+lerobot-Lekiwi.zip
 
 本教程庫中的代碼保持在2026年3月1日之前測試的Lerobot穩定版，目前Huggingface對Lerobot進行了非常大幅度的升級，增加了大量新功能，如需體驗最新教程，請跟隨[官方文檔進行操作](https://huggingface.co/docs/lerobot/lekiwi)。
 

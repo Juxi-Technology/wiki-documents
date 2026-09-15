@@ -1,6 +1,6 @@
 ---
 title: "Errore di posizione sulla mappa"
-description: "Le coordinate utilizzate da 腾讯 e 高德地图 sono diverse da quelle del software di PC; il nostro software di PC ric…"
+description: "Errore di posizione sulla mappa: capire i sistemi di coordinate WGS-84, GCJ-02 e BD-09 usati da Baidu, Amap e Tencent e come convertire i dati del GPS e BeiDou."
 ---
 
 

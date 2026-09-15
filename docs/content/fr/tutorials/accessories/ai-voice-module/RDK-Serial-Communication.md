@@ -1,6 +1,6 @@
 ---
 title: "RDK: Communication par port série"
-description: "Ce dépôt fournit un exemple de code Python pour la communication entre la plateforme RDK X5 (Raspberry Pi) et…"
+description: "Communication série entre la plateforme RDK X5 et le module d'interaction vocale IA : exemple Python en 115200 bauds avec diffusion et reconnaissance."
 ---
 
 # RDK: Communication par port série

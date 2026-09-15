@@ -7,7 +7,7 @@ description: "本次例程使用的是Arduino Nano開發板，一臺windows電�
 
 本次例程使用的是Arduino Nano開發板，一臺windows電腦、杜邦線若干、IMU姿態傳感器。
 
-[Arduino.rar]
+Arduino.rar
 
 ## 1.連接設備
 

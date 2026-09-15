@@ -1,6 +1,6 @@
 ---
 title: "ROS: dibujar trayectoria GPS"
-description: "No es posible visualizar directamente la información del GPS; necesitamos convertir el sistema de coordenadas…"
+description: "Dibuja la trayectoria GPS en ROS2: convierte las coordenadas WGS-84 al mundo xyz y visualiza la ruta en tiempo real con RViz2."
 ---
 
 # ROS: dibujar trayectoria GPS

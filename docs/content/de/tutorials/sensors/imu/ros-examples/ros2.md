@@ -1,6 +1,6 @@
 ---
 title: ROS2-Anwendung
-description: "Systemkonfiguration: Ubuntu 22.04"
+description: "IMU-Attitüdensensor unter ROS2: Umgebung mit Ubuntu 22.04 konfigurieren, Bibliotheken installieren und das ROS2-Projekt bauen und ausführen."
 ---
 
 # ROS2-Anwendung

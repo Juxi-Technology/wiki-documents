@@ -1,6 +1,6 @@
 ---
 title: "Instalação da Câmera Superior"
-description: "Consulte este tutorial para depurar a câmera USB com acoplamento automático — Tutorial da câmera USB com foco automático"
+description: "Instalação do suporte de câmera superior para SO-ARM100 e SO-ARM101, indicado para capturar vídeo acima da área de trabalho."
 ---
 
 # Instalação da Câmera Superior

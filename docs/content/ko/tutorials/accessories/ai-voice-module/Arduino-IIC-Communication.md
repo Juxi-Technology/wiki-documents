@@ -1,6 +1,6 @@
 ---
 title: "Arduino: IIC 통신"
-description: "1. IICVoice.ino 파일 열기"
+description: "AI 음성 인터랙션 모듈 Arduino IIC 통신 튜토리얼 — IIC 배선과 빌드·업로드, 레지스터와 BSP 인터페이스를 설명합니다."
 ---
 
 # Arduino: IIC 통신

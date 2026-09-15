@@ -63,7 +63,7 @@ sudo apt install -y python3-smbus2
 
 3.2 **파일 전송**
 
-[IMU_ROS2.zip]
+IMU_ROS2.zip
 
 MobaXterm을 사용한 파일 전송이 아직 익숙하지 않은 분은 아래 페이지에서 MobaXterm의 자세한 설치 및 사용 방법을 확인하세요: [文件远程传输](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 

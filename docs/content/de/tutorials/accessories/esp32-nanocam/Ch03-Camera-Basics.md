@@ -1,6 +1,6 @@
 ---
 title: "Kapitel 3: Kamera-Grundlagen"
-description: "Kapitel 3 des ESP32-NanoCam-Tutorials: Verständnis der DVP-Kameraschnittstelle, des MJPEG-Streamings und des PSRAM-Framebuffer-Prinzips; Anzeige des Standardbilds und Kennenlernen der in der Firmware integrierten ai_mode-Modi."
+description: "Kapitel 3 des ESP32-NanoCam-Tutorials: DVP-Kameraschnittstelle, MJPEG-Streaming und PSRAM-Framebuffer sowie die integrierten KI-Modi kennenlernen."
 ---
 
 # Kapitel 3: Kamera-Grundlagen

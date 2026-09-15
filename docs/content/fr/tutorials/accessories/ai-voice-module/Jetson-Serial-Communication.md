@@ -1,6 +1,6 @@
 ---
 title: "Jetson: Communication par port série"
-description: "Déconnectez-vous puis reconnectez-vous pour que cela prenne effet."
+description: "Communication série entre la carte Jetson et le module d'interaction vocale IA : câblage sur les broches UART et réception des identifiants de commande."
 ---
 
 # Jetson: Communication par port série

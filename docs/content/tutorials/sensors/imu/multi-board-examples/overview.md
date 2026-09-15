@@ -1,6 +1,6 @@
 ---
 title: "Overview"
-description: "1. CH341 Driver Installation (Install as Administrator)"
+description: "IMU multi-board examples overview: install the CH341 driver with administrator rights and follow the connection precautions for the IMU sensor."
 ---
 
 # Overview

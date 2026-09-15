@@ -1,6 +1,6 @@
 ---
 title: Argomenti
-description: Juxi Technology Wiki — Argomenti
+description: "Argomenti del Wiki Juxi Technology: configurazione JetPack per Jetson, AI edge, intelligenza incarnata con LeRobot, robot learning e hardware open source."
 ---
 
 # Argomenti

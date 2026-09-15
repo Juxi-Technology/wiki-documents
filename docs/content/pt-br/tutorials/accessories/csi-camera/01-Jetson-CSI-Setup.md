@@ -1,6 +1,6 @@
 ---
 title: "Configuração da câmera CSI no Jetson"
-description: "Use as setas para baixo para selecionar Configure Jetson 24pin CSI Connector. Em seguida, pressione Enter par…"
+description: "Configuração da câmera CSI IMX219 no NVIDIA Jetson — habilitar o conector CSI de 24 pinos com o jetson-io e verificar a pré-visualização da imagem."
 ---
 
 # Configuração da câmera CSI no Jetson

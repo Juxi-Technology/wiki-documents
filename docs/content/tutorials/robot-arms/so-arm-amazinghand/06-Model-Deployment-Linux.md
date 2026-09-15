@@ -1,6 +1,6 @@
 ---
 title: "Stage 6: Model Deployment (Linux)"
-description: "This stage loads the trained policy so the robot can execute tasks autonomously, and records evaluation video…"
+description: "Stage 6 model deployment on Linux: load the trained policy so the arm and hand execute tasks autonomously and record evaluation videos."
 ---
 
 

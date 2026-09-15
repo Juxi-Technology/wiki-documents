@@ -1,6 +1,6 @@
 ---
 title: "Stufe 6: Modell-Deployment (Windows)"
-description: "In dieser Phase laden Sie die trainierte Policy, lassen den Roboter Aufgaben autonom ausführen und zeichnen e…"
+description: "Phase 6 unter Windows: die trainierte Policy laden, den SO-ARM101 autonom Aufgaben ausführen lassen und die Ergebnisse aufzeichnen."
 ---
 
 

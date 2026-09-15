@@ -1,6 +1,6 @@
 ---
 title: 로봇 학습 특집
-description: LeRobot 기반 풀스택 로봇 학습 기술
+description: "로봇 학습 특집 — LeRobot 오픈소스 플랫폼과 SO-ARM101으로 데이터 수집부터 학습·배포까지 전 과정을 다룹니다."
 ---
 
 # 로봇 학습 특집

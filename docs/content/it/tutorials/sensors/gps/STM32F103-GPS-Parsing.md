@@ -1,6 +1,6 @@
 ---
 title: "STM32F103: output analisi GPS"
-description: "In questa lezione impareremo principalmente a utilizzare l'STM32F103C8T6 e il modulo GPS per implementare la …"
+description: "Analisi dei dati GPS con STM32F103C8T6: collegare il modulo via UART, analizzare le informazioni di posizione e convertire latitudine e longitudine in gradi."
 ---
 
 # STM32F103: output analisi GPS

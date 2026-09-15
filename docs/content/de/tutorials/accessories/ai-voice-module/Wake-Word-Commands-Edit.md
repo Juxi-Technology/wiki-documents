@@ -1,6 +1,6 @@
 ---
 title: "Weckwort und Befehlswörter ändern"
-description: "Bitte ändern Sie das Weckwort in einer ruhigen Umgebung; eine laute Umgebung beeinträchtigt die Erkennungsgen…"
+description: "Weckwort und Befehlswörter des AI-Sprachinteraktionsmoduls ändern: Geräteanschluss, Aufnahme in ruhiger Umgebung und beste Erkennungsgenauigkeit."
 ---
 
 # Weckwort und Befehlswörter ändern

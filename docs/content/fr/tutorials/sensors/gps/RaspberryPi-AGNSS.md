@@ -1,6 +1,6 @@
 ---
 title: "Raspberry Pi : positionnement AGNSS"
-description: "Dans cette leçon, nous allons principalement apprendre à réaliser la lecture et l'analyse des informations de…"
+description: "Positionnement AGNSS accéléré sur Raspberry Pi avec le module GPS BeiDou : connexion au serveur d'assistance et lecture des données de position."
 ---
 
 # Raspberry Pi : positionnement AGNSS
@@ -149,7 +149,7 @@ Connectez le Raspberry Pi et le module GPS avec un câble Type-C, exécutez la c
 
 **3.2. Demande de l'ak Baidu Maps**
 
-Veuillez consulter le document [Tutoriel de demande de l'API Baidu Maps]()
+Veuillez consulter le document [Tutoriel de demande de l'API Baidu Maps](./RaspberryPi-Baidu-Map-API.md)
 
  
 

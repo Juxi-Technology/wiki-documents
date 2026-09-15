@@ -1,6 +1,6 @@
 ---
 title: Configuração de Hardware
-description: "Este capítulo detalha o método de conexão do hardware do produto."
+description: "Configuração de hardware nos recursos de aprendizagem: interfaces do produto, ligação dos periféricos e cuidados a ter com a alimentação."
 ---
 
 

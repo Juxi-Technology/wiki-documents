@@ -52,7 +52,7 @@ description: "首先，下載“靈巧手調試.zip”壓縮包，解壓後可�
 
 2、使用舵機廠家提供的上位機軟件FD1.9.8.2進行設置
 
-[FD.rar]
+FD.rar
 
 ![2.設置舵機ID – 2](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NmM5N2YxYzJhZWQyZDgxNTM5YWIxOGRkMzRjOTAwOGJfMjY2OTA1MWI2ZTg0Yjg3ZjY4NDE1ZGEzZGI2ZGIzN2RfSUQ6NzYzODk2MDg3Mjc1NjU0NjUyN18xNzgwNDAzMzA0OjE3ODA0ODk3MDRfVjM)
 

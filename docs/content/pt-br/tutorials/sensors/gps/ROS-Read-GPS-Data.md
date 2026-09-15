@@ -1,6 +1,6 @@
 ---
 title: "ROS: leitura de dados GPS"
-description: "No terminal, digite,"
+description: "Leitura de dados GPS no ROS — iniciar o driver NMEA e analisar os tópicos de posição, velocidade e tempo do módulo GPS e BeiDou."
 ---
 
 # ROS: leitura de dados GPS

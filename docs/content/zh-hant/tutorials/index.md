@@ -1,10 +1,10 @@
 ---
 title: 教程首頁
 titleTemplate: 產品教程與指南
-description: "探索所有產品教程、指南與範例，快速上手鉅犀科技產品"
+description: "鉅犀科技產品教程首頁：彙整機械臂、靈巧手、感測器與配件等全系列使用教學與指南。"
 head:
   - [ meta, { property: "og:title", content: "教程首頁 | 產品教程與指南" } ]
-  - [ meta, { property: "og:description", content: "探索所有產品教程、指南與範例，快速上手鉅犀科技產品" } ]
+  - [ meta, { property: "og:description", content: "鉅犀科技產品教程首頁：彙整機械臂、靈巧手、感測器與配件等全系列使用教學與指南。" } ]
 ---
 
 # 產品教程首頁

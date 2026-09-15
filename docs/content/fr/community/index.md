@@ -1,6 +1,6 @@
 ---
 title: Communauté
-description: Juxi Technology Wiki — Communauté
+description: "Rejoindre la communauté Juxi Technology : canaux d'échange, rédaction de tutoriels, traduction de la documentation et partage de cas d'usage."
 ---
 
 # Communauté

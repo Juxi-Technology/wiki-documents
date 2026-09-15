@@ -1,6 +1,6 @@
 ---
 title: "RDK: 串口通讯"
-description: "本仓库提供了 RDK X5（Raspberry Pi）平台与 AI 语音交互模块通信的 Python 示例代码，支持 I2C 和 UART 两种通信方式。"
+description: "钜犀科技 AI 语音交互模块教程——在 RDK X5 上通过串口 UART 与模块通信，含串口设备配置与 Python 示例代码。"
 ---
 
 # RDK: 串口通讯

@@ -1,6 +1,6 @@
 ---
 title: "Arduino: IIC 通信"
-description: "1. IICVoice.ino ファイルを開く"
+description: "AI 音声対話モジュールと Arduino を IIC 接続するチュートリアル。配線、サンプルのビルドと書き込み、レジスタマップを解説します。"
 ---
 
 # Arduino: IIC 通信

@@ -1,6 +1,6 @@
 ---
 title: "Phase 5 : Entraînement du modèle (Linux)"
-description: "Cette phase utilise le jeu de données collecté pour entraîner une politique (ACT, etc.) et produire un modèle…"
+description: "Phase 5 sous Linux : vérifier l'environnement GPU CUDA puis entraîner une politique ACT pour le bras SO-ARM101 et la main AmazingHand."
 ---
 
 

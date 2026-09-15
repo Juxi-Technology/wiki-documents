@@ -1,6 +1,6 @@
 ---
 title: ロボット学習特集
-description: LeRobot ベースのフルスタックロボット学習技術
+description: "LeRobot ベースのロボット学習特集。SO-ARM101 を軸に、中核技術の方向性と関連チュートリアルを紹介します。"
 ---
 
 # ロボット学習特集

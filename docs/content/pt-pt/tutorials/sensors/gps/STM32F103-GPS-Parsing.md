@@ -1,6 +1,6 @@
 ---
 title: "STM32F103: saída de análise GPS"
-description: "Nesta lição, vamos aprender principalmente a utilizar o STM32F103C8T6 e o módulo GPS para implementar a funçã…"
+description: "Análise de dados GPS com o microcontrolador STM32F103C8T6 e o módulo GPS: configuração da porta série e programa de leitura das informações de posição."
 ---
 
 # STM32F103: saída de análise GPS

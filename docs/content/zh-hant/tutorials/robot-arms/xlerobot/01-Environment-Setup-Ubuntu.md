@@ -1,6 +1,6 @@
 ---
 title: "安裝環境(Ubuntu)"
-description: "黑色主動臂使用 5V6A 電源適配器"
+description: "XLeRobot 環境安裝教程(Ubuntu 版)：Miniconda 安裝、pip 與 conda 換源、虛擬環境建立與 LeRobot 部署。"
 ---
 
 # 安裝環境(Ubuntu)

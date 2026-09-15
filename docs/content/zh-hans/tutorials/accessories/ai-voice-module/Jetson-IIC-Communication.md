@@ -1,6 +1,6 @@
 ---
 title: "Jetson: IIC通讯"
-description: "注销并重新登录生效。"
+description: "钜犀科技 AI 语音交互模块教程——在 Jetson 上通过 IIC 通信控制模块,含接线与依赖安装。"
 ---
 
 # Jetson: IIC通讯

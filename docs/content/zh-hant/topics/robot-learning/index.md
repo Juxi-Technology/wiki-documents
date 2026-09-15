@@ -1,6 +1,6 @@
 ---
 title: 機器人學習專題
-description: 基於 LeRobot 的全棧機器人學習技術
+description: "鉅犀科技機器人學習專題——基於 LeRobot 與 SO-ARM101 的資料採集、模型訓練與部署。"
 ---
 
 # 機器人學習專題

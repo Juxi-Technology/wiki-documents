@@ -1,13 +1,13 @@
 ---
 title: "PC 串口通信"
-description: "[uartassist5.0.2.zip]"
+description: "KWS 语音识别模块教程——在 PC 上用串口助手连接模块,完成唤醒测试与命令词播报验证。"
 ---
 
 # PC 串口通信
 
 ## 1、下载串口助手
 
-[uartassist5.0.2.zip]
+uartassist5.0.2.zip
 
 ---
 

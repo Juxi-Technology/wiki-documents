@@ -1,6 +1,6 @@
 ---
 title: "Montage (fertiger Bausatz)"
-description: "Teileliste"
+description: "Montage des XLeRobot aus dem Fertigbausatz: Fahrgestell, Kamera-Turm, SO-ARM101-Arme sowie Servo- und Stromverkabelung anschließen."
 ---
 
 # Montage (fertiger Bausatz)

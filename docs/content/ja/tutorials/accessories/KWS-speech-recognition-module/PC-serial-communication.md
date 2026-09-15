@@ -1,13 +1,13 @@
 ---
 title: "PC シリアル通信"
-description: "[uartassist5.0.2.zip]"
+description: "KWS 音声認識モジュールの PC シリアル通信チュートリアル。シリアルアシスタントの設定とウェイクアップテストの手順を解説します。"
 ---
 
 # PC シリアル通信
 
 ## 1、シリアルアシスタントのダウンロード
 
-[uartassist5.0.2.zip]
+uartassist5.0.2.zip
 
 ---
 

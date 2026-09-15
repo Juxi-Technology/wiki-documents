@@ -1,6 +1,6 @@
 ---
 title: "Uso do Jupyter Lab"
-description: "Use o comando abaixo para instalar o Jupyter Lab: se o download do Jupyter Lab estiver lento, pode usar uma f…"
+description: "Instalação, inicialização e uso do Jupyter Lab no NVIDIA Jetson para programar com a câmera CSI em Python pelo navegador."
 ---
 
 # Uso do Jupyter Lab

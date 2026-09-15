@@ -1,6 +1,6 @@
 ---
 title: "Montagem do kit montado"
-description: "Lista de acessórios"
+description: "Montagem do kit montado do XLeRobot: instalar o chassis, a torre da câmara, os braços seguidores SO-ARM101, a cablagem dos servos e as ligações de alimentação."
 ---
 
 # Montagem do kit montado

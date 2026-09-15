@@ -29,11 +29,11 @@ Das folgende Video zeigt die einzelnen Schritte zum Einstellen der Motor-IDs.
 
 ## Windows-System
 
-[飞特舵机上位机.zip]
+飞特舵机上位机.zip
 
 Mit der Feetech-Servo-Software die Servo-IDs einstellen und die Mittelstellung kalibrieren – die IDs reichen von 1 bis 6!
 
-[机械臂舵机设置ID-Windows系统.mp4]
+机械臂舵机设置ID-Windows系统.mp4
 
 ## Linux/Ubuntu-System
 
@@ -85,13 +85,13 @@ lerobot-setup-motors \
     --teleop.port=/dev/ttyACM0
 ```
 
-[机械臂舵机设置ID-Linux系统.mp4]
+机械臂舵机设置ID-Linux系统.mp4
 
 # Schritt 2: Montage
 
 - Die Montageschritte des Follower-Arms entsprechen im Wesentlichen denen des Leader-Arms. Der einzige Unterschied: Nach Schritt 12 ist die Montage des Endeffektors (Gripper und Griff) anders.
 
-[SO-ARM101机械臂组装教程.mp4]
+SO-ARM101机械臂组装教程.mp4
 
 Montage der Servo-Treiberplatine: Zuerst 4 Kupfersäulen montieren, dann die Treiberplatine mit vier M2.5\*8-Schrauben befestigen
 

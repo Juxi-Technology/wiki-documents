@@ -1,6 +1,6 @@
 ---
 title: "Quick Start"
-description: "The speech recognition firmware is already flashed at the factory, so users can quickly try it out without fl…"
+description: "Quick start guide for the AI Voice Interaction Module: power over Type-C, wake the module, and try the factory firmware without flashing anything."
 ---
 
 # Quick Start

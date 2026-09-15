@@ -1,6 +1,6 @@
 ---
 title: Tutorials
-description: Juxi Technology Wiki — Tutorials
+description: "Alle Tutorials im Juxi Technology Wiki: Roboterarme, Greifhände, Sensoren und Zubehör mit Schritt-für-Schritt-Anleitungen für den schnellen Einstieg."
 ---
 
 # Tutorials

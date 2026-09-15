@@ -1,6 +1,6 @@
 ---
 title: "Arduino: Comunicazione della porta seriale"
-description: "1. Aprire il file UARTVoice.ino"
+description: "Modulo di interazione vocale IA e Arduino via porta seriale: cablaggio incrociato RX e TX e codice di esempio per ricevere le parole di comando riconosciute."
 ---
 
 # Arduino: Comunicazione della porta seriale

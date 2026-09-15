@@ -1,6 +1,6 @@
 ---
 title: "Fase 4: Recolección de datos (Windows)"
-description: "En esta fase se graba el conjunto de datos de teleoperación: bajo control manual se recopilan muestras de “án…"
+description: "Fase 4 en Windows: recoge datos de teleoperación del SO-ARM101 con AmazingHand, graba episodios con cámara y revisa el conjunto de datos."
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: Configuração de Software
-description: "Este capítulo apresenta o método de configuração de software do produto."
+description: "Configuração de software dos produtos Juxi: requisitos do sistema, instalação das dependências e edição do arquivo de configuração."
 ---
 
 

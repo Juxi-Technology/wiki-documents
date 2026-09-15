@@ -1,6 +1,6 @@
 ---
 title: "Stage 5: Model Training (Linux)"
-description: "This stage trains a policy (ACT, etc.) on the collected dataset to produce a deployable model. Linux is the b…"
+description: "Stage 5 model training on Linux: train an ACT policy on the collected dataset with CUDA and an NVIDIA GPU, then locate the deployable checkpoint."
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Configurazione fotocamera CSI su Jetson"
-description: "Premere il tasto freccia giù per selezionare Configure Jetson 24pin CSI Connector. Quindi premere Enter per p…"
+description: "Configurazione della fotocamera CSI su NVIDIA Jetson: selezionare il connettore a 24 pin con lo strumento dedicato e verificare i dispositivi video."
 ---
 
 # Configurazione fotocamera CSI su Jetson

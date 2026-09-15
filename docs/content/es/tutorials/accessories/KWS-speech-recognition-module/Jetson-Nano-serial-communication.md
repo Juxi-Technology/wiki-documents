@@ -1,6 +1,6 @@
 ---
 title: Comunicación serie Jetson Nano
-description: "Nota: el módulo de interacción de voz requiere flashear el firmware de fábrica; si el chip de voz es nuevo y no se ha flasheado, no es necesario"
+description: "Módulo de voz KWS en Jetson Nano: conexión por USB, detección del puerto, ejemplo de comunicación serie y prueba de los comandos de voz."
 ---
 
 # Comunicación serie Jetson Nano

@@ -1,6 +1,6 @@
 ---
 title: "Criação de entradas de protocolo personalizadas"
-description: "O módulo já vem de fábrica com o firmware da função de reconhecimento de voz gravado, e o firmware de fábrica…"
+description: "Crie entradas personalizadas no módulo de interação por voz IA: geração do firmware do chip de voz e adição de novas palavras de comando e frases."
 ---
 
 # Criação de entradas de protocolo personalizadas

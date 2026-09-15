@@ -1,6 +1,6 @@
 ---
 title: Jetson serielle Kommunikation
-description: "Hinweis: Für das Sprachinteraktionsmodul muss die Werksfirmware geflasht werden; bei einem neuen, ungeflashten Sprachchip ist dies nicht erforderlich"
+description: "KWS-Spracherkennungsmodul an Jetson-Mainboards: serielle Schnittstelle einrichten und die Ausgabe der Wake-Word- und Befehlswort-Erkennung auswerten."
 ---
 
 # Jetson serielle Kommunikation

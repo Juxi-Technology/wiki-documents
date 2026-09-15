@@ -1,6 +1,6 @@
 ---
 title: Jetson CSI 카메라
-description: "NVIDIA Jetson Orin CSI 카메라 모듈 사용 방법"
+description: "Jetson Orin용 CSI 카메라 모듈 — CSI-2 인터페이스와 제품 사양, OpenCV·GStreamer 예제로 시작하는 빠른 사용 가이드."
 ---
 
 # Jetson CSI 카메라

@@ -1,6 +1,6 @@
 ---
 title: "Stage 3: Teleoperation (Linux)"
-description: "This stage starts the teleoperation loop: the leader arm drives the follower arm's motion, and the gripper co…"
+description: "Stage 3 teleoperation on Linux: run the LeRobot teleoperation loop so the leader arm drives the follower arm and the gripper moves the hand."
 ---
 
 

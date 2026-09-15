@@ -1,6 +1,6 @@
 ---
 title: Configuração de Software
-description: "Este capítulo apresenta o método de configuração de software do produto."
+description: "Configuração de software nos recursos de aprendizagem: requisitos de sistema, passos de instalação e ajuste do ficheiro de configuração do produto."
 ---
 
 

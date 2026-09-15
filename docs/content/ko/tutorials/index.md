@@ -1,6 +1,6 @@
 ---
 title: 튜토리얼
-description: Juxi Technology Wiki — 튜토리얼
+description: "Juxi Technology 튜토리얼 — 로봇 암과 액세서리, 센서와 인지 등 모든 제품의 사용 튜토리얼과 설정 가이드를 모았습니다."
 ---
 
 # 튜토리얼

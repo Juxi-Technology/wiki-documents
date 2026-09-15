@@ -1,6 +1,6 @@
 ---
 title: "ROS: lectura de datos GPS"
-description: "Introduzca en la terminal,"
+description: "Lectura de datos del módulo GPS/BeiDou en ROS2: lanza el driver por puerto serie y consulta los topics de posición, tiempo y velocidad."
 ---
 
 # ROS: lectura de datos GPS

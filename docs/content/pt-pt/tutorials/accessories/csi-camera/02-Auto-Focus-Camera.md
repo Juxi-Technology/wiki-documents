@@ -1,6 +1,6 @@
 ---
 title: "Utilização da câmara com autofoco"
-description: "O resultado da imagem corresponde a duas câmaras CSI e uma câmara USB ligadas: normalmente uma câmara CSI apr…"
+description: "Utilize a câmara CSI com autofoco no Jetson: identificação dos dispositivos de vídeo e pré-visualização da imagem com as ferramentas GUVCView e VLC."
 ---
 
 # Utilização da câmara com autofoco

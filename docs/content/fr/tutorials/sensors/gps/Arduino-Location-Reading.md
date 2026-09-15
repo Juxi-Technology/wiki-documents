@@ -1,6 +1,6 @@
 ---
 title: "Arduino : lecture de position"
-description: "Dans cette leçon, nous allons principalement apprendre à utiliser Arduino et le module GPS pour réaliser la f…"
+description: "Lecture des données brutes du module GPS BeiDou avec un Arduino UNO : câblage sur la broche D0 et affichage des trames reçues sur le moniteur série."
 ---
 
 # Arduino : lecture de position

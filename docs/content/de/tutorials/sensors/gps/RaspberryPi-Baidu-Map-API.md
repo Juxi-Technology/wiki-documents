@@ -1,6 +1,6 @@
 ---
 title: "Raspberry Pi: Baidu-Maps-API"
-description: "1. Registrierungsmethode"
+description: "Raspberry Pi: Baidu-Maps-API für das GPS-Modul einrichten, Registrierung und API-Schlüssel abrufen und Positionen auf der Karte darstellen."
 ---
 
 # Raspberry Pi: Baidu-Maps-API

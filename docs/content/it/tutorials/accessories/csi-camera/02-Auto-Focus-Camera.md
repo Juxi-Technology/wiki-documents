@@ -1,6 +1,6 @@
 ---
 title: "Uso della fotocamera autofocus"
-description: "Il risultato dell'immagine corrisponde a due fotocamere CSI e una fotocamera USB collegate: di norma una foto…"
+description: "Uso della fotocamera autofocus su Jetson: elencare i dispositivi video, scegliere il nodo giusto per la USB e acquisire anteprime e video con GUVCView e VLC."
 ---
 
 # Uso della fotocamera autofocus

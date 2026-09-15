@@ -1,6 +1,6 @@
 ---
 title: "ROS1 Voice Interaction"
-description: "The AI voice interaction module supports the following three wiring methods:"
+description: "ROS1 voice interaction node for the AI Voice Interaction Module on Ubuntu 20.04 with Noetic: three wiring methods, auto detection, and RViz command control."
 ---
 
 # ROS1 Voice Interaction

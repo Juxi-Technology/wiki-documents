@@ -7,7 +7,7 @@ description: "This routine uses an STM32F103C8T6, a Windows computer, several Du
 
 This routine uses an STM32F103C8T6, a Windows computer, several DuPont wires, and an IMU attitude sensor. 
 
-[STM32.zip]
+STM32.zip
 
 Open I2C.uvprojx using Keil5 software and burn the program into the STM32F103C8T6 core board 
 

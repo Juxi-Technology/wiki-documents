@@ -1,6 +1,6 @@
 ---
 title: Aplicação ROS2
-description: "Configuração do sistema: ubuntu22.04"
+description: "Aplicação ROS2 do sensor IMU no Ubuntu 22.04: configuração do ambiente, compilação do projeto, arranque do nó e visualização dos dados de atitude no RViz2."
 ---
 
 # Aplicação ROS2

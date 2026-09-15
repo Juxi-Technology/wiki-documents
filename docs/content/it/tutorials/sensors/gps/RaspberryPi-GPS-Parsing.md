@@ -1,6 +1,6 @@
 ---
 title: "Raspberry Pi: analisi GPS"
-description: "In questa lezione impareremo principalmente a utilizzare la Raspberry Pi e il modulo GPS per leggere e analiz…"
+description: "Analisi dei dati GPS su Raspberry Pi: collegare il modulo via USB e usare il codice di esempio per filtrare le sentenze GNGGA ed estrarre le coordinate."
 ---
 
 # Raspberry Pi: analisi GPS

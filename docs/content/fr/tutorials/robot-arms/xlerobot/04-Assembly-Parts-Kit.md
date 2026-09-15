@@ -1,6 +1,6 @@
 ---
 title: "Assemblage du kit en pièces"
-description: "Astuce"
+description: "Assemblage du kit en pièces XLeRobot : construire les bras SO101, configurer les servos Feetech STS3215 et monter le châssis et la tête."
 ---
 
 # Assemblage du kit en pièces
@@ -69,7 +69,7 @@ sudo chmod 666 /dev/ttyACM0
 
 ![Image 6](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/6.png)
 
-## 🧑‍🦼‍➡ Base à roues
+## 🧑🦼➡ Base à roues
 
 > Si vous disposez déjà d'une base Lekiwi, retirez la batterie, les supports de servos, etc. La plaque inférieure ne nécessite que 3 servos avec roues installés (conservez le câblage).
 > 

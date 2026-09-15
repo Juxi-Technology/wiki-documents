@@ -1,6 +1,6 @@
 ---
 title: API 참조
-description: 이 페이지는 제품의 API 인터페이스 참조 문서를 제공합니다.
+description: "Juxi 제품 API 참조 — 기본 URL과 API Key 인증, 장치 정보 조회 등 REST 인터페이스 명세를 정리한 기술 문서입니다."
 ---
 
 # API 참조

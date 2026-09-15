@@ -30,11 +30,11 @@ description: "Pro 버전: 리더 암은 5V6A, 팔로워 암은 12V5A 전원 어�
 
 ## Windows 시스템
 
-[飞特舵机上位机.zip]
+飞特舵机上位机.zip
 
 Feite 서보 컨트롤러를 사용하여 서보 ID를 설정하고 미드포인트를 캘리브레이션합니다. ID 설정 범위는 1~6입니다!
 
-[机械臂舵机设置ID-Windows系统.mp4]
+机械臂舵机设置ID-Windows系统.mp4
 
 ## Linux/Ubuntu 시스템
 
@@ -86,13 +86,13 @@ lerobot-setup-motors \
     --teleop.port=/dev/ttyACM0
 ```
 
-[机械臂舵机设置ID-Linux系统.mp4]
+机械臂舵机设置ID-Linux系统.mp4
 
 # 2단계: 조립
 
 - 팔로워 암의 조립 절차는 액티브 암과 기본적으로 동일합니다. 유일한 차이는 12단계 이후 엔드이펙터(gripper와 핸들)의 설치 방식입니다.
 
-[SO-ARM101机械臂组装教程.mp4]
+SO-ARM101机械臂组装教程.mp4
 
 서보 드라이버 보드 설치: 먼저 구리 기둥 4개를 설치한 후, M2.5*8 나사 4개로 드라이버 보드를 고정합니다.
 

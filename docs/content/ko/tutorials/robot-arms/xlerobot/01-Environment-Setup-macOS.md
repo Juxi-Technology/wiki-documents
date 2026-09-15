@@ -1,6 +1,6 @@
 ---
 title: "환경 구축(macOS)"
-description: "검정색 리더 암은 5V6A 전원 어댑터를 사용합니다"
+description: "XLeRobot 양팔 이동 로봇 환경 구축 가이드의 macOS 편 — 권한 부여, Miniconda 설치, LeRobot 코드 설치 절차."
 ---
 
 # 환경 구축(macOS)

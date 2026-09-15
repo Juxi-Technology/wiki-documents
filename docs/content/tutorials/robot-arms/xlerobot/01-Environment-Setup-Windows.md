@@ -1,6 +1,6 @@
 ---
 title: "Environment Setup (Windows)"
-description: "The black leader arm uses a 5V6A power adapter"
+description: "XLeRobot Windows environment setup: install Miniconda, replace the conda channels with mirrors, and prepare Python for the LeRobot toolchain."
 ---
 
 # Environment Setup (Windows)

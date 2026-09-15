@@ -1,6 +1,6 @@
 ---
 title: "Protocolo de puerto serie"
-description: "Abra el archivo de lista de protocolo de palabras de comando y frases de reproducción V1中文 en los archivos ad…"
+description: "Protocolo de puerto serie del módulo de voz IA: entradas funcionales, palabras de comando y frases de reproducción con sus tramas de envío y recepción."
 ---
 
 # Protocolo de puerto serie

@@ -1,6 +1,6 @@
 ---
 title: "Démarrage rapide"
-description: "Le micrologiciel de reconnaissance vocale est déjà flashé en usine ; vous pouvez donc l'essayer rapidement sa…"
+description: "Démarrage rapide du module d'interaction vocale IA : brancher en Type-C, le réveiller avec le mot d'éveil d'usine puis tester commandes et diffusions."
 ---
 
 # Démarrage rapide

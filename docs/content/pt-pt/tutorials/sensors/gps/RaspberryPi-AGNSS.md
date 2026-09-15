@@ -1,6 +1,6 @@
 ---
 title: "Raspberry Pi: posicionamento AGNSS"
-description: "Nesta lição, vamos aprender principalmente a utilizar o Raspberry Pi, o módulo GPS e o servidor agnss para im…"
+description: "Posicionamento AGNSS com o Raspberry Pi e o módulo GPS: utilização do servidor AGNSS para reduzir o tempo até ao primeiro posicionamento em sinal fraco."
 ---
 
 # Raspberry Pi: posicionamento AGNSS
@@ -149,7 +149,7 @@ Utilize um cabo type-c para ligar o Raspberry Pi e o módulo GPS; execute o coma
 
 **3.2. Solicitar a ak do 百度地图**
 
-Consulte o documento [Tutorial de pedido da api do 百度地图]()
+Consulte o documento [Tutorial de pedido da api do 百度地图](./RaspberryPi-Baidu-Map-API.md)
 
  
 

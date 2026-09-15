@@ -1,6 +1,6 @@
 ---
 title: "Erreur de localisation sur la carte"
-description: "Les coordonnées utilisées par Tencent et Amap diffèrent de celles de l'ordinateur hôte. Notre ordinateur hôte…"
+description: "Corriger les erreurs de localisation du module GPS BeiDou sur les cartes : systèmes de coordonnées WGS-84, GCJ-02 et BD-09 et méthode de conversion."
 ---
 
 

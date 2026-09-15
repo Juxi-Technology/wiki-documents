@@ -1,6 +1,6 @@
 ---
 title: "Raspberry Pi: GPS-Auswertung"
-description: "In dieser Lektion lernen wir hauptsächlich, mit dem Raspberry Pi und dem GPS-Modul Positionsinformationen zu …"
+description: "Raspberry Pi und GPS-Modul: Positionsinformationen auslesen und auswerten mit Beispielcode und Hinweisen für die eigene Anwendung."
 ---
 
 # Raspberry Pi: GPS-Auswertung

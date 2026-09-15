@@ -1,6 +1,6 @@
 ---
 title: "Jetson: analisi GPS"
-description: "In questa lezione impareremo principalmente a utilizzare il Jetson Orin e il modulo GPS per leggere e analizz…"
+description: "Analisi dei dati GPS su NVIDIA Jetson Orin: collegare il modulo via USB e usare il codice di esempio per filtrare le sentenze GNGGA ed estrarre le coordinate."
 ---
 
 # Jetson: analisi GPS

@@ -1,6 +1,6 @@
 ---
 title: 기여 가이드
-description: JUXI Wiki에 콘텐츠를 기여하는 방법
+description: "JUXI Wiki 기여 가이드 — 저장소 Fork와 로컬 클론, 문서 작성 규칙과 Pull Request 제출 절차를 단계별로 소개합니다."
 ---
 
 # 기여 가이드

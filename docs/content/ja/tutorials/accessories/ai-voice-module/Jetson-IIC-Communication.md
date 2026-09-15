@@ -1,6 +1,6 @@
 ---
 title: "Jetson: IIC 通信"
-description: "ログアウトして再ログインすると有効になります。"
+description: "AI 音声対話モジュールと Jetson を IIC 接続するセットアップ。依存関係のインストール、配線、I2C デバイスの確認方法を解説します。"
 ---
 
 # Jetson: IIC 通信

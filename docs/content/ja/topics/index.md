@@ -1,6 +1,6 @@
 ---
 title: トピック
-description: Juxi Technology Wiki — トピック
+description: "Juxi Technology Wiki のトピック一覧。ロボティクスと自動化技術を、実際の製品と実践チュートリアルで深掘りします。"
 ---
 
 # トピック

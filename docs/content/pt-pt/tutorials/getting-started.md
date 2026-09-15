@@ -1,6 +1,6 @@
 ---
 title: "Guia Rápido"
-description: "Bem-vindo aos produtos da Juxi Technology! Este tutorial ajudará você a começar rapidamente."
+description: "Guia rápido dos produtos Juxi Technology: pré-requisitos, ligação do hardware ao computador por USB, instalação do software e primeiros passos."
 ---
 
 

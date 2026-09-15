@@ -1,6 +1,6 @@
 ---
 title: "Uso da câmera com autofoco"
-description: "O resultado da imagem corresponde a duas câmeras CSI e uma câmera USB conectadas: normalmente uma câmera CSI …"
+description: "Uso da câmera CSI com autofoco no NVIDIA Jetson — verificar os dispositivos de vídeo e visualizar a imagem com o GUVCView e o VLC."
 ---
 
 # Uso da câmera com autofoco

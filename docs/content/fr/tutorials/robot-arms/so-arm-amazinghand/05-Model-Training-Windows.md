@@ -1,6 +1,6 @@
 ---
 title: "Phase 5 : Entraînement du modèle (Windows)"
-description: "Cette phase utilise le jeu de données collecté pour entraîner une politique (ACT, etc.) et produire un modèle…"
+description: "Phase 5 sous Windows : vérifier l'environnement GPU puis entraîner un modèle de politique pour SO-ARM101 et AmazingHand sous LeRobot."
 ---
 
 

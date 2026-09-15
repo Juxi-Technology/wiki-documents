@@ -1,6 +1,6 @@
 ---
 title: Roboterhand Interface-Steuerung
-description: "[AmazingHandControl.zip]"
+description: "AmazingHand über die Schnittstelle steuern: offizielles Beispiel-Repository, Grundsteuerung und TTL-Protokoll für die 4-Finger-Greifhand."
 ---
 
 # Roboterhand Interface-Steuerung

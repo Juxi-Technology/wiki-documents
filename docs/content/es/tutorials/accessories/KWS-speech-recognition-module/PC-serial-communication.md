@@ -1,13 +1,13 @@
 ---
 title: Comunicación serie PC
-description: "[uartassist5.0.2.zip]"
+description: "Módulo de voz KWS: comunicación serie desde el PC con el asistente serie a 115200, ajuste de la configuración y prueba de activación con el protocolo."
 ---
 
 # Comunicación serie PC
 
 ## 1. Descargar el asistente serie
 
-[uartassist5.0.2.zip]
+uartassist5.0.2.zip
 
 ---
 

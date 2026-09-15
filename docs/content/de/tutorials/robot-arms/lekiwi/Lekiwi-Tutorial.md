@@ -9,7 +9,7 @@ description: "Kompletter Leitfaden für den LeRobot-basierten Lekiwi-Mobilitäts
 
 Der schwarze Leader-Arm verwendet ein 5V-6A-Netzteil, der weiße Follower-Arm ein 12V-5A-Netzteil
 
-[lerobot-Lekiwi.zip]
+lerobot-Lekiwi.zip
 
 Die Codebasis dieses Tutorial-Repositorys wird auf der vor dem 1. März 2026 getesteten stabilen Version von LeRobot gehalten. Hugging Face hat LeRobot inzwischen sehr umfangreich erweitert und eine große Anzahl neuer Funktionen hinzugefügt. Für das neueste Tutorial folgen Sie bitte [der offiziellen Dokumentation](https://huggingface.co/docs/lerobot/lekiwi).
 

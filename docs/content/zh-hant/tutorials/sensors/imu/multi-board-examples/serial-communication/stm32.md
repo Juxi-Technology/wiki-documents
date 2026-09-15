@@ -7,7 +7,7 @@ description: "本次例程使用的是STM32F103C8T6核心板，一臺windows電�
 
 本次例程使用的是STM32F103C8T6核心板，一臺windows電腦、杜邦線若干、IMU姿態傳感器。
 
-[STM32.zip]
+STM32.zip
 
 使用keil5軟件打開USART.uvprojx，燒錄程序到STM32F103C8T6核心板中
 
@@ -23,9 +23,9 @@ description: "本次例程使用的是STM32F103C8T6核心板，一臺windows電�
 
 ```Python
 //解析环形缓冲中的数据，提取完整帧并更新缓存
-​
+
 //Process RX ring buffer, parse frames and update internal cache
-​
+
 void IMU_UART_Process(void)
 {
     enum {
@@ -118,8 +118,8 @@ void IMU_UART_Process(void)
         }
     }
 }
-​
-​
+
+
 /* ---------- 解析数据帧 / Parse one complete frame ---------- */
 static void _parse_frame_data(uint8_t frame_function, const uint8_t *frame_data)
 {

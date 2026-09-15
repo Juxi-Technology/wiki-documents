@@ -1,6 +1,6 @@
 ---
 title: "Configuración (macOS)"
-description: "El brazo motriz negro utiliza un adaptador de alimentación de 5V6A"
+description: "Configuración del entorno XLeRobot en macOS: permisos del sistema, instalación de Miniconda y creación del entorno virtual Python."
 ---
 
 # Configuración (macOS)

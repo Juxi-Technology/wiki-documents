@@ -1,6 +1,6 @@
 ---
 title: 第 8 章:顔認識
-description: "ESP32-NanoCam チュートリアル第 8 章:顔特徴を登録して継続的に認識(ID/who?)。face_eril、face_rz、face_del、face_detect コマンド、フレームスキップ戦略、トラブルシューティングを習得します。"
+description: "ESP32-NanoCam チュートリアル第 8 章。顔特徴の登録から継続的な認識まで、入退室管理の構築手順を解説します。"
 ---
 
 # 第 8 章:顔認識

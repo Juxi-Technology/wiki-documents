@@ -1,6 +1,6 @@
 ---
 title: Comunicazione seriale Raspberry Pi
-description: "Nota: il modulo di interazione vocale richiede il flashing del firmware di fabbrica; se il chip vocale è nuovo e non flashato, non è necessario"
+description: "Modulo di riconoscimento vocale KWS su Raspberry Pi: comunicazione via porta seriale USB e ricezione delle parole di attivazione riconosciute."
 ---
 
 # Comunicazione seriale Raspberry Pi

@@ -1,13 +1,13 @@
 ---
 title: Comunicazione seriale PC
-description: "[uartassist5.0.2.zip]"
+description: "Modulo vocale KWS su PC: scaricare l'assistente seriale, configurare la porta a 115200 e verificare il riconoscimento delle parole di attivazione del modulo."
 ---
 
 # Comunicazione seriale PC
 
 ## 1. Scaricare l'assistente seriale
 
-[uartassist5.0.2.zip]
+uartassist5.0.2.zip
 
 ---
 

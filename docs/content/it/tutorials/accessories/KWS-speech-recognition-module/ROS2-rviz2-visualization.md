@@ -1,6 +1,6 @@
 ---
 title: "Visualizzazione ROS2 RViz2"
-description: "- Sistema operativo: Ubuntu 22.04"
+description: "Modulo vocale KWS su ROS2: creare workspace e pacchetto Python, avviare il nodo che pubblica i risultati del riconoscimento vocale e visualizzarli in RViz2."
 ---
 
 # Visualizzazione ROS2 RViz2

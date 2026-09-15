@@ -1,6 +1,6 @@
 ---
 title: "ROS1语音交互"
-description: "AI语音交互模块支持以下三种接线方式："
+description: "钜犀科技 AI 语音交互模块教程——从 ROS1 节点自动检测串口或 I2C 接线,实现语音交互。"
 ---
 
 # ROS1语音交互

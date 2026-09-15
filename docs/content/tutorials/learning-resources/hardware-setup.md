@@ -1,6 +1,6 @@
 ---
 title: Hardware Setup
-description: "This chapter details the product hardware connection method."
+description: "Hardware setup chapter in the Learning Resources section: connect power and peripherals through USB-C, GPIO and HDMI, then power on the product."
 ---
 
 

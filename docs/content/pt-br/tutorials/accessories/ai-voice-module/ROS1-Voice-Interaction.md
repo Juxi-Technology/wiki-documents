@@ -1,6 +1,6 @@
 ---
 title: "Interação de voz ROS1"
-description: "O módulo de interação por voz oferece suporte aos três modos de cabeamento a seguir:"
+description: "Interação de voz ROS1 com o módulo de voz: ambiente Noetic ou Melodic e detecção automática do cabeamento serial ou I2C."
 ---
 
 # Interação de voz ROS1

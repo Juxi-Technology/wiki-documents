@@ -7,7 +7,7 @@ description: "Este exemplo usa uma placa de desenvolvimento Arduino Nano, um com
 
 Este exemplo usa uma placa de desenvolvimento Arduino Nano, um computador Windows, alguns fios Dupont e um sensor de atitude IMU. 
 
-[Arduino.rar]
+Arduino.rar
 
 ## 1. Conectar o dispositivo
 

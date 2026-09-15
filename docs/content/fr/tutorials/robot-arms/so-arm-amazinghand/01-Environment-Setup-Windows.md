@@ -1,6 +1,6 @@
 ---
 title: "Phase 1 : Configuration de l'environnement (Windows)"
-description: "Utilisez Miniconda pour créer un environnement Python isolé et installer LeRobot ainsi que le support Amazing…"
+description: "Phase 1 du tutoriel SO-ARM101 et AmazingHand sous Windows : installer Miniconda, créer l'environnement virtuel et vérifier les ports série."
 ---
 
 

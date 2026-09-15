@@ -69,7 +69,7 @@ sudo chmod 666 /dev/ttyACM0
 
 ![図 6](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/6.png)
 
-## 🧑‍🦼‍➡ シャーシ
+## 🧑🦼➡ シャーシ
 
 > すでに Lekiwi ベースがある場合は、バッテリー、サーボブラケットなどを取り外してください。底板には車輪付きのサーボを 3 つ取り付けるだけです(配線は残します)。
 > 

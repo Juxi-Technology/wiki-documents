@@ -16,11 +16,11 @@ Recomenda-se baixar o pacote compactado do código deste tutorial para a demonst
 
 Pacote compactado do código para Windows
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 Pacote compactado do código para Linux
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 ```Plain Text
 git clone https://github.com/pollen-robotics/AmazingHand.git

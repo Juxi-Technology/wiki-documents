@@ -1,6 +1,6 @@
 ---
 title: 第 8 章:人脸识别
-description: "ESP32-NanoCam 教程第 8 章:注册人脸特征并持续识别(ID/who?),掌握 face_eril、face_rz、face_del、face_detect 命令、跳帧策略与故障排除。"
+description: "ESP32-NanoCam 教程第 8 章——人脸特征注册与持续识别,讲解命令字、跳帧策略与门禁方案。"
 ---
 
 # 第 8 章:人脸识别

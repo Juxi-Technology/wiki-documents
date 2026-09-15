@@ -1,6 +1,6 @@
 ---
 title: Incompatibilité PyTorch sur Jetson Orin
-description: "Installer la version Jetson de PyTorch"
+description: "Résoudre les incompatibilités PyTorch sur Jetson Orin pour le SO-ARM101 : installer la version Jetson de PyTorch, cuSPARSELt et torchvision."
 ---
 
 # Incompatibilité PyTorch sur Jetson Orin

@@ -1,6 +1,6 @@
 ---
 title: "Etapa 3: Teleoperação (Linux)"
-description: "Esta etapa inicia o ciclo fechado de teleoperação: o braço líder controla o movimento do braço seguidor e a g…"
+description: "Etapa 3 do tutorial SO-ARM101 + AmazingHand no Linux — teleoperação em ciclo fechado entre braço líder e seguidor, com verificação de direção."
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: Guida alla contribuzione
-description: Come contribuire al Wiki JUXI
+description: "Guida alla contribuzione al Wiki Juxi Technology: fork del repository, proposta di nuovi tutorial, traduzioni dei contenuti e pull request."
 ---
 
 # Guida alla contribuzione

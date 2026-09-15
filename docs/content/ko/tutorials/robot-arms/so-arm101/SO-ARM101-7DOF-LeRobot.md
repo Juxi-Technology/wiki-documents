@@ -1,6 +1,6 @@
 ---
 title: SO-ARM101 7-DOF 개조와 LeRobot 사용 튜토리얼
-description: "SO-ARM101을 6 서보에서 7 자유도(wrist_yaw 추가)로 개조한 후의 서보 ID 대조표, 코드 변경과 교체 방법, 캘리브레이션 주의사항, 그리고 LeRobot에서의 사용 방법."
+description: "SO-ARM101 로봇 암을 6 서보에서 7 자유도로 개조하는 튜토리얼 — 손목 요 관절 추가, 서보 ID 변경과 LeRobot 캘리브레이션 주의사항."
 ---
 
 # SO-ARM101 7-DOF 개조와 LeRobot 사용 튜토리얼

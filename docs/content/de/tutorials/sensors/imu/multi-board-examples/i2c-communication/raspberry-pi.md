@@ -44,7 +44,7 @@ sudo apt install -y python3-smbus2
 
 3.2 Dateien übertragen
 
-[IMU_ROS2.zip]
+IMU_ROS2.zip
 
 Wer noch nicht mit der Dateiübertragung per MobaXterm vertraut ist, findet unter folgendem Link eine ausführliche Installations- und Bedienungsanleitung: [文件远程传输](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 

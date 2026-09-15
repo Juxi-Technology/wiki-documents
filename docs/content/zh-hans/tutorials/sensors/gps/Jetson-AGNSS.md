@@ -149,7 +149,7 @@ GPS模块采用的是UART通讯或USB通讯，这里以USB通讯为例。
 
 **3.2. 申请百度地图ak**
 
-请看文档 [百度地图api申请教程]()
+请看文档 [百度地图api申请教程](./Jetson-Baidu-Map-API.md)
 
  
 

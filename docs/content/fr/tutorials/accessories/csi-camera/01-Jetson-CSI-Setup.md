@@ -1,6 +1,6 @@
 ---
 title: "Configuration caméra CSI Jetson"
-description: "Utilisez la flèche bas pour sélectionner Configure Jetson 24pin CSI Connector. Appuyez ensuite sur Entrée pou…"
+description: "Configurer une caméra CSI sur Jetson : activer le connecteur 24 broches, choisir le mode IMX219 Dual et vérifier l'aperçu vidéo de la caméra."
 ---
 
 # Configuration caméra CSI Jetson

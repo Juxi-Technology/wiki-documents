@@ -1,6 +1,6 @@
 ---
 title: "Assemblage du kit monté"
-description: "Liste des accessoires"
+description: "Assemblage du kit monté XLeRobot : fixer le châssis mobile, la tour de caméra, les bras suiveurs SO-ARM101, les câbles et la caméra."
 ---
 
 # Assemblage du kit monté

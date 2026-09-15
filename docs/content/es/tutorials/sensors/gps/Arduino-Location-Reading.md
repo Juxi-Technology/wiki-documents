@@ -1,6 +1,6 @@
 ---
 title: "Arduino: lectura de posición"
-description: "En esta lección aprenderemos principalmente a utilizar Arduino y el módulo GPS para implementar la función de…"
+description: "Módulo GPS/BeiDou con Arduino UNO: lectura básica por UART de los datos de posición directamente en el monitor serie."
 ---
 
 # Arduino: lectura de posición

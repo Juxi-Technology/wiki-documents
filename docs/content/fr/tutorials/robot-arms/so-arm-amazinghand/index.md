@@ -1,6 +1,6 @@
 ---
 title: "Tutoriel d'utilisation de SO-ARM101 + AmazingHand"
-description: "Ce tutoriel couvre l'ensemble du processus de téléopération, de collecte de données et d'entraînement pour re…"
+description: "Tutoriel complet SO-ARM101 et AmazingHand sous LeRobot : configuration, calibration, téléopération, collecte de données, entraînement et déploiement."
 ---
 
 

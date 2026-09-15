@@ -96,9 +96,9 @@ description: "Il modulo viene di fabbrica con il firmware di riconoscimento voca
 
 4. Qui sono forniti due 命令詞播報詞協議列表 (elenco dei protocolli di annuncio); modificarli in base a questa tabella se necessario
 
-    [命令詞播報詞協議列表V3_中文模板.xlsx]
+    命令詞播報詞協議列表V3_中文模板.xlsx
 
-    [命令詞播報詞協議列表V3_英文模板.xlsx]
+    命令詞播報詞協議列表V3_英文模板.xlsx
 
 ![Configurazione del firmware – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/3.png)
 
@@ -110,7 +110,7 @@ description: "Il modulo viene di fabbrica con il firmware di riconoscimento voca
 
 #### Scaricare l'archivio del software di flashing
 
-[Software di flashing firmware modulo vocale.7z]
+Software di flashing firmware modulo vocale.7z
 
 1. Estrarre e aprire il software
 
@@ -138,9 +138,9 @@ description: "Il modulo viene di fabbrica con il firmware di riconoscimento voca
 
 #### Qui sono forniti file di firmware pronti da flashati direttamente
 
-[CI1302_中文_单麦_V00681_UART0_115200_2M.bin]
+CI1302_中文_单麦_V00681_UART0_115200_2M.bin
 
-[CI1302_英文_单麦_V00916_UART0_115200_2M.bin]
+CI1302_英文_单麦_V00916_UART0_115200_2M.bin
 
 
 

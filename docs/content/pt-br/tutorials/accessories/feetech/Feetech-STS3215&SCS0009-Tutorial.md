@@ -1,6 +1,6 @@
 ---
 title: "Tutorial de Depuração STS3215 & SCS0009"
-description: "Software FD do computador host FEETECH https://gitee.com/ftservo"
+description: "Depuração dos servos de barramento Feetech STS3215 e SCS0009 da Juxi Technology — software FD do computador host, protocolo SCS e materiais de depuração."
 ---
 
 # Tutorial de Depuração STS3215 & SCS0009
@@ -14,9 +14,9 @@ description: "Software FD do computador host FEETECH https://gitee.com/ftservo"
 
 ![imagem – 2](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZmI0MWFlYmQ1MDE5NzI2ZWE4MzI5YzAwZjRiNDYwZmJfNmE0Zjk4ZGJhZTc2ZGE5NzRiZGE2YjBlMWM2YTc4OWJfSUQ6NzYzODkxOTU3NDYyODc0ODIxOF8xNzgwNjYzMTg4OjE3ODA3NDk1ODhfVjM)
 
-[STS3215 舵机调试资料.zip]
+STS3215 舵机调试资料.zip
 
-[SCS009 舵机调试资料.zip]
+SCS009 舵机调试资料.zip
 
 
 

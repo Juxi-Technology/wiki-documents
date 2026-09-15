@@ -7,7 +7,7 @@ description: "Cet exemple utilise la carte de développement Arduino Nano, un PC
 
 Cet exemple utilise la carte de développement Arduino Nano, un PC Windows, plusieurs câbles de liaison et le capteur d'attitude IMU.
 
-[Arduino.rar]
+Arduino.rar
 
 
 

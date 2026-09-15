@@ -1,6 +1,6 @@
 ---
 title: "Stage 3: Teleoperation (Windows)"
-description: "This stage starts the teleoperation loop: the leader arm drives the follower arm's motion, and the gripper co…"
+description: "Stage 3 teleoperation on Windows: start the teleoperation loop with COM port arguments and confirm the follower arm tracks the leader's joints."
 ---
 
 

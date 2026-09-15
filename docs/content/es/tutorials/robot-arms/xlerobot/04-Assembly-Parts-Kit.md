@@ -1,6 +1,6 @@
 ---
 title: "Montaje del kit de piezas"
-description: "Consejo"
+description: "Montaje del kit de piezas de XLeRobot desde cero: construye los dos brazos SO-ARM101, configura los IDs de los servos Feetech y cablea la base con ruedas."
 ---
 
 # Montaje del kit de piezas
@@ -69,7 +69,7 @@ sudo chmod 666 /dev/ttyACM0
 
 ![Imagen 6](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/6.png)
 
-## 🧑‍🦼‍➡ Base con ruedas
+## 🧑🦼➡ Base con ruedas
 
 > Si ya dispone de una base Lekiwi, retire la batería, los soportes de los servomotores, etc. En la placa inferior solo hay que instalar 3 servomotores con ruedas (conserve el cableado).
 > 

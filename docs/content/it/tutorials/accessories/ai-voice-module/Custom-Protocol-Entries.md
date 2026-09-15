@@ -1,6 +1,6 @@
 ---
 title: "Creazione di voci con protocollo personalizzato"
-description: "Il modulo è già stato caricato in fabbrica con il firmware con funzione di riconoscimento vocale e il firmwar…"
+description: "Creare voci con protocollo personalizzato per il modulo vocale IA: generare il firmware con la piattaforma Chipintelli e nuove parole di attivazione e comandi."
 ---
 
 # Creazione di voci con protocollo personalizzato

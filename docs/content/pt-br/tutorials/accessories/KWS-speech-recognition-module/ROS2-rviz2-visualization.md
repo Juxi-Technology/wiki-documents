@@ -1,6 +1,6 @@
 ---
 title: "Visualização ROS2 RViz2"
-description: "- Sistema operacional: Ubuntu 22.04"
+description: "Visualização ROS2 do módulo de reconhecimento de voz KWS da Juxi Technology — espaço de trabalho no Ubuntu 22.04 com ROS2 Humble e resultados no RViz2."
 ---
 
 # Visualização ROS2 RViz2

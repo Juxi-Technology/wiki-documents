@@ -265,7 +265,7 @@ lerobot-calibrate \
     --teleop.id=my_awesome_leader_arm
 ```
 
-[Roboterarm-Mittenkalibrierung.mp4]
+Roboterarm-Mittenkalibrierung.mp4
 
 ### Teleoperation
 
@@ -988,7 +988,7 @@ Die Schlüssel (front, side ...) in `--robot.cameras` müssen exakt mit der Aufn
 
 Zum Debuggen kann jeder Windows-PC den Servo per USB programmieren, debuggen oder testen. Dazu die [Feetech-Software](https://www.feetechrc.com/software.html) herunterladen. Für Ubuntu-Systeme kann das [FT_SCServo_Debug_Qt-Tool](https://github.com/Kotakku/FT_SCServo_Debug_Qt) verwendet werden.
 
-[fddebug-master.zip]
+fddebug-master.zip
 
 Portnummer auswählen, Baudrate auf 1000000 setzen, öffnen und „Search" klicken
 

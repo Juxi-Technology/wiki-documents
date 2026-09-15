@@ -1,6 +1,6 @@
 ---
 title: "Informazioni sul prodotto"
-description: "CI1302 è un chip vocale intelligente di nuova generazione ad alte prestazioni con rete neurale, sviluppato da…"
+description: "Informazioni sul prodotto: modulo di interazione vocale IA con chip CI1302 di Chipintelli, riconoscimento vocale offline e oltre 110 comandi, con seriale e IIC."
 ---
 
 # Informazioni sul prodotto

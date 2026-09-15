@@ -1,6 +1,6 @@
 ---
 title: "Configuración (Windows)"
-description: "El brazo motriz negro utiliza un adaptador de alimentación de 5V6A"
+description: "Configuración del entorno XLeRobot en Windows: instalación de Miniconda, configuración de las fuentes de conda y creación del entorno virtual Python."
 ---
 
 # Configuración (Windows)

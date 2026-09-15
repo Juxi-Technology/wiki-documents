@@ -1,6 +1,6 @@
 ---
 title: "樹莓派"
-description: "本教程以樹莓派5主板，官方64位版本的鏡像爲例。"
+description: "IMU 慣導模組 I2C 通訊教程(樹莓派 5 版)：設備連接、驅動程式安裝與資料檢視校準。"
 ---
 
 # 樹莓派
@@ -44,7 +44,7 @@ sudo apt install -y python3-smbus2
 
 3.2傳輸文件
 
-[IMU_ROS2.zip]
+IMU_ROS2.zip
 
 如果還不會使用MobaXterm傳輸文件的朋友，請查看以下網頁MobaXterm詳細安裝和操作方法：[文件远程传输](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 

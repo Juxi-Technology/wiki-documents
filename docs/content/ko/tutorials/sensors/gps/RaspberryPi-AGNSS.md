@@ -149,7 +149,7 @@ type-c 케이블로 Raspberry Pi와 GPS 모듈을 연결하고, 명령 ls /dev |
 
 **3.2. 百度地图 ak 신청**
 
-문서 [百度地图 api 신청 튜토리얼]()를 참조하십시오
+문서 [百度地图 api 신청 튜토리얼](./RaspberryPi-Baidu-Map-API.md)를 참조하십시오
 
  
 

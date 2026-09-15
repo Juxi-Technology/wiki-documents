@@ -1,6 +1,6 @@
 ---
 title: Tutoriel d'exécution de l'exemple officiel de la main robotique
-description: "Téléchargez l'archive de code fournie avec ce tutoriel pour la démo, ou clonez le dépôt open source officiel https://github.com/pollen-robotics/AmazingHand.git ; le code officiel peut contenir des erreurs."
+description: "Exécuter l'exemple officiel de la main AmazingHand : installer Rust, uv et dora-rs, câbler la carte de commande des servos et lancer la démo."
 ---
 
 # Tutoriel d'exécution de l'exemple officiel de la main robotique
@@ -16,11 +16,11 @@ Téléchargez l'archive de code fournie avec ce tutoriel pour la démo, ou clone
 
 Archive de code Windows
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 Archive de code Linux
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 ```Plain Text
 git clone https://github.com/pollen-robotics/AmazingHand.git

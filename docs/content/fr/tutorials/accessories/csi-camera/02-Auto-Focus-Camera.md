@@ -1,6 +1,6 @@
 ---
 title: "Utilisation de la caméra autofocus"
-description: "L'image montre le résultat de la connexion de deux caméras CSI et d'une caméra USB : en général, une caméra C…"
+description: "Utiliser la caméra autofocus USB sous Linux sur Jetson : identifier les périphériques vidéo puis capturer et enregistrer avec GUVCView ou VLC."
 ---
 
 # Utilisation de la caméra autofocus

@@ -1,6 +1,6 @@
 ---
 title: "Raspberry Pi: AGNSS Positioning"
-description: "In this lesson, we will mainly learn to use a Raspberry Pi, a GPS module, and an AGNSS server to implement po…"
+description: "Raspberry Pi AGNSS positioning tutorial: request assistance data from an AGNSS server so the GPS/BeiDou module fixes faster in weak-signal areas."
 ---
 
 # Raspberry Pi: AGNSS Positioning
@@ -149,7 +149,7 @@ Use a type-c cable to connect the Raspberry Pi and the GPS module, run the comma
 
 **3.2. Apply for a Baidu Maps ak**
 
-Please see the document [Baidu Maps API Application Tutorial]()
+Please see the document [Baidu Maps API Application Tutorial](./RaspberryPi-Baidu-Map-API.md)
 
  
 

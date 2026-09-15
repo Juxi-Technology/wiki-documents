@@ -1,6 +1,6 @@
 ---
 title: "단계 1: 환경 구축(Linux)"
-description: "Miniforge를 사용하여 독립된 Python 환경을 만들고 LeRobot 및 AmazingHand 지원을 설치합니다. 본 페이지는 엄격한 순서대로 실행하며, 각 코드 블록은 통째로 복사할 수 …"
+description: "SO-ARM101과 AmazingHand 튜토리얼 단계 1의 Linux 편 — Miniforge로 Python 환경을 만들고 LeRobot 의존성을 설치합니다."
 ---
 
 

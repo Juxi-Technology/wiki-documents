@@ -1,6 +1,6 @@
 ---
 title: "Configuração (Ubuntu)"
-description: "O braço líder preto utiliza um adaptador de alimentação de 5V6A"
+description: "Configuração do ambiente XLeRobot no Ubuntu: instalação do Miniconda, alteração das fontes pip e conda e preparação do braço líder e seguidor."
 ---
 
 # Configuração (Ubuntu)

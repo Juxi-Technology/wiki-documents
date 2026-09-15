@@ -1,11 +1,11 @@
 ---
 title: "Module Info"
-description: "​ The GPS module is a high-performance BDS/GNSS positioning and navigation module based on the ATGM336H-5N. T…"
+description: "GPS/BeiDou module product information: the ATGM336H-5N based positioning module, its supported satellite systems, key features, and sensitivity."
 ---
 
 # Module Info
 
-​		The GPS module is a high-performance BDS/GNSS positioning and navigation module based on the ATGM336H-5N. The module supports multiple satellite navigation systems, including all satellites of China's BeiDou-2 and BeiDou-3, the United States' GPS, Russia's GLONASS, and Japan's QZSS. It can simultaneously receive satellite signals from the above satellite navigation systems and achieve combined positioning, navigation, and timing. The module has advantages such as high sensitivity, low power consumption, and low cost, and is suitable for vehicle navigation, handheld positioning, and wearable devices.
+		The GPS module is a high-performance BDS/GNSS positioning and navigation module based on the ATGM336H-5N. The module supports multiple satellite navigation systems, including all satellites of China's BeiDou-2 and BeiDou-3, the United States' GPS, Russia's GLONASS, and Japan's QZSS. It can simultaneously receive satellite signals from the above satellite navigation systems and achieve combined positioning, navigation, and timing. The module has advantages such as high sensitivity, low power consumption, and low cost, and is suitable for vehicle navigation, handheld positioning, and wearable devices.
 
 **1. Module Features:**
 

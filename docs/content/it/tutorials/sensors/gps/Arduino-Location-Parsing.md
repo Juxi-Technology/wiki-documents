@@ -1,6 +1,6 @@
 ---
 title: "Arduino: analisi posizione"
-description: "In questa lezione impareremo principalmente a utilizzare Arduino e il modulo GPS per implementare la funzione…"
+description: "Analisi della posizione GPS con Arduino UNO: leggere i dati dal modulo e analizzare le sentenze per ottenere e stampare latitudine e longitudine."
 ---
 
 # Arduino: analisi posizione

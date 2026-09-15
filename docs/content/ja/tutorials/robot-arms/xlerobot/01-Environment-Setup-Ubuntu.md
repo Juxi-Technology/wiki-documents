@@ -1,6 +1,6 @@
 ---
 title: "環境構築(Ubuntu)"
-description: "黒いリーダーアームは 5V6A 電源アダプタを使用します"
+description: "XLeRobot の環境構築チュートリアル(Ubuntu 版)。Miniconda と仮想環境の準備から LeRobot コードの導入、動作確認までの流れを解説します。"
 ---
 
 # 環境構築(Ubuntu)

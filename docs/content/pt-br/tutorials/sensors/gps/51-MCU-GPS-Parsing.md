@@ -1,6 +1,6 @@
 ---
 title: "51 MCU: análise GPS"
-description: "Nesta lição, vamos aprender principalmente a usar o microcontrolador 51 do modelo STC89C52RC e o módulo GPS p…"
+description: "Análise GPS com o microcontrolador 51 (STC89C52RC) e o módulo GPS e BeiDou ATGM336H-5N — ler os dados pela UART e imprimir as informações de posição."
 ---
 
 # 51 MCU: análise GPS

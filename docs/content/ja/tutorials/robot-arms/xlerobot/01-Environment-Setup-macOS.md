@@ -1,6 +1,6 @@
 ---
 title: "環境構築(macOS)"
-description: "黒いリーダーアームは 5V6A 電源アダプタを使用します"
+description: "XLeRobot の環境構築チュートリアル(macOS 版)。権限の付与、Miniconda と仮想環境の準備から LeRobot コードの導入までを解説します。"
 ---
 
 # 環境構築(macOS)

@@ -1,6 +1,6 @@
 ---
 title: "Autofokus-Kamera verwenden"
-description: "Das Ergebnis im Bild zeigt den Anschluss von zwei CSI-Kameras und einer USB-Kamera: Normalerweise wird für ei…"
+description: "Autofokus-Kamera am Jetson nutzen: Video-Geräte anzeigen und die Kamera mit GUVCView und VLC installieren, konfigurieren und testen."
 ---
 
 # Autofokus-Kamera verwenden

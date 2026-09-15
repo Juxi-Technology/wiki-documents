@@ -1,6 +1,6 @@
 ---
 title: "Panoramica dei casi multi-host"
-description: "1. Installare il driver CH341 (come amministratore)"
+description: "Panoramica degli esempi multi-host del modulo IMU: installare il driver CH341 su PC Windows e collegare il sensore di assetto a diversi host via seriale o I2C."
 ---
 
 # Panoramica dei casi multi-host

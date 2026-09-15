@@ -1,6 +1,6 @@
 ---
 title: Jetson Serial Communication
-description: "Note: The voice interaction module needs to be flashed with the factory firmware. If the voice chip has not been flashed with firmware after being rec"
+description: "KWS speech recognition module serial communication on Jetson: connect over USB, verify the serial port, and run the Python demo that reads wake word commands."
 ---
 
 # Jetson Serial Communication

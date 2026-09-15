@@ -1,6 +1,6 @@
 ---
 title: Guía de contribución
-description: Cómo contribuir al Wiki de JUXI
+description: "Guía de contribución al Wiki de Juxi Technology: preparación del entorno, cómo enviar tutoriales y correcciones, normas de contenido y flujo de Pull Request."
 ---
 
 # Guía de contribución

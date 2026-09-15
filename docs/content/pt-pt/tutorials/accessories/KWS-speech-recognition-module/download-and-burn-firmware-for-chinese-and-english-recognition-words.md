@@ -98,9 +98,9 @@ description: "O módulo já vem gravado de fábrica com o firmware de reconhecim
 
 4. Duas listas de protocolos de palavras de comando e transmissão são fornecidas aqui. Quem precisar pode fazer alterações de acordo com esta tabela. 
 
-    [命令词播报词协议列表V3_中文模板.xlsx]
+    命令词播报词协议列表V3_中文模板.xlsx
 
-    [命令词播报词协议列表V3_英文模板.xlsx]
+    命令词播报词协议列表V3_英文模板.xlsx
 
 ![Configuração do firmware – 2](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/3.png)
 
@@ -112,7 +112,7 @@ description: "O módulo já vem gravado de fábrica com o firmware de reconhecim
 
 #### Descarregar o pacote compactado do software de gravação do módulo de voz
 
-[语音模块固件烧录软件.7z]
+语音模块固件烧录软件.7z
 
 1. Abra o software após a descompactação
 
@@ -142,9 +142,9 @@ description: "O módulo já vem gravado de fábrica com o firmware de reconhecim
 
 #### Aqui estão os materiais de firmware preparados, que podem ser gravados diretamente
 
-[CI1302_中文_单麦_V00681_UART0_115200_2M.bin]
+CI1302_中文_单麦_V00681_UART0_115200_2M.bin
 
-[CI1302_英文_单麦_V00916_UART0_115200_2M.bin]
+CI1302_英文_单麦_V00916_UART0_115200_2M.bin
 
 
 

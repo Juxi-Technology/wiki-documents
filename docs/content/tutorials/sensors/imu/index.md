@@ -1,6 +1,6 @@
 ---
 title: High-precision IMU Attitude Sensor Usage Tutorial
-description: "1. Install the required Python libraries for the code"
+description: "High-precision IMU attitude sensor tutorial: install the Python library, set up a udev port mapping, and read attitude data over serial or I2C."
 ---
 
 # High-precision IMU Attitude Sensor Usage Tutorial

@@ -1,6 +1,6 @@
 ---
 title: "Flashen der Modul-Firmware"
-description: "Öffnen Sie im Anhang den Ordner des Brenntools für die Sprachchip-Firmware und klicken Sie auf „PACKUPDATETOO…"
+description: "Firmware des AI-Sprachinteraktionsmoduls flashen: Geräteanschluss, Brennsoftware öffnen und Schritte zum Aktualisieren des Sprachchips."
 ---
 
 # Flashen der Modul-Firmware

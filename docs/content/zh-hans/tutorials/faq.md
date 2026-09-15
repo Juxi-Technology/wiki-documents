@@ -1,6 +1,6 @@
 ---
 title: 常见问题 FAQ
-description: 钜犀科技产品常见问题合集——机械臂、传感器、配件安装与调试高频问题汇总
+description: "钜犀科技产品常见问题 FAQ——机械臂、IMU 惯导与传感器等安装调试高频问题的解决方案。"
 keywords: [faq, 常见问题, 故障排除, troubleshooting]
 ---
 

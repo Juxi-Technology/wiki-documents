@@ -1,6 +1,6 @@
 ---
 title: 关于我们
-description: 钜犀科技(Juxi Technology)——来自深圳前海的开源机器人硬件公司
+description: "钜犀科技(Juxi Technology)公司简介——立足深圳前海的开源机器人硬件公司,专注具身智能、边缘 AI 与多模态感知。"
 ---
 
 # 关于我们

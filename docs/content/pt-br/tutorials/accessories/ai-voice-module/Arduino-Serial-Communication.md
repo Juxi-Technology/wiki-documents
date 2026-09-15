@@ -1,6 +1,6 @@
 ---
 title: "Arduino: Comunicação por porta serial"
-description: "1. Abra o arquivo UARTVoice.ino"
+description: "Exemplo de comunicação serial entre o módulo de interação por voz IA da Juxi Technology e o Arduino — formato do quadro do protocolo e teste pela porta serial."
 ---
 
 # Arduino: Comunicação por porta serial

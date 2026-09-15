@@ -1,6 +1,6 @@
 ---
 title: "Arduino: 串口通讯"
-description: "1. 打开 UARTVoice.ino 文件"
+description: "钜犀科技 AI 语音交互模块教程——Arduino 通过串口与模块通信,读取并播报语音指令。"
 ---
 
 # Arduino: 串口通讯

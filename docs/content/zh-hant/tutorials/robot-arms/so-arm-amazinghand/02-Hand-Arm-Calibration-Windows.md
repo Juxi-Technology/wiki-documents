@@ -1,6 +1,6 @@
 ---
 title: "階段二:靈巧手與雙臂校準(Windows)"
-description: "本階段對三個裝置進行標定：主動臂、從動臂、AmazingHand 手。標定是遙操作正確性的前提，必須完成本階段才能進入遙操作。"
+description: "SO-ARM101 與 AmazingHand 的階段二校準教程(Windows)——以裝置管理員確認 COM 埠,依序校準主動臂、從動臂與靈巧手。"
 ---
 
 

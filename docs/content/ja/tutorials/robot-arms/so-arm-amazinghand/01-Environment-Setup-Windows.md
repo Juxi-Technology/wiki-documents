@@ -1,6 +1,6 @@
 ---
 title: "ステージ1：環境構築（Windows）"
-description: "Miniconda を使用して独立した Python 環境を作成し、LeRobot および AmazingHand サポートをインストールします。本ページは厳密な順序で実行します。各コードブロックはそのままコピーできま…"
+description: "SO-ARM101 と AmazingHand の LeRobot 環境構築(Windows 版)。Miniconda で Python 環境と LeRobot 一式を導入します。"
 ---
 
 

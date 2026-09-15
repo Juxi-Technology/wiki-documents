@@ -1,6 +1,6 @@
 ---
 title: "Fase 3: Teleoperación (Windows)"
-description: "En esta fase se inicia el bucle cerrado de teleoperación: el brazo maestro controla el movimiento del brazo e…"
+description: "Fase 3 en Windows: inicia la teleoperación del SO-ARM101 con AmazingHand, verifica la dirección de las articulaciones y el seguimiento proporcional."
 ---
 
 

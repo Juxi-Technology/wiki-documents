@@ -1,6 +1,6 @@
 ---
 title: Jetson Orin での PyTorch 非互換問題
-description: Jetson Orin で PyTorch の GPU が使えない場合の対処法
+description: "Jetson Orin 環境で PyTorch を使うときの非互換問題まとめ。GPU が認識されない場合やライブラリ不足の対処法を解説します。"
 ---
 
 # Jetson Orin での PyTorch 非互換問題

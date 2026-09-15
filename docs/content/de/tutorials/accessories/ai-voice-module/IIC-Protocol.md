@@ -1,6 +1,6 @@
 ---
 title: "IIC-Protokoll"
-description: "Hinweis: Die Stromversorgung des Host-Geräts und des Sprachinteraktionsmoduls kann unterschiedlich sein, aber…"
+description: "IIC-Protokoll des AI-Sprachinteraktionsmoduls: Registerfunktionen, Geräteadresse und Tabellen zum Abrufen von Befehlswörtern und Ansagephrasen."
 ---
 
 # IIC-Protokoll

@@ -7,7 +7,7 @@ description: "Dieses Beispiel verwendet das Arduino-Nano-Entwicklungsboard, eine
 
 Dieses Beispiel verwendet das Arduino-Nano-Entwicklungsboard, einen Windows-PC, mehrere Jumper-Kabel, den IMU-Lagesensor und ein USB-TTL-Modul.
 
-[Arduino.rar]
+Arduino.rar
 
 
 

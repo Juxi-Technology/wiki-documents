@@ -1,6 +1,6 @@
 ---
 title: "Arduino: IIC通訊"
-description: "1. 開啟 IICVoice.ino 檔案"
+description: "AI 語音互動模組教程(Arduino 平台)——IIC 接線、程式編譯上傳與命令詞 ID 讀取測試。"
 ---
 
 # Arduino: IIC通訊

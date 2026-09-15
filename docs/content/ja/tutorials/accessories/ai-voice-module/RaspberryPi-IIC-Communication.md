@@ -1,6 +1,6 @@
 ---
 title: "ラズベリーパイ: IIC 通信"
-description: "選択 Interface Options -> I2C -> Yes"
+description: "AI 音声対話モジュールとラズベリーパイを IIC 接続する手順。I2C の有効化、配線、サンプルコードの実行と出力形式を解説します。"
 ---
 
 # ラズベリーパイ: IIC 通信

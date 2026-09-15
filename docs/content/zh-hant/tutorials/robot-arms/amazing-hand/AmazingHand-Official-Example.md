@@ -1,6 +1,6 @@
 ---
 title: "官方示例運行教程"
-description: "建議下載本使用教程下的代碼壓縮包進行Demo示例演示，或克隆 官方開源代碼倉庫 https://github.com/pollen-robotics/AmazingHand.git ，官方開源代碼或有錯漏請務必注意。"
+description: "AmazingHand 官方示例運行教程：代碼下載、環境安裝、接線與手部追蹤示範的完整操作步驟。"
 ---
 
 # 官方示例運行教程
@@ -14,11 +14,11 @@ description: "建議下載本使用教程下的代碼壓縮包進行Demo示例�
 
 Windows 代碼壓縮包
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 Linux 代碼壓縮包
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 ```Plain Text
 git clone https://github.com/pollen-robotics/AmazingHand.git

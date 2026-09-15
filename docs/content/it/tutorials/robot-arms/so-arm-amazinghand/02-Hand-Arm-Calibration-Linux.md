@@ -1,6 +1,6 @@
 ---
 title: "Fase 2: calibrazione mano e bracci (Linux)"
-description: "In questa fase si calibrano i tre dispositivi: il braccio master, il braccio slave e la mano AmazingHand. La …"
+description: "Fase 2 del tutorial SO-ARM101 e AmazingHand su Linux: calibrare il braccio master, il braccio slave e la mano AmazingHand, inclusa la direzione della pinza."
 ---
 
 

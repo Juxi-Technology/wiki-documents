@@ -1,6 +1,6 @@
 ---
 title: "JetCam の使用"
-description: "JetCamの使用"
+description: "Jetson 向けカメラライブラリ JetCam の使い方。インストールから CSI カメラの映像取得と表示までを解説します。"
 ---
 
 # JetCam の使用

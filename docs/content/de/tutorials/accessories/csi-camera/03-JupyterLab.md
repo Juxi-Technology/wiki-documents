@@ -1,6 +1,6 @@
 ---
 title: "Jupyter Lab verwenden"
-description: "Installieren Sie Jupyter Lab mit dem folgenden Befehl: Wenn der Download von Jupyter Lab langsam ist, können …"
+description: "Jupyter Lab auf dem Jetson installieren und starten: Standardbrowser festlegen und Notebooks für die Kameraarbeit verwenden."
 ---
 
 # Jupyter Lab verwenden

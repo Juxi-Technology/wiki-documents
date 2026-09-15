@@ -1,6 +1,6 @@
 ---
 title: "Comunicação Serial Jetson Nano"
-description: "Nota: o módulo de interação por voz precisa ser gravado com o firmware de fábrica. Se o chip de voz ainda não tiver sido gravado com firmware após o recebimento, não é necessário gravá-lo."
+description: "Comunicação serial do módulo de reconhecimento de voz KWS com o Jetson Nano: configure a porta e leia as palavras de ativação e os comandos reconhecidos."
 ---
 
 # Comunicação Serial Jetson Nano

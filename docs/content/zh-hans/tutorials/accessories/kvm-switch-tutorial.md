@@ -1,6 +1,6 @@
 ---
 title: "KVM 切换器"
-description: "KVM切换器包含HUB功能、TTL串口、蓝牙模块"
+description: "钜犀科技 KVM 切换器教程——USB HUB、TTL 串口与蓝牙模块功能说明,支持双端设备切换。"
 ---
 
 # KVM 切换器

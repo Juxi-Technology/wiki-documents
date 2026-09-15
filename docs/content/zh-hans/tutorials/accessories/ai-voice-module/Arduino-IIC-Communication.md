@@ -1,6 +1,6 @@
 ---
 title: "Arduino: IIC通讯"
-description: "1. 打开 IICVoice.ino 文件"
+description: "钜犀科技 AI 语音交互模块教程——Arduino 通过 IIC 总线与该模块通信,识别语音指令。"
 ---
 
 # Arduino: IIC通讯

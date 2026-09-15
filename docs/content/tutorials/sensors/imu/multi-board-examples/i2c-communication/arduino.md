@@ -7,7 +7,7 @@ description: "This routine uses an Arduino Nano development board, a Windows com
 
 This routine uses an Arduino Nano development board, a Windows computer, several DuPont wires, and an IMU attitude sensor. 
 
-[Arduino.rar]
+Arduino.rar
 
 ## 1. Connect the device
 

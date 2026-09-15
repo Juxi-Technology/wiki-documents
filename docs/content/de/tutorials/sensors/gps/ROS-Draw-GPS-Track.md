@@ -1,6 +1,6 @@
 ---
 title: "ROS: GPS-Spur zeichnen"
-description: "Eine direkte Visualisierung der GPS-Informationen ist nicht möglich; wir müssen das Koordinatensystem umrechn…"
+description: "ROS: GPS-Spur in Echtzeit zeichnen und mit RViz2 anzeigen, mit Implementierungsprinzip, Startschritten und Analyse des Launch-Codes."
 ---
 
 # ROS: GPS-Spur zeichnen

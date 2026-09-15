@@ -1,6 +1,6 @@
 ---
 title: "ROS : tracer la trace GPS"
-description: "La visualisation directe des informations GPS est impossible ; nous devons convertir le système de coordonnée…"
+description: "Tracer la trajectoire du module GPS BeiDou sous ROS2 et l'afficher dans RViz2 : conversion des coordonnées et nœud de visualisation de la trace."
 ---
 
 # ROS : tracer la trace GPS

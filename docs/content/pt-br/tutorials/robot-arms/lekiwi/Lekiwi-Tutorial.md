@@ -10,7 +10,7 @@ description: "O braço ativo preto usa um adaptador de energia de 5V 6A, enquant
 
 O braço ativo preto usa um adaptador de energia de 5V 6A, enquanto o braço passivo branco usa um adaptador de energia de 12V 5A 
 
-[lerobot-Lekiwi.zip]
+lerobot-Lekiwi.zip
 
 O código deste repositório de tutorial é mantido na versão estável do Lerobot testada antes de 1º de março de 2026. Atualmente, o Hugging Face fez uma atualização muito significativa do Lerobot, adicionando um grande número de novos recursos. Se você quiser acompanhar o tutorial mais recente, siga a [documentação oficial](https://huggingface.co/docs/lerobot/lekiwi). 
 

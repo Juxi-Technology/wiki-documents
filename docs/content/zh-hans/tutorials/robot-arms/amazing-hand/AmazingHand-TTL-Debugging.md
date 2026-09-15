@@ -52,7 +52,7 @@ description: "首先，下载\"灵巧手调试.zip\"压缩包，解压后可通�
 
 2、使用舵机厂家提供的上位机软件FD1.9.8.2进行设置
 
-[FD.rar]
+FD.rar
 
 ![2.设置舵机ID – 2](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTQ0NjA3ODFjYjdjN2VmNThiOTFhNTdhYzE1YWM3MjFfYmM0MTQ3ZWMwNDVmYzA0Y2E5ODZiNTlkMTBmM2NiZWFfSUQ6NzU4NzMzNTExMTU2MjIxODY3Nl8xNzgwMDUxNjg2OjE3ODAxMzgwODZfVjM)
 

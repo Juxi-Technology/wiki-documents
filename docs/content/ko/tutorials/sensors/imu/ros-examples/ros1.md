@@ -1,6 +1,6 @@
 ---
 title: ROS1 응용
-description: "시스템 구성: ubuntu20.04"
+description: "Ubuntu 20.04의 ROS1 noetic 환경에서 IMU 자세 센서 사용 — 패키지 빌드와 노드 실행, RViz 시각화 방법."
 ---
 
 # ROS1 응용

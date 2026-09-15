@@ -1,6 +1,6 @@
 ---
 title: "Tutorial de depuración STS3215 & SCS0009"
-description: "Software host Feetech FD https://gitee.com/ftservo"
+description: "Depuración de los servos de bus serie Feetech STS3215 y SCS0009: software host FD, archivos de depuración y análisis de tablas de memoria."
 ---
 
 # Tutorial de depuración STS3215 & SCS0009
@@ -14,6 +14,6 @@ description: "Software host Feetech FD https://gitee.com/ftservo"
 
 ![image – 2](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDI5NDU1ZWU2YzZhMTM1NzM2OTdjNzU0YWUxNmY3NzlfMzE3ZmQwN2I2NjRiYWQ0ZGY1MTk4ZjdlMWE1MDkxYjJfSUQ6NzYyNTg0ODc3ODM4NjExNTUyNF8xNzgwNjYzNDMwOjE3ODA3NDk4MzBfVjM)
 
-[Archivos de depuración de servo STS3215.zip]
+Archivos de depuración de servo STS3215.zip
 
-[Archivos de depuración de servo SCS009.zip]
+Archivos de depuración de servo SCS009.zip

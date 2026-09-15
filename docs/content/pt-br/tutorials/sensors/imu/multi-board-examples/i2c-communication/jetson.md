@@ -1,6 +1,6 @@
 ---
 title: "Jetson"
-description: "Este tutorial usa a placa-mãe Jetson Orin NX como exemplo."
+description: "IMU com Jetson Orin NX via I2C: conecte o sensor de atitude à interface I2C, verifique o dispositivo e leia os dados de atitude."
 ---
 
 # Jetson
@@ -44,7 +44,7 @@ sudo apt install -y python3-smbus2
 
 3.2 Transferir Arquivos
 
-[IMU_ROS2.zip]
+IMU_ROS2.zip
 
 Amigos que ainda não estão familiarizados com o uso do MobaXterm para transferir arquivos, consultem a página a seguir para obter instruções detalhadas de instalação e operação do MobaXterm:[文件远程传输](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 

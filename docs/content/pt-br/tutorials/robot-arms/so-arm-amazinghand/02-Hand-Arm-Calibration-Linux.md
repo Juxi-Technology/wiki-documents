@@ -1,6 +1,6 @@
 ---
 title: "Etapa 2: calibração de mão e braços (Linux)"
-description: "Esta etapa calibra três dispositivos: o braço líder, o braço seguidor e a mão AmazingHand. A calibração é o p…"
+description: "Etapa 2 do tutorial SO-ARM101 + AmazingHand no Linux — calibrar o braço líder, o braço seguidor e a mão AmazingHand com as GUIs dedicadas do LeRobot."
 ---
 
 

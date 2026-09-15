@@ -1,6 +1,6 @@
 ---
 title: 關於我們
-description: 鉅犀科技(Juxi Technology)——來自深圳前海的開源機器人硬件公司
+description: "鉅犀科技(Juxi Technology)——立足深圳前海的開源機器人硬體公司,專注物理 AI 與邊緣 AI。"
 ---
 
 # 關於我們

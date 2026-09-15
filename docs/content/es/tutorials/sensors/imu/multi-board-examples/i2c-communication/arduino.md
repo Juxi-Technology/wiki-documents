@@ -7,7 +7,7 @@ description: "Este ejemplo usa la placa de desarrollo Arduino Nano, un PC Window
 
 Este ejemplo usa la placa de desarrollo Arduino Nano, un PC Windows, varios cables de puente y el sensor de actitud IMU.
 
-[Arduino.rar]
+Arduino.rar
 
 
 

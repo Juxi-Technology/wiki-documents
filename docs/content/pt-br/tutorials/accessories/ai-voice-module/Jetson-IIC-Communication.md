@@ -1,6 +1,6 @@
 ---
 title: "Jetson: Comunicação IIC"
-description: "Faça logout e login novamente para que tenha efeito."
+description: "Módulo de interação por voz no Jetson: controle via comunicação IIC, com instalação de dependências, grupos de usuários e cabeamento."
 ---
 
 # Jetson: Comunicação IIC

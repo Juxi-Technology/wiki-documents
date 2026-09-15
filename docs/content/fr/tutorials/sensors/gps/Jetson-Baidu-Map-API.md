@@ -1,6 +1,6 @@
 ---
 title: "Jetson : API Baidu Maps"
-description: "1. Méthode d'inscription"
+description: "Afficher la position du module GPS BeiDou sur Baidu Maps depuis Jetson : créer un compte développeur, obtenir la clé d'API et l'intégrer au programme."
 ---
 
 # Jetson : API Baidu Maps

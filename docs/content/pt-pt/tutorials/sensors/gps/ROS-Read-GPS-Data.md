@@ -1,6 +1,6 @@
 ---
 title: "ROS: leitura de dados GPS"
-description: "No terminal, introduza,"
+description: "Leitura de dados GPS no ROS2: arranque do nó de controlo NMEA, consulta dos tópicos publicados e obtenção dos dados de latitude, longitude e altitude."
 ---
 
 # ROS: leitura de dados GPS

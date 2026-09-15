@@ -1,6 +1,6 @@
 ---
 title: "Avvio rapido"
-description: "Il firmware con funzione di riconoscimento vocale è già stato caricato in fabbrica, quindi l'utente può prova…"
+description: "Avvio rapido del modulo di interazione vocale IA: firmware precaricato in fabbrica, basta alimentarlo via USB Type-C per attivarlo e provare le risposte vocali."
 ---
 
 # Avvio rapido

@@ -1,6 +1,6 @@
 ---
 title: "Tutorial de uso do SO-ARM101 + AmazingHand"
-description: "Este tutorial aborda o fluxo completo de teleoperação, coleta de dados e treinamento para reproduzir o braço …"
+description: "Tutorial do SO-ARM101 + AmazingHand da Juxi Technology — configuração, calibração, teleoperação, coleta de dados, treinamento e implantação no LeRobot."
 ---
 
 

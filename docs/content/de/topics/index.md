@@ -1,6 +1,6 @@
 ---
 title: Themen
-description: Juxi Technology Wiki — Themen
+description: "Themen des Juxi Technology Wiki: JetPack-Setup, Edge-KI-Deployment, Robotik-Tutorials und Produktwissen als Einstieg in die Technologiebereiche."
 ---
 
 # Themen

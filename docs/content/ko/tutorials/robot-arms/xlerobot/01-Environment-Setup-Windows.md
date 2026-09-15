@@ -1,6 +1,6 @@
 ---
 title: "환경 구축(Windows)"
-description: "검정색 리더 암은 5V6A 전원 어댑터를 사용합니다"
+description: "XLeRobot 양팔 이동 로봇 환경 구축 가이드의 Windows 편 — Miniconda 설치, conda 미러 설정, LeRobot 코드 설치 절차."
 ---
 
 # 환경 구축(Windows)

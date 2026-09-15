@@ -1,6 +1,6 @@
 ---
 title: "Product Information"
-description: "CI1302 is a new-generation high-performance neural-network intelligent voice chip developed by Chipintelli, i…"
+description: "Product information for the AI Voice Interaction Module: CI1302 chip specs, 110+ preset commands, working principle, and hardware interfaces."
 ---
 
 # Product Information

@@ -1,6 +1,6 @@
 ---
 title: "硬件設置"
-description: "本章節詳細介紹產品硬體連接方法。"
+description: "鉅犀科技產品硬體連接說明：涵蓋 USB-C、GPIO、HDMI 等介面與電源連接步驟及注意事項。"
 ---
 
 

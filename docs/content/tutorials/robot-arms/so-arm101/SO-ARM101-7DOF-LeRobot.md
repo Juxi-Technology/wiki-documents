@@ -1,6 +1,6 @@
 ---
 title: SO-ARM101 7-DOF Modification and LeRobot Tutorial
-description: "The servo ID mapping, code changes and file replacement method, calibration notes, and usage in LeRobot after modifying the SO-ARM101 from 6 servos to 7 degrees of freedom (adding wrist_yaw)."
+description: "SO-ARM101 7-DOF modification and LeRobot tutorial: servo ID mapping, code changes, calibration notes, and the workflow for the added wrist yaw joint."
 ---
 
 # SO-ARM101 7-DOF Modification and LeRobot Tutorial

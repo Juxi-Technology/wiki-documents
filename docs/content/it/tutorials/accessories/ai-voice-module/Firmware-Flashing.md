@@ -1,6 +1,6 @@
 ---
 title: "Flash del firmware del modulo"
-description: "Aprire la cartella \"Strumento di flashing del firmware del chip vocale\" negli allegati e fare clic su ”PACKUP…"
+description: "Come eseguire il flash del firmware sul modulo vocale IA: collegare il dispositivo e usare lo strumento di aggiornamento per il chip CI1302."
 ---
 
 # Flash del firmware del modulo

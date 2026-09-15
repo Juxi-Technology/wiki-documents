@@ -1,6 +1,6 @@
 ---
 title: "Configuration (Ubuntu)"
-description: "Le bras meneur noir utilise un adaptateur secteur 5V6A"
+description: "Configuration de l'environnement XLeRobot sous Ubuntu : installer Miniconda, basculer les sources pip et conda puis créer l'environnement virtuel LeRobot."
 ---
 
 # Configuration (Ubuntu)

@@ -1,6 +1,6 @@
 ---
 title: "Tutorial di debug STS3215 & SCS0009"
-description: "Software host Feetech FD https://gitee.com/ftservo"
+description: "Debug dei servomotori Feetech STS3215 e SCS0009: scaricare il software host FD e i file di configurazione per testare e regolare i servo a bus seriale."
 ---
 
 # Tutorial di debug STS3215 & SCS0009
@@ -14,6 +14,6 @@ description: "Software host Feetech FD https://gitee.com/ftservo"
 
 ![image – 2](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDI5NDU1ZWU2YzZhMTM1NzM2OTdjNzU0YWUxNmY3NzlfMzE3ZmQwN2I2NjRiYWQ0ZGY1MTk4ZjdlMWE1MDkxYjJfSUQ6NzYyNTg0ODc3ODM4NjExNTUyNF8xNzgwNjYzNDMwOjE3ODA3NDk4MzBfVjM)
 
-[File di debug servomotore STS3215.zip]
+File di debug servomotore STS3215.zip
 
-[File di debug servomotore SCS009.zip]
+File di debug servomotore SCS009.zip

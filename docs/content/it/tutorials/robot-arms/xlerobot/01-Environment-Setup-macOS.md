@@ -1,6 +1,6 @@
 ---
 title: "Configurazione (macOS)"
-description: "Il braccio leader nero utilizza un adattatore di alimentazione 5V6A"
+description: "XLeRobot: configurazione dell'ambiente su macOS con concessione dei permessi, installazione di Miniconda e ambiente Python per LeRobot."
 ---
 
 # Configurazione (macOS)

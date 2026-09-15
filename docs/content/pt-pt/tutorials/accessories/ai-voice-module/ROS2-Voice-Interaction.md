@@ -1,6 +1,6 @@
 ---
 title: "Interação por voz ROS2"
-description: "O módulo de interação por voz AI suporta os seguintes três modos de cablagem:"
+description: "Interação por voz em ROS2 com o módulo de voz AI: ambiente em Ubuntu 22.04 com ROS Humble e deteção automática dos modos de ligação série e I2C."
 ---
 
 # Interação por voz ROS2

@@ -1,11 +1,11 @@
 ---
 title: "Informazioni modulo"
-description: "​ Il modulo GPS è un modulo di posizionamento e navigazione BDS/GNSS ad alte prestazioni basato sull'ATGM336H…"
+description: "Informazioni sul modulo GPS: chip ATGM336H-5N, posizionamento combinato GPS, BeiDou, GLONASS e QZSS, specifiche, pinout e applicazioni consigliate."
 ---
 
 # Informazioni modulo
 
-​		Il modulo GPS è un modulo di posizionamento e navigazione BDS/GNSS ad alte prestazioni basato sull'ATGM336H-5N. Il modulo supporta molteplici sistemi di navigazione satellitare, tra cui tutti i satelliti BeiDou-2 e BeiDou-3 della Cina, il GPS degli Stati Uniti, il GLONASS della Russia e il QZSS del Giappone; è in grado di ricevere contemporaneamente i segnali satellitari dei suddetti sistemi di navigazione satellitare e di realizzare posizionamento, navigazione e temporizzazione combinati. Il modulo presenta vantaggi quali alta sensibilità, basso consumo e basso costo ed è adatto a navigazione veicolare, posizionamento portatile e dispositivi indossabili.
+		Il modulo GPS è un modulo di posizionamento e navigazione BDS/GNSS ad alte prestazioni basato sull'ATGM336H-5N. Il modulo supporta molteplici sistemi di navigazione satellitare, tra cui tutti i satelliti BeiDou-2 e BeiDou-3 della Cina, il GPS degli Stati Uniti, il GLONASS della Russia e il QZSS del Giappone; è in grado di ricevere contemporaneamente i segnali satellitari dei suddetti sistemi di navigazione satellitare e di realizzare posizionamento, navigazione e temporizzazione combinati. Il modulo presenta vantaggi quali alta sensibilità, basso consumo e basso costo ed è adatto a navigazione veicolare, posizionamento portatile e dispositivi indossabili.
 
 **1. Caratteristiche del modulo:**
 

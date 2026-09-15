@@ -1,6 +1,6 @@
 ---
 title: "Uso do JetCam"
-description: "Uso do JetCam"
+description: "Uso da biblioteca JetCam da NVIDIA no Jetson — captura com câmera CSI (uma ou várias) e câmera USB em Python, com explicação do código principal."
 ---
 
 # Uso do JetCam

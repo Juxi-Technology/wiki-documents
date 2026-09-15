@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-description: "Welcome to Juxi Technology products! This tutorial will help you get started quickly."
+description: "Getting started guide in the tutorials section: connect a Juxi Technology product over USB, install the software, and complete your first setup steps."
 ---
 
 

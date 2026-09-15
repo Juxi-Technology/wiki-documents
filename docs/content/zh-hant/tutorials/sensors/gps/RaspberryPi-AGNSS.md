@@ -149,7 +149,7 @@ GPS模組採用的是UART通訊或USB通訊，這裏以USB通訊為例。
 
 **3.2. 申請百度地圖ak**
 
-請看文檔 [百度地圖api申請教程]()
+請看文檔 [百度地圖api申請教程](./RaspberryPi-Baidu-Map-API.md)
 
  
 

@@ -1,6 +1,6 @@
 ---
 title: 机器人学习专题
-description: 基于 LeRobot 的全栈机器人学习技术
+description: "机器人学习技术专题——基于 LeRobot 与 SO-ARM101 的数据采集、模型训练与边缘部署全栈方案。"
 ---
 
 # 机器人学习专题

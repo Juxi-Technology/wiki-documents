@@ -1,6 +1,6 @@
 ---
 title: "Configuración (Ubuntu)"
-description: "El brazo motriz negro utiliza un adaptador de alimentación de 5V6A"
+description: "Configuración del entorno XLeRobot en Ubuntu: instalación de Miniconda, cambio de las fuentes de pip y conda y creación del entorno virtual Python."
 ---
 
 # Configuración (Ubuntu)

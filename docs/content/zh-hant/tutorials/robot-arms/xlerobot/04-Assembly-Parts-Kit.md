@@ -69,7 +69,7 @@ sudo chmod 666 /dev/ttyACM0
 
 ![圖 6](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/6.png)
 
-## 🧑‍🦼‍➡ 輪式底座
+## 🧑🦼➡ 輪式底座
 
 > 如果你已經有一個Lekiwi底座，請拆下電池、伺服馬達支架等。底板只需安裝3個帶輪子的伺服馬達(保留接線)。
 > 

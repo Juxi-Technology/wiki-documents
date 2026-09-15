@@ -1,6 +1,6 @@
 ---
 title: "Stage 1: Environment Setup (Windows)"
-description: "Use Miniconda to create an isolated Python environment and install LeRobot with AmazingHand support. Run this…"
+description: "Stage 1 environment setup on Windows: install Miniconda by command line and create a Python environment with the customized LeRobot for AmazingHand."
 ---
 
 

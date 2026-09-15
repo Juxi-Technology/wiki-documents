@@ -7,7 +7,7 @@ description: "Este exemplo usa uma placa núcleo STM32F103C8T6, um computador Wi
 
 Este exemplo usa uma placa núcleo STM32F103C8T6, um computador Windows, alguns fios Dupont e um sensor de atitude IMU. 
 
-[STM32.zip]
+STM32.zip
 
 Use o software Keil5 para abrir o USART.uvprojx e grave o programa na placa núcleo STM32F103C8T6 
 
@@ -23,9 +23,9 @@ Consulte o código-fonte nos materiais para ver o código específico.
 
 ```Python
 //解析环形缓冲中的数据，提取完整帧并更新缓存
-​
+
 //Process RX ring buffer, parse frames and update internal cache
-​
+
 void IMU_UART_Process(void)
 {
     enum {
@@ -118,8 +118,8 @@ void IMU_UART_Process(void)
         }
     }
 }
-​
-​
+
+
 /* ---------- 解析数据帧 / Parse one complete frame ---------- */
 static void _parse_frame_data(uint8_t frame_function, const uint8_t *frame_data)
 {

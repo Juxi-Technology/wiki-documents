@@ -1,6 +1,6 @@
 ---
 title: "Jetson CSI Camera Setup"
-description: "Press the Down arrow key to select Configure Jetson 24pin CSI Connector. Then press Enter to proceed to the n…"
+description: "Jetson CSI camera setup guide: configure the 24-pin CSI connector with jetson-io, save pin changes, and check video devices for IMX219 cameras."
 ---
 
 # Jetson CSI Camera Setup

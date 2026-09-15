@@ -1,6 +1,6 @@
 ---
 title: SO-ARM101 7-DOF-Umbau und LeRobot-Nutzung
-description: "Nach dem Umbau des SO-ARM101 von 6 Servos auf 7 Freiheitsgrade (neues Gelenk wrist_yaw): Servo-ID-Zuordnung, Codeänderungen und Ersetzungsmethode, Hinweise zur Kalibrierung sowie die Nutzung mit LeRobot."
+description: "SO-ARM101 von 6 auf 7 Freiheitsgrade umbauen und mit LeRobot nutzen: Gelenkreihenfolge, Codeänderungen, Kalibrierung und Deployment."
 ---
 
 # SO-ARM101 7-DOF-Umbau und LeRobot-Nutzung

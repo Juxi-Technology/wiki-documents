@@ -1,6 +1,6 @@
 ---
 title: "Início rápido"
-description: "O firmware com a função de reconhecimento de fala já vem gravado de fábrica, portanto o usuário pode experime…"
+description: "Início rápido do módulo de interação por voz IA da Juxi Technology — ativar com a palavra de ativação de fábrica e testar o reconhecimento de fala."
 ---
 
 # Início rápido

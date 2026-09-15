@@ -1,6 +1,6 @@
 ---
 title: "RDK: IIC-Kommunikation"
-description: "Dieses Repository stellt Python-Beispielcode für die Kommunikation zwischen der Plattform RDK X5 (Raspberry P…"
+description: "AI-Sprachinteraktionsmodul an der RDK X5 über IIC anbinden: Python-Beispielcode, Hardwareanschluss und Umgebungskonfiguration."
 ---
 
 # RDK: IIC-Kommunikation

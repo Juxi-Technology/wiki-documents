@@ -1,6 +1,6 @@
 ---
 title: "Fase 6: deployment modello (Linux)"
-description: "In questa fase si carica la politica addestrata per far eseguire il compito in autonomia al robot e si regist…"
+description: "Fase 6 del tutorial SO-ARM101 e AmazingHand su Linux: caricare la politica addestrata, far eseguire il compito in autonomia al robot e valutare i risultati."
 ---
 
 

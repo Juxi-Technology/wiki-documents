@@ -1,6 +1,6 @@
 ---
 title: "Flashage du micrologiciel du module"
-description: "Ouvrez le dossier « Outil de flashage du micrologiciel de la puce vocale » dans les pièces jointes et cliquez…"
+description: "Flashage du micrologiciel de la puce vocale CI1302 : connexion de l'appareil, sélection du micrologiciel d'usine et mise à niveau via l'outil dédié."
 ---
 
 # Flashage du micrologiciel du module

@@ -1,6 +1,6 @@
 ---
 title: "ROS: 사전 준비"
-description: "(1) 워크스페이스를 구축한 후, gpssrc 폴더 안의 내용을 워크스페이스의 src 안에 복사하고, 그런 다음 colcon build로 컴파일합니다. 오류가 나타나지 않으면 컴파일이 통과된 것입…"
+description: "ROS GPS 튜토리얼 사전 준비 — 워크스페이스에 GPS 소스를 복사해 colcon build로 컴파일하고 시리얼 포트를 바인딩합니다."
 ---
 
 # ROS: 사전 준비

@@ -10,7 +10,7 @@ description: "Guide complet du robot mobile Lekiwi basé sur LeRobot : installat
 
 Le bras leader (noir) utilise un adaptateur 5V 6A, tandis que le bras follower (blanc) utilise un adaptateur 12V 5A
 
-[lerobot-Lekiwi.zip]
+lerobot-Lekiwi.zip
 
 Le code de ce dépôt de tutoriel est maintenu à la version stable de Lerobot testée avant le 1er mars 2026. Actuellement, Hugging Face a considérablement mis à jour Lerobot, en ajoutant un grand nombre de nouvelles fonctions. Si vous souhaitez bénéficier du tutoriel le plus récent, suivez la [documentation officielle](https://huggingface.co/docs/lerobot/lekiwi) pour les opérations.
 

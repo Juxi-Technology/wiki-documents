@@ -1,6 +1,6 @@
 ---
 title: "Arduino: IIC Communication"
-description: "1. Open the IICVoice.ino file"
+description: "Arduino IIC communication with the AI Voice Interaction Module: wire it to an Arduino UNO over I2C and print the recognized command IDs on the serial monitor."
 ---
 
 # Arduino: IIC Communication

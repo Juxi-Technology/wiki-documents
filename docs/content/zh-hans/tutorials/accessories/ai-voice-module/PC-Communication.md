@@ -1,6 +1,6 @@
 ---
 title: "PC通讯"
-description: "滑动开关移动到STC8串口模式"
+description: "钜犀科技 AI 语音交互模块教程——在 PC 串口助手上验证语音识别与播报,查看协议输出。"
 ---
 
 # PC通讯

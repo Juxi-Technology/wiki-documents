@@ -1,6 +1,6 @@
 ---
 title: "Arduino: Serial Port Communication"
-description: "1. Open the UARTVoice.ino file"
+description: "Arduino serial port communication with the AI Voice Interaction Module: connect over UART with crossed RX and TX lines and monitor recognized command IDs."
 ---
 
 # Arduino: Serial Port Communication

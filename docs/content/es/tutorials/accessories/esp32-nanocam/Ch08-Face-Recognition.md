@@ -1,6 +1,6 @@
 ---
 title: "Capítulo 8: Reconocimiento facial"
-description: "Capítulo 8 del tutorial de ESP32-NanoCam: registra características faciales y reconócelas de forma continua (ID/who?); domina los comandos face_eril, face_rz, face_del y face_detect, la estrategia de salto de fotogramas y la solución de problemas."
+description: "ESP32-NanoCam, capítulo 8: reconocimiento facial en el módulo, con registro de rostros, detección continua por comandos y solución de problemas."
 ---
 
 # Capítulo 8: Reconocimiento facial

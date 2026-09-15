@@ -1,6 +1,6 @@
 ---
 title: "Jetson: Comunicação por porta serial"
-description: "Faça logout e login novamente para que tenha efeito."
+description: "Módulo de interação por voz no Jetson: comunicação serial UART pelos pinos, com configuração da porta e execução do exemplo de voz."
 ---
 
 # Jetson: Comunicação por porta serial

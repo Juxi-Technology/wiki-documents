@@ -1,6 +1,6 @@
 ---
 title: "树莓派"
-description: "本教程以树莓派5主板，官方64位版本的镜像为例。"
+description: "IMU 姿态传感器与树莓派 5 的串口通信教程：通过 Type-C 连接 USB 串口并配置端口映射，读取姿态数据。"
 ---
 
 # 树莓派
@@ -71,7 +71,7 @@ sudo apt install -y python3-smbus2
 
 3.2 **传输文件**
 
-[IMU_ROS2.zip]
+IMU_ROS2.zip
 
 如果还不会使用MobaXterm传输文件的朋友，请查看以下网页MobaXterm详细安装和操作方法：[文件远程传输](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 

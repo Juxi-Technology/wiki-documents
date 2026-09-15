@@ -1,6 +1,6 @@
 ---
 title: "Stufe 2: Hand- & Arm-Kalibrierung (Windows)"
-description: "In dieser Phase werden drei Geräte kalibriert: Leader-Arm, Follower-Arm und AmazingHand-Hand. Die Kalibrierun…"
+description: "Phase 2 unter Windows: Leader-Arm, Follower-Arm und AmazingHand kalibrieren als Grundlage für die Teleoperation des SO-ARM101."
 ---
 
 

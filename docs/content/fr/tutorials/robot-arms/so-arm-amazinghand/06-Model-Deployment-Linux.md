@@ -1,6 +1,6 @@
 ---
 title: "Étape 6 : déploiement du modèle (Linux)"
-description: "Cette phase charge la politique entraînée pour que le robot exécute la tâche de manière autonome et enregistr…"
+description: "Phase 6 sous Linux : déployer le modèle entraîné sur SO-ARM101 et AmazingHand, exécuter la tâche en autonomie et optimiser les résultats."
 ---
 
 

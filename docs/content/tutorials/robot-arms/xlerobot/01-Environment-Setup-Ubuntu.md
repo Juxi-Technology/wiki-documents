@@ -1,6 +1,6 @@
 ---
 title: "Environment Setup (Ubuntu)"
-description: "The black leader arm uses a 5V6A power adapter"
+description: "XLeRobot Ubuntu environment setup: install Miniconda, switch pip and conda to mirror sources, and prepare the Python environment for LeRobot."
 ---
 
 # Environment Setup (Ubuntu)

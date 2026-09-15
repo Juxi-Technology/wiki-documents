@@ -1,6 +1,6 @@
 ---
 title: "Montage (Einzelteile)"
-description: "Wenn Sie sich das Vergnügen des Schraubenanziehens lieber ersparen möchten, können Sie auch das vorgefertigte…"
+description: "Montage des XLeRobot aus Einzelteilen: Servos konfigurieren und Wagen, Radbasis, Roboterarm-Basis und Kopf Schritt für Schritt aufbauen."
 ---
 
 # Montage (Einzelteile)
@@ -69,7 +69,7 @@ sudo chmod 666 /dev/ttyACM0
 
 ![Abb. 6](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/6.png)
 
-## 🧑‍🦼‍➡ Radbasis
+## 🧑🦼➡ Radbasis
 
 > Wenn Sie bereits eine Lekiwi-Basis haben, entfernen Sie bitte den Akku, die Servo-Halterungen usw. Auf der Bodenplatte müssen nur 3 Servos mit Rädern montiert werden (Verkabelung beibehalten).
 > 

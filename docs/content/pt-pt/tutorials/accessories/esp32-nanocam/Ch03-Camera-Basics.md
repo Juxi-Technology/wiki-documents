@@ -1,6 +1,6 @@
 ---
 title: "Capítulo 3: Noções básicas da câmara"
-description: "Tutorial ESP32-NanoCam, Capítulo 3: compreender a interface de câmara DVP, a transmissão MJPEG e o princípio do buffer de fotogramas na PSRAM, ver a imagem predefinida e conhecer os vários modos ai_mode integrados no firmware."
+description: "Capítulo 3 do tutorial ESP32-NanoCam: noções básicas da câmara, interface DVP, transmissão MJPEG, buffer de fotogramas na PSRAM e modos de IA do firmware."
 ---
 
 # Capítulo 3: Noções básicas da câmara

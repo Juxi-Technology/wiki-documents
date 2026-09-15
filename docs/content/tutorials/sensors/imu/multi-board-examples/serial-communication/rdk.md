@@ -1,6 +1,6 @@
 ---
 title: "RDK"
-description: "This tutorial takes the mirroring of the? version of the RDK X5 motherboard as an example."
+description: "IMU attitude sensor serial example on the RDK X5: connect over a USB to TTL cable, create a udev port mapping, and read attitude data over UART."
 ---
 
 # RDK
@@ -71,7 +71,7 @@ sudo apt install -y python3-smbus2
 
 **3.2 Transfer Files**
 
-[IMU_ROS2.zip]
+IMU_ROS2.zip
 
 Friends who are not yet familiar with using MobaXterm to transfer files, please refer to the following webpage for detailed installation and operation methods of MobaXterm:[文件远程传输](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 

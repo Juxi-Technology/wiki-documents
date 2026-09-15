@@ -1,6 +1,6 @@
 ---
 title: "ROS: lettura dati GPS"
-description: "Digitare nel terminale,"
+description: "Lettura dei dati GPS con ROS: avviare il nodo del driver, elencare i topic e interpretare i messaggi con posizione, stato dei satelliti, tempo e velocità."
 ---
 
 # ROS: lettura dati GPS

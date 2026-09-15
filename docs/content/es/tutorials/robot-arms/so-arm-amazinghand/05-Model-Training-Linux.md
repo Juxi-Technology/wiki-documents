@@ -1,6 +1,6 @@
 ---
 title: "Fase 5: Entrenamiento del modelo (Linux)"
-description: "En esta fase se usa el conjunto de datos recopilado para entrenar una política (ACT, etc.) y producir un mode…"
+description: "Fase 5 en Linux: entrena una política ACT con LeRobot usando los datos recogidos del SO-ARM101 con AmazingHand y genera el modelo entrenado."
 ---
 
 

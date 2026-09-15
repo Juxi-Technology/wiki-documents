@@ -1,6 +1,6 @@
 ---
 title: KWS语音识别模块
-description: "KWS 语音识别模块系列教程——串口通信、固件烧录、ROS2 可视化"
+description: "KWS 语音识别模块系列教程总览——串口通信、固件烧录与 ROS2 rviz2 可视化,适配 Jetson 与树莓派。"
 ---
 
 # KWS语音识别模块

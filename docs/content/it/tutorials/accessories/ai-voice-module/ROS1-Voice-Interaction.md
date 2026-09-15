@@ -1,6 +1,6 @@
 ---
 title: "Interazione vocale ROS1"
-description: "Il modulo di interazione vocale AI supporta le seguenti tre modalità di cablaggio:"
+description: "Interazione vocale del modulo IA su ROS1: nodo ROS che rileva il cablaggio seriale o I2C e invia i comandi vocali su Ubuntu 20.04 con Noetic."
 ---
 
 # Interazione vocale ROS1

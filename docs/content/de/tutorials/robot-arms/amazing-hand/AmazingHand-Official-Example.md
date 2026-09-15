@@ -1,6 +1,6 @@
 ---
 title: Tutorial zum offiziellen Beispiel der Roboterhand
-description: "Laden Sie das Code-Archiv dieses Tutorials für die Demo herunter oder klonen Sie das offizielle Open-Source-Repository https://github.com/pollen-robotics/AmazingHand.git ; der offizielle Code kann Fehler enthalten."
+description: "Offizielles Beispiel der AmazingHand ausführen: Code herunterladen, Umgebung installieren, verkabeln und die Demo an der Greifhand starten."
 ---
 
 # Tutorial zum offiziellen Beispiel der Roboterhand
@@ -15,11 +15,11 @@ Laden Sie das Code-Archiv dieses Tutorials für die Demo herunter oder klonen Si
 
 Windows-Codearchiv
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 Linux-Codearchiv
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 ```Plain Text
 git clone https://github.com/pollen-robotics/AmazingHand.git

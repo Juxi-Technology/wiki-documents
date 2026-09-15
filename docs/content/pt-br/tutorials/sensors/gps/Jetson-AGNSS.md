@@ -1,6 +1,6 @@
 ---
 title: "Jetson: posicionamento AGNSS"
-description: "Nesta lição, vamos aprender principalmente a usar o Jetson Orin, o módulo GPS e o servidor agnss para impleme…"
+description: "Posicionamento AGNSS no Jetson Orin — usar o servidor de assistência para acelerar o primeiro posicionamento do módulo GPS e BeiDou em sinal fraco."
 ---
 
 # Jetson: posicionamento AGNSS
@@ -149,7 +149,7 @@ Use um cabo type-c para conectar o Jetson Orin e o módulo GPS; execute o comand
 
 **3.2. Solicitar a ak do 百度地图**
 
-Consulte o documento [Tutorial de solicitação da api do 百度地图]()
+Consulte o documento [Tutorial de solicitação da api do 百度地图](./Jetson-Baidu-Map-API.md)
 
  
 

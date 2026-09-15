@@ -1,6 +1,6 @@
 ---
 title: "ROS1 應用"
-description: "系統配置：ubuntu20.04"
+description: "IMU 慣導模組 ROS1 應用教程：Ubuntu 20.04 環境配置、專案構建與節點啟動流程。"
 ---
 
 # ROS1 應用

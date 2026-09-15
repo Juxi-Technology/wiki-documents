@@ -1,6 +1,6 @@
 ---
 title: "Instalação da Câmara Superior"
-description: "Consulte este tutorial para depurar a câmara USB com acoplamento automático — Tutorial da câmara USB com foco automático"
+description: "Instalação do suporte de câmara superior para o SO-ARM100 e SO-ARM101, compatível com a câmara de profundidade RealSense D405C."
 ---
 
 # Instalação da Câmara Superior

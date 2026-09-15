@@ -1,6 +1,6 @@
 ---
 title: Aplicação ROS1
-description: "Configuração do sistema: ubuntu20.04"
+description: "Aplicação ROS1 do módulo IMU da Juxi Technology — configurar o ROS Noetic no Ubuntu 20.04, construir o projeto, ler os dados do sensor e visualizar no RViz."
 ---
 
 # Aplicação ROS1

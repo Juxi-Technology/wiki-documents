@@ -1,6 +1,6 @@
 ---
 title: "Stage 4: Data Collection (Windows)"
-description: "This stage records a teleoperation dataset: under manual control, it collects \"joint angle + camera image\" sa…"
+description: "Stage 4 data collection on Windows: save joint angle and camera image samples into a local dataset path for later policy training."
 ---
 
 

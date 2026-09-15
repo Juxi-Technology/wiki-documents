@@ -1,6 +1,6 @@
 ---
 title: "Raspberry Pi: posizionamento AGNSS"
-description: "In questa lezione impareremo principalmente a utilizzare la Raspberry Pi, il modulo GPS e un server agnss per…"
+description: "Posizionamento AGNSS su Raspberry Pi: usare un server AGNSS per ridurre il tempo di primo fix del modulo GPS anche in ambienti con segnale debole."
 ---
 
 # Raspberry Pi: posizionamento AGNSS
@@ -149,7 +149,7 @@ Collegare la Raspberry Pi e il modulo GPS con un cavo type-c; eseguire il comand
 
 **3.2. Richiesta della ak di 百度地图**
 
-Vedere il documento [Tutorial per richiedere la api di 百度地图]()
+Vedere il documento [Tutorial per richiedere la api di 百度地图](./RaspberryPi-Baidu-Map-API.md)
 
  
 

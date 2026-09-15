@@ -1,6 +1,6 @@
 ---
 title: "RDK: Serial Port Communication"
-description: "This repository provides Python example code for communication between the RDK X5 (Raspberry Pi) platform and…"
+description: "RDK X5 serial port communication example for the AI Voice Interaction Module: Python sample code for UART control and voice playback at 115200 baud."
 ---
 
 # RDK: Serial Port Communication

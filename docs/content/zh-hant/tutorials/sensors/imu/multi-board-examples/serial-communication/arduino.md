@@ -7,7 +7,7 @@ description: "本次例程使用的是Arduino Nano開發版，一臺windows電�
 
 本次例程使用的是Arduino Nano開發版，一臺windows電腦、杜邦線若干、IMU姿態傳感器、USB轉TTL模塊。
 
-[Arduino.rar]
+Arduino.rar
 
 ## 1.連接設備
 
@@ -23,9 +23,9 @@ description: "本次例程使用的是Arduino Nano開發版，一臺windows電�
 
 ```C++
 //解析环形缓冲中的数据，提取完整帧并更新缓存
-​
+
 //Process RX ring buffer, parse frames and update internal cache
-​
+
 void IMU_UART_Process(void)
 {
     enum {
@@ -118,8 +118,8 @@ void IMU_UART_Process(void)
         }
     }
 }
-​
-​
+
+
 /* ---------- 解析数据帧 / Parse one complete frame ---------- */
 static void _parse_frame_data(uint8_t frame_function, const uint8_t *frame_data)
 {

@@ -1,6 +1,6 @@
 ---
 title: "RDK: Serielle Kommunikation"
-description: "Dieses Repository stellt Python-Beispielcode für die Kommunikation zwischen der Plattform RDK X5 (Raspberry P…"
+description: "AI-Sprachinteraktionsmodul an der RDK X5 über die serielle Schnittstelle nutzen: Python-Beispielcode, Verkabelung und Umgebung einrichten."
 ---
 
 # RDK: Serielle Kommunikation

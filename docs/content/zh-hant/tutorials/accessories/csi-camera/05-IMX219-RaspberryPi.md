@@ -1,6 +1,6 @@
 ---
 title: "IMX219(樹莓派)教程"
-description: "如果沒有，則可能是核心或者裝置硬件存在問題，可嘗試重刷系統或更換硬件。"
+description: "IMX219 攝像頭樹莓派教程——啟用 CSI 攝像頭、以 vcgencmd 檢查狀態並用 raspistill 拍照。"
 ---
 
 # IMX219(樹莓派)教程

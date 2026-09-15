@@ -1,6 +1,6 @@
 ---
 title: "Jetson Nano シリアル通信"
-description: "注意：音声対話モジュールには工場出荷ファームウェアの書き込みが必要です。音声チップが未書き込みの場合は不要"
+description: "KWS 音声認識モジュールの Jetson Nano シリアル通信チュートリアル。USB 接続の確認から制御プログラムの実装までを解説します。"
 ---
 
 # Jetson Nano シリアル通信

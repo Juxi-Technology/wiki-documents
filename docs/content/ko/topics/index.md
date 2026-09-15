@@ -1,6 +1,6 @@
 ---
 title: 토픽
-description: Juxi Technology Wiki — 토픽
+description: "Juxi Technology 토픽 — 로봇 학습과 비전 인지 등 로보틱스·자동화 기술을 제품과 실행 가능한 튜토리얼로 다룹니다."
 ---
 
 # 토픽

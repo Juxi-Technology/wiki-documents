@@ -1,6 +1,6 @@
 ---
 title: "Arduino: シリアルポート通信"
-description: "1. UARTVoice.ino ファイルを開く"
+description: "AI 音声対話モジュールと Arduino のシリアルポート通信チュートリアル。配線とビルド、プロトコルフレームの形式を解説します。"
 ---
 
 # Arduino: シリアルポート通信

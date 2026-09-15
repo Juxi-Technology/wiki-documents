@@ -1,6 +1,6 @@
 ---
 title: "Montaje del kit ensamblado"
-description: "Lista de accesorios"
+description: "Montaje del kit ensamblado de XLeRobot: instala el chasis rodante, la torre de cámara y los brazos SO-ARM101, con el cableado de servos y batería."
 ---
 
 # Montaje del kit ensamblado

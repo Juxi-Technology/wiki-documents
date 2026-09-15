@@ -1,13 +1,13 @@
 ---
 title: "Comunicação Serial PC"
-description: "[uartassist5.0.2.zip]"
+description: "Teste o módulo de voz KWS no computador com o assistente de porta série: ligue, configure e verifique a ativação das palavras de comando gravadas."
 ---
 
 # Comunicação Serial PC
 
 ## 1. Descarregar o assistente de porta serial
 
-[uartassist5.0.2.zip]
+uartassist5.0.2.zip
 
 ---
 

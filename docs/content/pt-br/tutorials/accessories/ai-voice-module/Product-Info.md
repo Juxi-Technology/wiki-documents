@@ -1,6 +1,6 @@
 ---
 title: "Informações do produto"
-description: "CI1302 é um chip de voz inteligente com rede neural de alto desempenho de nova geração desenvolvido pela Chip…"
+description: "Informações do módulo de interação por voz IA da Juxi Technology — chip CI1302, mais de 110 comandos de voz offline e interfaces IIC, serial e Type-C."
 ---
 
 # Informações do produto

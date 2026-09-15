@@ -1,6 +1,6 @@
 ---
 title: "Arduino:位置資訊解析"
-description: "本次課程我們主要學習使用arduino和GPS模組實現位置資訊解析並列印功能。"
+description: "Arduino 搭配 GPS 北斗模組的位置資訊解析教程：NMEA 資料解析與經緯度列印功能的實現方法。"
 ---
 
 # Arduino:位置資訊解析

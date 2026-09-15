@@ -1,6 +1,6 @@
 ---
 title: "51 MCU : analyse GPS"
-description: "Dans cette leçon, nous allons principalement apprendre à utiliser un microcontrôleur 51 de type STC89C52RC et…"
+description: "Analyse des données du module GPS BeiDou avec un microcontrôleur 51 STC89C52RC : câblage UART, programme d'analyse et sortie série à 9600 bauds."
 ---
 
 # 51 MCU : analyse GPS

@@ -1,13 +1,13 @@
 ---
 title: "Comunicação Serial PC"
-description: "[uartassist5.0.2.zip]"
+description: "Comunicação serial do módulo de reconhecimento de voz KWS da Juxi Technology no PC — assistente de porta serial a 115200 e teste de ativação."
 ---
 
 # Comunicação Serial PC
 
 ## 1. Baixar o assistente de porta serial
 
-[uartassist5.0.2.zip]
+uartassist5.0.2.zip
 
 ---
 

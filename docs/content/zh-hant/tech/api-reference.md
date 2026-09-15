@@ -1,6 +1,6 @@
 ---
 title: API 參考
-description: 本頁面提供產品 API 介面參考文件。
+description: "鉅犀科技產品 API 參考——基礎 URL、API Key 認證與介面列表的完整說明。"
 ---
 
 

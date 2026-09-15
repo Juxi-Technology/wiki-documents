@@ -7,7 +7,7 @@ description: "Questo esempio usa la scheda di sviluppo Arduino Nano, un PC Windo
 
 Questo esempio usa la scheda di sviluppo Arduino Nano, un PC Windows, diversi cavi jumper, il sensore di assetto IMU e un modulo USB-TTL.
 
-[Arduino.rar]
+Arduino.rar
 
 
 

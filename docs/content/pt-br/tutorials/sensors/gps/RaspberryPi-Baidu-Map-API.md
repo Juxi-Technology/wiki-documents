@@ -1,6 +1,6 @@
 ---
 title: "Raspberry Pi: API do Baidu Maps"
-description: "1. Método de registro"
+description: "API do Baidu Maps no Raspberry Pi — registrar a conta de desenvolvedor, obter a chave de acesso e converter o posicionamento do módulo GPS e BeiDou no mapa."
 ---
 
 # Raspberry Pi: API do Baidu Maps

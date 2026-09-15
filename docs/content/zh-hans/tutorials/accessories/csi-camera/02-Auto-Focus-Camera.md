@@ -1,6 +1,6 @@
 ---
 title: "自动对焦摄像头使用"
-description: "图片的结果是接了两个CSI摄像头、一个USB摄像头的结果：一般一个CSI摄像头显示一个video设备，一个USB摄像头显示两个video设备，USB摄像头选择新增加且数字较小的/dev/video2调用（接上USB摄像…"
+description: "自动对焦摄像头使用教程——查看 video 设备号,并用 GUVCView 测试 USB 摄像头画面。"
 ---
 
 # 自动对焦摄像头使用

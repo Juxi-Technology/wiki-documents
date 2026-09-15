@@ -1,6 +1,6 @@
 ---
 title: "Controle de Interface da Mão Robótica"
-description: "[AmazingHandControl.zip]"
+description: "Controle da mão robótica AmazingHand da Juxi Technology — exemplo em Python do repositório oficial com protocolo de comunicação TTL pelo barramento serial."
 ---
 
 # Controle de Interface da Mão Robótica
@@ -10,7 +10,7 @@ description: "[AmazingHandControl.zip]"
 
 https://github.com/Betatester777/AmazingHandControl
 
-[AmazingHandControl.zip]
+AmazingHandControl.zip
 
 
 ---

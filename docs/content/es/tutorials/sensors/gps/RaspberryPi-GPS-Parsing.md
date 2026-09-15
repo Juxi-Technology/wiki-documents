@@ -1,6 +1,6 @@
 ---
 title: "Raspberry Pi: análisis GPS"
-description: "En esta lección aprenderemos principalmente a utilizar la Raspberry Pi y el módulo GPS para leer y analizar l…"
+description: "Módulo GPS/BeiDou con Raspberry Pi: lee y analiza los datos del módulo para obtener latitud, longitud y altitud de forma estable."
 ---
 
 # Raspberry Pi: análisis GPS

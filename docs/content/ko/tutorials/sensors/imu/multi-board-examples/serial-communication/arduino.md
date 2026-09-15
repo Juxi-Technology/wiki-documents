@@ -7,7 +7,7 @@ description: "본 예제는 Arduino Nano 개발 보드, Windows PC 1대, 점퍼 
 
 본 예제는 Arduino Nano 개발 보드, Windows PC 1대, 점퍼 와이어 여러 개, IMU 자세 센서, USB-TTL 변환 모듈을 사용합니다.
 
-[Arduino.rar]
+Arduino.rar
 
 
 

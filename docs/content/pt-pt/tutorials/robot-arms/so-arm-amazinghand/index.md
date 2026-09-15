@@ -1,6 +1,6 @@
 ---
 title: "Tutorial de utilização do SO-ARM101 + AmazingHand"
-description: "Este tutorial aborda o fluxo completo de teleoperação, recolha de dados e treino para reproduzir o braço segu…"
+description: "Visão geral do tutorial SO-ARM101 com a mão AmazingHand: configuração do ambiente, calibração, teleoperação, recolha de dados, treino e implementação."
 ---
 
 

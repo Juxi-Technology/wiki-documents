@@ -1,6 +1,6 @@
 ---
 title: "界面控制教程"
-description: "[AmazingHandControl.zip]"
+description: "AmazingHand 四指灵巧手界面控制教程：使用图形界面控制灵巧手动作，附开源示例代码与 TTL 通信协议说明。"
 ---
 
 # 界面控制教程
@@ -10,7 +10,7 @@ description: "[AmazingHandControl.zip]"
 
 https://github.com/Betatester777/AmazingHandControl
 
-[AmazingHandControl.zip]
+AmazingHandControl.zip
 
 
 ---

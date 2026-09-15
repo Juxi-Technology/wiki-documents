@@ -1,6 +1,6 @@
 ---
 title: "Interação de voz ROS2"
-description: "O módulo de interação por voz oferece suporte aos três modos de cabeamento a seguir:"
+description: "Interação de voz ROS2 Humble com o módulo de voz: detecção automática do cabeamento serial ou I2C e visualização no RViz2."
 ---
 
 # Interação de voz ROS2

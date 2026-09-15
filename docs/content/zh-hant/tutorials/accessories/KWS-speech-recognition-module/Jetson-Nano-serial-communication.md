@@ -1,6 +1,6 @@
 ---
 title: "Jetson Nano 串口通信"
-description: "注意：語音交互模塊需要燒錄出廠固件，語音芯片到手之後沒有刷過固件的則不需要"
+description: "KWS 語音識別模組教程——在 Jetson Nano 上以串列埠通訊讀取喚醒詞與命令詞 ID 輸出。"
 ---
 
 # Jetson Nano 串口通信

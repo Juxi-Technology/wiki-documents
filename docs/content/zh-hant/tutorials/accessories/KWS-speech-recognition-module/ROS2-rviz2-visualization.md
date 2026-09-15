@@ -1,6 +1,6 @@
 ---
 title: "ROS2 rviz2 可視化"
-description: "- 操作系統：Ubuntu 22.04"
+description: "KWS 語音識別模組教程——在 Ubuntu 22.04 安裝 ROS2,並以 rviz2 視覺化命令詞辨識結果。"
 ---
 
 # ROS2 rviz2 可視化

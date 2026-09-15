@@ -1,6 +1,6 @@
 ---
 title: "Modifica della parola di attivazione e delle parole di comando"
-description: "Eseguire la modifica della parola di attivazione in un ambiente silenzioso; un ambiente rumoroso influisce su…"
+description: "Come modificare la parola di attivazione e le parole di comando del modulo vocale IA tramite voce: apprendimento, verifica ed eliminazione delle voci."
 ---
 
 # Modifica della parola di attivazione e delle parole di comando

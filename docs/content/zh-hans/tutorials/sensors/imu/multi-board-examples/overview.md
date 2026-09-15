@@ -1,6 +1,6 @@
 ---
 title: "多主控通信案例概览"
-description: "1. CH341驱动安装（以管理员身份安装）"
+description: "IMU 多主控通信案例概览：介绍 IMU 在 PC、Jetson、树莓派与 RDK 等主控上的通信案例及驱动安装准备。"
 ---
 
 # 多主控通信案例概览

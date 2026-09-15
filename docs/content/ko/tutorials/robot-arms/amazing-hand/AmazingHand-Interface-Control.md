@@ -1,6 +1,6 @@
 ---
 title: 로봇 핸드 인터페이스 제어
-description: "[AmazingHandControl.zip]"
+description: "AmazingHand 정교한 핸드의 인터페이스 제어 튜토리얼 — Juxi 공식 제어 코드 사용법과 기본 제어 예제, TTL 직렬 버스 통신 프로토콜을 설명합니다."
 ---
 
 # 로봇 핸드 인터페이스 제어

@@ -1,6 +1,6 @@
 ---
 title: "RDK: Comunicação de porta série"
-description: "Este repositório fornece código de exemplo em Python para a comunicação entre a plataforma RDK X5 (Raspberry …"
+description: "Exemplo em Python de comunicação por porta série entre a plataforma RDK X5 e o módulo de interação por voz IA: ligação UART e configuração."
 ---
 
 # RDK: Comunicação de porta série

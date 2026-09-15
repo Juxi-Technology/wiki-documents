@@ -1,6 +1,6 @@
 ---
 title: API 参考
-description: 本页面提供产品 API 接口参考文档。
+description: "钜犀科技产品 API 参考文档——接口基础地址、API Key 认证方式与设备信息查询接口说明。"
 ---
 
 

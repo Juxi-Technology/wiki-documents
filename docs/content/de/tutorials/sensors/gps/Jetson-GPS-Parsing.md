@@ -1,6 +1,6 @@
 ---
 title: "Jetson: GPS-Auswertung"
-description: "In dieser Lektion lernen wir hauptsächlich, mit Jetson Orin und dem GPS-Modul Positionsinformationen zu lesen…"
+description: "Jetson Orin und GPS-Modul: Positionsinformationen auslesen und auswerten mit Beispielcode und Hinweisen für die eigene Anwendung."
 ---
 
 # Jetson: GPS-Auswertung

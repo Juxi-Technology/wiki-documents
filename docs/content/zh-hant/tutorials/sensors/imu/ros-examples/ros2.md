@@ -1,6 +1,6 @@
 ---
 title: "ROS2 應用"
-description: "系統配置：ubuntu22.04"
+description: "IMU 慣導模組 ROS2 應用教程：Ubuntu 22.04 環境配置、節點啟動與 RViz2 可視化流程。"
 ---
 
 # ROS2 應用

@@ -1,6 +1,6 @@
 ---
 title: "ROS: tracciare il percorso GPS"
-description: "Non è possibile visualizzare direttamente le informazioni del GPS; è necessario convertire il sistema di coor…"
+description: "Tracciare il percorso GPS con ROS: convertire latitudine e longitudine nel sistema xyz e visualizzare la traiettoria del robot in tempo reale su RViz2."
 ---
 
 # ROS: tracciare il percorso GPS

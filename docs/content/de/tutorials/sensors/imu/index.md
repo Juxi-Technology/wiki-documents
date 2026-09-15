@@ -1,6 +1,6 @@
 ---
 title: Tutorial hochpräziser IMU-Attitüdensensor
-description: "1. Erforderliche Python-Bibliotheken installieren"
+description: "Tutorial für den hochpräzisen IMU-Attitüdensensor: Python-Bibliotheken installieren, Port-Zuordnung einrichten und Sensordaten auslesen."
 ---
 
 # Tutorial hochpräziser IMU-Attitüdensensor

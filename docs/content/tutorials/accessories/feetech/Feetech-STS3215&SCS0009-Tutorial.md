@@ -1,6 +1,6 @@
 ---
 title: "STS3215 & SCS0009 Tutorial"
-description: "FEETECH Host Computer FD Softwarehttps://gitee.com/ftservo"
+description: "Feetech STS3215 and SCS0009 serial bus servo tutorial: install the FEETECH host debugging software and prepare servos for robot arm builds."
 ---
 
 # STS3215 & SCS0009 Tutorial
@@ -14,9 +14,9 @@ description: "FEETECH Host Computer FD Softwarehttps://gitee.com/ftservo"
 
 ![image – 2](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZmI0MWFlYmQ1MDE5NzI2ZWE4MzI5YzAwZjRiNDYwZmJfNmE0Zjk4ZGJhZTc2ZGE5NzRiZGE2YjBlMWM2YTc4OWJfSUQ6NzYzODkxOTU3NDYyODc0ODIxOF8xNzgwNjYzMTg4OjE3ODA3NDk1ODhfVjM)
 
-[STS3215 舵机调试资料.zip]
+STS3215 舵机调试资料.zip
 
-[SCS009 舵机调试资料.zip]
+SCS009 舵机调试资料.zip
 
 
 

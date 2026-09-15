@@ -1,6 +1,6 @@
 ---
 title: "51-MCU: GPS-Auswertung"
-description: "In dieser Lektion lernen wir hauptsächlich, mit einem 51-Mikrocontroller des Typs STC89C52RC und dem GPS-Modu…"
+description: "GPS-Auswertung mit dem 51-Mikrocontroller STC89C52RC: UART-Anschluss sowie Analysieren und Ausgeben der Positionsdaten des GPS-Moduls."
 ---
 
 # 51-MCU: GPS-Auswertung

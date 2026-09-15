@@ -10,7 +10,7 @@ description: "Guida completa al robot mobile Lekiwi basato su LeRobot: setup, co
 
 Il braccio leader nero usa un alimentatore 5V 6A, mentre il braccio follower bianco usa un alimentatore 12V 5A
 
-[lerobot-Lekiwi.zip]
+lerobot-Lekiwi.zip
 
 Il codice nel repository di questo tutorial è mantenuto alla versione stabile di LeRobot testata prima del 1 marzo 2026. Attualmente HuggingFace ha aggiornato LeRobot in modo molto sostanziale, aggiungendo un gran numero di nuove funzionalità. Se vuoi provare il tutorial più recente, segui [la documentazione ufficiale per il funzionamento](https://huggingface.co/docs/lerobot/lekiwi).
 

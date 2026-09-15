@@ -1,6 +1,6 @@
 ---
 title: "Raspberry Pi: Comunicación por puerto serie"
-description: "Edite /boot/firmware/config.txt o /boot/config.txt y asegúrese de que la siguiente configuración esté present…"
+description: "Módulo de voz IA con Raspberry Pi por puerto serie: habilita el UART, conecta el cableado y ejecuta el ejemplo para leer comandos y frases."
 ---
 
 # Raspberry Pi: Comunicación por puerto serie

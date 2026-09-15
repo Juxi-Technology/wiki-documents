@@ -1,6 +1,6 @@
 ---
 title: "Configuração (Windows)"
-description: "O braço líder preto utiliza um adaptador de alimentação de 5V6A"
+description: "Configuração do ambiente XLeRobot no Windows: instalação do Miniconda e configuração das fontes conda para o braço líder e o braço seguidor."
 ---
 
 # Configuração (Windows)

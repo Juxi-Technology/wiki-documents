@@ -1,6 +1,6 @@
 ---
 title: "Montaggio kit assemblato"
-description: "Elenco dei componenti"
+description: "Montaggio del kit XLeRobot assemblato: installare il telaio mobile, la base della torre della telecamera e gli altri componenti sul carrello."
 ---
 
 # Montaggio kit assemblato

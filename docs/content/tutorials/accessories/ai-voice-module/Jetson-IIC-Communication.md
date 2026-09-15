@@ -1,6 +1,6 @@
 ---
 title: "Jetson: IIC Communication"
-description: "Log out and log back in for it to take effect."
+description: "Jetson IIC communication example for the AI Voice Interaction Module: install the I2C tools, detect the 0x2A slave address, and run the control script."
 ---
 
 # Jetson: IIC Communication

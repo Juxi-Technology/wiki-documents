@@ -1,6 +1,6 @@
 ---
 title: ROS1-Anwendung
-description: "Systemkonfiguration: Ubuntu 20.04"
+description: "IMU-Attitüdensensor unter ROS1: Umgebung mit Ubuntu 20.04 konfigurieren, Bibliotheken installieren und das ROS1-Projekt bauen und ausführen."
 ---
 
 # ROS1-Anwendung

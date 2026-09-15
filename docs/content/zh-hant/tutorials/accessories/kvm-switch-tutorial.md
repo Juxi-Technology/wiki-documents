@@ -1,6 +1,6 @@
 ---
 title: "KVM 切換器"
-description: "KVM切換器包含HUB功能、TTL串口、藍牙模塊"
+description: "鉅犀科技 KVM 切換器教程——內建 HUB、TTL 串列埠與藍牙模組,支援雙主機一鍵切換。"
 ---
 
 # KVM 切換器

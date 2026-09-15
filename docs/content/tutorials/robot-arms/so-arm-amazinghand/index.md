@@ -1,6 +1,6 @@
 ---
 title: "SO-ARM101 + AmazingHand Tutorial"
-description: "This tutorial covers the full workflow of teleoperation, data collection, and training for reproducing the SO…"
+description: "SO-ARM101 + AmazingHand tutorial overview: the full LeRobot workflow from teleoperation and data collection to training, for Windows and Linux."
 ---
 
 

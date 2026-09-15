@@ -7,7 +7,7 @@ description: "본 예제는 STM32F103C8T6 코어 보드, Windows PC 1대, 점퍼
 
 본 예제는 STM32F103C8T6 코어 보드, Windows PC 1대, 점퍼 와이어 여러 개, IMU 자세 센서를 사용합니다.
 
-[STM32.zip]
+STM32.zip
 
 keil5 소프트웨어로 USART.uvprojx를 열어 STM32F103C8T6 코어 보드에 프로그램을 굽습니다
 

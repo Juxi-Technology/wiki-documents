@@ -1,6 +1,6 @@
 ---
 title: "ステージ1：環境構築（Linux）"
-description: "Miniforge を使用して独立した Python 環境を作成し、LeRobot および AmazingHand サポートをインストールします。本ページは厳密な順序で実行します。各コードブロックはそのままコピーできま…"
+description: "SO-ARM101 と AmazingHand の LeRobot 環境構築(Linux 版)。Miniforge で Python 環境と LeRobot 一式を導入します。"
 ---
 
 

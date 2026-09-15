@@ -1,6 +1,6 @@
 ---
 title: "ROS: GPS 궤적 그리기"
-description: "GPS 정보를 직접 시각화하는 것은 불가능합니다. 좌표계를 변환해야 하며, GPS 궤적을 위도 경도 WGS-84 좌표에서 실제 세계 xyz 좌표계로 변환합니다. 실제 세계의 xyz 좌표가 있으면 …"
+description: "ROS2에서 GPS 궤적 그리기 — WGS-84 위경도 좌표를 xyz 좌표계로 변환해 rviz2에서 이동 경로를 시각화하는 방법."
 ---
 
 # ROS: GPS 궤적 그리기

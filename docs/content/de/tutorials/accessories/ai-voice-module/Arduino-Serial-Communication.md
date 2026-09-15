@@ -1,6 +1,6 @@
 ---
 title: "Arduino: Serielle Kommunikation"
-description: "1. Öffnen Sie die Datei UARTVoice.ino"
+description: "AI-Sprachinteraktionsmodul mit Arduino über die serielle Schnittstelle nutzen: Hardwareanschluss, Protokollrahmen und Test im seriellen Monitor."
 ---
 
 # Arduino: Serielle Kommunikation

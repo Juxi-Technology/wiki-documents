@@ -1,6 +1,6 @@
 ---
 title: "Raspberry Pi : API Baidu Maps"
-description: "1. Méthode d'inscription"
+description: "Afficher la position du module GPS BeiDou sur Baidu Maps depuis Raspberry Pi : inscription, création de l'application et obtention de la clé d'API."
 ---
 
 # Raspberry Pi : API Baidu Maps

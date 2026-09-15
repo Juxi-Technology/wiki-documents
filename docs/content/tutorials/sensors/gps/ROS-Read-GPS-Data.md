@@ -1,6 +1,6 @@
 ---
 title: "ROS: Reading GPS Data"
-description: "In the terminal, enter,"
+description: "ROS reading GPS data tutorial: launch the NMEA driver node and echo its topics to get satellite status, position, speed, and time information."
 ---
 
 # ROS: Reading GPS Data

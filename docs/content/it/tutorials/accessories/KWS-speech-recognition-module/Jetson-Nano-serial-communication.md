@@ -1,6 +1,6 @@
 ---
 title: Comunicazione seriale Jetson Nano
-description: "Nota: il modulo di interazione vocale richiede il flashing del firmware di fabbrica; se il chip vocale è nuovo e non flashato, non è necessario"
+description: "Modulo di riconoscimento vocale KWS su Jetson Nano: comunicazione via porta seriale USB per leggere le parole di attivazione e i comandi riconosciuti."
 ---
 
 # Comunicazione seriale Jetson Nano

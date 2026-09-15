@@ -1,6 +1,6 @@
 ---
 title: "Jetson: análise GPS"
-description: "Nesta lição, vamos aprender principalmente a usar o Jetson Orin e o módulo GPS para ler e analisar informaçõe…"
+description: "Análise GPS no Jetson Orin — ler o módulo GPS e BeiDou pela porta USB, filtrar sentenças GNGGA e analisar latitude, longitude e altitude em Python."
 ---
 
 # Jetson: análise GPS

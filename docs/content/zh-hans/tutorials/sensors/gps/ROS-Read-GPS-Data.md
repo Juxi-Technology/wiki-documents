@@ -1,6 +1,6 @@
 ---
 title: "ROS:读取 GPS 数据"
-description: "然后我们查看下话题数据，终端输入，"
+description: "ROS 读取 GPS 数据教程：启动 NMEA 驱动读取 GPS 模块数据，解析经纬度、海拔与速度信息并查看话题消息。"
 ---
 
 # ROS:读取 GPS 数据

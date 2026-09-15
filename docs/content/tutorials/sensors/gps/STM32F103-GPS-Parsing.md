@@ -1,6 +1,6 @@
 ---
 title: "STM32F103: GPS Parsing Output"
-description: "In this lesson, we will mainly learn to use STM32F103C8T6 and a GPS module to implement the position informat…"
+description: "STM32F103 GPS parsing tutorial: read the GPS/BeiDou module over UART at 9600 baud, convert coordinates into degrees, and print the output."
 ---
 
 # STM32F103: GPS Parsing Output

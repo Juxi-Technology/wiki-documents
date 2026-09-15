@@ -1,6 +1,6 @@
 ---
 title: "Mover archivos de XLeRobot"
-description: "Descargue y descomprima el paquete comprimido desde https://github.com/Vector-Wangel/XLeRobot"
+description: "Prepara los archivos de XLeRobot: descarga y descomprime el paquete, y copia los módulos de cinemática, robots y teleoperación en LeRobot."
 ---
 
 # Mover archivos de XLeRobot

@@ -1,6 +1,6 @@
 ---
 title: "STS3215 & SCS0009 – Debug-Tutorial"
-description: "Feetech-Host-Software FD https://gitee.com/ftservo"
+description: "Debug-Tutorial für die Feetech-Serienbus-Servos STS3215 und SCS0009: FD-Host-Software, Speichertabellen-Analyse und Inbetriebnahme prüfen."
 ---
 
 # STS3215 & SCS0009 – Debug-Tutorial
@@ -14,6 +14,6 @@ description: "Feetech-Host-Software FD https://gitee.com/ftservo"
 
 ![image – 2](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDI5NDU1ZWU2YzZhMTM1NzM2OTdjNzU0YWUxNmY3NzlfMzE3ZmQwN2I2NjRiYWQ0ZGY1MTk4ZjdlMWE1MDkxYjJfSUQ6NzYyNTg0ODc3ODM4NjExNTUyNF8xNzgwNjYzNDMwOjE3ODA3NDk4MzBfVjM)
 
-[STS3215 Servo-Debug-Dateien.zip]
+STS3215 Servo-Debug-Dateien.zip
 
-[SCS009 Servo-Debug-Dateien.zip]
+SCS009 Servo-Debug-Dateien.zip

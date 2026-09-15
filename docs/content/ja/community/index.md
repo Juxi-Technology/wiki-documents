@@ -1,6 +1,6 @@
 ---
 title: コミュニティ
-description: Juxi Technology Wiki — コミュニティ
+description: "Juxi Technology コントリビューターコミュニティの案内。参加するメリット、チャンネル、貢献方法、コントリビューターウォールを紹介します。"
 ---
 
 # コミュニティ

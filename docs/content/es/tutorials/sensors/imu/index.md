@@ -1,6 +1,6 @@
 ---
 title: Tutorial del sensor de actitud IMU de alta precisión
-description: "1. Instalar las librerías Python necesarias"
+description: "Tutorial del módulo IMU de alta precisión: descarga del paquete, instalación de la biblioteca Python, mapeo del puerto serie y ejemplos de actitud."
 ---
 
 # Tutorial del sensor de actitud IMU de alta precisión

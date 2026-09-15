@@ -1,6 +1,6 @@
 ---
 title: "Stage 2: Hand & Arm Calibration (Windows)"
-description: "This stage calibrates the three devices: the leader arm, the follower arm, and the AmazingHand hand. Calibrat…"
+description: "Stage 2 calibration on Windows: calibrate all three devices with COM port commands, covering the leader arm, follower arm, and the AmazingHand."
 ---
 
 

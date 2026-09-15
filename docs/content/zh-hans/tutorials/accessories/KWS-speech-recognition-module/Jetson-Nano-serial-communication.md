@@ -1,6 +1,6 @@
 ---
 title: "Jetson Nano 串口通信"
-description: "注意：语音交互模块需要烧录出厂固件，语音芯片到手之后没有刷过固件的则不需要"
+description: "KWS 语音识别模块教程——在 Jetson Nano 上通过串口通信读取唤醒词与命令词识别结果。"
 ---
 
 # Jetson Nano 串口通信

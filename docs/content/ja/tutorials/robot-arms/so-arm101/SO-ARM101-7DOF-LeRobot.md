@@ -1,6 +1,6 @@
 ---
 title: SO-ARM101 7-DOF 改造と LeRobot 使用チュートリアル
-description: "SO-ARM101 を 6 サーボから 7 自由度(wrist_yaw を追加)に改造した後のサーボ ID 対照表、コード変更と置き換え方法、キャリブレーションの注意事項、そして LeRobot での使用方法を紹介します。"
+description: "SO-ARM101 を 7 自由度に改造して LeRobot で使うチュートリアル。サーボ ID 対照表、コードの置き換え、キャリブレーションの注意点を解説します。"
 ---
 
 # SO-ARM101 7-DOF 改造と LeRobot 使用チュートリアル

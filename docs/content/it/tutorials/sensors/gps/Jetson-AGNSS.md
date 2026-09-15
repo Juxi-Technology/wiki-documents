@@ -1,6 +1,6 @@
 ---
 title: "Jetson: posizionamento AGNSS"
-description: "In questa lezione impareremo principalmente a utilizzare il Jetson Orin, il modulo GPS e un server agnss per …"
+description: "Posizionamento AGNSS su NVIDIA Jetson: usare un server AGNSS per accelerare il primo fix satellitare del modulo GPS anche in condizioni di segnale debole."
 ---
 
 # Jetson: posizionamento AGNSS
@@ -149,7 +149,7 @@ Collegare il Jetson Orin e il modulo GPS con un cavo type-c; eseguire il comando
 
 **3.2. Richiesta della ak di 百度地图**
 
-Vedere il documento [Tutorial per richiedere la api di 百度地图]()
+Vedere il documento [Tutorial per richiedere la api di 百度地图](./Jetson-Baidu-Map-API.md)
 
  
 

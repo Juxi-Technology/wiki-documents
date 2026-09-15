@@ -1,6 +1,6 @@
 ---
 title: "RDK: Comunicação IIC"
-description: "Este repositório fornece um código de exemplo em Python para a comunicação entre a plataforma RDK X5 (Raspber…"
+description: "Comunicação IIC entre a plataforma RDK X5 e o módulo de interação por voz IA da Juxi Technology — exemplo em Python, endereço I2C 0x2A e solução de problemas."
 ---
 
 # RDK: Comunicação IIC

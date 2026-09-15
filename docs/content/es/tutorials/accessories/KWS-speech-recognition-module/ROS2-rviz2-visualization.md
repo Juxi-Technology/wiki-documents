@@ -1,6 +1,6 @@
 ---
 title: "Visualización ROS2 RViz2"
-description: "- Sistema operativo: Ubuntu 22.04"
+description: "Módulo de voz KWS en ROS2: prepara RViz2 en Ubuntu 22.04 con ROS2 Humble y visualiza en tiempo real las palabras de activación reconocidas."
 ---
 
 # Visualización ROS2 RViz2

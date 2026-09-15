@@ -1,6 +1,6 @@
 ---
 title: "自動對焦攝像頭使用"
-description: "圖片的結果是接了兩個CSI攝像頭、一個USB攝像頭的結果：一般一個CSI攝像頭顯示一個video裝置，一個USB攝像頭顯示兩個video裝置，USB攝像頭選擇新增加且數字較小的/dev/video2呼叫（接上USB攝像…"
+description: "CSI 自動對焦攝像頭教程——確認 video 裝置節點,並以 GUVCView 與 VLC 預覽及錄影畫面。"
 ---
 
 # 自動對焦攝像頭使用

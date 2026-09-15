@@ -277,7 +277,7 @@ lerobot-calibrate \
     --teleop.id=my_awesome_leader_arm
 ```
 
-[机械臂中位校准视频.mp4]
+机械臂中位校准视频.mp4
 
 ### 遥感操作
 
@@ -1021,7 +1021,7 @@ File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'
 
 为了进行调试，任何 Windows PC 都可以通过 USB 连接来对舵机进行编程、调试或测试。为此，请下载[Feetech 软件](https://www.feetechrc.com/software.html)。对于 Ubuntu 系统，您可以使用[FT_SCServo_Debug_Qt 工具](https://github.com/Kotakku/FT_SCServo_Debug_Qt)。
 
-[fddebug-master.zip]
+fddebug-master.zip
 
 选择端口号，波特率选1000000，打开，并点击“搜索”
 

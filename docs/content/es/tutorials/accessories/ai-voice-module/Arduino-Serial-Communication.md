@@ -1,6 +1,6 @@
 ---
 title: "Arduino: Comunicación por puerto serie"
-description: "1. Abra el archivo UARTVoice.ino"
+description: "Módulo de voz IA con Arduino por puerto serie: cableado RX/TX cruzado, formato de trama del protocolo UART, código de ejemplo y depuración."
 ---
 
 # Arduino: Comunicación por puerto serie

@@ -1,6 +1,6 @@
 ---
 title: "Compatibilidade PyTorch no Jetson Orin"
-description: "Possível problema 1:"
+description: "Resolva problemas de compatibilidade do PyTorch no Jetson Orin com o SO-ARM101: GPU indisponível, bibliotecas CUDA em falta e alternativas ao torchvision."
 ---
 
 # Compatibilidade PyTorch no Jetson Orin

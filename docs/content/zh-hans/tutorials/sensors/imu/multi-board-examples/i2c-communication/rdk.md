@@ -1,6 +1,6 @@
 ---
 title: "RDK"
-description: "本教程以RDK X5主板的版本的镜像为例。"
+description: "IMU 姿态传感器与 RDK X5 的 I2C 通信教程：在 RDK 开发板上连接 I2C 接口，查看设备状态并读取姿态数据。"
 ---
 
 # RDK
@@ -37,7 +37,7 @@ sudo apt install -y python3-smbus2
 
 3.2 传输文件
 
-[IMU_ROS2.zip]
+IMU_ROS2.zip
 
 如果还不会使用MobaXterm传输文件的朋友，请查看以下网页MobaXterm详细安装和操作方法：[文件远程传输](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 

@@ -1,6 +1,6 @@
 ---
 title: 第 3 章:カメラの基礎
-description: "ESP32-NanoCam チュートリアル第 3 章:DVP カメラインターフェース、MJPEG ストリーミングと PSRAM フレームバッファの原理を理解し、デフォルト映像を確認、ファームウェア内蔵の ai_mode 各モードを把握します。"
+description: "ESP32-NanoCam チュートリアル第 3 章。DVP カメラ、MJPEG ストリーミング、PSRAM フレームバッファの原理と内蔵 AI モードを解説します。"
 ---
 
 # 第 3 章:カメラの基礎

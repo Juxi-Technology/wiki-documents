@@ -1,6 +1,6 @@
 ---
 title: "ROS: GPS-Daten lesen"
-description: "Geben Sie im Terminal ein,"
+description: "ROS: GPS-Daten im Terminal auslesen und Längengrad, Breitengrad sowie Höhe aus den Daten des GPS-Moduls ermitteln."
 ---
 
 # ROS: GPS-Daten lesen

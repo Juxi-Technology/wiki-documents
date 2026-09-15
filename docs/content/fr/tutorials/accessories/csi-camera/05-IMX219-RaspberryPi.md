@@ -1,6 +1,6 @@
 ---
 title: "IMX219 sur Raspberry Pi"
-description: "S'il n'existe pas, un problème peut provenir du noyau ou du matériel du périphérique ; essayez de réinstaller…"
+description: "Configurer la caméra CSI IMX219 sur Raspberry Pi : activer la caméra, vérifier la détection avec vcgencmd et prendre des photos avec raspistill."
 ---
 
 # IMX219 sur Raspberry Pi

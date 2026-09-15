@@ -1,6 +1,6 @@
 ---
 title: "Jetson: Serielle Kommunikation"
-description: "Abmelden und erneut anmelden, damit die Änderung wirksam wird."
+description: "AI-Sprachinteraktionsmodul am Jetson über die UART-Pins steuern: Abhängigkeiten installieren, Anschluss prüfen und das Beispielprogramm ausführen."
 ---
 
 # Jetson: Serielle Kommunikation

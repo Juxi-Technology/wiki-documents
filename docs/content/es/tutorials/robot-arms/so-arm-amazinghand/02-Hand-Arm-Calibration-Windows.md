@@ -1,6 +1,6 @@
 ---
 title: "Etapa 2: calibración de mano y brazos (Windows)"
-description: "En esta fase se calibran los tres dispositivos: el brazo maestro, el brazo esclavo y la mano AmazingHand. La …"
+description: "Fase 2 en Windows del tutorial SO-ARM101 más AmazingHand: calibra el brazo maestro, el brazo esclavo y la mano con la interfaz de dirección de la pinza."
 ---
 
 

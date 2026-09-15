@@ -1,6 +1,6 @@
 ---
 title: "단계 5: 모델 학습(Linux)"
-description: "본 단계에서는 수집한 데이터셋으로 정책(ACT 등)을 학습하여 배포 가능한 모델을 만듭니다. Linux는 GPU 학습에 최적의 환경입니다——CUDA 버전 torch 의존성이 자동으로 해석되어 수동…"
+description: "SO-ARM101과 AmazingHand 모델 학습 단계 5의 Linux 편 — 수집한 데이터셋으로 ACT 정책을 학습해 배포 모델을 만드는 과정을 다룹니다."
 ---
 
 

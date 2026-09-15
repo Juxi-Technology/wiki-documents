@@ -1,6 +1,6 @@
 ---
 title: "Visualização ROS2 RViz2"
-description: "- Sistema operacional: Ubuntu 22.04"
+description: "Visualize o módulo de voz KWS no RViz2 com ROS2 Humble: preparação do ambiente no Ubuntu 22.04, compilação e configuração da interface."
 ---
 
 # Visualização ROS2 RViz2

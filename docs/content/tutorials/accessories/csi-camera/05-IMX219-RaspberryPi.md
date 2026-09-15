@@ -1,6 +1,6 @@
 ---
 title: "IMX219 on Raspberry Pi"
-description: "If it does not exist, there may be a problem with the kernel or the device hardware; you can try reflashing t…"
+description: "IMX219 CSI camera on Raspberry Pi: enable the camera with raspi-config, verify detection with vcgencmd, and capture photos with raspistill."
 ---
 
 # IMX219 on Raspberry Pi

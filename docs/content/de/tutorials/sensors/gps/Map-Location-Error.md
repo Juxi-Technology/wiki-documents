@@ -1,6 +1,6 @@
 ---
 title: "Kartenpositionsfehler"
-description: "Die von Tencent und Amap verwendeten Koordinaten unterscheiden sich von den Koordinaten des Host-Computers. U…"
+description: "Kartenpositionsfehler verstehen: Koordinatensysteme von BeiDou, Tencent und Amap vergleichen und GPS-Koordinaten korrekt umrechnen."
 ---
 
 

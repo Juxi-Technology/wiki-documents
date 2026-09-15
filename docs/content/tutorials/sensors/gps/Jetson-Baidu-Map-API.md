@@ -1,6 +1,6 @@
 ---
 title: "Jetson: Baidu Map API"
-description: "1. Registration Method"
+description: "Jetson Baidu Map API tutorial: register on the Baidu Maps open platform, create a server-side application, and use its key to show GPS positions."
 ---
 
 # Jetson: Baidu Map API

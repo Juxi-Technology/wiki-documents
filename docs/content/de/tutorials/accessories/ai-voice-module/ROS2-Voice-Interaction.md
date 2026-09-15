@@ -1,6 +1,6 @@
 ---
 title: "ROS2-Sprachinteraktion"
-description: "Das AI-Sprachinteraktionsmodul unterstützt die folgenden drei Verkabelungsmethoden:"
+description: "AI-Sprachinteraktionsmodul unter ROS2 Humble einbinden: Abhängigkeiten installieren und die serielle oder I2C-Verkabelung automatisch erkennen lassen."
 ---
 
 # ROS2-Sprachinteraktion

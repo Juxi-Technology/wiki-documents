@@ -1,6 +1,6 @@
 ---
 title: Comunidad
-description: Juxi Technology Wiki — Comunidad
+description: "Comunidad de Juxi Technology: canales oficiales, muro de colaboradores, tareas abiertas y todas las vías para contribuir al wiki de robótica."
 ---
 
 # Comunidad

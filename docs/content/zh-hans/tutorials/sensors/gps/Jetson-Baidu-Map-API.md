@@ -1,6 +1,6 @@
 ---
 title: "Jetson:百度地图 API 申请"
-description: "1. 注册方法"
+description: "Jetson 百度地图 API 申请教程：注册百度地图开放平台账号并创建应用、获取密钥，用于上位机地图定位显示。"
 ---
 
 # Jetson:百度地图 API 申请

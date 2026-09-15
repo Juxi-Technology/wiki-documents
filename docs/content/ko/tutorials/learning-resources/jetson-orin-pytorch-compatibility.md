@@ -1,6 +1,6 @@
 ---
 title: Jetson Orin에서 PyTorch 비호환 문제
-description: Jetson Orin에서 PyTorch GPU가 안 될 때 해결법
+description: "Jetson Orin PyTorch 호환 문제 해결 — PyTorch GPU 미동작과 libcusparseLt 오류, torchvision 설치 문제를 다룹니다."
 ---
 
 # Jetson Orin에서 PyTorch 비호환 문제

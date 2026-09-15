@@ -1,6 +1,6 @@
 ---
 title: "RDK: Comunicación IIC"
-description: "Este repositorio proporciona código de ejemplo en Python para la comunicación entre la plataforma RDK X5 (Ras…"
+description: "Módulo de voz IA con la plataforma RDK X5 por IIC: código de ejemplo en Python, conexión del hardware, configuración del entorno y depuración."
 ---
 
 # RDK: Comunicación IIC

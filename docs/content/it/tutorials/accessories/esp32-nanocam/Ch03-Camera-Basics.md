@@ -1,6 +1,6 @@
 ---
 title: "Capitolo 3: Fondamenti della fotocamera"
-description: "Tutorial ESP32-NanoCam capitolo 3: capire l'interfaccia DVP della fotocamera, lo streaming MJPEG e il principio del frame buffer in PSRAM, visualizzare l'immagine predefinita e conoscere le modalità ai_mode integrate nel firmware."
+description: "Tutorial ESP32-NanoCam, capitolo 3: interfaccia DVP della fotocamera, streaming MJPEG, frame buffer in PSRAM e modalità di visione artificiale del firmware."
 ---
 
 # Capitolo 3: Fondamenti della fotocamera

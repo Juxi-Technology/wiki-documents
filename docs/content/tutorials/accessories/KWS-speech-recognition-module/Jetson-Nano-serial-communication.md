@@ -1,6 +1,6 @@
 ---
 title: Jetson Nano Serial Communication
-description: "Note: The voice interaction module needs to be flashed with the factory firmware. If the voice chip has not been flashed with firmware after being rec"
+description: "KWS speech recognition module serial communication on Jetson Nano: connect over USB, confirm the ttyUSB port, and run Python to read recognized commands."
 ---
 
 # Jetson Nano Serial Communication

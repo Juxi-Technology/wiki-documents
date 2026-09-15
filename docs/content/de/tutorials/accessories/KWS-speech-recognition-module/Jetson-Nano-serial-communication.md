@@ -1,6 +1,6 @@
 ---
 title: Jetson Nano serielle Kommunikation
-description: "Hinweis: Für das Sprachinteraktionsmodul muss die Werksfirmware geflasht werden; bei einem neuen, ungeflashten Sprachchip ist dies nicht erforderlich"
+description: "KWS-Spracherkennungsmodul am Jetson Nano: über USB anschließen, Port prüfen und erkannte Wake-Words und Befehlswörter per serieller Schnittstelle auslesen."
 ---
 
 # Jetson Nano serielle Kommunikation

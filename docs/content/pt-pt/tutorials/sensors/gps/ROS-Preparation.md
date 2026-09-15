@@ -1,6 +1,6 @@
 ---
 title: "ROS: preparação"
-description: "(1) Depois de criar o espaço de trabalho, copie o conteúdo da pasta gpssrc para dentro do src do espaço de tr…"
+description: "Preparação do ambiente ROS2 para o módulo GPS: compilação dos pacotes com o colcon, descrição dos pacotes e associação da porta série do dispositivo GPS."
 ---
 
 # ROS: preparação

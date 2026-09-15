@@ -1,6 +1,6 @@
 ---
 title: "Arduino: análise de posição"
-description: "Nesta lição, vamos aprender principalmente a utilizar o arduino e o módulo GPS para implementar a função de a…"
+description: "Análise e impressão de informações de posição com o Arduino UNO e o módulo GPS: ligação por UART ao pino D0, programa de leitura e teste pela porta série."
 ---
 
 # Arduino: análise de posição

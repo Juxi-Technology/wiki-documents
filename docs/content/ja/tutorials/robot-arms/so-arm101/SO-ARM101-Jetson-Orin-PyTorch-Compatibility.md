@@ -1,6 +1,6 @@
 ---
 title: Jetson Orin での PyTorch 非互換問題
-description: "jetson 版の pytorch をインストール"
+description: "Jetson Orin で SO-ARM101 の LeRobot を使うときの PyTorch 非互換問題。Jetson 版 PyTorch の導入手順を解説します。"
 ---
 
 # Jetson Orin での PyTorch 非互換問題

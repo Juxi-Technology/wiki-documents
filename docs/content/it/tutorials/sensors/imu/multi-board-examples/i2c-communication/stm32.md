@@ -7,7 +7,7 @@ description: "Questo esempio usa il STM32F103C8T6, un PC Windows, diversi cavi j
 
 Questo esempio usa il STM32F103C8T6, un PC Windows, diversi cavi jumper e il sensore di assetto IMU.
 
-[STM32.zip]
+STM32.zip
 
 Aprire I2C.uvprojx con keil5 e flashatre il programma sulla scheda core STM32F103C8T6
 

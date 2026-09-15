@@ -1,6 +1,6 @@
 ---
 title: "4K HDMI 캡처 카드"
-description: "메인보드 인터페이스에 따라 다음 3가지 배선 방법이 있습니다"
+description: "4K HDMI 캡처 카드 튜토리얼 — HDMI·Micro HDMI·DP 배선 방법과 OBS, Potplayer에서 화면을 표시하는 방법을 설명합니다."
 ---
 
 # 4K HDMI 캡처 카드

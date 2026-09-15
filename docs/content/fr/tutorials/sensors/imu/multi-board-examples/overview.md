@@ -1,6 +1,6 @@
 ---
 title: "Aperçu des cas multi-hôtes"
-description: "1. Installer le pilote CH341 (en tant qu'administrateur)"
+description: "Aperçu des exemples IMU sur plusieurs hôtes (Arduino, STM32, Raspberry Pi, Jetson, RDK, PC) : prérequis et installation du pilote CH341."
 ---
 
 # Aperçu des cas multi-hôtes

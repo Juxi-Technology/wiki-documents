@@ -1,6 +1,6 @@
 ---
 title: "Comunicação Serial Raspberry Pi"
-description: "Nota: o módulo de interação por voz precisa ser gravado com o firmware de fábrica. Se o chip de voz ainda não tiver sido gravado com firmware após o recebimento, não é necessário gravá-lo."
+description: "Comunicação série entre o módulo de reconhecimento de voz KWS e o Raspberry Pi: verificação da porta USB e execução do exemplo de código Python."
 ---
 
 # Comunicação Serial Raspberry Pi

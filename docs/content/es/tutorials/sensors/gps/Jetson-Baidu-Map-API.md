@@ -1,6 +1,6 @@
 ---
 title: "Jetson: API de Baidu Maps"
-description: "1. Método de registro"
+description: "Módulo GPS/BeiDou con NVIDIA Jetson Orin: registra la API de Baidu Maps y muestra en el mapa la ubicación obtenida por el módulo."
 ---
 
 # Jetson: API de Baidu Maps

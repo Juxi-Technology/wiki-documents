@@ -1,6 +1,6 @@
 ---
 title: "Jetson: 串列埠通訊"
-description: "登出並重新登入生效。"
+description: "AI 語音互動模組教程(Jetson 平台)——串列埠接線、連接埠檢查與 Python 範例程式執行。"
 ---
 
 # Jetson: 串列埠通訊

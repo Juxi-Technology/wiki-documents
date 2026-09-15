@@ -1,6 +1,6 @@
 ---
 title: "Jetson : analyse GPS"
-description: "Dans cette leçon, nous allons principalement apprendre à lire et à analyser les informations de position à l'…"
+description: "Lecture et analyse des informations de position du module GPS BeiDou sur Jetson Orin via USB : filtrage des trames GNGGA et GNVTG en Python."
 ---
 
 # Jetson : analyse GPS

@@ -1,6 +1,6 @@
 ---
 title: "Arduino: leitura de posição"
-description: "Nesta lição, vamos aprender principalmente a usar o arduino e o módulo GPS para implementar a função de leitu…"
+description: "Leitura de posição com Arduino UNO e o módulo GPS e BeiDou ATGM336H-5N — ler e imprimir pela porta serial os dados recebidos, sem análise."
 ---
 
 # Arduino: leitura de posição

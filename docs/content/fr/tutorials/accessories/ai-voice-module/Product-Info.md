@@ -1,6 +1,6 @@
 ---
 title: "Informations produit"
-description: "CI1302 est une nouvelle génération de puce vocale intelligente à réseau de neurones haute performance dévelop…"
+description: "Présentation du module d'interaction vocale IA à puce CI1302 : caractéristiques, reconnaissance hors ligne de 110 commandes et interfaces matérielles."
 ---
 
 # Informations produit

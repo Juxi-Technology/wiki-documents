@@ -1,6 +1,6 @@
 ---
 title: "Arduino: IIC-Kommunikation"
-description: "1. Öffnen Sie die Datei IICVoice.ino"
+description: "AI-Sprachinteraktionsmodul mit Arduino über IIC verbinden: Hardwareanschluss, Beispiel kompilieren und hochladen, Registerzuordnung und serieller Test."
 ---
 
 # Arduino: IIC-Kommunikation

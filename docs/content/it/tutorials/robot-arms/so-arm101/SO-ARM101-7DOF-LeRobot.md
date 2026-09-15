@@ -1,6 +1,6 @@
 ---
 title: SO-ARM101 Conversione a 7-DOF e utilizzo con LeRobot
-description: "Dopo la conversione del SO-ARM101 da 6 servomotori a 7 gradi di libertà (nuovo wrist_yaw): corrispondenza degli ID dei servomotori, modifiche al codice e metodi di sostituzione, note sulla calibrazione e utilizzo in LeRobot."
+description: "Conversione del braccio SO-ARM101 da 6 a 7 gradi di libertà: nuovi giunti e ID dei servomotori, modifiche al codice LeRobot, calibrazione e note d'uso."
 ---
 
 # SO-ARM101 Conversione a 7-DOF e utilizzo con LeRobot

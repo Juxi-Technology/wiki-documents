@@ -1,6 +1,6 @@
 ---
 title: "Arduino: leitura de posição"
-description: "Nesta lição, vamos aprender principalmente a utilizar o arduino e o módulo GPS para implementar a função de l…"
+description: "Leitura de informações de posição com o Arduino UNO e o módulo GPS: ligação por UART, programa de leitura simples e carregamento do código para a placa."
 ---
 
 # Arduino: leitura de posição

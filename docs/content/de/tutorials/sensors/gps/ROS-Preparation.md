@@ -1,6 +1,6 @@
 ---
 title: "ROS: Vorbereitung"
-description: "(1) Nachdem Sie den Arbeitsbereich eingerichtet haben, kopieren Sie den Inhalt des Ordners gpssrc in das src-…"
+description: "ROS-Vorbereitung für das GPS-Modul: Arbeitsbereich kompilieren und den GPS-Port dauerhaft binden, damit die Schnittstelle stabil bleibt."
 ---
 
 # ROS: Vorbereitung

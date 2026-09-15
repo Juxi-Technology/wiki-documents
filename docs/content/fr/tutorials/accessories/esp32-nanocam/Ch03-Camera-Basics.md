@@ -1,6 +1,6 @@
 ---
 title: "Chapitre 3 : Bases de la caméra"
-description: "Tutoriel ESP32-NanoCam chapitre 3 : comprendre l'interface caméra DVP, la diffusion MJPEG et le principe du tampon de trames en PSRAM, afficher l'image par défaut et découvrir les modes ai_mode intégrés au firmware."
+description: "Tutoriel ESP32-NanoCam chapitre 3 : comprendre l'interface caméra DVP, la diffusion vidéo MJPEG en PSRAM et les modes IA du firmware."
 ---
 
 # Chapitre 3 : Bases de la caméra

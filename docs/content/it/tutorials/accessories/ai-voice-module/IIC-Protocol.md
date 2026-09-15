@@ -1,6 +1,6 @@
 ---
 title: "Protocollo IIC"
-description: "Nota: il dispositivo host e il modulo di interazione vocale possono utilizzare alimentazioni diverse, ma al m…"
+description: "Protocollo IIC del modulo di interazione vocale IA: indirizzo slave, registri di lettura dei comandi e di riproduzione, formato dei frame e note sul GND comune."
 ---
 
 # Protocollo IIC

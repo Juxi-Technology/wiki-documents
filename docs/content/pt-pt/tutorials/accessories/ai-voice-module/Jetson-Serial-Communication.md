@@ -1,6 +1,6 @@
 ---
 title: "Jetson: Comunicação de porta série"
-description: "Termine sessão e volte a iniciá-la para que tenha efeito."
+description: "Ligação por porta série entre o módulo de voz AI e o Jetson: configuração da UART, verificação da porta e execução do exemplo de comunicação."
 ---
 
 # Jetson: Comunicação de porta série

@@ -1,6 +1,6 @@
 ---
 title: "Visão Geral dos Casos Multi-Host"
-description: "1. Instalação do driver CH341 (Instalar como Administrador)"
+description: "Visão geral dos casos multi-host do módulo IMU da Juxi Technology — precauções de conexão, instalação do driver CH341 e exemplos para várias placas host."
 ---
 
 # Visão Geral dos Casos Multi-Host

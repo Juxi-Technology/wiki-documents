@@ -1,6 +1,6 @@
 ---
 title: "Custom Protocol Entry Creation"
-description: "The module is already flashed with the speech recognition firmware at the factory, and the factory firmware i…"
+description: "Create custom entries for the AI Voice Interaction Module: build new speech recognition firmware and command words on the Chipintelli voice AI platform."
 ---
 
 # Custom Protocol Entry Creation

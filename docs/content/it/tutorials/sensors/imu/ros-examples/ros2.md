@@ -1,6 +1,6 @@
 ---
 title: Applicazione ROS2
-description: "Configurazione di sistema: ubuntu22.04"
+description: "Applicazione ROS2 del modulo IMU su Ubuntu 22.04: installare ROS2, costruire il progetto e avviare il nodo del driver per leggere i dati di assetto."
 ---
 
 # Applicazione ROS2

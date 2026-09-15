@@ -1,6 +1,6 @@
 ---
 title: "SO-ARM101 Jetson Orin PyTorch Compatibility"
-description: "Possible Problem 1:"
+description: "SO-ARM101 Jetson Orin PyTorch compatibility: fix GPU unavailable errors and missing cuSPARSELt library problems when training LeRobot on Jetson."
 ---
 
 # SO-ARM101 Jetson Orin PyTorch Compatibility

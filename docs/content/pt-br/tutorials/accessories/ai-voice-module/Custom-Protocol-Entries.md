@@ -1,6 +1,6 @@
 ---
 title: "Criação de entradas de protocolo personalizadas"
-description: "O módulo já sai de fábrica com o firmware de reconhecimento de fala gravado, e o firmware de fábrica também é…"
+description: "Criação de entradas de protocolo personalizadas no módulo de interação por voz IA da Juxi Technology — gerar o firmware e criar novas palavras de comando."
 ---
 
 # Criação de entradas de protocolo personalizadas

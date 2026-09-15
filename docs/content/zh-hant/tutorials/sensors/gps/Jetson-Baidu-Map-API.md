@@ -1,6 +1,6 @@
 ---
 title: "Jetson:百度地圖 API 申請"
-description: "1. 註冊方法"
+description: "Jetson 導航專案申請百度地圖 API 的教程：開放平台註冊、建立伺服器端應用並取得 ak 的步驟。"
 ---
 
 # Jetson:百度地圖 API 申請

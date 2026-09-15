@@ -1,6 +1,6 @@
 ---
 title: "安裝環境(macOS)"
-description: "黑色主動臂使用 5V6A 電源適配器"
+description: "XLeRobot 環境安裝教程(macOS 版)：權限設定、Miniconda 安裝、換源、虛擬環境建立與 LeRobot 部署。"
 ---
 
 # 安裝環境(macOS)

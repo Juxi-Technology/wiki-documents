@@ -1,6 +1,6 @@
 ---
 title: "階段三：遙操作（Windows）"
-description: "本階段啟動遙操作閉環：主動臂控制從動臂運動、夾爪控制 AmazingHand 開合。這是驗證整套系統是否正常工作的關鍵階段。"
+description: "SO-ARM101 與 AmazingHand 的階段三遙操作教程(Windows)——以 COM 埠執行主動臂對從動臂與靈巧手的連動測試。"
 ---
 
 

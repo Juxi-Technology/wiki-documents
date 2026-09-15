@@ -1,6 +1,6 @@
 ---
 title: "Jetson CSI-Kamera einrichten"
-description: "Wählen Sie mit der Pfeiltaste nach unten Configure Jetson 24pin CSI Connector. Drücken Sie dann Enter, um zur…"
+description: "CSI-Kamera am NVIDIA Jetson einrichten: Pins konfigurieren, Video-Geräte prüfen und das Kamerabild in der Vorschau anzeigen."
 ---
 
 # Jetson CSI-Kamera einrichten

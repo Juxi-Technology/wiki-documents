@@ -1,6 +1,6 @@
 ---
 title: "Jetson"
-description: "本チュートリアルはJetson Orin NXマザーボードを例にしています。"
+description: "Jetson Orin NX で IMU 姿勢センサーを I2C 接続するチュートリアル。配線、デバイス確認、ドライバ導入、データ取得、校正の手順を解説します。"
 ---
 
 # Jetson
@@ -44,7 +44,7 @@ sudo apt install -y python3-smbus2
 
 3.2 ファイルの転送
 
-[IMU_ROS2.zip]
+IMU_ROS2.zip
 
 MobaXterm を使ったファイル転送にまだ慣れていない方は、以下のページで MobaXterm の詳しいインストール方法と操作方法をご確認ください: [文件远程传输](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 

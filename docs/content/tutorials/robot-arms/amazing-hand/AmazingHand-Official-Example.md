@@ -16,11 +16,11 @@ It is recommended to download the Compressed Packet of the code under this usage
 
 Windows Code Compressed Packet
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 Linux Code Compressed Packet
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 ```Plain Text
 git clone https://github.com/pollen-robotics/AmazingHand.git

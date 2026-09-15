@@ -1,6 +1,6 @@
 ---
 title: ROS1 Application
-description: "System configuration: Ubuntu 20.04"
+description: "IMU ROS1 application tutorial: set up ROS Noetic on Ubuntu 20.04 and connect the high-precision IMU attitude sensor to publish orientation data."
 ---
 
 # ROS1 Application

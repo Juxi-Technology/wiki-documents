@@ -1,6 +1,6 @@
 ---
 title: "RDK: Comunicação por porta serial"
-description: "Este repositório fornece um código de exemplo em Python para a comunicação entre a plataforma RDK X5 (Raspber…"
+description: "Comunicação serial entre a plataforma RDK X5 e o módulo de interação por voz IA da Juxi Technology — exemplo em Python, UART a 115200."
 ---
 
 # RDK: Comunicação por porta serial

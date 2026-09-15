@@ -1,6 +1,6 @@
 ---
 title: Comunicazione seriale Jetson
-description: "Nota: il modulo di interazione vocale richiede il flashing del firmware di fabbrica; se il chip vocale è nuovo e non flashato, non è necessario"
+description: "Modulo di riconoscimento vocale KWS su schede Jetson: comunicazione via porta seriale e analisi del protocollo dei risultati di riconoscimento."
 ---
 
 # Comunicazione seriale Jetson

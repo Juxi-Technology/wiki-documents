@@ -1,6 +1,6 @@
 ---
 title: "Uso di Jupyter Lab"
-description: "Utilizzare il seguente comando per installare Jupyter Lab: se la velocità di download di Jupyter Lab è lenta,…"
+description: "Uso di Jupyter Lab su Jetson: installare Jupyter Lab, impostare il browser predefinito e avviare il server per acquisire dati dalle fotocamere tramite notebook."
 ---
 
 # Uso di Jupyter Lab

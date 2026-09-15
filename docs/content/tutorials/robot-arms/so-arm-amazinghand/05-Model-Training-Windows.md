@@ -1,6 +1,6 @@
 ---
 title: "Stage 5: Model Training (Windows)"
-description: "This stage trains a policy (ACT, etc.) on the collected dataset to produce a deployable model. Training is th…"
+description: "Stage 5 model training on Windows: verify the CUDA GPU environment and train a deployable ACT policy on the recorded LeRobot dataset."
 ---
 
 

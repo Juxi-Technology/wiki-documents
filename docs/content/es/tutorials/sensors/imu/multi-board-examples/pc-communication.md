@@ -19,5 +19,5 @@ Configurar el asistente serie como se muestra a continuación
 
 La salida serie contiene datos sin procesar; su significado se detalla en el documento « **Protocolo de comunicación** ».
 
-[Módulo IMU – protocolo de comunicación serie e I2C.xlsx]
+Módulo IMU – protocolo de comunicación serie e I2C.xlsx
 

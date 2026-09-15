@@ -1,6 +1,6 @@
 ---
 title: "Arduino: Communication par port série"
-description: "1. Ouvrez le fichier UARTVoice.ino"
+description: "Communication par port série entre un Arduino et le module d'interaction vocale IA : câblage RX/TX croisé, téléversement et test à 115200 bauds."
 ---
 
 # Arduino: Communication par port série

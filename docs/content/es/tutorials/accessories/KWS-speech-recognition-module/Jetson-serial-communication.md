@@ -1,6 +1,6 @@
 ---
 title: Comunicación serie Jetson
-description: "Nota: el módulo de interacción de voz requiere flashear el firmware de fábrica; si el chip de voz es nuevo y no se ha flasheado, no es necesario"
+description: "Módulo de voz KWS en la placa Jetson: comunicación serie por USB, reconocimiento del puerto y ejemplo de código para enviar comandos al módulo."
 ---
 
 # Comunicación serie Jetson

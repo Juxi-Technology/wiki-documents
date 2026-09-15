@@ -1,6 +1,6 @@
 ---
 title: "IMX219 no Raspberry Pi"
-description: "Se não existir, pode ser que haja um problema no kernel ou no hardware do dispositivo; pode tentar reinstalar…"
+description: "Ative e teste a câmara CSI IMX219 no Raspberry Pi: nó de dispositivo, ativação no raspi-config e captura de fotografias com o raspistill."
 ---
 
 # IMX219 no Raspberry Pi

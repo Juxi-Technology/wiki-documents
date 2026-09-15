@@ -1,6 +1,6 @@
 ---
 title: "Umgebung einrichten (macOS)"
-description: "Der schwarze Leader-Arm verwendet ein 5V6A-Netzteil"
+description: "XLeRobot-Umgebung unter macOS einrichten: Portberechtigungen erteilen, Miniconda installieren und die Paketquellen konfigurieren."
 ---
 
 # Umgebung einrichten (macOS)

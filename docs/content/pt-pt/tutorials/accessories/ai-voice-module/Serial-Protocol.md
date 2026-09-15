@@ -1,6 +1,6 @@
 ---
 title: "Protocolo de porta série"
-description: "Abra o ficheiro lista de protocolos de palavras de comando / palavras de reprodução V1中文 nos anexos; consegue…"
+description: "Protocolo de porta série do módulo de interação por voz IA: entradas funcionais, palavras de comando e frases de reprodução com exemplos de tramas."
 ---
 
 # Protocolo de porta série

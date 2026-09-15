@@ -1,6 +1,6 @@
 ---
 title: "STM32F103: saída de análise GPS"
-description: "Nesta lição, vamos aprender principalmente a usar o STM32F103C8T6 e o módulo GPS para implementar a função de…"
+description: "Análise GPS no STM32F103C8T6 — ler o módulo GPS e BeiDou pela UART, converter as coordenadas em graus e imprimir as informações de posição."
 ---
 
 # STM32F103: saída de análise GPS

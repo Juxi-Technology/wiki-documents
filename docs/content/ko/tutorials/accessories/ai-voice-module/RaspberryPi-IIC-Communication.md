@@ -1,6 +1,6 @@
 ---
 title: "라즈베리파이: IIC 통신"
-description: "Raspberry Pi 재부팅"
+description: "AI 음성 인터랙션 모듈 라즈베리파이 IIC 통신 — I2C 활성화와 배선 설명, 실행 및 출력 형식 확인까지 안내합니다."
 ---
 
 # 라즈베리파이: IIC 통신

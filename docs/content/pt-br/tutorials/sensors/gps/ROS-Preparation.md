@@ -1,6 +1,6 @@
 ---
 title: "ROS: preparação"
-description: "(1) Depois de criar o espaço de trabalho, copie o conteúdo da pasta gpssrc para o src do espaço de trabalho e…"
+description: "Preparação do ambiente ROS para o módulo GPS e BeiDou — compilar o espaço de trabalho, conhecer os pacotes do driver NMEA e vincular a porta serial."
 ---
 
 # ROS: preparação

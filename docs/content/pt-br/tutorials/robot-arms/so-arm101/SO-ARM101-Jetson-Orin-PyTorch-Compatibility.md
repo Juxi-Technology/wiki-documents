@@ -1,6 +1,6 @@
 ---
 title: "Compatibilidade PyTorch no Jetson Orin"
-description: "Possível problema 1:"
+description: "Compatibilidade do PyTorch no Jetson Orin — instalar a versão NVIDIA correta, confirmar o CUDA e resolver erros de bibliotecas no SO-ARM101 com LeRobot."
 ---
 
 # Compatibilidade PyTorch no Jetson Orin

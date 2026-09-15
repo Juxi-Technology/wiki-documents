@@ -1,6 +1,6 @@
 ---
 title: "Jetson: análisis GPS"
-description: "En esta lección aprenderemos principalmente a utilizar el Jetson Orin y el módulo GPS para leer y analizar la…"
+description: "Módulo GPS/BeiDou con NVIDIA Jetson Orin: lee y analiza los datos del módulo para obtener latitud, longitud y altitud de forma estable."
 ---
 
 # Jetson: análisis GPS

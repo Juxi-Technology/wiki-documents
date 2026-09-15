@@ -1,13 +1,13 @@
 ---
 title: Communication série PC
-description: "[uartassist5.0.2.zip]"
+description: "Communication série entre un PC et le module de reconnaissance vocale KWS : configurer l'assistant série à 115200 bauds et tester le mot d'éveil."
 ---
 
 # Communication série PC
 
 ## 1. Télécharger l'assistant série
 
-[uartassist5.0.2.zip]
+uartassist5.0.2.zip
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Etapa 4: Coleta de dados (Windows)"
-description: "Esta etapa grava o conjunto de dados de teleoperação: coleta amostras de \"ângulo das juntas + imagem das câme…"
+description: "Etapa 4 do tutorial SO-ARM101 + AmazingHand no Windows — gravar o conjunto de dados de teleoperação com ângulos das juntas e imagens das câmeras."
 ---
 
 

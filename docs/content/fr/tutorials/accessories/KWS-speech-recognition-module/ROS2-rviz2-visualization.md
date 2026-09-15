@@ -1,6 +1,6 @@
 ---
 title: "Visualisation ROS2 RViz2"
-description: "- Système d'exploitation : Ubuntu 22.04"
+description: "Visualiser les mots d'éveil du module vocal KWS sous ROS2 RViz2 : préparer l'environnement Ubuntu 22.04, créer le paquet et afficher les données."
 ---
 
 # Visualisation ROS2 RViz2

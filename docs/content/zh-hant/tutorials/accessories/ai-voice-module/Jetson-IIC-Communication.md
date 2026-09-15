@@ -1,6 +1,6 @@
 ---
 title: "Jetson: IIC通訊"
-description: "登出並重新登入生效。"
+description: "AI 語音互動模組教程(Jetson 平台)——IIC 接線、I2C 裝置檢查與 Python 範例程式執行。"
 ---
 
 # Jetson: IIC通訊

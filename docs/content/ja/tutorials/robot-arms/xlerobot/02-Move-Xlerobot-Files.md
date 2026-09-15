@@ -1,6 +1,6 @@
 ---
 title: "XLeRobot ファイルの移動"
-description: "https://github.com/Vector-Wangel/XLeRobot で圧縮ファイルをダウンロードして解凍します"
+description: "XLeRobot のファイル配置手順。リポジトリの取得と、SO-ARM101 の逆運動学ソルバーを LeRobot 側へコピーする方法を解説します。"
 ---
 
 # XLeRobot ファイルの移動

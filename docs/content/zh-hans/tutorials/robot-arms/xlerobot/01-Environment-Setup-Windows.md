@@ -1,6 +1,6 @@
 ---
 title: "安装环境(Windows)"
-description: "黑色主动臂使用 5V6A 电源适配器"
+description: "XLeRobot 环境安装教程 Windows 篇：在 Windows 系统上安装 Miniconda，并配置 conda 清华镜像源。"
 ---
 
 # 安装环境(Windows)

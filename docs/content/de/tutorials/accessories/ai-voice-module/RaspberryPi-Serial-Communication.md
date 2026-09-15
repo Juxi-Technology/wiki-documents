@@ -1,6 +1,6 @@
 ---
 title: "Raspberry Pi: Serielle Kommunikation"
-description: "Bearbeiten Sie /boot/firmware/config.txt oder /boot/config.txt und stellen Sie die folgende Konfiguration sic…"
+description: "AI-Sprachinteraktionsmodul am Raspberry Pi über UART nutzen: Abhängigkeiten installieren, Schnittstelle aktivieren, verkabeln und Daten auswerten."
 ---
 
 # Raspberry Pi: Serielle Kommunikation

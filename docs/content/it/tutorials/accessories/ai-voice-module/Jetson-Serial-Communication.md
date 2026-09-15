@@ -1,6 +1,6 @@
 ---
 title: "Jetson: Comunicazione della porta seriale"
-description: "La modifica ha effetto dopo la disconnessione e un nuovo accesso."
+description: "Modulo di interazione vocale IA su Jetson via porta seriale: dipendenze, permessi della porta e codice Python per ricevere i comandi riconosciuti."
 ---
 
 # Jetson: Comunicazione della porta seriale

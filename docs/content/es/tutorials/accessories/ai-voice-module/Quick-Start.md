@@ -1,6 +1,6 @@
 ---
 title: "Inicio rápido"
-description: "El firmware con función de reconocimiento de voz ya viene grabado de fábrica, por lo que el usuario puede exp…"
+description: "Inicio rápido del módulo de voz IA: con el firmware de fábrica, conecta el dispositivo y prueba el reconocimiento de voz y la reproducción."
 ---
 
 # Inicio rápido

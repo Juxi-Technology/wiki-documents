@@ -1,6 +1,6 @@
 ---
 title: "Interaction vocale ROS2"
-description: "Le module d'interaction vocale prend en charge les trois méthodes de câblage suivantes :"
+description: "Interaction vocale ROS2 avec le module d'interaction vocale IA : préparer Ubuntu 22.04 et ROS2 Humble, puis détecter automatiquement le câblage série ou IIC."
 ---
 
 # Interaction vocale ROS2

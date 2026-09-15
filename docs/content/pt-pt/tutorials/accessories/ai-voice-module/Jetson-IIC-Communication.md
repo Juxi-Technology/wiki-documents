@@ -1,6 +1,6 @@
 ---
 title: "Jetson: Comunicação IIC"
-description: "Termine sessão e volte a iniciá-la para que tenha efeito."
+description: "Ligação I2C entre o módulo de voz AI e o Jetson: instalação das dependências, verificação do endereço 0x2A no barramento e execução do exemplo."
 ---
 
 # Jetson: Comunicação IIC

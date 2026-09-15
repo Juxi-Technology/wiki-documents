@@ -1,6 +1,6 @@
 ---
 title: "Étape 2 : calibration main et bras (Windows)"
-description: "Cette phase consiste à calibrer trois équipements : le bras maître, le bras esclave et la main AmazingHand. L…"
+description: "Phase 2 sous Windows : calibrer le bras maître, le bras esclave SO-ARM101 avec la main AmazingHand et les angles de la main et de la pince."
 ---
 
 

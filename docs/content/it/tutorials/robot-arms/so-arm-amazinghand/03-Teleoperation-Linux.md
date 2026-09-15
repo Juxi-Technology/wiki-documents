@@ -1,6 +1,6 @@
 ---
 title: "Fase 3: Teleoperazione (Linux)"
-description: "In questa fase si avvia il ciclo chiuso di teleoperazione: il braccio master controlla il movimento del bracc…"
+description: "Fase 3 del tutorial SO-ARM101 e AmazingHand su Linux: avviare la teleoperazione, in cui il braccio master controlla il braccio slave, e verificare il seguito."
 ---
 
 

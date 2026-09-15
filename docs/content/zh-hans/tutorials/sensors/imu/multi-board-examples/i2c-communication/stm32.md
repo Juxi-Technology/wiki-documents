@@ -7,7 +7,7 @@ description: "本次例程使用的是STM32F103C8T6，一台windows电脑、杜�
 
 本次例程使用的是STM32F103C8T6，一台windows电脑、杜邦线若干、IMU姿态传感器。
 
-[STM32.zip]
+STM32.zip
 
 使用keil5软件打开I2C.uvprojx，烧录程序到STM32F103C8T6核心板中
 

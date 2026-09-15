@@ -1,6 +1,6 @@
 ---
 title: "STM32F103 : sortie analyse GPS"
-description: "Dans cette leçon, nous allons principalement apprendre à utiliser le STM32F103C8T6 et le module GPS pour réal…"
+description: "Analyse des informations de position du module GPS BeiDou avec un STM32F103C8T6 : câblage UART, conversion degrés/minutes et sortie série à 9600 bauds."
 ---
 
 # STM32F103 : sortie analyse GPS

@@ -1,6 +1,6 @@
 ---
 title: "STS3215 & SCS0009 調試教程"
-description: "飛特上位機FD軟件 https://gitee.com/ftservo"
+description: "鉅犀科技 Feetech 舵機調試教程——STS3215 與 SCS0009 的飛特 FD 上位機軟體與調試資料下載。"
 ---
 
 # STS3215 & SCS0009 調試教程
@@ -14,9 +14,9 @@ description: "飛特上位機FD軟件 https://gitee.com/ftservo"
 
 ![image – 2](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTM1YmVhNTllZDk5MzExNzIyMzA1YzZkNzkxYTljYjFfNzNiZGY5MTAzMmNkY2RkMjFiZTg1OGE3MWJhMjg5NGNfSUQ6NzYzODk1ODc4NDg2OTczMTI3Nl8xNzgwNjYyNDM4OjE3ODA3NDg4MzhfVjM)
 
-[STS3215 舵机调试资料.zip]
+STS3215 舵机调试资料.zip
 
-[SCS009 舵机调试资料.zip]
+SCS009 舵机调试资料.zip
 
 
 

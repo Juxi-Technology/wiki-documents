@@ -1,6 +1,6 @@
 ---
 title: "Controle de Interface da Mão Robótica"
-description: "[AmazingHandControl.zip]"
+description: "Controlo de interface da mão robótica AmazingHand: exemplos em Python do repositório oficial, controlo básico e protocolo de comunicação TTL."
 ---
 
 # Controle de Interface da Mão Robótica
@@ -10,7 +10,7 @@ description: "[AmazingHandControl.zip]"
 
 https://github.com/Betatester777/AmazingHandControl
 
-[AmazingHandControl.zip]
+AmazingHandControl.zip
 
 
 ---

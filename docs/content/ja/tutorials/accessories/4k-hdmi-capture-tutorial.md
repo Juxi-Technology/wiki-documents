@@ -1,6 +1,6 @@
 ---
 title: "4K HDMI キャプチャカード"
-description: "マザーボードのインターフェースに応じて、以下の3つの配線方法があります"
+description: "4K HDMI キャプチャカードの使い方。HDMI、Micro HDMI、DP の 3 通りの配線方法と OBS での録画・配信手順を解説します。"
 ---
 
 # 4K HDMI キャプチャカード

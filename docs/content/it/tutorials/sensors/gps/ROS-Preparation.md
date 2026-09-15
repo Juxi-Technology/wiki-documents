@@ -1,6 +1,6 @@
 ---
 title: "ROS: preparazione"
-description: "（1）Dopo aver creato lo spazio di lavoro, copiare il contenuto della cartella gpssrc nella directory src dello…"
+description: "Preparazione dell'ambiente ROS per il modulo GPS: creare il workspace, compilare il pacchetto del driver e associare la porta seriale del dispositivo."
 ---
 
 # ROS: preparazione

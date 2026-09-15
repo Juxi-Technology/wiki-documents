@@ -1,6 +1,6 @@
 ---
 title: "ROS1-Sprachinteraktion"
-description: "Das AI-Sprachinteraktionsmodul unterstützt die folgenden drei Verkabelungsmethoden:"
+description: "AI-Sprachinteraktionsmodul unter ROS1 mit Noetic oder Melodic: Umgebung einrichten und die serielle oder I2C-Verkabelung automatisch erkennen lassen."
 ---
 
 # ROS1-Sprachinteraktion

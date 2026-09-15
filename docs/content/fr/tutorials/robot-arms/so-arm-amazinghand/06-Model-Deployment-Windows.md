@@ -1,6 +1,6 @@
 ---
 title: "Étape 6 : déploiement du modèle (Windows)"
-description: "Cette phase charge la politique entraînée pour que le robot exécute la tâche de manière autonome et enregistr…"
+description: "Phase 6 sous Windows : déployer la politique entraînée sur SO-ARM101 et AmazingHand, évaluer la tâche et itérer pour l'améliorer."
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "JetCam 使用"
-description: "JetCam使用"
+description: "JetCam 使用教程——在 NVIDIA Jetson 上安裝 JetCam 函式庫,以 Python 快速擷取 CSI 攝像頭畫面。"
 ---
 
 # JetCam 使用

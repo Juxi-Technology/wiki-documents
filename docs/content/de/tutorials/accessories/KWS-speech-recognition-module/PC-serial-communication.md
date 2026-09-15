@@ -1,13 +1,13 @@
 ---
 title: PC serielle Kommunikation
-description: "[uartassist5.0.2.zip]"
+description: "KWS-Spracherkennungsmodul am PC: seriellen Assistenten installieren, Gerät anschließen, Baudrate 115200 einstellen und Wake-Word-Test ausführen."
 ---
 
 # PC serielle Kommunikation
 
 ## 1. Seriellen Assistenten herunterladen
 
-[uartassist5.0.2.zip]
+uartassist5.0.2.zip
 
 ---
 

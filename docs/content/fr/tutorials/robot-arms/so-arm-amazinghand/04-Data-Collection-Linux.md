@@ -1,6 +1,6 @@
 ---
 title: "Phase 4 : Collecte de données (Linux)"
-description: "Cette phase consiste à enregistrer un jeu de données de téléopération : collecter des échantillons « angles d…"
+description: "Phase 4 sous Linux : enregistrer un jeu de données de téléopération avec les caméras, appliquer les règles de manipulation et relire les épisodes."
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Using JetCam"
-description: "JetCam Usage"
+description: "Using JetCam on Jetson: install NVIDIA's Python camera library and run the CSI and USB camera example programs inside Jupyter Lab."
 ---
 
 # Using JetCam

@@ -1,6 +1,6 @@
 ---
 title: "ROS2 rviz2 Visualization"
-description: "- Operating System: Ubuntu 22.04"
+description: "ROS2 rviz2 visualization for the KWS speech recognition module: build a workspace and display recognized voice commands as markers on Ubuntu 22.04."
 ---
 
 # ROS2 rviz2 Visualization

@@ -1,6 +1,6 @@
 ---
 title: "Jetson: 시리얼 통신"
-description: "로그아웃 후 다시 로그인하면 적용됩니다."
+description: "AI 음성 인터랙션 모듈 Jetson 시리얼 통신 — 시리얼 포트 확인과 배선, 실행 방법과 출력 형식을 안내합니다."
 ---
 
 # Jetson: 시리얼 통신

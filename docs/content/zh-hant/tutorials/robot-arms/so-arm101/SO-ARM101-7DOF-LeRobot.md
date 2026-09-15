@@ -1,6 +1,6 @@
 ---
 title: SO-ARM101 7-DOF 改造與 LeRobot 使用教程
-description: "SO-ARM101 從 6 舵機改造為 7 自由度(新增 wrist_yaw)後的舵機 ID 對照、代碼改動與替換方法、校準注意事項,以及在 LeRobot 中的使用方法。"
+description: "SO-ARM101 由 6 舵機改造為 7 自由度的完整教程：關節順序、核心代碼改動、校準與 LeRobot 使用方法。"
 ---
 
 # SO-ARM101 7-DOF 改造與 LeRobot 使用教程

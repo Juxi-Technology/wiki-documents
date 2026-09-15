@@ -1,6 +1,6 @@
 ---
 title: "ROS: Preparation"
-description: "(1) After setting up the workspace, copy the contents of the gpssrc folder into the src of the workspace, the…"
+description: "ROS GPS preparation tutorial: compile the workspace packages for the GPS/BeiDou module and bind a fixed serial port name with a udev rule."
 ---
 
 # ROS: Preparation

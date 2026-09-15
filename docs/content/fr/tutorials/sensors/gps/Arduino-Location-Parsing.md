@@ -1,6 +1,6 @@
 ---
 title: "Arduino : analyse de position"
-description: "Dans cette leçon, nous allons principalement apprendre à utiliser Arduino et le module GPS pour réaliser la f…"
+description: "Analyse et impression des informations de position du module GPS BeiDou avec un Arduino UNO : lecture du port série et affichage des coordonnées."
 ---
 
 # Arduino : analyse de position

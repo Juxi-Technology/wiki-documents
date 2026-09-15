@@ -1,6 +1,6 @@
 ---
 title: "Chapter 3: Camera Basics"
-description: "ESP32-NanoCam tutorial Chapter 3: understand the DVP camera interface, MJPEG streaming, and PSRAM frame buffering, view the default image, and get to know the firmware's built-in ai_mode modes."
+description: "ESP32-NanoCam tutorial Chapter 3: learn the DVP camera interface, MJPEG streaming, PSRAM frame buffering, and the AI modes built into the firmware."
 ---
 
 # Chapter 3: Camera Basics

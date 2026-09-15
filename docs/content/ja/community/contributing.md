@@ -1,6 +1,6 @@
 ---
 title: 貢献ガイド
-description: Juxi Technology Wiki にコンテンツを貢献する方法
+description: "Juxi Technology Wiki への貢献ガイド。Fork からプルリクエストまでの流れ、コンテンツ規範、行動規範を解説します。"
 ---
 
 # 貢献ガイド

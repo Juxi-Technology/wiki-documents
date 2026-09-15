@@ -1,6 +1,6 @@
 ---
 title: "Interação por voz ROS1"
-description: "O módulo de interação por voz AI suporta os seguintes três modos de cablagem:"
+description: "Interação por voz em ROS1 com o módulo de voz AI: preparação do ambiente em Ubuntu com Noetic ou Melodic e deteção automática do modo de ligação."
 ---
 
 # Interação por voz ROS1

@@ -1,6 +1,6 @@
 ---
 title: "Parts-Kit Assembly"
-description: "If you would rather skip the fun of tightening screws, you can also buy the pre-assembled kit for the SO101 f…"
+description: "XLeRobot parts-kit assembly guide: build two SO101 follower arms, configure the Feetech servo IDs, and set up the omni-wheel chassis car."
 ---
 
 # Parts-Kit Assembly
@@ -69,7 +69,7 @@ sudo chmod 666 /dev/ttyACM0
 
 ![Image 6](../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/6.png)
 
-## 🧑‍🦼‍➡ Wheeled Base
+## 🧑🦼➡ Wheeled Base
 
 > If you already have a Lekiwi base, please remove the battery, servo brackets, etc. The bottom plate only needs 3 servos with wheels installed (keep the wiring).
 > 

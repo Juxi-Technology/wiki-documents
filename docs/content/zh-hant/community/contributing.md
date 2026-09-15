@@ -1,6 +1,6 @@
 ---
 title: 貢獻指南
-description: 如何為鉅犀科技 Wiki 貢獻內容
+description: "鉅犀科技 Wiki 貢獻指南——從 Fork 倉庫、本地預覽到提交內容的完整流程說明。"
 ---
 
 # 貢獻指南

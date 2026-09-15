@@ -1,6 +1,6 @@
 ---
 title: "IMX219 su Raspberry Pi"
-description: "Se non esiste, potrebbe trattarsi di un problema del kernel o dell'hardware del dispositivo; è possibile prov…"
+description: "Fotocamera IMX219 su Raspberry Pi: verificare il nodo del dispositivo, abilitare la fotocamera CSI, scattare foto e risolvere i problemi di rilevamento."
 ---
 
 # IMX219 su Raspberry Pi

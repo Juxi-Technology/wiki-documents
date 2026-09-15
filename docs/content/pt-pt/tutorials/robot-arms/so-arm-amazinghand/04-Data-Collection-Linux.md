@@ -1,6 +1,6 @@
 ---
 title: "Etapa 4: Recolha de dados (Linux)"
-description: "Esta etapa grava o conjunto de dados de teleoperação: recolhe amostras de \"ângulo das juntas + imagem das câm…"
+description: "Etapa 4 do tutorial SO-ARM101 + AmazingHand no Linux: gravação do conjunto de dados de teleoperação com ângulos das juntas e imagens das câmaras."
 ---
 
 

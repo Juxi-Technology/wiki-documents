@@ -1,6 +1,6 @@
 ---
 title: "JetCam verwenden"
-description: "JetCam verwenden"
+description: "JetCam am Jetson verwenden: Bibliothek installieren und Beispielcode für CSI- und USB-Kameras mit Erläuterungen ausführen."
 ---
 
 # JetCam verwenden

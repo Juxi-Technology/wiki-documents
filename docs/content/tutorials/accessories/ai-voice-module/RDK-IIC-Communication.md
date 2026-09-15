@@ -1,6 +1,6 @@
 ---
 title: "RDK: IIC Communication"
-description: "This repository provides Python example code for communication between the RDK X5 (Raspberry Pi) platform and…"
+description: "RDK X5 IIC communication example for the AI Voice Interaction Module: Python sample code that reads recognized command IDs over the I2C bus."
 ---
 
 # RDK: IIC Communication

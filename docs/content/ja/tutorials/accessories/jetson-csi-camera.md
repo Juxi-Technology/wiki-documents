@@ -1,6 +1,6 @@
 ---
 title: Jetson CSI カメラ
-description: "NVIDIA Jetson Orin CSI カメラモジュールの使用方法"
+description: "NVIDIA Jetson 向け IMX219 CSI カメラモジュールの紹介。製品仕様、クイックスタート、よくある質問をまとめています。"
 ---
 
 # Jetson CSI カメラ

@@ -1,6 +1,6 @@
 ---
 title: "ROS : préparation"
-description: "(1) Après avoir créé l'espace de travail, copiez le contenu du dossier gpssrc dans le dossier src de l'espace…"
+description: "Préparer l'environnement ROS2 du module GPS BeiDou : compiler les paquets avec colcon et lier le port série du GPS avec une règle udev."
 ---
 
 # ROS : préparation

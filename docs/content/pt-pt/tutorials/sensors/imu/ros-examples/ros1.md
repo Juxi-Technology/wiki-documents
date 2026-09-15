@@ -1,6 +1,6 @@
 ---
 title: Aplicação ROS1
-description: "Configuração do sistema: ubuntu20.04"
+description: "Aplicação ROS1 do sensor IMU no Ubuntu 20.04: configuração do ambiente, criação do espaço de trabalho, compilação do projeto e visualização dos dados no RViz."
 ---
 
 # Aplicação ROS1

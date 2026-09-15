@@ -1,6 +1,6 @@
 ---
 title: "RDK: Comunicazione della porta seriale"
-description: "Questo repository fornisce codice di esempio Python per la comunicazione tra la piattaforma RDK X5 (Raspberry…"
+description: "Modulo di interazione vocale IA e RDK X5 via porta seriale: codice di esempio Python per leggere i comandi riconosciuti e avviare la riproduzione vocale."
 ---
 
 # RDK: Comunicazione della porta seriale

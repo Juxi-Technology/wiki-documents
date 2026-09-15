@@ -1,6 +1,6 @@
 ---
 title: "Jetson"
-description: "本教程以Jetson orin nx主板爲例。"
+description: "IMU 慣導模組串列埠通訊教程(Jetson Orin NX 版)：設備連接、串列埠映射設定與驅動安裝校準。"
 ---
 
 # Jetson
@@ -71,7 +71,7 @@ sudo apt install -y python3-smbus2
 
 **3.2傳輸文件**
 
-[IMU_ROS2.zip]
+IMU_ROS2.zip
 
 如果還不會使用MobaXterm傳輸文件的朋友，請查看以下網頁MobaXterm詳細安裝和操作方法：[文件远程传输](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 

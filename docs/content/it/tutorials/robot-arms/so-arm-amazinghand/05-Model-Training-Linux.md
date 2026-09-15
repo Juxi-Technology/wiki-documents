@@ -1,6 +1,6 @@
 ---
 title: "Fase 5: Addestramento del modello (Linux)"
-description: "In questa fase si usa il dataset raccolto per addestrare una politica (ACT e simili) e produrre un modello di…"
+description: "Fase 5 del tutorial SO-ARM101 e AmazingHand su Linux: addestrare una politica LeRobot dal dataset raccolto e monitorare l'addestramento con la GPU."
 ---
 
 

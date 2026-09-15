@@ -1,6 +1,6 @@
 ---
 title: "RDK: Communication IIC"
-description: "Ce dépôt fournit un exemple de code Python pour la communication entre la plateforme RDK X5 (Raspberry Pi) et…"
+description: "Communication IIC entre la plateforme RDK X5 et le module d'interaction vocale IA : exemple Python, adresse 0x2A et reconnaissance hors ligne."
 ---
 
 # RDK: Communication IIC

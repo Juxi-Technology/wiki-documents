@@ -10,7 +10,7 @@ description: "LeRobot 기반 Lekiwi 이동 로봇의 설정, 모터 구성, 원�
 
 검은색 액티브 암은 5V 6A 전원 어댑터를, 흰색 패시브 암은 12V 5A 전원 어댑터를 사용합니다
 
-[lerobot-Lekiwi.zip]
+lerobot-Lekiwi.zip
 
 이 튜토리얼 저장소의 코드는 2026년 3월 1일 이전에 테스트된 LeRobot 안정 버전으로 유지됩니다. 현재 Huggingface는 LeRobot을 대폭 업그레이드하여 다수의 신규 기능을 추가했습니다. 최신 튜토리얼을 체험하려면 [공식 문서](https://huggingface.co/docs/lerobot/lekiwi)에 따라 진행하세요.
 

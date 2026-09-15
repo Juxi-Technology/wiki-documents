@@ -1,6 +1,6 @@
 ---
 title: "Etapa 4: Recolha de dados (Windows)"
-description: "Esta etapa grava o conjunto de dados de teleoperação: recolhe amostras de \"ângulo das juntas + imagem das câm…"
+description: "Etapa 4 do tutorial SO-ARM101 + AmazingHand no Windows: recolha de amostras de teleoperação com câmaras, descrição dos parâmetros e verificação por reprodução."
 ---
 
 

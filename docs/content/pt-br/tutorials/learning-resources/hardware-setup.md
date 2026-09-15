@@ -1,6 +1,6 @@
 ---
 title: Configuração de Hardware
-description: "Este capítulo detalha o método de conexão do hardware do produto."
+description: "Recursos de Aprendizado: conexão do hardware dos produtos Juxi, com interfaces, alimentação, periféricos e cuidados de segurança."
 ---
 
 

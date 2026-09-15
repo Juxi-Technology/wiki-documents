@@ -1,6 +1,6 @@
 ---
 title: "安装环境(macOS)"
-description: "黑色主动臂使用 5V6A 电源适配器"
+description: "XLeRobot 环境安装教程 macOS 篇：在 macOS 上完成端口权限设置、安装 Miniconda 并配置镜像源。"
 ---
 
 # 安装环境(macOS)

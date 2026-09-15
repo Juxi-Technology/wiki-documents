@@ -1,6 +1,6 @@
 ---
 title: Aplicación ROS1
-description: "Configuración del sistema: ubuntu20.04"
+description: "Módulo IMU en ROS1: configura el entorno Noetic en Ubuntu 20.04, conecta el sensor por puerto serie y visualiza los datos de actitud."
 ---
 
 # Aplicación ROS1

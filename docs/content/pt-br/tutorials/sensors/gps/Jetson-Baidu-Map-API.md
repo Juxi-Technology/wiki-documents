@@ -1,6 +1,6 @@
 ---
 title: "Jetson: API do Baidu Maps"
-description: "1. Método de registro"
+description: "API do Baidu Maps no Jetson Orin — registrar a conta de desenvolvedor, obter a chave de acesso e converter o posicionamento do módulo GPS e BeiDou no mapa."
 ---
 
 # Jetson: API do Baidu Maps

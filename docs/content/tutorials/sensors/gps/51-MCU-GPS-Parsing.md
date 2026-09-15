@@ -1,6 +1,6 @@
 ---
 title: "51 MCU: GPS Parsing"
-description: "In this lesson, we will mainly learn to use an STC89C52RC 51 microcontroller and a GPS module to implement th…"
+description: "51 microcontroller GPS parsing tutorial: use an STC89C52RC board and the GPS/BeiDou module to read and print position information over UART."
 ---
 
 # 51 MCU: GPS Parsing

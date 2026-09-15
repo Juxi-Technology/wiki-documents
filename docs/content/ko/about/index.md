@@ -1,6 +1,6 @@
 ---
 title: 회사 소개
-description: Juxi Technology — 선전 첸하이 발 오픈소스 로보틱스 기업
+description: "Juxi Technology 회사 소개 — 선전 첸하이 기반 오픈소스 로보틱스 기업의 비전과 핵심 기술, 물리 AI·엣지 AI 솔루션을 안내합니다."
 ---
 
 # 회사 소개

@@ -1,6 +1,6 @@
 ---
 title: "Instalação do Suporte de Braço e Kit de Câmera SO-ARM100&101"
-description: "Consulte este tutorial para depurar a câmera USB com acoplamento automático — Tutorial da câmera USB com foco automático"
+description: "Instalação do suporte de braço e do kit de câmera ambiente para SO-ARM100 e SO-ARM101, com montagem passo a passo ilustrada."
 ---
 
 # Instalação do Suporte de Braço e Kit de Câmera SO-ARM100&101

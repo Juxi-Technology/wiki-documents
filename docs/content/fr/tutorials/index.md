@@ -1,6 +1,6 @@
 ---
 title: Tutoriels
-description: Juxi Technology Wiki — Tutoriels
+description: "Tutoriels du Wiki Juxi Technology : bras robotiques SO-ARM101 et XLeRobot, main AmazingHand, capteurs et accessoires, classés par catégories."
 ---
 
 # Tutoriels

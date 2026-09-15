@@ -1,6 +1,6 @@
 ---
 title: Guide de contribution
-description: Comment contribuer au Wiki JUXI
+description: "Guide de contribution au Wiki Juxi Technology : préparer son environnement, corriger la documentation, proposer des tutoriels et participer aux traductions."
 ---
 
 # Guide de contribution

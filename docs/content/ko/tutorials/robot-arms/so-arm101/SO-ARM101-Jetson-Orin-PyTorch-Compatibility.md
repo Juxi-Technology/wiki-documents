@@ -1,6 +1,6 @@
 ---
 title: Jetson Orin에서 PyTorch 비호환 문제
-description: "jetson 버전 pytorch 설치"
+description: "NVIDIA Jetson Orin에서 SO-ARM101용 PyTorch 비호환 문제 해결 가이드 — Jetson 전용 PyTorch 설치와 오류 대응 방법."
 ---
 
 # Jetson Orin에서 PyTorch 비호환 문제

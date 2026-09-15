@@ -7,7 +7,7 @@ description: "本例はArduino Nano開発ボード、Windows PC 1台、ジャン
 
 本例はArduino Nano開発ボード、Windows PC 1台、ジャンパワイヤ数本、IMU姿勢センサーを使用します。
 
-[Arduino.rar]
+Arduino.rar
 
 
 

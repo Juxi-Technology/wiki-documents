@@ -1,6 +1,6 @@
 ---
 title: "ROS: Drawing GPS Tracks"
-description: "It is impossible to visualize the GPS information directly; we need to convert the coordinate system, convert…"
+description: "ROS drawing GPS tracks tutorial: convert WGS-84 latitude and longitude into an xyz frame and visualize the live track in ROS2 rviz2."
 ---
 
 # ROS: Drawing GPS Tracks

@@ -1,6 +1,6 @@
 ---
 title: Lark Wiki
-description: "JUXI チュートリアルの飛書ドキュメントミラー入口と説明"
+description: "JUXI チュートリアルの Lark ナレッジベース入口。各言語のミラードキュメントへの案内をまとめています。"
 ---
 
 # Lark Wiki

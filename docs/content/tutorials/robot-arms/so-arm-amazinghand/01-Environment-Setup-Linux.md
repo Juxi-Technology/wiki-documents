@@ -1,6 +1,6 @@
 ---
 title: "Stage 1: Environment Setup (Linux)"
-description: "Use Miniforge to create an isolated Python environment and install LeRobot with AmazingHand support. Run this…"
+description: "Stage 1 environment setup on Linux: create an isolated Miniforge Python environment and install the customized LeRobot for the AmazingHand workflow."
 ---
 
 

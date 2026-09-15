@@ -1,6 +1,6 @@
 ---
 title: "ROS2語音互動"
-description: "AI語音互動模組支援以下三種接線方式："
+description: "AI 語音互動模組教程(ROS2 環境)——在 Ubuntu 22.04 與 Humble 下執行語音互動節點,以 rviz2 視覺化輸出。"
 ---
 
 # ROS2語音互動

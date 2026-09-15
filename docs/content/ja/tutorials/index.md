@@ -1,6 +1,6 @@
 ---
 title: チュートリアル
-description: Juxi Technology Wiki — チュートリアル
+description: "Juxi Technology Wiki のチュートリアル一覧。ロボットアームやカメラなど全製品の使い方と設定ガイドを網羅しています。"
 ---
 
 # チュートリアル

@@ -1,6 +1,6 @@
 ---
 title: "Configuração (macOS)"
-description: "O braço líder preto usa um adaptador de energia de 5V6A"
+description: "XLeRobot: configuração do ambiente no macOS, com permissões de porta, instalação do Miniconda e fontes de espelho."
 ---
 
 # Configuração (macOS)

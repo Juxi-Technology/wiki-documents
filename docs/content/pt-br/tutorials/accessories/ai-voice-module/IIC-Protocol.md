@@ -1,6 +1,6 @@
 ---
 title: "Protocolo IIC"
-description: "Atenção: a fonte de alimentação do dispositivo host e a do módulo de interação por voz podem ser diferentes, …"
+description: "Protocolo IIC do módulo de interação por voz IA da Juxi Technology — endereço IIC, registradores de reconhecimento e reprodução de palavras de comando."
 ---
 
 # Protocolo IIC

@@ -1,6 +1,6 @@
 ---
 title: "8장: 얼굴 인식"
-description: "ESP32-NanoCam 튜토리얼 8장: 얼굴 특징을 등록하고 지속적으로 인식하며(ID/who?), face_eril, face_rz, face_del, face_detect 명령, 프레임 건너뛰기 전략과 문제 해결을 다룹니다."
+description: "ESP32-NanoCam 8장 얼굴 인식 — 얼굴 특징 등록과 지속 인식 명령, 출입 통제 솔루션 구축 방법을 다룹니다."
 ---
 
 # 8장: 얼굴 인식

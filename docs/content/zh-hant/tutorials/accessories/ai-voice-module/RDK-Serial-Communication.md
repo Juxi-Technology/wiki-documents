@@ -1,6 +1,6 @@
 ---
 title: "RDK: 串列埠通訊"
-description: "本倉庫提供了 RDK X5（Raspberry Pi）平台與 AI 語音互動模組通訊的 Python 範例程式碼，支援 I2C 和 UART 兩種通訊方式。"
+description: "AI 語音互動模組教程(RDK X5 平台)——UART 串列埠接線、鮑率設定與 Python 範例程式執行。"
 ---
 
 # RDK: 串列埠通訊

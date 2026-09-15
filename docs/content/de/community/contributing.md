@@ -1,6 +1,6 @@
 ---
 title: Mitwirkungsleitfaden
-description: So tragen Sie Inhalte zum JUXI-Wiki bei
+description: "Mitmachen im JUXI-Wiki: Repository forken, Inhalte und Übersetzungen beitragen, Pull-Requests einreichen und Community-Richtlinien beachten."
 ---
 
 # Mitwirkungsleitfaden

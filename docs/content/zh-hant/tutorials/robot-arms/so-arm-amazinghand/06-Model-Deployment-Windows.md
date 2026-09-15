@@ -1,6 +1,6 @@
 ---
 title: "階段六:模型部署(Windows)"
-description: "本階段載入訓練好的策略，讓機器人自主執行任務，並錄製評估影片驗證效果。這是整個流程的收尾，也是檢驗訓練成果的關鍵。"
+description: "SO-ARM101 與 AmazingHand 的階段六模型部署教程(Windows)——載入策略模型自主執行任務,以 PowerShell 錄製評估影片。"
 ---
 
 

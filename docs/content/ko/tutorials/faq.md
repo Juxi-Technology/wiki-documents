@@ -1,6 +1,6 @@
 ---
 title: "FAQ"
-description: Juxi Technology 제품 FAQ — 로봇 암, 센서, 액세서리
+description: "Juxi Technology 제품 FAQ — SO-ARM101 로봇 암과 IMU 센서, KWS 음성 인식 등 카테고리별 자주 묻는 질문 모음."
 keywords: [faq, 문제해결]
 ---
 

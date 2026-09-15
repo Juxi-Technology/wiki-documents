@@ -9,7 +9,7 @@ description: "Guía completa del robot móvil Lekiwi basado en LeRobot: instalac
 
 El brazo activo negro usa un adaptador de alimentación de 5V 6A, mientras que el brazo pasivo blanco usa un adaptador de alimentación de 12V 5A
 
-[lerobot-Lekiwi.zip]
+lerobot-Lekiwi.zip
 
 El código del repositorio de este tutorial se mantiene en la versión estable de Lerobot probada antes del 1 de marzo de 2026. Actualmente, Huggingface ha realizado una actualización muy importante de Lerobot, añadiendo una gran cantidad de funciones nuevas. Si necesita probar el tutorial más reciente, siga la [documentación oficial para la operación](https://huggingface.co/docs/lerobot/lekiwi).
 

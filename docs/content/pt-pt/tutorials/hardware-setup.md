@@ -1,6 +1,6 @@
 ---
 title: Configuração de Hardware
-description: "Este capítulo detalha o método de conexão do hardware do produto."
+description: "Configuração de hardware dos produtos Juxi Technology: descrição das interfaces USB-C, GPIO e HDMI e etapas de ligação e alimentação do dispositivo."
 ---
 
 

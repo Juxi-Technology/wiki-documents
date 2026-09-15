@@ -1,6 +1,6 @@
 ---
 title: "Protocole IIC"
-description: "Remarque : l'alimentation du dispositif hôte et celle du module d'interaction vocale peuvent être différentes…"
+description: "Protocole IIC du module d'interaction vocale IA : adresse d'esclave 0x2A, registres de lecture, entrées de mots de commande et phrases de diffusion."
 ---
 
 # Protocole IIC

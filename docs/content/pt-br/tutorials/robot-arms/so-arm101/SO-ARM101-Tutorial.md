@@ -279,7 +279,7 @@ lerobot-calibrate \
     --teleop.id=my_awesome_leader_arm
 ```
 
-[机械臂中位校准视频.mp4]
+机械臂中位校准视频.mp4
 
 ### Teleoperação
 
@@ -1025,7 +1025,7 @@ Se você encontrar problemas de software ou de dependências de ambiente que nã
 
 Para depuração, qualquer PC Windows pode programar, depurar ou testar o servo por conexão USB. Para isso, baixe o [software Feetech](https://www.feetechrc.com/software.html). Para sistemas Ubuntu, você pode usar a [ferramenta FT_SCServo_Debug_Qt](https://github.com/Kotakku/FT_SCServo_Debug_Qt). 
 
-[fddebug-master.zip]
+fddebug-master.zip
 
 Selecione o número da porta, defina a taxa de baud como 1000000, abra e clique em "Pesquisar"
 

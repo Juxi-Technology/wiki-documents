@@ -1,6 +1,6 @@
 ---
 title: 器用ハンド公式サンプル実行チュートリアル
-description: "本チュートリアル付属のコード圧縮パッケージをダウンロードしてデモを行っていただくか、公式オープンソースコードリポジトリ https://github.com/pollen-robotics/AmazingHand.git をクローンしてください。公式コードには誤りや不足がある可能性がありますのでご注意ください。"
+description: "AmazingHand 器用ハンドの公式サンプル実行チュートリアル。コードのダウンロード、環境構築、配線、サンプルデモとハンドトラッキングの実行手順を解説します。"
 ---
 
 # 器用ハンド公式サンプル実行チュートリアル
@@ -13,10 +13,10 @@ description: "本チュートリアル付属のコード圧縮パッケージを
 本チュートリアル付属のコード圧縮パッケージをダウンロードしてデモを行っていただくか、公式オープンソースコードリポジトリ https://github.com/pollen-robotics/AmazingHand.git をクローンしてください。公式コードには誤りや不足がある可能性がありますのでご注意ください。
 
 Windows コード圧縮パッケージ
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 Linux コード圧縮パッケージ
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 ```Plain Text
 git clone https://github.com/pollen-robotics/AmazingHand.git

@@ -30,11 +30,11 @@ La vidéo suivante montre la procédure pas à pas de réglage de l'ID des moteu
 
 ## Système Windows
 
-[飞特舵机上位机.zip]
+飞特舵机上位机.zip
 
 Utilisez le logiciel hôte de servos Feetech pour définir l'ID des servos et calibrer le point médian ; les ID vont de 1 à 6 !
 
-[机械臂舵机设置ID-Windows系统.mp4]
+机械臂舵机设置ID-Windows系统.mp4
 
 ## Système Linux/Ubuntu
 
@@ -86,13 +86,13 @@ lerobot-setup-motors \
     --teleop.port=/dev/ttyACM0
 ```
 
-[机械臂舵机设置ID-Linux系统.mp4]
+机械臂舵机设置ID-Linux系统.mp4
 
 # Étape 2 : Montage
 
 - Les étapes de montage du bras follower sont pratiquement les mêmes que celles du bras leader. La seule différence : après l'étape 12, la méthode d'installation de l'effecteur (pince et poignée) est différente.
 
-[SO-ARM101机械臂组装教程.mp4]
+SO-ARM101机械臂组装教程.mp4
 
 Installation de la carte driver des servos : installez d'abord 4 entretoises en cuivre, puis fixez la carte driver avec quatre vis M2.5\*8
 

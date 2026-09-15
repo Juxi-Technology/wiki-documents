@@ -1,6 +1,6 @@
 ---
 title: "RDK: Comunicación por puerto serie"
-description: "Este repositorio proporciona código de ejemplo en Python para la comunicación entre la plataforma RDK X5 (Ras…"
+description: "Módulo de voz IA con la plataforma RDK X5 por puerto serie: ejemplo en Python, cableado UART, configuración del entorno y solución de problemas."
 ---
 
 # RDK: Comunicación por puerto serie

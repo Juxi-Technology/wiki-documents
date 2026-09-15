@@ -1,6 +1,6 @@
 ---
 title: "ROS: preparación"
-description: "（1）Una vez creado el espacio de trabajo, copie el contenido de la carpeta gpssrc en el directorio src del esp…"
+description: "Preparación del entorno ROS2 para el módulo GPS/BeiDou: compila los paquetes del espacio de trabajo y vincula el puerto serie del módulo."
 ---
 
 # ROS: preparación

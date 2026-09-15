@@ -1,6 +1,6 @@
 ---
 title: "Protocole du port série"
-description: "Ouvrez le fichier 命令词播报词协议列表V1中文 dans les pièces jointes ; vous pouvez voir le protocole d'envoi et le protoc…"
+description: "Protocole du port série du module d'interaction vocale IA : structure des trames d'envoi et de réception, mots de commande et phrases de diffusion."
 ---
 
 # Protocole du port série

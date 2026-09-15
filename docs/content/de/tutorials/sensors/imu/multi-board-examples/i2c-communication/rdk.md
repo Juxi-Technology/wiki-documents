@@ -1,6 +1,6 @@
 ---
 title: "RDK"
-description: "Dieses Tutorial verwendet das RDK X5-Mainboard als Beispiel."
+description: "IMU-Lagesensor am RDK X5 per I2C anbinden: Sensor an den I2C-Anschluss stecken, Gerätestatus prüfen und Lagedaten auslesen."
 ---
 
 # RDK
@@ -44,7 +44,7 @@ sudo apt install -y python3-smbus2
 
 3.2 Dateien übertragen
 
-[IMU_ROS2.zip]
+IMU_ROS2.zip
 
 Wer noch nicht mit der Dateiübertragung per MobaXterm vertraut ist, findet unter folgendem Link eine ausführliche Installations- und Bedienungsanleitung: [文件远程传输](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 

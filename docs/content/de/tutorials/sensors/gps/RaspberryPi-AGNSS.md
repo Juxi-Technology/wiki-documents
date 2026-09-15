@@ -1,6 +1,6 @@
 ---
 title: "Raspberry Pi: AGNSS-Unterstützung"
-description: "In dieser Lektion lernen wir hauptsächlich, mit dem Raspberry Pi, dem GPS-Modul und einem agnss-Server das Le…"
+description: "Raspberry Pi mit GPS-Modul: AGNSS-Server für schnelleren Satellitenfix nutzen und Positionsdaten bei schwachem Signal lesen und analysieren."
 ---
 
 # Raspberry Pi: AGNSS-Unterstützung
@@ -149,7 +149,7 @@ Verbinden Sie den Raspberry Pi und das GPS-Modul mit einem Type-C-Kabel, führen
 
 **3.2. Beantragung des Baidu Maps ak**
 
-Siehe Dokument [Anleitung zur Beantragung der Baidu Maps API]()
+Siehe Dokument [Anleitung zur Beantragung der Baidu Maps API](./RaspberryPi-Baidu-Map-API.md)
 
  
 

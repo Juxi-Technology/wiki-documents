@@ -1,6 +1,6 @@
 ---
 title: "Jetson: AGNSS-Unterstützung"
-description: "In dieser Lektion lernen wir hauptsächlich, mit Jetson Orin, dem GPS-Modul und einem agnss-Server das Lesen u…"
+description: "Jetson Orin mit GPS-Modul: AGNSS-Server für schnelleren Satellitenfix nutzen und Positionsdaten bei schwachem Signal lesen und analysieren."
 ---
 
 # Jetson: AGNSS-Unterstützung
@@ -149,7 +149,7 @@ Verbinden Sie Jetson Orin und das GPS-Modul mit einem Type-C-Kabel, führen Sie 
 
 **3.2. Beantragung des Baidu Maps ak**
 
-Siehe Dokument [Anleitung zur Beantragung der Baidu Maps API]()
+Siehe Dokument [Anleitung zur Beantragung der Baidu Maps API](./Jetson-Baidu-Map-API.md)
 
  
 

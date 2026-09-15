@@ -1,6 +1,6 @@
 ---
 title: 產品中心
-description: 鉅犀科技產品中心——機械臂、靈巧手、感測器與配件全系手冊
+description: "鉅犀科技產品中心——機械臂、靈巧手、感測器與配件全系手冊。"
 aside: false
 sidebar: false
 outline: false

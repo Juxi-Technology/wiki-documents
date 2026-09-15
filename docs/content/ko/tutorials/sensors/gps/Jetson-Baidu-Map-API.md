@@ -1,6 +1,6 @@
 ---
 title: "Jetson: 바이두 지도 API"
-description: "1. 등록 방법"
+description: "Jetson Orin에서 바이두 지도 API 사용 준비 — 개발자 등록과 ak 키 발급, 애플리케이션 생성과 IP 측위 서비스 설정 방법."
 ---
 
 # Jetson: 바이두 지도 API

@@ -1,6 +1,6 @@
 ---
 title: "Jetson: Comunicación por puerto serie"
-description: "Cierre la sesión y vuelva a iniciarla para que surta efecto."
+description: "Módulo de voz IA con Jetson por puerto serie UART: instalación de dependencias, cableado, comprobación del puerto y ejecución del ejemplo."
 ---
 
 # Jetson: Comunicación por puerto serie

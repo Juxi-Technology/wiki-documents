@@ -1,6 +1,6 @@
 ---
 title: "Arduino: 시리얼 통신"
-description: "1. UARTVoice.ino 파일 열기"
+description: "AI 음성 인터랙션 모듈 Arduino 시리얼 통신 튜토리얼 — UART 배선과 프로토콜 프레임 형식, 시리얼 테스트 방법을 다룹니다."
 ---
 
 # Arduino: 시리얼 통신

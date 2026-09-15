@@ -1,6 +1,6 @@
 ---
 title: "Modificar la palabra de activación y las palabras de comando"
-description: "Modifique la palabra de activación en un entorno silencioso; un entorno ruidoso afectará la precisión de reco…"
+description: "Modifica la palabra de activación y las palabras de comando del módulo de voz IA: precauciones, conexión del dispositivo y pasos de edición."
 ---
 
 # Modificar la palabra de activación y las palabras de comando

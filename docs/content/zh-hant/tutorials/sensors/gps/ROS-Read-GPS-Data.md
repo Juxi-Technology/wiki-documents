@@ -1,6 +1,6 @@
 ---
 title: "ROS:讀取 GPS 數據"
-description: "然後我們查看下話題數據，終端輸入，"
+description: "ROS 讀取 GPS 數據教程：檢視定位話題資料，確認北斗模組在 ROS 環境中的輸出與座標資訊。"
 ---
 
 # ROS:讀取 GPS 數據

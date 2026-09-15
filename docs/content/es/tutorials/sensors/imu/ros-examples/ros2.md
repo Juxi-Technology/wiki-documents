@@ -1,6 +1,6 @@
 ---
 title: Aplicación ROS2
-description: "Configuración del sistema: ubuntu22.04"
+description: "Módulo IMU en ROS2: configura Humble en Ubuntu 22.04, conecta el sensor por puerto serie y visualiza los datos de actitud."
 ---
 
 # Aplicación ROS2

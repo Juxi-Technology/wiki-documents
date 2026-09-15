@@ -1,6 +1,6 @@
 ---
 title: "Umgebung einrichten (Windows)"
-description: "Der schwarze Leader-Arm verwendet ein 5V6A-Netzteil"
+description: "XLeRobot-Umgebung unter Windows einrichten: Miniconda installieren und die conda-Paketquelle auf einen Spiegel umstellen."
 ---
 
 # Umgebung einrichten (Windows)

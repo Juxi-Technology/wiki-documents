@@ -1,6 +1,6 @@
 ---
 title: "Raspberry Pi: análise GPS"
-description: "Nesta lição, vamos aprender principalmente a usar o Raspberry Pi e o módulo GPS para ler e analisar informaçõ…"
+description: "Análise GPS no Raspberry Pi — ler o módulo GPS e BeiDou pela porta USB, filtrar sentenças GNGGA e analisar latitude, longitude e altitude em Python."
 ---
 
 # Raspberry Pi: análise GPS

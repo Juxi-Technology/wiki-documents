@@ -1,6 +1,6 @@
 ---
 title: "XLeRobot-Dateien verschieben"
-description: "Laden Sie unter https://github.com/Vector-Wangel/XLeRobot das komprimierte Paket herunter und entpacken Sie es"
+description: "XLeRobot-Dateien verschieben: Softwarepaket entpacken und Modell-, Roboter- und Teleoperation-Ordner in die LeRobot-Umgebung kopieren."
 ---
 
 # XLeRobot-Dateien verschieben

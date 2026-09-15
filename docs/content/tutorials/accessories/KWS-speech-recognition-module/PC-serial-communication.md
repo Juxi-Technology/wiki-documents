@@ -1,13 +1,13 @@
 ---
 title: PC Serial Communication
-description: "[uartassist5.0.2.zip]"
+description: "PC serial communication tutorial for the KWS speech recognition module: connect with a serial assistant at 115200 baud and test wake word recognition."
 ---
 
 # PC Serial Communication
 
 ## 1. Download Serial Assistant
 
-[uartassist5.0.2.zip]
+uartassist5.0.2.zip
 
 ---
 

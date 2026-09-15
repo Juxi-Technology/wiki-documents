@@ -7,7 +7,7 @@ description: "本例はSTM32F103C8T6コアボード、Windows PC 1台、ジャ�
 
 本例はSTM32F103C8T6コアボード、Windows PC 1台、ジャンパワイヤ数本、IMU姿勢センサーを使用します。
 
-[STM32.zip]
+STM32.zip
 
 keil5ソフトウェアを使用してUSART.uvprojxを開き、プログラムをSTM32F103C8T6コアボードに書き込みます
 

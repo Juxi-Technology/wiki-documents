@@ -1,6 +1,6 @@
 ---
 title: ロボットハンド インターフェース制御
-description: "[AmazingHandControl.zip]"
+description: "AmazingHand 器用ハンドを上位機インターフェースで制御するチュートリアル。オープンソース制御コードの入手方法と TTL シリアルバス通信の基本を紹介します。"
 ---
 
 # ロボットハンド インターフェース制御

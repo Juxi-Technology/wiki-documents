@@ -1,6 +1,6 @@
 ---
 title: Tutorial de conversão do SO-ARM101 para 7-DOF e uso com LeRobot
-description: "Após converter o SO-ARM101 de 6 servos para 7 graus de liberdade (novo wrist_yaw): correspondência dos IDs dos servos, alterações e substituições no código, cuidados com a calibração e como usar no LeRobot."
+description: "Conversão do braço SO-ARM101 de 6 para 7 graus de liberdade com LeRobot — novo eixo de guinada do punho, IDs dos servos e mudanças no código."
 ---
 
 # Tutorial de conversão do SO-ARM101 para 7-DOF e uso com LeRobot

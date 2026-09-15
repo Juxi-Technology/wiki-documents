@@ -1,6 +1,6 @@
 ---
 title: Raspberry Pi serielle Kommunikation
-description: "Hinweis: Für das Sprachinteraktionsmodul muss die Werksfirmware geflasht werden; bei einem neuen, ungeflashten Sprachchip ist dies nicht erforderlich"
+description: "KWS-Spracherkennungsmodul am Raspberry Pi: serielle Schnittstelle über USB verbinden und erkannte Wake-Words und Befehlswörter abrufen."
 ---
 
 # Raspberry Pi serielle Kommunikation

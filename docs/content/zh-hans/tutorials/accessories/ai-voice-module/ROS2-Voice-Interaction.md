@@ -1,6 +1,6 @@
 ---
 title: "ROS2语音交互"
-description: "AI语音交互模块支持以下三种接线方式："
+description: "钜犀科技 AI 语音交互模块教程——在 ROS2 Humble 下自动检测串口或 I2C 接线并实现语音交互。"
 ---
 
 # ROS2语音交互

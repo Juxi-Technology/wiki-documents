@@ -1,6 +1,6 @@
 ---
 title: Applicazione ROS1
-description: "Configurazione di sistema: ubuntu20.04"
+description: "Applicazione ROS1 del modulo IMU su Ubuntu 20.04: installare ROS Noetic, costruire il progetto e avviare il nodo del driver per stampare i dati di assetto."
 ---
 
 # Applicazione ROS1

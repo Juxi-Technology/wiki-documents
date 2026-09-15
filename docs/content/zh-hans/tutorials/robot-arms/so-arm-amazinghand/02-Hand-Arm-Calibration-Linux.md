@@ -1,6 +1,6 @@
 ---
 title: "阶段二:灵巧手与双臂校准(Linux)"
-description: "本阶段对三个设备进行标定：主动臂、从动臂、AmazingHand 手。标定是遥操作正确性的前提，必须完成本阶段才能进入遥操作。"
+description: "SO-ARM101 从动臂与 AmazingHand 灵巧手教程——在 Linux 上标定主动臂、从动臂与手三个设备，含串口权限与标定流程。"
 ---
 
 

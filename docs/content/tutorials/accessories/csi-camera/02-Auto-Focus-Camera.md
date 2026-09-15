@@ -1,6 +1,6 @@
 ---
 title: "Auto-Focus Camera Usage"
-description: "The result in the image is the result of connecting two CSI cameras and one USB camera: generally, one CSI ca…"
+description: "Auto-focus USB camera usage on Jetson: identify the video device nodes and preview or capture video with GUVCView and VLC on Linux."
 ---
 
 # Auto-Focus Camera Usage

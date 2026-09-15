@@ -1,6 +1,6 @@
 ---
 title: Control de interfaz de mano robótica
-description: "[AmazingHandControl.zip]"
+description: "Control de interfaz de la mano robótica AmazingHand: ejemplo de control básico, protocolo TTL por bus serie y repositorio de control de código abierto."
 ---
 
 # Control de interfaz de mano robótica

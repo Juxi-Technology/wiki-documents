@@ -1,6 +1,6 @@
 ---
 title: "Error de ubicación en el mapa"
-description: "Las coordenadas que utilizan 腾讯 y 高德地图 no son las mismas que las del software de PC; nuestro software de PC l…"
+description: "Corrige el error de ubicación en el mapa: sistemas de coordenadas comunes, coordenadas BeiDou y conversión entre sistemas para situar bien la posición."
 ---
 
 

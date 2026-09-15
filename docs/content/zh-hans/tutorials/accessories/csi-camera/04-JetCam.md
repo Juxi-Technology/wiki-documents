@@ -1,6 +1,6 @@
 ---
 title: "JetCam 使用"
-description: "JetCam使用"
+description: "JetCam 使用教程——在 NVIDIA Jetson 上安装 JetCam 库,调用 CSI 与 USB 摄像头采集画面。"
 ---
 
 # JetCam 使用

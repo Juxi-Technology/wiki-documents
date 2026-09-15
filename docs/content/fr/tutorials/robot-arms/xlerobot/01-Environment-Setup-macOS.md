@@ -1,6 +1,6 @@
 ---
 title: "Configuration (macOS)"
-description: "Le bras meneur noir utilise un adaptateur secteur 5V6A"
+description: "Configuration de l'environnement XLeRobot sous macOS : accorder les autorisations système, installer Miniconda et créer l'environnement virtuel LeRobot."
 ---
 
 # Configuration (macOS)

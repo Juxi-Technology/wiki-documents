@@ -1,6 +1,6 @@
 ---
 title: "RDK"
-description: "Este tutorial usa a imagem da versão ? da placa-mãe RDK X5 como exemplo."
+description: "Sensor de atitude IMU no RDK X5 por porta série Type-C: verificação do dispositivo e mapeamento da porta com regras udev."
 ---
 
 # RDK
@@ -71,7 +71,7 @@ sudo apt install -y python3-smbus2
 
 **3.2 Transferir Ficheiros**
 
-[IMU_ROS2.zip]
+IMU_ROS2.zip
 
 Amigos que ainda não estão familiarizados com o uso do MobaXterm para transferir ficheiros, consultem a página a seguir para obter instruções detalhadas de instalação e operação do MobaXterm:[文件远程传输](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 

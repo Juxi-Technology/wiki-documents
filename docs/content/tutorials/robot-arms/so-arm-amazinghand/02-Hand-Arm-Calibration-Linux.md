@@ -1,6 +1,6 @@
 ---
 title: "Stage 2: Hand & Arm Calibration (Linux)"
-description: "This stage calibrates the three devices: the leader arm, the follower arm, and the AmazingHand hand. Calibrat…"
+description: "Stage 2 calibration on Linux: calibrate the leader arm, follower arm, and AmazingHand hand with terminal interaction before starting teleoperation."
 ---
 
 

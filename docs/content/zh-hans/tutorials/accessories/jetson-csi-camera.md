@@ -1,6 +1,6 @@
 ---
 title: Jetson CSI 摄像头
-description: "钜犀科技 NVIDIA Jetson Orin CSI 摄像头模块使用教程"
+description: "钜犀科技 Jetson Orin CSI 摄像头模块教程——CSI-2 接口接线、OpenCV 与 GStreamer 示例。"
 ---
 
 # Jetson CSI 摄像头

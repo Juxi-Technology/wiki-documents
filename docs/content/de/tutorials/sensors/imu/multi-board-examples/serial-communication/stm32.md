@@ -7,7 +7,7 @@ description: "Dieses Beispiel verwendet das STM32F103C8T6-Core-Board, einen Wind
 
 Dieses Beispiel verwendet das STM32F103C8T6-Core-Board, einen Windows-PC, mehrere Jumper-Kabel und den IMU-Lagesensor.
 
-[STM32.zip]
+STM32.zip
 
 Mit keil5 die Datei USART.uvprojx öffnen und das Programm auf das STM32F103C8T6-Core-Board flashen
 

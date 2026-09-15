@@ -1,6 +1,6 @@
 ---
 title: "Utiliser JetCam"
-description: "Utilisation de JetCam"
+description: "Utiliser la bibliothèque JetCam de NVIDIA sur Jetson : installer JetCam et piloter une ou plusieurs caméras CSI ou USB depuis des programmes Python."
 ---
 
 # Utiliser JetCam

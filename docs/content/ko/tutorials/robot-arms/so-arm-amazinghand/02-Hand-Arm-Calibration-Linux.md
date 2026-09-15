@@ -1,6 +1,6 @@
 ---
 title: "2단계: 핸드·양팔 캘리브레이션 (Linux)"
-description: "본 단계에서는 3개 장치를 캘리브레이션합니다: 리더 암, 팔로워 암, AmazingHand 핸드. 캘리브레이션은 원격 조작 정확성의 전제이며, 본 단계를 완료해야 원격 조작으로 진행할 수 있습니다."
+description: "SO-ARM101과 AmazingHand 캘리브레이션 단계 2의 Linux 편 — 리더·팔로워 암과 AmazingHand 핸드를 캘리브레이션합니다."
 ---
 
 

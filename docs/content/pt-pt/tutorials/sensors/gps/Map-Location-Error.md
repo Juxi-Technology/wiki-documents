@@ -1,6 +1,6 @@
 ---
 title: "Erro de localização no mapa"
-description: "As coordenadas usadas pelo 腾讯 e pelo 高德地图 são diferentes das coordenadas do software de nível superior; o nos…"
+description: "Compreenda o erro de localização no mapa: diferenças entre os sistemas de coordenadas WGS-84, GCJ-02 e BD-09 usados pelo GPS e pelos mapas, e a sua conversão."
 ---
 
 

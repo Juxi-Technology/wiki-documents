@@ -1,6 +1,6 @@
 ---
 title: "Arduino: Positionsauswertung"
-description: "In dieser Lektion lernen wir hauptsächlich, mit Arduino und dem GPS-Modul die Funktion zum Analysieren und Au…"
+description: "Arduino UNO und GPS-Modul: UART-Anschluss, Analysieren und Ausgeben der Positionsinformationen mit Vorbereitung und Beispielcode."
 ---
 
 # Arduino: Positionsauswertung

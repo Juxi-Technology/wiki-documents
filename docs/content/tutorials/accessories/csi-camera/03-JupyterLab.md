@@ -1,6 +1,6 @@
 ---
 title: "Using JupyterLab"
-description: "Use the following commands to install Jupyter Lab: if the download speed for installing Jupyter Lab is slow, …"
+description: "JupyterLab setup for Jetson camera development: install Jupyter Lab and the Node runtime, then open it in a browser from the board address."
 ---
 
 # Using JupyterLab

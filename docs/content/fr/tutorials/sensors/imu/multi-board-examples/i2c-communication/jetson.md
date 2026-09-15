@@ -1,6 +1,6 @@
 ---
 title: "Jetson"
-description: "Ce tutoriel utilise la carte mère Jetson Orin NX comme exemple."
+description: "Communication I2C du capteur d'attitude IMU avec la carte Jetson Orin NX : câblage sur le bus I2C, vérification du périphérique et affichage des données."
 ---
 
 # Jetson
@@ -44,7 +44,7 @@ sudo apt install -y python3-smbus2
 
 3.2 Transférer les fichiers
 
-[IMU_ROS2.zip]
+IMU_ROS2.zip
 
 Si vous n'êtes pas encore familier avec l'utilisation de MobaXterm pour transférer des fichiers, consultez la page suivante pour l'installation détaillée et le mode d'emploi de MobaXterm : [文件远程传输](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 

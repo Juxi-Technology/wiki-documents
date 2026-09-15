@@ -30,11 +30,11 @@ O vídeo a seguir mostra os passos sequenciais para definir o ID do motor.
 
 ## Sistema Windows
 
-[飞特舵机上位机.zip]
+飞特舵机上位机.zip
 
 Use o software de controle de servos Feite para definir o ID dos servos e calibrar o ponto médio; os IDs variam de 1 a 6! 
 
-[机械臂舵机设置ID-Windows系统.mp4]
+机械臂舵机设置ID-Windows系统.mp4
 
 ## Sistema Linux/Ubuntu
 
@@ -86,13 +86,13 @@ lerobot-setup-motors \
     --teleop.port=/dev/ttyACM0
 ```
 
-[机械臂舵机设置ID-Linux系统.mp4]
+机械臂舵机设置ID-Linux系统.mp4
 
 # Passo 2: Montagem
 
 - Os passos de montagem do braço seguidor são basicamente os mesmos do braço ativo. A única diferença é que, após o passo 12, o método de instalação do efetuador final (garra e alça) é diferente. 
 
-[SO-ARM101机械臂组装教程.mp4]
+SO-ARM101机械臂组装教程.mp4
 
 Instalação da placa de acionamento de servos: primeiro instale 4 pilares de cobre e, em seguida, fixe a placa com quatro parafusos M2.5\*8
 

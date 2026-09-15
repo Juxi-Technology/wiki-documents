@@ -1,6 +1,6 @@
 ---
 title: "RDK"
-description: "Questo tutorial usa la scheda madre RDK X5 come esempio."
+description: "Sensore di assetto IMU e RDK X5 via I2C: collegamento all'interfaccia I2C della scheda, verifica del dispositivo e lettura dei dati di assetto."
 ---
 
 # RDK
@@ -44,7 +44,7 @@ sudo apt install -y python3-smbus2
 
 3.2 Trasferire i file
 
-[IMU_ROS2.zip]
+IMU_ROS2.zip
 
 Se non hai ancora familiarità con l'uso di MobaXterm per trasferire file, consulta la seguente pagina per le istruzioni dettagliate di installazione e utilizzo di MobaXterm: [文件远程传输](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 

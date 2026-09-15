@@ -1,6 +1,6 @@
 ---
 title: Community
-description: Juxi Technology Wiki — Community
+description: "Die Juxi Technology Community: Beiträge leisten, technisches Wachstum, Community-Kanäle und Austausch rund um Roboter und Open-Source-Hardware."
 ---
 
 # Community

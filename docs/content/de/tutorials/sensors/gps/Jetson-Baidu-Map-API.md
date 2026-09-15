@@ -1,6 +1,6 @@
 ---
 title: "Jetson: Baidu-Maps-API"
-description: "1. Registrierungsmethode"
+description: "Jetson Orin: Baidu-Maps-API für das GPS-Modul einrichten, Registrierung und API-Schlüssel abrufen und Positionen auf der Karte darstellen."
 ---
 
 # Jetson: Baidu-Maps-API

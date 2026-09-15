@@ -1,6 +1,6 @@
 ---
 title: Controllo interfaccia mano robotica
-description: "[AmazingHandControl.zip]"
+description: "Controllo della mano robotica AmazingHand: interfaccia software dedicata e codice di controllo open source Juxi con esempio di base e protocollo del bus TTL."
 ---
 
 # Controllo interfaccia mano robotica

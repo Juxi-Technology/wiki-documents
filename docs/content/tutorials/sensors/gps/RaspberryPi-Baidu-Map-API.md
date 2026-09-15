@@ -1,6 +1,6 @@
 ---
 title: "Raspberry Pi: Baidu Map API"
-description: "1. Registration Method"
+description: "Raspberry Pi Baidu Map API tutorial: obtain a key from the Baidu Maps open platform and display the GPS/BeiDou module position on Baidu maps."
 ---
 
 # Raspberry Pi: Baidu Map API

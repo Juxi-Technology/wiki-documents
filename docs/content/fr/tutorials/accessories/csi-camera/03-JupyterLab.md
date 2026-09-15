@@ -1,6 +1,6 @@
 ---
 title: "Utiliser Jupyter Lab"
-description: "Installez Jupyter Lab avec la commande suivante : si le téléchargement de Jupyter Lab est lent, vous pouvez u…"
+description: "Installer et lancer Jupyter Lab sur Jetson pour la vision : installation via pip, environnement Node, démarrage du serveur et ouverture dans un navigateur."
 ---
 
 # Utiliser Jupyter Lab

@@ -1,6 +1,6 @@
 ---
 title: "Jetson: 串口通讯"
-description: "注销并重新登录生效。"
+description: "钜犀科技 AI 语音交互模块教程——在 Jetson 上通过 UART 针脚串口通信控制语音模块。"
 ---
 
 # Jetson: 串口通讯

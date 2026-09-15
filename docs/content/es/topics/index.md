@@ -1,6 +1,6 @@
 ---
 title: Temas
-description: Juxi Technology Wiki — Temas
+description: "Temas técnicos del Wiki de Juxi Technology: robot learning, flasheo de JetPack, IA en el borde, inteligencia incorporada y hardware abierto, con tutoriales."
 ---
 
 # Temas técnicos

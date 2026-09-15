@@ -1,6 +1,6 @@
 ---
 title: "자동 초점 카메라 사용"
-description: "그림의 결과는 CSI 카메라 2개, USB 카메라 1개를 연결한 결과입니다: 일반적으로 CSI 카메라 1개당 video 장치 1개가 표시되고, USB 카메라 1개당 video 장치 2개가 표시됩니…"
+description: "CSI 자동 초점 카메라 사용법 — video 장치 확인과 GUVCView, VLC로 카메라 화면과 초점을 확인하는 방법을 설명합니다."
 ---
 
 # 자동 초점 카메라 사용

@@ -1,6 +1,6 @@
 ---
 title: 커뮤니티
-description: Juxi Technology Wiki — 커뮤니티
+description: "Juxi Technology 커뮤니티 — 메이커·개발자·엔지니어가 GitHub와 이메일로 참여하는 방법과 커뮤니티 혜택을 안내합니다."
 ---
 
 # 커뮤니티

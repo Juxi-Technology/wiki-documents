@@ -1,6 +1,6 @@
 ---
 title: "官方示例运行教程"
-description: "建议下载本使用教程下的代码压缩包进行Demo示例演示，或克隆 官方开源代码仓库https://github.com/pollen-robotics/AmazingHand.git，官方开源代码或有错漏请务必注意。"
+description: "AmazingHand 灵巧手官方示例运行教程：下载代码包、安装 Rust 与 dora-rs 环境并运行 Demo 演示的完整步骤。"
 ---
 
 # 官方示例运行教程
@@ -14,11 +14,11 @@ description: "建议下载本使用教程下的代码压缩包进行Demo示例�
 
 Windows 代码压缩包
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 Linux 代码压缩包
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 ```Plain Text
 git clone https://github.com/pollen-robotics/AmazingHand.git

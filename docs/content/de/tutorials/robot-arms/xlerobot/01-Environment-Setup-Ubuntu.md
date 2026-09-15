@@ -1,6 +1,6 @@
 ---
 title: "Umgebung einrichten (Ubuntu)"
-description: "Der schwarze Leader-Arm verwendet ein 5V6A-Netzteil"
+description: "XLeRobot-Umgebung unter Ubuntu einrichten: Miniconda installieren und pip- sowie conda-Paketquellen für schnellere Downloads umstellen."
 ---
 
 # Umgebung einrichten (Ubuntu)

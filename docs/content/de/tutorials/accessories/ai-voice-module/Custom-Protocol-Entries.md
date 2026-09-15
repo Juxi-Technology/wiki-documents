@@ -1,6 +1,6 @@
 ---
 title: "Benutzerdefinierte Protokolleinträge erstellen"
-description: "Das Modul wird ab Werk bereits mit der Firmware für die Spracherkennungsfunktion geflasht; im Datenpaket ist …"
+description: "AI-Sprachinteraktionsmodul: eigene Protokolleinträge erstellen, Sprachchip-Firmware neu bauen und Befehlswörter sowie Ansagephrasen hinzufügen."
 ---
 
 # Benutzerdefinierte Protokolleinträge erstellen

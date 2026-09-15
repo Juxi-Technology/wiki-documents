@@ -1,6 +1,6 @@
 ---
 title: "Raspberry Pi"
-description: "Este tutorial usa a placa-mãe Raspberry Pi 5 e a imagem oficial de 64 bits como exemplo."
+description: "Sensor de atitude IMU no Raspberry Pi 5 por I2C: ligação ao GPIO, verificação do barramento I2C e instalação da biblioteca do driver."
 ---
 
 # Raspberry Pi
@@ -44,7 +44,7 @@ sudo apt install -y python3-smbus2
 
 3.2 Transferir Ficheiros
 
-[IMU_ROS2.zip]
+IMU_ROS2.zip
 
 Amigos que ainda não estão familiarizados com o uso do MobaXterm para transferir ficheiros, consultem a página a seguir para obter instruções detalhadas de instalação e operação do MobaXterm:[文件远程传输](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 

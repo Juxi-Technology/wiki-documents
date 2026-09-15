@@ -1,6 +1,6 @@
 ---
 title: Application ROS1
-description: "Configuration système : ubuntu20.04"
+description: "Application ROS1 du module IMU sous Ubuntu 20.04 : installer ROS Noetic, transférer la bibliothèque et construire le projet pour publier l'attitude."
 ---
 
 # Application ROS1

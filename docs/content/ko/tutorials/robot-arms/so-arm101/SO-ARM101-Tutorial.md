@@ -265,7 +265,7 @@ lerobot-calibrate \
     --teleop.id=my_awesome_leader_arm
 ```
 
-[로봇팔 중앙 캘리브레이션 동영상.mp4]
+로봇팔 중앙 캘리브레이션 동영상.mp4
 
 ### 원격 조작
 
@@ -993,7 +993,7 @@ File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'
 
 디버깅을 위해 모든 Windows PC에서 USB 연결로 서보를 프로그래밍, 디버깅 또는 테스트할 수 있습니다. 이를 위해 [Feetech 소프트웨어](https://www.feetechrc.com/software.html)를 다운로드하세요. Ubuntu 시스템에서는 [FT_SCServo_Debug_Qt 도구](https://github.com/Kotakku/FT_SCServo_Debug_Qt)를 사용할 수 있습니다.
 
-[fddebug-master.zip]
+fddebug-master.zip
 
 포트 번호를 선택하고, 보드레이트를 1000000으로 설정한 뒤 열고 "Search"를 클릭합니다
 

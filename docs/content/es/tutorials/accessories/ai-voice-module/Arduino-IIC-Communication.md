@@ -1,6 +1,6 @@
 ---
 title: "Arduino: Comunicación IIC"
-description: "1. Abra el archivo IICVoice.ino"
+description: "Módulo de voz IA con Arduino por IIC: conexión del hardware, mapa de registros, lógica del ejemplo de control y solución de problemas."
 ---
 
 # Arduino: Comunicación IIC

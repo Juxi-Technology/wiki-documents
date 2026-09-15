@@ -1,6 +1,6 @@
 ---
 title: Raspberry Pi Serial Communication
-description: "Note: The voice interaction module needs to be flashed with the factory firmware. If the voice chip has not been flashed with firmware after being rec"
+description: "KWS speech recognition module serial communication on Raspberry Pi: connect over USB, check the ttyUSB port, and read recognized voice commands in Python."
 ---
 
 # Raspberry Pi Serial Communication

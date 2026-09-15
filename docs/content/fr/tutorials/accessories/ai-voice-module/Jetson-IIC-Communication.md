@@ -1,6 +1,6 @@
 ---
 title: "Jetson: Communication IIC"
-description: "Déconnectez-vous puis reconnectez-vous pour que cela prenne effet."
+description: "Communication IIC entre la carte Jetson et le module d'interaction vocale IA : câblage du bus, adresse 0x2A et exécution de l'exemple de reconnaissance."
 ---
 
 # Jetson: Communication IIC

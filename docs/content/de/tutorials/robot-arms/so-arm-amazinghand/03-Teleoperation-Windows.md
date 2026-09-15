@@ -1,6 +1,6 @@
 ---
 title: "Phase 3: Teleoperation (Windows)"
-description: "In dieser Phase starten Sie den geschlossenen Regelkreis der Teleoperation: Der Leader-Arm steuert die Bewegu…"
+description: "Phase 3 unter Windows: den geschlossenen Regelkreis der Teleoperation starten, bei dem der Leader-Arm den SO-ARM101 Folgearm steuert."
 ---
 
 

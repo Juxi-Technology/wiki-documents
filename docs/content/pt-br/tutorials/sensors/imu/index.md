@@ -1,6 +1,6 @@
 ---
 title: Tutorial de Uso do Sensor de Atitude IMU de Alta Precisão
-description: "1. Instale as bibliotecas Python necessárias para o código"
+description: "Tutorial do sensor de atitude IMU de alta precisão da Juxi Technology — instalar a biblioteca, usar comunicação serial e I2C e calibrar."
 ---
 
 # Tutorial de Uso do Sensor de Atitude IMU de Alta Precisão

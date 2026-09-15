@@ -1,6 +1,6 @@
 ---
 title: "Capitolo 8: Riconoscimento facciale"
-description: "Tutorial ESP32-NanoCam capitolo 8: registrare le caratteristiche del volto e riconoscere in continuo (ID/who?), padroneggiare i comandi face_eril, face_rz, face_del, face_detect, la strategia di salto dei frame e la risoluzione dei problemi."
+description: "Tutorial ESP32-NanoCam, capitolo 8: registrare i volti e riconoscere le persone in tempo reale, con gestione dei volti noti e risoluzione dei problemi."
 ---
 
 # Capitolo 8: Riconoscimento facciale

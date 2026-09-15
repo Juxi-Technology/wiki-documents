@@ -1,6 +1,6 @@
 ---
 title: "Lekiwi 组装教程"
-description: "在Fusion360 在线 CAD中可以可视化精确的组件位置。"
+description: "Lekiwi 移动机器人小车组装教程：从轮子模块到整车的分步安装说明，附 Fusion360 在线 CAD 与 URDF 文件参考。"
 ---
 
 # Lekiwi 组装教程

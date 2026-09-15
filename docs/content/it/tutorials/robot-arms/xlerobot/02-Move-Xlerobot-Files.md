@@ -1,6 +1,6 @@
 ---
 title: "Spostare i file XLeRobot"
-description: "Scaricare ed estrarre l'archivio all'indirizzo https://github.com/Vector-Wangel/XLeRobot"
+description: "Spostare i file XLeRobot: scaricare ed estrarre il software dal repository ufficiale e copiare modelli, robot e teleoperatori nelle cartelle di LeRobot."
 ---
 
 # Spostare i file XLeRobot

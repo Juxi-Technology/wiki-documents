@@ -1,6 +1,6 @@
 ---
 title: Mise à niveau 7-DOF du SO-ARM101 et utilisation avec LeRobot
-description: "Après transformation du SO-ARM101 de 6 servos en 7 degrés de liberté (ajout d'un wrist_yaw) : correspondance des ID de servos, modifications du code et méthode de remplacement, précautions de calibration, et utilisation avec LeRobot."
+description: "Mise à niveau 7 degrés de liberté du SO-ARM101 : correspondance des ID de servos, modifications du code LeRobot, calibration et incompatibilités."
 ---
 
 # Mise à niveau 7-DOF du SO-ARM101 et utilisation avec LeRobot

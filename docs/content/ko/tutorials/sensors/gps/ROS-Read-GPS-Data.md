@@ -1,6 +1,6 @@
 ---
 title: "ROS: GPS 데이터 읽기"
-description: "터미널에 입력하고,"
+description: "ROS GPS 데이터 읽기 — nmea 드라이버를 실행하고 토픽으로 위도, 경도와 해발고도 데이터를 터미널에서 확인하는 방법."
 ---
 
 # ROS: GPS 데이터 읽기

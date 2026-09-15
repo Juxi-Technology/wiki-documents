@@ -1,6 +1,6 @@
 ---
 title: Aplicação ROS2
-description: "Configuração do sistema: ubuntu22.04"
+description: "Aplicação ROS2 do módulo IMU da Juxi Technology — configurar o ROS2 Humble no Ubuntu 22.04, construir o projeto, ler os dados do sensor e visualizar no RViz2."
 ---
 
 # Aplicação ROS2

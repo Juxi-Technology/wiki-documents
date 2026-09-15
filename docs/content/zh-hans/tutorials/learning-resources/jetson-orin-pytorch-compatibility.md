@@ -1,6 +1,6 @@
 ---
 title: "Jetson Orin PyTorch 兼容性"
-description: "安装jetson版本的pytorch"
+description: "Jetson Orin 平台 PyTorch 兼容性教程：讲解 Jetson 版 PyTorch 安装方法，解决 GPU 无法调用与缺少 cuSPARSELt 库等问题。"
 ---
 
 # Jetson Orin PyTorch 兼容性

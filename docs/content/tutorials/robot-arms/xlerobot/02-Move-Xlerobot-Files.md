@@ -1,6 +1,6 @@
 ---
 title: "Move XLeRobot Files"
-description: "Download and extract the archive at https://github.com/Vector-Wangel/XLeRobot"
+description: "Move XLeRobot files into the LeRobot repository: copy the model, robots, teleoperators, and example folders to add full XLeRobot support."
 ---
 
 # Move XLeRobot Files

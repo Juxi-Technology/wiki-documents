@@ -1,6 +1,6 @@
 ---
 title: "Environment Setup (macOS)"
-description: "The black leader arm uses a 5V6A power adapter"
+description: "XLeRobot macOS environment setup: grant permissions, install Miniconda, and point pip and conda at mirror sources for LeRobot development."
 ---
 
 # Environment Setup (macOS)

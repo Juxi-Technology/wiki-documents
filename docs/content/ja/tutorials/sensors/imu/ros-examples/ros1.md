@@ -1,6 +1,6 @@
 ---
 title: "ROS1 応用"
-description: "システム構成：ubuntu20.04"
+description: "高精度 IMU 姿勢センサーの ROS1 応用チュートリアル。Ubuntu 20.04 と Noetic の環境設定からデータ取得までの手順を解説します。"
 ---
 
 # ROS1 応用

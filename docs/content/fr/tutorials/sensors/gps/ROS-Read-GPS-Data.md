@@ -1,6 +1,6 @@
 ---
 title: "ROS : lecture des données GPS"
-description: "Saisissez dans le terminal,"
+description: "Lire les données du module GPS BeiDou sous ROS2 : lancer le pilote NMEA, consulter les topics et récupérer latitude, longitude et altitude."
 ---
 
 # ROS : lecture des données GPS

@@ -1,6 +1,6 @@
 ---
 title: "Raspberry Pi: API do Baidu Maps"
-description: "1. Método de registo"
+description: "Utilize a API do Baidu Maps no Raspberry Pi: registo na plataforma, obtenção da chave de acesso e conversão das coordenadas GPS para apresentação no mapa."
 ---
 
 # Raspberry Pi: API do Baidu Maps

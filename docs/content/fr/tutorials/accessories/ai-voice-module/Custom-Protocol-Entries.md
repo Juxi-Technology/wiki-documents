@@ -1,6 +1,6 @@
 ---
 title: "Création d'entrées de protocole personnalisées"
-description: "Le module est déjà flashé en usine avec le micrologiciel de reconnaissance vocale, et le micrologiciel d'usin…"
+description: "Créer des entrées personnalisées pour le module d'interaction vocale IA : générer le micrologiciel en ligne, éditer les mots de commande et les diffusions."
 ---
 
 # Création d'entrées de protocole personnalisées

@@ -265,7 +265,7 @@ lerobot-calibrate \
     --teleop.id=my_awesome_leader_arm
 ```
 
-[ロボットアーム中位キャリブレーション動画.mp4]
+ロボットアーム中位キャリブレーション動画.mp4
 
 ### 遠隔操作
 
@@ -993,7 +993,7 @@ File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'
 
 デバッグ用に、任意の Windows PC で USB 接続によるサーボのプログラミング・デバッグ・テストが可能です。そのためには [Feetech ソフトウェア](https://www.feetechrc.com/software.html) をダウンロードしてください。Ubuntu システムでは [FT_SCServo_Debug_Qt ツール](https://github.com/Kotakku/FT_SCServo_Debug_Qt) を使用できます。
 
-[fddebug-master.zip]
+fddebug-master.zip
 
 ポート番号を選択し、ボーレートを 1000000 に設定して開き、「Search」をクリックします
 
