@@ -1,9 +1,9 @@
 ---
-title: "⚒️Assemblaggio del prodotto finito"
+title: "Montaggio kit assemblato"
 description: "Elenco dei componenti"
 ---
 
-# ⚒️Assemblaggio del prodotto finito
+# Montaggio kit assemblato
 
 Elenco dei componenti
 

@@ -1,9 +1,9 @@
 ---
-title: "Step 2: Move the Xlerobot Files"
+title: "Move XLeRobot Files"
 description: "Download and extract the archive at https://github.com/Vector-Wangel/XLeRobot"
 ---
 
-# Step 2: Move the Xlerobot Files
+# Move XLeRobot Files
 
 Download and extract the archive at https://github.com/Vector-Wangel/XLeRobot
 

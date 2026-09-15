@@ -1,9 +1,9 @@
 ---
-title: "AGNSS辅助定位"
+title: "树莓派:AGNSS 辅助定位"
 description: "本次课程我们主要学习使用树莓派和GPS模块和agnss服务器实现弱信号下位置信息读取解析。"
 ---
 
-# AGNSS辅助定位
+# 树莓派:AGNSS 辅助定位
 
 **1. 学习目标**
 

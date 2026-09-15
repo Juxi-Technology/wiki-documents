@@ -1,9 +1,9 @@
 ---
-title: "Étape 2 : déplacer les fichiers Xlerobot"
+title: "Déplacer les fichiers XLeRobot"
 description: "Téléchargez et extrayez l'archive à l'adresse https://github.com/Vector-Wangel/XLeRobot"
 ---
 
-# Étape 2 : déplacer les fichiers Xlerobot
+# Déplacer les fichiers XLeRobot
 
 Téléchargez et extrayez l'archive à l'adresse https://github.com/Vector-Wangel/XLeRobot
 

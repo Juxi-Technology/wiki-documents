@@ -1,9 +1,9 @@
 ---
-title: "Baidu Maps API Application Tutorial"
+title: "Jetson: Baidu Map API"
 description: "1. Registration Method"
 ---
 
-# Baidu Maps API Application Tutorial
+# Jetson: Baidu Map API
 
 **1.** **Registration Method**
 

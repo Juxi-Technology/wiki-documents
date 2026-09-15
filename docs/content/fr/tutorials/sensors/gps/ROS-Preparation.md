@@ -1,9 +1,9 @@
 ---
-title: "Remarques avant l'utilisation du module GPS"
+title: "ROS : préparation"
 description: "(1) Après avoir créé l'espace de travail, copiez le contenu du dossier gpssrc dans le dossier src de l'espace…"
 ---
 
-# Remarques avant l'utilisation du module GPS
+# ROS : préparation
 
 #### 1. Remarques sur la compilation du module GPS
 

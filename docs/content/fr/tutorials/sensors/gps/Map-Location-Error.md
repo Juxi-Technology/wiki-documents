@@ -1,11 +1,11 @@
 ---
-title: "Erreur de positionnement sur la carte"
+title: "Erreur de localisation sur la carte"
 description: "Les coordonnées utilisées par Tencent et Amap diffèrent de celles de l'ordinateur hôte. Notre ordinateur hôte…"
 ---
 
 
 
-# Erreur de positionnement sur la carte
+# Erreur de localisation sur la carte
 
 [toc]
 

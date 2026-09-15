@@ -1,10 +1,10 @@
 ---
-title: "Phase 2: Kalibrierung (Linux)"
+title: "Stufe 2: Hand- & Arm-Kalibrierung (Linux)"
 description: "In dieser Phase werden drei Geräte kalibriert: Leader-Arm, Follower-Arm und AmazingHand-Hand. Die Kalibrierun…"
 ---
 
 
-# Phase 2: Kalibrierung (Linux)
+# Stufe 2: Hand- & Arm-Kalibrierung (Linux)
 
 In dieser Phase werden drei Geräte kalibriert: Leader-Arm, Follower-Arm und AmazingHand-Hand. Die Kalibrierung ist die Voraussetzung für die korrekte Teleoperation; **Sie müssen diese Phase abschließen, bevor Sie mit der Teleoperation beginnen können**.
 

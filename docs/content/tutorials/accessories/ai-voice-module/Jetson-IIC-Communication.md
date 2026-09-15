@@ -1,9 +1,9 @@
 ---
-title: "IIC Communication"
+title: "Jetson: IIC Communication"
 description: "Log out and log back in for it to take effect."
 ---
 
-# IIC Communication
+# Jetson: IIC Communication
 
 ## Install Dependencies
 

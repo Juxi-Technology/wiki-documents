@@ -1,9 +1,9 @@
 ---
-title: "Comunicación IIC"
+title: "Raspberry Pi: Comunicación IIC"
 description: "Seleccione Interface Options -> I2C -> Yes"
 ---
 
-# Comunicación IIC
+# Raspberry Pi: Comunicación IIC
 
 ## Instalar dependencias
 

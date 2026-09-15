@@ -1,9 +1,9 @@
 ---
-title: "Passo 2: spostare i file di Xlerobot"
+title: "Spostare i file XLeRobot"
 description: "Scaricare ed estrarre l'archivio all'indirizzo https://github.com/Vector-Wangel/XLeRobot"
 ---
 
-# Passo 2: spostare i file di Xlerobot
+# Spostare i file XLeRobot
 
 Scaricare ed estrarre l'archivio all'indirizzo https://github.com/Vector-Wangel/XLeRobot
 

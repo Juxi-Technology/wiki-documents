@@ -1,9 +1,9 @@
 ---
-title: "Comunicazione della porta seriale"
+title: "Raspberry Pi: Comunicazione della porta seriale"
 description: "Modificare /boot/firmware/config.txt o /boot/config.txt e assicurarsi della seguente configurazione:"
 ---
 
-# Comunicazione della porta seriale
+# Raspberry Pi: Comunicazione della porta seriale
 
 ## Installazione delle dipendenze
 

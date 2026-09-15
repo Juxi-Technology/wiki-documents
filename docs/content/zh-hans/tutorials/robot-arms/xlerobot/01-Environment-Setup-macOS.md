@@ -1,9 +1,9 @@
 ---
-title: "MAC电脑"
+title: "安装环境(macOS)"
 description: "黑色主动臂使用 5V6A 电源适配器"
 ---
 
-# MAC电脑
+# 安装环境(macOS)
 
 黑色主动臂使用 5V6A 电源适配器
 

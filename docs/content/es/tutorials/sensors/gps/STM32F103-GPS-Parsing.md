@@ -1,9 +1,9 @@
 ---
-title: "Salida del análisis GPS"
+title: "STM32F103: salida de análisis GPS"
 description: "En esta lección aprenderemos principalmente a utilizar el STM32F103C8T6 y el módulo GPS para implementar la f…"
 ---
 
-# Salida del análisis GPS
+# STM32F103: salida de análisis GPS
 
 **1. Objetivos de aprendizaje**
 

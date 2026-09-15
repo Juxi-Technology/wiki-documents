@@ -1,9 +1,9 @@
 ---
-title: "Serial Port Communication"
+title: "Raspberry Pi: Serial Port Communication"
 description: "Edit /boot/firmware/config.txt or /boot/config.txt and ensure the following configuration:"
 ---
 
-# Serial Port Communication
+# Raspberry Pi: Serial Port Communication
 
 ## Install Dependencies
 

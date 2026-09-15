@@ -1,9 +1,9 @@
 ---
-title: "05、IMX219-CSI摄像头（树莓派）教程"
+title: "IMX219(树莓派)教程"
 description: "如果没有，则可能是内核或者设备硬件存在问题，可尝试重刷系统或更换硬件。"
 ---
 
-# 05、IMX219-CSI摄像头（树莓派）教程
+# IMX219(树莓派)教程
 
 ##### 1、首先使用"ls"指令来查看是否存在vchiq设备节点：输入 ls /dev
 
@@ -37,5 +37,4 @@ description: "如果没有，则可能是内核或者设备硬件存在问题，
 
 将image.jpg图片传输到windows桌面打开， 即可看到拍照出来的效果
 
-
-
+<RelatedProducts slugs="imx219-csi-camera" />

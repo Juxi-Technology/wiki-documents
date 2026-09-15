@@ -1,9 +1,9 @@
 ---
-title: "IIC 통신"
+title: "Arduino: IIC 통신"
 description: "1. IICVoice.ino 파일 열기"
 ---
 
-# IIC 통신
+# Arduino: IIC 통신
 
 ## 📁 파일 구조
 

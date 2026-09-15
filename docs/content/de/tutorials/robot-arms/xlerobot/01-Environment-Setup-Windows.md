@@ -1,9 +1,9 @@
 ---
-title: "Windows-Computer"
+title: "Umgebung einrichten (Windows)"
 description: "Der schwarze Leader-Arm verwendet ein 5V6A-Netzteil"
 ---
 
-# Windows-Computer
+# Umgebung einrichten (Windows)
 
 Der schwarze Leader-Arm verwendet ein 5V6A-Netzteil
 

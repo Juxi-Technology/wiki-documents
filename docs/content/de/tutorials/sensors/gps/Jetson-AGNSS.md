@@ -1,9 +1,9 @@
 ---
-title: "AGNSS-unterstützte Positionierung"
+title: "Jetson: AGNSS-Unterstützung"
 description: "In dieser Lektion lernen wir hauptsächlich, mit Jetson Orin, dem GPS-Modul und einem agnss-Server das Lesen u…"
 ---
 
-# AGNSS-unterstützte Positionierung
+# Jetson: AGNSS-Unterstützung
 
 **1. Lernziel**
 

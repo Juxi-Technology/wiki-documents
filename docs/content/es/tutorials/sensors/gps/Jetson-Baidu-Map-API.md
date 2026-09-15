@@ -1,9 +1,9 @@
 ---
-title: "Tutorial para solicitar la api de 百度地图"
+title: "Jetson: API de Baidu Maps"
 description: "1. Método de registro"
 ---
 
-# Tutorial para solicitar la api de 百度地图
+# Jetson: API de Baidu Maps
 
 **1.** **Método de registro**
 

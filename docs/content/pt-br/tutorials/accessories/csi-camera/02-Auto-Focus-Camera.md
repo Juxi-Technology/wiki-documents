@@ -1,9 +1,9 @@
 ---
-title: "02. Uso da câmera com foco automático"
+title: "Uso da câmera com autofoco"
 description: "O resultado da imagem corresponde a duas câmeras CSI e uma câmera USB conectadas: normalmente uma câmera CSI …"
 ---
 
-# 02. Uso da câmera com foco automático
+# Uso da câmera com autofoco
 
 ## 1. Verificar os dispositivos de vídeo
 
@@ -71,5 +71,4 @@ Selecione o número de dispositivo correspondente à câmera USB:
 
 ![Imagem 9](../../../../../public/images/tutorials/accessories/csi-camera/02-Auto-Focus-Camera/9.png)
 
-
-
+<RelatedProducts slugs="usb-auto-focus-camera" />

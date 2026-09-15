@@ -1,9 +1,9 @@
 ---
-title: "GPS模組使用前説明"
+title: "ROS:使用前準備"
 description: "（1）建立好工作空間後，把資料夾gpssrc資料夾裏的內容複製到工作空間的src裏邊，然後利用colcon build編譯，沒有出現錯誤表示編譯通過；"
 ---
 
-# GPS模組使用前説明
+# ROS:使用前準備
 
 #### 1、GPS模組編譯説明
 

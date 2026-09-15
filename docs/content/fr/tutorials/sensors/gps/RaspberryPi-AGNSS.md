@@ -1,9 +1,9 @@
 ---
-title: "Positionnement assisté AGNSS"
+title: "Raspberry Pi : positionnement AGNSS"
 description: "Dans cette leçon, nous allons principalement apprendre à réaliser la lecture et l'analyse des informations de…"
 ---
 
-# Positionnement assisté AGNSS
+# Raspberry Pi : positionnement AGNSS
 
 **1. Objectif d'apprentissage**
 

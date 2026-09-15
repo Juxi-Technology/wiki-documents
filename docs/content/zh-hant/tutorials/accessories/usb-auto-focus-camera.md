@@ -132,3 +132,5 @@ gst-launch-1.0 v4l2src device=/dev/video0 ! videoconvert ! autovideosink
 - 📧 郵箱：support@juxitech.com
 - 🌐 官方網站：[www.juxitech.com](https://www.juxitech.com)
 - 💬 GitHub Issues：[問題反饋](https://github.com/Juxi-Technology/wiki-documents/issues)
+
+<RelatedProducts slugs="usb-auto-focus-camera" />

@@ -1,9 +1,9 @@
 ---
-title: "Ubuntu-Computer"
+title: "Umgebung einrichten (Ubuntu)"
 description: "Der schwarze Leader-Arm verwendet ein 5V6A-Netzteil"
 ---
 
-# Ubuntu-Computer
+# Umgebung einrichten (Ubuntu)
 
 Der schwarze Leader-Arm verwendet ein 5V6A-Netzteil
 

@@ -1,9 +1,9 @@
 ---
-title: "Ordinateur Windows"
+title: "Configuration (Windows)"
 description: "Le bras meneur noir utilise un adaptateur secteur 5V6A"
 ---
 
-# Ordinateur Windows
+# Configuration (Windows)
 
 Le bras meneur noir utilise un adaptateur secteur 5V6A
 

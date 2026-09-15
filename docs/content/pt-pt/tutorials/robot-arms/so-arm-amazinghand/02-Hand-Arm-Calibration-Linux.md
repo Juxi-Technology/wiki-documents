@@ -1,10 +1,10 @@
 ---
-title: "Etapa 2: Calibração (Linux)"
+title: "Etapa 2: calibração de mão e braços (Linux)"
 description: "Esta etapa calibra três dispositivos: o braço líder, o braço seguidor e a mão AmazingHand. A calibração é o p…"
 ---
 
 
-# Etapa 2: Calibração (Linux)
+# Etapa 2: calibração de mão e braços (Linux)
 
 Esta etapa calibra três dispositivos: o braço líder, o braço seguidor e a mão AmazingHand. A calibração é o pré-requisito para a correção da teleoperação; **é obrigatório concluir esta etapa antes de entrar na teleoperação**.
 

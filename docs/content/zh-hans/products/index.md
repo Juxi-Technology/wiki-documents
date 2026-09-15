@@ -87,6 +87,10 @@ outline: false
     <span class="pc-title">SO-ARM101 TPU 柔性夹爪</span>
     <p class="pc-desc">钜犀科技 SO-ARM101 TPU 柔性夹爪——软 TPU 材质安全抓取不规则/易碎物品,支持臂载相机,可选 30FPS 变焦或 60FPS 定焦</p>
   </a>
+  <a :href="withBase('/zh-hans/products/usb-auto-focus-camera')" class="category-card">
+    <span class="pc-title">USB 自动对焦摄像头</span>
+    <p class="pc-desc">钜犀科技 USB 免驱自动对焦摄像头——86° 广角,1080P 30FPS,UVC 免驱,适用于机器人视觉与 AI 推理,兼容 Windows/Linux/macOS/Jetson/树莓派</p>
+  </a>
   <a :href="withBase('/zh-hans/products/usb-sound-card')" class="category-card">
     <span class="pc-title">USB 免驱声卡</span>
     <p class="pc-desc">钜犀科技 USB 免驱声卡——板载麦克风+扬声器,即插即用,降噪,适配树莓派/Jetson/PC 语音交互</p>

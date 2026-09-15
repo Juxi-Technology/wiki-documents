@@ -1,9 +1,9 @@
 ---
-title: "GPS解析输出"
+title: "STM32F103:GPS 解析输出"
 description: "本次课程我们主要学习使用STM32F103C8T6和GPS模块模块实现位置信息解析输出功能。"
 ---
 
-# GPS解析输出
+# STM32F103:GPS 解析输出
 
 **1. 学习目标**
 

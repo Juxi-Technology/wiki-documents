@@ -1,9 +1,9 @@
 ---
-title: "GPS Data Parsing"
+title: "51 MCU: GPS Parsing"
 description: "In this lesson, we will mainly learn to use an STC89C52RC 51 microcontroller and a GPS module to implement th…"
 ---
 
-# GPS Data Parsing
+# 51 MCU: GPS Parsing
 
 **1. Learning Objectives**
 

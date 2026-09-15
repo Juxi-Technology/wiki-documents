@@ -1,9 +1,9 @@
 ---
-title: "Ordinateur Ubuntu"
+title: "Configuration (Ubuntu)"
 description: "Le bras meneur noir utilise un adaptateur secteur 5V6A"
 ---
 
-# Ordinateur Ubuntu
+# Configuration (Ubuntu)
 
 Le bras meneur noir utilise un adaptateur secteur 5V6A
 

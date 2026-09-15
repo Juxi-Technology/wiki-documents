@@ -1,9 +1,9 @@
 ---
-title: "시리얼 통신"
+title: "Arduino: 시리얼 통신"
 description: "1. UARTVoice.ino 파일 열기"
 ---
 
-# 시리얼 통신
+# Arduino: 시리얼 통신
 
 ## 📁 파일 구조
 

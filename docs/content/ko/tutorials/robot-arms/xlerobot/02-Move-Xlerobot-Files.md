@@ -1,9 +1,9 @@
 ---
-title: "2단계: Xlerobot 파일 이동"
+title: "XLeRobot 파일 이동"
 description: "https://github.com/Vector-Wangel/XLeRobot 에서 압축 파일을 다운로드하여 압축을 해제합니다"
 ---
 
-# 2단계: Xlerobot 파일 이동
+# XLeRobot 파일 이동
 
 https://github.com/Vector-Wangel/XLeRobot 에서 압축 파일을 다운로드하여 압축을 해제합니다
 

@@ -1,9 +1,9 @@
 ---
-title: "⚒️キット組み立て"
+title: "パーツキット組み立て"
 description: "ねじ締めの楽しみをスキップしたい場合は、Xlerobot に対応した SO101 フォロワーアームの組み立て済みキットを購入することもできます。"
 ---
 
-# ⚒️キット組み立て
+# パーツキット組み立て
 
 ![図 1](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/1.png)
 

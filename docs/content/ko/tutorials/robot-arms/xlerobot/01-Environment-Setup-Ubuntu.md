@@ -1,9 +1,9 @@
 ---
-title: "Ubuntu 컴퓨터"
+title: "환경 구축(Ubuntu)"
 description: "검정색 리더 암은 5V6A 전원 어댑터를 사용합니다"
 ---
 
-# Ubuntu 컴퓨터
+# 환경 구축(Ubuntu)
 
 검정색 리더 암은 5V6A 전원 어댑터를 사용합니다
 

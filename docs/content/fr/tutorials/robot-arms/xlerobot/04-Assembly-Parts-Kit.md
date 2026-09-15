@@ -1,9 +1,9 @@
 ---
-title: "⚒️ Assemblage du kit"
+title: "Assemblage du kit en pièces"
 description: "Astuce"
 ---
 
-# ⚒️ Assemblage du kit
+# Assemblage du kit en pièces
 
 ![Image 1](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/1.png)
 

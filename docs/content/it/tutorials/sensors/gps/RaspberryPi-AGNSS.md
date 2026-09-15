@@ -1,9 +1,9 @@
 ---
-title: "Posizionamento assistito AGNSS"
+title: "Raspberry Pi: posizionamento AGNSS"
 description: "In questa lezione impareremo principalmente a utilizzare la Raspberry Pi, il modulo GPS e un server agnss per…"
 ---
 
-# Posizionamento assistito AGNSS
+# Raspberry Pi: posizionamento AGNSS
 
 **1. Obiettivi di apprendimento**
 

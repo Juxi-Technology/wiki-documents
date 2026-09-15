@@ -1,9 +1,9 @@
 ---
-title: "IIC 통신"
+title: "라즈베리파이: IIC 통신"
 description: "Raspberry Pi 재부팅"
 ---
 
-# IIC 통신
+# 라즈베리파이: IIC 통신
 
 ## 의존성 설치
 

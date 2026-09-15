@@ -1,9 +1,9 @@
 ---
-title: "Computador MAC"
+title: "Configuração (macOS)"
 description: "O braço líder preto usa um adaptador de energia de 5V6A"
 ---
 
-# Computador MAC
+# Configuração (macOS)
 
 O braço líder preto usa um adaptador de energia de 5V6A
 

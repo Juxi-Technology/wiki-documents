@@ -1,9 +1,9 @@
 ---
-title: "GPS Position Information Parsing"
+title: "Arduino: Location Parsing"
 description: "In this lesson, we will mainly learn to use Arduino and a GPS module to implement the position information pa…"
 ---
 
-# GPS Position Information Parsing
+# Arduino: Location Parsing
 
 **1. Learning Objectives**
 

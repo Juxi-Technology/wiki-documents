@@ -1,9 +1,9 @@
 ---
-title: "IIC-Kommunikation"
+title: "Arduino: IIC-Kommunikation"
 description: "1. Öffnen Sie die Datei IICVoice.ino"
 ---
 
-# IIC-Kommunikation
+# Arduino: IIC-Kommunikation
 
 ## 📁 Dateistruktur
 

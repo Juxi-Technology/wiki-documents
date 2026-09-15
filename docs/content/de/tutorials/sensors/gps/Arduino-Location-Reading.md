@@ -1,9 +1,9 @@
 ---
-title: "Auslesen der GPS-Positionsinformationen"
+title: "Arduino: Positionsausgabe"
 description: "In dieser Lektion lernen wir hauptsächlich, mit Arduino und dem GPS-Modul die Funktion zum Auslesen der Posit…"
 ---
 
-# Auslesen der GPS-Positionsinformationen
+# Arduino: Positionsausgabe
 
 **1. Lernziel**
 

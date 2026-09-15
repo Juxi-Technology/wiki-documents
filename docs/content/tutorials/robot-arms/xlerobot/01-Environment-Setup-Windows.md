@@ -1,9 +1,9 @@
 ---
-title: "Windows Computer"
+title: "Environment Setup (Windows)"
 description: "The black leader arm uses a 5V6A power adapter"
 ---
 
-# Windows Computer
+# Environment Setup (Windows)
 
 The black leader arm uses a 5V6A power adapter
 

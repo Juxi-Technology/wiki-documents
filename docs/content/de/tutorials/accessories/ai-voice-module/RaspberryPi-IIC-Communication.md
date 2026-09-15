@@ -1,9 +1,9 @@
 ---
-title: "IIC-Kommunikation"
+title: "Raspberry Pi: IIC-Kommunikation"
 description: "Wählen Sie Interface Options -> I2C -> Yes"
 ---
 
-# IIC-Kommunikation
+# Raspberry Pi: IIC-Kommunikation
 
 ## Abhängigkeiten installieren
 

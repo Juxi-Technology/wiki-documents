@@ -1,9 +1,9 @@
 ---
-title: "Anleitung zur Beantragung der Baidu Maps API"
+title: "Jetson: Baidu-Maps-API"
 description: "1. Registrierungsmethode"
 ---
 
-# Anleitung zur Beantragung der Baidu Maps API
+# Jetson: Baidu-Maps-API
 
 **1.** **Registrierungsmethode**
 

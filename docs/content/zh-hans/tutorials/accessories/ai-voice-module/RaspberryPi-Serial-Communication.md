@@ -1,9 +1,9 @@
 ---
-title: "串口通讯"
+title: "树莓派: 串口通讯"
 description: "编辑 /boot/firmware/config.txt 或 /boot/config.txt，确保以下配置："
 ---
 
-# 串口通讯
+# 树莓派: 串口通讯
 
 ## 安装依赖
 

@@ -1,9 +1,9 @@
 ---
-title: "GPS Module Position Information Parsing"
+title: "Jetson: GPS Parsing"
 description: "In this lesson, we will mainly learn to use Jetson Orin and a GPS module to read and parse position informati…"
 ---
 
-# GPS Module Position Information Parsing
+# Jetson: GPS Parsing
 
 **1. Learning Objectives**
 

@@ -1,9 +1,9 @@
 ---
-title: "Lettura delle informazioni di posizione GPS"
+title: "Arduino: lettura posizione"
 description: "In questa lezione impareremo principalmente a utilizzare Arduino e il modulo GPS per implementare la funzione…"
 ---
 
-# Lettura delle informazioni di posizione GPS
+# Arduino: lettura posizione
 
 **1. Obiettivi di apprendimento**
 

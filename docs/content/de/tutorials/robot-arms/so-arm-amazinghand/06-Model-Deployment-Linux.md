@@ -1,10 +1,10 @@
 ---
-title: "Phase 6: Deployment und Evaluierung (Linux)"
+title: "Stufe 6: Modell-Deployment (Linux)"
 description: "In dieser Phase laden Sie die trainierte Policy, lassen den Roboter Aufgaben autonom ausführen und zeichnen e…"
 ---
 
 
-# Phase 6: Deployment und Evaluierung (Linux)
+# Stufe 6: Modell-Deployment (Linux)
 
 In dieser Phase laden Sie die trainierte Policy, lassen den Roboter Aufgaben **autonom ausführen** und zeichnen ein Auswertungsvideo auf, um die Wirkung zu überprüfen. Dies ist der Abschluss des gesamten Ablaufs und zugleich der entscheidende Test der Trainingsergebnisse.
 

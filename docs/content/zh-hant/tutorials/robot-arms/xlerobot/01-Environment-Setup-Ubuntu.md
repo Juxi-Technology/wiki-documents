@@ -1,9 +1,9 @@
 ---
-title: "Ubuntu電腦"
+title: "安裝環境(Ubuntu)"
 description: "黑色主動臂使用 5V6A 電源適配器"
 ---
 
-# Ubuntu電腦
+# 安裝環境(Ubuntu)
 
 黑色主動臂使用 5V6A 電源適配器
 

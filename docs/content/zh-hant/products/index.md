@@ -87,6 +87,10 @@ outline: false
     <span class="pc-title">SO-ARM101 TPU 柔性夾爪</span>
     <p class="pc-desc">鉅犀科技 SO-ARM101 TPU 柔性夾爪——軟 TPU 材質安全抓取不規則/易碎物品,支持臂載相機,可選 30FPS 變焦或 60FPS 定焦</p>
   </a>
+  <a :href="withBase('/zh-hant/products/usb-auto-focus-camera')" class="category-card">
+    <span class="pc-title">USB 自動對焦攝像頭</span>
+    <p class="pc-desc">鉅犀科技 USB 免驅自動對焦攝像頭——86° 廣角,1080P 30FPS,UVC 免驅,適用於機器人視覺與 AI 推理,兼容 Windows/Linux/macOS/Jetson/樹莓派</p>
+  </a>
   <a :href="withBase('/zh-hant/products/usb-sound-card')" class="category-card">
     <span class="pc-title">USB 免驅聲卡</span>
     <p class="pc-desc">鉅犀科技 USB 免驅聲卡——板載麥克風+揚聲器,即插即用,降噪,適配樹莓派/Jetson/PC 語音交互</p>

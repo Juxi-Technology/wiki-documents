@@ -1,9 +1,9 @@
 ---
-title: "IIC通讯"
+title: "树莓派: IIC通讯"
 description: "选择 Interface Options -> I2C -> Yes"
 ---
 
-# IIC通讯
+# 树莓派: IIC通讯
 
 ## 安装依赖
 

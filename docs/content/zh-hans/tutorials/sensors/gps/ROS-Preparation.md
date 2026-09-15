@@ -1,9 +1,9 @@
 ---
-title: "GPS模块使用前说明"
+title: "ROS:使用前准备"
 description: "（1）建立好工作空间后，把文件夹gpssrc文件夹里的内容复制到工作空间的src里边，然后利用colcon build编译，没有出现错误表示编译通过；"
 ---
 
-# GPS模块使用前说明
+# ROS:使用前准备
 
 #### 1、GPS模块编译说明
 

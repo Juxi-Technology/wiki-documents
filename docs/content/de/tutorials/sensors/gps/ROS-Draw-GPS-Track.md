@@ -1,9 +1,9 @@
 ---
-title: "Zeichnen der GPS-Spur"
+title: "ROS: GPS-Spur zeichnen"
 description: "Eine direkte Visualisierung der GPS-Informationen ist nicht möglich; wir müssen das Koordinatensystem umrechn…"
 ---
 
-# Zeichnen der GPS-Spur
+# ROS: GPS-Spur zeichnen
 
 **Diese Funktion zeichnet die Echtzeit-GPS-Dateninformationen und zeigt sie in rviz2 an.**
 

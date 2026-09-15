@@ -1,11 +1,11 @@
 ---
-title: "Positionsfehler auf der Karte"
+title: "Kartenpositionsfehler"
 description: "Die von Tencent und Amap verwendeten Koordinaten unterscheiden sich von den Koordinaten des Host-Computers. U…"
 ---
 
 
 
-# Positionsfehler auf der Karte
+# Kartenpositionsfehler
 
 [toc]
 

@@ -1,10 +1,10 @@
 ---
-title: "Phase 6 : Déploiement et évaluation (Linux)"
+title: "Étape 6 : déploiement du modèle (Linux)"
 description: "Cette phase charge la politique entraînée pour que le robot exécute la tâche de manière autonome et enregistr…"
 ---
 
 
-# Phase 6 : Déploiement et évaluation (Linux)
+# Étape 6 : déploiement du modèle (Linux)
 
 Cette phase charge la politique entraînée pour que le robot **exécute la tâche de manière autonome** et enregistre une vidéo d'évaluation afin de vérifier le résultat. C'est la conclusion de tout le processus et un moment clé pour valider le fruit de l'entraînement.
 

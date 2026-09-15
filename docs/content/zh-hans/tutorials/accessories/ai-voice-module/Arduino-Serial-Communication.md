@@ -1,9 +1,9 @@
 ---
-title: "串口通讯"
+title: "Arduino: 串口通讯"
 description: "1. 打开 UARTVoice.ino 文件"
 ---
 
-# 串口通讯
+# Arduino: 串口通讯
 
 ## 📁 文件结构
 

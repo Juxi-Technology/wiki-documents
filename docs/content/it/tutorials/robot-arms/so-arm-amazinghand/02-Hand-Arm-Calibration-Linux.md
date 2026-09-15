@@ -1,10 +1,10 @@
 ---
-title: "Fase 2: Calibrazione (Linux)"
+title: "Fase 2: calibrazione mano e bracci (Linux)"
 description: "In questa fase si calibrano i tre dispositivi: il braccio master, il braccio slave e la mano AmazingHand. La …"
 ---
 
 
-# Fase 2: Calibrazione (Linux)
+# Fase 2: calibrazione mano e bracci (Linux)
 
 In questa fase si calibrano i tre dispositivi: il braccio master, il braccio slave e la mano AmazingHand. La calibrazione è il presupposto per la correttezza della teleoperazione; **è obbligatorio completare questa fase per passare alla teleoperazione**.
 

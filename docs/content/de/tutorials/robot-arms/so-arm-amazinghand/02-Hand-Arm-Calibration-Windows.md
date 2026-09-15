@@ -1,10 +1,10 @@
 ---
-title: "Phase 2: Kalibrierung (Windows)"
+title: "Stufe 2: Hand- & Arm-Kalibrierung (Windows)"
 description: "In dieser Phase werden drei Geräte kalibriert: Leader-Arm, Follower-Arm und AmazingHand-Hand. Die Kalibrierun…"
 ---
 
 
-# Phase 2: Kalibrierung (Windows)
+# Stufe 2: Hand- & Arm-Kalibrierung (Windows)
 
 In dieser Phase werden drei Geräte kalibriert: Leader-Arm, Follower-Arm und AmazingHand-Hand. Die Kalibrierung ist die Voraussetzung für die korrekte Teleoperation; **Sie müssen diese Phase abschließen, bevor Sie mit der Teleoperation beginnen können**.
 

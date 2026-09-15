@@ -1,9 +1,9 @@
 ---
-title: "Le module GPS analyse les informations de position"
+title: "Raspberry Pi : analyse GPS"
 description: "Dans cette leçon, nous allons principalement apprendre à lire et à analyser les informations de position à l'…"
 ---
 
-# Le module GPS analyse les informations de position
+# Raspberry Pi : analyse GPS
 
 **1. Objectif d'apprentissage**
 

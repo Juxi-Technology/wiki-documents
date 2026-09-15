@@ -1,9 +1,9 @@
 ---
-title: "Computador Windows"
+title: "Configuração (Windows)"
 description: "O braço líder preto usa um adaptador de energia de 5V6A"
 ---
 
-# Computador Windows
+# Configuração (Windows)
 
 O braço líder preto usa um adaptador de energia de 5V6A
 

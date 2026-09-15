@@ -1,9 +1,9 @@
 ---
-title: "Instructions Before Using the GPS Module"
+title: "ROS: Preparation"
 description: "(1) After setting up the workspace, copy the contents of the gpssrc folder into the src of the workspace, the…"
 ---
 
-# Instructions Before Using the GPS Module
+# ROS: Preparation
 
 #### 1. GPS Module Compilation Instructions
 

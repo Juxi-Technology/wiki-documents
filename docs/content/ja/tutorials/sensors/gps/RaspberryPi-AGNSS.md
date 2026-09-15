@@ -1,9 +1,9 @@
 ---
-title: "AGNSS補助測位"
+title: "ラズベリーパイ:AGNSS 支援測位"
 description: "今回の講座では、主にRaspberry PiとGPSモジュールおよびagnssサーバーを使用して、弱信号下での位置情報の読み取りと解析を実装する方法を学びます。"
 ---
 
-# AGNSS補助測位
+# ラズベリーパイ:AGNSS 支援測位
 
 **1. 学習目標**
 

@@ -1,9 +1,9 @@
 ---
-title: "04. Utilização do JetCam"
+title: "Uso do JetCam"
 description: "Utilização do JetCam"
 ---
 
-# 04. Utilização do JetCam
+# Uso do JetCam
 
 Utilização do JetCam
 
@@ -114,3 +114,4 @@ No Jupyter Lab, entre na pasta onde está a câmara USB e abra o ficheiro; camin
 
 [https://github.com/NVIDIA-AI-IOT/jetcam](https://github.com/NVIDIA-AI-IOT/jetcam)
 
+<RelatedProducts slugs="imx219-csi-camera" />

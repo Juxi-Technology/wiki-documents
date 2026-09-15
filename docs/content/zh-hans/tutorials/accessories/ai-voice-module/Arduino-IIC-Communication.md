@@ -1,9 +1,9 @@
 ---
-title: "IIC通讯"
+title: "Arduino: IIC通讯"
 description: "1. 打开 IICVoice.ino 文件"
 ---
 
-# IIC通讯
+# Arduino: IIC通讯
 
 ## 📁 文件结构
 

@@ -1,9 +1,9 @@
 ---
-title: "02, 자동 초점 카메라 사용"
+title: "자동 초점 카메라 사용"
 description: "그림의 결과는 CSI 카메라 2개, USB 카메라 1개를 연결한 결과입니다: 일반적으로 CSI 카메라 1개당 video 장치 1개가 표시되고, USB 카메라 1개당 video 장치 2개가 표시됩니…"
 ---
 
-# 02, 자동 초점 카메라 사용
+# 자동 초점 카메라 사용
 
 ## 1, video 장치 확인
 
@@ -71,5 +71,4 @@ USB 카메라에 해당하는 장치 번호를 선택합니다:
 
 ![그림 9](../../../../../public/images/tutorials/accessories/csi-camera/02-Auto-Focus-Camera/9.png)
 
-
-
+<RelatedProducts slugs="usb-auto-focus-camera" />

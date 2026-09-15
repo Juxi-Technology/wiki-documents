@@ -1,9 +1,9 @@
 ---
-title: "Comunicazione della porta seriale"
+title: "RDK: Comunicazione della porta seriale"
 description: "Questo repository fornisce codice di esempio Python per la comunicazione tra la piattaforma RDK X5 (Raspberry…"
 ---
 
-# Comunicazione della porta seriale
+# RDK: Comunicazione della porta seriale
 
 ## Introduzione
 

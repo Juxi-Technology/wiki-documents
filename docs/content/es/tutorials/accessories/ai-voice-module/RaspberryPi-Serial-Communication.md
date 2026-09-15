@@ -1,9 +1,9 @@
 ---
-title: "Comunicación por puerto serie"
+title: "Raspberry Pi: Comunicación por puerto serie"
 description: "Edite /boot/firmware/config.txt o /boot/config.txt y asegúrese de que la siguiente configuración esté present…"
 ---
 
-# Comunicación por puerto serie
+# Raspberry Pi: Comunicación por puerto serie
 
 ## Instalar dependencias
 

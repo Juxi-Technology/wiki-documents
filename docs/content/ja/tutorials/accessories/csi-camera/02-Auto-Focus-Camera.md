@@ -1,9 +1,9 @@
 ---
-title: "02、オートフォーカスカメラの使用"
+title: "オートフォーカスカメラの使用"
 description: "図の結果はCSIカメラ2つ、USBカメラ1つを接続した結果です：一般的に1つのCSIカメラにつき1つのvideoデバイスが表示され、1つのUSBカメラにつき2つのvideoデバイスが表示されます。USBカメラは新しく追…"
 ---
 
-# 02、オートフォーカスカメラの使用
+# オートフォーカスカメラの使用
 
 ## 1、videoデバイスの確認
 
@@ -71,5 +71,4 @@ USBカメラに対応するデバイス番号を選択します：
 
 ![図 9](../../../../../public/images/tutorials/accessories/csi-camera/02-Auto-Focus-Camera/9.png)
 
-
-
+<RelatedProducts slugs="usb-auto-focus-camera" />

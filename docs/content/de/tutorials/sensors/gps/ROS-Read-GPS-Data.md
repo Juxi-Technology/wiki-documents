@@ -1,9 +1,9 @@
 ---
-title: "Auslesen der GPS-Moduldaten"
+title: "ROS: GPS-Daten lesen"
 description: "Geben Sie im Terminal ein,"
 ---
 
-# Auslesen der GPS-Moduldaten
+# ROS: GPS-Daten lesen
 
 **Diese Funktion liest über das Terminal die GPS-Moduldaten aus und analysiert die GPS-Daten, um Längen- und Breitengrad sowie Höhendaten zu erhalten.**
 

@@ -1,9 +1,9 @@
 ---
-title: "Comunicazione IIC"
+title: "Jetson: Comunicazione IIC"
 description: "La modifica ha effetto dopo la disconnessione e un nuovo accesso."
 ---
 
-# Comunicazione IIC
+# Jetson: Comunicazione IIC
 
 ## Installazione delle dipendenze
 

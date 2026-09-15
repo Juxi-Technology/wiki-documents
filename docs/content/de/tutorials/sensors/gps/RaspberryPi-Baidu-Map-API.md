@@ -1,9 +1,9 @@
 ---
-title: "Anleitung zur Beantragung der Baidu Maps API"
+title: "Raspberry Pi: Baidu-Maps-API"
 description: "1. Registrierungsmethode"
 ---
 
-# Anleitung zur Beantragung der Baidu Maps API
+# Raspberry Pi: Baidu-Maps-API
 
 **1.** **Registrierungsmethode**
 

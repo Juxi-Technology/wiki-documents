@@ -1,9 +1,9 @@
 ---
-title: "ステップ 2：Xlerobot ファイルの移動"
+title: "XLeRobot ファイルの移動"
 description: "https://github.com/Vector-Wangel/XLeRobot で圧縮ファイルをダウンロードして解凍します"
 ---
 
-# ステップ 2：Xlerobot ファイルの移動
+# XLeRobot ファイルの移動
 
 https://github.com/Vector-Wangel/XLeRobot で圧縮ファイルをダウンロードして解凍します
 

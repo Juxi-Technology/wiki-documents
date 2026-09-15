@@ -1,9 +1,9 @@
 ---
-title: "第二步：移動Xlerobot檔案"
+title: "移動 XLeRobot 文件"
 description: "在https://github.com/Vector-Wangel/XLeRobot下載壓縮包解壓"
 ---
 
-# 第二步：移動Xlerobot檔案
+# 移動 XLeRobot 文件
 
 在https://github.com/Vector-Wangel/XLeRobot下載壓縮包解壓
 

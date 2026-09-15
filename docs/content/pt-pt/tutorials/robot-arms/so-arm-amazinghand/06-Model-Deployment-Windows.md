@@ -1,10 +1,10 @@
 ---
-title: "Etapa 6: Implementação e avaliação (Windows)"
+title: "Etapa 6: implementação do modelo (Windows)"
 description: "Esta etapa carrega a política treinada para que o robô execute a tarefa de forma autónoma e grava vídeos de a…"
 ---
 
 
-# Etapa 6: Implementação e avaliação (Windows)
+# Etapa 6: implementação do modelo (Windows)
 
 Esta etapa carrega a política treinada para que o robô **execute a tarefa de forma autónoma** e grava vídeos de avaliação para verificar o resultado. É a conclusão de todo o fluxo e também o momento decisivo para aferir o resultado do treino.
 

@@ -1,9 +1,9 @@
 ---
-title: "GPS-Datenanalyse"
+title: "51-MCU: GPS-Auswertung"
 description: "In dieser Lektion lernen wir hauptsächlich, mit einem 51-Mikrocontroller des Typs STC89C52RC und dem GPS-Modu…"
 ---
 
-# GPS-Datenanalyse
+# 51-MCU: GPS-Auswertung
 
 **1. Lernziel**
 

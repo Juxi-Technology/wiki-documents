@@ -1,9 +1,9 @@
 ---
-title: "03、Utilisation de Jupyter Lab"
+title: "Utiliser Jupyter Lab"
 description: "Installez Jupyter Lab avec la commande suivante : si le téléchargement de Jupyter Lab est lent, vous pouvez u…"
 ---
 
-# 03、Utilisation de Jupyter Lab
+# Utiliser Jupyter Lab
 
 ## 1、Installer Jupyter Lab
 
@@ -239,5 +239,4 @@ L'affichage de [nombre] en haut à gauche de la cellule indique le nombre d'exé
 
 ![Image 19](../../../../../public/images/tutorials/accessories/csi-camera/03-JupyterLab/19.png)
 
-
-
+<RelatedProducts slugs="imx219-csi-camera" />

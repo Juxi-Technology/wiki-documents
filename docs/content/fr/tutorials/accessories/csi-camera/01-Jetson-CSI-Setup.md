@@ -1,9 +1,9 @@
 ---
-title: "01、Utilisation de la caméra CSI"
+title: "Configuration caméra CSI Jetson"
 description: "Utilisez la flèche bas pour sélectionner Configure Jetson 24pin CSI Connector. Appuyez ensuite sur Entrée pou…"
 ---
 
-# 01、Utilisation de la caméra CSI
+# Configuration caméra CSI Jetson
 
 ## 1、Configurer les broches de la caméra CSI
 
@@ -79,5 +79,4 @@ nvgstcapture-1.0 --sensor-id=1 --cus-prev-res=1280x720
 
 ![Image 11](../../../../../public/images/tutorials/accessories/csi-camera/01-Jetson-CSI-Setup/11.png)
 
-
-
+<RelatedProducts slugs="imx219-csi-camera" />

@@ -1,9 +1,9 @@
 ---
-title: "Comunicación por puerto serie"
+title: "RDK: Comunicación por puerto serie"
 description: "Este repositorio proporciona código de ejemplo en Python para la comunicación entre la plataforma RDK X5 (Ras…"
 ---
 
-# Comunicación por puerto serie
+# RDK: Comunicación por puerto serie
 
 ## Introducción
 

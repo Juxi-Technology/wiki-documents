@@ -1,9 +1,9 @@
 ---
-title: "Drawing the GPS Track"
+title: "ROS: Drawing GPS Tracks"
 description: "It is impossible to visualize the GPS information directly; we need to convert the coordinate system, convert…"
 ---
 
-# Drawing the GPS Track
+# ROS: Drawing GPS Tracks
 
 **This function draws real-time GPS data information and displays it in rviz2.**
 

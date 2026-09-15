@@ -1,9 +1,9 @@
 ---
-title: "Comunicação IIC"
+title: "Jetson: Comunicação IIC"
 description: "Faça logout e login novamente para que tenha efeito."
 ---
 
-# Comunicação IIC
+# Jetson: Comunicação IIC
 
 ## Instalar as dependências
 

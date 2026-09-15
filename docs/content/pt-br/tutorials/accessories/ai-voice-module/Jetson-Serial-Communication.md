@@ -1,9 +1,9 @@
 ---
-title: "Comunicação por porta serial"
+title: "Jetson: Comunicação por porta serial"
 description: "Faça logout e login novamente para que tenha efeito."
 ---
 
-# Comunicação por porta serial
+# Jetson: Comunicação por porta serial
 
 ## Instalar as dependências
 

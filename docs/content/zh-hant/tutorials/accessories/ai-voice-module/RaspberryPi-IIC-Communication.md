@@ -1,9 +1,9 @@
 ---
-title: "IIC通訊"
+title: "樹莓派: IIC通訊"
 description: "選擇 Interface Options -> I2C -> Yes"
 ---
 
-# IIC通訊
+# 樹莓派: IIC通訊
 
 ## 安裝相依性
 

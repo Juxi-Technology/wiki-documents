@@ -1,9 +1,9 @@
 ---
-title: "IIC 通信"
+title: "Jetson: IIC 通信"
 description: "ログアウトして再ログインすると有効になります。"
 ---
 
-# IIC 通信
+# Jetson: IIC 通信
 
 ## 依存関係のインストール
 

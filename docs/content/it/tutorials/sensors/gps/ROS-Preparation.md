@@ -1,9 +1,9 @@
 ---
-title: "Descrizione preliminare all'uso del modulo GPS"
+title: "ROS: preparazione"
 description: "（1）Dopo aver creato lo spazio di lavoro, copiare il contenuto della cartella gpssrc nella directory src dello…"
 ---
 
-# Descrizione preliminare all'uso del modulo GPS
+# ROS: preparazione
 
 #### 1、Compilazione del modulo GPS
 

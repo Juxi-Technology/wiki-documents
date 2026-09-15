@@ -1,9 +1,9 @@
 ---
-title: "Reading GPS Module Data"
+title: "ROS: Reading GPS Data"
 description: "In the terminal, enter,"
 ---
 
-# Reading GPS Module Data
+# ROS: Reading GPS Data
 
 **This function reads GPS module data through the terminal and parses the GPS data to obtain latitude, longitude, and altitude data.**
 

@@ -1,10 +1,10 @@
 ---
-title: "Phase 2 : Calibration (Linux)"
+title: "Étape 2 : calibration main et bras (Linux)"
 description: "Cette phase consiste à calibrer trois équipements : le bras maître, le bras esclave et la main AmazingHand. L…"
 ---
 
 
-# Phase 2 : Calibration (Linux)
+# Étape 2 : calibration main et bras (Linux)
 
 Cette phase consiste à calibrer trois équipements : le bras maître, le bras esclave et la main AmazingHand. La calibration est indispensable à l'exactitude de la téléopération ; **vous devez terminer cette phase avant de passer à la téléopération**.
 

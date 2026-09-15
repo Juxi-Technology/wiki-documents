@@ -1,9 +1,9 @@
 ---
-title: "Comunicação de porta série"
+title: "Arduino: Comunicação de porta série"
 description: "1. Abra o ficheiro UARTVoice.ino"
 ---
 
-# Comunicação de porta série
+# Arduino: Comunicação de porta série
 
 ## 📁 Estrutura de ficheiros
 

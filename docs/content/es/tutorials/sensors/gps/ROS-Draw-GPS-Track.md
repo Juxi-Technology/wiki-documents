@@ -1,9 +1,9 @@
 ---
-title: "Trazado de la trayectoria GPS"
+title: "ROS: dibujar trayectoria GPS"
 description: "No es posible visualizar directamente la información del GPS; necesitamos convertir el sistema de coordenadas…"
 ---
 
-# Trazado de la trayectoria GPS
+# ROS: dibujar trayectoria GPS
 
 **Esta función traza la información de datos GPS en tiempo real y la muestra en rviz2.**
 

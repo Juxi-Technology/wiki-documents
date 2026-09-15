@@ -1,9 +1,9 @@
 ---
-title: "Lecture des données du module GPS"
+title: "ROS : lecture des données GPS"
 description: "Saisissez dans le terminal,"
 ---
 
-# Lecture des données du module GPS
+# ROS : lecture des données GPS
 
 **Cette fonction lit via le terminal les données du module GPS et analyse les données GPS pour obtenir les données de latitude, de longitude et d'altitude.**
 

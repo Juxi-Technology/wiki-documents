@@ -1,9 +1,9 @@
 ---
-title: "Descripción previa al uso del módulo GPS"
+title: "ROS: preparación"
 description: "（1）Una vez creado el espacio de trabajo, copie el contenido de la carpeta gpssrc en el directorio src del esp…"
 ---
 
-# Descripción previa al uso del módulo GPS
+# ROS: preparación
 
 #### 1、Compilación del módulo GPS
 

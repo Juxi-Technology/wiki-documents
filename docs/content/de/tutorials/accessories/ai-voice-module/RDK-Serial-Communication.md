@@ -1,9 +1,9 @@
 ---
-title: "Serielle Kommunikation"
+title: "RDK: Serielle Kommunikation"
 description: "Dieses Repository stellt Python-Beispielcode für die Kommunikation zwischen der Plattform RDK X5 (Raspberry P…"
 ---
 
-# Serielle Kommunikation
+# RDK: Serielle Kommunikation
 
 ## Einführung
 

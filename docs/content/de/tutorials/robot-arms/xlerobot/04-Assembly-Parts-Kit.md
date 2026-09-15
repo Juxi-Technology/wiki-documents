@@ -1,9 +1,9 @@
 ---
-title: "⚒️ Bausatz-Montage"
+title: "Montage (Einzelteile)"
 description: "Wenn Sie sich das Vergnügen des Schraubenanziehens lieber ersparen möchten, können Sie auch das vorgefertigte…"
 ---
 
-# ⚒️ Bausatz-Montage
+# Montage (Einzelteile)
 
 ![Abb. 1](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/1.png)
 

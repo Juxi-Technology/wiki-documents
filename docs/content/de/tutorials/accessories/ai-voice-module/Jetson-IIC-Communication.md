@@ -1,9 +1,9 @@
 ---
-title: "IIC-Kommunikation"
+title: "Jetson: IIC-Kommunikation"
 description: "Abmelden und erneut anmelden, damit die Änderung wirksam wird."
 ---
 
-# IIC-Kommunikation
+# Jetson: IIC-Kommunikation
 
 ## Abhängigkeiten installieren
 

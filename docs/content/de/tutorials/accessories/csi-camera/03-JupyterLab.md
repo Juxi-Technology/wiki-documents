@@ -1,9 +1,9 @@
 ---
-title: "03、Jupyter Lab verwenden"
+title: "Jupyter Lab verwenden"
 description: "Installieren Sie Jupyter Lab mit dem folgenden Befehl: Wenn der Download von Jupyter Lab langsam ist, können …"
 ---
 
-# 03、Jupyter Lab verwenden
+# Jupyter Lab verwenden
 
 ## 1、Jupyter Lab installieren
 
@@ -239,5 +239,4 @@ Zeigt die Zelle oben links [Zahl] an, gibt dies die Reihenfolge der Ausführung 
 
 ![Abb. 19](../../../../../public/images/tutorials/accessories/csi-camera/03-JupyterLab/19.png)
 
-
-
+<RelatedProducts slugs="imx219-csi-camera" />

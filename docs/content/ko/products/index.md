@@ -87,6 +87,10 @@ outline: false
     <span class="pc-title">SO-ARM101 TPU 플렉서블 그리퍼</span>
     <p class="pc-desc">Juxi Technology SO-ARM101 TPU 플렉서블 그리퍼 — 부드러운 TPU 소재로 불규칙/깨지기 쉬운 물체를 안전하게 파지, 암 장착 카메라 지원, 30FPS 줌 또는 60…</p>
   </a>
+  <a :href="withBase('/ko/products/usb-auto-focus-camera')" class="category-card">
+    <span class="pc-title">USB 자동 초점 카메라</span>
+    <p class="pc-desc">Juxi Technology USB 드라이버 불필요 자동 초점 카메라 — 86° 광각, 1080P 30FPS, UVC 플러그 앤 플레이, 로봇 비전 및 AI 추론용, Windows/Linux/macOS/Jetson/Raspberry Pi 호환</p>
+  </a>
   <a :href="withBase('/ko/products/usb-sound-card')" class="category-card">
     <span class="pc-title">USB 드라이버 프리 사운드 카드</span>
     <p class="pc-desc">Juxi Technology USB 드라이버 프리 사운드 카드 — 온보드 마이크+스피커, 플러그 앤 플레이, 노이즈 저감, Raspberry Pi/Jetson/PC 지원</p>

@@ -1,9 +1,9 @@
 ---
-title: "MAC Computer"
+title: "Environment Setup (macOS)"
 description: "The black leader arm uses a 5V6A power adapter"
 ---
 
-# MAC Computer
+# Environment Setup (macOS)
 
 The black leader arm uses a 5V6A power adapter
 

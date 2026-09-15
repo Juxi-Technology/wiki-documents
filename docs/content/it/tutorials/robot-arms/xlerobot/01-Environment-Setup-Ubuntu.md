@@ -1,9 +1,9 @@
 ---
-title: "Computer Ubuntu"
+title: "Configurazione (Ubuntu)"
 description: "Il braccio leader nero utilizza un adattatore di alimentazione 5V6A"
 ---
 
-# Computer Ubuntu
+# Configurazione (Ubuntu)
 
 Il braccio leader nero utilizza un adattatore di alimentazione 5V6A
 

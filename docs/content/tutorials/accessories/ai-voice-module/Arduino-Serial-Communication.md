@@ -1,9 +1,9 @@
 ---
-title: "Serial Port Communication"
+title: "Arduino: Serial Port Communication"
 description: "1. Open the UARTVoice.ino file"
 ---
 
-# Serial Port Communication
+# Arduino: Serial Port Communication
 
 ## 📁 File Structure
 

@@ -1,9 +1,9 @@
 ---
-title: "02. Auto-Focus Camera Usage"
+title: "Auto-Focus Camera Usage"
 description: "The result in the image is the result of connecting two CSI cameras and one USB camera: generally, one CSI ca…"
 ---
 
-# 02. Auto-Focus Camera Usage
+# Auto-Focus Camera Usage
 
 ## 1. View Video Devices
 
@@ -71,5 +71,4 @@ Select the device number corresponding to the USB camera:
 
 ![Image 9](../../../../public/images/tutorials/accessories/csi-camera/02-Auto-Focus-Camera/9.png)
 
-
-
+<RelatedProducts slugs="usb-auto-focus-camera" />

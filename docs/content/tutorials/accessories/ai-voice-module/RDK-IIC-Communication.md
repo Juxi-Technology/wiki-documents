@@ -1,9 +1,9 @@
 ---
-title: "IIC Communication"
+title: "RDK: IIC Communication"
 description: "This repository provides Python example code for communication between the RDK X5 (Raspberry Pi) platform and…"
 ---
 
-# IIC Communication
+# RDK: IIC Communication
 
 ## Introduction
 

@@ -87,6 +87,10 @@ outline: false
     <span class="pc-title">Pince flexible en TPU SO-ARM101</span>
     <p class="pc-desc">Pince flexible TPU SO-ARM101 de Juxi Technology — saisie sûre des objets irréguliers/fragiles…</p>
   </a>
+  <a :href="withBase('/fr/products/usb-auto-focus-camera')" class="category-card">
+    <span class="pc-title">Caméra USB à autofocus</span>
+    <p class="pc-desc">Caméra USB à autofocus sans pilote de Juxi Technology — grand angle 86°, 1080P 30 FPS, UVC plug-and-play pour la vision robotique et l'inférence IA, compatible Windows/Linux/macOS/Jetson/Raspberry Pi</p>
+  </a>
   <a :href="withBase('/fr/products/usb-sound-card')" class="category-card">
     <span class="pc-title">Carte son USB sans pilote</span>
     <p class="pc-desc">Carte son USB de Juxi Technology — micro + haut-parleur intégrés, plug-and-play, réduction de…</p>

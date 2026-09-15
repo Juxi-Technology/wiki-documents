@@ -1,9 +1,9 @@
 ---
-title: "Tutoriel de demande de l'API Baidu Maps"
+title: "Jetson : API Baidu Maps"
 description: "1. Méthode d'inscription"
 ---
 
-# Tutoriel de demande de l'API Baidu Maps
+# Jetson : API Baidu Maps
 
 **1.** **Méthode d'inscription**
 

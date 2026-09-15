@@ -1,9 +1,9 @@
 ---
-title: "Serielle Kommunikation"
+title: "Raspberry Pi: Serielle Kommunikation"
 description: "Bearbeiten Sie /boot/firmware/config.txt oder /boot/config.txt und stellen Sie die folgende Konfiguration sic…"
 ---
 
-# Serielle Kommunikation
+# Raspberry Pi: Serielle Kommunikation
 
 ## Abhängigkeiten installieren
 

@@ -1,9 +1,9 @@
 ---
-title: "Comunicação IIC"
+title: "Jetson: Comunicação IIC"
 description: "Termine sessão e volte a iniciá-la para que tenha efeito."
 ---
 
-# Comunicação IIC
+# Jetson: Comunicação IIC
 
 ## Instalar as dependências
 

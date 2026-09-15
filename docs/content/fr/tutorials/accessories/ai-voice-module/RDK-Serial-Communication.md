@@ -1,9 +1,9 @@
 ---
-title: "Communication par port série"
+title: "RDK: Communication par port série"
 description: "Ce dépôt fournit un exemple de code Python pour la communication entre la plateforme RDK X5 (Raspberry Pi) et…"
 ---
 
-# Communication par port série
+# RDK: Communication par port série
 
 ## Introduction
 

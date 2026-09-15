@@ -1,9 +1,9 @@
 ---
-title: "GPS位置資訊讀取"
+title: "Arduino:位置資訊讀取"
 description: "本次課程我們主要學習使用arduino和GPS模組實現位置資訊讀取功能。"
 ---
 
-# GPS位置資訊讀取
+# Arduino:位置資訊讀取
 
 **1. 學習目標**
 

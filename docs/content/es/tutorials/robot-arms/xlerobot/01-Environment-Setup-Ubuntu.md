@@ -1,9 +1,9 @@
 ---
-title: "Ordenador Ubuntu"
+title: "Configuración (Ubuntu)"
 description: "El brazo motriz negro utiliza un adaptador de alimentación de 5V6A"
 ---
 
-# Ordenador Ubuntu
+# Configuración (Ubuntu)
 
 El brazo motriz negro utiliza un adaptador de alimentación de 5V6A
 

@@ -1,9 +1,9 @@
 ---
-title: "MAC-Computer"
+title: "Umgebung einrichten (macOS)"
 description: "Der schwarze Leader-Arm verwendet ein 5V6A-Netzteil"
 ---
 
-# MAC-Computer
+# Umgebung einrichten (macOS)
 
 Der schwarze Leader-Arm verwendet ein 5V6A-Netzteil
 

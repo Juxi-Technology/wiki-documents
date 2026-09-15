@@ -1,9 +1,9 @@
 ---
-title: "05. Tutorial della fotocamera IMX219-CSI (Raspberry Pi)"
+title: "IMX219 su Raspberry Pi"
 description: "Se non esiste, potrebbe trattarsi di un problema del kernel o dell'hardware del dispositivo; è possibile prov…"
 ---
 
-# 05. Tutorial della fotocamera IMX219-CSI (Raspberry Pi)
+# IMX219 su Raspberry Pi
 
 ##### 1. Innanzitutto, utilizzare il comando "ls" per verificare se esiste il nodo di dispositivo vchiq: digitare ls /dev
 
@@ -37,5 +37,4 @@ Digitare **"raspistill -o image.jpg"** per scattare e salvare la foto correttame
 
 Trasferire l'immagine image.jpg sul desktop di Windows e aprirla per vedere il risultato della foto
 
-
-
+<RelatedProducts slugs="imx219-csi-camera" />

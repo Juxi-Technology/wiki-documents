@@ -1,9 +1,9 @@
 ---
-title: "GPS位置信息解析"
+title: "Arduino:位置信息解析"
 description: "本次课程我们主要学习使用arduino和GPS模块实现位置信息解析并打印功能。"
 ---
 
-# GPS位置信息解析
+# Arduino:位置信息解析
 
 **1. 学习目标**
 

@@ -1,9 +1,9 @@
 ---
-title: "Computer MAC"
+title: "Configurazione (macOS)"
 description: "Il braccio leader nero utilizza un adattatore di alimentazione 5V6A"
 ---
 
-# Computer MAC
+# Configurazione (macOS)
 
 Il braccio leader nero utilizza un adattatore di alimentazione 5V6A
 

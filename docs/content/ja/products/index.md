@@ -87,6 +87,10 @@ outline: false
     <span class="pc-title">SO-ARM101 TPU フレキシブルグリッパー</span>
     <p class="pc-desc">Juxi Technology SO-ARM101 TPU フレキシブルグリッパー——柔らかい TPU 素材で不規則・壊れやすい物体を安全に把持、アーム搭載カメラ対応、30FPS ズーム/60FPS 固定焦点選択可</p>
   </a>
+  <a :href="withBase('/ja/products/usb-auto-focus-camera')" class="category-card">
+    <span class="pc-title">USBオートフォーカスカメラ</span>
+    <p class="pc-desc">Juxi Technology USBドライバ不要オートフォーカスカメラ——86°広角、1080P 30FPS、UVC プラグアンドプレイ、ロボットビジョンと AI 推論向け、Windows/Linux/macOS/Jetson/Raspberry Pi 対応</p>
+  </a>
   <a :href="withBase('/ja/products/usb-sound-card')" class="category-card">
     <span class="pc-title">USB ドライバ不要サウンドカード</span>
     <p class="pc-desc">Juxi Technology USB ドライバ不要サウンドカード——オンボードマイク+スピーカー、プラグアンドプレイ、ノイズ低減、Raspberry Pi/Jetson/PC 対応</p>

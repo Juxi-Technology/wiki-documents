@@ -1,9 +1,9 @@
 ---
-title: "⚒️ 키트 조립"
+title: "부품 키트 조립"
 description: "나사 조이기의 즐거움을 건너뛰고 싶다면, Xlerobot 에 호환되는 SO101 팔로워 암의 사전 조립 키트를 구매할 수도 있습니다."
 ---
 
-# ⚒️ 키트 조립
+# 부품 키트 조립
 
 ![그림 1](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/1.png)
 

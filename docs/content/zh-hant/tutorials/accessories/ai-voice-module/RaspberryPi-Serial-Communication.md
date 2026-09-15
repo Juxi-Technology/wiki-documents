@@ -1,9 +1,9 @@
 ---
-title: "串列埠通訊"
+title: "樹莓派: 串列埠通訊"
 description: "編輯 /boot/firmware/config.txt 或 /boot/config.txt，確保以下配置："
 ---
 
-# 串列埠通訊
+# 樹莓派: 串列埠通訊
 
 ## 安裝相依性
 

@@ -1,9 +1,9 @@
 ---
-title: "03, Jupyter Lab 사용"
+title: "Jupyter Lab 사용"
 description: "아래 명령어로 Jupyter Lab을 설치합니다: Jupyter Lab 설치 시 다운로드 속도가 느린 경우 지정 소스를 사용하여 설치할 수 있습니다"
 ---
 
-# 03, Jupyter Lab 사용
+# Jupyter Lab 사용
 
 ## 1, Jupyter Lab 설치
 
@@ -239,5 +239,4 @@ Jupyter Lab에서 실행할 프로그램 파일을 열고, 위에서 아래로 �
 
 ![그림 19](../../../../../public/images/tutorials/accessories/csi-camera/03-JupyterLab/19.png)
 
-
-
+<RelatedProducts slugs="imx219-csi-camera" />

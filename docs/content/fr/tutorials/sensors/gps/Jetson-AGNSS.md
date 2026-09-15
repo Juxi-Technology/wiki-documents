@@ -1,9 +1,9 @@
 ---
-title: "Positionnement assisté AGNSS"
+title: "Jetson : positionnement AGNSS"
 description: "Dans cette leçon, nous allons principalement apprendre à réaliser la lecture et l'analyse des informations de…"
 ---
 
-# Positionnement assisté AGNSS
+# Jetson : positionnement AGNSS
 
 **1. Objectif d'apprentissage**
 

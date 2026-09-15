@@ -1,9 +1,9 @@
 ---
-title: "05、Tutoriel sur la caméra IMX219-CSI (Raspberry Pi)"
+title: "IMX219 sur Raspberry Pi"
 description: "S'il n'existe pas, un problème peut provenir du noyau ou du matériel du périphérique ; essayez de réinstaller…"
 ---
 
-# 05、Tutoriel sur la caméra IMX219-CSI (Raspberry Pi)
+# IMX219 sur Raspberry Pi
 
 ##### 1、Utilisez d'abord la commande "ls" pour vérifier si le nœud de périphérique vchiq existe : saisissez ls /dev
 
@@ -37,5 +37,4 @@ Saisissez **"raspistill -o image.jpg"** pour prendre et enregistrer une photo av
 
 Transférez l'image image.jpg sur le bureau Windows et ouvrez-la pour voir le résultat de la photo
 
-
-
+<RelatedProducts slugs="imx219-csi-camera" />

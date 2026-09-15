@@ -1,9 +1,9 @@
 ---
-title: "Computador Ubuntu"
+title: "Configuração (Ubuntu)"
 description: "O braço líder preto usa um adaptador de energia de 5V6A"
 ---
 
-# Computador Ubuntu
+# Configuração (Ubuntu)
 
 O braço líder preto usa um adaptador de energia de 5V6A
 

@@ -1,9 +1,9 @@
 ---
-title: "Computer Windows"
+title: "Configurazione (Windows)"
 description: "Il braccio leader nero utilizza un adattatore di alimentazione 5V6A"
 ---
 
-# Computer Windows
+# Configurazione (Windows)
 
 Il braccio leader nero utilizza un adattatore di alimentazione 5V6A
 

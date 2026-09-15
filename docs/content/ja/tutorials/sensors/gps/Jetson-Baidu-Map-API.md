@@ -1,9 +1,9 @@
 ---
-title: "百度地图api申請チュートリアル"
+title: "Jetson:百度地図 API 申請"
 description: "1. 登録方法"
 ---
 
-# 百度地图api申請チュートリアル
+# Jetson:百度地図 API 申請
 
 **1.** **登録方法**
 

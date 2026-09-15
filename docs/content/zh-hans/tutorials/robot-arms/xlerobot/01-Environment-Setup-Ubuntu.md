@@ -1,9 +1,9 @@
 ---
-title: "Ubuntu电脑"
+title: "安装环境(Ubuntu)"
 description: "黑色主动臂使用 5V6A 电源适配器"
 ---
 
-# Ubuntu电脑
+# 安装环境(Ubuntu)
 
 黑色主动臂使用 5V6A 电源适配器
 

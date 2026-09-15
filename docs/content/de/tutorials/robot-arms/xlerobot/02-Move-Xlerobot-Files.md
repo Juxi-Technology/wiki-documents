@@ -1,9 +1,9 @@
 ---
-title: "Schritt 2: Die Xlerobot-Dateien verschieben"
+title: "XLeRobot-Dateien verschieben"
 description: "Laden Sie unter https://github.com/Vector-Wangel/XLeRobot das komprimierte Paket herunter und entpacken Sie es"
 ---
 
-# Schritt 2: Die Xlerobot-Dateien verschieben
+# XLeRobot-Dateien verschieben
 
 Laden Sie unter https://github.com/Vector-Wangel/XLeRobot das komprimierte Paket herunter und entpacken Sie es
 

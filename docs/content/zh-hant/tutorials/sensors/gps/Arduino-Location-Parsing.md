@@ -1,9 +1,9 @@
 ---
-title: "GPS位置資訊解析"
+title: "Arduino:位置資訊解析"
 description: "本次課程我們主要學習使用arduino和GPS模組實現位置資訊解析並列印功能。"
 ---
 
-# GPS位置資訊解析
+# Arduino:位置資訊解析
 
 **1. 學習目標**
 

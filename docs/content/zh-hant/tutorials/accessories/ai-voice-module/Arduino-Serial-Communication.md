@@ -1,9 +1,9 @@
 ---
-title: "串列埠通訊"
+title: "Arduino: 串列埠通訊"
 description: "1. 開啟 UARTVoice.ino 檔案"
 ---
 
-# 串列埠通訊
+# Arduino: 串列埠通訊
 
 ## 📁 檔案結構
 

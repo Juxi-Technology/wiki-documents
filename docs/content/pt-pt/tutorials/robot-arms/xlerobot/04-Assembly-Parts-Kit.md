@@ -1,9 +1,9 @@
 ---
-title: "⚒️Montagem do kit"
+title: "Montagem do kit em peças"
 description: "Se preferir dispensar o prazer de apertar parafusos, também pode comprar o kit pré-montado dos braços seguido…"
 ---
 
-# ⚒️Montagem do kit
+# Montagem do kit em peças
 
 ![Imagem 1](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/1.png)
 

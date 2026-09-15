@@ -1,9 +1,9 @@
 ---
-title: "AGNSS輔助定位"
+title: "樹莓派:AGNSS 輔助定位"
 description: "本次課程我們主要學習使用樹莓派和GPS模組和agnss伺服器實現弱信號下位置資訊讀取解析。"
 ---
 
-# AGNSS輔助定位
+# 樹莓派:AGNSS 輔助定位
 
 **1. 學習目標**
 

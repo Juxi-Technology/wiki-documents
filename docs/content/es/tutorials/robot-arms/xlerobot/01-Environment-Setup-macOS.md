@@ -1,9 +1,9 @@
 ---
-title: "Ordenador MAC"
+title: "Configuración (macOS)"
 description: "El brazo motriz negro utiliza un adaptador de alimentación de 5V6A"
 ---
 
-# Ordenador MAC
+# Configuración (macOS)
 
 El brazo motriz negro utiliza un adaptador de alimentación de 5V6A
 

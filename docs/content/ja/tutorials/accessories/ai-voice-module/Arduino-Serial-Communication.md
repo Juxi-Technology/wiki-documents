@@ -1,9 +1,9 @@
 ---
-title: "シリアルポート通信"
+title: "Arduino: シリアルポート通信"
 description: "1. UARTVoice.ino ファイルを開く"
 ---
 
-# シリアルポート通信
+# Arduino: シリアルポート通信
 
 ## 📁 ファイル構成
 

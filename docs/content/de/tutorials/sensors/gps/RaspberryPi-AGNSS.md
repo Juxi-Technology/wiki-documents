@@ -1,9 +1,9 @@
 ---
-title: "AGNSS-unterstützte Positionierung"
+title: "Raspberry Pi: AGNSS-Unterstützung"
 description: "In dieser Lektion lernen wir hauptsächlich, mit dem Raspberry Pi, dem GPS-Modul und einem agnss-Server das Le…"
 ---
 
-# AGNSS-unterstützte Positionierung
+# Raspberry Pi: AGNSS-Unterstützung
 
 **1. Lernziel**
 

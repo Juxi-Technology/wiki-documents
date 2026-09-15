@@ -1,9 +1,9 @@
 ---
-title: "AGNSS Assisted Positioning"
+title: "Jetson: AGNSS Positioning"
 description: "In this lesson, we will mainly learn to use Jetson Orin, a GPS module, and an AGNSS server to implement posit…"
 ---
 
-# AGNSS Assisted Positioning
+# Jetson: AGNSS Positioning
 
 **1. Learning Objectives**
 

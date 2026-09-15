@@ -1,9 +1,9 @@
 ---
-title: "Comunicación por puerto serie"
+title: "Jetson: Comunicación por puerto serie"
 description: "Cierre la sesión y vuelva a iniciarla para que surta efecto."
 ---
 
-# Comunicación por puerto serie
+# Jetson: Comunicación por puerto serie
 
 ## Instalar dependencias
 

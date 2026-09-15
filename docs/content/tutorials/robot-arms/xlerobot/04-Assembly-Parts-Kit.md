@@ -1,9 +1,9 @@
 ---
-title: "⚒️ Kit Assembly"
+title: "Parts-Kit Assembly"
 description: "If you would rather skip the fun of tightening screws, you can also buy the pre-assembled kit for the SO101 f…"
 ---
 
-# ⚒️ Kit Assembly
+# Parts-Kit Assembly
 
 ![Image 1](../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/1.png)
 

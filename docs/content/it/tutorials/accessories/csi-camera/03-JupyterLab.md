@@ -1,9 +1,9 @@
 ---
-title: "03. Uso di Jupyter Lab"
+title: "Uso di Jupyter Lab"
 description: "Utilizzare il seguente comando per installare Jupyter Lab: se la velocità di download di Jupyter Lab è lenta,…"
 ---
 
-# 03. Uso di Jupyter Lab
+# Uso di Jupyter Lab
 
 ## 1. Installazione di Jupyter Lab
 
@@ -239,5 +239,4 @@ Il [numero] visualizzato in alto a sinistra della cella indica il numero d'ordin
 
 ![Immagine 19](../../../../../public/images/tutorials/accessories/csi-camera/03-JupyterLab/19.png)
 
-
-
+<RelatedProducts slugs="imx219-csi-camera" />

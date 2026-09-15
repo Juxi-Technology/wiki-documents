@@ -1,9 +1,9 @@
 ---
-title: "AGNSS補助測位"
+title: "Jetson:AGNSS 支援測位"
 description: "今回の講座では、主にJetson OrinとGPSモジュールおよびagnssサーバーを使用して、弱信号下での位置情報の読み取りと解析を実装する方法を学びます。"
 ---
 
-# AGNSS補助測位
+# Jetson:AGNSS 支援測位
 
 **1. 学習目標**
 

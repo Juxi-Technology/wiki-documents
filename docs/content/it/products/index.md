@@ -87,6 +87,10 @@ outline: false
     <span class="pc-title">Pinza flessibile in TPU SO-ARM101</span>
     <p class="pc-desc">Pinza flessibile TPU SO-ARM101 di Juxi Technology — presa sicura di oggetti irregolari/fragil…</p>
   </a>
+  <a :href="withBase('/it/products/usb-auto-focus-camera')" class="category-card">
+    <span class="pc-title">Fotocamera USB con autofocus</span>
+    <p class="pc-desc">Fotocamera USB con autofocus di Juxi Technology — senza driver, grandangolo 86°, 1080P 30FPS, UVC plug-and-play per visione robotica e inferenza IA, compatibile con Windows/Linux/macOS/Jetson/Raspberry Pi</p>
+  </a>
   <a :href="withBase('/it/products/usb-sound-card')" class="category-card">
     <span class="pc-title">Scheda audio USB senza driver</span>
     <p class="pc-desc">Scheda audio USB di Juxi Technology — microfono + altoparlante integrati, plug-and-play, ridu…</p>

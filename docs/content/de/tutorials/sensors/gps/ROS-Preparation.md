@@ -1,9 +1,9 @@
 ---
-title: "Hinweise vor der Verwendung des GPS-Moduls"
+title: "ROS: Vorbereitung"
 description: "(1) Nachdem Sie den Arbeitsbereich eingerichtet haben, kopieren Sie den Inhalt des Ordners gpssrc in das src-…"
 ---
 
-# Hinweise vor der Verwendung des GPS-Moduls
+# ROS: Vorbereitung
 
 #### 1. Hinweise zur Kompilierung des GPS-Moduls
 

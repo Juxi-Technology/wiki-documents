@@ -1,9 +1,9 @@
 ---
-title: "Análise de informações de posição do módulo GPS"
+title: "Raspberry Pi: análise GPS"
 description: "Nesta lição, vamos aprender principalmente a usar o Raspberry Pi e o módulo GPS para ler e analisar informaçõ…"
 ---
 
-# Análise de informações de posição do módulo GPS
+# Raspberry Pi: análise GPS
 
 **1. Objetivos de aprendizagem**
 

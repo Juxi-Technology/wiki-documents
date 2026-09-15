@@ -1,9 +1,9 @@
 ---
-title: "Traçar a trajetória de GPS"
+title: "ROS: desenhar trajeto GPS"
 description: "Não é possível visualizar diretamente as informações de GPS; precisamos de converter o sistema de coordenadas…"
 ---
 
-# Traçar a trajetória de GPS
+# ROS: desenhar trajeto GPS
 
 **Esta função traça informações de dados de GPS em tempo real e apresenta-as no rviz2.**
 

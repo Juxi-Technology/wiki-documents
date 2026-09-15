@@ -1,9 +1,9 @@
 ---
-title: "Baidu Maps API Application Tutorial"
+title: "Raspberry Pi: Baidu Map API"
 description: "1. Registration Method"
 ---
 
-# Baidu Maps API Application Tutorial
+# Raspberry Pi: Baidu Map API
 
 **1.** **Registration Method**
 

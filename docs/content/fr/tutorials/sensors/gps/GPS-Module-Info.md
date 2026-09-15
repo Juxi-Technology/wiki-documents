@@ -1,9 +1,9 @@
 ---
-title: "Informations sur le module GPS"
+title: "Informations module"
 description: "​ Le module GPS est un module de positionnement et de navigation BDS/GNSS haute performance basé sur l'ATGM33…"
 ---
 
-# Informations sur le module GPS
+# Informations module
 
 ​		Le module GPS est un module de positionnement et de navigation BDS/GNSS haute performance basé sur l'ATGM336H-5N. Le module prend en charge plusieurs systèmes de navigation par satellite, notamment tous les satellites BeiDou-2 et BeiDou-3 de Chine, le GPS des États-Unis, le GLONASS de Russie et le QZSS du Japon. Il peut recevoir simultanément les signaux satellites des systèmes de navigation par satellite mentionnés ci-dessus et réaliser un positionnement, une navigation et une synchronisation combinés. Le module présente les avantages d'une sensibilité élevée, d'une faible consommation d'énergie et d'un faible coût, et convient à la navigation embarquée, au positionnement portable et aux appareils portables.
 

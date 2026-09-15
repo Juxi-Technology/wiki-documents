@@ -1,9 +1,9 @@
 ---
-title: "Serielle Kommunikation"
+title: "Jetson: Serielle Kommunikation"
 description: "Abmelden und erneut anmelden, damit die Änderung wirksam wird."
 ---
 
-# Serielle Kommunikation
+# Jetson: Serielle Kommunikation
 
 ## Abhängigkeiten installieren
 

@@ -1,9 +1,9 @@
 ---
-title: "Análise de informações de posição do módulo GPS"
+title: "Jetson: análise GPS"
 description: "Nesta lição, vamos aprender principalmente a usar o Jetson Orin e o módulo GPS para ler e analisar informaçõe…"
 ---
 
-# Análise de informações de posição do módulo GPS
+# Jetson: análise GPS
 
 **1. Objetivos de aprendizagem**
 

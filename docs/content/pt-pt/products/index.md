@@ -87,6 +87,10 @@ outline: false
     <span class="pc-title">Garra Flexível TPU SO-ARM101</span>
     <p class="pc-desc">Garra flexível TPU SO-ARM101 da Juxi Technology — TPU macio agarra com segurança itens irregulare…</p>
   </a>
+  <a :href="withBase('/pt-pt/products/usb-auto-focus-camera')" class="category-card">
+    <span class="pc-title">Câmara USB com foco automático</span>
+    <p class="pc-desc">Câmara USB com foco automático da Juxi Technology — sem driver, grande angular de 86°, 1080P 30FPS, UVC plug-and-play para visão robótica e inferência de IA, compatível com Windows/Linux/macOS/Jetson/Raspberry Pi</p>
+  </a>
   <a :href="withBase('/pt-pt/products/usb-sound-card')" class="category-card">
     <span class="pc-title">Placa de Som USB sem Driver</span>
     <p class="pc-desc">Placa de som USB da Juxi Technology — microfone + alto-falante integrados, plug-and-play, reduçã…</p>

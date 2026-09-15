@@ -1,9 +1,9 @@
 ---
-title: "IIC 通信"
+title: "ラズベリーパイ: IIC 通信"
 description: "選択 Interface Options -> I2C -> Yes"
 ---
 
-# IIC 通信
+# ラズベリーパイ: IIC 通信
 
 ## 依存関係のインストール
 

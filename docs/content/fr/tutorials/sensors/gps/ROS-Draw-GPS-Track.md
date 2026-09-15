@@ -1,9 +1,9 @@
 ---
-title: "Tracé de la trajectoire GPS"
+title: "ROS : tracer la trace GPS"
 description: "La visualisation directe des informations GPS est impossible ; nous devons convertir le système de coordonnée…"
 ---
 
-# Tracé de la trajectoire GPS
+# ROS : tracer la trace GPS
 
 **Cette fonction trace les informations de données GPS en temps réel et les affiche dans rviz2.**
 

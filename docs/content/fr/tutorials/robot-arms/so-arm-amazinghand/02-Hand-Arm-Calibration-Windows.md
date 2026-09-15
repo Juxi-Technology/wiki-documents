@@ -1,10 +1,10 @@
 ---
-title: "Phase 2 : Calibration (Windows)"
+title: "Étape 2 : calibration main et bras (Windows)"
 description: "Cette phase consiste à calibrer trois équipements : le bras maître, le bras esclave et la main AmazingHand. L…"
 ---
 
 
-# Phase 2 : Calibration (Windows)
+# Étape 2 : calibration main et bras (Windows)
 
 Cette phase consiste à calibrer trois équipements : le bras maître, le bras esclave et la main AmazingHand. La calibration est indispensable à l'exactitude de la téléopération ; **vous devez terminer cette phase avant de passer à la téléopération**.
 

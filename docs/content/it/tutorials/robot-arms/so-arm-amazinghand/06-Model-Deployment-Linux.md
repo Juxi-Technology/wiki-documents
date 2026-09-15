@@ -1,10 +1,10 @@
 ---
-title: "Fase 6: Distribuzione e valutazione (Linux)"
+title: "Fase 6: deployment modello (Linux)"
 description: "In questa fase si carica la politica addestrata per far eseguire il compito in autonomia al robot e si regist…"
 ---
 
 
-# Fase 6: Distribuzione e valutazione (Linux)
+# Fase 6: deployment modello (Linux)
 
 In questa fase si carica la politica addestrata per far **eseguire il compito in autonomia** al robot e si registra un video di valutazione per verificarne l'efficacia. È la conclusione dell'intero flusso e anche il momento chiave per verificare i risultati dell'addestramento.
 

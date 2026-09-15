@@ -1,9 +1,9 @@
 ---
-title: "串列埠通訊"
+title: "Jetson: 串列埠通訊"
 description: "登出並重新登入生效。"
 ---
 
-# 串列埠通訊
+# Jetson: 串列埠通訊
 
 ## 安裝相依性
 

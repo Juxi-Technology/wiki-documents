@@ -1,9 +1,9 @@
 ---
-title: "⚒️Montaje del producto terminado"
+title: "Montaje del kit ensamblado"
 description: "Lista de accesorios"
 ---
 
-# ⚒️Montaje del producto terminado
+# Montaje del kit ensamblado
 
 Lista de accesorios
 

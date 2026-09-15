@@ -1,9 +1,9 @@
 ---
-title: "03、Jupyter Lab使用"
+title: "Jupyter Lab 使用"
 description: "使用下面命令安装Jupyter Lab：若安装Jupyter Lab下载速度较慢，可以使用 指定源 进行安装"
 ---
 
-# 03、Jupyter Lab使用
+# Jupyter Lab 使用
 
 ## 1、Jupyter Lab安装
 
@@ -239,5 +239,4 @@ systemctl status jupyterlab
 
 ![图 19](../../../../../public/images/tutorials/accessories/csi-camera/03-JupyterLab/19.png)
 
-
-
+<RelatedProducts slugs="imx219-csi-camera" />

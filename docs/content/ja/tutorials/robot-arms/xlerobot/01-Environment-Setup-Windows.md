@@ -1,9 +1,9 @@
 ---
-title: "Windows パソコン"
+title: "環境構築(Windows)"
 description: "黒いリーダーアームは 5V6A 電源アダプタを使用します"
 ---
 
-# Windows パソコン
+# 環境構築(Windows)
 
 黒いリーダーアームは 5V6A 電源アダプタを使用します
 

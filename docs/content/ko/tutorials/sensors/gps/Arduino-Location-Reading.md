@@ -1,9 +1,9 @@
 ---
-title: "GPS 위치 정보 읽기"
+title: "Arduino: 위치 정보 읽기"
 description: "이번 과정에서는 주로 arduino와 GPS 모듈을 사용하여 위치 정보 읽기 기능을 구현하는 방법을 학습합니다."
 ---
 
-# GPS 위치 정보 읽기
+# Arduino: 위치 정보 읽기
 
 **1. 학습 목표**
 

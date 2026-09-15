@@ -1,10 +1,10 @@
 ---
-title: "Etapa 6: Implantação e avaliação (Linux)"
+title: "Etapa 6: implantação do modelo (Linux)"
 description: "Esta etapa carrega a política treinada para que o robô execute a tarefa de forma autônoma e grava vídeos de a…"
 ---
 
 
-# Etapa 6: Implantação e avaliação (Linux)
+# Etapa 6: implantação do modelo (Linux)
 
 Esta etapa carrega a política treinada para que o robô **execute a tarefa de forma autônoma** e grava vídeos de avaliação para verificar o resultado. É a conclusão de todo o fluxo e também o momento decisivo para aferir o resultado do treinamento.
 

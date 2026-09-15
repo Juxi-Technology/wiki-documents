@@ -1,9 +1,9 @@
 ---
-title: "Ordinateur MAC"
+title: "Configuration (macOS)"
 description: "Le bras meneur noir utilise un adaptateur secteur 5V6A"
 ---
 
-# Ordinateur MAC
+# Configuration (macOS)
 
 Le bras meneur noir utilise un adaptateur secteur 5V6A
 

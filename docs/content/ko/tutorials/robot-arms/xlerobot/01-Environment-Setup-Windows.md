@@ -1,9 +1,9 @@
 ---
-title: "Windows 컴퓨터"
+title: "환경 구축(Windows)"
 description: "검정색 리더 암은 5V6A 전원 어댑터를 사용합니다"
 ---
 
-# Windows 컴퓨터
+# 환경 구축(Windows)
 
 검정색 리더 암은 5V6A 전원 어댑터를 사용합니다
 

@@ -1,9 +1,9 @@
 ---
-title: "Segundo passo: mover os arquivos do Xlerobot"
+title: "Mover arquivos do XLeRobot"
 description: "Baixe e descompacte o pacote compactado em https://github.com/Vector-Wangel/XLeRobot"
 ---
 
-# Segundo passo: mover os arquivos do Xlerobot
+# Mover arquivos do XLeRobot
 
 Baixe e descompacte o pacote compactado em https://github.com/Vector-Wangel/XLeRobot
 

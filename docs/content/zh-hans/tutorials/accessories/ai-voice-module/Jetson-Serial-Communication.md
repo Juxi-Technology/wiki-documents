@@ -1,9 +1,9 @@
 ---
-title: "串口通讯"
+title: "Jetson: 串口通讯"
 description: "注销并重新登录生效。"
 ---
 
-# 串口通讯
+# Jetson: 串口通讯
 
 ## 安装依赖
 

@@ -1,9 +1,9 @@
 ---
-title: "Ubuntu Computer"
+title: "Environment Setup (Ubuntu)"
 description: "The black leader arm uses a 5V6A power adapter"
 ---
 
-# Ubuntu Computer
+# Environment Setup (Ubuntu)
 
 The black leader arm uses a 5V6A power adapter
 

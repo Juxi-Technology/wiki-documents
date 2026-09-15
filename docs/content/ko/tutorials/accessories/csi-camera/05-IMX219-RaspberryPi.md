@@ -1,9 +1,9 @@
 ---
-title: "05, IMX219-CSI 카메라 (Raspberry Pi) 튜토리얼"
+title: "IMX219(라즈베리파이)"
 description: "없는 경우 커널 또는 장치 하드웨어에 문제가 있을 수 있으므로 시스템을 다시 설치하거나 하드웨어를 교체해 보세요."
 ---
 
-# 05, IMX219-CSI 카메라 (Raspberry Pi) 튜토리얼
+# IMX219(라즈베리파이)
 
 ##### 1, 먼저 "ls" 명령어를 사용하여 vchiq 장치 노드가 존재하는지 확인합니다: ls /dev 입력
 
@@ -37,5 +37,4 @@ detected=0이면 카메라 모듈이 제대로 연결되지 않은 것이므로 
 
 image.jpg 이미지를 Windows 데스크톱으로 전송하여 열면, 촬영된 결과를 확인할 수 있습니다
 
-
-
+<RelatedProducts slugs="imx219-csi-camera" />

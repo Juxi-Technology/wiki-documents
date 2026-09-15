@@ -1,9 +1,9 @@
 ---
-title: "IIC通訊"
+title: "Jetson: IIC通訊"
 description: "登出並重新登入生效。"
 ---
 
-# IIC通訊
+# Jetson: IIC通訊
 
 ## 安裝相依性
 

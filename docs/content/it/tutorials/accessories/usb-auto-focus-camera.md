@@ -129,3 +129,5 @@ Utilizzare `cap.set(cv2.CAP_PROP_FRAME_WIDTH, width)` e `cap.set(cv2.CAP_PROP_FR
 - 📧 E-mail: support@juxitech.com
 - 🌐 Sito ufficiale: [www.juxitech.com](https://www.juxitech.com)
 - 💬 GitHub Issues: [Segnala un problema](https://github.com/Juxi-Technology/wiki-documents/issues)
+
+<RelatedProducts slugs="usb-auto-focus-camera" />

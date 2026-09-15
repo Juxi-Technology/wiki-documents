@@ -1,9 +1,9 @@
 ---
-title: "02、Utilisation de la caméra autofocus"
+title: "Utilisation de la caméra autofocus"
 description: "L'image montre le résultat de la connexion de deux caméras CSI et d'une caméra USB : en général, une caméra C…"
 ---
 
-# 02、Utilisation de la caméra autofocus
+# Utilisation de la caméra autofocus
 
 ## 1、Afficher les périphériques vidéo
 
@@ -71,5 +71,4 @@ Sélectionnez le numéro de périphérique correspondant à la caméra USB :
 
 ![Image 9](../../../../../public/images/tutorials/accessories/csi-camera/02-Auto-Focus-Camera/9.png)
 
-
-
+<RelatedProducts slugs="usb-auto-focus-camera" />

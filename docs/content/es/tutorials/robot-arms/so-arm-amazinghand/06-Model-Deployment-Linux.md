@@ -1,10 +1,10 @@
 ---
-title: "Fase 6: Despliegue y evaluación (Linux)"
+title: "Etapa 6: despliegue del modelo (Linux)"
 description: "En esta fase se carga la política ya entrenada para que el robot ejecute la tarea de forma autónoma y se grab…"
 ---
 
 
-# Fase 6: Despliegue y evaluación (Linux)
+# Etapa 6: despliegue del modelo (Linux)
 
 En esta fase se carga la política ya entrenada para que el robot **ejecute la tarea de forma autónoma** y se graba un vídeo de evaluación para verificar el efecto. Es el cierre de todo el flujo y también la clave para comprobar los resultados del entrenamiento.
 

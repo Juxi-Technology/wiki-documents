@@ -1,9 +1,9 @@
 ---
-title: "IIC通讯"
+title: "Jetson: IIC通讯"
 description: "注销并重新登录生效。"
 ---
 
-# IIC通讯
+# Jetson: IIC通讯
 
 ## 安装依赖
 

@@ -1,9 +1,9 @@
 ---
-title: "AGNSS輔助定位"
+title: "Jetson:AGNSS 輔助定位"
 description: "本次課程我們主要學習使用Jetson Orin和GPS模組和agnss伺服器實現弱信號下位置資訊讀取解析。"
 ---
 
-# AGNSS輔助定位
+# Jetson:AGNSS 輔助定位
 
 **1. 學習目標**
 

@@ -1,9 +1,9 @@
 ---
-title: "Serial Port Communication"
+title: "Jetson: Serial Port Communication"
 description: "Log out and log back in for it to take effect."
 ---
 
-# Serial Port Communication
+# Jetson: Serial Port Communication
 
 ## Install Dependencies
 

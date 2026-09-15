@@ -1,9 +1,9 @@
 ---
-title: "Serial Port Communication"
+title: "RDK: Serial Port Communication"
 description: "This repository provides Python example code for communication between the RDK X5 (Raspberry Pi) platform and…"
 ---
 
-# Serial Port Communication
+# RDK: Serial Port Communication
 
 ## Introduction
 

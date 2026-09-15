@@ -1,9 +1,9 @@
 ---
-title: "02、Autofokus-Kamera verwenden"
+title: "Autofokus-Kamera verwenden"
 description: "Das Ergebnis im Bild zeigt den Anschluss von zwei CSI-Kameras und einer USB-Kamera: Normalerweise wird für ei…"
 ---
 
-# 02、Autofokus-Kamera verwenden
+# Autofokus-Kamera verwenden
 
 ## 1、Video-Geräte anzeigen
 
@@ -71,5 +71,4 @@ Wählen Sie die entsprechende Gerätenummer der USB-Kamera:
 
 ![Abb. 9](../../../../../public/images/tutorials/accessories/csi-camera/02-Auto-Focus-Camera/9.png)
 
-
-
+<RelatedProducts slugs="usb-auto-focus-camera" />

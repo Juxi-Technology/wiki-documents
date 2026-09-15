@@ -1,9 +1,9 @@
 ---
-title: "GPS 모듈 위치 정보 분석"
+title: "Jetson: GPS 파싱"
 description: "이번 과정에서는 주로 Jetson Orin과 GPS 모듈을 사용하여 위치 정보를 읽고 분석하는 것을 구현하는 방법을 학습합니다."
 ---
 
-# GPS 모듈 위치 정보 분석
+# Jetson: GPS 파싱
 
 **1. 학습 목표**
 

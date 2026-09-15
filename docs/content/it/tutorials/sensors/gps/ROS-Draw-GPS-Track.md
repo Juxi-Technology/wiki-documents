@@ -1,9 +1,9 @@
 ---
-title: "Tracciamento della traiettoria GPS"
+title: "ROS: tracciare il percorso GPS"
 description: "Non è possibile visualizzare direttamente le informazioni del GPS; è necessario convertire il sistema di coor…"
 ---
 
-# Tracciamento della traiettoria GPS
+# ROS: tracciare il percorso GPS
 
 **Questa funzione traccia le informazioni dei dati GPS in tempo reale e le visualizza in rviz2.**
 

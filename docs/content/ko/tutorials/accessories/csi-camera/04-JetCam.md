@@ -1,9 +1,9 @@
 ---
-title: "04, JetCam 사용"
+title: "JetCam 사용"
 description: "JetCam 사용"
 ---
 
-# 04, JetCam 사용
+# JetCam 사용
 
 JetCam 사용
 
@@ -114,3 +114,4 @@ Jupyter Lab에서 USB 카메라가 있는 폴더로 이동하여 파일을 엽�
 
 [https://github.com/NVIDIA-AI-IOT/jetcam](https://github.com/NVIDIA-AI-IOT/jetcam)
 
+<RelatedProducts slugs="imx219-csi-camera" />

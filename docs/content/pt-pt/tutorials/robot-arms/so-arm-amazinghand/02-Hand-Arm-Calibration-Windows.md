@@ -1,10 +1,10 @@
 ---
-title: "Etapa 2: Calibração (Windows)"
+title: "Etapa 2: calibração de mão e braços (Windows)"
 description: "Esta etapa calibra três dispositivos: o braço líder, o braço seguidor e a mão AmazingHand. A calibração é o p…"
 ---
 
 
-# Etapa 2: Calibração (Windows)
+# Etapa 2: calibração de mão e braços (Windows)
 
 Esta etapa calibra três dispositivos: o braço líder, o braço seguidor e a mão AmazingHand. A calibração é o pré-requisito para a correção da teleoperação; **é obrigatório concluir esta etapa antes de entrar na teleoperação**.
 

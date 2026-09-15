@@ -1,9 +1,9 @@
 ---
-title: "⚒️ Montage der Fertigbaugruppe"
+title: "Montage (fertiger Bausatz)"
 description: "Teileliste"
 ---
 
-# ⚒️ Montage der Fertigbaugruppe
+# Montage (fertiger Bausatz)
 
 Teileliste
 

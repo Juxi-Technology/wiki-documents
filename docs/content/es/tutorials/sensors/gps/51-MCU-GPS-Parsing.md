@@ -1,9 +1,9 @@
 ---
-title: "Análisis de datos GPS"
+title: "51 MCU: análisis GPS"
 description: "En esta lección aprenderemos principalmente a utilizar el microcontrolador 51 modelo STC89C52RC y el módulo G…"
 ---
 
-# Análisis de datos GPS
+# 51 MCU: análisis GPS
 
 **1. Objetivos de aprendizaje**
 

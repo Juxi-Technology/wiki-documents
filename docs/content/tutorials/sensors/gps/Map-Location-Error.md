@@ -1,11 +1,11 @@
 ---
-title: "Map Positioning Error"
+title: "Map Location Error"
 description: "The coordinates used by Tencent and Amap differ from those of our host computer. Our host computer calls the …"
 ---
 
 
 
-# Map Positioning Error
+# Map Location Error
 
 [toc]
 

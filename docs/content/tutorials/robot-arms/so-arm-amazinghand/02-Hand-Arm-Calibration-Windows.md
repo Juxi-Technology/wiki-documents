@@ -1,10 +1,10 @@
 ---
-title: "Stage 2: Calibration (Windows)"
+title: "Stage 2: Hand & Arm Calibration (Windows)"
 description: "This stage calibrates the three devices: the leader arm, the follower arm, and the AmazingHand hand. Calibrat…"
 ---
 
 
-# Stage 2: Calibration (Windows)
+# Stage 2: Hand & Arm Calibration (Windows)
 
 This stage calibrates the three devices: the leader arm, the follower arm, and the AmazingHand hand. Calibration is a prerequisite for correct teleoperation, so **you must complete this stage before moving on to teleoperation**.
 

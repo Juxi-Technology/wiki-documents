@@ -1,10 +1,10 @@
 ---
-title: "Stage 6: Deployment and Evaluation (Linux)"
+title: "Stage 6: Model Deployment (Linux)"
 description: "This stage loads the trained policy so the robot can execute tasks autonomously, and records evaluation video…"
 ---
 
 
-# Stage 6: Deployment and Evaluation (Linux)
+# Stage 6: Model Deployment (Linux)
 
 This stage loads the trained policy so the robot can **execute tasks autonomously**, and records evaluation videos to verify the results. This is the finale of the whole workflow and the key test of the training outcome.
 

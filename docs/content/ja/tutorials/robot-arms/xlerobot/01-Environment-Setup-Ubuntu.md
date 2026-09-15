@@ -1,9 +1,9 @@
 ---
-title: "Ubuntu パソコン"
+title: "環境構築(Ubuntu)"
 description: "黒いリーダーアームは 5V6A 電源アダプタを使用します"
 ---
 
-# Ubuntu パソコン
+# 環境構築(Ubuntu)
 
 黒いリーダーアームは 5V6A 電源アダプタを使用します
 

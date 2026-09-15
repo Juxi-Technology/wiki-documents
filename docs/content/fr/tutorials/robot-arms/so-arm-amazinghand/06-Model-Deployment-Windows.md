@@ -1,10 +1,10 @@
 ---
-title: "Phase 6 : Déploiement et évaluation (Windows)"
+title: "Étape 6 : déploiement du modèle (Windows)"
 description: "Cette phase charge la politique entraînée pour que le robot exécute la tâche de manière autonome et enregistr…"
 ---
 
 
-# Phase 6 : Déploiement et évaluation (Windows)
+# Étape 6 : déploiement du modèle (Windows)
 
 Cette phase charge la politique entraînée pour que le robot **exécute la tâche de manière autonome** et enregistre une vidéo d'évaluation afin de vérifier le résultat. C'est la conclusion de tout le processus et un moment clé pour valider le fruit de l'entraînement.
 

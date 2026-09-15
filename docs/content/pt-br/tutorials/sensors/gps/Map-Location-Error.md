@@ -1,11 +1,11 @@
 ---
-title: "Erro de posicionamento no mapa"
+title: "Erro de localização no mapa"
 description: "As coordenadas usadas pelo 腾讯 e pelo 高德地图 são diferentes das coordenadas do software de nível superior; o nos…"
 ---
 
 
 
-# Erro de posicionamento no mapa
+# Erro de localização no mapa
 
 [toc]
 

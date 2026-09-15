@@ -1,9 +1,9 @@
 ---
-title: "Tutorial per richiedere la api di 百度地图"
+title: "Raspberry Pi: API Baidu Maps"
 description: "1. Metodo di registrazione"
 ---
 
-# Tutorial per richiedere la api di 百度地图
+# Raspberry Pi: API Baidu Maps
 
 **1.** **Metodo di registrazione**
 

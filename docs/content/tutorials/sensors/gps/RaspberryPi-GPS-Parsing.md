@@ -1,9 +1,9 @@
 ---
-title: "GPS Module Position Information Parsing"
+title: "Raspberry Pi: GPS Parsing"
 description: "In this lesson, we will mainly learn to use a Raspberry Pi and a GPS module to read and parse position inform…"
 ---
 
-# GPS Module Position Information Parsing
+# Raspberry Pi: GPS Parsing
 
 **1. Learning Objectives**
 

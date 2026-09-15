@@ -1,9 +1,9 @@
 ---
-title: "Communication IIC"
+title: "Jetson: Communication IIC"
 description: "Déconnectez-vous puis reconnectez-vous pour que cela prenne effet."
 ---
 
-# Communication IIC
+# Jetson: Communication IIC
 
 ## Installer les dépendances
 

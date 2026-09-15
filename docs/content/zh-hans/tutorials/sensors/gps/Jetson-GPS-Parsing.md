@@ -1,9 +1,9 @@
 ---
-title: "GPS模块解析位置信息"
+title: "Jetson:位置信息解析"
 description: "本次课程我们主要学习使用Jetson Orin和GPS模块实读取并解析位置信息。"
 ---
 
-# GPS模块解析位置信息
+# Jetson:位置信息解析
 
 **1. 学习目标**
 

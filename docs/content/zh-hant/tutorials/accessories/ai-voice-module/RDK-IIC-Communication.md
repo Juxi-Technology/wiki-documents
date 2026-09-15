@@ -1,9 +1,9 @@
 ---
-title: "IIC通訊"
+title: "RDK: IIC通訊"
 description: "本倉庫提供了 RDK X5（Raspberry Pi）平台與 AI 語音互動模組通訊的 Python 範例程式碼，支援 I2C 和 UART 兩種通訊方式。"
 ---
 
-# IIC通訊
+# RDK: IIC通訊
 
 ## 簡介
 

@@ -1,9 +1,9 @@
 ---
-title: "02. Uso della fotocamera con autofocus"
+title: "Uso della fotocamera autofocus"
 description: "Il risultato dell'immagine corrisponde a due fotocamere CSI e una fotocamera USB collegate: di norma una foto…"
 ---
 
-# 02. Uso della fotocamera con autofocus
+# Uso della fotocamera autofocus
 
 ## 1. Visualizzare il dispositivo video
 
@@ -71,5 +71,4 @@ Selezionare il numero di dispositivo corrispondente alla fotocamera USB:
 
 ![Immagine 9](../../../../../public/images/tutorials/accessories/csi-camera/02-Auto-Focus-Camera/9.png)
 
-
-
+<RelatedProducts slugs="usb-auto-focus-camera" />

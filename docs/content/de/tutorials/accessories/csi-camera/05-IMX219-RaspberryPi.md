@@ -1,9 +1,9 @@
 ---
-title: "05、IMX219-CSI-Kamera (Raspberry Pi) Anleitung"
+title: "IMX219 am Raspberry Pi"
 description: "Wenn nicht, liegt möglicherweise ein Problem mit dem Kernel oder der Gerätehardware vor; versuchen Sie, das S…"
 ---
 
-# 05、IMX219-CSI-Kamera (Raspberry Pi) Anleitung
+# IMX219 am Raspberry Pi
 
 ##### 1、Verwenden Sie zunächst den Befehl "ls", um zu prüfen, ob ein vchiq-Geräteknoten vorhanden ist: geben Sie ls /dev ein
 
@@ -37,5 +37,4 @@ Geben Sie **"raspistill -o image.jpg"** ein, um erfolgreich ein Foto aufzunehmen
 
 Übertragen Sie das Bild image.jpg auf den Windows-Desktop und öffnen Sie es, um das Ergebnis der Aufnahme zu sehen
 
-
-
+<RelatedProducts slugs="imx219-csi-camera" />

@@ -1,9 +1,9 @@
 ---
-title: "01、CSI 攝像頭使用"
+title: "Jetson CSI 攝像頭配置"
 description: "按方向鍵下選擇Configure Jetson 24pin CSI Connector。然後按Enter進入下一個選項"
 ---
 
-# 01、CSI 攝像頭使用
+# Jetson CSI 攝像頭配置
 
 ## 1、配置CSI攝像頭引腳
 
@@ -79,5 +79,4 @@ nvgstcapture-1.0 --sensor-id=1 --cus-prev-res=1280x720
 
 ![圖 11](../../../../../public/images/tutorials/accessories/csi-camera/01-Jetson-CSI-Setup/11.png)
 
-
-
+<RelatedProducts slugs="imx219-csi-camera" />

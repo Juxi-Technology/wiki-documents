@@ -1,9 +1,9 @@
 ---
-title: "IIC 통신"
+title: "Jetson: IIC 통신"
 description: "로그아웃 후 다시 로그인하면 적용됩니다."
 ---
 
-# IIC 통신
+# Jetson: IIC 통신
 
 ## 의존성 설치
 

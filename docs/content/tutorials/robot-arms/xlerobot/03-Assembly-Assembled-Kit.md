@@ -1,9 +1,9 @@
 ---
-title: "⚒️ Assembled-Unit Assembly"
+title: "Assembled-Kit Assembly"
 description: "Parts List"
 ---
 
-# ⚒️ Assembled-Unit Assembly
+# Assembled-Kit Assembly
 
 Parts List
 

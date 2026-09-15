@@ -1,9 +1,9 @@
 ---
-title: "Communication par port série"
+title: "Jetson: Communication par port série"
 description: "Déconnectez-vous puis reconnectez-vous pour que cela prenne effet."
 ---
 
-# Communication par port série
+# Jetson: Communication par port série
 
 ## Installer les dépendances
 

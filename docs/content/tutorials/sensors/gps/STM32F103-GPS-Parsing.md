@@ -1,9 +1,9 @@
 ---
-title: "GPS Parsing Output"
+title: "STM32F103: GPS Parsing Output"
 description: "In this lesson, we will mainly learn to use STM32F103C8T6 and a GPS module to implement the position informat…"
 ---
 
-# GPS Parsing Output
+# STM32F103: GPS Parsing Output
 
 **1. Learning Objectives**
 

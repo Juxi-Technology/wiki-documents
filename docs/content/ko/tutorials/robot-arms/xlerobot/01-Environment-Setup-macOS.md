@@ -1,9 +1,9 @@
 ---
-title: "MAC 컴퓨터"
+title: "환경 구축(macOS)"
 description: "검정색 리더 암은 5V6A 전원 어댑터를 사용합니다"
 ---
 
-# MAC 컴퓨터
+# 환경 구축(macOS)
 
 검정색 리더 암은 5V6A 전원 어댑터를 사용합니다
 

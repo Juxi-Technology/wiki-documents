@@ -1,9 +1,9 @@
 ---
-title: "IIC 通信"
+title: "RDK: IIC 通信"
 description: "本リポジトリは、RDK X5（Raspberry Pi）プラットフォームと AI 音声対話モジュール間の通信を行う Python サンプルコードを提供しており、I2C と UART の 2 種類の通信方式に対応していま…"
 ---
 
-# IIC 通信
+# RDK: IIC 通信
 
 ## 概要
 

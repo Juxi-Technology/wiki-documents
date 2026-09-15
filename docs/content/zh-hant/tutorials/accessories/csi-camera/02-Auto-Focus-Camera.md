@@ -1,9 +1,9 @@
 ---
-title: "02、自動對焦攝像頭使用"
+title: "自動對焦攝像頭使用"
 description: "圖片的結果是接了兩個CSI攝像頭、一個USB攝像頭的結果：一般一個CSI攝像頭顯示一個video裝置，一個USB攝像頭顯示兩個video裝置，USB攝像頭選擇新增加且數字較小的/dev/video2呼叫（接上USB攝像…"
 ---
 
-# 02、自動對焦攝像頭使用
+# 自動對焦攝像頭使用
 
 ## 1、查看video裝置
 
@@ -71,5 +71,4 @@ vlc
 
 ![圖 9](../../../../../public/images/tutorials/accessories/csi-camera/02-Auto-Focus-Camera/9.png)
 
-
-
+<RelatedProducts slugs="usb-auto-focus-camera" />

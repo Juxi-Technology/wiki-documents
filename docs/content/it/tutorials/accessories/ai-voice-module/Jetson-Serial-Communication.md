@@ -1,9 +1,9 @@
 ---
-title: "Comunicazione della porta seriale"
+title: "Jetson: Comunicazione della porta seriale"
 description: "La modifica ha effetto dopo la disconnessione e un nuovo accesso."
 ---
 
-# Comunicazione della porta seriale
+# Jetson: Comunicazione della porta seriale
 
 ## Installazione delle dipendenze
 

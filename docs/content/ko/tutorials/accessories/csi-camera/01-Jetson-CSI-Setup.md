@@ -1,9 +1,9 @@
 ---
-title: "01, CSI 카메라 사용"
+title: "Jetson CSI 카메라 설정"
 description: "방향키 아래로 Configure Jetson 24pin CSI Connector를 선택합니다. 그런 다음 Enter를 눌러 다음 옵션으로 이동합니다"
 ---
 
-# 01, CSI 카메라 사용
+# Jetson CSI 카메라 설정
 
 ## 1, CSI 카메라 핀 설정
 
@@ -79,5 +79,4 @@ nvgstcapture-1.0 --sensor-id=1 --cus-prev-res=1280x720
 
 ![그림 11](../../../../../public/images/tutorials/accessories/csi-camera/01-Jetson-CSI-Setup/11.png)
 
-
-
+<RelatedProducts slugs="imx219-csi-camera" />

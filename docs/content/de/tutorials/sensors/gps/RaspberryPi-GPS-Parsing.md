@@ -1,9 +1,9 @@
 ---
-title: "GPS-Modul analysiert Positionsinformationen"
+title: "Raspberry Pi: GPS-Auswertung"
 description: "In dieser Lektion lernen wir hauptsächlich, mit dem Raspberry Pi und dem GPS-Modul Positionsinformationen zu …"
 ---
 
-# GPS-Modul analysiert Positionsinformationen
+# Raspberry Pi: GPS-Auswertung
 
 **1. Lernziel**
 

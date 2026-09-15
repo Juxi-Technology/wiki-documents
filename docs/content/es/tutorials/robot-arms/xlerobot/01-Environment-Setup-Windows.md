@@ -1,9 +1,9 @@
 ---
-title: "Ordenador Windows"
+title: "Configuración (Windows)"
 description: "El brazo motriz negro utiliza un adaptador de alimentación de 5V6A"
 ---
 
-# Ordenador Windows
+# Configuración (Windows)
 
 El brazo motriz negro utiliza un adaptador de alimentación de 5V6A
 

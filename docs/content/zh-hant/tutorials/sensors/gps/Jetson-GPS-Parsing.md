@@ -1,9 +1,9 @@
 ---
-title: "GPS模組解析位置資訊"
+title: "Jetson:位置資訊解析"
 description: "本次課程我們主要學習使用Jetson Orin和GPS模組實讀取並解析位置資訊。"
 ---
 
-# GPS模組解析位置資訊
+# Jetson:位置資訊解析
 
 **1. 學習目標**
 

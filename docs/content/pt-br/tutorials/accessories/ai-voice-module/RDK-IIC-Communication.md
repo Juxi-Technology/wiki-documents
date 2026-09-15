@@ -1,9 +1,9 @@
 ---
-title: "Comunicação IIC"
+title: "RDK: Comunicação IIC"
 description: "Este repositório fornece um código de exemplo em Python para a comunicação entre a plataforma RDK X5 (Raspber…"
 ---
 
-# Comunicação IIC
+# RDK: Comunicação IIC
 
 ## Introdução
 

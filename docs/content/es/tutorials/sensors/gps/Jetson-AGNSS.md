@@ -1,9 +1,9 @@
 ---
-title: "Posicionamiento asistido AGNSS"
+title: "Jetson: posicionamiento AGNSS"
 description: "En esta lección aprenderemos principalmente a utilizar el Jetson Orin, el módulo GPS y un servidor agnss para…"
 ---
 
-# Posicionamiento asistido AGNSS
+# Jetson: posicionamiento AGNSS
 
 **1. Objetivos de aprendizaje**
 

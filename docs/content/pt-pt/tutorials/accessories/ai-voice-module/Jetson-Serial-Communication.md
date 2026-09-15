@@ -1,9 +1,9 @@
 ---
-title: "Comunicação de porta série"
+title: "Jetson: Comunicação de porta série"
 description: "Termine sessão e volte a iniciá-la para que tenha efeito."
 ---
 
-# Comunicação de porta série
+# Jetson: Comunicação de porta série
 
 ## Instalar as dependências
 

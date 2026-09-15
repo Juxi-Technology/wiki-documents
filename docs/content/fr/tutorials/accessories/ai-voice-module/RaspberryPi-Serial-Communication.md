@@ -1,9 +1,9 @@
 ---
-title: "Communication par port série"
+title: "Raspberry Pi: Communication par port série"
 description: "Modifiez /boot/firmware/config.txt ou /boot/config.txt et assurez-vous de la configuration suivante :"
 ---
 
-# Communication par port série
+# Raspberry Pi: Communication par port série
 
 ## Installer les dépendances
 

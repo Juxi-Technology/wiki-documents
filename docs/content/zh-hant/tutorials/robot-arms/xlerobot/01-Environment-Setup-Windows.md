@@ -1,9 +1,9 @@
 ---
-title: "Windows電腦"
+title: "安裝環境(Windows)"
 description: "黑色主動臂使用 5V6A 電源適配器"
 ---
 
-# Windows電腦
+# 安裝環境(Windows)
 
 黑色主動臂使用 5V6A 電源適配器
 

@@ -1,9 +1,9 @@
 ---
-title: "Serielle Kommunikation"
+title: "Arduino: Serielle Kommunikation"
 description: "1. Öffnen Sie die Datei UARTVoice.ino"
 ---
 
-# Serielle Kommunikation
+# Arduino: Serielle Kommunikation
 
 ## 📁 Dateistruktur
 

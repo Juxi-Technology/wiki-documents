@@ -1,9 +1,9 @@
 ---
-title: "Analyse des informations de position GPS"
+title: "Arduino : analyse de position"
 description: "Dans cette leçon, nous allons principalement apprendre à utiliser Arduino et le module GPS pour réaliser la f…"
 ---
 
-# Analyse des informations de position GPS
+# Arduino : analyse de position
 
 **1. Objectif d'apprentissage**
 

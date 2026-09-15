@@ -87,6 +87,10 @@ outline: false
     <span class="pc-title">SO-ARM101 TPU-Flex-Greifer</span>
     <p class="pc-desc">Juxi Technology SO-ARM101 TPU-Flex-Greifer — weiches TPU greift unregelmäßige/zerbrechliche O…</p>
   </a>
+  <a :href="withBase('/de/products/usb-auto-focus-camera')" class="category-card">
+    <span class="pc-title">USB-Kamera mit Autofokus</span>
+    <p class="pc-desc">Juxi Technology USB-Kamera mit Autofokus, treiberfrei — 86° Weitwinkel, 1080P 30FPS, UVC Plug-and-Play für Roboter-Vision und KI-Inferenz, kompatibel mit Windows/Linux/macOS/Jetson/Raspberry Pi</p>
+  </a>
   <a :href="withBase('/de/products/usb-sound-card')" class="category-card">
     <span class="pc-title">USB Soundkarte ohne Treiber</span>
     <p class="pc-desc">Juxi Technology USB-Soundkarte — Onboard-Mikrofon + Lautsprecher, Plug-and-Play, Rauschunterd…</p>

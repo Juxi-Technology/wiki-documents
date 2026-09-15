@@ -1,9 +1,9 @@
 ---
-title: "⚒️散件组装"
+title: "散件组装教程"
 description: "如果你宁愿跳过拧螺丝的乐趣，你也可以购买适配Xlerobot的SO101从动臂的预组装套件。"
 ---
 
-# ⚒️散件组装
+# 散件组装教程
 
 ![图 1](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/1.png)
 
