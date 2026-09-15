@@ -56,6 +56,18 @@ SO-ARM101 從動臂 + AmazingHand 靈巧手的完整工作流:環境搭建、校
 - [階段六:模型部署(Linux)](./so-arm-amazinghand/06-Model-Deployment-Linux.md)
 - [階段六:模型部署(Windows)](./so-arm-amazinghand/06-Model-Deployment-Windows.md)
 
+### XLeRobot 教程
+
+XLeRobot 雙臂移動機器人教程:環境搭建(LeRobot + conda 鏡像)、文件部署、成品與散件組裝。
+
+- [教程總覽](./xlerobot/index.md)
+- [安裝環境(macOS)](./xlerobot/01-Environment-Setup-macOS.md)
+- [安裝環境(Ubuntu)](./xlerobot/01-Environment-Setup-Ubuntu.md)
+- [安裝環境(Windows)](./xlerobot/01-Environment-Setup-Windows.md)
+- [移動 XLeRobot 文件](./xlerobot/02-Move-Xlerobot-Files.md)
+- [成品組裝教程](./xlerobot/03-Assembly-Assembled-Kit.md)
+- [散件組裝教程](./xlerobot/04-Assembly-Parts-Kit.md)
+
 ---
 
 ## 技術支援

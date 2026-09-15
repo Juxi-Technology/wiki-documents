@@ -56,6 +56,18 @@ SO-ARM101 팔로워 암 + AmazingHand 전체 워크플로: 환경 구축, 캘리
 - [6단계: 모델 배포 (Linux)](./so-arm-amazinghand/06-Model-Deployment-Linux.md)
 - [6단계: 모델 배포 (Windows)](./so-arm-amazinghand/06-Model-Deployment-Windows.md)
 
+### XLeRobot 튜토리얼
+
+XLeRobot 양팔 이동 로봇 튜토리얼: 환경 구축, 파일 배치, 완제품/부품 키트 조립.
+
+- [튜토리얼 개요](./xlerobot/index.md)
+- [환경 구축(macOS)](./xlerobot/01-Environment-Setup-macOS.md)
+- [환경 구축(Ubuntu)](./xlerobot/01-Environment-Setup-Ubuntu.md)
+- [환경 구축(Windows)](./xlerobot/01-Environment-Setup-Windows.md)
+- [XLeRobot 파일 이동](./xlerobot/02-Move-Xlerobot-Files.md)
+- [완제품 조립](./xlerobot/03-Assembly-Assembled-Kit.md)
+- [부품 키트 조립](./xlerobot/04-Assembly-Parts-Kit.md)
+
 ---
 
 ## 지원

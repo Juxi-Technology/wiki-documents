@@ -42,6 +42,29 @@ Vollständige Anleitungen für Jetson-/Raspberry-Pi-CSI-Kameras, Autofokus-Kamer
 - [JetCam verwenden](./csi-camera/04-JetCam.md)
 - [IMX219 am Raspberry Pi](./csi-camera/05-IMX219-RaspberryPi.md)
 
+### AI-Sprachinteraktionsmodul
+
+CI1302-Offline-Sprachmodul-Tutorials: Schnellstart, Firmware-Flashen, Wake-Word-/Befehlswort-Änderung, Protokolle und Multi-Board-Kommunikation (Seriell + IIC).
+
+- [Schnellstart](./ai-voice-module/Quick-Start.md)
+- [Produktinformationen](./ai-voice-module/Product-Info.md)
+- [Firmware-Flashen](./ai-voice-module/Firmware-Flashing.md)
+- [Wake-Word & Befehlswörter ändern](./ai-voice-module/Wake-Word-Commands-Edit.md)
+- [Benutzerdefinierte Protokolleinträge](./ai-voice-module/Custom-Protocol-Entries.md)
+- [ROS1-Sprachinteraktion](./ai-voice-module/ROS1-Voice-Interaction.md)
+- [ROS2-Sprachinteraktion](./ai-voice-module/ROS2-Voice-Interaction.md)
+- [Serielles Protokoll](./ai-voice-module/Serial-Protocol.md)
+- [IIC-Protokoll](./ai-voice-module/IIC-Protocol.md)
+- [PC-Kommunikation](./ai-voice-module/PC-Communication.md)
+- [Arduino: Seriell](./ai-voice-module/Arduino-Serial-Communication.md)
+- [Arduino: IIC](./ai-voice-module/Arduino-IIC-Communication.md)
+- [Jetson: Seriell](./ai-voice-module/Jetson-Serial-Communication.md)
+- [Jetson: IIC](./ai-voice-module/Jetson-IIC-Communication.md)
+- [RDK: Seriell](./ai-voice-module/RDK-Serial-Communication.md)
+- [RDK: IIC](./ai-voice-module/RDK-IIC-Communication.md)
+- [Raspberry Pi: Seriell](./ai-voice-module/RaspberryPi-Serial-Communication.md)
+- [Raspberry Pi: IIC](./ai-voice-module/RaspberryPi-IIC-Communication.md)
+
 ### Weitere Accessoires
 
 - [0.91-OLED-Screen-Tutorial](./0.91-oled-screen-tutorial.md)

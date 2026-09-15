@@ -56,6 +56,18 @@ Complete workflow for the SO-ARM101 follower + AmazingHand: setup, calibration, 
 - [Stage 6: Model Deployment (Linux)](./so-arm-amazinghand/06-Model-Deployment-Linux.md)
 - [Stage 6: Model Deployment (Windows)](./so-arm-amazinghand/06-Model-Deployment-Windows.md)
 
+### XLeRobot Tutorials
+
+XLeRobot dual-arm mobile robot tutorials: environment setup, file deployment, and assembled/parts kit assembly.
+
+- [Tutorials Overview](./xlerobot/index.md)
+- [Environment Setup (macOS)](./xlerobot/01-Environment-Setup-macOS.md)
+- [Environment Setup (Ubuntu)](./xlerobot/01-Environment-Setup-Ubuntu.md)
+- [Environment Setup (Windows)](./xlerobot/01-Environment-Setup-Windows.md)
+- [Move XLeRobot Files](./xlerobot/02-Move-Xlerobot-Files.md)
+- [Assembled-Kit Assembly](./xlerobot/03-Assembly-Assembled-Kit.md)
+- [Parts-Kit Assembly](./xlerobot/04-Assembly-Parts-Kit.md)
+
 ---
 
 ## Technical Support

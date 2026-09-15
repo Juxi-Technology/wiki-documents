@@ -56,6 +56,18 @@ Kompletter Workflow für SO-ARM101-Folgearm + AmazingHand: Einrichtung, Kalibrie
 - [Stufe 6: Modell-Deployment (Linux)](./so-arm-amazinghand/06-Model-Deployment-Linux.md)
 - [Stufe 6: Modell-Deployment (Windows)](./so-arm-amazinghand/06-Model-Deployment-Windows.md)
 
+### XLeRobot-Tutorials
+
+XLeRobot-Tutorials: Umgebung einrichten, Dateien verteilen, Montage (fertig/Einzelteile).
+
+- [Tutorial-Übersicht](./xlerobot/index.md)
+- [Umgebung einrichten (macOS)](./xlerobot/01-Environment-Setup-macOS.md)
+- [Umgebung einrichten (Ubuntu)](./xlerobot/01-Environment-Setup-Ubuntu.md)
+- [Umgebung einrichten (Windows)](./xlerobot/01-Environment-Setup-Windows.md)
+- [XLeRobot-Dateien verschieben](./xlerobot/02-Move-Xlerobot-Files.md)
+- [Montage (fertiger Bausatz)](./xlerobot/03-Assembly-Assembled-Kit.md)
+- [Montage (Einzelteile)](./xlerobot/04-Assembly-Parts-Kit.md)
+
 ---
 
 ## Support

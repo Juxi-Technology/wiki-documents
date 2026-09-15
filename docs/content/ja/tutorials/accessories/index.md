@@ -42,6 +42,29 @@ Jetson / Raspberry Pi の CSI カメラ、オートフォーカスカメラ、Je
 - [JetCam の使用](./csi-camera/04-JetCam.md)
 - [IMX219(ラズベリーパイ)](./csi-camera/05-IMX219-RaspberryPi.md)
 
+### AI 音声対話モジュール
+
+CI1302 オフライン音声対話モジュールの全プラットフォーム チュートリアル:クイックスタート、ファームウェア書き込み、ウェイクワード/命令語の変更、プロトコル、Arduino/Jetson/RDK/Raspberry Pi/PC 通信(シリアル + IIC)。
+
+- [クイックスタート](./ai-voice-module/Quick-Start.md)
+- [製品資料](./ai-voice-module/Product-Info.md)
+- [ファームウェア書き込み](./ai-voice-module/Firmware-Flashing.md)
+- [ウェイクワードと命令語の変更](./ai-voice-module/Wake-Word-Commands-Edit.md)
+- [カスタムプロトコル語彙の作成](./ai-voice-module/Custom-Protocol-Entries.md)
+- [ROS1 音声対話](./ai-voice-module/ROS1-Voice-Interaction.md)
+- [ROS2 音声対話](./ai-voice-module/ROS2-Voice-Interaction.md)
+- [シリアルプロトコル](./ai-voice-module/Serial-Protocol.md)
+- [IIC プロトコル](./ai-voice-module/IIC-Protocol.md)
+- [PC 通信](./ai-voice-module/PC-Communication.md)
+- [Arduino: シリアル通信](./ai-voice-module/Arduino-Serial-Communication.md)
+- [Arduino: IIC 通信](./ai-voice-module/Arduino-IIC-Communication.md)
+- [Jetson: シリアル通信](./ai-voice-module/Jetson-Serial-Communication.md)
+- [Jetson: IIC 通信](./ai-voice-module/Jetson-IIC-Communication.md)
+- [RDK: シリアル通信](./ai-voice-module/RDK-Serial-Communication.md)
+- [RDK: IIC 通信](./ai-voice-module/RDK-IIC-Communication.md)
+- [ラズベリーパイ: シリアル通信](./ai-voice-module/RaspberryPi-Serial-Communication.md)
+- [ラズベリーパイ: IIC 通信](./ai-voice-module/RaspberryPi-IIC-Communication.md)
+
 ### その他のアクセサリ
 
 - [0.91 OLEDスクリーンチュートリアル](./0.91-oled-screen-tutorial.md)

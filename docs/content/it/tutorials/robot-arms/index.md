@@ -56,6 +56,18 @@ Flusso completo SO-ARM101 + AmazingHand: configurazione, calibrazione, teleopera
 - [Fase 6: deployment modello (Linux)](./so-arm-amazinghand/06-Model-Deployment-Linux.md)
 - [Fase 6: deployment modello (Windows)](./so-arm-amazinghand/06-Model-Deployment-Windows.md)
 
+### Tutorial XLeRobot
+
+Tutorial XLeRobot: configurazione, distribuzione file, montaggio (kit assemblato/a pezzi).
+
+- [Panoramica dei tutorial](./xlerobot/index.md)
+- [Configurazione (macOS)](./xlerobot/01-Environment-Setup-macOS.md)
+- [Configurazione (Ubuntu)](./xlerobot/01-Environment-Setup-Ubuntu.md)
+- [Configurazione (Windows)](./xlerobot/01-Environment-Setup-Windows.md)
+- [Spostare i file XLeRobot](./xlerobot/02-Move-Xlerobot-Files.md)
+- [Montaggio kit assemblato](./xlerobot/03-Assembly-Assembled-Kit.md)
+- [Montaggio kit a pezzi](./xlerobot/04-Assembly-Parts-Kit.md)
+
 ---
 
 ## Supporto

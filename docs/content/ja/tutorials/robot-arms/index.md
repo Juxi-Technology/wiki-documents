@@ -56,6 +56,18 @@ SO-ARM101 フォロワーアーム + AmazingHand の全ワークフロー:環境
 - [ステージ6:モデルデプロイ(Linux)](./so-arm-amazinghand/06-Model-Deployment-Linux.md)
 - [ステージ6:モデルデプロイ(Windows)](./so-arm-amazinghand/06-Model-Deployment-Windows.md)
 
+### XLeRobot チュートリアル
+
+XLeRobot 双腕移動ロボットのチュートリアル:環境構築、ファイル配置、完成品/パーツキットの組み立て。
+
+- [チュートリアル概要](./xlerobot/index.md)
+- [環境構築(macOS)](./xlerobot/01-Environment-Setup-macOS.md)
+- [環境構築(Ubuntu)](./xlerobot/01-Environment-Setup-Ubuntu.md)
+- [環境構築(Windows)](./xlerobot/01-Environment-Setup-Windows.md)
+- [XLeRobot ファイルの移動](./xlerobot/02-Move-Xlerobot-Files.md)
+- [完成品組み立て](./xlerobot/03-Assembly-Assembled-Kit.md)
+- [パーツキット組み立て](./xlerobot/04-Assembly-Parts-Kit.md)
+
 ---
 
 ## サポート

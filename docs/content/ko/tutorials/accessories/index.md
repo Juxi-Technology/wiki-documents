@@ -42,6 +42,29 @@ Jetson / 라즈베리파이 CSI 카메라, 자동 초점 카메라, JetCam / Jup
 - [JetCam 사용](./csi-camera/04-JetCam.md)
 - [IMX219(라즈베리파이)](./csi-camera/05-IMX219-RaspberryPi.md)
 
+### AI 음성 인터랙션 모듈
+
+CI1302 오프라인 음성 인터랙션 모듈 전 플랫폼 튜토리얼: 퀵 스타트, 펌웨어 플래싱, 웨이크 워드/명령어 수정, 프로토콜 매뉴얼, Arduino/Jetson/RDK/라즈베리파이/PC 통신(시리얼 + IIC).
+
+- [퀵 스타트](./ai-voice-module/Quick-Start.md)
+- [제품 자료](./ai-voice-module/Product-Info.md)
+- [펌웨어 플래싱](./ai-voice-module/Firmware-Flashing.md)
+- [웨이크 워드 및 명령어 수정](./ai-voice-module/Wake-Word-Commands-Edit.md)
+- [사용자 정의 프로토콜 항목 제작](./ai-voice-module/Custom-Protocol-Entries.md)
+- [ROS1 음성 인터랙션](./ai-voice-module/ROS1-Voice-Interaction.md)
+- [ROS2 음성 인터랙션](./ai-voice-module/ROS2-Voice-Interaction.md)
+- [시리얼 프로토콜](./ai-voice-module/Serial-Protocol.md)
+- [IIC 프로토콜](./ai-voice-module/IIC-Protocol.md)
+- [PC 통신](./ai-voice-module/PC-Communication.md)
+- [Arduino: 시리얼 통신](./ai-voice-module/Arduino-Serial-Communication.md)
+- [Arduino: IIC 통신](./ai-voice-module/Arduino-IIC-Communication.md)
+- [Jetson: 시리얼 통신](./ai-voice-module/Jetson-Serial-Communication.md)
+- [Jetson: IIC 통신](./ai-voice-module/Jetson-IIC-Communication.md)
+- [RDK: 시리얼 통신](./ai-voice-module/RDK-Serial-Communication.md)
+- [RDK: IIC 통신](./ai-voice-module/RDK-IIC-Communication.md)
+- [라즈베리파이: 시리얼 통신](./ai-voice-module/RaspberryPi-Serial-Communication.md)
+- [라즈베리파이: IIC 통신](./ai-voice-module/RaspberryPi-IIC-Communication.md)
+
 ### 기타 액세서리
 
 - [0.91 OLED 스크린 튜토리얼](./0.91-oled-screen-tutorial.md)

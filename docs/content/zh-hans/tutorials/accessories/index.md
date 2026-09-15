@@ -42,6 +42,29 @@ Jetson / 树莓派 CSI 摄像头、自动对焦摄像头以及 JetCam / Jupyter 
 - [JetCam 使用](./csi-camera/04-JetCam.md)
 - [IMX219(树莓派)教程](./csi-camera/05-IMX219-RaspberryPi.md)
 
+### AI 语音交互模块
+
+CI1302 离线语音交互模块全平台教程:快速上手、固件烧录、唤醒词/命令词修改、协议手册与 Arduino/Jetson/RDK/树莓派/PC 多主控通讯(串口 + IIC)。
+
+- [快速上手](./ai-voice-module/Quick-Start.md)
+- [产品资料](./ai-voice-module/Product-Info.md)
+- [模块固件烧录](./ai-voice-module/Firmware-Flashing.md)
+- [修改唤醒词和命令词](./ai-voice-module/Wake-Word-Commands-Edit.md)
+- [自定义协议词条制作](./ai-voice-module/Custom-Protocol-Entries.md)
+- [ROS1 语音交互](./ai-voice-module/ROS1-Voice-Interaction.md)
+- [ROS2 语音交互](./ai-voice-module/ROS2-Voice-Interaction.md)
+- [串口协议](./ai-voice-module/Serial-Protocol.md)
+- [IIC 协议](./ai-voice-module/IIC-Protocol.md)
+- [PC 通讯](./ai-voice-module/PC-Communication.md)
+- [Arduino: 串口通讯](./ai-voice-module/Arduino-Serial-Communication.md)
+- [Arduino: IIC 通讯](./ai-voice-module/Arduino-IIC-Communication.md)
+- [Jetson: 串口通讯](./ai-voice-module/Jetson-Serial-Communication.md)
+- [Jetson: IIC 通讯](./ai-voice-module/Jetson-IIC-Communication.md)
+- [RDK: 串口通讯](./ai-voice-module/RDK-Serial-Communication.md)
+- [RDK: IIC 通讯](./ai-voice-module/RDK-IIC-Communication.md)
+- [树莓派: 串口通讯](./ai-voice-module/RaspberryPi-Serial-Communication.md)
+- [树莓派: IIC 通讯](./ai-voice-module/RaspberryPi-IIC-Communication.md)
+
 ### 其他配件
 
 - [0.91 OLED 屏幕教程](./0.91-oled-screen-tutorial.md)
