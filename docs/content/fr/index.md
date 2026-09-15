@@ -1,6 +1,6 @@
 ---
 title: Juxi Technology Wiki
-description: Centre de tutoriels et de documentation Juxi Technology
+description: "Centre de tutoriels et de documentation Juxi Technology : Kit de développement SO-ARM101, Main dexterous AmazingHand, Robot mobile à deux bras XLeRobot, Module vidéo WiFi ESP32-S3, Jetson Orin NX Super, capteurs IMU/GPS et tutoriels d'apprentissage par imitation LeRobot."
 aside: false
 sidebar: false
 outline: false

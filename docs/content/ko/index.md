@@ -1,6 +1,6 @@
 ---
 title: Juxi Technology Wiki
-description: Juxi Technology 제품 튜토리얼 및 문서 센터
+description: "Juxi Technology 제품 튜토리얼 및 문서 센터: SO-ARM101 개발 키트, AmazingHand 4지 로봇 핸드, XLeRobot 양팔 이동 로봇, ESP32-S3 WiFi 영상 모듈, Jetson Orin NX Super 개발 키트, IMU/GPS 센서 및 LeRobot 모방 학습 튜토리얼."
 aside: false
 sidebar: false
 outline: false

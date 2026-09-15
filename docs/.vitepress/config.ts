@@ -54,6 +54,10 @@ const OG_LOCALE: Record<string, string> = { en: 'en_US', 'zh-CN': 'zh_CN', 'zh-H
 function langOf(relativePath: string) {
   return LANG_CODE[relativePath.split('/')[0]] || 'en'
 }
+// 各语言站点名:用于 <title> 后缀与 og:site_name。
+// 此前 <title> 后缀取全局 title('钜犀科技 Wiki'),英文/日文/德文页标题也带中文后缀,不利英文搜索
+const SITE_BRAND: Record<string, string> = { 'zh-hans': '钜犀科技 Wiki', 'zh-hant': '鉅犀科技 Wiki' }
+const brandOf = (relativePath: string) => SITE_BRAND[relativePath.split('/')[0]] || 'Juxi Technology Wiki'
 
 // 面包屑 JSON-LD:按 URL 段生成(站点根 → 各段 → 当前页),skip 首页;
 // 中间段名按当前语言映射,item 保留语言前缀(否则 zh 页面面包屑指向 en URL)
@@ -84,7 +88,7 @@ const globalHead = [
   ['link', { rel: 'icon', type: 'image/png', href: '/images/logos/logo-black.png' }],
   ['link', { rel: 'apple-touch-icon', href: '/images/logos/logo-black.png' }],
   ['meta', { property: 'og:type', content: 'website' }],
-  ['meta', { property: 'og:site_name', content: '钜犀科技 Wiki' }],
+  // og:site_name 逐页按语言注入(见 transformHead);静态 head 无法区分语言
   ['meta', { property: 'og:image', content: 'https://wiki.juxitech.com/images/logos/logo-black.png' }],
   ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
   ['meta', { name: 'robots', content: 'index, follow' }],
@@ -105,6 +109,7 @@ const globalHead = [
 const zhCN = {
   label: '简体中文',
   lang: 'zh-CN',
+  title: '钜犀科技 Wiki',
   description: '钜犀科技产品教程与文档中心',
   head: [
   ],
@@ -464,6 +469,7 @@ const zhCN = {
 const en = {
   label: 'English',
   lang: 'en',
+  title: 'Juxi Technology Wiki',
   description: 'Juxi Technology Product Tutorials and Documentation Center',
   head: [
   ],
@@ -823,6 +829,7 @@ const en = {
 const zhHK = {
   label: '繁體中文',
   lang: 'zh-HK',
+  title: '鉅犀科技 Wiki',
   description: '鉅犀科技產品教程與文檔中心',
   head: [
   ],
@@ -1248,6 +1255,7 @@ export default defineConfig({
   ja: {
     label: '日本語',
     lang: 'ja',
+    title: 'Juxi Technology Wiki',
     description: 'Juxi Technology 製品チュートリアルとドキュメントセンター',
     head: [
     ],
@@ -1570,6 +1578,7 @@ export default defineConfig({
   ko: {
     label: '한국어',
     lang: 'ko',
+    title: 'Juxi Technology Wiki',
     description: 'Juxi Technology 제품 튜토리얼 및 문서 센터',
     head: [
     ],
@@ -1892,6 +1901,7 @@ export default defineConfig({
   de: {
     label: 'Deutsch',
     lang: 'de',
+    title: 'Juxi Technology Wiki',
     description: 'Juxi Technology Produkt-Tutorials und Dokumentationszentrum',
     head: [
     ],
@@ -2214,6 +2224,7 @@ export default defineConfig({
   fr: {
     label: 'Français',
     lang: 'fr',
+    title: 'Juxi Technology Wiki',
     description: 'Centre de tutoriels et de documentation Juxi Technology',
     head: [
     ],
@@ -2536,6 +2547,7 @@ export default defineConfig({
   es: {
     label: 'Español',
     lang: 'es',
+    title: 'Juxi Technology Wiki',
     description: 'Centro de tutoriales y documentación de Juxi Technology',
     head: [
     ],
@@ -2858,6 +2870,7 @@ export default defineConfig({
   it: {
     label: 'Italiano',
     lang: 'it',
+    title: 'Juxi Technology Wiki',
     description: 'Centro tutorial e documentazione Juxi Technology',
     head: [
     ],
@@ -3180,6 +3193,7 @@ export default defineConfig({
   'pt-br': {
     label: 'Português (Brasil)',
     lang: 'pt-BR',
+    title: 'Juxi Technology Wiki',
     description: 'Central de tutoriais e documentação Juxi Technology',
     head: [
     ],
@@ -3525,6 +3539,7 @@ export default defineConfig({
   'pt-pt': {
     label: 'Português (Portugal)',
     lang: 'pt-PT',
+    title: 'Juxi Technology Wiki',
     description: 'Central de tutoriais e documentação Juxi Technology',
     head: [
     ],
@@ -3938,7 +3953,7 @@ export default defineConfig({
       // 复刻 VitePress 的 <title> 规则:frontmatter titleTemplate 优先;
       // 页面 title 与站点 title 相同(zh 首页)或缺失时不加后缀,避免 "X | X"
       const tpl = (pageData as any).frontmatter?.titleTemplate
-      const siteTitle = '钜犀科技 Wiki'
+      const siteTitle = brandOf(pageData.relativePath)
       const pgTitle = pageData.title || ''
       const ogTitle = tpl
         ? (String(tpl).includes(':title') ? String(tpl).replace(/:title/g, pgTitle)
@@ -3949,6 +3964,7 @@ export default defineConfig({
         ['meta', { property: 'og:description', content: pageData.description || 'Juxi Technology Wiki' }],
         ['meta', { property: 'og:url', content: base + pageUrlOf(pageData.relativePath) }],
         ['meta', { property: 'og:locale', content: OG_LOCALE[LANG_CODE[pageData.relativePath.split('/')[0]] || 'en'] || 'en_US' }],
+        ['meta', { property: 'og:site_name', content: brandOf(pageData.relativePath) }],
       )
     }
     if (breadcrumbLd) heads.push(['script', { type: 'application/ld+json' }, JSON.stringify(breadcrumbLd)])
