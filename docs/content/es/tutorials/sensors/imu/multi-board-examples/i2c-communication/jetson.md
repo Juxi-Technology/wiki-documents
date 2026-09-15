@@ -1,9 +1,9 @@
 ---
-title: Serie Jetson
+title: "Jetson"
 description: "Este tutorial usa la placa madre Jetson Orin NX como ejemplo."
 ---
 
-# Serie Jetson
+# Jetson
 
 ## 1. Conectar el dispositivo
 

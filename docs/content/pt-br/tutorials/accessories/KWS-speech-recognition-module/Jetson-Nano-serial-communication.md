@@ -1,9 +1,9 @@
 ---
-title: Comunicação serial Jetson Nano
+title: "Comunicação Serial Jetson Nano"
 description: "Nota: o módulo de interação por voz precisa ser gravado com o firmware de fábrica. Se o chip de voz ainda não tiver sido gravado com firmware após o recebimento, não é necessário gravá-lo."
 ---
 
-# Comunicação serial Jetson Nano
+# Comunicação Serial Jetson Nano
 
 Nota: o módulo de interação por voz precisa ser gravado com o firmware de fábrica. Se o chip de voz ainda não tiver sido gravado com firmware após o recebimento, não é necessário gravá-lo. 
 

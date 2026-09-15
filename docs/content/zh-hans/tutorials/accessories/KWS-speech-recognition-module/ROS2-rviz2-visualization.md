@@ -1,9 +1,9 @@
 ---
-title: ROS2-rviz2可视化
+title: "ROS2 rviz2 可视化"
 description: "- 操作系统：Ubuntu 22.04"
 ---
 
-# ROS2-rviz2可视化
+# ROS2 rviz2 可视化
 
 > **[ 淘宝店铺 ](https://juxitechnology.taobao.com)**
 

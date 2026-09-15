@@ -1,9 +1,9 @@
 ---
-title: Série RDK
+title: "RDK"
 description: "Ce tutoriel utilise la carte mère RDK X5 comme exemple."
 ---
 
-# Série RDK
+# RDK
 
 ## 1. Connecter le périphérique
 

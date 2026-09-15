@@ -1,10 +1,10 @@
 ---
-title: Gravação do JetPack e Configuração do Sistema
+title: "Flasheamento JetPack e Configuração do Sistema"
 description: Guia de gravação do NVIDIA Jetson JetPack — SDK Manager e imagem oficial, solução de problemas, noções básicas de sistema
 keywords: [jetson, jetpack, gravação, configuração de sistema, nvidia]
 ---
 
-# Gravação do JetPack e Configuração do Sistema
+# Flasheamento JetPack e Configuração do Sistema
 
 > Para desenvolvedores novos no NVIDIA Jetson. Os kits de desenvolvimento Jetson da Juxi Technology vêm com Ubuntu 22.04 pré-instalado — este guia é para regravar ou trocar versões do JetPack.
 

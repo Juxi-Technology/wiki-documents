@@ -1,9 +1,9 @@
 ---
-title: Tutorial de montagem do robô móvel Lekiwi
+title: "Tutorial de Montagem do Robô Móvel Lekiwi"
 description: "As posições precisas dos componentes podem ser visualizadas no CAD online Fusion360."
 ---
 
-# Tutorial de montagem do robô móvel Lekiwi
+# Tutorial de Montagem do Robô Móvel Lekiwi
 
 > **[Comprar na loja](https://www.juxitech.com/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
 

@@ -1,9 +1,9 @@
 ---
-title: 서보 SCS 통신 프로토콜
+title: "SCS 통신 프로토콜"
 description: "통신 레벨은 고속 통신에 호환되는 TTL 레벨 방식과 강한 노이즈 내성을 가진 RS485 방식을 채택. 통신은 여전히 비동기 전이중이며, 송신과 수신 신호는 비동기 처리."
 ---
 
-# 서보 SCS 통신 프로토콜
+# SCS 통신 프로토콜
 
 > **[스토어에서 구매](https://www.juxitech.com/ko/products/feetech-scs0009-serial-bus-servo)**
 

@@ -1,9 +1,9 @@
 ---
-title: RDK-Serie
+title: "RDK"
 description: "Dieses Tutorial verwendet das RDK X5-Mainboard als Beispiel."
 ---
 
-# RDK-Serie
+# RDK
 
 ## 1. Gerät anschließen
 

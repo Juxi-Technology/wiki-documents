@@ -1,9 +1,9 @@
 ---
-title: Guia de resolução de problemas da teleoperação sem fio do SO-ARM101 (versão NanoCam)
+title: "Solução de problemas de teleoperação"
 description: "Resumo das falhas comuns na teleoperação sem fio do SO-ARM101 (versão ESP32-NanoCam): sintomas, causas e soluções para problemas de gravação e porta serial, câmera, áudio, rede e micro-ROS."
 ---
 
-# Guia de resolução de problemas da teleoperação sem fio do SO-ARM101 (versão NanoCam)
+# Solução de problemas de teleoperação
 
 > **[Comprar na loja](https://www.juxitech.com/products/so-arm101-developers-kit)**
 

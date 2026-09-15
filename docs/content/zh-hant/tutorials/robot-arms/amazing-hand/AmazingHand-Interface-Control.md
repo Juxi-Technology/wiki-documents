@@ -1,9 +1,9 @@
 ---
-title: 右靈巧手-界面控制
+title: "界面控制教程"
 description: "[AmazingHandControl.zip]"
 ---
 
-# 右靈巧手-界面控制
+# 界面控制教程
 
 > **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
 

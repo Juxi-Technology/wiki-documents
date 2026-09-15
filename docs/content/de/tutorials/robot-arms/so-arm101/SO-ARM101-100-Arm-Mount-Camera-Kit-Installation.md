@@ -1,9 +1,9 @@
 ---
-title: SO-ARM100&amp;101 Armhalterung und Umgebungskamera-Kit – Montage-Tutorial
+title: "SO-ARM100&101 Armhalterung und Umgebungskamera-Kit – Montage-Tutorial"
 description: "Zum Debugging der USB-Kamera siehe das Tutorial zur USB-Kamera mit Autofokus"
 ---
 
-# SO-ARM100&amp;101 Armhalterung und Umgebungskamera-Kit – Montage-Tutorial
+# SO-ARM100&101 Armhalterung und Umgebungskamera-Kit – Montage-Tutorial
 
 Zum Debugging der USB-Kamera siehe das [Tutorial zur USB-Kamera mit Autofokus](https://juxitech.feishu.cn/docx/JXstdNbN6oiL1WxiqJrc2OJDnrf?from=from_copylink)
 

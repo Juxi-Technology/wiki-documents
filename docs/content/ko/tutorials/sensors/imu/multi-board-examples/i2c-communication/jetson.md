@@ -1,9 +1,9 @@
 ---
-title: Jetson 시리즈
+title: "Jetson"
 description: "본 튜토리얼은 Jetson Orin NX 마더보드의  이미지를 예로 듭니다."
 ---
 
-# Jetson 시리즈
+# Jetson
 
 ## 1. 장치 연결
 

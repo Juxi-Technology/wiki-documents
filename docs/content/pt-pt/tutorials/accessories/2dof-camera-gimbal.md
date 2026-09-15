@@ -1,9 +1,9 @@
 ---
-title: Gimbal de câmara 2 graus de liberdade
+title: "Gimbal de Câmara 2-DOF"
 description: "Módulo de gimbal de câmara 2-DOF da Juxi Technology com rastreamento de cores, detecção de rosto e rastreamento automático"
 ---
 
-# Gimbal de câmara 2 graus de liberdade
+# Gimbal de Câmara 2-DOF
 
 > **[Comprar na loja](https://www.juxitech.com/products/2-dof-servo-pan-tilt-unit)**
 

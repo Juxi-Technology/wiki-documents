@@ -1,9 +1,9 @@
 ---
-title: SO-ARM100&amp;101 アーム搭載ブラケットと環境カメラキット 取付チュートリアル
+title: "SO-ARM100&101 アーム搭載ブラケットと環境カメラキット 取付チュートリアル"
 description: "USB 自動接続カメラのデバッグは USB オートフォーカスカメラチュートリアルを参照してください"
 ---
 
-# SO-ARM100&amp;101 アーム搭載ブラケットと環境カメラキット 取付チュートリアル
+# SO-ARM100&101 アーム搭載ブラケットと環境カメラキット 取付チュートリアル
 
 USB 自動接続カメラのデバッグは[USB オートフォーカスカメラチュートリアル](https://juxitech.feishu.cn/docx/JXstdNbN6oiL1WxiqJrc2OJDnrf?from=from_copylink)を参照してください
 

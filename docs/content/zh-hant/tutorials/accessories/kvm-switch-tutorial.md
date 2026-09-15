@@ -1,9 +1,9 @@
 ---
-title: KVM切換器使用教程
+title: "KVM 切換器"
 description: "KVM切換器包含HUB功能、TTL串口、藍牙模塊"
 ---
 
-# KVM切換器使用教程
+# KVM 切換器
 
 > **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
 

@@ -1,9 +1,9 @@
 ---
-title: Tutorial do dispositivo de captura HDMI 4K HD
+title: "Captura HDMI 4K"
 description: "De acordo com a interface da placa-mãe, existem as três operações de fiação a seguir"
 ---
 
-# Tutorial do dispositivo de captura HDMI 4K HD
+# Captura HDMI 4K
 
 > **[Comprar na loja](https://www.juxitech.com/products/4k-hd-hdmi-capture-card)**
 

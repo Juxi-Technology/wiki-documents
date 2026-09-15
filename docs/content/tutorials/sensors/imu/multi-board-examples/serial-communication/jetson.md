@@ -1,9 +1,9 @@
 ---
-title: Jetson Series
+title: "Jetson"
 description: "This tutorial takes the Jetson Orin NX motherboard as an example."
 ---
 
-# Jetson Series
+# Jetson
 
 ## 1. Connect the device
 

@@ -1,9 +1,9 @@
 ---
-title: Raspberry Pi 5
+title: "Raspberry Pi"
 description: "Questo tutorial usa la scheda madre Raspberry Pi 5 con l'immagine ufficiale a 64 bit come esempio."
 ---
 
-# Raspberry Pi 5
+# Raspberry Pi
 
 ## 1. Collegare il dispositivo
 

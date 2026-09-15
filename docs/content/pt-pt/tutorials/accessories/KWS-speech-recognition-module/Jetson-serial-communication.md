@@ -1,9 +1,9 @@
 ---
-title: Comunicação serial Jetson
+title: "Comunicação Serial Jetson"
 description: "Nota: o módulo de interação por voz precisa ser gravado com o firmware de fábrica. Se o chip de voz ainda não tiver sido gravado com firmware após o recebimento, não é necessário gravá-lo."
 ---
 
-# Comunicação serial Jetson
+# Comunicação Serial Jetson
 
 Nota: o módulo de interação por voz precisa ser gravado com o firmware de fábrica. Se o chip de voz ainda não tiver sido gravado com firmware após o recebimento, não é necessário gravá-lo. 
 

@@ -1,9 +1,9 @@
 ---
-title: LeRobot Robot Arm Tutorial
+title: "SO-ARM101 Tutorial"
 description: "This tutorial has been updated to December 15th, and you can choose to follow the latest version  of the official documentation for operation . For th"
 ---
 
-# LeRobot Robot Arm Tutorial
+# SO-ARM101 Tutorial
 
 > **[Buy in Store](https://www.juxitech.com/products/so-arm101-developers-kit)**
 

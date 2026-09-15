@@ -1,9 +1,9 @@
 ---
-title: USB 드라이버 불필요 사운드 카드 튜토리얼
+title: "USB 무드라이버 사운드 카드"
 description: "JUXI USB 드라이버 불필요 사운드 카드 튜토리얼. 시각화 테스트 소프트웨어, 명령어 작업, 오디오 디버깅 방법 포함. 라즈베리파이, Jetson, PC 등에서 사용 가능."
 ---
 
-# USB 드라이버 불필요 사운드 카드 튜토리얼
+# USB 무드라이버 사운드 카드
 
 > **[스토어에서 구매](https://www.juxitech.com/ko/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction)**
 

@@ -1,9 +1,9 @@
 ---
-title: USB-Soundkarte ohne Treiber – Tutorial
+title: "USB-Soundkarte ohne Treiber"
 description: "JUXI USB-Soundkarte ohne Treiber: Testsoftware, Befehle und Audio-Debugging – für Raspberry Pi, Jetson, PC u. a."
 ---
 
-# USB-Soundkarte ohne Treiber – Tutorial
+# USB-Soundkarte ohne Treiber
 
 > **[Im Shop kaufen](https://www.juxitech.com/de/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction)**
 

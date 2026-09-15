@@ -1,9 +1,9 @@
 ---
-title: Tutoriel carte son USB sans pilote
+title: "Carte son USB sans pilote"
 description: "Tutoriel de la carte son USB sans pilote JUXI : logiciel de test, commandes et débogage audio – Raspberry Pi, Jetson, PC, etc."
 ---
 
-# Tutoriel carte son USB sans pilote
+# Carte son USB sans pilote
 
 > **[Acheter en boutique](https://www.juxitech.com/fr/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction)**
 

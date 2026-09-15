@@ -1,9 +1,9 @@
 ---
-title: Camera gimbal 2-DOF
+title: "Gimbal 2-DOF"
 description: "Gimbal camera Juxi Technology 2-DOF: tracking colore, rilevamento volto, tracking automatico"
 ---
 
-# Camera gimbal 2-DOF
+# Gimbal 2-DOF
 
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/2-dof-servo-pan-tilt-unit)**
 

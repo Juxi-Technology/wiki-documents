@@ -1,10 +1,10 @@
 ---
-title: ロボットアーム選定ガイド
+title: "選定ガイド"
 description: SO-ARM101 vs AmazingHand vs Lekiwi 比較と選定アドバイス
 keywords: [選定, robot arm, 比較]
 ---
 
-# ロボットアーム選定ガイド
+# 選定ガイド
 
 Juxi Technology は複数のロボットアーム製品を提供しています。用途に合ったモデルを選ぶための比較ガイドです。
 

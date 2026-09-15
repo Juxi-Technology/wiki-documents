@@ -1,9 +1,9 @@
 ---
-title: Analisi della tabella di memoria del servo SCSCL a potenziometro
+title: "Tabella di memoria del servo SCSCL a potenziometro"
 description: "Il servo utilizza il protocollo personalizzato FT-SCS. Configurazione seriale predefinita di fabbrica: baudrate predefinito 1M o 500k, comunicazione TTL a bus singolo, 8 bit di dati, nessuna parità, 1 bit di stop; baudrate configurabile 38400~1Mbps (500k), indirizzo di comunicazione predefinito (n. stazione) 1."
 ---
 
-# Analisi della tabella di memoria del servo SCSCL a potenziometro
+# Tabella di memoria del servo SCSCL a potenziometro
 
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/feetech-scs0009-serial-bus-servo)**
 

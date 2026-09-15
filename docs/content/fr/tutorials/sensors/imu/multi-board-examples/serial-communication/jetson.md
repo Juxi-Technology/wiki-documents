@@ -1,9 +1,9 @@
 ---
-title: Série Jetson
+title: "Jetson"
 description: "Ce tutoriel utilise la carte mère Jetson Orin NX comme exemple."
 ---
 
-# Série Jetson
+# Jetson
 
 ## 1. Connecter le périphérique
 

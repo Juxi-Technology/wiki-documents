@@ -1,9 +1,9 @@
 ---
-title: USB Driverless Sound Card Tutorial
+title: "USB Driver-Free Sound Card"
 description: "Juxi Technology USB driver-free sound card tutorial — visualization test software, command-line operations, and audio debugging for Raspberry Pi, Jetson, and PC."
 ---
 
-# USB Driverless Sound Card Tutorial
+# USB Driver-Free Sound Card
 
 > **[Buy in Store](https://www.juxitech.com/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction)**
 

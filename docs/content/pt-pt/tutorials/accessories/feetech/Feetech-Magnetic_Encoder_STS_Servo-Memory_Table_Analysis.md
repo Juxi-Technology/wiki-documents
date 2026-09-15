@@ -1,9 +1,9 @@
 ---
-title: Servo STS com encoder magnético - Análise da tabela de memória
+title: "Tabela de Memória do Servo STS com Encoder Magnético"
 description: "O servo utiliza o Protocolo de Comunicação Personalizado FT-SCS, com a configuração padrão da porta serial definida na fábrica. A taxa de transmissão padrão do STS"
 ---
 
-# Servo STS com encoder magnético - Análise da tabela de memória
+# Tabela de Memória do Servo STS com Encoder Magnético
 
 > **[Comprar na loja](https://www.juxitech.com/products/feetech-scs0009-serial-bus-servo)**
 

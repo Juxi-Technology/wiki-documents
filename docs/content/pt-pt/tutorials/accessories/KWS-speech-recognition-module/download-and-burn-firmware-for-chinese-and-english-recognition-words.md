@@ -1,9 +1,9 @@
 ---
-title: Download e gravação de firmware de reconhecimento de palavras em chinês e inglês
+title: "Download e Gravação de Firmware de Palavras de Ativação"
 description: "O módulo já vem gravado de fábrica com o firmware de reconhecimento de voz, e o firmware de fábrica também é fornecido nos materiais anexo"
 ---
 
-# Download e gravação de firmware de reconhecimento de palavras em chinês e inglês
+# Download e Gravação de Firmware de Palavras de Ativação
 
 > **[Comprar na loja](https://www.juxitech.com/products/ai-voice-recognition-module)**
 

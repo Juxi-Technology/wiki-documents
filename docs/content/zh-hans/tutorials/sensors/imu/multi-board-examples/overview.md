@@ -1,9 +1,9 @@
 ---
-title: 多主控通讯案例
+title: "多主控通信案例概览"
 description: "1. CH341驱动安装（以管理员身份安装）"
 ---
 
-# 多主控通讯案例
+# 多主控通信案例概览
 
 > **[ 淘宝店铺 ](https://juxitechnology.taobao.com)**
 

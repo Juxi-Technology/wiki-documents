@@ -1,9 +1,9 @@
 ---
-title: STM32 F103C8T6
+title: "STM32"
 description: "本次例程使用的是STM32F103C8T6，一臺windows電腦、杜邦線若干、IMU姿態傳感器。"
 ---
 
-# STM32 F103C8T6
+# STM32
 
 本次例程使用的是STM32F103C8T6，一臺windows電腦、杜邦線若干、IMU姿態傳感器。
 

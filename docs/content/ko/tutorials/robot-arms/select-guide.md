@@ -1,10 +1,10 @@
 ---
-title: 로봇 암 선택 가이드
+title: "선택 가이드"
 description: SO-ARM101 vs AmazingHand vs Lekiwi 비교 및 선택 조언
 keywords: [선택, robot arm, 비교]
 ---
 
-# 로봇 암 선택 가이드
+# 선택 가이드
 
 Juxi Technology는 여러 로봇 암 제품을 제공합니다. 용도에 맞는 모델을 선택하기 위한 비교 가이드입니다.
 

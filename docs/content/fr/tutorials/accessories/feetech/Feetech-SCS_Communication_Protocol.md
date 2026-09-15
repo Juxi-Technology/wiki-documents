@@ -1,9 +1,9 @@
 ---
-title: Protocole de communication SCS des servos
+title: "Protocole de communication SCS"
 description: "Le niveau de communication utilise le TTL compatible haute vitesse et le RS485 à forte immunité aux interférences ; la communication reste asynchrone duplex, l'émission et la réception sont traitées en asynchrone."
 ---
 
-# Protocole de communication SCS des servos
+# Protocole de communication SCS
 
 > **[Acheter en boutique](https://www.juxitech.com/fr/products/feetech-scs0009-serial-bus-servo)**
 

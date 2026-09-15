@@ -1,10 +1,10 @@
 ---
-title: IMU 校準指南
+title: "IMU 校準"
 description: 鉅犀科技高精度 IMU 模組校準指南——整體校準、磁力計校準、溫度校準,支持串口與 I2C 雙模式
 keywords: [imu, calibration, 校準, 磁力計, 溫度校準]
 ---
 
-# IMU 校準指南
+# IMU 校準
 
 > **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
 

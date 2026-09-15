@@ -1,9 +1,9 @@
 ---
-title: Câmera USB com foco automático
+title: "Câmera USB com Foco Automático"
 description: "Tutorial da câmera USB da Juxi Technology sem driver, grande angular de 86°, foco automático, 1080P"
 ---
 
-# Câmera USB com foco automático
+# Câmera USB com Foco Automático
 
 ## Visão geral
 

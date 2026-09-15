@@ -1,9 +1,9 @@
 ---
-title: Right AmazingHand - Interface Control
+title: "Interface Control Tutorial"
 description: "[AmazingHandControl.zip]"
 ---
 
-# Right AmazingHand - Interface Control 
+# Interface Control Tutorial
 
 > **[Buy in Store](https://www.juxitech.com/products/amazinghand)**
 

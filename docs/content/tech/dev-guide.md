@@ -1,10 +1,10 @@
 ---
-title: Dev Guide
+title: "Developer Guide"
 description: This guide introduces how to develop with Juxi Technology products.
 ---
 
 
-# Dev Guide
+# Developer Guide
 
 This guide introduces how to develop with Juxi Technology products.
 

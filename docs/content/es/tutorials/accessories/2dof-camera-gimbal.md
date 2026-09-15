@@ -1,9 +1,9 @@
 ---
-title: Cámara con cardán 2-DOF
+title: "Cardán 2-DOF"
 description: "Cardán de cámara Juxi Technology 2-DOF: seguimiento de color, detección facial, seguimiento automático"
 ---
 
-# Cámara con cardán 2-DOF
+# Cardán 2-DOF
 
 > **[Comprar en la tienda](https://www.juxitech.com/es/products/2-dof-servo-pan-tilt-unit)**
 

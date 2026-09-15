@@ -1,9 +1,9 @@
 ---
-title: 2자유도 카메라 짐벌
+title: "2자유도 짐벌"
 description: "Juxi Technology 2-DOF 카메라 짐벌: 컬러 추적, 얼굴 감지, 자동 추적 지원"
 ---
 
-# 2자유도 카메라 짐벌
+# 2자유도 짐벌
 
 > **[스토어에서 구매](https://www.juxitech.com/ko/products/2-dof-servo-pan-tilt-unit)**
 

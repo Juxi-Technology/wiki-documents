@@ -1,9 +1,9 @@
 ---
-title: Installation Tutorial for SO-ARM100&amp;101 Arm Mount Bracket and Environmental Camera Kit
+title: "Arm Mount & Camera Kit Installation"
 description: "Please refer to this tutorial for debugging the USB auto-docking cameraUSB Auto-Focus Camera Tutorial"
 ---
 
-# Installation Tutorial for SO-ARM100&amp;101 Arm Mount Bracket and Environmental Camera Kit
+# Arm Mount & Camera Kit Installation
 
 Please refer to this tutorial for debugging the USB auto-docking camera[USB Auto-Focus Camera Tutorial](https://juxitech.feishu.cn/wiki/EangwaLy2ig8oGkqHsFc83tznuc)
 

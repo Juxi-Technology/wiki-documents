@@ -1,9 +1,9 @@
 ---
-title: Servo SCSCL com potenciômetro - Análise da tabela de memória
+title: "Tabela de Memória do Servo SCSCL com Potenciômetro"
 description: "O servo utiliza o Protocolo de Comunicação Personalizado FT-SCS. A taxa de transmissão padrão do servo é 1M ou 500k, usando comunicação de barramento único TTL, com 8"
 ---
 
-# Servo SCSCL com potenciômetro - Análise da tabela de memória
+# Tabela de Memória do Servo SCSCL com Potenciômetro
 
 > **[Comprar na loja](https://www.juxitech.com/pt/products/feetech-scs0009-serial-bus-servo)**
 

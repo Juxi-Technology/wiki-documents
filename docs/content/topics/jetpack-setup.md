@@ -1,10 +1,10 @@
 ---
-title: JetPack Flashing & System Setup
+title: "JetPack Flashing & Setup"
 description: NVIDIA Jetson JetPack flashing guide — SDK Manager & official image methods, troubleshooting, system basics
 keywords: [jetson, jetpack, flashing, system setup, nvidia]
 ---
 
-# JetPack Flashing & System Setup
+# JetPack Flashing & Setup
 
 > For developers new to NVIDIA Jetson. Juxi Technology Jetson dev kits ship with Ubuntu 22.04 preinstalled — this guide is for reflashing or changing JetPack versions.
 

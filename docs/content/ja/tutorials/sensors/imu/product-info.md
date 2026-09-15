@@ -1,9 +1,9 @@
 ---
-title: IMUモジュール紹介
+title: "製品情報"
 description: "高精度IMU姿勢センサー:72MHz 32ビットプロセッサ内蔵、リアルタイム姿勢演算、最大100Hz"
 ---
 
-# IMUモジュール紹介
+# 製品情報
 
 > **[ストアで購入](https://www.juxitech.com/ja/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
 

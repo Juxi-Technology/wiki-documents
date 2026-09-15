@@ -1,10 +1,10 @@
 ---
-title: よくある質問 (FAQ)
+title: "FAQ"
 description: Juxi Technology 製品のよくある質問 — ロボットアーム、センサー、アクセサリー
 keywords: [faq, トラブルシューティング]
 ---
 
-# よくある質問 (FAQ)
+# FAQ
 
 製品カテゴリ別に高頻度の質問をまとめました。
 

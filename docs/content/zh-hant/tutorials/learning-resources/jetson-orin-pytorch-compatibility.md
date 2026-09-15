@@ -1,9 +1,9 @@
 ---
-title: Jetson Orin 上 PyTorch 不相容問題
+title: "Jetson Orin PyTorch 相容性"
 description: "安裝 jetson 版本的 pytorch"
 ---
 
-# Jetson Orin 上 PyTorch 不相容問題
+# Jetson Orin PyTorch 相容性
 
 > **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
 

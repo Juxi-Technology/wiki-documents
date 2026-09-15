@@ -1,9 +1,9 @@
 ---
-title: Tutorial di debug servomotori Feetech STS3215 &amp; SCS0009
+title: "Tutorial di debug STS3215 & SCS0009"
 description: "Software host Feetech FD https://gitee.com/ftservo"
 ---
 
-# Tutorial di debug servomotori Feetech STS3215 &amp; SCS0009
+# Tutorial di debug STS3215 & SCS0009
 
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/feetech-scs0009-serial-bus-servo)**
 

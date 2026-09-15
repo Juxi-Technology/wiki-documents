@@ -1,9 +1,9 @@
 ---
-title: Téléchargement et flashage du firmware chinois/anglais
+title: "Flashage du firmware chinois/anglais"
 description: "Le module est livré avec le firmware de reconnaissance vocale d'usine, également fourni en pièces jointes. Si vous devez recréer le firmware, suivez les étapes ci-dessous."
 ---
 
-# Téléchargement et flashage du firmware chinois/anglais
+# Flashage du firmware chinois/anglais
 
 > **[Acheter en boutique](https://www.juxitech.com/fr/products/ai-voice-recognition-module)**
 

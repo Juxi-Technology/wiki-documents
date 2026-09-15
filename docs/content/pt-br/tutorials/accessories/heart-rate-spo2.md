@@ -1,9 +1,9 @@
 ---
-title: Sensor de batimentos cardíacos e SpO2
+title: "Sensor de Frequência Cardíaca e SpO2"
 description: "Módulo sensor de batimentos cardíacos e SpO2 MAX30102 da Juxi Technology — Tutorial para Arduino / Python"
 ---
 
-# Sensor de batimentos cardíacos e SpO2
+# Sensor de Frequência Cardíaca e SpO2
 
 ## Visão geral
 

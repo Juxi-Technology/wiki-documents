@@ -1,9 +1,9 @@
 ---
-title: PyTorch Compatibility Issues on Jetson Orin
+title: "Jetson Orin PyTorch Compatibility"
 description: "Install the Jetson-specific build of PyTorch."
 ---
 
-# PyTorch Compatibility Issues on Jetson Orin
+# Jetson Orin PyTorch Compatibility
 
 > **[Buy in Store](https://www.juxitech.com/products/nvidia-jetson-orin-nx-super-developer-kit)**
 

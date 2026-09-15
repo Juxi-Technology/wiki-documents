@@ -1,9 +1,9 @@
 ---
-title: Lark Wiki
+title: "飛書文檔"
 description: "鉅犀科技教程在飛書文檔中的鏡像入口與說明"
 ---
 
-# Lark Wiki
+# 飛書文檔
 
 - [简体中文：飞书知识库](https://juxitech.feishu.cn/wiki/Akpfw3LqYiYFWxkfLJxcFS0cnAg?from=from_copylink)
 - [English：Lark Wiki](https://juxitech.feishu.cn/wiki/RhA6wg91hiFZykkcDGoc8wMCnch?from=from_copylink)

@@ -1,9 +1,9 @@
 ---
-title: Guia de resolução de problemas da teleoperação sem fios do SO-ARM101 (versão NanoCam)
+title: "Resolução de problemas de teleoperação"
 description: "Resumo das avarias comuns da teleoperação sem fios do SO-ARM101 (versão ESP32-NanoCam): sintomas, causas e soluções para problemas de gravação e porta série, câmara, áudio, rede e micro-ROS."
 ---
 
-# Guia de resolução de problemas da teleoperação sem fios do SO-ARM101 (versão NanoCam)
+# Resolução de problemas de teleoperação
 
 > **[Comprar na loja](https://www.juxitech.com/products/esp32-s3-wifi-video-module)**
 

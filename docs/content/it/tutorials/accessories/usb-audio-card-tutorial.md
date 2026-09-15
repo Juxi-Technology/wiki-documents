@@ -1,9 +1,9 @@
 ---
-title: Tutorial scheda audio USB senza driver
+title: "Scheda audio USB senza driver"
 description: "Tutorial della scheda audio USB senza driver JUXI: software di test, comandi e debug audio – Raspberry Pi, Jetson, PC, ecc."
 ---
 
-# Tutorial scheda audio USB senza driver
+# Scheda audio USB senza driver
 
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction)**
 

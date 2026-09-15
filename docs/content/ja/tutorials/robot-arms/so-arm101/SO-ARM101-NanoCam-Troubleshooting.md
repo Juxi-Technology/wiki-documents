@@ -1,9 +1,9 @@
 ---
-title: SO-ARM101 ワイヤレス遠隔操作トラブルシューティングガイド(NanoCam 版)
+title: "遠隔操作トラブルシューティング"
 description: "SO-ARM101 ワイヤレス遠隔操作(ESP32-NanoCam 版)のよくある故障をまとめたガイド:書き込みとシリアル、カメラ、オーディオ、ネットワークと micro-ROS の問題について、現象・原因・解決方法を整理します。"
 ---
 
-# SO-ARM101 ワイヤレス遠隔操作トラブルシューティングガイド(NanoCam 版)
+# 遠隔操作トラブルシューティング
 
 > **[ストアで購入](https://www.juxitech.com/ja/products/so-arm101-developers-kit)**
 

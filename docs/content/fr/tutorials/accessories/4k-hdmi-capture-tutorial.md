@@ -1,9 +1,9 @@
 ---
-title: Tutoriel carte de capture HDMI 4K
+title: "Carte de capture HDMI 4K"
 description: "Selon l'interface de la carte mère, il existe trois méthodes de câblage"
 ---
 
-# Tutoriel carte de capture HDMI 4K
+# Carte de capture HDMI 4K
 
 > **[Acheter en boutique](https://www.juxitech.com/fr/products/4k-hd-hdmi-capture-card)**
 

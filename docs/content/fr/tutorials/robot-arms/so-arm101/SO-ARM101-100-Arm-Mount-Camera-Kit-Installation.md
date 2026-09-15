@@ -1,9 +1,9 @@
 ---
-title: Support de bras et kit caméra d'environnement SO-ARM100&amp;101 – Tutoriel d'installation
+title: "Support de bras et kit caméra d'environnement SO-ARM100&101 – Tutoriel d'installation"
 description: "Pour le débogage de la caméra USB, voir le tutoriel de la caméra USB à autofocus"
 ---
 
-# Support de bras et kit caméra d'environnement SO-ARM100&amp;101 – Tutoriel d'installation
+# Support de bras et kit caméra d'environnement SO-ARM100&101 – Tutoriel d'installation
 
 Pour le débogage de la caméra USB, voir le [tutoriel de la caméra USB à autofocus](https://juxitech.feishu.cn/docx/JXstdNbN6oiL1WxiqJrc2OJDnrf?from=from_copylink)
 

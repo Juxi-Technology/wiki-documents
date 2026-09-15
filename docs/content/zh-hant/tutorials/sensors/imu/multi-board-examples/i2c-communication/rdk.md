@@ -1,9 +1,9 @@
 ---
-title: RDK系列
+title: "RDK"
 description: "本教程以RDK X5主板的？版本的鏡像爲例。"
 ---
 
-# RDK系列
+# RDK
 
 ## 1.連接設備
 

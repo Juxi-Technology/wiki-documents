@@ -1,9 +1,9 @@
 ---
-title: Présentation du module IMU
+title: "Informations produit"
 description: "Capteur d'attitude IMU haute précision : processeur 72MHz 32 bits, calcul temps réel, jusqu'à 100Hz"
 ---
 
-# Présentation du module IMU
+# Informations produit
 
 > **[Acheter en boutique](https://www.juxitech.com/fr/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
 

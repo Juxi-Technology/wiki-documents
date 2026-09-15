@@ -1,9 +1,9 @@
 ---
-title: Caméra à cardan 2-DOF
+title: "Cardan 2-DOF"
 description: "Cardan caméra Juxi Technology 2-DOF : suivi de couleur, détection visage, suivi automatique"
 ---
 
-# Caméra à cardan 2-DOF
+# Cardan 2-DOF
 
 > **[Acheter en boutique](https://www.juxitech.com/fr/products/2-dof-servo-pan-tilt-unit)**
 

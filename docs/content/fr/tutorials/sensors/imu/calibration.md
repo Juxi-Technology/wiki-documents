@@ -1,10 +1,10 @@
 ---
-title: Guide de calibration IMU
+title: "Calibration IMU"
 description: Calibration du module IMU Juxi Technology — complète/compas/température, UART et I2C
 keywords: [imu, calibration, magnétomètre]
 ---
 
-# Guide de calibration IMU
+# Calibration IMU
 
 > **[Acheter en boutique](https://www.juxitech.com/fr/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
 

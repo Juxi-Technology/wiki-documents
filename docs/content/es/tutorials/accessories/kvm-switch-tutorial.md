@@ -1,9 +1,9 @@
 ---
-title: Uso del conmutador KVM
+title: "Conmutador KVM"
 description: "Conmutador KVM: función HUB, TTL serie, módulo Bluetooth"
 ---
 
-# Uso del conmutador KVM
+# Conmutador KVM
 
 > **[Comprar en la tienda](https://www.juxitech.com/es/products/4-in-1-kvm-switch-hub-ttl-serial-bluetooth-docking-station)**
 

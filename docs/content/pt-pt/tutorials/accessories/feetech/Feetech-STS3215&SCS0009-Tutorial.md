@@ -1,9 +1,9 @@
 ---
-title: Tutorial para depuração dos servos FEETECH STS3215 &amp; SCS0009
+title: "Tutorial de Depuração STS3215 & SCS0009"
 description: "Software FD do computador host FEETECH https://gitee.com/ftservo"
 ---
 
-# Tutorial para depuração dos servos FEETECH STS3215 &amp; SCS0009
+# Tutorial de Depuração STS3215 & SCS0009
 
 > **[Comprar na loja](https://www.juxitech.com/products/feetech-scs0009-serial-bus-servo)**
 

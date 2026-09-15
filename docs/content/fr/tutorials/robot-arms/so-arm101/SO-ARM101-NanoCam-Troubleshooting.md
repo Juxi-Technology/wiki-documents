@@ -1,9 +1,9 @@
 ---
-title: Guide de dépannage de la téléopération sans fil SO-ARM101 (version NanoCam)
+title: "Dépannage de la téléopération"
 description: "Synthèse des pannes courantes de la téléopération sans fil SO-ARM101 (version ESP32-NanoCam) : flashage et port série, caméra, audio, réseau et micro-ROS — symptômes, causes et solutions."
 ---
 
-# Guide de dépannage de la téléopération sans fil SO-ARM101 (version NanoCam)
+# Dépannage de la téléopération
 
 > **[Acheter en boutique](https://www.juxitech.com/fr/products/so-arm101-developers-kit)**
 

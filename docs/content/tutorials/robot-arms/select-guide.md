@@ -1,9 +1,9 @@
 ---
-title: Robot Arm Selection Guide
+title: "Selection Guide"
 description: SO-ARM101 vs AmazingHand vs Lekiwi comparison and selection guide
 ---
 
-# Robot Arm Selection Guide
+# Selection Guide
 
 Juxi Technology offers several robot arm products for different application scenarios. This guide helps you compare and choose the right model.
 

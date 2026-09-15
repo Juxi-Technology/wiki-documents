@@ -1,9 +1,9 @@
 ---
-title: Visualização ROS2-rviz2
+title: "Visualização ROS2 RViz2"
 description: "- Sistema operacional: Ubuntu 22.04"
 ---
 
-# Visualização ROS2-rviz2
+# Visualização ROS2 RViz2
 
 > **[Comprar na loja](https://www.juxitech.com/products/ai-voice-recognition-module)**
 

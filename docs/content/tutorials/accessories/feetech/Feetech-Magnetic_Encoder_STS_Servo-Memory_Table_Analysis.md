@@ -1,9 +1,9 @@
 ---
-title: Magnetic Encoded STS Servo - Memory Table Parsing
+title: "Magnetic Encoder STS Servo Memory Table"
 description: "The servo uses the FT-SCS Custom Communication Protocol, with the default serial port configuration at the factory. The default baud rate for the STS"
 ---
 
-# Magnetic Encoded STS Servo - Memory Table Parsing
+# Magnetic Encoder STS Servo Memory Table
 
 > **[Buy in Store](https://www.juxitech.com/products/feetech-scs0009-serial-bus-servo)**
 

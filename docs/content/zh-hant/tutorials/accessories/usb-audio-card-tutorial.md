@@ -1,9 +1,9 @@
 ---
-title: USB免驅聲卡教程
+title: "USB 免驅聲卡"
 description: "鉅犀科技 USB 免驅聲卡教程，涵蓋可視化測試軟件、命令操作與音頻調試方法，適用於樹莓派、Jetson、PC 等設備。"
 ---
 
-# USB免驅聲卡教程
+# USB 免驅聲卡
 
 > **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
 

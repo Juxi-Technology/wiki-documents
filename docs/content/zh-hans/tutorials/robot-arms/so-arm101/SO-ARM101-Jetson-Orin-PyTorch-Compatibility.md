@@ -1,9 +1,9 @@
 ---
-title: Jetson Orin上Pytorch不兼容问题
+title: "SO-ARM101 Jetson Orin PyTorch 兼容性"
 description: "安装jetson版本的pytorch"
 ---
 
-# Jetson Orin上Pytorch不兼容问题
+# SO-ARM101 Jetson Orin PyTorch 兼容性
 
 可能出现的问题一：
 

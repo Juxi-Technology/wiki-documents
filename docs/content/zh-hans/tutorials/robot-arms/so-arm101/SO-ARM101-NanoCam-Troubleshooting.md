@@ -1,9 +1,9 @@
 ---
-title: SO-ARM101 无线遥操作排障指南(NanoCam 版)
+title: "无线遥操作排障指南"
 description: "汇总 SO-ARM101 无线遥操作(ESP32-NanoCam 版)的常见故障:烧录与串口、摄像头、音频、网络与 micro-ROS 问题的现象、原因与解决办法。"
 ---
 
-# SO-ARM101 无线遥操作排障指南(NanoCam 版)
+# 无线遥操作排障指南
 
 > **[ 淘宝店铺 ](https://juxitechnology.taobao.com)**
 

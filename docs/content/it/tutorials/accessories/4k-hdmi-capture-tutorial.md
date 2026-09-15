@@ -1,9 +1,9 @@
 ---
-title: Tutorial scheda di acquisizione HDMI 4K
+title: "Scheda di acquisizione HDMI 4K"
 description: "In base all'interfaccia della scheda madre, esistono tre metodi di cablaggio"
 ---
 
-# Tutorial scheda di acquisizione HDMI 4K
+# Scheda di acquisizione HDMI 4K
 
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/4k-hd-hdmi-capture-card)**
 

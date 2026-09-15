@@ -1,9 +1,9 @@
 ---
-title: Tutoriel de débogage servos Feetech STS3215 &amp; SCS0009
+title: "Tutoriel de débogage STS3215 & SCS0009"
 description: "Logiciel hôte Feetech FD https://gitee.com/ftservo"
 ---
 
-# Tutoriel de débogage servos Feetech STS3215 &amp; SCS0009
+# Tutoriel de débogage STS3215 & SCS0009
 
 > **[Acheter en boutique](https://www.juxitech.com/fr/products/feetech-scs0009-serial-bus-servo)**
 

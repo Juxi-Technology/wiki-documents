@@ -1,9 +1,9 @@
 ---
-title: Comunicação serial PC
+title: "Comunicação Serial PC"
 description: "[uartassist5.0.2.zip]"
 ---
 
-# Comunicação serial PC
+# Comunicação Serial PC
 
 ## 1. Baixar o assistente de porta serial
 

@@ -1,9 +1,9 @@
 ---
-title: LeRobot机械臂教程
+title: "SO-ARM101 使用教程"
 description: "本教程已更新至12月15日，可选择跟随最新版官方文档进行操作，官方文档具体教程可以参考本链接。若需要URDF等文件请参考本链接。9月15日旧版本请参考该链接。SO-ARM101与SO-ARM100运行代码相互兼容。"
 ---
 
-# LeRobot机械臂教程
+# SO-ARM101 使用教程
 
 > **[ 淘宝店铺 ](https://juxitechnology.taobao.com)**
 

@@ -1,9 +1,9 @@
 ---
-title: Steering Gear SCS Communication Protocol
+title: "SCS Communication Protocol"
 description: "The communication level uses the TTL level method compatible with high-speed communication and the RS485 method with strong anti-interference ability."
 ---
 
-# Steering Gear SCS Communication Protocol
+# SCS Communication Protocol
 
 > **[Buy in Store](https://www.juxitech.com/products/feetech-scs0009-serial-bus-servo)**
 

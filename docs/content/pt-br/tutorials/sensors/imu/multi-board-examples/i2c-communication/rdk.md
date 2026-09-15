@@ -1,9 +1,9 @@
 ---
-title: Série RDK
+title: "RDK"
 description: "Este tutorial usa a imagem da versão ? da placa-mãe RDK X5 como exemplo."
 ---
 
-# Série RDK
+# RDK
 
 ## Etapa 1 Conectar dispositivos
 

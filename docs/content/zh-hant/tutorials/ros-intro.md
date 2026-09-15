@@ -1,10 +1,10 @@
 ---
-title: ROS 入門教程
+title: "ROS 入門"
 description: 鉅犀科技 ROS 入門教程——ROS 1/ROS 2 環境安裝、話題/服務/launch 基礎概念,結合 IMU 與 SO-ARM101 機器人實踐
 keywords: [ros, ros2, ros1, 入門, 機器人操作系統]
 ---
 
-# ROS 入門教程
+# ROS 入門
 
 > 面向第一次接觸 ROS 的開發者。基於 Ubuntu 22.04 + ROS 2 Humble,結合鉅犀科技 IMU 模組與 SO-ARM101 機械臂實踐。
 

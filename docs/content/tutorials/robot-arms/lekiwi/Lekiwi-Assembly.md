@@ -1,9 +1,9 @@
 ---
-title: Lekiwi Mobile Robot Assembly Tutorial
+title: "Lekiwi Assembly"
 description: "Precise component positions can be visualized in Fusion360 Online CAD."
 ---
 
-# Lekiwi Mobile Robot Assembly Tutorial
+# Lekiwi Assembly
 
 > **[Buy in Store](https://www.juxitech.com/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
 

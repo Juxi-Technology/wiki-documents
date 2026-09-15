@@ -1,9 +1,9 @@
 ---
-title: RDKシリーズ
+title: "RDK"
 description: "本チュートリアルはRDK X5マザーボードを例にしています。"
 ---
 
-# RDKシリーズ
+# RDK
 
 ## 1. デバイスの接続
 

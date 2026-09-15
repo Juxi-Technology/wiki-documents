@@ -1,10 +1,10 @@
 ---
-title: Roboterarm-Auswahlhilfe
+title: "Auswahlhilfe"
 description: SO-ARM101 vs AmazingHand vs Lekiwi — Vergleich und Auswahl
 keywords: [auswahl, robot arm, vergleich]
 ---
 
-# Roboterarm-Auswahlhilfe
+# Auswahlhilfe
 
 Juxi Technology bietet mehrere Roboterarme für unterschiedliche Anwendungsszenarien. Diese Übersicht hilft Ihnen beim Vergleich und bei der Auswahl des passenden Modells.
 

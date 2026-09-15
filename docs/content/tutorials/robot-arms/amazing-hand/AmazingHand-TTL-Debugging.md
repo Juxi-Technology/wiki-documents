@@ -1,9 +1,9 @@
 ---
-title: Debugging Tutorial for AmazingHand (TTL Serial Servo)
+title: "TTL Debugging Tutorial"
 description: "First, download the \" Amazing Debugging.zip \" Compressed Packet. After decompression, you can use the \"Debugging Dexterous Hand Process with Arduio Pr"
 ---
 
-# Debugging Tutorial for AmazingHand (TTL Serial Servo)
+# TTL Debugging Tutorial
 
 > **[Buy in Store](https://www.juxitech.com/products/amazinghand)**
 

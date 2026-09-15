@@ -1,10 +1,10 @@
 ---
-title: Häufige Fragen (FAQ)
+title: "FAQ"
 description: Juxi Technology Produkt-FAQ — Roboterarme, Sensoren, Zubehör
 keywords: [faq, troubleshooting]
 ---
 
-# Häufige Fragen (FAQ)
+# FAQ
 
 Häufige Fragen nach Produktkategorie.
 

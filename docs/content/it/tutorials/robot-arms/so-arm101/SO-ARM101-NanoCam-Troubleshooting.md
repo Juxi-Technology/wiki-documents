@@ -1,9 +1,9 @@
 ---
-title: SO-ARM101 Guida alla risoluzione dei problemi della teleoperazione wireless (versione NanoCam)
+title: "Risoluzione problemi di teleoperazione"
 description: "Raccolta dei guasti più comuni della teleoperazione wireless SO-ARM101 (versione ESP32-NanoCam): sintomi, cause e soluzioni per flashing e porta seriale, fotocamera, audio, rete e micro-ROS."
 ---
 
-# SO-ARM101 Guida alla risoluzione dei problemi della teleoperazione wireless (versione NanoCam)
+# Risoluzione problemi di teleoperazione
 
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/so-arm101-developers-kit)**
 

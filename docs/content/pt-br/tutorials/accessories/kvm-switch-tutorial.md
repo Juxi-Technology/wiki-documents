@@ -1,9 +1,9 @@
 ---
-title: Tutorial de uso do switch KVM
+title: "Chaveador KVM"
 description: "O switch KVM inclui funcionalidade de HUB, porta serial TTL e módulo Bluetooth"
 ---
 
-# Tutorial de uso do switch KVM
+# Chaveador KVM
 
 > **[Comprar na loja](https://www.juxitech.com/pt/products/4-in-1-kvm-switch-hub-ttl-serial-bluetooth-docking-station)**
 

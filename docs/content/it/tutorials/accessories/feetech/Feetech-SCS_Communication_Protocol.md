@@ -1,9 +1,9 @@
 ---
-title: Protocollo di comunicazione SCS dei servo
+title: "Protocollo di comunicazione SCS"
 description: "Il livello di comunicazione usa TTL compatibile con la comunicazione ad alta velocità e RS485 con forte immunità ai disturbi; la comunicazione è asincrona full-duplex, trasmissione e ricezione sono elaborate in modo asincrono."
 ---
 
-# Protocollo di comunicazione SCS dei servo
+# Protocollo di comunicazione SCS
 
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/feetech-scs0009-serial-bus-servo)**
 

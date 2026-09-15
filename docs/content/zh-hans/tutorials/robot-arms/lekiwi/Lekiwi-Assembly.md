@@ -1,9 +1,9 @@
 ---
-title: Lekiwi移动机器人组装教程
+title: "Lekiwi 组装教程"
 description: "在Fusion360 在线 CAD中可以可视化精确的组件位置。"
 ---
 
-# Lekiwi移动机器人组装教程
+# Lekiwi 组装教程
 
 > **[ 淘宝店铺 ](https://juxitechnology.taobao.com)**
 

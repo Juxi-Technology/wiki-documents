@@ -1,9 +1,9 @@
 ---
-title: Serie RDK
+title: "RDK"
 description: "Questo tutorial usa la scheda madre RDK X5 come esempio."
 ---
 
-# Serie RDK
+# RDK
 
 ## 1. Collegare il dispositivo
 

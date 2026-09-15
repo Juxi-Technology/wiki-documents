@@ -1,9 +1,9 @@
 ---
-title: 4K HD HDMI Capture Device Tutorial
+title: "4K HDMI Capture"
 description: "According to the motherboard interface, there are the following three wiring operations"
 ---
 
-# 4K HD HDMI Capture Device Tutorial
+# 4K HDMI Capture
 
 > **[Buy in Store](https://www.juxitech.com/products/4k-hd-hdmi-capture-card)**
 

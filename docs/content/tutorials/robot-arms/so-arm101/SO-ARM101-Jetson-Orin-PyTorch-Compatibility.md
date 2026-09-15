@@ -1,9 +1,9 @@
 ---
-title: Pytorch Incompatibility Issue on Jetson Orin
+title: "SO-ARM101 Jetson Orin PyTorch Compatibility"
 description: "Possible Problem 1:"
 ---
 
-# Pytorch Incompatibility Issue on Jetson Orin 
+# SO-ARM101 Jetson Orin PyTorch Compatibility
 
 Possible Problem 1: 
 

@@ -1,9 +1,9 @@
 ---
-title: Lerobot機械臂組裝教程
+title: "SO-ARM101 組裝教程"
 description: "Pro版 主動臂使用5V6A電源適配器，從動臂使用12V5A電源適配器"
 ---
 
-# Lerobot機械臂組裝教程
+# SO-ARM101 組裝教程
 
 > **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
 

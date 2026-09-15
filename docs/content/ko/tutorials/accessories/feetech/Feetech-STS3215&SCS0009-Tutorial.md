@@ -1,9 +1,9 @@
 ---
-title: Feetech 서보 STS3215 &amp; SCS0009 디버깅 튜토리얼
+title: "STS3215 & SCS0009 디버깅 튜토리얼"
 description: "Feetech 상위 프로그램 FD 소프트웨어 https://gitee.com/ftservo"
 ---
 
-# Feetech 서보 STS3215 &amp; SCS0009 디버깅 튜토리얼
+# STS3215 & SCS0009 디버깅 튜토리얼
 
 > **[스토어에서 구매](https://www.juxitech.com/ko/products/feetech-scs0009-serial-bus-servo)**
 

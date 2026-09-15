@@ -1,9 +1,9 @@
 ---
-title: ROS2應用
+title: "ROS2 應用"
 description: "系統配置：ubuntu22.04"
 ---
 
-# ROS2應用
+# ROS2 應用
 
 > **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
 

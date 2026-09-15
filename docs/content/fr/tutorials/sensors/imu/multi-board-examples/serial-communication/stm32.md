@@ -1,9 +1,9 @@
 ---
-title: STM32 F103C8T6
+title: "STM32"
 description: "Cet exemple utilise la carte cœur STM32F103C8T6, un PC Windows, plusieurs câbles de liaison et le capteur d'attitude IMU."
 ---
 
-# STM32 F103C8T6
+# STM32
 
 Cet exemple utilise la carte cœur STM32F103C8T6, un PC Windows, plusieurs câbles de liaison et le capteur d'attitude IMU.
 

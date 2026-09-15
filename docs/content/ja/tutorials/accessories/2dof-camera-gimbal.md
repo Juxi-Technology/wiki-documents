@@ -1,9 +1,9 @@
 ---
-title: 2自由度カメラジンバル
+title: "2自由度ジンバル"
 description: "Juxi Technology 2-DOF カメラジンバル:カラートラッキング、顔検出、自動追跡対応"
 ---
 
-# 2自由度カメラジンバル
+# 2自由度ジンバル
 
 > **[ストアで購入](https://www.juxitech.com/ja/products/2-dof-servo-pan-tilt-unit)**
 

@@ -1,9 +1,9 @@
 ---
-title: Guia do usuário do robô móvel Lekiwi
+title: "Tutorial de Uso do Robô Móvel Lekiwi"
 description: "O braço ativo preto usa um adaptador de energia de 5V 6A, enquanto o braço passivo branco usa um adaptador de energia de 12V 5A"
 ---
 
-# Guia do usuário do robô móvel Lekiwi 
+# Tutorial de Uso do Robô Móvel Lekiwi
 
 > **[Comprar na loja](https://www.juxitech.com/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
 

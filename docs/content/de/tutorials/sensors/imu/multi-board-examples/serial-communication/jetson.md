@@ -1,9 +1,9 @@
 ---
-title: Jetson-Serie
+title: "Jetson"
 description: "Dieses Tutorial verwendet das Jetson Orin NX-Mainboard als Beispiel."
 ---
 
-# Jetson-Serie
+# Jetson
 
 ## 1. Gerät anschließen
 

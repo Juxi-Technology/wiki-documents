@@ -1,9 +1,9 @@
 ---
-title: Firmware für chinesische/englische Wake-Wörter herunterladen und flashen
+title: "Firmware für Wake-Wörter herunterladen und flashen"
 description: "Das Modul ist ab Werk mit der Spracherkennungs-Firmware geflasht; die Werks-Firmware liegt auch in den Anhängen vor. Wenn die Firmware neu erstellt werden muss, folgen Sie diesen Schritten."
 ---
 
-# Firmware für chinesische/englische Wake-Wörter herunterladen und flashen
+# Firmware für Wake-Wörter herunterladen und flashen
 
 > **[Im Shop kaufen](https://www.juxitech.com/de/products/ai-voice-recognition-module)**
 

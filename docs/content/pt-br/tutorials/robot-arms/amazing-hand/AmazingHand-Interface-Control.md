@@ -1,9 +1,9 @@
 ---
-title: AmazingHand Direita - Controle de Interface
+title: "Controle de Interface da Mão Robótica"
 description: "[AmazingHandControl.zip]"
 ---
 
-# AmazingHand Direita - Controle de Interface 
+# Controle de Interface da Mão Robótica
 
 > **[Comprar na loja](https://www.juxitech.com/products/amazinghand)**
 

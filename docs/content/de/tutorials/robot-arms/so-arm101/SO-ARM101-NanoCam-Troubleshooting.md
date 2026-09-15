@@ -1,9 +1,9 @@
 ---
-title: SO-ARM101 Fehlerbehebungsleitfaden für drahtlose Teleoperation (NanoCam-Version)
+title: "Teleoperation-Fehlerbehebung"
 description: "Die häufigsten Fehler bei der drahtlosen Teleoperation des SO-ARM101 (ESP32-NanoCam-Version): Symptome, Ursachen und Lösungen zu Flashen und serieller Schnittstelle, Kamera, Audio sowie Netzwerk- und micro-ROS-Problemen."
 ---
 
-# SO-ARM101 Fehlerbehebungsleitfaden für drahtlose Teleoperation (NanoCam-Version)
+# Teleoperation-Fehlerbehebung
 
 > **[Im Shop kaufen](https://www.juxitech.com/de/products/so-arm101-developers-kit)**
 

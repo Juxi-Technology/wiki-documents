@@ -1,9 +1,9 @@
 ---
-title: Guia de seleção de braços robóticos
+title: "Guia de Seleção"
 description: Comparação e guia de seleção entre SO-ARM101, AmazingHand e Lekiwi
 ---
 
-# Guia de seleção de braços robóticos
+# Guia de Seleção
 
 A Juxi Technology oferece vários braços robóticos para diferentes cenários de aplicação. Este guia ajuda você a comparar e escolher o modelo adequado.
 

@@ -1,9 +1,9 @@
 ---
-title: Tutorial de execução do exemplo oficial do AmazingHand
+title: "Tutorial do Exemplo Oficial da Mão Robótica"
 description: "Recomenda-se descarregar o pacote compactado do código deste tutorial para a demonstração do exemplo Demo, ou clonar o repositório oficial open source"
 ---
 
-# Tutorial de execução do exemplo oficial do AmazingHand
+# Tutorial do Exemplo Oficial da Mão Robótica
 
 > **[Comprar na loja](https://www.juxitech.com/products/amazinghand)**
 

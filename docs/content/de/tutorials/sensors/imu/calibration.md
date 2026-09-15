@@ -1,10 +1,10 @@
 ---
-title: IMU-Kalibrierungsanleitung
+title: "IMU-Kalibrierung"
 description: Juxi Technology IMU-Kalibrierung — Gesamt/Magnetometer/Temperatur, UART & I2C
 keywords: [imu, kalibrierung, magnetometer]
 ---
 
-# IMU-Kalibrierungsanleitung
+# IMU-Kalibrierung
 
 > **[Im Shop kaufen](https://www.juxitech.com/de/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
 

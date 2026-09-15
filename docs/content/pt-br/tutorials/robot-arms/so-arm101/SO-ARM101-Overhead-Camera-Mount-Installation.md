@@ -1,9 +1,9 @@
 ---
-title: Tutorial de instalação do suporte de câmera superior
+title: "Instalação da Câmera Superior"
 description: "Consulte este tutorial para depurar a câmera USB com acoplamento automático — Tutorial da câmera USB com foco automático"
 ---
 
-# Tutorial de instalação do suporte de câmera superior
+# Instalação da Câmera Superior
 
 > **[Comprar na loja](https://www.juxitech.com/products/overhead-camera-mount-for-so-arm100-so-arm101-realsense-compatible)**
 

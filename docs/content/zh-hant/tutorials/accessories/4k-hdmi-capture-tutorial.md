@@ -1,9 +1,9 @@
 ---
-title: 4K高清HDMI採集器教程
+title: "4K HDMI 採集器"
 description: "根據主板的接口分以下三種接線操作"
 ---
 
-# 4K高清HDMI採集器教程
+# 4K HDMI 採集器
 
 > **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
 

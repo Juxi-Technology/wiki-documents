@@ -1,9 +1,9 @@
 ---
-title: 2-DOF-Kamera-Gimbal
+title: "2-DOF-Gimbal"
 description: "Juxi Technology 2-DOF Kamera-Gimbal: Farbverfolgung, Gesichtserkennung, Auto-Tracking"
 ---
 
-# 2-DOF-Kamera-Gimbal
+# 2-DOF-Gimbal
 
 > **[Im Shop kaufen](https://www.juxitech.com/de/products/2-dof-servo-pan-tilt-unit)**
 

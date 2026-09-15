@@ -1,10 +1,10 @@
 ---
-title: Introdução à IA Incorporada (LeRobot)
+title: "Introdução à Inteligência Incorporada (LeRobot)"
 description: Introdução à IA incorporada — framework LeRobot, recolha/treino/avaliação do SO-ARM101, seleção de ACT/Diffusion/SmolVLA
 keywords: [lerobot, ia incorporada, aprendizagem por imitação, act, so-arm101]
 ---
 
-# Introdução à IA Incorporada (LeRobot)
+# Introdução à Inteligência Incorporada (LeRobot)
 
 > Para desenvolvedores a fazer robot learning pela primeira vez. Usando HuggingFace LeRobot + SO-ARM101 da Juxi Technology como exemplo: pipeline completo de **recolher → treinar → avaliar**.
 

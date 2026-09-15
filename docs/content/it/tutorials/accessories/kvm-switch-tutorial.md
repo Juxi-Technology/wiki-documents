@@ -1,9 +1,9 @@
 ---
-title: Uso dello switch KVM
+title: "Switch KVM"
 description: "Switch KVM: funzione HUB, seriale TTL, modulo Bluetooth"
 ---
 
-# Uso dello switch KVM
+# Switch KVM
 
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/4-in-1-kvm-switch-hub-ttl-serial-bluetooth-docking-station)**
 

@@ -1,10 +1,10 @@
 ---
-title: IMU キャリブレーションガイド
+title: "IMU キャリブレーション"
 description: Juxi Technology 高精度 IMU モジュールのキャリブレーション — 全体/磁力計/温度、UART と I2C 両対応
 keywords: [imu, キャリブレーション, 磁力計]
 ---
 
-# IMU キャリブレーションガイド
+# IMU キャリブレーション
 
 > **[ストアで購入](https://www.juxitech.com/ja/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
 

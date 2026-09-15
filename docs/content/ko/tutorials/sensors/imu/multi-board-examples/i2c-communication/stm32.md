@@ -1,9 +1,9 @@
 ---
-title: STM32 F103C8T6
+title: "STM32"
 description: "본 예제는 STM32F103C8T6, Windows PC 1대, 점퍼 와이어 여러 개, IMU 자세 센서를 사용합니다."
 ---
 
-# STM32 F103C8T6
+# STM32
 
 본 예제는 STM32F103C8T6, Windows PC 1대, 점퍼 와이어 여러 개, IMU 자세 센서를 사용합니다.
 

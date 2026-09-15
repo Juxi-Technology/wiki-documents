@@ -1,9 +1,9 @@
 ---
-title: Raspberry Pi 5
+title: "Raspberry Pi"
 description: "Dieses Tutorial verwendet das Raspberry Pi 5-Mainboard als Beispiel."
 ---
 
-# Raspberry Pi 5
+# Raspberry Pi
 
 ## 1. Gerät anschließen
 

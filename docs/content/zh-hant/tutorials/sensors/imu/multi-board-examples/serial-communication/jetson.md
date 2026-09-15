@@ -1,9 +1,9 @@
 ---
-title: Jetson系列
+title: "Jetson"
 description: "本教程以Jetson orin nx主板爲例。"
 ---
 
-# Jetson系列
+# Jetson
 
 ## 1.連接設備
 

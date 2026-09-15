@@ -1,9 +1,9 @@
 ---
-title: Herzfrequenz- und Pulsoximeter-Sensor
+title: "Herzfrequenz- und SpO2-Sensor"
 description: "Anleitung zum JUXI MAX30102 Herzfrequenz- und SpO2-Sensormodul (Arduino / Python)"
 ---
 
-# Herzfrequenz- und Pulsoximeter-Sensor
+# Herzfrequenz- und SpO2-Sensor
 
 ## Produktübersicht
 

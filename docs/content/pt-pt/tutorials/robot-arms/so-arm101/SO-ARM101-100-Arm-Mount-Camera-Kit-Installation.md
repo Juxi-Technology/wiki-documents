@@ -1,9 +1,9 @@
 ---
-title: Tutorial de instalação do suporte de montagem no braço SO-ARM100&amp;101 e do kit de câmara de ambiente
+title: "Instalação do Suporte de Braço e Kit de Câmara SO-ARM100&101"
 description: "Consulte este tutorial para depurar a câmara USB com acoplamento automático — Tutorial da câmara USB com foco automático"
 ---
 
-# Tutorial de instalação do suporte de montagem no braço SO-ARM100&amp;101 e do kit de câmara de ambiente
+# Instalação do Suporte de Braço e Kit de Câmara SO-ARM100&101
 
 Consulte este tutorial para depurar a câmara USB com acoplamento automático: [Tutorial da câmara USB com foco automático](https://juxitech.feishu.cn/wiki/EangwaLy2ig8oGkqHsFc83tznuc)
 

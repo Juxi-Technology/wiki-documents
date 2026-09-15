@@ -1,9 +1,9 @@
 ---
-title: RDK 시리즈
+title: "RDK"
 description: "본 튜토리얼은 RDK X5 마더보드의  이미지를 예로 듭니다."
 ---
 
-# RDK 시리즈
+# RDK
 
 ## 1. 장치 연결
 

@@ -1,9 +1,9 @@
 ---
-title: 4K 고화질 HDMI 캡처 카드 튜토리얼
+title: "4K HDMI 캡처 카드"
 description: "메인보드 인터페이스에 따라 다음 3가지 배선 방법이 있습니다"
 ---
 
-# 4K 고화질 HDMI 캡처 카드 튜토리얼
+# 4K HDMI 캡처 카드
 
 > **[스토어에서 구매](https://www.juxitech.com/ko/products/4k-hd-hdmi-capture-card)**
 

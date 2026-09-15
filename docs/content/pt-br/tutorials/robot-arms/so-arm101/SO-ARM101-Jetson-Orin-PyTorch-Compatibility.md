@@ -1,9 +1,9 @@
 ---
-title: Problema de incompatibilidade do PyTorch no Jetson Orin
+title: "Compatibilidade PyTorch no Jetson Orin"
 description: "Possível problema 1:"
 ---
 
-# Problema de incompatibilidade do PyTorch no Jetson Orin 
+# Compatibilidade PyTorch no Jetson Orin
 
 Possível problema 1: 
 

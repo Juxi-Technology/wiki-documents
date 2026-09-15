@@ -1,9 +1,9 @@
 ---
-title: IMU Module Usage Tutorial
+title: "Product Info"
 description: "Built-in high-precision IMU attitude sensor72MHz high-performance 32-bit processor, capable of real-time attitude calculation and dynamic compensation"
 ---
 
-# IMU Module Usage Tutorial
+# Product Info
 
 > **[Buy in Store](https://www.juxitech.com/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
 

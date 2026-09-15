@@ -1,9 +1,9 @@
 ---
-title: Installation Tutorial for the Top-mounted Camera Mount
+title: "Overhead Camera Mount Installation"
 description: "Please refer to this tutorial for debugging the USB auto-docking cameraUSB Auto-Focus Camera Tutorial"
 ---
 
-# Installation Tutorial for the Top-mounted Camera Mount
+# Overhead Camera Mount Installation
 
 > **[Buy in Store](https://www.juxitech.com/products/overhead-camera-mount-for-so-arm100-so-arm101-realsense-compatible)**
 

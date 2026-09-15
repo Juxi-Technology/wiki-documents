@@ -1,9 +1,9 @@
 ---
-title: Raspberry Pi 5
+title: "Raspberry Pi"
 description: "This tutorial takes the Raspberry Pi 5 motherboard and the official 64-bit version of the mirroring as an example."
 ---
 
-# Raspberry Pi 5
+# Raspberry Pi
 
 ## 1. Connect the device
 

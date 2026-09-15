@@ -1,9 +1,9 @@
 ---
-title: Supporto da braccio e kit camera ambientale SO-ARM100&amp;101 – Tutorial di installazione
+title: "Supporto da braccio e kit camera ambientale SO-ARM100&101 – Tutorial di installazione"
 description: "Per il debug della fotocamera USB, vedere il tutorial sulla fotocamera USB con autofocus"
 ---
 
-# Supporto da braccio e kit camera ambientale SO-ARM100&amp;101 – Tutorial di installazione
+# Supporto da braccio e kit camera ambientale SO-ARM100&101 – Tutorial di installazione
 
 Per il debug della fotocamera USB, vedere il [tutorial sulla fotocamera USB con autofocus](https://juxitech.feishu.cn/docx/JXstdNbN6oiL1WxiqJrc2OJDnrf?from=from_copylink)
 

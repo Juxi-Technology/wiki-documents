@@ -1,10 +1,10 @@
 ---
-title: 具身智能入門(LeRobot)
+title: "具身智能入門（LeRobot）"
 description: 具身智能入門——LeRobot 框架上手,SO-ARM101 數據採集/訓練/評估全流程,ACT/擴散策略/SmolVLA 選型
 keywords: [lerobot, 具身智能, 模仿學習, act, so-arm101, 機器人學習]
 ---
 
-# 具身智能入門(LeRobot)
+# 具身智能入門（LeRobot）
 
 > 面向第一次做「機器人學習」的開發者。以 HuggingFace LeRobot + 鉅犀科技 SO-ARM101 機械臂為例,走完**數據採集 → 訓練 → 評估**全流程。
 

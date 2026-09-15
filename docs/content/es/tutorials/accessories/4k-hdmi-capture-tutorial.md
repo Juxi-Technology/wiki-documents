@@ -1,9 +1,9 @@
 ---
-title: Tutorial de capturadora HDMI 4K
+title: "Capturadora HDMI 4K"
 description: "Según la interfaz de la placa base, hay tres formas de conexión"
 ---
 
-# Tutorial de capturadora HDMI 4K
+# Capturadora HDMI 4K
 
 > **[Comprar en la tienda](https://www.juxitech.com/es/products/4k-hd-hdmi-capture-card)**
 

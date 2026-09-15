@@ -1,10 +1,10 @@
 ---
-title: 자주 묻는 질문 (FAQ)
+title: "FAQ"
 description: Juxi Technology 제품 FAQ — 로봇 암, 센서, 액세서리
 keywords: [faq, 문제해결]
 ---
 
-# 자주 묻는 질문 (FAQ)
+# FAQ
 
 제품 카테고리별 고빈도 질문을 모았습니다.
 

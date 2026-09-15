@@ -1,9 +1,9 @@
 ---
-title: Raspberry Pi 5
+title: "Raspberry Pi"
 description: "Ce tutoriel utilise la carte mère Raspberry Pi 5 avec l'image officielle 64 bits comme exemple."
 ---
 
-# Raspberry Pi 5
+# Raspberry Pi
 
 ## 1. Connecter le périphérique
 

@@ -1,9 +1,9 @@
 ---
-title: USBドライバ不要サウンドカードチュートリアル
+title: "USB ドライバ不要サウンドカード"
 description: "JUXI USBドライバ不要サウンドカードのチュートリアル。可視化テストソフト、コマンド操作、オーディオ調整方法を網羅。Raspberry Pi、Jetson、PC などに対応。"
 ---
 
-# USBドライバ不要サウンドカードチュートリアル
+# USB ドライバ不要サウンドカード
 
 > **[ストアで購入](https://www.juxitech.com/ja/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction)**
 

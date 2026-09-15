@@ -1,9 +1,9 @@
 ---
-title: Casi di comunicazione multi-host
+title: "Panoramica dei casi multi-host"
 description: "1. Installare il driver CH341 (come amministratore)"
 ---
 
-# Casi di comunicazione multi-host
+# Panoramica dei casi multi-host
 
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
 

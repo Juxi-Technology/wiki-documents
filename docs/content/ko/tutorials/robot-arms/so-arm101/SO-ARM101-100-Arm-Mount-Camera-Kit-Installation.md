@@ -1,9 +1,9 @@
 ---
-title: SO-ARM100&amp;101 암 장착 브래킷 및 환경 카메라 키트 설치 튜토리얼
+title: "SO-ARM100&101 암 장착 브래킷 및 환경 카메라 키트 설치 튜토리얼"
 description: "USB 자동 접속 카메라 디버깅은 USB 자동 초점 카메라 튜토리얼을 참조하세요"
 ---
 
-# SO-ARM100&amp;101 암 장착 브래킷 및 환경 카메라 키트 설치 튜토리얼
+# SO-ARM100&101 암 장착 브래킷 및 환경 카메라 키트 설치 튜토리얼
 
 USB 자동 접속 카메라 디버깅은 [USB 자동 초점 카메라 튜토리얼](https://juxitech.feishu.cn/docx/JXstdNbN6oiL1WxiqJrc2OJDnrf?from=from_copylink)을 참조하세요
 

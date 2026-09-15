@@ -1,9 +1,9 @@
 ---
-title: Jetsonシリーズ
+title: "Jetson"
 description: "本チュートリアルはJetson Orin NXマザーボードを例にしています。"
 ---
 
-# Jetsonシリーズ
+# Jetson
 
 ## 1. デバイスの接続
 

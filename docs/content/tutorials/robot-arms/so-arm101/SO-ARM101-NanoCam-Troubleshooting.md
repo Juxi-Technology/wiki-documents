@@ -1,9 +1,9 @@
 ---
-title: SO-ARM101 Wireless Teleoperation Troubleshooting Guide (NanoCam Version)
+title: "Wireless Teleoperation Troubleshooting"
 description: "A roundup of common failures in the SO-ARM101 wireless teleoperation (ESP32-NanoCam version): symptoms, causes, and solutions for flashing and serial, camera, audio, and network and micro-ROS problems."
 ---
 
-# SO-ARM101 Wireless Teleoperation Troubleshooting Guide (NanoCam Version)
+# Wireless Teleoperation Troubleshooting
 
 > **[Buy in Store](https://www.juxitech.com/products/so-arm101-developers-kit)**
 

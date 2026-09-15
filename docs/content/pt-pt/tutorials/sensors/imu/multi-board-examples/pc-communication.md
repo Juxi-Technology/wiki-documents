@@ -1,9 +1,9 @@
 ---
-title: Comunicação com PC
+title: "Comunicação PC"
 description: "Observação: se a porta serial não puder ser reconhecida, instale o driver CH340"
 ---
 
-# Comunicação com PC
+# Comunicação PC
 
 **Observação: se a porta serial não puder ser reconhecida, instale o driver CH340**
 

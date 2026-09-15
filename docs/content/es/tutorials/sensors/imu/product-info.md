@@ -1,9 +1,9 @@
 ---
-title: Presentación del módulo IMU
+title: "Información del producto"
 description: "Sensor de actitud IMU de alta precisión: procesador 72MHz 32 bits, cálculo en tiempo real, hasta 100Hz"
 ---
 
-# Presentación del módulo IMU
+# Información del producto
 
 > **[Comprar en la tienda](https://www.juxitech.com/es/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
 

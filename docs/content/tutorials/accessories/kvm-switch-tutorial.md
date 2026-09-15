@@ -1,9 +1,9 @@
 ---
-title: Tutorial on Using KVM Switches
+title: "KVM Switch"
 description: "The KVM switch includes HUB functionality, TTL serial port, and Bluetooth module"
 ---
 
-# Tutorial on Using KVM Switches 
+# KVM Switch
 
 > **[Buy in Store](https://www.juxitech.com/products/4-in-1-kvm-switch-hub-ttl-serial-bluetooth-docking-station)**
 

@@ -1,9 +1,9 @@
 ---
-title: Running Tutorial for AmazingHand Official Example
+title: "Official Example Tutorial"
 description: "It is recommended to download the Compressed Packet of the code under this usage tutorial for Demo example demonstration, or clone the official open s"
 ---
 
-# Running Tutorial for AmazingHand Official Example
+# Official Example Tutorial
 
 > **[Buy in Store](https://www.juxitech.com/products/amazinghand)**
 

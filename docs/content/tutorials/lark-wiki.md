@@ -1,9 +1,9 @@
 ---
-title: Lark Wiki
+title: "Lark Docs"
 description: "Mirror entry of Juxi tutorials on Feishu docs"
 ---
 
-# Lark Wiki
+# Lark Docs
 
 - [简体中文：飞书知识库](https://juxitech.feishu.cn/wiki/Akpfw3LqYiYFWxkfLJxcFS0cnAg?from=from_copylink)
 - [English：Lark Wiki](https://juxitech.feishu.cn/wiki/RhA6wg91hiFZykkcDGoc8wMCnch?from=from_copylink)

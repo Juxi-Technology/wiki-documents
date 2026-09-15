@@ -1,9 +1,9 @@
 ---
-title: Debugging Tutorial for FEETECH Servos STS3215 &amp; SCS0009
+title: "STS3215 & SCS0009 Tutorial"
 description: "FEETECH Host Computer FD Softwarehttps://gitee.com/ftservo"
 ---
 
-# Debugging Tutorial for FEETECH Servos STS3215 &amp; SCS0009
+# STS3215 & SCS0009 Tutorial
 
 > **[Buy in Store](https://www.juxitech.com/products/feetech-scs0009-serial-bus-servo)**
 

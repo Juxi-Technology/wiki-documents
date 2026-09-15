@@ -1,9 +1,9 @@
 ---
-title: Tutorial de Uso do Módulo IMU
+title: "Informações do Produto"
 description: "Sensor de atitude IMU de alta precisão integrado, processador de 32 bits de alto desempenho de 72MHz, capaz de realizar cálculo de atitude em tempo real e compensação dinâmica"
 ---
 
-# Tutorial de Uso do Módulo IMU
+# Informações do Produto
 
 > **[Comprar na Loja](https://www.juxitech.com/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
 

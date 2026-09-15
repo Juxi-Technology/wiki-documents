@@ -1,9 +1,9 @@
 ---
-title: Feetech サーボ STS3215 &amp; SCS0009 デバッグチュートリアル
+title: "STS3215 & SCS0009 デバッグチュートリアル"
 description: "Feetech 上位機 FD ソフトウェア https://gitee.com/ftservo"
 ---
 
-# Feetech サーボ STS3215 &amp; SCS0009 デバッグチュートリアル
+# STS3215 & SCS0009 デバッグチュートリアル
 
 > **[ストアで購入](https://www.juxitech.com/ja/products/feetech-scs0009-serial-bus-servo)**
 

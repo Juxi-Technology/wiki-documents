@@ -1,9 +1,9 @@
 ---
-title: Multi-Host-Kommunikationsfälle
+title: "Multi-Host-Kommunikationsfälle Übersicht"
 description: "1. CH341-Treiber installieren (als Administrator)"
 ---
 
-# Multi-Host-Kommunikationsfälle
+# Multi-Host-Kommunikationsfälle Übersicht
 
 > **[Im Shop kaufen](https://www.juxitech.com/de/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
 

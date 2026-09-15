@@ -1,9 +1,9 @@
 ---
-title: Tutorial de tarjeta de sonido USB sin controlador
+title: "Tarjeta de sonido USB sin controlador"
 description: "Tutorial de la tarjeta de sonido USB sin controlador JUXI: software de prueba, comandos y depuración de audio – Raspberry Pi, Jetson, PC, etc."
 ---
 
-# Tutorial de tarjeta de sonido USB sin controlador
+# Tarjeta de sonido USB sin controlador
 
 > **[Comprar en la tienda](https://www.juxitech.com/es/products/usb-2-0-driver-free-sound-card-onboard-mic-speaker-for-ai-voice-interaction)**
 

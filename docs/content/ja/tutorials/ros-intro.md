@@ -1,10 +1,10 @@
 ---
-title: ROS 入門チュートリアル
+title: "ROS 入門"
 description: Juxi Technology ROS チュートリアル — ROS 2 Humble 環境構築、トピック/サービス/launch の基礎
 keywords: [ros, ros2, 入門, ロボット]
 ---
 
-# ROS 入門チュートリアル
+# ROS 入門
 
 > ROS を初めて触る開発者向け。Ubuntu 22.04 + ROS 2 Humble ベースで、Juxi Technology の IMU モジュールと SO-ARM101 アームを使ったハンズオン例を交えて解説します。
 

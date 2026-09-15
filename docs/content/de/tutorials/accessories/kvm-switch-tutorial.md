@@ -1,9 +1,9 @@
 ---
-title: KVM-Switch Anleitung
+title: "KVM-Switch"
 description: "KVM-Switch: HUB-Funktion, TTL-Serial, Bluetooth-Modul"
 ---
 
-# KVM-Switch Anleitung
+# KVM-Switch
 
 > **[Im Shop kaufen](https://www.juxitech.com/de/products/4-in-1-kvm-switch-hub-ttl-serial-bluetooth-docking-station)**
 

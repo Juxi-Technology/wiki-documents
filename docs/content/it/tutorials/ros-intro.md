@@ -1,10 +1,10 @@
 ---
-title: Tutorial di introduzione a ROS
+title: "Introduzione a ROS"
 description: Tutorial ROS Juxi Technology — installazione ROS 2 Humble, basi di topic/servizi/launch
 keywords: [ros, ros2, introduzione, robotica]
 ---
 
-# Tutorial di introduzione a ROS
+# Introduzione a ROS
 
 > Per sviluppatori alle prime armi con ROS. Basato su Ubuntu 22.04 + ROS 2 Humble, con esempi pratici che utilizzano il modulo IMU e il braccio SO-ARM101 di Juxi Technology.
 

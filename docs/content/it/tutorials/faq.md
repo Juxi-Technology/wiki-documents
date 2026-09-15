@@ -1,10 +1,10 @@
 ---
-title: Domande frequenti (FAQ)
+title: "FAQ"
 description: FAQ prodotti Juxi Technology — bracci robotici, sensori, accessori
 keywords: [faq, risoluzione problemi]
 ---
 
-# Domande frequenti (FAQ)
+# FAQ
 
 Domande frequenti per categoria di prodotto.
 

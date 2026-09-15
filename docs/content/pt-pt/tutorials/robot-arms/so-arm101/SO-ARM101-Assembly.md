@@ -1,9 +1,9 @@
 ---
-title: Tutorial de montagem do braço SO-ARM101 LeRobot
+title: "Guia de Montagem do Braço Robótico Lerobot"
 description: "O braço ativo da versão Pro usa um adaptador de energia de 5V6A, enquanto o braço passivo usa um adaptador de energia de 12V5A"
 ---
 
-# Tutorial de montagem do braço SO-ARM101 LeRobot
+# Guia de Montagem do Braço Robótico Lerobot
 
 > **[Comprar na loja](https://www.juxitech.com/products/so-arm101-developers-kit)**
 

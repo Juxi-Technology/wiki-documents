@@ -1,10 +1,10 @@
 ---
-title: Introdução à Implantação de IA de Borda
+title: "Introdução ao Deploy de IA Edge"
 description: Implantação de IA de borda no Jetson — pipeline PyTorch para TensorRT, exportação ONNX, otimização de inferência, solução de problemas
 keywords: [ia de borda, tensorrt, onnx, implantação de borda, jetson]
 ---
 
-# Introdução à Implantação de IA de Borda
+# Introdução ao Deploy de IA Edge
 
 > Para desenvolvedores levando um modelo de "treinado" para "rodando em dispositivos de borda". Usando o NVIDIA Jetson como plataforma de referência.
 

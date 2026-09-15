@@ -1,9 +1,9 @@
 ---
-title: 多主控通訊案例
+title: "多主控通信案例概覽"
 description: "1. CH341驅動安裝（以管理員身份安裝）"
 ---
 
-# 多主控通訊案例
+# 多主控通信案例概覽
 
 > **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
 

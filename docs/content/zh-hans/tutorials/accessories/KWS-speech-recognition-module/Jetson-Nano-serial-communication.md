@@ -1,9 +1,9 @@
 ---
-title: Jetson Nano串口通信
+title: "Jetson Nano 串口通信"
 description: "注意：语音交互模块需要烧录出厂固件，语音芯片到手之后没有刷过固件的则不需要"
 ---
 
-# Jetson Nano串口通信
+# Jetson Nano 串口通信
 
 注意：语音交互模块需要烧录出厂固件，语音芯片到手之后没有刷过固件的则不需要 
 

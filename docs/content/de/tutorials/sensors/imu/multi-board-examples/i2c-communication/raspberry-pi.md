@@ -1,9 +1,9 @@
 ---
-title: Raspberry Pi 5
+title: "Raspberry Pi"
 description: "Dieses Tutorial verwendet das Raspberry Pi 5-Mainboard mit dem offiziellen 64-Bit-Image als Beispiel."
 ---
 
-# Raspberry Pi 5
+# Raspberry Pi
 
 ## 1. Gerät anschließen
 

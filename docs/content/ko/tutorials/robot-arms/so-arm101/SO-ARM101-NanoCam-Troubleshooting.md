@@ -1,9 +1,9 @@
 ---
-title: SO-ARM101 무선 텔레오퍼레이션 문제 해결 가이드(NanoCam 버전)
+title: "원격조작 문제 해결"
 description: "SO-ARM101 무선 텔레오퍼레이션(ESP32-NanoCam 버전)의 흔한 고장을 정리했습니다: 플래싱과 시리얼, 카메라, 오디오, 네트워크와 micro-ROS 문제의 증상, 원인과 해결 방법."
 ---
 
-# SO-ARM101 무선 텔레오퍼레이션 문제 해결 가이드(NanoCam 버전)
+# 원격조작 문제 해결
 
 > **[스토어에서 구매](https://www.juxitech.com/ko/products/so-arm101-developers-kit)**
 

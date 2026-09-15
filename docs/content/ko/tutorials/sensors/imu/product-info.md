@@ -1,9 +1,9 @@
 ---
-title: IMU 모듈 소개
+title: "제품 정보"
 description: "고정밀 IMU 자세 센서: 72MHz 32비트 프로세서, 실시간 자세 연산, 최대 100Hz"
 ---
 
-# IMU 모듈 소개
+# 제품 정보
 
 > **[스토어에서 구매](https://www.juxitech.com/ko/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
 

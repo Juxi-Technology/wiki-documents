@@ -1,9 +1,9 @@
 ---
-title: Tutorial de braço robótico LeRobot
+title: "Tutorial do Braço Robótico LeRobot"
 description: "Este tutorial foi atualizado até 15 de dezembro. Você pode optar por seguir a versão mais recente da documentação oficial. Para o tutorial específico na documentação oficial, consulte o link correspondente. Se precisar de arquivos como URDF, consulte o link correspondente"
 ---
 
-# Tutorial de braço robótico LeRobot
+# Tutorial do Braço Robótico LeRobot
 
 > **[Comprar na loja](https://www.juxitech.com/products/so-arm101-developers-kit)**
 

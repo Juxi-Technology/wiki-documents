@@ -1,10 +1,10 @@
 ---
-title: Primeiros Passos
+title: "Guia Rápido"
 description: "Bem-vindo aos produtos da Juxi Technology! Este tutorial ajudará você a começar rapidamente."
 ---
 
 
-# Primeiros Passos
+# Guia Rápido
 
 Bem-vindo aos produtos da Juxi Technology! Este tutorial ajudará você a começar rapidamente.
 

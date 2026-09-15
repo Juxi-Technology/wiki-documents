@@ -1,9 +1,9 @@
 ---
-title: Caso de comunicação multi-mestre
+title: "Visão Geral dos Casos Multi-Host"
 description: "1. Instalação do driver CH341 (Instalar como Administrador)"
 ---
 
-# Caso de comunicação multi-mestre
+# Visão Geral dos Casos Multi-Host
 
 > **[Comprar na Loja](https://www.juxitech.com/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
 

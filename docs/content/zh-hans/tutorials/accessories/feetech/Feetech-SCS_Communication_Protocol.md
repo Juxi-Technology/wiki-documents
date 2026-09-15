@@ -1,9 +1,9 @@
 ---
-title: 舵机SCS通信协议
+title: "SCS 通信协议"
 description: "通讯电平采用兼容高速通信的TTL电平方式与具有较强抗干扰能力的RS485方式，通讯仍是采用异步双工，发送与接收信号是异步处理。"
 ---
 
-# 舵机SCS通信协议
+# SCS 通信协议
 
 > **[ 淘宝店铺 ](https://juxitechnology.taobao.com)**
 

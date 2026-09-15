@@ -1,9 +1,9 @@
 ---
-title: IMU-Modul Übersicht
+title: "Produktinformation"
 description: "Hochpräzises IMU-Attitude-Sensor: 72MHz 32-Bit-Prozessor, Echtzeit-Attitude, bis 100Hz"
 ---
 
-# IMU-Modul Übersicht
+# Produktinformation
 
 > **[Im Shop kaufen](https://www.juxitech.com/de/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
 

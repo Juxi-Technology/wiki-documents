@@ -1,9 +1,9 @@
 ---
-title: Soporte de brazo y kit de cámara ambiental SO-ARM100&amp;101 – Tutorial de instalación
+title: "Soporte de brazo y kit de cámara ambiental SO-ARM100&101 – Tutorial de instalación"
 description: "Para depurar la cámara USB, consulte el tutorial de la cámara USB con enfoque automático"
 ---
 
-# Soporte de brazo y kit de cámara ambiental SO-ARM100&amp;101 – Tutorial de instalación
+# Soporte de brazo y kit de cámara ambiental SO-ARM100&101 – Tutorial de instalación
 
 Para depurar la cámara USB, consulte el [tutorial de la cámara USB con enfoque automático](https://juxitech.feishu.cn/docx/JXstdNbN6oiL1WxiqJrc2OJDnrf?from=from_copylink)
 

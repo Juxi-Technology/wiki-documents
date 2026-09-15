@@ -1,9 +1,9 @@
 ---
-title: Descarga y grabación de firmware chino/inglés
+title: "Grabación de firmware chino/inglés"
 description: "El módulo viene de fábrica con el firmware de reconocimiento de voz; también se proporciona en los adjuntos. Si necesita recrear el firmware, siga los pasos siguientes."
 ---
 
-# Descarga y grabación de firmware chino/inglés
+# Grabación de firmware chino/inglés
 
 > **[Comprar en la tienda](https://www.juxitech.com/es/products/ai-voice-recognition-module)**
 
