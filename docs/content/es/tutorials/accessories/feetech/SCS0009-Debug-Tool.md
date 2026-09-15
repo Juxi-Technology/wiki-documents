@@ -276,9 +276,11 @@ system_profiler SPUSBDataType | grep -A5 -i "serial\|CH340\|CP210"
 
 1. Conecte la placa de control de los servos mediante el adaptador USB a serie y alimente los servos.
 2. Abra la GUI y seleccione el puerto en el área «🔌 Conexión por puerto serie» (o haga clic en `🔄` para actualizar); ajuste la tasa de baudios (por defecto 1M).
-3. Haga clic en **Conectar**; el estado muestra `🟢 已连接`.
+3. Haga clic en **Conectar**; el estado muestra `🟢 Conectado`.
 
 > Si aparece un aviso de puerto serie ocupado, confirme que ningún otro programa (monitor de puerto serie o una instancia anterior de la herramienta sin cerrar) esté ocupando dicho puerto.
+
+> Si solo hay un puerto serie, la herramienta ajusta automáticamente el segundo puerto a «desactivado».
 
 ### 2. Escanear servos
 
@@ -299,7 +301,7 @@ Para el significado de cada registro, consulte [Análisis de la tabla de memoria
 1. En la tabla de parámetros, haga clic en la fila del registro que desea modificar → se vinculan automáticamente «dirección de escritura», «longitud» y «valor».
 2. Modifique el nuevo valor en el campo «valor» y haga clic en **✏️ Escribir**.
 3. El programa ejecuta: desbloquear EEPROM → escribir → volver a bloquear.
-4. Al escribir aparece una ventana emergente: en caso de éxito, un aviso verde «✅ 已成功写入»; en caso de fallo, un aviso rojo «❌ 写入失败» (con el motivo).
+4. Al escribir aparece una ventana emergente: en caso de éxito, un aviso verde «✅ Escritura correcta»; en caso de fallo, un aviso rojo «❌ Fallo de escritura» (con el motivo).
 
 ### 5. Modificar el ID del servo
 
@@ -312,8 +314,8 @@ Para el significado de cada registro, consulte [Análisis de la tabla de memoria
 ### 6. Control de posición
 
 1. En el área «🎯 Control de posición», **arrastre el deslizador** para ajustar la posición objetivo (0–1023, resolución de 10 bits del potenciómetro); el campo numérico se sincroniza; también puede introducir el valor directamente en el campo numérico y el deslizador le seguirá.
-2. Haga clic en **▶ Mover**; el servo comienza a moverse y la barra de estado muestra «移动中...».
-3. Al completarse el movimiento se muestra «✅ 已移动完成，请关闭力矩»; haga clic en **⏹ Desactivar par**.
+2. Haga clic en **▶ Mover**; el servo comienza a moverse y la barra de estado muestra «En movimiento...».
+3. Al completarse el movimiento se muestra «✅ Movimiento completado, desactive el par»; haga clic en **⏹ Desactivar par**.
 
 ### 7. Modificar la tasa de baudios / restaurar los valores de fábrica
 
@@ -360,7 +362,7 @@ En el área «📁 Parámetros xdat (solo guarda EEPROM)»:
 | En macOS, el nombre de puerto con `tty.` se queda bloqueado | Se usó un nombre de dispositivo bloqueante | Use dispositivos con el prefijo `cu.` |
 | macOS no encuentra el dispositivo | El dispositivo no se reconoce | `ls /dev/cu.*`; desconecte y vuelva a conectar; compruebe con `system_profiler SPUSBDataType` |
 | Problemas de permisos en macOS | Control de acceso del sistema | Normalmente no se requieren permisos adicionales; si aparece el control de acceso, permita el acceso al terminal |
-| La interfaz en chino aparece en blanco | Faltan fuentes chinas | En Linux, instale `fonts-noto-cjk`; si hay problemas en macOS, instale Noto Sans CJK |
+| La interfaz en chino aparece en blanco | Faltan fuentes chinas | En Windows, Microsoft YaHei de forma predeterminada (instale una fuente china si hay problemas); en Linux, instale `fonts-noto-cjk`; en macOS, PingFang de forma predeterminada (instale Noto Sans CJK si hay problemas) |
 | Los emoji se muestran como cuadros | Faltan fuentes de emoji | Instale `fonts-noto-color-emoji` |
 | Falla la instalación con pip | El Python del sistema está protegido (externally managed environment) | Use un entorno virtual; o `pip install --break-system-packages -r requirements.txt` |
 | El programa no se inicia | Faltan dependencias o la versión no coincide | Confirme la versión con `python3 --version`; compruebe las dependencias con `pip list` |

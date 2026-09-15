@@ -276,9 +276,11 @@ system_profiler SPUSBDataType | grep -A5 -i "serial\|CH340\|CP210"
 
 1. Connect the servo control board via a USB-to-serial adapter and power the servos.
 2. Open the GUI and select the port in the "🔌 Serial Connection" section (or click `🔄` to refresh), then set the baud rate (default 1M).
-3. Click **Connect**; the status shows `🟢 已连接`.
+3. Click **Connect**; the status shows `🟢 Connected`.
 
 > If the port is reported as occupied, make sure no other program (serial monitor, a previously launched tool that did not exit) is using that port.
+
+> If there is only one serial port, the tool automatically sets the second port to "Disabled".
 
 ### 2. Scan Servos
 
@@ -299,7 +301,7 @@ For the meaning of each register, see [Potentiometer SCSCL Servo - Memory Table 
 1. Click the row of the register to modify in the parameter table → the "Write Address", "Length", and "Value" fields are linked automatically.
 2. Change the new value in the "Value" input box and click **✏️ Write**.
 3. The program performs: unlock EEPROM → write → re-lock.
-4. Write result popup: on success, a green "✅ 已成功写入" prompt; on failure, a red "❌ 写入失败" prompt (including the reason).
+4. Write result popup: on success, a green "✅ Written successfully" prompt; on failure, a red "❌ Write failed" prompt (including the reason).
 
 ### 5. Change the Servo ID
 
@@ -312,8 +314,8 @@ For the meaning of each register, see [Potentiometer SCSCL Servo - Memory Table 
 ### 6. Position Control
 
 1. In the "🎯 Position Control" section, **drag the slider** to adjust the target position (0–1023, 10-bit potentiometer resolution); the value box updates in sync. You can also type directly in the value box and the slider follows.
-2. Click **▶ Move**; the servo starts moving and the status bar shows "移动中...".
-3. When the movement completes, "✅ 已移动完成，请关闭力矩" is shown; click **⏹ Torque OFF**.
+2. Click **▶ Move**; the servo starts moving and the status bar shows "⏳ moving...".
+3. When the movement completes, "✅ move complete, please turn off the torque" is shown; click **⏹ Torque OFF**.
 
 ### 7. Change Baud Rate / Factory Reset
 
@@ -360,7 +362,7 @@ In the "📁 xdat Parameters (EEPROM only)" section:
 | Serial port name with `tty.` hangs on macOS | A blocking device name was used | Switch to a `cu.`-prefixed device |
 | Device not found on macOS | Device not recognized | `ls /dev/cu.*`; unplug and replug; inspect with `system_profiler SPUSBDataType` |
 | macOS permission issues | System access control | Usually no extra permissions are needed; if an access prompt appears, allow the terminal to access |
-| Blank Chinese UI | Missing Chinese fonts | Install `fonts-noto-cjk` on Linux; install Noto Sans CJK on macOS if the issue occurs |
+| Blank Chinese UI | Missing Chinese fonts | Windows uses Microsoft YaHei by default (install a Chinese font if the issue occurs); install `fonts-noto-cjk` on Linux; macOS uses PingFang by default (install Noto Sans CJK if the issue occurs) |
 | Emoji shown as squares | Missing emoji font | Install `fonts-noto-color-emoji` |
 | pip installation fails | System Python is protected (externally managed environment) | Use a virtual environment; or `pip install --break-system-packages -r requirements.txt` |
 | Program fails to start | Missing dependencies or version mismatch | Check the version with `python3 --version`; inspect dependencies with `pip list` |

@@ -382,6 +382,9 @@ python -m src.tools.lerobot_calibrate
 # LeRobot 风格校准（指定串口）
 python -m src.tools.lerobot_calibrate /dev/ttyACM0
 
+# LeRobot 风格校准（指定串口，macOS）
+python -m src.tools.lerobot_calibrate /dev/cu.usbserial-0001
+
 # 双端口同步遥控
 python -m src.tools.servo_remote_control
 ```
@@ -417,7 +420,7 @@ python -m src.tools.servo_remote_control
 | Sous macOS, le port `tty.` se bloque | Nom de périphérique bloquant utilisé | Utilisez un périphérique avec le préfixe `cu.` |
 | Périphérique introuvable sous macOS | Périphérique non reconnu | `ls /dev/cu.*` ; rebranchez le câble ; vérifiez avec `system_profiler SPUSBDataType` |
 | Problème de permissions sous macOS | Contrôle d'accès du système | Aucune autorisation supplémentaire n'est généralement requise ; si une demande d'accès apparaît, autorisez l'accès au terminal |
-| Interface en chinois vide | Polices chinoises manquantes | Sous Linux, installez `fonts-noto-cjk` ; sous macOS, installez Noto Sans CJK en cas d'anomalie |
+| Interface en chinois vide | Polices chinoises manquantes | Sous Windows, Microsoft YaHei par défaut (installez une police chinoise en cas d'anomalie) ; sous Linux, installez `fonts-noto-cjk` ; sous macOS, PingFang par défaut (installez Noto Sans CJK en cas d'anomalie) |
 | Emojis affichés en carrés | Police emoji manquante | Installez `fonts-noto-color-emoji` |
 | Échec de l'installation via pip | Python système protégé (externally managed environment) | Utilisez un environnement virtuel ; ou `pip install --break-system-packages -r requirements.txt` |
 | Le programme ne démarre pas | Dépendances manquantes ou versions incompatibles | Confirmez la version avec `python3 --version` ; vérifiez les dépendances avec `pip list` |

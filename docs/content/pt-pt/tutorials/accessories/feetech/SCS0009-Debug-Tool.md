@@ -276,9 +276,11 @@ system_profiler SPUSBDataType | grep -A5 -i "serial\|CH340\|CP210"
 
 1. Ligue a placa de controlo dos servos através de um adaptador USB-série e alimente os servos.
 2. Abra a GUI e, na área «🔌 Ligação da porta série», selecione a porta (ou clique em `🔄` para atualizar) e defina a taxa de baud (predefinição 1M).
-3. Clique em **Ligar**; o estado mostra `🟢 已连接`.
+3. Clique em **Ligar**; o estado mostra `🟢 Ligado`.
 
 > Se aparecer um aviso de porta série ocupada, confirme que nenhum outro programa (monitor de porta série, uma instância anterior da ferramenta ainda aberta) está a usar essa porta.
+
+> Se houver apenas uma porta série, a ferramenta define automaticamente a segunda porta como «desativada».
 
 ### 2. Varredura de servos
 
@@ -299,7 +301,7 @@ O significado de cada registo pode ser consultado em [Análise da tabela de mem�
 1. Na tabela de parâmetros, clique na linha do registo a alterar → «Endereço de escrita», «Comprimento» e «Valor» são preenchidos automaticamente.
 2. Introduza o novo valor no campo «Valor» e clique em **✏️ Escrever**.
 3. O programa executa: desbloquear a EEPROM → escrever → voltar a bloquear.
-4. Janela de resultado da escrita: em caso de sucesso aparece um aviso verde «✅ 已成功写入»; em caso de falha, um aviso vermelho «❌ 写入失败» (com a causa).
+4. Janela de resultado da escrita: em caso de sucesso aparece um aviso verde «✅ Escrita bem-sucedida»; em caso de falha, um aviso vermelho «❌ Falha na escrita» (com a causa).
 
 ### 5. Alterar o ID do servo
 
@@ -312,8 +314,8 @@ O significado de cada registo pode ser consultado em [Análise da tabela de mem�
 ### 6. Controlo de posição
 
 1. Na área «🎯 Controlo de posição», **arraste o cursor deslizante** para ajustar a posição alvo (0–1023, resolução de 10 bits do potenciómetro); o campo numérico é atualizado em simultâneo; também pode introduzir diretamente o valor no campo numérico, com o cursor deslizante a acompanhar.
-2. Clique em **▶ Mover**; o servo começa a mover-se e a barra de estado mostra «移动中...».
-3. Após o movimento, aparece «✅ 已移动完成，请关闭力矩»; clique em **⏹ Desligar torque**.
+2. Clique em **▶ Mover**; o servo começa a mover-se e a barra de estado mostra «Em movimento...».
+3. Após o movimento, aparece «✅ Movimento concluído, desligue o torque»; clique em **⏹ Desligar torque**.
 
 ### 7. Alterar a taxa de baud / restaurar predefinições de fábrica
 
@@ -360,7 +362,7 @@ Na área «📁 Parâmetros xdat (apenas guarda a EEPROM)»:
 | macOS: porta com `tty.` fica presa | Foi usado um nome de dispositivo bloqueante | Use o dispositivo com o prefixo `cu.` |
 | macOS: dispositivo não encontrado | Dispositivo não reconhecido | `ls /dev/cu.*`; volte a ligar; verifique com `system_profiler SPUSBDataType` |
 | macOS: problemas de permissões | Controlo de acesso do sistema | Em geral não são necessárias permissões extra; se aparecer o controlo de acesso, permita o acesso ao terminal |
-| Interface em chinês em branco | Falta de fontes chinesas | No Linux, instale `fonts-noto-cjk`; no macOS, em caso de anomalia, instale Noto Sans CJK |
+| Interface em chinês em branco | Falta de fontes chinesas | No Windows, Microsoft YaHei por predefinição (instale um tipo de letra chinês em caso de anomalia); no Linux, instale `fonts-noto-cjk`; no macOS, PingFang por predefinição (em caso de anomalia, instale Noto Sans CJK) |
 | Emojis aparecem como quadrados | Falta de fonte de emoji | Instale `fonts-noto-color-emoji` |
 | Falha na instalação com pip | Python do sistema protegido (externally managed environment) | Use um ambiente virtual; ou `pip install --break-system-packages -r requirements.txt` |
 | O programa não inicia | Dependências em falta ou versões incompatíveis | Confirme a versão com `python3 --version`; verifique as dependências com `pip list` |

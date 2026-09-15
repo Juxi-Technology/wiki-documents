@@ -276,9 +276,11 @@ system_profiler SPUSBDataType | grep -A5 -i "serial\|CH340\|CP210"
 
 1. Conecte a placa de controle dos servos através de um adaptador USB-serial e alimente os servos.
 2. Abra a GUI, selecione a porta na área "🔌 Conexão serial" (ou clique em `🔄` para atualizar) e defina a taxa de baud (padrão 1M).
-3. Clique em **Conectar**; o status exibe `🟢 已连接`.
+3. Clique em **Conectar**; o status exibe `🟢 Conectado`.
 
 > Se aparecer o aviso de porta serial ocupada, confirme que nenhum outro programa (monitor de porta serial, instância anterior da ferramenta não encerrada) está usando essa porta.
+
+> Se houver apenas uma porta serial, a ferramenta define a segunda porta automaticamente como "desativada".
 
 ### 2. Escanear servos
 
@@ -360,7 +362,7 @@ Na área "📁 Parâmetros xdat (salva apenas a EEPROM)":
 | Porta serial com `tty.` trava no macOS | Nome de dispositivo bloqueante em uso | Use dispositivos com prefixo `cu.` |
 | Dispositivo não encontrado no macOS | Dispositivo não reconhecido | `ls /dev/cu.*`; reconecte o cabo; verifique com `system_profiler SPUSBDataType` |
 | Problemas de permissão no macOS | Controle de acesso do sistema | Geralmente não requer permissões extras; se aparecer o controle de acesso, permita o acesso ao terminal |
-| Interface em chinês em branco | Falta de fontes chinesas | No Linux, instale `fonts-noto-cjk`; no macOS, instale Noto Sans CJK em caso de anomalia |
+| Interface em chinês em branco | Falta de fontes chinesas | No Windows, Microsoft YaHei por padrão (instale uma fonte chinesa em caso de anomalia); no Linux, instale `fonts-noto-cjk`; no macOS, PingFang por padrão (instale Noto Sans CJK em caso de anomalia) |
 | Emojis exibidos como quadrados | Falta de fonte de emoji | Instale `fonts-noto-color-emoji` |
 | Falha na instalação do pip | Python do sistema protegido (externally managed environment) | Use um ambiente virtual; ou `pip install --break-system-packages -r requirements.txt` |
 | O programa não inicia | Dependências ausentes ou versão incompatível | Confirme a versão com `python3 --version`; verifique as dependências com `pip list` |

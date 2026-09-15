@@ -274,7 +274,7 @@ export SOARM_PYTHON="$(command -v python)"   # ambiente lerobot_so101
 
 O script faz, por ordem:
 
-1. Verifica a rede (o SSID tem de coincidir com a configuração), a porta série do braço líder e a existência dos ficheiros de calibração;
+1. Verifica a rede (o SSID tem de coincidir com `EXPECTED_WIFI_SSID`), a porta série do braço líder e a existência dos ficheiros de calibração;
 2. Inicia o micro-ROS Agent (se não estiver a correr, o log fica em `logs/micro_ros_agent.log`);
 3. Aguarda que o `/joint_states` do braço seguidor apareça (timeout de 15 s);
 4. Movimento do braço líder → seguimento do braço seguidor, frequência de comandos de 30 Hz, **`--mapping-mode absolute` (mapeamento absoluto)**.

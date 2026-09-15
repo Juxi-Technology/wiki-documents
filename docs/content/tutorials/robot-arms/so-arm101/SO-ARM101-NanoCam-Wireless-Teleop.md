@@ -274,7 +274,7 @@ export SOARM_PYTHON="$(command -v python)"   # lerobot_so101 environment
 
 The script does the following, in order:
 
-1. Check the network (the SSID must match the setting), the leader-arm serial port, and that the calibration files exist;
+1. Check the network (the SSID must match `EXPECTED_WIFI_SSID`), the leader-arm serial port, and that the calibration files exist;
 2. Start the micro-ROS Agent (if not already running; logs go to `logs/micro_ros_agent.log`);
 3. Wait for the follower's `/joint_states` to come online (15s timeout);
 4. Leader-arm motion → follower follows, 30Hz command rate, **`--mapping-mode absolute`**.

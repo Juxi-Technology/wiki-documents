@@ -52,12 +52,12 @@ Il programma principale ha un layout a pannello singolo (FT debugger); se l'alte
 ```
 
 - **Barra superiore**: titolo dell'applicazione, pulsante di cambio lingua.
-- **🔌 串口连接** (Connessione seriale): selezione di porta e baudrate, connessione/disconnessione.
-- **🎯 舵机** (Servo): scansione, selezione del servo, lettura di parametri/stato.
-- **📋 参数表** (Tabella dei parametri): 44 registri in 5 colonne (Indirizzo/Registro/Valore/Area di memoria/Lettura-Scrittura); la selezione aggiorna automaticamente l'indirizzo di scrittura.
-- **🎯 位置控制** (Controllo della posizione): posizione/velocità target; al termine del movimento la barra di stato suggerisce di disattivare la coppia.
-- **🔧 波特率/恢复出厂** (Baudrate/Ripristino di fabbrica): modifica del baudrate (rollback in caso di errore), ripristino delle impostazioni di fabbrica.
-- **📁 xdat 参数（仅保存 EEPROM）** (Parametri xdat, solo salvataggio EEPROM): salvataggio dei parametri del servo attuale, apertura del backup, ripristino.
+- **🔌 Connessione seriale**: selezione di porta e baudrate, connessione/disconnessione.
+- **🎯 Servo**: scansione, selezione del servo, lettura di parametri/stato.
+- **📋 Tabella dei parametri**: 44 registri in 5 colonne (Indirizzo/Registro/Valore/Area di memoria/Lettura-Scrittura); la selezione aggiorna automaticamente l'indirizzo di scrittura.
+- **🎯 Controllo della posizione**: posizione/velocità target; al termine del movimento la barra di stato suggerisce di disattivare la coppia.
+- **🔧 Baudrate/Ripristino di fabbrica**: modifica del baudrate (rollback in caso di errore), ripristino delle impostazioni di fabbrica.
+- **📁 Parametri xdat (solo salvataggio EEPROM)**: salvataggio dei parametri del servo attuale, apertura del backup, ripristino.
 
 ## Installazione e avvio
 
@@ -102,7 +102,7 @@ python -m src.gui.factory_calibration_tool
 
 Se si vede `[OK] 环境检查通过，可以运行项目`, l'ambiente è corretto.
 
-4. Nel Gestione dispositivi (`Win+X` → Gestione dispositivi), nella voce «端口 (COM 和 LPT)» confermare il numero di porta:
+4. Nel Gestione dispositivi (`Win+X` → Gestione dispositivi), nella voce «Porte (COM e LPT)» confermare il numero di porta:
 
 ```
 端口 (COM 和 LPT)
@@ -266,7 +266,7 @@ system_profiler SPUSBDataType | grep -A5 -i "serial\|CH340\|CP210"
 - in generale è sufficiente che `ls /dev/cu.*` mostri il dispositivo.
 
 5. Suggerimenti d'uso:
-   - **Il nome della porta seriale cambia**: dopo inserimenti/rimozioni su porte USB diverse il nome `cu.*` può cambiare; basta selezionarlo ogni volta nell'area «🔌 串口连接» all'avvio.
+   - **Il nome della porta seriale cambia**: dopo inserimenti/rimozioni su porte USB diverse il nome `cu.*` può cambiare; basta selezionarlo ogni volta nell'area «🔌 Connessione seriale» all'avvio.
    - **Risparmio energetico**: macOS può andare in sospensione e far cadere la connessione seriale; durante l'uso mantenere il risveglio o aumentare il tempo di sospensione.
    - **Permessi di privacy**: al primo avvio, se viene richiesto di «accedere a un disco rimovibile», fare clic su Consenti.
 
@@ -275,20 +275,22 @@ system_profiler SPUSBDataType | grep -A5 -i "serial\|CH340\|CP210"
 ### 1. Connessione e riconoscimento dei servo
 
 1. Collegare la scheda di controllo dei servo tramite l'adattatore USB-seriale e alimentare i servo.
-2. Aprire la GUI, nell'area «🔌 串口连接» selezionare la porta (o fare clic su `🔄` per aggiornare) e impostare il baudrate (default 1M).
-3. Fare clic su **连接**; lo stato mostra `🟢 已连接`.
+2. Aprire la GUI, nell'area «🔌 Connessione seriale» selezionare la porta (o fare clic su `🔄` per aggiornare) e impostare il baudrate (default 1M).
+3. Fare clic su **Connetti**; lo stato mostra `🟢 Connesso`.
 
 > Se viene segnalato che la porta seriale è occupata, verificare che nessun altro programma (monitor seriale, tool precedente non chiuso) stia occupando quella porta.
 
+> Se è disponibile una sola porta seriale, lo strumento imposta automaticamente la seconda porta su «disattivata».
+
 ### 2. Scansione dei servo
 
-1. Fare clic su **🔍 扫描舵机** per rilevare i servo online nell'intervallo di ID 1–254.
+1. Fare clic su **🔍 Scansione servo** per rilevare i servo online nell'intervallo di ID 1–254.
 2. I risultati della scansione vengono mostrati in tempo reale nell'elenco dei servo (con il modello).
-3. Facendo clic su una riga dell'elenco dei servo, questa viene inserita automaticamente nel menu a tendina «舵机».
+3. Facendo clic su una riga dell'elenco dei servo, questa viene inserita automaticamente nel menu a tendina «Servo».
 
 ### 3. Lettura dei parametri
 
-1. Dopo aver selezionato il servo, fare clic su **📖 读取参数** per leggere uno per uno tutti i 44 registri.
+1. Dopo aver selezionato il servo, fare clic su **📖 Leggi parametri** per leggere uno per uno tutti i 44 registri.
 2. La tabella dei parametri mostra 5 colonne (Indirizzo/Registro/Valore/Area di memoria/Lettura-Scrittura); EPROM / SRAM / DEFAULT sono distinti da colori diversi.
 3. L'area del log mostra il risultato della lettura di ogni registro e la causa degli errori.
 
@@ -297,37 +299,37 @@ Per il significato di ciascun registro fare riferimento a [Analisi della tabella
 ### 4. Modifica dei parametri / scrittura
 
 1. Nella tabella dei parametri fare clic sulla riga del registro da modificare → vengono aggiornati automaticamente «Indirizzo di scrittura», «Lunghezza» e «Valore».
-2. Nel campo «Valore» inserire il nuovo valore e fare clic su **✏️ 写入**.
+2. Nel campo «Valore» inserire il nuovo valore e fare clic su **✏️ Scrivi**.
 3. Il programma esegue: sblocco dell'EEPROM → scrittura → nuovo blocco.
-4. Finestra di esito della scrittura: in caso di successo appare un avviso verde «✅ 已成功写入», in caso di errore un avviso rosso «❌ 写入失败» (con la causa).
+4. Finestra di esito della scrittura: in caso di successo appare un avviso verde «✅ Scrittura riuscita», in caso di errore un avviso rosso «❌ Scrittura fallita» (con la causa).
 
 ### 5. Modifica dell'ID del servo
 
-1. Nella tabella dei parametri individuare la riga «舵机 ID» (indirizzo 0x05) e selezionarla.
-2. Modificare «Valore» con il nuovo ID e fare clic su **✏️ 写入**.
+1. Nella tabella dei parametri individuare la riga «ID del servo» (indirizzo 0x05) e selezionarla.
+2. Modificare «Valore» con il nuovo ID e fare clic su **✏️ Scrivi**.
 3. Il programma esegue: sblocco → scrittura all'indirizzo 5 → nuovo blocco.
 
 > ⚠️ Prima di modificare l'ID assicurarsi che sul bus ci sia solo questo servo, per evitare conflitti di ID.
 
 ### 6. Controllo della posizione
 
-1. Nell'area «🎯 位置控制», **trascinare lo slider** per regolare la posizione target (0–1023, risoluzione a 10 bit del potenziometro); il campo numerico si aggiorna in modo sincronizzato; è anche possibile digitare direttamente nel campo numerico e lo slider segue in modo sincronizzato.
-2. Fare clic su **▶ 移动**; il servo inizia a muoversi e la barra di stato mostra «移动中...».
-3. Al termine del movimento appare «✅ 已移动完成，请关闭力矩»; fare clic su **⏹ 力矩关**.
+1. Nell'area «🎯 Controllo della posizione», **trascinare lo slider** per regolare la posizione target (0–1023, risoluzione a 10 bit del potenziometro); il campo numerico si aggiorna in modo sincronizzato; è anche possibile digitare direttamente nel campo numerico e lo slider segue in modo sincronizzato.
+2. Fare clic su **▶ Muovi**; il servo inizia a muoversi e la barra di stato mostra «In movimento...».
+3. Al termine del movimento appare «✅ Movimento completato, disattivare la coppia»; fare clic su **⏹ Disattiva coppia**.
 
 ### 7. Modifica del baudrate / ripristino delle impostazioni di fabbrica
 
-- **Modifica del baudrate**: nell'area «🔧 波特率/恢复出厂» selezionare il nuovo baudrate (38400 – 1000000 bps) e fare clic su **🔧 修改波特率**. Dopo la scrittura il tool cambia automaticamente il baudrate della porta seriale e verifica con un ping; in caso di errore esegue il rollback automatico.
-- **Ripristino delle impostazioni di fabbrica**: fare clic su **🔄 恢复出厂**; il servo torna ai valori predefiniti di fabbrica (ID=1, baudrate=1000000); dopo occorre rieseguire la scansione.
+- **Modifica del baudrate**: nell'area «🔧 Baudrate/Ripristino di fabbrica» selezionare il nuovo baudrate (38400 – 1000000 bps) e fare clic su **🔧 Modifica baudrate**. Dopo la scrittura il tool cambia automaticamente il baudrate della porta seriale e verifica con un ping; in caso di errore esegue il rollback automatico.
+- **Ripristino delle impostazioni di fabbrica**: fare clic su **🔄 Ripristino di fabbrica**; il servo torna ai valori predefiniti di fabbrica (ID=1, baudrate=1000000); dopo occorre rieseguire la scansione.
 
 ### 8. Backup e ripristino dei parametri xdat
 
-Nell'area «📁 xdat 参数（仅保存 EEPROM）»:
+Nell'area «📁 Parametri xdat (solo salvataggio EEPROM)»:
 
-1. **💾 保存当前舵机**: salva i parametri EEPROM del servo attualmente selezionato in un file xdat (backup).
+1. **💾 Salva servo attuale**: salva i parametri EEPROM del servo attualmente selezionato in un file xdat (backup).
 2. Dopo aver modificato liberamente i parametri del servo, per ripristinare:
-3. **📂 打开 xdat**: carica il file di backup.
-4. **📤 恢复参数到舵机**: riscrive il backup nell'EEPROM del servo attuale.
+3. **📂 Apri xdat**: carica il file di backup.
+4. **📤 Ripristina parametri sul servo**: riscrive il backup nell'EEPROM del servo attuale.
 
 ## Avvertenze
 
@@ -338,7 +340,7 @@ Nell'area «📁 xdat 参数（仅保存 EEPROM）»:
 5. **Denominazione delle porte seriali su macOS**: usare `/dev/cu.*` (non bloccante) e non `/dev/tty.*` (bloccante, può bloccarsi); vedi la sottosezione «macOS» sopra.
 6. **Hot-plug**: dopo aver rimosso l'USB il programma tenta la riconnessione automatica; dopo averlo reinserito fare clic su `🔄` per aggiornare l'elenco delle porte.
 7. **Protezione da sovratemperatura / sovratensione**: il programma monitora tensione e temperatura (allarme se temperatura > 60°C). Se il servo si surriscalda a lungo, fermarsi e far raffreddare.
-8. **La scrittura dei parametri è irreversibile**: dopo la scrittura sull'EEPROM il valore originale viene sovrascritto e non è possibile annullare. Si consiglia di fare prima un backup con «xdat 保存当前舵机» e poi modificare.
+8. **La scrittura dei parametri è irreversibile**: dopo la scrittura sull'EEPROM il valore originale viene sovrascritto e non è possibile annullare. Si consiglia di fare prima un backup con «xdat – Salva servo attuale» e poi modificare.
 9. **Rischio nella modifica dell'ID**: in caso di errore di scrittura o di verifica il programma segnala un errore, ma in casi estremi il servo può «perdere il contatto». In tal caso si può provare il «ripristino delle impostazioni di fabbrica» (dopo il reset l'ID torna a 1).
 10. **Problemi di codifica**: se nella console di Windows gli emoji appaiono come caratteri illeggibili, impostare `PYTHONIOENCODING=utf-8` e riavviare lo strumento da riga di comando. Su Linux / macOS con UTF-8 nativo di solito non si presenta.
 
@@ -360,7 +362,7 @@ Nell'area «📁 xdat 参数（仅保存 EEPROM）»:
 | In macOS il nome della porta con `tty.` si blocca | È stato usato il nome bloccante | Usare il dispositivo con prefisso `cu.` |
 | In macOS il dispositivo non si trova | Dispositivo non riconosciuto | `ls /dev/cu.*`; reinserire l'USB; usare `system_profiler SPUSBDataType` |
 | Problemi di permessi in macOS | Controllo di accesso di sistema | Di norma non servono permessi aggiuntivi; se appare il controllo di accesso, consentire l'accesso al terminale |
-| Interfaccia cinese vuota | Font cinesi mancanti | Installare `fonts-noto-cjk` su Linux; installare Noto Sans CJK se macOS presenta anomalie |
+| Interfaccia cinese vuota | Font cinesi mancanti | Su Windows, Microsoft YaHei per impostazione predefinita (installare un font cinese in caso di anomalie); installare `fonts-noto-cjk` su Linux; su macOS, PingFang per impostazione predefinita (installare Noto Sans CJK in caso di anomalie) |
 | Gli emoji appaiono come quadrati | Font emoji mancante | Installare `fonts-noto-color-emoji` |
 | Installazione pip non riuscita | Python di sistema protetto (externally managed environment) | Usare un ambiente virtuale; oppure `pip install --break-system-packages -r requirements.txt` |
 | Il programma non si avvia | Dipendenze mancanti o versione non corrispondente | Verificare la versione con `python3 --version`; controllare le dipendenze con `pip list` |

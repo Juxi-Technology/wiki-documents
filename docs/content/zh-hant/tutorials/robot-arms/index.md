@@ -25,7 +25,7 @@ description: "鉅犀科技機械臂系列教程首頁——SO-ARM101、AmazingHa
 
 ### AmazingHand
 
-開源仿生冷巧手，提供高精度的多指操作能力。
+開源仿生靈巧手，提供高精度的多指操作能力。
 
 - [AmazingHand 接口控制](./amazing-hand/AmazingHand-Interface-Control.md)
 - [AmazingHand 官方示例](./amazing-hand/AmazingHand-Official-Example.md)

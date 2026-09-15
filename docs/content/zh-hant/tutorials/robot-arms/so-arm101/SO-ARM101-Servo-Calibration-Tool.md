@@ -382,6 +382,9 @@ python -m src.tools.lerobot_calibrate
 # LeRobot 风格校准（指定串口）
 python -m src.tools.lerobot_calibrate /dev/ttyACM0
 
+# LeRobot 风格校准（指定串口，macOS）
+python -m src.tools.lerobot_calibrate /dev/cu.usbserial-0001
+
 # 双端口同步遥控
 python -m src.tools.servo_remote_control
 ```
@@ -417,7 +420,7 @@ python -m src.tools.servo_remote_control
 | macOS 串口名帶 `tty.` 卡住 | 使用了阻塞式設備名 | 改用 `cu.` 前綴設備 |
 | macOS 找不到設備 | 設備未識別 | `ls /dev/cu.*`；插拔後重插；用 `system_profiler SPUSBDataType` 查看 |
 | macOS 權限問題 | 系統訪問控制 | 一般無需額外權限；若彈出訪問控制，允許終端訪問 |
-| 中文界面空白 | 缺少中文字體 | Linux 安裝 `fonts-noto-cjk`；macOS 異常時安裝 Noto Sans CJK |
+| 中文界面空白 | 缺少中文字體 | Windows 默認微軟雅黑（異常時安裝中文字體）；Linux 安裝 `fonts-noto-cjk`；macOS 默認 PingFang（異常時安裝 Noto Sans CJK） |
 | emoji 顯示方塊 | 缺少 emoji 字體 | 安裝 `fonts-noto-color-emoji` |
 | pip 安裝失敗 | 系統 Python 受保護（externally managed environment） | 使用虛擬環境；或 `pip install --break-system-packages -r requirements.txt` |
 | 程序無法啟動 | 依賴缺失或版本不符 | `python3 --version` 確認版本；`pip list` 檢查依賴 |

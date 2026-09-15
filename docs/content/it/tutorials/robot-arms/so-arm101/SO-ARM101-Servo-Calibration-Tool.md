@@ -52,9 +52,9 @@ Il programma principale comprende tre schede:
 ```
 
 - **Barra superiore**: titolo dell'applicazione, menu a tendina per la selezione delle porte seriali, pulsante di aggiornamento, pulsante di teleoperazione, pulsante di cambio lingua.
-- **🦾 Tab1 舵机标定** (Tab1 Calibrazione servo): operazioni rapide dei pannelli sinistro e destro (calibrazione mediana, test della posizione mediana, disattivazione dei motori) e stato in tempo reale.
-- **🎚️ Tab2 单舵机控制** (Tab2 Controllo singolo servo): per ogni servo online, slider per mettere a punto la posizione e interruttore di coppia.
-- **🔬 Tab3 FT 调试器** (Tab3 FT debugger): connessione seriale, scansione, lettura/scrittura dei parametri (56 registri), controllo della posizione, baudrate/ripristino di fabbrica, backup/ripristino dei parametri xdat.
+- **🦾 Tab1 Calibrazione servo**: operazioni rapide dei pannelli sinistro e destro (calibrazione mediana, test della posizione mediana, disattivazione dei motori) e stato in tempo reale.
+- **🎚️ Tab2 Controllo singolo servo**: per ogni servo online, slider per mettere a punto la posizione e interruttore di coppia.
+- **🔬 Tab3 FT debugger**: connessione seriale, scansione, lettura/scrittura dei parametri (56 registri), controllo della posizione, baudrate/ripristino di fabbrica, backup/ripristino dei parametri xdat.
 
 ## Installazione e avvio
 
@@ -97,7 +97,7 @@ python -m src.gui.factory_calibration_tool
 
 Se si vede `[OK] 环境检查通过，可以运行项目`, l'ambiente è corretto.
 
-4. Nel Gestione dispositivi (`Win+X` → Gestione dispositivi), nella voce «端口 (COM 和 LPT)» confermare il numero di porta:
+4. Nel Gestione dispositivi (`Win+X` → Gestione dispositivi), nella voce «Porte (COM e LPT)» confermare il numero di porta:
 
 ```
 端口 (COM 和 LPT)
@@ -277,65 +277,65 @@ system_profiler SPUSBDataType | grep -A5 -i "serial\|CH340\|CP210"
 
 > Prima della calibrazione, posizionare fisicamente il braccio robotico in modo che ogni giunto si trovi nella «posizione zero / mediana» desiderata.
 
-1. Fare clic sul pulsante **串口X中位校准** del pannello.
+1. Fare clic sul pulsante **Calibrazione mediana porta X** del pannello.
 2. Il programma disattiva prima i servo e chiede di regolarli manualmente alla posizione mediana desiderata.
 3. Dopo la conferma, il programma esegue per ogni servo: sblocco dell'EEPROM → scrittura del comando di calibrazione (valore 128 all'indirizzo 40) → nuovo blocco dell'EEPROM.
 4. Dopo la calibrazione si può verificare con il «test della posizione mediana»: se i servo restano in posizione (spostamento minimo) la calibrazione è riuscita.
 
 ### 3. Test della posizione mediana
 
-1. Fare clic su **串口X中位测试**.
+1. Fare clic su **Test posizione mediana porta X**.
 2. Il programma attiva la coppia e porta tutti i servo a 2048.
 3. Se i servo non si muovono quasi dalla posizione attuale, la calibrazione è corretta; se si spostano molto, il valore di calibrazione non è affidabile e occorre ricalibrare.
 
 ### 4. Disattivazione dei motori (regolazione manuale)
 
-- Fare clic su **串口X失能电机** per disattivare la coppia di tutti i servo di quella porta e poterli ruotare liberamente a mano.
-- Il singolo servo può essere attivato/disattivato singolarmente nella pagina **单舵机控制** tramite l'interruttore di coppia sotto lo slider.
+- Fare clic su **Disattivazione motori porta X** per disattivare la coppia di tutti i servo di quella porta e poterli ruotare liberamente a mano.
+- Il singolo servo può essere attivato/disattivato singolarmente nella pagina **Controllo singolo servo** tramite l'interruttore di coppia sotto lo slider.
 
 ### 5. Controllo del singolo servo (Tab2)
 
-1. Nella pagina **🎚️ 单舵机控制**, ogni servo online ha uno slider di posizione e un interruttore di coppia.
+1. Nella pagina **🎚️ Controllo singolo servo**, ogni servo online ha uno slider di posizione e un interruttore di coppia.
 2. **Trascinare lo slider → al rilascio**, il servo si muove alla posizione target.
 3. L'interruttore di coppia sotto lo slider può attivare/disattivare singolarmente la coppia di quel servo.
 
 ### 6. FT debugger (lettura/scrittura dei parametri e controllo della posizione)
 
-Nella pagina **🔬 FT 调试器**:
+Nella pagina **🔬 FT debugger**:
 
-1. **串口连接**: selezionare porta e baudrate (default 1M); dopo la connessione **扫描舵机** rileva i servo online.
-2. **读取参数**: legge tutti i registri (EEPROM + SRAM).
-3. **参数表**: mostra in 5 colonne tutti i 56 registri; facendo clic su una riga si aggiorna automaticamente l'«Indirizzo di scrittura».
-4. **位置控制**: impostare posizione/velocità target ed eseguire; al termine del movimento viene suggerito di disattivare la coppia.
+1. **Connessione seriale**: selezionare porta e baudrate (default 1M); dopo la connessione **Scansione servo** rileva i servo online.
+2. **Lettura parametri**: legge tutti i registri (EEPROM + SRAM).
+3. **Tabella parametri**: mostra in 5 colonne tutti i 56 registri; facendo clic su una riga si aggiorna automaticamente l'«Indirizzo di scrittura».
+4. **Controllo della posizione**: impostare posizione/velocità target ed eseguire; al termine del movimento viene suggerito di disattivare la coppia.
 5. La modifica del baudrate, il ripristino di fabbrica e il backup/ripristino dei parametri xdat sono descritti nelle sezioni seguenti.
 
 ### 7. Modifica dell'ID del servo
 
-1. Entrare nella pagina **🔬 FT 调试器**, connettere la porta seriale e scansionare i servo.
-2. Selezionare il servo desiderato, nella tabella dei parametri modificare il valore di «舵机 ID» (indirizzo 0x05) e fare clic su scrivi.
+1. Entrare nella pagina **🔬 FT debugger**, connettere la porta seriale e scansionare i servo.
+2. Selezionare il servo desiderato, nella tabella dei parametri modificare il valore di «ID del servo» (indirizzo 0x05) e fare clic su scrivi.
 3. Il programma esegue: sblocco → scrittura all'indirizzo 5 → verifica del nuovo ID → nuovo blocco.
 
 > ⚠️ Prima di modificare l'ID assicurarsi che sul bus ci sia solo questo servo, per evitare conflitti di ID.
 
 ### 8. Modifica del baudrate / ripristino delle impostazioni di fabbrica
 
-- **Modifica del baudrate**: nella sezione «波特率 / 恢复出厂» della pagina FT debugger, selezionare il nuovo baudrate (38400 – 1000000 bps) e applicare la modifica. Dopo la scrittura il tool cambia automaticamente il baudrate della porta seriale e verifica con un ping; in caso di errore esegue il rollback automatico.
+- **Modifica del baudrate**: nella sezione «Baudrate / Ripristino di fabbrica» della pagina FT debugger, selezionare il nuovo baudrate (38400 – 1000000 bps) e applicare la modifica. Dopo la scrittura il tool cambia automaticamente il baudrate della porta seriale e verifica con un ping; in caso di errore esegue il rollback automatico.
 - **Ripristino delle impostazioni di fabbrica**: il servo torna ai valori predefiniti di fabbrica (ID=1, baudrate=1000000); dopo occorre rieseguire la scansione.
 
 ### 9. Backup e ripristino dei parametri xdat
 
-Nell'area «xdat 参数（仅保存 EEPROM）» della pagina FT debugger:
+Nell'area «Parametri xdat (solo salvataggio EEPROM)» della pagina FT debugger:
 
-1. **💾 保存当前舵机**: salva i parametri EEPROM del servo attualmente selezionato in un file xdat (backup).
+1. **💾 Salva servo attuale**: salva i parametri EEPROM del servo attualmente selezionato in un file xdat (backup).
 2. Dopo aver modificato liberamente i parametri del servo, per ripristinare:
-3. **📂 打开 xdat**: carica il file di backup.
-4. **📤 恢复参数到舵机**: riscrive il backup nell'EEPROM del servo attuale.
+3. **📂 Apri xdat**: carica il file di backup.
+4. **📤 Ripristina parametri sul servo**: riscrive il backup nell'EEPROM del servo attuale.
 
 ### 10. Teleoperazione sincronizzata a doppia porta
 
 > ⚠️ **Direzione: la porta seriale 1 controlla la porta seriale 2**. La porta seriale 1 (master) legge solo gli angoli dei servo; la porta seriale 2 (slave) viene controllata in modo sincronizzato.
 
-1. Nella barra superiore fare clic su **🎮 遥控** (la porta seriale 1 legge gli angoli → la porta seriale 2 controlla in modo sincronizzato i servo con lo stesso ID).
+1. Nella barra superiore fare clic su **🎮 Teleoperazione** (la porta seriale 1 legge gli angoli → la porta seriale 2 controlla in modo sincronizzato i servo con lo stesso ID).
 2. Gli ID dei servo delle due porte devono coincidere; vengono sincronizzati solo i servo presenti in entrambe.
 3. Fare nuovamente clic sullo stesso pulsante per fermare; poi i thread di scansione dei pannelli sinistro e destro riprendono automaticamente.
 
@@ -382,6 +382,9 @@ python -m src.tools.lerobot_calibrate
 # LeRobot 风格校准（指定串口）
 python -m src.tools.lerobot_calibrate /dev/ttyACM0
 
+# LeRobot 风格校准（指定串口，macOS）
+python -m src.tools.lerobot_calibrate /dev/cu.usbserial-0001
+
 # 双端口同步遥控
 python -m src.tools.servo_remote_control
 ```
@@ -417,7 +420,7 @@ python -m src.tools.servo_remote_control
 | In macOS il nome della porta con `tty.` si blocca | È stato usato il nome bloccante | Usare il dispositivo con prefisso `cu.` |
 | In macOS il dispositivo non si trova | Dispositivo non riconosciuto | `ls /dev/cu.*`; reinserire l'USB; usare `system_profiler SPUSBDataType` |
 | Problemi di permessi in macOS | Controllo di accesso di sistema | Di norma non servono permessi aggiuntivi; se appare il controllo di accesso, consentire l'accesso al terminale |
-| Interfaccia cinese vuota | Font cinesi mancanti | Installare `fonts-noto-cjk` su Linux; installare Noto Sans CJK se macOS presenta anomalie |
+| Interfaccia cinese vuota | Font cinesi mancanti | Su Windows, Microsoft YaHei per impostazione predefinita (installare un font cinese in caso di anomalie); installare `fonts-noto-cjk` su Linux; su macOS, PingFang per impostazione predefinita (installare Noto Sans CJK in caso di anomalie) |
 | Gli emoji appaiono come quadrati | Font emoji mancante | Installare `fonts-noto-color-emoji` |
 | Installazione pip non riuscita | Python di sistema protetto (externally managed environment) | Usare un ambiente virtuale; oppure `pip install --break-system-packages -r requirements.txt` |
 | Il programma non si avvia | Dipendenze mancanti o versione non corrispondente | Verificare la versione con `python3 --version`; controllare le dipendenze con `pip list` |

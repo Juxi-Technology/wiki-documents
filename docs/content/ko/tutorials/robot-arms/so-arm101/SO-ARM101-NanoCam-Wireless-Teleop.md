@@ -274,7 +274,7 @@ export SOARM_PYTHON="$(command -v python)"   # lerobot_so101 환경
 
 스크립트는 순서대로 다음을 수행합니다:
 
-1. 네트워크(SSID가 설정과 일치해야 함), 리더 암 시리얼 포트, 캘리브레이션 파일 존재 확인;
+1. 네트워크(SSID가 `EXPECTED_WIFI_SSID`와 일치해야 함), 리더 암 시리얼 포트, 캘리브레이션 파일 존재 확인;
 2. micro-ROS Agent 시작(실행 중이 아니면, 로그는 `logs/micro_ros_agent.log`);
 3. 팔로워 암 `/joint_states` 온라인 대기(15초 타임아웃);
 4. 리더 암 동작 → 팔로워 암 추종, 30Hz 명령 주기, **`--mapping-mode absolute`(절대 매핑)**.

@@ -274,7 +274,7 @@ export SOARM_PYTHON="$(command -v python)"   # lerobot_so101 环境
 
 スクリプトは次の順に処理します:
 
-1. ネットワーク(SSID が設定と一致していること)、リーダーアームのシリアルポート、キャリブレーションファイルの存在を確認;
+1. ネットワーク(SSID が `EXPECTED_WIFI_SSID` と一致していること)、リーダーアームのシリアルポート、キャリブレーションファイルの存在を確認;
 2. micro-ROS Agent を起動(未起動の場合。ログは `logs/micro_ros_agent.log`);
 3. フォロワーアームの `/joint_states` がオンラインになるのを待機(15s タイムアウト);
 4. リーダーアームの動作 → フォロワーアームが追従、コマンド周波数 30Hz、**`--mapping-mode absolute`(絶対マッピング)**。

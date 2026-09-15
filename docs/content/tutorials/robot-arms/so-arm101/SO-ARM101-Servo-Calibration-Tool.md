@@ -382,6 +382,9 @@ python -m src.tools.lerobot_calibrate
 # LeRobot 风格校准（指定串口）
 python -m src.tools.lerobot_calibrate /dev/ttyACM0
 
+# LeRobot 风格校准（指定串口，macOS）
+python -m src.tools.lerobot_calibrate /dev/cu.usbserial-0001
+
 # 双端口同步遥控
 python -m src.tools.servo_remote_control
 ```
@@ -417,7 +420,7 @@ python -m src.tools.servo_remote_control
 | Serial port name with `tty.` hangs on macOS | A blocking device name was used | Switch to a `cu.`-prefixed device |
 | Device not found on macOS | Device not recognized | `ls /dev/cu.*`; unplug and replug; inspect with `system_profiler SPUSBDataType` |
 | macOS permission issues | System access control | Usually no extra permissions are needed; if an access prompt appears, allow the terminal to access |
-| Blank Chinese UI | Missing Chinese fonts | Install `fonts-noto-cjk` on Linux; install Noto Sans CJK on macOS if the issue occurs |
+| Blank Chinese UI | Missing Chinese fonts | Windows uses Microsoft YaHei by default (install a Chinese font if the issue occurs); install `fonts-noto-cjk` on Linux; macOS uses PingFang by default (install Noto Sans CJK if the issue occurs) |
 | Emoji shown as squares | Missing emoji font | Install `fonts-noto-color-emoji` |
 | pip installation fails | System Python is protected (externally managed environment) | Use a virtual environment; or `pip install --break-system-packages -r requirements.txt` |
 | Program fails to start | Missing dependencies or version mismatch | Check the version with `python3 --version`; inspect dependencies with `pip list` |

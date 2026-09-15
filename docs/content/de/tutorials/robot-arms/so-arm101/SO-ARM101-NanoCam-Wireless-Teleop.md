@@ -274,7 +274,7 @@ export SOARM_PYTHON="$(command -v python)"   # lerobot_so101 环境
 
 Das Skript führt der Reihe nach aus:
 
-1. Netzwerk prüfen (SSID muss mit der Einstellung übereinstimmen), Führungsarm-Seriellanschluss, Vorhandensein der Kalibrierdateien;
+1. Netzwerk prüfen (SSID muss mit `EXPECTED_WIFI_SSID` übereinstimmen), Führungsarm-Seriellanschluss, Vorhandensein der Kalibrierdateien;
 2. micro-ROS Agent starten (falls nicht aktiv; Log unter `logs/micro_ros_agent.log`);
 3. Warten, bis die `/joint_states` des Folgearms online sind (15 s Timeout);
 4. Führungsarm bewegt sich → Folgearm folgt, 30 Hz Befehlsrate, **`--mapping-mode absolute` (absolute Zuordnung)**.

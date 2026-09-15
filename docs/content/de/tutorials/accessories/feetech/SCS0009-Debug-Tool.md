@@ -52,12 +52,12 @@ Das Hauptprogramm hat ein Einzelpanel-Layout (FT-Debugger); bei zu geringer Fens
 ```
 
 - **Obere Leiste**: App-Titel, Sprachumschaltfläche.
-- **🔌 串口连接** (Serielle Verbindung): Port und Baudrate wählen, Verbinden/Trennen.
-- **🎯 舵机** (Servo): Scannen, Servo auswählen, Parameter/Status lesen.
-- **📋 参数表** (Parametertabelle): 44 Register in 5 Spalten (Adresse/Register/Wert/Speicherbereich/Lesen-Schreiben); die Auswahl übernimmt automatisch die Schreibadresse.
-- **🎯 位置控制** (Positionssteuerung): Zielposition/Geschwindigkeit; nach Bewegungsende weist die Statusleiste auf das Abschalten des Drehmoments hin.
-- **🔧 波特率/恢复出厂** (Baudrate/Werksreset): Baudrate ändern (Rollback bei Fehlschlag), Werkseinstellungen wiederherstellen.
-- **📁 xdat 参数（仅保存 EEPROM）** (xdat-Parameter, nur EEPROM): Parameter des aktuellen Servos speichern, Backup öffnen, wiederherstellen.
+- **🔌 Serielle Verbindung**: Port und Baudrate wählen, Verbinden/Trennen.
+- **🎯 Servo**: Scannen, Servo auswählen, Parameter/Status lesen.
+- **📋 Parametertabelle**: 44 Register in 5 Spalten (Adresse/Register/Wert/Speicherbereich/Lesen-Schreiben); die Auswahl übernimmt automatisch die Schreibadresse.
+- **🎯 Positionssteuerung**: Zielposition/Geschwindigkeit; nach Bewegungsende weist die Statusleiste auf das Abschalten des Drehmoments hin.
+- **🔧 Baudrate/Werksreset**: Baudrate ändern (Rollback bei Fehlschlag), Werkseinstellungen wiederherstellen.
+- **📁 xdat-Parameter (nur EEPROM)**: Parameter des aktuellen Servos speichern, Backup öffnen, wiederherstellen.
 
 ## Installation und Start
 
@@ -266,7 +266,7 @@ system_profiler SPUSBDataType | grep -A5 -i "serial\|CH340\|CP210"
 - Im Allgemeinen genügt es, wenn `ls /dev/cu.*` das Gerät anzeigt.
 
 5. Nutzungshinweise:
-   - **Der Portname kann sich ändern**: Nach dem Umstecken an einen anderen USB-Port kann sich der `cu.*`-Name ändern; wählen Sie ihn bei jedem Start im Bereich „🔌 串口连接" aus.
+   - **Der Portname kann sich ändern**: Nach dem Umstecken an einen anderen USB-Port kann sich der `cu.*`-Name ändern; wählen Sie ihn bei jedem Start im Bereich „🔌 Serielle Verbindung" aus.
    - **Energiesparen**: Der Ruhezustand von macOS kann den seriellen Port trennen; halten Sie das System während der Bedienung wach oder erhöhen Sie die Ruhezustandszeit.
    - **Datenschutzberechtigung**: Erscheint beim ersten Start die Abfrage „Zugriff auf Wechseldatenträger", klicken Sie auf „Erlauben".
 
@@ -275,20 +275,22 @@ system_profiler SPUSBDataType | grep -A5 -i "serial\|CH340\|CP210"
 ### 1. Servos verbinden und erkennen
 
 1. Servo-Steuerplatine über den USB-zu-Seriell-Adapter anschließen und die Servos mit Strom versorgen.
-2. GUI öffnen, im Bereich „🔌 串口连接" den Port wählen (oder `🔄` zum Aktualisieren anklicken) und die Baudrate einstellen (Standard 1M).
-3. Auf **连接** klicken; der Status zeigt `🟢 已连接`.
+2. GUI öffnen, im Bereich „🔌 Serielle Verbindung" den Port wählen (oder `🔄` zum Aktualisieren anklicken) und die Baudrate einstellen (Standard 1M).
+3. Auf **Verbinden** klicken; der Status zeigt `🟢 Verbunden`.
 
 > Erscheint die Meldung, dass der Port belegt ist, stellen Sie sicher, dass kein anderes Programm (serieller Monitor, ein zuvor nicht beendetes Tool) den Port belegt.
 
+> Ist nur ein serieller Anschluss vorhanden, setzt das Tool den zweiten Port automatisch auf „Deaktiviert".
+
 ### 2. Servos scannen
 
-1. Auf **🔍 扫描舵机** klicken, um online befindliche Servos im ID-Bereich 1–254 zu erkennen.
+1. Auf **🔍 Servos scannen** klicken, um online befindliche Servos im ID-Bereich 1–254 zu erkennen.
 2. Die Scan-Ergebnisse werden in Echtzeit in der Servoliste angezeigt (mit Modellbezeichnung).
-3. Klicken Sie in der Servoliste auf eine Zeile, um sie automatisch in das Dropdown „舵机" zu übernehmen.
+3. Klicken Sie in der Servoliste auf eine Zeile, um sie automatisch in das Dropdown „Servo" zu übernehmen.
 
 ### 3. Parameter lesen
 
-1. Nach Auswahl des Servos auf **📖 读取参数** klicken, um alle 44 Register einzeln zu lesen.
+1. Nach Auswahl des Servos auf **📖 Parameter lesen** klicken, um alle 44 Register einzeln zu lesen.
 2. Die Parametertabelle zeigt 5 Spalten (Adresse/Register/Wert/Speicherbereich/Lesen-Schreiben); EPROM / SRAM / DEFAULT sind farblich unterschieden.
 3. Der Log-Bereich zeigt das Leseergebnis jedes Registers und die Fehlerursache an.
 
@@ -297,37 +299,37 @@ Die Bedeutung der einzelnen Register ist unter [Potentiometer-SCSCL-Servo – An
 ### 4. Parameter ändern / Schreiben
 
 1. In der Parametertabelle auf die zu ändernde Registerzeile klicken → „Schreibadresse", „Länge" und „Wert" werden automatisch übernommen.
-2. Im Eingabefeld „Wert" den neuen Wert eintragen und auf **✏️ 写入** klicken.
+2. Im Eingabefeld „Wert" den neuen Wert eintragen und auf **✏️ Schreiben** klicken.
 3. Das Programm führt aus: EEPROM entsperren → schreiben → wieder sperren.
-4. Ergebnisdialog: Bei Erfolg erscheint ein grüner Hinweis „✅ 已成功写入", bei Fehlschlag ein roter Hinweis „❌ 写入失败" (mit Ursache).
+4. Ergebnisdialog: Bei Erfolg erscheint ein grüner Hinweis „✅ Erfolgreich geschrieben", bei Fehlschlag ein roter Hinweis „❌ Schreiben fehlgeschlagen" (mit Ursache).
 
 ### 5. Servo-ID ändern
 
-1. In der Parametertabelle die Zeile „舵机 ID" (Adresse 0x05) suchen und anklicken.
-2. Im Feld „Wert" die neue ID eintragen und auf **✏️ 写入** klicken.
+1. In der Parametertabelle die Zeile „Servo-ID" (Adresse 0x05) suchen und anklicken.
+2. Im Feld „Wert" die neue ID eintragen und auf **✏️ Schreiben** klicken.
 3. Das Programm führt aus: Entsperren → Schreiben an Adresse 5 → wieder sperren.
 
 > ⚠️ Stellen Sie vor dem Ändern der ID sicher, dass nur dieser eine Servo am Bus hängt, um ID-Konflikte zu vermeiden.
 
 ### 6. Positionssteuerung
 
-1. Im Bereich „🎯 位置控制" **den Schieberegler ziehen**, um die Zielposition anzupassen (0–1023, 10-Bit-Auflösung des Potentiometers); das Zahlenfeld zeigt den Wert synchron an; alternativ können Sie direkt in das Zahlenfeld eingeben, der Schieberegler folgt synchron.
-2. Auf **▶ 移动** klicken; der Servo beginnt zu fahren, die Statusleiste zeigt „移动中..." an.
-3. Nach Abschluss der Bewegung erscheint „✅ 已移动完成，请关闭力矩"; klicken Sie auf **⏹ 力矩关** (Drehmoment aus).
+1. Im Bereich „🎯 Positionssteuerung" **den Schieberegler ziehen**, um die Zielposition anzupassen (0–1023, 10-Bit-Auflösung des Potentiometers); das Zahlenfeld zeigt den Wert synchron an; alternativ können Sie direkt in das Zahlenfeld eingeben, der Schieberegler folgt synchron.
+2. Auf **▶ Bewegen** klicken; der Servo beginnt zu fahren, die Statusleiste zeigt „Bewegung läuft..." an.
+3. Nach Abschluss der Bewegung erscheint „✅ Bewegung abgeschlossen, bitte Drehmoment abschalten"; klicken Sie auf **⏹ Drehmoment aus**.
 
 ### 7. Baudrate ändern / Werkseinstellungen wiederherstellen
 
-- **Baudrate ändern**: Im Bereich „🔧 波特率/恢复出厂" die neue Baudrate wählen (38400 – 1000000 bps) und auf **🔧 修改波特率** klicken. Nach dem Schreiben wird die Baudrate des seriellen Ports automatisch umgestellt und per Ping verifiziert; bei Fehlschlag erfolgt ein automatischer Rollback.
-- **Werkseinstellungen wiederherstellen**: Auf **🔄 恢复出厂** klicken; der Servo wird auf die Werkseinstellungen zurückgesetzt (ID=1, Baudrate=1000000); danach muss erneut gescannt werden.
+- **Baudrate ändern**: Im Bereich „🔧 Baudrate/Werksreset" die neue Baudrate wählen (38400 – 1000000 bps) und auf **🔧 Baudrate ändern** klicken. Nach dem Schreiben wird die Baudrate des seriellen Ports automatisch umgestellt und per Ping verifiziert; bei Fehlschlag erfolgt ein automatischer Rollback.
+- **Werkseinstellungen wiederherstellen**: Auf **🔄 Werksreset** klicken; der Servo wird auf die Werkseinstellungen zurückgesetzt (ID=1, Baudrate=1000000); danach muss erneut gescannt werden.
 
 ### 8. xdat-Parameter-Backup und -Wiederherstellung
 
-Im Bereich „📁 xdat 参数（仅保存 EEPROM）":
+Im Bereich „📁 xdat-Parameter (nur EEPROM)":
 
-1. **💾 保存当前舵机**: Die EEPROM-Parameter des aktuell ausgewählten Servos als xdat-Datei speichern (Backup).
+1. **💾 Aktuellen Servo speichern**: Die EEPROM-Parameter des aktuell ausgewählten Servos als xdat-Datei speichern (Backup).
 2. Nach beliebigen Änderungen an den Servoparametern können Sie wie folgt wiederherstellen:
-3. **📂 打开 xdat**: Die Backup-Datei laden.
-4. **📤 恢复参数到舵机**: Das Backup zurück in das EEPROM des aktuellen Servos schreiben.
+3. **📂 xdat öffnen**: Die Backup-Datei laden.
+4. **📤 Parameter auf Servo zurückschreiben**: Das Backup zurück in das EEPROM des aktuellen Servos schreiben.
 
 ## Hinweise
 
@@ -338,8 +340,8 @@ Im Bereich „📁 xdat 参数（仅保存 EEPROM）":
 5. **macOS-Portnamen**: Verwenden Sie `/dev/cu.*` (nicht blockierend) statt `/dev/tty.*` (blockierend, kann hängen bleiben), siehe Abschnitt „macOS" oben.
 6. **Hot-Plug**: Nach dem Abziehen des USB-Kabels versucht das Programm automatisch, die Verbindung wiederherzustellen; nach dem erneuten Einstecken `🔄` anklicken, um die Portliste zu aktualisieren.
 7. **Übertemperatur-/Überspannungsschutz**: Das Programm überwacht Spannung und Temperatur (Warnung bei Temperatur > 60°C). Bei anhaltend hoher Servotemperatur das System stoppen und abkühlen lassen.
-8. **Parameter-Write ist irreversibel**: Nach dem Schreiben ins EEPROM wird der ursprüngliche Wert überschrieben und kann nicht rückgängig gemacht werden. Empfehlung: Zuerst mit „xdat 保存当前舵机" ein Backup anlegen, dann ändern.
-9. **Risiko bei ID-Änderung**: Bei Schreib- oder Verifizierungsfehlern meldet das Programm einen Fehler, in Extremfällen kann der Servo jedoch „den Kontakt verlieren". Bei Kontaktverlust können Sie „恢复出厂设置" versuchen (nach dem Reset ist die ID wieder 1).
+8. **Parameter-Write ist irreversibel**: Nach dem Schreiben ins EEPROM wird der ursprüngliche Wert überschrieben und kann nicht rückgängig gemacht werden. Empfehlung: Zuerst mit „xdat – Aktuellen Servo speichern" ein Backup anlegen, dann ändern.
+9. **Risiko bei ID-Änderung**: Bei Schreib- oder Verifizierungsfehlern meldet das Programm einen Fehler, in Extremfällen kann der Servo jedoch „den Kontakt verlieren". Bei Kontaktverlust können Sie „Werksreset" versuchen (nach dem Reset ist die ID wieder 1).
 10. **Kodierungsprobleme**: Bei Emoji-Zeichensalat in der Windows-Konsole setzen Sie `PYTHONIOENCODING=utf-8` und führen Sie das Kommandozeilen-Tool anschließend erneut aus. Unter Linux / macOS mit nativem UTF-8 tritt dieses Problem normalerweise nicht auf.
 
 ## Fehlerbehebung
@@ -360,7 +362,7 @@ Im Bereich „📁 xdat 参数（仅保存 EEPROM）":
 | macOS: Portname mit `tty.` bleibt hängen | Blockierender Gerätename verwendet | Geräte mit `cu.`-Präfix verwenden |
 | macOS: Gerät nicht gefunden | Gerät nicht erkannt | `ls /dev/cu.*`; aus- und wieder einstecken; mit `system_profiler SPUSBDataType` prüfen |
 | macOS: Berechtigungsproblem | Systemzugriffskontrolle | Normalerweise keine zusätzlichen Berechtigungen nötig; bei Zugriffskontrollabfrage dem Terminal den Zugriff erlauben |
-| Chinesische Oberfläche leer | Chinesische Schriftarten fehlen | Unter Linux `fonts-noto-cjk` installieren; bei Problemen unter macOS Noto Sans CJK installieren |
+| Chinesische Oberfläche leer | Chinesische Schriftarten fehlen | Unter Windows standardmäßig Microsoft YaHei (bei Problemen chinesische Schriftart installieren); unter Linux `fonts-noto-cjk` installieren; unter macOS standardmäßig PingFang (bei Problemen Noto Sans CJK installieren) |
 | Emojis werden als Kästchen angezeigt | Emoji-Schriftart fehlt | `fonts-noto-color-emoji` installieren |
 | pip-Installation schlägt fehl | System-Python geschützt (externally managed environment) | Virtuelle Umgebung verwenden; oder `pip install --break-system-packages -r requirements.txt` |
 | Programm startet nicht | Abhängigkeiten fehlen oder Version passt nicht | Version mit `python3 --version` prüfen; Abhängigkeiten mit `pip list` prüfen |

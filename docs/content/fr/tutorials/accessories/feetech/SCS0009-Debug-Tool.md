@@ -276,9 +276,11 @@ system_profiler SPUSBDataType | grep -A5 -i "serial\|CH340\|CP210"
 
 1. Reliez la carte de commande des servos via un adaptateur USB-série et alimentez les servos.
 2. Lancez l'interface graphique, sélectionnez le port dans la zone « 🔌 Connexion série » (ou cliquez sur `🔄` pour actualiser) et réglez le débit (1M par défaut).
-3. Cliquez sur **Connecter** ; l'état affiche `🟢 已连接`.
+3. Cliquez sur **Connecter** ; l'état affiche `🟢 Connecté`.
 
 > Si un message indique que le port série est occupé, vérifiez qu'aucun autre programme (moniteur de port série, outil précédent non fermé) n'utilise ce port.
+
+> S'il n'y a qu'un seul port série, l'outil règle automatiquement le second port sur « désactivé ».
 
 ### 2. Scan des servos
 
@@ -360,7 +362,7 @@ Dans la zone « 📁 Paramètres xdat (sauvegarde EEPROM uniquement) » :
 | Sous macOS, le port `tty.` se bloque | Nom de périphérique bloquant utilisé | Utilisez un périphérique avec le préfixe `cu.` |
 | Périphérique introuvable sous macOS | Périphérique non reconnu | `ls /dev/cu.*` ; rebranchez le câble ; vérifiez avec `system_profiler SPUSBDataType` |
 | Problème de permissions sous macOS | Contrôle d'accès du système | Aucune autorisation supplémentaire n'est généralement requise ; si une demande d'accès apparaît, autorisez l'accès au terminal |
-| Interface en chinois vide | Polices chinoises manquantes | Sous Linux, installez `fonts-noto-cjk` ; sous macOS, installez Noto Sans CJK en cas d'anomalie |
+| Interface en chinois vide | Polices chinoises manquantes | Sous Windows, Microsoft YaHei par défaut (installez une police chinoise en cas d'anomalie) ; sous Linux, installez `fonts-noto-cjk` ; sous macOS, PingFang par défaut (installez Noto Sans CJK en cas d'anomalie) |
 | Emojis affichés en carrés | Police emoji manquante | Installez `fonts-noto-color-emoji` |
 | Échec de l'installation via pip | Python système protégé (externally managed environment) | Utilisez un environnement virtuel ; ou `pip install --break-system-packages -r requirements.txt` |
 | Le programme ne démarre pas | Dépendances manquantes ou versions incompatibles | Confirmez la version avec `python3 --version` ; vérifiez les dépendances avec `pip list` |

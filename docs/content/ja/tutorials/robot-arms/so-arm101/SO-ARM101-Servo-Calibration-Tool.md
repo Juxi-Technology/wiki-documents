@@ -382,6 +382,9 @@ python -m src.tools.lerobot_calibrate
 # LeRobot 风格校准（指定串口）
 python -m src.tools.lerobot_calibrate /dev/ttyACM0
 
+# LeRobot 风格校准（指定串口，macOS）
+python -m src.tools.lerobot_calibrate /dev/cu.usbserial-0001
+
 # 双端口同步遥控
 python -m src.tools.servo_remote_control
 ```
@@ -417,7 +420,7 @@ python -m src.tools.servo_remote_control
 | macOS で `tty.` 付きのシリアルポート名がスタックする | ブロッキング式のデバイス名を使用 | `cu.` プレフィックスのデバイスに変更 |
 | macOS でデバイスが見つからない | デバイスが認識されていない | `ls /dev/cu.*`、挿抜し直し、`system_profiler SPUSBDataType` で確認 |
 | macOS の権限問題 | システムのアクセス制御 | 通常は追加権限は不要。アクセス制御が表示された場合はターミナルのアクセスを許可 |
-| 中国語インターフェースが空白 | 中国語フォント不足 | Linux では `fonts-noto-cjk` をインストール。macOS で異常がある場合は Noto Sans CJK をインストール |
+| 中国語インターフェースが空白 | 中国語フォント不足 | Windows は既定で Microsoft YaHei(異常時は中国語フォントをインストール);Linux では `fonts-noto-cjk` をインストール。macOS は既定で PingFang(異常時は Noto Sans CJK をインストール) |
 | emoji が四角に表示される | emoji フォント不足 | `fonts-noto-color-emoji` をインストール |
 | pip のインストールが失敗 | システム Python が保護されている(externally managed environment) | 仮想環境を使用。または `pip install --break-system-packages -r requirements.txt` |
 | プログラムが起動しない | 依存関係の不足またはバージョン不一致 | `python3 --version` でバージョンを確認。`pip list` で依存関係を確認 |

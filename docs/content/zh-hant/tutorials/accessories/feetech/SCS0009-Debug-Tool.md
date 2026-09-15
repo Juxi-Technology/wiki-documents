@@ -276,9 +276,11 @@ system_profiler SPUSBDataType | grep -A5 -i "serial\|CH340\|CP210"
 
 1. 通過 USB 轉串口適配器連接舵機控制板，給舵機供電。
 2. 打開 GUI，在“🔌 串口連接”區選擇端口（或點擊 `🔄` 刷新），設置波特率（默認 1M）。
-3. 點擊 **連接**，狀態顯示 `🟢 已连接`。
+3. 點擊 **連接**，狀態顯示 `🟢 已連接`。
 
 > 若提示串口佔用，請確認沒有其他程序（串口監視器、上一個未退出的工具）佔用該端口。
+
+> 若只有一個串口，工具會自動把第二個端口設為“禁用”。
 
 ### 2. 掃描舵機
 
@@ -360,7 +362,7 @@ system_profiler SPUSBDataType | grep -A5 -i "serial\|CH340\|CP210"
 | macOS 串口名帶 `tty.` 卡住 | 使用了阻塞式設備名 | 改用 `cu.` 前綴設備 |
 | macOS 找不到設備 | 設備未識別 | `ls /dev/cu.*`；插拔後重插；用 `system_profiler SPUSBDataType` 查看 |
 | macOS 權限問題 | 系統訪問控制 | 一般無需額外權限；若彈出訪問控制，允許終端訪問 |
-| 中文界面空白 | 缺少中文字體 | Linux 安裝 `fonts-noto-cjk`；macOS 異常時安裝 Noto Sans CJK |
+| 中文界面空白 | 缺少中文字體 | Windows 默認微軟雅黑（異常時安裝中文字體）；Linux 安裝 `fonts-noto-cjk`；macOS 默認 PingFang（異常時安裝 Noto Sans CJK） |
 | emoji 顯示方塊 | 缺少 emoji 字體 | 安裝 `fonts-noto-color-emoji` |
 | pip 安裝失敗 | 系統 Python 受保護（externally managed environment） | 使用虛擬環境；或 `pip install --break-system-packages -r requirements.txt` |
 | 程序無法啟動 | 依賴缺失或版本不符 | `python3 --version` 確認版本；`pip list` 檢查依賴 |

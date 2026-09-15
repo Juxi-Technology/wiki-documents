@@ -52,9 +52,9 @@ Das Hauptprogramm enthält drei Tabs:
 ```
 
 - **Obere Leiste**: App-Titel, Dropdown zur Portauswahl, Aktualisieren-Schaltfläche, Teleoperation-Schaltfläche, Sprachumschaltfläche.
-- **🦾 Tab1 舵机标定** (Servo-Kalibrierung): Schnellaktionen in den linken/rechten Panels (Mittenkalibrierung, Mittentest, Motoren deaktivieren) und Echtzeitstatus.
-- **🎚️ Tab2 单舵机控制** (Einzelservo-Steuerung): Position jedes online befindlichen Servos per Schieberegler feinjustieren, Drehmoment ein-/ausschalten.
-- **🔬 Tab3 FT 调试器** (FT-Debugger): Serielle Verbindung, Scan, Parameter-Lesen/-Schreiben (56 Register), Positionssteuerung, Baudrate/Werkseinstellungen, xdat-Parameter-Backup/-Wiederherstellung.
+- **🦾 Tab1 Servo-Kalibrierung**: Schnellaktionen in den linken/rechten Panels (Mittenkalibrierung, Mittentest, Motoren deaktivieren) und Echtzeitstatus.
+- **🎚️ Tab2 Einzelservo-Steuerung**: Position jedes online befindlichen Servos per Schieberegler feinjustieren, Drehmoment ein-/ausschalten.
+- **🔬 Tab3 FT-Debugger**: Serielle Verbindung, Scan, Parameter-Lesen/-Schreiben (56 Register), Positionssteuerung, Baudrate/Werkseinstellungen, xdat-Parameter-Backup/-Wiederherstellung.
 
 ## Installation und Start
 
@@ -277,33 +277,33 @@ system_profiler SPUSBDataType | grep -A5 -i "serial\|CH340\|CP210"
 
 > Richten Sie den Roboterarm vor der Kalibrierung physisch so aus, dass sich jedes Gelenk in der gewünschten „Null-/Mittelstellung" befindet.
 
-1. Im Panel auf die Schaltfläche **串口X中位校准** klicken.
+1. Im Panel auf die Schaltfläche **Mittenkalibrierung Port X** klicken.
 2. Das Programm deaktiviert zunächst die Servos und fordert Sie auf, die Servos manuell in die gewünschte Mittelstellung zu bringen.
 3. Nach der Bestätigung führt das Programm für jeden Servo Folgendes aus: EEPROM entsperren → Kalibrierbefehl schreiben (Wert 128 an Adresse 40) → EEPROM wieder sperren.
 4. Anschließend mit dem „Mittentest" prüfen: Bleiben die Servos nahezu an Ort und Stelle (sehr kleine Bewegung), war die Kalibrierung erfolgreich.
 
 ### 3. Mittentest
 
-1. Auf **串口X中位测试** klicken.
+1. Auf **Mittentest Port X** klicken.
 2. Das Programm aktiviert das Drehmoment und fährt alle Servos auf 2048.
 3. Bewegen sich die Servos von ihrer aktuellen Position kaum, ist die Kalibrierung korrekt; bewegen sie sich stark, ist der Kalibrierwert unzuverlässig und die Kalibrierung muss wiederholt werden.
 
 ### 4. Motoren deaktivieren (manuelle Anpassung)
 
-- Auf **串口X失能电机** klicken, um das Drehmoment aller Servos an diesem Port abzuschalten; die Servos lassen sich dann frei von Hand drehen.
-- Einzelne Servos lassen sich auf der Seite **单舵机控制** über den Drehmomentschalter unter dem Schieberegler einzeln ein-/ausschalten.
+- Auf **Motoren deaktivieren Port X** klicken, um das Drehmoment aller Servos an diesem Port abzuschalten; die Servos lassen sich dann frei von Hand drehen.
+- Einzelne Servos lassen sich auf der Seite **Einzelservo-Steuerung** über den Drehmomentschalter unter dem Schieberegler einzeln ein-/ausschalten.
 
 ### 5. Einzelservo-Steuerung (Tab2)
 
-1. Auf der Seite **🎚️ 单舵机控制** hat jeder online befindliche Servo einen Positions-Schieberegler und einen Drehmomentschalter.
+1. Auf der Seite **🎚️ Einzelservo-Steuerung** hat jeder online befindliche Servo einen Positions-Schieberegler und einen Drehmomentschalter.
 2. **Schieberegler ziehen → loslassen**: Der Servo fährt zur Zielposition.
 3. Der Drehmomentschalter unter dem Schieberegler kann das Drehmoment dieses Servos einzeln ein-/ausschalten.
 
 ### 6. FT-Debugger (Parameter-Lesen/-Schreiben und Positionssteuerung)
 
-Auf der Seite **🔬 FT 调试器**:
+Auf der Seite **🔬 FT-Debugger**:
 
-1. **Serielle Verbindung**: Port und Baudrate (Standard 1M) wählen, nach dem Verbinden **扫描舵机** ausführen, um online befindliche Servos zu erkennen.
+1. **Serielle Verbindung**: Port und Baudrate (Standard 1M) wählen, nach dem Verbinden **Servos scannen** ausführen, um online befindliche Servos zu erkennen.
 2. **Parameter lesen**: Alle Register lesen (EEPROM + SRAM).
 3. **Parametertabelle**: Alle 56 Register in 5 Spalten; beim Anklicken einer Zeile wird die „Schreibadresse" automatisch übernommen.
 4. **Positionssteuerung**: Zielposition / Geschwindigkeit einstellen und ausführen; nach Abschluss der Bewegung wird darauf hingewiesen, das Drehmoment abzuschalten.
@@ -311,7 +311,7 @@ Auf der Seite **🔬 FT 调试器**:
 
 ### 7. Servo-ID ändern
 
-1. Die Seite **🔬 FT 调试器** öffnen, den seriellen Port verbinden und Servos scannen.
+1. Die Seite **🔬 FT-Debugger** öffnen, den seriellen Port verbinden und Servos scannen.
 2. Den Zielservo auswählen, in der Parametertabelle den Wert der „Servo-ID" (Adresse 0x05) ändern und auf Schreiben klicken.
 3. Das Programm führt aus: Entsperren → Schreiben an Adresse 5 → neue ID verifizieren → wieder sperren.
 
@@ -324,18 +324,18 @@ Auf der Seite **🔬 FT 调试器**:
 
 ### 9. xdat-Parameter-Backup und -Wiederherstellung
 
-Im Bereich „xdat 参数（仅保存 EEPROM）" des FT-Debuggers:
+Im Bereich „xdat-Parameter (nur EEPROM)" des FT-Debuggers:
 
-1. **💾 保存当前舵机**: Die EEPROM-Parameter des aktuell ausgewählten Servos als xdat-Datei speichern (Backup).
+1. **💾 Aktuellen Servo speichern**: Die EEPROM-Parameter des aktuell ausgewählten Servos als xdat-Datei speichern (Backup).
 2. Nach beliebigen Änderungen an den Servoparametern können Sie wie folgt wiederherstellen:
-3. **📂 打开 xdat**: Die Backup-Datei laden.
-4. **📤 恢复参数到舵机**: Das Backup zurück in das EEPROM des aktuellen Servos schreiben.
+3. **📂 xdat öffnen**: Die Backup-Datei laden.
+4. **📤 Parameter auf Servo zurückschreiben**: Das Backup zurück in das EEPROM des aktuellen Servos schreiben.
 
 ### 10. Dual-Port-Synchron-Teleoperation
 
 > ⚠️ **Richtung: Serieller Port 1 steuert seriellen Port 2**. Port 1 (Master) liest nur die Servowinkel; Port 2 (Slave) wird synchron gesteuert.
 
-1. In der oberen Leiste auf **🎮 遥控** klicken (Port 1 liest Winkel → Port 2 steuert Servos mit gleicher ID synchron).
+1. In der oberen Leiste auf **🎮 Teleoperation** klicken (Port 1 liest Winkel → Port 2 steuert Servos mit gleicher ID synchron).
 2. Die Servo-IDs an beiden Ports müssen übereinstimmen; synchronisiert werden nur Servos in der Schnittmenge.
 3. Erneut auf dieselbe Schaltfläche klicken zum Stoppen; danach nehmen die Scan-Threads der linken/rechten Panels ihre Arbeit automatisch wieder auf.
 
@@ -382,6 +382,9 @@ python -m src.tools.lerobot_calibrate
 # LeRobot 风格校准（指定串口）
 python -m src.tools.lerobot_calibrate /dev/ttyACM0
 
+# LeRobot 风格校准（指定串口，macOS）
+python -m src.tools.lerobot_calibrate /dev/cu.usbserial-0001
+
 # 双端口同步遥控
 python -m src.tools.servo_remote_control
 ```
@@ -417,7 +420,7 @@ python -m src.tools.servo_remote_control
 | macOS: Portname mit `tty.` bleibt hängen | Blockierender Gerätename verwendet | Geräte mit `cu.`-Präfix verwenden |
 | macOS: Gerät nicht gefunden | Gerät nicht erkannt | `ls /dev/cu.*`; aus- und wieder einstecken; mit `system_profiler SPUSBDataType` prüfen |
 | macOS: Berechtigungsproblem | Systemzugriffskontrolle | Normalerweise keine zusätzlichen Berechtigungen nötig; bei Zugriffskontrollabfrage dem Terminal den Zugriff erlauben |
-| Chinesische Oberfläche leer | Chinesische Schriftarten fehlen | Unter Linux `fonts-noto-cjk` installieren; bei Problemen unter macOS Noto Sans CJK installieren |
+| Chinesische Oberfläche leer | Chinesische Schriftarten fehlen | Unter Windows standardmäßig Microsoft YaHei (bei Problemen chinesische Schriftart installieren); unter Linux `fonts-noto-cjk` installieren; unter macOS standardmäßig PingFang (bei Problemen Noto Sans CJK installieren) |
 | Emojis werden als Kästchen angezeigt | Emoji-Schriftart fehlt | `fonts-noto-color-emoji` installieren |
 | pip-Installation schlägt fehl | System-Python geschützt (externally managed environment) | Virtuelle Umgebung verwenden; oder `pip install --break-system-packages -r requirements.txt` |
 | Programm startet nicht | Abhängigkeiten fehlen oder Version passt nicht | Version mit `python3 --version` prüfen; Abhängigkeiten mit `pip list` prüfen |

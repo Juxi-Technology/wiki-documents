@@ -276,9 +276,11 @@ system_profiler SPUSBDataType | grep -A5 -i "serial\|CH340\|CP210"
 
 1. USB-시리얼 변환 어댑터로 서보 제어 보드에 연결하고 서보에 전원을 공급합니다.
 2. GUI를 열고 "🔌 시리얼 연결" 영역에서 포트를 선택한 뒤(또는 `🔄`를 클릭해 새로 고침) 보레이트(기본 1M)를 설정합니다.
-3. **연결**을 클릭하면 상태에 `🟢 已连接`가 표시됩니다.
+3. **연결**을 클릭하면 상태에 `🟢 연결됨`가 표시됩니다.
 
 > 시리얼 포트가 사용 중이라는 안내가 나오면 다른 프로그램(시리얼 모니터, 종료되지 않은 이전 도구)이 해당 포트를 점유하고 있지 않은지 확인하세요.
+
+> 시리얼 포트가 하나뿐이면 도구가 두 번째 포트를 자동으로 "사용 안 함"으로 설정합니다.
 
 ### 2. 서보 스캔
 
@@ -360,7 +362,7 @@ system_profiler SPUSBDataType | grep -A5 -i "serial\|CH340\|CP210"
 | macOS 시리얼 이름에 `tty.`가 있어 멈춤 | 블로킹 방식 장치 이름 사용 | `cu.` 접두사 장치로 변경 |
 | macOS에서 장치를 찾을 수 없음 | 장치 미인식 | `ls /dev/cu.*`; 뽑았다 다시 꽂기; `system_profiler SPUSBDataType`으로 확인 |
 | macOS 권한 문제 | 시스템 접근 제어 | 일반적으로 추가 권한 불필요; 접근 제어 팝업이 뜨면 터미널 접근 허용 |
-| 중국어 인터페이스가 비어 있음 | 중국어 글꼴 누락 | Linux는 `fonts-noto-cjk` 설치; macOS에서 이상하면 Noto Sans CJK 설치 |
+| 중국어 인터페이스가 비어 있음 | 중국어 글꼴 누락 | Windows는 기본적으로 Microsoft YaHei(이상하면 중국어 글꼴 설치); Linux는 `fonts-noto-cjk` 설치; macOS는 기본적으로 PingFang(이상하면 Noto Sans CJK 설치) |
 | emoji가 네모로 표시됨 | emoji 글꼴 누락 | `fonts-noto-color-emoji` 설치 |
 | pip 설치 실패 | 시스템 Python 보호(externally managed environment) | 가상 환경 사용; 또는 `pip install --break-system-packages -r requirements.txt` |
 | 프로그램이 시작되지 않음 | 의존성 누락 또는 버전 불일치 | `python3 --version`으로 버전 확인; `pip list`로 의존성 확인 |

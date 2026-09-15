@@ -138,7 +138,7 @@ AP2718AT (模拟MEMS麦) → ES8311 Codec (ADC/DAC) → NS4150B (模拟功放) �
 |---|---|---|---|
 |Mikrofon|**AP2718AT**|Analoges MEMS-Siliziummikrofon|Differentielles Analogsignal → ES8311 ADC|
 |Codec|**ES8311**|Audio-Codec (I2S+I2C)|I2S=MCLK=39,BCLK=38,WS=47,DOUT=48,DIN=40, I2C=41/42, addr=0x30|
-|Verstärker|**NS4150B**|Analoger Klasse-D-Verstärker|ES8311 DAC 输出 → Analog-Eingang → Lautsprecher|
+|Verstärker|**NS4150B**|Analoger Klasse-D-Verstärker|ES8311-DAC-Ausgang → Analogeingang → Lautsprecher|
 
 ### 4.2 ES8311-Codec-I2S-Pins
 

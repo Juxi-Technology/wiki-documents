@@ -274,7 +274,7 @@ export SOARM_PYTHON="$(command -v python)"   # lerobot_so101 環境
 
 腳本會按順序做:
 
-1. 檢查網絡(SSID 須與設置一致)、主動臂串口、校準文件存在;
+1. 檢查網絡(SSID 須與 `EXPECTED_WIFI_SSID` 一致)、主動臂串口、校準文件存在;
 2. 啟動 micro-ROS Agent(若未運行,日誌在 `logs/micro_ros_agent.log`);
 3. 等從動臂 `/joint_states` 上線(15s 超時);
 4. 主動臂動作 → 從動臂跟隨,30Hz 命令頻率,**`--mapping-mode absolute`(絕對映射)**。

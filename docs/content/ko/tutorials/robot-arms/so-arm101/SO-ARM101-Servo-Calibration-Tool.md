@@ -382,6 +382,9 @@ python -m src.tools.lerobot_calibrate
 # LeRobot 风格校准（指定串口）
 python -m src.tools.lerobot_calibrate /dev/ttyACM0
 
+# LeRobot 风格校准（指定串口，macOS）
+python -m src.tools.lerobot_calibrate /dev/cu.usbserial-0001
+
 # 双端口同步遥控
 python -m src.tools.servo_remote_control
 ```
@@ -417,7 +420,7 @@ python -m src.tools.servo_remote_control
 | macOS 시리얼 이름에 `tty.`가 있어 멈춤 | 블로킹 방식 장치 이름 사용 | `cu.` 접두사 장치로 변경 |
 | macOS에서 장치를 찾을 수 없음 | 장치 미인식 | `ls /dev/cu.*`; 뽑았다 다시 꽂기; `system_profiler SPUSBDataType`으로 확인 |
 | macOS 권한 문제 | 시스템 접근 제어 | 일반적으로 추가 권한 불필요; 접근 제어 팝업이 뜨면 터미널 접근 허용 |
-| 중국어 인터페이스가 비어 있음 | 중국어 글꼴 누락 | Linux는 `fonts-noto-cjk` 설치; macOS에서 이상하면 Noto Sans CJK 설치 |
+| 중국어 인터페이스가 비어 있음 | 중국어 글꼴 누락 | Windows는 기본적으로 Microsoft YaHei(이상하면 중국어 글꼴 설치); Linux는 `fonts-noto-cjk` 설치; macOS는 기본적으로 PingFang(이상하면 Noto Sans CJK 설치) |
 | emoji가 네모로 표시됨 | emoji 글꼴 누락 | `fonts-noto-color-emoji` 설치 |
 | pip 설치 실패 | 시스템 Python 보호(externally managed environment) | 가상 환경 사용; 또는 `pip install --break-system-packages -r requirements.txt` |
 | 프로그램이 시작되지 않음 | 의존성 누락 또는 버전 불일치 | `python3 --version`으로 버전 확인; `pip list`로 의존성 확인 |
