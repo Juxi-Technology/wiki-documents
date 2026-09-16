@@ -7,15 +7,15 @@ description: "本次例程使用的是STM32F103C8T6核心板，一台windows电�
 
 本次例程使用的是STM32F103C8T6核心板，一台windows电脑、杜邦线若干、IMU姿态传感器。
 
-STM32.zip
+[STM32.zip](/downloads/STM32.zip)
 
 使用keil5软件打开USART.uvprojx，烧录程序到STM32F103C8T6核心板中。
 
 ## 1. 连接设备
 
-![1. 连接设备 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MWE5MmY3ZDI5ZDdlZmYyYmM3ODkwYzJjNjNkZWQxZThfZDY1NWFjNWM2NzM1NGMxM2IyZGM4ZTkxYzc0NjgyMDdfSUQ6NzYxMTg4NzE5MDAxMTM2NTcyNF8xNzgwMDUyNTM2OjE3ODAxMzg5MzZfVjM)
+![1. 连接设备 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32/1.png)
 
-![1. 连接设备 – 2](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YjBiODUxZDc2MmM1MjJhZjRlZTg2MTVlOTdiMjBjZGNfZGNkMDQ1ZmI5MWMzZWUyMjkzOWY5MjQyMjRkYjU5ZTdfSUQ6NzYxMTEzNzI4NDI1MDg4MDk2OV8xNzgwMDUyNTM2OjE3ODAxMzg5MzZfVjM)
+![1. 连接设备 – 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32/2.png)
 
 ## 2. 关键代码解析
 
@@ -185,7 +185,7 @@ _parse_frame_data(): 解析数据帧。
 
 程序下载进入STM32后，打开串口助手（配置参数如下图所示），可以看到一直打印IMU模块的数据，当我们改变IMU模块的姿态，数据会发生变化。
 
-![3. 读取imu数据 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDM1NTZlM2EzYzRhYTY3M2Q3YjNjMmVjMWVjZTI5M2FfOTNmYjhhZWNjNjg0ZDM1ZmZlYzgwODQ5YTQ4MWFmNDlfSUQ6NzYxMTExOTU4NzU2ODI5MDc1Nl8xNzgwMDUyNTM2OjE3ODAxMzg5MzZfVjM)
+![3. 读取imu数据 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32/3.png)
 
 注意：以上为10轴IMU的数据读取，6轴无磁力计（Magnetometer）与气压计（Barometer）数据，9轴无气压计（Barometer）数据。
 

@@ -7,7 +7,7 @@ description: "SO-ARM101 LeRobot ロボットアームの組立ガイド。Window
 
 > **[ストアで購入](https://www.juxitech.com/ja/products/so-arm101-developers-kit)**
 
-![image – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
+![image – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
 
 **Pro版:能動アーム(リーダー)は 5V6A 電源アダプター、従動アーム(フォロワー)は 12V5A 電源アダプターを使用**
 
@@ -15,7 +15,7 @@ description: "SO-ARM101 LeRobot ロボットアームの組立ガイド。Window
 
 ## ステップ1: サーボ ID の設定とサーボホーンの取付け(5番サーボを除く)
 
-![image – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
+![image – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
 
 重ねて確認してください。サーボ関節の ID とギア比は **SO-ARM101** に厳密に対応している必要があります。
 
@@ -95,11 +95,11 @@ SO-ARM101机械臂组装教程.mp4
 
 サーボドライバ基板の取付け: まず銅製スタンド 4 本を取り付け、4 本の M2.5*8 ネジでドライバ基板を固定します
 
-![Linux/Ubuntu システム – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/7.png)
+![Linux/Ubuntu システム – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/7.png)
 
-![Linux/Ubuntu システム – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/8.png)
+![Linux/Ubuntu システム – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/8.png)
 
-![Linux/Ubuntu システム – 3](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
+![Linux/Ubuntu システム – 3](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
 
 **Pro版の黑色の能動アームは5V6A電源アダプター、白色の従動アームは12V5A電源アダプターを使用**
 

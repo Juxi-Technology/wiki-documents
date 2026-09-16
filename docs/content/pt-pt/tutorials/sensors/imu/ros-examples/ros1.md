@@ -237,5 +237,5 @@ sudo chmod 666 /dev/imu-serial
 
 2. Na visualização RViz, os três eixos aparecem muito pequenos; marque novamente Enable axes
 
-![常见问题 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDIwZDEyZjNmOTc4YThkYTRiYTRlNzQ4NTNhMDUxNjFfYThhYmNiY2YwMGNlODJiMTM5NjIwYWI3Y2NhNzQ4N2FfSUQ6NzYwMjQ1Nzk5Mjk5MDE2NjIzMF8xNzgwMDUzMzA0OjE3ODAxMzk3MDRfVjM)
+![常见问题 – 1](../../../../../../public/images/tutorials/sensors/imu/ros-examples/ros1/1.png)
 

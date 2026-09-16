@@ -7,15 +7,15 @@ description: "本次例程使用的是STM32F103C8T6，一台windows电脑、杜�
 
 本次例程使用的是STM32F103C8T6，一台windows电脑、杜邦线若干、IMU姿态传感器。
 
-STM32.zip
+[STM32.zip](/downloads/STM32.zip)
 
 使用keil5软件打开I2C.uvprojx，烧录程序到STM32F103C8T6核心板中
 
 ## 1. 连接设备
 
-![1. 连接设备 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDBhYjMxNjllNDYyZDNkNWIzMWRhZjNmNTJiYjg5YjNfNWFiNDE1MjM4NWZlMjk2YWJkMjQ1YWVjMzI3NzkzODdfSUQ6NzYxMTg4NzEyMzkzMDk3NTQyOF8xNzgwMDUyNzI4OjE3ODAxMzkxMjhfVjM)
+![1. 连接设备 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32/1.png)
 
-![1. 连接设备 – 2](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZTVkMTQ0YWRiMWEzODc3ZDcxM2FhNjY2ZjdhZDlmZGJfMzE1YWM3MzYxYTQzMzlkZjU3MTkzNmE0Nzk2OTBiN2RfSUQ6NzYxMTEzNzIyNzkxODg4Nzg5NV8xNzgwMDUyNzI4OjE3ODAxMzkxMjhfVjM)
+![1. 连接设备 – 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32/2.png)
 
 ## 2. 关键代码解析
 
@@ -143,7 +143,7 @@ IMU_I2C_ReadBarometer(): 读取气压相关数据：高度、温度、气压、�
 
 程序下载进入STM32后，打开串口助手（配置参数如下图所示），可以看到一直打印IMU模块的数据，当我们改变IMU模块的姿态，数据会发生变化。
 
-![3. 读取imu数据 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZmZmYTE1YTBiZGQwOTlkMThlY2ZlOGM4ZTc0YjZjYzFfMTVlZTM0MzRjOTkzYWY2MGQ1ZmJlOTg2ZjFhMGQ5NWFfSUQ6NzYxMTEzODk5MzIzMjgwOTE2MV8xNzgwMDUyNzI4OjE3ODAxMzkxMjhfVjM)
+![3. 读取imu数据 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32/3.png)
 
 注意：以上为10轴IMU的数据读取，6轴无磁力计（Magnetometer）与气压计（Barometer）数据，9轴无气压计（Barometer）数据。
 

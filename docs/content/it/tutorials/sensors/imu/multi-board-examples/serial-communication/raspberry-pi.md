@@ -11,7 +11,7 @@ Questo tutorial usa la scheda madre Raspberry Pi 5 come esempio.
 
 Collegare il sensore di assetto IMU all'USB dell'host tramite cavo Type-C.
 
-![1. Collegare il dispositivo – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTAxMDU2NzljZjZjMTUyOGY4ZWY0NWE4ZjUyZGJmNGVfODg1Mzk5YzQzYTBkZjE4MjkwOGIwMjNiYWZkODk4MzZfSUQ6NzYwMjU4Mzc1NjcyMTExNDA0OV8xNzgwMDUyNTY3OjE3ODAxMzg5NjdfVjM)
+![1. Collegare il dispositivo – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi/1.jpg)
 
 ## 2. Verificare lo stato del dispositivo
 
@@ -69,7 +69,7 @@ Se non hai ancora familiarità con l'uso di MobaXterm per trasferire file, consu
 
 Trascinare i file estratti su Raspberry Pi 5 con MobaXterm.
 
-![3. Installare le librerie del driver – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NGNlZjZiYTMxNWUyZDE0NGY2NWE5MjVlMjkyMzE1NTVfZGY2YTdlZjQxNDgwZDYzMTIyMDAyNjZjYWZkN2FkYjJfSUQ6NzYwMjQ4NTg3OTQ0MTM0NTQ4NV8xNzgwMDUyNTY3OjE3ODAxMzg5NjdfVjM)
+![3. Installare le librerie del driver – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi/2.png)
 
 ## 4. Visualizzare i dati IMU
 
@@ -81,7 +81,7 @@ cd ~/IMU_ROS2/IMU_Library
 python3 -m IMU_Library.IMU_Serial_Library
 ```
 
-![4. Visualizzare i dati IMU – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YTFjNTdmZmM2MzY0MzQ4YmFkOWU3NGI4MGZlY2FiNDdfZGMwMTAwMzQ5YTI5MDJlYTY5NzQ5ZjBlYzE5MmZlNzlfSUQ6NzYwMjU4Mjg3Nzc5NjM4Nzc4Ml8xNzgwMDUyNTY3OjE3ODAxMzg5NjdfVjM)
+![4. Visualizzare i dati IMU – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi/3.png)
 
 Nota: quanto sopra riguarda un IMU a 10 assi; i modelli a 6 assi non hanno magnetometro né barometro, quelli a 9 assi non hanno barometro.
 
@@ -102,7 +102,7 @@ python3 -m IMU_Library.imu_calibration_tool --mode serial --port /dev/imu-serial
 python3 -m IMU_Library.imu_calibration_tool --mode serial --port /dev/imu-serial --calibrate temp
 ```
 
-![5. Calibrazione IMU – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NGNmMDJmYzMzMjRmMDExMDY5ZmU3ODkzNDZhN2U5NzFfYWJkOTYxYWJlM2MxODEyOTE0NDY4ZjIxNzI4ODZmNmZfSUQ6NzYwMjU4NDA1NDU0MjAxMTYwNV8xNzgwMDUyNTY3OjE3ODAxMzg5NjdfVjM)
+![5. Calibrazione IMU – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi/4.png)
 
 ## 6. Note
 

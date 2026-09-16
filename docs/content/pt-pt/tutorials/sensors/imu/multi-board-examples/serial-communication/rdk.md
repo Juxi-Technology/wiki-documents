@@ -11,7 +11,7 @@ Este tutorial usa a imagem da versão ? da placa-mãe RDK X5 como exemplo.
 
 Conecte o sensor de atitude IMU à porta USB do controlador principal por meio de um cabo Type-C. 
 
-![1. Connect the device – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NGU5NjhmNDI5MmQ1Yjg5ZTViZjg4NDdjMmRkNzFhMTZfMTRlZTQ2NmI5MGIxODI3NTRjMDVkMDU0ZDQ3NDhmNWJfSUQ6NzYzODkzMDkyMTQwMzc0NzI4NV8xNzgwMzE4NDgwOjE3ODA0MDQ4ODBfVjM)
+![1. Connect the device – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk/1.jpg)
 
 ## 2. Verificar o status do dispositivo
 
@@ -27,7 +27,7 @@ Visualizar o Número do Dispositivo
 ls -l /dev/ttyU*
 ```
 
-![2. Check device status – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Njk0ODk4ZWE2ZTBiNjNhMmM3NGZmMDZmNmNjY2I3ZmZfMTY2OTgwNTQ5ZGMwNjUxN2E4MzI2NWQ3NTYzODllNmFfSUQ6NzYzODkzMDkyMDg0MjEzNjUyNV8xNzgwMzE4NDgwOjE3ODA0MDQ4ODBfVjM)
+![2. Check device status – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk/2.png)
 
 Configurar o Mapeamento de Portas
 
@@ -77,7 +77,7 @@ Amigos que ainda não estão familiarizados com o uso do MobaXterm para transfer
 
 Arraste os ficheiros extraídos para o RDK X5 por meio do software MobaXterm.
 
-![3. Install the driver library – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MzQ2NGE4MmVmZGIzNjdmNGU3ZjYzMGRiMTIyM2E1YzFfMTFlMmJhNzU0Mjg2ODI5M2ZlMmNiYTY1ZDI4OTNmMWVfSUQ6NzYzODkzMDkyMjE2NzA0NTA4Nl8xNzgwMzE4NDgwOjE3ODA0MDQ4ODBfVjM)
+![3. Install the driver library – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk/3.png)
 
 ## 4. Visualizar os dados do IMU
 
@@ -90,7 +90,7 @@ cd ~/IMU_ROS2/IMU_Library
 python3 -m IMU_Library.IMU_Serial_Library
 ```
 
-![4. View IMU data – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDM4Y2Y2MzUxY2E4NDkzMjg4NmI0NTYzNTNiMDI4MzNfM2FkNDJmODNlMjU5NzJlZGRlZDM4Njg2NjAzNDI5ZDVfSUQ6NzYzODkzMDkyMDQ5MDAyNzk4MV8xNzgwMzE4NDgwOjE3ODA0MDQ4ODBfVjM)
+![4. View IMU data – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk/4.png)
 
 Observação: O acima é a leitura de dados de um IMU de 10 eixos. O de 6 eixos não possui dados de magnetômetro e barômetro, e o de 9 eixos não possui dados de barômetro.
 

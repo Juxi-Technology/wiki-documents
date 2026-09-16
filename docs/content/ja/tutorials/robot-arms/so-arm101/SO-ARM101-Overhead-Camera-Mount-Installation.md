@@ -14,12 +14,12 @@ description: "SO-ARM101 用オーバーヘッドカメラマウントの取付�
 
 以下の図に従って取り付けます。
 
-![image – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/1.png)
+![image – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/1.png)
 
-![image – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/2.png)
+![image – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/2.png)
 
-![image – 3](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/3.png)
+![image – 3](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/3.png)
 
-![image – 4](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/4.png)
+![image – 4](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/4.png)
 
-![image – 5](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/5.png)
+![image – 5](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/5.png)

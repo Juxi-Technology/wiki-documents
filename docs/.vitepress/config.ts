@@ -222,8 +222,28 @@ const zhCN = {
               collapsed: true,
               items: [
                 { text: '界面控制教程', link: '/zh-hans/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control' },
+                { text: 'AmazingHand灵巧手产品资料', link: '/zh-hans/tutorials/robot-arms/amazing-hand/product-info' },
                 { text: '官方示例运行教程', link: '/zh-hans/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example' },
                 { text: 'TTL 调试教程', link: '/zh-hans/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging' },
+                {
+                  text: 'PWM 舵机调试教程',
+                  collapsed: true,
+                  items: [
+                    { text: '01-GUI可视化控制', link: '/zh-hans/tutorials/robot-arms/amazing-hand/pwm-debugging/01-GUI-Visual-Control' },
+                    { text: '02-手势追踪教程', link: '/zh-hans/tutorials/robot-arms/amazing-hand/pwm-debugging/02-Gesture-Tracking' },
+                    { text: '03-PWM舵机版本-使用手册', link: '/zh-hans/tutorials/robot-arms/amazing-hand/pwm-debugging/03-PWM-Servo-Manual' },
+                    { text: '04-串口舵机版本-使用说明', link: '/zh-hans/tutorials/robot-arms/amazing-hand/pwm-debugging/04-Serial-Servo-Guide' },
+                  ],
+                },
+                {
+                  text: '手势追踪教程',
+                  collapsed: true,
+                  items: [
+                    { text: 'Linux（Ubuntu）一键部署运行', link: '/zh-hans/tutorials/robot-arms/amazing-hand/gesture-tracking/01-Ubuntu' },
+                    { text: 'Windows一键部署运行', link: '/zh-hans/tutorials/robot-arms/amazing-hand/gesture-tracking/02-Windows' },
+                    { text: 'Mac一键部署运行', link: '/zh-hans/tutorials/robot-arms/amazing-hand/gesture-tracking/03-macOS' },
+                  ],
+                },
               ],
             },
             {
@@ -351,6 +371,8 @@ const zhCN = {
               items: [
                 { text: '产品信息', link: '/zh-hans/tutorials/sensors/imu/product-info' },
                 { text: 'IMU 校准', link: '/zh-hans/tutorials/sensors/imu/calibration' },
+                { text: '文件远程传输', link: '/zh-hans/tutorials/sensors/imu/remote-file-transfer' },
+                { text: 'SSH文件传输', link: '/zh-hans/tutorials/sensors/imu/ssh-file-transfer' },
                 {
                   text: '多板卡示例',
                   items: [
@@ -582,8 +604,28 @@ const en = {
               collapsed: true,
               items: [
                 { text: 'Interface Control Tutorial', link: '/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control' },
+                { text: 'AmazingHand Dexterous Hand Product Information', link: '/tutorials/robot-arms/amazing-hand/product-info' },
                 { text: 'Official Example Tutorial', link: '/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example' },
                 { text: 'TTL Debugging Tutorial', link: '/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging' },
+                {
+                  text: 'PWM Servo Debugging',
+                  collapsed: true,
+                  items: [
+                    { text: '01-GUI Visual Control', link: '/tutorials/robot-arms/amazing-hand/pwm-debugging/01-GUI-Visual-Control' },
+                    { text: '02-Gesture Tracking Tutorial', link: '/tutorials/robot-arms/amazing-hand/pwm-debugging/02-Gesture-Tracking' },
+                    { text: '03-PWM Servo Version-User Manual', link: '/tutorials/robot-arms/amazing-hand/pwm-debugging/03-PWM-Servo-Manual' },
+                    { text: '04-Serial Bus Servo Version-User Instructions', link: '/tutorials/robot-arms/amazing-hand/pwm-debugging/04-Serial-Servo-Guide' },
+                  ],
+                },
+                {
+                  text: 'Gesture Tracking',
+                  collapsed: true,
+                  items: [
+                    { text: 'Linux (Ubuntu) One-Click Deployment and Run', link: '/tutorials/robot-arms/amazing-hand/gesture-tracking/01-Ubuntu' },
+                    { text: 'Windows One-Click Deployment and Run', link: '/tutorials/robot-arms/amazing-hand/gesture-tracking/02-Windows' },
+                    { text: 'Mac One-Click Deployment and Run', link: '/tutorials/robot-arms/amazing-hand/gesture-tracking/03-macOS' },
+                  ],
+                },
               ],
             },
             {
@@ -711,6 +753,8 @@ const en = {
               items: [
                 { text: 'Product Info', link: '/tutorials/sensors/imu/product-info' },
                 { text: 'IMU Calibration', link: '/tutorials/sensors/imu/calibration' },
+                { text: 'Remote File Transfer', link: '/tutorials/sensors/imu/remote-file-transfer' },
+                { text: 'SSH File Transfer', link: '/tutorials/sensors/imu/ssh-file-transfer' },
                 {
                   text: 'Multi-Board Examples',
                   items: [
@@ -942,8 +986,28 @@ const zhHK = {
               collapsed: true,
               items: [
                 { text: '界面控制教程', link: '/zh-hant/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control' },
+                { text: 'AmazingHand靈巧手產品資料', link: '/zh-hant/tutorials/robot-arms/amazing-hand/product-info' },
                 { text: '官方示例運行教程', link: '/zh-hant/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example' },
                 { text: 'TTL 調試教程', link: '/zh-hant/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging' },
+                {
+                  text: 'PWM 舵機調試教程',
+                  collapsed: true,
+                  items: [
+                    { text: '01-GUI可視化控制', link: '/zh-hant/tutorials/robot-arms/amazing-hand/pwm-debugging/01-GUI-Visual-Control' },
+                    { text: '02-手勢追蹤教程', link: '/zh-hant/tutorials/robot-arms/amazing-hand/pwm-debugging/02-Gesture-Tracking' },
+                    { text: '03-PWM舵機版本-使用手冊', link: '/zh-hant/tutorials/robot-arms/amazing-hand/pwm-debugging/03-PWM-Servo-Manual' },
+                    { text: '04-串口舵機版本-使用說明', link: '/zh-hant/tutorials/robot-arms/amazing-hand/pwm-debugging/04-Serial-Servo-Guide' },
+                  ],
+                },
+                {
+                  text: '手勢追蹤教程',
+                  collapsed: true,
+                  items: [
+                    { text: 'Linux（Ubuntu）一鍵部署執行', link: '/zh-hant/tutorials/robot-arms/amazing-hand/gesture-tracking/01-Ubuntu' },
+                    { text: 'Windows一鍵部署執行', link: '/zh-hant/tutorials/robot-arms/amazing-hand/gesture-tracking/02-Windows' },
+                    { text: 'Mac一鍵部署執行', link: '/zh-hant/tutorials/robot-arms/amazing-hand/gesture-tracking/03-macOS' },
+                  ],
+                },
               ],
             },
             {
@@ -1071,6 +1135,8 @@ const zhHK = {
               items: [
                 { text: '產品資料', link: '/zh-hant/tutorials/sensors/imu/product-info' },
                 { text: 'IMU 校準', link: '/zh-hant/tutorials/sensors/imu/calibration' },
+                { text: '檔案遠程傳輸', link: '/zh-hant/tutorials/sensors/imu/remote-file-transfer' },
+                { text: 'SSH檔案傳輸', link: '/zh-hant/tutorials/sensors/imu/ssh-file-transfer' },
                 {
                   text: '多板卡示例',
                   items: [
@@ -1360,8 +1426,28 @@ export default defineConfig({
               collapsed: true,
               items: [
                 { text: 'ロボットハンド インターフェース制御', link: '/ja/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control' },
+                { text: 'AmazingHand 器用なハンド製品資料', link: '/ja/tutorials/robot-arms/amazing-hand/product-info' },
                 { text: '器用ハンド公式サンプル実行チュートリアル', link: '/ja/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example' },
                 { text: '器用ハンド（TTL シリアルサーボ）デバッグチュートリアル', link: '/ja/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging' },
+                {
+                  text: 'PWMサーボ デバッグ',
+                  collapsed: true,
+                  items: [
+                    { text: '01-GUI 可視化制御', link: '/ja/tutorials/robot-arms/amazing-hand/pwm-debugging/01-GUI-Visual-Control' },
+                    { text: '02-ジェスチャートラッキングチュートリアル', link: '/ja/tutorials/robot-arms/amazing-hand/pwm-debugging/02-Gesture-Tracking' },
+                    { text: '03-PWM サーボバージョン-使用マニュアル', link: '/ja/tutorials/robot-arms/amazing-hand/pwm-debugging/03-PWM-Servo-Manual' },
+                    { text: '04-シリアルサーボバージョン-使用説明', link: '/ja/tutorials/robot-arms/amazing-hand/pwm-debugging/04-Serial-Servo-Guide' },
+                  ],
+                },
+                {
+                  text: 'ジェスチャー追跡',
+                  collapsed: true,
+                  items: [
+                    { text: 'Linux（Ubuntu）ワンクリックデプロイ実行', link: '/ja/tutorials/robot-arms/amazing-hand/gesture-tracking/01-Ubuntu' },
+                    { text: 'Windows ワンクリックデプロイ実行', link: '/ja/tutorials/robot-arms/amazing-hand/gesture-tracking/02-Windows' },
+                    { text: 'Mac ワンクリックデプロイ実行', link: '/ja/tutorials/robot-arms/amazing-hand/gesture-tracking/03-macOS' },
+                  ],
+                },
               ],
             },
             {
@@ -1376,6 +1462,8 @@ export default defineConfig({
           { text: 'センサー', items: [
             { text: 'センサーと知覚', link: '/ja/tutorials/sensors/' },
             { text: 'IMU キャリブレーション', link: '/ja/tutorials/sensors/imu/calibration' },
+            { text: 'ファイルリモート転送', link: '/ja/tutorials/sensors/imu/remote-file-transfer' },
+            { text: 'SSHファイル転送', link: '/ja/tutorials/sensors/imu/ssh-file-transfer' },
             {
               text: 'IMU 慣性ナビゲーション',
               collapsed: true,
@@ -1683,8 +1771,28 @@ export default defineConfig({
               collapsed: true,
               items: [
                 { text: '로봇 핸드 인터페이스 제어', link: '/ko/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control' },
+                { text: 'AmazingHand 로봇 손 제품 자료', link: '/ko/tutorials/robot-arms/amazing-hand/product-info' },
                 { text: '로봇핸드 공식 예제 실행 튜토리얼', link: '/ko/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example' },
                 { text: '로봇핸드(TTL 직렬 서보) 디버깅 튜토리얼', link: '/ko/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging' },
+                {
+                  text: 'PWM 서보 디버깅',
+                  collapsed: true,
+                  items: [
+                    { text: '01-GUI 시각화 제어', link: '/ko/tutorials/robot-arms/amazing-hand/pwm-debugging/01-GUI-Visual-Control' },
+                    { text: '02-제스처 추적 튜토리얼', link: '/ko/tutorials/robot-arms/amazing-hand/pwm-debugging/02-Gesture-Tracking' },
+                    { text: '03-PWM 서보 버전-사용 매뉴얼', link: '/ko/tutorials/robot-arms/amazing-hand/pwm-debugging/03-PWM-Servo-Manual' },
+                    { text: '04-시리얼 서보 버전-사용 설명', link: '/ko/tutorials/robot-arms/amazing-hand/pwm-debugging/04-Serial-Servo-Guide' },
+                  ],
+                },
+                {
+                  text: '제스처 트래킹',
+                  collapsed: true,
+                  items: [
+                    { text: 'Linux(Ubuntu) 원클릭 배포 실행', link: '/ko/tutorials/robot-arms/amazing-hand/gesture-tracking/01-Ubuntu' },
+                    { text: 'Windows 원클릭 배포 실행', link: '/ko/tutorials/robot-arms/amazing-hand/gesture-tracking/02-Windows' },
+                    { text: 'Mac 원클릭 배포 실행', link: '/ko/tutorials/robot-arms/amazing-hand/gesture-tracking/03-macOS' },
+                  ],
+                },
               ],
             },
             {
@@ -1699,6 +1807,8 @@ export default defineConfig({
           { text: '센서', items: [
             { text: '센서와 인지', link: '/ko/tutorials/sensors/' },
             { text: 'IMU 캘리브레이션', link: '/ko/tutorials/sensors/imu/calibration' },
+            { text: '파일 원격 전송', link: '/ko/tutorials/sensors/imu/remote-file-transfer' },
+            { text: 'SSH 파일 전송', link: '/ko/tutorials/sensors/imu/ssh-file-transfer' },
             {
               text: 'IMU 관성 내비게이션',
               collapsed: true,
@@ -2006,8 +2116,28 @@ export default defineConfig({
               collapsed: true,
               items: [
                 { text: 'Roboterhand Interface-Steuerung', link: '/de/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control' },
+                { text: 'AmazingHand Fingerhand Produktinformationen', link: '/de/tutorials/robot-arms/amazing-hand/product-info' },
                 { text: 'Tutorial zum offiziellen Beispiel der Roboterhand', link: '/de/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example' },
                 { text: 'Dexterous Hand (TTL-Servo) Debug-Tutorial', link: '/de/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging' },
+                {
+                  text: 'PWM-Servo-Debugging',
+                  collapsed: true,
+                  items: [
+                    { text: '01-GUI-visuelle Steuerung', link: '/de/tutorials/robot-arms/amazing-hand/pwm-debugging/01-GUI-Visual-Control' },
+                    { text: '02-Gesten-Tracking-Tutorial', link: '/de/tutorials/robot-arms/amazing-hand/pwm-debugging/02-Gesture-Tracking' },
+                    { text: '03-PWM-Servo-Version - Handbuch', link: '/de/tutorials/robot-arms/amazing-hand/pwm-debugging/03-PWM-Servo-Manual' },
+                    { text: '04-Serienservo-Version - Benutzungshinweise', link: '/de/tutorials/robot-arms/amazing-hand/pwm-debugging/04-Serial-Servo-Guide' },
+                  ],
+                },
+                {
+                  text: 'Gestenverfolgung',
+                  collapsed: true,
+                  items: [
+                    { text: 'Linux（Ubuntu）Ein-Klick-Deployment und -Ausführung', link: '/de/tutorials/robot-arms/amazing-hand/gesture-tracking/01-Ubuntu' },
+                    { text: 'Windows Ein-Klick-Deployment und -Ausführung', link: '/de/tutorials/robot-arms/amazing-hand/gesture-tracking/02-Windows' },
+                    { text: 'Mac Ein-Klick-Deployment und -Ausführung', link: '/de/tutorials/robot-arms/amazing-hand/gesture-tracking/03-macOS' },
+                  ],
+                },
               ],
             },
             {
@@ -2022,6 +2152,8 @@ export default defineConfig({
           { text: 'Sensoren', items: [
             { text: 'Sensoren & Wahrnehmung', link: '/de/tutorials/sensors/' },
             { text: 'IMU-Kalibrierung', link: '/de/tutorials/sensors/imu/calibration' },
+            { text: 'Remote-Dateiübertragung', link: '/de/tutorials/sensors/imu/remote-file-transfer' },
+            { text: 'SSH-Dateiübertragung', link: '/de/tutorials/sensors/imu/ssh-file-transfer' },
             {
               text: 'IMU-Trägheitsnavigation',
               collapsed: true,
@@ -2329,8 +2461,28 @@ export default defineConfig({
               collapsed: true,
               items: [
                 { text: "Contrôle d'interface main robotique", link: '/fr/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control' },
+                { text: 'Documentation produit AmazingHand', link: '/fr/tutorials/robot-arms/amazing-hand/product-info' },
                 { text: "Tutoriel d'exécution de l'exemple officiel de la main robotique", link: '/fr/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example' },
                 { text: 'Tutoriel de débogage de la main robotique (servo TTL)', link: '/fr/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging' },
+                {
+                  text: 'Débogage servo PWM',
+                  collapsed: true,
+                  items: [
+                    { text: '01-Contrôle visuel par GUI', link: '/fr/tutorials/robot-arms/amazing-hand/pwm-debugging/01-GUI-Visual-Control' },
+                    { text: '02-Tutoriel de suivi de gestes', link: '/fr/tutorials/robot-arms/amazing-hand/pwm-debugging/02-Gesture-Tracking' },
+                    { text: '03-Version servomoteurs PWM - Manuel d\'utilisation', link: '/fr/tutorials/robot-arms/amazing-hand/pwm-debugging/03-PWM-Servo-Manual' },
+                    { text: '04-Version servomoteurs série - Notice d\'utilisation', link: '/fr/tutorials/robot-arms/amazing-hand/pwm-debugging/04-Serial-Servo-Guide' },
+                  ],
+                },
+                {
+                  text: 'Suivi des gestes',
+                  collapsed: true,
+                  items: [
+                    { text: 'Déploiement et exécution en un clic sous Linux (Ubuntu)', link: '/fr/tutorials/robot-arms/amazing-hand/gesture-tracking/01-Ubuntu' },
+                    { text: 'Déploiement et exécution en un clic sous Windows', link: '/fr/tutorials/robot-arms/amazing-hand/gesture-tracking/02-Windows' },
+                    { text: 'Déploiement et exécution en un clic sous Mac', link: '/fr/tutorials/robot-arms/amazing-hand/gesture-tracking/03-macOS' },
+                  ],
+                },
               ],
             },
             {
@@ -2345,6 +2497,8 @@ export default defineConfig({
           { text: 'Capteurs', items: [
             { text: 'Capteurs et perception', link: '/fr/tutorials/sensors/' },
             { text: 'Calibration IMU', link: '/fr/tutorials/sensors/imu/calibration' },
+            { text: 'Transfert de fichiers à distance', link: '/fr/tutorials/sensors/imu/remote-file-transfer' },
+            { text: 'Transfert de fichiers SSH', link: '/fr/tutorials/sensors/imu/ssh-file-transfer' },
             {
               text: 'Navigation inertielle IMU',
               collapsed: true,
@@ -2652,8 +2806,28 @@ export default defineConfig({
               collapsed: true,
               items: [
                 { text: 'Control de interfaz de mano robótica', link: '/es/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control' },
+                { text: 'Material de producto de la mano diestra AmazingHand', link: '/es/tutorials/robot-arms/amazing-hand/product-info' },
                 { text: 'Tutorial de ejecución del ejemplo oficial de la mano robótica', link: '/es/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example' },
                 { text: 'Tutorial de depuración de la mano hábil (servo TTL)', link: '/es/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging' },
+                {
+                  text: 'Depuración servo PWM',
+                  collapsed: true,
+                  items: [
+                    { text: '01-Control visual por GUI', link: '/es/tutorials/robot-arms/amazing-hand/pwm-debugging/01-GUI-Visual-Control' },
+                    { text: '02-Tutorial de seguimiento de gestos', link: '/es/tutorials/robot-arms/amazing-hand/pwm-debugging/02-Gesture-Tracking' },
+                    { text: '03-Versión con servos PWM - Manual de uso', link: '/es/tutorials/robot-arms/amazing-hand/pwm-debugging/03-PWM-Servo-Manual' },
+                    { text: '04-Versión con servos de puerto serie - Instrucciones de uso', link: '/es/tutorials/robot-arms/amazing-hand/pwm-debugging/04-Serial-Servo-Guide' },
+                  ],
+                },
+                {
+                  text: 'Seguimiento de gestos',
+                  collapsed: true,
+                  items: [
+                    { text: 'Despliegue y ejecución en Linux (Ubuntu) en un clic', link: '/es/tutorials/robot-arms/amazing-hand/gesture-tracking/01-Ubuntu' },
+                    { text: 'Despliegue y ejecución en Windows en un clic', link: '/es/tutorials/robot-arms/amazing-hand/gesture-tracking/02-Windows' },
+                    { text: 'Despliegue y ejecución en Mac en un clic', link: '/es/tutorials/robot-arms/amazing-hand/gesture-tracking/03-macOS' },
+                  ],
+                },
               ],
             },
             {
@@ -2668,6 +2842,8 @@ export default defineConfig({
           { text: 'Sensores', items: [
             { text: 'Sensores y percepción', link: '/es/tutorials/sensors/' },
             { text: 'Calibración IMU', link: '/es/tutorials/sensors/imu/calibration' },
+            { text: 'Transferencia remota de archivos', link: '/es/tutorials/sensors/imu/remote-file-transfer' },
+            { text: 'Transferencia de archivos por SSH', link: '/es/tutorials/sensors/imu/ssh-file-transfer' },
             {
               text: 'Navegación inercial IMU',
               collapsed: true,
@@ -2975,8 +3151,28 @@ export default defineConfig({
               collapsed: true,
               items: [
                 { text: 'Controllo interfaccia mano robotica', link: '/it/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control' },
+                { text: 'Scheda prodotto AmazingHand', link: '/it/tutorials/robot-arms/amazing-hand/product-info' },
                 { text: "Tutorial di esecuzione dell'esempio ufficiale della mano robotica", link: '/it/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example' },
                 { text: 'Tutorial di debug della mano dexterous (servo TTL)', link: '/it/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging' },
+                {
+                  text: 'Debug servo PWM',
+                  collapsed: true,
+                  items: [
+                    { text: '01-Controllo visuale tramite GUI', link: '/it/tutorials/robot-arms/amazing-hand/pwm-debugging/01-GUI-Visual-Control' },
+                    { text: '02-Tutorial del tracciamento dei gesti', link: '/it/tutorials/robot-arms/amazing-hand/pwm-debugging/02-Gesture-Tracking' },
+                    { text: '03-Versione con servomotori PWM-Manuale d\'uso', link: '/it/tutorials/robot-arms/amazing-hand/pwm-debugging/03-PWM-Servo-Manual' },
+                    { text: '04-Versione con servomotori seriali-Istruzioni per l\'uso', link: '/it/tutorials/robot-arms/amazing-hand/pwm-debugging/04-Serial-Servo-Guide' },
+                  ],
+                },
+                {
+                  text: 'Tracciamento gesti',
+                  collapsed: true,
+                  items: [
+                    { text: 'Distribuzione ed esecuzione in un clic su Linux（Ubuntu）', link: '/it/tutorials/robot-arms/amazing-hand/gesture-tracking/01-Ubuntu' },
+                    { text: 'Distribuzione ed esecuzione in un clic su Windows', link: '/it/tutorials/robot-arms/amazing-hand/gesture-tracking/02-Windows' },
+                    { text: 'Distribuzione ed esecuzione in un clic su Mac', link: '/it/tutorials/robot-arms/amazing-hand/gesture-tracking/03-macOS' },
+                  ],
+                },
               ],
             },
             {
@@ -2991,6 +3187,8 @@ export default defineConfig({
           { text: 'Sensori', items: [
             { text: 'Sensori e percezione', link: '/it/tutorials/sensors/' },
             { text: 'Calibrazione IMU', link: '/it/tutorials/sensors/imu/calibration' },
+            { text: 'Trasferimento remoto di file', link: '/it/tutorials/sensors/imu/remote-file-transfer' },
+            { text: 'Trasferimento di file tramite SSH', link: '/it/tutorials/sensors/imu/ssh-file-transfer' },
             {
               text: 'Navigazione inerziale IMU',
               collapsed: true,
@@ -3306,8 +3504,28 @@ export default defineConfig({
                 collapsed: true,
                 items: [
                   { text: 'Controle de Interface da Mão Robótica', link: '/pt-br/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control' },
+                  { text: 'AmazingHand Mão hábil — Informações do produto', link: '/pt-br/tutorials/robot-arms/amazing-hand/product-info' },
                   { text: 'Tutorial do Exemplo Oficial da Mão Robótica', link: '/pt-br/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example' },
                   { text: 'Tutorial de Depuração da Mão Hábil (servo TTL)', link: '/pt-br/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging' },
+                  {
+                    text: 'Depuração servo PWM',
+                    collapsed: true,
+                    items: [
+                      { text: '01-Controle visual por GUI', link: '/pt-br/tutorials/robot-arms/amazing-hand/pwm-debugging/01-GUI-Visual-Control' },
+                      { text: '02-Tutorial de rastreamento de gestos', link: '/pt-br/tutorials/robot-arms/amazing-hand/pwm-debugging/02-Gesture-Tracking' },
+                      { text: '03-Versão com servomotor PWM-Manual de uso', link: '/pt-br/tutorials/robot-arms/amazing-hand/pwm-debugging/03-PWM-Servo-Manual' },
+                      { text: '04-Versão de servomotor serial-Instruções de uso', link: '/pt-br/tutorials/robot-arms/amazing-hand/pwm-debugging/04-Serial-Servo-Guide' },
+                    ],
+                  },
+                  {
+                    text: 'Rastreamento de gestos',
+                    collapsed: true,
+                    items: [
+                      { text: 'Linux (Ubuntu) implantação e execução com um clique', link: '/pt-br/tutorials/robot-arms/amazing-hand/gesture-tracking/01-Ubuntu' },
+                      { text: 'Implantação e execução com um clique no Windows', link: '/pt-br/tutorials/robot-arms/amazing-hand/gesture-tracking/02-Windows' },
+                      { text: 'Mac implantação e execução com um clique', link: '/pt-br/tutorials/robot-arms/amazing-hand/gesture-tracking/03-macOS' },
+                    ],
+                  },
                 ],
               },
               {
@@ -3435,6 +3653,8 @@ export default defineConfig({
                 items: [
                   { text: 'Informações do Produto', link: '/pt-br/tutorials/sensors/imu/product-info' },
                   { text: 'Calibração IMU', link: '/pt-br/tutorials/sensors/imu/calibration' },
+                  { text: 'Transferência remota de arquivos', link: '/pt-br/tutorials/sensors/imu/remote-file-transfer' },
+                  { text: 'Transferência de arquivos via SSH', link: '/pt-br/tutorials/sensors/imu/ssh-file-transfer' },
                   {
                     text: 'Exemplos Multi-Placa',
                     items: [
@@ -3652,8 +3872,28 @@ export default defineConfig({
                 collapsed: true,
                 items: [
                   { text: 'Controle de Interface da Mão Robótica', link: '/pt-pt/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control' },
+                  { text: 'AmazingHand Mão hábil — Informações do produto', link: '/pt-pt/tutorials/robot-arms/amazing-hand/product-info' },
                   { text: 'Tutorial do Exemplo Oficial da Mão Robótica', link: '/pt-pt/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example' },
                   { text: 'Tutorial de Depuração da Mão Hábil (servo TTL)', link: '/pt-pt/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging' },
+                  {
+                    text: 'Depuração servo PWM',
+                    collapsed: true,
+                    items: [
+                      { text: '01-Controlo visual por GUI', link: '/pt-pt/tutorials/robot-arms/amazing-hand/pwm-debugging/01-GUI-Visual-Control' },
+                      { text: '02-Tutorial de rastreamento de gestos', link: '/pt-pt/tutorials/robot-arms/amazing-hand/pwm-debugging/02-Gesture-Tracking' },
+                      { text: '03-Versão com servomotor PWM-Manual de utilização', link: '/pt-pt/tutorials/robot-arms/amazing-hand/pwm-debugging/03-PWM-Servo-Manual' },
+                      { text: '04-Versão de servomotor série-Instruções de utilização', link: '/pt-pt/tutorials/robot-arms/amazing-hand/pwm-debugging/04-Serial-Servo-Guide' },
+                    ],
+                  },
+                  {
+                    text: 'Rastreamento de gestos',
+                    collapsed: true,
+                    items: [
+                      { text: 'Linux (Ubuntu) implementação e execução com um clique', link: '/pt-pt/tutorials/robot-arms/amazing-hand/gesture-tracking/01-Ubuntu' },
+                      { text: 'Implementação e execução com um clique no Windows', link: '/pt-pt/tutorials/robot-arms/amazing-hand/gesture-tracking/02-Windows' },
+                      { text: 'Mac implementação e execução com um clique', link: '/pt-pt/tutorials/robot-arms/amazing-hand/gesture-tracking/03-macOS' },
+                    ],
+                  },
                 ],
               },
               {
@@ -3781,6 +4021,8 @@ export default defineConfig({
                 items: [
                   { text: 'Informações do Produto', link: '/pt-pt/tutorials/sensors/imu/product-info' },
                   { text: 'Calibração IMU', link: '/pt-pt/tutorials/sensors/imu/calibration' },
+                  { text: 'Transferência remota de ficheiros', link: '/pt-pt/tutorials/sensors/imu/remote-file-transfer' },
+                  { text: 'Transferência de ficheiros via SSH', link: '/pt-pt/tutorials/sensors/imu/ssh-file-transfer' },
                   {
                     text: 'Exemplos Multi-Placa',
                     items: [

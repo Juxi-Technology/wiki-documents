@@ -14,12 +14,12 @@ description: "Cámara USB autofoco: ver tutorial de cámara USB"
 
 Los usuarios que compren el kit de cámara de profundidad D405C pueden solicitar la contraseña del tutorial RealSense D405C enviando el número de pedido al servicio de atención al cliente de Taobao.
 
-![imagen – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/1.png)
+![imagen – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/1.png)
 
-![imagen – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/2.png)
+![imagen – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/2.png)
 
-![imagen – 3](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/3.png)
+![imagen – 3](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/3.png)
 
-![imagen – 4](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/4.png)
+![imagen – 4](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/4.png)
 
-![imagen – 5](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/5.png)
+![imagen – 5](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/5.png)

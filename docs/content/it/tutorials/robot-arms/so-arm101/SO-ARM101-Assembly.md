@@ -8,7 +8,7 @@ description: "Versione Pro: braccio leader 5V6A, braccio follower 12V5A"
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/so-arm101-developers-kit)**
 
 
-![image – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
+![image – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
 
 **Il braccio leader (attivo) della versione Pro usa un alimentatore 5V6A, mentre il braccio follower (passivo) usa un alimentatore 12V5A**
 
@@ -16,7 +16,7 @@ Impostazione degli ID dei servo, calibrazione dell'angolo dei servo e montaggio 
 
 ## Passo 1: Impostare l'ID dei servo e installare il braccetto del servo (escluso il servo n. 5)
 
-![image – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
+![image – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
 
 Ancora una volta, assicurati che gli ID delle articolazioni dei servo e il rapporto di trasmissione corrispondano rigorosamente a quelli di **SO-ARM101**.
 
@@ -96,11 +96,11 @@ SO-ARM101机械臂组装教程.mp4
 
 Installazione della scheda driver dei servo: installa prima 4 pilastrini in rame, poi fissa la scheda driver con quattro viti M2.5\*8
 
-![Sistema Linux/Ubuntu – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/7.png)
+![Sistema Linux/Ubuntu – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/7.png)
 
-![Sistema Linux/Ubuntu – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/8.png)
+![Sistema Linux/Ubuntu – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/8.png)
 
-![Sistema Linux/Ubuntu – 3](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
+![Sistema Linux/Ubuntu – 3](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
 
 **Il braccio leader nero della versione Pro usa un alimentatore 5V6A, mentre il braccio follower bianco usa un alimentatore 12V5A**
 

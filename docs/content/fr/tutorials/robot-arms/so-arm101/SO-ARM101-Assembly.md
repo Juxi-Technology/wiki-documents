@@ -8,7 +8,7 @@ description: "Version Pro : bras leader 5V6A, bras follower 12V5A"
 > **[Acheter en boutique](https://www.juxitech.com/fr/products/so-arm101-developers-kit)**
 
 
-![image – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
+![image – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
 
 **Version Pro : le bras leader (noir) utilise un adaptateur 5V6A, tandis que le bras follower (blanc) utilise un adaptateur 12V5A**
 
@@ -16,7 +16,7 @@ Le réglage des ID des servos, la calibration des angles et le montage doivent �
 
 ## Étape 1 : Régler les ID des servos et installer les pignons (sauf le servo n° 5)
 
-![image – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
+![image – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
 
 Encore une fois, assurez-vous que les ID des articulations et les rapports d'engrenage correspondent strictement à ceux du **SO-ARM101**.
 
@@ -96,11 +96,11 @@ SO-ARM101机械臂组装教程.mp4
 
 Installation de la carte driver des servos : installez d'abord 4 entretoises en cuivre, puis fixez la carte driver avec quatre vis M2.5\*8
 
-![Système Linux/Ubuntu – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/7.png)
+![Système Linux/Ubuntu – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/7.png)
 
-![Système Linux/Ubuntu – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/8.png)
+![Système Linux/Ubuntu – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/8.png)
 
-![Système Linux/Ubuntu – 3](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
+![Système Linux/Ubuntu – 3](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
 
 **Version Pro : le bras leader (noir) utilise un adaptateur 5V6A, tandis que le bras follower (blanc) utilise un adaptateur 12V5A**
 

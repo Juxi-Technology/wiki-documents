@@ -7,15 +7,15 @@ description: "本次例程使用的是Arduino Nano开发版，一台windows电�
 
 本次例程使用的是Arduino Nano开发版，一台windows电脑、杜邦线若干、IMU姿态传感器、USB转TTL模块。
 
-Arduino.rar
+[Arduino.rar](/downloads/Arduino.rar)
 
 ## 1. 连接设备
 
-![1. 连接设备 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDZkYTc3ZWEyODIzYjQzMDBjYzcwODY5MmM2OWQ2MWZfOTQ3MjMyNWZjMTlmNGM1ZDdkMTg2MWU3ZDQxMjEyNzVfSUQ6NzYxMTEzNTIxMjUzMzQ1MTk5MF8xNzgwMDUyNTU0OjE3ODAxMzg5NTRfVjM)
+![1. 连接设备 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/1.png)
 
-![1. 连接设备 – 2](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDRjOWI4OGZhZWY0MTVjMTkwNzM5NzY3MzNmYjcwYmFfNDJmMjYwZGU4MjkwMTJjNjEzZDQ5OWQ0NTFiMmQ3ZmZfSUQ6NzYxMTEzNTIyOTg2NDA3MDM2OF8xNzgwMDUyNTU0OjE3ODAxMzg5NTRfVjM)
+![1. 连接设备 – 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/2.png)
 
-![1. 连接设备 – 3](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTNiZjAxNGVkOTVkMGEzYjkxM2I0Y2FmZGE0OTEyYjFfZGZmNDIxM2Y0ZDM1NGUwMDk4MjJlNTFhYTZkZWU4MGZfSUQ6NzYxMTEzNTI5OTc1NzgzNzI3M18xNzgwMDUyNTU0OjE3ODAxMzg5NTRfVjM)
+![1. 连接设备 – 3](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/3.jpg)
 
 ## 2. 关键代码解析
 
@@ -185,7 +185,7 @@ _parse_frame_data(): 解析数据帧。
 
 程序下载进入Arduino后，打开串口助手（配置参数如下图所示），可以看到一直打印IMU模块的数据，当我们改变IMU模块的姿态，数据会发生变化。
 
-![3. 读取imu数据 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjYyZjRmMWU1YTI5OTlkZTM1NTFmZjZlMGNiOGIzMmRfM2EwZDczYTdmMmI5NmU2M2E0MjdkYmI1YmExYzI2MzFfSUQ6NzYxMTEzNTk0OTYxOTUxNDU0Nl8xNzgwMDUyNTU0OjE3ODAxMzg5NTRfVjM)
+![3. 读取imu数据 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/4.png)
 
 注意：以上为10轴IMU的数据读取，6轴无磁力计（Magnetometer）与气压计（Barometer）数据，9轴无气压计（Barometer）数据。
 

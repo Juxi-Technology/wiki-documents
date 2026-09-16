@@ -7,16 +7,18 @@ description: "Este ejemplo usa el STM32F103C8T6, un PC Windows, varios cables de
 
 Este ejemplo usa el STM32F103C8T6, un PC Windows, varios cables de puente y el sensor de actitud IMU.
 
-STM32.zip
+[STM32.zip](/downloads/STM32.zip)
 
 Abrir I2C.uvprojx con keil5 y grabar el programa en la placa núcleo STM32F103C8T6
 
 ## 1. Conectar el dispositivo
 
-![1. Conectar el dispositivo – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDBhYjMxNjllNDYyZDNkNWIzMWRhZjNmNTJiYjg5YjNfNWFiNDE1MjM4NWZlMjk2YWJkMjQ1YWVjMzI3NzkzODdfSUQ6NzYxMTg4NzEyMzkzMDk3NTQyOF8xNzgwMDUyNzI4OjE3ODAxMzkxMjhfVjM)
+![1. Conectar el dispositivo – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32/1.png)
 
 ## 2. Explicación del código clave
 
+
+![Imagen 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32/2.png)
 El código concreto está en el código fuente de los materiales.
 
 ```C++
@@ -141,6 +143,6 @@ IMU_I2C_ReadBarometer(): leer datos barométricos: altura, temperatura, presión
 
 Tras descargar el programa en el Arduino, abrir el asistente serie (parámetros como se muestra abajo): los datos del módulo IMU se imprimen continuamente. Al cambiar la orientación del módulo IMU, los datos cambian.
 
-![3. Leer datos IMU – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZTVkMTQ0YWRiMWEzODc3ZDcxM2FhNjY2ZjdhZDlmZGJfMzE1YWM3MzYxYTQzMzlkZjU3MTkzNmE0Nzk2OTBiN2RfSUQ6NzYxMTEzNzIyNzkxODg4Nzg5NV8xNzgwMDUyNzI4OjE3ODAxMzkxMjhfVjM)
+![3. Leer datos IMU – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32/3.png)
 
 Nota: lo anterior son datos de un IMU de 10 ejes; los de 6 ejes no tienen magnetómetro ni barómetro, los de 9 ejes no tienen barómetro.

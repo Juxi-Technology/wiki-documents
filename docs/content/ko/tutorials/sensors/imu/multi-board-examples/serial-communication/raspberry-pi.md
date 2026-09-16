@@ -11,7 +11,7 @@ description: "라즈베리파이 5에서 USB 시리얼 통신으로 IMU 자세 �
 
 IMU 자세 센서를 Type-C 케이블로 호스트의 USB에 꽂습니다.
 
-![1. 장치 연결 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTAxMDU2NzljZjZjMTUyOGY4ZWY0NWE4ZjUyZGJmNGVfODg1Mzk5YzQzYTBkZjE4MjkwOGIwMjNiYWZkODk4MzZfSUQ6NzYwMjU4Mzc1NjcyMTExNDA0OV8xNzgwMDUyNTY3OjE3ODAxMzg5NjdfVjM)
+![1. 장치 연결 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi/1.jpg)
 
 ## 2. 장치 상태 확인
 
@@ -69,7 +69,7 @@ MobaXterm을 사용한 파일 전송이 아직 익숙하지 않은 분은 아래
 
 MobaXterm 소프트웨어로 압축 해제한 파일을 라즈베리파이 5에 드래그합니다.
 
-![3. 드라이버 라이브러리 설치 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NGNlZjZiYTMxNWUyZDE0NGY2NWE5MjVlMjkyMzE1NTVfZGY2YTdlZjQxNDgwZDYzMTIyMDAyNjZjYWZkN2FkYjJfSUQ6NzYwMjQ4NTg3OTQ0MTM0NTQ4NV8xNzgwMDUyNTY3OjE3ODAxMzg5NjdfVjM)
+![3. 드라이버 라이브러리 설치 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi/2.png)
 
 ## 4. imu 데이터 확인
 
@@ -81,7 +81,7 @@ cd ~/IMU_ROS2/IMU_Library
 python3 -m IMU_Library.IMU_Serial_Library
 ```
 
-![4. imu 데이터 확인 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YTFjNTdmZmM2MzY0MzQ4YmFkOWU3NGI4MGZlY2FiNDdfZGMwMTAwMzQ5YTI5MDJlYTY5NzQ5ZjBlYzE5MmZlNzlfSUQ6NzYwMjU4Mjg3Nzc5NjM4Nzc4Ml8xNzgwMDUyNTY3OjE3ODAxMzg5NjdfVjM)
+![4. imu 데이터 확인 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi/3.png)
 
 주의: 위는 10축 IMU 데이터 읽기입니다. 6축은 자기력계(Magnetometer)와 기압계(Barometer) 데이터가 없고, 9축은 기압계(Barometer) 데이터가 없습니다.
 
@@ -102,7 +102,7 @@ python3 -m IMU_Library.imu_calibration_tool --mode serial --port /dev/imu-serial
 python3 -m IMU_Library.imu_calibration_tool --mode serial --port /dev/imu-serial --calibrate temp
 ```
 
-![5. IMU 캘리브레이션 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NGNmMDJmYzMzMjRmMDExMDY5ZmU3ODkzNDZhN2U5NzFfYWJkOTYxYWJlM2MxODEyOTE0NDY4ZjIxNzI4ODZmNmZfSUQ6NzYwMjU4NDA1NDU0MjAxMTYwNV8xNzgwMDUyNTY3OjE3ODAxMzg5NjdfVjM)
+![5. IMU 캘리브레이션 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi/4.png)
 
 ## 6. 주의사항
 

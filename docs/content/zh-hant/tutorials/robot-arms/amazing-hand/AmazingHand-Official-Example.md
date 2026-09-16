@@ -451,3 +451,15 @@ dora run dataflow_tracking_real_right.yml --uv
 ```
 
 <RelatedProducts slugs="amazinghand,servo-driver-board" />
+
+---
+
+## 模型檔案
+
+可在[Onshape](https://cad.onshape.com/documents/430ff184cf3dd9557aaff2be/w/e3658b7152c139971d22c688/e/d79fbb3641873de0a515037e)上查看或下載模型（含右手、URDF檔案），比如需要其他格式的模型檔案
+
+Right_Hand.step
+
+靈巧手的[MuJoCo 模型](https://github.com/pollen-robotics/AmazingHand/tree/main/Demo/AHSimulation/AHSimulation)
+
+![圖 20](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)

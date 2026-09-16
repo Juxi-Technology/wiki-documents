@@ -18,15 +18,15 @@ De acordo com a interface da placa-mãe, existem as três operações de fiaçã
 
 **Interface DP** ——\> Adaptador DP para HDMI ——\> Cabo HDMI ——\> Interface HDMI do coletor ——\> USB/Type-C ——\> Telas como notebooks, computadores, all-in-one, celulares/tablets, etc.
 
-![Operação de fiação – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTg2NDRiZmNmMzhiMzJmYTNlMDUwNTI5MjM1NmNkNTdfMDdkM2VmYmM0NWJhMTI2NjU1NTc2ZWM1ODBjZjgyNzVfSUQ6NzYzODkzMTQxMzk4NzI2NTQ4NF8xNzgwMzg0OTkxOjE3ODA0NzEzOTFfVjM)
+![Operação de fiação – 1](../../../../public/images/tutorials/accessories/4k-hdmi-capture-tutorial/1.jpg)
 
 ## Guia de operação do OBS
 
-![Guia de operação do OBS – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZTY0ZmZiM2JmZTEzYThmZmRmZmJmNDQzZWE3MjAyZmVfZDRkZDgwYjJiMWI1YzU1MWI1ZTJmMmRjZGNkNDM5YTBfSUQ6NzYzODkzMTQxMTY0NTEyMzU1NV8xNzgwMzg0OTkxOjE3ODA0NzEzOTFfVjM)
+![Guia de operação do OBS – 1](../../../../public/images/tutorials/accessories/4k-hdmi-capture-tutorial/2.jpg)
 
 ## **Guia de operação do Potplayer**
 
-![Guia de operação do Potplayer – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTQ3YThkYzFlZmRlNmI3YjI4NjJmOGEwYzkyYmQ1MzNfNjYwNjE3MDEwMWU2ZDFhN2JhNzgyOWE5ODBiZjYxZjFfSUQ6NzYzODkzMTQxNDk2NDM1ODExN18xNzgwMzg0OTkxOjE3ODA0NzEzOTFfVjM)
+![Guia de operação do Potplayer – 1](../../../../public/images/tutorials/accessories/4k-hdmi-capture-tutorial/3.jpg)
 
 
 

@@ -7,16 +7,18 @@ description: "本例はSTM32F103C8T6、Windows PC 1台、ジャンパワイヤ�
 
 本例はSTM32F103C8T6、Windows PC 1台、ジャンパワイヤ数本、IMU姿勢センサーを使用します。
 
-STM32.zip
+[STM32.zip](/downloads/STM32.zip)
 
 keil5ソフトウェアを使用してI2C.uvprojxを開き、プログラムをSTM32F103C8T6コアボードに書き込みます
 
 ## 1. デバイスの接続
 
-![1. デバイスの接続 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDBhYjMxNjllNDYyZDNkNWIzMWRhZjNmNTJiYjg5YjNfNWFiNDE1MjM4NWZlMjk2YWJkMjQ1YWVjMzI3NzkzODdfSUQ6NzYxMTg4NzEyMzkzMDk3NTQyOF8xNzgwMDUyNzI4OjE3ODAxMzkxMjhfVjM)
+![1. デバイスの接続 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32/1.png)
 
 ## 2. キーコードの解説
 
+
+![図 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32/2.png)
 具体的なコードは資料のソースコードを参照してください。
 
 ```C++
@@ -141,6 +143,6 @@ IMU_I2C_ReadBarometer(): 気圧関連データの読み取り：高度、温度�
 
 プログラムをArduinoにダウンロードした後、シリアルアシスタントを開くと（設定パラメータは下図の通り）、IMUモジュールのデータが継続的に印刷されているのがわかります。IMUモジュールの姿勢を変えるとデータが変化します。
 
-![3. imuデータの読み取り – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZTVkMTQ0YWRiMWEzODc3ZDcxM2FhNjY2ZjdhZDlmZGJfMzE1YWM3MzYxYTQzMzlkZjU3MTkzNmE0Nzk2OTBiN2RfSUQ6NzYxMTEzNzIyNzkxODg4Nzg5NV8xNzgwMDUyNzI4OjE3ODAxMzkxMjhfVjM)
+![3. imuデータの読み取り – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32/3.png)
 
 注意：上記は10軸IMUのデータ読み取りです。6軸は磁力計（Magnetometer）と気圧計（Barometer）データがなく、9軸は気圧計（Barometer）データがありません。

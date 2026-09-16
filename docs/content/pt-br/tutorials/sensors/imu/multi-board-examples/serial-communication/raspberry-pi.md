@@ -11,7 +11,7 @@ Este tutorial usa a placa-mãe Raspberry Pi 5 e a imagem oficial de 64 bits como
 
 Conecte o sensor de atitude IMU à porta USB do controlador principal por meio de um cabo Type-C. 
 
-![1. Connect the device – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NjdhZGI0ZDhmNTgxYmQ3MTFlZjA4NjU4YzdhZmFjYzZfN2ZlMTg5ZWEyMGYxZmVlZGI0MmY0YzY3NTI2Mjg3ZDJfSUQ6NzYzODkzMDQ0NDk2MDQxODc0NF8xNzgwMzE4NDA3OjE3ODA0MDQ4MDdfVjM)
+![1. Connect the device – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi/1.jpg)
 
 ## 2. Verificar o status do dispositivo
 
@@ -27,7 +27,7 @@ Visualizar o Número do Dispositivo
 ls -l /dev/ttyU*
 ```
 
-![2. Check device status – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NGYxOGY5NTY4ZGYzNmRiMzZiZWFkYzcwN2EyODk3NGNfZmJlYWZiMGY5NWMwMmQ3MjI3Y2UzNjJlZDA4M2I4ZWNfSUQ6NzYzODkzMDQ0NTE3MDAxOTI2MF8xNzgwMzE4NDA3OjE3ODA0MDQ4MDdfVjM)
+![2. Check device status – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi/2.png)
 
 Configurar o Mapeamento de Portas
 
@@ -77,7 +77,7 @@ Amigos que ainda não estão familiarizados com o uso do MobaXterm para transfer
 
 Arraste os arquivos descompactados para o Raspberry Pi 5 por meio do software MobaXterm. 
 
-![3. Install the driver library – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MDA1ZDAwMTU5ZDIxMDE4YmI1NmE0YjQ0ZGVkNzdhYjlfZmE2NTdhNmM5YjYwMzk3OTkwNGJiZDIxODdmYmM5NTlfSUQ6NzYzODkzMDQ0MjY0MTczODcyOV8xNzgwMzE4NDA3OjE3ODA0MDQ4MDdfVjM)
+![3. Install the driver library – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi/3.png)
 
 ## 4. Visualizar os dados do IMU
 
@@ -90,7 +90,7 @@ cd ~/IMU_ROS2/IMU_Library
 python3 -m IMU_Library.IMU_Serial_Library
 ```
 
-![4. View IMU data – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MGJjMGI3NzIwOGY4NDk3NjFhY2YyM2FjMmViZWU0ZDBfYjcwY2ZiMTgxODQ0MWNmZDMwOTg1ZWU5MmFiOTQwYmJfSUQ6NzYzODkzMDQ0NDE0NjkwNDAzMF8xNzgwMzE4NDA3OjE3ODA0MDQ4MDdfVjM)
+![4. View IMU data – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi/4.png)
 
 Observação: O acima é a leitura de dados de um IMU de 10 eixos. O de 6 eixos não possui dados de magnetômetro e barômetro, e o de 9 eixos não possui dados de barômetro.
 

@@ -9,13 +9,13 @@ description: "IMU 慣導模組 PC 通信教程：透過 Type-C 連接電腦並�
 
 1、IMU姿態傳感器通過type-c數據線連接電腦端
 
-![image – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NTMyOTJjMjU5NTRmZjUxZTFlNjljMzNjODU2YzFmMTRfOTNlMDg5OGQwY2ZlMzMyNDMzNTRlOTMzMGNhOGJlNGVfSUQ6NzYzODk2NTM3OTk0NzQ2NTY4MF8xNzgwNDA0MjM5OjE3ODA0OTA2MzlfVjM)
+![image – 1](../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/pc-communication/1.png)
 
 2、查看串口數據
 
 將串口助手配置如下圖所示，
 
-![image – 2](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NWFhZDJiMWZjZDllNzliNDEwYTEyNmJjMTJlNzk3NjFfZmJiOTc1MTA1ZTc5NzFhOGYzNjk1MWU5MDZkZGY2YmVfSUQ6NzYzODk2NTM4MTAyNTIyMTU2Ml8xNzgwNDA0MjM5OjE3ODA0OTA2MzlfVjM)
+![image – 2](../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/pc-communication/2.png)
 
 串口打印的是沒有經過處理的數據，具體數據含義可參考 “**通信協議**” 文檔。
 

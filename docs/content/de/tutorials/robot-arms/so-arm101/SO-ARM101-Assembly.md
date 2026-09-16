@@ -7,7 +7,7 @@ description: "Pro-Version: Leader-Arm 5V6A, Follower-Arm 12V5A Netzteil"
 
 > **[Im Shop kaufen](https://www.juxitech.com/de/products/so-arm101-developers-kit)**
 
-![image – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
+![image – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
 
 **Pro-Version: Leader-Arm (schwarz) 5V6A, Follower-Arm (weiß) 12V5A Netzteil**
 
@@ -15,7 +15,7 @@ Servo-ID-Einstellung, Winkel-Kalibrierung und Montage im Voraus erledigen. Siehe
 
 ## Schritt 1: Servo-IDs einstellen und Servohörner montieren (außer Servo Nr. 5)
 
-![image – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
+![image – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
 
 **Achtung**: Servo-Gelenk-IDs und Übersetzungsverhältnis müssen exakt zu **SO-ARM101** passen.
 
@@ -95,11 +95,11 @@ SO-ARM101机械臂组装教程.mp4
 
 Montage der Servo-Treiberplatine: Zuerst 4 Kupfersäulen montieren, dann die Treiberplatine mit vier M2.5\*8-Schrauben befestigen
 
-![Linux/Ubuntu-System – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/7.png)
+![Linux/Ubuntu-System – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/7.png)
 
-![Linux/Ubuntu-System – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/8.png)
+![Linux/Ubuntu-System – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/8.png)
 
-![Linux/Ubuntu-System – 3](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
+![Linux/Ubuntu-System – 3](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
 
 **Der schwarze Leader-Arm der Pro-Version verwendet ein 5V6A-Netzteil, der weiße Follower-Arm ein 12V5A-Netzteil**
 

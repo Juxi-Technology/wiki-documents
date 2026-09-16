@@ -7,16 +7,18 @@ description: "Dieses Beispiel verwendet den STM32F103C8T6, einen Windows-PC, meh
 
 Dieses Beispiel verwendet den STM32F103C8T6, einen Windows-PC, mehrere Jumper-Kabel und den IMU-Lagesensor.
 
-STM32.zip
+[STM32.zip](/downloads/STM32.zip)
 
 Mit keil5 die Datei I2C.uvprojx öffnen und das Programm auf das STM32F103C8T6-Core-Board flashen
 
 ## 1. Gerät anschließen
 
-![1. Gerät anschließen – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDBhYjMxNjllNDYyZDNkNWIzMWRhZjNmNTJiYjg5YjNfNWFiNDE1MjM4NWZlMjk2YWJkMjQ1YWVjMzI3NzkzODdfSUQ6NzYxMTg4NzEyMzkzMDk3NTQyOF8xNzgwMDUyNzI4OjE3ODAxMzkxMjhfVjM)
+![1. Gerät anschließen – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32/1.png)
 
 ## 2. Kerncode-Erläuterung
 
+
+![Abb. 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32/2.png)
 Den konkreten Code finden Sie im Quellcode der Unterlagen.
 
 ```C++
@@ -141,6 +143,6 @@ IMU_I2C_ReadBarometer(): Barometerdaten lesen: Höhe, Temperatur, Druck, Druckdi
 
 Nach dem Download des Programms auf das Arduino den seriellen Assistenten öffnen (Parameter wie unten abgebildet): Die IMU-Daten werden fortlaufend ausgegeben. Ändert man die Ausrichtung des IMU-Moduls, ändern sich die Daten.
 
-![3. IMU-Daten auslesen – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZTVkMTQ0YWRiMWEzODc3ZDcxM2FhNjY2ZjdhZDlmZGJfMzE1YWM3MzYxYTQzMzlkZjU3MTkzNmE0Nzk2OTBiN2RfSUQ6NzYxMTEzNzIyNzkxODg4Nzg5NV8xNzgwMDUyNzI4OjE3ODAxMzkxMjhfVjM)
+![3. IMU-Daten auslesen – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32/3.png)
 
 Hinweis: Oben werden die Daten eines 10-Achsen-IMU gelesen; 6-Achsen haben keine Magnetometer- und Barometerdaten, 9-Achsen keine Barometerdaten.

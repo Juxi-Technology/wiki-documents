@@ -11,7 +11,7 @@ Ce tutoriel utilise la carte mère Jetson Orin NX comme exemple.
 
 Brancher le capteur d'attitude IMU sur l'USB de l'hôte via un câble Type-C.
 
-![1. Connecter le périphérique – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MzcwZGQ0YWY0YzFhNTRjY2Y3NDRlMGNiNGRkOGFlZTBfMmZkZTFmMTQ4NzVmMTUyODdkYjFkY2U2ZTNmYzNlYmZfSUQ6NzYwMjU4ODM2NTcxNTc3MDMzM18xNzgwMDUyNTg0OjE3ODAxMzg5ODRfVjM)
+![1. Connecter le périphérique – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson/1.jpg)
 
 ## 2. Vérifier l'état du périphérique
 
@@ -27,6 +27,8 @@ Vérifier le numéro de périphérique
 ls -l /dev/ttyU*
 ```
 
+
+![Image 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson/2.png)
 Configurer le mapping des ports
 
 ```Bash
@@ -69,7 +71,7 @@ Si vous n'êtes pas encore familier avec l'utilisation de MobaXterm pour transf�
 
 Glisser les fichiers décompressés sur la Jetson Orin NX avec MobaXterm.
 
-![3. Installer les bibliothèques de pilotes – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YWE2MDE0NjZkNGUxOTQ2NjU1ZmJkOWQ5MGY0Y2JlZDFfNTJhNjcyYWYwMTY2ZjVjMGM5ZjZhZmM4YTFhYTgwMzJfSUQ6NzYwMzE5OTkxNjEzOTc3NzIyMV8xNzgwMDUyNTg0OjE3ODAxMzg5ODRfVjM)
+![3. Installer les bibliothèques de pilotes – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson/3.png)
 
 ## 4. Afficher les données IMU
 
@@ -81,7 +83,7 @@ cd ~/IMU_ROS2/IMU_Library
 python3 -m IMU_Library.IMU_Serial_Library
 ```
 
-![4. Afficher les données IMU – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YWIyMjM0NDcxOGVhN2VhNTFiNzcyNzliN2ZhYTMzZDVfZGRiNzcyZjdkNzkxZjk3ODZjMDNlNDI4MTc4ZTY4NTVfSUQ6NzYwMjU4NDYwNjQzNjY0MTczM18xNzgwMDUyNTg0OjE3ODAxMzg5ODRfVjM)
+![4. Afficher les données IMU – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson/4.png)
 
 Remarque : ce qui précède concerne un IMU 10 axes ; les 6 axes n'ont pas de magnétomètre ni de baromètre, les 9 axes pas de baromètre.
 
@@ -102,7 +104,7 @@ python3 -m IMU_Library.imu_calibration_tool --mode serial --port /dev/imu-serial
 python3 -m IMU_Library.imu_calibration_tool --mode serial --port /dev/imu-serial --calibrate temp
 ```
 
-![5. Calibrage IMU – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ODU4NTBhMzJmMzhmYjFkMTllZGFjY2M4NjAyNTQ4YWFfMjExNDhmZTRlNmVkZmQzZDY0YTFhM2ZhYjhiNmExYWNfSUQ6NzYwMzIwNzAyMDAxMTIyODM2Nl8xNzgwMDUyNTg0OjE3ODAxMzg5ODRfVjM)
+![5. Calibrage IMU – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson/5.png)
 
 ## 6. Remarques
 

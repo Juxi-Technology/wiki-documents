@@ -226,3 +226,6 @@ sudo chmod 666 /dev/imu-serial
 ```
 
 2. RVIZ可視化で三軸の表示が非常に小さい場合、Enable axes を再チェックしてください
+
+
+![図 1](../../../../../../public/images/tutorials/sensors/imu/ros-examples/ros1/1.png)

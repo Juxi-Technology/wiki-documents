@@ -57,7 +57,7 @@ O projeto oferece suporte a onze idiomas. O inglês é o locale raiz (sem prefix
 - Referencie com caminhos relativos nos tutoriais:
 
 ```markdown
-![description](../../public/images/tutorials/xxx/xxx.png)
+![description](../../../public/images/tutorials/xxx/xxx.png)
 ```
 
 ### Nomenclatura de Ficheiros

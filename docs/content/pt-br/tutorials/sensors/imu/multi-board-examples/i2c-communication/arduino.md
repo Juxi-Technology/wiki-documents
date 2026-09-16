@@ -7,13 +7,13 @@ description: "Este exemplo usa uma placa de desenvolvimento Arduino Nano, um com
 
 Este exemplo usa uma placa de desenvolvimento Arduino Nano, um computador Windows, alguns fios Dupont e um sensor de atitude IMU. 
 
-Arduino.rar
+[Arduino.rar](/downloads/Arduino.rar)
 
 ## 1. Conectar o dispositivo
 
-![1. Connect the device – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjdiZGFhZTI2YzNiMmU1ODQ4M2RiODU5YWFlMmQzOGJfNTNlMTY2Y2Y3MjE2ZDA2ZTU5YjJiYTkwMWMyOThkYTVfSUQ6NzYzODkzMTM3MTkzMTY4MzgxNF8xNzgwMzE4NTU4OjE3ODA0MDQ5NThfVjM)
+![1. Connect the device – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.png)
 
-![1. Connect the device – 2](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NTYxZDM4MDQzMTI2ZDI1ZTQwYjc5NmY4ODUyZGJjNGFfN2Q4MWQ4YTFjMDA1NTk2YjMxM2Q1ZWU0YjIxZTRiMGNfSUQ6NzY0MjE3MzgyOTMzNTIzOTY1MF8xNzgwMzE4NTU4OjE3ODA0MDQ5NThfVjM)
+![1. Connect the device – 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/2.jpg)
 
 ## 2. Análise do Código Principal
 
@@ -141,7 +141,7 @@ IMU_I2C_ReadBarometer(): Lê os dados relacionados ao barômetro: altitude, temp
 
 Depois que o programa é gravado no Arduino, abra o assistente de porta serial (configure os parâmetros conforme mostrado na figura abaixo) e você verá que os dados do módulo IMU são impressos continuamente. Quando mudamos a atitude do módulo IMU, os dados mudam. 
 
-![3. Read IMU data – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MmFlMzc4ZTA4MjYwMGE2NWU3MjNjNWUxNmQ4ZDM1MDdfMjg5MGQ3YzY5OTRkYjM0NjU3YTQ0ZDk1OGNhZWQ1ZDBfSUQ6NzYzODkzMTM3MzQwMzAxNjE1OV8xNzgwMzE4NTU4OjE3ODA0MDQ5NThfVjM)
+![3. Read IMU data – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/3.png)
 
 Observação: O acima é a leitura de dados de um IMU de 10 eixos. O de 6 eixos não possui dados de magnetômetro e barômetro, e o de 9 eixos não possui dados de barômetro.
 

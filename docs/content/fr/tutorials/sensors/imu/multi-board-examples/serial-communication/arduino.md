@@ -7,14 +7,18 @@ description: "Cet exemple utilise la carte de développement Arduino Nano, un PC
 
 Cet exemple utilise la carte de développement Arduino Nano, un PC Windows, plusieurs câbles de liaison, le capteur d'attitude IMU et un module USB-TTL.
 
-Arduino.rar
+[Arduino.rar](/downloads/Arduino.rar)
 
 
 
 ## 1. Connecter le périphérique
 
-![1. Connecter le périphérique – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDZkYTc3ZWEyODIzYjQzMDBjYzcwODY5MmM2OWQ2MWZfOTQ3MjMyNWZjMTlmNGM1ZDdkMTg2MWU3ZDQxMjEyNzVfSUQ6NzYxMTEzNTIxMjUzMzQ1MTk5MF8xNzgwMDUyNTU0OjE3ODAxMzg5NTRfVjM)
 
+![Image 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/1.png)
+![1. Connecter le périphérique – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/1.png)
+
+
+![Image 3](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/3.jpg)
 ## 2. Explication du code clé
 
 Le code concret se trouve dans le code source des documents.
@@ -183,6 +187,6 @@ _parse_frame_data() : analyse la trame de données.
 
 Après avoir téléchargé le programme sur l'Arduino, ouvrir l'assistant série (paramètres comme ci-dessous) : les données du module IMU sont imprimées en continu. En changeant l'orientation du module IMU, les données changent.
 
-![3. Lire les données IMU – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDRjOWI4OGZhZWY0MTVjMTkwNzM5NzY3MzNmYjcwYmFfNDJmMjYwZGU4MjkwMTJjNjEzZDQ5OWQ0NTFiMmQ3ZmZfSUQ6NzYxMTEzNTIyOTg2NDA3MDM2OF8xNzgwMDUyNTU0OjE3ODAxMzg5NTRfVjM)
+![3. Lire les données IMU – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/4.png)
 
 Remarque : ce qui précède concerne un IMU 10 axes ; les 6 axes n'ont pas de magnétomètre ni de baromètre, les 9 axes pas de baromètre.

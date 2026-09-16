@@ -43,7 +43,7 @@ function checkBodyLinks() {
     return out
   }
   const files = walk(contentDir)
-  const SKIP_EXT = /\.(png|jpe?g|gif|webp|svg|mp4|zip|pdf|bin|hex|ino|xlsx|csv)$/i
+  const SKIP_EXT = /\.(png|jpe?g|gif|webp|svg|mp4|webm|zip|rar|7z|stp|step|pdf|bin|hex|ino|xlsx|csv|stl)$/i
   const missing = []
   for (const f of files) {
     const src = fs.readFileSync(f, 'utf8')

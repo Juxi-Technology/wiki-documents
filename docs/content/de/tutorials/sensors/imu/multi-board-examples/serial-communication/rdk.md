@@ -11,7 +11,7 @@ Dieses Tutorial verwendet das RDK X5-Mainboard als Beispiel.
 
 Den IMU-Lagesensor per Typ-C-Kabel an den USB-Anschluss des Hosts anschließen.
 
-![1. Gerät anschließen – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=M2ZiMDI5ZTk0ZjY0YjIwMGIxY2M3MTc4NzI5OThkODlfN2E4NGM0ODE2NTRhNWU2NzI2NmU0Zjg1MmMyNTg1ZDdfSUQ6NzYwMjU4Njc3NTMwMzU1MDkwNV8xNzgwMDUyNjAwOjE3ODAxMzkwMDBfVjM)
+![1. Gerät anschließen – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk/1.jpg)
 
 ## 2. Gerätestatus prüfen
 
@@ -69,7 +69,7 @@ Wer noch nicht mit der Dateiübertragung per MobaXterm vertraut ist, findet unte
 
 Die entpackten Dateien per MobaXterm auf RDK X5 ziehen.
 
-![3. Treiberbibliotheken installieren – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Y2VkYmFlOTI1NGQxN2Y2OWYxZGUwNmM4MzZhOWI1Y2NfNjc0ZTgzNjUyZGYxYjJiNmY5ZDkxM2NmMmYzOTgyODZfSUQ6NzYwNTAzOTY3NjgwNTk5MTYxNV8xNzgwMDUyNjAwOjE3ODAxMzkwMDBfVjM)
+![3. Treiberbibliotheken installieren – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk/2.png)
 
 ## 4. IMU-Daten anzeigen
 
@@ -81,7 +81,7 @@ cd ~/IMU_ROS2/IMU_Library
 python3 -m IMU_Library.IMU_Serial_Library
 ```
 
-![4. IMU-Daten anzeigen – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NzIzMjY1Mzc1MGRhNmRlNjY1YmI5MWQ0NjY3Y2M5YjBfMDE5NmIwOTNhNmJmZWRmMTgyOTE3Njk0ZGM1ZDNjNDNfSUQ6NzYwMjU4NDkwODk5MzAyMjk0MV8xNzgwMDUyNjAwOjE3ODAxMzkwMDBfVjM)
+![4. IMU-Daten anzeigen – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk/3.png)
 
 Hinweis: Oben werden die Daten eines 10-Achsen-IMU gelesen; 6-Achsen haben keine Magnetometer- und Barometerdaten, 9-Achsen keine Barometerdaten.
 
@@ -102,7 +102,7 @@ python3 -m IMU_Library.imu_calibration_tool --mode serial --port /dev/imu-serial
 python3 -m IMU_Library.imu_calibration_tool --mode serial --port /dev/imu-serial --calibrate temp
 ```
 
-![5. IMU-Kalibrierung – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OGQ5ZDM1OGFhMWZlZDE1ZjFjMDNhYzE0OGRmYmQ2MDRfNDUxNTY4MDRhNTBkYjQxYmQ0MDA2ZjBlYmEwYTZlN2JfSUQ6NzYwMjU4NDkwOTY2ODM4Nzc4Ml8xNzgwMDUyNjAwOjE3ODAxMzkwMDBfVjM)
+![5. IMU-Kalibrierung – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk/4.png)
 
 ## 6. Hinweise
 

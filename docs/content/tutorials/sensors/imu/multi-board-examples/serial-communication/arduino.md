@@ -7,15 +7,15 @@ description: "This routine uses an Arduino Nano development board, a Windows com
 
 This routine uses an Arduino Nano development board, a Windows computer, several DuPont wires, an IMU attitude sensor, and a USB to TTL module. 
 
-Arduino.rar
+[Arduino.rar](/downloads/Arduino.rar)
 
 ## 1. Connect the device
 
-![1. Connect the device – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YWM5MTU0YWFlYmU4MDRiMmJiZGFjNWNmNDFiZGY3YjFfOTc0ZTA5ZGJlNjE0ZDYyN2RhYjVlNGU3MzQ4NzcxM2VfSUQ6NzYzODkzMDIyOTQ2NTM2OTU3NF8xNzgwMzE4MzU3OjE3ODA0MDQ3NTdfVjM)
+![1. Connect the device – 1](../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/1.png)
 
-![1. Connect the device – 2](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NjNhNzExMmM3YTQ1MDMzNWM5ODM0YzM3MDE0ZDliODRfNTJjNTIwOTQ2MTVjNGU5NzljNTgxYTFhMGNkN2FkNDhfSUQ6NzYzODkzMDIyODUxMzQ1OTEzMV8xNzgwMzE4MzU2OjE3ODA0MDQ3NTZfVjM)
+![1. Connect the device – 2](../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/2.png)
 
-![1. Connect the device – 3](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjBiODcyZWZiZjFjMTQxODM3NDRkN2U3MDFhMzI3NWRfNjk5NDZhOGE1YjY5Mzg2MTJlZWFlMzE0OTZjYjE4YTdfSUQ6NzY0MjE3MzQ1MjI5MjAzMzc1OF8xNzgwMzE4MzU3OjE3ODA0MDQ3NTdfVjM)
+![1. Connect the device – 3](../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/3.jpg)
 
 ## 2. Key Code Analysis
 
@@ -188,7 +188,7 @@ _parse_frame_data(): Parse the data frame.
 
 After the program is downloaded into Arduino, open the serial assistant (configure the parameters as shown in the figure below), and you can see that the data of the IMU module is continuously printed. When we change the attitude of the IMU module, the data will change. 
 
-![3. Read IMU data – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YzM4NjU4ZmU1NWVkOWU2NmYzZTNjMWU5YzcyZDRmMmFfZWEwNTU5MTM2ODhmYzA3MzMwZDdjNDkwMWMwMTAwOTJfSUQ6NzYzODkzMDIyODE3MDQ0MzcwNF8xNzgwMzE4MzU2OjE3ODA0MDQ3NTZfVjM)
+![3. Read IMU data – 1](../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/4.png)
 
 Note: The above is the data reading for a 10-axis IMU. The 6-axis has no Magnetometer and Barometer data, and the 9-axis has no Barometer data.
 

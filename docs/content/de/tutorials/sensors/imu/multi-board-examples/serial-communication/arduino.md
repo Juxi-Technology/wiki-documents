@@ -7,14 +7,18 @@ description: "Dieses Beispiel verwendet das Arduino-Nano-Entwicklungsboard, eine
 
 Dieses Beispiel verwendet das Arduino-Nano-Entwicklungsboard, einen Windows-PC, mehrere Jumper-Kabel, den IMU-Lagesensor und ein USB-TTL-Modul.
 
-Arduino.rar
+[Arduino.rar](/downloads/Arduino.rar)
 
 
 
 ## 1. Gerät anschließen
 
-![1. Gerät anschließen – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDZkYTc3ZWEyODIzYjQzMDBjYzcwODY5MmM2OWQ2MWZfOTQ3MjMyNWZjMTlmNGM1ZDdkMTg2MWU3ZDQxMjEyNzVfSUQ6NzYxMTEzNTIxMjUzMzQ1MTk5MF8xNzgwMDUyNTU0OjE3ODAxMzg5NTRfVjM)
 
+![Abb. 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/1.png)
+![1. Gerät anschließen – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/1.png)
+
+
+![Abb. 3](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/3.jpg)
 ## 2. Kerncode-Erläuterung
 
 Den konkreten Code finden Sie im Quellcode der Unterlagen.
@@ -183,6 +187,6 @@ _parse_frame_data(): analysiert den Datenrahmen.
 
 Nach dem Download des Programms auf das Arduino den seriellen Assistenten öffnen (Parameter wie unten abgebildet): Die IMU-Daten werden fortlaufend ausgegeben. Ändert man die Ausrichtung des IMU-Moduls, ändern sich die Daten.
 
-![3. IMU-Daten auslesen – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDRjOWI4OGZhZWY0MTVjMTkwNzM5NzY3MzNmYjcwYmFfNDJmMjYwZGU4MjkwMTJjNjEzZDQ5OWQ0NTFiMmQ3ZmZfSUQ6NzYxMTEzNTIyOTg2NDA3MDM2OF8xNzgwMDUyNTU0OjE3ODAxMzg5NTRfVjM)
+![3. IMU-Daten auslesen – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/4.png)
 
 Hinweis: Oben werden die Daten eines 10-Achsen-IMU gelesen; 6-Achsen haben keine Magnetometer- und Barometerdaten, 9-Achsen keine Barometerdaten.

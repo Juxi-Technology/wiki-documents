@@ -91,4 +91,4 @@ Barometer Performance Parameters
 
 ## 4. Dimension Parameters
 
-![Pin Function Description – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjA3NmQ5NzIzMzdkYWZlMzZkYzcwOGIyOGRmMmYxYWJfNTAxNTBiYzRjZTk4MzJiY2YzMWZhMWY4NDI5ZTFjYTZfSUQ6NzYzODkyMjc2MDI5MDcxNjYwMl8xNzgwMzE3OTcyOjE3ODA0MDQzNzJfVjM)
+![Pin Function Description – 1](../../../../public/images/tutorials/sensors/imu/product-info/1.jpg)

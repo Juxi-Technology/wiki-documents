@@ -7,13 +7,13 @@ description: "This routine uses an Arduino Nano development board, a Windows com
 
 This routine uses an Arduino Nano development board, a Windows computer, several DuPont wires, and an IMU attitude sensor. 
 
-Arduino.rar
+[Arduino.rar](/downloads/Arduino.rar)
 
 ## 1. Connect the device
 
-![1. Connect the device – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjdiZGFhZTI2YzNiMmU1ODQ4M2RiODU5YWFlMmQzOGJfNTNlMTY2Y2Y3MjE2ZDA2ZTU5YjJiYTkwMWMyOThkYTVfSUQ6NzYzODkzMTM3MTkzMTY4MzgxNF8xNzgwMzE4NTU4OjE3ODA0MDQ5NThfVjM)
+![1. Connect the device – 1](../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.png)
 
-![1. Connect the device – 2](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NTYxZDM4MDQzMTI2ZDI1ZTQwYjc5NmY4ODUyZGJjNGFfN2Q4MWQ4YTFjMDA1NTk2YjMxM2Q1ZWU0YjIxZTRiMGNfSUQ6NzY0MjE3MzgyOTMzNTIzOTY1MF8xNzgwMzE4NTU4OjE3ODA0MDQ5NThfVjM)
+![1. Connect the device – 2](../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/2.jpg)
 
 ## 2. Key Code Analysis
 
@@ -141,7 +141,7 @@ IMU_I2C_ReadBarometer(): Read barometer-related data: altitude, temperature, bar
 
 After the program is downloaded into Arduino, open the serial assistant (configure the parameters as shown in the figure below), and you can see that the data of the IMU module is continuously printed. When we change the attitude of the IMU module, the data will change. 
 
-![3. Read IMU data – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MmFlMzc4ZTA4MjYwMGE2NWU3MjNjNWUxNmQ4ZDM1MDdfMjg5MGQ3YzY5OTRkYjM0NjU3YTQ0ZDk1OGNhZWQ1ZDBfSUQ6NzYzODkzMTM3MzQwMzAxNjE1OV8xNzgwMzE4NTU4OjE3ODA0MDQ5NThfVjM)
+![3. Read IMU data – 1](../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/3.png)
 
 Note: The above is the data reading for a 10-axis IMU. The 6-axis has no Magnetometer and Barometer data, and the 9-axis has no Barometer data.
 

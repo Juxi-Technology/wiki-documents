@@ -7,15 +7,15 @@ description: "Este exemplo usa uma placa de desenvolvimento Arduino Nano, um com
 
 Este exemplo usa uma placa de desenvolvimento Arduino Nano, um computador Windows, alguns fios Dupont, um sensor de atitude IMU e um módulo USB para TTL. 
 
-Arduino.rar
+[Arduino.rar](/downloads/Arduino.rar)
 
 ## 1. Conectar o dispositivo
 
-![1. Connect the device – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YWM5MTU0YWFlYmU4MDRiMmJiZGFjNWNmNDFiZGY3YjFfOTc0ZTA5ZGJlNjE0ZDYyN2RhYjVlNGU3MzQ4NzcxM2VfSUQ6NzYzODkzMDIyOTQ2NTM2OTU3NF8xNzgwMzE4MzU3OjE3ODA0MDQ3NTdfVjM)
+![1. Connect the device – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/1.png)
 
-![1. Connect the device – 2](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NjNhNzExMmM3YTQ1MDMzNWM5ODM0YzM3MDE0ZDliODRfNTJjNTIwOTQ2MTVjNGU5NzljNTgxYTFhMGNkN2FkNDhfSUQ6NzYzODkzMDIyODUxMzQ1OTEzMV8xNzgwMzE4MzU2OjE3ODA0MDQ3NTZfVjM)
+![1. Connect the device – 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/2.png)
 
-![1. Connect the device – 3](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjBiODcyZWZiZjFjMTQxODM3NDRkN2U3MDFhMzI3NWRfNjk5NDZhOGE1YjY5Mzg2MTJlZWFlMzE0OTZjYjE4YTdfSUQ6NzY0MjE3MzQ1MjI5MjAzMzc1OF8xNzgwMzE4MzU3OjE3ODA0MDQ3NTdfVjM)
+![1. Connect the device – 3](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/3.jpg)
 
 ## 2. Análise do Código Principal
 
@@ -188,7 +188,7 @@ _parse_frame_data(): Analisa o quadro de dados.
 
 Depois que o programa é gravado no Arduino, abra o assistente de porta serial (configure os parâmetros conforme mostrado na figura abaixo) e você verá que os dados do módulo IMU são impressos continuamente. Quando mudamos a atitude do módulo IMU, os dados mudam. 
 
-![3. Read IMU data – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YzM4NjU4ZmU1NWVkOWU2NmYzZTNjMWU5YzcyZDRmMmFfZWEwNTU5MTM2ODhmYzA3MzMwZDdjNDkwMWMwMTAwOTJfSUQ6NzYzODkzMDIyODE3MDQ0MzcwNF8xNzgwMzE4MzU2OjE3ODA0MDQ3NTZfVjM)
+![3. Read IMU data – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/4.png)
 
 Observação: O acima é a leitura de dados de um IMU de 10 eixos. O de 6 eixos não possui dados de magnetômetro e barômetro, e o de 9 eixos não possui dados de barômetro.
 

@@ -7,16 +7,18 @@ description: "Cet exemple utilise la carte cœur STM32F103C8T6, un PC Windows, p
 
 Cet exemple utilise la carte cœur STM32F103C8T6, un PC Windows, plusieurs câbles de liaison et le capteur d'attitude IMU.
 
-STM32.zip
+[STM32.zip](/downloads/STM32.zip)
 
 Ouvrir USART.uvprojx avec keil5 et flasher le programme sur la carte cœur STM32F103C8T6
 
 ## 1. Connecter le périphérique
 
-![1. Connecter le périphérique – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MWE5MmY3ZDI5ZDdlZmYyYmM3ODkwYzJjNjNkZWQxZThfZDY1NWFjNWM2NzM1NGMxM2IyZGM4ZTkxYzc0NjgyMDdfSUQ6NzYxMTg4NzE5MDAxMTM2NTcyNF8xNzgwMDUyNTM2OjE3ODAxMzg5MzZfVjM)
+![1. Connecter le périphérique – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32/1.png)
 
 ## 2. Explication du code clé
 
+
+![Image 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32/2.png)
 Le code concret se trouve dans le code source des documents.
 
 ```C++
@@ -183,6 +185,6 @@ _parse_frame_data() : analyse la trame de données.
 
 Après avoir téléchargé le programme sur l'Arduino, ouvrir l'assistant série (paramètres comme ci-dessous) : les données du module IMU sont imprimées en continu. En changeant l'orientation du module IMU, les données changent.
 
-![3. Lire les données IMU – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YjBiODUxZDc2MmM1MjJhZjRlZTg2MTVlOTdiMjBjZGNfZGNkMDQ1ZmI5MWMzZWUyMjkzOWY5MjQyMjRkYjU5ZTdfSUQ6NzYxMTEzNzI4NDI1MDg4MDk2OV8xNzgwMDUyNTM2OjE3ODAxMzg5MzZfVjM)
+![3. Lire les données IMU – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32/3.png)
 
 Remarque : ce qui précède concerne un IMU 10 axes ; les 6 axes n'ont pas de magnétomètre ni de baromètre, les 9 axes pas de baromètre.

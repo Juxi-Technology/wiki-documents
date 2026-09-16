@@ -21,7 +21,7 @@ Die Codebasis dieses Tutorial-Repositorys wird auf der vor dem 1. März 2026 get
 
 Online-URDF-Vorschau https://urdf.d-robotics.cc/
 
-![image – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
+![image – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
 ### Hauptmerkmale
 
@@ -142,7 +142,7 @@ Dies installiert in der Regel ffmpeg 7.X, kompiliert mit dem libsvtav1-Encoder. 
 
 Bei folgendem Fehler hilft der obige Befehl ebenfalls.
 
-![5. ffmpeg in der Umgebung installieren: – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
+![5. ffmpeg in der Umgebung installieren: – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
 #### 6. LeRobot mit feetech-Motor-Abhängigkeiten installieren:
 
@@ -157,7 +157,7 @@ Unter dem Verzeichnis `lerobot\src\lerobot\robots\lekiwi` die Datei config_lekiw
 
 connection_time_s: int = 7200 # 也就是2小时
 
-![7. Verbindungszeit einstellen – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
+![7. Verbindungszeit einstellen – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
 
 
@@ -176,7 +176,7 @@ Auf Ihrem Rechner:
 
 In Ihrer Shell einfügen: `source ~/.bashrc` bzw. für Mac: `source ~/.bash_profile` oder `source ~/.zshrc` (bei zshell)
 
-![2. Shell neu starten – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
+![2. Shell neu starten – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
 #### 3. Conda-Umgebung für LeRobot erstellen und aktivieren
 
@@ -214,7 +214,7 @@ Dies installiert in der Regel ffmpeg 7.X mit libsvtav1-Encoder. Falls nicht unte
 
 Bei folgendem Fehler hilft der obige Befehl ebenfalls.
 
-![5. ffmpeg in der Umgebung installieren: – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
+![5. ffmpeg in der Umgebung installieren: – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
 #### 6. LeRobot mit feetech-Motor-Abhängigkeiten installieren:
 
@@ -225,9 +225,9 @@ pip install -e ".[lekiwi]"
 
 ## Motoren konfigurieren
 
-![6. LeRobot mit feetech-Motor-Abhängigkeiten installieren: – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
+![6. LeRobot mit feetech-Motor-Abhängigkeiten installieren: – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
-![6. LeRobot mit feetech-Motor-Abhängigkeiten installieren: – 2](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
+![6. LeRobot mit feetech-Motor-Abhängigkeiten installieren: – 2](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
 #### **1. Den mit dem Roboterarm verbundenen USB-Port finden**
 
@@ -258,7 +258,7 @@ lerobot-setup-motors \
     --robot.port=/dev/tty.usbmodem58760431551 # <- paste here the port found at previous step
 ```
 
-![2. Motoren konfigurieren beim fertigen Produkt überspringbar – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
+![2. Motoren konfigurieren beim fertigen Produkt überspringbar – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
 #### 3. Inländisches HuggingFace-Mirroring einrichten
 
@@ -299,11 +299,11 @@ source ~/.zshrc
 
 https://huggingface.co/settings/tokens
 
-![①Token erstellen – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
+![①Token erstellen – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
-![①Token erstellen – 2](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
+![①Token erstellen – 2](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
-![①Token erstellen – 3](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
+![①Token erstellen – 3](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
 ##### ②Token notieren
 
@@ -321,17 +321,17 @@ hf auth login
 hf auth whoami
 ```
 
-![③Token binden – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
+![③Token binden – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
 ##### ④Dataset-Repository erstellen
 
 **Notieren Sie sich Owner und Namen des Datensatzes – das sind die später benötigten \<hf_username\> und \<dateset_repo_id\>**
 
-![④Dataset-Repository erstellen – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
+![④Dataset-Repository erstellen – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
-![④Dataset-Repository erstellen – 2](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
+![④Dataset-Repository erstellen – 2](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
-![④Dataset-Repository erstellen – 3](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
+![④Dataset-Repository erstellen – 3](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
 #### 4. Die Konfiguration aktualisieren!!!
 
@@ -348,7 +348,7 @@ Wichtiger Hinweis: Nachdem Sie die Portnummer der Leader-Arm und die IP-Adresse 
 
 Diese vier Dateien im Verzeichnis example\lekiwi ändern
 
-![4. Die Konfiguration aktualisieren!!! – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
+![4. Die Konfiguration aktualisieren!!! – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
 ##### ①teleoperate.py ändern
 
@@ -356,7 +356,7 @@ remote_ip: IP-Adresse des Raspberry Pi
 
 port: Portnummer, wenn der Leader-Arm mit einem Computer oder Linux verbunden ist
 
-![①teleoperate.py ändern – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
+![①teleoperate.py ändern – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
 ##### ②record.py ändern
 
@@ -366,7 +366,7 @@ remote_ip: IP-Adresse des Raspberry Pi
 
 port: Portnummer, wenn der Leader-Arm mit einem Computer oder Linux verbunden ist
 
-![②record.py ändern – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
+![②record.py ändern – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
 ##### ③replay.py ändern
 
@@ -374,7 +374,7 @@ remote_ip: IP-Adresse des Raspberry Pi
 
 \<hf_username\>/\<dataset_repo_id\>, also [der Hugging-Face-Benutzername und der Datensatzname](https://juxitech.feishu.cn/docx/DXtPd0iF1oO3aGxRChBcL3LSnFh?fromScene=spaceOverview#doxcnsAUzU1e1l6XIM07OE8grYg)
 
-![③replay.py ändern – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
+![③replay.py ändern – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
 ### Kalibrierung
 
@@ -405,7 +405,7 @@ Wir haben die Kalibrierungsmethoden für die meisten Roboter vereinheitlicht. Zu
 
 Öffnen Sie eine neue Anaconda-Eingabeaufforderung
 
-![Follower-Arm kalibrieren montiert am Lekiwi-Chassis – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
+![Follower-Arm kalibrieren montiert am Lekiwi-Chassis – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
 > Wenn Sie einen Mac verwenden, müssen Sie dem Programm „Terminal" möglicherweise den Tastaturzugriff für Fernbedienungen erlauben. Gehen Sie zu „Systemeinstellungen" \> „Sicherheit &amp; Datenschutz" \> „Eingabeüberwachung" und aktivieren Sie das Kontrollkästchen „Terminal".
 > 
@@ -416,7 +416,7 @@ Für Fernbedienungen per SSH beim Raspberry Pi anmelden, den folgenden Befehl au
 python -m lerobot.robots.lekiwi.lekiwi_host --robot.id=my_awesome_kiwi
 ```
 
-![Follower-Arm kalibrieren montiert am Lekiwi-Chassis – 2](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
+![Follower-Arm kalibrieren montiert am Lekiwi-Chassis – 2](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
 Als Nächstes auf dem Laptop ebenfalls den folgenden Befehl ausführen, um die Umgebung zu aktivieren: `conda activate lerobot`, und dann das folgende Skript starten:
 
@@ -582,7 +582,7 @@ HF_DATASET_ID = "\< hf_username \>/\< eval_dataset_id \>" – Benutzernamen und 
 
 remote_ip: IP-Adresse des Raspberry Pi
 
-![evaluate.py ändern – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
+![evaluate.py ändern – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
 Dann den folgenden Befehl ausführen:
 

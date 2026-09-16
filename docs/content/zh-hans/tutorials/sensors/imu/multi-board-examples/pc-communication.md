@@ -9,13 +9,13 @@ description: "IMU 姿态传感器 PC 通信教程：通过 Type-C 连接电脑�
 
 1. IMU姿态传感器通过type-c数据线连接电脑端
 
-![image – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZGVkZTZlZTU0NjY1NzVmYzAwZGU2ZjU0NjZhNzFlOGJfZWYxYWYwNmY2MDVmZTU3ODE1YmUwMDY1NTY4NGIwMDhfSUQ6NzYxMDYyOTE0MzkzMTMyNTY0M18xNzgwMDUyNTE2OjE3ODAxMzg5MTZfVjM)
+![image – 1](../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/pc-communication/1.png)
 
 2. 查看串口数据
 
 将串口助手配置如下图所示，
 
-![image – 2](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTVmMTNmMDY1OWFmZDUwYTUxOTQ1NjNkMWVhNTFjNmJfZDlmMmRiNmU1OTNlNTY2ZDA5YjI4MmIyZWU4ZDJkMzdfSUQ6NzYxMDYyOTY5MTk1NDcxMTQ4Ml8xNzgwMDUyNTE2OjE3ODAxMzg5MTZfVjM)
+![image – 2](../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/pc-communication/2.png)
 
 串口打印的是没有经过处理的数据，具体数据含义可参考 "**通信协议**" 文档。
 

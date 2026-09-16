@@ -7,16 +7,18 @@ description: "Cet exemple utilise le STM32F103C8T6, un PC Windows, plusieurs câ
 
 Cet exemple utilise le STM32F103C8T6, un PC Windows, plusieurs câbles de liaison et le capteur d'attitude IMU.
 
-STM32.zip
+[STM32.zip](/downloads/STM32.zip)
 
 Ouvrir I2C.uvprojx avec keil5 et flasher le programme sur la carte cœur STM32F103C8T6
 
 ## 1. Connecter le périphérique
 
-![1. Connecter le périphérique – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDBhYjMxNjllNDYyZDNkNWIzMWRhZjNmNTJiYjg5YjNfNWFiNDE1MjM4NWZlMjk2YWJkMjQ1YWVjMzI3NzkzODdfSUQ6NzYxMTg4NzEyMzkzMDk3NTQyOF8xNzgwMDUyNzI4OjE3ODAxMzkxMjhfVjM)
+![1. Connecter le périphérique – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32/1.png)
 
 ## 2. Explication du code clé
 
+
+![Image 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32/2.png)
 Le code concret se trouve dans le code source des documents.
 
 ```C++
@@ -141,6 +143,6 @@ IMU_I2C_ReadBarometer() : lire les données barométriques : altitude, températ
 
 Après avoir téléchargé le programme sur l'Arduino, ouvrir l'assistant série (paramètres comme ci-dessous) : les données du module IMU sont imprimées en continu. En changeant l'orientation du module IMU, les données changent.
 
-![3. Lire les données IMU – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZTVkMTQ0YWRiMWEzODc3ZDcxM2FhNjY2ZjdhZDlmZGJfMzE1YWM3MzYxYTQzMzlkZjU3MTkzNmE0Nzk2OTBiN2RfSUQ6NzYxMTEzNzIyNzkxODg4Nzg5NV8xNzgwMDUyNzI4OjE3ODAxMzkxMjhfVjM)
+![3. Lire les données IMU – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32/3.png)
 
 Remarque : ce qui précède concerne un IMU 10 axes ; les 6 axes n'ont pas de magnétomètre ni de baromètre, les 9 axes pas de baromètre.

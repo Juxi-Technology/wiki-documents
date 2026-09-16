@@ -7,15 +7,15 @@ description: "Este exemplo usa uma placa núcleo STM32F103C8T6, um computador Wi
 
 Este exemplo usa uma placa núcleo STM32F103C8T6, um computador Windows, alguns fios Dupont e um sensor de atitude IMU. 
 
-STM32.zip
+[STM32.zip](/downloads/STM32.zip)
 
 Use o software Keil5 para abrir o USART.uvprojx e grave o programa na placa núcleo STM32F103C8T6 
 
 ## 1. Conectar o dispositivo
 
-![1. Connect the device – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTk0NjM5YjE0ODAxZGEzOTI4ZmZkMzAxZTNhZTdhNjlfMzU5N2IzZDY0NDFmYTJhZjY0NjBhMjA1Y2RmYmMxNDlfSUQ6NzYzODkyMjc4MTg4MzA5MTkyOV8xNzgwMzE4MzE1OjE3ODA0MDQ3MTVfVjM)
+![1. Connect the device – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32/1.png)
 
-![1. Connect the device – 2](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=N2I3NjJlY2I0NDkzZmYwN2I4NDEyOTc2Njc1ZDllODhfNzNlNDYyMzg1MDJjMDQwNjk0YTI2NzE1ZGExNWI0MzJfSUQ6NzYzODkyMjc4MDY3MTM4MDQyN18xNzgwMzE4MzE1OjE3ODA0MDQ3MTVfVjM)
+![1. Connect the device – 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32/2.png)
 
 ## 2. Análise do Código Principal
 
@@ -188,7 +188,7 @@ _parse_frame_data(): Analisa os dados.
 
 Depois que o programa é gravado no STM32, abra o assistente de porta serial (com os parâmetros de configuração mostrados na figura abaixo) e você verá que os dados do módulo IMU são impressos continuamente. Quando mudamos a atitude do módulo IMU, os dados mudam. 
 
-![3. Read IMU data – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MmZjNzYwZDQ4MjZjZjc3NGE2ZDUyYjI4N2IzN2U5YTRfZDczMzQ1MGE0MTQ5NzJmNzVjZGY4NDBjOTAxODczNDRfSUQ6NzYzODkyMjc4MTU2ODUwMjczMV8xNzgwMzE4MzE1OjE3ODA0MDQ3MTVfVjM)
+![3. Read IMU data – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32/3.png)
 
 Observação: O acima é a leitura de dados de um IMU de 10 eixos. O de 6 eixos não possui dados de magnetômetro e barômetro, e o de 9 eixos não possui dados de barômetro.
 

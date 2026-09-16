@@ -7,14 +7,18 @@ description: "Questo esempio usa la scheda di sviluppo Arduino Nano, un PC Windo
 
 Questo esempio usa la scheda di sviluppo Arduino Nano, un PC Windows, diversi cavi jumper, il sensore di assetto IMU e un modulo USB-TTL.
 
-Arduino.rar
+[Arduino.rar](/downloads/Arduino.rar)
 
 
 
 ## 1. Collegare il dispositivo
 
-![1. Collegare il dispositivo – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDZkYTc3ZWEyODIzYjQzMDBjYzcwODY5MmM2OWQ2MWZfOTQ3MjMyNWZjMTlmNGM1ZDdkMTg2MWU3ZDQxMjEyNzVfSUQ6NzYxMTEzNTIxMjUzMzQ1MTk5MF8xNzgwMDUyNTU0OjE3ODAxMzg5NTRfVjM)
 
+![Immagine 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/1.png)
+![1. Collegare il dispositivo – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/1.png)
+
+
+![Immagine 3](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/3.jpg)
 ## 2. Spiegazione del codice chiave
 
 Il codice concreto si trova nel codice sorgente dei materiali.
@@ -183,6 +187,6 @@ _parse_frame_data(): analizza la trama dati.
 
 Dopo il download del programma sull'Arduino, aprire l'assistente seriale (parametri come mostrato sotto): i dati del modulo IMU vengono stampati in continuo. Cambiando l'orientamento del modulo IMU, i dati cambiano.
 
-![3. Leggere i dati IMU – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDRjOWI4OGZhZWY0MTVjMTkwNzM5NzY3MzNmYjcwYmFfNDJmMjYwZGU4MjkwMTJjNjEzZDQ5OWQ0NTFiMmQ3ZmZfSUQ6NzYxMTEzNTIyOTg2NDA3MDM2OF8xNzgwMDUyNTU0OjE3ODAxMzg5NTRfVjM)
+![3. Leggere i dati IMU – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/4.png)
 
 Nota: quanto sopra riguarda un IMU a 10 assi; i modelli a 6 assi non hanno magnetometro né barometro, quelli a 9 assi non hanno barometro.

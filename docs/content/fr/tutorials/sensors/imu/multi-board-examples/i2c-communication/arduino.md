@@ -7,13 +7,15 @@ description: "Cet exemple utilise la carte de développement Arduino Nano, un PC
 
 Cet exemple utilise la carte de développement Arduino Nano, un PC Windows, plusieurs câbles de liaison et le capteur d'attitude IMU.
 
-Arduino.rar
+[Arduino.rar](/downloads/Arduino.rar)
 
 
 
 ## 1. Connecter le périphérique
 
-![1. Connecter le périphérique – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YzJmMjA5YmRhYTNmNjEwNmRhOWI2Zjg4NTE5YjFhMzBfYThkNjJlNmM0ZDE0NDdkNWMxZTI0NmVlYmU3OGM2NTZfSUQ6NzYxMTEzNDc0NDcyNTYyMTk0OV8xNzgwMDUyNzM5OjE3ODAxMzkxMzlfVjM)
+
+![Image 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.png)
+![1. Connecter le périphérique – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.png)
 
 ## 2. Explication du code clé
 
@@ -141,6 +143,6 @@ IMU_I2C_ReadBarometer() : lire les données barométriques : altitude, températ
 
 Après avoir téléchargé le programme sur l'Arduino, ouvrir l'assistant série (paramètres comme ci-dessous) : les données du module IMU sont imprimées en continu. En changeant l'orientation du module IMU, les données changent.
 
-![3. Lire les données IMU – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MDFiOGRhNjI5YzZiOTU5NTY3Mjk4MWFlZjVlNjc3NGNfZTIxMjNkYzA5ODNhMGRkNDAyMzU2MDczNWM5Yjg3ZTFfSUQ6NzYxMTEzNDk4MzEwNDg1OTA5Ml8xNzgwMDUyNzM5OjE3ODAxMzkxMzlfVjM)
+![3. Lire les données IMU – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/3.png)
 
 Remarque : ce qui précède concerne un IMU 10 axes ; les 6 axes n'ont pas de magnétomètre ni de baromètre, les 9 axes pas de baromètre.

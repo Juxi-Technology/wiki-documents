@@ -226,3 +226,6 @@ sudo chmod 666 /dev/imu-serial
 ```
 
 2. Wenn die Achsen in RViz sehr klein dargestellt werden, Enable axes erneut aktivieren
+
+
+![Abb. 1](../../../../../../public/images/tutorials/sensors/imu/ros-examples/ros1/1.png)

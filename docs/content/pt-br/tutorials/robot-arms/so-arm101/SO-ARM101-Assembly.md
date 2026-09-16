@@ -8,7 +8,7 @@ description: "O braço ativo da versão Pro usa um adaptador de energia de 5V6A,
 > **[Comprar na loja](https://www.juxitech.com/products/so-arm101-developers-kit)**
 
 
-![imagem – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
+![imagem – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
 
 **O braço ativo da versão Pro usa um adaptador de energia 5V6A, enquanto o braço passivo usa um adaptador de energia 12V5A **
 
@@ -16,7 +16,7 @@ A definição dos IDs dos servos, a calibração dos ângulos dos servos e a mon
 
 ## Passo 1: Definir o ID do servo e instalar a palheta do servo (exceto o servo nº 5) 
 
-![imagem – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
+![imagem – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
 
 Mais uma vez, certifique-se de que o ID da articulação do servo e a relação de transmissão correspondam estritamente aos do **SO-ARM101**.
 
@@ -96,11 +96,11 @@ SO-ARM101机械臂组装教程.mp4
 
 Instalação da placa de acionamento de servos: primeiro instale 4 pilares de cobre e, em seguida, fixe a placa com quatro parafusos M2.5\*8
 
-![Sistema Linux/Ubuntu – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/7.png)
+![Sistema Linux/Ubuntu – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/7.png)
 
-![Sistema Linux/Ubuntu – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/8.png)
+![Sistema Linux/Ubuntu – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/8.png)
 
-![Sistema Linux/Ubuntu – 3](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
+![Sistema Linux/Ubuntu – 3](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
 
 **O braço ativo preto da versão Pro usa um adaptador de energia 5V6A, enquanto o braço passivo branco usa um adaptador de energia 12V5A **
 

@@ -7,13 +7,15 @@ description: "本例はArduino Nano開発ボード、Windows PC 1台、ジャン
 
 本例はArduino Nano開発ボード、Windows PC 1台、ジャンパワイヤ数本、IMU姿勢センサーを使用します。
 
-Arduino.rar
+[Arduino.rar](/downloads/Arduino.rar)
 
 
 
 ## 1. デバイスの接続
 
-![1. デバイスの接続 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YzJmMjA5YmRhYTNmNjEwNmRhOWI2Zjg4NTE5YjFhMzBfYThkNjJlNmM0ZDE0NDdkNWMxZTI0NmVlYmU3OGM2NTZfSUQ6NzYxMTEzNDc0NDcyNTYyMTk0OV8xNzgwMDUyNzM5OjE3ODAxMzkxMzlfVjM)
+
+![図 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.png)
+![1. デバイスの接続 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.png)
 
 ## 2. キーコードの解説
 
@@ -141,6 +143,6 @@ IMU_I2C_ReadBarometer(): 気圧関連データの読み取り：高度、温度�
 
 プログラムをArduinoにダウンロードした後、シリアルアシスタントを開くと（設定パラメータは下図の通り）、IMUモジュールのデータが継続的に印刷されているのがわかります。IMUモジュールの姿勢を変えるとデータが変化します。
 
-![3. imuデータの読み取り – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MDFiOGRhNjI5YzZiOTU5NTY3Mjk4MWFlZjVlNjc3NGNfZTIxMjNkYzA5ODNhMGRkNDAyMzU2MDczNWM5Yjg3ZTFfSUQ6NzYxMTEzNDk4MzEwNDg1OTA5Ml8xNzgwMDUyNzM5OjE3ODAxMzkxMzlfVjM)
+![3. imuデータの読み取り – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/3.png)
 
 注意：上記は10軸IMUのデータ読み取りです。6軸は磁力計（Magnetometer）と気圧計（Barometer）データがなく、9軸は気圧計（Barometer）データがありません。

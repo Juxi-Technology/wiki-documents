@@ -7,16 +7,18 @@ description: "本例はSTM32F103C8T6コアボード、Windows PC 1台、ジャ�
 
 本例はSTM32F103C8T6コアボード、Windows PC 1台、ジャンパワイヤ数本、IMU姿勢センサーを使用します。
 
-STM32.zip
+[STM32.zip](/downloads/STM32.zip)
 
 keil5ソフトウェアを使用してUSART.uvprojxを開き、プログラムをSTM32F103C8T6コアボードに書き込みます
 
 ## 1. デバイスの接続
 
-![1. デバイスの接続 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MWE5MmY3ZDI5ZDdlZmYyYmM3ODkwYzJjNjNkZWQxZThfZDY1NWFjNWM2NzM1NGMxM2IyZGM4ZTkxYzc0NjgyMDdfSUQ6NzYxMTg4NzE5MDAxMTM2NTcyNF8xNzgwMDUyNTM2OjE3ODAxMzg5MzZfVjM)
+![1. デバイスの接続 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32/1.png)
 
 ## 2. キーコードの解説
 
+
+![図 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32/2.png)
 具体的なコードは資料のソースコードを参照してください。
 
 ```C++
@@ -183,6 +185,6 @@ _parse_frame_data(): データフレームを解析します。
 
 プログラムをArduinoにダウンロードした後、シリアルアシスタントを開くと（設定パラメータは下図の通り）、IMUモジュールのデータが継続的に印刷されているのがわかります。IMUモジュールの姿勢を変えるとデータが変化します。
 
-![3. imuデータの読み取り – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YjBiODUxZDc2MmM1MjJhZjRlZTg2MTVlOTdiMjBjZGNfZGNkMDQ1ZmI5MWMzZWUyMjkzOWY5MjQyMjRkYjU5ZTdfSUQ6NzYxMTEzNzI4NDI1MDg4MDk2OV8xNzgwMDUyNTM2OjE3ODAxMzg5MzZfVjM)
+![3. imuデータの読み取り – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32/3.png)
 
 注意：上記は10軸IMUのデータ読み取りです。6軸は磁力計（Magnetometer）と気圧計（Barometer）データがなく、9軸は気圧計（Barometer）データがありません。

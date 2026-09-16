@@ -226,3 +226,6 @@ sudo chmod 666 /dev/imu-serial
 ```
 
 2. Si les axes sont affichés très petits dans RViz, recocher Enable axes
+
+
+![Image 1](../../../../../../public/images/tutorials/sensors/imu/ros-examples/ros1/1.png)

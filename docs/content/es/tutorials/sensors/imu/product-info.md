@@ -89,4 +89,4 @@ Parámetros de rendimiento del barómetro
 
 ## 4. Parámetros de dimensiones
 
-![Descripción de funciones de pines – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjA3NmQ5NzIzMzdkYWZlMzZkYzcwOGIyOGRmMmYxYWJfNTAxNTBiYzRjZTk4MzJiY2YzMWZhMWY4NDI5ZTFjYTZfSUQ6NzYzODkyMjc2MDI5MDcxNjYwMl8xNzgwMzE3OTcyOjE3ODA0MDQzNzJfVjM)
+![Descripción de funciones de pines – 1](../../../../../public/images/tutorials/sensors/imu/product-info/1.jpg)

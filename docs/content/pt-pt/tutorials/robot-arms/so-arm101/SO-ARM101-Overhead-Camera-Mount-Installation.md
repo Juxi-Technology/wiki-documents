@@ -16,15 +16,15 @@ Utilizadores que comprarem o Kit de câmara de profundidade D405C podem obter a 
 
 Requer o [Ficheiro de modelo oficial](https://github.com/TheRobotStudio/SO-ARM100/tree/main/Optional/Overhead_Cam_Mount_Webcam)
 
-![imagem – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/1.png)
+![imagem – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/1.png)
 
-![imagem – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/2.png)
+![imagem – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/2.png)
 
-![imagem – 3](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/3.png)
+![imagem – 3](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/3.png)
 
-![imagem – 4](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/4.png)
+![imagem – 4](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/4.png)
 
-![imagem – 5](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/5.png)
+![imagem – 5](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation/5.png)
 
 
 

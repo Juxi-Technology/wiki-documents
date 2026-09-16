@@ -9,13 +9,13 @@ description: "IMU 자세 센서 PC 통신 예제 — Type-C 케이블로 PC에 �
 
 1. IMU 자세 센서를 Type-C 케이블로 PC에 연결
 
-![image – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZGVkZTZlZTU0NjY1NzVmYzAwZGU2ZjU0NjZhNzFlOGJfZWYxYWYwNmY2MDVmZTU3ODE1YmUwMDY1NTY4NGIwMDhfSUQ6NzYxMDYyOTE0MzkzMTMyNTY0M18xNzgwMDUyNTE2OjE3ODAxMzg5MTZfVjM)
+![image – 1](../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/pc-communication/1.png)
 
 2. 시리얼 데이터 확인
 
 시리얼 어시스턴트를 아래 그림처럼 설정합니다
 
-![image – 2](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTVmMTNmMDY1OWFmZDUwYTUxOTQ1NjNkMWVhNTFjNmJfZDlmMmRiNmU1OTNlNTY2ZDA5YjI4MmIyZWU4ZDJkMzdfSUQ6NzYxMDYyOTY5MTk1NDcxMTQ4Ml8xNzgwMDUyNTE2OjE3ODAxMzg5MTZfVjM)
+![image – 2](../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/pc-communication/2.png)
 
 시리얼로 출력되는 것은 처리되지 않은 데이터입니다. 데이터의 의미는 "**통신 프로토콜**" 문서를 참조하세요.
 

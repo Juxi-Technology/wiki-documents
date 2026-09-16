@@ -7,13 +7,13 @@ description: "本次例程使用的是Arduino Nano开发板，一台windows电�
 
 本次例程使用的是Arduino Nano开发板，一台windows电脑、杜邦线若干、IMU姿态传感器。
 
-Arduino.rar
+[Arduino.rar](/downloads/Arduino.rar)
 
 ## 1. 连接设备
 
-![1. 连接设备 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YzJmMjA5YmRhYTNmNjEwNmRhOWI2Zjg4NTE5YjFhMzBfYThkNjJlNmM0ZDE0NDdkNWMxZTI0NmVlYmU3OGM2NTZfSUQ6NzYxMTEzNDc0NDcyNTYyMTk0OV8xNzgwMDUyNzM5OjE3ODAxMzkxMzlfVjM)
+![1. 连接设备 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.png)
 
-![1. 连接设备 – 2](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MDFiOGRhNjI5YzZiOTU5NTY3Mjk4MWFlZjVlNjc3NGNfZTIxMjNkYzA5ODNhMGRkNDAyMzU2MDczNWM5Yjg3ZTFfSUQ6NzYxMTEzNDk4MzEwNDg1OTA5Ml8xNzgwMDUyNzM5OjE3ODAxMzkxMzlfVjM)
+![1. 连接设备 – 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/2.jpg)
 
 ## 2. 关键代码解析
 
@@ -141,7 +141,7 @@ IMU_I2C_ReadBarometer(): 读取气压相关数据：高度、温度、气压、�
 
 程序下载进入Arduino后，打开串口助手（配置参数如下图所示），可以看到一直打印IMU模块的数据，当我们改变IMU模块的姿态，数据会发生变化。
 
-![3. 读取imu数据 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTY4M2VlMGViYjk1ZGIxOTk4NzlmYmY5N2RkODA5NzRfMDU4MDA5YTIwZDYyYjQ4N2I0MWRmYTEzNWViZTdhYzlfSUQ6NzYxMTEzOTAzMDE2NzYwNDQ0M18xNzgwMDUyNzM5OjE3ODAxMzkxMzlfVjM)
+![3. 读取imu数据 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/3.png)
 
 注意：以上为10轴IMU的数据读取，6轴无磁力计（Magnetometer）与气压计（Barometer）数据，9轴无气压计（Barometer）数据。
 

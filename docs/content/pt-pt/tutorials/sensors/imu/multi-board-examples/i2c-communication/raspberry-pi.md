@@ -11,9 +11,9 @@ Este tutorial usa a placa-mãe Raspberry Pi 5 e a imagem oficial de 64 bits como
 
 Conecte o sensor de atitude IMU à interface I2C do Raspberry Pi 5 conforme mostrado na figura abaixo. 
 
-![1. Connect the device – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDYxMGQyZWEyNmY4MzYyMDcwNjhhZDI1Mjg3OTAzMWVfNzNlZWYyNjg0OWE4MjkyMTJkYjk2ZDMwMmNlY2VlMzFfSUQ6NzYzODkzMTU2MTM2MjE0ODI4OF8xNzgwMzE4NTk1OjE3ODA0MDQ5OTVfVjM)
+![1. Connect the device – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi/1.jpg)
 
-![1. Connect the device – 2](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjNlNDJkMjY5YjkxNDY3Y2IyMDk3N2E3Mzk4YTViZTFfZTQ5ODI2OWY0OGY0NTEzMjlmMzBiYjE0MDJlMjk5OTRfSUQ6NzYzODkzMTU2MDAxMTkyNjQ5OV8xNzgwMzE4NTk1OjE3ODA0MDQ5OTVfVjM)
+![1. Connect the device – 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi/2.png)
 
 ## 2. Verificar o status do dispositivo
 
@@ -30,7 +30,7 @@ Visualizar Dispositivos I2C
 sudo i2cdetect -y -r -a 1
 ```
 
-![2. Check device status – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NjcwZDgyNmJmZDEwNmNmNjhiZTIzNGVmMGZkNzYyYmJfNmRlNTBjOGZlMWI3ODBmMDljZTY4Y2QyMzNhNDZhZDRfSUQ6NzYzODkzMTU1OTU4ODIzNjIzM18xNzgwMzE4NTk1OjE3ODA0MDQ5OTVfVjM)
+![2. Check device status – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi/3.png)
 
 ## 3. Instalar a biblioteca do driver
 
@@ -50,7 +50,7 @@ Amigos que ainda não estão familiarizados com o uso do MobaXterm para transfer
 
 Arraste os ficheiros descompactados para o Raspberry Pi 5 por meio do software MobaXterm. 
 
-![3. Install the driver library – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YTkxMzZhNTNmZTI5MWE2Y2FkNzQzZTI4MTQ4OWMwMTlfNTMyY2MxNDE0MDQ3MWJmMDhkMzIxMGJmYTJhMGEzMDFfSUQ6NzYzODkzMTU1ODYxNTQxOTg1NF8xNzgwMzE4NTk1OjE3ODA0MDQ5OTVfVjM)
+![3. Install the driver library – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi/4.png)
 
 ## 4. Visualizar os dados do IMU
 
@@ -63,7 +63,7 @@ cd ~/imu_ros2/src/IMU_ROS1/IMU_Library
 python3 -m IMU_Library.IMU_I2C_Library
 ```
 
-![4. View IMU data – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NjM1OTBlMTM4Yzg4MDFhNmM2NjcxNWI1MWQ4NGY5OGJfN2Y2NjkxODUzNjYxNmNlYWYzOTMwM2RmZDIwNTlhY2RfSUQ6NzYzODkzMTU1ODQ3MzA0MjkyMV8xNzgwMzE4NTk1OjE3ODA0MDQ5OTVfVjM)
+![4. View IMU data – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi/5.png)
 
 Observação: O acima é a leitura de dados de um IMU de 10 eixos. O de 6 eixos não possui dados de magnetômetro e barômetro, e o de 9 eixos não possui dados de barômetro.
 
@@ -88,7 +88,7 @@ python3-m IMU_Library.imu_calibration_tool --mode i2c --port 1 --calibrate mag
 python3-m IMU_Library.imu_calibration_tool --mode i2c --port 1 --calibrate temp
 ```
 
-![5. IMU Calibration – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTQxNzA1YjY0N2FkYTdiOWM2ZDI5ODU2YjIyZjQ2N2JfMzBhYWY2NGU1M2M2NDViMjg5OGFkMDI5MzgzNmQ5YzFfSUQ6NzYzODkzMTU1NzU3NjUxMDQxMV8xNzgwMzE4NTk1OjE3ODA0MDQ5OTVfVjM)
+![5. IMU Calibration – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi/6.png)
 
 ## 6. Precauções
 
@@ -104,23 +104,23 @@ sudo raspi-config
 
 Selecione a usar as setas do teclado e pressione a tecla Enter para entrar após a seleção
 
-![6. Precautions – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZTU4ZGFjMTllY2U1MGNlZGM3ZjY1MzQzOGJkYTA5MTVfN2MyYmM3ZDhiM2I5ZmNiOWE4NWQ5ZTM2MDFiYjQ1ZGZfSUQ6NzYzODkzMTU1ODE5NjYyODQ1MV8xNzgwMzE4NTk1OjE3ODA0MDQ5OTVfVjM)
+![6. Precautions – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi/7.png)
 
 Selecione I2C e, após a seleção, pressione a tecla Enter para entrar.
 
-![6. Precautions – 2](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ODUwZDY4OTRlYTIxOTk4NjA1OGE5YzdiYjU4ZmE3MDZfMjBiZDk2ZjM3ZWVkMzNjNThmMDVmZGUyMDQxYzk4MTRfSUQ6NzYzODkzMTU1ODgyMTA1NTQ1Nl8xNzgwMzE4NTk1OjE3ODA0MDQ5OTVfVjM)
+![6. Precautions – 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi/8.png)
 
 Após selecionar I2C, pressione a tecla Enter no teclado, use as setas para selecionar Yes e pressione Enter para confirmar. 
 
-![6. Precautions – 3](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NjZhNWQxMjVjMWU2MjZhZTgzOTM4ZDM5ZWFkMGUwNmFfZTg3M2Q1ZTRiZWYzYTE4Yzk0ZTdjZGQzMTlmYjdlYjBfSUQ6NzYzODkzMTU2MDk4ODg4ODAyMV8xNzgwMzE4NTk1OjE3ODA0MDQ5OTVfVjM)
+![6. Precautions – 3](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi/9.png)
 
 Pressione Enter para confirmar
 
-![6. Precautions – 4](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTA1YzI4ODJjMTU1Yjk1ZTNiODIwMzI1MDAxYzA2ODVfMzliYWRhODM2MThmMTNlYjg4NjdhMmRmNjA0YjQyYWVfSUQ6NzYzODkzMTU1ODA4ODA2ODA2M18xNzgwMzE4NTk1OjE3ODA0MDQ5OTVfVjM)
+![6. Precautions – 4](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi/10.png)
 
 Pressione as setas para selecionar Finish e depois Enter para sair da configuração.
 
-![6. Precautions – 5](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YWNiNmZjNjExOTA3NTM2ZTg5M2Q4MjM4MDM2YTE0Y2VfZmVhNGRkNjA1OGIzZDI4YjRlMGQwM2I3Njk0OWMyNDFfSUQ6NzYzODkzMTU1Nzc5MzY4MDM0NV8xNzgwMzE4NTk1OjE3ODA0MDQ5OTVfVjM)
+![6. Precautions – 5](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi/11.png)
 
 
 

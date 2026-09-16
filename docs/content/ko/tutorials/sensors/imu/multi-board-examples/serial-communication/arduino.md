@@ -7,14 +7,18 @@ description: "본 예제는 Arduino Nano 개발 보드, Windows PC 1대, 점퍼 
 
 본 예제는 Arduino Nano 개발 보드, Windows PC 1대, 점퍼 와이어 여러 개, IMU 자세 센서, USB-TTL 변환 모듈을 사용합니다.
 
-Arduino.rar
+[Arduino.rar](/downloads/Arduino.rar)
 
 
 
 ## 1. 장치 연결
 
-![1. 장치 연결 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDZkYTc3ZWEyODIzYjQzMDBjYzcwODY5MmM2OWQ2MWZfOTQ3MjMyNWZjMTlmNGM1ZDdkMTg2MWU3ZDQxMjEyNzVfSUQ6NzYxMTEzNTIxMjUzMzQ1MTk5MF8xNzgwMDUyNTU0OjE3ODAxMzg5NTRfVjM)
 
+![그림 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/1.png)
+![1. 장치 연결 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/1.png)
+
+
+![그림 3](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/3.jpg)
 ## 2. 핵심 코드 해설
 
 구체적인 코드는 자료의 소스 코드를 참조하세요.
@@ -183,6 +187,6 @@ _parse_frame_data(): 데이터 프레임을 파싱합니다.
 
 프로그램이 Arduino에 다운로드된 후 시리얼 어시스턴트를 열면(설정 파라미터는 아래 그림 참조) IMU 모듈의 데이터가 계속 출력되는 것을 볼 수 있습니다. IMU 모듈의 자세를 바꾸면 데이터가 변화합니다.
 
-![3. imu 데이터 읽기 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDRjOWI4OGZhZWY0MTVjMTkwNzM5NzY3MzNmYjcwYmFfNDJmMjYwZGU4MjkwMTJjNjEzZDQ5OWQ0NTFiMmQ3ZmZfSUQ6NzYxMTEzNTIyOTg2NDA3MDM2OF8xNzgwMDUyNTU0OjE3ODAxMzg5NTRfVjM)
+![3. imu 데이터 읽기 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/4.png)
 
 주의: 위는 10축 IMU 데이터 읽기입니다. 6축은 자기력계(Magnetometer)와 기압계(Barometer) 데이터가 없고, 9축은 기압계(Barometer) 데이터가 없습니다.

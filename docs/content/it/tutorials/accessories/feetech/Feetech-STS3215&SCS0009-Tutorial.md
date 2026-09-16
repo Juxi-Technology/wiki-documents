@@ -8,11 +8,11 @@ description: "Debug dei servomotori Feetech STS3215 e SCS0009: scaricare il soft
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/feetech-scs0009-serial-bus-servo)**
 
 
-[Software host Feetech FD](https://gitee.com/ftservo)[https://gitee.com/ftservo](https://gitee.com/ftservo)
+[Software host Feetech FD](https://gitee.com/ftservo)
 
-![image – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTU5ZWIzNjQzODEwMjhlMzRhMDA4ZjIxNGNjMTM1NjZfYzRlYWYyMDAxOTZiYjM0MGQyZTE1OTQyYmNiMTM5YTZfSUQ6NzYyNTg1MDA4MjM4NjU3ODY1N18xNzgwNjYzNDMwOjE3ODA3NDk4MzBfVjM)
+![image – 1](../../../../../public/images/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial/1.jpg)
 
-![image – 2](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDI5NDU1ZWU2YzZhMTM1NzM2OTdjNzU0YWUxNmY3NzlfMzE3ZmQwN2I2NjRiYWQ0ZGY1MTk4ZjdlMWE1MDkxYjJfSUQ6NzYyNTg0ODc3ODM4NjExNTUyNF8xNzgwNjYzNDMwOjE3ODA3NDk4MzBfVjM)
+![image – 2](../../../../../public/images/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial/2.png)
 
 File di debug servomotore STS3215.zip
 

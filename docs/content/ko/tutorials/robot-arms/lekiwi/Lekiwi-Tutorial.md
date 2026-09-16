@@ -24,7 +24,7 @@ lerobot-Lekiwi.zip
 
 온라인 URDF 미리보기 https://urdf.d-robotics.cc/
 
-![image – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
+![image – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
 ### 주요 특징
 
@@ -151,7 +151,7 @@ conda install ffmpeg -c conda-forge
 
 다음 오류가 발생하면 위 명령으로도 해결할 수 있습니다.
 
-![5. 환경에 ffmpeg 설치: – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
+![5. 환경에 ffmpeg 설치: – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
 #### 6. feetech 모터 의존성을 포함한 LeRobot 설치:
 
@@ -166,7 +166,7 @@ pip install -e ".[lekiwi]"
 
 connection_time_s: int = 7200 # 也就是2小时
 
-![7. 연결 시간 설정 – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
+![7. 연결 시간 설정 – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
 
 
@@ -186,7 +186,7 @@ connection_time_s: int = 7200 # 也就是2小时
 
 셸에서 다음 명령을 복사해 붙여넣으세요: `source ~/.bashrc` 또는 Mac 사용자: `source ~/.bash_profile` 또는 `source ~/.zshrc`(zshell 사용 시)
 
-![2. 셸 재시작 – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
+![2. 셸 재시작 – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
 #### 3. LeRobot용 새 Conda 환경 생성 및 활성화
 
@@ -224,7 +224,7 @@ conda install ffmpeg -c conda-forge
 
 다음 오류가 발생하면 위 명령으로도 해결할 수 있습니다.
 
-![5. 환경에 ffmpeg 설치: – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
+![5. 환경에 ffmpeg 설치: – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
 #### 6. feetech 모터 의존성을 포함한 LeRobot 설치:
 
@@ -235,9 +235,9 @@ pip install -e ".[lekiwi]"
 
 ## 모터 설정
 
-![6. feetech 모터 의존성을 포함한 LeRobot 설치: – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
+![6. feetech 모터 의존성을 포함한 LeRobot 설치: – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
-![6. feetech 모터 의존성을 포함한 LeRobot 설치: – 2](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
+![6. feetech 모터 의존성을 포함한 LeRobot 설치: – 2](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
 #### **1. 로봇 암에 연결된 USB 포트 찾기**
 
@@ -268,7 +268,7 @@ lerobot-setup-motors \
     --robot.port=/dev/tty.usbmodem58760431551 # <- paste here the port found at previous step
 ```
 
-![2. 모터 설정완성품은 이 단계 생략 가능 – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
+![2. 모터 설정완성품은 이 단계 생략 가능 – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
 #### 3. HuggingFace 국내 미러 설정
 
@@ -309,11 +309,11 @@ source ~/.zshrc
 
 https://huggingface.co/settings/tokens
 
-![① 토큰 생성 – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
+![① 토큰 생성 – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
-![① 토큰 생성 – 2](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
+![① 토큰 생성 – 2](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
-![① 토큰 생성 – 3](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
+![① 토큰 생성 – 3](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
 ##### ② 토큰 기록
 
@@ -331,17 +331,17 @@ hf auth login
 hf auth whoami
 ```
 
-![③ 토큰 바인딩 – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
+![③ 토큰 바인딩 – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
 ##### ④ 데이터세트 저장소 생성
 
 **Owner와 Dataset 이름을 기록해 두세요. 이는 나중에 필요한 \<hf_username\>과 \<dateset_repo_id\>입니다.**
 
-![④ 데이터세트 저장소 생성 – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
+![④ 데이터세트 저장소 생성 – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
-![④ 데이터세트 저장소 생성 – 2](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
+![④ 데이터세트 저장소 생성 – 2](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
-![④ 데이터세트 저장소 생성 – 3](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
+![④ 데이터세트 저장소 생성 – 3](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
 #### 4. 설정 업데이트!!!
 
@@ -358,7 +358,7 @@ sudo chmod 666 /dev/ttyACM1
 
 example\\lekiwi 디렉터리 아래의 다음 네 파일을 수정합니다
 
-![4. 설정 업데이트!!! – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
+![4. 설정 업데이트!!! – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
 ##### ① teleoperate.py 수정
 
@@ -366,7 +366,7 @@ remote_ip: 라즈베리파이의 IP 주소
 
 port: 액티브 암을 컴퓨터 또는 Linux에 연결했을 때의 포트 번호
 
-![① teleoperate.py 수정 – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
+![① teleoperate.py 수정 – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
 ##### ② record.py 수정
 
@@ -376,7 +376,7 @@ remote_ip: 라즈베리파이의 IP 주소
 
 port: 액티브 암을 컴퓨터 또는 Linux에 연결했을 때의 포트 번호
 
-![② record.py 수정 – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
+![② record.py 수정 – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
 ##### ③ replay.py 수정
 
@@ -384,7 +384,7 @@ remote_ip: 라즈베리파이의 IP 주소
 
 \<hf_username\>/\<dataset_repo_id\>, 즉 [Hugging Face의 사용자 이름과 데이터세트 이름](https://juxitech.feishu.cn/docx/DXtPd0iF1oO3aGxRChBcL3LSnFh?fromScene=spaceOverview#doxcnsAUzU1e1l6XIM07OE8grYg)
 
-![③ replay.py 수정 – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
+![③ replay.py 수정 – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
 ### 캘리브레이션
 
@@ -415,7 +415,7 @@ lerobot-calibrate \
 
 새 Anaconda Prompt를 엽니다
 
-![팔로워 암 캘리브레이션Lekiwi 베이스에 장착됨 – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
+![팔로워 암 캘리브레이션Lekiwi 베이스에 장착됨 – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
 > Mac을 사용한다면 원격 조작을 위해 "터미널"에 키보드 접근 권한을 허용해야 할 수 있습니다. "시스템 설정(System Preferences)" \> "보안 및 개인 정보(Security &amp; Privacy)" \> "입력 모니터링(Input Monitoring)"으로 이동한 다음 "터미널" 체크박스를 선택하세요.
 > 
@@ -427,7 +427,7 @@ lerobot-calibrate \
 python -m lerobot.robots.lekiwi.lekiwi_host --robot.id=my_awesome_kiwi
 ```
 
-![팔로워 암 캘리브레이션Lekiwi 베이스에 장착됨 – 2](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
+![팔로워 암 캘리브레이션Lekiwi 베이스에 장착됨 – 2](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
 다음으로 노트북에서도 환경을 활성화하는 다음 명령 `conda activate lerobot`을 실행한 후, 다음 스크립트를 실행합니다:
 
@@ -595,7 +595,7 @@ HF_DATASET_ID = "\< hf_username \>/\< eval_dataset_id \>" 생성한 사용자 �
 
 remote_ip: 라즈베리파이 IP 주소
 
-![evaluate.py 수정 – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
+![evaluate.py 수정 – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
 그다음 다음 명령을 실행합니다:
 

@@ -455,3 +455,15 @@ dora run dataflow_tracking_real_right.yml --uv
 ```
 
 <RelatedProducts slugs="amazinghand,servo-driver-board" />
+
+---
+
+## Model Files
+
+You can view or download the model on [Onshape](https://cad.onshape.com/documents/430ff184cf3dd9557aaff2be/w/e3658b7152c139971d22c688/e/d79fbb3641873de0a515037e) (including the right hand and URDF files), for example if you need model files in other formats
+
+Right_Hand.step
+
+The dexterous hand's [MuJoCo model](https://github.com/pollen-robotics/AmazingHand/tree/main/Demo/AHSimulation/AHSimulation)
+
+![Image 20](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)

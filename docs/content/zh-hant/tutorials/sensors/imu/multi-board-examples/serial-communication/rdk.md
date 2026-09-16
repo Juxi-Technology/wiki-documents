@@ -11,7 +11,7 @@ description: "IMU 慣導模組串列埠通訊教程(RDK X5 版)：設備連接�
 
 將IMU姿態傳感器通過type-c線插在主控的USB上。
 
-![1.連接設備 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YmZjYjdjNzllNTdjMzhjZWE1MDcyY2FjNzc4YmYzNGRfOTc0ZjFiYmMxYWFlYmM2ZjBiNTNhOTFhMDA2NGZlMzhfSUQ6NzYzODk2NjEzNzc1MzY4NDkzMF8xNzgwNDA0NDg2OjE3ODA0OTA4ODZfVjM)
+![1.連接設備 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk/1.jpg)
 
 ## 2.查看設備狀態
 
@@ -27,7 +27,7 @@ lsusb
 ls -l /dev/ttyU*
 ```
 
-![2.查看設備狀態 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Nzc5MDlmY2M4MzdmOTI0MjU0OWEwMTY1MWQyNjkzZjJfODk5NTU3Y2NlM2FkNjhiMmM2NWNkYWEzNGVjNTBjMjVfSUQ6NzYzODk2NjE0MTUxNTMyMDI5MF8xNzgwNDA0NDg2OjE3ODA0OTA4ODZfVjM)
+![2.查看設備狀態 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk/2.png)
 
 設置端口映射
 
@@ -77,7 +77,7 @@ IMU_ROS2.zip
 
 通過MobaXterm軟件將 解壓後的文件 拖入 RDK X5 上。
 
-![3.安裝驅動庫 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YmI1MWZmYmYwYWZjOGI5YjliOTk4ODJmOTU5MTZlMDZfNzYxOWM5YmM4OThlZTQzZGNiZGMyZWI5NTc4OGZlOWRfSUQ6NzYzODk2NjEzOTc1NDEzODU3MV8xNzgwNDA0NDg2OjE3ODA0OTA4ODZfVjM)
+![3.安裝驅動庫 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk/3.png)
 
 ## 4.查看imu數據
 
@@ -90,7 +90,7 @@ cd ~/IMU_ROS2/IMU_Library
 python3 -m IMU_Library.IMU_Serial_Library
 ```
 
-![4.查看imu數據 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YWM5MDhmOWRlMGY1YzU2ZmNlMzg3ZDFjNjI0Y2U1NDdfMTc5MGU2Nzc4ZGNhZmExNjgzYzcxYjdmNzY4MjcxMzdfSUQ6NzYzODk2NjEzOTcyODg3NDQyOF8xNzgwNDA0NDg2OjE3ODA0OTA4ODZfVjM)
+![4.查看imu數據 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk/4.png)
 
 注意：以上爲10軸IMU的數據讀取，6軸無磁力計（Magnetometer）與氣壓計（Barometer）數據，9軸無氣壓計（Barometer）數據。
 

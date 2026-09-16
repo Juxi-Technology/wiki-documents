@@ -18,25 +18,25 @@ description: "O módulo já vem gravado de fábrica com o firmware de reconhecim
 
 #### Clique no menu superior "Plataforma de Funcionalidades" e selecione "Desenvolvimento aprofundado de firmware de produto e SDK"
 
-![Clique no menu superior "Plataforma de Funcionalidades" e selecione "Desenvolvimento aprofundado de firmware de produto e SDK" – 1](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/1.png)
+![Clique no menu superior "Plataforma de Funcionalidades" e selecione "Desenvolvimento aprofundado de firmware de produto e SDK" – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/1.png)
 
 ---
 
 #### Clique em "Aplicação de modelo de grande porte de reconhecimento de voz offline"
 
-![Clique no menu superior "Plataforma de Funcionalidades" e selecione "Desenvolvimento aprofundado de firmware de produto e SDK" – 2](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/10.png)
+![Clique no menu superior "Plataforma de Funcionalidades" e selecione "Desenvolvimento aprofundado de firmware de produto e SDK" – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/10.png)
 
 ---
 
 #### Clique em "Desenvolvimento de firmware de reconhecimento de voz e SDK"
 
-![Clique em "Desenvolvimento de firmware de reconhecimento de voz e SDK" – 1](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/11.png)
+![Clique em "Desenvolvimento de firmware de reconhecimento de voz e SDK" – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/11.png)
 
 ---
 
 #### Novo projeto
 
-![Clique em "Desenvolvimento de firmware de reconhecimento de voz e SDK" – 2](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/12.png)
+![Clique em "Desenvolvimento de firmware de reconhecimento de voz e SDK" – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/12.png)
 
 ---
 
@@ -56,7 +56,7 @@ description: "O módulo já vem gravado de fábrica com o firmware de reconhecim
 
 7. **Descrição:** siga suas próprias regras de descrição
 
-![Preenchimento das informações do produto – 1](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/13.png)
+![Preenchimento das informações do produto – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/13.png)
 
 ---
 
@@ -78,13 +78,13 @@ description: "O módulo já vem gravado de fábrica com o firmware de reconhecim
 
 4. **Seleção da placa do módulo:** CI-D02GS02S
 
-![Preenchimento das informações do produto – 2](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/14.png)
+![Preenchimento das informações do produto – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/14.png)
 
 ---
 
 #### Configuração do firmware
 
-![Configuração do firmware – 1](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/2.png)
+![Configuração do firmware – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/2.png)
 
 ---
 
@@ -102,9 +102,9 @@ description: "O módulo já vem gravado de fábrica com o firmware de reconhecim
 
     命令词播报词协议列表V3_英文模板.xlsx
 
-![Configuração do firmware – 2](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/3.png)
+![Configuração do firmware – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/3.png)
 
-![Configuração do firmware – 3](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/4.png)
+![Configuração do firmware – 3](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/4.png)
 
 ---
 
@@ -120,23 +120,23 @@ description: "O módulo já vem gravado de fábrica com o firmware de reconhecim
 > 
 > 
 
-![Descarregar o pacote compactado do software de gravação do módulo de voz – 1](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/5.png)
+![Descarregar o pacote compactado do software de gravação do módulo de voz – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/5.png)
 
 2. Conecte a placa de som ao computador e abra o Gerenciador de Dispositivos
 
-![Descarregar o pacote compactado do software de gravação do módulo de voz – 2](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/6.png)
+![Descarregar o pacote compactado do software de gravação do módulo de voz – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/6.png)
 
-![Descarregar o pacote compactado do software de gravação do módulo de voz – 3](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/7.png)
+![Descarregar o pacote compactado do software de gravação do módulo de voz – 3](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/7.png)
 
 3. Vá para a página do software de gravação de firmware
 
 > Posição do botão da placa de som
 > 
-> ![Descarregar o pacote compactado do software de gravação do módulo de voz – 4](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/8.png)
+> ![Descarregar o pacote compactado do software de gravação do módulo de voz – 4](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/8.png)
 > 
 > 
 
-![Descarregar o pacote compactado do software de gravação do módulo de voz – 5](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/9.png)
+![Descarregar o pacote compactado do software de gravação do módulo de voz – 5](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/9.png)
 
 #### Após a conclusão, você pode ir para os outros tutoriais correspondentes à esquerda
 

@@ -7,13 +7,15 @@ description: "Dieses Beispiel verwendet das Arduino-Nano-Entwicklungsboard, eine
 
 Dieses Beispiel verwendet das Arduino-Nano-Entwicklungsboard, einen Windows-PC, mehrere Jumper-Kabel und den IMU-Lagesensor.
 
-Arduino.rar
+[Arduino.rar](/downloads/Arduino.rar)
 
 
 
 ## 1. Gerät anschließen
 
-![1. Gerät anschließen – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YzJmMjA5YmRhYTNmNjEwNmRhOWI2Zjg4NTE5YjFhMzBfYThkNjJlNmM0ZDE0NDdkNWMxZTI0NmVlYmU3OGM2NTZfSUQ6NzYxMTEzNDc0NDcyNTYyMTk0OV8xNzgwMDUyNzM5OjE3ODAxMzkxMzlfVjM)
+
+![Abb. 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.png)
+![1. Gerät anschließen – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.png)
 
 ## 2. Kerncode-Erläuterung
 
@@ -141,6 +143,6 @@ IMU_I2C_ReadBarometer(): Barometerdaten lesen: Höhe, Temperatur, Druck, Druckdi
 
 Nach dem Download des Programms auf das Arduino den seriellen Assistenten öffnen (Parameter wie unten abgebildet): Die IMU-Daten werden fortlaufend ausgegeben. Ändert man die Ausrichtung des IMU-Moduls, ändern sich die Daten.
 
-![3. IMU-Daten auslesen – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MDFiOGRhNjI5YzZiOTU5NTY3Mjk4MWFlZjVlNjc3NGNfZTIxMjNkYzA5ODNhMGRkNDAyMzU2MDczNWM5Yjg3ZTFfSUQ6NzYxMTEzNDk4MzEwNDg1OTA5Ml8xNzgwMDUyNzM5OjE3ODAxMzkxMzlfVjM)
+![3. IMU-Daten auslesen – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/3.png)
 
 Hinweis: Oben werden die Daten eines 10-Achsen-IMU gelesen; 6-Achsen haben keine Magnetometer- und Barometerdaten, 9-Achsen keine Barometerdaten.

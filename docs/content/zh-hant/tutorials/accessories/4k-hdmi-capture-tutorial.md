@@ -18,15 +18,15 @@ description: "鉅犀科技 4K HDMI 採集器教程——三種主板接線方式
 
 **DP接口**——\>DP轉HDMI轉接頭——\>HDMI線——\>採集器的HDMI接口——\> USB/Type-C ——\>筆記本、電腦、一體機、手機/平板等顯示器
 
-![接線操作 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZmFjMDQzOWQ4YjQ5ZTUzNTA5YmRiOGJjMDk1MTk4NzZfNTFkNzcwMzkyZWU3ZGVlZmQyZDZjZjI0NWY5N2FjYzlfSUQ6NzYzODk1OTQxODc4NDM4NTk3Nl8xNzgwNDAzMzgxOjE3ODA0ODk3ODFfVjM)
+![接線操作 – 1](../../../../public/images/tutorials/accessories/4k-hdmi-capture-tutorial/1.jpg)
 
 ## OBS操作指南
 
-![OBS操作指南 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OGIyNmE2OGRlNmJhNWFkNmM0YzZlMThkZjhkYzljNDRfODIzYzE1OTJiMzFkOTJhZjc5Y2Y4MmQ1NGEyMzFjNGVfSUQ6NzYzODk1OTQxODY2MjkxNTAyOF8xNzgwNDAzMzgxOjE3ODA0ODk3ODFfVjM)
+![OBS操作指南 – 1](../../../../public/images/tutorials/accessories/4k-hdmi-capture-tutorial/2.jpg)
 
 ## **Potplayer操作指南**
 
-![Potplayer操作指南 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NzhmODc5NzA5ODc1M2JiZTIzMTA1ZDJlZWFhYmY2ZGNfNDg5MjM4ZTU0MjllMWEzZmQ1N2E0ZGFjNzBlZjdhZWVfSUQ6NzYzODk1OTQxNzk5NjAwNDMwMF8xNzgwNDAzMzgxOjE3ODA0ODk3ODFfVjM)
+![Potplayer操作指南 – 1](../../../../public/images/tutorials/accessories/4k-hdmi-capture-tutorial/3.jpg)
 
 
 

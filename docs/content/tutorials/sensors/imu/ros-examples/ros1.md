@@ -234,4 +234,4 @@ sudo chmod 666 /dev/imu-serial
 
 2. If the three axes appear too small in RViz, re-check Enable axes
 
-![FAQ – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDIwZDEyZjNmOTc4YThkYTRiYTRlNzQ4NTNhMDUxNjFfYThhYmNiY2YwMGNlODJiMTM5NjIwYWI3Y2NhNzQ4N2FfSUQ6NzYwMjQ1Nzk5Mjk5MDE2NjIzMF8xNzgwMDUzMzA0OjE3ODAxMzk3MDRfVjM)
+![FAQ – 1](../../../../../public/images/tutorials/sensors/imu/ros-examples/ros1/1.png)

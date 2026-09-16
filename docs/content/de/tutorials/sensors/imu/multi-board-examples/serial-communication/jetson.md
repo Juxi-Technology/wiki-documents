@@ -11,7 +11,7 @@ Dieses Tutorial verwendet das Jetson Orin NX-Mainboard als Beispiel.
 
 Den IMU-Lagesensor per Typ-C-Kabel an den USB-Anschluss des Hosts anschließen.
 
-![1. Gerät anschließen – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MzcwZGQ0YWY0YzFhNTRjY2Y3NDRlMGNiNGRkOGFlZTBfMmZkZTFmMTQ4NzVmMTUyODdkYjFkY2U2ZTNmYzNlYmZfSUQ6NzYwMjU4ODM2NTcxNTc3MDMzM18xNzgwMDUyNTg0OjE3ODAxMzg5ODRfVjM)
+![1. Gerät anschließen – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson/1.jpg)
 
 ## 2. Gerätestatus prüfen
 
@@ -27,6 +27,8 @@ Gerätenummer prüfen
 ls -l /dev/ttyU*
 ```
 
+
+![Abb. 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson/2.png)
 Port-Zuordnung einrichten
 
 ```Bash
@@ -69,7 +71,7 @@ Wer noch nicht mit der Dateiübertragung per MobaXterm vertraut ist, findet unte
 
 Die entpackten Dateien per MobaXterm auf Jetson Orin NX ziehen.
 
-![3. Treiberbibliotheken installieren – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YWE2MDE0NjZkNGUxOTQ2NjU1ZmJkOWQ5MGY0Y2JlZDFfNTJhNjcyYWYwMTY2ZjVjMGM5ZjZhZmM4YTFhYTgwMzJfSUQ6NzYwMzE5OTkxNjEzOTc3NzIyMV8xNzgwMDUyNTg0OjE3ODAxMzg5ODRfVjM)
+![3. Treiberbibliotheken installieren – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson/3.png)
 
 ## 4. IMU-Daten anzeigen
 
@@ -81,7 +83,7 @@ cd ~/IMU_ROS2/IMU_Library
 python3 -m IMU_Library.IMU_Serial_Library
 ```
 
-![4. IMU-Daten anzeigen – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YWIyMjM0NDcxOGVhN2VhNTFiNzcyNzliN2ZhYTMzZDVfZGRiNzcyZjdkNzkxZjk3ODZjMDNlNDI4MTc4ZTY4NTVfSUQ6NzYwMjU4NDYwNjQzNjY0MTczM18xNzgwMDUyNTg0OjE3ODAxMzg5ODRfVjM)
+![4. IMU-Daten anzeigen – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson/4.png)
 
 Hinweis: Oben werden die Daten eines 10-Achsen-IMU gelesen; 6-Achsen haben keine Magnetometer- und Barometerdaten, 9-Achsen keine Barometerdaten.
 
@@ -102,7 +104,7 @@ python3 -m IMU_Library.imu_calibration_tool --mode serial --port /dev/imu-serial
 python3 -m IMU_Library.imu_calibration_tool --mode serial --port /dev/imu-serial --calibrate temp
 ```
 
-![5. IMU-Kalibrierung – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ODU4NTBhMzJmMzhmYjFkMTllZGFjY2M4NjAyNTQ4YWFfMjExNDhmZTRlNmVkZmQzZDY0YTFhM2ZhYjhiNmExYWNfSUQ6NzYwMzIwNzAyMDAxMTIyODM2Nl8xNzgwMDUyNTg0OjE3ODAxMzg5ODRfVjM)
+![5. IMU-Kalibrierung – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson/5.png)
 
 ## 6. Hinweise
 

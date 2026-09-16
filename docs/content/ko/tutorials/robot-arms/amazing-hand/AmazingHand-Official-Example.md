@@ -36,9 +36,9 @@ Windows에서의 Rust 환경 변수 설정 참고(중요!) https://zhuanlan.zhih
 
 Linux 환경 변수 설정:
 
-![2. 환경 설치 – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/1.png)
+![2. 환경 설치 – 1](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/1.png)
 
-![2. 환경 설치 – 2](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/10.png)
+![2. 환경 설치 – 2](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/10.png)
 
 최초 설치 시 Visual Studio Installer가 필요할 수 있습니다
 
@@ -56,25 +56,25 @@ registry = "https://mirrors.tuna.tsinghua.edu.cn/git/crates.io-index.git"
 
 **2. uv 설치:** [https://docs.astral.sh/uv/getting-started/installation/](https://docs.astral.sh/uv/getting-started/installation/)
 
-![2. 환경 설치 – 3](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/11.png)
+![2. 환경 설치 – 3](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/11.png)
 
 Windows에서는 Powershell 터미널을 열고, 이 명령을 복사한 뒤 입력하여 설치합니다
 
 **Linux 환경 변수 설정:**
 
-![2. 환경 설치 – 4](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/12.png)
+![2. 환경 설치 – 4](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/12.png)
 
 **3. dora-rs 설치:** 다운로드 및 설치는 [https://dora-rs.ai/docs/guides/Installation/installing](https://dora-rs.ai/docs/guides/Installation/installing)을 참고하세요
 
 Linux 환경 변수 설정:
 
-![2. 환경 설치 – 5](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/13.png)
+![2. 환경 설치 – 5](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/13.png)
 
 ## 3. 배선 방법
 
 전원은 최소 5V3A가 필요하며, 외부 서보 드라이버 보드에 연결하고 USB로 컴퓨터에 연결합니다
 
-![3. 배선 방법 – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/14.png)
+![3. 배선 방법 – 1](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/14.png)
 
 ## 4. 예제 데모
 
@@ -82,7 +82,7 @@ Linux 환경 변수 설정:
 
 - Windows 시스템은 보통 COM11이며, 서보 드라이버 보드의 포트 번호는 장치 관리자 또는 Feite 서보 상위 프로그램에서 찾을 수 있습니다
 
-![1. 서보 드라이버 보드의 포트 번호 확인 – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/16.png)
+![1. 서보 드라이버 보드의 포트 번호 확인 – 1](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/16.png)
 
 - Ubuntu 및 Linux 시스템은 보통 /dev/ttyACM0 입니다
 
@@ -102,13 +102,13 @@ sudo usermod -aG dialout $USER
 
 가상 머신에서 "ls /dev/ttyUSB* /dev/ttyACM*" 명령이 디렉터리를 찾지 못하면, 가상 머신 오른쪽 아래에 로봇핸드가 컴퓨터에 연결되어 있는지 확인하세요. 연결되어 있다면 해당 연결을 해제하고 가상 머신에 연결하세요.
 
-![1. 서보 드라이버 보드의 포트 번호 확인 – 2](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
+![1. 서보 드라이버 보드의 포트 번호 확인 – 2](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
 
 ### **2. 코드의 포트 번호 수정**
 
 ① AmazingHand-main\\Demo\\AHControl\\src 디렉터리 아래의 main.rs 코드 파일을 찾아 텍스트 편집기로 열고, 자신의 호스트에서 찾은 포트 번호로 수정합니다(Windows는 COM*, Ubuntu 및 Linux 시스템은 보통 /dev/ttyACM*)
 
-![2. 코드의 포트 번호 수정 – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/19.png)
+![2. 코드의 포트 번호 수정 – 1](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/19.png)
 
 ② 해당 인스턴스 파일 찾기
 
@@ -120,11 +120,11 @@ sudo usermod -aG dialout $USER
 
 텍스트 형식으로 열고 자신의 호스트에서 찾은 포트 번호로 수정합니다(Windows는 COM*, Ubuntu 및 Linux 시스템은 보통 /dev/ttyACM*)
 
-![2. 코드의 포트 번호 수정 – 2](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/2.png)
+![2. 코드의 포트 번호 수정 – 2](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/2.png)
 
-![2. 코드의 포트 번호 수정 – 3](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
+![2. 코드의 포트 번호 수정 – 3](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
 
-![2. 코드의 포트 번호 수정 – 4](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/21.png)
+![2. 코드의 포트 번호 수정 – 4](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/21.png)
 
 ### **3. 코드 배포**
 
@@ -156,7 +156,7 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 source .venv/bin/activate
 ```
 
-![3. 코드 배포 – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/3.png)
+![3. 코드 배포 – 1](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/3.png)
 
 콘솔이 가상 환경을 활성화했는지 확인하세요!
 
@@ -228,9 +228,9 @@ dora build dataflow_tracking_simu.yml --uv   #(Execute only once)
 dora run dataflow_tracking_simu.yml --uv
 ```
 
-![시뮬레이션 환경 – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/4.png)
+![시뮬레이션 환경 – 1](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/4.png)
 
-![시뮬레이션 환경 – 2](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/5.png)
+![시뮬레이션 환경 – 2](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/5.png)
 
 ### 실제 하드웨어 실행(핸드 트래킹)
 
@@ -258,7 +258,7 @@ dora run dataflow_tracking_simu.yml --uv
 
     #### 양손 로봇핸드(둘 다 하나의 서보 드라이버 보드에 연결되어 있음에 주의)
 
-![실제 하드웨어 실행핸드 트래킹 – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/6.png)
+![실제 하드웨어 실행핸드 트래킹 – 1](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/6.png)
 
     ```Plain Text
     dora build dataflow_tracking_real_2hands.yml --uv   #(Execute only once)
@@ -268,9 +268,9 @@ dora run dataflow_tracking_simu.yml --uv
     dora run dataflow_tracking_real_2hands.yml --uv
     ```
 
-![실제 하드웨어 실행핸드 트래킹 – 2](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/7.png)
+![실제 하드웨어 실행핸드 트래킹 – 2](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/7.png)
 
-![실제 하드웨어 실행핸드 트래킹 – 3](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/8.png)
+![실제 하드웨어 실행핸드 트래킹 – 3](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/8.png)
 
 ### 시뮬레이션 손가락 각도 제어 간단 예제
 
@@ -284,9 +284,9 @@ dora run dataflow_tracking_simu.yml --uv
     dora run dataflow_angle_simu.yml --uv
     ```
 
-![시뮬레이션 손가락 각도 제어 간단 예제 – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/9.png)
+![시뮬레이션 손가락 각도 제어 간단 예제 – 1](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/9.png)
 
-![시뮬레이션 손가락 각도 제어 간단 예제 – 2](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/1.png)
+![시뮬레이션 손가락 각도 제어 간단 예제 – 2](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/1.png)
 
 설명
 
@@ -314,7 +314,7 @@ uv pip install mediapipe==0.10.14
 
 ### 2. Dora 버전 비호환, 메시지 형식(v0.7.0 vs v0.8.0)
 
-![2. Dora 버전 비호환, 메시지 형식v0.7.0 vs v0.8.0 – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/10.png)
+![2. Dora 버전 비호환, 메시지 형식v0.7.0 vs v0.8.0 – 1](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/10.png)
 
 답: ① 먼저 C 드라이브 사용자 디렉터리의 .cargo/registry/src/github.xxxxxxxx/ 디렉터리에서 해당 의존성 패키지만 삭제하세요!
 
@@ -340,13 +340,13 @@ uv pip install mediapipe==0.10.14
 
 실제 오류 보고 상황에 따라 해당 버전을 수정하세요. 예를 들어 dora-message가 0.6.0 버전을 요구하면 dora-node-api="0.4.0" dora-message="0.6.0" 으로 변경합니다.
 
-![2. Dora 버전 비호환, 메시지 형식v0.7.0 vs v0.8.0 – 2](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/11.png)
+![2. Dora 버전 비호환, 메시지 형식v0.7.0 vs v0.8.0 – 2](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/11.png)
 
-![2. Dora 버전 비호환, 메시지 형식v0.7.0 vs v0.8.0 – 3](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/12.png)
+![2. Dora 버전 비호환, 메시지 형식v0.7.0 vs v0.8.0 – 3](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/12.png)
 
 ### 3. openCV 의존 라이브러리 없음
 
-![3. openCV 의존 라이브러리 없음 – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/13.png)
+![3. openCV 의존 라이브러리 없음 – 1](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/13.png)
 
 HandTracking 디렉터리에서 다음 명령을 입력합니다
 
@@ -356,11 +356,11 @@ python -m pip install opencv-contrib-python numpy mediapipe -i https://mirrors.a
 
 ### 4. 카메라 권한 켜기(컴퓨터)
 
-![4. 카메라 권한 켜기컴퓨터 – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/14.png)
+![4. 카메라 권한 켜기컴퓨터 – 1](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/14.png)
 
-![4. 카메라 권한 켜기컴퓨터 – 2](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/16.png)
+![4. 카메라 권한 켜기컴퓨터 – 2](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/16.png)
 
-![4. 카메라 권한 켜기컴퓨터 – 3](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
+![4. 카메라 권한 켜기컴퓨터 – 3](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/18.png)
 
 ### 5. 가상 머신 22.04에서 카메라 호출
 
@@ -372,11 +372,11 @@ https://blog.csdn.net/qq_19731521/article/details/124954288 참고
 
 1. 먼저 미세 조정 각도 브래킷을 고정합니다
 
-![환경 카메라 키트 브래킷 설치 단계 – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/19.png)
+![환경 카메라 키트 브래킷 설치 단계 – 1](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/19.png)
 
 2. 측면 보기 환경 카메라 키트
 
-![환경 카메라 키트 브래킷 설치 단계 – 2](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/2.png)
+![환경 카메라 키트 브래킷 설치 단계 – 2](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/2.png)
 
 
 
@@ -429,7 +429,7 @@ sudo usermod -aG dialout $USER
 
 ① AmazingHand-main\\Demo\\AHControl\\src 디렉터리 아래의 main.rs 코드 파일을 찾아 텍스트 형식으로 열고, 자신의 호스트에서 찾은 포트 번호로 수정합니다(Windows는 COM*, Ubuntu 및 Linux 시스템은 보통 /dev/ttyACM*)
 
-![가상 머신 22.04에서 핸드 트래킹 직접 실행 – 1](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
+![가상 머신 22.04에서 핸드 트래킹 직접 실행 – 1](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)
 
 ② 해당 인스턴스 파일 찾기
 
@@ -441,11 +441,11 @@ sudo usermod -aG dialout $USER
 
 텍스트 형식으로 열고 자신의 호스트에서 찾은 포트 번호로 수정합니다(Windows는 COM*, Ubuntu 및 Linux 시스템은 보통 /dev/ttyACM*)
 
-![가상 머신 22.04에서 핸드 트래킹 직접 실행 – 2](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/21.png)
+![가상 머신 22.04에서 핸드 트래킹 직접 실행 – 2](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/21.png)
 
-![가상 머신 22.04에서 핸드 트래킹 직접 실행 – 3](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/3.png)
+![가상 머신 22.04에서 핸드 트래킹 직접 실행 – 3](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/3.png)
 
-![가상 머신 22.04에서 핸드 트래킹 직접 실행 – 4](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/4.png)
+![가상 머신 22.04에서 핸드 트래킹 직접 실행 – 4](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/4.png)
 
 **5. 오른손 핸드 트래킹 실행**
 
@@ -454,3 +454,15 @@ dora run dataflow_tracking_real_right.yml --uv
 ```
 
 <RelatedProducts slugs="amazinghand,servo-driver-board" />
+
+---
+
+## 모델 파일
+
+[Onshape](https://cad.onshape.com/documents/430ff184cf3dd9557aaff2be/w/e3658b7152c139971d22c688/e/d79fbb3641873de0a515037e)에서 모델을 보거나 다운로드할 수 있습니다(오른손, URDF 파일 포함). 예를 들어 다른 형식의 모델 파일이 필요한 경우
+
+Right_Hand.step
+
+로봇 손의[MuJoCo 모델](https://github.com/pollen-robotics/AmazingHand/tree/main/Demo/AHSimulation/AHSimulation)
+
+![그림 20](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/20.png)

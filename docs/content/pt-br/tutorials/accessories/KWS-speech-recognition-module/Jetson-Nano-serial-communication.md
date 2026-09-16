@@ -17,7 +17,7 @@ Ao digitar no terminal, o aparecimento do dispositivo ttyUSB0 indica reconhecime
 ls /dev/ttyUSB*
 ```
 
-![1. Verificar a porta – 1](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/1.png)
+![1. Verificar a porta – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/1.png)
 
 ## 2. Implementação do código
 
@@ -152,7 +152,7 @@ O conteúdo da transmissão pode ser visualizado de acordo com o protocolo do ar
 
 Entre eles, o primeiro e o segundo bytes AA 55 representam o cabeçalho do protocolo, o terceiro byte 00 representa a função de transmissão, o quarto é o ID do conteúdo transmitido, onde podemos ver que "o carro avança" é 0x07 em hexadecimal, portanto enviar 0x07 para o registrador 0x03 no programa transmitirá o conteúdo correspondente. O quinto byte é o quadro final. 
 
-![3. Efeito da implementação – 1](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/2.png)
+![3. Efeito da implementação – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/2.png)
 
 Digite o seguinte comando no terminal para executar o programa 
 
@@ -164,11 +164,11 @@ Após dizer a palavra de ativação "Wake", o Console responderá com o Read_ID 
 
 diga "Desligar a luz", e o Console responderá com Read_ID recebido: 13 
 
-![3. Efeito da implementação – 2](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/3.png)
+![3. Efeito da implementação – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/3.png)
 
 Neste momento, você pode abrir o anexo "Lista de Protocolos de Palavras de Comando e Anúncio V1_Arquivo Chinês" para consultar o protocolo de "Desligar a luz" 
 
-![3. Efeito da implementação – 3](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/4.png)
+![3. Efeito da implementação – 3](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/4.png)
 
 Entre eles, o primeiro e o segundo bytes AA 55 representam o cabeçalho do protocolo, o terceiro byte representa o ID das dez palavras funcionais do chip, o quarto é o ID da palavra de comando, onde podemos ver que "desligar a luz" é 0D em hexadecimal e 13 em decimal. O quinto byte é o quadro final.
 

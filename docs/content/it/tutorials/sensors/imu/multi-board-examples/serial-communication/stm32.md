@@ -7,16 +7,18 @@ description: "Questo esempio usa la scheda core STM32F103C8T6, un PC Windows, di
 
 Questo esempio usa la scheda core STM32F103C8T6, un PC Windows, diversi cavi jumper e il sensore di assetto IMU.
 
-STM32.zip
+[STM32.zip](/downloads/STM32.zip)
 
 Aprire USART.uvprojx con keil5 e flashatre il programma sulla scheda core STM32F103C8T6
 
 ## 1. Collegare il dispositivo
 
-![1. Collegare il dispositivo – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MWE5MmY3ZDI5ZDdlZmYyYmM3ODkwYzJjNjNkZWQxZThfZDY1NWFjNWM2NzM1NGMxM2IyZGM4ZTkxYzc0NjgyMDdfSUQ6NzYxMTg4NzE5MDAxMTM2NTcyNF8xNzgwMDUyNTM2OjE3ODAxMzg5MzZfVjM)
+![1. Collegare il dispositivo – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32/1.png)
 
 ## 2. Spiegazione del codice chiave
 
+
+![Immagine 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32/2.png)
 Il codice concreto si trova nel codice sorgente dei materiali.
 
 ```C++
@@ -183,6 +185,6 @@ _parse_frame_data(): analizza la trama dati.
 
 Dopo il download del programma sull'Arduino, aprire l'assistente seriale (parametri come mostrato sotto): i dati del modulo IMU vengono stampati in continuo. Cambiando l'orientamento del modulo IMU, i dati cambiano.
 
-![3. Leggere i dati IMU – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YjBiODUxZDc2MmM1MjJhZjRlZTg2MTVlOTdiMjBjZGNfZGNkMDQ1ZmI5MWMzZWUyMjkzOWY5MjQyMjRkYjU5ZTdfSUQ6NzYxMTEzNzI4NDI1MDg4MDk2OV8xNzgwMDUyNTM2OjE3ODAxMzg5MzZfVjM)
+![3. Leggere i dati IMU – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32/3.png)
 
 Nota: quanto sopra riguarda un IMU a 10 assi; i modelli a 6 assi non hanno magnetometro né barometro, quelli a 9 assi non hanno barometro.

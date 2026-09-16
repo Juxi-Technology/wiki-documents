@@ -22,7 +22,7 @@ lerobot-Lekiwi.zip
 
 オンライン URDF プレビュー https://urdf.d-robotics.cc/
 
-![image – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
+![image – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
 ### 主な特徴
 
@@ -129,7 +129,7 @@ conda install ffmpeg -c conda-forge
 
 以下のエラーに遭遇した場合も、上記のコマンドで解決できます。
 
-![5. 環境に ffmpeg をインストール: – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
+![5. 環境に ffmpeg をインストール: – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
 #### 6. feetech モーター依存関係を含む LeRobot のインストール:
 
@@ -144,7 +144,7 @@ pip install -e ".[lekiwi]"
 
 connection_time_s: int = 7200 # 也就是2小时
 
-![7. 接続時間の設定 – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
+![7. 接続時間の設定 – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
 
 
@@ -162,7 +162,7 @@ connection_time_s: int = 7200 # 也就是2小时
 
 シェルで以下をコピーして貼り付けます: `source ~/.bashrc` または Mac ユーザー: `source ~/.bash_profile` または `source ~/.zshrc`（zshell を使用している場合）
 
-![2. シェルの再起動 – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
+![2. シェルの再起動 – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
 #### 3. LeRobot 用の新しい Conda 環境を作成して有効化
 
@@ -199,7 +199,7 @@ conda install ffmpeg -c conda-forge
 
 以下のエラーに遭遇した場合も、上記のコマンドで解決できます。
 
-![5. 環境に ffmpeg をインストール: – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
+![5. 環境に ffmpeg をインストール: – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
 #### 6. feetech モーター依存関係を含む LeRobot のインストール:
 
@@ -210,9 +210,9 @@ pip install -e ".[lekiwi]"
 
 ## モーターの設定
 
-![6. feetech モーター依存関係を含む LeRobot のインストール: – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
+![6. feetech モーター依存関係を含む LeRobot のインストール: – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
-![6. feetech モーター依存関係を含む LeRobot のインストール: – 2](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
+![6. feetech モーター依存関係を含む LeRobot のインストール: – 2](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
 #### **1.ロボットアームに関連する USB ポートを見つける**
 
@@ -243,7 +243,7 @@ lerobot-setup-motors \
     --robot.port=/dev/tty.usbmodem58760431551 # <- paste here the port found at previous step
 ```
 
-![2.モーターの設定（完成品はスキップ可能） – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
+![2.モーターの設定（完成品はスキップ可能） – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
 #### 3.HuggingFace 国内ミラーの設定
 
@@ -284,11 +284,11 @@ source ~/.zshrc
 
 https://huggingface.co/settings/tokens
 
-![①トークンの作成 – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
+![①トークンの作成 – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
-![①トークンの作成 – 2](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
+![①トークンの作成 – 2](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
-![①トークンの作成 – 3](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
+![①トークンの作成 – 3](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
 ##### ②トークンの記録
 
@@ -306,17 +306,17 @@ hf auth login
 hf auth whoami
 ```
 
-![③トークンのバインド – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
+![③トークンのバインド – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
 ##### ④データセットリポジトリの作成
 
 **後で必要になる \<hf_username\> と \<dateset_repo_id\> にあたる Owner とデータセット名を控えておいてください**
 
-![④データセットリポジトリの作成 – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
+![④データセットリポジトリの作成 – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
-![④データセットリポジトリの作成 – 2](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
+![④データセットリポジトリの作成 – 2](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
-![④データセットリポジトリの作成 – 3](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
+![④データセットリポジトリの作成 – 3](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
 #### 4. 設定の更新!!!
 
@@ -333,7 +333,7 @@ sudo chmod 666 /dev/ttyACM1
 
 example\lekiwi ディレクトリにある以下の4つのファイルを変更します
 
-![4. 設定の更新!!! – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
+![4. 設定の更新!!! – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
 ##### ①teleoperate.py の変更
 
@@ -341,7 +341,7 @@ remote_ip: Raspberry Pi の IP アドレス
 
 port: 能動アームをコンピューターまたは Linux に接続した際のポート番号
 
-![①teleoperate.py の変更 – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
+![①teleoperate.py の変更 – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
 ##### ②record.py の変更
 
@@ -351,7 +351,7 @@ remote_ip: Raspberry Pi の IP アドレス
 
 port: 能動アームをコンピューターまたは Linux に接続した際のポート番号
 
-![②record.py の変更 – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
+![②record.py の変更 – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
 ##### ③replay.py の変更
 
@@ -359,7 +359,7 @@ remote_ip: Raspberry Pi の IP アドレス
 
 \<hf_username\>/\<dataset_repo_id\>、つまり[Hugging Face のユーザー名とデータセット名](https://juxitech.feishu.cn/docx/DXtPd0iF1oO3aGxRChBcL3LSnFh?fromScene=spaceOverview#doxcnsAUzU1e1l6XIM07OE8grYg)
 
-![③replay.py の変更 – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
+![③replay.py の変更 – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/4.png)
 
 ### キャリブレーション
 
@@ -390,7 +390,7 @@ lerobot-calibrate \
 
 新しい Anaconda Prompt を開きます
 
-![従動アームのキャリブレーション（Lekiwi ベースに搭載） – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
+![従動アームのキャリブレーション（Lekiwi ベースに搭載） – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/5.png)
 
 > Mac を使用している場合、遠隔操作のためにキーボードへのアクセスを「Terminal」に許可する必要があるかもしれません。「System Preferences」>「Security &amp; Privacy」>「Input Monitoring」に移動し、「Terminal」チェックボックスにチェックを入れてください。
 
@@ -400,7 +400,7 @@ lerobot-calibrate \
 python -m lerobot.robots.lekiwi.lekiwi_host --robot.id=my_awesome_kiwi
 ```
 
-![従動アームのキャリブレーション（Lekiwi ベースに搭載） – 2](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
+![従動アームのキャリブレーション（Lekiwi ベースに搭載） – 2](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/6.png)
 
 次に、ノートPC でも環境を有効化するために `conda activate lerobot` を実行し、その後以下のスクリプトを実行します:
 
@@ -563,7 +563,7 @@ HF_DATASET_ID = "\< hf_username \>/\< eval_dataset_id \>" 自分で作成した�
 
 remote_ip: Raspberry Pi の IP アドレス
 
-![evaluate.py の変更 – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
+![evaluate.py の変更 – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/8.png)
 
 次に以下のコマンドを実行します:
 

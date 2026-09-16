@@ -89,5 +89,5 @@ Paramètres de performance du baromètre
 
 ## 4. Paramètres de dimensions
 
-![Description des broches – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjA3NmQ5NzIzMzdkYWZlMzZkYzcwOGIyOGRmMmYxYWJfNTAxNTBiYzRjZTk4MzJiY2YzMWZhMWY4NDI5ZTFjYTZfSUQ6NzYzODkyMjc2MDI5MDcxNjYwMl8xNzgwMzE3OTcyOjE3ODA0MDQzNzJfVjM)
+![Description des broches – 1](../../../../../public/images/tutorials/sensors/imu/product-info/1.jpg)
 

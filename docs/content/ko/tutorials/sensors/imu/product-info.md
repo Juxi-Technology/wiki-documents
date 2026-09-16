@@ -89,4 +89,4 @@ IMU 데이터 성능 파라미터
 
 ## 4. 치수 파라미터
 
-![핀 기능 설명 – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjA3NmQ5NzIzMzdkYWZlMzZkYzcwOGIyOGRmMmYxYWJfNTAxNTBiYzRjZTk4MzJiY2YzMWZhMWY4NDI5ZTFjYTZfSUQ6NzYzODkyMjc2MDI5MDcxNjYwMl8xNzgwMzE3OTcyOjE3ODA0MDQzNzJfVjM)
+![핀 기능 설명 – 1](../../../../../public/images/tutorials/sensors/imu/product-info/1.jpg)

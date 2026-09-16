@@ -11,7 +11,7 @@ Este tutorial usa la placa madre Jetson Orin NX como ejemplo.
 
 Conectar el sensor de actitud IMU al USB del host mediante un cable Type-C.
 
-![1. Conectar el dispositivo – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MzcwZGQ0YWY0YzFhNTRjY2Y3NDRlMGNiNGRkOGFlZTBfMmZkZTFmMTQ4NzVmMTUyODdkYjFkY2U2ZTNmYzNlYmZfSUQ6NzYwMjU4ODM2NTcxNTc3MDMzM18xNzgwMDUyNTg0OjE3ODAxMzg5ODRfVjM)
+![1. Conectar el dispositivo – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson/1.jpg)
 
 ## 2. Comprobar el estado del dispositivo
 
@@ -27,6 +27,8 @@ Comprobar el número de dispositivo
 ls -l /dev/ttyU*
 ```
 
+
+![Imagen 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson/2.png)
 Configurar el mapeo de puertos
 
 ```Bash
@@ -69,7 +71,7 @@ Si aún no está familiarizado con el uso de MobaXterm para transferir archivos,
 
 Arrastrar los archivos descomprimidos a Jetson Orin NX con MobaXterm.
 
-![3. Instalar bibliotecas de controladores – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YWE2MDE0NjZkNGUxOTQ2NjU1ZmJkOWQ5MGY0Y2JlZDFfNTJhNjcyYWYwMTY2ZjVjMGM5ZjZhZmM4YTFhYTgwMzJfSUQ6NzYwMzE5OTkxNjEzOTc3NzIyMV8xNzgwMDUyNTg0OjE3ODAxMzg5ODRfVjM)
+![3. Instalar bibliotecas de controladores – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson/3.png)
 
 ## 4. Ver los datos IMU
 
@@ -81,7 +83,7 @@ cd ~/IMU_ROS2/IMU_Library
 python3 -m IMU_Library.IMU_Serial_Library
 ```
 
-![4. Ver los datos IMU – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YWIyMjM0NDcxOGVhN2VhNTFiNzcyNzliN2ZhYTMzZDVfZGRiNzcyZjdkNzkxZjk3ODZjMDNlNDI4MTc4ZTY4NTVfSUQ6NzYwMjU4NDYwNjQzNjY0MTczM18xNzgwMDUyNTg0OjE3ODAxMzg5ODRfVjM)
+![4. Ver los datos IMU – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson/4.png)
 
 Nota: lo anterior son datos de un IMU de 10 ejes; los de 6 ejes no tienen magnetómetro ni barómetro, los de 9 ejes no tienen barómetro.
 
@@ -102,7 +104,7 @@ python3 -m IMU_Library.imu_calibration_tool --mode serial --port /dev/imu-serial
 python3 -m IMU_Library.imu_calibration_tool --mode serial --port /dev/imu-serial --calibrate temp
 ```
 
-![5. Calibración IMU – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ODU4NTBhMzJmMzhmYjFkMTllZGFjY2M4NjAyNTQ4YWFfMjExNDhmZTRlNmVkZmQzZDY0YTFhM2ZhYjhiNmExYWNfSUQ6NzYwMzIwNzAyMDAxMTIyODM2Nl8xNzgwMDUyNTg0OjE3ODAxMzg5ODRfVjM)
+![5. Calibración IMU – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson/5.png)
 
 ## 6. Notas
 

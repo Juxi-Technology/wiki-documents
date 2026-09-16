@@ -7,16 +7,18 @@ description: "Este ejemplo usa la placa núcleo STM32F103C8T6, un PC Windows, va
 
 Este ejemplo usa la placa núcleo STM32F103C8T6, un PC Windows, varios cables de puente y el sensor de actitud IMU.
 
-STM32.zip
+[STM32.zip](/downloads/STM32.zip)
 
 Abrir USART.uvprojx con keil5 y grabar el programa en la placa núcleo STM32F103C8T6
 
 ## 1. Conectar el dispositivo
 
-![1. Conectar el dispositivo – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MWE5MmY3ZDI5ZDdlZmYyYmM3ODkwYzJjNjNkZWQxZThfZDY1NWFjNWM2NzM1NGMxM2IyZGM4ZTkxYzc0NjgyMDdfSUQ6NzYxMTg4NzE5MDAxMTM2NTcyNF8xNzgwMDUyNTM2OjE3ODAxMzg5MzZfVjM)
+![1. Conectar el dispositivo – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32/1.png)
 
 ## 2. Explicación del código clave
 
+
+![Imagen 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32/2.png)
 El código concreto está en el código fuente de los materiales.
 
 ```C++
@@ -183,6 +185,6 @@ _parse_frame_data(): analiza la trama de datos.
 
 Tras descargar el programa en el Arduino, abrir el asistente serie (parámetros como se muestra abajo): los datos del módulo IMU se imprimen continuamente. Al cambiar la orientación del módulo IMU, los datos cambian.
 
-![3. Leer datos IMU – 1](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YjBiODUxZDc2MmM1MjJhZjRlZTg2MTVlOTdiMjBjZGNfZGNkMDQ1ZmI5MWMzZWUyMjkzOWY5MjQyMjRkYjU5ZTdfSUQ6NzYxMTEzNzI4NDI1MDg4MDk2OV8xNzgwMDUyNTM2OjE3ODAxMzg5MzZfVjM)
+![3. Leer datos IMU – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32/3.png)
 
 Nota: lo anterior son datos de un IMU de 10 ejes; los de 6 ejes no tienen magnetómetro ni barómetro, los de 9 ejes no tienen barómetro.

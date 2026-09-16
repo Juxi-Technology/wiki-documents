@@ -32,7 +32,7 @@ O sensor de batimentos cardíacos e SpO2 da Juxi Technology é baseado no chip M
 
 **Fiação IIC**:
 
-![Diagrama de fiação IIC](../../../public/images/tutorials/accessories/heart-rate-spo2/IIC.png)
+![Diagrama de fiação IIC](../../../../public/images/tutorials/accessories/heart-rate-spo2/IIC.png)
 
 | MAX30102 | Arduino / Raspberry Pi |
 |----------|------------------------|
@@ -43,7 +43,7 @@ O sensor de batimentos cardíacos e SpO2 da Juxi Technology é baseado no chip M
 
 **Fiação UART**:
 
-![Diagrama de fiação UART](../../../public/images/tutorials/accessories/heart-rate-spo2/UART.png)
+![Diagrama de fiação UART](../../../../public/images/tutorials/accessories/heart-rate-spo2/UART.png)
 
 | MAX30102 | Arduino UNO |
 |----------|-------------|
@@ -136,7 +136,7 @@ if __name__ == "__main__":
 
 A Juxi Technology fornece um aplicação gráfico de host para Windows com exibição em tempo real das formas de onda de batimentos cardíacos e SpO2:
 
-![Captura de ecrã do aplicação de host](../../../public/images/tutorials/accessories/heart-rate-spo2/心率模块上位机.png)
+![Captura de ecrã do aplicação de host](../../../../public/images/tutorials/accessories/heart-rate-spo2/心率模块上位机.png)
 
 - Caminho no repositório: `HeartRateOximeter/上位机源代码/HeartRateOximeter.py`
 - Download: [GitHub Releases](https://github.com/Juxi-Technology/JUXI_HeartRate_SPO2)

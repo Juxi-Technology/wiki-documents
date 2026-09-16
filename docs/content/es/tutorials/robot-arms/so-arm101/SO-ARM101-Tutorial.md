@@ -106,7 +106,7 @@ Sin dependencias gráficas (gdk-pixbuf, librsvg), usar:
 【Solo Linux】instalar dependencias de compilación y compilar ffmpeg con libsvtav1; verificar con `which ffmpeg`.
 
 Si encuentra el error siguiente, los comandos anteriores también lo resuelven.
-![5. Instalar ffmpeg en su entorno: – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/1.png)
+![5. Instalar ffmpeg en su entorno: – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/1.png)
 
 
 
@@ -245,11 +245,11 @@ lerobot-calibrate \
 ```
 
 Primero, situar el robot con todas las articulaciones en el centro de su rango de movimiento y mantenerlo inmóvil. Tras pulsar Enter, mover cada articulación por todo su rango. El archivo registra los valores central, máximo y mínimo en el json bajo `~/.cache/huggingface/lerobot/calibration/robots` o `~/.cache/huggingface/lerobot/calibration/teleoperators`.
-![3. Luego calibrar el brazo Follower – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/2.png)
+![3. Luego calibrar el brazo Follower – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/2.png)
 
 
 
-![3. Luego calibrar el brazo Follower – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/3.png)
+![3. Luego calibrar el brazo Follower – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/3.png)
 
 
 
@@ -308,7 +308,7 @@ lerobot-find-cameras realsense # or realsense for Intel Realsense cameras
 ```
 
 El terminal muestra la información.
-![2. Teleoperación con visor de cámara – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/4.png)
+![2. Teleoperación con visor de cámara – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/4.png)
 
 
 
@@ -351,7 +351,7 @@ lerobot-teleoperate \
 
 Para la cámara de profundidad RealSense, ejecutar primero `python -m lerobot.find_cameras realsense`, sustituir `serial_number_or_name: "323622271780"` por su ID y activar `use_depth: true`:
 
-![2. Teleoperación con visor de cámara – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/5.png)
+![2. Teleoperación con visor de cámara – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/5.png)
 
 
 
@@ -489,7 +489,7 @@ lerobot-dataset-viz \
 ```
 
 `juxi` es el `repo_id` personalizado en la recolección.
-![Visualizar un dataset – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/6.png)
+![Visualizar un dataset – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/6.png)
 
 
 ### Reproducir un episodio (opcional)
@@ -552,7 +552,7 @@ Explicación
 - **Visualización**: `wandb.enable=true` con [Weights and Biases](https://docs.wandb.ai/quickstart); opcional, pero requiere `wandb login`.
 
 Si aparece el error:
-![ACT – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/7.png)
+![ACT – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/7.png)
 
 
 
@@ -732,15 +732,15 @@ Entrenamiento como Pi0, tipo de política `gr00t`.
 ## F. Entrenamiento en servidor cloud, despliegue y exportación de modelo
 
 #### **1. Hacer clic en «Mercado de cómputo», elegir GPU – a ser posible multicorazón**
-![1. Hacer clic en «Mercado de cómputo», elegir GPU – a ser posible multicorazón – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/8.png)
+![1. Hacer clic en «Mercado de cómputo», elegir GPU – a ser posible multicorazón – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/8.png)
 
 
 #### **2. Elegir «Pago por uso», imagen base «Miniconda/conda3/3.8(ubuntu20.04)/11.8», luego «Crear ahora»**
-![2. Elegir «Pago por uso», imagen base «Miniconda/conda3/3.8ubuntu20.04/11.8», luego «Crear ahora» – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/9.png)
+![2. Elegir «Pago por uso», imagen base «Miniconda/conda3/3.8ubuntu20.04/11.8», luego «Crear ahora» – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/9.png)
 
 
 #### **3. Clic en «JupyterLab» para entrar en la interfaz y abrir un terminal**
-![3. Clic en «JupyterLab» para entrar en la interfaz y abrir un terminal – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/10.png)
+![3. Clic en «JupyterLab» para entrar en la interfaz y abrir un terminal – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/10.png)
 
 
 #### **4. Inicializar el entorno conda**
@@ -756,7 +756,7 @@ conda activate base
 ```Plain Text
 conda init
 ```
-![4. Inicializar el entorno conda – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/11.png)
+![4. Inicializar el entorno conda – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/11.png)
 
 
 #### **5. Cerrar este terminal y abrir uno nuevo**
@@ -766,7 +766,7 @@ Ver https://www.autodl.com/docs/network_turbo/
 ```Plain Text
 source /etc/network_turbo
 ```
-![5. Cerrar este terminal y abrir uno nuevo – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/12.png)
+![5. Cerrar este terminal y abrir uno nuevo – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/12.png)
 
 
 
@@ -790,7 +790,7 @@ Alternativa: https://github.com/huggingface/lerobot.git – los comandos de la �
 ```PowerShell
 conda install ffmpeg -c conda-forge
 ```
-![6. Crear el entorno lerobot – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/13.png)
+![6. Crear el entorno lerobot – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/13.png)
 
 
 #### **7. Entrar en lerobot bajo src, instalar LeRobot con feetech:**
@@ -818,7 +818,7 @@ HF_USER=$(huggingface-cli whoami | head -n 1)
 ```Plain Text
 echo $HF_USER
 ```
-![8. Importar el dataset al servidor cloud – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/14.png)
+![8. Importar el dataset al servidor cloud – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/14.png)
 
 
 
@@ -840,45 +840,45 @@ filezilla
 ```
 
 Abrir FileZilla, «Archivo» → «Gestor de sitios», «Nuevo sitio», protocolo «SFTP»
-![8. Importar el dataset al servidor cloud – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/15.png)
+![8. Importar el dataset al servidor cloud – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/15.png)
 
 
 
-![8. Importar el dataset al servidor cloud – 3](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/16.png)
+![8. Importar el dataset al servidor cloud – 3](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/16.png)
 
 
 
 
 Volver a AutoDL: copiar la «orden de conexión», pegar la información y pulsar «Conectar»
-![8. Importar el dataset al servidor cloud – 4](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/17.png)
+![8. Importar el dataset al servidor cloud – 4](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/17.png)
 
 
 
-![8. Importar el dataset al servidor cloud – 5](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/18.png)
+![8. Importar el dataset al servidor cloud – 5](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/18.png)
 
 
 
-![8. Importar el dataset al servidor cloud – 6](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/19.png)
+![8. Importar el dataset al servidor cloud – 6](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/19.png)
 
 
 
-![8. Importar el dataset al servidor cloud – 7](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/20.png)
+![8. Importar el dataset al servidor cloud – 7](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/20.png)
 
 
 
-![8. Importar el dataset al servidor cloud – 8](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/21.png)
+![8. Importar el dataset al servidor cloud – 8](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/21.png)
 
 
 
 
 Crear la carpeta `data` en el directorio lerobot del servidor
-![8. Importar el dataset al servidor cloud – 9](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/22.png)
+![8. Importar el dataset al servidor cloud – 9](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/22.png)
 
 
 
 
 Arrastrar la carpeta del dataset a la derecha y esperar la transferencia
-![8. Importar el dataset al servidor cloud – 10](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/23.png)
+![8. Importar el dataset al servidor cloud – 10](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/23.png)
 
 
 
@@ -890,7 +890,7 @@ Ver [E. Entrenamiento y evaluación del dataset] de este tutorial; ejecutar el c
 #### 10. Exportación del modelo
 
 Tras el entrenamiento, exportar el modelo desde el directorio train
-![10. Exportación del modelo – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/24.png)
+![10. Exportación del modelo – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/24.png)
 
 
 
@@ -948,7 +948,7 @@ No valid stream found in input file. Is -1 of the desired media type?
 ```
 
 Instalar ffmpeg 7.1.1: `conda install ffmpeg=7.1.1 -c conda-forge`.
-![G. Preguntas frecuentes – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/25.png)
+![G. Preguntas frecuentes – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/25.png)
 
 
 
@@ -993,7 +993,7 @@ fddebug-master.zip
 
 Seleccionar el número de puerto, establecer la velocidad en baudios en 1000000, abrirlo y hacer clic en "Search"
 
-![Encontrar el servo en Windows software host de depuración Feetech – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/26.png)
+![Encontrar el servo en Windows software host de depuración Feetech – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/26.png)
 
 ## Control por simulación ROS2 (se puede implementar de forma independiente)
 
@@ -1005,11 +1005,11 @@ https://bambot.org/feetech.js?lang=zh
 
 1. Introducir 0 o 1 según el modelo del servo y hacer clic en "Connect".
 
-![Configurar el ID del servo y la calibración mediana en la web – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/27.png)
+![Configurar el ID del servo y la calibración mediana en la web – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/27.png)
 
 2. Escanear los servos con IDs 1 a 6; el ID correspondiente se confirma mediante FOUND en los resultados del escaneo. Ejemplo: el servo ID 1 de la imagen ya fue escaneado.
 
-![Configurar el ID del servo y la calibración mediana en la web – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/28.png)
+![Configurar el ID del servo y la calibración mediana en la web – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/28.png)
 
 3. Configuración de ID y calibración mediana
 
@@ -1023,6 +1023,6 @@ Servo STS: introducir 2047 en "Position Control" y hacer clic en "Set"
 
 Servo SCS: introducir 511 en "Position Control" y hacer clic en "Set".
 
-![Configurar el ID del servo y la calibración mediana en la web – 3](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/29.png)
+![Configurar el ID del servo y la calibración mediana en la web – 3](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial/29.png)
 
 <RelatedProducts slugs="so-arm101,robot-vision-kit,tpu-flexible-gripper" />

@@ -51,25 +51,25 @@ description: "Tutorial da placa de som USB sem driver da Juxi Technology — sof
 
 1. Antes de inserir a placa de som USB, usamos o comando `lsusb` para verificar os dispositivos USB:
 
-![1. Conexão da placa de som USB – 1](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
+![1. Conexão da placa de som USB – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
 
 2. Em seguida, conecte a placa de som USB e use `lsusb` para verificar. Você pode ver que o dispositivo extra é a placa de som USB: 
 
-![1. Conexão da placa de som USB – 2](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
+![1. Conexão da placa de som USB – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
 
 3. Em seguida, use `arecord -l` para listar todos os dispositivos de gravação. Como você pode ver, nosso dispositivo de placa de som USB 
 
-![1. Conexão da placa de som USB – 3](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
+![1. Conexão da placa de som USB – 3](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
 
 4. O uso de `aplay -l` pode listar todos os dispositivos de reprodução
 
-![1. Conexão da placa de som USB – 4](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
+![1. Conexão da placa de som USB – 4](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
 #### 2. Uso da placa de som USB
 
 `arecord -l`, por exemplo, aqui o UACDemoV1.0 é exibido, que é a nossa placa de som, card 0; device 0, e no comando, modifique-o para plughw:0,0 para especificar este dispositivo de gravação
 
-![2. Uso da placa de som USB – 1](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/4.png)
+![2. Uso da placa de som USB – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/4.png)
 
 Execute o comando de gravação integrado do Linux para gravar um som de 5 segundos para teste
 
@@ -88,11 +88,11 @@ Entre eles, `plughw:0,0` representa`card 0, device 0`, que é a nossa placa de s
 
 Se o som estiver muito baixo, digite o comando `alsamixer` para ajustar o volume, pressione `F6`, selecione a placa de som USB, 
 
-![2. Uso da placa de som USB – 2](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/5.png)
+![2. Uso da placa de som USB – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/5.png)
 
 Em seguida, pressione `F5`, exibindo os dispositivos de gravação e reprodução; aumentamos o volume de gravação pressionando a tecla para cima; PCM é para reprodução e CAPTURE MIC é para gravação 
 
-![2. Uso da placa de som USB – 3](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/6.png)
+![2. Uso da placa de som USB – 3](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/6.png)
 
 Em seguida, use o comando `aplay` para reproduzir
 
@@ -114,13 +114,13 @@ As descrições dos parâmetros são as seguintes:
 
 ### Visualizar a janela de visualização do PulseAudio
 
-![Visualizar a janela de visualização do PulseAudio – 1](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/7.png)
+![Visualizar a janela de visualização do PulseAudio – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/7.png)
 
 Visualize via PulseAudio, método de [linha de comando](https://so.csdn.net/so/search?q=%E5%91%BD%E4%BB%A4%E8%A1%8C&spm=1001.2101.3001.7020) 
 
 `pactl list sources short`            # Lists all available audio sources in the current PulseAudio audio server
 
-![Visualizar a janela de visualização do PulseAudio – 2](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/8.png)
+![Visualizar a janela de visualização do PulseAudio – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/8.png)
 
 > 49 representa o índice da fonte
 > 
@@ -152,7 +152,7 @@ Procure exemplos de código por conta própria, como pesquisar "[Python chamando
 
 1. Problema de ocupação do dispositivo
 
-![Jetson – 1](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/9.png)
+![Jetson – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/9.png)
 
 Feche a página de configurações e execute novamente o comando
 
@@ -166,11 +166,11 @@ Verifique qual processo está ocupando o dispositivo de áudio
 
 Antes de conectar a placa de som 
 
-![Jetson – 2](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
+![Jetson – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/1.png)
 
 Depois de conectar a placa de som 
 
-![Jetson – 3](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
+![Jetson – 3](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/10.png)
 
 Encerre o processo com `kill -9 PID` , onde PID é o PID que aparece após conectar a placa de som e, na captura de ecrã, é 33739 
 
@@ -274,11 +274,11 @@ Entre eles, `plughw:0,0` representa`card 0, device 0`, que é a nossa placa de s
 
 Se o som estiver muito baixo, digite o comando `alsamixer` para ajustar o volume, pressione `F6`, selecione a placa de som USB, 
 
-![Gravar um som de 5 segundos para teste – 1](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
+![Gravar um som de 5 segundos para teste – 1](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/2.png)
 
 Em seguida, pressione `F5`, exibindo os dispositivos de gravação e reprodução; aumentamos o volume de gravação pressionando a tecla para cima; PCM é para reprodução e CAPTURE MIC é para gravação 
 
-![Gravar um som de 5 segundos para teste – 2](../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
+![Gravar um som de 5 segundos para teste – 2](../../../../public/images/tutorials/accessories/usb-audio-card-tutorial/3.png)
 
 Em seguida, use o comando `aplay` para reproduzir
 
