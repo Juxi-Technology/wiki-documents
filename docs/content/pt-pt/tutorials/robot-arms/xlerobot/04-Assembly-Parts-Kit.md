@@ -5,7 +5,7 @@ description: "Montagem do kit em peças do XLeRobot: configurar os servos do bra
 
 # Montagem do kit em peças
 
-![Imagem 1](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/1.png)
+![Imagem 1](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/1.jpg)
 
 Dica
 
@@ -15,7 +15,7 @@ Se preferir dispensar o prazer de apertar parafusos, também pode comprar o [kit
 
 ## 🦾 Braço robótico SO101
 
-![Imagem 2](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/2.png)
+![Imagem 2](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/2.jpg)
 
 > Se já tem 2 braços robóticos SO101 montados com os servos configurados, pode ignorar esta secção.
 > 
@@ -35,7 +35,7 @@ Se preferir dispensar o prazer de apertar parafusos, também pode comprar o [kit
 |Servo Feetech STS3215-C018|2|7、8|Kit do membro superior-torre da câmara|
 |Cabo de extensão de servo de 90CM|2||Ligar o chassis e a torre da câmara à placa de controlo dos servos|
 
-![Imagem 3](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/3.png)
+![Imagem 3](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/3.jpg)
 
 > Uma vez que o repositório de código oficial do lerobot atualmente não suporta configurações de servos para além do braço robótico, utilizamos o [Bambot](https://bambot.org/) em alternativa (funciona em Windows e Mac; no Linux é necessário executar primeiro sudo chmod 666 /dev/ttyACM0).
 > 
@@ -95,7 +95,7 @@ Não escolha a placa errada; cada placa tem uma ordem específica.
 
 - Deixe o **cabo de extensão de servo de 90CM** pendurado; por agora, não o puxe para fora do orifício da placa superior.
 
-![Imagem 9](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/9.png)
+![Imagem 9](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/9.jpg)
 
 - Instale 3 conectores (elevadores) na placa superior de acordo com a figura acima.
 
@@ -117,7 +117,7 @@ Nota
 
 Esta nova versão de hardware é compatível com a rede metálica do carrinho; os 12 parafusos M3 devem todos encaixar facilmente.
 
-![Imagem 11](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/11.png)
+![Imagem 11](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/11.jpg)
 
 - Em seguida, encaminhe os cabos previamente prolongados de baixo para cima, através do carrinho.
 
@@ -181,7 +181,7 @@ Importante
 
 Antes de fixar a base superior ao carrinho, conclua toda a cablagem e gestão de cabos da base superior e coloque o Raspberry Pi na sua caixa.
 
-![Imagem 15](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/15.png)
+![Imagem 15](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/15.jpg)
 
 - Tenha cuidado para não danificar a caixa ao empurrar a borda do carrinho para o encaixe da caixa.
 
@@ -189,13 +189,13 @@ Antes de fixar a base superior ao carrinho, conclua toda a cablagem e gestão de
 
 - Se tiver um rolo de cartão de filamento da Bambu Lab, não se esqueça de o colocar lá dentro para proporcionar um suporte estrutural estável.
 
-![Imagem 16](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/16.png)
+![Imagem 16](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/16.jpg)
 
 Depois de concluir estes passos, o XLeRobot deverá estar fisicamente bem montado e pronto para fazer algumas tarefas domésticas.
 
-![Imagem 17](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/17.png)
+![Imagem 17](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/17.jpg)
 
-![Imagem 18](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/18.png)
+![Imagem 18](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/18.jpg)
 
 Importante
 

@@ -13,7 +13,7 @@ USB 自動接続カメラのデバッグは[USB オートフォーカスカメ�
 
 ![SO-ARM101 アーム搭載ブラケット取付手順 – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/1.png)
 
-![SO-ARM101 アーム搭載ブラケット取付手順 – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/2.png)
+![SO-ARM101 アーム搭載ブラケット取付手順 – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/2.jpg)
 
 ## 環境カメラキットブラケット取付手順
 

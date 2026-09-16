@@ -14,8 +14,8 @@ description: "본 예제는 Arduino Nano 개발 보드, Windows PC 1대, 점퍼 
 ## 1. 장치 연결
 
 
-![그림 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.png)
-![1. 장치 연결 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.png)
+![그림 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.jpg)
+![1. 장치 연결 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.jpg)
 
 ## 2. 핵심 코드 해설
 

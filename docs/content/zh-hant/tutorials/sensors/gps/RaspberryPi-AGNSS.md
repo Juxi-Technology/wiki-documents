@@ -121,7 +121,7 @@ description: "本次課程我們主要學習使用樹莓派和GPS模組和agnss�
 
 ![圖 4](../../../../../public/images/tutorials/sensors/gps/RaspberryPi-AGNSS/4.png) 
 
-![圖 5](../../../../../public/images/tutorials/sensors/gps/RaspberryPi-AGNSS/5.png) 
+![圖 5](../../../../../public/images/tutorials/sensors/gps/RaspberryPi-AGNSS/5.jpg) 
 
 • 該語句輸出的是當前接收機內部的時間+電文狀態。
 

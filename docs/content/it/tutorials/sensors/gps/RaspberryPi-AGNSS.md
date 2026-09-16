@@ -121,7 +121,7 @@ In questa lezione impareremo principalmente a utilizzare la Raspberry Pi, il mod
 
 ![Immagine 4](../../../../../public/images/tutorials/sensors/gps/RaspberryPi-AGNSS/4.png) 
 
-![Immagine 5](../../../../../public/images/tutorials/sensors/gps/RaspberryPi-AGNSS/5.png) 
+![Immagine 5](../../../../../public/images/tutorials/sensors/gps/RaspberryPi-AGNSS/5.jpg) 
 
 • Questa istruzione emette il tempo interno attuale del ricevitore + lo stato del messaggio.
 

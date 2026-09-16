@@ -165,7 +165,7 @@ Après le mot de réveil, la console répond avec Read_ID : 0
 
 En disant « éteindre la lumière », la console répond avec Read_ID : 13
 
-![3. Résultat – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/3.png)
+![3. Résultat – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/3.jpg)
 
 On peut alors ouvrir le fichier joint 命令詞播報詞協議列表V1_中文文件 et vérifier le protocole de « éteindre la lumière »
 

@@ -14,8 +14,8 @@ description: "本例はArduino Nano開発ボード、Windows PC 1台、ジャン
 ## 1. デバイスの接続
 
 
-![図 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.png)
-![1. デバイスの接続 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.png)
+![図 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.jpg)
+![1. デバイスの接続 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.jpg)
 
 ## 2. キーコードの解説
 

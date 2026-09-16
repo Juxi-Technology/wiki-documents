@@ -13,7 +13,7 @@ En el producto terminado, las tuercas ya están montadas en la pinza – puede s
 
 ![Pasos de instalación del soporte de brazo SO-ARM101 – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/1.png)
 
-![Pasos de instalación del soporte de brazo SO-ARM101 – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/2.png)
+![Pasos de instalación del soporte de brazo SO-ARM101 – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/2.jpg)
 
 ## Pasos de instalación del soporte del kit de cámara ambiental
 

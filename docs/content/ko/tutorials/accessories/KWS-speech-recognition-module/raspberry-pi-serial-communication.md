@@ -165,7 +165,7 @@ python3 -m speech_serial
 
 "등 끄기"라고 말하면 콘솔이 수신 Read_ID: 13을 응답합니다
 
-![3. 구현 효과 – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/3.png)
+![3. 구현 효과 – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/3.jpg)
 
 이때 첨부된 命令詞播報詞協議列表V1_中文文件 을 열어 "등 끄기"의 프로토콜을 확인할 수 있습니다
 

@@ -13,7 +13,7 @@ USB自動對接攝像頭調試請參考該教程[USB自动对焦摄像头教程]
 
 ![SO-ARM101臂載支架安裝步驟 – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/1.png)
 
-![SO-ARM101臂載支架安裝步驟 – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/2.png)
+![SO-ARM101臂載支架安裝步驟 – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/2.jpg)
 
 ## 環境相機套件支架安裝步驟
 

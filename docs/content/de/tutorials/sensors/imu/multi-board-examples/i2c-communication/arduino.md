@@ -14,8 +14,8 @@ Dieses Beispiel verwendet das Arduino-Nano-Entwicklungsboard, einen Windows-PC, 
 ## 1. Gerät anschließen
 
 
-![Abb. 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.png)
-![1. Gerät anschließen – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.png)
+![Abb. 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.jpg)
+![1. Gerät anschließen – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.jpg)
 
 ## 2. Kerncode-Erläuterung
 

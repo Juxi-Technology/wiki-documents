@@ -165,7 +165,7 @@ Nach dem Aufweckwort antwortet die Konsole mit Read_ID: 0
 
 Bei „Licht aus" antwortet die Konsole mit Read_ID: 13
 
-![3. Ergebnis – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/3.png)
+![3. Ergebnis – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/3.jpg)
 
 Jetzt die beigefügte Datei 命令詞播報詞協議列表V1_中文文件 öffnen und das Protokoll für „Licht aus" prüfen
 

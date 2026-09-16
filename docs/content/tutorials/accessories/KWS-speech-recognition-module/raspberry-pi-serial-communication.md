@@ -166,7 +166,7 @@ After saying the wake word  Wake , the Console will reply with the received Read
 
 says "Turn off the light", and the Console will reply with Receiving Read_ID: 13 
 
-![3. Implementation Effect – 2](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/3.png)
+![3. Implementation Effect – 2](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/3.jpg)
 
 At this time, you can open the attached "Command Word and Announcement Word Protocol List V1_Chinese File" to view the protocol for "Turn off the light" 
 

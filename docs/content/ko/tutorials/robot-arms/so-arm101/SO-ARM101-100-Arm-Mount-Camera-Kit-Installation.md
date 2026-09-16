@@ -13,7 +13,7 @@ USB 자동 접속 카메라 디버깅은 [USB 자동 초점 카메라 튜토리�
 
 ![SO-ARM101 암 장착 브래킷 설치 단계 – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/1.png)
 
-![SO-ARM101 암 장착 브래킷 설치 단계 – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/2.png)
+![SO-ARM101 암 장착 브래킷 설치 단계 – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/2.jpg)
 
 ## 환경 카메라 키트 브래킷 설치 단계
 

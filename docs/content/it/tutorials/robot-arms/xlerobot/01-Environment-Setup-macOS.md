@@ -96,7 +96,7 @@ pip install -e ".[feetech]"
 
 ![Immagine 3](../../../../../public/images/tutorials/robot-arms/xlerobot/01-Environment-Setup-macOS/3.png)
 
-![Immagine 4](../../../../../public/images/tutorials/robot-arms/xlerobot/01-Environment-Setup-macOS/4.png)
+![Immagine 4](../../../../../public/images/tutorials/robot-arms/xlerobot/01-Environment-Setup-macOS/4.jpg)
 
 ## Verifica della corretta installazione
 

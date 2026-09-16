@@ -5,7 +5,7 @@ description: "如果你寧願跳過擰螺絲的樂趣，你也可以購買適配
 
 # 散件組裝教程
 
-![圖 1](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/1.png)
+![圖 1](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/1.jpg)
 
 小技巧
 
@@ -15,7 +15,7 @@ description: "如果你寧願跳過擰螺絲的樂趣，你也可以購買適配
 
 ## 🦾 SO101機械手臂
 
-![圖 2](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/2.png)
+![圖 2](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/2.jpg)
 
 > 如果你已經有2個配置了伺服馬達的組裝好的SO101機械手臂，請跳過。
 > 
@@ -35,7 +35,7 @@ description: "如果你寧願跳過擰螺絲的樂趣，你也可以購買適配
 |飛特STS3215-C018伺服馬達|2|7、8|上肢套件-相機塔|
 |伺服馬達延長線90CM|2||將底盤車和相機塔連接伺服馬達驅動板|
 
-![圖 3](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/3.png)
+![圖 3](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/3.jpg)
 
 > 由於官方lerobot程式碼庫目前不支援除機械手臂外的伺服馬達配置，我們使用[Bambot](https://bambot.org/)代替(在Windows和Mac上工作，Linux需要先執行sudo chmod 666 /dev/ttyACM0)。
 > 
@@ -95,7 +95,7 @@ sudo chmod 666 /dev/ttyACM0
 
 - 讓 **90CM伺服馬達延長線** 懸掛，暫時不要從 頂板孔 拉出來。
 
-![圖 9](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/9.png)
+![圖 9](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/9.jpg)
 
 - 根據上圖在頂板上安裝3個連接器（增高架）。
 
@@ -117,7 +117,7 @@ sudo chmod 666 /dev/ttyACM0
 
 這個新硬體版本與推車金屬網格相容，所有12個M3螺絲都應該能夠輕鬆裝入。
 
-![圖 11](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/11.png)
+![圖 11](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/11.jpg)
 
 - 然後，將之前延長的線纜從下方穿過推車向上佈線。
 
@@ -181,7 +181,7 @@ sudo chmod 666 /dev/ttyACM0
 
 在將頂部底座夾到推車之前，完成頂部底座的所有接線和線纜管理，並將Raspberry Pi放入其外殼中。
 
-![圖 15](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/15.png)
+![圖 15](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/15.jpg)
 
 - 當你將推車邊緣塞入外殼插座時要小心不要弄壞外殼。
 
@@ -189,13 +189,13 @@ sudo chmod 666 /dev/ttyACM0
 
 - 如果你有 bambulab耗材紙質線軸，不要忘記將其放在裡面以提供穩定的結構支撐。
 
-![圖 16](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/16.png)
+![圖 16](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/16.jpg)
 
 完成這些步驟後，XLeRobot應該在物理上組裝良好，準備做一些家務。
 
-![圖 17](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/17.png)
+![圖 17](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/17.jpg)
 
-![圖 18](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/18.png)
+![圖 18](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/18.jpg)
 
 重要
 

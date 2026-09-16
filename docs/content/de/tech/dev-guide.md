@@ -1,38 +1,10 @@
 ---
-title: Entwicklungsleitfaden
-description: Dieser Leitfaden zeigt, wie auf Basis der JUXI-Produkte weiterentwickelt wird.
+title: "Entwicklungsleitfaden"
+description: "Inhalt dieser Seite in Vorbereitung"
 ---
 
 # Entwicklungsleitfaden
 
-Dieser Leitfaden zeigt, wie auf Basis der JUXI-Produkte weiterentwickelt wird.
+Der Inhalt dieser Seite ist in Vorbereitung.
 
-## Entwicklungsumgebung einrichten
-
-### Entwicklungswerkzeuge installieren
-
-```bash
-# CLI-Tool installieren
-npm install -g @juxi/cli
-# Projekt initialisieren
-juxi init my-project
-```
-
-## Projektstruktur
-
-```
-my-project/
-├── src/
-│   ├── main.js
-│   └── components/
-├── docs/
-└── package.json
-```
-
-## Codebeispiel
-
-```javascript
-import { Device } from '@juxi/sdk'
-const device = new Device()
-device.connect()
-```
+Die Dokumentation für Juxi Technology Produkte finden Sie derzeit im [Tutorial-Center](/de/tutorials/). Bei Fragen [kontaktieren Sie uns](/de/community/) bitte.

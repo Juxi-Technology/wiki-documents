@@ -165,7 +165,7 @@ Dopo la parola di attivazione, la console risponde con Read_ID: 0
 
 Dicendo «spegnere la luce», la console risponde con Read_ID: 13
 
-![3. Risultato – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/3.png)
+![3. Risultato – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/3.jpg)
 
 A questo punto si può aprire il file allegato 命令詞播報詞協議列表V1_中文文件 e verificare il protocollo di «spegnere la luce»
 

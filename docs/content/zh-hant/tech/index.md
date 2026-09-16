@@ -1,13 +1,10 @@
 ---
-title: 技術文檔
-description: "鉅犀科技技術文件目錄——API 參考與開發指南等技術資源的入口總覽。"
+title: "技術文檔"
+description: "本頁內容正在籌備中"
 ---
-
 
 # 技術文檔
 
-這裡是所有技術文檔的目錄！
+本頁內容正在籌備中。
 
-- [API 參考](/zh-hant/tech/api-reference)
-- [開發指南](/zh-hant/tech/dev-guide)
-
+鉅犀科技產品目前透過[教程中心](/zh-hant/tutorials/)提供使用與二次開發文件;如有相關問題,歡迎[聯絡我們](/zh-hant/community/)。

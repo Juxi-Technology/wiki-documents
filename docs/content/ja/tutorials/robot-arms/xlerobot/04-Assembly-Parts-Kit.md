@@ -5,7 +5,7 @@ description: "ねじ締めの楽しみをスキップしたい場合は、Xlerob
 
 # パーツキット組み立て
 
-![図 1](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/1.png)
+![図 1](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/1.jpg)
 
 ヒント
 
@@ -15,7 +15,7 @@ description: "ねじ締めの楽しみをスキップしたい場合は、Xlerob
 
 ## 🦾 SO101 ロボットアーム
 
-![図 2](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/2.png)
+![図 2](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/2.jpg)
 
 > すでにサーボを設定済みの、組み立てられた SO101 ロボットアームが 2 台ある場合は、スキップしてください。
 > 
@@ -35,7 +35,7 @@ description: "ねじ締めの楽しみをスキップしたい場合は、Xlerob
 |Feetech STS3215-C018 サーボ|2|7、8|上肢キット-カメラタワー|
 |90CM サーボ延長ケーブル|2||シャーシとカメラタワーをサーボドライバ基板に接続する|
 
-![図 3](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/3.png)
+![図 3](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/3.jpg)
 
 > 公式の lerobot コードリポジトリは現在、ロボットアーム以外のサーボ設定に対応していないため、代わりに [Bambot](https://bambot.org/) を使用します(Windows と Mac で動作し、Linux では先に sudo chmod 666 /dev/ttyACM0 を実行する必要があります)。
 > 
@@ -95,7 +95,7 @@ sudo chmod 666 /dev/ttyACM0
 
 - **90CM サーボ延長ケーブル** をぶら下げたままにし、当面は トッププレートの穴 から引き出さないでください。
 
-![図 9](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/9.png)
+![図 9](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/9.jpg)
 
 - 上の図に従ってトッププレートに 3 つのコネクタ（スペーサー）を取り付けます。
 
@@ -117,7 +117,7 @@ sudo chmod 666 /dev/ttyACM0
 
 この新しいハードウェアバージョンはカートの金属メッシュと互換性があり、12 個の M3 ねじはすべて問題なく取り付けられるはずです。
 
-![図 11](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/11.png)
+![図 11](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/11.jpg)
 
 - その後、先ほど延長したケーブルを下方からカートを通して上へ配線します。
 
@@ -181,7 +181,7 @@ sudo chmod 666 /dev/ttyACM0
 
 トップベースをカートに固定する前に、トップベースのすべての配線とケーブル管理を完了し、Raspberry Pi をそのケースに収めます。
 
-![図 15](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/15.png)
+![図 15](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/15.jpg)
 
 - カートの縁をケースのソケットに差し込む際は、ケースを壊さないよう注意してください。
 
@@ -189,13 +189,13 @@ sudo chmod 666 /dev/ttyACM0
 
 - Bambu Lab のフィラメントの紙製スプールがある場合、安定した構造サポートを提供するために、中に入れるのを忘れないでください。
 
-![図 16](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/16.png)
+![図 16](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/16.jpg)
 
 これらのステップを完了すると、XLeRobot は物理的にしっかりと組み立てられ、家事をする準備が整っているはずです。
 
-![図 17](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/17.png)
+![図 17](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/17.jpg)
 
-![図 18](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/18.png)
+![図 18](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/18.jpg)
 
 重要
 

@@ -121,7 +121,7 @@ Nesta lição, vamos aprender principalmente a utilizar o Jetson Orin, o módulo
 
 ![Imagem 4](../../../../../public/images/tutorials/sensors/gps/Jetson-AGNSS/4.png) 
 
-![Imagem 5](../../../../../public/images/tutorials/sensors/gps/Jetson-AGNSS/5.png) 
+![Imagem 5](../../../../../public/images/tutorials/sensors/gps/Jetson-AGNSS/5.jpg) 
 
 • Esta instrução emite o tempo interno atual do recetor + o estado da mensagem de navegação.
 

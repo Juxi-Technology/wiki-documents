@@ -5,7 +5,7 @@ description: "Montage des XLeRobot aus Einzelteilen: Servos konfigurieren und Wa
 
 # Montage (Einzelteile)
 
-![Abb. 1](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/1.png)
+![Abb. 1](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/1.jpg)
 
 Tipp
 
@@ -15,7 +15,7 @@ Wenn Sie sich das Vergnügen des Schraubenanziehens lieber ersparen möchten, k�
 
 ## 🦾 SO101-Roboterarm
 
-![Abb. 2](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/2.png)
+![Abb. 2](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/2.jpg)
 
 > Wenn Sie bereits über 2 fertig montierte SO101-Roboterarme mit konfigurierten Servos verfügen, überspringen Sie diesen Abschnitt.
 > 
@@ -35,7 +35,7 @@ Wenn Sie sich das Vergnügen des Schraubenanziehens lieber ersparen möchten, k�
 |Feetech STS3215-C018-Servo|2|7、8|Oberkörper-Kit-Kamera-Turm|
 |90CM-Servo-Verlängerungskabel|2||Verbindet Fahrgestell und Kamera-Turm mit der Servo-Treiberplatine|
 
-![Abb. 3](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/3.png)
+![Abb. 3](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/3.jpg)
 
 > Da das offizielle lerobot-Code-Repository derzeit keine Servo-Konfiguration außerhalb des Roboterarms unterstützt, verwenden wir stattdessen [Bambot](https://bambot.org/) (funktioniert unter Windows und Mac; unter Linux müssen Sie zuerst sudo chmod 666 /dev/ttyACM0 ausführen).
 > 
@@ -95,7 +95,7 @@ Wählen Sie nicht die falsche Platine; jede Platine hat eine bestimmte Reihenfol
 
 - Lassen Sie das **90CM-Servo-Verlängerungskabel** hängen; ziehen Sie es vorerst nicht aus dem Loch der Deckplatte heraus.
 
-![Abb. 9](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/9.png)
+![Abb. 9](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/9.jpg)
 
 - Montieren Sie gemäß der obigen Abbildung 3 Anschlüsse (Distanzhalter) auf der Deckplatte.
 
@@ -117,7 +117,7 @@ Hinweis
 
 Diese neue Hardware-Version ist mit dem Metallgitter des Wagens kompatibel; alle 12 M3-Schrauben sollten sich problemlos einsetzen lassen.
 
-![Abb. 11](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/11.png)
+![Abb. 11](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/11.jpg)
 
 - Führen Sie anschließend die zuvor verlängerten Kabel von unten durch den Wagen nach oben.
 
@@ -181,7 +181,7 @@ Wichtig
 
 Bevor Sie die obere Basis am Wagen festklemmen, schließen Sie die gesamte Verkabelung der oberen Basis ab, führen Sie das Kabelmanagement durch und setzen Sie den Raspberry Pi in sein Gehäuse ein.
 
-![Abb. 15](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/15.png)
+![Abb. 15](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/15.jpg)
 
 - Achten Sie darauf, das Gehäuse nicht zu beschädigen, wenn Sie den Rand des Wagens in die Gehäuseaufnahme schieben.
 
@@ -189,13 +189,13 @@ Bevor Sie die obere Basis am Wagen festklemmen, schließen Sie die gesamte Verka
 
 - Wenn Sie eine Pappspule von Bambu Lab Filament haben, vergessen Sie nicht, sie innen zu platzieren, um eine stabile strukturelle Unterstützung zu bieten.
 
-![Abb. 16](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/16.png)
+![Abb. 16](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/16.jpg)
 
 Nach Abschluss dieser Schritte sollte der XLeRobot physisch gut montiert und bereit sein, etwas Hausarbeit zu erledigen.
 
-![Abb. 17](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/17.png)
+![Abb. 17](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/17.jpg)
 
-![Abb. 18](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/18.png)
+![Abb. 18](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/18.jpg)
 
 Wichtig
 

@@ -5,7 +5,7 @@ description: "나사 조이기의 즐거움을 건너뛰고 싶다면, Xlerobot 
 
 # 부품 키트 조립
 
-![그림 1](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/1.png)
+![그림 1](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/1.jpg)
 
 팁
 
@@ -15,7 +15,7 @@ description: "나사 조이기의 즐거움을 건너뛰고 싶다면, Xlerobot 
 
 ## 🦾 SO101 로봇 암
 
-![그림 2](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/2.png)
+![그림 2](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/2.jpg)
 
 > 이미 서보가 구성된 조립 완료된 SO101 로봇 암 2 개가 있다면 건너뛰십시오。
 > 
@@ -35,7 +35,7 @@ description: "나사 조이기의 즐거움을 건너뛰고 싶다면, Xlerobot 
 |Feetech STS3215-C018 서보|2|7、8|상지 키트-카메라 타워|
 |서보 연장 케이블 90CM|2||섀시 카와 카메라 타워를 서보 드라이버 보드에 연결|
 
-![그림 3](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/3.png)
+![그림 3](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/3.jpg)
 
 > 공식 lerobot 코드 저장소는 현재 로봇 암 외의 서보 구성을 지원하지 않으므로, 대신 [Bambot](https://bambot.org/) 을 사용합니다 (Windows 와 Mac 에서 작동하며, Linux 에서는 먼저 sudo chmod 666 /dev/ttyACM0 을 실행해야 합니다)。
 > 
@@ -95,7 +95,7 @@ sudo chmod 666 /dev/ttyACM0
 
 - **90CM 서보 연장 케이블** 을 늘어뜨려 두고, 당분간 상판 구멍에서 빼내지 마십시오。
 
-![그림 9](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/9.png)
+![그림 9](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/9.jpg)
 
 - 위 그림에 따라 상판에 커넥터(라이저) 3 개를 설치합니다。
 
@@ -117,7 +117,7 @@ sudo chmod 666 /dev/ttyACM0
 
 이 새로운 하드웨어 버전은 카트의 금속 메시와 호환되며, 12 개의 M3 나사 모두 쉽게 체결되어야 합니다。
 
-![그림 11](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/11.png)
+![그림 11](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/11.jpg)
 
 - 그런 다음 이전에 연장한 케이블을 아래에서 카트를 통과시켜 위로 배선합니다。
 
@@ -181,7 +181,7 @@ sudo chmod 666 /dev/ttyACM0
 
 상단 베이스를 카트에 클램프하기 전에 상단 베이스의 모든 배선과 케이블 정리를 완료하고, Raspberry Pi 를 케이스에 넣습니다。
 
-![그림 15](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/15.png)
+![그림 15](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/15.jpg)
 
 - 카트 가장자리를 케이스 소켓에 밀어 넣을 때 케이스를 손상시키지 않도록 주의하십시오。
 
@@ -189,13 +189,13 @@ sudo chmod 666 /dev/ttyACM0
 
 - Bambu Lab 필라멘트 종이 스풀이 있다면, 안정적인 구조 지지를 제공하기 위해 안에 넣는 것을 잊지 마십시오。
 
-![그림 16](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/16.png)
+![그림 16](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/16.jpg)
 
 이 단계를 완료하면 XLeRobot 은 물리적으로 잘 조립되어 가사 작업을 할 준비가 됩니다。
 
-![그림 17](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/17.png)
+![그림 17](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/17.jpg)
 
-![그림 18](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/18.png)
+![그림 18](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/18.jpg)
 
 중요
 

@@ -121,7 +121,7 @@ In dieser Lektion lernen wir hauptsächlich, mit dem Raspberry Pi, dem GPS-Modul
 
 ![Abb. 4](../../../../../public/images/tutorials/sensors/gps/RaspberryPi-AGNSS/4.png) 
 
-![Abb. 5](../../../../../public/images/tutorials/sensors/gps/RaspberryPi-AGNSS/5.png) 
+![Abb. 5](../../../../../public/images/tutorials/sensors/gps/RaspberryPi-AGNSS/5.jpg) 
 
 • Dieser Satz gibt die aktuelle interne Zeit des Empfängers + den Navigationsnachricht-Status aus.
 

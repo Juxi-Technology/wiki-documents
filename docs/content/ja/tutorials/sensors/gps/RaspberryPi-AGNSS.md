@@ -121,7 +121,7 @@ description: "今回の講座では、主にRaspberry PiとGPSモジュールお
 
 ![図 4](../../../../../public/images/tutorials/sensors/gps/RaspberryPi-AGNSS/4.png) 
 
-![図 5](../../../../../public/images/tutorials/sensors/gps/RaspberryPi-AGNSS/5.png) 
+![図 5](../../../../../public/images/tutorials/sensors/gps/RaspberryPi-AGNSS/5.jpg) 
 
 • この文が出力するのは、現在の受信機内部の時刻＋航法メッセージ状態です。
 

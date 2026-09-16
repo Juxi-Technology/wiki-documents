@@ -1,42 +1,10 @@
 ---
-title: 開發指南
-description: "鉅犀科技開發指南——開發環境搭建、CLI 工具安裝與專案結構的二次開發入門。"
+title: "開發指南"
+description: "本頁內容正在籌備中"
 ---
-
 
 # 開發指南
 
-本指南介紹如何基於 鉅犀科技 產品進行二次開發。
+本頁內容正在籌備中。
 
-## 開發環境搭建
-
-### 安裝開發工具
-
-```bash
-# 安裝 CLI 工具
-npm install -g @juxi/cli
-
-# 初始化項目
-juxi init my-project
-```
-
-## 項目結構
-
-```
-my-project/
-├── src/
-│   ├── main.js
-│   └── components/
-├── docs/
-└── package.json
-```
-
-## 代碼示例
-
-```javascript
-import { Device } from '@juxi/sdk'
-
-const device = new Device()
-device.connect()
-```
-
+鉅犀科技產品目前透過[教程中心](/zh-hant/tutorials/)提供使用與二次開發文件;如有相關問題,歡迎[聯絡我們](/zh-hant/community/)。

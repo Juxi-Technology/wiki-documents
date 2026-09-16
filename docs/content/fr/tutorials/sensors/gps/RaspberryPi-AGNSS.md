@@ -121,7 +121,7 @@ Dans cette leçon, nous allons principalement apprendre à réaliser la lecture 
 
 ![Image 4](../../../../../public/images/tutorials/sensors/gps/RaspberryPi-AGNSS/4.png) 
 
-![Image 5](../../../../../public/images/tutorials/sensors/gps/RaspberryPi-AGNSS/5.png) 
+![Image 5](../../../../../public/images/tutorials/sensors/gps/RaspberryPi-AGNSS/5.jpg) 
 
 • Cette phrase émet le temps interne actuel du récepteur + l'état du message de navigation.
 

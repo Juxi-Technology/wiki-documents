@@ -1,38 +1,10 @@
 ---
-title: Guide de développement
-description: Ce guide explique comment effectuer un développement secondaire à partir des produits JUXI.
+title: "Guide de développement"
+description: "Contenu de cette page en préparation"
 ---
 
 # Guide de développement
 
-Ce guide explique comment effectuer un développement secondaire à partir des produits JUXI.
+Le contenu de cette page est en préparation.
 
-## Mise en place de l'environnement de développement
-
-### Installer les outils de développement
-
-```bash
-# Installer l'outil CLI
-npm install -g @juxi/cli
-# Initialiser le projet
-juxi init my-project
-```
-
-## Structure du projet
-
-```
-my-project/
-├── src/
-│   ├── main.js
-│   └── components/
-├── docs/
-└── package.json
-```
-
-## Exemple de code
-
-```javascript
-import { Device } from '@juxi/sdk'
-const device = new Device()
-device.connect()
-```
+La documentation des produits Juxi Technology est actuellement disponible dans le [centre de tutoriels](/fr/tutorials/). Pour toute question, [contactez-nous](/fr/community/).

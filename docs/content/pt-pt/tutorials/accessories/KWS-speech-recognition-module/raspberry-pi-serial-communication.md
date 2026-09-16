@@ -166,7 +166,7 @@ Após dizer a palavra de ativação "Wake", o Console responderá com o Read_ID 
 
 diga "Desligar a luz", e o Console responderá com Read_ID recebido: 13 
 
-![3. Efeito da implementação – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/3.png)
+![3. Efeito da implementação – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/3.jpg)
 
 Neste momento, você pode abrir o anexo "Lista de Protocolos de Palavras de Comando e Anúncio V1_Arquivo Chinês" para consultar o protocolo de "Desligar a luz" 
 

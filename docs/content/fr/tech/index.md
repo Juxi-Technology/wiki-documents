@@ -1,8 +1,10 @@
 ---
-title: Documentation technique
-description: Juxi Technology Wiki — Documentation technique
+title: "Documentation technique"
+description: "Contenu de cette page en préparation"
 ---
 
 # Documentation technique
 
-Référence API dans la [version chinoise](/tech/).
+Le contenu de cette page est en préparation.
+
+La documentation des produits Juxi Technology est actuellement disponible dans le [centre de tutoriels](/fr/tutorials/). Pour toute question, [contactez-nous](/fr/community/).

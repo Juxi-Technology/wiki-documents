@@ -1,40 +1,10 @@
 ---
-title: API-Referenz
-description: Diese Seite bietet die API-Referenzdokumentation der Produkte.
+title: "API-Referenz"
+description: "Inhalt dieser Seite in Vorbereitung"
 ---
 
 # API-Referenz
 
-Diese Seite bietet die API-Referenzdokumentation der Produkte.
+Der Inhalt dieser Seite ist in Vorbereitung.
 
-## Basis-URL
-
-```
-https://api.juxi-tech.com/v1
-```
-
-## Authentifizierung
-
-Authentifizierung mit API-Key:
-
-```http
-Authorization: Bearer YOUR_API_KEY
-```
-
-## Schnittstellen-Liste
-
-### Geräteinformationen abrufen
-
-```http
-GET /device/info
-```
-
-Beispielantwort:
-
-```json
-{
-  "id": "device-001",
-  "name": "Juxi Device",
-  "status": "online"
-}
-```
+Die Dokumentation für Juxi Technology Produkte finden Sie derzeit im [Tutorial-Center](/de/tutorials/). Bei Fragen [kontaktieren Sie uns](/de/community/) bitte.

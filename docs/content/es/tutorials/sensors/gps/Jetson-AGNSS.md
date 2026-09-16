@@ -121,7 +121,7 @@ En esta lección aprenderemos principalmente a utilizar el Jetson Orin, el módu
 
 ![Imagen 4](../../../../../public/images/tutorials/sensors/gps/Jetson-AGNSS/4.png) 
 
-![Imagen 5](../../../../../public/images/tutorials/sensors/gps/Jetson-AGNSS/5.png) 
+![Imagen 5](../../../../../public/images/tutorials/sensors/gps/Jetson-AGNSS/5.jpg) 
 
 • Esta sentencia emite el tiempo interno actual del receptor + el estado del mensaje.
 

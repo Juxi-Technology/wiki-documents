@@ -11,7 +11,7 @@ Este exemplo usa uma placa de desenvolvimento Arduino Nano, um computador Window
 
 ## 1. Conectar o dispositivo
 
-![1. Connect the device – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.png)
+![1. Connect the device – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.jpg)
 
 ![1. Connect the device – 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/2.jpg)
 

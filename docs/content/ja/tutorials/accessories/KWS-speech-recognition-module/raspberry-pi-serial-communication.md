@@ -165,7 +165,7 @@ python3 -m speech_serial
 
 「関灯（ライトオフ）」と言うと、コンソールが受信Read_ID：13を返します
 
-![3.実装効果 – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/3.png)
+![3.実装効果 – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/3.jpg)
 
 このとき添付の 命令詞播報詞協議列表V1_中文文件 を開いて「関灯」のプロトコルを確認できます
 

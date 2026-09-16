@@ -1,8 +1,10 @@
 ---
-title: 기술 문서
-description: "Juxi Technology 기술 문서 — API 참조와 개발 가이드를 비롯한 제품 기술 문서를 한곳에서 찾아볼 수 있습니다."
+title: "기술 문서"
+description: "이 페이지의 내용은 준비 중입니다"
 ---
 
 # 기술 문서
 
-API 레퍼런스는 [중국어 버전](/tech/)을 참조하세요.
+이 페이지의 내용은 준비 중입니다.
+
+현재 Juxi Technology 제품 문서는 [튜토리얼 센터](/ko/tutorials/)에서 제공하고 있습니다. 문의 사항은 [커뮤니티](/ko/community/)로 연락해 주세요.

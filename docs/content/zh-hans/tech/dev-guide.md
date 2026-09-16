@@ -1,41 +1,10 @@
 ---
-title: 开发指南
-description: "钜犀科技产品二次开发指南——开发环境搭建、项目结构与 SDK 代码示例,快速上手开发。"
+title: "开发指南"
+description: "本页内容正在筹备中"
 ---
-
 
 # 开发指南
 
-本指南介绍如何基于 钜犀科技 产品进行二次开发。
+本页内容正在筹备中。
 
-## 开发环境搭建
-
-### 安装开发工具
-
-```bash
-# 安装 CLI 工具
-npm install -g @juxi/cli
-
-# 初始化项目
-juxi init my-project
-```
-
-## 项目结构
-
-```
-my-project/
-├── src/
-│   ├── main.js
-│   └── components/
-├── docs/
-└── package.json
-```
-
-## 代码示例
-
-```javascript
-import { Device } from '@juxi/sdk'
-
-const device = new Device()
-device.connect()
-```
+钜犀科技产品目前通过[教程中心](/zh-hans/tutorials/)提供使用与二次开发文档;如有相关问题,欢迎[联系我们](/zh-hans/community/)。

@@ -14,8 +14,8 @@ Questo esempio usa la scheda di sviluppo Arduino Nano, un PC Windows, diversi ca
 ## 1. Collegare il dispositivo
 
 
-![Immagine 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.png)
-![1. Collegare il dispositivo – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.png)
+![Immagine 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.jpg)
+![1. Collegare il dispositivo – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.jpg)
 
 ## 2. Spiegazione del codice chiave
 

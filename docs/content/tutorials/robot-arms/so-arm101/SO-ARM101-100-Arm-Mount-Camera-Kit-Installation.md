@@ -15,7 +15,7 @@ Please refer to this tutorial for debugging the USB auto-docking camera[USB Auto
 
 For finished products, nuts are generally already installed in the grippers, so you can directly skip to step 2 
 
-![Installation Steps for SO-ARM101 Arm Mount Bracket – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/2.png)
+![Installation Steps for SO-ARM101 Arm Mount Bracket – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/2.jpg)
 
 ## Installation Steps for Environmental Camera Kit Bracket
 

@@ -1,41 +1,10 @@
 ---
 title: "Developer Guide"
-description: This guide introduces how to develop with Juxi Technology products.
+description: "This page is being prepared"
 ---
-
 
 # Developer Guide
 
-This guide introduces how to develop with Juxi Technology products.
+This page is being prepared.
 
-## Development Environment Setup
-
-### Install Dev Tools
-
-```bash
-# Install CLI tools
-npm install -g @juxi/cli
-
-# Initialize project
-juxi init my-project
-```
-
-## Project Structure
-
-```
-my-project/
-├── src/
-│   ├── main.js
-│   └── components/
-├── docs/
-└── package.json
-```
-
-## Code Example
-
-```javascript
-import { Device } from '@juxi/sdk'
-
-const device = new Device()
-device.connect()
-```
+Documentation for Juxi Technology products is currently available in the [Tutorials Center](/tutorials/). If you have questions, please [contact us](/community/).

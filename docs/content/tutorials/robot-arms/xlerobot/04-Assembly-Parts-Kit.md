@@ -5,7 +5,7 @@ description: "XLeRobot parts-kit assembly guide: build two SO101 follower arms, 
 
 # Parts-Kit Assembly
 
-![Image 1](../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/1.png)
+![Image 1](../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/1.jpg)
 
 Tip
 
@@ -15,7 +15,7 @@ If you would rather skip the fun of tightening screws, you can also buy the [pre
 
 ## 🦾 SO101 Robotic Arm
 
-![Image 2](../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/2.png)
+![Image 2](../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/2.jpg)
 
 > If you already have 2 assembled SO101 robotic arms with servos configured, please skip this.
 > 
@@ -35,7 +35,7 @@ If you would rather skip the fun of tightening screws, you can also buy the [pre
 |Feetech STS3215-C018 servo|2|7、8|Upper-limb kit-camera tower|
 |90CM servo extension cable|2||Connect the chassis car and camera tower to the servo driver board|
 
-![Image 3](../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/3.png)
+![Image 3](../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/3.jpg)
 
 > Because the official lerobot code repository currently does not support servo configurations other than the robotic arm, we use [Bambot](https://bambot.org/) instead (it works on Windows and Mac; on Linux you need to first run sudo chmod 666 /dev/ttyACM0).
 > 
@@ -95,7 +95,7 @@ Do not choose the wrong board; each board has a specific order.
 
 - Leave the **90CM servo extension cable** hanging; do not pull it out of the top plate hole for now.
 
-![Image 9](../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/9.png)
+![Image 9](../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/9.jpg)
 
 - Install 3 connectors (risers) on the top plate according to the figure above.
 
@@ -117,7 +117,7 @@ Note
 
 This new hardware version is compatible with the cart's metal mesh; all 12 M3 screws should fit in easily.
 
-![Image 11](../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/11.png)
+![Image 11](../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/11.jpg)
 
 - Then, route the previously extended cables upward from below through the cart.
 
@@ -181,7 +181,7 @@ Important
 
 Before clamping the top base onto the cart, complete all wiring and cable management for the top base, and place the Raspberry Pi into its enclosure.
 
-![Image 15](../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/15.png)
+![Image 15](../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/15.jpg)
 
 - Be careful not to damage the enclosure when pushing the cart edge into the enclosure socket.
 
@@ -189,13 +189,13 @@ Before clamping the top base onto the cart, complete all wiring and cable manage
 
 - If you have a Bambu Lab filament cardboard spool, don't forget to put it inside to provide stable structural support.
 
-![Image 16](../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/16.png)
+![Image 16](../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/16.jpg)
 
 After completing these steps, the XLeRobot should be physically well assembled and ready to do some housework.
 
-![Image 17](../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/17.png)
+![Image 17](../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/17.jpg)
 
-![Image 18](../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/18.png)
+![Image 18](../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/18.jpg)
 
 Important
 

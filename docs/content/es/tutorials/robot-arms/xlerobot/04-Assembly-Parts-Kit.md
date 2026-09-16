@@ -5,7 +5,7 @@ description: "Montaje del kit de piezas de XLeRobot desde cero: construye los do
 
 # Montaje del kit de piezas
 
-![Imagen 1](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/1.png)
+![Imagen 1](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/1.jpg)
 
 Consejo
 
@@ -15,7 +15,7 @@ Si prefiere saltarse la diversión de apretar tornillos, también puede adquirir
 
 ## 🦾 Brazo robótico SO101
 
-![Imagen 2](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/2.png)
+![Imagen 2](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/2.jpg)
 
 > Si ya dispone de 2 brazos robóticos SO101 ensamblados con los servomotores configurados, omita esta sección.
 > 
@@ -35,7 +35,7 @@ Si prefiere saltarse la diversión de apretar tornillos, también puede adquirir
 |Servomotor Feetech STS3215-C018|2|7、8|Kit de extremidad superior-torre de cámara|
 |Cable prolongador de servomotor 90CM|2||Conectar el chasis rodante y la torre de cámara a la placa controladora del servomotor|
 
-![Imagen 3](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/3.png)
+![Imagen 3](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/3.jpg)
 
 > Como el repositorio de código oficial de lerobot actualmente no admite configuraciones de servomotor distintas del brazo robótico, utilizamos [Bambot](https://bambot.org/) en su lugar (funciona en Windows y Mac; en Linux es necesario ejecutar primero sudo chmod 666 /dev/ttyACM0).
 > 
@@ -95,7 +95,7 @@ No elija la placa equivocada; cada placa tiene un orden específico.
 
 - Deje el **cable prolongador de servomotor de 90CM** colgando; por ahora no lo saque del orificio de la placa superior.
 
-![Imagen 9](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/9.png)
+![Imagen 9](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/9.jpg)
 
 - Instale 3 conectores (alzas) en la placa superior según la figura anterior.
 
@@ -117,7 +117,7 @@ Nota
 
 Esta nueva versión de hardware es compatible con la malla metálica del carrito; los 12 tornillos M3 deberían poder insertarse sin dificultad.
 
-![Imagen 11](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/11.png)
+![Imagen 11](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/11.jpg)
 
 - A continuación, pase los cables previamente prolongados desde abajo hacia arriba a través del carrito.
 
@@ -181,7 +181,7 @@ Importante
 
 Antes de sujetar la base superior al carrito, complete todo el cableado y la gestión de cables de la base superior, y coloque la Raspberry Pi en su carcasa.
 
-![Imagen 15](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/15.png)
+![Imagen 15](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/15.jpg)
 
 - Tenga cuidado de no dañar la carcasa al introducir el borde del carrito en el enchufe de la carcasa.
 
@@ -189,13 +189,13 @@ Antes de sujetar la base superior al carrito, complete todo el cableado y la ges
 
 - Si dispone de un carrete de cartón de filamento de Bambu Lab, no olvide colocarlo dentro para proporcionar un soporte estructural estable.
 
-![Imagen 16](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/16.png)
+![Imagen 16](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/16.jpg)
 
 Después de completar estos pasos, el XLeRobot debería estar bien ensamblado físicamente y listo para hacer algunas tareas domésticas.
 
-![Imagen 17](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/17.png)
+![Imagen 17](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/17.jpg)
 
-![Imagen 18](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/18.png)
+![Imagen 18](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/18.jpg)
 
 Importante
 

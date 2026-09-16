@@ -11,7 +11,7 @@ description: "本次例程使用的是Arduino Nano開發板，一臺windows電�
 
 ## 1.連接設備
 
-![1.連接設備 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.png)
+![1.連接設備 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.jpg)
 
 ![1.連接設備 – 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/2.jpg)
 

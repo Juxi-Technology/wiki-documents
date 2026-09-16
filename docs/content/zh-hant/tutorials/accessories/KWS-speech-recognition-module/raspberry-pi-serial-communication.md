@@ -166,7 +166,7 @@ python3 -m speech_serial
 
 說“關燈”，控制檯會回覆接收Read_ID：13
 
-![3.實現效果 – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/3.png)
+![3.實現效果 – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/raspberry-pi-serial-communication/3.jpg)
 
 這時候可以打開附件的 命令詞播報詞協議列表V1_中文文件 查看“關燈”的協議 
 

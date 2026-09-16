@@ -121,7 +121,7 @@ In this lesson, we will mainly learn to use Jetson Orin, a GPS module, and an AG
 
 ![Image 4](../../../../public/images/tutorials/sensors/gps/Jetson-AGNSS/4.png) 
 
-![Image 5](../../../../public/images/tutorials/sensors/gps/Jetson-AGNSS/5.png) 
+![Image 5](../../../../public/images/tutorials/sensors/gps/Jetson-AGNSS/5.jpg) 
 
 • This sentence outputs the current internal time of the receiver + the navigation message status.
 

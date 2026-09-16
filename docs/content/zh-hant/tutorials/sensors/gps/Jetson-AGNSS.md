@@ -121,7 +121,7 @@ description: "本次課程我們主要學習使用Jetson Orin和GPS模組和agns
 
 ![圖 4](../../../../../public/images/tutorials/sensors/gps/Jetson-AGNSS/4.png) 
 
-![圖 5](../../../../../public/images/tutorials/sensors/gps/Jetson-AGNSS/5.png) 
+![圖 5](../../../../../public/images/tutorials/sensors/gps/Jetson-AGNSS/5.jpg) 
 
 • 該語句輸出的是當前接收機內部的時間+電文狀態。
 

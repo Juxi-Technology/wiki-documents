@@ -121,7 +121,7 @@ description: "이번 과정에서는 주로 Jetson Orin과 GPS 모듈 및 agnss 
 
 ![그림 4](../../../../../public/images/tutorials/sensors/gps/Jetson-AGNSS/4.png) 
 
-![그림 5](../../../../../public/images/tutorials/sensors/gps/Jetson-AGNSS/5.png) 
+![그림 5](../../../../../public/images/tutorials/sensors/gps/Jetson-AGNSS/5.jpg) 
 
 • 이 문장이 출력하는 것은 현재 수신기 내부의 시간 + 항법 메시지 상태입니다.
 

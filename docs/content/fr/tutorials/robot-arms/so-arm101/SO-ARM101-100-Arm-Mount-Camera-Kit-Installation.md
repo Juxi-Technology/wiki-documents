@@ -13,7 +13,7 @@ Sur le produit fini, les écrous sont déjà montés dans la pince – passer di
 
 ![Installation du support de bras SO-ARM101 – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/1.png)
 
-![Installation du support de bras SO-ARM101 – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/2.png)
+![Installation du support de bras SO-ARM101 – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/2.jpg)
 
 ## Installation du support du kit caméra d'environnement
 

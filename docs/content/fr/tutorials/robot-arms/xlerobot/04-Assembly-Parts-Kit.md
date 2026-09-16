@@ -5,7 +5,7 @@ description: "Assemblage du kit en pièces XLeRobot : construire les bras SO101,
 
 # Assemblage du kit en pièces
 
-![Image 1](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/1.png)
+![Image 1](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/1.jpg)
 
 Astuce
 
@@ -15,7 +15,7 @@ Si vous préférez éviter le plaisir de serrer des vis, vous pouvez aussi achet
 
 ## 🦾 Bras robotisé SO101
 
-![Image 2](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/2.png)
+![Image 2](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/2.jpg)
 
 > Si vous disposez déjà de 2 bras robotisés SO101 assemblés avec les servos configurés, passez cette étape.
 > 
@@ -35,7 +35,7 @@ Si vous préférez éviter le plaisir de serrer des vis, vous pouvez aussi achet
 |Servo Feetech STS3215-C018|2|7、8|Kit de membre supérieur-tour de caméra|
 |Rallonge de servo de 90CM|2||Relier le châssis mobile et la tour de caméra à la carte de commande des servos|
 
-![Image 3](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/3.png)
+![Image 3](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/3.jpg)
 
 > Comme le dépôt de code officiel lerobot ne prend actuellement pas en charge les configurations de servos autres que le bras robotisé, nous utilisons [Bambot](https://bambot.org/) à la place (il fonctionne sous Windows et Mac ; sous Linux, vous devez d'abord exécuter sudo chmod 666 /dev/ttyACM0).
 > 
@@ -95,7 +95,7 @@ Ne vous trompez pas de plaque, chaque plaque a un ordre spécifique.
 
 - Laissez la **rallonge de servo de 90CM** pendre ; ne la sortez pas encore du trou de la plaque supérieure.
 
-![Image 9](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/9.png)
+![Image 9](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/9.jpg)
 
 - Installez 3 connecteurs (rehausses) sur la plaque supérieure selon la figure ci-dessus.
 
@@ -117,7 +117,7 @@ Remarque
 
 Cette nouvelle version du matériel est compatible avec le maillage métallique du chariot ; les 12 vis M3 doivent toutes pouvoir se monter facilement.
 
-![Image 11](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/11.png)
+![Image 11](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/11.jpg)
 
 - Ensuite, faites passer vers le haut les câbles précédemment rallongés depuis le dessous à travers le chariot.
 
@@ -181,7 +181,7 @@ Important
 
 Avant de clipser la base supérieure sur le chariot, terminez tout le câblage et la gestion des câbles de la base supérieure, et placez le Raspberry Pi dans son boîtier.
 
-![Image 15](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/15.png)
+![Image 15](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/15.jpg)
 
 - Faites attention à ne pas endommager le boîtier lorsque vous insérez le bord du chariot dans la prise du boîtier.
 
@@ -189,13 +189,13 @@ Avant de clipser la base supérieure sur le chariot, terminez tout le câblage e
 
 - Si vous disposez d'une bobine de filament en carton Bambu Lab, n'oubliez pas de la placer à l'intérieur pour fournir un support structurel stable.
 
-![Image 16](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/16.png)
+![Image 16](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/16.jpg)
 
 Après avoir terminé ces étapes, le XLeRobot devrait être physiquement bien assemblé et prêt à faire quelques tâches ménagères.
 
-![Image 17](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/17.png)
+![Image 17](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/17.jpg)
 
-![Image 18](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/18.png)
+![Image 18](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/18.jpg)
 
 Important
 

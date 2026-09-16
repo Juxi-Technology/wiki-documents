@@ -15,7 +15,7 @@ Consulte este tutorial para depurar a câmara USB com acoplamento automático: [
 
 Em produtos prontos, as porcas geralmente já estão instaladas nas garras, então você pode ir direto para o passo 2 
 
-![Passos de instalação do suporte de montagem no braço do SO-ARM101 – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/2.png)
+![Passos de instalação do suporte de montagem no braço do SO-ARM101 – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/2.jpg)
 
 ## Passos de instalação do suporte do kit de câmara de ambiente
 

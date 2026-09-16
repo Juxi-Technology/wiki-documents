@@ -1,41 +1,10 @@
 ---
-title: API 参考
-description: "钜犀科技产品 API 参考文档——接口基础地址、API Key 认证方式与设备信息查询接口说明。"
+title: "API 参考"
+description: "本页内容正在筹备中"
 ---
-
 
 # API 参考
 
-本页面提供产品的 API 接口参考文档。
+本页内容正在筹备中。
 
-## 基础 URL
-
-```
-https://api.juxi-tech.com/v1
-```
-
-## 认证
-
-使用 API Key 进行认证：
-
-```http
-Authorization: Bearer YOUR_API_KEY
-```
-
-## 接口列表
-
-### 获取设备信息
-
-```http
-GET /device/info
-```
-
-响应示例：
-
-```json
-{
-  "id": "device-001",
-  "name": "Juxi Device",
-  "status": "online"
-}
-```
+钜犀科技产品目前通过[教程中心](/zh-hans/tutorials/)提供使用与二次开发文档;如有相关问题,欢迎[联系我们](/zh-hans/community/)。

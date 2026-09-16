@@ -1,42 +1,10 @@
 ---
-title: API 參考
-description: "鉅犀科技產品 API 參考——基礎 URL、API Key 認證與介面列表的完整說明。"
+title: "API 參考"
+description: "本頁內容正在籌備中"
 ---
-
 
 # API 參考
 
-本頁面提供產品的 API 接口參考文檔。
+本頁內容正在籌備中。
 
-## 基礎 URL
-
-```
-https://api.juxi-tech.com/v1
-```
-
-## 認證
-
-使用 API Key 進行認證：
-
-```http
-Authorization: Bearer YOUR_API_KEY
-```
-
-## 接口列表
-
-### 獲取設備信息
-
-```http
-GET /device/info
-```
-
-響應示例：
-
-```json
-{
-  "id": "device-001",
-  "name": "Juxi Device",
-  "status": "online"
-}
-```
-
+鉅犀科技產品目前透過[教程中心](/zh-hant/tutorials/)提供使用與二次開發文件;如有相關問題,歡迎[聯絡我們](/zh-hant/community/)。

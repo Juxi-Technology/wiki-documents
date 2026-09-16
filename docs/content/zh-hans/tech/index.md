@@ -1,12 +1,10 @@
 ---
-title: 技术文档
-description: "钜犀科技技术文档目录——汇总 API 参考与开发指南,帮助开发者快速查阅技术资料。"
+title: "技术文档"
+description: "本页内容正在筹备中"
 ---
-
 
 # 技术文档
 
-这里是所有技术文档的目录！
+本页内容正在筹备中。
 
-- [API 参考](/zh-hans/tech/api-reference)
-- [开发指南](/zh-hans/tech/dev-guide)
+钜犀科技产品目前通过[教程中心](/zh-hans/tutorials/)提供使用与二次开发文档;如有相关问题,欢迎[联系我们](/zh-hans/community/)。

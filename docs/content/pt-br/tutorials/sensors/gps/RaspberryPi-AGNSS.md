@@ -121,7 +121,7 @@ Nesta lição, vamos aprender principalmente a usar o Raspberry Pi, o módulo GP
 
 ![Imagem 4](../../../../../public/images/tutorials/sensors/gps/RaspberryPi-AGNSS/4.png) 
 
-![Imagem 5](../../../../../public/images/tutorials/sensors/gps/RaspberryPi-AGNSS/5.png) 
+![Imagem 5](../../../../../public/images/tutorials/sensors/gps/RaspberryPi-AGNSS/5.jpg) 
 
 • Esta instrução emite o tempo interno atual do receptor + o status da mensagem de navegação.
 

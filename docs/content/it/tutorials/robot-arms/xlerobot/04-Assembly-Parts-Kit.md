@@ -5,7 +5,7 @@ description: "Montaggio del kit XLeRobot a pezzi: costruire i due bracci SO101, 
 
 # Montaggio kit a pezzi
 
-![Immagine 1](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/1.png)
+![Immagine 1](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/1.jpg)
 
 Suggerimento
 
@@ -15,7 +15,7 @@ Se preferisci saltare il divertimento di avvitare le viti, puoi anche acquistare
 
 ## 🦾 Braccio robotico SO101
 
-![Immagine 2](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/2.png)
+![Immagine 2](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/2.jpg)
 
 > Se disponi già di 2 bracci robotici SO101 assemblati con i servomotori configurati, salta questo passaggio.
 > 
@@ -35,7 +35,7 @@ Se preferisci saltare il divertimento di avvitare le viti, puoi anche acquistare
 |Servo Feetech STS3215-C018|2|7、8|Kit per arti superiori-torre della telecamera|
 |Cavo di prolunga del servo 90CM|2||Collega il telaio mobile e la torre della telecamera alla scheda di driver del servo|
 
-![Immagine 3](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/3.png)
+![Immagine 3](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/3.jpg)
 
 > Poiché il repository ufficiale del codice lerobot attualmente non supporta configurazioni di servomotori diverse dal braccio robotico, utilizziamo [Bambot](https://bambot.org/) in alternativa (funziona su Windows e Mac; su Linux è necessario eseguire prima sudo chmod 666 /dev/ttyACM0).
 > 
@@ -95,7 +95,7 @@ Non scegliere la piastra sbagliata; ogni piastra ha un ordine specifico.
 
 - Lascia il **cavo di prolunga del servo da 90CM** penzolante; per ora non tirarlo fuori dal foro della piastra superiore.
 
-![Immagine 9](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/9.png)
+![Immagine 9](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/9.jpg)
 
 - Installa 3 connettori (rialzi) sulla piastra superiore secondo la figura sopra.
 
@@ -117,7 +117,7 @@ Nota
 
 Questa nuova versione dell'hardware è compatibile con la rete metallica del carrello; tutte le 12 viti M3 dovrebbero inserirsi senza difficoltà.
 
-![Immagine 11](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/11.png)
+![Immagine 11](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/11.jpg)
 
 - Poi, fai passare i cavi precedentemente prolungati dal basso verso l'alto attraverso il carrello.
 
@@ -181,7 +181,7 @@ Importante
 
 Prima di fissare la base superiore al carrello, completa tutto il cablaggio e la gestione dei cavi della base superiore e inserisci il Raspberry Pi nel suo alloggiamento.
 
-![Immagine 15](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/15.png)
+![Immagine 15](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/15.jpg)
 
 - Fai attenzione a non danneggiare l'alloggiamento quando spingi il bordo del carrello nella presa dell'alloggiamento.
 
@@ -189,13 +189,13 @@ Prima di fissare la base superiore al carrello, completa tutto il cablaggio e la
 
 - Se disponi di una bobina di filamento in cartone bambulab, non dimenticare di inserirla all'interno per fornire un supporto strutturale stabile.
 
-![Immagine 16](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/16.png)
+![Immagine 16](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/16.jpg)
 
 Dopo aver completato questi passaggi, l'XLeRobot dovrebbe essere assemblato fisicamente in modo corretto e pronto a svolgere qualche faccenda domestica.
 
-![Immagine 17](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/17.png)
+![Immagine 17](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/17.jpg)
 
-![Immagine 18](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/18.png)
+![Immagine 18](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/18.jpg)
 
 Importante
 

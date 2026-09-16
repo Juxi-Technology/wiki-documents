@@ -1,38 +1,10 @@
 ---
-title: 개발 가이드
-description: "JUXI 제품 개발 가이드 — CLI 설치로 개발 환경을 구축하고 SDK를 사용해 2차 개발을 시작하는 방법을 소개합니다."
+title: "개발 가이드"
+description: "이 페이지의 내용은 준비 중입니다"
 ---
 
 # 개발 가이드
 
-이 가이드는 JUXI 제품을 기반으로 2차 개발하는 방법을 소개합니다.
+이 페이지의 내용은 준비 중입니다.
 
-## 개발 환경 구축
-
-### 개발 도구 설치
-
-```bash
-# CLI 도구 설치
-npm install -g @juxi/cli
-# 프로젝트 초기화
-juxi init my-project
-```
-
-## 프로젝트 구조
-
-```
-my-project/
-├── src/
-│   ├── main.js
-│   └── components/
-├── docs/
-└── package.json
-```
-
-## 코드 예제
-
-```javascript
-import { Device } from '@juxi/sdk'
-const device = new Device()
-device.connect()
-```
+현재 Juxi Technology 제품 문서는 [튜토리얼 센터](/ko/tutorials/)에서 제공하고 있습니다. 문의 사항은 [커뮤니티](/ko/community/)로 연락해 주세요.

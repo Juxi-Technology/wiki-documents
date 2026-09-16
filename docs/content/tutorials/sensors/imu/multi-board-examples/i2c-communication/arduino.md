@@ -11,7 +11,7 @@ This routine uses an Arduino Nano development board, a Windows computer, several
 
 ## 1. Connect the device
 
-![1. Connect the device – 1](../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.png)
+![1. Connect the device – 1](../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.jpg)
 
 ![1. Connect the device – 2](../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/2.jpg)
 

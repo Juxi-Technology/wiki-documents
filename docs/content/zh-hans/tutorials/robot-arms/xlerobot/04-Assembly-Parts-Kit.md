@@ -5,7 +5,7 @@ description: "如果你宁愿跳过拧螺丝的乐趣，你也可以购买适配
 
 # 散件组装教程
 
-![图 1](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/1.png)
+![图 1](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/1.jpg)
 
 小技巧
 
@@ -15,7 +15,7 @@ description: "如果你宁愿跳过拧螺丝的乐趣，你也可以购买适配
 
 ## 🦾 SO101机械臂
 
-![图 2](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/2.png)
+![图 2](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/2.jpg)
 
 > 如果你已经有2个配置了舵机的组装好的SO101机械臂，请跳过。
 > 
@@ -35,7 +35,7 @@ description: "如果你宁愿跳过拧螺丝的乐趣，你也可以购买适配
 |飞特STS3215-C018舵机|2|7、8|上肢套件-相机塔|
 |舵机延长线90CM|2||将底盘车和相机塔连接舵机驱动板|
 
-![图 3](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/3.png)
+![图 3](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/3.jpg)
 
 > 由于官方lerobot代码库目前不支持除机械臂外的舵机配置，我们使用[Bambot](https://bambot.org/)代替(在Windows和Mac上工作，Linux需要先运行sudo chmod 666 /dev/ttyACM0)。
 > 
@@ -95,7 +95,7 @@ sudo chmod 666 /dev/ttyACM0
 
 - 让 **90CM舵机延长线** 悬挂，暂时不要从 顶板孔 拉出来。
 
-![图 9](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/9.png)
+![图 9](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/9.jpg)
 
 - 根据上图在顶板上安装3个连接器（增高架）。
 
@@ -117,7 +117,7 @@ sudo chmod 666 /dev/ttyACM0
 
 这个新硬件版本与推车金属网格兼容，所有12个M3螺丝都应该能够轻松装入。
 
-![图 11](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/11.png)
+![图 11](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/11.jpg)
 
 - 然后，将之前延长的线缆从下方穿过推车向上布线。
 
@@ -181,7 +181,7 @@ sudo chmod 666 /dev/ttyACM0
 
 在将顶部底座夹到推车之前，完成顶部底座的所有接线和线缆管理，并将树莓派放入其外壳中。
 
-![图 15](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/15.png)
+![图 15](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/15.jpg)
 
 - 当你将推车边缘塞入外壳插座时要小心不要弄坏外壳。
 
@@ -189,13 +189,13 @@ sudo chmod 666 /dev/ttyACM0
 
 - 如果你有 bambulab耗材纸质线轴，不要忘记将其放在里面以提供稳定的结构支撑。
 
-![图 16](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/16.png)
+![图 16](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/16.jpg)
 
 完成这些步骤后，XLeRobot应该在物理上组装良好，准备做一些家务。
 
-![图 17](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/17.png)
+![图 17](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/17.jpg)
 
-![图 18](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/18.png)
+![图 18](../../../../../public/images/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit/18.jpg)
 
 重要
 

@@ -13,7 +13,7 @@ Beim fertigen Produkt sind die Muttern im Greifer bereits montiert – direkt zu
 
 ![Montage der SO-ARM101-Armhalterung – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/1.png)
 
-![Montage der SO-ARM101-Armhalterung – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/2.png)
+![Montage der SO-ARM101-Armhalterung – 2](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/2.jpg)
 
 ## Montage des Umgebungskamera-Kits
 

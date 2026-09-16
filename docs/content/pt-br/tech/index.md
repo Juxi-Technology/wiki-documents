@@ -1,12 +1,10 @@
 ---
-title: Docs Técnicos
-description: Aqui estão todos os documentos técnicos!
+title: "Docs Técnicos"
+description: "Conteúdo desta página em preparação"
 ---
-
 
 # Docs Técnicos
 
-Aqui estão todos os documentos técnicos!
+O conteúdo desta página está em preparação.
 
-- [Referência de API](/pt-br/tech/api-reference)
-- [Guia de Desenvolvimento](/pt-br/tech/dev-guide)
+A documentação dos produtos Juxi Technology está disponível atualmente no [centro de tutoriais](/pt-br/tutorials/). Em caso de dúvidas, [fale conosco](/pt-br/community/).
