@@ -1,11 +1,11 @@
 ---
 title: "02-Tutorial de seguimiento de gestos"
-description: "\\# Seguimiento de gestos — Tutorial de uso (versión con servos PWM)"
+description: "Seguimiento de gestos — Tutorial de uso (versión con servos PWM)"
 ---
 
 # 02-Tutorial de seguimiento de gestos
 
-**\# Seguimiento de gestos — Tutorial de uso (versión con servos PWM)**
+**Seguimiento de gestos — Tutorial de uso (versión con servos PWM)**
 
 Este directorio proporciona **seguimiento de gestos**: la cámara reconoce tu mano y la mano diestra la sigue en tiempo real (cadena IK completa).
 

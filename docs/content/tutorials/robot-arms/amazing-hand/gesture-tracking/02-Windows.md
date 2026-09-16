@@ -1,6 +1,6 @@
 ---
 title: "Windows One-Click Deployment and Run"
-description: "This tutorial is based on the official AmazingHand (Pollen Robotics dexterous hand) Demo, with one-click depl…"
+description: "AmazingHand gesture-tracking one-click deployment on Windows: double-click the numbered scripts, then control the simulated or real hand with camera gestures."
 ---
 
 # Windows One-Click Deployment and Run

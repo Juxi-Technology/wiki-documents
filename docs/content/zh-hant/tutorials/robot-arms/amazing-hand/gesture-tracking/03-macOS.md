@@ -1,11 +1,11 @@
 ---
 title: "Mac一鍵部署執行"
-description: "本教程基於 AmazingHand（Pollen Robotics 靈巧手）官方 Demo，已配好一鍵部署腳本。 按編號順序執行即可。所有腳本都位於 Demo/Mac一鍵部署腳本/ 資料夾下，在終端中執行 ./腳本名。"
+description: "AmazingHand 手勢追蹤一鍵部署（Mac）：先在終端為腳本加入執行權限，再依編號執行完成部署，以手勢即時驅動仿真或實體靈巧手。"
 ---
 
 # Mac一鍵部署執行
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 本教程基於 AmazingHand（Pollen Robotics 靈巧手）官方 Demo，已配好一鍵部署腳本。 按編號順序執行即可。**所有腳本都位於 Demo/Mac一鍵部署腳本/ 資料夾下，在終端中執行 ./腳本名。**
 

@@ -1,6 +1,6 @@
 ---
 title: "Distribuzione ed esecuzione in un clic su Windows"
-description: "Questo tutorial si basa sulla Demo ufficiale di AmazingHand (mano abile Pollen Robotics); gli script di distr…"
+description: "Distribuzione in un clic del tracciamento dei gesti AmazingHand su Windows: doppio clic sugli script, poi controllare la mano simulata o reale con i gesti."
 ---
 
 # Distribuzione ed esecuzione in un clic su Windows

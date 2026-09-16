@@ -1,11 +1,11 @@
 ---
 title: "02-Tutoriel de suivi de gestes"
-description: "\\# Suivi de gestes — Tutoriel d'utilisation(version servomoteurs PWM)"
+description: "Suivi de gestes — Tutoriel d'utilisation(version servomoteurs PWM)"
 ---
 
 # 02-Tutoriel de suivi de gestes
 
-**\# Suivi de gestes — Tutoriel d'utilisation(version servomoteurs PWM)**
+**Suivi de gestes — Tutoriel d'utilisation(version servomoteurs PWM)**
 
 Ce dossier fournit le **suivi de gestes** : la caméra reconnaît votre main, la main dextre suit en temps réel (chaîne IK complète).
 

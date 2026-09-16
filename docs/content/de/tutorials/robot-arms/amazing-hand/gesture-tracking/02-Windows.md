@@ -1,6 +1,6 @@
 ---
 title: "Windows Ein-Klick-Deployment und -Ausführung"
-description: "Dieses Tutorial basiert auf dem offiziellen Demo von AmazingHand （Fingerhand von Pollen Robotics）, die Ein-Kl…"
+description: "AmazingHand Gesten-Tracking per Ein-Klick-Deployment unter Windows: Skripte per Doppelklick starten, dann Simulation oder echte Hand per Kamerageste steuern."
 ---
 
 # Windows Ein-Klick-Deployment und -Ausführung

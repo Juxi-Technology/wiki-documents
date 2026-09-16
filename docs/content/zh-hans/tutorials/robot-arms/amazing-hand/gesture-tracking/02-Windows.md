@@ -1,6 +1,6 @@
 ---
 title: "Windows一键部署运行"
-description: "本教程基于 AmazingHand（Pollen Robotics 灵巧手）官方 Demo，已配好一键部署脚本。"
+description: "AmazingHand 手势追踪一键部署（Windows）：双击编号脚本完成环境与串口配置，再用手势实时驱动仿真或真实灵巧手。"
 ---
 
 # Windows一键部署运行

@@ -5,7 +5,7 @@ description: "XLeRobot 檔案部署說明：將模型、機器人與遙操作模
 
 # 移動 XLeRobot 文件
 
-在https://github.com/Vector-Wangel/XLeRobot下載壓縮包解壓
+在 [https://github.com/Vector-Wangel/XLeRobot](https://github.com/Vector-Wangel/XLeRobot) 下載壓縮包解壓
 
 或者
 

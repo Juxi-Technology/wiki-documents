@@ -1,6 +1,6 @@
 ---
 title: "Windows 원클릭 배포 실행"
-description: "본 튜토리얼은 AmazingHand(Pollen Robotics 로봇 손) 공식 Demo를 기반으로 하며, 원클릭 배포 스크립트가 이미 준비되어 있습니다."
+description: "AmazingHand 제스처 추적 원클릭 배포(Windows). 스크립트를 두 번 클릭으로 실행한 뒤, 카메라 제스처로 로봇 손을 구동합니다."
 ---
 
 # Windows 원클릭 배포 실행

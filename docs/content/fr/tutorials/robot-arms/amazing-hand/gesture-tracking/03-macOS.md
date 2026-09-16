@@ -1,11 +1,11 @@
 ---
 title: "Déploiement et exécution en un clic sous Mac"
-description: "Ce tutoriel est basé sur la Demo officielle d'AmazingHand (main dextre de Pollen Robotics) ; le script de dép…"
+description: "Déploiement en un clic du suivi de gestes AmazingHand sous Mac : exécutez les scripts dans le terminal, puis pilotez la main simulée ou réelle par gestes."
 ---
 
 # Déploiement et exécution en un clic sous Mac
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 Ce tutoriel est basé sur la Demo officielle d'AmazingHand (main dextre de Pollen Robotics) ; le script de déploiement en un clic est déjà configuré. Il suffit de les exécuter dans l'ordre des numéros. **Tous les scripts se trouvent dans le dossier Demo/Mac一键部署脚本/ et s'exécutent dans le terminal avec ./nom-du-script.**
 

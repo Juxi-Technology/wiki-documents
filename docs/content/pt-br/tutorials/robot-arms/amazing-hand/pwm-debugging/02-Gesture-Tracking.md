@@ -1,11 +1,11 @@
 ---
 title: "02-Tutorial de rastreamento de gestos"
-description: "\\# Rastreamento de gestos — Tutorial de uso (versão com servomotor PWM)"
+description: "Rastreamento de gestos — Tutorial de uso (versão com servomotor PWM)"
 ---
 
 # 02-Tutorial de rastreamento de gestos
 
-**\# Rastreamento de gestos — Tutorial de uso (versão com servomotor PWM)**
+**Rastreamento de gestos — Tutorial de uso (versão com servomotor PWM)**
 
 Este diretório fornece o **rastreamento de gestos**: a câmera reconhece a sua mão e a mão hábil a acompanha em tempo real (cadeia IK completa).
 

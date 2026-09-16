@@ -1,11 +1,11 @@
 ---
 title: "Linux（Ubuntu）ワンクリックデプロイ実行"
-description: "本チュートリアルは AmazingHand（Pollen Robotics の器用なハンド）公式 Demo に基づいており、ワンクリックデプロイスクリプトを用意済みです。"
+description: "AmazingHand ジェスチャートラッキング ワンクリックデプロイ（Ubuntu）。ターミナルでスクリプトを順に実行し、カメラジェスチャーでハンドを動かします。"
 ---
 
 # Linux（Ubuntu）ワンクリックデプロイ実行
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 本チュートリアルは AmazingHand（Pollen Robotics の器用なハンド）公式 Demo に基づいており、ワンクリックデプロイスクリプトを用意済みです。
 番号順に実行するだけです。**すべてのスクリプトは ****`Demo/Linux(Ubuntu)一键部署脚本/`**** フォルダ下にあり、ターミナルで ****`./脚本名`**** を実行します。**

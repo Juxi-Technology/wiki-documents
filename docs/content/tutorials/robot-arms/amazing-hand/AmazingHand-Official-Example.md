@@ -64,7 +64,7 @@ Open thePowershellterminal on the Windows side, copy and then enter this command
 
 ![2. Environment Installation – 4](../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/12.png)
 
-**3. Install dora-rs:**Please refer to [https://dora-rs.ai/docs/guides/Installation/installing](https://dora-rs.ai/docs/guides/Installation/installing) for download and installation
+**3. Install dora-rs:**Please refer to [[https://dora-rs.ai/docs/guides/Installation/installing](https://dora-rs.ai/docs/guides/Installation/installing)](https://dora-rs.ai/docs/guides/Installation/installing) for download and installation
 
 Linux Environment Variable Settings:
 

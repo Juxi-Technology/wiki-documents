@@ -1,11 +1,11 @@
 ---
 title: "02-Gesture Tracking Tutorial"
-description: "\\# Gesture Tracking — Usage Tutorial (PWM Servo Version)"
+description: "Gesture Tracking — Usage Tutorial (PWM Servo Version)"
 ---
 
 # 02-Gesture Tracking Tutorial
 
-**\# Gesture Tracking — Usage Tutorial (PWM Servo Version)**
+**Gesture Tracking — Usage Tutorial (PWM Servo Version)**
 
 This directory provides **gesture tracking**: the camera recognizes your hand, and the dexterous hand follows in real time (full IK chain).
 

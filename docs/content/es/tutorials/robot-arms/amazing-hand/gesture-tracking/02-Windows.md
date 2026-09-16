@@ -1,6 +1,6 @@
 ---
 title: "Despliegue y ejecución en Windows en un clic"
-description: "Este tutorial se basa en el Demo oficial de AmazingHand (mano diestra de Pollen Robotics) y ya incluye script…"
+description: "Despliegue en un clic del seguimiento de gestos AmazingHand en Windows: haga doble clic en los scripts y controle la mano simulada o real con gestos."
 ---
 
 # Despliegue y ejecución en Windows en un clic

@@ -1,11 +1,11 @@
 ---
 title: "Mac ワンクリックデプロイ実行"
-description: "本チュートリアルは AmazingHand（Pollen Robotics の器用なハンド）公式 Demo に基づいており、ワンクリックデプロイスクリプトを用意済みです。 番号順に実行するだけです。すべてのスクリプトは…"
+description: "AmazingHand ジェスチャートラッキング ワンクリックデプロイ（Mac）。ターミナルで実行権限を付与し、スクリプトを順に実行、カメラジェスチャーでハンドを動かします。"
 ---
 
 # Mac ワンクリックデプロイ実行
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 本チュートリアルは AmazingHand（Pollen Robotics の器用なハンド）公式 Demo に基づいており、ワンクリックデプロイスクリプトを用意済みです。 番号順に実行するだけです。**すべてのスクリプトは Demo/Mac一键部署脚本/ フォルダ下にあり、ターミナルで ./スクリプト名 を実行します。**
 

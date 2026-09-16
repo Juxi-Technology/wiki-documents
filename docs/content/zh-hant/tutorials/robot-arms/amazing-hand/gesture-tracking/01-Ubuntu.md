@@ -1,11 +1,11 @@
 ---
 title: "Linux（Ubuntu）一鍵部署執行"
-description: "本教程基於 AmazingHand（Pollen Robotics 靈巧手）官方 Demo，已配好一鍵部署腳本。"
+description: "AmazingHand 手勢追蹤一鍵部署（Ubuntu）：在終端依編號執行腳本，完成環境與連接埠設定後，以手勢即時驅動仿真或實體靈巧手。"
 ---
 
 # Linux（Ubuntu）一鍵部署執行
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 本教程基於 AmazingHand（Pollen Robotics 靈巧手）官方 Demo，已配好一鍵部署腳本。
 按編號順序執行即可。**所有腳本都位於 ****`Demo/Linux(Ubuntu)一键部署脚本/`**** 資料夾下，在終端中執行 ****`./腳本名`****。**

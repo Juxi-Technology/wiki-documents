@@ -1,11 +1,11 @@
 ---
 title: "Mac implementação e execução com um clique"
-description: "Este tutorial baseia-se no Demo oficial do AmazingHand (mão hábil da Pollen Robotics) e já inclui um script d…"
+description: "Implementação com um clique do rastreio de gestos AmazingHand no Mac: execute os scripts no terminal e controle a mão simulada ou real com gestos."
 ---
 
 # Mac implementação e execução com um clique
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 Este tutorial baseia-se no Demo oficial do AmazingHand (mão hábil da Pollen Robotics) e já inclui um script de implementação com um clique. Execute pela ordem numérica. **Todos os scripts estão na pasta Demo/Mac一键部署脚本/ e são executados no terminal com ./nome-do-script.**
 

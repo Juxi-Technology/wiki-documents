@@ -1,11 +1,11 @@
 ---
 title: "Mac Ein-Klick-Deployment und -Ausführung"
-description: "Dieses Tutorial basiert auf dem offiziellen Demo von AmazingHand （Fingerhand von Pollen Robotics）, die Ein-Kl…"
+description: "AmazingHand Gesten-Tracking per Ein-Klick-Deployment unter Mac: Skripte im Terminal ausführen, Simulation oder echte Hand per Kamerageste steuern."
 ---
 
 # Mac Ein-Klick-Deployment und -Ausführung
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 Dieses Tutorial basiert auf dem offiziellen Demo von AmazingHand （Fingerhand von Pollen Robotics）, die Ein-Klick-Deployment-Skripte sind bereits vorbereitet. Führen Sie alles einfach in der Reihenfolge der Nummerierung aus. **Alle Skripte befinden sich im Ordner Demo/Mac一键部署脚本/ und werden im Terminal mit ./Skriptname ausgeführt.**
 

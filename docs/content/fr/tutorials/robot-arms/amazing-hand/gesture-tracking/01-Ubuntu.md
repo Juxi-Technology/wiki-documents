@@ -1,11 +1,11 @@
 ---
 title: "Déploiement et exécution en un clic sous Linux (Ubuntu)"
-description: "Ce tutoriel est basé sur la Demo officielle d'AmazingHand (main dextre de Pollen Robotics) ; le script de dép…"
+description: "Déploiement en un clic du suivi de gestes AmazingHand sous Ubuntu : exécutez les scripts dans le terminal, puis pilotez la main simulée ou réelle par gestes."
 ---
 
 # Déploiement et exécution en un clic sous Linux (Ubuntu)
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 Ce tutoriel est basé sur la Demo officielle d'AmazingHand (main dextre de Pollen Robotics) ; le script de déploiement en un clic est déjà configuré.
 Il suffit de les exécuter dans l'ordre des numéros. **Tous les scripts se trouvent dans le dossier ****`Demo/Linux(Ubuntu)一键部署脚本/`**** ; exécutez-les dans le terminal avec ****`./nom-du-script`****.**

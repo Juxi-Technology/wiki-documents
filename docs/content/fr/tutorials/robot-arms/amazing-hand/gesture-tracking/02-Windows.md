@@ -1,6 +1,6 @@
 ---
 title: "Déploiement et exécution en un clic sous Windows"
-description: "Ce tutoriel est basé sur la Demo officielle d'AmazingHand (main dextre de Pollen Robotics) ; le script de dép…"
+description: "Déploiement en un clic du suivi de gestes AmazingHand sous Windows : double-cliquez les scripts numérotés, puis pilotez la main simulée ou réelle par gestes."
 ---
 
 # Déploiement et exécution en un clic sous Windows

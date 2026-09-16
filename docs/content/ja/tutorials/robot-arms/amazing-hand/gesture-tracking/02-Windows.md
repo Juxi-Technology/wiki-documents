@@ -1,6 +1,6 @@
 ---
 title: "Windows ワンクリックデプロイ実行"
-description: "本チュートリアルは AmazingHand（Pollen Robotics の器用なハンド）公式 Demo に基づいており、ワンクリックデプロイスクリプトを用意済みです。"
+description: "AmazingHand ジェスチャートラッキング ワンクリックデプロイ（Windows）。スクリプトを番号順にダブルクリックし、カメラジェスチャーでハンドを動かします。"
 ---
 
 # Windows ワンクリックデプロイ実行

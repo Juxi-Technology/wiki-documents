@@ -1,11 +1,11 @@
 ---
 title: "Distribuzione ed esecuzione in un clic su Mac"
-description: "Questo tutorial si basa sulla Demo ufficiale di AmazingHand (mano abile Pollen Robotics); gli script di distr…"
+description: "Distribuzione in un clic del tracciamento dei gesti AmazingHand su Mac: eseguire gli script nel terminale e controllare la mano simulata o reale con gesti."
 ---
 
 # Distribuzione ed esecuzione in un clic su Mac
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 Questo tutorial si basa sulla Demo ufficiale di AmazingHand (mano abile Pollen Robotics); gli script di distribuzione in un clic sono già pronti. È sufficiente eseguirli in ordine numerico. **Tutti gli script si trovano nella cartella Demo/Mac一键部署脚本/ e vanno eseguiti nel terminale con ./nome_script。**
 

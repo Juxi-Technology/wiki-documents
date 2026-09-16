@@ -59,7 +59,7 @@ Windows では Powershell ターミナルを開き、コピーしてこのコマ
 ![2.環境のインストール – 4](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/12.png)
 
 
-**3、dora-rs のインストール：**https://dora-rs.ai/docs/guides/Installation/installing を参照してダウンロード・インストール
+**3、dora-rs のインストール：**[https://dora-rs.ai/docs/guides/Installation/installing](https://dora-rs.ai/docs/guides/Installation/installing) を参照してダウンロード・インストール
 Linux の場合の環境変数設定：
 
 ![2.環境のインストール – 5](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/13.png)

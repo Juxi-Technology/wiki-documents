@@ -1,11 +1,11 @@
 ---
 title: "02-Gesten-Tracking-Tutorial"
-description: "\\# Gesten-Tracking — Anleitung(PWM-Servo-Version)"
+description: "Gesten-Tracking — Anleitung(PWM-Servo-Version)"
 ---
 
 # 02-Gesten-Tracking-Tutorial
 
-**\# Gesten-Tracking — Anleitung(PWM-Servo-Version)**
+**Gesten-Tracking — Anleitung(PWM-Servo-Version)**
 
 Dieses Verzeichnis bietet **Gesten-Tracking**: Die Kamera erkennt Ihre Hand, die Fingerhand folgt in Echtzeit (vollständige IK-Kette).
 

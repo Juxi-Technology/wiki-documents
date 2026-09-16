@@ -1,11 +1,11 @@
 ---
 title: "Linux（Ubuntu）Ein-Klick-Deployment und -Ausführung"
-description: "Dieses Tutorial basiert auf dem offiziellen Demo von AmazingHand （Fingerhand von Pollen Robotics）, die Ein-Kl…"
+description: "AmazingHand Gesten-Tracking per Ein-Klick-Deployment unter Ubuntu: Skripte im Terminal ausführen, dann Simulation oder echte Hand per Kamerageste steuern."
 ---
 
 # Linux（Ubuntu）Ein-Klick-Deployment und -Ausführung
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 Dieses Tutorial basiert auf dem offiziellen Demo von AmazingHand （Fingerhand von Pollen Robotics）, die Ein-Klick-Deployment-Skripte sind bereits vorbereitet.
 Führen Sie alles einfach in der Reihenfolge der Nummerierung aus. **Alle Skripte befinden sich im Ordner **`Demo/Linux(Ubuntu)一键部署脚本/`** und werden im Terminal mit **`./Skriptname`** ausgeführt.**

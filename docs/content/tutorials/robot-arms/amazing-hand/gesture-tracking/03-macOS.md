@@ -1,11 +1,11 @@
 ---
 title: "Mac One-Click Deployment and Run"
-description: "This tutorial is based on the official AmazingHand (Pollen Robotics dexterous hand) Demo, with one-click depl…"
+description: "AmazingHand gesture-tracking one-click deployment on Mac: grant execute permission, run the scripts in the terminal, then drive the hand with camera gestures."
 ---
 
 # Mac One-Click Deployment and Run
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 This tutorial is based on the official AmazingHand (Pollen Robotics dexterous hand) Demo, with one-click deployment scripts already prepared. Just execute them in numerical order. **All scripts are located in the Demo/Mac一键部署脚本/ folder — run ./script-name in the terminal.**
 

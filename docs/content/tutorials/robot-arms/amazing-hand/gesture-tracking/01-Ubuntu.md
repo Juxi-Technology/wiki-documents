@@ -1,11 +1,11 @@
 ---
 title: "Linux (Ubuntu) One-Click Deployment and Run"
-description: "This tutorial is based on the official AmazingHand (Pollen Robotics dexterous hand) Demo, with the one-click …"
+description: "AmazingHand gesture-tracking one-click deployment on Ubuntu: run the scripts in the terminal, then control the simulated or real hand with camera gestures."
 ---
 
 # Linux (Ubuntu) One-Click Deployment and Run
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 This tutorial is based on the official AmazingHand (Pollen Robotics dexterous hand) Demo, with the one-click deployment scripts already prepared.
 Just run them in numerical order. **All scripts are located in the ****`Demo/Linux(Ubuntu)一键部署脚本/`**** folder; run them in the terminal with ****`./script-name`****.**

@@ -1,11 +1,11 @@
 ---
 title: "02-Tutorial del tracciamento dei gesti"
-description: "\\# Tracciamento dei gesti — Tutorial d'uso (versione con servomotori PWM)"
+description: "Tracciamento dei gesti — Tutorial d'uso (versione con servomotori PWM)"
 ---
 
 # 02-Tutorial del tracciamento dei gesti
 
-**\# Tracciamento dei gesti — Tutorial d'uso (versione con servomotori PWM)**
+**Tracciamento dei gesti — Tutorial d'uso (versione con servomotori PWM)**
 
 Questa cartella fornisce il **tracciamento dei gesti**: la telecamera riconosce la tua mano e la mano abile la segue in tempo reale (catena IK completa).
 

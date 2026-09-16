@@ -5,7 +5,7 @@ description: "XLeRobot 文件部署教程：将软件仓库中的模型、机器
 
 # 移动 XLeRobot 文件
 
-在https://github.com/Vector-Wangel/XLeRobot下载压缩包解压
+在 [https://github.com/Vector-Wangel/XLeRobot](https://github.com/Vector-Wangel/XLeRobot) 下载压缩包解压
 
 或者
 

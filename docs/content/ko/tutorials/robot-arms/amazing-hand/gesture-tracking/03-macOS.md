@@ -1,11 +1,11 @@
 ---
 title: "Mac 원클릭 배포 실행"
-description: "본 튜토리얼은 AmazingHand(Pollen Robotics 로봇 손) 공식 Demo를 기반으로 하며, 원클릭 배포 스크립트가 이미 준비되어 있습니다. 번호 순서대로 실행하면 됩니다. 모든 스…"
+description: "AmazingHand 제스처 추적 원클릭 배포(macOS). 터미널에서 실행 권한을 준 뒤 스크립트를 실행하고, 카메라 제스처로 로봇 손을 구동합니다."
 ---
 
 # Mac 원클릭 배포 실행
 
-[AmazingHand-main.zip]
+AmazingHand-main.zip
 
 본 튜토리얼은 AmazingHand(Pollen Robotics 로봇 손) 공식 Demo를 기반으로 하며, 원클릭 배포 스크립트가 이미 준비되어 있습니다. 번호 순서대로 실행하면 됩니다. **모든 스크립트는 Demo/Mac一键部署脚本/ 폴더에 있으며, 터미널에서 ./스크립트이름으로 실행합니다.**
 

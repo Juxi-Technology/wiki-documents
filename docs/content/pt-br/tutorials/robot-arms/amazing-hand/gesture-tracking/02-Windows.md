@@ -1,6 +1,6 @@
 ---
 title: "Implantação e execução com um clique no Windows"
-description: "Este tutorial baseia-se no Demo oficial do AmazingHand (mão robótica da Pollen Robotics) e já vem com scripts…"
+description: "Implantação com um clique do rastreamento de gestos AmazingHand no Windows: execute os scripts com duplo clique e controle a mão simulada ou real com gestos."
 ---
 
 # Implantação e execução com um clique no Windows

@@ -64,7 +64,7 @@ Windows에서는 Powershell 터미널을 열고, 이 명령을 복사한 뒤 입
 
 ![2. 환경 설치 – 4](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/12.png)
 
-**3. dora-rs 설치:** 다운로드 및 설치는 [https://dora-rs.ai/docs/guides/Installation/installing](https://dora-rs.ai/docs/guides/Installation/installing)을 참고하세요
+**3. dora-rs 설치:** 다운로드 및 설치는 [[https://dora-rs.ai/docs/guides/Installation/installing](https://dora-rs.ai/docs/guides/Installation/installing)](https://dora-rs.ai/docs/guides/Installation/installing)을 참고하세요
 
 Linux 환경 변수 설정:
 

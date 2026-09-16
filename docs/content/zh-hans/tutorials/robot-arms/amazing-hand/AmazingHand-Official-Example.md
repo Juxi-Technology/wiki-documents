@@ -62,7 +62,7 @@ windows端打开Powershell终端，复制后输入此命令进行安装
 
 ![2.环境安装 – 4](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/12.png)
 
-**3、安装 dora-rs：**请参考https://dora-rs.ai/docs/guides/Installation/installing下载安装
+**3、安装 dora-rs：**请参考[https://dora-rs.ai/docs/guides/Installation/installing](https://dora-rs.ai/docs/guides/Installation/installing)下载安装
 
 linux端环境变量设置：
 
