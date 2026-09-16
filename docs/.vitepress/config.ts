@@ -148,9 +148,6 @@ const zhCN = {
           items: [
             { text: '常见问题 FAQ', link: '/zh-hans/tutorials/faq' },
             { text: 'ROS 入门', link: '/zh-hans/tutorials/ros-intro' },
-            { text: '快速开始', link: '/zh-hans/tutorials/getting-started' },
-            { text: '硬件设置', link: '/zh-hans/tutorials/hardware-setup' },
-            { text: '软件配置', link: '/zh-hans/tutorials/software-config' },
             { text: '飞书文档', link: '/zh-hans/tutorials/lark-wiki' },
           ],
         },
@@ -158,9 +155,6 @@ const zhCN = {
           text: '学习资源',
           items: [
             { text: '学习资源首页', link: '/zh-hans/tutorials/learning-resources/' },
-            { text: '快速开始', link: '/zh-hans/tutorials/learning-resources/getting-started' },
-            { text: '硬件设置', link: '/zh-hans/tutorials/learning-resources/hardware-setup' },
-            { text: '软件配置', link: '/zh-hans/tutorials/learning-resources/software-config' },
             { text: 'Jetson Orin PyTorch 兼容性', link: '/zh-hans/tutorials/learning-resources/jetson-orin-pytorch-compatibility' },
           ],
         },
@@ -530,9 +524,6 @@ const en = {
           items: [
             { text: 'FAQ', link: '/tutorials/faq' },
             { text: 'ROS Intro', link: '/tutorials/ros-intro' },
-            { text: 'Getting Started', link: '/tutorials/getting-started' },
-            { text: 'Hardware Setup', link: '/tutorials/hardware-setup' },
-            { text: 'Software Config', link: '/tutorials/software-config' },
             { text: 'Lark Docs', link: '/tutorials/lark-wiki' },
           ],
         },
@@ -540,9 +531,6 @@ const en = {
           text: 'Learning Resources',
           items: [
             { text: 'Learning Resources Home', link: '/tutorials/learning-resources/' },
-            { text: 'Getting Started', link: '/tutorials/learning-resources/getting-started' },
-            { text: 'Hardware Setup', link: '/tutorials/learning-resources/hardware-setup' },
-            { text: 'Software Config', link: '/tutorials/learning-resources/software-config' },
             { text: 'Jetson Orin PyTorch Compatibility', link: '/tutorials/learning-resources/jetson-orin-pytorch-compatibility' },
           ],
         },
@@ -912,9 +900,6 @@ const zhHK = {
           items: [
             { text: '常見問題 FAQ', link: '/zh-hant/tutorials/faq' },
             { text: 'ROS 入門', link: '/zh-hant/tutorials/ros-intro' },
-            { text: '快速開始', link: '/zh-hant/tutorials/getting-started' },
-            { text: '硬件設置', link: '/zh-hant/tutorials/hardware-setup' },
-            { text: '軟件配置', link: '/zh-hant/tutorials/software-config' },
             { text: '飛書文檔', link: '/zh-hant/tutorials/lark-wiki' },
           ],
         },
@@ -922,9 +907,6 @@ const zhHK = {
           text: '學習資源',
           items: [
             { text: '學習資源首頁', link: '/zh-hant/tutorials/learning-resources/' },
-            { text: '快速開始', link: '/zh-hant/tutorials/learning-resources/getting-started' },
-            { text: '硬件設置', link: '/zh-hant/tutorials/learning-resources/hardware-setup' },
-            { text: '軟件配置', link: '/zh-hant/tutorials/learning-resources/software-config' },
             { text: 'Jetson Orin PyTorch 相容性', link: '/zh-hant/tutorials/learning-resources/jetson-orin-pytorch-compatibility' },
           ],
         },
@@ -1357,17 +1339,11 @@ export default defineConfig({
         '/ja/tutorials/': [
           { text: 'クイックスタート', items: [
             { text: 'FAQ', link: '/ja/tutorials/faq' },
-            { text: 'クイックスタート', link: '/ja/tutorials/getting-started' },
-            { text: 'ハードウェア接続', link: '/ja/tutorials/hardware-setup' },
-            { text: 'ソフトウェア設定', link: '/ja/tutorials/software-config' },
             { text: 'ROS 入門', link: '/ja/tutorials/ros-intro' },
             { text: 'Lark Wiki', link: '/ja/tutorials/lark-wiki' },
           ] },
           { text: '学習リソース', items: [
             { text: '学習リソース', link: '/ja/tutorials/learning-resources/' },
-            { text: 'クイックスタート', link: '/ja/tutorials/learning-resources/getting-started' },
-            { text: 'ハードウェア接続', link: '/ja/tutorials/learning-resources/hardware-setup' },
-            { text: 'ソフトウェア設定', link: '/ja/tutorials/learning-resources/software-config' },
             { text: 'Jetson Orin での PyTorch 非互換問題', link: '/ja/tutorials/learning-resources/jetson-orin-pytorch-compatibility' },
           ] },
           { text: 'ロボットアーム', items: [
@@ -1702,17 +1678,11 @@ export default defineConfig({
         '/ko/tutorials/': [
           { text: '빠른 시작', items: [
             { text: 'FAQ', link: '/ko/tutorials/faq' },
-            { text: '빠른 시작', link: '/ko/tutorials/getting-started' },
-            { text: '하드웨어 연결', link: '/ko/tutorials/hardware-setup' },
-            { text: '소프트웨어 설정', link: '/ko/tutorials/software-config' },
             { text: 'ROS 입문', link: '/ko/tutorials/ros-intro' },
             { text: 'Lark Wiki', link: '/ko/tutorials/lark-wiki' },
           ] },
           { text: '학습 리소스', items: [
             { text: '학습 리소스', link: '/ko/tutorials/learning-resources/' },
-            { text: '빠른 시작', link: '/ko/tutorials/learning-resources/getting-started' },
-            { text: '하드웨어 연결', link: '/ko/tutorials/learning-resources/hardware-setup' },
-            { text: '소프트웨어 설정', link: '/ko/tutorials/learning-resources/software-config' },
             { text: 'Jetson Orin에서 PyTorch 비호환 문제', link: '/ko/tutorials/learning-resources/jetson-orin-pytorch-compatibility' },
           ] },
           { text: '로봇 암', items: [
@@ -2047,17 +2017,11 @@ export default defineConfig({
         '/de/tutorials/': [
           { text: 'Schnellstart', items: [
             { text: 'FAQ', link: '/de/tutorials/faq' },
-            { text: 'Schnellstart', link: '/de/tutorials/getting-started' },
-            { text: 'Hardware-Verbindung', link: '/de/tutorials/hardware-setup' },
-            { text: 'Software-Konfiguration', link: '/de/tutorials/software-config' },
             { text: 'ROS-Einführung', link: '/de/tutorials/ros-intro' },
             { text: 'Lark Wiki', link: '/de/tutorials/lark-wiki' },
           ] },
           { text: 'Lernressourcen', items: [
             { text: 'Lernressourcen', link: '/de/tutorials/learning-resources/' },
-            { text: 'Schnellstart', link: '/de/tutorials/learning-resources/getting-started' },
-            { text: 'Hardware-Verbindung', link: '/de/tutorials/learning-resources/hardware-setup' },
-            { text: 'Software-Konfiguration', link: '/de/tutorials/learning-resources/software-config' },
             { text: 'PyTorch-Inkompatibilitäten auf Jetson Orin', link: '/de/tutorials/learning-resources/jetson-orin-pytorch-compatibility' },
           ] },
           { text: 'Roboterarme', items: [
@@ -2392,17 +2356,11 @@ export default defineConfig({
         '/fr/tutorials/': [
           { text: 'Démarrage rapide', items: [
             { text: 'FAQ', link: '/fr/tutorials/faq' },
-            { text: 'Démarrage rapide', link: '/fr/tutorials/getting-started' },
-            { text: 'Connexion matérielle', link: '/fr/tutorials/hardware-setup' },
-            { text: 'Configuration logicielle', link: '/fr/tutorials/software-config' },
             { text: 'Introduction à ROS', link: '/fr/tutorials/ros-intro' },
             { text: 'Lark Wiki', link: '/fr/tutorials/lark-wiki' },
           ] },
           { text: 'Ressources pédagogiques', items: [
             { text: 'Ressources pédagogiques', link: '/fr/tutorials/learning-resources/' },
-            { text: 'Démarrage rapide', link: '/fr/tutorials/learning-resources/getting-started' },
-            { text: 'Connexion matérielle', link: '/fr/tutorials/learning-resources/hardware-setup' },
-            { text: 'Configuration logicielle', link: '/fr/tutorials/learning-resources/software-config' },
             { text: 'Incompatibilités PyTorch sur Jetson Orin', link: '/fr/tutorials/learning-resources/jetson-orin-pytorch-compatibility' },
           ] },
           { text: 'Bras robotiques', items: [
@@ -2737,17 +2695,11 @@ export default defineConfig({
         '/es/tutorials/': [
           { text: 'Inicio rápido', items: [
             { text: 'FAQ', link: '/es/tutorials/faq' },
-            { text: 'Inicio rápido', link: '/es/tutorials/getting-started' },
-            { text: 'Conexión de hardware', link: '/es/tutorials/hardware-setup' },
-            { text: 'Configuración de software', link: '/es/tutorials/software-config' },
             { text: 'Introducción a ROS', link: '/es/tutorials/ros-intro' },
             { text: 'Lark Wiki', link: '/es/tutorials/lark-wiki' },
           ] },
           { text: 'Recursos didácticos', items: [
             { text: 'Recursos didácticos', link: '/es/tutorials/learning-resources/' },
-            { text: 'Inicio rápido', link: '/es/tutorials/learning-resources/getting-started' },
-            { text: 'Conexión de hardware', link: '/es/tutorials/learning-resources/hardware-setup' },
-            { text: 'Configuración de software', link: '/es/tutorials/learning-resources/software-config' },
             { text: 'Incompatibilidades de PyTorch en Jetson Orin', link: '/es/tutorials/learning-resources/jetson-orin-pytorch-compatibility' },
           ] },
           { text: 'Brazos robóticos', items: [
@@ -3082,17 +3034,11 @@ export default defineConfig({
         '/it/tutorials/': [
           { text: 'Guida rapida', items: [
             { text: 'FAQ', link: '/it/tutorials/faq' },
-            { text: 'Guida rapida', link: '/it/tutorials/getting-started' },
-            { text: 'Collegamento hardware', link: '/it/tutorials/hardware-setup' },
-            { text: 'Configurazione software', link: '/it/tutorials/software-config' },
             { text: 'Introduzione a ROS', link: '/it/tutorials/ros-intro' },
             { text: 'Lark Wiki', link: '/it/tutorials/lark-wiki' },
           ] },
           { text: 'Risorse didattiche', items: [
             { text: 'Risorse didattiche', link: '/it/tutorials/learning-resources/' },
-            { text: 'Guida rapida', link: '/it/tutorials/learning-resources/getting-started' },
-            { text: 'Collegamento hardware', link: '/it/tutorials/learning-resources/hardware-setup' },
-            { text: 'Configurazione software', link: '/it/tutorials/learning-resources/software-config' },
             { text: 'Incompatibilità PyTorch su Jetson Orin', link: '/it/tutorials/learning-resources/jetson-orin-pytorch-compatibility' },
           ] },
           { text: 'Bracci robotici', items: [
@@ -3430,9 +3376,6 @@ export default defineConfig({
             items: [
               { text: 'FAQ', link: '/pt-br/tutorials/faq' },
               { text: 'Introdução ao ROS', link: '/pt-br/tutorials/ros-intro' },
-              { text: 'Guia Rápido', link: '/pt-br/tutorials/getting-started' },
-              { text: 'Configuração de Hardware', link: '/pt-br/tutorials/hardware-setup' },
-              { text: 'Configuração de Software', link: '/pt-br/tutorials/software-config' },
               { text: 'Docs Lark', link: '/pt-br/tutorials/lark-wiki' },
             ],
           },
@@ -3440,9 +3383,6 @@ export default defineConfig({
             text: 'Recursos de Aprendizado',
             items: [
               { text: 'Recursos de Aprendizado', link: '/pt-br/tutorials/learning-resources/' },
-              { text: 'Guia Rápido', link: '/pt-br/tutorials/learning-resources/getting-started' },
-              { text: 'Configuração de Hardware', link: '/pt-br/tutorials/learning-resources/hardware-setup' },
-              { text: 'Configuração de Software', link: '/pt-br/tutorials/learning-resources/software-config' },
               { text: 'Compatibilidade PyTorch no Jetson Orin', link: '/pt-br/tutorials/learning-resources/jetson-orin-pytorch-compatibility' },
             ],
           },
@@ -3798,9 +3738,6 @@ export default defineConfig({
             items: [
               { text: 'FAQ', link: '/pt-pt/tutorials/faq' },
               { text: 'Introdução ao ROS', link: '/pt-pt/tutorials/ros-intro' },
-              { text: 'Guia Rápido', link: '/pt-pt/tutorials/getting-started' },
-              { text: 'Configuração de Hardware', link: '/pt-pt/tutorials/hardware-setup' },
-              { text: 'Configuração de Software', link: '/pt-pt/tutorials/software-config' },
               { text: 'Docs Lark', link: '/pt-pt/tutorials/lark-wiki' },
             ],
           },
@@ -3808,9 +3745,6 @@ export default defineConfig({
             text: 'Recursos de Aprendizado',
             items: [
               { text: 'Recursos de Aprendizado', link: '/pt-pt/tutorials/learning-resources/' },
-              { text: 'Guia Rápido', link: '/pt-pt/tutorials/learning-resources/getting-started' },
-              { text: 'Configuração de Hardware', link: '/pt-pt/tutorials/learning-resources/hardware-setup' },
-              { text: 'Configuração de Software', link: '/pt-pt/tutorials/learning-resources/software-config' },
               { text: 'Compatibilidade PyTorch no Jetson Orin', link: '/pt-pt/tutorials/learning-resources/jetson-orin-pytorch-compatibility' },
             ],
           },
