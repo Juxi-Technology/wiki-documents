@@ -7,6 +7,8 @@ keywords: [xlerobot, 양팔 로봇, 이동 로봇, 구현 지능, lerobot, so-ar
 
 # XLeRobot 양팔 이동 로봇
 
+> **[타오바오에서 구매](https://item.taobao.com/item.htm?id=1045195950187)**
+
 ## 제품 개요
 
 XLeRobot은 양팔 이동 로봇 플랫폼입니다: 전방향 바퀴(만능 바퀴) 섀시 카를 이동 베이스로, 카메라 타워에 SO-ARM101 팔로워 암 2개를 탑재하고, 듀얼 서보 드라이버 보드, Raspberry Pi/Jetson 호스트 컨트롤러와 PD 보조 배터리를 결합하여 이동하며 조작할 수 있는 오픈소스 로봇을 구성합니다. 구현 지능 연구, 가사 작업과 LeRobot 생태계 개발을 겨냥합니다.

@@ -7,6 +7,8 @@ keywords: [xlerobot, 双臂机器人, 移动机器人, 具身智能, lerobot, so
 
 # XLeRobot 双臂移动机器人
 
+> **[淘宝购买](https://item.taobao.com/item.htm?id=1045195950187)**
+
 ## 产品概述
 
 XLeRobot 是一款双臂移动机器人平台:以全向轮(万向轮)底盘车为移动底座,通过相机塔承载两个 SO-ARM101 从动机械臂,配合双舵机驱动板、树莓派/Jetson 主控与 PD 移动电源,构成可以移动操作的开源机器人,面向具身智能研究、家务操作与 LeRobot 生态开发。

@@ -7,6 +7,8 @@ keywords: [câmara usb, foco automático, 1080p, uvc, sem driver, visão robóti
 
 # Câmara USB com foco automático
 
+> **[Comprar no Taobao](https://item.taobao.com/item.htm?id=912105917442)**
+
 ## Visão Geral
 
 A câmara USB com foco automático é um módulo de câmara HD plug-and-play, adequado para visão robótica, inferência de IA e aplicações de visão computacional. Suporta **campo de visão grande angular de 86°**, foco automático e saída de vídeo **1080P a 30 FPS**, com protocolo padrão UVC e sem necessidade de instalar drivers.

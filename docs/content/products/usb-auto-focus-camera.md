@@ -7,6 +7,8 @@ keywords: [usb camera, auto-focus, 1080p, uvc, driver-free, robot vision, jetson
 
 # USB Auto-Focus Camera
 
+> **[Buy on Taobao](https://item.taobao.com/item.htm?id=912105917442)**
+
 ## Overview
 
 A plug-and-play HD camera module designed for robot vision, AI inference and computer vision applications. It offers an **86° wide-angle** field of view, auto-focus and **1080P 30FPS** video output over the UVC standard protocol, with no driver installation required.

@@ -7,6 +7,8 @@ keywords: [ia vocale, module d'interaction vocale, ci1302, reconnaissance vocale
 
 # Module d'interaction vocale IA
 
+> **[Acheter sur Taobao](https://item.taobao.com/item.htm?id=1055967142978)**
+
 ## Présentation
 
 Le module d'interaction vocale IA repose sur la puce vocale intelligente à réseau de neurones haute performance **CI1302** de Chipintelli, intégrant le processeur cérébral à réseau de neurones BNPU V3, et prend en charge la reconnaissance vocale hors ligne en champ lointain ; un **coprocesseur STC8H** embarqué convertit automatiquement les résultats de la reconnaissance vocale en données de port série ou IIC, ce qui simplifie la communication avec les dispositifs contrôleurs hôtes externes. Toute la reconnaissance s'effectue localement sur le module, sans connexion réseau.

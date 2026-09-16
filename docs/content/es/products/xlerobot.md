@@ -7,6 +7,8 @@ keywords: [xlerobot, robot de dos brazos, robot móvil, inteligencia corporizada
 
 # Robot móvil de dos brazos XLeRobot
 
+> **[Comprar en Taobao](https://item.taobao.com/item.htm?id=1045195950187)**
+
 ## Descripción general
 
 XLeRobot es una plataforma de robot móvil de dos brazos: un chasis rodante de ruedas omnidireccionales (ruedas locas) sirve como base móvil y, a través de una torre de cámara, sostiene dos brazos robóticos seguidores SO-ARM101; junto con dos placas controladoras de servomotor, un host Raspberry Pi/Jetson y una fuente de alimentación portátil PD, forma un robot open source capaz de manipular en movimiento, orientado a la investigación en inteligencia corporizada, las tareas domésticas y el desarrollo del ecosistema LeRobot.

@@ -7,6 +7,8 @@ keywords: [xlerobot, robô de dois braços, robô móvel, ia incorporada, lerobo
 
 # Robô móvel de dois braços XLeRobot
 
+> **[Comprar no Taobao](https://item.taobao.com/item.htm?id=1045195950187)**
+
 ## Visão Geral
 
 O XLeRobot é uma plataforma de robô móvel de dois braços: um carrinho com rodas omnidirecionais (universais) serve de base móvel e transporta, através da torre da câmara, dois braços seguidores SO-ARM101; em conjunto com duas placas de controlo dos servos, um host Raspberry Pi/Jetson e uma fonte de alimentação portátil PD, forma um robô open source de manipulação móvel, destinado à investigação em IA incorporada, a tarefas domésticas e ao desenvolvimento no ecossistema LeRobot.

@@ -7,6 +7,8 @@ keywords: [voz por ia, módulo de interação por voz, ci1302, reconhecimento de
 
 # Módulo de interação por voz IA
 
+> **[Comprar no Taobao](https://item.taobao.com/item.htm?id=1055967142978)**
+
 ## Visão Geral
 
 O módulo de interação por voz IA é baseado no chip de voz inteligente com rede neural de alto desempenho **CI1302** da Chipintelli, que integra o processador de rede neural cerebral BNPU V3 e oferece suporte a reconhecimento de fala offline de campo distante; o **coprocessador STC8H** integrado na placa converte automaticamente os resultados do reconhecimento de fala em dados de porta serial ou IIC, simplificando a comunicação com dispositivos controladores externos. Todo o reconhecimento é concluído localmente no módulo, sem necessidade de conexão à internet.

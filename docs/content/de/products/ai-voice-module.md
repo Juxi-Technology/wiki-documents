@@ -7,6 +7,8 @@ keywords: [ai sprache, sprachinteraktionsmodul, ci1302, offline-spracherkennung,
 
 # AI-Sprachinteraktionsmodul
 
+> **[Auf Taobao kaufen](https://item.taobao.com/item.htm?id=1055967142978)**
+
 ## Produktübersicht
 
 Das AI-Sprachinteraktionsmodul basiert auf dem Hochleistungs-Sprachchip **CI1302** von Chipintelli mit neuronalem Netzwerk und integriertem BNPU V3 Gehirn-Neuronalnetz-Prozessor; es unterstützt Offline-Fernfeld-Spracherkennung. Ein onboard **STC8H-Coprozessor** wandelt die Spracherkennungsergebnisse automatisch in Daten der seriellen Schnittstelle oder von IIC um und vereinfacht so die Kommunikation mit externen Hauptsteuergeräten. Die gesamte Erkennung erfolgt lokal im Modul, ohne Netzwerkverbindung.

@@ -7,6 +7,8 @@ keywords: [fotocamera usb, autofocus, 1080p, uvc, senza driver, visione robotica
 
 # Fotocamera USB con autofocus
 
+> **[Acquista su Taobao](https://item.taobao.com/item.htm?id=912105917442)**
+
 ## Panoramica
 
 La fotocamera USB con autofocus è un modulo fotocamera HD plug-and-play per visione robotica, inferenza IA e applicazioni di computer vision. Offre un **campo visivo grandangolare di 86°**, autofocus e uscita video **1080P 30FPS**, con protocollo standard UVC e senza installazione di driver.

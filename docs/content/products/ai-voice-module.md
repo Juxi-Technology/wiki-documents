@@ -7,6 +7,8 @@ keywords: [ai voice, voice interaction module, ci1302, offline speech recognitio
 
 # AI Voice Interaction Module
 
+> **[Buy on Taobao](https://item.taobao.com/item.htm?id=1055967142978)**
+
 ## Overview
 
 The AI Voice Interaction Module is built around QINYITECHNOLOGY's **CI1302** high-performance neural-network voice chip with the BNPU V3 neural processor, delivering offline far-field speech recognition. An on-board **STC8H coprocessor** converts recognition results into serial or IIC data, which keeps host-controller integration simple. All recognition runs locally on the module — no network connection is required.

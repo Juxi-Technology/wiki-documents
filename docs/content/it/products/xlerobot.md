@@ -7,6 +7,8 @@ keywords: [xlerobot, robot a due bracci, robot mobile, ia incarnata, lerobot, so
 
 # Robot mobile a due bracci XLeRobot
 
+> **[Acquista su Taobao](https://item.taobao.com/item.htm?id=1045195950187)**
+
 ## Panoramica
 
 XLeRobot è una piattaforma robotica mobile a due bracci: un carrello con base a ruote omnidirezionali (ruote orientabili) funge da base mobile e, tramite la torre della telecamera, porta due bracci robotici follower SO-ARM101; con le due schede di driver del servo, il controller host Raspberry Pi/Jetson e il power bank PD, il risultato è un robot open source in grado di manipolare spostandosi, pensato per la ricerca sull'IA incarnata, le faccende domestiche e lo sviluppo nell'ecosistema LeRobot.

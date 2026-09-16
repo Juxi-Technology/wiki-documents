@@ -7,6 +7,8 @@ keywords: [cámara usb, enfoque automático, 1080p, uvc, sin controlador, visió
 
 # Cámara USB con enfoque automático
 
+> **[Comprar en Taobao](https://item.taobao.com/item.htm?id=912105917442)**
+
 ## Descripción general
 
 La cámara USB con enfoque automático es un módulo de cámara HD plug-and-play adecuado para visión robótica, inferencia de IA y aplicaciones de visión por computadora. Admite un campo de visión **gran angular de 86°**, enfoque automático y salida de video **1080P 30FPS** mediante el protocolo estándar UVC, sin necesidad de instalar controladores.

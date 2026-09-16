@@ -7,6 +7,8 @@ keywords: [usb-kamera, autofokus, 1080p, uvc, treiberfrei, roboter-vision, jetso
 
 # USB-Kamera mit Autofokus
 
+> **[Auf Taobao kaufen](https://item.taobao.com/item.htm?id=912105917442)**
+
 ## Produktübersicht
 
 Die USB-Kamera mit Autofokus ist ein Plug-and-Play-HD-Kameramodul für Roboter-Vision, KI-Inferenz und Computer-Vision-Anwendungen. Unterstützt **86°-Weitwinkel-Sichtfeld**, Autofokus und **1080P-30FPS**-Videoausgabe über das UVC-Standardprotokoll — keine Treiberinstallation erforderlich.

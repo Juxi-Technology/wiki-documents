@@ -7,6 +7,8 @@ keywords: [xlerobot, dual-arm robot, mobile robot, embodied ai, lerobot, so-arm1
 
 # XLeRobot Dual-Arm Mobile Robot
 
+> **[Buy on Taobao](https://item.taobao.com/item.htm?id=1045195950187)**
+
 ## Overview
 
 XLeRobot is a dual-arm mobile robot platform: an omni-wheel (mecanum-style caster) base cart carries a camera tower with two SO-ARM101 follower arms, driven by two servo driver boards and powered from a PD power bank, with a Raspberry Pi / Jetson as the host. The result is an open-source mobile manipulator aimed at embodied-AI research, household tasks and LeRobot ecosystem development.

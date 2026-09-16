@@ -7,6 +7,8 @@ keywords: [xlerobot, robot à deux bras, robot mobile, intelligence incarnée, l
 
 # Robot mobile à deux bras XLeRobot
 
+> **[Acheter sur Taobao](https://item.taobao.com/item.htm?id=1045195950187)**
+
 ## Présentation
 
 XLeRobot est une plateforme de robot mobile à deux bras : un châssis mobile à roues omnidirectionnelles (roues folles) lui sert de base mobile et porte, via une tour de caméra, deux bras suiveurs SO-ARM101 ; avec deux cartes de commande des servos, un contrôleur hôte Raspberry Pi / Jetson et une batterie externe PD, le tout constitue un robot open source capable de se déplacer et de manipuler, destiné à la recherche en intelligence incarnée, aux tâches ménagères et au développement dans l'écosystème LeRobot.

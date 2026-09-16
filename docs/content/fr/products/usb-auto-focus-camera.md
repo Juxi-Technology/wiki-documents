@@ -7,6 +7,8 @@ keywords: [caméra usb, autofocus, 1080p, uvc, sans pilote, vision robotique, je
 
 # Caméra USB à autofocus
 
+> **[Acheter sur Taobao](https://item.taobao.com/item.htm?id=912105917442)**
+
 ## Présentation
 
 La caméra USB à autofocus est un module caméra haute définition plug-and-play, adapté à la vision robotique, à l'inférence IA et aux applications de vision par ordinateur. Elle prend en charge un **champ de vision grand angle de 86°**, l'autofocus et une sortie vidéo **1080P 30 FPS** via le protocole standard UVC, sans installation de pilote.

@@ -7,6 +7,8 @@ keywords: [xlerobot, zweiarm-roboter, mobileroboter, embodied intelligence, lero
 
 # XLeRobot Zweiarm-Mobilroboter
 
+> **[Auf Taobao kaufen](https://item.taobao.com/item.htm?id=1045195950187)**
+
 ## Produktübersicht
 
 XLeRobot ist eine Zweiarm-Mobilroboter-Plattform: Ein Omnidirektionalrad-Fahrgestell (Lenkrollen) dient als mobile Basis; ein Kamera-Turm trägt zwei SO-ARM101-Follower-Arme. Zusammen mit zwei Servo-Treiberplatinen, einem Raspberry Pi/Jetson als Host und einer PD-Powerbank entsteht ein mobiler Open-Source-Roboter für Embodied-Intelligence-Forschung, Haushaltsaufgaben und LeRobot-Ökosystem-Entwicklung.

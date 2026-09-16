@@ -7,6 +7,8 @@ keywords: [ia vocale, modulo di interazione vocale, ci1302, riconoscimento vocal
 
 # Modulo di interazione vocale IA
 
+> **[Acquista su Taobao](https://item.taobao.com/item.htm?id=1055967142978)**
+
 ## Panoramica
 
 Il modulo di interazione vocale IA si basa sul chip vocale intelligente ad alte prestazioni con rete neurale **CI1302** di Chipintelli, che integra il processore di rete neurale cerebrale BNPU V3 e supporta il riconoscimento vocale far-field offline; il **coprocessore STC8H** a bordo converte automaticamente i risultati del riconoscimento in dati della porta seriale o IIC, semplificando la comunicazione con i dispositivi controller host esterni. L'intero riconoscimento avviene localmente sul modulo, senza necessità di connessione a Internet.
