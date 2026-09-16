@@ -1,6 +1,6 @@
 ---
 title: "Chapter 7: QR Code Scanning"
-description: "ESP32-NanoCam tutorial Chapter 7: use esp-code-scanner to decode QR codes/barcodes in real time, with the decoded result output simultaneously to the serial log and the web image."
+description: "ESP32-NanoCam tutorial Chapter 7: use esp-code-scanner to decode QR codes/barcodes in real time."
 ---
 
 # Chapter 7: QR Code Scanning

@@ -1,6 +1,6 @@
 ---
 title: "Capítulo 2: Início rápido"
-description: "Capítulo 2 do tutorial do ESP32-NanoCam: grave o firmware e conclua a configuração de rede WiFi (porta serial ou ponto de acesso AP), veja o primeiro quadro MJPEG ao vivo no navegador e conheça os endpoints HTTP."
+description: "Capítulo 2 do tutorial do ESP32-NanoCam: grave o firmware e conclua a configuração de rede WiFi (porta serial ou ponto de acesso AP)."
 ---
 
 # Capítulo 2: Início rápido

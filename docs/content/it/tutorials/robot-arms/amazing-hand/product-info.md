@@ -1,6 +1,6 @@
 ---
 title: "Scheda prodotto AmazingHand"
-description: "AmazingHand è una mano abile ad alta precisione, leggera e con tracciamento dei gesti, progettata per la rice…"
+description: "AmazingHand è una mano abile ad alta precisione, leggera e con tracciamento dei gesti, progettata per la ricerca sull'intelligenza incarnata."
 ---
 
 # Scheda prodotto AmazingHand

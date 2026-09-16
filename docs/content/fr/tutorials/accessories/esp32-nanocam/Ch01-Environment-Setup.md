@@ -1,6 +1,6 @@
 ---
 title: "Chapitre 1 : Configuration de l'environnement"
-description: "Tutoriel ESP32-NanoCam chapitre 1 : installer le pilote série CH340K, maîtriser les quatre méthodes de flashage — web esptool-js, ligne de commande esptool, ESP-IDF et ESP-EIM-GUI — et créer un compte sur le serveur xiaozhi.me."
+description: "Tutoriel ESP32-NanoCam chapitre 1 : installer le pilote série CH340K, maîtriser les quatre méthodes de flashage — web esptool-js, ligne de commande esptool."
 ---
 
 # Chapitre 1 : Configuration de l'environnement

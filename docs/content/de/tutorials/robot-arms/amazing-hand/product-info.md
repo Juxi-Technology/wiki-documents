@@ -1,6 +1,6 @@
 ---
 title: "AmazingHand Fingerhand Produktinformationen"
-description: "AmazingHand ist eine hochpräzise, leichte Fingerhand mit Gesten-Tracking, die für Forschung an verkörperter I…"
+description: "AmazingHand ist eine hochpräzise, leichte Fingerhand mit Gesten-Tracking, die für Forschung an verkörperter Intelligenz."
 ---
 
 # AmazingHand Fingerhand Produktinformationen

@@ -1,6 +1,6 @@
 ---
 title: Tutoriel d'utilisation de l'outil de débogage du servo SCS0009
-description: "Outil de débogage FTServo conçu pour le servo Feetech SCS0009 (retour par potentiomètre, résolution 10 bits 0–1023) : connexion série, scan des servos, lecture/écriture des paramètres des 44 registres, contrôle de position et sauvegarde/restauration des paramètres xdat."
+description: "Outil de débogage FTServo conçu pour le servo Feetech SCS0009 (retour par potentiomètre, résolution 10 bits 0–1023) : connexion série, scan des servos."
 ---
 
 # Tutoriel d'utilisation de l'outil de débogage du servo SCS0009

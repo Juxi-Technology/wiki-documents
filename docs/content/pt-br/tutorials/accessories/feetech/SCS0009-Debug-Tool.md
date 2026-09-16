@@ -1,6 +1,6 @@
 ---
 title: Tutorial de uso da ferramenta de depuração do servo SCS0009
-description: "Ferramenta de depuração FTServo projetada para o servo Feetech SCS0009 (feedback por potenciômetro, resolução de 10 bits 0–1023), com conexão serial, varredura de servos, leitura/gravação de parâmetros de 44 registradores, controle de posição e backup/restauração de parâmetros xdat."
+description: "Ferramenta de depuração FTServo projetada para o servo Feetech SCS0009 (feedback por potenciômetro, resolução de 10 bits 0–1023), com conexão serial."
 ---
 
 # Tutorial de uso da ferramenta de depuração do servo SCS0009

@@ -1,6 +1,6 @@
 ---
 title: Tutorial d'uso del tool di calibrazione servo della serie SoARM
-description: "Tool di calibrazione di fabbrica e di calibrazione LeRobot per servo FTServo dei bracci robotici della serie SoARM 10X; supporta la calibrazione mediana, il controllo del singolo servo, la lettura/scrittura dei parametri con l'FT debugger e il backup/ripristino dei parametri xdat."
+description: "Tool di calibrazione di fabbrica e di calibrazione LeRobot per servo FTServo dei bracci robotici della serie SoARM 10X; supporta la calibrazione mediana."
 ---
 
 # Tutorial d'uso del tool di calibrazione servo della serie SoARM

@@ -1,6 +1,6 @@
 ---
 title: "Transferência de ficheiros via SSH"
-description: "Descarregue e descompacte, clique duas vezes para abrir o programa e iniciar a instalação, clique em Accept p…"
+description: "Transferência de ficheiros via SSH para o módulo IMU: instale o software de acesso remoto, ligue-se à placa por SSH e transfira ficheiros."
 ---
 
 # Transferência de ficheiros via SSH

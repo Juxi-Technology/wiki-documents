@@ -1,6 +1,6 @@
 ---
 title: "Tabela de Memória do Servo SCSCL com Potenciômetro"
-description: "O servo utiliza o Protocolo de Comunicação Personalizado FT-SCS. A taxa de transmissão padrão do servo é 1M ou 500k, a usar comunicação de barramento único TTL, com 8"
+description: "O servo utiliza o Protocolo de Comunicação Personalizado FT-SCS. A taxa de transmissão padrão do servo é 1M ou 500k."
 ---
 
 # Tabela de Memória do Servo SCSCL com Potenciômetro

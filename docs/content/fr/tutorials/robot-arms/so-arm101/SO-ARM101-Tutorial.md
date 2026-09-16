@@ -1,6 +1,6 @@
 ---
 title: Tutoriel bras robotique LeRobot
-description: "Ce tutoriel est à jour au 15 décembre. Vous pouvez suivre la documentation officielle la plus récente. Voir liens. SO-ARM101 et SO-ARM100 sont compatibles au niveau du code exécuté."
+description: "Ce tutoriel est à jour au 15 décembre. Vous pouvez suivre la documentation officielle la plus récente. Voir liens."
 ---
 
 # Tutoriel bras robotique LeRobot

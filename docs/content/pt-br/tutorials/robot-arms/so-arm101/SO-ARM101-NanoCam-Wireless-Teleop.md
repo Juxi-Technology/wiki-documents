@@ -1,6 +1,6 @@
 ---
 title: Teleoperação sem fio do SO-ARM101 (versão ESP32-NanoCam)
-description: "Solução de teleoperação sem fio para demonstrações em competições: o braço líder se conecta ao computador Ubuntu via LeRobot e o braço seguidor é controlado pelo módulo ESP32-NanoCam através de micro-ROS WiFi, cobrindo o fluxo completo de ligação, alimentação, gravação, calibração e câmera FPV."
+description: "Solução de teleoperação sem fio para demonstrações em competições: o braço líder se conecta ao computador Ubuntu via LeRobot e o braço seguidor é controlado."
 ---
 
 # Teleoperação sem fio do SO-ARM101 (versão ESP32-NanoCam)

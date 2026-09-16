@@ -1,6 +1,6 @@
 ---
 title: "Capítulo 1: Configuração do ambiente"
-description: "Capítulo 1 do tutorial do ESP32-NanoCam: instale o driver de porta serial CH340K, domine as quatro formas de preparar o ambiente de gravação (esptool-js web, linha de comando esptool, ESP-IDF e ESP-EIM-GUI) e conclua o registro da conta no servidor xiaozhi.me."
+description: "Capítulo 1 do tutorial do ESP32-NanoCam: instale o driver de porta serial CH340K, domine as quatro formas de preparar o ambiente de gravação (esptool-js web."
 ---
 
 # Capítulo 1: Configuração do ambiente

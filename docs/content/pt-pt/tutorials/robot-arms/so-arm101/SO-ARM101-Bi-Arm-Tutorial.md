@@ -1,6 +1,6 @@
 ---
 title: Tutorial do braço duplo SO-ARM101 (dois braços seguidores)
-description: "Apresenta o fluxo completo do sistema de braço duplo SO-ARM101 (dois braços seguidores): cablagem e calibração de hardware, teleoperação do braço duplo, recolha e gestão de datasets, treino de políticas ACT e implantação no robô real."
+description: "Apresenta o fluxo completo do sistema de braço duplo SO-ARM101 (dois braços seguidores): cablagem e calibração de hardware, teleoperação do braço duplo."
 ---
 
 # Tutorial do braço duplo SO-ARM101 (dois braços seguidores)

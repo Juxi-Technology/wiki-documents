@@ -1,6 +1,6 @@
 ---
 title: Manual del protocolo serie del ESP32-NanoCam
-description: "Manual del protocolo serie AT del ESP32-NanoCam: referencia completa de comandos para configuración WiFi, cambio de modo de IA, consulta de información, control del sistema y reconocimiento facial."
+description: "Manual del protocolo serie AT del ESP32-NanoCam: referencia completa de comandos para configuración WiFi, cambio de modo de IA, consulta de información."
 ---
 
 # Manual del protocolo serie del ESP32-NanoCam

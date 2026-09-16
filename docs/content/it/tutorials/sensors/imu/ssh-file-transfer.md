@@ -1,6 +1,6 @@
 ---
 title: "Trasferimento di file tramite SSH"
-description: "Scaricare e decomprimere, fare doppio clic per aprire il programma e iniziare l'installazione, fare clic su A…"
+description: "Trasferimento file SSH per il modulo IMU: installa il software di accesso remoto, collega la scheda via SSH e trasferisci file tra PC e dispositivo."
 ---
 
 # Trasferimento di file tramite SSH

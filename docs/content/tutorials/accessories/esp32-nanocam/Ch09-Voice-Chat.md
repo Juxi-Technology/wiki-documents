@@ -1,6 +1,6 @@
 ---
 title: "Chapter 9: Voice Chat"
-description: "ESP32-NanoCam tutorial Chapter 9: connect to the xiaozhi.me cloud service through the XiaoZhi AI framework and experience full-duplex ASR→LLM→TTS voice chat, including self-hosted servers and troubleshooting."
+description: "ESP32-NanoCam tutorial Chapter 9: connect to the xiaozhi.me cloud service through the XiaoZhi AI framework and experience full-duplex ASR→LLM→TTS voice chat."
 ---
 
 # Chapter 9: Voice Chat

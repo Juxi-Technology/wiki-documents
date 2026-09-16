@@ -1,6 +1,6 @@
 ---
 title: ESP32-NanoCam Avvio rapido
-description: "Avvio rapido del modulo di trasmissione video/visione AI ESP32-NanoCam: flashing del firmware, configurazione WiFi, visualizzazione del flusso in tempo reale, cambio della modalità AI e integrazione nei progetti Arduino / Python, in cinque passaggi."
+description: "Avvio rapido del modulo di trasmissione video/visione AI ESP32-NanoCam: flashing del firmware, configurazione WiFi, visualizzazione del flusso in tempo reale."
 ---
 
 # ESP32-NanoCam Avvio rapido

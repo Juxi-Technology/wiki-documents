@@ -1,6 +1,6 @@
 ---
 title: "Chapitre 7 : Scan de QR codes"
-description: "Tutoriel ESP32-NanoCam chapitre 7 : décoder en temps réel les codes-barres / QR codes avec la bibliothèque esp-code-scanner ; résultats affichés simultanément sur le port série et à l'écran web."
+description: "Tutoriel ESP32-NanoCam chapitre 7 : décoder en temps réel les codes-barres / QR codes avec la bibliothèque esp-code-scanner ."
 ---
 
 # Chapitre 7 : Scan de QR codes

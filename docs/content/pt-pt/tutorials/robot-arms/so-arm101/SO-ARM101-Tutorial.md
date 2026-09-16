@@ -1,6 +1,6 @@
 ---
 title: "Tutorial do Braço Robótico LeRobot"
-description: "Este tutorial foi atualizado até 15 de dezembro. Você pode optar por seguir a versão mais recente da documentação oficial. Para o tutorial específico na documentação oficial, consulte o link correspondente. Se precisar de ficheiros como URDF, consulte o link correspondente"
+description: "Este tutorial foi atualizado até 15 de dezembro. Você pode optar por seguir a versão mais recente da documentação oficial."
 ---
 
 # Tutorial do Braço Robótico LeRobot

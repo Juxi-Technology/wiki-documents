@@ -1,6 +1,6 @@
 ---
 title: "Wireless Teleoperation Troubleshooting"
-description: "A roundup of common failures in the SO-ARM101 wireless teleoperation (ESP32-NanoCam version): symptoms, causes, and solutions for flashing and serial, camera, audio, and network and micro-ROS problems."
+description: "A roundup of common failures in the SO-ARM101 wireless teleoperation (ESP32-NanoCam version): symptoms, causes, and solutions for flashing and serial, camera."
 ---
 
 # Wireless Teleoperation Troubleshooting

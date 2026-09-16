@@ -1,6 +1,6 @@
 ---
 title: "Placa de Som USB sem Driver"
-description: "Tutorial da placa de som USB sem driver da Juxi Technology — software de teste visual, operações de linha de comando e depuração de áudio para Raspberry Pi, Jetson e PC."
+description: "Tutorial da placa de som USB sem driver da Juxi Technology — software de teste visual, operações de linha de comando e depuração de áudio para Raspberry Pi."
 ---
 
 # Placa de Som USB sem Driver

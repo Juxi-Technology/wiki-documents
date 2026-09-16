@@ -1,6 +1,6 @@
 ---
 title: "Table mémoire du servo STS à encodeur magnétique"
-description: "Le servo utilise le protocole personnalisé FT-SCS. Configuration série par défaut en usine : servo STS à 1 Mbit/s, communication TTL mono-bus, 8 bits de données, sans parité, 1 bit d'arrêt ; débit configurable 38400 à 1 Mbit/s, adresse de communication par défaut (n° de station) 1."
+description: "Le servo utilise le protocole personnalisé FT-SCS. Configuration série par défaut en usine : servo STS à 1 Mbit/s, communication TTL mono-bus."
 ---
 
 # Table mémoire du servo STS à encodeur magnétique

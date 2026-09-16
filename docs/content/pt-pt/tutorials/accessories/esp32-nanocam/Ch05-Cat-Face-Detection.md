@@ -1,6 +1,6 @@
 ---
 title: "Capítulo 5: Deteção de caras de gato"
-description: "Tutorial ESP32-NanoCam, Capítulo 5: usar o modelo CatFaceDetectMN03 para detetar caras de gato, comparar as diferenças em relação ao modelo de deteção de rostos e ler as coordenadas para um servo de seguimento."
+description: "Tutorial ESP32-NanoCam, Capítulo 5: usar o modelo CatFaceDetectMN03 para detetar caras de gato."
 ---
 
 # Capítulo 5: Deteção de caras de gato

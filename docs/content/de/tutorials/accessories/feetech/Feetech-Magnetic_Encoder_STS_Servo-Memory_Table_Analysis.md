@@ -1,6 +1,6 @@
 ---
 title: "Magnetencoder-STS-Servo – Speichertabelle"
-description: "Der Servo verwendet das FT-SCS-Eigenprotokoll. Serielle Standardkonfiguration ab Werk: STS-Servo Standard-Baudrate 1M, TTL-Einzelbus-Kommunikation, 8 Datenbits, keine Parität, 1 Stoppbit; Baudrate konfigurierbar 38400–1 Mbit/s, Standard-Adresse (Stationsnummer) 1."
+description: "Der Servo verwendet das FT-SCS-Eigenprotokoll. Serielle Standardkonfiguration ab Werk: STS-Servo Standard-Baudrate 1M, TTL-Einzelbus-Kommunikation."
 ---
 
 # Magnetencoder-STS-Servo – Speichertabelle

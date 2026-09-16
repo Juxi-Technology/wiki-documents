@@ -1,6 +1,6 @@
 ---
 title: "Chapter 6: Color Recognition"
-description: "ESP32-NanoCam tutorial Chapter 6: recognize 7 colors — red, yellow, green, blue, purple, white, and black — in the HSV color space, overlay labels on the image, and read detection box center coordinates through I2C registers."
+description: "ESP32-NanoCam tutorial Chapter 6: recognize 7 colors — red, yellow, green, blue, purple, white, and black — in the HSV color space."
 ---
 
 # Chapter 6: Color Recognition

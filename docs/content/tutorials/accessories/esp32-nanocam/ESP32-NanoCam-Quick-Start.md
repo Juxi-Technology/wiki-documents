@@ -1,6 +1,6 @@
 ---
 title: ESP32-NanoCam Quick Start
-description: "ESP32-NanoCam video streaming / AI vision module quick start: flash the firmware, configure WiFi, view the live video, switch AI modes and integrate with Arduino / Python projects — in five steps."
+description: "ESP32-NanoCam video streaming / AI vision module quick start: flash the firmware, configure WiFi, view the live video."
 ---
 
 # ESP32-NanoCam Quick Start

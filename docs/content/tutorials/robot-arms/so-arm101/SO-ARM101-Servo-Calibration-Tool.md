@@ -1,6 +1,6 @@
 ---
 title: SoARM Series Servo Calibration Tool Tutorial
-description: "An FTServo servo factory calibration and LeRobot calibration toolkit designed for the SoARM 10X series robotic arms, supporting middle calibration, single-servo control, FT debugger parameter read/write, and xdat parameter backup and restore."
+description: "An FTServo servo factory calibration and LeRobot calibration toolkit designed for the SoARM 10X series robotic arms, supporting middle calibration."
 ---
 
 # SoARM Series Servo Calibration Tool Tutorial

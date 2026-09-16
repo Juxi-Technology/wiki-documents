@@ -1,6 +1,6 @@
 ---
 title: "Kapitel 4: Gesichtsdetektion"
-description: "Kapitel 4 des ESP32-NanoCam-Tutorials: Gesichtsdetektion mit dem ESP-DL-MobileNet-Modell, Markierung von Gesichtsrahmen und 5 Landmarken im Bild sowie Auslesen der Koordinaten mit Arduino/Python zur Servosteuerung."
+description: "Kapitel 4 des ESP32-NanoCam-Tutorials: Gesichtsdetektion mit dem ESP-DL-MobileNet-Modell."
 ---
 
 # Kapitel 4: Gesichtsdetektion

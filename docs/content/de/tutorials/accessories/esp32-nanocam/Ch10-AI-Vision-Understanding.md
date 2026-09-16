@@ -1,6 +1,6 @@
 ---
 title: "Kapitel 10: KI-Bildverständnis"
-description: "Kapitel 10 des ESP32-NanoCam-Tutorials: Im ESP-Claw-Modus ein Foto aufnehmen und eine multimodale Vision-API aufrufen, damit der NanoCam per Sprache beschreibt, was er sieht — inklusive Liste unterstützter Modelle."
+description: "Kapitel 10 des ESP32-NanoCam-Tutorials: Im ESP-Claw-Modus ein Foto aufnehmen und eine multimodale Vision-API aufrufen."
 ---
 
 # Kapitel 10: KI-Bildverständnis

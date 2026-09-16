@@ -1,6 +1,6 @@
 ---
 title: "03-Versão com servomotor PWM-Manual de uso"
-description: "Este firmware é executado na placa de desenvolvimento ESP32-S3 e, por meio de sinais PWM, controla 8 servomot…"
+description: "Este firmware é executado na placa de desenvolvimento ESP32-S3 e, por meio de sinais PWM."
 ---
 
 # 03-Versão com servomotor PWM-Manual de uso

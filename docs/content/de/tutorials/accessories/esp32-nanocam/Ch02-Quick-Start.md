@@ -1,6 +1,6 @@
 ---
 title: "Kapitel 2: Schnellstart"
-description: "Kapitel 2 des ESP32-NanoCam-Tutorials: Firmware flashen und WiFi einrichten (über die serielle Schnittstelle oder den AP-Hotspot), das erste Live-MJPEG-Bild im Browser öffnen und die HTTP-Endpunkte kennenlernen."
+description: "Kapitel 2 des ESP32-NanoCam-Tutorials: Firmware flashen und WiFi einrichten (über die serielle Schnittstelle oder den AP-Hotspot)."
 ---
 
 # Kapitel 2: Schnellstart

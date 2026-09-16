@@ -1,6 +1,6 @@
 ---
 title: "Kapitel 11: ESP-Claw-Sprachsteuerung"
-description: "Kapitel 11 des ESP32-NanoCam-Tutorials: Die 5 Hardware-Steuerungstools im ESP-Claw-Modus — LED per Sprachfarbe steuern, KI-Modus wechseln, Foto-Visionsanalyse und Geräteinformationen abfragen."
+description: "Kapitel 11 des ESP32-NanoCam-Tutorials: Die 5 Hardware-Steuerungstools im ESP-Claw-Modus — LED per Sprachfarbe steuern, KI-Modus wechseln."
 ---
 
 # Kapitel 11: ESP-Claw-Sprachsteuerung

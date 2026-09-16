@@ -1,6 +1,6 @@
 ---
 title: "Chapter 10: AI Vision Understanding"
-description: "ESP32-NanoCam tutorial Chapter 10: take photos in ESP-Claw mode and call a multimodal vision API to let the NanoCam describe what it sees by voice, including the list of supported models."
+description: "ESP32-NanoCam tutorial Chapter 10: take photos in ESP-Claw mode and call a multimodal vision API to let the NanoCam describe what it sees by voice."
 ---
 
 # Chapter 10: AI Vision Understanding

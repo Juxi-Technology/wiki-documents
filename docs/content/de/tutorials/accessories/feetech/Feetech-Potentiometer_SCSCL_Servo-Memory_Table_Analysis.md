@@ -1,6 +1,6 @@
 ---
 title: "Potentiometer-SCSCL-Servo – Speichertabelle"
-description: "Der Servo verwendet das FT-SCS-Eigenprotokoll. Serielle Standardkonfiguration ab Werk: Standard-Baudrate 1M oder 500k, TTL-Einzelbus-Kommunikation, 8 Datenbits, keine Parität, 1 Stoppbit; Baudrate konfigurierbar 38400–1 Mbit/s (500k), Standard-Adresse (Stationsnummer) 1."
+description: "Der Servo verwendet das FT-SCS-Eigenprotokoll. Serielle Standardkonfiguration ab Werk: Standard-Baudrate 1M oder 500k, TTL-Einzelbus-Kommunikation."
 ---
 
 # Potentiometer-SCSCL-Servo – Speichertabelle

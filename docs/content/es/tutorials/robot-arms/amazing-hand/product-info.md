@@ -1,6 +1,6 @@
 ---
 title: "Material de producto de la mano diestra AmazingHand"
-description: "AmazingHand es una mano diestra de alta precisión, ligera y con seguimiento de gestos, diseñada para la inves…"
+description: "AmazingHand es una mano diestra de alta precisión, ligera y con seguimiento de gestos, diseñada para la investigación en inteligencia encarnada."
 ---
 
 # Material de producto de la mano diestra AmazingHand

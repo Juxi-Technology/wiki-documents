@@ -1,6 +1,6 @@
 ---
 title: SO-ARM101 Teleoperazione wireless (versione ESP32-NanoCam)
-description: "Soluzione di teleoperazione wireless per dimostrazioni in gara: il braccio leader si collega a un PC Ubuntu tramite LeRobot, il braccio follower è controllato dal modulo ESP32-NanoCam via micro-ROS WiFi, con il flusso completo di cablaggio, alimentazione, flashing, calibrazione e fotocamera FPV."
+description: "Soluzione di teleoperazione wireless per dimostrazioni in gara: il braccio leader si collega a un PC Ubuntu tramite LeRobot."
 ---
 
 # SO-ARM101 Teleoperazione wireless (versione ESP32-NanoCam)

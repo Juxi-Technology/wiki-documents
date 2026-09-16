@@ -1,6 +1,6 @@
 ---
 title: Tutoriel d'utilisation de l'outil de calibration des servos de la série SoARM
-description: "Outil de calibration d'usine FTServo et de calibration LeRobot destiné aux bras robotiques de la série SoARM 10X : calibration médiane, contrôle individuel des servos, lecture/écriture des paramètres du débogueur FT et sauvegarde/restauration des paramètres xdat."
+description: "Outil de calibration d'usine FTServo et de calibration LeRobot destiné aux bras robotiques de la série SoARM 10X : calibration médiane."
 ---
 
 # Tutoriel d'utilisation de l'outil de calibration des servos de la série SoARM

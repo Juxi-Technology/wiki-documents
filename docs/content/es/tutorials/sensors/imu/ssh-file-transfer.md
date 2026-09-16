@@ -1,6 +1,6 @@
 ---
 title: "Transferencia de archivos por SSH"
-description: "Descárguelo y descomprímalo, haga doble clic para abrir el programa y comenzar la instalación, haga clic en A…"
+description: "Transferencia de archivos por SSH para el módulo IMU: instale el software de acceso remoto, conéctese a la placa por SSH y suba o descargue archivos."
 ---
 
 # Transferencia de archivos por SSH

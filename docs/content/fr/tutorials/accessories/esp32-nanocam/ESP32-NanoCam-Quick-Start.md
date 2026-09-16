@@ -1,6 +1,6 @@
 ---
 title: ESP32-NanoCam Démarrage rapide
-description: "Démarrage rapide de l'ESP32-NanoCam, module de transmission vidéo / vision IA : flasher le firmware, configurer le WiFi, afficher l'image en temps réel, changer de mode IA et intégrer le module à un projet Arduino / Python, en cinq étapes."
+description: "Démarrage rapide de l'ESP32-NanoCam, module de transmission vidéo / vision IA : flasher le firmware, configurer le WiFi, afficher l'image en temps réel."
 ---
 
 # ESP32-NanoCam Démarrage rapide

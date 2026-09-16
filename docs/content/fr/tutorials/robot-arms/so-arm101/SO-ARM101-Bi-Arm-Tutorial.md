@@ -1,6 +1,6 @@
 ---
 title: Tutoriel SO-ARM101 bi-bras (double suiveur)
-description: "Présentation du flux complet du système SO-ARM101 bi-bras (double bras follower) : câblage et calibration du matériel, téléopération bi-bras, enregistrement et gestion du dataset, entraînement de la politique ACT et déploiement sur robot réel."
+description: "Présentation du flux complet du système SO-ARM101 bi-bras (double bras follower) : câblage et calibration du matériel, téléopération bi-bras."
 ---
 
 # Tutoriel SO-ARM101 bi-bras (double suiveur)

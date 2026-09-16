@@ -1,6 +1,6 @@
 ---
 title: "Solución de problemas de teleoperación"
-description: "Recopilación de los fallos más comunes de la teleoperación inalámbrica del SO-ARM101 (versión ESP32-NanoCam): síntomas, causas y soluciones de problemas de grabación y puerto serie, cámara, audio, red y micro-ROS."
+description: "Recopilación de los fallos más comunes de la teleoperación inalámbrica del SO-ARM101 (versión ESP32-NanoCam): síntomas."
 ---
 
 # Solución de problemas de teleoperación

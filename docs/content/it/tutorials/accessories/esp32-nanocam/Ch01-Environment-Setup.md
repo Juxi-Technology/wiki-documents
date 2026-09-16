@@ -1,6 +1,6 @@
 ---
 title: "Capitolo 1: Configurazione dell'ambiente"
-description: "Tutorial ESP32-NanoCam capitolo 1: installare il driver seriale CH340K, padroneggiare il flashing via web con esptool-js, da riga di comando con esptool, l'ambiente di sviluppo ESP-IDF e l'installazione con ESP-EIM-GUI (4 metodi), e completare la registrazione dell'account sul server xiaozhi.me."
+description: "Tutorial ESP32-NanoCam capitolo 1: installare il driver seriale CH340K, padroneggiare il flashing via web con esptool-js, da riga di comando con esptool."
 ---
 
 # Capitolo 1: Configurazione dell'ambiente

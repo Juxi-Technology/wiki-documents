@@ -1,6 +1,6 @@
 ---
 title: ESP32-NanoCam Spécifications matérielles
-description: "Spécifications matérielles de l'ESP32-NanoCam : architecture à deux cartes, broches du MCU et de la Flash, mappage complet de la caméra DVP, sous-système audio ES8311, conception de l'alimentation, tableau complet d'occupation des GPIO et référence de configuration ESP-IDF."
+description: "Spécifications matérielles de l'ESP32-NanoCam : architecture à deux cartes, broches du MCU et de la Flash, mappage complet de la caméra DVP."
 ---
 
 # ESP32-NanoCam Spécifications matérielles

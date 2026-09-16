@@ -1,6 +1,6 @@
 ---
 title: "Capitolo 4: Rilevamento del volto"
-description: "Tutorial ESP32-NanoCam capitolo 4: usare il modello di rilevamento volti ESP-DL MobileNet per annotare nell'immagine il riquadro del volto e i 5 keypoint, e leggere le coordinate con Arduino/Python per controllare un servomotore."
+description: "Tutorial ESP32-NanoCam capitolo 4: usare il modello di rilevamento volti ESP-DL MobileNet per annotare nell'immagine il riquadro del volto e i 5 keypoint."
 ---
 
 # Capitolo 4: Rilevamento del volto

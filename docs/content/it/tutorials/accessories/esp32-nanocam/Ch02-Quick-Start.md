@@ -1,6 +1,6 @@
 ---
 title: "Capitolo 2: Avvio rapido"
-description: "Tutorial ESP32-NanoCam capitolo 2: flashare il firmware e completare la configurazione WiFi (seriale o hotspot AP), aprire nel browser il primo fotogramma MJPEG in tempo reale e conoscere i vari endpoint HTTP."
+description: "Tutorial ESP32-NanoCam capitolo 2: flashare il firmware e completare la configurazione WiFi (seriale o hotspot AP)."
 ---
 
 # Capitolo 2: Avvio rapido

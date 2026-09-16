@@ -1,6 +1,6 @@
 ---
 title: "Chapitre 9 : Dialogue vocal"
-description: "Tutoriel ESP32-NanoCam chapitre 9 : se connecter au service cloud xiaozhi.me via le framework XiaoZhi AI et dialoguer en full-duplex ASR→LLM→TTS, avec serveur auto-hébergé et dépannage."
+description: "Tutoriel ESP32-NanoCam chapitre 9 : se connecter au service cloud xiaozhi.me via le framework XiaoZhi AI et dialoguer en full-duplex ASR→LLM→TTS."
 ---
 
 # Chapitre 9 : Dialogue vocal

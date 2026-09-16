@@ -1,6 +1,6 @@
 ---
 title: "Capítulo 1: Configuración del entorno"
-description: "Capítulo 1 del tutorial de ESP32-NanoCam: instala el controlador de puerto serie CH340K, domina las cuatro formas de preparar el entorno de grabación —grabación web con esptool-js, línea de comandos de esptool, ESP-IDF y ESP-EIM-GUI— y completa el registro de cuenta en el servidor xiaozhi.me."
+description: "Capítulo 1 del tutorial de ESP32-NanoCam: instala el controlador de puerto serie CH340K."
 ---
 
 # Capítulo 1: Configuración del entorno

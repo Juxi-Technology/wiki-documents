@@ -1,6 +1,6 @@
 ---
 title: "Tabla de memoria del servo SCSCL con potenciómetro"
-description: "El servo utiliza el protocolo personalizado FT-SCS. Configuración serie predeterminada de fábrica: velocidad por defecto 1M o 500k, comunicación TTL de bus único, 8 bits de datos, sin paridad, 1 bit de parada; velocidad configurable 38400~1Mbps (500k), dirección de comunicación predeterminada (n.º de estación) 1."
+description: "El servo utiliza el protocolo personalizado FT-SCS. Configuración serie predeterminada de fábrica: velocidad por defecto 1M o 500k."
 ---
 
 # Tabla de memoria del servo SCSCL con potenciómetro

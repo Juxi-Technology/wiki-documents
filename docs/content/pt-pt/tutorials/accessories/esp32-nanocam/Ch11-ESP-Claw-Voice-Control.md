@@ -1,6 +1,6 @@
 ---
 title: "Capítulo 11: Controlo por voz ESP-Claw"
-description: "Tutorial ESP32-NanoCam, Capítulo 11: as 5 ferramentas de controlo de hardware do modo ESP-Claw — ajuste da cor do LED por voz, mudança de modo de IA, fotografia com análise visual e consulta de informações do dispositivo."
+description: "Tutorial ESP32-NanoCam, Capítulo 11: as 5 ferramentas de controlo de hardware do modo ESP-Claw — ajuste da cor do LED por voz, mudança de modo de IA."
 ---
 
 # Capítulo 11: Controlo por voz ESP-Claw

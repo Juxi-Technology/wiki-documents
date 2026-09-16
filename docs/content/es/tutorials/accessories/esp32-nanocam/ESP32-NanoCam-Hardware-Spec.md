@@ -1,6 +1,6 @@
 ---
 title: Especificaciones de hardware del ESP32-NanoCam
-description: "Especificaciones de hardware del ESP32-NanoCam: arquitectura de doble placa, MCU y pines del Flash, mapeo completo de la cámara DVP, subsistema de audio ES8311, diseño de alimentación, tabla completa de uso de GPIO y referencia de configuración de ESP-IDF."
+description: "Especificaciones de hardware del ESP32-NanoCam: arquitectura de doble placa, MCU y pines del Flash, mapeo completo de la cámara DVP."
 ---
 
 # Especificaciones de hardware del ESP32-NanoCam

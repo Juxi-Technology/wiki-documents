@@ -1,6 +1,6 @@
 ---
 title: "03-PWM Servo Version-User Manual"
-description: "This firmware runs on an ESP32-S3 development board, and controls 8-channel servos via PWM signals to drive t…"
+description: "This firmware runs on an ESP32-S3 development board, and controls 8-channel servos via PWM signals to drive the dexterous hand to perform gestures."
 ---
 
 # 03-PWM Servo Version-User Manual

@@ -1,6 +1,6 @@
 ---
 title: Tutorial de doble brazo (doble brazo seguidor) del SO-ARM101
-description: "Presenta el flujo completo del sistema SO-ARM101 de doble brazo (doble brazo seguidor): cableado y calibración del hardware, teleoperación de doble brazo, grabación y gestión de datasets, entrenamiento de la política ACT y despliegue en el robot real."
+description: "Presenta el flujo completo del sistema SO-ARM101 de doble brazo (doble brazo seguidor): cableado y calibración del hardware, teleoperación de doble brazo."
 ---
 
 # Tutorial de doble brazo (doble brazo seguidor) del SO-ARM101

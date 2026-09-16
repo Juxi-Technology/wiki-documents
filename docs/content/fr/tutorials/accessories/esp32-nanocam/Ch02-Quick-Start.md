@@ -1,6 +1,6 @@
 ---
 title: "Chapitre 2 : Démarrage rapide"
-description: "Tutoriel ESP32-NanoCam chapitre 2 : flasher le firmware et configurer le WiFi (port série ou point d'accès AP), afficher la première image MJPEG en temps réel dans le navigateur et découvrir les différents endpoints HTTP."
+description: "Tutoriel ESP32-NanoCam chapitre 2 : flasher le firmware et configurer le WiFi (port série ou point d'accès AP)."
 ---
 
 # Chapitre 2 : Démarrage rapide

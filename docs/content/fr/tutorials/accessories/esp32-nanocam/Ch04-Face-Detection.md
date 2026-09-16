@@ -1,6 +1,6 @@
 ---
 title: "Chapitre 4 : Détection de visage"
-description: "Tutoriel ESP32-NanoCam chapitre 4 : utiliser le modèle de détection de visage ESP-DL MobileNet, tracer le cadre du visage et 5 points clés à l'image, et lire les coordonnées en Arduino/Python pour piloter un servomoteur."
+description: "Tutoriel ESP32-NanoCam chapitre 4 : utiliser le modèle de détection de visage ESP-DL MobileNet, tracer le cadre du visage et 5 points clés à l'image."
 ---
 
 # Chapitre 4 : Détection de visage

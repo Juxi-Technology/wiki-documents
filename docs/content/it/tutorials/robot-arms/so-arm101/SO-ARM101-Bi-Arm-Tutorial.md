@@ -1,6 +1,6 @@
 ---
 title: SO-ARM101 Tutorial bi-braccio (doppio follower)
-description: "Presentazione del flusso completo del sistema SO-ARM101 bi-braccio (doppio follower): cablaggio hardware e calibrazione, teleoperazione bi-braccio, registrazione e gestione del dataset, addestramento della policy ACT e deployment sul robot reale."
+description: "Presentazione del flusso completo del sistema SO-ARM101 bi-braccio (doppio follower): cablaggio hardware e calibrazione, teleoperazione bi-braccio."
 ---
 
 # SO-ARM101 Tutorial bi-braccio (doppio follower)

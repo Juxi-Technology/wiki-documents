@@ -1,6 +1,6 @@
 ---
 title: "Protocollo di comunicazione SCS"
-description: "Il livello di comunicazione usa TTL compatibile con la comunicazione ad alta velocità e RS485 con forte immunità ai disturbi; la comunicazione è asincrona full-duplex, trasmissione e ricezione sono elaborate in modo asincrono."
+description: "Il livello di comunicazione usa TTL compatibile con la comunicazione ad alta velocità e RS485 con forte immunità ai disturbi."
 ---
 
 # Protocollo di comunicazione SCS

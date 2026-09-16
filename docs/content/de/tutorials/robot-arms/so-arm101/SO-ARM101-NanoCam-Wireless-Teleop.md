@@ -1,6 +1,6 @@
 ---
 title: SO-ARM101 Drahtlose Teleoperation (ESP32-NanoCam-Version)
-description: "Drahtlose Teleoperation für Wettbewerbsdemos: Der Führungsarm (Leader) ist über LeRobot mit einem Ubuntu-Rechner verbunden, der Folgearm (Follower) wird vom ESP32-NanoCam-Modul über micro-ROS WiFi gesteuert; der vollständige Ablauf umfasst Verkabelung, Stromversorgung, Flashen, Kalibrierung und Kamera-FPV."
+description: "Drahtlose Teleoperation für Wettbewerbsdemos: Der Führungsarm (Leader) ist über LeRobot mit einem Ubuntu-Rechner verbunden."
 ---
 
 # SO-ARM101 Drahtlose Teleoperation (ESP32-NanoCam-Version)

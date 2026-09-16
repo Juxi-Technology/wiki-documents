@@ -1,6 +1,6 @@
 ---
 title: "03-Versione con servomotori PWM-Manuale d'uso"
-description: "Questo firmware viene eseguito sulla scheda di sviluppo ESP32-S3 e, tramite segnali PWM, controlla 8 canali d…"
+description: "Questo firmware viene eseguito sulla scheda di sviluppo ESP32-S3 e, tramite segnali PWM."
 ---
 
 # 03-Versione con servomotori PWM-Manuale d'uso

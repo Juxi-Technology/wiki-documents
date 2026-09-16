@@ -1,6 +1,6 @@
 ---
 title: Teleoperación inalámbrica SO-ARM101 (versión ESP32-NanoCam)
-description: "Solución de teleoperación inalámbrica orientada a demostraciones de competición: el brazo líder se conecta a una computadora con Ubuntu mediante LeRobot, y el brazo seguidor es controlado por el módulo ESP32-NanoCam a través de micro-ROS por WiFi; cubre el flujo completo de cableado, alimentación, grabación, calibración y FPV con cámara."
+description: "Solución de teleoperación inalámbrica orientada a demostraciones de competición: el brazo líder se conecta a una computadora con Ubuntu mediante LeRobot."
 ---
 
 # Teleoperación inalámbrica SO-ARM101 (versión ESP32-NanoCam)

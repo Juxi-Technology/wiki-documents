@@ -1,6 +1,6 @@
 ---
 title: "AmazingHand Dexterous Hand Product Information"
-description: "AmazingHand is a high-precision, lightweight, gesture-tracking dexterous hand, designed specifically for embo…"
+description: "AmazingHand is a high-precision, lightweight, gesture-tracking dexterous hand, designed specifically for embodied intelligence research."
 ---
 
 # AmazingHand Dexterous Hand Product Information

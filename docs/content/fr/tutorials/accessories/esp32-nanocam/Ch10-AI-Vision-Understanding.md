@@ -1,6 +1,6 @@
 ---
 title: "Chapitre 10 : Compréhension visuelle par IA"
-description: "Tutoriel ESP32-NanoCam chapitre 10 : prendre une photo en mode ESP-Claw et appeler une API de vision multimodale pour que le NanoCam décrive à la voix la scène qu'il voit, avec la liste des modèles compatibles."
+description: "Tutoriel ESP32-NanoCam chapitre 10 : prendre une photo en mode ESP-Claw et appeler une API de vision multimodale pour que le NanoCam décrive à la voix la."
 ---
 
 # Chapitre 10 : Compréhension visuelle par IA

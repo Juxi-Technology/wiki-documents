@@ -1,6 +1,6 @@
 ---
 title: Início rápido do ESP32-NanoCam
-description: "Início rápido do módulo de transmissão de vídeo / visão por IA ESP32-NanoCam: gravar o firmware, configurar o WiFi, ver a imagem em tempo real, alternar os modos de IA e integrar em projetos Arduino / Python — em cinco passos."
+description: "Início rápido do módulo de transmissão de vídeo / visão por IA ESP32-NanoCam: gravar o firmware, configurar o WiFi, ver a imagem em tempo real."
 ---
 
 # Início rápido do ESP32-NanoCam

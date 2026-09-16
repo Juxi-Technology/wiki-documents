@@ -1,6 +1,6 @@
 ---
 title: "Capitolo 5: Rilevamento del muso del gatto"
-description: "Tutorial ESP32-NanoCam capitolo 5: usare il modello CatFaceDetectMN03 per rilevare il muso del gatto, confrontare le differenze con il modello di rilevamento del volto umano e leggere le coordinate per far seguire il gatto al servomotore."
+description: "Tutorial ESP32-NanoCam capitolo 5: usare il modello CatFaceDetectMN03 per rilevare il muso del gatto."
 ---
 
 # Capitolo 5: Rilevamento del muso del gatto

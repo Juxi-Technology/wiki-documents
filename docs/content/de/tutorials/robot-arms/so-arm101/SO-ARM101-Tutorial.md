@@ -1,6 +1,6 @@
 ---
 title: LeRobot-Roboterarm-Tutorial
-description: "Dieses Tutorial wurde bis 15. Dezember aktualisiert. Sie können der neuesten offiziellen Dokumentation folgen. Links siehe unten. SO-ARM101 und SO-ARM100 sind im ausführbaren Code kompatibel."
+description: "Dieses Tutorial wurde bis 15. Dezember aktualisiert. Sie können der neuesten offiziellen Dokumentation folgen. Links siehe unten."
 ---
 
 # LeRobot-Roboterarm-Tutorial

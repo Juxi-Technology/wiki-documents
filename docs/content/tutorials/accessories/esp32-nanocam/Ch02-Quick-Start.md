@@ -1,6 +1,6 @@
 ---
 title: "Chapter 2: Quick Start"
-description: "ESP32-NanoCam tutorial Chapter 2: flash the firmware and complete WiFi provisioning (serial or AP hotspot), open the first live MJPEG frame in a browser, and learn about the HTTP endpoints."
+description: "ESP32-NanoCam tutorial Chapter 2: flash the firmware and complete WiFi provisioning (serial or AP hotspot), open the first live MJPEG frame in a browser."
 ---
 
 # Chapter 2: Quick Start

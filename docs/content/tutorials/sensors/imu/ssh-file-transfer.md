@@ -1,6 +1,6 @@
 ---
 title: "SSH File Transfer"
-description: "Download and extract it, double-click to open the program and start the installation, click Accept to accept …"
+description: "SSH file transfer for the IMU module: install the remote login software, connect to the board over SSH, and upload or download files between PC and device."
 ---
 
 # SSH File Transfer

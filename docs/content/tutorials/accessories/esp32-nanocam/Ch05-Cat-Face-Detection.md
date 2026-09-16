@@ -1,6 +1,6 @@
 ---
 title: "Chapter 5: Cat Face Detection"
-description: "ESP32-NanoCam tutorial Chapter 5: use the CatFaceDetectMN03 model to detect cat faces, compare the model differences with face detection, and read coordinates to drive servo tracking."
+description: "ESP32-NanoCam tutorial Chapter 5: use the CatFaceDetectMN03 model to detect cat faces, compare the model differences with face detection."
 ---
 
 # Chapter 5: Cat Face Detection

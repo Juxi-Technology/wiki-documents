@@ -1,6 +1,6 @@
 ---
 title: "Kapitel 9: Sprachdialog"
-description: "Kapitel 9 des ESP32-NanoCam-Tutorials: Über das XiaoZhi-AI-Framework den xiaozhi.me-Clouddienst verbinden und den Vollduplex-Sprachdialog ASR→LLM→TTS erleben — inklusive selbst gehostetem Server und Fehlerbehebung."
+description: "Kapitel 9 des ESP32-NanoCam-Tutorials: Über das XiaoZhi-AI-Framework den xiaozhi."
 ---
 
 # Kapitel 9: Sprachdialog

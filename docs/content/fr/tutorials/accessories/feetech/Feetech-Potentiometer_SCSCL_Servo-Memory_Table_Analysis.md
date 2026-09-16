@@ -1,6 +1,6 @@
 ---
 title: "Table mémoire du servo SCSCL à potentiomètre"
-description: "Le servo utilise le protocole personnalisé FT-SCS. Configuration série par défaut en usine : débit par défaut 1M ou 500k, communication TTL mono-bus, 8 bits de données, sans parité, 1 bit d'arrêt ; débit configurable 38400 à 1 Mbit/s (500k), adresse de communication par défaut (n° de station) 1."
+description: "Le servo utilise le protocole personnalisé FT-SCS. Configuration série par défaut en usine : débit par défaut 1M ou 500k, communication TTL mono-bus."
 ---
 
 # Table mémoire du servo SCSCL à potentiomètre

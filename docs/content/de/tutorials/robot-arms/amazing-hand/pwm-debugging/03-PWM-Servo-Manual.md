@@ -1,6 +1,6 @@
 ---
 title: "03-PWM-Servo-Version - Handbuch"
-description: "Diese Firmware läuft auf dem Entwicklungsboard ESP32-S3 und steuert über PWM-Signale 8 Servos an, um die Fing…"
+description: "Diese Firmware läuft auf dem Entwicklungsboard ESP32-S3 und steuert über PWM-Signale 8 Servos an, um die Fingerhand Gesten ausführen zu lassen."
 ---
 
 # 03-PWM-Servo-Version - Handbuch

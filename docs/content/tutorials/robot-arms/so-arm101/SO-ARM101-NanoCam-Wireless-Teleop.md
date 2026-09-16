@@ -1,6 +1,6 @@
 ---
 title: SO-ARM101 Wireless Teleoperation (ESP32-NanoCam Version)
-description: "A wireless teleoperation solution for competition demos: the leader arm connects to an Ubuntu PC via LeRobot, and the follower arm is controlled by the ESP32-NanoCam module over micro-ROS WiFi — covering the complete workflow of wiring, power, flashing, calibration, and camera FPV."
+description: "A wireless teleoperation solution for competition demos: the leader arm connects to an Ubuntu PC via LeRobot."
 ---
 
 # SO-ARM101 Wireless Teleoperation (ESP32-NanoCam Version)

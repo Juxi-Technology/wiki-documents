@@ -1,6 +1,6 @@
 ---
 title: "Capítulo 9: Conversa por voz"
-description: "Tutorial ESP32-NanoCam, Capítulo 9: ligar ao serviço cloud xiaozhi.me através da estrutura de IA XiaoZhi, experimentar a conversa por voz full-duplex ASR→LLM→TTS, com servidor auto-alojado e resolução de problemas."
+description: "Tutorial ESP32-NanoCam, Capítulo 9: ligar ao serviço cloud xiaozhi.me através da estrutura de IA XiaoZhi."
 ---
 
 # Capítulo 9: Conversa por voz

@@ -1,6 +1,6 @@
 ---
 title: "Chapitre 5 : Détection de visage de chat"
-description: "Tutoriel ESP32-NanoCam chapitre 5 : utiliser le modèle CatFaceDetectMN03 pour détecter les visages de chats, comparer avec le modèle de détection de visage humaine et lire les coordonnées pour un suivi par servomoteur."
+description: "Tutoriel ESP32-NanoCam chapitre 5 : utiliser le modèle CatFaceDetectMN03 pour détecter les visages de chats."
 ---
 
 # Chapitre 5 : Détection de visage de chat

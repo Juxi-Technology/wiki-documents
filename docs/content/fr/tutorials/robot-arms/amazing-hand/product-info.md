@@ -1,6 +1,6 @@
 ---
 title: "Documentation produit AmazingHand"
-description: "AmazingHand est une main dextre de haute précision, légère et dotée du suivi de gestes, conçue pour la recher…"
+description: "AmazingHand est une main dextre de haute précision, légère et dotée du suivi de gestes, conçue pour la recherche en intelligence incarnée."
 ---
 
 # Documentation produit AmazingHand

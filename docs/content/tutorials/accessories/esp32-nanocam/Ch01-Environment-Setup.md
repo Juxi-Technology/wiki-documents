@@ -1,6 +1,6 @@
 ---
 title: "Chapter 1: Environment Setup"
-description: "ESP32-NanoCam tutorial Chapter 1: install the CH340K serial driver, set up all four firmware flashing environments — esptool-js web flashing, the esptool command line, ESP-IDF, and ESP-EIM-GUI — and complete xiaozhi.me server account registration."
+description: "ESP32-NanoCam tutorial Chapter 1: install the CH340K serial driver, set up all four firmware flashing environments — esptool-js web flashing."
 ---
 
 # Chapter 1: Environment Setup

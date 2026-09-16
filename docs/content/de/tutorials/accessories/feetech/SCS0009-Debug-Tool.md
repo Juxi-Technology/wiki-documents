@@ -1,6 +1,6 @@
 ---
 title: SCS0009-Servo-Debug-Tool – Anleitung
-description: "FTServo-Debug-Tool speziell für den Feetech SCS0009 (Potentiometer-Rückmeldung, 10-Bit-Auflösung 0–1023), unterstützt serielle Verbindung, Servo-Scan, Lesen/Schreiben von 44 Registerparametern, Positionssteuerung sowie xdat-Parameter-Backup und -Wiederherstellung."
+description: "FTServo-Debug-Tool speziell für den Feetech SCS0009 (Potentiometer-Rückmeldung, 10-Bit-Auflösung 0–1023), unterstützt serielle Verbindung, Servo-Scan."
 ---
 
 # SCS0009-Servo-Debug-Tool – Anleitung

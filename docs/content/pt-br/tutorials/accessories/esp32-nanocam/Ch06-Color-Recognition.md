@@ -1,6 +1,6 @@
 ---
 title: "Capítulo 6: Reconhecimento de cores"
-description: "Capítulo 6 do tutorial do ESP32-NanoCam: reconheça 7 cores (vermelho, amarelo, verde, azul, roxo, branco e preto) no espaço de cores HSV, sobreponha rótulos na imagem e leia as coordenadas centrais da caixa de detecção via registradores I2C."
+description: "Capítulo 6 do tutorial do ESP32-NanoCam: reconheça 7 cores (vermelho, amarelo, verde, azul, roxo, branco e preto) no espaço de cores HSV."
 ---
 
 # Capítulo 6: Reconhecimento de cores

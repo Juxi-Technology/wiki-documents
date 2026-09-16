@@ -1,6 +1,6 @@
 ---
 title: "03-Version servomoteurs PWM - Manuel d'utilisation"
-description: "Ce micrologiciel s'exécute sur une carte de développement ESP32-S3 et pilote 8 servomoteurs par signal PWM po…"
+description: "Ce micrologiciel s'exécute sur une carte de développement ESP32-S3 et pilote 8 servomoteurs par signal PWM pour faire exécuter des gestes à la main dextre."
 ---
 
 # 03-Version servomoteurs PWM - Manuel d'utilisation

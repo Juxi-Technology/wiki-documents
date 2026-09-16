@@ -1,6 +1,6 @@
 ---
 title: "Flashing firmware cinese/inglese"
-description: "Il modulo viene di fabbrica con il firmware di riconoscimento vocale, fornito anche negli allegati. Se è necessario ricreare il firmware, seguire i passaggi seguenti."
+description: "Il modulo viene di fabbrica con il firmware di riconoscimento vocale, fornito anche negli allegati."
 ---
 
 # Flashing firmware cinese/inglese

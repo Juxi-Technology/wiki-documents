@@ -1,6 +1,6 @@
 ---
 title: Tutorial de depuración de la mano hábil (servo TTL)
-description: "Primero descargue el paquete comprimido «灵巧手调试.zip» y extráigalo; luego use el documento «使用arduio程序调试灵巧手过程（TTL舵机）» para configurar IDs de servos, calibrar, alinear el centro y ejecutar la demo, o consulte el código de código abierto oficial."
+description: "Primero descargue el paquete comprimido «灵巧手调试.zip» y extráigalo; luego use el documento «使用arduio程序调试灵巧手过程（TTL舵机）» para configurar IDs de servos, calibrar。"
 ---
 
 # Tutorial de depuración de la mano hábil (servo TTL)

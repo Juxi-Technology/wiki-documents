@@ -1,6 +1,6 @@
 ---
 title: "Dépannage de la téléopération"
-description: "Synthèse des pannes courantes de la téléopération sans fil SO-ARM101 (version ESP32-NanoCam) : flashage et port série, caméra, audio, réseau et micro-ROS — symptômes, causes et solutions."
+description: "Synthèse des pannes courantes de la téléopération sans fil SO-ARM101 (version ESP32-NanoCam) : flashage et port série, caméra, audio."
 ---
 
 # Dépannage de la téléopération

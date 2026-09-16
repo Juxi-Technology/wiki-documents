@@ -1,6 +1,6 @@
 ---
 title: "Transfert de fichiers SSH"
-description: "Téléchargez et décompressez, double-cliquez pour ouvrir le programme et lancez l'installation, cliquez sur Ac…"
+description: "Transfert de fichiers SSH pour le module IMU : installez le logiciel de connexion à distance, connectez-vous à la carte en SSH et transférez des fichiers entre PC et appareil."
 ---
 
 # Transfert de fichiers SSH

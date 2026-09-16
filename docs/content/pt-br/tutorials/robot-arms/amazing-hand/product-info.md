@@ -1,6 +1,6 @@
 ---
 title: "AmazingHand Mão hábil — Informações do produto"
-description: "O AmazingHand é uma mão hábil de alta precisão, leve e com rastreamento de gestos, projetada para pesquisa em…"
+description: "O AmazingHand é uma mão hábil de alta precisão, leve e com rastreamento de gestos, projetada para pesquisa em inteligência incorporada."
 ---
 
 # AmazingHand Mão hábil — Informações do produto

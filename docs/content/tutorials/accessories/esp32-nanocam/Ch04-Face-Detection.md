@@ -1,6 +1,6 @@
 ---
 title: "Chapter 4: Face Detection"
-description: "ESP32-NanoCam tutorial Chapter 4: use the ESP-DL MobileNet face detection model to mark face boxes and 5 keypoints on the image, and read coordinates with Arduino/Python to control a servo."
+description: "ESP32-NanoCam tutorial Chapter 4: use the ESP-DL MobileNet face detection model to mark face boxes and 5 keypoints on the image."
 ---
 
 # Chapter 4: Face Detection

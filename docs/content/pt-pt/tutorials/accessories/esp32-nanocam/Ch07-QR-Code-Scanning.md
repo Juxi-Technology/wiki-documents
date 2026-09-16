@@ -1,6 +1,6 @@
 ---
 title: "Capítulo 7: Leitura de códigos QR"
-description: "Tutorial ESP32-NanoCam, Capítulo 7: descodificar códigos QR/códigos de barras em tempo real com a biblioteca esp-code-scanner, com o resultado da descodificação emitido simultaneamente no registo da porta serial e na imagem da página web."
+description: "Tutorial ESP32-NanoCam, Capítulo 7: descodificar códigos QR/códigos de barras em tempo real com a biblioteca esp-code-scanner."
 ---
 
 # Capítulo 7: Leitura de códigos QR

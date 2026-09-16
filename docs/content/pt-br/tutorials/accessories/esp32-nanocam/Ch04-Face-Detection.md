@@ -1,6 +1,6 @@
 ---
 title: "Capítulo 4: Detecção de rosto"
-description: "Capítulo 4 do tutorial do ESP32-NanoCam: use o modelo de detecção de rosto MobileNet da ESP-DL para marcar a caixa do rosto e 5 pontos-chave na imagem, e leia as coordenadas com Arduino/Python para controlar um servo."
+description: "Capítulo 4 do tutorial do ESP32-NanoCam: use o modelo de detecção de rosto MobileNet da ESP-DL para marcar a caixa do rosto e 5 pontos-chave na imagem."
 ---
 
 # Capítulo 4: Detecção de rosto

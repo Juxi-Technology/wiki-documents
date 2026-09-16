@@ -1,6 +1,6 @@
 ---
 title: Juxi Technology Wiki
-description: "Tutorials and documentation for Juxi Technology robotics hardware: SO-ARM101 robot arms, AmazingHand dexterous hand, XLeRobot mobile robots, ESP32-NanoCam vision modules, Jetson kits, IMU/GPS sensors and LeRobot imitation-learning guides."
+description: "Tutorials and documentation for Juxi Technology robotics hardware: SO-ARM101 robot arms, AmazingHand dexterous hand, XLeRobot mobile robots."
 aside: false
 sidebar: false
 outline: false

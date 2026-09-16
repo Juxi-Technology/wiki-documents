@@ -1,6 +1,6 @@
 ---
 title: "Kapitel 6: Farberkennung"
-description: "Kapitel 6 des ESP32-NanoCam-Tutorials: Erkennung der 7 Farben Rot, Gelb, Grün, Blau, Lila, Weiß und Schwarz im HSV-Farbraum, Überlagerung von Beschriftungen im Bild und Auslesen der Mittelpunktkoordinaten des Detektionsrahmens über I2C-Register."
+description: "Kapitel 6 des ESP32-NanoCam-Tutorials: Erkennung der 7 Farben Rot, Gelb, Grün, Blau, Lila, Weiß und Schwarz im HSV-Farbraum."
 ---
 
 # Kapitel 6: Farberkennung

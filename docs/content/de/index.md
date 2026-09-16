@@ -1,6 +1,6 @@
 ---
 title: Juxi Technology Wiki
-description: "Juxi Technology Produkt-Tutorials und Dokumentationszentrum: SO-ARM101 Entwicklungs-Kit, AmazingHand 4-Finger-Greifhand, XLeRobot Zweiarm-Mobilroboter, ESP32-S3 WiFi-Videomodul, Jetson Orin NX Super, IMU- und GPS-Sensoren sowie LeRobot-Tutorials zum Imitationslernen."
+description: "Juxi Technology Produkt-Tutorials und Dokumentationszentrum: SO-ARM101 Entwicklungs-Kit, AmazingHand 4-Finger-Greifhand, XLeRobot Zweiarm-Mobilroboter."
 aside: false
 sidebar: false
 outline: false

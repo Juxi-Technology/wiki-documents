@@ -1,6 +1,6 @@
 ---
 title: SoARM-Servo-Kalibrierungstool – Anleitung
-description: "FTServo-Servo-Werkskalibrierungs- und LeRobot-Kalibrierungstool für Roboterarme der SoARM-10X-Serie, unterstützt Mittenkalibrierung, Einzelservo-Steuerung, Parameter-Lesen/-Schreiben im FT-Debugger sowie xdat-Parameter-Backup und -Wiederherstellung."
+description: "FTServo-Servo-Werkskalibrierungs- und LeRobot-Kalibrierungstool für Roboterarme der SoARM-10X-Serie, unterstützt Mittenkalibrierung, Einzelservo-Steuerung."
 ---
 
 # SoARM-Servo-Kalibrierungstool – Anleitung

@@ -1,6 +1,6 @@
 ---
 title: "Kapitel 1: Umgebungseinrichtung"
-description: "Kapitel 1 des ESP32-NanoCam-Tutorials: Installation des CH340K-Serielltreibers, Einrichtung von vier Flash-Umgebungen (esptool-js im Browser, esptool-Kommandozeile, ESP-IDF und ESP-EIM-GUI) sowie Registrierung eines xiaozhi.me-Serverkontos."
+description: "Kapitel 1 des ESP32-NanoCam-Tutorials: Installation des CH340K-Serielltreibers, Einrichtung von vier Flash-Umgebungen (esptool-js im Browser."
 ---
 
 # Kapitel 1: Umgebungseinrichtung

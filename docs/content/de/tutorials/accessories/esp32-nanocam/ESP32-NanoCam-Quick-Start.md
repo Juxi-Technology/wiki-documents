@@ -1,6 +1,6 @@
 ---
 title: ESP32-NanoCam Schnellstart
-description: "ESP32-NanoCam Videoübertragungs-/KI-Visionsmodul Schnellstart: Firmware flashen, WiFi konfigurieren, Live-Bild ansehen, KI-Modi umschalten und in Arduino-/Python-Projekte integrieren — in fünf Schritten."
+description: "ESP32-NanoCam Videoübertragungs-/KI-Visionsmodul Schnellstart: Firmware flashen, WiFi konfigurieren, Live-Bild ansehen."
 ---
 
 # ESP32-NanoCam Schnellstart

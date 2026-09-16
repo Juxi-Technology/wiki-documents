@@ -1,6 +1,6 @@
 ---
 title: "Flashage du firmware chinois/anglais"
-description: "Le module est livré avec le firmware de reconnaissance vocale d'usine, également fourni en pièces jointes. Si vous devez recréer le firmware, suivez les étapes ci-dessous."
+description: "Le module est livré avec le firmware de reconnaissance vocale d'usine, également fourni en pièces jointes."
 ---
 
 # Flashage du firmware chinois/anglais

@@ -1,6 +1,6 @@
 ---
 title: "Grabación de firmware chino/inglés"
-description: "El módulo viene de fábrica con el firmware de reconocimiento de voz; también se proporciona en los adjuntos. Si necesita recrear el firmware, siga los pasos siguientes."
+description: "El módulo viene de fábrica con el firmware de reconocimiento de voz; también se proporciona en los adjuntos."
 ---
 
 # Grabación de firmware chino/inglés

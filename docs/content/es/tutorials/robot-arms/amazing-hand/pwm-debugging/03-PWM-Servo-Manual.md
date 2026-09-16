@@ -1,6 +1,6 @@
 ---
 title: "03-Versión con servos PWM - Manual de uso"
-description: "Este firmware se ejecuta en la placa de desarrollo ESP32-S3 y controla 8 servos mediante señales PWM para que…"
+description: "Este firmware se ejecuta en la placa de desarrollo ESP32-S3 y controla 8 servos mediante señales PWM para que la mano diestra ejecute gestos."
 ---
 
 # 03-Versión con servos PWM - Manual de uso

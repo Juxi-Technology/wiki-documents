@@ -1,6 +1,6 @@
 ---
 title: "Informações do Produto"
-description: "Sensor de atitude IMU de alta precisão integrado, processador de 32 bits de alto desempenho de 72MHz, capaz de realizar cálculo de atitude em tempo real e compensação dinâmica"
+description: "Sensor de atitude IMU de alta precisão integrado, processador de 32 bits de alto desempenho de 72MHz."
 ---
 
 # Informações do Produto

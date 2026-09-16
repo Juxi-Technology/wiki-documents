@@ -1,6 +1,6 @@
 ---
 title: ESP32-NanoCam Handbuch zum seriellen Protokoll
-description: "ESP32-NanoCam Handbuch zum seriellen AT-Protokoll: vollständige Befehlsreferenz für WiFi-Konfiguration, KI-Moduswechsel, Abfragen, Systemsteuerung und Gesichtserkennung."
+description: "ESP32-NanoCam Handbuch zum seriellen AT-Protokoll: vollständige Befehlsreferenz für WiFi-Konfiguration, KI-Moduswechsel, Abfragen."
 ---
 
 # ESP32-NanoCam Handbuch zum seriellen Protokoll

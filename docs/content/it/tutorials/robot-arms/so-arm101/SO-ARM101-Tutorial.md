@@ -1,6 +1,6 @@
 ---
 title: Tutorial braccio robotico LeRobot
-description: "Questo tutorial è aggiornato al 15 dicembre. Si può seguire la documentazione ufficiale più recente. Vedi link. SO-ARM101 e SO-ARM100 sono compatibili nel codice eseguito."
+description: "Questo tutorial è aggiornato al 15 dicembre. Si può seguire la documentazione ufficiale più recente. Vedi link."
 ---
 
 # Tutorial braccio robotico LeRobot

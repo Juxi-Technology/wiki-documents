@@ -1,6 +1,6 @@
 ---
 title: SO-ARM101 Zweiarm-Tutorial (zwei Folgearme)
-description: "Der vollständige Ablauf für das SO-ARM101-Zweiarmsystem (zwei Folgearme): Hardware-Verkabelung und Kalibrierung, Zweiarm-Teleoperation, Datensatzaufzeichnung und -verwaltung, ACT-Policy-Training sowie Deployment auf dem realen Roboter."
+description: "Der vollständige Ablauf für das SO-ARM101-Zweiarmsystem (zwei Folgearme): Hardware-Verkabelung und Kalibrierung, Zweiarm-Teleoperation."
 ---
 
 # SO-ARM101 Zweiarm-Tutorial (zwei Folgearme)

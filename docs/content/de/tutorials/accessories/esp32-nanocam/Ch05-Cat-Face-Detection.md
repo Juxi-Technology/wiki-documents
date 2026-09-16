@@ -1,6 +1,6 @@
 ---
 title: "Kapitel 5: Katzengesichtsdetektion"
-description: "Kapitel 5 des ESP32-NanoCam-Tutorials: Katzengesichter mit dem CatFaceDetectMN03-Modell erkennen, die Modellunterschiede zur Gesichtsdetektion vergleichen und Koordinaten zur Servo-Verfolgung auslesen."
+description: "Kapitel 5 des ESP32-NanoCam-Tutorials: Katzengesichter mit dem CatFaceDetectMN03-Modell erkennen."
 ---
 
 # Kapitel 5: Katzengesichtsdetektion

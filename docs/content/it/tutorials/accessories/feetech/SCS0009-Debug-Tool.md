@@ -1,6 +1,6 @@
 ---
 title: Tutorial d'uso del tool di debug servo SCS0009
-description: "Tool di debug FTServo progettato per il servo Feetech SCS0009 (feedback a potenziometro, risoluzione a 10 bit 0–1023); supporta connessione seriale, scansione dei servo, lettura/scrittura dei 44 registri, controllo della posizione e backup/ripristino dei parametri xdat."
+description: "Tool di debug FTServo progettato per il servo Feetech SCS0009 (feedback a potenziometro, risoluzione a 10 bit 0–1023); supporta connessione seriale."
 ---
 
 # Tutorial d'uso del tool di debug servo SCS0009

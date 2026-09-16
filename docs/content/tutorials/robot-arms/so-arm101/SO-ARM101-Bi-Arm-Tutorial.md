@@ -1,6 +1,6 @@
 ---
 title: SO-ARM101 Bi-Arm (Dual Follower) Tutorial
-description: "Introduces the complete workflow of the SO-ARM101 bi-arm (dual follower) system: hardware wiring and calibration, bi-arm teleoperation, dataset recording and management, ACT policy training, and real-robot deployment."
+description: "Introduces the complete workflow of the SO-ARM101 bi-arm (dual follower) system: hardware wiring and calibration, bi-arm teleoperation."
 ---
 
 # SO-ARM101 Bi-Arm (Dual Follower) Tutorial

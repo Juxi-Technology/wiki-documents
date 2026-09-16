@@ -1,6 +1,6 @@
 ---
 title: "Capítulo 10: Comprensión visual con IA"
-description: "Capítulo 10 del tutorial de ESP32-NanoCam: en el modo ESP-Claw, haz fotos y llama a una API de visión multimodal para que NanoCam describa por voz la escena que ve, con la lista de modelos disponibles."
+description: "Capítulo 10 del tutorial de ESP32-NanoCam: en el modo ESP-Claw, haz fotos y llama a una API de visión multimodal para que NanoCam describa por voz la escena."
 ---
 
 # Capítulo 10: Comprensión visual con IA

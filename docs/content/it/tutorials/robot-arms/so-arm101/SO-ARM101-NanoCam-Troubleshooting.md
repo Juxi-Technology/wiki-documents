@@ -1,6 +1,6 @@
 ---
 title: "Risoluzione problemi di teleoperazione"
-description: "Raccolta dei guasti più comuni della teleoperazione wireless SO-ARM101 (versione ESP32-NanoCam): sintomi, cause e soluzioni per flashing e porta seriale, fotocamera, audio, rete e micro-ROS."
+description: "Raccolta dei guasti più comuni della teleoperazione wireless SO-ARM101 (versione ESP32-NanoCam): sintomi, cause e soluzioni per flashing e porta seriale."
 ---
 
 # Risoluzione problemi di teleoperazione

@@ -1,6 +1,6 @@
 ---
 title: SCS0009 Servo Debug Tool Tutorial
-description: "An FTServo debug tool designed for the Feetech SCS0009 servo (potentiometer feedback, 10-bit resolution 0–1023), supporting serial connection, servo scanning, read/write of 44 register parameters, position control, and xdat parameter backup and restore."
+description: "An FTServo debug tool designed for the Feetech SCS0009 servo (potentiometer feedback, 10-bit resolution 0–1023), supporting serial connection, servo scanning."
 ---
 
 # SCS0009 Servo Debug Tool Tutorial

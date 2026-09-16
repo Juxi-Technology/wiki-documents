@@ -1,6 +1,6 @@
 ---
 title: "SSH-Dateiübertragung"
-description: "Laden Sie das Programm herunter und entpacken Sie es, doppelklicken Sie, um das Programm zu öffnen, und begin…"
+description: "SSH-Dateiübertragung für das IMU-Modul: Remote-Login-Software installieren, per SSH mit dem Board verbinden und Dateien zwischen PC und Gerät übertragen."
 ---
 
 # SSH-Dateiübertragung

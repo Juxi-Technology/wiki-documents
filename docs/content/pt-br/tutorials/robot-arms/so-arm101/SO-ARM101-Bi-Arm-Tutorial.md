@@ -1,6 +1,6 @@
 ---
 title: Tutorial de dois braços (dois seguidores) do SO-ARM101
-description: "Fluxo completo do sistema SO-ARM101 de dois braços (dois seguidores): conexão e calibração do hardware, teleoperação com dois braços, gravação e gerenciamento de dataset, treinamento da política ACT e implantação no robô real."
+description: "Fluxo completo do sistema SO-ARM101 de dois braços (dois seguidores): conexão e calibração do hardware, teleoperação com dois braços."
 ---
 
 # Tutorial de dois braços (dois seguidores) do SO-ARM101

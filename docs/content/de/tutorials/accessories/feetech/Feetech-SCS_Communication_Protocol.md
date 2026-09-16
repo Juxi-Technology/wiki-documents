@@ -1,6 +1,6 @@
 ---
 title: "SCS-Kommunikationsprotokoll"
-description: "Der Kommunikationspegel nutzt TTL für Hochgeschwindigkeitskommunikation und RS485 mit starker Störfestigkeit; die Kommunikation erfolgt asynchron-duplex, Senden und Empfangen werden asynchron verarbeitet."
+description: "Der Kommunikationspegel nutzt TTL für Hochgeschwindigkeitskommunikation und RS485 mit starker Störfestigkeit; die Kommunikation erfolgt asynchron-duplex."
 ---
 
 # SCS-Kommunikationsprotokoll

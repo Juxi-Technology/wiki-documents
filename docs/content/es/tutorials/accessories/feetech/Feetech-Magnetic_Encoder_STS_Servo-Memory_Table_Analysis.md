@@ -1,6 +1,6 @@
 ---
 title: "Tabla de memoria del servo STS con encoder magnético"
-description: "El servo utiliza el protocolo personalizado FT-SCS. Configuración serie predeterminada de fábrica: servo STS a 1M, comunicación TTL de bus único, 8 bits de datos, sin paridad, 1 bit de parada; velocidad configurable 38400~1Mbps, dirección de comunicación predeterminada (n.º de estación) 1."
+description: "El servo utiliza el protocolo personalizado FT-SCS. Configuración serie predeterminada de fábrica: servo STS a 1M, comunicación TTL de bus único."
 ---
 
 # Tabla de memoria del servo STS con encoder magnético
