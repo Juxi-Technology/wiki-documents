@@ -6,42 +6,46 @@ import { data as dates } from '../../home.data'
 // useData().lang 返回 config lang 值('zh-CN'/'zh-HK'/'en'...),与字典键一致
 const { lang } = useData()
 
-// 9 语文案(键与 config lang 一致)
-const T: Record<string, { title: string; filterLabel: string; all: string; robot: string; sensor: string; accessory: string }> = {
-  'zh-CN': { title: '最新文档', filterLabel: '筛选', all: '全部', robot: '机械臂', sensor: '传感器', accessory: '配件' },
-  en: { title: 'Latest Documents', filterLabel: 'Filter', all: 'All', robot: 'Robot Arms', sensor: 'Sensors', accessory: 'Accessories' },
-  'zh-HK': { title: '最新文檔', filterLabel: '篩選', all: '全部', robot: '機械臂', sensor: '傳感器', accessory: '配件' },
-  ja: { title: '最新ドキュメント', filterLabel: '絞り込み', all: 'すべて', robot: 'ロボットアーム', sensor: 'センサー', accessory: 'アクセサリー' },
-  ko: { title: '최신 문서', filterLabel: '필터', all: '전체', robot: '로봇 암', sensor: '센서', accessory: '액세서리' },
-  de: { title: 'Neueste Dokumente', filterLabel: 'Filter', all: 'Alle', robot: 'Roboterarme', sensor: 'Sensoren', accessory: 'Zubehör' },
-  fr: { title: 'Documents récents', filterLabel: 'Filtrer', all: 'Tous', robot: 'Bras robotiques', sensor: 'Capteurs', accessory: 'Accessoires' },
-  es: { title: 'Documentos recientes', filterLabel: 'Filtrar', all: 'Todos', robot: 'Brazos robóticos', sensor: 'Sensores', accessory: 'Accesorios' },
-  it: { title: 'Documenti recenti', filterLabel: 'Filtra', all: 'Tutti', robot: 'Bracci robotici', sensor: 'Sensori', accessory: 'Accessori' },
-  'pt-BR': { title: 'Documentos recentes', filterLabel: 'Filtrar', all: 'Todos', robot: 'Braços robóticos', sensor: 'Sensores', accessory: 'Acessórios' },
-  'pt-PT': { title: 'Documentos recentes', filterLabel: 'Filtrar', all: 'Todos', robot: 'Braços robóticos', sensor: 'Sensores', accessory: 'Acessórios' },
+// 11 语文案(键与 config lang 一致)
+const T: Record<string, { title: string; filterLabel: string; all: string; robot: string; sensor: string; accessory: string; vision: string }> = {
+  'zh-CN': { title: '最新文档', filterLabel: '筛选', all: '全部', robot: '机器人', sensor: '传感器', accessory: '配件', vision: '视觉' },
+  en: { title: 'Latest Documents', filterLabel: 'Filter', all: 'All', robot: 'Robots', sensor: 'Sensors', accessory: 'Accessories', vision: 'Vision' },
+  'zh-HK': { title: '最新文檔', filterLabel: '篩選', all: '全部', robot: '機器人', sensor: '傳感器', accessory: '配件', vision: '視覺' },
+  ja: { title: '最新ドキュメント', filterLabel: '絞り込み', all: 'すべて', robot: 'ロボット', sensor: 'センサー', accessory: 'アクセサリー', vision: 'ビジョン' },
+  ko: { title: '최신 문서', filterLabel: '필터', all: '전체', robot: '로봇', sensor: '센서', accessory: '액세서리', vision: '비전' },
+  de: { title: 'Neueste Dokumente', filterLabel: 'Filter', all: 'Alle', robot: 'Roboter', sensor: 'Sensoren', accessory: 'Zubehör', vision: 'Vision' },
+  fr: { title: 'Documents récents', filterLabel: 'Filtrer', all: 'Tous', robot: 'Robots', sensor: 'Capteurs', accessory: 'Accessoires', vision: 'Vision' },
+  es: { title: 'Documentos recientes', filterLabel: 'Filtrar', all: 'Todos', robot: 'Robots', sensor: 'Sensores', accessory: 'Accesorios', vision: 'Visión' },
+  it: { title: 'Documenti recenti', filterLabel: 'Filtra', all: 'Tutti', robot: 'Robot', sensor: 'Sensori', accessory: 'Accessori', vision: 'Visione' },
+  'pt-BR': { title: 'Documentos recentes', filterLabel: 'Filtrar', all: 'Todos', robot: 'Robôs', sensor: 'Sensores', accessory: 'Acessórios', vision: 'Visão' },
+  'pt-PT': { title: 'Documentos recentes', filterLabel: 'Filtrar', all: 'Todos', robot: 'Robôs', sensor: 'Sensores', accessory: 'Acessórios', vision: 'Visão' },
 }
 
 // 卡片标题(各语,与既有首页卡片一致)
 const TITLES: Record<string, string[]> = {
-  'zh-CN': ['SO-ARM101-使用教程', 'KWS语音识别模块-系列教程', 'IMU惯性导航模块', 'AmazingHand-界面控制教程'],
-  en: ['SO-ARM101-Tutorial', 'KWS Speech Recognition Module Series', 'IMU Inertial Navigation Module', 'AmazingHand-Interface-Control'],
-  'zh-HK': ['SO-ARM101-使用教程', 'KWS語音識別模組-系列教程', 'IMU慣性導航模組', 'AmazingHand-界面控制教程'],
-  ja: ['SO-ARM101 使用チュートリアル', 'KWS 音声認識モジュール シリーズ', 'IMU 慣性ナビゲーションモジュール', 'AmazingHand インターフェース制御'],
-  ko: ['SO-ARM101 사용 튜토리얼', 'KWS 음성 인식 모듈 시리즈', 'IMU 관성 내비게이션 모듈', 'AmazingHand 인터페이스 제어'],
-  de: ['SO-ARM101-Tutorial', 'KWS-Spracherkennungsmodul – Tutorial-Serie', 'IMU-Trägheitsnavigationsmodul', 'AmazingHand Interface-Steuerung'],
-  fr: ['Tutoriel SO-ARM101', 'Module KWS – série de tutoriels', 'Module de navigation inertielle IMU', "Contrôle d'interface AmazingHand"],
-  es: ['Tutorial SO-ARM101', 'Módulo KWS – serie de tutoriales', 'Módulo de navegación inercial IMU', 'Control de interfaz AmazingHand'],
-  it: ['Tutorial SO-ARM101', 'Modulo KWS – serie di tutorial', 'Modulo di navigazione inerziale IMU', 'Controllo interfaccia AmazingHand'],
-  'pt-BR': ['Tutorial SO-ARM101', 'Módulo KWS – série de tutoriais', 'Módulo de navegação inercial IMU', 'Controle de interface AmazingHand'],
-  'pt-PT': ['Tutorial SO-ARM101', 'Módulo KWS – série de tutoriais', 'Módulo de navegação inercial IMU', 'Controle de interface AmazingHand'],
+  'zh-CN': ['SO-ARM101-使用教程', 'AmazingHand灵巧手', 'XLeRobot-使用教程', 'IMU惯导模块', 'GPS北斗定位', 'ESP32-NanoCam图传', 'AI语音交互模块', 'CSI摄像头'],
+  en: ['SO-ARM101-Tutorial', 'AmazingHand Dexterous Hand', 'XLeRobot-Tutorial', 'IMU Inertial Navigation Module', 'GPS & BeiDou Positioning Module', 'ESP32-NanoCam Video Module', 'AI Voice Interaction Module', 'IMX219 CSI Camera'],
+  'zh-HK': ['SO-ARM101-使用教程', 'AmazingHand-界面控制教程', 'XLeRobot-使用教程', 'IMU慣性導航模組', 'GPS北斗定位模組', 'ESP32-NanoCam圖傳模組', 'AI語音交互模組', 'CSI攝像頭使用教程'],
+  ja: ['SO-ARM101 使用チュートリアル', 'AmazingHand 器用ハンド', 'XLeRobot 使用チュートリアル', 'IMU 慣性ナビゲーションモジュール', 'GPS 北斗測位モジュール', 'ESP32-NanoCam 動画転送モジュール', 'AI 音声対話モジュール', 'IMX219 CSI カメラ'],
+  ko: ['SO-ARM101 사용 튜토리얼', 'AmazingHand 정교 손', 'XLeRobot 튜토리얼', 'IMU 관성 내비게이션 모듈', 'GPS 北斗 측위 모듈', 'ESP32-NanoCam 영상 전송', 'AI 음성 인터랙션 모듈', 'CSI 카메라'],
+  de: ['SO-ARM101-Tutorial', 'AmazingHand Greifhand', 'XLeRobot-Tutorial', 'IMU-Trägheitsnavigationsmodul', 'GPS- & BeiDou-GNSS-Positionsmodul', 'ESP32-NanoCam Videomodul', 'AI-Sprachinteraktionsmodul', 'IMX219 CSI-Kamera'],
+  fr: ['Tutoriel SO-ARM101', 'Main dexterous AmazingHand', 'Tutoriel XLeRobot', 'Navigation inertielle IMU', 'Module GPS & Beidou', 'Transmission vidéo ESP32-NanoCam', 'Module d\'interaction vocale IA', 'Tutoriels caméra CSI'],
+  es: ['Tutorial SO-ARM101', 'Control de interfaz AmazingHand', 'Tutorial XLeRobot', 'Módulo de navegación inercial IMU', 'Posicionamiento GPS y BeiDou', 'Módulo de vídeo ESP32-NanoCam', 'Módulo de interacción de voz IA', 'Cámara CSI IMX219 79°'],
+  it: ['Tutorial SO-ARM101', 'Mano robotica AmazingHand', 'Tutorial XLeRobot', 'Navigazione inerziale IMU', 'Modulo GPS e Beidou', 'Modulo video ESP32-NanoCam', 'Modulo di interazione vocale IA', 'Fotocamera CSI IMX219'],
+  'pt-BR': ['Tutorial SO-ARM101', 'Mão hábil AmazingHand', 'Tutorial XLeRobot', 'Módulo de navegação inercial IMU', 'Posicionamento GPS e BeiDou', 'Módulo de vídeo ESP32-NanoCam', 'Módulo de interação por voz IA', 'Câmera CSI IMX219 79°'],
+  'pt-PT': ['Tutorial SO-ARM101', 'AmazingHand Mão Hábil', 'Tutorial XLeRobot', 'Módulo de navegação inercial IMU', 'Módulo GNSS GPS e BeiDou', 'Módulo de Vídeo ESP32-NanoCam', 'Módulo de interação por voz IA', 'Câmara CSI IMX219'],
 }
 
 // 卡片:相对路径(语言前缀由组件拼接)、分类(与产品页 category 枚举对齐)、图片
 const CARDS = [
   { href: 'tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial', cat: 'robot', img: 'SO-ARM101.png' },
-  { href: 'tutorials/accessories/KWS-speech-recognition-module/index', cat: 'accessory', img: 'AI_SoundCard.png' },
-  { href: 'tutorials/sensors/imu/index', cat: 'sensor', img: 'IMU.png' },
   { href: 'tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control', cat: 'robot', img: 'AmazingHand.png' },
+  { href: 'tutorials/robot-arms/xlerobot/', cat: 'robot', img: 'XLeRobot.png' },
+  { href: 'tutorials/sensors/imu/', cat: 'sensor', img: 'IMU.png' },
+  { href: 'tutorials/sensors/gps/GPS-Module-Info', cat: 'sensor', img: 'GPS.png' },
+  { href: 'tutorials/accessories/esp32-nanocam/Ch02-Quick-Start', cat: 'accessory', img: 'ESP32-NanoCam.png' },
+  { href: 'tutorials/accessories/ai-voice-module/Quick-Start', cat: 'accessory', img: 'AI-Voice-Module.png' },
+  { href: 'tutorials/accessories/csi-camera/01-Jetson-CSI-Setup', cat: 'vision', img: 'CSI-Camera.png' },
 ]
 
 const t = computed(() => T[lang.value] || T.en)
@@ -52,7 +56,7 @@ const langDir = computed(() => {
 })
 
 const filter = ref('all')
-const FILTERS = ['all', 'robot', 'sensor', 'accessory'] as const
+const FILTERS = ['all', 'robot', 'sensor', 'accessory', 'vision'] as const
 
 // 卡片日期(带语言前缀的 URL → lastUpdated)
 const dateMap = new Map(dates.map((d) => [d.url.replace(/\/$/, ''), d.lastUpdated]))
@@ -86,7 +90,7 @@ const filtered = computed(() =>
         <img :src="withBase('/images/home-cards/' + c.img)" :alt="c.title" loading="lazy">
         <span class="card-title">{{ c.title }}</span>
         <span class="card-meta">
-          <span class="card-cat">{{ t[c.cat as 'all' | 'robot' | 'sensor' | 'accessory'] }}</span>
+          <span class="card-cat">{{ t[c.cat as 'all' | 'robot' | 'sensor' | 'accessory' | 'vision'] }}</span>
           <span v-if="c.date" class="card-date">{{ c.date }}</span>
         </span>
       </a>

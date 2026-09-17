@@ -32,17 +32,37 @@ outline: false
 ## 產品系列
 
 <div class="category-grid reveal">
-  <a :href="withBase('/zh-hant/tutorials/robot-arms/')" class="category-card">
-    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="機械臂系列">
-    <span>機械臂系列</span>
+  <a :href="withBase('/zh-hant/products/so-arm101')" class="category-card">
+    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="SO-ARM101 機械臂">
+    <span>SO-ARM101 機械臂</span>
   </a>
-  <a :href="withBase('/zh-hant/tutorials/sensors/')" class="category-card">
-    <img :src="withBase('/images/categories/IMU.png')" alt="傳感器系列">
-    <span>傳感器系列</span>
+  <a :href="withBase('/zh-hant/products/amazinghand')" class="category-card">
+    <img :src="withBase('/images/categories/AmazingHand.png')" alt="AmazingHand 靈巧手">
+    <span>AmazingHand 靈巧手</span>
   </a>
-  <a :href="withBase('/zh-hant/tutorials/accessories/')" class="category-card">
-    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="配件系列">
-    <span>配件系列</span>
+  <a :href="withBase('/zh-hant/products/xlerobot')" class="category-card">
+    <img :src="withBase('/images/categories/XLeRobot.png')" alt="XLeRobot 移動機器人">
+    <span>XLeRobot 移動機器人</span>
+  </a>
+  <a :href="withBase('/zh-hant/products/esp32-s3-wifi-module')" class="category-card">
+    <img :src="withBase('/images/categories/ESP32-NanoCam.png')" alt="ESP32-NanoCam 圖傳">
+    <span>ESP32-NanoCam 圖傳</span>
+  </a>
+  <a :href="withBase('/zh-hant/products/ai-voice-module')" class="category-card">
+    <img :src="withBase('/images/categories/AI-Voice-Module.png')" alt="AI 語音交互模組">
+    <span>AI 語音交互模組</span>
+  </a>
+  <a :href="withBase('/zh-hant/products/imu-module')" class="category-card">
+    <img :src="withBase('/images/categories/IMU.png')" alt="IMU 慣導模組">
+    <span>IMU 慣導模組</span>
+  </a>
+  <a :href="withBase('/zh-hant/products/gps-beidou-module')" class="category-card">
+    <img :src="withBase('/images/categories/GPS.png')" alt="GPS 北斗定位">
+    <span>GPS 北斗定位</span>
+  </a>
+  <a :href="withBase('/zh-hant/products/imx219-csi-camera')" class="category-card">
+    <img :src="withBase('/images/categories/CSI-Camera.png')" alt="CSI 攝像頭">
+    <span>CSI 攝像頭</span>
   </a>
 </div>
 
@@ -52,16 +72,20 @@ outline: false
 
 <div class="category-grid reveal">
   <a :href="withBase('/zh-hant/tutorials/robot-arms/')" class="category-card">
-    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="機器人機械臂系列">
-    <span>機器人機械臂系列</span>
+    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="機械臂教程">
+    <span>機械臂教程</span>
   </a>
-  <a :href="withBase('/zh-hant/tutorials/accessories/')" class="category-card">
-    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="機器人配件">
-    <span>機器人配件</span>
+  <a :href="withBase('/zh-hant/tutorials/robot-arms/xlerobot/')" class="category-card">
+    <img :src="withBase('/images/categories/XLeRobot.png')" alt="移動機器人教程">
+    <span>移動機器人教程</span>
   </a>
   <a :href="withBase('/zh-hant/tutorials/sensors/')" class="category-card">
-    <img :src="withBase('/images/categories/IMU.png')" alt="傳感器與感知">
-    <span>傳感器與感知</span>
+    <img :src="withBase('/images/categories/IMU.png')" alt="傳感器教程">
+    <span>傳感器教程</span>
+  </a>
+  <a :href="withBase('/zh-hant/tutorials/accessories/')" class="category-card">
+    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="配件教程">
+    <span>配件教程</span>
   </a>
 </div>
 

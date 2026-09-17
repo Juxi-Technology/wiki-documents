@@ -32,17 +32,37 @@ outline: false
 ## 产品系列
 
 <div class="category-grid reveal">
-  <a :href="withBase('/zh-hans/tutorials/robot-arms/')" class="category-card">
-    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="机械臂系列">
-    <span>机械臂系列</span>
+  <a :href="withBase('/zh-hans/products/so-arm101')" class="category-card">
+    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="SO-ARM101 机械臂">
+    <span>SO-ARM101 机械臂</span>
   </a>
-  <a :href="withBase('/zh-hans/tutorials/sensors/')" class="category-card">
-    <img :src="withBase('/images/categories/IMU.png')" alt="传感器系列">
-    <span>传感器系列</span>
+  <a :href="withBase('/zh-hans/products/amazinghand')" class="category-card">
+    <img :src="withBase('/images/categories/AmazingHand.png')" alt="AmazingHand 灵巧手">
+    <span>AmazingHand 灵巧手</span>
   </a>
-  <a :href="withBase('/zh-hans/tutorials/accessories/')" class="category-card">
-    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="配件系列">
-    <span>配件系列</span>
+  <a :href="withBase('/zh-hans/products/xlerobot')" class="category-card">
+    <img :src="withBase('/images/categories/XLeRobot.png')" alt="XLeRobot 移动机器人">
+    <span>XLeRobot 移动机器人</span>
+  </a>
+  <a :href="withBase('/zh-hans/products/esp32-s3-wifi-module')" class="category-card">
+    <img :src="withBase('/images/categories/ESP32-NanoCam.png')" alt="ESP32-NanoCam 图传">
+    <span>ESP32-NanoCam 图传</span>
+  </a>
+  <a :href="withBase('/zh-hans/products/ai-voice-module')" class="category-card">
+    <img :src="withBase('/images/categories/AI-Voice-Module.png')" alt="AI 语音交互模块">
+    <span>AI 语音交互模块</span>
+  </a>
+  <a :href="withBase('/zh-hans/products/imu-module')" class="category-card">
+    <img :src="withBase('/images/categories/IMU.png')" alt="IMU 惯导模块">
+    <span>IMU 惯导模块</span>
+  </a>
+  <a :href="withBase('/zh-hans/products/gps-beidou-module')" class="category-card">
+    <img :src="withBase('/images/categories/GPS.png')" alt="GPS 北斗定位">
+    <span>GPS 北斗定位</span>
+  </a>
+  <a :href="withBase('/zh-hans/products/imx219-csi-camera')" class="category-card">
+    <img :src="withBase('/images/categories/CSI-Camera.png')" alt="CSI 摄像头">
+    <span>CSI 摄像头</span>
   </a>
 </div>
 
@@ -51,16 +71,20 @@ outline: false
 
 <div class="category-grid reveal">
   <a :href="withBase('/zh-hans/tutorials/robot-arms/')" class="category-card">
-    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="机器人机械臂系列">
-    <span>机器人机械臂系列</span>
+    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="机械臂教程">
+    <span>机械臂教程</span>
   </a>
-  <a :href="withBase('/zh-hans/tutorials/accessories/')" class="category-card">
-    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="机器人配件">
-    <span>机器人配件</span>
+  <a :href="withBase('/zh-hans/tutorials/robot-arms/xlerobot/')" class="category-card">
+    <img :src="withBase('/images/categories/XLeRobot.png')" alt="移动机器人教程">
+    <span>移动机器人教程</span>
   </a>
   <a :href="withBase('/zh-hans/tutorials/sensors/')" class="category-card">
-    <img :src="withBase('/images/categories/IMU.png')" alt="传感器与感知">
-    <span>传感器与感知</span>
+    <img :src="withBase('/images/categories/IMU.png')" alt="传感器教程">
+    <span>传感器教程</span>
+  </a>
+  <a :href="withBase('/zh-hans/tutorials/accessories/')" class="category-card">
+    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="配件教程">
+    <span>配件教程</span>
   </a>
 </div>
 

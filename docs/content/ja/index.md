@@ -31,17 +31,37 @@ outline: false
 ## 製品シリーズ
 
 <div class="category-grid reveal">
-  <a :href="withBase('/ja/tutorials/robot-arms/')" class="category-card">
-    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="ロボットアーム">
-    <span>ロボットアーム</span>
+  <a :href="withBase('/ja/products/so-arm101')" class="category-card">
+    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="SO-ARM101 ロボットアーム">
+    <span>SO-ARM101 ロボットアーム</span>
   </a>
-  <a :href="withBase('/ja/tutorials/sensors/')" class="category-card">
-    <img :src="withBase('/images/categories/IMU.png')" alt="センサー">
-    <span>センサー</span>
+  <a :href="withBase('/ja/products/amazinghand')" class="category-card">
+    <img :src="withBase('/images/categories/AmazingHand.png')" alt="AmazingHand 器用ハンド">
+    <span>AmazingHand 器用ハンド</span>
   </a>
-  <a :href="withBase('/ja/tutorials/accessories/')" class="category-card">
-    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="アクセサリー">
-    <span>アクセサリー</span>
+  <a :href="withBase('/ja/products/xlerobot')" class="category-card">
+    <img :src="withBase('/images/categories/XLeRobot.png')" alt="XLeRobot 移動ロボット">
+    <span>XLeRobot 移動ロボット</span>
+  </a>
+  <a :href="withBase('/ja/products/esp32-s3-wifi-module')" class="category-card">
+    <img :src="withBase('/images/categories/ESP32-NanoCam.png')" alt="ESP32-NanoCam 動画転送モジュール">
+    <span>ESP32-NanoCam 動画転送モジュール</span>
+  </a>
+  <a :href="withBase('/ja/products/ai-voice-module')" class="category-card">
+    <img :src="withBase('/images/categories/AI-Voice-Module.png')" alt="AI 音声対話モジュール">
+    <span>AI 音声対話モジュール</span>
+  </a>
+  <a :href="withBase('/ja/products/imu-module')" class="category-card">
+    <img :src="withBase('/images/categories/IMU.png')" alt="IMU 慣性航法モジュール">
+    <span>IMU 慣性航法モジュール</span>
+  </a>
+  <a :href="withBase('/ja/products/gps-beidou-module')" class="category-card">
+    <img :src="withBase('/images/categories/GPS.png')" alt="GPS 北斗測位モジュール">
+    <span>GPS 北斗測位モジュール</span>
+  </a>
+  <a :href="withBase('/ja/products/imx219-csi-camera')" class="category-card">
+    <img :src="withBase('/images/categories/CSI-Camera.png')" alt="IMX219 CSI カメラ">
+    <span>IMX219 CSI カメラ</span>
   </a>
 </div>
 
@@ -51,16 +71,20 @@ outline: false
 
 <div class="category-grid reveal">
   <a :href="withBase('/ja/tutorials/robot-arms/')" class="category-card">
-    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="ロボットアームシリーズ">
-    <span>ロボットアームシリーズ</span>
+    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="ロボットアームチュートリアル">
+    <span>ロボットアームチュートリアル</span>
   </a>
-  <a :href="withBase('/ja/tutorials/accessories/')" class="category-card">
-    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="ロボットアクセサリ">
-    <span>ロボットアクセサリ</span>
+  <a :href="withBase('/ja/tutorials/robot-arms/xlerobot/')" class="category-card">
+    <img :src="withBase('/images/categories/XLeRobot.png')" alt="移動ロボットチュートリアル">
+    <span>移動ロボットチュートリアル</span>
   </a>
   <a :href="withBase('/ja/tutorials/sensors/')" class="category-card">
-    <img :src="withBase('/images/categories/IMU.png')" alt="センサーと知覚">
-    <span>センサーと知覚</span>
+    <img :src="withBase('/images/categories/IMU.png')" alt="センサーチュートリアル">
+    <span>センサーチュートリアル</span>
+  </a>
+  <a :href="withBase('/ja/tutorials/accessories/')" class="category-card">
+    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="アクセサリーチュートリアル">
+    <span>アクセサリーチュートリアル</span>
   </a>
 </div>
 

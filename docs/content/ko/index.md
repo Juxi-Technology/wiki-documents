@@ -31,17 +31,37 @@ outline: false
 ## 제품 시리즈
 
 <div class="category-grid reveal">
-  <a :href="withBase('/ko/tutorials/robot-arms/')" class="category-card">
-    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="로봇 암">
-    <span>로봇 암</span>
+  <a :href="withBase('/ko/products/so-arm101')" class="category-card">
+    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="SO-ARM101 로봇 팔">
+    <span>SO-ARM101 로봇 팔</span>
   </a>
-  <a :href="withBase('/ko/tutorials/sensors/')" class="category-card">
-    <img :src="withBase('/images/categories/IMU.png')" alt="센서">
-    <span>센서</span>
+  <a :href="withBase('/ko/products/amazinghand')" class="category-card">
+    <img :src="withBase('/images/categories/AmazingHand.png')" alt="AmazingHand 정교 손">
+    <span>AmazingHand 정교 손</span>
   </a>
-  <a :href="withBase('/ko/tutorials/accessories/')" class="category-card">
-    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="액세서리">
-    <span>액세서리</span>
+  <a :href="withBase('/ko/products/xlerobot')" class="category-card">
+    <img :src="withBase('/images/categories/XLeRobot.png')" alt="XLeRobot 이동 로봇">
+    <span>XLeRobot 이동 로봇</span>
+  </a>
+  <a :href="withBase('/ko/products/esp32-s3-wifi-module')" class="category-card">
+    <img :src="withBase('/images/categories/ESP32-NanoCam.png')" alt="ESP32-NanoCam 영상 전송">
+    <span>ESP32-NanoCam 영상 전송</span>
+  </a>
+  <a :href="withBase('/ko/products/ai-voice-module')" class="category-card">
+    <img :src="withBase('/images/categories/AI-Voice-Module.png')" alt="AI 음성 인터랙션 모듈">
+    <span>AI 음성 인터랙션 모듈</span>
+  </a>
+  <a :href="withBase('/ko/products/imu-module')" class="category-card">
+    <img :src="withBase('/images/categories/IMU.png')" alt="IMU 관성항법 모듈">
+    <span>IMU 관성항법 모듈</span>
+  </a>
+  <a :href="withBase('/ko/products/gps-beidou-module')" class="category-card">
+    <img :src="withBase('/images/categories/GPS.png')" alt="GPS 北斗 측위 모듈">
+    <span>GPS 北斗 측위 모듈</span>
+  </a>
+  <a :href="withBase('/ko/products/imx219-csi-camera')" class="category-card">
+    <img :src="withBase('/images/categories/CSI-Camera.png')" alt="CSI 카메라">
+    <span>CSI 카메라</span>
   </a>
 </div>
 
@@ -51,16 +71,20 @@ outline: false
 
 <div class="category-grid reveal">
   <a :href="withBase('/ko/tutorials/robot-arms/')" class="category-card">
-    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="로봇 팔 시리즈">
-    <span>로봇 팔 시리즈</span>
+    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="로봇 팔 튜토리얼">
+    <span>로봇 팔 튜토리얼</span>
   </a>
-  <a :href="withBase('/ko/tutorials/accessories/')" class="category-card">
-    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="로봇 액세서리">
-    <span>로봇 액세서리</span>
+  <a :href="withBase('/ko/tutorials/robot-arms/xlerobot/')" class="category-card">
+    <img :src="withBase('/images/categories/XLeRobot.png')" alt="이동 로봇 튜토리얼">
+    <span>이동 로봇 튜토리얼</span>
   </a>
   <a :href="withBase('/ko/tutorials/sensors/')" class="category-card">
-    <img :src="withBase('/images/categories/IMU.png')" alt="센서와 인지">
-    <span>센서와 인지</span>
+    <img :src="withBase('/images/categories/IMU.png')" alt="센서 튜토리얼">
+    <span>센서 튜토리얼</span>
+  </a>
+  <a :href="withBase('/ko/tutorials/accessories/')" class="category-card">
+    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="액세서리 튜토리얼">
+    <span>액세서리 튜토리얼</span>
   </a>
 </div>
 

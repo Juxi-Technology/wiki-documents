@@ -31,17 +31,37 @@ outline: false
 ## Linhas de Produtos
 
 <div class="category-grid reveal">
-  <a :href="withBase('/pt-pt/tutorials/robot-arms/')" class="category-card">
-    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="Braços Robóticos">
-    <span>Braços Robóticos</span>
+  <a :href="withBase('/pt-pt/products/so-arm101')" class="category-card">
+    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="SO-ARM101 Braço Robótico">
+    <span>SO-ARM101 Braço Robótico</span>
   </a>
-  <a :href="withBase('/pt-pt/tutorials/sensors/')" class="category-card">
-    <img :src="withBase('/images/categories/IMU.png')" alt="Sensores">
-    <span>Sensores</span>
+  <a :href="withBase('/pt-pt/products/amazinghand')" class="category-card">
+    <img :src="withBase('/images/categories/AmazingHand.png')" alt="AmazingHand Mão Hábil">
+    <span>AmazingHand Mão Hábil</span>
   </a>
-  <a :href="withBase('/pt-pt/tutorials/accessories/')" class="category-card">
-    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="Acessórios">
-    <span>Acessórios</span>
+  <a :href="withBase('/pt-pt/products/xlerobot')" class="category-card">
+    <img :src="withBase('/images/categories/XLeRobot.png')" alt="XLeRobot Robô Móvel">
+    <span>XLeRobot Robô Móvel</span>
+  </a>
+  <a :href="withBase('/pt-pt/products/esp32-s3-wifi-module')" class="category-card">
+    <img :src="withBase('/images/categories/ESP32-NanoCam.png')" alt="ESP32-NanoCam Vídeo WiFi">
+    <span>ESP32-NanoCam Vídeo WiFi</span>
+  </a>
+  <a :href="withBase('/pt-pt/products/ai-voice-module')" class="category-card">
+    <img :src="withBase('/images/categories/AI-Voice-Module.png')" alt="Módulo de Voz IA">
+    <span>Módulo de Voz IA</span>
+  </a>
+  <a :href="withBase('/pt-pt/products/imu-module')" class="category-card">
+    <img :src="withBase('/images/categories/IMU.png')" alt="Módulo Inercial IMU">
+    <span>Módulo Inercial IMU</span>
+  </a>
+  <a :href="withBase('/pt-pt/products/gps-beidou-module')" class="category-card">
+    <img :src="withBase('/images/categories/GPS.png')" alt="Módulo GPS e BeiDou">
+    <span>Módulo GPS e BeiDou</span>
+  </a>
+  <a :href="withBase('/pt-pt/products/imx219-csi-camera')" class="category-card">
+    <img :src="withBase('/images/categories/CSI-Camera.png')" alt="Câmara CSI IMX219">
+    <span>Câmara CSI IMX219</span>
   </a>
 </div>
 
@@ -50,16 +70,20 @@ outline: false
 
 <div class="category-grid reveal">
   <a :href="withBase('/pt-pt/tutorials/robot-arms/')" class="category-card">
-    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="Série de Braços Robóticos">
-    <span>Série de Braços Robóticos</span>
+    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="Braços Robóticos">
+    <span>Braços Robóticos</span>
   </a>
-  <a :href="withBase('/pt-pt/tutorials/accessories/')" class="category-card">
-    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="Acessórios Robóticos">
-    <span>Acessórios Robóticos</span>
+  <a :href="withBase('/pt-pt/tutorials/robot-arms/xlerobot/')" class="category-card">
+    <img :src="withBase('/images/categories/XLeRobot.png')" alt="Robôs Móveis">
+    <span>Robôs Móveis</span>
   </a>
   <a :href="withBase('/pt-pt/tutorials/sensors/')" class="category-card">
-    <img :src="withBase('/images/categories/IMU.png')" alt="Sensores e Percepção">
-    <span>Sensores e Percepção</span>
+    <img :src="withBase('/images/categories/IMU.png')" alt="Sensores">
+    <span>Sensores</span>
+  </a>
+  <a :href="withBase('/pt-pt/tutorials/accessories/')" class="category-card">
+    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="Acessórios">
+    <span>Acessórios</span>
   </a>
 </div>
 
