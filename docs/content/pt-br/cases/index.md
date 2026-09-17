@@ -1,6 +1,6 @@
 ---
 title: Histórias de Sucesso de Usuários
-description: Histórias reais de pesquisadores e desenvolvedores que usam o hardware open source da Juxi Technology
+description: "Histórias reais de pesquisadores e desenvolvedores que usam o hardware open source da Juxi Technology"
 ---
 
 # Histórias de Sucesso de Usuários

@@ -1,6 +1,6 @@
 ---
 title: "Communication PC"
-description: "Déplacez l'interrupteur à glissière en mode port série STC8"
+description: "Communication PC avec le module d'interaction vocale IA : interrupteur en mode port série STC8, lecture du protocole et diffusions via l'assistant UART."
 ---
 
 # Communication PC

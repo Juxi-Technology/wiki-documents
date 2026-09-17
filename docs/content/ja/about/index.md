@@ -1,6 +1,6 @@
 ---
 title: 会社概要
-description: Juxi Technology — 中国深圳前海発のオープンソースロボティクス企業
+description: "Juxi Technology — 中国深圳前海発のオープンソースロボティクス企業"
 ---
 
 # 会社概要

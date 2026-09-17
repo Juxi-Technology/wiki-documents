@@ -1,6 +1,6 @@
 ---
 title: "01-GUI Visual Control"
-description: "Visual Gesture Commands — Usage Tutorial"
+description: "GUI console for the AmazingHand dexterous hand on ESP32 with 8-channel PWM servos: connect over serial, click gesture buttons and tune each servo with sliders."
 ---
 
 # 01-GUI Visual Control

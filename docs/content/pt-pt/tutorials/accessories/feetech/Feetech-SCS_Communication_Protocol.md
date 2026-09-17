@@ -1,6 +1,6 @@
 ---
 title: "Protocolo de Comunicação SCS"
-description: "O nível de comunicação utiliza o método de nível TTL, compatível com comunicação de alta velocidade, e o método RS485, com forte capacidade anti-interferência."
+description: "Protocolo de comunicação SCS dos servos Feetech: quadros de instrução e resposta em TTL ou RS485, com PING, leitura, escrita, reinício e calibração."
 ---
 
 # Protocolo de Comunicação SCS

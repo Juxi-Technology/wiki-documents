@@ -1,6 +1,6 @@
 ---
 title: Casos de éxito de usuarios
-description: Casos reales de investigadores y desarrolladores que usan el hardware de código abierto de Juxi Technology
+description: "Casos reales de investigadores y desarrolladores que usan el hardware de código abierto de Juxi Technology"
 ---
 
 # Casos de éxito de usuarios

@@ -1,6 +1,6 @@
 ---
 title: "7장: QR 코드 스캔"
-description: "ESP32-NanoCam 튜토리얼 7장: esp-code-scanner로 QR 코드/바코드를 실시간 디코딩하고, 디코딩 결과를 시리얼 로그와 웹 화면에 동시에 출력합니다."
+description: "NanoCam 튜토리얼 7장: esp-code-scanner로 QR 코드와 바코드를 실시간 디코딩해 시리얼 로그와 웹 화면에 동시 출력하는 방법을 다룹니다."
 ---
 
 # 7장: QR 코드 스캔

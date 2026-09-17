@@ -1,6 +1,6 @@
 ---
 title: Installazione del supporto camera overhead
-description: "Camera USB autofocus: vedi tutorial camera USB"
+description: "Installazione del supporto camera overhead per il braccio SO-ARM101: opzioni con camera USB autofocus o kit RealSense D405C e modelli ufficiali."
 ---
 
 # Installazione del supporto camera overhead

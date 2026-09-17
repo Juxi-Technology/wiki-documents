@@ -1,6 +1,6 @@
 ---
 title: "Download e Gravação de Firmware de Palavras de Ativação"
-description: "O módulo já vem gravado de fábrica com o firmware de reconhecimento de voz, e o firmware de fábrica também é fornecido nos materiais anexo"
+description: "Como descarregar da plataforma de IA de voz Qiying Tairen e gravar no módulo KWS o firmware das palavras de ativação em chinês e inglês, passo a passo."
 ---
 
 # Download e Gravação de Firmware de Palavras de Ativação

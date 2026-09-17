@@ -1,6 +1,6 @@
 ---
 title: Guida di montaggio del braccio robotico Lerobot
-description: "Versione Pro: braccio leader 5V6A, braccio follower 12V5A"
+description: "Montaggio del braccio LeRobot SO-ARM101: impostazione degli ID e calibrazione dei servo, assemblaggio e alimentatori Pro (leader 5V6A, follower 12V5A)."
 ---
 
 # Guida di montaggio del braccio robotico Lerobot

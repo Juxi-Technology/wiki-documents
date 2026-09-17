@@ -1,6 +1,6 @@
 ---
 title: "IMU-Kalibrierung"
-description: Juxi Technology IMU-Kalibrierung — Gesamt/Magnetometer/Temperatur, UART & I2C
+description: "Juxi Technology IMU-Kalibrierung — Gesamt/Magnetometer/Temperatur, UART & I2C"
 keywords: [imu, kalibrierung, magnetometer]
 ---
 

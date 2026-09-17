@@ -1,7 +1,7 @@
 ---
 title: ESP32-S3 WiFi 動画モジュール
 category: compute-vision
-description: Juxi Technology ESP32-S3 WiFi 動画転送モジュール——200 万画素カメラ、WiFi リアルタイム転送、AI ビジョン認識(色/顔/QR)、AP+STA デュアルモード
+description: "ESP32-S3 と 200 万画素カメラの WiFi 動画モジュール。AP/STA デュアルモード転送と、猫顔や QR コードなど 8 種類の AI モードに対応します。"
 keywords: [esp32, wifi, 動画転送, カメラ, ai vision]
 ---
 

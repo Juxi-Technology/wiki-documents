@@ -1,7 +1,7 @@
 ---
 title: Kit de Visão Robótica SO-ARM101
 category: robot
-description: Kit de visão robótica SO-ARM101 da Juxi Technology — suportes de pulso/lateral/superior, câmara fixa 60FPS ou zoom com foco automático 30FPS, compatível com frameworks ACT/Smolvla/Pi0/GR00T
+description: "Kit de visão robótica SO-ARM101: suportes de pulso, lateral e superior com câmara fixa 60FPS ou zoom com foco automático 30FPS para ACT, Pi0 e GR00T."
 keywords: [suporte de câmara, kit de visão, so-arm101, visão robótica]
 ---
 

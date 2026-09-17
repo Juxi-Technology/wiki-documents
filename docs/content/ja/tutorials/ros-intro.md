@@ -1,6 +1,6 @@
 ---
 title: "ROS 入門"
-description: Juxi Technology ROS チュートリアル — ROS 2 Humble 環境構築、トピック/サービス/launch の基礎
+description: "Juxi Technology ROS チュートリアル — ROS 2 Humble 環境構築、トピック/サービス/launch の基礎"
 keywords: [ros, ros2, 入門, ロボット]
 ---
 

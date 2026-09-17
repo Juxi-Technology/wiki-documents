@@ -1,6 +1,6 @@
 ---
 title: "Serielles Protokoll"
-description: "Öffnen Sie die Datei 命令词播报词协议列表V1中文 im Anhang; Sie sehen das Sendeprotokoll und das Empfangsprotokoll,"
+description: "Das serielle Protokoll des AI-Sprachinteraktionsmoduls: Aufbau von Sende- und Empfangsrahmen, Funktions- und Befehlswort-Einträgen sowie Ansagephrasen."
 ---
 
 # Serielles Protokoll

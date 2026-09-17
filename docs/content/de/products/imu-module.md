@@ -1,7 +1,7 @@
 ---
 title: IMU Hochpräzisions-Trägheitsnavigationsmodul
 category: sensor
-description: Juxi Technology IMU — 100Hz-Attitüdenberechnung, 6/9/10-Achsen-Optionen, IIC+UART, ROS-Integration
+description: "Juxi Technology IMU — 100Hz-Attitüdenberechnung, 6/9/10-Achsen-Optionen, IIC+UART, ROS-Integration"
 keywords: [imu, trägheitsnavigation, lagesensor, ahrs, ros]
 ---
 

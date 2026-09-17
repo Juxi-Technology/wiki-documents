@@ -1,7 +1,7 @@
 ---
 title: Chaveador KVM 4-em-1
 category: accessory
-description: Chaveador KVM 4-em-1 da Juxi Technology — comutador HDMI com dock serial TTL/Bluetooth, troca de dispositivos com um clique para desenvolvimento
+description: "Chaveador KVM 4-em-1 que junta comutação HDMI, porta série TTL, Bluetooth e hub USB, permitindo alternar entre hosts e periféricos com um clique."
 keywords: [kvm, chaveador, docking station, ttl, bluetooth]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: SCS0009 舵机调试工具使用教程
-description: "专为 Feetech SCS0009 舵机（电位器反馈，10 位分辨率 0–1023）设计的 FTServo 调试工具，支持串口连接、舵机扫描、44 个寄存器参数读写、位置控制与 xdat 参数备份恢复。"
+description: "SCS0009 舵机调试工具教程:FTServo 图形工具支持串口连接、舵机扫描、44 个寄存器读写、位置控制与参数备份恢复,兼容 Windows、Ubuntu 与 macOS。"
 ---
 
 # SCS0009 舵机调试工具使用教程

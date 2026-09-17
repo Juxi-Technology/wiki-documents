@@ -1,7 +1,7 @@
 ---
 title: USB 免驱声卡
 category: accessory
-description: 钜犀科技 USB 免驱声卡——板载麦克风+扬声器,即插即用,降噪,适配树莓派/Jetson/PC 语音交互
+description: "钜犀科技 USB 免驱声卡——板载麦克风+扬声器,即插即用,降噪,适配树莓派/Jetson/PC 语音交互"
 keywords: [sound card, 声卡, usb audio, 语音交互]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Tutoriel de débogage de la main robotique (servo TTL)
-description: "Téléchargez d'abord l'archive « 灵巧手调试.zip » et extrayez-la ; utilisez ensuite le document « 使用arduio程序调试灵巧手过程（TTL舵机）» pour définir les IDs de servos。"
+description: "Débogage des servos TTL de l'AmazingHand : régler les IDs, fixer les palonniers, ajuster les positions centrales et lancer le programme de démonstration."
 ---
 
 # Tutoriel de débogage de la main robotique (servo TTL)

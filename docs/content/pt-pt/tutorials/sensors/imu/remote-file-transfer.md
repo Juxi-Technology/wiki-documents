@@ -1,6 +1,6 @@
 ---
 title: "Transferência remota de ficheiros"
-description: "O MobaXterm é uma ferramenta remota poderosa que integra ferramentas remotas como SHH, VNC e FTP."
+description: "Transferência remota de ficheiros com o MobaXterm: descarregar, instalar e usar sessões SSH, VNC e FTP para copiar dados entre o PC e o Jetson."
 ---
 
 # Transferência remota de ficheiros

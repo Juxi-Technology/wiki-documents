@@ -1,6 +1,6 @@
 ---
 title: "選定ガイド"
-description: SO-ARM101 vs AmazingHand vs Lekiwi 比較と選定アドバイス
+description: "SO-ARM101 vs AmazingHand vs Lekiwi 比較と選定アドバイス"
 keywords: [選定, robot arm, 比較]
 ---
 

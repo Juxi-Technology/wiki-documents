@@ -1,6 +1,6 @@
 ---
 title: "04-Serienservo-Version - Benutzungshinweise"
-description: "SCS0009 offizielle Busservo-Version — Benutzungshinweise"
+description: "Hinweise zur SCS0009-Busservo-Version der AmazingHand: Unterschiede zur PWM-Version, Umschalten im Demo-Menü sowie Servo-ID-Konfiguration und Baudrate."
 ---
 
 # 04-Serienservo-Version - Benutzungshinweise

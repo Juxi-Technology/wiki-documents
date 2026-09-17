@@ -1,7 +1,7 @@
 ---
 title: Robô Móvel de Inteligência Incorporada Lekiwi
 category: robot
-description: Lekiwi da Juxi Technology — robô de ensino/base móvel de baixo custo, controle por servo, amigável para educação e iniciantes
+description: "Robô móvel Lekiwi para ensino e projetos maker: estrutura simples de baixo custo com controlo por servo, alimentação de 12V e ecossistema LeRobot."
 keywords: [lekiwi, robô móvel, robô de ensino, educação]
 ---
 

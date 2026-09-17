@@ -1,7 +1,7 @@
 ---
 title: Módulo de interacción de voz IA
 category: accessory
-description: Módulo de interacción de voz IA de Juxi Technology (CI1302) — 110+ instrucciones de voz sin conexión, 99% de reconocimiento a 5 m, palabras de comando personalizadas en chino e inglés, comunicación por puerto serie/IIC, compatible con Arduino/Jetson/RDK/Raspberry Pi/PC
+description: "Módulo de voz IA CI1302: reconocimiento sin conexión, 110+ comandos en chino e inglés, 99% a 5 m y salida por puerto serie o IIC para Arduino y Raspberry Pi."
 keywords: [voz ia, módulo de interacción de voz, ci1302, reconocimiento de voz sin conexión, palabra de activación, palabras de comando, puerto serie, iic, ros1, ros2]
 ---
 

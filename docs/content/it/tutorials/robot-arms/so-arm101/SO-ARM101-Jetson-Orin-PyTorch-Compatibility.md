@@ -1,6 +1,6 @@
 ---
 title: Incompatibilità PyTorch su Jetson Orin
-description: "Installare la versione jetson di PyTorch"
+description: "Nell'ambito del braccio SO-ARM101: soluzioni ai problemi di PyTorch su NVIDIA Jetson Orin, con build Jetson, cuSPARSELt e torchvision."
 ---
 
 # Incompatibilità PyTorch su Jetson Orin

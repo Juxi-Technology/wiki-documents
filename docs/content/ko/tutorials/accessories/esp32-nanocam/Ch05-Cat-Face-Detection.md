@@ -1,6 +1,6 @@
 ---
 title: "5장: 고양이 얼굴 검출"
-description: "ESP32-NanoCam 튜토리얼 5장: CatFaceDetectMN03 모델로 고양이 얼굴을 검출하고, 얼굴 검출 모델과의 차이를 비교하며, 좌표를 읽어 서보 추적을 구동합니다."
+description: "NanoCam 튜토리얼 5장: CatFaceDetectMN03 모델로 고양이 얼굴을 검출하고 얼굴 검출 모델과 차이를 비교해 서보 추적을 구동합니다."
 ---
 
 # 5장: 고양이 얼굴 검출

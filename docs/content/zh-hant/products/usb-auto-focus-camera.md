@@ -1,7 +1,7 @@
 ---
 title: USB 自動對焦攝像頭
 category: compute-vision
-description: 鉅犀科技 USB 免驅自動對焦攝像頭——86° 廣角,1080P 30FPS,UVC 免驅,適用於機器人視覺與 AI 推理,兼容 Windows/Linux/macOS/Jetson/樹莓派
+description: "鉅犀科技 USB 自動對焦攝像頭:86° 廣角、1080P 30FPS,UVC 標準協議免驅即插即用,兼容 Windows、Linux、macOS 與 Jetson 等平台。"
 keywords: [usb 攝像頭, 自動對焦, 1080p, uvc, 免驅, 機器人視覺, jetson, 樹莓派]
 ---
 

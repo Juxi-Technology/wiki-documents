@@ -1,6 +1,6 @@
 ---
 title: PyTorch-Inkompatibilität auf Jetson Orin
-description: "PyTorch in der Jetson-Version installieren"
+description: "Teil des SO-ARM101-Tutorials: PyTorch-Probleme auf dem Jetson Orin — Lösungen für GPU-Nutzung, libcusparseLt-Fehler und torchvision-Installation."
 ---
 
 # PyTorch-Inkompatibilität auf Jetson Orin

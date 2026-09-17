@@ -1,6 +1,6 @@
 ---
 title: "Jetson Orin PyTorch Compatibility"
-description: "Install the Jetson-specific build of PyTorch."
+description: "Fix PyTorch issues on Jetson Orin: install the Jetson-specific build, get the GPU working, resolve the missing cuSPARSELt library and add matching torchvision."
 ---
 
 # Jetson Orin PyTorch Compatibility

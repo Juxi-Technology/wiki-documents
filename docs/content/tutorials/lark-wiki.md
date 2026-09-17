@@ -1,6 +1,6 @@
 ---
 title: "Lark Docs"
-description: "Mirror entry of Juxi tutorials on Feishu docs"
+description: "Mirror of the Juxi Technology tutorials on Feishu Docs, linking the Simplified Chinese, English and Traditional Chinese Lark wikis in one place."
 ---
 
 # Lark Docs

@@ -1,7 +1,7 @@
 ---
 title: Garra Flexível TPU SO-ARM101
 category: robot
-description: Garra flexível TPU SO-ARM101 da Juxi Technology — TPU macio agarra com segurança itens irregulares/frágeis, compatível com câmara do braço, opções zoom 30FPS ou fixa 60FPS
+description: "Garra flexível TPU para o SO-ARM101: material macio que agarra objetos irregulares e frágeis sem os danificar, com opções de câmara zoom 30FPS ou fixa 60FPS."
 keywords: [garra, tpu, flexível, so-arm101, preensão]
 ---
 

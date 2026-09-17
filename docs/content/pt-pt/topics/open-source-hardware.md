@@ -1,6 +1,6 @@
 ---
 title: Por Que Construímos Aberto — O Caso do Hardware Robótico Open Source
-description: A filosofia de hardware open source da JuxiTech — cada produto acompanha esquemáticos completos, código-fonte do firmware e ficheiros CAD. O custo do hardware fechado, o open source como acelerador de pesquisa e uma visão construída em Shenzhen
+description: "Filosofia de hardware aberto da Juxi Technology: cada produto inclui esquemáticos, firmware e ficheiros CAD, do fabrico em Shenzhen aos laboratórios do mundo."
 keywords: [open source, hardware aberto, robótica, filosofia, juxitech]
 ---
 

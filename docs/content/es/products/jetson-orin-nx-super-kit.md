@@ -1,7 +1,7 @@
 ---
 title: Kit de desarrollo Jetson Orin NX Super
 category: compute-vision
-description: Kit de desarrollo NVIDIA Jetson Orin NX SUPER — plataforma de IA perimetral 117/157 TOPS, Ubuntu 22.04 y SSD NVMe 256GB preinstalados
+description: "Kit de desarrollo NVIDIA Jetson Orin NX SUPER — plataforma de IA perimetral 117/157 TOPS, Ubuntu 22.04 y SSD NVMe 256GB preinstalados"
 keywords: [jetson, orin nx, edge ai, leRobot, robótica]
 ---
 

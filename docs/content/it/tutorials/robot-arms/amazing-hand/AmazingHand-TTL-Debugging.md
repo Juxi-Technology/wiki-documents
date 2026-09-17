@@ -1,6 +1,6 @@
 ---
 title: Tutorial di debug della mano dexterous (servo TTL)
-description: "Prima scaricare l'archivio «灵巧手调试.zip» ed estrarlo; poi con il documento «使用arduio程序调试灵巧手过程（TTL舵机）» impostare gli ID dei servo, calibrare。"
+description: "Debug della mano AmazingHand con servo TTL: impostazione degli ID, calibrazione, cablaggio tramite scheda driver o microcontrollore ed esecuzione della demo."
 ---
 
 # Tutorial di debug della mano dexterous (servo TTL)

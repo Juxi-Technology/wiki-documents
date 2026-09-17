@@ -1,6 +1,6 @@
 ---
 title: "Guide de développement"
-description: "Contenu de cette page en préparation"
+description: "Le guide de développement est en cours de rédaction : consultez le centre de tutoriels pour la documentation des produits et contactez la communauté."
 ---
 
 # Guide de développement

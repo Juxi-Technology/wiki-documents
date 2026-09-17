@@ -1,7 +1,7 @@
 ---
 title: AI 음성 인터랙션 모듈
 category: accessory
-description: Juxi Technology AI 음성 인터랙션 모듈(CI1302) — 110+개 오프라인 음성 명령어, 5m 이내 인식률 99%, 사용자 정의 중국어/영어 명령어 지원, 시리얼/IIC 통신, Arduino/Jetson/RDK/Raspberry Pi/PC 지원
+description: "CI1302 오프라인 AI 음성 인터랙션 모듈: 110+개 명령어, 5m 이내 인식률 99%, 시리얼·IIC 출력, Arduino·Jetson·라즈베리파이 지원."
 keywords: [ai 음성, 음성 인터랙션 모듈, ci1302, 오프라인 음성 인식, 웨이크 워드, 명령어, 시리얼, iic, ros1, ros2]
 ---
 

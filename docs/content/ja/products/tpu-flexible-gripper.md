@@ -1,7 +1,7 @@
 ---
 title: SO-ARM101 TPU フレキシブルグリッパー
 category: robot
-description: Juxi Technology SO-ARM101 TPU フレキシブルグリッパー——柔らかい TPU 素材で不規則・壊れやすい物体を安全に把持、アーム搭載カメラ対応、30FPS ズーム/60FPS 固定焦点選択可
+description: "柔らかい TPU 素材で不規則で壊れやすい物体を安全に把持できる SO-ARM101 用フレキシブルグリッパー。アーム搭載カメラと組み合わせたビジョンガイド把持にも対応します。"
 keywords: [gripper, グリッパー, tpu, フレキシブル, so-arm101, 把持]
 ---
 

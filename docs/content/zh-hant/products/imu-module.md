@@ -1,7 +1,7 @@
 ---
 title: IMU 高精度慣導模組
 category: sensor
-description: 鉅犀科技 IMU 高精度慣導模組——100Hz 姿態解算,六軸/九軸/十軸可選,IIC+串口雙通信,ROS 集成
+description: "鉅犀科技 IMU 高精度慣導模組——100Hz 姿態解算,六軸/九軸/十軸可選,IIC+串口雙通信,ROS 集成"
 keywords: [imu, 慣導, 姿態傳感器, ahrs, ros]
 ---
 

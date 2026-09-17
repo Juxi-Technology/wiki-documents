@@ -1,6 +1,6 @@
 ---
 title: 邊緣 AI 部署入門
-description: Jetson 邊緣 AI 部署入門——PyTorch 模型落地 TensorRT,ONNX 導出與推理優化,常見部署路徑與排錯
+description: "Jetson 邊緣 AI 部署入門——PyTorch 模型落地 TensorRT,ONNX 導出與推理優化,常見部署路徑與排錯"
 keywords: [edge ai, tensorrt, onnx, 邊緣部署, jetson]
 ---
 

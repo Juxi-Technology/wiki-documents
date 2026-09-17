@@ -1,7 +1,7 @@
 ---
 title: SO-ARM101 Robot Vision Kit
 category: robot
-description: Juxi Technology SO-ARM101 robot vision kit — wrist/side/overhead mounts, 60FPS fixed or 30FPS autofocus zoom camera, compatible with ACT/Smolvla/Pi0/GR00T frameworks
+description: "Camera kit for SO-ARM101 robot arms: wrist, side or overhead mounts, 60FPS fixed or 30FPS autofocus zoom cameras, compatible with ACT, Smolvla, Pi0 and GR00T."
 keywords: [camera mount, vision kit, so-arm101, robot vision]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: AI 音声対話モジュール
 category: accessory
-description: Juxi Technology AI 音声対話モジュール(CI1302)——110+ 個のオフライン音声コマンド、5 メートルで認識率 99%、中国語/英語のカスタムコマンドワード対応、シリアル/IIC 通信、Arduino/Jetson/RDK/Raspberry Pi/PC 対応
+description: "CI1302 搭載のオフライン AI 音声対話モジュール。110 個以上のコマンド、5 メートルで認識率 99%、シリアルや IIC で各種ホストに対応します。"
 keywords: [ai音声, 音声対話モジュール, ci1302, オフライン音声認識, ウェイクワード, コマンドワード, シリアル, iic, ros1, ros2]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Servos de Barramento Feetech (SCS0009 / STS3215)
 category: accessory
-description: Servos de barramento serial Feetech SCS0009 e STS3215 da Juxi Technology — protocolo SCS, versões magnética/potenciômetro, análise da tabela de memória, ferramenta FD
+description: "Servos de barramento serial Feetech SCS0009 e STS3215: protocolo SCS, versões com encoder magnético ou potenciómetro e depuração pela ferramenta FD no Windows."
 keywords: [feetech, servo, scs, sts, barramento serial]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Downloads
-description: Downloads de firmware, SDK, software host e código open source da Juxi Technology
+description: "Central de downloads da Juxi Technology com firmware, SDK, software de host e código open source para braços robóticos, sensores e acessórios."
 ---
 
 # Downloads

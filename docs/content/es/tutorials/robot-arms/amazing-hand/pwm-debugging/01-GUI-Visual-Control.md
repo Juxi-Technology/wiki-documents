@@ -1,6 +1,6 @@
 ---
 title: "01-Control visual por GUI"
-description: "Comandos de gestos visuales — Tutorial de uso"
+description: "Control visual por GUI de la mano AmazingHand con ESP32-S3: ejecuta gestos y controla los 8 servos PWM desde el PC, con programa empaquetado o código fuente."
 ---
 
 # 01-Control visual por GUI

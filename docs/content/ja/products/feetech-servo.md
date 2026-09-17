@@ -1,7 +1,7 @@
 ---
 title: Feetech バスサーボ(SCS0009 / STS3215)
 category: accessory
-description: Juxi Technology Feetech シリアルバスサーボ SCS0009 / STS3215——SCS 通信プロトコル、磁気エンコーダ/ポテンショメータ 2 バージョン、メモリテーブル解析、上位機デバッグ
+description: "Feetech 製シリアルバスサーボ。磁気エンコーダの STS とポテンショメータの SCSCL の 2 版があり、SO-ARM101 に搭載、FD 上位機でデバッグできます。"
 keywords: [feetech, サーボ, scs, sts, シリアルバス]
 ---
 

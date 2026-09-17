@@ -1,7 +1,7 @@
 ---
 title: AmazingHand オープンソース 4指器用ハンド
 category: robot
-description: Juxi Technology AmazingHand オープンソース 4指器用ハンド、TTLバス制御、オープンCAD、具身知能・HRI研究
+description: "Juxi Technology AmazingHand オープンソース 4指器用ハンド、TTLバス制御、オープンCAD、具身知能・HRI研究"
 keywords: [amazinghand, 器用ハンド, dexterous hand, 具身知能]
 ---
 

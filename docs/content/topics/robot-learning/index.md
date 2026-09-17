@@ -1,6 +1,6 @@
 ---
 title: Robot Learning
-description: Full-stack robot learning technologies based on LeRobot
+description: "Robot learning hub powered by SO-ARM101: data collection, training ACT, Diffusion Policy and Pi0 models, TensorRT deployment on Jetson, and model evaluation."
 ---
 
 # Robot Learning

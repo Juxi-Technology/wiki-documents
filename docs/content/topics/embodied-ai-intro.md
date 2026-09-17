@@ -1,6 +1,6 @@
 ---
 title: Embodied AI Intro (LeRobot)
-description: Embodied AI intro — LeRobot framework, SO-ARM101 data collection/training/evaluation, ACT/Diffusion/SmolVLA selection
+description: "Embodied AI intro — LeRobot framework, SO-ARM101 data collection/training/evaluation, ACT/Diffusion/SmolVLA selection"
 keywords: [lerobot, embodied ai, imitation learning, act, so-arm101]
 ---
 

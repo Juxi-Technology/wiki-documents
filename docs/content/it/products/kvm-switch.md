@@ -1,7 +1,7 @@
 ---
 title: Switch KVM 4-in-1
 category: accessory
-description: Switch KVM 4-in-1 di Juxi Technology — docking station TTL seriale/Bluetooth, commutazione multi-dispositivo, debug robotico
+description: "Switch KVM 4-in-1 di Juxi Technology — docking station TTL seriale/Bluetooth, commutazione multi-dispositivo, debug robotico"
 keywords: [kvm, switch, docking station, ttl, bluetooth]
 ---
 

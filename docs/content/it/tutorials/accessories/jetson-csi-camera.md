@@ -1,6 +1,6 @@
 ---
 title: Fotocamera CSI Jetson
-description: "Utilizzo del modulo fotocamera CSI NVIDIA Jetson Orin"
+description: "Modulo fotocamera CSI per i kit NVIDIA Jetson Orin: specifiche, collegamento hardware, verifica del riconoscimento ed esempi con OpenCV e GStreamer."
 ---
 
 # Fotocamera CSI Jetson

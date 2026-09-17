@@ -1,6 +1,6 @@
 ---
 title: "具身智能入門（LeRobot）"
-description: 具身智能入門——LeRobot 框架上手,SO-ARM101 數據採集/訓練/評估全流程,ACT/擴散策略/SmolVLA 選型
+description: "具身智能入門——LeRobot 框架上手,SO-ARM101 數據採集/訓練/評估全流程,ACT/擴散策略/SmolVLA 選型"
 keywords: [lerobot, 具身智能, 模仿學習, act, so-arm101, 機器人學習]
 ---
 

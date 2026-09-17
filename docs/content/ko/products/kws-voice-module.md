@@ -1,7 +1,7 @@
 ---
 title: KWS 음성 상호작용 모듈
 category: accessory
-description: Juxi Technology KWS 음성 인식 상호작용 모듈 — 중문/영문 인식어, 직렬/RViz2 시각화, Jetson/라즈베리파이 지원, 펌웨어 오픈소스
+description: "Juxi Technology KWS 음성 인식 상호작용 모듈 — 중문/영문 인식어, 직렬/RViz2 시각화, Jetson/라즈베리파이 지원, 펌웨어 오픈소스"
 keywords: [kws, 음성 인식, 음성 상호작용, 웨이크 워드, ai voice]
 ---
 

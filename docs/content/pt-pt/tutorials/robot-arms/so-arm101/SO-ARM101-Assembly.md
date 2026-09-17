@@ -1,6 +1,6 @@
 ---
 title: "Guia de Montagem do Braço Robótico Lerobot"
-description: "O braço ativo da versão Pro usa um adaptador de energia de 5V6A, enquanto o braço passivo usa um adaptador de energia de 12V5A"
+description: "Guia de montagem do braço robótico LeRobot SO-ARM101: definir os IDs dos servos no Windows ou Linux, instalar as palhetas e seguir a montagem."
 ---
 
 # Guia de Montagem do Braço Robótico Lerobot

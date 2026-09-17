@@ -1,6 +1,6 @@
 ---
 title: "IMU Calibration"
-description: Juxi Technology high-precision IMU module calibration — full, magnetometer, and temperature calibration over serial & I2C
+description: "Juxi Technology high-precision IMU module calibration — full, magnetometer, and temperature calibration over serial & I2C"
 keywords: [imu, calibration, magnetometer, temperature calibration]
 ---
 

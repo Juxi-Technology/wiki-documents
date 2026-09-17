@@ -1,7 +1,7 @@
 ---
 title: Robot mobile a due bracci XLeRobot
 category: robot
-description: Robot mobile a due bracci XLeRobot di Juxi Technology — due bracci SO-ARM101, base a ruote omnidirezionali e torre della telecamera, doppia scheda di driver del servo a 12V, ecosistema LeRobot, disponibile assemblato o come kit a pezzi
+description: "XLeRobot: robot mobile open source a due bracci SO-ARM101 con base a ruote omnidirezionali e torre della telecamera, nell'ecosistema LeRobot."
 keywords: [xlerobot, robot a due bracci, robot mobile, ia incarnata, lerobot, so-arm101, base a ruote omnidirezionali]
 ---
 

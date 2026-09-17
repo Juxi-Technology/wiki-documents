@@ -1,6 +1,6 @@
 ---
 title: "Introducción a ROS"
-description: Tutorial ROS de Juxi Technology — instalación ROS 2 Humble, bases de topics/servicios/launch
+description: "Tutorial ROS de Juxi Technology — instalación ROS 2 Humble, bases de topics/servicios/launch"
 keywords: [ros, ros2, introducción, robótica]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Calibración IMU"
-description: Calibración del módulo IMU de Juxi Technology — completa/imán/temperatura, UART e I2C
+description: "Calibración del módulo IMU de Juxi Technology — completa/imán/temperatura, UART e I2C"
 keywords: [imu, calibración, magnetómetro]
 ---
 

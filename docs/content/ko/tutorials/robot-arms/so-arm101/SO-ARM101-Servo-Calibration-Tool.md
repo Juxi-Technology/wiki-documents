@@ -1,6 +1,6 @@
 ---
 title: SoARM 시리즈 서보 캘리브레이션 도구 사용 튜토리얼
-description: "SoARM 10X 시리즈 로봇팔용 FTServo 서보 공장 캘리브레이션 및 LeRobot 캘리브레이션 도구로, 중앙값 캘리브레이션, 단일 서보 제어, FT 디버거 파라미터 읽기/쓰기, xdat 파라미터 백업/복원을 지원합니다."
+description: "SoARM 시리즈 서보 캘리브레이션 도구: STS3215 전용, 중앙값 캘리브레이션과 듀얼 포트 제어, LeRobot JSON·xdat 백업을 지원합니다."
 ---
 
 # SoARM 시리즈 서보 캘리브레이션 도구 사용 튜토리얼

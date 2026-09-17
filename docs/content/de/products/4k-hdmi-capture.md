@@ -1,7 +1,7 @@
 ---
 title: 4K-HDMI-Capture-Karte
 category: accessory
-description: Juxi Technology 4K-Capture-Karte — 4K-Aufnahme, HDMI/Micro HDMI/DP, USB-Direktanschluss, Streaming und Aufzeichnung
+description: "Juxi Technology 4K-Capture-Karte — 4K-Aufnahme, HDMI/Micro HDMI/DP, USB-Direktanschluss, Streaming und Aufzeichnung"
 keywords: [hdmi capture, capture-karte, 4k, aufzeichnung]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 4-in-1 KVM スイッチャー
 category: accessory
-description: Juxi Technology 4-in-1 KVM スイッチャー——TTL シリアル/Bluetooth ドッキングステーション、複数デバイスワンキー切替、ロボット開発デバッグの相棒
+description: "HDMI、TTL シリアル、Bluetooth、USB ハブを一体化した 4-in-1 KVM スイッチャー。複数デバイスをワンキーで切替し、ロボット開発のデバッグに使えます。"
 keywords: [kvm, スイッチャー, ドッキングステーション, ttl, bluetooth]
 ---
 

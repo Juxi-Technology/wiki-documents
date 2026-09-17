@@ -1,6 +1,6 @@
 ---
 title: 第 1 章:環境搭建
-description: "ESP32-NanoCam 教程第 1 章:安裝 CH340K 串口驅動，掌握 esptool-js 網頁燒錄、esptool 命令行、ESP-IDF 與 ESP-EIM-GUI 四種燒錄環境搭建方式，並完成 xiaozhi.me 伺服器帳號註冊。"
+description: "ESP32-NanoCam 教程第 1 章:安裝 CH340K 串口驅動,介紹網頁與命令行等四種固件燒錄環境搭建方式,並完成伺服器帳號註冊。"
 ---
 
 # 第 1 章:環境搭建

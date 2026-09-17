@@ -1,7 +1,7 @@
 ---
 title: 3D RealSense 深度カメラ
 category: compute-vision
-description: Juxi Technology 3D RealSense 深度カメラ——D435i/D405/D405CB の 3 モデル、高精度深度知覚、XLeRobot と SO-ARM101 に対応
+description: "D435i、D405、D405CB から選べる 3D RealSense 深度カメラ。高精度な深度マップを出力し、XLeRobot や SO-ARM101 にそのまま対応します。"
 keywords: [realsense, depth camera, 深度カメラ, 3d vision, 深度知覚, ロボットビジョン]
 ---
 

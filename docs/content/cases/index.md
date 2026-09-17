@@ -1,6 +1,6 @@
 ---
 title: User Success Stories
-description: Real stories from researchers and developers using Juxi Technology open-source hardware
+description: "Real stories from researchers and developers using Juxi Technology open-source hardware"
 ---
 
 # User Success Stories

@@ -1,6 +1,6 @@
 ---
 title: "Guía de selección"
-description: Comparativa SO-ARM101 vs AmazingHand vs Lekiwi
+description: "Guía de selección de brazos robóticos de Juxi: comparativa de SO-ARM101, AmazingHand y Lekiwi por DOF, control, plataforma host y casos de uso."
 keywords: [selección, brazo robótico, comparativa]
 ---
 

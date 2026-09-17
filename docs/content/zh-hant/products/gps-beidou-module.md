@@ -1,7 +1,7 @@
 ---
 title: GPS & 北斗 GNSS 定位模組
 category: sensor
-description: 鉅犀科技 GPS & 北斗 GNSS 定位模組——ATGM336H-5N 芯片,四大衛星系統聯合定位,2.5m 精度,支持 ROS
+description: "鉅犀科技 GPS & 北斗 GNSS 定位模組——ATGM336H-5N 芯片,四大衛星系統聯合定位,2.5m 精度,支持 ROS"
 keywords: [gps, beidou, gnss, 北斗, 定位模組, ros]
 ---
 

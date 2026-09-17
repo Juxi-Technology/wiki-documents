@@ -1,7 +1,7 @@
 ---
 title: USBオートフォーカスカメラ
 category: compute-vision
-description: Juxi Technology USBドライバ不要オートフォーカスカメラ——86°広角、1080P 30FPS、UVC プラグアンドプレイ、ロボットビジョンと AI 推論向け、Windows/Linux/macOS/Jetson/Raspberry Pi 対応
+description: "86° 広角オートフォーカスの 1080P 30FPS USB カメラ。UVC 対応でドライバ不要、Windows、Linux、Jetson、Raspberry Pi で使えます。"
 keywords: [usb カメラ, オートフォーカス, 1080p, uvc, ドライバ不要, ロボットビジョン, jetson, ラズベリーパイ]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "02-手勢追蹤教程"
-description: "手勢追蹤 — 使用教程(PWM 舵機版)"
+description: "AmazingHand 手勢追蹤教程(PWM 舵機版):攝像頭經 MediaPipe 識別手勢,由 ESP32-S3 直驅 8 路 PWM 舵機,讓靈巧手實時跟隨。"
 ---
 
 # 02-手勢追蹤教程

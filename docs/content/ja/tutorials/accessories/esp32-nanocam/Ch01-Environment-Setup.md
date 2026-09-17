@@ -1,6 +1,6 @@
 ---
 title: 第 1 章:環境構築
-description: "ESP32-NanoCam チュートリアル第 1 章:CH340K シリアルドライバのインストール、esptool-js Web 書き込み、esptool コマンドライン、ESP-IDF、ESP-EIM-GUI の 4 種類の書き込み環境構築方法を習得し、xiaozhi.me サーバーのアカウント登録を完了します。"
+description: "ESP32-NanoCam チュートリアル第 1 章。CH340K ドライバや ESP-IDF など 4 種類の書き込み環境の構築と、小智 AI サーバーの登録手順を解説します。"
 ---
 
 # 第 1 章:環境構築

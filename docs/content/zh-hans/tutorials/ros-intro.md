@@ -1,6 +1,6 @@
 ---
 title: "ROS 入门"
-description: 钜犀科技 ROS 入门教程——ROS 1/ROS 2 环境安装、话题/服务/launch 基础概念,结合 IMU 与 SO-ARM101 机器人实践
+description: "钜犀科技 ROS 入门教程——ROS 1/ROS 2 环境安装、话题/服务/launch 基础概念,结合 IMU 与 SO-ARM101 机器人实践"
 keywords: [ros, ros2, ros1, 入门, 机器人操作系统]
 ---
 

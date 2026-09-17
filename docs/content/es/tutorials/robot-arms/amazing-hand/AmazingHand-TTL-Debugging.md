@@ -1,6 +1,6 @@
 ---
 title: Tutorial de depuración de la mano hábil (servo TTL)
-description: "Primero descargue el paquete comprimido «灵巧手调试.zip» y extráigalo; luego use el documento «使用arduio程序调试灵巧手过程（TTL舵机）» para configurar IDs de servos, calibrar。"
+description: "Depuración de la mano diestra AmazingHand con servos TTL: conexión, configuración de IDs, ajuste de la posición central, servo horns y programa demo."
 ---
 
 # Tutorial de depuración de la mano hábil (servo TTL)

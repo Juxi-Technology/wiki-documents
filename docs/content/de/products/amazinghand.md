@@ -1,7 +1,7 @@
 ---
 title: AmazingHand 4-Finger-Greifhand
 category: robot
-description: Juxi Technology AmazingHand — 4-Finger-Greifhand, TTL-Bussteuerung, offenes CAD, Embodied-AI- und HRI-Forschung
+description: "Juxi Technology AmazingHand — 4-Finger-Greifhand, TTL-Bussteuerung, offenes CAD, Embodied-AI- und HRI-Forschung"
 keywords: [amazinghand, greifhand, dexterous hand, embodied ai]
 ---
 

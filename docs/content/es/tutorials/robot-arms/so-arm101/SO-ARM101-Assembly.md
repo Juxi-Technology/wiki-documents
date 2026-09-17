@@ -1,6 +1,6 @@
 ---
 title: Guía de montaje del brazo robótico Lerobot
-description: "Versión Pro: brazo líder 5V6A, brazo seguidor 12V5A"
+description: "Guía de montaje del brazo SO-ARM101 versión Pro: configuración de IDs y baudios de los servos, calibración y ensamblaje del brazo líder y el seguidor."
 ---
 
 # Guía de montaje del brazo robótico Lerobot

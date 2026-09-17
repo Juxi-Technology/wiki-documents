@@ -1,6 +1,6 @@
 ---
 title: Sobre Nós
-description: Juxi Technology — empresa de hardware de robótica open source de Qianhai, Shenzhen
+description: "Juxi Technology — empresa de hardware de robótica open source de Qianhai, Shenzhen"
 ---
 
 # Sobre Nós

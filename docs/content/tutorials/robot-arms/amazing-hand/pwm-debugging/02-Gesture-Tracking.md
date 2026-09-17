@@ -1,6 +1,6 @@
 ---
 title: "02-Gesture Tracking Tutorial"
-description: "Gesture Tracking — Usage Tutorial (PWM Servo Version)"
+description: "Gesture tracking for the AmazingHand PWM version: MediaPipe reads your hand from the camera and MuJoCo inverse kinematics drive the ESP32 hand in real time."
 ---
 
 # 02-Gesture Tracking Tutorial

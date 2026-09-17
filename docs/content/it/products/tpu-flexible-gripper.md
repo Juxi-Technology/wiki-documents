@@ -1,7 +1,7 @@
 ---
 title: Pinza flessibile in TPU SO-ARM101
 category: robot
-description: Pinza flessibile TPU SO-ARM101 di Juxi Technology — presa sicura di oggetti irregolari/fragili, fotocamera sul braccio, zoom 30FPS o fissa 60FPS
+description: "Pinza flessibile TPU SO-ARM101 di Juxi Technology — presa sicura di oggetti irregolari/fragili, fotocamera sul braccio, zoom 30FPS o fissa 60FPS"
 keywords: [pinza, tpu, flessibile, so-arm101, presa]
 ---
 

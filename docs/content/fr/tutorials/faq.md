@@ -1,6 +1,6 @@
 ---
 title: FAQ
-description: FAQ produits Juxi Technology — bras robotiques, capteurs, accessoires
+description: "FAQ produits Juxi Technology — bras robotiques, capteurs, accessoires"
 keywords: [faq, dépannage]
 ---
 

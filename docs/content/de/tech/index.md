@@ -1,6 +1,6 @@
 ---
 title: "Technische Dokumentation"
-description: "Inhalt dieser Seite in Vorbereitung"
+description: "Die technische Dokumentation von Juxi Technology befindet sich in Vorbereitung; aktuelle Anleitungen finden Sie bis dahin im Tutorial-Center dieses Wikis."
 ---
 
 # Technische Dokumentation

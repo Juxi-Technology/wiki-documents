@@ -1,6 +1,6 @@
 ---
 title: SO-ARM101 ワイヤレス遠隔操作(ESP32-NanoCam 版)
-description: "競技会デモ向けのワイヤレス遠隔操作ソリューション:リーダーアームは LeRobot 経由で Ubuntu PC に接続し、フォロワーアームは ESP32-NanoCam モジュールから micro-ROS WiFi で制御。配線、給電、書き込み、キャリブレーション、カメラ FPV までの完全な流れを網羅します。"
+description: "ESP32-NanoCam 版 SO-ARM101 ワイヤレス遠隔操作の構築ガイド。micro-ROS によるフォロワーアーム制御とカメラ FPV を含む全手順を解説します。"
 ---
 
 # SO-ARM101 ワイヤレス遠隔操作(ESP32-NanoCam 版)

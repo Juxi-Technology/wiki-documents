@@ -1,6 +1,6 @@
 ---
 title: JetPack-Flashing und Systemkonfiguration
-description: NVIDIA-Jetson-JetPack-Flashing-Guide – SDK Manager und offizielle Images, Fehlerbehebung, Grundkonfiguration
+description: "NVIDIA-Jetson-JetPack-Flashing-Guide – SDK Manager und offizielle Images, Fehlerbehebung, Grundkonfiguration"
 keywords: [jetson, jetpack, flashing, systemkonfiguration, nvidia]
 ---
 

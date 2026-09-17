@@ -1,6 +1,6 @@
 ---
 title: 다운로드 센터
-description: Juxi Technology 제품 펌웨어, SDK, 호스트 소프트웨어 및 오픈소스 코드
+description: "Juxi Technology 제품 펌웨어, SDK, 호스트 소프트웨어 및 오픈소스 코드"
 ---
 
 # 다운로드 센터

@@ -1,7 +1,7 @@
 ---
 title: Placa Driver de Servo de Barramento JUXI
 category: robot
-description: Placa driver de servo de barramento JUXI da Juxi Technology — controle de 253 servos em barramento único, entrada ampla de 7-12,6V, Type-C plug-and-play, projetada para LeRobot SO-ARM
+description: "Placa driver de servo de barramento JUXI: controlo de até 253 servos num só barramento, entrada de 7 a 12,6V e Type-C plug-and-play para os SO-ARM100/101."
 keywords: [driver de servo, servo de barramento, leRobot, so-arm101]
 ---
 

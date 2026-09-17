@@ -1,6 +1,6 @@
 ---
 title: ESP32-NanoCam 빠른 시작
-description: "ESP32-NanoCam 영상 전송/AI 비전 모듈 빠른 시작: 펌웨어 플래싱, WiFi 구성, 실시간 화면 확인, AI 모드 전환 및 Arduino / Python 프로젝트 통합까지 다섯 단계로 시작합니다."
+description: "NanoCam 빠른 시작 가이드: 펌웨어 플래싱, WiFi 연결, 실시간 화면 확인, AI 모드 전환, Arduino·Python 통합까지 5단계로 안내합니다."
 ---
 
 # ESP32-NanoCam 빠른 시작

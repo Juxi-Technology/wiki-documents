@@ -1,6 +1,6 @@
 ---
 title: ESP32-NanoCam 硬體規格書
-description: "ESP32-NanoCam 硬體規格書:雙板架構、主控與 Flash 引腳、DVP 攝像頭全映射、ES8311 音頻子系統、電源設計、完整 GPIO 佔用表與 ESP-IDF 配置參考。"
+description: "ESP32-NanoCam 硬體規格書:雙板架構、ESP32-S3 主控與 Flash 引腳、DVP 攝像頭與 ES8311 音頻子系統、電源設計及完整 GPIO 佔用表。"
 ---
 
 # ESP32-NanoCam 硬體規格書

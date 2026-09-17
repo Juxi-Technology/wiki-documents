@@ -1,6 +1,6 @@
 ---
 title: Dexterous Hand (TTL-Servo) Debug-Tutorial
-description: "Laden Sie zuerst das Archiv „灵巧手调试.zip“ herunter und entpacken Sie es; dann per Dokument „使用arduio程序调试灵巧手过程（TTL舵机）“ Servo-ID setzen, kalibrieren。"
+description: "Debug-Anleitung für die AmazingHand mit TTL-Servos: Servo-IDs setzen, Mittelstellung kalibrieren, Servohörner fixieren und das Demo-Programm ausführen."
 ---
 
 # Dexterous Hand (TTL-Servo) Debug-Tutorial

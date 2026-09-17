@@ -1,6 +1,6 @@
 ---
 title: "STM32"
-description: "Este exemplo usa um STM32F103C8T6, um computador Windows, alguns fios Dupont e um sensor de atitude IMU."
+description: "Exemplo de comunicação I2C do módulo IMU com um STM32F103C8T6: ligação ao PC Windows com fios Dupont, análise do código e leitura dos dados."
 ---
 
 # STM32

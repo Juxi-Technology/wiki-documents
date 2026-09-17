@@ -1,6 +1,6 @@
 ---
 title: Produits
-description: Centre produits Juxi Technology — bras robotiques, mains, capteurs et accessoires
+description: "Centre produits Juxi Technology — bras robotiques, mains, capteurs et accessoires"
 aside: false
 sidebar: false
 outline: false

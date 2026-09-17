@@ -1,6 +1,6 @@
 ---
 title: "ROS 입문"
-description: Juxi Technology ROS 튜토리얼 — ROS 2 Humble 환경 구축, 토픽/서비스/launch 기초
+description: "Juxi Technology ROS 튜토리얼 — ROS 2 Humble 환경 구축, 토픽/서비스/launch 기초"
 keywords: [ros, ros2, 입문, 로봇]
 ---
 

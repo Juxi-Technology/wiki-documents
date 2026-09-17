@@ -1,6 +1,6 @@
 ---
 title: "Raspberry Pi: Comunicazione IIC"
-description: "Selezionare Interface Options -> I2C -> Yes"
+description: "Collegare il modulo vocale IA a un Raspberry Pi tramite IIC: dipendenze, abilitazione del bus, cablaggio ed esecuzione dello script di comunicazione."
 ---
 
 # Raspberry Pi: Comunicazione IIC

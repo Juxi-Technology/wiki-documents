@@ -1,6 +1,6 @@
 ---
 title: Série de Braços Robóticos
-description: "Início dos tutoriais de braços robóticos da Juxi Technology — SO-ARM101, AmazingHand, Lekiwi"
+description: "Série de braços robóticos: índice de tutoriais do SO-ARM101, da mão AmazingHand e do robô móvel Lekiwi, com montagem, calibração e utilização."
 ---
 
 # Série de Braços Robóticos

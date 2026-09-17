@@ -1,6 +1,6 @@
 ---
 title: "Compatibilidade PyTorch no Jetson Orin"
-description: "Instale a versão do PyTorch específica para Jetson."
+description: "Compatibilidade do PyTorch no Jetson Orin: instalar a versão específica para Jetson, resolver a cuSPARSELt em falta e instalar a torchvision correspondente."
 ---
 
 # Compatibilidade PyTorch no Jetson Orin

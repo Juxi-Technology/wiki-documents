@@ -1,6 +1,6 @@
 ---
 title: 製品一覧
-description: Juxi Technology 製品センター — ロボットアーム、器用手、センサー、アクセサリー
+description: "Juxi Technology 製品センター — ロボットアーム、器用手、センサー、アクセサリー"
 aside: false
 sidebar: false
 outline: false

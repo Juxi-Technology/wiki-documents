@@ -1,6 +1,6 @@
 ---
 title: "Conmutador KVM"
-description: "Conmutador KVM: función HUB, TTL serie, módulo Bluetooth"
+description: "Guía del conmutador KVM de Juxi: función HUB USB, puerto serie TTL y módulo Bluetooth, con conmutación por botón o mando infrarrojo y captura de pantalla HDMI."
 ---
 
 # Conmutador KVM

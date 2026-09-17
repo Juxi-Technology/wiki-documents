@@ -1,6 +1,6 @@
 ---
 title: PyTorch-Inkompatibilitäten auf Jetson Orin
-description: Lösungen für PyTorch-GPU-Probleme auf Jetson Orin
+description: "Lösungen für drei PyTorch-Probleme auf dem NVIDIA Jetson Orin: GPU nicht nutzbar, fehlende libcusparseLt-Bibliothek und torchvision-Installation."
 ---
 
 # PyTorch-Inkompatibilitäten auf Jetson Orin

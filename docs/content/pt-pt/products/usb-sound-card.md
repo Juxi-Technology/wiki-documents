@@ -1,7 +1,7 @@
 ---
 title: Placa de Som USB sem Driver
 category: accessory
-description: Placa de som USB da Juxi Technology — microfone + alto-falante integrados, plug-and-play, redução de ruído, Raspberry Pi/Jetson/PC
+description: "Placa de som USB 2.0 sem driver, com microfone e altifalante integrados e deteção automática no Raspberry Pi, Jetson ou PC, para interação por voz."
 keywords: [placa de som, áudio usb, interação por voz]
 ---
 

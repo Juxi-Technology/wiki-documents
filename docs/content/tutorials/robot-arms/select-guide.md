@@ -1,6 +1,6 @@
 ---
 title: "Selection Guide"
-description: SO-ARM101 vs AmazingHand vs Lekiwi comparison and selection guide
+description: "SO-ARM101 vs AmazingHand vs Lekiwi comparison and selection guide"
 ---
 
 # Selection Guide

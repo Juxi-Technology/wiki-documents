@@ -1,6 +1,6 @@
 ---
 title: Introduction au déploiement IA en périphérie
-description: Déploiement IA en périphérie Jetson – PyTorch vers TensorRT, export ONNX et optimisation d'inférence, chemins de déploiement et dépannage
+description: "Déploiement IA en périphérie Jetson – PyTorch vers TensorRT, export ONNX et optimisation d'inférence, chemins de déploiement et dépannage"
 keywords: [edge ai, tensorrt, onnx, déploiement périphérie, jetson]
 ---
 

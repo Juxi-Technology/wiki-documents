@@ -1,6 +1,6 @@
 ---
 title: "Transfert de fichiers SSH"
-description: "Transfert de fichiers SSH pour le module IMU : installez le logiciel de connexion à distance, connectez-vous à la carte en SSH et transférez des fichiers entre PC et appareil."
+description: "Transfert de fichiers SSH pour le module IMU : installer WinSCP, se connecter en SFTP à la carte et échanger des fichiers entre le PC et l'appareil."
 ---
 
 # Transfert de fichiers SSH

@@ -1,7 +1,7 @@
 ---
 title: USB 자동 초점 카메라
 category: compute-vision
-description: Juxi Technology USB 드라이버 불필요 자동 초점 카메라 — 86° 광각, 1080P 30FPS, UVC 플러그 앤 플레이, 로봇 비전 및 AI 추론용, Windows/Linux/macOS/Jetson/Raspberry Pi 호환
+description: "USB 자동 초점 카메라: 86° 광각 1080P 30FPS, UVC 드라이버 불필요 플러그 앤 플레이, Windows·Linux·Jetson 지원 제품 페이지."
 keywords: [usb 카메라, 자동 초점, 1080p, uvc, 드라이버 불필요, 로봇 비전, jetson, 라즈베리파이]
 ---
 

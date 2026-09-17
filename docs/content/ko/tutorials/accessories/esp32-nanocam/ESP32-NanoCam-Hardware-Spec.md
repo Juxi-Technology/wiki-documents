@@ -1,6 +1,6 @@
 ---
 title: ESP32-NanoCam 하드웨어 사양서
-description: "ESP32-NanoCam 하드웨어 사양서: 듀얼 보드 아키텍처, 메인 MCU와 Flash 핀, DVP 카메라 전체 매핑, ES8311 오디오 서브시스템, 전원 설계, 전체 GPIO 점유표와 ESP-IDF 구성 레퍼런스."
+description: "NanoCam 하드웨어 사양서: 듀얼 보드 구조, 카메라·오디오 핀 매핑과 전원 설계, 전체 GPIO 점유표와 ESP-IDF 설정 레퍼런스를 제공합니다."
 ---
 
 # ESP32-NanoCam 하드웨어 사양서

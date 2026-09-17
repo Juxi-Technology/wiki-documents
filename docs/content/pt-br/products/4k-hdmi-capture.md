@@ -1,7 +1,7 @@
 ---
 title: Capturadora HDMI 4K
 category: accessory
-description: Capturadora HDMI 4K da Juxi Technology — entradas HDMI/Micro HDMI/DP, USB direto, streaming e gravação
+description: "Capturadora HDMI 4K da Juxi Technology — entradas HDMI/Micro HDMI/DP, USB direto, streaming e gravação"
 keywords: [captura hdmi, capturadora, 4k, gravação]
 ---
 

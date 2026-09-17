@@ -1,7 +1,7 @@
 ---
 title: KWS Voice Interaction Module
 category: accessory
-description: Juxi Technology KWS voice recognition module — CN/EN wake word recognition, UART, RViz2 visualization, Jetson/Raspberry Pi
+description: "Juxi Technology KWS voice recognition module — CN/EN wake word recognition, UART, RViz2 visualization, Jetson/Raspberry Pi"
 keywords: [kws, voice recognition, wake word, ai voice]
 ---
 

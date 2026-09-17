@@ -1,7 +1,7 @@
 ---
 title: GPS & 北斗 GNSS 측위 모듈
 category: sensor
-description: Juxi Technology GPS & 北斗 GNSS 측위 모듈 — ATGM336H-5N 칩, 4대 위성 시스템 연합 측위, 2.5m 정밀도, ROS 지원
+description: "Juxi Technology GPS & 北斗 GNSS 측위 모듈 — ATGM336H-5N 칩, 4대 위성 시스템 연합 측위, 2.5m 정밀도, ROS 지원"
 keywords: [gps, beidou, gnss, 북두, 측위 모듈, ros]
 ---
 

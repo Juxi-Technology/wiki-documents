@@ -1,6 +1,6 @@
 ---
 title: "기술 문서"
-description: "이 페이지의 내용은 준비 중입니다"
+description: "Juxi Technology 기술 문서 섹션: API 참조와 개발 가이드 등 기술 문서를 갖출 예정이며, 현재는 튜토리얼 센터와 커뮤니티로 안내합니다."
 ---
 
 # 기술 문서

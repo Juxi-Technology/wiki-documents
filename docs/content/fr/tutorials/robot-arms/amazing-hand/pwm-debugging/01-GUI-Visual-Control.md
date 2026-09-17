@@ -1,6 +1,6 @@
 ---
 title: "01-Contrôle visuel par GUI"
-description: "Commandes de gestes visuelles — Tutoriel d'utilisation"
+description: "Contrôle visuel par GUI de l'AmazingHand version PWM (ESP32-S3) : console PC à boutons de gestes, curseurs des 8 servomoteurs et suivi par caméra."
 ---
 
 # 01-Contrôle visuel par GUI

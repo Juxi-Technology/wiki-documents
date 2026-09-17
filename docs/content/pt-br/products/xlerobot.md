@@ -1,7 +1,7 @@
 ---
 title: Robô móvel de dois braços XLeRobot
 category: robot
-description: Robô móvel de dois braços XLeRobot da Juxi Technology — dois braços SO-ARM101 + chassi com rodas omnidirecionais + torre de câmeras, duas placas de driver de servo alimentadas em 12V, ecossistema LeRobot, disponível como kit montado ou kit em peças
+description: "Robô móvel de dois braços XLeRobot da Juxi Technology: braços SO-ARM101 sobre chassi com rodas omnidirecionais e torre de câmeras, no ecossistema LeRobot."
 keywords: [xlerobot, robô de dois braços, robô móvel, ia incorporada, lerobot, so-arm101, chassi com rodas omnidirecionais]
 ---
 

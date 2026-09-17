@@ -1,6 +1,6 @@
 ---
 title: "02-Gesten-Tracking-Tutorial"
-description: "Gesten-Tracking — Anleitung(PWM-Servo-Version)"
+description: "Gesten-Tracking für die AmazingHand: Handbewegungen werden per Kamera und MediaPipe erfasst und in Echtzeit auf acht PWM-Servos am ESP32-S3 übertragen."
 ---
 
 # 02-Gesten-Tracking-Tutorial

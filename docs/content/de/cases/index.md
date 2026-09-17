@@ -1,6 +1,6 @@
 ---
 title: Nutzer-Erfolgsgeschichten
-description: Reale Fälle von Forschern und Entwicklern, die Open-Source-Hardware von Juxi Technology nutzen
+description: "Reale Fälle von Forschern und Entwicklern, die Open-Source-Hardware von Juxi Technology nutzen"
 ---
 
 # Nutzer-Erfolgsgeschichten

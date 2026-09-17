@@ -1,6 +1,6 @@
 ---
 title: "API Reference"
-description: "This page is being prepared"
+description: "API Reference for Juxi Technology is being written; meanwhile, browse the Tutorials Center for documentation or reach us via the community page."
 ---
 
 # API Reference

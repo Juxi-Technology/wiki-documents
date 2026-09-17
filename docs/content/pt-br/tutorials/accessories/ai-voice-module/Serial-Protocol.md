@@ -1,6 +1,6 @@
 ---
 title: "Protocolo da porta serial"
-description: "Abra o arquivo 命令词播报词协议列表V1中文 nos anexos; você verá o protocolo de envio e o protocolo de recebimento,"
+description: "Protocolo da porta serial do módulo de voz IA: como analisar os quadros de envio e recebimento, os IDs das palavras de comando e as frases de reprodução."
 ---
 
 # Protocolo da porta serial

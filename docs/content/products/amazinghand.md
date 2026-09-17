@@ -1,7 +1,7 @@
 ---
 title: AmazingHand Open-Source 4-Finger Dexterous Hand
 category: robot
-description: Juxi Technology AmazingHand open-source 4-finger dexterous hand, TTL bus control, open CAD, embodied AI & HRI research
+description: "Juxi Technology AmazingHand open-source 4-finger dexterous hand, TTL bus control, open CAD, embodied AI & HRI research"
 keywords: [amazinghand, dexterous hand, embodied ai]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Módulo de interacción por voz KWS
 category: accessory
-description: Módulo de reconocimiento de voz KWS de Juxi Technology — palabras de activación chino/inglés, serie/RViz2, Jetson/Raspberry Pi, firmware open source
+description: "Módulo de reconocimiento de voz KWS de Juxi Technology — palabras de activación chino/inglés, serie/RViz2, Jetson/Raspberry Pi, firmware open source"
 keywords: [kws, reconocimiento de voz, interacción por voz, palabra de activación, ai voice]
 ---
 

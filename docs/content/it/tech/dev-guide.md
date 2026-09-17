@@ -1,6 +1,6 @@
 ---
 title: "Guida di sviluppo"
-description: "Contenuto di questa pagina in preparazione"
+description: "Guida di sviluppo per i prodotti Juxi Technology: pagina in preparazione, con rimando al centro tutorial e ai canali di contatto."
 ---
 
 # Guida di sviluppo

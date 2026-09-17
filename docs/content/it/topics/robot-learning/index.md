@@ -1,6 +1,6 @@
 ---
 title: Tema Robot Learning
-description: Soluzioni complete di apprendimento robotico basate su LeRobot
+description: "Soluzioni complete di apprendimento robotico basate su LeRobot"
 ---
 
 # Tema Robot Learning

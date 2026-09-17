@@ -1,7 +1,7 @@
 ---
 title: Jetson Orin NX Super 開発キット
 category: compute-vision
-description: Juxi Technology NVIDIA Jetson Orin NX SUPER 開発キット——117/157 TOPS エッジ AI コンピューティングプラットフォーム、Ubuntu 22.04 と 256GB NVMe SSD プリインストール
+description: "Jetson Orin NX Super 開発キット。157 TOPS のエッジ AI 性能、Ubuntu 22.04 と 256GB SSD をプリインストール済みです。"
 keywords: [jetson, orin nx, edge ai, エッジコンピューティング, leRobot, ロボット]
 ---
 

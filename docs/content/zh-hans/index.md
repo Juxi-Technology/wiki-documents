@@ -1,6 +1,6 @@
 ---
 title: 钜犀科技 Wiki
-description: "钜犀科技官方教程与文档中心:SO-ARM101 机械臂、AmazingHand 灵巧手、XLeRobot 移动机器人、ESP32-NanoCam 图传模块、Jetson 套件、IMU/GPS 传感器与 LeRobot 模仿学习教程。"
+description: "钜犀科技官方 Wiki,机器人与 AI 硬件的开放文档平台:提供机械臂、灵巧手、图传模块、Jetson 套件与传感器教程,含 LeRobot 模仿学习资料。"
 aside: false
 sidebar: false
 outline: false

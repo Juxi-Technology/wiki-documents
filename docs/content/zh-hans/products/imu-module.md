@@ -1,7 +1,7 @@
 ---
 title: IMU 高精度惯导模块
 category: sensor
-description: 钜犀科技 IMU 高精度惯导模块——100Hz 姿态解算,六轴/九轴/十轴可选,IIC+串口双通信,ROS 集成
+description: "钜犀科技 IMU 高精度惯导模块——100Hz 姿态解算,六轴/九轴/十轴可选,IIC+串口双通信,ROS 集成"
 keywords: [imu, 惯导, 姿态传感器, ahrs, ros]
 ---
 

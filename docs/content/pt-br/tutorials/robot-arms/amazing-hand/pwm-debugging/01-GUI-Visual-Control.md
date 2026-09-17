@@ -1,6 +1,6 @@
 ---
 title: "01-Controle visual por GUI"
-description: "Comandos de gestos visuais — Tutorial de uso"
+description: "Controle visual por GUI da AmazingHand: acione gestos e servomotores PWM pelo PC via porta serial, com botões, controles deslizantes e rastreamento por câmera."
 ---
 
 # 01-Controle visual por GUI

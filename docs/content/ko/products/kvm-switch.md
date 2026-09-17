@@ -1,7 +1,7 @@
 ---
 title: 4-in-1 KVM 스위처
 category: accessory
-description: Juxi Technology 4-in-1 KVM 스위처 — TTL 직렬/블루투스 도킹 스테이션, 다중 기기 원클릭 전환, 로봇 개발 디버깅 파트너
+description: "Juxi Technology 4-in-1 KVM 스위처 — TTL 직렬/블루투스 도킹 스테이션, 다중 기기 원클릭 전환, 로봇 개발 디버깅 파트너"
 keywords: [kvm, 스위처, 도킹 스테이션, ttl, 블루투스]
 ---
 

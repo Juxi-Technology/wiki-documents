@@ -1,6 +1,6 @@
 ---
 title: Sensores e Percepção
-description: "Página inicial dos tutoriais de sensores da Juxi Technology — módulos inerciais IMU"
+description: "Sensores e perceção: página inicial dos tutoriais dos módulos da Juxi Technology, com o módulo inercial IMU e o módulo de posicionamento GPS e BeiDou."
 ---
 
 # Sensores e Percepção

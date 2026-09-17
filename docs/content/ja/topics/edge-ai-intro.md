@@ -1,6 +1,6 @@
 ---
 title: エッジ AI 導入入門
-description: Jetson エッジ AI 導入入門——PyTorch モデルを TensorRT に載せる、ONNX エクスポートと推論最適化、一般的な導入パスとトラブルシューティング
+description: "Jetson エッジ AI 導入入門——PyTorch モデルを TensorRT に載せる、ONNX エクスポートと推論最適化、一般的な導入パスとトラブルシューティング"
 keywords: [edge ai, tensorrt, onnx, エッジ導入, jetson]
 ---
 

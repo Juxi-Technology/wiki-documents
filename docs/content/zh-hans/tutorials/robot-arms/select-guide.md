@@ -1,6 +1,6 @@
 ---
 title: "选型指南"
-description: SO-ARM101 vs AmazingHand vs Lekiwi 机械臂对比与选型建议
+description: "SO-ARM101 vs AmazingHand vs Lekiwi 机械臂对比与选型建议"
 ---
 
 # 选型指南

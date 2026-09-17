@@ -1,6 +1,6 @@
 ---
 title: "Introdução ao ROS"
-description: Tutorial ROS da Juxi Technology — configuração de ambiente ROS 1/ROS 2, conceitos básicos de tópicos/serviços/launch, prática com IMU e SO-ARM101
+description: "Tutorial ROS da Juxi Technology — configuração de ambiente ROS 1/ROS 2, conceitos básicos de tópicos/serviços/launch, prática com IMU e SO-ARM101"
 keywords: [ros, ros2, ros1, tutorial, robot operating system]
 ---
 

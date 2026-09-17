@@ -1,6 +1,6 @@
 ---
 title: Why We Build Open — The Case for Open-Source Robotics Hardware
-description: JuxiTech's open-source hardware philosophy — every product ships with full schematics, firmware source, and CAD files. The cost of closed hardware, open source as a research accelerator, and a Shenzhen-built vision
+description: "Why JuxiTech ships every product with schematics, firmware source code and CAD files, and how open hardware accelerates research while staying affordable."
 keywords: [open source, open hardware, robotics, philosophy, juxitech]
 ---
 

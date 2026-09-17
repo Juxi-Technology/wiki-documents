@@ -1,7 +1,7 @@
 ---
 title: 2 自由度舵機雲台
 category: accessory
-description: 鉅犀科技 2 自由度舵機雲台——SCS0009 總線舵機,180° 水平/90° 垂直,200 萬攝像頭,AI 視覺追蹤
+description: "鉅犀科技 2 自由度舵機雲台——SCS0009 總線舵機,180° 水平/90° 垂直,200 萬攝像頭,AI 視覺追蹤"
 keywords: [gimbal, 雲台, 2dof, 視覺追蹤, scs0009]
 ---
 

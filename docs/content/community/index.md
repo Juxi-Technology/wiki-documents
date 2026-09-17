@@ -1,6 +1,6 @@
 ---
 title: Contributor Community
-description: Join Juxi Technology Contributor Community
+description: "Join the Juxi Technology contributor community: share tutorials, translations and use cases, find open tasks, and connect via Hugging Face and the Feishu wiki."
 ---
 
 # Contributor Community

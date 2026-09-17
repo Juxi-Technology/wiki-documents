@@ -1,6 +1,6 @@
 ---
 title: Por qué construimos en código abierto — El caso del hardware robótico de código abierto
-description: La filosofía de hardware abierto de JuxiTech — cada producto incluye esquemas completos, código fuente del firmware y archivos CAD. El costo del hardware cerrado, el código abierto como acelerador de investigación y una visión hecha en Shenzhen
+description: "Por qué JuxiTech apuesta por el hardware abierto: esquemas, firmware y CAD gratuitos en cada producto, y el código abierto como acelerador de la investigación."
 keywords: [código abierto, hardware, robótica, filosofía, juxitech]
 ---
 

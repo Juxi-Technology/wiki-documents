@@ -1,7 +1,7 @@
 ---
 title: KWS 音声対話モジュール
 category: accessory
-description: Juxi Technology KWS 音声認識対話モジュール——中英認識語、シリアル/RViz2 可視化、Jetson/Raspberry Pi 対応、ファームウェアオープンソース
+description: "中英認識語ファームウェアを書き込める KWS 音声認識モジュール。シリアルで Jetson や Raspberry Pi に対応し、ROS2 可視化とオフライン認識を提供します。"
 keywords: [kws, 音声認識, 音声対話, ウェイクワード, ai voice]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Cámara CSI Jetson
-description: "Uso del módulo de cámara CSI NVIDIA Jetson Orin"
+description: "Uso del módulo de cámara CSI de Juxi con NVIDIA Jetson Orin: conexión del cable CSI, verificación del dispositivo y captura de video con GStreamer y OpenCV."
 ---
 
 # Cámara CSI Jetson

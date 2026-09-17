@@ -1,6 +1,6 @@
 ---
 title: Introduction à l'intelligence incarnée (LeRobot)
-description: Intelligence incarnée – framework LeRobot, flux complet de collecte/entraînement/évaluation SO-ARM101, choix ACT/politique de diffusion/SmolVLA
+description: "Intelligence incarnée – framework LeRobot, flux complet de collecte/entraînement/évaluation SO-ARM101, choix ACT/politique de diffusion/SmolVLA"
 keywords: [lerobot, intelligence incarnée, apprentissage par imitation, act, so-arm101, apprentissage robotique]
 ---
 

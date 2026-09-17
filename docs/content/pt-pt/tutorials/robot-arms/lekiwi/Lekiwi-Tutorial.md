@@ -1,6 +1,6 @@
 ---
 title: "Tutorial de Uso do Robô Móvel Lekiwi"
-description: "O braço ativo preto usa um adaptador de energia de 5V 6A, enquanto o braço passivo branco usa um adaptador de energia de 12V 5A"
+description: "Tutorial de utilização do robô Lekiwi: lista de materiais, guia de impressão 3D, instalação do LeRobot, configuração dos motores e alimentação dos braços."
 ---
 
 # Tutorial de Uso do Robô Móvel Lekiwi

@@ -1,6 +1,6 @@
 ---
 title: Einstieg in die verkörperte Intelligenz (LeRobot)
-description: Einstieg in verkörperte Intelligenz – LeRobot-Framework, SO-ARM101-Datenerfassung/Training/Evaluation komplett, ACT-/Diffusionspolitik-/SmolVLA-Auswahl
+description: "Einstieg in verkörperte Intelligenz – LeRobot-Framework, SO-ARM101-Datenerfassung/Training/Evaluation komplett, ACT-/Diffusionspolitik-/SmolVLA-Auswahl"
 keywords: [lerobot, verkörperte Intelligenz, Imitationslernen, act, so-arm101, Robotik-Lernen]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: KWS 語音交互模組
 category: accessory
-description: 鉅犀科技 KWS 語音識別交互模組——中英文喚醒詞識別,串口/RViz2 可視化,適配 Jetson/樹莓派,固件開源
+description: "鉅犀科技 KWS 語音識別交互模組——中英文喚醒詞識別,串口/RViz2 可視化,適配 Jetson/樹莓派,固件開源"
 keywords: [kws, 語音識別, 語音交互, 喚醒詞, ai voice]
 ---
 

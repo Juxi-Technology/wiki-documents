@@ -1,6 +1,6 @@
 ---
 title: "Documentation technique"
-description: "Contenu de cette page en préparation"
+description: "Documentation technique Juxi Technology : page d'entrée en préparation, qui renvoie vers le centre de tutoriels et la page de contact de la communauté."
 ---
 
 # Documentation technique

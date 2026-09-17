@@ -1,7 +1,7 @@
 ---
 title: Supporto fotocamera overhead SO-ARM101
 category: robot
-description: Supporto fotocamera overhead SO-ARM101 di Juxi Technology — vista dall'alto, compatibile RealSense, raccolta dati visione robotica
+description: "Supporto fotocamera overhead SO-ARM101 di Juxi Technology — vista dall'alto, compatibile RealSense, raccolta dati visione robotica"
 keywords: [supporto fotocamera, overhead, realsense, visione robotica]
 ---
 

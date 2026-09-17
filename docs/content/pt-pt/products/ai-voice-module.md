@@ -1,7 +1,7 @@
 ---
 title: Módulo de interação por voz IA
 category: accessory
-description: Módulo de interação por voz IA da Juxi Technology (CI1302) — 110+ comandos de voz offline, taxa de reconhecimento de 99% a 5 metros, palavras de comando personalizadas em chinês e inglês, comunicação de porta série/IIC, compatível com Arduino/Jetson/RDK/Raspberry Pi/PC
+description: "Módulo de voz IA CI1302 da Juxi Technology: reconhecimento offline de 110+ comandos, saída por porta série ou IIC, para Arduino, Jetson, Raspberry Pi e PC."
 keywords: [voz por ia, módulo de interação por voz, ci1302, reconhecimento de voz offline, palavra de ativação, palavras de comando, porta série, iic, ros1, ros2]
 ---
 

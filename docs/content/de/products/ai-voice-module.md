@@ -1,7 +1,7 @@
 ---
 title: AI-Sprachinteraktionsmodul
 category: accessory
-description: Juxi Technology AI-Sprachinteraktionsmodul (CI1302) — 110+ Offline-Sprachbefehle, 99 % Erkennungsrate im Umkreis von 5 m, benutzerdefinierte chinesische/englische Befehlswörter, serielle/IIC-Kommunikation, für Arduino/Jetson/RDK/Raspberry Pi/PC
+description: "AI-Sprachinteraktionsmodul (CI1302) von Juxi Technology: 110+ Offline-Sprachbefehle, serielle und IIC-Ausgabe für Arduino, Jetson, RDK, Raspberry Pi und PC."
 keywords: [ai sprache, sprachinteraktionsmodul, ci1302, offline-spracherkennung, weckwort, befehlswörter, seriell, iic, ros1, ros2]
 ---
 

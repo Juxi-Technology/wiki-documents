@@ -1,6 +1,6 @@
 ---
 title: "KVM-Switch"
-description: "KVM-Switch: HUB-Funktion, TTL-Serial, Bluetooth-Modul"
+description: "Der KVM-Switch von Juxi Technology vereint USB-HUB, TTL-Seriellschnittstelle und Bluetooth-Modul; geschaltet wird per Tastenschalter oder IR-Fernbedienung."
 ---
 
 # KVM-Switch

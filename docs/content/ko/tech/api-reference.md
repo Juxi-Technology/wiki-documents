@@ -1,6 +1,6 @@
 ---
 title: "API 참조"
-description: "이 페이지의 내용은 준비 중입니다"
+description: "Juxi Technology 제품 API 참조 페이지: 현재 내용을 준비 중이며, 관련 문서는 튜토리얼 센터에서 확인하고 문의는 커뮤니티로 안내합니다."
 ---
 
 # API 참조

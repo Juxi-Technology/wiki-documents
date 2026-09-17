@@ -1,7 +1,7 @@
 ---
 title: Módulo de posicionamiento GNSS GPS y Beidou
 category: sensor
-description: Módulo GNSS de Juxi Technology — chip ATGM336H-5N, combinación de cuatro constelaciones, precisión 2.5m, soporte ROS
+description: "Módulo GNSS de Juxi Technology — chip ATGM336H-5N, combinación de cuatro constelaciones, precisión 2.5m, soporte ROS"
 keywords: [gps, beidou, gnss, módulo de posicionamiento, ros]
 ---
 

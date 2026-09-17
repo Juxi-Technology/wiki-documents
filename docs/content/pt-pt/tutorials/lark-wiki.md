@@ -1,6 +1,6 @@
 ---
 title: "Docs Lark"
-description: "Entrada espelhada dos tutoriais Juxi nos documentos do Feishu"
+description: "Ligações para as versões em chinês simplificado, inglês e chinês tradicional do Wiki da Juxi Technology alojadas na plataforma de documentos Lark."
 ---
 
 # Docs Lark

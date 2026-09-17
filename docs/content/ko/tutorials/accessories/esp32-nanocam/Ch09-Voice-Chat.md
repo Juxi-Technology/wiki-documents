@@ -1,6 +1,6 @@
 ---
 title: "9장: 음성 대화"
-description: "ESP32-NanoCam 튜토리얼 9장: 샤오즈(XiaoZhi) AI 프레임워크로 xiaozhi.me 클라우드 서비스에 연결하여 ASR→LLM→TTS 전이중 음성 대화를 체험하고, 자체 구축 서버와 문제 해결을 다룹니다."
+description: "NanoCam 튜토리얼 9장: 샤오즈 AI 클라우드로 ASR·LLM·TTS 전이중 음성 대화를 체험하고 자체 서버 구축과 문제 해결 방법을 다룹니다."
 ---
 
 # 9장: 음성 대화

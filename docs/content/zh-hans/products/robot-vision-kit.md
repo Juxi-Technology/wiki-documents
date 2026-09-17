@@ -1,7 +1,7 @@
 ---
 title: SO-ARM101 机械臂视觉套件
 category: robot
-description: 钜犀科技 SO-ARM101 机械臂视觉套件——腕部/侧方/俯视三视角安装,60FPS 定焦或 30FPS 自动对焦变焦相机,兼容 ACT/Smolvla/Pi0/GR00T 训练框架
+description: "钜犀科技 SO-ARM101 机械臂视觉套件:支持腕部、侧方与俯视三种安装,可选 60FPS 定焦或 30FPS 自动对焦变焦相机,兼容 ACT、GR00T 等训练框架。"
 keywords: [camera mount, 视觉套件, 相机支架, so-arm101, 机械臂视觉]
 ---
 

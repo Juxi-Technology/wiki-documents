@@ -1,6 +1,6 @@
 ---
 title: 제품 목록
-description: Juxi Technology 제품 센터 — 로봇 암, 다지 손, 센서, 액세서리
+description: "Juxi Technology 제품 센터 — 로봇 암, 다지 손, 센서, 액세서리"
 aside: false
 sidebar: false
 outline: false

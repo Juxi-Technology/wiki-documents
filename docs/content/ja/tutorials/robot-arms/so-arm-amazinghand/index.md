@@ -1,6 +1,6 @@
 ---
 title: "SO-ARM101 + AmazingHand 使用チュートリアル"
-description: "本チュートリアルは、SO-ARM101 フォロワーアーム + AmazingHand 器用なハンド の遠隔操作、データ収集、訓練の全工程を再現するためのものです。LeRobot（公式リポジトリのカスタム版）に基づきます。"
+description: "SO-ARM101 フォロワーアームと AmazingHand 器用ハンドの遠隔操作、データ収集、訓練の全工程をステージ別に再現するチュートリアルの総合案内です。"
 ---
 
 

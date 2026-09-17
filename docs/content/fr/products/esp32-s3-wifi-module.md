@@ -1,7 +1,7 @@
 ---
 title: Module vidéo WiFi ESP32-S3
 category: compute-vision
-description: Module vidéo WiFi ESP32-S3 de Juxi Technology — caméra 2MP, transmission WiFi en temps réel, vision IA (couleur/visage/QR), double mode AP+STA
+description: "Module vidéo WiFi ESP32-S3 de Juxi Technology — caméra 2MP, transmission WiFi en temps réel, vision IA (couleur/visage/QR), double mode AP+STA"
 keywords: [esp32, wifi, transmission vidéo, caméra, vision ia]
 ---
 

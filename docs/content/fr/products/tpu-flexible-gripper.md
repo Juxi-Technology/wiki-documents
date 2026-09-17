@@ -1,7 +1,7 @@
 ---
 title: Pince flexible en TPU SO-ARM101
 category: robot
-description: Pince flexible TPU SO-ARM101 de Juxi Technology — saisie sûre des objets irréguliers/fragiles, caméra bras, zoom 30FPS ou fixe 60FPS
+description: "Pince flexible TPU SO-ARM101 de Juxi Technology — saisie sûre des objets irréguliers/fragiles, caméra bras, zoom 30FPS ou fixe 60FPS"
 keywords: [pince, tpu, flexible, so-arm101, préhension]
 ---
 

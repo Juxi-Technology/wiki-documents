@@ -1,6 +1,6 @@
 ---
 title: 边缘 AI 部署入门
-description: Jetson 边缘 AI 部署入门——PyTorch 模型落地 TensorRT,ONNX 导出与推理优化,常见部署路径与排错
+description: "Jetson 边缘 AI 部署入门——PyTorch 模型落地 TensorRT,ONNX 导出与推理优化,常见部署路径与排错"
 keywords: [edge ai, tensorrt, onnx, 边缘部署, jetson]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Câmera de Profundidade 3D RealSense
 category: compute-vision
-description: Câmera de profundidade 3D RealSense da Juxi Technology — modelos D435i/D405/D405CB, percepção de profundidade de alta precisão para XLeRobot e SO-ARM101
+description: "Câmera de profundidade 3D RealSense da Juxi Technology — modelos D435i/D405/D405CB, percepção de profundidade de alta precisão para XLeRobot e SO-ARM101"
 keywords: [realsense, câmera de profundidade, visão 3d, percepção de profundidade, visão robótica]
 ---
 

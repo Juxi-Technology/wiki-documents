@@ -1,6 +1,6 @@
 ---
 title: "IMU キャリブレーション"
-description: Juxi Technology 高精度 IMU モジュールのキャリブレーション — 全体/磁力計/温度、UART と I2C 両対応
+description: "Juxi Technology 高精度 IMU モジュールのキャリブレーション — 全体/磁力計/温度、UART と I2C 両対応"
 keywords: [imu, キャリブレーション, 磁力計]
 ---
 

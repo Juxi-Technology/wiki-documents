@@ -1,6 +1,6 @@
 ---
 title: "API 參考"
-description: "本頁內容正在籌備中"
+description: "鉅犀科技 API 參考頁面正在籌備中,產品 API 相關資料暫請至教程中心查閱,如有問題歡迎聯絡我們。"
 ---
 
 # API 參考

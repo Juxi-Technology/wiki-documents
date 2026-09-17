@@ -1,7 +1,7 @@
 ---
 title: Suporte de Câmara Superior SO-ARM101
 category: robot
-description: Suporte de câmara superior SO-ARM101 da Juxi Technology — visão de cima para baixo, compatível com RealSense, recolha de dados de visão
+description: "Suporte de câmara superior SO-ARM101 da Juxi Technology — visão de cima para baixo, compatível com RealSense, recolha de dados de visão"
 keywords: [suporte de câmara, superior, realsense, recolha de visão]
 ---
 

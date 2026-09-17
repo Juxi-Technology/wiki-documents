@@ -1,6 +1,6 @@
 ---
 title: Lerobot-Roboterarm-Montageanleitung
-description: "Pro-Version: Leader-Arm 5V6A, Follower-Arm 12V5A Netzteil"
+description: "Montageanleitung für den SO-ARM101: Servo-IDs setzen, Mittelstellung kalibrieren und beide Arme samt Netzteilen (Leader 5V6A, Follower 12V5A) montieren."
 ---
 
 # Lerobot-Roboterarm-Montageanleitung

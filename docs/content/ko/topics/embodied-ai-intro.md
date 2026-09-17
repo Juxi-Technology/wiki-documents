@@ -1,6 +1,6 @@
 ---
 title: 구현 지능 입문(LeRobot)
-description: 구현 지능 입문——LeRobot 프레임워크 사용, SO-ARM101 데이터 수집/훈련/평가 전체 흐름, ACT/확산 정책/SmolVLA 선택
+description: "구현 지능 입문——LeRobot 프레임워크 사용, SO-ARM101 데이터 수집/훈련/평가 전체 흐름, ACT/확산 정책/SmolVLA 선택"
 keywords: [lerobot, 구현 지능, 모방 학습, act, so-arm101, 로봇 학습]
 ---
 

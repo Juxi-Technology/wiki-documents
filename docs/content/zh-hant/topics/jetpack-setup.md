@@ -1,6 +1,6 @@
 ---
 title: JetPack 刷機與系統配置
-description: NVIDIA Jetson 平台 JetPack 刷機指南——SDK Manager 與官方鏡像兩種方式,刷機失敗排錯,系統基礎配置
+description: "NVIDIA Jetson 平台 JetPack 刷機指南——SDK Manager 與官方鏡像兩種方式,刷機失敗排錯,系統基礎配置"
 keywords: [jetson, jetpack, 刷機, 系統配置, nvidia]
 ---
 

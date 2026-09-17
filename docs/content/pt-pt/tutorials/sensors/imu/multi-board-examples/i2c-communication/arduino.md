@@ -1,6 +1,6 @@
 ---
 title: Arduino
-description: "Este exemplo usa uma placa de desenvolvimento Arduino Nano, um computador Windows, alguns fios Dupont e um sensor de atitude IMU."
+description: "Exemplo de comunicação I2C do módulo IMU com um Arduino Nano num PC Windows: ligações com fios Dupont, análise do código e leitura dos dados."
 ---
 
 # Arduino

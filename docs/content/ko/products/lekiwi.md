@@ -1,7 +1,7 @@
 ---
 title: Lekiwi 구현 지능 모바일 로봇
 category: robot
-description: Juxi Technology Lekiwi 구현 지능 모바일 로봇 — 저비용 교육용 로봇 팔/모바일 베이스, 서보 제어, 교육·입문 추천
+description: "Juxi Technology Lekiwi 구현 지능 모바일 로봇 — 저비용 교육용 로봇 팔/모바일 베이스, 서보 제어, 교육·입문 추천"
 keywords: [lekiwi, 모바일 로봇, 교육용 로봇 팔, 교육 로봇]
 ---
 

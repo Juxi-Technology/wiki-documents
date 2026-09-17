@@ -1,7 +1,7 @@
 ---
 title: Cámara USB con enfoque automático
 category: compute-vision
-description: Cámara USB con enfoque automático de Juxi Technology, sin controlador — gran angular 86°, 1080P 30FPS, UVC plug-and-play para visión robótica e inferencia de IA, compatible con Windows/Linux/macOS/Jetson/Raspberry Pi
+description: "Cámara USB de Juxi con enfoque automático: video 1080P 30 FPS, gran angular 86°, UVC plug-and-play sin controlador para visión robótica e inferencia de IA."
 keywords: [cámara usb, enfoque automático, 1080p, uvc, sin controlador, visión robótica, jetson, raspberry pi]
 ---
 

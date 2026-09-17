@@ -1,6 +1,6 @@
 ---
 title: "라즈베리파이: AGNSS 보조 측위"
-description: "이번 과정에서는 주로 Raspberry Pi와 GPS 모듈 및 agnss 서버를 사용하여 약한 신호 환경에서 위치 정보를 읽고 분석하는 것을 구현하는 방법을 학습합니다."
+description: "라즈베리파이 AGNSS 보조 측위: Raspberry Pi와 GPS 모듈, agnss 서버로 약한 신호 환경에서 위치 정보를 읽고 분석하는 방법을 학습합니다."
 ---
 
 # 라즈베리파이: AGNSS 보조 측위

@@ -1,6 +1,6 @@
 ---
 title: Contributing Guide
-description: How to contribute to the Juxi Technology Wiki
+description: "Contribute to the Juxi Technology Wiki: fork the repository, fix errors, add tutorials or translations, and follow the pull-request workflow."
 ---
 
 # Contributing Guide

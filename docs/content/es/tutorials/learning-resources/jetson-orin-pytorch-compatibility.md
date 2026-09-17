@@ -1,6 +1,6 @@
 ---
 title: Incompatibilidades de PyTorch en Jetson Orin
-description: Soluciones para problemas de GPU de PyTorch en Jetson Orin
+description: "Guía de referencia para resolver las incompatibilidades de PyTorch en Jetson Orin: GPU no disponible, error libcusparseLt y torchvision ausente."
 ---
 
 # Incompatibilidades de PyTorch en Jetson Orin

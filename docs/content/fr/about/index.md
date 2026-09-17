@@ -1,6 +1,6 @@
 ---
 title: À propos
-description: Juxi Technology — robotique open source depuis Qianhai, Shenzhen
+description: "Juxi Technology — robotique open source depuis Qianhai, Shenzhen"
 ---
 
 # À propos

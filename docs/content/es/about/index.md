@@ -1,6 +1,6 @@
 ---
 title: Sobre nosotros
-description: Juxi Technology — robótica open source desde Qianhai, Shenzhen
+description: "Juxi Technology — robótica open source desde Qianhai, Shenzhen"
 ---
 
 # Sobre nosotros

@@ -1,7 +1,7 @@
 ---
 title: AI 语音交互模块
 category: accessory
-description: 钜犀科技 AI 语音交互模块(CI1302)——110+ 条离线语音指令,5 米识别率 99%,支持自定义中英文指令词,串口/IIC 通信,适配 Arduino/Jetson/RDK/树莓派/PC
+description: "钜犀科技 AI 语音交互模块(CI1302):离线语音识别,110+ 条指令,5 米内识别率 99%,串口/IIC 输出,适配 Arduino、Jetson、树莓派与 PC。"
 keywords: [ai语音, 语音交互模块, ci1302, 离线语音识别, 唤醒词, 命令词, 串口, iic, ros1, ros2]
 ---
 

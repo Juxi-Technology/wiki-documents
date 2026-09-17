@@ -1,6 +1,6 @@
 ---
 title: SO-ARM101 无线遥操作(ESP32-NanoCam 版)
-description: "面向比赛演示的无线遥操作方案:主臂经 LeRobot 连接 Ubuntu 电脑,从臂由 ESP32-NanoCam 模块通过 micro-ROS WiFi 控制,涵盖接线、供电、烧录、标定与摄像头 FPV 的完整流程。"
+description: "SO-ARM101 无线遥操作(ESP32-NanoCam 版):主臂经 LeRobot 连接 Ubuntu,从臂由 NanoCam 经 micro-ROS WiFi 控制。"
 ---
 
 # SO-ARM101 无线遥操作(ESP32-NanoCam 版)

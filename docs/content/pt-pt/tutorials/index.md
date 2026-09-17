@@ -1,7 +1,7 @@
 ---
 title: Início dos Tutoriais
 titleTemplate: Tutoriais e Guias de Produtos
-description: "Explore todos os tutoriais, guias e exemplos de produtos para começar rapidamente com os produtos da Juxi Technology"
+description: "Ponto de partida dos tutoriais da Juxi Technology: braços robóticos, acessórios, sensores e perceção, com guias e exemplos para começar a construir."
 head:
   - [ meta, { property: "og:title", content: "Início dos Tutoriais | Tutoriais e Guias de Produtos" } ]
   - [ meta, { property: "og:description", content: "Explore todos os tutoriais, guias e exemplos de produtos para começar rapidamente com os produtos da Juxi Technology" } ]

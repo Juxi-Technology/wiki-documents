@@ -1,6 +1,6 @@
 ---
 title: "1장: 환경 구축"
-description: "ESP32-NanoCam 튜토리얼 1장: CH340K 시리얼 드라이버를 설치하고, esptool-js 웹 플래싱, esptool 명령줄, ESP-IDF, ESP-EIM-GUI 네 가지 펌웨어 플래싱 환경 구축 방법을 익히며, xiaozhi.me 서버 계정 등록을 완료합니다."
+description: "NanoCam 튜토리얼 1장: CH340K 드라이버와 esptool-js·ESP-IDF 등 4가지 펌웨어 플래싱 환경, 샤오즈 서버 계정 등록을 다룹니다."
 ---
 
 # 1장: 환경 구축

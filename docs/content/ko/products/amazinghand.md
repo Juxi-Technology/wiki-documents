@@ -1,7 +1,7 @@
 ---
 title: AmazingHand 오픈소스 4손가락 정교 손
 category: robot
-description: Juxi Technology AmazingHand 오픈소스 4손가락 정교 손, TTL 버스 제어, 오픈 CAD, 구현 지능·HRI 연구
+description: "Juxi Technology AmazingHand 오픈소스 4손가락 정교 손, TTL 버스 제어, 오픈 CAD, 구현 지능·HRI 연구"
 keywords: [amazinghand, 정교 손, dexterous hand, 구현 지능]
 ---
 

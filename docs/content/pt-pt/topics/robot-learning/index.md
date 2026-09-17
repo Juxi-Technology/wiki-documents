@@ -1,6 +1,6 @@
 ---
 title: Aprendizado de Robôs
-description: Tecnologias de robot learning full-stack baseadas em LeRobot
+description: "Ponto de entrada do robot learning na Juxi Technology: recolha de dados, treino de modelos ACT, Diffusion Policy e Pi0, e implementação com o SO-ARM101."
 ---
 
 # Aprendizado de Robôs

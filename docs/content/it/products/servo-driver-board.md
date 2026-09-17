@@ -1,7 +1,7 @@
 ---
 title: Scheda driver servo bus JUXI
 category: robot
-description: Scheda driver JUXI di Juxi Technology — 253 servo su un bus, ampia tensione 7–12.6V, Type-C plug-and-play, progettata per LeRobot SO-ARM
+description: "Scheda driver JUXI di Juxi Technology — 253 servo su un bus, ampia tensione 7–12.6V, Type-C plug-and-play, progettata per LeRobot SO-ARM"
 keywords: [driver servo, scheda driver, bus servo, leRobot, so-arm101]
 ---
 

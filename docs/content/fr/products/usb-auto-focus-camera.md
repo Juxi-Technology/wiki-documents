@@ -1,7 +1,7 @@
 ---
 title: Caméra USB à autofocus
 category: compute-vision
-description: Caméra USB à autofocus sans pilote de Juxi Technology — grand angle 86°, 1080P 30 FPS, UVC plug-and-play pour la vision robotique et l'inférence IA, compatible Windows/Linux/macOS/Jetson/Raspberry Pi
+description: "Caméra USB à autofocus sans pilote : 1080P 30 FPS, grand angle 86°, UVC plug-and-play pour la vision robotique et l'IA sous Windows, Linux, macOS et Jetson."
 keywords: [caméra usb, autofocus, 1080p, uvc, sans pilote, vision robotique, jetson, raspberry pi]
 ---
 

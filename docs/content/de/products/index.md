@@ -1,6 +1,6 @@
 ---
 title: Produkte
-description: Juxi Technology Produktzentrum — Roboterarme, Hände, Sensoren und Zubehör
+description: "Juxi Technology Produktzentrum — Roboterarme, Hände, Sensoren und Zubehör"
 aside: false
 sidebar: false
 outline: false

@@ -1,6 +1,6 @@
 ---
 title: 鉅犀科技 Wiki
-description: "鉅犀科技官方教程與文檔中心:SO-ARM101 機械臂、AmazingHand 靈巧手、XLeRobot 移動機器人、ESP32-NanoCam 圖傳模組、Jetson 套件、IMU/GPS 傳感器與 LeRobot 模仿學習教程。"
+description: "鉅犀科技官方文檔中心:彙整 SO-ARM101 機械臂、AmazingHand 靈巧手、XLeRobot 移動機器人、ESP32-NanoCam 圖傳模組與傳感器的使用教程。"
 aside: false
 sidebar: false
 outline: false

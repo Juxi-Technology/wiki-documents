@@ -1,6 +1,6 @@
 ---
 title: Centre de téléchargements
-description: Firmware, SDK, logiciel hôte et code open source Juxi Technology
+description: "Firmware, SDK, logiciel hôte et code open source Juxi Technology"
 ---
 
 # Centre de téléchargements

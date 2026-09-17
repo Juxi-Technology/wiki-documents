@@ -1,6 +1,6 @@
 ---
 title: "PC Communication"
-description: "Move the slide switch to STC8 serial port mode"
+description: "Connect the AI voice module to a PC in STC8 serial mode and use the serial assistant at 115200 baud to read printed protocols and trigger voice playback."
 ---
 
 # PC Communication

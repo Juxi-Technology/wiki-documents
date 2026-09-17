@@ -1,6 +1,6 @@
 ---
 title: "JetPack Flashing & Setup"
-description: NVIDIA Jetson JetPack flashing guide — SDK Manager & official image methods, troubleshooting, system basics
+description: "NVIDIA Jetson JetPack flashing guide — SDK Manager & official image methods, troubleshooting, system basics"
 keywords: [jetson, jetpack, flashing, system setup, nvidia]
 ---
 

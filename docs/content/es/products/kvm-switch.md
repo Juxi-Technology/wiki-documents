@@ -1,7 +1,7 @@
 ---
 title: Conmutador KVM 4 en 1
 category: accessory
-description: Conmutador KVM 4 en 1 de Juxi Technology — estación de acoplamiento TTL serie/Bluetooth, cambio de múltiples dispositivos, depuración robótica
+description: "Conmutador KVM 4 en 1 de Juxi Technology — estación de acoplamiento TTL serie/Bluetooth, cambio de múltiples dispositivos, depuración robótica"
 keywords: [kvm, conmutador, estación de acoplamiento, ttl, bluetooth]
 ---
 

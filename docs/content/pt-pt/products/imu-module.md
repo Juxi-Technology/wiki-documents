@@ -1,7 +1,7 @@
 ---
 title: Módulo Inercial IMU de Alta Precisão
 category: sensor
-description: Módulo IMU da Juxi Technology — atitude a 100Hz, opções 6/9/10 eixos, IIC+UART, integração ROS
+description: "Sensor de atitude IMU de alta precisão com cálculo em tempo real até 100Hz, versões de 6, 9 e 10 eixos e comunicação IIC ou porta série, com integração ROS."
 keywords: [imu, inercial, sensor de atitude, ahrs, ros]
 ---
 

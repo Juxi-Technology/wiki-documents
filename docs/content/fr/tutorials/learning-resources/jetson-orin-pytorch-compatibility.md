@@ -1,6 +1,6 @@
 ---
 title: Incompatibilités PyTorch sur Jetson Orin
-description: Solutions pour les problèmes GPU PyTorch sur Jetson Orin
+description: "Résoudre les incompatibilités PyTorch sur Jetson Orin : GPU indisponible, cuSPARSELt manquant et torchvision à compiler, avec les versions compatibles."
 ---
 
 # Incompatibilités PyTorch sur Jetson Orin

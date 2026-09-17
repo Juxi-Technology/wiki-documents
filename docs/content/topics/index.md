@@ -1,6 +1,6 @@
 ---
 title: Tech Topics
-description: Juxi Technology Robotics and AI Technology Topics
+description: "Juxi Technology topics hub: robot learning with LeRobot, JetPack flashing and edge AI on Jetson, embodied AI, open-source hardware, and related tutorials."
 ---
 
 # Tech Topics

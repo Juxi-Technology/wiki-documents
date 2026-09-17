@@ -1,7 +1,7 @@
 ---
 title: USB ドライバ不要サウンドカード
 category: accessory
-description: Juxi Technology USB ドライバ不要サウンドカード——オンボードマイク+スピーカー、プラグアンドプレイ、ノイズ低減、Raspberry Pi/Jetson/PC 対応
+description: "オンボードマイクとスピーカー搭載の USB ドライバ不要サウンドカード。挿すだけで認識され、Raspberry Pi や Jetson の音声対話開発に最適です。"
 keywords: [sound card, サウンドカード, usb audio, 音声対話]
 ---
 

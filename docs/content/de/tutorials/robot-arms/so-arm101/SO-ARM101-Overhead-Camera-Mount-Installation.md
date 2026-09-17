@@ -1,6 +1,6 @@
 ---
 title: Overhead-Kamera-Halterung Montage
-description: "USB-Autofokus-Kamera: siehe USB-Kamera-Tutorial"
+description: "Montageanleitung für die Overhead-Kamera-Halterung am SO-ARM101 mit Hinweisen zur USB-Autofokus-Kamera und zum RealSense-D405C-Kit samt Modelldateien."
 ---
 
 # Overhead-Kamera-Halterung Montage

@@ -1,6 +1,6 @@
 ---
 title: Installation du support caméra plafond
-description: "Caméra USB autofocus : voir le tutoriel caméra USB"
+description: "Installation du support caméra plafond pour SO-ARM100 et SO-ARM101 : caméra USB autofocus ou kit D405C, fichiers de modèle officiels et montage illustré."
 ---
 
 # Installation du support caméra plafond

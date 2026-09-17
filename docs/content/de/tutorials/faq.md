@@ -1,6 +1,6 @@
 ---
 title: "FAQ"
-description: Juxi Technology Produkt-FAQ — Roboterarme, Sensoren, Zubehör
+description: "Juxi Technology Produkt-FAQ — Roboterarme, Sensoren, Zubehör"
 keywords: [faq, troubleshooting]
 ---
 

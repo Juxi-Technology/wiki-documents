@@ -1,6 +1,6 @@
 ---
 title: "TTL 調試教程"
-description: "首先，下載“靈巧手調試.zip”壓縮包，解壓後可通過“使用arduio程序調試靈巧手過程（TTL舵機）”文檔進行舵機ID設置、標定、校準中位及演示程序運行，或 參考官方開源代碼。"
+description: "本頁介紹使用Arduino程序調試TTL舵機版AmazingHand靈巧手的流程:接線方式、舵機ID設置、固定伺服喇叭、微調中間值及運行演示程序。"
 ---
 
 # TTL 調試教程

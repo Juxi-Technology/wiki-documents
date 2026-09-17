@@ -1,7 +1,7 @@
 ---
 title: Câmera USB com foco automático
 category: compute-vision
-description: Câmera USB com foco automático da Juxi Technology — grande angular de 86°, 1080P 30FPS, UVC plug-and-play para visão robótica e inferência de IA, compatível com Windows/Linux/macOS/Jetson/Raspberry Pi
+description: "Câmera USB com foco automático da Juxi Technology: grande angular 86°, 1080P 30FPS e UVC plug-and-play para visão robótica, em Windows, Linux, macOS e Jetson."
 keywords: [câmera usb, foco automático, 1080p, uvc, sem driver, visão robótica, jetson, raspberry pi]
 ---
 

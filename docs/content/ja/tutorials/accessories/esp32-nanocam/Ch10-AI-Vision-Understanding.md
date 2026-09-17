@@ -1,6 +1,6 @@
 ---
 title: 第 10 章:AI 視覚理解
-description: "ESP32-NanoCam チュートリアル第 10 章:ESP-Claw モードで撮影し、マルチモーダル視覚 API を呼び出して、NanoCam に映像を音声で説明させます。利用可能なモデル一覧を含みます。"
+description: "ESP32-NanoCam チュートリアル第 10 章。ESP-Claw モードで撮影した映像をマルチモーダル API で分析し、内容を音声で説明させる方法を解説します。"
 ---
 
 # 第 10 章:AI 視覚理解

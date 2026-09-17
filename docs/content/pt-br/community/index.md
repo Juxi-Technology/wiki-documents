@@ -1,6 +1,6 @@
 ---
 title: Comunidade de Colaboradores
-description: Participe da Comunidade de Colaboradores da Juxi Technology
+description: "Comunidade de colaboradores da Juxi Technology: canais oficiais, contribuição com tutoriais, traduções e código, mural de colaboradores e tarefas em aberto."
 ---
 
 # Comunidade de Colaboradores

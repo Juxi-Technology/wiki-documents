@@ -1,6 +1,6 @@
 ---
 title: Arduino
-description: "Este exemplo usa uma placa de desenvolvimento Arduino Nano, um computador Windows, alguns fios Dupont, um sensor de atitude IMU e um módulo USB para TTL."
+description: "Exemplo de comunicação por porta série entre o módulo IMU e um Arduino Nano através de um módulo USB-TTL, com análise do código e leitura dos dados."
 ---
 
 # Arduino

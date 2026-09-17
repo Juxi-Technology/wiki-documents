@@ -1,6 +1,6 @@
 ---
 title: "Switch KVM"
-description: "Switch KVM : fonction HUB, TTL série, module Bluetooth"
+description: "Switch KVM Juxi : fonctions HUB USB, TTL série et Bluetooth, double commutation entre deux appareils et capture d'écran HDMI 4K via OBS ou PotPlayer."
 ---
 
 # Switch KVM

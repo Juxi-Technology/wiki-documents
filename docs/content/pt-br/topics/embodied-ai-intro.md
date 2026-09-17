@@ -1,6 +1,6 @@
 ---
 title: "Introdução à Inteligência Incorporada (LeRobot)"
-description: Introdução à IA incorporada — framework LeRobot, coleta/treinamento/avaliação do SO-ARM101, seleção de ACT/Diffusion/SmolVLA
+description: "Introdução à IA incorporada — framework LeRobot, coleta/treinamento/avaliação do SO-ARM101, seleção de ACT/Diffusion/SmolVLA"
 keywords: [lerobot, ia incorporada, aprendizado por imitação, act, so-arm101]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: XLeRobot 雙臂移動機器人
 category: robot
-description: 鉅犀科技 XLeRobot 雙臂移動機器人——SO-ARM101 雙臂 + 全向輪底盤 + 相機塔,雙伺服馬達驅動板 12V 供電,LeRobot 生態,支援成品/散件兩種形態
+description: "鉅犀科技 XLeRobot 雙臂移動機器人——SO-ARM101 雙臂 + 全向輪底盤 + 相機塔,雙伺服馬達驅動板 12V 供電,LeRobot 生態,支援成品/散件兩種形態"
 keywords: [xlerobot, 雙臂機器人, 移動機器人, 具身智能, lerobot, so-arm101, 全向輪底盤]
 ---
 

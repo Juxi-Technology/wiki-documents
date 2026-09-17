@@ -1,6 +1,6 @@
 ---
 title: JetPack フラッシングとシステム設定
-description: NVIDIA Jetson プラットフォーム JetPack フラッシングガイド——SDK Manager と公式イメージの両方式、フラッシュ失敗のトラブルシューティング、システム基本設定
+description: "NVIDIA Jetson 向け JetPack の書き込みとシステム設定ガイド。SDK Manager と公式イメージの 2 方式、フラッシュ失敗時の対処、初期設定を解説します。"
 keywords: [jetson, jetpack, フラッシュ, システム設定, nvidia]
 ---
 

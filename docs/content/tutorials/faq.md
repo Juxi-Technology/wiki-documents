@@ -1,6 +1,6 @@
 ---
 title: FAQ
-description: Juxi Technology product FAQ — common issues for robot arms, sensors, and accessories
+description: "Juxi Technology product FAQ — common issues for robot arms, sensors, and accessories"
 keywords: [faq, troubleshooting, common issues]
 ---
 

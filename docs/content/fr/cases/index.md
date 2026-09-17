@@ -1,6 +1,6 @@
 ---
 title: Témoignages d'utilisateurs
-description: Cas réels de chercheurs et développeurs utilisant le matériel open source de Juxi Technology
+description: "Cas réels de chercheurs et développeurs utilisant le matériel open source de Juxi Technology"
 ---
 
 # Témoignages d'utilisateurs

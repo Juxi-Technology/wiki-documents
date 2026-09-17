@@ -1,6 +1,6 @@
 ---
 title: Download-Center
-description: Juxi Technology Firmware, SDK, Host-Software und Open-Source-Code
+description: "Juxi Technology Firmware, SDK, Host-Software und Open-Source-Code"
 ---
 
 # Download-Center

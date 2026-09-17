@@ -1,6 +1,6 @@
 ---
 title: 사용자 성공 사례
-description: Juxi Technology 오픈소스 하드웨어를 사용한 연구자·개발자 사례
+description: "Juxi Technology 오픈소스 하드웨어를 사용한 연구자·개발자 사례"
 ---
 
 # 사용자 성공 사례

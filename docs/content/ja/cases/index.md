@@ -1,6 +1,6 @@
 ---
 title: ユーザー成功事例
-description: Juxi Technologyのオープンソースハードウェアを用いた研究者・開発者の事例
+description: "Juxi Technologyのオープンソースハードウェアを用いた研究者・開発者の事例"
 ---
 
 # ユーザー成功事例

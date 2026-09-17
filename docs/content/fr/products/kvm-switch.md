@@ -1,7 +1,7 @@
 ---
 title: Switch KVM 4-en-1
 category: accessory
-description: Switch KVM 4-en-1 de Juxi Technology — station d'accueil TTL série/Bluetooth, bascule multi-appareils, débogage de robots
+description: "Switch KVM 4-en-1 de Juxi Technology — station d'accueil TTL série/Bluetooth, bascule multi-appareils, débogage de robots"
 keywords: [kvm, switch, station d'accueil, ttl, bluetooth]
 ---
 

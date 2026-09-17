@@ -1,7 +1,7 @@
 ---
 title: 2-DOF Servo Pan-Tilt Unit
 category: accessory
-description: Juxi Technology 2-DOF camera gimbal — SCS0009 bus servos, 180° pan / 90° tilt, 2MP camera, AI vision tracking
+description: "Juxi Technology 2-DOF camera gimbal — SCS0009 bus servos, 180° pan / 90° tilt, 2MP camera, AI vision tracking"
 keywords: [gimbal, pan tilt, 2dof, vision tracking, scs0009]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "IMU 캘리브레이션"
-description: Juxi Technology 고정밀 IMU 모듈 캘리브레이션 — 전체/자력계/온도, UART 및 I2C
+description: "Juxi Technology 고정밀 IMU 모듈 캘리브레이션 — 전체/자력계/온도, UART 및 I2C"
 keywords: [imu, 캘리브레이션, 자력계]
 ---
 

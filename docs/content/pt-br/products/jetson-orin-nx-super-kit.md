@@ -1,7 +1,7 @@
 ---
 title: Kit de Desenvolvedor Jetson Orin NX Super
 category: compute-vision
-description: Kit de desenvolvedor NVIDIA Jetson Orin NX SUPER da Juxi Technology — plataforma de IA de borda 117/157 TOPS, Ubuntu 22.04 pré-instalado e SSD NVMe de 256GB
+description: "Kit de desenvolvedor NVIDIA Jetson Orin NX SUPER da Juxi Technology — plataforma de IA de borda 117/157 TOPS, Ubuntu 22.04 pré-instalado e SSD NVMe de 256GB"
 keywords: [jetson, orin nx, ia de borda, computação de borda, leRobot, robótica]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Lekiwi Embodied-Intelligence-Mobileroboter
 category: robot
-description: Juxi Technology Lekiwi — kostengünstiger Lehr-Roboterarm/Mobilroboter, Servosteuerung, ideal für Bildung und Einsteiger
+description: "Juxi Technology Lekiwi — kostengünstiger Lehr-Roboterarm/Mobilroboter, Servosteuerung, ideal für Bildung und Einsteiger"
 keywords: [lekiwi, mobileroboter, lehr-roboterarm, bildungsrobotik]
 ---
 

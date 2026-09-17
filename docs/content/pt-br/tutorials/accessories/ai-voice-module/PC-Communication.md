@@ -1,6 +1,6 @@
 ---
 title: "Comunicação com PC"
-description: "Mova a chave deslizante para o modo de porta serial STC8"
+description: "Comunicação do módulo de voz IA com o PC: ajuste a chave para o modo de porta serial STC8, abra o assistente serial a 115200 e envie comandos de reprodução."
 ---
 
 # Comunicação com PC

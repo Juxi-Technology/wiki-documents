@@ -1,7 +1,7 @@
 ---
 title: XLeRobot 양팔 이동 로봇
 category: robot
-description: Juxi Technology XLeRobot 양팔 이동 로봇 — SO-ARM101 양팔 + 전방향 바퀴 섀시 + 카메라 타워, 듀얼 서보 드라이버 보드 12V 전원, LeRobot 생태계, 완제품/부품 키트 두 가지 형태
+description: "XLeRobot 양팔 이동 로봇: SO-ARM101 양팔, 전방향 바퀴 섀시와 카메라 타워를 갖춘 LeRobot 생태계 오픈소스 로봇 제품 페이지."
 keywords: [xlerobot, 양팔 로봇, 이동 로봇, 구현 지능, lerobot, so-arm101, 전방향 바퀴 섀시]
 ---
 

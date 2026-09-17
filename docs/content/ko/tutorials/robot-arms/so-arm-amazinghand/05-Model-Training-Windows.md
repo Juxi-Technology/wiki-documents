@@ -1,6 +1,6 @@
 ---
 title: "단계 5: 모델 학습(Windows)"
-description: "본 단계에서는 수집한 데이터셋으로 정책(ACT 등)을 학습하여 배포 가능한 모델을 만듭니다. 학습은 가장 시간이 많이 걸리는 단계이며, NVIDIA GPU 사용을 권장합니다."
+description: "So-ARM·AmazingHand 튜토리얼 5단계: Windows에서 수집한 데이터셋으로 ACT 등 정책을 학습해 배포용 모델을 만드는 과정을 안내합니다."
 ---
 
 

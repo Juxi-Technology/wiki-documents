@@ -1,6 +1,6 @@
 ---
 title: Downloads
-description: Downloads de firmware, SDK, software host e código open source da Juxi Technology
+description: "Downloads de firmware, SDK, software host e código open source da Juxi Technology"
 ---
 
 # Downloads

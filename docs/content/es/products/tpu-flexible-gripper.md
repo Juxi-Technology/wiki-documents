@@ -1,7 +1,7 @@
 ---
 title: Pinza flexible TPU SO-ARM101
 category: robot
-description: Pinza flexible TPU SO-ARM101 de Juxi Technology — agarre seguro de objetos irregulares/frágiles, cámara en brazo, zoom 30FPS o fija 60FPS
+description: "Pinza flexible TPU SO-ARM101 de Juxi Technology — agarre seguro de objetos irregulares/frágiles, cámara en brazo, zoom 30FPS o fija 60FPS"
 keywords: [pinza, tpu, flexible, so-arm101, agarre]
 ---
 

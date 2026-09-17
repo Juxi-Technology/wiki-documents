@@ -1,7 +1,7 @@
 ---
 title: 3D RealSense 深度相机
 category: compute-vision
-description: 钜犀科技 3D RealSense 深度相机——D435i/D405/D405CB 三型号,高精度深度感知,适配 XLeRobot 与 SO-ARM101
+description: "钜犀科技 3D RealSense 深度相机——D435i/D405/D405CB 三型号,高精度深度感知,适配 XLeRobot 与 SO-ARM101"
 keywords: [realsense, depth camera, 深度相机, 3d vision, 深度感知, 机器人视觉]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "11장: ESP-Claw 음성 제어"
-description: "ESP32-NanoCam 튜토리얼 11장: ESP-Claw 모드의 하드웨어 제어 도구 5가지 —— 음성으로 LED 색상 조절, AI 모드 전환, 사진 촬영 시각 분석과 기기 정보 조회를 다룹니다."
+description: "NanoCam 튜토리얼 11장: ESP-Claw 모드의 하드웨어 제어 도구 5가지로 음성으로 LED 색상·AI 모드를 바꾸고 사진 시각 분석을 실행합니다."
 ---
 
 # 11장: ESP-Claw 음성 제어

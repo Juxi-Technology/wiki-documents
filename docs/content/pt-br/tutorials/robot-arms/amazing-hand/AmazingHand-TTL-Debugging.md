@@ -1,6 +1,6 @@
 ---
 title: "Tutorial de Depuração da Mão Hábil (servo TTL)"
-description: "Primeiro, baixe o pacote compactado \"Amazing Debugging.zip\". Após a descompactação."
+description: "Depure a mão hábil AmazingHand com servo TTL no Arduino: configure os IDs, instale o braço do servo, calibre o ponto médio e rode o programa de demonstração."
 ---
 
 # Tutorial de Depuração da Mão Hábil (servo TTL)

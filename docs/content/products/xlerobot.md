@@ -1,7 +1,7 @@
 ---
 title: XLeRobot Dual-Arm Mobile Robot
 category: robot
-description: Juxi Technology XLeRobot dual-arm mobile robot — two SO-ARM101 follower arms, omni-wheel base and camera tower, dual servo driver boards on 12V, LeRobot ecosystem, assembled or parts kit
+description: "XLeRobot dual-arm mobile robot: two SO-ARM101 arms on an omni-wheel base with a camera tower, dual 12V servo driver boards and the full LeRobot software stack."
 keywords: [xlerobot, dual-arm robot, mobile robot, embodied ai, lerobot, so-arm101, omni-wheel base]
 ---
 

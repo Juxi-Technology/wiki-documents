@@ -1,6 +1,6 @@
 ---
 title: Robot-Learning-Schwerpunkt
-description: Vollständige LeRobot-basierte Robotik-Lernlösungen
+description: "Robot-Learning-Schwerpunkt: Lernlösungen mit dem SO-ARM101 auf LeRobot-Basis für Datenerfassung, Modelltraining, Deployment-Optimierung und Leistungsbewertung."
 ---
 
 # Robot-Learning-Schwerpunkt

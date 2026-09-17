@@ -1,6 +1,6 @@
 ---
 title: 第 4 章:人脸检测
-description: "ESP32-NanoCam 教程第 4 章:使用 ESP-DL MobileNet 人脸检测模型,在画面中标注人脸框与 5 个关键点,并用 Arduino/Python 读取坐标控制舵机。"
+description: "ESP32-NanoCam 教程第 4 章:使用 ESP-DL MobileNet 检测人脸并标注人脸框与 5 个关键点,用 Arduino/Python 读取坐标控制舵机。"
 ---
 
 # 第 4 章:人脸检测

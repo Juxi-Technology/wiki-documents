@@ -1,6 +1,6 @@
 ---
 title: Juxi Technology Wiki
-description: "Central de tutoriais e documentação de produtos da Juxi Technology: Kit de Desenvolvimento SO-ARM101, AmazingHand (manipulação hábil)."
+description: "Página inicial do Wiki da Juxi Technology: tutoriais, documentação de produtos de robótica e hardware de IA, linhas de produto e categorias."
 aside: false
 sidebar: false
 outline: false

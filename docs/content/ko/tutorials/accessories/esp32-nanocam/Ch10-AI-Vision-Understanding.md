@@ -1,6 +1,6 @@
 ---
 title: "10장: AI 비전 이해"
-description: "ESP32-NanoCam 튜토리얼 10장: ESP-Claw 모드에서 사진을 촬영하고 멀티모달 비전 API를 호출하여 NanoCam이 본 화면을 음성으로 설명하게 하며, 사용 가능한 모델 목록을 다룹니다."
+description: "NanoCam 튜토리얼 10장: ESP-Claw 모드에서 사진을 촬영해 멀티모달 비전 API로 본 화면을 음성 설명하게 하는 방법을 다룹니다."
 ---
 
 # 10장: AI 비전 이해

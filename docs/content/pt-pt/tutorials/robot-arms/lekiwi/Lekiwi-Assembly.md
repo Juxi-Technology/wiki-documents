@@ -1,6 +1,6 @@
 ---
 title: "Tutorial de Montagem do Robô Móvel Lekiwi"
-description: "As posições precisas dos componentes podem ser visualizadas no CAD online Fusion360."
+description: "Tutorial de montagem do robô móvel Lekiwi: módulos de rodas, placas base e superior, instalação da câmara frontal ou no braço e ligação da alimentação."
 ---
 
 # Tutorial de Montagem do Robô Móvel Lekiwi

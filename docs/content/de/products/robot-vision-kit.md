@@ -1,7 +1,7 @@
 ---
 title: SO-ARM101 Robotik-Visions-Kit
 category: robot
-description: Juxi Technology SO-ARM101 Vision-Kit — Handgelenk/Seitlich/Draufsicht, 60FPS-Fixfokus oder 30FPS-Autofokus-Zoom, ACT/Smolvla/Pi0/GR00T kompatibel
+description: "Juxi Technology SO-ARM101 Vision-Kit — Handgelenk/Seitlich/Draufsicht, 60FPS-Fixfokus oder 30FPS-Autofokus-Zoom, ACT/Smolvla/Pi0/GR00T kompatibel"
 keywords: [visions-kit, kamerahalterung, so-arm101, robotik-vision]
 ---
 

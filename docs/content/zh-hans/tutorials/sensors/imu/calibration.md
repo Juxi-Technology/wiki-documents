@@ -1,6 +1,6 @@
 ---
 title: "IMU 校准"
-description: 钜犀科技高精度 IMU 模块校准指南——整体校准、磁力计校准、温度校准,支持串口与 I2C 双模式
+description: "钜犀科技高精度 IMU 模块校准指南——整体校准、磁力计校准、温度校准,支持串口与 I2C 双模式"
 keywords: [imu, calibration, 校准, 磁力计, 温度校准]
 ---
 

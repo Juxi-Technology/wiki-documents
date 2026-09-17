@@ -1,6 +1,6 @@
 ---
 title: "Developer Guide"
-description: "This page is being prepared"
+description: "Developer guide for Juxi Technology products is being prepared; find product documentation in the Tutorials Center and get help through the community page."
 ---
 
 # Developer Guide

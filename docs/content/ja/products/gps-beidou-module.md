@@ -1,7 +1,7 @@
 ---
 title: GPS & 北斗 GNSS 測位モジュール
 category: sensor
-description: Juxi Technology GPS & 北斗 GNSS 測位モジュール——ATGM336H-5N チップ、四大衛星システム連合測位、2.5m 精度、ROS 対応
+description: "Juxi Technology GPS & 北斗 GNSS 測位モジュール——ATGM336H-5N チップ、四大衛星システム連合測位、2.5m 精度、ROS 対応"
 keywords: [gps, beidou, gnss, 北斗, 測位モジュール, ros]
 ---
 

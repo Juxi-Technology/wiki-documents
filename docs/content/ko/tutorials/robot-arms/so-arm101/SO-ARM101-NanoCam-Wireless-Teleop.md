@@ -1,6 +1,6 @@
 ---
 title: SO-ARM101 무선 텔레오퍼레이션(ESP32-NanoCam 버전)
-description: "경기 시연을 위한 무선 텔레오퍼레이션 방안: 리더 암은 LeRobot으로 Ubuntu 컴퓨터에 연결하고, 팔로워 암은 ESP32-NanoCam 모듈로 micro-ROS WiFi를 통해 제어하며, 배선, 전원 공급, 플래싱, 캘리브레이션과 카메라 FPV의 전체 흐름을 다룹니다."
+description: "SO-ARM101 무선 텔레오퍼레이션: 리더 암은 LeRobot, 팔로워 암은 NanoCam micro-ROS WiFi로 제어하며 카메라 FPV까지 다룹니다."
 ---
 
 # SO-ARM101 무선 텔레오퍼레이션(ESP32-NanoCam 버전)

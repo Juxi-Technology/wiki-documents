@@ -1,6 +1,6 @@
 ---
 title: Introducción a la inteligencia incorporada (LeRobot)
-description: Inteligencia incorporada – framework LeRobot, flujo completo de recolección/entrenamiento/evaluación SO-ARM101, elección ACT/política de difusión/SmolVLA
+description: "Inteligencia incorporada – framework LeRobot, flujo completo de recolección/entrenamiento/evaluación SO-ARM101, elección ACT/política de difusión/SmolVLA"
 keywords: [lerobot, inteligencia incorporada, aprendizaje por imitación, act, so-arm101, aprendizaje robótico]
 ---
 

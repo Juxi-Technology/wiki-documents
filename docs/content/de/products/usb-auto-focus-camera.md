@@ -1,7 +1,7 @@
 ---
 title: USB-Kamera mit Autofokus
 category: compute-vision
-description: Juxi Technology USB-Kamera mit Autofokus, treiberfrei — 86° Weitwinkel, 1080P 30FPS, UVC Plug-and-Play für Roboter-Vision und KI-Inferenz, kompatibel mit Windows/Linux/macOS/Jetson/Raspberry Pi
+description: "USB-Kamera mit Autofokus für Roboter-Vision: treiberfrei, 86°-Weitwinkel, 1080P-30FPS über UVC, kompatibel mit Windows, Linux, macOS, Jetson und Raspberry Pi."
 keywords: [usb-kamera, autofokus, 1080p, uvc, treiberfrei, roboter-vision, jetson, raspberry-pi]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 4K HDMI キャプチャカード
 category: accessory
-description: Juxi Technology 4K HDMI キャプチャカード——4K 高画質キャプチャ、HDMI/Micro HDMI/DP 多インターフェース、USB 直結、配信・録画
+description: "Juxi Technology 4K HDMI キャプチャカード——4K 高画質キャプチャ、HDMI/Micro HDMI/DP 多インターフェース、USB 直結、配信・録画"
 keywords: [hdmi capture, キャプチャカード, 4k, 録画]
 ---
 

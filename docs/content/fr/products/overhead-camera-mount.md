@@ -1,7 +1,7 @@
 ---
 title: Support caméra aérienne SO-ARM101
 category: robot
-description: Support caméra aérienne SO-ARM101 de Juxi Technology — vue de dessus, compatible RealSense, collecte de données vision robotique
+description: "Support caméra aérienne SO-ARM101 de Juxi Technology — vue de dessus, compatible RealSense, collecte de données vision robotique"
 keywords: [support caméra, aérien, realsense, vision robotique]
 ---
 

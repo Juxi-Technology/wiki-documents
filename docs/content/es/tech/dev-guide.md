@@ -1,6 +1,6 @@
 ---
 title: "Guía de desarrollo"
-description: "Contenido de esta página en preparación"
+description: "Guía de desarrollo de Juxi Technology: contenido en preparación; por ahora, consulta el centro de tutoriales para la documentación de los productos."
 ---
 
 # Guía de desarrollo

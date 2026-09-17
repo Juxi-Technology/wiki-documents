@@ -1,6 +1,6 @@
 ---
 title: "Tutorial do Braço Robótico LeRobot"
-description: "Este tutorial foi atualizado até 15 de dezembro. Você pode optar por seguir a versão mais recente da documentação oficial."
+description: "Tutorial do braço robótico LeRobot SO-ARM101: preparar o ambiente, calibrar, teleoperar, recolher dados e treinar políticas de imitação."
 ---
 
 # Tutorial do Braço Robótico LeRobot

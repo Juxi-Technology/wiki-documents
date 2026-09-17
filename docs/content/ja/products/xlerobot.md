@@ -1,7 +1,7 @@
 ---
 title: XLeRobot 双腕移動ロボット
 category: robot
-description: Juxi Technology XLeRobot 双腕移動ロボット——SO-ARM101 双腕 + 全方向ホイールシャーシ + カメラタワー、2 台のサーボドライバ基板 12V 給電、LeRobot エコシステム、完成品/パーツキットの 2 形態
+description: "SO-ARM101 の双腕と全方向ホイールシャーシを組み合わせた移動ロボット。カメラタワーを備え、LeRobot によるデータ収集や模倣学習研究に使える完成品とキットを提供します。"
 keywords: [xlerobot, 双腕ロボット, 移動ロボット, 具身知能, lerobot, so-arm101, 全方向ホイールシャーシ]
 ---
 

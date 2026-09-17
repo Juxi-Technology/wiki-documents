@@ -1,6 +1,6 @@
 ---
 title: "Captura HDMI 4K"
-description: "De acordo com a interface da placa-mãe, existem as três operações de fiação a seguir"
+description: "Tutorial da capturadora HDMI 4K: ligações conforme a interface HDMI, Micro HDMI ou DP, e guias de OBS e PotPlayer para ver a captura no ecrã."
 ---
 
 # Captura HDMI 4K

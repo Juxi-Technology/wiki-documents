@@ -1,6 +1,6 @@
 ---
 title: "TTL Debugging Tutorial"
-description: "First, download the \" Amazing Debugging.zip \" Compressed Packet. After decompression, you can use the \"Debugging Dexterous Hand Process with Arduio Pr"
+description: "Learn how to debug the AmazingHand TTL servo dexterous hand with Arduino: servo ID setup, horn installation, middle position calibration and demo program."
 ---
 
 # TTL Debugging Tutorial

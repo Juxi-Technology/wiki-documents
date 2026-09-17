@@ -1,7 +1,7 @@
 ---
 title: USB Soundkarte ohne Treiber
 category: accessory
-description: Juxi Technology USB-Soundkarte — Onboard-Mikrofon + Lautsprecher, Plug-and-Play, Rauschunterdrückung, Raspberry Pi/Jetson/PC
+description: "Juxi Technology USB-Soundkarte — Onboard-Mikrofon + Lautsprecher, Plug-and-Play, Rauschunterdrückung, Raspberry Pi/Jetson/PC"
 keywords: [soundkarte, usb audio, sprachinteraktion]
 ---
 

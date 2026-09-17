@@ -1,6 +1,6 @@
 ---
 title: Pourquoi nous construisons en open source — Le plaidoyer pour le matériel robotique open source
-description: La philosophie open source de JuxiTech — chaque produit est livré avec schémas complets, code source du firmware et fichiers CAO. Le coût du matériel fermé, l'open source comme accélérateur de recherche et une vision née à Shenzhen
+description: "Plaidoyer de JuxiTech pour le matériel robotique open source : schémas, firmware et CAO fournis, coût du matériel fermé et vision née à Shenzhen."
 keywords: [open source, matériel, robotique, philosophie, juxitech]
 ---
 

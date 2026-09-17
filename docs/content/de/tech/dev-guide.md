@@ -1,6 +1,6 @@
 ---
 title: "Entwicklungsleitfaden"
-description: "Inhalt dieser Seite in Vorbereitung"
+description: "Der Entwicklungsleitfaden für Juxi-Technology-Produkte befindet sich in Vorbereitung; bis zur Veröffentlichung verweist diese Seite auf das Tutorial-Center."
 ---
 
 # Entwicklungsleitfaden

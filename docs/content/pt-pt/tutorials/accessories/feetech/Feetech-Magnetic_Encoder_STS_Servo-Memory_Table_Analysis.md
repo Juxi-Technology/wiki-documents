@@ -1,6 +1,6 @@
 ---
 title: "Tabela de Memória do Servo STS com Encoder Magnético"
-description: "O servo utiliza o Protocolo de Comunicação Personalizado FT-SCS, com a configuração padrão da porta serial definida na fábrica."
+description: "Análise da tabela de memória dos servos STS de encoder magnético: protocolo FT-SCS, registos EPROM e SRAM, parâmetros de fábrica e bytes especiais."
 ---
 
 # Tabela de Memória do Servo STS com Encoder Magnético

@@ -1,6 +1,6 @@
 ---
 title: "01-Controllo visuale tramite GUI"
-description: "Comandi gestuali visuali — Tutorial d'uso"
+description: "Controllo visuale via GUI della mano AmazingHand con ESP32-S3 e 8 canali PWM: pulsanti per i gesti, cursori per i servo e controllo differenziale delle dita."
 ---
 
 # 01-Controllo visuale tramite GUI

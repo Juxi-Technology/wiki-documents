@@ -1,6 +1,6 @@
 ---
 title: Guia de Contribuição
-description: Como contribuir para o Wiki da Juxi Technology
+description: "Guia de contribuição para o Wiki da Juxi Technology: fork e Pull Requests, submissão de tutoriais, regras de tradução em onze idiomas e diretrizes de conteúdo."
 ---
 
 # Guia de Contribuição

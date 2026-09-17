@@ -1,6 +1,6 @@
 ---
 title: "API リファレンス"
-description: "このページの内容は準備中です"
+description: "Juxi Technology 製品の API リファレンスページです。現在は準備中のため、製品ドキュメントはチュートリアルセンターで提供しています。"
 ---
 
 # API リファレンス

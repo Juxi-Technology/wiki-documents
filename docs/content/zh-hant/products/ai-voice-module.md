@@ -1,7 +1,7 @@
 ---
 title: AI 語音交互模組
 category: accessory
-description: 鉅犀科技 AI 語音交互模組(CI1302)——110+ 條離線語音指令,5 米辨識率 99%,支援自訂中英文指令詞,串列埠/IIC 通訊,適配 Arduino/Jetson/RDK/樹莓派/PC
+description: "鉅犀科技 AI 語音交互模組(CI1302):110+ 條離線語音指令,5 米內辨識率 99%,支援串列埠與 IIC 通訊,適配 Arduino、Jetson 與樹莓派。"
 keywords: [ai語音, 語音交互模組, ci1302, 離線語音辨識, 喚醒詞, 命令詞, 串列埠, iic, ros1, ros2]
 ---
 

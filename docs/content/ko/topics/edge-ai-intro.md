@@ -1,6 +1,6 @@
 ---
 title: 엣지 AI 배포 입문
-description: Jetson 엣지 AI 배포 입문——PyTorch 모델을 TensorRT로, ONNX 내보내기와 추론 최적화, 일반적인 배포 경로와 트러블슈팅
+description: "Jetson 엣지 AI 배포 입문——PyTorch 모델을 TensorRT로, ONNX 내보내기와 추론 최적화, 일반적인 배포 경로와 트러블슈팅"
 keywords: [edge ai, tensorrt, onnx, 엣지 배포, jetson]
 ---
 

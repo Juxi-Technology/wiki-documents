@@ -1,7 +1,7 @@
 ---
 title: JUXI 버스 서보 드라이버 보드
 category: robot
-description: Juxi Technology JUXI 버스 서보 드라이버 보드 — 단일 버스 253개 서보 제어, 7~12.6V 광범위 전압, Type-C 플러그 앤 플레이, LeRobot SO-ARM 전용 설계
+description: "JUXI 버스 서보 드라이버 보드: 단일 버스 최대 253개 서보 제어, 7~12.6V 전원, Type-C 플러그 앤 플레이, SO-ARM 전용 설계."
 keywords: [servo driver, 서보 드라이버 보드, 버스 서보, leRobot, so-arm101]
 ---
 

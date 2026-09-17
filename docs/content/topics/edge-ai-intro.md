@@ -1,6 +1,6 @@
 ---
 title: Edge AI Deployment Intro
-description: Edge AI deployment on Jetson — PyTorch to TensorRT pipeline, ONNX export, inference optimization, troubleshooting
+description: "Edge AI deployment on Jetson — PyTorch to TensorRT pipeline, ONNX export, inference optimization, troubleshooting"
 keywords: [edge ai, tensorrt, onnx, edge deployment, jetson]
 ---
 

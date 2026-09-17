@@ -1,6 +1,6 @@
 ---
 title: "Comunicação PC"
-description: "Observação: se a porta serial não puder ser reconhecida, instale o driver CH340"
+description: "Comunicação do módulo IMU diretamente com o PC por cabo Type-C: ver os dados na porta série e instalar o controlador CH340 se necessário."
 ---
 
 # Comunicação PC

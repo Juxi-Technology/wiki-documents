@@ -1,6 +1,6 @@
 ---
 title: Introduzione al deploy AI edge
-description: Deploy AI edge su Jetson – modelli PyTorch su TensorRT, esportazione ONNX e ottimizzazione dell'inferenza, percorsi di deploy e troubleshooting
+description: "Deploy AI edge su Jetson – modelli PyTorch su TensorRT, esportazione ONNX e ottimizzazione dell'inferenza, percorsi di deploy e troubleshooting"
 keywords: [edge ai, tensorrt, onnx, deploy edge, jetson]
 ---
 

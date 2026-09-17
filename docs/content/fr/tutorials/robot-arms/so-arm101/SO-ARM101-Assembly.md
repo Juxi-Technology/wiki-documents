@@ -1,6 +1,6 @@
 ---
 title: Guide de montage du bras robotique Lerobot
-description: "Version Pro : bras leader 5V6A, bras follower 12V5A"
+description: "Montage du bras SO-ARM101 sous LeRobot : réglage des ID des servos sous Windows ou Linux, assemblage des bras leader et follower, adaptateurs 5V6A et 12V5A."
 ---
 
 # Guide de montage du bras robotique Lerobot

@@ -1,7 +1,7 @@
 ---
 title: AmazingHand 开源 4 指灵巧手
 category: robot
-description: 钜犀科技 AmazingHand 开源4 指灵巧手,TTL 总线控制,开源 CAD,具身智能与人机交互研究
+description: "钜犀科技 AmazingHand 开源4 指灵巧手,TTL 总线控制,开源 CAD,具身智能与人机交互研究"
 keywords: [amazinghand, 灵巧手, dexterous hand, 具身智能]
 ---
 

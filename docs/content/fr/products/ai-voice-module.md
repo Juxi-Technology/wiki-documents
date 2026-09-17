@@ -1,7 +1,7 @@
 ---
 title: Module d'interaction vocale IA
 category: accessory
-description: Module d'interaction vocale IA de Juxi Technology (CI1302) — 110+ commandes vocales hors ligne, 99% de reconnaissance à 5 m, mots de commande personnalisés en chinois et en anglais, communication série/IIC, compatible Arduino/Jetson/RDK/Raspberry Pi/PC
+description: "Module d'interaction vocale IA (CI1302) : 110+ commandes vocales hors ligne, portée de 5 m et sortie série ou IIC pour Arduino, Jetson, Raspberry Pi et PC."
 keywords: [ia vocale, module d'interaction vocale, ci1302, reconnaissance vocale hors ligne, mot de réveil, mots de commande, port série, iic, ros1, ros2]
 ---
 

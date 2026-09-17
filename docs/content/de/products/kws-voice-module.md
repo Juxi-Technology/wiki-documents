@@ -1,7 +1,7 @@
 ---
 title: KWS-Sprachinteraktionsmodul
 category: accessory
-description: Juxi Technology KWS-Spracherkennungsmodul — chinesische/englische Wake-Words, seriell/RViz2-Visualisierung, Jetson/Raspberry Pi, Open-Source-Firmware
+description: "Juxi Technology KWS-Spracherkennungsmodul — chinesische/englische Wake-Words, seriell/RViz2-Visualisierung, Jetson/Raspberry Pi, Open-Source-Firmware"
 keywords: [kws, spracherkennung, sprachinteraktion, wake-word, ai voice]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: ESP32-S3 WiFi 영상 모듈
 category: compute-vision
-description: Juxi Technology ESP32-S3 WiFi 영상 전송 모듈 — 200만 화소 카메라, WiFi 실시간 전송, AI 비전 인식(색상/얼굴/QR), AP+STA 듀얼 모드
+description: "ESP32-S3 WiFi 영상 모듈(NanoCam): 200만 화소 카메라, AP+STA 실시간 전송과 8가지 AI 비전 모드 지원 제품 페이지."
 keywords: [esp32, wifi, 영상 전송, 카메라, ai vision]
 ---
 

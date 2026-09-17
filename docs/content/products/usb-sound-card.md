@@ -1,7 +1,7 @@
 ---
 title: USB Driver-Free Sound Card
 category: accessory
-description: Juxi Technology USB sound card — onboard mic + speaker, plug-and-play, noise-reduction, Raspberry Pi/Jetson/PC
+description: "Juxi Technology USB sound card — onboard mic + speaker, plug-and-play, noise-reduction, Raspberry Pi/Jetson/PC"
 keywords: [sound card, usb audio, voice interaction]
 ---
 

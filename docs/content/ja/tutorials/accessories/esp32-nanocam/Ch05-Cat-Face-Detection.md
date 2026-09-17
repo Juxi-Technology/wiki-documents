@@ -1,6 +1,6 @@
 ---
 title: 第 5 章:猫顔検出
-description: "ESP32-NanoCam チュートリアル第 5 章:CatFaceDetectMN03 モデルで猫の顔を検出し、顔検出とのモデルの違いを比較、座標を読み取ってサーボを駆動し追跡します。"
+description: "ESP32-NanoCam チュートリアル第 5 章。CatFaceDetectMN03 モデルによる猫顔検出の手順と、キーポイントの有無など顔検出モデルとの違いを解説します。"
 ---
 
 # 第 5 章:猫顔検出

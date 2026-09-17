@@ -1,6 +1,6 @@
 ---
 title: Flasheo de JetPack y configuración del sistema
-description: Guía de flasheo de JetPack para NVIDIA Jetson – SDK Manager e imágenes oficiales, solución de problemas, configuración básica
+description: "Guía de flasheo de JetPack para NVIDIA Jetson – SDK Manager e imágenes oficiales, solución de problemas, configuración básica"
 keywords: [jetson, jetpack, flasheo, configuración del sistema, nvidia]
 ---
 

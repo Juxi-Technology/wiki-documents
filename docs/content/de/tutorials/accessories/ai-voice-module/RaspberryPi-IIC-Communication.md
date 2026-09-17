@@ -1,6 +1,6 @@
 ---
 title: "Raspberry Pi: IIC-Kommunikation"
-description: "Wählen Sie Interface Options -> I2C -> Yes"
+description: "IIC-Kommunikation zwischen dem AI-Sprachinteraktionsmodul und dem Raspberry Pi: I2C aktivieren, Abhängigkeiten installieren und das Beispielskript ausführen."
 ---
 
 # Raspberry Pi: IIC-Kommunikation

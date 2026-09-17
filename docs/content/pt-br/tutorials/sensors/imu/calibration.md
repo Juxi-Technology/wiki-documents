@@ -1,6 +1,6 @@
 ---
 title: "Calibração IMU"
-description: Calibração do módulo IMU de alta precisão da Juxi Technology — calibração completa, do magnetômetro e de temperatura via serial e I2C
+description: "Calibração do módulo IMU de alta precisão da Juxi Technology — calibração completa, do magnetômetro e de temperatura via serial e I2C"
 keywords: [imu, calibração, magnetômetro, calibração de temperatura]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: ダウンロードセンター
-description: Juxi Technology 製品のファームウェア、SDK、ホストソフトウェア、オープンソースコード
+description: "Juxi Technology 製品のファームウェア、SDK、ホストソフトウェア、オープンソースコード"
 ---
 
 # ダウンロードセンター

@@ -1,7 +1,7 @@
 ---
 title: 79° IMX219 CSI Camera
 category: compute-vision
-description: Juxi Technology 79° IMX219 CSI camera — 8MP native CSI-2, 77° FOV, NVIDIA Jetson low-latency vision
+description: "Juxi Technology 79° IMX219 CSI camera — 8MP native CSI-2, 77° FOV, NVIDIA Jetson low-latency vision"
 keywords: [imx219, csi camera, jetson]
 ---
 

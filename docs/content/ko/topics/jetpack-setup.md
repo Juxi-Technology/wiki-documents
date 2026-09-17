@@ -1,6 +1,6 @@
 ---
 title: JetPack 플래싱 및 시스템 설정
-description: NVIDIA Jetson 플랫폼 JetPack 플래싱 가이드——SDK Manager와 공식 이미지 두 방식, 플래시 실패 트러블슈팅, 시스템 기본 설정
+description: "NVIDIA Jetson 플랫폼 JetPack 플래싱 가이드——SDK Manager와 공식 이미지 두 방식, 플래시 실패 트러블슈팅, 시스템 기본 설정"
 keywords: [jetson, jetpack, 플래싱, 시스템 설정, nvidia]
 ---
 

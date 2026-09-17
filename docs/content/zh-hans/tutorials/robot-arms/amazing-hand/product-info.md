@@ -1,6 +1,6 @@
 ---
 title: "AmazingHand灵巧手产品资料"
-description: "AmazingHand 是一款高精度、轻量化、手势追踪的灵巧手，专为具身智能研究、机器人教育和人机交互应用设计。该产品采用8个高精度SCS0009 TTL串口舵机控制，支持右手、左手以及双手机器人操作，可实现复杂的手势动作和实时追踪功能。"
+description: "AmazingHand 灵巧手产品资料:8 个 SCS0009 总线舵机驱动、整手重 0.416kg,支持左右手与双手协同,基于 MediaPipe 实现手势追踪与模仿学习。"
 ---
 
 # AmazingHand灵巧手产品资料

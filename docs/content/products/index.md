@@ -1,6 +1,6 @@
 ---
 title: Products
-description: Juxi Technology product center — robot arms, dexterous hands, sensors and accessories
+description: "Juxi Technology product center — robot arms, dexterous hands, sensors and accessories"
 aside: false
 sidebar: false
 outline: false

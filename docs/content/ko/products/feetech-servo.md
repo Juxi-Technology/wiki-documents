@@ -1,7 +1,7 @@
 ---
 title: Feetech 버스 서보(SCS0009 / STS3215)
 category: accessory
-description: Juxi Technology Feetech 직렬 버스 서보 SCS0009 / STS3215——SCS 통신 프로토콜, 자기 엔코더/전위차계 두 버전, 메모리 테이블 분석, 상위 프로그램 디버깅
+description: "Feetech 직렬 버스 서보 SCS0009·STS3215: SCS 프로토콜, 자기 엔코더·전위차계 버전, 메모리 테이블과 FD 디버깅 자료 제공."
 keywords: [feetech, 서보, scs, sts, 직렬 버스]
 ---
 

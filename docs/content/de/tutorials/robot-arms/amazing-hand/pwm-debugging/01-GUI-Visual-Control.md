@@ -1,6 +1,6 @@
 ---
 title: "01-GUI-visuelle Steuerung"
-description: "Visuelle Gestenbefehle — Anleitung"
+description: "GUI-Steuerprogramm für die AmazingHand am ESP32-S3: Gesten per Button auslösen, Servowinkel mit Schiebereglern steuern und Finger differenziell beugen."
 ---
 
 # 01-GUI-visuelle Steuerung

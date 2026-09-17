@@ -1,6 +1,6 @@
 ---
 title: "Flasheamento JetPack e Configuração do Sistema"
-description: Guia de gravação do NVIDIA Jetson JetPack — SDK Manager e imagem oficial, solução de problemas, noções básicas de sistema
+description: "Como instalar o JetPack nos módulos NVIDIA Jetson: imagem oficial ou SDK Manager, resolução de problemas frequentes e configuração básica do sistema."
 keywords: [jetson, jetpack, gravação, configuração de sistema, nvidia]
 ---
 

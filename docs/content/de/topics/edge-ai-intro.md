@@ -1,6 +1,6 @@
 ---
 title: Einstieg in Edge-KI-Deployment
-description: Jetson-Edge-KI-Einstieg – PyTorch-Modelle auf TensorRT bringen, ONNX-Export und Inferenz-Optimierung, typische Deploy-Pfade und Fehlersuche
+description: "Jetson-Edge-KI-Einstieg – PyTorch-Modelle auf TensorRT bringen, ONNX-Export und Inferenz-Optimierung, typische Deploy-Pfade und Fehlersuche"
 keywords: [edge ai, tensorrt, onnx, edge deployment, jetson]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Tech Docs"
-description: "This page is being prepared"
+description: "Tech Docs for Juxi Technology: API Reference and Developer Guide pages are in preparation; until then, product documentation stays in the Tutorials Center."
 ---
 
 # Tech Docs

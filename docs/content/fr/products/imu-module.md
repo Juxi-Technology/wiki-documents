@@ -1,7 +1,7 @@
 ---
 title: Module IMU inertiel de haute précision
 category: sensor
-description: Module IMU de Juxi Technology — attitude 100Hz, options 6/9/10 axes, IIC+UART, intégration ROS
+description: "Module IMU de Juxi Technology — attitude 100Hz, options 6/9/10 axes, IIC+UART, intégration ROS"
 keywords: [imu, inertiel, capteur d'attitude, ahrs, ros]
 ---
 

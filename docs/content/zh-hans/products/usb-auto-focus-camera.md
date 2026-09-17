@@ -1,7 +1,7 @@
 ---
 title: USB 自动对焦摄像头
 category: compute-vision
-description: 钜犀科技 USB 免驱自动对焦摄像头——86° 广角,1080P 30FPS,UVC 免驱,适用于机器人视觉与 AI 推理,兼容 Windows/Linux/macOS/Jetson/树莓派
+description: "钜犀科技 USB 自动对焦摄像头:UVC 免驱,1080P 30FPS、86° 广角,兼容 Windows、Linux、macOS、Jetson 与树莓派,适合机器人视觉。"
 keywords: [usb 摄像头, 自动对焦, 1080p, uvc, 免驱, 机器人视觉, jetson, 树莓派]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: SO-ARM101 开发套件
 category: robot
-description: 钜犀科技 SO-ARM101 双臂机器人开发套件——6 DOF 开源机械臂,LeRobot 生态,遥操作/模仿学习/AI 研究首选
+description: "钜犀科技 SO-ARM101 双臂机器人开发套件——6 DOF 开源机械臂,LeRobot 生态,遥操作/模仿学习/AI 研究首选"
 keywords: [so-arm101, 机械臂, leRobot, 遥操作, 双臂机器人]
 ---
 

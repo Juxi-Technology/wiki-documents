@@ -1,6 +1,6 @@
 ---
 title: Instalación del soporte de cámara superior
-description: "Cámara USB autofoco: ver tutorial de cámara USB"
+description: "Instalación del soporte de cámara superior del SO-ARM101: guías de la cámara USB autofoco y del kit de profundidad RealSense D405C, y modelos oficiales."
 ---
 
 # Instalación del soporte de cámara superior

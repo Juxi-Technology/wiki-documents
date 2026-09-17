@@ -1,6 +1,6 @@
 ---
 title: "Raspberry Pi: Comunicação de porta série"
-description: "Edite /boot/firmware/config.txt ou /boot/config.txt e garanta a seguinte configuração:"
+description: "Passos para pôr a Raspberry Pi a comunicar com o módulo de voz IA pela porta série, incluindo dependências, ativação da porta, cablagem e formato de saída."
 ---
 
 # Raspberry Pi: Comunicação de porta série

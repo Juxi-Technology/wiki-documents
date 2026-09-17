@@ -1,6 +1,6 @@
 ---
 title: "Chaveador KVM"
-description: "O switch KVM inclui funcionalidade de HUB, porta serial TTL e módulo Bluetooth"
+description: "Como usar o chaveador KVM da Juxi: funções de hub, porta série TTL e Bluetooth, e cenários de comutação entre dois dispositivos com ou sem monitor."
 ---
 
 # Chaveador KVM

@@ -1,6 +1,6 @@
 ---
 title: Productos
-description: Centro de productos Juxi Technology — brazos, manos, sensores y accesorios
+description: "Centro de productos Juxi Technology — brazos, manos, sensores y accesorios"
 aside: false
 sidebar: false
 outline: false

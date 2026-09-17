@@ -1,6 +1,6 @@
 ---
 title: Warum wir Open Source bauen — Das Plädoyer für Open-Source-Roboterhardware
-description: Die Open-Source-Hardware-Philosophie von JuxiTech — jedes Produkt wird mit vollständigen Schaltplänen, Firmware-Quellcode und CAD-Dateien ausgeliefert. Die Kosten geschlossener Hardware, Open Source als Forschungsbeschleuniger und eine in Shenzhen gebaute Vision
+description: "Das Plädoyer für Open-Source-Roboterhardware: warum JuxiTech jedes Produkt mit Schaltplänen, Firmware-Quellcode und CAD-Dateien offen ausliefert."
 keywords: [open source, hardware, robotik, philosophie, juxitech]
 ---
 

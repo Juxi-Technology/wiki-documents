@@ -1,6 +1,6 @@
 ---
 title: Tópicos Técnicos
-description: Tópicos de tecnologia em robótica e IA da Juxi Technology
+description: "Tópicos técnicos da Juxi Technology: robot learning, configuração do JetPack no Jetson, IA de borda, IA incorporada e a filosofia por trás do hardware aberto."
 ---
 
 # Tópicos Técnicos

@@ -1,6 +1,6 @@
 ---
 title: "Informações do Produto"
-description: "Sensor de atitude IMU de alta precisão integrado, processador de 32 bits de alto desempenho de 72MHz."
+description: "Informação do produto IMU da Juxi: apresentação do módulo, versões de 6, 9 e 10 eixos, descrição das pinagens, parâmetros e dimensões."
 ---
 
 # Informações do Produto

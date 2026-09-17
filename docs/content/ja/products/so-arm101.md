@@ -1,7 +1,7 @@
 ---
 title: SO-ARM101 開発キット
 category: robot
-description: Juxi Technology SO-ARM101 双腕ロボット開発キット——6 DOF オープンソース機械腕、LeRobot エコシステム、遠隔操作/模倣学習/AI 研究の第一候補
+description: "LeRobot 対応の 6 自由度双腕ロボット開発キット。leader-follower 遠隔操作や模倣学習のデータ収集に対応し、ハードウェアも完全オープンソースです。"
 keywords: [so-arm101, 機械腕, leRobot, 遠隔操作, 双腕ロボット]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Référence API"
-description: "Contenu de cette page en préparation"
+description: "La référence API du Wiki Juxi Technology est encore en préparation : en attendant, la documentation des produits est regroupée dans le centre de tutoriels."
 ---
 
 # Référence API

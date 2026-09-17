@@ -1,7 +1,7 @@
 ---
 title: USB Auto-Focus Camera
 category: compute-vision
-description: Juxi Technology USB driver-free auto-focus camera — 86° wide angle, 1080P 30FPS, UVC plug-and-play for robot vision and AI inference, compatible with Windows/Linux/macOS/Jetson/Raspberry Pi
+description: "Driver-free USB auto-focus camera with an 86° wide-angle lens and 1080P 30FPS UVC output, plug-and-play on Windows, Linux, macOS, Jetson and Raspberry Pi."
 keywords: [usb camera, auto-focus, 1080p, uvc, driver-free, robot vision, jetson, raspberry pi]
 ---
 

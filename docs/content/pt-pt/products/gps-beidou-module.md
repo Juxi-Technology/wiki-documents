@@ -1,7 +1,7 @@
 ---
 title: Módulo de Posicionamento GNSS GPS e BeiDou
 category: sensor
-description: Módulo GNSS GPS e BeiDou da Juxi Technology — ATGM336H-5N, quatro sistemas de satélite, precisão de 2,5m, pronto para ROS
+description: "Módulo GNSS com chip ATGM336H-5N e receção multissistema BDS, GPS, GLONASS e QZSS, precisão de 2,5m e ligação USB ou porta série TTL com suporte ROS."
 keywords: [gps, beidou, gnss, posicionamento, ros]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: 具身知能入門（LeRobot）
-description: 具身知能入門——LeRobot フレームワーク使い方、SO-ARM101 データ収集/訓練/評価の全フロー、ACT/拡散戦略/SmolVLA 選定
+description: "具身知能入門——LeRobot フレームワーク使い方、SO-ARM101 データ収集/訓練/評価の全フロー、ACT/拡散戦略/SmolVLA 選定"
 keywords: [lerobot, 具身知能, 模倣学習, act, so-arm101, ロボット学習]
 ---
 

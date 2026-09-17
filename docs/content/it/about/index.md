@@ -1,6 +1,6 @@
 ---
 title: Chi siamo
-description: Juxi Technology — robotica open source da Qianhai, Shenzhen
+description: "Chi è Juxi Technology: azienda di robotica open source con sede a Qianhai, Shenzhen, attiva tra IA fisica, robotica incarnata ed edge computing."
 ---
 
 # Chi siamo

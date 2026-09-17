@@ -1,6 +1,6 @@
 ---
 title: "4장: 얼굴 검출"
-description: "ESP32-NanoCam 튜토리얼 4장: ESP-DL MobileNet 얼굴 검출 모델을 사용하여 화면에 얼굴 상자와 5개 키포인트를 표시하고, Arduino/Python으로 좌표를 읽어 서보를 제어합니다."
+description: "NanoCam 튜토리얼 4장: ESP-DL 얼굴 검출 모델로 화면에 얼굴 상자와 키포인트를 표시하고 좌표를 읽어 서보를 제어하는 방법을 다룹니다."
 ---
 
 # 4장: 얼굴 검출

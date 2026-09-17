@@ -1,6 +1,6 @@
 ---
 title: "Docs Técnicos"
-description: "Conteúdo desta página em preparação"
+description: "Docs Técnicos: porta de entrada para a referência de API e o guia de desenvolvimento da Juxi Technology, atualmente em preparação no Wiki."
 ---
 
 # Docs Técnicos

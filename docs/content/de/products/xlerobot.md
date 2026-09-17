@@ -1,7 +1,7 @@
 ---
 title: XLeRobot Zweiarm-Mobilroboter
 category: robot
-description: Juxi Technology XLeRobot Zweiarm-Mobilroboter — SO-ARM101-Doppelarm + Omnidirektionalrad-Fahrgestell + Kamera-Turm, zwei Servo-Treiberplatinen mit 12V-Stromversorgung, LeRobot-Ökosystem, als Fertigbaugruppe oder Bausatz erhältlich
+description: "XLeRobot von Juxi Technology: Zweiarm-Roboter mit SO-ARM101-Armen, Omnidirektionalrad-Fahrgestell und Kamera-Turm, als Bausatz oder Fertigbaugruppe erhältlich."
 keywords: [xlerobot, zweiarm-roboter, mobileroboter, embodied intelligence, lerobot, so-arm101, omnidirektionalrad-fahrgestell]
 ---
 

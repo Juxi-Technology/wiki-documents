@@ -1,6 +1,6 @@
 ---
 title: Introduzione all'intelligenza incarnata (LeRobot)
-description: Intelligenza incarnata – framework LeRobot, flusso completo raccolta/training/valutazione SO-ARM101, scelta ACT/policy di diffusione/SmolVLA
+description: "Intelligenza incarnata – framework LeRobot, flusso completo raccolta/training/valutazione SO-ARM101, scelta ACT/policy di diffusione/SmolVLA"
 keywords: [lerobot, intelligenza incarnata, apprendimento per imitazione, act, so-arm101, apprendimento robotico]
 ---
 

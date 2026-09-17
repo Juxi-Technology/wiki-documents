@@ -1,6 +1,6 @@
 ---
 title: ESP32-NanoCam クイックスタート
-description: "ESP32-NanoCam 動画転送/AI ビジョンモジュールのクイックスタート:ファームウェア書き込み、WiFi 設定、リアルタイム映像の確認、AI モードの切替、Arduino / Python プロジェクトへの統合までを 5 ステップで解説します。"
+description: "ESP32-NanoCam のクイックスタートガイド。書き込み、WiFi 設定、映像確認、AI モード切替までを 5 ステップで解説します。"
 ---
 
 # ESP32-NanoCam クイックスタート

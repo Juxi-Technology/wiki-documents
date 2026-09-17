@@ -1,6 +1,6 @@
 ---
 title: "Documentación técnica"
-description: "Contenido de esta página en preparación"
+description: "Documentación técnica de Juxi Technology: índice en preparación; mientras tanto, consulta el centro de tutoriales con los materiales publicados."
 ---
 
 # Documentación técnica

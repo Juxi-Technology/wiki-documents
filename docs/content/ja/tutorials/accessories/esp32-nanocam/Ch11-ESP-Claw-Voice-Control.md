@@ -1,6 +1,6 @@
 ---
 title: 第 11 章:ESP-Claw 音声制御
-description: "ESP32-NanoCam チュートリアル第 11 章:ESP-Claw モードの 5 つのハードウェア制御ツール——音声での LED 色調整、AI モード切り替え、撮影による視覚分析、デバイス情報照会。"
+description: "ESP32-NanoCam チュートリアル第 11 章。ESP-Claw モードの 5 つの専用ツールで、音声による LED 制御や AI モード切替、撮影分析の方法を解説します。"
 ---
 
 # 第 11 章:ESP-Claw 音声制御

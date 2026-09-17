@@ -1,6 +1,6 @@
 ---
 title: Módulo de reconhecimento de voz KWS
-description: "Série de módulos de reconhecimento de voz KWS — serial, firmware, ROS2"
+description: "Ponto de entrada dos tutoriais do módulo KWS: comunicação série com Jetson, Jetson Nano, PC e Raspberry Pi, visualização em RViz2 e gravação de firmware."
 ---
 
 # Módulo de reconhecimento de voz KWS

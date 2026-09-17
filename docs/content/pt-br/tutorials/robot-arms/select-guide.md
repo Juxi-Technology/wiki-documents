@@ -1,6 +1,6 @@
 ---
 title: "Guia de Seleção"
-description: Comparação e guia de seleção entre SO-ARM101, AmazingHand e Lekiwi
+description: "Comparação e guia de seleção entre SO-ARM101, AmazingHand e Lekiwi"
 ---
 
 # Guia de Seleção

@@ -1,7 +1,7 @@
 ---
 title: AI Voice Interaction Module
 category: accessory
-description: Juxi Technology AI Voice Interaction Module (CI1302) — 110+ offline voice commands, 99% recognition within 5 m, custom Chinese/English command words, serial/IIC communication, works with Arduino/Jetson/RDK/Raspberry Pi/PC
+description: "Juxi Technology AI voice interaction module: 110+ offline commands, 99% recognition within 5 m and serial or IIC output for Arduino, Jetson and Raspberry Pi."
 keywords: [ai voice, voice interaction module, ci1302, offline speech recognition, wake word, command words, serial, iic, ros1, ros2]
 ---
 

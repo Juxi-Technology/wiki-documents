@@ -1,7 +1,7 @@
 ---
 title: Unidade Pan-Tilt de Servo 2-DOF
 category: accessory
-description: Gimbal de câmara 2-DOF da Juxi Technology — servos de barramento SCS0009, 180° horizontal / 90° vertical, câmara de 2MP, rastreamento de visão por IA
+description: "Gimbal de câmara 2-DOF da Juxi Technology — servos de barramento SCS0009, 180° horizontal / 90° vertical, câmara de 2MP, rastreamento de visão por IA"
 keywords: [gimbal, pan tilt, 2dof, rastreamento por visão, scs0009]
 ---
 

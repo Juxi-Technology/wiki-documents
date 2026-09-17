@@ -1,7 +1,7 @@
 ---
 title: Mão Dexterous de 4 Dedos Open Source AmazingHand
 category: robot
-description: Mão dexterous de 4 dedos open source AmazingHand da Juxi Technology, controle por barramento TTL, CAD aberto, pesquisa em IA incorporada e HRI
+description: "Mão dexterous de 4 dedos open source AmazingHand da Juxi Technology, controle por barramento TTL, CAD aberto, pesquisa em IA incorporada e HRI"
 keywords: [amazinghand, mão dexterous, ia incorporada]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Incompatibilidad de PyTorch en Jetson Orin
-description: "Instalar la versión de jetson de PyTorch"
+description: "Soluciona PyTorch en el Jetson Orin de tu brazo SO-ARM101: instala la compilación de PyTorch para Jetson, corrige el error libcusparseLt y añade torchvision."
 ---
 
 # Incompatibilidad de PyTorch en Jetson Orin

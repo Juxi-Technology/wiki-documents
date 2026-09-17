@@ -1,7 +1,7 @@
 ---
 title: Fotocamera USB con autofocus
 category: compute-vision
-description: Fotocamera USB con autofocus di Juxi Technology — senza driver, grandangolo 86°, 1080P 30FPS, UVC plug-and-play per visione robotica e inferenza IA, compatibile con Windows/Linux/macOS/Jetson/Raspberry Pi
+description: "Fotocamera USB con autofocus e grandangolo 86°: video 1080P a 30 FPS e protocollo UVC plug-and-play senza driver, ideale per visione robotica e IA."
 keywords: [fotocamera usb, autofocus, 1080p, uvc, senza driver, visione robotica, jetson, raspberry pi]
 ---
 

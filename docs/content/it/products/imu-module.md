@@ -1,7 +1,7 @@
 ---
 title: Modulo IMU inerziale di alta precisione
 category: sensor
-description: Modulo IMU di Juxi Technology — assetto 100Hz, opzioni 6/9/10 assi, IIC+UART, integrazione ROS
+description: "Modulo IMU di Juxi Technology — assetto 100Hz, opzioni 6/9/10 assi, IIC+UART, integrazione ROS"
 keywords: [imu, inerziale, sensore di assetto, ahrs, ros]
 ---
 

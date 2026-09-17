@@ -1,6 +1,6 @@
 ---
 title: Aprendizado de Robôs
-description: Tecnologias de robot learning full-stack baseadas em LeRobot
+description: "Tecnologias de robot learning full-stack baseadas em LeRobot"
 ---
 
 # Aprendizado de Robôs

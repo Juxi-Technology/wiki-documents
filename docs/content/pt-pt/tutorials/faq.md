@@ -1,6 +1,6 @@
 ---
 title: "FAQ"
-description: Perguntas frequentes sobre os produtos da Juxi Technology — problemas comuns com braços robóticos, sensores e acessórios
+description: "Respostas a dúvidas frequentes sobre os produtos da Juxi Technology: braços robóticos SO-ARM101, módulos IMU, voz KWS, câmaras USB e CSI e outros acessórios."
 keywords: [faq, solução de problemas, problemas comuns]
 ---
 

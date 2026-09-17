@@ -1,6 +1,6 @@
 ---
 title: "02-手势追踪教程"
-description: "手势追踪 — 使用教程(PWM 舵机版)"
+description: "AmazingHand 手势追踪教程(PWM 舵机版):摄像头捕捉手部动作,经 MediaPipe 与 IK 解算后由 ESP32-S3 直驱 8 路 PWM 舵机实时跟随。"
 ---
 
 # 02-手势追踪教程

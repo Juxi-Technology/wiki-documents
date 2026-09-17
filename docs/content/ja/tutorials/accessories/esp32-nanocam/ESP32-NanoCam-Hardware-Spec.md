@@ -1,6 +1,6 @@
 ---
 title: ESP32-NanoCam ハードウェア仕様書
-description: "ESP32-NanoCam ハードウェア仕様書:デュアルボードアーキテクチャ、メイン MCU と Flash ピン、DVP カメラ全マッピング、ES8311 オーディオサブシステム、電源設計、完全な GPIO 使用表と ESP-IDF 設定リファレンス。"
+description: "ESP32-NanoCam のハードウェア仕様書。デュアルボード構成、カメラとオーディオの接続、電源設計、GPIO 使用表、ESP-IDF 設定リファレンスをまとめています。"
 ---
 
 # ESP32-NanoCam ハードウェア仕様書

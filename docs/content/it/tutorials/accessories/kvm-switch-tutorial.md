@@ -1,6 +1,6 @@
 ---
 title: "Switch KVM"
-description: "Switch KVM: funzione HUB, seriale TTL, modulo Bluetooth"
+description: "Switch KVM con funzione HUB, seriale TTL e modulo Bluetooth, più le due modalità di commutazione tra dispositivi con e senza display."
 ---
 
 # Switch KVM

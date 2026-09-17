@@ -1,6 +1,6 @@
 ---
 title: 第 4 章:顔検出
-description: "ESP32-NanoCam チュートリアル第 4 章:ESP-DL MobileNet 顔検出モデルを使用し、画面に顔枠と 5 つのキーポイントを描画、Arduino/Python で座標を読み取ってサーボを制御します。"
+description: "ESP32-NanoCam チュートリアル第 4 章。ESP-DL の MobileNet モデルで顔を検出し、顔枠とキーポイントを描画、座標を読み取る方法を解説します。"
 ---
 
 # 第 4 章:顔検出

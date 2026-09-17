@@ -1,6 +1,6 @@
 ---
 title: Jetson-CSI-Kamera
-description: "Verwendung des NVIDIA Jetson Orin CSI-Kameramoduls"
+description: "CSI-Kameramodul von Juxi Technology für das Jetson Orin Developer Kit: Anschluss über CSI-2, Geräteprüfung und Aufnahmebeispiele mit GStreamer und OpenCV."
 ---
 
 # Jetson-CSI-Kamera

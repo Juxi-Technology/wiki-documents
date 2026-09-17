@@ -1,6 +1,6 @@
 ---
 title: Über uns
-description: Juxi Technology — Open-Source-Robotik aus Qianhai, Shenzhen
+description: "Juxi Technology aus Qianhai, Shenzhen, entwickelt Open-Source-Robotik für Physical AI und Edge AI und veröffentlicht Schaltpläne, Firmware und CAD-Dateien."
 ---
 
 # Über uns

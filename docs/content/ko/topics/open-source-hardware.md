@@ -1,6 +1,6 @@
 ---
 title: 왜 우리는 오픈소스로 만드는가 — 오픈소스 로봇 하드웨어의 사례
-description: "Juxi Technology(JuxiTech) 오픈소스 하드웨어 철학: 모든 제품에 회로도, 펌웨어 소스, CAD 파일 동봉. 폐쇄형 하드웨어의 비용, 연구 가속기로서의 오픈소스, 선전 제조의 글로벌 비전"
+description: "오픈소스 로봇 하드웨어 철학 에세이: 회로도·펌웨어 소스·CAD를 모두 공개하는 Juxi Technology의 이유와 선전 제조, 글로벌 비전을 설명합니다."
 keywords: [오픈소스, open source, 하드웨어, 철학, 로봇, juxitech]
 ---
 

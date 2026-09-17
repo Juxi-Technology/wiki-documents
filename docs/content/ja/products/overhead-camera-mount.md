@@ -1,7 +1,7 @@
 ---
 title: SO-ARM101 オーバーヘッドカメラマウント
 category: robot
-description: Juxi Technology SO-ARM101 オーバーヘッドカメラマウント——真上視点設置、RealSense 対応、ロボットアームビジョンデータ収集
+description: "Juxi Technology SO-ARM101 オーバーヘッドカメラマウント——真上視点設置、RealSense 対応、ロボットアームビジョンデータ収集"
 keywords: [camera mount, カメラマウント, overhead, realsense, ビジョン収集]
 ---
 

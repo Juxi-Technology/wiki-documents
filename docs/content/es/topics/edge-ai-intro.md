@@ -1,6 +1,6 @@
 ---
 title: Introducción al despliegue de IA en el borde
-description: Despliegue de IA en el borde Jetson – modelos PyTorch a TensorRT, exportación ONNX y optimización de inferencia, rutas de despliegue y solución de problemas
+description: "Despliegue de IA en el borde Jetson – modelos PyTorch a TensorRT, exportación ONNX y optimización de inferencia, rutas de despliegue y solución de problemas"
 keywords: [edge ai, tensorrt, onnx, despliegue en el borde, jetson]
 ---
 

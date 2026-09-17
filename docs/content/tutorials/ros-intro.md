@@ -1,6 +1,6 @@
 ---
 title: "ROS Intro"
-description: Juxi Technology ROS tutorial — ROS 1/ROS 2 environment setup, topics/services/launch basics, hands-on with IMU & SO-ARM101
+description: "Juxi Technology ROS tutorial — ROS 1/ROS 2 environment setup, topics/services/launch basics, hands-on with IMU & SO-ARM101"
 keywords: [ros, ros2, ros1, tutorial, robot operating system]
 ---
 
