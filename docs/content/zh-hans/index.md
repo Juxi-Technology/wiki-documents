@@ -169,9 +169,13 @@ const storeUrl = computed(() => {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 24px;
-  margin: 32px 0 64px 0;
+  /* 满宽:突破文档容器的 688px 限宽(与 hero 同思路但不用 50vw,
+     避免滚动条宽度被计入导致横向溢出);超宽屏封顶 1320px 与 hero 对齐 */
+  --grid-w: min(1320px, 100vw - 48px);
+  width: var(--grid-w);
+  margin: 32px calc(50% - var(--grid-w) / 2) 64px;
 }
 
 .card {
@@ -208,9 +212,13 @@ const storeUrl = computed(() => {
 
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 20px;
-  margin: 32px 0 64px 0;
+  /* 满宽:突破文档容器的 688px 限宽(与 hero 同思路但不用 50vw,
+     避免滚动条宽度被计入导致横向溢出);超宽屏封顶 1320px 与 hero 对齐 */
+  --grid-w: min(1320px, 100vw - 48px);
+  width: var(--grid-w);
+  margin: 32px calc(50% - var(--grid-w) / 2) 64px;
 }
 
 .category-card {
