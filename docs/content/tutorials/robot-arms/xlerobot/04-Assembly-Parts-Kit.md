@@ -9,7 +9,7 @@ description: "XLeRobot parts-kit assembly guide: build two SO101 follower arms, 
 
 Tip
 
-If you would rather skip the fun of tightening screws, you can also buy the [pre-assembled kit](https://item.taobao.com/item.htm?ft=t&id=1002551208989&spm=a21dvs.23580594.0.0.47b32c1bwUlxLA&skuId=6088534920039) for the SO101 follower arms compatible with Xlerobot.
+If you would rather skip the fun of tightening screws, you can also buy the [pre-assembled kit](https://item.taobao.com/item.htm?id=1002551208989&skuId=6088534920039) for the SO101 follower arms compatible with Xlerobot.
 
 
 

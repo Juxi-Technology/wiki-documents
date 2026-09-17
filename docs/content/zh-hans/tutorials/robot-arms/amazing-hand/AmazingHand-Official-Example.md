@@ -10,7 +10,7 @@ description: "AmazingHand 灵巧手官方示例运行教程：下载代码包、
 
 ## 1.代码下载
 
-建议下载本使用教程下的代码压缩包进行Demo示例演示，或克隆 官方开源代码仓库https://github.com/pollen-robotics/AmazingHand.git，官方开源代码或有错漏请务必注意。
+建议下载本使用教程下的代码压缩包进行Demo示例演示，或克隆 官方开源代码仓库 https://github.com/pollen-robotics/AmazingHand.git ，官方开源代码或有错漏请务必注意。
 
 Windows 代码压缩包
 

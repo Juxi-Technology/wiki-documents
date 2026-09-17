@@ -9,7 +9,7 @@ description: "Assemblage du kit en pièces XLeRobot : construire les bras SO101,
 
 Astuce
 
-Si vous préférez éviter le plaisir de serrer des vis, vous pouvez aussi acheter le [kit pré-assemblé](https://item.taobao.com/item.htm?ft=t&id=1002551208989&spm=a21dvs.23580594.0.0.47b32c1bwUlxLA&skuId=6088534920039) des bras suiveurs SO101 compatibles avec Xlerobot.
+Si vous préférez éviter le plaisir de serrer des vis, vous pouvez aussi acheter le [kit pré-assemblé](https://item.taobao.com/item.htm?id=1002551208989&skuId=6088534920039) des bras suiveurs SO101 compatibles avec Xlerobot.
 
 
 

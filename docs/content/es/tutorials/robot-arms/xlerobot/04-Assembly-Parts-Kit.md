@@ -9,7 +9,7 @@ description: "Montaje del kit de piezas de XLeRobot desde cero: construye los do
 
 Consejo
 
-Si prefiere saltarse la diversión de apretar tornillos, también puede adquirir el [kit preensamblado](https://item.taobao.com/item.htm?ft=t&id=1002551208989&spm=a21dvs.23580594.0.0.47b32c1bwUlxLA&skuId=6088534920039) para los brazos seguidores SO101 compatible con Xlerobot.
+Si prefiere saltarse la diversión de apretar tornillos, también puede adquirir el [kit preensamblado](https://item.taobao.com/item.htm?id=1002551208989&skuId=6088534920039) para los brazos seguidores SO101 compatible con Xlerobot.
 
 
 

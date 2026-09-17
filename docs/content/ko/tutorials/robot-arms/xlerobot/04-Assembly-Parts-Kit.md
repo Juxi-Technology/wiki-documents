@@ -9,7 +9,7 @@ description: "나사 조이기의 즐거움을 건너뛰고 싶다면, Xlerobot 
 
 팁
 
-나사 조이기의 즐거움을 건너뛰고 싶다면, Xlerobot 에 호환되는 SO101 팔로워 암의 [사전 조립 키트](https://item.taobao.com/item.htm?ft=t&id=1002551208989&spm=a21dvs.23580594.0.0.47b32c1bwUlxLA&skuId=6088534920039)를 구매할 수도 있습니다.
+나사 조이기의 즐거움을 건너뛰고 싶다면, Xlerobot 에 호환되는 SO101 팔로워 암의 [사전 조립 키트](https://item.taobao.com/item.htm?id=1002551208989&skuId=6088534920039)를 구매할 수도 있습니다.
 
 
 

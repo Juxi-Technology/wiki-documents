@@ -9,7 +9,7 @@ description: "Montaggio del kit XLeRobot a pezzi: costruire i due bracci SO101, 
 
 Suggerimento
 
-Se preferisci saltare il divertimento di avvitare le viti, puoi anche acquistare il [kit preassemblato](https://item.taobao.com/item.htm?ft=t&id=1002551208989&spm=a21dvs.23580594.0.0.47b32c1bwUlxLA&skuId=6088534920039) per i bracci follower SO101 compatibili con Xlerobot.
+Se preferisci saltare il divertimento di avvitare le viti, puoi anche acquistare il [kit preassemblato](https://item.taobao.com/item.htm?id=1002551208989&skuId=6088534920039) per i bracci follower SO101 compatibili con Xlerobot.
 
 
 

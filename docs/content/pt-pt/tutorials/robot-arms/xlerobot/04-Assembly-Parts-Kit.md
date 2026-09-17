@@ -9,7 +9,7 @@ description: "Montagem do kit em peças do XLeRobot: configurar os servos do bra
 
 Dica
 
-Se preferir dispensar o prazer de apertar parafusos, também pode comprar o [kit pré-montado](https://item.taobao.com/item.htm?ft=t&id=1002551208989&spm=a21dvs.23580594.0.0.47b32c1bwUlxLA&skuId=6088534920039) dos braços seguidores SO101 compatíveis com o Xlerobot.
+Se preferir dispensar o prazer de apertar parafusos, também pode comprar o [kit pré-montado](https://item.taobao.com/item.htm?id=1002551208989&skuId=6088534920039) dos braços seguidores SO101 compatíveis com o Xlerobot.
 
 
 

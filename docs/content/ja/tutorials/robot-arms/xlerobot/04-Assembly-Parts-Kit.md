@@ -9,7 +9,7 @@ description: "ねじ締めの楽しみをスキップしたい場合は、Xlerob
 
 ヒント
 
-ねじ締めの楽しみをスキップしたい場合は、Xlerobot に対応した SO101 フォロワーアームの[組み立て済みキット](https://item.taobao.com/item.htm?ft=t&id=1002551208989&spm=a21dvs.23580594.0.0.47b32c1bwUlxLA&skuId=6088534920039)を購入することもできます。
+ねじ締めの楽しみをスキップしたい場合は、Xlerobot に対応した SO101 フォロワーアームの[組み立て済みキット](https://item.taobao.com/item.htm?id=1002551208989&skuId=6088534920039)を購入することもできます。
 
 
 

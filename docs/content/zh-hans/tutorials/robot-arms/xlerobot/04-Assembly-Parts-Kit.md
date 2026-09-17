@@ -9,7 +9,7 @@ description: "如果你宁愿跳过拧螺丝的乐趣，你也可以购买适配
 
 小技巧
 
-如果你宁愿跳过拧螺丝的乐趣，你也可以购买适配Xlerobot的SO101从动臂的[预组装套件](https://item.taobao.com/item.htm?ft=t&id=1002551208989&spm=a21dvs.23580594.0.0.47b32c1bwUlxLA&skuId=6088534920039)。
+如果你宁愿跳过拧螺丝的乐趣，你也可以购买适配Xlerobot的SO101从动臂的[预组装套件](https://item.taobao.com/item.htm?id=1002551208989&skuId=6088534920039)。
 
 
 
