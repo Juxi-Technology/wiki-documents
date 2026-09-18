@@ -320,7 +320,6 @@ const storeUrl = computed(() => {
 }
 /* ---- hero 改版 v2:照 Seeed Studio Wiki 首页(满宽 hero,左文右巨型品牌字) ---- */
 .hero-section {
-  margin: 0 calc(50% - 50vw);
   padding: 56px 0 40px;
   text-align: left;
   border: none;
@@ -328,9 +327,14 @@ const storeUrl = computed(() => {
   background: none;
 }
 
+/* 满宽改由 .hero-inner 承担:不再用 50vw 负 margin——50vw 把滚动条宽度也算进去,
+   会让整页多出约 7px 横向滚动(Windows/常显滚动条下必现);
+   改用「按视口定宽 + 48px 余量」,与 .card-grid / .category-grid 同一套写法 */
 .hero-inner {
-  max-width: 1320px;
-  margin: 0 auto;
+  --hero-w: min(1320px, 100vw - 48px);
+  width: var(--hero-w);
+  margin-left: calc(50% - var(--hero-w) / 2);
+  margin-right: 0;
   padding: 0 64px;
   display: flex;
   align-items: center;
