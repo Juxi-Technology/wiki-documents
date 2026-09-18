@@ -8,6 +8,8 @@
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "check:links": "node scripts/check-links.mjs",
+    "check:css": "node scripts/check-css-collisions.mjs",
+    "check": "npm run check:links && npm run check:css",
     "gen:llms": "node scripts/gen-llms.mjs",
     "indexnow": "node scripts/indexnow.mjs",
     "deploy": "npm run gen:llms && npm run docs:build && wrangler pages deploy docs/.vitepress/dist --project-name juxi-wiki --branch main && (npm run indexnow || true)",

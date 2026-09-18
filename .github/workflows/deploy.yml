@@ -30,6 +30,8 @@ jobs:
       - run: npm ci
       # 站内链接完整性校验(新增/移动页面时防死链回归)
       - run: npm run check:links
+      # 跨页 CSS 选择器碰撞校验(所有页面的 <style> 会合并成 1 个全局 CSS,同名选择器会互相覆盖)
+      - run: npm run check:css
       # 全站内容转储(llms-full.txt)随构建重新生成,保证 AI 引擎读到最新内容
       - run: npm run gen:llms
       - run: npm run docs:build
