@@ -20,6 +20,32 @@ O SO-ARM101 é o kit de desenvolvimento robótico de braço duplo 6-DOF open sou
 - Suporte a Jetson / PC (Linux)
 - Hardware totalmente open source (esquemáticos/CAD/firmware)
 
+## 1. Design de hardware: modular de alto desempenho, fácil de montar e personalizável
+
+- **Material estrutural**: a estrutura central combina peças impressas em 3D com componentes de reforço de carga, otimizando a passagem de cabos e o design das articulações, evitando interferência de movimento e conciliando leveza e durabilidade; o utilizador pode imprimir, substituir ou expandir as peças estruturais por conta própria.
+
+- **Configuração de acionamento**: o braço seguidor é equipado com **6 servos de encoder magnético de 12V 30KG de alto torque**, com realimentação de encoder magnético de 360° e algoritmo de controlo PID, movimento suave e sem trepidação, alta precisão de posicionamento repetido, força potente e movimentos precisos; já o braço líder utiliza **6 servos de 7.4V**, distribuindo diferentes relações de redução conforme a carga de cada articulação, o que facilita o ensino por arraste manual.
+
+- **Sistema de visão**: suporta um sistema de visão inteligente com duas câmaras; a câmara na extremidade captura detalhes da garra de perto, a câmara global cobre o ambiente de trabalho, e a fusão dos dados das duas câmaras constrói um modelo tridimensional, fornecendo suporte de dados rico para a aprendizagem por imitação.
+
+- **Ligação de controlo**: equipado com placa de acionamento de servos, liga-se diretamente ao computador ou ao Raspberry Pi pela interface USB-C, plug and play, simplificando o processo de ligação de hardware e montando rapidamente um ambiente de controlo.
+
+## 2. Ecossistema de software: integração profunda com o LeRobot, desenvolvimento de IA sem barreiras
+
+- **Compatibilidade com o framework central**: profundamente adaptado ao **framework ML de robótica open source LeRobot** da Hugging Face, construído sobre PyTorch, com modelos pré-treinados integrados, datasets de múltiplos cenários e ambiente de simulação, compatível com datasets open source conhecidos, como o Stanford ALOHA.
+
+- **Comunicação de baixa latência**: utiliza o **motor de fluxo de dados distribuído DORA**, realizando a interação de baixa latência entre hardware e algoritmos, com desempenho de execução em Python 17 vezes mais rápido que o ROS2, e suporta hot reload de código, permitindo ajustar a estratégia em tempo real sem reiniciar.
+
+- **Open source em toda a stack**: ficheiros de impressão 3D do hardware, código de controlo do software, scripts de treino de IA e o conjunto completo de tutoriais são **totalmente open source**; o utilizador pode modificar livremente e fazer desenvolvimento secundário, implementando rapidamente expansões de funcionalidades personalizadas.
+
+## 3. Cenários de aplicação centrais: da introdução à implementação, adaptação a todos os cenários
+
+1. **Introdução ao ensino de robótica**: oferece um tutorial de fluxo completo, da montagem do braço robótico e programação básica até à implementação de estratégias de IA, acompanhado de interface visual de operação e códigos de exemplo; utilizadores sem nenhuma base podem dominar rapidamente o controlo do robô e as competências de aplicação de IA.
+
+2. **Validação de algoritmos científicos**: focado em investigação de **aprendizagem por imitação e aprendizagem por reforço**, suporta a gravação de dados de operação humana por VR para treinar o robô; caso típico: com base em 50 vídeos de operação de 15 segundos, 2 horas de treino bastam para dominar tarefas como dobrar roupas, inserir chaves e separar materiais.
+
+3. **Protótipo industrial leve**: valida soluções de automação a baixo custo, adaptando-se a cenários como **movimentação de materiais, montagem de precisão e triagem de peças**, realizando as funções centrais de um braço robótico industrial com um custo da ordem de mil yuans, implementando rapidamente a validação de protótipos.
+
 ## Especificações
 
 | Categoria | Especificação |
@@ -34,6 +60,10 @@ O SO-ARM101 é o kit de desenvolvimento robótico de braço duplo 6-DOF open sou
 | Repetibilidade | ±0,1mm |
 | Raio de trabalho | 520mm |
 | Comunicação | USB-C |
+| Material | Bambu Lab PLA+ |
+| Dimensões (líder / seguidor) | 111×239×525 mm / 111×173×532 mm |
+
+![Desenho cotado dos braços líder e seguidor](../../../public/images/products/so-arm101/dimensions.jpg)
 
 ## Início Rápido
 
