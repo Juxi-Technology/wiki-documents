@@ -5,6 +5,8 @@ description: "SO-ARM101 使用教程:基於 LeRobot 的完整流程,涵蓋環境
 
 # SO-ARM101 使用教程
 
+> 本頁為速查版。八步分系統的[《LeRobot 完整課程》](/zh-hant/tutorials/robot-arms/so-arm101/lerobot/)內容更完整,新手建議從課程開始。
+
 > **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
 
 

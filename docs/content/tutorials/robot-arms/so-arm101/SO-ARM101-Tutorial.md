@@ -1,9 +1,11 @@
 ---
 title: "SO-ARM101 Tutorial"
-description: "This tutorial has been updated to December 15th, and you can choose to follow the latest version  of the official documentation for operation . For th"
+description: "The original SO-ARM101 tutorial (updated December 15th): environment setup, robot control, teleoperation, dataset recording and policy training."
 ---
 
 # SO-ARM101 Tutorial
+
+> This page is the quick-reference version. The [complete LeRobot course](/tutorials/robot-arms/so-arm101/lerobot/) walks through all eight steps with per-OS instructions — start there if you are new.
 
 > **[Buy in Store](https://www.juxitech.com/products/so-arm101-developers-kit)**
 

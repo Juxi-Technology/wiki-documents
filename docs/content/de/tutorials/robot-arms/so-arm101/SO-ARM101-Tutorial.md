@@ -5,6 +5,8 @@ description: "Dieses Tutorial wurde bis 15. Dezember aktualisiert. Sie können d
 
 # LeRobot-Roboterarm-Tutorial
 
+> Diese Seite ist die Kurzreferenz. Der [komplette LeRobot-Kurs](/de/tutorials/robot-arms/so-arm101/lerobot/) führt in acht Schritten durch alle Betriebssysteme — für Einsteiger die bessere Startseite.
+
 > **[Im Shop kaufen](https://www.juxitech.com/de/products/so-arm101-developers-kit)**
 
 

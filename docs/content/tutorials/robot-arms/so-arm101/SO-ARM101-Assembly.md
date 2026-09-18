@@ -5,44 +5,166 @@ description: "The Pro version's active arm uses a 5V6A power adapter, while the 
 
 # SO-ARM101 Assembly
 
-> **[Buy in Store](https://www.juxitech.com/products/so-arm101-developers-kit)**
+Note: If you have a pre-assembled robotic arm, skip this tutorial.
 
+## 3D-Printed Parts for the Follower Arm
 
-![image – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
+![IMG_20251229_141748.jpg](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/1.jpg)
 
-**The Pro version's active arm uses a 5V6A power adapter, while the passive arm uses a 12V5A power adapter **
+## 3D-Printed Parts for the Leader Arm
 
-Servo ID setting, servo angle calibration, and assembly should be completed in advance, and you can refer to [ the official assembly tutorial ](https://huggingface.co/docs/lerobot/so101)
+![IMG_20251229_141533.jpg](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.jpg)
 
-## Step 1: Set the servo ID and install the servo horn (excluding servo No. 5) 
+The leader arm and the follower arm are very similar; only the end differs.
 
-![image – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/2.png)
+The leader arm has a handle and a trigger, while the follower arm has a gripper.
 
-Once again, please ensure that the steering gear joint ID and gear ratio strictly correspond to those of **SO-ARM101**.
+## Remove Residual Supports from the 3D-Printed Parts
 
-Each motor on the bus has a unique ID. New motors usually come with a default ID ` 1 `. To ensure normal communication between the motor and the controller, we first need to set a unique ID for each motor. In addition, the data transmission speed on the bus is determined by the baud rate. To be able to communicate with each other, the controller and all motors need to be configured with the same baud rate, and the baud rate of this robotic arm servo is 100000. 
+Check every hole, opening, slot, and grid, especially the five holes resembling the "Five Dots" tile in mahjong.
 
-To this end, we first need to connect the controller to each motor separately for setup. Since we will write these parameters to the non-volatile area of the motor's internal memory (EEPROM),only one operation is required.
+This step is very important; otherwise, the screws will not go in later.
 
-If you plan to reuse the motors of other robots, you may also need to perform this step, as the ID and baud rate may not match. 
+## Distinguishing the Four Servo Types
 
-The following video shows the sequential steps for setting the motor ID. 
+|Large Model|Small Model|Voltage (V)|Gear Ratio|Robotic Arm Joint|Quantity|
+|---|---|---|---|---|---|
+|STS-3215|C001|7.4|1:345|Leader arm 2|1|
+||C044|7.4|1:191|Leader arms 1 and 3|2|
+||C046|7.4|1:147|Leader arms 4, 5, and 6|3|
+||C047|12|1:345|All joints of the follower arm|6|
+
+> The gear ratio is the ratio of "motor speed : servo output shaft speed"; for example, 1:345 means the motor turns 345 revolutions for the servo output shaft to turn 1 revolution.
+> 
+> A large gear ratio amplifies torque through the gear train, so it can drive a heavier load (such as the follower arm)
+> 
+> At the same time, however, the rotation speed of the output shaft becomes slower (because it is "geared down")
+> 
+> Dragging the joint will require more effort
+> 
+> 
+
+Below are the models and gear ratios of all servos in this project; the underlines are their numbers.
+
+![12月30日(7).png](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/3.jpg)
+
+![IMG_20260108_145707.jpg](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/4.jpg)
+
+## Distinguishing the Two Voltage Power Adapters
+
+5V 6A 30W power adapter: powers the 7.4V servos (leader arm), black
+
+12V 5A 60W power adapter: powers the 12V servos (follower arm), white
+
+## Download the Feetech Servo Debugging Tool
+
+### Windows Computer
+
+https://gitee.com/ftservo/fddebug
+
+Download [`FD1.9.8.5(250729).7z`](https://gitee.com/ftservo/fddebug/blob/master/FD1.9.8.5(250729).7z), unzip it, and run the exe program inside
+
+### Ubuntu and Mac Computers (the archive includes tutorials)
+
+[Juxi_ServoController.zip](/downloads/Juxi_ServoController.zip)
+
+![Lerobot 101机械臂.jpg](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/5.jpg)
+
+**Pro version: the leader arm uses a 5V6A power adapter, and the follower arm uses a 12V5A power adapter**
+
+Servo ID setting, servo angle calibration, and assembly should be done in advance; you can refer to the [official assembly tutorial](https://huggingface.co/docs/lerobot/so101)
+
+## Step 1: Set Servo IDs, Install the Servo Horn (except Servo 5)
+
+![image.png](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/6.png)
+
+![image.png](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/7.png)
+
+1. Open the Feetech host debugging tool, select the COM port number, set the baud rate to one million, and click "Open"
+
+2. Click "Search"; once "STS3215" appears, click "Stop", then click "STS3215"
+
+3. Select "Debug" at the top; you can drag the slider to rotate the servo, or click "Scan" to make the servo move back and forth. Confirm that the servo operates normally
+
+4. Select "Program" at the top
+
+5. Click "Center Calibration" to set the current servo rotation shaft position as the center (0-4095)
+
+6. Click "ID", set the ID number for the corresponding servo in the lower right corner, and click "Save". Note that the number is a pure Arabic numeral, with no letters.
+
+7. Unplug the cable connecting the servo to the control board
+
+8. Plug the servo cable into the servo
+
+Servo 1 has two cables plugged in; for the other servos, plug in only one cable for now.
+
+![截图_20260115151626.png](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/8.png)
+
+As a reminder, make sure the servo joint IDs and gear ratios strictly correspond to those of the **SO-ARM101**.
+
+Each motor on the bus has a unique ID. New motors usually come with a default ID of `1`. To ensure normal communication between the motors and the controller, we first need to set a unique ID for each motor. In addition, the data transmission speed on the bus is determined by the baud rate. To be able to communicate with each other, the controller and all motors need to be configured with the same baud rate; the baud rate of this robotic arm's servos is 100000.
+
+To do this, we first need to connect the controller to each motor individually for configuration. Since these parameters are written into the non-volatile area of the motor's internal memory (EEPROM), this only needs to be done once.
+
+If you want to reuse motors from another robot, you may also need to perform this step, because the ID and baud rate may not match.
+
+The video below shows the sequence of steps for setting motor IDs.
 
 ### Windows System
 
-飞特舵机上位机.zip
+[Feetech Servo Host Software.zip](/downloads/飞特舵机上位机.zip)
 
-Use the Feite servo controller to set the servo ID and calibrate the midpoint,  the ID setting ranges from 1 to 6! 
+Use the Feetech servo host software to set the servo IDs and calibrate the center; the ID setting goes from 1 to 6!
 
-机械臂舵机设置ID-Windows系统.mp4
+**Robotic Arm Servo ID Setup-Windows System.mp4**（机械臂舵机设置ID-Windows系统.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
 
-### Linux/Ubuntu System
+### Linux/Ubuntu System and Mac Computer
 
-For the FTServo Host Computer, please refer to  https://gitee.com/ftservo/FTServo_Linux
+If you need the Feetech servo host software, you can refer to the [Feetech servo debugging tool](https://juxitech.feishu.cn/wiki/HllBwhjJ1iayMdkUTGgcyKbgn8g#share-Jvk1dRRl8oY0Skxrt2VczA9jnNb) above
 
-Please first follow the [LeRobot Manipulator Tutorial](https://juxitech.feishu.cn/wiki/Wztzw95Cui2F9LkbMk8cnAoanCc) up to **C. Manipulator Control** under **Port Authorization **Run Script to Find Port**
+Please first complete the environment deployment following the [official LeRobot environment installation](https://huggingface.co/docs/lerobot/installation) page
 
-Connect the servo driver board of the slave arm to the computer using a USB data cable and turn on the power. Then, run the following command. Please modify --robot.port=/dev/ttyACM0 in the command to the found Port Number. If the found port is /dev/ttyACM1, then modify it to --robot.port=/dev/ttyACM1
+Note: activate the virtual environment and enter the corresponding src/lerobot directory.
+
+conda activate lerobot
+
+cd lerobot/src/lerobot
+
+1. Find the USB port corresponding to the robotic arm. To find the correct port for each robotic arm, run the utility script twice::
+
+```Plain Text
+lerobot-find-port
+```
+
+Example output when identifying the Leader robotic arm port (for example, `/dev/tty.usbmodem575E0031751` on Mac, or `/dev/ttyACM0` on Linux):
+
+```PowerShell
+Finding all available ports for the MotorBus.
+['/dev/ttyACM0', '/dev/ttyACM1']
+Remove the usb cable from your MotorsBus and press Enter when done.
+
+[...Disconnect corresponding leader or follower arm and press Enter...]
+
+The port of this MotorsBus is /dev/ttyACM1
+Reconnect the USB cable.
+```
+
+Example output when identifying the Follower robotic arm port (for example, `/dev/tty.usbmodem575E0032081`, or `/dev/ttyACM1` on Linux):
+
+```PowerShell
+Finding all available ports for the MotorBus.
+['/dev/ttyACM0', '/dev/ttyACM1']
+Remove the usb cable from your MotorsBus and press Enter when done.
+
+[...Disconnect corresponding leader or follower arm and press Enter...]
+
+The port of this MotorsBus is /dev/ttyACM0
+Reconnect the USB cable.
+```
+
+Remember to unplug the USB connector, otherwise the interface will not be detected.
+
+2. Use a USB cable to connect the computer to the follower arm's servo driver board, and power it on. Then run the following command. Change --robot.port=/dev/ttyACM0 in the command to the port number you found. If the port you found is /dev/ttyACM1, change it to --robot.port=/dev/ttyACM1
 
 ```Python
 lerobot-setup-motors \
@@ -56,29 +178,29 @@ You will see the following output.
 Connect the controller board to the 'gripper' motor only and press enter.
 ```
 
-Connect the servo of the gripper as instructed. Please ensure it is the only servo connected to the servo driver board, and that this servo has not been connected to any other servos. After you press the **[Enter]** key, the script will automatically set the ID and baud rate of this servo, with the ID set from 6 to 1!
+Following the instructions, connect the gripper servo. Make sure it is the only servo connected to the servo driver board, and that this servo is not yet connected to any other servo. After you press **[Enter]**, the script will automatically set the ID and baud rate of this servo; the ID setting goes from 6 to 1!
 
-After that, you should see the following message: 
+After that, you should see the following message:
 
 ```Python
 'gripper' motor id set to 6
 ```
 
-Next, the output of the next item is:
+Then the next output is:
 
 ```Python
 Connect the controller board to the 'wrist_roll' motor only and press enter.
 ```
 
-**Note**Repeat the above operations for each servo according to the instructions.
+**Note** Following the instructions, repeat the above operation for each servo.
 
-As with the previous servo, please ensure that it is the only servo connected to the driver board, and that the servo itself is not connected to any other servos. 
+As with the previous servos, make sure it is the only servo connected to the driver board, and that the servo itself is not connected to any other servo.
 
-Before each press of the **Enter** key, please make sure to check your cable connections. For example, when operating the circuit board, the power cord may become disconnected.
+Before pressing **Enter** each time, be sure to check your cable connections. For example, the power cable may come loose while you are handling the board.
 
-After you have completed all the steps, the script will automatically end, at which point the servos will be ready for use. Now, you can connect the 3-pin interface of each servo in sequence, and connect the cable of the first servo (the "shoulder pan" servo with ID 1) to the driver board. Now the driver board can be installed on the base of the robotic arm. 
+When you have completed all the steps, the script ends automatically, and the servos are ready for use. Now you can connect the 3-pin connectors of each servo in sequence, and connect the cable of the first servo (the "shoulder pan" servo with ID 1) to the driver board. The driver board can now be installed on the base of the robotic arm.
 
-Repeat the same steps for the active arm. 
+Repeat the same steps for the leader arm.
 
 ```Python
 lerobot-setup-motors \
@@ -86,22 +208,46 @@ lerobot-setup-motors \
     --teleop.port=/dev/ttyACM0
 ```
 
-机械臂舵机设置ID-Linux系统.mp4
+**Robotic Arm Servo ID Setup-Linux System.mp4**（机械臂舵机设置ID-Linux系统.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
 
 ## Step 2: Assembly
 
-- The assembly steps of the follower arm are basically the same as those of the active arm. The only difference is that after Step 12, the installation method of the end effector (gripper and handle) is different. 
+- The assembly steps for the follower arm are basically the same as for the leader arm. The only difference is that after step 12, the end effector (gripper and handle) is installed differently.
 
-SO-ARM101机械臂组装教程.mp4
+**SO-ARM101 Robotic Arm Assembly Tutorial.mp4**（SO-ARM101机械臂组装教程.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
 
-Installation of the servo driver board: First install 4 copper pillars, then secure the driver board with four M2.5\*8 screws
+Installing the servo driver board: first install the 4 copper standoffs, then secure the driver board with four M2.5*8 screws
 
-![Linux/Ubuntu System – 1](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/7.png)
+![1768467962506.webp](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.webp)
 
-![Linux/Ubuntu System – 2](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/8.png)
+![1768467970234.webp](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/10.webp)
 
-![Linux/Ubuntu System – 3](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/9.png)
+![截图_20260115170850.png](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/11.png)
 
-**The Pro version's black active arm uses a 5V6A power adapter, while the white passive arm uses a 12V5A power adapter **
+**Pro version: the black leader arm uses a 5V6A power adapter, and the white follower arm uses a 12V5A power adapter**
 
-<RelatedProducts slugs="so-arm101,servo-driver-board,overhead-camera-mount" />
+## Setting Servo IDs and Center Calibration on the Web
+
+https://bambot.org/feetech.js?lang=zh
+
+1. Enter 0 or 1 according to the servo model, and click "Connect"
+
+![截图_20260413125622.png](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/12.png)
+
+2. Scan for servos with IDs 1~6; you can confirm the corresponding ID servo by the FOUND in the scan results. For example, in the image, servo ID 1 has been scanned
+
+![截图_20260413125712.png](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/13.png)
+
+3. ID Setting and Center Calibration
+
+① Enter the scanned servo ID as the current servo ID
+
+② Enter a number in "ID Management" and click "Change ID" to set the ID
+
+③ Center calibration (the center for STS3215 servos is 2047, and for SCS0009 servos is 511)
+
+STS servo: enter 2047 in "Position Control" and click "Set"
+
+SCS servo: enter 511 in "Position Control" and click "Set"
+
+![截图_20260413125748.png](../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly/14.png)

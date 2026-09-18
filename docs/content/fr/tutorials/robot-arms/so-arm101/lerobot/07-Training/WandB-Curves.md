@@ -1,0 +1,16 @@
+---
+title: "Étape 7 : Courbes d'entraînement en temps réel (wandb)"
+description: "Suivez les courbes d'entraînement en temps réel grâce au lien wandb fourni au lancement, pour vérifier la progression et la convergence de votre modèle."
+---
+
+# Étape 7 : Courbes d'entraînement en temps réel (wandb)
+
+- Obtenir le lien wandb
+
+![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-07-Training-WandB-Curves/1.png)
+
+- Consulter les courbes d'entraînement en temps réel
+
+![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-07-Training-WandB-Curves/2.png)
+
+<RelatedProducts slugs="so-arm101" />

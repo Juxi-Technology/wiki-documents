@@ -5,6 +5,8 @@ description: "LeRobot 로봇팔 튜토리얼: SO-ARM101·SO-ARM100 공용 환경
 
 # LeRobot 로봇팔 튜토리얼
 
+> 이 페이지는 요약(빠른 참조) 버전입니다. 8단계를 OS별로 설명하는 [LeRobot 전체 코스](/ko/tutorials/robot-arms/so-arm101/lerobot/)가 더 자세하니 처음이라면 코스부터 시작하세요.
+
 > **[스토어에서 구매](https://www.juxitech.com/ko/products/so-arm101-developers-kit)**
 
 

@@ -5,6 +5,8 @@ description: "Este tutorial está actualizado al 15 de diciembre. Puede seguir l
 
 # Tutorial del brazo robótico LeRobot
 
+> Esta página es la versión resumida. El [curso completo de LeRobot](/es/tutorials/robot-arms/so-arm101/lerobot/) explica los ocho pasos para cada sistema — empieza por ahí si es tu primera vez.
+
 > **[Comprar en la tienda](https://www.juxitech.com/es/products/so-arm101-developers-kit)**
 
 

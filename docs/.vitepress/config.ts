@@ -177,6 +177,115 @@ const zhCN = {
                 { text: 'SO-ARM101 双臂(双从臂)教程', link: '/zh-hans/tutorials/robot-arms/so-arm101/SO-ARM101-Bi-Arm-Tutorial' },
                 { text: 'SO-ARM101 7-DOF 改造与 LeRobot 使用教程', link: '/zh-hans/tutorials/robot-arms/so-arm101/SO-ARM101-7DOF-LeRobot' },
                 { text: 'SoARM 系列舵机校准工具使用教程', link: '/zh-hans/tutorials/robot-arms/so-arm101/SO-ARM101-Servo-Calibration-Tool' },
+                {
+                  text: 'LeRobot 完整课程',
+                  collapsed: true,
+                  items: [
+                    { text: 'LeRobot 完整课程', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/' },
+                    {
+                      text: '1. 安装 LeRobot 环境',
+                      collapsed: true,
+                      items: [
+                        { text: '第一步:安装 LeRobot 环境(Ubuntu)', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/Ubuntu' },
+                        { text: '第一步:安装 LeRobot 环境(Windows)', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/Windows' },
+                        { text: '第一步:安装 LeRobot 环境(macOS)', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '2. 查看串口设备端口号',
+                      collapsed: true,
+                      items: [
+                        { text: '第二步:查看串口设备端口号(Ubuntu)', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/Ubuntu' },
+                        { text: '第二步:查看串口设备端口号(Windows)', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/Windows' },
+                        { text: '第二步:查看串口设备端口号(macOS)', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '3. 校准机械臂',
+                      collapsed: true,
+                      items: [
+                        { text: '第三步:校准机械臂(Ubuntu)', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/Ubuntu' },
+                        { text: '第三步:校准机械臂(Windows)', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/Windows' },
+                        { text: '第三步:校准机械臂(macOS)', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '4. 遥操作',
+                      collapsed: true,
+                      items: [
+                        { text: '第四步:遥操作(Ubuntu)', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/Ubuntu' },
+                        { text: '第四步:遥操作(Windows)', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/Windows' },
+                        { text: '第四步:遥操作(macOS)', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '5. 连接摄像头的遥操作',
+                      collapsed: true,
+                      items: [
+                        { text: '第五步:连接摄像头的遥操作(Ubuntu)', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/Ubuntu' },
+                        { text: '第五步:连接摄像头的遥操作(Windows)', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/Windows' },
+                        { text: '第五步:连接摄像头的遥操作(macOS)', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '6. 采集数据集(真机)',
+                      collapsed: true,
+                      items: [
+                        { text: '第六步:采集数据集(真机)——示教采集', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording' },
+                        { text: '第六步:采集数据集(真机)——注意事项', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes' },
+                        { text: '第六步:采集数据集(真机)——注册 Hugging Face 账号(可选)', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account' },
+                        { text: '第六步:采集数据集(真机)——上传数据集到 Hugging Face(可选)', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload' },
+                      ],
+                    },
+                    {
+                      text: '7. 训练模型',
+                      collapsed: true,
+                      items: [
+                        { text: '第七步:训练模型——本地 Ubuntu 训练', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Local-Ubuntu' },
+                        { text: '第七步:训练模型——云 GPU 训练环境配置', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Cloud-GPU' },
+                        { text: '第七步:训练模型——wandb 查看实时训练曲线', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/WandB-Curves' },
+                        { text: '第七步:训练模型——上传模型到 Hugging Face(可选)', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/HF-Model-Upload' },
+                        { text: '第七步:训练模型——获得模型权重文件', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Model-Weights' },
+                        { text: '第七步:训练模型——ACT 训练命令', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-ACT' },
+                        { text: '第七步:训练模型——pi0 训练命令', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0' },
+                        { text: '第七步:训练模型——pi0.5 训练命令', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5' },
+                        { text: '第七步:训练模型——pi0fast 训练命令', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast' },
+                        { text: '第七步:训练模型——smolvla 训练命令', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla' },
+                      ],
+                    },
+                    {
+                      text: '8. 模型推理',
+                      collapsed: true,
+                      items: [
+                        { text: '第八步:模型推理——命令行说明', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/CLI-Reference' },
+                        { text: '第八步:模型推理——常见 Bug 及解决', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Common-Bugs' },
+                        { text: '第八步:模型推理——ACT 推理命令', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-ACT' },
+                        { text: '第八步:模型推理——pi0 推理命令', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0' },
+                        { text: '第八步:模型推理——pi0.5 推理命令', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5' },
+                        { text: '第八步:模型推理——smolvla 推理命令', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla' },
+                      ],
+                    },
+                    {
+                      text: '基础知识',
+                      collapsed: true,
+                      items: [
+                        { text: '了解 LeRobot', link: '/zh-hans/tutorials/robot-arms/so-arm101/basics/Understanding-LeRobot' },
+                        { text: 'Hugging Face 上的 LeRobot 数据集', link: '/zh-hans/tutorials/robot-arms/so-arm101/basics/HF-Datasets' },
+                        { text: '模型训练的资料', link: '/zh-hans/tutorials/robot-arms/so-arm101/basics/Training-Resources' },
+                        { text: 'SO-ARM 100 机械臂官方 3D 打印文件', link: '/zh-hans/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files' },
+                        { text: 'URDF 文件及资料参考', link: '/zh-hans/tutorials/robot-arms/so-arm101/basics/URDF-Reference' },
+                      ],
+                    },
+                    {
+                      text: '专题与进阶',
+                      collapsed: true,
+                      items: [
+                        { text: 'ROS2 仿真控制', link: '/zh-hans/tutorials/robot-arms/so-arm101/ROS2-Simulation-Control' },
+                        { text: '平行指夹爪安装教程', link: '/zh-hans/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation' },
+                      ],
+                    },
+                  ],
+                },
               ],
             },
             {
@@ -553,6 +662,115 @@ const en = {
                 { text: 'SO-ARM101 Bi-Arm (Dual Follower) Tutorial', link: '/tutorials/robot-arms/so-arm101/SO-ARM101-Bi-Arm-Tutorial' },
                 { text: 'SO-ARM101 7-DOF Modification and LeRobot Tutorial', link: '/tutorials/robot-arms/so-arm101/SO-ARM101-7DOF-LeRobot' },
                 { text: 'SoARM Series Servo Calibration Tool Tutorial', link: '/tutorials/robot-arms/so-arm101/SO-ARM101-Servo-Calibration-Tool' },
+                {
+                  text: 'LeRobot Full Course',
+                  collapsed: true,
+                  items: [
+                    { text: 'LeRobot Course Overview', link: '/tutorials/robot-arms/so-arm101/lerobot/' },
+                    {
+                      text: '1. Environment Setup',
+                      collapsed: true,
+                      items: [
+                        { text: 'Step 1: Environment Setup (Ubuntu)', link: '/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/Ubuntu' },
+                        { text: 'Step 1: Environment Setup (Windows)', link: '/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/Windows' },
+                        { text: 'Step 1: Environment Setup (macOS)', link: '/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '2. Serial Port Check',
+                      collapsed: true,
+                      items: [
+                        { text: 'Step 2: Serial Port Check (Ubuntu)', link: '/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/Ubuntu' },
+                        { text: 'Step 2: Serial Port Check (Windows)', link: '/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/Windows' },
+                        { text: 'Step 2: Serial Port Check (macOS)', link: '/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '3. Arm Calibration',
+                      collapsed: true,
+                      items: [
+                        { text: 'Step 3: Arm Calibration (Ubuntu)', link: '/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/Ubuntu' },
+                        { text: 'Step 3: Arm Calibration (Windows)', link: '/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/Windows' },
+                        { text: 'Step 3: Arm Calibration (macOS)', link: '/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '4. Teleoperation',
+                      collapsed: true,
+                      items: [
+                        { text: 'Step 4: Teleoperation (Ubuntu)', link: '/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/Ubuntu' },
+                        { text: 'Step 4: Teleoperation (Windows)', link: '/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/Windows' },
+                        { text: 'Step 4: Teleoperation (macOS)', link: '/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '5. Camera Teleop',
+                      collapsed: true,
+                      items: [
+                        { text: 'Step 5: Camera Teleoperation (Ubuntu)', link: '/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/Ubuntu' },
+                        { text: 'Step 5: Camera Teleoperation (Windows)', link: '/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/Windows' },
+                        { text: 'Step 5: Camera Teleoperation (macOS)', link: '/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '6. Data Collection',
+                      collapsed: true,
+                      items: [
+                        { text: 'Step 6: Teaching & Recording a Dataset', link: '/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording' },
+                        { text: 'Step 6: Dataset Collection Notes', link: '/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes' },
+                        { text: 'Step 6: Hugging Face Account (Optional)', link: '/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account' },
+                        { text: 'Step 6: Upload Dataset to Hugging Face (Optional)', link: '/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload' },
+                      ],
+                    },
+                    {
+                      text: '7. Model Training',
+                      collapsed: true,
+                      items: [
+                        { text: 'Step 7: Training — Local Ubuntu', link: '/tutorials/robot-arms/so-arm101/lerobot/07-Training/Local-Ubuntu' },
+                        { text: 'Step 7: Training — Cloud GPU Setup', link: '/tutorials/robot-arms/so-arm101/lerobot/07-Training/Cloud-GPU' },
+                        { text: 'Step 7: Training — wandb Curves', link: '/tutorials/robot-arms/so-arm101/lerobot/07-Training/WandB-Curves' },
+                        { text: 'Step 7: Training — Upload Model (Optional)', link: '/tutorials/robot-arms/so-arm101/lerobot/07-Training/HF-Model-Upload' },
+                        { text: 'Step 7: Training — Model Weights', link: '/tutorials/robot-arms/so-arm101/lerobot/07-Training/Model-Weights' },
+                        { text: 'Step 7: Training — ACT Command', link: '/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-ACT' },
+                        { text: 'Step 7: Training — pi0 Command', link: '/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0' },
+                        { text: 'Step 7: Training — pi0.5 Command', link: '/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5' },
+                        { text: 'Step 7: Training — pi0fast Command', link: '/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast' },
+                        { text: 'Step 7: Training — smolvla Command', link: '/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla' },
+                      ],
+                    },
+                    {
+                      text: '8. Model Inference',
+                      collapsed: true,
+                      items: [
+                        { text: 'Step 8: Inference — CLI Reference', link: '/tutorials/robot-arms/so-arm101/lerobot/08-Inference/CLI-Reference' },
+                        { text: 'Step 8: Inference — Common Bugs', link: '/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Common-Bugs' },
+                        { text: 'Step 8: Inference — ACT Command', link: '/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-ACT' },
+                        { text: 'Step 8: Inference — pi0 Command', link: '/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0' },
+                        { text: 'Step 8: Inference — pi0.5 Command', link: '/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5' },
+                        { text: 'Step 8: Inference — smolvla Command', link: '/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla' },
+                      ],
+                    },
+                    {
+                      text: 'Basics',
+                      collapsed: true,
+                      items: [
+                        { text: 'Understanding LeRobot', link: '/tutorials/robot-arms/so-arm101/basics/Understanding-LeRobot' },
+                        { text: 'LeRobot Datasets on Hugging Face', link: '/tutorials/robot-arms/so-arm101/basics/HF-Datasets' },
+                        { text: 'Model Training Resources', link: '/tutorials/robot-arms/so-arm101/basics/Training-Resources' },
+                        { text: 'SO-ARM100 Official 3D Print Files', link: '/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files' },
+                        { text: 'URDF Files and Reference Materials', link: '/tutorials/robot-arms/so-arm101/basics/URDF-Reference' },
+                      ],
+                    },
+                    {
+                      text: 'Extras & Advanced',
+                      collapsed: true,
+                      items: [
+                        { text: 'ROS2 Simulation Control', link: '/tutorials/robot-arms/so-arm101/ROS2-Simulation-Control' },
+                        { text: 'Parallel Finger Gripper Installation', link: '/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation' },
+                      ],
+                    },
+                  ],
+                },
               ],
             },
             {
@@ -929,6 +1147,115 @@ const zhHK = {
                 { text: 'SO-ARM101 雙臂(雙從動臂)教程', link: '/zh-hant/tutorials/robot-arms/so-arm101/SO-ARM101-Bi-Arm-Tutorial' },
                 { text: 'SO-ARM101 7-DOF 改造與 LeRobot 使用教程', link: '/zh-hant/tutorials/robot-arms/so-arm101/SO-ARM101-7DOF-LeRobot' },
                 { text: 'SoARM 系列舵機校準工具使用教程', link: '/zh-hant/tutorials/robot-arms/so-arm101/SO-ARM101-Servo-Calibration-Tool' },
+                {
+                  text: 'LeRobot 完整課程',
+                  collapsed: true,
+                  items: [
+                    { text: 'LeRobot 完整課程', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/' },
+                    {
+                      text: '1. 安裝 LeRobot 環境',
+                      collapsed: true,
+                      items: [
+                        { text: '第一步:安裝 LeRobot 環境(Ubuntu)', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/Ubuntu' },
+                        { text: '第一步:安裝 LeRobot 環境(Windows)', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/Windows' },
+                        { text: '第一步:安裝 LeRobot 環境(macOS)', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '2. 查看串列埠編號',
+                      collapsed: true,
+                      items: [
+                        { text: '第二步:查看串列埠編號(Ubuntu)', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/Ubuntu' },
+                        { text: '第二步:查看串列埠編號(Windows)', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/Windows' },
+                        { text: '第二步:查看串列埠編號(macOS)', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '3. 校準機械臂',
+                      collapsed: true,
+                      items: [
+                        { text: '第三步:校準機械臂(Ubuntu)', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/Ubuntu' },
+                        { text: '第三步:校準機械臂(Windows)', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/Windows' },
+                        { text: '第三步:校準機械臂(macOS)', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '4. 遙操作',
+                      collapsed: true,
+                      items: [
+                        { text: '第四步:遙操作(Ubuntu)', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/Ubuntu' },
+                        { text: '第四步:遙操作(Windows)', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/Windows' },
+                        { text: '第四步:遙操作(macOS)', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '5. 連接攝像頭的遙操作',
+                      collapsed: true,
+                      items: [
+                        { text: '第五步:連接攝像頭的遙操作(Ubuntu)', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/Ubuntu' },
+                        { text: '第五步:連接攝像頭的遙操作(Windows)', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/Windows' },
+                        { text: '第五步:連接攝像頭的遙操作(macOS)', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '6. 採集數據集(實機)',
+                      collapsed: true,
+                      items: [
+                        { text: '第六步:示教採集數據集', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording' },
+                        { text: '第六步:數據集採集注意事項', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes' },
+                        { text: '第六步:註冊 Hugging Face 帳號(可選)', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account' },
+                        { text: '第六步:上傳數據集到 Hugging Face(可選)', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload' },
+                      ],
+                    },
+                    {
+                      text: '7. 訓練模型',
+                      collapsed: true,
+                      items: [
+                        { text: '第七步:本機 Ubuntu 訓練', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/07-Training/Local-Ubuntu' },
+                        { text: '第七步:雲端 GPU 訓練環境設定', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/07-Training/Cloud-GPU' },
+                        { text: '第七步:wandb 查看實時訓練曲線', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/07-Training/WandB-Curves' },
+                        { text: '第七步:上傳模型到 Hugging Face(可選)', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/07-Training/HF-Model-Upload' },
+                        { text: '第七步:取得模型權重檔案', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/07-Training/Model-Weights' },
+                        { text: '第七步:ACT 訓練命令列', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-ACT' },
+                        { text: '第七步:pi0 訓練命令列', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0' },
+                        { text: '第七步:pi0.5 訓練命令列', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5' },
+                        { text: '第七步:pi0fast 訓練命令列', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast' },
+                        { text: '第七步:SmolVLA 訓練命令列', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla' },
+                      ],
+                    },
+                    {
+                      text: '8. 模型推論',
+                      collapsed: true,
+                      items: [
+                        { text: '第八步:推論命令列說明', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/08-Inference/CLI-Reference' },
+                        { text: '第八步:常見錯誤與排解', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Common-Bugs' },
+                        { text: '第八步:ACT 推論命令列', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-ACT' },
+                        { text: '第八步:pi0 推論命令列', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0' },
+                        { text: '第八步:pi0.5 推論命令列', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5' },
+                        { text: '第八步:SmolVLA 推論命令列', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla' },
+                      ],
+                    },
+                    {
+                      text: '基礎知識',
+                      collapsed: true,
+                      items: [
+                        { text: '了解 LeRobot', link: '/zh-hant/tutorials/robot-arms/so-arm101/basics/Understanding-LeRobot' },
+                        { text: 'Hugging Face 上的 LeRobot 數據集', link: '/zh-hant/tutorials/robot-arms/so-arm101/basics/HF-Datasets' },
+                        { text: '模型訓練資源', link: '/zh-hant/tutorials/robot-arms/so-arm101/basics/Training-Resources' },
+                        { text: 'SO-ARM 100 機械臂官方 3D 列印檔案', link: '/zh-hant/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files' },
+                        { text: 'URDF 檔案及資料參考', link: '/zh-hant/tutorials/robot-arms/so-arm101/basics/URDF-Reference' },
+                      ],
+                    },
+                    {
+                      text: '其他與進階',
+                      collapsed: true,
+                      items: [
+                        { text: 'ROS2 模擬控制', link: '/zh-hant/tutorials/robot-arms/so-arm101/ROS2-Simulation-Control' },
+                        { text: '平行指夾爪安裝', link: '/zh-hant/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation' },
+                      ],
+                    },
+                  ],
+                },
               ],
             },
             {
@@ -1363,6 +1690,115 @@ export default defineConfig({
                 { text: 'SO-ARM101 デュアルアーム(デュアルフォロワー)チュートリアル', link: '/ja/tutorials/robot-arms/so-arm101/SO-ARM101-Bi-Arm-Tutorial' },
                 { text: 'SO-ARM101 7-DOF 改造と LeRobot 使用チュートリアル', link: '/ja/tutorials/robot-arms/so-arm101/SO-ARM101-7DOF-LeRobot' },
                 { text: 'SoARM シリーズ サーボキャリブレーションツール使用チュートリアル', link: '/ja/tutorials/robot-arms/so-arm101/SO-ARM101-Servo-Calibration-Tool' },
+                {
+                  text: 'LeRobot完全コース',
+                  collapsed: true,
+                  items: [
+                    { text: 'LeRobot完全コース', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/' },
+                    {
+                      text: '1. LeRobot環境のインストール',
+                      collapsed: true,
+                      items: [
+                        { text: 'ステップ1:LeRobot環境のインストール（Ubuntu）', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/Ubuntu' },
+                        { text: 'ステップ1:LeRobot環境のインストール（Windows）', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/Windows' },
+                        { text: 'ステップ1:LeRobot環境のインストール（macOS）', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '2. シリアルポート番号の確認',
+                      collapsed: true,
+                      items: [
+                        { text: 'ステップ2:シリアルポート番号の確認（Ubuntu）', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/Ubuntu' },
+                        { text: 'ステップ2:シリアルポート番号の確認（Windows）', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/Windows' },
+                        { text: 'ステップ2:シリアルポート番号の確認（macOS）', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '3. ロボットアームのキャリブレーション',
+                      collapsed: true,
+                      items: [
+                        { text: 'ステップ3:ロボットアームのキャリブレーション（Ubuntu）', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/Ubuntu' },
+                        { text: 'ステップ3:ロボットアームのキャリブレーション（Windows）', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/Windows' },
+                        { text: 'ステップ3:ロボットアームのキャリブレーション（macOS）', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '4. テレオペレーション',
+                      collapsed: true,
+                      items: [
+                        { text: 'ステップ4:テレオペレーション（Ubuntu）', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/Ubuntu' },
+                        { text: 'ステップ4:テレオペレーション（Windows）', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/Windows' },
+                        { text: 'ステップ4:テレオペレーション（macOS）', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '5. カメラ付きテレオペレーション',
+                      collapsed: true,
+                      items: [
+                        { text: 'ステップ5:カメラ付きテレオペレーション（Ubuntu）', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/Ubuntu' },
+                        { text: 'ステップ5:カメラ付きテレオペレーション（Windows）', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/Windows' },
+                        { text: 'ステップ5:カメラ付きテレオペレーション（macOS）', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '6. データセット収集（実機）',
+                      collapsed: true,
+                      items: [
+                        { text: 'ステップ6:教示によるデータセット収集', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording' },
+                        { text: 'ステップ6:データセット収集の注意事項', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes' },
+                        { text: 'ステップ6:HuggingFaceアカウントの登録（任意）', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account' },
+                        { text: 'ステップ6:データセットをHuggingFaceにアップロード（任意）', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload' },
+                      ],
+                    },
+                    {
+                      text: '7. モデルの訓練',
+                      collapsed: true,
+                      items: [
+                        { text: 'ステップ7:ローカルUbuntuでの訓練', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/Local-Ubuntu' },
+                        { text: 'ステップ7:クラウドGPU訓練環境の設定', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/Cloud-GPU' },
+                        { text: 'ステップ7:wandbでリアルタイム訓練曲線を確認', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/WandB-Curves' },
+                        { text: 'ステップ7:モデルをHuggingFaceにアップロード（任意）', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/HF-Model-Upload' },
+                        { text: 'ステップ7:モデルの重みファイルを取得', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/Model-Weights' },
+                        { text: 'ステップ7:訓練コマンドライン-ACT', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-ACT' },
+                        { text: 'ステップ7:訓練コマンドライン-pi0', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0' },
+                        { text: 'ステップ7:訓練コマンドライン-pi0.5', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5' },
+                        { text: 'ステップ7:訓練コマンドライン-pi0fast', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast' },
+                        { text: 'ステップ7:訓練コマンドライン-smolvla', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla' },
+                      ],
+                    },
+                    {
+                      text: '8. モデルのデプロイ',
+                      collapsed: true,
+                      items: [
+                        { text: 'ステップ8:デプロイコマンドラインの説明', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/08-Inference/CLI-Reference' },
+                        { text: 'ステップ8:よくあるBugと解決方法', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Common-Bugs' },
+                        { text: 'ステップ8:デプロイコマンドライン-ACT', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-ACT' },
+                        { text: 'ステップ8:デプロイコマンドライン-pi0', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0' },
+                        { text: 'ステップ8:デプロイコマンドライン-pi0.5', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5' },
+                        { text: 'ステップ8:デプロイコマンドライン-smolvla', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla' },
+                      ],
+                    },
+                    {
+                      text: '基礎知識',
+                      collapsed: true,
+                      items: [
+                        { text: 'LeRobotを知る', link: '/ja/tutorials/robot-arms/so-arm101/basics/Understanding-LeRobot' },
+                        { text: 'HuggingFace上のLeRobotデータセット', link: '/ja/tutorials/robot-arms/so-arm101/basics/HF-Datasets' },
+                        { text: 'モデルトレーニングの資料', link: '/ja/tutorials/robot-arms/so-arm101/basics/Training-Resources' },
+                        { text: 'SO-ARM 100公式3Dプリントファイル', link: '/ja/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files' },
+                        { text: 'URDFファイルおよび資料参考', link: '/ja/tutorials/robot-arms/so-arm101/basics/URDF-Reference' },
+                      ],
+                    },
+                    {
+                      text: 'その他・応用',
+                      collapsed: true,
+                      items: [
+                        { text: 'ROS2シミュレーション制御', link: '/ja/tutorials/robot-arms/so-arm101/ROS2-Simulation-Control' },
+                        { text: '平行指グリッパー取り付けチュートリアル', link: '/ja/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation' },
+                      ],
+                    },
+                  ],
+                },
               ],
             },
             {
@@ -1702,6 +2138,115 @@ export default defineConfig({
                 { text: 'SO-ARM101 양팔(듀얼 팔로워 암) 튜토리얼', link: '/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Bi-Arm-Tutorial' },
                 { text: 'SO-ARM101 7-DOF 개조와 LeRobot 사용 튜토리얼', link: '/ko/tutorials/robot-arms/so-arm101/SO-ARM101-7DOF-LeRobot' },
                 { text: 'SoARM 시리즈 서보 캘리브레이션 도구 사용 튜토리얼', link: '/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Servo-Calibration-Tool' },
+                {
+                  text: 'LeRobot 전체 코스',
+                  collapsed: true,
+                  items: [
+                    { text: 'LeRobot 코스 개요', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/' },
+                    {
+                      text: '1. LeRobot 환경 설치',
+                      collapsed: true,
+                      items: [
+                        { text: '1단계: LeRobot 환경 설치 (Ubuntu)', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/Ubuntu' },
+                        { text: '1단계: LeRobot 환경 설치 (Windows)', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/Windows' },
+                        { text: '1단계: LeRobot 환경 설치 (macOS)', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '2. 시리얼 포트 확인',
+                      collapsed: true,
+                      items: [
+                        { text: '2단계: 시리얼 장치 포트 번호 확인 (Ubuntu)', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/Ubuntu' },
+                        { text: '2단계: 시리얼 장치 포트 번호 확인 (Windows)', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/Windows' },
+                        { text: '2단계: 시리얼 장치 포트 번호 확인 (macOS)', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '3. 로봇 암 캘리브레이션',
+                      collapsed: true,
+                      items: [
+                        { text: '3단계: 로봇 암 캘리브레이션 (Ubuntu)', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/Ubuntu' },
+                        { text: '3단계: 로봇 암 캘리브레이션 (Windows)', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/Windows' },
+                        { text: '3단계: 로봇 암 캘리브레이션 (macOS)', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '4. 원격조작',
+                      collapsed: true,
+                      items: [
+                        { text: '4단계: 원격조작 (Ubuntu)', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/Ubuntu' },
+                        { text: '4단계: 원격조작 (Windows)', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/Windows' },
+                        { text: '4단계: 원격조작 (macOS)', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '5. 카메라 원격조작',
+                      collapsed: true,
+                      items: [
+                        { text: '5단계: 카메라 연결 원격조작 (Ubuntu)', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/Ubuntu' },
+                        { text: '5단계: 카메라 연결 원격조작 (Windows)', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/Windows' },
+                        { text: '5단계: 카메라 연결 원격조작 (macOS)', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '6. 데이터셋 수집',
+                      collapsed: true,
+                      items: [
+                        { text: '6단계: 시연 데이터셋 수집', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording' },
+                        { text: '6단계: 데이터셋 수집 주의 사항', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes' },
+                        { text: '6단계: Hugging Face 계정 등록(선택 사항)', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account' },
+                        { text: '6단계: HuggingFace에 데이터셋 업로드(선택 사항)', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload' },
+                      ],
+                    },
+                    {
+                      text: '7. 모델 학습',
+                      collapsed: true,
+                      items: [
+                        { text: '7단계: 로컬 Ubuntu 학습', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Local-Ubuntu' },
+                        { text: '7단계: 클라우드 GPU 학습 환경 설정', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Cloud-GPU' },
+                        { text: '7단계: wandb 실시간 학습 곡선 확인', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/WandB-Curves' },
+                        { text: '7단계: HuggingFace에 모델 업로드(선택 사항)', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/HF-Model-Upload' },
+                        { text: '7단계: 모델 가중치 파일 얻기', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Model-Weights' },
+                        { text: '7단계: ACT 학습 커맨드라인', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-ACT' },
+                        { text: '7단계: pi0 학습 커맨드라인', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0' },
+                        { text: '7단계: pi0.5 학습 커맨드라인', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5' },
+                        { text: '7단계: pi0fast 학습 커맨드라인', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast' },
+                        { text: '7단계: smolvla 학습 커맨드라인', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla' },
+                      ],
+                    },
+                    {
+                      text: '8. 모델 배포',
+                      collapsed: true,
+                      items: [
+                        { text: '8단계: 커맨드라인 설명', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/CLI-Reference' },
+                        { text: '8단계: 자주 발생하는 Bug 및 해결', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Common-Bugs' },
+                        { text: '8단계: ACT 배포 커맨드라인', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-ACT' },
+                        { text: '8단계: pi0 배포 커맨드라인', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0' },
+                        { text: '8단계: pi0.5 배포 커맨드라인', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5' },
+                        { text: '8단계: smolvla 배포 커맨드라인', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla' },
+                      ],
+                    },
+                    {
+                      text: '기초 지식',
+                      collapsed: true,
+                      items: [
+                        { text: 'LeRobot 알아보기', link: '/ko/tutorials/robot-arms/so-arm101/basics/Understanding-LeRobot' },
+                        { text: 'HuggingFace의 LeRobot 데이터셋', link: '/ko/tutorials/robot-arms/so-arm101/basics/HF-Datasets' },
+                        { text: '모델 학습 자료', link: '/ko/tutorials/robot-arms/so-arm101/basics/Training-Resources' },
+                        { text: 'SO-ARM 100 로봇 암 공식 3D 프린팅 파일', link: '/ko/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files' },
+                        { text: 'URDF 파일 및 자료 참고', link: '/ko/tutorials/robot-arms/so-arm101/basics/URDF-Reference' },
+                      ],
+                    },
+                    {
+                      text: '기타 및 심화',
+                      collapsed: true,
+                      items: [
+                        { text: 'ROS2 시뮬레이션 제어', link: '/ko/tutorials/robot-arms/so-arm101/ROS2-Simulation-Control' },
+                        { text: '평행 핑거 그리퍼 설치 튜토리얼', link: '/ko/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation' },
+                      ],
+                    },
+                  ],
+                },
               ],
             },
             {
@@ -2041,6 +2586,115 @@ export default defineConfig({
                 { text: 'SO-ARM101 Zweiarm-Tutorial (zwei Folgearme)', link: '/de/tutorials/robot-arms/so-arm101/SO-ARM101-Bi-Arm-Tutorial' },
                 { text: 'SO-ARM101 7-DOF-Umbau und LeRobot-Nutzung', link: '/de/tutorials/robot-arms/so-arm101/SO-ARM101-7DOF-LeRobot' },
                 { text: 'SoARM-Servo-Kalibrierungstool – Anleitung', link: '/de/tutorials/robot-arms/so-arm101/SO-ARM101-Servo-Calibration-Tool' },
+                {
+                  text: 'LeRobot-Komplettkurs',
+                  collapsed: true,
+                  items: [
+                    { text: 'LeRobot-Komplettkurs', link: '/de/tutorials/robot-arms/so-arm101/lerobot/' },
+                    {
+                      text: '1. LeRobot-Umgebung',
+                      collapsed: true,
+                      items: [
+                        { text: 'Schritt 1: LeRobot-Umgebung installieren (Ubuntu)', link: '/de/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/Ubuntu' },
+                        { text: 'Schritt 1: LeRobot-Umgebung installieren (Windows)', link: '/de/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/Windows' },
+                        { text: 'Schritt 1: LeRobot-Umgebung installieren (macOS)', link: '/de/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '2. Serielle Ports',
+                      collapsed: true,
+                      items: [
+                        { text: 'Schritt 2: Ports der seriellen Geräte anzeigen (Ubuntu)', link: '/de/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/Ubuntu' },
+                        { text: 'Schritt 2: Ports der seriellen Geräte anzeigen (Windows)', link: '/de/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/Windows' },
+                        { text: 'Schritt 2: Ports der seriellen Geräte anzeigen (macOS)', link: '/de/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '3. Kalibrierung',
+                      collapsed: true,
+                      items: [
+                        { text: 'Schritt 3: Roboterarm kalibrieren (Ubuntu)', link: '/de/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/Ubuntu' },
+                        { text: 'Schritt 3: Roboterarm kalibrieren (Windows)', link: '/de/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/Windows' },
+                        { text: 'Schritt 3: Roboterarm kalibrieren (macOS)', link: '/de/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '4. Teleoperation',
+                      collapsed: true,
+                      items: [
+                        { text: 'Schritt 4: Teleoperation (Ubuntu)', link: '/de/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/Ubuntu' },
+                        { text: 'Schritt 4: Teleoperation (Windows)', link: '/de/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/Windows' },
+                        { text: 'Schritt 4: Teleoperation (macOS)', link: '/de/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '5. Teleop mit Kamera',
+                      collapsed: true,
+                      items: [
+                        { text: 'Schritt 5: Teleoperation mit Kamera (Ubuntu)', link: '/de/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/Ubuntu' },
+                        { text: 'Schritt 5: Teleoperation mit Kamera (Windows)', link: '/de/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/Windows' },
+                        { text: 'Schritt 5: Teleoperation mit Kamera (macOS)', link: '/de/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '6. Datenerfassung',
+                      collapsed: true,
+                      items: [
+                        { text: 'Schritt 6: Datensatz durch Demonstration erfassen', link: '/de/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording' },
+                        { text: 'Schritt 6: Hinweise zum Erfassen von Datensätzen', link: '/de/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes' },
+                        { text: 'Schritt 6: Hugging-Face-Konto registrieren (optional)', link: '/de/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account' },
+                        { text: 'Schritt 6: Datensatz auf HuggingFace hochladen (optional)', link: '/de/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload' },
+                      ],
+                    },
+                    {
+                      text: '7. Modelltraining',
+                      collapsed: true,
+                      items: [
+                        { text: 'Schritt 7: Lokales Training unter Ubuntu', link: '/de/tutorials/robot-arms/so-arm101/lerobot/07-Training/Local-Ubuntu' },
+                        { text: 'Schritt 7: Cloud-GPU-Trainingsumgebung einrichten', link: '/de/tutorials/robot-arms/so-arm101/lerobot/07-Training/Cloud-GPU' },
+                        { text: 'Schritt 7: Trainingskurven in Echtzeit mit wandb anzeigen', link: '/de/tutorials/robot-arms/so-arm101/lerobot/07-Training/WandB-Curves' },
+                        { text: 'Schritt 7: Modell zu HuggingFace hochladen (optional)', link: '/de/tutorials/robot-arms/so-arm101/lerobot/07-Training/HF-Model-Upload' },
+                        { text: 'Schritt 7: Modelldateien abrufen', link: '/de/tutorials/robot-arms/so-arm101/lerobot/07-Training/Model-Weights' },
+                        { text: 'Schritt 7: Trainingsbefehl für ACT', link: '/de/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-ACT' },
+                        { text: 'Schritt 7: Trainingsbefehl für pi0', link: '/de/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0' },
+                        { text: 'Schritt 7: Trainingsbefehl für pi0.5', link: '/de/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5' },
+                        { text: 'Schritt 7: Trainingsbefehl für pi0fast', link: '/de/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast' },
+                        { text: 'Schritt 7: Trainingsbefehl für SmolVLA', link: '/de/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla' },
+                      ],
+                    },
+                    {
+                      text: '8. Modell-Inferenz',
+                      collapsed: true,
+                      items: [
+                        { text: 'Schritt 8: Erläuterung der Befehle', link: '/de/tutorials/robot-arms/so-arm101/lerobot/08-Inference/CLI-Reference' },
+                        { text: 'Schritt 8: Häufige Bugs und Lösungen', link: '/de/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Common-Bugs' },
+                        { text: 'Schritt 8: Deploy-Befehl für ACT', link: '/de/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-ACT' },
+                        { text: 'Schritt 8: Deploy-Befehl für pi0', link: '/de/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0' },
+                        { text: 'Schritt 8: Deploy-Befehl für pi0.5', link: '/de/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5' },
+                        { text: 'Schritt 8: Deploy-Befehl für SmolVLA', link: '/de/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla' },
+                      ],
+                    },
+                    {
+                      text: 'Grundlagen',
+                      collapsed: true,
+                      items: [
+                        { text: 'LeRobot kennenlernen', link: '/de/tutorials/robot-arms/so-arm101/basics/Understanding-LeRobot' },
+                        { text: 'LeRobot-Datensätze auf HuggingFace', link: '/de/tutorials/robot-arms/so-arm101/basics/HF-Datasets' },
+                        { text: 'Materialien zum Modelltraining', link: '/de/tutorials/robot-arms/so-arm101/basics/Training-Resources' },
+                        { text: 'Offizielle 3D-Druckdateien für den SO-ARM 100 Roboterarm', link: '/de/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files' },
+                        { text: 'URDF-Dateien und Referenzmaterial', link: '/de/tutorials/robot-arms/so-arm101/basics/URDF-Reference' },
+                      ],
+                    },
+                    {
+                      text: 'Weitere Themen',
+                      collapsed: true,
+                      items: [
+                        { text: 'ROS2-Simulationssteuerung', link: '/de/tutorials/robot-arms/so-arm101/ROS2-Simulation-Control' },
+                        { text: 'Montageanleitung für den Parallelbacken-Greifer', link: '/de/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation' },
+                      ],
+                    },
+                  ],
+                },
               ],
             },
             {
@@ -2380,6 +3034,115 @@ export default defineConfig({
                 { text: 'Tutoriel SO-ARM101 bi-bras (double suiveur)', link: '/fr/tutorials/robot-arms/so-arm101/SO-ARM101-Bi-Arm-Tutorial' },
                 { text: 'Mise à niveau 7-DOF du SO-ARM101 et utilisation avec LeRobot', link: '/fr/tutorials/robot-arms/so-arm101/SO-ARM101-7DOF-LeRobot' },
                 { text: 'Tutoriel d\'utilisation de l\'outil de calibration des servos de la série SoARM', link: '/fr/tutorials/robot-arms/so-arm101/SO-ARM101-Servo-Calibration-Tool' },
+                {
+                  text: 'Cours LeRobot',
+                  collapsed: true,
+                  items: [
+                    { text: 'Présentation du cours LeRobot', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/' },
+                    {
+                      text: '1. Installer LeRobot',
+                      collapsed: true,
+                      items: [
+                        { text: 'Étape 1 : Installation de l\'environnement LeRobot (Ubuntu)', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/Ubuntu' },
+                        { text: 'Étape 1 : Installation de l\'environnement LeRobot (Windows)', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/Windows' },
+                        { text: 'Étape 1 : Installation de l\'environnement LeRobot (macOS)', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '2. Port série',
+                      collapsed: true,
+                      items: [
+                        { text: 'Étape 2 : Vérification du port série (Ubuntu)', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/Ubuntu' },
+                        { text: 'Étape 2 : Vérification du port série (Windows)', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/Windows' },
+                        { text: 'Étape 2 : Vérification du port série (macOS)', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '3. Calibration',
+                      collapsed: true,
+                      items: [
+                        { text: 'Étape 3 : Calibration du bras (Ubuntu)', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/Ubuntu' },
+                        { text: 'Étape 3 : Calibration du bras (Windows)', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/Windows' },
+                        { text: 'Étape 3 : Calibration du bras (macOS)', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '4. Téléopération',
+                      collapsed: true,
+                      items: [
+                        { text: 'Étape 4 : Téléopération (Ubuntu)', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/Ubuntu' },
+                        { text: 'Étape 4 : Téléopération (Windows)', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/Windows' },
+                        { text: 'Étape 4 : Téléopération (macOS)', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '5. Téléop. caméra',
+                      collapsed: true,
+                      items: [
+                        { text: 'Étape 5 : Téléopération avec caméra (Ubuntu)', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/Ubuntu' },
+                        { text: 'Étape 5 : Téléopération avec caméra (Windows)', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/Windows' },
+                        { text: 'Étape 5 : Téléopération avec caméra (macOS)', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '6. Collecte données',
+                      collapsed: true,
+                      items: [
+                        { text: 'Étape 6 : Collecte du jeu de données par démonstration', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording' },
+                        { text: 'Étape 6 : Points d\'attention pour la collecte', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes' },
+                        { text: 'Étape 6 : Créer un compte Hugging Face (facultatif)', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account' },
+                        { text: 'Étape 6 : Téléverser le jeu de données (facultatif)', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload' },
+                      ],
+                    },
+                    {
+                      text: '7. Entraînement',
+                      collapsed: true,
+                      items: [
+                        { text: 'Étape 7 : Entraînement local sur Ubuntu', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/Local-Ubuntu' },
+                        { text: 'Étape 7 : Environnement d\'entraînement cloud GPU', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/Cloud-GPU' },
+                        { text: 'Étape 7 : Courbes d\'entraînement en temps réel (wandb)', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/WandB-Curves' },
+                        { text: 'Étape 7 : Téléverser le modèle (facultatif)', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/HF-Model-Upload' },
+                        { text: 'Étape 7 : Obtenir les fichiers de poids du modèle', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/Model-Weights' },
+                        { text: 'Étape 7 : Commande d\'entraînement ACT', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-ACT' },
+                        { text: 'Étape 7 : Commande d\'entraînement pi0', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0' },
+                        { text: 'Étape 7 : Commande d\'entraînement pi0.5', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5' },
+                        { text: 'Étape 7 : Commande d\'entraînement pi0fast', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast' },
+                        { text: 'Étape 7 : Commande d\'entraînement smolvla', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla' },
+                      ],
+                    },
+                    {
+                      text: '8. Inférence',
+                      collapsed: true,
+                      items: [
+                        { text: 'Étape 8 : Description de la ligne de commande', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/08-Inference/CLI-Reference' },
+                        { text: 'Étape 8 : Bugs courants et solutions', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Common-Bugs' },
+                        { text: 'Étape 8 : Commande de déploiement ACT', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-ACT' },
+                        { text: 'Étape 8 : Commande de déploiement pi0', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0' },
+                        { text: 'Étape 8 : Commande de déploiement pi0.5', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5' },
+                        { text: 'Étape 8 : Commande de déploiement smolvla', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla' },
+                      ],
+                    },
+                    {
+                      text: 'Notions de base',
+                      collapsed: true,
+                      items: [
+                        { text: 'Découvrir LeRobot', link: '/fr/tutorials/robot-arms/so-arm101/basics/Understanding-LeRobot' },
+                        { text: 'Jeux de données LeRobot sur HuggingFace', link: '/fr/tutorials/robot-arms/so-arm101/basics/HF-Datasets' },
+                        { text: 'Ressources pour l\'entraînement de modèles', link: '/fr/tutorials/robot-arms/so-arm101/basics/Training-Resources' },
+                        { text: 'Fichiers d\'impression 3D officiels du bras SO-ARM 100', link: '/fr/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files' },
+                        { text: 'Fichiers URDF et références', link: '/fr/tutorials/robot-arms/so-arm101/basics/URDF-Reference' },
+                      ],
+                    },
+                    {
+                      text: 'Compléments',
+                      collapsed: true,
+                      items: [
+                        { text: 'Simulation et contrôle ROS2', link: '/fr/tutorials/robot-arms/so-arm101/ROS2-Simulation-Control' },
+                        { text: 'Installation de la pince à doigts parallèles', link: '/fr/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation' },
+                      ],
+                    },
+                  ],
+                },
               ],
             },
             {
@@ -2719,6 +3482,115 @@ export default defineConfig({
                 { text: 'Tutorial de doble brazo (doble brazo seguidor) del SO-ARM101', link: '/es/tutorials/robot-arms/so-arm101/SO-ARM101-Bi-Arm-Tutorial' },
                 { text: 'Tutorial de conversión a 7-DOF del SO-ARM101 y uso con LeRobot', link: '/es/tutorials/robot-arms/so-arm101/SO-ARM101-7DOF-LeRobot' },
                 { text: 'Tutorial de uso de la herramienta de calibración de servos de la serie SoARM', link: '/es/tutorials/robot-arms/so-arm101/SO-ARM101-Servo-Calibration-Tool' },
+                {
+                  text: 'Curso de LeRobot',
+                  collapsed: true,
+                  items: [
+                    { text: 'Curso completo de LeRobot', link: '/es/tutorials/robot-arms/so-arm101/lerobot/' },
+                    {
+                      text: '1. Instalar LeRobot',
+                      collapsed: true,
+                      items: [
+                        { text: 'Paso 1: Instalar el entorno de LeRobot (Ubuntu)', link: '/es/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/Ubuntu' },
+                        { text: 'Paso 1: Instalar el entorno de LeRobot (Windows)', link: '/es/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/Windows' },
+                        { text: 'Paso 1: Instalar el entorno de LeRobot (macOS)', link: '/es/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '2. Puerto serie',
+                      collapsed: true,
+                      items: [
+                        { text: 'Paso 2: Ver el puerto del dispositivo serie (Ubuntu)', link: '/es/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/Ubuntu' },
+                        { text: 'Paso 2: Ver el puerto del dispositivo serie (Windows)', link: '/es/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/Windows' },
+                        { text: 'Paso 2: Ver el puerto del dispositivo serie (macOS)', link: '/es/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '3. Calibración',
+                      collapsed: true,
+                      items: [
+                        { text: 'Paso 3: Calibrar el brazo robótico (Ubuntu)', link: '/es/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/Ubuntu' },
+                        { text: 'Paso 3: Calibrar el brazo robótico (Windows)', link: '/es/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/Windows' },
+                        { text: 'Paso 3: Calibrar el brazo robótico (macOS)', link: '/es/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '4. Teleoperación',
+                      collapsed: true,
+                      items: [
+                        { text: 'Paso 4: Teleoperación (Ubuntu)', link: '/es/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/Ubuntu' },
+                        { text: 'Paso 4: Teleoperación (Windows)', link: '/es/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/Windows' },
+                        { text: 'Paso 4: Teleoperación (macOS)', link: '/es/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '5. Cámara y teleop.',
+                      collapsed: true,
+                      items: [
+                        { text: 'Paso 5: Teleoperación con cámara (Ubuntu)', link: '/es/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/Ubuntu' },
+                        { text: 'Paso 5: Teleoperación con cámara (Windows)', link: '/es/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/Windows' },
+                        { text: 'Paso 5: Teleoperación con cámara (macOS)', link: '/es/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '6. Conjunto de datos',
+                      collapsed: true,
+                      items: [
+                        { text: 'Paso 6: Recopilación de datos por enseñanza', link: '/es/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording' },
+                        { text: 'Paso 6: Notas de la recopilación de datos', link: '/es/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes' },
+                        { text: 'Paso 6: Cuenta de Hugging Face (opcional)', link: '/es/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account' },
+                        { text: 'Paso 6: Subir el conjunto de datos (opcional)', link: '/es/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload' },
+                      ],
+                    },
+                    {
+                      text: '7. Entrenamiento',
+                      collapsed: true,
+                      items: [
+                        { text: 'Paso 7: Entrenamiento local en Ubuntu', link: '/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/Local-Ubuntu' },
+                        { text: 'Paso 7: Entorno de entrenamiento con GPU en la nube', link: '/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/Cloud-GPU' },
+                        { text: 'Paso 7: Curvas de entrenamiento con wandb', link: '/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/WandB-Curves' },
+                        { text: 'Paso 7: Subir el modelo (opcional)', link: '/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/HF-Model-Upload' },
+                        { text: 'Paso 7: Obtener los pesos del modelo', link: '/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/Model-Weights' },
+                        { text: 'Paso 7: Comando de entrenamiento ACT', link: '/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-ACT' },
+                        { text: 'Paso 7: Comando de entrenamiento pi0', link: '/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0' },
+                        { text: 'Paso 7: Comando de entrenamiento pi0.5', link: '/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5' },
+                        { text: 'Paso 7: Comando de entrenamiento pi0fast', link: '/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast' },
+                        { text: 'Paso 7: Comando de entrenamiento smolvla', link: '/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla' },
+                      ],
+                    },
+                    {
+                      text: '8. Inferencia',
+                      collapsed: true,
+                      items: [
+                        { text: 'Paso 8: Descripción de la línea de comandos', link: '/es/tutorials/robot-arms/so-arm101/lerobot/08-Inference/CLI-Reference' },
+                        { text: 'Paso 8: Bugs comunes y soluciones', link: '/es/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Common-Bugs' },
+                        { text: 'Paso 8: Comando de despliegue ACT', link: '/es/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-ACT' },
+                        { text: 'Paso 8: Comando de despliegue pi0', link: '/es/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0' },
+                        { text: 'Paso 8: Comando de despliegue pi0.5', link: '/es/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5' },
+                        { text: 'Paso 8: Comando de despliegue smolvla', link: '/es/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla' },
+                      ],
+                    },
+                    {
+                      text: 'Conceptos básicos',
+                      collapsed: true,
+                      items: [
+                        { text: 'Conocer LeRobot y la inteligencia encarnada', link: '/es/tutorials/robot-arms/so-arm101/basics/Understanding-LeRobot' },
+                        { text: 'Conjuntos de datos de LeRobot en HuggingFace', link: '/es/tutorials/robot-arms/so-arm101/basics/HF-Datasets' },
+                        { text: 'Materiales para el entrenamiento de modelos', link: '/es/tutorials/robot-arms/so-arm101/basics/Training-Resources' },
+                        { text: 'Archivos oficiales de impresión 3D del SO-ARM 100', link: '/es/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files' },
+                        { text: 'Archivos URDF y referencias de materiales', link: '/es/tutorials/robot-arms/so-arm101/basics/URDF-Reference' },
+                      ],
+                    },
+                    {
+                      text: 'Extras y avanzado',
+                      collapsed: true,
+                      items: [
+                        { text: 'Control de simulación en ROS2', link: '/es/tutorials/robot-arms/so-arm101/ROS2-Simulation-Control' },
+                        { text: 'Instalación de la pinza de dedos paralelos', link: '/es/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation' },
+                      ],
+                    },
+                  ],
+                },
               ],
             },
             {
@@ -3058,6 +3930,115 @@ export default defineConfig({
                 { text: 'SO-ARM101 Tutorial bi-braccio (doppio follower)', link: '/it/tutorials/robot-arms/so-arm101/SO-ARM101-Bi-Arm-Tutorial' },
                 { text: 'SO-ARM101 Conversione a 7-DOF e utilizzo con LeRobot', link: '/it/tutorials/robot-arms/so-arm101/SO-ARM101-7DOF-LeRobot' },
                 { text: 'Tutorial d\'uso del tool di calibrazione servo della serie SoARM', link: '/it/tutorials/robot-arms/so-arm101/SO-ARM101-Servo-Calibration-Tool' },
+                {
+                  text: 'Corso LeRobot',
+                  collapsed: true,
+                  items: [
+                    { text: 'Panoramica del corso LeRobot', link: '/it/tutorials/robot-arms/so-arm101/lerobot/' },
+                    {
+                      text: '1. Ambiente LeRobot',
+                      collapsed: true,
+                      items: [
+                        { text: 'Passo 1: Installare l\'ambiente LeRobot (Ubuntu)', link: '/it/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/Ubuntu' },
+                        { text: 'Passo 1: Installare l\'ambiente LeRobot (Windows)', link: '/it/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/Windows' },
+                        { text: 'Passo 1: Installare l\'ambiente LeRobot (macOS)', link: '/it/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '2. Porte seriali',
+                      collapsed: true,
+                      items: [
+                        { text: 'Passo 2: Visualizzare le porte seriali (Ubuntu)', link: '/it/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/Ubuntu' },
+                        { text: 'Passo 2: Visualizzare le porte seriali (Windows)', link: '/it/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/Windows' },
+                        { text: 'Passo 2: Visualizzare le porte seriali (macOS)', link: '/it/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '3. Calibrazione',
+                      collapsed: true,
+                      items: [
+                        { text: 'Passo 3: Calibrare il braccio robotico (Ubuntu)', link: '/it/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/Ubuntu' },
+                        { text: 'Passo 3: Calibrare il braccio robotico (Windows)', link: '/it/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/Windows' },
+                        { text: 'Passo 3: Calibrare il braccio robotico (macOS)', link: '/it/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '4. Teleoperazione',
+                      collapsed: true,
+                      items: [
+                        { text: 'Passo 4: Teleoperazione (Ubuntu)', link: '/it/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/Ubuntu' },
+                        { text: 'Passo 4: Teleoperazione (Windows)', link: '/it/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/Windows' },
+                        { text: 'Passo 4: Teleoperazione (macOS)', link: '/it/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '5. Con telecamera',
+                      collapsed: true,
+                      items: [
+                        { text: 'Passo 5: Teleoperazione con telecamera (Ubuntu)', link: '/it/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/Ubuntu' },
+                        { text: 'Passo 5: Teleoperazione con telecamera (Windows)', link: '/it/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/Windows' },
+                        { text: 'Passo 5: Teleoperazione con telecamera (macOS)', link: '/it/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/MacOS' },
+                      ],
+                    },
+                    {
+                      text: '6. Raccolta dataset',
+                      collapsed: true,
+                      items: [
+                        { text: 'Passo 6: Raccolta del dataset tramite insegnamento', link: '/it/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording' },
+                        { text: 'Passo 6: Note sulla raccolta del dataset', link: '/it/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes' },
+                        { text: 'Passo 6: Registrare un account Hugging Face (opzionale)', link: '/it/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account' },
+                        { text: 'Passo 6: Caricare il dataset su HuggingFace (opzionale)', link: '/it/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload' },
+                      ],
+                    },
+                    {
+                      text: '7. Addestramento',
+                      collapsed: true,
+                      items: [
+                        { text: 'Passo 7: Addestramento su Ubuntu locale', link: '/it/tutorials/robot-arms/so-arm101/lerobot/07-Training/Local-Ubuntu' },
+                        { text: 'Passo 7: Ambiente di addestramento su GPU cloud', link: '/it/tutorials/robot-arms/so-arm101/lerobot/07-Training/Cloud-GPU' },
+                        { text: 'Passo 7: Curve di addestramento in tempo reale con wandb', link: '/it/tutorials/robot-arms/so-arm101/lerobot/07-Training/WandB-Curves' },
+                        { text: 'Passo 7: Caricare il modello su HuggingFace (opzionale)', link: '/it/tutorials/robot-arms/so-arm101/lerobot/07-Training/HF-Model-Upload' },
+                        { text: 'Passo 7: Ottenere il file dei pesi del modello', link: '/it/tutorials/robot-arms/so-arm101/lerobot/07-Training/Model-Weights' },
+                        { text: 'Passo 7: Comando di addestramento ACT', link: '/it/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-ACT' },
+                        { text: 'Passo 7: Comando di addestramento pi0', link: '/it/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0' },
+                        { text: 'Passo 7: Comando di addestramento pi0.5', link: '/it/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5' },
+                        { text: 'Passo 7: Comando di addestramento pi0fast', link: '/it/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast' },
+                        { text: 'Passo 7: Comando di addestramento SmolVLA', link: '/it/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla' },
+                      ],
+                    },
+                    {
+                      text: '8. Deployment',
+                      collapsed: true,
+                      items: [
+                        { text: 'Passo 8: Descrizione dei comandi di deployment', link: '/it/tutorials/robot-arms/so-arm101/lerobot/08-Inference/CLI-Reference' },
+                        { text: 'Passo 8: Bug comuni e soluzioni', link: '/it/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Common-Bugs' },
+                        { text: 'Passo 8: Comando di deployment ACT', link: '/it/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-ACT' },
+                        { text: 'Passo 8: Comando di deployment pi0', link: '/it/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0' },
+                        { text: 'Passo 8: Comando di deployment pi0.5', link: '/it/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5' },
+                        { text: 'Passo 8: Comando di deployment SmolVLA', link: '/it/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla' },
+                      ],
+                    },
+                    {
+                      text: 'Nozioni di base',
+                      collapsed: true,
+                      items: [
+                        { text: 'Conoscere LeRobot', link: '/it/tutorials/robot-arms/so-arm101/basics/Understanding-LeRobot' },
+                        { text: 'Dataset LeRobot su HuggingFace', link: '/it/tutorials/robot-arms/so-arm101/basics/HF-Datasets' },
+                        { text: 'Materiali per l\'addestramento del modello', link: '/it/tutorials/robot-arms/so-arm101/basics/Training-Resources' },
+                        { text: 'File di stampa 3D ufficiali del braccio SO-ARM 100', link: '/it/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files' },
+                        { text: 'File URDF e materiali di riferimento', link: '/it/tutorials/robot-arms/so-arm101/basics/URDF-Reference' },
+                      ],
+                    },
+                    {
+                      text: 'Approfondimenti',
+                      collapsed: true,
+                      items: [
+                        { text: 'Controllo di simulazione ROS2', link: '/it/tutorials/robot-arms/so-arm101/ROS2-Simulation-Control' },
+                        { text: 'Installazione della pinza a dita parallele', link: '/it/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation' },
+                      ],
+                    },
+                  ],
+                },
               ],
             },
             {
@@ -3405,6 +4386,115 @@ export default defineConfig({
                   { text: 'Tutorial de dois braços (dois seguidores) do SO-ARM101', link: '/pt-br/tutorials/robot-arms/so-arm101/SO-ARM101-Bi-Arm-Tutorial' },
                   { text: 'Tutorial de conversão do SO-ARM101 para 7-DOF e uso com LeRobot', link: '/pt-br/tutorials/robot-arms/so-arm101/SO-ARM101-7DOF-LeRobot' },
                   { text: 'Tutorial de uso da ferramenta de calibração de servos da série SoARM', link: '/pt-br/tutorials/robot-arms/so-arm101/SO-ARM101-Servo-Calibration-Tool' },
+                  {
+                    text: 'Curso LeRobot',
+                    collapsed: true,
+                    items: [
+                      { text: 'Curso completo LeRobot', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/' },
+                      {
+                        text: '1. Ambiente LeRobot',
+                        collapsed: true,
+                        items: [
+                          { text: 'Etapa 1: Instalação do ambiente LeRobot (Ubuntu)', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/Ubuntu' },
+                          { text: 'Etapa 1: Instalação do ambiente LeRobot (Windows)', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/Windows' },
+                          { text: 'Etapa 1: Instalação do ambiente LeRobot (macOS)', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/MacOS' },
+                        ],
+                      },
+                      {
+                        text: '2. Porta serial',
+                        collapsed: true,
+                        items: [
+                          { text: 'Etapa 2: Ver a porta do dispositivo serial (Ubuntu)', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/Ubuntu' },
+                          { text: 'Etapa 2: Ver a porta do dispositivo serial (Windows)', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/Windows' },
+                          { text: 'Etapa 2: Ver a porta do dispositivo serial (macOS)', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/MacOS' },
+                        ],
+                      },
+                      {
+                        text: '3. Calibração',
+                        collapsed: true,
+                        items: [
+                          { text: 'Etapa 3: Calibrar o braço robótico (Ubuntu)', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/Ubuntu' },
+                          { text: 'Etapa 3: Calibrar o braço robótico (Windows)', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/Windows' },
+                          { text: 'Etapa 3: Calibrar o braço robótico (macOS)', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/MacOS' },
+                        ],
+                      },
+                      {
+                        text: '4. Teleoperação',
+                        collapsed: true,
+                        items: [
+                          { text: 'Etapa 4: Teleoperação (Ubuntu)', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/Ubuntu' },
+                          { text: 'Etapa 4: Teleoperação (Windows)', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/Windows' },
+                          { text: 'Etapa 4: Teleoperação (macOS)', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/MacOS' },
+                        ],
+                      },
+                      {
+                        text: '5. Teleop. e câmera',
+                        collapsed: true,
+                        items: [
+                          { text: 'Etapa 5: Teleoperação com câmera (Ubuntu)', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/Ubuntu' },
+                          { text: 'Etapa 5: Teleoperação com câmera (Windows)', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/Windows' },
+                          { text: 'Etapa 5: Teleoperação com câmera (macOS)', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/MacOS' },
+                        ],
+                      },
+                      {
+                        text: '6. Coleta de dados',
+                        collapsed: true,
+                        items: [
+                          { text: 'Etapa 6: Coleta de dados por demonstração', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording' },
+                          { text: 'Etapa 6: Observações sobre a coleta de dados', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes' },
+                          { text: 'Etapa 6: Registrar conta no Hugging Face (opcional)', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account' },
+                          { text: 'Etapa 6: Enviar o dataset ao Hugging Face (opcional)', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload' },
+                        ],
+                      },
+                      {
+                        text: '7. Treinamento',
+                        collapsed: true,
+                        items: [
+                          { text: 'Etapa 7: Treinamento local no Ubuntu', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/07-Training/Local-Ubuntu' },
+                          { text: 'Etapa 7: Configuração do ambiente de GPU na nuvem', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/07-Training/Cloud-GPU' },
+                          { text: 'Etapa 7: Curvas de treinamento em tempo real no wandb', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/07-Training/WandB-Curves' },
+                          { text: 'Etapa 7: Enviar o modelo ao Hugging Face (opcional)', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/07-Training/HF-Model-Upload' },
+                          { text: 'Etapa 7: Obter o arquivo de pesos do modelo', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/07-Training/Model-Weights' },
+                          { text: 'Etapa 7: Comando de treinamento — ACT', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-ACT' },
+                          { text: 'Etapa 7: Comando de treinamento — pi0', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0' },
+                          { text: 'Etapa 7: Comando de treinamento — pi0.5', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5' },
+                          { text: 'Etapa 7: Comando de treinamento — pi0fast', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast' },
+                          { text: 'Etapa 7: Comando de treinamento — SmolVLA', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla' },
+                        ],
+                      },
+                      {
+                        text: '8. Inferência',
+                        collapsed: true,
+                        items: [
+                          { text: 'Etapa 8: Descrição da linha de comando', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/08-Inference/CLI-Reference' },
+                          { text: 'Etapa 8: Bugs comuns e soluções', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Common-Bugs' },
+                          { text: 'Etapa 8: Comando de inferência — ACT', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-ACT' },
+                          { text: 'Etapa 8: Comando de inferência — pi0', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0' },
+                          { text: 'Etapa 8: Comando de inferência — pi0.5', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5' },
+                          { text: 'Etapa 8: Comando de inferência — SmolVLA', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla' },
+                        ],
+                      },
+                      {
+                        text: 'Fundamentos',
+                        collapsed: true,
+                        items: [
+                          { text: 'Entendendo o LeRobot', link: '/pt-br/tutorials/robot-arms/so-arm101/basics/Understanding-LeRobot' },
+                          { text: 'Conjuntos de dados LeRobot no Hugging Face', link: '/pt-br/tutorials/robot-arms/so-arm101/basics/HF-Datasets' },
+                          { text: 'Materiais para treinamento de modelos', link: '/pt-br/tutorials/robot-arms/so-arm101/basics/Training-Resources' },
+                          { text: 'Arquivos oficiais de impressão 3D do SO-ARM 100', link: '/pt-br/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files' },
+                          { text: 'Arquivos URDF e materiais de referência', link: '/pt-br/tutorials/robot-arms/so-arm101/basics/URDF-Reference' },
+                        ],
+                      },
+                      {
+                        text: 'Extras e avançado',
+                        collapsed: true,
+                        items: [
+                          { text: 'Controle de simulação ROS2', link: '/pt-br/tutorials/robot-arms/so-arm101/ROS2-Simulation-Control' },
+                          { text: 'Tutorial de instalação da garra de dedos paralelos', link: '/pt-br/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation' },
+                        ],
+                      },
+                    ],
+                  },
                 ],
               },
               {
@@ -3767,6 +4857,115 @@ export default defineConfig({
                   { text: 'Tutorial do braço duplo SO-ARM101 (dois braços seguidores)', link: '/pt-pt/tutorials/robot-arms/so-arm101/SO-ARM101-Bi-Arm-Tutorial' },
                   { text: 'Tutorial de modificação do SO-ARM101 para 7-DOF e utilização com o LeRobot', link: '/pt-pt/tutorials/robot-arms/so-arm101/SO-ARM101-7DOF-LeRobot' },
                   { text: 'Tutorial de utilização da ferramenta de calibração de servos da série SoARM', link: '/pt-pt/tutorials/robot-arms/so-arm101/SO-ARM101-Servo-Calibration-Tool' },
+                  {
+                    text: 'Curso de LeRobot',
+                    collapsed: true,
+                    items: [
+                      { text: 'Visão geral do curso de LeRobot', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/' },
+                      {
+                        text: '1. Ambiente LeRobot',
+                        collapsed: true,
+                        items: [
+                          { text: 'Etapa 1: Instalar o ambiente LeRobot (Ubuntu)', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/Ubuntu' },
+                          { text: 'Etapa 1: Instalar o ambiente LeRobot (Windows)', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/Windows' },
+                          { text: 'Etapa 1: Instalar o ambiente LeRobot (macOS)', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/01-Environment-Setup/MacOS' },
+                        ],
+                      },
+                      {
+                        text: '2. Portas série',
+                        collapsed: true,
+                        items: [
+                          { text: 'Etapa 2: Ver a porta do dispositivo série (Ubuntu)', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/Ubuntu' },
+                          { text: 'Etapa 2: Ver a porta do dispositivo série (Windows)', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/Windows' },
+                          { text: 'Etapa 2: Ver a porta do dispositivo série (macOS)', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/02-Serial-Port/MacOS' },
+                        ],
+                      },
+                      {
+                        text: '3. Calibração',
+                        collapsed: true,
+                        items: [
+                          { text: 'Etapa 3: Calibrar o braço robótico (Ubuntu)', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/Ubuntu' },
+                          { text: 'Etapa 3: Calibrar o braço robótico (Windows)', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/Windows' },
+                          { text: 'Etapa 3: Calibrar o braço robótico (macOS)', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/03-Calibration/MacOS' },
+                        ],
+                      },
+                      {
+                        text: '4. Teleoperação',
+                        collapsed: true,
+                        items: [
+                          { text: 'Etapa 4: Teleoperação (Ubuntu)', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/Ubuntu' },
+                          { text: 'Etapa 4: Teleoperação (Windows)', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/Windows' },
+                          { text: 'Etapa 4: Teleoperação (macOS)', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/04-Teleoperation/MacOS' },
+                        ],
+                      },
+                      {
+                        text: '5. Teleop. c/ câmara',
+                        collapsed: true,
+                        items: [
+                          { text: 'Etapa 5: Teleoperação com câmara (Ubuntu)', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/Ubuntu' },
+                          { text: 'Etapa 5: Teleoperação com câmara (Windows)', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/Windows' },
+                          { text: 'Etapa 5: Teleoperação com câmara (macOS)', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/MacOS' },
+                        ],
+                      },
+                      {
+                        text: '6. Recolha de dados',
+                        collapsed: true,
+                        items: [
+                          { text: 'Etapa 6: Recolha de conjuntos de dados por ensino', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording' },
+                          { text: 'Etapa 6: Notas sobre a recolha de conjuntos de dados', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes' },
+                          { text: 'Etapa 6: Registar uma conta Hugging Face (opcional)', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account' },
+                          { text: 'Etapa 6: Carregar dados para o HuggingFace (opcional)', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload' },
+                        ],
+                      },
+                      {
+                        text: '7. Treino de modelos',
+                        collapsed: true,
+                        items: [
+                          { text: 'Etapa 7: Treino local em Ubuntu', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/07-Training/Local-Ubuntu' },
+                          { text: 'Etapa 7: Ambiente de treino em GPU na nuvem', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/07-Training/Cloud-GPU' },
+                          { text: 'Etapa 7: Visualizar as curvas de treino com o wandb', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/07-Training/WandB-Curves' },
+                          { text: 'Etapa 7: Enviar o modelo para o HuggingFace (opcional)', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/07-Training/HF-Model-Upload' },
+                          { text: 'Etapa 7: Obter o ficheiro de pesos do modelo', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/07-Training/Model-Weights' },
+                          { text: 'Etapa 7: Comando de treino ACT', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-ACT' },
+                          { text: 'Etapa 7: Comando de treino pi0', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0' },
+                          { text: 'Etapa 7: Comando de treino pi0.5', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5' },
+                          { text: 'Etapa 7: Comando de treino pi0fast', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast' },
+                          { text: 'Etapa 7: Comando de treino smolvla', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla' },
+                        ],
+                      },
+                      {
+                        text: '8. Implantação',
+                        collapsed: true,
+                        items: [
+                          { text: 'Etapa 8: Descrição da linha de comando', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/08-Inference/CLI-Reference' },
+                          { text: 'Etapa 8: Bugs comuns e soluções', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Common-Bugs' },
+                          { text: 'Etapa 8: Comando de implantação ACT', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-ACT' },
+                          { text: 'Etapa 8: Comando de implantação pi0', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0' },
+                          { text: 'Etapa 8: Comando de implantação pi0.5', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5' },
+                          { text: 'Etapa 8: Comando de implantação smolvla', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla' },
+                        ],
+                      },
+                      {
+                        text: 'Noções básicas',
+                        collapsed: true,
+                        items: [
+                          { text: 'Conhecer o LeRobot', link: '/pt-pt/tutorials/robot-arms/so-arm101/basics/Understanding-LeRobot' },
+                          { text: 'Conjuntos de dados LeRobot no HuggingFace', link: '/pt-pt/tutorials/robot-arms/so-arm101/basics/HF-Datasets' },
+                          { text: 'Materiais para o treino de modelos', link: '/pt-pt/tutorials/robot-arms/so-arm101/basics/Training-Resources' },
+                          { text: 'Ficheiros oficiais de impressão 3D do SO-ARM 100', link: '/pt-pt/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files' },
+                          { text: 'Ficheiros URDF e materiais de referência', link: '/pt-pt/tutorials/robot-arms/so-arm101/basics/URDF-Reference' },
+                        ],
+                      },
+                      {
+                        text: 'Tópicos adicionais',
+                        collapsed: true,
+                        items: [
+                          { text: 'Controlo de simulação ROS2', link: '/pt-pt/tutorials/robot-arms/so-arm101/ROS2-Simulation-Control' },
+                          { text: 'Instalação da garra de dedos paralelos', link: '/pt-pt/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation' },
+                        ],
+                      },
+                    ],
+                  },
                 ],
               },
               {

@@ -5,6 +5,8 @@ description: "本チュートリアルは12月15日までに更新済み。最�
 
 # LeRobot ロボットアームチュートリアル
 
+> 本ページは要点早見版です。8 ステップを OS 別に解説した[「LeRobot 完全コース」](/ja/tutorials/robot-arms/so-arm101/lerobot/)の方が網羅的ですので、初めての方はコースから始めてください。
+
 > **[ストアで購入](https://www.juxitech.com/ja/products/so-arm101-developers-kit)**
 
 

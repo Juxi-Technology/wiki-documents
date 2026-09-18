@@ -5,6 +5,8 @@ description: "Tutorial do braço robótico LeRobot SO-ARM101: preparar o ambient
 
 # Tutorial do Braço Robótico LeRobot
 
+> Esta página é a versão resumida. O [curso completo de LeRobot](/pt-pt/tutorials/robot-arms/so-arm101/lerobot/) detalha os oito passos para cada sistema — comece por aí se for a primeira vez.
+
 > **[Comprar na loja](https://www.juxitech.com/products/so-arm101-developers-kit)**
 
 

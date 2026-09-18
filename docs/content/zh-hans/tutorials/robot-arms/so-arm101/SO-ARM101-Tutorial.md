@@ -5,6 +5,8 @@ description: "SO-ARM101 使用教程:涵盖 LeRobot 环境安装、机械臂校�
 
 # SO-ARM101 使用教程
 
+> 本页为速查版。八步分系统的[《LeRobot 完整课程》](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/)内容更完整,新手建议从课程开始。
+
 > **[ 淘宝店铺 ](https://juxitechnology.taobao.com)**
 
 
