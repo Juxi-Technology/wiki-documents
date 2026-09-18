@@ -12,7 +12,7 @@ outline: false
 
 # 钜犀科技 Wiki
 
-<p class="hero-subtitle">机器人与 AI 硬件的开放文档平台</p>
+<p class="home-hero-subtitle">机器人与 AI 硬件的开放文档平台</p>
 <p class="hero-desc">钜犀科技(Juxi Technology)立足深圳前海，秉持“依托香港、服务内地、面向世界”的理念。我们发展物理 AI、具身机器人与边缘 AI，向全球开发者提供开源解决方案。</p>
 
 <div class="hero-links four">
@@ -31,36 +31,36 @@ outline: false
 
 ## 产品系列
 
-<div class="category-grid reveal">
-  <a :href="withBase('/zh-hans/products/so-arm101')" class="category-card">
+<div class="home-category-grid reveal">
+  <a :href="withBase('/zh-hans/products/so-arm101')" class="home-category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="SO-ARM101 机械臂">
     <span>SO-ARM101 机械臂</span>
   </a>
-  <a :href="withBase('/zh-hans/products/amazinghand')" class="category-card">
+  <a :href="withBase('/zh-hans/products/amazinghand')" class="home-category-card">
     <img :src="withBase('/images/categories/AmazingHand.png')" alt="AmazingHand 灵巧手">
     <span>AmazingHand 灵巧手</span>
   </a>
-  <a :href="withBase('/zh-hans/products/xlerobot')" class="category-card">
+  <a :href="withBase('/zh-hans/products/xlerobot')" class="home-category-card">
     <img :src="withBase('/images/categories/XLeRobot.png')" alt="XLeRobot 移动机器人">
     <span>XLeRobot 移动机器人</span>
   </a>
-  <a :href="withBase('/zh-hans/products/esp32-s3-wifi-module')" class="category-card">
+  <a :href="withBase('/zh-hans/products/esp32-s3-wifi-module')" class="home-category-card">
     <img :src="withBase('/images/categories/ESP32-NanoCam.png')" alt="ESP32-NanoCam 图传">
     <span>ESP32-NanoCam 图传</span>
   </a>
-  <a :href="withBase('/zh-hans/products/ai-voice-module')" class="category-card">
+  <a :href="withBase('/zh-hans/products/ai-voice-module')" class="home-category-card">
     <img :src="withBase('/images/categories/AI-Voice-Module.png')" alt="AI 语音交互模块">
     <span>AI 语音交互模块</span>
   </a>
-  <a :href="withBase('/zh-hans/products/imu-module')" class="category-card">
+  <a :href="withBase('/zh-hans/products/imu-module')" class="home-category-card">
     <img :src="withBase('/images/categories/IMU.png')" alt="IMU 惯导模块">
     <span>IMU 惯导模块</span>
   </a>
-  <a :href="withBase('/zh-hans/products/gps-beidou-module')" class="category-card">
+  <a :href="withBase('/zh-hans/products/gps-beidou-module')" class="home-category-card">
     <img :src="withBase('/images/categories/GPS.png')" alt="GPS 北斗定位">
     <span>GPS 北斗定位</span>
   </a>
-  <a :href="withBase('/zh-hans/products/imx219-csi-camera')" class="category-card">
+  <a :href="withBase('/zh-hans/products/imx219-csi-camera')" class="home-category-card">
     <img :src="withBase('/images/categories/CSI-Camera.png')" alt="CSI 摄像头">
     <span>CSI 摄像头</span>
   </a>
@@ -69,20 +69,20 @@ outline: false
 <HomeLatestDocs />
 ## 浏览分类
 
-<div class="category-grid reveal">
-  <a :href="withBase('/zh-hans/tutorials/robot-arms/')" class="category-card">
+<div class="home-category-grid reveal">
+  <a :href="withBase('/zh-hans/tutorials/robot-arms/')" class="home-category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="机械臂教程">
     <span>机械臂教程</span>
   </a>
-  <a :href="withBase('/zh-hans/tutorials/robot-arms/xlerobot/')" class="category-card">
+  <a :href="withBase('/zh-hans/tutorials/robot-arms/xlerobot/')" class="home-category-card">
     <img :src="withBase('/images/categories/XLeRobot.png')" alt="移动机器人教程">
     <span>移动机器人教程</span>
   </a>
-  <a :href="withBase('/zh-hans/tutorials/sensors/')" class="category-card">
+  <a :href="withBase('/zh-hans/tutorials/sensors/')" class="home-category-card">
     <img :src="withBase('/images/categories/IMU.png')" alt="传感器教程">
     <span>传感器教程</span>
   </a>
-  <a :href="withBase('/zh-hans/tutorials/accessories/')" class="category-card">
+  <a :href="withBase('/zh-hans/tutorials/accessories/')" class="home-category-card">
     <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="配件教程">
     <span>配件教程</span>
   </a>
@@ -137,7 +137,7 @@ const storeUrl = computed(() => {
   margin-bottom: 24px;
 }
 
-.hero-subtitle {
+.home-hero-subtitle {
   font-size: 22px;
   font-weight: 600;
   color: var(--vp-c-text-1);
@@ -210,7 +210,7 @@ const storeUrl = computed(() => {
   font-size: 14px;
 }
 
-.category-grid {
+.home-category-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 20px;
@@ -221,7 +221,7 @@ const storeUrl = computed(() => {
   margin: 32px calc(50% - var(--grid-w) / 2) 64px;
 }
 
-.category-card {
+.home-category-card {
   border: 1px solid var(--vp-c-gutter);
   border-radius: 12px;
   overflow: hidden;
@@ -233,13 +233,13 @@ const storeUrl = computed(() => {
   background: var(--vp-c-bg-soft);
 }
 
-.category-card:hover {
+.home-category-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   border-color: var(--vp-c-brand);
 }
 
-.category-card img {
+.home-category-card img {
   width: 100%;
   height: 140px;
   object-fit: contain;
@@ -247,7 +247,7 @@ const storeUrl = computed(() => {
   background: var(--vp-c-bg);
 }
 
-.category-card span {
+.home-category-card span {
   display: block;
   padding: 12px 16px 16px;
   font-weight: 600;
@@ -301,7 +301,7 @@ const storeUrl = computed(() => {
   }
 }
 /* ---- hero 渐变标题与分区标题装饰线 (2026-08) ---- */
-.hero-subtitle {
+.home-hero-subtitle {
   font-size: 26px;
 }
 
@@ -329,7 +329,7 @@ const storeUrl = computed(() => {
 
 /* 满宽改由 .hero-inner 承担:不再用 50vw 负 margin——50vw 把滚动条宽度也算进去,
    会让整页多出约 7px 横向滚动(Windows/常显滚动条下必现);
-   改用「按视口定宽 + 48px 余量」,与 .card-grid / .category-grid 同一套写法 */
+   改用「按视口定宽 + 48px 余量」,与 .card-grid / .home-category-grid 同一套写法 */
 .hero-inner {
   --hero-w: min(1320px, 100vw - 48px);
   width: var(--hero-w);
@@ -360,7 +360,7 @@ const storeUrl = computed(() => {
   color: var(--vp-c-text-1);
 }
 
-.hero-subtitle {
+.home-hero-subtitle {
   font-size: 22px;
   margin: 0 0 10px;
 }
@@ -461,7 +461,7 @@ const storeUrl = computed(() => {
     font-size: 40px;
     text-align: left;
   }
-  .hero-subtitle {
+  .home-hero-subtitle {
     font-size: 22px;
   }
   .hero-desc {

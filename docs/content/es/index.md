@@ -12,7 +12,7 @@ outline: false
 
 # Juxi Technology Wiki
 
-<p class="hero-subtitle">Plataforma abierta de documentación para robótica y hardware de IA</p>
+<p class="home-hero-subtitle">Plataforma abierta de documentación para robótica y hardware de IA</p>
 <p class="hero-desc">Juxi Technology, con sede en Qianhai Shenzhen, sigue &quot;With Hong Kong · For the Mainland · To the World&quot;. Desarrollamos IA física, robótica corporizada e IA perimetral, ofreciendo soluciones open source a desarrolladores de todo el mundo.</p>
 
 <div class="hero-links three">
@@ -30,36 +30,36 @@ outline: false
 
 ## Gamas de productos
 
-<div class="category-grid reveal">
-  <a :href="withBase('/es/products/so-arm101')" class="category-card">
+<div class="home-category-grid reveal">
+  <a :href="withBase('/es/products/so-arm101')" class="home-category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="Brazo robótico SO-ARM101">
     <span>Brazo robótico SO-ARM101</span>
   </a>
-  <a :href="withBase('/es/products/amazinghand')" class="category-card">
+  <a :href="withBase('/es/products/amazinghand')" class="home-category-card">
     <img :src="withBase('/images/categories/AmazingHand.png')" alt="Mano diestra AmazingHand">
     <span>Mano diestra AmazingHand</span>
   </a>
-  <a :href="withBase('/es/products/xlerobot')" class="category-card">
+  <a :href="withBase('/es/products/xlerobot')" class="home-category-card">
     <img :src="withBase('/images/categories/XLeRobot.png')" alt="Robot móvil XLeRobot">
     <span>Robot móvil XLeRobot</span>
   </a>
-  <a :href="withBase('/es/products/esp32-s3-wifi-module')" class="category-card">
+  <a :href="withBase('/es/products/esp32-s3-wifi-module')" class="home-category-card">
     <img :src="withBase('/images/categories/ESP32-NanoCam.png')" alt="Vídeo WiFi ESP32-NanoCam">
     <span>Vídeo WiFi ESP32-NanoCam</span>
   </a>
-  <a :href="withBase('/es/products/ai-voice-module')" class="category-card">
+  <a :href="withBase('/es/products/ai-voice-module')" class="home-category-card">
     <img :src="withBase('/images/categories/AI-Voice-Module.png')" alt="Módulo de voz IA">
     <span>Módulo de voz IA</span>
   </a>
-  <a :href="withBase('/es/products/imu-module')" class="category-card">
+  <a :href="withBase('/es/products/imu-module')" class="home-category-card">
     <img :src="withBase('/images/categories/IMU.png')" alt="Módulo IMU inercial">
     <span>Módulo IMU inercial</span>
   </a>
-  <a :href="withBase('/es/products/gps-beidou-module')" class="category-card">
+  <a :href="withBase('/es/products/gps-beidou-module')" class="home-category-card">
     <img :src="withBase('/images/categories/GPS.png')" alt="Módulo GPS y BeiDou">
     <span>Módulo GPS y BeiDou</span>
   </a>
-  <a :href="withBase('/es/products/imx219-csi-camera')" class="category-card">
+  <a :href="withBase('/es/products/imx219-csi-camera')" class="home-category-card">
     <img :src="withBase('/images/categories/CSI-Camera.png')" alt="Cámara CSI IMX219 79°">
     <span>Cámara CSI IMX219 79°</span>
   </a>
@@ -69,20 +69,20 @@ outline: false
 
 ## Explorar categorías
 
-<div class="category-grid reveal">
-  <a :href="withBase('/es/tutorials/robot-arms/')" class="category-card">
+<div class="home-category-grid reveal">
+  <a :href="withBase('/es/tutorials/robot-arms/')" class="home-category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="Brazos robóticos">
     <span>Brazos robóticos</span>
   </a>
-  <a :href="withBase('/es/tutorials/robot-arms/xlerobot/')" class="category-card">
+  <a :href="withBase('/es/tutorials/robot-arms/xlerobot/')" class="home-category-card">
     <img :src="withBase('/images/categories/XLeRobot.png')" alt="Tutoriales de XLeRobot">
     <span>Tutoriales de XLeRobot</span>
   </a>
-  <a :href="withBase('/es/tutorials/sensors/')" class="category-card">
+  <a :href="withBase('/es/tutorials/sensors/')" class="home-category-card">
     <img :src="withBase('/images/categories/IMU.png')" alt="Sensores y percepción">
     <span>Sensores y percepción</span>
   </a>
-  <a :href="withBase('/es/tutorials/accessories/')" class="category-card">
+  <a :href="withBase('/es/tutorials/accessories/')" class="home-category-card">
     <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="Accesorios robóticos">
     <span>Accesorios robóticos</span>
   </a>
@@ -136,7 +136,7 @@ const storeUrl = computed(() => {
   margin-bottom: 24px;
 }
 
-.hero-subtitle {
+.home-hero-subtitle {
   font-size: 22px;
   font-weight: 600;
   color: var(--vp-c-text-1);
@@ -209,7 +209,7 @@ const storeUrl = computed(() => {
   font-size: 14px;
 }
 
-.category-grid {
+.home-category-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 20px;
@@ -220,7 +220,7 @@ const storeUrl = computed(() => {
   margin: 32px calc(50% - var(--grid-w) / 2) 64px;
 }
 
-.category-card {
+.home-category-card {
   border: 1px solid var(--vp-c-gutter);
   border-radius: 12px;
   overflow: hidden;
@@ -232,13 +232,13 @@ const storeUrl = computed(() => {
   background: var(--vp-c-bg-soft);
 }
 
-.category-card:hover {
+.home-category-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   border-color: var(--vp-c-brand);
 }
 
-.category-card img {
+.home-category-card img {
   width: 100%;
   height: 140px;
   object-fit: contain;
@@ -246,7 +246,7 @@ const storeUrl = computed(() => {
   background: var(--vp-c-bg);
 }
 
-.category-card span {
+.home-category-card span {
   display: block;
   padding: 12px 16px 16px;
   font-weight: 600;
@@ -300,7 +300,7 @@ const storeUrl = computed(() => {
   transform: translateY(-2px);
 }
 /* ---- hero 渐变标题与分区标题装饰线 (2026-08) ---- */
-.hero-subtitle {
+.home-hero-subtitle {
   font-size: 26px;
 }
 
@@ -328,7 +328,7 @@ const storeUrl = computed(() => {
 
 /* 满宽改由 .hero-inner 承担:不再用 50vw 负 margin——50vw 把滚动条宽度也算进去,
    会让整页多出约 7px 横向滚动(Windows/常显滚动条下必现);
-   改用「按视口定宽 + 48px 余量」,与 .card-grid / .category-grid 同一套写法 */
+   改用「按视口定宽 + 48px 余量」,与 .card-grid / .home-category-grid 同一套写法 */
 .hero-inner {
   --hero-w: min(1320px, 100vw - 48px);
   width: var(--hero-w);
@@ -359,7 +359,7 @@ const storeUrl = computed(() => {
   color: var(--vp-c-text-1);
 }
 
-.hero-subtitle {
+.home-hero-subtitle {
   font-size: 22px;
   margin: 0 0 10px;
 }
@@ -460,7 +460,7 @@ const storeUrl = computed(() => {
     font-size: 40px;
     text-align: left;
   }
-  .hero-subtitle {
+  .home-hero-subtitle {
     font-size: 22px;
   }
   .hero-desc {

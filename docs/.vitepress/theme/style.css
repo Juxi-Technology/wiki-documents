@@ -83,24 +83,30 @@
    ============================================ */
 
 /* ---- 卡片 hover 力反馈(首页文档卡/分类卡) ---- */
+/* .home-category-card = 首页卡片(见 11 份 index.md):与产品页 .category-card 同款但独立命名,
+   避免两个页面的 <style> 合并成全局 CSS 后互相覆盖 */
 .card,
-.category-card {
+.category-card,
+.home-category-card {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .card:hover,
-.category-card:hover {
+.category-card:hover,
+.home-category-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.14);
 }
 
 .card img,
-.category-card img {
+.category-card img,
+.home-category-card img {
   transition: transform 0.35s ease;
 }
 
 .card:hover img,
-.category-card:hover img {
+.category-card:hover img,
+.home-category-card:hover img {
   transform: scale(1.05);
 }
 
@@ -223,8 +229,10 @@
 
   .card,
   .category-card,
+  .home-category-card,
   .card img,
-  .category-card img {
+  .category-card img,
+  .home-category-card img {
     transition: none;
   }
 
@@ -254,14 +262,16 @@ html .brand-wiki {
 }
 
 /* ---- Hero 副标题渐变字 ---- */
-html .hero-subtitle {
+html .hero-subtitle,
+html .home-hero-subtitle {
   background: linear-gradient(92deg, #1e4a7a 0%, #3a7bd5 55%, #2b6cb0 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
-.dark .hero-subtitle {
+.dark .hero-subtitle,
+.dark .home-hero-subtitle {
   background: linear-gradient(92deg, #5b87c9 0%, #7ea6e0 55%, #4a90d9 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -362,11 +372,13 @@ html .hero-btn.secondary:hover {
    ============================================ */
 
 /* ---- 分类卡 hover 标题变色 ---- */
-.category-card span {
+.category-card span,
+.home-category-card span {
   transition: color 0.25s;
 }
 
-.category-card:hover span {
+.category-card:hover span,
+.home-category-card:hover span {
   color: var(--vp-c-brand-1);
 }
 

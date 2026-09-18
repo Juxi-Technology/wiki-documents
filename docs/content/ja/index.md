@@ -12,7 +12,7 @@ outline: false
 
 # Juxi Technology Wiki
 
-<p class="hero-subtitle">ロボティクスとAIハードウェアのオープンドキュメントプラットフォーム</p>
+<p class="home-hero-subtitle">ロボティクスとAIハードウェアのオープンドキュメントプラットフォーム</p>
 <p class="hero-desc">Juxi Technology は深圳前海に拠点を置き、&quot;With Hong Kong · For the Mainland · To the World&quot; の理念のもと、物理AI・具身ロボティクス・エッジAIを開発し、グローバル開発者にオープンソースソリューションを提供します。</p>
 
 <div class="hero-links three">
@@ -30,36 +30,36 @@ outline: false
 
 ## 製品シリーズ
 
-<div class="category-grid reveal">
-  <a :href="withBase('/ja/products/so-arm101')" class="category-card">
+<div class="home-category-grid reveal">
+  <a :href="withBase('/ja/products/so-arm101')" class="home-category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="SO-ARM101 ロボットアーム">
     <span>SO-ARM101 ロボットアーム</span>
   </a>
-  <a :href="withBase('/ja/products/amazinghand')" class="category-card">
+  <a :href="withBase('/ja/products/amazinghand')" class="home-category-card">
     <img :src="withBase('/images/categories/AmazingHand.png')" alt="AmazingHand 器用ハンド">
     <span>AmazingHand 器用ハンド</span>
   </a>
-  <a :href="withBase('/ja/products/xlerobot')" class="category-card">
+  <a :href="withBase('/ja/products/xlerobot')" class="home-category-card">
     <img :src="withBase('/images/categories/XLeRobot.png')" alt="XLeRobot 移動ロボット">
     <span>XLeRobot 移動ロボット</span>
   </a>
-  <a :href="withBase('/ja/products/esp32-s3-wifi-module')" class="category-card">
+  <a :href="withBase('/ja/products/esp32-s3-wifi-module')" class="home-category-card">
     <img :src="withBase('/images/categories/ESP32-NanoCam.png')" alt="ESP32-NanoCam 動画転送モジュール">
     <span>ESP32-NanoCam 動画転送モジュール</span>
   </a>
-  <a :href="withBase('/ja/products/ai-voice-module')" class="category-card">
+  <a :href="withBase('/ja/products/ai-voice-module')" class="home-category-card">
     <img :src="withBase('/images/categories/AI-Voice-Module.png')" alt="AI 音声対話モジュール">
     <span>AI 音声対話モジュール</span>
   </a>
-  <a :href="withBase('/ja/products/imu-module')" class="category-card">
+  <a :href="withBase('/ja/products/imu-module')" class="home-category-card">
     <img :src="withBase('/images/categories/IMU.png')" alt="IMU 慣性航法モジュール">
     <span>IMU 慣性航法モジュール</span>
   </a>
-  <a :href="withBase('/ja/products/gps-beidou-module')" class="category-card">
+  <a :href="withBase('/ja/products/gps-beidou-module')" class="home-category-card">
     <img :src="withBase('/images/categories/GPS.png')" alt="GPS 北斗測位モジュール">
     <span>GPS 北斗測位モジュール</span>
   </a>
-  <a :href="withBase('/ja/products/imx219-csi-camera')" class="category-card">
+  <a :href="withBase('/ja/products/imx219-csi-camera')" class="home-category-card">
     <img :src="withBase('/images/categories/CSI-Camera.png')" alt="IMX219 CSI カメラ">
     <span>IMX219 CSI カメラ</span>
   </a>
@@ -69,20 +69,20 @@ outline: false
 
 ## カテゴリを見る
 
-<div class="category-grid reveal">
-  <a :href="withBase('/ja/tutorials/robot-arms/')" class="category-card">
+<div class="home-category-grid reveal">
+  <a :href="withBase('/ja/tutorials/robot-arms/')" class="home-category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="ロボットアームチュートリアル">
     <span>ロボットアームチュートリアル</span>
   </a>
-  <a :href="withBase('/ja/tutorials/robot-arms/xlerobot/')" class="category-card">
+  <a :href="withBase('/ja/tutorials/robot-arms/xlerobot/')" class="home-category-card">
     <img :src="withBase('/images/categories/XLeRobot.png')" alt="移動ロボットチュートリアル">
     <span>移動ロボットチュートリアル</span>
   </a>
-  <a :href="withBase('/ja/tutorials/sensors/')" class="category-card">
+  <a :href="withBase('/ja/tutorials/sensors/')" class="home-category-card">
     <img :src="withBase('/images/categories/IMU.png')" alt="センサーチュートリアル">
     <span>センサーチュートリアル</span>
   </a>
-  <a :href="withBase('/ja/tutorials/accessories/')" class="category-card">
+  <a :href="withBase('/ja/tutorials/accessories/')" class="home-category-card">
     <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="アクセサリーチュートリアル">
     <span>アクセサリーチュートリアル</span>
   </a>
@@ -136,7 +136,7 @@ const storeUrl = computed(() => {
   margin-bottom: 24px;
 }
 
-.hero-subtitle {
+.home-hero-subtitle {
   font-size: 22px;
   font-weight: 600;
   color: var(--vp-c-text-1);
@@ -209,7 +209,7 @@ const storeUrl = computed(() => {
   font-size: 14px;
 }
 
-.category-grid {
+.home-category-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 20px;
@@ -220,7 +220,7 @@ const storeUrl = computed(() => {
   margin: 32px calc(50% - var(--grid-w) / 2) 64px;
 }
 
-.category-card {
+.home-category-card {
   border: 1px solid var(--vp-c-gutter);
   border-radius: 12px;
   overflow: hidden;
@@ -232,13 +232,13 @@ const storeUrl = computed(() => {
   background: var(--vp-c-bg-soft);
 }
 
-.category-card:hover {
+.home-category-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   border-color: var(--vp-c-brand);
 }
 
-.category-card img {
+.home-category-card img {
   width: 100%;
   height: 140px;
   object-fit: contain;
@@ -246,7 +246,7 @@ const storeUrl = computed(() => {
   background: var(--vp-c-bg);
 }
 
-.category-card span {
+.home-category-card span {
   display: block;
   padding: 12px 16px 16px;
   font-weight: 600;
@@ -300,7 +300,7 @@ const storeUrl = computed(() => {
   transform: translateY(-2px);
 }
 /* ---- hero 渐变标题与分区标题装饰线 (2026-08) ---- */
-.hero-subtitle {
+.home-hero-subtitle {
   font-size: 26px;
 }
 
@@ -328,7 +328,7 @@ const storeUrl = computed(() => {
 
 /* 满宽改由 .hero-inner 承担:不再用 50vw 负 margin——50vw 把滚动条宽度也算进去,
    会让整页多出约 7px 横向滚动(Windows/常显滚动条下必现);
-   改用「按视口定宽 + 48px 余量」,与 .card-grid / .category-grid 同一套写法 */
+   改用「按视口定宽 + 48px 余量」,与 .card-grid / .home-category-grid 同一套写法 */
 .hero-inner {
   --hero-w: min(1320px, 100vw - 48px);
   width: var(--hero-w);
@@ -359,7 +359,7 @@ const storeUrl = computed(() => {
   color: var(--vp-c-text-1);
 }
 
-.hero-subtitle {
+.home-hero-subtitle {
   font-size: 22px;
   margin: 0 0 10px;
 }
@@ -460,7 +460,7 @@ const storeUrl = computed(() => {
     font-size: 40px;
     text-align: left;
   }
-  .hero-subtitle {
+  .home-hero-subtitle {
     font-size: 22px;
   }
   .hero-desc {
