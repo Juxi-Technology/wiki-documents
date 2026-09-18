@@ -38,7 +38,7 @@ lerobot-calibrate \
 ## 查看校準設定檔
 
 ```Shell
-sudo nano /home/<你的用户名>/.cache/huggingface/lerobot/calibration/robots/so101_follower/my_follower_arm.json
+sudo nano /home/<你的使用者名稱>/.cache/huggingface/lerobot/calibration/robots/so101_follower/my_follower_arm.json
 ```
 
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-03-Calibration-Ubuntu/3.png)

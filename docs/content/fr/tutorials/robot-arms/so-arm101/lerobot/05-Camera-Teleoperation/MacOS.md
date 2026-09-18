@@ -35,7 +35,7 @@ La téléopération démarre après l'exécution
 
 La fenêtre rerun.io s'ouvre et affiche en temps réel la trajectoire de chaque articulation de servomoteur, ainsi que l'image en direct de la caméra
 
-Et enregistre les images dans le répertoire `~/用户名/outputs/captured_images`
+Et enregistre les images dans le répertoire `~/<nom-utilisateur>/outputs/captured_images`
 
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-05-Camera-Teleoperation-MacOS/2.jpg)
 

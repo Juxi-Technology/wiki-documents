@@ -9,7 +9,7 @@ description: "Schritt-für-Schritt-Anleitung zur Montage des Parallelbacken-Grei
 
 [PincOpen-Baugruppe.step](/downloads/PincOpen装配体.step)
 
-**Montageschritte für den Parallelbacken-Greifer.mp4**（平行指夹爪安装步骤.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**Montageschritte für den Parallelbacken-Greifer.mp4**（平行指夹爪安装步骤.mp4, größer als das Dateigrößenlimit der Site — auf Anfrage bei support@juxitech.com）
 
 ![8.png](../../../../../public/images/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation/1.jpg)
 

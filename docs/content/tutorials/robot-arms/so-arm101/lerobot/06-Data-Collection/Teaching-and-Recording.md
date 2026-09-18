@@ -11,13 +11,13 @@ This tutorial describes general operation steps, so starting from this step, the
 
 | Placeholder | What it represents | How to replace |
 |---|---|---|
-| `<你的用户名>` | Your computer's system username, i.e. the name of your home directory | Type `whoami` in the terminal to see it |
-| `<用户名>` | Your HuggingFace account name | After logging in to HuggingFace, look at the account name next to the avatar in the top-right corner |
+| `<username>` | Your computer's system username, i.e. the name of your home directory | Type `whoami` in the terminal to see it |
+| `<username>` | Your HuggingFace account name | After logging in to HuggingFace, look at the account name next to the avatar in the top-right corner |
 
 For example. Suppose the terminal's `whoami` output is `zhangsan`, and your HuggingFace account name is also `zhangsan`, then
 
-- `/Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/` should be written as `/Users/zhangsan/.cache/huggingface/lerobot/zhangsan/`
-- `<用户名>/lerobot_my_dataset_a` should be written as `zhangsan/lerobot_my_dataset_a`
+- `/Users/<username>/.cache/huggingface/lerobot/<username>/` should be written as `/Users/zhangsan/.cache/huggingface/lerobot/zhangsan/`
+- `<username>/lerobot_my_dataset_a` should be written as `zhangsan/lerobot_my_dataset_a`
 
 > Replace these two placeholders in all subsequent commands in the same way.
 
@@ -26,7 +26,7 @@ For example. Suppose the terminal's `whoami` output is `zhangsan`, and your Hugg
 ## Delete any existing dataset with the same name (if any)
 
 ```Shell
-sudo rm -rf /Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_a
+sudo rm -rf /Users/<username>/.cache/huggingface/lerobot/<username>/lerobot_my_dataset_a
 ```
 
 ## One camera, collect the dataset - Mac
@@ -41,7 +41,7 @@ lerobot-record \
     --teleop.port=/dev/tty.usbmodem5AAF2194741 \
     --teleop.id=my_leader_arm \
     --display_data=true \
-    --dataset.repo_id=<用户名>/lerobot_my_dataset_a \
+    --dataset.repo_id=<username>/lerobot_my_dataset_a \
     --dataset.num_episodes=40 \
     --dataset.single_task="Grab Oranges" \
     --dataset.push_to_hub=false \
@@ -61,7 +61,7 @@ lerobot-record \
     --teleop.port=/dev/tty.usbmodem5AAF2194741 \
     --teleop.id=my_leader_arm \
     --display_data=true \
-    --dataset.repo_id=<用户名>/lerobot_my_dataset_a \
+    --dataset.repo_id=<username>/lerobot_my_dataset_a \
     --dataset.num_episodes=40 \
     --dataset.single_task="Grab Oranges" \
     --dataset.push_to_hub=true \
@@ -83,7 +83,7 @@ ESC, stop immediately, encode the video, and upload the dataset.
 ## After collection is complete, the dataset save directory
 
 ```Shell
-/Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_a
+/Users/<username>/.cache/huggingface/lerobot/<username>/lerobot_my_dataset_a
 ```
 
 ## Handshake
@@ -98,7 +98,7 @@ lerobot-record \
     --teleop.port=/dev/tty.usbmodem5AAF2194741 \
     --teleop.id=my_leader_arm \
     --display_data=true \
-    --dataset.repo_id=<用户名>/lerobot_my_dataset_shake_hands \
+    --dataset.repo_id=<username>/lerobot_my_dataset_shake_hands \
     --dataset.num_episodes=30 \
     --dataset.single_task="Shanke Hands" \
     --dataset.push_to_hub=false \
@@ -109,7 +109,7 @@ lerobot-record \
 After collection is complete, the handshake dataset will be saved in:
 
 ```Shell
-/Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_shake_hands
+/Users/<username>/.cache/huggingface/lerobot/<username>/lerobot_my_dataset_shake_hands
 ```
 
 ## About the two datasets used in the tutorial
@@ -131,7 +131,7 @@ In other words, **the handshake dataset is the main example for the second half 
 
 ## After collection is complete
 
-The data is saved by default under `~/.cache/huggingface/lerobot/<用户名>/`. Next:
+The data is saved by default under `~/.cache/huggingface/lerobot/<username>/`. Next:
 
 1. To back up the dataset to the cloud, see [Upload the dataset to HuggingFace (optional)](/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload)
 2. To start training, continue with [Step 7: Train the model](/tutorials/robot-arms/so-arm101/lerobot/07-Training/Cloud-GPU), which will first guide you through uploading the data to the cloud GPU platform and setting up the environment

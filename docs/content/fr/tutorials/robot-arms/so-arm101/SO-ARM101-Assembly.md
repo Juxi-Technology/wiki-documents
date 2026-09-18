@@ -116,7 +116,7 @@ La vidéo ci-dessous montre l'ordre des étapes de configuration de l'ID des mot
 
 Utilisez le logiciel PC Feetech pour servomoteurs afin de configurer l'ID des servomoteurs et de calibrer le point milieu ; la configuration des ID se fait de 1 à 6 !
 
-**Configuration des ID des servomoteurs du bras robotisé - Système Windows.mp4**（机械臂舵机设置ID-Windows系统.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**Configuration des ID des servomoteurs du bras robotisé - Système Windows.mp4**（机械臂舵机设置ID-Windows系统.mp4, au-delà de la limite de taille par fichier du site — à demander à support@juxitech.com）
 
 ### Système Linux/Ubuntu et ordinateur Mac
 
@@ -208,13 +208,13 @@ lerobot-setup-motors \
     --teleop.port=/dev/ttyACM0
 ```
 
-**Configuration des ID des servomoteurs du bras robotisé - Système Linux.mp4**（机械臂舵机设置ID-Linux系统.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**Configuration des ID des servomoteurs du bras robotisé - Système Linux.mp4**（机械臂舵机设置ID-Linux系统.mp4, au-delà de la limite de taille par fichier du site — à demander à support@juxitech.com）
 
 ## Étape 2 : assemblage
 
 - Les étapes d'assemblage du bras esclave sont globalement identiques à celles du bras maître. La seule différence réside, après l'étape 12, dans la manière d'installer l'effecteur terminal (pince et poignée).
 
-**Tutoriel d'assemblage du bras robotisé SO-ARM101.mp4**（SO-ARM101机械臂组装教程.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**Tutoriel d'assemblage du bras robotisé SO-ARM101.mp4**（SO-ARM101机械臂组装教程.mp4, au-delà de la limite de taille par fichier du site — à demander à support@juxitech.com）
 
 Installation de la carte de commande des servomoteurs : installez d'abord les 4 entretoises en laiton, puis fixez la carte de commande avec quatre vis M2.5*8
 

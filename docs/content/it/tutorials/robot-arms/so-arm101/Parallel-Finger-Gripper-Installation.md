@@ -9,7 +9,7 @@ description: "Installazione della pinza a dita parallele sul braccio SO-ARM101: 
 
 [Assieme PincOpen.step](/downloads/PincOpen装配体.step)
 
-**Passaggi di installazione della pinza a dita parallele.mp4**（平行指夹爪安装步骤.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**Passaggi di installazione della pinza a dita parallele.mp4**（平行指夹爪安装步骤.mp4, supera il limite di dimensione per file del sito — richiedilo a support@juxitech.com）
 
 ![8.png](../../../../../public/images/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation/1.jpg)
 

@@ -46,7 +46,7 @@ lerobot-calibrate \
 ## 캘리브레이션 설정 파일 확인
 
 ```Shell
-sudo nano /Users/<你的用户名>/.cache/huggingface/lerobot/calibration/teleoperators/so101_leader/my_leader_arm.json
+sudo nano /Users/<사용자명>/.cache/huggingface/lerobot/calibration/teleoperators/so101_leader/my_leader_arm.json
 ```
 
 ## 자주 발생하는 Bug

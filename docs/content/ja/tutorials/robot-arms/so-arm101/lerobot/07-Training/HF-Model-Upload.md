@@ -11,8 +11,8 @@ description: "訓練時の自動アップロードと訓練後の手動アップ
 
 本記事は前の章のプレースホルダーの書き方に従っています。ご自身の情報に置き換えてください。置き換える際は**山括弧ごと削除してください**：
 
-- `<用户名>`：あなたの HuggingFace アカウント名
-- `<你的用户名>`：あなたのパソコンのシステムユーザー名。ターミナルで `whoami` を入力すると確認できます
+- `<ユーザー名>`：あなたの HuggingFace アカウント名
+- `<ユーザー名>`：あなたのパソコンのシステムユーザー名。ターミナルで `whoami` を入力すると確認できます
 
 ## 方法一：訓練時に自動アップロード
 
@@ -20,7 +20,7 @@ description: "訓練時の自動アップロードと訓練後の手動アップ
 
 ```Shell
   --policy.push_to_hub=true \
-  --policy.repo_id=<用户名>/shake_act_a \
+  --policy.repo_id=<ユーザー名>/shake_act_a \
 ```
 
 **この2行は必ずペアで記述する必要があり、`push_to_hub=true` だけを書くとエラーになります。** `repo_id` はこのモデルに付けるリポジトリ名で、`账号名/模型名` の形式です。リポジトリが存在しない場合、LeRobot が自動的に作成します。
@@ -29,7 +29,7 @@ description: "訓練時の自動アップロードと訓練後の手動アップ
 
 ```Shell
 lerobot-train \
-  --dataset.repo_id=<用户名>/lerobot_my_dataset_shake_hands \
+  --dataset.repo_id=<ユーザー名>/lerobot_my_dataset_shake_hands \
   --dataset.root=~/lerobot_my_dataset_shake_hands \
   --dataset.revision=v0.1.0 \
   --dataset.streaming=false \
@@ -40,12 +40,12 @@ lerobot-train \
   --wandb.enable=true \
   --wandb.project=Lerobot_my_Project \
   --policy.push_to_hub=true \
-  --policy.repo_id=<用户名>/shake_act_a \
+  --policy.repo_id=<ユーザー名>/shake_act_a \
   --steps=20000 \
   --batch_size=8
 ```
 
-前の節の説明のとおり、このバージョンの訓練が完了すると、モデルは `https://huggingface.co/<用户名>/shake_act_a` に表示されます。
+前の節の説明のとおり、このバージョンの訓練が完了すると、モデルは `https://huggingface.co/<ユーザー名>/shake_act_a` に表示されます。
 
 ### 中間のチェックポイントも一緒にアップロードしたい場合
 
@@ -85,7 +85,7 @@ hf auth whoami
 ACT の訓練の出力ディレクトリが `~/output_lerobot_train/shake/act/` であると仮定します：
 
 ```Shell
-export HF_USER=<用户名>
+export HF_USER=<ユーザー名>
 
 hf upload ${HF_USER}/shake_act_a \
   ~/output_lerobot_train/shake/act/checkpoints/last/pretrained_model
@@ -112,7 +112,7 @@ hf upload ${HF_USER}/shake_act_a_${CKPT} \
 モデルをアップロードしたら、デプロイ時に `--policy.path` をそれを指すようにするだけです。事前にローカルへダウンロードする必要はありません：
 
 ```Shell
-  --policy.path=<用户名>/shake_act_a \
+  --policy.path=<ユーザー名>/shake_act_a \
 ```
 
 これはローカルパスを指すよりも便利で、パソコンを変えても、あるいは他の人があなたのアカウント名さえ知っていれば直接使えます。HuggingFace からモデルを取得するにはそのサーバーに接続できる必要がある点に注意してください。中国国内のネットワーク環境では、先に[登録Hugging Faceアカウント（任意）](/ja/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account)に従ってミラーを設定することをおすすめします。

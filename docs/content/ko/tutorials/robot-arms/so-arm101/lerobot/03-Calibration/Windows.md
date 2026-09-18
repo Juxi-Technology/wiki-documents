@@ -25,9 +25,9 @@ lerobot-calibrate --teleop.type=so101_leader --teleop.port=COM7 --teleop.id=my_l
 
 ## 파일 내보내기 위치
 
-C:\Users\<你的Windows用户名>\.cache\huggingface\lerobot\calibration\robots\so101_follower\my_follower_arm.json
+C:\Users\<Windows-사용자명>\.cache\huggingface\lerobot\calibration\robots\so101_follower\my_follower_arm.json
 
-C:\Users\<你的Windows用户名>\.cache\huggingface\lerobot\calibration\teleoperators\so101_leader\my_leader_arm.json
+C:\Users\<Windows-사용자명>\.cache\huggingface\lerobot\calibration\teleoperators\so101_leader\my_leader_arm.json
 
 ## 다른 로봇 암으로 캘리브레이션
 

@@ -9,7 +9,7 @@ description: "Tutorial de montaje de la pinza de dedos paralelos: desmontar la t
 
 [PincOpen装配体.step](/downloads/PincOpen装配体.step)
 
-**平行指夹爪安装步骤.mp4**（平行指夹爪安装步骤.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**平行指夹爪安装步骤.mp4**（平行指夹爪安装步骤.mp4, supera el límite de tamaño por archivo del sitio — solicítalo a support@juxitech.com）
 
 ![8.png](../../../../../public/images/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation/1.jpg)
 

@@ -116,7 +116,7 @@ El siguiente vídeo muestra la secuencia de pasos para configurar el ID de los m
 
 Utiliza la herramienta de PC para servos Feetech para configurar el ID de los servos y calibrar la posición central; ¡la configuración de IDs es de 1 a 6!
 
-**Configuración del ID de los servos del brazo robótico-Sistema Windows.mp4**（机械臂舵机设置ID-Windows系统.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**Configuración del ID de los servos del brazo robótico-Sistema Windows.mp4**（机械臂舵机设置ID-Windows系统.mp4, supera el límite de tamaño por archivo del sitio — solicítalo a support@juxitech.com）
 
 ### Sistema Linux/Ubuntu y ordenador Mac
 
@@ -208,13 +208,13 @@ lerobot-setup-motors \
     --teleop.port=/dev/ttyACM0
 ```
 
-**Configuración del ID de los servos del brazo robótico-Sistema Linux.mp4**（机械臂舵机设置ID-Linux系统.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**Configuración del ID de los servos del brazo robótico-Sistema Linux.mp4**（机械臂舵机设置ID-Linux系统.mp4, supera el límite de tamaño por archivo del sitio — solicítalo a support@juxitech.com）
 
 ## Paso 2: Ensamblaje
 
 - Los pasos de ensamblaje del brazo esclavo son básicamente los mismos que los del brazo maestro. La única diferencia es que, a partir del paso 12, la forma de instalar el efector final (pinza y mango) es distinta.
 
-**Tutorial de ensamblaje del brazo robótico SO-ARM101.mp4**（SO-ARM101机械臂组装教程.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**Tutorial de ensamblaje del brazo robótico SO-ARM101.mp4**（SO-ARM101机械臂组装教程.mp4, supera el límite de tamaño por archivo del sitio — solicítalo a support@juxitech.com）
 
 Instalación de la placa de control de servos: primero instala los 4 postes de cobre y después fija la placa de control con cuatro tornillos M2.5*8
 

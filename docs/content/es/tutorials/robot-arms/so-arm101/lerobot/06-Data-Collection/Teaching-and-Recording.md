@@ -11,13 +11,13 @@ El tutorial describe pasos de operación generales, por lo que a partir de este 
 
 | Marcador de posición | Qué representa | Cómo sustituirlo |
 |---|---|---|
-| `<你的用户名>` | El nombre de usuario del sistema de tu computadora, es decir, el nombre del directorio personal | Escríbelo `whoami` en el terminal y podrás verlo |
-| `<用户名>` | El nombre de tu cuenta de HuggingFace | Tras iniciar sesión en HuggingFace, mira el nombre de la cuenta junto al avatar en la esquina superior derecha |
+| `<usuario>` | El nombre de usuario del sistema de tu computadora, es decir, el nombre del directorio personal | Escríbelo `whoami` en el terminal y podrás verlo |
+| `<usuario>` | El nombre de tu cuenta de HuggingFace | Tras iniciar sesión en HuggingFace, mira el nombre de la cuenta junto al avatar en la esquina superior derecha |
 
 Por ejemplo. Supongamos que la salida de `whoami` en el terminal es `zhangsan`, y tu nombre de cuenta de HuggingFace también es `zhangsan`; entonces
 
-- `/Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/` debería escribirse como `/Users/zhangsan/.cache/huggingface/lerobot/zhangsan/`
-- `<用户名>/lerobot_my_dataset_a` debería escribirse como `zhangsan/lerobot_my_dataset_a`
+- `/Users/<usuario>/.cache/huggingface/lerobot/<usuario>/` debería escribirse como `/Users/zhangsan/.cache/huggingface/lerobot/zhangsan/`
+- `<usuario>/lerobot_my_dataset_a` debería escribirse como `zhangsan/lerobot_my_dataset_a`
 
 > Los dos marcadores de posición de todos los comandos siguientes también se sustituyen de la misma manera.
 
@@ -26,7 +26,7 @@ Por ejemplo. Supongamos que la salida de `whoami` en el terminal es `zhangsan`, 
 ## Eliminar el conjunto de datos con el mismo nombre que ya existía antes (si lo hay)
 
 ```Shell
-sudo rm -rf /Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_a
+sudo rm -rf /Users/<usuario>/.cache/huggingface/lerobot/<usuario>/lerobot_my_dataset_a
 ```
 
 ## Una cámara, recopilar el conjunto de datos-Computadora Mac
@@ -41,7 +41,7 @@ lerobot-record \
     --teleop.port=/dev/tty.usbmodem5AAF2194741 \
     --teleop.id=my_leader_arm \
     --display_data=true \
-    --dataset.repo_id=<用户名>/lerobot_my_dataset_a \
+    --dataset.repo_id=<usuario>/lerobot_my_dataset_a \
     --dataset.num_episodes=40 \
     --dataset.single_task="Grab Oranges" \
     --dataset.push_to_hub=false \
@@ -61,7 +61,7 @@ lerobot-record \
     --teleop.port=/dev/tty.usbmodem5AAF2194741 \
     --teleop.id=my_leader_arm \
     --display_data=true \
-    --dataset.repo_id=<用户名>/lerobot_my_dataset_a \
+    --dataset.repo_id=<usuario>/lerobot_my_dataset_a \
     --dataset.num_episodes=40 \
     --dataset.single_task="Grab Oranges" \
     --dataset.push_to_hub=true \
@@ -83,7 +83,7 @@ ESC, detiene inmediatamente, codifica el vídeo y sube el conjunto de datos.
 ## Recopilación finalizada: directorio donde se guarda el conjunto de datos
 
 ```Shell
-/Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_a
+/Users/<usuario>/.cache/huggingface/lerobot/<usuario>/lerobot_my_dataset_a
 ```
 
 ## Apretón de manos
@@ -98,7 +98,7 @@ lerobot-record \
     --teleop.port=/dev/tty.usbmodem5AAF2194741 \
     --teleop.id=my_leader_arm \
     --display_data=true \
-    --dataset.repo_id=<用户名>/lerobot_my_dataset_shake_hands \
+    --dataset.repo_id=<usuario>/lerobot_my_dataset_shake_hands \
     --dataset.num_episodes=30 \
     --dataset.single_task="Shanke Hands" \
     --dataset.push_to_hub=false \
@@ -109,7 +109,7 @@ lerobot-record \
 Una vez finalizada la recopilación, el conjunto de datos del apretón de manos se guardará en:
 
 ```Shell
-/Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_shake_hands
+/Users/<usuario>/.cache/huggingface/lerobot/<usuario>/lerobot_my_dataset_shake_hands
 ```
 
 ## Acerca de los dos conjuntos de datos utilizados en el tutorial
@@ -131,7 +131,7 @@ Es decir, **el conjunto de datos del apretón de manos es el ejemplo principal d
 
 ## Una vez finalizada la recopilación
 
-Los datos se guardan por defecto en `~/.cache/huggingface/lerobot/<用户名>/`. A continuación:
+Los datos se guardan por defecto en `~/.cache/huggingface/lerobot/<usuario>/`. A continuación:
 
 1. Si quieres hacer una copia de seguridad del conjunto de datos en la nube, consulta [Subir el conjunto de datos a HuggingFace (opcional)](/es/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload)
 2. Si estás listo para empezar a entrenar, continúa con [Paso 7: Entrenar el modelo](/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/Cloud-GPU); ese artículo primero te guiará para subir los datos en la plataforma de GPU en la nube y dejar listo el entorno

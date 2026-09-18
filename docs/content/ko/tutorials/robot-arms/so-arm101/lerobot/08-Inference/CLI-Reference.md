@@ -34,7 +34,7 @@ LeRobot **0.6.0**부터는 학습한 모델을 `lerobot-rollout`으로 배포해
 
 ## 시각화에 대하여
 
-`--display_data=true`는 rerun.io의 시각화 인터페이스를 시작하고, 동시에 `/Users/<你的用户名>/.cache/huggingface/lerobot/rollout_lerobot_my_dataset_a/images/observation.images.front/episode-000000` 디렉터리에 매 프레임의 이미지를 저장하므로 공간을 꽤 차지합니다. 정식으로 사용할 때는 `--display_data=false`로 설정해도 됩니다.
+`--display_data=true`는 rerun.io의 시각화 인터페이스를 시작하고, 동시에 `/Users/<사용자명>/.cache/huggingface/lerobot/rollout_lerobot_my_dataset_a/images/observation.images.front/episode-000000` 디렉터리에 매 프레임의 이미지를 저장하므로 공간을 꽤 차지합니다. 정식으로 사용할 때는 `--display_data=false`로 설정해도 됩니다.
 
 ## 오렌지 집기 작업을 예로
 
@@ -47,7 +47,7 @@ lerobot-rollout  \
   --robot.port=/dev/tty.usbmodem5AAF2193061 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1280, height: 720, fps: 30, fourcc: "MJPG"}}" \
   --robot.id=my_follower_arm \
-  --policy.path=/Users/<你的用户名>/Downloads/7-lerobot/checkpoints/last/pretrained_model \
+  --policy.path=/Users/<사용자명>/Downloads/7-lerobot/checkpoints/last/pretrained_model \
   --task="Grab Oranges" \
   --duration=60 \
   --display_data=true
@@ -62,7 +62,7 @@ lerobot-rollout  \
   --robot.port=/dev/tty.usbmodem5AAF2193061 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1280, height: 720, fps: 30, fourcc: "MJPG"}}" \
   --robot.id=my_follower_arm \
-  --policy.path=/Users/<你的用户名>/Downloads/7-lerobot/checkpoints/last/pretrained_model \
+  --policy.path=/Users/<사용자명>/Downloads/7-lerobot/checkpoints/last/pretrained_model \
   --task="Grab Oranges" \
   --duration=60 \
   --display_data=false
@@ -77,7 +77,7 @@ lerobot-rollout  \
   --robot.port=/dev/tty.usbmodem5AAF2193061 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1280, height: 720, fps: 30, fourcc: "MJPG"}}" \
   --robot.id=my_follower_arm \
-  --policy.path=<用户名>/lerobot_my_model_a \
+  --policy.path=<사용자명>/lerobot_my_model_a \
   --task="Grab Oranges" \
   --duration=60 \
   --display_data=true
@@ -98,8 +98,8 @@ lerobot-rollout  \
   --robot.port=/dev/tty.usbmodem5AAF2193061 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1280, height: 720, fps: 30, fourcc: "MJPG"}}" \
   --robot.id=my_follower_arm \
-  --policy.path=/Users/<你的用户名>/Downloads/7-lerobot/checkpoints/last/pretrained_model \
-  --dataset.repo_id=<用户名>/rollout_lerobot_my_dataset_a \
+  --policy.path=/Users/<사용자명>/Downloads/7-lerobot/checkpoints/last/pretrained_model \
+  --dataset.repo_id=<사용자명>/rollout_lerobot_my_dataset_a \
   --dataset.num_episodes=10 \
   --dataset.single_task="Grab Oranges" \
   --display_data=false

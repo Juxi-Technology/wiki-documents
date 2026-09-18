@@ -116,7 +116,7 @@ Das folgende Video zeigt die Reihenfolge der Schritte zum Festlegen der Motor-ID
 
 Verwenden Sie die Feetech-Servo-Hostsoftware, um die Servo-ID festzulegen und die Mittelstellung zu kalibrieren; die ID-Einstellung erfolgt von 1 bis 6!
 
-**Roboterarm-Servo-ID-Einstellung-Windows-System.mp4**（机械臂舵机设置ID-Windows系统.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**Roboterarm-Servo-ID-Einstellung-Windows-System.mp4**（机械臂舵机设置ID-Windows系统.mp4, größer als das Dateigrößenlimit der Site — auf Anfrage bei support@juxitech.com）
 
 ### Linux/Ubuntu-System und Mac-Computer
 
@@ -208,13 +208,13 @@ lerobot-setup-motors \
     --teleop.port=/dev/ttyACM0
 ```
 
-**Roboterarm-Servo-ID-Einstellung-Linux-System.mp4**（机械臂舵机设置ID-Linux系统.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**Roboterarm-Servo-ID-Einstellung-Linux-System.mp4**（机械臂舵机设置ID-Linux系统.mp4, größer als das Dateigrößenlimit der Site — auf Anfrage bei support@juxitech.com）
 
 ## Zweiter Schritt: Montage
 
 - Die Montageschritte des Follower-Arms sind im Wesentlichen dieselben wie beim Leader-Arm. Der einzige Unterschied besteht darin, dass nach Schritt 12 die Montage des Endeffektors (Greifer und Griff) unterschiedlich ist.
 
-**SO-ARM101-Roboterarm-Montageanleitung.mp4**（SO-ARM101机械臂组装教程.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**SO-ARM101-Roboterarm-Montageanleitung.mp4**（SO-ARM101机械臂组装教程.mp4, größer als das Dateigrößenlimit der Site — auf Anfrage bei support@juxitech.com）
 
 Montage der Servo-Treiberplatine: Montieren Sie zuerst die 4 Messingabstandshalter und befestigen Sie dann die Treiberplatine mit vier M2.5*8-Schrauben
 

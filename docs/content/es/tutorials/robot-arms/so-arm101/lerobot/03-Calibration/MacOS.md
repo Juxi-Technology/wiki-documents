@@ -46,7 +46,7 @@ lerobot-calibrate \
 ## Ver el archivo de configuración de calibración
 
 ```Shell
-sudo nano /Users/<你的用户名>/.cache/huggingface/lerobot/calibration/teleoperators/so101_leader/my_leader_arm.json
+sudo nano /Users/<usuario>/.cache/huggingface/lerobot/calibration/teleoperators/so101_leader/my_leader_arm.json
 ```
 
 ## Errores comunes

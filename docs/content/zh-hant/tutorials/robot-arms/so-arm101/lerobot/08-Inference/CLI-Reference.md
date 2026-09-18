@@ -34,7 +34,7 @@ description: "本頁說明模型推論的命令列用法與參數，包含新舊
 
 ## 關於可視化
 
-`--display_data=true` 會啟動 rerun.io 的可視化介面，同時在 `/Users/<你的用户名>/.cache/huggingface/lerobot/rollout_lerobot_my_dataset_a/images/observation.images.front/episode-000000` 目錄下儲存每一幀的圖片，比較佔空間，正式使用時可以設成 `--display_data=false`。
+`--display_data=true` 會啟動 rerun.io 的可視化介面，同時在 `/Users/<你的使用者名稱>/.cache/huggingface/lerobot/rollout_lerobot_my_dataset_a/images/observation.images.front/episode-000000` 目錄下儲存每一幀的圖片，比較佔空間，正式使用時可以設成 `--display_data=false`。
 
 ## 以抓橘子任務為例
 
@@ -47,7 +47,7 @@ lerobot-rollout  \
   --robot.port=/dev/tty.usbmodem5AAF2193061 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1280, height: 720, fps: 30, fourcc: "MJPG"}}" \
   --robot.id=my_follower_arm \
-  --policy.path=/Users/<你的用户名>/Downloads/7-lerobot/checkpoints/last/pretrained_model \
+  --policy.path=/Users/<你的使用者名稱>/Downloads/7-lerobot/checkpoints/last/pretrained_model \
   --task="Grab Oranges" \
   --duration=60 \
   --display_data=true
@@ -62,7 +62,7 @@ lerobot-rollout  \
   --robot.port=/dev/tty.usbmodem5AAF2193061 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1280, height: 720, fps: 30, fourcc: "MJPG"}}" \
   --robot.id=my_follower_arm \
-  --policy.path=/Users/<你的用户名>/Downloads/7-lerobot/checkpoints/last/pretrained_model \
+  --policy.path=/Users/<你的使用者名稱>/Downloads/7-lerobot/checkpoints/last/pretrained_model \
   --task="Grab Oranges" \
   --duration=60 \
   --display_data=false
@@ -77,7 +77,7 @@ lerobot-rollout  \
   --robot.port=/dev/tty.usbmodem5AAF2193061 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1280, height: 720, fps: 30, fourcc: "MJPG"}}" \
   --robot.id=my_follower_arm \
-  --policy.path=<用户名>/lerobot_my_model_a \
+  --policy.path=<你的使用者名稱>/lerobot_my_model_a \
   --task="Grab Oranges" \
   --duration=60 \
   --display_data=true
@@ -98,8 +98,8 @@ lerobot-rollout  \
   --robot.port=/dev/tty.usbmodem5AAF2193061 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1280, height: 720, fps: 30, fourcc: "MJPG"}}" \
   --robot.id=my_follower_arm \
-  --policy.path=/Users/<你的用户名>/Downloads/7-lerobot/checkpoints/last/pretrained_model \
-  --dataset.repo_id=<用户名>/rollout_lerobot_my_dataset_a \
+  --policy.path=/Users/<你的使用者名稱>/Downloads/7-lerobot/checkpoints/last/pretrained_model \
+  --dataset.repo_id=<你的使用者名稱>/rollout_lerobot_my_dataset_a \
   --dataset.num_episodes=10 \
   --dataset.single_task="Grab Oranges" \
   --display_data=false

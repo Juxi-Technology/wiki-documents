@@ -34,7 +34,7 @@ El `--robot.cameras` de todos los comandos de abajo usa `1280×720@30`, un valor
 
 ## Acerca de la visualización
 
-`--display_data=true` inicia la interfaz de visualización de rerun.io y, además, guarda la imagen de cada fotograma en el directorio `/Users/<你的用户名>/.cache/huggingface/lerobot/rollout_lerobot_my_dataset_a/images/observation.images.front/episode-000000`, lo que ocupa bastante espacio; en el uso normal puedes ajustarlo a `--display_data=false`.
+`--display_data=true` inicia la interfaz de visualización de rerun.io y, además, guarda la imagen de cada fotograma en el directorio `/Users/<usuario>/.cache/huggingface/lerobot/rollout_lerobot_my_dataset_a/images/observation.images.front/episode-000000`, lo que ocupa bastante espacio; en el uso normal puedes ajustarlo a `--display_data=false`.
 
 ## Tomemos como ejemplo la tarea de recoger naranjas
 
@@ -47,7 +47,7 @@ lerobot-rollout  \
   --robot.port=/dev/tty.usbmodem5AAF2193061 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1280, height: 720, fps: 30, fourcc: "MJPG"}}" \
   --robot.id=my_follower_arm \
-  --policy.path=/Users/<你的用户名>/Downloads/7-lerobot/checkpoints/last/pretrained_model \
+  --policy.path=/Users/<usuario>/Downloads/7-lerobot/checkpoints/last/pretrained_model \
   --task="Grab Oranges" \
   --duration=60 \
   --display_data=true
@@ -62,7 +62,7 @@ lerobot-rollout  \
   --robot.port=/dev/tty.usbmodem5AAF2193061 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1280, height: 720, fps: 30, fourcc: "MJPG"}}" \
   --robot.id=my_follower_arm \
-  --policy.path=/Users/<你的用户名>/Downloads/7-lerobot/checkpoints/last/pretrained_model \
+  --policy.path=/Users/<usuario>/Downloads/7-lerobot/checkpoints/last/pretrained_model \
   --task="Grab Oranges" \
   --duration=60 \
   --display_data=false
@@ -77,7 +77,7 @@ lerobot-rollout  \
   --robot.port=/dev/tty.usbmodem5AAF2193061 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1280, height: 720, fps: 30, fourcc: "MJPG"}}" \
   --robot.id=my_follower_arm \
-  --policy.path=<用户名>/lerobot_my_model_a \
+  --policy.path=<usuario>/lerobot_my_model_a \
   --task="Grab Oranges" \
   --duration=60 \
   --display_data=true
@@ -98,8 +98,8 @@ lerobot-rollout  \
   --robot.port=/dev/tty.usbmodem5AAF2193061 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1280, height: 720, fps: 30, fourcc: "MJPG"}}" \
   --robot.id=my_follower_arm \
-  --policy.path=/Users/<你的用户名>/Downloads/7-lerobot/checkpoints/last/pretrained_model \
-  --dataset.repo_id=<用户名>/rollout_lerobot_my_dataset_a \
+  --policy.path=/Users/<usuario>/Downloads/7-lerobot/checkpoints/last/pretrained_model \
+  --dataset.repo_id=<usuario>/rollout_lerobot_my_dataset_a \
   --dataset.num_episodes=10 \
   --dataset.single_task="Grab Oranges" \
   --display_data=false

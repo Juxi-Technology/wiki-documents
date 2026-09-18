@@ -21,7 +21,7 @@ lerobot-teleoperate --robot.type=so101_follower --robot.port=COM6 --robot.id=my_
 
 会打开rerun.io画面，实时显示各个舵机关节的轨迹，以及摄像头实时画面
 
-并保存图像至`C:\Users\用户\outputs\captured_images`目录
+并保存图像至`C:\Users\<你的Windows用户名>\outputs\captured_images`目录
 
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-05-Camera-Teleoperation-Windows/2.jpg)
 

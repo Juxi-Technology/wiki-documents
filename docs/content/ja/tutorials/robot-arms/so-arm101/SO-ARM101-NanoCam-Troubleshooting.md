@@ -31,8 +31,8 @@ description: "ESP32-NanoCam 版 SO-ARM101 ワイヤレス遠隔操作のトラ�
 ## コンパイルとツールチェーンの問題
 
 - **初回 `pio run` のダウンロードが遅い/止まる**(初回は espressif32 プラットフォーム、`toolchain-xtensa-esp32s3` ツールチェーン約 100 MB、Arduino フレームワーク約 200 MB を順にダウンロード):PlatformIO の残り時間表示は不正確で、しばらく止まったように見えた後に突然完了することがよくあります。5 分ほど待ち、パーセンテージが進むか確認してください;プロキシ/VPN を有効化(システムプロキシ経由)してもかまいません。
-- **ツールチェーンの手動ダウンロード**:ブラウザで `https://dl.espressif.com/dl/xtensa-esp32s3-elf-gcc8_4_0-esp-2021r2-patch5-win32.zip` をダウンロード(Linux は `-linux-amd64.tar.gz`)。解凍後にディレクトリ名を `toolchain-xtensa-esp32s3` に変更し、`C:\Users\<用户名>\.platformio\packages\` に配置して `pio run` を再実行;途中で Ctrl+C で中断しても環境は壊れず、再実行で続きからダウンロードされます。
-- **Windows で Git Bash から `pio` コマンドが見つからない**:PowerShell/CMD のターミナルに切り替えるか、`C:\Users\<用户名>\.platformio\penv\Scripts` を PATH に追加してください。
+- **ツールチェーンの手動ダウンロード**:ブラウザで `https://dl.espressif.com/dl/xtensa-esp32s3-elf-gcc8_4_0-esp-2021r2-patch5-win32.zip` をダウンロード(Linux は `-linux-amd64.tar.gz`)。解凍後にディレクトリ名を `toolchain-xtensa-esp32s3` に変更し、`C:\Users\<ユーザー名>\.platformio\packages\` に配置して `pio run` を再実行;途中で Ctrl+C で中断しても環境は壊れず、再実行で続きからダウンロードされます。
+- **Windows で Git Bash から `pio` コマンドが見つからない**:PowerShell/CMD のターミナルに切り替えるか、`C:\Users\<ユーザー名>\.platformio\penv\Scripts` を PATH に追加してください。
 
 ## カメラ専用トラブルシューティング
 

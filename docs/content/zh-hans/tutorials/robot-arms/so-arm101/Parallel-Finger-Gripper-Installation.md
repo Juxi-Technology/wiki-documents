@@ -9,7 +9,7 @@ description: "平行指夹爪安装教程:从拆后盖、装舵机做起,配合�
 
 [PincOpen装配体.step](/downloads/PincOpen装配体.step)
 
-**平行指夹爪安装步骤.mp4**（平行指夹爪安装步骤.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**平行指夹爪安装步骤.mp4**（平行指夹爪安装步骤.mp4, larger than the site's per-file size limit — request it from support@juxitech.com）
 
 ![8.png](../../../../../public/images/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation/1.jpg)
 

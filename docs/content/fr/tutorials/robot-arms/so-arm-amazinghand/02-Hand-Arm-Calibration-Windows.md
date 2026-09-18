@@ -49,7 +49,7 @@ lerobot-calibrate --teleop.type=so101_leader --teleop.port=<leader_arm_com> --te
 2. Poussez **chaque articulation l'une après l'autre jusqu'à sa butée maximale/minimale**, puis appuyez sur Entrée une fois terminé
 
 **Vérification** : le fichier de calibration est enregistré automatiquement dans
-`C:\Users\<username>.cache\huggingface\lerobot\calibration\teleoperators\so_leader\amazing_hand_leader.json`
+`C:\Users\<nom-utilisateur>.cache\huggingface\lerobot\calibration\teleoperators\so_leader\amazing_hand_leader.json`
 
 > **⚠️ Remarque 1 (la pince doit être calibrée)** : la plage du servomoteur de la pince n° 6 sert de référence de normalisation pour `gripper.pos` (0~100). La pince doit impérativement être poussée de l'ouverture complète à la fermeture complète et calibrée correctement, sinon le rapport d'ouverture/fermeture de la main sera ensuite faussé.
 
@@ -74,7 +74,7 @@ lerobot-calibrate --robot.type=so101_amazing_hand --robot.port=<follower_arm_com
 2. Faites parcourir à chaque articulation toute sa course, puis appuyez sur Entrée
 
 **Vérification** : le fichier de calibration est enregistré dans
-`C:\Users\<username>.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\amazing_hand_follower.json`
+`C:\Users\<nom-utilisateur>.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\amazing_hand_follower.json`
 
 > **⚠️ Remarque 1 (couple de la main activé automatiquement)** : lors de la connexion, cette commande **active automatiquement le couple des 8 servomoteurs de la main** (le journal affiche `enabling AmazingHand torque`) ; à la fin de la calibration, la main s'ouvre, ce qui est normal.
 
@@ -107,7 +107,7 @@ lerobot-calibrate-amazing-hand --hand_port <hand_com> --leader_port <leader_arm_
 6. Fermez la fenêtre (le couple de la main est automatiquement relâché)
 
 **Vérification** : les angles et le mappage de la pince sont enregistrés dans
-`C:\Users\<username>.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\hand_angles.json`
+`C:\Users\<nom-utilisateur>.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\hand_angles.json`
 
 > **⚠️ Remarque 1 (calibration obligatoire)** : **cette étape doit être effectuée pour chaque nouvel ordinateur / chaque main**. Les angles du config sont les valeurs par défaut génériques officielles d'AmazingHand et ne servent que de secours ; si `hand_angles.json` existe, vos valeurs mesurées sont chargées en priorité. Ne pas calibrer peut entraîner des erreurs de direction/plage d'ouverture-fermeture.
 

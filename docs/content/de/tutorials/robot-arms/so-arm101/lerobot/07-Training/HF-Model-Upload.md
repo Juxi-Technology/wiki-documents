@@ -11,8 +11,8 @@ description: "Beschreibt beide Wege, ein trainiertes Modell zu Hugging Face hoch
 
 Dieser Beitrag verwendet die Platzhalter-Schreibweise aus den vorherigen Kapiteln. Bitte ersetzen Sie sie durch Ihre eigenen Angaben und **entfernen Sie dabei auch die spitzen Klammern**:
 
-- `<用户名>`: Ihr HuggingFace-Kontoname
-- `<你的用户名>`: der Systembenutzername Ihres Computers; mit `whoami` im Terminal können Sie ihn anzeigen
+- `<Benutzername>`: Ihr HuggingFace-Kontoname
+- `<Benutzername>`: der Systembenutzername Ihres Computers; mit `whoami` im Terminal können Sie ihn anzeigen
 
 ## Methode 1: Automatisches Hochladen während des Trainings
 
@@ -20,7 +20,7 @@ Fügen Sie dem Trainingsbefehl zwei Parameterzeilen hinzu, dann wird das Modell 
 
 ```Shell
   --policy.push_to_hub=true \
-  --policy.repo_id=<用户名>/shake_act_a \
+  --policy.repo_id=<Benutzername>/shake_act_a \
 ```
 
 **Diese beiden Zeilen müssen paarweise auftreten; wenn Sie nur `push_to_hub=true` angeben, tritt ein Fehler auf.** `repo_id` ist der Repository-Name, den Sie diesem Modell geben, in der Form `Kontoname/Modellname`. Existiert das Repository nicht, legt LeRobot es automatisch an.
@@ -29,7 +29,7 @@ Zum Beispiel sieht der vollständige Befehl für ACT dann so aus:
 
 ```Shell
 lerobot-train \
-  --dataset.repo_id=<用户名>/lerobot_my_dataset_shake_hands \
+  --dataset.repo_id=<Benutzername>/lerobot_my_dataset_shake_hands \
   --dataset.root=~/lerobot_my_dataset_shake_hands \
   --dataset.revision=v0.1.0 \
   --dataset.streaming=false \
@@ -40,12 +40,12 @@ lerobot-train \
   --wandb.enable=true \
   --wandb.project=Lerobot_my_Project \
   --policy.push_to_hub=true \
-  --policy.repo_id=<用户名>/shake_act_a \
+  --policy.repo_id=<Benutzername>/shake_act_a \
   --steps=20000 \
   --batch_size=8
 ```
 
-Wie im vorherigen Abschnitt beschrieben, erscheint das Modell nach Abschluss dieses Trainingslaufs unter `https://huggingface.co/<用户名>/shake_act_a`.
+Wie im vorherigen Abschnitt beschrieben, erscheint das Modell nach Abschluss dieses Trainingslaufs unter `https://huggingface.co/<Benutzername>/shake_act_a`.
 
 ### Auch die Zwischen-Checkpoints mit hochladen
 
@@ -85,7 +85,7 @@ hf auth whoami
 Angenommen, das Ausgabeverzeichnis des ACT-Trainings ist `~/output_lerobot_train/shake/act/`:
 
 ```Shell
-export HF_USER=<用户名>
+export HF_USER=<Benutzername>
 
 hf upload ${HF_USER}/shake_act_a \
   ~/output_lerobot_train/shake/act/checkpoints/last/pretrained_model
@@ -112,7 +112,7 @@ Wenn das Modell nicht groß ist und Sie keine Befehle eingeben möchten, können
 Nach dem Hochladen des Modells genügt es, beim Deployment `--policy.path` darauf zu richten; ein vorheriges Herunterladen auf den lokalen Rechner ist nicht erforderlich:
 
 ```Shell
-  --policy.path=<用户名>/shake_act_a \
+  --policy.path=<Benutzername>/shake_act_a \
 ```
 
 Dies ist bequemer als ein lokaler Pfad; bei einem Rechnerwechsel oder wenn jemand Ihren Kontonamen erhält, kann das Modell direkt verwendet werden. Beachten Sie, dass zum Abrufen des Modells von HuggingFace eine Verbindung zu dessen Server erforderlich ist; in einer chinesischen Netzwerkumgebung sollte zuerst gemäß [Hugging Face-Konto registrieren (optional)](/de/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account) ein Mirror eingerichtet werden.

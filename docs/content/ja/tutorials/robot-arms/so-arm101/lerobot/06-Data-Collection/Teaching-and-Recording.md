@@ -26,7 +26,7 @@ description: "プレースホルダーの置き換えからカメラ1台と2台�
 ## 以前から存在する同名のデータセットを削除する（ある場合）
 
 ```Shell
-sudo rm -rf /Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_a
+sudo rm -rf /Users/<ユーザー名>/.cache/huggingface/lerobot/<ユーザー名>/lerobot_my_dataset_a
 ```
 
 ## カメラ1台でデータセットを収集する-Macコンピューター
@@ -41,7 +41,7 @@ lerobot-record \
     --teleop.port=/dev/tty.usbmodem5AAF2194741 \
     --teleop.id=my_leader_arm \
     --display_data=true \
-    --dataset.repo_id=<用户名>/lerobot_my_dataset_a \
+    --dataset.repo_id=<ユーザー名>/lerobot_my_dataset_a \
     --dataset.num_episodes=40 \
     --dataset.single_task="Grab Oranges" \
     --dataset.push_to_hub=false \
@@ -61,7 +61,7 @@ lerobot-record \
     --teleop.port=/dev/tty.usbmodem5AAF2194741 \
     --teleop.id=my_leader_arm \
     --display_data=true \
-    --dataset.repo_id=<用户名>/lerobot_my_dataset_a \
+    --dataset.repo_id=<ユーザー名>/lerobot_my_dataset_a \
     --dataset.num_episodes=40 \
     --dataset.single_task="Grab Oranges" \
     --dataset.push_to_hub=true \
@@ -83,7 +83,7 @@ ESCで即座に停止し、動画をエンコードして、データセット�
 ## 収集完了後、データセットの保存ディレクトリ
 
 ```Shell
-/Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_a
+/Users/<ユーザー名>/.cache/huggingface/lerobot/<ユーザー名>/lerobot_my_dataset_a
 ```
 
 ## 握手
@@ -98,7 +98,7 @@ lerobot-record \
     --teleop.port=/dev/tty.usbmodem5AAF2194741 \
     --teleop.id=my_leader_arm \
     --display_data=true \
-    --dataset.repo_id=<用户名>/lerobot_my_dataset_shake_hands \
+    --dataset.repo_id=<ユーザー名>/lerobot_my_dataset_shake_hands \
     --dataset.num_episodes=30 \
     --dataset.single_task="Shanke Hands" \
     --dataset.push_to_hub=false \
@@ -109,7 +109,7 @@ lerobot-record \
 収集完了後、握手のデータセットは以下に保存されます：
 
 ```Shell
-/Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_shake_hands
+/Users/<ユーザー名>/.cache/huggingface/lerobot/<ユーザー名>/lerobot_my_dataset_shake_hands
 ```
 
 ## チュートリアルで使用する2つのデータセットについて

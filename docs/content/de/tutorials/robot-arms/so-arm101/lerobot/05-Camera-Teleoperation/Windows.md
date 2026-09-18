@@ -21,7 +21,7 @@ lerobot-teleoperate --robot.type=so101_follower --robot.port=COM6 --robot.id=my_
 
 Es öffnet sich das Fenster von rerun.io, das in Echtzeit die Trajektorien der einzelnen Servogelenke sowie das Live-Bild der Kamera anzeigt
 
-und speichert Bilder im Verzeichnis `C:\Users\用户\outputs\captured_images`
+und speichert Bilder im Verzeichnis `C:\Users\<Windows-Benutzername>\outputs\captured_images`
 
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-05-Camera-Teleoperation-Windows/2.jpg)
 

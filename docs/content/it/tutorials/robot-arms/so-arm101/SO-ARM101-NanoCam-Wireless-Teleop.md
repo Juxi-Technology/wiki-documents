@@ -131,7 +131,7 @@ Tra ESP32-NanoCam e il braccio follower il collegamento **passa attraverso i pin
 pip install platformio
 ```
 
-> Se sotto Windows il comando `pio` non viene trovato in Git Bash, usare un terminale PowerShell/CMD oppure aggiungere `C:\Users\<用户名>\.platformio\penv\Scripts` al PATH.
+> Se sotto Windows il comando `pio` non viene trovato in Git Bash, usare un terminale PowerShell/CMD oppure aggiungere `C:\Users\<nome-utente>\.platformio\penv\Scripts` al PATH.
 
 ### 2. Prima compilazione (download automatico della toolchain)
 
@@ -152,7 +152,7 @@ Se il download è lento o si blocca:
 
 - La stima del tempo rimanente di PlatformIO non è precisa: spesso resta ferma a lungo e poi salta di colpo; attendere 5 minuti osservando se la percentuale avanza;
 - Attivare un proxy/VPN (tramite il proxy di sistema);
-- Scaricare manualmente la toolchain: dal browser scaricare `https://dl.espressif.com/dl/xtensa-esp32s3-elf-gcc8_4_0-esp-2021r2-patch5-win32.zip` (su Linux il corrispondente `-linux-amd64.tar.gz`), dopo l'estrazione rinominare la directory in `toolchain-xtensa-esp32s3`, copiarla in `C:\Users\<用户名>\.platformio\packages\` e rieseguire `pio run`;
+- Scaricare manualmente la toolchain: dal browser scaricare `https://dl.espressif.com/dl/xtensa-esp32s3-elf-gcc8_4_0-esp-2021r2-patch5-win32.zip` (su Linux il corrispondente `-linux-amd64.tar.gz`), dopo l'estrazione rinominare la directory in `toolchain-xtensa-esp32s3`, copiarla in `C:\Users\<nome-utente>\.platformio\packages\` e rieseguire `pio run`;
 - Un'interruzione con Ctrl+C a metà non danneggia l'ambiente: rieseguendo, il download riprende da dove era rimasto.
 
 ### 3. Installare l'ambiente di esecuzione Ubuntu

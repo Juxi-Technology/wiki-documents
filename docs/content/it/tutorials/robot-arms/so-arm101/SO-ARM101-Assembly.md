@@ -116,7 +116,7 @@ Il video seguente mostra la sequenza dei passaggi per impostare l'ID dei motori.
 
 Utilizza il software host per servomotori Feetech per impostare gli ID dei servomotori e calibrare la posizione centrale; l'impostazione degli ID va da 1 a 6!
 
-**Impostazione ID dei servomotori del braccio robotico-Sistema Windows.mp4**（机械臂舵机设置ID-Windows系统.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**Impostazione ID dei servomotori del braccio robotico-Sistema Windows.mp4**（机械臂舵机设置ID-Windows系统.mp4, supera il limite di dimensione per file del sito — richiedilo a support@juxitech.com）
 
 ### Sistema Linux/Ubuntu e computer Mac
 
@@ -208,13 +208,13 @@ lerobot-setup-motors \
     --teleop.port=/dev/ttyACM0
 ```
 
-**Impostazione ID dei servomotori del braccio robotico-Sistema Linux.mp4**（机械臂舵机设置ID-Linux系统.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**Impostazione ID dei servomotori del braccio robotico-Sistema Linux.mp4**（机械臂舵机设置ID-Linux系统.mp4, supera il limite di dimensione per file del sito — richiedilo a support@juxitech.com）
 
 ## Passo 2: assemblaggio
 
 - I passaggi di assemblaggio del braccio follower sono sostanzialmente identici a quelli del braccio leader. L'unica differenza è che dopo il passaggio 12 il modo di installare l'effettore finale (pinza e impugnatura) è diverso.
 
-**SO-ARM101 Tutorial di assemblaggio del braccio robotico.mp4**（SO-ARM101机械臂组装教程.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**SO-ARM101 Tutorial di assemblaggio del braccio robotico.mp4**（SO-ARM101机械臂组装教程.mp4, supera il limite di dimensione per file del sito — richiedilo a support@juxitech.com）
 
 Installazione della scheda driver dei servomotori: installa prima i 4 distanziali in rame, poi fissa la scheda driver con quattro viti M2.5*8
 

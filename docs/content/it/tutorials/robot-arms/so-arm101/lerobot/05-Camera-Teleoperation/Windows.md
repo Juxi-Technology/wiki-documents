@@ -21,7 +21,7 @@ lerobot-teleoperate --robot.type=so101_follower --robot.port=COM6 --robot.id=my_
 
 Si aprirà la schermata rerun.io, che mostra in tempo reale le traiettorie di ciascuna articolazione dei servomotori e l'immagine in tempo reale della telecamera
 
-e salva le immagini nella directory `C:\Users\用户\outputs\captured_images`
+e salva le immagini nella directory `C:\Users\<nome-utente-Windows>\outputs\captured_images`
 
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-05-Camera-Teleoperation-Windows/2.jpg)
 

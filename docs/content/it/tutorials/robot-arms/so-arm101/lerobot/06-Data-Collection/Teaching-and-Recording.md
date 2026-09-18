@@ -11,13 +11,13 @@ Il tutorial descrive passaggi generici, quindi a partire da questo punto nei com
 
 | Segnaposto | Cosa rappresenta | Come sostituirlo |
 |---|---|---|
-| `<你的用户名>` | il nome utente di sistema del tuo computer, cioè il nome della directory home | digitando `whoami` nel terminale puoi vederlo |
-| `<用户名>` | il nome del tuo account HuggingFace | dopo aver effettuato l'accesso a HuggingFace, guarda il nome dell'account accanto all'avatar in alto a destra |
+| `<nome-utente>` | il nome utente di sistema del tuo computer, cioè il nome della directory home | digitando `whoami` nel terminale puoi vederlo |
+| `<nome-utente>` | il nome del tuo account HuggingFace | dopo aver effettuato l'accesso a HuggingFace, guarda il nome dell'account accanto all'avatar in alto a destra |
 
 Un esempio. Supponiamo che l'output di `whoami` nel terminale sia `zhangsan` e che anche il nome del tuo account HuggingFace sia `zhangsan`, allora
 
-- `/Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/` dovrebbe essere scritto come `/Users/zhangsan/.cache/huggingface/lerobot/zhangsan/`
-- `<用户名>/lerobot_my_dataset_a` dovrebbe essere scritto come `zhangsan/lerobot_my_dataset_a`
+- `/Users/<nome-utente>/.cache/huggingface/lerobot/<nome-utente>/` dovrebbe essere scritto come `/Users/zhangsan/.cache/huggingface/lerobot/zhangsan/`
+- `<nome-utente>/lerobot_my_dataset_a` dovrebbe essere scritto come `zhangsan/lerobot_my_dataset_a`
 
 > I due segnaposto presenti in tutti i comandi successivi vanno sostituiti allo stesso modo.
 
@@ -26,7 +26,7 @@ Un esempio. Supponiamo che l'output di `whoami` nel terminale sia `zhangsan` e c
 ## Eliminare il dataset con lo stesso nome già esistente (se presente)
 
 ```Shell
-sudo rm -rf /Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_a
+sudo rm -rf /Users/<nome-utente>/.cache/huggingface/lerobot/<nome-utente>/lerobot_my_dataset_a
 ```
 
 ## Una telecamera, raccolta del dataset-Computer Mac
@@ -41,7 +41,7 @@ lerobot-record \
     --teleop.port=/dev/tty.usbmodem5AAF2194741 \
     --teleop.id=my_leader_arm \
     --display_data=true \
-    --dataset.repo_id=<用户名>/lerobot_my_dataset_a \
+    --dataset.repo_id=<nome-utente>/lerobot_my_dataset_a \
     --dataset.num_episodes=40 \
     --dataset.single_task="Grab Oranges" \
     --dataset.push_to_hub=false \
@@ -61,7 +61,7 @@ lerobot-record \
     --teleop.port=/dev/tty.usbmodem5AAF2194741 \
     --teleop.id=my_leader_arm \
     --display_data=true \
-    --dataset.repo_id=<用户名>/lerobot_my_dataset_a \
+    --dataset.repo_id=<nome-utente>/lerobot_my_dataset_a \
     --dataset.num_episodes=40 \
     --dataset.single_task="Grab Oranges" \
     --dataset.push_to_hub=true \
@@ -83,7 +83,7 @@ ESC, arresta immediatamente, codifica il video e carica il dataset.
 ## Raccolta completata: directory di salvataggio del dataset
 
 ```Shell
-/Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_a
+/Users/<nome-utente>/.cache/huggingface/lerobot/<nome-utente>/lerobot_my_dataset_a
 ```
 
 ## Stretta di mano
@@ -98,7 +98,7 @@ lerobot-record \
     --teleop.port=/dev/tty.usbmodem5AAF2194741 \
     --teleop.id=my_leader_arm \
     --display_data=true \
-    --dataset.repo_id=<用户名>/lerobot_my_dataset_shake_hands \
+    --dataset.repo_id=<nome-utente>/lerobot_my_dataset_shake_hands \
     --dataset.num_episodes=30 \
     --dataset.single_task="Shanke Hands" \
     --dataset.push_to_hub=false \
@@ -109,7 +109,7 @@ lerobot-record \
 Al termine della raccolta, il dataset della stretta di mano verrà salvato in:
 
 ```Shell
-/Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_shake_hands
+/Users/<nome-utente>/.cache/huggingface/lerobot/<nome-utente>/lerobot_my_dataset_shake_hands
 ```
 
 ## Informazioni sui due dataset usati nel tutorial
@@ -131,7 +131,7 @@ In altre parole, **è il dataset della stretta di mano l'esempio principale dell
 
 ## Dopo aver completato la raccolta
 
-I dati vengono salvati per impostazione predefinita in `~/.cache/huggingface/lerobot/<用户名>/`. Di seguito:
+I dati vengono salvati per impostazione predefinita in `~/.cache/huggingface/lerobot/<nome-utente>/`. Di seguito:
 
 1. Se vuoi eseguire il backup del dataset sul cloud, vedi [Caricare il dataset su HuggingFace (opzionale)](/it/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload)
 2. Per prepararti all'addestramento, continua con [Settimo passo: addestrare il modello](/it/tutorials/robot-arms/so-arm101/lerobot/07-Training/Cloud-GPU); quel capitolo ti guiderà prima a caricare i dati e a preparare l'ambiente sulla piattaforma GPU cloud

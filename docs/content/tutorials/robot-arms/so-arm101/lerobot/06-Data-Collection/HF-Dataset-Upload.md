@@ -18,7 +18,7 @@ Set `push_to_hub=true` when collecting the dataset, and it will be uploaded auto
 Set `push_to_hub=false` when collecting the dataset, and upload it manually once collection is complete
 
 ```Shell
-hf upload <用户名>/lerobot_my_dataset_a /Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_a / --repo-type=dataset
+hf upload <username>/lerobot_my_dataset_a /Users/<username>/.cache/huggingface/lerobot/<username>/lerobot_my_dataset_a / --repo-type=dataset
 ```
 
 Whether automatic or manual, the upload speed is very slow (one hundred KB per second)
@@ -60,11 +60,11 @@ api = HfApi()
 
 api.upload_folder(
     folder_path="~/lerobot_my_dataset_a",
-    repo_id="<用户名>/lerobot_my_dataset_a",
+    repo_id="<username>/lerobot_my_dataset_a",
     repo_type="dataset"
 )
 
-api.create_tag("<用户名>/lerobot_my_dataset_a", tag="v0.4.0", repo_type="dataset")
+api.create_tag("<username>/lerobot_my_dataset_a", tag="v0.4.0", repo_type="dataset")
 ```
 
 Run the file
@@ -78,7 +78,7 @@ python upload_dataset.py
 - Another upload method (not recommended)
 
 ```Shell
-hf upload <用户名>/lerobot_my_dataset_a lerobot_my_dataset_a / --repo-type=dataset
+hf upload <username>/lerobot_my_dataset_a lerobot_my_dataset_a / --repo-type=dataset
 ```
 
 ![image.png](../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-06-Data-Collection-HF-Dataset-Upload/4.png)

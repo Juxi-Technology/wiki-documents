@@ -18,7 +18,7 @@ description: "本頁比較上傳數據集到 Hugging Face 的兩種方式，說�
 在採集數據集時設定`push_to_hub=false`，採集完畢後手動上傳
 
 ```Shell
-hf upload <用户名>/lerobot_my_dataset_a /Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_a / --repo-type=dataset
+hf upload <你的使用者名稱>/lerobot_my_dataset_a /Users/<你的使用者名稱>/.cache/huggingface/lerobot/<你的使用者名稱>/lerobot_my_dataset_a / --repo-type=dataset
 ```
 
 無論自動上傳還是手動上傳，上傳速度都很慢（每秒鐘一百KB）
@@ -60,11 +60,11 @@ api = HfApi()
 
 api.upload_folder(
     folder_path="~/lerobot_my_dataset_a",
-    repo_id="<用户名>/lerobot_my_dataset_a",
+    repo_id="<你的使用者名稱>/lerobot_my_dataset_a",
     repo_type="dataset"
 )
 
-api.create_tag("<用户名>/lerobot_my_dataset_a", tag="v0.4.0", repo_type="dataset")
+api.create_tag("<你的使用者名稱>/lerobot_my_dataset_a", tag="v0.4.0", repo_type="dataset")
 ```
 
 運行檔案
@@ -78,7 +78,7 @@ python upload_dataset.py
 - 另一種上傳方法（不推薦）
 
 ```Shell
-hf upload <用户名>/lerobot_my_dataset_a lerobot_my_dataset_a / --repo-type=dataset
+hf upload <你的使用者名稱>/lerobot_my_dataset_a lerobot_my_dataset_a / --repo-type=dataset
 ```
 
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-06-Data-Collection-HF-Dataset-Upload/4.png)

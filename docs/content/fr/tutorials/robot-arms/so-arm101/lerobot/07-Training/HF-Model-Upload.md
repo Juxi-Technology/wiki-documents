@@ -11,8 +11,8 @@ description: "Téléversez le modèle entraîné sur HuggingFace, automatiquemen
 
 Cet article reprend la notation avec espaces réservés des chapitres précédents ; remplacez-les par vos propres informations, et lors du remplacement, **supprimez aussi les chevrons** :
 
-- `<用户名>` : le nom de votre compte HuggingFace
-- `<你的用户名>` : le nom d'utilisateur système de votre ordinateur ; vous pouvez le consulter en saisissant `whoami` dans le terminal
+- `<nom-utilisateur>` : le nom de votre compte HuggingFace
+- `<nom-utilisateur>` : le nom d'utilisateur système de votre ordinateur ; vous pouvez le consulter en saisissant `whoami` dans le terminal
 
 ## Méthode 1 : téléversement automatique pendant l'entraînement
 
@@ -20,7 +20,7 @@ Ajoutez deux lignes de paramètres à la commande d'entraînement, et le modèle
 
 ```Shell
   --policy.push_to_hub=true \
-  --policy.repo_id=<用户名>/shake_act_a \
+  --policy.repo_id=<nom-utilisateur>/shake_act_a \
 ```
 
 **Ces deux lignes doivent apparaître par paire ; si vous n'écrivez que `push_to_hub=true`, une erreur sera signalée.** `repo_id` correspond au nom du dépôt que vous donnez à ce modèle, de la forme `nom_de_compte/nom_du_modèle` ; si le dépôt n'existe pas, LeRobot le créera automatiquement.
@@ -29,7 +29,7 @@ Par exemple, la commande complète pour ACT devient :
 
 ```Shell
 lerobot-train \
-  --dataset.repo_id=<用户名>/lerobot_my_dataset_shake_hands \
+  --dataset.repo_id=<nom-utilisateur>/lerobot_my_dataset_shake_hands \
   --dataset.root=~/lerobot_my_dataset_shake_hands \
   --dataset.revision=v0.1.0 \
   --dataset.streaming=false \
@@ -40,12 +40,12 @@ lerobot-train \
   --wandb.enable=true \
   --wandb.project=Lerobot_my_Project \
   --policy.push_to_hub=true \
-  --policy.repo_id=<用户名>/shake_act_a \
+  --policy.repo_id=<nom-utilisateur>/shake_act_a \
   --steps=20000 \
   --batch_size=8
 ```
 
-Selon les explications de la section précédente, une fois cette version de l'entraînement terminée, le modèle apparaîtra à l'adresse `https://huggingface.co/<用户名>/shake_act_a`.
+Selon les explications de la section précédente, une fois cette version de l'entraînement terminée, le modèle apparaîtra à l'adresse `https://huggingface.co/<nom-utilisateur>/shake_act_a`.
 
 ### Téléverser aussi les checkpoints intermédiaires
 
@@ -85,7 +85,7 @@ hf auth whoami
 Supposons que le répertoire de sortie de l'entraînement ACT soit `~/output_lerobot_train/shake/act/` :
 
 ```Shell
-export HF_USER=<用户名>
+export HF_USER=<nom-utilisateur>
 
 hf upload ${HF_USER}/shake_act_a \
   ~/output_lerobot_train/shake/act/checkpoints/last/pretrained_model
@@ -112,7 +112,7 @@ Si le modèle n'est pas volumineux et que vous ne voulez pas taper de commandes,
 Une fois le modèle téléversé, il suffit de pointer `--policy.path` vers celui-ci lors du déploiement ; nul besoin de le télécharger d'abord en local :
 
 ```Shell
-  --policy.path=<用户名>/shake_act_a \
+  --policy.path=<nom-utilisateur>/shake_act_a \
 ```
 
 C'est plus pratique que de pointer vers un chemin local : en changeant d'ordinateur, ou si quelqu'un d'autre connaît votre nom de compte, il peut l'utiliser directement. Notez que pour récupérer un modèle depuis HuggingFace, il faut pouvoir se connecter à ses serveurs ; dans un environnement réseau en Chine, il est recommandé de configurer d'abord le miroir en suivant [Créer un compte Hugging Face (facultatif)](/fr/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account).

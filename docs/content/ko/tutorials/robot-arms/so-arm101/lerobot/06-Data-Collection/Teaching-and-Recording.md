@@ -11,13 +11,13 @@ description: "시연 데이터셋 수집 페이지로, 자리 표시자 교체�
 
 | 자리 표시자 | 나타내는 것 | 교체 방법 |
 |---|---|---|
-| `<你的用户名>` | 컴퓨터의 시스템 사용자 이름, 즉 홈 디렉터리 이름 | 터미널에 `whoami`를 입력하면 확인할 수 있습니다 |
-| `<用户名>` | HuggingFace 계정 이름 | HuggingFace 로그인 후, 오른쪽 상단 프로필 옆의 계정 이름을 확인 |
+| `<사용자명>` | 컴퓨터의 시스템 사용자 이름, 즉 홈 디렉터리 이름 | 터미널에 `whoami`를 입력하면 확인할 수 있습니다 |
+| `<사용자명>` | HuggingFace 계정 이름 | HuggingFace 로그인 후, 오른쪽 상단 프로필 옆의 계정 이름을 확인 |
 
 예를 들어 봅시다. 터미널의 `whoami` 출력이 `zhangsan`이고, HuggingFace 계정 이름도 `zhangsan`이라면,
 
-- `/Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/` 은 `/Users/zhangsan/.cache/huggingface/lerobot/zhangsan/` 로 써야 합니다
-- `<用户名>/lerobot_my_dataset_a` 는 `zhangsan/lerobot_my_dataset_a` 로 써야 합니다
+- `/Users/<사용자명>/.cache/huggingface/lerobot/<사용자명>/` 은 `/Users/zhangsan/.cache/huggingface/lerobot/zhangsan/` 로 써야 합니다
+- `<사용자명>/lerobot_my_dataset_a` 는 `zhangsan/lerobot_my_dataset_a` 로 써야 합니다
 
 > 이후 모든 명령에 나오는 이 두 자리 표시자도 같은 방식으로 교체합니다.
 
@@ -26,7 +26,7 @@ description: "시연 데이터셋 수집 페이지로, 자리 표시자 교체�
 ## 이전에 이미 있던 같은 이름의 데이터셋 삭제(있는 경우)
 
 ```Shell
-sudo rm -rf /Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_a
+sudo rm -rf /Users/<사용자명>/.cache/huggingface/lerobot/<사용자명>/lerobot_my_dataset_a
 ```
 
 ## 카메라 1대, 데이터셋 수집-Mac 컴퓨터
@@ -41,7 +41,7 @@ lerobot-record \
     --teleop.port=/dev/tty.usbmodem5AAF2194741 \
     --teleop.id=my_leader_arm \
     --display_data=true \
-    --dataset.repo_id=<用户名>/lerobot_my_dataset_a \
+    --dataset.repo_id=<사용자명>/lerobot_my_dataset_a \
     --dataset.num_episodes=40 \
     --dataset.single_task="Grab Oranges" \
     --dataset.push_to_hub=false \
@@ -61,7 +61,7 @@ lerobot-record \
     --teleop.port=/dev/tty.usbmodem5AAF2194741 \
     --teleop.id=my_leader_arm \
     --display_data=true \
-    --dataset.repo_id=<用户名>/lerobot_my_dataset_a \
+    --dataset.repo_id=<사용자명>/lerobot_my_dataset_a \
     --dataset.num_episodes=40 \
     --dataset.single_task="Grab Oranges" \
     --dataset.push_to_hub=true \
@@ -83,7 +83,7 @@ ESC, 즉시 중지하고, 영상을 인코딩한 뒤 데이터셋을 업로드�
 ## 수집 완료, 데이터셋 저장 디렉터리
 
 ```Shell
-/Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_a
+/Users/<사용자명>/.cache/huggingface/lerobot/<사용자명>/lerobot_my_dataset_a
 ```
 
 ## 악수
@@ -98,7 +98,7 @@ lerobot-record \
     --teleop.port=/dev/tty.usbmodem5AAF2194741 \
     --teleop.id=my_leader_arm \
     --display_data=true \
-    --dataset.repo_id=<用户名>/lerobot_my_dataset_shake_hands \
+    --dataset.repo_id=<사용자명>/lerobot_my_dataset_shake_hands \
     --dataset.num_episodes=30 \
     --dataset.single_task="Shanke Hands" \
     --dataset.push_to_hub=false \
@@ -109,7 +109,7 @@ lerobot-record \
 수집이 완료되면, 악수 데이터셋은 다음 위치에 저장됩니다:
 
 ```Shell
-/Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_shake_hands
+/Users/<사용자명>/.cache/huggingface/lerobot/<사용자명>/lerobot_my_dataset_shake_hands
 ```
 
 ## 튜토리얼에서 사용하는 두 개의 데이터셋에 대하여
@@ -131,7 +131,7 @@ lerobot-record \
 
 ## 수집 완료 후
 
-데이터는 기본적으로 `~/.cache/huggingface/lerobot/<用户名>/` 아래에 저장됩니다. 다음으로:
+데이터는 기본적으로 `~/.cache/huggingface/lerobot/<사용자명>/` 아래에 저장됩니다. 다음으로:
 
 1. 데이터셋을 클라우드에 백업하려면, [HuggingFace에 데이터셋 업로드(선택 사항)](/ko/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload)를 참고하세요
 2. 학습을 시작할 준비가 되면, [7단계: 모델 학습](/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Cloud-GPU)을 이어서 보세요. 그 글에서는 먼저 클라우드 GPU 플랫폼에 데이터를 올리고 환경을 설치하는 방법을 안내합니다

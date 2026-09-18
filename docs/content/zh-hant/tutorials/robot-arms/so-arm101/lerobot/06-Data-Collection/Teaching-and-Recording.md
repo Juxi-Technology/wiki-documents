@@ -11,13 +11,13 @@ description: "本頁說明示教採集數據集的完整流程，包含佔位符
 
 | 佔位符 | 它代表什麼 | 怎麼替換 |
 |---|---|---|
-| `<你的用户名>` | 你電腦的系統使用者名稱，也就是家目錄的名稱 | 在終端裡輸入 `whoami` 就能看到 |
-| `<用户名>` | 你的 HuggingFace 賬號名 | 登錄 HuggingFace 後，看右上角頭像旁的賬號名 |
+| `<你的使用者名稱>` | 你電腦的系統使用者名稱，也就是家目錄的名稱 | 在終端裡輸入 `whoami` 就能看到 |
+| `<你的使用者名稱>` | 你的 HuggingFace 賬號名 | 登錄 HuggingFace 後，看右上角頭像旁的賬號名 |
 
 舉個例子。假設終端的 `whoami` 輸出是 `zhangsan`，你的 HuggingFace 賬號名也是 `zhangsan`，那麼
 
-- `/Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/` 就應該寫成 `/Users/zhangsan/.cache/huggingface/lerobot/zhangsan/`
-- `<用户名>/lerobot_my_dataset_a` 就應該寫成 `zhangsan/lerobot_my_dataset_a`
+- `/Users/<你的使用者名稱>/.cache/huggingface/lerobot/<你的使用者名稱>/` 就應該寫成 `/Users/zhangsan/.cache/huggingface/lerobot/zhangsan/`
+- `<你的使用者名稱>/lerobot_my_dataset_a` 就應該寫成 `zhangsan/lerobot_my_dataset_a`
 
 > 後面所有命令裡的這兩個佔位符，也按同樣的方式替換。
 
@@ -26,7 +26,7 @@ description: "本頁說明示教採集數據集的完整流程，包含佔位符
 ## 刪除之前已經有的同名數據集（如果有）
 
 ```Shell
-sudo rm -rf /Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_a
+sudo rm -rf /Users/<你的使用者名稱>/.cache/huggingface/lerobot/<你的使用者名稱>/lerobot_my_dataset_a
 ```
 
 ## 一個攝像頭，採集數據集-Mac電腦
@@ -41,7 +41,7 @@ lerobot-record \
     --teleop.port=/dev/tty.usbmodem5AAF2194741 \
     --teleop.id=my_leader_arm \
     --display_data=true \
-    --dataset.repo_id=<用户名>/lerobot_my_dataset_a \
+    --dataset.repo_id=<你的使用者名稱>/lerobot_my_dataset_a \
     --dataset.num_episodes=40 \
     --dataset.single_task="Grab Oranges" \
     --dataset.push_to_hub=false \
@@ -61,7 +61,7 @@ lerobot-record \
     --teleop.port=/dev/tty.usbmodem5AAF2194741 \
     --teleop.id=my_leader_arm \
     --display_data=true \
-    --dataset.repo_id=<用户名>/lerobot_my_dataset_a \
+    --dataset.repo_id=<你的使用者名稱>/lerobot_my_dataset_a \
     --dataset.num_episodes=40 \
     --dataset.single_task="Grab Oranges" \
     --dataset.push_to_hub=true \
@@ -83,7 +83,7 @@ ESC，立即停止，編碼影片，並上傳數據集。
 ## 採集完畢，數據集儲存目錄
 
 ```Shell
-/Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_a
+/Users/<你的使用者名稱>/.cache/huggingface/lerobot/<你的使用者名稱>/lerobot_my_dataset_a
 ```
 
 ## 握手
@@ -98,7 +98,7 @@ lerobot-record \
     --teleop.port=/dev/tty.usbmodem5AAF2194741 \
     --teleop.id=my_leader_arm \
     --display_data=true \
-    --dataset.repo_id=<用户名>/lerobot_my_dataset_shake_hands \
+    --dataset.repo_id=<你的使用者名稱>/lerobot_my_dataset_shake_hands \
     --dataset.num_episodes=30 \
     --dataset.single_task="Shanke Hands" \
     --dataset.push_to_hub=false \
@@ -109,7 +109,7 @@ lerobot-record \
 採集完畢後，握手數據集會儲存在：
 
 ```Shell
-/Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_shake_hands
+/Users/<你的使用者名稱>/.cache/huggingface/lerobot/<你的使用者名稱>/lerobot_my_dataset_shake_hands
 ```
 
 ## 關於教程裡用到的兩個數據集
@@ -131,7 +131,7 @@ lerobot-record \
 
 ## 採集完成後
 
-數據預設儲存在 `~/.cache/huggingface/lerobot/<用户名>/` 下。接下來：
+數據預設儲存在 `~/.cache/huggingface/lerobot/<你的使用者名稱>/` 下。接下來：
 
 1. 想把數據集備份到雲端，見[上傳數據集到HuggingFace（可選）](/zh-hant/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload)
 2. 準備開始訓練，請接着看[第七步：訓練模型](/zh-hant/tutorials/robot-arms/so-arm101/lerobot/07-Training/Cloud-GPU)，那篇會先帶你在雲GPU平台上把數據傳上去、把環境裝好

@@ -13,7 +13,7 @@ description: "학습한 pi0 모델을 배포하는 커맨드라인을 Ubuntu와 
 
 ```Shell
 sudo chmod 666 /dev/ttyACM*
-sudo rm -rf /home/<你的用户名>/.cache/huggingface/lerobot/<用户名>/rollout_lerobot_my_dataset_shake_hands
+sudo rm -rf /home/<사용자명>/.cache/huggingface/lerobot/<사용자명>/rollout_lerobot_my_dataset_shake_hands
 export TOKENIZERS_PARALLELISM=false
 ```
 
@@ -26,7 +26,7 @@ lerobot-rollout  \
   --robot.port=/dev/ttyACM0 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1280, height: 720, fps: 30, fourcc: "MJPG"}}" \
   --robot.id=my_follower_arm \
-  --policy.path=/home/<你的用户名>/Downloads/lerobot_output/shake/pi0/50K/pretrained_model \
+  --policy.path=/home/<사용자명>/Downloads/lerobot_output/shake/pi0/50K/pretrained_model \
   --task="Shake Hands" \
   --duration=60 \
   --display_data=false
@@ -43,7 +43,7 @@ lerobot-rollout  \
 - 기존 dataset 삭제(있는 경우)
 
 ```Shell
-sudo rm -rf /Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/rollout_lerobot_my_dataset_shake_hands
+sudo rm -rf /Users/<사용자명>/.cache/huggingface/lerobot/<사용자명>/rollout_lerobot_my_dataset_shake_hands
 ```
 
 - 배포 커맨드라인
@@ -59,7 +59,7 @@ lerobot-rollout  \
   --policy.dtype=bfloat16 \
   --policy.compile_model=true \
   --policy.device=cpu \
-  --policy.path=/Users/<你的用户名>/Downloads/7-lerobot/shake/pi0/50K/pretrained_model \
+  --policy.path=/Users/<사용자명>/Downloads/7-lerobot/shake/pi0/50K/pretrained_model \
   --task="Shake Hands" \
   --duration=60 \
   --display_data=false

@@ -35,7 +35,7 @@ lerobot-teleoperate \
 
 rerun.ioの画面が開き、各サーボ関節の軌跡、およびカメラのリアルタイム映像がリアルタイムに表示されます
 
-また、画像は`~/用户名/outputs/captured_images`ディレクトリに保存されます
+また、画像は`~/<ユーザー名>/outputs/captured_images`ディレクトリに保存されます
 
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-05-Camera-Teleoperation-MacOS/2.jpg)
 

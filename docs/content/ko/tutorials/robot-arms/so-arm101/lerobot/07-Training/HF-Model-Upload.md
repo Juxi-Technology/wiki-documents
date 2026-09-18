@@ -11,8 +11,8 @@ description: "학습이 끝난 모델을 HuggingFace에 업로드하는 선택 �
 
 이 문서는 앞선 장의 자리표시자 표기를 그대로 따릅니다. 자신의 정보로 바꿔 주세요. 바꿀 때는 **꺾쇠괄호까지 함께 지웁니다**:
 
-- `<用户名>`: HuggingFace 계정 이름
-- `<你的用户名>`: 컴퓨터의 시스템 사용자 이름이며, 터미널에서 `whoami`를 입력하면 확인할 수 있습니다
+- `<사용자명>`: HuggingFace 계정 이름
+- `<사용자명>`: 컴퓨터의 시스템 사용자 이름이며, 터미널에서 `whoami`를 입력하면 확인할 수 있습니다
 
 ## 방법 1: 학습 중 자동 업로드
 
@@ -20,7 +20,7 @@ description: "학습이 끝난 모델을 HuggingFace에 업로드하는 선택 �
 
 ```Shell
   --policy.push_to_hub=true \
-  --policy.repo_id=<用户名>/shake_act_a \
+  --policy.repo_id=<사용자명>/shake_act_a \
 ```
 
 **이 두 줄은 반드시 한 쌍으로 함께 있어야 하며, `push_to_hub=true`만 쓰면 오류가 납니다.** `repo_id`는 이 모델에 붙인 리포지터리 이름으로, `계정 이름/모델 이름` 형태입니다. 리포지터리가 없으면 LeRobot이 자동으로 생성합니다.
@@ -29,7 +29,7 @@ description: "학습이 끝난 모델을 HuggingFace에 업로드하는 선택 �
 
 ```Shell
 lerobot-train \
-  --dataset.repo_id=<用户名>/lerobot_my_dataset_shake_hands \
+  --dataset.repo_id=<사용자명>/lerobot_my_dataset_shake_hands \
   --dataset.root=~/lerobot_my_dataset_shake_hands \
   --dataset.revision=v0.1.0 \
   --dataset.streaming=false \
@@ -40,12 +40,12 @@ lerobot-train \
   --wandb.enable=true \
   --wandb.project=Lerobot_my_Project \
   --policy.push_to_hub=true \
-  --policy.repo_id=<用户名>/shake_act_a \
+  --policy.repo_id=<사용자명>/shake_act_a \
   --steps=20000 \
   --batch_size=8
 ```
 
-앞 절의 설명대로, 이 버전으로 학습을 마치면 모델이 `https://huggingface.co/<用户名>/shake_act_a`에 나타납니다.
+앞 절의 설명대로, 이 버전으로 학습을 마치면 모델이 `https://huggingface.co/<사용자명>/shake_act_a`에 나타납니다.
 
 ### 중간 checkpoint도 함께 업로드하려면
 
@@ -85,7 +85,7 @@ hf auth whoami
 ACT 학습의 출력 디렉터리가 `~/output_lerobot_train/shake/act/`라고 가정합니다:
 
 ```Shell
-export HF_USER=<用户名>
+export HF_USER=<사용자명>
 
 hf upload ${HF_USER}/shake_act_a \
   ~/output_lerobot_train/shake/act/checkpoints/last/pretrained_model
@@ -112,7 +112,7 @@ hf upload ${HF_USER}/shake_act_a_${CKPT} \
 모델을 업로드한 뒤에는 배포할 때 `--policy.path`를 그것에 지정하면 되며, 먼저 로컬로 다운로드할 필요가 없습니다:
 
 ```Shell
-  --policy.path=<用户名>/shake_act_a \
+  --policy.path=<사용자명>/shake_act_a \
 ```
 
 이것은 로컬 경로를 가리키는 것보다 더 편리하며, 컴퓨터를 바꾸거나 다른 사람이 계정 이름만 알면 바로 사용할 수 있습니다. HuggingFace에서 모델을 가져오려면 그 서버에 연결할 수 있어야 하므로, 국내 네트워크 환경에서는 먼저 [Hugging Face 계정 등록(선택 사항)](/ko/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account)에 따라 미러를 설정해 두는 것을 권장합니다.

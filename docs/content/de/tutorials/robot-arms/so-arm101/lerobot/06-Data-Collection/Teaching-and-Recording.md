@@ -11,13 +11,13 @@ Das Tutorial beschreibt allgemeine Vorgehensweisen, deshalb werden ab diesem Sch
 
 | Platzhalter | Was er repräsentiert | Wie ersetzen |
 |---|---|---|
-| `<你的用户名>` | Der Systembenutzername Ihres Computers, also der Name des Home-Verzeichnisses | Geben Sie im Terminal `whoami` ein, um ihn zu sehen |
-| `<用户名>` | Ihr HuggingFace-Kontoname | Nach dem Anmelden bei HuggingFace sehen Sie den Kontonamen neben dem Avatar oben rechts |
+| `<Benutzername>` | Der Systembenutzername Ihres Computers, also der Name des Home-Verzeichnisses | Geben Sie im Terminal `whoami` ein, um ihn zu sehen |
+| `<Benutzername>` | Ihr HuggingFace-Kontoname | Nach dem Anmelden bei HuggingFace sehen Sie den Kontonamen neben dem Avatar oben rechts |
 
 Ein Beispiel. Angenommen, die Ausgabe von `whoami` im Terminal ist `zhangsan` und Ihr HuggingFace-Kontoname ist ebenfalls `zhangsan`, dann
 
-- `/Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/` sollte dann als `/Users/zhangsan/.cache/huggingface/lerobot/zhangsan/` geschrieben werden
-- `<用户名>/lerobot_my_dataset_a` sollte dann als `zhangsan/lerobot_my_dataset_a` geschrieben werden
+- `/Users/<Benutzername>/.cache/huggingface/lerobot/<Benutzername>/` sollte dann als `/Users/zhangsan/.cache/huggingface/lerobot/zhangsan/` geschrieben werden
+- `<Benutzername>/lerobot_my_dataset_a` sollte dann als `zhangsan/lerobot_my_dataset_a` geschrieben werden
 
 > Die beiden Platzhalter in allen nachfolgenden Befehlen werden ebenfalls auf dieselbe Weise ersetzt.
 
@@ -26,7 +26,7 @@ Ein Beispiel. Angenommen, die Ausgabe von `whoami` im Terminal ist `zhangsan` un
 ## Vorhandenen gleichnamigen Datensatz löschen (falls vorhanden)
 
 ```Shell
-sudo rm -rf /Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_a
+sudo rm -rf /Users/<Benutzername>/.cache/huggingface/lerobot/<Benutzername>/lerobot_my_dataset_a
 ```
 
 ## Eine Kamera, Datensatz erfassen-Mac-Computer
@@ -41,7 +41,7 @@ lerobot-record \
     --teleop.port=/dev/tty.usbmodem5AAF2194741 \
     --teleop.id=my_leader_arm \
     --display_data=true \
-    --dataset.repo_id=<用户名>/lerobot_my_dataset_a \
+    --dataset.repo_id=<Benutzername>/lerobot_my_dataset_a \
     --dataset.num_episodes=40 \
     --dataset.single_task="Grab Oranges" \
     --dataset.push_to_hub=false \
@@ -61,7 +61,7 @@ lerobot-record \
     --teleop.port=/dev/tty.usbmodem5AAF2194741 \
     --teleop.id=my_leader_arm \
     --display_data=true \
-    --dataset.repo_id=<用户名>/lerobot_my_dataset_a \
+    --dataset.repo_id=<Benutzername>/lerobot_my_dataset_a \
     --dataset.num_episodes=40 \
     --dataset.single_task="Grab Oranges" \
     --dataset.push_to_hub=true \
@@ -83,7 +83,7 @@ ESC: sofortiger Stopp, Videos werden kodiert und der Datensatz wird hochgeladen.
 ## Erfassung abgeschlossen, Speicherverzeichnis des Datensatzes
 
 ```Shell
-/Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_a
+/Users/<Benutzername>/.cache/huggingface/lerobot/<Benutzername>/lerobot_my_dataset_a
 ```
 
 ## Handschlag
@@ -98,7 +98,7 @@ lerobot-record \
     --teleop.port=/dev/tty.usbmodem5AAF2194741 \
     --teleop.id=my_leader_arm \
     --display_data=true \
-    --dataset.repo_id=<用户名>/lerobot_my_dataset_shake_hands \
+    --dataset.repo_id=<Benutzername>/lerobot_my_dataset_shake_hands \
     --dataset.num_episodes=30 \
     --dataset.single_task="Shanke Hands" \
     --dataset.push_to_hub=false \
@@ -109,7 +109,7 @@ lerobot-record \
 Nach Abschluss der Erfassung wird der Handschlag-Datensatz gespeichert unter：
 
 ```Shell
-/Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_shake_hands
+/Users/<Benutzername>/.cache/huggingface/lerobot/<Benutzername>/lerobot_my_dataset_shake_hands
 ```
 
 ## Zu den beiden Datensätzen im Tutorial
@@ -131,7 +131,7 @@ Das heißt, **der Handschlag-Datensatz ist das durchgängige Beispiel für die z
 
 ## Nach Abschluss der Erfassung
 
-Die Daten werden standardmäßig unter `~/.cache/huggingface/lerobot/<用户名>/` gespeichert. Als Nächstes：
+Die Daten werden standardmäßig unter `~/.cache/huggingface/lerobot/<Benutzername>/` gespeichert. Als Nächstes：
 
 1. Wenn Sie den Datensatz in der Cloud sichern möchten, siehe [Datensatz auf HuggingFace hochladen (optional)](/de/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload)
 2. Wenn Sie mit dem Training beginnen möchten, lesen Sie weiter bei [Schritt 7：Modell trainieren](/de/tutorials/robot-arms/so-arm101/lerobot/07-Training/Cloud-GPU); dort wird zuerst gezeigt, wie Sie die Daten auf die Cloud-GPU-Plattform hochladen und die Umgebung einrichten

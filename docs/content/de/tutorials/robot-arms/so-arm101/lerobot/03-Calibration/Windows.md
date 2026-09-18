@@ -25,9 +25,9 @@ lerobot-calibrate --teleop.type=so101_leader --teleop.port=COM7 --teleop.id=my_l
 
 ## Speicherort des Dateiexports
 
-C:\Users\<你的Windows用户名>\.cache\huggingface\lerobot\calibration\robots\so101_follower\my_follower_arm.json
+C:\Users\<Windows-Benutzername>\.cache\huggingface\lerobot\calibration\robots\so101_follower\my_follower_arm.json
 
-C:\Users\<你的Windows用户名>\.cache\huggingface\lerobot\calibration\teleoperators\so101_leader\my_leader_arm.json
+C:\Users\<Windows-Benutzername>\.cache\huggingface\lerobot\calibration\teleoperators\so101_leader\my_leader_arm.json
 
 ## Roboterarm zum Kalibrieren wechseln
 

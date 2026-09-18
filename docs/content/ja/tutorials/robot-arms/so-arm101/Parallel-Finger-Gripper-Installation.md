@@ -9,7 +9,7 @@ description: "平行指グリッパーの取り付け手順を、背面カバー
 
 [PincOpenアセンブリ.step](/downloads/PincOpen装配体.step)
 
-**平行指グリッパー取り付け手順.mp4**（平行指夹爪安装步骤.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**平行指グリッパー取り付け手順.mp4**（平行指夹爪安装步骤.mp4、サイトの単一ファイル上限を超えているため、support@juxitech.com までご請求ください）
 
 ![8.png](../../../../../public/images/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation/1.jpg)
 

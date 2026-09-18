@@ -116,7 +116,7 @@ https://gitee.com/ftservo/fddebug
 
 使用飛特舵機上位機設定舵機ID並校準中位，ID設定是從1到6的！
 
-**機械臂舵機設定ID-Windows系統.mp4**（机械臂舵机设置ID-Windows系统.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**機械臂舵機設定ID-Windows系統.mp4**（机械臂舵机设置ID-Windows系统.mp4, larger than the site's per-file size limit — request it from support@juxitech.com）
 
 ### Linux/ubuntu系統和Mac電腦
 
@@ -208,13 +208,13 @@ lerobot-setup-motors \
     --teleop.port=/dev/ttyACM0
 ```
 
-**機械臂舵機設定ID-Linux系統.mp4**（机械臂舵机设置ID-Linux系统.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**機械臂舵機設定ID-Linux系統.mp4**（机械臂舵机设置ID-Linux系统.mp4, larger than the site's per-file size limit — request it from support@juxitech.com）
 
 ## 第二步：組裝
 
 - 從動臂的組裝步驟與主動臂基本相同。唯一的區別在於第12步之後，末端執行器（夾爪和手柄）的安裝方式有所不同。
 
-**SO-ARM101機械臂組裝教程.mp4**（SO-ARM101机械臂组装教程.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**SO-ARM101機械臂組裝教程.mp4**（SO-ARM101机械臂组装教程.mp4, larger than the site's per-file size limit — request it from support@juxitech.com）
 
 舵機驅動板的安裝：先安裝4個銅柱，然後用四個M2.5*8的螺絲固定驅動板
 

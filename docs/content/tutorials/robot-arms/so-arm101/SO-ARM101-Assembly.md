@@ -116,7 +116,7 @@ The video below shows the sequence of steps for setting motor IDs.
 
 Use the Feetech servo host software to set the servo IDs and calibrate the center; the ID setting goes from 1 to 6!
 
-**Robotic Arm Servo ID Setup-Windows System.mp4**（机械臂舵机设置ID-Windows系统.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**Robotic Arm Servo ID Setup-Windows System.mp4**（机械臂舵机设置ID-Windows系统.mp4, larger than the site's per-file size limit — request it from support@juxitech.com）
 
 ### Linux/Ubuntu System and Mac Computer
 
@@ -208,13 +208,13 @@ lerobot-setup-motors \
     --teleop.port=/dev/ttyACM0
 ```
 
-**Robotic Arm Servo ID Setup-Linux System.mp4**（机械臂舵机设置ID-Linux系统.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**Robotic Arm Servo ID Setup-Linux System.mp4**（机械臂舵机设置ID-Linux系统.mp4, larger than the site's per-file size limit — request it from support@juxitech.com）
 
 ## Step 2: Assembly
 
 - The assembly steps for the follower arm are basically the same as for the leader arm. The only difference is that after step 12, the end effector (gripper and handle) is installed differently.
 
-**SO-ARM101 Robotic Arm Assembly Tutorial.mp4**（SO-ARM101机械臂组装教程.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**SO-ARM101 Robotic Arm Assembly Tutorial.mp4**（SO-ARM101机械臂组装教程.mp4, larger than the site's per-file size limit — request it from support@juxitech.com）
 
 Installing the servo driver board: first install the 4 copper standoffs, then secure the driver board with four M2.5*8 screws
 

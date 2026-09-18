@@ -18,7 +18,7 @@ Lors de la collecte du jeu de données, définissez `push_to_hub=true` pour tél
 Lors de la collecte du jeu de données, définissez `push_to_hub=false` pour téléverser manuellement une fois la collecte terminée
 
 ```Shell
-hf upload <用户名>/lerobot_my_dataset_a /Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_a / --repo-type=dataset
+hf upload <nom-utilisateur>/lerobot_my_dataset_a /Users/<nom-utilisateur>/.cache/huggingface/lerobot/<nom-utilisateur>/lerobot_my_dataset_a / --repo-type=dataset
 ```
 
 Que ce soit en téléversement automatique ou manuel, le débit est très lent (cent Ko par seconde)
@@ -33,7 +33,7 @@ https://featurize.cn?s=d7ce99f842414bfcaea5662a97581bd1
 
 ### Lancer une instance de GPU cloud
 
-### Téléverser l'archive du jeu de données dans `数据集`
+### Téléverser l'archive du jeu de données dans `Jeux de données`
 
 ### Copier la commande de téléchargement de l'instance
 
@@ -60,11 +60,11 @@ api = HfApi()
 
 api.upload_folder(
     folder_path="~/lerobot_my_dataset_a",
-    repo_id="<用户名>/lerobot_my_dataset_a",
+    repo_id="<nom-utilisateur>/lerobot_my_dataset_a",
     repo_type="dataset"
 )
 
-api.create_tag("<用户名>/lerobot_my_dataset_a", tag="v0.4.0", repo_type="dataset")
+api.create_tag("<nom-utilisateur>/lerobot_my_dataset_a", tag="v0.4.0", repo_type="dataset")
 ```
 
 Exécuter le fichier
@@ -78,7 +78,7 @@ python upload_dataset.py
 - Autre méthode de téléversement (non recommandée)
 
 ```Shell
-hf upload <用户名>/lerobot_my_dataset_a lerobot_my_dataset_a / --repo-type=dataset
+hf upload <nom-utilisateur>/lerobot_my_dataset_a lerobot_my_dataset_a / --repo-type=dataset
 ```
 
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-06-Data-Collection-HF-Dataset-Upload/4.png)

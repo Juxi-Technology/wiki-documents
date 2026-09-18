@@ -9,7 +9,7 @@ description: "Instale a garra de dedos paralelos no SO-ARM101: remova a tampa tr
 
 [Montagem PincOpen.step](/downloads/PincOpen装配体.step)
 
-**Etapas de instalação da garra de dedos paralelos.mp4**（平行指夹爪安装步骤.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**Etapas de instalação da garra de dedos paralelos.mp4**（平行指夹爪安装步骤.mp4, acima do limite de tamanho por arquivo do site — solicite em support@juxitech.com）
 
 ![8.png](../../../../../public/images/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation/1.jpg)
 

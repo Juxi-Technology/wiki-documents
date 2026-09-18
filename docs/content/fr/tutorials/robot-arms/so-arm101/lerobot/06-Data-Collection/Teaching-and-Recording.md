@@ -11,13 +11,13 @@ Le tutoriel décrit des étapes d'opération génériques ; à partir de cette �
 
 | Espace réservé | Ce qu'il représente | Comment le remplacer |
 |---|---|---|
-| `<你的用户名>` | Le nom d'utilisateur système de votre ordinateur, c'est-à-dire le nom du répertoire personnel | Saisissez `whoami` dans le terminal pour l'afficher |
-| `<用户名>` | Le nom de votre compte HuggingFace | Après vous être connecté à HuggingFace, regardez le nom de compte à côté de l'avatar en haut à droite |
+| `<nom-utilisateur>` | Le nom d'utilisateur système de votre ordinateur, c'est-à-dire le nom du répertoire personnel | Saisissez `whoami` dans le terminal pour l'afficher |
+| `<nom-utilisateur>` | Le nom de votre compte HuggingFace | Après vous être connecté à HuggingFace, regardez le nom de compte à côté de l'avatar en haut à droite |
 
 Prenons un exemple. Supposez que la sortie de `whoami` dans le terminal soit `zhangsan` et que votre nom de compte HuggingFace soit aussi `zhangsan`, alors
 
-- `/Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/` doit s'écrire `/Users/zhangsan/.cache/huggingface/lerobot/zhangsan/`
-- `<用户名>/lerobot_my_dataset_a` doit s'écrire `zhangsan/lerobot_my_dataset_a`
+- `/Users/<nom-utilisateur>/.cache/huggingface/lerobot/<nom-utilisateur>/` doit s'écrire `/Users/zhangsan/.cache/huggingface/lerobot/zhangsan/`
+- `<nom-utilisateur>/lerobot_my_dataset_a` doit s'écrire `zhangsan/lerobot_my_dataset_a`
 
 > Les deux espaces réservés de toutes les commandes suivantes se remplacent de la même manière.
 
@@ -26,7 +26,7 @@ Prenons un exemple. Supposez que la sortie de `whoami` dans le terminal soit `zh
 ## Supprimer le jeu de données du même nom déjà existant (le cas échéant)
 
 ```Shell
-sudo rm -rf /Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_a
+sudo rm -rf /Users/<nom-utilisateur>/.cache/huggingface/lerobot/<nom-utilisateur>/lerobot_my_dataset_a
 ```
 
 ## Une caméra, collecte du jeu de données - Mac
@@ -41,7 +41,7 @@ lerobot-record \
     --teleop.port=/dev/tty.usbmodem5AAF2194741 \
     --teleop.id=my_leader_arm \
     --display_data=true \
-    --dataset.repo_id=<用户名>/lerobot_my_dataset_a \
+    --dataset.repo_id=<nom-utilisateur>/lerobot_my_dataset_a \
     --dataset.num_episodes=40 \
     --dataset.single_task="Grab Oranges" \
     --dataset.push_to_hub=false \
@@ -61,7 +61,7 @@ lerobot-record \
     --teleop.port=/dev/tty.usbmodem5AAF2194741 \
     --teleop.id=my_leader_arm \
     --display_data=true \
-    --dataset.repo_id=<用户名>/lerobot_my_dataset_a \
+    --dataset.repo_id=<nom-utilisateur>/lerobot_my_dataset_a \
     --dataset.num_episodes=40 \
     --dataset.single_task="Grab Oranges" \
     --dataset.push_to_hub=true \
@@ -83,7 +83,7 @@ ESC, arrête immédiatement, encode la vidéo et téléverse le jeu de données.
 ## Collecte terminée, répertoire de sauvegarde du jeu de données
 
 ```Shell
-/Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_a
+/Users/<nom-utilisateur>/.cache/huggingface/lerobot/<nom-utilisateur>/lerobot_my_dataset_a
 ```
 
 ## Poignée de main
@@ -98,7 +98,7 @@ lerobot-record \
     --teleop.port=/dev/tty.usbmodem5AAF2194741 \
     --teleop.id=my_leader_arm \
     --display_data=true \
-    --dataset.repo_id=<用户名>/lerobot_my_dataset_shake_hands \
+    --dataset.repo_id=<nom-utilisateur>/lerobot_my_dataset_shake_hands \
     --dataset.num_episodes=30 \
     --dataset.single_task="Shanke Hands" \
     --dataset.push_to_hub=false \
@@ -109,7 +109,7 @@ lerobot-record \
 Une fois la collecte terminée, le jeu de données de poignée de main est enregistré dans :
 
 ```Shell
-/Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_shake_hands
+/Users/<nom-utilisateur>/.cache/huggingface/lerobot/<nom-utilisateur>/lerobot_my_dataset_shake_hands
 ```
 
 ## À propos des deux jeux de données utilisés dans le tutoriel
@@ -131,7 +131,7 @@ Autrement dit, **c'est le jeu de données de poignée de main qui constitue l'ex
 
 ## Après la collecte
 
-Les données sont enregistrées par défaut sous `~/.cache/huggingface/lerobot/<用户名>/`. Ensuite :
+Les données sont enregistrées par défaut sous `~/.cache/huggingface/lerobot/<nom-utilisateur>/`. Ensuite :
 
 1. Pour sauvegarder le jeu de données dans le cloud, voir [Téléverser un jeu de données sur HuggingFace (facultatif)](/fr/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload)
 2. Pour commencer l'entraînement, passez à [Étape 7 : entraîner un modèle](/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/Cloud-GPU) ; ce chapitre vous guidera d'abord pour téléverser les données et installer l'environnement sur la plateforme de GPU cloud

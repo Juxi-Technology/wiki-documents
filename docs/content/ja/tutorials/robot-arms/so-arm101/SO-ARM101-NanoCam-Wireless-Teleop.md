@@ -131,7 +131,7 @@ ESP32-NanoCam とフォロワーアームの間は**サーボドライバ基板�
 pip install platformio
 ```
 
-> Windows で Git Bash から `pio` コマンドが見つからない場合は、PowerShell/CMD のターミナルに切り替えるか、`C:\Users\<用户名>\.platformio\penv\Scripts` を PATH に追加してください。
+> Windows で Git Bash から `pio` コマンドが見つからない場合は、PowerShell/CMD のターミナルに切り替えるか、`C:\Users\<ユーザー名>\.platformio\penv\Scripts` を PATH に追加してください。
 
 ### 2. 初回ビルド(ツールチェーンの自動ダウンロード)
 
@@ -152,7 +152,7 @@ pio run
 
 - PlatformIO の残り時間表示は不正確で、しばらく止まったように見えた後に突然完了することがよくあります。5 分ほど待ち、パーセンテージが進むか確認してください;
 - プロキシ/VPN を有効にする(システムプロキシ経由);
-- ツールチェーンを手動ダウンロード:ブラウザで `https://dl.espressif.com/dl/xtensa-esp32s3-elf-gcc8_4_0-esp-2021r2-patch5-win32.zip` をダウンロード(Linux は `-linux-amd64.tar.gz`)。解凍後にディレクトリ名を `toolchain-xtensa-esp32s3` に変更し、`C:\Users\<用户名>\.platformio\packages\` に配置して `pio run` を再実行;
+- ツールチェーンを手動ダウンロード:ブラウザで `https://dl.espressif.com/dl/xtensa-esp32s3-elf-gcc8_4_0-esp-2021r2-patch5-win32.zip` をダウンロード(Linux は `-linux-amd64.tar.gz`)。解凍後にディレクトリ名を `toolchain-xtensa-esp32s3` に変更し、`C:\Users\<ユーザー名>\.platformio\packages\` に配置して `pio run` を再実行;
 - 途中で Ctrl+C で中断しても環境は壊れません。再実行すると続きからダウンロードされます。
 
 ### 3. Ubuntu 実行環境のインストール

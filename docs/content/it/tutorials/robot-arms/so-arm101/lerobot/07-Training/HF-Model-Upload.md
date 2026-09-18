@@ -11,8 +11,8 @@ description: "Caricare il modello addestrato su HuggingFace: modalità automatic
 
 Questo capitolo riprende la notazione con segnaposto usata nei capitoli precedenti; sostituiscili con le tue informazioni, **rimuovendo anche le parentesi angolari** al momento della sostituzione:
 
-- `<用户名>`: il nome del tuo account HuggingFace
-- `<你的用户名>`: il nome utente di sistema del tuo computer; puoi visualizzarlo digitando `whoami` nel terminale
+- `<nome-utente>`: il nome del tuo account HuggingFace
+- `<nome-utente>`: il nome utente di sistema del tuo computer; puoi visualizzarlo digitando `whoami` nel terminale
 
 ## Metodo 1: caricamento automatico durante l'addestramento
 
@@ -20,7 +20,7 @@ Aggiungi due righe di parametri al comando di addestramento: al termine dell'add
 
 ```Shell
   --policy.push_to_hub=true \
-  --policy.repo_id=<用户名>/shake_act_a \
+  --policy.repo_id=<nome-utente>/shake_act_a \
 ```
 
 **Queste due righe devono comparire sempre insieme: scrivendo solo `push_to_hub=true` si otterrà un errore.** `repo_id` è il nome del repository che assegni a questo modello, nella forma `nome_account/nome_modello`; se il repository non esiste, LeRobot lo creerà automaticamente.
@@ -29,7 +29,7 @@ Ad esempio, il comando completo di ACT diventa:
 
 ```Shell
 lerobot-train \
-  --dataset.repo_id=<用户名>/lerobot_my_dataset_shake_hands \
+  --dataset.repo_id=<nome-utente>/lerobot_my_dataset_shake_hands \
   --dataset.root=~/lerobot_my_dataset_shake_hands \
   --dataset.revision=v0.1.0 \
   --dataset.streaming=false \
@@ -40,12 +40,12 @@ lerobot-train \
   --wandb.enable=true \
   --wandb.project=Lerobot_my_Project \
   --policy.push_to_hub=true \
-  --policy.repo_id=<用户名>/shake_act_a \
+  --policy.repo_id=<nome-utente>/shake_act_a \
   --steps=20000 \
   --batch_size=8
 ```
 
-Secondo quanto spiegato nella sezione precedente, al termine di questa sessione di addestramento il modello comparirà all'indirizzo `https://huggingface.co/<用户名>/shake_act_a`.
+Secondo quanto spiegato nella sezione precedente, al termine di questa sessione di addestramento il modello comparirà all'indirizzo `https://huggingface.co/<nome-utente>/shake_act_a`.
 
 ### Caricare insieme anche i checkpoint intermedi
 
@@ -85,7 +85,7 @@ hf auth whoami
 Supponiamo che la directory di output dell'addestramento ACT sia `~/output_lerobot_train/shake/act/`:
 
 ```Shell
-export HF_USER=<用户名>
+export HF_USER=<nome-utente>
 
 hf upload ${HF_USER}/shake_act_a \
   ~/output_lerobot_train/shake/act/checkpoints/last/pretrained_model
@@ -112,7 +112,7 @@ Se il modello non è grande e non vuoi usare i comandi, puoi operare direttament
 Dopo aver caricato il modello, in fase di deployment è sufficiente puntare `--policy.path` ad esso, senza doverlo prima scaricare in locale:
 
 ```Shell
-  --policy.path=<用户名>/shake_act_a \
+  --policy.path=<nome-utente>/shake_act_a \
 ```
 
 Questo è più comodo che puntare a un percorso locale: cambiando computer, o se qualcuno conosce il tuo nome account, può usarlo direttamente. Nota che per scaricare un modello da HuggingFace è necessario potersi connettere ai suoi server; in ambienti di rete cinesi si consiglia di configurare prima il mirror seguendo [Registrare un account Hugging Face (opzionale)](/it/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account).

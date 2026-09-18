@@ -35,7 +35,7 @@ After running, teleoperation starts
 
 A rerun.io window opens, displaying the trajectory of each servo joint and the live camera feed in real time
 
-The images are also saved to the `~/用户名/outputs/captured_images` directory
+The images are also saved to the `~/<username>/outputs/captured_images` directory
 
 ![image.png](../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-05-Camera-Teleoperation-MacOS/2.jpg)
 

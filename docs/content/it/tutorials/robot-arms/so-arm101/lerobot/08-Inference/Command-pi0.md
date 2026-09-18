@@ -13,7 +13,7 @@ description: "Deployment di pi0 su Ubuntu e Mac: comandi per entrambi i sistemi,
 
 ```Shell
 sudo chmod 666 /dev/ttyACM*
-sudo rm -rf /home/<你的用户名>/.cache/huggingface/lerobot/<用户名>/rollout_lerobot_my_dataset_shake_hands
+sudo rm -rf /home/<nome-utente>/.cache/huggingface/lerobot/<nome-utente>/rollout_lerobot_my_dataset_shake_hands
 export TOKENIZERS_PARALLELISM=false
 ```
 
@@ -26,7 +26,7 @@ lerobot-rollout  \
   --robot.port=/dev/ttyACM0 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1280, height: 720, fps: 30, fourcc: "MJPG"}}" \
   --robot.id=my_follower_arm \
-  --policy.path=/home/<你的用户名>/Downloads/lerobot_output/shake/pi0/50K/pretrained_model \
+  --policy.path=/home/<nome-utente>/Downloads/lerobot_output/shake/pi0/50K/pretrained_model \
   --task="Shake Hands" \
   --duration=60 \
   --display_data=false
@@ -43,7 +43,7 @@ lerobot-rollout  \
 - Eliminare il dataset esistente (se presente)
 
 ```Shell
-sudo rm -rf /Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/rollout_lerobot_my_dataset_shake_hands
+sudo rm -rf /Users/<nome-utente>/.cache/huggingface/lerobot/<nome-utente>/rollout_lerobot_my_dataset_shake_hands
 ```
 
 - Comando di deployment
@@ -59,7 +59,7 @@ lerobot-rollout  \
   --policy.dtype=bfloat16 \
   --policy.compile_model=true \
   --policy.device=cpu \
-  --policy.path=/Users/<你的用户名>/Downloads/7-lerobot/shake/pi0/50K/pretrained_model \
+  --policy.path=/Users/<nome-utente>/Downloads/7-lerobot/shake/pi0/50K/pretrained_model \
   --task="Shake Hands" \
   --duration=60 \
   --display_data=false

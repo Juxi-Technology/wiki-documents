@@ -41,7 +41,7 @@ sudo rm -rf output_lerobot_train/shake/pi05_A
 
 ```Shell
 lerobot-train \
-    --dataset.repo_id=<用户名>/lerobot_my_dataset_shake_hands \
+    --dataset.repo_id=<ユーザー名>/lerobot_my_dataset_shake_hands \
     --dataset.root=~/lerobot_my_dataset_shake_hands \
     --dataset.revision=v0.1.0 \
     --policy.type=pi05 \

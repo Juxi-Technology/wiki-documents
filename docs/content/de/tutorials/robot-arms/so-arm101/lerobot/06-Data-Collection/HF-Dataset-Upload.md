@@ -18,7 +18,7 @@ Beim Erfassen des Datensatzes `push_to_hub=true` setzen, nach Abschluss der Erfa
 Beim Erfassen des Datensatzes `push_to_hub=false` setzen, nach Abschluss der Erfassung erfolgt der Upload manuell
 
 ```Shell
-hf upload <用户名>/lerobot_my_dataset_a /Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_a / --repo-type=dataset
+hf upload <Benutzername>/lerobot_my_dataset_a /Users/<Benutzername>/.cache/huggingface/lerobot/<Benutzername>/lerobot_my_dataset_a / --repo-type=dataset
 ```
 
 Ob automatischer oder manueller Upload, die Upload-Geschwindigkeit ist sehr langsam (einhundert KB pro Sekunde)
@@ -33,7 +33,7 @@ https://featurize.cn?s=d7ce99f842414bfcaea5662a97581bd1
 
 ### Eine Cloud-GPU-Instanz starten
 
-### Datensatz-ZIP-Archiv nach `数据集` hochladen
+### Datensatz-ZIP-Archiv nach `Datensätze` hochladen
 
 ### Kopieren Sie den Download-Befehl der Instanz
 
@@ -60,11 +60,11 @@ api = HfApi()
 
 api.upload_folder(
     folder_path="~/lerobot_my_dataset_a",
-    repo_id="<用户名>/lerobot_my_dataset_a",
+    repo_id="<Benutzername>/lerobot_my_dataset_a",
     repo_type="dataset"
 )
 
-api.create_tag("<用户名>/lerobot_my_dataset_a", tag="v0.4.0", repo_type="dataset")
+api.create_tag("<Benutzername>/lerobot_my_dataset_a", tag="v0.4.0", repo_type="dataset")
 ```
 
 Datei ausführen
@@ -78,7 +78,7 @@ python upload_dataset.py
 - Eine andere Upload-Methode (nicht empfohlen)
 
 ```Shell
-hf upload <用户名>/lerobot_my_dataset_a lerobot_my_dataset_a / --repo-type=dataset
+hf upload <Benutzername>/lerobot_my_dataset_a lerobot_my_dataset_a / --repo-type=dataset
 ```
 
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-06-Data-Collection-HF-Dataset-Upload/4.png)

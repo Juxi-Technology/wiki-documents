@@ -21,7 +21,7 @@ lerobot-teleoperate --robot.type=so101_follower --robot.port=COM6 --robot.id=my_
 
 rerun.io 화면이 열려 각 서보모터 관절의 궤적과 카메라 실시간 화면을 실시간으로 표시합니다
 
-또한 이미지를 `C:\Users\用户\outputs\captured_images` 디렉터리에 저장합니다
+또한 이미지를 `C:\Users\<Windows-사용자명>\outputs\captured_images` 디렉터리에 저장합니다
 
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-05-Camera-Teleoperation-Windows/2.jpg)
 

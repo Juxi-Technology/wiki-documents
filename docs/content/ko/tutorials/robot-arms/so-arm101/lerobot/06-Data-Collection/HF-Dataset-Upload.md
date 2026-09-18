@@ -18,7 +18,7 @@ description: "로컬 업로드와 클라우드 GPU 플랫폼 업로드 두 가�
 데이터셋 수집 시 `push_to_hub=false`로 설정하면, 수집 완료 후 수동으로 업로드합니다
 
 ```Shell
-hf upload <用户名>/lerobot_my_dataset_a /Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_a / --repo-type=dataset
+hf upload <사용자명>/lerobot_my_dataset_a /Users/<사용자명>/.cache/huggingface/lerobot/<사용자명>/lerobot_my_dataset_a / --repo-type=dataset
 ```
 
 자동 업로드든 수동 업로드든 업로드 속도가 매우 느립니다(초당 100KB)
@@ -60,11 +60,11 @@ api = HfApi()
 
 api.upload_folder(
     folder_path="~/lerobot_my_dataset_a",
-    repo_id="<用户名>/lerobot_my_dataset_a",
+    repo_id="<사용자명>/lerobot_my_dataset_a",
     repo_type="dataset"
 )
 
-api.create_tag("<用户名>/lerobot_my_dataset_a", tag="v0.4.0", repo_type="dataset")
+api.create_tag("<사용자명>/lerobot_my_dataset_a", tag="v0.4.0", repo_type="dataset")
 ```
 
 파일 실행
@@ -78,7 +78,7 @@ python upload_dataset.py
 - 다른 업로드 방법(권장하지 않음)
 
 ```Shell
-hf upload <用户名>/lerobot_my_dataset_a lerobot_my_dataset_a / --repo-type=dataset
+hf upload <사용자명>/lerobot_my_dataset_a lerobot_my_dataset_a / --repo-type=dataset
 ```
 
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-06-Data-Collection-HF-Dataset-Upload/4.png)

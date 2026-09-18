@@ -11,8 +11,8 @@ description: "本頁說明如何把訓練好的模型上傳到 Hugging Face，�
 
 本篇沿用了前面章節的佔位符寫法，請替換成你自己的資訊，替換時**連尖括號一起去掉**：
 
-- `<用户名>`：你的 HuggingFace 帳號名
-- `<你的用户名>`：你電腦的系統使用者名，終端裡輸入 `whoami` 可以查看
+- `<你的使用者名稱>`：你的 HuggingFace 帳號名
+- `<你的使用者名稱>`：你電腦的系統使用者名，終端裡輸入 `whoami` 可以查看
 
 ## 方法一：訓練時自動上傳
 
@@ -20,7 +20,7 @@ description: "本頁說明如何把訓練好的模型上傳到 Hugging Face，�
 
 ```Shell
   --policy.push_to_hub=true \
-  --policy.repo_id=<用户名>/shake_act_a \
+  --policy.repo_id=<你的使用者名稱>/shake_act_a \
 ```
 
 **這兩行必須成對出現，只寫 `push_to_hub=true` 會報錯。** `repo_id` 就是你給這個模型起的倉庫名，形如 `帳號名/模型名`，倉庫不存在的話 LeRobot 會自動建立。
@@ -29,7 +29,7 @@ description: "本頁說明如何把訓練好的模型上傳到 Hugging Face，�
 
 ```Shell
 lerobot-train \
-  --dataset.repo_id=<用户名>/lerobot_my_dataset_shake_hands \
+  --dataset.repo_id=<你的使用者名稱>/lerobot_my_dataset_shake_hands \
   --dataset.root=~/lerobot_my_dataset_shake_hands \
   --dataset.revision=v0.1.0 \
   --dataset.streaming=false \
@@ -40,12 +40,12 @@ lerobot-train \
   --wandb.enable=true \
   --wandb.project=Lerobot_my_Project \
   --policy.push_to_hub=true \
-  --policy.repo_id=<用户名>/shake_act_a \
+  --policy.repo_id=<你的使用者名稱>/shake_act_a \
   --steps=20000 \
   --batch_size=8
 ```
 
-按上一節的說明，這一版訓練跑完，模型就會出現在 `https://huggingface.co/<用户名>/shake_act_a`。
+按上一節的說明，這一版訓練跑完，模型就會出現在 `https://huggingface.co/<你的使用者名稱>/shake_act_a`。
 
 ### 想連中間的檢查點一起上傳
 
@@ -85,7 +85,7 @@ hf auth whoami
 假設 ACT 訓練的輸出目錄是 `~/output_lerobot_train/shake/act/`：
 
 ```Shell
-export HF_USER=<用户名>
+export HF_USER=<你的使用者名稱>
 
 hf upload ${HF_USER}/shake_act_a \
   ~/output_lerobot_train/shake/act/checkpoints/last/pretrained_model
@@ -112,7 +112,7 @@ hf upload ${HF_USER}/shake_act_a_${CKPT} \
 模型上傳後，部署時把 `--policy.path` 指向它就行，不需要先下載到本地：
 
 ```Shell
-  --policy.path=<用户名>/shake_act_a \
+  --policy.path=<你的使用者名稱>/shake_act_a \
 ```
 
 這比指向本地路徑更方便，換電腦、或者別人拿到你的帳號名就能直接用。注意從 HuggingFace 拉取模型需要能連上它的伺服器，國內網絡環境下建議先按[註冊Hugging Face帳號（可選）](/zh-hant/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account)設定好鏡像。

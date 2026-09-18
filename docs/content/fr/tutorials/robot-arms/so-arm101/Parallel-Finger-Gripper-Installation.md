@@ -9,7 +9,7 @@ description: "Installez la pince à doigts parallèles sur le SO-ARM101 : montag
 
 [PincOpen装配体.step](/downloads/PincOpen装配体.step)
 
-**平行指夹爪安装步骤.mp4**（平行指夹爪安装步骤.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**平行指夹爪安装步骤.mp4**（平行指夹爪安装步骤.mp4, au-delà de la limite de taille par fichier du site — à demander à support@juxitech.com）
 
 ![8.png](../../../../../public/images/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation/1.jpg)
 

@@ -18,7 +18,7 @@ Al recopilar el conjunto de datos, establece `push_to_hub=true`; tras finalizar 
 Al recopilar el conjunto de datos, establece `push_to_hub=false`; tras finalizar la recopilación se sube manualmente
 
 ```Shell
-hf upload <用户名>/lerobot_my_dataset_a /Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_a / --repo-type=dataset
+hf upload <usuario>/lerobot_my_dataset_a /Users/<usuario>/.cache/huggingface/lerobot/<usuario>/lerobot_my_dataset_a / --repo-type=dataset
 ```
 
 Tanto la subida automática como la manual son muy lentas (cien KB por segundo)
@@ -33,7 +33,7 @@ https://featurize.cn?s=d7ce99f842414bfcaea5662a97581bd1
 
 ### Iniciar una instancia de GPU en la nube
 
-### Subir el paquete comprimido del conjunto de datos a `数据集`
+### Subir el paquete comprimido del conjunto de datos a `Conjuntos de datos`
 
 ### Copiar el comando de descarga de la instancia
 
@@ -60,11 +60,11 @@ api = HfApi()
 
 api.upload_folder(
     folder_path="~/lerobot_my_dataset_a",
-    repo_id="<用户名>/lerobot_my_dataset_a",
+    repo_id="<usuario>/lerobot_my_dataset_a",
     repo_type="dataset"
 )
 
-api.create_tag("<用户名>/lerobot_my_dataset_a", tag="v0.4.0", repo_type="dataset")
+api.create_tag("<usuario>/lerobot_my_dataset_a", tag="v0.4.0", repo_type="dataset")
 ```
 
 Ejecutar el archivo
@@ -78,7 +78,7 @@ python upload_dataset.py
 - Otro método de subida (no recomendado)
 
 ```Shell
-hf upload <用户名>/lerobot_my_dataset_a lerobot_my_dataset_a / --repo-type=dataset
+hf upload <usuario>/lerobot_my_dataset_a lerobot_my_dataset_a / --repo-type=dataset
 ```
 
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-06-Data-Collection-HF-Dataset-Upload/4.png)

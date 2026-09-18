@@ -131,7 +131,7 @@ ESP32-NanoCam 與從動臂之間**透過舵機驅動板的 UART 針腳中轉**:
 pip install platformio
 ```
 
-> Windows 下 `pio` 命令若在 Git Bash 裏找不到,改用 PowerShell/CMD 終端,或把 `C:\Users\<用戶名>\.platformio\penv\Scripts` 加入 PATH。
+> Windows 下 `pio` 命令若在 Git Bash 裏找不到,改用 PowerShell/CMD 終端,或把 `C:\Users\<你的使用者名稱>\.platformio\penv\Scripts` 加入 PATH。
 
 ### 2. 首次構建(自動下載工具鏈)
 
@@ -152,7 +152,7 @@ pio run
 
 - PlatformIO 剩餘時間估算不準,常卡住一段時間後突然跳完,給 5 分鐘觀察百分比是否推進;
 - 開代理/VPN(走系統代理);
-- 手動下載工具鏈:瀏覽器下載 `https://dl.espressif.com/dl/xtensa-esp32s3-elf-gcc8_4_0-esp-2021r2-patch5-win32.zip`(Linux 對應 `-linux-amd64.tar.gz`),解壓後把目錄改名為 `toolchain-xtensa-esp32s3` 放入 `C:\Users\<用戶名>\.platformio\packages\`,重跑 `pio run`;
+- 手動下載工具鏈:瀏覽器下載 `https://dl.espressif.com/dl/xtensa-esp32s3-elf-gcc8_4_0-esp-2021r2-patch5-win32.zip`(Linux 對應 `-linux-amd64.tar.gz`),解壓後把目錄改名為 `toolchain-xtensa-esp32s3` 放入 `C:\Users\<你的使用者名稱>\.platformio\packages\`,重跑 `pio run`;
 - 中途 Ctrl+C 中斷不會損壞環境,重跑會續傳。
 
 ### 3. 安裝 Ubuntu 運行環境

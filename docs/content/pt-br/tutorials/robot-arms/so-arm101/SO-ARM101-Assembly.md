@@ -116,7 +116,7 @@ O vídeo abaixo mostra a sequência de passos para definir o ID dos motores.
 
 Use o software host de servo Feetech para definir o ID do servo e calibrar a posição central; a definição de ID vai de 1 a 6!
 
-**Configuração de ID dos servos do braço robótico - sistema Windows.mp4**（机械臂舵机设置ID-Windows系统.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**Configuração de ID dos servos do braço robótico - sistema Windows.mp4**（机械臂舵机设置ID-Windows系统.mp4, acima do limite de tamanho por arquivo do site — solicite em support@juxitech.com）
 
 ### Sistema Linux/ubuntu e computador Mac
 
@@ -208,13 +208,13 @@ lerobot-setup-motors \
     --teleop.port=/dev/ttyACM0
 ```
 
-**Configuração de ID dos servos do braço robótico - sistema Linux.mp4**（机械臂舵机设置ID-Linux系统.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**Configuração de ID dos servos do braço robótico - sistema Linux.mp4**（机械臂舵机设置ID-Linux系统.mp4, acima do limite de tamanho por arquivo do site — solicite em support@juxitech.com）
 
 ## Segundo passo: montagem
 
 - Os passos de montagem do braço seguidor são basicamente os mesmos do braço líder. A única diferença é que, após o passo 12, a forma de instalar o atuador final (garra e punho) é diferente.
 
-**Tutorial de montagem do braço robótico SO-ARM101.mp4**（SO-ARM101机械臂组装教程.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**Tutorial de montagem do braço robótico SO-ARM101.mp4**（SO-ARM101机械臂组装教程.mp4, acima do limite de tamanho por arquivo do site — solicite em support@juxitech.com）
 
 Instalação da placa de acionamento de servos: instale primeiro os 4 espaçadores de latão e depois fixe a placa de acionamento com quatro parafusos M2.5*8
 

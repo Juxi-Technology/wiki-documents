@@ -35,7 +35,7 @@ Após a execução inicia-se a teleoperação
 
 Será aberta a janela rerun.io, mostrando em tempo real as trajetórias de cada articulação dos servos, bem como a imagem em tempo real da câmara
 
-E guarda as imagens no diretório `~/用户名/outputs/captured_images`
+E guarda as imagens no diretório `~/<utilizador>/outputs/captured_images`
 
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-05-Camera-Teleoperation-MacOS/2.jpg)
 

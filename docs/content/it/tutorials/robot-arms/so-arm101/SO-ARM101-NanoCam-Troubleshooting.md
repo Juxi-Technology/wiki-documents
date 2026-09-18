@@ -31,8 +31,8 @@ Questa pagina raccoglie la risoluzione dei problemi più comuni della teleoperaz
 ## Problemi di compilazione e toolchain
 
 - **Primo `pio run` lento/bloccato** (al primo avvio scarica in sequenza la piattaforma espressif32, la toolchain `toolchain-xtensa-esp32s3` di circa 100 MB e il framework Arduino di circa 200 MB): la stima del tempo rimanente di PlatformIO non è precisa, spesso resta ferma a lungo e poi salta di colpo; attendere 5 minuti osservando se la percentuale avanza; si può attivare un proxy/VPN (tramite il proxy di sistema);
-- **Download manuale della toolchain**: dal browser scaricare `https://dl.espressif.com/dl/xtensa-esp32s3-elf-gcc8_4_0-esp-2021r2-patch5-win32.zip` (su Linux il corrispondente `-linux-amd64.tar.gz`), dopo l'estrazione rinominare la directory in `toolchain-xtensa-esp32s3` e copiarla in `C:\Users\<用户名>\.platformio\packages\`, quindi rieseguire `pio run`; un'interruzione con Ctrl+C a metà non danneggia l'ambiente: rieseguendo, il download riprende da dove era rimasto;
-- **Sotto Windows il comando `pio` non si trova in Git Bash**: usare un terminale PowerShell/CMD oppure aggiungere `C:\Users\<用户名>\.platformio\penv\Scripts` al PATH.
+- **Download manuale della toolchain**: dal browser scaricare `https://dl.espressif.com/dl/xtensa-esp32s3-elf-gcc8_4_0-esp-2021r2-patch5-win32.zip` (su Linux il corrispondente `-linux-amd64.tar.gz`), dopo l'estrazione rinominare la directory in `toolchain-xtensa-esp32s3` e copiarla in `C:\Users\<nome-utente>\.platformio\packages\`, quindi rieseguire `pio run`; un'interruzione con Ctrl+C a metà non danneggia l'ambiente: rieseguendo, il download riprende da dove era rimasto;
+- **Sotto Windows il comando `pio` non si trova in Git Bash**: usare un terminale PowerShell/CMD oppure aggiungere `C:\Users\<nome-utente>\.platformio\penv\Scripts` al PATH.
 
 ## Diagnostica specifica della fotocamera
 

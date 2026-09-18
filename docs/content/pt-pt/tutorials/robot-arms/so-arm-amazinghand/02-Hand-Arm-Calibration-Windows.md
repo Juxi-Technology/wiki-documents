@@ -49,7 +49,7 @@ lerobot-calibrate --teleop.type=so101_leader --teleop.port=<leader_arm_com> --te
 2. **Empurre cada junta, uma a uma, até ao curso máximo/mínimo** e prima Enter no fim
 
 **Verificação**: o ficheiro de calibração é guardado automaticamente em
-`C:\Users\<username>.cache\huggingface\lerobot\calibration\teleoperators\so_leader\amazing_hand_leader.json`
+`C:\Users\<utilizador>.cache\huggingface\lerobot\calibration\teleoperators\so_leader\amazing_hand_leader.json`
 
 > **⚠️ Nota 1 (a garra deve ser calibrada)**: o curso do servo da garra n.º 6 será usado como referência de normalização de `gripper.pos` (0~100). A garra deve ser empurrada de totalmente aberta até totalmente fechada, com calibração correta, caso contrário a proporção de abertura/fecho da mão ficará distorcida.
 
@@ -74,7 +74,7 @@ lerobot-calibrate --robot.type=so101_amazing_hand --robot.port=<follower_arm_com
 2. Percorra o curso completo de cada junta e prima Enter
 
 **Verificação**: o ficheiro de calibração é guardado em
-`C:\Users\<username>.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\amazing_hand_follower.json`
+`C:\Users\<utilizador>.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\amazing_hand_follower.json`
 
 > **⚠️ Nota 1 (binário da mão ativado automaticamente)**: ao ligar, este comando **ativa automaticamente o binário dos 8 servos da mão** (o log mostra `enabling AmazingHand torque`); no fim da calibração a mão abre, o que é um comportamento normal.
 
@@ -107,7 +107,7 @@ lerobot-calibrate-amazing-hand --hand_port <hand_com> --leader_port <leader_arm_
 6. Feche a janela (a mão liberta o binário automaticamente)
 
 **Verificação**: os ângulos e o mapeamento da garra são guardados em
-`C:\Users\<username>.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\hand_angles.json`
+`C:\Users\<utilizador>.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\hand_angles.json`
 
 > **⚠️ Nota 1 (calibração obrigatória)**: **cada computador novo/cada mão nova deve executar este passo**. Os ângulos no config são o padrão genérico oficial do AmazingHand, servindo apenas de reserva; quando `hand_angles.json` existe, os seus valores medidos são carregados com prioridade. Não calibrar pode causar erros na direção/alcance de abertura e fecho.
 

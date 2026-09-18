@@ -21,7 +21,7 @@ lerobot-teleoperate --robot.type=so101_follower --robot.port=COM6 --robot.id=my_
 
 A rerun.io window opens, displaying the trajectory of each servo joint and the live camera feed in real time
 
-The images are also saved to the `C:\Users\用户\outputs\captured_images` directory
+The images are also saved to the `C:\Users\<Windows-username>\outputs\captured_images` directory
 
 ![image.png](../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-05-Camera-Teleoperation-Windows/2.jpg)
 

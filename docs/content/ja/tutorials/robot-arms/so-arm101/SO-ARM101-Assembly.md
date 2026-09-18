@@ -116,7 +116,7 @@ https://gitee.com/ftservo/fddebug
 
 Feetech サーボ上位機を使ってサーボ ID を設定し中位をキャリブレーションします。ID の設定は 1 から 6 です！
 
-**ロボットアームのサーボ ID 設定-Windows システム.mp4**（机械臂舵机设置ID-Windows系统.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**ロボットアームのサーボ ID 設定-Windows システム.mp4**（机械臂舵机设置ID-Windows系统.mp4、サイトの単一ファイル上限を超えているため、support@juxitech.com までご請求ください）
 
 ### Linux/ubuntu システムと Mac パソコン
 
@@ -208,13 +208,13 @@ lerobot-setup-motors \
     --teleop.port=/dev/ttyACM0
 ```
 
-**ロボットアームのサーボ ID 設定-Linux システム.mp4**（机械臂舵机设置ID-Linux系统.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**ロボットアームのサーボ ID 設定-Linux システム.mp4**（机械臂舵机设置ID-Linux系统.mp4、サイトの単一ファイル上限を超えているため、support@juxitech.com までご請求ください）
 
 ## ステップ 2：組み立て
 
 - フォロワーアームの組み立て手順はリーダーアームとほぼ同じです。唯一の違いは、ステップ 12 以降のエンドエフェクタ（グリッパとハンドル）の取り付け方法が異なることです。
 
-**SO-ARM101ロボットアーム組立チュートリアル.mp4**（SO-ARM101机械臂组装教程.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**SO-ARM101ロボットアーム組立チュートリアル.mp4**（SO-ARM101机械臂组装教程.mp4、サイトの単一ファイル上限を超えているため、support@juxitech.com までご請求ください）
 
 サーボドライバ基板の取り付け：まず 4 本の銅スペーサーを取り付け、次に 4 本の M2.5*8 ネジでドライバ基板を固定します
 

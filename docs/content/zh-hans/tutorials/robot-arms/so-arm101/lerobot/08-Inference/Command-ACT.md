@@ -13,7 +13,7 @@ description: "ACT 模型推理命令:在 Ubuntu 与 Mac 上分别给出用 ACT �
 
 ```Shell
 sudo chmod 666 /dev/ttyACM*
-sudo rm -rf /home/<你的用户名>/.cache/huggingface/lerobot/<用户名>/rollout_lerobot_my_dataset_shake_hands
+sudo rm -rf /home/<你的用户名>/.cache/huggingface/lerobot/<你的用户名>/rollout_lerobot_my_dataset_shake_hands
 ```
 
 - 部署命令行
@@ -36,7 +36,7 @@ lerobot-rollout  \
 - 删除原有的数据集（如有）
 
 ```Shell
-sudo rm -rf /Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/rollout_lerobot_my_dataset_shake_hands
+sudo rm -rf /Users/<你的用户名>/.cache/huggingface/lerobot/<你的用户名>/rollout_lerobot_my_dataset_shake_hands
 ```
 
 - 部署命令行

@@ -18,7 +18,7 @@ Ao recolher o conjunto de dados, defina `push_to_hub=true`; após a recolha, o c
 Ao recolher o conjunto de dados, defina `push_to_hub=false`; após a recolha, o carregamento é manual
 
 ```Shell
-hf upload <用户名>/lerobot_my_dataset_a /Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_a / --repo-type=dataset
+hf upload <utilizador>/lerobot_my_dataset_a /Users/<utilizador>/.cache/huggingface/lerobot/<utilizador>/lerobot_my_dataset_a / --repo-type=dataset
 ```
 
 Quer seja carregamento automático ou manual, a velocidade de carregamento é muito lenta (cem KB por segundo)
@@ -33,7 +33,7 @@ https://featurize.cn?s=d7ce99f842414bfcaea5662a97581bd1
 
 ### Abrir uma instância de GPU na nuvem
 
-### Carregar o pacote comprimido do conjunto de dados para `数据集`
+### Carregar o pacote comprimido do conjunto de dados para `Conjuntos de dados`
 
 ### Copiar o comando de descarregamento da instância
 
@@ -60,11 +60,11 @@ api = HfApi()
 
 api.upload_folder(
     folder_path="~/lerobot_my_dataset_a",
-    repo_id="<用户名>/lerobot_my_dataset_a",
+    repo_id="<utilizador>/lerobot_my_dataset_a",
     repo_type="dataset"
 )
 
-api.create_tag("<用户名>/lerobot_my_dataset_a", tag="v0.4.0", repo_type="dataset")
+api.create_tag("<utilizador>/lerobot_my_dataset_a", tag="v0.4.0", repo_type="dataset")
 ```
 
 Executar o ficheiro
@@ -78,7 +78,7 @@ python upload_dataset.py
 - Outro método de carregamento (não recomendado)
 
 ```Shell
-hf upload <用户名>/lerobot_my_dataset_a lerobot_my_dataset_a / --repo-type=dataset
+hf upload <utilizador>/lerobot_my_dataset_a lerobot_my_dataset_a / --repo-type=dataset
 ```
 
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-06-Data-Collection-HF-Dataset-Upload/4.png)

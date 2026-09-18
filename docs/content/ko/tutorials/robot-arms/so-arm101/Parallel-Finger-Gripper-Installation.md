@@ -9,7 +9,7 @@ description: "Onshape 모델과 설치 영상, Feetech 디버깅 도구를 사�
 
 [PincOpen 어셈블리.step](/downloads/PincOpen装配体.step)
 
-**평행 핑거 그리퍼 설치 단계.mp4**（平行指夹爪安装步骤.mp4，体积超过站点单文件上限，可向 support@juxitech.com 索取）
+**평행 핑거 그리퍼 설치 단계.mp4**（平行指夹爪安装步骤.mp4, 사이트 단일 파일 용량 한도를 초과하여 support@juxitech.com 으로 요청해 주세요）
 
 ![8.png](../../../../../public/images/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation/1.jpg)
 

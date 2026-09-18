@@ -12,12 +12,12 @@ description: "在真机上示教采集数据集:替换命令中的占位符,用�
 | 占位符 | 它代表什么 | 怎么替换 |
 |---|---|---|
 | `<你的用户名>` | 你电脑的系统用户名，也就是家目录的名称 | 在终端里输入 `whoami` 就能看到 |
-| `<用户名>` | 你的 HuggingFace 账号名 | 登录 HuggingFace 后，看右上角头像旁的账号名 |
+| `<你的用户名>` | 你的 HuggingFace 账号名 | 登录 HuggingFace 后，看右上角头像旁的账号名 |
 
 举个例子。假设终端的 `whoami` 输出是 `zhangsan`，你的 HuggingFace 账号名也是 `zhangsan`，那么
 
-- `/Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/` 就应该写成 `/Users/zhangsan/.cache/huggingface/lerobot/zhangsan/`
-- `<用户名>/lerobot_my_dataset_a` 就应该写成 `zhangsan/lerobot_my_dataset_a`
+- `/Users/<你的用户名>/.cache/huggingface/lerobot/<你的用户名>/` 就应该写成 `/Users/zhangsan/.cache/huggingface/lerobot/zhangsan/`
+- `<你的用户名>/lerobot_my_dataset_a` 就应该写成 `zhangsan/lerobot_my_dataset_a`
 
 > 后面所有命令里的这两个占位符，也按同样的方式替换。
 
@@ -26,7 +26,7 @@ description: "在真机上示教采集数据集:替换命令中的占位符,用�
 ## 删除之前已经有的同名数据集（如果有）
 
 ```Shell
-sudo rm -rf /Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_a
+sudo rm -rf /Users/<你的用户名>/.cache/huggingface/lerobot/<你的用户名>/lerobot_my_dataset_a
 ```
 
 ## 一个摄像头，采集数据集-Mac电脑
@@ -41,7 +41,7 @@ lerobot-record \
     --teleop.port=/dev/tty.usbmodem5AAF2194741 \
     --teleop.id=my_leader_arm \
     --display_data=true \
-    --dataset.repo_id=<用户名>/lerobot_my_dataset_a \
+    --dataset.repo_id=<你的用户名>/lerobot_my_dataset_a \
     --dataset.num_episodes=40 \
     --dataset.single_task="Grab Oranges" \
     --dataset.push_to_hub=false \
@@ -61,7 +61,7 @@ lerobot-record \
     --teleop.port=/dev/tty.usbmodem5AAF2194741 \
     --teleop.id=my_leader_arm \
     --display_data=true \
-    --dataset.repo_id=<用户名>/lerobot_my_dataset_a \
+    --dataset.repo_id=<你的用户名>/lerobot_my_dataset_a \
     --dataset.num_episodes=40 \
     --dataset.single_task="Grab Oranges" \
     --dataset.push_to_hub=true \
@@ -83,7 +83,7 @@ ESC，立即停止，编码视频，并上传数据集。
 ## 采集完毕，数据集保存目录
 
 ```Shell
-/Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_a
+/Users/<你的用户名>/.cache/huggingface/lerobot/<你的用户名>/lerobot_my_dataset_a
 ```
 
 ## 握手
@@ -98,7 +98,7 @@ lerobot-record \
     --teleop.port=/dev/tty.usbmodem5AAF2194741 \
     --teleop.id=my_leader_arm \
     --display_data=true \
-    --dataset.repo_id=<用户名>/lerobot_my_dataset_shake_hands \
+    --dataset.repo_id=<你的用户名>/lerobot_my_dataset_shake_hands \
     --dataset.num_episodes=30 \
     --dataset.single_task="Shanke Hands" \
     --dataset.push_to_hub=false \
@@ -109,7 +109,7 @@ lerobot-record \
 采集完毕后，握手数据集会保存在：
 
 ```Shell
-/Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_shake_hands
+/Users/<你的用户名>/.cache/huggingface/lerobot/<你的用户名>/lerobot_my_dataset_shake_hands
 ```
 
 ## 关于教程里用到的两个数据集
@@ -131,7 +131,7 @@ lerobot-record \
 
 ## 采集完成后
 
-数据默认保存在 `~/.cache/huggingface/lerobot/<用户名>/` 下。接下来：
+数据默认保存在 `~/.cache/huggingface/lerobot/<你的用户名>/` 下。接下来：
 
 1. 想把数据集备份到云端，见[上传数据集到HuggingFace（可选）](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload)
 2. 准备开始训练，请接着看[第七步：训练模型](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Cloud-GPU)，那篇会先带你在云GPU平台上把数据传上去、把环境装好

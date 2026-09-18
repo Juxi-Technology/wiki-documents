@@ -18,7 +18,7 @@ description: "収集したデータセットをHuggingFaceにアップロード�
 データセットの収集時に`push_to_hub=false`を設定すると、収集完了後に手動でアップロードします
 
 ```Shell
-hf upload <用户名>/lerobot_my_dataset_a /Users/<你的用户名>/.cache/huggingface/lerobot/<用户名>/lerobot_my_dataset_a / --repo-type=dataset
+hf upload <ユーザー名>/lerobot_my_dataset_a /Users/<ユーザー名>/.cache/huggingface/lerobot/<ユーザー名>/lerobot_my_dataset_a / --repo-type=dataset
 ```
 
 自動アップロードであっても手動アップロードであっても、アップロード速度はどちらも非常に遅いです（毎秒100KB）
@@ -33,7 +33,7 @@ https://featurize.cn?s=d7ce99f842414bfcaea5662a97581bd1
 
 ### クラウドGPUインスタンスを起動する
 
-### データセットの圧縮ファイルを`数据集`にアップロードする
+### データセットの圧縮ファイルを`データセット`にアップロードする
 
 ### インスタンスのダウンロードコマンドをコピーする
 
@@ -60,11 +60,11 @@ api = HfApi()
 
 api.upload_folder(
     folder_path="~/lerobot_my_dataset_a",
-    repo_id="<用户名>/lerobot_my_dataset_a",
+    repo_id="<ユーザー名>/lerobot_my_dataset_a",
     repo_type="dataset"
 )
 
-api.create_tag("<用户名>/lerobot_my_dataset_a", tag="v0.4.0", repo_type="dataset")
+api.create_tag("<ユーザー名>/lerobot_my_dataset_a", tag="v0.4.0", repo_type="dataset")
 ```
 
 ファイルを実行する
@@ -78,7 +78,7 @@ python upload_dataset.py
 - 別のアップロード方法（非推奨）
 
 ```Shell
-hf upload <用户名>/lerobot_my_dataset_a lerobot_my_dataset_a / --repo-type=dataset
+hf upload <ユーザー名>/lerobot_my_dataset_a lerobot_my_dataset_a / --repo-type=dataset
 ```
 
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-06-Data-Collection-HF-Dataset-Upload/4.png)
