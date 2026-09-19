@@ -5,7 +5,7 @@ description: "AmazingHand 手势追踪一键部署（Windows）：双击编号�
 
 # Windows一键部署运行
 
-[AmazingHand-main.zip](/downloads/AmazingHand-main.zip)
+**AmazingHand-main.zip**（AmazingHand-main.zip, 体积超过站点单文件上限,可向 support@juxitech.com 索取）
 
 本教程基于 AmazingHand（Pollen Robotics 灵巧手）官方 Demo，已配好一键部署脚本。
 按编号顺序执行即可。**所有脚本都位于 ****`Demo\Windows一键部署脚本\`**** 文件夹下，直接双击运行。**

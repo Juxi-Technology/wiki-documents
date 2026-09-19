@@ -5,7 +5,7 @@ description: "AmazingHand ジェスチャートラッキング ワンクリッ�
 
 # Windows ワンクリックデプロイ実行
 
-[AmazingHand-main.zip](/downloads/AmazingHand-main.zip)
+**AmazingHand-main.zip**（AmazingHand-main.zip, サイトの単一ファイル上限を超えているため, support@juxitech.com までご請求ください）
 
 本チュートリアルは AmazingHand（Pollen Robotics の器用なハンド）公式 Demo に基づいており、ワンクリックデプロイスクリプトを用意済みです。
 番号順に実行するだけです。**すべてのスクリプトは ****`Demo\Windows一键部署脚本\`**** フォルダ下にあり、そのままダブルクリックで実行します。**

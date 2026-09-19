@@ -5,7 +5,7 @@ description: "AmazingHand Gesten-Tracking per Ein-Klick-Deployment unter Windows
 
 # Windows Ein-Klick-Deployment und -Ausführung
 
-[AmazingHand-main.zip](/downloads/AmazingHand-main.zip)
+**AmazingHand-main.zip**（AmazingHand-main.zip, größer als das Dateigrößenlimit der Site — auf Anfrage bei support@juxitech.com）
 
 Dieses Tutorial basiert auf dem offiziellen Demo von AmazingHand （Fingerhand von Pollen Robotics）, die Ein-Klick-Deployment-Skripte sind bereits vorbereitet.
 Führen Sie alles einfach in der Reihenfolge der Nummerierung aus. **Alle Skripte befinden sich im Ordner **`Demo\Windows一键部署脚本\`** und werden direkt per Doppelklick ausgeführt.**

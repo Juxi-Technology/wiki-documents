@@ -5,7 +5,7 @@ description: "AmazingHand gesture-tracking one-click deployment on Windows: doub
 
 # Windows One-Click Deployment and Run
 
-[AmazingHand-main.zip](/downloads/AmazingHand-main.zip)
+**AmazingHand-main.zip**（AmazingHand-main.zip, larger than the site's per-file size limit — request it from support@juxitech.com）
 
 This tutorial is based on the official AmazingHand (Pollen Robotics dexterous hand) Demo, with one-click deployment scripts already prepared.
 Just execute them in numerical order. **All scripts are located in the ****`Demo\Windows一键部署脚本\`**** folder — simply double-click to run them.**

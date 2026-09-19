@@ -5,7 +5,7 @@ description: "Distribuzione in un clic del tracciamento dei gesti AmazingHand su
 
 # Distribuzione ed esecuzione in un clic su Windows
 
-[AmazingHand-main.zip](/downloads/AmazingHand-main.zip)
+**AmazingHand-main.zip**（AmazingHand-main.zip, supera il limite di dimensione per file del sito — richiedilo a support@juxitech.com）
 
 Questo tutorial si basa sulla Demo ufficiale di AmazingHand (mano abile Pollen Robotics); gli script di distribuzione in un clic sono già pronti.
 È sufficiente eseguirli in ordine numerico. **Tutti gli script si trovano nella cartella ****`Demo\Windows一键部署脚本\`**** e si avviano facendo doppio clic。**

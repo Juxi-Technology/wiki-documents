@@ -5,7 +5,7 @@ description: "Implementação com um clique do rastreio de gestos AmazingHand no
 
 # Implementação e execução com um clique no Windows
 
-[AmazingHand-main.zip](/downloads/AmazingHand-main.zip)
+**AmazingHand-main.zip**（AmazingHand-main.zip, acima do limite de tamanho por ficheiro do site — solicite em support@juxitech.com）
 
 Este tutorial baseia-se no Demo oficial do AmazingHand (mão robótica da Pollen Robotics) e já vem com scripts de implementação com um clique.
 Basta executar pela ordem numérica.**Todos os scripts estão na pasta ****`Demo\Windows一键部署脚本\`**** ; faça duplo clique para executar.**

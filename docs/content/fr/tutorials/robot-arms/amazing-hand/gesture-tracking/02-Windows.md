@@ -5,7 +5,7 @@ description: "Déploiement en un clic du suivi de gestes AmazingHand sous Window
 
 # Déploiement et exécution en un clic sous Windows
 
-[AmazingHand-main.zip](/downloads/AmazingHand-main.zip)
+**AmazingHand-main.zip**（AmazingHand-main.zip, au-delà de la limite de taille par fichier du site — à demander à support@juxitech.com）
 
 Ce tutoriel est basé sur la Demo officielle d'AmazingHand (main dextre de Pollen Robotics) ; le script de déploiement en un clic est déjà configuré.
 Il suffit de les exécuter dans l'ordre des numéros. **Tous les scripts se trouvent dans le dossier ****`Demo\Windows一键部署脚本\`**** et s'exécutent directement par double-clic.**

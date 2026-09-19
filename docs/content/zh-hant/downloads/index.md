@@ -16,12 +16,19 @@ description: "鉅犀科技下載中心——機械臂、感測器產品的韌體
 - 🔧 [SO-ARM101 使用教程](/zh-hant/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial)
 - 🔧 [SO-ARM101 組裝教程](/zh-hant/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly)
 - 📦 [SO-ARM101 開源倉庫](https://github.com/Juxi-Technology/lerobot)(LeRobot 生態)
+- 📦 [Juxi_ServoController.zip](/downloads/Juxi_ServoController.zip)
+- 📦 [PincOpen裝配體.step](/downloads/PincOpen装配体.step)
+- 📦 [SO-ARM101_ROS2.zip](/downloads/SO-ARM101_ROS2.zip)
+- 📦 [wx_camera_1768098182808.mp4](/downloads/wx_camera_1768098182808.mp4)
+- 📦 [wx_camera_1768139334330.mp4](/downloads/wx_camera_1768139334330.mp4)
+- 📦 [飛特舵機上位機.zip](/downloads/飞特舵机上位机.zip)
 
 ### AmazingHand 4 指靈巧手
 
 - 📦 [AmazingHand 開源倉庫](https://github.com/Juxi-Technology/AmazingHand)(Python 控制代碼 + TTL 協議)
 
 ---
+- 📦 [FD.rar](/downloads/FD.rar)
 
 ## 傳感器系列
 
@@ -30,6 +37,9 @@ description: "鉅犀科技下載中心——機械臂、感測器產品的韌體
 - 📦 [ICM42670P 高精度 IMU 開源倉庫](https://github.com/Juxi-Technology/ICM42670P-High-Precision-IMU-Module)(ROS1/ROS2 + 校準工具)
 
 ---
+- 📦 [Arduino.rar](/downloads/Arduino.rar)
+- 📦 [IMU_ROS2.zip](/downloads/IMU_ROS2.zip)
+- 📦 [STM32.zip](/downloads/STM32.zip)
 
 ## 配件系列
 
@@ -57,6 +67,13 @@ description: "鉅犀科技下載中心——機械臂、感測器產品的韌體
 - 🔧 [可視化測試軟件](https://juxitech.feishu.cn/wiki/Wuc3wAppNi5elfkSI6VccrNDnfE)
 
 ---
+
+### Feetech 舵機
+
+- 📦 [SCS009 舵机调试资料.zip](/downloads/SCS009%20舵机调试资料.zip)
+- 📦 [SCS009-20230110-S.stp](/downloads/SCS009-20230110-S.stp)
+- 📦 [ST3215-20200328-to-customer.stp](/downloads/ST3215-20200328-to-customer.stp)
+- 📦 [STS3215 舵机调试资料.zip](/downloads/STS3215%20舵机调试资料.zip)
 
 ## 技術支援
 

@@ -16,12 +16,19 @@ description: "Juxi Technology 제품 펌웨어, SDK, 호스트 소프트웨어 �
 - 🔧 [SO-ARM101 사용 튜토리얼](/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial)
 - 🔧 [SO-ARM101 조립 튜토리얼](/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly)
 - 📦 [SO-ARM101 오픈소스 저장소](https://github.com/Juxi-Technology/lerobot)(LeRobot 에코시스템)
+- 📦 [Juxi_ServoController.zip](/downloads/Juxi_ServoController.zip)
+- 📦 [PincOpen 어셈블리.step](/downloads/PincOpen装配体.step)
+- 📦 [SO-ARM101_ROS2.zip](/downloads/SO-ARM101_ROS2.zip)
+- 📦 [wx_camera_1768098182808.mp4](/downloads/wx_camera_1768098182808.mp4)
+- 📦 [wx_camera_1768139334330.mp4](/downloads/wx_camera_1768139334330.mp4)
+- 📦 [飞特舵机上位机.zip](/downloads/飞特舵机上位机.zip)
 
 ### AmazingHand
 
 - 📦 [AmazingHand 오픈소스 저장소](https://github.com/Juxi-Technology/AmazingHand)(Python 제어 코드 + TTL 프로토콜)
 
 ---
+- 📦 [FD.rar](/downloads/FD.rar)
 
 ## 센서
 
@@ -30,6 +37,9 @@ description: "Juxi Technology 제품 펌웨어, SDK, 호스트 소프트웨어 �
 - 📦 [ICM42670P 고정밀 IMU 저장소](https://github.com/Juxi-Technology/ICM42670P-High-Precision-IMU-Module)(ROS1/ROS2 + 캘리브레이션 도구)
 
 ---
+- 📦 [Arduino.rar](/downloads/Arduino.rar)
+- 📦 [IMU_ROS2.zip](/downloads/IMU_ROS2.zip)
+- 📦 [STM32.zip](/downloads/STM32.zip)
 
 ## 액세서리
 
@@ -57,6 +67,13 @@ description: "Juxi Technology 제품 펌웨어, SDK, 호스트 소프트웨어 �
 - 🔧 [가시화 테스트 소프트웨어](https://juxitech.feishu.cn/wiki/Wuc3wAppNi5elfkSI6VccrNDnfE)
 
 ---
+
+### Feetech 서보
+
+- 📦 [SCS009 서보 디버깅 자료.zip](/downloads/SCS009%20舵机调试资料.zip)
+- 📦 [SCS009-20230110-S.stp](/downloads/SCS009-20230110-S.stp)
+- 📦 [ST3215-20200328-to-customer.stp](/downloads/ST3215-20200328-to-customer.stp)
+- 📦 [STS3215 서보 디버깅 자료.zip](/downloads/STS3215%20舵机调试资料.zip)
 
 ## 지원
 

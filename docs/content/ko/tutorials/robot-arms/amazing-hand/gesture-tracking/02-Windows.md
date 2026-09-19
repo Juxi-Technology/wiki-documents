@@ -5,7 +5,7 @@ description: "AmazingHand 제스처 추적 원클릭 배포(Windows). 스크립�
 
 # Windows 원클릭 배포 실행
 
-[AmazingHand-main.zip](/downloads/AmazingHand-main.zip)
+**AmazingHand-main.zip**（AmazingHand-main.zip, 사이트 단일 파일 용량 한도를 초과하여 support@juxitech.com 으로 요청해 주세요）
 
 본 튜토리얼은 AmazingHand(Pollen Robotics 로봇 손) 공식 Demo를 기반으로 하며, 원클릭 배포 스크립트가 이미 준비되어 있습니다.
 번호 순서대로 실행하면 됩니다. **모든 스크립트는 ****`Demo\Windows一键部署脚本\`**** 폴더에 있으며, 바로 두 번 클릭하여 실행합니다.**
