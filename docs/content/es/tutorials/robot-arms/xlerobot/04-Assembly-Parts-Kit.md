@@ -27,7 +27,7 @@ Si prefiere saltarse la diversión de apretar tornillos, también puede adquirir
 
 - Si dispone de almohadillas antideslizantes, puede pegarlas en la pinza.
 
-## 一、Configurar los servomotores
+## 1. Configurar los servomotores
 
 ||Cantidad|ID del servomotor|Uso|
 |---|---|---|---|

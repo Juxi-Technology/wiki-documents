@@ -25,8 +25,8 @@ description: "Manual del protocolo serie AT del ESP32-NanoCam: referencia comple
 
 |Comando|Descripción|Ejemplo|Valor de retorno|
 |---|---|---|---|
-|`sta_ssid:名称`|Establece el nombre del WiFi|`sta_ssid:MyWiFi`|`OK`|
-|`sta_pd:密码`|Establece la contraseña del WiFi (se reinicia tras modificarla)|`sta_pd:12345678`|`OK` (reinicio)|
+|`sta_ssid:nombre`|Establece el nombre del WiFi|`sta_ssid:MyWiFi`|`OK`|
+|`sta_pd:contraseña`|Establece la contraseña del WiFi (se reinicia tras modificarla)|`sta_pd:12345678`|`OK` (reinicio)|
 
 > El nombre y la contraseña del WiFi admiten un máximo de 30 caracteres; no se admiten caracteres chinos.
 
@@ -34,8 +34,8 @@ description: "Manual del protocolo serie AT del ESP32-NanoCam: referencia comple
 
 |Comando|Descripción|Ejemplo|Valor de retorno|
 |---|---|---|---|
-|`ap_ssid:名称`|Establece el nombre del punto de acceso|`ap_ssid:NanoCam-AP`|`OK`|
-|`ap_pd:密码`|Establece la contraseña del punto de acceso (se reinicia tras modificarla)|`ap_pd:12345678`|`OK` (reinicio)|
+|`ap_ssid:nombre`|Establece el nombre del punto de acceso|`ap_ssid:NanoCam-AP`|`OK`|
+|`ap_pd:contraseña`|Establece la contraseña del punto de acceso (se reinicia tras modificarla)|`ap_pd:12345678`|`OK` (reinicio)|
 
 ### Modo WiFi
 

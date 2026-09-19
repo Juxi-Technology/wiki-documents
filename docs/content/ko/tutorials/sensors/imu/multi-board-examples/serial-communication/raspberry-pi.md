@@ -37,10 +37,10 @@ sudo apt install gedit
 # 매핑 내용 기입
 KERNEL=="ttyUSB*", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", MODE:="0777", SYMLINK+="imu-serial"
 # 파라미터 설명
-`--mode`: 通信模式，可选值为`serial`(串口)或`i2c`
-`--port`: 串口名(如`/dev/ttyUSB0`)或I2C端口号(如`7`)
-`--rate`: 数据打印频率(Hz)，默认10Hz
-`--debug`: 启用调试模式，显示详细信息
+`--mode`: 통신 모드. `serial`(직렬) 또는 `i2c`
+`--port`: 직렬 포트 이름(예: `/dev/ttyUSB0`) 또는 I2C 포트 번호(예: `7`)
+`--rate`: 데이터 출력 주파수(Hz), 기본 10Hz
+`--debug`: 디버그 모드 활성화, 상세 정보 표시
 # 저장 후 종료하고 규칙을 활성화하는 명령 실행
 sudo udevadm trigger
 sudo service udev reload

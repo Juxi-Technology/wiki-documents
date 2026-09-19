@@ -24,11 +24,11 @@ description: "KWS 語音識別模組教程——在 Ubuntu 22.04 安裝 ROS2,並
 # 1. 更新源
 sudo apt update
 
-# 2. 安装 ROS2 基础包（如果还没装ROS2）
-# (如果已安装ROS2，跳过此步)
+# 2. 安裝 ROS2 基礎包（如果還沒裝ROS2）
+# (如果已安裝ROS2，跳過此步)
 # sudo apt install ros-humble-desktop -y
 
-# 3. 安装本项目特定依赖
+# 3. 安裝本項目特定依賴
 sudo apt install python3-pip ros-humble-rviz2 ros-humble-visualization-msgs -y
 pip3 install pyserial
 ```
@@ -42,7 +42,7 @@ pip3 install pyserial
 在終端執行：
 
 ```PowerShell
-# 创建工作空间目录
+# 創建工作空間目錄
 mkdir -p ~/juxi_speech_ws/src
 cd ~/juxi_speech_ws/src
 ```
@@ -50,7 +50,7 @@ cd ~/juxi_speech_ws/src
 #### 創建 ROS2 功能包
 
 ```PowerShell
-# 创建一个名为 juxi_voice 的 Python 功能包
+# 創建一個名為 juxi_voice 的 Python 功能包
 ros2 pkg create --build-type ament_python juxi_voice --license MIT
 ```
 
@@ -98,12 +98,12 @@ class VoiceControlNode(Node):
     def __init__(self):
         super().__init__('juxi_voice_node')
         
-        # === 配置区 ===
+        # === 配置區 ===
         self.serial_port_name = "/dev/ttyUSB0"
         self.baudrate = 115200
         self.frame_len = 5
         
-        # === 唤醒词配置 ===
+        # === 喚醒詞配置 ===
         self.awake_frames = {
             0x01: "你好小犀",
             0x02: "小犀小犀",
@@ -111,7 +111,7 @@ class VoiceControlNode(Node):
         }
         self.is_awake = False
 
-        # === 完整命令词映射 (协议V3) ===
+        # === 完整命令詞映射 (協議V3) ===
         self.cmd_mapping = {
             (0x00, 0x01): ["小车停止", [0xAA, 0x55, 0x00, 0x01, 0xFB]],
             (0x00, 0x04): ["小车前进", [0xAA, 0x55, 0x00, 0x04, 0xFB]],
@@ -168,14 +168,14 @@ class VoiceControlNode(Node):
             self.ser.flushInput()
             return
 
-        # 处理唤醒词
+        # 處理喚醒詞
         if b4 == 0x00 and b3 in self.awake_frames:
             self.is_awake = True
             self._play_voice(self.awake_play_frame)
             self.get_logger().info(f"🔔 已唤醒: {self.awake_frames[b3]}")
             return
 
-        # 处理控制指令
+        # 處理控制指令
         if self.is_awake:
             key = (b3, b4)
             if key in self.cmd_mapping:

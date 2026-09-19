@@ -49,7 +49,7 @@ lerobot-calibrate --teleop.type=so101_leader --teleop.port=<leader_arm_com> --te
 2. **Spingi ogni articolazione in sequenza fino alla corsa massima/minima** e premi Enter al termine
 
 **Verifica**: il file di calibrazione viene salvato automaticamente in
-`C:\Users\<nome-utente>.cache\huggingface\lerobot\calibration\teleoperators\so_leader\amazing_hand_leader.json`
+`C:\Users\<nome-utente>\.cache\huggingface\lerobot\calibration\teleoperators\so_leader\amazing_hand_leader.json`
 
 > **⚠️ Nota 1 (la pinza va calibrata)**: la corsa del servomotore della pinza n. 6 verrà usata come base di normalizzazione per `gripper.pos` (0~100). La pinza va portata da completamente aperta a completamente chiusa e calibrata a dovere; altrimenti la successiva proporzione di apertura/chiusura della mano risulterà distorta.
 
@@ -74,7 +74,7 @@ lerobot-calibrate --robot.type=so101_amazing_hand --robot.port=<follower_arm_com
 2. Fai compiere a ogni articolazione l'intera corsa e premi Enter
 
 **Verifica**: il file di calibrazione viene salvato in
-`C:\Users\<nome-utente>.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\amazing_hand_follower.json`
+`C:\Users\<nome-utente>\.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\amazing_hand_follower.json`
 
 > **⚠️ Nota 1 (la coppia della mano si attiva automaticamente)**: al collegamento questo comando **attiva automaticamente la coppia degli 8 servomotori della mano** (il log mostra `enabling AmazingHand torque`); al termine della calibrazione la mano si apre, ed è normale.
 
@@ -107,7 +107,7 @@ lerobot-calibrate-amazing-hand --hand_port <hand_com> --leader_port <leader_arm_
 6. Chiudi la finestra (la mano disattiva automaticamente la coppia)
 
 **Verifica**: gli angoli e la mappatura della pinza vengono salvati in
-`C:\Users\<nome-utente>.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\hand_angles.json`
+`C:\Users\<nome-utente>\.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\hand_angles.json`
 
 > **⚠️ Nota 1 (calibrazione obbligatoria)**: **è obbligatorio eseguire questo passo su ogni nuovo computer e con ogni mano**. Gli angoli nel config sono i valori predefiniti generici ufficiali di AmazingHand e servono solo come riserva; se esiste `hand_angles.json`, vengono caricati con priorità i tuoi valori misurati. Non calibrare può causare errori nella direzione/corsa di apertura e chiusura.
 

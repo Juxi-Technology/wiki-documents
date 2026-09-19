@@ -133,7 +133,7 @@ sudo apt install python3-venv fonts-noto-cjk fonts-noto-color-emoji
 
 ```bash
 sudo usermod -a -G dialout $USER
-# 注销并重新登录后生效
+# 註銷並重新登錄後生效
 ```
 
 驗證（輸出應包含 `dialout`）：
@@ -201,10 +201,10 @@ SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", SYMLINK+="t
 1. 用 Homebrew 安裝 Python（避免系統自帶 Python 版本過舊）：
 
 ```bash
-# 安装 Homebrew（如果没有）
+# 安裝 Homebrew（如果沒有）
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# 安装 Python
+# 安裝 Python
 brew install python
 ```
 

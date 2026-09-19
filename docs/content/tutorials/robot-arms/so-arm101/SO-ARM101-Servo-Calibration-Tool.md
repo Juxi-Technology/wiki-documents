@@ -354,7 +354,7 @@ Workflow: disable the servos → move each joint to the middle position and reco
 Run to the middle position from a calibration file:
 
 ```bash
-python -m src.tools.run_calibration_middle <校准文件.json> --mode zero
+python -m src.tools.run_calibration_middle <calibration_file.json> --mode zero
 ```
 
 For LeRobot environment setup and the data collection workflow, see the [LeRobot Robot Arm Tutorial](./SO-ARM101-Tutorial.md).

@@ -29,7 +29,7 @@ Visual Studio 2022 Build Tools, marque "Desenvolvimento para desktop com C++"; a
 
 2. **Instalar o Rust** (toolchain rustup + stable-msvc)
 
-3. **Configurar o espelho da Tsinghua para o cargo** (`C:\Users\你的用户名.cargo\config.toml`), para acelerar o download de crates
+3. **Configurar o espelho da Tsinghua para o cargo** (`C:\Users\<usuario>\.cargo\config.toml`), para acelerar o download de crates
 
 4. **Instalar o uv** (gerenciador de pacotes Python)
 
@@ -191,7 +191,7 @@ Após a escolha, são executados automaticamente `dora build` + `dora run`. A ja
 
 - Causa: a configuração do espelho usou o **modo de repositório git** (`.../git/crates.io-index.git`), que precisa baixar mais de 1GB+ de índice na primeira vez
 
-- Solução: altere `C:\Users\你的用户名.cargo\config.toml` para o **índice esparso (sparse)** (ver seção 2.2), ou execute novamente `1-安装环境.bat`
+- Solução: altere `C:\Users\<usuario>\.cargo\config.toml` para o **índice esparso (sparse)** (ver seção 2.2), ou execute novamente `1-安装环境.bat`
 
 ### 8.2 mediapipe sem o submódulo solutions / instalação corrompida
 
@@ -217,7 +217,7 @@ uv pip install mediapipe==0.10.14
 
     - Correção: `cargo install dora-cli --version 0.5.0 --force`
 
-    - Se houver vários dora no PATH (como a versão antiga em `C:\Users\xxx.dora\bin`), garanta que `.cargo\bin` venha primeiro, ou apague a versão antiga
+    - Se houver vários dora no PATH (como a versão antiga em `C:\Users\xxx\.dora\bin`), garanta que `.cargo\bin` venha primeiro, ou apague a versão antiga
 
 ### 8.4 Falha ao carregar o modelo no MuJoCo / mediapipe (caminho com chinês)
 
@@ -262,11 +262,11 @@ python -m pip install opencv-contrib-python numpy mediapipe -i https://mirrors.a
 ### Princípio do fluxo de dados
 
 ```Bash
-摄像头 → HandTracking（MediaPipe 识别手势）
-              ↓ 手部关键点坐标
-         AHSimulation（MuJoCo 仿真 + 逆运动学）
-              ↓ 关节目标角度
-         AHControl（串口 → 舵机驱动板 → 灵巧手）
+Câmera → HandTracking (MediaPipe reconhece gestos)
+              ↓ coordenadas dos pontos-chave da mão
+         AHSimulation (simulação MuJoCo + cinemática inversa)
+              ↓ ângulos alvo das juntas
+         AHControl (porta serial → placa de acionamento dos servos → mão hábil)
 ```
 
 ### Localização da configuração da porta

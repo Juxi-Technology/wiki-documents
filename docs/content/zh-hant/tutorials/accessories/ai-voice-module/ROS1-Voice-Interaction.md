@@ -19,12 +19,12 @@ description: "AI 語音互動模組教程(ROS1 環境)——三種接線方式�
 # 1. 更新源
 sudo apt update
 
-# 2. 安装 ROS1 桌面完整版
-# (如果已安装ROS1，跳过)
+# 2. 安裝 ROS1 桌面完整版
+# (如果已安裝ROS1，跳過)
 sudo apt install ros-noetic-desktop-full -y    # Ubuntu 20.04
 sudo apt install ros-melodic-desktop-full -y   # Ubuntu 18.04
 
-# 3. 安装本项目依赖（同时支持串口和I2C）
+# 3. 安裝本項目依賴（同時支持串口和I2C）
 sudo apt install python3-pip ros-noetic-rviz i2c-tools -y
 pip3 install pyserial smbus2
 
@@ -32,7 +32,7 @@ pip3 install pyserial smbus2
 sudo apt install python-pip ros-melodic-rviz i2c-tools -y
 pip install pyserial smbus2
 
-# 4. 如果使用 I2C 接线，额外安装
+# 4. 如果使用 I2C 接線，額外安裝
 sudo apt install python3-smbus2 -y
 ```
 
@@ -130,7 +130,7 @@ catkin_create_pkg juxi_voice rospy std_msgs visualization_msgs
 **關鍵架構**：
 
 ```Bash
-# 统一命令数据: ID → (串口字节2, 串口字节3, 命令文本, 播报模式)
+# 統一命令數據: ID → (串口字節2, 串口字節3, 命令文本, 播報模式)
 CMD_DATA = {
     1:   (0x01, 0x00, "欢迎语", "被"),
     3:   (0x03, 0x00, "你好小犀", "主"),
@@ -139,10 +139,10 @@ CMD_DATA = {
     ...
 }
 
-# 自动检测函数
+# 自動檢測函數
 def detect_connection():
-    # 1. 尝试串口 /dev/ttyUSB0, /dev/ttyACM0, /dev/ttyAMA0, /dev/ttyS0
-    # 2. 尝试 I2C /dev/i2c-1 (从机地址 0x2A)
+    # 1. 嘗試串口 /dev/ttyUSB0, /dev/ttyACM0, /dev/ttyAMA0, /dev/ttyS0
+    # 2. 嘗試 I2C /dev/i2c-1 (從機地址 0x2A)
     ...
 ```
 
@@ -175,23 +175,23 @@ catkin_make
 
 ```Bash
 source ~/juxi_speech_ws/devel/setup.bash
-# 或写入 ~/.bashrc
+# 或寫入 ~/.bashrc
 echo "source ~/juxi_speech_ws/devel/setup.bash" >> ~/.bashrc
 ```
 
 #### 權限設定
 
 ```Bash
-# I2C 权限
+# I2C 權限
 sudo chmod 666 /dev/i2c-1
-# 串口权限
+# 串口權限
 sudo chmod 666 /dev/ttyUSB0
 sudo chmod 666 /dev/ttyACM0
 sudo chmod 666 /dev/ttyAMA0
-# 或加入用户组
+# 或加入用戶組
 sudo usermod -aG dialout $USER
 sudo usermod -aG i2c $USER
-# 设置后需要重新登录生效
+# 設置後需要重新登錄生效
 ```
 
 #### 執行節點
@@ -261,7 +261,7 @@ rviz -d ~/juxi_speech_ws/src/juxi_voice/juxi_voice.rviz
 
 ```Bash
 rviz
-# 菜单栏: File → Open Config → 选择 juxi_voice.rviz
+# 菜單欄: File → Open Config → 選擇 juxi_voice.rviz
 ```
 
 ---
@@ -301,11 +301,11 @@ rviz
 #### 主機觸發播報
 
 ```Bash
-# 被动播报 (I2C → 写 0xD1, 串口 → 发 FE EF FF XX EE)
+# 被動播報 (I2C → 寫 0xD1, 串口 → 發 FE EF FF XX EE)
 rostopic pub /juxi_passive_play std_msgs/String "data: '这是红色'"
-# 功能词播报 (I2C → 写 0xD2, 串口 → 发 FE EF 01 00 EE)
+# 功能詞播報 (I2C → 寫 0xD2, 串口 → 發 FE EF 01 00 EE)
 rostopic pub /juxi_func_play std_msgs/String "data: '欢迎语'"
-# 命令词播报 (I2C → 写 0xD3, 串口 → 发 FE EF 00 04 EE)
+# 命令詞播報 (I2C → 寫 0xD3, 串口 → 發 FE EF 00 04 EE)
 rostopic pub /juxi_cmd_play std_msgs/String "data: '小车前进'"
 ```
 
@@ -336,14 +336,14 @@ rostopic pub /juxi_cmd_play std_msgs/String "data: '小车前进'"
 檢查接線方式對應的裝置檔案是否存在：
 
 ```Bash
-# I2C 接线
+# I2C 接線
 ls /dev/i2c-1
 sudo i2cdetect -y 1   # 应看到 0x2A
 
-# Type-C 接线
+# Type-C 接線
 ls /dev/ttyUSB0 /dev/ttyACM0
 
-# UART 接线
+# UART 接線
 ls /dev/ttyAMA0 /dev/ttyS0
 ```
 
@@ -351,7 +351,7 @@ ls /dev/ttyAMA0 /dev/ttyS0
 
 ```Bash
 sudo chmod 666 /dev/ttyUSB0   # 或 /dev/ttyACM0 等
-# 或加入 dialout 用户组（需要重新登录）
+# 或加入 dialout 用戶組（需要重新登錄）
 sudo usermod -aG dialout $USER
 ```
 
@@ -359,7 +359,7 @@ sudo usermod -aG dialout $USER
 
 ```Bash
 sudo chmod 666 /dev/i2c-1
-# 或加入 i2c 用户组（需要重新登录）
+# 或加入 i2c 用戶組（需要重新登錄）
 sudo usermod -aG i2c $USER
 ```
 
@@ -392,7 +392,7 @@ source devel/setup.bash
 **7.提示語法錯誤**
 
 ```Bash
-# 确认 Python 脚本有执行权限
+# 確認 Python 腳本有執行權限
 chmod +x ~/juxi_speech_ws/src/juxi_voice/scripts/voice_node.py
 chmod +x ~/juxi_speech_ws/src/juxi_voice/scripts/rviz_control.py
 ```

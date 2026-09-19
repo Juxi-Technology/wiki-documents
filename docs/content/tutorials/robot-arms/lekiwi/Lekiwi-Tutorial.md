@@ -360,13 +360,13 @@ Modify these four files under the example\\lekiwi directory
 
 ![4. Update the configuration!!! – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/1.png)
 
-##### ①修改teleoperate.py
+##### ①Modify teleoperate.py
 
 remote_ip: IP address of Raspberry Pi
 
 port: Port Number when the active arm is connected to a computer or Linux
 
-![①修改teleoperate.py – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
+![①Modify teleoperate.py – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/2.png)
 
 ##### ②Modify record.py
 

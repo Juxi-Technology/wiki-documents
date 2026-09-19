@@ -58,7 +58,7 @@ Se si trasferisce un file dal nano al computer Windows, fare clic con il tasto d
 Nota: il trasferimento di file richiede che il computer e la scheda siano nella stessa rete locale e che la Raspberry Pi abbia il servizio SSH abilitato. Talvolta, se il trasferimento di file non riesce, di norma è perché i permessi della scheda non sono sufficienti; è sufficiente concedere i permessi più elevati.
 
 ```Plain Text
-chmod 777 目录名 
+chmod 777 directory
 ```
 
 

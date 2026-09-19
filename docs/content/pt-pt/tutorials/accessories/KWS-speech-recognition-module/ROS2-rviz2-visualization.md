@@ -136,18 +136,18 @@ class VoiceControlNode(Node):
         self.pub_cmd = self.create_publisher(String, '/juxi_voice_cmd', 10)
         self.ser = self._init_serial()
         self.timer = self.create_timer(0.01, self._read_and_parse_serial)
-        self.get_logger().info("✅ 语音节点启动完成")
+        self.get_logger().info("✅ Voice node started")
 
     def _init_serial(self):
         try:
             ser = serial.Serial(self.serial_port_name, self.baudrate, timeout=0.01)
             if ser.is_open:
-                self.get_logger().info(f"🔌 串口打开成功: {self.serial_port_name}")
+                self.get_logger().info(f"🔌 Serial port opened: {self.serial_port_name}")
                 return ser
         except PermissionError:
-            self.get_logger().error(f"❌ 权限不足！请执行: sudo chmod 777 {self.serial_port_name}")
+            self.get_logger().error(f"❌ Permission denied! Run: sudo chmod 777 {self.serial_port_name}")
         except Exception as e:
-            self.get_logger().error(f"❌ 串口错误: {e}")
+            self.get_logger().error(f"❌ Serial error: {e}")
         return None
 
     def _play_voice(self, play_frame):
@@ -172,7 +172,7 @@ class VoiceControlNode(Node):
         if b4 == 0x00 and b3 in self.awake_frames:
             self.is_awake = True
             self._play_voice(self.awake_play_frame)
-            self.get_logger().info(f"🔔 已唤醒: {self.awake_frames[b3]}")
+            self.get_logger().info(f"🔔 Awakened: {self.awake_frames[b3]}")
             return
 
         # Processar os comandos de controlo
@@ -184,7 +184,7 @@ class VoiceControlNode(Node):
                 msg = String()
                 msg.data = text
                 self.pub_cmd.publish(msg)
-                self.get_logger().info(f"🚀 发送指令: {text}")
+                self.get_logger().info(f"🚀 Sent command: {text}")
 
 def main(args=None):
     rclpy.init(args=args)
@@ -220,11 +220,11 @@ class RvizCubeControl(Node):
         self.marker_pub = self.create_publisher(Marker, '/juxi_visual_marker', 10)
         self.cmd_sub = self.create_subscription(String, '/juxi_voice_cmd', self._cmd_callback, 10)
         self.timer = self.create_timer(0.1, self._publish_marker)
-        self.get_logger().info("✅ RViz节点启动完成")
+        self.get_logger().info("✅ RViz node started")
 
     def _cmd_callback(self, msg):
         cmd = msg.data
-        self.get_logger().info(f"📢 收到: {cmd}")
+        self.get_logger().info(f"📢 Received: {cmd}")
 
         if cmd == "小车前进": self.cube_x += self.move_step
         elif cmd == "小车后退": self.cube_x -= self.move_step
@@ -316,7 +316,7 @@ colcon build --symlink-install
 ```Python
 cd ~/juxi_speech_ws
 source install/setup.bash
-或者写入到环境变量
+# Or add to the environment
 source ~/juxi_speech_ws/install/setup.bash
 ```
 

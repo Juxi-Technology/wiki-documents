@@ -104,13 +104,13 @@ sudo usermod -aG dialout ash
 
 ```PowerShell
 cd IMU_ROS1
-# 下载解压IMU_ROS1压缩文件后，进入到IMU_Library目录下，运行以下指令
+# 下載解壓IMU_ROS1壓縮文件後，進入到IMU_Library目錄下，運行以下指令
 cd IMU_Library
 
-# 安装库及其依赖
+# 安裝庫及其依賴
 pip install -e .
 
-# 或使用setup.py安装
+# 或使用setup.py安裝
 python setup.py install
 ```
 
@@ -143,7 +143,7 @@ catkin_init_workspace
 2. **將傳輸過來的文件IMU_ROS1文件夾複製到~/imu_ros1/src/目錄下**
 
 ```PowerShell
-# 复制 IMU_ROS1 文件夹到新建的 src 目录下
+# 複製 IMU_ROS1 文件夾到新建的 src 目錄下
 cp -r ~/IMU_ROS1 ~/imu_ros1/src
 cd ~/imu_ros1
 catkin_make
@@ -152,10 +152,10 @@ catkin_make
 3. **把工作目錄~/imu_ros1寫入到環境變量中**
 
 ```PowerShell
-# 编辑 ~/.bashrc
+# 編輯 ~/.bashrc
 sudo gedit ~/.bashrc
 
-# 把下面命令写到末尾
+# 把下面命令寫到末尾
 source ~/imu_ros1/devel/setup.bash
 
 source ~/.bashrc
@@ -166,10 +166,10 @@ source ~/.bashrc
 1. **打開終端，輸入roscore啓動節點**
 
 ```PowerShell
-# 启动roscore
+# 啟動roscore
 roscore
 
-# 新开终端，设置环境，启动节点
+# 新開終端，設置環境，啟動節點
 source ~/imu_ros1/devel/setup.bash
 ```
 
@@ -178,10 +178,10 @@ source ~/imu_ros1/devel/setup.bash
 進入腳本所在的 `scripts` 目錄，執行 `chmod +x` 命令賦予可執行權限（`+x` 即 add execute 增加執行權限）：
 
 ```PowerShell
-# 进入imu_driver.py所在目录（按你的实际路径）
+# 進入imu_driver.py所在目錄（按你的實際路徑）
 cd ~/imu_ros1/src/IMU_ROS1/scripts/ 
 
-# 赋予可执行权限（仅需执行1次，永久生效）
+# 賦予可執行權限（僅需執行1次，永久生效）
 chmod +x imu_driver.py
 chmod +x mag_visualizer.py
 ```
@@ -201,17 +201,17 @@ rosrun IMU_ROS1 imu_driver.py
 1. **打開新的終端，查看imu話題**
 
 ```PowerShell
-# 查看当前发布的所有话题
+# 查看當前發布的所有話題
 rostopic list
 ```
 
 2. **打印話題數據**
 
 ```PowerShell
-# 打印IMU原始数据
+# 打印IMU原始數據
 rostopic echo /imu/data_raw
 
-# 打印磁力计数据
+# 打印磁力計數據
 rostopic echo /imu/mag
 ```
 
@@ -228,10 +228,10 @@ roslaunch IMU_ROS1 imu_display.launch
 1. 啓動節點如出現打開失敗，請嘗試以下指令
 
 ```PowerShell
-# 在~/imu_ros1目录下运行
+# 在~/imu_ros1目錄下運行
 source devel/setup.bash
 
-# 端口号问题
+# 端口號問題
 sudo chmod 666 /dev/imu-serial
 ```
 

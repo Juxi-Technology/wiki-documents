@@ -50,8 +50,8 @@ El NanoCam ejecuta por defecto **los modos AP+STA a la vez**, sin necesidad de c
 Con una herramienta de puerto serie (velocidad **115200 8N1**) conecta al puerto Type-C del NanoCam:
 
 ```Plaintext
-sta_ssid:你的WiFi名称
-sta_pd:你的WiFi密码
+sta_ssid:tu_nombre_de_WiFi
+sta_pd:tu_contraseña_de_WiFi
 ```
 
 > Recibir `OK` indica que la configuración se realizó correctamente. Tras modificar la contraseña, el dispositivo se reinicia automáticamente.

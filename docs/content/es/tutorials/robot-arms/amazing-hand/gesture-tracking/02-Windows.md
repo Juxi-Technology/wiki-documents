@@ -29,7 +29,7 @@ Visual Studio 2022 Build Tools; marque "Desarrollo de escritorio con C++" y, tra
 
 2. **Instalar Rust** (rustup + cadena de herramientas stable-msvc)
 
-3. **Configurar la fuente espejo de Tsinghua para cargo** (`C:\Users\你的用户名.cargo\config.toml`), para acelerar la descarga de crates
+3. **Configurar la fuente espejo de Tsinghua para cargo** (`C:\Users\<usuario>\.cargo\config.toml`), para acelerar la descarga de crates
 
 4. **Instalar uv** (gestor de paquetes de Python)
 
@@ -191,7 +191,7 @@ Una vez elegido, se ejecutan automáticamente `dora build` + `dora run`. Se abre
 
 - Causa: la configuración del espejo usa el **método de repositorio git** (`.../git/crates.io-index.git`), que la primera vez descarga un índice de 1GB+
 
-- Solución: cambiar `C:\Users\你的用户名.cargo\config.toml` al **índice disperso sparse** (véase la sección 2.2) o volver a ejecutar directamente `1-安装环境.bat`
+- Solución: cambiar `C:\Users\<usuario>\.cargo\config.toml` al **índice disperso sparse** (véase la sección 2.2) o volver a ejecutar directamente `1-安装环境.bat`
 
 ### 8.2 mediapipe carece del submódulo solutions / instalación dañada
 
@@ -217,7 +217,7 @@ uv pip install mediapipe==0.10.14
 
     - Solución: `cargo install dora-cli --version 0.5.0 --force`
 
-    - Si en el PATH hay varios dora (como la versión antigua de `C:\Users\xxx.dora\bin`), asegúrese de que `.cargo\bin` esté delante, o elimine la versión antigua
+    - Si en el PATH hay varios dora (como la versión antigua de `C:\Users\xxx\.dora\bin`), asegúrese de que `.cargo\bin` esté delante, o elimine la versión antigua
 
 ### 8.4 MuJoCo / mediapipe no pueden cargar el modelo (rutas en chino)
 
@@ -262,11 +262,11 @@ python -m pip install opencv-contrib-python numpy mediapipe -i https://mirrors.a
 ### Principio del flujo de datos
 
 ```Bash
-摄像头 → HandTracking（MediaPipe 识别手势）
-              ↓ 手部关键点坐标
-         AHSimulation（MuJoCo 仿真 + 逆运动学）
-              ↓ 关节目标角度
-         AHControl（串口 → 舵机驱动板 → 灵巧手）
+Cámara → HandTracking (reconocimiento de gestos con MediaPipe)
+              ↓ Coordenadas de los puntos clave de la mano
+         AHSimulation (simulación MuJoCo + cinemática inversa)
+              ↓ Ángulos objetivo de las articulaciones
+         AHControl (puerto serie → placa controladora de servos → mano diestra)
 ```
 
 ### Ubicación de la configuración de puertos

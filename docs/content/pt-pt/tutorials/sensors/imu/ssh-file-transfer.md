@@ -58,7 +58,7 @@ Se for para transferir ficheiros do nano para o computador Windows, clique com o
 Atenção: a transferência de ficheiros requer que o computador e a placa estejam na mesma rede local e que o Raspberry Pi tenha o serviço SSH ativado para poder ser realizada. Por vezes, quando ocorre falha na transferência de ficheiros, geralmente é porque a permissão do lado da placa é insuficiente; basta conceder a permissão máxima.
 
 ```Plain Text
-chmod 777 目录名 
+chmod 777 diretório
 ```
 
 

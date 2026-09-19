@@ -324,10 +324,10 @@ by-path/   controlC0  pcmC0D0c   pcmC0D0p   timer
 **步驟 1： 檢查內核是否支持 snd_usb_audio**
 
 ```Plain Text
-# 方法1： 检查是否已加载驱动模块
+# 方法1： 檢查是否已加載驅動模塊
 lsmod | grep snd_usb_audio
 
-# 方法2： 检查内核是否内置该模块（即使未加载）
+# 方法2： 檢查內核是否內置該模塊（即使未加載）
 modinfo snd_usb_audio  # 有输出=内核支持；无输出=内核未编译该模块
 ```
 
@@ -350,10 +350,10 @@ sudo modprobe snd_usb_audio
 精簡版系統通常沒有 `alsa-utils` 這類工具，需手動安裝：
 
 ```Bash
-# Ubuntu/Debian 系统
+# Ubuntu/Debian 系統
 sudo apt update && sudo apt install -y alsa-utils usbutils
 
-# 无网络环境： 下载 alsa-utils 离线包，用 dpkg -i 安装
+# 無網絡環境： 下載 alsa-utils 離線包，用 dpkg -i 安裝
 ```
 
 ##### 步驟 3： 驗證 USB 聲卡識別與功能
@@ -361,10 +361,10 @@ sudo apt update && sudo apt install -y alsa-utils usbutils
 1.插入 USB 聲卡，執行命令確認設備識別：
 
 ```Bash
-# 查看 USB 设备枚举
+# 查看 USB 設備枚舉
 lsusb | grep -i audio
 
-# 查看音频设备列表
+# 查看音頻設備列表
 aplay -l
 ```
 
@@ -373,7 +373,7 @@ aplay -l
 2.測試音頻輸出（確保揚聲器 / 耳機已連接）：
 
 ```Bash
-# 播放测试音，-D 指定 USB 声卡设备（X 为 aplay -l 显示的 card 编号）
+# 播放測試音，-D 指定 USB 聲卡設備（X 為 aplay -l 顯示的 card 編號）
 speaker-test -c 2 -D plughw:X,0
 ```
 
@@ -382,10 +382,10 @@ speaker-test -c 2 -D plughw:X,0
 若需要在後臺播放音頻、或搭配桌面環境使用，精簡版需額外安裝音頻服務：
 
 ```Bash
-# 轻量级服务（推荐，无桌面也能用）
+# 輕量級服務（推薦，無桌面也能用）
 sudo apt install -y pulseaudio
 
-# 或 PipeWire（Ubuntu 22.04+ 推荐）
+# 或 PipeWire（Ubuntu 22.04+ 推薦）
 sudo apt install -y pipewire pipewire-alsa
 ```
 
@@ -415,7 +415,7 @@ sudo apt install -y linux-generic && sudo reboot
 
 ```Python
 sudo modprobe snd-hda-intel model=generic #（不同机型可尝试不同 model 值）
-# 创建声卡驱动配置文件
+# 創建聲卡驅動配置文件
 sudo echo "options snd-hda-intel model=generic" > /etc/modprobe.d/sound.conf
 sudo reboot
 ```

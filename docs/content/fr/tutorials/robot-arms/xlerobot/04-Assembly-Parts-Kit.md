@@ -27,7 +27,7 @@ Si vous préférez éviter le plaisir de serrer des vis, vous pouvez aussi achet
 
 - Si vous disposez de patins antidérapants, vous pouvez les coller sur la pince.
 
-## 一、Configurer les servos
+## 1. Configurer les servos
 
 ||Quantité|ID du servo|Utilisation|
 |---|---|---|---|

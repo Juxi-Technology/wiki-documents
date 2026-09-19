@@ -354,7 +354,7 @@ python -m src.tools.lerobot_calibrate --arm-type leader
 キャリブレーションファイルに従って中位へ移動:
 
 ```bash
-python -m src.tools.run_calibration_middle <校准文件.json> --mode zero
+python -m src.tools.run_calibration_middle <キャリブレーションファイル.json> --mode zero
 ```
 
 LeRobot 環境のインストールとデータ収集の流れは [LeRobot ロボットアームチュートリアル](./SO-ARM101-Tutorial.md)を参照してください。

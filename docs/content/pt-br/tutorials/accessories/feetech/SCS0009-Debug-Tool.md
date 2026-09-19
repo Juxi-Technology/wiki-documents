@@ -106,7 +106,7 @@ Ver `[OK] 环境检查通过，可以运行项目` significa que o ambiente est�
 
 ```
 端口 (COM 和 LPT)
-  └─ USB-SERIAL CH340 (COM3)     ← 你的舵机串口
+  └─ USB-SERIAL CH340 (COM3)     ← a porta serial do seu servo
 ```
 
 > **Anote o número da COM** e selecione-a após iniciar; também é possível especificar a porta manualmente (quando a porta serial estiver ocupada):

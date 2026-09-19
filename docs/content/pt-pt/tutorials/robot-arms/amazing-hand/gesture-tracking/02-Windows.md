@@ -29,7 +29,7 @@ Visual Studio 2022 Build Tools, assinale "Desenvolvimento para ambiente de traba
 
 2. **Instalar o Rust** (toolchain rustup + stable-msvc)
 
-3. **Configurar o espelho da Tsinghua para o cargo** (`C:\Users\你的用户名.cargo\config.toml`), para acelerar o download de crates
+3. **Configurar o espelho da Tsinghua para o cargo** (`C:\Users\<utilizador>\.cargo\config.toml`), para acelerar o download de crates
 
 4. **Instalar o uv** (gestor de pacotes Python)
 
@@ -191,7 +191,7 @@ Após a escolha, são executados automaticamente `dora build` + `dora run`. A ja
 
 - Causa: a configuração do espelho usou o **modo de repositório git** (`.../git/crates.io-index.git`), que tem de descarregar mais de 1GB+ de índice na primeira vez
 
-- Solução: altere `C:\Users\你的用户名.cargo\config.toml` para o **índice esparso (sparse)** (ver secção 2.2), ou execute novamente `1-安装环境.bat`
+- Solução: altere `C:\Users\<utilizador>\.cargo\config.toml` para o **índice esparso (sparse)** (ver secção 2.2), ou execute novamente `1-安装环境.bat`
 
 ### 8.2 mediapipe sem o submódulo solutions / instalação danificada
 
@@ -217,7 +217,7 @@ uv pip install mediapipe==0.10.14
 
     - Correção: `cargo install dora-cli --version 0.5.0 --force`
 
-    - Se existirem vários dora no PATH (como a versão antiga em `C:\Users\xxx.dora\bin`), garanta que `.cargo\bin` venha primeiro, ou elimine a versão antiga
+    - Se existirem vários dora no PATH (como a versão antiga em `C:\Users\xxx\.dora\bin`), garanta que `.cargo\bin` venha primeiro, ou elimine a versão antiga
 
 ### 8.4 Falha ao carregar o modelo no MuJoCo / mediapipe (caminho com chinês)
 
@@ -262,11 +262,11 @@ python -m pip install opencv-contrib-python numpy mediapipe -i https://mirrors.a
 ### Princípio do fluxo de dados
 
 ```Bash
-摄像头 → HandTracking（MediaPipe 识别手势）
-              ↓ 手部关键点坐标
-         AHSimulation（MuJoCo 仿真 + 逆运动学）
-              ↓ 关节目标角度
-         AHControl（串口 → 舵机驱动板 → 灵巧手）
+Câmara → HandTracking (o MediaPipe reconhece gestos)
+              ↓ Coordenadas dos pontos-chave da mão
+         AHSimulation (simulação MuJoCo + cinemática inversa)
+              ↓ Ângulos-alvo das articulações
+         AHControl (porta série → placa de acionamento dos servos → mão hábil)
 ```
 
 ### Localização da configuração da porta

@@ -50,8 +50,8 @@ By default the NanoCam runs **AP+STA dual mode simultaneously** — no switching
 Connect to the NanoCam's Type-C port with a serial tool (baud rate **115200 8N1**):
 
 ```Plaintext
-sta_ssid:你的WiFi名称
-sta_pd:你的WiFi密码
+sta_ssid:your WiFi name
+sta_pd:your WiFi password
 ```
 
 > Receiving `OK` means the configuration succeeded. The device reboots automatically after the password is changed.

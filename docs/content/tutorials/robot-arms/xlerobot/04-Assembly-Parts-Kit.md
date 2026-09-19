@@ -27,7 +27,7 @@ If you would rather skip the fun of tightening screws, you can also buy the [pre
 
 - If you have anti-slip pads, you can stick them onto the gripper.
 
-## 一、Configure the Servos
+## 1. Configure the Servos
 
 ||Quantity|Servo ID|Purpose|
 |---|---|---|---|

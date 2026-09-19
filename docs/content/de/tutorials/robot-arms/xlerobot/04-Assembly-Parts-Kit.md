@@ -27,7 +27,7 @@ Wenn Sie sich das Vergnügen des Schraubenanziehens lieber ersparen möchten, k�
 
 - Wenn Sie über Antirutsch-Pads verfügen, können Sie diese auf den Greifer kleben.
 
-## 一、Servos konfigurieren
+## 1. Servos konfigurieren
 
 ||Anzahl|Servo-ID|Verwendungszweck|
 |---|---|---|---|

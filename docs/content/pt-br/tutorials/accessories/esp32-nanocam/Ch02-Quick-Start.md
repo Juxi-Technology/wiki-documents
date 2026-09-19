@@ -42,8 +42,8 @@ NanoCam Board Ver:0.3.0
 ### Método A: configuração pela porta serial (mais comum)
 
 ```Plain
-sta_ssid:你的WiFi名
-sta_pd:你的WiFi密码
+sta_ssid:nome_da_sua_rede_WiFi
+sta_pd:senha_da_sua_rede_WiFi
 ```
 
 Ao receber `OK` → configuração bem-sucedida. Após alterar a senha, o dispositivo reinicia automaticamente.

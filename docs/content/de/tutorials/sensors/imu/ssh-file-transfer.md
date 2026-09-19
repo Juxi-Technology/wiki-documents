@@ -58,7 +58,7 @@ Wenn Sie eine Datei vom Nano auf den Windows-Computer übertragen möchten, klic
 Hinweis: Die Dateiübertragung erfordert, dass sich der Computer und das Mainboard im selben lokalen Netzwerk befinden und dass der SSH-Dienst auf dem Raspberry Pi aktiviert ist. Wenn gelegentlich eine Dateiübertragung fehlschlägt, liegt das in der Regel daran, dass die Berechtigungen auf der Seite des Mainboards nicht ausreichen; wir müssen dann lediglich die höchsten Berechtigungen vergeben.
 
 ```Plain Text
-chmod 777 目录名 
+chmod 777 Verzeichnisname
 ```
 
 

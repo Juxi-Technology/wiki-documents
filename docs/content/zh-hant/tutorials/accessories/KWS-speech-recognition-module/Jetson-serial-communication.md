@@ -34,15 +34,15 @@ from typing import Optional, Tuple
 
 class SpeechModule:
     """
-    语音模块串口通信控制器
-    封装了与语音模块的交互逻辑
+    語音模塊串口通信控制器
+    封裝了與語音模塊的交互邏輯
     """
     
     # 串口配置常量
     DEFAULT_PORT = "/dev/ttyUSB0"
     DEFAULT_BAUDRATE = 115200
     
-    # 命令字定义 (播报词/功能ID)
+    # 命令字定義 (播報詞/功能ID)
     CMD_THIS_RED = 0x60
     CMD_THIS_GREEN = 0x61
     CMD_THIS_YELLOW = 0x62
@@ -71,13 +71,13 @@ class SpeechModule:
 
     def send_command(self, cmd_id: int) -> None:
         """
-        发送指令帧
-        协议格式: 0xAA 0x55 0xFF [Data] 0xFB
+        發送指令幀
+        協議格式: 0xAA 0x55 0xFF [Data] 0xFB
         """
         if not self._serial_conn or not self._serial_conn.is_open:
             return
 
-        # 构造完整的数据帧
+        # 構造完整的數據幀
         frame = bytes([0xAA, 0x55, 0xFF, int(cmd_id), 0xFB])
         
         self._serial_conn.write(frame)
@@ -86,13 +86,13 @@ class SpeechModule:
 
     def read_response(self) -> Optional[int]:
         """
-        读取并解析返回数据
-        返回: Read_ID (第6个字节的数据)
+        讀取並解析返回數據
+        返回: Read_ID (第6個字節的數據)
         """
         if not self._serial_conn or not self._serial_conn.is_open:
             return None
 
-        # 检查缓冲区数据量
+        # 檢查緩衝區數據量
         bytes_available = self._serial_conn.in_waiting
         if bytes_available <= 0:
             return None
@@ -100,12 +100,12 @@ class SpeechModule:
         raw_data = self._serial_conn.read(bytes_available)
         hex_str = raw_data.hex()
 
-        # 校验帧头 'aa55'
+        # 校驗幀頭 'aa55'
         if hex_str.startswith('aa55'):
             try:
-                # 简单的索引提取逻辑 (与原代码逻辑保持一致)
-                # 注意：此处假设数据长度足够，实际工业代码建议加长度校验
-                # byte1 = hex_str[4:6] # 保留原逻辑中的第5字节但不使用
+                # 簡單的索引提取邏輯 (與原代碼邏輯保持一致)
+                # 注意：此處假設數據長度足夠，實際工業代碼建議加長度校驗
+                # byte1 = hex_str[4:6] # 保留原邏輯中的第5字節但不使用
                 byte2 = hex_str[6:8] # 提取第6字节
                 
                 read_id = int(byte2, 16)
@@ -124,7 +124,7 @@ class SpeechModule:
         if not self.connect():
             return
 
-        # 初始化模块
+        # 初始化模塊
         self.send_command(self.CMD_INIT)
         time.sleep(0.005)
 

@@ -58,7 +58,7 @@ Si vous transférez un fichier du nano vers l'ordinateur win, faites un clic dro
 Remarque : le transfert de fichiers nécessite que l'ordinateur et la carte mère soient sur le même réseau local, et que le service SSH soit déjà activé sur le Raspberry Pi. Parfois, en cas d'échec du transfert de fichier, il s'agit généralement d'une permission insuffisante du côté de la carte mère ; nous devons simplement accorder les permissions maximales.
 
 ```Plain Text
-chmod 777 目录名 
+chmod 777 nom-du-répertoire
 ```
 
 

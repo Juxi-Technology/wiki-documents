@@ -354,7 +354,7 @@ python -m src.tools.lerobot_calibrate --arm-type leader
 캘리브레이션 파일에 따라 중앙값으로 실행:
 
 ```bash
-python -m src.tools.run_calibration_middle <校准文件.json> --mode zero
+python -m src.tools.run_calibration_middle <캘리브레이션 파일.json> --mode zero
 ```
 
 LeRobot 환경 설치와 데이터 수집 흐름은 [LeRobot 로봇팔 튜토리얼](./SO-ARM101-Tutorial.md)을 참조하세요.

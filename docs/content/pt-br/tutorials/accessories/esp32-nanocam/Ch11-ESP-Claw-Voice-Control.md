@@ -25,11 +25,11 @@ Quando o dispositivo é alternado para `ai_mode:7`, o NanoCam entra no modo ESP-
 Sobre o pipeline de voz, o modo ESP-Claw registra 5 ferramentas exclusivas do NanoCam via `RegisterMcpTools()`:
 
 ```Plain
-用户语音 "把灯调成蓝色"
-  → ASR 语音识别（云端）
-  → LLM 理解意图 → 调用 self.led.set_color({"r":0, "g":0, "b":255})
-  → NanoCam WS2812 LED 变蓝
-  → TTS: "好的，灯已经调成蓝色"
+Comando de voz "Mude a luz para azul"
+  → Reconhecimento de voz ASR (nuvem)
+  → O LLM entende a intenção → chamada de self.led.set_color({"r":0, "g":0, "b":255})
+  → O LED WS2812 do NanoCam fica azul
+  → TTS: "Pronto, a luz já está azul"
 ```
 
 ## Passos
@@ -60,12 +60,12 @@ O dispositivo reinicia automaticamente e entra no modo. Use `ai_mode:6` para vol
 Após a ativação, basta dizer o que você precisa:
 
 ```Plain
-💬 "把灯打开"              → WS2812 亮白色
-💬 "把灯调成蓝色"          → LED 变蓝
-💬 "关灯"                  → LED 关闭
-💬 "切换到人脸检测模式"    → NVS 保存 ai_mode:2 + 重启
-💬 "看看这里有什么"        → 拍照 + 上传多模态 AI 分析
-💬 "我面前有杯子吗"        → 多模态 AI 识别画面
+💬 "Acenda a luz"                          → o WS2812 acende em branco
+💬 "Mude a luz para azul"                  → o LED fica azul
+💬 "Apague a luz"                          → o LED apaga
+💬 "Mude para o modo de detecção de rosto" → salva ai_mode:2 na NVS + reinício
+💬 "Veja o que tem aqui"                   → foto + envio para análise da IA multimodal
+💬 "Tem uma caneca na minha frente?"       → reconhecimento multimodal da imagem
 ```
 
 ### 11.4 Foto + análise visual por IA

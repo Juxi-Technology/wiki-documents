@@ -39,10 +39,10 @@ sudo apt install gedit
 # Renseigner le mappage
 KERNEL=="ttyUSB*", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", MODE:="0777", SYMLINK+="imu-serial"
 # Explication des paramètres
-`--mode`: 通信模式，可选值为`serial`(串口)或`i2c`
-`--port`: 串口名(如`/dev/ttyUSB0`)或I2C端口号(如`7`)
-`--rate`: 数据打印频率(Hz)，默认10Hz
-`--debug`: 启用调试模式，显示详细信息
+`--mode`: Mode de communication : `serial` (série) ou `i2c`
+`--port`: Nom du port série (ex. `/dev/ttyUSB0`) ou numéro de port I2C (ex. `7`)
+`--rate`: Fréquence d'affichage (Hz), 10Hz par défaut
+`--debug`: Activer le mode débug, afficher les détails
 # Enregistrer et quitter, exécuter les commandes pour activer les règles
 sudo udevadm trigger
 sudo service udev reload

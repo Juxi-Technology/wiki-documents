@@ -28,11 +28,11 @@ Este capítulo aborda o modo XiaoZhi AI (`ai_mode:6`). **Importante**: o modo 6 
 O NanoCam integra o framework de código aberto XiaoZhi AI e se conecta ao servidor LLM pelos protocolos WebSocket / MQTT para implementar um pipeline completo de interação por voz:
 
 ```Plain
-用户说话 → ES8311 麦克风采集 → Opus 编码
-  → WebSocket → 云端 ASR 语音识别
-  → LLM 大模型生成回复
-  → TTS 语音合成 → Opus 解码
-  → NS4150B 功放 → 扬声器播放
+O usuário fala → captura pelo microfone ES8311 → codificação Opus
+  → WebSocket → reconhecimento de voz ASR na nuvem
+  → O LLM gera a resposta
+  → Síntese de voz TTS → decodificação Opus
+  → Amplificador NS4150B → reprodução no alto-falante
 ```
 
 Design full-duplex: o usuário pode interromper (barge-in) enquanto a IA fala, proporcionando uma experiência próxima de uma conversa real.
@@ -83,8 +83,8 @@ A ativação é necessária apenas uma vez; depois, a conexão é automática a 
 Após ouvir o tom de aviso, você já pode conversar:
 
 ```Plain
-你: "你好小智，今天天气怎么样？"
-NanoCam: "我帮你查一下今天的天气..."
+Você: "你好小智, como está o tempo hoje?"
+NanoCam: "Vou verificar o tempo de hoje para você..."
 ```
 
 A palavra de ativação é **"你好小智"** (Olá, XiaoZhi; padrão).
@@ -92,11 +92,11 @@ A palavra de ativação é **"你好小智"** (Olá, XiaoZhi; padrão).
 ### 9.4 Cenários comuns de conversa
 
 ```Plain
-💬 "讲个笑话"              → AI 语音回答
-💬 "帮我设个5分钟的闹钟"    → 闹钟功能
-💬 "现在几点了"             → 报时
-💬 "播放一首轻音乐"         → 联网播放音乐
-💬 "什么是黑洞"             → 知识问答
+💬 "Conte uma piada"                           → resposta por voz da IA
+💬 "Configure um alarme de 5 minutos para mim" → função de alarme
+💬 "Que horas são"                             → anúncio da hora
+💬 "Toque uma música leve"                     → reprodução de música pela internet
+💬 "O que é um buraco negro"                   → perguntas de conhecimento
 ```
 
 ## Servidor auto-hospedado (opcional)

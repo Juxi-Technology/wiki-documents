@@ -89,7 +89,7 @@ hf auth login
 
 ```Shell
 wandb login
-复制粘贴API Key，回车
+API 키를 복사해 붙여넣고 Enter를 누릅니다
 ```
 
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-07-Training-Cloud-GPU/5.png)
@@ -101,7 +101,7 @@ wandb login
 두 번째 단계로, 인스턴스의 커맨드라인에서 이 다운로드 커맨드를 실행하고 압축을 풉니다:
 
 ```Shell
-复制实例下载命令，类似：
+인스턴스 다운로드 커맨드를 복사합니다. 다음과 유사합니다:
 featurize dataset download 7f40bdaa-b1a4-4c00-9652-ff26fd079109
 
 unzip lerobot_my_dataset_shake_hands.zip

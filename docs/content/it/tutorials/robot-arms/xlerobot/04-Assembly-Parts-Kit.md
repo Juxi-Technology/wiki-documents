@@ -27,7 +27,7 @@ Se preferisci saltare il divertimento di avvitare le viti, puoi anche acquistare
 
 - Se disponi di cuscinetti antiscivolo, puoi applicarli sulla pinza.
 
-## 一、Configurazione dei servomotori
+## 1. Configurazione dei servomotori
 
 ||Quantità|ID servo|Scopo|
 |---|---|---|---|

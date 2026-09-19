@@ -106,7 +106,7 @@ Se aparecer `[OK] 环境检查通过，可以运行项目`, o ambiente está cor
 
 ```
 端口 (COM 和 LPT)
-  └─ USB-SERIAL CH340 (COM3)     ← 你的舵机串口
+  └─ USB-SERIAL CH340 (COM3)     ← a sua porta série dos servos
 ```
 
 > **Anote o número COM** e selecione-o depois do arranque; também pode indicar a porta manualmente (quando a porta série estiver ocupada):

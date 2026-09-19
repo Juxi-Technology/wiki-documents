@@ -106,7 +106,7 @@ Si vous voyez `[OK] 环境检查通过，可以运行项目`, cela signifie que 
 
 ```
 端口 (COM 和 LPT)
-  └─ USB-SERIAL CH340 (COM3)     ← 你的舵机串口
+  └─ USB-SERIAL CH340 (COM3)     ← le port série de votre servo
 ```
 
 > **Notez le numéro COM**, puis sélectionnez-le après le démarrage ; vous pouvez aussi spécifier le port manuellement (en cas d'occupation du port série) :

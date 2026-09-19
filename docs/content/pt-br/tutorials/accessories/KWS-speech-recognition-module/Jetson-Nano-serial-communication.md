@@ -34,8 +34,8 @@ from typing import Optional, Tuple
 
 class SpeechModule:
     """
-    语音模块串口通信控制器
-    封装了与语音模块的交互逻辑
+    Controlador de comunicação serial para o módulo de voz
+    Encapsula a lógica de interação com o módulo de voz
     """
     
     # Constantes de configuração da porta serial
@@ -58,7 +58,7 @@ class SpeechModule:
         self._serial_conn: Optional[serial.Serial] = None
 
     def connect(self) -> bool:
-        """建立串口连接"""
+        """Establish serial connection"""
         try:
             self._serial_conn = serial.Serial(self._port, self._baudrate, timeout=0.1)
             if self._serial_conn.is_open:
@@ -71,8 +71,8 @@ class SpeechModule:
 
     def send_command(self, cmd_id: int) -> None:
         """
-        发送指令帧
-        协议格式: 0xAA 0x55 0xFF [Data] 0xFB
+        Enviar quadro de comando
+        Formato do protocolo: 0xAA 0x55 0xFF [Data] 0xFB
         """
         if not self._serial_conn or not self._serial_conn.is_open:
             return
@@ -86,8 +86,8 @@ class SpeechModule:
 
     def read_response(self) -> Optional[int]:
         """
-        读取并解析返回数据
-        返回: Read_ID (第6个字节的数据)
+        Ler e analisar os dados retornados
+        Retorna: Read_ID (dados do 6º byte)
         """
         if not self._serial_conn or not self._serial_conn.is_open:
             return None
@@ -120,7 +120,7 @@ class SpeechModule:
         return None
 
     def run(self):
-        """主运行循环"""
+        """Main run loop"""
         if not self.connect():
             return
 

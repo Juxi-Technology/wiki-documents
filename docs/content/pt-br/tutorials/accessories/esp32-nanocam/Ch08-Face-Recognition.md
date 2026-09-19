@@ -14,16 +14,16 @@ description: "Capítulo 8 do tutorial do ESP32-NanoCam (módulo de vídeo WiFi E
 O reconhecimento facial = **detecção de rosto** (pipeline de dois estágios MSR01+MNP01) + **extração de características** (rede neural MFN FaceRecognition112V1S8) + **comparação por similaridade de cosseno**.
 
 ```Plain
-摄像头 RGB565 帧
-  → MSR01 粗检测（320×240, 0.3F 阈值）
-  → MNP01 精检测（基于粗检候选框, 0.4F 阈值）
-  → 10 个面部关键点提取（双眼/鼻尖/嘴角）
-  → 关键点对齐 → 裁剪 112×112 人脸
-  → MFN 卷积网络 → 512 维特征向量
-  → L2 归一化
-  → 与 Flash 中所有已注册 ID 的向量逐一计算余弦距离
-  → 最大余弦相似度 > 阈值(0.55) → 匹配成功 → 输出 ID
-  → 所有相似度 < 阈值 → 陌生人 → 输出 "who?"
+Quadro RGB565 da câmera
+  → Detecção grossa MSR01 (320×240, limiar 0.3F)
+  → Detecção fina MNP01 (com base nos candidatos da detecção grossa, limiar 0.4F)
+  → Extração de 10 pontos-chave do rosto (olhos/nariz/cantos da boca)
+  → Alinhamento pelos pontos-chave → recorte do rosto em 112×112
+  → Rede convolucional MFN → vetor de características de 512 dimensões
+  → Normalização L2
+  → Cálculo da distância de cosseno com cada vetor de ID registrado na Flash
+  → Similaridade de cosseno máxima > limiar (0.55) → correspondência → saída do ID
+  → Todas as similaridades < limiar → pessoa desconhecida → saída de "who?"
 ```
 
 ### Otimização de desempenho
@@ -126,7 +126,7 @@ Volta ao modo de detecção de rosto pura (apenas caixa + pontos-chave, sem reco
 
 ```Plain
 ai_mode:4                          # Entrar no modo de reconhecimento facial
-[设备重启，LED 紫色]
+[dispositivo reinicia, LED roxo]
 
 face_eril                          # Registrar o primeiro rosto (Zhang San)
 → ID 1 is enrolled
@@ -135,19 +135,19 @@ face_eril                          # Registrar o segundo rosto (Li Si)
 → ID 2 is enrolled
 
 face_rz                            # Iniciar o reconhecimento contínuo
-→ 张三站摄像头前: 画面持续显示 "ID: 1"
-→ 李四站摄像头前: 画面持续显示 "ID: 2"
-→ 陌生人站摄像头前: 画面持续显示 "who?"
+→ Zhang San diante da câmera: a imagem mostra "ID: 1" continuamente
+→ Li Si diante da câmera: a imagem mostra "ID: 2" continuamente
+→ Pessoa desconhecida diante da câmera: a imagem mostra "who?" continuamente
 
 face_detect                        # Sair do modo de reconhecimento
-→ 标签消失，只画检测框
+→ Os rótulos desaparecem, apenas a caixa de detecção é desenhada
 
 face_del                           # Excluir Li Si (ID 2)
 → 1 IDs left
 
 face_rz                            # Reconhecer novamente
-→ 张三站摄像头前: "ID: 1"
-→ 李四站摄像头前: "who?" (已被删除)
+→ Zhang San diante da câmera: "ID: 1"
+→ Li Si diante da câmera: "who?" (excluído)
 ```
 
 > O modo de reconhecimento facial consome bastante memória (modelo MFN + dois modelos de detecção de rosto), e a porta serial Type-C (UART0) funciona normalmente. Se a porta serial não responder, verifique primeiro se a taxa de transmissão está em 115200.

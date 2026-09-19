@@ -50,8 +50,8 @@ NanoCam은 기본적으로 **AP+STA 듀얼 모드가 동시에 동작**하며, �
 시리얼 도구(보레이트 **115200 8N1**)로 NanoCam의 Type-C 포트에 연결합니다:
 
 ```Plaintext
-sta_ssid:你的WiFi名称
-sta_pd:你的WiFi密码
+sta_ssid:WiFi이름
+sta_pd:WiFi비밀번호
 ```
 
 > `OK` 수신은 설정 성공을 의미합니다. 비밀번호 수정 후 자동으로 재부팅됩니다.

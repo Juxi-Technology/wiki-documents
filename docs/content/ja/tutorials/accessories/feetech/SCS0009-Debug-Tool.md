@@ -106,7 +106,7 @@ python -m src.gui.factory_calibration_tool
 
 ```
 端口 (COM 和 LPT)
-  └─ USB-SERIAL CH340 (COM3)     ← 你的舵机串口
+  └─ USB-SERIAL CH340 (COM3)     ← あなたのサーボ用シリアルポート
 ```
 
 > **COM 番号を控えてください**。起動後に選択します。手動でポートを指定することもできます(シリアルポートが使用中の場合):

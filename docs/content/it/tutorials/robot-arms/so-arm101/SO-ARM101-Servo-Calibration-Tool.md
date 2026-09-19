@@ -354,7 +354,7 @@ Procedimento: disattivare i servo → portare ogni giunto alla posizione mediana
 Esecuzione della posizione mediana in base al file di calibrazione:
 
 ```bash
-python -m src.tools.run_calibration_middle <校准文件.json> --mode zero
+python -m src.tools.run_calibration_middle <file_di_calibrazione.json> --mode zero
 ```
 
 Per l'installazione dell'ambiente LeRobot e il flusso di raccolta dati vedere il [Tutorial del braccio robotico LeRobot](./SO-ARM101-Tutorial.md).

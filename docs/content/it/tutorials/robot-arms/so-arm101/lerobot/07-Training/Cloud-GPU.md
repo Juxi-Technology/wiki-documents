@@ -89,7 +89,7 @@ hf auth login
 
 ```Shell
 wandb login
-复制粘贴API Key，回车
+Copia e incolla la chiave API, premi Invio
 ```
 
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-07-Training-Cloud-GPU/5.png)
@@ -101,7 +101,7 @@ Primo passo: comprimi in un file zip il dataset acquisito nel sesto passo e cari
 Secondo passo: esegui questo comando di download nella riga di comando dell'istanza e decomprimi:
 
 ```Shell
-复制实例下载命令，类似：
+Copia il comando di download dell'istanza, simile a:
 featurize dataset download 7f40bdaa-b1a4-4c00-9652-ff26fd079109
 
 unzip lerobot_my_dataset_shake_hands.zip

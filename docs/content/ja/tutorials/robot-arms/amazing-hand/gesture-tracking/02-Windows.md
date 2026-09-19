@@ -29,7 +29,7 @@ Visual Studio 2022 Build Tools をインストールし、「C++ によるデス
 
 2. **Rust のインストール**（rustup + stable-msvc ツールチェーン）
 
-3. **cargo の清華ミラー源の設定**（`C:\Users\你的用户名.cargo\config.toml`）、crate のダウンロードを高速化
+3. **cargo の清華ミラー源の設定**（`C:\Users\<ユーザー名>\.cargo\config.toml`）、crate のダウンロードを高速化
 
 4. **uv のインストール**（Python パッケージマネージャー）
 
@@ -191,7 +191,7 @@ check-revoke = false
 
 - 原因：ミラー設定が **git リポジトリ方式**（`.../git/crates.io-index.git`）になっており、初回に 1GB+ のインデックスをダウンロードする
 
-- 解決：`C:\Users\你的用户名.cargo\config.toml` を **sparse 疎インデックス**に変更（2.2 節参照）、または `1-安装环境.bat` を再実行
+- 解決：`C:\Users\<ユーザー名>\.cargo\config.toml` を **sparse 疎インデックス**に変更（2.2 節参照）、または `1-安装环境.bat` を再実行
 
 ### 8.2 mediapipe に solutions サブモジュールが欠落 / インストール破損
 
@@ -217,7 +217,7 @@ uv pip install mediapipe==0.10.14
 
     - 修正：`cargo install dora-cli --version 0.5.0 --force`
 
-    - PATH に複数の dora がある場合（例 `C:\Users\xxx.dora\bin` の旧版）、`.cargo\bin` が前に来るようにするか、旧版を削除してください
+    - PATH に複数の dora がある場合（例 `C:\Users\xxx\.dora\bin` の旧版）、`.cargo\bin` が前に来るようにするか、旧版を削除してください
 
 ### 8.4 MuJoCo / mediapipe のモデル読み込み失敗（中国語パス）
 
@@ -262,11 +262,11 @@ python -m pip install opencv-contrib-python numpy mediapipe -i https://mirrors.a
 ### データフローの原理
 
 ```Bash
-摄像头 → HandTracking（MediaPipe 识别手势）
-              ↓ 手部关键点坐标
-         AHSimulation（MuJoCo 仿真 + 逆运动学）
-              ↓ 关节目标角度
-         AHControl（串口 → 舵机驱动板 → 灵巧手）
+カメラ → HandTracking（MediaPipe でジェスチャー認識）
+              ↓ 手部キーポイント座標
+         AHSimulation（MuJoCo シミュレーション + 逆運動学）
+              ↓ 関節目標角度
+         AHControl（シリアルポート → サーボドライバ基板 → 器用なハンド）
 ```
 
 ### ポート設定の場所

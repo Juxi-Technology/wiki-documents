@@ -49,7 +49,7 @@ lerobot-calibrate --teleop.type=so101_leader --teleop.port=<主动臂COM> --tele
 2. 将**每个关节依次推到最大/最小范围**，完成后按 Enter
 
 **验证**：标定文件自动保存到
-`C:\Users\<你的用户名>.cache\huggingface\lerobot\calibration\teleoperators\so_leader\amazing_hand_leader.json`
+`C:\Users\<你的用户名>\.cache\huggingface\lerobot\calibration\teleoperators\so_leader\amazing_hand_leader.json`
 
 > **⚠️ 注意 1（夹爪必标）**：6 号夹爪舵机范围会作为 `gripper.pos`（0~100）的归一化基准。夹爪务必从全开推到全闭，标定到位，否则后续手开合比例会失真。
 
@@ -74,7 +74,7 @@ lerobot-calibrate --robot.type=so101_amazing_hand --robot.port=<从动臂COM> --
 2. 将各关节走全行程，按 Enter
 
 **验证**：标定文件保存到
-`C:\Users\<你的用户名>.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\amazing_hand_follower.json`
+`C:\Users\<你的用户名>\.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\amazing_hand_follower.json`
 
 > **⚠️ 注意 1（手扭矩自动启用）**：此命令连接时**自动启用 8 个手舵机扭矩**（日志显示 `enabling AmazingHand torque`），标定结束手会张开，属正常现象。
 
@@ -107,7 +107,7 @@ lerobot-calibrate-amazing-hand --hand_port <手COM> --leader_port <主动臂COM>
 6. 关闭窗口（手自动解除扭矩）
 
 **验证**：角度与夹爪映射保存到
-`C:\Users\<你的用户名>.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\hand_angles.json`
+`C:\Users\<你的用户名>\.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\hand_angles.json`
 
 > **⚠️ 注意 1（必须标定）**：**每台新电脑/每只手都必须执行本步骤**。config 里的角度是 AmazingHand 官方通用默认，仅作后备；`hand_angles.json` 存在时优先加载你的实测值。不标定可能导致开合方向/范围错误。
 

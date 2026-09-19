@@ -354,7 +354,7 @@ Fluxo: desabilitar os servos → posicionar cada articulação no ponto médio e
 Executar até o ponto médio conforme o arquivo de calibração:
 
 ```bash
-python -m src.tools.run_calibration_middle <校准文件.json> --mode zero
+python -m src.tools.run_calibration_middle <arquivo_de_calibracao.json> --mode zero
 ```
 
 O processo de instalação do ambiente LeRobot e de coleta de dados está detalhado no [Tutorial de braço robótico LeRobot](./SO-ARM101-Tutorial.md).

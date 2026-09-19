@@ -50,8 +50,8 @@ NanoCam はデフォルトで **AP+STA デュアルモードが同時に動作**
 シリアルツール(ボーレート **115200 8N1**)で NanoCam の Type-C ポートに接続します:
 
 ```Plaintext
-sta_ssid:你的WiFi名称
-sta_pd:你的WiFi密码
+sta_ssid:あなたのWiFi名
+sta_pd:あなたのWiFiパスワード
 ```
 
 > `OK` を受信すると設定成功です。パスワード変更後は自動的に再起動します。

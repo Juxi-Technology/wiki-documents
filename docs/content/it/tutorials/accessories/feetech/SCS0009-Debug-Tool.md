@@ -106,7 +106,7 @@ Se si vede `[OK] 环境检查通过，可以运行项目`, l'ambiente è corrett
 
 ```
 端口 (COM 和 LPT)
-  └─ USB-SERIAL CH340 (COM3)     ← 你的舵机串口
+  └─ USB-SERIAL CH340 (COM3)     ← la tua porta seriale dei servo
 ```
 
 > **Annotare il numero COM** e selezionarlo dopo l'avvio; è anche possibile specificare manualmente la porta (quando la porta seriale è occupata):

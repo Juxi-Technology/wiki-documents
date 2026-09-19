@@ -49,7 +49,7 @@ lerobot-calibrate --teleop.type=so101_leader --teleop.port=<leader_arm_com> --te
 2. Push **each joint in turn to its maximum/minimum range**; press Enter when done
 
 **Verification**: The calibration file is saved automatically to
-`C:\Users\<username>.cache\huggingface\lerobot\calibration\teleoperators\so_leader\amazing_hand_leader.json`
+`C:\Users\<username>\.cache\huggingface\lerobot\calibration\teleoperators\so_leader\amazing_hand_leader.json`
 
 > **⚠️ Note 1 (the gripper must be calibrated)**: The range of gripper servo #6 serves as the normalization reference for `gripper.pos` (0~100). Make sure to push the gripper from fully open to fully closed and calibrate it properly, otherwise the hand's opening/closing ratio will be distorted later.
 
@@ -74,7 +74,7 @@ lerobot-calibrate --robot.type=so101_amazing_hand --robot.port=<follower_arm_com
 2. Sweep each joint through its full range, then press Enter
 
 **Verification**: The calibration file is saved to
-`C:\Users\<username>.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\amazing_hand_follower.json`
+`C:\Users\<username>\.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\amazing_hand_follower.json`
 
 > **⚠️ Note 1 (hand torque is enabled automatically)**: When this command connects, it **automatically enables torque on the 8 hand servos** (the log shows `enabling AmazingHand torque`). The hand opens when calibration finishes; this is normal.
 
@@ -107,7 +107,7 @@ lerobot-calibrate-amazing-hand --hand_port <hand_com> --leader_port <leader_arm_
 6. Close the window (the hand's torque is released automatically)
 
 **Verification**: The angles and gripper mapping are saved to
-`C:\Users\<username>.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\hand_angles.json`
+`C:\Users\<username>\.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\hand_angles.json`
 
 > **⚠️ Note 1 (calibration is mandatory)**: **This step must be performed on every new computer / every hand**. The angles in the config are AmazingHand's official generic defaults and serve only as a fallback; when `hand_angles.json` exists, your measured values are loaded in preference. Skipping calibration may cause the opening/closing direction or range to be wrong.
 

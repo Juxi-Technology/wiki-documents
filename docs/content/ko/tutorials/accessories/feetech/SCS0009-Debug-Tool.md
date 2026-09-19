@@ -106,7 +106,7 @@ python -m src.gui.factory_calibration_tool
 
 ```
 端口 (COM 和 LPT)
-  └─ USB-SERIAL CH340 (COM3)     ← 你的舵机串口
+  └─ USB-SERIAL CH340 (COM3)     ← 서보 시리얼 포트
 ```
 
 > **COM 번호를 기록**해 두고 시작 후 선택하세요. 포트를 수동으로 지정할 수도 있습니다(시리얼 포트가 사용 중일 때):

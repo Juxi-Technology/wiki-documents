@@ -354,7 +354,7 @@ Déroulement : désactiver le couple des servos → amener chaque articulation a
 Exécuter le déplacement au point médian à partir du fichier de calibration :
 
 ```bash
-python -m src.tools.run_calibration_middle <校准文件.json> --mode zero
+python -m src.tools.run_calibration_middle <fichier-de-calibration.json> --mode zero
 ```
 
 L'installation de l'environnement LeRobot et le processus de collecte de données sont détaillés dans le [tutoriel du bras robotique LeRobot](./SO-ARM101-Tutorial.md).

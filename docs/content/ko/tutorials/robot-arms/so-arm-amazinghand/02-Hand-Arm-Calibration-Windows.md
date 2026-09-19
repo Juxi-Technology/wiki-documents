@@ -49,7 +49,7 @@ lerobot-calibrate --teleop.type=so101_leader --teleop.port=<leader_arm_com> --te
 2. **각 관절을 순서대로 최대/최소 범위까지 밀어 넣고**, 완료 후 Enter를 누름
 
 **검증**: 캘리브레이션 파일이 자동으로 다음에 저장됩니다
-`C:\Users\<사용자명>.cache\huggingface\lerobot\calibration\teleoperators\so_leader\amazing_hand_leader.json`
+`C:\Users\<사용자명>\.cache\huggingface\lerobot\calibration\teleoperators\so_leader\amazing_hand_leader.json`
 
 > **⚠️ 주의 1(그리퍼 필수)**：6번 그리퍼 서보 범위가 `gripper.pos`(0~100)의 정규화 기준이 됩니다. 그리퍼는 반드시 완전히 열린 상태에서 완전히 닫힌 상태까지 움직여 정확히 캘리브레이션해야 하며, 그렇지 않으면 이후 핸드 개폐 비율이 왜곡됩니다.
 
@@ -74,7 +74,7 @@ lerobot-calibrate --robot.type=so101_amazing_hand --robot.port=<follower_arm_com
 2. 각 관절을 전체 범위로 움직이고 Enter를 누름
 
 **검증**: 캘리브레이션 파일이 다음에 저장됩니다
-`C:\Users\<사용자명>.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\amazing_hand_follower.json`
+`C:\Users\<사용자명>\.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\amazing_hand_follower.json`
 
 > **⚠️ 주의 1(핸드 토크 자동 활성화)**：이 명령은 연결 시 **8개 핸드 서보의 토크를 자동으로 활성화합니다**(로그에 `enabling AmazingHand torque` 표시). 캘리브레이션 종료 시 핸드가 열리는 것은 정상적인 현상입니다.
 
@@ -107,7 +107,7 @@ lerobot-calibrate-amazing-hand --hand_port <hand_com> --leader_port <leader_arm_
 6. 창을 닫음(핸드 토크가 자동 해제됨)
 
 **검증**: 각도와 그리퍼 매핑이 다음에 저장됩니다
-`C:\Users\<사용자명>.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\hand_angles.json`
+`C:\Users\<사용자명>\.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\hand_angles.json`
 
 > **⚠️ 주의 1(반드시 캘리브레이션)**：**새 PC/새 핸드마다 반드시 본 단계를 실행해야 합니다**. config 안의 각도는 AmazingHand 공식 범용 기본값으로, 백업용일 뿐입니다. `hand_angles.json`이 존재하면 사용자의 실측값을 우선 로드합니다. 캘리브레이션하지 않으면 개폐 방향/범위가 잘못될 수 있습니다.
 

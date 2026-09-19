@@ -50,8 +50,8 @@ NanoCam läuft standardmäßig **im AP+STA-Dualmodus gleichzeitig** — kein Ums
 Mit einem Seriell-Tool (Baudrate **115200 8N1**) über den Type-C-Anschluss der NanoCam verbinden:
 
 ```Plaintext
-sta_ssid:你的WiFi名称
-sta_pd:你的WiFi密码
+sta_ssid:dein_WiFi_Name
+sta_pd:dein_WiFi_Passwort
 ```
 
 > Die Antwort `OK` bedeutet, dass die Einstellung erfolgreich war. Nach einer Passwortänderung startet das Gerät automatisch neu.

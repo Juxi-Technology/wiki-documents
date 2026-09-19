@@ -40,7 +40,7 @@ python3 -c "import torch; print(torch.cuda.is_available())"
 ## 4. 數據採集(遙操作)
 
 ```bash
-# 校准機械臂(首次)
+# 校準機械臂(首次)
 lerobot-calibrate \
   --robot.type=so101_follower --robot.port=/dev/ttyACM0 --robot.id=my_arm
 

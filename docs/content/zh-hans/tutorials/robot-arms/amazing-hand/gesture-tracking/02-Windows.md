@@ -29,7 +29,7 @@ Visual Studio 2022 Build Tools，勾选"使用 C++ 的桌面开发"，装完重�
 
 2. **安装 Rust**（rustup + stable-msvc 工具链）
 
-3. **配置 cargo 清华镜像源**（`C:\Users\你的用户名.cargo\config.toml`），加速 crate 下载
+3. **配置 cargo 清华镜像源**（`C:\Users\<你的用户名>\.cargo\config.toml`），加速 crate 下载
 
 4. **安装 uv**（Python 包管理器）
 
@@ -191,7 +191,7 @@ check-revoke = false
 
 - 原因：镜像配置用了 **git 仓库方式**（`.../git/crates.io-index.git`），首次要下载 1GB+ 索引
 
-- 解决：`C:\Users\你的用户名.cargo\config.toml` 改为 **sparse 稀疏索引**（见 2.2 节），或直接重跑 `1-安装环境.bat`
+- 解决：`C:\Users\<你的用户名>\.cargo\config.toml` 改为 **sparse 稀疏索引**（见 2.2 节），或直接重跑 `1-安装环境.bat`
 
 ### 8.2 mediapipe 缺 solutions 子模块 / 安装损坏
 
@@ -217,7 +217,7 @@ uv pip install mediapipe==0.10.14
 
     - 修复：`cargo install dora-cli --version 0.5.0 --force`
 
-    - 若 PATH 里有多个 dora（如 `C:\Users\xxx.dora\bin` 的旧版），确保 `.cargo\bin` 排在前面，或删除旧版
+    - 若 PATH 里有多个 dora（如 `C:\Users\xxx\.dora\bin` 的旧版），确保 `.cargo\bin` 排在前面，或删除旧版
 
 ### 8.4 MuJoCo / mediapipe 加载模型失败（中文路径）
 

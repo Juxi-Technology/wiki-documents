@@ -381,11 +381,11 @@ python -m pip install opencv-contrib-python numpy mediapipe -i https://mirrors.a
 ### 데이터플로우 원리
 
 ```Plain Text
-摄像头 → HandTracking（MediaPipe 识别手势）
-              ↓ 手部关键点坐标
-         AHSimulation（MuJoCo 仿真 + 逆运动学）
-              ↓ 关节目标角度
-         AHControl（串口 → 舵机驱动板 → 灵巧手）
+카메라 → HandTracking(MediaPipe 제스처 인식)
+              ↓ 손 키포인트 좌표
+         AHSimulation(MuJoCo 시뮬레이션 + 역기구학)
+              ↓ 관절 목표 각도
+         AHControl(시리얼 → 서보 드라이버 보드 → 로봇 손)
 ```
 
 ### 포트 설정 위치

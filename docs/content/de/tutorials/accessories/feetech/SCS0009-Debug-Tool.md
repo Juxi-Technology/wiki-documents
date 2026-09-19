@@ -106,7 +106,7 @@ Wenn `[OK] 环境检查通过，可以运行项目` angezeigt wird, ist die Umge
 
 ```
 端口 (COM 和 LPT)
-  └─ USB-SERIAL CH340 (COM3)     ← 你的舵机串口
+  └─ USB-SERIAL CH340 (COM3)     ← dein Servo-Serialport
 ```
 
 > **Notieren Sie die COM-Nummer** und wählen Sie sie nach dem Start aus; alternativ können Sie den Port manuell angeben (wenn der Port belegt ist):

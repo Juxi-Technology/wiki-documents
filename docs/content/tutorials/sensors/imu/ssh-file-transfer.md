@@ -58,7 +58,7 @@ If you are transferring files from the nano to the Windows computer, right-click
 Note: File transfer requires the computer and the board to be under the same local area network, and the Raspberry Pi to have the SSH service enabled. Sometimes if file transfer fails, it is usually because the board does not have sufficient permissions; we just need to grant the highest permissions.
 
 ```Plain Text
-chmod 777 目录名 
+chmod 777 directory
 ```
 
 

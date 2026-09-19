@@ -58,26 +58,26 @@ description: "AI 語音互動模組教程(RDK X5 平台)——UART 串列埠接�
 ### 安裝相依性套件
 
 ```Bash
-# 更新软件包
+# 更新軟件包
 sudo apt update
 sudo apt upgrade -y
 
-# 安装 Python 库
+# 安裝 Python 庫
 sudo apt install -y python3-pip
 
-# 安装 pyserial
+# 安裝 pyserial
 pip3 install pyserial
 ```
 
 ### 啟用串列埠介面
 
 ```Bash
-# 打开配置工具
+# 打開配置工具
 sudo raspi-config
 
-# 选择 Interface Options → Serial
+# 選擇 Interface Options → Serial
 Select: No (shell) → Yes (hardware serial port)
-# 重启生效
+# 重啟生效
 sudo reboot
 ```
 
@@ -90,7 +90,7 @@ sudo reboot
 ```Bash
 cd UART_Voice
 ls -la
-# 应该看到 uart_voice.py
+# 應該看到 uart_voice.py
 ```
 
 ### 配置串列埠裝置
@@ -98,7 +98,7 @@ ls -la
 編輯 `uart_voice.py` 檔案，修改串列埠裝置：
 
 ```Bash
-# UART 直连（默认）
+# UART 直連（默認）
 SERIAL_PORT = '/dev/ttyAMA0'
 
 # 或者使用 USB-TTL
@@ -114,7 +114,7 @@ BAUD_RATE = 115200
 
 ```Bash
 chmod +x uart_voice.py
-# 运行（需要 sudo 权限访问串口）
+# 運行（需要 sudo 權限訪問串口）
 sudo python3 uart_voice.py
 ```
 
@@ -203,7 +203,7 @@ ls /dev/tty* | grep tty
 4. 串列埠是否被其他行程占用
 
 ```Bash
-# 检查串口占用
+# 檢查串口占用
 sudo lsof /dev/ttyAMA0
 ```
 

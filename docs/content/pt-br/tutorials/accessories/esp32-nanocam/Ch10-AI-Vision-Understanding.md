@@ -20,14 +20,14 @@ A compreensão visual por IA é uma função exclusiva do **ESP-Claw (modo 7)** 
 O fluxo completo da análise visual:
 
 ```Plain
-用户语音 "看看桌上有什么"
-  → ASR 语音识别
-  → LLM 决策：需要拍照分析 → 调用 self.camera.take_photo 或 self.camera.inspect_image
-  → 固件：esp_camera_fb_get() 抓帧 (VGA RGB565)
-  → JPEG 压缩
-  → 通过 Explain() 发送到服务端下发的 Vision API
-  → 多模态 LLM 返回文字描述
-  → TTS 语音播报
+Comando de voz "Veja o que tem na mesa"
+  → Reconhecimento de voz ASR
+  → Decisão do LLM: é necessária análise por foto → chamada de self.camera.take_photo ou self.camera.inspect_image
+  → Firmware: esp_camera_fb_get() captura o quadro (VGA RGB565)
+  → Compressão JPEG
+  → Envio via Explain() para a Vision API entregue pelo servidor
+  → LLM multimodal retorna uma descrição em texto
+  → Anúncio por voz TTS
 ```
 
 ### Diferença entre as duas ferramentas de captura
@@ -56,11 +56,11 @@ Após o reinício, o dispositivo entra no modo ESP-Claw.
 Após a ativação, basta fazer a pergunta em voz alta:
 
 ```Plain
-💬 "看看这里有什么"
-💬 "我面前有杯子吗"
-💬 "这本书是什么颜色的"
-💬 "桌上放了几个苹果"
-💬 "帮我看看这张纸上面写了什么字"
+💬 "Veja o que tem aqui"
+💬 "Tem uma caneca na minha frente?"
+💬 "De que cor é este livro?"
+💬 "Quantas maçãs tem na mesa?"
+💬 "Veja o que está escrito nesta folha"
 ```
 
 O NanoCam tira a foto, faz o upload, analisa e responde o resultado por voz.

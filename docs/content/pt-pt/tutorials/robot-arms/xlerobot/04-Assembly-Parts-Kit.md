@@ -27,7 +27,7 @@ Se preferir dispensar o prazer de apertar parafusos, também pode comprar o [kit
 
 - Se tiver almofadas antiderrapantes, pode colá-las na garra.
 
-## 一、Configurar os servos
+## 1. Configurar os servos
 
 ||Quantidade|ID do servo|Utilização|
 |---|---|---|---|

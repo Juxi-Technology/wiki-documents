@@ -350,11 +350,11 @@ python -m pip install opencv-contrib-python numpy mediapipe -i https://mirrors.a
 ### Principio del flusso di dati
 
 ```Bash
-摄像头 → HandTracking（MediaPipe 识别手势）
-              ↓ 手部关键点坐标
-         AHSimulation（MuJoCo 仿真 + 逆运动学）
-              ↓ 关节目标角度
-         AHControl（串口 → 舵机驱动板 → 灵巧手）
+Telecamera → HandTracking (riconoscimento dei gesti con MediaPipe)
+              ↓ Coordinate dei keypoint della mano
+         AHSimulation (simulazione MuJoCo + cinematica inversa)
+              ↓ Angoli target delle articolazioni
+         AHControl (porta seriale → scheda driver per servomotori → mano robotica)
 ```
 
 ### Posizione della configurazione delle porte

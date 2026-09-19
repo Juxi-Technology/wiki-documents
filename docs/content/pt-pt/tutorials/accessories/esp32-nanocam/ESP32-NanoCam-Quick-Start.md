@@ -50,8 +50,8 @@ O NanoCam funciona por predefinição em **modo duplo AP+STA em simultâneo**, s
 Use uma ferramenta de porta serial (taxa de transmissão **115200 8N1**) para ligar à porta Type-C do NanoCam:
 
 ```Plaintext
-sta_ssid:你的WiFi名称
-sta_pd:你的WiFi密码
+sta_ssid:o_nome_da_tua_rede_WiFi
+sta_pd:a_palavra_passe_da_tua_rede_WiFi
 ```
 
 > Ao receber `OK`, a configuração foi bem-sucedida. Após a alteração da palavra-passe, o dispositivo reinicia automaticamente.

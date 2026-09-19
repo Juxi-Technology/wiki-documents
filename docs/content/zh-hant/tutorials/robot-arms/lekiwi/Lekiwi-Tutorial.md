@@ -285,7 +285,7 @@ export HF_ENDPOINT=https://hf-mirror.com
 source ~/.bashrc
 echo $HF_ENDPOINT
 
-# 输出
+# 輸出
 # https://hf-mirror.com
 ```
 
@@ -301,7 +301,7 @@ export HF_ENDPOINT=https://hf-mirror.com
 ```Shell
 source ~/.zshrc
 
-# 输出
+# 輸出
 # https://hf-mirror.com
 ```
 

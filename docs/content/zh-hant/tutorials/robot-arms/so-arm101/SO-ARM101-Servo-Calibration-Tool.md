@@ -128,7 +128,7 @@ sudo apt install python3-venv fonts-noto-cjk fonts-noto-color-emoji
 
 ```bash
 sudo usermod -a -G dialout $USER
-# 注销并重新登录后生效
+# 註銷並重新登錄後生效
 ```
 
 驗證（輸出應包含 `dialout`）：
@@ -196,10 +196,10 @@ SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", SYMLINK+="t
 1. 用 Homebrew 安裝 Python（避免系統自帶 Python 版本過舊）：
 
 ```bash
-# 安装 Homebrew（如果没有）
+# 安裝 Homebrew（如果沒有）
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# 安装 Python
+# 安裝 Python
 brew install python
 ```
 
@@ -342,10 +342,10 @@ system_profiler SPUSBDataType | grep -A5 -i "serial\|CH340\|CP210"
 ### 11. LeRobot 校準（命令行）
 
 ```bash
-# 校准从动臂（保存到 ~/.cache/huggingface/lerobot/calibration/robots/so_follower/）
+# 校準從動臂（保存到 ~/.cache/huggingface/lerobot/calibration/robots/so_follower/）
 python -m src.tools.lerobot_calibrate --arm-type follower
 
-# 校准领导臂
+# 校準領導臂
 python -m src.tools.lerobot_calibrate --arm-type leader
 ```
 
@@ -364,28 +364,28 @@ LeRobot 環境的安裝與數據採集流程詳見 [LeRobot機械臂教程](./SO
 除圖形界面外，工具提供以下命令行入口（無需 GUI）：
 
 ```bash
-# 扫描舵机
+# 掃描舵機
 python -m src.tools.scan_id
 
-# 舵机快速中位校准
+# 舵機快速中位校準
 python -m src.tools.servo_quick_calibration
 
-# 舵机中位测试
+# 舵機中位測試
 python -m src.tools.servo_center_test
 
-# 失能全部舵机
+# 失能全部舵機
 python -m src.tools.servo_disable
 
-# LeRobot 风格校准
+# LeRobot 風格校準
 python -m src.tools.lerobot_calibrate
 
-# LeRobot 风格校准（指定串口）
+# LeRobot 風格校準（指定串口）
 python -m src.tools.lerobot_calibrate /dev/ttyACM0
 
-# LeRobot 风格校准（指定串口，macOS）
+# LeRobot 風格校準（指定串口，macOS）
 python -m src.tools.lerobot_calibrate /dev/cu.usbserial-0001
 
-# 双端口同步遥控
+# 雙端口同步遙控
 python -m src.tools.servo_remote_control
 ```
 

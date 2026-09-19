@@ -29,7 +29,7 @@ Visual Studio 2022 Build Tools, check "Desktop development with C++", and reopen
 
 2. **Installs Rust** (rustup + stable-msvc toolchain)
 
-3. **Configures the Tsinghua cargo mirror** (`C:\Users\your-username.cargo\config.toml`) to speed up crate downloads
+3. **Configures the Tsinghua cargo mirror** (`C:\Users\<username>\.cargo\config.toml`) to speed up crate downloads
 
 4. **Installs uv** (Python package manager)
 
@@ -191,7 +191,7 @@ After selecting, `dora build` + `dora run` are executed automatically. A camera 
 
 - Cause: the mirror configuration uses the **git repository method** (`.../git/crates.io-index.git`), which requires downloading a 1GB+ index on first use
 
-- Solution: change `C:\Users\your-username.cargo\config.toml` to the **sparse index** (see section 2.2), or simply re-run `1-安装环境.bat`
+- Solution: change `C:\Users\<username>\.cargo\config.toml` to the **sparse index** (see section 2.2), or simply re-run `1-安装环境.bat`
 
 ### 8.2 mediapipe missing the solutions submodule / corrupted installation
 
@@ -217,7 +217,7 @@ uv pip install mediapipe==0.10.14
 
     - Fix: `cargo install dora-cli --version 0.5.0 --force`
 
-    - If there are multiple dora entries in PATH (such as an old version in `C:\Users\xxx.dora\bin`), make sure `.cargo\bin` comes first, or delete the old version
+    - If there are multiple dora entries in PATH (such as an old version in `C:\Users\xxx\.dora\bin`), make sure `.cargo\bin` comes first, or delete the old version
 
 ### 8.4 MuJoCo / mediapipe fails to load the model (Chinese path)
 
@@ -262,11 +262,11 @@ python -m pip install opencv-contrib-python numpy mediapipe -i https://mirrors.a
 ### How the Dataflow Works
 
 ```Bash
-摄像头 → HandTracking（MediaPipe 识别手势）
-              ↓ 手部关键点坐标
-         AHSimulation（MuJoCo 仿真 + 逆运动学）
-              ↓ 关节目标角度
-         AHControl（串口 → 舵机驱动板 → 灵巧手）
+Camera → HandTracking (MediaPipe gesture recognition)
+              ↓ Hand keypoint coordinates
+         AHSimulation (MuJoCo simulation + inverse kinematics)
+              ↓ Joint target angles
+         AHControl (serial port → servo driver board → dexterous hand)
 ```
 
 ### Where the Port Is Configured

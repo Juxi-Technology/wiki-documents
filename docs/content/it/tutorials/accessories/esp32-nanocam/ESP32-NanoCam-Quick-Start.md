@@ -50,8 +50,8 @@ NanoCam per impostazione predefinita esegue **AP+STA in doppia modalità simulta
 Con uno strumento seriale (baud rate **115200 8N1**) collegarsi alla porta Type-C di NanoCam:
 
 ```Plaintext
-sta_ssid:你的WiFi名称
-sta_pd:你的WiFi密码
+sta_ssid:nome_della_tua_WiFi
+sta_pd:password_della_tua_WiFi
 ```
 
 > La ricezione di `OK` indica che l'impostazione è riuscita. Dopo la modifica della password il modulo si riavvia automaticamente.

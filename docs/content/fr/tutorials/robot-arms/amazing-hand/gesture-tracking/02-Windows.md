@@ -29,7 +29,7 @@ Visual Studio 2022 Build Tools, en cochant « Développement Desktop en C++ » ;
 
 2. **Installer Rust** (chaîne d'outils rustup + stable-msvc)
 
-3. **Configurer la source miroir Tsinghua pour cargo** (`C:\Users\你的用户名.cargo\config.toml`) afin d'accélérer le téléchargement des crates
+3. **Configurer la source miroir Tsinghua pour cargo** (`C:\Users\<nom-utilisateur>\.cargo\config.toml`) afin d'accélérer le téléchargement des crates
 
 4. **Installer uv** (gestionnaire de paquets Python)
 
@@ -191,7 +191,7 @@ Après votre choix, `dora build` + `dora run` s'exécutent automatiquement. La f
 
 - Cause : la configuration du miroir utilise la **méthode du dépôt git** (`.../git/crates.io-index.git`), ce qui nécessite le téléchargement d'un index de 1 GB+ la première fois
 
-- Solution : modifiez `C:\Users\你的用户名.cargo\config.toml` pour utiliser l'**index sparse** (voir section 2.2), ou relancez directement `1-安装环境.bat`
+- Solution : modifiez `C:\Users\<nom-utilisateur>\.cargo\config.toml` pour utiliser l'**index sparse** (voir section 2.2), ou relancez directement `1-安装环境.bat`
 
 ### 8.2 mediapipe : sous-module solutions manquant / installation corrompue
 
@@ -217,7 +217,7 @@ uv pip install mediapipe==0.10.14
 
     - Correction : `cargo install dora-cli --version 0.5.0 --force`
 
-    - Si plusieurs dora se trouvent dans le PATH (par exemple l'ancienne version dans `C:\Users\xxx.dora\bin`), assurez-vous que `.cargo\bin` figure en premier, ou supprimez l'ancienne version
+    - Si plusieurs dora se trouvent dans le PATH (par exemple l'ancienne version dans `C:\Users\xxx\.dora\bin`), assurez-vous que `.cargo\bin` figure en premier, ou supprimez l'ancienne version
 
 ### 8.4 Échec du chargement des modèles MuJoCo / mediapipe (chemin en chinois)
 
@@ -262,11 +262,11 @@ python -m pip install opencv-contrib-python numpy mediapipe -i https://mirrors.a
 ### Principe du flux de données
 
 ```Bash
-摄像头 → HandTracking（MediaPipe 识别手势）
-              ↓ 手部关键点坐标
-         AHSimulation（MuJoCo 仿真 + 逆运动学）
-              ↓ 关节目标角度
-         AHControl（串口 → 舵机驱动板 → 灵巧手）
+Caméra → HandTracking (reconnaissance des gestes par MediaPipe)
+              ↓ Coordonnées des points clés de la main
+         AHSimulation (simulation MuJoCo + cinématique inverse)
+              ↓ Angles cibles des articulations
+         AHControl (port série → carte de commande des servomoteurs → main dextre)
 ```
 
 ### Emplacement de la configuration du port

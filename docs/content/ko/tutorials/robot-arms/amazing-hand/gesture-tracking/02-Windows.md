@@ -29,7 +29,7 @@ Visual Studio 2022 Build Tools, "C++를 사용한 데스크톱 개발"을 체크
 
 2. **Rust 설치**(rustup + stable-msvc 툴체인)
 
-3. **cargo 칭화 미러 소스 설정**(`C:\Users\你的用户名.cargo\config.toml`), crate 다운로드 가속
+3. **cargo 칭화 미러 소스 설정**(`C:\Users\<사용자명>\.cargo\config.toml`), crate 다운로드 가속
 
 4. **uv 설치**(Python 패키지 관리자)
 
@@ -191,7 +191,7 @@ check-revoke = false
 
 - 원인: 미러 설정이 **git 저장소 방식**(`.../git/crates.io-index.git`)을 사용하여 최초에 1GB+ 인덱스를 다운로드해야 함
 
-- 해결: `C:\Users\你的用户名.cargo\config.toml`을 **sparse 희소 인덱스**로 변경(2.2절 참조), 또는 `1-安装环境.bat`를 다시 실행
+- 해결: `C:\Users\<사용자명>\.cargo\config.toml`을 **sparse 희소 인덱스**로 변경(2.2절 참조), 또는 `1-安装环境.bat`를 다시 실행
 
 ### 8.2 mediapipe에 solutions 하위 모듈 누락 / 설치 손상
 
@@ -217,7 +217,7 @@ uv pip install mediapipe==0.10.14
 
     - 수정: `cargo install dora-cli --version 0.5.0 --force`
 
-    - PATH에 여러 dora가 있는 경우(예: `C:\Users\xxx.dora\bin`의 구버전), `.cargo\bin`이 앞에 오도록 하거나 구버전을 삭제
+    - PATH에 여러 dora가 있는 경우(예: `C:\Users\xxx\.dora\bin`의 구버전), `.cargo\bin`이 앞에 오도록 하거나 구버전을 삭제
 
 ### 8.4 MuJoCo / mediapipe 모델 로드 실패(중국어 경로)
 
@@ -262,11 +262,11 @@ python -m pip install opencv-contrib-python numpy mediapipe -i https://mirrors.a
 ### 데이터플로우 원리
 
 ```Bash
-摄像头 → HandTracking（MediaPipe 识别手势）
-              ↓ 手部关键点坐标
-         AHSimulation（MuJoCo 仿真 + 逆运动学）
-              ↓ 关节目标角度
-         AHControl（串口 → 舵机驱动板 → 灵巧手）
+카메라 → HandTracking(MediaPipe 제스처 인식)
+              ↓ 손 키포인트 좌표
+         AHSimulation(MuJoCo 시뮬레이션 + 역기구학)
+              ↓ 관절 목표 각도
+         AHControl(시리얼 → 서보 드라이버 보드 → 로봇 손)
 ```
 
 ### 포트 설정 위치

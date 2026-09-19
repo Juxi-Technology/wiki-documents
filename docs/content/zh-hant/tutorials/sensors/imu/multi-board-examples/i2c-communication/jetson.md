@@ -59,7 +59,7 @@ IMU_ROS2.zip
 ```PowerShell
 cd ~/imu_ros2/src/IMU_ROS2/IMU_Library
 
-# 运行 IMU 数据打印文件
+# 運行 IMU 數據打印文件
 python3 -m IMU_Library.IMU_I2C_Library
 ```
 
@@ -74,17 +74,17 @@ python3 -m IMU_Library.IMU_I2C_Library
 ```PowerShell
 cd ~/IMU_Library
 
-# 运行 IMU 校准代码文件 --I2C通讯校准
-# 执行所有校准（整体、磁力计、温度）
+# 運行 IMU 校準代碼文件 --I2C通訊校準
+# 執行所有校準（整體、磁力計、溫度）
 python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 7
 
-# 仅整体校准
+# 僅整體校準
 python3-m IMU_Library.imu_calibration_tool --mode i2c --port 7 --calibrate imu
 
-# 仅磁力计校准
+# 僅磁力計校準
 python3-m IMU_Library.imu_calibration_tool --mode i2c --port 7 --calibrate mag
 
-# 仅温度校准
+# 僅溫度校準
 python3-m IMU_Library.imu_calibration_tool --mode i2c --port 7 --calibrate temp
 ```
 

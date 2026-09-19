@@ -12,13 +12,13 @@ Questo tutorial si rivolge allo scenario di teleoperazione wireless del braccio 
 ## Introduzione e architettura del sistema
 
 ```text
-SO-ARM101 主臂(leader) → USB 舵机驱动板 → Ubuntu 22.04 (LeRobot + ROS2 Humble + micro-ROS Agent)
-                                            │  2.4 GHz Wi-Fi(同一局域网)
+SO-ARM101 braccio leader → scheda driver USB dei servomotori → Ubuntu 22.04 (LeRobot + ROS2 Humble + micro-ROS Agent)
+                                            │  2.4 GHz Wi-Fi(stessa LAN)
                                             ▼
-                              ESP32-NanoCam 从臂控制器(ESP32-S3)
-                                            │  1 Mbps UART(经舵机驱动板 UART 针脚中转)
+                              ESP32-NanoCam controller del braccio follower(ESP32-S3)
+                                            │  1 Mbps UART(tramite i pin UART della scheda driver dei servomotori)
                                             ▼
-                              SO-ARM101 从臂(follower) 6 × STS3215
+                              SO-ARM101 braccio follower 6 × STS3215
 ```
 
 - Movimento dell'operatore sul braccio leader → LeRobot legge il braccio leader → topic ROS2 `/joint_command` → il micro-ROS Agent invia via UDP 8888 → l'ESP32-NanoCam riceve e pilota i 6 servomotori;
@@ -56,7 +56,7 @@ Divisione dei ruoli: il braccio leader è collegato al PC Ubuntu; il braccio fol
 Tra ESP32-NanoCam e il braccio follower il collegamento **passa attraverso i pin UART della scheda driver dei servomotori**:
 
 ```text
-舵机驱动板 UART:   RX ←── NanoCam TX (P2-8 / GPIO20)
+Scheda driver dei servomotori UART:   RX ←── NanoCam TX (P2-8 / GPIO20)
                    TX ──→ NanoCam RX (P2-7 / GPIO19)
                   GND ──→ NanoCam GND
 ```
@@ -193,9 +193,9 @@ Il firmware integra una configurazione a runtime (archiviata in NVS), inseribile
 
 | Comando | Funzione |
 |---|---|
-| `wifi_ssid:你的热点名` | Imposta e salva il nome WiFi |
-| `wifi_pass:你的密码` | Imposta e salva la password WiFi |
-| `agent_ip:Ubuntu电脑IP` | Imposta e salva l'IP del micro-ROS Agent |
+| `wifi_ssid:nome_del_tuo_hotspot` | Imposta e salva il nome WiFi |
+| `wifi_pass:password_della_tua_WiFi` | Imposta e salva la password WiFi |
+| `agent_ip:ip_del_pc_ubuntu` | Imposta e salva l'IP del micro-ROS Agent |
 | `wifi_show` | Mostra la configurazione attualmente attiva |
 | `wifi_clear` | Cancella la configurazione salvata e ripristina i valori predefiniti di compilazione |
 
@@ -221,11 +221,11 @@ pio device monitor --baud 115200
 Dopo il flashing si dovrebbe vedere (in questo ordine):
 
 ```text
-audio: ES8311 ready @24000Hz      ← 音频初始化成功
-Servo Ping mask: 0x3f             ← 6 个舵机全部在线
-Servo calibration match: YES      ← 标定数组与舵机 EEPROM 一致
-IP: 192.168.x.x  RSSI: -xx        ← WiFi 已连
-Waiting for micro-ROS Agent...    ← 等待 Agent(下一步启动后消失)
+audio: ES8311 ready @24000Hz      ← inizializzazione audio riuscita
+Servo Ping mask: 0x3f             ← tutti e 6 i servomotori online
+Servo calibration match: YES      ← gli array di calibrazione corrispondono all'EEPROM dei servomotori
+IP: 192.168.x.x  RSSI: -xx        ← WiFi connesso
+Waiting for micro-ROS Agent...    ← in attesa dell'Agent (sparisce dopo l'avvio del passaggio successivo)
 ```
 
 > Durante il flashing il bus servomotori può restare scollegato: flashing e funzionamento dei servomotori non si interferiscono (UART0 per il debug / UART1 per i servomotori, indipendenti). Il progetto include già la libreria statica micro-ROS per ESP32-S3 (xtensa-lx7): per l'uso quotidiano non serve compilarla da soli.
@@ -263,8 +263,8 @@ ls -l /dev/ttyACM*   # Trova la porta seriale del braccio leader
 
 ```bash
 # Imposta l'ambiente (oppure modifica direttamente i valori predefiniti in cima a start_soarm_demo.sh)
-export SOARM_WIFI_SSID="你的2.4G热点"
-export SOARM_AGENT_IP="Ubuntu电脑IP"
+export SOARM_WIFI_SSID="il tuo hotspot 2.4G"
+export SOARM_AGENT_IP="IP del PC Ubuntu"
 export SOARM_LEADER_PORT="/dev/ttyACM*"
 export SOARM_PYTHON="$(command -v python)"   # Ambiente lerobot_so101
 
@@ -298,9 +298,9 @@ ros2 topic echo /follower_audio/level --once   # Livello del microfono (si alza 
 All'accensione, una volta connesso alla rete, il firmware avvia automaticamente il servizio di streaming MJPEG (GC2145 a bordo, interfaccia DVP, porta HTTP predefinita 80):
 
 ```text
-http://<NANOCAM_IP>/         信息页
-http://<NANOCAM_IP>/jpg      单帧 JPEG(快照)
-http://<NANOCAM_IP>/stream   连续 MJPEG 流(FPV)
+http://<NANOCAM_IP>/         pagina info
+http://<NANOCAM_IP>/jpg      singolo frame JPEG (istantanea)
+http://<NANOCAM_IP>/stream   flusso MJPEG continuo (FPV)
 ```
 
 ### Parametri e regolazioni
@@ -416,15 +416,15 @@ In questo progetto il controller del braccio follower è evoluto dall'ESP32-S3 a
 ### Struttura delle directory
 
 ```text
-firmware/nanocam_soarm/   ESP32-NanoCam 从臂固件 (PlatformIO)
-  ├─ boards/nano_cam.json 自研板卡定义 (16MB Flash / 8MB Octal PSRAM)
-  ├─ src/                 固件源码 (micro-ROS 遥操作 + 摄像头 + 音频 + RGB)
-  ├─ lib/microros/        micro-ROS 静态库 (xtensa-lx7)
-  └─ lib/scservo/         SCServo 舵机库 (本地化, 无网络依赖)
-tools/                    PC 端脚本 (wireless_teleoperate.py 遥操作桥, follower_camera.py FPV 接收)
-start_soarm_demo.sh       一键启动脚本 (网络/Agent/标定预检 + 遥操作)
-cali/                     主臂/从臂标定文件
-docs/                     项目进度与实验记录 + 硬件参考 (docs/reference/)
+firmware/nanocam_soarm/   firmware del braccio follower ESP32-NanoCam (PlatformIO)
+  ├─ boards/nano_cam.json definizione della scheda proprietaria (16MB Flash / 8MB Octal PSRAM)
+  ├─ src/                 codice sorgente del firmware (teleoperazione micro-ROS + fotocamera + audio + RGB)
+  ├─ lib/microros/        libreria statica micro-ROS (xtensa-lx7)
+  └─ lib/scservo/         libreria servo SCServo (inclusa nel progetto, senza dipendenze di rete)
+tools/                    script lato PC (wireless_teleoperate.py bridge di teleoperazione, follower_camera.py ricevitore FPV)
+start_soarm_demo.sh       script di avvio con un solo comando (controllo preliminare rete/Agent/calibrazione + teleoperazione)
+cali/                     file di calibrazione braccio leader/follower
+docs/                     avanzamento del progetto e registri degli esperimenti + riferimenti hardware (docs/reference/)
 ```
 
 ### Differenze rispetto alle versioni precedenti
@@ -464,10 +464,10 @@ docker run -it --rm -v $(pwd):/project \
 Il risultato è in `src/esp32s3/libmicroros.a`, gli header nelle directory dei pacchetti sotto `src/`:
 
 ```bash
-cp src/esp32s3/libmicroros.a <工程>/firmware/nanocam_soarm/lib/microros/
+cp src/esp32s3/libmicroros.a <progetto>/firmware/nanocam_soarm/lib/microros/
 # Sostituzione completa degli header (conserva in quella directory default_transport.cpp / wifi_transport.cpp /
 # micro_ros_arduino.h, i tre file personalizzati)
-rsync -a src/* <工程>/firmware/nanocam_soarm/lib/microros/include/ \
+rsync -a src/* <progetto>/firmware/nanocam_soarm/lib/microros/include/ \
   --exclude esp32s3 --exclude '*.cpp' --exclude micro_ros_arduino.h
 ```
 
@@ -476,7 +476,7 @@ rsync -a src/* <工程>/firmware/nanocam_soarm/lib/microros/include/ \
 ```bash
 docker run --platform linux/amd64 -it --rm \
   -v $(pwd):/project \
-  -v <解压目录>/xtensa-esp32s3-elf:/uros_ws/xtensa-esp32s3-elf \
+  -v <directory_estratta>/xtensa-esp32s3-elf:/uros_ws/xtensa-esp32s3-elf \
   --env MICROROS_LIBRARY_FOLDER=extras \
   microros/micro_ros_static_library_builder:humble -p esp32s3
 ```
@@ -506,7 +506,7 @@ docker run --platform linux/amd64 -it --rm \
 3. Eseguire lo script di build S3 di questo progetto:
 
    ```bash
-   cd <工程>/firmware/nanocam_soarm
+   cd <progetto>/firmware/nanocam_soarm
    chmod +x build_microros_s3.sh
    ./build_microros_s3.sh
    ```

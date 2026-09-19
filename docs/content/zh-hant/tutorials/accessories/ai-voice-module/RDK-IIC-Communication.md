@@ -50,29 +50,29 @@ description: "AI 語音互動模組教程(RDK X5 平台)——IIC 接線、I2C �
 ### 安裝相依性套件
 
 ```Bash
-# 更新软件包
+# 更新軟件包
 sudo apt update
 sudo apt upgrade -y
 
-# 安装 Python 库
+# 安裝 Python 庫
 sudo apt install -y python3-pip python3-smbus i2c-tools
 ```
 
 ### 啟用 I2C 介面
 
 ```Bash
-# 打开配置工具
+# 打開配置工具
 sudo raspi-config
 
-# 选择 Interface Options → I2C → Enable
-# 重启生效
+# 選擇 Interface Options → I2C → Enable
+# 重啟生效
 sudo reboot
 ```
 
 ### 測試硬體介面
 
 ```Bash
-# 测试 I2C 设备
+# 測試 I2C 設備
 sudo i2cdetect -y 5
 ```
 
@@ -85,7 +85,7 @@ sudo i2cdetect -y 5
 ```Bash
 cd IIC_Voice
 ls -la
-# 应该看到 iic_voice.py
+# 應該看到 iic_voice.py
 ```
 
 ### 配置 I2C 匯流排
@@ -93,23 +93,23 @@ ls -la
 編輯 `iic_voice.py` 檔案，修改需要的參數：
 
 ```Bash
-# I2C 设备地址
+# I2C 設備地址
 DEVICE_ADDRESS = 0x2A
 
 # 寄存器地址
 REG_RESULT = 0xDA
 
-# I2C 总线编号（根据实际连接修改）
+# I2C 總線編號（根據實際連接修改）
 bus = smbus.SMBus(5)  # I2C 总线 5
 ```
 
 ### 執行程式
 
 ```Bash
-# 赋予执行权限
+# 賦予執行權限
 chmod +x iic_voice.py
 
-# 运行（需要 sudo 权限访问 I2C）
+# 運行（需要 sudo 權限訪問 I2C）
 sudo python3 iic_voice.py
 ```
 
@@ -148,7 +148,7 @@ Program terminated
 
 ```Bash
 sudo usermod -aG i2c $USER
-# 重新登录生效
+# 重新登錄生效
 ```
 
 或者使用 `sudo` 執行程式
@@ -168,9 +168,9 @@ sudo usermod -aG i2c $USER
 4. 檢查裝置是否上電
 
 ```Bash
-# 扫描 I2C 设备
+# 掃描 I2C 設備
 sudo i2cdetect -y 5
-# 如果看到 0x2A，说明设备连接正常
+# 如果看到 0x2A，說明設備連接正常
 ```
 
 ---

@@ -49,7 +49,7 @@ lerobot-calibrate --teleop.type=so101_leader --teleop.port=<leader_arm_com> --te
 2. Bewegen Sie **jedes Gelenk nacheinander bis an den maximalen/minimalen Anschlag** und drücken Sie danach Enter
 
 **Überprüfung**: Die Kalibrierungsdatei wird automatisch gespeichert unter
-`C:\Users\<Benutzername>.cache\huggingface\lerobot\calibration\teleoperators\so_leader\amazing_hand_leader.json`
+`C:\Users\<Benutzername>\.cache\huggingface\lerobot\calibration\teleoperators\so_leader\amazing_hand_leader.json`
 
 > **⚠️ Hinweis 1 (Greifer muss kalibriert werden)**: Der Bereich des Greifer-Servos Nr. 6 dient als Normalisierungsbasis für `gripper.pos` (0~100). Der Greifer muss unbedingt von vollständig geöffnet bis vollständig geschlossen durchgefahren und korrekt kalibriert werden, andernfalls verfälscht sich anschließend das Öffnungs-/Schließverhältnis der Hand.
 
@@ -74,7 +74,7 @@ lerobot-calibrate --robot.type=so101_amazing_hand --robot.port=<follower_arm_com
 2. Fahren Sie alle Gelenke über den vollen Weg und drücken Sie Enter
 
 **Überprüfung**: Die Kalibrierungsdatei wird gespeichert unter
-`C:\Users\<Benutzername>.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\amazing_hand_follower.json`
+`C:\Users\<Benutzername>\.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\amazing_hand_follower.json`
 
 > **⚠️ Hinweis 1 (Handdrehmoment wird automatisch aktiviert)**: Dieser Befehl **aktiviert beim Verbinden automatisch das Drehmoment der 8 Handservos** (das Protokoll zeigt `enabling AmazingHand torque`); dass die Hand nach Abschluss der Kalibrierung geöffnet wird, ist normal.
 
@@ -107,7 +107,7 @@ lerobot-calibrate-amazing-hand --hand_port <hand_com> --leader_port <leader_arm_
 6. Schließen Sie das Fenster (das Drehmoment der Hand wird automatisch aufgehoben)
 
 **Überprüfung**: Winkel und Greiferzuordnung werden gespeichert unter
-`C:\Users\<Benutzername>.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\hand_angles.json`
+`C:\Users\<Benutzername>\.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\hand_angles.json`
 
 > **⚠️ Hinweis 1 (Kalibrierung erforderlich)**: **Dieser Schritt muss auf jedem neuen Computer / für jede neue Hand ausgeführt werden**. Die Winkel in der config sind die offiziellen allgemeinen Standardwerte von AmazingHand und dienen nur als Rückfalllösung; wenn `hand_angles.json` vorhanden ist, werden vorrangig Ihre gemessenen Werte geladen. Ohne Kalibrierung können Fehler bei Öffnungs-/Schließrichtung bzw. -bereich auftreten.
 

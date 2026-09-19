@@ -354,7 +354,7 @@ Ablauf: Servos deaktivieren → jedes Gelenk in die Mittelstellung bringen und `
 Anhand der Kalibrierdatei in die Mittelstellung fahren:
 
 ```bash
-python -m src.tools.run_calibration_middle <校准文件.json> --mode zero
+python -m src.tools.run_calibration_middle <Kalibrierdatei.json> --mode zero
 ```
 
 Die Installation der LeRobot-Umgebung und der Datenaufnahme-Workflow sind im [LeRobot-Roboterarm-Tutorial](./SO-ARM101-Tutorial.md) beschrieben.

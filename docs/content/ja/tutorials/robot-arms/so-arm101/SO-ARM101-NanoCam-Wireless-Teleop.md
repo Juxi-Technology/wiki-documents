@@ -12,13 +12,13 @@ description: "ESP32-NanoCam 版 SO-ARM101 ワイヤレス遠隔操作の構築�
 ## 概要とシステム構成
 
 ```text
-SO-ARM101 主臂(leader) → USB 舵机驱动板 → Ubuntu 22.04 (LeRobot + ROS2 Humble + micro-ROS Agent)
-                                            │  2.4 GHz Wi-Fi(同一局域网)
+SO-ARM101 リーダーアーム → USB サーボドライバ基板 → Ubuntu 22.04 (LeRobot + ROS2 Humble + micro-ROS Agent)
+                                            │  2.4 GHz Wi-Fi(同一 LAN)
                                             ▼
-                              ESP32-NanoCam 从臂控制器(ESP32-S3)
-                                            │  1 Mbps UART(经舵机驱动板 UART 针脚中转)
+                              ESP32-NanoCam フォロワーアームコントローラ(ESP32-S3)
+                                            │  1 Mbps UART(サーボドライバ基板の UART ピンを介して中継)
                                             ▼
-                              SO-ARM101 从臂(follower) 6 × STS3215
+                              SO-ARM101 フォロワーアーム 6 × STS3215
 ```
 
 - リーダーアームの操作者の動作 → LeRobot がリーダーアームを読み取り → ROS2 トピック `/joint_command` → micro-ROS Agent が UDP 8888 で送信 → ESP32-NanoCam が受信して 6 個のサーボを駆動;
@@ -56,7 +56,7 @@ SO-ARM101 主臂(leader) → USB 舵机驱动板 → Ubuntu 22.04 (LeRobot + ROS
 ESP32-NanoCam とフォロワーアームの間は**サーボドライバ基板の UART ピンを介して中継**します:
 
 ```text
-舵机驱动板 UART:   RX ←── NanoCam TX (P2-8 / GPIO20)
+サーボドライバ基板 UART:   RX ←── NanoCam TX (P2-8 / GPIO20)
                    TX ──→ NanoCam RX (P2-7 / GPIO19)
                   GND ──→ NanoCam GND
 ```
@@ -221,11 +221,11 @@ pio device monitor --baud 115200
 書き込み後は次のログが(この順で)表示されます:
 
 ```text
-audio: ES8311 ready @24000Hz      ← 音频初始化成功
-Servo Ping mask: 0x3f             ← 6 个舵机全部在线
-Servo calibration match: YES      ← 标定数组与舵机 EEPROM 一致
-IP: 192.168.x.x  RSSI: -xx        ← WiFi 已连
-Waiting for micro-ROS Agent...    ← 等待 Agent(下一步启动后消失)
+audio: ES8311 ready @24000Hz      ← オーディオ初期化成功
+Servo Ping mask: 0x3f             ← 6 個のサーボがすべてオンライン
+Servo calibration match: YES      ← キャリブレーション配列がサーボ EEPROM と一致
+IP: 192.168.x.x  RSSI: -xx        ← WiFi 接続済み
+Waiting for micro-ROS Agent...    ← Agent を待機中(次の手順を開始すると消えます)
 ```
 
 > 書き込み時にサーボバスは接続したままで問題ありません。書き込みとサーボ動作は互いに干渉しません(UART0 のデバッグと UART1 のサーボは独立)。プロジェクトには ESP32-S3(xtensa-lx7)版の micro-ROS 静的ライブラリが同梱されており、通常の使用では自分でコンパイルする必要はありません。
@@ -263,8 +263,8 @@ ls -l /dev/ttyACM*   # リーダーアームのシリアルポートを見つけ
 
 ```bash
 # 環境を設定(または start_soarm_demo.sh 冒頭のデフォルト値を直接編集)
-export SOARM_WIFI_SSID="你的2.4G热点"
-export SOARM_AGENT_IP="Ubuntu电脑IP"
+export SOARM_WIFI_SSID="あなたの2.4Gホットスポット"
+export SOARM_AGENT_IP="Ubuntu PC の IP"
 export SOARM_LEADER_PORT="/dev/ttyACM*"
 export SOARM_PYTHON="$(command -v python)"   # lerobot_so101 環境
 
@@ -298,9 +298,9 @@ ros2 topic echo /follower_audio/level --once   # マイクレベル(話すと上
 ファームウェアは電源投入・ネットワーク接続後に MJPEG ストリーミングサービスを自動起動します(オンボード GC2145、DVP インターフェース、デフォルト HTTP ポート 80):
 
 ```text
-http://<NANOCAM_IP>/         信息页
-http://<NANOCAM_IP>/jpg      单帧 JPEG(快照)
-http://<NANOCAM_IP>/stream   连续 MJPEG 流(FPV)
+http://<NANOCAM_IP>/         情報ページ
+http://<NANOCAM_IP>/jpg      単一 JPEG フレーム(スナップショット)
+http://<NANOCAM_IP>/stream   連続 MJPEG ストリーム(FPV)
 ```
 
 ### パラメータとチューニング
@@ -416,15 +416,15 @@ ros2 topic echo /follower_audio/level
 ### ディレクトリ構造
 
 ```text
-firmware/nanocam_soarm/   ESP32-NanoCam 从臂固件 (PlatformIO)
-  ├─ boards/nano_cam.json 自研板卡定义 (16MB Flash / 8MB Octal PSRAM)
-  ├─ src/                 固件源码 (micro-ROS 遥操作 + 摄像头 + 音频 + RGB)
-  ├─ lib/microros/        micro-ROS 静态库 (xtensa-lx7)
-  └─ lib/scservo/         SCServo 舵机库 (本地化, 无网络依赖)
-tools/                    PC 端脚本 (wireless_teleoperate.py 遥操作桥, follower_camera.py FPV 接收)
-start_soarm_demo.sh       一键启动脚本 (网络/Agent/标定预检 + 遥操作)
-cali/                     主臂/从臂标定文件
-docs/                     项目进度与实验记录 + 硬件参考 (docs/reference/)
+firmware/nanocam_soarm/   ESP32-NanoCam フォロワーアームファームウェア (PlatformIO)
+  ├─ boards/nano_cam.json 自作ボード定義 (16MB Flash / 8MB Octal PSRAM)
+  ├─ src/                 ファームウェアソース (micro-ROS 遠隔操作 + カメラ + オーディオ + RGB)
+  ├─ lib/microros/        micro-ROS 静的ライブラリ (xtensa-lx7)
+  └─ lib/scservo/         SCServo サーボライブラリ (ローカル同梱, ネットワーク依存なし)
+tools/                    PC 側スクリプト (wireless_teleoperate.py 遠隔操作ブリッジ, follower_camera.py FPV 受信)
+start_soarm_demo.sh       ワンクリック起動スクリプト (ネットワーク/Agent/キャリブレーションのプリフライトチェック + 遠隔操作)
+cali/                     リーダーアーム/フォロワーアームのキャリブレーションファイル
+docs/                     プロジェクト進捗と実験記録 + ハードウェアリファレンス (docs/reference/)
 ```
 
 ### 初期バージョンとの違い
@@ -464,10 +464,10 @@ docker run -it --rm -v $(pwd):/project \
 成果物は `src/esp32s3/libmicroros.a`、ヘッダファイルは `src/` 以下の各パッケージディレクトリにあります:
 
 ```bash
-cp src/esp32s3/libmicroros.a <工程>/firmware/nanocam_soarm/lib/microros/
+cp src/esp32s3/libmicroros.a <プロジェクト>/firmware/nanocam_soarm/lib/microros/
 # ヘッダーファイルを丸ごと置き換え(このディレクトリの default_transport.cpp / wifi_transport.cpp /
 # micro_ros_arduino.h の 3 つのカスタムファイルは保持)
-rsync -a src/* <工程>/firmware/nanocam_soarm/lib/microros/include/ \
+rsync -a src/* <プロジェクト>/firmware/nanocam_soarm/lib/microros/include/ \
   --exclude esp32s3 --exclude '*.cpp' --exclude micro_ros_arduino.h
 ```
 
@@ -476,7 +476,7 @@ rsync -a src/* <工程>/firmware/nanocam_soarm/lib/microros/include/ \
 ```bash
 docker run --platform linux/amd64 -it --rm \
   -v $(pwd):/project \
-  -v <解压目录>/xtensa-esp32s3-elf:/uros_ws/xtensa-esp32s3-elf \
+  -v <解凍ディレクトリ>/xtensa-esp32s3-elf:/uros_ws/xtensa-esp32s3-elf \
   --env MICROROS_LIBRARY_FOLDER=extras \
   microros/micro_ros_static_library_builder:humble -p esp32s3
 ```
@@ -506,7 +506,7 @@ docker run --platform linux/amd64 -it --rm \
 3. 本プロジェクトの S3 ビルドスクリプトを実行:
 
    ```bash
-   cd <工程>/firmware/nanocam_soarm
+   cd <プロジェクト>/firmware/nanocam_soarm
    chmod +x build_microros_s3.sh
    ./build_microros_s3.sh
    ```

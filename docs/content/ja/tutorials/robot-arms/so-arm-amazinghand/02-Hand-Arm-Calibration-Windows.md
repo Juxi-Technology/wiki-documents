@@ -49,7 +49,7 @@ lerobot-calibrate --teleop.type=so101_leader --teleop.port=<leader_arm_com> --te
 2. **各関節を順に最大/最小範囲まで動かし**、完了したら Enter を押す
 
 **検証**：キャリブレーションファイルは自動的に以下に保存されます
-`C:\Users\<ユーザー名>.cache\huggingface\lerobot\calibration\teleoperators\so_leader\amazing_hand_leader.json`
+`C:\Users\<ユーザー名>\.cache\huggingface\lerobot\calibration\teleoperators\so_leader\amazing_hand_leader.json`
 
 > **⚠️ 注意 1（グリッパーは必須）**：6 番グリッパーサーボの範囲が `gripper.pos`（0~100）の正規化基準となります。グリッパーは必ず全開から全閉まで動かし、確実にキャリブレーションしてください。そうしないと後続のハンド開閉比率が歪みます。
 
@@ -74,7 +74,7 @@ lerobot-calibrate --robot.type=so101_amazing_hand --robot.port=<follower_arm_com
 2. 各関節を全行程動かし、Enter を押す
 
 **検証**：キャリブレーションファイルは以下に保存されます
-`C:\Users\<ユーザー名>.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\amazing_hand_follower.json`
+`C:\Users\<ユーザー名>\.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\amazing_hand_follower.json`
 
 > **⚠️ 注意 1（ハンドトルクの自動有効化）**：このコマンドは接続時に**8 つのハンドサーボのトルクを自動的に有効化します**（ログに `enabling AmazingHand torque` と表示されます）。キャリブレーション終了時にハンドが開くのは正常な現象です。
 
@@ -107,7 +107,7 @@ lerobot-calibrate-amazing-hand --hand_port <hand_com> --leader_port <leader_arm_
 6. ウィンドウを閉じる（ハンドのトルクが自動的に解除されます）
 
 **検証**：角度とグリッパーのマッピングは以下に保存されます
-`C:\Users\<ユーザー名>.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\hand_angles.json`
+`C:\Users\<ユーザー名>\.cache\huggingface\lerobot\calibration\robots\so101_amazing_hand\hand_angles.json`
 
 > **⚠️ 注意 1（必ずキャリブレーション）**：**新しい PC/新しいハンドごとに本ステップを実行する必要があります**。config 内の角度は AmazingHand 公式の汎用デフォルトで、あくまでフォールバックです。`hand_angles.json` が存在する場合はあなたの実測値が優先して読み込まれます。キャリブレーションしないと開閉方向/範囲が誤る可能性があります。
 

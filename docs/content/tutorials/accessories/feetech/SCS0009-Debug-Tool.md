@@ -106,7 +106,7 @@ If you see `[OK] 环境检查通过，可以运行项目`, the environment is co
 
 ```
 端口 (COM 和 LPT)
-  └─ USB-SERIAL CH340 (COM3)     ← 你的舵机串口
+  └─ USB-SERIAL CH340 (COM3)     ← your servo serial port
 ```
 
 > **Note the COM number** and select it after launching; you can also specify the port manually (when the port is occupied):

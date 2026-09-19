@@ -197,13 +197,13 @@ void loop() {
   int commandId = IIC_ReadCommand();
 
   if (commandId >= 0) {
-    // 过滤无效值，防止重复输出
+    // 過濾無效值，防止重複輸出
     if (commandId != 0 && commandId != 255 && commandId != lastCommandId) {
       Serial.print("ID: ");
       Serial.println(commandId);
       lastCommandId = commandId;
 
-      // 示例：根据识别到的命令控制播报
+      // 示例：根據識別到的命令控制播報
       if (commandId == 1) {
         IIC_SetCommandVoice(0x00);  // 识别到命令1，播报命令词语音
       } else if (commandId == 2) {

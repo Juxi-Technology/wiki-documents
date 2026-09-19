@@ -29,7 +29,7 @@ Visual Studio 2022 Build Tools empfohlen; „Desktopentwicklung mit C++" ankreuz
 
 2. **Rust installieren** （rustup + stable-msvc-Toolchain）
 
-3. **Cargo-Tsinghua-Spiegelquelle konfigurieren** （`C:\Users\你的用户名.cargo\config.toml`）, beschleunigt den Download von Crates
+3. **Cargo-Tsinghua-Spiegelquelle konfigurieren** （`C:\Users\<Benutzername>\.cargo\config.toml`）, beschleunigt den Download von Crates
 
 4. **uv installieren** （Python-Paketmanager）
 
@@ -191,7 +191,7 @@ Nach der Auswahl wird automatisch `dora build` + `dora run` ausgeführt. Ein Kam
 
 - Ursache: Die Spiegelkonfiguration verwendet **die git-Repository-Methode** （`.../git/crates.io-index.git`）, beim ersten Mal werden 1GB+ Index heruntergeladen
 
-- Lösung: `C:\Users\你的用户名.cargo\config.toml` auf **sparse dünnbesetzten Index** ändern （siehe Abschnitt 2.2）, oder direkt `1-安装环境.bat` erneut ausführen
+- Lösung: `C:\Users\<Benutzername>\.cargo\config.toml` auf **sparse dünnbesetzten Index** ändern （siehe Abschnitt 2.2）, oder direkt `1-安装环境.bat` erneut ausführen
 
 ### 8.2 mediapipe fehlt das solutions-Untermodul / Installation beschädigt
 
@@ -217,7 +217,7 @@ uv pip install mediapipe==0.10.14
 
     - Behebung: `cargo install dora-cli --version 0.5.0 --force`
 
-    - Falls im PATH mehrere dora vorhanden sind （z. B. eine alte Version in `C:\Users\xxx.dora\bin`）, stellen Sie sicher, dass `.cargo\bin` weiter vorne steht, oder löschen Sie die alten Versionen
+    - Falls im PATH mehrere dora vorhanden sind （z. B. eine alte Version in `C:\Users\xxx\.dora\bin`）, stellen Sie sicher, dass `.cargo\bin` weiter vorne steht, oder löschen Sie die alten Versionen
 
 ### 8.4 MuJoCo / mediapipe kann das Modell nicht laden （chinesischer Pfad）
 
@@ -262,11 +262,11 @@ python -m pip install opencv-contrib-python numpy mediapipe -i https://mirrors.a
 ### Prinzip des Datenflusses
 
 ```Bash
-摄像头 → HandTracking（MediaPipe 识别手势）
-              ↓ 手部关键点坐标
-         AHSimulation（MuJoCo 仿真 + 逆运动学）
-              ↓ 关节目标角度
-         AHControl（串口 → 舵机驱动板 → 灵巧手）
+Kamera → HandTracking (MediaPipe erkennt Gesten)
+              ↓ Hand-Landmarken-Koordinaten
+         AHSimulation (MuJoCo-Simulation + inverse Kinematik)
+              ↓ Gelenk-Zielwinkel
+         AHControl (serieller Port → Servo-Treiberplatine → Fingerhand)
 ```
 
 ### Position der Portkonfiguration

@@ -11,7 +11,7 @@ description: "Sammelt URDF-Dateien und Referenzmaterial: offizielle URDF, URDF S
 
 https://urdf.d-robotics.cc/
 
-### ROS2 仿真控制（可自行实现）
+### ROS2-Simulationssteuerung (selbst implementierbar)
 
 https://github.com/holmsslk/so-arm-moveit-hardware
 

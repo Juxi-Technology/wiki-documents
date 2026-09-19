@@ -25,8 +25,8 @@ description: "ESP32-NanoCam Handbuch zum seriellen AT-Protokoll: vollständige B
 
 |Befehl|Beschreibung|Beispiel|Rückgabe|
 |---|---|---|---|
-|`sta_ssid:名称`|WiFi-Namen festlegen|`sta_ssid:MyWiFi`|`OK`|
-|`sta_pd:密码`|WiFi-Passwort festlegen (Neustart nach Änderung)|`sta_pd:12345678`|`OK` (Neustart)|
+|`sta_ssid:Name`|WiFi-Namen festlegen|`sta_ssid:MyWiFi`|`OK`|
+|`sta_pd:Passwort`|WiFi-Passwort festlegen (Neustart nach Änderung)|`sta_pd:12345678`|`OK` (Neustart)|
 
 > WiFi-Name und -Passwort: maximal 30 Zeichen, keine chinesischen Zeichen.
 
@@ -34,8 +34,8 @@ description: "ESP32-NanoCam Handbuch zum seriellen AT-Protokoll: vollständige B
 
 |Befehl|Beschreibung|Beispiel|Rückgabe|
 |---|---|---|---|
-|`ap_ssid:名称`|Hotspot-Namen festlegen|`ap_ssid:NanoCam-AP`|`OK`|
-|`ap_pd:密码`|Hotspot-Passwort festlegen (Neustart nach Änderung)|`ap_pd:12345678`|`OK` (Neustart)|
+|`ap_ssid:Name`|Hotspot-Namen festlegen|`ap_ssid:NanoCam-AP`|`OK`|
+|`ap_pd:Passwort`|Hotspot-Passwort festlegen (Neustart nach Änderung)|`ap_pd:12345678`|`OK` (Neustart)|
 
 ### WiFi-Modus
 
