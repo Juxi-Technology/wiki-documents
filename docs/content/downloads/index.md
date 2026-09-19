@@ -17,11 +17,11 @@ Centralized downloads for Juxi Technology products — firmware, SDK, host softw
 - 🔧 [SO-ARM101 Assembly](/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly)
 - 📦 [SO-ARM101 Open-Source Repository](https://github.com/Juxi-Technology/lerobot)(LeRobot ecosystem)
 - 📦 [Juxi_ServoController.zip](/downloads/Juxi_ServoController.zip)
-- 📦 [PincOpen装配体.step](/downloads/PincOpen装配体.step)
+- 📦 [PincOpen Assembly.step](/downloads/PincOpen装配体.step)
 - 📦 [SO-ARM101_ROS2.zip](/downloads/SO-ARM101_ROS2.zip)
 - 📦 [wx_camera_1768098182808.mp4](/downloads/wx_camera_1768098182808.mp4)
 - 📦 [wx_camera_1768139334330.mp4](/downloads/wx_camera_1768139334330.mp4)
-- 📦 [飞特舵机上位机.zip](/downloads/飞特舵机上位机.zip)
+- 📦 [Feetech Servo Host Software.zip](/downloads/飞特舵机上位机.zip)
 
 ### AmazingHand
 
