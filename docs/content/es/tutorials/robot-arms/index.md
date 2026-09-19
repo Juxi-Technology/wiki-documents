@@ -125,17 +125,23 @@ Robot móvil totalmente open source, compatible con LeRobot imitation learning y
 Flujo completo SO-ARM101 + AmazingHand: configuración, calibración, teleoperación, recolección de datos, entrenamiento y despliegue (Windows / Linux).
 
 - [Resumen del curso](./so-arm-amazinghand/index.md)
+
+#### Linux
+
 - [Etapa 1: configuración del entorno (Linux)](./so-arm-amazinghand/01-Environment-Setup-Linux.md)
-- [Etapa 1: configuración del entorno (Windows)](./so-arm-amazinghand/01-Environment-Setup-Windows.md)
 - [Etapa 2: calibración de mano y brazos (Linux)](./so-arm-amazinghand/02-Hand-Arm-Calibration-Linux.md)
-- [Etapa 2: calibración de mano y brazos (Windows)](./so-arm-amazinghand/02-Hand-Arm-Calibration-Windows.md)
 - [Etapa 3: teleoperación (Linux)](./so-arm-amazinghand/03-Teleoperation-Linux.md)
-- [Etapa 3: teleoperación (Windows)](./so-arm-amazinghand/03-Teleoperation-Windows.md)
 - [Etapa 4: recolección de datos (Linux)](./so-arm-amazinghand/04-Data-Collection-Linux.md)
-- [Etapa 4: recolección de datos (Windows)](./so-arm-amazinghand/04-Data-Collection-Windows.md)
 - [Etapa 5: entrenamiento del modelo (Linux)](./so-arm-amazinghand/05-Model-Training-Linux.md)
-- [Etapa 5: entrenamiento del modelo (Windows)](./so-arm-amazinghand/05-Model-Training-Windows.md)
 - [Etapa 6: despliegue del modelo (Linux)](./so-arm-amazinghand/06-Model-Deployment-Linux.md)
+
+#### Windows
+
+- [Etapa 1: configuración del entorno (Windows)](./so-arm-amazinghand/01-Environment-Setup-Windows.md)
+- [Etapa 2: calibración de mano y brazos (Windows)](./so-arm-amazinghand/02-Hand-Arm-Calibration-Windows.md)
+- [Etapa 3: teleoperación (Windows)](./so-arm-amazinghand/03-Teleoperation-Windows.md)
+- [Etapa 4: recolección de datos (Windows)](./so-arm-amazinghand/04-Data-Collection-Windows.md)
+- [Etapa 5: entrenamiento del modelo (Windows)](./so-arm-amazinghand/05-Model-Training-Windows.md)
 - [Etapa 6: despliegue del modelo (Windows)](./so-arm-amazinghand/06-Model-Deployment-Windows.md)
 
 ### Tutoriales de XLeRobot

@@ -23,22 +23,22 @@ const T: Record<string, { title: string; filterLabel: string; all: string; robot
 
 // 卡片标题(各语,与既有首页卡片一致)
 const TITLES: Record<string, string[]> = {
-  'zh-CN': ['SO-ARM101-使用教程', 'AmazingHand灵巧手', 'XLeRobot-使用教程', 'IMU惯导模块', 'GPS北斗定位', 'ESP32-NanoCam图传', 'AI语音交互模块', 'CSI摄像头'],
-  en: ['SO-ARM101-Tutorial', 'AmazingHand Dexterous Hand', 'XLeRobot-Tutorial', 'IMU Inertial Navigation Module', 'GPS & BeiDou Positioning Module', 'ESP32-NanoCam Video Module', 'AI Voice Interaction Module', 'IMX219 CSI Camera'],
-  'zh-HK': ['SO-ARM101-使用教程', 'AmazingHand-界面控制教程', 'XLeRobot-使用教程', 'IMU慣性導航模組', 'GPS北斗定位模組', 'ESP32-NanoCam圖傳模組', 'AI語音交互模組', 'CSI攝像頭使用教程'],
-  ja: ['SO-ARM101 使用チュートリアル', 'AmazingHand 器用ハンド', 'XLeRobot 使用チュートリアル', 'IMU 慣性ナビゲーションモジュール', 'GPS 北斗測位モジュール', 'ESP32-NanoCam 動画転送モジュール', 'AI 音声対話モジュール', 'IMX219 CSI カメラ'],
-  ko: ['SO-ARM101 사용 튜토리얼', 'AmazingHand 정교 손', 'XLeRobot 튜토리얼', 'IMU 관성 내비게이션 모듈', 'GPS 北斗 측위 모듈', 'ESP32-NanoCam 영상 전송', 'AI 음성 인터랙션 모듈', 'CSI 카메라'],
-  de: ['SO-ARM101-Tutorial', 'AmazingHand Greifhand', 'XLeRobot-Tutorial', 'IMU-Trägheitsnavigationsmodul', 'GPS- & BeiDou-GNSS-Positionsmodul', 'ESP32-NanoCam Videomodul', 'AI-Sprachinteraktionsmodul', 'IMX219 CSI-Kamera'],
-  fr: ['Tutoriel SO-ARM101', 'Main dexterous AmazingHand', 'Tutoriel XLeRobot', 'Navigation inertielle IMU', 'Module GPS & Beidou', 'Transmission vidéo ESP32-NanoCam', 'Module d\'interaction vocale IA', 'Tutoriels caméra CSI'],
-  es: ['Tutorial SO-ARM101', 'Control de interfaz AmazingHand', 'Tutorial XLeRobot', 'Módulo de navegación inercial IMU', 'Posicionamiento GPS y BeiDou', 'Módulo de vídeo ESP32-NanoCam', 'Módulo de interacción de voz IA', 'Cámara CSI IMX219 79°'],
-  it: ['Tutorial SO-ARM101', 'Mano robotica AmazingHand', 'Tutorial XLeRobot', 'Navigazione inerziale IMU', 'Modulo GPS e Beidou', 'Modulo video ESP32-NanoCam', 'Modulo di interazione vocale IA', 'Fotocamera CSI IMX219'],
-  'pt-BR': ['Tutorial SO-ARM101', 'Mão hábil AmazingHand', 'Tutorial XLeRobot', 'Módulo de navegação inercial IMU', 'Posicionamento GPS e BeiDou', 'Módulo de vídeo ESP32-NanoCam', 'Módulo de interação por voz IA', 'Câmera CSI IMX219 79°'],
-  'pt-PT': ['Tutorial SO-ARM101', 'AmazingHand Mão Hábil', 'Tutorial XLeRobot', 'Módulo de navegação inercial IMU', 'Módulo GNSS GPS e BeiDou', 'Módulo de Vídeo ESP32-NanoCam', 'Módulo de interação por voz IA', 'Câmara CSI IMX219'],
+  'zh-CN': ['LeRobot 完整课程', 'AmazingHand灵巧手', 'XLeRobot-使用教程', 'IMU惯导模块', 'GPS北斗定位', 'ESP32-NanoCam图传', 'AI语音交互模块', 'CSI摄像头'],
+  en: ['LeRobot Full Course', 'AmazingHand Dexterous Hand', 'XLeRobot-Tutorial', 'IMU Inertial Navigation Module', 'GPS & BeiDou Positioning Module', 'ESP32-NanoCam Video Module', 'AI Voice Interaction Module', 'IMX219 CSI Camera'],
+  'zh-HK': ['LeRobot 完整課程', 'AmazingHand-界面控制教程', 'XLeRobot-使用教程', 'IMU慣性導航模組', 'GPS北斗定位模組', 'ESP32-NanoCam圖傳模組', 'AI語音交互模組', 'CSI攝像頭使用教程'],
+  ja: ['LeRobot完全コース', 'AmazingHand 器用ハンド', 'XLeRobot 使用チュートリアル', 'IMU 慣性ナビゲーションモジュール', 'GPS 北斗測位モジュール', 'ESP32-NanoCam 動画転送モジュール', 'AI 音声対話モジュール', 'IMX219 CSI カメラ'],
+  ko: ['LeRobot 전체 코스', 'AmazingHand 정교 손', 'XLeRobot 튜토리얼', 'IMU 관성 내비게이션 모듈', 'GPS 北斗 측위 모듈', 'ESP32-NanoCam 영상 전송', 'AI 음성 인터랙션 모듈', 'CSI 카메라'],
+  de: ['LeRobot-Komplettkurs', 'AmazingHand Greifhand', 'XLeRobot-Tutorial', 'IMU-Trägheitsnavigationsmodul', 'GPS- & BeiDou-GNSS-Positionsmodul', 'ESP32-NanoCam Videomodul', 'AI-Sprachinteraktionsmodul', 'IMX219 CSI-Kamera'],
+  fr: ['Cours LeRobot', 'Main dexterous AmazingHand', 'Tutoriel XLeRobot', 'Navigation inertielle IMU', 'Module GPS & Beidou', 'Transmission vidéo ESP32-NanoCam', 'Module d\'interaction vocale IA', 'Tutoriels caméra CSI'],
+  es: ['Curso de LeRobot', 'Control de interfaz AmazingHand', 'Tutorial XLeRobot', 'Módulo de navegación inercial IMU', 'Posicionamiento GPS y BeiDou', 'Módulo de vídeo ESP32-NanoCam', 'Módulo de interacción de voz IA', 'Cámara CSI IMX219 79°'],
+  it: ['Corso LeRobot', 'Mano robotica AmazingHand', 'Tutorial XLeRobot', 'Navigazione inerziale IMU', 'Modulo GPS e Beidou', 'Modulo video ESP32-NanoCam', 'Modulo di interazione vocale IA', 'Fotocamera CSI IMX219'],
+  'pt-BR': ['Curso LeRobot', 'Mão hábil AmazingHand', 'Tutorial XLeRobot', 'Módulo de navegação inercial IMU', 'Posicionamento GPS e BeiDou', 'Módulo de vídeo ESP32-NanoCam', 'Módulo de interação por voz IA', 'Câmera CSI IMX219 79°'],
+  'pt-PT': ['Curso de LeRobot', 'AmazingHand Mão Hábil', 'Tutorial XLeRobot', 'Módulo de navegação inercial IMU', 'Módulo GNSS GPS e BeiDou', 'Módulo de Vídeo ESP32-NanoCam', 'Módulo de interação por voz IA', 'Câmara CSI IMX219'],
 }
 
 // 卡片:相对路径(语言前缀由组件拼接)、分类(与产品页 category 枚举对齐)、图片
 const CARDS = [
-  { href: 'tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial', cat: 'robot', img: 'SO-ARM101.png' },
+  { href: 'tutorials/robot-arms/so-arm101/lerobot/', cat: 'robot', img: 'SO-ARM101.png' },
   { href: 'tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control', cat: 'robot', img: 'AmazingHand.png' },
   { href: 'tutorials/robot-arms/xlerobot/', cat: 'robot', img: 'XLeRobot.png' },
   { href: 'tutorials/sensors/imu/', cat: 'sensor', img: 'IMU.png' },

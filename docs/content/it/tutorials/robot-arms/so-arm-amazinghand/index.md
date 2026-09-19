@@ -55,26 +55,26 @@ tutorials/
 
 ## Percorso di lettura consigliato
 
-|Passo|Fase|Windows|Linux|
+|Passo|Fase|Linux|Windows|
 |---|---|---|---|
-|1|Configurazione dell'ambiente|[01-environment/win.md](./01-Environment-Setup-Windows.md)|[01-environment/linux.md](./01-Environment-Setup-Linux.md)|
-|2|Calibrazione|[02-calibration/win.md](./02-Hand-Arm-Calibration-Windows.md)|[02-calibration/linux.md](./02-Hand-Arm-Calibration-Linux.md)|
-|3|Teleoperazione|[03-teleoperation/win.md](./03-Teleoperation-Windows.md)|[03-teleoperation/linux.md](./03-Teleoperation-Linux.md)|
-|4|Acquisizione dati|[04-data-collection/win.md](./04-Data-Collection-Windows.md)|[04-data-collection/linux.md](./04-Data-Collection-Linux.md)|
-|5|Addestramento del modello|[05-training/win.md](./05-Model-Training-Windows.md)|[05-training/linux.md](./05-Model-Training-Linux.md)|
-|6|Distribuzione e valutazione|[06-deployment/win.md](./06-Model-Deployment-Windows.md)|[06-deployment/linux.md](./06-Model-Deployment-Linux.md)|
+|1|Configurazione dell'ambiente|[01-environment/linux.md](./01-Environment-Setup-Linux.md)|[01-environment/win.md](./01-Environment-Setup-Windows.md)|
+|2|Calibrazione|[02-calibration/linux.md](./02-Hand-Arm-Calibration-Linux.md)|[02-calibration/win.md](./02-Hand-Arm-Calibration-Windows.md)|
+|3|Teleoperazione|[03-teleoperation/linux.md](./03-Teleoperation-Linux.md)|[03-teleoperation/win.md](./03-Teleoperation-Windows.md)|
+|4|Acquisizione dati|[04-data-collection/linux.md](./04-Data-Collection-Linux.md)|[04-data-collection/win.md](./04-Data-Collection-Windows.md)|
+|5|Addestramento del modello|[05-training/linux.md](./05-Model-Training-Linux.md)|[05-training/win.md](./05-Model-Training-Windows.md)|
+|6|Distribuzione e valutazione|[06-deployment/linux.md](./06-Model-Deployment-Linux.md)|[06-deployment/win.md](./06-Model-Deployment-Windows.md)|
 
 ---
 
 ## Riepilogo rapido delle differenze principali tra le fasi
 
-|Aspetto|Windows|Linux|
+|Aspetto|Linux|Windows|
 |---|---|---|
-|Ambiente Python|Miniconda + `conda create -n lerobot python=3.12`|Miniforge + lo stesso comando|
-|Nome della porta seriale|`COM54` / `COM58` / `COM11` (esempio)|`/dev/ttyACM0/1/2` (esempio)|
-|Permessi della porta seriale|Nessuna configurazione speciale|Richiede `sudo chmod 666 /dev/ttyACM*` o regole udev|
+|Ambiente Python|Miniforge + lo stesso comando|Miniconda + `conda create -n lerobot python=3.12`|
+|Nome della porta seriale|`/dev/ttyACM0/1/2` (esempio)|`COM54` / `COM58` / `COM11` (esempio)|
+|Permessi della porta seriale|Richiede `sudo chmod 666 /dev/ttyACM*` o regole udev|Nessuna configurazione speciale|
 |Richiamo dei comandi|`lerobot-xxx` dopo l'attivazione di conda|`lerobot-xxx` dopo l'attivazione di conda|
-|Addestramento con CUDA|Richiede l'installazione manuale di torch con CUDA|Supporto ufficiale, risoluzione fluida|
+|Addestramento con CUDA|Supporto ufficiale, risoluzione fluida|Richiede l'installazione manuale di torch con CUDA|
 
 ---
 

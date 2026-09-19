@@ -55,26 +55,26 @@ tutorials/
 
 ## 推荐阅读路径
 
-|步骤|阶段|Windows|Linux|
+|步骤|阶段|Linux|Windows|
 |---|---|---|---|
-|1|环境搭建|[01-environment/win.md](./01-Environment-Setup-Windows.md)|[01-environment/linux.md](./01-Environment-Setup-Linux.md)|
-|2|标定|[02-calibration/win.md](./02-Hand-Arm-Calibration-Windows.md)|[02-calibration/linux.md](./02-Hand-Arm-Calibration-Linux.md)|
-|3|遥操作|[03-teleoperation/win.md](./03-Teleoperation-Windows.md)|[03-teleoperation/linux.md](./03-Teleoperation-Linux.md)|
-|4|数据采集|[04-data-collection/win.md](./04-Data-Collection-Windows.md)|[04-data-collection/linux.md](./04-Data-Collection-Linux.md)|
-|5|模型训练|[05-training/win.md](./05-Model-Training-Windows.md)|[05-training/linux.md](./05-Model-Training-Linux.md)|
-|6|部署与评估|[06-deployment/win.md](./06-Model-Deployment-Windows.md)|[06-deployment/linux.md](./06-Model-Deployment-Linux.md)|
+|1|环境搭建|[01-environment/linux.md](./01-Environment-Setup-Linux.md)|[01-environment/win.md](./01-Environment-Setup-Windows.md)|
+|2|标定|[02-calibration/linux.md](./02-Hand-Arm-Calibration-Linux.md)|[02-calibration/win.md](./02-Hand-Arm-Calibration-Windows.md)|
+|3|遥操作|[03-teleoperation/linux.md](./03-Teleoperation-Linux.md)|[03-teleoperation/win.md](./03-Teleoperation-Windows.md)|
+|4|数据采集|[04-data-collection/linux.md](./04-Data-Collection-Linux.md)|[04-data-collection/win.md](./04-Data-Collection-Windows.md)|
+|5|模型训练|[05-training/linux.md](./05-Model-Training-Linux.md)|[05-training/win.md](./05-Model-Training-Windows.md)|
+|6|部署与评估|[06-deployment/linux.md](./06-Model-Deployment-Linux.md)|[06-deployment/win.md](./06-Model-Deployment-Windows.md)|
 
 ---
 
 ## 各阶段核心差异速查
 
-|方面|Windows|Linux|
+|方面|Linux|Windows|
 |---|---|---|
-|Python 环境|Miniconda + `conda create -n lerobot python=3.12`|Miniforge + 同样命令|
-|串口名|`COM54` / `COM58` / `COM11`（示例）|`/dev/ttyACM0/1/2`（示例）|
-|串口权限|无需特殊配置|需 `sudo chmod 666 /dev/ttyACM*` 或 udev 规则|
+|Python 环境|Miniforge + 同样命令|Miniconda + `conda create -n lerobot python=3.12`|
+|串口名|`/dev/ttyACM0/1/2`（示例）|`COM54` / `COM58` / `COM11`（示例）|
+|串口权限|需 `sudo chmod 666 /dev/ttyACM*` 或 udev 规则|无需特殊配置|
 |命令调用|conda 激活后 `lerobot-xxx`|conda 激活后 `lerobot-xxx`|
-|CUDA 训练|需手动装 CUDA torch|官方支持，解析顺畅|
+|CUDA 训练|官方支持，解析顺畅|需手动装 CUDA torch|
 
 ---
 

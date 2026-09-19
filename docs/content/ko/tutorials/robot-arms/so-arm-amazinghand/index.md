@@ -55,26 +55,26 @@ tutorials/
 
 ## 권장 읽기 순서
 
-|순서|단계|Windows|Linux|
+|순서|단계|Linux|Windows|
 |---|---|---|---|
-|1|환경 구축|[01-environment/win.md](./01-Environment-Setup-Windows.md)|[01-environment/linux.md](./01-Environment-Setup-Linux.md)|
-|2|캘리브레이션|[02-calibration/win.md](./02-Hand-Arm-Calibration-Windows.md)|[02-calibration/linux.md](./02-Hand-Arm-Calibration-Linux.md)|
-|3|원격 조작|[03-teleoperation/win.md](./03-Teleoperation-Windows.md)|[03-teleoperation/linux.md](./03-Teleoperation-Linux.md)|
-|4|데이터 수집|[04-data-collection/win.md](./04-Data-Collection-Windows.md)|[04-data-collection/linux.md](./04-Data-Collection-Linux.md)|
-|5|모델 학습|[05-training/win.md](./05-Model-Training-Windows.md)|[05-training/linux.md](./05-Model-Training-Linux.md)|
-|6|배포 및 평가|[06-deployment/win.md](./06-Model-Deployment-Windows.md)|[06-deployment/linux.md](./06-Model-Deployment-Linux.md)|
+|1|환경 구축|[01-environment/linux.md](./01-Environment-Setup-Linux.md)|[01-environment/win.md](./01-Environment-Setup-Windows.md)|
+|2|캘리브레이션|[02-calibration/linux.md](./02-Hand-Arm-Calibration-Linux.md)|[02-calibration/win.md](./02-Hand-Arm-Calibration-Windows.md)|
+|3|원격 조작|[03-teleoperation/linux.md](./03-Teleoperation-Linux.md)|[03-teleoperation/win.md](./03-Teleoperation-Windows.md)|
+|4|데이터 수집|[04-data-collection/linux.md](./04-Data-Collection-Linux.md)|[04-data-collection/win.md](./04-Data-Collection-Windows.md)|
+|5|모델 학습|[05-training/linux.md](./05-Model-Training-Linux.md)|[05-training/win.md](./05-Model-Training-Windows.md)|
+|6|배포 및 평가|[06-deployment/linux.md](./06-Model-Deployment-Linux.md)|[06-deployment/win.md](./06-Model-Deployment-Windows.md)|
 
 ---
 
 ## 단계별 핵심 차이 요약
 
-|항목|Windows|Linux|
+|항목|Linux|Windows|
 |---|---|---|
-|Python 환경|Miniconda + `conda create -n lerobot python=3.12`|Miniforge + 동일한 명령|
-|시리얼 포트 이름|`COM54` / `COM58` / `COM11`(예시)|`/dev/ttyACM0/1/2`(예시)|
-|시리얼 포트 권한|특별한 설정 불필요|`sudo chmod 666 /dev/ttyACM*` 또는 udev 규칙 필요|
+|Python 환경|Miniforge + 동일한 명령|Miniconda + `conda create -n lerobot python=3.12`|
+|시리얼 포트 이름|`/dev/ttyACM0/1/2`(예시)|`COM54` / `COM58` / `COM11`(예시)|
+|시리얼 포트 권한|`sudo chmod 666 /dev/ttyACM*` 또는 udev 규칙 필요|특별한 설정 불필요|
 |명령 호출|conda 활성화 후 `lerobot-xxx`|conda 활성화 후 `lerobot-xxx`|
-|CUDA 학습|CUDA 버전 torch 수동 설치 필요|공식 지원, 해석이 원활|
+|CUDA 학습|공식 지원, 해석이 원활|CUDA 버전 torch 수동 설치 필요|
 
 ---
 

@@ -126,17 +126,23 @@ Robot mobile entièrement open source, compatible LeRobot imitation learning et 
 Flux complet SO-ARM101 + AmazingHand : configuration, calibration, téléopération, collecte de données, entraînement et déploiement (Windows / Linux).
 
 - [Aperçu du cours](./so-arm-amazinghand/index.md)
+
+#### Linux
+
 - [Étape 1 : configuration de l'environnement (Linux)](./so-arm-amazinghand/01-Environment-Setup-Linux.md)
-- [Étape 1 : configuration de l'environnement (Windows)](./so-arm-amazinghand/01-Environment-Setup-Windows.md)
 - [Étape 2 : calibration main et bras (Linux)](./so-arm-amazinghand/02-Hand-Arm-Calibration-Linux.md)
-- [Étape 2 : calibration main et bras (Windows)](./so-arm-amazinghand/02-Hand-Arm-Calibration-Windows.md)
 - [Étape 3 : téléopération (Linux)](./so-arm-amazinghand/03-Teleoperation-Linux.md)
-- [Étape 3 : téléopération (Windows)](./so-arm-amazinghand/03-Teleoperation-Windows.md)
 - [Étape 4 : collecte de données (Linux)](./so-arm-amazinghand/04-Data-Collection-Linux.md)
-- [Étape 4 : collecte de données (Windows)](./so-arm-amazinghand/04-Data-Collection-Windows.md)
 - [Étape 5 : entraînement du modèle (Linux)](./so-arm-amazinghand/05-Model-Training-Linux.md)
-- [Étape 5 : entraînement du modèle (Windows)](./so-arm-amazinghand/05-Model-Training-Windows.md)
 - [Étape 6 : déploiement du modèle (Linux)](./so-arm-amazinghand/06-Model-Deployment-Linux.md)
+
+#### Windows
+
+- [Étape 1 : configuration de l'environnement (Windows)](./so-arm-amazinghand/01-Environment-Setup-Windows.md)
+- [Étape 2 : calibration main et bras (Windows)](./so-arm-amazinghand/02-Hand-Arm-Calibration-Windows.md)
+- [Étape 3 : téléopération (Windows)](./so-arm-amazinghand/03-Teleoperation-Windows.md)
+- [Étape 4 : collecte de données (Windows)](./so-arm-amazinghand/04-Data-Collection-Windows.md)
+- [Étape 5 : entraînement du modèle (Windows)](./so-arm-amazinghand/05-Model-Training-Windows.md)
 - [Étape 6 : déploiement du modèle (Windows)](./so-arm-amazinghand/06-Model-Deployment-Windows.md)
 
 ### Tutoriels XLeRobot

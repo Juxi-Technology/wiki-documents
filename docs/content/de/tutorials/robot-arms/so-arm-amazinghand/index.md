@@ -55,26 +55,26 @@ tutorials/
 
 ## Empfohlener Lesepfad
 
-|Schritt|Phase|Windows|Linux|
+|Schritt|Phase|Linux|Windows|
 |---|---|---|---|
-|1|Umgebung einrichten|[01-environment/win.md](./01-Environment-Setup-Windows.md)|[01-environment/linux.md](./01-Environment-Setup-Linux.md)|
-|2|Kalibrierung|[02-calibration/win.md](./02-Hand-Arm-Calibration-Windows.md)|[02-calibration/linux.md](./02-Hand-Arm-Calibration-Linux.md)|
-|3|Teleoperation|[03-teleoperation/win.md](./03-Teleoperation-Windows.md)|[03-teleoperation/linux.md](./03-Teleoperation-Linux.md)|
-|4|Datenerfassung|[04-data-collection/win.md](./04-Data-Collection-Windows.md)|[04-data-collection/linux.md](./04-Data-Collection-Linux.md)|
-|5|Modelltraining|[05-training/win.md](./05-Model-Training-Windows.md)|[05-training/linux.md](./05-Model-Training-Linux.md)|
-|6|Deployment und Evaluierung|[06-deployment/win.md](./06-Model-Deployment-Windows.md)|[06-deployment/linux.md](./06-Model-Deployment-Linux.md)|
+|1|Umgebung einrichten|[01-environment/linux.md](./01-Environment-Setup-Linux.md)|[01-environment/win.md](./01-Environment-Setup-Windows.md)|
+|2|Kalibrierung|[02-calibration/linux.md](./02-Hand-Arm-Calibration-Linux.md)|[02-calibration/win.md](./02-Hand-Arm-Calibration-Windows.md)|
+|3|Teleoperation|[03-teleoperation/linux.md](./03-Teleoperation-Linux.md)|[03-teleoperation/win.md](./03-Teleoperation-Windows.md)|
+|4|Datenerfassung|[04-data-collection/linux.md](./04-Data-Collection-Linux.md)|[04-data-collection/win.md](./04-Data-Collection-Windows.md)|
+|5|Modelltraining|[05-training/linux.md](./05-Model-Training-Linux.md)|[05-training/win.md](./05-Model-Training-Windows.md)|
+|6|Deployment und Evaluierung|[06-deployment/linux.md](./06-Model-Deployment-Linux.md)|[06-deployment/win.md](./06-Model-Deployment-Windows.md)|
 
 ---
 
 ## Kurzübersicht der wichtigsten Unterschiede je Phase
 
-|Aspekt|Windows|Linux|
+|Aspekt|Linux|Windows|
 |---|---|---|
-|Python-Umgebung|Miniconda + `conda create -n lerobot python=3.12`|Miniforge + derselbe Befehl|
-|Name der seriellen Schnittstelle|`COM54` / `COM58` / `COM11` (Beispiel)|`/dev/ttyACM0/1/2` (Beispiel)|
-|Berechtigungen der seriellen Schnittstelle|Keine besondere Konfiguration erforderlich|`sudo chmod 666 /dev/ttyACM*` oder udev-Regel erforderlich|
+|Python-Umgebung|Miniforge + derselbe Befehl|Miniconda + `conda create -n lerobot python=3.12`|
+|Name der seriellen Schnittstelle|`/dev/ttyACM0/1/2` (Beispiel)|`COM54` / `COM58` / `COM11` (Beispiel)|
+|Berechtigungen der seriellen Schnittstelle|`sudo chmod 666 /dev/ttyACM*` oder udev-Regel erforderlich|Keine besondere Konfiguration erforderlich|
 |Befehlsaufruf|Nach Aktivierung von conda `lerobot-xxx`|Nach Aktivierung von conda `lerobot-xxx`|
-|CUDA-Training|CUDA-torch muss manuell installiert werden|Offiziell unterstützt, reibungslose Auflösung|
+|CUDA-Training|Offiziell unterstützt, reibungslose Auflösung|CUDA-torch muss manuell installiert werden|
 
 ---
 

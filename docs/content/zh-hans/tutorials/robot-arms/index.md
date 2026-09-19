@@ -125,17 +125,23 @@ description: "钜犀科技机械臂系列教程首页——SO-ARM101、AmazingHa
 SO-ARM101 从动臂 + AmazingHand 灵巧手的完整工作流:环境搭建、校准、遥操作、数据采集、模型训练与部署(Windows / Linux 分册)。
 
 - [课程总览](./so-arm-amazinghand/index.md)
+
+#### Linux
+
 - [阶段一:环境搭建(Linux)](./so-arm-amazinghand/01-Environment-Setup-Linux.md)
-- [阶段一:环境搭建(Windows)](./so-arm-amazinghand/01-Environment-Setup-Windows.md)
 - [阶段二:灵巧手与双臂校准(Linux)](./so-arm-amazinghand/02-Hand-Arm-Calibration-Linux.md)
-- [阶段二:灵巧手与双臂校准(Windows)](./so-arm-amazinghand/02-Hand-Arm-Calibration-Windows.md)
 - [阶段三:远程遥操(Linux)](./so-arm-amazinghand/03-Teleoperation-Linux.md)
-- [阶段三:远程遥操(Windows)](./so-arm-amazinghand/03-Teleoperation-Windows.md)
 - [阶段四:数据采集(Linux)](./so-arm-amazinghand/04-Data-Collection-Linux.md)
-- [阶段四:数据采集(Windows)](./so-arm-amazinghand/04-Data-Collection-Windows.md)
 - [阶段五:模型训练(Linux)](./so-arm-amazinghand/05-Model-Training-Linux.md)
-- [阶段五:模型训练(Windows)](./so-arm-amazinghand/05-Model-Training-Windows.md)
 - [阶段六:模型部署(Linux)](./so-arm-amazinghand/06-Model-Deployment-Linux.md)
+
+#### Windows
+
+- [阶段一:环境搭建(Windows)](./so-arm-amazinghand/01-Environment-Setup-Windows.md)
+- [阶段二:灵巧手与双臂校准(Windows)](./so-arm-amazinghand/02-Hand-Arm-Calibration-Windows.md)
+- [阶段三:远程遥操(Windows)](./so-arm-amazinghand/03-Teleoperation-Windows.md)
+- [阶段四:数据采集(Windows)](./so-arm-amazinghand/04-Data-Collection-Windows.md)
+- [阶段五:模型训练(Windows)](./so-arm-amazinghand/05-Model-Training-Windows.md)
 - [阶段六:模型部署(Windows)](./so-arm-amazinghand/06-Model-Deployment-Windows.md)
 
 ### XLeRobot 教程
