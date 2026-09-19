@@ -8,7 +8,7 @@ description: "Tutorial de SO-ARM101 con AmazingHand: guía completa de teleopera
 
 Este tutorial está orientado a reproducir el flujo completo de teleoperación, recolección de datos y entrenamiento de **SO-ARM101 brazo esclavo + mano diestra AmazingHand**, basado en LeRobot (versión personalizada del repositorio oficial).
 
-El tutorial está organizado por **fases**; cada fase constituye un directorio independiente y, en su interior, se divide por sistema operativo en dos documentos: `win.md` (Windows) y `linux.md` (Linux). Selecciona el documento correspondiente según tu sistema operativo.
+El tutorial está organizado por **fases**; cada fase constituye un directorio independiente y, en su interior, se divide por sistema operativo en dos documentos: Windows y Linux. Selecciona el documento correspondiente según tu sistema operativo.
 
 ---
 
@@ -29,26 +29,22 @@ El tutorial está organizado por **fases**; cada fase constituye un directorio i
 ## Estructura del directorio del tutorial
 
 ```Plaintext
-tutorials/
-├── README.md                          # Este archivo (visión general)
-├── 01-environment/                    # Fase uno: preparación del entorno
-│   ├── win.md                         #   Preparación del entorno en Windows
-│   └── linux.md                       #   Preparación del entorno en Linux
-├── 02-calibration/                    # Fase dos: calibración
-│   ├── win.md
-│   └── linux.md
-├── 03-teleoperation/                  # Fase tres: teleoperación
-│   ├── win.md
-│   └── linux.md
-├── 04-data-collection/                # Fase cuatro: recolección de datos
-│   ├── win.md
-│   └── linux.md
-├── 05-training/                       # Fase cinco: entrenamiento del modelo
-│   ├── win.md
-│   └── linux.md
-└── 06-deployment/                     # Fase seis: despliegue y evaluación
-    ├── win.md
-    └── linux.md
+tutorials/robot-arms/so-arm-amazinghand/
+├── index.md
+├── Linux
+│   ├── 01-Environment-Setup-Linux.md
+│   ├── 02-Hand-Arm-Calibration-Linux.md
+│   ├── 03-Teleoperation-Linux.md
+│   ├── 04-Data-Collection-Linux.md
+│   ├── 05-Model-Training-Linux.md
+│   └── 06-Model-Deployment-Linux.md
+└── Windows
+    ├── 01-Environment-Setup-Windows.md
+    ├── 02-Hand-Arm-Calibration-Windows.md
+    ├── 03-Teleoperation-Windows.md
+    ├── 04-Data-Collection-Windows.md
+    ├── 05-Model-Training-Windows.md
+    └── 06-Model-Deployment-Windows.md
 ```
 
 ---
@@ -88,7 +84,7 @@ tutorials/
 
 4. **En la primera teleoperación verifica siempre la dirección**: apertura de la pinza ↔ apertura de la mano, pinzado ↔ cierre de la mano.
 
-5. Los archivos `win.md` / `linux.md` de cada fase incluyen **consideraciones específicas de esa plataforma**; léelos por completo.
+5. Los archivos Windows / Linux de cada fase incluyen **consideraciones específicas de esa plataforma**; léelos por completo.
 
 ---
 

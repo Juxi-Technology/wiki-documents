@@ -8,7 +8,7 @@ description: "SO-ARM101 フォロワーアームと AmazingHand 器用ハンド�
 
 本チュートリアルは、**SO-ARM101 フォロワーアーム + AmazingHand 器用なハンド** の遠隔操作、データ収集、訓練の全工程を再現するためのものです。LeRobot（公式リポジトリのカスタム版）に基づきます。
 
-チュートリアルは**ステージ**ごとに構成され、各ステージは独立したディレクトリになっています。内部は OS ごとに `win.md`（Windows）と `linux.md`（Linux）の 2 つのドキュメントに分かれています。お使いの OS に応じて該当するドキュメントをお読みください。
+チュートリアルは**ステージ**ごとに構成され、各ステージは独立したディレクトリになっています。内部は OS ごとに Windows と Linux の 2 つのドキュメントに分かれています。お使いの OS に応じて該当するドキュメントをお読みください。
 
 ---
 
@@ -29,26 +29,22 @@ description: "SO-ARM101 フォロワーアームと AmazingHand 器用ハンド�
 ## チュートリアルのディレクトリ構成
 
 ```Plaintext
-tutorials/
-├── README.md                          # 本ファイル（概要）
-├── 01-environment/                    # ステージ1：環境構築
-│   ├── win.md                         #   Windows 環境構築
-│   └── linux.md                       #   Linux 環境構築
-├── 02-calibration/                    # ステージ2：キャリブレーション
-│   ├── win.md
-│   └── linux.md
-├── 03-teleoperation/                  # ステージ3：遠隔操作
-│   ├── win.md
-│   └── linux.md
-├── 04-data-collection/                # ステージ4：データ収集
-│   ├── win.md
-│   └── linux.md
-├── 05-training/                       # ステージ5：モデル訓練
-│   ├── win.md
-│   └── linux.md
-└── 06-deployment/                     # ステージ6：デプロイと評価
-    ├── win.md
-    └── linux.md
+tutorials/robot-arms/so-arm-amazinghand/
+├── index.md
+├── Linux
+│   ├── 01-Environment-Setup-Linux.md
+│   ├── 02-Hand-Arm-Calibration-Linux.md
+│   ├── 03-Teleoperation-Linux.md
+│   ├── 04-Data-Collection-Linux.md
+│   ├── 05-Model-Training-Linux.md
+│   └── 06-Model-Deployment-Linux.md
+└── Windows
+    ├── 01-Environment-Setup-Windows.md
+    ├── 02-Hand-Arm-Calibration-Windows.md
+    ├── 03-Teleoperation-Windows.md
+    ├── 04-Data-Collection-Windows.md
+    ├── 05-Model-Training-Windows.md
+    └── 06-Model-Deployment-Windows.md
 ```
 
 ---
@@ -88,7 +84,7 @@ tutorials/
 
 4. **初回の遠隔操作では必ず方向を検証**：グリッパーが開く ↔ ハンドが開く、つまむ ↔ ハンドが閉じる。
 
-5. 各ステージの `win.md` / `linux.md` には**そのプラットフォーム固有の注意事項**が含まれています。最後までお読みください。
+5. 各ステージの Windows / Linux には**そのプラットフォーム固有の注意事項**が含まれています。最後までお読みください。
 
 ---
 

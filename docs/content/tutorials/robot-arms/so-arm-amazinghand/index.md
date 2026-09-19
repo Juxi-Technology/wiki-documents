@@ -8,7 +8,7 @@ description: "SO-ARM101 + AmazingHand tutorial overview: the full LeRobot workfl
 
 This tutorial covers the full workflow of teleoperation, data collection, and training for reproducing the **SO-ARM101 follower arm + AmazingHand dexterous hand**, based on LeRobot (a customized version of the official repository).
 
-The tutorial is organized by **stage**, with each stage in its own directory, split internally by operating system into two documents: `win.md` (Windows) and `linux.md` (Linux). Choose the document that matches your operating system.
+The tutorial is organized by **stage**, with each stage in its own directory, split internally by operating system into two documents: Windows and Linux. Choose the document that matches your operating system.
 
 ---
 
@@ -29,26 +29,22 @@ The tutorial is organized by **stage**, with each stage in its own directory, sp
 ## Tutorial Directory Structure
 
 ```Plaintext
-tutorials/
-├── README.md                          # This file (overview)
-├── 01-environment/                    # Stage 1: Environment setup
-│   ├── win.md                         #   Windows environment setup
-│   └── linux.md                       #   Linux environment setup
-├── 02-calibration/                    # Stage 2: Calibration
-│   ├── win.md
-│   └── linux.md
-├── 03-teleoperation/                  # Stage 3: Teleoperation
-│   ├── win.md
-│   └── linux.md
-├── 04-data-collection/                # Stage 4: Data collection
-│   ├── win.md
-│   └── linux.md
-├── 05-training/                       # Stage 5: Model training
-│   ├── win.md
-│   └── linux.md
-└── 06-deployment/                     # Stage 6: Deployment and evaluation
-    ├── win.md
-    └── linux.md
+tutorials/robot-arms/so-arm-amazinghand/
+├── index.md
+├── Linux
+│   ├── 01-Environment-Setup-Linux.md
+│   ├── 02-Hand-Arm-Calibration-Linux.md
+│   ├── 03-Teleoperation-Linux.md
+│   ├── 04-Data-Collection-Linux.md
+│   ├── 05-Model-Training-Linux.md
+│   └── 06-Model-Deployment-Linux.md
+└── Windows
+    ├── 01-Environment-Setup-Windows.md
+    ├── 02-Hand-Arm-Calibration-Windows.md
+    ├── 03-Teleoperation-Windows.md
+    ├── 04-Data-Collection-Windows.md
+    ├── 05-Model-Training-Windows.md
+    └── 06-Model-Deployment-Windows.md
 ```
 
 ---
@@ -88,7 +84,7 @@ tutorials/
 
 4. **Always verify the directions on the first teleoperation**: gripper open ↔ hand open, pinch ↔ hand close.
 
-5. Each stage's `win.md` / `linux.md` includes **platform-specific notes**; please read them in full.
+5. Each stage's Windows / Linux includes **platform-specific notes**; please read them in full.
 
 ---
 

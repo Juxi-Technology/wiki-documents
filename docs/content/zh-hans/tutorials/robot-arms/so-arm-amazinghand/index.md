@@ -8,7 +8,7 @@ description: "本教程面向复现 SO-ARM101 从动臂 + AmazingHand 灵巧手 
 
 本教程面向复现 **SO-ARM101 从动臂 + AmazingHand 灵巧手** 的遥操作、数据采集与训练全流程，基于 LeRobot（官方仓库定制版）。
 
-教程按**阶段**组织，每个阶段独立成目录，内部按操作系统拆分 `win.md`（Windows）与 `linux.md`（Linux）两个文档。请根据你的操作系统选择对应文档阅读。
+教程按**阶段**组织，每个阶段独立成目录，内部按操作系统拆分 Windows 与 Linux 两个文档。请根据你的操作系统选择对应文档阅读。
 
 ---
 
@@ -29,26 +29,22 @@ description: "本教程面向复现 SO-ARM101 从动臂 + AmazingHand 灵巧手 
 ## 教程目录结构
 
 ```Plaintext
-tutorials/
-├── README.md                          # 本文件（总览）
-├── 01-environment/                    # 阶段一：环境搭建
-│   ├── win.md                         #   Windows 环境搭建
-│   └── linux.md                       #   Linux 环境搭建
-├── 02-calibration/                    # 阶段二：标定
-│   ├── win.md
-│   └── linux.md
-├── 03-teleoperation/                  # 阶段三：遥操作
-│   ├── win.md
-│   └── linux.md
-├── 04-data-collection/                # 阶段四：数据采集
-│   ├── win.md
-│   └── linux.md
-├── 05-training/                       # 阶段五：模型训练
-│   ├── win.md
-│   └── linux.md
-└── 06-deployment/                     # 阶段六：部署与评估
-    ├── win.md
-    └── linux.md
+tutorials/robot-arms/so-arm-amazinghand/
+├── index.md
+├── Linux
+│   ├── 01-Environment-Setup-Linux.md
+│   ├── 02-Hand-Arm-Calibration-Linux.md
+│   ├── 03-Teleoperation-Linux.md
+│   ├── 04-Data-Collection-Linux.md
+│   ├── 05-Model-Training-Linux.md
+│   └── 06-Model-Deployment-Linux.md
+└── Windows
+    ├── 01-Environment-Setup-Windows.md
+    ├── 02-Hand-Arm-Calibration-Windows.md
+    ├── 03-Teleoperation-Windows.md
+    ├── 04-Data-Collection-Windows.md
+    ├── 05-Model-Training-Windows.md
+    └── 06-Model-Deployment-Windows.md
 ```
 
 ---
@@ -88,7 +84,7 @@ tutorials/
 
 4. **首次遥操作务必验证方向**：夹爪张开 ↔ 手张开、捏合 ↔ 手闭合。
 
-5. 每个阶段的 `win.md` / `linux.md` 内均包含**该平台特有的注意事项**，请完整阅读。
+5. 每个阶段的 Windows / Linux 内均包含**该平台特有的注意事项**，请完整阅读。
 
 ---
 

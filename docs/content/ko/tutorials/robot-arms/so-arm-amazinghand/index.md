@@ -8,7 +8,7 @@ description: "SO-ARM101 팔로워 암과 AmazingHand 정교한 핸드를 LeRobot
 
 본 튜토리얼은 **SO-ARM101 팔로워 암 + AmazingHand 정교한 핸드**의 원격 조작, 데이터 수집, 학습 전 과정을 재현하기 위한 것입니다. LeRobot(공식 리포지토리 커스텀 버전)를 기반으로 합니다.
 
-튜토리얼은 **단계**별로 구성되어 있으며, 각 단계는 독립된 디렉터리로 되어 있고 내부는 운영체제에 따라 `win.md`(Windows)와 `linux.md`(Linux) 두 문서로 나뉩니다. 사용하는 운영체제에 맞는 문서를 선택해 읽어 주세요.
+튜토리얼은 **단계**별로 구성되어 있으며, 각 단계는 독립된 디렉터리로 되어 있고 내부는 운영체제에 따라 Windows와 Linux 두 문서로 나뉩니다. 사용하는 운영체제에 맞는 문서를 선택해 읽어 주세요.
 
 ---
 
@@ -29,26 +29,22 @@ description: "SO-ARM101 팔로워 암과 AmazingHand 정교한 핸드를 LeRobot
 ## 튜토리얼 디렉터리 구조
 
 ```Plaintext
-tutorials/
-├── README.md                          # 본 파일(개요)
-├── 01-environment/                    # 단계 1: 환경 구축
-│   ├── win.md                         #   Windows 환경 구축
-│   └── linux.md                       #   Linux 환경 구축
-├── 02-calibration/                    # 단계 2: 캘리브레이션
-│   ├── win.md
-│   └── linux.md
-├── 03-teleoperation/                  # 단계 3: 원격 조작
-│   ├── win.md
-│   └── linux.md
-├── 04-data-collection/                # 단계 4: 데이터 수집
-│   ├── win.md
-│   └── linux.md
-├── 05-training/                       # 단계 5: 모델 학습
-│   ├── win.md
-│   └── linux.md
-└── 06-deployment/                     # 단계 6: 배포 및 평가
-    ├── win.md
-    └── linux.md
+tutorials/robot-arms/so-arm-amazinghand/
+├── index.md
+├── Linux
+│   ├── 01-Environment-Setup-Linux.md
+│   ├── 02-Hand-Arm-Calibration-Linux.md
+│   ├── 03-Teleoperation-Linux.md
+│   ├── 04-Data-Collection-Linux.md
+│   ├── 05-Model-Training-Linux.md
+│   └── 06-Model-Deployment-Linux.md
+└── Windows
+    ├── 01-Environment-Setup-Windows.md
+    ├── 02-Hand-Arm-Calibration-Windows.md
+    ├── 03-Teleoperation-Windows.md
+    ├── 04-Data-Collection-Windows.md
+    ├── 05-Model-Training-Windows.md
+    └── 06-Model-Deployment-Windows.md
 ```
 
 ---
@@ -88,7 +84,7 @@ tutorials/
 
 4. **최초 원격 조작 시 반드시 방향을 검증**：그리퍼 열림 ↔ 핸드 열림, 집기 ↔ 핸드 닫힘.
 
-5. 각 단계의 `win.md` / `linux.md`에는 **해당 플랫폼 특유의 주의사항**이 포함되어 있습니다. 끝까지 읽어 주세요.
+5. 각 단계의 Windows / Linux에는 **해당 플랫폼 특유의 주의사항**이 포함되어 있습니다. 끝까지 읽어 주세요.
 
 ---
 
