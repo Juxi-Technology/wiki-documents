@@ -148,7 +148,7 @@ The steps are the same as above
 
 Note that at this time, the computer is only connected to the development board alone, and the development board is not connected to the servo driver board (i.e., not connected to the dexterous hand) for the time being.
 
-After successful upload, connect the development board to the servo driver board via three jumpers, and connect the servo to the servo driver board, referring to the wiring method in [ MEGA328P Development Board Debugging ](https://juxitech.feishu.cn/docx/OmmSdaXt7oZXBUxIwUacAI3Jnrc#doxcniHLi7JvMCniati2Mrgr6ne)[ ](https://juxitech.feishu.cn/docx/OmmSdaXt7oZXBUxIwUacAI3Jnrc#doxcniHLi7JvMCniati2Mrgr6ne)
+After successful upload, connect the development board to the servo driver board via three jumpers, and connect the servo to the servo driver board, referring to the wiring method in [ MEGA328P Development Board Debugging ](https://juxitech.feishu.cn/docx/OmmSdaXt7oZXBUxIwUacAI3Jnrc#doxcniHLi7JvMCniati2Mrgr6ne)
 
 The dexterous hand will continuously loop and run ** "02 Demo Program" **
 

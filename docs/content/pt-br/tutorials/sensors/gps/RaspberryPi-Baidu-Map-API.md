@@ -7,7 +7,7 @@ description: "API do Baidu Maps no Raspberry Pi — registrar a conta de desenvo
 
 **1.** **Método de registro**
 
-Acesse a plataforma aberta do 百度地图 https://lbsyun.baidu.com/
+Acesse a plataforma aberta do Baidu Maps https://lbsyun.baidu.com/
 
 Role até o final da página
 
@@ -43,7 +43,7 @@ Copie o valor de ak do nosso aplicativo
 
 ![Imagem 6](../../../../../public/images/tutorials/sensors/gps/RaspberryPi-Baidu-Map-API/24.jpg) 
 
-Cole no programa e salve; assim, será possível ler as informações de posição através do 百度地图.
+Cole no programa e salve; assim, será possível ler as informações de posição através do Baidu Maps.
 
 ![Imagem 7](../../../../../public/images/tutorials/sensors/gps/RaspberryPi-Baidu-Map-API/25.jpg)
 

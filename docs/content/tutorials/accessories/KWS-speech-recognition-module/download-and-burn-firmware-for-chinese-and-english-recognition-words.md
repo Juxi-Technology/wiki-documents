@@ -50,7 +50,7 @@ description: "The module has been pre-flashed with the voice recognition functio
 
 4. **Chip Model:**Cl1302
 
-5. **sdk名称：**Cl13XX_SDK_ASR_Offline
+5. **SDK name:**Cl13XX_SDK_ASR_Offline
 
 6. **SDK Version:**1.12.16
 

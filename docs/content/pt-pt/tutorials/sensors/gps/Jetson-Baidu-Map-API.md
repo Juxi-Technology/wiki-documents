@@ -7,7 +7,7 @@ description: "Utilize a API do Baidu Maps no Jetson Orin: registo na plataforma 
 
 **1.** **Método de registo**
 
-Aceda à plataforma aberta do 百度地图 https://lbsyun.baidu.com/
+Aceda à plataforma aberta do Baidu Maps https://lbsyun.baidu.com/
 
 Deslize até ao fundo da página
 
@@ -43,7 +43,7 @@ Copie o valor de ak da nossa aplicação
 
 ![Imagem 6](../../../../../public/images/tutorials/sensors/gps/Jetson-Baidu-Map-API/23.jpg) 
 
-Cole no programa e guarde; assim, será possível ler as informações de posição através do 百度地图.
+Cole no programa e guarde; assim, será possível ler as informações de posição através do Baidu Maps.
 
 ![Imagem 7](../../../../../public/images/tutorials/sensors/gps/Jetson-Baidu-Map-API/24.jpg)
 

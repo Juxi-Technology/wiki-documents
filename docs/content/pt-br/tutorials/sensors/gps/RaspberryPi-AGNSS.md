@@ -147,9 +147,9 @@ Use um cabo type-c para conectar o Raspberry Pi e o módulo GPS; execute o coman
 
 ![Imagem 7](../../../../../public/images/tutorials/sensors/gps/RaspberryPi-AGNSS/7.png) 
 
-**3.2. Solicitar a ak do 百度地图**
+**3.2. Solicitar a ak do Baidu Maps**
 
-Consulte o documento [Tutorial de solicitação da api do 百度地图](./RaspberryPi-Baidu-Map-API.md)
+Consulte o documento [Tutorial de solicitação da api do Baidu Maps](./RaspberryPi-Baidu-Map-API.md)
 
  
 
@@ -161,11 +161,11 @@ Inicializar o USB:
 
 ![Imagem 8](../../../../../public/images/tutorials/sensors/gps/RaspberryPi-AGNSS/8.jpg) 
 
-A ak fornecida precisa ser preenchida com o valor de ak que você solicitou; assim, será possível obter as informações aproximadas de latitude e longitude atuais através do 百度地图
+A ak fornecida precisa ser preenchida com o valor de ak que você solicitou; assim, será possível obter as informações aproximadas de latitude e longitude atuais através do Baidu Maps
 
 ![Imagem 9](../../../../../public/images/tutorials/sensors/gps/RaspberryPi-AGNSS/9.jpg) 
 
-Aqui, as informações aproximadas de latitude e longitude obtidas do 百度地图 são enviadas ao servidor; a conta de login usada é a conta oficial da 钜犀, e, após a conclusão da obtenção, o pacote inteiro é enviado ao módulo
+Aqui, as informações aproximadas de latitude e longitude obtidas do Baidu Maps são enviadas ao servidor; a conta de login usada é a conta oficial da 钜犀, e, após a conclusão da obtenção, o pacote inteiro é enviado ao módulo
 
 ![Imagem 10](../../../../../public/images/tutorials/sensors/gps/RaspberryPi-AGNSS/10.jpg) 
 
@@ -197,7 +197,7 @@ Após o módulo ser energizado com sinal fraco, inicia-se a inicialização do U
 
 Depois disso, exibe "GPS Agnss start" e começa a enviar as informações de posicionamento assistido ao servidor; após a conclusão do envio, exibe "GPS Agnss success"
 
-Durante um período após o envio, se o sinal de GPS ainda não tiver sido lido, exibe "GPS no found" e imprime as informações aproximadas de latitude e longitude lidas do 百度地图.
+Durante um período após o envio, se o sinal de GPS ainda não tiver sido lido, exibe "GPS no found" e imprime as informações aproximadas de latitude e longitude lidas do Baidu Maps.
 
 ![Imagem 16](../../../../../public/images/tutorials/sensors/gps/RaspberryPi-AGNSS/16.jpg) 
 

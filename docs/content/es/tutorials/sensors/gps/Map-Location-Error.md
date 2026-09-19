@@ -37,7 +37,7 @@ Este es el valor de coordenadas que recibe nuestro sistema de posicionamiento Be
 Posicionamiento en 高德地图:
 ![Imagen 2](../../../../../public/images/tutorials/sensors/gps/Map-Location-Error/2.png)
 
-Posicionamiento en 百度地图:
+Posicionamiento en Baidu Maps:
 
 ![Imagen 3](../../../../../public/images/tutorials/sensors/gps/Map-Location-Error/3.png)
 
@@ -149,6 +149,6 @@ Para 高德地图 utilice el resultado de la conversión al sistema de coordenad
 
 ## Resumen
 
-Mapas como 谷歌地图 utilizan el sistema de coordenadas WGS-84; el valor de coordenadas que proporciona el sistema de posicionamiento BeiDou debe someterse a una conversión de grados, minutos y segundos, y solo tras la conversión serán coordenadas 84. Mapas como 高德地图 utilizan el sistema de coordenadas Marte GCJ-02, lo que equivale a realizar primero un cifrado GCJ-02 para que el sistema de coordenadas pueda usarse en 高德地图; 百度地图 requiere además un cifrado BD-09 adicional.
+Mapas como 谷歌地图 utilizan el sistema de coordenadas WGS-84; el valor de coordenadas que proporciona el sistema de posicionamiento BeiDou debe someterse a una conversión de grados, minutos y segundos, y solo tras la conversión serán coordenadas 84. Mapas como 高德地图 utilizan el sistema de coordenadas Marte GCJ-02, lo que equivale a realizar primero un cifrado GCJ-02 para que el sistema de coordenadas pueda usarse en 高德地图; Baidu Maps requiere además un cifrado BD-09 adicional.
 
 <RelatedProducts slugs="gps-beidou-module" />

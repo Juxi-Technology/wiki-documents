@@ -83,7 +83,7 @@ Please enter the `~/juxi_speech_ws/src/juxi_voice/juxi_voice/` directory, downlo
 
 #### File 1:`voice_node.py` (Voice Control Node)
 
-**位置**：`~/juxi_speech_ws/src/juxi_voice/juxi_voice/voice_node.py`
+**Location**:`~/juxi_speech_ws/src/juxi_voice/juxi_voice/voice_node.py`
 
 ```Python
 
@@ -198,7 +198,7 @@ if __name__ == '__main__': main()
 
 #### File 2:`rviz_control.py` (RViz control node)
 
-**位置**：`~/juxi_speech_ws/src/juxi_voice/juxi_voice/rviz_control.py`
+**Location**:`~/juxi_speech_ws/src/juxi_voice/juxi_voice/rviz_control.py`
 
 ```Python
 #!/usr/bin/env python3
@@ -285,7 +285,7 @@ if __name__ == '__main__': main()
 
 #### File 3: Modify `setup.py`
 
-**位置**：`~/juxi_speech_ws/src/juxi_voice/setup.py`
+**Location**:`~/juxi_speech_ws/src/juxi_voice/setup.py`
 
 Find the `entry_points` section and modify it to the following content (tell ROS2 where these two programs are located):
 

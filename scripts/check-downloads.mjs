@@ -25,16 +25,28 @@ const walk = (d, out = []) => {
 const dec = (s) => { try { return decodeURIComponent(s) } catch { return s } }
 
 const broken = []
+const spaced = []
 let total = 0
 for (const f of walk(CONTENT)) {
-  for (const m of fs.readFileSync(f, 'utf8').matchAll(/\]\((\/downloads\/[^)\s]+)\)/g)) {
-    const name = dec(m[1].slice('/downloads/'.length))
+  const src = fs.readFileSync(f, 'utf8')
+  // 注意:不能用 [^)\s]+ ——它会连同「目标含裸空格」的链接一起跳过,
+  // 而 markdown 会在空格处截断,这类链接要么退化成纯文本、要么指向错路径。
+  for (const m of src.matchAll(/\]\((\/downloads\/[^)\n]*)\)/g)) {
+    const dest = m[1]
+    if (/ /.test(dest)) { spaced.push({ file: path.relative(root, f), dest }); continue }
+    const name = dec(dest.slice('/downloads/'.length))
     if (!name) continue
     total++
     if (!have.has(name)) broken.push({ file: path.relative(root, f), name })
   }
 }
 
+if (spaced.length) {
+  console.error(`[downloads] ${spaced.length} link target(s) contain a raw space — markdown 会在空格处截断,链接会失效:`)
+  for (const s of spaced.slice(0, 20)) console.error(`  ${s.file} → ${s.dest}`)
+  console.error('\n  修法:把空格写作 %20(站内托管文件的既有写法)。')
+  process.exit(1)
+}
 if (broken.length) {
   console.error(`[downloads] ${broken.length} link(s) point to files missing from docs/public/downloads/:`)
   for (const b of broken.slice(0, 30)) console.error(`  ${b.file} → ${b.name}`)

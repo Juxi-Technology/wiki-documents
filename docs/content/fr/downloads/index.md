@@ -70,10 +70,10 @@ Téléchargements centralisés : firmware, SDK, logiciel hôte et code open sour
 
 ### Servos Feetech
 
-- 📦 [SCS009 舵机调试资料.zip](/downloads/SCS009 舵机调试资料.zip)
+- 📦 [SCS009 舵机调试资料.zip](/downloads/SCS009%20舵机调试资料.zip)
 - 📦 [SCS009-20230110-S.stp](/downloads/SCS009-20230110-S.stp)
 - 📦 [ST3215-20200328-to-customer.stp](/downloads/ST3215-20200328-to-customer.stp)
-- 📦 [STS3215 舵机调试资料.zip](/downloads/STS3215 舵机调试资料.zip)
+- 📦 [STS3215 舵机调试资料.zip](/downloads/STS3215%20舵机调试资料.zip)
 
 ## Support
 

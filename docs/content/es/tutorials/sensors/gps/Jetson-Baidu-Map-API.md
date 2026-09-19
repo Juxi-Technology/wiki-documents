@@ -7,7 +7,7 @@ description: "Módulo GPS/BeiDou con NVIDIA Jetson Orin: registra la API de Baid
 
 **1.** **Método de registro**
 
-Acceda a la plataforma abierta de 百度地图 https://lbsyun.baidu.com/
+Acceda a la plataforma abierta de Baidu Maps https://lbsyun.baidu.com/
 
 Desplace la página hasta el final
 
@@ -43,7 +43,7 @@ Copie el valor de ak de nuestra aplicación
 
 ![Imagen 6](../../../../../public/images/tutorials/sensors/gps/Jetson-Baidu-Map-API/23.jpg) 
 
-Péguelo en el programa y guárdelo; así podrá leer la información de posición mediante 百度地图.
+Péguelo en el programa y guárdelo; así podrá leer la información de posición mediante Baidu Maps.
 
 ![Imagen 7](../../../../../public/images/tutorials/sensors/gps/Jetson-Baidu-Map-API/24.jpg)
 

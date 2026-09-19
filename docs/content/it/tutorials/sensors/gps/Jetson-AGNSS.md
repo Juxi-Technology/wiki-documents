@@ -147,9 +147,9 @@ Collegare il Jetson Orin e il modulo GPS con un cavo type-c; eseguire il comando
 
 ![Immagine 7](../../../../../public/images/tutorials/sensors/gps/Jetson-AGNSS/7.jpg) 
 
-**3.2. Richiesta della ak di 百度地图**
+**3.2. Richiesta della ak di Baidu Maps**
 
-Vedere il documento [Tutorial per richiedere la api di 百度地图](./Jetson-Baidu-Map-API.md)
+Vedere il documento [Tutorial per richiedere la api di Baidu Maps](./Jetson-Baidu-Map-API.md)
 
  
 
@@ -161,11 +161,11 @@ Inizializzare l'USB:
 
 ![Immagine 8](../../../../../public/images/tutorials/sensors/gps/Jetson-AGNSS/8.jpg) 
 
-Nei materiali è necessario inserire il valore di ak richiesto; in questo modo sarà possibile ottenere tramite 百度地图 le informazioni approssimative di latitudine e longitudine attuali.
+Nei materiali è necessario inserire il valore di ak richiesto; in questo modo sarà possibile ottenere tramite Baidu Maps le informazioni approssimative di latitudine e longitudine attuali.
 
 ![Immagine 9](../../../../../public/images/tutorials/sensors/gps/Jetson-AGNSS/9.jpg) 
 
-Qui le informazioni approssimative di latitudine e longitudine ottenute tramite 百度地图 vengono inviate al server; l'account di accesso che utilizziamo è l'account ufficiale di 钜犀. Una volta completata l'acquisizione, l'intero pacchetto viene inviato al modulo.
+Qui le informazioni approssimative di latitudine e longitudine ottenute tramite Baidu Maps vengono inviate al server; l'account di accesso che utilizziamo è l'account ufficiale di 钜犀. Una volta completata l'acquisizione, l'intero pacchetto viene inviato al modulo.
 
 ![Immagine 10](../../../../../public/images/tutorials/sensors/gps/Jetson-AGNSS/10.jpg) 
 
@@ -197,7 +197,7 @@ Dopo aver alimentato il modulo in condizioni di segnale debole, inizia l'inizial
 
 Successivamente viene visualizzato "GPS Agnss start" e inizia l'invio delle informazioni di posizionamento assistito al server; completato l'invio viene visualizzato "GPS Agnss success"
 
-Se entro un certo tempo dall'invio non è ancora stato letto il segnale GPS, viene visualizzato "GPS no found" e vengono stampate le informazioni approssimative di latitudine e longitudine lette tramite 百度地图.
+Se entro un certo tempo dall'invio non è ancora stato letto il segnale GPS, viene visualizzato "GPS no found" e vengono stampate le informazioni approssimative di latitudine e longitudine lette tramite Baidu Maps.
 
 ![Immagine 16](../../../../../public/images/tutorials/sensors/gps/Jetson-AGNSS/16.jpg) 
 
