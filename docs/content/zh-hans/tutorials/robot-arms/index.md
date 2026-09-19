@@ -1,6 +1,6 @@
 ---
 title: 机器人机械臂系列
-description: "钜犀科技机械臂系列教程首页——SO-ARM101、AmazingHand、Lekiwi"
+description: "钜犀科技机械臂系列教程首页——SO-ARM101、AmazingHand、Lekiwi、XLeRobot"
 ---
 
 # 机器人机械臂系列
@@ -10,6 +10,8 @@ description: "钜犀科技机械臂系列教程首页——SO-ARM101、AmazingHa
 ---
 
 ## 产品列表
+
+- [选型指南](./select-guide.md)
 
 ### SO-ARM101
 
@@ -23,6 +25,72 @@ description: "钜犀科技机械臂系列教程首页——SO-ARM101、AmazingHa
 - [SO-ARM101 7-DOF 改造与 LeRobot 使用](./so-arm101/SO-ARM101-7DOF-LeRobot.md)
 - [SoARM 系列舵机校准工具](./so-arm101/SO-ARM101-Servo-Calibration-Tool.md)
 
+#### SO-ARM101 系列
+- [臂载支架与环境相机套件安装](./so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation.md)
+- [顶置摄像头安装](./so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation.md)
+
+#### 1. 安装 LeRobot 环境
+- [第一步:安装 LeRobot 环境(Ubuntu)](./so-arm101/lerobot/01-Environment-Setup/Ubuntu.md)
+- [第一步:安装 LeRobot 环境(Windows)](./so-arm101/lerobot/01-Environment-Setup/Windows.md)
+- [第一步:安装 LeRobot 环境(macOS)](./so-arm101/lerobot/01-Environment-Setup/MacOS.md)
+
+#### 2. 查看串口设备端口号
+- [第二步:查看串口设备端口号(Ubuntu)](./so-arm101/lerobot/02-Serial-Port/Ubuntu.md)
+- [第二步:查看串口设备端口号(Windows)](./so-arm101/lerobot/02-Serial-Port/Windows.md)
+- [第二步:查看串口设备端口号(macOS)](./so-arm101/lerobot/02-Serial-Port/MacOS.md)
+
+#### 3. 校准机械臂
+- [第三步:校准机械臂(Ubuntu)](./so-arm101/lerobot/03-Calibration/Ubuntu.md)
+- [第三步:校准机械臂(Windows)](./so-arm101/lerobot/03-Calibration/Windows.md)
+- [第三步:校准机械臂(macOS)](./so-arm101/lerobot/03-Calibration/MacOS.md)
+
+#### 4. 遥操作
+- [第四步:遥操作(Ubuntu)](./so-arm101/lerobot/04-Teleoperation/Ubuntu.md)
+- [第四步:遥操作(Windows)](./so-arm101/lerobot/04-Teleoperation/Windows.md)
+- [第四步:遥操作(macOS)](./so-arm101/lerobot/04-Teleoperation/MacOS.md)
+
+#### 5. 连接摄像头的遥操作
+- [第五步:连接摄像头的遥操作(Ubuntu)](./so-arm101/lerobot/05-Camera-Teleoperation/Ubuntu.md)
+- [第五步:连接摄像头的遥操作(Windows)](./so-arm101/lerobot/05-Camera-Teleoperation/Windows.md)
+- [第五步:连接摄像头的遥操作(macOS)](./so-arm101/lerobot/05-Camera-Teleoperation/MacOS.md)
+
+#### 6. 采集数据集(真机)
+- [第六步:采集数据集(真机)——示教采集](./so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording.md)
+- [第六步:采集数据集(真机)——注意事项](./so-arm101/lerobot/06-Data-Collection/Collection-Notes.md)
+- [第六步:采集数据集(真机)——注册 Hugging Face 账号(可选)](./so-arm101/lerobot/06-Data-Collection/HF-Account.md)
+- [第六步:采集数据集(真机)——上传数据集到 Hugging Face(可选)](./so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload.md)
+
+#### 7. 训练模型
+- [第七步:训练模型——本地 Ubuntu 训练](./so-arm101/lerobot/07-Training/Local-Ubuntu.md)
+- [第七步:训练模型——云 GPU 训练环境配置](./so-arm101/lerobot/07-Training/Cloud-GPU.md)
+- [第七步:训练模型——wandb 查看实时训练曲线](./so-arm101/lerobot/07-Training/WandB-Curves.md)
+- [第七步:训练模型——上传模型到 Hugging Face(可选)](./so-arm101/lerobot/07-Training/HF-Model-Upload.md)
+- [第七步:训练模型——获得模型权重文件](./so-arm101/lerobot/07-Training/Model-Weights.md)
+- [第七步:训练模型——ACT 训练命令](./so-arm101/lerobot/07-Training/Command-ACT.md)
+- [第七步:训练模型——pi0 训练命令](./so-arm101/lerobot/07-Training/Command-pi0.md)
+- [第七步:训练模型——pi0.5 训练命令](./so-arm101/lerobot/07-Training/Command-pi0.5.md)
+- [第七步:训练模型——pi0fast 训练命令](./so-arm101/lerobot/07-Training/Command-pi0fast.md)
+- [第七步:训练模型——smolvla 训练命令](./so-arm101/lerobot/07-Training/Command-smolvla.md)
+
+#### 8. 模型推理
+- [第八步:模型推理——命令行说明](./so-arm101/lerobot/08-Inference/CLI-Reference.md)
+- [第八步:模型推理——常见 Bug 及解决](./so-arm101/lerobot/08-Inference/Common-Bugs.md)
+- [第八步:模型推理——ACT 推理命令](./so-arm101/lerobot/08-Inference/Command-ACT.md)
+- [第八步:模型推理——pi0 推理命令](./so-arm101/lerobot/08-Inference/Command-pi0.md)
+- [第八步:模型推理——pi0.5 推理命令](./so-arm101/lerobot/08-Inference/Command-pi0.5.md)
+- [第八步:模型推理——smolvla 推理命令](./so-arm101/lerobot/08-Inference/Command-smolvla.md)
+
+#### 基础知识
+- [了解 LeRobot](./so-arm101/basics/Understanding-LeRobot.md)
+- [Hugging Face 上的 LeRobot 数据集](./so-arm101/basics/HF-Datasets.md)
+- [模型训练的资料](./so-arm101/basics/Training-Resources.md)
+- [SO-ARM 100 机械臂官方 3D 打印文件](./so-arm101/basics/Official-3D-Print-Files.md)
+- [URDF 文件及资料参考](./so-arm101/basics/URDF-Reference.md)
+
+#### 专题与进阶
+- [ROS2 仿真控制](./so-arm101/ROS2-Simulation-Control.md)
+- [平行指夹爪安装教程](./so-arm101/Parallel-Finger-Gripper-Installation.md)
+
 ### AmazingHand
 
 开源仿生灵巧手，提供高精度的多指操作能力。
@@ -30,6 +98,20 @@ description: "钜犀科技机械臂系列教程首页——SO-ARM101、AmazingHa
 - [AmazingHand 接口控制](./amazing-hand/AmazingHand-Interface-Control.md)
 - [AmazingHand 官方示例](./amazing-hand/AmazingHand-Official-Example.md)
 - [AmazingHand TTL调试](./amazing-hand/AmazingHand-TTL-Debugging.md)
+
+#### AmazingHand
+- [AmazingHand灵巧手产品资料](./amazing-hand/product-info.md)
+
+#### PWM 舵机调试教程
+- [01-GUI可视化控制](./amazing-hand/pwm-debugging/01-GUI-Visual-Control.md)
+- [02-手势追踪教程](./amazing-hand/pwm-debugging/02-Gesture-Tracking.md)
+- [03-PWM舵机版本-使用手册](./amazing-hand/pwm-debugging/03-PWM-Servo-Manual.md)
+- [04-串口舵机版本-使用说明](./amazing-hand/pwm-debugging/04-Serial-Servo-Guide.md)
+
+#### 手势追踪教程
+- [Linux（Ubuntu）一键部署运行](./amazing-hand/gesture-tracking/01-Ubuntu.md)
+- [Windows一键部署运行](./amazing-hand/gesture-tracking/02-Windows.md)
+- [Mac一键部署运行](./amazing-hand/gesture-tracking/03-macOS.md)
 
 ### Lekiwi
 

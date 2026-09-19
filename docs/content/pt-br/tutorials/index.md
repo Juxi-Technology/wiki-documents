@@ -13,6 +13,11 @@ Bem-vindo à página de Tutoriais! Aqui você encontra todos os tutoriais de uso
 
 ## Categorias de Tópicos
 
+- **Guia Rápido**
+  - [FAQ](./faq)
+  - [Introdução ao ROS](./ros-intro)
+  - [Docs Lark](./lark-wiki)
+
 ### Série de Braços Robóticos
 - [Série de Braços Robóticos](./robot-arms/)
 - **SO-ARM101**
@@ -28,6 +33,9 @@ Bem-vindo à página de Tutoriais! Aqui você encontra todos os tutoriais de uso
 - **Lekiwi**
   - [Lekiwi-Tutorial](./robot-arms/lekiwi/Lekiwi-Tutorial)
   - [Lekiwi-Assembly](./robot-arms/lekiwi/Lekiwi-Assembly)
+
+- **Série SO-ARM101**
+  - [Solução de problemas de teleoperação](./robot-arms/so-arm101/SO-ARM101-NanoCam-Troubleshooting)
 
 ### Acessórios Robóticos
 - [Acessórios Robóticos](./accessories/)
@@ -48,6 +56,9 @@ Bem-vindo à página de Tutoriais! Aqui você encontra todos os tutoriais de uso
   - [Protocolo de Comunicação do Servo SCS](./accessories/feetech/Feetech-SCS_Communication_Protocol)
   - [Servo STS com Encoder Magnético - Análise da Tabela de Memória](./accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis)
   - [Servo SCSCL Potenciométrico - Análise da Tabela de Memória](./accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis)
+
+- **Tutorial de visão IA (11 capítulos)**
+  - [Capítulo 2: Início rápido](./accessories/esp32-nanocam/Ch02-Quick-Start)
 
 ### Sensores e Percepção
 - [Sensores e Percepção](./sensors/)
@@ -79,6 +90,9 @@ Bem-vindo à página de Tutoriais! Aqui você encontra todos os tutoriais de uso
 2. **Visualize a Lista de Tutoriais**: Em cada categoria, veja os tutoriais e documentos disponíveis
 3. **Siga as Etapas**: Siga as etapas dos tutoriais para aprender e usar o produto gradualmente
 4. **Pratique e Explore**: Durante a operação real, experimente diferentes funções e configurações para acumular experiência
+- **Recursos de Aprendizado**
+  - [Recursos de Aprendizado](./learning-resources/index)
+  - [Compatibilidade PyTorch no Jetson Orin](./learning-resources/jetson-orin-pytorch-compatibility)
 
 ## Outros Recursos
 

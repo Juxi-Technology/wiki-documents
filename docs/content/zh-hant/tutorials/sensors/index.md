@@ -21,6 +21,28 @@ description: "鉅犀科技感測器系列教程首頁：IMU 慣導模組與 GPS 
 - [ROS2範例](./imu/ros-examples/ros2.md)
 - [多板卡範例](./imu/multi-board-examples/overview.md)
 
+#### IMU 慣性導航模組
+- [IMU 校準](./imu/calibration.md)
+- [檔案遠程傳輸](./imu/remote-file-transfer.md)
+- [SSH檔案傳輸](./imu/ssh-file-transfer.md)
+
+#### 多板卡示例
+- [PC 通信](./imu/multi-board-examples/pc-communication.md)
+
+#### I2C 通信
+- [Arduino](./imu/multi-board-examples/i2c-communication/arduino.md)
+- [Jetson](./imu/multi-board-examples/i2c-communication/jetson.md)
+- [樹莓派](./imu/multi-board-examples/i2c-communication/raspberry-pi.md)
+- [RDK](./imu/multi-board-examples/i2c-communication/rdk.md)
+- [STM32](./imu/multi-board-examples/i2c-communication/stm32.md)
+
+#### 串口通信
+- [Arduino](./imu/multi-board-examples/serial-communication/arduino.md)
+- [Jetson](./imu/multi-board-examples/serial-communication/jetson.md)
+- [樹莓派](./imu/multi-board-examples/serial-communication/raspberry-pi.md)
+- [RDK](./imu/multi-board-examples/serial-communication/rdk.md)
+- [STM32](./imu/multi-board-examples/serial-communication/stm32.md)
+
 ### GPS 北斗定位模組
 
 GPS & 北斗定位模組全平台教程:51 單片機、Arduino、STM32、Jetson、樹莓派與 ROS,含 AGNSS 輔助定位與地圖定位誤差排查。

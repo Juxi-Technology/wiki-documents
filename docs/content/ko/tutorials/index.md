@@ -9,6 +9,13 @@ description: "Juxi Technology 튜토리얼 — 로봇 암과 액세서리, 센�
 
 ## 주제 분류
 
+- **마지막 업데이트 (UTC)**
+  - [FAQ](./faq)
+  - [ROS 입문](./ros-intro)
+  - [Lark Wiki](./lark-wiki)
+  - [학습 리소스](./learning-resources/index)
+  - [Jetson Orin에서 PyTorch 비호환 문제](./learning-resources/jetson-orin-pytorch-compatibility)
+
 ### 로봇 암 시리즈
 - [로봇 암 시리즈](./robot-arms/)
 - **SO-ARM101**
@@ -24,6 +31,9 @@ description: "Juxi Technology 튜토리얼 — 로봇 암과 액세서리, 센�
 - **Lekiwi**
   - [Lekiwi-Tutorial](./robot-arms/lekiwi/Lekiwi-Tutorial)
   - [Lekiwi-Assembly](./robot-arms/lekiwi/Lekiwi-Assembly)
+
+- **SO-ARM101 시리즈**
+  - [원격조작 문제 해결](./robot-arms/so-arm101/SO-ARM101-NanoCam-Troubleshooting)
 
 ### 로봇 액세서리
 - [로봇 액세서리](./accessories/)
@@ -44,6 +54,9 @@ description: "Juxi Technology 튜토리얼 — 로봇 암과 액세서리, 센�
   - [SCS 서보 통신 프로토콜](./accessories/feetech/Feetech-SCS_Communication_Protocol)
   - [자기 인코더 STS 서보 - 메모리 테이블 분석](./accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis)
   - [가변저항 SCSCL 서보 - 메모리 테이블 분석](./accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis)
+
+- **AI 비전 튜토리얼(11장)**
+  - [2장: 퀵 스타트](./accessories/esp32-nanocam/Ch02-Quick-Start)
 
 ### 센서와 인지
 - [센서와 인지](./sensors/)

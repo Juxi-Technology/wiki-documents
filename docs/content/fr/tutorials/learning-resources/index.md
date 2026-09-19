@@ -6,3 +6,6 @@ description: "Accueil des ressources pédagogiques de Juxi Technology — démar
 # Ressources pédagogiques
 
 Diverses ressources pédagogiques pour mieux comprendre et utiliser nos produits.
+
+- **Dernière mise à jour (UTC)**
+  - [Incompatibilités PyTorch sur Jetson Orin](./jetson-orin-pytorch-compatibility.md)

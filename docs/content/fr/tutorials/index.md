@@ -9,6 +9,13 @@ Bienvenue sur la page Tutoriels ! Vous y trouverez tous les tutoriels d'utilisat
 
 ## Catégories
 
+- **Dernière mise à jour (UTC)**
+  - [FAQ](./faq)
+  - [Introduction à ROS](./ros-intro)
+  - [Lark Wiki](./lark-wiki)
+  - [Ressources pédagogiques](./learning-resources/index)
+  - [Incompatibilités PyTorch sur Jetson Orin](./learning-resources/jetson-orin-pytorch-compatibility)
+
 ### Série bras robotiques
 - [Série bras robotiques](./robot-arms/)
 - **SO-ARM101**
@@ -24,6 +31,9 @@ Bienvenue sur la page Tutoriels ! Vous y trouverez tous les tutoriels d'utilisat
 - **Lekiwi**
   - [Tutoriel d'utilisation du robot mobile Lekiwi](./robot-arms/lekiwi/Lekiwi-Tutorial)
   - [Montage Lekiwi](./robot-arms/lekiwi/Lekiwi-Assembly)
+
+- **Série SO-ARM101**
+  - [Dépannage de la téléopération](./robot-arms/so-arm101/SO-ARM101-NanoCam-Troubleshooting)
 
 ### Accessoires robotiques
 - [Accessoires robotiques](./accessories/)
@@ -44,6 +54,9 @@ Bienvenue sur la page Tutoriels ! Vous y trouverez tous les tutoriels d'utilisat
   - [Protocole de communication servo SCS](./accessories/feetech/Feetech-SCS_Communication_Protocol)
   - [Servo magnétique STS — analyse du tableau mémoire](./accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis)
   - [Servo potentiomètre SCSCL — analyse du tableau mémoire](./accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis)
+
+- **Tutoriel de vision IA (11 chapitres)**
+  - [Chapitre 2 : Démarrage rapide](./accessories/esp32-nanocam/Ch02-Quick-Start)
 
 ### Capteurs et perception
 - [Capteurs et perception](./sensors/)

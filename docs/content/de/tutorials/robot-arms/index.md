@@ -1,6 +1,6 @@
 ---
 title: Serie Roboterarme
-description: "Juxi Technology Tutorial-Homepage Roboterarme — SO-ARM101, AmazingHand, Lekiwi"
+description: "Juxi Technology Tutorial-Homepage Roboterarme — SO-ARM101, AmazingHand, Lekiwi, XLeRobot"
 ---
 
 # Serie Roboterarme
@@ -10,6 +10,8 @@ Willkommen zur Tutorial-Serie Roboterarme! Hier finden Sie vollständige Anleitu
 ---
 
 ## Produktliste
+
+- [Auswahlhilfe](./select-guide.md)
 
 ### SO-ARM101
 
@@ -23,6 +25,72 @@ Willkommen zur Tutorial-Serie Roboterarme! Hier finden Sie vollständige Anleitu
 - [SO-ARM101 7-DOF-Umbau und LeRobot-Nutzung](./so-arm101/SO-ARM101-7DOF-LeRobot.md)
 - [SoARM-Servo-Kalibrierungstool](./so-arm101/SO-ARM101-Servo-Calibration-Tool.md)
 
+#### SO-ARM101-Serie
+- [SO-ARM100&101 Armhalterung und Umgebungskamera-Kit – Montage-Tutorial](./so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation.md)
+- [Overhead-Kamera-Halterung Montage](./so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation.md)
+
+#### 1. LeRobot-Umgebung
+- [Schritt 1: LeRobot-Umgebung installieren (Ubuntu)](./so-arm101/lerobot/01-Environment-Setup/Ubuntu.md)
+- [Schritt 1: LeRobot-Umgebung installieren (Windows)](./so-arm101/lerobot/01-Environment-Setup/Windows.md)
+- [Schritt 1: LeRobot-Umgebung installieren (macOS)](./so-arm101/lerobot/01-Environment-Setup/MacOS.md)
+
+#### 2. Serielle Ports
+- [Schritt 2: Ports der seriellen Geräte anzeigen (Ubuntu)](./so-arm101/lerobot/02-Serial-Port/Ubuntu.md)
+- [Schritt 2: Ports der seriellen Geräte anzeigen (Windows)](./so-arm101/lerobot/02-Serial-Port/Windows.md)
+- [Schritt 2: Ports der seriellen Geräte anzeigen (macOS)](./so-arm101/lerobot/02-Serial-Port/MacOS.md)
+
+#### 3. Kalibrierung
+- [Schritt 3: Roboterarm kalibrieren (Ubuntu)](./so-arm101/lerobot/03-Calibration/Ubuntu.md)
+- [Schritt 3: Roboterarm kalibrieren (Windows)](./so-arm101/lerobot/03-Calibration/Windows.md)
+- [Schritt 3: Roboterarm kalibrieren (macOS)](./so-arm101/lerobot/03-Calibration/MacOS.md)
+
+#### 4. Teleoperation
+- [Schritt 4: Teleoperation (Ubuntu)](./so-arm101/lerobot/04-Teleoperation/Ubuntu.md)
+- [Schritt 4: Teleoperation (Windows)](./so-arm101/lerobot/04-Teleoperation/Windows.md)
+- [Schritt 4: Teleoperation (macOS)](./so-arm101/lerobot/04-Teleoperation/MacOS.md)
+
+#### 5. Teleop mit Kamera
+- [Schritt 5: Teleoperation mit Kamera (Ubuntu)](./so-arm101/lerobot/05-Camera-Teleoperation/Ubuntu.md)
+- [Schritt 5: Teleoperation mit Kamera (Windows)](./so-arm101/lerobot/05-Camera-Teleoperation/Windows.md)
+- [Schritt 5: Teleoperation mit Kamera (macOS)](./so-arm101/lerobot/05-Camera-Teleoperation/MacOS.md)
+
+#### 6. Datenerfassung
+- [Schritt 6: Datensatz durch Demonstration erfassen](./so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording.md)
+- [Schritt 6: Hinweise zum Erfassen von Datensätzen](./so-arm101/lerobot/06-Data-Collection/Collection-Notes.md)
+- [Schritt 6: Hugging-Face-Konto registrieren (optional)](./so-arm101/lerobot/06-Data-Collection/HF-Account.md)
+- [Schritt 6: Datensatz auf HuggingFace hochladen (optional)](./so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload.md)
+
+#### 7. Modelltraining
+- [Schritt 7: Lokales Training unter Ubuntu](./so-arm101/lerobot/07-Training/Local-Ubuntu.md)
+- [Schritt 7: Cloud-GPU-Trainingsumgebung einrichten](./so-arm101/lerobot/07-Training/Cloud-GPU.md)
+- [Schritt 7: Trainingskurven in Echtzeit mit wandb anzeigen](./so-arm101/lerobot/07-Training/WandB-Curves.md)
+- [Schritt 7: Modell zu HuggingFace hochladen (optional)](./so-arm101/lerobot/07-Training/HF-Model-Upload.md)
+- [Schritt 7: Modelldateien abrufen](./so-arm101/lerobot/07-Training/Model-Weights.md)
+- [Schritt 7: Trainingsbefehl für ACT](./so-arm101/lerobot/07-Training/Command-ACT.md)
+- [Schritt 7: Trainingsbefehl für pi0](./so-arm101/lerobot/07-Training/Command-pi0.md)
+- [Schritt 7: Trainingsbefehl für pi0.5](./so-arm101/lerobot/07-Training/Command-pi0.5.md)
+- [Schritt 7: Trainingsbefehl für pi0fast](./so-arm101/lerobot/07-Training/Command-pi0fast.md)
+- [Schritt 7: Trainingsbefehl für SmolVLA](./so-arm101/lerobot/07-Training/Command-smolvla.md)
+
+#### 8. Modell-Inferenz
+- [Schritt 8: Erläuterung der Befehle](./so-arm101/lerobot/08-Inference/CLI-Reference.md)
+- [Schritt 8: Häufige Bugs und Lösungen](./so-arm101/lerobot/08-Inference/Common-Bugs.md)
+- [Schritt 8: Deploy-Befehl für ACT](./so-arm101/lerobot/08-Inference/Command-ACT.md)
+- [Schritt 8: Deploy-Befehl für pi0](./so-arm101/lerobot/08-Inference/Command-pi0.md)
+- [Schritt 8: Deploy-Befehl für pi0.5](./so-arm101/lerobot/08-Inference/Command-pi0.5.md)
+- [Schritt 8: Deploy-Befehl für SmolVLA](./so-arm101/lerobot/08-Inference/Command-smolvla.md)
+
+#### Grundlagen
+- [LeRobot kennenlernen](./so-arm101/basics/Understanding-LeRobot.md)
+- [LeRobot-Datensätze auf HuggingFace](./so-arm101/basics/HF-Datasets.md)
+- [Materialien zum Modelltraining](./so-arm101/basics/Training-Resources.md)
+- [Offizielle 3D-Druckdateien für den SO-ARM 100 Roboterarm](./so-arm101/basics/Official-3D-Print-Files.md)
+- [URDF-Dateien und Referenzmaterial](./so-arm101/basics/URDF-Reference.md)
+
+#### Weitere Themen
+- [ROS2-Simulationssteuerung](./so-arm101/ROS2-Simulation-Control.md)
+- [Montageanleitung für den Parallelbacken-Greifer](./so-arm101/Parallel-Finger-Gripper-Installation.md)
+
 ### AmazingHand
 
 Open-Source-Greifhand mit hochpräziser Mehrfinger-Manipulation.
@@ -30,6 +98,20 @@ Open-Source-Greifhand mit hochpräziser Mehrfinger-Manipulation.
 - [AmazingHand-Schnittstellensteuerung](./amazing-hand/AmazingHand-Interface-Control.md)
 - [AmazingHand Offizielles Beispiel](./amazing-hand/AmazingHand-Official-Example.md)
 - [AmazingHand-TTL-Debugging](./amazing-hand/AmazingHand-TTL-Debugging.md)
+
+#### AmazingHand
+- [AmazingHand Fingerhand Produktinformationen](./amazing-hand/product-info.md)
+
+#### PWM-Servo-Debugging
+- [01-GUI-visuelle Steuerung](./amazing-hand/pwm-debugging/01-GUI-Visual-Control.md)
+- [02-Gesten-Tracking-Tutorial](./amazing-hand/pwm-debugging/02-Gesture-Tracking.md)
+- [03-PWM-Servo-Version - Handbuch](./amazing-hand/pwm-debugging/03-PWM-Servo-Manual.md)
+- [04-Serienservo-Version - Benutzungshinweise](./amazing-hand/pwm-debugging/04-Serial-Servo-Guide.md)
+
+#### Gestenverfolgung
+- [Linux（Ubuntu）Ein-Klick-Deployment und -Ausführung](./amazing-hand/gesture-tracking/01-Ubuntu.md)
+- [Windows Ein-Klick-Deployment und -Ausführung](./amazing-hand/gesture-tracking/02-Windows.md)
+- [Mac Ein-Klick-Deployment und -Ausführung](./amazing-hand/gesture-tracking/03-macOS.md)
 
 ### Lekiwi
 

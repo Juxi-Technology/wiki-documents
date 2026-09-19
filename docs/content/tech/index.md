@@ -8,3 +8,6 @@ description: "Tech Docs for Juxi Technology: API Reference and Developer Guide p
 This page is being prepared.
 
 Documentation for Juxi Technology products is currently available in the [Tutorials Center](/tutorials/). If you have questions, please [contact us](/community/).
+
+- [API Reference](./api-reference.md)
+- [Developer Guide](./dev-guide.md)

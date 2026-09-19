@@ -21,6 +21,28 @@ description: "Juxi Technology 센서 시리즈 튜토리얼 홈——IMU 관성�
 - [ROS2 예제](./imu/ros-examples/ros2.md)
 - [멀티보드 예제](./imu/multi-board-examples/overview.md)
 
+#### 마지막 업데이트 (UTC)
+- [IMU 캘리브레이션](./imu/calibration.md)
+- [파일 원격 전송](./imu/remote-file-transfer.md)
+- [SSH 파일 전송](./imu/ssh-file-transfer.md)
+
+#### 멀티 보드 예제
+- [PC 통신](./imu/multi-board-examples/pc-communication.md)
+
+#### I2C 통신
+- [Arduino](./imu/multi-board-examples/i2c-communication/arduino.md)
+- [Jetson](./imu/multi-board-examples/i2c-communication/jetson.md)
+- [라즈베리파이](./imu/multi-board-examples/i2c-communication/raspberry-pi.md)
+- [RDK](./imu/multi-board-examples/i2c-communication/rdk.md)
+- [STM32](./imu/multi-board-examples/i2c-communication/stm32.md)
+
+#### 직렬 통신
+- [Arduino](./imu/multi-board-examples/serial-communication/arduino.md)
+- [Jetson](./imu/multi-board-examples/serial-communication/jetson.md)
+- [라즈베리파이](./imu/multi-board-examples/serial-communication/raspberry-pi.md)
+- [RDK](./imu/multi-board-examples/serial-communication/rdk.md)
+- [STM32](./imu/multi-board-examples/serial-communication/stm32.md)
+
 ### GPS 베이더우 측위 모듈
 
 GPS & 베이더우 모듈 전 플랫폼 튜토리얼: 51 MCU, Arduino, STM32, Jetson, 라즈베리파이, ROS(AGNSS 및 지도 위치 오차 포함).

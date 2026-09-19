@@ -9,6 +9,13 @@ Benvenuto nella pagina dei tutorial! Qui puoi trovare tutti i tutorial d'uso dei
 
 ## Categorie di argomenti
 
+- **Ultimo aggiornamento (UTC)**
+  - [FAQ](./faq)
+  - [Introduzione a ROS](./ros-intro)
+  - [Lark Wiki](./lark-wiki)
+  - [Risorse didattiche](./learning-resources/index)
+  - [Incompatibilità PyTorch su Jetson Orin](./learning-resources/jetson-orin-pytorch-compatibility)
+
 ### Serie di bracci robotici
 - [Serie di bracci robotici](./robot-arms/)
 - **SO-ARM101**
@@ -24,6 +31,9 @@ Benvenuto nella pagina dei tutorial! Qui puoi trovare tutti i tutorial d'uso dei
 - **Lekiwi**
   - [Tutorial Lekiwi](./robot-arms/lekiwi/Lekiwi-Tutorial)
   - [Assemblaggio Lekiwi](./robot-arms/lekiwi/Lekiwi-Assembly)
+
+- **Serie SO-ARM101**
+  - [Risoluzione problemi di teleoperazione](./robot-arms/so-arm101/SO-ARM101-NanoCam-Troubleshooting)
 
 ### Accessori robotici
 - [Accessori robotici](./accessories/)
@@ -44,6 +54,9 @@ Benvenuto nella pagina dei tutorial! Qui puoi trovare tutti i tutorial d'uso dei
   - [Protocollo di comunicazione servo SCS](./accessories/feetech/Feetech-SCS_Communication_Protocol)
   - [Servo STS con encoder magnetico — analisi della tabella di memoria](./accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis)
   - [Servo SCSCL a potenziometro — analisi della tabella di memoria](./accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis)
+
+- **Tutorial di visione IA (11 capitoli)**
+  - [Capitolo 2: Avvio rapido](./accessories/esp32-nanocam/Ch02-Quick-Start)
 
 ### Sensori e percezione
 - [Sensori e percezione](./sensors/)

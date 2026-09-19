@@ -1,6 +1,6 @@
 ---
 title: Roboter-Accessoires
-description: "Juxi Technology Accessoire-Tutorials — KWS-Sprache, Feetech-Servos, Kameras, Soundkarten"
+description: "Juxi Technology Accessoire-Tutorials — KWS-Sprache, ESP32-NanoCam, Feetech-Servos, Kameras, Soundkarten"
 ---
 
 # Roboter-Accessoires
@@ -10,6 +10,13 @@ Willkommen zu den Accessoire-Tutorials! Hier finden Sie Anleitungen für Roboter
 ---
 
 ## Produktliste
+
+- [USB-Kamera mit Autofokus](./usb-auto-focus-camera.md)
+- [Jetson-CSI-Kamera](./jetson-csi-camera.md)
+
+- [2-DOF-Gimbal](./2dof-camera-gimbal.md)
+
+- [Herzfrequenz- und SpO2-Sensor](./heart-rate-spo2.md)
 
 ### KWS-Spracherkennungsmodul
 
@@ -31,6 +38,17 @@ ESP32-S3-Videoübertragungs- und KI-Visionsmodul, unterstützt 8 KI-Modi, AP+STA
 - [Hardware-Spezifikation](./esp32-nanocam/ESP32-NanoCam-Hardware-Spec.md)
 - [Handbuch zum seriellen Protokoll](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
 - [KI-Vision-Tutorial Kapitel 1: Umgebung einrichten](./esp32-nanocam/Ch01-Environment-Setup.md)
+
+#### KI-Vision-Tutorial (11 Kapitel)
+- [Kapitel 3: Kamera-Grundlagen](./esp32-nanocam/Ch03-Camera-Basics.md)
+- [Kapitel 4: Gesichtsdetektion](./esp32-nanocam/Ch04-Face-Detection.md)
+- [Kapitel 5: Katzengesichtsdetektion](./esp32-nanocam/Ch05-Cat-Face-Detection.md)
+- [Kapitel 6: Farberkennung](./esp32-nanocam/Ch06-Color-Recognition.md)
+- [Kapitel 7: QR-Code-Scanning](./esp32-nanocam/Ch07-QR-Code-Scanning.md)
+- [Kapitel 8: Gesichtserkennung](./esp32-nanocam/Ch08-Face-Recognition.md)
+- [Kapitel 9: Sprachdialog](./esp32-nanocam/Ch09-Voice-Chat.md)
+- [Kapitel 10: KI-Bildverständnis](./esp32-nanocam/Ch10-AI-Vision-Understanding.md)
+- [Kapitel 11: ESP-Claw-Sprachsteuerung](./esp32-nanocam/Ch11-ESP-Claw-Voice-Control.md)
 
 ### CSI-Kamera-Tutorials
 
@@ -73,6 +91,13 @@ CI1302-Offline-Sprachmodul-Tutorials: Schnellstart, Firmware-Flashen, Wake-Word-
 - [USB-Soundkarten-Tutorial](./usb-audio-card-tutorial.md)
 
 ---
+
+#### Feetech-Servo
+- [STS3215 & SCS0009 – Debug-Tutorial](./feetech/Feetech-STS3215&SCS0009-Tutorial.md)
+- [SCS-Kommunikationsprotokoll](./feetech/Feetech-SCS_Communication_Protocol.md)
+- [Magnetencoder-STS-Servo – Speichertabelle](./feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis.md)
+- [Potentiometer-SCSCL-Servo – Speichertabelle](./feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis.md)
+- [SCS0009-Servo-Debug-Tool – Anleitung](./feetech/SCS0009-Debug-Tool.md)
 
 ## Support
 

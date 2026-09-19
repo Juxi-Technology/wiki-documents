@@ -1,6 +1,6 @@
 ---
 title: Acessórios robóticos
-description: "Página inicial dos tutoriais de acessórios da Juxi Technology — voz KWS, servos Feetech, câmeras, placas de som"
+description: "Página inicial dos tutoriais de acessórios da Juxi Technology — voz KWS, ESP32-NanoCam, servos Feetech, câmeras, placas de som"
 ---
 
 # Acessórios robóticos
@@ -10,6 +10,11 @@ Bem-vindo aos tutoriais de acessórios robóticos! Aqui você encontrará guias 
 ---
 
 ## Lista de produtos
+
+- [Câmera USB com Foco Automático](./usb-auto-focus-camera.md)
+- [Câmera CSI Jetson](./jetson-csi-camera.md)
+- [Gimbal de Câmera 2-DOF](./2dof-camera-gimbal.md)
+- [Sensor de Frequência Cardíaca e SpO2](./heart-rate-spo2.md)
 
 ### Módulo de reconhecimento de voz KWS
 
@@ -31,6 +36,17 @@ Módulo ESP32-S3 de transmissão de vídeo e visão por IA, com suporte a 8 modo
 - [Especificações de hardware](./esp32-nanocam/ESP32-NanoCam-Hardware-Spec.md)
 - [Manual do protocolo serial](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
 - [Tutorial de visão por IA — Capítulo 1: configuração do ambiente](./esp32-nanocam/Ch01-Environment-Setup.md)
+
+#### Tutorial de visão IA (11 capítulos)
+- [Capítulo 3: Fundamentos da câmera](./esp32-nanocam/Ch03-Camera-Basics.md)
+- [Capítulo 4: Detecção de rosto](./esp32-nanocam/Ch04-Face-Detection.md)
+- [Capítulo 5: Detecção de rosto de gato](./esp32-nanocam/Ch05-Cat-Face-Detection.md)
+- [Capítulo 6: Reconhecimento de cores](./esp32-nanocam/Ch06-Color-Recognition.md)
+- [Capítulo 7: Leitura de código QR](./esp32-nanocam/Ch07-QR-Code-Scanning.md)
+- [Capítulo 8: Reconhecimento facial](./esp32-nanocam/Ch08-Face-Recognition.md)
+- [Capítulo 9: Conversa por voz](./esp32-nanocam/Ch09-Voice-Chat.md)
+- [Capítulo 10: Compreensão visual por IA](./esp32-nanocam/Ch10-AI-Vision-Understanding.md)
+- [Capítulo 11: Controle por voz do ESP-Claw](./esp32-nanocam/Ch11-ESP-Claw-Voice-Control.md)
 
 ### Tutoriais da câmera CSI
 
@@ -73,6 +89,13 @@ Tutoriais do módulo de voz offline CI1302: início rápido, gravação de firmw
 - [Tutorial da placa de som USB](./usb-audio-card-tutorial.md)
 
 ---
+
+#### Servos Feetech
+- [Tutorial de Depuração STS3215 & SCS0009](./feetech/Feetech-STS3215&SCS0009-Tutorial.md)
+- [Protocolo de Comunicação SCS](./feetech/Feetech-SCS_Communication_Protocol.md)
+- [Tabela de Memória do Servo STS com Encoder Magnético](./feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis.md)
+- [Tabela de Memória do Servo SCSCL com Potenciômetro](./feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis.md)
+- [Tutorial de uso da ferramenta de depuração do servo SCS0009](./feetech/SCS0009-Debug-Tool.md)
 
 ## Suporte técnico
 

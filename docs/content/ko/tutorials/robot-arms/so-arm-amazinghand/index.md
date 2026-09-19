@@ -57,12 +57,12 @@ tutorials/
 
 |순서|단계|Windows|Linux|
 |---|---|---|---|
-|1|환경 구축|01-environment/win.md|01-environment/linux.md|
-|2|캘리브레이션|02-calibration/win.md|02-calibration/linux.md|
-|3|원격 조작|03-teleoperation/win.md|03-teleoperation/linux.md|
-|4|데이터 수집|04-data-collection/win.md|04-data-collection/linux.md|
-|5|모델 학습|05-training/win.md|05-training/linux.md|
-|6|배포 및 평가|06-deployment/win.md|06-deployment/linux.md|
+|1|환경 구축|[01-environment/win.md](./01-Environment-Setup-Windows.md)|[01-environment/linux.md](./01-Environment-Setup-Linux.md)|
+|2|캘리브레이션|[02-calibration/win.md](./02-Hand-Arm-Calibration-Windows.md)|[02-calibration/linux.md](./02-Hand-Arm-Calibration-Linux.md)|
+|3|원격 조작|[03-teleoperation/win.md](./03-Teleoperation-Windows.md)|[03-teleoperation/linux.md](./03-Teleoperation-Linux.md)|
+|4|데이터 수집|[04-data-collection/win.md](./04-Data-Collection-Windows.md)|[04-data-collection/linux.md](./04-Data-Collection-Linux.md)|
+|5|모델 학습|[05-training/win.md](./05-Model-Training-Windows.md)|[05-training/linux.md](./05-Model-Training-Linux.md)|
+|6|배포 및 평가|[06-deployment/win.md](./06-Model-Deployment-Windows.md)|[06-deployment/linux.md](./06-Model-Deployment-Linux.md)|
 
 ---
 

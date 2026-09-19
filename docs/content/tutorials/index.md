@@ -13,6 +13,11 @@ Welcome to the Tutorials page! Here, you can find all product usage tutorials, c
 
 ## Topic Categories
 
+- **Getting Started**
+  - [FAQ](./faq)
+  - [ROS Intro](./ros-intro)
+  - [Lark Docs](./lark-wiki)
+
 ### Robot Arm Series
 - [Robot Arm Series](./robot-arms/)
 - **SO-ARM101**
@@ -28,6 +33,9 @@ Welcome to the Tutorials page! Here, you can find all product usage tutorials, c
 - **Lekiwi**
   - [Lekiwi-Tutorial](./robot-arms/lekiwi/Lekiwi-Tutorial)
   - [Lekiwi-Assembly](./robot-arms/lekiwi/Lekiwi-Assembly)
+
+- **SO-ARM101 Series**
+  - [Wireless Teleoperation Troubleshooting](./robot-arms/so-arm101/SO-ARM101-NanoCam-Troubleshooting)
 
 ### Robot Accessories
 - [Robot Accessories](./accessories/)
@@ -48,6 +56,9 @@ Welcome to the Tutorials page! Here, you can find all product usage tutorials, c
   - [Servo SCS Communication Protocol](./accessories/feetech/Feetech-SCS_Communication_Protocol)
   - [Magnetic Encoder STS Servo - Memory Table Analysis](./accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis)
   - [Potentiometer SCSCL Servo - Memory Table Analysis](./accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis)
+
+- **AI Vision Tutorial (11 chapters)**
+  - [Chapter 2: Quick Start](./accessories/esp32-nanocam/Ch02-Quick-Start)
 
 ### Sensors and Perception
 - [Sensors and Perception](./sensors/)
@@ -79,6 +90,9 @@ Welcome to the Tutorials page! Here, you can find all product usage tutorials, c
 2. **View Tutorial List**: In each topic category, view available tutorials and documents
 3. **Follow Steps**: Follow the steps in the tutorials to gradually learn and use the product
 4. **Practice and Explore**: During actual operation, try different functions and configurations to accumulate experience
+- **Learning Resources**
+  - [Learning Resources Home](./learning-resources/index)
+  - [Jetson Orin PyTorch Compatibility](./learning-resources/jetson-orin-pytorch-compatibility)
 
 ## Other Resources
 

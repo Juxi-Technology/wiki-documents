@@ -57,12 +57,12 @@ tutorials/
 
 |Schritt|Phase|Windows|Linux|
 |---|---|---|---|
-|1|Umgebung einrichten|01-environment/win.md|01-environment/linux.md|
-|2|Kalibrierung|02-calibration/win.md|02-calibration/linux.md|
-|3|Teleoperation|03-teleoperation/win.md|03-teleoperation/linux.md|
-|4|Datenerfassung|04-data-collection/win.md|04-data-collection/linux.md|
-|5|Modelltraining|05-training/win.md|05-training/linux.md|
-|6|Deployment und Evaluierung|06-deployment/win.md|06-deployment/linux.md|
+|1|Umgebung einrichten|[01-environment/win.md](./01-Environment-Setup-Windows.md)|[01-environment/linux.md](./01-Environment-Setup-Linux.md)|
+|2|Kalibrierung|[02-calibration/win.md](./02-Hand-Arm-Calibration-Windows.md)|[02-calibration/linux.md](./02-Hand-Arm-Calibration-Linux.md)|
+|3|Teleoperation|[03-teleoperation/win.md](./03-Teleoperation-Windows.md)|[03-teleoperation/linux.md](./03-Teleoperation-Linux.md)|
+|4|Datenerfassung|[04-data-collection/win.md](./04-Data-Collection-Windows.md)|[04-data-collection/linux.md](./04-Data-Collection-Linux.md)|
+|5|Modelltraining|[05-training/win.md](./05-Model-Training-Windows.md)|[05-training/linux.md](./05-Model-Training-Linux.md)|
+|6|Deployment und Evaluierung|[06-deployment/win.md](./06-Model-Deployment-Windows.md)|[06-deployment/linux.md](./06-Model-Deployment-Linux.md)|
 
 ---
 

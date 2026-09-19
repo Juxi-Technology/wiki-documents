@@ -21,6 +21,28 @@ Unidade de medição inercial de alta precisão de 6/9/10 eixos, com algoritmo d
 - [Exemplo ROS2](./imu/ros-examples/ros2.md)
 - [Exemplo Multi-placa](./imu/multi-board-examples/overview.md)
 
+#### Módulo de Navegação Inercial IMU
+- [Calibração IMU](./imu/calibration.md)
+- [Transferência remota de ficheiros](./imu/remote-file-transfer.md)
+- [Transferência de ficheiros via SSH](./imu/ssh-file-transfer.md)
+
+#### Exemplos Multi-Placa
+- [Comunicação PC](./imu/multi-board-examples/pc-communication.md)
+
+#### Comunicação I2C
+- [Arduino](./imu/multi-board-examples/i2c-communication/arduino.md)
+- [Jetson](./imu/multi-board-examples/i2c-communication/jetson.md)
+- [Raspberry Pi](./imu/multi-board-examples/i2c-communication/raspberry-pi.md)
+- [RDK](./imu/multi-board-examples/i2c-communication/rdk.md)
+- [STM32](./imu/multi-board-examples/i2c-communication/stm32.md)
+
+#### Comunicação Serial
+- [Arduino](./imu/multi-board-examples/serial-communication/arduino.md)
+- [Jetson](./imu/multi-board-examples/serial-communication/jetson.md)
+- [Raspberry Pi](./imu/multi-board-examples/serial-communication/raspberry-pi.md)
+- [RDK](./imu/multi-board-examples/serial-communication/rdk.md)
+- [STM32](./imu/multi-board-examples/serial-communication/stm32.md)
+
 ### Módulo GPS e BeiDou
 
 Tutoriais multiplataforma do módulo GPS e BeiDou: 51 MCU, Arduino, STM32, Jetson, Raspberry Pi e ROS, com AGNSS e correção de erros de localização.

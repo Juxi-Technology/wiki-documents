@@ -1,6 +1,6 @@
 ---
 title: ロボットアクセサリ
-description: "Juxi Technologyロボットアクセサリシリーズチュートリアルホーム——KWS音声、Feetechサーボ、カメラ、サウンドカードなど"
+description: "Juxi Technologyロボットアクセサリシリーズチュートリアルホーム——KWS音声、ESP32-NanoCam、Feetechサーボ、カメラ、サウンドカードなど"
 ---
 
 # ロボットアクセサリ
@@ -10,6 +10,13 @@ description: "Juxi Technologyロボットアクセサリシリーズチュート
 ---
 
 ## 製品リスト
+
+- [USB オートフォーカスカメラ](./usb-auto-focus-camera.md)
+- [Jetson CSI カメラ](./jetson-csi-camera.md)
+
+- [2自由度ジンバル](./2dof-camera-gimbal.md)
+
+- [心拍・血中酸素センサー](./heart-rate-spo2.md)
 
 ### KWS音声認識モジュール
 
@@ -31,6 +38,17 @@ ESP32-S3 動画転送・AI ビジョンモジュール。8 種類の AI モー�
 - [ハードウェア仕様書](./esp32-nanocam/ESP32-NanoCam-Hardware-Spec.md)
 - [シリアルプロトコルマニュアル](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
 - [AI ビジョンチュートリアル第 1 章:環境構築](./esp32-nanocam/Ch01-Environment-Setup.md)
+
+#### AI ビジョンチュートリアル(全 11 章)
+- [第 3 章:カメラの基礎](./esp32-nanocam/Ch03-Camera-Basics.md)
+- [第 4 章:顔検出](./esp32-nanocam/Ch04-Face-Detection.md)
+- [第 5 章:猫顔検出](./esp32-nanocam/Ch05-Cat-Face-Detection.md)
+- [第 6 章:色認識](./esp32-nanocam/Ch06-Color-Recognition.md)
+- [第 7 章:QR コードスキャン](./esp32-nanocam/Ch07-QR-Code-Scanning.md)
+- [第 8 章:顔認識](./esp32-nanocam/Ch08-Face-Recognition.md)
+- [第 9 章:音声対話](./esp32-nanocam/Ch09-Voice-Chat.md)
+- [第 10 章:AI 視覚理解](./esp32-nanocam/Ch10-AI-Vision-Understanding.md)
+- [第 11 章:ESP-Claw 音声制御](./esp32-nanocam/Ch11-ESP-Claw-Voice-Control.md)
 
 ### CSI カメラ使用チュートリアル
 
@@ -73,6 +91,13 @@ CI1302 オフライン音声対話モジュールの全プラットフォーム 
 - [USBサウンドカードチュートリアル](./usb-audio-card-tutorial.md)
 
 ---
+
+#### Feetech サーボ
+- [STS3215 & SCS0009 デバッグチュートリアル](./feetech/Feetech-STS3215&SCS0009-Tutorial.md)
+- [SCS 通信プロトコル](./feetech/Feetech-SCS_Communication_Protocol.md)
+- [磁気エンコーダ STS サーボ - メモリテーブル解析](./feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis.md)
+- [ポテンショメータ SCSCL サーボ - メモリテーブル解析](./feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis.md)
+- [SCS0009 サーボデバッグツール使用チュートリアル](./feetech/SCS0009-Debug-Tool.md)
 
 ## サポート
 

@@ -6,3 +6,6 @@ description: "钜犀科技学习资源总览：汇总快速开始、硬件设置
 # 学习资源
 
 这里收集了各类学习资源，帮助您更好地理解和使用我们的产品。
+
+- **学习资源**
+  - [Jetson Orin PyTorch 兼容性](./jetson-orin-pytorch-compatibility.md)

@@ -8,3 +8,6 @@ description: "Documentation technique Juxi Technology : page d'entrée en prépa
 Le contenu de cette page est en préparation.
 
 La documentation des produits Juxi Technology est actuellement disponible dans le [centre de tutoriels](/fr/tutorials/). Pour toute question, [contactez-nous](/fr/community/).
+
+- [Référence API](./api-reference.md)
+- [Guide de développement](./dev-guide.md)

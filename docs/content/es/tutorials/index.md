@@ -13,6 +13,13 @@ head:
 
 ## Categorías temáticas
 
+- **Última actualización (UTC)**
+  - [FAQ](./faq)
+  - [Introducción a ROS](./ros-intro)
+  - [Lark Wiki](./lark-wiki)
+  - [Recursos didácticos](./learning-resources/index)
+  - [Incompatibilidades de PyTorch en Jetson Orin](./learning-resources/jetson-orin-pytorch-compatibility)
+
 ### Series de brazos robóticos
 - [Series de brazos robóticos](./robot-arms/)
 - **SO-ARM101**
@@ -28,6 +35,9 @@ head:
 - **Lekiwi**
   - [Tutorial Lekiwi](./robot-arms/lekiwi/Lekiwi-Tutorial)
   - [Ensamblaje Lekiwi](./robot-arms/lekiwi/Lekiwi-Assembly)
+
+- **Serie SO-ARM101**
+  - [Solución de problemas de teleoperación](./robot-arms/so-arm101/SO-ARM101-NanoCam-Troubleshooting)
 
 ### Accesorios robóticos
 - [Accesorios robóticos](./accessories/)
@@ -48,6 +58,9 @@ head:
   - [Protocolo de comunicación SCS de servos](./accessories/feetech/Feetech-SCS_Communication_Protocol)
   - [Servo STS con codificador magnético: análisis de la tabla de memoria](./accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis)
   - [Servo SCSCL con potenciómetro: análisis de la tabla de memoria](./accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis)
+
+- **Tutorial de visión IA (11 capítulos)**
+  - [Capítulo 2: Inicio rápido](./accessories/esp32-nanocam/Ch02-Quick-Start)
 
 ### Sensores y percepción
 - [Sensores y percepción](./sensors/)

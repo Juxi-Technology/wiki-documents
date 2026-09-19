@@ -13,6 +13,11 @@ head:
 
 ## 主题分类
 
+- **快速开始**
+  - [常见问题 FAQ](./faq)
+  - [ROS 入门](./ros-intro)
+  - [飞书文档](./lark-wiki)
+
 ### 机器人机械臂系列
 - [机器人机械臂系列](./robot-arms/)
 - **SO-ARM101**
@@ -28,6 +33,9 @@ head:
 - **Lekiwi**
   - [Lekiwi-使用教程](./robot-arms/lekiwi/Lekiwi-Tutorial)
   - [Lekiwi-组装教程](./robot-arms/lekiwi/Lekiwi-Assembly)
+
+- **SO-ARM101 系列**
+  - [无线遥操作排障指南](./robot-arms/so-arm101/SO-ARM101-NanoCam-Troubleshooting)
 
 ### 机器人配件
 - [机器人配件](./accessories/)
@@ -48,6 +56,9 @@ head:
   - [舵机SCS通信协议](./accessories/feetech/Feetech-SCS_Communication_Protocol)
   - [磁编码STS舵机-内存表解析](./accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis)
   - [电位器SCSCL舵机-内存表解析](./accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis)
+
+- **AI 视觉教程(11 章)**
+  - [第 2 章:快速上手](./accessories/esp32-nanocam/Ch02-Quick-Start)
 
 ### 传感器与感知
 - [传感器与感知](./sensors/)
@@ -79,6 +90,9 @@ head:
 2. **查看教程列表**：在每个主题分类下，查看可用的教程和文档
 3. **按照步骤操作**：按照教程中的步骤，逐步学习和使用产品
 4. **实践与探索**：在实际操作中，尝试不同的功能和配置，积累经验
+- **学习资源**
+  - [学习资源首页](./learning-resources/index)
+  - [Jetson Orin PyTorch 兼容性](./learning-resources/jetson-orin-pytorch-compatibility)
 
 ## 其他资源
 

@@ -1,6 +1,6 @@
 ---
 title: 機器人配件
-description: "鉅犀科技機器人配件系列教程首頁——KWS 語音、Feetech 舵機、攝像頭、聲卡等"
+description: "鉅犀科技機器人配件系列教程首頁——KWS 語音、ESP32-NanoCam、Feetech 舵機、攝像頭、聲卡等"
 ---
 
 # 機器人配件
@@ -10,6 +10,11 @@ description: "鉅犀科技機器人配件系列教程首頁——KWS 語音、Fe
 ---
 
 ## 產品列表
+
+- [USB 自動對焦攝像頭](./usb-auto-focus-camera.md)
+- [Jetson CSI 攝像頭](./jetson-csi-camera.md)
+- [2 自由度相機雲台](./2dof-camera-gimbal.md)
+- [心率血氧傳感器](./heart-rate-spo2.md)
 
 ### KWS語音識別模組
 
@@ -31,6 +36,17 @@ ESP32-S3 圖傳與 AI 視覺模組，支援 8 種 AI 模式、AP+STA 雙模圖�
 - [硬體規格書](./esp32-nanocam/ESP32-NanoCam-Hardware-Spec.md)
 - [串口協議手冊](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
 - [AI 視覺教程第 1 章：環境搭建](./esp32-nanocam/Ch01-Environment-Setup.md)
+
+#### AI 視覺教程(11 章)
+- [第 3 章:攝像頭基礎](./esp32-nanocam/Ch03-Camera-Basics.md)
+- [第 4 章:人臉檢測](./esp32-nanocam/Ch04-Face-Detection.md)
+- [第 5 章:貓臉檢測](./esp32-nanocam/Ch05-Cat-Face-Detection.md)
+- [第 6 章:顏色識別](./esp32-nanocam/Ch06-Color-Recognition.md)
+- [第 7 章:二維碼掃描](./esp32-nanocam/Ch07-QR-Code-Scanning.md)
+- [第 8 章:人臉識別](./esp32-nanocam/Ch08-Face-Recognition.md)
+- [第 9 章:語音對話](./esp32-nanocam/Ch09-Voice-Chat.md)
+- [第 10 章:AI 視覺理解](./esp32-nanocam/Ch10-AI-Vision-Understanding.md)
+- [第 11 章:ESP-Claw 語音控制](./esp32-nanocam/Ch11-ESP-Claw-Voice-Control.md)
 
 ### CSI 攝像頭使用教程
 
@@ -73,6 +89,13 @@ CI1302 離線語音交互模組全平台教程:快速上手、固件燒錄、喚
 - [USB 聲卡教程](./usb-audio-card-tutorial.md)
 
 ---
+
+#### Feetech 舵機
+- [STS3215 & SCS0009 調試教程](./feetech/Feetech-STS3215&SCS0009-Tutorial.md)
+- [SCS 通信協議](./feetech/Feetech-SCS_Communication_Protocol.md)
+- [磁編碼 STS 舵機內存表解析](./feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis.md)
+- [電位器 SCSCL 舵機內存表解析](./feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis.md)
+- [SCS0009 舵機調試工具使用教程](./feetech/SCS0009-Debug-Tool.md)
 
 ## 技術支援
 

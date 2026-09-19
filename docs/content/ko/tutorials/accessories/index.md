@@ -1,6 +1,6 @@
 ---
 title: 로봇 액세서리
-description: "Juxi Technology 로봇 액세서리 시리즈 튜토리얼 홈——KWS 음성, Feetech 서보, 카메라, 사운드 카드 등"
+description: "Juxi Technology 로봇 액세서리 시리즈 튜토리얼 홈——KWS 음성, ESP32-NanoCam, Feetech 서보, 카메라, 사운드 카드 등"
 ---
 
 # 로봇 액세서리
@@ -10,6 +10,13 @@ description: "Juxi Technology 로봇 액세서리 시리즈 튜토리얼 홈—�
 ---
 
 ## 제품 목록
+
+- [USB 자동 초점 카메라](./usb-auto-focus-camera.md)
+- [Jetson CSI 카메라](./jetson-csi-camera.md)
+
+- [2자유도 짐벌](./2dof-camera-gimbal.md)
+
+- [심박·혈중 산소 센서](./heart-rate-spo2.md)
 
 ### KWS 음성 인식 모듈
 
@@ -31,6 +38,17 @@ ESP32-S3 영상 전송과 AI 비전 모듈. 8가지 AI 모드, AP+STA 듀얼 모
 - [하드웨어 사양서](./esp32-nanocam/ESP32-NanoCam-Hardware-Spec.md)
 - [시리얼 프로토콜 매뉴얼](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
 - [AI 비전 튜토리얼 제1장: 환경 구축](./esp32-nanocam/Ch01-Environment-Setup.md)
+
+#### AI 비전 튜토리얼(11장)
+- [3장: 카메라 기초](./esp32-nanocam/Ch03-Camera-Basics.md)
+- [4장: 얼굴 검출](./esp32-nanocam/Ch04-Face-Detection.md)
+- [5장: 고양이 얼굴 검출](./esp32-nanocam/Ch05-Cat-Face-Detection.md)
+- [6장: 색상 인식](./esp32-nanocam/Ch06-Color-Recognition.md)
+- [7장: QR 코드 스캔](./esp32-nanocam/Ch07-QR-Code-Scanning.md)
+- [8장: 얼굴 인식](./esp32-nanocam/Ch08-Face-Recognition.md)
+- [9장: 음성 대화](./esp32-nanocam/Ch09-Voice-Chat.md)
+- [10장: AI 비전 이해](./esp32-nanocam/Ch10-AI-Vision-Understanding.md)
+- [11장: ESP-Claw 음성 제어](./esp32-nanocam/Ch11-ESP-Claw-Voice-Control.md)
 
 ### CSI 카메라 사용 튜토리얼
 
@@ -73,6 +91,13 @@ CI1302 오프라인 음성 인터랙션 모듈 전 플랫폼 튜토리얼: 퀵 �
 - [USB 사운드 카드 튜토리얼](./usb-audio-card-tutorial.md)
 
 ---
+
+#### Feetech 서보
+- [STS3215 & SCS0009 디버깅 튜토리얼](./feetech/Feetech-STS3215&SCS0009-Tutorial.md)
+- [SCS 통신 프로토콜](./feetech/Feetech-SCS_Communication_Protocol.md)
+- [자기 엔코더 STS 서보 - 메모리 테이블 분석](./feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis.md)
+- [전위차계 SCSCL 서보 - 메모리 테이블 분석](./feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis.md)
+- [SCS0009 서보 디버깅 도구 사용 튜토리얼](./feetech/SCS0009-Debug-Tool.md)
 
 ## 지원
 

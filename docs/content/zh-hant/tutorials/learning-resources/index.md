@@ -7,3 +7,6 @@ description: "鉅犀科技學習資源彙整頁：收錄快速開始、硬體設
 # 學習資源
 
 這裡收集了各類學習資源，幫助您更好地理解和使用我們的產品。
+
+- **學習資源**
+  - [Jetson Orin PyTorch 相容性](./jetson-orin-pytorch-compatibility.md)

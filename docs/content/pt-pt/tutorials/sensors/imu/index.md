@@ -136,3 +136,27 @@ ros2 launch icm42670p imu_launch.py
 # 运行六面校准获取精确的加速度计和陀螺仪零偏
 python calibration/calibrate.py --port /dev/ttyUSB0
 ```
+
+- **Módulo de Navegação Inercial IMU**
+  - [Informações do Produto](./product-info.md)
+  - [Calibração IMU](./calibration.md)
+  - [Transferência remota de ficheiros](./remote-file-transfer.md)
+  - [Transferência de ficheiros via SSH](./ssh-file-transfer.md)
+- **Exemplos Multi-Placa**
+  - [Visão Geral dos Casos Multi-Host](./multi-board-examples/overview.md)
+  - [Comunicação PC](./multi-board-examples/pc-communication.md)
+- **Comunicação I2C**
+  - [Arduino](./multi-board-examples/i2c-communication/arduino.md)
+  - [Jetson](./multi-board-examples/i2c-communication/jetson.md)
+  - [Raspberry Pi](./multi-board-examples/i2c-communication/raspberry-pi.md)
+  - [RDK](./multi-board-examples/i2c-communication/rdk.md)
+  - [STM32](./multi-board-examples/i2c-communication/stm32.md)
+- **Comunicação Serial**
+  - [Arduino](./multi-board-examples/serial-communication/arduino.md)
+  - [Jetson](./multi-board-examples/serial-communication/jetson.md)
+  - [Raspberry Pi](./multi-board-examples/serial-communication/raspberry-pi.md)
+  - [RDK](./multi-board-examples/serial-communication/rdk.md)
+  - [STM32](./multi-board-examples/serial-communication/stm32.md)
+- **Exemplos ROS**
+  - [Aplicação ROS1](./ros-examples/ros1.md)
+  - [Aplicação ROS2](./ros-examples/ros2.md)
