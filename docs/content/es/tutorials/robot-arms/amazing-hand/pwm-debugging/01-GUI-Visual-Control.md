@@ -82,14 +82,14 @@ La GUI incluye su propio panel de **seguimiento de gestos** (la cámara sigue lo
 python serial_test.py COM3 nop
 
 # Gesto
-python serial_test.py COM3 rock         # 石头
-python serial_test.py COM3 thumbs_up    # 真棒
-python serial_test.py COM3 index        # 指向
-python serial_test.py COM3 open         # 张开
-python serial_test.py COM3 close        # 握拳
+python serial_test.py COM3 rock         # Piedra
+python serial_test.py COM3 thumbs_up    # Pulgar arriba
+python serial_test.py COM3 index        # Señalar
+python serial_test.py COM3 open         # Abrir
+python serial_test.py COM3 close        # Puño
 
 # Accionamiento directo de un solo servo
-python serial_test.py COM3 servo 1 90   # 舵机1 → 90°
+python serial_test.py COM3 servo 1 90   # Servo 1 → 90°
 
 # Centrar todo
 python serial_test.py COM3 mid
@@ -99,8 +99,8 @@ python serial_test.py COM3 hand L
 python serial_test.py COM3 hand R
 
 # Barrido de frecuencia/autocomprobación
-python serial_test.py COM3 sweep 1      # 舵机1 扫频
-python serial_test.py COM3 test         # 全部舵机逐个测试
+python serial_test.py COM3 sweep 1      # Barrido del servo 1
+python serial_test.py COM3 test         # Probar todos los servos uno a uno
 ```
 
 ## V. Preguntas frecuentes

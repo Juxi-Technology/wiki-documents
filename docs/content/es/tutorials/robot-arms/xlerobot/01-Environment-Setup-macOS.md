@@ -26,10 +26,10 @@ pip config set global.index-url https://mirrors.aliyun.com/pypi/simple
 ## Cambiar la fuente de conda
 
 ```Shell
-# 清空原有 .condarc 配置（可选，避免冲突）
+# Vaciar la configuración original de .condarc (opcional, para evitar conflictos)
 echo "" > ~/.condarc
 
-# 写入清华源配置
+# Escribir la configuración del espejo de Tsinghua
 cat << EOF > ~/.condarc
 channels:
   - defaults
@@ -48,7 +48,7 @@ custom_channels:
   simpleitk: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
 EOF
 
-# 清除缓存使配置生效
+# Limpiar la caché para aplicar la configuración
 conda clean -i
 ```
 

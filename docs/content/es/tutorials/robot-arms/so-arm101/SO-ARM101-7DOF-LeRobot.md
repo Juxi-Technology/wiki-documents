@@ -81,8 +81,8 @@ se cambia por
 
 ```python
 "wrist_flex": Motor(4, "sts3215", norm_mode_body),
-"wrist_yaw": Motor(5, "sts3215", norm_mode_body),   # 新增舵机,左右旋转
-"wrist_roll": Motor(6, "sts3215", norm_mode_body),  # 原 5 号滚动电机,ID 5→6
+"wrist_yaw": Motor(5, "sts3215", norm_mode_body),   # Servo nuevo, rotación izquierda/derecha
+"wrist_roll": Motor(6, "sts3215", norm_mode_body),  # Antiguo motor de giro n.º 5, ID 5→6
 "gripper": Motor(7, "sts3215", MotorNormMode.RANGE_0_100),
 ```
 

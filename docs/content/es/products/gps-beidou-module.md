@@ -59,10 +59,10 @@ Cable Type-C directo, plug-and-play (9600bps por defecto).
 ### 3. Verificar el posicionamiento
 
 ```bash
-# 安装 pynmea2 解析 NMEA 数据
+# Instalar pynmea2 para analizar datos NMEA
 pip install pynmea2
 
-# 读取定位数据示例
+# Ejemplo de lectura de datos de posicionamiento
 import serial
 import pynmea2
 

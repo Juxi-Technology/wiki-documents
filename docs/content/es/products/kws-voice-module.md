@@ -37,8 +37,8 @@ El módulo KWS (Keyword Spotting) admite la descarga y grabación de palabras de
 ## Inicio rápido
 
 ```bash
-# 烧录固件(参考教程)
-# Python 串口通信示例
+# Grabar el firmware (consultar el tutorial)
+# Ejemplo de comunicación por puerto serie en Python
 import serial
 ser = serial.Serial('/dev/ttyUSB0', 115200)
 while True:

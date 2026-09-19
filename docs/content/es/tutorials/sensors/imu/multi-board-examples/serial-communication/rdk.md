@@ -30,24 +30,24 @@ ls -l /dev/ttyU*
 Configurar el mapeo de puertos
 
 ```Bash
-# 防止插拔后端口变更，请设置端口映射
+# Configurar el mapeo de puertos para evitar cambios tras la desconexión
 sudo gedit /etc/udev/rules.d/99-serial-imu.rules
-# 如出现没有gedit命令相关内容，请先下载安装
+# Si aparece un aviso de que no existe el comando gedit, descargarlo e instalarlo primero
 sudo apt install gedit
-# 填写映射内容
+# Rellenar el contenido del mapeo
 KERNEL=="ttyUSB*", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", MODE:="0777", SYMLINK+="imu-serial"
-# 参数说明
+# Explicación de parámetros
 `--mode`: 通信模式，可选值为`serial`(串口)或`i2c`
 `--port`: 串口名(如`/dev/ttyUSB0`)或I2C端口号(如`7`)
 `--rate`: 数据打印频率(Hz)，默认10Hz
 `--debug`: 启用调试模式，显示详细信息
-# 保存退出，运行命令使规则生效
+# Guardar y salir, ejecutar los comandos para activar las reglas
 sudo udevadm trigger
 sudo service udev reload
 sudo service udev restart
-# 验证
+# Verificar
 ll /dev/imu-serial
-# 输出示例
+# Ejemplo de salida
 lrwxrwxrwx 1 root root 7 1月 22 10:00 /dev/imu-serial -> ttyUSB0
 ```
 
@@ -77,7 +77,7 @@ Arrastrar los archivos descomprimidos a RDK X5 con MobaXterm.
 
 ```PowerShell
 cd ~/IMU_ROS2/IMU_Library
-# 运行 IMU 数据打印文件
+# Ejecutar el archivo de salida de datos IMU
 python3 -m IMU_Library.IMU_Serial_Library
 ```
 
@@ -91,14 +91,14 @@ Nota: lo anterior son datos de un IMU de 10 ejes; los de 6 ejes no tienen magnet
 
 ```PowerShell
 cd ~/IMU_Library
-# 运行 IMU 校准代码文件 --串口通讯校准
-# 执行所有校准（整体、磁力计、温度）
+# Ejecutar el código de calibración IMU -- comunicación serie
+# Ejecutar todas las calibraciones (completa, magnetómetro, temperatura)
 python3 -m IMU_Library.imu_calibration_tool --mode serial --port /dev/imu-serial
-# 仅整体校准
+# Solo calibración completa
 python3 -m IMU_Library.imu_calibration_tool --mode serial --port /dev/imu-serial --calibrate imu
-# 仅磁力计校准
+# Solo magnetómetro
 python3 -m IMU_Library.imu_calibration_tool --mode serial --port /dev/imu-serial --calibrate mag
-# 仅温度校准
+# Solo temperatura
 python3 -m IMU_Library.imu_calibration_tool --mode serial --port /dev/imu-serial --calibrate temp
 ```
 

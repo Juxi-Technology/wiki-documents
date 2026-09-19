@@ -133,7 +133,7 @@ sudo apt install python3-venv fonts-noto-cjk fonts-noto-color-emoji
 
 ```bash
 sudo usermod -a -G dialout $USER
-# 注销并重新登录后生效
+# Surte efecto tras cerrar sesión y volver a iniciarla
 ```
 
 Verificación (la salida debe contener `dialout`):
@@ -169,14 +169,14 @@ Salida típica:
 
 ```
 /dev/ttyUSB0   # CH340 / CP2102 / PL2303
-/dev/ttyACM0   # 原生 USB 串口（Arduino / ESP32 板载）
+/dev/ttyACM0   # Puerto serie USB nativo (integrado en Arduino / ESP32)
 ```
 
 Ver información detallada del fabricante:
 
 ```bash
 dmesg | tail -20 | grep -i tty
-# 或
+# o
 lsusb
 ```
 
@@ -201,10 +201,10 @@ Después, `ls -l /dev/ttyServo` permitirá acceder con el nombre fijo; consulte 
 1. Instale Python con Homebrew (para evitar que la versión de Python incluida en el sistema sea demasiado antigua):
 
 ```bash
-# 安装 Homebrew（如果没有）
+# Instalar Homebrew (si no está instalado)
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# 安装 Python
+# Instalar Python
 brew install python
 ```
 
@@ -244,7 +244,7 @@ Salida típica:
 
 ```
 /dev/cu.usbserial-0001      # CP2102 / FTDI
-/dev/cu.usbmodem141101      # 板载 USB 串口（Arduino / ESP32）
+/dev/cu.usbmodem141101      # Puerto serie USB integrado (Arduino / ESP32)
 /dev/cu.wchusbserial1420    # CH340
 ```
 
@@ -373,27 +373,27 @@ En el área «📁 Parámetros xdat (solo guarda EEPROM)»:
 
 ```
 SCS0009_ServoController/
-├── docs/                    # 分系统教程（中英文）
-│   ├── zh/                  # 中文教程
+├── docs/                    # Tutoriales por subsistema (chino e inglés)
+│   ├── zh/                  # Tutorial en chino
 │   │   ├── Windows教程.md
 │   │   ├── Linux教程.md
 │   │   └── macOS教程.md
-│   └── en/                  # 英文教程
+│   └── en/                  # Tutorial en inglés
 │       ├── Windows.md
 │       ├── Linux.md
 │       └── macOS.md
 ├── src/
-│   ├── gui/                  # PySide6 图形界面
-│   │   ├── factory_calibration_tool.py   # 主窗口（FT 调试器 + 语言切换）
-│   │   ├── ft_debugger.py                # FT 调试器面板（参数读写 / xdat 备份）
-│   │   ├── theme_utils.py                # 浅色主题
-│   │   └── language_dialog.py            # 语言选择对话框
-│   ├── xdat_utils.py         # xdat 参数文件读写
-│   ├── i18n*.py / i18n_translations/     # 中英文国际化
-│   └── port_utils.py         # 串口检测
-├── scservo_sdk/              # FTServo 舵机通信 SDK
+│   ├── gui/                  # Interfaz gráfica PySide6
+│   │   ├── factory_calibration_tool.py   # Ventana principal (depurador FT + cambio de idioma)
+│   │   ├── ft_debugger.py                # Panel del depurador FT (lectura/escritura de parámetros / copia de seguridad xdat)
+│   │   ├── theme_utils.py                # Tema claro
+│   │   └── language_dialog.py            # Cuadro de diálogo de selección de idioma
+│   ├── xdat_utils.py         # Lectura y escritura de archivos de parámetros xdat
+│   ├── i18n*.py / i18n_translations/     # Internacionalización chino-inglés
+│   └── port_utils.py         # Detección de puerto serie
+├── scservo_sdk/              # SDK de comunicación de servos FTServo
 ├── requirements.txt
-└── setup.py                  # 环境检查脚本
+└── setup.py                  # Script de comprobación del entorno
 ```
 
 El repositorio de esta herramienta está compuesto por módulos como `src/gui` (interfaz gráfica PySide6 y depurador FT), `scservo_sdk` (SDK de comunicación de servos FTServo) y `setup.py` (script de comprobación del entorno).

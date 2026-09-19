@@ -348,14 +348,14 @@ Diagnóstico y solución (en orden):
 
 ```Plain Text
 ls -l /dev/video0
-sudo usermod -aG video $USER   # 加入 video 组，注销重登
+sudo usermod -aG video $USER   # Unirse al grupo video y volver a iniciar sesión
 ```
 
 4. Verificar con v4l2 si la cámara realmente puede generar fotogramas (si los genera = el controlador funciona; el problema está en la compatibilidad con OpenCV):
 
 ```Bash
 v4l2-ctl --device=/dev/video0 --set-fmt-video=width=640,height=480,pixelformat=MJPG --stream-mmap --stream-count=1 --stream-to=/tmp/frame.jpg
-ls -l /tmp/frame.jpg   # 有几十~几百KB = 流通
+ls -l /tmp/frame.jpg   # Decenas a cientos de KB = flujo correcto
 ```
 
 ### 9.7 El número de puerto cambia cada vez

@@ -32,10 +32,10 @@ La tarjeta de sonido USB sin controladores integra micrófono y altavoz — el s
 ## Inicio rápido
 
 ```bash
-# 插入 USB 即自动识别
-# 验证设备
-arecord -l    # 录音设备
-aplay -l      # 播放设备
+# Se detecta automáticamente al insertar el USB
+# Verificar el dispositivo
+arecord -l    # Dispositivo de grabación
+aplay -l      # Dispositivo de reproducción
 ```
 ## Tutoriales
 

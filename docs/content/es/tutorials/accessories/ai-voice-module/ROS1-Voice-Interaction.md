@@ -16,23 +16,23 @@ description: "Módulo de voz IA en ROS1: entorno Ubuntu 20.04 con ROS1 Noetic, d
 #### Instalar las bibliotecas de dependencias
 
 ```Bash
-# 1. 更新源
+# 1. Actualizar las fuentes
 sudo apt update
 
-# 2. 安装 ROS1 桌面完整版
-# (如果已安装ROS1，跳过)
+# 2. Instalar ROS1 Desktop completo
+# (si ROS1 ya está instalado, omitir)
 sudo apt install ros-noetic-desktop-full -y    # Ubuntu 20.04
 sudo apt install ros-melodic-desktop-full -y   # Ubuntu 18.04
 
-# 3. 安装本项目依赖（同时支持串口和I2C）
+# 3. Instalar las dependencias de este proyecto (compatible con puerto serie e I2C)
 sudo apt install python3-pip ros-noetic-rviz i2c-tools -y
 pip3 install pyserial smbus2
 
-# 如果是 Melodic (Python2)
+# Si es Melodic (Python2)
 sudo apt install python-pip ros-melodic-rviz i2c-tools -y
 pip install pyserial smbus2
 
-# 4. 如果使用 I2C 接线，额外安装
+# 4. Si se usa el cableado I2C, instalar además
 sudo apt install python3-smbus2 -y
 ```
 
@@ -101,14 +101,14 @@ Coloque los archivos proporcionados con este proyecto en las ubicaciones corresp
 ├── devel/
 └── src/
     └── juxi_voice/
-        ├── CMakeLists.txt      # (替换为本项目提供的)
-        ├── package.xml          # (替换为本项目提供的)
-        ├── juxi_voice.rviz      # (新建：RViz预配置文件)
+        ├── CMakeLists.txt      # (sustituir por el proporcionado en este proyecto)
+        ├── package.xml          # (sustituir por el proporcionado en este proyecto)
+        ├── juxi_voice.rviz      # (nuevo: archivo de preconfiguración de RViz)
         ├── launch/
-        │   └── juxi_voice.launch # (新建：一键启动文件)
+        │   └── juxi_voice.launch # (nuevo: archivo de inicio con un clic)
         └── scripts/
-            ├── voice_node.py     # (新建：语音节点)
-            └── rviz_control.py   # (新建：RViz控制节点)
+            ├── voice_node.py     # (nuevo: nodo de voz)
+            └── rviz_control.py   # (nuevo: nodo de control de RViz)
 ```
 
 ---
@@ -130,7 +130,7 @@ Coloque los archivos proporcionados con este proyecto en las ubicaciones corresp
 **Arquitectura clave**:
 
 ```Bash
-# 统一命令数据: ID → (串口字节2, 串口字节3, 命令文本, 播报模式)
+# Datos de comando unificados: ID → (byte 2 del puerto serie, byte 3 del puerto serie, texto del comando, modo de reproducción)
 CMD_DATA = {
     1:   (0x01, 0x00, "欢迎语", "被"),
     3:   (0x03, 0x00, "你好小犀", "主"),
@@ -139,10 +139,10 @@ CMD_DATA = {
     ...
 }
 
-# 自动检测函数
+# Función de detección automática
 def detect_connection():
-    # 1. 尝试串口 /dev/ttyUSB0, /dev/ttyACM0, /dev/ttyAMA0, /dev/ttyS0
-    # 2. 尝试 I2C /dev/i2c-1 (从机地址 0x2A)
+    # 1. Probar el puerto serie /dev/ttyUSB0, /dev/ttyACM0, /dev/ttyAMA0, /dev/ttyS0
+    # 2. Probar I2C /dev/i2c-1 (dirección de esclavo 0x2A)
     ...
 ```
 
@@ -175,23 +175,23 @@ catkin_make
 
 ```Bash
 source ~/juxi_speech_ws/devel/setup.bash
-# 或写入 ~/.bashrc
+# o añadirlo a ~/.bashrc
 echo "source ~/juxi_speech_ws/devel/setup.bash" >> ~/.bashrc
 ```
 
 #### Configuración de permisos
 
 ```Bash
-# I2C 权限
+# Permisos de I2C
 sudo chmod 666 /dev/i2c-1
-# 串口权限
+# Permisos del puerto serie
 sudo chmod 666 /dev/ttyUSB0
 sudo chmod 666 /dev/ttyACM0
 sudo chmod 666 /dev/ttyAMA0
-# 或加入用户组
+# o unirse al grupo de usuarios
 sudo usermod -aG dialout $USER
 sudo usermod -aG i2c $USER
-# 设置后需要重新登录生效
+# Después de configurarlo, hay que volver a iniciar sesión para que surta efecto
 ```
 
 #### Ejecutar los nodos
@@ -261,7 +261,7 @@ O bien abra primero RViz y luego cárguelo:
 
 ```Bash
 rviz
-# 菜单栏: File → Open Config → 选择 juxi_voice.rviz
+# Barra de menú: File → Open Config → seleccionar juxi_voice.rviz
 ```
 
 ---
@@ -301,11 +301,11 @@ Diga **"你好小犀"** al módulo → el módulo responde "我在"
 #### Reproducción activada por el anfitrión
 
 ```Bash
-# 被动播报 (I2C → 写 0xD1, 串口 → 发 FE EF FF XX EE)
+# Reproducción pasiva (I2C → escribir 0xD1; puerto serie → enviar FE EF FF XX EE)
 rostopic pub /juxi_passive_play std_msgs/String "data: '这是红色'"
-# 功能词播报 (I2C → 写 0xD2, 串口 → 发 FE EF 01 00 EE)
+# Reproducción de palabra de función (I2C → escribir 0xD2; puerto serie → enviar FE EF 01 00 EE)
 rostopic pub /juxi_func_play std_msgs/String "data: '欢迎语'"
-# 命令词播报 (I2C → 写 0xD3, 串口 → 发 FE EF 00 04 EE)
+# Reproducción de palabra de comando (I2C → escribir 0xD3; puerto serie → enviar FE EF 00 04 EE)
 rostopic pub /juxi_cmd_play std_msgs/String "data: '小车前进'"
 ```
 
@@ -336,22 +336,22 @@ rostopic pub /juxi_cmd_play std_msgs/String "data: '小车前进'"
 Compruebe si existe el archivo de dispositivo correspondiente al método de cableado:
 
 ```Bash
-# I2C 接线
+# Cableado I2C
 ls /dev/i2c-1
-sudo i2cdetect -y 1   # 应看到 0x2A
+sudo i2cdetect -y 1   # Debería verse 0x2A
 
-# Type-C 接线
+# Cableado Type-C
 ls /dev/ttyUSB0 /dev/ttyACM0
 
-# UART 接线
+# Cableado UART
 ls /dev/ttyAMA0 /dev/ttyS0
 ```
 
 **2. Error de permisos del puerto serie**
 
 ```Bash
-sudo chmod 666 /dev/ttyUSB0   # 或 /dev/ttyACM0 等
-# 或加入 dialout 用户组（需要重新登录）
+sudo chmod 666 /dev/ttyUSB0   # o /dev/ttyACM0, etc.
+# o unirse al grupo de usuarios dialout (requiere volver a iniciar sesión)
 sudo usermod -aG dialout $USER
 ```
 
@@ -359,7 +359,7 @@ sudo usermod -aG dialout $USER
 
 ```Bash
 sudo chmod 666 /dev/i2c-1
-# 或加入 i2c 用户组（需要重新登录）
+# o unirse al grupo de usuarios i2c (requiere volver a iniciar sesión)
 sudo usermod -aG i2c $USER
 ```
 
@@ -392,7 +392,7 @@ source devel/setup.bash
 **7. Se informa de un error de sintaxis**
 
 ```Bash
-# 确认 Python 脚本有执行权限
+# Confirmar que el script de Python tiene permisos de ejecución
 chmod +x ~/juxi_speech_ws/src/juxi_voice/scripts/voice_node.py
 chmod +x ~/juxi_speech_ws/src/juxi_voice/scripts/rviz_control.py
 ```

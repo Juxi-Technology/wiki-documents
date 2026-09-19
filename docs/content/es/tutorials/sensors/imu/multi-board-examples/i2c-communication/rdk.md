@@ -59,7 +59,7 @@ Arrastrar los archivos descomprimidos a RDK X5 con MobaXterm.
 ```PowerShell
 cd ~/imu_ros2/src/IMU_ROS2/IMU_Library
 
-# 运行 IMU 数据打印文件
+# Ejecutar el archivo de salida de datos IMU
 python3 -m IMU_Library.IMU_I2C_Library
 ```
 
@@ -74,17 +74,17 @@ Nota: lo anterior son datos de un IMU de 10 ejes; los de 6 ejes no tienen magnet
 ```PowerShell
 cd ~/IMU_Library
 
-# 运行 IMU 校准代码文件 --I2C通讯校准
-# 执行所有校准（整体、磁力计、温度）
+# Ejecutar el código de calibración IMU -- comunicación I2C
+# Ejecutar todas las calibraciones (completa, magnetómetro, temperatura)
 python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 0
 
-# 仅整体校准
+# Solo calibración completa
 python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 0 --calibrate imu
 
-# 仅磁力计校准
+# Solo magnetómetro
 python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 0 --calibrate mag
 
-# 仅温度校准
+# Solo temperatura
 python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 0 --calibrate temp
 ```
 

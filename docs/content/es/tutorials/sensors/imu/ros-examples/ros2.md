@@ -75,11 +75,11 @@ ll /dev/imu-serial
 3. **Instalar la biblioteca IMU_Library**
 
 ```PowerShell
-# 下载解压IMU_ROS2压缩文件后，进入到IMU_Library目录下，运行setup.py
+# Después de descargar y descomprimir el archivo IMU_ROS2, entrar en el directorio IMU_Library y ejecutar setup.py
 cd IMU_ROS2/IMU_Library
-# 安装库及其依赖
+# Instalar la biblioteca y sus dependencias
 pip install -e .
-# 或使用setup.py安装
+# o instalarlo con setup.py
 python setup.py install
 ```
 
@@ -102,9 +102,9 @@ colcon build --symlink-install
 1. **Añadir el directorio de trabajo ~/IMU_ROS2 a las variables de entorno**
 
 ```PowerShell
-# 编辑 ~/.bashrc
+# Editar ~/.bashrc
 sudo gedit ~/.bashrc
-# 把下面命令写到末尾
+# Escribir los siguientes comandos al final
 source ~/IMU_ROS2/install/setup.bash
 ```
 
@@ -151,8 +151,8 @@ ros2 launch imu_ros2 imu_visualization.launch.py
 1. Si el nodo no arranca, probar estos comandos
 
 ```PowerShell
-# 在~/IMU_ROS2目录下运行
+# Ejecutar en el directorio ~/IMU_ROS2
 source install/setup.bash
-# 端口号问题
+# Problema del número de puerto
 sudo chmod 666 /dev/imu-serial
 ```

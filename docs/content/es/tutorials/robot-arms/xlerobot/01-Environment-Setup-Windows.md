@@ -24,29 +24,29 @@ https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
 ## Cambiar la fuente de conda
 
 ```Shell
-# 先清空原有源配置（避免冲突）
+# Vaciar primero la configuración de fuentes original (para evitar conflictos)
 conda config --remove-key channels
 
-# 将 conda 的默认源和常用第三方源替换为清华镜像
-# 添加默认包源（main/r/msys2）
+# Sustituir las fuentes predeterminadas de conda y las fuentes de terceros habituales por el espejo de Tsinghua
+# Añadir las fuentes de paquetes predeterminadas (main/r/msys2)
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2/
 
-# 添加常用第三方源
+# Añadir las fuentes de terceros habituales
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/menpo/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
 
-# 开启显示下载源，安装包时会显示具体的下载地址
+# Activar la visualización de la fuente de descarga; al instalar paquetes se muestra la dirección de descarga concreta
 conda config --set show_channel_urls yes
 
-# 清除索引缓存，使新源生效
+# Limpiar la caché de índices para aplicar las nuevas fuentes
 conda clean -i
 
-# 查看当前配置（验证源是否添加成功）
+# Ver la configuración actual (comprobar si las fuentes se añadieron correctamente)
 conda config --show-sources
 ```
 

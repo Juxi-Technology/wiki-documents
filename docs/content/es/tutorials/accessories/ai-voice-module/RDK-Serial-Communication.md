@@ -58,26 +58,26 @@ Si se utiliza un módulo adaptador USB-TTL:
 ### Instalar paquetes de dependencias
 
 ```Bash
-# 更新软件包
+# Actualizar los paquetes
 sudo apt update
 sudo apt upgrade -y
 
-# 安装 Python 库
+# Instalar las bibliotecas de Python
 sudo apt install -y python3-pip
 
-# 安装 pyserial
+# Instalar pyserial
 pip3 install pyserial
 ```
 
 ### Habilitar la interfaz de puerto serie
 
 ```Bash
-# 打开配置工具
+# Abrir la herramienta de configuración
 sudo raspi-config
 
-# 选择 Interface Options → Serial
+# Seleccionar Interface Options → Serial
 Select: No (shell) → Yes (hardware serial port)
-# 重启生效
+# Surte efecto tras reiniciar
 sudo reboot
 ```
 
@@ -90,7 +90,7 @@ sudo reboot
 ```Bash
 cd UART_Voice
 ls -la
-# 应该看到 uart_voice.py
+# Debería verse uart_voice.py
 ```
 
 ### Configurar el dispositivo de puerto serie
@@ -98,13 +98,13 @@ ls -la
 Edite el archivo `uart_voice.py` y modifique el dispositivo de puerto serie:
 
 ```Bash
-# UART 直连（默认）
+# Conexión directa UART (predeterminada)
 SERIAL_PORT = '/dev/ttyAMA0'
 
-# 或者使用 USB-TTL
+# o usar un USB-TTL
 SERIAL_PORT = '/dev/ttyUSB0'
 
-# 波特率
+# Velocidad en baudios
 BAUD_RATE = 115200
 ```
 
@@ -114,7 +114,7 @@ BAUD_RATE = 115200
 
 ```Bash
 chmod +x uart_voice.py
-# 运行（需要 sudo 权限访问串口）
+# Ejecutar (se necesita sudo para acceder al puerto serie)
 sudo python3 uart_voice.py
 ```
 
@@ -160,7 +160,7 @@ Pulse `Ctrl + C` para detener el programa
 4. Compruebe si el puerto serie está ocupado por otro programa
 
 ```Bash
-# 查看可用串口
+# Ver los puertos serie disponibles
 ls /dev/tty* | grep tty
 ```
 
@@ -203,7 +203,7 @@ ls /dev/tty* | grep tty
 4. Si el puerto serie está ocupado por otro proceso
 
 ```Bash
-# 检查串口占用
+# Comprobar si el puerto serie está ocupado
 sudo lsof /dev/ttyAMA0
 ```
 
@@ -222,8 +222,8 @@ Si tiene problemas, compruebe lo siguiente:
 ## Comandos de depuración habituales
 
 ```Bash
-ls -l /dev/ttyAMA0   # 查看串口设备
-groups                # 查看用户组权限
+ls -l /dev/ttyAMA0   # Ver los dispositivos de puerto serie
+groups                # Ver los permisos del grupo de usuarios
 ```
 
 <RelatedProducts slugs="ai-voice-module" />

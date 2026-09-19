@@ -34,12 +34,12 @@ static int read_sensor_data(uint8_t reg, uint8_t *buffer, uint16_t length, float
     
     if (out != NULL) {
         if (is_float) {
-            // 处理浮点数数据
+            // Procesar datos de punto flotante
             for (uint8_t i = 0; i < out_size; i++) {
                 out[i] = to_float(&buffer[i * 4]);
             }
         } else {
-            // 处理整数数据并应用缩放因子
+            // Procesar datos enteros y aplicar el factor de escala
             for (uint8_t i = 0; i < out_size; i++) {
                 out[i] = to_int16(&buffer[i * 2]) * scale_factor;
             }
@@ -97,7 +97,7 @@ int IMU_I2C_ReadEuler(float out[3])
     uint8_t register_data[12];
     int result = read_sensor_data(IMU_FUNC_EULER, register_data, 12, out, 3, 1.0f, true);
     
-    // 转换为度数
+    // Convertir a grados
     if (result == 0 && out != NULL) {
         out[0] *= RAD2DEG;
         out[1] *= RAD2DEG;

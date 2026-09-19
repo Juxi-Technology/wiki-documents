@@ -31,8 +31,8 @@ Lekiwi es el robot móvil de inteligencia corporizada de bajo costo de Juxi Tech
 ## Inicio rápido
 
 ```bash
-# 参考仓库 README 组装与接线
-# 12V 电源接入,USB 连接主控
+# Consultar el README del repositorio para el montaje y el cableado
+# Alimentación de 12V conectada, USB al controlador principal
 ```
 ## Tutoriales
 

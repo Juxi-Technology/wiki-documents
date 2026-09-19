@@ -37,8 +37,8 @@ Los servos de bus serie Feetech son el núcleo de accionamiento de brazos robót
 ## Inicio rápido
 
 ```bash
-# 上位机调试(Windows):下载 feetechrc.com/software.html
-# 选择端口,波特率 1000000,点击搜索
+# Depuración con el software de PC (Windows): descargar feetechrc.com/software.html
+# Seleccionar el puerto, velocidad en baudios 1000000, hacer clic en “搜索”
 ```
 ## Tutoriales
 

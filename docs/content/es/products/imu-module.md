@@ -37,11 +37,11 @@ El sensor de actitud IMU de alta precisión incorpora un procesador de 32 bits a
 
 ## Inicio rápido
 ```bash
-# ROS2 启动
+# Inicio de ROS2
 ros2 launch icm42670p imu_launch.py
 ros2 topic echo /imu/data
 
-# 校准(首次使用)
+# Calibración (primer uso)
 python3 imu_calibration_tool.py --mode serial --port /dev/ttyUSB0
 ```
 ## Tutoriales
