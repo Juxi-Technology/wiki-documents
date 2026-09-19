@@ -58,26 +58,26 @@ If a USB-TTL adapter module is used:
 ### Install Dependency Packages
 
 ```Bash
-# 更新软件包
+# Update packages
 sudo apt update
 sudo apt upgrade -y
 
-# 安装 Python 库
+# Install Python libraries
 sudo apt install -y python3-pip
 
-# 安装 pyserial
+# Install pyserial
 pip3 install pyserial
 ```
 
 ### Enable the Serial Port Interface
 
 ```Bash
-# 打开配置工具
+# Open the configuration tool
 sudo raspi-config
 
-# 选择 Interface Options → Serial
+# Select Interface Options → Serial
 Select: No (shell) → Yes (hardware serial port)
-# 重启生效
+# Reboot to take effect
 sudo reboot
 ```
 
@@ -90,7 +90,7 @@ sudo reboot
 ```Bash
 cd UART_Voice
 ls -la
-# 应该看到 uart_voice.py
+# You should see uart_voice.py
 ```
 
 ### Configure the Serial Port Device
@@ -98,13 +98,13 @@ ls -la
 Edit the `uart_voice.py` file and modify the serial port device:
 
 ```Bash
-# UART 直连（默认）
+# UART direct connection (default)
 SERIAL_PORT = '/dev/ttyAMA0'
 
-# 或者使用 USB-TTL
+# Or use a USB-TTL adapter
 SERIAL_PORT = '/dev/ttyUSB0'
 
-# 波特率
+# Baud rate
 BAUD_RATE = 115200
 ```
 
@@ -114,7 +114,7 @@ BAUD_RATE = 115200
 
 ```Bash
 chmod +x uart_voice.py
-# 运行（需要 sudo 权限访问串口）
+# Run (sudo privileges required to access the serial port)
 sudo python3 uart_voice.py
 ```
 
@@ -160,7 +160,7 @@ Press `Ctrl + C` to stop the program
 4. Check whether the serial port is occupied by another program
 
 ```Bash
-# 查看可用串口
+# View available serial ports
 ls /dev/tty* | grep tty
 ```
 
@@ -203,7 +203,7 @@ ls /dev/tty* | grep tty
 4. Whether the serial port is occupied by another process
 
 ```Bash
-# 检查串口占用
+# Check serial port usage
 sudo lsof /dev/ttyAMA0
 ```
 
@@ -222,8 +222,8 @@ If there are problems, please check:
 ## Common Debugging Commands
 
 ```Bash
-ls -l /dev/ttyAMA0   # 查看串口设备
-groups                # 查看用户组权限
+ls -l /dev/ttyAMA0   # View the serial port device
+groups                # Check user group permissions
 ```
 
 <RelatedProducts slugs="ai-voice-module" />

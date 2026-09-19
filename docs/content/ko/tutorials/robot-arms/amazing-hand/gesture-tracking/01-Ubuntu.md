@@ -348,14 +348,14 @@ sudo chmod 666 /dev/ttyACM*
 
 ```Plain Text
 ls -l /dev/video0
-sudo usermod -aG video $USER   # 加入 video 组，注销重登
+sudo usermod -aG video $USER   # video 그룹에 추가, 로그아웃 후 재로그인
 ```
 
 4. v4l2로 카메라가 실제로 프레임을 출력할 수 있는지 확인(출력 가능 = 드라이버 정상, 문제는 OpenCV 호환성):
 
 ```Bash
 v4l2-ctl --device=/dev/video0 --set-fmt-video=width=640,height=480,pixelformat=MJPG --stream-mmap --stream-count=1 --stream-to=/tmp/frame.jpg
-ls -l /tmp/frame.jpg   # 有几十~几百KB = 流通
+ls -l /tmp/frame.jpg   # 수십~수백KB = 스트리밍 정상
 ```
 
 ### 9.7 포트 번호가 매번 변경됨

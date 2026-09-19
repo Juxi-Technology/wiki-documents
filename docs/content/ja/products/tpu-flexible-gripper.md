@@ -49,7 +49,7 @@ keywords: [gripper, グリッパー, tpu, フレキシブル, so-arm101, 把持]
 アーム搭載カメラと LeRobot フレームワークを併用:
 
 ```bash
-# 录制视觉抓取数据
+# 視覚付き把持データを録画
 lerobot-record \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \

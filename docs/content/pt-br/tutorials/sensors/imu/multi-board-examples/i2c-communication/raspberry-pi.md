@@ -59,7 +59,7 @@ Arraste os arquivos descompactados para o Raspberry Pi 5 por meio do software Mo
 ```PowerShell
 cd ~/imu_ros2/src/IMU_ROS1/IMU_Library
 
-# 运行 IMU 数据打印文件
+# Executar o arquivo de impressão de dados da IMU
 python3 -m IMU_Library.IMU_I2C_Library
 ```
 
@@ -74,17 +74,17 @@ Observação: O acima é a leitura de dados de um IMU de 10 eixos. O de 6 eixos 
 ```PowerShell
 cd ~/IMU_Library
 
-# 运行 IMU 校准代码文件 --I2C通讯校准
-# 执行所有校准（整体、磁力计、温度）
+# Executar o arquivo de código de calibração da IMU --calibração por comunicação I2C
+# Executar todas as calibrações (completa, magnetômetro, temperatura)
 python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 1
 
-# 仅整体校准
+# Somente calibração completa
 python3-m IMU_Library.imu_calibration_tool --mode i2c --port 1 --calibrate imu
 
-# 仅磁力计校准
+# Somente calibração do magnetômetro
 python3-m IMU_Library.imu_calibration_tool --mode i2c --port 1 --calibrate mag
 
-# 仅温度校准
+# Somente calibração de temperatura
 python3-m IMU_Library.imu_calibration_tool --mode i2c --port 1 --calibrate temp
 ```
 

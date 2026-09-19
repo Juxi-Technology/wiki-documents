@@ -37,8 +37,8 @@ KWS(Keyword Spotting)음성 인식 상호작용 모듈은 중문/영문 인식�
 ## 빠른 시작
 
 ```bash
-# 烧录固件(参考教程)
-# Python 串口通信示例
+# 펌웨어 플래싱(튜토리얼 참조)
+# Python 시리얼 통신 예시
 import serial
 ser = serial.Serial('/dev/ttyUSB0', 115200)
 while True:

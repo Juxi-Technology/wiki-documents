@@ -9,10 +9,10 @@ description: "AI-Sprachinteraktionsmodul mit Arduino über IIC verbinden: Hardwa
 
 ```Plain Text
 IIC_Voice/
-├── IIC_Voice.ino    # 主程序
-├── bsp_iic.hpp         # 头文件（地址和函数声明）
-├── bsp_iic.cpp         # 实现文件
-└── README.md            # 本教程
+├── IIC_Voice.ino    # Hauptprogramm
+├── bsp_iic.hpp         # Header-Datei (Adress- und Funktionsdeklarationen)
+├── bsp_iic.cpp         # Implementierungsdatei
+└── README.md            # Dieses Tutorial
 ```
 
 ---
@@ -189,7 +189,7 @@ void setup() {
 
   Serial.println("IIC Voice Module Initialized");
 
-  IIC_SetCommandVoice(0x00);  // 上电播报命令词语音
+  IIC_SetCommandVoice(0x00);  // Beim Einschalten Befehlswort ansagen
   delay(200);
 }
 
@@ -197,21 +197,21 @@ void loop() {
   int commandId = IIC_ReadCommand();
 
   if (commandId >= 0) {
-    // 过滤无效值，防止重复输出
+    // Ungültige Werte filtern, um doppelte Ausgaben zu verhindern
     if (commandId != 0 && commandId != 255 && commandId != lastCommandId) {
       Serial.print("ID: ");
       Serial.println(commandId);
       lastCommandId = commandId;
 
-      // 示例：根据识别到的命令控制播报
+      // Beispiel: Ansage anhand des erkannten Befehls steuern
       if (commandId == 1) {
-        IIC_SetCommandVoice(0x00);  // 识别到命令1，播报命令词语音
+        IIC_SetCommandVoice(0x00);  // Befehl 1 erkannt, Befehlswort ansagen
       } else if (commandId == 2) {
-        IIC_SetCommandVoice(0x00);  // 识别到命令2，播报命令词语音
+        IIC_SetCommandVoice(0x00);  // Befehl 2 erkannt, Befehlswort ansagen
       }
     } else if (commandId == 0 || commandId == 255) {
       if (lastCommandId != 0) {
-        lastCommandId = 0;  // 重置状态
+        lastCommandId = 0;  // Status zurücksetzen
       }
     }
   } else {
@@ -303,11 +303,11 @@ Wenn Sie auf eine andere Plattform wechseln (z. B. STM32, ESP32), müssen Sie nu
 
 ```Plain Text
 if (commandId == 1) {
-  IIC_SetCommandVoice(0x00);      // 播报命令词
+  IIC_SetCommandVoice(0x00);      // Befehlswort-Ansage
 } else if (commandId == 2) {
-  IIC_SetFunctionVoice(0x00);     // 播报功能词
+  IIC_SetFunctionVoice(0x00);     // Funktionswort-Ansage
 } else if (commandId == 3) {
-  IIC_SetPassiveVoice(0x00);      // 播报被动语
+  IIC_SetPassiveVoice(0x00);      // Passive Ansage
 }
 ```
 
@@ -315,8 +315,8 @@ if (commandId == 1) {
 
 ```Plain Text
 if (commandId == 10) {
-  digitalWrite(LED_PIN, LOW);    // 关灯
-  IIC_SetCommandVoice(0x00);     // 播报确认
+  digitalWrite(LED_PIN, LOW);    // Licht aus
+  IIC_SetCommandVoice(0x00);     // Bestätigungsansage
 }
 ```
 
@@ -325,7 +325,7 @@ if (commandId == 10) {
 ```Plain Text
 if (commandId == 11) {
   motor_stop();
-  IIC_SetCommandVoice(0x00);     // 播报确认
+  IIC_SetCommandVoice(0x00);     // Bestätigungsansage
 }
 ```
 

@@ -158,20 +158,20 @@ Vorgehen bei langsamem Download / Hängen:
 ### 3. Ubuntu-Laufzeitumgebung installieren
 
 ```bash
-# 1. ROS 2 Humble(按官方文档安装)
+# 1. ROS 2 Humble (gemäß offizieller Dokumentation installieren)
 #    https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html
 source /opt/ros/humble/setup.bash
 
-# 2. LeRobot(含 Feetech 支持)
+# 2. LeRobot (mit Feetech-Unterstützung)
 conda create -n lerobot_so101 python=3.10 -y
 conda activate lerobot_so101
 pip install lerobot[feetech]
 
 # 3. micro-ROS Agent
 sudo snap install micro-ros-agent
-snap run micro-ros-agent udp4 --port 8888   # 测试能否启动
+snap run micro-ros-agent udp4 --port 8888   # Testen, ob der Start funktioniert
 
-# 4. PlatformIO(Ubuntu 端若也要编译烧录)
+# 4. PlatformIO (falls auch auf der Ubuntu-Seite kompiliert und geflasht werden soll)
 pip install platformio
 ```
 
@@ -184,7 +184,7 @@ PC und NanoCam müssen sich im selben LAN befinden (2,4-GHz-WiFi, ein Smartphone
 ```bash
 cd firmware/nanocam_soarm
 cp src/wifi_config.example.h src/wifi_config.h
-# 编辑 wifi_config.h:WIFI_SSID / WIFI_PASS / AGENT_IP(Ubuntu 电脑局域网 IP)
+# wifi_config.h bearbeiten: WIFI_SSID / WIFI_PASS / AGENT_IP (LAN-IP des Ubuntu-Rechners)
 ```
 
 ### Variante 2: Konfiguration über serielle Befehle (empfohlen, kein erneutes Flashen)
@@ -235,12 +235,12 @@ Waiting for micro-ROS Agent...    ← 等待 Agent(下一步启动后消失)
 Das Verzeichnis `cali/` des Projekts enthält bereits die Kalibrierdateien für Führungs- und Folgearm, und das Kalibrier-Array in der Firmware ist bereits auf die Folgearm-Kalibrierung abgestimmt (nämlich `cali/follower_recal.json`). **Eine Neukalibrierung ist nur beim Austausch der Folgearm-/Führungsarm-Hardware erforderlich.**
 
 ```bash
-# 从臂
+# Folgearm
 python -m lerobot.scripts.lerobot_calibrate \
   --robot.type=so101_follower --robot.port=/dev/ttyACM0 \
   --robot.id=follower_recal --robot.calibration_dir="$PWD/cali"
 
-# 主臂
+# Führungsarm
 python -m lerobot.scripts.lerobot_calibrate \
   --teleop.type=so101_leader --teleop.port=/dev/ttyACM0 \
   --teleop.id=leader_recal --teleop.calibration_dir="$PWD/cali"
@@ -253,23 +253,23 @@ Nach einer Neukalibrierung des Folgearms muss `firmware/nanocam_soarm/src/servo_
 ### Prüfungen vor dem Start
 
 ```bash
-# 1. Ubuntu 电脑连上与 NanoCam 相同的 2.4GHz WiFi
-# 2. 主臂 USB 舵机驱动板已连接并识别
-ls -l /dev/ttyACM*   # 找到主臂串口
-# 3. 从臂 NanoCam 已上电并联网(串口或浏览器确认 MJPEG 流可访问)
+# 1. Den Ubuntu-Rechner mit demselben 2,4-GHz-WLAN wie die NanoCam verbinden
+# 2. Die USB-Servo-Treiberplatine des Führungsarms ist verbunden und erkannt
+ls -l /dev/ttyACM*   # Seriellen Port des Führungsarms ermitteln
+# 3. Die NanoCam des Folgearms ist eingeschaltet und mit dem Netzwerk verbunden (MJPEG-Stream per serieller Schnittstelle oder Browser erreichbar)
 ```
 
 ### Start mit einem Befehl
 
 ```bash
-# 设置环境(或直接编辑 start_soarm_demo.sh 顶部的默认值)
+# Umgebung einrichten (oder direkt die Standardwerte am Anfang von start_soarm_demo.sh bearbeiten)
 export SOARM_WIFI_SSID="你的2.4G热点"
 export SOARM_AGENT_IP="Ubuntu电脑IP"
 export SOARM_LEADER_PORT="/dev/ttyACM*"
-export SOARM_PYTHON="$(command -v python)"   # lerobot_so101 环境
+export SOARM_PYTHON="$(command -v python)"   # Umgebung lerobot_so101
 
-./start_soarm_demo.sh --check    # 预飞检查:网络/主臂/Agent/从臂在线
-./start_soarm_demo.sh            # 正式启动遥操作,Ctrl+C 停止
+./start_soarm_demo.sh --check    # Vorabprüfung: Netzwerk/Führungsarm/Agent/Folgearm online
+./start_soarm_demo.sh            # Teleoperation regulär starten, mit Ctrl+C beenden
 ```
 
 Das Skript führt der Reihe nach aus:
@@ -288,9 +288,9 @@ Nach dem Aufbau der Verbindung gibt die serielle Schnittstelle des Folgearms `mi
 ### Topics manuell verifizieren
 
 ```bash
-ros2 topic echo /joint_states --once           # 从臂反馈
-ros2 topic hz /joint_states                    # 应约 20 Hz
-ros2 topic echo /follower_audio/level --once   # 麦克风电平(说话时抬升)
+ros2 topic echo /joint_states --once           # Feedback vom Folgearm
+ros2 topic hz /joint_states                    # Sollte etwa 20 Hz betragen
+ros2 topic echo /follower_audio/level --once   # Mikrofonpegel (steigt beim Sprechen an)
 ```
 
 ## Kamera-FPV
@@ -316,17 +316,17 @@ http://<NANOCAM_IP>/stream   连续 MJPEG 流(FPV)
 Empfang auf dem PC (veröffentlicht als ROS-2-Topic, Nachrichtentyp `sensor_msgs/CompressedImage`):
 
 ```bash
-# 终端 1:照常启动遥操作
+# Terminal 1: Teleoperation wie gewohnt starten
 ./start_soarm_demo.sh
 
-# 终端 2:接收视频并发布话题
+# Terminal 2: Video empfangen und Topic veröffentlichen
 source /opt/ros/humble/setup.bash
 python3 tools/follower_camera.py --stream http://<NANOCAM_IP>/stream
-# 可选:--topic /自定义话题  --max-fps 10
+# Optional: --topic /eigenes Topic  --max-fps 10
 
-# 验证
-ros2 topic hz /follower_camera/image_raw/compressed   # 应约 10~15 Hz
-rviz2    # Add → By topic → Camera,选 /follower_camera/image_raw/compressed
+# Verifizieren
+ros2 topic hz /follower_camera/image_raw/compressed   # Sollte etwa 10~15 Hz betragen
+rviz2    # Add → By topic → Camera, /follower_camera/image_raw/compressed auswählen
 ```
 
 Auch ohne ROS lässt sich die Verbindung vorab prüfen: `http://<NANOCAM_IP>/stream` im Browser öffnen oder `curl -s http://<NANOCAM_IP>/jpg -o snap.jpg` ausführen.
@@ -465,8 +465,8 @@ Die Artefakte liegen in `src/esp32s3/libmicroros.a`, die Header in den Paketverz
 
 ```bash
 cp src/esp32s3/libmicroros.a <工程>/firmware/nanocam_soarm/lib/microros/
-# 头文件整体替换(保留该目录下的 default_transport.cpp / wifi_transport.cpp /
-# micro_ros_arduino.h 三个自定义文件)
+# Header-Dateien vollständig ersetzen (die drei benutzerdefinierten Dateien default_transport.cpp / wifi_transport.cpp /
+# micro_ros_arduino.h in diesem Verzeichnis beibehalten)
 rsync -a src/* <工程>/firmware/nanocam_soarm/lib/microros/include/ \
   --exclude esp32s3 --exclude '*.cpp' --exclude micro_ros_arduino.h
 ```
@@ -497,7 +497,7 @@ docker run --platform linux/amd64 -it --rm \
    ```bash
    mkdir -p /tmp/firmware && cd /tmp/firmware
    git clone -b humble https://github.com/micro-ROS/micro_ros_setup.git src/micro_ros_setup
-   # 安装 micro_ros_setup 依赖后:
+   # Nach Installation der micro_ros_setup-Abhängigkeiten:
    source /opt/ros/humble/setup.bash
    colcon build && source install/local_setup.bash
    ros2 run micro_ros_setup create_firmware_ws.sh generate_lib

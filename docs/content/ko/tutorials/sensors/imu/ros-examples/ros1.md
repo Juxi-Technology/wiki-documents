@@ -103,11 +103,11 @@ sudo usermod -aG dialout ash
 
 ```PowerShell
 cd IMU_ROS1
-# 下载解压IMU_ROS1压缩文件后，进入到IMU_Library目录下，运行以下指令
+# IMU_ROS1 압축 파일을 내려받아 압축 해제한 후, IMU_Library 디렉터리로 이동하여 아래 명령 실행
 cd IMU_Library
-# 安装库及其依赖
+# 라이브러리 및 의존성 설치
 pip install -e .
-# 或使用setup.py安装
+# 또는 setup.py로 설치
 python setup.py install
 ```
 
@@ -140,7 +140,7 @@ catkin_init_workspace
 2. **전송된 IMU_ROS1 폴더를 ~/imu_ros1/src/ 디렉터리로 복사**
 
 ```PowerShell
-# 复制 IMU_ROS1 文件夹到新建的 src 目录下
+# IMU_ROS1 폴더를 새로 만든 src 디렉터리로 복사
 cp -r ~/IMU_ROS1 ~/imu_ros1/src
 cd ~/imu_ros1
 catkin_make
@@ -149,9 +149,9 @@ catkin_make
 3. **작업 디렉터리 ~/imu_ros1을 환경 변수에 추가**
 
 ```PowerShell
-# 编辑 ~/.bashrc
+# ~/.bashrc 편집
 sudo gedit ~/.bashrc
-# 把下面命令写到末尾
+# 아래 명령을 파일 끝에 작성
 source ~/imu_ros1/devel/setup.bash
 source ~/.bashrc
 ```
@@ -161,9 +161,9 @@ source ~/.bashrc
 1. **터미널을 열고 roscore 입력으로 노드 시작**
 
 ```PowerShell
-# 启动roscore
+# roscore 실행
 roscore
-# 新开终端，设置环境，启动节点
+# 새 터미널 열기, 환경 설정, 노드 실행
 source ~/imu_ros1/devel/setup.bash
 ```
 
@@ -172,9 +172,9 @@ source ~/imu_ros1/devel/setup.bash
 스크립트가 있는 `scripts` 디렉터리로 이동하여 `chmod +x` 명령으로 실행 권한을 부여합니다 (`+x`는 실행 권한 추가):
 
 ```PowerShell
-# 进入imu_driver.py所在目录（按你的实际路径）
+# imu_driver.py가 있는 디렉터리로 이동(실제 경로에 맞게)
 cd ~/imu_ros1/src/IMU_ROS1/scripts/
-# 赋予可执行权限（仅需执行1次，永久生效）
+# 실행 권한 부여(1회만 실행하면 영구 적용)
 chmod +x imu_driver.py
 chmod +x mag_visualizer.py
 ```
@@ -193,16 +193,16 @@ rosrun IMU_ROS1 imu_driver.py
 1. **새 터미널을 열고 imu 토픽 확인**
 
 ```PowerShell
-# 查看当前发布的所有话题
+# 현재 발행 중인 모든 토픽 확인
 rostopic list
 ```
 
 2. **토픽 데이터 출력**
 
 ```PowerShell
-# 打印IMU原始数据
+# IMU 원시 데이터 출력
 rostopic echo /imu/data_raw
-# 打印磁力计数据
+# 자력계 데이터 출력
 rostopic echo /imu/mag
 ```
 
@@ -219,9 +219,9 @@ roslaunch IMU_ROS1 imu_display.launch
 1. 노드 시작 시 실패하면 다음 명령을 시도하세요
 
 ```PowerShell
-# 在~/imu_ros1目录下运行
+# ~/imu_ros1 디렉터리에서 실행
 source devel/setup.bash
-# 端口号问题
+# 포트 번호 문제
 sudo chmod 666 /dev/imu-serial
 ```
 

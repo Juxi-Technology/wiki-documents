@@ -158,20 +158,20 @@ pio run
 ### 3. Ubuntu 実行環境のインストール
 
 ```bash
-# 1. ROS 2 Humble(按官方文档安装)
+# 1. ROS 2 Humble(公式ドキュメントに従ってインストール)
 #    https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html
 source /opt/ros/humble/setup.bash
 
-# 2. LeRobot(含 Feetech 支持)
+# 2. LeRobot(Feetech サポート含む)
 conda create -n lerobot_so101 python=3.10 -y
 conda activate lerobot_so101
 pip install lerobot[feetech]
 
 # 3. micro-ROS Agent
 sudo snap install micro-ros-agent
-snap run micro-ros-agent udp4 --port 8888   # 测试能否启动
+snap run micro-ros-agent udp4 --port 8888   # 起動できるかテスト
 
-# 4. PlatformIO(Ubuntu 端若也要编译烧录)
+# 4. PlatformIO(Ubuntu 側でもコンパイルと書き込みを行う場合)
 pip install platformio
 ```
 
@@ -184,7 +184,7 @@ PC と NanoCam は同じ LAN に接続する必要があり(2.4GHz Wi-Fi、ス�
 ```bash
 cd firmware/nanocam_soarm
 cp src/wifi_config.example.h src/wifi_config.h
-# 编辑 wifi_config.h:WIFI_SSID / WIFI_PASS / AGENT_IP(Ubuntu 电脑局域网 IP)
+# wifi_config.h を編集: WIFI_SSID / WIFI_PASS / AGENT_IP(Ubuntu PC の LAN IP)
 ```
 
 ### 方法 2:シリアルコマンドによる設定(推奨、再書き込み不要)
@@ -235,12 +235,12 @@ Waiting for micro-ROS Agent...    ← 等待 Agent(下一步启动后消失)
 プロジェクトの `cali/` ディレクトリにはリーダーアーム/フォロワーアームのキャリブレーションファイルが含まれており、ファームウェア内のキャリブレーション配列もフォロワーアームのキャリブレーション(`cali/follower_recal.json`)に合わせてあります。**フォロワーアーム/リーダーアームのハードウェアを交換した場合のみ、再キャリブレーションが必要です。**
 
 ```bash
-# 从臂
+# フォロワーアーム
 python -m lerobot.scripts.lerobot_calibrate \
   --robot.type=so101_follower --robot.port=/dev/ttyACM0 \
   --robot.id=follower_recal --robot.calibration_dir="$PWD/cali"
 
-# 主臂
+# リーダーアーム
 python -m lerobot.scripts.lerobot_calibrate \
   --teleop.type=so101_leader --teleop.port=/dev/ttyACM0 \
   --teleop.id=leader_recal --teleop.calibration_dir="$PWD/cali"
@@ -253,23 +253,23 @@ python -m lerobot.scripts.lerobot_calibrate \
 ### 起動前チェック
 
 ```bash
-# 1. Ubuntu 电脑连上与 NanoCam 相同的 2.4GHz WiFi
-# 2. 主臂 USB 舵机驱动板已连接并识别
-ls -l /dev/ttyACM*   # 找到主臂串口
-# 3. 从臂 NanoCam 已上电并联网(串口或浏览器确认 MJPEG 流可访问)
+# 1. Ubuntu PC を NanoCam と同じ 2.4GHz WiFi に接続
+# 2. リーダーアームの USB サーボドライバ基板が接続され認識されている
+ls -l /dev/ttyACM*   # リーダーアームのシリアルポートを見つける
+# 3. フォロワーアームの NanoCam に電源が入りネットワークに接続済み(シリアルまたはブラウザで MJPEG ストリームにアクセスできることを確認)
 ```
 
 ### ワンクリック起動
 
 ```bash
-# 设置环境(或直接编辑 start_soarm_demo.sh 顶部的默认值)
+# 環境を設定(または start_soarm_demo.sh 冒頭のデフォルト値を直接編集)
 export SOARM_WIFI_SSID="你的2.4G热点"
 export SOARM_AGENT_IP="Ubuntu电脑IP"
 export SOARM_LEADER_PORT="/dev/ttyACM*"
-export SOARM_PYTHON="$(command -v python)"   # lerobot_so101 环境
+export SOARM_PYTHON="$(command -v python)"   # lerobot_so101 環境
 
-./start_soarm_demo.sh --check    # 预飞检查:网络/主臂/Agent/从臂在线
-./start_soarm_demo.sh            # 正式启动遥操作,Ctrl+C 停止
+./start_soarm_demo.sh --check    # プリフライトチェック: ネットワーク/リーダーアーム/Agent/フォロワーアームがオンライン
+./start_soarm_demo.sh            # 遠隔操作を正式に開始、Ctrl+C で停止
 ```
 
 スクリプトは次の順に処理します:
@@ -288,9 +288,9 @@ export SOARM_PYTHON="$(command -v python)"   # lerobot_so101 环境
 ### トピックの手動確認
 
 ```bash
-ros2 topic echo /joint_states --once           # 从臂反馈
-ros2 topic hz /joint_states                    # 应约 20 Hz
-ros2 topic echo /follower_audio/level --once   # 麦克风电平(说话时抬升)
+ros2 topic echo /joint_states --once           # フォロワーアームのフィードバック
+ros2 topic hz /joint_states                    # 約 20 Hz になるはず
+ros2 topic echo /follower_audio/level --once   # マイクレベル(話すと上昇)
 ```
 
 ## カメラ FPV
@@ -316,17 +316,17 @@ http://<NANOCAM_IP>/stream   连续 MJPEG 流(FPV)
 PC 側での受信(ROS 2 トピックとして配信、メッセージ型 `sensor_msgs/CompressedImage`):
 
 ```bash
-# 终端 1:照常启动遥操作
+# ターミナル 1: 通常どおり遠隔操作を起動
 ./start_soarm_demo.sh
 
-# 终端 2:接收视频并发布话题
+# ターミナル 2: 映像を受信してトピックを配信
 source /opt/ros/humble/setup.bash
 python3 tools/follower_camera.py --stream http://<NANOCAM_IP>/stream
-# 可选:--topic /自定义话题  --max-fps 10
+# オプション: --topic /カスタムトピック  --max-fps 10
 
-# 验证
-ros2 topic hz /follower_camera/image_raw/compressed   # 应约 10~15 Hz
-rviz2    # Add → By topic → Camera,选 /follower_camera/image_raw/compressed
+# 検証
+ros2 topic hz /follower_camera/image_raw/compressed   # 約 10~15 Hz になるはず
+rviz2    # Add → By topic → Camera で /follower_camera/image_raw/compressed を選択
 ```
 
 ROS をインストールしなくても先にリンクを確認できます:ブラウザで `http://<NANOCAM_IP>/stream` を開くか、`curl -s http://<NANOCAM_IP>/jpg -o snap.jpg` を実行してください。
@@ -465,8 +465,8 @@ docker run -it --rm -v $(pwd):/project \
 
 ```bash
 cp src/esp32s3/libmicroros.a <工程>/firmware/nanocam_soarm/lib/microros/
-# 头文件整体替换(保留该目录下的 default_transport.cpp / wifi_transport.cpp /
-# micro_ros_arduino.h 三个自定义文件)
+# ヘッダーファイルを丸ごと置き換え(このディレクトリの default_transport.cpp / wifi_transport.cpp /
+# micro_ros_arduino.h の 3 つのカスタムファイルは保持)
 rsync -a src/* <工程>/firmware/nanocam_soarm/lib/microros/include/ \
   --exclude esp32s3 --exclude '*.cpp' --exclude micro_ros_arduino.h
 ```
@@ -497,7 +497,7 @@ docker run --platform linux/amd64 -it --rm \
    ```bash
    mkdir -p /tmp/firmware && cd /tmp/firmware
    git clone -b humble https://github.com/micro-ROS/micro_ros_setup.git src/micro_ros_setup
-   # 安装 micro_ros_setup 依赖后:
+   # micro_ros_setup の依存関係をインストール後:
    source /opt/ros/humble/setup.bash
    colcon build && source install/local_setup.bash
    ros2 run micro_ros_setup create_firmware_ws.sh generate_lib

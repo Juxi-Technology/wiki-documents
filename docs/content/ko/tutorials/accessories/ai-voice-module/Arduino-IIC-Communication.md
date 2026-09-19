@@ -9,10 +9,10 @@ description: "AI 음성 인터랙션 모듈 Arduino IIC 통신 튜토리얼 — 
 
 ```Plain Text
 IIC_Voice/
-├── IIC_Voice.ino    # 主程序
-├── bsp_iic.hpp         # 头文件（地址和函数声明）
-├── bsp_iic.cpp         # 实现文件
-└── README.md            # 本教程
+├── IIC_Voice.ino    # 메인 프로그램
+├── bsp_iic.hpp         # 헤더 파일(주소 및 함수 선언)
+├── bsp_iic.cpp         # 구현 파일
+└── README.md            # 본 튜토리얼
 ```
 
 ---
@@ -189,7 +189,7 @@ void setup() {
 
   Serial.println("IIC Voice Module Initialized");
 
-  IIC_SetCommandVoice(0x00);  // 上电播报命令词语音
+  IIC_SetCommandVoice(0x00);  // 전원 투입 시 명령어 음성 재생
   delay(200);
 }
 
@@ -197,21 +197,21 @@ void loop() {
   int commandId = IIC_ReadCommand();
 
   if (commandId >= 0) {
-    // 过滤无效值，防止重复输出
+    // 잘못된 값 필터링, 중복 출력 방지
     if (commandId != 0 && commandId != 255 && commandId != lastCommandId) {
       Serial.print("ID: ");
       Serial.println(commandId);
       lastCommandId = commandId;
 
-      // 示例：根据识别到的命令控制播报
+      // 예시: 인식된 명령에 따라 재생 제어
       if (commandId == 1) {
-        IIC_SetCommandVoice(0x00);  // 识别到命令1，播报命令词语音
+        IIC_SetCommandVoice(0x00);  // 명령 1 인식 시 명령어 음성 재생
       } else if (commandId == 2) {
-        IIC_SetCommandVoice(0x00);  // 识别到命令2，播报命令词语音
+        IIC_SetCommandVoice(0x00);  // 명령 2 인식 시 명령어 음성 재생
       }
     } else if (commandId == 0 || commandId == 255) {
       if (lastCommandId != 0) {
-        lastCommandId = 0;  // 重置状态
+        lastCommandId = 0;  // 상태 초기화
       }
     }
   } else {
@@ -303,11 +303,11 @@ I2C 관련 코드를 수정할 때는 `bsp_iic.cpp` 에서만 수정하면 되�
 
 ```Plain Text
 if (commandId == 1) {
-  IIC_SetCommandVoice(0x00);      // 播报命令词
+  IIC_SetCommandVoice(0x00);      // 명령어 재생
 } else if (commandId == 2) {
-  IIC_SetFunctionVoice(0x00);     // 播报功能词
+  IIC_SetFunctionVoice(0x00);     // 기능어 재생
 } else if (commandId == 3) {
-  IIC_SetPassiveVoice(0x00);      // 播报被动语
+  IIC_SetPassiveVoice(0x00);      // 수동 재생
 }
 ```
 
@@ -315,8 +315,8 @@ if (commandId == 1) {
 
 ```Plain Text
 if (commandId == 10) {
-  digitalWrite(LED_PIN, LOW);    // 关灯
-  IIC_SetCommandVoice(0x00);     // 播报确认
+  digitalWrite(LED_PIN, LOW);    // 조명 끄기
+  IIC_SetCommandVoice(0x00);     // 확인 음성 재생
 }
 ```
 
@@ -325,7 +325,7 @@ if (commandId == 10) {
 ```Plain Text
 if (commandId == 11) {
   motor_stop();
-  IIC_SetCommandVoice(0x00);     // 播报确认
+  IIC_SetCommandVoice(0x00);     // 확인 음성 재생
 }
 ```
 

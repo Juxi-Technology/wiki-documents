@@ -37,11 +37,11 @@ Il sensore di assetto IMU di alta precisione integra un processore a 32 bit da 7
 
 ## Avvio rapido
 ```bash
-# ROS2 启动
+# Avvio ROS2
 ros2 launch icm42670p imu_launch.py
 ros2 topic echo /imu/data
 
-# 校准(首次使用)
+# Calibrazione (primo utilizzo)
 python3 imu_calibration_tool.py --mode serial --port /dev/ttyUSB0
 ```
 ## Tutorial

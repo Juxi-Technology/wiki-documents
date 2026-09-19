@@ -33,8 +33,8 @@ L'unità pan-tilt servo a 2 DOF monta servo bus seriale SCS0009 di alta precisio
 
 ## Avvio rapido
 ```bash
-# USB 连接主控,摄像头即插即用
-# Python SDK 控制云台
+# Collega la scheda di controllo via USB, la telecamera è plug-and-play
+# Controlla il gimbal con l'SDK Python
 from sc_servo import SCServo, Gimbal
 servo = SCServo("COM3")  # Linux: /dev/ttyUSB0
 servo.connect()

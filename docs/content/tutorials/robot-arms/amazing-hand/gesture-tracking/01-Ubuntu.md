@@ -348,14 +348,14 @@ Troubleshooting and solution (in order):
 
 ```Plain Text
 ls -l /dev/video0
-sudo usermod -aG video $USER   # 加入 video 组，注销重登
+sudo usermod -aG video $USER   # Add to the video group, then log out and back in
 ```
 
 4. Use v4l2 to verify whether the camera can really output frames (frames = the driver is fine, and the problem is OpenCV compatibility):
 
 ```Bash
 v4l2-ctl --device=/dev/video0 --set-fmt-video=width=640,height=480,pixelformat=MJPG --stream-mmap --stream-count=1 --stream-to=/tmp/frame.jpg
-ls -l /tmp/frame.jpg   # 有几十~几百KB = 流通
+ls -l /tmp/frame.jpg   # Tens to hundreds of KB = stream is working
 ```
 
 ### 9.7 The port number changes every time

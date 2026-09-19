@@ -58,26 +58,26 @@ Se você usar um módulo adaptador USB-TTL:
 ### Instalar os pacotes de dependência
 
 ```Bash
-# 更新软件包
+# Atualizar os pacotes
 sudo apt update
 sudo apt upgrade -y
 
-# 安装 Python 库
+# Instalar as bibliotecas Python
 sudo apt install -y python3-pip
 
-# 安装 pyserial
+# Instalar o pyserial
 pip3 install pyserial
 ```
 
 ### Habilitar a interface de porta serial
 
 ```Bash
-# 打开配置工具
+# Abrir a ferramenta de configuração
 sudo raspi-config
 
-# 选择 Interface Options → Serial
+# Selecionar Interface Options → Serial
 Select: No (shell) → Yes (hardware serial port)
-# 重启生效
+# Reiniciar para aplicar
 sudo reboot
 ```
 
@@ -90,7 +90,7 @@ sudo reboot
 ```Bash
 cd UART_Voice
 ls -la
-# 应该看到 uart_voice.py
+# Você deve ver uart_voice.py
 ```
 
 ### Configurar o dispositivo de porta serial
@@ -98,13 +98,13 @@ ls -la
 Edite o arquivo `uart_voice.py` e modifique o dispositivo de porta serial:
 
 ```Bash
-# UART 直连（默认）
+# Conexão direta UART (padrão)
 SERIAL_PORT = '/dev/ttyAMA0'
 
-# 或者使用 USB-TTL
+# Ou usar USB-TTL
 SERIAL_PORT = '/dev/ttyUSB0'
 
-# 波特率
+# Taxa de transmissão
 BAUD_RATE = 115200
 ```
 
@@ -114,7 +114,7 @@ BAUD_RATE = 115200
 
 ```Bash
 chmod +x uart_voice.py
-# 运行（需要 sudo 权限访问串口）
+# Executar (requer permissão sudo para acessar a porta serial)
 sudo python3 uart_voice.py
 ```
 
@@ -160,7 +160,7 @@ Pressione `Ctrl + C` para parar o programa
 4. Verifique se a porta serial está sendo usada por outro programa
 
 ```Bash
-# 查看可用串口
+# Ver as portas seriais disponíveis
 ls /dev/tty* | grep tty
 ```
 
@@ -203,7 +203,7 @@ ls /dev/tty* | grep tty
 4. Se a porta serial está sendo usada por outro processo
 
 ```Bash
-# 检查串口占用
+# Verificar se a porta serial está em uso
 sudo lsof /dev/ttyAMA0
 ```
 
@@ -222,8 +222,8 @@ Em caso de problemas, verifique:
 ## Comandos de depuração comuns
 
 ```Bash
-ls -l /dev/ttyAMA0   # 查看串口设备
-groups                # 查看用户组权限
+ls -l /dev/ttyAMA0   # Ver os dispositivos de porta serial
+groups                # Ver as permissões do grupo de usuários
 ```
 
 <RelatedProducts slugs="ai-voice-module" />

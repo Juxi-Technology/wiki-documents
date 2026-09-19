@@ -136,7 +136,7 @@ ros2 launch icm42670p imu_launch.py
 ### Python 校正ツール
 
 ```bash
-# 运行六面校准获取精确的加速度计和陀螺仪零偏
+# 六面校正を実行して正確な加速度計とジャイロのゼロバイアスを取得
 python calibration/calibrate.py --port /dev/ttyUSB0
 ```
 

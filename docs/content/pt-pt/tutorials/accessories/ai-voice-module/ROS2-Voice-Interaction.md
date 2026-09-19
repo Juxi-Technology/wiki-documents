@@ -16,18 +16,18 @@ description: "Interação por voz em ROS2 com o módulo de voz AI: ambiente em U
 #### Instalar as bibliotecas de dependências
 
 ```Bash
-# 1. 更新源
+# 1. Atualizar as fontes
 sudo apt update
 
-# 2. 安装 ROS2 基础包
-# (如果已安装ROS2，跳过)
+# 2. Instalar os pacotes base do ROS2
+# (se o ROS2 já estiver instalado, ignorar)
 sudo apt install ros-humble-desktop -y
 
-# 3. 安装本项目依赖（同时支持串口和I2C）
+# 3. Instalar as dependências deste projeto (com suporte para porta série e I2C)
 sudo apt install python3-pip ros-humble-rviz2 ros-humble-visualization-msgs -y
 pip3 install pyserial smbus2
 
-# 4. 如果使用 I2C 接线，额外安装
+# 4. Se utilizar ligação I2C, instalar adicionalmente
 sudo apt install python3-smbus2 i2c-tools -y
 ```
 
@@ -96,14 +96,14 @@ ros2 pkg create --build-type ament_python juxi_voice --license MIT
 └── src/
     └── juxi_voice/
         ├── package.xml
-        ├── setup.py           # (替换为本项目提供的)
-        ├── juxi_voice.rviz    # (新建：RViz预配置文件)
+        ├── setup.py           # (substituir pelo fornecido neste projeto)
+        ├── juxi_voice.rviz    # (criar: ficheiro de pré-configuração do RViz)
         ├── resource/
         │   └── juxi_voice
         └── juxi_voice/
             ├── __init__.py
-            ├── voice_node.py    # (新建：语音节点)
-            └── rviz_control.py  # (新建：RViz控制节点)
+            ├── voice_node.py    # (criar: nó de voz)
+            └── rviz_control.py  # (criar: nó de controlo RViz)
 ```
 
 ---
@@ -125,7 +125,7 @@ ros2 pkg create --build-type ament_python juxi_voice --license MIT
 **Arquitetura principal**:
 
 ```Bash
-# 统一命令数据: ID → (串口字节2, 串口字节3, 命令文本, 播报模式)
+# Dados de comando unificados: ID → (byte 2 da porta série, byte 3 da porta série, texto do comando, modo de reprodução)
 CMD_DATA = {
     1:  (0x01, 0x00, "欢迎语", "被"),
     3:  (0x03, 0x00, "你好小犀", "主"),
@@ -134,10 +134,10 @@ CMD_DATA = {
     ...
 }
 
-# 自动检测函数
+# Função de deteção automática
 def detect_connection(logger):
-    # 1. 尝试 I2C
-    # 2. 尝试串口 /dev/ttyUSB0, /dev/ttyACM0, /dev/ttyAMA0, /dev/ttyS0
+    # 1. Tentar I2C
+    # 2. Tentar a porta série /dev/ttyUSB0, /dev/ttyACM0, /dev/ttyAMA0, /dev/ttyS0
     ...
 ```
 
@@ -179,20 +179,20 @@ colcon build --symlink-install
 
 ```Bash
 source ~/juxi_speech_ws/install/setup.bash
-# 或写入 ~/.bashrc
+# Ou escrever em ~/.bashrc
 echo "source ~/juxi_speech_ws/install/setup.bash" >> ~/.bashrc
 ```
 
 #### Configuração de permissões
 
 ```Bash
-# I2C 权限
+# Permissões I2C
 sudo chmod 666 /dev/i2c-1
-# 串口权限
+# Permissões da porta série
 sudo chmod 666 /dev/ttyUSB0
 sudo chmod 666 /dev/ttyACM0
 sudo chmod 666 /dev/ttyAMA0
-# 或加入用户组
+# Ou adicionar ao grupo de utilizadores
 sudo usermod -aG dialout $USER
 sudo usermod -aG i2c $USER
 ```
@@ -239,7 +239,7 @@ Ou abra primeiro o RViz e depois carregue:
 
 ```Bash
 rviz2
-# 菜单栏: File → Open Config → 选择 juxi_voice.rviz
+# Barra de menus: File → Open Config → selecionar juxi_voice.rviz
 ```
 
 ---
@@ -279,11 +279,11 @@ Diga **"你好小犀"** ao módulo → o módulo responde "我在"
 #### Reprodução acionada pelo controlador anfitrião
 
 ```Bash
-# 被动播报
+# Reprodução passiva
 ros2 topic pub /juxi_passive_play std_msgs/msg/String "data: '这是红色'"
-# 功能词播报
+# Reprodução de palavras de função
 ros2 topic pub /juxi_func_play std_msgs/msg/String "data: '欢迎语'"
-# 命令词播报
+# Reprodução de palavras de comando
 ros2 topic pub /juxi_cmd_play std_msgs/msg/String "data: '小车前进'"
 ```
 
@@ -310,21 +310,21 @@ ros2 topic pub /juxi_cmd_play std_msgs/msg/String "data: '小车前进'"
 Verifique se o ficheiro de dispositivo correspondente ao modo de cablagem existe:
 
 ```Bash
-# I2C 接线
+# Ligação I2C
 ls /dev/i2c-1
-sudo i2cdetect -y 1   # 应看到 0x2A
+sudo i2cdetect -y 1   # Deverá ver 0x2A
 
-# Type-C 接线
+# Ligação Type-C
 ls /dev/ttyUSB0 /dev/ttyACM0
 
-# UART 接线
+# Ligação UART
 ls /dev/ttyAMA0 /dev/ttyS0
 ```
 
 **Erro de permissões da porta série**
 
 ```Bash
-sudo chmod 666 /dev/ttyUSB0   # 或 /dev/ttyACM0 等
+sudo chmod 666 /dev/ttyUSB0   # Ou /dev/ttyACM0, etc.
 ```
 
 **Erro de permissões do I2C**

@@ -93,7 +93,7 @@ Send the following commands over serial to switch modes:
 
 ```C++
 Serial.begin(115200);
-Serial.print("ai_mode:2");  // 切换到人脸检测
+Serial.print("ai_mode:2");  // Switch to face detection
 ```
 
 ### Python Control
@@ -101,7 +101,7 @@ Serial.print("ai_mode:2");  // 切换到人脸检测
 ```Python
 import serial
 ser = serial.Serial("COM3", 115200)
-ser.write(b"ai_mode:1\r\n")  # 切换到猫脸检测
+ser.write(b"ai_mode:1\r\n")  # Switch to cat face detection
 ```
 
 ### View the Complete Command List

@@ -50,29 +50,29 @@ description: "AI 音声対話モジュールと RDK X5 を IIC で接続する�
 ### 依存パッケージのインストール
 
 ```Bash
-# 更新软件包
+# ソフトウェアパッケージを更新
 sudo apt update
 sudo apt upgrade -y
 
-# 安装 Python 库
+# Python ライブラリをインストール
 sudo apt install -y python3-pip python3-smbus i2c-tools
 ```
 
 ### I2C インターフェースの有効化
 
 ```Bash
-# 打开配置工具
+# 設定ツールを開く
 sudo raspi-config
 
-# 选择 Interface Options → I2C → Enable
-# 重启生效
+# Interface Options → I2C → Enable を選択
+# 再起動で有効になる
 sudo reboot
 ```
 
 ### ハードウェアインターフェースのテスト
 
 ```Bash
-# 测试 I2C 设备
+# I2C デバイスをテスト
 sudo i2cdetect -y 5
 ```
 
@@ -85,7 +85,7 @@ sudo i2cdetect -y 5
 ```Bash
 cd IIC_Voice
 ls -la
-# 应该看到 iic_voice.py
+# iic_voice.py が表示されるはず
 ```
 
 ### I2C バスの設定
@@ -93,23 +93,23 @@ ls -la
 `iic_voice.py` ファイルを編集し、必要なパラメータを変更します：
 
 ```Bash
-# I2C 设备地址
+# I2C デバイスアドレス
 DEVICE_ADDRESS = 0x2A
 
-# 寄存器地址
+# レジスタアドレス
 REG_RESULT = 0xDA
 
-# I2C 总线编号（根据实际连接修改）
-bus = smbus.SMBus(5)  # I2C 总线 5
+# I2C バス番号（実際の接続に合わせて変更）
+bus = smbus.SMBus(5)  # I2C バス 5
 ```
 
 ### プログラムの実行
 
 ```Bash
-# 赋予执行权限
+# 実行権限を付与
 chmod +x iic_voice.py
 
-# 运行（需要 sudo 权限访问 I2C）
+# 実行（I2C へのアクセスには sudo 権限が必要）
 sudo python3 iic_voice.py
 ```
 
@@ -148,7 +148,7 @@ Program terminated
 
 ```Bash
 sudo usermod -aG i2c $USER
-# 重新登录生效
+# 再ログインで有効になる
 ```
 
 または `sudo` を使用してプログラムを実行します
@@ -168,9 +168,9 @@ sudo usermod -aG i2c $USER
 4. デバイスに電源が入っているか確認する
 
 ```Bash
-# 扫描 I2C 设备
+# I2C デバイスをスキャン
 sudo i2cdetect -y 5
-# 如果看到 0x2A，说明设备连接正常
+# 0x2A が表示されれば、デバイスは正常に接続されている
 ```
 
 ---
@@ -214,8 +214,8 @@ sudo i2cdetect -y 5
 ## よく使うデバッグコマンド
 
 ```Bash
-ls -l /dev/i2c*      # 查看 I2C 设备
-groups                # 查看用户组权限
+ls -l /dev/i2c*      # I2C デバイスを確認
+groups                # ユーザーグループの権限を確認
 ```
 
 <RelatedProducts slugs="ai-voice-module" />

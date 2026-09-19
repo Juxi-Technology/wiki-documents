@@ -59,10 +59,10 @@ Type-C 데이터 케이블로 직결, 플러그 앤 플레이(기본 9600bps).
 ### 3. 측위 확인
 
 ```bash
-# 安装 pynmea2 解析 NMEA 数据
+# pynmea2 설치 및 NMEA 데이터 파싱
 pip install pynmea2
 
-# 读取定位数据示例
+# 위치 데이터 읽기 예시
 import serial
 import pynmea2
 

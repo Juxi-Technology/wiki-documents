@@ -52,7 +52,7 @@ Aponte para o próximo código e a decodificação é feita automaticamente; o s
 `main/ai/nano_qrcode.cpp`:
 
 ```C++
-// 每帧创建全新扫描器对象
+// Criar um novo objeto scanner a cada quadro
 esp_image_scanner_t *scn = esp_code_scanner_create();
 esp_code_scanner_config_t cfg = {
     ESP_CODE_SCANNER_MODE_FAST,
@@ -61,10 +61,10 @@ esp_code_scanner_config_t cfg = {
 };
 esp_code_scanner_set_config(scn, cfg);
 int count = esp_code_scanner_scan_image(scn, fb->buf);
-// 解码成功
+// Decodificação bem-sucedida
 const esp_code_scanner_symbol_t result = esp_code_scanner_result(scn);
 ESP_LOGI(TAG, "Decoded [%s]: %s", result.type_name, result.data);
-// 保存到共享缓冲区供网页叠加
+// Salvar no buffer compartilhado para sobreposição na página web
 snprintf(g_last_code, sizeof(g_last_code), "%s: %s",
          result.type_name, result.data);
 esp_code_scanner_destroy(scn);

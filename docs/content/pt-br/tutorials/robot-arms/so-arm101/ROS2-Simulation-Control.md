@@ -508,12 +508,12 @@ mas a garra não abre na simulação física do Gazebo. Os modos Mock e de hardw
 
 ```Bash
 SO-ARM101_ROS2/
-├── so_arm_utils/                   # Python 工具库
-├── so_arm101_description/          # URDF · 控制器 · 网格 · RViz · MuJoCo
-├── so_arm101_moveit_config/        # MoveIt 2 SRDF · 规划器 · 启动文件
-├── so_arm_gz/                      # Gazebo 仿真启动
-├── so_arm_hardware/                # 内置 SCS 串口驱动（C++）
-└── Simulation/                     # 原始 CAD URDF（参考保留）
+├── so_arm_utils/                   # Biblioteca de utilitários Python
+├── so_arm101_description/          # URDF · controladores · malha · RViz · MuJoCo
+├── so_arm101_moveit_config/        # MoveIt 2 SRDF · planejador · arquivos de inicialização
+├── so_arm_gz/                      # Inicialização da simulação no Gazebo
+├── so_arm_hardware/                # Driver SCS de porta serial integrado (C++)
+└── Simulation/                     # URDF do CAD original (mantido como referência)
 ```
 
 <RelatedProducts slugs="so-arm101" />

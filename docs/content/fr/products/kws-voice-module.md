@@ -37,8 +37,8 @@ Le module KWS (Keyword Spotting) prend en charge le téléchargement et le flash
 ## Démarrage rapide
 
 ```bash
-# 烧录固件(参考教程)
-# Python 串口通信示例
+# Flasher le firmware (voir le tutoriel)
+# Exemple de communication série en Python
 import serial
 ser = serial.Serial('/dev/ttyUSB0', 115200)
 while True:

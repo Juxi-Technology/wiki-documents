@@ -33,8 +33,8 @@ keywords: [gimbal, 팬틸트, 2dof, 비전 추적, scs0009]
 
 ## 빠른 시작
 ```bash
-# USB 连接主控,摄像头即插即用
-# Python SDK 控制云台
+# USB로 메인 컨트롤러 연결, 카메라 플러그 앤 플레이
+# Python SDK로 짐벌 제어
 from sc_servo import SCServo, Gimbal
 servo = SCServo("COM3")  # Linux: /dev/ttyUSB0
 servo.connect()

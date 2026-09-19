@@ -82,14 +82,14 @@ GUI에는 **제스처 추적** 패널이 내장되어 있습니다(카메라가 
 python serial_test.py COM3 nop
 
 # 제스처
-python serial_test.py COM3 rock         # 石头
-python serial_test.py COM3 thumbs_up    # 真棒
-python serial_test.py COM3 index        # 指向
-python serial_test.py COM3 open         # 张开
-python serial_test.py COM3 close        # 握拳
+python serial_test.py COM3 rock         # 바위
+python serial_test.py COM3 thumbs_up    # 엄지 척
+python serial_test.py COM3 index        # 가리키기
+python serial_test.py COM3 open         # 펼치기
+python serial_test.py COM3 close        # 주먹
 
 # 단일 서보 직접 구동
-python serial_test.py COM3 servo 1 90   # 舵机1 → 90°
+python serial_test.py COM3 servo 1 90   # 서보1 → 90°
 
 # 모두 중앙으로 복귀
 python serial_test.py COM3 mid
@@ -99,8 +99,8 @@ python serial_test.py COM3 hand L
 python serial_test.py COM3 hand R
 
 # 스윕/자가 진단
-python serial_test.py COM3 sweep 1      # 舵机1 扫频
-python serial_test.py COM3 test         # 全部舵机逐个测试
+python serial_test.py COM3 sweep 1      # 서보1 스윕
+python serial_test.py COM3 test         # 모든 서보 순차 테스트
 ```
 
 ## 5. 자주 묻는 질문

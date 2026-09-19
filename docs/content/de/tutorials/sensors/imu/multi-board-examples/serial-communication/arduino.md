@@ -24,7 +24,7 @@ Dieses Beispiel verwendet das Arduino-Nano-Entwicklungsboard, einen Windows-PC, 
 Den konkreten Code finden Sie im Quellcode der Unterlagen.
 
 ```C++
-//解析环形缓冲中的数据，提取完整帧并更新缓存
+//Daten im Ringpuffer parsen, vollständige Frames extrahieren und Cache aktualisieren
 //Process RX ring buffer, parse frames and update internal cache
 void IMU_UART_Process()
 {
@@ -39,108 +39,108 @@ void IMU_UART_Process()
     static uint8_t  rx_state = RX_STATE_EXPECT_HEAD1;
     static uint8_t  frame_length = 0;
     static uint8_t  frame_function = 0;
-    static uint8_t  frame_buffer[64]; //数据区 + 校验 / data section + checksum
+    static uint8_t  frame_buffer[64]; //Datenbereich + Prüfsumme / data section + checksum
     static uint16_t frame_index = 0;
 
     uint8_t current_byte = 0;
 
-    //处理环形缓冲区中的所有数据
+    //Alle Daten im Ringpuffer verarbeiten
     while (_rxbuf_pop(&current_byte) == 0) {
         switch (rx_state) {
         case RX_STATE_EXPECT_HEAD1:
-            //寻找帧头1
+            //Nach Frame-Header 1 suchen
             if (current_byte == FRAME_HEAD1) {
                 rx_state = RX_STATE_EXPECT_HEAD2;
             }
-            //否则保持在当前状态
+            //Andernfalls im aktuellen Zustand bleiben
             break;
 
         case RX_STATE_EXPECT_HEAD2:
-            //寻找帧头2
+            //Nach Frame-Header 2 suchen
             if (current_byte == FRAME_HEAD2) {
                 rx_state = RX_STATE_EXPECT_LENGTH;
             } else {
-                //帧头不匹配，重新开始寻找
+                //Frame-Header stimmt nicht überein, Suche neu beginnen
                 rx_state = RX_STATE_EXPECT_HEAD1;
             }
             break;
 
         case RX_STATE_EXPECT_LENGTH:
-            //保存帧长度
+            //Framelänge speichern
             frame_length = current_byte;
             rx_state = RX_STATE_EXPECT_FUNCTION;
             break;
 
         case RX_STATE_EXPECT_FUNCTION:
-            //保存功能码
+            //Funktionscode speichern
             frame_function = current_byte;
             frame_index = 0;
             rx_state = RX_STATE_COLLECT_DATA;
             break;
 
         case RX_STATE_COLLECT_DATA: {
-            //计算数据长度（帧长度 - 帧头2字节 - 长度1字节 - 功能码1字节）
+            //Datenlänge berechnen (Framelänge - 2 Byte Frame-Header - 1 Byte Länge - 1 Byte Funktionscode)
             uint16_t data_length = (frame_length >= 4) ? (uint16_t)(frame_length - 4) : 0;
             
-            //检查数据长度是否有效
+            //Prüfen, ob die Datenlänge gültig ist
             if (data_length == 0 || data_length > sizeof(frame_buffer)) {
                 rx_state = RX_STATE_EXPECT_HEAD1;
                 break;
             }
 
-            //存储当前字节
+            //Aktuelles Byte speichern
             frame_buffer[frame_index++] = current_byte;
             
-            //检查是否收集完所有数据
+            //Prüfen, ob alle Daten gesammelt sind
             if (frame_index >= data_length) {
-                //计算校验和
+                //Prüfsumme berechnen
                 uint8_t calculated_checksum = (uint8_t)(FRAME_HEAD1 + FRAME_HEAD2 + frame_length + frame_function);
                 for (uint16_t i = 0; i < data_length - 1; ++i) {
                     calculated_checksum += frame_buffer[i];
                 }
 
-                //验证校验和
+                //Prüfsumme verifizieren
                 uint8_t received_checksum = frame_buffer[data_length - 1];
                 if (calculated_checksum == received_checksum) {
-                    //校验通过，解析数据
+                    //Prüfung bestanden, Daten parsen
                     _parse_frame_data(frame_function, frame_buffer);
                 }
                 
-                //重置状态，准备接收下一帧
+                //Status zurücksetzen, bereit für den nächsten Frame
                 rx_state = RX_STATE_EXPECT_HEAD1;
             }
         } break;
 
         default:
-            //未知状态，重置
+            //Unbekannter Status, zurücksetzen
             rx_state = RX_STATE_EXPECT_HEAD1;
             break;
         }
     }
 }
 
-//解析数据帧
+//Datenframe parsen
 static void _parse_frame_data(uint8_t frame_function, const uint8_t *frame_data)
 {
     switch (frame_function) {
         case IMU_FUNC_RAW_ACCEL: {
-            //定义常量比例因子
+            //Konstanten Skalierungsfaktor definieren
             const float ACCEL_RATIO = 16.0f / 32767.0f;
             const float DEG2RAD = 3.14159265358979323846f / 180.0f;
             const float GYRO_RATIO = (2000.0f / 32767.0f) * DEG2RAD;
             const float MAG_RATIO = 800.0f / 32767.0f;
             
-            //解析加速度数据
+            //Beschleunigungsdaten parsen
             s_ax = to_int16(&frame_data[0]) * ACCEL_RATIO;
             s_ay = to_int16(&frame_data[2]) * ACCEL_RATIO;
             s_az = to_int16(&frame_data[4]) * ACCEL_RATIO;
 
-            //解析陀螺仪数据
+            //Gyroskopdaten parsen
             s_gx = to_int16(&frame_data[6]) * GYRO_RATIO;
             s_gy = to_int16(&frame_data[8]) * GYRO_RATIO;
             s_gz = to_int16(&frame_data[10]) * GYRO_RATIO;
 
-            //解析磁力计数据
+            //Magnetometerdaten parsen
             s_mx = to_int16(&frame_data[12]) * MAG_RATIO;
             s_my = to_int16(&frame_data[14]) * MAG_RATIO;
             s_mz = to_int16(&frame_data[16]) * MAG_RATIO;
@@ -173,7 +173,7 @@ static void _parse_frame_data(uint8_t frame_function, const uint8_t *frame_data)
             s_last_rx_state = (int16_t)frame_data[1];
             break;
         default:
-            //未知帧类型，可添加错误处理
+            //Unbekannter Frametyp, Fehlerbehandlung kann ergänzt werden
             break;
     }
 }

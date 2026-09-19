@@ -508,12 +508,12 @@ mais la pince ne s'ouvre pas dans la simulation physique Gazebo. Le mode Mock et
 
 ```Bash
 SO-ARM101_ROS2/
-├── so_arm_utils/                   # Python 工具库
-├── so_arm101_description/          # URDF · 控制器 · 网格 · RViz · MuJoCo
-├── so_arm101_moveit_config/        # MoveIt 2 SRDF · 规划器 · 启动文件
-├── so_arm_gz/                      # Gazebo 仿真启动
-├── so_arm_hardware/                # 内置 SCS 串口驱动（C++）
-└── Simulation/                     # 原始 CAD URDF（参考保留）
+├── so_arm_utils/                   # Bibliothèque d'outils Python
+├── so_arm101_description/          # URDF · contrôleurs · maillages · RViz · MuJoCo
+├── so_arm101_moveit_config/        # MoveIt 2 SRDF · planificateurs · fichiers de lancement
+├── so_arm_gz/                      # Lancement de la simulation Gazebo
+├── so_arm_hardware/                # Pilote série SCS intégré (C++)
+└── Simulation/                     # URDF du CAO d'origine (conservé pour référence)
 ```
 
 <RelatedProducts slugs="so-arm101" />

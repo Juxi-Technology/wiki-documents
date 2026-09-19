@@ -37,8 +37,8 @@ Il modulo KWS (Keyword Spotting) supporta il download e il flashing di parole di
 ## Avvio rapido
 
 ```bash
-# 烧录固件(参考教程)
-# Python 串口通信示例
+# Flash del firmware (vedi il tutorial)
+# Esempio di comunicazione seriale in Python
 import serial
 ser = serial.Serial('/dev/ttyUSB0', 115200)
 while True:

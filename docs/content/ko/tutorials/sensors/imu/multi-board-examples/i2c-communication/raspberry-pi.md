@@ -59,7 +59,7 @@ MobaXterm 소프트웨어로 압축 해제한 파일을 라즈베리파이 5에 
 ```PowerShell
 cd ~/imu_ros2/src/IMU_ROS2/IMU_Library
 
-# 运行 IMU 数据打印文件
+# IMU 데이터 출력 파일 실행
 python3 -m IMU_Library.IMU_I2C_Library
 ```
 
@@ -74,17 +74,17 @@ python3 -m IMU_Library.IMU_I2C_Library
 ```PowerShell
 cd ~/IMU_Library
 
-# 运行 IMU 校准代码文件 --I2C通讯校准
-# 执行所有校准（整体、磁力计、温度）
+# IMU 보정 코드 파일 실행 --I2C 통신 보정
+# 모든 보정 실행(전체, 자력계, 온도)
 python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 1
 
-# 仅整体校准
+# 전체 보정만
 python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 1 --calibrate imu
 
-# 仅磁力计校准
+# 자력계 보정만
 python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 1 --calibrate mag
 
-# 仅温度校准
+# 온도 보정만
 python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 1 --calibrate temp
 ```
 

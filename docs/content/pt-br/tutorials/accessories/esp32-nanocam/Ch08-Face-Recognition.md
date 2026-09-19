@@ -125,27 +125,27 @@ Volta ao modo de detecção de rosto pura (apenas caixa + pontos-chave, sem reco
 ## Exemplo de fluxo de operação
 
 ```Plain
-ai_mode:4                          # 进入人脸识别模式
+ai_mode:4                          # Entrar no modo de reconhecimento facial
 [设备重启，LED 紫色]
 
-face_eril                          # 注册第一个人脸（张三）
+face_eril                          # Registrar o primeiro rosto (Zhang San)
 → ID 1 is enrolled
 
-face_eril                          # 注册第二个人脸（李四）
+face_eril                          # Registrar o segundo rosto (Li Si)
 → ID 2 is enrolled
 
-face_rz                            # 开始持续识别
+face_rz                            # Iniciar o reconhecimento contínuo
 → 张三站摄像头前: 画面持续显示 "ID: 1"
 → 李四站摄像头前: 画面持续显示 "ID: 2"
 → 陌生人站摄像头前: 画面持续显示 "who?"
 
-face_detect                        # 退出识别模式
+face_detect                        # Sair do modo de reconhecimento
 → 标签消失，只画检测框
 
-face_del                           # 删除李四 (ID 2)
+face_del                           # Excluir Li Si (ID 2)
 → 1 IDs left
 
-face_rz                            # 再次识别
+face_rz                            # Reconhecer novamente
 → 张三站摄像头前: "ID: 1"
 → 李四站摄像头前: "who?" (已被删除)
 ```
@@ -161,7 +161,7 @@ face_rz                            # 再次识别
 ```C++
 case RECOGNIZE:
 {
-    // 跳帧：每 10 次检测执行 1 次 MFN 识别
+    // Pular quadros: executar o reconhecimento MFN 1 vez a cada 10 detecções
     static int recog_skip = 0;
     if (recog_skip <= 0) {
         recognize_result = recognizer->recognize(

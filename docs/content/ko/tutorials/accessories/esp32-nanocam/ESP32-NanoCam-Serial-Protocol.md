@@ -104,11 +104,11 @@ description: "ESP32-NanoCam 시리얼 AT 프로토콜 매뉴얼: WiFi 구성, AI
 ### 얼굴 인식 작업 절차
 
 ```Plaintext
-ai_mode:4          # 进入人脸识别模式 (设备自动重启)
-face_eril          # 注册人脸 (确保只有一张脸在画面中)
-face_rz            # 开始持续识别 — 标签持续显示不消失
-face_detect        # 退出识别模式 — 标签清除
-face_del           # 删除最后注册的人脸
+ai_mode:4          # 얼굴 인식 모드 진입 (장치 자동 재부팅)
+face_eril          # 얼굴 등록 (화면에 얼굴이 하나만 있도록 보장)
+face_rz            # 지속 인식 시작 — 라벨이 계속 표시되며 사라지지 않음
+face_detect        # 인식 모드 종료 — 라벨 제거
+face_del           # 마지막으로 등록한 얼굴 삭제
 ```
 
 ### 얼굴 인식 주의 사항

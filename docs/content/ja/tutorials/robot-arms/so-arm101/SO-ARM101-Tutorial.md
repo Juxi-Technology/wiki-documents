@@ -122,12 +122,12 @@ cd ~/lerobot && pip install -e ".[feetech]"
 Jetson Jetpack 6.0+ デバイスの場合（このステップの前に[このリンクのチュートリアル](https://pytorch.org/get-started/locally/)に従って Pytorch-gpu と Torchvision をインストールしてください）:
 
 ```Plain Text
-conda install -y -c conda-forge "opencv>=4.10.0.84"  # 通过 conda 安装 OpenCV 和其他依赖，仅适用于 Jetson Jetpack 6.0+
-conda remove opencv   # 卸载 OpenCV
-pip3 install opencv-python==4.10.0.84  # 使用 pip3 安装指定版本 OpenCV
+conda install -y -c conda-forge "opencv>=4.10.0.84"  # conda で OpenCV とその他の依存関係をインストール、Jetson Jetpack 6.0+ にのみ適用
+conda remove opencv   # OpenCV をアンインストール
+pip3 install opencv-python==4.10.0.84  # pip3 で指定バージョンの OpenCV をインストール
 conda install -y -c conda-forge ffmpeg
 conda uninstall numpy
-pip3 install numpy==1.26.0  # 该版本需与 torchvision 兼容
+pip3 install numpy==1.26.0  # このバージョンは torchvision と互換性が必要
 ```
 
 #### 7. Pytorch と Torchvision の確認

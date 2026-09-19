@@ -348,14 +348,14 @@ Diagnosi e soluzione (in ordine):
 
 ```Plain Text
 ls -l /dev/video0
-sudo usermod -aG video $USER   # 加入 video 组，注销重登
+sudo usermod -aG video $USER   # Aggiungi al gruppo video, logout e nuovo login
 ```
 
 4. Usare v4l2 per verificare se la telecamera riesce effettivamente a produrre frame (se produce frame = driver corretto, il problema è la compatibilità con OpenCV):
 
 ```Bash
 v4l2-ctl --device=/dev/video0 --set-fmt-video=width=640,height=480,pixelformat=MJPG --stream-mmap --stream-count=1 --stream-to=/tmp/frame.jpg
-ls -l /tmp/frame.jpg   # 有几十~几百KB = 流通
+ls -l /tmp/frame.jpg   # Decine~centinaia di KB = flusso attivo
 ```
 
 ### 9.7 Il numero di porta cambia ogni volta

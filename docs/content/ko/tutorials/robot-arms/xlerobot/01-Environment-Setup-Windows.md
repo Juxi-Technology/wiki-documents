@@ -24,29 +24,29 @@ https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
 ## conda 소스 변경
 
 ```Shell
-# 先清空原有源配置（避免冲突）
+# 먼저 기존 소스 설정 비우기 (충돌 방지)
 conda config --remove-key channels
 
-# 将 conda 的默认源和常用第三方源替换为清华镜像
-# 添加默认包源（main/r/msys2）
+# conda의 기본 소스와 자주 쓰는 서드파티 소스를 칭화 미러로 교체
+# 기본 패키지 소스 추가 (main/r/msys2)
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2/
 
-# 添加常用第三方源
+# 자주 쓰는 서드파티 소스 추가
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/menpo/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
 
-# 开启显示下载源，安装包时会显示具体的下载地址
+# 다운로드 소스 표시를 켜서, 패키지 설치 시 구체적인 다운로드 주소 표시
 conda config --set show_channel_urls yes
 
-# 清除索引缓存，使新源生效
+# 인덱스 캐시를 지워 새 소스 적용
 conda clean -i
 
-# 查看当前配置（验证源是否添加成功）
+# 현재 설정 확인 (소스가 성공적으로 추가되었는지 검증)
 conda config --show-sources
 ```
 

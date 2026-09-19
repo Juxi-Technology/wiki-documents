@@ -58,26 +58,26 @@ USB-TTL 변환 모듈을 사용하는 경우:
 ### 의존성 패키지 설치
 
 ```Bash
-# 更新软件包
+# 소프트웨어 패키지 업데이트
 sudo apt update
 sudo apt upgrade -y
 
-# 安装 Python 库
+# Python 라이브러리 설치
 sudo apt install -y python3-pip
 
-# 安装 pyserial
+# pyserial 설치
 pip3 install pyserial
 ```
 
 ### 시리얼 포트 인터페이스 활성화
 
 ```Bash
-# 打开配置工具
+# 설정 도구 열기
 sudo raspi-config
 
-# 选择 Interface Options → Serial
+# Interface Options → Serial 선택
 Select: No (shell) → Yes (hardware serial port)
-# 重启生效
+# 재부팅 후 적용
 sudo reboot
 ```
 
@@ -90,7 +90,7 @@ sudo reboot
 ```Bash
 cd UART_Voice
 ls -la
-# 应该看到 uart_voice.py
+# uart_voice.py가 보여야 함
 ```
 
 ### 시리얼 포트 장치 설정
@@ -98,13 +98,13 @@ ls -la
 `uart_voice.py` 파일을 편집하여 시리얼 포트 장치를 수정합니다:
 
 ```Bash
-# UART 直连（默认）
+# UART 직접 연결(기본)
 SERIAL_PORT = '/dev/ttyAMA0'
 
-# 或者使用 USB-TTL
+# 또는 USB-TTL 사용
 SERIAL_PORT = '/dev/ttyUSB0'
 
-# 波特率
+# 보드레이트
 BAUD_RATE = 115200
 ```
 
@@ -114,7 +114,7 @@ BAUD_RATE = 115200
 
 ```Bash
 chmod +x uart_voice.py
-# 运行（需要 sudo 权限访问串口）
+# 실행(sudo 권한으로 시리얼 포트 접근 필요)
 sudo python3 uart_voice.py
 ```
 
@@ -160,7 +160,7 @@ ID:10
 4. 시리얼 포트가 다른 프로그램에 의해 점유되고 있지 않은지 확인
 
 ```Bash
-# 查看可用串口
+# 사용 가능한 시리얼 포트 확인
 ls /dev/tty* | grep tty
 ```
 
@@ -203,7 +203,7 @@ ls /dev/tty* | grep tty
 4. 시리얼 포트가 다른 프로세스에 의해 점유되고 있지 않은지
 
 ```Bash
-# 检查串口占用
+# 시리얼 포트 점유 확인
 sudo lsof /dev/ttyAMA0
 ```
 
@@ -222,8 +222,8 @@ sudo lsof /dev/ttyAMA0
 ## 자주 사용하는 디버깅 명령
 
 ```Bash
-ls -l /dev/ttyAMA0   # 查看串口设备
-groups                # 查看用户组权限
+ls -l /dev/ttyAMA0   # 시리얼 포트 장치 확인
+groups                # 사용자 그룹 권한 확인
 ```
 
 <RelatedProducts slugs="ai-voice-module" />

@@ -16,18 +16,18 @@ description: "AI 음성 인터랙션 모듈 ROS2 음성 인터랙션 — Ubuntu 
 #### 의존성 라이브러리 설치
 
 ```Bash
-# 1. 更新源
+# 1. 소스 업데이트
 sudo apt update
 
-# 2. 安装 ROS2 基础包
-# (如果已安装ROS2，跳过)
+# 2. ROS2 기본 패키지 설치
+# (ROS2가 이미 설치되어 있으면 건너뜀)
 sudo apt install ros-humble-desktop -y
 
-# 3. 安装本项目依赖（同时支持串口和I2C）
+# 3. 본 프로젝트 의존성 설치(시리얼과 I2C 동시 지원)
 sudo apt install python3-pip ros-humble-rviz2 ros-humble-visualization-msgs -y
 pip3 install pyserial smbus2
 
-# 4. 如果使用 I2C 接线，额外安装
+# 4. I2C 배선을 사용하는 경우 추가 설치
 sudo apt install python3-smbus2 i2c-tools -y
 ```
 
@@ -96,14 +96,14 @@ ros2 pkg create --build-type ament_python juxi_voice --license MIT
 └── src/
     └── juxi_voice/
         ├── package.xml
-        ├── setup.py           # (替换为本项目提供的)
-        ├── juxi_voice.rviz    # (新建：RViz预配置文件)
+        ├── setup.py           # (본 프로젝트에서 제공하는 파일로 교체)
+        ├── juxi_voice.rviz    # (신규 생성: RViz 사전 설정 파일)
         ├── resource/
         │   └── juxi_voice
         └── juxi_voice/
             ├── __init__.py
-            ├── voice_node.py    # (新建：语音节点)
-            └── rviz_control.py  # (新建：RViz控制节点)
+            ├── voice_node.py    # (신규 생성: 음성 노드)
+            └── rviz_control.py  # (신규 생성: RViz 제어 노드)
 ```
 
 ---
@@ -125,7 +125,7 @@ ros2 pkg create --build-type ament_python juxi_voice --license MIT
 **핵심 아키텍처**:
 
 ```Bash
-# 统一命令数据: ID → (串口字节2, 串口字节3, 命令文本, 播报模式)
+# 통합 명령 데이터: ID → (시리얼 바이트2, 시리얼 바이트3, 명령 텍스트, 재생 모드)
 CMD_DATA = {
     1:  (0x01, 0x00, "欢迎语", "被"),
     3:  (0x03, 0x00, "你好小犀", "主"),
@@ -134,10 +134,10 @@ CMD_DATA = {
     ...
 }
 
-# 自动检测函数
+# 자동 감지 함수
 def detect_connection(logger):
-    # 1. 尝试 I2C
-    # 2. 尝试串口 /dev/ttyUSB0, /dev/ttyACM0, /dev/ttyAMA0, /dev/ttyS0
+    # 1. I2C 시도
+    # 2. 시리얼 포트 /dev/ttyUSB0, /dev/ttyACM0, /dev/ttyAMA0, /dev/ttyS0 시도
     ...
 ```
 
@@ -179,20 +179,20 @@ colcon build --symlink-install
 
 ```Bash
 source ~/juxi_speech_ws/install/setup.bash
-# 或写入 ~/.bashrc
+# 또는 ~/.bashrc에 추가
 echo "source ~/juxi_speech_ws/install/setup.bash" >> ~/.bashrc
 ```
 
 #### 권한 설정
 
 ```Bash
-# I2C 权限
+# I2C 권한
 sudo chmod 666 /dev/i2c-1
-# 串口权限
+# 시리얼 포트 권한
 sudo chmod 666 /dev/ttyUSB0
 sudo chmod 666 /dev/ttyACM0
 sudo chmod 666 /dev/ttyAMA0
-# 或加入用户组
+# 또는 사용자 그룹에 추가
 sudo usermod -aG dialout $USER
 sudo usermod -aG i2c $USER
 ```
@@ -239,7 +239,7 @@ rviz2 -d ~/juxi_speech_ws/src/juxi_voice/juxi_voice.rviz
 
 ```Bash
 rviz2
-# 菜单栏: File → Open Config → 选择 juxi_voice.rviz
+# 메뉴 바: File → Open Config → juxi_voice.rviz 선택
 ```
 
 ---
@@ -279,11 +279,11 @@ rviz2
 #### 호스트에서 재생 트리거
 
 ```Bash
-# 被动播报
+# 수동 재생
 ros2 topic pub /juxi_passive_play std_msgs/msg/String "data: '这是红色'"
-# 功能词播报
+# 기능어 재생
 ros2 topic pub /juxi_func_play std_msgs/msg/String "data: '欢迎语'"
-# 命令词播报
+# 명령어 재생
 ros2 topic pub /juxi_cmd_play std_msgs/msg/String "data: '小车前进'"
 ```
 
@@ -310,21 +310,21 @@ ros2 topic pub /juxi_cmd_play std_msgs/msg/String "data: '小车前进'"
 배선 방식에 해당하는 장치 파일이 존재하는지 확인합니다:
 
 ```Bash
-# I2C 接线
+# I2C 배선
 ls /dev/i2c-1
-sudo i2cdetect -y 1   # 应看到 0x2A
+sudo i2cdetect -y 1   # 0x2A가 보여야 함
 
-# Type-C 接线
+# Type-C 배선
 ls /dev/ttyUSB0 /dev/ttyACM0
 
-# UART 接线
+# UART 배선
 ls /dev/ttyAMA0 /dev/ttyS0
 ```
 
 **시리얼 포트 권한 오류**
 
 ```Bash
-sudo chmod 666 /dev/ttyUSB0   # 或 /dev/ttyACM0 等
+sudo chmod 666 /dev/ttyUSB0   # 또는 /dev/ttyACM0 등
 ```
 
 **I2C 권한 오류**

@@ -82,14 +82,14 @@ GUI には**ジェスチャートラッキング**パネルが内蔵されてい
 python serial_test.py COM3 nop
 
 # ジェスチャー
-python serial_test.py COM3 rock         # 石头
-python serial_test.py COM3 thumbs_up    # 真棒
-python serial_test.py COM3 index        # 指向
-python serial_test.py COM3 open         # 张开
+python serial_test.py COM3 rock         # グー
+python serial_test.py COM3 thumbs_up    # サムズアップ
+python serial_test.py COM3 index        # 指差し
+python serial_test.py COM3 open         # 開く
 python serial_test.py COM3 close        # 握拳
 
 # 単一サーボのダイレクトドライブ
-python serial_test.py COM3 servo 1 90   # 舵机1 → 90°
+python serial_test.py COM3 servo 1 90   # サーボ1 → 90°
 
 # すべて中央に戻す
 python serial_test.py COM3 mid
@@ -99,8 +99,8 @@ python serial_test.py COM3 hand L
 python serial_test.py COM3 hand R
 
 # スイープ/セルフチェック
-python serial_test.py COM3 sweep 1      # 舵机1 扫频
-python serial_test.py COM3 test         # 全部舵机逐个测试
+python serial_test.py COM3 sweep 1      # サーボ1 スイープ
+python serial_test.py COM3 test         # すべてのサーボを順番にテスト
 ```
 
 ## 五、よくある質問

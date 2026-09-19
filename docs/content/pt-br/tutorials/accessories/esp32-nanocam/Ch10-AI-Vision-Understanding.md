@@ -98,9 +98,9 @@ mcp.AddTool("self.camera.inspect_image",
 
 ```C++
 std::string Esp32Camera::Explain(const std::string &question) {
-    // explain_url_ 由服务端在 MCP 握手时通过 capabilities.vision.url 下发
-    // 抓帧 → JPEG 压缩 → HTTP POST 到多模态 API
-    // 返回 LLM 分析结果
+    // explain_url_ é enviado pelo servidor durante o handshake MCP via capabilities.vision.url
+    // Capturar quadro → compressão JPEG → HTTP POST para a API multimodal
+    // Retornar o resultado da análise do LLM
 }
 ```
 

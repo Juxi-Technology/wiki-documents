@@ -33,8 +33,8 @@ L'unité pan-tilt servo 2 DDL embarque des servos bus série SCS0009 de haute pr
 
 ## Démarrage rapide
 ```bash
-# USB 连接主控,摄像头即插即用
-# Python SDK 控制云台
+# USB relié à la carte principale, caméra plug-and-play
+# SDK Python pour contrôler le gimbal
 from sc_servo import SCServo, Gimbal
 servo = SCServo("COM3")  # Linux: /dev/ttyUSB0
 servo.connect()

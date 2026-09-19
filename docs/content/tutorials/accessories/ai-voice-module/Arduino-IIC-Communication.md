@@ -9,10 +9,10 @@ description: "Arduino IIC communication with the AI Voice Interaction Module: wi
 
 ```Plain Text
 IIC_Voice/
-├── IIC_Voice.ino    # 主程序
-├── bsp_iic.hpp         # 头文件（地址和函数声明）
-├── bsp_iic.cpp         # 实现文件
-└── README.md            # 本教程
+├── IIC_Voice.ino    # Main program
+├── bsp_iic.hpp         # Header file (addresses and function declarations)
+├── bsp_iic.cpp         # Implementation file
+└── README.md            # This tutorial
 ```
 
 ---
@@ -189,7 +189,7 @@ void setup() {
 
   Serial.println("IIC Voice Module Initialized");
 
-  IIC_SetCommandVoice(0x00);  // 上电播报命令词语音
+  IIC_SetCommandVoice(0x00);  // Play the command word voice on power-up
   delay(200);
 }
 
@@ -197,21 +197,21 @@ void loop() {
   int commandId = IIC_ReadCommand();
 
   if (commandId >= 0) {
-    // 过滤无效值，防止重复输出
+    // Filter out invalid values to prevent duplicate output
     if (commandId != 0 && commandId != 255 && commandId != lastCommandId) {
       Serial.print("ID: ");
       Serial.println(commandId);
       lastCommandId = commandId;
 
-      // 示例：根据识别到的命令控制播报
+      // Example: control the playback based on the recognized command
       if (commandId == 1) {
-        IIC_SetCommandVoice(0x00);  // 识别到命令1，播报命令词语音
+        IIC_SetCommandVoice(0x00);  // Command 1 recognized, play command word voice
       } else if (commandId == 2) {
-        IIC_SetCommandVoice(0x00);  // 识别到命令2，播报命令词语音
+        IIC_SetCommandVoice(0x00);  // Command 2 recognized, play command word voice
       }
     } else if (commandId == 0 || commandId == 255) {
       if (lastCommandId != 0) {
-        lastCommandId = 0;  // 重置状态
+        lastCommandId = 0;  // Reset state
       }
     }
   } else {
@@ -303,11 +303,11 @@ Changes to I2C-related code are made only in `bsp_iic.cpp`; change once, effecti
 
 ```Plain Text
 if (commandId == 1) {
-  IIC_SetCommandVoice(0x00);      // 播报命令词
+  IIC_SetCommandVoice(0x00);      // Play command word
 } else if (commandId == 2) {
-  IIC_SetFunctionVoice(0x00);     // 播报功能词
+  IIC_SetFunctionVoice(0x00);     // Play function word
 } else if (commandId == 3) {
-  IIC_SetPassiveVoice(0x00);      // 播报被动语
+  IIC_SetPassiveVoice(0x00);      // Play passive phrase
 }
 ```
 
@@ -315,8 +315,8 @@ if (commandId == 1) {
 
 ```Plain Text
 if (commandId == 10) {
-  digitalWrite(LED_PIN, LOW);    // 关灯
-  IIC_SetCommandVoice(0x00);     // 播报确认
+  digitalWrite(LED_PIN, LOW);    // Turn off the light
+  IIC_SetCommandVoice(0x00);     // Play confirmation voice
 }
 ```
 
@@ -325,7 +325,7 @@ if (commandId == 10) {
 ```Plain Text
 if (commandId == 11) {
   motor_stop();
-  IIC_SetCommandVoice(0x00);     // 播报确认
+  IIC_SetCommandVoice(0x00);     // Play confirmation voice
 }
 ```
 

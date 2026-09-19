@@ -508,12 +508,12 @@ but the gripper will not open in the Gazebo physics simulation. Mock mode and re
 
 ```Bash
 SO-ARM101_ROS2/
-├── so_arm_utils/                   # Python 工具库
-├── so_arm101_description/          # URDF · 控制器 · 网格 · RViz · MuJoCo
-├── so_arm101_moveit_config/        # MoveIt 2 SRDF · 规划器 · 启动文件
-├── so_arm_gz/                      # Gazebo 仿真启动
-├── so_arm_hardware/                # 内置 SCS 串口驱动（C++）
-└── Simulation/                     # 原始 CAD URDF（参考保留）
+├── so_arm_utils/                   # Python utility library
+├── so_arm101_description/          # URDF · controllers · meshes · RViz · MuJoCo
+├── so_arm101_moveit_config/        # MoveIt 2 SRDF · planners · launch files
+├── so_arm_gz/                      # Gazebo simulation launch
+├── so_arm_hardware/                # Built-in SCS serial driver (C++)
+└── Simulation/                     # Original CAD URDF (kept for reference)
 ```
 
 <RelatedProducts slugs="so-arm101" />

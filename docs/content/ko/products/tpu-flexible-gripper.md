@@ -49,7 +49,7 @@ keywords: [gripper, 그리퍼, tpu, 플렉서블, so-arm101, 파지]
 암 장착 카메라와 LeRobot 프레임워크를 함께 사용:
 
 ```bash
-# 录制视觉抓取数据
+# 비전 파지 데이터 기록
 lerobot-record \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \

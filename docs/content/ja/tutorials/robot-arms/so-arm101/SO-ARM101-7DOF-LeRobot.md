@@ -81,8 +81,8 @@ cp src/lerobot/teleoperators/so_leader/so_leader.py       <官方clone>/src/lero
 
 ```python
 "wrist_flex": Motor(4, "sts3215", norm_mode_body),
-"wrist_yaw": Motor(5, "sts3215", norm_mode_body),   # 新增舵机,左右旋转
-"wrist_roll": Motor(6, "sts3215", norm_mode_body),  # 原 5 号滚动电机,ID 5→6
+"wrist_yaw": Motor(5, "sts3215", norm_mode_body),   # サーボを追加、左右回転
+"wrist_roll": Motor(6, "sts3215", norm_mode_body),  # 元の 5 番のロールモーター、ID 5→6
 "gripper": Motor(7, "sts3215", MotorNormMode.RANGE_0_100),
 ```
 

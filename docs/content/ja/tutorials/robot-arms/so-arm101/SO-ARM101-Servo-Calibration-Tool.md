@@ -128,7 +128,7 @@ sudo apt install python3-venv fonts-noto-cjk fonts-noto-color-emoji
 
 ```bash
 sudo usermod -a -G dialout $USER
-# 注销并重新登录后生效
+# ログアウトして再ログインすると有効になる
 ```
 
 確認(出力に `dialout` が含まれている必要があります):
@@ -162,14 +162,14 @@ ls /dev/ttyUSB* /dev/ttyACM* 2>/dev/null
 
 ```
 /dev/ttyUSB0   # CH340 / CP2102 / PL2303
-/dev/ttyACM0   # 原生 USB 串口（Arduino / ESP32 板载）
+/dev/ttyACM0   # ネイティブ USB シリアル（Arduino / ESP32 オンボード）
 ```
 
 詳細な製造元情報を確認:
 
 ```bash
 dmesg | tail -20 | grep -i tty
-# 或
+# または
 lsusb
 ```
 
@@ -196,10 +196,10 @@ SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", SYMLINK+="t
 1. Homebrew で Python をインストールします(システム標準の Python が古いバージョンであることを避けるため):
 
 ```bash
-# 安装 Homebrew（如果没有）
+# Homebrew をインストール（未導入の場合）
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# 安装 Python
+# Python をインストール
 brew install python
 ```
 
@@ -237,7 +237,7 @@ ls /dev/cu.*
 
 ```
 /dev/cu.usbserial-0001      # CP2102 / FTDI
-/dev/cu.usbmodem141101      # 板载 USB 串口（Arduino / ESP32）
+/dev/cu.usbmodem141101      # オンボード USB シリアル（Arduino / ESP32）
 /dev/cu.wchusbserial1420    # CH340
 ```
 
@@ -342,10 +342,10 @@ FT デバッガーページの「xdat パラメータ(EEPROM のみ保存)」エ
 ### 11. LeRobot キャリブレーション(コマンドライン)
 
 ```bash
-# 校准从动臂（保存到 ~/.cache/huggingface/lerobot/calibration/robots/so_follower/）
+# フォロワーアームをキャリブレーション（~/.cache/huggingface/lerobot/calibration/robots/so_follower/ に保存）
 python -m src.tools.lerobot_calibrate --arm-type follower
 
-# 校准领导臂
+# リーダーアームをキャリブレーション
 python -m src.tools.lerobot_calibrate --arm-type leader
 ```
 
@@ -364,28 +364,28 @@ LeRobot 環境のインストールとデータ収集の流れは [LeRobot ロ�
 グラフィカルインターフェースのほか、以下のコマンドラインエントリも提供されています(GUI 不要):
 
 ```bash
-# 扫描舵机
+# サーボをスキャン
 python -m src.tools.scan_id
 
-# 舵机快速中位校准
+# サーボのクイック中位キャリブレーション
 python -m src.tools.servo_quick_calibration
 
-# 舵机中位测试
+# サーボ中位テスト
 python -m src.tools.servo_center_test
 
-# 失能全部舵机
+# 全サーボのトルクをオフ
 python -m src.tools.servo_disable
 
-# LeRobot 风格校准
+# LeRobot 形式のキャリブレーション
 python -m src.tools.lerobot_calibrate
 
-# LeRobot 风格校准（指定串口）
+# LeRobot 形式のキャリブレーション（シリアルポート指定）
 python -m src.tools.lerobot_calibrate /dev/ttyACM0
 
-# LeRobot 风格校准（指定串口，macOS）
+# LeRobot 形式のキャリブレーション（シリアルポート指定、macOS）
 python -m src.tools.lerobot_calibrate /dev/cu.usbserial-0001
 
-# 双端口同步遥控
+# 2 ポート同期遠隔操作
 python -m src.tools.servo_remote_control
 ```
 
@@ -431,25 +431,25 @@ python -m src.tools.servo_remote_control
 
 ```
 Juxi_ServoController/
-├── docs/                    # 分系统教程
+├── docs/                    # OS 別チュートリアル
 │   ├── Windows教程.md
 │   ├── Linux教程.md
 │   └── macOS教程.md
 ├── src/
-│   ├── gui/                  # PySide6 图形界面
-│   │   ├── factory_calibration_tool.py   # 主工具（双串口标定 + 遥控 + 语言切换）
-│   │   ├── ft_debugger.py                # FT 调试器（参数读写 / xdat 备份）
-│   │   ├── calibration_wizard.py         # LeRobot 校准向导
-│   │   ├── theme_utils.py                # 浅色主题
-│   │   └── language_dialog.py            # 语言选择对话框
-│   ├── tools/                # 命令行工具
-│   ├── xdat_utils.py         # xdat 参数文件读写
-│   ├── i18n*.py / i18n_translations/     # 中英文国际化
-│   ├── port_utils.py         # 串口检测
+│   ├── gui/                  # PySide6 グラフィカルインターフェース
+│   │   ├── factory_calibration_tool.py   # メインツール（2 ポートキャリブレーション + 遠隔操作 + 言語切替）
+│   │   ├── ft_debugger.py                # FT デバッガー（パラメータの読み書き / xdat バックアップ）
+│   │   ├── calibration_wizard.py         # LeRobot キャリブレーションウィザード
+│   │   ├── theme_utils.py                # ライトテーマ
+│   │   └── language_dialog.py            # 言語選択ダイアログ
+│   ├── tools/                # コマンドラインツール
+│   ├── xdat_utils.py         # xdat パラメータファイルの読み書き
+│   ├── i18n*.py / i18n_translations/     # 中国語/英語の国際化
+│   ├── port_utils.py         # シリアルポート検出
 │   └── calibration_manager.py# LeRobot 校准文件管理
-├── scservo_sdk/              # FTServo 舵机通信 SDK
+├── scservo_sdk/              # FTServo サーボ通信 SDK
 ├── requirements.txt
-└── setup.py                  # 环境检查脚本
+└── setup.py                  # 環境チェックスクリプト
 ```
 
 本ツールのリポジトリは `src/gui`(PySide6 グラフィカルインターフェース)、`src/tools`(コマンドラインツール)、`scservo_sdk`(FTServo サーボ通信 SDK)、`setup.py`(環境チェックスクリプト)などのモジュールで構成されています。

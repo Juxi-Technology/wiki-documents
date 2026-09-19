@@ -59,7 +59,7 @@ Die entpackten Dateien per MobaXterm auf Jetson Orin NX ziehen.
 ```PowerShell
 cd ~/imu_ros2/src/IMU_ROS2/IMU_Library
 
-# 运行 IMU 数据打印文件
+# IMU-Datenausgabedatei ausführen
 python3 -m IMU_Library.IMU_I2C_Library
 ```
 
@@ -74,17 +74,17 @@ Hinweis: Oben werden die Daten eines 10-Achsen-IMU gelesen; 6-Achsen haben keine
 ```PowerShell
 cd ~/IMU_Library
 
-# 运行 IMU 校准代码文件 --I2C通讯校准
-# 执行所有校准（整体、磁力计、温度）
+# IMU-Kalibrierungscode ausführen -- I2C
+# Alle Kalibrierungen ausführen (Gesamt, Magnetometer, Temperatur)
 python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 7
 
-# 仅整体校准
+# Nur Gesamtkalibrierung
 python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 7 --calibrate imu
 
-# 仅磁力计校准
+# Nur Magnetometer
 python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 7 --calibrate mag
 
-# 仅温度校准
+# Nur Temperatur
 python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 7 --calibrate temp
 ```
 

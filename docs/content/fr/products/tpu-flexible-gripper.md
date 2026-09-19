@@ -49,7 +49,7 @@ Cette pince flexible TPU SO-ARM101 est conçue pour le bras XLerobot et accepte 
 Avec caméra bras et LeRobot :
 
 ```bash
-# 录制视觉抓取数据
+# Enregistrer des données de saisie avec vision
 lerobot-record \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \

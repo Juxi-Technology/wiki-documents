@@ -57,13 +57,13 @@ import pyrealsense2 as rs
 import numpy as np
 import cv2
 
-# 创建管道
+# パイプラインを作成
 pipeline = rs.pipeline()
 config = rs.config()
 config.enable_stream(rs.stream.depth, 640, 480, rs.format.z16, 30)
 config.enable_stream(rs.stream.color, 640, 480, rs.format.bgr8, 30)
 
-# 开始
+# 開始
 pipeline.start(config)
 
 try:
@@ -76,7 +76,7 @@ try:
         depth_image = np.asanyarray(depth.get_data())
         color_image = np.asanyarray(color.get_data())
         cv2.imshow('Color', color_image)
-        cv2.imshow('Depth', depth_image * 80)  # 深度可视化
+        cv2.imshow('Depth', depth_image * 80)  # 深度可視化
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 finally:
@@ -87,10 +87,10 @@ finally:
 
 SO-ARM101 / XLeRobot プロジェクトでの使用:
 ```bash
-# 查找相机 ID
+# カメラ ID を検索
 python -m lerobot.find_cameras realsense
 
-# 遥操作时启用 RealSense
+# 遠隔操作時に RealSense を有効化
 lerobot-teleoperate \
   --robot.cameras='{ front: {type: realsense} }' \
   ...

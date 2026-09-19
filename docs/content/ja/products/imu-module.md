@@ -37,11 +37,11 @@ keywords: [imu, 慣性航法, 姿勢センサー, ahrs, ros]
 
 ## クイックスタート
 ```bash
-# ROS2 启动
+# ROS2 起動
 ros2 launch icm42670p imu_launch.py
 ros2 topic echo /imu/data
 
-# 校准(首次使用)
+# 校正(初回使用時)
 python3 imu_calibration_tool.py --mode serial --port /dev/ttyUSB0
 ```
 ## 関連チュートリアル

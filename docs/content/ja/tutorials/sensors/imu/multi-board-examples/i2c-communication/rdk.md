@@ -59,7 +59,7 @@ MobaXtermソフトで解凍したファイルを RDK X5 にドラッグします
 ```PowerShell
 cd ~/imu_ros2/src/IMU_ROS2/IMU_Library
 
-# 运行 IMU 数据打印文件
+# IMU シリアルデータ出力ファイルを実行
 python3 -m IMU_Library.IMU_I2C_Library
 ```
 
@@ -74,17 +74,17 @@ python3 -m IMU_Library.IMU_I2C_Library
 ```PowerShell
 cd ~/IMU_Library
 
-# 运行 IMU 校准代码文件 --I2C通讯校准
-# 执行所有校准（整体、磁力计、温度）
+# IMU 校正コードファイルを実行 --I2C 通信校正
+# すべての校正を実行（全体、磁力計、温度）
 python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 0
 
-# 仅整体校准
+# 全体校正のみ
 python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 0 --calibrate imu
 
-# 仅磁力计校准
+# 磁力計校正のみ
 python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 0 --calibrate mag
 
-# 仅温度校准
+# 温度校正のみ
 python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 0 --calibrate temp
 ```
 

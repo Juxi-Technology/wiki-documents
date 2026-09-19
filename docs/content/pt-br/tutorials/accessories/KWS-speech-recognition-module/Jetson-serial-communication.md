@@ -38,11 +38,11 @@ class SpeechModule:
     封装了与语音模块的交互逻辑
     """
     
-    # 串口配置常量
+    # Constantes de configuração da porta serial
     DEFAULT_PORT = "/dev/ttyUSB0"
     DEFAULT_BAUDRATE = 115200
     
-    # 命令字定义 (播报词/功能ID)
+    # Definição das palavras de comando (voz de reprodução / ID de função)
     CMD_THIS_RED = 0x60
     CMD_THIS_GREEN = 0x61
     CMD_THIS_YELLOW = 0x62
@@ -77,12 +77,12 @@ class SpeechModule:
         if not self._serial_conn or not self._serial_conn.is_open:
             return
 
-        # 构造完整的数据帧
+        # Construir o quadro de dados completo
         frame = bytes([0xAA, 0x55, 0xFF, int(cmd_id), 0xFB])
         
         self._serial_conn.write(frame)
         time.sleep(0.005)
-        self._serial_conn.reset_input_buffer()  # 等同于 flushInput
+        self._serial_conn.reset_input_buffer()  # Equivalente a flushInput
 
     def read_response(self) -> Optional[int]:
         """
@@ -92,7 +92,7 @@ class SpeechModule:
         if not self._serial_conn or not self._serial_conn.is_open:
             return None
 
-        # 检查缓冲区数据量
+        # Verificar a quantidade de dados no buffer
         bytes_available = self._serial_conn.in_waiting
         if bytes_available <= 0:
             return None
@@ -100,13 +100,13 @@ class SpeechModule:
         raw_data = self._serial_conn.read(bytes_available)
         hex_str = raw_data.hex()
 
-        # 校验帧头 'aa55'
+        # Verificar o cabeçalho do quadro 'aa55'
         if hex_str.startswith('aa55'):
             try:
-                # 简单的索引提取逻辑 (与原代码逻辑保持一致)
-                # 注意：此处假设数据长度足够，实际工业代码建议加长度校验
-                # byte1 = hex_str[4:6] # 保留原逻辑中的第5字节但不使用
-                byte2 = hex_str[6:8] # 提取第6字节
+                # Lógica simples de extração por índice (consistente com a lógica do código original)
+                # Atenção: aqui se assume que o comprimento dos dados é suficiente; em código industrial real, recomenda-se adicionar validação de comprimento
+                # byte1 = hex_str[4:6] # mantém o 5º byte da lógica original, mas não o utiliza
+                byte2 = hex_str[6:8] # Extrair o 6º byte
                 
                 read_id = int(byte2, 16)
                 
@@ -124,7 +124,7 @@ class SpeechModule:
         if not self.connect():
             return
 
-        # 初始化模块
+        # Inicializar o módulo
         self.send_command(self.CMD_INIT)
         time.sleep(0.005)
 

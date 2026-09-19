@@ -50,29 +50,29 @@ Dieses Repository stellt Python-Beispielcode für die Kommunikation zwischen der
 ### Abhängigkeitspakete installieren
 
 ```Bash
-# 更新软件包
+# Softwarepakete aktualisieren
 sudo apt update
 sudo apt upgrade -y
 
-# 安装 Python 库
+# Python-Bibliothek installieren
 sudo apt install -y python3-pip python3-smbus i2c-tools
 ```
 
 ### I2C-Schnittstelle aktivieren
 
 ```Bash
-# 打开配置工具
+# Konfigurationstool öffnen
 sudo raspi-config
 
-# 选择 Interface Options → I2C → Enable
-# 重启生效
+# Interface Options → I2C → Enable auswählen
+# Nach Neustart wirksam
 sudo reboot
 ```
 
 ### Hardwareschnittstelle testen
 
 ```Bash
-# 测试 I2C 设备
+# I2C-Gerät testen
 sudo i2cdetect -y 5
 ```
 
@@ -85,7 +85,7 @@ sudo i2cdetect -y 5
 ```Bash
 cd IIC_Voice
 ls -la
-# 应该看到 iic_voice.py
+# iic_voice.py sollte angezeigt werden
 ```
 
 ### I2C-Bus konfigurieren
@@ -93,23 +93,23 @@ ls -la
 Bearbeiten Sie die Datei `iic_voice.py` und ändern Sie die erforderlichen Parameter:
 
 ```Bash
-# I2C 设备地址
+# I2C-Geräteadresse
 DEVICE_ADDRESS = 0x2A
 
-# 寄存器地址
+# Registeradresse
 REG_RESULT = 0xDA
 
-# I2C 总线编号（根据实际连接修改）
-bus = smbus.SMBus(5)  # I2C 总线 5
+# I2C-Busnummer (je nach tatsächlicher Verbindung anpassen)
+bus = smbus.SMBus(5)  # I2C-Bus 5
 ```
 
 ### Programm ausführen
 
 ```Bash
-# 赋予执行权限
+# Ausführungsrechte vergeben
 chmod +x iic_voice.py
 
-# 运行（需要 sudo 权限访问 I2C）
+# Ausführen (sudo-Rechte für den I2C-Zugriff erforderlich)
 sudo python3 iic_voice.py
 ```
 
@@ -148,7 +148,7 @@ Program terminated
 
 ```Bash
 sudo usermod -aG i2c $USER
-# 重新登录生效
+# Wirkt nach erneutem Anmelden
 ```
 
 Oder führen Sie das Programm mit `sudo` aus
@@ -168,9 +168,9 @@ Oder führen Sie das Programm mit `sudo` aus
 4. Prüfen Sie, ob das Gerät mit Strom versorgt ist
 
 ```Bash
-# 扫描 I2C 设备
+# I2C-Geräte scannen
 sudo i2cdetect -y 5
-# 如果看到 0x2A，说明设备连接正常
+# Wenn 0x2A erscheint, ist das Gerät korrekt verbunden
 ```
 
 ---
@@ -214,8 +214,8 @@ Bei Problemen prüfen Sie bitte:
 ## Häufig verwendete Debug-Befehle
 
 ```Bash
-ls -l /dev/i2c*      # 查看 I2C 设备
-groups                # 查看用户组权限
+ls -l /dev/i2c*      # I2C-Geräte anzeigen
+groups                # Benutzergruppen-Berechtigungen anzeigen
 ```
 
 <RelatedProducts slugs="ai-voice-module" />

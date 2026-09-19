@@ -104,11 +104,11 @@ description: "ESP32-NanoCam Handbuch zum seriellen AT-Protokoll: vollständige B
 ### Ablauf der Gesichtserkennung
 
 ```Plaintext
-ai_mode:4          # 进入人脸识别模式 (设备自动重启)
-face_eril          # 注册人脸 (确保只有一张脸在画面中)
-face_rz            # 开始持续识别 — 标签持续显示不消失
-face_detect        # 退出识别模式 — 标签清除
-face_del           # 删除最后注册的人脸
+ai_mode:4          # Gesichtserkennungsmodus betreten (Gerät startet automatisch neu)
+face_eril          # Gesicht registrieren (sicherstellen, dass nur ein Gesicht im Bild ist)
+face_rz            # Kontinuierliche Erkennung starten — das Label bleibt sichtbar und verschwindet nicht
+face_detect        # Erkennungsmodus verlassen — Label wird gelöscht
+face_del           # Zuletzt registriertes Gesicht löschen
 ```
 
 ### Hinweise zur Gesichtserkennung

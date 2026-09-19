@@ -58,26 +58,26 @@ Bei Verwendung eines USB-TTL-Adaptermoduls:
 ### Abhängigkeitspakete installieren
 
 ```Bash
-# 更新软件包
+# Softwarepakete aktualisieren
 sudo apt update
 sudo apt upgrade -y
 
-# 安装 Python 库
+# Python-Bibliothek installieren
 sudo apt install -y python3-pip
 
-# 安装 pyserial
+# pyserial installieren
 pip3 install pyserial
 ```
 
 ### Serielle Schnittstelle aktivieren
 
 ```Bash
-# 打开配置工具
+# Konfigurationstool öffnen
 sudo raspi-config
 
-# 选择 Interface Options → Serial
+# Interface Options → Serial auswählen
 Select: No (shell) → Yes (hardware serial port)
-# 重启生效
+# Nach Neustart wirksam
 sudo reboot
 ```
 
@@ -90,7 +90,7 @@ sudo reboot
 ```Bash
 cd UART_Voice
 ls -la
-# 应该看到 uart_voice.py
+# uart_voice.py sollte angezeigt werden
 ```
 
 ### Serielles Gerät konfigurieren
@@ -98,13 +98,13 @@ ls -la
 Bearbeiten Sie die Datei `uart_voice.py` und ändern Sie das serielle Gerät:
 
 ```Bash
-# UART 直连（默认）
+# UART-Direktverbindung (Standard)
 SERIAL_PORT = '/dev/ttyAMA0'
 
-# 或者使用 USB-TTL
+# Oder USB-TTL verwenden
 SERIAL_PORT = '/dev/ttyUSB0'
 
-# 波特率
+# Baudrate
 BAUD_RATE = 115200
 ```
 
@@ -114,7 +114,7 @@ BAUD_RATE = 115200
 
 ```Bash
 chmod +x uart_voice.py
-# 运行（需要 sudo 权限访问串口）
+# Ausführen (sudo-Rechte für den Zugriff auf die serielle Schnittstelle erforderlich)
 sudo python3 uart_voice.py
 ```
 
@@ -160,7 +160,7 @@ Drücken Sie `Ctrl + C`, um das Programm zu beenden
 4. Prüfen Sie, ob die serielle Schnittstelle von einem anderen Programm belegt ist
 
 ```Bash
-# 查看可用串口
+# Verfügbare serielle Ports anzeigen
 ls /dev/tty* | grep tty
 ```
 
@@ -203,7 +203,7 @@ ls /dev/tty* | grep tty
 4. Ob die serielle Schnittstelle von einem anderen Prozess belegt ist
 
 ```Bash
-# 检查串口占用
+# Prüfen, ob die serielle Schnittstelle belegt ist
 sudo lsof /dev/ttyAMA0
 ```
 
@@ -222,8 +222,8 @@ Bei Problemen prüfen Sie bitte:
 ## Häufig verwendete Debug-Befehle
 
 ```Bash
-ls -l /dev/ttyAMA0   # 查看串口设备
-groups                # 查看用户组权限
+ls -l /dev/ttyAMA0   # Serielle Geräte anzeigen
+groups                # Benutzergruppen-Berechtigungen anzeigen
 ```
 
 <RelatedProducts slugs="ai-voice-module" />

@@ -22,10 +22,10 @@ pip config set global.index-url https://mirrors.aliyun.com/pypi/simple
 ## conda のミラーソース変更
 
 ```Shell
-# 清空原有 .condarc 配置（可选，避免冲突）
+# 既存の .condarc 設定をクリア（任意、競合を回避）
 echo "" > ~/.condarc
 
-# 写入清华源配置
+# 清華ミラーの設定を書き込む
 cat << EOF > ~/.condarc
 channels:
   - defaults
@@ -44,7 +44,7 @@ custom_channels:
   simpleitk: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
 EOF
 
-# 清除缓存使配置生效
+# キャッシュをクリアして設定を反映させる
 conda clean -i
 ```
 

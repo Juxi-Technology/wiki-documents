@@ -93,7 +93,7 @@ WiFi モードを切り替えたい場合(通常は不要):
 
 ```C++
 Serial.begin(115200);
-Serial.print("ai_mode:2");  // 切换到人脸检测
+Serial.print("ai_mode:2");  // 顔検出に切り替え
 ```
 
 ### Python での制御
@@ -101,7 +101,7 @@ Serial.print("ai_mode:2");  // 切换到人脸检测
 ```Python
 import serial
 ser = serial.Serial("COM3", 115200)
-ser.write(b"ai_mode:1\r\n")  # 切换到猫脸检测
+ser.write(b"ai_mode:1\r\n")  # 猫顔検出に切り替え
 ```
 
 ### 完全なコマンドを確認

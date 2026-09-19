@@ -22,7 +22,7 @@ Use Keil5 software to open USART.uvprojx, and burn the program into the STM32F10
 Please refer to the source code in the materials for the specific code.
 
 ```Python
-//解析环形缓冲中的数据，提取完整帧并更新缓存
+//Process RX ring buffer, parse frames and update internal cache
 
 //Process RX ring buffer, parse frames and update internal cache
 
@@ -44,75 +44,75 @@ void IMU_UART_Process(void)
 
     uint8_t current_byte = 0;
 
-    // 处理环形缓冲区中的所有数据
+    // Process all data in the ring buffer
     while (_rxbuf_pop(&current_byte) == 0) {
         switch (rx_state) {
         case RX_STATE_EXPECT_HEAD1:
-            // 寻找帧头1
+            // Look for frame header 1
             if (current_byte == FRAME_HEAD1) {
                 rx_state = RX_STATE_EXPECT_HEAD2;
             }
-            // 否则保持在当前状态
+            // Otherwise stay in the current state
             break;
 
         case RX_STATE_EXPECT_HEAD2:
-            // 寻找帧头2
+            // Look for frame header 2
             if (current_byte == FRAME_HEAD2) {
                 rx_state = RX_STATE_EXPECT_LENGTH;
             } else {
-                // 帧头不匹配，重新开始寻找
+                // Frame header mismatch, restart the search
                 rx_state = RX_STATE_EXPECT_HEAD1;
             }
             break;
 
         case RX_STATE_EXPECT_LENGTH:
-            // 保存帧长度
+            // Save the frame length
             frame_length = current_byte;
             rx_state = RX_STATE_EXPECT_FUNCTION;
             break;
 
         case RX_STATE_EXPECT_FUNCTION:
-            // 保存功能码
+            // Save the function code
             frame_function = current_byte;
             frame_index = 0;
             rx_state = RX_STATE_COLLECT_DATA;
             break;
 
         case RX_STATE_COLLECT_DATA: {
-            // 计算数据长度（帧长度 - 帧头2字节 - 长度1字节 - 功能码1字节）
+            // Calculate the data length (frame length - 2 frame header bytes - 1 length byte - 1 function code byte)
             uint16_t data_length = (frame_length >= 4) ? (uint16_t)(frame_length - 4) : 0;
             
-            // 检查数据长度是否有效
+            // Check whether the data length is valid
             if (data_length == 0 || data_length > sizeof(frame_buffer)) {
                 rx_state = RX_STATE_EXPECT_HEAD1;
                 break;
             }
 
-            // 存储当前字节
+            // Store the current byte
             frame_buffer[frame_index++] = current_byte;
             
-            // 检查是否收集完所有数据
+            // Check whether all data has been collected
             if (frame_index >= data_length) {
-                // 计算校验和
+                // Calculate the checksum
                 uint8_t calculated_checksum = (uint8_t)(FRAME_HEAD1 + FRAME_HEAD2 + frame_length + frame_function);
                 for (uint16_t i = 0; i < data_length - 1; ++i) {
                     calculated_checksum += frame_buffer[i];
                 }
 
-                // 验证校验和
+                // Verify the checksum
                 uint8_t received_checksum = frame_buffer[data_length - 1];
                 if (calculated_checksum == received_checksum) {
-                    // 校验通过，解析数据
+                    // Checksum passed, parse the data
                     _parse_frame_data(frame_function, frame_buffer);
                 }
                 
-                // 重置状态，准备接收下一帧
+                // Reset state, ready to receive the next frame
                 rx_state = RX_STATE_EXPECT_HEAD1;
             }
         } break;
 
         default:
-            // 未知状态，重置
+            // Unknown state, reset
             rx_state = RX_STATE_EXPECT_HEAD1;
             break;
         }
@@ -125,23 +125,23 @@ static void _parse_frame_data(uint8_t frame_function, const uint8_t *frame_data)
 {
     switch (frame_function) {
         case IMU_FUNC_RAW_ACCEL: {
-            // 定义常量比例因子
+            // Define constant scaling factors
             const float ACCEL_RATIO = 16.0f / 32767.0f;
             const float DEG2RAD = 3.14159265358979323846f / 180.0f;
             const float GYRO_RATIO = (2000.0f / 32767.0f) * DEG2RAD;
             const float MAG_RATIO = 800.0f / 32767.0f;
             
-            // 解析加速度数据
+            // Parse accelerometer data
             s_ax = to_int16(&frame_data[0])  * ACCEL_RATIO;
             s_ay = to_int16(&frame_data[2])  * ACCEL_RATIO;
             s_az = to_int16(&frame_data[4])  * ACCEL_RATIO;
 
-            // 解析陀螺仪数据
+            // Parse gyroscope data
             s_gx = to_int16(&frame_data[6])  * GYRO_RATIO;
             s_gy = to_int16(&frame_data[8])  * GYRO_RATIO;
             s_gz = to_int16(&frame_data[10]) * GYRO_RATIO;
 
-            // 解析磁力计数据
+            // Parse magnetometer data
             s_mx = to_int16(&frame_data[12]) * MAG_RATIO;
             s_my = to_int16(&frame_data[14]) * MAG_RATIO;
             s_mz = to_int16(&frame_data[16]) * MAG_RATIO;
@@ -174,7 +174,7 @@ static void _parse_frame_data(uint8_t frame_function, const uint8_t *frame_data)
             s_last_rx_state    = (int16_t)frame_data[1];
             break;
         default:
-            // 未知帧类型，可添加错误处理
+            // Unknown frame type; error handling can be added
             break;
     }
 }

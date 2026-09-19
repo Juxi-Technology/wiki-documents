@@ -9,10 +9,10 @@ description: "Modulo di interazione vocale IA e Arduino via porta seriale: cabla
 
 ```Plain Text
 UART_Voice/
-├── UART_Voice.ino    # 主程序
-├── bsp_uart.hpp         # 头文件（协议帧和函数声明）
-├── bsp_uart.cpp         # 实现文件
-└── README.md              # 本教程
+├── UART_Voice.ino    # Programma principale
+├── bsp_uart.hpp         # Header (frame di protocollo e dichiarazioni delle funzioni)
+├── bsp_uart.cpp         # File di implementazione
+└── README.md              # Questo tutorial
 ```
 
 ---
@@ -207,7 +207,7 @@ void setup() {
 
   Serial.println("UART Voice Module Initialized");
 
-  UART_SetCommandVoice(0x00);  // 上电播报命令词语音
+  UART_SetCommandVoice(0x00);  // All'accensione riproduce la voce della parola di comando
   delay(200);
 }
 
@@ -215,21 +215,21 @@ void loop() {
   int commandId = UART_ReadCommand();
 
   if (commandId >= 0) {
-    // 过滤无效值，防止重复输出
+    // Filtra i valori non validi per evitare output duplicati
     if (commandId != 0 && commandId != 255 && commandId != lastCommandId) {
       Serial.print("ID: ");
       Serial.println(commandId);
       lastCommandId = commandId;
 
-      // 示例：根据识别到的命令控制播报
+      // Esempio: controlla la riproduzione in base al comando riconosciuto
       if (commandId == 1) {
-        UART_SetCommandVoice(0x00);  // 识别到命令1，播报命令词语音
+        UART_SetCommandVoice(0x00);  // Comando 1 riconosciuto, riproduci la voce della parola di comando
       } else if (commandId == 2) {
-        UART_SetCommandVoice(0x00);  // 识别到命令2，播报命令词语音
+        UART_SetCommandVoice(0x00);  // Comando 2 riconosciuto, riproduci la voce della parola di comando
       }
     } else if (commandId == 0 || commandId == 255) {
       if (lastCommandId != 0) {
-        lastCommandId = 0;  // 重置状态
+        lastCommandId = 0;  // Reimposta lo stato
       }
     }
   }
@@ -320,11 +320,11 @@ La modifica del codice relativo a UART avviene solo in `bsp_uart.cpp`: una sola 
 
 ```Plain Text
 if (commandId == 1) {
-  UART_SetCommandVoice(0x00);      // 播报命令词
+  UART_SetCommandVoice(0x00);      // Riproduci la parola di comando
 } else if (commandId == 2) {
-  UART_SetFunctionVoice(0x00);     // 播报功能词
+  UART_SetFunctionVoice(0x00);     // Riproduci la voce funzionale
 } else if (commandId == 3) {
-  UART_SetPassiveVoice(0x00);      // 播报被动语
+  UART_SetPassiveVoice(0x00);      // Riproduci la frase passiva
 }
 ```
 
@@ -332,8 +332,8 @@ if (commandId == 1) {
 
 ```Plain Text
 if (commandId == 10) {
-  digitalWrite(LED_PIN, LOW);    // 关灯
-  UART_SetCommandVoice(0x00);     // 播报确认
+  digitalWrite(LED_PIN, LOW);    // Spegni la luce
+  UART_SetCommandVoice(0x00);     // Riproduci la conferma
 }
 ```
 
@@ -342,7 +342,7 @@ if (commandId == 10) {
 ```Plain Text
 if (commandId == 11) {
   motor_stop();
-  UART_SetCommandVoice(0x00);     // 播报确认
+  UART_SetCommandVoice(0x00);     // Riproduci la conferma
 }
 ```
 

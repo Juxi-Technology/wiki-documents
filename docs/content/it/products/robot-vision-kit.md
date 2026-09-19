@@ -53,10 +53,10 @@ Fissare il modulo fotocamera al supporto e collegare via USB all'host (Jetson/Ra
 Esempio di raccolta dati LeRobot:
 
 ```bash
-# 查找相机
+# Trova le telecamere
 python -m lerobot.find_cameras
 
-# 采集带视觉数据
+# Raccolta di dati con visione
 lerobot-record \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \

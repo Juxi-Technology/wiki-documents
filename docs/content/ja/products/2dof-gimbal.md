@@ -33,8 +33,8 @@ keywords: [gimbal, 雲台, 2dof, ビジョントラッキング, scs0009]
 
 ## クイックスタート
 ```bash
-# USB 连接主控,摄像头即插即用
-# Python SDK 控制云台
+# USB をメインコントローラに接続すると、カメラはプラグアンドプレイで使用可能
+# Python SDK でジンバルを制御
 from sc_servo import SCServo, Gimbal
 servo = SCServo("COM3")  # Linux: /dev/ttyUSB0
 servo.connect()

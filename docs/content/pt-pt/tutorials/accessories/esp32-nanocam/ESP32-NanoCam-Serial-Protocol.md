@@ -104,11 +104,11 @@ description: "Manual do protocolo AT serial do ESP32-NanoCam: referência comple
 ### Fluxo de operação do reconhecimento facial
 
 ```Plaintext
-ai_mode:4          # 进入人脸识别模式 (设备自动重启)
-face_eril          # 注册人脸 (确保只有一张脸在画面中)
-face_rz            # 开始持续识别 — 标签持续显示不消失
-face_detect        # 退出识别模式 — 标签清除
-face_del           # 删除最后注册的人脸
+ai_mode:4          # Entrar no modo de reconhecimento facial (o dispositivo reinicia automaticamente)
+face_eril          # Registar uma face (garantir que só há uma face no enquadramento)
+face_rz            # Iniciar o reconhecimento contínuo — as etiquetas são mostradas continuamente e não desaparecem
+face_detect        # Sair do modo de reconhecimento — as etiquetas desaparecem
+face_del           # Eliminar a última face registada
 ```
 
 ### Notas sobre o reconhecimento facial

@@ -274,7 +274,7 @@ lerobot-setup-motors \
 ```Shell
 sudo nano ~/.bashrc
 
-# 在文件末尾加入
+# Ajouter à la fin du fichier
 export HF_ENDPOINT=https://hf-mirror.com
 ```
 
@@ -282,7 +282,7 @@ export HF_ENDPOINT=https://hf-mirror.com
 source ~/.bashrc
 echo $HF_ENDPOINT
 
-# 输出
+# Sortie
 # https://hf-mirror.com
 ```
 
@@ -291,14 +291,14 @@ echo $HF_ENDPOINT
 ```Shell
 sudo nano ~/.zshrc
 
-# 在文件末尾加入
+# Ajouter à la fin du fichier
 export HF_ENDPOINT=https://hf-mirror.com
 ```
 
 ```Shell
 source ~/.zshrc
 
-# 输出
+# Sortie
 # https://hf-mirror.com
 ```
 
@@ -394,7 +394,7 @@ Exécuter la commande suivante sur votre ordinateur pour calibrer le bras leader
 ```Bash
 lerobot-calibrate \
     --teleop.type=so100_leader \
-    --teleop.port=/dev/tty.usbmodem58760431551 \ #修改为找到的端口号
+    --teleop.port=/dev/tty.usbmodem58760431551 \ #Modifier avec le numéro de port trouvé
     --teleop.id=my_awesome_leader_arm
 ```
 

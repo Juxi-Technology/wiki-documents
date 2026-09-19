@@ -16,23 +16,23 @@ description: "AI 音声対話モジュールの ROS1 連携チュートリアル
 #### 依存ライブラリのインストール
 
 ```Bash
-# 1. 更新源
+# 1. ソースを更新
 sudo apt update
 
-# 2. 安装 ROS1 桌面完整版
-# (如果已安装ROS1，跳过)
+# 2. ROS1 デスクトップフル版をインストール
+# (ROS1 インストール済みの場合はスキップ)
 sudo apt install ros-noetic-desktop-full -y    # Ubuntu 20.04
 sudo apt install ros-melodic-desktop-full -y   # Ubuntu 18.04
 
-# 3. 安装本项目依赖（同时支持串口和I2C）
+# 3. 本プロジェクトの依存関係をインストール（シリアルと I2C の両方に対応）
 sudo apt install python3-pip ros-noetic-rviz i2c-tools -y
 pip3 install pyserial smbus2
 
-# 如果是 Melodic (Python2)
+# Melodic (Python2) の場合
 sudo apt install python-pip ros-melodic-rviz i2c-tools -y
 pip install pyserial smbus2
 
-# 4. 如果使用 I2C 接线，额外安装
+# 4. I2C 接線を使用する場合は追加でインストール
 sudo apt install python3-smbus2 -y
 ```
 
@@ -101,14 +101,14 @@ catkin_create_pkg juxi_voice rospy std_msgs visualization_msgs
 ├── devel/
 └── src/
     └── juxi_voice/
-        ├── CMakeLists.txt      # (替换为本项目提供的)
-        ├── package.xml          # (替换为本项目提供的)
-        ├── juxi_voice.rviz      # (新建：RViz预配置文件)
+        ├── CMakeLists.txt      # (本プロジェクト提供のものに置き換え)
+        ├── package.xml          # (本プロジェクト提供のものに置き換え)
+        ├── juxi_voice.rviz      # (新規作成: RViz 設定ファイル)
         ├── launch/
-        │   └── juxi_voice.launch # (新建：一键启动文件)
+        │   └── juxi_voice.launch # (新規作成: ワンクリック起動ファイル)
         └── scripts/
-            ├── voice_node.py     # (新建：语音节点)
-            └── rviz_control.py   # (新建：RViz控制节点)
+            ├── voice_node.py     # (新規作成: 音声ノード)
+            └── rviz_control.py   # (新規作成: RViz 制御ノード)
 ```
 
 ---
@@ -130,7 +130,7 @@ catkin_create_pkg juxi_voice rospy std_msgs visualization_msgs
 **主要アーキテクチャ**：
 
 ```Bash
-# 统一命令数据: ID → (串口字节2, 串口字节3, 命令文本, 播报模式)
+# 統一コマンドデータ: ID → (シリアルバイト2, シリアルバイト3, コマンドテキスト, 再生モード)
 CMD_DATA = {
     1:   (0x01, 0x00, "欢迎语", "被"),
     3:   (0x03, 0x00, "你好小犀", "主"),
@@ -139,10 +139,10 @@ CMD_DATA = {
     ...
 }
 
-# 自动检测函数
+# 自動検出関数
 def detect_connection():
-    # 1. 尝试串口 /dev/ttyUSB0, /dev/ttyACM0, /dev/ttyAMA0, /dev/ttyS0
-    # 2. 尝试 I2C /dev/i2c-1 (从机地址 0x2A)
+    # 1. シリアルポート /dev/ttyUSB0, /dev/ttyACM0, /dev/ttyAMA0, /dev/ttyS0 を試行
+    # 2. I2C /dev/i2c-1 を試行 (スレーブアドレス 0x2A)
     ...
 ```
 
@@ -175,23 +175,23 @@ catkin_make
 
 ```Bash
 source ~/juxi_speech_ws/devel/setup.bash
-# 或写入 ~/.bashrc
+# または ~/.bashrc に追記
 echo "source ~/juxi_speech_ws/devel/setup.bash" >> ~/.bashrc
 ```
 
 #### 権限設定
 
 ```Bash
-# I2C 权限
+# I2C 権限
 sudo chmod 666 /dev/i2c-1
-# 串口权限
+# シリアルポートの権限
 sudo chmod 666 /dev/ttyUSB0
 sudo chmod 666 /dev/ttyACM0
 sudo chmod 666 /dev/ttyAMA0
-# 或加入用户组
+# またはユーザーグループに追加
 sudo usermod -aG dialout $USER
 sudo usermod -aG i2c $USER
-# 设置后需要重新登录生效
+# 設定後は再ログインで有効になる
 ```
 
 #### ノードの実行
@@ -261,7 +261,7 @@ rviz -d ~/juxi_speech_ws/src/juxi_voice/juxi_voice.rviz
 
 ```Bash
 rviz
-# 菜单栏: File → Open Config → 选择 juxi_voice.rviz
+# メニューバー: File → Open Config → juxi_voice.rviz を選択
 ```
 
 ---
@@ -301,11 +301,11 @@ rviz
 #### ホストからの再生トリガー
 
 ```Bash
-# 被动播报 (I2C → 写 0xD1, 串口 → 发 FE EF FF XX EE)
+# パッシブ再生 (I2C → 0xD1 に書き込み、シリアル → FE EF FF XX EE を送信)
 rostopic pub /juxi_passive_play std_msgs/String "data: '这是红色'"
-# 功能词播报 (I2C → 写 0xD2, 串口 → 发 FE EF 01 00 EE)
+# 機能ワード再生 (I2C → 0xD2 に書き込み、シリアル → FE EF 01 00 EE を送信)
 rostopic pub /juxi_func_play std_msgs/String "data: '欢迎语'"
-# 命令词播报 (I2C → 写 0xD3, 串口 → 发 FE EF 00 04 EE)
+# コマンドワード再生 (I2C → 0xD3 に書き込み、シリアル → FE EF 00 04 EE を送信)
 rostopic pub /juxi_cmd_play std_msgs/String "data: '小车前进'"
 ```
 
@@ -336,22 +336,22 @@ rostopic pub /juxi_cmd_play std_msgs/String "data: '小车前进'"
 配線方法に対応するデバイスファイルが存在するか確認します：
 
 ```Bash
-# I2C 接线
+# I2C 接線
 ls /dev/i2c-1
-sudo i2cdetect -y 1   # 应看到 0x2A
+sudo i2cdetect -y 1   # 0x2A が表示されるはず
 
-# Type-C 接线
+# Type-C 接線
 ls /dev/ttyUSB0 /dev/ttyACM0
 
-# UART 接线
+# UART 接線
 ls /dev/ttyAMA0 /dev/ttyS0
 ```
 
 **2.シリアルポートの権限エラー**
 
 ```Bash
-sudo chmod 666 /dev/ttyUSB0   # 或 /dev/ttyACM0 等
-# 或加入 dialout 用户组（需要重新登录）
+sudo chmod 666 /dev/ttyUSB0   # または /dev/ttyACM0 など
+# または dialout グループに追加（再ログインが必要）
 sudo usermod -aG dialout $USER
 ```
 
@@ -359,7 +359,7 @@ sudo usermod -aG dialout $USER
 
 ```Bash
 sudo chmod 666 /dev/i2c-1
-# 或加入 i2c 用户组（需要重新登录）
+# または i2c グループに追加（再ログインが必要）
 sudo usermod -aG i2c $USER
 ```
 
@@ -392,7 +392,7 @@ source devel/setup.bash
 **7.構文エラーが表示される**
 
 ```Bash
-# 确认 Python 脚本有执行权限
+# Python スクリプトに実行権限があることを確認
 chmod +x ~/juxi_speech_ws/src/juxi_voice/scripts/voice_node.py
 chmod +x ~/juxi_speech_ws/src/juxi_voice/scripts/rviz_control.py
 ```

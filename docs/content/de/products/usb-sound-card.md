@@ -32,10 +32,10 @@ Die treiberfreie USB-Soundkarte mit Onboard-Mikrofon und Lautsprecher wird vom S
 ## Schnellstart
 
 ```bash
-# 插入 USB 即自动识别
-# 验证设备
-arecord -l    # 录音设备
-aplay -l      # 播放设备
+# Bei USB-Anschluss automatische Erkennung
+# Gerät überprüfen
+arecord -l    # Aufnahmegerät
+aplay -l      # Wiedergabegerät
 ```
 ## Verwandte Tutorials
 

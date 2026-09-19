@@ -58,26 +58,26 @@ Se si utilizza un modulo adattatore USB-TTL:
 ### Installazione dei pacchetti di dipendenza
 
 ```Bash
-# 更新软件包
+# Aggiorna i pacchetti
 sudo apt update
 sudo apt upgrade -y
 
-# 安装 Python 库
+# Installa le librerie Python
 sudo apt install -y python3-pip
 
-# 安装 pyserial
+# Installa pyserial
 pip3 install pyserial
 ```
 
 ### Abilitazione dell'interfaccia della porta seriale
 
 ```Bash
-# 打开配置工具
+# Apri lo strumento di configurazione
 sudo raspi-config
 
-# 选择 Interface Options → Serial
+# Seleziona Interface Options → Serial
 Select: No (shell) → Yes (hardware serial port)
-# 重启生效
+# Effettivo dopo il riavvio
 sudo reboot
 ```
 
@@ -90,7 +90,7 @@ sudo reboot
 ```Bash
 cd UART_Voice
 ls -la
-# 应该看到 uart_voice.py
+# Dovresti vedere uart_voice.py
 ```
 
 ### Configurazione del dispositivo di porta seriale
@@ -98,13 +98,13 @@ ls -la
 Modificare il file `uart_voice.py` e cambiare il dispositivo di porta seriale:
 
 ```Bash
-# UART 直连（默认）
+# Collegamento diretto UART (predefinito)
 SERIAL_PORT = '/dev/ttyAMA0'
 
-# 或者使用 USB-TTL
+# Oppure usa USB-TTL
 SERIAL_PORT = '/dev/ttyUSB0'
 
-# 波特率
+# Baud rate
 BAUD_RATE = 115200
 ```
 
@@ -114,7 +114,7 @@ BAUD_RATE = 115200
 
 ```Bash
 chmod +x uart_voice.py
-# 运行（需要 sudo 权限访问串口）
+# Esegui (serve sudo per accedere alla porta seriale)
 sudo python3 uart_voice.py
 ```
 
@@ -160,7 +160,7 @@ Premere `Ctrl + C` per arrestare il programma
 4. Verificare se la porta seriale è occupata da un altro programma
 
 ```Bash
-# 查看可用串口
+# Visualizza le porte seriali disponibili
 ls /dev/tty* | grep tty
 ```
 
@@ -203,7 +203,7 @@ ls /dev/tty* | grep tty
 4. Se la porta seriale è occupata da un altro processo
 
 ```Bash
-# 检查串口占用
+# Controlla se la porta seriale è occupata
 sudo lsof /dev/ttyAMA0
 ```
 
@@ -222,8 +222,8 @@ In caso di problemi, verificare:
 ## Comandi di debug comuni
 
 ```Bash
-ls -l /dev/ttyAMA0   # 查看串口设备
-groups                # 查看用户组权限
+ls -l /dev/ttyAMA0   # Visualizza il dispositivo seriale
+groups                # Visualizza i permessi dei gruppi utente
 ```
 
 <RelatedProducts slugs="ai-voice-module" />

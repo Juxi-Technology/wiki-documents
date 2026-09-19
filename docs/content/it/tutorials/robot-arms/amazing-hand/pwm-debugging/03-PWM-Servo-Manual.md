@@ -123,15 +123,15 @@ La scheda adattatrice dispone di due gruppi di porte di alimentazione 5V/GND:
 
 ```Plaintext
 esp-idf/AmazingHand_Serial/
-├── CMakeLists.txt              # 顶层工程配置
-├── sdkconfig.defaults          # 默认 Kconfig 配置
+├── CMakeLists.txt              # Configurazione del progetto di primo livello
+├── sdkconfig.defaults          # Configurazione Kconfig predefinita
 ├── main/
 │   ├── CMakeLists.txt
-│   └── main.c                  # FreeRTOS 双任务 + 初始化（胶水层）
+│   └── main.c                  # Doppio task FreeRTOS + inizializzazione (livello glue)
 └── components/
-    ├── hand_servo/             # 舵机驱动（LEDC PWM + 校准数据）
-    ├── hand_gestures/          # 手势参数宏 + 手势函数 + 左右手控制
-    └── hand_protocol/          # 串口帧解析 + 命令分发
+    ├── hand_servo/             # Driver del servomotore (LEDC PWM + dati di calibrazione)
+    ├── hand_gestures/          # Macro dei parametri dei gesti + funzioni dei gesti + controllo mano sinistra/destra
+    └── hand_protocol/          # Analisi dei frame seriali + distribuzione dei comandi
 ```
 
 #### Ambiente di build
@@ -424,25 +424,25 @@ python serial_test.py
 python serial_test.py COM3 nop
 
 # Inviare il gesto
-python serial_test.py COM3 rock        # 石头
-python serial_test.py COM3 thumbs_up    # 真棒
-python serial_test.py COM3 index        # 指向
-python serial_test.py COM3 open         # 张开
-python serial_test.py COM3 close        # 握拳
+python serial_test.py COM3 rock        # Sasso
+python serial_test.py COM3 thumbs_up    # Pollice in su
+python serial_test.py COM3 index        # Indice puntato
+python serial_test.py COM3 open         # Mano aperta
+python serial_test.py COM3 close        # Pugno
 
 # Azionamento diretto di un singolo servo
-python serial_test.py COM3 servo 1 90   # 舵机1 → 90°
+python serial_test.py COM3 servo 1 90   # Servomotore 1 → 90°
 
 # Centrare tutto
 python serial_test.py COM3 mid
 
 # Impostare mano sinistra/destra
-python serial_test.py COM3 hand L       # 左手
-python serial_test.py COM3 hand R       # 右手
+python serial_test.py COM3 hand L       # Mano sinistra
+python serial_test.py COM3 hand R       # Mano destra
 
 # Scansione di frequenza / autotest
-python serial_test.py COM3 sweep 1      # 舵机1 扫频
-python serial_test.py COM3 test         # 全部舵机逐个测试
+python serial_test.py COM3 sweep 1      # Scansione di frequenza del servomotore 1
+python serial_test.py COM3 test         # Test di tutti i servomotori uno per uno
 ```
 
 #### Modalità interattiva
@@ -480,7 +480,7 @@ echo -ne '\xAA\x01\x00\x01' > /dev/cu.usbserial-0001
 import serial
 import time
 
-SERIAL_PORT = "/dev/cu.usbserial-0001"  # 修改为实际端口
+SERIAL_PORT = "/dev/cu.usbserial-0001"  # Modifica con la porta effettiva
 BAUD_RATE   = 115200
 
 # Definizione dei comandi (coerente con l'insieme dei comandi del firmware)
@@ -546,7 +546,7 @@ def direct_drive(ser, angles):
 # ===== Esempio di utilizzo =====
 if __name__ == "__main__":
     ser = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=1)
-    time.sleep(1)  # 等待 ESP32 复位完成
+    time.sleep(1)  # Attendi il completamento del reset dell'ESP32
 
 # 1. Test del collegamento
     print("=== NOP 链路测试 ===")
@@ -564,9 +564,9 @@ if __name__ == "__main__":
 
 # 4. Interrompere il test
     print("\n=== 停止测试 ===")
-    send_command(ser, CMD["taunt1"])  # 开始摇食指
+    send_command(ser, CMD["taunt1"])  # Inizia a scuotere l'indice
     time.sleep(0.3)
-    send_command(ser, CMD["stop"])    # 立即停止
+    send_command(ser, CMD["stop"])    # Arresto immediato
 
 # 5. Modalità azionamento diretto: centrare tutto
     print("\n=== 直驱: 归中 ===")
@@ -647,8 +647,8 @@ tracking_env\Scripts\python hand_gui.py
 I coefficienti di mappatura si trovano in fondo a `hand_tracking.py` (`FLEX_SCALE` / `BASE_SCALE`):
 
 ```Python
-FLEX_SCALE = 80.0    # 指尖 z 分量 → 弯曲/伸直 (flex)
-BASE_SCALE = 30.0    # 指尖 x 分量 → 左右摆动 (base)
+FLEX_SCALE = 80.0    # Componente z della punta del dito → piega/estendi (flex)
+BASE_SCALE = 30.0    # Componente x della punta del dito → oscillazione laterale (base)
 ```
 
 Se l'ampiezza di piegatura/estensione è insufficiente o la direzione è invertita, regolare `FLEX_SCALE`; se l'ampiezza dell'oscillazione destra/sinistra è insufficiente o invertita, regolare `BASE_SCALE` (il segno più/meno regola la direzione)。

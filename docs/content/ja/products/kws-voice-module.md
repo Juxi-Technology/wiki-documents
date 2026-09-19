@@ -37,8 +37,8 @@ KWS(Keyword Spotting)音声認識対話モジュールは、中英認識語の�
 ## クイックスタート
 
 ```bash
-# 烧录固件(参考教程)
-# Python 串口通信示例
+# ファームウェアを書き込み(チュートリアル参照)
+# Python シリアル通信の例
 import serial
 ser = serial.Serial('/dev/ttyUSB0', 115200)
 while True:

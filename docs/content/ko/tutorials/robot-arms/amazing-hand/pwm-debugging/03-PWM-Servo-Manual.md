@@ -123,15 +123,15 @@ ESP32-S3 개발 보드에는 두 개의 Type-C 인터페이스가 있습니다:
 
 ```Plaintext
 esp-idf/AmazingHand_Serial/
-├── CMakeLists.txt              # 顶层工程配置
-├── sdkconfig.defaults          # 默认 Kconfig 配置
+├── CMakeLists.txt              # 최상위 프로젝트 구성
+├── sdkconfig.defaults          # 기본 Kconfig 구성
 ├── main/
 │   ├── CMakeLists.txt
-│   └── main.c                  # FreeRTOS 双任务 + 初始化（胶水层）
+│   └── main.c                  # FreeRTOS 이중 태스크 + 초기화(글루 레이어)
 └── components/
-    ├── hand_servo/             # 舵机驱动（LEDC PWM + 校准数据）
-    ├── hand_gestures/          # 手势参数宏 + 手势函数 + 左右手控制
-    └── hand_protocol/          # 串口帧解析 + 命令分发
+    ├── hand_servo/             # 서보 구동(LEDC PWM + 캘리브레이션 데이터)
+    ├── hand_gestures/          # 제스처 파라미터 매크로 + 제스처 함수 + 좌우손 제어
+    └── hand_protocol/          # 시리얼 프레임 파싱 + 명령 분배
 ```
 
 #### 빌드 환경
@@ -424,25 +424,25 @@ python serial_test.py
 python serial_test.py COM3 nop
 
 # 제스처 전송
-python serial_test.py COM3 rock        # 石头
-python serial_test.py COM3 thumbs_up    # 真棒
-python serial_test.py COM3 index        # 指向
-python serial_test.py COM3 open         # 张开
-python serial_test.py COM3 close        # 握拳
+python serial_test.py COM3 rock        # 바위
+python serial_test.py COM3 thumbs_up    # 엄지 척
+python serial_test.py COM3 index        # 가리키기
+python serial_test.py COM3 open         # 펼치기
+python serial_test.py COM3 close        # 주먹
 
 # 단일 서보 직접 구동
-python serial_test.py COM3 servo 1 90   # 舵机1 → 90°
+python serial_test.py COM3 servo 1 90   # 서보1 → 90°
 
 # 모두 중앙으로 복귀
 python serial_test.py COM3 mid
 
 # 좌우 손 설정
-python serial_test.py COM3 hand L       # 左手
-python serial_test.py COM3 hand R       # 右手
+python serial_test.py COM3 hand L       # 왼손
+python serial_test.py COM3 hand R       # 오른손
 
 # 스윕 / 자가 진단
-python serial_test.py COM3 sweep 1      # 舵机1 扫频
-python serial_test.py COM3 test         # 全部舵机逐个测试
+python serial_test.py COM3 sweep 1      # 서보1 스윕
+python serial_test.py COM3 test         # 모든 서보 순차 테스트
 ```
 
 #### 대화형 모드
@@ -480,7 +480,7 @@ echo -ne '\xAA\x01\x00\x01' > /dev/cu.usbserial-0001
 import serial
 import time
 
-SERIAL_PORT = "/dev/cu.usbserial-0001"  # 修改为实际端口
+SERIAL_PORT = "/dev/cu.usbserial-0001"  # 실제 포트로 수정
 BAUD_RATE   = 115200
 
 # 명령 정의 (펌웨어 명령 세트와 일치)
@@ -546,7 +546,7 @@ def direct_drive(ser, angles):
 # ===== 사용 예시 =====
 if __name__ == "__main__":
     ser = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=1)
-    time.sleep(1)  # 等待 ESP32 复位完成
+    time.sleep(1)  # ESP32 리셋 완료 대기
 
 # 1. 링크 테스트
     print("=== NOP 链路测试 ===")
@@ -564,9 +564,9 @@ if __name__ == "__main__":
 
 # 4. 테스트 중지
     print("\n=== 停止测试 ===")
-    send_command(ser, CMD["taunt1"])  # 开始摇食指
+    send_command(ser, CMD["taunt1"])  # 검지 흔들기 시작
     time.sleep(0.3)
-    send_command(ser, CMD["stop"])    # 立即停止
+    send_command(ser, CMD["stop"])    # 즉시 정지
 
 # 5. 직접 구동 모드: 모두 중앙으로 복귀
     print("\n=== 直驱: 归中 ===")
@@ -647,8 +647,8 @@ tracking_env\Scripts\python hand_gui.py
 매핑 계수는 `hand_tracking.py` 하단(`FLEX_SCALE` / `BASE_SCALE`)에 있습니다:
 
 ```Python
-FLEX_SCALE = 80.0    # 指尖 z 分量 → 弯曲/伸直 (flex)
-BASE_SCALE = 30.0    # 指尖 x 分量 → 左右摆动 (base)
+FLEX_SCALE = 80.0    # 손끝 z 성분 → 굽힘/폄 (flex)
+BASE_SCALE = 30.0    # 손끝 x 성분 → 좌우 회전 (base)
 ```
 
 굴곡/신전 폭이 부족하거나 방향이 반대이면 `FLEX_SCALE`을 조정하고; 좌우 흔들기 폭이 부족하거나 반대이면 `BASE_SCALE`을 조정합니다(부호로 방향 조정).

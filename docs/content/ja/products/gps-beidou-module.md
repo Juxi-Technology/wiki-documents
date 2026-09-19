@@ -59,10 +59,10 @@ Type-C データケーブルで直結、プラグアンドプレイ(デフォル
 ### 3. 測位の確認
 
 ```bash
-# 安装 pynmea2 解析 NMEA 数据
+# pynmea2 をインストールして NMEA データを解析
 pip install pynmea2
 
-# 读取定位数据示例
+# 測位データを読み取る例
 import serial
 import pynmea2
 

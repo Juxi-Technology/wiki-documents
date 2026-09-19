@@ -58,26 +58,26 @@ Si vous utilisez un module adaptateur USB-TTL :
 ### Installer les paquets de dépendances
 
 ```Bash
-# 更新软件包
+# Mettre à jour les paquets
 sudo apt update
 sudo apt upgrade -y
 
-# 安装 Python 库
+# Installer les bibliothèques Python
 sudo apt install -y python3-pip
 
-# 安装 pyserial
+# Installer pyserial
 pip3 install pyserial
 ```
 
 ### Activer l'interface du port série
 
 ```Bash
-# 打开配置工具
+# Ouvrir l'outil de configuration
 sudo raspi-config
 
-# 选择 Interface Options → Serial
+# Sélectionner Interface Options → Serial
 Select: No (shell) → Yes (hardware serial port)
-# 重启生效
+# Prend effet après redémarrage
 sudo reboot
 ```
 
@@ -90,7 +90,7 @@ sudo reboot
 ```Bash
 cd UART_Voice
 ls -la
-# 应该看到 uart_voice.py
+# Vous devriez voir uart_voice.py
 ```
 
 ### Configurer le dispositif de port série
@@ -98,13 +98,13 @@ ls -la
 Modifiez le fichier `uart_voice.py` et changez le dispositif de port série :
 
 ```Bash
-# UART 直连（默认）
+# Connexion directe UART (par défaut)
 SERIAL_PORT = '/dev/ttyAMA0'
 
-# 或者使用 USB-TTL
+# Ou utiliser un USB-TTL
 SERIAL_PORT = '/dev/ttyUSB0'
 
-# 波特率
+# Débit en bauds
 BAUD_RATE = 115200
 ```
 
@@ -114,7 +114,7 @@ BAUD_RATE = 115200
 
 ```Bash
 chmod +x uart_voice.py
-# 运行（需要 sudo 权限访问串口）
+# Exécuter (les droits sudo sont nécessaires pour accéder au port série)
 sudo python3 uart_voice.py
 ```
 
@@ -160,7 +160,7 @@ Appuyez sur `Ctrl + C` pour arrêter le programme
 4. Vérifiez si le port série est occupé par un autre programme
 
 ```Bash
-# 查看可用串口
+# Afficher les ports série disponibles
 ls /dev/tty* | grep tty
 ```
 
@@ -203,7 +203,7 @@ ls /dev/tty* | grep tty
 4. Si le port série est occupé par un autre processus
 
 ```Bash
-# 检查串口占用
+# Vérifier l'occupation du port série
 sudo lsof /dev/ttyAMA0
 ```
 
@@ -222,8 +222,8 @@ En cas de problème, veuillez vérifier :
 ## Commandes de débogage courantes
 
 ```Bash
-ls -l /dev/ttyAMA0   # 查看串口设备
-groups                # 查看用户组权限
+ls -l /dev/ttyAMA0   # Afficher les périphériques série
+groups                # Vérifier les permissions des groupes d'utilisateurs
 ```
 
 <RelatedProducts slugs="ai-voice-module" />

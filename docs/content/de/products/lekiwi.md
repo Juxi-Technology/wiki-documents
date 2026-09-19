@@ -31,8 +31,8 @@ Lekiwi ist der kostengünstige Embodied-Intelligence-Mobileroboter von Juxi Tech
 ## Schnellstart
 
 ```bash
-# 参考仓库 README 组装与接线
-# 12V 电源接入,USB 连接主控
+# Montage und Verkabelung gemäß README des Referenz-Repositorys
+# 12V-Stromversorgung anschließen, USB mit dem Hauptcontroller verbinden
 ```
 ## Verwandte Tutorials
 

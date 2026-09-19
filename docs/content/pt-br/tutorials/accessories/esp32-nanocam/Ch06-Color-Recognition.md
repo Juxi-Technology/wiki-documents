@@ -68,17 +68,17 @@ O NanoCam atua como slave I2C (endereço `0x33`, GPIO SDA=41 SCL=42) e atualiza 
 `components/modules/ai/who_color_detection.cpp` — baseado no ColorDetector do esp-dl:
 
 ```C++
-// 构建检测器,set_bgr(false) 确保颜色通道正确
+// Construir o detector; set_bgr(false) garante os canais de cor corretos
 ColorDetector detector;
 detector.set_bgr(false);
 detector.set_detection_shape({80, 80, 1});
-// 注册 7 种颜色阈值
+// Registrar os limiares das 7 cores
 detector.register_color({h_lo, h_hi, s_lo, s_hi, v_lo, v_hi}, area_min, "red");
-// 检测
+// Detecção
 auto &results = detector.detect((uint16_t *)frame->buf,
     {(int)frame->height, (int)frame->width, 3});
 
-// 遍历结果画框+标签
+// Percorrer os resultados e desenhar caixa + rótulo
 for (int ci = 0; ci < (int)results.size(); ci++) {
     for (int ri = 0; ri < (int)results[ci].size(); ri++) {
         color_detect_result_t &res = results[ci][ri];

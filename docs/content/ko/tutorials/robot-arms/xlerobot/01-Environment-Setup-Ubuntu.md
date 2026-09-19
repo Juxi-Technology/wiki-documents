@@ -22,10 +22,10 @@ pip config set global.index-url https://mirrors.aliyun.com/pypi/simple
 ## conda 소스 변경
 
 ```Shell
-# 清空原有 .condarc 配置（可选，避免冲突）
+# 기존 .condarc 설정 비우기 (선택 사항, 충돌 방지)
 echo "" > ~/.condarc
 
-# 写入清华源配置
+# 칭화(Tsinghua) 미러 소스 설정 작성
 cat << EOF > ~/.condarc
 channels:
   - defaults
@@ -44,7 +44,7 @@ custom_channels:
   simpleitk: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
 EOF
 
-# 清除缓存使配置生效
+# 캐시를 지워 설정 적용
 conda clean -i
 ```
 

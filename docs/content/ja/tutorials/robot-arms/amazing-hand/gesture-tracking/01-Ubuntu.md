@@ -348,14 +348,14 @@ sudo chmod 666 /dev/ttyACM*
 
 ```Plain Text
 ls -l /dev/video0
-sudo usermod -aG video $USER   # 加入 video 组，注销重登
+sudo usermod -aG video $USER   # video グループに追加し、ログアウトして再ログイン
 ```
 
 4. v4l2 でカメラが本当にフレームを出力できるか検証（出力できれば = ドライバは正常、問題は OpenCV の互換性）：
 
 ```Bash
 v4l2-ctl --device=/dev/video0 --set-fmt-video=width=640,height=480,pixelformat=MJPG --stream-mmap --stream-count=1 --stream-to=/tmp/frame.jpg
-ls -l /tmp/frame.jpg   # 有几十~几百KB = 流通
+ls -l /tmp/frame.jpg   # 数十~数百KB あれば = 正常に出力されている
 ```
 
 ### 9.7 ポート番号が毎回変わる

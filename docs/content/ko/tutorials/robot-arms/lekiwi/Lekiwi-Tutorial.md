@@ -277,7 +277,7 @@ lerobot-setup-motors \
 ```Shell
 sudo nano ~/.bashrc
 
-# 在文件末尾加入
+# 파일 끝에 추가
 export HF_ENDPOINT=https://hf-mirror.com
 ```
 
@@ -285,7 +285,7 @@ export HF_ENDPOINT=https://hf-mirror.com
 source ~/.bashrc
 echo $HF_ENDPOINT
 
-# 输出
+# 출력
 # https://hf-mirror.com
 ```
 
@@ -294,14 +294,14 @@ echo $HF_ENDPOINT
 ```Shell
 sudo nano ~/.zshrc
 
-# 在文件末尾加入
+# 파일 끝에 추가
 export HF_ENDPOINT=https://hf-mirror.com
 ```
 
 ```Shell
 source ~/.zshrc
 
-# 输出
+# 출력
 # https://hf-mirror.com
 ```
 
@@ -397,7 +397,7 @@ remote_ip: 라즈베리파이의 IP 주소
 ```Bash
 lerobot-calibrate \
     --teleop.type=so100_leader \
-    --teleop.port=/dev/tty.usbmodem58760431551 \ #修改为找到的端口号
+    --teleop.port=/dev/tty.usbmodem58760431551 \ #찾은 포트 번호로 수정
     --teleop.id=my_awesome_leader_arm
 ```
 

@@ -136,7 +136,7 @@ ros2 launch icm42670p imu_launch.py
 ### Python 캘리브레이션 도구
 
 ```bash
-# 运行六面校准获取精确的加速度计和陀螺仪零偏
+# 6면 캘리브레이션을 실행하여 정확한 가속도계/자이로 영점 획득
 python calibration/calibrate.py --port /dev/ttyUSB0
 ```
 

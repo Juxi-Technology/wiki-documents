@@ -37,8 +37,8 @@ Feetech(피트크)직렬 버스 서보는 SO-ARM101 등 로봇 팔의 구동 코
 ## 빠른 시작
 
 ```bash
-# 上位机调试(Windows):下载 feetechrc.com/software.html
-# 选择端口,波特率 1000000,点击搜索
+# 상위 프로그램 디버깅(Windows): feetechrc.com/software.html 다운로드
+# 포트 선택, 보드레이트 1000000, "搜索" 클릭
 ```
 ## 관련 튜토리얼
 

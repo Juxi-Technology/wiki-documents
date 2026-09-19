@@ -58,26 +58,26 @@ Se utilizar um módulo adaptador USB-TTL:
 ### Instalar os pacotes de dependências
 
 ```Bash
-# 更新软件包
+# Atualizar os pacotes
 sudo apt update
 sudo apt upgrade -y
 
-# 安装 Python 库
+# Instalar as bibliotecas Python
 sudo apt install -y python3-pip
 
-# 安装 pyserial
+# Instalar o pyserial
 pip3 install pyserial
 ```
 
 ### Ativar a interface de porta série
 
 ```Bash
-# 打开配置工具
+# Abrir a ferramenta de configuração
 sudo raspi-config
 
-# 选择 Interface Options → Serial
+# Selecionar Interface Options → Serial
 Select: No (shell) → Yes (hardware serial port)
-# 重启生效
+# Tem efeito após reiniciar
 sudo reboot
 ```
 
@@ -90,7 +90,7 @@ sudo reboot
 ```Bash
 cd UART_Voice
 ls -la
-# 应该看到 uart_voice.py
+# Deverá ver uart_voice.py
 ```
 
 ### Configurar o dispositivo de porta série
@@ -98,13 +98,13 @@ ls -la
 Edite o ficheiro `uart_voice.py` e altere o dispositivo de porta série:
 
 ```Bash
-# UART 直连（默认）
+# Ligação direta UART (predefinição)
 SERIAL_PORT = '/dev/ttyAMA0'
 
-# 或者使用 USB-TTL
+# Ou utilizar um USB-TTL
 SERIAL_PORT = '/dev/ttyUSB0'
 
-# 波特率
+# Velocidade de transmissão
 BAUD_RATE = 115200
 ```
 
@@ -114,7 +114,7 @@ BAUD_RATE = 115200
 
 ```Bash
 chmod +x uart_voice.py
-# 运行（需要 sudo 权限访问串口）
+# Executar (é necessária permissão sudo para aceder à porta série)
 sudo python3 uart_voice.py
 ```
 
@@ -160,7 +160,7 @@ Prima `Ctrl + C` para parar o programa
 4. Verifique se a porta série está a ser utilizada por outro programa
 
 ```Bash
-# 查看可用串口
+# Ver as portas série disponíveis
 ls /dev/tty* | grep tty
 ```
 
@@ -203,7 +203,7 @@ ls /dev/tty* | grep tty
 4. Se a porta série está a ser utilizada por outro processo
 
 ```Bash
-# 检查串口占用
+# Verificar se a porta série está ocupada
 sudo lsof /dev/ttyAMA0
 ```
 
@@ -222,8 +222,8 @@ Se tiver problemas, verifique:
 ## Comandos de depuração comuns
 
 ```Bash
-ls -l /dev/ttyAMA0   # 查看串口设备
-groups                # 查看用户组权限
+ls -l /dev/ttyAMA0   # Ver os dispositivos de porta série
+groups                # Ver as permissões do grupo de utilizadores
 ```
 
 <RelatedProducts slugs="ai-voice-module" />

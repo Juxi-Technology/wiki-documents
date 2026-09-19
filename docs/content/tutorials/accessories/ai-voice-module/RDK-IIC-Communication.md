@@ -50,29 +50,29 @@ This repository provides Python example code for communication between the RDK X
 ### Install Dependency Packages
 
 ```Bash
-# 更新软件包
+# Update packages
 sudo apt update
 sudo apt upgrade -y
 
-# 安装 Python 库
+# Install Python libraries
 sudo apt install -y python3-pip python3-smbus i2c-tools
 ```
 
 ### Enable the I2C Interface
 
 ```Bash
-# 打开配置工具
+# Open the configuration tool
 sudo raspi-config
 
-# 选择 Interface Options → I2C → Enable
-# 重启生效
+# Select Interface Options → I2C → Enable
+# Reboot to take effect
 sudo reboot
 ```
 
 ### Test the Hardware Interfaces
 
 ```Bash
-# 测试 I2C 设备
+# Test the I2C device
 sudo i2cdetect -y 5
 ```
 
@@ -85,7 +85,7 @@ sudo i2cdetect -y 5
 ```Bash
 cd IIC_Voice
 ls -la
-# 应该看到 iic_voice.py
+# You should see iic_voice.py
 ```
 
 ### Configure the I2C Bus
@@ -93,23 +93,23 @@ ls -la
 Edit the `iic_voice.py` file and modify the required parameters:
 
 ```Bash
-# I2C 设备地址
+# I2C device address
 DEVICE_ADDRESS = 0x2A
 
-# 寄存器地址
+# Register address
 REG_RESULT = 0xDA
 
-# I2C 总线编号（根据实际连接修改）
-bus = smbus.SMBus(5)  # I2C 总线 5
+# I2C bus number (modify according to the actual connection)
+bus = smbus.SMBus(5)  # I2C bus 5
 ```
 
 ### Run the Program
 
 ```Bash
-# 赋予执行权限
+# Grant execute permission
 chmod +x iic_voice.py
 
-# 运行（需要 sudo 权限访问 I2C）
+# Run (sudo privileges required to access I2C)
 sudo python3 iic_voice.py
 ```
 
@@ -148,7 +148,7 @@ Program terminated
 
 ```Bash
 sudo usermod -aG i2c $USER
-# 重新登录生效
+# Takes effect after logging in again
 ```
 
 Or run the program with `sudo`
@@ -168,9 +168,9 @@ Or run the program with `sudo`
 4. Check whether the device is powered
 
 ```Bash
-# 扫描 I2C 设备
+# Scan I2C devices
 sudo i2cdetect -y 5
-# 如果看到 0x2A，说明设备连接正常
+# If you see 0x2A, the device is connected properly
 ```
 
 ---
@@ -214,8 +214,8 @@ If there are problems, please check:
 ## Common Debugging Commands
 
 ```Bash
-ls -l /dev/i2c*      # 查看 I2C 设备
-groups                # 查看用户组权限
+ls -l /dev/i2c*      # View I2C devices
+groups                # Check user group permissions
 ```
 
 <RelatedProducts slugs="ai-voice-module" />

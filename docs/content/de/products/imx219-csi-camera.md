@@ -34,7 +34,7 @@ Die 79°-IMX219-CSI-Kamera ist speziell für die NVIDIA-Jetson-Orin-Serie entwic
 
 ```python
 import cv2
-# CSI 摄像头 GStreamer 管道
+# GStreamer-Pipeline für die CSI-Kamera
 pipe = "nvarguscamerasrc ! video/x-raw(memory:NVMM) ! nvvidconv ! appsink"
 cap = cv2.VideoCapture(pipe, cv2.CAP_GSTREAMER)
 ```

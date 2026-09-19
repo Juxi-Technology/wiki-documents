@@ -49,7 +49,7 @@ Questa pinza flessibile TPU SO-ARM101 è progettata per il braccio XLerobot e su
 Con fotocamera sul braccio e LeRobot:
 
 ```bash
-# 录制视觉抓取数据
+# Registra dati di presa con visione
 lerobot-record \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \

@@ -53,10 +53,10 @@ Kamera am entsprechenden Träger befestigen, per USB mit Host (Jetson/Raspberry 
 LeRobot-Datenerfassung als Beispiel:
 
 ```bash
-# 查找相机
+# Kamera suchen
 python -m lerobot.find_cameras
 
-# 采集带视觉数据
+# Datenerfassung mit Kameradaten
 lerobot-record \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \

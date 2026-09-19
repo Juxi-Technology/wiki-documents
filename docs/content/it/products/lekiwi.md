@@ -31,8 +31,8 @@ Lekiwi è il robot mobile a intelligenza incarnata a basso costo di Juxi Technol
 ## Avvio rapido
 
 ```bash
-# 参考仓库 README 组装与接线
-# 12V 电源接入,USB 连接主控
+# Per il montaggio e il cablaggio fai riferimento al README del repository
+# Alimentazione a 12V, collega la scheda di controllo via USB
 ```
 ## Tutorial
 

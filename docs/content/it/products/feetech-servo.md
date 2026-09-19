@@ -37,8 +37,8 @@ I servo bus seriale Feetech sono il cuore di azionamento di bracci robotici come
 ## Avvio rapido
 
 ```bash
-# 上位机调试(Windows):下载 feetechrc.com/software.html
-# 选择端口,波特率 1000000,点击搜索
+# Debug con il software host (Windows): scarica da feetechrc.com/software.html
+# Seleziona la porta, baud rate 1000000, clicca su « 搜索 »
 ```
 ## Tutorial
 

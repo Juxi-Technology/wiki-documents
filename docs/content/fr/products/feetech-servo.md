@@ -37,8 +37,8 @@ Les servos bus série Feetech sont le cœur d'entraînement des bras robotiques 
 ## Démarrage rapide
 
 ```bash
-# 上位机调试(Windows):下载 feetechrc.com/software.html
-# 选择端口,波特率 1000000,点击搜索
+# Débogage avec le logiciel hôte (Windows) : télécharger feetechrc.com/software.html
+# Sélectionner le port, débit 1000000, cliquer sur « 搜索 »
 ```
 ## Tutoriels
 

@@ -82,14 +82,14 @@ La GUI include un pannello **Tracciamento dei gesti** (la telecamera segue i mov
 python serial_test.py COM3 nop
 
 # Gesto
-python serial_test.py COM3 rock         # 石头
-python serial_test.py COM3 thumbs_up    # 真棒
-python serial_test.py COM3 index        # 指向
-python serial_test.py COM3 open         # 张开
-python serial_test.py COM3 close        # 握拳
+python serial_test.py COM3 rock         # Sasso
+python serial_test.py COM3 thumbs_up    # Pollice in su
+python serial_test.py COM3 index        # Indice puntato
+python serial_test.py COM3 open         # Mano aperta
+python serial_test.py COM3 close        # Pugno
 
 # Azionamento diretto di un singolo servo
-python serial_test.py COM3 servo 1 90   # 舵机1 → 90°
+python serial_test.py COM3 servo 1 90   # Servomotore 1 → 90°
 
 # Centrare tutto
 python serial_test.py COM3 mid
@@ -99,8 +99,8 @@ python serial_test.py COM3 hand L
 python serial_test.py COM3 hand R
 
 # Scansione di frequenza/autotest
-python serial_test.py COM3 sweep 1      # 舵机1 扫频
-python serial_test.py COM3 test         # 全部舵机逐个测试
+python serial_test.py COM3 sweep 1      # Scansione di frequenza del servomotore 1
+python serial_test.py COM3 test         # Test di tutti i servomotori uno per uno
 ```
 
 ## 5. Domande frequenti

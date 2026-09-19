@@ -123,15 +123,15 @@ The adapter board has two sets of 5V/GND power ports:
 
 ```Plaintext
 esp-idf/AmazingHand_Serial/
-├── CMakeLists.txt              # 顶层工程配置
-├── sdkconfig.defaults          # 默认 Kconfig 配置
+├── CMakeLists.txt              # Top-level project configuration
+├── sdkconfig.defaults          # Default Kconfig configuration
 ├── main/
 │   ├── CMakeLists.txt
-│   └── main.c                  # FreeRTOS 双任务 + 初始化（胶水层）
+│   └── main.c                  # FreeRTOS dual task + initialization (glue layer)
 └── components/
-    ├── hand_servo/             # 舵机驱动（LEDC PWM + 校准数据）
-    ├── hand_gestures/          # 手势参数宏 + 手势函数 + 左右手控制
-    └── hand_protocol/          # 串口帧解析 + 命令分发
+    ├── hand_servo/             # Servo driver (LEDC PWM + calibration data)
+    ├── hand_gestures/          # Gesture parameter macros + gesture functions + left/right hand control
+    └── hand_protocol/          # Serial frame parsing + command dispatch
 ```
 
 #### Build Environment
@@ -424,25 +424,25 @@ python serial_test.py
 python serial_test.py COM3 nop
 
 # Send a gesture
-python serial_test.py COM3 rock        # 石头
-python serial_test.py COM3 thumbs_up    # 真棒
-python serial_test.py COM3 index        # 指向
-python serial_test.py COM3 open         # 张开
-python serial_test.py COM3 close        # 握拳
+python serial_test.py COM3 rock        # Rock
+python serial_test.py COM3 thumbs_up    # Thumbs Up
+python serial_test.py COM3 index        # Point
+python serial_test.py COM3 open         # Open
+python serial_test.py COM3 close        # Fist
 
 # Single-servo direct drive
-python serial_test.py COM3 servo 1 90   # 舵机1 → 90°
+python serial_test.py COM3 servo 1 90   # Servo 1 → 90°
 
 # Center all
 python serial_test.py COM3 mid
 
 # Set left/right hand
-python serial_test.py COM3 hand L       # 左手
-python serial_test.py COM3 hand R       # 右手
+python serial_test.py COM3 hand L       # Left hand
+python serial_test.py COM3 hand R       # Right hand
 
 # Sweep / self-test
-python serial_test.py COM3 sweep 1      # 舵机1 扫频
-python serial_test.py COM3 test         # 全部舵机逐个测试
+python serial_test.py COM3 sweep 1      # Servo 1 sweep
+python serial_test.py COM3 test         # Test all servos one by one
 ```
 
 #### Interactive Mode
@@ -480,7 +480,7 @@ echo -ne '\xAA\x01\x00\x01' > /dev/cu.usbserial-0001
 import serial
 import time
 
-SERIAL_PORT = "/dev/cu.usbserial-0001"  # 修改为实际端口
+SERIAL_PORT = "/dev/cu.usbserial-0001"  # Change to the actual port
 BAUD_RATE   = 115200
 
 # Command definitions (consistent with the firmware command set)
@@ -546,7 +546,7 @@ def direct_drive(ser, angles):
 # ===== Usage examples =====
 if __name__ == "__main__":
     ser = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=1)
-    time.sleep(1)  # 等待 ESP32 复位完成
+    time.sleep(1)  # Wait for the ESP32 reset to complete
 
 # 1. Link test
     print("=== NOP 链路测试 ===")
@@ -564,9 +564,9 @@ if __name__ == "__main__":
 
 # 4. Stop the test
     print("\n=== 停止测试 ===")
-    send_command(ser, CMD["taunt1"])  # 开始摇食指
+    send_command(ser, CMD["taunt1"])  # Start wiggling the index finger
     time.sleep(0.3)
-    send_command(ser, CMD["stop"])    # 立即停止
+    send_command(ser, CMD["stop"])    # Stop immediately
 
 # 5. Direct drive mode: center all
     print("\n=== 直驱: 归中 ===")
@@ -647,8 +647,8 @@ tracking_env\Scripts\python hand_gui.py
 The mapping coefficients are at the bottom of `hand_tracking.py` (`FLEX_SCALE` / `BASE_SCALE`):
 
 ```Python
-FLEX_SCALE = 80.0    # 指尖 z 分量 → 弯曲/伸直 (flex)
-BASE_SCALE = 30.0    # 指尖 x 分量 → 左右摆动 (base)
+FLEX_SCALE = 80.0    # Fingertip z component → bend/straighten (flex)
+BASE_SCALE = 30.0    # Fingertip x component → left/right swing (base)
 ```
 
 If the bend/extend range is insufficient or the direction is reversed, adjust `FLEX_SCALE`; if the left/right swing range is insufficient or reversed, adjust `BASE_SCALE` (the sign adjusts the direction).

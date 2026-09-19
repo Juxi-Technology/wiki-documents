@@ -123,15 +123,15 @@ ESP32-S3 開発ボードには 2 つの Type-C インターフェースがあり
 
 ```Plaintext
 esp-idf/AmazingHand_Serial/
-├── CMakeLists.txt              # 顶层工程配置
-├── sdkconfig.defaults          # 默认 Kconfig 配置
+├── CMakeLists.txt              # トップレベルのプロジェクト設定
+├── sdkconfig.defaults          # デフォルトの Kconfig 設定
 ├── main/
 │   ├── CMakeLists.txt
-│   └── main.c                  # FreeRTOS 双任务 + 初始化（胶水层）
+│   └── main.c                  # FreeRTOS の 2 タスク + 初期化（グルー層）
 └── components/
-    ├── hand_servo/             # 舵机驱动（LEDC PWM + 校准数据）
-    ├── hand_gestures/          # 手势参数宏 + 手势函数 + 左右手控制
-    └── hand_protocol/          # 串口帧解析 + 命令分发
+    ├── hand_servo/             # サーボドライバ（LEDC PWM + 校正データ）
+    ├── hand_gestures/          # ジェスチャーパラメータマクロ + ジェスチャー関数 + 左右手制御
+    └── hand_protocol/          # シリアルフレーム解析 + コマンド振り分け
 ```
 
 #### ビルド環境
@@ -424,14 +424,14 @@ python serial_test.py
 python serial_test.py COM3 nop
 
 # ジェスチャーを送信
-python serial_test.py COM3 rock        # 石头
-python serial_test.py COM3 thumbs_up    # 真棒
-python serial_test.py COM3 index        # 指向
-python serial_test.py COM3 open         # 张开
+python serial_test.py COM3 rock        # グー
+python serial_test.py COM3 thumbs_up    # サムズアップ
+python serial_test.py COM3 index        # 指差し
+python serial_test.py COM3 open         # 開く
 python serial_test.py COM3 close        # 握拳
 
 # 単一サーボのダイレクトドライブ
-python serial_test.py COM3 servo 1 90   # 舵机1 → 90°
+python serial_test.py COM3 servo 1 90   # サーボ1 → 90°
 
 # すべて中央に戻す
 python serial_test.py COM3 mid
@@ -441,8 +441,8 @@ python serial_test.py COM3 hand L       # 左手
 python serial_test.py COM3 hand R       # 右手
 
 # スイープ / セルフチェック
-python serial_test.py COM3 sweep 1      # 舵机1 扫频
-python serial_test.py COM3 test         # 全部舵机逐个测试
+python serial_test.py COM3 sweep 1      # サーボ1 スイープ
+python serial_test.py COM3 test         # すべてのサーボを順番にテスト
 ```
 
 #### 対話モード
@@ -480,7 +480,7 @@ echo -ne '\xAA\x01\x00\x01' > /dev/cu.usbserial-0001
 import serial
 import time
 
-SERIAL_PORT = "/dev/cu.usbserial-0001"  # 修改为实际端口
+SERIAL_PORT = "/dev/cu.usbserial-0001"  # 実際のポートに変更
 BAUD_RATE   = 115200
 
 # コマンド定義（ファームウェアのコマンドセットと一致）
@@ -546,7 +546,7 @@ def direct_drive(ser, angles):
 # ===== 使用例 =====
 if __name__ == "__main__":
     ser = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=1)
-    time.sleep(1)  # 等待 ESP32 复位完成
+    time.sleep(1)  # ESP32 のリセット完了を待機
 
 # 1. リンクテスト
     print("=== NOP 链路测试 ===")
@@ -564,9 +564,9 @@ if __name__ == "__main__":
 
 # 4. テストを停止
     print("\n=== 停止测试 ===")
-    send_command(ser, CMD["taunt1"])  # 开始摇食指
+    send_command(ser, CMD["taunt1"])  # 人差し指を振り始める
     time.sleep(0.3)
-    send_command(ser, CMD["stop"])    # 立即停止
+    send_command(ser, CMD["stop"])    # 即座に停止
 
 # 5. ダイレクトドライブモード: すべて中央に戻す
     print("\n=== 直驱: 归中 ===")
@@ -647,8 +647,8 @@ tracking_env\Scripts\python hand_gui.py
 マッピング係数は `hand_tracking.py` の末尾（`FLEX_SCALE` / `BASE_SCALE`）：
 
 ```Python
-FLEX_SCALE = 80.0    # 指尖 z 分量 → 弯曲/伸直 (flex)
-BASE_SCALE = 30.0    # 指尖 x 分量 → 左右摆动 (base)
+FLEX_SCALE = 80.0    # 指先の z 成分 → 屈曲/伸展 (flex)
+BASE_SCALE = 30.0    # 指先の x 成分 → 左右の振り (base)
 ```
 
 屈曲/伸展の振幅が不十分または方向が逆の場合は `FLEX_SCALE` を調整します；左右スイングの振幅が不十分または逆の場合は `BASE_SCALE` を調整します（正負の符号で方向を調整）。

@@ -37,8 +37,8 @@ Feetech(フィートック)シリアルバスサーボは SO-ARM101 などのロ
 ## クイックスタート
 
 ```bash
-# 上位机调试(Windows):下载 feetechrc.com/software.html
-# 选择端口,波特率 1000000,点击搜索
+# 上位機デバッグ(Windows): feetechrc.com/software.html をダウンロード
+# ポートを選択、ボーレート 1000000、「搜索」をクリック
 ```
 ## 関連チュートリアル
 

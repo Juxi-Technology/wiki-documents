@@ -188,12 +188,12 @@ lerobot-record \
 
 ```text
 ├── meta/
-│   ├── info.json         # 数据集信息(fps、特征形状等)
-│   ├── episodes/         # 每集的元数据(chunk-000/...)
-│   ├── stats.json        # 各特征归一化统计
-│   └── tasks.parquet     # 任务文本 → task_index
-├── data/                 # 每帧特征数据(chunk-*.parquet)
-└── videos/               # 每个摄像头一个子目录(chunk-*.mp4)
+│   ├── info.json         # データセット情報(fps、特徴量の形状など)
+│   ├── episodes/         # 各エピソードのメタデータ(chunk-000/...)
+│   ├── stats.json        # 各特徴量の正規化統計
+│   └── tasks.parquet     # タスクテキスト → task_index
+├── data/                 # 各フレームの特徴量データ(chunk-*.parquet)
+└── videos/               # カメラごとに 1 つのサブディレクトリ(chunk-*.mp4)
 ```
 
 ### 3.2 Hugging Face Hub へのアップロード

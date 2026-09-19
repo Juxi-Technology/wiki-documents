@@ -32,30 +32,30 @@ ls -l /dev/ttyU*
 Set Port Mapping
 
 ```Bash
-# 防止插拔后端口变更，请设置端口映射
+# To prevent the port from changing after unplugging, set up port mapping
 sudo gedit /etc/udev/rules.d/99-serial-imu.rules
 
-# 如出现没有gedit命令相关内容，先下载安装
+# If the message that the gedit command is not found appears, install it first
 sudo apt install gedit
 
-# 填写映射内容
+# Fill in the mapping content
 KERNEL=="ttyUSB*", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", MODE:="0777", SYMLINK+="imu-serial"
 
-# 参数说明：
+# Parameter description:
 `--mode`: 通信模式，可选值为`serial`(串口)或`i2c`
 `--port`: 串口名(如`/dev/ttyUSB0`)或I2C端口号(如`7`)
 `--rate`: 数据打印频率(Hz)，默认10Hz
 `--debug`: 启用调试模式，显示详细信息
 
-# 保存退出，运行命令使规则生效
+# Save and exit, then run the command to apply the rules
 sudo udevadm trigger
 sudo service udev reload
 sudo service udev restart
 
-# 验证
+# Verify
 ll /dev/imu-serial
 
-# 输出示例：
+# Output example:
 lrwxrwxrwx 1 root root 7 1月 22 10:00 /dev/imu-serial -> ttyUSB0
 ```
 
@@ -86,7 +86,7 @@ Drag the extracted files onto RDK X5 via MobaXterm software.
 ```PowerShell
 cd ~/IMU_ROS2/IMU_Library
 
-# 运行 IMU 数据打印文件
+# Run the IMU data printing file
 python3 -m IMU_Library.IMU_Serial_Library
 ```
 
@@ -101,17 +101,17 @@ Note: The above is the data reading for a 10-axis IMU. The 6-axis has no Magneto
 ```PowerShell
 cd ~/IMU_Library
 
-# 运行 IMU 校准代码文件 --串口通讯校准
-# 执行所有校准（整体、磁力计、温度）
+# Run the IMU calibration code file -- serial communication calibration
+# Run all calibrations (full, magnetometer, temperature)
 python3 -m IMU_Library.imu_calibration_tool --mode serial --port /dev/imu-serial
 
-# 仅整体校准
+# Full calibration only
 python3 -m IMU_Library.imu_calibration_tool --mode serial --port /dev/imu-serial --calibrate imu
 
-# 仅磁力计校准
+# Magnetometer only
 python3 -m IMU_Library.imu_calibration_tool --mode serial --port /dev/imu-serial --calibrate mag
 
-# 仅温度校准
+# Temperature only
 python3 -m IMU_Library.imu_calibration_tool --mode serial --port /dev/imu-serial --calibrate temp
 ```
 

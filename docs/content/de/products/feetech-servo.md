@@ -37,8 +37,8 @@ Die Feetech-Serienbus-Servos sind das Antriebszentrum von Roboterarmen wie dem S
 ## Schnellstart
 
 ```bash
-# 上位机调试(Windows):下载 feetechrc.com/software.html
-# 选择端口,波特率 1000000,点击搜索
+# Debugging mit der Host-Software (Windows): feetechrc.com/software.html herunterladen
+# Port wählen, Baudrate 1000000, auf „搜索“ klicken
 ```
 ## Verwandte Tutorials
 

@@ -53,10 +53,10 @@ SO-ARM101 로봇 팔 비전 키트는 로봇 팔을 위해 설계된 카메라 �
 LeRobot 데이터 수집 예시:
 
 ```bash
-# 查找相机
+# 카메라 찾기
 python -m lerobot.find_cameras
 
-# 采集带视觉数据
+# 비전 데이터 포함 수집
 lerobot-record \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \

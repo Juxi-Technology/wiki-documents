@@ -59,7 +59,7 @@ Drag the decompressed files onto Raspberry Pi 5 via MobaXterm software.
 ```PowerShell
 cd ~/imu_ros2/src/IMU_ROS1/IMU_Library
 
-# 运行 IMU 数据打印文件
+# Run the IMU data printing file
 python3 -m IMU_Library.IMU_I2C_Library
 ```
 
@@ -74,17 +74,17 @@ Note: The above is the data reading for a 10-axis IMU. The 6-axis has no Magneto
 ```PowerShell
 cd ~/IMU_Library
 
-# 运行 IMU 校准代码文件 --I2C通讯校准
-# 执行所有校准（整体、磁力计、温度）
+# Run the IMU calibration code file -- I2C communication calibration
+# Run all calibrations (full, magnetometer, temperature)
 python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 1
 
-# 仅整体校准
+# Full calibration only
 python3-m IMU_Library.imu_calibration_tool --mode i2c --port 1 --calibrate imu
 
-# 仅磁力计校准
+# Magnetometer only
 python3-m IMU_Library.imu_calibration_tool --mode i2c --port 1 --calibrate mag
 
-# 仅温度校准
+# Temperature only
 python3-m IMU_Library.imu_calibration_tool --mode i2c --port 1 --calibrate temp
 ```
 

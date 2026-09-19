@@ -37,11 +37,11 @@ keywords: [imu, 관성항법, 자세 센서, ahrs, ros]
 
 ## 빠른 시작
 ```bash
-# ROS2 启动
+# ROS2 실행
 ros2 launch icm42670p imu_launch.py
 ros2 topic echo /imu/data
 
-# 校准(首次使用)
+# 캘리브레이션(최초 사용 시)
 python3 imu_calibration_tool.py --mode serial --port /dev/ttyUSB0
 ```
 ## 관련 튜토리얼

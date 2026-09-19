@@ -49,7 +49,7 @@ Dieser SO-ARM101-TPU-Flex-Greifer ist für den XLerobot-Roboterarm konzipiert un
 Mit Armkamera und LeRobot:
 
 ```bash
-# 录制视觉抓取数据
+# Visuelle Greifdaten aufzeichnen
 lerobot-record \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \

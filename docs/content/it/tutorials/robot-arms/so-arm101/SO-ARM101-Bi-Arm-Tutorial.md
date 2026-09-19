@@ -188,12 +188,12 @@ I dati vengono salvati in `./datasets/bi_so101_task/`, con questa struttura:
 
 ```text
 ├── meta/
-│   ├── info.json         # 数据集信息(fps、特征形状等)
-│   ├── episodes/         # 每集的元数据(chunk-000/...)
-│   ├── stats.json        # 各特征归一化统计
-│   └── tasks.parquet     # 任务文本 → task_index
-├── data/                 # 每帧特征数据(chunk-*.parquet)
-└── videos/               # 每个摄像头一个子目录(chunk-*.mp4)
+│   ├── info.json         # Informazioni sul dataset (fps, forma delle feature, ecc.)
+│   ├── episodes/         # Metadati di ogni episodio (chunk-000/...)
+│   ├── stats.json        # Statistiche di normalizzazione di ciascuna feature
+│   └── tasks.parquet     # Testo del task → task_index
+├── data/                 # Dati delle feature per ogni frame (chunk-*.parquet)
+└── videos/               # Una sottodirectory per ogni telecamera (chunk-*.mp4)
 ```
 
 ### 3.2 Upload su Hugging Face Hub

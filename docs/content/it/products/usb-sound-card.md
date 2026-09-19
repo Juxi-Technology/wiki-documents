@@ -32,10 +32,10 @@ La scheda audio USB senza driver integra microfono e altoparlante — il sistema
 ## Avvio rapido
 
 ```bash
-# 插入 USB 即自动识别
-# 验证设备
-arecord -l    # 录音设备
-aplay -l      # 播放设备
+# Inserisci l'USB per il riconoscimento automatico
+# Verifica i dispositivi
+arecord -l    # Dispositivo di registrazione
+aplay -l      # Dispositivo di riproduzione
 ```
 ## Tutorial
 

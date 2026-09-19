@@ -9,10 +9,10 @@ description: "Communication par port série entre un Arduino et le module d'inte
 
 ```Plain Text
 UART_Voice/
-├── UART_Voice.ino    # 主程序
-├── bsp_uart.hpp         # 头文件（协议帧和函数声明）
-├── bsp_uart.cpp         # 实现文件
-└── README.md              # 本教程
+├── UART_Voice.ino    # Programme principal
+├── bsp_uart.hpp         # Fichier d'en-tête (trames de protocole et déclarations de fonctions)
+├── bsp_uart.cpp         # Fichier d'implémentation
+└── README.md              # Ce tutoriel
 ```
 
 ---
@@ -207,7 +207,7 @@ void setup() {
 
   Serial.println("UART Voice Module Initialized");
 
-  UART_SetCommandVoice(0x00);  // 上电播报命令词语音
+  UART_SetCommandVoice(0x00);  // Diffuser la voix du mot de commande à la mise sous tension
   delay(200);
 }
 
@@ -215,21 +215,21 @@ void loop() {
   int commandId = UART_ReadCommand();
 
   if (commandId >= 0) {
-    // 过滤无效值，防止重复输出
+    // Filtrer les valeurs invalides pour éviter les sorties en double
     if (commandId != 0 && commandId != 255 && commandId != lastCommandId) {
       Serial.print("ID: ");
       Serial.println(commandId);
       lastCommandId = commandId;
 
-      // 示例：根据识别到的命令控制播报
+      // Exemple : contrôler la diffusion selon la commande reconnue
       if (commandId == 1) {
-        UART_SetCommandVoice(0x00);  // 识别到命令1，播报命令词语音
+        UART_SetCommandVoice(0x00);  // Commande 1 reconnue, diffuser la voix du mot de commande
       } else if (commandId == 2) {
-        UART_SetCommandVoice(0x00);  // 识别到命令2，播报命令词语音
+        UART_SetCommandVoice(0x00);  // Commande 2 reconnue, diffuser la voix du mot de commande
       }
     } else if (commandId == 0 || commandId == 255) {
       if (lastCommandId != 0) {
-        lastCommandId = 0;  // 重置状态
+        lastCommandId = 0;  // Réinitialiser l'état
       }
     }
   }
@@ -320,11 +320,11 @@ Les modifications du code lié à l'UART se font uniquement dans `bsp_uart.cpp` 
 
 ```Plain Text
 if (commandId == 1) {
-  UART_SetCommandVoice(0x00);      // 播报命令词
+  UART_SetCommandVoice(0x00);      // Diffuser le mot de commande
 } else if (commandId == 2) {
-  UART_SetFunctionVoice(0x00);     // 播报功能词
+  UART_SetFunctionVoice(0x00);     // Diffuser le mot de fonction
 } else if (commandId == 3) {
-  UART_SetPassiveVoice(0x00);      // 播报被动语
+  UART_SetPassiveVoice(0x00);      // Diffuser la voix passive
 }
 ```
 
@@ -332,8 +332,8 @@ if (commandId == 1) {
 
 ```Plain Text
 if (commandId == 10) {
-  digitalWrite(LED_PIN, LOW);    // 关灯
-  UART_SetCommandVoice(0x00);     // 播报确认
+  digitalWrite(LED_PIN, LOW);    // Éteindre la lumière
+  UART_SetCommandVoice(0x00);     // Diffuser la confirmation
 }
 ```
 
@@ -342,7 +342,7 @@ if (commandId == 10) {
 ```Plain Text
 if (commandId == 11) {
   motor_stop();
-  UART_SetCommandVoice(0x00);     // 播报确认
+  UART_SetCommandVoice(0x00);     // Diffuser la confirmation
 }
 ```
 

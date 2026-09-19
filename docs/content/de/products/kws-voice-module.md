@@ -37,8 +37,8 @@ Das KWS-Modul (Keyword Spotting) unterstützt das Herunterladen und Brennen chin
 ## Schnellstart
 
 ```bash
-# 烧录固件(参考教程)
-# Python 串口通信示例
+# Firmware flashen (siehe Tutorial)
+# Beispiel für serielle Kommunikation mit Python
 import serial
 ser = serial.Serial('/dev/ttyUSB0', 115200)
 while True:

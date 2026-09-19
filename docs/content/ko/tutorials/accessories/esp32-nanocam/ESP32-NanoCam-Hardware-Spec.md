@@ -351,7 +351,7 @@ Q1, Q2(S8050 NPN 트랜지스터)를 사용해 자동 플래싱을 구현합니�
 ### 9.1 sdkconfig 주요 항목
 
 ```Plaintext
-# 芯片
+# 칩
 CONFIG_IDF_TARGET_ESP32S3=y
 CONFIG_ESP32S3_DEFAULT_CPU_FREQ_240=y
 
@@ -373,7 +373,7 @@ CONFIG_ESP32S3_INSTRUCTION_CACHE_32KB=y
 CONFIG_ESP32S3_DATA_CACHE_64KB=y
 CONFIG_ESP32S3_DATA_CACHE_LINE_64B=y
 
-# 摄像头
+# 카메라
 CONFIG_CAMERA_MODULE_CUSTOM=y
 CONFIG_CAMERA_PIN_XCLK=9
 CONFIG_CAMERA_PIN_PCLK=6
@@ -393,7 +393,7 @@ CONFIG_CAMERA_PIN_Y8=8
 CONFIG_CAMERA_PIN_Y9=10
 CONFIG_CAMERA_XCLK_FREQ=24000000
 
-# 音频 (ES8311 Codec, I2S0)
+# 오디오 (ES8311 Codec, I2S0)
 # ES8311 I2S: MCLK=39, BCLK=38, WS=47, DOUT=48, DIN=40
 # ES8311 I2C: SDA=41, SCL=42, addr=0x30
 ```
@@ -401,7 +401,7 @@ CONFIG_CAMERA_XCLK_FREQ=24000000
 ### 9.2 카메라 구성
 
 ```C
-// esp32-camera 引脚配置
+// esp32-camera 핀 설정
 camera_config_t config = {
     .pin_pwdn  = 12,
     .pin_reset = 14,
@@ -420,7 +420,7 @@ camera_config_t config = {
     .pin_href  = 11,
     .pin_pclk  = 6,
     .xclk_freq_hz = 24000000,
-    .pixel_format = PIXFORMAT_RGB565,  // 或 PIXFORMAT_JPEG
+    .pixel_format = PIXFORMAT_RGB565,  // 또는 PIXFORMAT_JPEG
     .frame_size   = FRAMESIZE_QVGA,    // 320x240
     .jpeg_quality = 12,
     .fb_count     = 2,

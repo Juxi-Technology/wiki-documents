@@ -59,10 +59,10 @@ Type-C-Datenkabel direkt anschließen, Plug-and-Play (Standard 9600bps).
 ### 3. Position prüfen
 
 ```bash
-# 安装 pynmea2 解析 NMEA 数据
+# pynmea2 installieren, um NMEA-Daten zu parsen
 pip install pynmea2
 
-# 读取定位数据示例
+# Beispiel zum Auslesen der Positionsdaten
 import serial
 import pynmea2
 

@@ -53,7 +53,7 @@ I (xxxxx) detection_result:       left eye: ( 90,  80), right eye: (150,  80), n
 ### Arduino: ler as coordenadas e controlar o servo
 
 ```C++
-// 解析 $face:x,y,w,h# 格式
+// Analisar o formato $face:x,y,w,h#
 if (nanoSerial.available()) {
     String line = nanoSerial.readStringUntil('\n');
     if (line.startsWith("$face:")) {

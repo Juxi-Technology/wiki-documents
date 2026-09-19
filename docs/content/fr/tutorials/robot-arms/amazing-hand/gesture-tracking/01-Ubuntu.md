@@ -348,14 +348,14 @@ Diagnostic et solution (dans l'ordre) :
 
 ```Plain Text
 ls -l /dev/video0
-sudo usermod -aG video $USER   # 加入 video 组，注销重登
+sudo usermod -aG video $USER   # Rejoindre le groupe video, se déconnecter puis se reconnecter
 ```
 
 4. Utilisez v4l2 pour vérifier si la caméra produit réellement des images (si elle en produit = le pilote fonctionne, le problème vient de la compatibilité avec OpenCV) :
 
 ```Bash
 v4l2-ctl --device=/dev/video0 --set-fmt-video=width=640,height=480,pixelformat=MJPG --stream-mmap --stream-count=1 --stream-to=/tmp/frame.jpg
-ls -l /tmp/frame.jpg   # 有几十~几百KB = 流通
+ls -l /tmp/frame.jpg   # Quelques dizaines à quelques centaines de Ko = flux actif
 ```
 
 ### 9.7 Le numéro de port change à chaque fois

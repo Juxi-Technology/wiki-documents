@@ -32,10 +32,10 @@ La carte son USB sans pilote intègre micro et haut-parleur — le système la d
 ## Démarrage rapide
 
 ```bash
-# 插入 USB 即自动识别
-# 验证设备
-arecord -l    # 录音设备
-aplay -l      # 播放设备
+# Reconnaissance automatique dès le branchement USB
+# Vérifier le périphérique
+arecord -l    # Périphérique d'enregistrement
+aplay -l      # Périphérique de lecture
 ```
 ## Tutoriels
 

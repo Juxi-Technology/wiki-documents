@@ -58,26 +58,26 @@ USB-TTL 変換モジュールを使用する場合：
 ### 依存パッケージのインストール
 
 ```Bash
-# 更新软件包
+# ソフトウェアパッケージを更新
 sudo apt update
 sudo apt upgrade -y
 
-# 安装 Python 库
+# Python ライブラリをインストール
 sudo apt install -y python3-pip
 
-# 安装 pyserial
+# pyserial をインストール
 pip3 install pyserial
 ```
 
 ### シリアルポートインターフェースの有効化
 
 ```Bash
-# 打开配置工具
+# 設定ツールを開く
 sudo raspi-config
 
-# 选择 Interface Options → Serial
+# Interface Options → Serial を選択
 Select: No (shell) → Yes (hardware serial port)
-# 重启生效
+# 再起動で有効になる
 sudo reboot
 ```
 
@@ -90,7 +90,7 @@ sudo reboot
 ```Bash
 cd UART_Voice
 ls -la
-# 应该看到 uart_voice.py
+# uart_voice.py が表示されるはず
 ```
 
 ### シリアルポートデバイスの設定
@@ -98,13 +98,13 @@ ls -la
 `uart_voice.py` ファイルを編集し、シリアルデバイスを変更します：
 
 ```Bash
-# UART 直连（默认）
+# UART 直結（デフォルト）
 SERIAL_PORT = '/dev/ttyAMA0'
 
-# 或者使用 USB-TTL
+# または USB-TTL を使用
 SERIAL_PORT = '/dev/ttyUSB0'
 
-# 波特率
+# ボーレート
 BAUD_RATE = 115200
 ```
 
@@ -114,7 +114,7 @@ BAUD_RATE = 115200
 
 ```Bash
 chmod +x uart_voice.py
-# 运行（需要 sudo 权限访问串口）
+# 実行（シリアルポートへのアクセスには sudo 権限が必要）
 sudo python3 uart_voice.py
 ```
 
@@ -160,7 +160,7 @@ ID:10
 4. シリアルポートが他のプログラムに占有されていないか確認する
 
 ```Bash
-# 查看可用串口
+# 利用可能なシリアルポートを確認
 ls /dev/tty* | grep tty
 ```
 
@@ -203,7 +203,7 @@ ls /dev/tty* | grep tty
 4. シリアルポートが他のプロセスに占有されていないか
 
 ```Bash
-# 检查串口占用
+# シリアルポートの占有状況を確認
 sudo lsof /dev/ttyAMA0
 ```
 
@@ -222,8 +222,8 @@ sudo lsof /dev/ttyAMA0
 ## よく使うデバッグコマンド
 
 ```Bash
-ls -l /dev/ttyAMA0   # 查看串口设备
-groups                # 查看用户组权限
+ls -l /dev/ttyAMA0   # シリアルデバイスを確認
+groups                # ユーザーグループの権限を確認
 ```
 
 <RelatedProducts slugs="ai-voice-module" />

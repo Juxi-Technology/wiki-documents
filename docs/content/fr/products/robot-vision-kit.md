@@ -53,10 +53,10 @@ Fixer le module caméra au support, connecter en USB à l'hôte (Jetson/Raspberr
 Exemple de collecte LeRobot :
 
 ```bash
-# 查找相机
+# Rechercher les caméras
 python -m lerobot.find_cameras
 
-# 采集带视觉数据
+# Collecter des données avec vision
 lerobot-record \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \

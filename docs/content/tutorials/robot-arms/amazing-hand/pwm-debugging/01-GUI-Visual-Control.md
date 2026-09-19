@@ -82,14 +82,14 @@ The GUI includes a built-in **gesture tracking** panel (the camera follows hand 
 python serial_test.py COM3 nop
 
 # Gestures
-python serial_test.py COM3 rock         # 石头
-python serial_test.py COM3 thumbs_up    # 真棒
-python serial_test.py COM3 index        # 指向
-python serial_test.py COM3 open         # 张开
-python serial_test.py COM3 close        # 握拳
+python serial_test.py COM3 rock         # Rock
+python serial_test.py COM3 thumbs_up    # Thumbs Up
+python serial_test.py COM3 index        # Point
+python serial_test.py COM3 open         # Open
+python serial_test.py COM3 close        # Fist
 
 # Single-servo direct drive
-python serial_test.py COM3 servo 1 90   # 舵机1 → 90°
+python serial_test.py COM3 servo 1 90   # Servo 1 → 90°
 
 # Center all
 python serial_test.py COM3 mid
@@ -99,8 +99,8 @@ python serial_test.py COM3 hand L
 python serial_test.py COM3 hand R
 
 # Sweep/self-test
-python serial_test.py COM3 sweep 1      # 舵机1 扫频
-python serial_test.py COM3 test         # 全部舵机逐个测试
+python serial_test.py COM3 sweep 1      # Servo 1 sweep
+python serial_test.py COM3 test         # Test all servos one by one
 ```
 
 ## 5. FAQ

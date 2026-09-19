@@ -34,7 +34,7 @@ keywords: [imx219, csi camera, jetson, カメラ]
 
 ```python
 import cv2
-# CSI 摄像头 GStreamer 管道
+# CSI カメラの GStreamer パイプライン
 pipe = "nvarguscamerasrc ! video/x-raw(memory:NVMM) ! nvvidconv ! appsink"
 cap = cv2.VideoCapture(pipe, cv2.CAP_GSTREAMER)
 ```

@@ -33,8 +33,8 @@ Die 2-DOF-Servo-Pan-Tilt-Einheit nutzt hochpräzise SCS0009-Serienbus-Servos fü
 
 ## Schnellstart
 ```bash
-# USB 连接主控,摄像头即插即用
-# Python SDK 控制云台
+# USB mit dem Hauptcontroller verbinden, Kamera ist sofort einsatzbereit
+# Gimbal-Steuerung über das Python SDK
 from sc_servo import SCServo, Gimbal
 servo = SCServo("COM3")  # Linux: /dev/ttyUSB0
 servo.connect()

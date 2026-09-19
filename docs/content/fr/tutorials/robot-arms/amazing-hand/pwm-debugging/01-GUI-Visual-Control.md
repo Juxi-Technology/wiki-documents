@@ -82,14 +82,14 @@ La GUI intègre un panneau **suivi de gestes** (la caméra suit les mouvements d
 python serial_test.py COM3 nop
 
 # Geste
-python serial_test.py COM3 rock         # 石头
-python serial_test.py COM3 thumbs_up    # 真棒
-python serial_test.py COM3 index        # 指向
-python serial_test.py COM3 open         # 张开
-python serial_test.py COM3 close        # 握拳
+python serial_test.py COM3 rock         # Pierre
+python serial_test.py COM3 thumbs_up    # Pouce levé
+python serial_test.py COM3 index        # Pointer
+python serial_test.py COM3 open         # Ouvrir
+python serial_test.py COM3 close        # Poing fermé
 
 # Entraînement direct d'un seul servo
-python serial_test.py COM3 servo 1 90   # 舵机1 → 90°
+python serial_test.py COM3 servo 1 90   # Servomoteur 1 → 90°
 
 # Tout au centre
 python serial_test.py COM3 mid
@@ -99,8 +99,8 @@ python serial_test.py COM3 hand L
 python serial_test.py COM3 hand R
 
 # Balayage de fréquence/autotest
-python serial_test.py COM3 sweep 1      # 舵机1 扫频
-python serial_test.py COM3 test         # 全部舵机逐个测试
+python serial_test.py COM3 sweep 1      # Balayage de fréquence du servomoteur 1
+python serial_test.py COM3 test         # Test de chaque servomoteur un par un
 ```
 
 ## 5. Questions fréquentes

@@ -252,7 +252,7 @@ lerobot-setup-motors \
 ```Shell
 sudo nano ~/.bashrc
 
-# 在文件末尾加入
+# ファイルの末尾に追記
 export HF_ENDPOINT=https://hf-mirror.com
 ```
 
@@ -260,7 +260,7 @@ export HF_ENDPOINT=https://hf-mirror.com
 source ~/.bashrc
 echo $HF_ENDPOINT
 
-# 输出
+# 出力
 # https://hf-mirror.com
 ```
 
@@ -269,14 +269,14 @@ echo $HF_ENDPOINT
 ```Shell
 sudo nano ~/.zshrc
 
-# 在文件末尾加入
+# ファイルの末尾に追記
 export HF_ENDPOINT=https://hf-mirror.com
 ```
 
 ```Shell
 source ~/.zshrc
 
-# 输出
+# 出力
 # https://hf-mirror.com
 ```
 
@@ -372,7 +372,7 @@ remote_ip: Raspberry Pi の IP アドレス
 ```Bash
 lerobot-calibrate \
     --teleop.type=so100_leader \
-    --teleop.port=/dev/tty.usbmodem58760431551 \ #修改为找到的端口号
+    --teleop.port=/dev/tty.usbmodem58760431551 \ #見つかったポート番号に変更
     --teleop.id=my_awesome_leader_arm
 ```
 

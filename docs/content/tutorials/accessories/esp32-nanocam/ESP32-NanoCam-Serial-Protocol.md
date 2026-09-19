@@ -104,11 +104,11 @@ description: "ESP32-NanoCam serial AT protocol manual: complete command referenc
 ### Face Recognition Workflow
 
 ```Plaintext
-ai_mode:4          # 进入人脸识别模式 (设备自动重启)
-face_eril          # 注册人脸 (确保只有一张脸在画面中)
-face_rz            # 开始持续识别 — 标签持续显示不消失
-face_detect        # 退出识别模式 — 标签清除
-face_del           # 删除最后注册的人脸
+ai_mode:4          # Enter face recognition mode (device reboots automatically)
+face_eril          # Enroll the face (make sure only one face is in the frame)
+face_rz            # Start continuous recognition — the label stays visible without disappearing
+face_detect        # Exit recognition mode — labels are cleared
+face_del           # Delete the last enrolled face
 ```
 
 ### Face Recognition Notes

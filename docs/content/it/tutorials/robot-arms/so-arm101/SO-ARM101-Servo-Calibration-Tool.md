@@ -128,7 +128,7 @@ sudo apt install python3-venv fonts-noto-cjk fonts-noto-color-emoji
 
 ```bash
 sudo usermod -a -G dialout $USER
-# 注销并重新登录后生效
+# Effettivo dopo logout e nuovo login
 ```
 
 Verifica (l'output deve contenere `dialout`):
@@ -162,14 +162,14 @@ Output tipico:
 
 ```
 /dev/ttyUSB0   # CH340 / CP2102 / PL2303
-/dev/ttyACM0   # 原生 USB 串口（Arduino / ESP32 板载）
+/dev/ttyACM0   # Porta seriale USB nativa (integrata su Arduino / ESP32)
 ```
 
 Visualizzare informazioni dettagliate sul produttore:
 
 ```bash
 dmesg | tail -20 | grep -i tty
-# 或
+# Oppure
 lsusb
 ```
 
@@ -196,10 +196,10 @@ Dopodiché `ls -l /dev/ttyServo` permette di accedere con il nome fisso; per l'I
 1. Installare Python con Homebrew (per evitare che la versione di Python preinstallata dal sistema sia troppo vecchia):
 
 ```bash
-# 安装 Homebrew（如果没有）
+# Installa Homebrew (se non presente)
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# 安装 Python
+# Installa Python
 brew install python
 ```
 
@@ -237,7 +237,7 @@ Output tipico:
 
 ```
 /dev/cu.usbserial-0001      # CP2102 / FTDI
-/dev/cu.usbmodem141101      # 板载 USB 串口（Arduino / ESP32）
+/dev/cu.usbmodem141101      # Porta seriale USB integrata (Arduino / ESP32)
 /dev/cu.wchusbserial1420    # CH340
 ```
 
@@ -342,10 +342,10 @@ Nell'area «Parametri xdat (solo salvataggio EEPROM)» della pagina FT debugger:
 ### 11. Calibrazione LeRobot (riga di comando)
 
 ```bash
-# 校准从动臂（保存到 ~/.cache/huggingface/lerobot/calibration/robots/so_follower/）
+# Calibra il braccio follower (salvato in ~/.cache/huggingface/lerobot/calibration/robots/so_follower/)
 python -m src.tools.lerobot_calibrate --arm-type follower
 
-# 校准领导臂
+# Calibra il braccio leader
 python -m src.tools.lerobot_calibrate --arm-type leader
 ```
 
@@ -364,28 +364,28 @@ Per l'installazione dell'ambiente LeRobot e il flusso di raccolta dati vedere il
 Oltre all'interfaccia grafica, il tool fornisce i seguenti comandi da riga di comando (senza GUI):
 
 ```bash
-# 扫描舵机
+# Scansiona i servomotori
 python -m src.tools.scan_id
 
-# 舵机快速中位校准
+# Calibrazione rapida del punto medio dei servomotori
 python -m src.tools.servo_quick_calibration
 
-# 舵机中位测试
+# Test del punto medio dei servomotori
 python -m src.tools.servo_center_test
 
-# 失能全部舵机
+# Disattiva tutti i servomotori
 python -m src.tools.servo_disable
 
-# LeRobot 风格校准
+# Calibrazione in stile LeRobot
 python -m src.tools.lerobot_calibrate
 
-# LeRobot 风格校准（指定串口）
+# Calibrazione in stile LeRobot (porta seriale specificata)
 python -m src.tools.lerobot_calibrate /dev/ttyACM0
 
-# LeRobot 风格校准（指定串口，macOS）
+# Calibrazione in stile LeRobot (porta seriale specificata, macOS)
 python -m src.tools.lerobot_calibrate /dev/cu.usbserial-0001
 
-# 双端口同步遥控
+# Telecomando sincronizzato a doppia porta
 python -m src.tools.servo_remote_control
 ```
 
@@ -431,25 +431,25 @@ python -m src.tools.servo_remote_control
 
 ```
 Juxi_ServoController/
-├── docs/                    # 分系统教程
+├── docs/                    # Tutorial per sottosistema
 │   ├── Windows教程.md
 │   ├── Linux教程.md
 │   └── macOS教程.md
 ├── src/
-│   ├── gui/                  # PySide6 图形界面
-│   │   ├── factory_calibration_tool.py   # 主工具（双串口标定 + 遥控 + 语言切换）
-│   │   ├── ft_debugger.py                # FT 调试器（参数读写 / xdat 备份）
-│   │   ├── calibration_wizard.py         # LeRobot 校准向导
-│   │   ├── theme_utils.py                # 浅色主题
-│   │   └── language_dialog.py            # 语言选择对话框
-│   ├── tools/                # 命令行工具
-│   ├── xdat_utils.py         # xdat 参数文件读写
-│   ├── i18n*.py / i18n_translations/     # 中英文国际化
-│   ├── port_utils.py         # 串口检测
+│   ├── gui/                  # Interfaccia grafica PySide6
+│   │   ├── factory_calibration_tool.py   # Strumento principale (calibrazione a doppia porta seriale + telecomando + cambio lingua)
+│   │   ├── ft_debugger.py                # Debugger FT (lettura/scrittura dei parametri / backup xdat)
+│   │   ├── calibration_wizard.py         # Procedura guidata di calibrazione LeRobot
+│   │   ├── theme_utils.py                # Tema chiaro
+│   │   └── language_dialog.py            # Finestra di selezione della lingua
+│   ├── tools/                # Strumenti da riga di comando
+│   ├── xdat_utils.py         # Lettura/scrittura dei file di parametri xdat
+│   ├── i18n*.py / i18n_translations/     # Internazionalizzazione cinese/inglese
+│   ├── port_utils.py         # Rilevamento della porta seriale
 │   └── calibration_manager.py# LeRobot 校准文件管理
-├── scservo_sdk/              # FTServo 舵机通信 SDK
+├── scservo_sdk/              # SDK di comunicazione per servomotori FTServo
 ├── requirements.txt
-└── setup.py                  # 环境检查脚本
+└── setup.py                  # Script di verifica dell'ambiente
 ```
 
 Questo repository del tool è composto dai moduli `src/gui` (interfaccia grafica PySide6), `src/tools` (strumenti da riga di comando), `scservo_sdk` (SDK di comunicazione per servo FTServo) e `setup.py` (script di verifica dell'ambiente).

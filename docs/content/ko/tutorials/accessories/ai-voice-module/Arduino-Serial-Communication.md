@@ -9,10 +9,10 @@ description: "AI 음성 인터랙션 모듈 Arduino 시리얼 통신 튜토리�
 
 ```Plain Text
 UART_Voice/
-├── UART_Voice.ino    # 主程序
-├── bsp_uart.hpp         # 头文件（协议帧和函数声明）
-├── bsp_uart.cpp         # 实现文件
-└── README.md              # 本教程
+├── UART_Voice.ino    # 메인 프로그램
+├── bsp_uart.hpp         # 헤더 파일(프로토콜 프레임 및 함수 선언)
+├── bsp_uart.cpp         # 구현 파일
+└── README.md              # 본 튜토리얼
 ```
 
 ---
@@ -207,7 +207,7 @@ void setup() {
 
   Serial.println("UART Voice Module Initialized");
 
-  UART_SetCommandVoice(0x00);  // 上电播报命令词语音
+  UART_SetCommandVoice(0x00);  // 전원 투입 시 명령어 음성 재생
   delay(200);
 }
 
@@ -215,21 +215,21 @@ void loop() {
   int commandId = UART_ReadCommand();
 
   if (commandId >= 0) {
-    // 过滤无效值，防止重复输出
+    // 잘못된 값 필터링, 중복 출력 방지
     if (commandId != 0 && commandId != 255 && commandId != lastCommandId) {
       Serial.print("ID: ");
       Serial.println(commandId);
       lastCommandId = commandId;
 
-      // 示例：根据识别到的命令控制播报
+      // 예시: 인식된 명령에 따라 재생 제어
       if (commandId == 1) {
-        UART_SetCommandVoice(0x00);  // 识别到命令1，播报命令词语音
+        UART_SetCommandVoice(0x00);  // 명령 1 인식 시 명령어 음성 재생
       } else if (commandId == 2) {
-        UART_SetCommandVoice(0x00);  // 识别到命令2，播报命令词语音
+        UART_SetCommandVoice(0x00);  // 명령 2 인식 시 명령어 음성 재생
       }
     } else if (commandId == 0 || commandId == 255) {
       if (lastCommandId != 0) {
-        lastCommandId = 0;  // 重置状态
+        lastCommandId = 0;  // 상태 초기화
       }
     }
   }
@@ -320,11 +320,11 @@ UART 관련 코드를 수정할 때는 `bsp_uart.cpp` 에서만 수정하면 되
 
 ```Plain Text
 if (commandId == 1) {
-  UART_SetCommandVoice(0x00);      // 播报命令词
+  UART_SetCommandVoice(0x00);      // 명령어 재생
 } else if (commandId == 2) {
-  UART_SetFunctionVoice(0x00);     // 播报功能词
+  UART_SetFunctionVoice(0x00);     // 기능어 재생
 } else if (commandId == 3) {
-  UART_SetPassiveVoice(0x00);      // 播报被动语
+  UART_SetPassiveVoice(0x00);      // 수동 재생
 }
 ```
 
@@ -332,8 +332,8 @@ if (commandId == 1) {
 
 ```Plain Text
 if (commandId == 10) {
-  digitalWrite(LED_PIN, LOW);    // 关灯
-  UART_SetCommandVoice(0x00);     // 播报确认
+  digitalWrite(LED_PIN, LOW);    // 조명 끄기
+  UART_SetCommandVoice(0x00);     // 확인 음성 재생
 }
 ```
 
@@ -342,7 +342,7 @@ if (commandId == 10) {
 ```Plain Text
 if (commandId == 11) {
   motor_stop();
-  UART_SetCommandVoice(0x00);     // 播报确认
+  UART_SetCommandVoice(0x00);     // 확인 음성 재생
 }
 ```
 

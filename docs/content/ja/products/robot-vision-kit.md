@@ -53,10 +53,10 @@ SO-ARM101 ロボットアームビジョンキットは、ロボットアーム�
 LeRobot データ収集を例に:
 
 ```bash
-# 查找相机
+# カメラを検索
 python -m lerobot.find_cameras
 
-# 采集带视觉数据
+# 視覚付きデータを収集
 lerobot-record \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \

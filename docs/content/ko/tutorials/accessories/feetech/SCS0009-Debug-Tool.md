@@ -133,7 +133,7 @@ sudo apt install python3-venv fonts-noto-cjk fonts-noto-color-emoji
 
 ```bash
 sudo usermod -a -G dialout $USER
-# 注销并重新登录后生效
+# 로그아웃 후 다시 로그인하면 적용됨
 ```
 
 확인(출력에 `dialout`이 포함되어야 합니다):
@@ -169,14 +169,14 @@ ls /dev/ttyUSB* /dev/ttyACM* 2>/dev/null
 
 ```
 /dev/ttyUSB0   # CH340 / CP2102 / PL2303
-/dev/ttyACM0   # 原生 USB 串口（Arduino / ESP32 板载）
+/dev/ttyACM0   # 네이티브 USB 시리얼 포트(Arduino / ESP32 온보드)
 ```
 
 자세한 제조사 정보 확인:
 
 ```bash
 dmesg | tail -20 | grep -i tty
-# 或
+# 또는
 lsusb
 ```
 
@@ -201,10 +201,10 @@ SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", SYMLINK+="t
 1. Homebrew로 Python을 설치합니다(시스템 기본 Python 버전이 너무 오래된 것을 방지):
 
 ```bash
-# 安装 Homebrew（如果没有）
+# Homebrew 설치(없는 경우)
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# 安装 Python
+# Python 설치
 brew install python
 ```
 
@@ -244,7 +244,7 @@ ls /dev/cu.*
 
 ```
 /dev/cu.usbserial-0001      # CP2102 / FTDI
-/dev/cu.usbmodem141101      # 板载 USB 串口（Arduino / ESP32）
+/dev/cu.usbmodem141101      # 온보드 USB 시리얼 포트(Arduino / ESP32)
 /dev/cu.wchusbserial1420    # CH340
 ```
 
@@ -373,27 +373,27 @@ system_profiler SPUSBDataType | grep -A5 -i "serial\|CH340\|CP210"
 
 ```
 SCS0009_ServoController/
-├── docs/                    # 分系统教程（中英文）
-│   ├── zh/                  # 中文教程
+├── docs/                    # 시스템별 튜토리얼(중문/영문)
+│   ├── zh/                  # 중문 튜토리얼
 │   │   ├── Windows教程.md
 │   │   ├── Linux教程.md
 │   │   └── macOS教程.md
-│   └── en/                  # 英文教程
+│   └── en/                  # 영문 튜토리얼
 │       ├── Windows.md
 │       ├── Linux.md
 │       └── macOS.md
 ├── src/
-│   ├── gui/                  # PySide6 图形界面
-│   │   ├── factory_calibration_tool.py   # 主窗口（FT 调试器 + 语言切换）
-│   │   ├── ft_debugger.py                # FT 调试器面板（参数读写 / xdat 备份）
-│   │   ├── theme_utils.py                # 浅色主题
-│   │   └── language_dialog.py            # 语言选择对话框
-│   ├── xdat_utils.py         # xdat 参数文件读写
-│   ├── i18n*.py / i18n_translations/     # 中英文国际化
-│   └── port_utils.py         # 串口检测
-├── scservo_sdk/              # FTServo 舵机通信 SDK
+│   ├── gui/                  # PySide6 그래픽 인터페이스
+│   │   ├── factory_calibration_tool.py   # 메인 창(FT 디버거 + 언어 전환)
+│   │   ├── ft_debugger.py                # FT 디버거 패널(파라미터 읽기/쓰기 / xdat 백업)
+│   │   ├── theme_utils.py                # 라이트 테마
+│   │   └── language_dialog.py            # 언어 선택 대화 상자
+│   ├── xdat_utils.py         # xdat 파라미터 파일 읽기/쓰기
+│   ├── i18n*.py / i18n_translations/     # 중문/영문 국제화
+│   └── port_utils.py         # 시리얼 포트 감지
+├── scservo_sdk/              # FTServo 서보 통신 SDK
 ├── requirements.txt
-└── setup.py                  # 环境检查脚本
+└── setup.py                  # 환경 검사 스크립트
 ```
 
 본 도구 저장소는 `src/gui`(PySide6 그래픽 인터페이스와 FT 디버거), `scservo_sdk`(FTServo 서보 통신 SDK), `setup.py`(환경 확인 스크립트) 등의 모듈로 구성됩니다.

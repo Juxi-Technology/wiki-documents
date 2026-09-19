@@ -63,14 +63,14 @@ std::list<dl::detect::result_t> &detect_results = detector.infer(
 
 if (detect_results.size() > 0) {
     draw_detection_result((uint16_t *)frame->buf, frame->height, frame->width, detect_results);
-    print_detection_result(detect_results);  // 串口输出坐标
+    print_detection_result(detect_results);  // Enviar as coordenadas pela porta serial
 }
 ```
 
 ### Arduino: ler as coordenadas e controlar o servo
 
 ```C++
-// 解析 $face:x,y,w,h# 格式
+// Analisar o formato $face:x,y,w,h#
 if (nanoSerial.available()) {
     String line = nanoSerial.readStringUntil('\n');
     if (line.startsWith("$face:")) {

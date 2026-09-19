@@ -348,14 +348,14 @@ Diagnóstico e solução (por ordem):
 
 ```Plain Text
 ls -l /dev/video0
-sudo usermod -aG video $USER   # 加入 video 组，注销重登
+sudo usermod -aG video $USER   # Adicionar ao grupo video; sair e entrar novamente na sessão
 ```
 
 4. Usar o v4l2 para verificar se a câmera realmente consegue emitir quadros (se emitir quadros = o driver está bom, o problema está na compatibilidade com o OpenCV):
 
 ```Bash
 v4l2-ctl --device=/dev/video0 --set-fmt-video=width=640,height=480,pixelformat=MJPG --stream-mmap --stream-count=1 --stream-to=/tmp/frame.jpg
-ls -l /tmp/frame.jpg   # 有几十~几百KB = 流通
+ls -l /tmp/frame.jpg   # Dezenas a centenas de KB = está fluindo
 ```
 
 ### 9.7 O número da porta muda a cada vez

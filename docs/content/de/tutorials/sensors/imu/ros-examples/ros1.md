@@ -103,11 +103,11 @@ sudo usermod -aG dialout ash
 
 ```PowerShell
 cd IMU_ROS1
-# 下载解压IMU_ROS1压缩文件后，进入到IMU_Library目录下，运行以下指令
+# Nach dem Herunterladen und Entpacken des IMU_ROS1-Archivs in das Verzeichnis IMU_Library wechseln und folgenden Befehl ausführen
 cd IMU_Library
-# 安装库及其依赖
+# Bibliothek und ihre Abhängigkeiten installieren
 pip install -e .
-# 或使用setup.py安装
+# Oder mit setup.py installieren
 python setup.py install
 ```
 
@@ -140,7 +140,7 @@ catkin_init_workspace
 2. **Übertragenen IMU_ROS1-Ordner nach ~/imu_ros1/src/ kopieren**
 
 ```PowerShell
-# 复制 IMU_ROS1 文件夹到新建的 src 目录下
+# Den Ordner IMU_ROS1 in das neu erstellte src-Verzeichnis kopieren
 cp -r ~/IMU_ROS1 ~/imu_ros1/src
 cd ~/imu_ros1
 catkin_make
@@ -149,9 +149,9 @@ catkin_make
 3. **Arbeitsverzeichnis ~/imu_ros1 in die Umgebungsvariablen eintragen**
 
 ```PowerShell
-# 编辑 ~/.bashrc
+# ~/.bashrc bearbeiten
 sudo gedit ~/.bashrc
-# 把下面命令写到末尾
+# Die folgenden Befehle ans Ende schreiben
 source ~/imu_ros1/devel/setup.bash
 source ~/.bashrc
 ```
@@ -161,9 +161,9 @@ source ~/.bashrc
 1. **Terminal öffnen, roscore eingeben zum Starten des Nodes**
 
 ```PowerShell
-# 启动roscore
+# roscore starten
 roscore
-# 新开终端，设置环境，启动节点
+# Neues Terminal öffnen, Umgebung einrichten, Node starten
 source ~/imu_ros1/devel/setup.bash
 ```
 
@@ -172,9 +172,9 @@ source ~/imu_ros1/devel/setup.bash
 In das `scripts`-Verzeichnis der Skripte wechseln und mit `chmod +x` Ausführungsrechte vergeben (`+x` = Ausführungsberechtigung hinzufügen):
 
 ```PowerShell
-# 进入imu_driver.py所在目录（按你的实际路径）
+# In das Verzeichnis mit imu_driver.py wechseln (gemäß Ihrem tatsächlichen Pfad)
 cd ~/imu_ros1/src/IMU_ROS1/scripts/
-# 赋予可执行权限（仅需执行1次，永久生效）
+# Ausführungsrechte vergeben (nur einmal nötig, dauerhaft wirksam)
 chmod +x imu_driver.py
 chmod +x mag_visualizer.py
 ```
@@ -193,16 +193,16 @@ rosrun IMU_ROS1 imu_driver.py
 1. **Neues Terminal öffnen, imu-Topic anzeigen**
 
 ```PowerShell
-# 查看当前发布的所有话题
+# Alle aktuell veröffentlichten Topics anzeigen
 rostopic list
 ```
 
 2. **Topic-Daten ausgeben**
 
 ```PowerShell
-# 打印IMU原始数据
+# IMU-Rohdaten ausgeben
 rostopic echo /imu/data_raw
-# 打印磁力计数据
+# Magnetometerdaten ausgeben
 rostopic echo /imu/mag
 ```
 
@@ -219,9 +219,9 @@ roslaunch IMU_ROS1 imu_display.launch
 1. Falls der Node nicht startet, folgende Befehle versuchen
 
 ```PowerShell
-# 在~/imu_ros1目录下运行
+# Im Verzeichnis ~/imu_ros1 ausführen
 source devel/setup.bash
-# 端口号问题
+# Probleme mit der Portnummer
 sudo chmod 666 /dev/imu-serial
 ```
 
