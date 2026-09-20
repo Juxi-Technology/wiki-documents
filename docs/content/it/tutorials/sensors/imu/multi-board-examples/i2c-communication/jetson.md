@@ -26,9 +26,9 @@ sudo apt-get install -y i2c-tools
 
 Verificare i dispositivi I2C
 
-\`\`\`PowerShell
+```PowerShell
 sudo i2cdetect -y -r -a 7
-\`\`\`
+```
 
 ![2. Verificare lo stato del dispositivo – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson/3.png)
 

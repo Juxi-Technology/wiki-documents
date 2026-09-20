@@ -165,7 +165,7 @@ cd ~/lerobot/src/lerobot/
 
 Dann die `conda`-Umgebung aktivieren (bei jedem Terminar nötig!):
 
-```PowerShell
+```Plain Text
 conda activate lerobot
 ```
 
@@ -399,12 +399,19 @@ lerobot-record \
 
 ```Bash
 hf auth login
+
+# Falls Sie die veraltete CLI verwenden:
+huggingface-cli login --token ${HUGGINGFACE_TOKEN} --add-to-git-credential
 ```
 
 Repositoriennamen in einer Variable speichern:
 
 ```Bash
 hf auth whoami
+
+# Falls Sie die veraltete CLI verwenden:
+HF_USER=$(huggingface-cli whoami | head -n 1)
+echo $HF_USER
 ```
 
 5 Episoden aufzeichnen und zum Hub hochladen:
@@ -474,6 +481,10 @@ Falls Ihre Tastatur nach einem Tastendruck nicht reagiert, müssen Sie mögliche
 
 ### Datensatz visualisieren
 
+```Python
+echo ${HF_USER}/so101_test  
+```
+
 Hochgeladene Datensätze [online visualisieren](https://huggingface.co/spaces/lerobot/visualize_dataset) – die mit folgendem Befehl erzeugte Repo-ID kopieren und einfügen:
 
 ```Bash
@@ -482,11 +493,18 @@ python lerobot/scripts/visualize_dataset_html.py \
   --local-files-only 1
 ```
 
-Ohne Upload auch lokal:
+Mit Upload auch lokal:
 
 ```Python
 lerobot-dataset-viz \
   --repo-id ${HF_USER}/so101_test
+```
+
+Ohne Upload auch lokal:
+
+```Python
+lerobot-dataset-viz \
+  --repo-id juxi/test \
 ```
 
 `juxi` ist der bei der Erfassung verwendete eigene `repo_id`.
@@ -495,21 +513,34 @@ lerobot-dataset-viz \
 
 ### Episode abspielen (überspringbar, optional)
 
-Eine Episode aus dem Datensatz abspielen:
+Versuchen Sie nun, den ersten Datensatz auf Ihrem Roboter abzuspielen:
+
+```Python
+lerobot-replay \
+    --robot.type=so101_follower \
+    --robot.port=/dev/ttyACM0 \
+    --robot.id=my_awesome_follower_arm \
+    --dataset.repo_id=${HF_USER}/record-test \
+    --dataset.episode=0
+```
+
+Zu diesem Zeitpunkt sollte der Roboter dieselben Aktionen ausführen wie bei Ihrer Fernsteuerung und Aufzeichnung.
+
+Sie können eine Episode auch abspielen, indem Sie den record-Befehl mit `--replay=true` ausführen:
 
 ```Python
 lerobot-record \
-  --robot.type=so101_follower \
-  --robot.port=/dev/ttyACM0 \
-  --robot.id=my_awesome_follower_arm \
-  --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"}, side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30, fourcc: "MJPG"}}" \
-  --dataset.repo_id=${HF_USER}/so101_test \
-  --dataset.single_task="Put the blue cube on the black box" \
-  --dataset.num_episodes=1 \
-  --dataset.episode_time_s=30 \
-  --dataset.reset_time_s=30 \
-  --dataset.push_to_hub=true \
-  --replay=true
+    --robot.type=so101_follower \
+    --robot.port=/dev/ttyACM0 \
+    --robot.id=my_awesome_follower_arm \
+    --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"}, side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30, fourcc: "MJPG"}}" \
+    --dataset.repo_id=${HF_USER}/so101_test \
+    --dataset.single_task="Put the blue cube on the black box" \
+    --dataset.num_episodes=1 \
+    --dataset.episode_time_s=30 \
+    --dataset.reset_time_s=30 \
+    --dataset.push_to_hub=true \
+    --replay=true
 ```
 
 ## E. Training und Evaluation des Datensatzes
@@ -520,7 +551,7 @@ Offizielles Tutorial [ACT](https://huggingface.co/docs/lerobot/training#act)
 
 **Training**
 
-```Bash
+```Python
 lerobot-train \
   --dataset.repo_id=${HF_USER}/so101_test \
   --policy.type=act \

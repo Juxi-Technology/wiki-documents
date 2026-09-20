@@ -21,7 +21,7 @@ Use Keil5 software to open USART.uvprojx, and burn the program into the STM32F10
 
 Please refer to the source code in the materials for the specific code.
 
-```Python
+```c++
 //Process RX ring buffer, parse frames and update internal cache
 
 //Process RX ring buffer, parse frames and update internal cache

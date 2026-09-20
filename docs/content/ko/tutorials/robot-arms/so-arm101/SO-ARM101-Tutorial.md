@@ -165,7 +165,7 @@ cd ~/lerobot/src/lerobot/
 
 그다음 `conda` 환경 활성화(lerobot 사용 시마다 필요!):
 
-```PowerShell
+```Plain Text
 conda activate lerobot
 ```
 
@@ -400,12 +400,19 @@ lerobot-record \
 
 ```Bash
 hf auth login
+
+# 레거시 CLI를 사용하는 경우:
+huggingface-cli login --token ${HUGGINGFACE_TOKEN} --add-to-git-credential
 ```
 
 Hugging Face 저장소 이름을 변수에 저장해 아래 명령 실행:
 
 ```Bash
 hf auth whoami
+
+# 레거시 CLI를 사용하는 경우:
+HF_USER=$(huggingface-cli whoami | head -n 1)
+echo $HF_USER
 ```
 
 5 에피소드를 기록하고 Hub에 업로드:
@@ -476,6 +483,10 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 
 ### 데이터셋 시각화
 
+```Python
+echo ${HF_USER}/so101_test  
+```
+
 데이터셋을 업로드했다면 [온라인으로 시각화](https://huggingface.co/spaces/lerobot/visualize_dataset)할 수 있습니다. 아래 명령으로 생성된 저장소 ID를 복사해 붙여넣으세요:
 
 ```Bash
@@ -484,11 +495,18 @@ python lerobot/scripts/visualize_dataset_html.py \
   --local-files-only 1
 ```
 
-업로드하지 않았다면 로컬에서 시각화:
+업로드했다면 다음 명령으로 로컬에서도 시각화할 수 있습니다:
 
 ```Python
 lerobot-dataset-viz \
   --repo-id ${HF_USER}/so101_test
+```
+
+업로드하지 않았다면 로컬에서 시각화:
+
+```Python
+lerobot-dataset-viz \
+  --repo-id juxi/test \
 ```
 
 여기서 `juxi`는 데이터 수집 시 커스터마이즈한 `repo_id` 이름입니다.
@@ -499,19 +517,34 @@ lerobot-dataset-viz \
 
 데이터셋에서 에피소드 하나를 재생하려면:
 
+이제 로봇에서 첫 번째 데이터셋을 재생해 보세요:
+
+```Python
+lerobot-replay \
+    --robot.type=so101_follower \
+    --robot.port=/dev/ttyACM0 \
+    --robot.id=my_awesome_follower_arm \
+    --dataset.repo_id=${HF_USER}/record-test \
+    --dataset.episode=0
+```
+
+이때 로봇은 원격 조작으로 기록했을 때와 동일한 동작을 수행해야 합니다.
+
+record 명령을 `--replay=true`와 함께 실행하여 에피소드를 재생할 수도 있습니다:
+
 ```Python
 lerobot-record \
-  --robot.type=so101_follower \
-  --robot.port=/dev/ttyACM0 \
-  --robot.id=my_awesome_follower_arm \
-  --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"}, side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30, fourcc: "MJPG"}}" \
-  --dataset.repo_id=${HF_USER}/so101_test \
-  --dataset.single_task="Put the blue cube on the black box" \
-  --dataset.num_episodes=1 \
-  --dataset.episode_time_s=30 \
-  --dataset.reset_time_s=30 \
-  --dataset.push_to_hub=true \
-  --replay=true
+    --robot.type=so101_follower \
+    --robot.port=/dev/ttyACM0 \
+    --robot.id=my_awesome_follower_arm \
+    --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"}, side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30, fourcc: "MJPG"}}" \
+    --dataset.repo_id=${HF_USER}/so101_test \
+    --dataset.single_task="Put the blue cube on the black box" \
+    --dataset.num_episodes=1 \
+    --dataset.episode_time_s=30 \
+    --dataset.reset_time_s=30 \
+    --dataset.push_to_hub=true \
+    --replay=true
 ```
 
 ## E. 데이터셋 훈련 및 평가
@@ -522,7 +555,7 @@ lerobot-record \
 
 **훈련**
 
-```Bash
+```Python
 lerobot-train \
   --dataset.repo_id=${HF_USER}/so101_test \
   --policy.type=act \

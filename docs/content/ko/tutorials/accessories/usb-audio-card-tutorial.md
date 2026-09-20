@@ -170,14 +170,23 @@ PulseAudio를 [명령줄](https://so.csdn.net/so/search?q=%E5%91%BD%E4%BB%A4%E8%
 
 1.노이즈가 많은 문제
 
-```Plain Text
 먼저 마이크 볼륨을 100으로 설정
 터미널 열기
+
+```Bash
 $ sudo vi /boot/config.txt    #또는 /boot/firmware/config.txt일 수도 있음
+```
+
 텍스트 마지막에 추가
+
+```Bash
 audio_pwm_mode = 2
+```
+
 ESC 입력:wq로 저장 및 종료
 그 다음 재부팅
+
+```Bash
 $ reboot
 ```
 

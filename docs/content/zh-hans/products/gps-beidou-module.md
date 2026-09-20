@@ -73,7 +73,7 @@ import pynmea2
 ser = serial.Serial('/dev/ttyUSB0', 9600, timeout=1)
 while True:
     line = ser.readline().decode(errors='ignore')
-    if line.startswith('$GPRMC') or line.startswith('$GNRMC'):
+    if line.startswith(('$GPRMC', '$GNRMC')):
         msg = pynmea2.parse(line)
         print(f'纬度: {msg.latitude}, 经度: {msg.longitude}')
 ```

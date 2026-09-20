@@ -15,7 +15,7 @@ description: "本例はArduino Nano開発ボード、Windows PC 1台、ジャン
 
 
 ![図 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/1.png)
-![1. デバイスの接続 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/1.png)
+![1. デバイスの接続 – 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/2.png)
 
 
 ![図 3](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/3.jpg)
@@ -26,7 +26,7 @@ description: "本例はArduino Nano開発ボード、Windows PC 1台、ジャン
 ```C++
 //リングバッファ内のデータを解析し、完全なフレームを抽出してキャッシュを更新
 //Process RX ring buffer, parse frames and update internal cache
-void IMU_UART_Process()
+void IMU_UART_Process(void)
 {
     enum {
         RX_STATE_EXPECT_HEAD1 = 0,

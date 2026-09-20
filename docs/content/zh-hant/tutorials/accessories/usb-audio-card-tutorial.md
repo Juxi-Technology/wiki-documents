@@ -211,7 +211,7 @@ $ reboot
 
 執行以下命令將當前設置持久化
 
-```Python
+```Bash
 sudo chmod 664 /var/lib/alsa/asound.state
 sudo alsactl store
 ```
@@ -413,7 +413,7 @@ alsamixer -c X  # X 為 USB 聲卡的 card 編號
 sudo apt install -y linux-generic && sudo reboot
 ```
 
-```Python
+```Bash
 sudo modprobe snd-hda-intel model=generic #（不同機型可嘗試不同 model 值）
 # 創建聲卡驅動配置文件
 sudo echo "options snd-hda-intel model=generic" > /etc/modprobe.d/sound.conf

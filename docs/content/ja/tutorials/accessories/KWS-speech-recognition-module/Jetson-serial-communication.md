@@ -133,8 +133,7 @@ class SpeechModule:
             while True:
                 self.read_response()
         except KeyboardInterrupt:
-            print("
-[Stopped] Program interrupted by user.")
+            print("\n[Stopped] Program interrupted by user.")
         finally:
             if self._serial_conn and self._serial_conn.is_open:
                 self._serial_conn.close()

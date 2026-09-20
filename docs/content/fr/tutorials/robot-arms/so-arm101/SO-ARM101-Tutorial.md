@@ -165,7 +165,7 @@ cd ~/lerobot/src/lerobot/
 
 Puis activer l'environnement `conda` (à chaque fois !) :
 
-```PowerShell
+```Plain Text
 conda activate lerobot
 ```
 
@@ -399,12 +399,19 @@ lerobot-record \
 
 ```Bash
 hf auth login
+
+# Si vous utilisez l'ancienne CLI :
+huggingface-cli login --token ${HUGGINGFACE_TOKEN} --add-to-git-credential
 ```
 
 Stocker le nom du dépôt dans une variable :
 
 ```Bash
 hf auth whoami
+
+# Si vous utilisez l'ancienne CLI :
+HF_USER=$(huggingface-cli whoami | head -n 1)
+echo $HF_USER
 ```
 
 Enregistrer 5 épisodes et uploader :
@@ -489,6 +496,10 @@ Si votre clavier ne répond pas après avoir appuyé sur une touche, vous devrez
 
 ### Visualiser un dataset
 
+```Python
+echo ${HF_USER}/so101_test  
+```
+
 Dataset uploadé : [visualisation en ligne](https://huggingface.co/spaces/lerobot/visualize_dataset) – copier l'ID de dépôt généré :
 
 ```Bash
@@ -497,11 +508,18 @@ python lerobot/scripts/visualize_dataset_html.py \
   --local-files-only 1
 ```
 
-Sans upload, visualisation locale :
+Avec upload, visualisation locale :
 
 ```Python
 lerobot-dataset-viz \
   --repo-id ${HF_USER}/so101_test
+```
+
+Sans upload, visualisation locale :
+
+```Python
+lerobot-dataset-viz \
+  --repo-id juxi/test \
 ```
 
 `juxi` est le `repo_id` personnalisé lors de la collecte.
@@ -510,21 +528,34 @@ lerobot-dataset-viz \
 
 ### Rejouer un épisode (passable, optionnel)
 
-Rejouer un épisode du dataset :
+Maintenant, essayez de rejouer le premier dataset sur votre robot :
+
+```Python
+lerobot-replay \
+    --robot.type=so101_follower \
+    --robot.port=/dev/ttyACM0 \
+    --robot.id=my_awesome_follower_arm \
+    --dataset.repo_id=${HF_USER}/record-test \
+    --dataset.episode=0
+```
+
+À ce moment, le robot doit effectuer les mêmes actions que lors de votre téléopération et de l'enregistrement.
+
+Vous pouvez également rejouer un épisode en exécutant la commande d'enregistrement avec `--replay=true` :
 
 ```Python
 lerobot-record \
-  --robot.type=so101_follower \
-  --robot.port=/dev/ttyACM0 \
-  --robot.id=my_awesome_follower_arm \
-  --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"}, side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30, fourcc: "MJPG"}}" \
-  --dataset.repo_id=${HF_USER}/so101_test \
-  --dataset.single_task="Put the blue cube on the black box" \
-  --dataset.num_episodes=1 \
-  --dataset.episode_time_s=30 \
-  --dataset.reset_time_s=30 \
-  --dataset.push_to_hub=true \
-  --replay=true
+    --robot.type=so101_follower \
+    --robot.port=/dev/ttyACM0 \
+    --robot.id=my_awesome_follower_arm \
+    --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"}, side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30, fourcc: "MJPG"}}" \
+    --dataset.repo_id=${HF_USER}/so101_test \
+    --dataset.single_task="Put the blue cube on the black box" \
+    --dataset.num_episodes=1 \
+    --dataset.episode_time_s=30 \
+    --dataset.reset_time_s=30 \
+    --dataset.push_to_hub=true \
+    --replay=true
 ```
 
 ## E. Entraînement et évaluation du dataset
@@ -535,7 +566,7 @@ Tutoriel officiel [ACT](https://huggingface.co/docs/lerobot/training#act)
 
 **Entraînement**
 
-```Bash
+```Python
 lerobot-train \
   --dataset.repo_id=${HF_USER}/so101_test \
   --policy.type=act \

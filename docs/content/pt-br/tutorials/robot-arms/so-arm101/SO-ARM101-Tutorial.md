@@ -533,7 +533,7 @@ echo ${HF_USER}/so101_test
 
 Você também pode gerar uma página de visualização em HTML do dataset com o seguinte comando: 
 
-```Python
+```Bash
 python lerobot/scripts/visualize_dataset_html.py \
   --repo-id ${HF_USER}/so101_test \
   --local-files-only 1

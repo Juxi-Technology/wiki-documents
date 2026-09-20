@@ -170,14 +170,23 @@ Luego volver a grabar y reproducir
 
 1. Mucho ruido
 
-```Plain Text
 Primero poner el volumen del micrófono en 100
 Abrir una terminal
+
+```Bash
 $ sudo vi /boot/config.txt    #o quizás /boot/firmware/config.txt
+```
+
 Añadir al final del archivo
+
+```Bash
 audio_pwm_mode = 2
+```
+
 ESC, escribir :wq para guardar y salir
 Luego reiniciar
+
+```Bash
 $ reboot
 ```
 

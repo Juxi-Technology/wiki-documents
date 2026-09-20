@@ -100,8 +100,8 @@ For SO-ARM101 / XLeRobot projects:
 python -m lerobot.find_cameras realsense
 
 # Enable RealSense during teleoperation
-lerobot-teleoperate \\
-  --robot.cameras='{ front: {type: realsense} }' \\
+lerobot-teleoperate \
+  --robot.cameras='{ front: {type: realsense} }' \
   ...
 ```
 

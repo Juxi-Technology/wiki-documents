@@ -21,10 +21,10 @@ Ouvrir USART.uvprojx avec keil5 et flasher le programme sur la carte cœur STM32
 ![Image 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32/2.png)
 Le code concret se trouve dans le code source des documents.
 
-```C++
+```c++
 //Analyser les données du tampon circulaire, extraire les trames complètes et mettre à jour le cache
 //Process RX ring buffer, parse frames and update internal cache
-void IMU_UART_Process()
+void IMU_UART_Process(void)
 {
     enum {
         RX_STATE_EXPECT_HEAD1 = 0,

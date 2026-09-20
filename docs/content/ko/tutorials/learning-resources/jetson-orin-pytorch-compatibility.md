@@ -14,7 +14,7 @@ Jetson용 PyTorch 설치:
 
 튜토리얼: https://docs.nvidia.com/deeplearning/frameworks/install-pytorch-jetson-platform/index.html
 
-```bash
+```Plain Text
 export TORCH_INSTALL=torch-2.5.0a0+872d972e41.nv24.08.17622132-cp310-cp310-linux_aarch64.whl
 pip install --no-cache $TORCH_INSTALL
 ```
@@ -48,6 +48,11 @@ torch 2.5 → torchvision 0.20.0:
 
 ```bash
 git clone --branch v0.20.0 https://github.com/pytorch/vision.git
+```
+
+다운로드 후 빌드:
+
+```Plain Text
 cd vision
 export BUILD_VERSION=0.20.0
 python3 setup.py install --user

@@ -210,7 +210,7 @@ Após redefinir o volume,
 
 Execute o seguinte comando para persistir as configurações atuais
 
-```Python
+```Bash
 sudo chmod 664 /var/lib/alsa/asound.state
 sudo alsactl store
 ```
@@ -412,7 +412,7 @@ alsamixer -c X  # X refers to the card number of the USB sound card
 sudo apt install -y linux-generic && sudo reboot
 ```
 
-```Python
+```Bash
 sudo modprobe snd-hda-intel model=generic #(Different models can try different model values)
 # Create the sound card driver configuration file
 sudo echo "options snd-hda-intel model=generic" > /etc/modprobe.d/sound.conf

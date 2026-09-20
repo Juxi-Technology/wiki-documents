@@ -411,12 +411,19 @@ lerobot-record \
 
 ```Bash
 hf auth login
+
+# 如果您使用的是旧版 CLI:
+huggingface-cli login --token ${HUGGINGFACE_TOKEN} --add-to-git-credential
 ```
 
 将您的 Hugging Face 仓库名称存储在一个变量中，以运行以下命令：
 
 ```Bash
 hf auth whoami
+
+# 如果您使用的是旧版 CLI:
+HF_USER=$(huggingface-cli whoami | head -n 1)
+echo $HF_USER
 ```
 
 记录 5 个回合并将您的数据集上传到 Hub：
@@ -556,21 +563,21 @@ lerobot-replay \
 
 此时，机械臂应该做出与你遥操记录时一样的动作。
 
-如果需要从数据集中回放某个片段，可以使用以下命令：
+您也可以通过运行带有 `--replay=true` 的 record 命令来回放一个片段：
 
 ```Python
 lerobot-record \
-  --robot.type=so101_follower \
-  --robot.port=/dev/ttyACM0 \
-  --robot.id=my_awesome_follower_arm \
-  --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"}, side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30, fourcc: "MJPG"}}" \
-  --dataset.repo_id=${HF_USER}/so101_test \
-  --dataset.single_task="Put the blue cube on the black box" \
-  --dataset.num_episodes=1 \
-  --dataset.episode_time_s=30 \
-  --dataset.reset_time_s=30 \
-  --dataset.push_to_hub=true \
-  --replay=true
+    --robot.type=so101_follower \
+    --robot.port=/dev/ttyACM0 \
+    --robot.id=my_awesome_follower_arm \
+    --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"}, side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30, fourcc: "MJPG"}}" \
+    --dataset.repo_id=${HF_USER}/so101_test \
+    --dataset.single_task="Put the blue cube on the black box" \
+    --dataset.num_episodes=1 \
+    --dataset.episode_time_s=30 \
+    --dataset.reset_time_s=30 \
+    --dataset.push_to_hub=true \
+    --replay=true
 ```
 
 ## E. 数据集训练及评估

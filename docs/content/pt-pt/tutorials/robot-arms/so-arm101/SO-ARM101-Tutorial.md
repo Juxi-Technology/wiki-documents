@@ -428,7 +428,8 @@ Guarde o nome do seu repositório do Hugging Face em uma variável para executar
 hf auth whoami
 
 # Guardar o nome de utilizador numa variável
-HF_USER=$(hf auth whoami | head -n 1)
+# Se estiver a usar a CLI legacy:
+HF_USER=$(huggingface-cli whoami | head -n 1)
 echo $HF_USER
 ```
 
@@ -530,7 +531,7 @@ echo ${HF_USER}/so101_test
 
 Se preferir, também pode visualizá-lo numa página HTML local com o seguinte comando: 
 
-```Python
+```Bash
 python lerobot/scripts/visualize_dataset_html.py \
   --repo-id ${HF_USER}/so101_test \
   --local-files-only 1
@@ -547,7 +548,7 @@ Se você usou `--dataset.push_to_hub=false` e não enviou os dados, também pode
 
 ```Python
 lerobot-dataset-viz \
-  --repo-id juxi/test
+  --repo-id juxi/test \
 ```
 
 Aqui, `juxi` é o nome personalizado do `repo_id` durante a recolha de dados. 

@@ -21,10 +21,10 @@ Mit keil5 die Datei USART.uvprojx öffnen und das Programm auf das STM32F103C8T6
 ![Abb. 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32/2.png)
 Den konkreten Code finden Sie im Quellcode der Unterlagen.
 
-```C++
+```c++
 //Daten im Ringpuffer parsen, vollständige Frames extrahieren und Cache aktualisieren
 //Process RX ring buffer, parse frames and update internal cache
-void IMU_UART_Process()
+void IMU_UART_Process(void)
 {
     enum {
         RX_STATE_EXPECT_HEAD1 = 0,

@@ -64,6 +64,7 @@ sudo ./flash.sh <board-name> mmcblk0p1
 
 ```bash
 # Optional: mirror for faster apt
+sudo sed -i 's|archive.ubuntu.com|mirrors.tuna.tsinghua.edu.cn|g' /etc/apt/sources.list
 sudo apt update
 ```
 

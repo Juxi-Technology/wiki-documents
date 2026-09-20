@@ -14,6 +14,6 @@ description: "Debug dei servomotori Feetech STS3215 e SCS0009: scaricare il soft
 
 ![image – 2](../../../../../public/images/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial/2.png)
 
-File di debug servomotore STS3215.zip
+[File di debug servomotore STS3215.zip](/downloads/STS3215%20舵机调试资料.zip)
 
-File di debug servomotore SCS009.zip
+[File di debug servomotore SCS009.zip](/downloads/SCS009%20舵机调试资料.zip)

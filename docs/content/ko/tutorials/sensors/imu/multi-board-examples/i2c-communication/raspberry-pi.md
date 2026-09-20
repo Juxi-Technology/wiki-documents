@@ -26,9 +26,9 @@ sudo apt-get install -y i2c-tools
 
 I2C 장치 확인
 
-\`\`\`PowerShell
+```PowerShell
 sudo i2cdetect -y -r -a 1
-\`\`\`
+```
 
 ![2. 장치 상태 확인 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi/3.png)
 

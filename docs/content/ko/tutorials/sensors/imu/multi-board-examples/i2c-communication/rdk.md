@@ -17,18 +17,11 @@ IMU 자세 센서를 아래 그림처럼 RDK X5의 I2C 인터페이스에 연결
 
 ## 2. 장치 상태 확인
 
-먼저 I2Ctool을 설치합니다. 터미널에 입력:
-
-```PowerShell
-sudo apt-get update
-sudo apt-get install -y i2c-tools
-```
-
 I2C 장치 확인
 
-\`\`\`PowerShell
-sudo i2cdetect -y -r -a 0
-\`\`\`
+```PowerShell
+python3 /app/40pin_samples/test_i2c.py
+```
 
 ![2. 장치 상태 확인 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk/3.png)
 
@@ -57,6 +50,8 @@ MobaXterm 소프트웨어로 압축 해제한 파일을 RDK X5에 드래그합�
 **~/IMU_Library 디렉터리로 이동하여 IMU_Serial_Library.py 파일 실행**
 
 ```PowerShell
+cd ~/imu_ros1/src/IMU_ROS1/IMU_Library
+# 또는
 cd ~/imu_ros2/src/IMU_ROS2/IMU_Library
 
 # IMU 데이터 출력 파일 실행

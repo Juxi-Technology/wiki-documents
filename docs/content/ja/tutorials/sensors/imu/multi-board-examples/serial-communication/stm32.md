@@ -21,10 +21,10 @@ keil5ソフトウェアを使用してUSART.uvprojxを開き、プログラム�
 ![図 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32/2.png)
 具体的なコードは資料のソースコードを参照してください。
 
-```C++
+```c++
 //リングバッファ内のデータを解析し、完全なフレームを抽出してキャッシュを更新
 //Process RX ring buffer, parse frames and update internal cache
-void IMU_UART_Process()
+void IMU_UART_Process(void)
 {
     enum {
         RX_STATE_EXPECT_HEAD1 = 0,

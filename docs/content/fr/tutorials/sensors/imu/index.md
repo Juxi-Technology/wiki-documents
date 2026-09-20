@@ -61,7 +61,7 @@ lrwxrwxrwx 1 root root 7 1月 22 10:00 /dev/imu-serial -> ttyUSB0
 ```PowerShell
 cd ~/imu_ros1/src/IMU_ROS1/IMU_Library/IMU_Library
 # Exécuter le fichier de sortie de données série IMU
-cd ~/imu_ros2/src/IMU_ROS2/IMU_Library
+cd ~/imu_ros2/src/IMU_ROS2/IMU_Library/IMU_Library
 
 # ou
 python3 IMU_Serial_Library.py

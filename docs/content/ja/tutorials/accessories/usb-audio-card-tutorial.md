@@ -170,14 +170,23 @@ PulseAudio を[コマンドライン](https://so.csdn.net/so/search?q=%E5%91%BD%
 
 1.ノイズが多い問題
 
-```Plain Text
 まずマイク音量を100に設定
 ターミナルを開く
+
+```Bash
 $ sudo vi /boot/config.txt    #または /boot/firmware/config.txt の場合もあります
+```
+
 テキストの最後に追加
+
+```Bash
 audio_pwm_mode = 2
+```
+
 ESCで:wqを入力して保存終了
 その後再起動
+
+```Bash
 $ reboot
 ```
 

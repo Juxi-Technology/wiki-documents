@@ -14,6 +14,6 @@ description: "Depuración de los servos de bus serie Feetech STS3215 y SCS0009: 
 
 ![image – 2](../../../../../public/images/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial/2.png)
 
-Archivos de depuración de servo STS3215.zip
+[Archivos de depuración de servo STS3215.zip](/downloads/STS3215%20舵机调试资料.zip)
 
-Archivos de depuración de servo SCS009.zip
+[Archivos de depuración de servo SCS009.zip](/downloads/SCS009%20舵机调试资料.zip)

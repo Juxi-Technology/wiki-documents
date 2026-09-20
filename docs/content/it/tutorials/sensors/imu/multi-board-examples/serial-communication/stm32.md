@@ -21,10 +21,10 @@ Aprire USART.uvprojx con keil5 e flashatre il programma sulla scheda core STM32F
 ![Immagine 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32/2.png)
 Il codice concreto si trova nel codice sorgente dei materiali.
 
-```C++
+```c++
 //Analizza i dati nel ring buffer, estrai i frame completi e aggiorna la cache
 //Process RX ring buffer, parse frames and update internal cache
-void IMU_UART_Process()
+void IMU_UART_Process(void)
 {
     enum {
         RX_STATE_EXPECT_HEAD1 = 0,

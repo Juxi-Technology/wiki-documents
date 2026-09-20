@@ -165,7 +165,7 @@ cd ~/lerobot/src/lerobot/
 
 その後、`conda` 環境を有効化します（lerobot を使用するたびに必要です!）:
 
-```PowerShell
+```Plain Text
 conda activate lerobot
 ```
 
@@ -400,12 +400,19 @@ lerobot-record \
 
 ```Bash
 hf auth login
+
+# 従来の CLI を使用している場合:
+huggingface-cli login --token ${HUGGINGFACE_TOKEN} --add-to-git-credential
 ```
 
 Hugging Face リポジトリ名を変数に保存して、以下のコマンドを実行:
 
 ```Bash
 hf auth whoami
+
+# 従来の CLI を使用している場合:
+HF_USER=$(huggingface-cli whoami | head -n 1)
+echo $HF_USER
 ```
 
 5 エピソードを記録して Hub にアップロード:
@@ -475,6 +482,10 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 
 ### データセットの可視化
 
+```Python
+echo ${HF_USER}/so101_test  
+```
+
 データセットをアップロードした場合、[オンラインで可視化](https://huggingface.co/spaces/lerobot/visualize_dataset)できます。以下のコマンドで生成されたリポジトリ ID をコピーして貼り付けます:
 
 ```Bash
@@ -483,11 +494,18 @@ python lerobot/scripts/visualize_dataset_html.py \
   --local-files-only 1
 ```
 
-データセットをアップロードしていない場合、ローカルで可視化:
+データセットをアップロードした場合、次のコマンドでもローカルに可視化できます:
 
 ```Python
 lerobot-dataset-viz \
   --repo-id ${HF_USER}/so101_test
+```
+
+データセットをアップロードしていない場合、ローカルで可視化:
+
+```Python
+lerobot-dataset-viz \
+  --repo-id juxi/test \
 ```
 
 ここで、`juxi` はデータ収集時にカスタムした `repo_id` 名です。
@@ -498,19 +516,34 @@ lerobot-dataset-viz \
 
 データセットからエピソードを 1 つ再生するには:
 
+では、ロボットで最初のデータセットを再生してみてください:
+
+```Python
+lerobot-replay \
+    --robot.type=so101_follower \
+    --robot.port=/dev/ttyACM0 \
+    --robot.id=my_awesome_follower_arm \
+    --dataset.repo_id=${HF_USER}/record-test \
+    --dataset.episode=0
+```
+
+このとき、ロボットは遠隔操作で録画したときと同じ動作をするはずです。
+
+`--replay=true` を付けて record コマンドを実行することでも、エピソードを再生できます:
+
 ```Python
 lerobot-record \
-  --robot.type=so101_follower \
-  --robot.port=/dev/ttyACM0 \
-  --robot.id=my_awesome_follower_arm \
-  --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"}, side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30, fourcc: "MJPG"}}" \
-  --dataset.repo_id=${HF_USER}/so101_test \
-  --dataset.single_task="Put the blue cube on the black box" \
-  --dataset.num_episodes=1 \
-  --dataset.episode_time_s=30 \
-  --dataset.reset_time_s=30 \
-  --dataset.push_to_hub=true \
-  --replay=true
+    --robot.type=so101_follower \
+    --robot.port=/dev/ttyACM0 \
+    --robot.id=my_awesome_follower_arm \
+    --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"}, side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30, fourcc: "MJPG"}}" \
+    --dataset.repo_id=${HF_USER}/so101_test \
+    --dataset.single_task="Put the blue cube on the black box" \
+    --dataset.num_episodes=1 \
+    --dataset.episode_time_s=30 \
+    --dataset.reset_time_s=30 \
+    --dataset.push_to_hub=true \
+    --replay=true
 ```
 
 ## E. データセットの訓練と評価
@@ -521,7 +554,7 @@ lerobot-record \
 
 **訓練**
 
-```Bash
+```Python
 lerobot-train \
   --dataset.repo_id=${HF_USER}/so101_test \
   --policy.type=act \

@@ -22,7 +22,7 @@ torch-2.5.0a0+872d972e41.nv24.08.17622132-cp310-cp310-linux_aarch64.whl
 
 Tras la descarga, ejecutar:
 
-```bash
+```Plain Text
 export TORCH_INSTALL=torch-2.5.0a0+872d972e41.nv24.08.17622132-cp310-cp310-linux_aarch64.whl
 pip install --no-cache $TORCH_INSTALL
 ```
@@ -60,7 +60,7 @@ git clone --branch v0.20.0 https://github.com/pytorch/vision.git
 
 Tras la descarga, compilar:
 
-```bash
+```Plain Text
 export BUILD_VERSION=0.20.0
 python3 setup.py install --user
 ```

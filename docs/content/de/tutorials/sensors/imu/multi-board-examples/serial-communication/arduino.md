@@ -15,7 +15,7 @@ Dieses Beispiel verwendet das Arduino-Nano-Entwicklungsboard, einen Windows-PC, 
 
 
 ![Abb. 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/1.png)
-![1. Gerät anschließen – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/1.png)
+![1. Gerät anschließen – 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/2.png)
 
 
 ![Abb. 3](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/3.jpg)
@@ -26,7 +26,7 @@ Den konkreten Code finden Sie im Quellcode der Unterlagen.
 ```C++
 //Daten im Ringpuffer parsen, vollständige Frames extrahieren und Cache aktualisieren
 //Process RX ring buffer, parse frames and update internal cache
-void IMU_UART_Process()
+void IMU_UART_Process(void)
 {
     enum {
         RX_STATE_EXPECT_HEAD1 = 0,

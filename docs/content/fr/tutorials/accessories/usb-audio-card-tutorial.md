@@ -170,14 +170,23 @@ Puis relancer l'enregistrement et la lecture
 
 1. Bruit important
 
-```Plain Text
 D'abord mettre le volume du micro à 100
 Ouvrir un terminal
+
+```Bash
 $ sudo vi /boot/config.txt    #ou peut-être /boot/firmware/config.txt
+```
+
 Ajouter à la fin du fichier
+
+```Bash
 audio_pwm_mode = 2
+```
+
 ESC puis :wq pour enregistrer et quitter
 Ensuite redémarrer
+
+```Bash
 $ reboot
 ```
 

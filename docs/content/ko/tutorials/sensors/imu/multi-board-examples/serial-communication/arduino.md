@@ -15,7 +15,7 @@ description: "본 예제는 Arduino Nano 개발 보드, Windows PC 1대, 점퍼 
 
 
 ![그림 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/1.png)
-![1. 장치 연결 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/1.png)
+![1. 장치 연결 – 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/2.png)
 
 
 ![그림 3](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/3.jpg)
@@ -26,7 +26,7 @@ description: "본 예제는 Arduino Nano 개발 보드, Windows PC 1대, 점퍼 
 ```C++
 //링 버퍼의 데이터를 파싱하여 완전한 프레임 추출 및 캐시 갱신
 //Process RX ring buffer, parse frames and update internal cache
-void IMU_UART_Process()
+void IMU_UART_Process(void)
 {
     enum {
         RX_STATE_EXPECT_HEAD1 = 0,

@@ -79,8 +79,13 @@ def gstreamer_pipeline(
         "videoconvert ! "
         "video/x-raw, format=(string)BGR ! appsink"
         % (
-            sensor_id, capture_width, capture_height,
-            framerate, flip_method, display_width, display_height,
+            sensor_id,
+            capture_width,
+            capture_height,
+            framerate,
+            flip_method,
+            display_width,
+            display_height,
         )
     )
 

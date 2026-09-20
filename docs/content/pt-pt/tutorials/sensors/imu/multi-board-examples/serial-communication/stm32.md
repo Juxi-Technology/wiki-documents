@@ -21,7 +21,7 @@ Use o software Keil5 para abrir o USART.uvprojx e grave o programa na placa núc
 
 Consulte o código-fonte nos materiais para ver o código específico.
 
-```Python
+```c++
 //Analisar os dados do buffer circular, extrair tramas completas e atualizar a cache
 
 //Process RX ring buffer, parse frames and update internal cache

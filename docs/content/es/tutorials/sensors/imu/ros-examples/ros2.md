@@ -52,11 +52,11 @@ KERNEL=="ttyUSB*", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", MODE:="077
 sudo udevadm trigger
 ```
 
-```Plain Text
+```PowerShell
 sudo service udev reload
 ```
 
-```Plain Text
+```PowerShell
 sudo service udev restart
 ```
 

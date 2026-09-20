@@ -21,7 +21,7 @@ description: "本次例程使用的是STM32F103C8T6核心板，一臺windows電�
 
 具體代碼請看資料中的源碼。
 
-```Python
+```c++
 //解析環形緩衝中的數據，提取完整幀並更新緩存
 
 //Process RX ring buffer, parse frames and update internal cache

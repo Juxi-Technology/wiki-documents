@@ -15,7 +15,7 @@ Este ejemplo usa la placa de desarrollo Arduino Nano, un PC Windows, varios cabl
 
 
 ![Imagen 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.jpg)
-![1. Conectar el dispositivo – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/1.jpg)
+![1. Conectar el dispositivo – 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino/2.jpg)
 
 ## 2. Explicación del código clave
 

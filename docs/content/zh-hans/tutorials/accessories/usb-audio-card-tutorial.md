@@ -172,14 +172,23 @@ speaker-test -c 2 -D plughw:X,0
 
 1.噪音较大问题
 
-```Plain Text
 先将麦克风音量置于100
 打开终端
+
+```Bash
 $ sudo vi /boot/config.txt    #或者可能在/boot/firmware/config.txt
+```
+
 在文本最后添加
+
+```Bash
 audio_pwm_mode = 2
+```
+
 ESC输入:wq退出保存
 然后重启
+
+```Bash
 $ reboot
 ```
 
@@ -191,7 +200,7 @@ $ reboot
 
 执行以下命令将当前设置持久化
 
-```Python
+```Bash
 sudo chmod 664 /var/lib/alsa/asound.state
 sudo alsactl store
 ```
@@ -385,7 +394,7 @@ alsamixer -c X  # X 为 USB 声卡的 card 编号
 sudo apt install -y linux-generic && sudo reboot
 ```
 
-```Python
+```Bash
 sudo modprobe snd-hda-intel model=generic #（不同机型可尝试不同 model 值）
 # 创建声卡驱动配置文件
 sudo echo "options snd-hda-intel model=generic" > /etc/modprobe.d/sound.conf

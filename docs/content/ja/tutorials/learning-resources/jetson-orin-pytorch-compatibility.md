@@ -22,7 +22,7 @@ torch-2.5.0a0+872d972e41.nv24.08.17622132-cp310-cp310-linux_aarch64.whl
 
 ダウンロード後、実行:
 
-```bash
+```Plain Text
 export TORCH_INSTALL=torch-2.5.0a0+872d972e41.nv24.08.17622132-cp310-cp310-linux_aarch64.whl
 pip install --no-cache $TORCH_INSTALL
 ```
@@ -57,13 +57,13 @@ Jetson Orin プラットフォームが対応する CUDA バージョンと一�
 
 対応する torchvision バージョンを手動でインストールします。torch 2.5 → torchvision 0.20.0
 
-```python
+```bash
 git clone --branch v0.20.0 https://github.com/pytorch/vision.git
 ```
 
 ダウンロード後、ビルド:
 
-```bash
+```Plain Text
 export BUILD_VERSION=0.20.0
 python3 setup.py install --user
 ```

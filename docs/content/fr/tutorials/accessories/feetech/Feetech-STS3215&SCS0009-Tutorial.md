@@ -14,6 +14,6 @@ description: "Tutoriel de débogage des servos bus série Feetech STS3215 et SCS
 
 ![image – 2](../../../../../public/images/tutorials/accessories/feetech/Feetech-STS3215&SCS0009-Tutorial/2.png)
 
-Fichiers de débogage servo STS3215.zip
+[Fichiers de débogage servo STS3215.zip](/downloads/STS3215%20舵机调试资料.zip)
 
-Fichiers de débogage servo SCS009.zip
+[Fichiers de débogage servo SCS009.zip](/downloads/SCS009%20舵机调试资料.zip)

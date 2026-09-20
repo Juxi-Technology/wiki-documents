@@ -15,7 +15,7 @@ Questo esempio usa la scheda di sviluppo Arduino Nano, un PC Windows, diversi ca
 
 
 ![Immagine 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/1.png)
-![1. Collegare il dispositivo – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/1.png)
+![1. Collegare il dispositivo – 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/2.png)
 
 
 ![Immagine 3](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino/3.jpg)
@@ -26,7 +26,7 @@ Il codice concreto si trova nel codice sorgente dei materiali.
 ```C++
 //Analizza i dati nel ring buffer, estrai i frame completi e aggiorna la cache
 //Process RX ring buffer, parse frames and update internal cache
-void IMU_UART_Process()
+void IMU_UART_Process(void)
 {
     enum {
         RX_STATE_EXPECT_HEAD1 = 0,

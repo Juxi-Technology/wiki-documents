@@ -57,7 +57,7 @@ Lösung:
 
 Passende torchvision-Version manuell installieren, torch 2.5 -\> torchvision 0.20.0
 
-```Python
+```bash
 git clone --branch v0.20.0 https://github.com/pytorch/vision.git
 ```
 

@@ -39,8 +39,8 @@ torch.cuda.is_available()
 安装 Jetson Orin 平台兼容的 CUDA 版本对应的 cuSPARSELt 库
 
 下载链接：
-[https://developer.nvidia.com/cuda-12-6-0-download-archive?target_os=Linux&target_arch=aarch64-jetson&Compilation=Native&Distribution=Ubuntu&target_version=22.04&target_type=deb_local](https://link.zhihu.com/?target=https%3A//developer.nvidia.com/cuda-12-6-0-download-archive%3Ftarget_os%3DLinux%26target_arch%3Daarch64-jetson%26Compilation%3DNative%26Distribution%3DUbuntu%26target_version%3D22.04%26target_type%3Ddeb_local)
-[https://developer.nvidia.com/cusparselt-downloads](https://link.zhihu.com/?target=https%3A//developer.nvidia.com/cusparselt-downloads)
+https://developer.nvidia.com/cuda-12-6-0-download-archive?target_os=Linux&target_arch=aarch64-jetson&Compilation=Native&Distribution=Ubuntu&target_version=22.04&target_type=deb_local
+https://developer.nvidia.com/cusparselt-downloads
 
 可能出现的问题三：
 
@@ -49,7 +49,7 @@ torch.cuda.is_available()
 解决方法：
 手动安装匹配的vision版本，torch 2.5->torchvision 0.20.0
 
-```Python
+```bash
 git clone --branch v0.20.0 https://github.com/pytorch/vision.git
 ```
 

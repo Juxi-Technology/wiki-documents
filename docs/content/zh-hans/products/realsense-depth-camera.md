@@ -102,8 +102,8 @@ finally:
 python -m lerobot.find_cameras realsense
 
 # 遥操作时启用 RealSense
-lerobot-teleoperate \\
-  --robot.cameras='{ front: {type: realsense} }' \\
+lerobot-teleoperate \
+  --robot.cameras='{ front: {type: realsense} }' \
   ...
 ```
 

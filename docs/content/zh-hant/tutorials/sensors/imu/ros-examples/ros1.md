@@ -90,7 +90,7 @@ sudo service udev restart
 ll /dev/imu-serial
 ```
 
-```Plain Text
+```Bash
 sudo usermod -aG dialout ash
 ```
 

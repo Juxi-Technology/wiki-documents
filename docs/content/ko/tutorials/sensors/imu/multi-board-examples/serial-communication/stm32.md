@@ -21,10 +21,10 @@ keil5 소프트웨어로 USART.uvprojx를 열어 STM32F103C8T6 코어 보드에 
 ![그림 2](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32/2.png)
 구체적인 코드는 자료의 소스 코드를 참조하세요.
 
-```C++
+```c++
 //링 버퍼의 데이터를 파싱하여 완전한 프레임 추출 및 캐시 갱신
 //Process RX ring buffer, parse frames and update internal cache
-void IMU_UART_Process()
+void IMU_UART_Process(void)
 {
     enum {
         RX_STATE_EXPECT_HEAD1 = 0,

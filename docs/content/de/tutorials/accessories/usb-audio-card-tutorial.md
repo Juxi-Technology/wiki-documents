@@ -170,14 +170,23 @@ Danach erneut aufnehmen und abspielen
 
 1. Starke Störgeräusche
 
-```Plain Text
 Zuerst Mikrofonlautstärke auf 100 stellen
 Terminal öffnen
+
+```Bash
 $ sudo vi /boot/config.txt    #oder ggf. /boot/firmware/config.txt
+```
+
 Am Ende der Datei hinzufügen
+
+```Bash
 audio_pwm_mode = 2
+```
+
 ESC, dann :wq zum Speichern und Beenden
 Danach neu starten
+
+```Bash
 $ reboot
 ```
 

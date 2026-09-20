@@ -24,7 +24,7 @@ description: "本次例程使用的是Arduino Nano开发版，一台windows电�
 ```C++
 //解析环形缓冲中的数据，提取完整帧并更新缓存
 //Process RX ring buffer, parse frames and update internal cache
-void IMU_UART_Process()
+void IMU_UART_Process(void)
 {
     enum {
         RX_STATE_EXPECT_HEAD1 = 0,
