@@ -428,8 +428,7 @@ Guarde o nome do seu repositório do Hugging Face em uma variável para executar
 hf auth whoami
 
 # Guardar o nome de utilizador numa variável
-# Se estiver a usar a CLI legacy:
-HF_USER=$(huggingface-cli whoami | head -n 1)
+HF_USER=$(hf auth whoami | head -n 1)
 echo $HF_USER
 ```
 
@@ -894,7 +893,7 @@ huggingface-cli login --token ${HUGGINGFACE_TOKEN} --add-to-git-credential
 ```
 
 ```Plain Text
-HF_USER=$(huggingface-cli whoami | head -n 1)
+HF_USER=$(hf auth whoami | head -n 1)
 ```
 
 ```Plain Text

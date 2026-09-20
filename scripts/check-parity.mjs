@@ -21,6 +21,7 @@ const STRICT = process.argv.includes('--strict')
 // 允许跨语种不同的代码行(前缀匹配);每条都要有理由
 const ALLOW = [
   'STORE',                    // 商店链接按语种前缀,已在归一里处理,这里兜底
+  'HF_USER=$(huggingface-cli whoami',  // pt-pt 该处改用新版 `hf auth whoami`(两版 CLI 站内都有效),属语种书写差异而非缺失
 ]
 
 const files = []

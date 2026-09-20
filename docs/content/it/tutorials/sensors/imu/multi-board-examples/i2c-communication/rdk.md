@@ -23,6 +23,19 @@ Verificare i dispositivi I2C
 python3 /app/40pin_samples/test_i2c.py
 ```
 
+Per prima cosa installare I2Ctool; digitare nel terminale:
+
+```PowerShell
+sudo apt-get update
+sudo apt-get install -y i2c-tools
+```
+
+Visualizzare il dispositivo I2C
+
+```PowerShell
+sudo i2cdetect -y -r -a 0
+```
+
 ![2. Verificare lo stato del dispositivo – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk/3.png)
 
 ## 3. Installare le librerie del driver

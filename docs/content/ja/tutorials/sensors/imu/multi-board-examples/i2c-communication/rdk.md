@@ -23,6 +23,19 @@ I2Cデバイスの確認
 python3 /app/40pin_samples/test_i2c.py
 ```
 
+まずI2Ctoolをインストールします。ターミナルに入力：
+
+```PowerShell
+sudo apt-get update
+sudo apt-get install -y i2c-tools
+```
+
+I2Cデバイスを確認します
+
+```PowerShell
+sudo i2cdetect -y -r -a 0
+```
+
 ![2. デバイス状態の確認 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk/3.png)
 
 ## 3. ドライバライブラリのインストール
