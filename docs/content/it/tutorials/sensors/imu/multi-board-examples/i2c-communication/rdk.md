@@ -17,20 +17,14 @@ Collegare il sensore di assetto IMU all'interfaccia I2C della RDK X5 come mostra
 
 ## 2. Verificare lo stato del dispositivo
 
-Verificare i dispositivi I2C
-
-```PowerShell
-python3 /app/40pin_samples/test_i2c.py
-```
-
-Per prima cosa installare I2Ctool; digitare nel terminale:
+Installare prima I2Ctool, inserire nel terminale:
 
 ```PowerShell
 sudo apt-get update
 sudo apt-get install -y i2c-tools
 ```
 
-Visualizzare il dispositivo I2C
+Verificare i dispositivi I2C
 
 ```PowerShell
 sudo i2cdetect -y -r -a 0
@@ -63,8 +57,6 @@ Trascinare i file estratti su RDK X5 con MobaXterm.
 **Entrare nella directory ~/IMU_Library ed eseguire IMU_Serial_Library.py**
 
 ```PowerShell
-cd ~/imu_ros1/src/IMU_ROS1/IMU_Library
-# Oppure
 cd ~/imu_ros2/src/IMU_ROS2/IMU_Library
 
 # Esegui il file di stampa dei dati IMU

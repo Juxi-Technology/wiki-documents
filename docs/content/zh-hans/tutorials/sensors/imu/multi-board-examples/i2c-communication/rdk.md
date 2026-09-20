@@ -23,19 +23,6 @@ description: "IMU 姿态传感器与 RDK X5 的 I2C 通信教程：在 RDK 开�
 python3 /app/40pin_samples/test_i2c.py
 ```
 
-首先安装 I2Ctool，终端输入：
-
-```PowerShell
-sudo apt-get update
-sudo apt-get install -y i2c-tools
-```
-
-查看I2C设备
-
-```PowerShell
-sudo i2cdetect -y -r -a 0
-```
-
 ![2. 查看设备状态 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk/3.png)
 
 ## 3. 安装驱动库

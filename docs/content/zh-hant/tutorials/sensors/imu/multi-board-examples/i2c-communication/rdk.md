@@ -23,19 +23,6 @@ description: "IMU 慣導模組 I2C 通訊教程(RDK X5 版)：設備連接、驅
 python3 /app/40pin_samples/test_i2c.py
 ```
 
-首先安裝 I2Ctool，終端輸入：
-
-```PowerShell
-sudo apt-get update
-sudo apt-get install -y i2c-tools
-```
-
-查看I2C裝置
-
-```PowerShell
-sudo i2cdetect -y -r -a 0
-```
-
 ![2.查看設備狀態 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk/3.png)
 
 ## 3.安裝驅動庫

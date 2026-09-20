@@ -18,10 +18,24 @@ const ROOT = 'docs/content'
 const LOCS = ['en', 'zh-hans', 'zh-hant', 'ja', 'ko', 'de', 'fr', 'es', 'it', 'pt-br', 'pt-pt']
 const VERBOSE = process.argv.includes('--verbose')
 const STRICT = process.argv.includes('--strict')
-// 允许跨语种不同的代码行(前缀匹配);每条都要有理由
+// 允许跨语种不同的代码行(前缀/包含匹配);每条都要有理由
 const ALLOW = [
   'STORE',                    // 商店链接按语种前缀,已在归一里处理,这里兜底
   'HF_USER=$(huggingface-cli whoami',  // pt-pt 该处改用新版 `hf auth whoami`(两版 CLI 站内都有效),属语种书写差异而非缺失
+]
+// 仅在指定页面上豁免的行(比全局豁免精确)
+const ALLOW_BY_PAGE = [
+  {
+    page: 'tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk.md',
+    why: '「查看 I2C 设备」这一步,5 个语种用厂商脚本 python3 /app/40pin_samples/test_i2c.py,6 个语种用 i2c-tools 方案(sudo apt-get install -y i2c-tools + i2cdetect -y -r -a 0)。两套命令都出自厂商素材,属历史内容差异;按「不改原意」保留各语种原样,不强行统一',
+    lines: [
+      'python3 /app/40pin_samples/test_i2c.py',
+      'sudo apt-get update',
+      'sudo apt-get install -y i2c-tools',
+      'sudo i2cdetect -y -r -a 0',
+      'cd ~/imu_ros1/src/IMU_ROS1/IMU_Library',
+    ],
+  },
 ]
 
 const files = []
@@ -138,7 +152,8 @@ for (const { p, loc } of files) {
   pages.get(key)[loc] = { code: codeLines(src), img: imgTargets(src), dl: dlTargets(src), st: structure(src) }
 }
 
-const allow = (l) => ALLOW.some((a) => l.startsWith(a) || l.includes(a))
+const allow = (l, key) => ALLOW.some((a) => l.startsWith(a) || l.includes(a))
+  || ALLOW_BY_PAGE.some((e) => e.page === key && e.lines.some((x) => l.startsWith(x) || l.includes(x)))
 for (const [key, m] of pages) {
   const locs = Object.keys(m)
   if (locs.length < LOCS.length) { problems.push(`缺语种(${locs.length}/11): ${key}`); continue }
@@ -173,7 +188,7 @@ for (const [key, m] of pages) {
     owner.get(l).push(loc)
   }
   for (const [line, owners] of owner) {
-    if (allow(line)) continue
+    if (allow(line, key)) continue
     if (owners.length === locs.length) continue
     if (owners.length < 2) {
       if (VERBOSE) console.log(`  · 仅 ${owners[0]} 独有(跳过):「${line.slice(0, 60)}」(${key})`)
@@ -187,7 +202,7 @@ for (const [key, m] of pages) {
   // ⑤b 代码行「次数」:en 里出现 ≥2 次、且该语种也含该行时,次数必须与 en 相同。
   //     译文行在该语种是另一种写法(次数 0)→ 自动跳过;这条抓「重复的示例块漏了一个」。
   for (const [line, n] of m.en.code) {
-    if (n < 2 || allow(line)) continue
+    if (n < 2 || allow(line, key)) continue
     for (const loc of locs) {
       if (loc === 'en') continue
       const k = m[loc].code.get(line) || 0

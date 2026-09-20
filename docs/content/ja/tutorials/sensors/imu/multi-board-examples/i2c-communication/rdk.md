@@ -17,20 +17,14 @@ IMU姿勢センサーを下図のようにRDK X5のI2Cインターフェース�
 
 ## 2. デバイス状態の確認
 
-I2Cデバイスの確認
-
-```PowerShell
-python3 /app/40pin_samples/test_i2c.py
-```
-
-まずI2Ctoolをインストールします。ターミナルに入力：
+まず I2Ctool をインストールします。ターミナルで入力：
 
 ```PowerShell
 sudo apt-get update
 sudo apt-get install -y i2c-tools
 ```
 
-I2Cデバイスを確認します
+I2Cデバイスの確認
 
 ```PowerShell
 sudo i2cdetect -y -r -a 0
@@ -63,8 +57,6 @@ MobaXtermソフトで解凍したファイルを RDK X5 にドラッグします
 **~/IMU_Library ディレクトリに入り、IMU_Serial_Library.py ファイルを実行**
 
 ```PowerShell
-cd ~/imu_ros1/src/IMU_ROS1/IMU_Library
-# または
 cd ~/imu_ros2/src/IMU_ROS2/IMU_Library
 
 # IMU シリアルデータ出力ファイルを実行

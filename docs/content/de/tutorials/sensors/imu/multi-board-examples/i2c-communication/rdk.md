@@ -17,20 +17,14 @@ Den IMU-Lagesensor wie unten abgebildet an den I2C-Anschluss von RDK X5 anschlie
 
 ## 2. Gerätestatus prüfen
 
-I2C-Geräte prüfen
-
-```PowerShell
-python3 /app/40pin_samples/test_i2c.py
-```
-
-Installieren Sie zunächst I2Ctool, geben Sie im Terminal ein:
+Zuerst I2Ctool installieren, im Terminal eingeben:
 
 ```PowerShell
 sudo apt-get update
 sudo apt-get install -y i2c-tools
 ```
 
-I2C-Gerät anzeigen
+I2C-Geräte prüfen
 
 ```PowerShell
 sudo i2cdetect -y -r -a 0
@@ -63,8 +57,6 @@ Die entpackten Dateien per MobaXterm auf RDK X5 ziehen.
 **In das Verzeichnis ~/IMU_Library wechseln und IMU_Serial_Library.py ausführen**
 
 ```PowerShell
-cd ~/imu_ros1/src/IMU_ROS1/IMU_Library
-# oder
 cd ~/imu_ros2/src/IMU_ROS2/IMU_Library
 
 # IMU-Datenausgabedatei ausführen

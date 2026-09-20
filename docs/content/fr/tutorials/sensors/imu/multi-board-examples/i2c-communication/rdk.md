@@ -17,20 +17,14 @@ Connecter le capteur d'attitude IMU à l'interface I2C de la RDK X5 comme illust
 
 ## 2. Vérifier l'état du périphérique
 
-Vérifier les périphériques I2C
-
-```PowerShell
-python3 /app/40pin_samples/test_i2c.py
-```
-
-Installez d'abord I2Ctool, saisissez dans le terminal :
+Installer d'abord I2Ctool, saisir dans le terminal :
 
 ```PowerShell
 sudo apt-get update
 sudo apt-get install -y i2c-tools
 ```
 
-Vérifier les appareils I2C
+Vérifier les périphériques I2C
 
 ```PowerShell
 sudo i2cdetect -y -r -a 0
@@ -63,8 +57,6 @@ Glisser les fichiers décompressés sur la RDK X5 avec MobaXterm.
 **Entrer dans le répertoire ~/IMU_Library et exécuter IMU_Serial_Library.py**
 
 ```PowerShell
-cd ~/imu_ros1/src/IMU_ROS1/IMU_Library
-# ou
 cd ~/imu_ros2/src/IMU_ROS2/IMU_Library
 
 # Exécuter le fichier de sortie de données série IMU
