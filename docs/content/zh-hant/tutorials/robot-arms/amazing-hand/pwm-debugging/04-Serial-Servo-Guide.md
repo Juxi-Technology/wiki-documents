@@ -31,7 +31,7 @@ SCS0009 官方總線舵機版 — 使用說明
 
 2. 部署:`Demo\Windows_Scripts_CN\3-部署代码.bat`(或 Linux 對應腳本)。
 
-3. 執行:4-运行代码.bat → 選 `2 - 真實硬件(SCS0009 總線舵機)` → 選手型。
+3. 執行:4-運行代碼.bat → 選 `2 - 真實硬件(SCS0009 總線舵機)` → 選手型。
 
 4. 詳細說明見 `..\02_hand_tracking\Demo\双版本舵机并存说明.md`
 以及 `Demo\Windows_Scripts_CN\Windows使用教程.md`(官方教程)。

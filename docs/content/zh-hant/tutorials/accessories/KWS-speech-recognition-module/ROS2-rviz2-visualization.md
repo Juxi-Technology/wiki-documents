@@ -60,19 +60,19 @@ ros2 pkg create --build-type ament_python juxi_voice --license MIT
 
 ```Bash
 ~/juxi_speech_ws/
-├── build/                # (编译自动生成)
-├── install/              # (编译自动生成)
-├── log/                  # (编译自动生成)
+├── build/                # (編譯自動生成)
+├── install/              # (編譯自動生成)
+├── log/                  # (編譯自動生成)
 └── src/
     └── juxi_voice/
-        ├── package.xml   # (自动生成，无需修改)
+        ├── package.xml   # (自動生成，無需修改)
         ├── setup.py      # (需要修改)
         ├── resource/
         │   └── juxi_voice
-        └── juxi_voice/   # 【核心代码放这里】
+        └── juxi_voice/   # 【核心代碼放這裡】
             ├── __init__.py
-            ├── voice_node.py    # (新建：语音节点)
-            └── rviz_control.py  # (新建：RViz控制节点)
+            ├── voice_node.py    # (新建：語音節點)
+            └── rviz_control.py  # (新建：RViz控制節點)
 ```
 
 ---
@@ -136,18 +136,18 @@ class VoiceControlNode(Node):
         self.pub_cmd = self.create_publisher(String, '/juxi_voice_cmd', 10)
         self.ser = self._init_serial()
         self.timer = self.create_timer(0.01, self._read_and_parse_serial)
-        self.get_logger().info("✅ 语音节点启动完成")
+        self.get_logger().info("✅ 語音節點啟動完成")
 
     def _init_serial(self):
         try:
             ser = serial.Serial(self.serial_port_name, self.baudrate, timeout=0.01)
             if ser.is_open:
-                self.get_logger().info(f"🔌 串口打开成功: {self.serial_port_name}")
+                self.get_logger().info(f"🔌 串口打開成功: {self.serial_port_name}")
                 return ser
         except PermissionError:
-            self.get_logger().error(f"❌ 权限不足！请执行: sudo chmod 777 {self.serial_port_name}")
+            self.get_logger().error(f"❌ 權限不足！請執行: sudo chmod 777 {self.serial_port_name}")
         except Exception as e:
-            self.get_logger().error(f"❌ 串口错误: {e}")
+            self.get_logger().error(f"❌ 串口錯誤: {e}")
         return None
 
     def _play_voice(self, play_frame):
@@ -172,7 +172,7 @@ class VoiceControlNode(Node):
         if b4 == 0x00 and b3 in self.awake_frames:
             self.is_awake = True
             self._play_voice(self.awake_play_frame)
-            self.get_logger().info(f"🔔 已唤醒: {self.awake_frames[b3]}")
+            self.get_logger().info(f"🔔 已喚醒: {self.awake_frames[b3]}")
             return
 
         # 處理控制指令
@@ -184,7 +184,7 @@ class VoiceControlNode(Node):
                 msg = String()
                 msg.data = text
                 self.pub_cmd.publish(msg)
-                self.get_logger().info(f"🚀 发送指令: {text}")
+                self.get_logger().info(f"🚀 發送指令: {text}")
 
 def main(args=None):
     rclpy.init(args=args)
@@ -220,7 +220,7 @@ class RvizCubeControl(Node):
         self.marker_pub = self.create_publisher(Marker, '/juxi_visual_marker', 10)
         self.cmd_sub = self.create_subscription(String, '/juxi_voice_cmd', self._cmd_callback, 10)
         self.timer = self.create_timer(0.1, self._publish_marker)
-        self.get_logger().info("✅ RViz节点启动完成")
+        self.get_logger().info("✅ RViz節點啟動完成")
 
     def _cmd_callback(self, msg):
         cmd = msg.data
@@ -316,7 +316,7 @@ colcon build --symlink-install
 ```Python
 cd ~/juxi_speech_ws
 source install/setup.bash
-或者写入到环境变量
+或者寫入到環境變量
 source ~/juxi_speech_ws/install/setup.bash
 ```
 
@@ -327,7 +327,7 @@ source ~/juxi_speech_ws/install/setup.bash
 ```Bash
 cd ~/juxi_speech_ws
 source install/setup.bash
-sudo chmod 777 /dev/ttyUSB0  # 解决串口权限
+sudo chmod 777 /dev/ttyUSB0  # 解決串口權限
 ros2 run juxi_voice voice_node
 ```
 

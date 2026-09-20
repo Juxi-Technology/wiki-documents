@@ -50,8 +50,8 @@ NanoCam 默認 **AP+STA 雙模式同時運行**，無需切換：
 用串口工具（波特率 **115200 8N1**）連接 NanoCam 的 Type-C 口：
 
 ```Plaintext
-sta_ssid:你的WiFi名称
-sta_pd:你的WiFi密码
+sta_ssid:你的WiFi名稱
+sta_pd:你的WiFi密碼
 ```
 
 > 收到 `OK` 表示設置成功。密碼修改後會自動重啟。
@@ -93,7 +93,7 @@ sta_pd:你的WiFi密码
 
 ```C++
 Serial.begin(115200);
-Serial.print("ai_mode:2");  // 切换到人脸检测
+Serial.print("ai_mode:2");  // 切換到人臉檢測
 ```
 
 ### Python 控制
@@ -101,7 +101,7 @@ Serial.print("ai_mode:2");  // 切换到人脸检测
 ```Python
 import serial
 ser = serial.Serial("COM3", 115200)
-ser.write(b"ai_mode:1\r\n")  # 切换到猫脸检测
+ser.write(b"ai_mode:1\r\n")  # 切換到貓臉檢測
 ```
 
 ### 查看完整指令

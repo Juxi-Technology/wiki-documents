@@ -7,6 +7,10 @@ description: "USB 自動接続カメラのデバッグは USB オートフォー
 
 USB 自動接続カメラのデバッグは[USB オートフォーカスカメラチュートリアル](https://juxitech.feishu.cn/docx/JXstdNbN6oiL1WxiqJrc2OJDnrf?from=from_copylink)を参照してください
 
+## SO-ARM100 アーム搭載ブラケット取付手順
+
+![SO-ARM100 アーム搭載ブラケット取付手順 – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/1.png)
+
 ## SO-ARM101 アーム搭載ブラケット取付手順
 
 完成品では一般的にグリッパーにナットが取り付け済みなので、手順2に直接進めます

@@ -104,11 +104,11 @@ description: "ESP32-NanoCam 串口 AT 協議手冊:WiFi 配置、AI 模式切換
 ### 人臉識別操作流程
 
 ```Plaintext
-ai_mode:4          # 进入人脸识别模式 (设备自动重启)
-face_eril          # 注册人脸 (确保只有一张脸在画面中)
-face_rz            # 开始持续识别 — 标签持续显示不消失
-face_detect        # 退出识别模式 — 标签清除
-face_del           # 删除最后注册的人脸
+ai_mode:4          # 進入人臉識別模式 (設備自動重啟)
+face_eril          # 註冊人臉 (確保只有一張臉在畫面中)
+face_rz            # 開始持續識別 — 標籤持續顯示不消失
+face_detect        # 退出識別模式 — 標籤清除
+face_del           # 刪除最後註冊的人臉
 ```
 
 ### 人臉識別注意事項

@@ -63,7 +63,7 @@ Solução:
 Instale manualmente a versão do torchvision correspondente: torch 2.5 -\> torchvision 0.20.0 
 
 ```Python
-git clone --branch v0.20.0 [https://github.com/pytorch/vision.git](https://link.zhihu.com/?target=https%3A//github.com/pytorch/vision.git)
+git clone --branch v0.20.0 https://github.com/pytorch/vision.git
 ```
 
 Compile após o download:

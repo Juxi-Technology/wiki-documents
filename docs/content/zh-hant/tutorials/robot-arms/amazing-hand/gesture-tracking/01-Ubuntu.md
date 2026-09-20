@@ -36,7 +36,7 @@ chmod +x *.sh
 之後每個腳本就可以用 `./腳本名` 執行了。也可以兩步合一：
 
 ```Bash
-cd "AmazingHand-main/Demo/Linux(Ubuntu)一键部署脚本" && chmod +x *.sh && ./1-安装环境.sh
+cd "AmazingHand-main/Demo/Linux(Ubuntu)一鍵部署腳本" && chmod +x *.sh && ./1-安裝環境.sh
 ```
 
 > 提示：把 `AmazingHand-main` 拷到 Linux 時，用 **tar** 保留權限最穩：
@@ -56,7 +56,7 @@ cd "Demo/Linux(Ubuntu)一键部署脚本"
 ```
 
 ```Bash
-./1-安装环境.sh
+./1-安裝環境.sh
 ```
 
 自動完成：
@@ -191,13 +191,13 @@ sudo usermod -aG dialout $USER
 
 ```Bash
 ============================================
-   请选择运行模式：
+   請選擇運行模式：
 ============================================
-    1 - 模拟仿真（摄像头手势追踪）
-    2 - 真实硬件
+    1 - 模擬仿真（攝像頭手勢追蹤）
+    2 - 真實硬件
     q - 退出
 ============================================
-  请输入序号 [1/2/q]:
+  請輸入序號 [1/2/q]:
 ```
 
 - 選 **1**：模擬環境，攝像頭手勢驅動兩隻仿真手
@@ -206,12 +206,12 @@ sudo usermod -aG dialout $USER
 
 ```Bash
 ============================================
-   真实硬件 - 请选择灵巧手：
+   真實硬件 - 請選擇靈巧手：
 ============================================
     1 - 右手
     2 - 左手
-    3 - 左右双手
-    b - 返回上级菜单
+    3 - 左右雙手
+    b - 返回上級菜單
 ============================================
 ```
 
@@ -348,14 +348,14 @@ sudo chmod 666 /dev/ttyACM*
 
 ```Plain Text
 ls -l /dev/video0
-sudo usermod -aG video $USER   # 加入 video 组，注销重登
+sudo usermod -aG video $USER   # 加入 video 組，註銷重登
 ```
 
 4. 用 v4l2 驗證攝像頭是否真的能出幀（能出幀 = 驅動正常，問題在 OpenCV 兼容性）：
 
 ```Bash
 v4l2-ctl --device=/dev/video0 --set-fmt-video=width=640,height=480,pixelformat=MJPG --stream-mmap --stream-count=1 --stream-to=/tmp/frame.jpg
-ls -l /tmp/frame.jpg   # 有几十~几百KB = 流通
+ls -l /tmp/frame.jpg   # 有幾十~幾百KB = 流通
 ```
 
 ### 9.7 連接埠號每次變化
@@ -381,11 +381,11 @@ python -m pip install opencv-contrib-python numpy mediapipe -i https://mirrors.a
 ### 數據流原理
 
 ```Plain Text
-摄像头 → HandTracking（MediaPipe 识别手势）
-              ↓ 手部关键点坐标
-         AHSimulation（MuJoCo 仿真 + 逆运动学）
-              ↓ 关节目标角度
-         AHControl（串口 → 舵机驱动板 → 灵巧手）
+攝像頭 → HandTracking（MediaPipe 識別手勢）
+              ↓ 手部關鍵點座標
+         AHSimulation（MuJoCo 仿真 + 逆運動學）
+              ↓ 關節目標角度
+         AHControl（串口 → 舵機驅動板 → 靈巧手）
 ```
 
 ### 連接埠配置位置

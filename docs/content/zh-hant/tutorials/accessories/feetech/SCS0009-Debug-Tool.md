@@ -38,15 +38,15 @@ description: "SCS0009 舵機調試工具使用教程:介紹 FTServo 圖形化工
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  SCS0009 舵机调试工具                     [EN / English]     │  ← 顶栏
+│  SCS0009 舵機調試工具                     [EN / English]     │  ← 頂欄
 ├─────────────────────────────────────────────────────────────┤
-│  🔌 串口连接   [端口▾][🔄][波特率▾][连接] [🔴未连接]         │
-│  🎯 舵机      [🔍扫描][舵机▾][读取参数][读取状态]            │
-│               ┌ 扫描到的舵机列表 ┐                           │
-│  📋 参数表    地址|寄存器|值|存储区域|读写  (44 个寄存器)      │
-│  🎯 位置控制  目标位置|速度|移动|力矩开|力矩关 | 状态         │
-│  🔧 波特率/恢复出厂  新波特率|修改波特率|恢复出厂            │
-│  📁 xdat 参数(仅保存EEPROM) 保存当前舵机|打开xdat|恢复参数    │
+│  🔌 串口連接   [端口▾][🔄][波特率▾][連接] [🔴未連接]         │
+│  🎯 舵機      [🔍掃描][舵機▾][讀取參數][讀取狀態]            │
+│               ┌ 掃描到的舵機列表 ┐                           │
+│  📋 參數表    地址|寄存器|值|存儲區域|讀寫  (44 個寄存器)      │
+│  🎯 位置控制  目標位置|速度|移動|力矩開|力矩關 | 狀態         │
+│  🔧 波特率/恢復出廠  新波特率|修改波特率|恢復出廠            │
+│  📁 xdat 參數(僅保存EEPROM) 保存當前舵機|打開xdat|恢復參數    │
 │  📜 日志                                                      │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -106,7 +106,7 @@ python -m src.gui.factory_calibration_tool
 
 ```
 端口 (COM 和 LPT)
-  └─ USB-SERIAL CH340 (COM3)     ← 你的舵机串口
+  └─ USB-SERIAL CH340 (COM3)     ← 你的舵機串口
 ```
 
 > **記下 COM 號**，啟動後選擇；也可手動指定端口（串口被佔用時）：
@@ -169,7 +169,7 @@ ls /dev/ttyUSB* /dev/ttyACM* 2>/dev/null
 
 ```
 /dev/ttyUSB0   # CH340 / CP2102 / PL2303
-/dev/ttyACM0   # 原生 USB 串口（Arduino / ESP32 板载）
+/dev/ttyACM0   # 原生 USB 串口（Arduino / ESP32 板載）
 ```
 
 查看詳細製造商信息：
@@ -244,7 +244,7 @@ ls /dev/cu.*
 
 ```
 /dev/cu.usbserial-0001      # CP2102 / FTDI
-/dev/cu.usbmodem141101      # 板载 USB 串口（Arduino / ESP32）
+/dev/cu.usbmodem141101      # 板載 USB 串口（Arduino / ESP32）
 /dev/cu.wchusbserial1420    # CH340
 ```
 
@@ -373,7 +373,7 @@ system_profiler SPUSBDataType | grep -A5 -i "serial\|CH340\|CP210"
 
 ```
 SCS0009_ServoController/
-├── docs/                    # 分系统教程（中英文）
+├── docs/                    # 分系統教程（中英文）
 │   ├── zh/                  # 中文教程
 │   │   ├── Windows教程.md
 │   │   ├── Linux教程.md
@@ -383,17 +383,17 @@ SCS0009_ServoController/
 │       ├── Linux.md
 │       └── macOS.md
 ├── src/
-│   ├── gui/                  # PySide6 图形界面
-│   │   ├── factory_calibration_tool.py   # 主窗口（FT 调试器 + 语言切换）
-│   │   ├── ft_debugger.py                # FT 调试器面板（参数读写 / xdat 备份）
-│   │   ├── theme_utils.py                # 浅色主题
-│   │   └── language_dialog.py            # 语言选择对话框
-│   ├── xdat_utils.py         # xdat 参数文件读写
-│   ├── i18n*.py / i18n_translations/     # 中英文国际化
-│   └── port_utils.py         # 串口检测
-├── scservo_sdk/              # FTServo 舵机通信 SDK
+│   ├── gui/                  # PySide6 圖形界面
+│   │   ├── factory_calibration_tool.py   # 主窗口（FT 調試器 + 語言切換）
+│   │   ├── ft_debugger.py                # FT 調試器面板（參數讀寫 / xdat 備份）
+│   │   ├── theme_utils.py                # 淺色主題
+│   │   └── language_dialog.py            # 語言選擇對話框
+│   ├── xdat_utils.py         # xdat 參數文件讀寫
+│   ├── i18n*.py / i18n_translations/     # 中英文國際化
+│   └── port_utils.py         # 串口檢測
+├── scservo_sdk/              # FTServo 舵機通信 SDK
 ├── requirements.txt
-└── setup.py                  # 环境检查脚本
+└── setup.py                  # 環境檢查腳本
 ```
 
 本工具倉庫由 `src/gui`（PySide6 圖形界面與 FT 調試器）、`scservo_sdk`（FTServo 舵機通信 SDK）和 `setup.py`（環境檢查腳本）等模組組成。

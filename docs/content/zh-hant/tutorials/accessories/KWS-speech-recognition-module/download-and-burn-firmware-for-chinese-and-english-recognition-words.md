@@ -98,9 +98,9 @@ description: "模塊出廠已經燒錄語音識別功能固件，資料附件裏
 
 4. 這裏提供了兩份命令詞播報詞協議列表，有需要的可以根據這份表格自行更改
 
-    命令词播报词协议列表V3_中文模板.xlsx
+    命令詞播報詞協議列表V3_中文模板.xlsx
 
-    命令词播报词协议列表V3_英文模板.xlsx
+    命令詞播報詞協議列表V3_英文模板.xlsx
 
 ![固件配置 – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/3.png)
 
@@ -112,7 +112,7 @@ description: "模塊出廠已經燒錄語音識別功能固件，資料附件裏
 
 #### 下載語音模塊燒錄軟件壓縮包
 
-语音模块固件烧录软件.7z
+語音模塊固件燒錄軟件.7z
 
 1. 解壓後打開軟件
 
@@ -142,9 +142,9 @@ description: "模塊出廠已經燒錄語音識別功能固件，資料附件裏
 
 #### 這裏有準備好的固件資料，可直接燒錄
 
-CI1302_中文_单麦_V00681_UART0_115200_2M.bin
+CI1302_中文_單麥_V00681_UART0_115200_2M.bin
 
-CI1302_英文_单麦_V00916_UART0_115200_2M.bin
+CI1302_英文_單麥_V00916_UART0_115200_2M.bin
 
 
 

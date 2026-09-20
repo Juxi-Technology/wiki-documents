@@ -7,6 +7,10 @@ description: "Per il debug della fotocamera USB, vedere il tutorial sulla fotoca
 
 Per il debug della fotocamera USB, vedere il [tutorial sulla fotocamera USB con autofocus](https://juxitech.feishu.cn/docx/JXstdNbN6oiL1WxiqJrc2OJDnrf?from=from_copylink)
 
+## Passi di installazione del supporto da braccio SO-ARM100
+
+![Passi di installazione del supporto da braccio SO-ARM100 – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/1.png)
+
 ## Passi di installazione del supporto da braccio SO-ARM101
 
 Sul prodotto finito i dadi sono già montati nella pinza – si può saltare direttamente al passo 2

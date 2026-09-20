@@ -40,13 +40,13 @@ description: "面向 SoARM 10X 系列機械臂的 FTServo 舵機工廠校準與 
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  SoARM 系列校准工具         [串口1▾] [串口2▾] [🔄]  [🎮遥控][EN]│  ← 顶栏
+│  SoARM 系列校準工具         [串口1▾] [串口2▾] [🔄]  [🎮遙控][EN]│  ← 頂欄
 ├─────────────────────────────────────────────────────────────┤
 │  ┌─────────────────────────┬──────────────────────────────┐ │
-│  │ 串口1 - 舵机标定        │ 串口2 - 舵机标定            │ │
-│  │  [🔴未连接] 当前舵机:…   │  [🔴未连接] 当前舵机:…      │ │
-│  │  舵机1~6 状态表格        │  舵机1~6 状态表格           │ │
-│  │  [中位校准][中位测试]…   │  [中位校准][中位测试]…      │ │
+│  │ 串口1 - 舵機標定        │ 串口2 - 舵機標定            │ │
+│  │  [🔴未連接] 當前舵機:…   │  [🔴未連接] 當前舵機:…      │ │
+│  │  舵機1~6 狀態表格        │  舵機1~6 狀態表格           │ │
+│  │  [中位校準][中位測試]…   │  [中位校準][中位測試]…      │ │
 │  └─────────────────────────┴──────────────────────────────┘ │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -101,7 +101,7 @@ python -m src.gui.factory_calibration_tool
 
 ```
 端口 (COM 和 LPT)
-  └─ USB-SERIAL CH340 (COM3)     ← 你的舵机串口
+  └─ USB-SERIAL CH340 (COM3)     ← 你的舵機串口
 ```
 
 > **記下 COM 號**，啟動後在頂欄選擇；也可手動指定端口（串口被佔用時）：
@@ -162,7 +162,7 @@ ls /dev/ttyUSB* /dev/ttyACM* 2>/dev/null
 
 ```
 /dev/ttyUSB0   # CH340 / CP2102 / PL2303
-/dev/ttyACM0   # 原生 USB 串口（Arduino / ESP32 板载）
+/dev/ttyACM0   # 原生 USB 串口（Arduino / ESP32 板載）
 ```
 
 查看詳細製造商信息：
@@ -237,7 +237,7 @@ ls /dev/cu.*
 
 ```
 /dev/cu.usbserial-0001      # CP2102 / FTDI
-/dev/cu.usbmodem141101      # 板载 USB 串口（Arduino / ESP32）
+/dev/cu.usbmodem141101      # 板載 USB 串口（Arduino / ESP32）
 /dev/cu.wchusbserial1420    # CH340
 ```
 
@@ -354,7 +354,7 @@ python -m src.tools.lerobot_calibrate --arm-type leader
 按校準文件運行到中位：
 
 ```bash
-python -m src.tools.run_calibration_middle <校准文件.json> --mode zero
+python -m src.tools.run_calibration_middle <校準文件.json> --mode zero
 ```
 
 LeRobot 環境的安裝與數據採集流程詳見 [LeRobot機械臂教程](./SO-ARM101-Tutorial.md)。
@@ -431,25 +431,25 @@ python -m src.tools.servo_remote_control
 
 ```
 Juxi_ServoController/
-├── docs/                    # 分系统教程
+├── docs/                    # 分系統教程
 │   ├── Windows教程.md
 │   ├── Linux教程.md
 │   └── macOS教程.md
 ├── src/
-│   ├── gui/                  # PySide6 图形界面
-│   │   ├── factory_calibration_tool.py   # 主工具（双串口标定 + 遥控 + 语言切换）
-│   │   ├── ft_debugger.py                # FT 调试器（参数读写 / xdat 备份）
-│   │   ├── calibration_wizard.py         # LeRobot 校准向导
-│   │   ├── theme_utils.py                # 浅色主题
-│   │   └── language_dialog.py            # 语言选择对话框
+│   ├── gui/                  # PySide6 圖形界面
+│   │   ├── factory_calibration_tool.py   # 主工具（雙串口標定 + 遙控 + 語言切換）
+│   │   ├── ft_debugger.py                # FT 調試器（參數讀寫 / xdat 備份）
+│   │   ├── calibration_wizard.py         # LeRobot 校準嚮導
+│   │   ├── theme_utils.py                # 淺色主題
+│   │   └── language_dialog.py            # 語言選擇對話框
 │   ├── tools/                # 命令行工具
-│   ├── xdat_utils.py         # xdat 参数文件读写
-│   ├── i18n*.py / i18n_translations/     # 中英文国际化
-│   ├── port_utils.py         # 串口检测
-│   └── calibration_manager.py# LeRobot 校准文件管理
-├── scservo_sdk/              # FTServo 舵机通信 SDK
+│   ├── xdat_utils.py         # xdat 參數文件讀寫
+│   ├── i18n*.py / i18n_translations/     # 中英文國際化
+│   ├── port_utils.py         # 串口檢測
+│   └── calibration_manager.py# LeRobot 校準文件管理
+├── scservo_sdk/              # FTServo 舵機通信 SDK
 ├── requirements.txt
-└── setup.py                  # 环境检查脚本
+└── setup.py                  # 環境檢查腳本
 ```
 
 本工具倉庫由 `src/gui`（PySide6 圖形界面）、`src/tools`（命令行工具）、`scservo_sdk`（FTServo 舵機通信 SDK）和 `setup.py`（環境檢查腳本）等模組組成。

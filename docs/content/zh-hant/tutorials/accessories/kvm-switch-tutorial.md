@@ -80,3 +80,7 @@ KVM切換器包含HUB功能、TTL串口、藍牙模塊
 
 ![2、主板（無顯示器）+主機（有顯示器） – 7](../../../../public/images/tutorials/accessories/kvm-switch-tutorial/12.png)
 
+## 技術支援
+
+- 📧 support@juxitech.com
+- 🌐 [www.juxitech.com](https://www.juxitech.com)

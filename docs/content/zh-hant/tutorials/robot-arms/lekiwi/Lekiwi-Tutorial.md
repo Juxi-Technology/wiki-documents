@@ -164,7 +164,7 @@ pip install -e ".[lekiwi]"
 
 `lerobot\src\lerobot\robots\lekiwi`目錄下找到config_lekiwi.py
 
-connection_time_s: int = 7200 # 也就是2小时
+connection_time_s: int = 7200 # 也就是2小時
 
 ![7. 設置連接時間 – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial/3.png)
 
@@ -397,7 +397,7 @@ remote_ip：樹莓派的IP地址
 ```Bash
 lerobot-calibrate \
     --teleop.type=so100_leader \
-    --teleop.port=/dev/tty.usbmodem58760431551 \ #修改为找到的端口号
+    --teleop.port=/dev/tty.usbmodem58760431551 \ #修改為找到的端口號
     --teleop.id=my_awesome_leader_arm
 ```
 

@@ -7,6 +7,10 @@ description: "Pour le débogage de la caméra USB, voir le tutoriel de la camér
 
 Pour le débogage de la caméra USB, voir le [tutoriel de la caméra USB à autofocus](https://juxitech.feishu.cn/docx/JXstdNbN6oiL1WxiqJrc2OJDnrf?from=from_copylink)
 
+## Installation du support de bras SO-ARM100
+
+![Installation du support de bras SO-ARM100 – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/1.png)
+
 ## Installation du support de bras SO-ARM101
 
 Sur le produit fini, les écrous sont déjà montés dans la pince – passer directement à l'étape 2

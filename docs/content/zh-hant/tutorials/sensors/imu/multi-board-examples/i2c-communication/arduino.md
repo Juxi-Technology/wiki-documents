@@ -21,7 +21,7 @@ description: "本次例程使用的是Arduino Nano開發板，一臺windows電�
 
 ```C++
 /**
- * @brief 通用读取传感器数据的辅助函数
+ * @brief 通用讀取傳感器數據的輔助函數
  *        Generic helper function to read sensor data
  */
 static int read_sensor_data(uint8_t reg, uint8_t *buffer, uint16_t length, float out[], uint8_t out_size, float scale_factor, bool is_float)
@@ -47,7 +47,7 @@ static int read_sensor_data(uint8_t reg, uint8_t *buffer, uint16_t length, float
 }
 
 /**
- * @brief 读取加速度数据（单位 g）
+ * @brief 讀取加速度數據（單位 g）
  *        Read acceleration in g.
  */
 int IMU_I2C_ReadAccelerometer(float out[3])
@@ -57,7 +57,7 @@ int IMU_I2C_ReadAccelerometer(float out[3])
 }
 
 /**
- * @brief 读取角速度（单位 rad/s）
+ * @brief 讀取角速度（單位 rad/s）
  *        Read angular velocity in rad/s.
  */
 int IMU_I2C_ReadGyroscope(float out[3])
@@ -67,7 +67,7 @@ int IMU_I2C_ReadGyroscope(float out[3])
 }
 
 /**
- * @brief 读取磁场强度（单位 uT）
+ * @brief 讀取磁場強度（單位 uT）
  *        Read magnetic field strength in micro tesla.
  */
 int IMU_I2C_ReadMagnetometer(float out[3])
@@ -77,7 +77,7 @@ int IMU_I2C_ReadMagnetometer(float out[3])
 }
 
 /**
- * @brief 读取四元数
+ * @brief 讀取四元數
  *        Read quaternion (w, x, y, z).
  */
 int IMU_I2C_ReadQuaternion(float out[4])
@@ -87,7 +87,7 @@ int IMU_I2C_ReadQuaternion(float out[4])
 }
 
 /**
- * @brief 读取欧拉角（弧度）
+ * @brief 讀取歐拉角（弧度）
  *        Read Euler angles (rad).
  */
 int IMU_I2C_ReadEuler(float out[3])
@@ -105,7 +105,7 @@ int IMU_I2C_ReadEuler(float out[3])
     return result;
 }
 /**
- * @brief 读取气压相关数据：高度、温度、气压、气压差
+ * @brief 讀取氣壓相關數據：高度、溫度、氣壓、氣壓差
  *        Read barometric data: height, temperature, pressure, delta.
  */
 int IMU_I2C_ReadBarometer(float out[4])

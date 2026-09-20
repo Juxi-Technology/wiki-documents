@@ -28,7 +28,7 @@ description: "AmazingHand 手勢追蹤教程(PWM 舵機版):攝像頭經 MediaPi
 進入 `Demo\Windows_Scripts_CN\`(英文系統用 `Windows_Deploy_Scripts\`),按編號雙擊:
 
 ```Plaintext
-1-安装环境.bat   → 安装 Rust / uv / dora(几分钟)
+1-安裝環境.bat   → 安裝 Rust / uv / dora(幾分鐘)
 ```
 
 裝完**關掉終端重新打開**一次。
@@ -36,7 +36,7 @@ description: "AmazingHand 手勢追蹤教程(PWM 舵機版):攝像頭經 MediaPi
 ### 2.2 部署 Demo
 
 ```Plaintext
-3-部署代码.bat   → 创建 Python 环境 + 编译 AHControl + 安装依赖(几分钟)
+3-部署代碼.bat   → 創建 Python 環境 + 編譯 AHControl + 安裝依賴(幾分鐘)
 ```
 
 ## 三、執行手勢追蹤(每次)
@@ -47,17 +47,17 @@ description: "AmazingHand 手勢追蹤教程(PWM 舵機版):攝像頭經 MediaPi
 
 ```Plaintext
 Select a run mode:
-   1 - 模拟仿真（摄像头手势追踪）
-   2 - 真实硬件（SCS0009 总线舵机）
-   3 - PWM 舵机（ESP32 直驱）    ← 选 3
+   1 - 模擬仿真（攝像頭手勢追蹤）
+   2 - 真實硬件（SCS0009 總線舵機）
+   3 - PWM 舵機（ESP32 直驅）    ← 選 3
 ```
 
 再選手型:
 
 ```Plaintext
-PWM 舵机（ESP32 直驱）- 请选择灵巧手：
-   1 - 右手          ← 选 1
-   2 - 左手          ← 选 2
+PWM 舵機（ESP32 直驅）- 請選擇靈巧手：
+   1 - 右手          ← 選 1
+   2 - 左手          ← 選 2
 ```
 
 ### 3.2 開始使用

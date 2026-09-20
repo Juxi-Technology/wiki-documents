@@ -419,8 +419,8 @@ sudo echo "options snd-hda-intel model=generic" > /etc/modprobe.d/sound.conf
 sudo reboot
 ```
 
+### Repositório oficial
 
+Repositório oficial de código aberto da placa de som USB sem controladores da JUXI: [GitHub](https://github.com/Juxi-Technology/Driver-Free-Sound-Card)
 
-
-
-
+Plug and play, compatível com Raspberry Pi, Jetson, PC e outros. Não são necessários controladores adicionais: o sistema reconhece-a automaticamente como dispositivo de entrada/saída de áudio.

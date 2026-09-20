@@ -57,7 +57,7 @@ Arraste os ficheiros descompactados para o Raspberry Pi 5 por meio do software M
 **Entre no diretório ~/IMU_Library e execute o ficheiro IMU_Serial_Library.py**
 
 ```PowerShell
-cd ~/imu_ros2/src/IMU_ROS1/IMU_Library
+cd ~/imu_ros2/src/IMU_ROS2/IMU_Library
 
 # Executar o ficheiro de impressão de dados do IMU
 python3 -m IMU_Library.IMU_I2C_Library
@@ -79,13 +79,13 @@ cd ~/IMU_Library
 python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 1
 
 # Apenas calibração completa
-python3-m IMU_Library.imu_calibration_tool --mode i2c --port 1 --calibrate imu
+python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 1 --calibrate imu
 
 # Apenas calibração do magnetómetro
-python3-m IMU_Library.imu_calibration_tool --mode i2c --port 1 --calibrate mag
+python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 1 --calibrate mag
 
 # Apenas calibração de temperatura
-python3-m IMU_Library.imu_calibration_tool --mode i2c --port 1 --calibrate temp
+python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 1 --calibrate temp
 ```
 
 ![5. IMU Calibration – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi/6.png)

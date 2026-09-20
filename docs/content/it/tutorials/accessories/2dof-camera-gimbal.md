@@ -47,47 +47,91 @@ pip install -r requirements.txt
 pip install opencv-python pyserial numpy
 ```
 
-## Controllo base
+### Controllo base
 
 ```python
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
+
 from sc_servo import SCServo, Gimbal
-servo = SCServo("COM3")  # Linux: /dev/ttyUSB0
+import time
+
+# Inizializza il controller del servo
+servo = SCServo("COM3")  # Linux: "/dev/ttyUSB0"
+if servo.connect():
+    print("✓ Connessione seriale riuscita")
+
+    gimbal = Gimbal(servo)
+    gimbal.enable_all()
+
+    # Imposta l'angolo (pitch, yaw)
+    gimbal.set_angle(0, 30)   # yaw: -90~90
+    time.sleep(1)
+    gimbal.set_angle(1, -20)  # pitch: -45~45
+    time.sleep(1)
+
+    # Torna al centro
+    gimbal.set_angle(0, 0)
+    gimbal.set_angle(1, 0)
+
+    gimbal.disable_all()
+    servo.disconnect()
+```
+
+### Tracking colore
+
+```python
+import sys
+import os
+import cv2
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
+from sc_servo import SCServo, Gimbal
+
+# Inizializza la camera e il gimbal
+cap = cv2.VideoCapture(0)
+servo = SCServo("COM3")
 servo.connect()
 gimbal = Gimbal(servo)
 gimbal.enable_all()
-gimbal.set_angle(0, 30)   # yaw
-time.sleep(1)
-gimbal.set_angle(1, -20)  # pitch
-```
-
-## Tracking colore
-
-```python
-import cv2, sys
-sys.path.append('../src')
-from sc_servo import SCServo, Gimbal
-
-cap = cv2.VideoCapture(0)
-servo = SCServo("COM3"); servo.connect()
-gimbal = Gimbal(servo); gimbal.enable_all()
 
 while True:
     ret, frame = cap.read()
-    if not ret: break
+    if not ret:
+        break
+
+    # Converte in HSV per il rilevamento del colore
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
-    mask = cv2.inRange(hsv, (0,100,100), (10,255,255))
+
+    # Intervallo del colore rosso
+    lower_red1 = (0, 100, 100)
+    upper_red1 = (10, 255, 255)
+    mask = cv2.inRange(hsv, lower_red1, upper_red1)
+
+    # Trova il contorno più grande
     contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     if contours:
         largest = max(contours, key=cv2.contourArea)
-        x,y,w,h = cv2.boundingRect(largest)
-        cx, cy = x+w//2, y+h//2
-        fh, fw = frame.shape[:2]
-        yaw = int((cx/fw - 0.5) * 180)
-        pitch = int((0.5 - cy/fh) * 90)
+        x, y, w, h = cv2.boundingRect(largest)
+        center_x = x + w // 2
+        center_y = y + h // 2
+
+        # Mappa le coordinate dei pixel agli angoli del servo
+        frame_h, frame_w = frame.shape[:2]
+        yaw = int((center_x / frame_w - 0.5) * 180)
+        pitch = int((0.5 - center_y / frame_h) * 90)
         gimbal.set_angle(0, max(-90, min(90, yaw)))
         gimbal.set_angle(1, max(-45, min(45, pitch)))
+
+        cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
+
     cv2.imshow('Color Tracking', frame)
-    if cv2.waitKey(1) & 0xFF == ord('q'): break
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
+gimbal.disable_all()
+cap.release()
+cv2.destroyAllWindows()
 ```
 
 ## Funzionalità avanzate

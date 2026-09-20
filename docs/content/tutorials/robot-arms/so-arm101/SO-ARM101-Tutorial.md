@@ -413,12 +413,18 @@ Among them,`dateset.repo_id`and`dataset.single_task`can be customized and modifi
 - If you want to use the functionality of the Hugging Face Hub to upload your dataset and you haven't done so before, please ensure you are logged in with a token that has write permissions, which can be generated from [ Hugging Face Settings ](https://huggingface.co/settings/tokens): 
 
 ```Bash
+hf auth login
+
+# If you are using the legacy CLI:
 huggingface-cli login --token ${HUGGINGFACE_TOKEN} --add-to-git-credential
 ```
 
 Store the name of your Hugging Face repository in a variable to run the following command: 
 
 ```Bash
+hf auth whoami
+
+# If you are using the legacy CLI:
 HF_USER=$(huggingface-cli whoami | head -n 1)
 echo $HF_USER
 ```
@@ -519,11 +525,19 @@ If your keyboard does not respond after a key press, you may need to downgrade y
 echo ${HF_USER}/so101_test  
 ```
 
+If you have uploaded a dataset, you can also render the local copy as an HTML page (the browser window can open the visualization tool via `http://127.0.0.1:9090`):
+
+```Bash
+python lerobot/scripts/visualize_dataset_html.py \
+  --repo-id ${HF_USER}/so101_test \
+  --local-files-only 1
+```
+
 If you did not use ` --dataset.push_to_hub=false ` and uploaded the data, you can also visualize it locally using the following command: 
 
 ```Python
 lerobot-dataset-viz \
-  --repo-id ${HF_USER}/so101_test \
+  --repo-id ${HF_USER}/so101_test
 ```
 
 If you used ` --dataset.push_to_hub=false ` and did not upload the data, you can also visualize it locally using the following command: 
@@ -551,6 +565,23 @@ lerobot-replay \
 ```
 
 At this time, the robot should perform the same actions as when you remotely operated and recorded.
+
+You can also replay an episode by running the record command with `--replay=true`:
+
+```Python
+lerobot-record \
+    --robot.type=so101_follower \
+    --robot.port=/dev/ttyACM0 \
+    --robot.id=my_awesome_follower_arm \
+    --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"}, side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30, fourcc: "MJPG"}}" \
+    --dataset.repo_id=${HF_USER}/so101_test \
+    --dataset.single_task="Put the blue cube on the black box" \
+    --dataset.num_episodes=1 \
+    --dataset.episode_time_s=30 \
+    --dataset.reset_time_s=30 \
+    --dataset.push_to_hub=true \
+    --replay=true
+```
 
 ## E. Dataset Training and Evaluation
 

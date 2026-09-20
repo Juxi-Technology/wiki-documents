@@ -51,7 +51,7 @@ Jetson Orin 플랫폼과 호환되는 CUDA 버전에 해당하는 cuSPARSELt 라
 호환되는 vision 버전을 수동으로 설치합니다. torch 2.5 → torchvision 0.20.0
 
 ```Python
-git clone --branch v0.20.0 [https://github.com/pytorch/vision.git](https://link.zhihu.com/?target=https%3A//github.com/pytorch/vision.git)
+git clone --branch v0.20.0 https://github.com/pytorch/vision.git
 ```
 
 다운로드 후 컴파일:

@@ -23,7 +23,7 @@ description: "注意：主機裝置與語音互動模組的供電電源可以不
 
 ## 3.取得命令詞條。
 
-開啟附件中的命令词播报词协议列表V1_中文檔案，能看到通訊協定協定以 0xFE、0xED 開頭，以 0xEE結尾，中間 2 個位元組，分別為功能類型和 ID 號。
+開啟附件中的命令詞播報詞協議列表V1_中文檔案，能看到通訊協定協定以 0xFE、0xED 開頭，以 0xEE結尾，中間 2 個位元組，分別為功能類型和 ID 號。
 
 ![圖 1](../../../../../public/images/tutorials/accessories/ai-voice-module/IIC-Protocol/1.png)
 

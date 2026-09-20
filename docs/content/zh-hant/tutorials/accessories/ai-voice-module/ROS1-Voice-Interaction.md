@@ -101,14 +101,14 @@ catkin_create_pkg juxi_voice rospy std_msgs visualization_msgs
 ├── devel/
 └── src/
     └── juxi_voice/
-        ├── CMakeLists.txt      # (替换为本项目提供的)
-        ├── package.xml          # (替换为本项目提供的)
-        ├── juxi_voice.rviz      # (新建：RViz预配置文件)
+        ├── CMakeLists.txt      # (替換為本項目提供的)
+        ├── package.xml          # (替換為本項目提供的)
+        ├── juxi_voice.rviz      # (新建：RViz預配置文件)
         ├── launch/
-        │   └── juxi_voice.launch # (新建：一键启动文件)
+        │   └── juxi_voice.launch # (新建：一鍵啟動文件)
         └── scripts/
-            ├── voice_node.py     # (新建：语音节点)
-            └── rviz_control.py   # (新建：RViz控制节点)
+            ├── voice_node.py     # (新建：語音節點)
+            └── rviz_control.py   # (新建：RViz控制節點)
 ```
 
 ---
@@ -225,21 +225,21 @@ rosrun juxi_voice voice_node.py
 啟動時會顯示偵測到的接線方式：
 
 ```Bash
-[INFO] 自动检测: IIC /dev/i2c-1 (从机地址 0x2A)
-[INFO] 语音节点启动完成 - IIC /dev/i2c-1 (从机地址 0x2A)
+[INFO] 自動檢測: IIC /dev/i2c-1 (從機地址 0x2A)
+[INFO] 語音節點啟動完成 - IIC /dev/i2c-1 (從機地址 0x2A)
 ```
 
 或
 
 ```Bash
-[INFO] 自动检测: UART /dev/ttyUSB0
-[INFO] 语音节点启动完成 - UART /dev/ttyUSB0
+[INFO] 自動檢測: UART /dev/ttyUSB0
+[INFO] 語音節點啟動完成 - UART /dev/ttyUSB0
 ```
 
 如果未偵測到任何裝置：
 
 ```Bash
-[FATAL] 未检测到AI语音交互模块！请检查接线 (Type-C / UART / IIC)
+[FATAL] 未檢測到AI語音交互模塊！請檢查接線 (Type-C / UART / IIC)
 [FATAL] 支持的端口: I2C(/dev/i2c-1) | 串口(/dev/ttyUSB0 /dev/ttyACM0 /dev/ttyAMA0 /dev/ttyS0)
 ```
 
@@ -338,7 +338,7 @@ rostopic pub /juxi_cmd_play std_msgs/String "data: '小车前进'"
 ```Bash
 # I2C 接線
 ls /dev/i2c-1
-sudo i2cdetect -y 1   # 应看到 0x2A
+sudo i2cdetect -y 1   # 應看到 0x2A
 
 # Type-C 接線
 ls /dev/ttyUSB0 /dev/ttyACM0

@@ -58,7 +58,7 @@ File protocol：檔案協定選擇SFTP，Host name：IP地址，Port number：�
 注意：檔案傳輸需要電腦和主板在同一個區域網絡下，並且樹莓派已開啟SSH服務才可以進行。有時若遇見傳輸檔案失敗一般是主板這邊的權限不夠，我們只需要給予最高權限。
 
 ```Plain Text
-chmod 777 目录名 
+chmod 777 目錄名 
 ```
 
 

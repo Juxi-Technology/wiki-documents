@@ -39,7 +39,7 @@ void IMU_UART_Process(void)
     static uint8_t  rx_state = RX_STATE_EXPECT_HEAD1;
     static uint8_t  frame_length = 0;
     static uint8_t  frame_function = 0;
-    static uint8_t  frame_buffer[64]; /* 数据区 + 校验 / data section + checksum */
+    static uint8_t  frame_buffer[64]; /* 數據區 + 校驗 / data section + checksum */
     static uint16_t frame_index = 0;
 
     uint8_t current_byte = 0;
@@ -120,7 +120,7 @@ void IMU_UART_Process(void)
 }
 
 
-/* ---------- 解析数据帧 / Parse one complete frame ---------- */
+/* ---------- 解析數據幀 / Parse one complete frame ---------- */
 static void _parse_frame_data(uint8_t frame_function, const uint8_t *frame_data)
 {
     switch (frame_function) {

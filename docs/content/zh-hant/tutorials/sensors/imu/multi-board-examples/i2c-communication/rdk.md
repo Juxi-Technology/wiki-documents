@@ -39,7 +39,7 @@ sudo apt install -y python3-smbus2
 
 IMU_ROS2.zip
 
-如果還不會使用MobaXterm傳輸文件的朋友，請查看以下網頁MobaXterm詳細安裝和操作方法：[文件远程传输](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
+如果還不會使用MobaXterm傳輸文件的朋友，請查看以下網頁MobaXterm詳細安裝和操作方法：[文件遠程傳輸](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 
 通過MobaXterm軟件將 解壓後的文件 拖入 樹莓派5 上。
 
@@ -74,13 +74,13 @@ cd ~/IMU_Library
 python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 0
 
 # 僅整體校準
-python3-m IMU_Library.imu_calibration_tool --mode i2c --port 0 --calibrate imu
+python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 0 --calibrate imu
 
 # 僅磁力計校準
-python3-m IMU_Library.imu_calibration_tool --mode i2c --port 0 --calibrate mag
+python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 0 --calibrate mag
 
 # 僅溫度校準
-python3-m IMU_Library.imu_calibration_tool --mode i2c --port 0 --calibrate temp
+python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 0 --calibrate temp
 ```
 
 ![5.IMU校準 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk/6.png)

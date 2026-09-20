@@ -7,6 +7,10 @@ description: "Para depurar la cámara USB, consulte el tutorial de la cámara US
 
 Para depurar la cámara USB, consulte el [tutorial de la cámara USB con enfoque automático](https://juxitech.feishu.cn/docx/JXstdNbN6oiL1WxiqJrc2OJDnrf?from=from_copylink)
 
+## Pasos de instalación del soporte de brazo SO-ARM100
+
+![Pasos de instalación del soporte de brazo SO-ARM100 – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/1.png)
+
 ## Pasos de instalación del soporte de brazo SO-ARM101
 
 En el producto terminado, las tuercas ya están montadas en la pinza – puede saltar directamente al paso 2

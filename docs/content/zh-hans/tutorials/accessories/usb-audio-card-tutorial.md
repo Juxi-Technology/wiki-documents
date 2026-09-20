@@ -16,7 +16,7 @@ description: "钜犀科技 USB 免驱声卡教程，涵盖可视化测试软件�
 
 - 更新系统并安装工具：
 
-    - 执行：`sudo apt update &amp;&amp; sudo apt full-upgrade`
+    - 执行：`sudo apt update && sudo apt full-upgrade`
 
     - 安装 ALSA：`sudo apt install alsa-base alsa-utils`
 
@@ -323,7 +323,7 @@ sudo modprobe snd_usb_audio
 
 ```Bash
 # Ubuntu/Debian 系统
-sudo apt update &amp;&amp; sudo apt install -y alsa-utils usbutils
+sudo apt update && sudo apt install -y alsa-utils usbutils
 
 # 无网络环境： 下载 alsa-utils 离线包，用 dpkg -i 安装
 ```
@@ -382,13 +382,13 @@ alsamixer -c X  # X 为 USB 声卡的 card 编号
 3.**内核版本过低，不支持新型 USB 声卡时，分以下两种情况**
 
 ```Bash
-sudo apt install -y linux-generic &amp;&amp; sudo reboot
+sudo apt install -y linux-generic && sudo reboot
 ```
 
 ```Python
 sudo modprobe snd-hda-intel model=generic #（不同机型可尝试不同 model 值）
 # 创建声卡驱动配置文件
-sudo echo "options snd-hda-intel model=generic" &gt; /etc/modprobe.d/sound.conf
+sudo echo "options snd-hda-intel model=generic" > /etc/modprobe.d/sound.conf
 sudo reboot
 ```
 

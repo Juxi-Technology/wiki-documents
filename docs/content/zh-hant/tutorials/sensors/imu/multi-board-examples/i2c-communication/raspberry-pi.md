@@ -46,7 +46,7 @@ sudo apt install -y python3-smbus2
 
 IMU_ROS2.zip
 
-如果還不會使用MobaXterm傳輸文件的朋友，請查看以下網頁MobaXterm詳細安裝和操作方法：[文件远程传输](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
+如果還不會使用MobaXterm傳輸文件的朋友，請查看以下網頁MobaXterm詳細安裝和操作方法：[文件遠程傳輸](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 
 通過MobaXterm軟件將 解壓後的文件 拖入 樹莓派5 上。
 
@@ -57,7 +57,7 @@ IMU_ROS2.zip
 **進入 ~/IMU_Library目錄，運行IMU_Serial_Library.py文件**
 
 ```PowerShell
-cd ~/imu_ros2/src/IMU_ROS1/IMU_Library
+cd ~/imu_ros2/src/IMU_ROS2/IMU_Library
 
 # 運行 IMU 數據打印文件
 python3 -m IMU_Library.IMU_I2C_Library
@@ -79,13 +79,13 @@ cd ~/IMU_Library
 python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 1
 
 # 僅整體校準
-python3-m IMU_Library.imu_calibration_tool --mode i2c --port 1 --calibrate imu
+python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 1 --calibrate imu
 
 # 僅磁力計校準
-python3-m IMU_Library.imu_calibration_tool --mode i2c --port 1 --calibrate mag
+python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 1 --calibrate mag
 
 # 僅溫度校準
-python3-m IMU_Library.imu_calibration_tool --mode i2c --port 1 --calibrate temp
+python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 1 --calibrate temp
 ```
 
 ![5.IMU校準 – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi/6.png)

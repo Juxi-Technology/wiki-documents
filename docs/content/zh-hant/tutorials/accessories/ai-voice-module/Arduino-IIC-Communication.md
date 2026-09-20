@@ -10,8 +10,8 @@ description: "AI 語音互動模組教程(Arduino 平台)——IIC 接線、程�
 ```Plain Text
 IIC_Voice/
 ├── IIC_Voice.ino    # 主程序
-├── bsp_iic.hpp         # 头文件（地址和函数声明）
-├── bsp_iic.cpp         # 实现文件
+├── bsp_iic.hpp         # 頭文件（地址和函數聲明）
+├── bsp_iic.cpp         # 實現文件
 └── README.md            # 本教程
 ```
 
@@ -110,7 +110,7 @@ int IIC_ReadCommand(void);
 ```Plain Text
 int id = IIC_ReadCommand();
 if (id > 0) {
-  Serial.print("识别到命令: ");
+  Serial.print("識別到命令: ");
   Serial.println(id);
 }
 ```
@@ -189,7 +189,7 @@ void setup() {
 
   Serial.println("IIC Voice Module Initialized");
 
-  IIC_SetCommandVoice(0x00);  // 上电播报命令词语音
+  IIC_SetCommandVoice(0x00);  // 上電播報命令詞語音
   delay(200);
 }
 
@@ -205,13 +205,13 @@ void loop() {
 
       // 示例：根據識別到的命令控制播報
       if (commandId == 1) {
-        IIC_SetCommandVoice(0x00);  // 识别到命令1，播报命令词语音
+        IIC_SetCommandVoice(0x00);  // 識別到命令1，播報命令詞語音
       } else if (commandId == 2) {
-        IIC_SetCommandVoice(0x00);  // 识别到命令2，播报命令词语音
+        IIC_SetCommandVoice(0x00);  // 識別到命令2，播報命令詞語音
       }
     } else if (commandId == 0 || commandId == 255) {
       if (lastCommandId != 0) {
-        lastCommandId = 0;  // 重置状态
+        lastCommandId = 0;  // 重置狀態
       }
     }
   } else {
@@ -303,11 +303,11 @@ void loop() {
 
 ```Plain Text
 if (commandId == 1) {
-  IIC_SetCommandVoice(0x00);      // 播报命令词
+  IIC_SetCommandVoice(0x00);      // 播報命令詞
 } else if (commandId == 2) {
-  IIC_SetFunctionVoice(0x00);     // 播报功能词
+  IIC_SetFunctionVoice(0x00);     // 播報功能詞
 } else if (commandId == 3) {
-  IIC_SetPassiveVoice(0x00);      // 播报被动语
+  IIC_SetPassiveVoice(0x00);      // 播報被動語
 }
 ```
 
@@ -315,8 +315,8 @@ if (commandId == 1) {
 
 ```Plain Text
 if (commandId == 10) {
-  digitalWrite(LED_PIN, LOW);    // 关灯
-  IIC_SetCommandVoice(0x00);     // 播报确认
+  digitalWrite(LED_PIN, LOW);    // 關燈
+  IIC_SetCommandVoice(0x00);     // 播報確認
 }
 ```
 
@@ -325,7 +325,7 @@ if (commandId == 10) {
 ```Plain Text
 if (commandId == 11) {
   motor_stop();
-  IIC_SetCommandVoice(0x00);     // 播报确认
+  IIC_SetCommandVoice(0x00);     // 播報確認
 }
 ```
 

@@ -82,14 +82,14 @@ GUI 裡自帶**手勢追蹤**面板(攝像頭跟隨手部動作):
 python serial_test.py COM3 nop
 
 # 手勢
-python serial_test.py COM3 rock         # 石头
+python serial_test.py COM3 rock         # 石頭
 python serial_test.py COM3 thumbs_up    # 真棒
 python serial_test.py COM3 index        # 指向
-python serial_test.py COM3 open         # 张开
+python serial_test.py COM3 open         # 張開
 python serial_test.py COM3 close        # 握拳
 
 # 單舵機直驅
-python serial_test.py COM3 servo 1 90   # 舵机1 → 90°
+python serial_test.py COM3 servo 1 90   # 舵機1 → 90°
 
 # 全部歸中
 python serial_test.py COM3 mid
@@ -99,8 +99,8 @@ python serial_test.py COM3 hand L
 python serial_test.py COM3 hand R
 
 # 掃頻/自檢
-python serial_test.py COM3 sweep 1      # 舵机1 扫频
-python serial_test.py COM3 test         # 全部舵机逐个测试
+python serial_test.py COM3 sweep 1      # 舵機1 掃頻
+python serial_test.py COM3 test         # 全部舵機逐個測試
 ```
 
 ## 五、常見問題

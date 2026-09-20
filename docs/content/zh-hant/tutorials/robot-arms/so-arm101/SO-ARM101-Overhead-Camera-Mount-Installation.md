@@ -8,7 +8,7 @@ description: "SO-ARM101 頂置攝影機支架安裝教程：俯視視角架設�
 > **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
 
 
-USB自動對接攝像頭調試請參考該教程[USB自动对焦摄像头教程](https://juxitech.feishu.cn/docx/JXstdNbN6oiL1WxiqJrc2OJDnrf?from=from_copylink)
+USB自動對接攝像頭調試請參考該教程[USB自動對焦攝像頭教程](https://juxitech.feishu.cn/docx/JXstdNbN6oiL1WxiqJrc2OJDnrf?from=from_copylink)
 
 購買 D405C深度相機 套件的用戶可通過淘寶客服發送 訂單號 詢問[RealSense D405C 教程](https://juxitech.feishu.cn/wiki/OSElwwOmYiVMNTkzo56c40g8nQe?from=from_copylink)密碼
 

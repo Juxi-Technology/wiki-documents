@@ -7,6 +7,10 @@ description: "USB 자동 접속 카메라 디버깅은 USB 자동 초점 카메�
 
 USB 자동 접속 카메라 디버깅은 [USB 자동 초점 카메라 튜토리얼](https://juxitech.feishu.cn/docx/JXstdNbN6oiL1WxiqJrc2OJDnrf?from=from_copylink)을 참조하세요
 
+## SO-ARM100 암 장착 브래킷 설치 단계
+
+![SO-ARM100 암 장착 브래킷 설치 단계 – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/1.png)
+
 ## SO-ARM101 암 장착 브래킷 설치 단계
 
 완성품은 일반적으로 그리퍼에 너트가 이미 설치되어 있어 바로 단계 2로 이동할 수 있습니다

@@ -417,7 +417,7 @@ ros2 launch so_arm101_moveit_config demo.launch.py \
 
 2. 在 `so_arm101.ros2_control.xacro` 中調整各關節的 `position_offset`
 
-3. 換算公式：`新 offset = 当前 offset + (当前显示 rad / 0.00153398)`
+3. 換算公式：`新 offset = 當前 offset + (當前顯示 rad / 0.00153398)`
 
 4. 修改後重新編譯 `so_arm101_description` 包
 
@@ -508,12 +508,12 @@ ros2 run controller_manager spawner joint_trajectory_controller
 
 ```Bash
 SO-ARM101_ROS2/
-├── so_arm_utils/                   # Python 工具库
-├── so_arm101_description/          # URDF · 控制器 · 网格 · RViz · MuJoCo
-├── so_arm101_moveit_config/        # MoveIt 2 SRDF · 规划器 · 启动文件
-├── so_arm_gz/                      # Gazebo 仿真启动
-├── so_arm_hardware/                # 内置 SCS 串口驱动（C++）
-└── Simulation/                     # 原始 CAD URDF（参考保留）
+├── so_arm_utils/                   # Python 工具庫
+├── so_arm101_description/          # URDF · 控制器 · 網格 · RViz · MuJoCo
+├── so_arm101_moveit_config/        # MoveIt 2 SRDF · 規劃器 · 啟動文件
+├── so_arm_gz/                      # Gazebo 仿真啟動
+├── so_arm_hardware/                # 內置 SCS 串口驅動（C++）
+└── Simulation/                     # 原始 CAD URDF（參考保留）
 ```
 
 <RelatedProducts slugs="so-arm101" />

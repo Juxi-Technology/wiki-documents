@@ -69,7 +69,7 @@ description: "模組出廠已經燒錄語音辨識功能韌體，資料壓縮包
 
 ## 2.修改功能性詞條
 
-開啟附件中的命令词播报词协议列表V1_中文檔案。
+開啟附件中的命令詞播報詞協議列表V1_中文檔案。
 
 ![圖 14](../../../../../public/images/tutorials/accessories/ai-voice-module/Custom-Protocol-Entries/14.png)
 
@@ -89,7 +89,7 @@ description: "模組出廠已經燒錄語音辨識功能韌體，資料壓縮包
 
 ## 3.新增命令詞條
 
-開啟附件中的命令词播报词协议列表V1_中文檔案。
+開啟附件中的命令詞播報詞協議列表V1_中文檔案。
 
 ![圖 18](../../../../../public/images/tutorials/accessories/ai-voice-module/Custom-Protocol-Entries/18.png)
 
@@ -121,7 +121,7 @@ description: "模組出廠已經燒錄語音辨識功能韌體，資料壓縮包
 
 ## 4.新增播報語
 
-開啟附件中的命令词播报词协议列表V1_中文檔案。
+開啟附件中的命令詞播報詞協議列表V1_中文檔案。
 
 ![圖 25](../../../../../public/images/tutorials/accessories/ai-voice-module/Custom-Protocol-Entries/25.png)
 

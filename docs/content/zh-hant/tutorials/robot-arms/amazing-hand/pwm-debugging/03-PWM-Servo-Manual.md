@@ -123,15 +123,15 @@ ESP32-S3 開發板有兩個 Type-C 接口：
 
 ```Plaintext
 esp-idf/AmazingHand_Serial/
-├── CMakeLists.txt              # 顶层工程配置
-├── sdkconfig.defaults          # 默认 Kconfig 配置
+├── CMakeLists.txt              # 頂層工程配置
+├── sdkconfig.defaults          # 默認 Kconfig 配置
 ├── main/
 │   ├── CMakeLists.txt
-│   └── main.c                  # FreeRTOS 双任务 + 初始化（胶水层）
+│   └── main.c                  # FreeRTOS 雙任務 + 初始化（膠水層）
 └── components/
-    ├── hand_servo/             # 舵机驱动（LEDC PWM + 校准数据）
-    ├── hand_gestures/          # 手势参数宏 + 手势函数 + 左右手控制
-    └── hand_protocol/          # 串口帧解析 + 命令分发
+    ├── hand_servo/             # 舵機驅動（LEDC PWM + 校準數據）
+    ├── hand_gestures/          # 手勢參數宏 + 手勢函數 + 左右手控制
+    └── hand_protocol/          # 串口幀解析 + 命令分發
 ```
 
 #### 構建環境
@@ -194,7 +194,7 @@ idf.py -p COM3 monitor
 │  0xAA  │ CMD_ID │ DATA_LEN │ DATA[0 .. N-1] │ CHECKSUM │
 │ 1 Byte │ 1 Byte │  1 Byte  │    N Bytes     │  1 Byte  │
 └────────┴────────┴──────────┴────────────────┴──────────┘
- 帧头      命令ID    数据长度      数据负载         校验和
+ 幀頭      命令ID    數據長度      數據負載         校驗和
 ```
 
 - **幀頭**: 固定 `0xAA`，標識一幀的開始
@@ -216,7 +216,7 @@ idf.py -p COM3 monitor
 │  0xBB  │ CMD_ID │ STATUS │ CHECKSUM │
 │ 1 Byte │ 1 Byte │ 1 Byte │  1 Byte  │
 └────────┴────────┴────────┴──────────┘
- 帧头      命令ID    状态码    校验和
+ 幀頭      命令ID    狀態碼    校驗和
 ```
 
 - **幀頭**: 固定 `0xBB`
@@ -240,17 +240,17 @@ idf.py -p COM3 monitor
 ### 4.3 通信時序
 
 ```Plaintext
-主机                          ESP32
+主機                          ESP32
  │                              │
- │──── [AA 01 00 01] ────────→│  发送"石头"命令
+ │──── [AA 01 00 01] ────────→│  發送"石頭"命令
  │                              │
  │←─── [BB 01 00 01] ─────────│  ACK: 命令已接受
  │                              │
- │                      (执行手势中)
+ │                      (執行手勢中)
  │                              │
- │←─── [BB 01 10 11] ─────────│  完成: 手势执行完毕
+ │←─── [BB 01 10 11] ─────────│  完成: 手勢執行完畢
  │                              │
- │──── [AA 02 00 02] ────────→│  发送"剪刀"命令
+ │──── [AA 02 00 02] ────────→│  發送"剪刀"命令
  │                              │
  │←─── [BB 02 00 02] ─────────│  ACK
  │                              │
@@ -297,12 +297,12 @@ idf.py -p COM3 monitor
 **示例：全部舵機歸中位（90°）**
 
 ```Plaintext
-发送: AA F0 08 5A 5A 5A 5A 5A 5A 5A 5A F8
-       │  │  │  └── 8 个 0x5A (90°) ──┘  │
+發送: AA F0 08 5A 5A 5A 5A 5A 5A 5A 5A F8
+       │  │  │  └── 8 個 0x5A (90°) ──┘  │
        │  │  │                            └── CHECKSUM
        │  │  └── DATA_LEN = 8
        │  └── CMD_DIRECT_DRIVE
-       └── 帧头
+       └── 幀頭
 ```
 
 校驗和 = `F0 ^ 08 ^ 5A ^ 5A ^ 5A ^ 5A ^ 5A ^ 5A ^ 5A ^ 5A` = `F8`
@@ -312,7 +312,7 @@ idf.py -p COM3 monitor
 **示例：食指張開(舵機1=170°, 舵機2=10°)，其餘歸中(90°)**
 
 ```Plaintext
-发送: AA F0 08 AA 0A 5A 5A 5A 5A 5A 5A 58
+發送: AA F0 08 AA 0A 5A 5A 5A 5A 5A 5A 58
                └─170°  └─10°
 ```
 
@@ -321,8 +321,8 @@ idf.py -p COM3 monitor
 1 字節數據：`0x01` = 右手，`0x02` = 左手。
 
 ```Plaintext
-设右手: AA F1 01 01 F1
-设左手: AA F1 01 02 F2
+設右手: AA F1 01 01 F1
+設左手: AA F1 01 02 F2
 ```
 
 ### 5.4 控制命令
@@ -338,8 +338,8 @@ idf.py -p COM3 monitor
 收到無效命令時（以 0xFC 這個不存在的命令為例）：
 
 ```Plaintext
-发送: AA FC 00 FC
-响应: BB FC 01 FD    （STATUS=0x01 无效命令）
+發送: AA FC 00 FC
+響應: BB FC 01 FD    （STATUS=0x01 無效命令）
 ```
 
 > 校驗和驗證: `FC ^ 00 = FC`，回應 `FC ^ 01 = FD`
@@ -424,14 +424,14 @@ python serial_test.py
 python serial_test.py COM3 nop
 
 # 發送手勢
-python serial_test.py COM3 rock        # 石头
+python serial_test.py COM3 rock        # 石頭
 python serial_test.py COM3 thumbs_up    # 真棒
 python serial_test.py COM3 index        # 指向
-python serial_test.py COM3 open         # 张开
+python serial_test.py COM3 open         # 張開
 python serial_test.py COM3 close        # 握拳
 
 # 單舵機直驅
-python serial_test.py COM3 servo 1 90   # 舵机1 → 90°
+python serial_test.py COM3 servo 1 90   # 舵機1 → 90°
 
 # 全部歸中
 python serial_test.py COM3 mid
@@ -441,8 +441,8 @@ python serial_test.py COM3 hand L       # 左手
 python serial_test.py COM3 hand R       # 右手
 
 # 掃頻 / 自檢
-python serial_test.py COM3 sweep 1      # 舵机1 扫频
-python serial_test.py COM3 test         # 全部舵机逐个测试
+python serial_test.py COM3 sweep 1      # 舵機1 掃頻
+python serial_test.py COM3 test         # 全部舵機逐個測試
 ```
 
 #### 交互模式
@@ -476,11 +476,11 @@ echo -ne '\xAA\x01\x00\x01' > /dev/cu.usbserial-0001
 
 ```Python
 #!/usr/bin/env python3
-"""灵巧手串口控制 - Python 上位机示例"""
+"""靈巧手串口控制 - Python 上位機示例"""
 import serial
 import time
 
-SERIAL_PORT = "/dev/cu.usbserial-0001"  # 修改为实际端口
+SERIAL_PORT = "/dev/cu.usbserial-0001"  # 修改為實際端口
 BAUD_RATE   = 115200
 
 # 命令定義（與固件命令集一致）
@@ -504,22 +504,22 @@ CMD = {
 }
 
 def calc_checksum(cmd_id, data=b""):
-    """计算 XOR 校验和 (CMD ^ LEN ^ DATA[0..N])"""
+    """計算 XOR 校驗和 (CMD ^ LEN ^ DATA[0..N])"""
     result = cmd_id ^ len(data)
     for b in data:
         result ^= b
     return result & 0xFF
 
 def send_command(ser, cmd_id, data=b""):
-    """发送命令帧，返回 (ack_status, completion_status)"""
+    """發送命令幀，返回 (ack_status, completion_status)"""
     data_len = len(data)
     checksum = calc_checksum(cmd_id, data)
     frame = bytes([0xAA, cmd_id, data_len]) + data + bytes([checksum])
     ser.write(frame)
-    print(f"发送: {frame.hex(' ').upper()}")
+    print(f"發送: {frame.hex(' ').upper()}")
 
 def read_response(ser, timeout=1.0):
-    """读取一个响应帧 [0xBB CMD STATUS CKSUM]"""
+    """讀取一個響應幀 [0xBB CMD STATUS CKSUM]"""
     ser.timeout = timeout
     while True:
         b = ser.read(1)
@@ -534,26 +534,26 @@ def read_response(ser, timeout=1.0):
     return None
 
 def set_side(ser, side):
-    """设置左右手: side='R' 右手, side='L' 左手"""
+    """設置左右手: side='R' 右手, side='L' 左手"""
     val = 0x01 if side.upper() == 'R' else 0x02
     send_command(ser, CMD["set_side"], bytes([val]))
 
 def direct_drive(ser, angles):
-    """直驱 8 路舵机: angles 为 8 个 0-180 的角度列表"""
+    """直驅 8 路舵機: angles 為 8 個 0-180 的角度列表"""
     data = bytes([min(180, max(0, a)) for a in angles[:8]])
     send_command(ser, CMD["direct"], data)
 
 # ===== 使用示例 =====
 if __name__ == "__main__":
     ser = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=1)
-    time.sleep(1)  # 等待 ESP32 复位完成
+    time.sleep(1)  # 等待 ESP32 復位完成
 
 # 1. 鏈路測試
-    print("=== NOP 链路测试 ===")
+    print("=== NOP 鏈路測試 ===")
     send_command(ser, CMD["nop"])
 
 # 2. 猜拳遊戲
-    print("\n=== 猜拳: 石头 → 剪刀 → 布 ===")
+    print("\n=== 猜拳: 石頭 → 剪刀 → 布 ===")
     for name in ["rock", "scissors", "paper"]:
         send_command(ser, CMD[name])
         time.sleep(0.5)
@@ -563,13 +563,13 @@ if __name__ == "__main__":
     send_command(ser, CMD["thumbs_up"])
 
 # 4. 停止測試
-    print("\n=== 停止测试 ===")
-    send_command(ser, CMD["taunt1"])  # 开始摇食指
+    print("\n=== 停止測試 ===")
+    send_command(ser, CMD["taunt1"])  # 開始搖食指
     time.sleep(0.3)
     send_command(ser, CMD["stop"])    # 立即停止
 
 # 5. 直驅模式: 全部歸中
-    print("\n=== 直驱: 归中 ===")
+    print("\n=== 直驅: 歸中 ===")
     direct_drive(ser, [90] * 8)
 
     ser.close()
@@ -647,8 +647,8 @@ tracking_env\Scripts\python hand_gui.py
 映射係數在 `hand_tracking.py` 底部（`FLEX_SCALE` / `BASE_SCALE`）：
 
 ```Python
-FLEX_SCALE = 80.0    # 指尖 z 分量 → 弯曲/伸直 (flex)
-BASE_SCALE = 30.0    # 指尖 x 分量 → 左右摆动 (base)
+FLEX_SCALE = 80.0    # 指尖 z 分量 → 彎曲/伸直 (flex)
+BASE_SCALE = 30.0    # 指尖 x 分量 → 左右擺動 (base)
 ```
 
 若彎曲/伸直幅度不夠或方向反了，調整 `FLEX_SCALE`；左右擺幅度不夠或反了，調整 `BASE_SCALE`（正負號調方向）。

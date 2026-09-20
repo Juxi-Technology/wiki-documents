@@ -70,9 +70,12 @@ python3 imu_calibration_tool.py --mode i2c --port 1 --calibrate temp
 
 ## Consigli
 
-- Magnetometro: ruotare lentamente, coprire tutte le orientazioni
-- Calibrazione completa: modulo completamente fermo
-- Lontano da motori/magneti
+| Suggerimento | Descrizione |
+|-----|-------------|
+| **Magnetometro** | Ruotare lentamente il modulo IMU in orizzontale (a forma di 8 o in cerchi), coprendo tutte le orientazioni |
+| **Immobile** | Il modulo IMU deve restare completamente fermo durante la calibrazione completa |
+| **Niente magneti** | Tenersi lontani da motori, trasformatori e tavoli metallici |
+| **Multi-asse** | La calibrazione del magnetometro deve coprire la rotazione su tutti e tre gli assi |
 
 ## FAQ
 

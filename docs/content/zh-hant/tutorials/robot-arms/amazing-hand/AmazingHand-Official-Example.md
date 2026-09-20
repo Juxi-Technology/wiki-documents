@@ -219,7 +219,7 @@ source .venv/bin/activate
 - 僅在模擬環境下運行網絡攝像頭手部追蹤演示：
 
 ```Plain Text
-dora build dataflow_tracking_simu.yml --uv   #（只需执行一次）
+dora build dataflow_tracking_simu.yml --uv   #（只需執行一次）
 ```
 
 ```Plain Text
@@ -237,7 +237,7 @@ dora run dataflow_tracking_simu.yml --uv
     #### 右靈巧手
 
     ```Plain Text
-    dora build dataflow_tracking_real_right.yml --uv   #（只需执行一次）
+    dora build dataflow_tracking_real_right.yml --uv   #（只需執行一次）
     ```
 
     ```Plain Text
@@ -247,7 +247,7 @@ dora run dataflow_tracking_simu.yml --uv
     #### 左靈巧手
 
     ```Plain Text
-    dora build dataflow_tracking_real_left.yml --uv   #（只需执行一次）
+    dora build dataflow_tracking_real_left.yml --uv   #（只需執行一次）
     ```
 
     ```Plain Text
@@ -259,7 +259,7 @@ dora run dataflow_tracking_simu.yml --uv
 ![真實硬件運行（手部追蹤） – 1](../../../../../public/images/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example/6.png)
 
     ```Plain Text
-    dora build dataflow_tracking_real_2hands.yml --uv   #（只需执行一次）
+    dora build dataflow_tracking_real_2hands.yml --uv   #（只需執行一次）
     ```
 
     ```Plain Text
@@ -275,7 +275,7 @@ dora run dataflow_tracking_simu.yml --uv
 - 運行一個簡單的示例來控制仿真中的手指角度：
 
     ```Plain Text
-    dora build dataflow_angle_simu.yml --uv   #（只需执行一次）
+    dora build dataflow_angle_simu.yml --uv   #（只需執行一次）
     ```
 
     ```Plain Text

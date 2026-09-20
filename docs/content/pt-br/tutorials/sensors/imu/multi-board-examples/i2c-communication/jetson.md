@@ -79,13 +79,13 @@ cd ~/IMU_Library
 python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 7
 
 # Somente calibração completa
-python3-m IMU_Library.imu_calibration_tool --mode i2c --port 7 --calibrate imu
+python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 7 --calibrate imu
 
 # Somente calibração do magnetômetro
-python3-m IMU_Library.imu_calibration_tool --mode i2c --port 7 --calibrate mag
+python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 7 --calibrate mag
 
 # Somente calibração de temperatura
-python3-m IMU_Library.imu_calibration_tool --mode i2c --port 7 --calibrate temp
+python3 -m IMU_Library.imu_calibration_tool --mode i2c --port 7 --calibrate temp
 ```
 
 ![5. IMU Calibration – 1](../../../../../../../public/images/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson/6.png)

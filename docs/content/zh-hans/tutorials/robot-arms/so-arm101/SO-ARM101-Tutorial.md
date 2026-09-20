@@ -515,11 +515,19 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 echo ${HF_USER}/so101_test  
 ```
 
+如果您已将数据集上传到 Hugging Face Hub，可以复制以下命令生成的 repo id，粘贴到 [在线可视化](https://huggingface.co/spaces/lerobot/visualize_dataset) 页面进行查看：
+
+```Bash
+python lerobot/scripts/visualize_dataset_html.py \
+  --repo-id ${HF_USER}/so101_test \
+  --local-files-only 1
+```
+
 如果您没有使用 `--dataset.push_to_hub=false` ，并上传了数据，您也可以在本地通过以下命令进行可视化：
 
 ```Python
 lerobot-dataset-viz \
-  --repo-id ${HF_USER}/so101_test \
+  --repo-id ${HF_USER}/so101_test
 ```
 
 如果您使用了 `--dataset.push_to_hub=false` ，没有上传数据，您也可以通过以下命令在本地进行可视化：
@@ -547,6 +555,23 @@ lerobot-replay \
 ```
 
 此时，机械臂应该做出与你遥操记录时一样的动作。
+
+如果需要从数据集中回放某个片段，可以使用以下命令：
+
+```Python
+lerobot-record \
+  --robot.type=so101_follower \
+  --robot.port=/dev/ttyACM0 \
+  --robot.id=my_awesome_follower_arm \
+  --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"}, side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30, fourcc: "MJPG"}}" \
+  --dataset.repo_id=${HF_USER}/so101_test \
+  --dataset.single_task="Put the blue cube on the black box" \
+  --dataset.num_episodes=1 \
+  --dataset.episode_time_s=30 \
+  --dataset.reset_time_s=30 \
+  --dataset.push_to_hub=true \
+  --replay=true
+```
 
 ## E. 数据集训练及评估
 
@@ -642,7 +667,7 @@ lerobot-record \
 
 2. 数据集的名称`dataset.repo_id`以 `eval_` 开头，这个操作会在你评估的时候为你单独录制评估时候的视频和数据，将保存在eval_开头的文件夹下，例如`juxi/eval_test123`。
 
-3. 如果评估阶段遇到`File exists: &amp;#39;home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx&amp;#39;`请先删除`eval_`开头的这个文件夹再次运行程序。
+3. 如果评估阶段遇到`File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'`请先删除`eval_`开头的这个文件夹再次运行程序。
 
 4. 当遇到`mean is infinity. You should either initialize with stats as an argument or use a pretrained model`请注意`--robot.cameras`这个参数中的front和side等关键词必须和采集数据集的时候保持严格一致。
 
@@ -952,7 +977,7 @@ lerobot-record \
 - 如果校准舵机ID时候遇到
 
 ```Bash
-`Motor ‘gripper’ was not found, Make sure it is connected`
+`Motor 'gripper' was not found, Make sure it is connected`
 ```
 
 请仔细检查通讯线是否与舵机连接正常，电源是否正确电压供电。”

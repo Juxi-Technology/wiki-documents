@@ -60,7 +60,7 @@ class SpeechModule:
         self._serial_conn: Optional[serial.Serial] = None
 
     def connect(self) -> bool:
-        """建立串口连接"""
+        """建立串口連接"""
         try:
             self._serial_conn = serial.Serial(self._port, self._baudrate, timeout=0.1)
             if self._serial_conn.is_open:
@@ -84,7 +84,7 @@ class SpeechModule:
         
         self._serial_conn.write(frame)
         time.sleep(0.005)
-        self._serial_conn.reset_input_buffer()  # 等同于 flushInput
+        self._serial_conn.reset_input_buffer()  # 等同於 flushInput
 
     def read_response(self) -> Optional[int]:
         """
@@ -108,7 +108,7 @@ class SpeechModule:
                 # 簡單的索引提取邏輯 (與原代碼邏輯保持一致)
                 # 注意：此處假設數據長度足夠，實際工業代碼建議加長度校驗
                 # byte1 = hex_str[4:6] # 保留原邏輯中的第5字節但不使用
-                byte2 = hex_str[6:8] # 提取第6字节
+                byte2 = hex_str[6:8] # 提取第6字節
                 
                 read_id = int(byte2, 16)
                 
@@ -122,7 +122,7 @@ class SpeechModule:
         return None
 
     def run(self):
-        """主运行循环"""
+        """主運行循環"""
         if not self.connect():
             return
 

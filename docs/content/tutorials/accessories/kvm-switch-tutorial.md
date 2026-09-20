@@ -80,3 +80,7 @@ Example of Pin Diagram
 
 ![2. Motherboard without monitor + Host with monitor – 7](../../../public/images/tutorials/accessories/kvm-switch-tutorial/12.png)
 
+## Support
+
+- 📧 support@juxitech.com
+- 🌐 [www.juxitech.com](https://www.juxitech.com)

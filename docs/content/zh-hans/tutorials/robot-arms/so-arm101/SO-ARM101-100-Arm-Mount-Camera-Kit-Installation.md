@@ -7,6 +7,10 @@ description: "SO-ARM101 臂载支架与环境相机套件安装教程：提供�
 
 USB自动对接摄像头调试请参考该教程[USB自动对焦摄像头教程](https://juxitech.feishu.cn/docx/JXstdNbN6oiL1WxiqJrc2OJDnrf?from=from_copylink)
 
+## SO-ARM100臂载支架安装步骤
+
+![SO-ARM100臂载支架安装步骤 – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/1.png)
+
 ## SO-ARM101臂载支架安装步骤
 
 成品 一般夹爪里已装好螺母，可以直接跳到步骤2

@@ -157,7 +157,7 @@ ID:10
 
 3. 檢查硬體連接是否正確
 
-4. 檢查串列埠是否被其他程式占用
+4. 檢查串列埠是否被其他程式佔用
 
 ```Bash
 # 查看可用串口
@@ -200,10 +200,10 @@ ls /dev/tty* | grep tty
 
 3. 是否共地
 
-4. 串列埠是否被其他行程占用
+4. 串列埠是否被其他行程佔用
 
 ```Bash
-# 檢查串口占用
+# 檢查串口佔用
 sudo lsof /dev/ttyAMA0
 ```
 
@@ -222,8 +222,8 @@ sudo lsof /dev/ttyAMA0
 ## 常用除錯命令
 
 ```Bash
-ls -l /dev/ttyAMA0   # 查看串口设备
-groups                # 查看用户组权限
+ls -l /dev/ttyAMA0   # 查看串口設備
+groups                # 查看用戶組權限
 ```
 
 <RelatedProducts slugs="ai-voice-module" />

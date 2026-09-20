@@ -8,6 +8,8 @@ description: "Sensor de actitud IMU de alta precisión: procesador 72MHz 32 bits
 > **[Comprar en la tienda](https://www.juxitech.com/es/products/imu-module-ahrs-attitude-and-heading-angle-sensor)**
 
 
+## Introducción al módulo IMU
+
 El sensor de actitud IMU de alta precisión integra un **procesador 32 bits de alto rendimiento a 72MHz**, capaz de realizar el cálculo de actitud en tiempo real y la compensación dinámica, con una frecuencia de actualización de datos de hasta 100Hz, combinando las ventajas de respuesta rápida y salida estable. Admite los modos de comunicación IIC y serie, es compatible con microcontroladores y hosts Linux, y puede integrarse sin problemas con el sistema ROS, siendo ampliamente aplicable a escenarios de alto rendimiento como el control de movimiento de robots, la estabilización de actitud de drones y la navegación y el posicionamiento inteligentes.
 
 ## 1. Descripción general de versiones

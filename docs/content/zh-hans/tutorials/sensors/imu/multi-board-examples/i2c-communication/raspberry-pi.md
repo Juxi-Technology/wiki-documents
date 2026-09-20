@@ -57,7 +57,7 @@ IMU_ROS2.zip
 **进入 ~/IMU_Library目录，运行IMU_Serial_Library.py文件**
 
 ```PowerShell
-cd ~/imu_ros2/src/IMU_ROS1/IMU_Library
+cd ~/imu_ros2/src/IMU_ROS2/IMU_Library
 
 # 运行 IMU 数据打印文件
 python3 -m IMU_Library.IMU_I2C_Library

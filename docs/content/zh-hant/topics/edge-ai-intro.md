@@ -100,7 +100,7 @@ context = engine.create_execution_context()
 
 **Q: 為什麼用 TensorRT 還是慢?**
 
-**A:** 檢查是否真的用了 GPU(`nvidia-smi`);確認沒有在 GPU 與 CPU 間反复拷貝數據。
+**A:** 檢查是否真的用了 GPU(`nvidia-smi`);確認沒有在 GPU 與 CPU 間反覆拷貝數據。
 
 ---
 

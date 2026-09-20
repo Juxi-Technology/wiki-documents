@@ -10,8 +10,8 @@ description: "AI 語音互動模組教程(Arduino 平台)——串列埠接線�
 ```Plain Text
 UART_Voice/
 ├── UART_Voice.ino    # 主程序
-├── bsp_uart.hpp         # 头文件（协议帧和函数声明）
-├── bsp_uart.cpp         # 实现文件
+├── bsp_uart.hpp         # 頭文件（協議幀和函數聲明）
+├── bsp_uart.cpp         # 實現文件
 └── README.md              # 本教程
 ```
 
@@ -128,7 +128,7 @@ int UART_ReadCommand(void);
 ```Plain Text
 int id = UART_ReadCommand();
 if (id > 0) {
-  Serial.print("识别到命令: ");
+  Serial.print("識別到命令: ");
   Serial.println(id);
 }
 ```
@@ -207,7 +207,7 @@ void setup() {
 
   Serial.println("UART Voice Module Initialized");
 
-  UART_SetCommandVoice(0x00);  // 上电播报命令词语音
+  UART_SetCommandVoice(0x00);  // 上電播報命令詞語音
   delay(200);
 }
 
@@ -223,13 +223,13 @@ void loop() {
 
       // 示例：根據識別到的命令控制播報
       if (commandId == 1) {
-        UART_SetCommandVoice(0x00);  // 识别到命令1，播报命令词语音
+        UART_SetCommandVoice(0x00);  // 識別到命令1，播報命令詞語音
       } else if (commandId == 2) {
-        UART_SetCommandVoice(0x00);  // 识别到命令2，播报命令词语音
+        UART_SetCommandVoice(0x00);  // 識別到命令2，播報命令詞語音
       }
     } else if (commandId == 0 || commandId == 255) {
       if (lastCommandId != 0) {
-        lastCommandId = 0;  // 重置状态
+        lastCommandId = 0;  // 重置狀態
       }
     }
   }
@@ -320,11 +320,11 @@ void loop() {
 
 ```Plain Text
 if (commandId == 1) {
-  UART_SetCommandVoice(0x00);      // 播报命令词
+  UART_SetCommandVoice(0x00);      // 播報命令詞
 } else if (commandId == 2) {
-  UART_SetFunctionVoice(0x00);     // 播报功能词
+  UART_SetFunctionVoice(0x00);     // 播報功能詞
 } else if (commandId == 3) {
-  UART_SetPassiveVoice(0x00);      // 播报被动语
+  UART_SetPassiveVoice(0x00);      // 播報被動語
 }
 ```
 
@@ -332,8 +332,8 @@ if (commandId == 1) {
 
 ```Plain Text
 if (commandId == 10) {
-  digitalWrite(LED_PIN, LOW);    // 关灯
-  UART_SetCommandVoice(0x00);     // 播报确认
+  digitalWrite(LED_PIN, LOW);    // 關燈
+  UART_SetCommandVoice(0x00);     // 播報確認
 }
 ```
 
@@ -342,7 +342,7 @@ if (commandId == 10) {
 ```Plain Text
 if (commandId == 11) {
   motor_stop();
-  UART_SetCommandVoice(0x00);     // 播报确认
+  UART_SetCommandVoice(0x00);     // 播報確認
 }
 ```
 

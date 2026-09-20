@@ -419,9 +419,8 @@ sudo echo "options snd-hda-intel model=generic" > /etc/modprobe.d/sound.conf
 sudo reboot
 ```
 
+### Official Repository
 
+Open-source repository of the JUXI driver-free USB sound card: [GitHub](https://github.com/Juxi-Technology/Driver-Free-Sound-Card)
 
-
-
-
-
+Plug and play — compatible with Raspberry Pi, Jetson, PC and more. No additional driver is required; the system recognizes it automatically as an audio input/output device.

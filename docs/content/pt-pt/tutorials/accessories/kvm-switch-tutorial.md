@@ -79,3 +79,8 @@ Exemplo de diagrama de pinos
 ![2. Placa-mãe sem monitor + Host com monitor – 6](../../../../public/images/tutorials/accessories/kvm-switch-tutorial/11.png)
 
 ![2. Placa-mãe sem monitor + Host com monitor – 7](../../../../public/images/tutorials/accessories/kvm-switch-tutorial/12.png)
+
+## Suporte
+
+- 📧 support@juxitech.com
+- 🌐 [www.juxitech.com](https://www.juxitech.com)

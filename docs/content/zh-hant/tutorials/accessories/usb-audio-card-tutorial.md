@@ -37,7 +37,7 @@ description: "鉅犀科技 USB 免驅聲卡教程，涵蓋可視化測試軟件�
     - 播放測試：測試音頻輸出（確保揚聲器 / 耳機已連接）：
 
     ```Bash
-    # 播放测试音，-D 指定 USB 声卡设备（X 为 aplay -l 显示的 card 编号）
+    # 播放測試音，-D 指定 USB 聲卡設備（X 為 aplay -l 顯示的 card 編號）
     speaker-test -c 2 -D plughw:X,0
     ```
 
@@ -328,13 +328,13 @@ by-path/   controlC0  pcmC0D0c   pcmC0D0p   timer
 lsmod | grep snd_usb_audio
 
 # 方法2： 檢查內核是否內置該模塊（即使未加載）
-modinfo snd_usb_audio  # 有输出=内核支持；无输出=内核未编译该模块
+modinfo snd_usb_audio  # 有輸出=內核支持；無輸出=內核未編譯該模塊
 ```
 
 **若 `modinfo`**：說明系統內核裁剪了該驅動，需重新編譯內核，在 `.config` 中開啓：
 
 ```Plain Text
-CONFIG_SND_USB_AUDIO=m  # 编译为模块，或=y 内置到内核
+CONFIG_SND_USB_AUDIO=m  # 編譯為模塊，或=y 內置到內核
 CONFIG_SND_USB_UA101=y
 CONFIG_SND_USB_CAIAQ=y
 ```
@@ -404,7 +404,7 @@ sudo usermod -aG audio $USER
 解決：用 `alsamixer`調大音量、解除靜音（按 `M` 鍵取消靜音）：
 
 ```Bash
-alsamixer -c X  # X 为 USB 声卡的 card 编号
+alsamixer -c X  # X 為 USB 聲卡的 card 編號
 ```
 
 3.**內核版本過低，不支持新型 USB 聲卡時，分以下兩種情況**
@@ -414,15 +414,14 @@ sudo apt install -y linux-generic && sudo reboot
 ```
 
 ```Python
-sudo modprobe snd-hda-intel model=generic #（不同机型可尝试不同 model 值）
+sudo modprobe snd-hda-intel model=generic #（不同機型可嘗試不同 model 值）
 # 創建聲卡驅動配置文件
 sudo echo "options snd-hda-intel model=generic" > /etc/modprobe.d/sound.conf
 sudo reboot
 ```
 
+### 官方開源倉庫
 
+JUXI 免驅 USB 音效卡的開源倉庫:[GitHub](https://github.com/Juxi-Technology/Driver-Free-Sound-Card)
 
-
-
-
-
+隨插即用,相容樹莓派、Jetson、PC 等裝置,無需額外驅動,系統會自動識別為音訊輸入/輸出裝置。

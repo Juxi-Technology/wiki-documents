@@ -96,14 +96,14 @@ ros2 pkg create --build-type ament_python juxi_voice --license MIT
 └── src/
     └── juxi_voice/
         ├── package.xml
-        ├── setup.py           # (替换为本项目提供的)
-        ├── juxi_voice.rviz    # (新建：RViz预配置文件)
+        ├── setup.py           # (替換為本項目提供的)
+        ├── juxi_voice.rviz    # (新建：RViz預配置文件)
         ├── resource/
         │   └── juxi_voice
         └── juxi_voice/
             ├── __init__.py
-            ├── voice_node.py    # (新建：语音节点)
-            └── rviz_control.py  # (新建：RViz控制节点)
+            ├── voice_node.py    # (新建：語音節點)
+            └── rviz_control.py  # (新建：RViz控制節點)
 ```
 
 ---
@@ -210,15 +210,15 @@ ros2 run juxi_voice voice_node
 啟動時會顯示偵測到的接線方式：
 
 ```Bash
-自动检测: IIC /dev/i2c-1 (从机地址 0x2A)
-语音节点启动完成 - IIC /dev/i2c-1 (从机地址 0x2A)
+自動檢測: IIC /dev/i2c-1 (從機地址 0x2A)
+語音節點啟動完成 - IIC /dev/i2c-1 (從機地址 0x2A)
 ```
 
 或
 
 ```Bash
-自动检测: UART /dev/ttyUSB0
-语音节点启动完成 - UART /dev/ttyUSB0
+自動檢測: UART /dev/ttyUSB0
+語音節點啟動完成 - UART /dev/ttyUSB0
 ```
 
 **終端 2**：RViz 控制節點
@@ -312,7 +312,7 @@ ros2 topic pub /juxi_cmd_play std_msgs/msg/String "data: '小车前进'"
 ```Bash
 # I2C 接線
 ls /dev/i2c-1
-sudo i2cdetect -y 1   # 应看到 0x2A
+sudo i2cdetect -y 1   # 應看到 0x2A
 
 # Type-C 接線
 ls /dev/ttyUSB0 /dev/ttyACM0

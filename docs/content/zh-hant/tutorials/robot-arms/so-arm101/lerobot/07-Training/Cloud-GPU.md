@@ -89,7 +89,7 @@ hf auth login
 
 ```Shell
 wandb login
-复制粘贴API Key，回车
+複製粘貼API Key，回車
 ```
 
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-07-Training-Cloud-GPU/5.png)
@@ -101,7 +101,7 @@ wandb login
 第二步，在實例的命令列裡執行這條下載命令並解壓：
 
 ```Shell
-复制实例下载命令，类似：
+複製實例下載命令，類似：
 featurize dataset download 7f40bdaa-b1a4-4c00-9652-ff26fd079109
 
 unzip lerobot_my_dataset_shake_hands.zip

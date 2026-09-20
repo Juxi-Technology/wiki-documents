@@ -100,7 +100,7 @@ DEVICE_ADDRESS = 0x2A
 REG_RESULT = 0xDA
 
 # I2C 總線編號（根據實際連接修改）
-bus = smbus.SMBus(5)  # I2C 总线 5
+bus = smbus.SMBus(5)  # I2C 總線 5
 ```
 
 ### 執行程式
@@ -214,8 +214,8 @@ sudo i2cdetect -y 5
 ## 常用除錯命令
 
 ```Bash
-ls -l /dev/i2c*      # 查看 I2C 设备
-groups                # 查看用户组权限
+ls -l /dev/i2c*      # 查看 I2C 設備
+groups                # 查看用戶組權限
 ```
 
 <RelatedProducts slugs="ai-voice-module" />

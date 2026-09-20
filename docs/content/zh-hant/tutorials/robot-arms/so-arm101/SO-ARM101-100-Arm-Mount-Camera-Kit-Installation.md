@@ -5,7 +5,11 @@ description: "SO-ARM101 臂載支架與環境相機套件安裝教程：夾爪�
 
 # 臂載支架與環境相機套件安裝
 
-USB自動對接攝像頭調試請參考該教程[USB自动对焦摄像头教程](https://juxitech.feishu.cn/docx/JXstdNbN6oiL1WxiqJrc2OJDnrf?from=from_copylink)
+USB自動對接攝像頭調試請參考該教程[USB自動對焦攝像頭教程](https://juxitech.feishu.cn/docx/JXstdNbN6oiL1WxiqJrc2OJDnrf?from=from_copylink)
+
+## SO-ARM100臂載支架安裝步驟
+
+![SO-ARM100臂載支架安裝步驟 – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/1.png)
 
 ## SO-ARM101臂載支架安裝步驟
 

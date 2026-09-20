@@ -18,7 +18,7 @@ description: "SO-ARM101 使用教程:基於 LeRobot 的完整流程,涵蓋環境
 
 舵機安裝和舵機角度校準要提前做好，可參考[官方組裝教程](https://huggingface.co/docs/lerobot/so101)，本教程不涉及這些內容！
 
-組裝教程可參考 [Lerobot机械臂组装教程](https://juxitech.feishu.cn/wiki/IAhYwcDRQiShY1kH1oHcZzKined)
+組裝教程可參考 [Lerobot機械臂組裝教程](https://juxitech.feishu.cn/wiki/IAhYwcDRQiShY1kH1oHcZzKined)
 
 若未配置好舵機或未組裝機械臂，請先按照這個[README](https://github.com/TheRobotStudio/SO-ARM100)中的內容操作。它包含了材料清單，以及獲取零件的鏈接，還包括3D打印零件的說明，以及如果您是第一次打印或者沒有3D打印機時的建議。
 
@@ -134,12 +134,12 @@ cd ~/lerobot && pip install -e ".[feetech]"
 對於 Jetson Jetpack 6.0+ 設備（請確保在執行此步驟前按照[此鏈接教程](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/tree/main/3-Basic-Tools-and-Getting-Started)第 5 步安裝了 Pytorch-gpu 和 Torchvision）：
 
 ```Plain Text
-conda install -y -c conda-forge "opencv>=4.10.0.84"  # 通过 conda 安装 OpenCV 和其他依赖，仅适用于 Jetson Jetpack 6.0+
-conda remove opencv   # 卸载 OpenCV
-pip3 install opencv-python==4.10.0.84  # 使用 pip3 安装指定版本 OpenCV
+conda install -y -c conda-forge "opencv>=4.10.0.84"  # 通過 conda 安裝 OpenCV 和其他依賴，僅適用於 Jetson Jetpack 6.0+
+conda remove opencv   # 卸載 OpenCV
+pip3 install opencv-python==4.10.0.84  # 使用 pip3 安裝指定版本 OpenCV
 conda install -y -c conda-forge ffmpeg
 conda uninstall numpy
-pip3 install numpy==1.26.0  # 该版本需与 torchvision 兼容
+pip3 install numpy==1.26.0  # 該版本需與 torchvision 兼容
 ```
 
 #### 7. 檢查 Pytorch 和 Torchvision
@@ -416,11 +416,23 @@ lerobot-record \
 huggingface-cli login --token ${HUGGINGFACE_TOKEN} --add-to-git-credential
 ```
 
+或使用新版 `hf` 工具登錄：
+
+```Bash
+hf auth login
+```
+
 將您的 Hugging Face 倉庫名稱存儲在一個變量中，以運行以下命令：
 
 ```Bash
 HF_USER=$(huggingface-cli whoami | head -n 1)
 echo $HF_USER
+```
+
+或使用新版 `hf` 工具查看目前登錄的帳號：
+
+```Bash
+hf auth whoami
 ```
 
 記錄 5 個回合並將您的數據集上傳到 Hub：
@@ -519,11 +531,19 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 echo ${HF_USER}/so101_test  
 ```
 
+還可以使用以下命令在本地可視化數據集：
+
+```Bash
+python lerobot/scripts/visualize_dataset_html.py \
+  --repo-id ${HF_USER}/so101_test \
+  --local-files-only 1
+```
+
 如果您沒有使用 `--dataset.push_to_hub=false` ，並上傳了數據，您也可以在本地通過以下命令進行可視化：
 
 ```Python
 lerobot-dataset-viz \
-  --repo-id ${HF_USER}/so101_test \
+  --repo-id ${HF_USER}/so101_test
 ```
 
 如果您使用了 `--dataset.push_to_hub=false` ，沒有上傳數據，您也可以通過以下命令在本地進行可視化：
@@ -551,6 +571,23 @@ lerobot-replay \
 ```
 
 此時，機器人應該做出與你遙操記錄時一樣的動作。
+
+也可以改用 `lerobot-record` 命令並加上 `--replay=true` 參數回放：
+
+```Python
+lerobot-record \
+  --robot.type=so101_follower \
+  --robot.port=/dev/ttyACM0 \
+  --robot.id=my_awesome_follower_arm \
+  --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"}, side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30, fourcc: "MJPG"}}" \
+  --dataset.repo_id=${HF_USER}/so101_test \
+  --dataset.single_task="Put the blue cube on the black box" \
+  --dataset.num_episodes=1 \
+  --dataset.episode_time_s=30 \
+  --dataset.reset_time_s=30 \
+  --dataset.push_to_hub=true \
+  --replay=true
+```
 
 ## E. 數據集訓練及評估
 
@@ -956,7 +993,7 @@ lerobot-record \
 - 如果校準舵機ID時候遇到
 
 ```Bash
-`Motor ‘gripper’ was not found, Make sure it is connected`
+`Motor 'gripper' was not found, Make sure it is connected`
 ```
 
 請仔細檢查通訊線是否與舵機連接正常，電源是否正確電壓供電。”

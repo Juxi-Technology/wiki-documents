@@ -76,10 +76,12 @@ python3 imu_calibration_tool.py --mode i2c --port 1 --calibrate temp
 
 ## Astuces
 
-- Magnétomètre : tourner lentement, couvrir toutes les orientations
-- Calibration complète : module totalement immobile
-- Éloigner des moteurs/aimants
-- Multi-axes : la calibration du magnétomètre doit couvrir la rotation sur les trois axes
+| Astuce | Description |
+|-----|-------------|
+| **Magnétomètre** | Faire tourner lentement le module IMU à l'horizontale (en forme de 8 ou en cercles), en couvrant toutes les orientations |
+| **Immobile** | Le module IMU doit rester parfaitement immobile pendant la calibration complète |
+| **Sans aimants** | Rester à l'écart des moteurs, des transformateurs et des tables métalliques |
+| **Multi-axe** | La calibration du magnétomètre doit couvrir la rotation sur les trois axes |
 
 ## FAQ
 

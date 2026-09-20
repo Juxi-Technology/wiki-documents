@@ -416,10 +416,19 @@ Entre eles, `dataset.repo_id` e `dataset.single_task` podem ser personalizados e
 huggingface-cli login --token ${HUGGINGFACE_TOKEN} --add-to-git-credential
 ```
 
+Nas versões mais recentes do `huggingface_hub`, o comando equivalente é `hf auth login`: 
+
+```Bash
+hf auth login
+```
+
 Guarde o nome do seu repositório do Hugging Face em uma variável para executar o seguinte comando: 
 
 ```Bash
-HF_USER=$(huggingface-cli whoami | head -n 1)
+hf auth whoami
+
+# Guardar o nome de utilizador numa variável
+HF_USER=$(hf auth whoami | head -n 1)
 echo $HF_USER
 ```
 
@@ -519,18 +528,26 @@ Se o seu teclado não responder após pressionar uma tecla, talvez seja necessá
 echo ${HF_USER}/so101_test  
 ```
 
+Se preferir, também pode visualizá-lo numa página HTML local com o seguinte comando: 
+
+```Python
+python lerobot/scripts/visualize_dataset_html.py \
+  --repo-id ${HF_USER}/so101_test \
+  --local-files-only 1
+```
+
 Se você não usou `--dataset.push_to_hub=false` e enviou os dados, também pode visualizá-los localmente com o seguinte comando: 
 
 ```Python
 lerobot-dataset-viz \
-  --repo-id ${HF_USER}/so101_test \
+  --repo-id ${HF_USER}/so101_test
 ```
 
 Se você usou `--dataset.push_to_hub=false` e não enviou os dados, também pode visualizá-los localmente com o seguinte comando: 
 
 ```Python
 lerobot-dataset-viz \
-  --repo-id juxi/test \
+  --repo-id juxi/test
 ```
 
 Aqui, `juxi` é o nome personalizado do `repo_id` durante a recolha de dados. 
@@ -551,6 +568,23 @@ lerobot-replay \
 ```
 
 Nesse momento, o robô deve executar as mesmas ações da operação remota e da gravação.
+
+Em alternativa, pode reproduzir um episódio através do comando de gravação com `--replay=true`: 
+
+```Python
+lerobot-record \
+  --robot.type=so101_follower \
+  --robot.port=/dev/ttyACM0 \
+  --robot.id=my_awesome_follower_arm \
+  --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"}, side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30, fourcc: "MJPG"}}" \
+  --dataset.repo_id=${HF_USER}/so101_test \
+  --dataset.single_task="Put the blue cube on the black box" \
+  --dataset.num_episodes=1 \
+  --dataset.episode_time_s=30 \
+  --dataset.reset_time_s=30 \
+  --dataset.push_to_hub=true \
+  --replay=true
+```
 
 ## E. Treinamento e avaliação do dataset
 
@@ -956,7 +990,7 @@ lerobot-record \
 - Se você encontrar problemas ao calibrar o ID do servo 
 
 ```Bash
-`Motor ‘gripper’ was not found, Make sure it is connected`
+`Motor 'gripper' was not found, Make sure it is connected`
 ```
 
 Verifique com cuidado se o cabo de comunicação está conectado corretamente ao servo motor e se a fonte de alimentação está fornecendo a tensão correta.

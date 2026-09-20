@@ -60,7 +60,15 @@ sudo ./flash.sh <board-name> mmcblk0p1
 
 ## 4. 系統基礎配置
 
-### 4.1 確認 GPU 環境
+### 4.1 網路與源
+
+```bash
+# 換用鏡像源(可選,加速 apt)
+sudo sed -i 's|archive.ubuntu.com|mirrors.tuna.tsinghua.edu.cn|g' /etc/apt/sources.list
+sudo apt update
+```
+
+### 4.2 確認 GPU 環境
 
 ```bash
 cat /etc/nv_tegra_release
@@ -71,14 +79,14 @@ python3 -c "import torch; print(torch.cuda.is_available())"
 
 > 若 PyTorch 不可用,參考 [Jetson Orin 上 PyTorch 不相容問題](/zh-hant/tutorials/learning-resources/jetson-orin-pytorch-compatibility)。
 
-### 4.2 開啟最高性能模式(Orin)
+### 4.3 開啟最高性能模式(Orin)
 
 ```bash
 sudo nvpmodel -m 0
 sudo jetson_clocks
 ```
 
-### 4.3 擴容根分區
+### 4.4 擴容根分區
 
 ```bash
 sudo systemctl enable --now nvresize

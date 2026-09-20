@@ -7,6 +7,10 @@ description: "Zum Debugging der USB-Kamera siehe das Tutorial zur USB-Kamera mit
 
 Zum Debugging der USB-Kamera siehe das [Tutorial zur USB-Kamera mit Autofokus](https://juxitech.feishu.cn/docx/JXstdNbN6oiL1WxiqJrc2OJDnrf?from=from_copylink)
 
+## Montage der SO-ARM100-Armhalterung
+
+![Montage der SO-ARM100-Armhalterung – 1](../../../../../public/images/tutorials/robot-arms/so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation/1.png)
+
 ## Montage der SO-ARM101-Armhalterung
 
 Beim fertigen Produkt sind die Muttern im Greifer bereits montiert – direkt zu Schritt 2 springen

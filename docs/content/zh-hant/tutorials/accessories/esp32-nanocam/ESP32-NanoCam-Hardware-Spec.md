@@ -17,23 +17,23 @@ description: "ESP32-NanoCam 硬體規格書:雙板架構、ESP32-S3 主控與 Fl
 │                    NanoCam 核心板                         │
 │  ┌──────────┐  ┌──────────┐  ┌────────────┐            │
 │  │ ESP32-S3 │  │ ES8311   │  │ NS4150B   │            │
-│  │   R8     │  │ I2S 麦克风│  │ I2S 功放   │            │
+│  │   R8     │  │ I2S 麥克風│  │ I2S 功放   │            │
 │  │ (QFN56)  │  │          │  │            │            │
 │  └────┬─────┘  └──────────┘  └────────────┘            │
 │       │                                                 │
 │  ┌────┴─────┐  ┌──────────┐  ┌────────────┐            │
 │  │ GD25Q128 │  │  DVP     │  │ ME6217C33  │            │
-│  │ 16MB Flash│ │ 摄像头   │  │ 3.3V LDO   │            │
+│  │ 16MB Flash│ │ 攝像頭   │  │ 3.3V LDO   │            │
 │  └──────────┘  │ FPC-24P  │  └────────────┘            │
 │                └──────────┘                             │
 ├─────────────────────────────────────────────────────────┤
 │                    NanoCam 底板                          │
 │  ┌──────────┐  ┌──────────┐  ┌────────────────────┐    │
-│  │ USB-C    │  │ CH340K   │  │ 一键下载电路        │    │
-│  │ 5V输入   │  │ USB-UART │  │ (DTR/RTS→BOOT/EN)  │    │
+│  │ USB-C    │  │ CH340K   │  │ 一鍵下載電路        │    │
+│  │ 5V輸入   │  │ USB-UART │  │ (DTR/RTS→BOOT/EN)  │    │
 │  └──────────┘  └──────────┘  └────────────────────┘    │
 │                                                         │
-│  扩展接口: I2C ×1, UART ×1, 5V/GND/3.3V                 │
+│  擴展接口: I2C ×1, UART ×1, 5V/GND/3.3V                 │
 └─────────────────────────────────────────────────────────┘
 ```
 
@@ -107,7 +107,7 @@ description: "ESP32-NanoCam 硬體規格書:雙板架構、ESP32-S3 主控與 Fl
 ### 3.3 攝像頭信號組匯總
 
 ```Plaintext
-Camera DVP 信号组:
+Camera DVP 信號組:
   XCLK  = IO9     # Master clock out (24MHz)
   PCLK  = IO6     # Pixel clock in
   VSYNC = IO13    # Vertical sync
@@ -129,7 +129,7 @@ Camera DVP 信号组:
 ### 4.1 音頻架構
 
 ```Plaintext
-AP2718AT (模拟MEMS麦) → ES8311 Codec (ADC/DAC) → NS4150B (模拟功放) → 扬声器
+AP2718AT (模擬MEMS麥) → ES8311 Codec (ADC/DAC) → NS4150B (模擬功放) → 揚聲器
                                ↕ I2S (MCLK=39,BCLK=38,WS=47,DOUT=48,DIN=40) + I2C (41/42, addr=0x30)
                             ESP32-S3
 ```
@@ -165,7 +165,7 @@ AP2718AT (模拟MEMS麦) → ES8311 Codec (ADC/DAC) → NS4150B (模拟功放) �
 ### 5.1 供電鏈路
 
 ```Plaintext
-USB-C (5V) ──→ 底板 NCE3401 P-MOSFET 反接保护 ──→ VDD50
+USB-C (5V) ──→ 底板 NCE3401 P-MOSFET 反接保護 ──→ VDD50
                                               │
                     ┌─────────────────────────┤
                     ↓                         ↓
@@ -177,7 +177,7 @@ USB-C (5V) ──→ 底板 NCE3401 P-MOSFET 反接保护 ──→ VDD50
         ┌───────────┼───────────┐
         ↓           ↓           ↓
     ESP32-S3    ES8311 Codec   GD25Q128 Flash
-    DVP摄像头   AP2718AT 麦    ME6211A18/28 LDO
+    DVP攝像頭   AP2718AT 麥    ME6211A18/28 LDO
 ```
 
 ### 5.2 關鍵器件
