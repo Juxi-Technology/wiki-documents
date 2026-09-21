@@ -21,13 +21,12 @@ const STRICT = process.argv.includes('--strict')
 // 允许跨语种不同的代码行(前缀/包含匹配);每条都要有理由
 const ALLOW = [
   'STORE',                    // 商店链接按语种前缀,已在归一里处理,这里兜底
-  'HF_USER=$(huggingface-cli whoami',  // pt-pt 该处改用新版 `hf auth whoami`(两版 CLI 站内都有效),属语种书写差异而非缺失
 ]
-// 仅在指定页面上豁免的行(比全局豁免精确)
+// 仅在指定页面上豁免的行(整行相等,不用前缀/包含 —— 避免顺带豁免同前缀的其它变体)
 const ALLOW_BY_PAGE = [
   {
     page: 'tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk.md',
-    why: '「查看 I2C 设备」这一步,5 个语种用厂商脚本 python3 /app/40pin_samples/test_i2c.py,6 个语种用 i2c-tools 方案(sudo apt-get install -y i2c-tools + i2cdetect -y -r -a 0)。两套命令都出自厂商素材,属历史内容差异;按「不改原意」保留各语种原样,不强行统一',
+    why: '「查看 I2C 设备」这一步:5 个语种按 RDK 素材用厂商脚本 python3 /app/40pin_samples/test_i2c.py;6 个语种(i2c-tools 方案:sudo apt-get install -y i2c-tools + i2cdetect -y -r -a 0)是从同一套素材的 Jetson 页带过来的,且这 6 语缺素材里的 test_i2c.py 步与 ros1 的 cd 行。按「不改原意」保留各语种原样、不强行统一,故在此豁免',
     lines: [
       'python3 /app/40pin_samples/test_i2c.py',
       'sudo apt-get update',
@@ -100,6 +99,20 @@ const codeLines = (src) => {
   }
   return out
 }
+// 宽松版:该语种任意围栏里(含 text/图解块)出现过的行 —— 用于判定「某行是否真的缺失」。
+// 只在 text 块里出现 ≠ 缺失(是块标签不同),故 ④ 的「缺失」判定要同时看这张表。
+const looseLines = (src) => {
+  const out = new Set()
+  for (const m of src.matchAll(/```([^\n]*)\n([\s\S]*?)```/g)) {
+    for (const line of m[2].split('\n')) {
+      const t = line.trim()
+      if (!t) continue
+      const x = mask(t)
+      if (x) out.add(x)
+    }
+  }
+  return out
+}
 const imgTargets = (src) => {
   const t = new Set()
   for (const m of src.matchAll(/!\[[^\]]*\]\(([^)\s]+)\)/g)) {
@@ -149,11 +162,11 @@ for (const { p, loc } of files) {
   const fcount = (src.match(/^\s*```/gm) || []).length
   if (fcount % 2 !== 0) fenceOdd.push(`${rel}: 围栏 {fcount} 个(应为偶数)`.replace('{fcount}', fcount))
   if (!pages.has(key)) pages.set(key, {})
-  pages.get(key)[loc] = { code: codeLines(src), img: imgTargets(src), dl: dlTargets(src), st: structure(src) }
+  pages.get(key)[loc] = { code: codeLines(src), loose: looseLines(src), img: imgTargets(src), dl: dlTargets(src), st: structure(src) }
 }
 
 const allow = (l, key) => ALLOW.some((a) => l.startsWith(a) || l.includes(a))
-  || ALLOW_BY_PAGE.some((e) => e.page === key && e.lines.some((x) => l.startsWith(x) || l.includes(x)))
+  || ALLOW_BY_PAGE.some((e) => e.page === key && e.lines.some((x) => l === x))  // 整行相等,避免顺带豁免同前缀变体
 for (const [key, m] of pages) {
   const locs = Object.keys(m)
   if (locs.length < LOCS.length) { problems.push(`缺语种(${locs.length}/11): ${key}`); continue }
@@ -194,7 +207,9 @@ for (const [key, m] of pages) {
       if (VERBOSE) console.log(`  · 仅 ${owners[0]} 独有(跳过):「${line.slice(0, 60)}」(${key})`)
       continue
     }
-    const missing = locs.filter((l) => !m[l].code.has(line))
+    // 该语种若在任意围栏(含 text/图解块)里出现过这一行,就不算「缺失」——那只是块标签不同
+    const missing = locs.filter((l) => !m[l].code.has(line) && !m[l].loose.has(line))
+    if (!missing.length) continue
     const msg = `代码行缺失 ${missing.join(',')} ${key}: 「${line.slice(0, 70)}」(存在于 ${owners.join(',')})`
     // ④ 默认只报告:围栏内哪些行「必须一致」取决于内容是否可翻译,需人工分诊;--strict 才判失败
     ;(STRICT ? problems : warnings).push(msg)

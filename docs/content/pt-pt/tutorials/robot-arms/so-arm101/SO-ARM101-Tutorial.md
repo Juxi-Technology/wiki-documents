@@ -893,7 +893,7 @@ huggingface-cli login --token ${HUGGINGFACE_TOKEN} --add-to-git-credential
 ```
 
 ```Plain Text
-HF_USER=$(hf auth whoami | head -n 1)
+HF_USER=$(huggingface-cli whoami | head -n 1)
 ```
 
 ```Plain Text
