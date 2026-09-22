@@ -55,7 +55,7 @@ lerobot-calibrate --teleop.type=so101_leader --teleop.port=<leader_arm_com> --te
 
 > **⚠️ Hinweis 2 (freie Drehung)**: Während der Kalibrierung muss sich der Roboterarm frei drehen können; stellen Sie sicher, dass die Servos unbelastet sind.
 
-> **⚠️ Hinweis 3 (Speicherort der Kalibrierungsdatei)**: Unter Windows ist der Pfad das Benutzerverzeichnis `%USERPROFILE%.cache\huggingface\lerobot\calibration\`.
+> **⚠️ Hinweis 3 (Speicherort der Kalibrierungsdatei)**: Unter Windows ist der Pfad das Benutzerverzeichnis `%USERPROFILE%\.cache\huggingface\lerobot\calibration\`.
 
 ---
 
@@ -148,7 +148,7 @@ Nach Abschluss dieser Phase fahren Sie mit Phase 3: Teleoperation fort.
 |Leader-Arm-Kalibrierung meldet Modellfehler 2307|Armbus verunreinigt / Schnittstellenkonflikt<br>|Stellen Sie sicher, dass die Schnittstelle der Hand nicht gleichzeitig verbunden ist; in diesem Projekt läuft die Hand über rustypot und umgeht dies|
 |Bei der Handkalibrierung erscheint keine GUI|Falscher Befehl verwendet|Verwenden Sie unbedingt `lerobot-calibrate-amazing-hand` (nicht `lerobot-calibrate`)|
 |Handtreiber meldet `Operation timed out`|Schnittstelle belegt / Timing|Stellen Sie sicher, dass die Schnittstelle der Hand nicht belegt ist, und versuchen Sie es erneut|
-|Kalibrierungsdatei nicht gefunden|Falscher Pfad<br>|Prüfen Sie `%USERPROFILE%.cache\huggingface\lerobot\calibration\`|
+|Kalibrierungsdatei nicht gefunden|Falscher Pfad<br>|Prüfen Sie `%USERPROFILE%\.cache\huggingface\lerobot\calibration\`|
 |Serielle Schnittstelle lässt sich nicht öffnen|Falsche COM-Nummer|Mit `lerobot-find-port` erneut bestätigen|
 
 <RelatedProducts slugs="so-arm101,amazinghand" />

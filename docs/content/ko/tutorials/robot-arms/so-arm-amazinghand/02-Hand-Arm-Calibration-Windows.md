@@ -55,7 +55,7 @@ lerobot-calibrate --teleop.type=so101_leader --teleop.port=<leader_arm_com> --te
 
 > **⚠️ 주의 2(자유 회전)**：캘리브레이션 시 로봇 암이 자유롭게 회전할 수 있어야 하며, 서보가 무부하인지 확인하세요.
 
-> **⚠️ 주의 3(캘리브레이션 파일 위치)**：Windows에서는 경로가 사용자 디렉터리 `%USERPROFILE%.cache\huggingface\lerobot\calibration\`입니다.
+> **⚠️ 주의 3(캘리브레이션 파일 위치)**：Windows에서는 경로가 사용자 디렉터리 `%USERPROFILE%\.cache\huggingface\lerobot\calibration\`입니다.
 
 ---
 
@@ -148,7 +148,7 @@ lerobot-calibrate-amazing-hand --hand_port <hand_com> --leader_port <leader_arm_
 |리더 암 캘리브레이션 시 2307 모델 오류|암 버스 오염/시리얼 포트 충돌<br>|핸드 시리얼 포트를 동시 연결하지 않았는지 확인; 본 프로젝트의 핸드는 rustypot 경유라 회피됨|
 |캘리브레이션 시 핸드 GUI가 뜨지 않음|잘못된 명령 사용|반드시 `lerobot-calibrate-amazing-hand`를 사용(`lerobot-calibrate`가 아님)|
 |핸드 드라이버가 `Operation timed out` 보고|시리얼 포트 사용 중/타이밍|핸드 시리얼 포트가 점유되지 않았는지 확인 후 재시도|
-|캘리브레이션 파일을 찾을 수 없음|경로 오류<br>|`%USERPROFILE%.cache\huggingface\lerobot\calibration\` 확인|
+|캘리브레이션 파일을 찾을 수 없음|경로 오류<br>|`%USERPROFILE%\.cache\huggingface\lerobot\calibration\` 확인|
 |시리얼 포트가 열리지 않음|COM 번호 오류|`lerobot-find-port`로 재확인|
 
 <RelatedProducts slugs="so-arm101,amazinghand" />

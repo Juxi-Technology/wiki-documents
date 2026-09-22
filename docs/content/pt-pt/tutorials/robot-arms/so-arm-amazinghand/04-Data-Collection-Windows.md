@@ -46,7 +46,7 @@ lerobot-record --robot.type=so101_amazing_hand --robot.port=<follower_arm_com> -
 
 > **💡 Notas**:
 
-- `--dataset.root=D:\lerobot_data`: o conjunto de dados é guardado no **caminho local** especificado, **sem necessidade de iniciar sessão no HF** (se omitido, é guardado por predefinição em `%USERPROFILE%.cache\huggingface\lerobot\datasets...`).
+- `--dataset.root=D:\lerobot_data`: o conjunto de dados é guardado no **caminho local** especificado, **sem necessidade de iniciar sessão no HF** (se omitido, é guardado por predefinição em `%USERPROFILE%\.cache\huggingface\lerobot\datasets...`).
 
 - `--dataset.push_to_hub=false`: **desativa o upload** (por predefinição tenta enviar para o HF, exigindo autenticação). Só altere para `true` se precisar de partilhar o conjunto de dados.
 

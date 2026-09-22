@@ -46,7 +46,7 @@ lerobot-record --robot.type=so101_amazing_hand --robot.port=<从动臂COM> --rob
 
 > **💡 说明**：
 
-- `--dataset.root=D:\lerobot_data`：数据集保存到指定**本地路径**，**无需 HF 登录**（不写则默认存 `%USERPROFILE%.cache\huggingface\lerobot\datasets...`）。
+- `--dataset.root=D:\lerobot_data`：数据集保存到指定**本地路径**，**无需 HF 登录**（不写则默认存 `%USERPROFILE%\.cache\huggingface\lerobot\datasets...`）。
 
 - `--dataset.push_to_hub=false`：**关闭上传**（默认会尝试推送到 HF，需登录）。只有需要共享数据集时才改为 `true`。
 

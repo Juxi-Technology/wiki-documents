@@ -46,7 +46,7 @@ lerobot-record --robot.type=so101_amazing_hand --robot.port=<follower_arm_com> -
 
 > **💡 説明**：
 
-- `--dataset.root=D:\lerobot_data`：データセットは指定した**ローカルパス**に保存され、**HF ログインは不要**です（記述しない場合はデフォルトで `%USERPROFILE%.cache\huggingface\lerobot\datasets...` に保存されます）。
+- `--dataset.root=D:\lerobot_data`：データセットは指定した**ローカルパス**に保存され、**HF ログインは不要**です（記述しない場合はデフォルトで `%USERPROFILE%\.cache\huggingface\lerobot\datasets...` に保存されます）。
 
 - `--dataset.push_to_hub=false`：**アップロードを無効化**します（デフォルトでは HF へのプッシュを試み、ログインが必要です）。データセットを共有する必要がある場合のみ `true` に変更します。
 

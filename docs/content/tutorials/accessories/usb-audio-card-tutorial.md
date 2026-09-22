@@ -102,7 +102,7 @@ Parameter descriptions are as follows:
 
 - -D plughw:0,0: Specifies the recording device. plughw:0,0 indicates using the first device of the first sound card.
 
-- -f S16_LE: Sets the audio file format. S16_LE represents 16-bit little endian format (Signed 16-bit Little Endian), a commonly used audio data format, where "little endian" means that the low-order ByteDance of the data is stored at the low address end of memory.
+- -f S16_LE: Sets the audio file format. S16_LE represents 16-bit little endian format (Signed 16-bit Little Endian), a commonly used audio data format, where "little endian" means that the low-order byte of the data is stored at the low address end of memory.
 
 - -r 16000: Set the sampling rate.
 
@@ -288,7 +288,7 @@ Parameter descriptions are as follows:
 
 - -D plughw:0,0: Specifies the recording device. plughw:0,0 indicates using the first device of the first sound card.
 
-- -f S16_LE: Sets the audio file format. S16_LE represents 16-bit little endian format (Signed 16-bit Little Endian), a commonly used audio data format, where "little endian" means that the low-order ByteDance of the data is stored at the low address end of memory.
+- -f S16_LE: Sets the audio file format. S16_LE represents 16-bit little endian format (Signed 16-bit Little Endian), a commonly used audio data format, where "little endian" means that the low-order byte of the data is stored at the low address end of memory.
 
 - -r 16000: Set the sampling rate.
 

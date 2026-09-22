@@ -55,7 +55,7 @@ lerobot-calibrate --teleop.type=so101_leader --teleop.port=<主動臂COM> --tele
 
 > **⚠️ 注意 2（自由轉動）**：標定時機械臂需能自由轉動，確保舵機空載。
 
-> **⚠️ 注意 3（標定檔案位置）**：Windows 下路徑為使用者目錄 `%USERPROFILE%.cache\huggingface\lerobot\calibration\`。
+> **⚠️ 注意 3（標定檔案位置）**：Windows 下路徑為使用者目錄 `%USERPROFILE%\.cache\huggingface\lerobot\calibration\`。
 
 ---
 
@@ -148,7 +148,7 @@ lerobot-calibrate-amazing-hand --hand_port <手COM> --leader_port <主動臂COM>
 |主動臂標定報 2307 型號錯誤|臂總線被污染/串口衝突<br>|確認未同時連手串口；本項目手走 rustypot 已規避|
 |標定手無 GUI 彈出|用了錯誤命令|必須用 `lerobot-calibrate-amazing-hand`（不是 `lerobot-calibrate`）|
 |手驅動報 `Operation timed out`|串口忙碌/時序|確認手串口未被佔用，重試|
-|標定檔案找不到|路徑不對<br>|檢查 `%USERPROFILE%.cache\huggingface\lerobot\calibration\`|
+|標定檔案找不到|路徑不對<br>|檢查 `%USERPROFILE%\.cache\huggingface\lerobot\calibration\`|
 |串口打不開|COM 號錯|用 `lerobot-find-port` 重新確認|
 
 <RelatedProducts slugs="so-arm101,amazinghand" />

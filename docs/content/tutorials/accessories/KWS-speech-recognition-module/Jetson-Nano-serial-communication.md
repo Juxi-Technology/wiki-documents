@@ -170,7 +170,7 @@ At this time, you can open the attached "Command Word and Announcement Word Prot
 
 ![3. Implementation Effect – 3](../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/Jetson-Nano-serial-communication/4.png)
 
-Among them, the first and second ByteDances AA 55 represent the frame header of the protocol, the third ByteDance represents the ID of the ten functional words of the chip, the fourth is the ID of the command word, where we can see that "turn off the light" is 0D in hexadecimal and 13 in decimal. The fifth ByteDance is the end frame.
+Among them, the first and second bytes AA 55 represent the frame header of the protocol, the third byte represents the ID of the ten functional words of the chip, the fourth is the ID of the command word, where we can see that "turn off the light" is 0D in hexadecimal and 13 in decimal. The fifth byte is the end frame.
 
 If you say other command words, the Console will also print the corresponding command word ID. You can try it yourself. 
 

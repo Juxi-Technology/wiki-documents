@@ -47,11 +47,11 @@ Visual Studio 2022 Build Tools をインストールし、「C++ によるデス
 
     - Windows は rustup-init.exe を使用し、既定の MSVC ツールチェーンを選択
 
-    - 環境変数：`%USERPROFILE%.cargo\bin` を PATH に追加
+    - 環境変数：`%USERPROFILE%\.cargo\bin` を PATH に追加
 
 - **uv**：PowerShell で `irm ``https://astral.sh/uv/install.ps1`` | iex` を実行
 
-    - 環境変数：`%USERPROFILE%.local\bin` を PATH に追加
+    - 環境変数：`%USERPROFILE%\.local\bin` を PATH に追加
 
 - **dora-cli**：`cargo install dora-cli --version 0.5.0`
 

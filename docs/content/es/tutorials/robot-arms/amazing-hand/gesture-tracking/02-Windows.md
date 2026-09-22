@@ -47,11 +47,11 @@ Visual Studio 2022 Build Tools; marque "Desarrollo de escritorio con C++" y, tra
 
     - En Windows, use rustup-init.exe y seleccione la cadena de herramientas MSVC predeterminada
 
-    - Variables de entorno: añadir `%USERPROFILE%.cargo\bin` al PATH
+    - Variables de entorno: añadir `%USERPROFILE%\.cargo\bin` al PATH
 
 - **uv**: en PowerShell, ejecute `irm ``https://astral.sh/uv/install.ps1`` | iex`
 
-    - Variables de entorno: añadir `%USERPROFILE%.local\bin` al PATH
+    - Variables de entorno: añadir `%USERPROFILE%\.local\bin` al PATH
 
 - **dora-cli**: `cargo install dora-cli --version 0.5.0`
 

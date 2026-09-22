@@ -46,7 +46,7 @@ lerobot-record --robot.type=so101_amazing_hand --robot.port=<follower_arm_com> -
 
 > **💡 Notes**:
 
-- `--dataset.root=D:\lerobot_data`: The dataset is saved to the specified **local path**, with **no HF login required** (if omitted, it is saved by default to `%USERPROFILE%.cache\huggingface\lerobot\datasets...`).
+- `--dataset.root=D:\lerobot_data`: The dataset is saved to the specified **local path**, with **no HF login required** (if omitted, it is saved by default to `%USERPROFILE%\.cache\huggingface\lerobot\datasets...`).
 
 - `--dataset.push_to_hub=false`: **Disables upload** (by default it tries to push to HF, which requires login). Only change it to `true` if you need to share the dataset.
 

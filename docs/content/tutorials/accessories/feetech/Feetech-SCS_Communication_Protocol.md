@@ -31,14 +31,14 @@ ID Number: Each servo has an ID number. The ID number ranges from 0 to 253, whic
 
 - Instruction: Packet operation function code, see 1.3 Instruction Types for details.
 
-- Parameter: Additional control information required besides the instruction. The parameter supports up to a two-ByteDance parameter to represent a memory value, and the ByteDance order refers to the memory control table in the servo motor user manual (the ByteDance order varies for different servo motor models).
+- Parameter: Additional control information required besides the instruction. The parameter supports up to a two-byte parameter to represent a memory value, and the byte order refers to the memory control table in the servo motor user manual (the byte order varies for different servo motor models).
 
 - Checksum: Checksum, the calculation method is as follows
-Check Sum = ~ (ID + Length + Instruction + Parameter1 + … Parameter N). If the sum of the calculation within the parentheses exceeds 255, take the lowest ByteDance, where "~" denotes bitwise negation.
+Check Sum = ~ (ID + Length + Instruction + Parameter1 + … Parameter N). If the sum of the calculation within the parentheses exceeds 255, take the lowest byte, where "~" denotes bitwise negation.
 
 ## 3 Response Frame
 
-The returned response frame contains the current state ERROR of the servo. If the current operating state of the servo is abnormal, it will be reflected through this ByteDance (for details on the meaning represented by each state, please refer to the Memory Control Table in the manual). If ERROR is 0, the servo has no error information. 
+The returned response frame contains the current state ERROR of the servo. If the current operating state of the servo is abnormal, it will be reflected through this byte (for details on the meaning represented by each state, please refer to the Memory Control Table in the manual). If ERROR is 0, the servo has no error information. 
 
 ## 4 Instruction Types
 
@@ -146,7 +146,7 @@ Checksum：F4
 
 Since commands are sent using the broadcast ID, there will be no data returned. Additionally, the memory table EPROM has a protection lock switch, which needs to be turned off (set to 0) before modifying the ID; otherwise, the example ID number will not be saved when power is lost. For detailed operations, please refer to the memory table or operation manual of the specific servo model.
 
-Example 4: Control the ID1 servo to rotate to the position of 2048 at a speed of 1000 steps per second. The starting address of the target position in the memory table is 0x2A, so start writing six consecutive ByteDance data at address 0x2A.
+Example 4: Control the ID1 servo to rotate to the position of 2048 at a speed of 1000 steps per second. The starting address of the target position in the memory table is 0x2A, so start writing six consecutive bytes of data at address 0x2A.
 
 - Position data 0x0800 (2048)
 
@@ -321,7 +321,7 @@ Checksum：58
 
 A SYNC READ command can query the contents of the control tables of multiple servos in one go. The SYNC READ command specifies the IDs of the servos to be queried, and the servos return response packets in the order of the IDs in the command packet. When using the SYNC READ command, the length and starting address of all queried data must be the same (this command is available for some serial bus servos). 
 
-Example 8: Query the current position, current speed, current load, current voltage, and current temperature of a total of 2 servo motors from ID1 to ID2 (starting address 0x38, a total of 8-word data, with the low-order ByteDance first and the high-order ByteDance last).
+Example 8: Query the current position, current speed, current load, current voltage, and current temperature of a total of 2 servo motors from ID1 to ID2 (starting address 0x38, a total of 8-word data, with the low-order byte first and the high-order byte last).
 
 Command Frame: FF FF FE 06 82 38 08 01 02 36
 

@@ -47,11 +47,11 @@ Visual Studio 2022 Build Tools, "C++를 사용한 데스크톱 개발"을 체크
 
     - Windows는 rustup-init.exe 사용, 기본 MSVC 툴체인 선택
 
-    - 환경 변수: `%USERPROFILE%.cargo\bin`을 PATH에 추가
+    - 환경 변수: `%USERPROFILE%\.cargo\bin`을 PATH에 추가
 
 - **uv**: PowerShell에서 `irm ``https://astral.sh/uv/install.ps1`` | iex` 실행
 
-    - 환경 변수: `%USERPROFILE%.local\bin`을 PATH에 추가
+    - 환경 변수: `%USERPROFILE%\.local\bin`을 PATH에 추가
 
 - **dora-cli**: `cargo install dora-cli --version 0.5.0`
 

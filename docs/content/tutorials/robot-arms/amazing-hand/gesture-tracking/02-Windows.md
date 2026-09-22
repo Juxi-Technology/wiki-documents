@@ -47,11 +47,11 @@ Visual Studio 2022 Build Tools, check "Desktop development with C++", and reopen
 
     - On Windows, use rustup-init.exe and select the default MSVC toolchain
 
-    - Environment variable: add `%USERPROFILE%.cargo\bin` to PATH
+    - Environment variable: add `%USERPROFILE%\.cargo\bin` to PATH
 
 - **uv**: run `irm ``https://astral.sh/uv/install.ps1`` | iex` in PowerShell
 
-    - Environment variable: add `%USERPROFILE%.local\bin` to PATH
+    - Environment variable: add `%USERPROFILE%\.local\bin` to PATH
 
 - **dora-cli**: `cargo install dora-cli --version 0.5.0`
 

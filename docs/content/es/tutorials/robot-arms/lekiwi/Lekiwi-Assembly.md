@@ -18,7 +18,7 @@ Vista previa URDF en línea https://urdf.d-robotics.cc/
 
 ![image – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/1.jpg)
 
-![image – 2](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/10.jpg)
+![image – 2](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/2.jpg)
 
 
 
@@ -26,27 +26,27 @@ Vista previa URDF en línea https://urdf.d-robotics.cc/
 
 2. Fijar el soporte del motor a la placa base con 12 **tornillos de máquina M3x16 y 12** .
 
-![image – 3](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/11.jpg)
+![image – 3](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/3.jpg)
 
 
 
 3. Retirar los tornillos y tuercas de la rueda omnidireccional de 82 mm
 
-![image – 4](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/12.jpg)
+![image – 4](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/4.jpg)
 
 
 
 4. Fijar el servo horn al servo con tornillos m3*6
 
-![image – 5](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/13.jpg)
+![image – 5](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/5.jpg)
 
 
 
 5. Insertar 4 contratuercas en el acoplamiento y fijar el acoplamiento al servo horn con 4 tornillos m3*6
 
-![image – 6](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/14.jpg)
+![image – 6](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/6.jpg)
 
-![image – 7](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/15.jpg)
+![image – 7](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/7.jpg)
 
 
 
@@ -56,11 +56,11 @@ Vista previa URDF en línea https://urdf.d-robotics.cc/
 
 Tras montar las tres ruedas en la placa base:
 
-![image – 8](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/16.jpg)
+![image – 8](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/8.jpg)
 
-![image – 9](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/17.jpg)
+![image – 9](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/9.jpg)
 
-![image – 10](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/18.jpg)
+![image – 10](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/10.jpg)
 
 
 
@@ -72,9 +72,9 @@ Tras montar las tres ruedas en la placa base:
 
 1. Insertar las tuercas M3 en los orificios de la placa driver de servos y del soporte de batería. Fijar ambos a la placa base con 4 tornillos M3x12.
 
-![image – 11](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/19.jpg)
+![image – 11](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/11.jpg)
 
-![image – 12](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/2.jpg)
+![image – 12](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/12.jpg)
 
 
 
@@ -101,17 +101,17 @@ Conexión de cables de la batería externa
 
 Los cables se conectan como se muestra:
 
-![image – 13](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/20.jpg)
+![image – 13](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/13.jpg)
 
-![image – 14](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/21.jpg)
+![image – 14](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/14.jpg)
 
-![image – 15](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/22.jpg)
+![image – 15](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/15.jpg)
 
-![image – 16](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/3.jpg)
+![image – 16](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/16.jpg)
 
-![image – 17](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/4.jpg)
+![image – 17](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/17.jpg)
 
-![image – 18](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/5.jpg)
+![image – 18](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/18.jpg)
 
 
 
@@ -120,7 +120,7 @@ Los cables se conectan como se muestra:
 1. Colocar el Raspberry Pi 5 en la parte inferior de la carcasa y encajar la tapa superior.
 2. Fijar el Raspberry Pi a la placa superior con dos tornillos M3x12 y dos contratuercas M3, y montar la base del brazo SO-101 con cuatro tornillos M4x25 y cuatro contratuercas M4. Se puede usar nuestra base SO-101 mejorada o la original: la placa tiene orificios para ambas.
 
-![image – 19](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/6.jpg)
+![image – 19](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/19.jpg)
 
 
 
@@ -128,13 +128,13 @@ Los cables se conectan como se muestra:
 
 1. Pasar el cable USB-C a USB-A de la placa driver, el cable de alimentación USB-C de 5 V y el cable del servo SO0-101 por los orificios de la placa superior.
 
-![image – 20](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/7.jpg)
+![image – 20](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/20.jpg)
 
 
 
 2. Fijar la placa superior al soporte del motor con 6 tornillos m3x12 y 6 contratuercas m3.
 
-![image – 21](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/8.jpg)
+![image – 21](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/21.jpg)
 
 
 
@@ -158,7 +158,7 @@ Fijar el módulo de cámara con 4 tornillos separadores m2*5*5
 Insertar el adaptador cilíndrico DC en la placa driver y el conector USB-C de 5 V en el Raspberry Pi 5 para alimentar la electrónica. Los cables de datos USB de la placa driver y de la cámara se conectan directamente al Raspberry Pi.
 
 
-![Option 2 Install an arm-mounted camera – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/9.jpg)
+![Option 2 Install an arm-mounted camera – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/22.jpg)
 
 
 

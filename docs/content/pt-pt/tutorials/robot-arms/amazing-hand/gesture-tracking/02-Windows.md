@@ -47,11 +47,11 @@ Visual Studio 2022 Build Tools, assinale "Desenvolvimento para ambiente de traba
 
     - No Windows, utilize o rustup-init.exe e escolha a toolchain MSVC predefinida
 
-    - Variáveis de ambiente: adicione `%USERPROFILE%.cargo\bin` ao PATH
+    - Variáveis de ambiente: adicione `%USERPROFILE%\.cargo\bin` ao PATH
 
 - **uv**: no PowerShell, execute `irm ``https://astral.sh/uv/install.ps1`` | iex`
 
-    - Variáveis de ambiente: adicione `%USERPROFILE%.local\bin` ao PATH
+    - Variáveis de ambiente: adicione `%USERPROFILE%\.local\bin` ao PATH
 
 - **dora-cli**: `cargo install dora-cli --version 0.5.0`
 

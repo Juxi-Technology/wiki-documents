@@ -47,11 +47,11 @@ Visual Studio 2022 Build Tools，勾选"使用 C++ 的桌面开发"，装完重�
 
     - Windows 用 rustup-init.exe，选默认 MSVC 工具链
 
-    - 环境变量：`%USERPROFILE%.cargo\bin` 加入 PATH
+    - 环境变量：`%USERPROFILE%\.cargo\bin` 加入 PATH
 
 - **uv**：PowerShell 执行 `irm ``https://astral.sh/uv/install.ps1`` | iex`
 
-    - 环境变量：`%USERPROFILE%.local\bin` 加入 PATH
+    - 环境变量：`%USERPROFILE%\.local\bin` 加入 PATH
 
 - **dora-cli**：`cargo install dora-cli --version 0.5.0`
 

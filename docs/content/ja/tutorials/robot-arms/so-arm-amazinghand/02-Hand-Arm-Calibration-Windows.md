@@ -55,7 +55,7 @@ lerobot-calibrate --teleop.type=so101_leader --teleop.port=<leader_arm_com> --te
 
 > **⚠️ 注意 2（自由回転）**：キャリブレーション時はアームが自由に回転できる必要があります。サーボが無負荷であることを確認してください。
 
-> **⚠️ 注意 3（キャリブレーションファイルの場所）**：Windows ではパスはユーザーディレクトリ `%USERPROFILE%.cache\huggingface\lerobot\calibration\` です。
+> **⚠️ 注意 3（キャリブレーションファイルの場所）**：Windows ではパスはユーザーディレクトリ `%USERPROFILE%\.cache\huggingface\lerobot\calibration\` です。
 
 ---
 
@@ -148,7 +148,7 @@ lerobot-calibrate-amazing-hand --hand_port <hand_com> --leader_port <leader_arm_
 |リーダーアームのキャリブレーションで 2307 型番エラー|アームバスが汚染/シリアルポート競合<br>|ハンドのシリアルポートを同時接続していないことを確認；本プロジェクトのハンドは rustypot 経由のため回避済み|
 |キャリブレーション時にハンドの GUI が表示されない|誤ったコマンドを使用|必ず `lerobot-calibrate-amazing-hand` を使用する（`lerobot-calibrate` ではない）|
 |ハンドドライバが `Operation timed out` を報告|シリアルポートがビジー/タイミング|ハンドのシリアルポートが占有されていないことを確認し、再試行|
-|キャリブレーションファイルが見つからない|パスが違う<br>|`%USERPROFILE%.cache\huggingface\lerobot\calibration\` を確認|
+|キャリブレーションファイルが見つからない|パスが違う<br>|`%USERPROFILE%\.cache\huggingface\lerobot\calibration\` を確認|
 |シリアルポートが開けない|COM 番号が誤り|`lerobot-find-port` で再確認|
 
 <RelatedProducts slugs="so-arm101,amazinghand" />

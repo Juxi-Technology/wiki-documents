@@ -46,7 +46,7 @@ lerobot-record --robot.type=so101_amazing_hand --robot.port=<follower_arm_com> -
 
 > **💡 Explication** :
 
-- `--dataset.root=D:\lerobot_data` : le jeu de données est enregistré dans un **chemin local** spécifié, **sans connexion HF** (si ce paramètre est omis, il est stocké par défaut dans `%USERPROFILE%.cache\huggingface\lerobot\datasets...`).
+- `--dataset.root=D:\lerobot_data` : le jeu de données est enregistré dans un **chemin local** spécifié, **sans connexion HF** (si ce paramètre est omis, il est stocké par défaut dans `%USERPROFILE%\.cache\huggingface\lerobot\datasets...`).
 
 - `--dataset.push_to_hub=false` : **désactive l'envoi** (par défaut, une tentative d'envoi vers HF est effectuée, ce qui nécessite une connexion). Ne le passez à `true` que si vous devez partager le jeu de données.
 

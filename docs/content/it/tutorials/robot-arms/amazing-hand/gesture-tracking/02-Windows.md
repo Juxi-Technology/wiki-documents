@@ -47,11 +47,11 @@ Visual Studio 2022 Build Tools; selezionare "Sviluppo di applicazioni desktop co
 
     - Su Windows usare rustup-init.exe e selezionare la toolchain MSVC predefinita
 
-    - Variabili d'ambiente: aggiungere `%USERPROFILE%.cargo\bin` al PATH
+    - Variabili d'ambiente: aggiungere `%USERPROFILE%\.cargo\bin` al PATH
 
 - **uv**: in PowerShell eseguire `irm ``https://astral.sh/uv/install.ps1`` | iex`
 
-    - Variabili d'ambiente: aggiungere `%USERPROFILE%.local\bin` al PATH
+    - Variabili d'ambiente: aggiungere `%USERPROFILE%\.local\bin` al PATH
 
 - **dora-cli**: `cargo install dora-cli --version 0.5.0`
 

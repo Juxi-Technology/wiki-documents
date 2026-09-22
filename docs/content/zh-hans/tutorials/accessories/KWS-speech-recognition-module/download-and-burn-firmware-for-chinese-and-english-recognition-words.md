@@ -24,19 +24,19 @@ description: "模块出厂已经烧录语音识别功能固件，资料附件里
 
 #### 点击“离线语音识别大模型应用”
 
-![点击顶部菜单“平台功能”，选择“产品固件及SDK深度开发” – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/10.png)
+![点击顶部菜单“平台功能”，选择“产品固件及SDK深度开发” – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/2.png)
 
 ---
 
 #### 点击“语音识别固件及SDK开发”
 
-![点击“语音识别固件及SDK开发” – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/11.png)
+![点击“语音识别固件及SDK开发” – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/3.png)
 
 ---
 
 #### 新建项目
 
-![点击“语音识别固件及SDK开发” – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/12.png)
+![点击“语音识别固件及SDK开发” – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/4.png)
 
 ---
 
@@ -56,7 +56,7 @@ description: "模块出厂已经烧录语音识别功能固件，资料附件里
 
 7. **描述：**按自己描述规则来即可
 
-![产品信息填写 – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/13.png)
+![产品信息填写 – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/5.png)
 
 ---
 
@@ -78,13 +78,13 @@ description: "模块出厂已经烧录语音识别功能固件，资料附件里
 
 4. **模块板选择：**CI-D02GS02S
 
-![产品信息填写 – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/14.png)
+![产品信息填写 – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/6.png)
 
 ---
 
 #### 固件配置
 
-![固件配置 – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/2.png)
+![固件配置 – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/7.png)
 
 ---
 
@@ -102,9 +102,9 @@ description: "模块出厂已经烧录语音识别功能固件，资料附件里
 
     命令词播报词协议列表V3_英文模板.xlsx
 
-![固件配置 – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/3.png)
+![固件配置 – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/8.png)
 
-![固件配置 – 3](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/4.png)
+![固件配置 – 3](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/9.png)
 
 ---
 
@@ -120,23 +120,23 @@ description: "模块出厂已经烧录语音识别功能固件，资料附件里
 > 
 > 
 
-![下载语音模块烧录软件压缩包 – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/5.png)
+![下载语音模块烧录软件压缩包 – 1](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/10.png)
 
 2. 将声卡插上电脑，打开设备管理器
 
-![下载语音模块烧录软件压缩包 – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/6.png)
+![下载语音模块烧录软件压缩包 – 2](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/11.png)
 
-![下载语音模块烧录软件压缩包 – 3](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/7.png)
+![下载语音模块烧录软件压缩包 – 3](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/12.png)
 
 3. 移至固件烧录软件页面
 
 > 声卡按键位置
 > 
-> ![下载语音模块烧录软件压缩包 – 4](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/8.png)
+> ![下载语音模块烧录软件压缩包 – 4](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/13.png)
 > 
 > 
 
-![下载语音模块烧录软件压缩包 – 5](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/9.png)
+![下载语音模块烧录软件压缩包 – 5](../../../../../public/images/tutorials/accessories/KWS-speech-recognition-module/download-and-burn-firmware-for-chinese-and-english-recognition-words/14.png)
 
 #### 完成后可移步到左侧对应的其他教程
 

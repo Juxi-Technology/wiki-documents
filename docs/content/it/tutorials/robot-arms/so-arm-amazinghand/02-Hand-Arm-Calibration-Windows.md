@@ -55,7 +55,7 @@ lerobot-calibrate --teleop.type=so101_leader --teleop.port=<leader_arm_com> --te
 
 > **⚠️ Nota 2 (rotazione libera)**: durante la calibrazione il braccio robotico deve poter ruotare liberamente; assicurati che i servomotori siano a vuoto.
 
-> **⚠️ Nota 3 (posizione del file di calibrazione)**: in Windows il percorso è la directory utente `%USERPROFILE%.cache\huggingface\lerobot\calibration\`.
+> **⚠️ Nota 3 (posizione del file di calibrazione)**: in Windows il percorso è la directory utente `%USERPROFILE%\.cache\huggingface\lerobot\calibration\`.
 
 ---
 
@@ -148,7 +148,7 @@ Dopo aver completato questa fase, passa alla Fase 3: Teleoperazione.
 |La calibrazione del braccio master segnala l'errore modello 2307|Bus del braccio contaminato/conflitto di porta seriale<br>|Verifica che la porta seriale della mano non sia collegata contemporaneamente; in questo progetto la mano usa rustypot e il problema è evitato|
 |La calibrazione della mano non mostra alcuna GUI|È stato usato un comando errato|Bisogna usare `lerobot-calibrate-amazing-hand` (non `lerobot-calibrate`)|
 |Il driver della mano segnala `Operation timed out`|Porta seriale occupata/temporizzazione|Verifica che la porta seriale della mano non sia occupata e riprova|
-|File di calibrazione non trovato|Percorso errato<br>|Controlla `%USERPROFILE%.cache\huggingface\lerobot\calibration\`|
+|File di calibrazione non trovato|Percorso errato<br>|Controlla `%USERPROFILE%\.cache\huggingface\lerobot\calibration\`|
 |La porta seriale non si apre|Numero COM errato|Riconfermalo con `lerobot-find-port`|
 
 <RelatedProducts slugs="so-arm101,amazinghand" />

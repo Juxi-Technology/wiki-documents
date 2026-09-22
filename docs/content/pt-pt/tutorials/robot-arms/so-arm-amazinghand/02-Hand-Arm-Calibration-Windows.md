@@ -55,7 +55,7 @@ lerobot-calibrate --teleop.type=so101_leader --teleop.port=<leader_arm_com> --te
 
 > **⚠️ Nota 2 (rotação livre)**: durante a calibração, o braço robótico deve poder girar livremente, garantindo que os servos estejam sem carga.
 
-> **⚠️ Nota 3 (local do ficheiro de calibração)**: no Windows, o caminho é o diretório do utilizador `%USERPROFILE%.cache\huggingface\lerobot\calibration\`.
+> **⚠️ Nota 3 (local do ficheiro de calibração)**: no Windows, o caminho é o diretório do utilizador `%USERPROFILE%\.cache\huggingface\lerobot\calibration\`.
 
 ---
 
@@ -148,7 +148,7 @@ Depois de concluir esta etapa, avance para a Etapa 3: Teleoperação.
 |Calibração do braço líder devolve erro de modelo 2307|Barramento do braço poluído/conflito de porta série<br>|Confirme que a porta série da mão não está ligada em simultâneo; neste projeto a mão usa rustypot, o que já contorna o problema|
 |Calibração da mão sem GUI|Comando errado|Deve usar `lerobot-calibrate-amazing-hand` (não `lerobot-calibrate`)|
 |O controlador da mão devolve `Operation timed out`|Porta série ocupada/temporização|Confirme que a porta série da mão não está ocupada e tente novamente|
-|Ficheiro de calibração não encontrado|Caminho errado<br>|Verifique `%USERPROFILE%.cache\huggingface\lerobot\calibration\`|
+|Ficheiro de calibração não encontrado|Caminho errado<br>|Verifique `%USERPROFILE%\.cache\huggingface\lerobot\calibration\`|
 |A porta série não abre|Número COM errado|Use `lerobot-find-port` para confirmar novamente|
 
 <RelatedProducts slugs="so-arm101,amazinghand" />

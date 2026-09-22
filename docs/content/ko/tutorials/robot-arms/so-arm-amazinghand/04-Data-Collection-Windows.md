@@ -46,7 +46,7 @@ lerobot-record --robot.type=so101_amazing_hand --robot.port=<follower_arm_com> -
 
 > **💡 설명**：
 
-- `--dataset.root=D:\lerobot_data`：데이터셋을 지정한 **로컬 경로**에 저장하며, **HF 로그인이 필요 없습니다**(작성하지 않으면 기본적으로 `%USERPROFILE%.cache\huggingface\lerobot\datasets...`에 저장됩니다).
+- `--dataset.root=D:\lerobot_data`：데이터셋을 지정한 **로컬 경로**에 저장하며, **HF 로그인이 필요 없습니다**(작성하지 않으면 기본적으로 `%USERPROFILE%\.cache\huggingface\lerobot\datasets...`에 저장됩니다).
 
 - `--dataset.push_to_hub=false`：**업로드를 비활성화**합니다(기본적으로 HF로 푸시를 시도하며 로그인이 필요합니다). 데이터셋을 공유해야 할 때만 `true`로 변경합니다.
 

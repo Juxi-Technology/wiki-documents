@@ -18,7 +18,7 @@ description: "Fusion360 온라인 CAD에서 정확한 부품 위치를 시각화
 
 ![image – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/1.jpg)
 
-![image – 2](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/10.jpg)
+![image – 2](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/2.jpg)
 
 
 
@@ -26,27 +26,27 @@ description: "Fusion360 온라인 CAD에서 정확한 부품 위치를 시각화
 
 2. 12개의 **M3x16 기계 나사와 12개의** 로 구동 모터 브래킷을 바닥판에 고정합니다.
 
-![image – 3](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/11.jpg)
+![image – 3](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/3.jpg)
 
 
 
 3. 82mm 전방향 휠의 기계 나사와 너트를 분리합니다
 
-![image – 4](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/12.jpg)
+![image – 4](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/4.jpg)
 
 
 
 4. m3*6 나사로 서보 혼을 서보에 고정합니다
 
-![image – 5](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/13.jpg)
+![image – 5](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/5.jpg)
 
 
 
 5. 4개의 풀림 방지 너트를 커플링에 넣고 4개의 m3*6 나사로 커플링을 서보 혼에 고정합니다
 
-![image – 6](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/14.jpg)
+![image – 6](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/6.jpg)
 
-![image – 7](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/15.jpg)
+![image – 7](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/7.jpg)
 
 
 
@@ -56,11 +56,11 @@ description: "Fusion360 온라인 CAD에서 정확한 부품 위치를 시각화
 
 3개의 휠을 모두 바닥판에 장착한 후:
 
-![image – 8](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/16.jpg)
+![image – 8](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/8.jpg)
 
-![image – 9](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/17.jpg)
+![image – 9](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/9.jpg)
 
-![image – 10](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/18.jpg)
+![image – 10](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/10.jpg)
 
 
 
@@ -72,9 +72,9 @@ description: "Fusion360 온라인 CAD에서 정확한 부품 위치를 시각화
 
 1. M3 너트를 서보 드라이버 보드와 배터리 장착 시트의 구멍에 삽입합니다. 4개의 M3x12 기계 나사로 둘을 바닥판에 고정합니다.
 
-![image – 11](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/19.jpg)
+![image – 11](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/11.jpg)
 
-![image – 12](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/2.jpg)
+![image – 12](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/12.jpg)
 
 
 
@@ -101,17 +101,17 @@ description: "Fusion360 온라인 CAD에서 정확한 부품 위치를 시각화
 
 케이블은 아래 그림처럼 연결할 수 있습니다:
 
-![image – 13](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/20.jpg)
+![image – 13](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/13.jpg)
 
-![image – 14](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/21.jpg)
+![image – 14](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/14.jpg)
 
-![image – 15](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/22.jpg)
+![image – 15](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/15.jpg)
 
-![image – 16](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/3.jpg)
+![image – 16](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/16.jpg)
 
-![image – 17](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/4.jpg)
+![image – 17](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/17.jpg)
 
-![image – 18](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/5.jpg)
+![image – 18](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/18.jpg)
 
 
 
@@ -120,7 +120,7 @@ description: "Fusion360 온라인 CAD에서 정확한 부품 위치를 시각화
 1. 라즈베리파이 5를 라즈베리파이 케이스 하단에 넣고 케이스 상단을 끼웁니다.
 2. 2개의 M3x12 기계 나사와 2개의 M3 풀림 방지 너트로 라즈베리파이를 상부 바닥판에 고정하고, 4개의 M4x25 기계 나사와 4개의 M4 풀림 방지 너트로 SO-101 로봇팔 베이스를 설치합니다. 개량된 SO-101 베이스든 정품 베이스든 상관없습니다. 바닥판에 두 베이스용 장착 구멍이 모두 준비되어 있기 때문입니다.
 
-![image – 19](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/6.jpg)
+![image – 19](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/19.jpg)
 
 
 
@@ -128,13 +128,13 @@ description: "Fusion360 온라인 CAD에서 정확한 부품 위치를 시각화
 
 1. 서보 드라이버 보드의 USB-C to USB-A 케이블, 5V USB-C 전원 케이블, SO0-101 서보 케이블을 상부 바닥판의 구멍으로 통과시킵니다.
 
-![image – 20](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/7.jpg)
+![image – 20](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/20.jpg)
 
 
 
 2. 6개의 m3x12 기계 나사와 6개의 m3 풀림 방지 너트로 상부 바닥판을 모터 브래킷에 설치합니다.
 
-![image – 21](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/8.jpg)
+![image – 21](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/21.jpg)
 
 
 
@@ -158,7 +158,7 @@ description: "Fusion360 온라인 CAD에서 정확한 부품 위치를 시각화
 DC 원통형 플러그 어댑터를 서보 드라이버 보드에 꽂고 5V USB-C 커넥터를 라즈베리파이 5에 꽂으면 전자 장치에 전원이 공급됩니다. 서보 드라이버 보드와 카메라의 USB 데이터 케이블은 라즈베리파이에 직접 꽂을 수 있습니다.
 
 
-![Option 2 Install an arm-mounted camera – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/9.jpg)
+![Option 2 Install an arm-mounted camera – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/22.jpg)
 
 
 

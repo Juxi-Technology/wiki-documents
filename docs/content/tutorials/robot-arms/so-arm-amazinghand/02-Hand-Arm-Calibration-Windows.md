@@ -55,7 +55,7 @@ lerobot-calibrate --teleop.type=so101_leader --teleop.port=<leader_arm_com> --te
 
 > **⚠️ Note 2 (free movement)**: During calibration, the arm must be able to move freely; make sure the servos are unloaded.
 
-> **⚠️ Note 3 (calibration file location)**: On Windows the path is the user directory `%USERPROFILE%.cache\huggingface\lerobot\calibration\`.
+> **⚠️ Note 3 (calibration file location)**: On Windows the path is the user directory `%USERPROFILE%\.cache\huggingface\lerobot\calibration\`.
 
 ---
 
@@ -148,7 +148,7 @@ Once this stage is complete, proceed to Stage 3: Teleoperation.
 |Leader arm calibration reports a 2307 model error|Arm bus polluted / serial port conflict<br>|Confirm the hand's serial port is not connected at the same time; in this project the hand uses rustypot, which avoids this|
 |No GUI pops up for hand calibration|Wrong command used|You must use `lerobot-calibrate-amazing-hand` (not `lerobot-calibrate`)|
 |Hand driver reports `Operation timed out`|Serial port busy / timing|Confirm the hand's serial port is not occupied, then retry|
-|Calibration file not found|Wrong path<br>|Check `%USERPROFILE%.cache\huggingface\lerobot\calibration\`|
+|Calibration file not found|Wrong path<br>|Check `%USERPROFILE%\.cache\huggingface\lerobot\calibration\`|
 |Serial port won't open|Wrong COM number|Reconfirm with `lerobot-find-port`|
 
 <RelatedProducts slugs="so-arm101,amazinghand" />
