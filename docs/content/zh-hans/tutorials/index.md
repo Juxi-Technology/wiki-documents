@@ -19,6 +19,26 @@ head:
 - [ROS 入门](/zh-hans/tutorials/ros-intro)
 - [飞书文档](/zh-hans/tutorials/lark-wiki)
 
+
+### Jetson AGX Orin 开发者套件
+
+- [快速开始](/zh-hans/tutorials/jetson-agx-orin/quick-start)
+- [刷机与更新](/zh-hans/tutorials/jetson-agx-orin/flashing-and-updates)
+- [验证你的系统](/zh-hans/tutorials/jetson-agx-orin/verify-your-system)
+- [接口与硬件布局](/zh-hans/tutorials/jetson-agx-orin/interfaces)
+- [产品概述](/zh-hans/tutorials/jetson-agx-orin/overview)
+- [本地 LLM 推理](/zh-hans/tutorials/jetson-agx-orin/local-llm)
+- [智能体 AI (NemoClaw)](/zh-hans/tutorials/jetson-agx-orin/agentic-ai)
+- [DeepStream 视频分析](/zh-hans/tutorials/jetson-agx-orin/deepstream)
+- [机器人(现状)](/zh-hans/tutorials/jetson-agx-orin/robotics)
+- [内存效率](/zh-hans/tutorials/jetson-agx-orin/memory-efficiency)
+- [从 JetPack 6.x 迁移](/zh-hans/tutorials/jetson-agx-orin/jetpack-6-to-7)
+- [下载](/zh-hans/tutorials/jetson-agx-orin/downloads)
+- [常见问题 FAQ](/zh-hans/tutorials/jetson-agx-orin/faq)
+- [故障排查](/zh-hans/tutorials/jetson-agx-orin/troubleshooting)
+- [术语表](/zh-hans/tutorials/jetson-agx-orin/glossary)
+- [更新日志](/zh-hans/tutorials/jetson-agx-orin/changelog)
+
 ### 学习资源
 
 - [学习资源首页](/zh-hans/tutorials/learning-resources/)

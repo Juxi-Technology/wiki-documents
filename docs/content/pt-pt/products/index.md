@@ -47,6 +47,10 @@ outline: false
     <span class="pc-title">Câmara CSI IMX219 79°</span>
     <p class="pc-desc">Câmara CSI IMX219 79° da Juxi Technology — 8MP nativa CSI-2, FOV 77°, visão de baixa latência par…</p>
   </a>
+  <a :href="withBase('/pt-pt/products/jetson-agx-orin-devkit')" class="category-card">
+    <span class="pc-title">Kit de Desenvolvedor Jetson AGX Orin (64GB)</span>
+    <p class="pc-desc">Kit de Desenvolvedor NVIDIA Jetson AGX Orin (64GB) — até 275 TOPS de IA na borda, pré-gravado…</p>
+  </a>
   <a :href="withBase('/pt-pt/products/jetson-orin-nx-super-kit')" class="category-card">
     <span class="pc-title">Kit de Desenvolvedor Jetson Orin NX Super</span>
     <p class="pc-desc">Kit de desenvolvedor NVIDIA Jetson Orin NX SUPER da Juxi Technology — plataforma de IA de borda 1…</p>

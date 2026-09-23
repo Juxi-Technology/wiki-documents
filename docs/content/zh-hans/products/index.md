@@ -47,6 +47,10 @@ outline: false
     <span class="pc-title">79° IMX219 CSI 摄像头</span>
     <p class="pc-desc">钜犀科技 79° IMX219 CSI 摄像头——800 万像素原生 CSI 接口,77° FOV,NVIDIA Jetson 低延迟视觉</p>
   </a>
+  <a :href="withBase('/zh-hans/products/jetson-agx-orin-devkit')" class="category-card">
+    <span class="pc-title">Jetson AGX Orin 开发者套件(64GB)</span>
+    <p class="pc-desc">NVIDIA Jetson AGX Orin 开发者套件(64GB)——最高 275 TOPS 的边缘 AI 算力，出厂预烧录、开箱即用，并附钜犀科技提供的完整 JetPack 7.2 文档</p>
+  </a>
   <a :href="withBase('/zh-hans/products/jetson-orin-nx-super-kit')" class="category-card">
     <span class="pc-title">Jetson Orin NX Super 开发套件</span>
     <p class="pc-desc">钜犀科技 NVIDIA Jetson Orin NX SUPER 开发套件——117/157 TOPS 边缘 AI 计算平台,预装 Ubuntu 22.04 与 256GB NVMe SSD</p>

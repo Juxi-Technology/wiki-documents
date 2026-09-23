@@ -47,6 +47,10 @@ outline: false
     <span class="pc-title">79° IMX219 CSI 카메라</span>
     <p class="pc-desc">Juxi Technology 79° IMX219 CSI 카메라 — 800만 화소 네이티브 CSI 인터페이스, 77° FOV, NVIDIA Jetson 저지연 비전</p>
   </a>
+  <a :href="withBase('/ko/products/jetson-agx-orin-devkit')" class="category-card">
+    <span class="pc-title">Jetson AGX Orin 개발자 키트(64GB)</span>
+    <p class="pc-desc">NVIDIA Jetson AGX Orin 개발자 키트(64GB) — 최대 275 TOPS의 엣지 AI 성능, 사전 플래싱되어 개봉 즉시 사용 가능하며, Juxi Technology의 완전한 JetPack 7.2 문서를 제공합니다.</p>
+  </a>
   <a :href="withBase('/ko/products/jetson-orin-nx-super-kit')" class="category-card">
     <span class="pc-title">Jetson Orin NX Super 개발 키트</span>
     <p class="pc-desc">Juxi Technology NVIDIA Jetson Orin NX SUPER 개발 키트 — 117/157 TOPS 엣지 AI 컴퓨팅 플랫폼, Ubuntu 22.04 및 256GB NVM…</p>

@@ -19,6 +19,26 @@ Bem-vindo à página de Tutoriais! Aqui você encontra todos os tutoriais de uso
 - [Introdução ao ROS](/pt-pt/tutorials/ros-intro)
 - [Docs Lark](/pt-pt/tutorials/lark-wiki)
 
+
+### Kit de Desenvolvedor Jetson AGX Orin
+
+- [Início rápido](/pt-pt/tutorials/jetson-agx-orin/quick-start)
+- [Gravação e atualizações](/pt-pt/tutorials/jetson-agx-orin/flashing-and-updates)
+- [Verificar o sistema](/pt-pt/tutorials/jetson-agx-orin/verify-your-system)
+- [Interfaces e layout do hardware](/pt-pt/tutorials/jetson-agx-orin/interfaces)
+- [Visão geral do produto](/pt-pt/tutorials/jetson-agx-orin/overview)
+- [Inferência local de LLM](/pt-pt/tutorials/jetson-agx-orin/local-llm)
+- [IA agêntica (NemoClaw)](/pt-pt/tutorials/jetson-agx-orin/agentic-ai)
+- [Análise de vídeo com DeepStream](/pt-pt/tutorials/jetson-agx-orin/deepstream)
+- [Robótica (ponto de situação)](/pt-pt/tutorials/jetson-agx-orin/robotics)
+- [Eficiência de memória](/pt-pt/tutorials/jetson-agx-orin/memory-efficiency)
+- [Migrar do JetPack 6.x](/pt-pt/tutorials/jetson-agx-orin/jetpack-6-to-7)
+- [Downloads](/pt-pt/tutorials/jetson-agx-orin/downloads)
+- [FAQ](/pt-pt/tutorials/jetson-agx-orin/faq)
+- [Resolução de problemas](/pt-pt/tutorials/jetson-agx-orin/troubleshooting)
+- [Glossário](/pt-pt/tutorials/jetson-agx-orin/glossary)
+- [Registo de alterações](/pt-pt/tutorials/jetson-agx-orin/changelog)
+
 ### Recursos de Aprendizado
 
 - [Recursos de Aprendizado](/pt-pt/tutorials/learning-resources/)

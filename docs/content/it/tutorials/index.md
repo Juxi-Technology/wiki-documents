@@ -15,6 +15,26 @@ Benvenuto nella pagina dei tutorial! Qui puoi trovare tutti i tutorial d'uso dei
 - [Introduzione a ROS](/it/tutorials/ros-intro)
 - [Lark Wiki](/it/tutorials/lark-wiki)
 
+
+### Kit di sviluppo Jetson AGX Orin
+
+- [Avvio rapido — Dall'unboxing a un sistema JetPack 7.2.1 funzionante](/it/tutorials/jetson-agx-orin/quick-start)
+- [Flashing e aggiornamenti — Opzioni di installazione del BSP](/it/tutorials/jetson-agx-orin/flashing-and-updates)
+- [Verificare il sistema — versioni e checklist dei componenti](/it/tutorials/jetson-agx-orin/verify-your-system)
+- [Interfacce e layout hardware](/it/tutorials/jetson-agx-orin/interfaces)
+- [Panoramica del prodotto — Kit di sviluppo Jetson AGX Orin](/it/tutorials/jetson-agx-orin/overview)
+- [Eseguire LLM in locale — TensorRT Edge-LLM su JetPack 7.2](/it/tutorials/jetson-agx-orin/local-llm)
+- [IA agentica — NemoClaw su JetPack 7.2](/it/tutorials/jetson-agx-orin/agentic-ai)
+- [Analisi video multi-stream — DeepStream 9.1](/it/tutorials/jetson-agx-orin/deepstream)
+- [Robotica su JetPack 7.2 — cosa funziona oggi](/it/tutorials/jetson-agx-orin/robotics)
+- [Efficienza della memoria — Carichi di lavoro più grandi su 64GB](/it/tutorials/jetson-agx-orin/memory-efficiency)
+- [Migrazione da JetPack 6.x a JetPack 7.2](/it/tutorials/jetson-agx-orin/jetpack-6-to-7)
+- [Download e link ufficiali](/it/tutorials/jetson-agx-orin/downloads)
+- [FAQ](/it/tutorials/jetson-agx-orin/faq)
+- [Risoluzione dei problemi](/it/tutorials/jetson-agx-orin/troubleshooting)
+- [Glossario](/it/tutorials/jetson-agx-orin/glossary)
+- [Registro delle modifiche](/it/tutorials/jetson-agx-orin/changelog)
+
 ### Risorse didattiche
 
 - [Risorse didattiche](/it/tutorials/learning-resources/)

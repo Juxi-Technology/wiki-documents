@@ -6,6 +6,8 @@ keywords: [jetson, jetpack, gravação, configuração de sistema, nvidia]
 
 # Flasheamento JetPack e Configuração do Sistema
 
+> 📌 Usando o kit oficial Jetson AGX Orin (JetPack 7.2)? Veja a série dedicada: [Início rápido](/pt-br/tutorials/jetson-agx-orin/quick-start).
+
 > Para desenvolvedores novos no NVIDIA Jetson. Os kits de desenvolvimento Jetson da Juxi Technology vêm com Ubuntu 22.04 pré-instalado — este guia é para regravar ou trocar versões do JetPack.
 
 ## 1. O que é o JetPack?

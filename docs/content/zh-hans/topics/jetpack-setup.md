@@ -6,6 +6,8 @@ keywords: [jetson, jetpack, 刷机, 系统配置, nvidia]
 
 # JetPack 刷机与系统配置
 
+> 📌 用 Jetson AGX Orin 官方套件(JetPack 7.2)?见专属系列:[快速开始](/zh-hans/tutorials/jetson-agx-orin/quick-start)。
+
 > 面向首次接触 NVIDIA Jetson 平台的开发者。钜犀科技 Jetson 开发套件出厂已预装 Ubuntu 22.04,本文档用于重装系统或更换 JetPack 版本时参考。
 
 ## 1. JetPack 是什么?

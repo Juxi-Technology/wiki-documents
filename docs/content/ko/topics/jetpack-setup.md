@@ -6,6 +6,8 @@ keywords: [jetson, jetpack, 플래싱, 시스템 설정, nvidia]
 
 # JetPack 플래싱 및 시스템 설정
 
+> 📌 Jetson AGX Orin 공식 개발자 키트(JetPack 7.2)를 사용하시나요? 전용 시리즈를 참고하십시오: [빠른 시작](/ko/tutorials/jetson-agx-orin/quick-start).
+
 > NVIDIA Jetson 플랫폼을 처음 접하는 개발자용. JUXI Jetson 개발 키트는 출고 시 Ubuntu 22.04가 사전 설치되어 있습니다. 본 문서는 OS 재설치 또는 JetPack 버전 변경 시 참고용입니다.
 
 ## 1. JetPack이란?

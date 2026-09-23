@@ -15,6 +15,26 @@ description: "Juxi Technology Wiki のチュートリアル一覧。ロボット
 - [ROS 入門](/ja/tutorials/ros-intro)
 - [Lark Wiki](/ja/tutorials/lark-wiki)
 
+
+### Jetson AGX Orin 開発キット
+
+- [クイックスタート](/ja/tutorials/jetson-agx-orin/quick-start)
+- [書き込みと更新](/ja/tutorials/jetson-agx-orin/flashing-and-updates)
+- [システムの確認](/ja/tutorials/jetson-agx-orin/verify-your-system)
+- [インターフェース & ハードウェアレイアウト](/ja/tutorials/jetson-agx-orin/interfaces)
+- [製品概要](/ja/tutorials/jetson-agx-orin/overview)
+- [ローカル LLM 推論](/ja/tutorials/jetson-agx-orin/local-llm)
+- [エージェント型 AI(NemoClaw)](/ja/tutorials/jetson-agx-orin/agentic-ai)
+- [DeepStream 映像解析](/ja/tutorials/jetson-agx-orin/deepstream)
+- [ロボティクス(現状)](/ja/tutorials/jetson-agx-orin/robotics)
+- [メモリ効率](/ja/tutorials/jetson-agx-orin/memory-efficiency)
+- [JetPack 6.x からの移行](/ja/tutorials/jetson-agx-orin/jetpack-6-to-7)
+- [ダウンロード](/ja/tutorials/jetson-agx-orin/downloads)
+- [FAQ](/ja/tutorials/jetson-agx-orin/faq)
+- [トラブルシューティング](/ja/tutorials/jetson-agx-orin/troubleshooting)
+- [用語集](/ja/tutorials/jetson-agx-orin/glossary)
+- [変更履歴](/ja/tutorials/jetson-agx-orin/changelog)
+
 ### 学習リソース
 
 - [学習リソース](/ja/tutorials/learning-resources/)

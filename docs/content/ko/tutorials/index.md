@@ -15,6 +15,26 @@ description: "Juxi Technology 튜토리얼 — 로봇 암과 액세서리, 센�
 - [ROS 입문](/ko/tutorials/ros-intro)
 - [Lark Wiki](/ko/tutorials/lark-wiki)
 
+
+### Jetson AGX Orin
+
+- [빠른 시작](/ko/tutorials/jetson-agx-orin/quick-start)
+- [플래싱 및 업데이트](/ko/tutorials/jetson-agx-orin/flashing-and-updates)
+- [시스템 검증](/ko/tutorials/jetson-agx-orin/verify-your-system)
+- [인터페이스 & 하드웨어 레이아웃](/ko/tutorials/jetson-agx-orin/interfaces)
+- [제품 개요](/ko/tutorials/jetson-agx-orin/overview)
+- [로컬 LLM 추론](/ko/tutorials/jetson-agx-orin/local-llm)
+- [에이전트 AI (NemoClaw)](/ko/tutorials/jetson-agx-orin/agentic-ai)
+- [DeepStream 영상 분석](/ko/tutorials/jetson-agx-orin/deepstream)
+- [로보틱스(현황)](/ko/tutorials/jetson-agx-orin/robotics)
+- [메모리 효율](/ko/tutorials/jetson-agx-orin/memory-efficiency)
+- [JetPack 6.x에서 마이그레이션](/ko/tutorials/jetson-agx-orin/jetpack-6-to-7)
+- [다운로드](/ko/tutorials/jetson-agx-orin/downloads)
+- [FAQ](/ko/tutorials/jetson-agx-orin/faq)
+- [문제 해결](/ko/tutorials/jetson-agx-orin/troubleshooting)
+- [용어집](/ko/tutorials/jetson-agx-orin/glossary)
+- [변경 이력](/ko/tutorials/jetson-agx-orin/changelog)
+
 ### 학습 리소스
 
 - [학습 리소스](/ko/tutorials/learning-resources/)

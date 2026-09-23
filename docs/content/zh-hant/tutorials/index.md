@@ -19,6 +19,26 @@ head:
 - [ROS 入門](/zh-hant/tutorials/ros-intro)
 - [飛書文檔](/zh-hant/tutorials/lark-wiki)
 
+
+### Jetson AGX Orin 開發套件
+
+- [快速開始](/zh-hant/tutorials/jetson-agx-orin/quick-start)
+- [刷機與更新](/zh-hant/tutorials/jetson-agx-orin/flashing-and-updates)
+- [驗證你的系統](/zh-hant/tutorials/jetson-agx-orin/verify-your-system)
+- [接口與硬件佈局](/zh-hant/tutorials/jetson-agx-orin/interfaces)
+- [產品概述](/zh-hant/tutorials/jetson-agx-orin/overview)
+- [本地 LLM 推論](/zh-hant/tutorials/jetson-agx-orin/local-llm)
+- [智能體 AI (NemoClaw)](/zh-hant/tutorials/jetson-agx-orin/agentic-ai)
+- [DeepStream 視頻分析](/zh-hant/tutorials/jetson-agx-orin/deepstream)
+- [機器人(現狀)](/zh-hant/tutorials/jetson-agx-orin/robotics)
+- [記憶體效率](/zh-hant/tutorials/jetson-agx-orin/memory-efficiency)
+- [從 JetPack 6.x 遷移](/zh-hant/tutorials/jetson-agx-orin/jetpack-6-to-7)
+- [下載](/zh-hant/tutorials/jetson-agx-orin/downloads)
+- [常見問題 FAQ](/zh-hant/tutorials/jetson-agx-orin/faq)
+- [故障排除](/zh-hant/tutorials/jetson-agx-orin/troubleshooting)
+- [術語表](/zh-hant/tutorials/jetson-agx-orin/glossary)
+- [更新日誌](/zh-hant/tutorials/jetson-agx-orin/changelog)
+
 ### 學習資源
 
 - [學習資源首頁](/zh-hant/tutorials/learning-resources/)

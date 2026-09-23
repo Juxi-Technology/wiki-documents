@@ -6,6 +6,8 @@ keywords: [jetson, jetpack, フラッシュ, システム設定, nvidia]
 
 # JetPack フラッシングとシステム設定
 
+> 📌 Jetson AGX Orin 公式キット(JetPack 7.2)をお使いですか?専用シリーズはこちら:[クイックスタート](/ja/tutorials/jetson-agx-orin/quick-start)。
+
 > NVIDIA Jetson プラットフォームに初めて触れる開発者向け。JUXI Jetson 開発キットは出荷時に Ubuntu 22.04 がプリインストールされています。本ドキュメントは OS 再インストールや JetPack バージョン変更時の参考用です。
 
 ## 1. JetPack とは?

@@ -6,6 +6,8 @@ keywords: [jetson, jetpack, flashing, systemkonfiguration, nvidia]
 
 # JetPack-Flashing und Systemkonfiguration
 
+> 📌 Sie verwenden das Jetson AGX Orin Developer Kit (JetPack 7.2)? Dann sehen Sie sich die dedizierte Serie an: [Schnellstart](/de/tutorials/jetson-agx-orin/quick-start).
+
 > Für Entwickler, die zum ersten Mal mit der NVIDIA-Jetson-Plattform arbeiten. JUXI-Jetson-Kits werden mit Ubuntu 22.04 ausgeliefert. Dieses Dokument dient der Referenz bei Neuinstallation oder JetPack-Wechsel.
 
 ## 1. Was ist JetPack?

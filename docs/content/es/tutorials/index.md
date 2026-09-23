@@ -19,6 +19,26 @@ head:
 - [Introducción a ROS](/es/tutorials/ros-intro)
 - [Lark Wiki](/es/tutorials/lark-wiki)
 
+
+### Kit de desarrollo Jetson AGX Orin
+
+- [Inicio rápido](/es/tutorials/jetson-agx-orin/quick-start)
+- [Flasheo y actualizaciones](/es/tutorials/jetson-agx-orin/flashing-and-updates)
+- [Verificación del sistema](/es/tutorials/jetson-agx-orin/verify-your-system)
+- [Interfaces y disposición del hardware](/es/tutorials/jetson-agx-orin/interfaces)
+- [Descripción general del producto](/es/tutorials/jetson-agx-orin/overview)
+- [Inferencia LLM local](/es/tutorials/jetson-agx-orin/local-llm)
+- [IA agéntica (NemoClaw)](/es/tutorials/jetson-agx-orin/agentic-ai)
+- [Análisis de video con DeepStream](/es/tutorials/jetson-agx-orin/deepstream)
+- [Robótica (estado actual)](/es/tutorials/jetson-agx-orin/robotics)
+- [Eficiencia de memoria](/es/tutorials/jetson-agx-orin/memory-efficiency)
+- [Migrar desde JetPack 6.x](/es/tutorials/jetson-agx-orin/jetpack-6-to-7)
+- [Descargas](/es/tutorials/jetson-agx-orin/downloads)
+- [Preguntas frecuentes](/es/tutorials/jetson-agx-orin/faq)
+- [Solución de problemas](/es/tutorials/jetson-agx-orin/troubleshooting)
+- [Glosario](/es/tutorials/jetson-agx-orin/glossary)
+- [Registro de cambios](/es/tutorials/jetson-agx-orin/changelog)
+
 ### Recursos didácticos
 
 - [Recursos didácticos](/es/tutorials/learning-resources/)
