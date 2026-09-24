@@ -1,9 +1,12 @@
-// 链接书写形态检查(CI 用):只查两类「静默坏链」——它们不报错,但用户点不到:
+// 链接书写形态检查(CI 用):只查三类「静默坏链」——它们不报错,但用户点不到或点到别的站:
 //   ① 空文本链接:[](url) / [ ](url) → 渲染成看不见的链接(无障碍也读不出)
 //      ※ 链接文字是行内代码的写法(如 [`https://x`](https://x))是**合法**的,判据里要排除
 //   ② 目标含裸空格:[](/a b.md) → markdown 在空格处截断,链接退化成纯文本或指向错路径
 //      (站内托管文件的正确写法是 %20,见 check:downloads)
-// 2026-09-19 第九轮全局检查就是靠人工扫才发现这两类(各 1 / 6 处),故固化为闸门。
+//   ③ 目标以 // 开头(协议相对):[](//zh-hans/x) → 浏览器按「协议 + 主机」解析,
+//      把首段 zh-hans 当**主机名**去查 DNS → DNS_PROBE_FINISHED_NXDOMAIN。
+//      check:links 第 55 行对 `//` 开头直接 continue,故这条只能在本闸门兜底。
+// 2026-09-19 第九轮全局检查就是靠人工扫才发现前两类(各 1 / 6 处),故固化为闸门。
 // 用法:node scripts/check-linkformat.mjs [rootDir]
 import fs from 'node:fs'
 import path from 'node:path'
@@ -30,6 +33,7 @@ for (const l of LOCS) rec(path.join(CONTENT, l), false)
 
 const emptyText = []
 const spacedDest = []
+const protoRelative = []
 let total = 0
 for (const f of files) {
   const rel = path.relative(root, f)
@@ -40,6 +44,7 @@ for (const f of files) {
     const label = m[1], dest = m[2]
     if (/^[\s`]*$/.test(label)) emptyText.push({ rel, hit: m[0].slice(0, 70) })
     if (/ /.test(dest) && !/^</.test(dest) && !/["']/.test(dest)) spacedDest.push({ rel, dest })
+    if (/^\/\//.test(dest)) protoRelative.push({ rel, dest })
   }
 }
 
@@ -54,8 +59,13 @@ if (spacedDest.length) {
   console.error(`[linkfmt] ${spacedDest.length} link target(s) with a raw space — markdown 会在空格处截断:`)
   for (const x of spacedDest.slice(0, 20)) console.error(`  ${x.rel} → ${x.dest}`)
 }
+if (protoRelative.length) {
+  failed = true
+  console.error(`[linkfmt] ${protoRelative.length} protocol-relative target(s) — 浏览器会把首段当主机名,点开必然 DNS 失败:`)
+  for (const x of protoRelative.slice(0, 20)) console.error(`  ${x.rel} → ${x.dest}`)
+}
 if (failed) {
-  console.error('\n  修法:空文本链接补上文字(或删掉多余的重复链接);目标里的空格写作 %20。')
+  console.error('\n  修法:空文本链接补上文字(或删掉多余的重复链接);目标里的空格写作 %20;站内链接一律以单个 / 开头。')
   process.exit(1)
 }
-console.log(`[linkfmt] all ${total} markdown links have non-empty text and space-free targets`)
+console.log(`[linkfmt] all ${total} markdown links have non-empty text, space-free targets and absolute (single-slash) paths`)
