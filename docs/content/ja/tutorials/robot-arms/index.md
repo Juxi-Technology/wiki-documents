@@ -22,7 +22,6 @@ description: "Juxi Technologyロボットアームシリーズチュートリア
 - [SO-ARM101 Jetson Orin PyTorch 互換性](./so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility.md)
 - [SO-ARM101 ワイヤレス遠隔操作(ESP32-NanoCam 版)](./so-arm101/SO-ARM101-NanoCam-Wireless-Teleop.md)
 - [SO-ARM101 デュアルアーム(デュアルフォロワー)チュートリアル](./so-arm101/SO-ARM101-Bi-Arm-Tutorial.md)
-- [SO-ARM101 7-DOF 改造と LeRobot 使用](./so-arm101/SO-ARM101-7DOF-LeRobot.md)
 - [SoARM シリーズ サーボキャリブレーションツール](./so-arm101/SO-ARM101-Servo-Calibration-Tool.md)
 
 #### SO-ARM101 シリーズ
@@ -90,6 +89,64 @@ description: "Juxi Technologyロボットアームシリーズチュートリア
 #### その他・応用
 - [ROS2シミュレーション制御](./so-arm101/ROS2-Simulation-Control.md)
 - [平行指グリッパー取り付けチュートリアル](./so-arm101/Parallel-Finger-Gripper-Installation.md)
+
+
+### SO-ARM101 ロボットアーム 7軸 チュートリアル
+
+- [SO-ARM101 ロボットアーム 7軸 チュートリアル](/tutorials/robot-arms/so-arm101/lerobot-7dof/)
+- **1. LeRobot環境のインストール**
+  - [Ubuntuコンピューター](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/01-Environment-Setup/Ubuntu)
+  - [Windowsコンピューター](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/01-Environment-Setup/Windows)
+  - [MACコンピューター](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/01-Environment-Setup/MacOS)
+- **2. ファイルの置き換え（7DOF 対応）**
+  - [ファイルの置き換え（7DOF 対応）](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/02-Replace-Files-7DOF)
+- **3. シリアルポート番号の確認**
+  - [Ubuntu](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/03-Serial-Port/Ubuntu)
+  - [Windowsコンピューター](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/03-Serial-Port/Windows)
+  - [MACコンピューター](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/03-Serial-Port/MacOS)
+- **4. ロボットアームのキャリブレーション**
+  - [Ubuntuコンピューター](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/04-Calibration/Ubuntu)
+  - [Windowsコンピューター](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/04-Calibration/Windows)
+  - [Macコンピューター](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/04-Calibration/MacOS)
+- **5. テレオペレーション**
+  - [Ubuntuコンピューター](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/05-Teleoperation/Ubuntu)
+  - [Windowsコンピューター](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/05-Teleoperation/Windows)
+  - [Macコンピューター](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/05-Teleoperation/MacOS)
+- **6. カメラ付きテレオペレーション**
+  - [Ubuntuコンピューター](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/06-Camera-Teleoperation/Ubuntu)
+  - [Windowsコンピューター](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/06-Camera-Teleoperation/Windows)
+  - [Macコンピューター](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/06-Camera-Teleoperation/MacOS)
+- **7. データセット収集（実機）**
+  - [データセットの確認・リプレイ](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/Browse-and-Replay)
+  - [データセット収集の注意事項](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/Collection-Notes)
+  - [Hugging Faceアカウントの登録（任意）](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/HF-Account)
+  - [データセットをHuggingFaceにアップロード（任意）](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/HF-Dataset-Upload)
+  - [教示によるデータセット収集-握手200](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/Teaching-and-Recording-Handshake-200)
+  - [教示によるデータセット収集](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/Teaching-and-Recording)
+- **8. モデルの訓練**
+  - [クラウドGPU訓練環境の設定](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Cloud-GPU)
+  - [訓練コマンドライン-ACT（入門に推奨）](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-ACT)
+  - [訓練コマンドライン-Diffusion](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-Diffusion)
+  - [訓練コマンドライン-pi0.5](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-pi0.5)
+  - [訓練コマンドライン-pi0（効果が最も良い）](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-pi0)
+  - [訓練コマンドライン-pi0fast](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-pi0fast)
+  - [訓練コマンドライン-smolvla（次のステップに推奨）](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-smolvla)
+  - [モデルをHuggingFaceにアップロード（任意）](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/HF-Model-Upload)
+  - [LeRobotがサポートする模倣学習アルゴリズム](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Imitation-Learning-Algorithms)
+  - [ローカルUbuntuでの訓練](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Local-Ubuntu)
+  - [モデルの重みファイルを取得](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Model-Weights)
+  - [訓練パラメータの提案](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Training-Parameter-Tips)
+  - [wandbでリアルタイム訓練曲線を確認](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/WandB-Curves)
+- **9. モデルのデプロイ**
+  - [コマンドラインの説明](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/CLI-Reference)
+  - [推論コマンドライン-ACT](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Command-ACT)
+  - [推論コマンドライン-Diffusion](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Command-Diffusion)
+  - [推論コマンドライン-pi0.5](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Command-pi0.5)
+  - [推論コマンドライン-pi0](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Command-pi0)
+  - [推論コマンドライン-smolvla](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Command-smolvla)
+  - [よくあるBugと解決方法](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Common-Bugs)
+  - [NVIDIA DGX Spark 推論](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/DGX-Spark)
+  - [地瓜机器人（D-Robotics） RDK S100 推論](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/RDK-S100)
 
 ### AmazingHand
 

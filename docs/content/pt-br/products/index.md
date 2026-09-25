@@ -87,6 +87,10 @@ outline: false
     <span class="pc-title">Kit de Desenvolvimento SO-ARM101</span>
     <p class="pc-desc">Kit de desenvolvimento robótico de braço duplo SO-ARM101 da Juxi Technology — braços 6-DOF open…</p>
   </a>
+  <a :href="withBase('/pt-br/products/so-arm101-7dof')" class="category-card">
+    <span class="pc-title">Braço Robótico SO-ARM101 7-DOF</span>
+    <p class="pc-desc">Braço robótico open source SO-ARM101 7-DOF da Juxi Technology — guinada de 90° no punho, servos de barramento 12V</p>
+  </a>
   <a :href="withBase('/pt-br/products/tpu-flexible-gripper')" class="category-card">
     <span class="pc-title">Garra Flexível TPU SO-ARM101</span>
     <p class="pc-desc">Garra flexível TPU SO-ARM101 da Juxi Technology — TPU macio agarra com segurança itens irregulare…</p>

@@ -87,6 +87,10 @@ outline: false
     <span class="pc-title">SO-ARM101 Entwicklungs-Kit</span>
     <p class="pc-desc">Das Open-Source-Doppelarm-Robotik-Kit von Juxi Technology — 6-DOF-Arme, LeRobot-Ökosystem, Te…</p>
   </a>
+  <a :href="withBase('/de/products/so-arm101-7dof')" class="category-card">
+    <span class="pc-title">SO-ARM101 7-DOF-Roboterarm</span>
+    <p class="pc-desc">Juxi Technology SO-ARM101 7-DOF Roboterarm — 90°-Handgelenk-Gierung, 12V-Bus-Servos mit 30kg.cm, LeRobot-Integration</p>
+  </a>
   <a :href="withBase('/de/products/tpu-flexible-gripper')" class="category-card">
     <span class="pc-title">SO-ARM101 TPU-Flex-Greifer</span>
     <p class="pc-desc">Juxi Technology SO-ARM101 TPU-Flex-Greifer — weiches TPU greift unregelmäßige/zerbrechliche O…</p>

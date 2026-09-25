@@ -16,6 +16,64 @@ Bienvenue sur la page Tutoriels ! Vous y trouverez tous les tutoriels d'utilisat
 - [Lark Wiki](/fr/tutorials/lark-wiki)
 
 
+
+### Tutoriel du bras SO-ARM101 à 7 axes
+
+- [Tutoriel du bras SO-ARM101 à 7 axes](/tutorials/robot-arms/so-arm101/lerobot-7dof/)
+- **1. Installer LeRobot**
+  - [Ordinateur Ubuntu](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/01-Environment-Setup/Ubuntu)
+  - [Ordinateur Windows](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/01-Environment-Setup/Windows)
+  - [Ordinateur Mac](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/01-Environment-Setup/MacOS)
+- **2. Remplacer les fichiers (adaptation 7DOF)**
+  - [Remplacer les fichiers (adaptation 7DOF)](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/02-Replace-Files-7DOF)
+- **3. Port série**
+  - [Ubuntu](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/03-Serial-Port/Ubuntu)
+  - [Ordinateur Windows](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/03-Serial-Port/Windows)
+  - [Ordinateur Mac](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/03-Serial-Port/MacOS)
+- **4. Calibration**
+  - [Ordinateur Ubuntu](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/04-Calibration/Ubuntu)
+  - [Ordinateur Windows](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/04-Calibration/Windows)
+  - [Ordinateur Mac](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/04-Calibration/MacOS)
+- **5. Téléopération**
+  - [Ordinateur Ubuntu](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/05-Teleoperation/Ubuntu)
+  - [Ordinateur Windows](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/05-Teleoperation/Windows)
+  - [Ordinateur Mac](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/05-Teleoperation/MacOS)
+- **6. Téléop. caméra**
+  - [Ordinateur Ubuntu](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/06-Camera-Teleoperation/Ubuntu)
+  - [Ordinateur Windows](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/06-Camera-Teleoperation/Windows)
+  - [Ordinateur Mac](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/06-Camera-Teleoperation/MacOS)
+- **7. Collecte données**
+  - [Revisionner et rejouer le dataset](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/Browse-and-Replay)
+  - [Points d'attention pour la collecte de dataset](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/Collection-Notes)
+  - [Créer un compte Hugging Face (facultatif)](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/HF-Account)
+  - [Téléverser le dataset sur HuggingFace (facultatif)](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/HF-Dataset-Upload)
+  - [Collecte du dataset par démonstration - Poignée de main 200](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/Teaching-and-Recording-Handshake-200)
+  - [Collecte du dataset par démonstration](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/Teaching-and-Recording)
+- **8. Entraînement**
+  - [Configuration de l'environnement d'entraînement sur cloud GPU](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Cloud-GPU)
+  - [Commande d'entraînement - ACT (recommandé pour débuter)](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-ACT)
+  - [Commande d'entraînement - Diffusion](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-Diffusion)
+  - [Commande d'entraînement - pi0.5](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-pi0.5)
+  - [Commande d'entraînement - pi0 (meilleurs résultats)](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-pi0)
+  - [Commande d'entraînement - pi0fast](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-pi0fast)
+  - [Commande d'entraînement - smolvla (recommandé pour progresser)](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-smolvla)
+  - [Téléverser le modèle sur HuggingFace (facultatif)](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/HF-Model-Upload)
+  - [Algorithmes d'apprentissage par imitation pris en charge par LeRobot](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Imitation-Learning-Algorithms)
+  - [Entraînement local sur Ubuntu](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Local-Ubuntu)
+  - [Obtenir les fichiers de poids du modèle](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Model-Weights)
+  - [Recommandations sur les paramètres d'entraînement](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Training-Parameter-Tips)
+  - [Consulter les courbes d'entraînement en temps réel avec wandb](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/WandB-Curves)
+- **9. Inférence**
+  - [Description de la ligne de commande](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/CLI-Reference)
+  - [Commande d'inférence - ACT](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Command-ACT)
+  - [Commande d'inférence - Diffusion](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Command-Diffusion)
+  - [Commande d'inférence - pi0.5](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Command-pi0.5)
+  - [Commande d'inférence - pi0](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Command-pi0)
+  - [Commande d'inférence - smolvla](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Command-smolvla)
+  - [Bugs courants et solutions](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Common-Bugs)
+  - [Inférence sur NVIDIA DGX Spark](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/DGX-Spark)
+  - [Inférence sur D-Robotics RDK S100](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/RDK-S100)
+
 ### Kit de développement Jetson AGX Orin
 
 - [Démarrage rapide](/fr/tutorials/jetson-agx-orin/quick-start)
@@ -53,7 +111,6 @@ Bienvenue sur la page Tutoriels ! Vous y trouverez tous les tutoriels d'utilisat
     - [Téléopération sans fil SO-ARM101 (version ESP32-NanoCam)](/fr/tutorials/robot-arms/so-arm101/SO-ARM101-NanoCam-Wireless-Teleop)
     - [Dépannage de la téléopération](/fr/tutorials/robot-arms/so-arm101/SO-ARM101-NanoCam-Troubleshooting)
     - [Tutoriel SO-ARM101 bi-bras (double suiveur)](/fr/tutorials/robot-arms/so-arm101/SO-ARM101-Bi-Arm-Tutorial)
-    - [Mise à niveau 7-DOF du SO-ARM101 et utilisation avec LeRobot](/fr/tutorials/robot-arms/so-arm101/SO-ARM101-7DOF-LeRobot)
     - [Tutoriel d'utilisation de l'outil de calibration des servos de la série SoARM](/fr/tutorials/robot-arms/so-arm101/SO-ARM101-Servo-Calibration-Tool)
       - **Cours LeRobot**
         - [Présentation du cours LeRobot](/fr/tutorials/robot-arms/so-arm101/lerobot/)

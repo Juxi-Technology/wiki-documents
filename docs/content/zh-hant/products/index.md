@@ -87,6 +87,10 @@ outline: false
     <span class="pc-title">SO-ARM101 開發套件</span>
     <p class="pc-desc">鉅犀科技 SO-ARM101 雙臂機器人開發套件——6 DOF 開源機械臂,LeRobot 生態,遙操作/模仿學習/AI 研究首選</p>
   </a>
+  <a :href="withBase('/zh-hant/products/so-arm101-7dof')" class="category-card">
+    <span class="pc-title">SO-ARM101 開源七自由度機械臂</span>
+    <p class="pc-desc">鉅犀科技 SO-ARM101 開源七自由度機械臂——90° 腕部滾轉、12V 30kg.cm 總線舵機、深度集成 LeRobot、工廠組裝並附完整教程系列</p>
+  </a>
   <a :href="withBase('/zh-hant/products/tpu-flexible-gripper')" class="category-card">
     <span class="pc-title">SO-ARM101 TPU 柔性夾爪</span>
     <p class="pc-desc">鉅犀科技 SO-ARM101 TPU 柔性夾爪——軟 TPU 材質安全抓取不規則/易碎物品,支持臂載相機,可選 30FPS 變焦或 60FPS 定焦</p>

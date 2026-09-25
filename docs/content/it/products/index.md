@@ -87,6 +87,10 @@ outline: false
     <span class="pc-title">Kit di sviluppo SO-ARM101</span>
     <p class="pc-desc">Il kit robotico a doppio braccio open source di Juxi Technology — bracci 6 DOF, ecosistema Le…</p>
   </a>
+  <a :href="withBase('/it/products/so-arm101-7dof')" class="category-card">
+    <span class="pc-title">Braccio robotico SO-ARM101 7-DOF</span>
+    <p class="pc-desc">Braccio robotico open source SO-ARM101 7-DOF di Juxi Technology — imbardata del polso a 90°, servo a bus 12V 30kg.cm</p>
+  </a>
   <a :href="withBase('/it/products/tpu-flexible-gripper')" class="category-card">
     <span class="pc-title">Pinza flessibile in TPU SO-ARM101</span>
     <p class="pc-desc">Pinza flessibile TPU SO-ARM101 di Juxi Technology — presa sicura di oggetti irregolari/fragil…</p>

@@ -87,6 +87,10 @@ outline: false
     <span class="pc-title">SO-ARM101 Developer Kit</span>
     <p class="pc-desc">Juxi Technology SO-ARM101 dual-arm robot dev kit — 6-DOF open-source arms, LeRobot ecosystem,…</p>
   </a>
+  <a :href="withBase('/products/so-arm101-7dof')" class="category-card">
+    <span class="pc-title">SO-ARM101 7-DOF Robotic Arm</span>
+    <p class="pc-desc">Juxi Technology SO-ARM101 7-DOF open-source robot arm — 90° wrist roll, 12V 30kg.cm bus servos, deep LeRobot integration</p>
+  </a>
   <a :href="withBase('/products/tpu-flexible-gripper')" class="category-card">
     <span class="pc-title">SO-ARM101 TPU Flexible Gripper</span>
     <p class="pc-desc">Juxi Technology SO-ARM101 TPU flexible gripper — soft TPU safely grasps irregular/fragile ite…</p>

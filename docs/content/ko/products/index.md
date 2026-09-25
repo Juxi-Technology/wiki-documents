@@ -87,6 +87,10 @@ outline: false
     <span class="pc-title">SO-ARM101 개발 키트</span>
     <p class="pc-desc">Juxi Technology SO-ARM101 양팔 로봇 개발 키트 — 6 DOF 오픈소스 로봇 팔, LeRobot 생태계, 원격 조작/모방 학습/AI 연구의 첫 번째 선택</p>
   </a>
+  <a :href="withBase('/ko/products/so-arm101-7dof')" class="category-card">
+    <span class="pc-title">SO-ARM101 7축 로봇 암</span>
+    <p class="pc-desc">Juxi Technology SO-ARM101 7축 오픈소스 로봇 암 — 90° 손목 롤, 12V 30kg.cm 버스 서보, LeRobot 심층 연동, 공장 조립 완료 및 완전한 튜토리얼 시리즈 제공</p>
+  </a>
   <a :href="withBase('/ko/products/tpu-flexible-gripper')" class="category-card">
     <span class="pc-title">SO-ARM101 TPU 플렉서블 그리퍼</span>
     <p class="pc-desc">Juxi Technology SO-ARM101 TPU 플렉서블 그리퍼 — 부드러운 TPU 소재로 불규칙/깨지기 쉬운 물체를 안전하게 파지, 암 장착 카메라 지원, 30FPS 줌 또는 60…</p>

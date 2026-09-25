@@ -87,6 +87,10 @@ outline: false
     <span class="pc-title">SO-ARM101 開発キット</span>
     <p class="pc-desc">Juxi Technology SO-ARM101 双腕ロボット開発キット——6 DOF オープンソース機械腕、LeRobot エコシステム、遠隔操作/模倣学習/AI 研究の第一候補</p>
   </a>
+  <a :href="withBase('/ja/products/so-arm101-7dof')" class="category-card">
+    <span class="pc-title">SO-ARM101 7軸ロボットアーム</span>
+    <p class="pc-desc">Juxi Technology の SO-ARM101 7軸オープンソースロボットアーム——90° 手首ロール、12V 30kg.cm バスサーボ、LeRobot との深い統合、工場組立済みで完全なチュートリアルシリーズ付き。</p>
+  </a>
   <a :href="withBase('/ja/products/tpu-flexible-gripper')" class="category-card">
     <span class="pc-title">SO-ARM101 TPU フレキシブルグリッパー</span>
     <p class="pc-desc">Juxi Technology SO-ARM101 TPU フレキシブルグリッパー——柔らかい TPU 素材で不規則・壊れやすい物体を安全に把持、アーム搭載カメラ対応、30FPS ズーム/60FPS 固定焦点選択可</p>

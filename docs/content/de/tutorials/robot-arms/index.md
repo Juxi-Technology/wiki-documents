@@ -22,7 +22,6 @@ Willkommen zur Tutorial-Serie Roboterarme! Hier finden Sie vollständige Anleitu
 - [SO-ARM101 Jetson-Orin-PyTorch-Kompatibilität](./so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility.md)
 - [SO-ARM101 Drahtlose Teleoperation (ESP32-NanoCam-Version)](./so-arm101/SO-ARM101-NanoCam-Wireless-Teleop.md)
 - [SO-ARM101 Zweiarm-Tutorial (zwei Folgearme)](./so-arm101/SO-ARM101-Bi-Arm-Tutorial.md)
-- [SO-ARM101 7-DOF-Umbau und LeRobot-Nutzung](./so-arm101/SO-ARM101-7DOF-LeRobot.md)
 - [SoARM-Servo-Kalibrierungstool](./so-arm101/SO-ARM101-Servo-Calibration-Tool.md)
 
 #### SO-ARM101-Serie
@@ -90,6 +89,64 @@ Willkommen zur Tutorial-Serie Roboterarme! Hier finden Sie vollständige Anleitu
 #### Weitere Themen
 - [ROS2-Simulationssteuerung](./so-arm101/ROS2-Simulation-Control.md)
 - [Montageanleitung für den Parallelbacken-Greifer](./so-arm101/Parallel-Finger-Gripper-Installation.md)
+
+
+### SO-ARM101 Roboterarm 7-Achsen Tutorial
+
+- [SO-ARM101 Roboterarm 7-Achsen Tutorial](/tutorials/robot-arms/so-arm101/lerobot-7dof/)
+- **1. LeRobot-Umgebung**
+  - [Ubuntu-Computer](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/01-Environment-Setup/Ubuntu)
+  - [Windows-Computer](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/01-Environment-Setup/Windows)
+  - [Mac-Computer](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/01-Environment-Setup/MacOS)
+- **2. Dateien ersetzen (Anpassung an 7-DOF)**
+  - [Dateien ersetzen (Anpassung an 7-DOF)](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/02-Replace-Files-7DOF)
+- **3. Serielle Ports**
+  - [Ubuntu](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/03-Serial-Port/Ubuntu)
+  - [Windows-Computer](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/03-Serial-Port/Windows)
+  - [Mac-Computer](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/03-Serial-Port/MacOS)
+- **4. Kalibrierung**
+  - [Ubuntu-Computer](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/04-Calibration/Ubuntu)
+  - [Windows-Computer](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/04-Calibration/Windows)
+  - [Mac-Computer](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/04-Calibration/MacOS)
+- **5. Teleoperation**
+  - [Ubuntu-Computer](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/05-Teleoperation/Ubuntu)
+  - [Windows-Computer](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/05-Teleoperation/Windows)
+  - [Mac-Computer](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/05-Teleoperation/MacOS)
+- **6. Teleop mit Kamera**
+  - [Ubuntu-Computer](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/06-Camera-Teleoperation/Ubuntu)
+  - [Windows-Computer](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/06-Camera-Teleoperation/Windows)
+  - [Mac-Computer](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/06-Camera-Teleoperation/MacOS)
+- **7. Datenerfassung**
+  - [Datensatz ansehen und wiedergeben](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/Browse-and-Replay)
+  - [Hinweise zum Erfassen von Datensätzen](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/Collection-Notes)
+  - [Hugging Face-Konto registrieren (optional)](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/HF-Account)
+  - [Datensatz auf HuggingFace hochladen (optional)](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/HF-Dataset-Upload)
+  - [Datensatz durch Demonstration erfassen-Handschlag 200](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/Teaching-and-Recording-Handshake-200)
+  - [Datensatz durch Demonstration erfassen](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/Teaching-and-Recording)
+- **8. Modelltraining**
+  - [Cloud-GPU-Trainingsumgebung einrichten](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Cloud-GPU)
+  - [Trainingsbefehl-ACT (empfohlen für den Einstieg)](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-ACT)
+  - [Trainingsbefehl-Diffusion](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-Diffusion)
+  - [Trainingsbefehl-pi0.5](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-pi0.5)
+  - [Trainingsbefehl-pi0 (beste Ergebnisse)](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-pi0)
+  - [Trainingsbefehl-pi0fast](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-pi0fast)
+  - [Trainingsbefehl-smolvla (empfohlen für Fortgeschrittene)](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-smolvla)
+  - [Modell zu HuggingFace hochladen (optional)](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/HF-Model-Upload)
+  - [Von LeRobot unterstützte Imitation-Learning-Algorithmen](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Imitation-Learning-Algorithms)
+  - [Lokales Training unter Ubuntu](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Local-Ubuntu)
+  - [Modelldateien abrufen](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Model-Weights)
+  - [Empfehlungen für Trainingsparameter](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Training-Parameter-Tips)
+  - [Trainingskurven in Echtzeit mit wandb anzeigen](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/WandB-Curves)
+- **9. Modell-Inferenz**
+  - [Erläuterung der Befehle](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/CLI-Reference)
+  - [Inferenzbefehl-ACT](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Command-ACT)
+  - [Inferenzbefehl-Diffusion](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Command-Diffusion)
+  - [Inferenzbefehl-pi0.5](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Command-pi0.5)
+  - [Inferenzbefehl-pi0](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Command-pi0)
+  - [Inferenzbefehl-smolvla](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Command-smolvla)
+  - [Häufige Bugs und Lösungen](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Common-Bugs)
+  - [Inferenz mit dem NVIDIA DGX Spark](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/DGX-Spark)
+  - [Inferenz mit dem D-Robotics RDK S100](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/RDK-S100)
 
 ### AmazingHand
 

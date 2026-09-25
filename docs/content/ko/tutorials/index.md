@@ -16,6 +16,64 @@ description: "Juxi Technology 튜토리얼 — 로봇 암과 액세서리, 센�
 - [Lark Wiki](/ko/tutorials/lark-wiki)
 
 
+
+### SO-ARM101 로봇 암 7축 튜토리얼
+
+- [SO-ARM101 로봇 암 7축 튜토리얼](/tutorials/robot-arms/so-arm101/lerobot-7dof/)
+- **1. LeRobot 환경 설치**
+  - [Ubuntu 컴퓨터](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/01-Environment-Setup/Ubuntu)
+  - [Windows 컴퓨터](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/01-Environment-Setup/Windows)
+  - [Mac 컴퓨터](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/01-Environment-Setup/MacOS)
+- **2. 2단계: 파일 교체(7DOF 적응)**
+  - [2단계: 파일 교체(7DOF 적응)](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/02-Replace-Files-7DOF)
+- **3. 시리얼 포트 확인**
+  - [Ubuntu](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/03-Serial-Port/Ubuntu)
+  - [Windows 컴퓨터](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/03-Serial-Port/Windows)
+  - [Mac 컴퓨터](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/03-Serial-Port/MacOS)
+- **4. 로봇 암 캘리브레이션**
+  - [Ubuntu 컴퓨터](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/04-Calibration/Ubuntu)
+  - [Windows 컴퓨터](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/04-Calibration/Windows)
+  - [Mac 컴퓨터](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/04-Calibration/MacOS)
+- **5. 원격조작**
+  - [Ubuntu 컴퓨터](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/05-Teleoperation/Ubuntu)
+  - [Windows 컴퓨터](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/05-Teleoperation/Windows)
+  - [Mac 컴퓨터](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/05-Teleoperation/MacOS)
+- **6. 카메라 원격조작**
+  - [Ubuntu 컴퓨터](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/06-Camera-Teleoperation/Ubuntu)
+  - [Windows 컴퓨터](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/06-Camera-Teleoperation/Windows)
+  - [Mac 컴퓨터](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/06-Camera-Teleoperation/MacOS)
+- **7. 데이터셋 수집**
+  - [데이터셋 다시 보기, 재생](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/Browse-and-Replay)
+  - [데이터셋 수집 주의 사항](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/Collection-Notes)
+  - [Hugging Face 계정 등록(선택 사항)](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/HF-Account)
+  - [HuggingFace에 데이터셋 업로드(선택 사항)](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/HF-Dataset-Upload)
+  - [시연 데이터셋 수집-악수 200](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/Teaching-and-Recording-Handshake-200)
+  - [시연 데이터셋 수집](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/Teaching-and-Recording)
+- **8. 모델 학습**
+  - [클라우드 GPU 학습 환경 설정](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Cloud-GPU)
+  - [학습 커맨드라인-ACT(입문 추천)](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-ACT)
+  - [학습 커맨드라인-Diffusion](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-Diffusion)
+  - [학습 커맨드라인-pi0.5](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-pi0.5)
+  - [학습 커맨드라인-pi0(효과 최고)](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-pi0)
+  - [학습 커맨드라인-pi0fast](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-pi0fast)
+  - [학습 커맨드라인-smolvla(심화 추천)](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-smolvla)
+  - [HuggingFace에 모델 업로드(선택 사항)](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/HF-Model-Upload)
+  - [LeRobot이 지원하는 모방학습 알고리즘](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Imitation-Learning-Algorithms)
+  - [로컬 Ubuntu 학습](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Local-Ubuntu)
+  - [모델 가중치 파일 얻기](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Model-Weights)
+  - [학습 파라미터 제안](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Training-Parameter-Tips)
+  - [wandb 실시간 학습 곡선 확인](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/WandB-Curves)
+- **9. 모델 배포**
+  - [커맨드라인 설명](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/CLI-Reference)
+  - [추론 커맨드라인-ACT](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Command-ACT)
+  - [추론 커맨드라인-Diffusion](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Command-Diffusion)
+  - [추론 커맨드라인-pi0.5](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Command-pi0.5)
+  - [추론 커맨드라인-pi0](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Command-pi0)
+  - [추론 커맨드라인-smolvla](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Command-smolvla)
+  - [자주 발생하는 Bug 및 해결](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Common-Bugs)
+  - [NVIDIA DGX Spark 추론](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/DGX-Spark)
+  - [D-Robotics RDK S100 추론](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/RDK-S100)
+
 ### Jetson AGX Orin
 
 - [빠른 시작](/ko/tutorials/jetson-agx-orin/quick-start)
@@ -53,7 +111,6 @@ description: "Juxi Technology 튜토리얼 — 로봇 암과 액세서리, 센�
     - [SO-ARM101 무선 텔레오퍼레이션(ESP32-NanoCam 버전)](/ko/tutorials/robot-arms/so-arm101/SO-ARM101-NanoCam-Wireless-Teleop)
     - [원격조작 문제 해결](/ko/tutorials/robot-arms/so-arm101/SO-ARM101-NanoCam-Troubleshooting)
     - [SO-ARM101 양팔(듀얼 팔로워 암) 튜토리얼](/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Bi-Arm-Tutorial)
-    - [SO-ARM101 7-DOF 개조와 LeRobot 사용 튜토리얼](/ko/tutorials/robot-arms/so-arm101/SO-ARM101-7DOF-LeRobot)
     - [SoARM 시리즈 서보 캘리브레이션 도구 사용 튜토리얼](/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Servo-Calibration-Tool)
       - **LeRobot 전체 코스**
         - [LeRobot 코스 개요](/ko/tutorials/robot-arms/so-arm101/lerobot/)

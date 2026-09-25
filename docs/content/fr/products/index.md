@@ -87,6 +87,10 @@ outline: false
     <span class="pc-title">Kit de développement SO-ARM101</span>
     <p class="pc-desc">Le kit robotique à deux bras open source de Juxi Technology — bras 6 DOF, écosystème LeRobot,…</p>
   </a>
+  <a :href="withBase('/fr/products/so-arm101-7dof')" class="category-card">
+    <span class="pc-title">Bras robotique SO-ARM101 à 7 axes</span>
+    <p class="pc-desc">Bras robotique open source SO-ARM101 7-DOF — lacet du poignet à 90°, servos 12V 30kg.cm, intégration LeRobot poussée</p>
+  </a>
   <a :href="withBase('/fr/products/tpu-flexible-gripper')" class="category-card">
     <span class="pc-title">Pince flexible en TPU SO-ARM101</span>
     <p class="pc-desc">Pince flexible TPU SO-ARM101 de Juxi Technology — saisie sûre des objets irréguliers/fragiles…</p>

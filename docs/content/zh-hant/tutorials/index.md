@@ -20,6 +20,64 @@ head:
 - [飛書文檔](/zh-hant/tutorials/lark-wiki)
 
 
+
+### SO-ARM101機械臂 7軸 教程
+
+- [SO-ARM101機械臂 7軸 教程](/tutorials/robot-arms/so-arm101/lerobot-7dof/)
+- **1. 安裝 LeRobot 環境**
+  - [Ubuntu電腦](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/01-Environment-Setup/Ubuntu)
+  - [Windows電腦](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/01-Environment-Setup/Windows)
+  - [MAC電腦](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/01-Environment-Setup/MacOS)
+- **2. 替換文件（適配7DOF）**
+  - [替換文件（適配7DOF）](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/02-Replace-Files-7DOF)
+- **3. 查看串列埠編號**
+  - [Ubuntu](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/03-Serial-Port/Ubuntu)
+  - [Windows電腦](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/03-Serial-Port/Windows)
+  - [MAC電腦](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/03-Serial-Port/MacOS)
+- **4. 校準機械臂**
+  - [Ubuntu電腦](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/04-Calibration/Ubuntu)
+  - [Windows電腦](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/04-Calibration/Windows)
+  - [Mac電腦](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/04-Calibration/MacOS)
+- **5. 遙操作**
+  - [Ubuntu電腦](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/05-Teleoperation/Ubuntu)
+  - [Windows電腦](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/05-Teleoperation/Windows)
+  - [Mac電腦](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/05-Teleoperation/MacOS)
+- **6. 連接攝像頭的遙操作**
+  - [Ubuntu電腦](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/06-Camera-Teleoperation/Ubuntu)
+  - [Windows電腦](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/06-Camera-Teleoperation/Windows)
+  - [Mac電腦](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/06-Camera-Teleoperation/MacOS)
+- **7. 採集數據集(實機)**
+  - [回看、回放數據集](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/Browse-and-Replay)
+  - [採集數據集注意事項](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/Collection-Notes)
+  - [註冊Hugging Face賬號（可選）](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/HF-Account)
+  - [上傳數據集到HuggingFace（可選）](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/HF-Dataset-Upload)
+  - [示教採集數據集-握手200](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/Teaching-and-Recording-Handshake-200)
+  - [示教採集數據集](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/07-Data-Collection/Teaching-and-Recording)
+- **8. 訓練模型**
+  - [雲GPU訓練環境配置](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Cloud-GPU)
+  - [訓練命令行-ACT（推薦入門）](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-ACT)
+  - [訓練命令行-Diffusion](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-Diffusion)
+  - [訓練命令行-pi0.5](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-pi0.5)
+  - [訓練命令行-pi0（效果最好）](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-pi0)
+  - [訓練命令行-pi0fast](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-pi0fast)
+  - [訓練命令行-smolvla（推薦進階）](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Command-smolvla)
+  - [上傳模型到HuggingFace（可選）](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/HF-Model-Upload)
+  - [LeRobot支持的模仿學習算法](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Imitation-Learning-Algorithms)
+  - [本地Ubuntu訓練](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Local-Ubuntu)
+  - [獲得模型權重文件](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Model-Weights)
+  - [訓練參數建議](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/Training-Parameter-Tips)
+  - [wandb查看實時訓練曲線](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/08-Training/WandB-Curves)
+- **9. 模型推論**
+  - [命令行說明](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/CLI-Reference)
+  - [推理命令行-ACT](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Command-ACT)
+  - [推理命令行-Diffusion](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Command-Diffusion)
+  - [推理命令行-pi0.5](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Command-pi0.5)
+  - [推理命令行-pi0](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Command-pi0)
+  - [推理命令行-smolvla](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Command-smolvla)
+  - [常見Bug及解決](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Common-Bugs)
+  - [英偉達DGX Spark推理](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/DGX-Spark)
+  - [地瓜機器人 RDK S100推理](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/RDK-S100)
+
 ### Jetson AGX Orin 開發套件
 
 - [快速開始](/zh-hant/tutorials/jetson-agx-orin/quick-start)
@@ -57,7 +115,6 @@ head:
     - [SO-ARM101 無線遙操作(ESP32-NanoCam 版)](/zh-hant/tutorials/robot-arms/so-arm101/SO-ARM101-NanoCam-Wireless-Teleop)
     - [無線遙操作排障指南](/zh-hant/tutorials/robot-arms/so-arm101/SO-ARM101-NanoCam-Troubleshooting)
     - [SO-ARM101 雙臂(雙從動臂)教程](/zh-hant/tutorials/robot-arms/so-arm101/SO-ARM101-Bi-Arm-Tutorial)
-    - [SO-ARM101 7-DOF 改造與 LeRobot 使用教程](/zh-hant/tutorials/robot-arms/so-arm101/SO-ARM101-7DOF-LeRobot)
     - [SoARM 系列舵機校準工具使用教程](/zh-hant/tutorials/robot-arms/so-arm101/SO-ARM101-Servo-Calibration-Tool)
       - **LeRobot 完整課程**
         - [LeRobot 完整課程](/zh-hant/tutorials/robot-arms/so-arm101/lerobot/)
