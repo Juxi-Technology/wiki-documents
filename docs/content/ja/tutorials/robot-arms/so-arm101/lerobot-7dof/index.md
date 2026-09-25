@@ -52,8 +52,8 @@ description: "7DOFコースを始める前に、サーボと関節の対応や6�
 |`src/lerobot/robots/so_follower/robot_kinematic_processor.py`|公式クローンの同名ファイル（**コメント修正のみ**で機能に影響なし、置き換え不要）|
 
 ```Bash
-cp src/lerobot/robots/so_follower/so_follower.py          <官方clone>/src/lerobot/robots/so_follower/so_follower.py
-cp src/lerobot/teleoperators/so_leader/so_leader.py       <官方clone>/src/lerobot/teleoperators/so_leader/so_leader.py
+cp src/lerobot/robots/so_follower/so_follower.py          <公式クローン>/src/lerobot/robots/so_follower/so_follower.py
+cp src/lerobot/teleoperators/so_leader/so_leader.py       <公式クローン>/src/lerobot/teleoperators/so_leader/so_leader.py
 ```
 
 > 前提：お使いの公式クローンが本リポジトリのベースライン（lerobot 2026\-08 版）と構造が一致していること。バージョンの差が大きい場合は、**ファイル全体を上書きせず**、以下の「手動変更」の 2 か所のみ変更してください。

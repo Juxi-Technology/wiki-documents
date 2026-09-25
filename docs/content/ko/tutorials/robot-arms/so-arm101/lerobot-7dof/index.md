@@ -52,8 +52,8 @@ description: "7축 과정을 시작하기 전에 서보 ID와 관절 대응을 �
 |`src/lerobot/robots/so_follower/robot_kinematic_processor.py`|공식 clone의 동일 이름 파일(**주석 수정만 있으며**, 기능에 영향 없음, 교체하지 않아도 됨)|
 
 ```Bash
-cp src/lerobot/robots/so_follower/so_follower.py          <官方clone>/src/lerobot/robots/so_follower/so_follower.py
-cp src/lerobot/teleoperators/so_leader/so_leader.py       <官方clone>/src/lerobot/teleoperators/so_leader/so_leader.py
+cp src/lerobot/robots/so_follower/so_follower.py          <공식 clone>/src/lerobot/robots/so_follower/so_follower.py
+cp src/lerobot/teleoperators/so_leader/so_leader.py       <공식 clone>/src/lerobot/teleoperators/so_leader/so_leader.py
 ```
 
 > 전제: 공식 clone이 본 저장소 베이스라인(lerobot 2026\-08 버전)과 구조가 일치해야 합니다. 버전 차이가 크다면 **파일 전체를 덮어쓰지 말고**, 아래 "수동 수정" 두 곳만 적용하세요.

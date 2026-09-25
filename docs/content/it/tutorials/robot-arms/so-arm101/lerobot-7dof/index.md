@@ -52,8 +52,8 @@ Da questo repository copiare **3 file** nel clone ufficiale:
 |`src/lerobot/robots/so_follower/robot_kinematic_processor.py`|file omonimo del clone ufficiale (**solo correzione di commenti**, la funzionalità non è influenzata, si può non sostituire)|
 
 ```Bash
-cp src/lerobot/robots/so_follower/so_follower.py          <官方clone>/src/lerobot/robots/so_follower/so_follower.py
-cp src/lerobot/teleoperators/so_leader/so_leader.py       <官方clone>/src/lerobot/teleoperators/so_leader/so_leader.py
+cp src/lerobot/robots/so_follower/so_follower.py          <clone ufficiale>/src/lerobot/robots/so_follower/so_follower.py
+cp src/lerobot/teleoperators/so_leader/so_leader.py       <clone ufficiale>/src/lerobot/teleoperators/so_leader/so_leader.py
 ```
 
 > Premessa: il tuo clone ufficiale deve avere la stessa struttura della baseline di questo repository (versione lerobot 2026\-08). Se le versioni sono molto diverse, **non sovrascrivere i file interi**, applica invece le due "modifiche manuali" descritte sotto.
