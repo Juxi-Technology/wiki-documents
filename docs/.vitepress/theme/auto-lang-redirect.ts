@@ -1,6 +1,8 @@
 // 语言自动切换(仅静态站,客户端执行):
-// 1) 访问根语言(无前缀 URL)时,按 localStorage 偏好或浏览器语言自动重定向
-// 2) 手动点击语言切换后记住偏好,下次直接进入所选语言
+// 1) **仅首页**(根路径 /)访问时,按 localStorage 偏好或浏览器语言自动重定向到对应语言的首页;
+//    内页一律不自动换语种 —— 用户从哪个语种的页面点进来,就停在哪个语种
+//    (2026-09-25 收窄:此前内页也跳,表现为"从英文页点进教程却被拽到中文页",令人困惑)
+// 2) 手动点击语言切换后记住偏好,首页跳转与下次访问据此回落
 // 3) 已带语言前缀的 URL(爬虫/直接链接)绝不跳转 → 对 SEO 无害
 if (typeof window !== 'undefined') {
   const URL_LANG_RE = /^\/(zh-hans|zh-hant|ja|ko|de|fr|es|it|pt-br|pt-pt|en)(?=\/|$)/
@@ -21,8 +23,8 @@ if (typeof window !== 'undefined') {
   })
 
   const path = window.location.pathname
-  // 仅处理无前缀的根语言页面(英文 root)
-  if (!URL_LANG_RE.test(path)) {
+  // 只认首页:根路径并且不带语言前缀(带前缀的根语言页如 /zh-hans/ 也一律不跳)
+  if (path === '/' && !URL_LANG_RE.test(path)) {
     const nav = navigator.language || ''
     let pref: string | null = null
     try {
@@ -52,7 +54,7 @@ if (typeof window !== 'undefined') {
       } catch {
         /* ignore */
       }
-      window.location.replace('/' + target + path)
+      window.location.replace('/' + target + '/')
     }
   }
 }

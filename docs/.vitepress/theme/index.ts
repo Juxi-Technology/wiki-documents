@@ -4,7 +4,7 @@ import HomeLatestDocs from './components/HomeLatestDocs.vue'
 import CommunityStrip from './components/CommunityStrip.vue'
 import RelatedProducts from './components/RelatedProducts.vue'
 import './style.css'
-// 语言自动重定向(浏览器语言 + 手选偏好记忆,仅根语言 URL 触发)
+// 语言自动重定向(浏览器语言 + 手选偏好记忆;**仅首页**触发,内页不换语种)
 import './auto-lang-redirect'
 // 滚动越过公告条后导航置顶(清除 --vp-layout-top-height 偏移)
 import './scroll-top-offset'
