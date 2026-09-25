@@ -31,7 +31,8 @@ function switchTo(code: string) {
   const base = (site.value.base || '/').replace(/\/$/, '')
   const rest = route.path.replace(/^\/(zh-hans|zh-hant|ja|ko|de|fr|es|it|pt-br|pt-pt)(?=\/|$)/, '')
   // 记录语言偏好:选择 English(code='')时写 'en'。
-  // 否则跳转到无前缀英文页后会被 auto-lang-redirect 按旧偏好(如 zh-hans)拉回
+  // 这样下次**访问首页**时不会被 auto-lang-redirect 按旧偏好(如 zh-hans)拉回;
+  // 内页不受该重定向影响(它只在首页触发)
   try {
     localStorage.setItem('wiki-lang', code === '' ? 'en' : code)
   } catch {
