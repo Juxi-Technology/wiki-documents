@@ -15,9 +15,16 @@ verified_against:
     checked: 2026-09-23
   - source: https://developer.nvidia.com/embedded/jetpack/downloads
     checked: 2026-09-23
+    note: its component table lags on some rows (VPI/PVA still show 7.2 values)
   - source: https://wiki.seeedstudio.com/jetpack_7_2_resource_hub/
     checked: 2026-09-23
     note: secondary source — used for migration-topic organization only
+  - source: https://nvidia-isaac-ros.github.io/releases/index.html
+    checked: 2026-09-26
+    note: Isaac ROS support status — supersedes the "coming soon" note in the migration checklist
+  - source: https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages
+    checked: 2026-09-26
+    note: CUDA 13.2.2 (not the 13.2.1 shown on the JetPack downloads page) per the nvidia-jetpack 7.2.1 dependency chain
 review_owner: cheny
 ---
 
@@ -34,7 +41,7 @@ review_owner: cheny
 | Jetson Linux(L4T) | 36.x(6.2 では 36.4.x) | **39.2.1** |
 | OS / ルートファイルシステム | Ubuntu 22.04 | **Ubuntu 24.04** |
 | Linux カーネル | 5.15 | **6.8** |
-| CUDA | 12.x | **13.2.1** |
+| CUDA | 12.x | **13.2.2** |
 | TensorRT | 10.x(6.x 世代) | **10.16.2** |
 
 > JetPack 6.x 列の値はあくまで例示です(JetPack 6.2 世代)。計画を立てる前に、
@@ -64,7 +71,7 @@ Jetson Linux 39.2 リリースノートより:
 
 ## 推奨される移行順序
 
-1. 何かを消去する*前に*、**ソフトウェアスタックが 7.2.1 でサポートされていることを確認**してください — 依存する各コンポーネントを NVIDIA の [JetPack 7.2.1 コンポーネントリスト](https://developer.nvidia.com/embedded/jetpack/downloads)と照合します(例えば、Isaac ROS はこのリリースでは「近日公開予定」と記載されています)。
+1. 何かを消去する*前に*、**ソフトウェアスタックが 7.2.1 でサポートされていることを確認**してください — 依存する各コンポーネントを NVIDIA の [JetPack 7.2.1 コンポーネントリスト](https://developer.nvidia.com/embedded/jetpack/downloads)と照合します。このページは独立してリリースされる SDK については遅れることがあります。Isaac ROS 4.6.0 が Jetson Orin + JetPack 7.2 のサポートを追加しているにもかかわらず、まだ Isaac ROS を「近日公開予定」と記載しています([JetPack 7.2 のロボティクス](/ja/tutorials/jetson-agx-orin/robotics)を参照)。
 2. **バックアップ:**アプリケーションデータ、センサーのキャリブレーションファイル、コンテナボリューム、デバイスツリーのソース、TensorRT ビルドスクリプト/ONNX モデル。
 3. **JetPack 7.2.1 を書き込み**([書き込みと更新](/ja/tutorials/jetson-agx-orin/flashing-and-updates))、起動、ストレージ、ネットワーク、および Force Recovery が引き続き機能することを検証します。
 4. **周辺機器を復元:**Wi-Fi、カメラ、CAN、フィールドバスのドライバー — カーネル 6.8 向けに再ビルドしたものを使います。
@@ -81,7 +88,7 @@ Jetson Linux 39.2 リリースノートより:
 ## 参考資料
 
 - [Jetson Linux 39.2.0 リリースノート(PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf) — *What's New*、既知の問題(2026-09-23 確認)
-- [JetPack SDK ダウンロード — コンポーネントリスト](https://developer.nvidia.com/embedded/jetpack/downloads)(2026-09-23 確認)
+- [JetPack SDK ダウンロード](https://developer.nvidia.com/embedded/jetpack/downloads)(2026-09-23 確認) — ⚠️ コンポーネント表は一部の行で遅れています。7.2.1 システムが実際にインストールするバージョンについては[システムの検証](/ja/tutorials/jetson-agx-orin/verify-your-system)を参照してください
 - [Seeed Studio JetPack 7.2 リソースハブ](https://wiki.seeedstudio.com/jetpack_7_2_resource_hub/) — 二次情報源。移行トピックの構成に使用(2026-09-23 確認)
 
 *ステータス:ドラフト、cheny のレビュー待ち。記載日時点の NVIDIA 公式

@@ -11,6 +11,10 @@ hardware_verified: false
 verified_against:
   - source: https://developer.nvidia.com/embedded/jetpack/downloads
     checked: 2026-09-23
+    note: component table lags on some rows (VPI/PVA still show 7.2 values) — see the caveat in the body
+  - source: https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages
+    checked: 2026-09-26
+    note: authoritative source for installed component versions
   - source: https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html
     checked: 2026-09-23
 review_owner: cheny
@@ -19,11 +23,11 @@ review_owner: cheny
 # ダウンロードと公式リンク
 
 このページのすべての項目は **NVIDIA 公式リソース**へリンクしており、**2026-09-23**
-に確認済みです。更新情報については、最初の 2 つのリンクを正規の出発点としてください。
+に確認済みです(コンポーネントバージョンに関する注記を 2026-09-26 に追加)。更新情報については、最初の 2 つのリンクを正規の出発点としてください。
 
 ## JetPack 7.2.1 / Jetson Linux 39.2.1
 
-- [JetPack SDK のダウンロードとリリースノート](https://developer.nvidia.com/embedded/jetpack/downloads) — **正規のハブ**:リリース情報、コンポーネントのバージョン、すべてのダウンロード
+- [JetPack SDK のダウンロードとリリースノート](https://developer.nvidia.com/embedded/jetpack/downloads) — **正規のハブ**:リリース情報とダウンロード。⚠️ **コンポーネント一覧は一部の行で情報が遅れています**:2026-09-26 時点でも VPI と PVA の行は JetPack **7.2** の値のままで、Isaac ROS の行も「coming soon」のままです(4.6.0 以降はリリース済み)。JetPack 7.2.1 システムに実際にインストールされるバージョンについては、NVIDIA の [Jetson apt リポジトリ](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages)をご利用ください — [システムの確認](/ja/tutorials/jetson-agx-orin/verify-your-system)を参照してください
 - [JetPack ISO イメージ(r39.2.1)](https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/iso) — 当社の[クイックスタート](/ja/tutorials/jetson-agx-orin/quick-start)で使用する USB インストールイメージ
 - [NVIDIA SDK Manager](https://developer.nvidia.com/sdk-manager) — ホスト PC 用の書き込みツール
 - [Jetson AGX Orin 用 Yocto イメージ](https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/yocto2) — 公式の Yocto/OpenEmbedded レシピとイメージ
@@ -59,7 +63,8 @@ review_owner: cheny
 
 ## 出典
 
-- [JetPack SDK のダウンロードとリリースノート](https://developer.nvidia.com/embedded/jetpack/downloads)(2026-09-23 確認)
+- [JetPack SDK のダウンロードとリリースノート](https://developer.nvidia.com/embedded/jetpack/downloads)(2026-09-23 確認、コンポーネント一覧の注記 2026-09-26)
+- [NVIDIA Jetson apt リポジトリ — Packages インデックス](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages) — インストールされるコンポーネントバージョンの正式な情報源(2026-09-26 確認)
 
 *ステータス:ドラフト、cheny のレビュー待ち。*
 

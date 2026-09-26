@@ -17,6 +17,11 @@ verified_against:
     checked: 2026-09-23
   - source: https://developer.nvidia.com/embedded/jetpack/downloads
     checked: 2026-09-23
+  - source: https://nvidia-isaac-ros.github.io/releases/index.html
+    checked: 2026-09-26
+  - source: https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages
+    checked: 2026-09-26
+    note: CUDA 13.2.2 / component versions per the nvidia-jetpack 7.2.1 dependency chain
 review_owner: cheny
 ---
 
@@ -40,7 +45,7 @@ USB Type-C 转 USB Type-A 数据线。显示器（DisplayPort）、键盘和鼠�
 （Ubuntu）。参见[刷机与更新](/zh-hans/tutorials/jetson-agx-orin/flashing-and-updates)。
 
 **当前是哪个软件版本？**
-JetPack **7.2.1**（Jetson Linux **39.2.1**、Ubuntu 24.04、CUDA 13.2.1、
+JetPack **7.2.1**（Jetson Linux **39.2.1**、Ubuntu 24.04、CUDA 13.2.2、
 TensorRT 10.16.2）。用[验证你的系统](/zh-hans/tutorials/jetson-agx-orin/verify-your-system)
 查看你的套件实际运行的版本。
 
@@ -71,8 +76,11 @@ AGX Orin、Orin NX 或 Orin Nano 的性能与功耗特性。出厂配置为 AGX 
 还发布了动手教程。
 
 **机器人方面：JetPack 7.2 上能用 Isaac ROS 吗？**
-尚未提供。NVIDIA 的 JetPack 7.2.1 下载页面将 Isaac ROS 在本版本中标注为
-**“即将推出”**。规划依赖它的工作之前，请先查看该页面。
+可以——Isaac ROS 自 **4.6.0** 版（2026-08-18）起已支持 JetPack 7.2 上的
+Jetson Orin，并提供官方的 AGX Orin 设置教程。注意，NVIDIA 的 JetPack 下载
+页面仍显示“即将推出”：Isaac ROS 独立于 JetPack 发布，因此以其自身的发布
+说明为准。关于版本与 ROS 2 发行版的选择（4.6.x = Jazzy、5.0 = Lyrical）以及
+已知限制，参见[机器人(现状)](/zh-hans/tutorials/jetson-agx-orin/robotics)。
 
 ## 支持与服务
 

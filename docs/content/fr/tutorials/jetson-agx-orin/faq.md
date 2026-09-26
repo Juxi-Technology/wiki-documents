@@ -18,6 +18,11 @@ verified_against:
     checked: 2026-09-23
   - source: https://developer.nvidia.com/embedded/jetpack/downloads
     checked: 2026-09-23
+  - source: https://nvidia-isaac-ros.github.io/releases/index.html
+    checked: 2026-09-26
+  - source: https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages
+    checked: 2026-09-26
+    note: CUDA 13.2.2 / component versions per the nvidia-jetpack 7.2.1 dependency chain
 review_owner: cheny
 ---
 
@@ -46,7 +51,7 @@ configuration headless (sans écran). Voir
 [Flashage et mises à jour](/fr/tutorials/jetson-agx-orin/flashing-and-updates).
 
 **Quelle est la version logicielle actuelle ?**
-JetPack **7.2.1** (Jetson Linux **39.2.1**, Ubuntu 24.04, CUDA 13.2.1,
+JetPack **7.2.1** (Jetson Linux **39.2.1**, Ubuntu 24.04, CUDA 13.2.2,
 TensorRT 10.16.2). Vérifiez ce que votre kit exécute avec
 [Vérifier votre système](/fr/tutorials/jetson-agx-orin/verify-your-system).
 
@@ -84,9 +89,14 @@ développement pour l'orchestration de modèles locaux et cloud, et le
 [Jetson AI Lab](https://www.jetson-ai-lab.com) publie des tutoriels pratiques.
 
 **Pour la robotique : Isaac ROS est-il disponible sur JetPack 7.2 ?**
-Pas encore. La page de téléchargement de JetPack 7.2.1 de NVIDIA liste Isaac
-ROS comme **« bientôt disponible »** pour cette version. Consultez cette page
-avant de planifier des travaux qui en dépendent.
+Oui — Isaac ROS prend en charge Jetson Orin sous JetPack 7.2 depuis la version
+**4.6.0** (2026-08-18), avec une procédure de configuration officielle pour
+AGX Orin. Notez que la page de téléchargement de JetPack de NVIDIA affiche
+encore « bientôt disponible » : Isaac ROS est publié indépendamment de
+JetPack, ses propres notes de version font donc foi. Pour la version et le
+choix de distribution ROS 2 (4.6.x = Jazzy, 5.0 = Lyrical) ainsi que les
+contraintes connues, voir
+[Robotique (état des lieux)](/fr/tutorials/jetson-agx-orin/robotics).
 
 ## Assistance et service
 

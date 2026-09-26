@@ -13,15 +13,19 @@ hardware_verified: false
 verified_against:
   - source: https://developer.nvidia.com/embedded/jetpack/downloads
     checked: 2026-09-24
+    note: its component table lags on some rows (VPI/PVA still show 7.2 values) — component versions per the apt repository below
   - source: https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html
     checked: 2026-09-24
+  - source: https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages
+    checked: 2026-09-26
+    note: component versions verified through the nvidia-jetpack 7.2.1-b49 dependency chain
 review_owner: cheny
 ---
 
 # 용어집
 
 고객이 가장 자주 묻는 용어를 주제별로 묶었습니다. 버전 번호는 현재
-릴리스(**JetPack 7.2.1 / L4T 39.2.1**, 2026-09-24 확인)를 기준으로 합니다.
+릴리스(**JetPack 7.2.1 / L4T 39.2.1**; 구성 요소 버전은 2026-09-26 재확인)를 기준으로 합니다.
 
 ## 플랫폼 및 하드웨어
 
@@ -62,7 +66,7 @@ review_owner: cheny
 
 | JetPack | Jetson Linux (L4T) | Ubuntu | 커널 | CUDA |
 |---|---|---|---|---|
-| **7.2.1** (현재) | **39.2.1** | **24.04** | **6.8** | **13.2.1** |
+| **7.2.1** (현재) | **39.2.1** | **24.04** | **6.8** | **13.2.2** |
 | 6.x (이전 세대) | 36.x | 22.04 | 5.15 | 12.x |
 
 특정 시스템이 실제로 무엇을 실행하는지 항상 확인하십시오: `cat /etc/nv_tegra_release`.
@@ -71,12 +75,12 @@ review_owner: cheny
 
 | 용어 | 의미 |
 |---|---|
-| **CUDA** | NVIDIA의 GPU 컴퓨팅 툴킷입니다(이 릴리스에서는 13.2.1). |
+| **CUDA** | NVIDIA의 GPU 컴퓨팅 툴킷입니다(이 릴리스에서는 13.2.2). |
 | **cuDNN** | 최적화된 딥러닝 기본 연산 라이브러리입니다(9.20.0). |
 | **TensorRT** | 추론 최적화기 겸 런타임입니다(10.16.2). |
 | **TensorRT 엔진** | 컴파일된 모델 파일로, 하드웨어/버전에 종속됩니다. 엔진은 버전을 업그레이드해도 **그대로 유지되지 않습니다** — 다시 빌드하십시오. |
 | **DeepStream** | 다중 스트림 영상 분석용 SDK입니다(9.1). |
-| **VPI** | Vision Programming Interface — 하드웨어 가속 이미지 처리입니다(4.1.3). |
+| **VPI** | Vision Programming Interface — 하드웨어 가속 이미지 처리입니다(4.1.4). |
 | **Holoscan** | 실시간 센서 처리를 위한 스트리밍 AI 프레임워크입니다(3.9.0). |
 | **NGC** | NVIDIA의 컨테이너 및 사전 학습 모델 카탈로그입니다(catalog.ngc.nvidia.com). |
 | **컨테이너(Container)** | 격리된 패키징 런타임(Docker)으로, Jetson에 AI 소프트웨어를 배포하는 표준 방식입니다. |
@@ -102,7 +106,7 @@ review_owner: cheny
 
 ## 출처
 
-- [JetPack SDK 다운로드 — 구성 요소 버전](https://developer.nvidia.com/embedded/jetpack/downloads) (2026-09-24 확인)
+- [NVIDIA Jetson apt 저장소 — 실제 구성 요소 버전](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages) (2026-09-26 확인) — `nvidia-jetpack` 7.2.1 의존성 체인을 통해 확인했으며, [JetPack 다운로드 페이지](https://developer.nvidia.com/embedded/jetpack/downloads)의 요약 표는 뒤처져 있어 아직 CUDA 13.2.1 / VPI 4.1.3이 기재되어 있습니다
 - [Jetson AGX Orin 개발자 키트 사용자 가이드](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html) (2026-09-24 확인)
 
 *상태: 초안, cheny 검토 대기 중. 정의는 NVIDIA 문서와 업계 표준 용례를

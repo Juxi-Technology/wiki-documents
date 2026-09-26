@@ -16,6 +16,7 @@ verified_against:
     checked: 2026-09-24
   - source: https://developer.nvidia.com/embedded/jetpack/downloads
     checked: 2026-09-24
+    note: its component table lags on some rows (VPI/PVA still show 7.2 values) — see the Sources caveat
 review_owner: cheny
 ---
 
@@ -117,7 +118,7 @@ deepstream-app -c source30_1080p_dec_infer-resnet_tiled_display.txt
 
 - [DeepStream 安裝指南](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_Installation.html)（查閱於 2026-09-24）
 - [DeepStream 快速入門指南](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_Quickstart.html)（查閱於 2026-09-24）
-- [JetPack 7.2.1 組件清單](https://developer.nvidia.com/embedded/jetpack/downloads)（查閱於 2026-09-24）
+- [JetPack 7.2.1 下載頁](https://developer.nvidia.com/embedded/jetpack/downloads)（查閱於 2026-09-24）——⚠️ 其組件表部分行滯後；實際安裝的版本請參見[下載](/zh-hant/tutorials/jetson-agx-orin/downloads)
 
 *狀態：草稿，待 cheny 審閱。內容依據為截至所列日期的 NVIDIA 官方文檔；尚未由
 鉅犀科技在實體硬體上驗證。*

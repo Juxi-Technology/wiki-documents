@@ -16,6 +16,12 @@ verified_against:
     checked: 2026-09-23
   - source: https://developer.nvidia.com/embedded/jetpack/downloads
     checked: 2026-09-23
+    note: still lists Isaac ROS as "coming soon"; see the note under Step 3
+  - source: https://nvidia-isaac-ros.github.io/releases/index.html
+    checked: 2026-09-26
+  - source: https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages
+    checked: 2026-09-26
+    note: component versions verified through the nvidia-jetpack 7.2.1-b49 dependency chain
 review_owner: cheny
 ---
 
@@ -62,25 +68,29 @@ sudo apt install nvidia-jetpack
 
 ## 3단계 — JetPack 7.2.1의 예상 버전
 
-아래 표는 **JetPack 7.2.1 / Jetson Linux 39.2.1**에 대한 NVIDIA의 공식 구성 요소 목록입니다(NVIDIA JetPack 다운로드 페이지에서 2026-09-23 확인):
+아래 표는 **JetPack 7.2.1 / Jetson Linux 39.2.1**이 실제로 설치하는 내용을 보여줍니다 — 2026-09-26에 [NVIDIA의 Jetson apt 저장소](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages)의 `nvidia-jetpack` 7.2.1 의존성 체인을 통해 확인했습니다:
 
 | 구성 요소 | 버전 |
 |---|---|
 | Jetson Linux (L4T) | 39.2.1 |
 | 운영 체제 | Ubuntu 24.04 (L4T) |
 | 커널 | 6.8 |
-| CUDA | 13.2.1 |
+| CUDA | 13.2.2 |
 | cuDNN | 9.20.0 |
 | TensorRT | 10.16.2 |
-| VPI(컴퓨터 비전) | 4.1.3 |
+| VPI(컴퓨터 비전) | 4.1.4 |
 | V4L2 | 1.22.1 |
 | DeepStream SDK | 9.1 |
 | Holoscan SDK | 3.9.0 |
 | Nsight Systems | 2026.3 |
 | NVIDIA Container Toolkit | 1.19(ISO 이미지 포함) |
-| Isaac ROS | **JetPack 7에서는 아직 사용할 수 없음**(NVIDIA에 따르면 "곧 출시") |
+| Isaac ROS | *JetPack 페이지에서는 "출시 예정"* — 별도로 릴리스됨, 아래 참고 사항 참조 |
 
-> **Juxi 참고:** `dpkg`는 패키지 버전을 빌드 접미사와 함께 표시할 수 있습니다(예: `13.2.1-b48`). 이는 정상입니다 — 접미사가 아니라 버전 번호를 맞추십시오. 로보틱스 사용자는 Isaac ROS에 의존하는 작업을 계획하기 전에 Isaac ROS 행을 확인하십시오.
+> **Juxi 참고:** `dpkg`는 패키지 버전을 빌드 또는 리비전 접미사와 함께 표시할 수 있습니다(예: `13.2.2-1`, L4T 패키지의 경우 `7.2.1-b49`). 이는 정상입니다 — 접미사가 아니라 버전 번호를 맞추십시오.
+>
+> **JetPack 다운로드 페이지가 뒤처진 부분(2026-09-26 확인):** 해당 페이지의 요약 표에는 여전히 CUDA **13.2.1**과 VPI **4.1.3**이 실려 있습니다 — 이는 JetPack **7.2**의 값입니다. `nvidia-jetpack` 7.2.1이 설치하는 것은 CUDA **13.2.2**(빌드 13.2.86)이며 VPI **4.1.4**입니다. 위의 apt 저장소가 권위 있는 출처입니다.
+>
+> **Isaac ROS(2026-09-26 재확인):** JetPack 다운로드 페이지에는 여전히 "출시 예정"으로 표시되어 있지만, Isaac ROS는 릴리스 **4.6.0**(2026-08-18)부터 Jetson Orin + JetPack 7.2를 지원해 왔습니다. Isaac ROS는 JetPack과 독립적으로 릴리스되므로 자체 릴리스 노트가 기준이 되는 출처입니다. 로보틱스 사용자는 Isaac ROS에 의존하는 작업을 계획하기 전에 [JetPack 7.2에서의 로보틱스](/ko/tutorials/jetson-agx-orin/robotics)를 참조하십시오.
 
 ## 선택 사항 — 시스템 활동을 간단히 살펴보기
 

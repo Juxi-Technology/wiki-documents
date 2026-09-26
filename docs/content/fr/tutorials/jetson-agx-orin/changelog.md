@@ -15,6 +15,11 @@ verified_against:
     checked: 2026-09-24
   - source: https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf
     checked: 2026-09-24
+  - source: https://nvidia-isaac-ros.github.io/releases/index.html
+    checked: 2026-09-26
+  - source: https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages
+    checked: 2026-09-26
+    note: source for the CUDA 13.2.2 / VPI 4.1.4 correction
 review_owner: cheny
 ---
 
@@ -24,6 +29,8 @@ review_owner: cheny
 
 | Date | Modification |
 |---|---|
+| 2026-09-26 | **Correction de deux versions de composants pour JetPack 7.2.1 : CUDA 13.2.1 → 13.2.2 et VPI 4.1.3 → 4.1.4.** Ces deux versions provenaient de la page de téléchargement de JetPack de NVIDIA, dont le tableau récapitulatif affiche encore les valeurs de JetPack **7.2** ; les versions ont été vérifiées via la chaîne de dépendances de `nvidia-jetpack` 7.2.1 dans le dépôt apt Jetson de NVIDIA. Mise à jour de **Vérifier votre système** (note sur la source du tableau), du **Glossaire**, de la **FAQ**, du **guide de migration JetPack 6.x → 7.2** et de la page produit. Ajout également d'un avertissement « ce tableau est en retard » partout où cette page est citée comme source pour les versions des composants (**Téléchargements**, **Glossaire**, **DeepStream**, **guide de migration**). |
+| 2026-09-26 | **Correction du statut d'Isaac ROS sur JetPack 7.2.** Isaac ROS 4.6.0 (2026-08-18) a ajouté la prise en charge de Jetson Orin + JetPack 7.2, remplaçant le statut « bientôt disponible » précédemment repris de la page de téléchargement de JetPack (qui l'affiche toujours). Mise à jour de **Robotique** (nouvelle version et indications sur la distribution ROS 2), de **Vérifier votre système**, du **guide de migration JetPack 6.x → 7.2** et de la **FAQ**. |
 | 2026-09-24 | Ajout du **Glossaire** et de ce **Journal des modifications**. Ajout des coordonnées de Juxi Technology (assistance technique, ventes, questions produits) dans la FAQ, le Dépannage et les Téléchargements ; ajout du lien vers le catalogue de produits Juxi pour les accessoires. |
 | 2026-09-23 | Publication initiale du jeu de documentation au statut de brouillon : Démarrage rapide, Flashage et mises à jour, Vérifier votre système, Présentation du produit, Interfaces et disposition matérielle, FAQ, Dépannage, Téléchargements, et le guide de migration JetPack 6.x → 7.2. Toutes les pages sont rédigées d'après la documentation officielle de NVIDIA. |
 

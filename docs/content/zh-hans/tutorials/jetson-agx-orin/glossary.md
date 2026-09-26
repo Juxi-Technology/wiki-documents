@@ -13,14 +13,18 @@ hardware_verified: false
 verified_against:
   - source: https://developer.nvidia.com/embedded/jetpack/downloads
     checked: 2026-09-24
+    note: its component table lags on some rows (VPI/PVA still show 7.2 values) — component versions per the apt repository below
   - source: https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html
     checked: 2026-09-24
+  - source: https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages
+    checked: 2026-09-26
+    note: component versions verified through the nvidia-jetpack 7.2.1-b49 dependency chain
 review_owner: cheny
 ---
 
 # 术语表
 
-客户最常问到的术语，按主题分组。版本号对应当前的发布版本（**JetPack 7.2.1 / L4T 39.2.1**，核对于 2026-09-24）。
+客户最常问到的术语，按主题分组。版本号对应当前的发布版本（**JetPack 7.2.1 / L4T 39.2.1**；组件版本重新核对于 2026-09-26）。
 
 ## 平台与硬件
 
@@ -61,7 +65,7 @@ review_owner: cheny
 
 | JetPack | Jetson Linux (L4T) | Ubuntu | 内核 | CUDA |
 |---|---|---|---|---|
-| **7.2.1**（当前） | **39.2.1** | **24.04** | **6.8** | **13.2.1** |
+| **7.2.1**（当前） | **39.2.1** | **24.04** | **6.8** | **13.2.2** |
 | 6.x（上一代） | 36.x | 22.04 | 5.15 | 12.x |
 
 务必核实具体系统实际运行的版本：`cat /etc/nv_tegra_release`。
@@ -70,12 +74,12 @@ review_owner: cheny
 
 | 术语 | 含义 |
 |---|---|
-| **CUDA** | NVIDIA 的 GPU 计算工具包（本版本中为 13.2.1）。 |
+| **CUDA** | NVIDIA 的 GPU 计算工具包（本版本中为 13.2.2）。 |
 | **cuDNN** | 优化过的深度学习基础算子库（9.20.0）。 |
 | **TensorRT** | 推理优化器与运行时（10.16.2）。 |
 | **TensorRT 引擎** | 经编译的模型文件，与具体硬件/版本绑定。引擎**不能**跨版本升级沿用——需要重新构建。 |
 | **DeepStream** | 面向多路视频分析的 SDK（9.1）。 |
-| **VPI** | Vision Programming Interface——硬件加速的图像处理（4.1.3）。 |
+| **VPI** | Vision Programming Interface——硬件加速的图像处理（4.1.4）。 |
 | **Holoscan** | 面向实时传感器处理的流式 AI 框架（3.9.0）。 |
 | **NGC** | NVIDIA 的容器与预训练模型目录（catalog.ngc.nvidia.com）。 |
 | **容器（Container）** | 隔离、打包好的运行时（Docker）；在 Jetson 上交付 AI 软件的标准方式。 |
@@ -101,7 +105,7 @@ review_owner: cheny
 
 ## 参考来源
 
-- [JetPack SDK 下载页——组件版本](https://developer.nvidia.com/embedded/jetpack/downloads)（核对于 2026-09-24）
+- [NVIDIA Jetson apt 仓库——实际组件版本](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages)（核对于 2026-09-26）——经由 `nvidia-jetpack` 7.2.1 依赖链；[JetPack 下载页](https://developer.nvidia.com/embedded/jetpack/downloads)的汇总表滞后（仍列出 CUDA 13.2.1 / VPI 4.1.3）
 - [Jetson AGX Orin 开发者套件用户指南](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html)（核对于 2026-09-24）
 
 *状态：草稿，待 cheny 审核。定义整理自 NVIDIA 官方文档与行业通行用法；版本号核对于所列日期。*

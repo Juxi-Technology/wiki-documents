@@ -17,9 +17,16 @@ verified_against:
     checked: 2026-09-23
   - source: https://developer.nvidia.com/embedded/jetpack/downloads
     checked: 2026-09-23
+    note: its component table lags on some rows (VPI/PVA still show 7.2 values)
   - source: https://wiki.seeedstudio.com/jetpack_7_2_resource_hub/
     checked: 2026-09-23
     note: secondary source — used for migration-topic organization only
+  - source: https://nvidia-isaac-ros.github.io/releases/index.html
+    checked: 2026-09-26
+    note: Isaac ROS support status — supersedes the "coming soon" note in the migration checklist
+  - source: https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages
+    checked: 2026-09-26
+    note: CUDA 13.2.2 (not the 13.2.1 shown on the JetPack downloads page) per the nvidia-jetpack 7.2.1 dependency chain
 review_owner: cheny
 ---
 
@@ -36,7 +43,7 @@ Nouveaux kits : commencez plutôt par [Démarrage rapide](/fr/tutorials/jetson-a
 | Jetson Linux (L4T) | 36.x (la version 6.2 utilisait 36.4.x) | **39.2.1** |
 | Système d'exploitation / système de fichiers racine | Ubuntu 22.04 | **Ubuntu 24.04** |
 | Noyau Linux | 5.15 | **6.8** |
-| CUDA | 12.x | **13.2.1** |
+| CUDA | 12.x | **13.2.2** |
 | TensorRT | 10.x (période 6.x) | **10.16.2** |
 
 > Les valeurs de la colonne JetPack 6.x sont indicatives (période JetPack 6.2).
@@ -66,7 +73,7 @@ Extrait des notes de version de Jetson Linux 39.2 :
 
 ## Ordre de migration recommandé
 
-1. **Confirmez que votre pile logicielle est prise en charge** sur 7.2.1 *avant* d'effacer quoi que ce soit — vérifiez chaque composant dont vous dépendez par rapport à la [liste des composants JetPack 7.2.1](https://developer.nvidia.com/embedded/jetpack/downloads) de NVIDIA (par exemple, Isaac ROS est annoncé comme « bientôt disponible » pour cette version).
+1. **Confirmez que votre pile logicielle est prise en charge** sur 7.2.1 *avant* d'effacer quoi que ce soit — vérifiez chaque composant dont vous dépendez par rapport à la [liste des composants JetPack 7.2.1](https://developer.nvidia.com/embedded/jetpack/downloads) de NVIDIA. Cette page peut être en retard pour les SDK publiés indépendamment : elle indique encore Isaac ROS comme « bientôt disponible », alors qu'Isaac ROS 4.6.0 a ajouté la prise en charge de Jetson Orin + JetPack 7.2 (voir [Robotique (état des lieux)](/fr/tutorials/jetson-agx-orin/robotics)).
 2. **Sauvegardez :** les données applicatives, les fichiers d'étalonnage des capteurs, les volumes de conteneurs, les sources device-tree, les scripts de compilation TensorRT et les modèles ONNX.
 3. **Flashez JetPack 7.2.1** ([Flashage et mises à jour](/fr/tutorials/jetson-agx-orin/flashing-and-updates)) et validez : le démarrage, le stockage, le réseau, et le fait que le mode Force Recovery fonctionne toujours.
 4. **Restaurez les périphériques :** Wi-Fi, caméras, CAN ou pilotes de bus de terrain — reconstruits pour le noyau 6.8.
@@ -83,7 +90,7 @@ Extrait des notes de version de Jetson Linux 39.2 :
 ## Sources
 
 - [Notes de version de Jetson Linux 39.2.0 (PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf) — *What's New*, problèmes connus (vérifié le 2026-09-23)
-- [Téléchargements du SDK JetPack — liste des composants](https://developer.nvidia.com/embedded/jetpack/downloads) (vérifié le 2026-09-23)
+- [Téléchargements du SDK JetPack](https://developer.nvidia.com/embedded/jetpack/downloads) (vérifié le 2026-09-23) — ⚠️ son tableau des composants est en retard sur certaines lignes ; pour les versions qu'un système 7.2.1 installe réellement, voir [Vérifier votre système](/fr/tutorials/jetson-agx-orin/verify-your-system)
 - [Seeed Studio JetPack 7.2 Resource Hub](https://wiki.seeedstudio.com/jetpack_7_2_resource_hub/) — source secondaire ; utilisée pour l'organisation des thèmes de migration (vérifié le 2026-09-23)
 
 *Statut : brouillon, en attente de relecture par cheny. Fondé sur la

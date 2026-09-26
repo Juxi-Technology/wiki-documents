@@ -15,6 +15,11 @@ verified_against:
     checked: 2026-09-24
   - source: https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf
     checked: 2026-09-24
+  - source: https://nvidia-isaac-ros.github.io/releases/index.html
+    checked: 2026-09-26
+  - source: https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages
+    checked: 2026-09-26
+    note: source for the CUDA 13.2.2 / VPI 4.1.4 correction
 review_owner: cheny
 ---
 
@@ -24,6 +29,8 @@ review_owner: cheny
 
 | Datum | Änderung |
 |---|---|
+| 2026-09-26 | **Zwei Komponentenversionen für JetPack 7.2.1 korrigiert: CUDA 13.2.1 → 13.2.2 und VPI 4.1.3 → 4.1.4.** Beide stammten von NVIDIAs JetPack-Downloadseite, deren Übersichtstabelle noch Werte für JetPack **7.2** enthält; die Versionen wurden über die `nvidia-jetpack`-7.2.1-Abhängigkeitskette in NVIDIAs Jetson-apt-Repository verifiziert. **System überprüfen** (Quellenhinweis zur Tabelle), **Glossar**, **FAQ**, den **Migrationsleitfaden für JetPack 6.x → 7.2** und die Produktseite aktualisiert. Außerdem überall dort, wo diese Seite als Quelle für Komponentenversionen zitiert wird, einen Hinweis ergänzt, dass diese Tabelle nachläuft (**Downloads**, **Glossar**, **DeepStream**, **Migrationsleitfaden**). |
+| 2026-09-26 | **Isaac ROS-Status auf JetPack 7.2 korrigiert.** Isaac ROS 4.6.0 (2026-08-18) unterstützt nun Jetson Orin + JetPack 7.2 und löst damit den Status „in Kürze verfügbar“ ab, der zuvor von der JetPack-Downloadseite übernommen wurde (die ihn weiterhin anzeigt). **Robotik** (neue Version und Hinweise zur ROS-2-Distribution), **System überprüfen**, den **Migrationsleitfaden für JetPack 6.x → 7.2** und die **FAQ** aktualisiert. |
 | 2026-09-24 | **Glossar** und diesen **Changelog** hinzugefügt. Kontaktinformationen von Juxi Technology (technischer Support, Vertrieb, Produktfragen) in FAQ, Fehlerbehebung und Downloads aufgenommen; den Juxi-Produktkatalog für Zubehör verlinkt. |
 | 2026-09-23 | Erster Dokumentationssatz als Entwurf veröffentlicht: Schnellstart, Flashen & Updates, System überprüfen, Produktübersicht, Schnittstellen & Hardware-Layout, FAQ, Fehlerbehebung, Downloads und der Migrationsleitfaden für JetPack 6.x → 7.2. Alle Seiten wurden anhand der offiziellen NVIDIA-Dokumentation verfasst. |
 

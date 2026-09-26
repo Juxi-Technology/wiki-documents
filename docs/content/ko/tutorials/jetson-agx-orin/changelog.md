@@ -15,6 +15,11 @@ verified_against:
     checked: 2026-09-24
   - source: https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf
     checked: 2026-09-24
+  - source: https://nvidia-isaac-ros.github.io/releases/index.html
+    checked: 2026-09-26
+  - source: https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages
+    checked: 2026-09-26
+    note: source for the CUDA 13.2.2 / VPI 4.1.4 correction
 review_owner: cheny
 ---
 
@@ -24,6 +29,8 @@ review_owner: cheny
 
 | 날짜 | 변경 내용 |
 |---|---|
+| 2026-09-26 | **JetPack 7.2.1의 구성 요소 버전 두 개를 정정했습니다: CUDA 13.2.1 → 13.2.2, VPI 4.1.3 → 4.1.4.** 두 버전 모두 NVIDIA JetPack 다운로드 페이지에서 가져온 값이었는데, 해당 요약 표에는 아직 JetPack **7.2** 값이 실려 있습니다. 버전은 NVIDIA Jetson apt 저장소의 `nvidia-jetpack` 7.2.1 의존성 체인을 통해 확인했습니다. **시스템 검증**(표 출처 주석), **용어집**, **FAQ**, **JetPack 6.x → 7.2 마이그레이션 가이드**, 제품 페이지를 업데이트했습니다. 또한 해당 페이지가 구성 요소 버전 출처로 인용되는 모든 곳(**다운로드**, **용어집**, **DeepStream**, **마이그레이션 가이드**)에 "이 표는 뒤처져 있습니다"라는 주의 문구를 추가했습니다. |
+| 2026-09-26 | **JetPack 7.2에서의 Isaac ROS 상태를 정정했습니다.** Isaac ROS 4.6.0(2026-08-18)이 Jetson Orin + JetPack 7.2 지원을 추가하여, 이전에 JetPack 다운로드 페이지에서 가져온 "출시 예정" 상태를 대체했습니다(해당 페이지에는 아직 그대로 표시되어 있습니다). **로보틱스**(새 버전 및 ROS 2 배포판 안내), **시스템 검증**, **JetPack 6.x → 7.2 마이그레이션 가이드**, **FAQ**를 업데이트했습니다. |
 | 2026-09-24 | **용어집(Glossary)**과 이 **변경 이력(Changelog)**을 추가했습니다. FAQ, 문제 해결, 다운로드에 Juxi Technology 연락처 정보(기술 지원, 영업, 제품 문의)를 추가하고, 액세서리용 Juxi 제품 카탈로그를 링크했습니다. |
 | 2026-09-23 | 최초 문서 세트를 초안으로 게시: 빠른 시작, 플래싱 및 업데이트, 시스템 검증, 제품 개요, 인터페이스 및 하드웨어 레이아웃, FAQ, 문제 해결, 다운로드, 그리고 JetPack 6.x → 7.2 마이그레이션 가이드. 모든 페이지는 NVIDIA 공식 문서를 기준으로 작성했습니다. |
 

@@ -11,6 +11,10 @@ hardware_verified: false
 verified_against:
   - source: https://developer.nvidia.com/embedded/jetpack/downloads
     checked: 2026-09-23
+    note: component table lags on some rows (VPI/PVA still show 7.2 values) — see the caveat in the body
+  - source: https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages
+    checked: 2026-09-26
+    note: authoritative source for installed component versions
   - source: https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html
     checked: 2026-09-23
 review_owner: cheny
@@ -19,12 +23,13 @@ review_owner: cheny
 # Download e link ufficiali
 
 Tutti i link di questa pagina rimandano a **risorse ufficiali NVIDIA** e sono
-stati verificati il **2026-09-23**. Per gli aggiornamenti, consideri i primi due
+stati verificati il **2026-09-23** (un avviso sulle versioni dei componenti è
+stato aggiunto il 2026-09-26). Per gli aggiornamenti, consideri i primi due
 link il punto di partenza di riferimento.
 
 ## JetPack 7.2.1 / Jetson Linux 39.2.1
 
-- [JetPack SDK Downloads and Release Notes](https://developer.nvidia.com/embedded/jetpack/downloads) — **hub di riferimento**: informazioni sulla release, versioni dei componenti e tutti i download
+- [JetPack SDK Downloads and Release Notes](https://developer.nvidia.com/embedded/jetpack/downloads) — **hub di riferimento** per informazioni sulla release e i download. ⚠️ **La sua tabella dei componenti è in ritardo riga per riga**: al 2026-09-26 riporta ancora i valori di JetPack **7.2** per VPI e PVA, e la sua riga Isaac ROS dice ancora "in arrivo" (rilasciato a partire dalla 4.6.0). Per le versioni che un sistema JetPack 7.2.1 installa effettivamente, utilizzi il [repository apt di NVIDIA per Jetson](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages) — veda [Verificare il sistema](/it/tutorials/jetson-agx-orin/verify-your-system).
 - [Immagine ISO JetPack (r39.2.1)](https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/iso) — l'immagine di installazione USB utilizzata nel nostro [Avvio rapido](/it/tutorials/jetson-agx-orin/quick-start)
 - [NVIDIA SDK Manager](https://developer.nvidia.com/sdk-manager) — strumento di flashing da PC host
 - [Immagini Yocto per Jetson AGX Orin](https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/yocto2) — recipe e immagini ufficiali Yocto/OpenEmbedded
@@ -60,7 +65,8 @@ link il punto di partenza di riferimento.
 
 ## Fonti
 
-- [JetPack SDK Downloads and Release Notes](https://developer.nvidia.com/embedded/jetpack/downloads) (verificato il 2026-09-23)
+- [JetPack SDK Downloads and Release Notes](https://developer.nvidia.com/embedded/jetpack/downloads) (verificato il 2026-09-23; avviso sulla tabella dei componenti il 2026-09-26)
+- [NVIDIA Jetson apt repository — indice Packages](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages) — fonte autorevole per le versioni dei componenti installati (verificato il 2026-09-26)
 
 *Stato: bozza, in attesa di revisione da parte di cheny.*
 

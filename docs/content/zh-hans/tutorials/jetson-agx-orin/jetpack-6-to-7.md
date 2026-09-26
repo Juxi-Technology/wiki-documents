@@ -15,9 +15,16 @@ verified_against:
     checked: 2026-09-23
   - source: https://developer.nvidia.com/embedded/jetpack/downloads
     checked: 2026-09-23
+    note: its component table lags on some rows (VPI/PVA still show 7.2 values)
   - source: https://wiki.seeedstudio.com/jetpack_7_2_resource_hub/
     checked: 2026-09-23
     note: secondary source — used for migration-topic organization only
+  - source: https://nvidia-isaac-ros.github.io/releases/index.html
+    checked: 2026-09-26
+    note: Isaac ROS support status — supersedes the "coming soon" note in the migration checklist
+  - source: https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages
+    checked: 2026-09-26
+    note: CUDA 13.2.2 (not the 13.2.1 shown on the JetPack downloads page) per the nvidia-jetpack 7.2.1 dependency chain
 review_owner: cheny
 ---
 
@@ -33,7 +40,7 @@ review_owner: cheny
 | Jetson Linux (L4T) | 36.x(6.2 使用 36.4.x) | **39.2.1** |
 | 操作系统 / 根文件系统 | Ubuntu 22.04 | **Ubuntu 24.04** |
 | Linux 内核 | 5.15 | **6.8** |
-| CUDA | 12.x | **13.2.1** |
+| CUDA | 12.x | **13.2.2** |
 | TensorRT | 10.x(6.x 时代) | **10.16.2** |
 
 > JetPack 6.x 一列的数值仅为示意(JetPack 6.2 时代)。规划前请先用
@@ -63,7 +70,7 @@ review_owner: cheny
 
 ## 推荐的迁移顺序
 
-1. 在*清空任何内容之前*,先**确认你的软件栈在 7.2.1 上受支持**——逐一核对你依赖的每个组件,对照 NVIDIA 的 [JetPack 7.2.1 组件列表](https://developer.nvidia.com/embedded/jetpack/downloads)(例如,Isaac ROS 在本版本中标注为“即将推出”)。
+1. 在*清空任何内容之前*,先**确认你的软件栈在 7.2.1 上受支持**——逐一核对你依赖的每个组件,对照 NVIDIA 的 [JetPack 7.2.1 组件列表](https://developer.nvidia.com/embedded/jetpack/downloads)。对于独立发布的 SDK,该页面可能滞后:它仍将 Isaac ROS 标注为“即将推出”,尽管 Isaac ROS 4.6.0 已加入对 Jetson Orin + JetPack 7.2 的支持(参见 [JetPack 7.2 上的机器人开发](/zh-hans/tutorials/jetson-agx-orin/robotics))。
 2. **备份:**应用数据、传感器标定文件、容器卷、设备树源码、TensorRT 构建脚本/ONNX 模型。
 3. **刷写 JetPack 7.2.1** ([刷机与更新](/zh-hans/tutorials/jetson-agx-orin/flashing-and-updates)),并验证:启动、存储、网络,以及 Force Recovery 模式仍然可用。
 4. **恢复外设:**Wi-Fi、摄像头、CAN 或现场总线驱动——均针对内核 6.8 重新构建。
@@ -80,7 +87,7 @@ review_owner: cheny
 ## 资料来源
 
 - [Jetson Linux 39.2.0 发行说明(PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf)——*What's New*、已知问题(检查于 2026-09-23)
-- [JetPack SDK 下载——组件列表](https://developer.nvidia.com/embedded/jetpack/downloads)(检查于 2026-09-23)
+- [JetPack SDK 下载](https://developer.nvidia.com/embedded/jetpack/downloads)(检查于 2026-09-23)——⚠️ 其组件表在部分行上滞后;7.2.1 系统实际安装的版本请参见[验证你的系统](/zh-hans/tutorials/jetson-agx-orin/verify-your-system)
 - [Seeed Studio JetPack 7.2 资源中心](https://wiki.seeedstudio.com/jetpack_7_2_resource_hub/)——次要来源;仅用于迁移主题的组织(检查于 2026-09-23)
 
 *状态:草稿,待 cheny 审核。内容依据所列日期的 NVIDIA 官方

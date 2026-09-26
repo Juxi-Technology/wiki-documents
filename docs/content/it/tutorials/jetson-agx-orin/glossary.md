@@ -14,8 +14,12 @@ hardware_verified: false
 verified_against:
   - source: https://developer.nvidia.com/embedded/jetpack/downloads
     checked: 2026-09-24
+    note: its component table lags on some rows (VPI/PVA still show 7.2 values) — component versions per the apt repository below
   - source: https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html
     checked: 2026-09-24
+  - source: https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages
+    checked: 2026-09-26
+    note: component versions verified through the nvidia-jetpack 7.2.1-b49 dependency chain
 review_owner: cheny
 ---
 
@@ -23,7 +27,7 @@ review_owner: cheny
 
 I termini che i clienti chiedono più spesso, raggruppati per argomento. I
 numeri di versione si riferiscono al rilascio attuale (**JetPack 7.2.1 / L4T
-39.2.1**, verificato il 2026-09-24).
+39.2.1**; versioni dei componenti riverificate il 2026-09-26).
 
 ## Piattaforma e hardware
 
@@ -64,7 +68,7 @@ numeri di versione si riferiscono al rilascio attuale (**JetPack 7.2.1 / L4T
 
 | JetPack | Jetson Linux (L4T) | Ubuntu | Kernel | CUDA |
 |---|---|---|---|---|
-| **7.2.1** (attuale) | **39.2.1** | **24.04** | **6.8** | **13.2.1** |
+| **7.2.1** (attuale) | **39.2.1** | **24.04** | **6.8** | **13.2.2** |
 | 6.x (generazione precedente) | 36.x | 22.04 | 5.15 | 12.x |
 
 Verifichi sempre cosa esegue effettivamente un sistema specifico:
@@ -74,12 +78,12 @@ Verifichi sempre cosa esegue effettivamente un sistema specifico:
 
 | Termine | Significato |
 |---|---|
-| **CUDA** | Il toolkit di computing GPU di NVIDIA (13.2.1 in questo rilascio). |
+| **CUDA** | Il toolkit di computing GPU di NVIDIA (13.2.2 in questo rilascio). |
 | **cuDNN** | Libreria di primitive ottimizzate per il deep learning (9.20.0). |
 | **TensorRT** | Ottimizzatore e runtime di inferenza (10.16.2). |
 | **TensorRT engine** | Un file modello compilato, specifico per hardware/versione. Gli engine **non** sopravvivono agli aggiornamenti di versione — li ricostruisca. |
 | **DeepStream** | SDK per l'analisi video multi-stream (9.1). |
-| **VPI** | Vision Programming Interface — elaborazione delle immagini accelerata via hardware (4.1.3). |
+| **VPI** | Vision Programming Interface — elaborazione delle immagini accelerata via hardware (4.1.4). |
 | **Holoscan** | Framework di IA in streaming per l'elaborazione dei sensori in tempo reale (3.9.0). |
 | **NGC** | Il catalogo NVIDIA di container e modelli preaddestrati (catalog.ngc.nvidia.com). |
 | **Container** | Runtime isolato e pacchettizzato (Docker); il modo standard per distribuire software di IA su Jetson. |
@@ -105,7 +109,7 @@ Verifichi sempre cosa esegue effettivamente un sistema specifico:
 
 ## Fonti
 
-- [JetPack SDK Downloads — versioni dei componenti](https://developer.nvidia.com/embedded/jetpack/downloads) (verificato il 2026-09-24)
+- [NVIDIA Jetson apt repository — versioni effettive dei componenti](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages) (verificato il 2026-09-26) — tramite la catena di dipendenze di `nvidia-jetpack` 7.2.1; la tabella riepilogativa della [pagina dei download di JetPack](https://developer.nvidia.com/embedded/jetpack/downloads) è in ritardo (riporta ancora CUDA 13.2.1 / VPI 4.1.3)
 - [Jetson AGX Orin Developer Kit User Guide](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html) (verificato il 2026-09-24)
 
 *Stato: bozza, in attesa di revisione da parte di cheny. Definizioni compilate

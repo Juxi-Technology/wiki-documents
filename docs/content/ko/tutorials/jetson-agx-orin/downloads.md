@@ -10,6 +10,10 @@ hardware_verified: false
 verified_against:
   - source: https://developer.nvidia.com/embedded/jetpack/downloads
     checked: 2026-09-23
+    note: component table lags on some rows (VPI/PVA still show 7.2 values) — see the caveat in the body
+  - source: https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages
+    checked: 2026-09-26
+    note: authoritative source for installed component versions
   - source: https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html
     checked: 2026-09-23
 review_owner: cheny
@@ -17,11 +21,11 @@ review_owner: cheny
 
 # 다운로드 및 공식 링크
 
-이 페이지의 모든 항목은 **NVIDIA 공식 리소스**로 연결되며, **2026-09-23**에 확인되었습니다. 업데이트는 처음 두 링크를 정본 시작점으로 삼으십시오.
+이 페이지의 모든 항목은 **NVIDIA 공식 리소스**로 연결되며, **2026-09-23**에 확인되었습니다(구성 요소 버전 관련 주의 사항은 2026-09-26에 추가되었습니다). 업데이트는 처음 두 링크를 정본 시작점으로 삼으십시오.
 
 ## JetPack 7.2.1 / Jetson Linux 39.2.1
 
-- [JetPack SDK 다운로드 및 릴리스 노트](https://developer.nvidia.com/embedded/jetpack/downloads) — **정본 허브**: 릴리스 정보, 구성 요소 버전, 모든 다운로드
+- [JetPack SDK 다운로드 및 릴리스 노트](https://developer.nvidia.com/embedded/jetpack/downloads) — 릴리스 정보와 다운로드를 위한 **정본 허브**. ⚠️ **해당 페이지의 구성 요소 표는 행마다 갱신이 뒤처져 있습니다**: 2026-09-26 기준으로 VPI와 PVA에는 여전히 JetPack **7.2** 값이 실려 있고, Isaac ROS 행은 여전히 "출시 예정"으로 표기되어 있습니다(4.6.0부터 출시됨). JetPack 7.2.1 시스템이 실제로 설치하는 버전은 NVIDIA의 [Jetson apt 저장소](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages)에서 확인하십시오 — [시스템 검증](/ko/tutorials/jetson-agx-orin/verify-your-system)을 참조하십시오.
 - [JetPack ISO 이미지(r39.2.1)](https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/iso) — 저희 [퀵 스타트](/ko/tutorials/jetson-agx-orin/quick-start)에서 사용하는 USB 설치 이미지
 - [NVIDIA SDK Manager](https://developer.nvidia.com/sdk-manager) — 호스트 PC용 플래싱 도구
 - [Jetson AGX Orin용 Yocto 이미지](https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/yocto2) — 공식 Yocto/OpenEmbedded 레시피와 이미지
@@ -57,7 +61,8 @@ review_owner: cheny
 
 ## 출처
 
-- [JetPack SDK 다운로드 및 릴리스 노트](https://developer.nvidia.com/embedded/jetpack/downloads)(2026-09-23 확인)
+- [JetPack SDK 다운로드 및 릴리스 노트](https://developer.nvidia.com/embedded/jetpack/downloads)(2026-09-23 확인, 구성 요소 표 주의 사항 2026-09-26)
+- [NVIDIA Jetson apt 저장소 — Packages 색인](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages) — 설치된 구성 요소 버전의 권위 있는 출처(2026-09-26 확인)
 
 *상태: 초안, cheny의 검토 대기 중.*
 

@@ -10,6 +10,10 @@ hardware_verified: false
 verified_against:
   - source: https://developer.nvidia.com/embedded/jetpack/downloads
     checked: 2026-09-23
+    note: component table lags on some rows (VPI/PVA still show 7.2 values) — see the caveat in the body
+  - source: https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages
+    checked: 2026-09-26
+    note: authoritative source for installed component versions
   - source: https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html
     checked: 2026-09-23
 review_owner: cheny
@@ -17,11 +21,11 @@ review_owner: cheny
 
 # 下載與官方連結
 
-本頁所有內容均指向 **NVIDIA 官方資源**，並已於 **2026-09-23** 核對。如需取得更新，請把前兩條連結作為權威起點。
+本頁所有內容均指向 **NVIDIA 官方資源**，並已於 **2026-09-23** 核對(組件版本相關提示於 2026-09-26 補充)。如需取得更新，請把前兩條連結作為權威起點。
 
 ## JetPack 7.2.1 / Jetson Linux 39.2.1
 
-- [JetPack SDK 下載與發佈說明](https://developer.nvidia.com/embedded/jetpack/downloads) — **權威樞紐**：發佈資訊、組件版本、全部下載
+- [JetPack SDK 下載與發佈說明](https://developer.nvidia.com/embedded/jetpack/downloads) — **權威樞紐**：發佈資訊與下載。⚠️ **其組件表逐列滯後**：截至 2026-09-26，VPI 與 PVA 兩列仍顯示 JetPack **7.2** 的數值，且 Isaac ROS 一列仍寫著「即將推出」(實際上自 4.6.0 起即已發布)。若要確認 JetPack 7.2.1 系統實際安裝的版本，請以 NVIDIA 的 [Jetson apt 套件倉庫](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages) 為準——參見[驗證你的系統](/zh-hant/tutorials/jetson-agx-orin/verify-your-system)。
 - [JetPack ISO 映像(r39.2.1)](https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/iso) — 我們在[快速入門](/zh-hant/tutorials/jetson-agx-orin/quick-start)中使用的 USB 安裝映像
 - [NVIDIA SDK Manager](https://developer.nvidia.com/sdk-manager) — 主機 PC 燒錄工具
 - [Jetson AGX Orin 的 Yocto 映像](https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/yocto2) — 官方 Yocto/OpenEmbedded 配方與映像
@@ -57,7 +61,8 @@ review_owner: cheny
 
 ## 來源
 
-- [JetPack SDK 下載與發佈說明](https://developer.nvidia.com/embedded/jetpack/downloads)(已於 2026-09-23 核對)
+- [JetPack SDK 下載與發佈說明](https://developer.nvidia.com/embedded/jetpack/downloads)(已於 2026-09-23 核對；組件表相關提示於 2026-09-26 補充)
+- [NVIDIA Jetson apt 套件倉庫——Packages 索引](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages) — 已安裝組件版本的權威來源(已於 2026-09-26 核對)
 
 *狀態：草稿，待 cheny 審核。*
 

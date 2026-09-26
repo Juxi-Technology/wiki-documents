@@ -17,6 +17,11 @@ verified_against:
     checked: 2026-09-23
   - source: https://developer.nvidia.com/embedded/jetpack/downloads
     checked: 2026-09-23
+  - source: https://nvidia-isaac-ros.github.io/releases/index.html
+    checked: 2026-09-26
+  - source: https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages
+    checked: 2026-09-26
+    note: CUDA 13.2.2 / component versions per the nvidia-jetpack 7.2.1 dependency chain
 review_owner: cheny
 ---
 
@@ -44,7 +49,7 @@ Manager / 書き込みスクリプト)を使う場合、またはヘッドレス
 [書き込みと更新](/ja/tutorials/jetson-agx-orin/flashing-and-updates)を参照してください。
 
 **現在のソフトウェアバージョンは何ですか?**
-JetPack **7.2.1**(Jetson Linux **39.2.1**、Ubuntu 24.04、CUDA 13.2.1、
+JetPack **7.2.1**(Jetson Linux **39.2.1**、Ubuntu 24.04、CUDA 13.2.2、
 TensorRT 10.16.2)です。お使いのキットが動作しているバージョンは
 [システムの確認](/ja/tutorials/jetson-agx-orin/verify-your-system)で確認してください。
 
@@ -81,9 +86,14 @@ NVIDIA NemoClaw を開発キット上に 1 つのコマンドでインストー�
 公開されています。
 
 **ロボティクス関連:JetPack 7.2 で Isaac ROS は利用できますか?**
-まだです。NVIDIA の JetPack 7.2.1 ダウンロードページでは、Isaac ROS は本リリースに
-おいて **「近日公開予定」** と記載されています。Isaac ROS に依存する作業を計画する
-前に、同ページを確認してください。
+はい — Isaac ROS はリリース **4.6.0**(2026-08-18)以降、JetPack 7.2 上の
+Jetson Orin をサポートしており、公式の AGX Orin セットアップウォークスルーも
+提供されています。なお、NVIDIA の JetPack ダウンロードページには依然として
+「近日公開」と表示されています:Isaac ROS は JetPack とは独立してリリースされる
+ため、Isaac ROS 自身のリリースノートが優先されます。バージョンと ROS 2
+ディストリビューションの選択(4.6.x = Jazzy、5.0 = Lyrical)、および既知の
+制約については、[ロボティクス(現状)](/ja/tutorials/jetson-agx-orin/robotics)を
+参照してください。
 
 ## サポートとサービス
 

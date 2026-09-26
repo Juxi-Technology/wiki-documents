@@ -16,6 +16,12 @@ verified_against:
     checked: 2026-09-23
   - source: https://developer.nvidia.com/embedded/jetpack/downloads
     checked: 2026-09-23
+    note: still lists Isaac ROS as "coming soon"; see the note under Step 3
+  - source: https://nvidia-isaac-ros.github.io/releases/index.html
+    checked: 2026-09-26
+  - source: https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages
+    checked: 2026-09-26
+    note: component versions verified through the nvidia-jetpack 7.2.1-b49 dependency chain
 review_owner: cheny
 ---
 
@@ -62,25 +68,29 @@ sudo apt install nvidia-jetpack
 
 ## ステップ 3：JetPack 7.2.1 の期待バージョン
 
-下表は **JetPack 7.2.1 / Jetson Linux 39.2.1** に関する NVIDIA 公式のコンポーネント一覧です(2026-09-23 に NVIDIA の JetPack ダウンロードページで確認):
+下表は **JetPack 7.2.1 / Jetson Linux 39.2.1** が実際にインストールする内容の一覧です — 2026-09-26 に [NVIDIA の Jetson apt リポジトリ](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages) の `nvidia-jetpack` 7.2.1 依存チェーンを通じて確認しました:
 
 | コンポーネント | バージョン |
 |---|---|
 | Jetson Linux (L4T) | 39.2.1 |
 | オペレーティングシステム | Ubuntu 24.04 (L4T) |
 | カーネル | 6.8 |
-| CUDA | 13.2.1 |
+| CUDA | 13.2.2 |
 | cuDNN | 9.20.0 |
 | TensorRT | 10.16.2 |
-| VPI(コンピュータビジョン) | 4.1.3 |
+| VPI(コンピュータビジョン) | 4.1.4 |
 | V4L2 | 1.22.1 |
 | DeepStream SDK | 9.1 |
 | Holoscan SDK | 3.9.0 |
 | Nsight Systems | 2026.3 |
 | NVIDIA Container Toolkit | 1.19(ISO イメージ同梱) |
-| Isaac ROS | **JetPack 7 では未提供**(NVIDIA によると「近日公開予定」) |
+| Isaac ROS | *JetPack ページでは「近日公開予定」* — 別途リリース済み、下記の注記を参照 |
 
-> **Juxi 注記:** `dpkg` はパッケージのバージョンにビルドサフィックス(例えば `13.2.1-b48`)を付けて表示することがありますが、これは正常です — サフィックスではなくバージョン番号を照合してください。ロボティクス関連のユーザーは、Isaac ROS に依存する作業を計画する前に Isaac ROS の行を確認してください。
+> **Juxi 注記:** `dpkg` はパッケージのバージョンにビルドサフィックスまたはリビジョンサフィックス(例えば `13.2.2-1`、L4T パッケージの場合は `7.2.1-b49`)を付けて表示することがありますが、これは正常です — サフィックスではなくバージョン番号を照合してください。
+>
+> **JetPack ダウンロードページが遅れている箇所(2026-09-26 に確認):** 同ページのサマリ表には依然として CUDA **13.2.1** と VPI **4.1.3** が記載されています — これらは JetPack **7.2** の値です。`nvidia-jetpack` 7.2.1 がインストールするのは CUDA **13.2.2**(ビルド 13.2.86)と VPI **4.1.4** です。正式な情報源は上記の apt リポジトリです。
+>
+> **Isaac ROS(2026-09-26 に再確認):** JetPack ダウンロードページには依然として「近日公開予定」と表示されていますが、Isaac ROS はリリース **4.6.0**(2026-08-18)以降 Jetson Orin + JetPack 7.2 をサポートしています。Isaac ROS は JetPack とは独立してリリースされるため、Isaac ROS 自身のリリースノートが有効な情報源です。ロボティクス関連のユーザーは、Isaac ROS に依存する作業を計画する前に [JetPack 7.2 のロボティクス](/ja/tutorials/jetson-agx-orin/robotics) をお読みください。
 
 ## オプション — システムの稼働状況を簡単に確認
 

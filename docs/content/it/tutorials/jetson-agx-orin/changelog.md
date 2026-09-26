@@ -15,6 +15,11 @@ verified_against:
     checked: 2026-09-24
   - source: https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf
     checked: 2026-09-24
+  - source: https://nvidia-isaac-ros.github.io/releases/index.html
+    checked: 2026-09-26
+  - source: https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages
+    checked: 2026-09-26
+    note: source for the CUDA 13.2.2 / VPI 4.1.4 correction
 review_owner: cheny
 ---
 
@@ -24,6 +29,8 @@ review_owner: cheny
 
 | Data | Modifica |
 |---|---|
+| 2026-09-26 | **Corrette due versioni dei componenti per JetPack 7.2.1: CUDA 13.2.1 → 13.2.2 e VPI 4.1.3 → 4.1.4.** Entrambe erano state ricavate dalla pagina dei download di JetPack di NVIDIA, la cui tabella riepilogativa riporta ancora i valori di JetPack **7.2**; le versioni sono state verificate attraverso la catena di dipendenze di `nvidia-jetpack` 7.2.1 nel repository apt di NVIDIA per Jetson. Aggiornati **Verificare il sistema** (nota sulla fonte della tabella), il **Glossario**, le **FAQ**, la **guida alla migrazione da JetPack 6.x a 7.2** e la pagina prodotto. Aggiunto inoltre un avviso "questa tabella è in ritardo" ovunque quella pagina sia citata come fonte per le versioni dei componenti (**Download**, **Glossario**, **DeepStream**, **guida alla migrazione**). |
+| 2026-09-26 | **Corretto lo stato di Isaac ROS su JetPack 7.2.** Isaac ROS 4.6.0 (2026-08-18) ha aggiunto il supporto per Jetson Orin + JetPack 7.2, superando lo stato "in arrivo" ricavato in precedenza dalla pagina dei download di JetPack (che lo mostra ancora). Aggiornati **Robotica** (nuova versione e indicazioni sulla distribuzione ROS 2), **Verificare il sistema**, la **guida alla migrazione da JetPack 6.x a 7.2** e le **FAQ**. |
 | 2026-09-24 | Aggiunti il **Glossario** e questo **Registro delle modifiche**. Aggiunte le informazioni di contatto di Juxi Technology (supporto tecnico, vendite, domande sui prodotti) a FAQ, Risoluzione dei problemi e Download; aggiunto il link al catalogo prodotti di Juxi Technology per gli accessori. |
 | 2026-09-23 | Set di documentazione iniziale pubblicato come bozza: Avvio rapido, Flashing e aggiornamenti, Verificare il sistema, Panoramica del prodotto, Interfacce e layout hardware, FAQ, Risoluzione dei problemi, Download e la guida alla migrazione da JetPack 6.x a 7.2. Tutte le pagine sono state redatte sulla base della documentazione ufficiale di NVIDIA. |
 

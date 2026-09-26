@@ -17,6 +17,12 @@ verified_against:
     checked: 2026-09-23
   - source: https://developer.nvidia.com/embedded/jetpack/downloads
     checked: 2026-09-23
+    note: still lists Isaac ROS as "coming soon"; see the note under Step 3
+  - source: https://nvidia-isaac-ros.github.io/releases/index.html
+    checked: 2026-09-26
+  - source: https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages
+    checked: 2026-09-26
+    note: component versions verified through the nvidia-jetpack 7.2.1-b49 dependency chain
 review_owner: cheny
 ---
 
@@ -69,30 +75,44 @@ sudo apt install nvidia-jetpack
 
 ## Étape 3 — Versions attendues pour JetPack 7.2.1
 
-Le tableau ci-dessous est la liste officielle des composants NVIDIA pour
-**JetPack 7.2.1 / Jetson Linux 39.2.1** (vérifiée le 2026-09-23 sur la page de
-téléchargement JetPack de NVIDIA) :
+Le tableau ci-dessous liste ce que **JetPack 7.2.1 / Jetson Linux 39.2.1**
+installe réellement, vérifié le 2026-09-26 via la chaîne de dépendances de
+`nvidia-jetpack` 7.2.1 dans le [dépôt apt Jetson de NVIDIA](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages) :
 
 | Composant | Version |
 |---|---|
 | Jetson Linux (L4T) | 39.2.1 |
 | Système d'exploitation | Ubuntu 24.04 (L4T) |
 | Noyau | 6.8 |
-| CUDA | 13.2.1 |
+| CUDA | 13.2.2 |
 | cuDNN | 9.20.0 |
 | TensorRT | 10.16.2 |
-| VPI (vision par ordinateur) | 4.1.3 |
+| VPI (vision par ordinateur) | 4.1.4 |
 | V4L2 | 1.22.1 |
 | DeepStream SDK | 9.1 |
 | Holoscan SDK | 3.9.0 |
 | Nsight Systems | 2026.3 |
 | NVIDIA Container Toolkit | 1.19 (avec image ISO) |
-| Isaac ROS | **Pas encore disponible pour JetPack 7** (« bientôt disponible » selon NVIDIA) |
+| Isaac ROS | *« bientôt disponible » sur la page JetPack* — publié séparément ; voir la remarque ci-dessous |
 
 > **Remarque de Juxi :** `dpkg` peut afficher les versions de paquets avec des
-> suffixes de compilation (par exemple `13.2.1-b48`) ; c'est normal — comparez
-> le numéro de version, pas le suffixe. Utilisateurs en robotique : vérifiez la
-> ligne Isaac ROS avant de planifier des travaux qui en dépendent.
+> suffixes de compilation ou de révision (par exemple `13.2.2-1`, ou `7.2.1-b49`
+> pour les paquets L4T) ; c'est normal — comparez le numéro de version, pas le
+> suffixe.
+>
+> **Là où la page de téléchargement JetPack est en retard (vérifié le 2026-09-26) :**
+> le tableau récapitulatif de cette page indique encore CUDA **13.2.1** et VPI
+> **4.1.3** — ce sont les valeurs de JetPack **7.2**. `nvidia-jetpack` 7.2.1
+> installe CUDA **13.2.2** (build 13.2.86) et VPI **4.1.4**. Le dépôt apt
+> ci-dessus fait foi.
+>
+> **Isaac ROS (revérifié le 2026-09-26) :** la page de téléchargement JetPack
+> indique toujours « bientôt disponible », mais Isaac ROS prend en charge
+> Jetson Orin + JetPack 7.2 depuis la version **4.6.0** (2026-08-18). Isaac ROS
+> est publié indépendamment de JetPack ; ses propres notes de version font donc
+> foi. Utilisateurs en robotique : consultez
+> [Robotique sous JetPack 7.2](/fr/tutorials/jetson-agx-orin/robotics) avant de
+> planifier des travaux qui en dépendent.
 
 ## Facultatif — un rapide coup d'œil à l'activité du système
 

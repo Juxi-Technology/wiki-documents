@@ -16,6 +16,12 @@ verified_against:
     checked: 2026-09-23
   - source: https://developer.nvidia.com/embedded/jetpack/downloads
     checked: 2026-09-23
+    note: still lists Isaac ROS as "coming soon"; see the note under Step 3
+  - source: https://nvidia-isaac-ros.github.io/releases/index.html
+    checked: 2026-09-26
+  - source: https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages
+    checked: 2026-09-26
+    note: component versions verified through the nvidia-jetpack 7.2.1-b49 dependency chain
 review_owner: cheny
 ---
 
@@ -62,25 +68,29 @@ sudo apt install nvidia-jetpack
 
 ## 第 3 步 —— JetPack 7.2.1 的预期版本
 
-下表是 NVIDIA 官方给出的 **JetPack 7.2.1 / Jetson Linux 39.2.1** 组件清单（于 2026-09-23 在 NVIDIA JetPack 下载页核对）：
+下表列出的是 **JetPack 7.2.1 / Jetson Linux 39.2.1** 实际安装的组件，于 2026-09-26 通过 [NVIDIA 的 Jetson apt 仓库](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages)中的 `nvidia-jetpack` 7.2.1 依赖链核对：
 
 | 组件 | 版本 |
 |---|---|
 | Jetson Linux (L4T) | 39.2.1 |
 | 操作系统 | Ubuntu 24.04 (L4T) |
 | 内核 | 6.8 |
-| CUDA | 13.2.1 |
+| CUDA | 13.2.2 |
 | cuDNN | 9.20.0 |
 | TensorRT | 10.16.2 |
-| VPI（计算机视觉） | 4.1.3 |
+| VPI（计算机视觉） | 4.1.4 |
 | V4L2 | 1.22.1 |
 | DeepStream SDK | 9.1 |
 | Holoscan SDK | 3.9.0 |
 | Nsight Systems | 2026.3 |
 | NVIDIA Container Toolkit | 1.19（含 ISO 镜像） |
-| Isaac ROS | **JetPack 7 尚未提供**（据 NVIDIA 称“即将推出”） |
+| Isaac ROS | *JetPack 页面仍显示“即将推出”*——独立发布，见下方说明 |
 
-> **钜犀注：** `dpkg` 显示的软件包版本可能带有构建后缀（例如 `13.2.1-b48`），这属于正常现象——请比对版本号本身，而不是后缀。机器人方向的用户请注意：在规划依赖 Isaac ROS 的工作之前，先查看 Isaac ROS 这一行。
+> **钜犀注：** `dpkg` 显示的软件包版本可能带有构建或修订后缀（例如 `13.2.2-1`，L4T 软件包则如 `7.2.1-b49`），这属于正常现象——请比对版本号本身，而不是后缀。
+>
+> **JetPack 下载页滞后的地方（2026-09-26 核对）：** 该页面的汇总表仍显示 CUDA **13.2.1** 和 VPI **4.1.3**——那是 JetPack **7.2** 的版本号。`nvidia-jetpack` 7.2.1 实际安装的是 CUDA **13.2.2**（构建号 13.2.86）和 VPI **4.1.4**。以上面的 apt 仓库为准。
+>
+> **Isaac ROS（2026-09-26 重新核对）：** JetPack 下载页仍显示“即将推出”，但 Isaac ROS 自 **4.6.0** 版（2026-08-18）发布起已支持 Jetson Orin + JetPack 7.2。Isaac ROS 独立于 JetPack 发布，因此其自身的发行说明才是权威来源。机器人方向的用户：在规划依赖 Isaac ROS 的工作之前，请先阅读 [机器人(现状)](/zh-hans/tutorials/jetson-agx-orin/robotics)。
 
 ## 可选 —— 快速查看系统活动
 

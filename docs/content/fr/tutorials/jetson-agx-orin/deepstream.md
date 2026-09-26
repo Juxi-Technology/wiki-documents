@@ -18,6 +18,7 @@ verified_against:
     checked: 2026-09-24
   - source: https://developer.nvidia.com/embedded/jetpack/downloads
     checked: 2026-09-24
+    note: its component table lags on some rows (VPI/PVA still show 7.2 values) — see the Sources caveat
 review_owner: cheny
 ---
 
@@ -140,7 +141,7 @@ Remarques issues du démarrage rapide officiel :
 
 - [DeepStream Installation Guide](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_Installation.html) (vérifié le 2026-09-24)
 - [DeepStream Quickstart Guide](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_Quickstart.html) (vérifié le 2026-09-24)
-- [JetPack 7.2.1 component list](https://developer.nvidia.com/embedded/jetpack/downloads) (vérifié le 2026-09-24)
+- [page de téléchargement de JetPack 7.2.1](https://developer.nvidia.com/embedded/jetpack/downloads) (vérifié le 2026-09-24) — ⚠️ son tableau des composants est en retard sur certaines lignes ; pour les versions réellement installées, voir [Téléchargements](/fr/tutorials/jetson-agx-orin/downloads)
 
 *Statut : brouillon, en attente de relecture par cheny. Fondé sur la
 documentation officielle NVIDIA à la date indiquée ; pas encore vérifié sur

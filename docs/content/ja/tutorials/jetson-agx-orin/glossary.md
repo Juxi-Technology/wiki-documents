@@ -13,15 +13,19 @@ hardware_verified: false
 verified_against:
   - source: https://developer.nvidia.com/embedded/jetpack/downloads
     checked: 2026-09-24
+    note: its component table lags on some rows (VPI/PVA still show 7.2 values) — component versions per the apt repository below
   - source: https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html
     checked: 2026-09-24
+  - source: https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages
+    checked: 2026-09-26
+    note: component versions verified through the nvidia-jetpack 7.2.1-b49 dependency chain
 review_owner: cheny
 ---
 
 # 用語集
 
 お客様から最もよく問い合わせのある用語を、トピック別にまとめました。バージョン番号は
-現在のリリース(**JetPack 7.2.1 / L4T 39.2.1**、2026-09-24 確認)を反映しています。
+現在のリリース(**JetPack 7.2.1 / L4T 39.2.1**、コンポーネントバージョンは 2026-09-26 に再確認)を反映しています。
 
 ## プラットフォームとハードウェア
 
@@ -62,7 +66,7 @@ review_owner: cheny
 
 | JetPack | Jetson Linux(L4T) | Ubuntu | カーネル | CUDA |
 |---|---|---|---|---|
-| **7.2.1**(現行) | **39.2.1** | **24.04** | **6.8** | **13.2.1** |
+| **7.2.1**(現行) | **39.2.1** | **24.04** | **6.8** | **13.2.2** |
 | 6.x(前世代) | 36.x | 22.04 | 5.15 | 12.x |
 
 個々のシステムが実際に何で動作しているかは、必ず `cat /etc/nv_tegra_release` で確認してください。
@@ -71,12 +75,12 @@ review_owner: cheny
 
 | 用語 | 意味 |
 |---|---|
-| **CUDA** | NVIDIA の GPU コンピューティングツールキット(本リリースでは 13.2.1)。 |
+| **CUDA** | NVIDIA の GPU コンピューティングツールキット(本リリースでは 13.2.2)。 |
 | **cuDNN** | 最適化されたディープラーニングプリミティブのライブラリ(9.20.0)。 |
 | **TensorRT** | 推論オプティマイザー兼ランタイム(10.16.2)。 |
 | **TensorRT エンジン** | コンパイル済みの、ハードウェア/バージョン依存のモデルファイル。エンジンはバージョンアップでは**引き継がれません** — 再ビルドが必要です。 |
 | **DeepStream** | マルチストリーム映像解析向け SDK(9.1)。 |
-| **VPI** | Vision Programming Interface — ハードウェアアクセラレーションによる画像処理(4.1.3)。 |
+| **VPI** | Vision Programming Interface — ハードウェアアクセラレーションによる画像処理(4.1.4)。 |
 | **Holoscan** | リアルタイムセンサー処理向けのストリーミング AI フレームワーク(3.9.0)。 |
 | **NGC** | NVIDIA のコンテナと事前学習済みモデルのカタログ(catalog.ngc.nvidia.com)。 |
 | **コンテナ** | 分離されたパッケージ化済みの実行環境(Docker)。Jetson で AI ソフトウェアを配布する標準的な方法です。 |
@@ -102,7 +106,7 @@ review_owner: cheny
 
 ## 出典
 
-- [JetPack SDK ダウンロード — コンポーネントバージョン](https://developer.nvidia.com/embedded/jetpack/downloads)(2026-09-24 確認)
+- [NVIDIA Jetson apt リポジトリ — 実際のコンポーネントバージョン](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages)(2026-09-26 確認)— `nvidia-jetpack` 7.2.1 の依存関係チェーン経由。[JetPack ダウンロードページ](https://developer.nvidia.com/embedded/jetpack/downloads)の概要表は遅れており(依然として CUDA 13.2.1 / VPI 4.1.3 と記載)
 - [Jetson AGX Orin Developer Kit ユーザーガイド](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html)(2026-09-24 確認)
 
 *ステータス:ドラフト、cheny によるレビュー待ち。定義は NVIDIA のドキュメントと
