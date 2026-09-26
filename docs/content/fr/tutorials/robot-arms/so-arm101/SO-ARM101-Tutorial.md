@@ -1025,7 +1025,7 @@ Bras couper/remettre sous tension puis recalibrer ; utile aussi pour des angles 
 - À l'évaluation :
 
 ```Bash
-File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'
+File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/rollout_xxxx'
 ```
 
 Supprimer le dossier `rollout_` et relancer.

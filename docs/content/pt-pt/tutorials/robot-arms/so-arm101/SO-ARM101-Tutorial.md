@@ -1038,7 +1038,7 @@ Desligue e religue o braço robótico e tente calibrá-lo novamente. Se o ângul
 - Se ocorrer durante a fase de avaliação 
 
 ```Bash
-File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'
+File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/rollout_xxxx'
 ```
 
 Exclua primeiro a pasta que começa com `rollout_` e execute o programa novamente.

@@ -1011,7 +1011,7 @@ Apagar y encender el brazo y recalibrar; útil también con ángulos MAX de dece
 - En la evaluación:
 
 ```Bash
-File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'
+File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/rollout_xxxx'
 ```
 
 Eliminar la carpeta `rollout_` y relanzar.

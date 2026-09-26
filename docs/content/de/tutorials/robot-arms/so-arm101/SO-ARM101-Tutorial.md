@@ -1010,7 +1010,7 @@ Arm aus- und wieder einschalten, erneut kalibrieren. Hilft auch bei MAX-Winkel i
 - Bei der Evaluation:
 
 ```Bash
-File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'
+File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/rollout_xxxx'
 ```
 
 Den `rollout_`-Ordner löschen und erneut starten.

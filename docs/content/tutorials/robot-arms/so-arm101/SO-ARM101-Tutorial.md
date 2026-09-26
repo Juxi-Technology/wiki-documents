@@ -1035,7 +1035,7 @@ Power cycle the robotic arm, and then attempt to calibrate the robotic arm again
 - If encountered during the evaluation phase 
 
 ```Bash
-File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'
+File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/rollout_xxxx'
 ```
 
 Please first delete`the folder starting with rollout_`and then run the program again.

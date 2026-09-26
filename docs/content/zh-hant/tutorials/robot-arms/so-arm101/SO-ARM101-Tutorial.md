@@ -1041,7 +1041,7 @@ Magnitude 30841 exceeds 2047 (max for sign_bit_index=11)
 - 如果評估階段遇到
 
 ```Bash
-File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'
+File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/rollout_xxxx'
 ```
 
 請先刪除`rollout_`開頭的這個文件夾再次運行程序。

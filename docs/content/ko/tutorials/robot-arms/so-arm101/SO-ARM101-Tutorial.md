@@ -1017,7 +1017,7 @@ Magnitude 30841 exceeds 2047 (max for sign_bit_index=11)
 - 평가 단계에서 다음 오류 발생:
 
 ```Bash
-File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'
+File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/rollout_xxxx'
 ```
 
 `rollout_`로 시작하는 폴더를 삭제하고 다시 실행하세요.
