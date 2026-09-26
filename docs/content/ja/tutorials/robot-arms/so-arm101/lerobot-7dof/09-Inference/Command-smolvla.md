@@ -5,6 +5,8 @@ description: "smolvlaモデルのデプロイコマンドをUbuntuとMacそれ�
 
 # 推論コマンドライン\-smolvla
 
+> **注意:** LeRobot の新しいバージョンでは、ポリシー推論は専用の `lerobot-rollout` コマンドに移行し、`lerobot-record` はデータ収集専用になりました。下記の `lerobot-record --policy.path` コマンドは以前のバージョン向けです。
+
 ## Ubuntu
 
 - 既存の eval で始まるデータセットを削除する（ある場合）

@@ -5,6 +5,8 @@ description: "Exécutez un modèle Diffusion entraîné sur le bras 7-DOF : supp
 
 # Commande d'inférence \- Diffusion
 
+> **Remarque :** Les versions récentes de LeRobot ont déplacé l'inférence de politique vers la commande dédiée `lerobot-rollout` ; `lerobot-record` sert désormais uniquement à la collecte de données. La commande `lerobot-record --policy.path` ci-dessous s'applique aux versions antérieures.
+
 ## Ubuntu
 
 - Supprimer le dataset existant commençant par eval (le cas échéant)

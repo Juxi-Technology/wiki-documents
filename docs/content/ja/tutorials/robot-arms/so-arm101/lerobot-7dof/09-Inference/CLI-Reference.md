@@ -5,6 +5,8 @@ description: "訓練済みモデルのデプロイに使うコマンドの各パ
 
 # コマンドラインの説明
 
+> **注意:** LeRobot の新しいバージョンでは、ポリシー推論は専用の `lerobot-rollout` コマンドに移行し、`lerobot-record` はデータ収集専用になりました。下記の `lerobot-record --policy.path` コマンドは以前のバージョン向けです。
+
 ## コマンドラインの説明
 
 リアルタイム可視化あり：\-\-display\_data=true

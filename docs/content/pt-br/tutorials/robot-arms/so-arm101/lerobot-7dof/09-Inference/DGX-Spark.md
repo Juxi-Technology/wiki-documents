@@ -5,6 +5,8 @@ description: "Configure um NVIDIA DGX Spark com ambiente PyTorch e execute nele 
 
 # Inferência no NVIDIA DGX Spark
 
+> **Atenção:** as versões mais recentes do LeRobot moveram a inferência de política para o comando dedicado `lerobot-rollout`; o `lerobot-record` agora serve apenas para a coleta de dados. O comando `lerobot-record --policy.path` abaixo aplica-se às versões anteriores.
+
 ## Instalar o ambiente
 
 - Pytorch

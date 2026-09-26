@@ -5,6 +5,8 @@ description: "Comprenez la commande de déploiement LeRobot : rôle de chaque pa
 
 # Description de la ligne de commande
 
+> **Remarque :** Les versions récentes de LeRobot ont déplacé l'inférence de politique vers la commande dédiée `lerobot-rollout` ; `lerobot-record` sert désormais uniquement à la collecte de données. La commande `lerobot-record --policy.path` ci-dessous s'applique aux versions antérieures.
+
 ## Description de la ligne de commande
 
 Avec visualisation en temps réel : \-\-display\_data=true

@@ -5,6 +5,8 @@ description: "NVIDIA DGX Spark上にPyTorch環境を構築し、7軸SO-ARM101の
 
 # NVIDIA DGX Spark 推論
 
+> **注意:** LeRobot の新しいバージョンでは、ポリシー推論は専用の `lerobot-rollout` コマンドに移行し、`lerobot-record` はデータ収集専用になりました。下記の `lerobot-record --policy.path` コマンドは以前のバージョン向けです。
+
 ## 環境のインストール
 
 - Pytorch

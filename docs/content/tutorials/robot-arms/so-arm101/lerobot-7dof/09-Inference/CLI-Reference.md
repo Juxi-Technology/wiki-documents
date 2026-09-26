@@ -5,6 +5,8 @@ description: "Reference for the LeRobot rollout deployment command, covering wor
 
 # Command Line Reference
 
+> **Note:** Newer LeRobot versions moved policy inference to the dedicated `lerobot-rollout` command; `lerobot-record` is now for data collection only. The `lerobot-record --policy.path` command below applies to earlier versions.
+
 ## Command Line Reference
 
 With real-time visualization: \-\-display\_data=true

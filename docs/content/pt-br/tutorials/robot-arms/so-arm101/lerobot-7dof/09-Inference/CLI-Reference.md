@@ -5,6 +5,8 @@ description: "Entenda a linha de comando de implantação do LeRobot: os modos b
 
 # Descrição da linha de comando
 
+> **Atenção:** as versões mais recentes do LeRobot moveram a inferência de política para o comando dedicado `lerobot-rollout`; o `lerobot-record` agora serve apenas para a coleta de dados. O comando `lerobot-record --policy.path` abaixo aplica-se às versões anteriores.
+
 ## Descrição da linha de comando
 
 Com visualização em tempo real: \-\-display\_data=true

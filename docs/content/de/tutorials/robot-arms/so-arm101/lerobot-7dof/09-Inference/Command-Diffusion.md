@@ -5,6 +5,8 @@ description: "Bringen Sie eine trainierte Diffusion-Policy auf dem 7-DOF-Arm zum
 
 # Inferenzbefehl\-Diffusion
 
+> **Hinweis:** Neuere LeRobot-Versionen haben die Policy-Inferenz in den eigenen Befehl `lerobot-rollout` verlagert; `lerobot-record` dient jetzt nur noch der Datenerfassung. Der unten stehende Befehl `lerobot-record --policy.path` gilt für ältere Versionen.
+
 ## Ubuntu
 
 - Vorhandenen Datensatz, dessen Name mit eval beginnt, löschen (falls vorhanden)

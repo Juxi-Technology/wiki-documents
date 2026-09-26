@@ -5,6 +5,8 @@ description: "NVIDIA DGX Spark에 PyTorch 환경을 설치하고, 7축 SO-ARM101
 
 # NVIDIA DGX Spark 추론
 
+> **참고:** 최신 LeRobot 버전에서는 정책 추론이 전용 `lerobot-rollout` 커맨드로 옮겨졌으며, `lerobot-record`는 이제 데이터 수집 전용입니다. 아래의 `lerobot-record --policy.path` 커맨드는 구버전에 적용됩니다.
+
 ## 환경 설치
 
 - Pytorch

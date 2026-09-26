@@ -5,6 +5,8 @@ description: "在 DGX Spark 上跑推理：安装 cu130 版 PyTorch 并调整依
 
 # 英伟达DGX Spark推理
 
+> **提示:** 较新的 LeRobot 版本已将策略推理移至专用的 `lerobot-rollout` 命令;`lerobot-record` 现仅用于数据采集。下方的 `lerobot-record --policy.path` 命令适用于较早版本。
+
 ## 安装环境
 
 - Pytorch

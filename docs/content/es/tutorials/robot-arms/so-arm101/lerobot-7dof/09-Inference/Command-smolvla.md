@@ -5,6 +5,8 @@ description: "Comando de despliegue del modelo smolvla en Ubuntu y Mac, con la p
 
 # Línea de comandos de inferencia\-smolvla
 
+> **Nota:** Las versiones más recientes de LeRobot trasladaron la inferencia de políticas al comando dedicado `lerobot-rollout`; `lerobot-record` ahora se usa únicamente para recopilar datos. El comando `lerobot-record --policy.path` que aparece a continuación se aplica a versiones anteriores.
+
 ## Ubuntu
 
 - Eliminar el conjunto de datos existente que empieza por eval (si lo hay)

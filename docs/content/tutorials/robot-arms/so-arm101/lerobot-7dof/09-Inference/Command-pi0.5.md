@@ -5,6 +5,8 @@ description: "Deploy a trained pi05 policy with the rollout command on Ubuntu an
 
 # Inference Command Line \- pi0\.5
 
+> **Note:** Newer LeRobot versions moved policy inference to the dedicated `lerobot-rollout` command; `lerobot-record` is now for data collection only. The `lerobot-record --policy.path` command below applies to earlier versions.
+
 ## Ubuntu
 
 - Delete the existing dataset starting with eval (if any)

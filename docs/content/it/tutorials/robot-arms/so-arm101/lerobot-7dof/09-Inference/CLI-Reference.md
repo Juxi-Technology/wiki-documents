@@ -5,6 +5,8 @@ description: "Guida ai comandi di deployment di LeRobot: differenze tra raccolta
 
 # Descrizione dei comandi
 
+> **Nota:** Le versioni più recenti di LeRobot hanno spostato l'inferenza della policy sul comando dedicato `lerobot-rollout`; ora `lerobot-record` serve solo per la raccolta dati. Il comando `lerobot-record --policy.path` qui sotto si applica alle versioni precedenti.
+
 ## Descrizione dei comandi
 
 Con visualizzazione in tempo reale: \-\-display\_data=true

@@ -5,6 +5,8 @@ description: "Set up an NVIDIA DGX Spark (PyTorch environment) and run 7-DOF SO-
 
 # NVIDIA DGX Spark Inference
 
+> **Note:** Newer LeRobot versions moved policy inference to the dedicated `lerobot-rollout` command; `lerobot-record` is now for data collection only. The `lerobot-record --policy.path` command below applies to earlier versions.
+
 ## Install the environment
 
 - Pytorch

@@ -5,6 +5,8 @@ description: "Deployment di SmolVLA su Ubuntu e Mac: comandi completi con il per
 
 # Comando di inferenza\-smolvla
 
+> **Nota:** Le versioni più recenti di LeRobot hanno spostato l'inferenza della policy sul comando dedicato `lerobot-rollout`; ora `lerobot-record` serve solo per la raccolta dati. Il comando `lerobot-record --policy.path` qui sotto si applica alle versioni precedenti.
+
 ## Ubuntu
 
 - Eliminare il dataset esistente che inizia con eval (se presente)

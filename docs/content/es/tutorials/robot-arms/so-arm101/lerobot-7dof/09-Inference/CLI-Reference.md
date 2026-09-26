@@ -5,6 +5,8 @@ description: "Referencia de la línea de comandos de despliegue de LeRobot: el m
 
 # Descripción de la línea de comandos
 
+> **Nota:** Las versiones más recientes de LeRobot trasladaron la inferencia de políticas al comando dedicado `lerobot-rollout`; `lerobot-record` ahora se usa únicamente para recopilar datos. El comando `lerobot-record --policy.path` que aparece a continuación se aplica a versiones anteriores.
+
 ## Descripción de la línea de comandos
 
 Con visualización en tiempo real: \-\-display\_data=true

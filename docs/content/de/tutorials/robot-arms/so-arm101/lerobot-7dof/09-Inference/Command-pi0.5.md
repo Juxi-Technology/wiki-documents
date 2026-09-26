@@ -5,6 +5,8 @@ description: "Zeigt den Deployment-Befehl für das verbesserte pi0-Modell unter 
 
 # Inferenzbefehl\-pi0\.5
 
+> **Hinweis:** Neuere LeRobot-Versionen haben die Policy-Inferenz in den eigenen Befehl `lerobot-rollout` verlagert; `lerobot-record` dient jetzt nur noch der Datenerfassung. Der unten stehende Befehl `lerobot-record --policy.path` gilt für ältere Versionen.
+
 ## Ubuntu
 
 - Vorhandenen Datensatz, dessen Name mit eval beginnt, löschen (falls vorhanden)

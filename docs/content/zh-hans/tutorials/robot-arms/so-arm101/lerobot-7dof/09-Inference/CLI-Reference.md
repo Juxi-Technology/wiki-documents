@@ -5,6 +5,8 @@ description: "模型推理命令行说明:介绍新版部署工具的参数与�
 
 # 命令行说明
 
+> **提示:** 较新的 LeRobot 版本已将策略推理移至专用的 `lerobot-rollout` 命令;`lerobot-record` 现仅用于数据采集。下方的 `lerobot-record --policy.path` 命令适用于较早版本。
+
 ## 命令行说明
 
 带实时可视化：\-\-display\_data=true

@@ -5,6 +5,8 @@ description: "本篇帶你在 NVIDIA DGX Spark 上從零裝好 PyTorch（CUDA 13
 
 # 英偉達DGX Spark推理
 
+> **注意:** 較新版本的 LeRobot 已將策略推理移至專用的 `lerobot-rollout` 命令;`lerobot-record` 現在僅用於數據採集。下方 `lerobot-record --policy.path` 命令適用於較早的版本。
+
 ## 安裝環境
 
 - Pytorch

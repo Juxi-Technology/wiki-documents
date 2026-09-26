@@ -5,6 +5,8 @@ description: "Ejecute una política Diffusion ya entrenada en el brazo de 7 ejes
 
 # Línea de comandos de inferencia\-Diffusion
 
+> **Nota:** Las versiones más recientes de LeRobot trasladaron la inferencia de políticas al comando dedicado `lerobot-rollout`; `lerobot-record` ahora se usa únicamente para recopilar datos. El comando `lerobot-record --policy.path` que aparece a continuación se aplica a versiones anteriores.
+
 ## Ubuntu
 
 - Eliminar el conjunto de datos existente que empieza por eval (si lo hay)

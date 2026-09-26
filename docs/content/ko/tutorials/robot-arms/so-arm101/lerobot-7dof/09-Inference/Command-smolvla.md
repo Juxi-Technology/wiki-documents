@@ -5,6 +5,8 @@ description: "가벼운 VLA 모델 smolvla를 rollout으로 배포하는 커맨�
 
 # 추론 커맨드라인\-smolvla
 
+> **참고:** 최신 LeRobot 버전에서는 정책 추론이 전용 `lerobot-rollout` 커맨드로 옮겨졌으며, `lerobot-record`는 이제 데이터 수집 전용입니다. 아래의 `lerobot-record --policy.path` 커맨드는 구버전에 적용됩니다.
+
 ## Ubuntu
 
 - 기존의 eval로 시작하는 데이터셋 삭제(있는 경우)

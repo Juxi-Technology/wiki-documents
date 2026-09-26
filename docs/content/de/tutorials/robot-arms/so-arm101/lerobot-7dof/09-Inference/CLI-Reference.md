@@ -5,6 +5,8 @@ description: "Erläutert den Deployment-Befehl der neuen LeRobot-Version, die Ar
 
 # Erläuterung der Befehle
 
+> **Hinweis:** Neuere LeRobot-Versionen haben die Policy-Inferenz in den eigenen Befehl `lerobot-rollout` verlagert; `lerobot-record` dient jetzt nur noch der Datenerfassung. Der unten stehende Befehl `lerobot-record --policy.path` gilt für ältere Versionen.
+
 ## Erläuterung der Befehle
 
 Mit Echtzeit\-Visualisierung: \-\-display\_data=true

@@ -5,6 +5,8 @@ description: "本頁提供 pi0.5 模型的推論命令列，包含 Ubuntu 與 Ma
 
 # 推理命令行\-pi0\.5
 
+> **注意:** 較新版本的 LeRobot 已將策略推理移至專用的 `lerobot-rollout` 命令;`lerobot-record` 現在僅用於數據採集。下方 `lerobot-record --policy.path` 命令適用於較早的版本。
+
 ## Ubuntu
 
 - 刪除原有的eval開頭的數據集（如有）

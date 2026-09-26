@@ -5,6 +5,8 @@ description: "Rode uma política Diffusion já treinada no braço de 7 eixos: li
 
 # Comando de inferência\-Diffusion
 
+> **Atenção:** as versões mais recentes do LeRobot moveram a inferência de política para o comando dedicado `lerobot-rollout`; o `lerobot-record` agora serve apenas para a coleta de dados. O comando `lerobot-record --policy.path` abaixo aplica-se às versões anteriores.
+
 ## Ubuntu
 
 - Excluir o conjunto de dados existente que começa com eval (se houver)

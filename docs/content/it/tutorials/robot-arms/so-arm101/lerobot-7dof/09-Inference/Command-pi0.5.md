@@ -5,6 +5,8 @@ description: "Deployment di pi0.5 su Ubuntu e Mac: comandi per entrambi i sistem
 
 # Comando di inferenza\-pi0\.5
 
+> **Nota:** Le versioni più recenti di LeRobot hanno spostato l'inferenza della policy sul comando dedicato `lerobot-rollout`; ora `lerobot-record` serve solo per la raccolta dati. Il comando `lerobot-record --policy.path` qui sotto si applica alle versioni precedenti.
+
 ## Ubuntu
 
 - Eliminare il dataset esistente che inizia con eval (se presente)
