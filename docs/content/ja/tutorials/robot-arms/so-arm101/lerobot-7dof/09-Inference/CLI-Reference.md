@@ -5,6 +5,29 @@ description: "訓練済みモデルのデプロイに使うコマンドの各パ
 
 # コマンドラインの説明
 
+## バージョンの説明（重要、まずお読みください）
+
+LeRobot **0.6.0** 以降、訓練済みモデルのデプロイには `lerobot-rollout` を使用します。従来の `lerobot-record --policy.path=...` という記法は、**0.5.2** バージョンですでに削除されています。
+
+本チュートリアルのステップ1では `git clone` で LeRobot をインストールしており、入手できるのは現在の最新バージョンです。そのため、以下の `lerobot-rollout` のコマンドラインを使用してください。`lerobot-record` を使い続けると、プログラムはそのままエラーを報告し、`lerobot-rollout` に切り替えるよう促します。
+
+2つのコマンドの役割分担は次のとおりです：
+
+- `lerobot-record`：**示教データの収集**のみを担当します（ステップ7で使用しているのはこれです）。現在は `eval_` で始まるデータセット名を拒否します
+- `lerobot-rollout`：**訓練済みモデルのデプロイ**を担当し、`--strategy.type` で動作方式を選択します
+
+## rollout のコマンドラインパラメータ
+
+| パラメータ | 説明 |
+|---|---|
+| `--strategy.type` | 動作方式。`base` はモデルを実行するだけでデータを記録せず、現場で効果を確認するのに使います；`episodic` は episode ごとに記録し reset 段階を伴い、動作は旧版の `lerobot-record` に近いです |
+| `--policy.path` | モデルのパス。訓練出力内の `checkpoints/last/pretrained_model` を指します |
+| `--task` | タスクの説明。`--strategy.type=base` と組み合わせて使用します |
+| `--duration` | 実行秒数。`0` は時間制限なしを意味します |
+| `--interactive` | 途中で引き継ぎが必要な場合に追加します。ターミナルで `/stop`、`/reset` などのコマンドで制御できます |
+| `--display_data` | rerun.io の可視化インターフェースを起動するかどうか |
+| `--policy.device` | 計算デバイス。例えば `cuda`、`cpu` |
+
 ## コマンドラインの説明
 
 リアルタイム可視化あり：\-\-display\_data=true

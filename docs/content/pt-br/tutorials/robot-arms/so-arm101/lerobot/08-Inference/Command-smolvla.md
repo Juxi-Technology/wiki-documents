@@ -5,7 +5,7 @@ description: "Comando de inferência do modelo SmolVLA para Ubuntu e macOS: remo
 
 # Etapa 8: Comando de inferência — SmolVLA
 
-> A implantação usa sempre `lerobot-rollout`; para o uso e os parâmetros, consulte [Descrição da linha de comando](/pt-br/tutorials/robot-arms/so-arm101/lerobot/08-Inference/CLI-Reference)。
+> A implantação usa sempre `lerobot-rollout`; para o uso e os parâmetros, consulte [Descrição da linha de comando](/pt-br/tutorials/robot-arms/so-arm101/lerobot/08-Inference/CLI-Reference).
 
 ## Ubuntu
 

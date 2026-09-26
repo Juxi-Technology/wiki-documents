@@ -5,6 +5,29 @@ description: "Guida ai comandi di deployment di LeRobot: differenze tra raccolta
 
 # Descrizione dei comandi
 
+## Note sulla versione (importante, leggere per primo)
+
+A partire da LeRobot **0.6.0**, il modello addestrato va distribuito con `lerobot-rollout`. La vecchia sintassi `lerobot-record --policy.path=...` era già stata rimossa nella versione **0.5.2**.
+
+Questo tutorial installa LeRobot con `git clone` nel primo passo, ottenendo così la versione più recente attuale; usa pertanto la riga di comando `lerobot-rollout` riportata di seguito. Se insisti a usare `lerobot-record`, il programma restituirà direttamente un errore e ti suggerirà di passare a `lerobot-rollout`.
+
+La divisione dei compiti tra i due comandi è la seguente:
+
+- `lerobot-record`: si occupa solo della **raccolta dei dati di dimostrazione** (è quello usato nel settimo passo); ora rifiuta i nomi di dataset che iniziano con `eval_`
+- `lerobot-rollout`: si occupa del **deployment del modello addestrato**; con `--strategy.type` si sceglie la modalità di funzionamento
+
+## Parametri della riga di comando di rollout
+
+| Parametro | Descrizione |
+|---|---|
+| `--strategy.type` | Modalità di funzionamento. `base` esegue solo il modello senza registrare dati, per valutare l'effetto dal vivo; `episodic` registra per episodio con una fase di reset, con un comportamento simile alla vecchia versione di `lerobot-record` |
+| `--policy.path` | Percorso del modello, che punta a `checkpoints/last/pretrained_model` nell'output dell'addestramento |
+| `--task` | Descrizione del task, da usare insieme a `--strategy.type=base` |
+| `--duration` | Numero di secondi di esecuzione; `0` indica nessun limite di tempo |
+| `--interactive` | Aggiungilo quando devi intervenire durante l'esecuzione; nel terminale puoi controllare con comandi come `/stop` e `/reset` |
+| `--display_data` | Indica se avviare l'interfaccia di visualizzazione rerun.io |
+| `--policy.device` | Dispositivo di calcolo, ad esempio `cuda`, `cpu` |
+
 ## Descrizione dei comandi
 
 Con visualizzazione in tempo reale: \-\-display\_data=true

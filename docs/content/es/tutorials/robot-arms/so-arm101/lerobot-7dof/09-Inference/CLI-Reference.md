@@ -5,6 +5,29 @@ description: "Referencia de la línea de comandos de despliegue de LeRobot: el m
 
 # Descripción de la línea de comandos
 
+## Nota sobre la versión (importante, léela primero)
+
+A partir de LeRobot **0.6.0**, los modelos entrenados se despliegan con `lerobot-rollout`. La forma antigua `lerobot-record --policy.path=...` ya se eliminó en la versión **0.5.2**.
+
+El primer paso de este tutorial instala LeRobot con `git clone`, por lo que obtienes la versión más reciente actual; por eso debes usar la línea de comandos `lerobot-rollout` de abajo. Si insistes en usar `lerobot-record`, el programa dará directamente un error y te indicará que cambies a `lerobot-rollout`.
+
+El reparto de tareas entre los dos comandos es el siguiente:
+
+- `lerobot-record`: solo se encarga de **recoger datos de demostración** (es el que se usa en el séptimo paso); ahora rechazará los nombres de conjunto de datos que empiecen por `eval_`
+- `lerobot-rollout`: se encarga de **desplegar el modelo entrenado**; usa `--strategy.type` para elegir el modo de trabajo
+
+## Parámetros de la línea de comandos de rollout
+
+| Parámetro | Descripción |
+|---|---|
+| `--strategy.type` | El modo de trabajo. `base` solo ejecuta el modelo y no graba datos, para ver el efecto sobre el terreno; `episodic` graba por episodio e incluye una fase de reset, con un comportamiento parecido al antiguo `lerobot-record` |
+| `--policy.path` | La ruta del modelo, que apunta al `checkpoints/last/pretrained_model` de la salida del entrenamiento |
+| `--task` | La descripción de la tarea; se usa junto con `--strategy.type=base` |
+| `--duration` | El número de segundos de ejecución; `0` significa sin límite de tiempo |
+| `--interactive` | Añádelo cuando necesites tomar el control a mitad de camino; en la terminal puedes controlar con comandos como `/stop` o `/reset` |
+| `--display_data` | Si se inicia la interfaz de visualización de rerun.io |
+| `--policy.device` | El dispositivo de cómputo, por ejemplo `cuda`, `cpu` |
+
 ## Descripción de la línea de comandos
 
 Con visualización en tiempo real: \-\-display\_data=true

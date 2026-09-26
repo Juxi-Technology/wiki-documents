@@ -5,6 +5,29 @@ description: "Reference for the LeRobot rollout deployment command, covering wor
 
 # Command Line Reference
 
+## Version notes (important, please read first)
+
+Starting from LeRobot **0.6.0**, a trained model must be deployed with `lerobot-rollout`. The old `lerobot-record --policy.path=...` syntax was already removed in version **0.5.2**.
+
+In step 1 of this tutorial, LeRobot was installed with `git clone`, which gives you the current latest version, so please use the `lerobot-rollout` command line below. If you insist on using `lerobot-record`, the program will directly raise an error and prompt you to switch to `lerobot-rollout`.
+
+The division of labor between the two commands is as follows:
+
+- `lerobot-record`: only responsible for **collecting demonstration data** (it is what step 7 uses), and it now rejects dataset names starting with `eval_`
+- `lerobot-rollout`: responsible for **deploying a trained model**, using `--strategy.type` to choose the working mode
+
+## rollout command line parameters
+
+| Parameter | Description |
+|---|---|
+| `--strategy.type` | The working mode. `base` only runs the model without recording data, for checking the results on site; `episodic` records by episode with a reset phase, behaving close to the old `lerobot-record` |
+| `--policy.path` | The model path, pointing to `checkpoints/last/pretrained_model` in the training output |
+| `--task` | The task description, used together with `--strategy.type=base` |
+| `--duration` | The number of seconds to run; `0` means no time limit |
+| `--interactive` | Add this when you need to take over midway; you can use commands such as `/stop` and `/reset` in the terminal |
+| `--display_data` | Whether to start the rerun.io visualization interface |
+| `--policy.device` | The compute device, such as `cuda`, `cpu` |
+
 ## Command Line Reference
 
 With real-time visualization: \-\-display\_data=true

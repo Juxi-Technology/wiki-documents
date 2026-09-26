@@ -5,7 +5,7 @@ description: "Linha de comando de implantação do modelo pi0,5 no Ubuntu e no m
 
 # Etapa 8: Comando de implantação pi0.5
 
-> A implantação usa sempre `lerobot-rollout`; para o uso e os parâmetros, consulte [Descrição da linha de comando](/pt-pt/tutorials/robot-arms/so-arm101/lerobot/08-Inference/CLI-Reference)。
+> A implantação usa sempre `lerobot-rollout`; para o uso e os parâmetros, consulte [Descrição da linha de comando](/pt-pt/tutorials/robot-arms/so-arm101/lerobot/08-Inference/CLI-Reference).
 
 ## Ubuntu
 

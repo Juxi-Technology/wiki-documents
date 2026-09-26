@@ -5,6 +5,29 @@ description: "Comprenez la commande de déploiement LeRobot : rôle de chaque pa
 
 # Description de la ligne de commande
 
+## Remarque sur les versions (important, à lire en premier)
+
+À partir de LeRobot **0.6.0**, les modèles entraînés doivent être déployés avec `lerobot-rollout`. L'ancienne syntaxe `lerobot-record --policy.path=...` a été supprimée dès la version **0.5.2**.
+
+La première étape de ce tutoriel installe LeRobot avec `git clone`, ce qui vous fournit la version la plus récente ; utilisez donc la ligne de commande `lerobot-rollout` ci-dessous. Si vous tenez à utiliser `lerobot-record`, le programme signalera directement une erreur et vous invitera à passer à `lerobot-rollout`.
+
+Voici comment se répartissent les rôles des deux commandes :
+
+- `lerobot-record` : est uniquement chargé de **collecter les données de démonstration** (c'est elle qui est utilisée à la septième étape) ; elle refuse désormais les noms de dataset commençant par `eval_`
+- `lerobot-rollout` : est chargé de **déployer le modèle entraîné**, et utilise `--strategy.type` pour choisir le mode de fonctionnement
+
+## Paramètres de ligne de commande de rollout
+
+| Paramètre | Description |
+|---|---|
+| `--strategy.type` | Mode de fonctionnement. `base` exécute uniquement le modèle sans enregistrer de données, pour observer les résultats en direct ; `episodic` enregistre par épisode avec une phase de reset, un comportement proche de l'ancienne version de `lerobot-record` |
+| `--policy.path` | Chemin du modèle, pointant vers `checkpoints/last/pretrained_model` dans les sorties de l'entraînement |
+| `--task` | Description de la tâche, à utiliser avec `--strategy.type=base` |
+| `--duration` | Nombre de secondes d'exécution ; `0` signifie sans limite de temps |
+| `--interactive` | À ajouter lorsque vous devez reprendre la main en cours de route ; permet de contrôler dans le terminal avec des commandes comme `/stop`, `/reset` |
+| `--display_data` | Indique s'il faut lancer l'interface de visualisation rerun.io |
+| `--policy.device` | Périphérique de calcul, par exemple `cuda`, `cpu` |
+
 ## Description de la ligne de commande
 
 Avec visualisation en temps réel : \-\-display\_data=true

@@ -5,6 +5,29 @@ description: "本頁說明模型推論的命令列用法與參數，包含攝像
 
 # 命令行說明
 
+## 版本說明（重要，請先讀）
+
+從 LeRobot **0.6.0** 開始，訓練好的模型要用 `lerobot-rollout` 來部署。原來的 `lerobot-record --policy.path=...` 寫法，在 **0.5.2** 版本就已經被移除了。
+
+本教程第一步是用 `git clone` 安裝 LeRobot 的，拿到的是當前最新版本，所以請使用下面 `lerobot-rollout` 的命令列。如果堅持用 `lerobot-record`，程式會直接報錯，並提示你改用 `lerobot-rollout`。
+
+兩個命令的分工是這樣的：
+
+- `lerobot-record`：只負責**採集示教數據**（第七步用的就是它），它現在會拒絕 `eval_` 開頭的數據集名
+- `lerobot-rollout`：負責**部署訓練好的模型**，用 `--strategy.type` 選擇工作方式
+
+## rollout 命令列參數
+
+| 參數 | 說明 |
+|---|---|
+| `--strategy.type` | 工作方式。`base` 只跑模型、不錄數據，用於現場看效果；`episodic` 按 episode 錄製並帶 reset 階段，行為接近舊版的 `lerobot-record` |
+| `--policy.path` | 模型路徑，指向訓練輸出裡的 `checkpoints/last/pretrained_model` |
+| `--task` | 任務描述，配合 `--strategy.type=base` 使用 |
+| `--duration` | 執行秒數，`0` 表示不限時 |
+| `--interactive` | 需要中途接管時加上它，可在終端用 `/stop`、`/reset` 等命令控制 |
+| `--display_data` | 是否啟動 rerun.io 可視化介面 |
+| `--policy.device` | 計算裝置，比如 `cuda`、`cpu` |
+
 ## 命令行說明
 
 帶實時可視化：\-\-display\_data=true

@@ -5,7 +5,7 @@ description: "Linha de comando de implantação do modelo ACT no Ubuntu e no mac
 
 # Etapa 8: Comando de implantação ACT
 
-> A implantação usa sempre `lerobot-rollout`; para o uso e os parâmetros, consulte [Descrição da linha de comando](/pt-pt/tutorials/robot-arms/so-arm101/lerobot/08-Inference/CLI-Reference)。
+> A implantação usa sempre `lerobot-rollout`; para o uso e os parâmetros, consulte [Descrição da linha de comando](/pt-pt/tutorials/robot-arms/so-arm101/lerobot/08-Inference/CLI-Reference).
 
 ## Ubuntu
 

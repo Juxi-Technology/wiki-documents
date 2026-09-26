@@ -5,6 +5,29 @@ description: "Descrição dos parâmetros da linha de comando de implantação, 
 
 # Descrição da linha de comando
 
+## Nota sobre a versão (importante, ler primeiro)
+
+A partir do LeRobot **0.6.0**, os modelos treinados têm de ser implantados com `lerobot-rollout`. A forma antiga `lerobot-record --policy.path=...` já tinha sido removida na versão **0.5.2**.
+
+A primeira etapa deste tutorial instala o LeRobot com `git clone`, obtendo a versão mais recente do momento, pelo que deve usar as linhas de comando `lerobot-rollout` abaixo. Se insistir em usar `lerobot-record`, o programa apresenta imediatamente um erro e indica que mude para `lerobot-rollout`.
+
+A divisão de funções entre os dois comandos é a seguinte:
+
+- `lerobot-record`: responsável apenas por **recolher dados de demonstração** (é o que a etapa 7 usa); atualmente rejeita nomes de dataset que começam por `eval_`
+- `lerobot-rollout`: responsável por **implantar os modelos treinados**, usando `--strategy.type` para escolher o modo de funcionamento
+
+## Parâmetros da linha de comando do rollout
+
+| Parâmetro | Descrição |
+|---|---|
+| `--strategy.type` | Modo de funcionamento. `base` apenas executa o modelo, sem gravar dados, para observar o efeito no local; `episodic` grava por episode e inclui uma fase de reset, com comportamento próximo do `lerobot-record` da versão antiga |
+| `--policy.path` | Caminho do modelo, apontando para `checkpoints/last/pretrained_model` na saída do treino |
+| `--task` | Descrição da tarefa, usada em conjunto com `--strategy.type=base` |
+| `--duration` | Número de segundos de execução; `0` significa sem limite de tempo |
+| `--interactive` | Acrescente-o quando precisar de assumir o controlo a meio do processo; permite controlar no terminal com comandos como `/stop` e `/reset` |
+| `--display_data` | Define se a interface de visualização do rerun.io é iniciada |
+| `--policy.device` | Dispositivo de computação, como `cuda` e `cpu` |
+
 ## Descrição da linha de comando
 
 Com visualização em tempo real: \-\-display\_data=true

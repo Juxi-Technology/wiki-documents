@@ -5,6 +5,29 @@ description: "Erläutert den Deployment-Befehl der neuen LeRobot-Version, die Ar
 
 # Erläuterung der Befehle
 
+## Versionshinweise (wichtig, bitte zuerst lesen)
+
+Ab LeRobot **0.6.0** werden trainierte Modelle mit `lerobot-rollout` deployt. Die frühere Schreibweise `lerobot-record --policy.path=...` wurde bereits in Version **0.5.2** entfernt.
+
+Dieses Tutorial installiert LeRobot im ersten Schritt mit `git clone` und erhält damit die aktuelle neueste Version; verwenden Sie daher bitte die unten stehende Kommandozeile von `lerobot-rollout`. Wenn Sie auf `lerobot-record` bestehen, meldet das Programm direkt einen Fehler und weist Sie darauf hin, auf `lerobot-rollout` umzusteigen.
+
+Die Aufgabenteilung der beiden Befehle ist folgende:
+
+- `lerobot-record`: ist nur für das **Erfassen von Demonstrationsdaten** zuständig (in Schritt 7 wird genau dieses verwendet); es lehnt jetzt Datensatznamen ab, die mit `eval_` beginnen
+- `lerobot-rollout`: ist für das **Deployment trainierter Modelle** zuständig und wählt mit `--strategy.type` die Arbeitsweise
+
+## rollout-Befehlsparameter
+
+| Parameter | Beschreibung |
+|---|---|
+| `--strategy.type` | Arbeitsweise. `base` führt nur das Modell aus und zeichnet keine Daten auf, dient zur Begutachtung vor Ort; `episodic` zeichnet pro episode auf und enthält eine reset-Phase, das Verhalten ähnelt dem alten `lerobot-record` |
+| `--policy.path` | Modellpfad, verweist auf `checkpoints/last/pretrained_model` in der Trainingsausgabe |
+| `--task` | Aufgabenbeschreibung, wird zusammen mit `--strategy.type=base` verwendet |
+| `--duration` | Laufzeit in Sekunden, `0` bedeutet unbegrenzt |
+| `--interactive` | Hinzufügen, wenn während des Laufs eingegriffen werden soll; im Terminal kann mit Befehlen wie `/stop`, `/reset` gesteuert werden |
+| `--display_data` | Ob die Visualisierungsoberfläche von rerun.io gestartet wird |
+| `--policy.device` | Rechengerät, z. B. `cuda`, `cpu` |
+
 ## Erläuterung der Befehle
 
 Mit Echtzeit\-Visualisierung: \-\-display\_data=true

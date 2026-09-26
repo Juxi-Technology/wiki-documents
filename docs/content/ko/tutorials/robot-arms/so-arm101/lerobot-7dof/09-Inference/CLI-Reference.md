@@ -5,6 +5,29 @@ description: "모델 배포에 사용하는 rollout 커맨드의 파라미터와
 
 # 커맨드라인 설명
 
+## 버전 설명(중요, 먼저 읽어 주세요)
+
+LeRobot **0.6.0**부터는 학습한 모델을 `lerobot-rollout`으로 배포해야 합니다. 기존의 `lerobot-record --policy.path=...` 표기는 **0.5.2** 버전에서 이미 제거되었습니다.
+
+이 튜토리얼의 1단계는 `git clone`으로 LeRobot을 설치하므로 현재 최신 버전을 받게 됩니다. 따라서 아래 `lerobot-rollout` 커맨드라인을 사용해 주세요. 굳이 `lerobot-record`를 쓰면 프로그램이 곧바로 오류를 내고 `lerobot-rollout`으로 바꾸라고 안내합니다.
+
+두 커맨드의 역할 분담은 다음과 같습니다:
+
+- `lerobot-record`: **시연 데이터 수집**만 담당하며(7단계에서 사용한 것이 이것입니다), 이제 `eval_`로 시작하는 dataset 이름을 거부합니다
+- `lerobot-rollout`: **학습한 모델 배포**를 담당하며, `--strategy.type`으로 동작 방식을 선택합니다
+
+## rollout 커맨드라인 파라미터
+
+| 파라미터 | 설명 |
+|---|---|
+| `--strategy.type` | 동작 방식입니다. `base`는 모델만 실행하고 데이터를 녹화하지 않으며, 현장에서 효과를 확인할 때 사용합니다. `episodic`은 episode별로 녹화하고 reset 단계를 포함하며, 구버전 `lerobot-record`에 가까운 동작을 합니다 |
+| `--policy.path` | 모델 경로로, 학습 출력의 `checkpoints/last/pretrained_model`을 가리킵니다 |
+| `--task` | 작업 설명으로, `--strategy.type=base`와 함께 사용합니다 |
+| `--duration` | 실행 시간(초)이며, `0`은 시간 제한 없음을 의미합니다 |
+| `--interactive` | 중간에 개입해야 할 때 추가하며, 터미널에서 `/stop`, `/reset` 등의 명령으로 제어할 수 있습니다 |
+| `--display_data` | rerun.io 시각화 인터페이스를 시작할지 여부입니다 |
+| `--policy.device` | 계산 장치로, 예를 들어 `cuda`, `cpu`입니다 |
+
 ## 커맨드라인 설명
 
 실시간 시각화 포함: \-\-display\_data=true

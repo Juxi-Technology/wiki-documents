@@ -5,7 +5,7 @@ description: "Comando de inferência do modelo pi05 para Ubuntu e macOS, com os 
 
 # Etapa 8: Comando de inferência — pi0.5
 
-> A implantação usa sempre `lerobot-rollout`; para o uso e os parâmetros, consulte [Descrição da linha de comando](/pt-br/tutorials/robot-arms/so-arm101/lerobot/08-Inference/CLI-Reference)。
+> A implantação usa sempre `lerobot-rollout`; para o uso e os parâmetros, consulte [Descrição da linha de comando](/pt-br/tutorials/robot-arms/so-arm101/lerobot/08-Inference/CLI-Reference).
 
 ## Ubuntu
 
