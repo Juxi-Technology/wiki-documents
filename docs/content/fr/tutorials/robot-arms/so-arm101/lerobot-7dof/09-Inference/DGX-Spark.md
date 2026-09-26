@@ -5,7 +5,7 @@ description: "Installez l'environnement PyTorch sur un NVIDIA DGX Spark, puis la
 
 # Inférence sur NVIDIA DGX Spark
 
-> **Remarque :** Les versions récentes de LeRobot ont déplacé l'inférence de politique vers la commande dédiée `lerobot-rollout` ; `lerobot-record` sert désormais uniquement à la collecte de données. La commande `lerobot-record --policy.path` ci-dessous s'applique aux versions antérieures.
+> Le déploiement utilise uniformément `lerobot-rollout` ; pour l'usage et les paramètres, voir [Description de la ligne de commande](/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/CLI-Reference).
 
 ## Installation de l'environnement
 
@@ -27,7 +27,7 @@ Puis pip install \-e \.
 
 - Attention au chemin de policy\.path dans la commande d'inférence : remplacez-le par le chemin réel du modèle dans la Spark
 
-## Supprimer le dataset existant commençant par eval (le cas échéant)
+## Supprimer le dataset existant commençant par rollout (le cas échéant)
 
 ```Shell
 sudo chmod 666 /dev/ttyACM*
@@ -36,19 +36,20 @@ sudo chmod 666 /dev/ttyACM*
 
 
 ```Shell
-sudo rm -rf /home/apx103/.cache/huggingface/lerobot/Tommymy/eval_lerobot_my_dataset_shake_hands
+sudo rm -rf /home/apx103/.cache/huggingface/lerobot/Tommymy/rollout_lerobot_my_dataset_shake_hands
 ```
 
 ## ACT
 
 ```Shell
-lerobot-record  \
+lerobot-rollout  \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 60, fourcc: "MJPG"}}" \
   --robot.id=my_follower_arm \
   --display_data=false \
-  --dataset.repo_id=Tommymy/eval_lerobot_my_dataset_shake_hands \
+  --dataset.repo_id=Tommymy/rollout_lerobot_my_dataset_shake_hands \
   --dataset.single_task="Shake Hands" \
   --dataset.episode_time_s=1000 \
   --policy.path=/home/apx103/Downloads/lerobot_output/shake/ACT/5K/pretrained_model
@@ -73,13 +74,14 @@ pip install -e ".[feetech,smolvla]"
 - Inférence
 
 ```Shell
-lerobot-record  \
+lerobot-rollout  \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 60, fourcc: "MJPG"}}" \
   --robot.id=my_follower_arm \
   --display_data=false \
-  --dataset.repo_id=Tommymy/eval_lerobot_my_dataset_shake_hands \
+  --dataset.repo_id=Tommymy/rollout_lerobot_my_dataset_shake_hands \
   --dataset.single_task="Shake Hands" \
   --dataset.episode_time_s=1000 \
   --policy.path=/home/apx103/Downloads/lerobot_output/shake/smolvla/40K/pretrained_model
@@ -99,8 +101,9 @@ pip install -e ".[feetech,wallx]"
 ![image\.png](/images/tutorials/robot-arms/so-arm101/lerobot-7dof/09-inference/2.png)
 
 ```Shell
-lerobot-record  \
-  --dataset.repo_id=Tommymy/eval_lerobot_my_dataset_shake_hands \
+lerobot-rollout  \
+  --strategy.type=episodic \
+  --dataset.repo_id=Tommymy/rollout_lerobot_my_dataset_shake_hands \
   --dataset.single_task="Shake Hands" \
   --policy.path=/home/apx103/Downloads/lerobot_output/shake/wallx/30K/pretrained_model \
   --dataset.push_to_hub=false \
@@ -129,13 +132,14 @@ pip install -e ".[feetech,pi]"
 - Inférence
 
 ```Shell
-lerobot-record  \
+lerobot-rollout  \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 60, fourcc: "MJPG"}}" \
   --robot.id=my_follower_arm \
   --display_data=false \
-  --dataset.repo_id=Tommymy/eval_lerobot_my_dataset_shake_hands \
+  --dataset.repo_id=Tommymy/rollout_lerobot_my_dataset_shake_hands \
   --dataset.single_task="Shake Hands" \
   --dataset.episode_time_s=1000 \
   --dataset.push_to_hub=false \

@@ -5,7 +5,7 @@ description: "NVIDIA DGX Spark에 PyTorch 환경을 설치하고, 7축 SO-ARM101
 
 # NVIDIA DGX Spark 추론
 
-> **참고:** 최신 LeRobot 버전에서는 정책 추론이 전용 `lerobot-rollout` 커맨드로 옮겨졌으며, `lerobot-record`는 이제 데이터 수집 전용입니다. 아래의 `lerobot-record --policy.path` 커맨드는 구버전에 적용됩니다.
+> 배포는 통일해서 `lerobot-rollout`을 사용합니다. 사용법과 파라미터는 [커맨드라인 설명](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/CLI-Reference)을 참고하세요.
 
 ## 환경 설치
 
@@ -27,7 +27,7 @@ pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu13
 
 - 추론 커맨드라인의 policy\.path 경로에 주의하여, spark 안의 실제 모델 경로로 바꾸세요
 
-## 기존의 eval로 시작하는 데이터셋 삭제(있는 경우)
+## 기존의 rollout으로 시작하는 데이터셋 삭제(있는 경우)
 
 ```Shell
 sudo chmod 666 /dev/ttyACM*
@@ -36,19 +36,20 @@ sudo chmod 666 /dev/ttyACM*
 
 
 ```Shell
-sudo rm -rf /home/apx103/.cache/huggingface/lerobot/Tommymy/eval_lerobot_my_dataset_shake_hands
+sudo rm -rf /home/apx103/.cache/huggingface/lerobot/Tommymy/rollout_lerobot_my_dataset_shake_hands
 ```
 
 ## ACT
 
 ```Shell
-lerobot-record  \
+lerobot-rollout  \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 60, fourcc: "MJPG"}}" \
   --robot.id=my_follower_arm \
   --display_data=false \
-  --dataset.repo_id=Tommymy/eval_lerobot_my_dataset_shake_hands \
+  --dataset.repo_id=Tommymy/rollout_lerobot_my_dataset_shake_hands \
   --dataset.single_task="Shake Hands" \
   --dataset.episode_time_s=1000 \
   --policy.path=/home/apx103/Downloads/lerobot_output/shake/ACT/5K/pretrained_model
@@ -73,13 +74,14 @@ pip install -e ".[feetech,smolvla]"
 - 추론
 
 ```Shell
-lerobot-record  \
+lerobot-rollout  \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 60, fourcc: "MJPG"}}" \
   --robot.id=my_follower_arm \
   --display_data=false \
-  --dataset.repo_id=Tommymy/eval_lerobot_my_dataset_shake_hands \
+  --dataset.repo_id=Tommymy/rollout_lerobot_my_dataset_shake_hands \
   --dataset.single_task="Shake Hands" \
   --dataset.episode_time_s=1000 \
   --policy.path=/home/apx103/Downloads/lerobot_output/shake/smolvla/40K/pretrained_model
@@ -99,8 +101,9 @@ pip install -e ".[feetech,wallx]"
 ![image\.png](/images/tutorials/robot-arms/so-arm101/lerobot-7dof/09-inference/2.png)
 
 ```Shell
-lerobot-record  \
-  --dataset.repo_id=Tommymy/eval_lerobot_my_dataset_shake_hands \
+lerobot-rollout  \
+  --strategy.type=episodic \
+  --dataset.repo_id=Tommymy/rollout_lerobot_my_dataset_shake_hands \
   --dataset.single_task="Shake Hands" \
   --policy.path=/home/apx103/Downloads/lerobot_output/shake/wallx/30K/pretrained_model \
   --dataset.push_to_hub=false \
@@ -129,13 +132,14 @@ pip install -e ".[feetech,pi]"
 - 추론
 
 ```Shell
-lerobot-record  \
+lerobot-rollout  \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 60, fourcc: "MJPG"}}" \
   --robot.id=my_follower_arm \
   --display_data=false \
-  --dataset.repo_id=Tommymy/eval_lerobot_my_dataset_shake_hands \
+  --dataset.repo_id=Tommymy/rollout_lerobot_my_dataset_shake_hands \
   --dataset.single_task="Shake Hands" \
   --dataset.episode_time_s=1000 \
   --dataset.push_to_hub=false \

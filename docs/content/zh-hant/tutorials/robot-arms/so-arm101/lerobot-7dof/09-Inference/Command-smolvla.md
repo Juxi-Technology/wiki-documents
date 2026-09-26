@@ -5,27 +5,28 @@ description: "本頁提供 SmolVLA 模型的推論命令列，包含 Ubuntu 與 
 
 # 推理命令行\-smolvla
 
-> **注意:** 較新版本的 LeRobot 已將策略推理移至專用的 `lerobot-rollout` 命令;`lerobot-record` 現在僅用於數據採集。下方 `lerobot-record --policy.path` 命令適用於較早的版本。
+> 部署統一使用 `lerobot-rollout`，用法和參數見[命令列說明](/zh-hant/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/CLI-Reference)。
 
 ## Ubuntu
 
-- 刪除原有的eval開頭的數據集（如有）
+- 刪除原有的rollout開頭的數據集（如有）
 
 ```Shell
 sudo chmod 666 /dev/ttyACM*
-sudo rm -rf /home/tommy/.cache/huggingface/lerobot/Tommymy/eval_lerobot_my_dataset_shake_hands
+sudo rm -rf /home/tommy/.cache/huggingface/lerobot/Tommymy/rollout_lerobot_my_dataset_shake_hands
 ```
 
 - 推理命令行
 
 ```Shell
-lerobot-record  \
+lerobot-rollout  \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 60, fourcc: "MJPG"}}" \
   --robot.id=my_follower_arm \
   --display_data=false \
-  --dataset.repo_id=Tommymy/eval_lerobot_my_dataset_shake_hands \
+  --dataset.repo_id=Tommymy/rollout_lerobot_my_dataset_shake_hands \
   --dataset.single_task="Shake Hands" \
   --dataset.episode_time_s=1000 \
   --policy.path=/home/tommy/Downloads/lerobot_output/shake/smolvla/40K/pretrained_model
@@ -33,17 +34,18 @@ lerobot-record  \
 
 ## Mac
 
-- 刪除原有的eval開頭的數據集（如有）
+- 刪除原有的rollout開頭的數據集（如有）
 
 ```Shell
-sudo rm -rf /Users/tommy/.cache/huggingface/lerobot/Tommymy/eval_lerobot_my_dataset_shake_hands
+sudo rm -rf /Users/tommy/.cache/huggingface/lerobot/Tommymy/rollout_lerobot_my_dataset_shake_hands
 ```
 
 - 推理命令行
 
 ```Shell
-lerobot-record  \
-  --dataset.repo_id=Tommymy/eval_lerobot_my_dataset_shake_hands \
+lerobot-rollout  \
+  --strategy.type=episodic \
+  --dataset.repo_id=Tommymy/rollout_lerobot_my_dataset_shake_hands \
   --dataset.single_task="Shake Hands" \
   --policy.path=/Users/tommy/Downloads/7-lerobot/shake/smolvla/40K/pretrained_model \
   --dataset.push_to_hub=false \

@@ -5,15 +5,13 @@ description: "Referencia de la línea de comandos de despliegue de LeRobot: el m
 
 # Descripción de la línea de comandos
 
-> **Nota:** Las versiones más recientes de LeRobot trasladaron la inferencia de políticas al comando dedicado `lerobot-rollout`; `lerobot-record` ahora se usa únicamente para recopilar datos. El comando `lerobot-record --policy.path` que aparece a continuación se aplica a versiones anteriores.
-
 ## Descripción de la línea de comandos
 
 Con visualización en tiempo real: \-\-display\_data=true
 
 Sin visualización en tiempo real: \-\-display\_data=false
 
-Con `--display_data=true` se inicia la espectacular interfaz de visualización de rerun\.io, pero en el directorio `/Users/tommy/.cache/huggingface/lerobot/eval_lerobot_my_dataset_a/images/observation.images.front/episode-000000` se guarda la imagen de cada fotograma, lo que ocupa bastante espacio. Más adelante puedes ajustarlo a `--display_data=false`
+Con `--display_data=true` se inicia la espectacular interfaz de visualización de rerun\.io, pero en el directorio `/Users/tommy/.cache/huggingface/lerobot/rollout_lerobot_my_dataset_a/images/observation.images.front/episode-000000` se guarda la imagen de cada fotograma, lo que ocupa bastante espacio. Más adelante puedes ajustarlo a `--display_data=false`
 
 
 
@@ -26,13 +24,14 @@ Inferencia con un modelo del Repo de modelos de HuggingFace: \-\-policy\.path=To
 - Inferencia con un modelo local (con visualización en tiempo real)
 
 ```Shell
-lerobot-record  \
+lerobot-rollout  \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/tty.usbmodem5AAF2193061 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1920, height: 1080, fps: 60, fourcc: "MJPG"}}" \
   --robot.id=my_follower_arm \
   --display_data=true \
-  --dataset.repo_id=Tommymy/eval_lerobot_my_dataset_a \
+  --dataset.repo_id=Tommymy/rollout_lerobot_my_dataset_a \
   --dataset.single_task="Grab Oranges" \
   --dataset.episode_time_s=1000 \
   --policy.path=/Users/tommy/Downloads/7-lerobot/checkpoints/last/pretrained_model
@@ -41,13 +40,14 @@ lerobot-record  \
 - Inferencia con un modelo local (sin visualización en tiempo real)
 
 ```Shell
-lerobot-record  \
+lerobot-rollout  \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/tty.usbmodem5AAF2193061 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1920, height: 1080, fps: 60, fourcc: "MJPG"}}" \
   --robot.id=my_follower_arm \
   --display_data=false \
-  --dataset.repo_id=Tommymy/eval_lerobot_my_dataset_a \
+  --dataset.repo_id=Tommymy/rollout_lerobot_my_dataset_a \
   --dataset.single_task="Grab Oranges" \
   --dataset.episode_time_s=1000 \
   --policy.path=/Users/tommy/Downloads/7-lerobot/checkpoints/last/pretrained_model
@@ -56,13 +56,14 @@ lerobot-record  \
 - Inferencia con un modelo del Repo de modelos de HuggingFace
 
 ```Shell
-lerobot-record  \
+lerobot-rollout  \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/tty.usbmodem5AAF2193061 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1920, height: 1080, fps: 60, fourcc: "MJPG"}}" \
   --robot.id=my_follower_arm \
   --display_data=true \
-  --dataset.repo_id=Tommymy/eval_lerobot_my_dataset_a \
+  --dataset.repo_id=Tommymy/rollout_lerobot_my_dataset_a \
   --dataset.single_task="Grab Oranges" \
   --policy.path=Tommymy/lerobot_my_model_a
 ```

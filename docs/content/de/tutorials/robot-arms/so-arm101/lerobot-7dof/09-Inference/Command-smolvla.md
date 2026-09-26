@@ -5,27 +5,28 @@ description: "Zeigt den Deployment-Befehl für SmolVLA unter Ubuntu und macOS mi
 
 # Inferenzbefehl\-smolvla
 
-> **Hinweis:** Neuere LeRobot-Versionen haben die Policy-Inferenz in den eigenen Befehl `lerobot-rollout` verlagert; `lerobot-record` dient jetzt nur noch der Datenerfassung. Der unten stehende Befehl `lerobot-record --policy.path` gilt für ältere Versionen.
+> Für das Deployment wird einheitlich `lerobot-rollout` verwendet; Verwendung und Parameter siehe [Erläuterung der Befehle](/de/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/CLI-Reference).
 
 ## Ubuntu
 
-- Vorhandenen Datensatz, dessen Name mit eval beginnt, löschen (falls vorhanden)
+- Vorhandenen Datensatz, dessen Name mit rollout beginnt, löschen (falls vorhanden)
 
 ```Shell
 sudo chmod 666 /dev/ttyACM*
-sudo rm -rf /home/tommy/.cache/huggingface/lerobot/Tommymy/eval_lerobot_my_dataset_shake_hands
+sudo rm -rf /home/tommy/.cache/huggingface/lerobot/Tommymy/rollout_lerobot_my_dataset_shake_hands
 ```
 
 - Inferenzbefehl
 
 ```Shell
-lerobot-record  \
+lerobot-rollout  \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 60, fourcc: "MJPG"}}" \
   --robot.id=my_follower_arm \
   --display_data=false \
-  --dataset.repo_id=Tommymy/eval_lerobot_my_dataset_shake_hands \
+  --dataset.repo_id=Tommymy/rollout_lerobot_my_dataset_shake_hands \
   --dataset.single_task="Shake Hands" \
   --dataset.episode_time_s=1000 \
   --policy.path=/home/tommy/Downloads/lerobot_output/shake/smolvla/40K/pretrained_model
@@ -33,17 +34,18 @@ lerobot-record  \
 
 ## Mac
 
-- Vorhandenen Datensatz, dessen Name mit eval beginnt, löschen (falls vorhanden)
+- Vorhandenen Datensatz, dessen Name mit rollout beginnt, löschen (falls vorhanden)
 
 ```Shell
-sudo rm -rf /Users/tommy/.cache/huggingface/lerobot/Tommymy/eval_lerobot_my_dataset_shake_hands
+sudo rm -rf /Users/tommy/.cache/huggingface/lerobot/Tommymy/rollout_lerobot_my_dataset_shake_hands
 ```
 
 - Inferenzbefehl
 
 ```Shell
-lerobot-record  \
-  --dataset.repo_id=Tommymy/eval_lerobot_my_dataset_shake_hands \
+lerobot-rollout  \
+  --strategy.type=episodic \
+  --dataset.repo_id=Tommymy/rollout_lerobot_my_dataset_shake_hands \
   --dataset.single_task="Shake Hands" \
   --policy.path=/Users/tommy/Downloads/7-lerobot/shake/smolvla/40K/pretrained_model \
   --dataset.push_to_hub=false \

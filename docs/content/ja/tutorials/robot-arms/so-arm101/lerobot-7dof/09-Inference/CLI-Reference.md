@@ -5,15 +5,13 @@ description: "訓練済みモデルのデプロイに使うコマンドの各パ
 
 # コマンドラインの説明
 
-> **注意:** LeRobot の新しいバージョンでは、ポリシー推論は専用の `lerobot-rollout` コマンドに移行し、`lerobot-record` はデータ収集専用になりました。下記の `lerobot-record --policy.path` コマンドは以前のバージョン向けです。
-
 ## コマンドラインの説明
 
 リアルタイム可視化あり：\-\-display\_data=true
 
 リアルタイム可視化なし：\-\-display\_data=false
 
-`--display_data=true`の場合、rerun\.io のクールな可視化インターフェースが起動しますが、`/Users/tommy/.cache/huggingface/lerobot/eval_lerobot_my_dataset_a/images/observation.images.front/episode-000000`ディレクトリ以下に毎フレームの画像が保存され、非常に容量を占有します。後で`--display_data=false`に設定できます
+`--display_data=true`の場合、rerun\.io のクールな可視化インターフェースが起動しますが、`/Users/tommy/.cache/huggingface/lerobot/rollout_lerobot_my_dataset_a/images/observation.images.front/episode-000000`ディレクトリ以下に毎フレームの画像が保存され、非常に容量を占有します。後で`--display_data=false`に設定できます
 
 
 
@@ -26,13 +24,14 @@ HuggingFace モデル Repo 上のモデルを推論する：\-\-policy\.path=Tom
 - ローカルモデルを推論する（リアルタイム可視化あり）
 
 ```Shell
-lerobot-record  \
+lerobot-rollout  \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/tty.usbmodem5AAF2193061 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1920, height: 1080, fps: 60, fourcc: "MJPG"}}" \
   --robot.id=my_follower_arm \
   --display_data=true \
-  --dataset.repo_id=Tommymy/eval_lerobot_my_dataset_a \
+  --dataset.repo_id=Tommymy/rollout_lerobot_my_dataset_a \
   --dataset.single_task="Grab Oranges" \
   --dataset.episode_time_s=1000 \
   --policy.path=/Users/tommy/Downloads/7-lerobot/checkpoints/last/pretrained_model
@@ -41,13 +40,14 @@ lerobot-record  \
 - ローカルモデルを推論する（リアルタイム可視化なし）
 
 ```Shell
-lerobot-record  \
+lerobot-rollout  \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/tty.usbmodem5AAF2193061 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1920, height: 1080, fps: 60, fourcc: "MJPG"}}" \
   --robot.id=my_follower_arm \
   --display_data=false \
-  --dataset.repo_id=Tommymy/eval_lerobot_my_dataset_a \
+  --dataset.repo_id=Tommymy/rollout_lerobot_my_dataset_a \
   --dataset.single_task="Grab Oranges" \
   --dataset.episode_time_s=1000 \
   --policy.path=/Users/tommy/Downloads/7-lerobot/checkpoints/last/pretrained_model
@@ -56,13 +56,14 @@ lerobot-record  \
 - HuggingFace モデル Repo 上のモデルを推論する
 
 ```Shell
-lerobot-record  \
+lerobot-rollout  \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/tty.usbmodem5AAF2193061 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1920, height: 1080, fps: 60, fourcc: "MJPG"}}" \
   --robot.id=my_follower_arm \
   --display_data=true \
-  --dataset.repo_id=Tommymy/eval_lerobot_my_dataset_a \
+  --dataset.repo_id=Tommymy/rollout_lerobot_my_dataset_a \
   --dataset.single_task="Grab Oranges" \
   --policy.path=Tommymy/lerobot_my_model_a
 ```
