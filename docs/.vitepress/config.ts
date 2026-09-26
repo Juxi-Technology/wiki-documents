@@ -793,6 +793,28 @@ const en = {
           ],
         },
         {
+          text: 'Jetson Orin Nano Dev Kit',
+          collapsed: false,
+          items: [
+            { text: 'Quick Start', link: '/tutorials/jetson-orin-nano/quick-start' },
+            { text: 'Flashing & Updates', link: '/tutorials/jetson-orin-nano/flashing-and-updates' },
+            { text: 'Verify Your System', link: '/tutorials/jetson-orin-nano/verify-your-system' },
+            { text: 'Interfaces & Hardware Layout', link: '/tutorials/jetson-orin-nano/interfaces' },
+            { text: 'Product Overview', link: '/tutorials/jetson-orin-nano/overview' },
+            { text: 'Local LLM Inference', link: '/tutorials/jetson-orin-nano/local-llm' },
+            { text: 'Memory Efficiency', link: '/tutorials/jetson-orin-nano/memory-efficiency' },
+            { text: 'DeepStream Video Analytics', link: '/tutorials/jetson-orin-nano/deepstream' },
+            { text: 'Robotics (State of Play)', link: '/tutorials/jetson-orin-nano/robotics' },
+            { text: 'Agentic AI (NemoClaw)', link: '/tutorials/jetson-orin-nano/agentic-ai' },
+            { text: 'Migrate from JetPack 6.x', link: '/tutorials/jetson-orin-nano/jetpack-6-to-7' },
+            { text: 'Downloads', link: '/tutorials/jetson-orin-nano/downloads' },
+            { text: 'FAQ', link: '/tutorials/jetson-orin-nano/faq' },
+            { text: 'Troubleshooting', link: '/tutorials/jetson-orin-nano/troubleshooting' },
+            { text: 'Glossary', link: '/tutorials/jetson-orin-nano/glossary' },
+            { text: 'Changelog', link: '/tutorials/jetson-orin-nano/changelog' },
+          ],
+        },
+        {
           text: 'Learning Resources',
           items: [
             { text: 'Learning Resources Home', link: '/tutorials/learning-resources/' },
@@ -1313,6 +1335,7 @@ const en = {
         ] },
         { text: 'Compute & Vision', items: [
           { text: 'Jetson AGX Orin Developer Kit (64GB)', link: '/products/jetson-agx-orin-devkit' },
+          { text: 'Jetson Orin Nano Super Developer Kit (8GB)', link: '/products/jetson-orin-nano-devkit' },
           { text: 'Jetson Orin NX Super Developer Kit', link: '/products/jetson-orin-nx-super-kit' },
           { text: '3D RealSense Depth Camera', link: '/products/realsense-depth-camera' },
           { text: 'ESP32-S3 WiFi Video Module', link: '/products/esp32-s3-wifi-module' },
