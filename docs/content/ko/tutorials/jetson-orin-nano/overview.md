@@ -95,7 +95,7 @@ L4T r39.2 전원 모드 표에서 Super 구성은 15W(모드 0), 25W(모드 1, �
 | P3768 | 레퍼런스 캐리어 보드 |
 | P3767-0005 | 개발자 키트에 들어 있는 모듈 SKU(Jetson Orin Nano 8GB, "for development only") |
 
-기타 Orin Nano 모듈 SKU: P3767-0003(8GB, 상용)과 P3767-0004(4GB). 개발자 키트 캐리어는 SKU 0, 1, 3, 4, 5의 P3767 모듈을 지원합니다. *(L4T r39.2 Developer Guide; L4T r38.2.1 Developer Guide)*
+이 문서 시리즈는 **8GB 개발자 키트만** 다룹니다. 상용 8GB Orin Nano 모듈은 다른 부품 번호(**P3767-0003**)이며 플래싱 도구에서 별도 대상입니다 — [플래싱 및 업데이트](/ko/tutorials/jetson-orin-nano/flashing-and-updates)의 모듈 SKU 관련 설명을 참조하십시오.
 
 ## Orin 제품군에서의 위치
 
@@ -113,7 +113,7 @@ L4T r39.2 전원 모드 표에서 Super 구성은 15W(모드 0), 25W(모드 1, �
 - **로보틱스.** NVIDIA 직원은 JetPack 7.2.1에 ROS 2 Jazzy를 권장합니다 — **[로보틱스](/ko/tutorials/jetson-orin-nano/robotics)**를 참조하십시오.
 
 > **Juxi 참고:** 양산 제품은 자체 제작 캐리어 보드에 장착한 Jetson Orin 모듈 —
-> Orin Nano 8GB 또는 4GB, 혹은 Orin NX — 을 기반으로 제작됩니다. 개발자
+> Orin Nano 8GB 또는 Orin NX — 을 기반으로 제작됩니다. 개발자
 > 키트는 개발용 수단이며, 양산 부품이 아닙니다.
 
 ## 구성품

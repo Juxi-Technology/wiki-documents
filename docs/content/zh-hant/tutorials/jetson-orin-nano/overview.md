@@ -95,7 +95,7 @@ Super 效能提升來自一種軟體電源模式，它在相同的硬體上提�
 | P3768 | 參考載板 |
 | P3767-0005 | 開發者套件中的模組 SKU（Jetson Orin Nano 8GB，「僅供開發」） |
 
-其他 Orin Nano 模組 SKU：P3767-0003（8GB，商用）與 P3767-0004（4GB）。開發者套件的載板可接受 SKU 0、1、3、4 與 5 的 P3767 模組。*(L4T r39.2 Developer Guide; L4T r38.2.1 Developer Guide)*
+本文件系列**僅涵蓋 8GB 開發者套件**。商用版 8GB Orin Nano 模組是另一個料號（**P3767-0003**），在刷機工具中是獨立的目標——參見 [刷機與更新](/zh-hant/tutorials/jetson-orin-nano/flashing-and-updates) 中的模組 SKU 說明。
 
 ## 在 Orin 家族中的定位
 
@@ -112,7 +112,7 @@ Super 效能提升來自一種軟體電源模式，它在相同的硬體上提�
 - **本地生成式 AI。** 主打說法是 1.7 倍的生成式 AI 提升；8GB 的天花板決定了什麼裝得下——見**[本地 LLM](/zh-hant/tutorials/jetson-orin-nano/local-llm)**。
 - **機器人。** NVIDIA 員工建議 JetPack 7.2.1 搭配 ROS 2 Jazzy——見**[機器人](/zh-hant/tutorials/jetson-orin-nano/robotics)**。
 
-> **鉅犀說明：** 量產產品建構在 Jetson Orin *模組*之上——Orin Nano 8GB 或 4GB，或 Orin NX——安裝在你自研或合作夥伴提供的載板上。開發者套件是開發驗證的載具，而非量產零件。
+> **鉅犀說明：** 量產產品建構在 Jetson Orin *模組*之上——Orin Nano 8GB 或 Orin NX——安裝在你自研或合作夥伴提供的載板上。開發者套件是開發驗證的載具，而非量產零件。
 
 ## 包裝內容
 

@@ -141,10 +141,7 @@ Performance do L4T r39.2.*
 | P3768 | A placa portadora de referência |
 | P3767-0005 | SKU do módulo no kit de desenvolvedor (Jetson Orin Nano 8GB, «só para desenvolvimento») |
 
-Outros SKUs do módulo Orin Nano: P3767-0003 (8GB, comercial) e P3767-0004
-(4GB). A placa portadora do kit de desenvolvedor aceita módulos P3767 com SKU
-0, 1, 3, 4 e 5. *(Developer Guide do L4T r39.2; Developer Guide do L4T
-r38.2.1)*
+Esta série de documentação cobre **apenas o kit de desenvolvimento de 8GB**. O módulo Orin Nano 8GB comercial é outra referência (**P3767-0003**) e um alvo separado nas ferramentas de flashing — ver a nota sobre o SKU do módulo em [Gravação e atualizações](/pt-pt/tutorials/jetson-orin-nano/flashing-and-updates).
 
 ## Onde se situa na família Orin
 
@@ -165,7 +162,7 @@ PVA, as cargas de trabalho de IA correm apenas na GPU — ver
 - **Robótica.** Os funcionários da NVIDIA recomendam o ROS 2 Jazzy para o JetPack 7.2.1 — ver **[Robótica (ponto de situação)](/pt-pt/tutorials/jetson-orin-nano/robotics)**.
 
 > **Nota da Juxi:** os produtos de produção são construídos sobre *módulos*
-> Jetson Orin — Orin Nano 8GB ou 4GB, ou um Orin NX — numa placa portadora
+> Jetson Orin — Orin Nano 8GB ou um Orin NX — numa placa portadora
 > personalizada. O kit de desenvolvedor é o veículo de desenvolvimento, não a
 > peça de produção.
 

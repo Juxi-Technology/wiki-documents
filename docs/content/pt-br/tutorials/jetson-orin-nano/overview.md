@@ -135,9 +135,7 @@ página de especificações NVIDIA Jetson Orin; página Platform Power and Perfo
 | P3768 | A placa portadora de referência |
 | P3767-0005 | SKU do módulo no kit de desenvolvedor (Jetson Orin Nano 8GB, "for development only") |
 
-Outros SKUs de módulo Orin Nano: P3767-0003 (8GB, comercial) e P3767-0004
-(4GB). A placa portadora do kit de desenvolvedor aceita módulos P3767 com SKU 0, 1, 3, 4
-e 5. *(L4T r39.2 Developer Guide; L4T r38.2.1 Developer Guide)*
+Esta série de documentação cobre **apenas o kit de desenvolvimento de 8GB**. O módulo Orin Nano 8GB comercial é outro part number (**P3767-0003**) e um alvo separado nas ferramentas de gravação — consulte a nota sobre o SKU do módulo em [Gravação e atualizações](/pt-br/tutorials/jetson-orin-nano/flashing-and-updates).
 
 ## Onde ele se posiciona na família Orin
 
@@ -171,7 +169,7 @@ local](/pt-br/tutorials/jetson-orin-nano/local-llm)**.
   **[Robótica](/pt-br/tutorials/jetson-orin-nano/robotics)**.
 
 > **Nota da Juxi:** Produtos de produção são construídos sobre módulos Jetson Orin — o
-> Orin Nano 8GB ou 4GB, ou um Orin NX — em uma placa portadora personalizada. O
+> Orin Nano 8GB ou um Orin NX — em uma placa portadora personalizada. O
 > kit de desenvolvedor é o veículo de desenvolvimento, não o componente de produção.
 
 ## Na caixa

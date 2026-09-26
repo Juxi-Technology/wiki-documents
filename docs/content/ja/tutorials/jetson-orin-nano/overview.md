@@ -95,7 +95,7 @@ L4T r39.2 の電力モード表では、Super 構成は 15W(モード 0)、25W(�
 | P3768 | リファレンスキャリアボード |
 | P3767-0005 | 開発キットに搭載されるモジュール SKU(Jetson Orin Nano 8GB、"for development only") |
 
-その他の Orin Nano モジュール SKU:P3767-0003(8GB、商用)と P3767-0004(4GB)。開発キットのキャリアボードは SKU 0、1、3、4、5 の P3767 モジュールを受け付けます。*(L4T r39.2 Developer Guide、L4T r38.2.1 Developer Guide)*
+本ドキュメントシリーズは **8GB 開発キットのみ**を対象とします。商用 8GB Orin Nano モジュールは別の型番(**P3767-0003**)であり、書き込みツールでは別ターゲットになります — [書き込みと更新](/ja/tutorials/jetson-orin-nano/flashing-and-updates) のモジュール SKU に関する注記を参照してください。
 
 ## Orin ファミリーでの位置づけ
 
@@ -113,7 +113,7 @@ L4T r39.2 の電力モード表では、Super 構成は 15W(モード 0)、25W(�
 - **ロボティクス。** NVIDIA の担当者は JetPack 7.2.1 に ROS 2 Jazzy を推奨しています — **[ロボティクス](/ja/tutorials/jetson-orin-nano/robotics)** を参照。
 
 > **Juxi 注記:** 量産製品は、カスタムキャリアボード上の Jetson Orin モジュール — Orin Nano
-> 8GB または 4GB、あるいは Orin NX — をベースに構築されます。開発キットは開発用の媒体であり、
+> 8GB または Orin NX — をベースに構築されます。開発キットは開発用の媒体であり、
 > 量産部品ではありません。
 
 ## 同梱物

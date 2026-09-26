@@ -135,9 +135,7 @@ pagina specifiche NVIDIA Jetson Orin; pagina Power and Performance di L4T r39.2.
 | P3768 | La scheda carrier di riferimento |
 | P3767-0005 | SKU del modulo nel kit di sviluppo (Jetson Orin Nano 8GB, "for development only") |
 
-Altri SKU del modulo Orin Nano: P3767-0003 (8GB, commerciale) e P3767-0004
-(4GB). La scheda carrier del kit di sviluppo accetta moduli P3767 con SKU 0, 1, 3, 4
-e 5. *(Developer Guide L4T r39.2; Developer Guide L4T r38.2.1)*
+Questa serie di documentazione copre **solo il kit di sviluppo da 8GB**. Il modulo Orin Nano 8GB commerciale è un altro codice prodotto (**P3767-0003**) ed è un target separato negli strumenti di flashing — vedere la nota sullo SKU del modulo in [Flashing e aggiornamenti](/it/tutorials/jetson-orin-nano/flashing-and-updates).
 
 ## Dove si colloca nella famiglia Orin
 
@@ -170,7 +168,7 @@ memoria](/it/tutorials/jetson-orin-nano/memory-efficiency)** e **[LLM locale](/i
   **[Robotica](/it/tutorials/jetson-orin-nano/robotics)**.
 
 > **Nota di Juxi:** i prodotti di produzione si basano su moduli Jetson Orin — l'Orin
-> Nano 8GB o 4GB, oppure un Orin NX — su una scheda carrier personalizzata. Il
+> Nano 8GB oppure un Orin NX — su una scheda carrier personalizzata. Il
 > kit di sviluppo è il veicolo di sviluppo, non il componente di produzione.
 
 ## Contenuto della confezione

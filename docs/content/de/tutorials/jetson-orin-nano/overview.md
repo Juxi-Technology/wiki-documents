@@ -133,9 +133,7 @@ NVIDIA Jetson Orin Spec-Seite; L4T r39.2 Power and Performance-Seite.*
 | P3768 | Die Referenz-Trägerplatine |
 | P3767-0005 | Modul-SKU im Developer Kit (Jetson Orin Nano 8GB, „nur für Entwicklungszwecke“) |
 
-Weitere Orin-Nano-Modul-SKUs: P3767-0003 (8GB, kommerziell) und P3767-0004
-(4GB). Die Trägerplatine des Developer Kit nimmt P3767-Module mit den SKUs 0, 1, 3, 4
-und 5 auf. *(L4T r39.2 Developer Guide; L4T r38.2.1 Developer Guide)*
+Diese Dokumentationsreihe behandelt **nur das 8GB-Developer-Kit**. Das kommerzielle 8GB-Orin-Nano-Modul ist eine andere Teilenummer (**P3767-0003**) und ein eigenes Ziel in den Flash-Werkzeugen — siehe den Modul-SKU-Hinweis in [Flashen & Updates](/de/tutorials/jetson-orin-nano/flashing-and-updates).
 
 ## Einordnung in die Orin-Familie
 
@@ -169,7 +167,7 @@ LLM](/de/tutorials/jetson-orin-nano/local-llm)**.
   **[Robotik](/de/tutorials/jetson-orin-nano/robotics)**.
 
 > **Juxi-Hinweis:** Serienprodukte basieren auf Jetson-Orin-Modulen — dem
-> Orin Nano 8GB oder 4GB oder einem Orin NX — auf einer kundenspezifischen Trägerplatine. Das
+> Orin Nano 8GB oder einem Orin NX — auf einer kundenspezifischen Trägerplatine. Das
 > Developer Kit ist das Entwicklungsvehikel, nicht das Serienbauteil.
 
 ## Lieferumfang
