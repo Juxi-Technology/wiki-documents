@@ -36,7 +36,8 @@ dir outputs\train\soarm_amazing_hand_pick\checkpoints\last\pretrained_model
 ## ステップ 2：デプロイと評価
 
 ```PowerShell
-lerobot-record `
+lerobot-rollout `
+  --strategy.type=episodic `
   --robot.type=so101_amazing_hand `
   --robot.port=<follower_arm_com> `
   --robot.hand_port=<hand_com> `
@@ -46,7 +47,7 @@ lerobot-record `
     top: {type: opencv, index_or_path: 1, width: 640, height: 480, fps: 30, fourcc: "MJPG"}
   }' `
   --policy.path=outputs\train\soarm_amazing_hand_pick\checkpoints\last\pretrained_model `
-  --dataset.repo_id=soarm_amazing_hand_pick_eval `
+  --dataset.repo_id=rollout_soarm_amazing_hand_pick_eval `
   --dataset.root=D:\lerobot_data `
   --dataset.push_to_hub=false `
   --dataset.num_episodes=10 `
@@ -56,7 +57,7 @@ lerobot-record `
 
 > `<follower_arm_com>` / `<hand_com>` を実際の COM 番号に置き換えます；カメラの `index_or_path` をあなたのカメラインデックスに置き換えます。
 
-> **💡 説明**：`lerobot-record` を使用しますが**付けません ****`--teleop.type`**、ポリシーがロボットを自律的に制御します（人手による遠隔操作の代わり）。データは評価セットとして保存されます。`--dataset.root` / `--dataset.push_to_hub=false` はステージ4 と一致し、純粋なローカル保存で HF ログインは不要です。
+> **💡 説明**：`lerobot-rollout` を使用しますが**付けません ****`--teleop.type`**、ポリシーがロボットを自律的に制御します（人手による遠隔操作の代わり）。データは評価セットとして保存されます。`--dataset.root` / `--dataset.push_to_hub=false` はステージ4 と一致し、純粋なローカル保存で HF ログインは不要です。
 
 ---
 

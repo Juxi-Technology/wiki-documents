@@ -35,7 +35,8 @@ It should contain model files such as `model.safetensors`.
 ## Step 2: Deploy and Evaluate
 
 ```Bash
-lerobot-record \
+lerobot-rollout \
+  --strategy.type=episodic \
   --robot.type=so101_amazing_hand \
   --robot.port=<follower_arm_port> \
   --robot.hand_port=<hand_port> \
@@ -45,7 +46,7 @@ lerobot-record \
     top: {type: opencv, index_or_path: 1, width: 640, height: 480, fps: 30, fourcc: "MJPG"}
   }' \
   --policy.path=outputs/train/soarm_amazing_hand_pick/checkpoints/last/pretrained_model \
-  --dataset.repo_id=soarm_amazing_hand_pick_eval \
+  --dataset.repo_id=rollout_soarm_amazing_hand_pick_eval \
   --dataset.root=~/lerobot_data \
   --dataset.push_to_hub=false \
   --dataset.num_episodes=10 \
@@ -55,7 +56,7 @@ lerobot-record \
 
 > Replace `<follower_arm_port>` / `<hand_port>` with the actual paths; replace the camera `index_or_path` with your camera indices.
 
-> **💡 Notes**: Use `lerobot-record` but **do not add ****`--teleop.type`**; the policy then controls the robot autonomously (replacing manual teleoperation). The data is saved as an evaluation set. `--dataset.root` / `--dataset.push_to_hub=false` are the same as in Stage 4; purely local saving requires no HF login.
+> **💡 Notes**: Use `lerobot-rollout` but **do not add ****`--teleop.type`**; the policy then controls the robot autonomously (replacing manual teleoperation). The data is saved as an evaluation set. `--dataset.root` / `--dataset.push_to_hub=false` are the same as in Stage 4; purely local saving requires no HF login.
 
 ---
 

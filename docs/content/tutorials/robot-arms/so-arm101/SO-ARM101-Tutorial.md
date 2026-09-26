@@ -652,10 +652,11 @@ lerobot-train \
 
 **Evaluation**
 
-You can use the [`record`](https://github.com/huggingface/lerobot/blob/main/lerobot/record.py) function in `lerobot/record.py`, but you need to use the weights file of the strategy training results as input. For example, run the following command to record 10 evaluation rounds:
+You can use the [`rollout`](https://github.com/huggingface/lerobot/blob/main/src/lerobot/scripts/lerobot_rollout.py) command, but you need to use the weights file of the strategy training results as input. For example, run the following command to record 10 evaluation rounds:
 
 ```Python
-lerobot-record \
+lerobot-rollout \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"},   side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30,fourcc: "MJPG"}}" \
@@ -664,20 +665,20 @@ lerobot-record \
   --teleop.port=/dev/ttyACM1 \
   --teleop.id=my_awesome_leader_arm \
   --display_data=false \
-  --dataset.repo_id=juxi/eval_test123 \
+  --dataset.repo_id=juxi/rollout_test123 \
   --dataset.single_task="Put the blue cube on the black box" \
   --dataset.episode_time_s=30 \
   --dataset.reset_time_s=30 \
   --dataset.num_episodes=5 \
-  --policy.path=outputs/train/act_so101_test/checkpoints/last/pretrained_model
+  --policy.path=outputs/train/act_so101_test/checkpoints/last/pretrained_model \
   --dataset.push_to_hub=false
 ```
 
 1. `--policy.path` parameter, which indicates the path to your policy Model Training result weight file (e.g., `outputs/train/act_so101_test/checkpoints/last/pretrained_model`). If you have uploaded your Model Training result weight file to Hub, you can also use the model repository (e.g., `${HF_USER}/act_so101_test`). 
 
-2. The name of the dataset ` dataset.repo_id ` starts with ` eval_ `, this operation will separately record the video and data during evaluation for you when you evaluate, which will be saved in a folder starting with eval_, for example ` juxi/eval_test123 `. 
+2. The name of the dataset ` dataset.repo_id ` starts with ` rollout_ `, this operation will separately record the video and data during evaluation for you when you evaluate, which will be saved in a folder starting with rollout_, for example ` juxi/rollout_test123 `. 
 
-3. If the evaluation phase encounters ` File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx' ` please first delete ` the folder starting with eval_ ` and then run the program again. 
+3. If the evaluation phase encounters ` File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/rollout_xxxx' ` please first delete ` the folder starting with rollout_ ` and then run the program again. 
 
 4. When encountering ` mean is infinity. You should either initialize with stats as an argument or use a pretrained model ` Please note that keywords such as front and side in the --robot.cameras parameter must be strictly consistent with those used when collecting the dataset. 
 
@@ -706,21 +707,23 @@ lerobot-train \
 **Verify**
 
 ```Bash
-lerobot-record \
+lerobot-rollout \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
-  --robot.id=my_awesome_follower_arm \ # <- Use your robot id
+  # <- Use your robot id
+  --robot.id=my_awesome_follower_arm \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"},   side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30,fourcc: "MJPG"}}" \
   --dataset.single_task="Put the blue cube on the black box" \
-  --dataset.repo_id=juxi/eval_test123 \ 
+  --dataset.repo_id=juxi/rollout_test123 \
   --dataset.episode_time_s=30 \
   --dataset.reset_time_s=30 \
   --dataset.num_episodes=5 \
-  # <- Teleop optional if you want to teleoperate in between episodes \
-  # --teleop.type=so101_leader \
-  # --teleop.port=/dev/ttyACM0 \
-  # --teleop.id=my_awesome_leader_arm \
   --policy.path=HF_USER/FINETUNE_MODEL_NAME # <- Use your fine-tuned model
+  # <- Teleop optional if you want to teleoperate in between episodes
+  # --teleop.type=so101_leader
+  # --teleop.port=/dev/ttyACM0
+  # --teleop.id=my_awesome_leader_arm
 ```
 
 ### Pi0
@@ -752,13 +755,14 @@ lerobot-train \
 **Verify**
 
 ```Bash
-lerobot-record \
+lerobot-rollout \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"},   side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30,fourcc: "MJPG"}}" \
   --robot.id=my_awesome_follower_arm \
   --display_data=false \
-  --dataset.repo_id=juxi/eval_test123 \
+  --dataset.repo_id=juxi/rollout_test123 \
   --dataset.single_task="Put the blue cube on the black box" \
   --policy.path=outputs/pi0_training/checkpoints/last/pretrained_model
 ```
@@ -792,13 +796,14 @@ lerobot-train \
 **Verify**
 
 ```Bash
-lerobot-record \
+lerobot-rollout \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"},   side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30,fourcc: "MJPG"}}" \
   --robot.id=my_awesome_follower_arm \
   --display_data=false \
-  --dataset.repo_id=juxi/eval_test123 \
+  --dataset.repo_id=juxi/rollout_test123 \
   --dataset.single_task="Put the blue cube on the black box" \
   --policy.path=outputs/pi05_training/checkpoints/last/pretrained_model
 ```
@@ -966,7 +971,8 @@ Add parameters for the number of evaluation rounds and round duration to the com
 For example: 
 
 ```Python
-lerobot-record \
+lerobot-rollout \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"},   side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30,fourcc: "MJPG"}}" \
@@ -975,12 +981,12 @@ lerobot-record \
   --teleop.port=/dev/ttyACM1 \
   --teleop.id=my_awesome_leader_arm \
   --display_data=false \
-  --dataset.repo_id=juxi/eval_test123 \
+  --dataset.repo_id=juxi/rollout_test123 \
   --dataset.single_task="Put the blue cube on the black box" \
   --dataset.episode_time_s=30 \
   --dataset.reset_time_s=30 \
   --dataset.num_episodes=5 \
-  --policy.path=outputs/train/act_so101_test/checkpoints/last/pretrained_model
+  --policy.path=outputs/train/act_so101_test/checkpoints/last/pretrained_model \
   --dataset.push_to_hub=false
 ```
 
@@ -1032,7 +1038,7 @@ Power cycle the robotic arm, and then attempt to calibrate the robotic arm again
 File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'
 ```
 
-Please first delete`the folder starting with eval_`and then run the program again.
+Please first delete`the folder starting with rollout_`and then run the program again.
 
 - If encountered during the evaluation phase 
 

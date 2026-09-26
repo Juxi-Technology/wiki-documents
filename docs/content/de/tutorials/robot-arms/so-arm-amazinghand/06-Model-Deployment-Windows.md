@@ -36,7 +36,8 @@ Es sollte Modelldateien wie `model.safetensors` enthalten.
 ## Schritt 2: Deployment und Evaluierung
 
 ```PowerShell
-lerobot-record `
+lerobot-rollout `
+  --strategy.type=episodic `
   --robot.type=so101_amazing_hand `
   --robot.port=<follower_arm_com> `
   --robot.hand_port=<hand_com> `
@@ -46,7 +47,7 @@ lerobot-record `
     top: {type: opencv, index_or_path: 1, width: 640, height: 480, fps: 30, fourcc: "MJPG"}
   }' `
   --policy.path=outputs\train\soarm_amazing_hand_pick\checkpoints\last\pretrained_model `
-  --dataset.repo_id=soarm_amazing_hand_pick_eval `
+  --dataset.repo_id=rollout_soarm_amazing_hand_pick_eval `
   --dataset.root=D:\lerobot_data `
   --dataset.push_to_hub=false `
   --dataset.num_episodes=10 `
@@ -56,7 +57,7 @@ lerobot-record `
 
 > Ersetzen Sie `<follower_arm_com>` / `<hand_com>` durch die tatsächlichen COM-Nummern; ersetzen Sie `index_or_path` der Kameras durch Ihre Kamera-Indizes.
 
-> **💡 Erläuterung**: Verwenden Sie `lerobot-record`, aber **ohne ****`--teleop.type`**; die Policy steuert den Roboter dann autonom (anstelle manueller Teleoperation). Die Daten werden als Auswertungssatz gespeichert. `--dataset.root` / `--dataset.push_to_hub=false` stimmen mit Phase 4 überein; reine lokale Speicherung ohne HF-Anmeldung.
+> **💡 Erläuterung**: Verwenden Sie `lerobot-rollout`, aber **ohne ****`--teleop.type`**; die Policy steuert den Roboter dann autonom (anstelle manueller Teleoperation). Die Daten werden als Auswertungssatz gespeichert. `--dataset.root` / `--dataset.push_to_hub=false` stimmen mit Phase 4 überein; reine lokale Speicherung ohne HF-Anmeldung.
 
 ---
 

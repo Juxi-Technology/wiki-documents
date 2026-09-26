@@ -35,7 +35,8 @@ Deve contenere file del modello come `model.safetensors`.
 ## Passo 2: Distribuzione e valutazione
 
 ```Bash
-lerobot-record \
+lerobot-rollout \
+  --strategy.type=episodic \
   --robot.type=so101_amazing_hand \
   --robot.port=<follower_arm_port> \
   --robot.hand_port=<hand_port> \
@@ -45,7 +46,7 @@ lerobot-record \
     top: {type: opencv, index_or_path: 1, width: 640, height: 480, fps: 30, fourcc: "MJPG"}
   }' \
   --policy.path=outputs/train/soarm_amazing_hand_pick/checkpoints/last/pretrained_model \
-  --dataset.repo_id=soarm_amazing_hand_pick_eval \
+  --dataset.repo_id=rollout_soarm_amazing_hand_pick_eval \
   --dataset.root=~/lerobot_data \
   --dataset.push_to_hub=false \
   --dataset.num_episodes=10 \
@@ -55,7 +56,7 @@ lerobot-record \
 
 > Sostituisci `<follower_arm_port>` / `<hand_port>` con i percorsi reali; e `index_or_path` delle telecamere con l'indice delle tue telecamere.
 
-> **💡 Descrizione**: si usa `lerobot-record` ma **senza aggiungere ****`--teleop.type`**; la politica controllerà il robot in autonomia (al posto della teleoperazione manuale). I dati vengono salvati come set di valutazione. `--dataset.root` / `--dataset.push_to_hub=false` sono uguali a quelli della fase 4; il salvataggio puramente locale non richiede l'accesso a HF.
+> **💡 Descrizione**: si usa `lerobot-rollout` ma **senza aggiungere ****`--teleop.type`**; la politica controllerà il robot in autonomia (al posto della teleoperazione manuale). I dati vengono salvati come set di valutazione. `--dataset.root` / `--dataset.push_to_hub=false` sono uguali a quelli della fase 4; il salvataggio puramente locale non richiede l'accesso a HF.
 
 ---
 

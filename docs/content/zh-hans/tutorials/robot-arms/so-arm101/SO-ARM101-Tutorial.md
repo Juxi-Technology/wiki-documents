@@ -649,10 +649,11 @@ lerobot-train \
 
 **评估**
 
-您可以使用 [`lerobot/record.py`](https://github.com/huggingface/lerobot/blob/main/lerobot/record.py) 中的 `record` 功能，但需要将策略训练结果训练结果权重文件作为输入。例如，运行以下命令记录 10 个评估回合：
+您可以使用 [`rollout`](https://github.com/huggingface/lerobot/blob/main/src/lerobot/scripts/lerobot_rollout.py) 命令，但需要将策略训练结果权重文件作为输入。例如，运行以下命令记录 10 个评估回合：
 
 ```Python
-lerobot-record \
+lerobot-rollout \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"},   side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30,fourcc: "MJPG"}}" \
@@ -661,20 +662,20 @@ lerobot-record \
   --teleop.port=/dev/ttyACM1 \
   --teleop.id=my_awesome_leader_arm \
   --display_data=false \
-  --dataset.repo_id=juxi/eval_test123 \
+  --dataset.repo_id=juxi/rollout_test123 \
   --dataset.single_task="Put the blue cube on the black box" \
   --dataset.episode_time_s=30 \
   --dataset.reset_time_s=30 \
   --dataset.num_episodes=5 \
-  --policy.path=outputs/train/act_so101_test/checkpoints/last/pretrained_model
+  --policy.path=outputs/train/act_so101_test/checkpoints/last/pretrained_model \
   --dataset.push_to_hub=false
 ```
 
 1. `--policy.path` 参数，指示您的策略训练结果权重文件的路径（例如 `outputs/train/act_so101_test/checkpoints/last/pretrained_model`）。如果您将模型训练结果权重文件上传到 Hub，也可以使用模型仓库（例如 `$\{HF_USER\}/act_so101_test`）。
 
-2. 数据集的名称`dataset.repo_id`以 `eval_` 开头，这个操作会在你评估的时候为你单独录制评估时候的视频和数据，将保存在eval_开头的文件夹下，例如`juxi/eval_test123`。
+2. 数据集的名称`dataset.repo_id`以 `rollout_` 开头，这个操作会在你评估的时候为你单独录制评估时候的视频和数据，将保存在rollout_开头的文件夹下，例如`juxi/rollout_test123`。
 
-3. 如果评估阶段遇到`File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'`请先删除`eval_`开头的这个文件夹再次运行程序。
+3. 如果评估阶段遇到`File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/rollout_xxxx'`请先删除`rollout_`开头的这个文件夹再次运行程序。
 
 4. 当遇到`mean is infinity. You should either initialize with stats as an argument or use a pretrained model`请注意`--robot.cameras`这个参数中的front和side等关键词必须和采集数据集的时候保持严格一致。
 
@@ -703,21 +704,23 @@ lerobot-train \
 **验证**
 
 ```Bash
-lerobot-record \
+lerobot-rollout \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
-  --robot.id=my_awesome_follower_arm \ # <- Use your robot id
+  # <- Use your robot id
+  --robot.id=my_awesome_follower_arm \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"},   side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30,fourcc: "MJPG"}}" \
   --dataset.single_task="Put the blue cube on the black box" \
-  --dataset.repo_id=juxi/eval_test123 \ 
+  --dataset.repo_id=juxi/rollout_test123 \
   --dataset.episode_time_s=30 \
   --dataset.reset_time_s=30 \
   --dataset.num_episodes=5 \
-  # <- Teleop optional if you want to teleoperate in between episodes \
-  # --teleop.type=so101_leader \
-  # --teleop.port=/dev/ttyACM0 \
-  # --teleop.id=my_awesome_leader_arm \
   --policy.path=HF_USER/FINETUNE_MODEL_NAME # <- Use your fine-tuned model
+  # <- Teleop optional if you want to teleoperate in between episodes
+  # --teleop.type=so101_leader
+  # --teleop.port=/dev/ttyACM0
+  # --teleop.id=my_awesome_leader_arm
 ```
 
 ### Pi0
@@ -749,13 +752,14 @@ lerobot-train \
 **验证**
 
 ```Bash
-lerobot-record \
+lerobot-rollout \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"},   side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30,fourcc: "MJPG"}}" \
   --robot.id=my_awesome_follower_arm \
   --display_data=false \
-  --dataset.repo_id=juxi/eval_test123 \
+  --dataset.repo_id=juxi/rollout_test123 \
   --dataset.single_task="Put the blue cube on the black box" \
   --policy.path=outputs/pi0_training/checkpoints/last/pretrained_model
 ```
@@ -789,13 +793,14 @@ lerobot-train \
 **验证**
 
 ```Bash
-lerobot-record \
+lerobot-rollout \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"},   side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30,fourcc: "MJPG"}}" \
   --robot.id=my_awesome_follower_arm \
   --display_data=false \
-  --dataset.repo_id=juxi/eval_test123 \
+  --dataset.repo_id=juxi/rollout_test123 \
   --dataset.single_task="Put the blue cube on the black box" \
   --policy.path=outputs/pi05_training/checkpoints/last/pretrained_model
 ```
@@ -963,7 +968,8 @@ filezilla
 如：
 
 ```Python
-lerobot-record \
+lerobot-rollout \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"},   side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30,fourcc: "MJPG"}}" \
@@ -972,12 +978,12 @@ lerobot-record \
   --teleop.port=/dev/ttyACM1 \
   --teleop.id=my_awesome_leader_arm \
   --display_data=false \
-  --dataset.repo_id=juxi/eval_test123 \
+  --dataset.repo_id=juxi/rollout_test123 \
   --dataset.single_task="Put the blue cube on the black box" \
   --dataset.episode_time_s=30 \
   --dataset.reset_time_s=30 \
   --dataset.num_episodes=5 \
-  --policy.path=outputs/train/act_so101_test/checkpoints/last/pretrained_model
+  --policy.path=outputs/train/act_so101_test/checkpoints/last/pretrained_model \
   --dataset.push_to_hub=false
 ```
 
@@ -1029,7 +1035,7 @@ Magnitude 30841 exceeds 2047 (max for sign_bit_index=11)
 File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'
 ```
 
-请先删除`eval_`开头的这个文件夹再次运行程序。
+请先删除`rollout_`开头的这个文件夹再次运行程序。
 
 - 如果评估阶段遇到
 

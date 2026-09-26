@@ -36,7 +36,8 @@ dir outputs\train\soarm_amazing_hand_pick\checkpoints\last\pretrained_model
 ## 步驟 2：部署評估
 
 ```PowerShell
-lerobot-record `
+lerobot-rollout `
+  --strategy.type=episodic `
   --robot.type=so101_amazing_hand `
   --robot.port=<從動臂COM> `
   --robot.hand_port=<手COM> `
@@ -46,7 +47,7 @@ lerobot-record `
     top: {type: opencv, index_or_path: 1, width: 640, height: 480, fps: 30, fourcc: "MJPG"}
   }' `
   --policy.path=outputs\train\soarm_amazing_hand_pick\checkpoints\last\pretrained_model `
-  --dataset.repo_id=soarm_amazing_hand_pick_eval `
+  --dataset.repo_id=rollout_soarm_amazing_hand_pick_eval `
   --dataset.root=D:\lerobot_data `
   --dataset.push_to_hub=false `
   --dataset.num_episodes=10 `
@@ -56,7 +57,7 @@ lerobot-record `
 
 > 將 `<從動臂COM>` / `<手COM>` 替換為實際 COM 號；相機 `index_or_path` 替換為你的相機索引。
 
-> **💡 說明**：使用 `lerobot-record` 但**不加 ****`--teleop.type`**，策略將自主控制機器人（替代人工遙操作）。數據儲存為評估集。`--dataset.root` / `--dataset.push_to_hub=false` 與階段四一致，純本地儲存無需 HF 登入。
+> **💡 說明**：使用 `lerobot-rollout` 但**不加 ****`--teleop.type`**，策略將自主控制機器人（替代人工遙操作）。數據儲存為評估集。`--dataset.root` / `--dataset.push_to_hub=false` 與階段四一致，純本地儲存無需 HF 登入。
 
 ---
 

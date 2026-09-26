@@ -607,10 +607,11 @@ lerobot-train \
 
 **Valutazione**
 
-Usare la funzione `record` di [`lerobot/record.py`](https://github.com/huggingface/lerobot/blob/main/lerobot/record.py) con la policy come input – es. 10 episodi di valutazione:
+Usare il comando [`rollout`](https://github.com/huggingface/lerobot/blob/main/src/lerobot/scripts/lerobot_rollout.py) con la policy come input – es. 10 episodi di valutazione:
 
 ```Python
-lerobot-record \
+lerobot-rollout \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"},   side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30,fourcc: "MJPG"}}" \
@@ -619,18 +620,18 @@ lerobot-record \
   --teleop.port=/dev/ttyACM1 \
   --teleop.id=my_awesome_leader_arm \
   --display_data=false \
-  --dataset.repo_id=juxi/eval_test123 \
+  --dataset.repo_id=juxi/rollout_test123 \
   --dataset.single_task="Put the blue cube on the black box" \
   --dataset.episode_time_s=30 \
   --dataset.reset_time_s=30 \
   --dataset.num_episodes=5 \
-  --policy.path=outputs/train/act_so101_test/checkpoints/last/pretrained_model
+  --policy.path=outputs/train/act_so101_test/checkpoints/last/pretrained_model \
   --dataset.push_to_hub=false
 ```
 
 1. `--policy.path` punta ai pesi (es. `outputs/train/act_so101_test/checkpoints/last/pretrained_model`); è possibile anche un repository di modello (es. `$\{HF_USER\}/act_so101_test`).
-2. Se `dataset.repo_id` inizia con `eval_`, video e dati vengono registrati separatamente nella cartella `eval_` (es. `juxi/eval_test123`).
-3. A `File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'`, eliminare prima la cartella `eval_`.
+2. Se `dataset.repo_id` inizia con `rollout_`, video e dati vengono registrati separatamente nella cartella `rollout_` (es. `juxi/rollout_test123`).
+3. A `File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/rollout_xxxx'`, eliminare prima la cartella `rollout_`.
 4. A `mean is infinity. ...`, le chiavi di `--robot.cameras` (front, side ...) devono corrispondere esattamente alla raccolta.
 
 ### Smolvla
@@ -658,21 +659,23 @@ lerobot-train \
 **Valutazione**
 
 ```Bash
-lerobot-record \
+lerobot-rollout \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
-  --robot.id=my_awesome_follower_arm \ # <- Use your robot id
+  # <- Use your robot id
+  --robot.id=my_awesome_follower_arm \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"},   side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30,fourcc: "MJPG"}}" \
   --dataset.single_task="Put the blue cube on the black box" \
-  --dataset.repo_id=juxi/eval_test123 \
+  --dataset.repo_id=juxi/rollout_test123 \
   --dataset.episode_time_s=30 \
   --dataset.reset_time_s=30 \
   --dataset.num_episodes=5 \
-  # <- Teleop optional if you want to teleoperate in between episodes \
-  # --teleop.type=so101_leader \
-  # --teleop.port=/dev/ttyACM0 \
-  # --teleop.id=my_awesome_leader_arm \
   --policy.path=HF_USER/FINETUNE_MODEL_NAME # <- Use your fine-tuned model
+  # <- Teleop optional if you want to teleoperate in between episodes
+  # --teleop.type=so101_leader
+  # --teleop.port=/dev/ttyACM0
+  # --teleop.id=my_awesome_leader_arm
 ```
 
 ### Pi0
@@ -704,13 +707,14 @@ lerobot-train \
 **Valutazione**
 
 ```Bash
-lerobot-record \
+lerobot-rollout \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"},   side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30,fourcc: "MJPG"}}" \
   --robot.id=my_awesome_follower_arm \
   --display_data=false \
-  --dataset.repo_id=juxi/eval_test123 \
+  --dataset.repo_id=juxi/rollout_test123 \
   --dataset.single_task="Put the blue cube on the black box" \
   --policy.path=outputs/pi0_training/checkpoints/last/pretrained_model
 ```
@@ -744,13 +748,14 @@ lerobot-train \
 **Valutazione**
 
 ```Bash
-lerobot-record \
+lerobot-rollout \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"},   side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30,fourcc: "MJPG"}}" \
   --robot.id=my_awesome_follower_arm \
   --display_data=false \
-  --dataset.repo_id=juxi/eval_test123 \
+  --dataset.repo_id=juxi/rollout_test123 \
   --dataset.single_task="Put the blue cube on the black box" \
   --policy.path=outputs/pi05_training/checkpoints/last/pretrained_model
 ```
@@ -939,7 +944,8 @@ Il repository consigliato è la versione stabile validata; il repository ufficia
 Aggiungere i parametri di episodi e durata al comando di valutazione, es.:
 
 ```Python
-lerobot-record \
+lerobot-rollout \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"},   side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30,fourcc: "MJPG"}}" \
@@ -948,12 +954,12 @@ lerobot-record \
   --teleop.port=/dev/ttyACM1 \
   --teleop.id=my_awesome_leader_arm \
   --display_data=false \
-  --dataset.repo_id=juxi/eval_test123 \
+  --dataset.repo_id=juxi/rollout_test123 \
   --dataset.single_task="Put the blue cube on the black box" \
   --dataset.episode_time_s=30 \
   --dataset.reset_time_s=30 \
   --dataset.num_episodes=5 \
-  --policy.path=outputs/train/act_so101_test/checkpoints/last/pretrained_model
+  --policy.path=outputs/train/act_so101_test/checkpoints/last/pretrained_model \
   --dataset.push_to_hub=false
 ```
 
@@ -1007,7 +1013,7 @@ Spegnere e riaccendere il braccio e ricalibrare; utile anche con angoli MAX a de
 File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'
 ```
 
-Eliminare la cartella `eval_` e rilanciare.
+Eliminare la cartella `rollout_` e rilanciare.
 
 - Nella valutazione:
 

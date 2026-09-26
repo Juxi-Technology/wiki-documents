@@ -84,10 +84,11 @@ lerobot-train \
 # Datensatz abspielen (Datenqualität prüfen)
 lerobot-dataset-viz --repo-id juxi/pick_cube
 # Politik evaluieren
-lerobot-record \
+lerobot-rollout \
+  --strategy.type=episodic \
   --robot.type=so101_follower --robot.port=/dev/ttyACM0 \
   --policy.path=outputs/train/act_pick/checkpoints/last/pretrained_model \
-  --dataset.repo_id=juxi/eval_pick \
+  --dataset.repo_id=juxi/rollout_pick \
   --policy.device=cuda
 ```
 

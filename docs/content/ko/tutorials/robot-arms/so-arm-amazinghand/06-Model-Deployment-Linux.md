@@ -35,7 +35,8 @@ ls outputs/train/soarm_amazing_hand_pick/checkpoints/last/pretrained_model
 ## 단계 2: 배포 및 평가
 
 ```Bash
-lerobot-record \
+lerobot-rollout \
+  --strategy.type=episodic \
   --robot.type=so101_amazing_hand \
   --robot.port=<follower_arm_port> \
   --robot.hand_port=<hand_port> \
@@ -45,7 +46,7 @@ lerobot-record \
     top: {type: opencv, index_or_path: 1, width: 640, height: 480, fps: 30, fourcc: "MJPG"}
   }' \
   --policy.path=outputs/train/soarm_amazing_hand_pick/checkpoints/last/pretrained_model \
-  --dataset.repo_id=soarm_amazing_hand_pick_eval \
+  --dataset.repo_id=rollout_soarm_amazing_hand_pick_eval \
   --dataset.root=~/lerobot_data \
   --dataset.push_to_hub=false \
   --dataset.num_episodes=10 \
@@ -55,7 +56,7 @@ lerobot-record \
 
 > `<follower_arm_port>` / `<hand_port>`를 실제 경로로 교체합니다; 카메라 `index_or_path`를 사용자의 카메라 인덱스로 교체합니다.
 
-> **💡 설명**：`lerobot-record`를 사용하지만**추가하지 않음 ****`--teleop.type`**, 정책이 로봇을 자율적으로 제어합니다(수동 원격 조작 대체). 데이터는 평가 세트로 저장됩니다. `--dataset.root` / `--dataset.push_to_hub=false`는 단계 4와 일치하며, 순수 로컬 저장이라 HF 로그인이 필요 없습니다.
+> **💡 설명**：`lerobot-rollout`를 사용하지만**추가하지 않음 ****`--teleop.type`**, 정책이 로봇을 자율적으로 제어합니다(수동 원격 조작 대체). 데이터는 평가 세트로 저장됩니다. `--dataset.root` / `--dataset.push_to_hub=false`는 단계 4와 일치하며, 순수 로컬 저장이라 HF 로그인이 필요 없습니다.
 
 ---
 

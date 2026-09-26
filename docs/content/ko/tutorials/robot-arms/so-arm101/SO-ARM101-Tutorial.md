@@ -611,10 +611,11 @@ lerobot-train \
 
 **평가**
 
-[`lerobot/record.py`](https://github.com/huggingface/lerobot/blob/main/lerobot/record.py)의 `record` 기능을 사용할 수 있지만 정책 훈련 결과 가중치 파일을 입력으로 전달해야 합니다. 예: 10회 평가 에피소드 기록 명령:
+[`rollout`](https://github.com/huggingface/lerobot/blob/main/src/lerobot/scripts/lerobot_rollout.py) 명령을 사용할 수 있지만 정책 훈련 결과 가중치 파일을 입력으로 전달해야 합니다. 예: 10회 평가 에피소드 기록 명령:
 
 ```Python
-lerobot-record \
+lerobot-rollout \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"},   side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30,fourcc: "MJPG"}}" \
@@ -623,18 +624,18 @@ lerobot-record \
   --teleop.port=/dev/ttyACM1 \
   --teleop.id=my_awesome_leader_arm \
   --display_data=false \
-  --dataset.repo_id=juxi/eval_test123 \
+  --dataset.repo_id=juxi/rollout_test123 \
   --dataset.single_task="Put the blue cube on the black box" \
   --dataset.episode_time_s=30 \
   --dataset.reset_time_s=30 \
   --dataset.num_episodes=5 \
-  --policy.path=outputs/train/act_so101_test/checkpoints/last/pretrained_model
+  --policy.path=outputs/train/act_so101_test/checkpoints/last/pretrained_model \
   --dataset.push_to_hub=false
 ```
 
 1. `--policy.path` 파라미터는 정책 훈련 결과 가중치 파일 경로를 나타냅니다(예: `outputs/train/act_so101_test/checkpoints/last/pretrained_model`). 모델 가중치 파일을 Hub에 업로드했다면 모델 저장소(예: `$\{HF_USER\}/act_so101_test`)도 사용 가능.
-2. 데이터셋 이름 `dataset.repo_id`가 `eval_`로 시작하면 평가 시 평가용 영상과 데이터가 별도 녹화되어 eval_로 시작하는 폴더에 저장됩니다(예: `juxi/eval_test123`).
-3. 평가 단계에서 `File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'`가 나오면 `eval_`로 시작하는 폴더를 삭제하고 다시 실행하세요.
+2. 데이터셋 이름 `dataset.repo_id`가 `rollout_`로 시작하면 평가 시 평가용 영상과 데이터가 별도 녹화되어 rollout_로 시작하는 폴더에 저장됩니다(예: `juxi/rollout_test123`).
+3. 평가 단계에서 `File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/rollout_xxxx'`가 나오면 `rollout_`로 시작하는 폴더를 삭제하고 다시 실행하세요.
 4. `mean is infinity. You should either initialize with stats as an argument or use a pretrained model`가 나오면 `--robot.cameras` 파라미터의 front, side 등 키워드가 데이터 수집 시와 정확히 일치하는지 확인하세요.
 
 ### Smolvla
@@ -662,21 +663,23 @@ lerobot-train \
 **검증**
 
 ```Bash
-lerobot-record \
+lerobot-rollout \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
-  --robot.id=my_awesome_follower_arm \ # <- Use your robot id
+  # <- Use your robot id
+  --robot.id=my_awesome_follower_arm \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"},   side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30,fourcc: "MJPG"}}" \
   --dataset.single_task="Put the blue cube on the black box" \
-  --dataset.repo_id=juxi/eval_test123 \
+  --dataset.repo_id=juxi/rollout_test123 \
   --dataset.episode_time_s=30 \
   --dataset.reset_time_s=30 \
   --dataset.num_episodes=5 \
-  # <- Teleop optional if you want to teleoperate in between episodes \
-  # --teleop.type=so101_leader \
-  # --teleop.port=/dev/ttyACM0 \
-  # --teleop.id=my_awesome_leader_arm \
   --policy.path=HF_USER/FINETUNE_MODEL_NAME # <- Use your fine-tuned model
+  # <- Teleop optional if you want to teleoperate in between episodes
+  # --teleop.type=so101_leader
+  # --teleop.port=/dev/ttyACM0
+  # --teleop.id=my_awesome_leader_arm
 ```
 
 ### Pi0
@@ -708,13 +711,14 @@ lerobot-train \
 **검증**
 
 ```Bash
-lerobot-record \
+lerobot-rollout \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"},   side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30,fourcc: "MJPG"}}" \
   --robot.id=my_awesome_follower_arm \
   --display_data=false \
-  --dataset.repo_id=juxi/eval_test123 \
+  --dataset.repo_id=juxi/rollout_test123 \
   --dataset.single_task="Put the blue cube on the black box" \
   --policy.path=outputs/pi0_training/checkpoints/last/pretrained_model
 ```
@@ -748,13 +752,14 @@ lerobot-train \
 **검증**
 
 ```Bash
-lerobot-record \
+lerobot-rollout \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"},   side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30,fourcc: "MJPG"}}" \
   --robot.id=my_awesome_follower_arm \
   --display_data=false \
-  --dataset.repo_id=juxi/eval_test123 \
+  --dataset.repo_id=juxi/rollout_test123 \
   --dataset.single_task="Put the blue cube on the black box" \
   --policy.path=outputs/pi05_training/checkpoints/last/pretrained_model
 ```
@@ -946,7 +951,8 @@ AutoDL AI 클라우드로 돌아가「로그인 명령」을 복사해 보기 �
 예:
 
 ```Python
-lerobot-record \
+lerobot-rollout \
+  --strategy.type=episodic \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30, fourcc: "MJPG"},   side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30,fourcc: "MJPG"}}" \
@@ -955,12 +961,12 @@ lerobot-record \
   --teleop.port=/dev/ttyACM1 \
   --teleop.id=my_awesome_leader_arm \
   --display_data=false \
-  --dataset.repo_id=juxi/eval_test123 \
+  --dataset.repo_id=juxi/rollout_test123 \
   --dataset.single_task="Put the blue cube on the black box" \
   --dataset.episode_time_s=30 \
   --dataset.reset_time_s=30 \
   --dataset.num_episodes=5 \
-  --policy.path=outputs/train/act_so101_test/checkpoints/last/pretrained_model
+  --policy.path=outputs/train/act_so101_test/checkpoints/last/pretrained_model \
   --dataset.push_to_hub=false
 ```
 
@@ -1014,7 +1020,7 @@ Magnitude 30841 exceeds 2047 (max for sign_bit_index=11)
 File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/juxi/eval_xxxx'
 ```
 
-`eval_`로 시작하는 폴더를 삭제하고 다시 실행하세요.
+`rollout_`로 시작하는 폴더를 삭제하고 다시 실행하세요.
 
 - 평가 단계에서 다음 오류 발생:
 
