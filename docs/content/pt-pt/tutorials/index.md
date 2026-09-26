@@ -97,6 +97,25 @@ Bem-vindo à página de Tutoriais! Aqui você encontra todos os tutoriais de uso
 - [Glossário](/pt-pt/tutorials/jetson-agx-orin/glossary)
 - [Registo de alterações](/pt-pt/tutorials/jetson-agx-orin/changelog)
 
+### Kit de Desenvolvedor Jetson Orin Nano Super
+
+- [Início rápido](/pt-pt/tutorials/jetson-orin-nano/quick-start)
+- [Gravação e atualizações](/pt-pt/tutorials/jetson-orin-nano/flashing-and-updates)
+- [Verificar o sistema](/pt-pt/tutorials/jetson-orin-nano/verify-your-system)
+- [Interfaces e layout do hardware](/pt-pt/tutorials/jetson-orin-nano/interfaces)
+- [Visão geral do produto](/pt-pt/tutorials/jetson-orin-nano/overview)
+- [Inferência local de LLM](/pt-pt/tutorials/jetson-orin-nano/local-llm)
+- [IA agêntica (NemoClaw)](/pt-pt/tutorials/jetson-orin-nano/agentic-ai)
+- [Análise de vídeo com DeepStream](/pt-pt/tutorials/jetson-orin-nano/deepstream)
+- [Robótica (ponto de situação)](/pt-pt/tutorials/jetson-orin-nano/robotics)
+- [Eficiência de memória](/pt-pt/tutorials/jetson-orin-nano/memory-efficiency)
+- [Migrar do JetPack 6.x](/pt-pt/tutorials/jetson-orin-nano/jetpack-6-to-7)
+- [Downloads](/pt-pt/tutorials/jetson-orin-nano/downloads)
+- [FAQ](/pt-pt/tutorials/jetson-orin-nano/faq)
+- [Resolução de problemas](/pt-pt/tutorials/jetson-orin-nano/troubleshooting)
+- [Glossário](/pt-pt/tutorials/jetson-orin-nano/glossary)
+- [Registo de alterações](/pt-pt/tutorials/jetson-orin-nano/changelog)
+
 ### Recursos de Aprendizado
 
 - [Recursos de Aprendizado](/pt-pt/tutorials/learning-resources/)

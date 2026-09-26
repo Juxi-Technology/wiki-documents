@@ -44,6 +44,8 @@ verified_against:
     checked: 2026-09-26
   - source: https://wiki.juxitech.com/
     checked: 2026-09-26
+  - source: https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages
+    checked: 2026-09-26
 review_owner: cheny
 ---
 
@@ -67,7 +69,9 @@ Two Orin Nano-specific facts matter before you download anything:
 
 ## JetPack 7.2.1 / Jetson Linux r39.2.1
 
-- [JetPack SDK Downloads](https://developer.nvidia.com/embedded/jetpack/downloads) — the main JetPack page: release notes, the official component version table (CUDA 13.2.2, TensorRT 10.16.2, DeepStream 9.1, and others), and every JetPack 7.2.1 download link.
+- [JetPack SDK Downloads](https://developer.nvidia.com/embedded/jetpack/downloads) — the main JetPack page: release notes, the official component version table, and every JetPack 7.2.1 download link.
+
+> ⚠️ **Do not trust that component table row by row.** NVIDIA has not refreshed it fully for 7.2.1: the CUDA row was updated, but the two rows next to it were not — VPI still shows the JetPack 7.2 value (**4.1.3, while 7.2.1 actually ships 4.1.4**) and the Isaac ROS row still says "coming soon" although Isaac ROS has supported Orin on JetPack 7.2 since its August 2026 release. For component versions, treat NVIDIA's package repository as authoritative: the metapackage pins each component through its dependency chain — [r39.2 arm64 Packages](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages), where `nvidia-jetpack-runtime (= 7.2.1-b49)` → `nvidia-vpi (= 7.2.1-b49)` → `libnvvpi4 (= 4.1.4)` (checked 2026-09-26). Component versions are also listed on [Verify Your System](/tutorials/jetson-orin-nano/verify-your-system).
 - [Jetson ISO for r39.2.1 (direct download)](https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/iso/jetsoninstaller-r39.2.1-2026-08-07-18-30-47-arm64.iso) — the installer image for JetPack 7.2.1; the kit's Quick Start page links it as "Direct Download Link: Jetson ISO (r39.2.1)". Write it to a USB flash drive of 16 GB or more. No checksum is published alongside the download.
 - [NVIDIA SDK Manager documentation](https://docs.nvidia.com/sdk-manager/install-with-sdkm-jetson/index.html) — install and use the host-PC tool for flashing the kit, updating firmware, and installing JetPack components (an NVIDIA Developer Program account is required); the kit workflow is in [BSP Setup](https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/setup_bsp.html).
 - [JetPack Archive](https://developer.nvidia.com/embedded/jetpack-archive) — earlier JetPack releases, including JetPack 7.2 (the first 7.x release that supports the Orin family) and the JetPack 6.x line.
@@ -99,6 +103,7 @@ Two Orin Nano-specific facts matter before you download anything:
 
 - [Jetson Orin Nano Developer Kit User Guide](https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/index.html) — [Quick Start](https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/quick_start.html), [Additional Docs](https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/additional_docs.html) (checked 2026-09-26)
 - [JetPack SDK Downloads](https://developer.nvidia.com/embedded/jetpack/downloads) and [JetPack Archive](https://developer.nvidia.com/embedded/jetpack-archive) (checked 2026-09-26)
+- [NVIDIA package repository — r39.2 arm64 Packages index](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages) — authoritative for component versions, via the dependency locks in the metapackages (checked 2026-09-26)
 - Jetson Linux Release Notes — [r39.2.1](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf), [r39.2](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf) (checked 2026-09-26)
 - [Jetson Linux Developer Guide](https://docs.nvidia.com/jetson/archives/r39.2/DeveloperGuide/index.html) (checked 2026-09-26)
 - [NVIDIA SDK Manager documentation](https://docs.nvidia.com/sdk-manager/install-with-sdkm-jetson/index.html) (checked 2026-09-26)

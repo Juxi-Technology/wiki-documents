@@ -51,6 +51,10 @@ outline: false
     <span class="pc-title">Jetson AGX Orin 開発キット(64GB)</span>
     <p class="pc-desc">NVIDIA Jetson AGX Orin 開発キット(64GB)——最大 275 TOPS のエッジ AI 性能。書き込み済みで開封後すぐに使用でき、Juxi Technology による完全な JetPack 7.2 ドキュメント付き。</p>
   </a>
+  <a :href="withBase('/ja/products/jetson-orin-nano-devkit')" class="category-card">
+    <span class="pc-title">Jetson Orin Nano Super 開発キット(8GB)</span>
+    <p class="pc-desc">NVIDIA Jetson Orin Nano Super 開発キット(8GB)——最大 67 INT8 TOPS のエッジ AI 性能、8 GB ユニファイドメモリ、システム未プリインストール(Jetson ISO でインストール)、Juxi Technology による完全な JetPack 7.2.1 ドキュメント付き。</p>
+  </a>
   <a :href="withBase('/ja/products/jetson-orin-nx-super-kit')" class="category-card">
     <span class="pc-title">Jetson Orin NX Super 開発キット</span>
     <p class="pc-desc">Juxi Technology NVIDIA Jetson Orin NX SUPER 開発キット——117/157 TOPS エッジ AI コンピューティングプラットフォーム、Ubuntu 22.04 と …</p>

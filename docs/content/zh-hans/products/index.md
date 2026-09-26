@@ -51,6 +51,10 @@ outline: false
     <span class="pc-title">Jetson AGX Orin 开发者套件(64GB)</span>
     <p class="pc-desc">NVIDIA Jetson AGX Orin 开发者套件(64GB)——最高 275 TOPS 的边缘 AI 算力，出厂预烧录、开箱即用，并附钜犀科技提供的完整 JetPack 7.2 文档</p>
   </a>
+  <a :href="withBase('/zh-hans/products/jetson-orin-nano-devkit')" class="category-card">
+    <span class="pc-title">Jetson Orin Nano Super 开发者套件(8GB)</span>
+    <p class="pc-desc">NVIDIA Jetson Orin Nano Super 开发者套件(8GB)——最高 67 INT8 TOPS 的入门级边缘 AI 算力，8 GB 统一内存；出厂不含存储、也未预装系统(随附 microSD 卡为空白卡)，需使用 Jetson ISO 方式安装，并附钜犀科技提供的完整 JetPack 7.2.1 文档</p>
+  </a>
   <a :href="withBase('/zh-hans/products/jetson-orin-nx-super-kit')" class="category-card">
     <span class="pc-title">Jetson Orin NX Super 开发套件</span>
     <p class="pc-desc">钜犀科技 NVIDIA Jetson Orin NX SUPER 开发套件——117/157 TOPS 边缘 AI 计算平台,预装 Ubuntu 22.04 与 256GB NVMe SSD</p>

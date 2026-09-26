@@ -51,6 +51,10 @@ outline: false
     <span class="pc-title">Jetson AGX Orin 개발자 키트(64GB)</span>
     <p class="pc-desc">NVIDIA Jetson AGX Orin 개발자 키트(64GB) — 최대 275 TOPS의 엣지 AI 성능, 사전 플래싱되어 개봉 즉시 사용 가능하며, Juxi Technology의 완전한 JetPack 7.2 문서를 제공합니다.</p>
   </a>
+  <a :href="withBase('/ko/products/jetson-orin-nano-devkit')" class="category-card">
+    <span class="pc-title">Jetson Orin Nano Super 개발자 키트(8GB)</span>
+    <p class="pc-desc">NVIDIA Jetson Orin Nano Super 개발자 키트(8GB) — 최대 67 INT8 TOPS의 엣지 AI, 8 GB 통합 메모리, microSD 및 NVMe 스토리지 옵션, Juxi Technology의 완전한 JetPack 7.2.1 문서를 제공합니다.</p>
+  </a>
   <a :href="withBase('/ko/products/jetson-orin-nx-super-kit')" class="category-card">
     <span class="pc-title">Jetson Orin NX Super 개발 키트</span>
     <p class="pc-desc">Juxi Technology NVIDIA Jetson Orin NX SUPER 개발 키트 — 117/157 TOPS 엣지 AI 컴퓨팅 플랫폼, Ubuntu 22.04 및 256GB NVM…</p>

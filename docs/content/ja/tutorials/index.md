@@ -93,6 +93,25 @@ description: "Juxi Technology Wiki のチュートリアル一覧。ロボット
 - [用語集](/ja/tutorials/jetson-agx-orin/glossary)
 - [変更履歴](/ja/tutorials/jetson-agx-orin/changelog)
 
+### Jetson Orin Nano Super 開発キット
+
+- [クイックスタート](/ja/tutorials/jetson-orin-nano/quick-start)
+- [書き込みと更新](/ja/tutorials/jetson-orin-nano/flashing-and-updates)
+- [システムの確認](/ja/tutorials/jetson-orin-nano/verify-your-system)
+- [インターフェース & ハードウェアレイアウト](/ja/tutorials/jetson-orin-nano/interfaces)
+- [製品概要](/ja/tutorials/jetson-orin-nano/overview)
+- [ローカル LLM 推論](/ja/tutorials/jetson-orin-nano/local-llm)
+- [エージェント型 AI(NemoClaw)](/ja/tutorials/jetson-orin-nano/agentic-ai)
+- [DeepStream 映像解析](/ja/tutorials/jetson-orin-nano/deepstream)
+- [ロボティクス(現状)](/ja/tutorials/jetson-orin-nano/robotics)
+- [メモリ効率](/ja/tutorials/jetson-orin-nano/memory-efficiency)
+- [JetPack 6.x からの移行](/ja/tutorials/jetson-orin-nano/jetpack-6-to-7)
+- [ダウンロード](/ja/tutorials/jetson-orin-nano/downloads)
+- [FAQ](/ja/tutorials/jetson-orin-nano/faq)
+- [トラブルシューティング](/ja/tutorials/jetson-orin-nano/troubleshooting)
+- [用語集](/ja/tutorials/jetson-orin-nano/glossary)
+- [変更履歴](/ja/tutorials/jetson-orin-nano/changelog)
+
 ### 学習リソース
 
 - [学習リソース](/ja/tutorials/learning-resources/)

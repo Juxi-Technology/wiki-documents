@@ -8,6 +8,8 @@ keywords: [jetson, jetpack, 刷機, 系統配置, nvidia]
 
 > 📌 使用 Jetson AGX Orin 官方套件(JetPack 7.2)?請參考專屬系列:[快速開始](/zh-hant/tutorials/jetson-agx-orin/quick-start)。
 
+> 📌 使用 NVIDIA Jetson Orin Nano Super 開發者套件(JetPack 7.2.1)?請參考專屬系列:[快速開始](/zh-hant/tutorials/jetson-orin-nano/quick-start)。
+
 > 面向首次接觸 NVIDIA Jetson 平台的開發者。鉅犀科技 Jetson 開發套件出廠已預裝 Ubuntu 22.04,本文檔用於重裝系統或更換 JetPack 版本時參考。
 
 ## 1. JetPack 是什麼?
@@ -24,8 +26,11 @@ JetPack 是 NVIDIA 為 Jetson 平台提供的 SDK 包,包含:
 |------------|-------------|------|
 | Orin NX / Nano | JetPack 6.x | Ubuntu 22.04 |
 | Xavier NX / AGX | JetPack 5.x | Ubuntu 20.04 |
+| Orin Nano Super(NVIDIA 官方套件) | JetPack 7.2.1 | Ubuntu 24.04 |
 
 > 鉅犀科技 [Jetson Orin NX Super 開發套件](/zh-hant/products/jetson-orin-nx-super-kit) 預裝 Ubuntu 22.04(JetPack 6.x 生態)。
+
+> [NVIDIA Jetson Orin Nano Super 開發者套件](/zh-hant/products/jetson-orin-nano-devkit)(NVIDIA 官方套件,由鉅犀科技銷售)**未預裝儲存媒體、也未預裝系統**(隨附的 microSD 卡為空白)。請以 Jetson ISO 方式安裝 JetPack 7.2.1:參見 [Jetson Orin Nano 系列](/zh-hant/tutorials/jetson-orin-nano/quick-start)。
 
 ## 2. 刷機方式
 

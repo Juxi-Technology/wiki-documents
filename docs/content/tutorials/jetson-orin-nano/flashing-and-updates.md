@@ -182,7 +182,7 @@ The bridge flow, in NVIDIA's documented order:
    `sudo nvbootctrl dump-slots-info` — NVIDIA's example output at this stage is "Current
    version: 35.5.0".
 
-   ![Firmware update progress from JetPack 6.x firmware](/images/jetson-orin-nano/fw-update_from_36-4.3.JPG)
+   ![Firmware update progress from JetPack 6.x firmware](/images/jetson-orin-nano/fw-update_from_36-4.3.jpg)
 
 4. Install the QSPI updater: `sudo apt update`, then
    `sudo apt install nvidia-l4t-jetson-orin-nano-qspi-updater`; reboot and let the update

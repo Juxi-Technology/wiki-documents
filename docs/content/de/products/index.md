@@ -51,6 +51,10 @@ outline: false
     <span class="pc-title">Jetson AGX Orin Developer Kit (64GB)</span>
     <p class="pc-desc">NVIDIA Jetson AGX Orin Developer Kit (64GB) — bis zu 275 TOPS Edge-KI, ab Werk vorgeflasht un…</p>
   </a>
+  <a :href="withBase('/de/products/jetson-orin-nano-devkit')" class="category-card">
+    <span class="pc-title">Jetson Orin Nano Super Developer Kit (8GB)</span>
+    <p class="pc-desc">NVIDIA Jetson Orin Nano Super Developer Kit (8GB) — bis zu 67 INT8 TOPS Edge-KI für den Einstieg, 8 GB Unified Memory, ohne vorinstalliertes System (Installation mit der Jetson-ISO), mit vollständiger JetPack-7.2.1-Dokumentation von Juxi Technology.</p>
+  </a>
   <a :href="withBase('/de/products/jetson-orin-nx-super-kit')" class="category-card">
     <span class="pc-title">Jetson Orin NX Super Developer Kit</span>
     <p class="pc-desc">NVIDIA Jetson Orin NX SUPER Developer Kit — 117/157 TOPS Edge-AI-Plattform, vorinstalliert Ub…</p>

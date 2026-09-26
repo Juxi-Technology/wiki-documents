@@ -97,6 +97,25 @@ head:
 - [術語表](/zh-hant/tutorials/jetson-agx-orin/glossary)
 - [更新日誌](/zh-hant/tutorials/jetson-agx-orin/changelog)
 
+### Jetson Orin Nano 開發套件
+
+- [快速開始](/zh-hant/tutorials/jetson-orin-nano/quick-start)
+- [刷機與更新](/zh-hant/tutorials/jetson-orin-nano/flashing-and-updates)
+- [驗證你的系統](/zh-hant/tutorials/jetson-orin-nano/verify-your-system)
+- [接口與硬件佈局](/zh-hant/tutorials/jetson-orin-nano/interfaces)
+- [產品概述](/zh-hant/tutorials/jetson-orin-nano/overview)
+- [本地 LLM 推論](/zh-hant/tutorials/jetson-orin-nano/local-llm)
+- [智能體 AI (NemoClaw)](/zh-hant/tutorials/jetson-orin-nano/agentic-ai)
+- [DeepStream 視頻分析](/zh-hant/tutorials/jetson-orin-nano/deepstream)
+- [機器人(現狀)](/zh-hant/tutorials/jetson-orin-nano/robotics)
+- [記憶體效率](/zh-hant/tutorials/jetson-orin-nano/memory-efficiency)
+- [從 JetPack 6.x 遷移](/zh-hant/tutorials/jetson-orin-nano/jetpack-6-to-7)
+- [下載](/zh-hant/tutorials/jetson-orin-nano/downloads)
+- [常見問題 FAQ](/zh-hant/tutorials/jetson-orin-nano/faq)
+- [故障排除](/zh-hant/tutorials/jetson-orin-nano/troubleshooting)
+- [術語表](/zh-hant/tutorials/jetson-orin-nano/glossary)
+- [更新日誌](/zh-hant/tutorials/jetson-orin-nano/changelog)
+
 ### 學習資源
 
 - [學習資源首頁](/zh-hant/tutorials/learning-resources/)

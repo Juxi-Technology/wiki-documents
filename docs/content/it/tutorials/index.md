@@ -93,6 +93,25 @@ Benvenuto nella pagina dei tutorial! Qui puoi trovare tutti i tutorial d'uso dei
 - [Glossario](/it/tutorials/jetson-agx-orin/glossary)
 - [Registro delle modifiche](/it/tutorials/jetson-agx-orin/changelog)
 
+### Kit di sviluppo Jetson Orin Nano Super
+
+- [Avvio rapido — Dall'unboxing a un sistema JetPack 7.2.1 funzionante](/it/tutorials/jetson-orin-nano/quick-start)
+- [Flashing e aggiornamenti — Opzioni di installazione del BSP](/it/tutorials/jetson-orin-nano/flashing-and-updates)
+- [Verificare il sistema — versione, Modalità Super e checklist dell'alimentazione](/it/tutorials/jetson-orin-nano/verify-your-system)
+- [Interfacce e layout hardware](/it/tutorials/jetson-orin-nano/interfaces)
+- [Panoramica del prodotto — Kit di sviluppo Jetson Orin Nano Super](/it/tutorials/jetson-orin-nano/overview)
+- [Eseguire LLM in locale — TensorRT Edge-LLM sull'Orin Nano da 8 GB](/it/tutorials/jetson-orin-nano/local-llm)
+- [IA agentica — NemoClaw sull'Orin Nano da 8 GB](/it/tutorials/jetson-orin-nano/agentic-ai)
+- [Pipeline di analisi video — DeepStream 9.1](/it/tutorials/jetson-orin-nano/deepstream)
+- [Robotica su JetPack 7.2 — cosa funziona sull'Orin Nano](/it/tutorials/jetson-orin-nano/robotics)
+- [Efficienza della memoria — Eseguire modelli in 8 GB](/it/tutorials/jetson-orin-nano/memory-efficiency)
+- [Migrazione da JetPack 6.x a JetPack 7.2.1](/it/tutorials/jetson-orin-nano/jetpack-6-to-7)
+- [Download e link ufficiali](/it/tutorials/jetson-orin-nano/downloads)
+- [FAQ](/it/tutorials/jetson-orin-nano/faq)
+- [Risoluzione dei problemi](/it/tutorials/jetson-orin-nano/troubleshooting)
+- [Glossario](/it/tutorials/jetson-orin-nano/glossary)
+- [Registro delle modifiche](/it/tutorials/jetson-orin-nano/changelog)
+
 ### Risorse didattiche
 
 - [Risorse didattiche](/it/tutorials/learning-resources/)

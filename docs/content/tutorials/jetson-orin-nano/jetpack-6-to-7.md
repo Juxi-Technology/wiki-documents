@@ -29,6 +29,8 @@ verified_against:
     checked: 2026-09-26
   - source: https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627
     checked: 2026-09-26
+  - source: https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages
+    checked: 2026-09-26
 review_owner: cheny
 ---
 
@@ -51,10 +53,13 @@ prerequisite, and some software rebuilds.
 | CUDA | 12.6 (JetPack 6.2.3 = 12.6.10) | **13.2.2** |
 | TensorRT | 10.3.0 | **10.16.2** |
 | cuDNN | 9.3.0 | **9.20.0** |
-| VPI | 3.2 | **4.1.3** |
+| VPI | 3.2 | **4.1.4** |
 
 > **Juxi note:** The 6.x column uses JetPack 6.2.3, the last production
 > release of JetPack 6. Check your own versions with `cat /etc/nv_tegra_release`.
+> The 7.2.1 VPI value is taken from NVIDIA's package repository rather than its
+> download page, which still shows the JetPack 7.2 value — see the note on
+> [Verify Your System](/tutorials/jetson-orin-nano/verify-your-system).
 
 - **No more SD-card images.** "Starting with JetPack 7.2, SD Card images are
   no longer supported." The installer is one ISO for a USB stick; a microSD

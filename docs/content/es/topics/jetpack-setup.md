@@ -8,6 +8,8 @@ keywords: [jetson, jetpack, flasheo, configuración del sistema, nvidia]
 
 > 📌 ¿Utiliza el kit de desarrollo oficial Jetson AGX Orin (JetPack 7.2)? Consulte la serie dedicada: [Inicio rápido](/es/tutorials/jetson-agx-orin/quick-start).
 
+> 📌 ¿Utiliza el kit de desarrollo oficial Jetson Orin Nano Super (JetPack 7.2.1)? Consulte la serie dedicada: [Inicio rápido](/es/tutorials/jetson-orin-nano/quick-start).
+
 > Para desarrolladores que se inician en la plataforma NVIDIA Jetson. Los kits Jetson de JUXI vienen con Ubuntu 22.04 preinstalado. Este documento sirve de referencia para reinstalar el sistema o cambiar la versión de JetPack.
 
 ## 1. ¿Qué es JetPack?
@@ -24,8 +26,11 @@ JetPack es el paquete SDK de NVIDIA para la plataforma Jetson, que incluye:
 |------------|-------------|------|
 | Orin NX / Nano | JetPack 6.x | Ubuntu 22.04 |
 | Xavier NX / AGX | JetPack 5.x | Ubuntu 20.04 |
+| Orin Nano Super (kit oficial de NVIDIA) | JetPack 7.2.1 | Ubuntu 24.04 |
 
 > El [kit Jetson Orin NX Super](/es/products/jetson-orin-nx-super-kit) de JUXI viene con Ubuntu 22.04 (ecosistema JetPack 6.x).
+
+> El [NVIDIA Jetson Orin Nano Super Developer Kit](/es/products/jetson-orin-nano-devkit) — el kit oficial de NVIDIA, vendido por Juxi — llega **sin almacenamiento y sin sistema preinstalado** (la tarjeta microSD incluida está en blanco). Instale JetPack 7.2.1 con el método de la Jetson ISO: consulte la [serie Jetson Orin Nano](/es/tutorials/jetson-orin-nano/quick-start).
 
 ## 2. Métodos de flasheo
 

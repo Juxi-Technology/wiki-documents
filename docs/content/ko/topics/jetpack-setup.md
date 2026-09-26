@@ -8,6 +8,8 @@ keywords: [jetson, jetpack, 플래싱, 시스템 설정, nvidia]
 
 > 📌 Jetson AGX Orin 공식 개발자 키트(JetPack 7.2)를 사용하시나요? 전용 시리즈를 참고하십시오: [빠른 시작](/ko/tutorials/jetson-agx-orin/quick-start).
 
+> 📌 Jetson Orin Nano Super 공식 개발자 키트(JetPack 7.2.1)를 사용하시나요? 전용 시리즈를 참고하십시오: [빠른 시작](/ko/tutorials/jetson-orin-nano/quick-start).
+
 > NVIDIA Jetson 플랫폼을 처음 접하는 개발자용. JUXI Jetson 개발 키트는 출고 시 Ubuntu 22.04가 사전 설치되어 있습니다. 본 문서는 OS 재설치 또는 JetPack 버전 변경 시 참고용입니다.
 
 ## 1. JetPack이란?
@@ -24,8 +26,11 @@ JetPack은 NVIDIA가 Jetson 플랫폼용으로 제공하는 SDK 패키지로, �
 |------------|-------------|------|
 | Orin NX / Nano | JetPack 6.x | Ubuntu 22.04 |
 | Xavier NX / AGX | JetPack 5.x | Ubuntu 20.04 |
+| Orin Nano Super(NVIDIA 공식 키트) | JetPack 7.2.1 | Ubuntu 24.04 |
 
 > JUXI [Jetson Orin NX Super 개발 키트](/ko/products/jetson-orin-nx-super-kit)는 Ubuntu 22.04(JetPack 6.x 생태계) 사전 설치.
+
+> [NVIDIA Jetson Orin Nano Super 개발자 키트](/ko/products/jetson-orin-nano-devkit)(Juxi가 판매하는 NVIDIA 공식 키트)는 **스토리지 없이, 시스템이 사전 설치되지 않은 상태**로 출고되며 동봉된 microSD 카드도 빈 상태입니다. JetPack 7.2.1은 Jetson ISO 방식으로 설치하십시오 — [Jetson Orin Nano 시리즈 빠른 시작](/ko/tutorials/jetson-orin-nano/quick-start)을 참조하십시오.
 
 ## 2. 플래시 방법
 

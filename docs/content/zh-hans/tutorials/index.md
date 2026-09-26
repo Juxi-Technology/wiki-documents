@@ -97,6 +97,25 @@ head:
 - [术语表](/zh-hans/tutorials/jetson-agx-orin/glossary)
 - [更新日志](/zh-hans/tutorials/jetson-agx-orin/changelog)
 
+### Jetson Orin Nano 开发者套件
+
+- [快速开始](/zh-hans/tutorials/jetson-orin-nano/quick-start)
+- [刷机与更新](/zh-hans/tutorials/jetson-orin-nano/flashing-and-updates)
+- [验证你的系统](/zh-hans/tutorials/jetson-orin-nano/verify-your-system)
+- [接口与硬件布局](/zh-hans/tutorials/jetson-orin-nano/interfaces)
+- [产品概述](/zh-hans/tutorials/jetson-orin-nano/overview)
+- [本地 LLM 推理](/zh-hans/tutorials/jetson-orin-nano/local-llm)
+- [智能体 AI (NemoClaw)](/zh-hans/tutorials/jetson-orin-nano/agentic-ai)
+- [DeepStream 视频分析](/zh-hans/tutorials/jetson-orin-nano/deepstream)
+- [机器人(现状)](/zh-hans/tutorials/jetson-orin-nano/robotics)
+- [内存效率](/zh-hans/tutorials/jetson-orin-nano/memory-efficiency)
+- [从 JetPack 6.x 迁移](/zh-hans/tutorials/jetson-orin-nano/jetpack-6-to-7)
+- [下载](/zh-hans/tutorials/jetson-orin-nano/downloads)
+- [常见问题 FAQ](/zh-hans/tutorials/jetson-orin-nano/faq)
+- [故障排查](/zh-hans/tutorials/jetson-orin-nano/troubleshooting)
+- [术语表](/zh-hans/tutorials/jetson-orin-nano/glossary)
+- [更新日志](/zh-hans/tutorials/jetson-orin-nano/changelog)
+
 ### 学习资源
 
 - [学习资源首页](/zh-hans/tutorials/learning-resources/)

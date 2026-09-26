@@ -36,6 +36,8 @@ verified_against:
     checked: 2026-09-26
   - source: https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627
     checked: 2026-09-26
+  - source: https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages
+    checked: 2026-09-26
 review_owner: cheny
 ---
 
@@ -77,7 +79,7 @@ checked 2026-09-26).
 | **TOPS** | Trillion (tera) operations per second, the common unit for AI throughput. This kit is rated at up to 67 sparse INT8 TOPS (33 dense INT8). NVIDIA publishes both a sparse and a dense rating for the same module. |
 | **UEFI** | The boot firmware on the kit and its setup menu. Press Esc while the NVIDIA boot splash is shown to enter setup; in the menu, Boot Manager is where you select the USB installer as the boot device. The firmware version is displayed there, and JetPack 7.2 and later need a version newer than 36.0. |
 | **unified memory** | The single 8 GB LPDDR5 memory pool shared by the CPU and GPU — the kit has no separate video memory. About 7.6 GB is usable after firmware and kernel reservations, and the operating system, your models, and their KV caches all draw from this one pool. See [memory-efficiency](/tutorials/jetson-orin-nano/memory-efficiency). |
-| **VPI** | Vision Programming Interface: NVIDIA's library for hardware-accelerated image processing on Jetson. JetPack 7.2.1 ships VPI 4.1.3. |
+| **VPI** | Vision Programming Interface: NVIDIA's library for hardware-accelerated image processing on Jetson. JetPack 7.2.1 ships VPI 4.1.4. |
 
 ## Version map
 
@@ -97,7 +99,7 @@ To check what a specific system actually runs: `cat /etc/nv_tegra_release`
 - [Jetson Orin Nano Developer Kit — Quick Start Guide](https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/quick_start.html) (checked 2026-09-26)
 - [Jetson Orin Nano Developer Kit — JetPack 6.x Update Path](https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/update_firmware.html) (checked 2026-09-26)
 - [Jetson Orin Nano Developer Kit — How-to Guides](https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/howto.html) (checked 2026-09-26)
-- [JetPack SDK Downloads — JetPack 7.2.1 component versions](https://developer.nvidia.com/embedded/jetpack/downloads) (checked 2026-09-26)
+- [JetPack SDK Downloads](https://developer.nvidia.com/embedded/jetpack/downloads) — ⚠️ its component table lags row by row (the VPI and PVA rows still carry JetPack 7.2 values); use [NVIDIA's package repository](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages) for component versions instead (checked 2026-09-26)
 - [Jetson Linux r39.2.1 Release Notes (PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) (checked 2026-09-26)
 - [TensorRT Edge-LLM — Support Matrix](https://nvidia.github.io/TensorRT-Edge-LLM/user_guide/getting_started/support-matrix.html) (checked 2026-09-26)
 - [Maximizing memory efficiency to run bigger models on NVIDIA Jetson (NVIDIA Technical Blog)](https://developer.nvidia.com/blog/maximizing-memory-efficiency-to-run-bigger-models-on-nvidia-jetson/) (checked 2026-09-26)

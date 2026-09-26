@@ -25,6 +25,10 @@ verified_against:
     checked: 2026-09-26
   - source: https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627
     checked: 2026-09-26
+  - source: https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages
+    checked: 2026-09-26
+  - source: https://nvidia-isaac-ros.github.io/releases/index.html
+    checked: 2026-09-26
 review_owner: cheny
 ---
 
@@ -81,18 +85,24 @@ Linux 39.2.1** (checked 2026-09-26 on the JetPack download page):
 | CUDA | 13.2.2 |
 | cuDNN | 9.20.0 |
 | TensorRT | 10.16.2 |
-| VPI (computer vision) | 4.1.3 |
+| VPI (computer vision) | 4.1.4 |
 | V4L2 | 1.22.1 |
 | DeepStream SDK | 9.1 |
 | Holoscan SDK | 3.9.0 |
 | Nsight Systems | 2026.3 |
 | NVIDIA Container Toolkit | 1.19 (with ISO image) |
-| Isaac ROS | **Coming soon** per NVIDIA's component table |
+| Isaac ROS | **Shipped** — Isaac ROS 4.6.0 (August 2026) added Jetson Orin and JetPack 7.2 support; NVIDIA's component table still says "coming soon" |
 
 > **Juxi note:** NVIDIA's 7.2.1 page lists one matrix for the whole JetPack 7 line (Thor and
 > Orin together), not per platform. `dpkg` may show versions with a build suffix — match the
 > version number, not the full string. NVIDIA's table does not list OpenCV, DLA, or Python
 > versions, so this page does not either.
+
+> **On the VPI version:** NVIDIA's download page has not been fully refreshed for 7.2.1 — its
+> VPI row still carries the JetPack 7.2 value (4.1.3). JetPack 7.2.1 actually ships **VPI
+> 4.1.4**, confirmed from NVIDIA's own package repository: `nvidia-jetpack-runtime (= 7.2.1-b49)`
+> depends on `nvidia-vpi (= 7.2.1-b49)`, which pins `libnvvpi4 (= 4.1.4)`. Both 4.1.3 and 4.1.4
+> exist in the package pool, so only the dependency lock is decisive. (checked 2026-09-26)
 
 ## Step 3 — Install jtop and read system activity (optional)
 

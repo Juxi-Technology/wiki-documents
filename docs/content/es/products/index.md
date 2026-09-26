@@ -51,6 +51,10 @@ outline: false
     <span class="pc-title">Kit de desarrollo Jetson AGX Orin (64GB)</span>
     <p class="pc-desc">Kit de desarrollo NVIDIA Jetson AGX Orin (64GB) — hasta 275 TOPS de IA en el borde, flasheado de fábrica…</p>
   </a>
+  <a :href="withBase('/es/products/jetson-orin-nano-devkit')" class="category-card">
+    <span class="pc-title">Kit de desarrollo Jetson Orin Nano Super (8GB)</span>
+    <p class="pc-desc">Kit de desarrollo NVIDIA Jetson Orin Nano Super (8GB) — kit de IA en el borde de nivel de entrada con hasta 67 INT8 TOPS, 8 GB de memoria unificada, sin sistema preinstalado (instalación con la Jetson ISO), con documentación completa de JetPack 7.2.1 de Juxi Technology.</p>
+  </a>
   <a :href="withBase('/es/products/jetson-orin-nx-super-kit')" class="category-card">
     <span class="pc-title">Kit de desarrollo Jetson Orin NX Super</span>
     <p class="pc-desc">Kit de desarrollo NVIDIA Jetson Orin NX SUPER — plataforma de IA perimetral 117/157 TOPS, Ubu…</p>

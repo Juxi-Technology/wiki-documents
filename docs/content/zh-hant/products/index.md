@@ -51,6 +51,10 @@ outline: false
     <span class="pc-title">Jetson AGX Orin 開發者套件(64GB)</span>
     <p class="pc-desc">鉅犀科技 NVIDIA Jetson AGX Orin 開發者套件(64GB)——高達 275 TOPS 的邊緣 AI 算力,出廠預先刷機、開箱即用,隨附完整的 JetPack 7.2 文檔</p>
   </a>
+  <a :href="withBase('/zh-hant/products/jetson-orin-nano-devkit')" class="category-card">
+    <span class="pc-title">Jetson Orin Nano Super 開發者套件(8GB)</span>
+    <p class="pc-desc">鉅犀科技 NVIDIA Jetson Orin Nano Super 開發者套件(8GB)——高達 67 INT8 TOPS 的入門級邊緣 AI 算力、8 GB 統一記憶體,未預裝系統,需以 Jetson ISO 方式安裝,隨附完整的 JetPack 7.2.1 文檔</p>
+  </a>
   <a :href="withBase('/zh-hant/products/jetson-orin-nx-super-kit')" class="category-card">
     <span class="pc-title">Jetson Orin NX Super 開發套件</span>
     <p class="pc-desc">鉅犀科技 NVIDIA Jetson Orin NX SUPER 開發套件——117/157 TOPS 邊緣 AI 計算平台,預裝 Ubuntu 22.04 與 256GB NVMe SSD</p>
