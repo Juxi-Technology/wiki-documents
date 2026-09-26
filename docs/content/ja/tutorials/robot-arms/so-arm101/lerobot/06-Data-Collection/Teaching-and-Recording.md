@@ -117,7 +117,7 @@ lerobot-record \
 本記事では2つのタスクを例示しており、それぞれ用途が異なります：
 
 - **オレンジをつかむ `lerobot_my_dataset_a`**：前述の「カメラ1台」「カメラ2台」の2つの収集コマンドに対応し、[ローカルUbuntuトレーニング](/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/Local-Ubuntu)の記事で使用されている例でもあります
-- **握手 `lerobot_my_dataset_shake_hands`**：上記の「握手」コマンドに対応します。第七步のトレーニングから第八步のデプロイまで、チュートリアルでは一貫してこれを例として使用しているため、トレーニングコマンド内の `--dataset.repo_id` と `--dataset.root` がどちらもこれを指していることがわかります
+- **握手 `lerobot_my_dataset_shake_hands`**：上記の「握手」コマンドに対応します。ステップ7のトレーニングからステップ8のデプロイまで、チュートリアルでは一貫してこれを例として使用しているため、トレーニングコマンド内の `--dataset.repo_id` と `--dataset.root` がどちらもこれを指していることがわかります
 
 つまり、**握手のデータセットこそが後半のチュートリアルのメインの例**であり、これに従って収集してください。なお、コマンド内の `--dataset.num_episodes=30`、`--dataset.episode_time_s=12` といったパラメータは、ご自身のタスクに合わせて調整してください。
 
@@ -134,6 +134,6 @@ lerobot-record \
 データはデフォルトで `~/.cache/huggingface/lerobot/<ユーザー名>/` の下に保存されます。次に：
 
 1. データセットをクラウドにバックアップしたい場合は、[データセットをHuggingFaceにアップロードする（任意）](/ja/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload)を参照してください
-2. トレーニングを始める準備ができたら、続けて[第七步：モデルのトレーニング](/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/Cloud-GPU)をご覧ください。その記事では、まずクラウドGPUプラットフォームにデータをアップロードし、環境を構築します
+2. トレーニングを始める準備ができたら、続けて[ステップ7：モデルのトレーニング](/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/Cloud-GPU)をご覧ください。その記事では、まずクラウドGPUプラットフォームにデータをアップロードし、環境を構築します
 
 <RelatedProducts slugs="so-arm101" />

@@ -8,7 +8,7 @@ description: "入門に最適なACTアルゴリズムの訓練コマンドを、
 ## 実行の前に
 
 - **環境**：まず[クラウドGPU訓練環境の設定](/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/Cloud-GPU)に従って環境をインストールし、データセットをクラウドGPUに転送する必要があります。ACT は LeRobot の基本環境に最初から含まれているため、追加インストールは不要です
-- **データセット**：コマンド内の `--dataset.root=~/lerobot_my_dataset_shake_hands` は第六步で収集した握手データセットを指します。自分で収集したタスクを訓練する場合は、自分のデータセット名に置き換えてください
+- **データセット**：コマンド内の `--dataset.root=~/lerobot_my_dataset_shake_hands` はステップ6で収集した握手データセットを指します。自分で収集したタスクを訓練する場合は、自分のデータセット名に置き換えてください
 - **出力ディレクトリ**：`--output_dir` がすでに存在する場合は、そのまま `FileExistsError` が報告されます。新しいディレクトリ名に変更するか、`--resume=true` を追加して訓練を続行してください
 - **訓練中はいつでも wandb で曲線を確認できます**。[wandbでリアルタイム訓練曲線を確認](/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/WandB-Curves)を参照してください
 
