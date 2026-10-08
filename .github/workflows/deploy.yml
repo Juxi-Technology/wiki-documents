@@ -1,8 +1,9 @@
 name: Deploy to GitHub Pages
 
+# 2026-10-08 起停用 push 自动部署,仅保留手动触发:
+# 站点构建产物达数 GB,超出 GitHub Pages 单站 1GB 上限(且 npm ci 在 runner 上
+# 因锁文件与 npm 版本错配失败)。主站由 Cloudflare(wiki.juxitech.com)承担。
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
