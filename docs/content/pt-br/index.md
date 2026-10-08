@@ -319,7 +319,7 @@ const storeUrl = computed(() => {
 .dark .vp-doc h2::after {
   background: linear-gradient(90deg, #5b87c9, #7ea6e0 60%, #4a90d9);
 }
-/* ---- hero 改版 v2:照 Seeed Studio Wiki 首页(满宽 hero,左文右巨型品牌字) ---- */
+/* ---- hero 改版 v2:满宽 hero,左文右巨型品牌字 ---- */
 .hero-section {
   padding: 56px 0 40px;
   text-align: left;
@@ -439,7 +439,7 @@ const storeUrl = computed(() => {
     padding-bottom: 40px;
     text-align: left;
   }
-  /* 移动端参照 Seeed:先巨型品牌字,再标题 → 描述 → 按钮,整体左对齐 */
+  /* 移动端:先巨型品牌字,再标题 → 描述 → 按钮,整体左对齐 */
   .hero-inner {
     flex-direction: column;
     gap: 20px;

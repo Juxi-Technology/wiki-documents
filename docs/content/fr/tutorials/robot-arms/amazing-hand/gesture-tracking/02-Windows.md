@@ -223,7 +223,7 @@ uv pip install mediapipe==0.10.14
 
 - Symptôme : `ParseXML: Error opening file '...\scene.xml'` ou `Can't find file: ....tflite`
 
-- Cause : le chargeur C++ de MuJoCo 3.x / mediapipe, sous Windows, **ne parvient pas à ouvrir un chemin absolu contenant du chinois** (par exemple `D:\Claude工作区...`)
+- Cause : le chargeur C++ de MuJoCo 3.x / mediapipe, sous Windows, **ne parvient pas à ouvrir un chemin absolu contenant du chinois** (par exemple `D:\中文目录...`)
 
 - Ce projet intègre déjà des correctifs :
 
