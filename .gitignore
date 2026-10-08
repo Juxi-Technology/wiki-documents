@@ -36,3 +36,9 @@ docs/public/llms-full.txt
 !.dev.vars.example
 .env*
 !.env.example
+
+# 内部工作文件:本地保留但不入库(2026-10-08)
+/CLAUDE.md
+/AGENTS.md
+/.claude/
+docs/superpowers/
