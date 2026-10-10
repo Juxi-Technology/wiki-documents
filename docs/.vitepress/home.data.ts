@@ -18,7 +18,8 @@ function gitDates() {
     let cur = ''
     for (const line of out.split('\n')) {
       if (line.startsWith('\x1e')) {
-        cur = line.slice(1).split('\x1f')[1] ?? ''
+        // 行为 \x1e<date>\x1f,日期在 split 后的 [0]([1] 是末尾 \x1f 之后的空串,曾因此全站日期为空)
+        cur = line.slice(1).split('\x1f')[0] || ''
         continue
       }
       if (line && !map.has(line) && cur) map.set(line, cur)
