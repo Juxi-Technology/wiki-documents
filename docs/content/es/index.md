@@ -31,6 +31,14 @@ outline: false
 ## Gamas de productos
 
 <div class="home-category-grid reveal">
+  <a :href="withBase('/es/products/jetson-agx-orin-devkit')" class="home-category-card">
+    <img :src="withBase('/images/categories/Jetson-AGX-Orin.png')" alt="Kit de desarrollo Jetson AGX Orin">
+    <span>Kit de desarrollo Jetson AGX Orin</span>
+  </a>
+  <a :href="withBase('/es/products/jetson-orin-nano-devkit')" class="home-category-card">
+    <img :src="withBase('/images/categories/Jetson-Orin-Nano.png')" alt="Kit de desarrollo Jetson Orin Nano Super">
+    <span>Kit de desarrollo Jetson Orin Nano Super</span>
+  </a>
   <a :href="withBase('/es/products/so-arm101')" class="home-category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="Brazo robótico SO-ARM101">
     <span>Brazo robótico SO-ARM101</span>
@@ -70,6 +78,14 @@ outline: false
 ## Explorar categorías
 
 <div class="home-category-grid reveal">
+  <a :href="withBase('/es/tutorials/jetson-agx-orin/quick-start')" class="home-category-card">
+    <img :src="withBase('/images/categories/Jetson-AGX-Orin.png')" alt="Tutoriales de Jetson AGX Orin">
+    <span>Tutoriales de Jetson AGX Orin</span>
+  </a>
+  <a :href="withBase('/es/tutorials/jetson-orin-nano/quick-start')" class="home-category-card">
+    <img :src="withBase('/images/categories/Jetson-Orin-Nano.png')" alt="Tutoriales de Jetson Orin Nano Super">
+    <span>Tutoriales de Jetson Orin Nano Super</span>
+  </a>
   <a :href="withBase('/es/tutorials/robot-arms/')" class="home-category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="Brazos robóticos">
     <span>Brazos robóticos</span>

@@ -31,6 +31,14 @@ outline: false
 ## 제품 시리즈
 
 <div class="home-category-grid reveal">
+  <a :href="withBase('/ko/products/jetson-agx-orin-devkit')" class="home-category-card">
+    <img :src="withBase('/images/categories/Jetson-AGX-Orin.png')" alt="Jetson AGX Orin 개발자 키트">
+    <span>Jetson AGX Orin 개발자 키트</span>
+  </a>
+  <a :href="withBase('/ko/products/jetson-orin-nano-devkit')" class="home-category-card">
+    <img :src="withBase('/images/categories/Jetson-Orin-Nano.png')" alt="Jetson Orin Nano Super 개발자 키트">
+    <span>Jetson Orin Nano Super 개발자 키트</span>
+  </a>
   <a :href="withBase('/ko/products/so-arm101')" class="home-category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="SO-ARM101 로봇 팔">
     <span>SO-ARM101 로봇 팔</span>
@@ -70,6 +78,14 @@ outline: false
 ## 카테고리 둘러보기
 
 <div class="home-category-grid reveal">
+  <a :href="withBase('/ko/tutorials/jetson-agx-orin/quick-start')" class="home-category-card">
+    <img :src="withBase('/images/categories/Jetson-AGX-Orin.png')" alt="Jetson AGX Orin 튜토리얼">
+    <span>Jetson AGX Orin 튜토리얼</span>
+  </a>
+  <a :href="withBase('/ko/tutorials/jetson-orin-nano/quick-start')" class="home-category-card">
+    <img :src="withBase('/images/categories/Jetson-Orin-Nano.png')" alt="Jetson Orin Nano Super 튜토리얼">
+    <span>Jetson Orin Nano Super 튜토리얼</span>
+  </a>
   <a :href="withBase('/ko/tutorials/robot-arms/')" class="home-category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="로봇 팔 튜토리얼">
     <span>로봇 팔 튜토리얼</span>

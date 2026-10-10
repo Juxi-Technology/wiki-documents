@@ -32,6 +32,14 @@ outline: false
 ## 产品系列
 
 <div class="home-category-grid reveal">
+  <a :href="withBase('/zh-hans/products/jetson-agx-orin-devkit')" class="home-category-card">
+    <img :src="withBase('/images/categories/Jetson-AGX-Orin.png')" alt="Jetson AGX Orin 开发者套件">
+    <span>Jetson AGX Orin 开发者套件</span>
+  </a>
+  <a :href="withBase('/zh-hans/products/jetson-orin-nano-devkit')" class="home-category-card">
+    <img :src="withBase('/images/categories/Jetson-Orin-Nano.png')" alt="Jetson Orin Nano Super 开发者套件">
+    <span>Jetson Orin Nano Super 开发者套件</span>
+  </a>
   <a :href="withBase('/zh-hans/products/so-arm101')" class="home-category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="SO-ARM101 机械臂">
     <span>SO-ARM101 机械臂</span>
@@ -70,6 +78,14 @@ outline: false
 ## 浏览分类
 
 <div class="home-category-grid reveal">
+  <a :href="withBase('/zh-hans/tutorials/jetson-agx-orin/quick-start')" class="home-category-card">
+    <img :src="withBase('/images/categories/Jetson-AGX-Orin.png')" alt="Jetson AGX Orin 教程">
+    <span>Jetson AGX Orin 教程</span>
+  </a>
+  <a :href="withBase('/zh-hans/tutorials/jetson-orin-nano/quick-start')" class="home-category-card">
+    <img :src="withBase('/images/categories/Jetson-Orin-Nano.png')" alt="Jetson Orin Nano Super 教程">
+    <span>Jetson Orin Nano Super 教程</span>
+  </a>
   <a :href="withBase('/zh-hans/tutorials/robot-arms/')" class="home-category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="机械臂教程">
     <span>机械臂教程</span>

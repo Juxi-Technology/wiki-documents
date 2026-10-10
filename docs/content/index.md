@@ -31,6 +31,14 @@ outline: false
 ## Product Series
 
 <div class="home-category-grid reveal">
+  <a :href="withBase('/products/jetson-agx-orin-devkit')" class="home-category-card">
+    <img :src="withBase('/images/categories/Jetson-AGX-Orin.png')" alt="Jetson AGX Orin Developer Kit">
+    <span>Jetson AGX Orin Developer Kit</span>
+  </a>
+  <a :href="withBase('/products/jetson-orin-nano-devkit')" class="home-category-card">
+    <img :src="withBase('/images/categories/Jetson-Orin-Nano.png')" alt="Jetson Orin Nano Super Developer Kit">
+    <span>Jetson Orin Nano Super Developer Kit</span>
+  </a>
   <a :href="withBase('/products/so-arm101')" class="home-category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="SO-ARM101 Robot Arm">
     <span>SO-ARM101 Robot Arm</span>
@@ -69,6 +77,14 @@ outline: false
 ## Browse Categories
 
 <div class="home-category-grid reveal">
+  <a :href="withBase('/tutorials/jetson-agx-orin/quick-start')" class="home-category-card">
+    <img :src="withBase('/images/categories/Jetson-AGX-Orin.png')" alt="Jetson AGX Orin Tutorials">
+    <span>Jetson AGX Orin Tutorials</span>
+  </a>
+  <a :href="withBase('/tutorials/jetson-orin-nano/quick-start')" class="home-category-card">
+    <img :src="withBase('/images/categories/Jetson-Orin-Nano.png')" alt="Jetson Orin Nano Super Tutorials">
+    <span>Jetson Orin Nano Super Tutorials</span>
+  </a>
   <a :href="withBase('/tutorials/robot-arms/')" class="home-category-card">
     <img :src="withBase('/images/categories/SO-ARM101.png')" alt="Robot Arm Tutorials">
     <span>Robot Arm Tutorials</span>
