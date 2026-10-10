@@ -1,16 +1,18 @@
 ---
-title: ESP32-NanoCam Hardware Spec
+title: ESP32-S3 NanoCam Hardware Spec
 description: "ESP32-NanoCam hardware specification: dual-board architecture, MCU and Flash pins, full DVP camera pin mapping, ES8311 audio subsystem, power design."
 ---
 
-# ESP32-NanoCam Hardware Spec
+# ESP32-S3 NanoCam Hardware Spec
 
 > **[Buy in Store](https://www.juxitech.com/products/esp32-s3-wifi-video-module)**
 
+> Source: NanoCamModule.pdf + NanoCamBASE.pdf schematics.
+> Architecture: the core board (ESP32-S3 + camera + audio) plugs onto the base board (USB power + serial flashing).
+
+---
 
 ## 1. Hardware Overview
-
-The hardware material in this section comes from the NanoCamModule.pdf + NanoCamBASE.pdf schematics. Overall architecture: the core board (ESP32-S3 + camera + audio) plugs onto the base board (USB power + serial flashing).
 
 ```Plaintext
 ┌─────────────────────────────────────────────────────────┐
@@ -38,6 +40,8 @@ The hardware material in this section comes from the NanoCamModule.pdf + NanoCam
 ```
 
 ![Figure 1: Core board front (ESP32-S3 / camera / audio)](../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/1.png)
+
+---
 
 ## 2. MCU and Storage
 
@@ -70,6 +74,8 @@ The hardware material in this section comes from the NanoCamModule.pdf + NanoCam
 |WP|IO34|Write protect|
 |HOLD|IO33|Hold|
 
+---
+
 ## 3. Camera Subsystem
 
 ### 3.1 DVP Interface
@@ -81,8 +87,8 @@ The hardware material in this section comes from the NanoCamModule.pdf + NanoCam
 |I2C configuration bus|SDA=IO41, SCL=IO42 (shared with the external I2C)|
 |Pixel format|RGB565 / JPEG / YUV422, etc.|
 
-![Figure 5: GC2145 camera module dimensions (68° field of view)](../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/5.png)
 
+![Figure 4: Pin silkscreen on the back of the base board](../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/4.png)
 ### 3.2 Full DVP Pin Mapping
 
 |Signal Category|Signal Name|ESP32 GPIO|Notes|
@@ -107,7 +113,7 @@ The hardware material in this section comes from the NanoCamModule.pdf + NanoCam
 ### 3.3 Camera Signal Group Summary
 
 ```Plaintext
-Camera DVP 信号组:
+Camera DVP signal group:
   XCLK  = IO9     # Master clock out (24MHz)
   PCLK  = IO6     # Pixel clock in
   VSYNC = IO13    # Vertical sync
@@ -124,12 +130,14 @@ Camera DVP 信号组:
   SIOC(SCL) = IO42
 ```
 
+---
+
 ## 4. Audio Subsystem
 
 ### 4.1 Audio Architecture
 
 ```Plaintext
-AP2718AT (模拟MEMS麦) → ES8311 Codec (ADC/DAC) → NS4150B (模拟功放) → 扬声器
+AP2718AT (analog MEMS microphone) → ES8311 Codec (ADC/DAC) → NS4150B (analog amplifier) → speaker
                                ↕ I2S (MCLK=39,BCLK=38,WS=47,DOUT=48,DIN=40) + I2C (41/42, addr=0x30)
                             ESP32-S3
 ```
@@ -159,6 +167,8 @@ AP2718AT (模拟MEMS麦) → ES8311 Codec (ADC/DAC) → NS4150B (模拟功放) �
 |SDA|IO41|I2C bus shared with the camera|
 |SCL|IO42|I2C bus shared with the camera|
 |Address|**0x30**|ES8311 8-bit I2C address|
+
+---
 
 ## 5. Power System
 
@@ -192,9 +202,11 @@ USB-C (5V) ──→ 底板 NCE3401 P-MOSFET 反接保护 ──→ VDD50
 |Reverse polarity protection|**NCE3401** P-MOSFET|Base board power input protection|
 |Gate resistor|R11 10KΩ|P-MOS gate tied to ground|
 
+---
+
 ## 6. Base Board and Flashing
 
-![Figure 2: Pin silkscreen on the back of the core board (RXD/TXD/SCL/SDA/5V/GND, etc.)](../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/2.png)
+![Figure 5: GC2145 camera module dimensions (68° field of view)](../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/5.png)
 
 ### 6.1 USB to Serial
 
@@ -206,8 +218,8 @@ USB-C (5V) ──→ 底板 NCE3401 P-MOSFET 反接保护 ──→ VDD50
 |USB matching resistors|R4, R5 22R/1% (in series with D+/D-)|
 |DTR/RTS|One-click flashing auto-controls BOOT + EN|
 
-![Figure 3: Base board front (USB-C and expansion interfaces)](../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/3.png)
 
+![Figure 2: Pin silkscreen on the back of the core board (RXD/TXD/SCL/SDA/5V/GND, etc.)](../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/2.png)
 ### 6.2 One-Click Download Circuit
 
 Uses Q1 and Q2 (S8050 NPN transistors) for automatic flashing:
@@ -240,14 +252,16 @@ Uses Q1 and Q2 (S8050 NPN transistors) for automatic flashing:
 |P2-7|P2-7|**BOOT**|IO0|Boot mode / flashing|
 |P2-8|P2-8|**CHIP_PU**|EN|Chip reset control|
 
-![Figure 4: Pin silkscreen on the back of the base board](../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/4.png)
 
+![Figure 3: Base board front (USB-C and expansion interfaces)](../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/3.png)
 ### 6.4 Base Board Expansion Interfaces
 
 |Interface|Exposed Signals|Purpose|
 |---|---|---|
 |P3 (I2C, 4Pin)|5V1, GND, SDA, SCL|External I2C devices|
 |P4 (UART, 4Pin)|5V1, GND, ESP_P, ESP_N|External USB/serial devices|
+
+---
 
 ## 7. Complete GPIO Usage Table
 
@@ -305,15 +319,16 @@ Uses Q1 and Q2 (S8050 NPN transistors) for automatic flashing:
 |IO46|General-purpose IO|Expansion|
 
 > ⚠️ Occupied GPIOs: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,18,19,20,21,29,30,31,32,33,34,38,39,40,41,42,43,44,47,48
->
-> Available: 8 GPIOs
+Available: 8 GPIOs
+
+---
 
 ## 8. Key Design Constraints
 
 ### 8.1 I2S Peripheral Configuration
 
 - The ESP32-S3 has two I2S controllers:
-    - **I2S0**: assigned to the ES8311 codec (MCLK=IO39, BCLK=IO38, WS=IO47, DOUT=IO48, DIN=IO40), bidirectional I2S Duplex, supporting recording and playback simultaneously
+  - **I2S0**: assigned to the ES8311 codec (MCLK=IO39, BCLK=IO38, WS=IO47, DOUT=IO48, DIN=IO40), bidirectional I2S Duplex, supporting recording and playback simultaneously
 - ES8311 I2C control: SDA=IO41, SCL=IO42, device address 0x30
 
 ### 8.2 DVP and I2S DMA Coexistence
@@ -333,11 +348,11 @@ Uses Q1 and Q2 (S8050 NPN transistors) for automatic flashing:
 ### 8.4 Sufficient Flash Capacity
 
 - **16MB Flash** — ample space, enough to support:
-    - OTA dual-partition scheme (factory + ota_0 + ota_1)
-    - SPIFFS for the Web admin panel (~1MB)
-    - XiaoZhi AI multilingual resource packs (.p3 files)
-    - NVS configuration partition
-    - Reserved space for upgrades
+  - OTA dual-partition scheme (factory + ota_0 + ota_1)
+  - SPIFFS for the Web admin panel (~1MB)
+  - XiaoZhi AI multilingual resource packs (.p3 files)
+  - NVS configuration partition
+  - Reserved space for upgrades
 - No need to worry about firmware size; the multi-Agent AI fits entirely
 
 ### 8.5 DVP Camera Input Pin Constraints
@@ -345,6 +360,8 @@ Uses Q1 and Q2 (S8050 NPN transistors) for automatic flashing:
 - D0-D7, VSYNC, HREF and PCLK are input pins, driven by the camera sensor
 - When developing the driver, make sure these pins are configured in INPUT mode only
 - The I2S audio pins (38,39,40,47,48) can be configured as outputs (supported by the ESP32-S3)
+
+---
 
 ## 9. ESP-IDF Configuration Recommendations
 

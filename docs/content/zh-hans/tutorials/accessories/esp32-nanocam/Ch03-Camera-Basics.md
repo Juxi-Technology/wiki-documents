@@ -1,5 +1,5 @@
 ---
-title: 第 3 章:摄像头基础
+title: "第 3 章:摄像头基础"
 description: "ESP32-NanoCam 教程第 3 章——DVP 摄像头接口、MJPEG 推流与 PSRAM 帧缓冲原理,认识内置 AI 模式。"
 ---
 
@@ -16,9 +16,7 @@ NanoCam 通过 DVP(数字视频并行)接口连接摄像头。GC2145 传感器�
 ### 关键概念
 
 - **DVP**: 8线并行数据 + 3线同步信号(VSYNC/HREF/PCLK)
-
 - **MJPEG**: 每一帧是独立的 JPEG 图片,浏览器连续加载实现视频效果
-
 - **PSRAM**: 8MB PSRAM 用作帧缓冲,可存 2-4 帧
 
 ## 步骤
@@ -29,13 +27,12 @@ NanoCam 通过 DVP(数字视频并行)接口连接摄像头。GC2145 传感器�
 
 |指令|功能|
 |---|---|
-|`ai_mode:0\r`|图传模块|
-|`ai_mode:1\r`|猫脸检测|
-|`ai_mode:2\r`|人脸检测|
-|`ai_mode:3\r`|颜色识别|
-|`ai_mode:4\r`|人脸识别|
-|`ai_mode:5\r`|二维码识别|
-
+|ai_mode:0\r|传图传模块|
+|ai_mode:1\r|猫脸检测|
+|ai_mode:2\r|人脸检测|
+|ai_mode:3\r|颜色识别|
+|ai_mode:4\r|人脸识别|
+|ai_mode:5\r|二维码识别|
 > 完整 AI 模式与串口指令见[串口协议手册](./ESP32-NanoCam-Serial-Protocol.md)。
 
 下一章:[第 4 章:人脸检测](./Ch04-Face-Detection.md)

@@ -1,43 +1,47 @@
 ---
-title: ESP32-NanoCam Spécifications matérielles
+title: ESP32-NanoCam — Spécifications matérielles
 description: "Spécifications matérielles de l'ESP32-NanoCam : architecture à deux cartes, broches du MCU et de la Flash, mappage complet de la caméra DVP."
 ---
 
-# ESP32-NanoCam Spécifications matérielles
+# ESP32-NanoCam — Spécifications matérielles
 
 > **[Acheter en boutique](https://www.juxitech.com/fr/products/esp32-s3-wifi-video-module)**
 
+> Source : schémas NanoCamModule.pdf + NanoCAMBASE.pdf.
+> Architecture : la carte principale (ESP32-S3 + caméra + audio) s'enfiche sur la carte de base (alimentation USB + flashage série).
+
+---
 
 ## 1. Vue d'ensemble du matériel
 
-Les informations matérielles de cette section proviennent des schémas NanoCamModule.pdf + NanoCamBASE.pdf. Architecture de l'ensemble : la carte principale (ESP32-S3 + caméra + audio) s'enfiche sur la carte de base (alimentation USB + flashage série).
-
 ```Plaintext
 ┌─────────────────────────────────────────────────────────┐
-│                  Carte principale NanoCam                │
+│                    NanoCam 核心板                         │
 │  ┌──────────┐  ┌──────────┐  ┌────────────┐            │
-│  │ ESP32-S3 │  │ ES8311   │  │ NS4150B    │            │
-│  │   R8     │  │ Micro I2S│  │ Ampli I2S  │            │
+│  │ ESP32-S3 │  │ ES8311   │  │ NS4150B   │            │
+│  │   R8     │  │ I2S 麦克风│  │ I2S 功放   │            │
 │  │ (QFN56)  │  │          │  │            │            │
 │  └────┬─────┘  └──────────┘  └────────────┘            │
 │       │                                                 │
 │  ┌────┴─────┐  ┌──────────┐  ┌────────────┐            │
 │  │ GD25Q128 │  │  DVP     │  │ ME6217C33  │            │
-│  │16MB Flash│  │ Caméra   │  │ 3.3V LDO   │            │
+│  │ 16MB Flash│ │ 摄像头   │  │ 3.3V LDO   │            │
 │  └──────────┘  │ FPC-24P  │  └────────────┘            │
 │                └──────────┘                             │
 ├─────────────────────────────────────────────────────────┤
-│                  Carte de base NanoCam                   │
+│                    NanoCam 底板                          │
 │  ┌──────────┐  ┌──────────┐  ┌────────────────────┐    │
-│  │ USB-C    │  │ CH340K   │  │ Flashage auto      │    │
-│  │ Entrée 5V│  │ USB-UART │  │ (DTR/RTS→BOOT/EN)  │    │
+│  │ USB-C    │  │ CH340K   │  │ 一键下载电路        │    │
+│  │ 5V输入   │  │ USB-UART │  │ (DTR/RTS→BOOT/EN)  │    │
 │  └──────────┘  └──────────┘  └────────────────────┘    │
 │                                                         │
-│  Interfaces d'extension : I2C ×1, UART ×1, 5V/GND/3.3V   │
+│  扩展接口: I2C ×1, UART ×1, 5V/GND/3.3V                 │
 └─────────────────────────────────────────────────────────┘
 ```
 
 ![Figure 1 : face avant de la carte principale (ESP32-S3 / caméra / audio)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/1.png)
+
+---
 
 ## 2. MCU et stockage
 
@@ -70,6 +74,8 @@ Les informations matérielles de cette section proviennent des schémas NanoCamM
 |WP|IO34|Protection en écriture|
 |HOLD|IO33|Maintien (Hold)|
 
+---
+
 ## 3. Sous-système caméra
 
 ### 3.1 Interface DVP
@@ -81,8 +87,8 @@ Les informations matérielles de cette section proviennent des schémas NanoCamM
 |Bus de configuration I2C|SDA=IO41, SCL=IO42 (partagé avec l'I2C externe)|
 |Format de pixel|RGB565 / JPEG / YUV422, etc.|
 
-![Figure 5 : schéma de dimensions du module caméra GC2145 (champ de vision 68°)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/5.png)
 
+![Figure 4 : sérigraphie des broches au dos de la carte de base](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/4.png)
 ### 3.2 Mappage complet des broches DVP
 
 |Catégorie de signal|Nom du signal|GPIO ESP32|Remarque|
@@ -124,6 +130,8 @@ Groupe de signaux DVP caméra :
   SIOC(SCL) = IO42
 ```
 
+---
+
 ## 4. Sous-système audio
 
 ### 4.1 Architecture audio
@@ -160,24 +168,26 @@ AP2718AT (micro MEMS analogique) → ES8311 Codec (ADC/DAC) → NS4150B (ampli a
 |SCL|IO42|Bus I2C partagé avec la caméra|
 |Adresse|**0x30**|Adresse I2C 8 bits de l'ES8311|
 
+---
+
 ## 5. Système d'alimentation
 
 ### 5.1 Chaîne d'alimentation
 
 ```Plaintext
-USB-C (5V) ──→ carte de base NCE3401 P-MOSFET protection contre l'inversion ──→ VDD50
+USB-C (5V) ──→ 底板 NCE3401 P-MOSFET 反接保护 ──→ VDD50
                                               │
                     ┌─────────────────────────┤
                     ↓                         ↓
-            carte principale ME6217C33 LDO   NS4150B ampli
-                    │                  (alimentation 5V directe)
+            核心板 ME6217C33 LDO            NS4150B 功放
+                    │                  (5V 直供)
                     ↓
                  VDD33 (3.3V)
                     │
         ┌───────────┼───────────┐
         ↓           ↓           ↓
     ESP32-S3    ES8311 Codec   GD25Q128 Flash
-    Caméra DVP  Micro AP2718AT  ME6211A18/28 LDO
+    DVP摄像头   AP2718AT 麦    ME6211A18/28 LDO
 ```
 
 ### 5.2 Composants clés
@@ -192,9 +202,11 @@ USB-C (5V) ──→ carte de base NCE3401 P-MOSFET protection contre l'inversio
 |Protection contre l'inversion|**NCE3401** P-MOSFET|Protection de l'entrée d'alimentation de la carte de base|
 |Résistance de grille|R11 10KΩ|Grille du P-MOS à la masse|
 
+---
+
 ## 6. Carte de base et flashage
 
-![Figure 2 : sérigraphie des broches au dos de la carte principale (RXD/TXD/SCL/SDA/5V/GND, etc.)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/2.png)
+![Figure 5 : schéma de dimensions du module caméra GC2145 (champ de vision 68°)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/5.png)
 
 ### 6.1 USB vers série
 
@@ -206,11 +218,11 @@ USB-C (5V) ──→ carte de base NCE3401 P-MOSFET protection contre l'inversio
 |Résistances d'adaptation USB|R4, R5 22R/1% (en série sur D+/D-)|
 |DTR/RTS|Contrôle automatique BOOT + EN pour le flashage en un clic|
 
-![Figure 3 : face avant de la carte de base (USB-C et interfaces d'extension)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/3.png)
 
+![Figure 2 : sérigraphie des broches au dos de la carte principale (RXD/TXD/SCL/SDA/5V/GND, etc.)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/2.png)
 ### 6.2 Circuit de flashage automatique
 
-Utilise Q1, Q2 (transistors NPN S8050) pour réaliser le flashage automatique :
+Utilise Q1, Q2 (transistors NPN S8050) pour le flashage automatique :
 
 |Signal CH340K|Commande|Broche cible|
 |---|---|---|
@@ -240,14 +252,16 @@ Utilise Q1, Q2 (transistors NPN S8050) pour réaliser le flashage automatique :
 |P2-7|P2-7|**BOOT**|IO0|Mode de démarrage / flashage|
 |P2-8|P2-8|**CHIP_PU**|EN|Contrôle de réinitialisation de la puce|
 
-![Figure 4 : sérigraphie des broches au dos de la carte de base](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/4.png)
 
+![Figure 3 : face avant de la carte de base (USB-C et interfaces d'extension)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/3.png)
 ### 6.4 Interfaces d'extension de la carte de base
 
 |Interface|Signaux|Utilisation|
 |---|---|---|
 |P3 (I2C, 4 broches)|5V1, GND, SDA, SCL|Périphériques I2C externes|
 |P4 (UART, 4 broches)|5V1, GND, ESP_P, ESP_N|Périphériques USB/série externes|
+
+---
 
 ## 7. Tableau complet d'occupation des GPIO
 
@@ -305,23 +319,24 @@ Utilise Q1, Q2 (transistors NPN S8050) pour réaliser le flashage automatique :
 |IO46|IO générique|Extension|
 
 > ⚠️ GPIO occupés : 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,18,19,20,21,29,30,31,32,33,34,38,39,40,41,42,43,44,47,48
->
-> Nombre disponible : 8 GPIO
+Nombre disponible : 8 GPIO
+
+---
 
 ## 8. Contraintes de conception clés
 
 ### 8.1 Configuration du périphérique I2S
 
 - L'ESP32-S3 dispose de deux contrôleurs I2S :
-    - **I2S0** : attribué au codec ES8311 (MCLK=IO39, BCLK=IO38, WS=IO47, DOUT=IO48, DIN=IO40), I2S Duplex bidirectionnel, enregistrement et lecture simultanés
+  - **I2S0** : attribué au codec ES8311 (MCLK=IO39, BCLK=IO38, WS=IO47, DOUT=IO48, DIN=IO40), I2S Duplex bidirectionnel, enregistrement et lecture simultanés
 - Contrôle I2C de l'ES8311 : SDA=IO41, SCL=IO42, adresse du composant 0x30
 
-### 8.2 Coexistence DVP et DMA I2S
+### 8.2 Coexistence du DVP et du DMA I2S
 
 - Le DVP utilise le canal DMA du périphérique **LCD_CAM**
 - L'ES8311 utilise le DMA I2S0 (une seule interface I2S bidirectionnelle)
-- Les deux ne sont pas en conflit, mais attention à la bande passante PSRAM (8MB PSRAM suffisent)
-- GPIO45/46 ne sont pas connectés à l'audio et restent disponibles ; GPIO47 est utilisé pour I2S WS
+- Les deux ne sont pas en conflit, mais attention à la bande passante PSRAM (8MB de PSRAM suffisent)
+- GPIO45/46 ne sont pas connectés à l'audio et peuvent servir à d'autres usages ; GPIO47 est utilisé pour I2S WS
 
 ### 8.3 Partage du bus I2C
 
@@ -330,21 +345,23 @@ Utilise Q1, Q2 (transistors NPN S8050) pour réaliser le flashage automatique :
 - S'assurer que l'adresse I2C de la caméra n'entre pas en conflit avec les périphériques externes
 - Adresse I2C par défaut de l'OV2640 : 0x60 (écriture) / 0x61 (lecture) — pas de conflit avec l'ES8311 (0x30)
 
-### 8.4 Capacité Flash suffisante
+### 8.4 Capacité de la Flash suffisante
 
-- **16MB Flash** offre un espace confortable, permettant de prendre en charge :
-    - Schéma double partition OTA (factory + ota_0 + ota_1)
-    - SPIFFS pour l'interface d'administration Web (~1MB)
-    - Packs de ressources multilingues XiaoZhi AI (fichiers .p3)
-    - Partition de configuration NVS
-    - Espace réservé pour les mises à jour
-- Aucune inquiétude sur la taille du firmware : les agents IA multiples s'intègrent entièrement
+- **16MB de Flash** offrent un espace confortable, permettant de prendre en charge :
+  - Schéma double partition OTA (factory + ota_0 + ota_1)
+  - SPIFFS pour l'interface d'administration Web (~1MB)
+  - Packs de ressources multilingues XiaoZhi AI (fichiers .p3)
+  - Partition de configuration NVS
+  - Espace réservé pour les mises à jour
+- Aucune inquiétude sur la taille du firmware : les agents IA multiples peuvent être intégralement embarqués
 
 ### 8.5 Contraintes des broches d'entrée de la caméra DVP
 
 - D0-D7 ainsi que VSYNC/HREF/PCLK sont des broches d'entrée, pilotées par le capteur caméra
-- Lors du développement du pilote, s'assurer que ces broches sont configurées uniquement en mode INPUT
+- Lors du développement du pilote, veiller à ce que ces broches soient configurées uniquement en mode INPUT
 - Les broches audio I2S (38,39,40,47,48) peuvent être configurées en mode sortie (pris en charge par l'ESP32-S3)
+
+---
 
 ## 9. Recommandations de configuration ESP-IDF
 

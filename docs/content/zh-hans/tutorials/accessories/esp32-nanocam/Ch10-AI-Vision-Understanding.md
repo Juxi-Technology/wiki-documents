@@ -1,5 +1,5 @@
 ---
-title: 第 10 章:AI 视觉理解
+title: "第 10 章:AI 视觉理解"
 description: "ESP32-NanoCam 教程第 10 章:在 ESP-Claw 模式下拍照并调用多模态视觉 API,让 NanoCam 用语音描述看到的画面,含可用模型清单。"
 ---
 
@@ -12,8 +12,7 @@ description: "ESP32-NanoCam 教程第 10 章:在 ESP-Claw 模式下拍照并调�
 ## 关于本章
 
 AI 视觉理解是 **ESP-Claw（模式 7）**的独有功能，不在 XiaoZhi AI（模式 6）中使用。
-
-> 本章使用的 `self.camera.take_photo` 和 `self.camera.inspect_image` 工具，视觉分析 API 地址由服务端在 MCP 握手阶段通过 `capabilities.vision` 字段自动下发。固件端不需要手动配置 API URL —— 这意味着 API 配置在 xiaozhi.me 控制台或自建服务端完成，详情参考[第 11 章:ESP-Claw 语音控制](./Ch11-ESP-Claw-Voice-Control.md)。
+> 本章使用的 `self.camera.take_photo` 和 `self.camera.inspect_image` 工具，视觉分析 API 地址由服务端在 MCP 握手阶段通过 `capabilities.vision` 字段自动下发。固件端不需要手动配置 API URL —— 这意味着 API 配置在 xiaozhi.me 控制台或自建服务端完成，详情参考 [第11章](./Ch11-ESP-Claw-Voice-Control.md): ESP-Claw 语音控制。
 
 ## 原理
 

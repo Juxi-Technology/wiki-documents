@@ -42,13 +42,9 @@ The device reboots automatically into color detection mode, and the WS2812 RGB L
 ### 6.2 Observing the Recognition Result
 
 Put a solid-colored object in front of the camera; open `http://<IP>` in a browser and you will see:
-
 - A **colored rectangle** marking the detected color region
-
 - A **color label text** (red/yellow/green/blue/purple/white/black)
-
 - The box and label colors match the actually detected color
-
 > Color mode only does image overlay (OSD) and does not output serial logs. To get the coordinates, read them through the I2C registers.
 
 ### 6.3 Reading Detection Data over I2C

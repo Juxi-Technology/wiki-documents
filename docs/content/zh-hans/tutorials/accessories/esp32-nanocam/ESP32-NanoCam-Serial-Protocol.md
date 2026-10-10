@@ -1,16 +1,16 @@
 ---
-title: ESP32-NanoCam 串口协议手册
+title: ESP32-NanoCam 串口 AT 协议手册
 description: "ESP32-NanoCam 串口 AT 协议手册:WiFi 配置、AI 模式切换、信息查询、系统控制与人脸识别等完整指令参考。"
 ---
 
-# ESP32-NanoCam 串口协议手册
+# ESP32-NanoCam 串口 AT 协议手册
 
 > **[ 淘宝店铺 ](https://juxitechnology.taobao.com)**
 
-
 > 波特率: 115200 | 数据位: 8 | 校验: 无 | 停止位: 1 | 流控: 无
-
 > 兼容主流摄像头模块 AT 指令集，新增 NanoCam 扩展指令。
+
+---
 
 ## 一、通用规则
 
@@ -43,6 +43,8 @@ description: "ESP32-NanoCam 串口 AT 协议手册:WiFi 配置、AI 模式切换
 |---|---|---|---|
 |`wifi_mode:X`|切换模式|0=AP 1=STA 2=AP+STA|`OK` (变更时重启)|
 
+---
+
 ## 三、AI 模式切换
 
 |指令|模式|说明|重启|
@@ -58,6 +60,8 @@ description: "ESP32-NanoCam 串口 AT 协议手册:WiFi 配置、AI 模式切换
 
 > `ai_mode` 有效值: 0-7。超出范围默认变为 0。修改后自动重启，重启后新模式生效。
 
+---
+
 ## 四、信息查询
 
 |指令|说明|返回值示例|
@@ -65,6 +69,8 @@ description: "ESP32-NanoCam 串口 AT 协议手册:WiFi 配置、AI 模式切换
 |`sta_ip`|查询 STA IP|`sta_ip:192.168.1.100`|
 |`ap_ip`|查询 AP IP|`ap_ip:192.168.4.1`|
 |`wifi_ver`|查询固件版本|`NanoCam Board Ver:0.2.0`|
+
+---
 
 ## 五、系统控制
 
@@ -89,6 +95,8 @@ description: "ESP32-NanoCam 串口 AT 协议手册:WiFi 配置、AI 模式切换
   "free_heap": 245760
 }
 ```
+
+---
 
 ## 六、人脸识别专用命令
 
@@ -119,6 +127,8 @@ face_del           # 删除最后注册的人脸
 4. 人脸特征存储在 Flash `fr` 分区，掉电不丢失，最多 47 个 ID
 5. 识别采用跳帧策略（每 10 帧跑一次 MFN 推理）
 
+---
+
 ## 七、扩展指令（NanoCam 专属）
 
 |指令|说明|状态|
@@ -138,7 +148,9 @@ face_del           # 删除最后注册的人脸
 |`nano_api_key:KEY`|设置 API 密钥|`nano_api_key:sk-xxxx`|`OK`|
 
 > 支持任意 OpenAI 兼容 API（vLLM / Ollama / 本地模型均可）。
-> ESP-Claw 模式 (ai_mode:7) 支持使用 `nano_server`，XiaoZhi AI (ai_mode:6) 走独立服务器配置。
+ESP-Claw 模式 (ai_mode:7) 支持使用 `nano_server`，XiaoZhi AI (ai_mode:6) 走独立服务器配置。
+
+---
 
 ## 八、注意事项
 

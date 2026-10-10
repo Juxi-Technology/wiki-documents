@@ -13,7 +13,7 @@ description: "Tutoriel ESP32-NanoCam chapitre 6 : reconnaître 7 couleurs (rouge
 
 Basé sur l'espace colorimétrique HSV (teinte-saturation-valeur). L'image RGB565 fournie par la caméra est traitée par le moteur ColorDetector d'esp-dl : l'image est réduite à une résolution 80×80 pour réduire le bruit, puis chaque pixel est converti en valeurs HSV et comparé aux seuils prédéfinis des 7 couleurs.
 
-### Seuils de couleur prédéfinis (plage H standard OpenCV, échelle 0-180)
+### Seuils de couleurs prédéfinis (plage H standard OpenCV, échelle 0-180)
 
 |Couleur|Teinte (H)|Saturation (S)|Valeur (V)|Seuil de surface|
 |---|---|---|---|---|
@@ -41,31 +41,27 @@ L'appareil redémarre automatiquement en mode détection de couleur ; la LED RGB
 
 ### 6.2 Observer les résultats de reconnaissance
 
-Placez un objet de couleur unie devant la caméra ; en ouvrant `http://<IP>` dans le navigateur, vous verrez :
-
-- Un **rectangle coloré** encadrant la zone de couleur détectée
-
+Placez un objet de couleur unie devant la caméra ; ouvrez `http://<IP>` dans le navigateur, vous verrez :
+- Un **rectangle coloré** délimitant la zone de couleur détectée
 - Une **étiquette de couleur** (red/yellow/green/blue/purple/white/black)
-
 - La couleur du cadre et de l'étiquette correspond à la couleur réellement détectée
-
-> Le mode couleur ne fait qu'une superposition sur l'image (OSD), sans journaux sur le port série. Pour obtenir les coordonnées, lisez-les via les registres I2C.
+> Le mode couleur ne fait qu'une superposition à l'image (OSD), sans journaux sur le port série. Pour obtenir les coordonnées, lisez-les via les registres I2C.
 
 ### 6.3 Lire les données de détection en I2C
 
-Le NanoCam fonctionne comme esclave I2C (adresse `0x33`, GPIO SDA=41 SCL=42) et met à jour en temps réel les coordonnées du centre du cadre de détection.
+Le NanoCam agit comme esclave I2C (adresse `0x33`, GPIO SDA=41 SCL=42) et met à jour en temps réel les coordonnées du centre du cadre de détection.
 
 |Registre|Contenu|Type de donnée|
 |---|---|---|
-|0x28-0x29|X du centre|int16 BE|
-|0x2A-0x2B|Y du centre|int16 BE|
+|0x28-0x29|Centre X|int16 BE|
+|0x2A-0x2B|Centre Y|int16 BE|
 |0x2C-0x2D|ID reconnu|int16 BE|
 
 ## Code
 
 ### Moteur de détection principal
 
-`components/modules/ai/who_color_detection.cpp` — basé sur ColorDetector d'esp-dl :
+`components/modules/ai/who_color_detection.cpp` — basé sur esp-dl ColorDetector :
 
 ```C++
 // Créer le détecteur ; set_bgr(false) garantit des canaux de couleur corrects
@@ -90,7 +86,7 @@ for (int ci = 0; ci < (int)results.size(); ci++) {
 
 ## Résultat
 
-Objet rouge, vert ou bleu → reconnaissance de la couleur → cadre + étiquette → coordonnées en sortie I2C → possibilité de tri par servomoteur.
+Objet rouge, vert ou bleu → reconnaissance de la couleur → cadre + étiquette → sortie des coordonnées en I2C → possibilité de tri par servomoteur.
 
 Chapitre suivant : [Chapitre 7 : Scan de QR codes](./Ch07-QR-Code-Scanning.md)
 

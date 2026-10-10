@@ -1,37 +1,36 @@
 ---
-title: ESP32-NanoCam Avvio rapido
+title: Guida rapida ESP32-NanoCam
 description: "Avvio rapido del modulo di trasmissione video/visione AI ESP32-NanoCam: flashing del firmware, configurazione WiFi, visualizzazione del flusso in tempo reale."
 ---
 
-# ESP32-NanoCam Avvio rapido
+# Guida rapida ESP32-NanoCam
 
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/esp32-s3-wifi-video-module)**
 
+---
 
-ESP32-NanoCam è il modulo di trasmissione video / visione AI ESP32-S3 di Juxi Technology (pagina prodotto: [Modulo video WiFi ESP32-S3](/it/products/esp32-s3-wifi-module)), con architettura a doppia scheda (scheda principale + scheda base). Questa guida ti accompagna in cinque passaggi attraverso flashing del firmware, connessione WiFi, visualizzazione dell'immagine e cambio della modalità AI.
+## Prerequisiti
 
-## Preparazione
-
-- Scheda principale NanoCam + scheda base (ESP32-S3 N16R8 + CH340K)
-- Cavo dati USB Type-C (supporta la trasmissione dati)
-- Computer (Windows / Mac / Linux)
+- Scheda core NanoCam + scheda base (ESP32-S3 N16R8 + CH340K)
+- Cavo dati USB Type-C (con supporto al trasferimento dati)
+- PC (Windows / Mac / Linux)
 - Modulo fotocamera GC2145 (collegato in fabbrica)
 
 ![Fig. 1: Fronte della scheda principale ESP32-NanoCam](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Quick-Start/1.png)
-
 ![Fig. 2: Scheda base ESP32-NanoCam (alimentazione USB-C e flashing seriale)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Quick-Start/2.png)
 
-## Passo 1: Flashare il firmware (3 minuti)
+---
+
+## Passo 1: flashare il firmware (3 minuti)
 
 ### Metodo A: senza ambiente di sviluppo (consigliato)
 
-1. Installare il [driver seriale CH340K](https://www.wch.cn/download/CH341SER_EXE.html)
-2. Aprire il browser e visitare [esptool-js](https://espressif.github.io/esptool-js/)
-3. Collegare NanoCam al computer con un cavo Type-C
-4. Selezionare la porta seriale, baud rate 115200
-5. Individuare il file firmware `nanocam_xxx.bin` all'interno dell'archivio decompresso
-6. Selezionare il file firmware `nanocam_xxx.bin`, indirizzo `0x0`
-7. Cliccare "START" e attendere il completamento
+1. Apri il browser e visita [esptool-js](https://espressif.github.io/esptool-js/)
+2. Collega il NanoCam al PC con un cavo Type-C
+3. Seleziona la porta seriale, baud rate 115200
+4. Trova il file firmware `nanocam_xxx.bin` all'interno dell'archivio scompattato
+5. Seleziona il file firmware `nanocam_xxx.bin`, indirizzo `0x0`
+6. Fai clic su "START" e attendi il completamento
 
 ### Metodo B: riga di comando (avanzato)
 
@@ -40,63 +39,68 @@ pip install esptool
 esptool.py --chip esp32s3 --port COM3 write_flash 0x0 nanocam.bin
 ```
 
-## Passo 2: Connessione WiFi (2 minuti)
+---
 
-NanoCam per impostazione predefinita esegue **AP+STA in doppia modalità simultaneamente**, senza necessità di commutazione:
+## Passo 2: connettersi al WiFi (2 minuti)
 
-- L'**hotspot AP** è sempre attivo: lo smartphone si collega direttamente a `NanoCam-AP` (password `12345678`), nel browser aprire `http://192.168.4.1`
-- Il **collegamento STA al router** richiede una configurazione WiFi una tantum
-
-Con uno strumento seriale (baud rate **115200 8N1**) collegarsi alla porta Type-C di NanoCam:
+NanoCam funziona per impostazione predefinita in **doppia modalità AP+STA simultanea**, senza necessità di commutazione:
+- L'**hotspot AP** resta sempre attivo: collega direttamente lo smartphone a `NanoCam-AP` (password `12345678`) e apri il browser su `http://192.168.4.1`
+- La **connessione STA al router** richiede una configurazione WiFi una tantum:
+Collega lo strumento seriale (baud rate **115200 8N1**) alla porta Type-C del NanoCam:
 
 ```Plaintext
 sta_ssid:nome_della_tua_WiFi
 sta_pd:password_della_tua_WiFi
 ```
 
-> La ricezione di `OK` indica che l'impostazione è riuscita. Dopo la modifica della password il modulo si riavvia automaticamente.
-
+> La ricezione di `OK` indica che la configurazione è riuscita. Dopo la modifica della password il dispositivo si riavvia automaticamente.
 Per cambiare la modalità WiFi (di solito non necessario):
 
 |Comando|Modalità|Descrizione|
 |---|---|---|
-|`wifi_mode:0`|Solo AP|Disattiva STA, mantiene solo l'hotspot|
-|`wifi_mode:1`|Solo STA|Disattiva l'hotspot, si collega solo al router|
-|`wifi_mode:2`|AP+STA|Predefinita, entrambi attivi contemporaneamente|
+|`wifi_mode:0`|Solo AP|Disattiva lo STA, mantiene solo l'hotspot|
+|`wifi_mode:1`|Solo STA|Disattiva l'hotspot, si connette solo al router|
+|`wifi_mode:2`|AP+STA|Predefinita: entrambe attive contemporaneamente|
 
-## Passo 3: Aprire l'immagine (1 minuto)
+---
 
-1. Inviare `sta_ip` via seriale per ottenere l'IP STA
-2. Nel browser inserire `http://<indirizzo IP>` (oppure in modalità AP usare `http://192.168.4.1`)
-3. La pagina web mostra il flusso in tempo reale
+## Passo 3: visualizzare l'immagine (1 minuto)
 
-## Passo 4: Giocare con l'AI (2 minuti)
+1. Invia `sta_ip` dalla porta seriale per ottenere l'IP STA
+2. Nel browser inserisci `http://<indirizzo IP>` (oppure, in modalità AP, `http://192.168.4.1`)
+3. Nella pagina Web puoi vedere l'immagine in tempo reale
 
-Inviare i seguenti comandi via seriale per cambiare modalità:
+---
+
+## Passo 4: esplorare le funzionalità IA (2 minuti)
+
+Invia i seguenti comandi dalla porta seriale per cambiare modalità:
 
 |Comando|Modalità|Effetto|
 |---|---|---|
-|`ai_mode:0`|Trasmissione normale|Flusso MJPEG in tempo reale|
-|`ai_mode:1`|Rilevamento muso del gatto|Nel flusso appare il riquadro di rilevamento del muso del gatto|
-|`ai_mode:2`|Rilevamento volti|Nel flusso appare il riquadro di rilevamento del volto|
-|`ai_mode:3`|Riconoscimento colori|Selezione del colore→tracciamento in tempo reale|
-|`ai_mode:4`|Riconoscimento facciale|Registrazione→identificazione→eliminazione|
-|`ai_mode:5`|Scansione codici QR|Inquadrare il codice QR→contenuto emesso via seriale|
-|`ai_mode:6`|Agente LLM|Sveglia vocale "你好小智" (XiaoZhi AI)|
+|`ai_mode:0`|Trasmissione video standard|Immagine MJPEG in tempo reale|
+|`ai_mode:1`|Rilevamento del muso dei gatti|Nell'immagine compare il riquadro di rilevamento del muso|
+|`ai_mode:2`|Rilevamento volti|Nell'immagine compare il riquadro di rilevamento del volto|
+|`ai_mode:3`|Riconoscimento dei colori|Selezione del colore→inseguimento in tempo reale|
+|`ai_mode:4`|Riconoscimento facciale|Registrazione→riconoscimento→eliminazione|
+|`ai_mode:5`|Scansione codici QR|Inquadra il codice QR→contenuto emesso sulla porta seriale|
+|`ai_mode:6`|Agente LLM|Attivazione vocale "你好小智" (XiaoZhi AI)|
 |`ai_mode:7`|ESP-Claw|ESP-Claw AI Agent (framework ufficiale Espressif)|
 
-> Ogni cambio di modalità richiede un riavvio manuale: è possibile riavviare premendo il pulsante RST del modulo; dopo il riavvio la nuova modalità diventa effettiva.
+> Per ogni cambio di modalità è necessario un riavvio manuale: puoi riavviare premendo il pulsante RST del modulo; dopo il riavvio la nuova modalità diventa attiva.
 
-## Passo 5: Integrazione nel tuo progetto
+---
 
-### Controllo Arduino
+## Passo 5: integrare nel tuo progetto
+
+### Controllo con Arduino
 
 ```C++
 Serial.begin(115200);
 Serial.print("ai_mode:2");  // Passa al rilevamento dei volti
 ```
 
-### Controllo Python
+### Controllo con Python
 
 ```Python
 import serial
@@ -104,18 +108,24 @@ ser = serial.Serial("COM3", 115200)
 ser.write(b"ai_mode:1\r\n")  # Passa al rilevamento dei volti di gatto
 ```
 
-### Consultare i comandi completi
+### Consultare l'elenco completo dei comandi
 
-Riferimento completo dei comandi: [manuale del protocollo seriale](./ESP32-NanoCam-Serial-Protocol.md).
+→ Manuale del protocollo seriale AT
 
-## FAQ
+---
+
+## Domande frequenti
 
 |Problema|Soluzione|
 |---|---|
-|Flashing non riuscito|Verificare che il cavo Type-C supporti la trasmissione dati; tenere premuto S2 (BOOT) sulla scheda base e poi alimentare|
-|Nessuna immagine visibile|Inviare `sta_ip` via seriale per confermare l'IP; verificare di essere sulla stessa sottorete|
-|La fotocamera non si accende|Verificare che i contatti metallici del flat FPC siano inseriti a fondo rivolti verso il basso; controllare PWDN(IO12)/RESET(IO14)|
-|WiFi non si connette|Inviare `wifi_reset` per ripristinare le impostazioni di fabbrica e riconfigurare|
+|Flashing non riuscito|Verifica che il cavo Type-C supporti il trasferimento dati; tieni premuto S2 (BOOT) sulla scheda base e ridai alimentazione|
+|Nessuna immagine visibile|Invia `sta_ip` dalla seriale per confermare l'IP; verifica che i dispositivi siano nella stessa sottorete|
+|La fotocamera non si accende|Controlla che il flat FPC sia inserito a fondo con i contatti metallici rivolti verso il basso; verifica PWDN(IO12)/RESET(IO14)|
+|Impossibile connettersi al WiFi|Invia `wifi_reset` per ripristinare le impostazioni di fabbrica, poi riconfigura|
+
+Per ulteriori problemi → [FAQ](https://FAQ.md)
+
+---
 
 ## Prossimi passi
 

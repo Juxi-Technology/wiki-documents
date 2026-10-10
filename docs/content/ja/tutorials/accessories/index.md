@@ -14,7 +14,13 @@ description: "Juxi Technologyロボットアクセサリシリーズチュート
 - [USB オートフォーカスカメラ](./usb-auto-focus-camera.md)
 - [Jetson CSI カメラ](./jetson-csi-camera.md)
 
-- [2自由度ジンバル](./2dof-camera-gimbal.md)
+- [2自由度ジンバル](/ja/tutorials/accessories/2dof-camera-gimbal/)
+  - [クイックスタートガイド](/ja/tutorials/accessories/2dof-camera-gimbal/01-Quick-Start-Guide)
+  - [ハードウェアと環境準備](/ja/tutorials/accessories/2dof-camera-gimbal/02-Hardware-and-Environment-Setup)
+  - [基本的な使い方](/ja/tutorials/accessories/2dof-camera-gimbal/03-Basic-Usage)
+  - [応用機能とトラッキング](/ja/tutorials/accessories/2dof-camera-gimbal/04-Advanced-Features-and-Tracking)
+  - [トラブルシューティング](/ja/tutorials/accessories/2dof-camera-gimbal/05-Troubleshooting)
+  - [製品情報](/ja/tutorials/accessories/2dof-camera-gimbal/Product-Info)
 
 - [心拍・血中酸素センサー](./heart-rate-spo2.md)
 
@@ -34,9 +40,11 @@ AIウェイクサウンドカード。オフライン音声ウェイク、カス
 
 ESP32-S3 動画転送・AI ビジョンモジュール。8 種類の AI モード、AP+STA デュアルモード動画転送、音声対話に対応。
 
+- [ESP32-NanoCam 使用チュートリアル](./esp32-nanocam/)
 - [クイックスタート](./esp32-nanocam/ESP32-NanoCam-Quick-Start.md)
 - [ハードウェア仕様書](./esp32-nanocam/ESP32-NanoCam-Hardware-Spec.md)
 - [シリアルプロトコルマニュアル](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
+- [Code Downloads](./esp32-nanocam/ESP32-NanoCam-Code-Downloads.md)
 - [AI ビジョンチュートリアル第 1 章:環境構築](./esp32-nanocam/Ch01-Environment-Setup.md)
 
 #### AI ビジョンチュートリアル(全 11 章)

@@ -1,14 +1,13 @@
 ---
-title: ESP32-NanoCam 빠른 시작
+title: ESP32-NanoCam 빠른 시작 가이드
 description: "NanoCam 빠른 시작 가이드: 펌웨어 플래싱, WiFi 연결, 실시간 화면 확인, AI 모드 전환, Arduino·Python 통합까지 5단계로 안내합니다."
 ---
 
-# ESP32-NanoCam 빠른 시작
+# ESP32-NanoCam 빠른 시작 가이드
 
 > **[스토어에서 구매](https://www.juxitech.com/ko/products/esp32-s3-wifi-video-module)**
 
-
-ESP32-NanoCam은 Juxi Technology의 ESP32-S3 영상 전송 / AI 비전 모듈(제품 페이지: [ESP32-S3 WiFi 영상 모듈](/ko/products/esp32-s3-wifi-module))로, 코어 보드 + 베이스 보드 듀얼 보드 아키텍처를 채택했습니다. 본 가이드에서는 다섯 단계로 펌웨어 플래싱, WiFi 연결, 화면 확인과 AI 모드 전환을 완료할 수 있도록 안내합니다.
+---
 
 ## 사전 준비
 
@@ -18,20 +17,20 @@ ESP32-NanoCam은 Juxi Technology의 ESP32-S3 영상 전송 / AI 비전 모듈(�
 - GC2145 카메라 모듈(출고 시 연결됨)
 
 ![그림 1:ESP32-NanoCam 코어 보드 정면](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Quick-Start/1.png)
-
 ![그림 2:ESP32-NanoCam 베이스 보드(USB-C 전원 공급과 시리얼 플래싱)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Quick-Start/2.png)
+
+---
 
 ## 1단계: 펌웨어 플래싱(3분)
 
 ### 방법 A: 개발 환경 불필요(추천)
 
-1. [CH340K 시리얼 드라이버](https://www.wch.cn/download/CH341SER_EXE.html) 설치
-2. 브라우저를 열고 [esptool-js](https://espressif.github.io/esptool-js/) 접속
-3. Type-C 케이블로 NanoCam을 컴퓨터에 연결
-4. 시리얼 포트 선택, 보레이트 115200
-5. 압축 해제 후 폴더 안의 펌웨어 파일 `nanocam_xxx.bin` 찾기
-6. 펌웨어 파일 `nanocam_xxx.bin` 선택, 주소 `0x0`
-7. "START" 클릭, 완료 대기
+1. 브라우저를 열고 [esptool-js](https://espressif.github.io/esptool-js/) 접속
+2. Type-C 케이블로 NanoCam을 컴퓨터에 연결
+3. 시리얼 포트 선택, 보드레이트 115200
+4. 압축 해제 후 폴더 안의 펌웨어 파일 `nanocam_xxx.bin` 찾기
+5. 펌웨어 파일 `nanocam_xxx.bin` 선택, 주소 `0x0`
+6. "START" 클릭, 완료 대기
 
 ### 방법 B: 명령줄(고급)
 
@@ -40,14 +39,14 @@ pip install esptool
 esptool.py --chip esp32s3 --port COM3 write_flash 0x0 nanocam.bin
 ```
 
+---
+
 ## 2단계: WiFi 연결(2분)
 
 NanoCam은 기본적으로 **AP+STA 듀얼 모드가 동시에 동작**하며, 전환이 필요 없습니다:
-
 - **AP 핫스팟**은 항상 켜져 있으며, 스마트폰으로 `NanoCam-AP`(비밀번호 `12345678`)에 직접 연결하고 브라우저에서 `http://192.168.4.1` 열기
 - **STA 라우터 연결**은 WiFi를 한 번 구성해야 함
-
-시리얼 도구(보레이트 **115200 8N1**)로 NanoCam의 Type-C 포트에 연결합니다:
+시리얼 도구(보드레이트 **115200 8N1**)로 NanoCam의 Type-C 포트에 연결합니다:
 
 ```Plaintext
 sta_ssid:WiFi이름
@@ -55,7 +54,6 @@ sta_pd:WiFi비밀번호
 ```
 
 > `OK` 수신은 설정 성공을 의미합니다. 비밀번호 수정 후 자동으로 재부팅됩니다.
-
 WiFi 모드를 전환해야 하는 경우(일반적으로 불필요):
 
 |명령|모드|설명|
@@ -64,11 +62,15 @@ WiFi 모드를 전환해야 하는 경우(일반적으로 불필요):
 |`wifi_mode:1`|STA 전용|핫스팟을 끄고 라우터에만 연결|
 |`wifi_mode:2`|AP+STA|기본값, 둘 다 동시에 동작|
 
+---
+
 ## 3단계: 화면 열기(1분)
 
 1. 시리얼로 `sta_ip`를 전송해 STA IP 확인
 2. 브라우저에 `http://<IP주소>` 입력(또는 AP 모드에서 `http://192.168.4.1`)
 3. 웹 페이지에서 실시간 화면을 확인할 수 있습니다
+
+---
 
 ## 4단계: AI 활용하기(2분)
 
@@ -86,6 +88,8 @@ WiFi 모드를 전환해야 하는 경우(일반적으로 불필요):
 |`ai_mode:7`|ESP-Claw|ESP-Claw AI Agent (에스프레시프 공식 프레임워크)|
 
 > 모드를 전환할 때마다 수동 재부팅이 필요하며, 모듈의 RST 버튼을 눌러 재부팅할 수 있습니다. 재부팅 후 새 모드가 적용됩니다.
+
+---
 
 ## 5단계: 프로젝트에 통합하기
 
@@ -106,7 +110,9 @@ ser.write(b"ai_mode:1\r\n")  # 고양이 얼굴 검출로 전환
 
 ### 전체 명령 보기
 
-전체 명령 레퍼런스: [시리얼 프로토콜 매뉴얼](./ESP32-NanoCam-Serial-Protocol.md).
+→ 시리얼 AT 프로토콜 매뉴얼
+
+---
 
 ## 자주 묻는 질문
 
@@ -116,6 +122,10 @@ ser.write(b"ai_mode:1\r\n")  # 고양이 얼굴 검출로 전환
 |화면이 보이지 않음|시리얼로 `sta_ip`를 전송해 IP를 확인하고, 동일 네트워크 대역인지 확인합니다|
 |카메라가 켜지지 않음|FPC 케이블의 금속 접점이 아래를 향하도록 단단히 꽂았는지 확인하고, PWDN(IO12)/RESET(IO14)를 확인합니다|
 |WiFi에 연결되지 않음|`wifi_reset`을 전송해 공장 초기화한 뒤 다시 구성합니다|
+
+더 많은 문제 → [FAQ](https://FAQ.md)
+
+---
 
 ## 다음 단계
 

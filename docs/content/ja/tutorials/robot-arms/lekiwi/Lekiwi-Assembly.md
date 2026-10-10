@@ -7,158 +7,124 @@ description: "Fusion360 オンライン CAD で正確なコンポーネント位
 
 > **[ストアで購入](https://www.juxitech.com/ja/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
 
+[*Fusion360 のオンライン CAD*](https://a360.co/4k1P8yO)* で、各部品の正確な位置を確認できます。*
 
-[*Fusion360 オンライン CAD*](https://a360.co/4k1P8yO)*で正確なコンポーネント位置を可視化できます。*
-[URDFファイル](https://gitcode.com/gh_mirrors/le/LeKiwi/tree/main)
-オンラインURDFプレビュー https://urdf.d-robotics.cc/
+[URDF ファイル](https://gitcode.com/gh_mirrors/le/LeKiwi/tree/main)
 
-## 一、ホイールモジュールの組み立て（1台につき3個）
+オンライン URDF プレビュー https://urdf.d-robotics.cc/
 
-1. 12本の **M2x6** タッピングネジで駆動モーターをモーターブラケットに固定します。（サーボボックス付属）
+## 1. ホイールモジュールの組み立て(ロボット1台につき3個)
 
-![image – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/1.jpg)
+1. 12本の **M2x6** タッピングねじを使用して、駆動モーターをモーターブラケットに固定します。(サーボボックスに付属しています。)
 
-![image – 2](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/2.jpg)
+![image – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-01.png)
+![image – 2](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-02.png)
 
+2. 12本の **M3x16** 皿ねじと12個の **M3 ナット**を使用して、駆動モーターブラケットでサーボをベースプレートに固定します。
 
+![image – 3](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-03.jpg)
 
+3. 82mm オムニホイールからねじとナットを取り外します。
 
+![image – 4](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-04.png)
 
-2. 12本の **M3x16 機ネジと12個の** で駆動モーターブラケットを底板に固定します。
+4. m3\*6 ねじを使用して、サーボホーンをサーボに固定します。
 
-![image – 3](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/3.jpg)
+![image – 5](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-05.png)
 
+5. カップリングに4つのロックナットを取り付けます。まず、4本の m3\*6 ねじを使用してカップリングをサーボホーンに固定します。
 
+![image – 6](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-06.png)
+![image – 7](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-07.png)
 
-3. 82mm 全方向ホイールの機ネジとナットを取り外します
+6. m3\*25 皿ねじとロックナットを使用して、82mm オムニホイールをカップリングに固定します。
 
-![image – 4](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/4.jpg)
 
 
+3つのホイールをすべてベースプレートに取り付けた状態:
 
-4. m3*6ネジで 舵盤 をサーボに固定します
+![image – 8](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-08.png)
+![image – 9](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-09.jpg)
 
-![image – 5](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/5.jpg)
+![image – 10](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-10.png)
 
+## 2. ベースプレートの組み立て
 
+1. サーボドライバ基板とバッテリーマウントの穴に M3 ナットを2つ挿入します。4本の M3x12 六角穴付きねじを使用して、両方をベースプレートに固定します。
 
-5. 4個の緩み止めナットを カップリング に取り付け、4本の m3*6ネジ で カップリング を 舵盤 に固定します
+![image – 11](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-11.png)
+![image – 12](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-12.png)
 
-![image – 6](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/6.jpg)
+2. 2本の M3\*12 六角穴付きねじと2個の M3 ナットを使用してサーボドライバ基板を取り付け、3つのサーボに接続します。
 
-![image – 7](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/7.jpg)
+![image – 13](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-13.png)
 
+ポータブル電源のケーブル接続
 
+- **電源入力**は電源に直接接続します
 
+![image – 14](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-14.png)
+![image – 15](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-15.png)
 
+- **USB-C** インターフェースは Raspberry Pi に5V電源を供給します
+- **12V ロボットアーム**を使用する場合は、**DC 電源分配器**から**サーボモータ基板**に直接給電してください
 
-6. m3*25機ネジと緩み止めナットで 82mm 全方向ホイール を カップリング に固定します
+![image – 16](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-16.png)
+![image – 17](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-17.png)
 
-3つのホイールをすべて底板に取り付けた後：
+ケーブルは下図のように接続できます:
 
-![image – 8](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/8.jpg)
+![image – 18](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-18.png)
 
-![image – 9](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/9.jpg)
+## 3. トッププレートの組み立て
 
-![image – 10](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/10.jpg)
+1. Raspberry Pi 5 を Raspberry Pi ケースの底面にセットし、ケースの上面をはめ込みます。
 
+2. 2本の M3x16 六角穴付きねじと2個の M3 ナットを使用して Raspberry Pi をトップベースプレートに固定し、4本の M4x25 皿ねじと4個の M4 ナットを使用して SO-101 ロボットアームのベースを取り付けます。
 
+![image – 19](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-19.png)
 
+## 4.
 
+1. サーボドライバ基板の USB-C - USB-A ケーブル、5V USB-C 電源ケーブル、サーボケーブルをトッププレートの穴に通します。
 
+![image – 20](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-20.png)
 
+2. 8本の m3x16 皿ねじと4個の m3 ナットを使用して、トッププレートをモーターブラケットに取り付けます。
 
-## 二、底板アセンブリ
+![image – 21](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-21.png)
 
-1. M3ナットをサーボドライバ基板とバッテリー取付座の穴に差し込みます。4本のM3x12機ネジで両方を底板に固定します。
 
-![image – 11](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/11.jpg)
 
-![image – 12](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/12.jpg)
+## 5. カメラの取り付け
 
+*注: 私たちが設計したブラケットは、選定したカメラに合わせたものです。カメラモジュールが異なる場合は、改造が必要になることがあります。*
 
+## (オプション1) 前方カメラの取り付け
 
+①4本の m2\*5\*5 スペーサーねじを使用してカメラモジュールを固定します
 
+②2本の m3\*12 皿ねじと2個の m3 ナットを使用して、前方カメラブラケットをベースプレートに取り付けます
 
-2. 4本のM2.5*6.5銅スタンドと4本のM2.5*8ネジでサーボドライバ基板を取り付け、3個のサーボに接続します。
+![image – 22](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-22.webp)
+![image – 23](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-23.webp)
 
+## (オプション2) アーム搭載カメラの取り付け
 
+4本の m2\*5\*5 スペーサーねじを使用してカメラモジュールを固定します
 
-モバイル電源 ケーブル接続
+このブラケットは、穴間隔 24\*25mm または 28\*28mm のカメラに対応しています
 
-- **電源入力**は電源に直接接続
+![image – 24](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-24.png)
 
+![image – 25](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-25.png)
 
+## 6. 電源の接続と配線
 
+DC バレルプラグアダプターを**サーボドライバ基板**に接続します。
 
+5V USB-C コネクタを **Raspberry Pi 5** に接続して、電子機器に給電します。
 
-- **USB-C** インターフェースはラズベリーパイに 5V 電源を供給
-- **12V ロボットアーム**を使用する場合、**DC 電源分岐器**で直接 **サーボモーターボード**に給電します
+サーボドライバ基板とカメラの USB データケーブルは、Raspberry Pi に直接接続できます。
 
-
-
-
-
-ケーブルは下図のように接続できます：
-
-![image – 13](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/13.jpg)
-
-![image – 14](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/14.jpg)
-
-![image – 15](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/15.jpg)
-
-![image – 16](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/16.jpg)
-
-![image – 17](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/17.jpg)
-
-![image – 18](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/18.jpg)
-
-
-
-## 三、トッププレートアセンブリ
-
-1. ラズベリーパイ 5 をラズベリーパイケース下部に入れ、ケース上部をはめ込みます。
-2. 2本の M3x12 機ネジと2個の M3緩み止めナットでラズベリーパイを上部底板に固定し、4本の M4x25 機ネジと4個のM4緩み止めナットで SO-101 ロボットアームベースを取り付けます。改良版の SO-101 ベースでも純正ベースでも構いません。底板には両方のベース用の取付穴が用意されているためです。
-
-![image – 19](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/19.jpg)
-
-
-
-## 四、
-
-1. サーボドライバ基板の USB-C から USB-A ケーブル、5V USB-C 電源ケーブル、SO0-101 サーボケーブルを上部底板の穴に通します。
-
-![image – 20](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/20.jpg)
-
-
-
-2. 6本の m3x12 機ネジと6個のm3緩み止めナットで 上部底板 をモーターブラケットに取り付けます。
-
-![image – 21](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/21.jpg)
-
-
-
-3. 6本の M3*50 銅スタンド と 6本の M3*機ネジ で トッププレートと底板を接続
-
-## 五、カメラの取り付け
-
-*注意：私たちの設計したブラケットは選択したカメラ専用です。異なるカメラモジュールの場合は修正が必要な場合があります。*
-
-### （オプション 1）前方カメラの取り付け
-
-3本の m3*12機ネジ と3個のm3ナットで前方カメラブラケットを底板に取り付けます
-4個の m2*5*5スペーサーネジでカメラモジュールを固定します
-
-### （オプション 2）アーム搭載カメラの取り付け
-
-4個の m2*5*5スペーサーネジでカメラモジュールを固定します
-
-## 六、電源を入れる
-
-DC円筒プラグアダプターをサーボドライバ基板に挿し、5V USB-C コネクターをラズベリーパイ 5 に挿すと電子機器に給電されます。サーボドライバ基板とカメラのUSBデータケーブルはラズベリーパイに直接挿せます。
-
-
-![Option 2 Install an arm-mounted camera – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/22.jpg)
-
-
-
+![image – 26](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-26.png)

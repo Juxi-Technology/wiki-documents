@@ -1,9 +1,9 @@
 ---
-title: "9장: 음성 대화"
+title: "9장: 음성 대화 (XiaoZhi AI)"
 description: "NanoCam 튜토리얼 9장: 샤오즈 AI 클라우드로 ASR·LLM·TTS 전이중 음성 대화를 체험하고 자체 서버 구축과 문제 해결 방법을 다룹니다."
 ---
 
-# 9장: 음성 대화
+# 9장: 음성 대화 (XiaoZhi AI)
 
 > **[스토어에서 구매](https://www.juxitech.com/ko/products/esp32-s3-wifi-video-module)**
 
@@ -40,13 +40,9 @@ NanoCam은 샤오즈 AI 오픈소스 프레임워크를 통합하여 WebSocket /
 ## 하드웨어 요구 사항
 
 이번 장은 오디오 기능을 다루므로 다음 하드웨어가 필요합니다:
-
 - NanoCam 코어 보드(ES8311 Codec + AP2718AT 마이크 포함)
-
 - NanoCam 베이스 보드(NS4150B 앰프 + CH340K 포함)
-
 - 스피커(베이스 보드의 스피커 커넥터 VON/VOP에 연결)
-
 > 코어 보드만으로도 테스트할 수 있습니다(ES8311 헤드폰 출력으로 청취). 마이크는 AP2718AT 아날로그 MEMS 실리콘 마이크이며, C26 직류 차단 커패시터를 통해 ES8311 MIC1P에 연결됩니다.
 
 ## 단계
@@ -67,15 +63,10 @@ idf.py -p COMx flash monitor
 ### 9.2 xiaozhi.me 클라우드 서비스 연결
 
 NanoCam은 출고 시 기본으로 [xiaozhi.me](https://xiaozhi.me) 공식 클라우드 서비스(무료)에 연결되며, 자체 서버 구축이 필요하지 않습니다.
-
 1. [xiaozhi.me](https://xiaozhi.me)에서 계정 등록
-
 2. 기기 전원을 켜면 6자리 활성화 코드가 자동으로 음성 안내됩니다
-
 3. xiaozhi.me 콘솔에 활성화 코드 입력 → 기기 바인딩
-
 4. 콘솔에서 LLM 모델 선택(Qwen / DeepSeek 등)
-
 활성화는 한 번만 하면 되며, 이후 전원을 켤 때마다 자동으로 연결됩니다.
 
 ### 9.3 첫 대화
@@ -111,7 +102,6 @@ python app.py
 ```
 
 펌웨어의 서버 주소는 OTA 시스템(sdkconfig의 `CONFIG_OTA_URL`)을 통해 전달되며, 기기는 전원을 켠 후 자동으로 서버 주소를 요청합니다.
-
 > XiaoZhi AI는 샤오즈 AI 오픈소스 서버(WebSocket 사설 프로토콜 + ASR/LLM/TTS 파이프라인)를 사용합니다. ESP-Claw 모드는 이를 기반으로 하며, 시각 분석 기능의 Vision API URL과 token은 MCP 핸드셰이크 단계에서 서버가 전달하므로 펌웨어에서 별도로 구성할 필요가 없습니다.
 
 ## 문제 해결
@@ -123,7 +113,6 @@ python app.py
 |연결 불가|WiFi 미설정|먼저 시리얼로 연결 설정 `sta_ssid:xxx`|
 |활성화 코드 없음|최초 부팅 미완료|30초 기다리면 기기가 자동으로 음성 안내|
 |답변이 느림|LLM 서버 지연|xiaozhi.me에서 더 빠른 모델 선택 또는 자체 서버 구축|
-
 > 시리얼 연결 설정 등 전체 명령은 [시리얼 프로토콜 매뉴얼](./ESP32-NanoCam-Serial-Protocol.md)을 참조하세요.
 
 다음 장: [10장: AI 비전 이해](./Ch10-AI-Vision-Understanding.md)

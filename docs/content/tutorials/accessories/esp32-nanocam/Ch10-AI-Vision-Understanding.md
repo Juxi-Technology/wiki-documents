@@ -12,7 +12,6 @@ description: "ESP32-NanoCam tutorial Chapter 10: take photos in ESP-Claw mode an
 ## About This Chapter
 
 AI vision understanding is a feature exclusive to **ESP-Claw (mode 7)**; it is not used in XiaoZhi AI (mode 6).
-
 > For the `self.camera.take_photo` and `self.camera.inspect_image` tools used in this chapter, the vision analysis API address is delivered automatically by the server during the MCP handshake through the `capabilities.vision` field. The firmware side does not need to configure the API URL manually — this means the API configuration is done in the xiaozhi.me console or on a self-hosted server; for details see [Chapter 11: ESP-Claw Voice Control](./Ch11-ESP-Claw-Voice-Control.md).
 
 ## Principle

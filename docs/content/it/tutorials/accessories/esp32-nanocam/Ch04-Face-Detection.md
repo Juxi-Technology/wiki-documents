@@ -1,27 +1,25 @@
 ---
-title: "Capitolo 4: Rilevamento del volto"
+title: "Capitolo 4: Rilevamento volti"
 description: "Tutorial ESP32-NanoCam capitolo 4: usare il modello di rilevamento volti ESP-DL MobileNet per annotare nell'immagine il riquadro del volto e i 5 keypoint."
 ---
 
-# Capitolo 4: Rilevamento del volto
+# Capitolo 4: Rilevamento volti
 
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/esp32-s3-wifi-video-module)**
 
 **Obiettivo del capitolo**: far rilevare a NanoCam i volti nell'immagine, annotare il riquadro del volto e i keypoint, e leggere le coordinate per il controllo esterno.
 
-## Come funziona
+## Funzionamento
 
-Il rilevamento del volto usa la libreria di deep learning ESP-DL, basata sul modello leggero di rilevamento MobileNet. In ingresso un'immagine 320x240 RGB565, in uscita un elenco di bounding box dei volti (posizione + dimensione + confidenza). L'inferenza avviene sull'ESP32-S3, senza connessione di rete.
+Il rilevamento volti utilizza la libreria di deep learning ESP-DL, basata sul modello di rilevamento leggero MobileNet. Input: immagine RGB565 320x240; output: elenco di bounding box dei volti (posizione + dimensione + confidenza). L'inferenza viene eseguita sull'ESP32-S3, senza bisogno di connessione di rete.
 
 ### Formato del risultato di rilevamento
 
 - Coordinate: angolo in alto a sinistra (x,y) + larghezza e altezza (w,h)
-
 - Confidenza: numero in virgola mobile tra 0 e 1
+- In presenza di più volti vengono restituiti più riquadri
 
-- Con più volti vengono restituiti più riquadri
-
-## Passaggi
+## Procedura
 
 ### 4.1 Cambiare modalità
 
@@ -33,11 +31,11 @@ ai_mode:2
 
 ### 4.2 Osservare il risultato
 
-Nel browser `http://<IP>` si vede il riquadro di rilevamento del volto.
+Nel browser, su `http://<IP>`, vedrai il riquadro di rilevamento del volto.
 
 ### 4.3 Ottenere le coordinate
 
-Formato dell'output seriale:
+Formato di output della porta seriale:
 
 ```Plain
 I (xxxxx) detection_result: [ 0]: ( 45,  30, 180, 210)
@@ -45,12 +43,11 @@ I (xxxxx) detection_result:       left eye: ( 90,  80), right eye: (150,  80), n
 ```
 
 - Prima riga: `[indice] (x, y, w, h)` — coordinate del riquadro del volto
-
-- Seconda riga: 5 keypoint — occhio sinistro, occhio destro, naso, angolo sinistro della bocca, angolo destro della bocca
+- Seconda riga: 5 punti chiave — occhio sinistro, occhio destro, naso, angolo sinistro della bocca, angolo destro della bocca
 
 ## Codice
 
-### Arduino: leggere le coordinate e controllare il servomotore
+### Arduino: leggere le coordinate per controllare un servo
 
 ```C++
 // analizza il formato $face:x,y,w,h#
@@ -64,7 +61,7 @@ if (nanoSerial.available()) {
 }
 ```
 
-### Lettura in Python
+### Lettura con Python
 
 ```Python
 ser = serial.Serial("COM3", 115200)
@@ -76,8 +73,8 @@ if line.startswith("$face:"):
 
 ## Risultato
 
-Un volto davanti alla fotocamera → nell'immagine viene annotato un riquadro verde → le coordinate sono inviate sulla seriale.
+Appare un volto davanti alla fotocamera→l'immagine viene annotata con un riquadro verde→la porta seriale emette le coordinate.
 
-Capitolo successivo: [Capitolo 5: Rilevamento del muso del gatto](./Ch05-Cat-Face-Detection.md)
+Capitolo successivo: [Capitolo 5: Rilevamento del muso dei gatti](./Ch05-Cat-Face-Detection.md)
 
 <RelatedProducts slugs="esp32-s3-wifi-module" />

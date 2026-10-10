@@ -7,17 +7,17 @@ description: "Manual del protocolo serie AT del ESP32-NanoCam: referencia comple
 
 > **[Comprar en la tienda](https://www.juxitech.com/es/products/esp32-s3-wifi-video-module)**
 
-
 > Velocidad en baudios: 115200 | Bits de datos: 8 | Paridad: ninguna | Bits de parada: 1 | Control de flujo: ninguno
-
 > Compatible con el conjunto de comandos AT de los principales módulos de cámara; se añaden los comandos extendidos del NanoCam.
+
+---
 
 ## 1. Reglas generales
 
 - Los comandos **no distinguen mayúsculas y minúsculas** (`STA_SSID` = `sta_ssid`)
-- Tras el comando debe ir **cualquier signo de puntuación en inglés** (`,`, `.`, `:`, `;`, etc.) como terminador
+- Tras el comando debe ir **cualquier signo de puntuación en inglés** (`,` `.` `:` `;` etc.) como terminador
 - Algunos comandos provocan un **reinicio automático** tras modificarse
-- Cada comando termina con `\r\n` (las herramientas de puerto serie suelen añadirlo automáticamente)
+- Cada comando termina con `\r\n` (el asistente de puerto serie suele añadirlo automáticamente)
 
 ## 2. Configuración de WiFi
 
@@ -43,6 +43,8 @@ description: "Manual del protocolo serie AT del ESP32-NanoCam: referencia comple
 |---|---|---|---|
 |`wifi_mode:X`|Cambia de modo|0=AP 1=STA 2=AP+STA|`OK` (reinicio al cambiar)|
 
+---
+
 ## 3. Cambio de modo de IA
 
 |Comando|Modo|Descripción|Reinicio|
@@ -58,6 +60,8 @@ description: "Manual del protocolo serie AT del ESP32-NanoCam: referencia comple
 
 > Valores válidos de `ai_mode`: 0-7. Fuera de rango se ajusta a 0 de forma predeterminada. Se reinicia automáticamente tras modificarse y el nuevo modo surte efecto tras el reinicio.
 
+---
+
 ## 4. Consulta de información
 
 |Comando|Descripción|Ejemplo de valor de retorno|
@@ -65,6 +69,8 @@ description: "Manual del protocolo serie AT del ESP32-NanoCam: referencia comple
 |`sta_ip`|Consulta la IP de STA|`sta_ip:192.168.1.100`|
 |`ap_ip`|Consulta la IP del AP|`ap_ip:192.168.4.1`|
 |`wifi_ver`|Consulta la versión del firmware|`NanoCam Board Ver:0.2.0`|
+
+---
 
 ## 5. Control del sistema
 
@@ -89,6 +95,8 @@ description: "Manual del protocolo serie AT del ESP32-NanoCam: referencia comple
   "free_heap": 245760
 }
 ```
+
+---
 
 ## 6. Comandos exclusivos del reconocimiento facial
 
@@ -117,7 +125,9 @@ face_del           # Eliminar el último rostro registrado
 2. En el modo de reconocimiento (`face_rz`) la etiqueta **se muestra de forma continua** y no desaparece a los 0.5 segundos; este es el nuevo comportamiento de la versión 0.3.0
 3. Para salir del modo de reconocimiento hay que enviar `face_detect`; de lo contrario, la etiqueta permanece visible
 4. Las características faciales se almacenan en la partición `fr` del Flash, no se pierden al apagar y admiten hasta 47 ID
-5. El reconocimiento usa una estrategia de omisión de fotogramas (la inferencia MFN se ejecuta cada 10 fotogramas)
+5. El reconocimiento usa una estrategia de salto de fotogramas (la inferencia MFN se ejecuta cada 10 fotogramas)
+
+---
 
 ## 7. Comandos extendidos (exclusivos del NanoCam)
 
@@ -138,7 +148,9 @@ face_del           # Eliminar el último rostro registrado
 |`nano_api_key:KEY`|Establece la clave de la API|`nano_api_key:sk-xxxx`|`OK`|
 
 > Compatible con cualquier API compatible con OpenAI (vLLM / Ollama / modelos locales).
-> El modo ESP-Claw (ai_mode:7) admite el uso de `nano_server`; XiaoZhi AI (ai_mode:6) utiliza una configuración de servidor independiente.
+El modo ESP-Claw (ai_mode:7) admite el uso de `nano_server`; XiaoZhi AI (ai_mode:6) utiliza una configuración de servidor independiente.
+
+---
 
 ## 8. Notas
 

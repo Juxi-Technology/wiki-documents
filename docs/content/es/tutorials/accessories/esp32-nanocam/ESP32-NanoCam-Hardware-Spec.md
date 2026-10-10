@@ -1,16 +1,18 @@
 ---
-title: Especificaciones de hardware del ESP32-NanoCam
+title: Especificaciones de hardware del ESP32-S3 NanoCam
 description: "Especificaciones de hardware del ESP32-NanoCam: arquitectura de doble placa, MCU y pines del Flash, mapeo completo de la cámara DVP."
 ---
 
-# Especificaciones de hardware del ESP32-NanoCam
+# Especificaciones de hardware del ESP32-S3 NanoCam
 
 > **[Comprar en la tienda](https://www.juxitech.com/es/products/esp32-s3-wifi-video-module)**
 
+> Fuente: esquemáticos NanoCamModule.pdf + NanoCamBASE.pdf.
+> Arquitectura: la placa central (ESP32-S3 + cámara + audio) se inserta sobre la placa base (alimentación por USB + grabación por puerto serie).
+
+---
 
 ## 1. Visión general del hardware
-
-Los materiales de hardware de esta sección provienen de los esquemáticos NanoCamModule.pdf + NanoCamBASE.pdf. Arquitectura completa: la placa central (ESP32-S3 + cámara + audio) se inserta sobre la placa base (alimentación USB + flasheo por puerto serie).
 
 ```Plaintext
 ┌─────────────────────────────────────────────────────────┐
@@ -38,6 +40,8 @@ Los materiales de hardware de esta sección provienen de los esquemáticos NanoC
 ```
 
 ![Figura 1: cara frontal de la placa central (ESP32-S3 / cámara / audio)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/1.png)
+
+---
 
 ## 2. MCU y almacenamiento
 
@@ -70,6 +74,8 @@ Los materiales de hardware de esta sección provienen de los esquemáticos NanoC
 |WP|IO34|Protección contra escritura|
 |HOLD|IO33|Retención (Hold)|
 
+---
+
 ## 3. Subsistema de cámara
 
 ### 3.1 Interfaz DVP
@@ -81,8 +87,8 @@ Los materiales de hardware de esta sección provienen de los esquemáticos NanoC
 |Bus de configuración I2C|SDA=IO41, SCL=IO42 (compartido con el I2C externo)|
 |Formato de píxel|RGB565 / JPEG / YUV422, etc.|
 
-![Figura 5: plano de dimensiones del módulo de cámara GC2145 (ángulo de visión de 68°)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/5.png)
 
+![Figura 4: serigrafía de pines en la cara posterior de la placa base](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/4.png)
 ### 3.2 Mapeo completo de pines DVP
 
 |Categoría de señal|Nombre de señal|GPIO ESP32|Nota|
@@ -124,6 +130,8 @@ Camera DVP 信号组:
   SIOC(SCL) = IO42
 ```
 
+---
+
 ## 4. Subsistema de audio
 
 ### 4.1 Arquitectura de audio
@@ -160,6 +168,8 @@ AP2718AT (模拟MEMS麦) → ES8311 Codec (ADC/DAC) → NS4150B (模拟功放) �
 |SCL|IO42|Bus I2C compartido con la cámara|
 |Dirección|**0x30**|Dirección I2C de 8 bits del ES8311|
 
+---
+
 ## 5. Sistema de alimentación
 
 ### 5.1 Cadena de alimentación
@@ -192,9 +202,11 @@ USB-C (5V) ──→ 底板 NCE3401 P-MOSFET 反接保护 ──→ VDD50
 |Protección contra polaridad inversa|**NCE3401** P-MOSFET|Protección de la entrada de alimentación de la placa base|
 |Resistencia de puerta|R11 10KΩ|Puerta del P-MOS a tierra|
 
-## 6. Placa base y flasheo
+---
 
-![Figura 2: serigrafía de pines en la cara posterior de la placa central (RXD/TXD/SCL/SDA/5V/GND, etc.)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/2.png)
+## 6. Placa base y grabación
+
+![Figura 5: plano de dimensiones del módulo de cámara GC2145 (ángulo de visión de 68°)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/5.png)
 
 ### 6.1 USB a serie
 
@@ -204,20 +216,20 @@ USB-C (5V) ──→ 底板 NCE3401 P-MOSFET 反接保护 ──→ VDD50
 |Interfaz USB|USB-C (USB1)|
 |Conexión serie|TXD→U0RXD (IO44), RXD→U0TXD (IO43) (cruzada)|
 |Resistencias de adaptación USB|R4, R5 22R/1% (en serie con D+/D-)|
-|DTR/RTS|Control automático de BOOT + EN para el flasheo con un clic|
+|DTR/RTS|Control automático de BOOT + EN para la grabación con un clic|
 
-![Figura 3: cara frontal de la placa base (USB-C e interfaz de expansión)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/3.png)
 
-### 6.2 Circuito de flasheo automático con un clic
+![Figura 2: serigrafía de pines en la cara posterior de la placa central (RXD/TXD/SCL/SDA/5V/GND, etc.)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/2.png)
+### 6.2 Circuito de grabación automática con un clic
 
-Para el flasheo automático se usan Q1 y Q2 (transistores NPN S8050):
+Para la grabación automática se usan Q1 y Q2 (transistores NPN S8050):
 
 |Señal CH340K|Control|Pin de destino|
 |---|---|---|
 |DTR|→ Q1 →|ESP32 **EN** (CHIP_PU)|
 |RTS|→ Q2 →|ESP32 **BOOT** (IO0)|
 
-> Principio: la herramienta de flasheo USB controla automáticamente la secuencia de BOOT y EN mediante la conmutación de DTR/RTS, sin necesidad de pulsar botones manualmente.
+> Principio: la herramienta de grabación USB controla automáticamente la secuencia de BOOT y EN mediante la conmutación de DTR/RTS, sin necesidad de pulsar botones manualmente.
 
 ### 6.3 Tabla de pines del conector placa central ↔ placa base
 
@@ -237,11 +249,11 @@ Para el flasheo automático se usan Q1 y Q2 (transistores NPN S8050):
 |P2-4|P2-4|**VDD33**|—|Salida de alimentación 3.3V|
 |P2-5|P2-5|**GND**|—|Tierra de alimentación|
 |P2-6|P2-6|**GND**|—|Tierra de alimentación|
-|P2-7|P2-7|**BOOT**|IO0|Modo de arranque/flasheo|
+|P2-7|P2-7|**BOOT**|IO0|Modo de arranque/grabación|
 |P2-8|P2-8|**CHIP_PU**|EN|Control de reset del chip|
 
-![Figura 4: serigrafía de pines en la cara posterior de la placa base](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/4.png)
 
+![Figura 3: cara frontal de la placa base (USB-C e interfaz de expansión)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/3.png)
 ### 6.4 Interfaz de expansión de la placa base
 
 |Interfaz|Señales expuestas|Uso|
@@ -249,13 +261,15 @@ Para el flasheo automático se usan Q1 y Q2 (transistores NPN S8050):
 |P3 (I2C, 4Pin)|5V1, GND, SDA, SCL|Dispositivos I2C externos|
 |P4 (UART, 4Pin)|5V1, GND, ESP_P, ESP_N|Dispositivos USB/serie externos|
 
+---
+
 ## 7. Tabla completa de uso de GPIO
 
 > **Total**: 33 GPIO ocupados; alrededor de 8 GPIO disponibles.
 
 |GPIO|Función|Señal|Nota|
 |---|---|---|---|
-|**IO0**|BOOT|BOOT|Modo de arranque/flasheo (botón S2, pull-up de 10K + antirrebote de 0.1μF)|
+|**IO0**|BOOT|BOOT|Modo de arranque/grabación (botón S2, pull-up de 10K + antirrebote de 0.1μF)|
 |**IO1**|DVP D2|CAM_Y4|Datos de píxel bit2|
 |**IO2**|DVP D1|CAM_Y3|Datos de píxel bit1|
 |**IO3**|DVP D3|CAM_Y5|Datos de píxel bit3|
@@ -305,15 +319,16 @@ Para el flasheo automático se usan Q1 y Q2 (transistores NPN S8050):
 |IO46|IO de propósito general|Expansión|
 
 > ⚠️ GPIO ocupados: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,18,19,20,21,29,30,31,32,33,34,38,39,40,41,42,43,44,47,48
->
-> Cantidad disponible: 8 GPIO
+Cantidad disponible: 8 GPIO
+
+---
 
 ## 8. Restricciones clave de diseño
 
 ### 8.1 Configuración del periférico I2S
 
 - El ESP32-S3 tiene dos controladores I2S:
-    - **I2S0**: asignado al códec ES8311 (MCLK=IO39, BCLK=IO38, WS=IO47, DOUT=IO48, DIN=IO40), I2S Duplex bidireccional, compatible con grabación y reproducción a la vez
+  - **I2S0**: asignado al códec ES8311 (MCLK=IO39, BCLK=IO38, WS=IO47, DOUT=IO48, DIN=IO40), I2S Duplex bidireccional, compatible con grabación y reproducción a la vez
 - Control I2C del ES8311: SDA=IO41, SCL=IO42, dirección del dispositivo 0x30
 
 ### 8.2 Coexistencia de DMA entre DVP e I2S
@@ -333,11 +348,11 @@ Para el flasheo automático se usan Q1 y Q2 (transistores NPN S8050):
 ### 8.4 Capacidad de Flash suficiente
 
 - Los **16MB de Flash** ofrecen espacio de sobra para:
-    - Esquema OTA de doble partición (factory + ota_0 + ota_1)
-    - SPIFFS para el panel de administración web (~1MB)
-    - Paquete de recursos multilingües de XiaoZhi AI (archivos .p3)
-    - Partición de configuración NVS
-    - Espacio reservado para actualizaciones
+  - Esquema OTA de doble partición (factory + ota_0 + ota_1)
+  - SPIFFS para el panel de administración web (~1MB)
+  - Paquete de recursos multilingües de XiaoZhi AI (archivos .p3)
+  - Partición de configuración NVS
+  - Espacio reservado para actualizaciones
 - No hay que preocuparse por el tamaño del firmware; la IA multiagente cabe completa
 
 ### 8.5 Restricciones de los pines de entrada de la cámara DVP
@@ -345,6 +360,8 @@ Para el flasheo automático se usan Q1 y Q2 (transistores NPN S8050):
 - D0-D7 y VSYNC/HREF/PCLK son pines de entrada, controlados por el sensor de la cámara
 - Al desarrollar el controlador hay que asegurarse de que estos pines se configuren únicamente en modo INPUT
 - Los pines de audio I2S (38,39,40,47,48) pueden configurarse en modo salida (compatible con el ESP32-S3)
+
+---
 
 ## 9. Recomendaciones de configuración de ESP-IDF
 

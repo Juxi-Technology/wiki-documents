@@ -7,158 +7,124 @@ description: "In Fusion360 Online-CAD können die genauen Bauteilpositionen visu
 
 > **[Im Shop kaufen](https://www.juxitech.com/de/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
 
+[*Im Fusion360 Online-CAD*](https://a360.co/4k1P8yO)* können Sie die exakten Positionen der Bauteile einsehen.*
 
-[*Fusion360 Online-CAD*](https://a360.co/4k1P8yO)*zeigt die genauen Bauteilpositionen.*
 [URDF-Datei](https://gitcode.com/gh_mirrors/le/LeKiwi/tree/main)
+
 Online-URDF-Vorschau https://urdf.d-robotics.cc/
 
-## 1. Radmodul montieren (3 pro Roboter)
+## 1. Montage der Radmodule (3 pro Roboter)
 
-1. Antriebsmotor mit 12 **M2x6**-Selbstschneidern am Motorbügel befestigen (im Servogehäuse enthalten).
+1. Befestigen Sie den Antriebsmotor mit 12 selbstschneidenden Schrauben **M2x6** am Motorhalter. (Im Lieferumfang der Servobox enthalten.)
 
-![image – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/1.jpg)
+![image – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-01.png)
+![image – 2](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-02.png)
 
-![image – 2](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/2.jpg)
+2. Befestigen Sie die Servos mit 12 Maschinenschrauben **M3x16** und 12 **M3-Muttern** über die Antriebsmotorhalterungen an der Grundplatte.
 
+![image – 3](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-03.jpg)
 
+3. Entfernen Sie die Maschinenschrauben und Muttern von den 82-mm-Omni-Rädern.
 
+![image – 4](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-04.png)
 
+4. Befestigen Sie den Servoarm mit m3\*6-Schrauben am Servo.
 
-2. Motorbügel mit 12 **M3x16-Maschinenschrauben und 12**-Mutter am Bodenblech befestigen.
+![image – 5](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-05.png)
 
-![image – 3](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/3.jpg)
+5. Setzen Sie 4 Sicherungsmuttern in die Kupplung ein. Befestigen Sie zunächst die Kupplung mit 4 m3\*6-Schrauben am Servoarm.
 
+![image – 6](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-06.png)
+![image – 7](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-07.png)
 
+6. Befestigen Sie die 82-mm-Omni-Räder mit m3\*25-Maschinenschrauben und Sicherungsmuttern an der Kupplung.
 
-3. Maschinenschrauben und Muttern des 82-mm-Omnirads entfernen
 
-![image – 4](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/4.jpg)
 
+Sobald alle drei Räder an der Grundplatte montiert sind:
 
+![image – 8](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-08.png)
+![image – 9](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-09.jpg)
 
-4. Den Servohorn mit M3*6-Schrauben am Servo befestigen
+![image – 10](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-10.png)
 
-![image – 5](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/5.jpg)
+## 2. Montage der Grundplatte
 
+1. Setzen Sie 2 M3-Muttern in die Bohrungen der Servotreiberplatine und der Batteriehalterung ein. Befestigen Sie beide mit 4 M3x12-Sechskantschrauben an der Grundplatte.
 
+![image – 11](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-11.png)
+![image – 12](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-12.png)
 
-5. 4 Sicherungsmuttern in die Kupplung einsetzen und die Kupplung mit 4 M3*6-Schrauben am Servohorn befestigen
+2. Befestigen Sie die Servotreiberplatine mit 2 M3\*12-Sechskantschrauben und 2 M3-Muttern und verbinden Sie sie mit den 3 Servos.
 
-![image – 6](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/6.jpg)
+![image – 13](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-13.png)
 
-![image – 7](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/7.jpg)
+Kabelanschlüsse des tragbaren Netzteils
 
+- Der **Stromeingang** wird direkt an das Netzteil angeschlossen
 
+![image – 14](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-14.png)
+![image – 15](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-15.png)
 
+- Die **USB-C**-Schnittstelle versorgt den Raspberry Pi mit 5 V
+- Wenn Sie einen **12-V-Roboterarm** verwenden, versorgen Sie die **Servomotorplatine** direkt über den **DC-Stromverteiler**
 
+![image – 16](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-16.png)
+![image – 17](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-17.png)
 
-6. Das 82-mm-Omnirad mit M3*25-Maschinenschrauben und Sicherungsmuttern an der Kupplung befestigen
+Die Kabel können wie in der folgenden Abbildung gezeigt angeschlossen werden:
 
-Nachdem alle drei Räder am Bodenblech montiert sind:
+![image – 18](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-18.png)
 
-![image – 8](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/8.jpg)
+## 3. Montage der Deckplatte
 
-![image – 9](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/9.jpg)
+1. Legen Sie den Raspberry Pi 5 in den unteren Teil des Raspberry-Pi-Gehäuses und rasten Sie dann den oberen Teil des Gehäuses auf.
 
-![image – 10](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/10.jpg)
+2. Befestigen Sie den Raspberry Pi mit zwei M3x16-Sechskantschrauben und zwei M3-Muttern an der oberen Grundplatte und montieren Sie den Sockel des SO-101-Roboterarms mit vier M4x25-Maschinenschrauben und vier M4-Muttern.
 
-
-
-
-
-
-
-## 2. Bodenblech-Baugruppe
-
-1. M3-Muttern in die Löcher von Servo-Treiberplatine und Batteriehalterung einsetzen. Beide mit 4 M3x12-Maschinenschrauben am Bodenblech befestigen.
-
-![image – 11](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/11.jpg)
-
-![image – 12](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/12.jpg)
-
-
-
-
-
-2. Servo-Treiberplatine mit vier M2.5*6.5-Messingabstandshaltern und vier M2.5*8-Schrauben montieren und mit den 3 Servos verbinden.
-
-
-
-Kabel der Powerbank
-
-- **Stromeingang** direkt an die Stromquelle
-
-
-
-
-
-- **USB-C** versorgt den Raspberry Pi mit 5 V
-- Bei **12-V-Roboterarm** die **DC-Stromverteiler** direkt mit Strom für die **Servo-Motorplatine** versorgen
-
-
-
-
-
-Kabel wie unten abgebildet anschließen:
-
-![image – 13](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/13.jpg)
-
-![image – 14](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/14.jpg)
-
-![image – 15](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/15.jpg)
-
-![image – 16](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/16.jpg)
-
-![image – 17](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/17.jpg)
-
-![image – 18](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/18.jpg)
-
-
-
-## 3. Deckelplatten-Baugruppe
-
-1. Raspberry Pi 5 in die Gehäuseunterschale legen und den Deckel aufsetzen.
-2. Raspberry Pi mit zwei M3x12-Maschinenschrauben und zwei M3-Sicherungsmuttern an der oberen Bodenplatte befestigen und den SO-101-Roboterarm-Sockel mit vier M4x25-Maschinenschrauben und vier M4-Sicherungsmuttern montieren. Es kann unser verbesserter SO-101-Sockel oder der originale verwendet werden – die Bodenplatte hat Bohrungen für beide.
-
-![image – 19](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/19.jpg)
-
-
+![image – 19](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-19.png)
 
 ## 4.
 
-1. USB-C-auf-USB-A-Kabel der Servo-Treiberplatine, 5-V-USB-C-Stromkabel und SO0-101-Servokabel durch die Löcher der oberen Bodenplatte führen.
+1. Führen Sie das USB-C-auf-USB-A-Kabel der Servotreiberplatine, das 5-V-USB-C-Stromkabel und die Servokabel durch die Bohrungen der Deckplatte.
 
-![image – 20](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/20.jpg)
+![image – 20](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-20.png)
 
+2. Befestigen Sie die Deckplatte mit 8 m3x16-Maschinenschrauben und 4 m3-Muttern an den Motorhalterungen.
 
-
-2. Obere Bodenplatte mit 6 M3x12-Maschinenschrauben und 6 M3-Sicherungsmuttern am Motorbügel montieren.
-
-![image – 21](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/21.jpg)
+![image – 21](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-21.png)
 
 
 
-3. Deckelplatte und Bodenplatte mit 6 M3*50-Messingabstandshaltern und 6 M3*-Maschinenschrauben verbinden
+## 5. Montage der Kameras
 
-## 5. Kamera montieren
+*Hinweis: Die von uns entworfene Halterung ist auf die von uns ausgewählte Kamera zugeschnitten. Bei anderen Kameramodulen können Anpassungen erforderlich sein.*
 
-*Hinweis: Unser Bügel ist speziell für die gewählte Kamera konstruiert. Bei anderen Kameramodulen sind ggf. Anpassungen nötig.*
+## (Option 1) Montage der nach vorn gerichteten Kamera
 
-### (Option 1) Frontkamera montieren
+①Befestigen Sie das Kameramodul mit 4 m2\*5\*5-Distanzschrauben
 
-Frontkamerabügel mit 3 M3*12-Maschinenschrauben und drei M3-Muttern am Bodenblech montieren
-Kameramodul mit 4 M2*5*5-Abstandsschrauben befestigen
+②Befestigen Sie die Halterung der nach vorn gerichteten Kamera mit 2 m3\*12-Maschinenschrauben und 2 m3-Muttern an der Grundplatte
 
-### (Option 2) Armkamera montieren
+![image – 22](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-22.webp)
+![image – 23](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-23.webp)
 
-Kameramodul mit 4 M2*5*5-Abstandsschrauben befestigen
+## (Option 2) Montage der am Arm befestigten Kamera
 
-## 6. Strom einschalten
+Befestigen Sie das Kameramodul mit 4 m2\*5\*5-Distanzschrauben
 
-Gleichstrom-Hohlstecker-Adapter in die Servo-Treiberplatine stecken und den 5-V-USB-C-Stecker in den Raspberry Pi 5 – damit ist die Elektronik versorgt. Die USB-Datenkabel von Servo-Treiberplatine und Kamera können direkt in den Raspberry Pi gesteckt werden.
+Diese Halterung unterstützt Kameras mit einem Lochabstand von 24\*25 mm oder 28\*28 mm
 
+![image – 24](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-24.png)
 
-![Option 2 Install an arm-mounted camera – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/22.jpg)
+![image – 25](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-25.png)
 
+## 6. Stromanschluss und Verkabelung
 
+Stecken Sie den DC-Hohlsteckeradapter in die **Servotreiberplatine**;
 
+Stecken Sie den 5-V-USB-C-Stecker in den **Raspberry Pi 5**, um die Elektronik mit Strom zu versorgen;
+
+Die USB-Datenkabel für die Servotreiberplatine und die Kameras können direkt an den Raspberry Pi angeschlossen werden.
+
+![image – 26](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-26.png)

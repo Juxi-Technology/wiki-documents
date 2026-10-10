@@ -11,15 +11,11 @@ description: "Tutoriel ESP32-NanoCam chapitre 7 : décoder en temps réel les co
 
 ## Principe
 
-Utilise la bibliothèque précompilée esp-code-scanner pour décoder en temps réel les codes-barres et QR codes (QR Code / Barcode) présents à l'image. La trame RGB565 fournie par la caméra est transmise directement au scanner, sans conversion en niveaux de gris. Un objet scanner neuf est créé à chaque trame et détruit aussitôt après le scan, ce qui évite l'accumulation d'état interne.
-
-Le résultat du décodage est diffusé simultanément par :
-
-1. **Les journaux du port série**
-
-2. **Le tampon partagé** `g_last_code`, qui conserve le dernier résultat pour la superposition sur le flux HTTP/MJPEG
-
-3. **Le bas de la page web**, où une annotation en texte vert est superposée
+Utilise la bibliothèque précompilée esp-code-scanner pour décoder en temps réel les QR codes (QR Code / Barcode) présents à l'image. La trame RGB565 fournie par la caméra est transmise directement au scanner, sans conversion en niveaux de gris. Un objet scanner neuf est créé à chaque trame et détruit aussitôt après le scan, ce qui évite l'accumulation d'état interne.
+Le résultat du décodage est transmis simultanément via :
+1. Les **journaux du port série**
+2. Le **tampon partagé** `g_last_code`, qui conserve le dernier résultat pour la superposition sur le flux HTTP/MJPEG
+3. Le **bas de la page web**, où une annotation en texte vert est superposée
 
 ## Étapes
 
@@ -31,7 +27,7 @@ ai_mode:5
 
 > Pour la liste complète des commandes, voir le [Manuel du protocole série](./ESP32-NanoCam-Serial-Protocol.md).
 
-### 7.2 Scan
+### 7.2 Scanner
 
 Placez le QR code devant la caméra ; le port série affiche :
 
@@ -39,11 +35,11 @@ Placez le QR code devant la caméra ; le port série affiche :
 I (xxxxx) qrcode: Decoded [QR-Code]: https://example.com
 ```
 
-En parallèle, une annotation en texte vert indiquant le contenu décodé apparaît en bas de la page `http://<IP>/`.
+En parallèle, une annotation en texte vert apparaît en bas de la page `http://<IP>/`, indiquant le contenu décodé.
 
 ### 7.3 Scan continu
 
-Visez le code suivant : le décodage est automatique. Le scanner étant reconstruit à chaque trame, le fonctionnement en continu ne plante pas.
+Visez le code suivant : le décodage est automatique. Le scanner étant reconstruit à chaque trame, le fonctionnement continu ne plante pas.
 
 ## Code
 

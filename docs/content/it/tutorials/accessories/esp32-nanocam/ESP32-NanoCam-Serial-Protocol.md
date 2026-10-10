@@ -1,36 +1,36 @@
 ---
-title: ESP32-NanoCam Manuale del protocollo seriale
+title: Manuale del protocollo seriale AT ESP32-NanoCam
 description: "Manuale del protocollo seriale AT dell'ESP32-NanoCam: riferimento completo dei comandi per configurazione WiFi, cambio della modalità AI."
 ---
 
-# ESP32-NanoCam Manuale del protocollo seriale
+# Manuale del protocollo seriale AT ESP32-NanoCam
 
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/esp32-s3-wifi-video-module)**
 
-
 > Baud rate: 115200 | Bit di dati: 8 | Parità: Nessuna | Bit di stop: 1 | Controllo di flusso: Nessuno
+> Compatibile con l'insieme di comandi AT dei principali moduli fotocamera, con l'aggiunta dei comandi estesi NanoCam.
 
-> Compatibile con il set di comandi AT dei principali moduli fotocamera; aggiunge i comandi estesi NanoCam.
+---
 
 ## 1. Regole generali
 
-- I comandi **non sono sensibili** a maiuscole/minuscole (`STA_SSID` = `sta_ssid`)
-- Dopo il comando va inserito **un segno di punteggiatura qualsiasi** (`,` `.` `:` `;` ecc.) come terminatore
-- Alcuni comandi, una volta modificati, provocano un **riavvio automatico**
-- Ogni comando termina con `\r\n` (gli assistenti seriali lo aggiungono di solito automaticamente)
+- I comandi **non distinguono maiuscole e minuscole** (`STA_SSID` = `sta_ssid`)
+- Dopo il comando è necessario un **qualsiasi segno di punteggiatura ASCII** (`,` `.` `:` `;` ecc.) come carattere di terminazione
+- Alcuni comandi, dopo la modifica, causano un **riavvio automatico**
+- Ogni comando termina con `\r\n` (lo strumento seriale di solito lo aggiunge automaticamente)
 
 ## 2. Configurazione WiFi
 
-### Modalità STA (collegamento al router)
+### Modalità STA (connessione al router)
 
 |Comando|Descrizione|Esempio|Valore restituito|
 |---|---|---|---|
 |`sta_ssid:nome`|Imposta il nome WiFi|`sta_ssid:MyWiFi`|`OK`|
 |`sta_pd:password`|Imposta la password WiFi (riavvio dopo la modifica)|`sta_pd:12345678`|`OK` (riavvio)|
 
-> Il nome e la password WiFi possono contenere al massimo 30 caratteri; i caratteri cinesi non sono supportati.
+> Il nome e la password del WiFi possono contenere al massimo 30 caratteri e non supportano il cinese.
 
-### Modalità AP (hotspot autonomo)
+### Modalità AP (hotspot integrato)
 
 |Comando|Descrizione|Esempio|Valore restituito|
 |---|---|---|---|
@@ -39,24 +39,28 @@ description: "Manuale del protocollo seriale AT dell'ESP32-NanoCam: riferimento 
 
 ### Modalità WiFi
 
-|Comando|Descrizione|Parametro|Valore restituito|
+|Comando|Descrizione|Parametri|Valore restituito|
 |---|---|---|---|
 |`wifi_mode:X`|Cambia modalità|0=AP 1=STA 2=AP+STA|`OK` (riavvio in caso di modifica)|
 
-## 3. Cambio della modalità AI
+---
+
+## 3. Cambio della modalità IA
 
 |Comando|Modalità|Descrizione|Riavvio|
 |---|---|---|---|
-|`ai_mode:0`|Normale|Trasmissione MJPEG, senza AI|✅|
-|`ai_mode:1`|Rilevamento muso del gatto|Riquadro del muso del gatto in tempo reale + confidenza|✅|
-|`ai_mode:2`|Rilevamento volti|Riquadro del volto in tempo reale + coordinate|✅|
-|`ai_mode:3`|Riconoscimento colori|Selezione del colore→rilevamento in tempo reale|✅|
-|`ai_mode:4`|Riconoscimento facciale|Registrazione→identificazione→eliminazione|✅|
-|`ai_mode:5`|Codici QR|Decodifica in tempo reale→output seriale|✅|
-|`ai_mode:6`|Agente LLM|Dialogo vocale XiaoZhi AI + visione AI|✅|
+|`ai_mode:0`|Normale|Trasmissione MJPEG, senza IA|✅|
+|`ai_mode:1`|Rilevamento del muso dei gatti|Riquadro sul muso in tempo reale + confidenza|✅|
+|`ai_mode:2`|Rilevamento volti|Riquadro sul volto in tempo reale + coordinate|✅|
+|`ai_mode:3`|Riconoscimento dei colori|Selezione del colore→rilevamento in tempo reale|✅|
+|`ai_mode:4`|Riconoscimento facciale|Registrazione→riconoscimento→eliminazione|✅|
+|`ai_mode:5`|Codici QR|Decodifica in tempo reale→output sulla porta seriale|✅|
+|`ai_mode:6`|Agente LLM|Dialogo vocale XiaoZhi AI + visione IA|✅|
 |`ai_mode:7`|ESP-Claw|Controllo vocale + analisi visiva con foto + OpenAI Vision|✅|
 
-> Valori validi di `ai_mode`: 0-7. Fuori intervallo il valore predefinito diventa 0. Dopo la modifica il modulo si riavvia automaticamente e la nuova modalità diventa effettiva.
+> Valori validi di `ai_mode`: 0-7. Oltre l'intervallo il valore predefinito diventa 0. Dopo la modifica il riavvio è automatico e la nuova modalità diventa attiva.
+
+---
 
 ## 4. Interrogazione delle informazioni
 
@@ -66,13 +70,15 @@ description: "Manuale del protocollo seriale AT dell'ESP32-NanoCam: riferimento 
 |`ap_ip`|Interroga l'IP AP|`ap_ip:192.168.4.1`|
 |`wifi_ver`|Interroga la versione del firmware|`NanoCam Board Ver:0.2.0`|
 
-## 5. Controllo di sistema
+---
+
+## 5. Controllo del sistema
 
 |Comando|Descrizione|Valore restituito|
 |---|---|---|
 |`wifi_reset`|Ripristino delle impostazioni di fabbrica (riavvio)|`Reset_OK`|
-|`nano_reboot`|Soft reset|`Rebooting...`|
-|`nano_info`|Informazioni complete del dispositivo (JSON)|Vedi sotto|
+|`nano_reboot`|Reset software|`Rebooting...`|
+|`nano_info`|Informazioni complete sul dispositivo (JSON)|Vedi sotto|
 
 ### Esempio di risposta di nano_info
 
@@ -90,16 +96,18 @@ description: "Manuale del protocollo seriale AT dell'ESP32-NanoCam: riferimento 
 }
 ```
 
+---
+
 ## 6. Comandi dedicati al riconoscimento facciale
 
-> Valido solo in ai_mode:4 (modalità riconoscimento facciale).
+> Validi solo con ai_mode:4 (modalità riconoscimento facciale).
 
-|Comando|Descrizione|Comportamento delle etichette|Esempio di risposta|
+|Comando|Descrizione|Comportamento dell'etichetta|Esempio di risposta|
 |---|---|---|---|
-|`face_eril`|Registra il volto rilevato nell'immagine corrente|"Enroll: ID N" blu, lampeggia per 0.5s|`>>> face enroll triggered`|
-|`face_rz`|Entra in modalità riconoscimento facciale continuo|"ID: N" verde / "who?" rosso, **visualizzazione persistente senza scomparire**|`>>> face recognize triggered`|
-|`face_del`|Elimina l'ultimo ID volto registrato|"N IDs left" rosso, lampeggia per 0.5s|`>>> face delete triggered`|
-|`face_detect`|Esce dalla modalità riconoscimento, torna al solo rilevamento volti|Rimuove tutte le etichette|`>>> face detect mode`|
+|`face_eril`|Registra il volto rilevato nell'immagine corrente|Blu "Enroll: ID N", appare per 0.5s|`>>> face enroll triggered`|
+|`face_rz`|Entra in modalità di riconoscimento continuo|Verde "ID: N" / rosso "who?", **visualizzata in modo persistente, non scompare**|`>>> face recognize triggered`|
+|`face_del`|Elimina l'ultimo ID di volto registrato|Rosso "N IDs left", appare per 0.5s|`>>> face delete triggered`|
+|`face_detect`|Esce dalla modalità di riconoscimento e torna al semplice rilevamento volti|Cancella tutte le etichette|`>>> face detect mode`|
 
 ### Flusso operativo del riconoscimento facciale
 
@@ -111,24 +119,26 @@ face_detect        # Esci dalla modalità di riconoscimento — l'etichetta vien
 face_del           # Elimina l'ultimo volto registrato
 ```
 
-### Avvertenze sul riconoscimento facciale
+### Note sul riconoscimento facciale
 
-1. Durante la registrazione assicurarsi che nell'immagine ci sia **un solo volto**, a una distanza di 30-50cm
-2. In modalità riconoscimento (`face_rz`) l'etichetta **rimane visualizzata** e non scompare dopo 0.5 secondi — è il nuovo comportamento della versione 0.3.0
-3. Per uscire dalla modalità riconoscimento è necessario inviare `face_detect`, altrimenti l'etichetta continua a essere visualizzata
-4. I dati biometrici dei volti sono memorizzati nella partizione Flash `fr`, non vanno persi in caso di interruzione dell'alimentazione, per un massimo di 47 ID
-5. Il riconoscimento adotta una strategia a salto di frame (inferenza MFN una volta ogni 10 frame)
+1. Durante la registrazione assicurati che nell'immagine ci sia **un solo volto**, a 30-50cm di distanza
+2. In modalità di riconoscimento (`face_rz`) l'etichetta **resta visualizzata** e non scompare dopo 0.5 secondi — questo è il nuovo comportamento della versione 0.3.0
+3. Per uscire dalla modalità di riconoscimento occorre inviare `face_detect`, altrimenti l'etichetta resta sempre visibile
+4. Le caratteristiche dei volti sono archiviate nella partizione `fr` della Flash, non si perdono in caso di mancanza di alimentazione e sono supportati fino a 47 ID
+5. Il riconoscimento adotta una strategia di salto dei frame (inferenza MFN una volta ogni 10 frame)
 
-## 7. Comandi estesi (esclusivi NanoCam)
+---
+
+## 7. Comandi estesi (esclusivi di NanoCam)
 
 |Comando|Descrizione|Stato|
 |---|---|---|
-|`nano_server:url`|Imposta l'indirizzo del server LLM (salvato in NVS)|✅|
-|`nano_api_key:key`|Imposta la chiave API LLM (salvata in NVS)|✅|
+|`nano_server:url`|Imposta l'indirizzo del server LLM (salvataggio in NVS)|✅|
+|`nano_api_key:key`|Imposta la chiave API del LLM (salvataggio in NVS)|✅|
 |`nano_mqtt:broker,port,topic`|Configura il server MQTT|🔨|
 |`nano_led:R,G,B`|Imposta il LED RGB (WS2812, GPIO18 DIN)|📋|
-|`nano_snap`|Scatta e salva una foto (SPIFFS)|✅|
-|`nano_stream:on/off`|Avvia/ferma la trasmissione video|📋|
+|`nano_snap`|Scatto con salvataggio (SPIFFS)|✅|
+|`nano_stream:on/off`|Avvia/arresta la trasmissione video|📋|
 
 ### nano_server / nano_api_key
 
@@ -138,15 +148,17 @@ face_del           # Elimina l'ultimo volto registrato
 |`nano_api_key:KEY`|Imposta la chiave API|`nano_api_key:sk-xxxx`|`OK`|
 
 > Supporta qualsiasi API compatibile con OpenAI (vLLM / Ollama / modelli locali).
-> La modalità ESP-Claw (ai_mode:7) supporta `nano_server`; XiaoZhi AI (ai_mode:6) utilizza una configurazione server separata.
+La modalità ESP-Claw (ai_mode:7) supporta `nano_server`, mentre XiaoZhi AI (ai_mode:6) utilizza una configurazione server indipendente.
 
-## 8. Avvertenze
+---
 
-1. `sta_pd` / `ap_pd` provocano un riavvio automatico dopo la modifica; al riavvio la nuova password diventa effettiva
-2. `ai_mode` provoca un riavvio automatico dopo la modifica (solo se la modalità cambia)
-3. In modalità riconoscimento facciale (mode 4) la configurazione via seriale Type-C potrebbe non funzionare (memoria insufficiente)
-4. Il nome/la password WiFi non possono superare i 30 caratteri e non possono contenere caratteri cinesi
-5. Dopo il comando è necessario un segno di punteggiatura come terminatore
+## 8. Note
+
+1. `sta_pd` / `ap_pd` causano un riavvio automatico dopo la modifica; dopo il riavvio la nuova password diventa attiva
+2. `ai_mode` causa un riavvio automatico dopo la modifica (solo se la modalità è cambiata)
+3. In modalità riconoscimento facciale (mode 4) la configurazione tramite porta seriale Type-C può non funzionare (memoria insufficiente)
+4. Il nome e la password del WiFi non possono superare i 30 caratteri e non possono contenere caratteri cinesi
+5. Dopo il comando occorre una punteggiatura come carattere di terminazione
 
 ## Prossimi passi
 

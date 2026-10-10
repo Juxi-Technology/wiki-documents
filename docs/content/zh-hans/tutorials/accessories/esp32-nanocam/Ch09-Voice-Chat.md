@@ -1,9 +1,9 @@
 ---
-title: 第 9 章:语音对话
+title: "第 9 章:语音对话 (XiaoZhi AI)"
 description: "ESP32-NanoCam 教程第 9 章:通过小智 AI 框架连接 xiaozhi.me 云服务,体验 ASR→LLM→TTS 全双工语音对话,含自部署服务器与故障排除。"
 ---
 
-# 第 9 章:语音对话
+# 第 9 章:语音对话 (XiaoZhi AI)
 
 > **[ 淘宝店铺 ](https://juxitechnology.taobao.com)**
 
@@ -11,7 +11,7 @@ description: "ESP32-NanoCam 教程第 9 章:通过小智 AI 框架连接 xiaozhi
 
 ## 关于本章
 
-本章涉及 XiaoZhi AI 模式（`ai_mode:6`）。**重要**：模式 6（语音对话）和模式 7（ESP-Claw）**共用同一份固件**（`nanocam_espclaw/`），只是设备启动时根据 NVS 中存储的 `ai_mode` 值加载不同的 MCP 工具集。
+本章涉及 XiaoZhi AI 模式（`ai_mode:6`）。**重要**：模式 6（语音对话）和模式 7（ESP-Claw）**共用同一份固件** (`nanocam_espclaw/`)，只是设备启动时根据 NVS 中存储的 `ai_mode` 值加载不同的 MCP 工具集。
 
 |对比维度|XiaoZhi AI (mode 6)|ESP-Claw (mode 7)|
 |---|---|---|
@@ -21,7 +21,7 @@ description: "ESP32-NanoCam 教程第 9 章:通过小智 AI 框架连接 xiaozhi
 |LED 控制|❌|✅ 语音调色|
 |适用场景|通用 AI 对话、儿童教育|硬件控制、视觉巡检、智能家居|
 
-> 本章聚焦 **XiaoZhi AI（模式 6）**的语音对话核心功能。想了解 ESP-Claw 硬件控制能力，请阅读[第 11 章:ESP-Claw 语音控制](./Ch11-ESP-Claw-Voice-Control.md)。
+> 本章聚焦 **XiaoZhi AI（模式 6）**的语音对话核心功能。想了解 ESP-Claw 硬件控制能力，请阅读 [第11章](./Ch11-ESP-Claw-Voice-Control.md): ESP-Claw 语音控制。
 
 ## 原理
 
@@ -40,13 +40,9 @@ NanoCam 集成了小智 AI 开源框架，通过 WebSocket / MQTT 协议连接 L
 ## 硬件需求
 
 本章涉及音频功能，需要以下硬件：
-
 - NanoCam 核心板（含 ES8311 Codec + AP2718AT 麦克风）
-
 - NanoCam 底板（含 NS4150B 功放 + CH340K）
-
 - 扬声器（接到底板扬声器接口，VON/VOP）
-
 > 仅核心板也可以测试（通过 ES8311 耳机输出监听）。麦克风为 AP2718AT 模拟 MEMS 硅麦，通过 C26 隔直电容接入 ES8311 MIC1P。
 
 ## 步骤
@@ -67,15 +63,10 @@ idf.py -p COMx flash monitor
 ### 9.2 连接 xiaozhi.me 云服务
 
 NanoCam 出厂默认连接 [xiaozhi.me](https://xiaozhi.me) 官方云服务（免费），无需自建服务器。
-
 1. 在 [xiaozhi.me](https://xiaozhi.me) 注册账号
-
 2. 设备上电后自动播报 6 位激活码
-
 3. 在 xiaozhi.me 控制台输入激活码 → 绑定设备
-
 4. 在控制台选择 LLM 模型（Qwen / DeepSeek 等）
-
 激活只需一次，之后每次上电自动连接。
 
 ### 9.3 首次对话
@@ -111,7 +102,6 @@ python app.py
 ```
 
 固件的服务器地址通过 OTA 系统（sdkconfig 中的 `CONFIG_OTA_URL`）下发，设备上电后自动请求服务器地址。
-
 > XiaoZhi AI 使用小智 AI 开源服务端（WebSocket 私有协议 + ASR/LLM/TTS 管线）。ESP-Claw 模式在此基础上，视觉分析功能由服务端在 MCP 握手阶段下发 Vision API URL 和 token，固件无须自行配置。
 
 ## 故障排除
@@ -123,7 +113,6 @@ python app.py
 |无法连接|WiFi 未配置|先用串口配网 `sta_ssid:xxx`|
 |没有激活码|首次启动未完成|等待 30 秒，设备会自动播报|
 |回答很慢|LLM 服务端延迟|xiaozhi.me 选择更快模型，或自建服务器|
-
 > 串口配网等完整指令见[串口协议手册](./ESP32-NanoCam-Serial-Protocol.md)。
 
 下一章:[第 10 章:AI 视觉理解](./Ch10-AI-Vision-Understanding.md)

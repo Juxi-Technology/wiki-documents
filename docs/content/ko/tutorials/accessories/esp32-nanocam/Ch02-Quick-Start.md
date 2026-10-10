@@ -1,9 +1,9 @@
 ---
-title: "2장: 퀵 스타트"
+title: "2장: 빠른 시작"
 description: "NanoCam 튜토리얼 2장: 펌웨어 플래싱과 WiFi 연결 설정을 마친 뒤 브라우저에서 첫 실시간 화면과 HTTP 엔드포인트를 확인합니다."
 ---
 
-# 2장: 퀵 스타트
+# 2장: 빠른 시작
 
 > **[스토어에서 구매](https://www.juxitech.com/ko/products/esp32-s3-wifi-video-module)**
 
@@ -14,15 +14,10 @@ description: "NanoCam 튜토리얼 2장: 펌웨어 플래싱과 WiFi 연결 설�
 ### 단계
 
 1. 압축 폴더 해제 → `nanocam_xxx.bin`
-
 2. [esptool-js](https://espressif.github.io/esptool-js/) 열기
-
 3. Type-C로 NanoCam 연결
-
 4. Connect 클릭 → 시리얼 포트 선택
-
 5. 펌웨어 파일 선택, 주소에 `0x0` 입력
-
 6. START 클릭 → 완료 대기
 
 ### 검증
@@ -53,7 +48,7 @@ sta_pd:WiFi비밀번호
 ### 방법 B: AP 핫스팟 직접 연결
 
 NanoCam 자체 핫스팟: `NanoCam-AP`, 비밀번호 `12345678`
-스마트폰으로 연결한 뒤 브라우저에서 `http://192.168.4.1`을 엽니다
+스마트폰으로 연결한 뒤 브라우저에서 `http://192.168.4.1`
 
 ### 검증
 
@@ -68,11 +63,8 @@ sta_ip
 ## 2.3 첫 화면
 
 > 산출물: **브라우저에서 NanoCam 실시간 화면 확인**
-
 1. 브라우저에 `http://<IP주소>` 입력
-
 2. 실시간 MJPEG 화면 확인
-
 3. 시리얼로 `ai_mode:1` 전송 → 고양이 얼굴 검출로 전환 → 화면에 검출 상자 표시
 
 ### 엔드포인트 설명

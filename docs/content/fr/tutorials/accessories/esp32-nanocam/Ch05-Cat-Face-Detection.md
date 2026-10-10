@@ -11,14 +11,14 @@ description: "Tutoriel ESP32-NanoCam chapitre 5 : utiliser le modèle CatFaceDet
 
 ## Principe
 
-La détection de visage de chat utilise le modèle CatFaceDetectMN03, entraîné et optimisé pour les caractéristiques du visage félin (oreilles triangulaires / écart interoculaire large / museau). En entrée une image 320x240 RGB565, en sortie une liste de boîtes englobantes de visages de chats. Elle partage le même format de sortie `print_detection_result` que la détection de visage du [chapitre 4](./Ch04-Face-Detection.md).
+La détection de visage de chat utilise le modèle CatFaceDetectMN03, entraîné et optimisé pour les caractéristiques du visage félin (oreilles triangulaires / grand écart interoculaire / museau). Entrée : une image 320x240 RGB565 ; sortie : une liste de boîtes englobantes de visages de chats. Elle partage le même format de sortie `print_detection_result` que la détection de visage du chapitre 4.
 
-### Différences entre les modèles de détection de visage de chat et humaine
+### Différences entre les modèles de détection de visage de chat et de visage humain
 
 |Critère|Détection de visage (ai_mode:2)|Détection de visage de chat (ai_mode:1)|
 |---|---|---|
-|Modèle|MSR01 + MNP01 en double cascade|CatFaceDetectMN03 en un seul étage|
-|Points clés|10 (deux yeux / nez / commissures des lèvres)|Aucun (le modèle ne les fournit pas)|
+|Modèle|Double cascade MSR01 + MNP01|CatFaceDetectMN03 à un seul étage|
+|Points clés|10 (deux yeux / bout du nez / commissures des lèvres)|Aucun (non fournis par le modèle)|
 |Seuil de confiance|MSR01=0.3, MNP01=0.4|0.4|
 |Tracé du cadre de détection|Rectangle vert creux + 5 points clés|Rectangle vert creux (sans points clés)|
 
@@ -36,7 +36,7 @@ L'appareil redémarre automatiquement en mode détection de visage de chat
 
 ### 5.2 Observer le résultat
 
-Placez un chat ou une photo de chat devant la caméra ; en ouvrant `http://<IP>` dans le navigateur, un cadre de détection vert s'affiche sur le visage du chat.
+Placez un chat ou une photo de chat devant la caméra ; ouvrez `http://<IP>` dans le navigateur pour voir un cadre de détection vert marquer le visage du chat.
 
 ### 5.3 Sortie du port série
 
@@ -46,15 +46,14 @@ Lorsqu'un visage de chat est détecté, le port série affiche :
 I (xxxxx) detection_result: [ 0]: ( 45,  30, 180, 210)
 ```
 
-- Format : `[index] (x, y, w, h)` — coordonnées du coin supérieur gauche du cadre + largeur et hauteur
-
+- Format : `[index] (x, y, w, h)` — coordonnées du coin supérieur gauche du cadre de visage de chat + largeur et hauteur
 - Le modèle de visage de chat ne fournit pas de points clés (contrairement à la détection de visage humaine)
 
 ## Code
 
 ### Logique de détection principale
 
-`components/modules/ai/who_cat_face_detection.cpp`:
+`components/modules/ai/who_cat_face_detection.cpp` :
 
 ```C++
 CatFaceDetectMN03 detector(0.4F, 0.3F, 10, 0.3F);
@@ -94,7 +93,7 @@ while True:
 
 ## Résultat
 
-Le chat apparaît → un cadre vert est tracé à l'image → les coordonnées sont envoyées sur le port série. Elles peuvent être lues en Arduino/Python pour piloter un servomoteur et suivre le chat.
+Le chat apparaît → l'image est annotée d'un cadre vert → les coordonnées sont envoyées sur le port série. Elles peuvent être lues en Arduino/Python pour piloter un servomoteur et suivre le chat.
 
 Chapitre suivant : [Chapitre 6 : Reconnaissance des couleurs](./Ch06-Color-Recognition.md)
 

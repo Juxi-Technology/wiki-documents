@@ -11,7 +11,7 @@ description: "Capítulo 8 do tutorial ESP32-NanoCam: reconhecimento facial, regi
 
 ## Princípio
 
-Reconhecimento facial = **deteção de rostos** (pipeline de dois estágios MSR01+MNP01) + **extração de características** (rede neural MFN FaceRecognition112V1S8) + **comparação por similaridade de cosseno**.
+O reconhecimento facial = **deteção de rostos** (pipeline de duas fases MSR01+MNP01) + **extração de características** (rede neuronal MFN FaceRecognition112V1S8) + **comparação por similaridade do cosseno**.
 
 ```Plain
 Fotograma RGB565 da câmara
@@ -28,19 +28,17 @@ Fotograma RGB565 da câmara
 
 ### Otimização de desempenho
 
-A extração de características MFN e a comparação com toda a base de dados têm um custo computacional elevado; executá-las em todos os fotogramas tornaria a imagem lenta. A implementação atual adota uma **estratégia de salto de fotogramas**: a deteção de rostos corre em cada fotograma (barata), o reconhecimento MFN corre a cada 10 fotogramas (caro), e a etiqueta usa o último resultado de reconhecimento, mantendo-se sobreposta. Assim a imagem mantém-se fluida e a etiqueta de ID não pisca.
+A extração de características MFN e a comparação com toda a base de dados são computacionalmente exigentes; executá-las em cada fotograma deixaria a imagem lenta. A implementação atual utiliza uma **estratégia de salto de fotogramas**: a deteção de rostos corre em cada fotograma (barata) e o reconhecimento MFN corre uma vez a cada 10 fotogramas (caro); a etiqueta reutiliza o último resultado de reconhecimento para sobreposição contínua. Assim a imagem mantém-se fluida e a etiqueta de ID não pisca.
 
 ### Armazenamento das características faciais
 
-As características faciais registadas (id + embedding de 512 dimensões) são guardadas de forma persistente na partição `fr` da Flash (96 KB, até 47 IDs de faces). Não se perdem ao desligar a alimentação.
+As características faciais registadas (id + embedding de 512 dimensões) são armazenadas de forma persistente na partição `fr` da Flash (96 KB, até 47 IDs de face). Não se perdem com a falta de energia.
 
-## Preparação de hardware
+## Requisitos de hardware
 
-- Placa principal NanoCam + placa base
-
-- Cabo de dados USB-C (para alimentação do computador + porta serial)
-
-- Assistente de porta serial (taxa de baud 115200)
+- Placa de núcleo NanoCam + placa base
+- Cabo de dados USB-C (para alimentação pelo computador + porta série)
+- Assistente de porta série (velocidade de transmissão 115200)
 
 ## Passos
 
@@ -50,7 +48,7 @@ As características faciais registadas (id + embedding de 512 dimensões) são g
 ai_mode:4
 ```
 
-O dispositivo reinicia automaticamente e entra no modo FaceID; o LED RGB WS2812 (GPIO18 DIN, alimentação VDD50) mostra cor roxa. Após o reinício, a porta serial deve apresentar:
+O dispositivo reinicia automaticamente e entra no modo FaceID; o LED RGB WS2812 (GPIO18 DIN, alimentação VDD50) mostra cor roxa. Após o reinício, a porta série deve apresentar:
 
 ```Plain
 I (5526) MFN: fr partition size: 98304 bytes, maxminum 47 IDs can be stored
@@ -61,7 +59,7 @@ I (5526) MFN: No face ID in flash
 
 ### 8.2 Registar uma face
 
-Coloque a face de frente para a câmara (distância 30-50cm, iluminação uniforme) e garanta que na imagem aparece **apenas uma face**. Envie pela porta serial:
+Coloque a face de frente para a câmara (distância 30-50cm, iluminação uniforme) e garanta que na imagem aparece **apenas uma face**. Envie pela porta série:
 
 ```Plain
 face_eril
@@ -74,7 +72,6 @@ I (xxxx) ENROLL: ID 1 is enrolled
 ```
 
 A imagem sobrepõe o texto azul `Enroll: ID 1`, que desaparece após cerca de 0,5 segundos.
-
 > **Atenção**: o comando é `face_eril` (abreviatura de enroll), não `face_enroll`. Se vir `fail: unknown command`, verifique a grafia.
 
 ### 8.3 Reconhecer faces
@@ -86,11 +83,8 @@ face_rz
 ```
 
 O sistema entra em modo de reconhecimento contínuo. A face atual é comparada com todos os IDs registados na Flash:
-
-- **Correspondência bem-sucedida**: a porta serial emite `Similarity: 0.85, Match ID: 1`; a imagem sobrepõe continuamente `ID: 1` em verde
-
-- **Desconhecido**: a porta serial emite `Similarity: 0.32, Match ID: 0`; a imagem sobrepõe continuamente `who?` em vermelho
-
+- **Correspondência bem-sucedida**: a porta série emite `Similarity: 0.85, Match ID: 1`; a imagem sobrepõe continuamente `ID: 1` em verde
+- **Desconhecido**: a porta série emite `Similarity: 0.32, Match ID: 0`; a imagem sobrepõe continuamente `who?` em vermelho
 > A etiqueta **mantém-se visível** e não desaparece. Para sair do modo de reconhecimento, envie `face_detect` para voltar ao modo de deteção simples.
 
 ### 8.4 Eliminar uma face
@@ -99,7 +93,7 @@ O sistema entra em modo de reconhecimento contínuo. A face atual é comparada c
 face_del
 ```
 
-Elimina o último ID de face registado; a porta serial devolve `N IDs left` e a imagem mostra brevemente o número de IDs restantes. As características na Flash são eliminadas em simultâneo.
+Elimina o último ID de face registado; a porta série devolve `N IDs left` e a imagem mostra brevemente o número de IDs restantes. As características na Flash são eliminadas em simultâneo.
 
 ### 8.5 Sair do modo de reconhecimento
 
@@ -108,8 +102,7 @@ face_detect
 ```
 
 Volta ao modo de deteção de rostos simples (apenas desenho da caixa + pontos-chave, sem reconhecimento) e as etiquetas de ID são removidas.
-
-> **Sobre o modo DETECT**: no ESP32-S3, a impressão de coordenadas pela porta serial no modo de deteção de rostos simples está desativada (`#if !CONFIG_IDF_TARGET_ESP32S3`), para evitar que o registo de deteção encha a porta serial. Só depois de entrar no modo de reconhecimento (`face_rz`) é que os registos de coordenadas `detection_result` são emitidos.
+> **Sobre o modo DETECT**: no ESP32-S3, a impressão de coordenadas pela porta série no modo de deteção de rostos simples está desativada (`#if !CONFIG_IDF_TARGET_ESP32S3`), para evitar que o registo de deteção encha a porta série. Só depois de entrar no modo de reconhecimento (`face_rz`) é que os registos de coordenadas `detection_result` são emitidos.
 
 ## Referência rápida de comandos
 
@@ -150,7 +143,7 @@ face_rz                            # Reconhecer novamente
 → Li Si em frente da câmara: "who?" (já eliminado)
 ```
 
-> O modo de reconhecimento facial ocupa bastante memória (modelo MFN + deteção de rostos, dois modelos); a porta serial Type-C (UART0) funciona normalmente. Se a porta serial não responder, verifique primeiro se a taxa de baud é 115200.
+> O modo de reconhecimento facial ocupa bastante memória (modelo MFN + deteção de rostos, dois modelos); a porta série Type-C (UART0) funciona normalmente. Se a porta série não responder, verifique primeiro se a velocidade de transmissão é 115200.
 
 ## Código
 
@@ -189,8 +182,8 @@ case RECOGNIZE:
 
 ## Efeito
 
-Registar faces → reconhecimento contínuo com ID → resultados pela I2C/porta serial → controlar relés/servos, uma solução completa de controlo de acesso.
+Registar faces → reconhecimento contínuo com ID → resultados pela I2C/porta série → controlar relés/servos, uma solução completa de controlo de acesso.
 
-Próximo capítulo: [Capítulo 9: Conversa por voz](./Ch09-Voice-Chat.md)
+Próximo capítulo: [Capítulo 9: Diálogo por voz (XiaoZhi AI)](./Ch09-Voice-Chat.md)
 
 <RelatedProducts slugs="esp32-s3-wifi-module" />

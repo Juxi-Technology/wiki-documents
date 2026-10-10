@@ -1,16 +1,18 @@
 ---
-title: ESP32-NanoCam ハードウェア仕様書
+title: ESP32-S3 NanoCam ハードウェア仕様書
 description: "ESP32-NanoCam のハードウェア仕様書。デュアルボード構成、カメラとオーディオの接続、電源設計、GPIO 使用表、ESP-IDF 設定リファレンスをまとめています。"
 ---
 
-# ESP32-NanoCam ハードウェア仕様書
+# ESP32-S3 NanoCam ハードウェア仕様書
 
 > **[ストアで購入](https://www.juxitech.com/ja/products/esp32-s3-wifi-video-module)**
 
+> 出典: NanoCamModule.pdf + NanoCamBASE.pdf の回路図。
+> アーキテクチャ: コアボード(ESP32-S3 + カメラ + オーディオ)をベースボード(USB 給電 + シリアル書き込み)に接続する構成です。
+
+---
 
 ## 一、ハードウェア概要
-
-本節のハードウェア資料は NanoCamModule.pdf + NanoCamBASE.pdf の回路図に基づきます。全体アーキテクチャ:コアボード(ESP32-S3 + カメラ + オーディオ)をベースボード(USB 給電 + シリアル書き込み)に接続する構成です。
 
 ```Plaintext
 ┌─────────────────────────────────────────────────────────┐
@@ -38,6 +40,8 @@ description: "ESP32-NanoCam のハードウェア仕様書。デュアルボー�
 ```
 
 ![図 1:コアボード表面(ESP32-S3 / カメラ / オーディオ)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/1.png)
+
+---
 
 ## 二、メイン MCU とストレージ
 
@@ -70,6 +74,8 @@ description: "ESP32-NanoCam のハードウェア仕様書。デュアルボー�
 |WP|IO34|書き込み保護|
 |HOLD|IO33|ホールド|
 
+---
+
 ## 三、カメラサブシステム
 
 ### 3.1 DVP インターフェース
@@ -81,8 +87,8 @@ description: "ESP32-NanoCam のハードウェア仕様書。デュアルボー�
 |I2C 設定バス|SDA=IO41, SCL=IO42 (外部 I2C と共用)|
 |ピクセルフォーマット|RGB565 / JPEG / YUV422 など|
 
-![図 5:GC2145 カメラモジュール寸法図(68° 視野角)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/5.png)
 
+![図 4:ベースボード裏面のピンシルク](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/4.png)
 ### 3.2 DVP ピン全マッピング
 
 |信号カテゴリ|信号名|ESP32 GPIO|備考|
@@ -107,7 +113,7 @@ description: "ESP32-NanoCam のハードウェア仕様書。デュアルボー�
 ### 3.3 カメラ信号グループ一覧
 
 ```Plaintext
-Camera DVP 信号组:
+Camera DVP 信号グループ:
   XCLK  = IO9     # Master clock out (24MHz)
   PCLK  = IO6     # Pixel clock in
   VSYNC = IO13    # Vertical sync
@@ -124,12 +130,14 @@ Camera DVP 信号组:
   SIOC(SCL) = IO42
 ```
 
+---
+
 ## 四、オーディオサブシステム
 
 ### 4.1 オーディオアーキテクチャ
 
 ```Plaintext
-AP2718AT (模拟MEMS麦) → ES8311 Codec (ADC/DAC) → NS4150B (模拟功放) → 扬声器
+AP2718AT (アナログMEMSマイク) → ES8311 Codec (ADC/DAC) → NS4150B (アナログアンプ) → スピーカー
                                ↕ I2S (MCLK=39,BCLK=38,WS=47,DOUT=48,DIN=40) + I2C (41/42, addr=0x30)
                             ESP32-S3
 ```
@@ -159,6 +167,8 @@ AP2718AT (模拟MEMS麦) → ES8311 Codec (ADC/DAC) → NS4150B (模拟功放) �
 |SDA|IO41|カメラと I2C バスを共用|
 |SCL|IO42|カメラと I2C バスを共用|
 |アドレス|**0x30**|ES8311 8-bit I2C アドレス|
+
+---
 
 ## 五、電源システム
 
@@ -192,9 +202,11 @@ USB-C (5V) ──→ 底板 NCE3401 P-MOSFET 反接保护 ──→ VDD50
 |逆接続保護|**NCE3401** P-MOSFET|ベースボード電源入力保護|
 |ゲート抵抗|R11 10KΩ|P-MOS ゲート接地|
 
+---
+
 ## 六、ベースボードと書き込み
 
-![図 2:コアボード裏面のピンシルク(RXD/TXD/SCL/SDA/5V/GND など)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/2.png)
+![図 5:GC2145 カメラモジュール寸法図(68° 視野角)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/5.png)
 
 ### 6.1 USB-シリアル変換
 
@@ -206,8 +218,8 @@ USB-C (5V) ──→ 底板 NCE3401 P-MOSFET 反接保护 ──→ VDD50
 |USB 整合抵抗|R4, R5 22R/1% (D+/D- 直列)|
 |DTR/RTS|ワンクリック書き込みで BOOT + EN を自動制御|
 
-![図 3:ベースボード表面(USB-C と拡張インターフェース)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/3.png)
 
+![図 2:コアボード裏面のピンシルク(RXD/TXD/SCL/SDA/5V/GND など)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/2.png)
 ### 6.2 ワンクリックダウンロード回路
 
 Q1、Q2 (S8050 NPN トランジスタ) を使用して自動書き込みを実現します:
@@ -217,7 +229,7 @@ Q1、Q2 (S8050 NPN トランジスタ) を使用して自動書き込みを実�
 |DTR|→ Q1 →|ESP32 **EN** (CHIP_PU)|
 |RTS|→ Q2 →|ESP32 **BOOT** (IO0)|
 
-> 原理:USB 書き込みツールが DTR/RTS のトグルで BOOT と EN のタイミングを自動制御し、手動でのボタン操作が不要になります。
+> 原理: USB 書き込みツールが DTR/RTS のトグルで BOOT と EN のタイミングを自動制御し、手動でのボタン操作が不要になります。
 
 ### 6.3 コアボード↔ベースボード コネクタピン表
 
@@ -240,14 +252,16 @@ Q1、Q2 (S8050 NPN トランジスタ) を使用して自動書き込みを実�
 |P2-7|P2-7|**BOOT**|IO0|ブートモード/書き込み|
 |P2-8|P2-8|**CHIP_PU**|EN|チップリセット制御|
 
-![図 4:ベースボード裏面のピンシルク](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/4.png)
 
+![図 3:ベースボード表面(USB-C と拡張インターフェース)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/3.png)
 ### 6.4 ベースボード拡張インターフェース
 
 |インターフェース|引き出し信号|用途|
 |---|---|---|
 |P3 (I2C, 4Pin)|5V1, GND, SDA, SCL|外部 I2C デバイス|
 |P4 (UART, 4Pin)|5V1, GND, ESP_P, ESP_N|外部 USB/シリアルデバイス|
+
+---
 
 ## 七、完全な GPIO 使用表
 
@@ -271,8 +285,8 @@ Q1、Q2 (S8050 NPN トランジスタ) を使用して自動書き込みを実�
 |**IO13**|DVP VSYNC|CAM_VSYNC|フレーム同期|
 |**IO14**|DVP RESET|CAM_RESET|カメラリセット|
 |**IO18**|WS2812|RGB_LED_DIN|WS2812 RGB LED データ入力|
-|**IO19**|USB 差動|D- (ESP_N)|USB 差動データ負 (D-)|
-|**IO20**|USB 差動|D+ (ESP_P)|USB 差動データ正 (D+)|
+|**IO19**|USB差分|D- (ESP_N)|USB 差動データ負 (D-)|
+|**IO20**|USB差分|D+ (ESP_P)|USB 差動データ正 (D+)|
 |**IO21**|WS2812 DOUT|RGB_LED_DOUT|WS2812 カスケード出力 (未使用時は利用可能)|
 |**IO29**|SPI CS|Flash_CS|外付け Flash チップセレクト|
 |**IO30**|SPI SCLK|Flash_CLK|外付け Flash クロック|
@@ -305,15 +319,16 @@ Q1、Q2 (S8050 NPN トランジスタ) を使用して自動書き込みを実�
 |IO46|汎用 IO|拡張|
 
 > ⚠️ 使用中の GPIO: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,18,19,20,21,29,30,31,32,33,34,38,39,40,41,42,43,44,47,48
->
-> 使用可能数: 8 個の GPIO
+使用可能数: 8 個の GPIO
+
+---
 
 ## 八、主要な設計制約
 
 ### 8.1 I2S ペリフェラル設定
 
 - ESP32-S3 には 2 つの I2S コントローラがあります:
-    - **I2S0**: ES8311 Codec に割り当て済み (MCLK=IO39, BCLK=IO38, WS=IO47, DOUT=IO48, DIN=IO40)、双方向 I2S Duplex で録音と再生を同時にサポート
+  - **I2S0**: ES8311 Codec に割り当て済み (MCLK=IO39, BCLK=IO38, WS=IO47, DOUT=IO48, DIN=IO40)、双方向 I2S Duplex、録音と再生を同時にサポート
 - ES8311 I2C 制御: SDA=IO41, SCL=IO42, デバイスアドレス 0x30
 
 ### 8.2 DVP と I2S DMA の共存
@@ -333,11 +348,11 @@ Q1、Q2 (S8050 NPN トランジスタ) を使用して自動書き込みを実�
 ### 8.4 Flash 容量は十分
 
 - **16MB Flash** は容量に余裕があり、以下をサポートできます:
-    - OTA デュアルパーティション構成 (factory + ota_0 + ota_1)
-    - SPIFFS に Web 管理バックエンドを格納 (~1MB)
-    - 小智 AI 多言語リソースパック (.p3 ファイル)
-    - NVS 設定パーティション
-    - アップグレード用の予備領域
+  - OTA デュアルパーティション構成 (factory + ota_0 + ota_1)
+  - SPIFFS に Web 管理バックエンドを格納 (~1MB)
+  - 小智 AI 多言語リソースパック (.p3 ファイル)
+  - NVS 設定パーティション
+  - アップグレード用の予備領域
 - ファームウェアサイズを心配する必要はなく、マルチ Agent AI も完全に格納できます
 
 ### 8.5 DVP カメラ入力ピンの制約
@@ -345,6 +360,8 @@ Q1、Q2 (S8050 NPN トランジスタ) を使用して自動書き込みを実�
 - D0-D7 および VSYNC/HREF/PCLK はすべて入力ピンで、カメラセンサーが駆動します
 - ドライバ開発時は、これらのピンを INPUT モードのみに設定する必要があります
 - I2S オーディオピン (38,39,40,47,48) は出力モードに設定可能 (ESP32-S3 が対応)
+
+---
 
 ## 九、ESP-IDF 設定の推奨
 

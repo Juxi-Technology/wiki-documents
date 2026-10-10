@@ -28,7 +28,7 @@ Quadro RGB565 da câmera
 
 ### Otimização de desempenho
 
-A extração de características MFN e a comparação com toda a base têm um custo computacional alto; executá-las em todos os quadros deixaria a imagem travada. A implementação atual usa uma **estratégia de salto de quadros**: a detecção de rosto roda em todos os quadros (barata) e o reconhecimento MFN roda uma vez a cada 10 quadros (caro), com o rótulo sobreposto continuamente a partir do último resultado de reconhecimento. Assim a imagem se mantém fluida e o rótulo de ID não pisca.
+A extração de características MFN e a comparação com toda a base têm um custo computacional alto, e executá-las em todos os quadros deixaria a imagem travada. A implementação atual usa uma **estratégia de salto de quadros**: a detecção de rosto roda em todos os quadros (barata) e o reconhecimento MFN roda uma vez a cada 10 quadros (caro), com o rótulo sobreposto continuamente a partir do último resultado de reconhecimento. Assim a imagem se mantém fluida e o rótulo de ID não pisca.
 
 ### Armazenamento das características faciais
 
@@ -37,9 +37,7 @@ As características faciais registradas (id + embedding de 512 dimensões) são 
 ## Preparação de hardware
 
 - Placa principal + placa base do NanoCam
-
 - Cabo USB-C (para alimentação + porta serial do computador)
-
 - Assistente de porta serial (taxa de transmissão 115200)
 
 ## Passos
@@ -50,7 +48,7 @@ As características faciais registradas (id + embedding de 512 dimensões) são 
 ai_mode:4
 ```
 
-O dispositivo reinicia automaticamente e entra no modo FaceID; o LED RGB WS2812 (GPIO18 DIN, alimentado por VDD50) fica roxo. Após o reinício, a porta serial deve exibir:
+O dispositivo reinicia automaticamente e entra no modo FaceID; o LED RGB WS2812 (GPIO18 DIN, alimentação VDD50) fica roxo. Após o reinício, a porta serial deve exibir:
 
 ```Plain
 I (5526) MFN: fr partition size: 98304 bytes, maxminum 47 IDs can be stored
@@ -67,14 +65,13 @@ Posicione o rosto bem de frente para a câmera (distância 30-50cm, iluminação
 face_eril
 ```
 
-Ao detectar o rosto, o dispositivo extrai as características automaticamente e as registra na Flash:
+Ao detectar um rosto, o dispositivo extrai as características automaticamente e as registra na Flash:
 
 ```Plain
 I (xxxx) ENROLL: ID 1 is enrolled
 ```
 
 Um texto azul `Enroll: ID 1` é sobreposto na imagem e desaparece após cerca de 0.5 segundo.
-
 > **Atenção**: o comando é `face_eril` (abreviação de enroll), e não `face_enroll`. Se aparecer `fail: unknown command`, verifique a grafia.
 
 ### 8.3 Reconhecer uma face
@@ -86,11 +83,8 @@ face_rz
 ```
 
 O sistema entra no modo de reconhecimento contínuo. O rosto atual é comparado com todos os IDs registrados na Flash:
-
 - **Correspondência encontrada**: a porta serial exibe `Similarity: 0.85, Match ID: 1`, e a imagem mostra continuamente `ID: 1` em verde
-
 - **Pessoa desconhecida**: a porta serial exibe `Similarity: 0.32, Match ID: 0`, e a imagem mostra continuamente `who?` em vermelho
-
 > O rótulo **permanece visível** e não desaparece. Para sair do modo de reconhecimento, envie `face_detect` para voltar ao modo de detecção pura.
 
 ### 8.4 Excluir uma face
@@ -107,13 +101,12 @@ Exclui o último ID de face registrado; a porta serial retorna `N IDs left`, e a
 face_detect
 ```
 
-Volta ao modo de detecção de rosto pura (apenas caixa + pontos-chave, sem reconhecimento) e os rótulos de ID são removidos.
-
+Volta ao modo de detecção de rosto pura (apenas desenho da caixa + pontos-chave, sem reconhecimento) e os rótulos de ID são removidos.
 > **Sobre o modo DETECT**: no ESP32-S3, a impressão de coordenadas na porta serial no modo de detecção de rosto pura está desabilitada (`#if !CONFIG_IDF_TARGET_ESP32S3`), para evitar que o log de detecção inunde a porta serial. Os logs de coordenadas `detection_result` só são emitidos ao entrar no modo de reconhecimento (`face_rz`).
 
 ## Referência rápida de comandos
 
-|Comando|Função|Comportamento do rótulo|Contínuo?|
+|Comando|Função|Comportamento do rótulo|É contínuo?|
 |---|---|---|---|
 |`face_eril`|Registra a face detectada no momento|Azul "Enroll: ID N"|Pisca por 0.5s|
 |`face_rz`|Entra no modo de reconhecimento contínuo|Verde "ID: N" / vermelho "who?"|✅ Contínuo|
@@ -191,6 +184,6 @@ case RECOGNIZE:
 
 Registre a face → reconhecimento contínuo com o ID exibido → resultado na I2C/porta serial → controle de relés/servos: uma solução completa de controle de acesso.
 
-Próximo capítulo: [Capítulo 9: Conversa por voz](./Ch09-Voice-Chat.md)
+Próximo capítulo: [Capítulo 9: Conversa por voz (XiaoZhi AI)](./Ch09-Voice-Chat.md)
 
 <RelatedProducts slugs="esp32-s3-wifi-module" />

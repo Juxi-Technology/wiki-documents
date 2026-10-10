@@ -1,5 +1,5 @@
 ---
-title: 第 7 章:二维码扫描
+title: "第 7 章:二维码扫描"
 description: "ESP32-NanoCam 教程第 7 章:使用 esp-code-scanner 实时解码二维码/条形码,解码结果同步输出到串口日志与网页画面。"
 ---
 
@@ -12,13 +12,9 @@ description: "ESP32-NanoCam 教程第 7 章:使用 esp-code-scanner 实时解码
 ## 原理
 
 使用 esp-code-scanner 预编译库实时解码画面中的二维码(QR Code / Barcode)。摄像头输出的 RGB565 帧直接传给扫描器,无需灰度转换。每帧创建全新扫描器对象,扫完即销毁,避免内部状态累积。
-
 解码结果同时通过:
-
 1. **串口日志**输出
-
 2. **共享缓冲区** `g_last_code` 保存最新结果,供 HTTP/MJPEG 流叠加显示
-
 3. **网页画面底部**叠加绿色文字标注
 
 ## 步骤

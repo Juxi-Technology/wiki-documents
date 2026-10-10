@@ -12,7 +12,6 @@ description: "Kapitel 10 des ESP32-NanoCam-Tutorials: Im ESP-Claw-Modus ein Foto
 ## Über dieses Kapitel
 
 Das KI-Bildverständnis ist eine exklusive Funktion von **ESP-Claw (Modus 7)** und wird im XiaoZhi AI (Modus 6) nicht verwendet.
-
 > Bei den in diesem Kapitel verwendeten Tools `self.camera.take_photo` und `self.camera.inspect_image` wird die Adresse der visuellen Analyse-API vom Server während des MCP-Handshakes automatisch über das Feld `capabilities.vision` übermittelt. Die Firmware muss die API-URL nicht manuell konfigurieren — das bedeutet, die API-Konfiguration erfolgt in der xiaozhi.me-Konsole oder auf einem selbst gehosteten Server; Details siehe [Kapitel 11: ESP-Claw-Sprachsteuerung](./Ch11-ESP-Claw-Voice-Control.md).
 
 ## Funktionsprinzip
@@ -32,9 +31,9 @@ Nutzer-Sprachbefehl "Schau, was auf dem Tisch ist"
 
 ### Unterschied der beiden Foto-Tools
 
-|Tool|Zweck|Wer ruft die Vision-API auf|
+|Tool|Zweck|Wer sendet die Vision-API|
 |---|---|---|
-|`self.camera.take_photo`|Foto aufnehmen, Beschreibung über die integrierte Vision-Fähigkeit des LLM|Serverseite|
+|`self.camera.take_photo`|Nach dem Foto mit der integrierten Vision-Fähigkeit des LLM beschreiben|Serverseite|
 |`self.camera.inspect_image` (NanoCam-spezifisch)|Nach dem Foto `camera->Explain()` aufrufen → HTTP POST an eine unabhängige multimodale API|Firmware-Seite|
 
 Der Unterschied: `take_photo` nutzt die LLM-Vision der XiaoZhi-Serverseite (allgemeine Implementierung); `inspect_image` ist die projektspezifische Implementierung, bei der die Firmware direkt eine unabhängige multimodale API aufruft (Adresse wird vom Server übermittelt).

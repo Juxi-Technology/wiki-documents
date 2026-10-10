@@ -13,7 +13,13 @@ description: "鉅犀科技機器人配件系列教程首頁——KWS 語音、ES
 
 - [USB 自動對焦攝像頭](./usb-auto-focus-camera.md)
 - [Jetson CSI 攝像頭](./jetson-csi-camera.md)
-- [2 自由度相機雲台](./2dof-camera-gimbal.md)
+- [2 自由度相機雲台](/zh-hant/tutorials/accessories/2dof-camera-gimbal/)
+  - [快速開始指南](/zh-hant/tutorials/accessories/2dof-camera-gimbal/01-Quick-Start-Guide)
+  - [硬體與環境準備](/zh-hant/tutorials/accessories/2dof-camera-gimbal/02-Hardware-and-Environment-Setup)
+  - [基礎使用](/zh-hant/tutorials/accessories/2dof-camera-gimbal/03-Basic-Usage)
+  - [高級功能與追蹤](/zh-hant/tutorials/accessories/2dof-camera-gimbal/04-Advanced-Features-and-Tracking)
+  - [疑難排解](/zh-hant/tutorials/accessories/2dof-camera-gimbal/05-Troubleshooting)
+  - [產品資訊](/zh-hant/tutorials/accessories/2dof-camera-gimbal/Product-Info)
 - [心率血氧傳感器](./heart-rate-spo2.md)
 
 ### KWS語音識別模組
@@ -32,9 +38,11 @@ AI喚醒聲卡，支持離線語音喚醒、自定義喚醒詞和低功耗運行
 
 ESP32-S3 圖傳與 AI 視覺模組，支援 8 種 AI 模式、AP+STA 雙模圖傳與語音交互。
 
+- [ESP32-NanoCam 使用教程](./esp32-nanocam/)
 - [快速開始](./esp32-nanocam/ESP32-NanoCam-Quick-Start.md)
 - [硬體規格書](./esp32-nanocam/ESP32-NanoCam-Hardware-Spec.md)
 - [串口協議手冊](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
+- [程式碼壓縮包](./esp32-nanocam/ESP32-NanoCam-Code-Downloads.md)
 - [AI 視覺教程第 1 章：環境搭建](./esp32-nanocam/Ch01-Environment-Setup.md)
 
 #### AI 視覺教程(11 章)

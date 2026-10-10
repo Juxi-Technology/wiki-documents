@@ -16,9 +16,7 @@ Die Gesichtsdetektion verwendet die ESP-DL-Bibliothek für Deep Learning mit dem
 ### Format der Detektionsergebnisse
 
 - Koordinaten: obere linke Ecke (x,y) + Breite/Höhe (w,h)
-
 - Konfidenz: Gleitkommazahl zwischen 0 und 1
-
 - Bei mehreren Gesichtern werden mehrere Rahmen zurückgegeben
 
 ## Schritte
@@ -45,7 +43,6 @@ I (xxxxx) detection_result:       left eye: ( 90,  80), right eye: (150,  80), n
 ```
 
 - Erste Zeile: `[Nummer] (x, y, w, h)` — Koordinaten des Gesichtsrahmens
-
 - Zweite Zeile: 5 Landmarken — linkes Auge, rechtes Auge, Nase, linker Mundwinkel, rechter Mundwinkel
 
 ## Code

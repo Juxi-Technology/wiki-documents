@@ -42,13 +42,9 @@ El dispositivo se reinicia automáticamente y entra en el modo de detección de 
 ### 6.2 Observar el resultado del reconocimiento
 
 Coloca un objeto de color sólido delante de la cámara y abre `http://<IP>` en el navegador; verás:
-
 - **Cuadros rectangulares de color** que marcan la zona de color detectada
-
 - **Texto de etiqueta de color** (red/yellow/green/blue/purple/white/black)
-
 - El color del cuadro y de la etiqueta coincide con el color detectado real
-
 > El modo de color solo superpone información en la imagen (OSD) y no emite registros por el puerto serie. Para obtener coordenadas, léelas mediante los registros I2C.
 
 ### 6.3 Leer los datos de detección por I2C

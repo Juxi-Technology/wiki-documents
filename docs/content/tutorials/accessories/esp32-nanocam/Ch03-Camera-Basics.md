@@ -16,9 +16,7 @@ The NanoCam connects to the camera through the DVP (Digital Video Port) interfac
 ### Key Concepts
 
 - **DVP**: 8 parallel data lines + 3 synchronization signals (VSYNC/HREF/PCLK)
-
 - **MJPEG**: each frame is an independent JPEG image; the browser loads them continuously to create a video effect
-
 - **PSRAM**: 8MB PSRAM used as the frame buffer, holding 2-4 frames
 
 ## Steps
@@ -29,13 +27,12 @@ After flashing, the firmware is in streaming mode by default; open `http://<IP>`
 
 |Command|Function|
 |---|---|
-|`ai_mode:0\r`|Video transmission module|
-|`ai_mode:1\r`|Cat face detection|
-|`ai_mode:2\r`|Face detection|
-|`ai_mode:3\r`|Color recognition|
-|`ai_mode:4\r`|Face recognition|
-|`ai_mode:5\r`|QR code scanning|
-
+|ai_mode:0\r|Video transmission module|
+|ai_mode:1\r|Cat face detection|
+|ai_mode:2\r|Face detection|
+|ai_mode:3\r|Color recognition|
+|ai_mode:4\r|Face recognition|
+|ai_mode:5\r|QR code scanning|
 > For the complete AI modes and serial commands, see the [Serial Protocol Manual](./ESP32-NanoCam-Serial-Protocol.md).
 
 Next chapter: [Chapter 4: Face Detection](./Ch04-Face-Detection.md)

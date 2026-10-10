@@ -16,9 +16,7 @@ A deteção de rostos utiliza a biblioteca de aprendizagem profunda ESP-DL, com 
 ### Formato do resultado da deteção
 
 - Coordenadas: canto superior esquerdo (x,y) + largura e altura (w,h)
-
 - Confiança: número de vírgula flutuante entre 0 e 1
-
 - Quando há vários rostos, são devolvidas várias caixas
 
 ## Passos
@@ -37,7 +35,7 @@ Abra `http://<IP>` no navegador para ver a caixa de deteção do rosto.
 
 ### 4.3 Obter as coordenadas
 
-Formato da saída na porta serial:
+Formato da saída na porta série:
 
 ```Plain
 I (xxxxx) detection_result: [ 0]: ( 45,  30, 180, 210)
@@ -45,7 +43,6 @@ I (xxxxx) detection_result:       left eye: ( 90,  80), right eye: (150,  80), n
 ```
 
 - Primeira linha: `[número] (x, y, w, h)` — coordenadas da caixa do rosto
-
 - Segunda linha: 5 pontos-chave — olho esquerdo, olho direito, nariz, canto esquerdo da boca, canto direito da boca
 
 ## Código
@@ -76,8 +73,8 @@ if line.startswith("$face:"):
 
 ## Efeito
 
-Aparece um rosto em frente da câmara → a imagem mostra uma caixa verde → as coordenadas são enviadas pela porta serial.
+Aparece um rosto em frente da câmara → a imagem mostra uma caixa verde → as coordenadas são enviadas pela porta série.
 
-Próximo capítulo: [Capítulo 5: Deteção de caras de gato](./Ch05-Cat-Face-Detection.md)
+Próximo capítulo: [Capítulo 5: Deteção de faces de gato](./Ch05-Cat-Face-Detection.md)
 
 <RelatedProducts slugs="esp32-s3-wifi-module" />

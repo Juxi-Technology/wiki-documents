@@ -1,16 +1,18 @@
 ---
-title: ESP32-NanoCam 하드웨어 사양서
+title: ESP32-S3 NanoCam 하드웨어 사양서
 description: "NanoCam 하드웨어 사양서: 듀얼 보드 구조, 카메라·오디오 핀 매핑과 전원 설계, 전체 GPIO 점유표와 ESP-IDF 설정 레퍼런스를 제공합니다."
 ---
 
-# ESP32-NanoCam 하드웨어 사양서
+# ESP32-S3 NanoCam 하드웨어 사양서
 
 > **[스토어에서 구매](https://www.juxitech.com/ko/products/esp32-s3-wifi-video-module)**
 
+> 출처: NanoCamModule.pdf + NanoCamBASE.pdf 회로도.
+> 아키텍처: 코어 보드(ESP32-S3 + 카메라 + 오디오)가 베이스 보드(USB 전원 공급 + 시리얼 플래싱)에 결합됩니다.
+
+---
 
 ## 1. 하드웨어 개요
-
-본 섹션의 하드웨어 자료는 NanoCamModule.pdf + NanoCamBASE.pdf 회로도에서 가져왔습니다. 전체 구조: 코어 보드(ESP32-S3 + 카메라 + 오디오)가 베이스 보드(USB 전원 공급 + 시리얼 플래싱)에 결합됩니다.
 
 ```Plaintext
 ┌─────────────────────────────────────────────────────────┐
@@ -38,6 +40,8 @@ description: "NanoCam 하드웨어 사양서: 듀얼 보드 구조, 카메라·�
 ```
 
 ![그림 1:코어 보드 정면(ESP32-S3 / 카메라 / 오디오)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/1.png)
+
+---
 
 ## 2. 메인 MCU와 저장소
 
@@ -70,6 +74,8 @@ description: "NanoCam 하드웨어 사양서: 듀얼 보드 구조, 카메라·�
 |WP|IO34|쓰기 보호|
 |HOLD|IO33|홀드|
 
+---
+
 ## 3. 카메라 서브시스템
 
 ### 3.1 DVP 인터페이스
@@ -81,8 +87,8 @@ description: "NanoCam 하드웨어 사양서: 듀얼 보드 구조, 카메라·�
 |I2C 구성 버스|SDA=IO41, SCL=IO42 (외부 I2C와 공유)|
 |픽셀 포맷|RGB565 / JPEG / YUV422 등|
 
-![그림 5:GC2145 카메라 모듈 치수도(68° 화각)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/5.png)
 
+![그림 4:베이스 보드 후면 핀 실크스크린](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/4.png)
 ### 3.2 DVP 핀 전체 매핑
 
 |신호 분류|신호명|ESP32 GPIO|비고|
@@ -124,6 +130,8 @@ Camera DVP 信号组:
   SIOC(SCL) = IO42
 ```
 
+---
+
 ## 4. 오디오 서브시스템
 
 ### 4.1 오디오 아키텍처
@@ -160,6 +168,8 @@ AP2718AT (模拟MEMS麦) → ES8311 Codec (ADC/DAC) → NS4150B (模拟功放) �
 |SCL|IO42|카메라와 I2C 버스 공유|
 |주소|**0x30**|ES8311 8-bit I2C 주소|
 
+---
+
 ## 5. 전원 시스템
 
 ### 5.1 전원 공급 체인
@@ -192,9 +202,11 @@ USB-C (5V) ──→ 底板 NCE3401 P-MOSFET 反接保护 ──→ VDD50
 |역접속 보호|**NCE3401** P-MOSFET|베이스 보드 전원 입력 보호|
 |게이트 저항|R11 10KΩ|P-MOS 게이트 접지|
 
+---
+
 ## 6. 베이스 보드와 플래싱
 
-![그림 2:코어 보드 후면 핀 실크스크린(RXD/TXD/SCL/SDA/5V/GND 등)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/2.png)
+![그림 5:GC2145 카메라 모듈 치수도(68° 화각)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/5.png)
 
 ### 6.1 USB-시리얼 변환
 
@@ -206,11 +218,11 @@ USB-C (5V) ──→ 底板 NCE3401 P-MOSFET 反接保护 ──→ VDD50
 |USB 매칭 저항|R4, R5 22R/1% (D+/D- 직렬)|
 |DTR/RTS|원클릭 플래싱 시 BOOT + EN 자동 제어|
 
-![그림 3:베이스 보드 정면(USB-C와 확장 인터페이스)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/3.png)
 
+![그림 2:코어 보드 후면 핀 실크스크린(RXD/TXD/SCL/SDA/5V/GND 등)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/2.png)
 ### 6.2 원클릭 다운로드 회로
 
-Q1, Q2(S8050 NPN 트랜지스터)를 사용해 자동 플래싱을 구현합니다:
+Q1, Q2 (S8050 NPN 트랜지스터)를 사용해 자동 플래싱을 구현합니다:
 
 |CH340K 신호|제어|대상 핀|
 |---|---|---|
@@ -240,8 +252,8 @@ Q1, Q2(S8050 NPN 트랜지스터)를 사용해 자동 플래싱을 구현합니�
 |P2-7|P2-7|**BOOT**|IO0|부팅 모드/플래싱|
 |P2-8|P2-8|**CHIP_PU**|EN|칩 리셋 제어|
 
-![그림 4:베이스 보드 후면 핀 실크스크린](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/4.png)
 
+![그림 3:베이스 보드 정면(USB-C와 확장 인터페이스)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/3.png)
 ### 6.4 베이스 보드 확장 인터페이스
 
 |인터페이스|신호|용도|
@@ -249,9 +261,11 @@ Q1, Q2(S8050 NPN 트랜지스터)를 사용해 자동 플래싱을 구현합니�
 |P3 (I2C, 4Pin)|5V1, GND, SDA, SCL|외부 I2C 기기|
 |P4 (UART, 4Pin)|5V1, GND, ESP_P, ESP_N|외부 USB/시리얼 기기|
 
+---
+
 ## 7. 전체 GPIO 점유표
 
-> **합계**: GPIO 33개가 사용 중이며, 사용 가능한 GPIO는 약 8개입니다.
+> **합계**: 33개의 GPIO가 사용 중이며, 사용 가능한 GPIO는 약 8개입니다.
 
 |GPIO|기능|신호|비고|
 |---|---|---|---|
@@ -305,15 +319,16 @@ Q1, Q2(S8050 NPN 트랜지스터)를 사용해 자동 플래싱을 구현합니�
 |IO46|범용 IO|확장|
 
 > ⚠️ 사용 중인 GPIO: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,18,19,20,21,29,30,31,32,33,34,38,39,40,41,42,43,44,47,48
->
-> 사용 가능 수량: GPIO 8개
+사용 가능 수량: 8개 GPIO
+
+---
 
 ## 8. 핵심 설계 제약 조건
 
 ### 8.1 I2S 주변장치 구성
 
 - ESP32-S3에는 두 개의 I2S 컨트롤러가 있습니다:
-    - **I2S0**: ES8311 Codec에 할당됨(MCLK=IO39, BCLK=IO38, WS=IO47, DOUT=IO48, DIN=IO40), 양방향 I2S Duplex, 녹음과 재생 동시 지원
+  - **I2S0**: ES8311 Codec에 할당됨(MCLK=IO39, BCLK=IO38, WS=IO47, DOUT=IO48, DIN=IO40), 양방향 I2S Duplex, 녹음과 재생을 동시에 지원
 - ES8311 I2C 제어: SDA=IO41, SCL=IO42, 소자 주소 0x30
 
 ### 8.2 DVP와 I2S DMA 공존
@@ -328,16 +343,16 @@ Q1, Q2(S8050 NPN 트랜지스터)를 사용해 자동 플래싱을 구현합니�
 - IO41(SDA) + IO42(SCL)은 카메라와 외부 I2C 인터페이스에 동시에 연결됩니다
 - I2C 풀업 저항: R12 (SDA, 4.7K/1%), R13 (SCL, 4.7K/1%), VDD33으로 풀업
 - 카메라 I2C 주소가 외부 기기와 충돌하지 않도록 해야 합니다
-- OV2640 기본 I2C 주소: 0x60 (쓰기) / 0x61 (읽기) — ES8311(0x30)과 충돌하지 않습니다
+- OV2640 기본 I2C 주소: 0x60 (쓰기) / 0x61 (읽기) — ES8311 (0x30)과 충돌하지 않습니다
 
 ### 8.4 Flash 용량 충분
 
 - **16MB Flash**는 공간이 충분하여 다음을 지원할 수 있습니다:
-    - OTA 이중 파티션 방식 (factory + ota_0 + ota_1)
-    - SPIFFS에 웹 관리 백엔드 저장 (~1MB)
-    - XiaoZhi AI 다국어 리소스 패키지 (.p3 파일)
-    - NVS 구성 파티션
-    - 업그레이드 여유 공간 확보
+  - OTA 이중 파티션 방식 (factory + ota_0 + ota_1)
+  - SPIFFS에 웹 관리자 페이지 저장 (~1MB)
+  - 샤오즈 AI 다국어 리소스 패키지 (.p3 파일)
+  - NVS 구성 파티션
+  - 업그레이드 여유 공간 확보
 - 펌웨어 크기를 걱정할 필요 없이 다중 Agent AI를 완전히 포함할 수 있습니다
 
 ### 8.5 DVP 카메라 입력 핀 제약
@@ -345,6 +360,8 @@ Q1, Q2(S8050 NPN 트랜지스터)를 사용해 자동 플래싱을 구현합니�
 - D0-D7 및 VSYNC/HREF/PCLK는 모두 입력 핀으로 카메라 센서가 구동합니다
 - 드라이버 개발 시 이 핀들을 반드시 INPUT 모드로만 구성해야 합니다
 - I2S 오디오 핀(38,39,40,47,48)은 출력 모드로 구성할 수 있습니다(ESP32-S3 지원)
+
+---
 
 ## 9. ESP-IDF 구성 권장 사항
 

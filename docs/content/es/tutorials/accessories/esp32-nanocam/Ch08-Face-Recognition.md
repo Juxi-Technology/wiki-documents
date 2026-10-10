@@ -37,9 +37,7 @@ Las características faciales registradas (id + embedding de 512 dimensiones) se
 ## Preparación de hardware
 
 - Placa central de NanoCam + placa base
-
 - Cable de datos USB-C (para alimentación + puerto serie conectado al ordenador)
-
 - Asistente de puerto serie (velocidad 115200)
 
 ## Pasos
@@ -74,7 +72,6 @@ I (xxxx) ENROLL: ID 1 is enrolled
 ```
 
 Sobre la imagen se superpone el texto azul `Enroll: ID 1`, que desaparece tras unos 0.5 segundos.
-
 > **Atención**: el comando es `face_eril` (abreviatura de enroll), no `face_enroll`. Si ves `fail: unknown command`, revisa la ortografía.
 
 ### 8.3 Identificar rostros
@@ -86,11 +83,8 @@ face_rz
 ```
 
 El sistema entra en el modo de reconocimiento continuo. El rostro actual se compara con todos los ID registrados en la Flash:
-
 - **Coincidencia**: el puerto serie emite `Similarity: 0.85, Match ID: 1` y sobre la imagen se superpone de forma continua `ID: 1` en verde
-
 - **Persona desconocida**: el puerto serie emite `Similarity: 0.32, Match ID: 0` y sobre la imagen se superpone de forma continua `who?` en rojo
-
 > La etiqueta **se muestra de forma continua** y no desaparece. Para salir del modo de reconocimiento, envía `face_detect` para volver al modo de detección pura.
 
 ### 8.4 Eliminar un rostro
@@ -108,8 +102,7 @@ face_detect
 ```
 
 Vuelve al modo de detección de rostros puro (solo dibuja el cuadro + los puntos clave, sin reconocer) y se borran las etiquetas de ID.
-
-> **Sobre el modo DETECT**: en el ESP32-S3, la impresión de coordenadas por puerto serie del modo de detección de rostros pura está deshabilitada (`#if !CONFIG_IDF_TARGET_ESP32S3`); así se evita que el puerto serie se sature con los registros de detección. Solo al entrar en el modo de reconocimiento (`face_rz`) se emiten los registros de coordenadas `detection_result`.
+> **Sobre el modo DETECT**: en el ESP32-S3, la impresión de coordenadas por puerto serie del modo de detección de rostros puro está deshabilitada (`#if !CONFIG_IDF_TARGET_ESP32S3`); así se evita que el puerto serie se sature con los registros de detección. Solo al entrar en el modo de reconocimiento (`face_rz`) se emiten los registros de coordenadas `detection_result`.
 
 ## Referencia rápida de comandos
 
@@ -191,6 +184,6 @@ case RECOGNIZE:
 
 Registrar rostros → reconocimiento continuo que muestra el ID → salida de resultados por I2C/puerto serie → control de relés/servos: solución completa de control de acceso.
 
-Capítulo siguiente: [Capítulo 9: Conversación de voz](./Ch09-Voice-Chat.md)
+Capítulo siguiente: [Capítulo 9: Conversación de voz (XiaoZhi AI)](./Ch09-Voice-Chat.md)
 
 <RelatedProducts slugs="esp32-s3-wifi-module" />

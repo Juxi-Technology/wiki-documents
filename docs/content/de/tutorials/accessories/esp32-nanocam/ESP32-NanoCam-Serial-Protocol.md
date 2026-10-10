@@ -7,10 +7,10 @@ description: "ESP32-NanoCam Handbuch zum seriellen AT-Protokoll: vollständige B
 
 > **[Im Shop kaufen](https://www.juxitech.com/de/products/esp32-s3-wifi-video-module)**
 
-
 > Baudrate: 115200 | Datenbits: 8 | Parität: keine | Stoppbits: 1 | Flusskontrolle: keine
-
 > Kompatibel mit dem AT-Befehlssatz gängiger Kameramodule; zusätzlich NanoCam-Erweiterungsbefehle.
+
+---
 
 ## 1. Allgemeine Regeln
 
@@ -43,12 +43,14 @@ description: "ESP32-NanoCam Handbuch zum seriellen AT-Protokoll: vollständige B
 |---|---|---|---|
 |`wifi_mode:X`|Modus wechseln|0=AP 1=STA 2=AP+STA|`OK` (Neustart bei Änderung)|
 
+---
+
 ## 3. KI-Moduswechsel
 
 |Befehl|Modus|Beschreibung|Neustart|
 |---|---|---|---|
 |`ai_mode:0`|Normal|MJPEG-Videoübertragung, ohne KI|✅|
-|`ai_mode:1`|Katzengesicht-Erkennung|Echtzeit-Rahmen um Katzengesicht + Konfidenz|✅|
+|`ai_mode:1`|Katzengesichtsdetektion|Echtzeit-Rahmen um Katzengesicht + Konfidenz|✅|
 |`ai_mode:2`|Gesichtsdetektion|Echtzeit-Rahmen um Gesicht + Koordinaten|✅|
 |`ai_mode:3`|Farberkennung|Auswahl einrahmen→Echtzeiterkennung|✅|
 |`ai_mode:4`|Gesichtserkennung|Registrieren→Identifizieren→Löschen|✅|
@@ -58,6 +60,8 @@ description: "ESP32-NanoCam Handbuch zum seriellen AT-Protokoll: vollständige B
 
 > Gültige Werte für `ai_mode`: 0-7. Außerhalb des Bereichs wird standardmäßig auf 0 gesetzt. Nach der Änderung erfolgt ein automatischer Neustart; danach ist der neue Modus aktiv.
 
+---
+
 ## 4. Abfragen
 
 |Befehl|Beschreibung|Rückgabebeispiel|
@@ -65,6 +69,8 @@ description: "ESP32-NanoCam Handbuch zum seriellen AT-Protokoll: vollständige B
 |`sta_ip`|STA-IP abfragen|`sta_ip:192.168.1.100`|
 |`ap_ip`|AP-IP abfragen|`ap_ip:192.168.4.1`|
 |`wifi_ver`|Firmware-Version abfragen|`NanoCam Board Ver:0.2.0`|
+
+---
 
 ## 5. Systemsteuerung
 
@@ -90,6 +96,8 @@ description: "ESP32-NanoCam Handbuch zum seriellen AT-Protokoll: vollständige B
 }
 ```
 
+---
+
 ## 6. Gesichtserkennungs-Befehle
 
 > Nur im Modus ai_mode:4 (Gesichtserkennung) gültig.
@@ -114,10 +122,12 @@ face_del           # Zuletzt registriertes Gesicht löschen
 ### Hinweise zur Gesichtserkennung
 
 1. Bei der Registrierung darf sich **nur ein Gesicht** im Bild befinden, Abstand 30-50cm
-2. Im Erkennungsmodus (`face_rz`) **bleiben die Labels dauerhaft sichtbar** und verschwinden nicht nach 0.5 Sekunden — neues Verhalten ab 0.3.0
+2. Im Erkennungsmodus (`face_rz`) bleiben die Labels **dauerhaft sichtbar** und verschwinden nicht nach 0.5 Sekunden — neues Verhalten ab 0.3.0
 3. Zum Verlassen des Erkennungsmodus muss `face_detect` gesendet werden; andernfalls bleiben die Labels dauerhaft sichtbar
 4. Gesichtsmerkmale werden in der Flash-Partition `fr` gespeichert, bleiben bei Stromausfall erhalten, maximal 47 IDs
 5. Die Erkennung nutzt eine Frame-Skipping-Strategie (MFN-Inferenz einmal alle 10 Frames)
+
+---
 
 ## 7. Erweiterungsbefehle (NanoCam-exklusiv)
 
@@ -138,7 +148,9 @@ face_del           # Zuletzt registriertes Gesicht löschen
 |`nano_api_key:KEY`|API-Schlüssel festlegen|`nano_api_key:sk-xxxx`|`OK`|
 
 > Unterstützt beliebige OpenAI-kompatible APIs (vLLM / Ollama / lokale Modelle).
-> Der ESP-Claw-Modus (ai_mode:7) unterstützt `nano_server`; XiaoZhi AI (ai_mode:6) verwendet eine eigene Serverkonfiguration.
+Der ESP-Claw-Modus (ai_mode:7) unterstützt `nano_server`; XiaoZhi AI (ai_mode:6) verwendet eine eigene Serverkonfiguration.
+
+---
 
 ## 8. Hinweise
 

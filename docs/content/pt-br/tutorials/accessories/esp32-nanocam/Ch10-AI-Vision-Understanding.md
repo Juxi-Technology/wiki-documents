@@ -12,7 +12,6 @@ description: "Capítulo 10 do tutorial do ESP32-NanoCam: tire fotos no modo ESP-
 ## Sobre este capítulo
 
 A compreensão visual por IA é uma função exclusiva do **ESP-Claw (modo 7)** e não é usada no XiaoZhi AI (modo 6).
-
 > Para as ferramentas `self.camera.take_photo` e `self.camera.inspect_image` usadas neste capítulo, o endereço da API de análise visual é entregue automaticamente pelo servidor durante o handshake MCP, pelo campo `capabilities.vision`. O firmware não precisa configurar a URL da API manualmente — isso significa que a configuração da API é feita no console do xiaozhi.me ou no servidor auto-hospedado; para detalhes, consulte o [Capítulo 11: Controle por voz do ESP-Claw](./Ch11-ESP-Claw-Voice-Control.md).
 
 ## Princípio
@@ -69,10 +68,10 @@ O NanoCam tira a foto, faz o upload, analisa e responde o resultado por voz.
 
 |Entrada de voz|Exemplo de resposta da IA|
 |---|---|
-|"这是什么" (o que é isto)|"É um notebook preto; ao lado há uma caneca branca de café"|
-|"有苹果吗" (tem maçãs?)|"Não vejo maçãs. Há dois livros e uma caneta na mesa"|
-|"什么颜色" (de que cor é?)|"O que você está apontando é uma caneca vermelha"|
-|"几个杯子" (quantas canecas?)|"Há 2 canecas na imagem"|
+|"O que é isto"|"É um notebook preto; ao lado há uma caneca branca de café"|
+|"Tem maçãs?"|"Não vejo maçãs. Há dois livros e uma caneta na mesa"|
+|"De que cor é?"|"O que você está apontando é uma caneca vermelha"|
+|"Quantas canecas?"|"Há 2 canecas na imagem"|
 
 ## Código
 
@@ -133,7 +132,7 @@ Ao entregar diferentes valores de `vision.url` pelo servidor, é possível usar 
 
 ## Resultado
 
-"看看这里有什么" (veja o que tem aqui) → foto enviada → análise da IA → resposta por voz "I see a red cup on a wooden table" — olhos de IA de verdade.
+"Veja o que tem aqui" → foto enviada → análise da IA → resposta por voz "I see a red cup on a wooden table" — olhos de IA de verdade.
 
 Próximo capítulo: [Capítulo 11: Controle por voz do ESP-Claw](./Ch11-ESP-Claw-Voice-Control.md)
 

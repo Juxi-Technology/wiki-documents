@@ -1,5 +1,5 @@
 ---
-title: 第 11 章:ESP-Claw 音声制御
+title: "第 11 章:ESP-Claw 音声制御"
 description: "ESP32-NanoCam チュートリアル第 11 章。ESP-Claw モードの 5 つの専用ツールで、音声による LED 制御や AI モード切替、撮影分析の方法を解説します。"
 ---
 
@@ -11,7 +11,7 @@ description: "ESP32-NanoCam チュートリアル第 11 章。ESP-Claw モード
 
 ## 本章について
 
-デバイスを `ai_mode:7` に切り替えると、NanoCam は ESP-Claw モードに入ります。XiaoZhi AI(`ai_mode:6`)と**同じ 1 つのファームウェア**(`nanocam_espclaw/`)を共用し、違いは ESP-Claw モードが音声対話に加えて 5 つのハードウェア制御ツールを追加登録する点だけです。
+デバイスを `ai_mode:7` に切り替えると、NanoCam は ESP-Claw モードに入ります。XiaoZhi AI(`ai_mode:6`)と**同じファームウェア**(`nanocam_espclaw/`)を共用し、違いは ESP-Claw モードが音声対話に加えて 5 つのハードウェア制御ツールを追加登録する点だけです。
 
 |比較項目|XiaoZhi AI (mode 6)|ESP-Claw (mode 7)|
 |---|---|---|
@@ -71,7 +71,6 @@ ai_mode:7
 ### 11.4 撮影 + AI 視覚分析
 
 ユーザーが「〜を見て」と話すと、ファームウェアは VGA RGB565 画像を 1 フレーム取得し、JPEG に圧縮して、サーバー側で設定されたマルチモーダル API に送信して分析し、結果を TTS 音声で読み上げます。
-
 > マルチモーダル API の URL と token は、接続ハンドシェイク段階でサーバーから自動配信されるため、シリアルで手動入力する設定コマンドは不要です。
 
 ## 5 つの NanoCam 専用ツール

@@ -47,7 +47,6 @@ I (xxxxx) detection_result: [ 0]: ( 45,  30, 180, 210)
 ```
 
 - Format: `[Nummer] (x, y, w, h)` — Koordinaten der oberen linken Ecke des Katzengesichtsrahmens + Breite/Höhe
-
 - Das Katzenmodell gibt keine Landmarken aus (anders als die Gesichtsdetektion)
 
 ## Code

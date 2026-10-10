@@ -176,6 +176,7 @@ Fully open-source mobile robot cart, compatible with LeRobot imitation learning 
 
 - [Lekiwi Tutorial](./lekiwi/Lekiwi-Tutorial.md)
 - [Lekiwi Assembly Guide](./lekiwi/Lekiwi-Assembly.md)
+- [Product Information](./lekiwi/Lekiwi-Product-Info.md)
 
 ### SO-ARM101 + AmazingHand Course
 

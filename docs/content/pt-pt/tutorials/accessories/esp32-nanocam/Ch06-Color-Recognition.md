@@ -42,14 +42,10 @@ O dispositivo reinicia automaticamente e entra no modo de deteção de cor; o LE
 ### 6.2 Observar o resultado do reconhecimento
 
 Coloque um objeto de cor sólida em frente da câmara e abra `http://<IP>` no navegador; irá ver:
-
 - **Retângulo colorido** a marcar a região da cor detetada
-
 - **Texto da etiqueta de cor** (red/yellow/green/blue/purple/white/black)
-
 - A cor da caixa e da etiqueta corresponde à cor realmente detetada
-
-> O modo de cor apenas faz sobreposição na imagem (OSD), sem saída de registos pela porta serial. Para obter as coordenadas, leia através dos registos I2C.
+> O modo de cor apenas faz sobreposição na imagem (OSD), sem saída de registos pela porta série. Para obter as coordenadas, leia através dos registos I2C.
 
 ### 6.3 Ler os dados de deteção por I2C
 

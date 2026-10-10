@@ -42,13 +42,9 @@ Das Gerät startet automatisch neu in den Farberkennungsmodus; die WS2812-RGB-LE
 ### 6.2 Erkennungsergebnisse beobachten
 
 Legen Sie ein einfarbiges Objekt vor die Kamera; im Browser unter `http://<IP>` erscheint:
-
 - **Farbiger rechteckiger Rahmen** markiert den erkannten Farbbereich
-
 - **Farbetikett-Text** (red/yellow/green/blue/purple/white/black)
-
 - Rahmen- und Etikettfarbe entsprechen der tatsächlich erkannten Farbe
-
 > Der Farbmodus führt nur eine Bildüberlagerung (OSD) durch und gibt keine seriellen Logs aus. Koordinaten müssen über die I2C-Register gelesen werden.
 
 ### 6.3 Detektionsdaten über I2C lesen

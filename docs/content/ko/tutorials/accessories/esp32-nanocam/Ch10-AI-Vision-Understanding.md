@@ -12,7 +12,6 @@ description: "NanoCam 튜토리얼 10장: ESP-Claw 모드에서 사진을 촬영
 ## 이번 장 안내
 
 AI 비전 이해는 **ESP-Claw(모드 7)**의 전용 기능이며, XiaoZhi AI(모드 6)에서는 사용되지 않습니다.
-
 > 이번 장에서 사용하는 `self.camera.take_photo`와 `self.camera.inspect_image` 도구의 시각 분석 API 주소는 MCP 핸드셰이크 단계에서 서버가 `capabilities.vision` 필드를 통해 자동으로 전달합니다. 펌웨어 측에서 API URL을 수동으로 구성할 필요가 없습니다 —— 즉, API 구성은 xiaozhi.me 콘솔 또는 자체 구축 서버에서 완료되며, 자세한 내용은 [11장: ESP-Claw 음성 제어](./Ch11-ESP-Claw-Voice-Control.md)를 참고하세요.
 
 ## 원리
@@ -133,7 +132,7 @@ std::string Esp32Camera::Explain(const std::string &question) {
 
 ## 결과
 
-"여기 뭐가 있는지 봐줘" → 사진 촬영 업로드 → AI 분석 → 음성 안내 "I see a red cup on a wooden table" —— 진정한 AI의 눈.
+"여기 뭐가 있는지 봐줘" → 사진 촬영 후 업로드 → AI 분석 → 음성 안내 "I see a red cup on a wooden table" —— 진정한 AI의 눈.
 
 다음 장: [11장: ESP-Claw 음성 제어](./Ch11-ESP-Claw-Voice-Control.md)
 

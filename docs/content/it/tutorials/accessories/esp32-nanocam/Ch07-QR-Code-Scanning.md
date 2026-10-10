@@ -1,27 +1,23 @@
 ---
-title: "Capitolo 7: Scansione dei codici QR"
+title: "Capitolo 7: Scansione codici QR"
 description: "Tutorial ESP32-NanoCam capitolo 7: decodificare in tempo reale codici QR e codici a barre con esp-code-scanner."
 ---
 
-# Capitolo 7: Scansione dei codici QR
+# Capitolo 7: Scansione codici QR
 
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/esp32-s3-wifi-video-module)**
 
 **Obiettivo del capitolo**: far scansionare a NanoCam codici QR e codici a barre, inviando il risultato della decodifica alla seriale e all'immagine della pagina web.
 
-## Come funziona
+## Funzionamento
 
-Usa la libreria precompilata esp-code-scanner per decodificare in tempo reale i codici QR (QR Code / Barcode) presenti nell'immagine. Il frame RGB565 emesso dalla fotocamera viene passato direttamente allo scanner, senza conversione in scala di grigi. A ogni frame viene creato un nuovo oggetto scanner, distrutto subito dopo la scansione, per evitare l'accumulo di stato interno.
-
+Utilizza la libreria precompilata esp-code-scanner per decodificare in tempo reale i codici presenti nell'immagine (QR Code / Barcode). I frame RGB565 emessi dalla fotocamera vengono passati direttamente allo scanner, senza conversione in scala di grigi. A ogni frame viene creato un nuovo oggetto scanner, distrutto subito dopo la scansione, per evitare l'accumulo di stato interno.
 Il risultato della decodifica viene fornito contemporaneamente tramite:
+1. Il **log della porta seriale**
+2. Il **buffer condiviso** `g_last_code`, che memorizza il risultato più recente per la sovrapposizione sullo stream HTTP/MJPEG
+3. Una **sovrapposizione di testo verde in basso nella pagina Web**
 
-1. **Log seriale**
-
-2. **Buffer condiviso** `g_last_code` che salva l'ultimo risultato, per la sovrapposizione nello stream HTTP/MJPEG
-
-3. **Testo verde sovrapposto in fondo all'immagine della pagina web**
-
-## Passaggi
+## Procedura
 
 ### 7.1 Cambiare modalità
 
@@ -31,19 +27,19 @@ ai_mode:5
 
 > Per tutti i comandi vedi il [manuale del protocollo seriale](./ESP32-NanoCam-Serial-Protocol.md).
 
-### 7.2 Scansione
+### 7.2 Scansione di un codice
 
-Mettere il codice QR davanti alla fotocamera; la seriale emette:
+Metti il codice QR davanti alla fotocamera; la porta seriale emette:
 
 ```Plain
 I (xxxxx) qrcode: Decoded [QR-Code]: https://example.com
 ```
 
-Contemporaneamente, in fondo alla pagina `http://<IP>/` compare il testo verde con il contenuto decodificato.
+Contemporaneamente, in basso nella pagina `http://<IP>/` compare un'annotazione di testo verde con il contenuto decodificato.
 
-### 7.3 Scansione continua
+### 7.3 Scansioni consecutive
 
-Puntare al codice successivo: la decodifica avviene automaticamente; lo scanner viene ricreato a ogni frame e può lavorare in continuo senza crash.
+Inquadra il codice successivo: la decodifica e l'output avvengono automaticamente; lo scanner viene ricreato a ogni frame e può funzionare in modo continuo senza crash.
 
 ## Codice
 
@@ -72,7 +68,7 @@ esp_code_scanner_destroy(scn);
 
 ## Risultato
 
-Puntare al codice QR → la seriale emette il contenuto decodificato + sovrapposizione nell'immagine della pagina web.
+Inquadra il codice QR→la porta seriale emette il contenuto decodificato + sovrapposizione nella pagina Web.
 
 Capitolo successivo: [Capitolo 8: Riconoscimento facciale](./Ch08-Face-Recognition.md)
 

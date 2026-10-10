@@ -14,15 +14,10 @@ description: "ESP32-NanoCam tutorial Chapter 2: flash the firmware and complete 
 ### Steps
 
 1. Unzip the folder → `nanocam_xxx.bin`
-
 2. Open [esptool-js](https://espressif.github.io/esptool-js/)
-
 3. Connect the NanoCam via Type-C
-
 4. Click Connect → select the serial port
-
 5. Select the firmware file, enter `0x0` as the address
-
 6. Click START → wait for completion
 
 ### Verification
@@ -53,7 +48,7 @@ Receiving `OK` → setup successful. The device reboots automatically after the 
 ### Method B: Direct AP Hotspot Connection
 
 The NanoCam has a built-in hotspot: `NanoCam-AP`, password `12345678`
-Connect your phone to it, then open `http://192.168.4.1` in a browser
+After connecting your phone, open `http://192.168.4.1` in a browser
 
 ### Verification
 
@@ -68,11 +63,8 @@ Returns: `sta_ip:192.168.x.x` ✅
 ## 2.3 First Frame
 
 > Output: **NanoCam's live image visible in the browser**
-
 1. Enter `http://<IP address>` in your browser
-
 2. See the live MJPEG image
-
 3. Send `ai_mode:1` over serial → switch to cat face detection → detection boxes appear on the image
 
 ### Endpoint Description

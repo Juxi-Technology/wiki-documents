@@ -34,7 +34,7 @@ Voz del usuario "pon la luz en azul"
 
 ## Pasos
 
-### 11.1 Flashear el firmware
+### 11.1 Grabar el firmware
 
 ESP-Claw usa el proyecto de firmware independiente `nanocam_espclaw/`:
 
@@ -71,7 +71,6 @@ Tras la activación, di lo que necesitas directamente:
 ### 11.4 Foto + análisis visual con IA
 
 Cuando el usuario dice "mira...", el firmware captura un fotograma VGA RGB565, lo comprime en JPEG y lo envía a la API multimodal configurada en el servidor para su análisis; el resultado se anuncia por voz mediante TTS.
-
 > La URL y el token de la API multimodal los entrega automáticamente el servidor durante el handshake de conexión; no hace falta introducir comandos de configuración manualmente por el puerto serie.
 
 ## Las 5 herramientas exclusivas de NanoCam
@@ -92,7 +91,7 @@ Cuando el usuario dice "mira...", el firmware captura un fotograma VGA RGB565, l
 |Lógica de envío de Vision|`nanocam_espclaw/main/boards/common/esp32_camera.cc`|
 |Configuración por defecto del SDK|`nanocam_espclaw/sdkconfig.defaults`|
 
-> El firmware de ESP-Claw es un proyecto independiente y no comparte código con `nanocam_vision`. Los dos firmwares deben compilarse y flashearse por separado.
+> El firmware de ESP-Claw es un proyecto independiente y no comparte código con `nanocam_vision`. Los dos firmwares deben compilarse y grabarse por separado.
 
 ## Cómo elegir
 

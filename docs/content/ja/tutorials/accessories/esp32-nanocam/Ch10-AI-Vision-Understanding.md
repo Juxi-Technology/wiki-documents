@@ -1,9 +1,9 @@
 ---
-title: 第 10 章:AI 視覚理解
+title: "第 10 章:AI 画像理解"
 description: "ESP32-NanoCam チュートリアル第 10 章。ESP-Claw モードで撮影した映像をマルチモーダル API で分析し、内容を音声で説明させる方法を解説します。"
 ---
 
-# 第 10 章:AI 視覚理解
+# 第 10 章:AI 画像理解
 
 > **[ストアで購入](https://www.juxitech.com/ja/products/esp32-s3-wifi-video-module)**
 
@@ -11,9 +11,8 @@ description: "ESP32-NanoCam チュートリアル第 10 章。ESP-Claw モード
 
 ## 本章について
 
-AI 視覚理解は **ESP-Claw(モード 7)** の独自機能で、XiaoZhi AI(モード 6)では使用しません。
-
-> 本章で使用する `self.camera.take_photo` と `self.camera.inspect_image` ツールの視覚分析 API アドレスは、MCP ハンドシェイク段階でサーバーから `capabilities.vision` フィールドを通じて自動配信されます。ファームウェア側で API URL を手動設定する必要はありません —— つまり API の設定は xiaozhi.me コンソールまたは自前構築のサーバー側で行います。詳細は[第 11 章:ESP-Claw 音声制御](./Ch11-ESP-Claw-Voice-Control.md)を参照してください。
+AI 画像理解は **ESP-Claw(モード 7)** の独自機能で、XiaoZhi AI(モード 6)では使用しません。
+> 本章で使用する `self.camera.take_photo` と `self.camera.inspect_image` ツールでは、視覚分析 API アドレスが MCP ハンドシェイク段階でサーバーから `capabilities.vision` フィールドを通じて自動配信されます。ファームウェア側で API URL を手動設定する必要はありません —— これは、API の設定が xiaozhi.me コンソールまたは自前構築のサーバー側で行われることを意味します。詳細は[第11章](./Ch11-ESP-Claw-Voice-Control.md): ESP-Claw 音声制御を参照してください。
 
 ## 原理
 
@@ -37,7 +36,7 @@ AI 視覚理解は **ESP-Claw(モード 7)** の独自機能で、XiaoZhi AI(モ
 |`self.camera.take_photo`|撮影後、LLM 内蔵の vision 機能で説明|サーバー側|
 |`self.camera.inspect_image` (NanoCam 専用)|撮影後 `camera->Explain()` を呼び出し → HTTP POST で独立したマルチモーダル API へ|ファームウェア側|
 
-両者の違い:`take_photo` は XiaoZhi サーバー側の LLM 視覚(汎用実装)を通り、`inspect_image` は本プロジェクト専用の実装で、ファームウェアが独立したマルチモーダル API を直接呼び出します(アドレスはサーバーから配信)。
+両者の違い: `take_photo` は XiaoZhi サーバー側の LLM 視覚(汎用実装)を通り、`inspect_image` は本プロジェクト専用の実装で、ファームウェアが独立したマルチモーダル API を直接呼び出します(アドレスはサーバーから配信)。
 
 ## 手順
 

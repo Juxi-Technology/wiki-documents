@@ -1,9 +1,9 @@
 ---
-title: "Chapitre 9 : Dialogue vocal"
+title: "Chapitre 9 : Dialogue vocal (XiaoZhi AI)"
 description: "Tutoriel ESP32-NanoCam chapitre 9 : se connecter au service cloud xiaozhi.me via le framework XiaoZhi AI et dialoguer en full-duplex ASR→LLM→TTS."
 ---
 
-# Chapitre 9 : Dialogue vocal
+# Chapitre 9 : Dialogue vocal (XiaoZhi AI)
 
 > **[Acheter en boutique](https://www.juxitech.com/fr/products/esp32-s3-wifi-video-module)**
 
@@ -21,11 +21,11 @@ Ce chapitre concerne le mode XiaoZhi AI (`ai_mode:6`). **Important** : les modes
 |Contrôle LED|❌|✅ couleur réglée à la voix|
 |Cas d'usage|Dialogue IA général, éducation pour enfants|Contrôle matériel, inspection visuelle, domotique|
 
-> Ce chapitre se concentre sur le dialogue vocal du **XiaoZhi AI (mode 6)**. Pour découvrir les capacités de contrôle matériel d'ESP-Claw, voir le [Chapitre 11 : Contrôle vocal ESP-Claw](./Ch11-ESP-Claw-Voice-Control.md).
+> Ce chapitre se concentre sur le dialogue vocal du **XiaoZhi AI (mode 6)**. Pour découvrir les capacités de contrôle matériel d'ESP-Claw, lire le [Chapitre 11 : Contrôle vocal ESP-Claw](./Ch11-ESP-Claw-Voice-Control.md).
 
 ## Principe
 
-NanoCam intègre le framework open source XiaoZhi AI et se connecte à un serveur LLM via WebSocket / MQTT pour réaliser la pipeline d'interaction vocale complète :
+NanoCam intègre le framework open source XiaoZhi AI et se connecte au serveur LLM via les protocoles WebSocket / MQTT pour réaliser une pipeline d'interaction vocale complète :
 
 ```Plain
 L'utilisateur parle → capture par le microphone ES8311 → encodage Opus
@@ -40,14 +40,10 @@ Conception full-duplex : l'utilisateur peut interrompre l'IA pendant qu'elle par
 ## Matériel requis
 
 Ce chapitre fait appel aux fonctions audio et nécessite le matériel suivant :
-
 - Carte principale NanoCam (avec codec ES8311 + microphone AP2718AT)
-
 - Carte de base NanoCam (avec amplificateur NS4150B + CH340K)
-
 - Haut-parleur (à relier au connecteur haut-parleur de la carte de base, VON/VOP)
-
-> La carte principale seule permet aussi de tester (écoute via la sortie casque de l'ES8311). Le microphone est un MEMS analogique AP2718AT, relié à MIC1P de l'ES8311 via le condensateur de liaison C26.
+> La carte principale seule permet aussi de tester l'audio (écoute via la sortie casque de l'ES8311). Le microphone est un MEMS analogique AP2718AT, relié à MIC1P de l'ES8311 via le condensateur de liaison C26.
 
 ## Étapes
 
@@ -62,21 +58,16 @@ idf.py build
 idf.py -p COMx flash monitor
 ```
 
-Au démarrage, le mode XiaoZhi AI est actif par défaut.
+Le mode XiaoZhi AI est actif par défaut au démarrage.
 
 ### 9.2 Se connecter au service cloud xiaozhi.me
 
-Le NanoCam se connecte par défaut au service cloud officiel [xiaozhi.me](https://xiaozhi.me) (gratuit), sans serveur à auto-héberger.
-
+Le NanoCam se connecte par défaut au service cloud officiel [xiaozhi.me](https://xiaozhi.me) (gratuit) ; aucun serveur auto-hébergé n'est nécessaire.
 1. Créer un compte sur [xiaozhi.me](https://xiaozhi.me)
-
-2. À la mise sous tension, l'appareil annonce vocalement un code d'activation à 6 chiffres
-
+2. À la mise sous tension, l'appareil annonce automatiquement un code d'activation à 6 chiffres
 3. Saisir le code d'activation dans la console xiaozhi.me → associer l'appareil
-
 4. Choisir le modèle LLM dans la console (Qwen / DeepSeek, etc.)
-
-L'activation n'est nécessaire qu'une seule fois ; ensuite, la connexion est automatique à chaque mise sous tension.
+L'activation n'est nécessaire qu'une seule fois ; ensuite, l'appareil se reconnecte automatiquement à chaque mise sous tension.
 
 ### 9.3 Premier dialogue
 
@@ -101,7 +92,7 @@ Le mot d'éveil est **« 你好小智 »** (par défaut).
 
 ## Serveur auto-hébergé (facultatif)
 
-Si vous avez des exigences de confidentialité, ou souhaitez utiliser votre propre LLM, vous pouvez déployer le serveur open source XiaoZhi AI :
+Si vous avez des exigences de confidentialité, ou si vous souhaitez utiliser votre propre LLM, vous pouvez déployer le serveur open source XiaoZhi AI :
 
 ```Bash
 git clone https://github.com/xinnan-tech/xiaozhi-esp32-server
@@ -111,19 +102,17 @@ python app.py
 ```
 
 L'adresse du serveur du firmware est fournie via le système OTA (`CONFIG_OTA_URL` dans sdkconfig) ; l'appareil demande automatiquement cette adresse à la mise sous tension.
-
-> XiaoZhi AI utilise le serveur open source XiaoZhi AI (protocole privé WebSocket + pipeline ASR/LLM/TTS). En mode ESP-Claw, en plus, la fonction d'analyse visuelle : le serveur fournit l'URL de la Vision API et le token lors du handshake MCP, sans configuration côté firmware.
+> XiaoZhi AI utilise le serveur open source XiaoZhi AI (protocole privé WebSocket + pipeline ASR/LLM/TTS). En mode ESP-Claw, en complément, la fonction d'analyse visuelle : le serveur fournit l'URL et le token de la Vision API au firmware lors du handshake MCP, qui n'a rien à configurer lui-même.
 
 ## Dépannage
 
 |Symptôme|Cause possible|Solution|
 |---|---|---|
 |Aucun son|Haut-parleur non connecté|Vérifier le connecteur haut-parleur de la carte de base|
-|Reconnaissance vocale imprécise|Bruit ambiant trop fort|Parler près du microphone (distance < 1 m)|
+|Reconnaissance vocale imprécise|Bruit ambiant trop fort|Parler près du microphone (distance < 1m)|
 |Connexion impossible|WiFi non configuré|Configurer d'abord le réseau via le port série `sta_ssid:xxx`|
-|Pas de code d'activation|Premier démarrage non terminé|Attendre 30 secondes, l'appareil annonce le code automatiquement|
+|Pas de code d'activation|Premier démarrage non terminé|Attendre 30 secondes ; l'appareil annonce automatiquement le code|
 |Réponses très lentes|Latence du serveur LLM|Choisir un modèle plus rapide sur xiaozhi.me, ou auto-héberger le serveur|
-
 > Pour la configuration WiFi par port série et toutes les commandes, voir le [Manuel du protocole série](./ESP32-NanoCam-Serial-Protocol.md).
 
 Chapitre suivant : [Chapitre 10 : Compréhension visuelle par IA](./Ch10-AI-Vision-Understanding.md)

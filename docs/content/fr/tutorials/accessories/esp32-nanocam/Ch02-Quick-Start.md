@@ -1,9 +1,9 @@
 ---
-title: "Chapitre 2 : Démarrage rapide"
+title: "Chapitre 2 : Prise en main rapide"
 description: "Tutoriel ESP32-NanoCam chapitre 2 : flasher le firmware et configurer le WiFi (port série ou point d'accès AP)."
 ---
 
-# Chapitre 2 : Démarrage rapide
+# Chapitre 2 : Prise en main rapide
 
 > **[Acheter en boutique](https://www.juxitech.com/fr/products/esp32-s3-wifi-video-module)**
 
@@ -14,20 +14,15 @@ description: "Tutoriel ESP32-NanoCam chapitre 2 : flasher le firmware et configu
 ### Étapes
 
 1. Décompresser le dossier → `nanocam_xxx.bin`
-
 2. Ouvrir [esptool-js](https://espressif.github.io/esptool-js/)
-
 3. Connecter le NanoCam en Type-C
-
 4. Cliquer sur Connect → choisir le port série
-
 5. Sélectionner le fichier firmware, saisir l'adresse `0x0`
-
 6. Cliquer sur START → attendre la fin
 
 ### Vérification
 
-Connecter le NanoCam avec un outil de port série (115200 8N1), on doit voir :
+Connecter un outil de port série (115200 8N1) au NanoCam, vous devez voir :
 
 ```Plain
 NanoCam Board Ver:0.3.0
@@ -46,14 +41,12 @@ sta_ssid:VotreNomWiFi
 sta_pd:VotreMotDePasseWiFi
 ```
 
-Réception de `OK` → configuration réussie. Après modification du mot de passe, l'appareil redémarre automatiquement.
+Réception de `OK` → configuration réussie. L'appareil redémarre automatiquement après modification du mot de passe.
 
-> Pour la liste complète des commandes série, voir le [Manuel du protocole série](./ESP32-NanoCam-Serial-Protocol.md).
-
-### Méthode B : connexion directe au point d'accès (AP)
+### Méthode B : connexion directe au point d'accès AP
 
 Le NanoCam crée son propre point d'accès : `NanoCam-AP`, mot de passe `12345678`
-Après connexion depuis le téléphone, ouvrir `http://192.168.4.1` dans le navigateur
+Une fois le téléphone connecté, ouvrez `http://192.168.4.1` dans le navigateur
 
 ### Vérification
 
@@ -65,15 +58,12 @@ Retour : `sta_ip:192.168.x.x` ✅
 
 ---
 
-## 2.3 Première image en temps réel
+## 2.3 Première image
 
 > Résultat : **l'image en temps réel du NanoCam s'affiche dans le navigateur**
-
 1. Saisir `http://<adresse IP>` dans le navigateur
-
 2. L'image MJPEG en temps réel s'affiche
-
-3. Envoyer `ai_mode:1` par le port série → passage à la détection de visage de chat → un cadre de détection apparaît à l'image
+3. Envoyer `ai_mode:1` sur le port série → bascule en détection de visage de chat → un cadre de détection apparaît à l'image
 
 ### Description des endpoints
 

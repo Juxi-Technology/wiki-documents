@@ -12,13 +12,9 @@ description: "ESP32-NanoCam tutorial Chapter 7: use esp-code-scanner to decode Q
 ## Principle
 
 Uses the precompiled esp-code-scanner library to decode QR codes (QR Code / Barcode) in the image in real time. The RGB565 frames output by the camera are passed directly to the scanner — no grayscale conversion is needed. A brand-new scanner object is created for every frame and destroyed as soon as the scan finishes, preventing internal state from accumulating.
-
 The decoded result is delivered through:
-
 1. **Serial log** output
-
 2. The **shared buffer** `g_last_code` stores the latest result for overlay display on the HTTP/MJPEG stream
-
 3. A green text label overlaid at the **bottom of the web image**
 
 ## Steps

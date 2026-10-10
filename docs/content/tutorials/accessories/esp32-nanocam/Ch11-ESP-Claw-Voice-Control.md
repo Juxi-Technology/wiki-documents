@@ -71,7 +71,6 @@ After waking it up, just say what you need:
 ### 11.4 Photo + AI Vision Analysis
 
 When the user says "take a look...", the firmware captures a VGA RGB565 frame, compresses it to JPEG, and sends it to the multimodal API configured on the server for analysis; the result is announced through TTS voice.
-
 > The multimodal API URL and token are delivered automatically by the server during the connection handshake; there is no need to enter configuration commands over serial manually.
 
 ## The 5 NanoCam-Specific Tools

@@ -14,7 +14,13 @@ Bienvenue dans les tutoriels d'accessoires ! Guides d'utilisation pour les acces
 - [Caméra USB à autofocus](./usb-auto-focus-camera.md)
 - [Caméra CSI Jetson](./jetson-csi-camera.md)
 
-- [Cardan 2-DOF](./2dof-camera-gimbal.md)
+- [Cardan 2-DOF](/fr/tutorials/accessories/2dof-camera-gimbal/)
+  - [Guide de démarrage rapide](/fr/tutorials/accessories/2dof-camera-gimbal/01-Quick-Start-Guide)
+  - [Matériel et préparation de l'environnement](/fr/tutorials/accessories/2dof-camera-gimbal/02-Hardware-and-Environment-Setup)
+  - [Utilisation de base](/fr/tutorials/accessories/2dof-camera-gimbal/03-Basic-Usage)
+  - [Fonctions avancées et suivi](/fr/tutorials/accessories/2dof-camera-gimbal/04-Advanced-Features-and-Tracking)
+  - [Dépannage](/fr/tutorials/accessories/2dof-camera-gimbal/05-Troubleshooting)
+  - [Informations produit](/fr/tutorials/accessories/2dof-camera-gimbal/Product-Info)
 
 - [Capteur de fréquence cardiaque et SpO2](./heart-rate-spo2.md)
 
@@ -34,9 +40,11 @@ Carte son à réveil IA — réveil vocal hors ligne, mots de réveil personnali
 
 Module de transmission vidéo et de vision IA ESP32-S3, prenant en charge 8 modes IA, la transmission vidéo en double mode AP+STA et l'interaction vocale.
 
+- [Tutoriels du module caméra IA double mode ESP32-S3](./esp32-nanocam/)
 - [Démarrage rapide](./esp32-nanocam/ESP32-NanoCam-Quick-Start.md)
 - [Spécifications matérielles](./esp32-nanocam/ESP32-NanoCam-Hardware-Spec.md)
 - [Manuel du protocole série](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
+- [Téléchargements de code](./esp32-nanocam/ESP32-NanoCam-Code-Downloads.md)
 - [Tutoriel vision IA chapitre 1 : configuration de l'environnement](./esp32-nanocam/Ch01-Environment-Setup.md)
 
 #### Tutoriel de vision IA (11 chapitres)

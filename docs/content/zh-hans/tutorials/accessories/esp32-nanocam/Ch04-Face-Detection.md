@@ -1,5 +1,5 @@
 ---
-title: 第 4 章:人脸检测
+title: "第 4 章:人脸检测"
 description: "ESP32-NanoCam 教程第 4 章:使用 ESP-DL MobileNet 检测人脸并标注人脸框与 5 个关键点,用 Arduino/Python 读取坐标控制舵机。"
 ---
 
@@ -16,9 +16,7 @@ description: "ESP32-NanoCam 教程第 4 章:使用 ESP-DL MobileNet 检测人脸
 ### 检测结果格式
 
 - 坐标: 左上角(x,y) + 宽高(w,h)
-
 - 置信度: 0-1 之间的浮点数
-
 - 多人脸时返回多个框
 
 ## 步骤
@@ -45,7 +43,6 @@ I (xxxxx) detection_result:       left eye: ( 90,  80), right eye: (150,  80), n
 ```
 
 - 第一行：`[序号] (x, y, w, h)` — 人脸框坐标
-
 - 第二行：5 个关键点 — 左眼、右眼、鼻子、左嘴角、右嘴角
 
 ## 代码

@@ -37,9 +37,7 @@ Die registrierten Gesichtsmerkmale (ID + 512-dimensionales Embedding) werden dau
 ## Hardware-Vorbereitung
 
 - NanoCam-Kernboard + Basisboard
-
 - USB-C-Datenkabel (Stromversorgung + serielle Verbindung zum PC)
-
 - Seriell-Tool (Baudrate 115200)
 
 ## Schritte
@@ -74,7 +72,6 @@ I (xxxx) ENROLL: ID 1 is enrolled
 ```
 
 Im Bild wird blauer Text `Enroll: ID 1` überlagert, der nach etwa 0.5 Sekunden verschwindet.
-
 > **Hinweis**: Der Befehl lautet `face_eril` (Abkürzung von enroll), nicht `face_enroll`. Wenn `fail: unknown command` erscheint, prüfen Sie die Schreibweise.
 
 ### 8.3 Gesichter erkennen und unterscheiden
@@ -86,11 +83,8 @@ face_rz
 ```
 
 Das System wechselt in den fortlaufenden Erkennungsmodus. Das aktuelle Gesicht wird mit allen im Flash registrierten IDs verglichen:
-
 - **Übereinstimmung**: Die serielle Ausgabe zeigt `Similarity: 0.85, Match ID: 1`, im Bild wird fortlaufend grünes `ID: 1` überlagert
-
 - **Fremder**: Die serielle Ausgabe zeigt `Similarity: 0.32, Match ID: 0`, im Bild wird fortlaufend rotes `who?` überlagert
-
 > Das Etikett wird **fortlaufend angezeigt** und verschwindet nicht. Um den Erkennungsmodus zu verlassen, senden Sie `face_detect`, um zum reinen Detektionsmodus zurückzukehren.
 
 ### 8.4 Gesicht löschen
@@ -99,7 +93,7 @@ Das System wechselt in den fortlaufenden Erkennungsmodus. Das aktuelle Gesicht w
 face_del
 ```
 
-Löscht die zuletzt registrierte Gesichts-ID; die serielle Ausgabe zeigt `N IDs left` und im Bild erscheint kurz die Anzahl der verbleibenden IDs. Die Merkmale im Flash werden ebenfalls gelöscht.
+Löscht die zuletzt registrierte Gesichts-ID; die serielle Ausgabe zeigt `N IDs left`, im Bild erscheint kurz die Anzahl der verbleibenden IDs. Die Merkmale im Flash werden ebenfalls gelöscht.
 
 ### 8.5 Erkennungsmodus verlassen
 
@@ -108,7 +102,6 @@ face_detect
 ```
 
 Kehrt zum reinen Gesichtsdetektionsmodus zurück (nur Rahmen + Landmarken, keine Erkennung); die ID-Etiketten werden entfernt.
-
 > **Zum DETECT-Modus**: Auf dem ESP32-S3 ist die serielle Koordinatenausgabe im reinen Gesichtsdetektionsmodus deaktiviert (`#if !CONFIG_IDF_TARGET_ESP32S3`), um zu verhindern, dass das serielle Log mit Detektionsmeldungen überschwemmt wird. Erst nach dem Wechsel in den Erkennungsmodus (`face_rz`) werden `detection_result`-Koordinatenlogs ausgegeben.
 
 ## Vollständige Befehlsübersicht
@@ -191,6 +184,6 @@ case RECOGNIZE:
 
 Gesicht registrieren → fortlaufende Erkennung mit ID-Anzeige → I2C-/serielle Ausgabe der Ergebnisse → Relais/Servo steuern — eine vollständige Zutrittskontrolllösung.
 
-Nächstes Kapitel: [Kapitel 9: Sprachdialog](./Ch09-Voice-Chat.md)
+Nächstes Kapitel: [Kapitel 9: Sprachdialog (XiaoZhi AI)](./Ch09-Voice-Chat.md)
 
 <RelatedProducts slugs="esp32-s3-wifi-module" />

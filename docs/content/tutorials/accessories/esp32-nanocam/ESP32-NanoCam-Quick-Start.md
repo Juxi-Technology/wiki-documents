@@ -1,14 +1,13 @@
 ---
-title: ESP32-NanoCam Quick Start
+title: ESP32-NanoCam Quick Start Guide
 description: "ESP32-NanoCam video streaming / AI vision module quick start: flash the firmware, configure WiFi, view the live video."
 ---
 
-# ESP32-NanoCam Quick Start
+# ESP32-NanoCam Quick Start Guide
 
 > **[Buy in Store](https://www.juxitech.com/products/esp32-s3-wifi-video-module)**
 
-
-The ESP32-NanoCam is Juxi Technology's ESP32-S3 video streaming / AI vision module (product page: [ESP32-S3 WiFi Video Module](/products/esp32-s3-wifi-module)), with a core board + base board dual-board architecture. This guide walks you through firmware flashing, WiFi connection, video viewing and AI mode switching in five steps.
+---
 
 ## Prerequisites
 
@@ -18,20 +17,20 @@ The ESP32-NanoCam is Juxi Technology's ESP32-S3 video streaming / AI vision modu
 - GC2145 camera module (connected at the factory)
 
 ![Figure 1: ESP32-NanoCam core board, front](../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Quick-Start/1.png)
-
 ![Figure 2: ESP32-NanoCam base board (USB-C power and serial flashing)](../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Quick-Start/2.png)
+
+---
 
 ## Step 1: Flash the Firmware (3 minutes)
 
 ### Method A: No Development Environment (Recommended)
 
-1. Install the [CH340K serial driver](https://www.wch.cn/download/CH341SER_EXE.html)
-2. Open your browser and visit [esptool-js](https://espressif.github.io/esptool-js/)
-3. Connect the NanoCam to your computer with a Type-C cable
-4. Select the serial port, baud rate 115200
-5. Find the firmware file `nanocam_xxx.bin` inside the extracted archive
-6. Select the firmware file `nanocam_xxx.bin`, address `0x0`
-7. Click "START" and wait for completion
+1. Open your browser and visit [esptool-js](https://espressif.github.io/esptool-js/)
+2. Connect the NanoCam to your computer with a Type-C cable
+3. Select the serial port, baud rate 115200
+4. Find the firmware file `nanocam_xxx.bin` inside the extracted archive
+5. Select the firmware file `nanocam_xxx.bin`, address `0x0`
+6. Click "START" and wait for completion
 
 ### Method B: Command Line (Advanced)
 
@@ -40,13 +39,13 @@ pip install esptool
 esptool.py --chip esp32s3 --port COM3 write_flash 0x0 nanocam.bin
 ```
 
+---
+
 ## Step 2: Connect to WiFi (2 minutes)
 
 By default the NanoCam runs **AP+STA dual mode simultaneously** — no switching required:
-
 - The **AP hotspot** is always on: connect your phone directly to `NanoCam-AP` (password `12345678`), then open `http://192.168.4.1` in a browser
 - **STA to a router**: configure the WiFi once
-
 Connect to the NanoCam's Type-C port with a serial tool (baud rate **115200 8N1**):
 
 ```Plaintext
@@ -55,7 +54,6 @@ sta_pd:your WiFi password
 ```
 
 > Receiving `OK` means the configuration succeeded. The device reboots automatically after the password is changed.
-
 To switch WiFi modes (usually not necessary):
 
 |Command|Mode|Description|
@@ -64,11 +62,15 @@ To switch WiFi modes (usually not necessary):
 |`wifi_mode:1`|STA only|Disables the hotspot, connects only to the router|
 |`wifi_mode:2`|AP+STA|Default; both work simultaneously|
 
+---
+
 ## Step 3: View the Video (1 minute)
 
 1. Send `sta_ip` over serial to get the STA IP
 2. Enter `http://<IP address>` in your browser (or `http://192.168.4.1` in AP mode)
 3. The web page shows the live video
+
+---
 
 ## Step 4: Explore the AI (2 minutes)
 
@@ -86,6 +88,8 @@ Send the following commands over serial to switch modes:
 |`ai_mode:7`|ESP-Claw|ESP-Claw AI Agent (official Espressif framework)|
 
 > Each mode switch requires a manual reboot — press the module's RST button to reboot; the new mode takes effect after the restart.
+
+---
 
 ## Step 5: Integrate Into Your Project
 
@@ -106,7 +110,9 @@ ser.write(b"ai_mode:1\r\n")  # Switch to cat face detection
 
 ### View the Complete Command List
 
-Full command reference: [Serial Protocol Manual](./ESP32-NanoCam-Serial-Protocol.md).
+→ Serial Protocol Manual
+
+---
 
 ## FAQ
 
@@ -116,6 +122,10 @@ Full command reference: [Serial Protocol Manual](./ESP32-NanoCam-Serial-Protocol
 |No video|Send `sta_ip` over serial to confirm the IP; check that both devices are on the same subnet|
 |Camera stays dark|Check that the FPC cable is fully seated with the metal contacts facing down; check PWDN(IO12)/RESET(IO14)|
 |Cannot connect to WiFi|Send `wifi_reset` to restore factory settings, then configure again|
+
+More questions → [FAQ](https://FAQ.md)
+
+---
 
 ## Next Steps
 

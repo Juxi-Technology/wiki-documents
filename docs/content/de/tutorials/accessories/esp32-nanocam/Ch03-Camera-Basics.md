@@ -16,9 +16,7 @@ NanoCam verbindet die Kamera über die DVP-Schnittstelle (Digital Video Parallel
 ### Schlüsselkonzepte
 
 - **DVP**: 8 parallele Datenleitungen + 3 Synchronisationsleitungen (VSYNC/HREF/PCLK)
-
 - **MJPEG**: Jedes Bild ist ein eigenständiges JPEG; der Browser lädt sie fortlaufend und erzeugt so einen Videoeffekt
-
 - **PSRAM**: 8 MB PSRAM dienen als Framebuffer und fassen 2-4 Frames
 
 ## Schritte
@@ -29,13 +27,12 @@ Nach dem Flashen der Firmware befindet sich das Gerät standardmäßig im Stream
 
 |Befehl|Funktion|
 |---|---|
-|`ai_mode:0\r`|Videoübertragung|
-|`ai_mode:1\r`|Katzengesicht-Erkennung|
-|`ai_mode:2\r`|Gesichtsdetektion|
-|`ai_mode:3\r`|Farberkennung|
-|`ai_mode:4\r`|Gesichtserkennung|
-|`ai_mode:5\r`|QR-Code-Scan|
-
+|ai_mode:0\r|Videoübertragung|
+|ai_mode:1\r|Katzengesichtsdetektion|
+|ai_mode:2\r|Gesichtsdetektion|
+|ai_mode:3\r|Farberkennung|
+|ai_mode:4\r|Gesichtserkennung|
+|ai_mode:5\r|QR-Code-Scan|
 > Alle KI-Modi und seriellen Befehle finden Sie im [Handbuch zum seriellen Protokoll](./ESP32-NanoCam-Serial-Protocol.md).
 
 Nächstes Kapitel: [Kapitel 4: Gesichtsdetektion](./Ch04-Face-Detection.md)

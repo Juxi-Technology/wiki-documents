@@ -12,7 +12,6 @@ description: "Tutorial ESP32-NanoCam, Capítulo 10: tirar fotografias no modo ES
 ## Sobre este capítulo
 
 A compreensão visual com IA é uma funcionalidade exclusiva do **ESP-Claw (modo 7)** e não é usada no XiaoZhi AI (modo 6).
-
 > Quanto às ferramentas `self.camera.take_photo` e `self.camera.inspect_image` usadas neste capítulo, o endereço da API de análise visual é enviado automaticamente pelo servidor através do campo `capabilities.vision` na fase de handshake MCP. O firmware não precisa de configurar manualmente o URL da API — isto significa que a configuração da API é feita na consola xiaozhi.me ou no servidor próprio; para mais detalhes, consulte o [Capítulo 11: Controlo por voz ESP-Claw](./Ch11-ESP-Claw-Voice-Control.md).
 
 ## Princípio
@@ -71,7 +70,7 @@ O NanoCam tira a fotografia, envia-a, analisa-a e responde por voz com o resulta
 |---|---|
 |"O que é isto"|"É um portátil preto, com uma caneca de café branca ao lado"|
 |"Há maçãs?"|"Não vejo maçãs. Há dois livros e uma caneta na mesa"|
-|"De que cor é"|"O que estás a apontar é uma caneca vermelha"|
+|"De que cor é"|"O que está a apontar é uma caneca vermelha"|
 |"Quantos copos"|"Há 2 copos na imagem"|
 
 ## Código

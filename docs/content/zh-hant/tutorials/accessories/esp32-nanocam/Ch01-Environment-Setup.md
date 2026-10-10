@@ -1,5 +1,5 @@
 ---
-title: 第 1 章:環境搭建
+title: "第 1 章:環境搭建"
 description: "ESP32-NanoCam 教程第 1 章:安裝 CH340K 串口驅動,介紹網頁與命令行等四種固件燒錄環境搭建方式,並完成伺服器帳號註冊。"
 ---
 
@@ -11,71 +11,51 @@ description: "ESP32-NanoCam 教程第 1 章:安裝 CH340K 串口驅動,介紹網
 
 ## 1.1 固件燒錄環境
 
-### 方式A: 免開發環境（推薦新手）
+### 方式A：免開發環境（推薦新手）
 
-1. 安裝 [CH340K 串口驅動](https://www.wch.cn/download/CH341SER_EXE.html)
-
-2. 打開瀏覽器 → [esptool-js](https://espressif.github.io/esptool-js/)
-
-3. 連接 NanoCam，選擇串口，選擇固件 .bin 檔案
-
+1. 安裝 [CH340K 串列埠驅動](https://www.wch.cn/download/CH341SER_EXE.html)
+2. 開啟瀏覽器 → [esptool-js](https://espressif.github.io/esptool-js/)
+3. 連接 NanoCam，選擇串列埠，選擇固件 .bin 檔案
 4. 點擊 Program 燒錄
 
-### 方式B: 命令行
+### 方式B：命令列
 
 ```Bash
 pip install esptool
 esptool.py --chip esp32s3 --port COM_x write_flash 0x0 nanocam_xxx.bin
 ```
 
-### 方式C: ESP-IDF 開發環境（進階）
+### 方式C：ESP-IDF 開發環境（進階）
 
-1. 安裝 VSCode + ESP-IDF 插件
-
+1. 安裝 VSCode + ESP-IDF 擴充套件
 2. F1 → `ESP-IDF: Configure ESP-IDF Extension`
-
 3. 選擇或安裝 ESP-IDF v5.4+
+4. 編譯：`idf.py build flash monitor`
 
-4. 編譯: `idf.py build flash monitor`
-
-### 方式D: ESP-EIM-GUI 安裝方式
+### 方式D：ESP-EIM-GUI 安裝方式
 
 1. 官網下載 [https://dl.espressif.cn/dl/eim/](https://dl.espressif.cn/dl/eim/)
-
-2. 下載雙擊進入 EIM 頁面，右上角可切換為中文版本
-
+2. 下載後雙擊進入 EIM 頁面，右上角可切換為中文版本
 3. 點擊開始安裝
-
 4. 下一步選擇自訂安裝
-
-5. 在此之前需要安裝好 `git` 和 `python3.12.x`（git 國內下載源:[CNPM Binaries Mirror](https://registry.npmmirror.com/binary.html?path=git-for-windows/v2.55.0.windows.3/)）
-
-6. 選擇目標設備為 esp32s3
-
-7. 選擇 ESP-IDF 版本這裡需要選中「顯示舊穩定版本」，往下滑選擇 v5.4.1 版本
-
-8. 選擇下載鏡像這裡不變，下一步
-
+5. 在此之前需要先安裝好 `git` 和 `python3.12.x`（git 中國大陸下載來源：[CNPM Binaries Mirror](https://registry.npmmirror.com/binary.html?path=git-for-windows/v2.55.0.windows.3/)）
+6. 選擇目標裝置為 esp32s3
+7. 選擇 ESP-IDF 版本，這裡需要選中「顯示舊穩定版本」，往下滑選擇 v5.4.1 版本
+8. 選擇下載鏡像，這裡不變，下一步
 9. 選擇 ESP-IDF 功能，這裡建議全選，繼續下一步
-
 10. 選擇工具，這裡下一步，之後選擇想要安裝的位置安裝即可，等待安裝完畢
-安裝完成之後這個版本會存在解壓問題，找到目錄 C:\Espressif\dist\xtensa-esp-elf-14.2.0_20241119-x86_64-w64-mingw32.zip，複製壓縮包到 C:\Espressif\tools\xtensa-esp-elf，解壓之後找到 xtensa-esp-elf 資料夾，將 C:\Espressif\tools\xtensa-esp-elf\esp-14.2.0_20241119 目錄下的資料夾替換即可編譯成功
+安裝完成之後，這個版本會存在解壓問題。找到目錄 C:\Espressif\dist\xtensa-esp-elf-14.2.0_20241119-x86_64-w64-mingw32.zip，複製壓縮包到 C:\Espressif\tools\xtensa-esp-elf，解壓之後找到 xtensa-esp-elf 資料夾，將 C:\Espressif\tools\xtensa-esp-elf\esp-14.2.0_20241119 目錄下的資料夾替換即可編譯成功
 
 ## 1.2 伺服器環境
 
 ### xiaozhi.me 官方服務（免費）
 
-1. 訪問 [xiaozhi.me](https://xiaozhi.me) 註冊帳號
-
+1. 前往 [xiaozhi.me](https://xiaozhi.me) 註冊帳號
 2. 進入控制台
-
 3. 模組聯網之後會播報 6 位數字驗證碼
-
-4. 點擊「智能體」區塊右側的添加設備
-
+4. 點擊「智能體」區塊右側的新增裝置
 5. 輸入播報的 6 位數字驗證碼
-
-6. 綁定設備後即可開始對話
+6. 綁定裝置後即可開始對話
 
 下一章:[第 2 章:快速上手](./Ch02-Quick-Start.md)
 

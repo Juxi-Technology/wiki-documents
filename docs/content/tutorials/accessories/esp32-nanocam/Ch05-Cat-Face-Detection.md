@@ -47,7 +47,6 @@ I (xxxxx) detection_result: [ 0]: ( 45,  30, 180, 210)
 ```
 
 - Format: `[index] (x, y, w, h)` — top-left corner coordinates of the cat face box + width and height
-
 - The cat face model does not output keypoints (unlike face detection)
 
 ## Code

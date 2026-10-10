@@ -70,8 +70,7 @@ Sagen Sie nach dem Aktivierungswort direkt, was Sie möchten:
 
 ### 11.4 Foto + KI-Visionsanalyse
 
-Wenn der Nutzer „Schau, ..." sagt, erfasst die Firmware ein VGA-RGB565-Bild, komprimiert es als JPEG und sendet es an die serverseitig konfigurierte multimodale API zur Analyse; das Ergebnis wird per TTS-Sprachausgabe ausgegeben.
-
+Wenn der Nutzer "Schau, ..." sagt, erfasst die Firmware ein VGA-RGB565-Bild, komprimiert es als JPEG und sendet es an die serverseitig konfigurierte multimodale API zur Analyse; das Ergebnis wird per TTS-Sprachausgabe ausgegeben.
 > URL und Token der multimodalen API werden vom Server während des Verbindungs-Handshakes automatisch übermittelt; es müssen keine Konfigurationsbefehle manuell über die serielle Schnittstelle eingegeben werden.
 
 ## 5 NanoCam-spezifische Tools
@@ -100,7 +99,7 @@ Wenn der Nutzer „Schau, ..." sagt, erfasst die Firmware ein VGA-RGB565-Bild, k
 |---|---|
 |Nur Sprachchat und Frage-Antwort|Modus 6 (XiaoZhi)|
 |Sprachsteuerung der LED|Modus 7 (ESP-Claw)|
-|Foto + KI-„Blick" auf die Szene|Modus 7 (ESP-Claw)|
+|Foto + KI-"Blick" auf die Szene|Modus 7 (ESP-Claw)|
 |Sprachliches Umschalten des KI-Erkennungsmodus|Modus 7 (ESP-Claw)|
 
 > Die vollständige Nutzung von ESP-Claw (Serverkonfiguration, Entwicklung eigener MCP-Tools usw.) wird noch erforscht; die Dokumentation wird mit dem Fortschritt der Untersuchungen laufend aktualisiert.

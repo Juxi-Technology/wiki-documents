@@ -13,16 +13,11 @@ description: "Capítulo 2 do tutorial do ESP32-NanoCam: grave o firmware e concl
 
 ### Passos
 
-1. Extraia a pasta → `nanocam_xxx.bin`
-
+1. Extraia a pasta compactada → `nanocam_xxx.bin`
 2. Abra o [esptool-js](https://espressif.github.io/esptool-js/)
-
 3. Conecte o NanoCam via Type-C
-
 4. Clique em Connect → selecione a porta serial
-
 5. Escolha o arquivo de firmware e preencha o endereço com `0x0`
-
 6. Clique em START → aguarde a conclusão
 
 ### Verificação
@@ -52,8 +47,8 @@ Ao receber `OK` → configuração bem-sucedida. Após alterar a senha, o dispos
 
 ### Método B: conexão direta via ponto de acesso AP
 
-O NanoCam cria seu próprio ponto de acesso: `NanoCam-AP`, senha `12345678`
-Conecte o celular e abra `http://192.168.4.1` no navegador
+O NanoCam possui um ponto de acesso próprio: `NanoCam-AP`, senha `12345678`
+Após conectar o celular, abra no navegador `http://192.168.4.1`
 
 ### Verificação
 
@@ -68,11 +63,8 @@ Retorno: `sta_ip:192.168.x.x` ✅
 ## 2.3 Primeiro quadro
 
 > Resultado: **imagem ao vivo do NanoCam visível no navegador**
-
 1. Digite `http://<IP>` no navegador
-
 2. Veja a imagem MJPEG ao vivo
-
 3. Envie `ai_mode:1` pela porta serial → alterna para a detecção de rosto de gato → a caixa de detecção aparece na imagem
 
 ### Descrição dos endpoints

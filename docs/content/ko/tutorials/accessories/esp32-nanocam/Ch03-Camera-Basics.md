@@ -16,9 +16,7 @@ NanoCam은 DVP(디지털 비디오 병렬) 인터페이스로 카메라를 연�
 ### 핵심 개념
 
 - **DVP**: 8선 병렬 데이터 + 3선 동기 신호(VSYNC/HREF/PCLK)
-
 - **MJPEG**: 각 프레임이 독립된 JPEG 이미지이며, 브라우저가 연속으로 로드하여 영상 효과를 구현합니다
-
 - **PSRAM**: 8MB PSRAM을 프레임 버퍼로 사용하며, 2-4프레임을 저장할 수 있습니다
 
 ## 단계
@@ -29,13 +27,12 @@ NanoCam은 DVP(디지털 비디오 병렬) 인터페이스로 카메라를 연�
 
 |명령|기능|
 |---|---|
-|`ai_mode:0\r`|영상 전송 모듈|
-|`ai_mode:1\r`|고양이 얼굴 검출|
-|`ai_mode:2\r`|얼굴 검출|
-|`ai_mode:3\r`|색상 인식|
-|`ai_mode:4\r`|얼굴 인식|
-|`ai_mode:5\r`|QR 코드 인식|
-
+|ai_mode:0\r|영상 전송 모듈|
+|ai_mode:1\r|고양이 얼굴 검출|
+|ai_mode:2\r|얼굴 검출|
+|ai_mode:3\r|색상 인식|
+|ai_mode:4\r|얼굴 인식|
+|ai_mode:5\r|QR 코드 인식|
 > 전체 AI 모드와 시리얼 명령은 [시리얼 프로토콜 매뉴얼](./ESP32-NanoCam-Serial-Protocol.md)을 참조하세요.
 
 다음 장: [4장: 얼굴 검출](./Ch04-Face-Detection.md)

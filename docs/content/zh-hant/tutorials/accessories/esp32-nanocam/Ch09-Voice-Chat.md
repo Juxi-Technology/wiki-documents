@@ -1,9 +1,9 @@
 ---
-title: 第 9 章:語音對話
+title: "第 9 章:語音對話（XiaoZhi AI）"
 description: "ESP32-NanoCam 教程第 9 章:透過小智 AI 框架連接 xiaozhi.me 雲端服務，體驗 ASR→LLM→TTS 全雙工語音對話，含自部署伺服器與故障排除。"
 ---
 
-# 第 9 章:語音對話
+# 第 9 章:語音對話（XiaoZhi AI）
 
 > **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
 
@@ -11,49 +11,45 @@ description: "ESP32-NanoCam 教程第 9 章:透過小智 AI 框架連接 xiaozhi
 
 ## 關於本章
 
-本章涉及 XiaoZhi AI 模式（`ai_mode:6`）。**重要**：模式 6（語音對話）和模式 7（ESP-Claw）**共用同一份固件**（`nanocam_espclaw/`），只是設備啟動時根據 NVS 中儲存的 `ai_mode` 值載入不同的 MCP 工具集。
+本章涉及 XiaoZhi AI 模式（`ai_mode:6`）。**重要**：模式 6（語音對話）與模式 7（ESP-Claw）**共用同一份固件**（`nanocam_espclaw/`），只是裝置啟動時會根據 NVS 中儲存的 `ai_mode` 值載入不同的 MCP 工具集。
 
-|對比維度|XiaoZhi AI (mode 6)|ESP-Claw (mode 7)|
+|對比維度|XiaoZhi AI（mode 6）|ESP-Claw（mode 7）|
 |---|---|---|
 |語音對話|✅ ASR→LLM→TTS|✅ 同一條語音管線|
 |MCP 工具|通用工具（音量/拍照等）|**通用工具 + 5 個硬體專用工具**|
-|視覺理解|`self.camera.take_photo`|**`self.camera.inspect_image`** (多模態視覺)|
+|視覺理解|`self.camera.take_photo`|**`self.camera.inspect_image`**（多模態視覺）|
 |LED 控制|❌|✅ 語音調色|
-|適用場景|通用 AI 對話、兒童教育|硬體控制、視覺巡檢、智能家居|
+|適用場景|通用 AI 對話、兒童教育|硬體控制、視覺巡檢、智慧家庭|
 
-> 本章聚焦 **XiaoZhi AI（模式 6）**的語音對話核心功能。想了解 ESP-Claw 硬體控制能力，請閱讀[第 11 章:ESP-Claw 語音控制](./Ch11-ESP-Claw-Voice-Control.md)。
+> 本章聚焦 **XiaoZhi AI（模式 6）**的語音對話核心功能。想了解 ESP-Claw 硬體控制能力，請閱讀[第 11 章](./Ch11-ESP-Claw-Voice-Control.md)：ESP-Claw 語音控制。
 
 ## 原理
 
-NanoCam 整合了小智 AI 開源框架，透過 WebSocket / MQTT 協議連接 LLM 伺服器實現完整語音互動流水線：
+NanoCam 整合了小智 AI 開源框架，透過 WebSocket / MQTT 協定連接 LLM 伺服器，實現完整的語音互動管線：
 
 ```Plain
-用戶說話 → ES8311 麥克風採集 → Opus 編碼
-  → WebSocket → 雲端 ASR 語音識別
+使用者說話 → ES8311 麥克風採集 → Opus 編碼
+  → WebSocket → 雲端 ASR 語音辨識
   → LLM 大模型生成回覆
   → TTS 語音合成 → Opus 解碼
   → NS4150B 功放 → 揚聲器播放
 ```
 
-全雙工設計：用戶在 AI 說話時可以直接打斷（barge-in），體驗接近真人對話。
+全雙工設計：使用者在 AI 說話時可以直接打斷（barge-in），體驗接近真人對話。
 
 ## 硬體需求
 
-本章涉及音頻功能，需要以下硬體：
-
+本章涉及音訊功能，需要以下硬體：
 - NanoCam 核心板（含 ES8311 Codec + AP2718AT 麥克風）
-
 - NanoCam 底板（含 NS4150B 功放 + CH340K）
-
-- 揚聲器（接到底板揚聲器接口，VON/VOP）
-
-> 僅核心板也可以測試（透過 ES8311 耳機輸出監聽）。麥克風為 AP2718AT 模擬 MEMS 矽麥，透過 C26 隔直電容接入 ES8311 MIC1P。
+- 揚聲器（接到底板揚聲器介面，VON/VOP）
+> 僅核心板也可以測試（透過 ES8311 耳機輸出監聽）。麥克風為 AP2718AT 類比 MEMS 矽麥，透過 C26 隔直電容接入 ES8311 MIC1P。
 
 ## 步驟
 
 ### 9.1 燒錄 XiaoZhi AI 固件
 
-XiaoZhi AI 使用 `nanocam_espclaw/` 獨立固件項目：
+XiaoZhi AI 使用 `nanocam_espclaw/` 獨立固件專案：
 
 ```Bash
 cd nanocam_espclaw
@@ -62,21 +58,16 @@ idf.py build
 idf.py -p COMx flash monitor
 ```
 
-啟動後默認即 XiaoZhi AI 模式。
+啟動後預設即為 XiaoZhi AI 模式。
 
 ### 9.2 連接 xiaozhi.me 雲端服務
 
-NanoCam 出廠默認連接 [xiaozhi.me](https://xiaozhi.me) 官方雲端服務（免費），無需自建伺服器。
-
+NanoCam 出廠預設連接 [xiaozhi.me](https://xiaozhi.me) 官方雲端服務（免費），無需自行架設伺服器。
 1. 在 [xiaozhi.me](https://xiaozhi.me) 註冊帳號
-
-2. 設備上電後自動播報 6 位激活碼
-
-3. 在 xiaozhi.me 控制台輸入激活碼 → 綁定設備
-
+2. 裝置上電後會自動播報 6 位激活碼
+3. 在 xiaozhi.me 控制台輸入激活碼 → 綁定裝置
 4. 在控制台選擇 LLM 模型（Qwen / DeepSeek 等）
-
-激活只需一次，之後每次上電自動連接。
+激活只需一次，之後每次上電都會自動連接。
 
 ### 9.3 首次對話
 
@@ -87,7 +78,7 @@ NanoCam 出廠默認連接 [xiaozhi.me](https://xiaozhi.me) 官方雲端服務�
 NanoCam: "我幫你查一下今天的天氣..."
 ```
 
-喚醒詞為 **「你好小智」**（默認）。
+喚醒詞為 **「你好小智」**（預設）。
 
 ### 9.4 常用對話場景
 
@@ -95,13 +86,13 @@ NanoCam: "我幫你查一下今天的天氣..."
 💬 "講個笑話"              → AI 語音回答
 💬 "幫我設個5分鐘的鬧鐘"    → 鬧鐘功能
 💬 "現在幾點了"             → 報時
-💬 "播放一首輕音樂"         → 聯網播放音樂
+💬 "播放一首輕音樂"         → 連網播放音樂
 💬 "什麼是黑洞"             → 知識問答
 ```
 
-## 自部署伺服器（可選）
+## 自行架設伺服器（可選）
 
-如果對私隱有要求，或希望使用自建 LLM，可以部署小智 AI 開源伺服器端：
+如果對隱私有所要求，或希望使用自行架設的 LLM，可以部署小智 AI 開源伺服器端：
 
 ```Bash
 git clone https://github.com/xinnan-tech/xiaozhi-esp32-server
@@ -110,20 +101,18 @@ pip install -r requirements.txt
 python app.py
 ```
 
-固件的伺服器地址透過 OTA 系統（sdkconfig 中的 `CONFIG_OTA_URL`）下發，設備上電後自動請求伺服器地址。
-
-> XiaoZhi AI 使用小智 AI 開源伺服器端（WebSocket 私有協議 + ASR/LLM/TTS 管線）。ESP-Claw 模式在此基礎上，視覺分析功能由伺服器端在 MCP 握手階段下發 Vision API URL 和 token，固件無須自行配置。
+固件的伺服器地址透過 OTA 系統（sdkconfig 中的 `CONFIG_OTA_URL`）下發，裝置上電後會自動請求伺服器地址。
+> XiaoZhi AI 使用小智 AI 開源伺服器端（WebSocket 私有協定 + ASR/LLM/TTS 管線）。ESP-Claw 模式在此基礎上，視覺分析功能由伺服器端在 MCP 握手階段下發 Vision API URL 和 token，固件無須自行設定。
 
 ## 故障排除
 
 |症狀|可能原因|解決|
 |---|---|---|
-|聽不到聲音|揚聲器未連接|檢查底板揚聲器接口|
-|語音識別不準|環境噪音太大|靠近麥克風說話（距離 < 1m）|
-|無法連接|WiFi 未配置|先用串口配網 `sta_ssid:xxx`|
-|沒有激活碼|首次啟動未完成|等待 30 秒，設備會自動播報|
-|回答很慢|LLM 伺服器端延遲|xiaozhi.me 選擇更快模型，或自建伺服器|
-
+|聽不到聲音|揚聲器未連接|檢查底板揚聲器介面|
+|語音辨識不準|環境噪音太大|靠近麥克風說話（距離 < 1m）|
+|無法連接|WiFi 未設定|先用串列埠配網 `sta_ssid:xxx`|
+|沒有激活碼|首次啟動未完成|等待 30 秒，裝置會自動播報|
+|回答很慢|LLM 伺服器端延遲|xiaozhi.me 選擇更快的模型，或自行架設伺服器|
 > 串口配網等完整指令見[串口協議手冊](./ESP32-NanoCam-Serial-Protocol.md)。
 
 下一章:[第 10 章:AI 視覺理解](./Ch10-AI-Vision-Understanding.md)

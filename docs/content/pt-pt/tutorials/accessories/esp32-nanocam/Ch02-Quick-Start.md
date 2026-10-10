@@ -14,20 +14,15 @@ description: "Tutorial ESP32-NanoCam, Capítulo 2: gravar o firmware e configura
 ### Passos
 
 1. Descomprima a pasta → `nanocam_xxx.bin`
-
 2. Abra o [esptool-js](https://espressif.github.io/esptool-js/)
-
 3. Ligue o NanoCam por Type-C
-
-4. Clique em Connect → selecione a porta serial
-
+4. Clique em Connect → selecione a porta série
 5. Escolha o ficheiro de firmware e preencha o endereço com `0x0`
-
 6. Clique em START → aguarde a conclusão
 
 ### Verificação
 
-Ligue a ferramenta de porta serial (115200 8N1) ao NanoCam; deverá ver:
+Ligue a ferramenta de porta série (115200 8N1) ao NanoCam; deverá ver:
 
 ```Plain
 NanoCam Board Ver:0.3.0
@@ -39,21 +34,21 @@ NanoCam Board Ver:0.3.0
 
 > Resultado: **NanoCam ligado ao WiFi, com IP atribuído**
 
-### Método A: configuração da rede pela porta serial (o mais comum)
+### Método A: configuração da rede pela porta série (o mais comum)
 
 ```Plain
 sta_ssid:o_nome_da_tua_rede_WiFi
 sta_pd:a_palavra_passe_da_tua_rede_WiFi
 ```
 
-Receber `OK` → configuração bem-sucedida. Após a alteração da palavra-passe, o dispositivo reinicia automaticamente.
+Ao receber `OK` → configuração bem-sucedida. Após a alteração da palavra-passe, o dispositivo reinicia automaticamente.
 
 > Consulte o [manual do protocolo da porta serial](./ESP32-NanoCam-Serial-Protocol.md) para a lista completa de comandos da porta serial.
 
 ### Método B: ligação direta ao hotspot AP
 
-O NanoCam tem o seu próprio hotspot: `NanoCam-AP`, palavra-passe `12345678`
-Depois de o telemóvel se ligar, abra `http://192.168.4.1` no navegador
+NanoCam tem o seu próprio hotspot: `NanoCam-AP`, palavra-passe `12345678`
+Depois de o telemóvel se ligar, abra o navegador em `http://192.168.4.1`
 
 ### Verificação
 
@@ -68,12 +63,9 @@ Devolve: `sta_ip:192.168.x.x` ✅
 ## 2.3 O primeiro fotograma
 
 > Resultado: **imagem em tempo real do NanoCam visível no navegador**
-
 1. Escreva `http://<endereço IP>` no navegador
-
 2. Verá a imagem MJPEG em tempo real
-
-3. Envie `ai_mode:1` pela porta serial → muda para deteção de caras de gato → aparece a caixa de deteção na imagem
+3. Envie `ai_mode:1` pela porta série → muda para a deteção de faces de gato → aparece a caixa de deteção na imagem
 
 ### Descrição dos endpoints
 

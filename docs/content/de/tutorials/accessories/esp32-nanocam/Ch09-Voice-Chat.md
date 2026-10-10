@@ -1,9 +1,9 @@
 ---
-title: "Kapitel 9: Sprachdialog"
+title: "Kapitel 9: Sprachdialog (XiaoZhi AI)"
 description: "Kapitel 9 des ESP32-NanoCam-Tutorials: Über das XiaoZhi-AI-Framework den xiaozhi."
 ---
 
-# Kapitel 9: Sprachdialog
+# Kapitel 9: Sprachdialog (XiaoZhi AI)
 
 > **[Im Shop kaufen](https://www.juxitech.com/de/products/esp32-s3-wifi-video-module)**
 
@@ -40,13 +40,9 @@ Vollduplex-Design: Der Nutzer kann die KI mitten im Sprechen direkt unterbrechen
 ## Hardware-Anforderungen
 
 Dieses Kapitel betrifft Audiofunktionen; folgende Hardware ist erforderlich:
-
 - NanoCam-Kernboard (mit ES8311-Codec + AP2718AT-Mikrofon)
-
 - NanoCam-Basisboard (mit NS4150B-Verstärker + CH340K)
-
 - Lautsprecher (an den Lautsprecheranschluss VON/VOP des Basisboards anschließen)
-
 > Auch nur mit dem Kernboard kann getestet werden (Mithören über den ES8311-Kopfhörerausgang). Das Mikrofon ist ein analoges AP2718AT-MEMS-Siliziummikrofon, das über den DC-Blockkondensator C26 an ES8311 MIC1P angeschlossen ist.
 
 ## Schritte
@@ -67,15 +63,10 @@ Nach dem Start befindet sich das Gerät standardmäßig im XiaoZhi-AI-Modus.
 ### 9.2 Verbindung mit dem xiaozhi.me-Clouddienst
 
 Der NanoCam verbindet sich ab Werk standardmäßig mit dem offiziellen Clouddienst [xiaozhi.me](https://xiaozhi.me) (kostenlos); ein eigener Server ist nicht erforderlich.
-
 1. Registrieren Sie ein Konto auf [xiaozhi.me](https://xiaozhi.me)
-
 2. Nach dem Einschalten gibt das Gerät automatisch einen 6-stelligen Aktivierungscode aus (Sprachansage)
-
 3. Geben Sie den Aktivierungscode in der xiaozhi.me-Konsole ein → Gerät binden
-
 4. Wählen Sie in der Konsole das LLM-Modell (Qwen / DeepSeek usw.)
-
 Die Aktivierung ist nur einmal erforderlich; danach verbindet sich das Gerät bei jedem Einschalten automatisch.
 
 ### 9.3 Erster Dialog
@@ -87,7 +78,7 @@ Du: "你好小智, wie ist das Wetter heute?"
 NanoCam: "Ich schaue schnell nach dem Wetter von heute..."
 ```
 
-Das Aktivierungswort ist **"你好小智"** (Standard).
+Das Aktivierungswort ist **`你好小智`** (Standard).
 
 ### 9.4 Häufige Dialogszenarien
 
@@ -111,7 +102,6 @@ python app.py
 ```
 
 Die Serveradresse der Firmware wird über das OTA-System (`CONFIG_OTA_URL` in sdkconfig) bereitgestellt; das Gerät fragt die Serveradresse beim Einschalten automatisch ab.
-
 > XiaoZhi AI verwendet den Open-Source-Server von XiaoZhi AI (privates WebSocket-Protokoll + ASR/LLM/TTS-Pipeline). Im ESP-Claw-Modus wird darauf aufbauend die Vision-API-URL und das Token für die visuelle Analyse vom Server während des MCP-Handshakes übermittelt; die Firmware muss nichts selbst konfigurieren.
 
 ## Fehlerbehebung
@@ -120,10 +110,9 @@ Die Serveradresse der Firmware wird über das OTA-System (`CONFIG_OTA_URL` in sd
 |---|---|---|
 |Kein Ton hörbar|Lautsprecher nicht angeschlossen|Lautsprecheranschluss am Basisboard prüfen|
 |Spracherkennung ungenau|Zu laute Umgebungsgeräusche|Näher am Mikrofon sprechen (Abstand < 1m)|
-|Keine Verbindung möglich|WiFi nicht konfiguriert|Zuerst WiFi seriell konfigurieren: `sta_ssid:xxx`|
-|Kein Aktivierungscode|Erststart nicht abgeschlossen|30 Sekunden warten, das Gerät gibt den Code automatisch aus|
-|Antworten kommen langsam|Latenz des LLM-Servers|Auf xiaozhi.me ein schnelleres Modell wählen oder eigenen Server betreiben|
-
+|Keine Verbindung|WiFi nicht konfiguriert|Zuerst per serieller Schnittstelle konfigurieren: `sta_ssid:xxx`|
+|Kein Aktivierungscode|Erster Start nicht abgeschlossen|30 Sekunden warten; das Gerät gibt ihn automatisch aus|
+|Antworten sind langsam|Verzögerung des LLM-Servers|Auf xiaozhi.me ein schnelleres Modell wählen oder einen eigenen Server betreiben|
 > Vollständige Befehle wie die serielle Netzwerkkonfiguration finden Sie im [Handbuch zum seriellen Protokoll](./ESP32-NanoCam-Serial-Protocol.md).
 
 Nächstes Kapitel: [Kapitel 10: KI-Bildverständnis](./Ch10-AI-Vision-Understanding.md)

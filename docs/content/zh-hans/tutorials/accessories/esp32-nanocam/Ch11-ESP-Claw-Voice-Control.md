@@ -1,5 +1,5 @@
 ---
-title: 第 11 章:ESP-Claw 语音控制
+title: "第 11 章:ESP-Claw 语音控制"
 description: "ESP32-NanoCam 教程第 11 章:ESP-Claw 模式下的 5 个硬件控制工具——语音调色 LED、切换 AI 模式、拍照视觉分析与设备信息查询。"
 ---
 
@@ -11,7 +11,7 @@ description: "ESP32-NanoCam 教程第 11 章:ESP-Claw 模式下的 5 个硬件�
 
 ## 关于本章
 
-当设备切换为 `ai_mode:7` 时，NanoCam 进入 ESP-Claw 模式。它与 XiaoZhi AI（`ai_mode:6`）**共用同一份固件**（`nanocam_espclaw/`），差别仅在于：ESP-Claw 模式在语音对话的基础上，额外注册了 5 个硬件控制工具。
+当设备切换为 `ai_mode:7` 时，NanoCam 进入 ESP-Claw 模式。它与 XiaoZhi AI（`ai_mode:6`）**共用同一份固件** (`nanocam_espclaw/`)，差别仅在于：ESP-Claw 模式在语音对话的基础上，额外注册了 5 个硬件控制工具。
 
 |对比维度|XiaoZhi AI (mode 6)|ESP-Claw (mode 7)|
 |---|---|---|
@@ -70,8 +70,7 @@ ai_mode:7
 
 ### 11.4 拍照 + AI 视觉分析
 
-当用户说“看看...”时，固件抓取一帧 VGA RGB565 图像，压缩为 JPEG，发送到服务端配置的多模态 API 进行分析，结果通过 TTS 语音播报。
-
+当用户说"看看..."时，固件抓取一帧 VGA RGB565 图像，压缩为 JPEG，发送到服务端配置的多模态 API 进行分析，结果通过 TTS 语音播报。
 > 多模态 API 的 URL 和 token 由服务端在连接握手阶段自动下发，不需要在串口手动输入配置命令。
 
 ## 5 个 NanoCam 专用工具

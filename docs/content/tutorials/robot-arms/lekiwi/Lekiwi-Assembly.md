@@ -7,132 +7,124 @@ description: "Precise component positions can be visualized in Fusion360 Online 
 
 > **[Buy in Store](https://www.juxitech.com/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
 
+[*In Fusion360 online CAD*](https://a360.co/4k1P8yO)* you can visualize exact component positions.*
 
-[*Precise component positions can be visualized in Fusion360 Online CAD*](https://a360.co/4k1P8yO)*.*
+[URDF file](https://gitcode.com/gh_mirrors/le/LeKiwi/tree/main)
 
-[URDF File](https://gitcode.com/gh_mirrors/le/LeKiwi/tree/main)
+Online URDF preview https://urdf.d-robotics.cc/
 
-Online URDF Preview https://urdf.d-robotics.cc/
+## 1. Assembling the Wheel Modules (3 per robot)
 
-## 1. Assemble the wheel module (3 per robot)
+1. Use 12 **M2x6** self-tapping screws to fasten the drive motor to the motor bracket. (Included with the servo box.)
 
-1. Secure the drive motor to the motor bracket using 12 **M2x6** self-tapping screws. (Supplied with the servo box)
+![image – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-01.png)
+![image – 2](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-02.png)
 
-![image – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/1.jpg)
+2. Use 12 **M3x16** machine screws and 12 **M3 nuts** to fasten the servos to the base plate using the drive motor brackets.
 
-![image – 2](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/2.jpg)
+![image – 3](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-03.jpg)
 
-2. Use 12 **M3x16 machine screws and 12 ** to secure the drive motor bracket to the base plate.
+3. Remove the machine screws and nuts from the 82mm omni wheels.
 
-![image – 3](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/3.jpg)
+![image – 4](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-04.png)
 
-3. Remove the machine screws and nuts of the 82mm omnidirectional wheel
+4. Use m3\*6 screws to fasten the servo horn to the servo.
 
-![image – 4](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/4.jpg)
+![image – 5](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-05.png)
 
-4. Use m3\*6 screws to secure the steering wheel to the servo
+5. Install 4 lock nuts into the coupling. First, use 4 m3\*6 screws to fasten the coupling to the servo horn.
 
-![image – 5](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/5.jpg)
+![image – 6](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-06.png)
+![image – 7](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-07.png)
 
-5. Install 4 locknuts into the coupling, and use 4 M3\*6 screws to secure the coupling to the steering wheel.
-
-![image – 6](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/6.jpg)
-
-![image – 7](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/7.jpg)
-
-6. Use M3\*25 machine screws and locknuts to secure the 82mm omnidirectional wheel to the coupling
+6. Use m3\*25 machine screws and lock nuts to secure the 82mm omni wheels to the coupling.
 
 
 
-After all three wheels are installed on the base plate: 
+Once all three wheels are installed on the base plate:
 
-![image – 8](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/8.jpg)
+![image – 8](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-08.png)
+![image – 9](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-09.jpg)
 
-![image – 9](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/9.jpg)
-
-![image – 10](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/10.jpg)
+![image – 10](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-10.png)
 
 ## 2. Base Plate Assembly
 
-1. Insert M3 nuts into the holes of the servo driver board and battery mount. Secure both to the base plate with 4 M3x12 machine screws.
+1. Insert 2 M3 nuts into the holes of the servo driver board and battery mount. Use 4 M3x12 hex screws to fasten both to the base plate.
 
-![image – 11](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/11.jpg)
+![image – 11](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-11.png)
+![image – 12](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-12.png)
 
-![image – 12](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/12.jpg)
+2. Use 2 M3\*12 hex screws and 2 M3 nuts to install the servo driver board and connect it to the 3 servos.
 
-2. Install the servo driver board using four M2.5\*6.5 copper pillars and four M2.5\*8 screws, and connect it to 3 servos.
+![image – 13](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-13.png)
 
-![image – 13](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/13.jpg)
+Portable power supply cable connections
 
-Mobile Power Cable Connection
+- The **power input** connects directly to the power supply
 
-- **Power input ** directly connected to the power supply 
+![image – 14](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-14.png)
+![image – 15](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-15.png)
 
-![image – 14](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/14.jpg)
+- The **USB-C** interface supplies 5V power to the Raspberry Pi
+- If you use a **12V robot arm**, power the **servo motor board** directly with the **DC power distributor**
 
-![image – 15](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/15.jpg)
+![image – 16](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-16.png)
+![image – 17](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-17.png)
 
-- **USB-C** interface provides 5V power to the Raspberry Pi
+The cables can be connected as shown in the figure below:
 
-- If using ** 12V robotic arm **, directly use ** DC power distributor ** to power ** servo motor board **. 
+![image – 18](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-18.png)
 
-![image – 16](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/16.jpg)
-
-![image – 17](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/17.jpg)
-
-The cable can be connected as shown in the figure below: 
-
-![image – 18](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/18.jpg)
-
-## 3. Roof Panel Assembly
+## 3. Top Plate Assembly
 
 1. Place the Raspberry Pi 5 into the bottom of the Raspberry Pi case, then snap on the top of the case.
 
-2. Secure the Raspberry Pi to the top base plate using two M3x12 machine screws and two M3 locknuts, and install the SO-101 robotic arm base using four M4x25 machine screws and four M4 locknuts. You can use either our improved SO-101 base or the original base, as mounting holes for both types of bases are pre-drilled on the base plate.
+2. Use two M3x16 hex screws and two M3 nuts to fasten the Raspberry Pi to the top base plate, and use four M4x25 machine screws and four M4 nuts to install the SO-101 robot arm base.
 
-![image – 19](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/19.jpg)
+![image – 19](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-19.png)
 
-## IV.
+## 4.
 
-1. Thread the USB-C to USB-A cable of the servo driver board, the 5V USB-C power cable, and the SO0-101 servo cable through the holes in the top and bottom plates.
+1. Route the servo driver board USB-C to USB-A cable, the 5V USB-C power cable, and the servo cables through the holes in the top plate.
 
-![image – 20](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/20.jpg)
+![image – 20](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-20.png)
 
-2. Install the top and bottom plates onto the motor bracket using 6 M3x12 machine screws and 6 M3 locknuts.
+2. Use 8 m3x16 machine screws and 4 m3 nuts to install the top plate onto the motor brackets.
 
-![image – 21](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/21.jpg)
-
-3. Connect the top plate and bottom plate using 6 M3\*50 copper pillars and 6 M3\* machine screws
+![image – 21](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-21.png)
 
 
 
-## 5. Install the camera
+## 5. Installing the Cameras
 
-*Note: The bracket we designed is specifically tailored for the camera we selected. Modifications may be required for different camera modules.*
+*Note: the bracket we designed is tailored to the camera we selected. Different camera modules may require modifications.*
 
-### (Option 1) Install the front-view camera 
+## (Option 1) Installing the Front-Facing Camera
 
-Install the front-view camera bracket to the base plate using 3 M3\*12 machine screws and 3 M3 nuts 
+①Use 4 m2\*5\*5 spacer screws to fasten the camera module
 
+②Use 2 m3\*12 machine screws and 2 m3 nuts to install the front-facing camera bracket onto the base plate
 
+![image – 22](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-22.webp)
+![image – 23](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-23.webp)
 
-Secure the camera module with 4 m2\*5\*5 washer screws 
+## (Option 2) Installing the Arm-Mounted Camera
 
+Use 4 m2\*5\*5 spacer screws to fasten the camera module
 
+This bracket supports cameras with a hole spacing of 24\*25mm or 28\*28mm
 
-### (Option 2) Install an arm-mounted camera 
+![image – 24](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-24.png)
 
+![image – 25](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-25.png)
 
+## 6. Plugging In Power and Wiring
 
-Secure the camera module with 4 m2\*5\*5 washer screws 
+Plug the DC barrel plug adapter into the **servo driver board**;
 
-## 6. Plug in the power supply
+Plug the 5V USB-C connector into the **Raspberry Pi 5** to power the electronics;
 
+The USB data cables for the servo driver board and the cameras can be plugged directly into the Raspberry Pi.
 
-
-Insert the DC cylindrical plug adapter into the servo driver board, and insert the 5V USB-C connector into the Raspberry Pi 5 to power the electronic devices. The USB data cables of the servo driver board and camera can be directly plugged into the Raspberry Pi.
-
-![Option 2 Install an arm-mounted camera – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/22.jpg)
-
-
-
+![image – 26](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-26.png)

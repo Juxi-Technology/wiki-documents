@@ -13,7 +13,13 @@ Welcome to the robot accessory tutorials! Here you'll find guides for various ro
 
 - [USB Auto-Focus Camera](./usb-auto-focus-camera.md)
 - [Jetson CSI Camera](./jetson-csi-camera.md)
-- [2-DOF Camera Gimbal](./2dof-camera-gimbal.md)
+- [2-DOF Camera Gimbal](/tutorials/accessories/2dof-camera-gimbal/)
+  - [Quick Start Guide](/tutorials/accessories/2dof-camera-gimbal/01-Quick-Start-Guide)
+  - [Hardware and Environment Setup](/tutorials/accessories/2dof-camera-gimbal/02-Hardware-and-Environment-Setup)
+  - [Basic Usage](/tutorials/accessories/2dof-camera-gimbal/03-Basic-Usage)
+  - [Advanced Features and Tracking](/tutorials/accessories/2dof-camera-gimbal/04-Advanced-Features-and-Tracking)
+  - [Troubleshooting](/tutorials/accessories/2dof-camera-gimbal/05-Troubleshooting)
+  - [Product Info](/tutorials/accessories/2dof-camera-gimbal/Product-Info)
 - [Heart Rate & SpO2 Sensor](./heart-rate-spo2.md)
 
 ### KWS Speech Recognition Module
@@ -32,9 +38,11 @@ AI wake-up sound card, supporting offline voice wake-up, custom wake-up words, a
 
 ESP32-S3 video streaming and AI vision module, supporting 8 AI modes, AP+STA dual-mode streaming and voice interaction.
 
+- [ESP32-NanoCam Tutorial](./esp32-nanocam/)
 - [Quick Start](./esp32-nanocam/ESP32-NanoCam-Quick-Start.md)
 - [Hardware Spec](./esp32-nanocam/ESP32-NanoCam-Hardware-Spec.md)
 - [Serial Protocol Manual](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
+- [Code Downloads](./esp32-nanocam/ESP32-NanoCam-Code-Downloads.md)
 - [AI Vision Tutorial Chapter 1: Environment Setup](./esp32-nanocam/Ch01-Environment-Setup.md)
 
 #### AI Vision Tutorial (11 chapters)

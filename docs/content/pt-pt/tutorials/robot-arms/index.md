@@ -176,6 +176,7 @@ Carrinho robótico móvel totalmente open source, compatível com o framework de
 
 - [Tutorial do Lekiwi](./lekiwi/Lekiwi-Tutorial.md)
 - [Guia de montagem do Lekiwi](./lekiwi/Lekiwi-Assembly.md)
+- [Informações do produto](./lekiwi/Lekiwi-Product-Info.md)
 
 ### Curso SO-ARM101 + AmazingHand
 

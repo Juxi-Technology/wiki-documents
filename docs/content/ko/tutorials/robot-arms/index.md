@@ -176,6 +176,7 @@ description: "Juxi Technology 로봇 팔 시리즈 튜토리얼 홈——SO-ARM1
 
 - [Lekiwi 튜토리얼](./lekiwi/Lekiwi-Tutorial.md)
 - [Lekiwi 조립 튜토리얼](./lekiwi/Lekiwi-Assembly.md)
+- [제품 정보](./lekiwi/Lekiwi-Product-Info.md)
 
 ### SO-ARM101 + AmazingHand 튜토리얼
 

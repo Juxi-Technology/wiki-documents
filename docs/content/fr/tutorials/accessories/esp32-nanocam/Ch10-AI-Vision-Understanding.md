@@ -11,9 +11,8 @@ description: "Tutoriel ESP32-NanoCam chapitre 10 : prendre une photo en mode ESP
 
 ## À propos de ce chapitre
 
-La compréhension visuelle par IA est une fonctionnalité exclusive d'**ESP-Claw (mode 7)**, absente de XiaoZhi AI (mode 6).
-
-> Les outils `self.camera.take_photo` et `self.camera.inspect_image` utilisés dans ce chapitre : l'adresse de l'API d'analyse visuelle est fournie automatiquement par le serveur lors du handshake MCP via le champ `capabilities.vision`. Aucune URL d'API n'est à configurer manuellement côté firmware — la configuration de l'API se fait donc dans la console xiaozhi.me ou sur le serveur auto-hébergé ; voir pour cela le [Chapitre 11 : Contrôle vocal ESP-Claw](./Ch11-ESP-Claw-Voice-Control.md).
+La compréhension visuelle par IA est une fonctionnalité exclusive d'**ESP-Claw (mode 7)** ; elle n'est pas utilisée dans XiaoZhi AI (mode 6).
+> Les outils `self.camera.take_photo` et `self.camera.inspect_image` utilisés dans ce chapitre : l'adresse de l'API d'analyse visuelle est fournie automatiquement par le serveur lors du handshake MCP via le champ `capabilities.vision`. Aucune URL d'API n'est à configurer manuellement côté firmware — la configuration de l'API se fait dans la console xiaozhi.me ou sur le serveur auto-hébergé ; voir pour cela le [Chapitre 11 : Contrôle vocal ESP-Claw](./Ch11-ESP-Claw-Voice-Control.md).
 
 ## Principe
 
@@ -35,9 +34,9 @@ Commande vocale « regarde ce qu'il y a sur la table »
 |Outil|Utilisation|Qui émet la Vision API|
 |---|---|---|
 |`self.camera.take_photo`|Prendre une photo puis la décrire via la capacité de vision intégrée du LLM|Serveur|
-|`self.camera.inspect_image` (spécifique NanoCam)|Prendre une photo puis appeler `camera->Explain()` → HTTP POST vers une API multimodale dédiée|Firmware|
+|`self.camera.inspect_image` (spécifique NanoCam)|Prendre une photo puis appeler `camera->Explain()` → HTTP POST vers une API multimodale indépendante|Firmware|
 
-La différence entre les deux : `take_photo` passe par la vision LLM du serveur XiaoZhi (implémentation générique), tandis que `inspect_image` est l'implémentation dédiée de ce projet : le firmware appelle directement une API multimodale indépendante (dont l'adresse est fournie par le serveur).
+La différence entre les deux : `take_photo` passe par la vision LLM du serveur XiaoZhi (implémentation générique), tandis que `inspect_image` est l'implémentation dédiée de ce projet — le firmware appelle directement une API multimodale indépendante (dont l'adresse est fournie par le serveur).
 
 ## Étapes
 
@@ -63,7 +62,7 @@ Après l'éveil, posez directement votre question :
 💬 « Regarde ce qui est écrit sur cette feuille »
 ```
 
-NanoCam prend la photo, l'envoie, l'analyse, puis répond vocalement.
+Le NanoCam prend une photo, l'envoie, l'analyse, puis répond vocalement.
 
 ### 10.3 Exemples de reconnaissance de scène
 
@@ -76,7 +75,7 @@ NanoCam prend la photo, l'envoie, l'analyse, puis répond vocalement.
 
 ## Code
 
-### Rappel principal photo + analyse
+### Callback principal de prise de vue + analyse
 
 `nanocam_espclaw/main/boards/nanocam/nanocam_board.cc` — enregistrement de l'outil MCP :
 
@@ -119,7 +118,7 @@ std::string Esp32Camera::Explain(const std::string &question) {
 
 À réception, le firmware appelle `camera->SetExplainUrl(url, token)` pour sauvegarder l'adresse de l'API, utilisée directement lors des appels `inspect_image` suivants.
 
-## Modèles multimodaux compatibles
+## Modèles multimodaux pris en charge
 
 En fournissant différentes `vision.url` côté serveur, vous pouvez utiliser n'importe quelle API compatible OpenAI :
 
@@ -133,7 +132,7 @@ En fournissant différentes `vision.url` côté serveur, vous pouvez utiliser n'
 
 ## Résultat
 
-« Regarde ce qu'il y a ici » → prise de vue + envoi → analyse IA → annonce vocale « I see a red cup on a wooden table » — de véritables yeux pour l'IA.
+« Regarde ce qu'il y a ici » → photo et envoi → analyse de l'IA → annonce vocale « I see a red cup on a wooden table » — de véritables yeux pour l'IA.
 
 Chapitre suivant : [Chapitre 11 : Contrôle vocal ESP-Claw](./Ch11-ESP-Claw-Voice-Control.md)
 

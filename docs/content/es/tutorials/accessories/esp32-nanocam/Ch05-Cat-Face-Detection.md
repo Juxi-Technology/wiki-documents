@@ -30,7 +30,7 @@ La detección de caras de gatos usa el modelo CatFaceDetectMN03, entrenado y opt
 ai_mode:1
 ```
 
-El dispositivo se reinicia automáticamente y entra en el modo de detección de caras de gatos
+El dispositivo se reinicia automáticamente y entra en el modo de detección de caras de gatos.
 
 > Consulta el [manual del protocolo de puerto serie](./ESP32-NanoCam-Serial-Protocol.md) para ver todos los comandos.
 
@@ -47,7 +47,6 @@ I (xxxxx) detection_result: [ 0]: ( 45,  30, 180, 210)
 ```
 
 - Formato: `[número] (x, y, w, h)` — coordenadas de la esquina superior izquierda del cuadro de la cara de gato + ancho y alto
-
 - El modelo de cara de gato no emite puntos clave (a diferencia de la detección de rostros)
 
 ## Código
@@ -67,7 +66,7 @@ if (detect_results.size() > 0) {
 }
 ```
 
-### Leer coordenadas con Arduino para controlar un servo
+### Leer las coordenadas con Arduino para controlar un servo
 
 ```C++
 // Parsear el formato $face:x,y,w,h#

@@ -7,132 +7,124 @@ description: "Tutorial de montagem do robô móvel Lekiwi: módulos de rodas, pl
 
 > **[Comprar na loja](https://www.juxitech.com/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
 
-
-[*As posições precisas dos componentes podem ser visualizadas no CAD online Fusion360*](https://a360.co/4k1P8yO)*.*
+[*No CAD online do Fusion360*](https://a360.co/4k1P8yO)* pode visualizar as posições exatas dos componentes.*
 
 [Ficheiro URDF](https://gitcode.com/gh_mirrors/le/LeKiwi/tree/main)
 
-Visualização online do URDF https://urdf.d-robotics.cc/
+Pré-visualização online do URDF https://urdf.d-robotics.cc/
 
-## 1. Monte o módulo de rodas (3 por robô)
+## 1. Montagem dos módulos de roda (3 por robot)
 
-1. Fixe o motor de tração ao suporte do motor a usar 12 parafusos autorroscantes **M2x6**. (Acompanham a caixa de servos)
+1. Utilize 12 parafusos auto-roscantes **M2x6** para fixar o motor de acionamento ao suporte do motor. (Incluídos na caixa do servo.)
 
-![imagem – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/1.jpg)
+![image – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-01.png)
+![image – 2](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-02.png)
 
-![imagem – 2](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/2.jpg)
+2. Utilize 12 parafusos de máquina **M3x16** e 12 **porcas M3** para fixar os servos à placa de base com os suportes do motor de acionamento.
 
-2. Fixe o suporte do motor de tração à placa base com 12 **parafusos de máquina M3x16 e 12**.
+![image – 3](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-03.jpg)
 
-![imagem – 3](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/3.jpg)
+3. Remova os parafusos de máquina e as porcas das rodas omnidirecionais de 82mm.
 
-3. Remova os parafusos de máquina e as porcas da roda omnidirecional de 82 mm
+![image – 4](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-04.png)
 
-![imagem – 4](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/4.jpg)
+4. Utilize parafusos m3\*6 para fixar o suporte do servo ao servo.
 
-4. Use parafusos m3\*6 para fixar a roda de direção ao servo
+![image – 5](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-05.png)
 
-![imagem – 5](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/5.jpg)
+5. Instale 4 porcas de bloqueio no acoplamento. Primeiro, utilize 4 parafusos m3\*6 para fixar o acoplamento ao suporte do servo.
 
-5. Instale 4 porcas de trava no acoplamento e use 4 parafusos M3\*6 para fixar o acoplamento à roda de direção.
+![image – 6](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-06.png)
+![image – 7](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-07.png)
 
-![imagem – 6](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/6.jpg)
-
-![imagem – 7](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/7.jpg)
-
-6. Use parafusos de máquina M3\*25 e porcas de trava para fixar a roda omnidirecional de 82 mm ao acoplamento
+6. Utilize parafusos de máquina m3\*25 e porcas de bloqueio para fixar as rodas omnidirecionais de 82mm ao acoplamento.
 
 
 
-Depois que as três rodas forem instaladas na placa base: 
+Depois de as três rodas estarem instaladas na placa de base:
 
-![imagem – 8](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/8.jpg)
+![image – 8](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-08.png)
+![image – 9](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-09.jpg)
 
-![imagem – 9](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/9.jpg)
+![image – 10](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-10.png)
 
-![imagem – 10](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/10.jpg)
+## 2. Montagem da placa de base
 
-## 2. Montagem da placa base
+1. Insira 2 porcas M3 nos furos da placa controladora de servos e do suporte da bateria. Utilize 4 parafusos sextavados M3x12 para fixar ambos à placa de base.
 
-1. Insira as porcas M3 nos furos da placa de acionamento de servos e do suporte da bateria. Fixe ambos à placa base com 4 parafusos de máquina M3x12.
+![image – 11](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-11.png)
+![image – 12](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-12.png)
 
-![imagem – 11](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/11.jpg)
+2. Utilize 2 parafusos sextavados M3\*12 e 2 porcas M3 para instalar a placa controladora de servos e ligá-la aos 3 servos.
 
-![imagem – 12](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/12.jpg)
+![image – 13](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-13.png)
 
-2. Instale a placa de acionamento de servos a usar quatro pilares de cobre M2.5\*6.5 e quatro parafusos M2.5\*8, e conecte-a aos 3 servos.
+Ligações dos cabos da fonte de alimentação portátil
 
-![imagem – 13](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/13.jpg)
+- A **entrada de alimentação** liga-se diretamente à fonte de alimentação
 
-Conexão do cabo de energia do robô móvel
+![image – 14](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-14.png)
+![image – 15](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-15.png)
 
-- **Entrada de energia** conectada diretamente à fonte de alimentação 
+- A interface **USB-C** fornece alimentação de 5V à Raspberry Pi
+- Se utilizar um **braço robótico de 12V**, alimente a **placa do motor de servo** diretamente com o **distribuidor de alimentação DC**
 
-![imagem – 14](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/14.jpg)
+![image – 16](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-16.png)
+![image – 17](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-17.png)
 
-![imagem – 15](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/15.jpg)
+Os cabos podem ser ligados como mostra a figura abaixo:
 
-- A interface **USB-C** fornece energia de 5V ao Raspberry Pi
-
-- Se você usar um **braço robótico de 12V**, use diretamente o **distribuidor de energia CC** para alimentar a **placa do motor servo**. 
-
-![imagem – 16](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/16.jpg)
-
-![imagem – 17](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/17.jpg)
-
-O cabo pode ser conectado como mostra a figura abaixo: 
-
-![imagem – 18](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/18.jpg)
+![image – 18](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-18.png)
 
 ## 3. Montagem da placa superior
 
-1. Coloque o Raspberry Pi 5 na parte inferior do gabinete do Raspberry Pi e encaixe a tampa do gabinete.
+1. Coloque a Raspberry Pi 5 no fundo da caixa da Raspberry Pi e, em seguida, encaixe a tampa da caixa.
 
-2. Fixe o Raspberry Pi à placa base superior com dois parafusos de máquina M3x12 e duas porcas de trava M3, e instale a base do braço robótico SO-101 com quatro parafusos de máquina M4x25 e quatro porcas de trava M4. Você pode usar tanto a nossa base SO-101 melhorada quanto a base original, pois a placa base já tem os furos de montagem para os dois tipos de base.
+2. Utilize dois parafusos sextavados M3x16 e duas porcas M3 para fixar a Raspberry Pi à placa de base superior, e utilize quatro parafusos de máquina M4x25 e quatro porcas M4 para instalar a base do braço robótico SO-101.
 
-![imagem – 19](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/19.jpg)
+![image – 19](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-19.png)
 
 ## 4.
 
-1. Passe o cabo USB-C para USB-A da placa de acionamento de servos, o cabo de alimentação USB-C de 5V e o cabo do servo SO0-101 pelos furos das placas superior e inferior.
+1. Passe o cabo USB-C para USB-A da placa controladora de servos, o cabo de alimentação USB-C de 5V e os cabos dos servos pelos furos da placa superior.
 
-![imagem – 20](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/20.jpg)
+![image – 20](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-20.png)
 
-2. Instale as placas superior e inferior no suporte do motor com 6 parafusos de máquina M3x12 e 6 porcas de trava M3.
+2. Utilize 8 parafusos de máquina m3x16 e 4 porcas m3 para instalar a placa superior nos suportes do motor.
 
-![imagem – 21](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/21.jpg)
-
-3. Conecte as placas superior e inferior com 6 pilares de cobre M3\*50 e 6 parafusos de máquina M3\*
+![image – 21](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-21.png)
 
 
 
-## 5. Instale a câmara
+## 5. Instalação das câmaras
 
-*Observação: o suporte que projetamos é específico para a câmara que selecionamos. Podem ser necessárias modificações para módulos de câmara diferentes.*
+*Nota: o suporte que concebemos é feito à medida da câmara que selecionámos. Módulos de câmara diferentes podem exigir modificações.*
 
-### (Opção 1) Instalar a câmara de visão frontal 
+## (Opção 1) Instalação da câmara frontal
 
-Instale o suporte da câmara de visão frontal na placa base com 3 parafusos de máquina M3\*12 e 3 porcas M3 
+①Utilize 4 parafusos espaçadores m2\*5\*5 para fixar o módulo da câmara
 
+②Utilize 2 parafusos de máquina m3\*12 e 2 porcas m3 para instalar o suporte da câmara frontal na placa de base
 
+![image – 22](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-22.webp)
+![image – 23](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-23.webp)
 
-Fixe o módulo da câmara com 4 parafusos com arruela m2\*5\*5 
+## (Opção 2) Instalação da câmara montada no braço
 
+Utilize 4 parafusos espaçadores m2\*5\*5 para fixar o módulo da câmara
 
+Este suporte é compatível com câmaras com espaçamento entre furos de 24\*25mm ou 28\*28mm
 
-### (Opção 2) Instalar uma câmara montada no braço 
+![image – 24](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-24.png)
 
+![image – 25](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-25.png)
 
+## 6. Ligação da alimentação e cablagem
 
-Fixe o módulo da câmara com 4 parafusos com arruela m2\*5\*5 
+Ligue o adaptador de ficha cilíndrica DC à **placa controladora de servos**;
 
-## 6. Conecte a alimentação
+Ligue o conector USB-C de 5V à **Raspberry Pi 5** para alimentar a eletrónica;
 
+Os cabos de dados USB da placa controladora de servos e das câmaras podem ser ligados diretamente à Raspberry Pi.
 
-
-Insira o adaptador com ficha cilíndrico CC na placa de acionamento de servos e conecte o conector USB-C de 5V ao Raspberry Pi 5 para alimentar os dispositivos eletrônicos. Os cabos de dados USB da placa de acionamento de servos e da câmara podem ser conectados diretamente ao Raspberry Pi.
-
-![Opção 2 Instalar uma câmara montada no braço – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/22.jpg)
-
-
-
+![image – 26](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-26.png)

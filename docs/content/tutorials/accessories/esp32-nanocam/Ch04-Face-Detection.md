@@ -16,9 +16,7 @@ Face detection uses the ESP-DL deep learning library, based on a lightweight Mob
 ### Detection Result Format
 
 - Coordinates: top-left corner (x,y) + width and height (w,h)
-
 - Confidence: a floating-point number between 0 and 1
-
 - Multiple boxes are returned when there are multiple faces
 
 ## Steps
@@ -45,7 +43,6 @@ I (xxxxx) detection_result:       left eye: ( 90,  80), right eye: (150,  80), n
 ```
 
 - First line: `[index] (x, y, w, h)` — face box coordinates
-
 - Second line: 5 keypoints — left eye, right eye, nose, mouth left, mouth right
 
 ## Code

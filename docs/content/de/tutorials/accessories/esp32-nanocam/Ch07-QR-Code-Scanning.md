@@ -12,14 +12,10 @@ description: "Kapitel 7 des ESP32-NanoCam-Tutorials: QR-Codes/Barcodes mit esp-c
 ## Funktionsprinzip
 
 Die vorkompilierte Bibliothek esp-code-scanner dekodiert QR-Codes (QR Code / Barcode) im Bild in Echtzeit. Die von der Kamera ausgegebenen RGB565-Frames werden direkt an den Scanner übergeben — eine Graustufenkonvertierung ist nicht erforderlich. Für jeden Frame wird ein neues Scanner-Objekt erstellt und nach dem Scan wieder zerstört, um eine Ansammlung internen Zustands zu vermeiden.
-
 Die Dekodierungsergebnisse werden gleichzeitig ausgegeben über:
-
 1. **Serielles Log**
-
-2. Den **gemeinsamen Puffer** `g_last_code`, der das neueste Ergebnis für die Überlagerung im HTTP-/MJPEG-Stream speichert
-
-3. Grüne Textüberlagerung **am unteren Rand des Web-Bilds**
+2. **Gemeinsamer Puffer** `g_last_code`, der das neueste Ergebnis für die Überlagerung im HTTP-/MJPEG-Stream speichert
+3. **Grüne Textüberlagerung** am unteren Rand des Web-Bilds
 
 ## Schritte
 

@@ -1,9 +1,9 @@
 ---
-title: 第 9 章:音声対話
+title: "第 9 章:音声対話 (XiaoZhi AI)"
 description: "ESP32-NanoCam チュートリアル第 9 章。小智 AI フレームワークでクラウドに接続し、ASR、LLM、TTS による全二重音声対話を実現する方法を解説します。"
 ---
 
-# 第 9 章:音声対話
+# 第 9 章:音声対話 (XiaoZhi AI)
 
 > **[ストアで購入](https://www.juxitech.com/ja/products/esp32-s3-wifi-video-module)**
 
@@ -11,7 +11,7 @@ description: "ESP32-NanoCam チュートリアル第 9 章。小智 AI フレー
 
 ## 本章について
 
-本章では XiaoZhi AI モード(`ai_mode:6`)を扱います。**重要**:モード 6(音声対話)とモード 7(ESP-Claw)は**同じ 1 つのファームウェア**(`nanocam_espclaw/`)を共用し、デバイス起動時に NVS に保存された `ai_mode` 値に応じて異なる MCP ツールセットをロードするだけの違いです。
+本章では XiaoZhi AI モード(`ai_mode:6`)を扱います。**重要**: モード 6(音声対話)とモード 7(ESP-Claw)は**同じファームウェア**(`nanocam_espclaw/`)を共用し、デバイス起動時に NVS に保存された `ai_mode` 値に応じて異なる MCP ツールセットをロードするだけの違いです。
 
 |比較項目|XiaoZhi AI (mode 6)|ESP-Claw (mode 7)|
 |---|---|---|
@@ -21,7 +21,7 @@ description: "ESP32-NanoCam チュートリアル第 9 章。小智 AI フレー
 |LED 制御|❌|✅ 音声で色調整|
 |適用シーン|汎用 AI 対話、子供の教育|ハードウェア制御、ビジュアル点検、スマートホーム|
 
-> 本章は **XiaoZhi AI(モード 6)** の音声対話の中核機能に焦点を当てます。ESP-Claw のハードウェア制御機能については[第 11 章:ESP-Claw 音声制御](./Ch11-ESP-Claw-Voice-Control.md)をお読みください。
+> 本章は **XiaoZhi AI(モード 6)** の音声対話の中核機能に焦点を当てます。ESP-Claw のハードウェア制御機能については、[第11章](./Ch11-ESP-Claw-Voice-Control.md): ESP-Claw 音声制御をお読みください。
 
 ## 原理
 
@@ -35,18 +35,14 @@ NanoCam は小智 AI オープンソースフレームワークを統合し、We
   → NS4150B アンプ → スピーカー再生
 ```
 
-全二重設計:AI が話している最中でもユーザーが直接割り込め(barge-in)、まるで人と会話しているかのような体験が得られます。
+全二重設計: AI が話している最中でもユーザーが直接割り込め(barge-in)、まるで人と会話しているかのような体験が得られます。
 
 ## ハードウェア要件
 
 本章は音声機能を扱うため、以下のハードウェアが必要です:
-
 - NanoCam コアボード(ES8311 Codec + AP2718AT マイク搭載)
-
 - NanoCam ベースボード(NS4150B アンプ + CH340K 搭載)
-
 - スピーカー(ベースボードのスピーカーインターフェース、VON/VOP に接続)
-
 > コアボードのみでもテストできます(ES8311 のヘッドホン出力でモニタリング)。マイクは AP2718AT アナログ MEMS シリコンマイクで、C26 の直流阻止コンデンサを介して ES8311 MIC1P に接続されています。
 
 ## 手順
@@ -67,15 +63,10 @@ idf.py -p COMx flash monitor
 ### 9.2 xiaozhi.me クラウドサービスへの接続
 
 NanoCam は出荷時から [xiaozhi.me](https://xiaozhi.me) 公式クラウドサービス(無料)に接続する設定で、自前サーバーの構築は不要です。
-
 1. [xiaozhi.me](https://xiaozhi.me) でアカウントを登録
-
 2. デバイスの電源を入れると、自動的に 6 桁のアクティベーションコードを読み上げます
-
 3. xiaozhi.me コンソールでアクティベーションコードを入力 → デバイスをバインド
-
 4. コンソールで LLM モデル(Qwen / DeepSeek など)を選択
-
 アクティベーションは 1 回だけで、以降は電源投入ごとに自動接続されます。
 
 ### 9.3 初回の対話
@@ -111,7 +102,6 @@ python app.py
 ```
 
 ファームウェアのサーバーアドレスは OTA システム(sdkconfig の `CONFIG_OTA_URL`)を通じて配信され、デバイスは電源投入後に自動的にサーバーアドレスを要求します。
-
 > XiaoZhi AI は小智 AI オープンソースサーバー(WebSocket 私有プロトコル + ASR/LLM/TTS パイプライン)を使用します。ESP-Claw モードではこれに加え、視覚分析機能の Vision API URL と token が MCP ハンドシェイク段階でサーバーから配信され、ファームウェア側で独自に設定する必要はありません。
 
 ## トラブルシューティング
@@ -123,9 +113,8 @@ python app.py
 |接続できない|WiFi が未設定|まずシリアルで設定 `sta_ssid:xxx`|
 |アクティベーションコードがない|初回起動が未完了|30 秒待つと、デバイスが自動的に読み上げます|
 |応答が遅い|LLM サーバー側の遅延|xiaozhi.me でより高速なモデルを選択、またはサーバーを自前構築|
-
 > シリアル設定などの完全なコマンドは[シリアルプロトコルマニュアル](./ESP32-NanoCam-Serial-Protocol.md)を参照。
 
-次の章:[第 10 章:AI 視覚理解](./Ch10-AI-Vision-Understanding.md)
+次の章:[第 10 章:AI 画像理解](./Ch10-AI-Vision-Understanding.md)
 
 <RelatedProducts slugs="esp32-s3-wifi-module" />

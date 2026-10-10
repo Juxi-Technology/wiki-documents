@@ -176,6 +176,7 @@ description: "鉅犀科技機械臂系列教程首頁——SO-ARM101、AmazingHa
 
 - [Lekiwi 使用教程](./lekiwi/Lekiwi-Tutorial.md)
 - [Lekiwi 組裝教程](./lekiwi/Lekiwi-Assembly.md)
+- [產品資料](./lekiwi/Lekiwi-Product-Info.md)
 
 ### SO-ARM101 + AmazingHand 教程
 

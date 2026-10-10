@@ -12,14 +12,10 @@ description: "Tutorial ESP32-NanoCam, Capítulo 7: descodificar códigos QR/cód
 ## Princípio
 
 Utiliza a biblioteca pré-compilada esp-code-scanner para descodificar em tempo real os códigos QR (QR Code / Barcode) presentes na imagem. Os fotogramas RGB565 emitidos pela câmara são enviados diretamente para o scanner, sem necessidade de conversão para escala de cinzentos. A cada fotograma é criado um novo objeto scanner, destruído logo após a leitura, evitando a acumulação de estado interno.
-
-O resultado da descodificação é simultaneamente:
-
-1. emitido no **registo da porta serial**
-
-2. guardado no **buffer partilhado** `g_last_code` como resultado mais recente, para sobreposição no fluxo HTTP/MJPEG
-
-3. sobreposto como **texto verde na parte inferior da imagem da página web**
+Os resultados da descodificação são apresentados simultaneamente:
+1. **no registo da porta série**
+2. **no buffer partilhado** `g_last_code`, que guarda o resultado mais recente para sobreposição no fluxo HTTP/MJPEG
+3. **na parte inferior da imagem da página web**, como texto verde sobreposto
 
 ## Passos
 
@@ -33,7 +29,7 @@ ai_mode:5
 
 ### 7.2 Ler o código
 
-Coloque o código QR em frente da câmara; a porta serial apresenta:
+Coloque o código QR em frente da câmara; a porta série apresenta:
 
 ```Plain
 I (xxxxx) qrcode: Decoded [QR-Code]: https://example.com
@@ -72,7 +68,7 @@ esp_code_scanner_destroy(scn);
 
 ## Efeito
 
-Aponte para o código QR → conteúdo descodificado na porta serial + sobreposição na imagem da página web.
+Aponte para o código QR → conteúdo descodificado na porta série + sobreposição na imagem da página web.
 
 Próximo capítulo: [Capítulo 8: Reconhecimento facial](./Ch08-Face-Recognition.md)
 

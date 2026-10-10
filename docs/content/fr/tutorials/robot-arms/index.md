@@ -177,6 +177,7 @@ Robot mobile entièrement open source, compatible LeRobot imitation learning et 
 
 - [Tutoriel Lekiwi](./lekiwi/Lekiwi-Tutorial.md)
 - [Montage Lekiwi](./lekiwi/Lekiwi-Assembly.md)
+- [Informations produit](./lekiwi/Lekiwi-Product-Info.md)
 
 ### Cours SO-ARM101 + AmazingHand
 

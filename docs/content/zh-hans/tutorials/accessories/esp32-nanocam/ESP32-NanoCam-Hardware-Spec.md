@@ -1,16 +1,18 @@
 ---
-title: ESP32-NanoCam 硬件规格书
+title: ESP32-S3 NanoCam 硬件规格书
 description: "ESP32-NanoCam 硬件规格书:解析双板架构、ESP32-S3 主控与 16MB Flash 引脚、DVP 摄像头和 ES8311 音频映射,附完整 GPIO 占用表。"
 ---
 
-# ESP32-NanoCam 硬件规格书
+# ESP32-S3 NanoCam 硬件规格书
 
 > **[ 淘宝店铺 ](https://juxitechnology.taobao.com)**
 
+> 来源：NanoCamModule.pdf + NanoCamBASE.pdf 原理图。
+> 架构：核心板（ESP32-S3 + 摄像头 + 音频）插接在底板（USB供电 + 串口烧录）上。
+
+---
 
 ## 一、硬件总览
-
-本节硬件资料来源于 NanoCamModule.pdf + NanoCamBASE.pdf 原理图。整机架构：核心板（ESP32-S3 + 摄像头 + 音频）插接在底板（USB 供电 + 串口烧录）上。
 
 ```Plaintext
 ┌─────────────────────────────────────────────────────────┐
@@ -38,6 +40,8 @@ description: "ESP32-NanoCam 硬件规格书:解析双板架构、ESP32-S3 主控
 ```
 
 ![图 1:核心板正面(ESP32-S3 / 摄像头 / 音频)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/1.png)
+
+---
 
 ## 二、主控与存储
 
@@ -70,6 +74,8 @@ description: "ESP32-NanoCam 硬件规格书:解析双板架构、ESP32-S3 主控
 |WP|IO34|写保护|
 |HOLD|IO33|保持|
 
+---
+
 ## 三、摄像头子系统
 
 ### 3.1 DVP 接口
@@ -81,8 +87,8 @@ description: "ESP32-NanoCam 硬件规格书:解析双板架构、ESP32-S3 主控
 |I2C 配置总线|SDA=IO41, SCL=IO42 (与外部 I2C 共用)|
 |像素格式|RGB565 / JPEG / YUV422 等|
 
-![图 5:GC2145 摄像头模组尺寸图(68° 视场角)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/5.png)
 
+![图 4:底板背面引脚丝印](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/4.png)
 ### 3.2 DVP 引脚全映射
 
 |信号类别|信号名|ESP32 GPIO|备注|
@@ -93,8 +99,8 @@ description: "ESP32-NanoCam 硬件规格书:解析双板架构、ESP32-S3 主控
 |**行同步**|HREF|**IO11**|水平参考|
 |**控制**|PWDN|**IO12**|摄像头断电控制|
 |**控制**|RESET|**IO14**|摄像头复位|
-|**I2C**|SDA|**IO41**|摄像头 I2C 数据 (与 ES8311 共用)|
-|**I2C**|SCL|**IO42**|摄像头 I2C 时钟 (与 ES8311 共用)|
+|**I2C**|SDA|**IO41**|摄像头 I2C 数据 (与ES8311共用)|
+|**I2C**|SCL|**IO42**|摄像头 I2C 时钟 (与ES8311共用)|
 |**数据 D0**|Y2|**IO4**|像素数据 bit0|
 |**数据 D1**|Y3|**IO2**|像素数据 bit1|
 |**数据 D2**|Y4|**IO1**|像素数据 bit2|
@@ -124,6 +130,8 @@ Camera DVP 信号组:
   SIOC(SCL) = IO42
 ```
 
+---
+
 ## 四、音频子系统
 
 ### 4.1 音频架构
@@ -138,7 +146,7 @@ AP2718AT (模拟MEMS麦) → ES8311 Codec (ADC/DAC) → NS4150B (模拟功放) �
 |---|---|---|---|
 |麦克风|**AP2718AT**|模拟 MEMS 硅麦|差分模拟 → ES8311 ADC|
 |编解码器|**ES8311**|音频 Codec (I2S+I2C)|I2S=MCLK=39,BCLK=38,WS=47,DOUT=48,DIN=40, I2C=41/42, addr=0x30|
-|功放|**NS4150B**|D 类模拟功放|ES8311 DAC 输出 → 模拟输入 → 扬声器|
+|功放|**NS4150B**|D类模拟功放|ES8311 DAC输出 → 模拟输入 → 扬声器|
 
 ### 4.2 ES8311 Codec I2S 引脚
 
@@ -159,6 +167,8 @@ AP2718AT (模拟MEMS麦) → ES8311 Codec (ADC/DAC) → NS4150B (模拟功放) �
 |SDA|IO41|与摄像头共用 I2C 总线|
 |SCL|IO42|与摄像头共用 I2C 总线|
 |地址|**0x30**|ES8311 8-bit I2C 地址|
+
+---
 
 ## 五、电源系统
 
@@ -192,9 +202,11 @@ USB-C (5V) ──→ 底板 NCE3401 P-MOSFET 反接保护 ──→ VDD50
 |反接保护|**NCE3401** P-MOSFET|底板电源输入保护|
 |栅极电阻|R11 10KΩ|P-MOS 栅极接地|
 
+---
+
 ## 六、底板与烧录
 
-![图 2:核心板背面引脚丝印(RXD/TXD/SCL/SDA/5V/GND 等)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/2.png)
+![图 5:GC2145 摄像头模组尺寸图(68° 视场角)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/5.png)
 
 ### 6.1 USB 转串口
 
@@ -206,8 +218,8 @@ USB-C (5V) ──→ 底板 NCE3401 P-MOSFET 反接保护 ──→ VDD50
 |USB 匹配电阻|R4, R5 22R/1% (D+/D- 串联)|
 |DTR/RTS|一键烧录自动控制 BOOT + EN|
 
-![图 3:底板正面(USB-C 与扩展接口)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/3.png)
 
+![图 2:核心板背面引脚丝印(RXD/TXD/SCL/SDA/5V/GND 等)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/2.png)
 ### 6.2 一键下载电路
 
 使用 Q1、Q2 (S8050 NPN 三极管) 实现自动烧录：
@@ -227,10 +239,10 @@ USB-C (5V) ──→ 底板 NCE3401 P-MOSFET 反接保护 ──→ VDD50
 |P1-2|P1-2|**VDD50**|—|5V 电源输出|
 |P1-3|P1-3|**GND**|—|电源地|
 |P1-4|P1-4|**GND**|—|电源地|
-|P1-5|P1-5|**SDA**|IO41|I2C 数据 (与摄像头/ES8311 共用)|
-|P1-6|P1-6|**SCL**|IO42|I2C 时钟 (与摄像头/ES8311 共用)|
-|P1-7|P1-7|**U0TXD**|IO43|串口 0 发送 (接 CH340K RXD)|
-|P1-8|P1-8|**U0RXD**|IO44|串口 0 接收 (接 CH340K TXD)|
+|P1-5|P1-5|**SDA**|IO41|I2C 数据 (与摄像头/ES8311共用)|
+|P1-6|P1-6|**SCL**|IO42|I2C 时钟 (与摄像头/ES8311共用)|
+|P1-7|P1-7|**U0TXD**|IO43|串口0 发送 (接 CH340K RXD)|
+|P1-8|P1-8|**U0RXD**|IO44|串口0 接收 (接 CH340K TXD)|
 |**P2-1**|P2-1|**ESP_P**|IO20|USB 差分数据正 (D+)|
 |**P2-2**|P2-2|**ESP_N**|IO19|USB 差分数据负 (D-)|
 |P2-3|P2-3|**VDD33**|—|3.3V 电源输出|
@@ -240,8 +252,8 @@ USB-C (5V) ──→ 底板 NCE3401 P-MOSFET 反接保护 ──→ VDD50
 |P2-7|P2-7|**BOOT**|IO0|启动模式/烧录|
 |P2-8|P2-8|**CHIP_PU**|EN|芯片复位控制|
 
-![图 4:底板背面引脚丝印](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/4.png)
 
+![图 3:底板正面(USB-C 与扩展接口)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/3.png)
 ### 6.4 底板扩展接口
 
 |接口|引出信号|用途|
@@ -249,13 +261,15 @@ USB-C (5V) ──→ 底板 NCE3401 P-MOSFET 反接保护 ──→ VDD50
 |P3 (I2C, 4Pin)|5V1, GND, SDA, SCL|外部 I2C 设备|
 |P4 (UART, 4Pin)|5V1, GND, ESP_P, ESP_N|外部 USB/串口设备|
 
+---
+
 ## 七、完整 GPIO 占用表
 
 > **总计**: 33 个 GPIO 被占用，可用 GPIO 约 8 个。
 
 |GPIO|功能|信号|备注|
 |---|---|---|---|
-|**IO0**|BOOT|BOOT|启动模式/烧录 (S2 按键, 10K 上拉 + 0.1μF 消抖)|
+|**IO0**|BOOT|BOOT|启动模式/烧录 (S2按键, 10K上拉 + 0.1μF消抖)|
 |**IO1**|DVP D2|CAM_Y4|像素数据 bit2|
 |**IO2**|DVP D1|CAM_Y3|像素数据 bit1|
 |**IO3**|DVP D3|CAM_Y5|像素数据 bit3|
@@ -271,8 +285,8 @@ USB-C (5V) ──→ 底板 NCE3401 P-MOSFET 反接保护 ──→ VDD50
 |**IO13**|DVP VSYNC|CAM_VSYNC|帧同步|
 |**IO14**|DVP RESET|CAM_RESET|摄像头复位|
 |**IO18**|WS2812|RGB_LED_DIN|WS2812 RGB LED 数据输入|
-|**IO19**|USB 差分|D- (ESP_N)|USB 差分数据负 (D-)|
-|**IO20**|USB 差分|D+ (ESP_P)|USB 差分数据正 (D+)|
+|**IO19**|USB差分|D- (ESP_N)|USB 差分数据负 (D-)|
+|**IO20**|USB差分|D+ (ESP_P)|USB 差分数据正 (D+)|
 |**IO21**|WS2812 DOUT|RGB_LED_DOUT|WS2812 级联输出 (未级联时可用)|
 |**IO29**|SPI CS|Flash_CS|外置 Flash 片选|
 |**IO30**|SPI SCLK|Flash_CLK|外置 Flash 时钟|
@@ -283,15 +297,15 @@ USB-C (5V) ──→ 底板 NCE3401 P-MOSFET 反接保护 ──→ VDD50
 |**IO38**|I2S BCLK|I2S_BCLK|ES8311 位时钟|
 |**IO39**|I2S MCLK|I2S_MCLK|ES8311 主时钟|
 |**IO40**|I2S DIN|I2S_DIN|ES8311 ADC 数据输入|
-|**IO41**|I2C SDA|I2C_SDA|摄像头 + ES8311 + 外部 I2C 共用|
-|**IO42**|I2C SCL|I2C_SCL|摄像头 + ES8311 + 外部 I2C 共用|
-|**IO43**|UART0 TX|UTXD|串口 0 发送 (底板 CH340K)|
-|**IO44**|UART0 RX|URXD|串口 0 接收 (底板 CH340K)|
+|**IO41**|I2C SDA|I2C_SDA|摄像头+ES8311+外部 I2C 共用|
+|**IO42**|I2C SCL|I2C_SCL|摄像头+ES8311+外部 I2C 共用|
+|**IO43**|UART0 TX|UTXD|串口0 发送 (底板 CH340K)|
+|**IO44**|UART0 RX|URXD|串口0 接收 (底板 CH340K)|
 |**IO47**|I2S WS|I2S_WS|ES8311 字选择 (LRCK)|
 |**IO48**|I2S DOUT|I2S_DOUT|ES8311 DAC 数据输出|
-|**EN**|CHIP_PU|RST/EN|使能/复位 (S1 按键, 10K 上拉)|
+|**EN**|CHIP_PU|RST/EN|使能/复位 (S1按键, 10K上拉)|
 
-### 可用 GPIO（未占用，可扩展）
+### 可用 GPIO (未占用，可扩展)
 
 |GPIO|特性|建议用途|
 |---|---|---|
@@ -305,15 +319,16 @@ USB-C (5V) ──→ 底板 NCE3401 P-MOSFET 反接保护 ──→ VDD50
 |IO46|通用 IO|扩展|
 
 > ⚠️ 已占用 GPIO: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,18,19,20,21,29,30,31,32,33,34,38,39,40,41,42,43,44,47,48
->
-> 可用数量: 8 个 GPIO
+可用数量: 8 个 GPIO
+
+---
 
 ## 八、关键设计约束
 
 ### 8.1 I2S 外设配置
 
 - ESP32-S3 有两个 I2S 控制器：
-    - **I2S0**: 已分配给 ES8311 Codec (MCLK=IO39, BCLK=IO38, WS=IO47, DOUT=IO48, DIN=IO40)，双向 I2S Duplex，同时支持录音和播放
+  - **I2S0**: 已分配给 ES8311 Codec (MCLK=IO39, BCLK=IO38, WS=IO47, DOUT=IO48, DIN=IO40)，双向 I2S Duplex，同时支持录音和播放
 - ES8311 I2C 控制: SDA=IO41, SCL=IO42, 器件地址 0x30
 
 ### 8.2 DVP 与 I2S DMA 共存
@@ -333,18 +348,20 @@ USB-C (5V) ──→ 底板 NCE3401 P-MOSFET 反接保护 ──→ VDD50
 ### 8.4 Flash 容量充足
 
 - **16MB Flash** 空间充裕，可以支持：
-    - OTA 双分区方案 (factory + ota_0 + ota_1)
-    - SPIFFS 存放 Web 管理后台 (~1MB)
-    - 小智 AI 多语言资源包 (.p3 文件)
-    - NVS 配置分区
-    - 预留升级空间
-- 无需担心固件体积，多 Agent AI 可以完整装入
+  - OTA 双分区方案 (factory + ota_0 + ota_1)
+  - SPIFFS 存放 Web 管理后台 (~1MB)
+  - 小智AI多语言资源包 (.p3 文件)
+  - NVS 配置分区
+  - 预留升级空间
+- 无需担心固件体积，多Agent AI可以完整装入
 
 ### 8.5 DVP 摄像头输入引脚约束
 
 - D0-D7 及 VSYNC/HREF/PCLK 均为输入引脚，由摄像头传感器驱动
 - 驱动程序开发时必须确保这些引脚仅配置为 INPUT 模式
 - I2S 音频引脚 (38,39,40,47,48) 可配置为输出模式 (ESP32-S3 支持)
+
+---
 
 ## 九、ESP-IDF 配置建议
 

@@ -37,9 +37,7 @@ Enrolled face features (id + 512-dimensional embedding) are persistently stored 
 ## Hardware Preparation
 
 - NanoCam core board + base board
-
 - USB-C data cable (connects to the computer for power + serial)
-
 - Serial terminal (baud rate 115200)
 
 ## Steps
@@ -74,7 +72,6 @@ I (xxxx) ENROLL: ID 1 is enrolled
 ```
 
 The image overlays the blue text `Enroll: ID 1`, which disappears after about 0.5 seconds.
-
 > **Note**: the command is `face_eril` (an abbreviation of enroll), not `face_enroll`. If you see `fail: unknown command`, check the spelling.
 
 ### 8.3 Recognizing Faces
@@ -86,11 +83,8 @@ face_rz
 ```
 
 The system enters continuous recognition mode. The current face is compared against all registered IDs in Flash:
-
 - **Match successful**: the serial port outputs `Similarity: 0.85, Match ID: 1`, and a green `ID: 1` is continuously overlaid on the image
-
 - **Stranger**: the serial port outputs `Similarity: 0.32, Match ID: 0`, and a red `who?` is continuously overlaid on the image
-
 > The label **stays displayed** and does not disappear. To exit recognition mode, send `face_detect` to return to pure detection mode.
 
 ### 8.4 Deleting a Face
@@ -108,7 +102,6 @@ face_detect
 ```
 
 Returns to pure face detection mode (draws only boxes + keypoints, no recognition), and the ID label is cleared.
-
 > **About DETECT mode**: on the ESP32-S3, serial coordinate printing in pure face detection mode is disabled (`#if !CONFIG_IDF_TARGET_ESP32S3`); this avoids flooding the serial port with detection logs. The `detection_result` coordinate logs are only output after entering recognition mode (`face_rz`).
 
 ## Complete Command Reference
@@ -191,6 +184,6 @@ case RECOGNIZE:
 
 Enroll a face → continuous recognition shows the ID → results are output over I2C/serial → control a relay/servo — a complete access control solution.
 
-Next chapter: [Chapter 9: Voice Chat](./Ch09-Voice-Chat.md)
+Next chapter: [Chapter 9: Voice Chat (XiaoZhi AI)](./Ch09-Voice-Chat.md)
 
 <RelatedProducts slugs="esp32-s3-wifi-module" />

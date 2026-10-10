@@ -509,6 +509,7 @@ const zhCN = {
               items: [
                 { text: 'Lekiwi 使用教程', link: '/zh-hans/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial' },
                 { text: 'Lekiwi 组装教程', link: '/zh-hans/tutorials/robot-arms/lekiwi/Lekiwi-Assembly' },
+                { text: '产品资料', link: '/zh-hans/tutorials/robot-arms/lekiwi/Lekiwi-Product-Info' },
               ],
             },
           ],
@@ -548,6 +549,7 @@ const zhCN = {
                 { text: 'ESP32-NanoCam 快速开始', link: '/zh-hans/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Quick-Start' },
                 { text: 'ESP32-NanoCam 硬件规格书', link: '/zh-hans/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec' },
                 { text: 'ESP32-NanoCam 串口协议手册', link: '/zh-hans/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Serial-Protocol' },
+                { text: '代码压缩包', link: '/zh-hans/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Code-Downloads' },
                 {
                   text: 'AI 视觉教程(11 章)',
                   collapsed: true,
@@ -608,7 +610,18 @@ const zhCN = {
               items: [
                 { text: 'USB 自动对焦摄像头', link: '/zh-hans/tutorials/accessories/usb-auto-focus-camera' },
                 { text: 'Jetson CSI 摄像头', link: '/zh-hans/tutorials/accessories/jetson-csi-camera' },
-                { text: '2 自由度相机云台', link: '/zh-hans/tutorials/accessories/2dof-camera-gimbal' },
+                {
+                  text: '2 自由度相机云台',
+                  collapsed: true,
+                  items: [
+                  { text: '快速开始指南', link: '/zh-hans/tutorials/accessories/2dof-camera-gimbal/01-Quick-Start-Guide' },
+                  { text: '硬件与环境准备', link: '/zh-hans/tutorials/accessories/2dof-camera-gimbal/02-Hardware-and-Environment-Setup' },
+                  { text: '基础使用', link: '/zh-hans/tutorials/accessories/2dof-camera-gimbal/03-Basic-Usage' },
+                  { text: '高级功能与追踪', link: '/zh-hans/tutorials/accessories/2dof-camera-gimbal/04-Advanced-Features-and-Tracking' },
+                  { text: '故障排除', link: '/zh-hans/tutorials/accessories/2dof-camera-gimbal/05-Troubleshooting' },
+                  { text: '产品信息', link: '/zh-hans/tutorials/accessories/2dof-camera-gimbal/Product-Info' },
+                  ],
+                },
                 { text: '心率血氧传感器', link: '/zh-hans/tutorials/accessories/heart-rate-spo2' },
                 { text: '0.91 寸 OLED 屏幕', link: '/zh-hans/tutorials/accessories/0.91-oled-screen-tutorial' },
                 { text: '4K HDMI 采集器', link: '/zh-hans/tutorials/accessories/4k-hdmi-capture-tutorial' },
@@ -1151,6 +1164,7 @@ const en = {
               items: [
                 { text: 'Lekiwi Tutorial', link: '/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial' },
                 { text: 'Lekiwi Assembly', link: '/tutorials/robot-arms/lekiwi/Lekiwi-Assembly' },
+                { text: 'Product Information', link: '/tutorials/robot-arms/lekiwi/Lekiwi-Product-Info' },
               ],
             },
           ],
@@ -1190,6 +1204,7 @@ const en = {
                 { text: 'ESP32-NanoCam Quick Start', link: '/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Quick-Start' },
                 { text: 'ESP32-NanoCam Hardware Spec', link: '/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec' },
                 { text: 'ESP32-NanoCam Serial Protocol Manual', link: '/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Serial-Protocol' },
+                { text: 'Code Downloads', link: '/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Code-Downloads' },
                 {
                   text: 'AI Vision Tutorial (11 chapters)',
                   collapsed: true,
@@ -1250,7 +1265,18 @@ const en = {
               items: [
                 { text: 'USB Auto-Focus Camera', link: '/tutorials/accessories/usb-auto-focus-camera' },
                 { text: 'Jetson CSI Camera', link: '/tutorials/accessories/jetson-csi-camera' },
-                { text: '2-DOF Camera Gimbal', link: '/tutorials/accessories/2dof-camera-gimbal' },
+                {
+                  text: '2-DOF Camera Gimbal',
+                  collapsed: true,
+                  items: [
+                  { text: 'Quick Start Guide', link: '/tutorials/accessories/2dof-camera-gimbal/01-Quick-Start-Guide' },
+                  { text: 'Hardware and Environment Setup', link: '/tutorials/accessories/2dof-camera-gimbal/02-Hardware-and-Environment-Setup' },
+                  { text: 'Basic Usage', link: '/tutorials/accessories/2dof-camera-gimbal/03-Basic-Usage' },
+                  { text: 'Advanced Features and Tracking', link: '/tutorials/accessories/2dof-camera-gimbal/04-Advanced-Features-and-Tracking' },
+                  { text: 'Troubleshooting', link: '/tutorials/accessories/2dof-camera-gimbal/05-Troubleshooting' },
+                  { text: 'Product Info', link: '/tutorials/accessories/2dof-camera-gimbal/Product-Info' },
+                  ],
+                },
                 { text: 'Heart Rate & SpO2 Sensor', link: '/tutorials/accessories/heart-rate-spo2' },
                 { text: '0.91" OLED Screen', link: '/tutorials/accessories/0.91-oled-screen-tutorial' },
                 { text: '4K HDMI Capture', link: '/tutorials/accessories/4k-hdmi-capture-tutorial' },
@@ -1793,6 +1819,7 @@ const zhHK = {
               items: [
                 { text: 'Lekiwi 使用教程', link: '/zh-hant/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial' },
                 { text: 'Lekiwi 組裝教程', link: '/zh-hant/tutorials/robot-arms/lekiwi/Lekiwi-Assembly' },
+                { text: '產品資料', link: '/zh-hant/tutorials/robot-arms/lekiwi/Lekiwi-Product-Info' },
               ],
             },
           ],
@@ -1832,6 +1859,7 @@ const zhHK = {
                 { text: 'ESP32-NanoCam 快速開始', link: '/zh-hant/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Quick-Start' },
                 { text: 'ESP32-NanoCam 硬體規格書', link: '/zh-hant/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec' },
                 { text: 'ESP32-NanoCam 串口協議手冊', link: '/zh-hant/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Serial-Protocol' },
+                { text: '程式碼壓縮包', link: '/zh-hant/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Code-Downloads' },
                 {
                   text: 'AI 視覺教程(11 章)',
                   collapsed: true,
@@ -1892,7 +1920,18 @@ const zhHK = {
               items: [
                 { text: 'USB 自動對焦攝像頭', link: '/zh-hant/tutorials/accessories/usb-auto-focus-camera' },
                 { text: 'Jetson CSI 攝像頭', link: '/zh-hant/tutorials/accessories/jetson-csi-camera' },
-                { text: '2 自由度相機雲台', link: '/zh-hant/tutorials/accessories/2dof-camera-gimbal' },
+                {
+                  text: '2 自由度相機雲台',
+                  collapsed: true,
+                  items: [
+                  { text: '快速開始指南', link: '/zh-hant/tutorials/accessories/2dof-camera-gimbal/01-Quick-Start-Guide' },
+                  { text: '硬體與環境準備', link: '/zh-hant/tutorials/accessories/2dof-camera-gimbal/02-Hardware-and-Environment-Setup' },
+                  { text: '基礎使用', link: '/zh-hant/tutorials/accessories/2dof-camera-gimbal/03-Basic-Usage' },
+                  { text: '高級功能與追蹤', link: '/zh-hant/tutorials/accessories/2dof-camera-gimbal/04-Advanced-Features-and-Tracking' },
+                  { text: '疑難排解', link: '/zh-hant/tutorials/accessories/2dof-camera-gimbal/05-Troubleshooting' },
+                  { text: '產品資訊', link: '/zh-hant/tutorials/accessories/2dof-camera-gimbal/Product-Info' },
+                  ],
+                },
                 { text: '心率血氧傳感器', link: '/zh-hant/tutorials/accessories/heart-rate-spo2' },
                 { text: '0.91 吋 OLED 屏幕', link: '/zh-hant/tutorials/accessories/0.91-oled-screen-tutorial' },
                 { text: '4K HDMI 採集器', link: '/zh-hant/tutorials/accessories/4k-hdmi-capture-tutorial' },
@@ -2449,6 +2488,7 @@ export default defineConfig({
               items: [
                 { text: 'Lekiwi 移動ロボット使用チュートリアル', link: '/ja/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial' },
                 { text: 'Lekiwi 移動ロボット組み立てチュートリアル', link: '/ja/tutorials/robot-arms/lekiwi/Lekiwi-Assembly' },
+                { text: '製品情報', link: '/ja/tutorials/robot-arms/lekiwi/Lekiwi-Product-Info' },
               ],
             },
           ] },
@@ -2555,6 +2595,7 @@ export default defineConfig({
                     { text: 'ESP32-NanoCam クイックスタート', link: '/ja/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Quick-Start' },
                     { text: 'ESP32-NanoCam ハードウェア仕様書', link: '/ja/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec' },
                     { text: 'ESP32-NanoCam シリアルプロトコルマニュアル', link: '/ja/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Serial-Protocol' },
+                    { text: 'Code Downloads', link: '/ja/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Code-Downloads' },
                     {
                       text: 'AI ビジョンチュートリアル(全 11 章)',
                       collapsed: true,
@@ -2609,7 +2650,18 @@ export default defineConfig({
                     { text: 'ラズベリーパイ: IIC 通信', link: '/ja/tutorials/accessories/ai-voice-module/RaspberryPi-IIC-Communication' },
                   ],
                 },
-                { text: '2自由度ジンバル', link: '/ja/tutorials/accessories/2dof-camera-gimbal' },
+                {
+                  text: '2自由度ジンバル',
+                  collapsed: true,
+                  items: [
+                  { text: 'クイックスタートガイド', link: '/ja/tutorials/accessories/2dof-camera-gimbal/01-Quick-Start-Guide' },
+                  { text: 'ハードウェアと環境準備', link: '/ja/tutorials/accessories/2dof-camera-gimbal/02-Hardware-and-Environment-Setup' },
+                  { text: '基本的な使い方', link: '/ja/tutorials/accessories/2dof-camera-gimbal/03-Basic-Usage' },
+                  { text: '応用機能とトラッキング', link: '/ja/tutorials/accessories/2dof-camera-gimbal/04-Advanced-Features-and-Tracking' },
+                  { text: 'トラブルシューティング', link: '/ja/tutorials/accessories/2dof-camera-gimbal/05-Troubleshooting' },
+                  { text: '製品情報', link: '/ja/tutorials/accessories/2dof-camera-gimbal/Product-Info' },
+                  ],
+                },
             { text: '心拍・血中酸素センサー', link: '/ja/tutorials/accessories/heart-rate-spo2' },
             { text: '0.91 インチ OLED スクリーン', link: '/ja/tutorials/accessories/0.91-oled-screen-tutorial' },
             { text: '4K HDMI キャプチャカード', link: '/ja/tutorials/accessories/4k-hdmi-capture-tutorial' },
@@ -3010,6 +3062,7 @@ export default defineConfig({
               items: [
                 { text: 'Lekiwi 이동 로봇 사용 튜토리얼', link: '/ko/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial' },
                 { text: 'Lekiwi 이동 로봇 조립 튜토리얼', link: '/ko/tutorials/robot-arms/lekiwi/Lekiwi-Assembly' },
+                { text: '제품 정보', link: '/ko/tutorials/robot-arms/lekiwi/Lekiwi-Product-Info' },
               ],
             },
           ] },
@@ -3116,6 +3169,7 @@ export default defineConfig({
                     { text: 'ESP32-NanoCam 빠른 시작', link: '/ko/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Quick-Start' },
                     { text: 'ESP32-NanoCam 하드웨어 사양서', link: '/ko/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec' },
                     { text: 'ESP32-NanoCam 시리얼 프로토콜 매뉴얼', link: '/ko/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Serial-Protocol' },
+                    { text: '코드 압축 파일', link: '/ko/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Code-Downloads' },
                     {
                       text: 'AI 비전 튜토리얼(11장)',
                       collapsed: true,
@@ -3170,7 +3224,18 @@ export default defineConfig({
                     { text: '라즈베리파이: IIC 통신', link: '/ko/tutorials/accessories/ai-voice-module/RaspberryPi-IIC-Communication' },
                   ],
                 },
-                { text: '2자유도 짐벌', link: '/ko/tutorials/accessories/2dof-camera-gimbal' },
+                {
+                  text: '2자유도 짐벌',
+                  collapsed: true,
+                  items: [
+                  { text: '빠른 시작 가이드', link: '/ko/tutorials/accessories/2dof-camera-gimbal/01-Quick-Start-Guide' },
+                  { text: '하드웨어 및 환경 준비', link: '/ko/tutorials/accessories/2dof-camera-gimbal/02-Hardware-and-Environment-Setup' },
+                  { text: '기본 사용법', link: '/ko/tutorials/accessories/2dof-camera-gimbal/03-Basic-Usage' },
+                  { text: '고급 기능 및 트래킹', link: '/ko/tutorials/accessories/2dof-camera-gimbal/04-Advanced-Features-and-Tracking' },
+                  { text: '문제 해결', link: '/ko/tutorials/accessories/2dof-camera-gimbal/05-Troubleshooting' },
+                  { text: '제품 정보', link: '/ko/tutorials/accessories/2dof-camera-gimbal/Product-Info' },
+                  ],
+                },
             { text: '심박·혈중 산소 센서', link: '/ko/tutorials/accessories/heart-rate-spo2' },
             { text: '0.91인치 OLED 화면', link: '/ko/tutorials/accessories/0.91-oled-screen-tutorial' },
             { text: '4K HDMI 캡처 카드', link: '/ko/tutorials/accessories/4k-hdmi-capture-tutorial' },
@@ -3571,6 +3636,7 @@ export default defineConfig({
               items: [
                 { text: 'Lekiwi-Mobilitätsroboter – Bedienungstutorial', link: '/de/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial' },
                 { text: 'Lekiwi-Mobilitätsroboter – Montage-Tutorial', link: '/de/tutorials/robot-arms/lekiwi/Lekiwi-Assembly' },
+                { text: 'Produktinformationen', link: '/de/tutorials/robot-arms/lekiwi/Lekiwi-Product-Info' },
               ],
             },
           ] },
@@ -3677,6 +3743,7 @@ export default defineConfig({
                     { text: 'ESP32-NanoCam Schnellstart', link: '/de/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Quick-Start' },
                     { text: 'ESP32-NanoCam Hardware-Spezifikation', link: '/de/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec' },
                     { text: 'ESP32-NanoCam Handbuch zum seriellen Protokoll', link: '/de/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Serial-Protocol' },
+                    { text: 'Code-Downloads', link: '/de/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Code-Downloads' },
                     {
                       text: 'KI-Vision-Tutorial (11 Kapitel)',
                       collapsed: true,
@@ -3731,7 +3798,18 @@ export default defineConfig({
                     { text: 'Raspberry Pi: IIC-Kommunikation', link: '/de/tutorials/accessories/ai-voice-module/RaspberryPi-IIC-Communication' },
                   ],
                 },
-                { text: '2-DOF-Gimbal', link: '/de/tutorials/accessories/2dof-camera-gimbal' },
+                {
+                  text: '2-DOF-Gimbal',
+                  collapsed: true,
+                  items: [
+                  { text: 'Schnellstart', link: '/de/tutorials/accessories/2dof-camera-gimbal/01-Quick-Start-Guide' },
+                  { text: 'Hardware und Umgebung', link: '/de/tutorials/accessories/2dof-camera-gimbal/02-Hardware-and-Environment-Setup' },
+                  { text: 'Grundlegende Nutzung', link: '/de/tutorials/accessories/2dof-camera-gimbal/03-Basic-Usage' },
+                  { text: 'Erweiterte Funktionen und Tracking', link: '/de/tutorials/accessories/2dof-camera-gimbal/04-Advanced-Features-and-Tracking' },
+                  { text: 'Fehlerbehebung', link: '/de/tutorials/accessories/2dof-camera-gimbal/05-Troubleshooting' },
+                  { text: 'Produktinformationen', link: '/de/tutorials/accessories/2dof-camera-gimbal/Product-Info' },
+                  ],
+                },
             { text: 'Herzfrequenz- und SpO2-Sensor', link: '/de/tutorials/accessories/heart-rate-spo2' },
             { text: '0,91-Zoll-OLED-Display', link: '/de/tutorials/accessories/0.91-oled-screen-tutorial' },
             { text: '4K-HDMI-Capture-Karte', link: '/de/tutorials/accessories/4k-hdmi-capture-tutorial' },
@@ -4132,6 +4210,7 @@ export default defineConfig({
               items: [
                 { text: "Tutoriel d\'utilisation du robot mobile Lekiwi", link: '/fr/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial' },
                 { text: "Tutoriel d\'assemblage du robot mobile Lekiwi", link: '/fr/tutorials/robot-arms/lekiwi/Lekiwi-Assembly' },
+                { text: 'Informations produit', link: '/fr/tutorials/robot-arms/lekiwi/Lekiwi-Product-Info' },
               ],
             },
           ] },
@@ -4238,6 +4317,7 @@ export default defineConfig({
                     { text: 'ESP32-NanoCam Démarrage rapide', link: '/fr/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Quick-Start' },
                     { text: 'ESP32-NanoCam Spécifications matérielles', link: '/fr/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec' },
                     { text: 'ESP32-NanoCam Manuel du protocole série', link: '/fr/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Serial-Protocol' },
+                    { text: 'Téléchargements de code', link: '/fr/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Code-Downloads' },
                     {
                       text: 'Tutoriel de vision IA (11 chapitres)',
                       collapsed: true,
@@ -4292,7 +4372,18 @@ export default defineConfig({
                     { text: 'Raspberry Pi: Communication IIC', link: '/fr/tutorials/accessories/ai-voice-module/RaspberryPi-IIC-Communication' },
                   ],
                 },
-                { text: 'Cardan 2-DOF', link: '/fr/tutorials/accessories/2dof-camera-gimbal' },
+                {
+                  text: 'Cardan 2-DOF',
+                  collapsed: true,
+                  items: [
+                  { text: 'Guide de démarrage rapide', link: '/fr/tutorials/accessories/2dof-camera-gimbal/01-Quick-Start-Guide' },
+                  { text: 'Matériel et préparation de l\'environnement', link: '/fr/tutorials/accessories/2dof-camera-gimbal/02-Hardware-and-Environment-Setup' },
+                  { text: 'Utilisation de base', link: '/fr/tutorials/accessories/2dof-camera-gimbal/03-Basic-Usage' },
+                  { text: 'Fonctions avancées et suivi', link: '/fr/tutorials/accessories/2dof-camera-gimbal/04-Advanced-Features-and-Tracking' },
+                  { text: 'Dépannage', link: '/fr/tutorials/accessories/2dof-camera-gimbal/05-Troubleshooting' },
+                  { text: 'Informations produit', link: '/fr/tutorials/accessories/2dof-camera-gimbal/Product-Info' },
+                  ],
+                },
             { text: 'Capteur de fréquence cardiaque et SpO2', link: '/fr/tutorials/accessories/heart-rate-spo2' },
             { text: 'Écran OLED 0,91 pouce', link: '/fr/tutorials/accessories/0.91-oled-screen-tutorial' },
             { text: 'Carte de capture HDMI 4K', link: '/fr/tutorials/accessories/4k-hdmi-capture-tutorial' },
@@ -4693,6 +4784,7 @@ export default defineConfig({
               items: [
                 { text: 'Tutorial de uso del robot móvil Lekiwi', link: '/es/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial' },
                 { text: 'Tutorial de ensamblaje del robot móvil Lekiwi', link: '/es/tutorials/robot-arms/lekiwi/Lekiwi-Assembly' },
+                { text: 'Información del producto', link: '/es/tutorials/robot-arms/lekiwi/Lekiwi-Product-Info' },
               ],
             },
           ] },
@@ -4799,6 +4891,7 @@ export default defineConfig({
                     { text: 'Inicio rápido de ESP32-NanoCam', link: '/es/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Quick-Start' },
                     { text: 'Especificaciones de hardware del ESP32-NanoCam', link: '/es/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec' },
                     { text: 'Manual del protocolo serie del ESP32-NanoCam', link: '/es/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Serial-Protocol' },
+                    { text: 'Code Downloads', link: '/es/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Code-Downloads' },
                     {
                       text: 'Tutorial de visión IA (11 capítulos)',
                       collapsed: true,
@@ -4853,7 +4946,18 @@ export default defineConfig({
                     { text: 'Raspberry Pi: Comunicación IIC', link: '/es/tutorials/accessories/ai-voice-module/RaspberryPi-IIC-Communication' },
                   ],
                 },
-                { text: 'Cardán 2-DOF', link: '/es/tutorials/accessories/2dof-camera-gimbal' },
+                {
+                  text: 'Cardán 2-DOF',
+                  collapsed: true,
+                  items: [
+                  { text: 'Guía de inicio rápido', link: '/es/tutorials/accessories/2dof-camera-gimbal/01-Quick-Start-Guide' },
+                  { text: 'Hardware y preparación del entorno', link: '/es/tutorials/accessories/2dof-camera-gimbal/02-Hardware-and-Environment-Setup' },
+                  { text: 'Uso básico', link: '/es/tutorials/accessories/2dof-camera-gimbal/03-Basic-Usage' },
+                  { text: 'Funciones avanzadas y seguimiento', link: '/es/tutorials/accessories/2dof-camera-gimbal/04-Advanced-Features-and-Tracking' },
+                  { text: 'Solución de problemas', link: '/es/tutorials/accessories/2dof-camera-gimbal/05-Troubleshooting' },
+                  { text: 'Información del producto', link: '/es/tutorials/accessories/2dof-camera-gimbal/Product-Info' },
+                  ],
+                },
             { text: 'Sensor de frecuencia cardíaca y SpO2', link: '/es/tutorials/accessories/heart-rate-spo2' },
             { text: 'Pantalla OLED de 0,91 pulgadas', link: '/es/tutorials/accessories/0.91-oled-screen-tutorial' },
             { text: 'Capturadora HDMI 4K', link: '/es/tutorials/accessories/4k-hdmi-capture-tutorial' },
@@ -5254,6 +5358,7 @@ export default defineConfig({
               items: [
                 { text: "Tutorial d\'uso del robot mobile Lekiwi", link: '/it/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial' },
                 { text: 'Tutorial di assemblaggio del robot mobile Lekiwi', link: '/it/tutorials/robot-arms/lekiwi/Lekiwi-Assembly' },
+                { text: 'Informazioni sul prodotto', link: '/it/tutorials/robot-arms/lekiwi/Lekiwi-Product-Info' },
               ],
             },
           ] },
@@ -5360,6 +5465,7 @@ export default defineConfig({
                     { text: 'ESP32-NanoCam Avvio rapido', link: '/it/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Quick-Start' },
                     { text: 'ESP32-NanoCam Specifiche hardware', link: '/it/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec' },
                     { text: 'ESP32-NanoCam Manuale del protocollo seriale', link: '/it/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Serial-Protocol' },
+                    { text: 'Code Downloads', link: '/it/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Code-Downloads' },
                     {
                       text: 'Tutorial di visione IA (11 capitoli)',
                       collapsed: true,
@@ -5414,7 +5520,18 @@ export default defineConfig({
                     { text: 'Raspberry Pi: Comunicazione IIC', link: '/it/tutorials/accessories/ai-voice-module/RaspberryPi-IIC-Communication' },
                   ],
                 },
-                { text: 'Gimbal 2-DOF', link: '/it/tutorials/accessories/2dof-camera-gimbal' },
+                {
+                  text: 'Gimbal 2-DOF',
+                  collapsed: true,
+                  items: [
+                  { text: 'Guida rapida', link: '/it/tutorials/accessories/2dof-camera-gimbal/01-Quick-Start-Guide' },
+                  { text: 'Hardware e preparazione dell\'ambiente', link: '/it/tutorials/accessories/2dof-camera-gimbal/02-Hardware-and-Environment-Setup' },
+                  { text: 'Uso di base', link: '/it/tutorials/accessories/2dof-camera-gimbal/03-Basic-Usage' },
+                  { text: 'Funzioni avanzate e tracking', link: '/it/tutorials/accessories/2dof-camera-gimbal/04-Advanced-Features-and-Tracking' },
+                  { text: 'Risoluzione dei problemi', link: '/it/tutorials/accessories/2dof-camera-gimbal/05-Troubleshooting' },
+                  { text: 'Informazioni sul prodotto', link: '/it/tutorials/accessories/2dof-camera-gimbal/Product-Info' },
+                  ],
+                },
             { text: 'Sensore di frequenza cardiaca e SpO2', link: '/it/tutorials/accessories/heart-rate-spo2' },
             { text: 'Display OLED da 0,91 pollici', link: '/it/tutorials/accessories/0.91-oled-screen-tutorial' },
             { text: 'Scheda di acquisizione HDMI 4K', link: '/it/tutorials/accessories/4k-hdmi-capture-tutorial' },
@@ -6091,6 +6208,7 @@ export default defineConfig({
                 items: [
                   { text: 'Tutorial de Uso do Robô Móvel Lekiwi', link: '/pt-br/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial' },
                   { text: 'Tutorial de Montagem do Robô Móvel Lekiwi', link: '/pt-br/tutorials/robot-arms/lekiwi/Lekiwi-Assembly' },
+                  { text: 'Informações do produto', link: '/pt-br/tutorials/robot-arms/lekiwi/Lekiwi-Product-Info' },
                 ],
               },
             ],
@@ -6130,6 +6248,7 @@ export default defineConfig({
                   { text: 'Início rápido do ESP32-NanoCam', link: '/pt-br/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Quick-Start' },
                   { text: 'Especificações de hardware do ESP32-NanoCam', link: '/pt-br/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec' },
                   { text: 'Manual do protocolo serial do ESP32-NanoCam', link: '/pt-br/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Serial-Protocol' },
+                  { text: 'Code Downloads', link: '/pt-br/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Code-Downloads' },
                   {
                     text: 'Tutorial de visão IA (11 capítulos)',
                     collapsed: true,
@@ -6190,7 +6309,18 @@ export default defineConfig({
                 items: [
                   { text: 'Câmera USB com Foco Automático', link: '/pt-br/tutorials/accessories/usb-auto-focus-camera' },
                   { text: 'Câmera CSI Jetson', link: '/pt-br/tutorials/accessories/jetson-csi-camera' },
-                  { text: 'Gimbal de Câmera 2-DOF', link: '/pt-br/tutorials/accessories/2dof-camera-gimbal' },
+                  {
+                    text: 'Gimbal de Câmera 2-DOF',
+                    collapsed: true,
+                    items: [
+                    { text: 'Guia de início rápido', link: '/pt-br/tutorials/accessories/2dof-camera-gimbal/01-Quick-Start-Guide' },
+                    { text: 'Hardware e preparação do ambiente', link: '/pt-br/tutorials/accessories/2dof-camera-gimbal/02-Hardware-and-Environment-Setup' },
+                    { text: 'Uso básico', link: '/pt-br/tutorials/accessories/2dof-camera-gimbal/03-Basic-Usage' },
+                    { text: 'Recursos avançados e rastreamento', link: '/pt-br/tutorials/accessories/2dof-camera-gimbal/04-Advanced-Features-and-Tracking' },
+                    { text: 'Solução de problemas', link: '/pt-br/tutorials/accessories/2dof-camera-gimbal/05-Troubleshooting' },
+                    { text: 'Informações do produto', link: '/pt-br/tutorials/accessories/2dof-camera-gimbal/Product-Info' },
+                    ],
+                  },
                   { text: 'Sensor de Frequência Cardíaca e SpO2', link: '/pt-br/tutorials/accessories/heart-rate-spo2' },
                   { text: 'Tela OLED de 0,91"', link: '/pt-br/tutorials/accessories/0.91-oled-screen-tutorial' },
                   { text: 'Captura HDMI 4K', link: '/pt-br/tutorials/accessories/4k-hdmi-capture-tutorial' },
@@ -6719,6 +6849,7 @@ export default defineConfig({
                 items: [
                   { text: 'Tutorial de Uso do Robô Móvel Lekiwi', link: '/pt-pt/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial' },
                   { text: 'Tutorial de Montagem do Robô Móvel Lekiwi', link: '/pt-pt/tutorials/robot-arms/lekiwi/Lekiwi-Assembly' },
+                  { text: 'Informações do produto', link: '/pt-pt/tutorials/robot-arms/lekiwi/Lekiwi-Product-Info' },
                 ],
               },
             ],
@@ -6758,6 +6889,7 @@ export default defineConfig({
                   { text: 'Início rápido do ESP32-NanoCam', link: '/pt-pt/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Quick-Start' },
                   { text: 'Especificações de hardware do ESP32-NanoCam', link: '/pt-pt/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec' },
                   { text: 'Manual do protocolo serial do ESP32-NanoCam', link: '/pt-pt/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Serial-Protocol' },
+                  { text: 'Code Downloads', link: '/pt-pt/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Code-Downloads' },
                   {
                     text: 'Tutorial de visão IA (11 capítulos)',
                     collapsed: true,
@@ -6818,7 +6950,18 @@ export default defineConfig({
                 items: [
                   { text: 'Câmara USB com Foco Automático', link: '/pt-pt/tutorials/accessories/usb-auto-focus-camera' },
                   { text: 'Câmara CSI Jetson', link: '/pt-pt/tutorials/accessories/jetson-csi-camera' },
-                  { text: 'Gimbal de Câmara 2-DOF', link: '/pt-pt/tutorials/accessories/2dof-camera-gimbal' },
+                  {
+                    text: 'Gimbal de Câmara 2-DOF',
+                    collapsed: true,
+                    items: [
+                    { text: 'Guia de início rápido', link: '/pt-pt/tutorials/accessories/2dof-camera-gimbal/01-Quick-Start-Guide' },
+                    { text: 'Hardware e preparação do ambiente', link: '/pt-pt/tutorials/accessories/2dof-camera-gimbal/02-Hardware-and-Environment-Setup' },
+                    { text: 'Utilização básica', link: '/pt-pt/tutorials/accessories/2dof-camera-gimbal/03-Basic-Usage' },
+                    { text: 'Funcionalidades avançadas e rastreio', link: '/pt-pt/tutorials/accessories/2dof-camera-gimbal/04-Advanced-Features-and-Tracking' },
+                    { text: 'Resolução de problemas', link: '/pt-pt/tutorials/accessories/2dof-camera-gimbal/05-Troubleshooting' },
+                    { text: 'Informações do produto', link: '/pt-pt/tutorials/accessories/2dof-camera-gimbal/Product-Info' },
+                    ],
+                  },
                   { text: 'Sensor de Frequência Cardíaca e SpO2', link: '/pt-pt/tutorials/accessories/heart-rate-spo2' },
                   { text: 'Ecrã OLED de 0,91"', link: '/pt-pt/tutorials/accessories/0.91-oled-screen-tutorial' },
                   { text: 'Captura HDMI 4K', link: '/pt-pt/tutorials/accessories/4k-hdmi-capture-tutorial' },

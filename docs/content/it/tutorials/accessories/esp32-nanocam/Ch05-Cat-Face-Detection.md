@@ -1,28 +1,28 @@
 ---
-title: "Capitolo 5: Rilevamento del muso del gatto"
+title: "Capitolo 5: Rilevamento del muso dei gatti"
 description: "Tutorial ESP32-NanoCam capitolo 5: usare il modello CatFaceDetectMN03 per rilevare il muso del gatto."
 ---
 
-# Capitolo 5: Rilevamento del muso del gatto
+# Capitolo 5: Rilevamento del muso dei gatti
 
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/esp32-s3-wifi-video-module)**
 
 **Obiettivo del capitolo**: far rilevare a NanoCam il muso dei gatti e capire le differenze rispetto al modello di rilevamento del volto umano.
 
-## Come funziona
+## Funzionamento
 
-Il rilevamento del muso del gatto usa il modello CatFaceDetectMN03, addestrato e ottimizzato per le caratteristiche del muso dei gatti (orecchie triangolari / ampia distanza interpupillare / naso). In ingresso un'immagine 320x240 RGB565, in uscita un elenco di bounding box dei musi. Condivide lo stesso formato di output `print_detection_result` del rilevamento del volto del [Capitolo 4](./Ch04-Face-Detection.md).
+Il rilevamento del muso dei gatti utilizza il modello CatFaceDetectMN03, addestrato e ottimizzato appositamente per le caratteristiche del muso dei gatti (orecchie triangolari / distanza interpupillare ampia / naso). Input: immagine RGB565 320x240; output: elenco di bounding box dei musi. Condivide con il rilevamento volti del capitolo 4 lo stesso formato di output `print_detection_result`.
 
-### Differenze tra i modelli di rilevamento del volto umano e del muso del gatto
+### Differenze tra il modello per musi di gatto e quello per volti
 
-|Dimensione di confronto|Rilevamento del volto (ai_mode:2)|Rilevamento del muso del gatto (ai_mode:1)|
+|Aspetto|Rilevamento volti (ai_mode:2)|Rilevamento muso dei gatti (ai_mode:1)|
 |---|---|---|
-|Modello|MSR01 + MNP01 a doppia cascata|CatFaceDetectMN03 a stadio singolo|
-|Keypoint|10 (occhi/estremità del naso/angoli della bocca)|Nessuno (il modello non li restituisce)|
+|Modello|MSR01 + MNP01, doppia cascata|CatFaceDetectMN03, singolo stadio|
+|Punti chiave|10 (occhi / punta del naso / angoli della bocca)|Nessuno (il modello non li produce)|
 |Soglia di confidenza|MSR01=0.3, MNP01=0.4|0.4|
-|Disegno del riquadro|Rettangolo verde vuoto + 5 keypoint|Rettangolo verde vuoto (senza keypoint)|
+|Disegno del riquadro|Rettangolo verde vuoto + 5 punti chiave|Rettangolo verde vuoto (senza punti chiave)|
 
-## Passaggi
+## Procedura
 
 ### 5.1 Cambiare modalità
 
@@ -30,25 +30,24 @@ Il rilevamento del muso del gatto usa il modello CatFaceDetectMN03, addestrato e
 ai_mode:1
 ```
 
-Il dispositivo si riavvia automaticamente entrando in modalità rilevamento del muso del gatto
+Il dispositivo si riavvia automaticamente e passa alla modalità di rilevamento del muso dei gatti
 
 > Per tutti i comandi vedi il [manuale del protocollo seriale](./ESP32-NanoCam-Serial-Protocol.md).
 
 ### 5.2 Osservare il risultato
 
-Mettere un gatto o una sua foto davanti alla fotocamera: aprendo `http://<IP>` nel browser si vede il riquadro verde che annota il muso.
+Metti un gatto o l'immagine di un gatto davanti alla fotocamera; aprendo `http://<IP>` nel browser vedrai un riquadro verde di rilevamento attorno al muso del gatto.
 
-### 5.3 Output seriale
+### 5.3 Output della porta seriale
 
-Quando viene rilevato un muso, la seriale emette:
+Quando viene rilevato un muso di gatto, la porta seriale emette:
 
 ```Plain
 I (xxxxx) detection_result: [ 0]: ( 45,  30, 180, 210)
 ```
 
 - Formato: `[indice] (x, y, w, h)` — coordinate dell'angolo in alto a sinistra del riquadro del muso + larghezza e altezza
-
-- Il modello per il muso non restituisce keypoint (a differenza del rilevamento del volto umano)
+- Il modello per musi di gatto non produce punti chiave (a differenza del rilevamento volti)
 
 ## Codice
 
@@ -67,7 +66,7 @@ if (detect_results.size() > 0) {
 }
 ```
 
-### Arduino: leggere le coordinate e controllare il servomotore
+### Arduino: leggere le coordinate per controllare un servo
 
 ```C++
 // analizza il formato $face:x,y,w,h#
@@ -81,7 +80,7 @@ if (nanoSerial.available()) {
 }
 ```
 
-### Lettura seriale in Python
+### Lettura dalla porta seriale con Python
 
 ```Python
 import serial
@@ -94,7 +93,7 @@ while True:
 
 ## Risultato
 
-Appare il gatto → nell'immagine viene annotato un riquadro verde → le coordinate sono inviate sulla seriale. È possibile leggere le coordinate con Arduino/Python per far seguire il gatto al servomotore.
+Appare un gatto→l'immagine viene annotata con un riquadro verde→la porta seriale emette le coordinate. Le coordinate possono essere lette con Arduino/Python per pilotare un servo all'inseguimento.
 
 Capitolo successivo: [Capitolo 6: Riconoscimento dei colori](./Ch06-Color-Recognition.md)
 

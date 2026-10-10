@@ -14,7 +14,13 @@ Benvenuti nei tutorial sugli accessori! Guide d'uso per accessori e periferiche 
 - [Fotocamera USB con autofocus](./usb-auto-focus-camera.md)
 - [Fotocamera CSI Jetson](./jetson-csi-camera.md)
 
-- [Gimbal 2-DOF](./2dof-camera-gimbal.md)
+- [Gimbal 2-DOF](/it/tutorials/accessories/2dof-camera-gimbal/)
+  - [Guida rapida](/it/tutorials/accessories/2dof-camera-gimbal/01-Quick-Start-Guide)
+  - [Hardware e preparazione dell'ambiente](/it/tutorials/accessories/2dof-camera-gimbal/02-Hardware-and-Environment-Setup)
+  - [Uso di base](/it/tutorials/accessories/2dof-camera-gimbal/03-Basic-Usage)
+  - [Funzioni avanzate e tracking](/it/tutorials/accessories/2dof-camera-gimbal/04-Advanced-Features-and-Tracking)
+  - [Risoluzione dei problemi](/it/tutorials/accessories/2dof-camera-gimbal/05-Troubleshooting)
+  - [Informazioni sul prodotto](/it/tutorials/accessories/2dof-camera-gimbal/Product-Info)
 
 - [Sensore di frequenza cardiaca e SpO2](./heart-rate-spo2.md)
 
@@ -34,9 +40,11 @@ Scheda audio con wake AI — wake vocale offline, parole di attivazione personal
 
 Modulo di trasmissione video e visione AI ESP32-S3, supporta 8 modalità AI, trasmissione in doppia modalità AP+STA e interazione vocale.
 
+- [Tutorial ESP32-NanoCam](./esp32-nanocam/)
 - [Avvio rapido](./esp32-nanocam/ESP32-NanoCam-Quick-Start.md)
 - [Specifiche hardware](./esp32-nanocam/ESP32-NanoCam-Hardware-Spec.md)
 - [Manuale del protocollo seriale](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
+- [Code Downloads](./esp32-nanocam/ESP32-NanoCam-Code-Downloads.md)
 - [Tutorial di visione AI, Capitolo 1: Configurazione dell'ambiente](./esp32-nanocam/Ch01-Environment-Setup.md)
 
 #### Tutorial di visione IA (11 capitoli)

@@ -11,11 +11,11 @@ description: "Tutorial ESP32-NanoCam, Capítulo 11: as 5 ferramentas de controlo
 
 ## Sobre este capítulo
 
-Quando o dispositivo é mudado para `ai_mode:7`, o NanoCam entra no modo ESP-Claw. Este **partilha o mesmo firmware** (`nanocam_espclaw/`) com o XiaoZhi AI (`ai_mode:6`); a única diferença é que o modo ESP-Claw, além da conversa por voz, regista mais 5 ferramentas de controlo de hardware.
+Quando o dispositivo é mudado para `ai_mode:7`, o NanoCam entra no modo ESP-Claw. Este **partilha o mesmo firmware** (`nanocam_espclaw/`) com o XiaoZhi AI (`ai_mode:6`); a única diferença é que o modo ESP-Claw, além do diálogo por voz, regista mais 5 ferramentas de controlo de hardware.
 
 |Dimensão de comparação|XiaoZhi AI (modo 6)|ESP-Claw (modo 7)|
 |---|---|---|
-|Conversa por voz|✅ ASR→LLM→TTS|✅ O mesmo pipeline de voz|
+|Diálogo por voz|✅ ASR→LLM→TTS|✅ O mesmo pipeline de voz|
 |Controlo do LED|❌|✅ Ajuste de cor / ligar-desligar por voz|
 |Mudança de modo de IA|❌|✅ Mudança por voz|
 |Fotografia + análise visual com IA|❌|✅ Fotografar e chamar IA multimodal para compreender a imagem|
@@ -71,8 +71,7 @@ Após a ativação por voz, diga diretamente o que precisa:
 ### 11.4 Fotografia + análise visual com IA
 
 Quando o utilizador diz "Vê...", o firmware captura um fotograma VGA RGB565, comprime-o em JPEG e envia-o para a API multimodal configurada no servidor para análise; o resultado é anunciado por voz através de TTS.
-
-> O URL e o token da API multimodal são enviados automaticamente pelo servidor na fase de handshake da ligação; não é necessário introduzir comandos de configuração manualmente pela porta serial.
+> O URL e o token da API multimodal são enviados automaticamente pelo servidor na fase de handshake da ligação; não é necessário introduzir comandos de configuração manualmente pela porta série.
 
 ## As 5 ferramentas específicas do NanoCam
 
@@ -96,7 +95,7 @@ Quando o utilizador diz "Vê...", o firmware captura um fotograma VGA RGB565, co
 
 ## Como escolher
 
-|A tua necessidade|Modo recomendado|
+|A sua necessidade|Modo recomendado|
 |---|---|
 |Só quero conversar por voz e perguntas/respostas|modo 6 (XiaoZhi)|
 |Quero controlar o LED por voz|modo 7 (ESP-Claw)|

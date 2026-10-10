@@ -1,5 +1,5 @@
 ---
-title: 第 5 章:猫脸检测
+title: "第 5 章:猫脸检测"
 description: "ESP32-NanoCam 教程第 5 章:使用 CatFaceDetectMN03 模型检测猫脸,对比与人脸检测的模型差异,并读取坐标驱动舵机跟踪。"
 ---
 
@@ -11,7 +11,7 @@ description: "ESP32-NanoCam 教程第 5 章:使用 CatFaceDetectMN03 模型检�
 
 ## 原理
 
-猫脸检测使用 CatFaceDetectMN03 模型,专为猫脸部特征(三角耳部/宽瞳距/鼻部)优化训练。输入 320x240 RGB565 图像,输出猫脸边界框列表。与[第 4 章](./Ch04-Face-Detection.md)人脸检测共用同一套 `print_detection_result` 输出格式。
+猫脸检测使用 CatFaceDetectMN03 模型,专为猫脸部特征(三角耳部/宽瞳距/鼻部)优化训练。输入 320x240 RGB565 图像,输出猫脸边界框列表。与[第4章](./Ch04-Face-Detection.md)人脸检测共用同一套 `print_detection_result` 输出格式。
 
 ### 猫脸 vs 人脸检测模型差异
 
@@ -46,8 +46,7 @@ ai_mode:1
 I (xxxxx) detection_result: [ 0]: ( 45,  30, 180, 210)
 ```
 
-- 格式：`[序号] (x, y, w, h)` — 猫脸框左上角坐标 + 宽高
-
+- 格式: `[序号] (x, y, w, h)` — 猫脸框左上角坐标 + 宽高
 - 猫脸模型不输出关键点(与人脸检测不同)
 
 ## 代码

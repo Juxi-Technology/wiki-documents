@@ -13,7 +13,13 @@ Bem-vindo aos tutoriais de acessórios robóticos! Aqui você encontrará guias 
 
 - [Câmera USB com Foco Automático](./usb-auto-focus-camera.md)
 - [Câmera CSI Jetson](./jetson-csi-camera.md)
-- [Gimbal de Câmera 2-DOF](./2dof-camera-gimbal.md)
+- [Gimbal de Câmera 2-DOF](/pt-br/tutorials/accessories/2dof-camera-gimbal/)
+  - [Guia de início rápido](/pt-br/tutorials/accessories/2dof-camera-gimbal/01-Quick-Start-Guide)
+  - [Hardware e preparação do ambiente](/pt-br/tutorials/accessories/2dof-camera-gimbal/02-Hardware-and-Environment-Setup)
+  - [Uso básico](/pt-br/tutorials/accessories/2dof-camera-gimbal/03-Basic-Usage)
+  - [Recursos avançados e rastreamento](/pt-br/tutorials/accessories/2dof-camera-gimbal/04-Advanced-Features-and-Tracking)
+  - [Solução de problemas](/pt-br/tutorials/accessories/2dof-camera-gimbal/05-Troubleshooting)
+  - [Informações do produto](/pt-br/tutorials/accessories/2dof-camera-gimbal/Product-Info)
 - [Sensor de Frequência Cardíaca e SpO2](./heart-rate-spo2.md)
 
 ### Módulo de reconhecimento de voz KWS
@@ -32,9 +38,11 @@ Placa de som de ativação por IA, com suporte a ativação por voz offline, pal
 
 Módulo ESP32-S3 de transmissão de vídeo e visão por IA, com suporte a 8 modos de IA, transmissão em modo duplo AP+STA e interação por voz.
 
+- [Tutoriais do módulo de câmera com IA dual-mode ESP32-S3](./esp32-nanocam/)
 - [Início rápido](./esp32-nanocam/ESP32-NanoCam-Quick-Start.md)
 - [Especificações de hardware](./esp32-nanocam/ESP32-NanoCam-Hardware-Spec.md)
 - [Manual do protocolo serial](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
+- [Code Downloads](./esp32-nanocam/ESP32-NanoCam-Code-Downloads.md)
 - [Tutorial de visão por IA — Capítulo 1: configuração do ambiente](./esp32-nanocam/Ch01-Environment-Setup.md)
 
 #### Tutorial de visão IA (11 capítulos)

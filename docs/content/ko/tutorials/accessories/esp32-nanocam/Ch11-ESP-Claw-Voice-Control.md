@@ -11,7 +11,7 @@ description: "NanoCam 튜토리얼 11장: ESP-Claw 모드의 하드웨어 제어
 
 ## 이번 장 안내
 
-기기를 `ai_mode:7`로 전환하면 NanoCam이 ESP-Claw 모드로 진입합니다. 이 모드는 XiaoZhi AI(`ai_mode:6`)와 **동일한 펌웨어**(`nanocam_espclaw/`)를 공유하며, 차이는 단 하나 —— ESP-Claw 모드는 음성 대화를 기반으로 하드웨어 제어 도구 5개를 추가로 등록한다는 점입니다.
+기기를 `ai_mode:7`로 전환하면 NanoCam이 ESP-Claw 모드로 진입합니다. 이 모드는 XiaoZhi AI(`ai_mode:6`)와 **동일한 펌웨어**(`nanocam_espclaw/`)를 공유하며, 차이는 단 하나: ESP-Claw 모드는 음성 대화를 기반으로 하드웨어 제어 도구 5개를 추가로 등록한다는 점입니다.
 
 |비교 항목|XiaoZhi AI (mode 6)|ESP-Claw (mode 7)|
 |---|---|---|
@@ -71,7 +71,6 @@ ai_mode:7
 ### 11.4 사진 촬영 + AI 비전 분석
 
 사용자가 "무엇이 보이는지..."라고 말하면, 펌웨어가 VGA RGB565 이미지 한 프레임을 캡처하여 JPEG로 압축하고, 서버에 구성된 멀티모달 API로 전송하여 분석한 뒤, 결과를 TTS 음성으로 안내합니다.
-
 > 멀티모달 API의 URL과 token은 서버가 연결 핸드셰이크 단계에서 자동으로 전달하며, 시리얼로 구성 명령을 수동 입력할 필요가 없습니다.
 
 ## NanoCam 전용 도구 5개

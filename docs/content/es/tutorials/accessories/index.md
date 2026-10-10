@@ -14,7 +14,13 @@ description: "Inicio de tutoriales de accesorios de Juxi Technology — KWS voz,
 - [Cámara USB con enfoque automático](./usb-auto-focus-camera.md)
 - [Cámara CSI Jetson](./jetson-csi-camera.md)
 
-- [Cardán 2-DOF](./2dof-camera-gimbal.md)
+- [Cardán 2-DOF](/es/tutorials/accessories/2dof-camera-gimbal/)
+  - [Guía de inicio rápido](/es/tutorials/accessories/2dof-camera-gimbal/01-Quick-Start-Guide)
+  - [Hardware y preparación del entorno](/es/tutorials/accessories/2dof-camera-gimbal/02-Hardware-and-Environment-Setup)
+  - [Uso básico](/es/tutorials/accessories/2dof-camera-gimbal/03-Basic-Usage)
+  - [Funciones avanzadas y seguimiento](/es/tutorials/accessories/2dof-camera-gimbal/04-Advanced-Features-and-Tracking)
+  - [Solución de problemas](/es/tutorials/accessories/2dof-camera-gimbal/05-Troubleshooting)
+  - [Información del producto](/es/tutorials/accessories/2dof-camera-gimbal/Product-Info)
 
 - [Sensor de frecuencia cardíaca y SpO2](./heart-rate-spo2.md)
 
@@ -34,9 +40,11 @@ Tarjeta de sonido de activación IA — activación por voz sin conexión, palab
 
 Módulo de transmisión de vídeo y visión IA ESP32-S3, compatible con 8 modos de IA, transmisión en modo dual AP+STA e interacción por voz.
 
+- [Tutorial de uso de ESP32-NanoCam](./esp32-nanocam/)
 - [Inicio rápido](./esp32-nanocam/ESP32-NanoCam-Quick-Start.md)
 - [Especificaciones de hardware](./esp32-nanocam/ESP32-NanoCam-Hardware-Spec.md)
 - [Manual del protocolo serie](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
+- [Code Downloads](./esp32-nanocam/ESP32-NanoCam-Code-Downloads.md)
 - [Tutorial de visión IA, capítulo 1: configuración del entorno](./esp32-nanocam/Ch01-Environment-Setup.md)
 
 #### Tutorial de visión IA (11 capítulos)

@@ -11,13 +11,13 @@ description: "Capítulo 5 do tutorial do ESP32-NanoCam: use o modelo CatFaceDete
 
 ## Princípio
 
-A detecção de rosto de gato usa o modelo CatFaceDetectMN03, treinado com otimização específica para as características faciais dos gatos (orelhas triangulares / distância interpupilar ampla / nariz). Recebe uma imagem RGB565 de 320x240 e retorna uma lista de caixas delimitadoras de rosto de gato. Compartilha o mesmo formato de saída `print_detection_result` da detecção de rosto humano do [Capítulo 4](./Ch04-Face-Detection.md).
+A detecção de rosto de gato usa o modelo CatFaceDetectMN03, treinado com otimização específica para as características do rosto de gatos (orelhas triangulares / distância interpupilar ampla / nariz). Recebe uma imagem RGB565 de 320x240 e retorna uma lista de caixas delimitadoras de rosto de gato. Compartilha o mesmo formato de saída `print_detection_result` da detecção de rosto do [Capítulo 4](./Ch04-Face-Detection.md).
 
 ### Diferenças entre os modelos de rosto de gato e de rosto humano
 
 |Aspecto|Detecção de rosto (ai_mode:2)|Detecção de rosto de gato (ai_mode:1)|
 |---|---|---|
-|Modelo|MSR01 + MNP01 em cascata dupla|CatFaceDetectMN03 estágio único|
+|Modelo|MSR01 + MNP01 em cascata dupla|CatFaceDetectMN03 em estágio único|
 |Pontos-chave|10 (dois olhos / ponta do nariz / cantos da boca)|Nenhum (o modelo não fornece)|
 |Limiar de confiança|MSR01=0.3, MNP01=0.4|0.4|
 |Desenho da caixa de detecção|Retângulo vazado verde + 5 pontos-chave|Retângulo vazado verde (sem pontos-chave)|
@@ -47,7 +47,6 @@ I (xxxxx) detection_result: [ 0]: ( 45,  30, 180, 210)
 ```
 
 - Formato: `[número] (x, y, w, h)` — coordenadas do canto superior esquerdo da caixa do rosto de gato + largura e altura
-
 - O modelo de rosto de gato não fornece pontos-chave (diferente da detecção de rosto humano)
 
 ## Código

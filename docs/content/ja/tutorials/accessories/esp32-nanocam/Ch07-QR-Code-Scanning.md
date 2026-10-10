@@ -1,9 +1,9 @@
 ---
-title: 第 7 章:QR コードスキャン
+title: "第 7 章:QRコードスキャン"
 description: "ESP32-NanoCam チュートリアル第 7 章。QR コードやバーコードをリアルタイムにデコードし、デコード結果をシリアルと Web 画面に出力する方法を解説します。"
 ---
 
-# 第 7 章:QR コードスキャン
+# 第 7 章:QRコードスキャン
 
 > **[ストアで購入](https://www.juxitech.com/ja/products/esp32-s3-wifi-video-module)**
 
@@ -12,13 +12,9 @@ description: "ESP32-NanoCam チュートリアル第 7 章。QR コードやバ�
 ## 原理
 
 esp-code-scanner のプリコンパイル済みライブラリで、画面内の QR コード(QR Code / Barcode)をリアルタイムにデコードします。カメラが出力する RGB565 フレームをそのままスキャナに渡すため、グレースケール変換は不要です。フレームごとに新しいスキャナオブジェクトを生成し、スキャン後すぐに破棄することで内部状態の蓄積を防ぎます。
-
 デコード結果は同時に:
-
 1. **シリアルログ**に出力
-
 2. **共有バッファ** `g_last_code` に最新結果を保存し、HTTP/MJPEG ストリームのオーバーレイ表示に使用
-
 3. **Web 画面の下部**に緑色の文字をオーバーレイ表示
 
 ## 手順
@@ -74,6 +70,6 @@ esp_code_scanner_destroy(scn);
 
 QR コードに向ける → シリアルにデコード内容を出力 + Web 画面にオーバーレイ表示。
 
-次の章:[第 8 章:顔認識](./Ch08-Face-Recognition.md)
+次の章:[第 8 章:顔認証](./Ch08-Face-Recognition.md)
 
 <RelatedProducts slugs="esp32-s3-wifi-module" />

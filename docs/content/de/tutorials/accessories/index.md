@@ -14,7 +14,13 @@ Willkommen zu den Accessoire-Tutorials! Hier finden Sie Anleitungen für Roboter
 - [USB-Kamera mit Autofokus](./usb-auto-focus-camera.md)
 - [Jetson-CSI-Kamera](./jetson-csi-camera.md)
 
-- [2-DOF-Gimbal](./2dof-camera-gimbal.md)
+- [2-DOF-Gimbal](/de/tutorials/accessories/2dof-camera-gimbal/)
+  - [Schnellstart](/de/tutorials/accessories/2dof-camera-gimbal/01-Quick-Start-Guide)
+  - [Hardware und Umgebung](/de/tutorials/accessories/2dof-camera-gimbal/02-Hardware-and-Environment-Setup)
+  - [Grundlegende Nutzung](/de/tutorials/accessories/2dof-camera-gimbal/03-Basic-Usage)
+  - [Erweiterte Funktionen und Tracking](/de/tutorials/accessories/2dof-camera-gimbal/04-Advanced-Features-and-Tracking)
+  - [Fehlerbehebung](/de/tutorials/accessories/2dof-camera-gimbal/05-Troubleshooting)
+  - [Produktinformationen](/de/tutorials/accessories/2dof-camera-gimbal/Product-Info)
 
 - [Herzfrequenz- und SpO2-Sensor](./heart-rate-spo2.md)
 
@@ -34,9 +40,11 @@ AI-Wake-Soundkarte — Offline-Sprachweckung, anpassbare Wake-Words, geringer St
 
 ESP32-S3-Videoübertragungs- und KI-Visionsmodul, unterstützt 8 KI-Modi, AP+STA-Dualmodus-Videoübertragung und Sprachinteraktion.
 
+- [ESP32-NanoCam Tutorials](./esp32-nanocam/)
 - [Schnellstart](./esp32-nanocam/ESP32-NanoCam-Quick-Start.md)
 - [Hardware-Spezifikation](./esp32-nanocam/ESP32-NanoCam-Hardware-Spec.md)
 - [Handbuch zum seriellen Protokoll](./esp32-nanocam/ESP32-NanoCam-Serial-Protocol.md)
+- [Code-Downloads](./esp32-nanocam/ESP32-NanoCam-Code-Downloads.md)
 - [KI-Vision-Tutorial Kapitel 1: Umgebung einrichten](./esp32-nanocam/Ch01-Environment-Setup.md)
 
 #### KI-Vision-Tutorial (11 Kapitel)

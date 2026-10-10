@@ -70,8 +70,7 @@ Após a ativação, basta dizer o que você precisa:
 
 ### 11.4 Foto + análise visual por IA
 
-Quando o usuário diz algo como "看看..." (veja...), o firmware captura um quadro VGA RGB565, comprime em JPEG e o envia à API multimodal configurada no servidor para análise; o resultado é falado via TTS.
-
+Quando o usuário diz algo como "veja...", o firmware captura um quadro VGA RGB565, comprime em JPEG e o envia à API multimodal configurada no servidor para análise; o resultado é falado via TTS.
 > A URL e o token da API multimodal são entregues automaticamente pelo servidor na fase de handshake da conexão; não é preciso digitar comandos de configuração manualmente na porta serial.
 
 ## As 5 ferramentas exclusivas do NanoCam
@@ -89,7 +88,7 @@ Quando o usuário diz algo como "看看..." (veja...), o firmware captura um qua
 |Conteúdo|Caminho|
 |---|---|
 |Registro das ferramentas MCP|`nanocam_espclaw/main/boards/nanocam/nanocam_board.cc`|
-|Lógica de envio da Vision|`nanocam_espclaw/main/boards/common/esp32_camera.cc`|
+|Lógica de envio do Vision|`nanocam_espclaw/main/boards/common/esp32_camera.cc`|
 |Configuração padrão do SDK|`nanocam_espclaw/sdkconfig.defaults`|
 
 > O firmware ESP-Claw é um projeto independente e não compartilha código com o `nanocam_vision`. Os dois firmwares precisam ser compilados e gravados separadamente.

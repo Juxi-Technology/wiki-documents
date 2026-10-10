@@ -176,6 +176,7 @@ description: "Juxi Technologyロボットアームシリーズチュートリア
 
 - [Lekiwi チュートリアル](./lekiwi/Lekiwi-Tutorial.md)
 - [Lekiwi 組み立てチュートリアル](./lekiwi/Lekiwi-Assembly.md)
+- [製品情報](./lekiwi/Lekiwi-Product-Info.md)
 
 ### SO-ARM101 + AmazingHand チュートリアル
 

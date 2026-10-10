@@ -1,9 +1,9 @@
 ---
-title: "Capítulo 5: Deteção de caras de gato"
+title: "Capítulo 5: Deteção de faces de gato"
 description: "Tutorial ESP32-NanoCam, Capítulo 5: usar o modelo CatFaceDetectMN03 para detetar caras de gato."
 ---
 
-# Capítulo 5: Deteção de caras de gato
+# Capítulo 5: Deteção de faces de gato
 
 > **[Comprar na loja](https://www.juxitech.com/products/esp32-s3-wifi-video-module)**
 
@@ -11,11 +11,11 @@ description: "Tutorial ESP32-NanoCam, Capítulo 5: usar o modelo CatFaceDetectMN
 
 ## Princípio
 
-A deteção de caras de gato utiliza o modelo CatFaceDetectMN03, otimizado e treinado especificamente para características faciais de gatos (orelhas triangulares / distância interpupilar larga / nariz). A entrada é uma imagem RGB565 de 320x240 e a saída é uma lista de caixas delimitadoras de caras de gato. Partilha o mesmo formato de saída `print_detection_result` da deteção de rostos do [Capítulo 4](./Ch04-Face-Detection.md).
+A deteção de faces de gato utiliza o modelo CatFaceDetectMN03, otimizado e treinado especificamente para as características da face do gato (orelhas triangulares / distância interpupilar ampla / nariz). Entrada: imagem RGB565 de 320x240; saída: lista de caixas delimitadoras de faces de gato. Partilha com a deteção de rostos do [Capítulo 4](./Ch04-Face-Detection.md) o mesmo formato de saída `print_detection_result`.
 
-### Diferenças entre os modelos de deteção de caras de gato e de rostos
+### Diferenças entre os modelos de deteção de faces de gato e de rostos
 
-|Dimensão de comparação|Deteção de rostos (ai_mode:2)|Deteção de caras de gato (ai_mode:1)|
+|Dimensão de comparação|Deteção de rostos (ai_mode:2)|Deteção de faces de gato (ai_mode:1)|
 |---|---|---|
 |Modelo|Cascata dupla MSR01 + MNP01|CatFaceDetectMN03 fase única|
 |Pontos-chave|10 (olhos/nariz/cantos da boca)|Nenhum (o modelo não os produz)|
@@ -30,25 +30,24 @@ A deteção de caras de gato utiliza o modelo CatFaceDetectMN03, otimizado e tre
 ai_mode:1
 ```
 
-O dispositivo reinicia automaticamente e entra no modo de deteção de caras de gato
+O dispositivo reinicia automaticamente e entra no modo de deteção de faces de gato
 
 > Consulte o [manual do protocolo da porta serial](./ESP32-NanoCam-Serial-Protocol.md) para a lista completa de comandos.
 
 ### 5.2 Observar o resultado
 
-Coloque um gato ou uma imagem de gato em frente da câmara e abra `http://<IP>` no navegador para ver a caixa de deteção verde a marcar a cara do gato.
+Coloque um gato ou uma imagem de gato em frente da câmara e abra `http://<IP>` no navegador para ver a caixa de deteção verde a marcar a face do gato.
 
-### 5.3 Saída da porta serial
+### 5.3 Saída da porta série
 
-Quando é detetada uma cara de gato, a porta serial apresenta:
+Quando é detetada uma face de gato, a porta série apresenta:
 
 ```Plain
 I (xxxxx) detection_result: [ 0]: ( 45,  30, 180, 210)
 ```
 
-- Formato: `[número] (x, y, w, h)` — coordenadas do canto superior esquerdo da caixa da cara de gato + largura e altura
-
-- O modelo de caras de gato não produz pontos-chave (ao contrário da deteção de rostos)
+- Formato: `[número] (x, y, w, h)` — coordenadas do canto superior esquerdo da caixa da face de gato + largura e altura
+- O modelo de faces de gato não produz pontos-chave (ao contrário da deteção de rostos)
 
 ## Código
 
@@ -94,7 +93,7 @@ while True:
 
 ## Efeito
 
-O gato aparece → caixa verde na imagem → coordenadas emitidas pela porta serial. É possível usar Arduino/Python para ler as coordenadas e controlar um servo de seguimento.
+O gato aparece → caixa verde na imagem → coordenadas emitidas pela porta série. É possível usar Arduino/Python para ler as coordenadas e controlar um servo de seguimento.
 
 Próximo capítulo: [Capítulo 6: Reconhecimento de cores](./Ch06-Color-Recognition.md)
 

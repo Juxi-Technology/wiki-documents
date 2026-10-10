@@ -1,9 +1,9 @@
 ---
-title: 第 4 章:人臉檢測
+title: "第 4 章:人臉偵測"
 description: "ESP32-NanoCam 教程第 4 章:以 ESP-DL MobileNet 離線檢測人臉,標註人臉框與關鍵點,並用 Arduino 或 Python 讀取座標控制舵機。"
 ---
 
-# 第 4 章:人臉檢測
+# 第 4 章:人臉偵測
 
 > **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
 
@@ -11,15 +11,13 @@ description: "ESP32-NanoCam 教程第 4 章:以 ESP-DL MobileNet 離線檢測人
 
 ## 原理
 
-人臉檢測使用 ESP-DL 深度學習庫，基於 MobileNet 輕量級檢測模型。輸入 320x240 RGB565 圖像，輸出人臉邊界框列表(位置+大小+置信度)。推理在 ESP32-S3 上完成，無需聯網。
+人臉偵測使用 ESP-DL 深度學習函式庫，基於 MobileNet 輕量級偵測模型。輸入 320x240 RGB565 影像，輸出人臉邊界框列表（位置 + 大小 + 置信度）。推理在 ESP32-S3 上完成，無需聯網。
 
-### 檢測結果格式
+### 偵測結果格式
 
-- 座標: 左上角(x,y) + 寬高(w,h)
-
-- 置信度: 0-1 之間的浮點數
-
-- 多人臉時返回多個框
+- 座標：左上角 (x,y) + 寬高 (w,h)
+- 置信度：0-1 之間的浮點數
+- 偵測到多張人臉時會返回多個框
 
 ## 步驟
 
@@ -33,11 +31,11 @@ ai_mode:2
 
 ### 4.2 觀察效果
 
-瀏覽器 `http://<IP>` 看到人臉檢測框。
+瀏覽器 `http://<IP>` 可看到人臉偵測框。
 
-### 4.3 獲取座標
+### 4.3 取得座標
 
-串口輸出格式:
+串列輸出格式：
 
 ```Plain
 I (xxxxx) detection_result: [ 0]: ( 45,  30, 180, 210)
@@ -45,7 +43,6 @@ I (xxxxx) detection_result:       left eye: ( 90,  80), right eye: (150,  80), n
 ```
 
 - 第一行：`[序號] (x, y, w, h)` — 人臉框座標
-
 - 第二行：5 個關鍵點 — 左眼、右眼、鼻子、左嘴角、右嘴角
 
 ## 程式碼
@@ -76,8 +73,8 @@ if line.startswith("$face:"):
 
 ## 效果
 
-攝像頭前出現人臉→畫面標註綠框→串口輸出座標。
+攝影機前出現人臉 → 畫面標註綠框 → 串列輸出座標。
 
-下一章:[第 5 章:貓臉檢測](./Ch05-Cat-Face-Detection.md)
+下一章:[第 5 章:貓臉偵測](./Ch05-Cat-Face-Detection.md)
 
 <RelatedProducts slugs="esp32-s3-wifi-module" />

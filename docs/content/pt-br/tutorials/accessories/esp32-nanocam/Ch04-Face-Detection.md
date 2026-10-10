@@ -16,9 +16,7 @@ A detecção de rosto usa a biblioteca de aprendizado profundo ESP-DL, com base 
 ### Formato do resultado da detecção
 
 - Coordenadas: canto superior esquerdo (x,y) + largura e altura (w,h)
-
 - Confiança: número de ponto flutuante entre 0 e 1
-
 - Com vários rostos, várias caixas são retornadas
 
 ## Passos
@@ -45,7 +43,6 @@ I (xxxxx) detection_result:       left eye: ( 90,  80), right eye: (150,  80), n
 ```
 
 - Primeira linha: `[número] (x, y, w, h)` — coordenadas da caixa de rosto
-
 - Segunda linha: 5 pontos-chave — olho esquerdo, olho direito, nariz, canto esquerdo da boca, canto direito da boca
 
 ## Código

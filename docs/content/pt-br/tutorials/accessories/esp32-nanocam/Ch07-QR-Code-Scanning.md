@@ -11,15 +11,11 @@ description: "Capítulo 7 do tutorial do ESP32-NanoCam: use a biblioteca esp-cod
 
 ## Princípio
 
-Usa a biblioteca pré-compilada esp-code-scanner para decodificar em tempo real códigos QR (QR Code / Barcode) na imagem. O quadro RGB565 da câmera é enviado diretamente ao scanner, sem conversão para escala de cinza. A cada quadro um novo objeto scanner é criado e destruído em seguida, evitando acúmulo de estado interno.
-
+Usa a biblioteca pré-compilada esp-code-scanner para decodificar em tempo real códigos QR (QR Code / Barcode) na imagem. O quadro RGB565 da câmera é enviado diretamente ao scanner, sem conversão para escala de cinza. A cada quadro, um novo objeto scanner é criado e destruído em seguida, evitando acúmulo de estado interno.
 O resultado da decodificação é disponibilizado simultaneamente por:
-
 1. **Log na porta serial**
-
 2. **Buffer compartilhado** `g_last_code`, que guarda o resultado mais recente para sobreposição no fluxo HTTP/MJPEG
-
-3. Sobreposição de texto verde na **parte inferior da imagem da página web**
+3. **Texto verde sobreposto na parte inferior da imagem da página web**
 
 ## Passos
 

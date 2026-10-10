@@ -7,10 +7,10 @@ description: "ESP32-NanoCam serial AT protocol manual: complete command referenc
 
 > **[Buy in Store](https://www.juxitech.com/products/esp32-s3-wifi-video-module)**
 
-
 > Baud rate: 115200 | Data bits: 8 | Parity: None | Stop bits: 1 | Flow control: None
-
 > Compatible with the mainstream camera module AT command set, with additional NanoCam extended commands.
+
+---
 
 ## 1. General Rules
 
@@ -25,8 +25,8 @@ description: "ESP32-NanoCam serial AT protocol manual: complete command referenc
 
 |Command|Description|Example|Return|
 |---|---|---|---|
-|`sta_ssid:名称`|Set WiFi SSID|`sta_ssid:MyWiFi`|`OK`|
-|`sta_pd:密码`|Set WiFi password (reboots after change)|`sta_pd:12345678`|`OK` (reboots)|
+|`sta_ssid:name`|Set WiFi SSID|`sta_ssid:MyWiFi`|`OK`|
+|`sta_pd:password`|Set WiFi password (reboots after change)|`sta_pd:12345678`|`OK` (reboots)|
 
 > The WiFi SSID and password are at most 30 characters; Chinese characters are not supported.
 
@@ -34,14 +34,16 @@ description: "ESP32-NanoCam serial AT protocol manual: complete command referenc
 
 |Command|Description|Example|Return|
 |---|---|---|---|
-|`ap_ssid:名称`|Set hotspot SSID|`ap_ssid:NanoCam-AP`|`OK`|
-|`ap_pd:密码`|Set hotspot password (reboots after change)|`ap_pd:12345678`|`OK` (reboots)|
+|`ap_ssid:name`|Set hotspot SSID|`ap_ssid:NanoCam-AP`|`OK`|
+|`ap_pd:password`|Set hotspot password (reboots after change)|`ap_pd:12345678`|`OK` (reboots)|
 
 ### WiFi Mode
 
 |Command|Description|Parameter|Return|
 |---|---|---|---|
 |`wifi_mode:X`|Switch mode|0=AP 1=STA 2=AP+STA|`OK` (reboots when changed)|
+
+---
 
 ## 3. AI Mode Switching
 
@@ -58,6 +60,8 @@ description: "ESP32-NanoCam serial AT protocol manual: complete command referenc
 
 > `ai_mode` valid values: 0-7. Out-of-range values fall back to 0 by default. The device reboots automatically after a change, and the new mode takes effect after the reboot.
 
+---
+
 ## 4. Information Queries
 
 |Command|Description|Example Return|
@@ -65,6 +69,8 @@ description: "ESP32-NanoCam serial AT protocol manual: complete command referenc
 |`sta_ip`|Query STA IP|`sta_ip:192.168.1.100`|
 |`ap_ip`|Query AP IP|`ap_ip:192.168.4.1`|
 |`wifi_ver`|Query firmware version|`NanoCam Board Ver:0.2.0`|
+
+---
 
 ## 5. System Control
 
@@ -89,6 +95,8 @@ description: "ESP32-NanoCam serial AT protocol manual: complete command referenc
   "free_heap": 245760
 }
 ```
+
+---
 
 ## 6. Face Recognition Commands
 
@@ -119,6 +127,8 @@ face_del           # Delete the last enrolled face
 4. Face features are stored in the Flash `fr` partition, persist across power cycles, up to 47 IDs
 5. Recognition uses frame skipping (MFN inference runs once every 10 frames)
 
+---
+
 ## 7. Extended Commands (NanoCam-specific)
 
 |Command|Description|Status|
@@ -138,7 +148,9 @@ face_del           # Delete the last enrolled face
 |`nano_api_key:KEY`|Set API key|`nano_api_key:sk-xxxx`|`OK`|
 
 > Supports any OpenAI-compatible API (vLLM / Ollama / local models all work).
-> ESP-Claw mode (ai_mode:7) supports `nano_server`; XiaoZhi AI (ai_mode:6) uses a separate server configuration.
+ESP-Claw mode (ai_mode:7) supports `nano_server`; XiaoZhi AI (ai_mode:6) uses a separate server configuration.
+
+---
 
 ## 8. Notes
 

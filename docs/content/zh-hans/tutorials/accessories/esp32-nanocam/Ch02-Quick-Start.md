@@ -1,5 +1,5 @@
 ---
-title: 第 2 章:快速上手
+title: "第 2 章:快速上手"
 description: "ESP32-NanoCam 教程第 2 章:烧录固件并完成 WiFi 配网(串口或 AP 热点),在浏览器打开第一帧实时 MJPEG 画面,了解各 HTTP 端点。"
 ---
 
@@ -14,15 +14,10 @@ description: "ESP32-NanoCam 教程第 2 章:烧录固件并完成 WiFi 配网(�
 ### 步骤
 
 1. 解压文件夹→ `nanocam_xxx.bin`
-
 2. 打开 [esptool-js](https://espressif.github.io/esptool-js/)
-
 3. Type-C 连接 NanoCam
-
 4. 点击 Connect → 选择串口
-
 5. 选择固件文件, 地址填 `0x0`
-
 6. 点击 START → 等待完成
 
 ### 验证
@@ -68,11 +63,8 @@ sta_ip
 ## 2.3 第一帧画面
 
 > 产出: **浏览器看到 NanoCam 实时画面**
-
 1. 浏览器输入 `http://<IP地址>`
-
 2. 看到实时 MJPEG 画面
-
 3. 串口发 `ai_mode:1` → 切换到猫脸检测 → 画面出现检测框
 
 ### 端点说明

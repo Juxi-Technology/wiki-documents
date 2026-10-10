@@ -11,15 +11,13 @@ description: "Tutoriel ESP32-NanoCam chapitre 4 : utiliser le modèle de détect
 
 ## Principe
 
-La détection de visage utilise la bibliothèque d'apprentissage profond ESP-DL, basée sur le modèle de détection léger MobileNet. En entrée une image 320x240 RGB565, en sortie une liste de boîtes englobantes de visages (position + taille + score de confiance). L'inférence s'exécute sur l'ESP32-S3, sans connexion réseau.
+La détection de visage utilise la bibliothèque d'apprentissage profond ESP-DL, basée sur le modèle de détection léger MobileNet. Entrée : une image 320x240 RGB565 ; sortie : une liste de boîtes englobantes de visages (position + taille + confiance). L'inférence s'exécute sur l'ESP32-S3, sans connexion réseau.
 
 ### Format des résultats de détection
 
 - Coordonnées : coin supérieur gauche (x,y) + largeur et hauteur (w,h)
-
-- Score de confiance : nombre flottant entre 0 et 1
-
-- Plusieurs visages : plusieurs cadres sont renvoyés
+- Confiance : nombre flottant entre 0 et 1
+- En présence de plusieurs visages, plusieurs cadres sont renvoyés
 
 ## Étapes
 
@@ -33,9 +31,9 @@ ai_mode:2
 
 ### 4.2 Observer le résultat
 
-Ouvrir `http://<IP>` dans le navigateur pour voir le cadre de détection de visage.
+Dans le navigateur, `http://<IP>` affiche le cadre de détection de visage.
 
-### 4.3 Récupérer les coordonnées
+### 4.3 Obtenir les coordonnées
 
 Format de sortie du port série :
 
@@ -45,8 +43,7 @@ I (xxxxx) detection_result:       left eye: ( 90,  80), right eye: (150,  80), n
 ```
 
 - Première ligne : `[index] (x, y, w, h)` — coordonnées du cadre du visage
-
-- Deuxième ligne : 5 points clés — œil gauche, œil droit, nez, commissure gauche, commissure droite
+- Deuxième ligne : 5 points clés — œil gauche, œil droit, nez, commissure gauche des lèvres, commissure droite des lèvres
 
 ## Code
 
@@ -76,7 +73,7 @@ if line.startswith("$face:"):
 
 ## Résultat
 
-Un visage apparaît devant la caméra → un cadre vert est tracé à l'image → les coordonnées sont envoyées sur le port série.
+Un visage apparaît devant la caméra → l'image est annotée d'un cadre vert → les coordonnées sont envoyées sur le port série.
 
 Chapitre suivant : [Chapitre 5 : Détection de visage de chat](./Ch05-Cat-Face-Detection.md)
 

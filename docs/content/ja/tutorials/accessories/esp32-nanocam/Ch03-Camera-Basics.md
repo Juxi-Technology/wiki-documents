@@ -1,5 +1,5 @@
 ---
-title: 第 3 章:カメラの基礎
+title: "第 3 章:カメラの基礎"
 description: "ESP32-NanoCam チュートリアル第 3 章。DVP カメラ、MJPEG ストリーミング、PSRAM フレームバッファの原理と内蔵 AI モードを解説します。"
 ---
 
@@ -16,9 +16,7 @@ NanoCam は DVP(デジタルビデオパラレル)インターフェースでカ
 ### 主要な概念
 
 - **DVP**: 8 本のパラレルデータ + 3 本の同期信号(VSYNC/HREF/PCLK)
-
 - **MJPEG**: 各フレームは独立した JPEG 画像で、ブラウザが連続して読み込むことで動画のように表示される
-
 - **PSRAM**: 8MB PSRAM をフレームバッファとして使用し、2〜4 フレームを保存可能
 
 ## 手順
@@ -29,13 +27,12 @@ NanoCam は DVP(デジタルビデオパラレル)インターフェースでカ
 
 |コマンド|機能|
 |---|---|
-|`ai_mode:0\r`|映像転送モジュール|
-|`ai_mode:1\r`|猫顔検出|
-|`ai_mode:2\r`|顔検出|
-|`ai_mode:3\r`|色認識|
-|`ai_mode:4\r`|顔認識|
-|`ai_mode:5\r`|QR コード認識|
-
+|ai_mode:0\r|映像転送モジュール|
+|ai_mode:1\r|猫顔検出|
+|ai_mode:2\r|顔検出|
+|ai_mode:3\r|色認識|
+|ai_mode:4\r|顔認証|
+|ai_mode:5\r|QR コード認識|
 > 完全な AI モードとシリアルコマンドは[シリアルプロトコルマニュアル](./ESP32-NanoCam-Serial-Protocol.md)を参照。
 
 次の章:[第 4 章:顔検出](./Ch04-Face-Detection.md)

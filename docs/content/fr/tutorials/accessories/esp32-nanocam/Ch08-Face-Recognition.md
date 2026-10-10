@@ -11,7 +11,7 @@ description: "Tutoriel ESP32-NanoCam chapitre 8 : enregistrer des visages et rec
 
 ## Principe
 
-La reconnaissance faciale = **détection de visage** (pipeline à deux étages MSR01+MNP01) + **extraction de caractéristiques** (réseau de neurones FaceRecognition112V1S8 MFN) + **comparaison par similarité cosinus**.
+La reconnaissance faciale = **détection de visage** (pipeline à deux étages MSR01+MNP01) + **extraction de caractéristiques** (réseau de neurones MFN FaceRecognition112V1S8) + **comparaison par similarité cosinus**.
 
 ```Plain
 Trame RGB565 de la caméra
@@ -28,7 +28,7 @@ Trame RGB565 de la caméra
 
 ### Optimisation des performances
 
-L'extraction de caractéristiques MFN et la comparaison sur l'ensemble de la base sont très coûteuses ; les exécuter à chaque trame ferait saccader l'image. L'implémentation actuelle adopte une **stratégie de saut de trames** : la détection de visage tourne à chaque trame (peu coûteuse), la reconnaissance MFN une fois toutes les 10 trames (coûteuse), et l'étiquette affiche en continu le dernier résultat de reconnaissance. L'image reste ainsi fluide et l'étiquette d'ID ne clignote pas.
+L'extraction de caractéristiques MFN et la comparaison sur l'ensemble de la base sont coûteuses ; les exécuter à chaque trame ferait saccader l'image. L'implémentation actuelle adopte une **stratégie de saut de trames** : la détection de visage s'exécute à chaque trame (peu coûteuse), la reconnaissance MFN une fois toutes les 10 trames (coûteuse), et l'étiquette affiche en continu le dernier résultat de reconnaissance. L'image reste ainsi fluide et l'étiquette d'ID ne clignote pas.
 
 ### Stockage des caractéristiques faciales
 
@@ -37,9 +37,7 @@ Les caractéristiques faciales enregistrées (id + embedding 512 dimensions) son
 ## Matériel requis
 
 - Carte principale NanoCam + carte de base
-
 - Câble USB-C (alimentation + port série vers le PC)
-
 - Terminal série (débit 115200)
 
 ## Étapes
@@ -50,31 +48,30 @@ Les caractéristiques faciales enregistrées (id + embedding 512 dimensions) son
 ai_mode:4
 ```
 
-L'appareil redémarre automatiquement en mode FaceID ; le LED RGB WS2812 (GPIO18 DIN, alimentation VDD50) s'allume en violet. Après le redémarrage, le port série doit afficher :
+L'appareil redémarre automatiquement en mode FaceID ; la LED RGB WS2812 (GPIO18 DIN, alimentation VDD50) s'allume en violet. Après le redémarrage, le port série doit afficher :
 
 ```Plain
 I (5526) MFN: fr partition size: 98304 bytes, maxminum 47 IDs can be stored
 I (5526) MFN: No face ID in flash
 ```
 
-`No face ID in flash` signifie qu'aucun visage n'a encore été enregistré — c'est normal.
+`No face ID in flash` signifie qu'aucun visage n'a encore été enregistré ; c'est normal.
 
 ### 8.2 Enregistrer un visage
 
-Placez le visage bien face à la caméra (distance 30-50 cm, éclairage uniforme) et assurez-vous qu'il n'y a **qu'un seul visage** à l'image. Envoyez sur le port série :
+Placez le visage bien face à la caméra (distance 30-50cm, éclairage uniforme) et assurez-vous qu'**un seul visage** apparaît à l'image. Envoyez sur le port série :
 
 ```Plain
 face_eril
 ```
 
-L'appareil détecte le visage, extrait automatiquement les caractéristiques et l'enregistre en Flash :
+L'appareil détecte le visage, en extrait automatiquement les caractéristiques et l'enregistre en Flash :
 
 ```Plain
 I (xxxx) ENROLL: ID 1 is enrolled
 ```
 
 L'image superpose le texte bleu `Enroll: ID 1`, qui disparaît après environ 0.5 seconde.
-
 > **Attention** : la commande est `face_eril` (abréviation d'enroll), pas `face_enroll`. Si vous voyez `fail: unknown command`, vérifiez l'orthographe.
 
 ### 8.3 Reconnaître un visage
@@ -85,12 +82,9 @@ Une fois l'enregistrement terminé, envoyez la commande de reconnaissance :
 face_rz
 ```
 
-Le système passe en mode de reconnaissance continue. Le visage présent est comparé à tous les identifiants enregistrés en Flash :
-
+Le système passe en mode reconnaissance continue. Le visage présent est comparé à tous les identifiants enregistrés en Flash :
 - **Correspondance** : le port série affiche `Similarity: 0.85, Match ID: 1`, l'image superpose en continu `ID: 1` en vert
-
 - **Personne inconnue** : le port série affiche `Similarity: 0.32, Match ID: 0`, l'image superpose en continu `who?` en rouge
-
 > L'étiquette **reste affichée** et ne disparaît pas. Pour quitter le mode reconnaissance, envoyez `face_detect` pour revenir en mode détection pure.
 
 ### 8.4 Supprimer un visage
@@ -108,17 +102,16 @@ face_detect
 ```
 
 Retour au mode détection de visage pure (cadre + points clés uniquement, sans reconnaissance) ; les étiquettes d'ID sont effacées.
+> **À propos du mode DETECT** : sur l'ESP32-S3, l'impression des coordonnées sur le port série en mode détection pure est désactivée (`#if !CONFIG_IDF_TARGET_ESP32S3`), afin d'éviter de saturer le port série avec les journaux de détection. Les journaux de coordonnées `detection_result` n'apparaissent qu'après être entré en mode reconnaissance (`face_rz`).
 
-> **À propos du mode DETECT** : sur l'ESP32-S3, l'impression des coordonnées sur le port série en mode détection pure est désactivée (`#if !CONFIG_IDF_TARGET_ESP32S3`), afin d'éviter que les journaux de détection ne saturent le port série. Les journaux de coordonnées `detection_result` n'apparaissent qu'après être entré en mode reconnaissance (`face_rz`).
-
-## Aide-mémoire des commandes
+## Aide-mémoire complet des commandes
 
 |Commande|Fonction|Comportement de l'étiquette|Persistante|
 |---|---|---|---|
-|`face_eril`|Enregistrer le visage actuellement détecté|bleue `Enroll: ID N`|flash 0.5s|
-|`face_rz`|Entrer en mode reconnaissance continue|verte `ID: N` / rouge `who?`|✅ continue|
-|`face_del`|Supprimer le dernier identifiant enregistré|rouge `N IDs left`|flash 0.5s|
-|`face_detect`|Quitter la reconnaissance, revenir en détection pure|efface toutes les étiquettes|—|
+|`face_eril`|Enregistrer le visage actuellement détecté|Bleue "Enroll: ID N"|Flash 0.5s|
+|`face_rz`|Entrer en mode reconnaissance continue|Verte "ID: N" / rouge "who?"|✅ Continue|
+|`face_del`|Supprimer le dernier ID enregistré|Rouge "N IDs left"|Flash 0.5s|
+|`face_detect`|Quitter la reconnaissance, revenir à la détection pure|Efface toutes les étiquettes|—|
 
 > Pour la liste complète des commandes, voir le [Manuel du protocole série](./ESP32-NanoCam-Serial-Protocol.md).
 
@@ -150,13 +143,13 @@ face_rz                            # Reconnaître à nouveau
 → Bob devant la caméra : « who? » (supprimé)
 ```
 
-> Le mode reconnaissance faciale consomme beaucoup de mémoire (modèle MFN + double modèle de détection de visage). Le port série Type-C (UART0) fonctionne normalement. Si le port série ne répond pas, vérifiez d'abord que le débit est bien de 115200.
+> Le mode reconnaissance faciale consomme beaucoup de mémoire (modèle MFN + double modèle de détection de visage) ; le port série Type-C (UART0) fonctionne normalement. Si le port série ne répond pas, vérifiez d'abord que le débit est bien de 115200.
 
 ## Code
 
 ### Logique de reconnaissance principale
 
-`components/modules/ai/who_human_face_recognition.cpp` — stratégie de reconnaissance avec saut de trames :
+`components/modules/ai/who_human_face_recognition.cpp` — stratégie de saut de trames :
 
 ```C++
 case RECOGNIZE:
@@ -180,17 +173,17 @@ case RECOGNIZE:
 
 |Symptôme|Cause possible|Solution|
 |---|---|---|
-|`No face ID in flash`|Normal, aucun visage enregistré|Envoyer `face_eril` pour enregistrer|
-|Le résultat est toujours `who?`|Éclairage insuffisant / angle défavorable / similarité sous le seuil|Réenregistrer, face à la caméra, éclairage uniforme|
-|Aucune réaction à l'enregistrement|Nombre de visages à l'image ≠ 1|S'assurer qu'il n'y a qu'un seul visage, à 30-50 cm|
+|`No face ID in flash`|Normal, aucun visage encore enregistré|Envoyer `face_eril` pour enregistrer|
+|Résultat toujours `who?`|Éclairage insuffisant / angle défavorable / similarité sous le seuil|Réenregistrer, face à la caméra, éclairage uniforme|
+|Aucune réaction lors de l'enregistrement|Nombre de visages à l'image ≠ 1|S'assurer qu'il n'y a qu'un seul visage, à 30-50cm|
 |Image saccadée pendant la reconnaissance|Normal, l'inférence MFN prend du temps|Déjà optimisé par saut de trames, une exécution toutes les 10 trames|
 |Étiquette clignotante|—|Corrigé, l'étiquette reste affichée en continu|
 |`fail: unknown command`|Faute d'orthographe dans la commande|Vérifier la commande : `face_eril` et non `face_enroll`|
 
 ## Résultat
 
-Enregistrer un visage → reconnaissance continue avec affichage de l'ID → sortie I2C/port série → commande de relais ou de servomoteur : une solution de contrôle d'accès complète.
+Enregistrer un visage → reconnaissance continue avec affichage de l'ID → sortie des résultats en I2C/port série → commande de relais/servomoteur : une solution de contrôle d'accès complète.
 
-Chapitre suivant : [Chapitre 9 : Dialogue vocal](./Ch09-Voice-Chat.md)
+Chapitre suivant : [Chapitre 9 : Dialogue vocal (XiaoZhi AI)](./Ch09-Voice-Chat.md)
 
 <RelatedProducts slugs="esp32-s3-wifi-module" />

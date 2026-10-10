@@ -1,9 +1,9 @@
 ---
-title: "Capitolo 10: Comprensione visiva AI"
+title: "Capitolo 10: Comprensione visiva con IA"
 description: "Tutorial ESP32-NanoCam capitolo 10: in modalità ESP-Claw scattare una foto e chiamare l'API di visione multimodale per far descrivere a voce a NanoCam ciò che."
 ---
 
-# Capitolo 10: Comprensione visiva AI
+# Capitolo 10: Comprensione visiva con IA
 
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/esp32-s3-wifi-video-module)**
 
@@ -11,11 +11,10 @@ description: "Tutorial ESP32-NanoCam capitolo 10: in modalità ESP-Claw scattare
 
 ## Informazioni su questo capitolo
 
-La comprensione visiva AI è una funzionalità esclusiva di **ESP-Claw (modalità 7)** e non viene usata in XiaoZhi AI (modalità 6).
+La comprensione visiva con IA è una funzionalità esclusiva di **ESP-Claw (modalità 7)** e non viene utilizzata in XiaoZhi AI (modalità 6).
+> Gli strumenti `self.camera.take_photo` e `self.camera.inspect_image` utilizzati in questo capitolo ricevono l'indirizzo dell'API di analisi visiva dal server durante la fase di handshake MCP, tramite il campo `capabilities.vision`. Il firmware non deve configurare manualmente l'URL dell'API — questo significa che la configurazione dell'API avviene nella console di xiaozhi.me o sul server autogestito; per i dettagli consulta il [Capitolo 11: Controllo vocale ESP-Claw](./Ch11-ESP-Claw-Voice-Control.md).
 
-> Gli strumenti `self.camera.take_photo` e `self.camera.inspect_image` usati in questo capitolo: l'indirizzo dell'API di analisi visiva viene fornito automaticamente dal server durante l'handshake MCP tramite il campo `capabilities.vision`. Il firmware non deve configurare manualmente l'URL dell'API — questo significa che la configurazione dell'API avviene nella console xiaozhi.me o su un server auto-ospitato; per i dettagli vedi il [Capitolo 11: Controllo vocale ESP-Claw](./Ch11-ESP-Claw-Voice-Control.md).
-
-## Come funziona
+## Funzionamento
 
 Il flusso completo dell'analisi visiva:
 
@@ -30,16 +29,16 @@ Comando vocale dell'utente "guarda cosa c'è sul tavolo"
   → annuncio vocale TTS
 ```
 
-### Differenza tra i due strumenti di scatto
+### Differenze tra i due strumenti di scatto
 
-|Strumento|Uso|Chi invia la Vision API|
+|Strumento|Utilizzo|Chi invia la Vision API|
 |---|---|---|
-|`self.camera.take_photo`|Scatta e descrive con la capacità vision integrata nel LLM|Server|
-|`self.camera.inspect_image` (dedicato a NanoCam)|Scatta e chiama `camera->Explain()` → HTTP POST a un'API multimodale indipendente|Firmware|
+|`self.camera.take_photo`|Scatta la foto e la descrive con la capacità vision integrata nell'LLM|Il server|
+|`self.camera.inspect_image` (dedicato a NanoCam)|Scatta la foto e chiama `camera->Explain()` → HTTP POST verso un'API multimodale indipendente|Il firmware|
 
-La differenza tra i due: `take_photo` passa attraverso la visione LLM del server XiaoZhi (implementazione generica), `inspect_image` è l'implementazione dedicata di questo progetto: il firmware chiama direttamente un'API multimodale indipendente (l'indirizzo è fornito dal server).
+La differenza tra i due: `take_photo` passa per la visione LLM del server XiaoZhi AI (implementazione generica), mentre `inspect_image` è l'implementazione dedicata di questo progetto: il firmware chiama direttamente un'API multimodale indipendente (il cui indirizzo è fornito dal server).
 
-## Passaggi
+## Procedura
 
 ### 10.1 Assicurarsi della modalità ESP-Claw
 
@@ -51,9 +50,9 @@ Dopo il riavvio il dispositivo entra in modalità ESP-Claw.
 
 > Per tutti i comandi vedi il [manuale del protocollo seriale](./ESP32-NanoCam-Serial-Protocol.md).
 
-### 10.2 Scatto + analisi AI
+### 10.2 Scatto + analisi IA
 
-Dopo la parola di attivazione, porre direttamente la domanda:
+Dopo il risveglio, poni direttamente la domanda:
 
 ```Plain
 💬 "Guarda cosa c'è qui"
@@ -65,14 +64,14 @@ Dopo la parola di attivazione, porre direttamente la domanda:
 
 NanoCam scatterà la foto, la caricherà, la analizzerà e risponderà a voce con il risultato.
 
-### 10.3 Esempi di riconoscimento della scena
+### 10.3 Esempi di riconoscimento di scenari
 
-|Input vocale|Esempio di risposta dell'AI|
+|Input vocale|Esempio di risposta dell'IA|
 |---|---|
-|"Cos'è questo"|"Questo è un computer portatile nero, accanto c'è una tazza di caffè bianca"|
+|"Che cos'è questo"|"Questo è un portatile nero, accanto c'è una tazza di caffè bianca"|
 |"Ci sono mele"|"Non vedo mele. Sul tavolo ci sono due libri e una penna"|
 |"Di che colore è"|"Quello che stai indicando è una tazza rossa"|
-|"Quante tazze"|"Nell'immagine ci sono 2 tazze"|
+|"Quante tazze ci sono"|"Nell'immagine ci sono 2 tazze"|
 
 ## Codice
 
@@ -104,7 +103,7 @@ std::string Esp32Camera::Explain(const std::string &question) {
 }
 ```
 
-### Handshake MCP del server (invio della Vision API)
+### Handshake MCP lato server (invio della Vision API)
 
 ```json
 {
@@ -117,23 +116,23 @@ std::string Esp32Camera::Explain(const std::string &question) {
 }
 ```
 
-Dopo la ricezione il firmware chiama `camera->SetExplainUrl(url, token)` per salvare l'indirizzo dell'API, usato direttamente nelle successive chiamate a `inspect_image`.
+Alla ricezione, il firmware chiama `camera->SetExplainUrl(url, token)` per salvare l'indirizzo dell'API, che viene poi utilizzato direttamente nelle successive chiamate a `inspect_image`.
 
 ## Modelli multimodali supportati
 
-Fornendo `vision.url` diversi dal server si può usare qualsiasi API compatibile con OpenAI:
+Fornendo dal server valori diversi di `vision.url` è possibile utilizzare qualsiasi API compatibile con OpenAI:
 
-|Modello|Esempio di indirizzo API|Scenari d'uso|
+|Modello|Esempio di indirizzo API|Scenario d'uso|
 |---|---|---|
-|`gpt-4o`|`https://api.openai.com/v1/chat/completions`|Massime capacità complessive|
-|`gpt-4o-mini`|`https://api.openai.com/v1/chat/completions`|Buon rapporto qualità-prezzo|
-|`qwen-vl-max`|`https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions`|Comprensione del cinese migliore|
+|`gpt-4o`|`https://api.openai.com/v1/chat/completions`|Migliori capacità complessive|
+|`gpt-4o-mini`|`https://api.openai.com/v1/chat/completions`|Ottimo rapporto qualità-prezzo|
+|`qwen-vl-max`|`https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions`|Migliore comprensione del cinese|
 |`llava:13b` (Ollama)|`http://localhost:11434/v1/chat/completions`|Completamente offline|
 |`claude-fable-5`|Richiede la configurazione di un proxy|Descrizioni dettagliate delle scene|
 
 ## Risultato
 
-"Guarda cosa c'è qui" → scatto e caricamento → analisi AI → annuncio vocale "I see a red cup on a wooden table" — un vero occhio AI.
+"Guarda cosa c'è qui" → scatta la foto e la carica → l'IA analizza → annuncio vocale "I see a red cup on a wooden table" — un vero occhio IA.
 
 Capitolo successivo: [Capitolo 11: Controllo vocale ESP-Claw](./Ch11-ESP-Claw-Voice-Control.md)
 

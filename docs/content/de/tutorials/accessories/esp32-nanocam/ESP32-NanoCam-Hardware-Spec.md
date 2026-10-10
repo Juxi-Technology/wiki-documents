@@ -7,10 +7,12 @@ description: "ESP32-NanoCam Hardware-Spezifikation: Dual-Board-Architektur, MCU-
 
 > **[Im Shop kaufen](https://www.juxitech.com/de/products/esp32-s3-wifi-video-module)**
 
+> Quelle: Schaltpläne NanoCamModule.pdf + NanoCamBASE.pdf.
+> Architektur: Das Kernboard (ESP32-S3 + Kamera + Audio) wird auf das Basisboard (USB-Stromversorgung + serielle Programmierung) gesteckt.
+
+---
 
 ## 1. Hardware-Übersicht
-
-Die Hardware-Angaben in diesem Abschnitt stammen aus den Schaltplänen NanoCamModule.pdf + NanoCamBASE.pdf. Gesamtarchitektur: Das Kernboard (ESP32-S3 + Kamera + Audio) wird auf das Basisboard (USB-Stromversorgung + serielle Programmierung) gesteckt.
 
 ```Plaintext
 ┌─────────────────────────────────────────────────────────┐
@@ -38,6 +40,8 @@ Die Hardware-Angaben in diesem Abschnitt stammen aus den Schaltplänen NanoCamMo
 ```
 
 ![Abb. 1: Kernboard-Vorderseite (ESP32-S3 / Kamera / Audio)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/1.png)
+
+---
 
 ## 2. MCU und Speicher
 
@@ -70,6 +74,8 @@ Die Hardware-Angaben in diesem Abschnitt stammen aus den Schaltplänen NanoCamMo
 |WP|IO34|Schreibschutz|
 |HOLD|IO33|Halt|
 
+---
+
 ## 3. Kamera-Subsystem
 
 ### 3.1 DVP-Schnittstelle
@@ -81,8 +87,8 @@ Die Hardware-Angaben in diesem Abschnitt stammen aus den Schaltplänen NanoCamMo
 |I2C-Konfigurationsbus|SDA=IO41, SCL=IO42 (geteilt mit externem I2C)|
 |Pixelformate|RGB565 / JPEG / YUV422 u. a.|
 
-![Abb. 5: Abmessungen des GC2145-Kameramoduls (68° Sichtfeld)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/5.png)
 
+![Abb. 4: Pinbeschriftung der Basisboard-Rückseite](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/4.png)
 ### 3.2 Vollständige DVP-Pinbelegung
 
 |Signalkategorie|Signalname|ESP32 GPIO|Bemerkung|
@@ -124,6 +130,8 @@ Camera DVP 信号组:
   SIOC(SCL) = IO42
 ```
 
+---
+
 ## 4. Audio-Subsystem
 
 ### 4.1 Audio-Architektur
@@ -158,7 +166,9 @@ AP2718AT (模拟MEMS麦) → ES8311 Codec (ADC/DAC) → NS4150B (模拟功放) �
 |---|---|---|
 |SDA|IO41|Geteilter I2C-Bus mit der Kamera|
 |SCL|IO42|Geteilter I2C-Bus mit der Kamera|
-|Adresse|**0x30**|ES8311 8-bit-I2C-Adresse|
+|Adresse|**0x30**|ES8311 8-Bit-I2C-Adresse|
+
+---
 
 ## 5. Stromversorgung
 
@@ -192,9 +202,11 @@ USB-C (5V) ──→ 底板 NCE3401 P-MOSFET 反接保护 ──→ VDD50
 |Verpolschutz|**NCE3401** P-MOSFET|Schutz des Stromversorgungseingangs am Basisboard|
 |Gate-Widerstand|R11 10KΩ|P-MOS-Gate auf Masse|
 
+---
+
 ## 6. Basisboard und Flashen
 
-![Abb. 2: Pinbeschriftung der Kernboard-Rückseite (RXD/TXD/SCL/SDA/5V/GND usw.)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/2.png)
+![Abb. 5: Abmessungen des GC2145-Kameramoduls (68° Sichtfeld)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/5.png)
 
 ### 6.1 USB-zu-Seriell
 
@@ -206,8 +218,8 @@ USB-C (5V) ──→ 底板 NCE3401 P-MOSFET 反接保护 ──→ VDD50
 |USB-Abgleichwiderstände|R4, R5 22R/1% (in Reihe zu D+/D-)|
 |DTR/RTS|Ein-Klick-Programmierung steuert BOOT + EN automatisch|
 
-![Abb. 3: Basisboard-Vorderseite (USB-C und Erweiterungsschnittstellen)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/3.png)
 
+![Abb. 2: Pinbeschriftung der Kernboard-Rückseite (RXD/TXD/SCL/SDA/5V/GND usw.)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/2.png)
 ### 6.2 Ein-Klick-Download-Schaltung
 
 Die automatische Programmierung erfolgt über Q1, Q2 (S8050 NPN-Transistoren):
@@ -240,14 +252,16 @@ Die automatische Programmierung erfolgt über Q1, Q2 (S8050 NPN-Transistoren):
 |P2-7|P2-7|**BOOT**|IO0|Boot-Modus/Programmierung|
 |P2-8|P2-8|**CHIP_PU**|EN|Chip-Reset-Steuerung|
 
-![Abb. 4: Pinbeschriftung der Basisboard-Rückseite](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/4.png)
 
+![Abb. 3: Basisboard-Vorderseite (USB-C und Erweiterungsschnittstellen)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/3.png)
 ### 6.4 Erweiterungsschnittstellen des Basisboards
 
 |Schnittstelle|Herausgeführte Signale|Verwendung|
 |---|---|---|
 |P3 (I2C, 4Pin)|5V1, GND, SDA, SCL|Externe I2C-Geräte|
 |P4 (UART, 4Pin)|5V1, GND, ESP_P, ESP_N|Externe USB-/Seriellgeräte|
+
+---
 
 ## 7. Vollständige GPIO-Belegungstabelle
 
@@ -305,15 +319,16 @@ Die automatische Programmierung erfolgt über Q1, Q2 (S8050 NPN-Transistoren):
 |IO46|Universal-IO|Erweiterung|
 
 > ⚠️ Belegte GPIOs: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,18,19,20,21,29,30,31,32,33,34,38,39,40,41,42,43,44,47,48
->
-> Verfügbar: 8 GPIOs
+Verfügbare Anzahl: 8 GPIOs
+
+---
 
 ## 8. Wichtige Design-Constraints
 
 ### 8.1 I2S-Peripheriekonfiguration
 
 - Der ESP32-S3 verfügt über zwei I2S-Controller:
-    - **I2S0**: dem ES8311-Codec zugewiesen (MCLK=IO39, BCLK=IO38, WS=IO47, DOUT=IO48, DIN=IO40), bidirektionaler I2S-Duplex, unterstützt gleichzeitig Aufnahme und Wiedergabe
+  - **I2S0**: dem ES8311-Codec zugewiesen (MCLK=IO39, BCLK=IO38, WS=IO47, DOUT=IO48, DIN=IO40), bidirektionaler I2S-Duplex, unterstützt gleichzeitig Aufnahme und Wiedergabe
 - ES8311-I2C-Steuerung: SDA=IO41, SCL=IO42, Geräteadresse 0x30
 
 ### 8.2 Koexistenz von DVP- und I2S-DMA
@@ -333,11 +348,11 @@ Die automatische Programmierung erfolgt über Q1, Q2 (S8050 NPN-Transistoren):
 ### 8.4 Ausreichende Flash-Kapazität
 
 - **16MB Flash** bieten reichlich Platz und unterstützen:
-    - OTA-Dual-Partitionierung (factory + ota_0 + ota_1)
-    - SPIFFS für das Web-Verwaltungsbackend (~1MB)
-    - XiaoZhi-AI-Mehrsprachigkeits-Ressourcenpaket (.p3-Datei)
-    - NVS-Konfigurationspartition
-    - Reserve für Upgrades
+  - OTA-Dual-Partitionierung (factory + ota_0 + ota_1)
+  - SPIFFS für das Web-Verwaltungsbackend (~1MB)
+  - XiaoZhi-AI-Mehrsprachigkeits-Ressourcenpaket (.p3-Datei)
+  - NVS-Konfigurationspartition
+  - Reserve für Upgrades
 - Keine Sorge um die Firmware-Größe — die Multi-Agent-AI passt vollständig hinein
 
 ### 8.5 Eingangspin-Vorgaben der DVP-Kamera
@@ -345,6 +360,8 @@ Die automatische Programmierung erfolgt über Q1, Q2 (S8050 NPN-Transistoren):
 - D0-D7 sowie VSYNC/HREF/PCLK sind Eingangspins und werden vom Kamerasensor getrieben
 - Bei der Treiberentwicklung müssen diese Pins zwingend nur als INPUT-Modus konfiguriert werden
 - Die I2S-Audiopins (38,39,40,47,48) können als Ausgang konfiguriert werden (vom ESP32-S3 unterstützt)
+
+---
 
 ## 9. ESP-IDF-Konfigurationsempfehlungen
 

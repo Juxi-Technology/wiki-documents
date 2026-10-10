@@ -11,7 +11,7 @@ description: "Tutoriel ESP32-NanoCam chapitre 11 : les 5 outils de contrôle mat
 
 ## À propos de ce chapitre
 
-Lorsque l'appareil passe en `ai_mode:7`, le NanoCam entre en mode ESP-Claw. Il **partage le même firmware** (`nanocam_espclaw/`) que XiaoZhi AI (`ai_mode:6`) ; la seule différence : en plus du dialogue vocal, le mode ESP-Claw enregistre 5 outils de contrôle matériel supplémentaires.
+Lorsque l'appareil bascule en `ai_mode:7`, NanoCam entre en mode ESP-Claw. Il **partage le même firmware** (`nanocam_espclaw/`) que XiaoZhi AI (`ai_mode:6`) ; la seule différence : en plus du dialogue vocal, le mode ESP-Claw enregistre 5 outils de contrôle matériel supplémentaires.
 
 |Critère|XiaoZhi AI (mode 6)|ESP-Claw (mode 7)|
 |---|---|---|
@@ -70,16 +70,15 @@ Après l'éveil, énoncez directement votre besoin :
 
 ### 11.4 Photo + analyse visuelle IA
 
-Quand l'utilisateur dit « regarde… », le firmware capture une trame VGA RGB565, la compresse en JPEG et l'envoie à l'API multimodale configurée côté serveur pour analyse ; le résultat est annoncé vocalement via TTS.
-
+Lorsque l'utilisateur dit « regarde... », le firmware capture une trame VGA RGB565, la compresse en JPEG et l'envoie à l'API multimodale configurée côté serveur pour analyse ; le résultat est annoncé vocalement via TTS.
 > L'URL et le token de l'API multimodale sont fournis automatiquement par le serveur lors du handshake de connexion ; aucune commande de configuration manuelle sur le port série n'est nécessaire.
 
 ## Les 5 outils dédiés au NanoCam
 
 |Outil|Fonction|Paramètres|
 |---|---|---|
-|`self.led.set_color`|Définir la couleur du LED RGB WS2812 (GPIO18)|`r,g,b`: 0-255|
-|`self.led.turn_off`|Éteindre le LED|Aucun|
+|`self.led.set_color`|Définir la couleur de la LED RGB WS2812 (GPIO18)|`r,g,b`: 0-255|
+|`self.led.turn_off`|Éteindre la LED|Aucun|
 |`self.camera.set_ai_mode`|Changer de mode IA (sauvegarde NVS + redémarrage)|`mode`: 0-7|
 |`self.camera.inspect_image`|Photo + analyse visuelle par LLM multimodal|`prompt`: description de la question|
 |`self.get_device_info`|Informations sur l'appareil en JSON|Aucun|
@@ -99,11 +98,11 @@ Quand l'utilisateur dit « regarde… », le firmware capture une trame VGA RGB5
 |Votre besoin|Mode recommandé|
 |---|---|
 |Discuter et poser des questions à la voix uniquement|mode 6 (XiaoZhi)|
-|Contrôler le LED à la voix|mode 7 (ESP-Claw)|
+|Contrôler la LED à la voix|mode 7 (ESP-Claw)|
 |Photographier + « faire voir » l'image à l'IA|mode 7 (ESP-Claw)|
 |Changer de mode de détection IA à la voix|mode 7 (ESP-Claw)|
 
-> L'utilisation complète d'ESP-Claw (configuration du serveur, développement d'outils MCP personnalisés, etc.) est encore en cours d'exploration ; la documentation évoluera au fil des recherches.
+> L'utilisation complète d'ESP-Claw (configuration du serveur, développement d'outils MCP personnalisés, etc.) est encore en cours d'exploration ; la documentation sera mise à jour au fil des recherches.
 
 Ceci conclut l'ensemble de la série de tutoriels en 11 chapitres. Pour les commandes série complètes (comme le changement de mode `ai_mode`), voir le [Manuel du protocole série](./ESP32-NanoCam-Serial-Protocol.md).
 

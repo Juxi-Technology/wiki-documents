@@ -9,9 +9,9 @@ description: "Tutorial ESP32-NanoCam, capitolo 8: registrare i volti e riconosce
 
 **Obiettivo del capitolo**: registrare le caratteristiche del volto, far riconoscere a NanoCam "chi sei" e costruire una soluzione completa di controllo accessi.
 
-## Come funziona
+## Funzionamento
 
-Riconoscimento facciale = **rilevamento del volto** (pipeline a due stadi MSR01+MNP01) + **estrazione delle caratteristiche** (rete neurale MFN FaceRecognition112V1S8) + **confronto per similarità coseno**.
+Riconoscimento facciale = **rilevamento volti** (pipeline a due stadi MSR01+MNP01) + **estrazione delle caratteristiche** (rete neurale MFN FaceRecognition112V1S8) + **confronto per similarità coseno**.
 
 ```Plain
 Frame RGB565 dalla fotocamera
@@ -28,21 +28,19 @@ Frame RGB565 dalla fotocamera
 
 ### Ottimizzazione delle prestazioni
 
-L'estrazione delle caratteristiche MFN e il confronto con l'intera libreria sono onerosi in termini di calcolo; eseguirli a ogni frame causerebbe scatti nell'immagine. L'implementazione attuale adotta una **strategia di salto dei frame**: il rilevamento del volto viene eseguito a ogni frame (economico), il riconoscimento MFN ogni 10 frame (costoso), e l'etichetta usa l'ultimo risultato di riconoscimento, sovrapposto in modo continuo. Così l'immagine resta fluida e l'etichetta ID non lampeggia.
+L'estrazione delle caratteristiche MFN e il confronto con l'intera libreria comportano un carico di calcolo considerevole: eseguirli a ogni frame causerebbe scatti nell'immagine. L'implementazione attuale adotta una **strategia di salto dei frame**: il rilevamento volti viene eseguito a ogni frame (a basso costo), il riconoscimento MFN una volta ogni 10 frame (ad alto costo), mentre l'etichetta continua a mostrare in sovrapposizione l'ultimo risultato di riconoscimento. Così l'immagine resta fluida e l'etichetta dell'ID non lampeggia.
 
 ### Memorizzazione delle caratteristiche del volto
 
-Le caratteristiche registrate (id + embedding a 512 dimensioni) sono memorizzate in modo persistente nella partizione `fr` del Flash (96 KB, massimo 47 ID volto). Non si perdono allo spegnimento.
+Le caratteristiche dei volti registrati (id + embedding a 512 dimensioni) vengono archiviate in modo persistente nella partizione `fr` della Flash (96 KB, fino a 47 ID di volti). Non si perdono in caso di mancanza di alimentazione.
 
-## Preparazione hardware
+## Prerequisiti hardware
 
 - Scheda core NanoCam + scheda base
+- Cavo dati USB-C (collegato al PC per alimentazione e porta seriale)
+- Strumento di comunicazione seriale (baud rate 115200)
 
-- Cavo dati USB-C (collegato al computer per alimentazione + seriale)
-
-- Terminale seriale (baud rate 115200)
-
-## Passaggi
+## Procedura
 
 ### 8.1 Entrare in modalità riconoscimento facciale
 
@@ -50,48 +48,44 @@ Le caratteristiche registrate (id + embedding a 512 dimensioni) sono memorizzate
 ai_mode:4
 ```
 
-Il dispositivo si riavvia automaticamente entrando in modalità FaceID; il LED RGB WS2812 (GPIO18 DIN, alimentazione VDD50) mostra il colore viola. Dopo il riavvio sulla seriale si dovrebbe vedere:
+Il dispositivo si riavvia automaticamente in modalità FaceID; il LED RGB WS2812 (GPIO18 DIN, alimentato a VDD50) diventa viola. Dopo il riavvio, sulla porta seriale dovresti vedere:
 
 ```Plain
 I (5526) MFN: fr partition size: 98304 bytes, maxminum 47 IDs can be stored
 I (5526) MFN: No face ID in flash
 ```
 
-`No face ID in flash` significa che nessun volto è ancora stato registrato: è normale.
+`No face ID in flash` indica che non è ancora stato registrato alcun volto: è normale.
 
 ### 8.2 Registrare un volto
 
-Mettere il volto davanti alla fotocamera (distanza 30-50cm, illuminazione uniforme) e assicurarsi che nell'immagine ci sia **un solo volto**. Inviare dalla seriale:
+Posiziona il volto rivolto verso la fotocamera (distanza 30-50cm, illuminazione uniforme) e assicurati che nell'immagine ci sia **un solo volto**. Invia dalla porta seriale:
 
 ```Plain
 face_eril
 ```
 
-Dopo aver rilevato il volto, il dispositivo estrae automaticamente le caratteristiche e le registra nel Flash:
+Dopo aver rilevato il volto, il dispositivo ne estrae automaticamente le caratteristiche e lo registra nella Flash:
 
 ```Plain
 I (xxxx) ENROLL: ID 1 is enrolled
 ```
 
-Nell'immagine viene sovrapposto il testo blu `Enroll: ID 1`, che scompare dopo circa 0,5 secondi.
+Sull'immagine viene sovrapposto il testo blu `Enroll: ID 1`, che scompare dopo circa 0.5 secondi.
+> **Attenzione**: il comando è `face_eril` (abbreviazione di enroll), non `face_enroll`. Se vedi `fail: unknown command`, controlla l'ortografia.
 
-> **Attenzione**: il comando è `face_eril` (abbreviazione di enroll), non `face_enroll`. Se appare `fail: unknown command`, controllare l'ortografia.
+### 8.3 Riconoscere i volti
 
-### 8.3 Riconoscere un volto
-
-Dopo la registrazione inviare il comando di riconoscimento:
+Dopo la registrazione, invia il comando di riconoscimento:
 
 ```Plain
 face_rz
 ```
 
-Il sistema entra in modalità riconoscimento continuo. Il volto attuale viene confrontato con tutti gli ID registrati nel Flash:
-
-- **Corrispondenza trovata**: la seriale emette `Similarity: 0.85, Match ID: 1` e nell'immagine resta sovrapposto in verde `ID: 1`
-
-- **Sconosciuto**: la seriale emette `Similarity: 0.32, Match ID: 0` e nell'immagine resta sovrapposto in rosso `who?`
-
-> L'etichetta **resta visualizzata** e non scompare. Per uscire dalla modalità riconoscimento inviare `face_detect` per tornare alla modalità di solo rilevamento.
+Il sistema entra in modalità di riconoscimento continuo. Il volto attuale viene confrontato con tutti gli ID registrati nella Flash:
+- **Corrispondenza trovata**: la porta seriale emette `Similarity: 0.85, Match ID: 1` e sull'immagine viene sovrapposto stabilmente `ID: 1` in verde
+- **Sconosciuto**: la porta seriale emette `Similarity: 0.32, Match ID: 0` e sull'immagine viene sovrapposto stabilmente `who?` in rosso
+> L'etichetta **resta visualizzata** e non scompare. Per uscire dalla modalità di riconoscimento, invia `face_detect` per tornare alla semplice modalità di rilevamento.
 
 ### 8.4 Eliminare un volto
 
@@ -99,26 +93,25 @@ Il sistema entra in modalità riconoscimento continuo. Il volto attuale viene co
 face_del
 ```
 
-Elimina l'ultimo ID volto registrato; la seriale restituisce `N IDs left` e nell'immagine compare brevemente il numero di ID rimanenti. Le caratteristiche nel Flash vengono cancellate contemporaneamente.
+Elimina l'ultimo ID di volto registrato; la porta seriale restituisce `N IDs left` e sull'immagine viene mostrato brevemente il numero di ID rimanenti. Anche le caratteristiche corrispondenti nella Flash vengono eliminate.
 
-### 8.5 Uscire dalla modalità riconoscimento
+### 8.5 Uscire dalla modalità di riconoscimento
 
 ```Plain
 face_detect
 ```
 
-Torna alla modalità di solo rilevamento del volto (solo riquadro + keypoint, senza riconoscimento); le etichette ID vengono cancellate.
+Torna alla modalità di semplice rilevamento volti (solo riquadri + punti chiave, senza riconoscimento) e cancella le etichette con gli ID.
+> **Informazioni sulla modalità DETECT**: sull'ESP32-S3 la stampa delle coordinate sulla porta seriale è disabilitata nella modalità di semplice rilevamento volti (`#if !CONFIG_IDF_TARGET_ESP32S3`), per evitare che il log di rilevamento saturi la porta seriale. I log delle coordinate `detection_result` vengono emessi solo dopo essere entrati nella modalità di riconoscimento (`face_rz`).
 
-> **Sulla modalità DETECT**: sull'ESP32-S3 la stampa seriale delle coordinate in modalità di solo rilevamento del volto è disabilitata (`#if !CONFIG_IDF_TARGET_ESP32S3`), per evitare che la seriale venga inondata dai log di rilevamento. Solo entrando in modalità riconoscimento (`face_rz`) vengono emessi i log delle coordinate `detection_result`.
+## Riferimento rapido completo dei comandi
 
-## Riferimento rapido dei comandi
-
-|Comando|Funzione|Comportamento dell'etichetta|Persistenza|
+|Comando|Funzione|Comportamento dell'etichetta|Persistente|
 |---|---|---|---|
-|`face_eril`|Registra il volto attualmente rilevato|Blu "Enroll: ID N"|Lampeggia per 0,5 s|
-|`face_rz`|Entra in modalità riconoscimento continuo|Verde "ID: N" / rossa "who?"|✅ Persistente|
-|`face_del`|Elimina l'ultimo ID registrato|Rossa "N IDs left"|Lampeggia per 0,5 s|
-|`face_detect`|Esce dal riconoscimento, torna al solo rilevamento|Cancella tutte le etichette|—|
+|`face_eril`|Registra il volto attualmente rilevato|Blu "Enroll: ID N"|Appare per 0.5s|
+|`face_rz`|Entra in modalità di riconoscimento continuo|Verde "ID: N" / rosso "who?"|✅ Sì|
+|`face_del`|Elimina l'ultimo ID registrato|Rosso "N IDs left"|Appare per 0.5s|
+|`face_detect`|Esce dal riconoscimento e torna al semplice rilevamento|Cancella tutte le etichette|—|
 
 > Per tutti i comandi vedi il [manuale del protocollo seriale](./ESP32-NanoCam-Serial-Protocol.md).
 
@@ -150,13 +143,13 @@ face_rz                            # nuovo riconoscimento
 → Luca davanti alla fotocamera: "who?" (eliminato)
 ```
 
-> La modalità riconoscimento facciale occupa molta memoria (modello MFN + doppio modello di rilevamento del volto); la seriale Type-C (UART0) funziona normalmente. Se la seriale non risponde, controllare prima che il baud rate sia 115200.
+> La modalità di riconoscimento facciale ha un consumo di memoria elevato (modello MFN + doppio modello di rilevamento volti); la porta seriale Type-C (UART0) funziona comunque regolarmente. Se la porta seriale non risponde, controlla innanzitutto che il baud rate sia 115200.
 
 ## Codice
 
 ### Logica di riconoscimento principale
 
-`components/modules/ai/who_human_face_recognition.cpp` — strategia di riconoscimento con salto dei frame:
+`components/modules/ai/who_human_face_recognition.cpp` — strategia di riconoscimento a salto di frame:
 
 ```C++
 case RECOGNIZE:
@@ -180,17 +173,17 @@ case RECOGNIZE:
 
 |Sintomo|Causa possibile|Soluzione|
 |---|---|---|
-|`No face ID in flash`|Normale, nessuna registrazione effettuata|Inviare `face_eril` per registrare|
-|Il risultato del riconoscimento è sempre `who?`|Illuminazione insufficiente / angolazione sfavorevole / similarità sotto la soglia|Registrare di nuovo, davanti alla fotocamera, con illuminazione uniforme|
-|Nessuna reazione durante la registrazione|Nell'immagine i volti non sono esattamente 1|Assicurarsi che ci sia un solo volto, a 30-50cm di distanza|
-|Scatti nell'immagine durante il riconoscimento|Normale, l'inferenza MFN richiede tempo|Già ottimizzato con il salto dei frame: esecuzione ogni 10 frame|
-|Etichetta che lampeggia|—|Già risolto: l'etichetta resta visualizzata senza sparire|
-|`fail: unknown command`|Errore di ortografia del comando|Controllare il comando: è `face_eril`, non `face_enroll`|
+|`No face ID in flash`|Normale: nessuna registrazione ancora effettuata|Invia `face_eril` per registrare|
+|Il riconoscimento restituisce sempre `who?`|Illuminazione insufficiente / angolazione sfavorevole / similarità sotto la soglia|Registra di nuovo, con il volto rivolto verso la fotocamera e illuminazione uniforme|
+|Nessuna reazione durante la registrazione|Nell'immagine il numero di volti ≠ 1|Assicurati che ci sia un solo volto, a 30-50cm di distanza|
+|Scatti nell'immagine durante il riconoscimento|Normale: l'inferenza MFN richiede tempo|Già ottimizzato con il salto dei frame: viene eseguita ogni 10 frame|
+|L'etichetta lampeggia|—|Già risolto: l'etichetta resta visualizzata e non scompare|
+|`fail: unknown command`|Errore di ortografia del comando|Controlla il comando: è `face_eril`, non `face_enroll`|
 
 ## Risultato
 
-Registrare il volto → riconoscimento continuo con visualizzazione dell'ID → output dei risultati via I2C/seriale → controllo di relè e servomotori: soluzione completa di controllo accessi.
+Registrazione del volto→riconoscimento continuo con visualizzazione dell'ID→risultato in uscita via I2C/porta seriale→controllo di relè/servo: una soluzione completa per il controllo degli accessi.
 
-Capitolo successivo: [Capitolo 9: Conversazione vocale](./Ch09-Voice-Chat.md)
+Capitolo successivo: [Capitolo 9: Dialogo vocale (XiaoZhi AI)](./Ch09-Voice-Chat.md)
 
 <RelatedProducts slugs="esp32-s3-wifi-module" />

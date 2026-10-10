@@ -1,9 +1,9 @@
 ---
-title: "Chapter 9: Voice Chat"
+title: "Chapter 9: Voice Chat (XiaoZhi AI)"
 description: "ESP32-NanoCam tutorial Chapter 9: connect to the xiaozhi.me cloud service through the XiaoZhi AI framework and experience full-duplex ASR→LLM→TTS voice chat."
 ---
 
-# Chapter 9: Voice Chat
+# Chapter 9: Voice Chat (XiaoZhi AI)
 
 > **[Buy in Store](https://www.juxitech.com/products/esp32-s3-wifi-video-module)**
 
@@ -40,13 +40,9 @@ Full-duplex design: the user can interrupt the AI directly while it is speaking 
 ## Hardware Requirements
 
 This chapter involves audio features and requires the following hardware:
-
 - NanoCam core board (with ES8311 codec + AP2718AT microphone)
-
 - NanoCam base board (with NS4150B amplifier + CH340K)
-
 - Speaker (connect to the speaker interface on the base board, VON/VOP)
-
 > The core board alone can also be used for testing (monitor through the ES8311 headphone output). The microphone is an AP2718AT analog MEMS silicon microphone, connected to ES8311 MIC1P through the C26 DC-blocking capacitor.
 
 ## Steps
@@ -66,16 +62,11 @@ After boot it defaults to XiaoZhi AI mode.
 
 ### 9.2 Connecting to the xiaozhi.me Cloud Service
 
-By default the NanoCam connects to the official [xiaozhi.me](https://xiaozhi.me) cloud service (free); no self-hosted server is required.
-
+By default the NanoCam connects to the [xiaozhi.me](https://xiaozhi.me) official cloud service (free); no self-hosted server is required.
 1. Register an account at [xiaozhi.me](https://xiaozhi.me)
-
 2. After the device powers on, it automatically announces a 6-digit activation code
-
 3. Enter the activation code in the xiaozhi.me console → bind the device
-
 4. Choose an LLM model in the console (Qwen / DeepSeek, etc.)
-
 Activation is needed only once; after that the device connects automatically every time it powers on.
 
 ### 9.3 First Conversation
@@ -111,7 +102,6 @@ python app.py
 ```
 
 The firmware's server address is delivered through the OTA system (`CONFIG_OTA_URL` in sdkconfig); the device automatically requests the server address after powering on.
-
 > XiaoZhi AI uses the open-source XiaoZhi AI server (a private WebSocket protocol + ASR/LLM/TTS pipeline). In ESP-Claw mode, on top of this, the server delivers the Vision API URL and token during the MCP handshake for the vision analysis feature — the firmware does not need to configure anything itself.
 
 ## Troubleshooting
@@ -123,7 +113,6 @@ The firmware's server address is delivered through the OTA system (`CONFIG_OTA_U
 |Cannot connect|WiFi not configured|Provision over serial first: `sta_ssid:xxx`|
 |No activation code|First startup not complete|Wait 30 seconds; the device will announce it automatically|
 |Slow replies|LLM server latency|Choose a faster model on xiaozhi.me, or self-host a server|
-
 > For complete commands such as serial provisioning, see the [Serial Protocol Manual](./ESP32-NanoCam-Serial-Protocol.md).
 
 Next chapter: [Chapter 10: AI Vision Understanding](./Ch10-AI-Vision-Understanding.md)

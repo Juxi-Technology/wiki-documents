@@ -14,15 +14,10 @@ description: "Kapitel 2 des ESP32-NanoCam-Tutorials: Firmware flashen und WiFi e
 ### Schritte
 
 1. Ordner entpacken → `nanocam_xxx.bin`
-
 2. [esptool-js](https://espressif.github.io/esptool-js/) öffnen
-
 3. NanoCam per Type-C-Kabel anschließen
-
 4. Auf "Connect" klicken → seriellen Anschluss wählen
-
 5. Firmware-Datei wählen, Adresse `0x0` eintragen
-
 6. Auf "START" klicken → warten, bis der Vorgang abgeschlossen ist
 
 ### Überprüfung
@@ -68,12 +63,9 @@ Rückgabe: `sta_ip:192.168.x.x` ✅
 ## 2.3 Das erste Bild
 
 > Ergebnis: **Das Live-Bild des NanoCam ist im Browser sichtbar**
-
 1. Im Browser `http://<IP-Adresse>` eingeben
-
 2. Das Live-MJPEG-Bild wird angezeigt
-
-3. `ai_mode:1` seriell senden → Wechsel zur Katzengesicht-Erkennung → Erkennungsrahmen erscheint im Bild
+3. `ai_mode:1` seriell senden → Wechsel zur Katzengesichtsdetektion → Erkennungsrahmen erscheint im Bild
 
 ### Endpunkt-Übersicht
 

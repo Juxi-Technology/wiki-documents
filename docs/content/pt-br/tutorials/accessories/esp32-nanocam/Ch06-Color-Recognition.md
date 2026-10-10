@@ -42,13 +42,9 @@ O dispositivo reinicia automaticamente no modo de detecção de cores; o LED RGB
 ### 6.2 Observar o resultado do reconhecimento
 
 Coloque um objeto de cor sólida diante da câmera e abra `http://<IP>` no navegador; será exibido:
-
-- Um **retângulo colorido** marcando a região de cor detectada
-
-- O **texto do rótulo da cor** (red/yellow/green/blue/purple/white/black)
-
+- **Retângulo colorido** marcando a região de cor detectada
+- **Texto do rótulo de cor** (red/yellow/green/blue/purple/white/black)
 - A cor da caixa e do rótulo corresponde à cor detectada
-
 > O modo de cores apenas faz sobreposição na imagem (OSD) e não gera logs na porta serial. Para obter as coordenadas, leia os registradores I2C.
 
 ### 6.3 Ler os dados de detecção via I2C

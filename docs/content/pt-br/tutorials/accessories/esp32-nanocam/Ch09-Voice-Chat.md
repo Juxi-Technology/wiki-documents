@@ -1,9 +1,9 @@
 ---
-title: "Capítulo 9: Conversa por voz"
+title: "Capítulo 9: Conversa por voz (XiaoZhi AI)"
 description: "Capítulo 9 do tutorial do ESP32-NanoCam: conecte-se ao serviço de nuvem xiaozhi."
 ---
 
-# Capítulo 9: Conversa por voz
+# Capítulo 9: Conversa por voz (XiaoZhi AI)
 
 > **[Comprar na loja](https://www.juxitech.com/products/esp32-s3-wifi-video-module)**
 
@@ -11,7 +11,7 @@ description: "Capítulo 9 do tutorial do ESP32-NanoCam: conecte-se ao serviço d
 
 ## Sobre este capítulo
 
-Este capítulo aborda o modo XiaoZhi AI (`ai_mode:6`). **Importante**: o modo 6 (conversa por voz) e o modo 7 (ESP-Claw) **compartilham o mesmo firmware** (`nanocam_espclaw/`); a diferença é que, ao iniciar, o dispositivo carrega conjuntos diferentes de ferramentas MCP conforme o valor de `ai_mode` armazenado na NVS.
+Este capítulo aborda o modo XiaoZhi AI (`ai_mode:6`). **Importante**: o modo 6 (conversa por voz) e o modo 7 (ESP-Claw) **compartilham o mesmo firmware** (`nanocam_espclaw/`); a diferença é que, ao iniciar, o dispositivo carrega conjuntos diferentes de ferramentas MCP de acordo com o valor de `ai_mode` armazenado na NVS.
 
 |Aspecto|XiaoZhi AI (mode 6)|ESP-Claw (mode 7)|
 |---|---|---|
@@ -25,7 +25,7 @@ Este capítulo aborda o modo XiaoZhi AI (`ai_mode:6`). **Importante**: o modo 6 
 
 ## Princípio
 
-O NanoCam integra o framework de código aberto XiaoZhi AI e se conecta ao servidor LLM pelos protocolos WebSocket / MQTT para implementar um pipeline completo de interação por voz:
+O NanoCam integra o framework de código aberto XiaoZhi AI e, por meio dos protocolos WebSocket / MQTT, conecta-se a um servidor LLM para implementar um pipeline completo de interação por voz:
 
 ```Plain
 O usuário fala → captura pelo microfone ES8311 → codificação Opus
@@ -40,14 +40,10 @@ Design full-duplex: o usuário pode interromper (barge-in) enquanto a IA fala, p
 ## Requisitos de hardware
 
 Este capítulo envolve funções de áudio e requer o seguinte hardware:
-
 - Placa principal do NanoCam (com codec ES8311 + microfone AP2718AT)
-
 - Placa base do NanoCam (com amplificador NS4150B + CH340K)
-
 - Alto-falante (conectado à interface de alto-falante da placa base, VON/VOP)
-
-> Também é possível testar apenas com a placa principal (monitorando pela saída de fone do ES8311). O microfone é um MEMS de silício analógico AP2718AT, conectado ao MIC1P do ES8311 através do capacitor de bloqueio C26.
+> Também é possível testar apenas com a placa principal (monitorando pela saída de fone de ouvido do ES8311). O microfone é um MEMS de silício analógico AP2718AT, conectado ao MIC1P do ES8311 através do capacitor de bloqueio C26.
 
 ## Passos
 
@@ -67,15 +63,10 @@ Após iniciar, o modo XiaoZhi AI já é o padrão.
 ### 9.2 Conectar ao serviço de nuvem xiaozhi.me
 
 De fábrica, o NanoCam se conecta por padrão ao serviço oficial de nuvem [xiaozhi.me](https://xiaozhi.me) (gratuito); não é preciso montar um servidor próprio.
-
 1. Crie uma conta em [xiaozhi.me](https://xiaozhi.me)
-
 2. Ao ligar, o dispositivo anuncia automaticamente um código de ativação de 6 dígitos
-
 3. Insira o código de ativação no console do xiaozhi.me → vincule o dispositivo
-
 4. Escolha o modelo LLM no console (Qwen / DeepSeek etc.)
-
 A ativação é necessária apenas uma vez; depois, a conexão é automática a cada vez que o dispositivo é ligado.
 
 ### 9.3 Primeira conversa
@@ -111,8 +102,7 @@ python app.py
 ```
 
 O endereço do servidor do firmware é entregue pelo sistema OTA (`CONFIG_OTA_URL` no sdkconfig); ao ligar, o dispositivo solicita o endereço do servidor automaticamente.
-
-> O XiaoZhi AI usa o servidor de código aberto do XiaoZhi AI (protocolo proprietário WebSocket + pipeline ASR/LLM/TTS). Sobre essa base, no modo ESP-Claw a função de análise visual tem a URL e o token da Vision API entregues pelo servidor durante o handshake MCP, sem necessidade de configuração no firmware.
+> O XiaoZhi AI usa o servidor de código aberto do XiaoZhi AI (protocolo proprietário WebSocket + pipeline ASR/LLM/TTS). No modo ESP-Claw, sobre essa base, a função de análise visual tem a URL e o token da Vision API entregues pelo servidor durante o handshake MCP, sem necessidade de configuração no firmware.
 
 ## Solução de problemas
 
@@ -123,7 +113,6 @@ O endereço do servidor do firmware é entregue pelo sistema OTA (`CONFIG_OTA_UR
 |Não conecta|WiFi não configurado|Configure a rede primeiro pela porta serial: `sta_ssid:xxx`|
 |Sem código de ativação|Primeira inicialização não concluída|Aguarde 30 segundos; o dispositivo o anunciará automaticamente|
 |Respostas lentas|Latência do servidor LLM|Escolha um modelo mais rápido no xiaozhi.me ou use um servidor próprio|
-
 > Os comandos completos, incluindo a configuração de rede pela porta serial, estão no [manual do protocolo serial](./ESP32-NanoCam-Serial-Protocol.md).
 
 Próximo capítulo: [Capítulo 10: Compreensão visual por IA](./Ch10-AI-Vision-Understanding.md)

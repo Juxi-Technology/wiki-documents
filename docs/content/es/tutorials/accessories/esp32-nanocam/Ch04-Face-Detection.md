@@ -16,9 +16,7 @@ La detección de rostros usa la biblioteca de aprendizaje profundo ESP-DL, basad
 ### Formato del resultado de detección
 
 - Coordenadas: esquina superior izquierda (x, y) + ancho y alto (w, h)
-
 - Confianza: número decimal entre 0 y 1
-
 - Con varios rostros se devuelven varios cuadros
 
 ## Pasos
@@ -45,12 +43,11 @@ I (xxxxx) detection_result:       left eye: ( 90,  80), right eye: (150,  80), n
 ```
 
 - Primera línea: `[número] (x, y, w, h)` — coordenadas del cuadro del rostro
-
 - Segunda línea: 5 puntos clave — ojo izquierdo, ojo derecho, nariz, comisura izquierda de la boca, comisura derecha de la boca
 
 ## Código
 
-### Leer coordenadas con Arduino para controlar un servo
+### Leer las coordenadas con Arduino para controlar un servo
 
 ```C++
 // Parsear el formato $face:x,y,w,h#

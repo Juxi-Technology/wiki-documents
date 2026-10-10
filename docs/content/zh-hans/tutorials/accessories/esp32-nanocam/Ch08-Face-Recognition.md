@@ -1,5 +1,5 @@
 ---
-title: 第 8 章:人脸识别
+title: "第 8 章:人脸识别"
 description: "ESP32-NanoCam 教程第 8 章——人脸特征注册与持续识别,讲解命令字、跳帧策略与门禁方案。"
 ---
 
@@ -37,9 +37,7 @@ MFN 特征提取和全库比对运算量较大，每帧都跑会导致画面卡�
 ## 硬件准备
 
 - NanoCam 核心板 + 底板
-
 - USB-C 数据线（接电脑供电+串口）
-
 - 串口助手（波特率 115200）
 
 ## 步骤
@@ -74,7 +72,6 @@ I (xxxx) ENROLL: ID 1 is enrolled
 ```
 
 画面叠加蓝色文字 `Enroll: ID 1`，持续约 0.5 秒后消失。
-
 > **注意**：命令是 `face_eril`（enroll 缩写），不是 `face_enroll`。如果看到 `fail: unknown command`，检查拼写。
 
 ### 8.3 辨认识别人脸
@@ -86,11 +83,8 @@ face_rz
 ```
 
 系统进入持续识别模式。当前人脸与 Flash 中所有已注册 ID 比对：
-
 - **匹配成功**：串口输出 `Similarity: 0.85, Match ID: 1`，画面持续叠加绿色 `ID: 1`
-
 - **陌生人**：串口输出 `Similarity: 0.32, Match ID: 0`，画面持续叠加红色 `who?`
-
 > 标签**持续显示**不会消失。要退出识别模式，发送 `face_detect` 返回纯检测模式。
 
 ### 8.4 删除人脸
@@ -108,7 +102,6 @@ face_detect
 ```
 
 返回纯人脸检测模式（只画框+关键点，不识别），ID 标签清除。
-
 > **关于 DETECT 模式**: 在 ESP32-S3 上，纯人脸检测模式的串口坐标打印被禁用（`#if !CONFIG_IDF_TARGET_ESP32S3`），这是为了避免串口被检测日志刷屏。进入识别模式(`face_rz`)后才会输出 `detection_result` 坐标日志。
 
 ## 完整命令速查
@@ -191,6 +184,6 @@ case RECOGNIZE:
 
 注册人脸→持续识别显示 ID→I2C/串口输出结果→控制继电器/舵机，完整门禁方案。
 
-下一章:[第 9 章:语音对话](./Ch09-Voice-Chat.md)
+下一章:[第 9 章:语音对话 (XiaoZhi AI)](./Ch09-Voice-Chat.md)
 
 <RelatedProducts slugs="esp32-s3-wifi-module" />

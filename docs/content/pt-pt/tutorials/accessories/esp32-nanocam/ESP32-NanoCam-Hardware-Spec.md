@@ -1,16 +1,18 @@
 ---
-title: Especificações de hardware do ESP32-NanoCam
+title: Especificações de hardware do ESP32-S3 NanoCam
 description: "Especificações de hardware do ESP32-NanoCam: arquitetura de duas placas, pinos do MCU e da Flash, mapeamento completo da câmara DVP."
 ---
 
-# Especificações de hardware do ESP32-NanoCam
+# Especificações de hardware do ESP32-S3 NanoCam
 
 > **[Comprar na loja](https://www.juxitech.com/products/esp32-s3-wifi-video-module)**
 
+> Fonte: esquemas NanoCamModule.pdf + NanoCamBASE.pdf.
+> Arquitetura: a placa de núcleo (ESP32-S3 + câmara + áudio) encaixa na placa base (alimentação USB + gravação pela porta série).
+
+---
 
 ## 1. Visão geral do hardware
-
-O material de hardware desta secção tem como base os esquemas NanoCamModule.pdf + NanoCamBASE.pdf. Arquitetura do conjunto: a placa de núcleo (ESP32-S3 + câmara + áudio) encaixa na placa base (alimentação USB + gravação pela porta série).
 
 ```Plaintext
 ┌─────────────────────────────────────────────────────────┐
@@ -38,6 +40,8 @@ O material de hardware desta secção tem como base os esquemas NanoCamModule.pd
 ```
 
 ![Figura 1: frente da placa de núcleo (ESP32-S3 / câmara / áudio)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/1.png)
+
+---
 
 ## 2. MCU e armazenamento
 
@@ -70,6 +74,8 @@ O material de hardware desta secção tem como base os esquemas NanoCamModule.pd
 |WP|IO34|Proteção contra escrita|
 |HOLD|IO33|Hold|
 
+---
+
 ## 3. Subsistema de câmara
 
 ### 3.1 Interface DVP
@@ -81,8 +87,8 @@ O material de hardware desta secção tem como base os esquemas NanoCamModule.pd
 |Barramento de configuração I2C|SDA=IO41, SCL=IO42 (partilhado com o I2C externo)|
 |Formato de píxel|RGB565 / JPEG / YUV422, etc.|
 
-![Figura 5: desenho de dimensões do módulo de câmara GC2145 (campo de visão de 68°)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/5.png)
 
+![Figura 4: serigrafia dos pinos no verso da placa base](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/4.png)
 ### 3.2 Mapeamento completo dos pinos DVP
 
 |Categoria do sinal|Nome do sinal|GPIO do ESP32|Notas|
@@ -107,7 +113,7 @@ O material de hardware desta secção tem como base os esquemas NanoCamModule.pd
 ### 3.3 Resumo do grupo de sinais da câmara
 
 ```Plaintext
-Camera DVP 信号组:
+Grupo de sinais DVP da câmara:
   XCLK  = IO9     # Master clock out (24MHz)
   PCLK  = IO6     # Pixel clock in
   VSYNC = IO13    # Vertical sync
@@ -124,12 +130,14 @@ Camera DVP 信号组:
   SIOC(SCL) = IO42
 ```
 
+---
+
 ## 4. Subsistema de áudio
 
 ### 4.1 Arquitetura de áudio
 
 ```Plaintext
-AP2718AT (模拟MEMS麦) → ES8311 Codec (ADC/DAC) → NS4150B (模拟功放) → 扬声器
+AP2718AT (microfone MEMS analógico) → ES8311 Codec (ADC/DAC) → NS4150B (amplificador analógico) → altifalante
                                ↕ I2S (MCLK=39,BCLK=38,WS=47,DOUT=48,DIN=40) + I2C (41/42, addr=0x30)
                             ESP32-S3
 ```
@@ -159,6 +167,8 @@ AP2718AT (模拟MEMS麦) → ES8311 Codec (ADC/DAC) → NS4150B (模拟功放) �
 |SDA|IO41|Barramento I2C partilhado com a câmara|
 |SCL|IO42|Barramento I2C partilhado com a câmara|
 |Endereço|**0x30**|Endereço I2C de 8 bits do ES8311|
+
+---
 
 ## 5. Sistema de alimentação
 
@@ -192,9 +202,11 @@ USB-C (5V) ──→ 底板 NCE3401 P-MOSFET 反接保护 ──→ VDD50
 |Proteção contra polaridade inversa|**NCE3401** P-MOSFET|Proteção da entrada de alimentação da placa base|
 |Resistência de gate|R11 10KΩ|Gate do P-MOS ligado à terra|
 
+---
+
 ## 6. Placa base e gravação
 
-![Figura 2: serigrafia dos pinos no verso da placa de núcleo (RXD/TXD/SCL/SDA/5V/GND, etc.)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/2.png)
+![Figura 5: desenho de dimensões do módulo de câmara GC2145 (campo de visão de 68°)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/5.png)
 
 ### 6.1 Conversor USB-série
 
@@ -206,8 +218,8 @@ USB-C (5V) ──→ 底板 NCE3401 P-MOSFET 反接保护 ──→ VDD50
 |Resistências de adaptação USB|R4, R5 22R/1% (em série com D+/D-)|
 |DTR/RTS|Controlo automático de BOOT + EN na gravação com um clique|
 
-![Figura 3: frente da placa base (USB-C e interfaces de expansão)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/3.png)
 
+![Figura 2: serigrafia dos pinos no verso da placa de núcleo (RXD/TXD/SCL/SDA/5V/GND, etc.)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/2.png)
 ### 6.2 Circuito de gravação com um clique
 
 Utiliza Q1 e Q2 (transístores NPN S8050) para a gravação automática:
@@ -240,14 +252,16 @@ Utiliza Q1 e Q2 (transístores NPN S8050) para a gravação automática:
 |P2-7|P2-7|**BOOT**|IO0|Modo de arranque/gravação|
 |P2-8|P2-8|**CHIP_PU**|EN|Controlo de reset do chip|
 
-![Figura 4: serigrafia dos pinos no verso da placa base](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/4.png)
 
+![Figura 3: frente da placa base (USB-C e interfaces de expansão)](../../../../../public/images/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec/3.png)
 ### 6.4 Interfaces de expansão da placa base
 
 |Interface|Sinais expostos|Utilização|
 |---|---|---|
 |P3 (I2C, 4Pin)|5V1, GND, SDA, SCL|Dispositivos I2C externos|
 |P4 (UART, 4Pin)|5V1, GND, ESP_P, ESP_N|Dispositivos USB/série externos|
+
+---
 
 ## 7. Tabela completa de ocupação de GPIO
 
@@ -305,15 +319,16 @@ Utiliza Q1 e Q2 (transístores NPN S8050) para a gravação automática:
 |IO46|IO de uso geral|Expansão|
 
 > ⚠️ GPIO ocupados: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,18,19,20,21,29,30,31,32,33,34,38,39,40,41,42,43,44,47,48
->
-> Quantidade disponível: 8 GPIO
+Quantidade disponível: 8 GPIO
+
+---
 
 ## 8. Restrições de projeto essenciais
 
 ### 8.1 Configuração do periférico I2S
 
 - O ESP32-S3 tem dois controladores I2S:
-    - **I2S0**: atribuído ao codec ES8311 (MCLK=IO39, BCLK=IO38, WS=IO47, DOUT=IO48, DIN=IO40), I2S Duplex bidirecional, com suporte simultâneo a gravação e reprodução
+  - **I2S0**: atribuído ao codec ES8311 (MCLK=IO39, BCLK=IO38, WS=IO47, DOUT=IO48, DIN=IO40), I2S Duplex bidirecional, com suporte simultâneo a gravação e reprodução
 - Controlo I2C do ES8311: SDA=IO41, SCL=IO42, endereço do dispositivo 0x30
 
 ### 8.2 Coexistência entre o DVP e o DMA do I2S
@@ -333,11 +348,11 @@ Utiliza Q1 e Q2 (transístores NPN S8050) para a gravação automática:
 ### 8.4 Capacidade de Flash suficiente
 
 - **16MB de Flash** — espaço amplo, que permite suportar:
-    - Esquema OTA de partição dupla (factory + ota_0 + ota_1)
-    - SPIFFS para o painel de administração Web (~1MB)
-    - Pacotes de recursos multilingues do XiaoZhi AI (ficheiros .p3)
-    - Partição de configuração NVS
-    - Espaço reservado para atualizações
+  - Esquema OTA de partição dupla (factory + ota_0 + ota_1)
+  - SPIFFS para o painel de administração Web (~1MB)
+  - Pacotes de recursos multilingues do XiaoZhi AI (ficheiros .p3)
+  - Partição de configuração NVS
+  - Espaço reservado para atualizações
 - Não é preciso preocupação com o tamanho do firmware; o AI multi-Agent cabe por completo
 
 ### 8.5 Restrições dos pinos de entrada da câmara DVP
@@ -345,6 +360,8 @@ Utiliza Q1 e Q2 (transístores NPN S8050) para a gravação automática:
 - D0-D7, VSYNC, HREF e PCLK são pinos de entrada, controlados pelo sensor da câmara
 - No desenvolvimento do controlador, é obrigatório garantir que estes pinos sejam configurados apenas no modo INPUT
 - Os pinos de áudio I2S (38,39,40,47,48) podem ser configurados como saída (suportado pelo ESP32-S3)
+
+---
 
 ## 9. Sugestões de configuração do ESP-IDF
 

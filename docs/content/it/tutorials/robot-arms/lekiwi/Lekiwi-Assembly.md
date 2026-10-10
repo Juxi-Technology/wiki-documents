@@ -7,158 +7,124 @@ description: "In Fusion360 CAD online è possibile visualizzare le posizioni esa
 
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
 
+[*Nel CAD online Fusion360*](https://a360.co/4k1P8yO)* è possibile visualizzare la posizione esatta dei componenti.*
 
-[*Fusion360 CAD online*](https://a360.co/4k1P8yO)*permette di visualizzare le posizioni esatte dei componenti.*
 [File URDF](https://gitcode.com/gh_mirrors/le/LeKiwi/tree/main)
+
 Anteprima URDF online https://urdf.d-robotics.cc/
 
-## 1. Montare il modulo ruota (3 per robot)
+## 1. Assemblaggio dei moduli ruota (3 per robot)
 
-1. Fissare il motore di trazione al supporto motore con 12 viti autofilettanti **M2x6** (incluse nella scatola servo).
+1. Utilizzare 12 viti autofilettanti **M2x6** per fissare il motore di trasmissione alla staffa del motore. (Incluse nella confezione del servo.)
 
-![image – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/1.jpg)
+![image – 1](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-01.png)
+![image – 2](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-02.png)
 
-![image – 2](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/2.jpg)
+2. Utilizzare 12 viti **M3x16** e 12 **dadi M3** per fissare i servo alla piastra di base usando le staffe del motore di trasmissione.
 
+![image – 3](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-03.jpg)
 
+3. Rimuovere le viti e i dadi dalle ruote omnidirezionali da 82 mm.
 
+![image – 4](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-04.png)
 
+4. Utilizzare viti m3\*6 per fissare la squadretta del servo al servo.
 
-2. Fissare il supporto motore alla piastra di base con 12 **viti a macchina M3x16 e 12** .
+![image – 5](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-05.png)
 
-![image – 3](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/3.jpg)
+5. Installare 4 dadi autobloccanti nel giunto. Per prima cosa, utilizzare 4 viti m3\*6 per fissare il giunto alla squadretta del servo.
 
+![image – 6](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-06.png)
+![image – 7](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-07.png)
 
-
-3. Rimuovere viti e dadi della ruota omnidirezionale da 82 mm
-
-![image – 4](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/4.jpg)
-
-
-
-4. Fissare il servo horn al servo con viti m3*6
-
-![image – 5](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/5.jpg)
+6. Utilizzare viti m3\*25 e dadi autobloccanti per fissare le ruote omnidirezionali da 82 mm al giunto.
 
 
 
-5. Inserire 4 dadi di sicurezza nel giunto e fissare il giunto al servo horn con 4 viti m3*6
+Una volta installate tutte e tre le ruote sulla piastra di base:
 
-![image – 6](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/6.jpg)
+![image – 8](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-08.png)
+![image – 9](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-09.jpg)
 
-![image – 7](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/7.jpg)
-
-
-
-
-
-6. Fissare la ruota omnidirezionale da 82 mm al giunto con viti a macchina m3*25 e dadi di sicurezza
-
-Dopo aver montato le tre ruote sulla piastra di base:
-
-![image – 8](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/8.jpg)
-
-![image – 9](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/9.jpg)
-
-![image – 10](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/10.jpg)
-
-
-
-
-
-
+![image – 10](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-10.png)
 
 ## 2. Assemblaggio della piastra di base
 
-1. Inserire i dadi M3 nei fori della scheda driver servo e del supporto batteria. Fissare entrambi alla piastra di base con 4 viti M3x12.
+1. Inserire 2 dadi M3 nei fori della scheda driver del servo e del supporto della batteria. Utilizzare 4 viti a brugola M3x12 per fissare entrambi alla piastra di base.
 
-![image – 11](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/11.jpg)
+![image – 11](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-11.png)
+![image – 12](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-12.png)
 
-![image – 12](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/12.jpg)
+2. Utilizzare 2 viti a brugola M3\*12 e 2 dadi M3 per installare la scheda driver del servo e collegarla ai 3 servo.
 
+![image – 13](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-13.png)
 
+Collegamenti dei cavi dell'alimentatore portatile
 
+- L'**ingresso di alimentazione** si collega direttamente all'alimentatore
 
+![image – 14](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-14.png)
+![image – 15](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-15.png)
 
-2. Montare la scheda driver servo con quattro distanziali in ottone M2.5*6.5 e quattro viti M2.5*8, e collegarla ai 3 servo.
+- L'interfaccia **USB-C** fornisce alimentazione a 5V al Raspberry Pi
+- Se si utilizza un **braccio robotico da 12V**, alimentare direttamente la **scheda del motore servo** con il **distributore di alimentazione DC**
 
+![image – 16](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-16.png)
+![image – 17](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-17.png)
 
+I cavi possono essere collegati come mostrato nella figura seguente:
 
-Collegamento cavi power bank
-
-- **Ingresso alimentazione** direttamente alla sorgente
-
-
-
-
-
-- **USB-C** fornisce 5 V al Raspberry Pi
-- Con **braccio robotico a 12 V**, alimentare direttamente la **scheda motori servo** tramite il **divisore di alimentazione DC**
-
-
-
-
-
-I cavi si collegano come nella figura:
-
-![image – 13](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/13.jpg)
-
-![image – 14](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/14.jpg)
-
-![image – 15](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/15.jpg)
-
-![image – 16](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/16.jpg)
-
-![image – 17](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/17.jpg)
-
-![image – 18](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/18.jpg)
-
-
+![image – 18](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-18.png)
 
 ## 3. Assemblaggio della piastra superiore
 
-1. Sistemare il Raspberry Pi 5 nella parte inferiore della custodia e agganciare il coperchio superiore.
-2. Fissare il Raspberry Pi alla piastra superiore con due viti M3x12 e due dadi di sicurezza M3, e montare la base del braccio SO-101 con quattro viti M4x25 e quattro dadi di sicurezza M4. Si può usare la nostra base SO-101 migliorata o quella originale: la piastra ha i fori per entrambe.
+1. Collocare il Raspberry Pi 5 nella parte inferiore del case per Raspberry Pi, quindi agganciare la parte superiore del case.
 
-![image – 19](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/19.jpg)
+2. Utilizzare due viti a brugola M3x16 e due dadi M3 per fissare il Raspberry Pi alla piastra di base superiore, e utilizzare quattro viti M4x25 e quattro dadi M4 per installare la base del braccio robotico SO-101.
 
-
+![image – 19](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-19.png)
 
 ## 4.
 
-1. Far passare il cavo USB-C verso USB-A della scheda driver, il cavo di alimentazione USB-C 5 V e il cavo servo SO0-101 attraverso i fori della piastra superiore.
+1. Far passare il cavo da USB-C a USB-A della scheda driver del servo, il cavo di alimentazione USB-C a 5V e i cavi dei servo attraverso i fori della piastra superiore.
 
-![image – 20](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/20.jpg)
+![image – 20](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-20.png)
 
+2. Utilizzare 8 viti m3x16 e 4 dadi m3 per installare la piastra superiore sulle staffe del motore.
 
-
-2. Fissare la piastra superiore al supporto motore con 6 viti m3x12 e 6 dadi di sicurezza m3.
-
-![image – 21](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/21.jpg)
+![image – 21](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-21.png)
 
 
 
-3. Collegare piastra superiore e piastra di base con 6 distanziali in ottone M3*50 e 6 viti a macchina M3*
+## 5. Installazione delle telecamere
 
-## 5. Installare la fotocamera
+*Nota: la staffa che abbiamo progettato è realizzata su misura per la telecamera che abbiamo scelto. Moduli fotocamera diversi possono richiedere modifiche.*
 
-*Nota: il nostro supporto è progettato specificamente per la fotocamera scelta. Altri moduli fotocamera possono richiedere modifiche.*
+## (Opzione 1) Installazione della telecamera frontale
 
-### (Opzione 1) Installare la fotocamera anteriore
+①Utilizzare 4 viti distanziali m2\*5\*5 per fissare il modulo fotocamera
 
-Montare il supporto della fotocamera anteriore sulla piastra di base con 3 viti m3*12 e tre dadi m3
-Fissare il modulo fotocamera con 4 viti distanziali m2*5*5
+②Utilizzare 2 viti m3\*12 e 2 dadi m3 per installare la staffa della telecamera frontale sulla piastra di base
 
-### (Opzione 2) Installare la fotocamera da braccio
+![image – 22](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-22.webp)
+![image – 23](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-23.webp)
 
-Fissare il modulo fotocamera con 4 viti distanziali m2*5*5
+## (Opzione 2) Installazione della telecamera montata sul braccio
 
-## 6. Collegare l'alimentazione
+Utilizzare 4 viti distanziali m2\*5\*5 per fissare il modulo fotocamera
 
-Inserire l'adattatore cilindrico DC nella scheda driver e il connettore USB-C 5 V nel Raspberry Pi 5 per alimentare l'elettronica. I cavi dati USB della scheda driver e della fotocamera si collegano direttamente al Raspberry Pi.
+Questa staffa supporta telecamere con un interasse dei fori di 24\*25mm o 28\*28mm
 
+![image – 24](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-24.png)
 
-![Option 2 Install an arm-mounted camera – 1](../../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/22.jpg)
+![image – 25](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-25.png)
 
+## 6. Collegamento dell'alimentazione e cablaggio
 
+Collegare l'adattatore con spina jack DC alla **scheda driver del servo**;
 
+Collegare il connettore USB-C a 5V al **Raspberry Pi 5** per alimentare l'elettronica;
+
+I cavi dati USB della scheda driver del servo e delle telecamere possono essere collegati direttamente al Raspberry Pi.
+
+![image – 26](../../../../public/images/tutorials/robot-arms/lekiwi/Lekiwi-Assembly/d02-26.png)

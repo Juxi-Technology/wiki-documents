@@ -11,8 +11,7 @@ description: "Capítulo 10 del tutorial de ESP32-NanoCam: en el modo ESP-Claw, h
 
 ## Sobre este capítulo
 
-La comprensión visual con IA es una función **exclusiva de ESP-Claw (modo 7)**; no se usa en XiaoZhi AI (modo 6).
-
+La comprensión visual con IA es una función exclusiva de **ESP-Claw (modo 7)**; no se usa en XiaoZhi AI (modo 6).
 > En este capítulo se usan las herramientas `self.camera.take_photo` y `self.camera.inspect_image`; la dirección de la API de análisis visual la entrega automáticamente el servidor mediante el campo `capabilities.vision` durante el handshake MCP. El firmware no necesita configurar manualmente la URL de la API — es decir, la configuración de la API se hace en la consola de xiaozhi.me o en el servidor autoalojado; consulta el [Capítulo 11: Control por voz ESP-Claw](./Ch11-ESP-Claw-Voice-Control.md) para más detalles.
 
 ## Principio
