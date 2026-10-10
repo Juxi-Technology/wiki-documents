@@ -137,7 +137,7 @@ Prema `Ctrl`+`C` per interromperlo.
 - [JetPack SDK Setup — Jetson AGX Orin Developer Kit User Guide](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/setup_jetpack.html) (verificato il 2026-09-23)
 - [JetPack SDK Downloads and Release Notes](https://developer.nvidia.com/embedded/jetpack/downloads) (verificato il 2026-09-23)
 
-*Stato: bozza, in attesa di revisione da parte di cheny. Basato sulla
+*Stato: rivisto il 2026-10-11. Basato sulla
 documentazione ufficiale NVIDIA alla data indicata; non ancora verificato su
 hardware fisico da Juxi Technology.*
 

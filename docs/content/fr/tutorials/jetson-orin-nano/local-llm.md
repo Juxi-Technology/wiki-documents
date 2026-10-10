@@ -237,7 +237,7 @@ délibérément le cache KV et le contexte — voir [Efficacité mémoire pour
 - [jetson-containers (GitHub)](https://github.com/dusty-nv/jetson-containers) (vérifié le 2026-09-26)
 - [Index PyPI de Jetson AI Lab — sbsa/cu130](https://pypi.jetson-ai-lab.io/sbsa/cu130) (vérifié le 2026-09-26)
 
-*Statut : brouillon, en attente de relecture par cheny. Fondé sur la
+*Statut : relu le 2026-10-11. Fondé sur la
 documentation officielle NVIDIA à la date indiquée ; pas encore vérifié sur
 matériel physique par Juxi Technology.*
 

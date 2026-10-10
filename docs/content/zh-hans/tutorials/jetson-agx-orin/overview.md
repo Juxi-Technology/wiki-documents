@@ -55,7 +55,7 @@ Jetson AGX Orin 模块与参考载板、Wi-Fi 模块、USB Type-C 电源适配�
 - [Jetson AGX Orin Developer Kit User Guide — Introduction](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html) (已于 2026-09-23 核查)
 - [NVIDIA Jetson Orin 产品页面](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/) (已于 2026-09-23 核查)
 
-*状态：草稿，等待 cheny 审核。完整的模块规格表将依据 NVIDIA 官方数据手册补充；在此之前，请以 NVIDIA 产品页面作为规格的权威来源。*
+*状态：已于 2026-10-11 审核。完整的模块规格表将依据 NVIDIA 官方数据手册补充；在此之前，请以 NVIDIA 产品页面作为规格的权威来源。*
 
 **图片来源：**产品图片来自 NVIDIA 官方 *Jetson AGX Orin Developer Kit User Guide*(下载于 2026-09-23)，© NVIDIA Corporation。
 

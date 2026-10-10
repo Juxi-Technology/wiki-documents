@@ -267,7 +267,7 @@ instalación o actualización, verifique el resultado:
 - [JetPack Downloads](https://developer.nvidia.com/embedded/jetpack/downloads) (consultado el 2026-09-26)
 - [SDK Manager — monitor-attached installation instructions](https://developer.nvidia.com/w/sdkmanager/resources/instructions/monitor_mode_installation_orin.html) (consultado el 2026-09-26)
 
-*Estado: borrador, pendiente de revisión por cheny. Basado en la documentación oficial de NVIDIA en las
+*Estado: revisado el 2026-10-11. Basado en la documentación oficial de NVIDIA en las
 fechas indicadas; aún no verificado en hardware físico por Juxi Technology.*
 
 ---

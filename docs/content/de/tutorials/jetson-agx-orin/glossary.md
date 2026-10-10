@@ -112,7 +112,7 @@ Prüfen Sie immer, was auf einem konkreten System tatsächlich läuft:
 - [NVIDIA Jetson apt-Repository — tatsächliche Komponentenversionen](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages) (geprüft am 2026-09-26) — über die Abhängigkeitskette von `nvidia-jetpack` 7.2.1; die Übersichtstabelle der [JetPack-Downloadseite](https://developer.nvidia.com/embedded/jetpack/downloads) hinkt hinterher (nennt weiterhin CUDA 13.2.1 / VPI 4.1.3)
 - [Jetson AGX Orin Developer Kit Benutzerhandbuch](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html) (geprüft am 2026-09-24)
 
-*Status: Entwurf, ausstehende Prüfung durch cheny. Definitionen zusammengestellt
+*Status: geprüft am 2026-10-11. Definitionen zusammengestellt
 aus der NVIDIA-Dokumentation und üblicher Branchenpraxis; Versionsnummern am
 angegebenen Datum geprüft.*
 

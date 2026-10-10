@@ -209,7 +209,7 @@ RAM），现在则以 **4.5 / 7.6 GB（~60%）** 运行——节省超过 5.1 GB
 - Jetson AI Lab：[TensorRT Edge-LLM 教程](https://www.jetson-ai-lab.com/tutorials/tensorrt-edge-llm/) · [RAM 优化](https://www.jetson-ai-lab.com/tutorials/ram-optimization/)（Orin Nano 构建限制；NVMe swap；已于 2026-09-26 核查）
 - [NVIDIA 开发者论坛——Jetson 上的 Ollama](https://forums.developer.nvidia.com/t/ollama-not-supporting-jetson/383350)（社区：free -h 与 cudaMalloc 的差异；B 级；已于 2026-09-26 核查）
 
-*状态：草稿，待 cheny 审核。内容依据所列日期的 NVIDIA 官方文档；尚未由钜犀科技在实体硬件上验证。*
+*状态：已于 2026-10-11 审核。内容依据所列日期的 NVIDIA 官方文档；尚未由钜犀科技在实体硬件上验证。*
 
 ---
 

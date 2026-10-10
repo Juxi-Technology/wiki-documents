@@ -142,7 +142,7 @@ https://pypi.jetson-ai-lab.io/sbsa/cu130
 - [jetson-containers(GitHub)](https://github.com/dusty-nv/jetson-containers)(2026-09-26 確認)
 - [Jetson AI Lab PyPI インデックス — sbsa/cu130](https://pypi.jetson-ai-lab.io/sbsa/cu130)(2026-09-26 確認)
 
-*ステータス:ドラフト、cheny によるレビュー待ち。記載した日付時点の NVIDIA 公式ドキュメントに基づいています。Juxi Technology による実機検証はまだ行われていません。*
+*ステータス: レビュー済み（2026-10-11）。記載した日付時点の NVIDIA 公式ドキュメントに基づいています。Juxi Technology による実機検証はまだ行われていません。*
 
 ---
 

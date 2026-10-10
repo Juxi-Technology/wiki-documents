@@ -236,7 +236,7 @@ cache e o contexto — consulte [Eficiência de memória para
 - [jetson-containers (GitHub)](https://github.com/dusty-nv/jetson-containers) (verificado em 2026-09-26)
 - [Índice PyPI do Jetson AI Lab — sbsa/cu130](https://pypi.jetson-ai-lab.io/sbsa/cu130) (verificado em 2026-09-26)
 
-*Estado: rascunho, pendente de revisão por cheny. Baseado na documentação
+*Estado: revisado em 2026-10-11. Baseado na documentação
 oficial da NVIDIA na data indicada; ainda não verificado em hardware físico
 pela Juxi Technology.*
 

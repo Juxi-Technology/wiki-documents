@@ -110,7 +110,7 @@ Pour vérifier ce qu'exécute réellement un système donné :
 - [DeepStream SDK — Installation](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_Installation.html) (vérifié le 2026-09-26)
 - [Forum NVIDIA — « 25W and MAXN_SUPER not seen in JetPack 7.2 » (réponse du personnel NVIDIA)](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627) (vérifié le 2026-09-26)
 
-*Statut : brouillon, en attente de révision par cheny. Définitions compilées à
+*Statut : relu le 2026-10-11. Définitions compilées à
 partir de la documentation NVIDIA et de l'usage courant du secteur ; numéros
 de version vérifiés à la date indiquée. Pas encore vérifié sur matériel
 physique par Juxi Technology.*

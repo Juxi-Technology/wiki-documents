@@ -155,7 +155,7 @@ Kameras (IMX219 CSI, USB-Autofokus, RealSense-Tiefenkameras), der
 - [Jetson Orin Nano Super Developer Kit — Datenblatt (PDF, verlinkt von nvidia.com)](https://dam-cdn.nvd.orangelogic.com/AssetLink/2ug686w80406gxf6q8uv7r3l7265m2n8.pdf) (geprüft am 2026-09-26)
 - [Produktseite im Juxi-Technology-Shop](https://www.juxitech.com/products/nvidia-jetson-orin-nano-super-development-kit) (geprüft am 2026-09-26)
 
-*Status: Entwurf, ausstehende Prüfung durch cheny. Basiert auf NVIDIAs offizieller
+*Status: geprüft am 2026-10-11. Basiert auf NVIDIAs offizieller
 Dokumentation mit Stand der aufgeführten Daten; noch nicht von Juxi Technology
 auf physischer Hardware verifiziert.*
 

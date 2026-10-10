@@ -123,7 +123,7 @@ checks for L4T, CUDA, and the whole JetPack component stack.
 - [Jetson Linux 39.2.0 Release Notes (PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf) (checked 2026-09-23)
 - [NVIDIA SDK Manager](https://developer.nvidia.com/sdk-manager)
 
-*Status: draft, pending review by cheny. Grounded in NVIDIA's official
+*Status: reviewed on 2026-10-11. Grounded in NVIDIA's official
 documentation as of the date listed; not yet verified on physical hardware by
 Juxi Technology.*
 

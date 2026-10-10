@@ -118,7 +118,7 @@ NVIDIA 員工表示：「降級：是的，如有需要，你可以透過 SDK Ma
 - [NVIDIA 開發者論壇 — JetPack 7.2 GPU 加速問題](https://forums.developer.nvidia.com/t/jetpack-7-2-gpu-acceleration-issue/372521) —— NVIDIA 員工：降級路徑與 CUDA 13.2 wheel 索引（查閱於 2026-09-26）
 - [NVIDIA 開發者論壇 — JetPack 7.2 中看不到 25W 與 MAXN SUPER](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627) —— NVIDIA 員工與使用者：`-super` TNSPEC 檢查、主機重新刷機（查閱於 2026-09-26）
 
-*狀態：草稿，待 cheny 審核。內容以所列日期的 NVIDIA 官方文件與開發者論壇發言為依據；尚未由鉅犀科技在實體硬體上驗證。重新構建清單描述的是平台層面的標準後果——請結合你自己的軟體堆疊進行驗證。*
+*狀態：已於 2026-10-11 審核。內容以所列日期的 NVIDIA 官方文件與開發者論壇發言為依據；尚未由鉅犀科技在實體硬體上驗證。重新構建清單描述的是平台層面的標準後果——請結合你自己的軟體堆疊進行驗證。*
 
 ---
 

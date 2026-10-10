@@ -302,7 +302,7 @@ Sandbox-Image. Siehe [Agentische KI](/de/tutorials/jetson-orin-nano/agentic-ai).
 - [NVIDIA — Build a Claw („Install OpenClaw on Your NVIDIA Jetson Orin Nano™“)](https://www.nvidia.com/en-us/ai/build-a-claw/) (geprüft am 2026-09-26)
 - [JetPack 7.2.1 Downloadseite (Komponentenmatrix führt Isaac ROS als „Coming soon“)](https://developer.nvidia.com/embedded/jetpack/downloads) (geprüft am 2026-09-26)
 
-*Status: Entwurf, Überprüfung durch cheny steht aus. Die Verfügbarkeit im
+*Status: geprüft am 2026-10-11. Die Verfügbarkeit im
 Ökosystem ändert sich schnell — prüfen Sie die verlinkten NVIDIA- und
 Upstream-Seiten erneut, bevor Sie sich auf diese Tabelle verlassen. Noch nicht
 auf physischer Hardware durch Juxi Technology verifiziert.*

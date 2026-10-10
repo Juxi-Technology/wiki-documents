@@ -125,7 +125,7 @@ NVIDIA によると、期待できる結果は次のとおりです。30 本の�
 - [DeepStream Quickstart Guide](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_Quickstart.html)(2026-09-24 確認)
 - [JetPack 7.2.1 ダウンロードページ](https://developer.nvidia.com/embedded/jetpack/downloads)(2026-09-24 確認) — ⚠️ コンポーネント表は一部の行で遅れています。実際にインストールされるバージョンについては [ダウンロード](/ja/tutorials/jetson-agx-orin/downloads) を参照してください
 
-*ステータス:ドラフト、cheny によるレビュー待ち。上記の日付時点の NVIDIA 公式
+*ステータス: レビュー済み（2026-10-11）。上記の日付時点の NVIDIA 公式
 ドキュメントに基づいています;まだ Juxi Technology による実機検証は行われていません。*
 
 ---

@@ -218,7 +218,7 @@ Super 전원 모드만 없다면 더 좁은 해법은 Super 구성으로 호스�
 - [NVIDIA developer forum — JetPack 7.2 GPU acceleration issue](https://forums.developer.nvidia.com/t/jetpack-7-2-gpu-acceleration-issue/372521) — NVIDIA 직원: 다운그레이드 경로와 CUDA 13.2 휠 인덱스 (2026-09-26 확인)
 - [NVIDIA developer forum — 25W and MAXN SUPER not seen in JetPack 7.2](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627) — NVIDIA 직원과 사용자: `-super` TNSPEC 확인, 호스트 재플래싱 (2026-09-26 확인)
 
-*상태: 초안, cheny 검토 대기 중. 기재된 날짜 기준 NVIDIA 공식
+*상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식
 문서와 개발자 포럼 진술에 근거하며, 아직 Juxi Technology가 실제 하드웨어에서
 검증하지 않았습니다. 재빌드 목록은 일반적인 플랫폼 결과를 설명한 것입니다 —
 자체 스택과 대조해 검증하십시오.*

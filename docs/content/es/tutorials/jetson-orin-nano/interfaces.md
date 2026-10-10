@@ -213,7 +213,7 @@ El conector de botones incluye las funciones de consola serie, reinicio y recupe
 - [Familia de productos Jetson Orin — developer.nvidia.com](https://developer.nvidia.com/embedded/jetson-orin) (consultado el 2026-09-26)
 - [Foros de desarrolladores de NVIDIA — «Slow Wi-Fi on Orin Nano DevKit (RTL8822CE)», hilo de la comunidad](https://forums.developer.nvidia.com/t/slow-wi-fi-on-orin-nano-devkit-rtl8822ce-802-11ac/368697) (consultado el 2026-09-26)
 
-*Estado: borrador, pendiente de revisión por cheny. Basado en la documentación oficial
+*Estado: revisado el 2026-10-11. Basado en la documentación oficial
 de NVIDIA en las fechas indicadas; aún no verificado en hardware físico por
 Juxi Technology.*
 

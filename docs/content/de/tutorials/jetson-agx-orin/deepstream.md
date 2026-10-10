@@ -145,7 +145,7 @@ Hinweise aus der offiziellen Schnellstart-Anleitung:
 - [DeepStream Quickstart Guide](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_Quickstart.html) (geprüft am 2026-09-24)
 - [JetPack 7.2.1 Downloadseite](https://developer.nvidia.com/embedded/jetpack/downloads) (geprüft am 2026-09-24) — ⚠️ ihre Komponententabelle hinkt bei einigen Zeilen hinterher; die tatsächlich installierten Versionen finden Sie unter [Downloads](/de/tutorials/jetson-agx-orin/downloads)
 
-*Status: Entwurf, Überprüfung durch cheny ausstehend. Basiert auf der offiziellen
+*Status: geprüft am 2026-10-11. Basiert auf der offiziellen
 NVIDIA-Dokumentation zum angegebenen Datum; noch nicht von Juxi Technology auf
 physischer Hardware verifiziert.*
 

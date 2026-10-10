@@ -298,7 +298,7 @@ memória em torno da imagem de sandbox de cerca de 2,4 GB. Veja
 - [NVIDIA — Build a Claw ("Install OpenClaw on Your NVIDIA Jetson Orin Nano™")](https://www.nvidia.com/en-us/ai/build-a-claw/) (verificado em 2026-09-26)
 - [Página de downloads do JetPack 7.2.1 (a matriz de componentes lista o Isaac ROS como "em breve")](https://developer.nvidia.com/embedded/jetpack/downloads) (verificado em 2026-09-26)
 
-*Status: rascunho, pendente de revisão por cheny. A disponibilidade do
+*Status: revisado em 2026-10-11. A disponibilidade do
 ecossistema muda rapidamente — verifique novamente as páginas vinculadas da
 NVIDIA e do upstream antes de confiar nesta tabela. Ainda não verificado em
 hardware físico pela Juxi Technology.*

@@ -242,7 +242,7 @@ der CPU.
 - [Jetson Linux r39.2 Developer Guide — Power and Performance](https://docs.nvidia.com/jetson/archives/r39.2/DeveloperGuide/SD/PlatformPowerAndPerformance/JetsonOrinNanoSeriesJetsonOrinNxSeriesAndJetsonAgxOrinSeries.html) (geprüft am 2026-09-26)
 - [Ultralytics — NVIDIA Jetson guide (Anbieter-Benchmarks)](https://docs.ultralytics.com/guides/nvidia-jetson/) (geprüft am 2026-09-26)
 
-*Status: Entwurf, Überprüfung durch cheny ausstehend. Basiert auf der
+*Status: geprüft am 2026-10-11. Basiert auf der
 offiziellen NVIDIA-Dokumentation zum angegebenen Datum; noch nicht von Juxi
 Technology auf physischer Hardware verifiziert.*
 

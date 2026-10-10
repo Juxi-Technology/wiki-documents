@@ -80,7 +80,7 @@ rapide](/fr/tutorials/jetson-agx-orin/quick-start)**.
 - [Jetson AGX Orin Developer Kit User Guide — Introduction](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html) (vérifié le 2026-09-23)
 - [Page produit NVIDIA Jetson Orin](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/) (vérifié le 2026-09-23)
 
-*Statut : brouillon, en attente de relecture par cheny. Un tableau complet des
+*Statut : relu le 2026-10-11. Un tableau complet des
 spécifications du module sera ajouté à partir de la fiche technique officielle
 de NVIDIA ; d'ici là, considérez la page produit NVIDIA comme la source faisant
 autorité pour les spécifications.*

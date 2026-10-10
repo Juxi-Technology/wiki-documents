@@ -79,7 +79,7 @@ JetPack 7.2에는 **에이전트 스킬**이 포함되어 있습니다. Jetson �
 - [NVIDIA NemoClaw 제품 페이지](https://www.nvidia.com/en-us/ai/nemoclaw) (2026-09-24 확인)
 - [JetPack 7.2.1 다운로드 페이지](https://developer.nvidia.com/embedded/jetpack/downloads) (2026-09-24 확인)
 
-*상태: 초안, cheny 검토 대기 중. 기재된 날짜 기준 NVIDIA 공식 문서에 근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*
+*상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서에 근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*
 
 ---
 

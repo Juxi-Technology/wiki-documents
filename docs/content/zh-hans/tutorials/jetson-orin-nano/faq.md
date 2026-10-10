@@ -196,7 +196,7 @@ NVIDIA Jetson 开发者论坛，该论坛列在官方
 - NVIDIA 开发者论坛——[启动挂起 / 跳过用户名设置的主题帖](https://forums.developer.nvidia.com/t/jetson-orin-nano-super-dev-kit-boot-hangs-after-jetpack-7-2-installation-on-nvme-ssd-installer-skips-username-password-setup/380410)、[25W / MAXN SUPER 主题帖](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627)（核查于 2026-09-26）
 - [钜犀科技商店商品页——Jetson Orin Nano Super Developer Kit](https://www.juxitech.com/products/nvidia-jetson-orin-nano-super-development-kit)（核查于 2026-09-26）
 
-*状态：草稿，待 cheny 审核。*
+*状态：已于 2026-10-11 审核。*
 
 ---
 

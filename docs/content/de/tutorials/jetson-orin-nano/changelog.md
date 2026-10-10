@@ -49,7 +49,7 @@ um zu prüfen, welche Version Sie einsetzen, siehe
 - [Jetson Linux 39.2.1 Release Notes (PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) (geprüft am 2026-09-26)
 - [NVIDIA JetPack 6.2 announcement — Super mode for Jetson Orin Nano](https://developer.nvidia.com/blog/nvidia-jetpack-6-2-brings-super-mode-to-nvidia-jetson-orin-nano-and-jetson-orin-nx-modules/) (verlinkt als Herstellerankündigung des Super-Leistungsmodus)
 
-*Status: Entwurf, Überprüfung durch cheny ausstehend. Basiert auf NVIDIAs
+*Status: geprüft am 2026-10-11. Basiert auf NVIDIAs
 offizieller Dokumentation zum angegebenen Datum; noch nicht von Juxi Technology
 auf physischer Hardware verifiziert.*
 

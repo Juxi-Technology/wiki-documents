@@ -249,7 +249,7 @@ mise à jour, vérifiez le résultat : **[Vérifier votre système](/fr/tutorial
 - [Téléchargements JetPack](https://developer.nvidia.com/embedded/jetpack/downloads) (vérifié le 2026-09-26)
 - [SDK Manager — instructions d'installation avec écran connecté](https://developer.nvidia.com/w/sdkmanager/resources/instructions/monitor_mode_installation_orin.html) (vérifié le 2026-09-26)
 
-*Statut : brouillon, en attente de révision par cheny. Fondé sur la documentation officielle NVIDIA aux dates
+*Statut : relu le 2026-10-11. Fondé sur la documentation officielle NVIDIA aux dates
 indiquées ; pas encore vérifié sur matériel physique par Juxi Technology.*
 
 ---

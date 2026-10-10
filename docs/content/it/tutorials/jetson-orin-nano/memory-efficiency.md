@@ -237,7 +237,7 @@ passi a uno più piccolo, quantizzi di più, accorci il contesto o riduca il bat
 - Jetson AI Lab: [tutorial su TensorRT Edge-LLM](https://www.jetson-ai-lab.com/tutorials/tensorrt-edge-llm/) · [ottimizzazione della RAM](https://www.jetson-ai-lab.com/tutorials/ram-optimization/) (limiti di build per Orin Nano; swap su NVMe; verificato il 2026-09-26)
 - [NVIDIA Developer Forums — Ollama su Jetson](https://forums.developer.nvidia.com/t/ollama-not-supporting-jetson/383350) (community: free -h rispetto a cudaMalloc; grado B; verificato il 2026-09-26)
 
-*Stato: bozza, in attesa di revisione da parte di cheny. Basato sulla
+*Stato: rivisto il 2026-10-11. Basato sulla
 documentazione ufficiale NVIDIA alla data indicata; non ancora verificato su
 hardware fisico da Juxi Technology.*
 

@@ -279,7 +279,7 @@ support is de-facto, not an official claim. 8 GB is the stated minimum RAM
 - [NVIDIA — Build a Claw ("Install OpenClaw on Your NVIDIA Jetson Orin Nano™")](https://www.nvidia.com/en-us/ai/build-a-claw/) (checked 2026-09-26)
 - [JetPack 7.2.1 downloads page (component matrix lists Isaac ROS as "Coming soon")](https://developer.nvidia.com/embedded/jetpack/downloads) (checked 2026-09-26)
 
-*Status: draft, pending review by cheny. Ecosystem availability changes
+*Status: reviewed on 2026-10-11. Ecosystem availability changes
 quickly — re-check the linked NVIDIA and upstream pages before relying on
 this table. Not yet verified on physical hardware by Juxi Technology.*
 

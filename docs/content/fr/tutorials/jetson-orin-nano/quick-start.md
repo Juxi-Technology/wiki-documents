@@ -216,7 +216,7 @@ Le mode d'alimentation par défaut est généralement **25W**. Pour des performa
 - [Téléchargements du SDK JetPack](https://developer.nvidia.com/embedded/jetpack/downloads) (vérifié le 2026-09-26)
 - [Notes de version Jetson Linux 39.2.1 (PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) (vérifié le 2026-09-26)
 
-*Statut : brouillon, en attente de révision par cheny. Fondé sur la documentation officielle NVIDIA aux dates indiquées ; pas encore vérifié sur matériel physique par Juxi Technology.*
+*Statut : relu le 2026-10-11. Fondé sur la documentation officielle NVIDIA aux dates indiquées ; pas encore vérifié sur matériel physique par Juxi Technology.*
 
 **Crédits images :** les images de cette page proviennent du *Jetson Orin Nano Developer Kit User Guide* officiel de NVIDIA (téléchargé le 2026-09-26) et restent © NVIDIA Corporation. Elles sont reproduites ici pour illustrer le flux de configuration officiel.
 

@@ -128,7 +128,7 @@ prüfungen für L4T, CUDA und den gesamten JetPack-Komponenten-Stack.
 - [Jetson Linux 39.2.0 Release Notes (PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf) (geprüft 2026-09-23)
 - [NVIDIA SDK Manager](https://developer.nvidia.com/sdk-manager)
 
-*Status: Entwurf, ausstehende Prüfung durch cheny. Basiert auf NVIDIAs offizieller
+*Status: geprüft am 2026-10-11. Basiert auf NVIDIAs offizieller
 Dokumentation zum angegebenen Datum; noch nicht von Juxi Technology auf physischer
 Hardware verifiziert.*
 

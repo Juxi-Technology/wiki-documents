@@ -225,7 +225,7 @@ Vous devez fournir :
 - [Fiche technique du kit de développement Jetson Orin Nano Super (PDF, liée depuis nvidia.com)](https://dam-cdn.nvd.orangelogic.com/AssetLink/2ug686w80406gxf6q8uv7r3l7265m2n8.pdf) (vérifié le 2026-09-26)
 - [Fiche du kit sur la boutique Juxi Technology](https://www.juxitech.com/products/nvidia-jetson-orin-nano-super-development-kit) (vérifié le 2026-09-26)
 
-*Statut : brouillon, en attente de révision par cheny. Fondé sur la documentation
+*Statut : relu le 2026-10-11. Fondé sur la documentation
 officielle de NVIDIA aux dates indiquées ; pas encore vérifié sur matériel physique par
 Juxi Technology.*
 

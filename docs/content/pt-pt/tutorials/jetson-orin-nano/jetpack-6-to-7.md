@@ -228,7 +228,7 @@ linha 7.x. Consulte
 - Fórum de desenvolvedores da NVIDIA — [JetPack 7.2 GPU acceleration issue](https://forums.developer.nvidia.com/t/jetpack-7-2-gpu-acceleration-issue/372521) — funcionários da NVIDIA: percurso de reversão e índice de wheels do CUDA 13.2 (verificado em 2026-09-26)
 - Fórum de desenvolvedores da NVIDIA — [25W and MAXN SUPER not seen in JetPack 7.2](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627) — funcionários e utilizadores da NVIDIA: verificação do TNSPEC `-super`, regravação a partir do anfitrião (verificado em 2026-09-26)
 
-*Estado: rascunho, pendente de revisão por cheny. Baseado na documentação
+*Estado: revisado em 2026-10-11. Baseado na documentação
 oficial da NVIDIA e em declarações do fórum de desenvolvedores na data
 indicada; ainda não verificado em hardware físico pela Juxi Technology. A lista
 de recompilação descreve consequências padrão da plataforma — valide em função

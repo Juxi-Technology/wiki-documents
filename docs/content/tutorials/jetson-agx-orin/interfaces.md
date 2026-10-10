@@ -120,7 +120,7 @@ Used for production and automation wiring:
 - [Hardware Layout — Jetson AGX Orin Developer Kit User Guide](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/hardware_layout.html) (checked 2026-09-23)
 - For carrier-board details, see the *NVIDIA Jetson AGX Orin Developer Kit Carrier Board Specification* (linked from NVIDIA's [downloads page](https://developer.nvidia.com/embedded/downloads))
 
-*Status: draft, pending review by cheny. Steps and values above are grounded in
+*Status: reviewed on 2026-10-11. Steps and values above are grounded in
 NVIDIA's official documentation as of the date listed; not yet verified on
 physical hardware by Juxi Technology.*
 

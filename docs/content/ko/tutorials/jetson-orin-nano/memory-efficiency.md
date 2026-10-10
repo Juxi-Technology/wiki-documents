@@ -228,7 +228,7 @@ NVIDIA의 8 GB 사례 연구(메모리 효율 블로그, 표 7): 전체 GNOME �
 - Jetson AI Lab: [TensorRT Edge-LLM 튜토리얼](https://www.jetson-ai-lab.com/tutorials/tensorrt-edge-llm/) · [RAM 최적화](https://www.jetson-ai-lab.com/tutorials/ram-optimization/) (Orin Nano 빌드 제한; NVMe 스왑; 2026-09-26 확인)
 - [NVIDIA 개발자 포럼 — Ollama on Jetson](https://forums.developer.nvidia.com/t/ollama-not-supporting-jetson/383350) (커뮤니티: free -h vs cudaMalloc; 등급 B; 2026-09-26 확인)
 
-*상태: 초안, cheny 검토 대기 중. 기재된 날짜 기준 NVIDIA 공식 문서에
+*상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서에
 근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*
 
 ---

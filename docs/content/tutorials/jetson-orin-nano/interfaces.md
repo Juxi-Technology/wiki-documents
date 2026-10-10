@@ -212,7 +212,7 @@ The button header carries the serial console, reset, and force-recovery function
 - [Jetson Orin product family — developer.nvidia.com](https://developer.nvidia.com/embedded/jetson-orin) (checked 2026-09-26)
 - [NVIDIA Developer Forums — "Slow Wi-Fi on Orin Nano DevKit (RTL8822CE)", community thread](https://forums.developer.nvidia.com/t/slow-wi-fi-on-orin-nano-devkit-rtl8822ce-802-11ac/368697) (checked 2026-09-26)
 
-*Status: draft, pending review by cheny. Grounded in NVIDIA's official
+*Status: reviewed on 2026-10-11. Grounded in NVIDIA's official
 documentation as of the dates listed; not yet verified on physical hardware by
 Juxi Technology.*
 

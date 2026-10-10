@@ -70,7 +70,7 @@ USB Type-C 轉 USB Type-A 連接線。需要自行準備的物品請見
 - [Jetson AGX Orin Developer Kit User Guide — Introduction](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html) (查核於 2026-09-23)
 - [NVIDIA Jetson Orin 產品頁面](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/) (查核於 2026-09-23)
 
-*狀態：草稿，待 cheny 審核。完整的模組規格表將依 NVIDIA 官方資料表補上；在此
+*狀態：已於 2026-10-11 審核。完整的模組規格表將依 NVIDIA 官方資料表補上；在此
 之前，請以 NVIDIA 產品頁面作為規格的權威來源。*
 
 **圖片來源：**產品圖片來自 NVIDIA 官方 *Jetson AGX Orin Developer Kit User

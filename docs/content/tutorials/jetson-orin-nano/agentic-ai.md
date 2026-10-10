@@ -163,7 +163,7 @@ An always-on agent is a program with credentials and tool access that keeps work
 - [Isaac ROS — Getting Started](https://nvidia-isaac-ros.github.io/getting_started/index.html) and [Release notes](https://nvidia-isaac-ros.github.io/releases/index.html) (checked 2026-09-26)
 - [Jetson Linux r39.2.1 Release Notes (PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) (checked 2026-09-26) — the "Agent skills for video pipelines" What's New item.
 
-*Status: draft, pending review by cheny. Grounded in NVIDIA's official documentation, NVIDIA developer forum posts, and the Jetson AI Lab vendor guide, as of the dates listed; not yet verified on physical hardware by Juxi Technology.*
+*Status: reviewed on 2026-10-11. Grounded in NVIDIA's official documentation, NVIDIA developer forum posts, and the Jetson AI Lab vendor guide, as of the dates listed; not yet verified on physical hardware by Juxi Technology.*
 
 ---
 

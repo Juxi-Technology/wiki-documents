@@ -67,7 +67,7 @@ Für Aktualisierungen behandeln Sie die ersten beiden Links als die kanonischen 
 - [JetPack SDK Downloads and Release Notes](https://developer.nvidia.com/embedded/jetpack/downloads) (geprüft am 2026-09-23; Hinweis zur Komponententabelle am 2026-09-26)
 - [NVIDIA Jetson apt-Repository — Packages-Index](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages) — maßgeblich für die installierten Komponentenversionen (geprüft am 2026-09-26)
 
-*Status: Entwurf, Überprüfung durch cheny ausstehend.*
+*Status: geprüft am 2026-10-11.*
 
 ---
 

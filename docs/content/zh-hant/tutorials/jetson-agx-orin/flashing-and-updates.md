@@ -100,7 +100,7 @@ NVIDIA 文檔中的重點:
 - [Jetson Linux 39.2.0 發行說明(PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf)(已於 2026-09-23 核對)
 - [NVIDIA SDK Manager](https://developer.nvidia.com/sdk-manager)
 
-*狀態:草稿,待 cheny 審核。內容依據所列日期的 NVIDIA 官方文檔;尚未由鉅犀科技在實體硬體上驗證。*
+*狀態:已於 2026-10-11 審核。內容依據所列日期的 NVIDIA 官方文檔;尚未由鉅犀科技在實體硬體上驗證。*
 
 ---
 

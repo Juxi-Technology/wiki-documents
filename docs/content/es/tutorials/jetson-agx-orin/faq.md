@@ -120,7 +120,7 @@ Para recibir asesoramiento, escriba a sales@juxitech.com.
 - Jetson AGX Orin Developer Kit User Guide — [Introduction](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html), [Quick Start](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/quick_start.html) (consultado el 2026-09-23)
 - [JetPack SDK Downloads](https://developer.nvidia.com/embedded/jetpack/downloads) (consultado el 2026-09-23)
 
-*Estado: borrador, pendiente de revisión por cheny.*
+*Estado: revisado el 2026-10-11.*
 
 ---
 

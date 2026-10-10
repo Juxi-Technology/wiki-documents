@@ -248,7 +248,7 @@ locale](/fr/tutorials/jetson-orin-nano/local-llm) et la
 - Jetson AI Lab : [tutoriel TensorRT Edge-LLM](https://www.jetson-ai-lab.com/tutorials/tensorrt-edge-llm/) · [optimisation de la RAM](https://www.jetson-ai-lab.com/tutorials/ram-optimization/) (limites de construction Orin Nano ; swap NVMe ; vérifié le 2026-09-26)
 - [NVIDIA Developer Forums — Ollama on Jetson](https://forums.developer.nvidia.com/t/ollama-not-supporting-jetson/383350) (communauté : free -h vs cudaMalloc ; niveau B ; vérifié le 2026-09-26)
 
-*Statut : brouillon, en attente de relecture par cheny. Fondé sur la
+*Statut : relu le 2026-10-11. Fondé sur la
 documentation officielle NVIDIA à la date indiquée ; pas encore vérifié sur
 matériel physique par Juxi Technology.*
 

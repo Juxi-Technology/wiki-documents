@@ -69,7 +69,7 @@ LLM/VLM ワークロードでは、メモリ消費が最も大きいのは重み
 - [NVIDIA テクニカルブログ — JetPack 7.2 におけるメモリ効率とエージェントスキル](https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2)(2026-09-24 確認)
 - [TensorRT Edge-LLM ドキュメント](https://nvidia.github.io/TensorRT-Edge-LLM/)(機能とサポートマトリクス、2026-09-24 確認)
 
-*ステータス:ドラフト、cheny のレビュー待ち。記載日時点の NVIDIA 公式
+*ステータス: レビュー済み（2026-10-11）。記載日時点の NVIDIA 公式
 ドキュメントに基づく内容です。Juxi Technology による実機での検証はまだ
 行われていません。*
 

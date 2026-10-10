@@ -124,7 +124,7 @@ Für Produktion und Automatisierungsverdrahtung:
 - [Hardware Layout — Jetson AGX Orin Developer Kit User Guide](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/hardware_layout.html) (geprüft am 2026-09-23)
 - Details zur Trägerplatine finden Sie in der *NVIDIA Jetson AGX Orin Developer Kit Carrier Board Specification* (verlinkt auf NVIDIAs [Downloads-Seite](https://developer.nvidia.com/embedded/downloads))
 
-*Status: Entwurf, Überprüfung durch cheny steht aus. Die oben genannten Schritte
+*Status: geprüft am 2026-10-11. Die oben genannten Schritte
 und Werte basieren auf NVIDIAs offizieller Dokumentation zum angegebenen Datum;
 noch nicht von Juxi Technology auf physischer Hardware verifiziert.*
 

@@ -166,7 +166,7 @@ SDK Manager の詳細な手順は NVIDIA が管理しています(下記のリ�
 - [Jetson AGX Orin Developer Kit User Guide — JetPack SDK Setup](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/setup_jetpack.html) (2026-09-23 確認)
 - [BSP Installation (SDK Manager / flash script)](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/setup_bsp.html)
 
-*ステータス:ドラフト。手順はまだ Juxi Technology による実機検証が行われていません。上記の日付時点の NVIDIA 公式ドキュメントに基づいています。*
+*ステータス: レビュー済み（2026-10-11）。手順はまだ Juxi Technology による実機検証が行われていません。上記の日付時点の NVIDIA 公式ドキュメントに基づいています。*
 
 **画像クレジット:** 本ページのすべてのスクリーンショットは NVIDIA 公式の *Jetson AGX Orin Developer Kit User Guide*(2026-09-23 ダウンロード)からのもので、著作権は © NVIDIA Corporation に帰属します。公式のセットアップフローを説明するために掲載しています。
 

@@ -209,7 +209,7 @@ reflash with the Super configuration — that keeps 7.x. See
 - [NVIDIA developer forum — JetPack 7.2 GPU acceleration issue](https://forums.developer.nvidia.com/t/jetpack-7-2-gpu-acceleration-issue/372521) — NVIDIA staff: downgrade path and CUDA 13.2 wheel index (checked 2026-09-26)
 - [NVIDIA developer forum — 25W and MAXN SUPER not seen in JetPack 7.2](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627) — NVIDIA staff and users: `-super` TNSPEC check, host reflash (checked 2026-09-26)
 
-*Status: draft, pending review by cheny. Grounded in NVIDIA's official
+*Status: reviewed on 2026-10-11. Grounded in NVIDIA's official
 documentation and developer-forum statements as of the date listed; not yet
 verified on physical hardware by Juxi Technology. The rebuild list describes
 standard platform consequences — validate against your own stack.*

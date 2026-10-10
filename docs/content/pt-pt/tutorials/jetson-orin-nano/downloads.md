@@ -124,7 +124,7 @@ que for:
 - [TensorRT Edge-LLM documentation](https://nvidia.github.io/TensorRT-Edge-LLM/overview.html) · [DeepStream 9.1 installation guide](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_Installation.html) · [Jetson AI Lab](https://www.jetson-ai-lab.com/) · [SBSA wheel index](https://pypi.jetson-ai-lab.io/sbsa/cu130) (verificado em 2026-09-26)
 - [Página de produto da loja da Juxi Technology](https://www.juxitech.com/products/nvidia-jetson-orin-nano-super-development-kit) e [wiki](https://wiki.juxitech.com/) (verificado em 2026-09-26)
 
-*Estado: rascunho, pendente de revisão por cheny.*
+*Estado: revisado em 2026-10-11.*
 
 ---
 

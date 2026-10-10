@@ -305,7 +305,7 @@ imagen de sandbox de unos 2.4 GB. Consulte [IA agéntica](/es/tutorials/jetson-o
 - [NVIDIA — Build a Claw («Install OpenClaw on Your NVIDIA Jetson Orin Nano™»)](https://www.nvidia.com/en-us/ai/build-a-claw/) (consultado el 2026-09-26)
 - [Página de descargas de JetPack 7.2.1 (la matriz de componentes lista Isaac ROS como «Coming soon»)](https://developer.nvidia.com/embedded/jetpack/downloads) (consultado el 2026-09-26)
 
-*Estado: borrador, pendiente de revisión por cheny. La disponibilidad del
+*Estado: revisado el 2026-10-11. La disponibilidad del
 ecosistema cambia rápidamente — vuelva a consultar las páginas de NVIDIA y
 upstream enlazadas antes de basarse en esta tabla. Aún no verificada en
 hardware físico por Juxi Technology.*

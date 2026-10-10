@@ -166,7 +166,7 @@ RCM に入ったら、ホストがデバイスを検出した時点でジャン�
 - [JetPack Downloads](https://developer.nvidia.com/embedded/jetpack/downloads) (2026-09-26 確認)
 - [SDK Manager — monitor-attached installation instructions](https://developer.nvidia.com/w/sdkmanager/resources/instructions/monitor_mode_installation_orin.html) (2026-09-26 確認)
 
-*ステータス:ドラフト、cheny によるレビュー待ち。記載日時点の NVIDIA 公式ドキュメントに基づく内容です。Juxi Technology による実機検証はまだ行われていません。*
+*ステータス: レビュー済み（2026-10-11）。記載日時点の NVIDIA 公式ドキュメントに基づく内容です。Juxi Technology による実機検証はまだ行われていません。*
 
 ---
 

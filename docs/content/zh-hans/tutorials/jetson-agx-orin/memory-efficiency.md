@@ -67,7 +67,7 @@ NVIDIA 陈述的目标:让更强的负载装进更小的内存占用(这正是�
 - [NVIDIA 技术博客——JetPack 7.2 中的内存效率与智能体技能](https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2)(核对于 2026-09-24)
 - [TensorRT Edge-LLM 文档](https://nvidia.github.io/TensorRT-Edge-LLM/)(功能与支持矩阵;核对于 2026-09-24)
 
-*状态:草稿,待 cheny 审核。内容依据所列日期的 NVIDIA 官方文档;尚未由钜犀科技在实体硬件上验证。*
+*状态:已于 2026-10-11 审核。内容依据所列日期的 NVIDIA 官方文档;尚未由钜犀科技在实体硬件上验证。*
 
 ---
 

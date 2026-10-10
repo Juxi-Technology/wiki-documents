@@ -107,7 +107,7 @@ review_owner: cheny
 - [DeepStream SDK——安装](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_Installation.html)（核查于 2026-09-26）
 - [NVIDIA 论坛——“JetPack 7.2 中看不到 25W 和 MAXN_SUPER”（NVIDIA 员工答复）](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627)（核查于 2026-09-26）
 
-*状态：草稿，待 cheny 审核。定义整理自 NVIDIA 官方文档与行业通行用法；
+*状态：已于 2026-10-11 审核。定义整理自 NVIDIA 官方文档与行业通行用法；
 版本号核对于所列日期。尚未由钜犀科技在实机上验证。*
 
 ---

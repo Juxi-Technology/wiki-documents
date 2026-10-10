@@ -199,7 +199,7 @@ documentation:
 - [Jetson AGX Orin Developer Kit User Guide — JetPack SDK Setup](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/setup_jetpack.html) (checked 2026-09-23)
 - [BSP Installation (SDK Manager / flash script)](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/setup_bsp.html)
 
-*Status: draft. Steps have not yet been verified on physical hardware by Juxi
+*Status: reviewed on 2026-10-11. Steps have not yet been verified on physical hardware by Juxi
 Technology; they are grounded in NVIDIA's official documentation as of the
 dates above.*
 

@@ -55,7 +55,7 @@ Jetson AGX Orin モジュールとリファレンスキャリアボード、Wi-F
 - [Jetson AGX Orin Developer Kit User Guide — Introduction](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html)(2026-09-23 確認)
 - [NVIDIA Jetson Orin 製品ページ](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/)(2026-09-23 確認)
 
-*ステータス:ドラフト、cheny によるレビュー待ち。完全なモジュール仕様表は NVIDIA 公式データシートから追加される予定です。それまでは、仕様に関する正式な情報源を NVIDIA 製品ページとして扱ってください。*
+*ステータス: レビュー済み（2026-10-11）。完全なモジュール仕様表は NVIDIA 公式データシートから追加される予定です。それまでは、仕様に関する正式な情報源を NVIDIA 製品ページとして扱ってください。*
 
 **画像クレジット:** 製品画像は NVIDIA 公式の *Jetson AGX Orin Developer Kit User Guide* より(2026-09-23 ダウンロード)、© NVIDIA Corporation。
 

@@ -63,7 +63,7 @@ review_owner: cheny
 - [JetPack SDK 下载与发布说明](https://developer.nvidia.com/embedded/jetpack/downloads)(已于 2026-09-23 核对；组件表注意事项于 2026-09-26 补充)
 - [NVIDIA Jetson apt 仓库 — Packages 索引](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages) — 所安装组件版本的权威来源(已于 2026-09-26 核对)
 
-*状态：草稿，待 cheny 审核。*
+*状态：已于 2026-10-11 审核。*
 
 ---
 

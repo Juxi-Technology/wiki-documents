@@ -121,7 +121,7 @@ JetPack 빌드를 뜻합니다. 두 페이지가 어긋날 때는
 - [Jetson AGX Orin Developer Kit 사용자 가이드 — 소개](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html) (모듈 에뮬레이션; 2026-09-24 확인)
 - [ROS 2 Jazzy 설치 문서](https://docs.ros.org/en/jazzy/Installation.html)
 
-*상태: 초안, cheny 검토 대기 중. 생태계 가용성은 빠르게 변합니다 — 이 표에
+*상태: 2026-10-11 검토 완료. 생태계 가용성은 빠르게 변합니다 — 이 표에
 의존하기 전에 링크된 NVIDIA 페이지를 다시 확인하십시오. 아직 Juxi Technology가
 실제 하드웨어에서 검증하지 않았습니다.*
 

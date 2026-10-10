@@ -231,7 +231,7 @@ per 8 GB](/it/tutorials/jetson-orin-nano/memory-efficiency).
 - [jetson-containers (GitHub)](https://github.com/dusty-nv/jetson-containers) (verificato il 2026-09-26)
 - [Indice PyPI di Jetson AI Lab — sbsa/cu130](https://pypi.jetson-ai-lab.io/sbsa/cu130) (verificato il 2026-09-26)
 
-*Stato: bozza, in attesa di revisione da parte di cheny. Basato sulla
+*Stato: rivisto il 2026-10-11. Basato sulla
 documentazione ufficiale NVIDIA alla data indicata; non ancora verificato su
 hardware fisico da Juxi Technology.*
 

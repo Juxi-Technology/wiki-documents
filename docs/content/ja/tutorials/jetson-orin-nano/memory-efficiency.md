@@ -162,7 +162,7 @@ NVIDIA の 8GB ケーススタディ(メモリ効率ブログ、表 7):完全な
 - Jetson AI Lab:[TensorRT Edge-LLM チュートリアル](https://www.jetson-ai-lab.com/tutorials/tensorrt-edge-llm/) · [RAM 最適化](https://www.jetson-ai-lab.com/tutorials/ram-optimization/)(Orin Nano のビルド制限、NVMe スワップ。2026-09-26 確認)
 - [NVIDIA 開発者フォーラム — Jetson 上の Ollama](https://forums.developer.nvidia.com/t/ollama-not-supporting-jetson/383350)(コミュニティ:free -h と cudaMalloc の比較。グレード B。2026-09-26 確認)
 
-*ステータス:ドラフト、cheny によるレビュー待ち。記載した日付時点の NVIDIA 公式ドキュメントに基づいています。Juxi Technology による実機検証はまだ行われていません。*
+*ステータス: レビュー済み（2026-10-11）。記載した日付時点の NVIDIA 公式ドキュメントに基づいています。Juxi Technology による実機検証はまだ行われていません。*
 
 ---
 

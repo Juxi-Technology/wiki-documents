@@ -122,7 +122,7 @@ GCC 13.2、ソースリリースタグ — `jetson_39.2_GA`。
 - [Jetson Linux 39.2.0 リリースノート(PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf)(2026-09-23 確認)
 - [NVIDIA SDK Manager](https://developer.nvidia.com/sdk-manager)
 
-*ステータス:ドラフト、cheny のレビュー待ち。記載日時点の NVIDIA 公式
+*ステータス: レビュー済み（2026-10-11）。記載日時点の NVIDIA 公式
 ドキュメントに基づく内容です。Juxi Technology による実機での検証はまだ
 行われていません。*
 

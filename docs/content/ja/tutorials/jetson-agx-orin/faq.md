@@ -117,7 +117,7 @@ Juxi Technology の製品カタログ
 - Jetson AGX Orin Developer Kit User Guide — [はじめに](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html)、[クイックスタート](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/quick_start.html)(2026-09-23 に確認)
 - [JetPack SDK ダウンロード](https://developer.nvidia.com/embedded/jetpack/downloads)(2026-09-23 に確認)
 
-*ステータス: ドラフト、cheny によるレビュー待ち。*
+*ステータス: レビュー済み（2026-10-11）。*
 
 ---
 

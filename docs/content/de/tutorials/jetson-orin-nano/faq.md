@@ -239,7 +239,7 @@ Offizielle Downloads und Referenzlinks:
 - NVIDIA developer forums — [Thread: Boot-Hänger / übersprungenes Benutzername-Setup](https://forums.developer.nvidia.com/t/jetson-orin-nano-super-dev-kit-boot-hangs-after-jetpack-7-2-installation-on-nvme-ssd-installer-skips-username-password-setup/380410), [Thread: 25W / MAXN SUPER](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627) (geprüft am 2026-09-26)
 - [Shop-Eintrag von Juxi Technology — Jetson Orin Nano Super Developer Kit](https://www.juxitech.com/products/nvidia-jetson-orin-nano-super-development-kit) (geprüft am 2026-09-26)
 
-*Status: Entwurf, Überprüfung durch cheny ausstehend.*
+*Status: geprüft am 2026-10-11.*
 
 ---
 

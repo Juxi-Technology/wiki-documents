@@ -79,7 +79,7 @@ precisa de fornecer, consulte o
 - [Jetson AGX Orin Developer Kit User Guide — Introduction](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html) (verificado em 2026-09-23)
 - [Página de produto NVIDIA Jetson Orin](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/) (verificado em 2026-09-23)
 
-*Estado: rascunho, pendente de revisão por cheny. Uma tabela completa de
+*Estado: revisado em 2026-10-11. Uma tabela completa de
 especificações do módulo será adicionada a partir da folha de dados oficial da
 NVIDIA; até lá, considere a página de produto da NVIDIA como a fonte
 autoritativa para as especificações.*

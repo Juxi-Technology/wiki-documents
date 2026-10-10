@@ -112,7 +112,7 @@ Verifichi sempre cosa esegue effettivamente un sistema specifico:
 - [NVIDIA Jetson apt repository — versioni effettive dei componenti](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages) (verificato il 2026-09-26) — tramite la catena di dipendenze di `nvidia-jetpack` 7.2.1; la tabella riepilogativa della [pagina dei download di JetPack](https://developer.nvidia.com/embedded/jetpack/downloads) è in ritardo (riporta ancora CUDA 13.2.1 / VPI 4.1.3)
 - [Jetson AGX Orin Developer Kit User Guide](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html) (verificato il 2026-09-24)
 
-*Stato: bozza, in attesa di revisione da parte di cheny. Definizioni compilate
+*Stato: rivisto il 2026-10-11. Definizioni compilate
 dalla documentazione NVIDIA e dall'uso standard del settore; i numeri di
 versione sono stati verificati alla data indicata.*
 

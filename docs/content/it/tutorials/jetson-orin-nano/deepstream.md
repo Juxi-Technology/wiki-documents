@@ -237,7 +237,7 @@ GPU — gli altri formati di export girano sulla CPU.
 - [Jetson Linux r39.2 Developer Guide — Power and Performance](https://docs.nvidia.com/jetson/archives/r39.2/DeveloperGuide/SD/PlatformPowerAndPerformance/JetsonOrinNanoSeriesJetsonOrinNxSeriesAndJetsonAgxOrinSeries.html) (verificato il 2026-09-26)
 - [Ultralytics — guida NVIDIA Jetson (benchmark del fornitore)](https://docs.ultralytics.com/guides/nvidia-jetson/) (verificato il 2026-09-26)
 
-*Stato: bozza, in attesa di revisione da parte di cheny. Basato sulla
+*Stato: rivisto il 2026-10-11. Basato sulla
 documentazione ufficiale NVIDIA alla data indicata; non ancora verificato su
 hardware fisico da Juxi Technology.*
 

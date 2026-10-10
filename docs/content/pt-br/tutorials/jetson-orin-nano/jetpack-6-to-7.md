@@ -210,7 +210,7 @@ regravação a partir do host com a configuração Super — isso mantém a linh
 - [Fórum de desenvolvedores da NVIDIA — problema de aceleração por GPU no JetPack 7.2](https://forums.developer.nvidia.com/t/jetpack-7-2-gpu-acceleration-issue/372521) — funcionários da NVIDIA: caminho de downgrade e índice de wheels do CUDA 13.2 (verificado em 2026-09-26)
 - [Fórum de desenvolvedores da NVIDIA — 25W e MAXN SUPER não aparecem no JetPack 7.2](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627) — funcionários e usuários da NVIDIA: verificação do TNSPEC com `-super`, regravação a partir do host (verificado em 2026-09-26)
 
-*Status: rascunho, pendente de revisão por cheny. Baseado na documentação oficial
+*Status: revisado em 2026-10-11. Baseado na documentação oficial
 da NVIDIA e em declarações do fórum de desenvolvedores na data indicada; ainda não
 verificado em hardware físico pela Juxi Technology. A lista de recompilação descreve
 consequências padrão da plataforma — valide com a sua própria pilha.*

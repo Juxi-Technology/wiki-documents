@@ -290,7 +290,7 @@ eine Schicht unter mehreren, nicht als die einzige.
 - [Isaac ROS — Getting Started](https://nvidia-isaac-ros.github.io/getting_started/index.html) und [Release Notes](https://nvidia-isaac-ros.github.io/releases/index.html) (geprüft am 2026-09-26)
 - [Jetson Linux r39.2.1 Release Notes (PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) (geprüft am 2026-09-26) — der What's-New-Eintrag „Agent skills for video pipelines“.
 
-*Status: Entwurf, Überprüfung durch cheny steht aus. Basiert auf NVIDIAs
+*Status: geprüft am 2026-10-11. Basiert auf NVIDIAs
 offizieller Dokumentation, Beiträgen in den NVIDIA-Entwicklerforen und dem
 Anbieter-Leitfaden von Jetson AI Lab, zum angegebenen Datum; noch nicht auf
 physischer Hardware durch Juxi Technology verifiziert.*

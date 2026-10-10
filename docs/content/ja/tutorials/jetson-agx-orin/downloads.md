@@ -66,7 +66,7 @@ review_owner: cheny
 - [JetPack SDK のダウンロードとリリースノート](https://developer.nvidia.com/embedded/jetpack/downloads)(2026-09-23 確認、コンポーネント一覧の注記 2026-09-26)
 - [NVIDIA Jetson apt リポジトリ — Packages インデックス](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages) — インストールされるコンポーネントバージョンの正式な情報源(2026-09-26 確認)
 
-*ステータス:ドラフト、cheny のレビュー待ち。*
+*ステータス: レビュー済み（2026-10-11）。*
 
 ---
 

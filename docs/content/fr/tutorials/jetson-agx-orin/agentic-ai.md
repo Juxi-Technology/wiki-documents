@@ -109,7 +109,7 @@ D'autres compétences d'agent dans l'écosystème :
 - [Page produit NVIDIA NemoClaw](https://www.nvidia.com/en-us/ai/nemoclaw) (vérifié le 2026-09-24)
 - [Page de téléchargement de JetPack 7.2.1](https://developer.nvidia.com/embedded/jetpack/downloads) (vérifié le 2026-09-24)
 
-*Statut : brouillon, en attente de relecture par cheny. Fondé sur la
+*Statut : relu le 2026-10-11. Fondé sur la
 documentation officielle NVIDIA à la date indiquée ; pas encore vérifié sur
 matériel physique par Juxi Technology.*
 

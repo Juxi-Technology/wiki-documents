@@ -229,7 +229,7 @@ PyTorch, TorchScript, TensorRT 내보내기 형식만 GPU를 사용하며, 다�
 - [Jetson Linux r39.2 Developer Guide — 전원 및 성능](https://docs.nvidia.com/jetson/archives/r39.2/DeveloperGuide/SD/PlatformPowerAndPerformance/JetsonOrinNanoSeriesJetsonOrinNxSeriesAndJetsonAgxOrinSeries.html) (2026-09-26 확인)
 - [Ultralytics — NVIDIA Jetson 가이드(벤더 벤치마크)](https://docs.ultralytics.com/guides/nvidia-jetson/) (2026-09-26 확인)
 
-*상태: 초안, cheny 검토 대기 중. 기재된 날짜 기준 NVIDIA 공식 문서에
+*상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서에
 근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*
 
 ---

@@ -141,7 +141,7 @@ NVIDIA 針對 Jetson 的官方 DeepStream 9.1 性能頁只涵蓋兩個平台：*
 - [Jetson Linux r39.2 開發者指南——電源與性能](https://docs.nvidia.com/jetson/archives/r39.2/DeveloperGuide/SD/PlatformPowerAndPerformance/JetsonOrinNanoSeriesJetsonOrinNxSeriesAndJetsonAgxOrinSeries.html)（查閱於 2026-09-26）
 - [Ultralytics——NVIDIA Jetson 指南（廠商基準測試）](https://docs.ultralytics.com/guides/nvidia-jetson/)（查閱於 2026-09-26）
 
-*狀態：草稿，待 cheny 審核。內容以所列日期的 NVIDIA 官方文件為依據；尚未由鉅犀科技在實體硬體上驗證。*
+*狀態：已於 2026-10-11 審核。內容以所列日期的 NVIDIA 官方文件為依據；尚未由鉅犀科技在實體硬體上驗證。*
 
 ---
 

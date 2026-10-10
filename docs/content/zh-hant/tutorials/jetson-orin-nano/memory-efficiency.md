@@ -160,7 +160,7 @@ NVIDIA 的 8 GB 案例研究（記憶體效率部落格，Table 7）：以無頭
 - Jetson AI Lab：[TensorRT Edge-LLM 教學](https://www.jetson-ai-lab.com/tutorials/tensorrt-edge-llm/) · [RAM 最佳化](https://www.jetson-ai-lab.com/tutorials/ram-optimization/)（Orin Nano 構建限制；NVMe swap；查閱於 2026-09-26）
 - [NVIDIA 開發者論壇——Jetson 上的 Ollama](https://forums.developer.nvidia.com/t/ollama-not-supporting-jetson/383350)（社群：free -h 對比 cudaMalloc；等級 B；查閱於 2026-09-26）
 
-*狀態：草稿，待 cheny 審核。內容依據所列日期的 NVIDIA 官方文件；尚未由鉅犀科技在實體硬體上驗證。*
+*狀態：已於 2026-10-11 審核。內容依據所列日期的 NVIDIA 官方文件；尚未由鉅犀科技在實體硬體上驗證。*
 
 ---
 

@@ -216,7 +216,7 @@ JetPack 6.2(CUDA 12.6)와 JetPack 7(CUDA 13.x)을 지원합니다. 주요 서빙
 - [jetson-containers (GitHub)](https://github.com/dusty-nv/jetson-containers) (2026-09-26 확인)
 - [Jetson AI Lab PyPI 인덱스 — sbsa/cu130](https://pypi.jetson-ai-lab.io/sbsa/cu130) (2026-09-26 확인)
 
-*상태: 초안, cheny 검토 대기 중. 기재된 날짜 기준 NVIDIA 공식 문서에
+*상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서에
 근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*
 
 ---

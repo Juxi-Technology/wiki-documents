@@ -48,7 +48,7 @@ pour savoir ce que vous exécutez, consultez **[Vérifier votre système](/fr/tu
 - [Notes de version Jetson Linux 39.2.1 (PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) (vérifié le 2026-09-26)
 - [Annonce NVIDIA JetPack 6.2 — Super mode for Jetson Orin Nano](https://developer.nvidia.com/blog/nvidia-jetpack-6-2-brings-super-mode-to-nvidia-jetson-orin-nano-and-jetson-orin-nx-modules/) (lié comme l'annonce du mode d'alimentation Super par le fournisseur)
 
-*Statut : brouillon, en attente de relecture par cheny. Fondé sur la
+*Statut : relu le 2026-10-11. Fondé sur la
 documentation officielle de NVIDIA aux dates indiquées ; pas encore vérifié
 sur matériel physique par Juxi Technology.*
 

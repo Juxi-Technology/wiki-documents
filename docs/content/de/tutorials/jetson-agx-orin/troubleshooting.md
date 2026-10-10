@@ -97,7 +97,7 @@ Compute-Stack-Themen:
 - [Schnellstart](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/quick_start.html) · [BSP-Installation](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/setup_bsp.html) · [Hardware-Layout](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/hardware_layout.html) — Jetson AGX Orin Developer Kit User Guide (geprüft am 2026-09-23)
 - [Jetson Linux 39.2.0 Release Notes (PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf) (geprüft am 2026-09-23)
 
-*Status: Entwurf, ausstehende Prüfung durch cheny. Von Kunden gemeldetes
+*Status: geprüft am 2026-10-11. Von Kunden gemeldetes
 hardwarespezifisches Verhalten kann abweichen; diese Seite wird aktualisiert,
 sobald Rückmeldungen aus der Praxis eingehen.*
 

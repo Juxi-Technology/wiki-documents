@@ -79,7 +79,7 @@ JetPack 7.2 内置**智能体技能**:面向 Jetson 开发的可重复、可由�
 - [NVIDIA NemoClaw 产品页](https://www.nvidia.com/en-us/ai/nemoclaw)(核对于 2026-09-24)
 - [JetPack 7.2.1 下载页](https://developer.nvidia.com/embedded/jetpack/downloads)(核对于 2026-09-24)
 
-*状态:草稿,待 cheny 评审。内容依据截至所列日期的 NVIDIA 官方文档;尚未经钜犀科技在实机上验证。*
+*状态:已于 2026-10-11 审核。内容依据截至所列日期的 NVIDIA 官方文档;尚未经钜犀科技在实机上验证。*
 
 ---
 

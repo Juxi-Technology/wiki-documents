@@ -109,7 +109,7 @@ review_owner: cheny
 - [NVIDIA Jetson apt リポジトリ — 実際のコンポーネントバージョン](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages)(2026-09-26 確認)— `nvidia-jetpack` 7.2.1 の依存関係チェーン経由。[JetPack ダウンロードページ](https://developer.nvidia.com/embedded/jetpack/downloads)の概要表は遅れており(依然として CUDA 13.2.1 / VPI 4.1.3 と記載)
 - [Jetson AGX Orin Developer Kit ユーザーガイド](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html)(2026-09-24 確認)
 
-*ステータス:ドラフト、cheny によるレビュー待ち。定義は NVIDIA のドキュメントと
+*ステータス: レビュー済み（2026-10-11）。定義は NVIDIA のドキュメントと
 業界標準の用法に基づいてまとめたものです。バージョン番号は記載の日付時点で確認しています。*
 
 ---

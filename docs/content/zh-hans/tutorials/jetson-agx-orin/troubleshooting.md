@@ -84,7 +84,7 @@ NVIDIA 发布说明中的已知问题 **6236259**:在 AGX Orin 平台上,systemd
 - [快速开始](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/quick_start.html) · [BSP 安装](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/setup_bsp.html) · [硬件布局](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/hardware_layout.html) —— Jetson AGX Orin 开发者套件用户指南(已于 2026-09-23 核查)
 - [Jetson Linux 39.2.0 发布说明(PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf)(已于 2026-09-23 核查)
 
-*状态:草稿,待 cheny 审核。客户反馈的硬件相关行为可能存在差异;请根据陆续收到的现场反馈更新本页。*
+*状态:已于 2026-10-11 审核。客户反馈的硬件相关行为可能存在差异;请根据陆续收到的现场反馈更新本页。*
 
 ---
 

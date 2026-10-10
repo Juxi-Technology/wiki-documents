@@ -91,7 +91,7 @@ Jetson Linux 39.2 릴리스 노트에서:
 - [JetPack SDK 다운로드](https://developer.nvidia.com/embedded/jetpack/downloads) (2026-09-23 확인) — ⚠️ 구성 요소 표가 일부 행에서 뒤처져 있습니다; 7.2.1 시스템이 실제로 설치하는 버전은 [시스템 검증](/ko/tutorials/jetson-agx-orin/verify-your-system)을 참조하십시오
 - [Seeed Studio JetPack 7.2 리소스 허브](https://wiki.seeedstudio.com/jetpack_7_2_resource_hub/) — 보조 자료; 마이그레이션 주제 구성에 사용(2026-09-23 확인)
 
-*상태: 초안, cheny 검토 대기 중. 기재된 날짜 기준 NVIDIA 공식 문서에 근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다. 재빌드 목록은 일반적인 플랫폼 결과(커널/TensorRT/CUDA 버전 변경)를 설명한 것입니다 — 자체 스택과 대조해 검증하십시오.*
+*상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서에 근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다. 재빌드 목록은 일반적인 플랫폼 결과(커널/TensorRT/CUDA 버전 변경)를 설명한 것입니다 — 자체 스택과 대조해 검증하십시오.*
 
 ---
 

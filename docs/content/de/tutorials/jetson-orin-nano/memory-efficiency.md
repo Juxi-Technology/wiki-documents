@@ -247,7 +247,7 @@ Kontext oder reduzieren Sie den Batch — siehe
 - Jetson AI Lab: [TensorRT-Edge-LLM-Tutorial](https://www.jetson-ai-lab.com/tutorials/tensorrt-edge-llm/) · [RAM-Optimierung](https://www.jetson-ai-lab.com/tutorials/ram-optimization/) (Orin-Nano-Build-Limits; NVMe-Swap; geprüft am 2026-09-26)
 - [NVIDIA Developer Forums — Ollama on Jetson](https://forums.developer.nvidia.com/t/ollama-not-supporting-jetson/383350) (Community: free -h vs. cudaMalloc; Einstufung B; geprüft am 2026-09-26)
 
-*Status: Entwurf, Überprüfung durch cheny ausstehend. Basiert auf der
+*Status: geprüft am 2026-10-11. Basiert auf der
 offiziellen NVIDIA-Dokumentation zum angegebenen Datum; noch nicht von Juxi
 Technology auf physischer Hardware verifiziert.*
 

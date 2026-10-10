@@ -162,7 +162,7 @@ NVIDIA 員工在其開發者論壇上除錯了 Orin Nano + JetPack 7.2 + Ollama 
 - [Isaac ROS——Getting Started](https://nvidia-isaac-ros.github.io/getting_started/index.html)與[發行說明](https://nvidia-isaac-ros.github.io/releases/index.html)（查閱於 2026-09-26）
 - [Jetson Linux r39.2.1 發行說明（PDF）](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf)（查閱於 2026-09-26）——「Agent skills for video pipelines」這項 What's New 內容。
 
-*狀態：草稿，待 cheny 審核。內容以所列日期的 NVIDIA 官方文件、NVIDIA 開發者論壇貼文與 Jetson AI Lab 原廠指南為依據；尚未由鉅犀科技在實體硬體上驗證。*
+*狀態：已於 2026-10-11 審核。內容以所列日期的 NVIDIA 官方文件、NVIDIA 開發者論壇貼文與 Jetson AI Lab 原廠指南為依據；尚未由鉅犀科技在實體硬體上驗證。*
 
 ---
 

@@ -119,7 +119,7 @@ sales@juxitech.com으로 문의하십시오.
 - Jetson AGX Orin Developer Kit User Guide — [Introduction](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html), [Quick Start](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/quick_start.html) (2026-09-23 확인)
 - [JetPack SDK Downloads](https://developer.nvidia.com/embedded/jetpack/downloads) (2026-09-23 확인)
 
-*상태: 초안, cheny의 검토 대기 중.*
+*상태: 2026-10-11 검토 완료.*
 
 ---
 

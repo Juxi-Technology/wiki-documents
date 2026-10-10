@@ -241,7 +241,7 @@ utilizam a GPU — os outros formatos de exportação são executados na CPU.
 - [Guia de desenvolvedores do Jetson Linux r39.2 — Energia e desempenho](https://docs.nvidia.com/jetson/archives/r39.2/DeveloperGuide/SD/PlatformPowerAndPerformance/JetsonOrinNanoSeriesJetsonOrinNxSeriesAndJetsonAgxOrinSeries.html) (verificado em 2026-09-26)
 - [Ultralytics — guia NVIDIA Jetson (benchmarks do fornecedor)](https://docs.ultralytics.com/guides/nvidia-jetson/) (verificado em 2026-09-26)
 
-*Estado: rascunho, pendente de revisão por cheny. Baseado na documentação
+*Estado: revisado em 2026-10-11. Baseado na documentação
 oficial da NVIDIA na data indicada; ainda não verificado em hardware físico
 pela Juxi Technology.*
 

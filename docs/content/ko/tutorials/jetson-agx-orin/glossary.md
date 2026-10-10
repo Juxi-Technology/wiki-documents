@@ -109,7 +109,7 @@ review_owner: cheny
 - [NVIDIA Jetson apt 저장소 — 실제 구성 요소 버전](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages) (2026-09-26 확인) — `nvidia-jetpack` 7.2.1 의존성 체인을 통해 확인했으며, [JetPack 다운로드 페이지](https://developer.nvidia.com/embedded/jetpack/downloads)의 요약 표는 뒤처져 있어 아직 CUDA 13.2.1 / VPI 4.1.3이 기재되어 있습니다
 - [Jetson AGX Orin 개발자 키트 사용자 가이드](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html) (2026-09-24 확인)
 
-*상태: 초안, cheny 검토 대기 중. 정의는 NVIDIA 문서와 업계 표준 용례를
+*상태: 2026-10-11 검토 완료. 정의는 NVIDIA 문서와 업계 표준 용례를
 바탕으로 정리했으며, 버전 번호는 명시된 날짜에 확인했습니다.*
 
 ---

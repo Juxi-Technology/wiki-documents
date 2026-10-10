@@ -68,7 +68,7 @@ dos primeros enlaces como los puntos de partida de referencia.
 - [JetPack SDK Downloads and Release Notes](https://developer.nvidia.com/embedded/jetpack/downloads) (consultado el 2026-09-23; advertencia sobre la tabla de componentes el 2026-09-26)
 - [Repositorio apt de NVIDIA Jetson — índice Packages](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages) — fuente de referencia para las versiones de los componentes instalados (consultado el 2026-09-26)
 
-*Estado: borrador, pendiente de revisión por cheny.*
+*Estado: revisado el 2026-10-11.*
 
 ---
 

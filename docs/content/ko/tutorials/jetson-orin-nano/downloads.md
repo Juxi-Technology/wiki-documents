@@ -103,7 +103,7 @@ review_owner: cheny
 - [TensorRT Edge-LLM 문서](https://nvidia.github.io/TensorRT-Edge-LLM/overview.html) · [DeepStream 9.1 설치 가이드](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_Installation.html) · [Jetson AI Lab](https://www.jetson-ai-lab.com/) · [SBSA 휠 인덱스](https://pypi.jetson-ai-lab.io/sbsa/cu130) (2026-09-26 확인)
 - [Juxi Technology 스토어 제품 페이지](https://www.juxitech.com/products/nvidia-jetson-orin-nano-super-development-kit) 및 [위키](https://wiki.juxitech.com/) (2026-09-26 확인)
 
-*상태: 초안, cheny 검토 대기 중.*
+*상태: 2026-10-11 검토 완료.*
 
 ---
 

@@ -128,7 +128,7 @@ projetar com base em uma ou outra.
 - [Guia do usuário do kit de desenvolvedor Jetson AGX Orin — Introdução](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html) (emulação de módulos; verificado em 2026-09-24)
 - [Documentação de instalação do ROS 2 Jazzy](https://docs.ros.org/en/jazzy/Installation.html)
 
-*Status: rascunho, pendente de revisão por cheny. A disponibilidade do
+*Status: revisado em 2026-10-11. A disponibilidade do
 ecossistema muda rapidamente — verifique novamente as páginas da NVIDIA
 vinculadas antes de confiar nesta tabela. Ainda não verificado em hardware
 físico pela Juxi Technology.*

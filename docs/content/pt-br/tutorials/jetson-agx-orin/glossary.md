@@ -110,7 +110,7 @@ Verifique sempre o que um sistema específico realmente executa: `cat /etc/nv_te
 - [Repositório apt do Jetson da NVIDIA — versões reais dos componentes](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages) (consultado em 2026-09-26) — pela cadeia de dependências do `nvidia-jetpack` 7.2.1; a tabela resumo da [página de downloads do JetPack](https://developer.nvidia.com/embedded/jetpack/downloads) está desatualizada (ainda lista CUDA 13.2.1 / VPI 4.1.3)
 - [Jetson AGX Orin Developer Kit User Guide](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html) (consultado em 2026-09-24)
 
-*Status: rascunho, pendente de revisão por cheny. Definições compiladas a partir
+*Status: revisado em 2026-10-11. Definições compiladas a partir
 da documentação da NVIDIA e do uso padrão do setor; os números de versão foram
 verificados na data indicada.*
 

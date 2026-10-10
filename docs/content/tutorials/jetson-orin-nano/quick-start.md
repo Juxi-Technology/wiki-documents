@@ -210,7 +210,7 @@ The default power mode is typically **25W**. For maximum performance, click the 
 - [JetPack SDK Downloads](https://developer.nvidia.com/embedded/jetpack/downloads) (checked 2026-09-26)
 - [Jetson Linux 39.2.1 Release Notes (PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) (checked 2026-09-26)
 
-*Status: draft, pending review by cheny. Grounded in NVIDIA's official documentation as of the dates listed; not yet verified on physical hardware by Juxi Technology.*
+*Status: reviewed on 2026-10-11. Grounded in NVIDIA's official documentation as of the dates listed; not yet verified on physical hardware by Juxi Technology.*
 
 **Image credits:** The images on this page are from NVIDIA's official *Jetson Orin Nano Developer Kit User Guide* (downloaded 2026-09-26) and remain © NVIDIA Corporation. They are reproduced here to illustrate the official setup flow.
 

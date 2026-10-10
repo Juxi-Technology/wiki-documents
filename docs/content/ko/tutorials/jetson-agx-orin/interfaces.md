@@ -111,7 +111,7 @@ Jetson ISO 설치 프로그램은 시스템을 eMMC 또는 NVMe에 설치할 수
 - [하드웨어 레이아웃 — Jetson AGX Orin Developer Kit 사용자 가이드](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/hardware_layout.html) (2026-09-23 확인)
 - 캐리어 보드 세부 사항은 *NVIDIA Jetson AGX Orin Developer Kit Carrier Board Specification* 문서를 참조하세요(NVIDIA [다운로드 페이지](https://developer.nvidia.com/embedded/downloads)에서 내려받을 수 있습니다)
 
-*상태: 초안, cheny의 검토 대기 중. 위 단계와 값은 명시된 날짜 기준 NVIDIA 공식 문서에 근거하며, 아직 Juxi Technology의 실제 하드웨어에서 검증되지 않았습니다.*
+*상태: 2026-10-11 검토 완료. 위 단계와 값은 명시된 날짜 기준 NVIDIA 공식 문서에 근거하며, 아직 Juxi Technology의 실제 하드웨어에서 검증되지 않았습니다.*
 
 **이미지 출처:** 레이아웃 다이어그램과 핀 배열 이미지는 NVIDIA 공식 *Jetson AGX Orin Developer Kit User Guide* 및 *Carrier Board Specification*(2026-09-23 다운로드)에서 가져온 것이며, 저작권은 © NVIDIA Corporation에 있습니다.
 

@@ -111,7 +111,7 @@ Jetson ISO インストーラーはシステムを eMMC または NVMe にイン
 - [ハードウェアレイアウト — Jetson AGX Orin 開発キットユーザーガイド](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/hardware_layout.html)(2026-09-23 確認)
 - キャリアボードの詳細は、*NVIDIA Jetson AGX Orin Developer Kit Carrier Board Specification*(NVIDIA の[ダウンロードページ](https://developer.nvidia.com/embedded/downloads)からリンク)を参照してください。
 
-*ステータス:ドラフト、cheny によるレビュー待ち。上記の手順と数値は、記載の日付時点の NVIDIA 公式ドキュメントに基づくものです。Juxi Technology による実機検証はまだ行われていません。*
+*ステータス: レビュー済み（2026-10-11）。上記の手順と数値は、記載の日付時点の NVIDIA 公式ドキュメントに基づくものです。Juxi Technology による実機検証はまだ行われていません。*
 
 **画像クレジット:** レイアウト図とピン配置図は、NVIDIA 公式の *Jetson AGX Orin Developer Kit User Guide* および *Carrier Board Specification*(2026-09-23 ダウンロード)からのものであり、著作権は © NVIDIA Corporation に帰属します。
 

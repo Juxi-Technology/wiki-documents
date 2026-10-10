@@ -212,7 +212,7 @@ Der Standard-Leistungsmodus ist typischerweise **25W**. Klicken Sie für maximal
 - [JetPack SDK Downloads](https://developer.nvidia.com/embedded/jetpack/downloads) (geprüft am 2026-09-26)
 - [Jetson Linux 39.2.1 Release Notes (PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) (geprüft am 2026-09-26)
 
-*Status: Entwurf, ausstehende Prüfung durch cheny. Basiert auf NVIDIAs offizieller Dokumentation mit Stand der oben genannten Daten; noch nicht von Juxi Technology auf physischer Hardware verifiziert.*
+*Status: geprüft am 2026-10-11. Basiert auf NVIDIAs offizieller Dokumentation mit Stand der oben genannten Daten; noch nicht von Juxi Technology auf physischer Hardware verifiziert.*
 
 **Bildnachweis:** Die Bilder auf dieser Seite stammen aus NVIDIAs offiziellem *Jetson Orin Nano Developer Kit User Guide* (heruntergeladen am 2026-09-26) und bleiben © NVIDIA Corporation. Sie sind hier wiedergegeben, um den offiziellen Einrichtungsablauf zu veranschaulichen.
 

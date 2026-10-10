@@ -207,7 +207,7 @@ TensorRT 三种导出格式使用 GPU——其他导出格式跑在 CPU 上。
 - [Jetson Linux r39.2 开发者指南——电源与性能](https://docs.nvidia.com/jetson/archives/r39.2/DeveloperGuide/SD/PlatformPowerAndPerformance/JetsonOrinNanoSeriesJetsonOrinNxSeriesAndJetsonAgxOrinSeries.html)（已于 2026-09-26 核查）
 - [Ultralytics——NVIDIA Jetson 指南（厂商基准）](https://docs.ultralytics.com/guides/nvidia-jetson/)（已于 2026-09-26 核查）
 
-*状态：草稿，待 cheny 审核。内容依据所列日期的 NVIDIA 官方文档；尚未由钜犀科技在实体硬件上验证。*
+*状态：已于 2026-10-11 审核。内容依据所列日期的 NVIDIA 官方文档；尚未由钜犀科技在实体硬件上验证。*
 
 ---
 

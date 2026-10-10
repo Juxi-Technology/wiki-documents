@@ -210,7 +210,7 @@ deliberately — see [Memory Efficiency for 8 GB](/tutorials/jetson-orin-nano/me
 - [jetson-containers (GitHub)](https://github.com/dusty-nv/jetson-containers) (checked 2026-09-26)
 - [Jetson AI Lab PyPI index — sbsa/cu130](https://pypi.jetson-ai-lab.io/sbsa/cu130) (checked 2026-09-26)
 
-*Status: draft, pending review by cheny. Grounded in NVIDIA's official
+*Status: reviewed on 2026-10-11. Grounded in NVIDIA's official
 documentation as of the date listed; not yet verified on physical hardware by
 Juxi Technology.*
 

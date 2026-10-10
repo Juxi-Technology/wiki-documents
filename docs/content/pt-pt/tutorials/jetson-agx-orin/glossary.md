@@ -111,7 +111,7 @@ Confirme sempre o que um sistema específico executa de facto: `cat /etc/nv_tegr
 - [Repositório apt da NVIDIA para Jetson — versões efetivas dos componentes](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages) (verificado em 2026-09-26) — através da cadeia de dependências do `nvidia-jetpack` 7.2.1; a tabela de resumo da [página de transferências do JetPack](https://developer.nvidia.com/embedded/jetpack/downloads) está desatualizada (ainda apresenta CUDA 13.2.1 / VPI 4.1.3)
 - [Jetson AGX Orin Developer Kit User Guide](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html) (verificado em 2026-09-24)
 
-*Estado: rascunho, pendente de revisão por cheny. Definições compiladas a partir
+*Estado: revisado em 2026-10-11. Definições compiladas a partir
 da documentação da NVIDIA e do uso padrão da indústria; os números de versão
 foram verificados na data indicada.*
 

@@ -93,7 +93,7 @@ NVIDIA 릴리스 노트 알려진 문제 **6236259**: AGX Orin 플랫폼에서�
 - [빠른 시작](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/quick_start.html) · [BSP 설치](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/setup_bsp.html) · [하드웨어 레이아웃](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/hardware_layout.html) — Jetson AGX Orin Developer Kit 사용자 가이드(2026-09-23 확인)
 - [Jetson Linux 39.2.0 릴리스 노트(PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf) (2026-09-23 확인)
 
-*상태: 초안, cheny 검토 대기 중. 고객이 보고하는 하드웨어별 동작은 다를 수 있으니,
+*상태: 2026-10-11 검토 완료. 고객이 보고하는 하드웨어별 동작은 다를 수 있으니,
 현장 보고가 들어오는 대로 이 페이지를 업데이트하십시오.*
 
 ---

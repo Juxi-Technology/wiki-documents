@@ -78,7 +78,7 @@ NVIDIA 的 [JetPack 下載頁面](https://developer.nvidia.com/embedded/jetpack/
 - [Jetson AGX Orin 開發者套件用戶指南——簡介](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html)(模組模擬；查核於 2026-09-24)
 - [ROS 2 Jazzy 安裝文檔](https://docs.ros.org/en/jazzy/Installation.html)
 
-*狀態：草稿，待 cheny 審核。生態可用性變化很快——在依賴本表之前，請重新查核文中連結的 NVIDIA 頁面。尚未由鉅犀科技在實體硬體上驗證。*
+*狀態：已於 2026-10-11 審核。生態可用性變化很快——在依賴本表之前，請重新查核文中連結的 NVIDIA 頁面。尚未由鉅犀科技在實體硬體上驗證。*
 
 ---
 

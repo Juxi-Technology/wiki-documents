@@ -130,7 +130,7 @@ Verifique el resultado: **[Verifique su sistema](/es/tutorials/jetson-agx-orin/v
 - [Jetson Linux 39.2.0 Release Notes (PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf) (consultado el 2026-09-23)
 - [NVIDIA SDK Manager](https://developer.nvidia.com/sdk-manager)
 
-*Estado: borrador, pendiente de revisión por cheny. Basado en la documentación
+*Estado: revisado el 2026-10-11. Basado en la documentación
 oficial de NVIDIA en la fecha indicada; aún no verificado en hardware físico
 por Juxi Technology.*
 

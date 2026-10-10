@@ -124,7 +124,7 @@ Utilisé pour le câblage de production et d'automatisation :
 - [Disposition matérielle — Guide de l'utilisateur du kit de développement Jetson AGX Orin](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/hardware_layout.html) (vérifié le 2026-09-23)
 - Pour les détails de la carte porteuse, consultez la *NVIDIA Jetson AGX Orin Developer Kit Carrier Board Specification* (liée depuis la [page de téléchargements](https://developer.nvidia.com/embedded/downloads) de NVIDIA)
 
-*Statut : brouillon, en attente de révision par cheny. Les étapes et valeurs
+*Statut : relu le 2026-10-11. Les étapes et valeurs
 ci-dessus s'appuient sur la documentation officielle de NVIDIA à la date
 indiquée ; pas encore vérifiées sur matériel physique par Juxi Technology.*
 

@@ -119,7 +119,7 @@ NVIDIA 公布了 64GB 模块在 JetPack 7.2 下的以下 tokens/sec 数据（202
 - [TensorRT Edge-LLM 文档主页](https://nvidia.github.io/TensorRT-Edge-LLM/)（v0.10.1，已于 2026-09-24 核查）
 - [NVIDIA 技术博客——借助 JetPack 7.2 的内存效率在边缘部署智能体就绪的 AI](https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2)（性能数据；已于 2026-09-24 核查）
 
-*状态：草稿，待 cheny 审核。内容依据所列日期的 NVIDIA 官方文档；
+*状态：已于 2026-10-11 审核。内容依据所列日期的 NVIDIA 官方文档；
 尚未由钜犀科技在实体硬件上验证。*
 
 ---

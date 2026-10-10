@@ -131,7 +131,7 @@ NVIDIA 공식 [문제 해결 페이지](https://docs.nvidia.com/jetson/orin-nano
 - NVIDIA developer forums — [boot hang / skipped username setup thread](https://forums.developer.nvidia.com/t/jetson-orin-nano-super-dev-kit-boot-hangs-after-jetpack-7-2-installation-on-nvme-ssd-installer-skips-username-password-setup/380410), [25W / MAXN SUPER thread](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627) (2026-09-26 확인)
 - [Juxi Technology store listing — Jetson Orin Nano Super Developer Kit](https://www.juxitech.com/products/nvidia-jetson-orin-nano-super-development-kit) (2026-09-26 확인)
 
-*상태: 초안, cheny 검토 대기 중.*
+*상태: 2026-10-11 검토 완료.*
 
 ---
 

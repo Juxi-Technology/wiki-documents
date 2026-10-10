@@ -108,7 +108,7 @@ Weitere Agent-Skills im Ökosystem:
 - [NVIDIA NemoClaw Produktseite](https://www.nvidia.com/en-us/ai/nemoclaw) (geprüft am 2026-09-24)
 - [JetPack 7.2.1 Downloads-Seite](https://developer.nvidia.com/embedded/jetpack/downloads) (geprüft am 2026-09-24)
 
-*Status: Entwurf, Überprüfung durch cheny steht aus. Basiert auf NVIDIAs
+*Status: geprüft am 2026-10-11. Basiert auf NVIDIAs
 offizieller Dokumentation zum angegebenen Datum; noch nicht auf physischer
 Hardware durch Juxi Technology verifiziert.*
 

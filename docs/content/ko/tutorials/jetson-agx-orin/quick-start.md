@@ -166,7 +166,7 @@ SDK Manager는 USB를 통해 호스트 PC에서 JetPack 구성 요소를 설치�
 - [Jetson AGX Orin Developer Kit User Guide — JetPack SDK Setup](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/setup_jetpack.html) (2026-09-23 확인)
 - [BSP Installation (SDK Manager / flash script)](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/setup_bsp.html)
 
-*상태: 초안. 이 단계들은 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았으며, 위 날짜 기준 NVIDIA 공식 문서에 근거합니다.*
+*상태: 2026-10-11 검토 완료. 이 단계들은 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았으며, 위 날짜 기준 NVIDIA 공식 문서에 근거합니다.*
 
 **이미지 출처:** 이 페이지의 모든 스크린샷은 NVIDIA 공식 *Jetson AGX Orin Developer Kit User Guide*(2026-09-23 다운로드)에서 가져온 것이며 저작권은 © NVIDIA Corporation에 있습니다. 공식 설정 흐름을 설명하기 위해 여기에 수록했습니다.
 

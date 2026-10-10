@@ -111,7 +111,7 @@ NVIDIA 並未公布整體設定時間。官方說明指出，畫面上可能會�
 - NVIDIA developer forums — [開機卡住／跳過使用者名稱設定討論串](https://forums.developer.nvidia.com/t/jetson-orin-nano-super-dev-kit-boot-hangs-after-jetpack-7-2-installation-on-nvme-ssd-installer-skips-username-password-setup/380410)、[25W／MAXN SUPER 討論串](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627)（查閱於 2026-09-26）
 - [鉅犀科技商店頁面——Jetson Orin Nano Super Developer Kit](https://www.juxitech.com/products/nvidia-jetson-orin-nano-super-development-kit)（查閱於 2026-09-26）
 
-*狀態：草稿，待 cheny 審核。*
+*狀態：已於 2026-10-11 審核。*
 
 ---
 

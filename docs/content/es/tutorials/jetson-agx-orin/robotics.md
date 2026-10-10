@@ -128,7 +128,7 @@ en torno a cualquiera de las dos.
 - [Jetson AGX Orin Developer Kit User Guide — Introduction](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html) (emulación de módulos; consultado el 2026-09-24)
 - [Documentación de instalación de ROS 2 Jazzy](https://docs.ros.org/en/jazzy/Installation.html)
 
-*Estado: borrador, pendiente de revisión por cheny. La disponibilidad del
+*Estado: revisado el 2026-10-11. La disponibilidad del
 ecosistema cambia rápidamente — vuelva a consultar las páginas de NVIDIA
 enlazadas antes de basarse en esta tabla. Aún no verificada en hardware físico
 por Juxi Technology.*

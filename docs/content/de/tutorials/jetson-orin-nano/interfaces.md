@@ -213,7 +213,7 @@ Der Button-Header trägt die Funktionen serielle Konsole, Reset und Force-Recove
 - [Jetson Orin product family — developer.nvidia.com](https://developer.nvidia.com/embedded/jetson-orin) (geprüft am 2026-09-26)
 - [NVIDIA Developer Forums — „Slow Wi-Fi on Orin Nano DevKit (RTL8822CE)“, Community-Thread](https://forums.developer.nvidia.com/t/slow-wi-fi-on-orin-nano-devkit-rtl8822ce-802-11ac/368697) (geprüft am 2026-09-26)
 
-*Status: Entwurf, ausstehende Prüfung durch cheny. Basiert auf NVIDIAs offizieller
+*Status: geprüft am 2026-10-11. Basiert auf NVIDIAs offizieller
 Dokumentation mit Stand der oben genannten Daten; noch nicht von Juxi Technology auf physischer Hardware
 verifiziert.*
 

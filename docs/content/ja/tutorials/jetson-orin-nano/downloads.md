@@ -110,7 +110,7 @@ Super Developer Kit(8GB)** 向けの NVIDIA 公式ダウンロードとドキュ
 - [TensorRT Edge-LLM ドキュメント](https://nvidia.github.io/TensorRT-Edge-LLM/overview.html) · [DeepStream 9.1 インストールガイド](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_Installation.html) · [Jetson AI Lab](https://www.jetson-ai-lab.com/) · [SBSA ホイールインデックス](https://pypi.jetson-ai-lab.io/sbsa/cu130)(2026-09-26 確認)
 - [Juxi Technology ストア製品ページ](https://www.juxitech.com/products/nvidia-jetson-orin-nano-super-development-kit)と [wiki](https://wiki.juxitech.com/)(2026-09-26 確認)
 
-*ステータス:ドラフト、cheny によるレビュー待ち。*
+*ステータス: レビュー済み（2026-10-11）。*
 
 ---
 

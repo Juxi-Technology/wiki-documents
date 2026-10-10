@@ -214,7 +214,7 @@ O header de botões concentra as funções de console serial, reset e force reco
 - [Família de produtos Jetson Orin — developer.nvidia.com](https://developer.nvidia.com/embedded/jetson-orin) (verificado em 2026-09-26)
 - [Fóruns de desenvolvedores NVIDIA — "Slow Wi-Fi on Orin Nano DevKit (RTL8822CE)", tópico da comunidade](https://forums.developer.nvidia.com/t/slow-wi-fi-on-orin-nano-devkit-rtl8822ce-802-11ac/368697) (verificado em 2026-09-26)
 
-*Status: rascunho, pendente de revisão por cheny. Baseado na documentação oficial da NVIDIA nas
+*Status: revisado em 2026-10-11. Baseado na documentação oficial da NVIDIA nas
 datas indicadas; ainda não verificado em hardware físico pela Juxi Technology.*
 
 **Créditos das imagens:** as imagens de layout são do *Jetson Orin Nano

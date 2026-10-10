@@ -52,7 +52,7 @@ pour savoir ce que vous exécutez, consultez **[Vérifier votre système](/fr/tu
 - [Téléchargements du SDK JetPack](https://developer.nvidia.com/embedded/jetpack/downloads) (vérifié le 2026-09-24)
 - [Notes de version de Jetson Linux 39.2.0 (PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf) (vérifié le 2026-09-24)
 
-*Statut : brouillon, en attente de relecture par cheny.*
+*Statut : relu le 2026-10-11.*
 
 ---
 

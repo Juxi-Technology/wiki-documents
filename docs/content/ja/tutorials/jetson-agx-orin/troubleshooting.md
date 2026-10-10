@@ -95,7 +95,7 @@ systemd の初期化中に EMC 周波数を最大値未満に下げると(15W �
 - [クイックスタート](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/quick_start.html) · [BSP のインストール](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/setup_bsp.html) · [ハードウェアレイアウト](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/hardware_layout.html) — Jetson AGX Orin Developer Kit ユーザーガイド(2026-09-23 確認)
 - [Jetson Linux 39.2.0 リリースノート(PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf)(2026-09-23 確認)
 
-*ステータス:ドラフト、cheny によるレビュー待ち。お客様から報告される
+*ステータス: レビュー済み（2026-10-11）。お客様から報告される
 ハードウェア固有の動作は異なる場合があります。現場からの報告が届き次第、
 このページを更新してください。*
 

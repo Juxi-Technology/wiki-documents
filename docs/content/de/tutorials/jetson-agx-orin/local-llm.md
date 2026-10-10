@@ -101,7 +101,7 @@ Wenn der Export-/Build-Workflow von Edge-LLM für Ihren aktuellen Bedarf zu aufw
 - [TensorRT Edge-LLM — Dokumentations-Startseite](https://nvidia.github.io/TensorRT-Edge-LLM/) (v0.10.1, geprüft am 2026-09-24)
 - [NVIDIA Technical Blog — Deploy Agentic-Ready AI at the Edge with Memory Efficiency in JetPack 7.2](https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2) (Leistungswerte; geprüft am 2026-09-24)
 
-*Status: Entwurf, ausstehende Prüfung durch cheny. Basiert auf der offiziellen Dokumentation von NVIDIA zum angegebenen Datum; noch nicht von Juxi Technology auf physischer Hardware verifiziert.*
+*Status: geprüft am 2026-10-11. Basiert auf der offiziellen Dokumentation von NVIDIA zum angegebenen Datum; noch nicht von Juxi Technology auf physischer Hardware verifiziert.*
 
 ---
 

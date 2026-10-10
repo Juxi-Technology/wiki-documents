@@ -235,7 +235,7 @@ est un reflashage depuis un hôte avec la configuration Super — cela conserve
 - [Forum des développeurs NVIDIA — problème d'accélération GPU sous JetPack 7.2](https://forums.developer.nvidia.com/t/jetpack-7-2-gpu-acceleration-issue/372521) — personnel NVIDIA : voie de rétrogradation et index de wheels CUDA 13.2 (vérifié le 2026-09-26)
 - [Forum des développeurs NVIDIA — 25W et MAXN SUPER absents sous JetPack 7.2](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627) — personnel NVIDIA et utilisateurs : vérification TNSPEC `-super`, reflashage depuis un hôte (vérifié le 2026-09-26)
 
-*Statut : brouillon, en attente de relecture par cheny. Fondé sur la
+*Statut : relu le 2026-10-11. Fondé sur la
 documentation officielle NVIDIA et les déclarations du forum des développeurs
 à la date indiquée ; pas encore vérifié sur matériel physique par Juxi
 Technology. La liste de reconstruction décrit des conséquences standard de la

@@ -213,7 +213,7 @@ Il connettore dei pulsanti porta le funzioni di console seriale, reset e force r
 - [Jetson Orin product family — developer.nvidia.com](https://developer.nvidia.com/embedded/jetson-orin) (verificato il 2026-09-26)
 - [NVIDIA Developer Forums — "Slow Wi-Fi on Orin Nano DevKit (RTL8822CE)", community thread](https://forums.developer.nvidia.com/t/slow-wi-fi-on-orin-nano-devkit-rtl8822ce-802-11ac/368697) (verificato il 2026-09-26)
 
-*Stato: bozza, in attesa di revisione da parte di cheny. Basato sulla documentazione ufficiale
+*Stato: rivisto il 2026-10-11. Basato sulla documentazione ufficiale
 NVIDIA alle date indicate; non ancora verificato su hardware fisico da
 Juxi Technology.*
 

@@ -296,7 +296,7 @@ rischio documentato di esaurimento memoria intorno all'immagine sandbox di circa
 - [NVIDIA — Build a Claw ("Install OpenClaw on Your NVIDIA Jetson Orin Nano™")](https://www.nvidia.com/en-us/ai/build-a-claw/) (verificato il 2026-09-26)
 - [Pagina dei download di JetPack 7.2.1 (la matrice dei componenti elenca Isaac ROS come "in arrivo")](https://developer.nvidia.com/embedded/jetpack/downloads) (verificato il 2026-09-26)
 
-*Stato: bozza, in attesa di revisione da parte di cheny. La disponibilità
+*Stato: rivisto il 2026-10-11. La disponibilità
 dell'ecosistema cambia rapidamente — ricontrolli le pagine NVIDIA e a monte
 collegate prima di fare affidamento su questa tabella. Non ancora verificato su
 hardware fisico da Juxi Technology.*

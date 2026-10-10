@@ -168,7 +168,7 @@ sudo /usr/sbin/nvpmodel -q
 - [NVIDIA 论坛——JetPack 7.2 中看不到 25W 与 MAXN SUPER](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627) · [电源模式问题仍在继续](https://forums.developer.nvidia.com/t/continuing-power-mode-issues-on-jetpack-7-2/375435) · [Super Mode 未解锁](https://forums.developer.nvidia.com/t/jetpack-7-2-l4t-39-2-gpu-frequency-stuck-at-624-mhz-on-orin-nano-8gb-p3767-0005-bpmp-hard-limit-super-mode-not-unlocking/377003)（核对于 2026-09-26；含 NVIDIA 员工回复）
 - [PyPI 上的 jetson-stats（jtop）](https://pypi.org/project/jetson-stats/) · [Jetson AI Lab](https://www.jetson-ai-lab.com/)（核对于 2026-09-26；jtop 安装的社区来源）
 
-*状态：草稿，待 cheny 审核。内容基于截至所列日期的 NVIDIA 官方文档与 NVIDIA 论坛来源；尚未由钜犀科技在实体硬件上验证。*
+*状态：已于 2026-10-11 审核。内容基于截至所列日期的 NVIDIA 官方文档与 NVIDIA 论坛来源；尚未由钜犀科技在实体硬件上验证。*
 
 ---
 

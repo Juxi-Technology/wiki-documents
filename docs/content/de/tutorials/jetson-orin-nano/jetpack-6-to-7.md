@@ -231,7 +231,7 @@ mit der Super-Konfiguration — das behält 7.x. Siehe
 - [NVIDIA developer forum — JetPack 7.2 GPU acceleration issue](https://forums.developer.nvidia.com/t/jetpack-7-2-gpu-acceleration-issue/372521) — NVIDIA-Mitarbeiter: Downgrade-Weg und CUDA-13.2-Wheel-Index (geprüft am 2026-09-26)
 - [NVIDIA developer forum — 25W and MAXN SUPER not seen in JetPack 7.2](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627) — NVIDIA-Mitarbeiter und Nutzer: TNSPEC-Prüfung auf `-super`, Host-Neu-Flash (geprüft am 2026-09-26)
 
-*Status: Entwurf, Überprüfung durch cheny ausstehend. Basiert auf NVIDIAs
+*Status: geprüft am 2026-10-11. Basiert auf NVIDIAs
 offizieller Dokumentation und Aussagen im Entwicklerforum zum angegebenen
 Datum; noch nicht von Juxi Technology auf physischer Hardware verifiziert. Die
 Liste der Neuaufbauten beschreibt Standardfolgen der Plattform — validieren

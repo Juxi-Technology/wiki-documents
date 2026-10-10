@@ -113,7 +113,7 @@ Deux faits propres à l'Orin Nano sont à connaître avant tout téléchargement
 - [Documentation TensorRT Edge-LLM](https://nvidia.github.io/TensorRT-Edge-LLM/overview.html) · [Guide d'installation de DeepStream 9.1](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_Installation.html) · [Jetson AI Lab](https://www.jetson-ai-lab.com/) · [Index de wheels SBSA](https://pypi.jetson-ai-lab.io/sbsa/cu130) (vérifié le 2026-09-26)
 - [Fiche produit de la boutique Juxi Technology](https://www.juxitech.com/products/nvidia-jetson-orin-nano-super-development-kit) et [wiki](https://wiki.juxitech.com/) (vérifié le 2026-09-26)
 
-*Statut : brouillon, en attente de relecture par cheny.*
+*Statut : relu le 2026-10-11.*
 
 ---
 

@@ -96,7 +96,7 @@ multimedia, grafica, connettività, display e stack di calcolo:
 - [Quick Start](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/quick_start.html) · [BSP Installation](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/setup_bsp.html) · [Hardware Layout](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/hardware_layout.html) — Jetson AGX Orin Developer Kit User Guide (verificato il 2026-09-23)
 - [Jetson Linux 39.2.0 Release Notes (PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf) (verificato il 2026-09-23)
 
-*Stato: bozza, in attesa di revisione da parte di cheny. Il comportamento
+*Stato: rivisto il 2026-10-11. Il comportamento
 specifico dell'hardware segnalato dai clienti può variare; aggiornare questa
 pagina man mano che arrivano le segnalazioni dal campo.*
 

@@ -236,7 +236,7 @@ exportación se ejecutan en la CPU.
 - [Guía para desarrolladores de Jetson Linux r39.2 — Alimentación y rendimiento](https://docs.nvidia.com/jetson/archives/r39.2/DeveloperGuide/SD/PlatformPowerAndPerformance/JetsonOrinNanoSeriesJetsonOrinNxSeriesAndJetsonAgxOrinSeries.html) (consultado el 2026-09-26)
 - [Ultralytics — guía de NVIDIA Jetson (benchmarks del proveedor)](https://docs.ultralytics.com/guides/nvidia-jetson/) (consultado el 2026-09-26)
 
-*Estado: borrador, pendiente de revisión por cheny. Basado en la documentación
+*Estado: revisado el 2026-10-11. Basado en la documentación
 oficial de NVIDIA a la fecha indicada; aún no verificado en hardware físico
 por Juxi Technology.*
 

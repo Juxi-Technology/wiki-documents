@@ -135,7 +135,7 @@ avant de concevoir autour de l'une ou de l'autre.
 - [Jetson AGX Orin Developer Kit User Guide — Introduction](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html) (émulation de module ; vérifié le 2026-09-24)
 - [Documentation d'installation de ROS 2 Jazzy](https://docs.ros.org/en/jazzy/Installation.html)
 
-*Statut : brouillon, en attente de relecture par cheny. La disponibilité dans
+*Statut : relu le 2026-10-11. La disponibilité dans
 l'écosystème évolue rapidement — recontrôlez les pages NVIDIA liées avant de
 vous fier à ce tableau. Pas encore vérifié sur matériel physique par Juxi
 Technology.*

@@ -142,7 +142,7 @@ NVIDIA® Jetson Orin Nano™ Super 開発キットは、Jetson Orin ファミリ
 - [Jetson Orin Nano Super Developer Kit データシート(PDF、nvidia.com からリンク)](https://dam-cdn.nvd.orangelogic.com/AssetLink/2ug686w80406gxf6q8uv7r3l7265m2n8.pdf) (2026-09-26 確認)
 - [Juxi Technology ストア商品ページ](https://www.juxitech.com/products/nvidia-jetson-orin-nano-super-development-kit) (2026-09-26 確認)
 
-*ステータス:ドラフト、cheny によるレビュー待ち。記載の日付時点の NVIDIA 公式
+*ステータス: レビュー済み（2026-10-11）。記載の日付時点の NVIDIA 公式
 ドキュメントに基づいており、Juxi Technology による実機検証はまだ行われていません。*
 
 ---

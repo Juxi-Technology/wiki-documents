@@ -49,7 +49,7 @@ review_owner: cheny
 - [Jetson Linux 39.2.1 リリースノート(PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf)(2026-09-26 確認)
 - [NVIDIA JetPack 6.2 アナウンス — Jetson Orin Nano の Super モード](https://developer.nvidia.com/blog/nvidia-jetpack-6-2-brings-super-mode-to-nvidia-jetson-orin-nano-and-jetson-orin-nx-modules/)(Super 電力モードのベンダー発表としてリンク)
 
-*ステータス:ドラフト、cheny によるレビュー待ち。記載日時点の NVIDIA 公式
+*ステータス: レビュー済み（2026-10-11）。記載日時点の NVIDIA 公式
 ドキュメントに基づく内容であり、Juxi Technology による実機検証はまだ行われていません。*
 
 ---

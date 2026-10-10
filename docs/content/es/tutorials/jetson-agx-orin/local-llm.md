@@ -132,7 +132,7 @@ tutoriales más antiguos.
 - [Página de inicio de la documentación de TensorRT Edge-LLM](https://nvidia.github.io/TensorRT-Edge-LLM/) (v0.10.1, consultada el 2026-09-24)
 - [Blog técnico de NVIDIA — Despliegue IA preparada para agentes en el borde con eficiencia de memoria en JetPack 7.2](https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2) (cifras de rendimiento; consultado el 2026-09-24)
 
-*Estado: borrador, pendiente de revisión por cheny. Basado en la documentación
+*Estado: revisado el 2026-10-11. Basado en la documentación
 oficial de NVIDIA a la fecha indicada; aún no verificado en hardware físico por
 Juxi Technology.*
 

@@ -226,7 +226,7 @@ TensorRT Edge-LLM の公式 Orin Nano 8GB ベンチマークは 2B までのモ�
 - NVIDIA 開発者フォーラム — [起動ハング/ユーザー名セットアップのスキップに関するスレッド](https://forums.developer.nvidia.com/t/jetson-orin-nano-super-dev-kit-boot-hangs-after-jetpack-7-2-installation-on-nvme-ssd-installer-skips-username-password-setup/380410)、[25W / MAXN SUPER に関するスレッド](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627)(2026-09-26 確認)
 - [Juxi Technology ストア掲載 — Jetson Orin Nano Super Developer Kit](https://www.juxitech.com/products/nvidia-jetson-orin-nano-super-development-kit)(2026-09-26 確認)
 
-*ステータス:ドラフト、cheny によるレビュー待ち。*
+*ステータス: レビュー済み（2026-10-11）。*
 
 ---
 

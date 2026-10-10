@@ -164,7 +164,7 @@ NVIDIA スタッフは Orin Nano + JetPack 7.2 + Ollama のフローを開発者
 - [Isaac ROS — Getting Started](https://nvidia-isaac-ros.github.io/getting_started/index.html)と[リリースノート](https://nvidia-isaac-ros.github.io/releases/index.html)(2026-09-26 確認)
 - [Jetson Linux r39.2.1 リリースノート(PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf)(2026-09-26 確認)— 「ビデオパイプライン向けエージェントスキル」の新機能項目。
 
-*ステータス:ドラフト、cheny によるレビュー待ち。記載した日付時点の NVIDIA 公式ドキュメント、NVIDIA 開発者フォーラムの投稿、Jetson AI Lab のベンダーガイドに基づいています。Juxi Technology による実機検証はまだ行われていません。*
+*ステータス: レビュー済み（2026-10-11）。記載した日付時点の NVIDIA 公式ドキュメント、NVIDIA 開発者フォーラムの投稿、Jetson AI Lab のベンダーガイドに基づいています。Juxi Technology による実機検証はまだ行われていません。*
 
 ---
 

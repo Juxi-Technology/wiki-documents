@@ -103,7 +103,7 @@ JetPack 7.2 には **エージェントスキル**が同梱されています:Je
 - [NVIDIA NemoClaw 製品ページ](https://www.nvidia.com/en-us/ai/nemoclaw)(2026-09-24 確認)
 - [JetPack 7.2.1 ダウンロードページ](https://developer.nvidia.com/embedded/jetpack/downloads)(2026-09-24 確認)
 
-*ステータス: ドラフト、cheny によるレビュー待ち。記載した日付時点の NVIDIA 公式
+*ステータス: レビュー済み（2026-10-11）。記載した日付時点の NVIDIA 公式
 ドキュメントに基づいています。Juxi Technology による実機検証はまだ行われていません。*
 
 ---

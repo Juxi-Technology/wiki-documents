@@ -214,7 +214,7 @@ Le connecteur des boutons porte les fonctions de console série, de réinitialis
 - [Gamme Jetson Orin — developer.nvidia.com](https://developer.nvidia.com/embedded/jetson-orin) (vérifié le 2026-09-26)
 - [Forums développeurs NVIDIA — « Slow Wi-Fi on Orin Nano DevKit (RTL8822CE) », fil communautaire](https://forums.developer.nvidia.com/t/slow-wi-fi-on-orin-nano-devkit-rtl8822ce-802-11ac/368697) (vérifié le 2026-09-26)
 
-*Statut : brouillon, en attente de révision par cheny. Fondé sur la documentation officielle de NVIDIA
+*Statut : relu le 2026-10-11. Fondé sur la documentation officielle de NVIDIA
 aux dates indiquées ; pas encore vérifié sur matériel physique par Juxi Technology.*
 
 **Crédits images :** les schémas de disposition proviennent du *Jetson Orin

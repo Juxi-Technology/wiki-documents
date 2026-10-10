@@ -278,7 +278,7 @@ non l'unico.
 - [Isaac ROS — Getting Started](https://nvidia-isaac-ros.github.io/getting_started/index.html) e [note di rilascio](https://nvidia-isaac-ros.github.io/releases/index.html) (verificato il 2026-09-26)
 - [Jetson Linux r39.2.1 Release Notes (PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) (verificato il 2026-09-26) — la voce "Agent skills for video pipelines" tra le novità.
 
-*Stato: bozza, in attesa di revisione da parte di cheny. Basato sulla
+*Stato: rivisto il 2026-10-11. Basato sulla
 documentazione ufficiale di NVIDIA, su post dei forum per sviluppatori NVIDIA e
 sulla guida del fornitore Jetson AI Lab, alle date indicate; non ancora
 verificato su hardware fisico da Juxi Technology.*

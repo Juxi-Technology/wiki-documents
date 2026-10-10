@@ -232,7 +232,7 @@ dimensionieren Sie KV-Cache und Kontext bewusst — siehe
 - [jetson-containers (GitHub)](https://github.com/dusty-nv/jetson-containers) (geprüft am 2026-09-26)
 - [Jetson AI Lab PyPI-Index — sbsa/cu130](https://pypi.jetson-ai-lab.io/sbsa/cu130) (geprüft am 2026-09-26)
 
-*Status: Entwurf, ausstehende Prüfung durch cheny. Basiert auf der offiziellen
+*Status: geprüft am 2026-10-11. Basiert auf der offiziellen
 Dokumentation von NVIDIA zum angegebenen Datum; noch nicht von Juxi Technology
 auf physischer Hardware verifiziert.*
 

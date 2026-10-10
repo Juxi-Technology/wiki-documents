@@ -146,7 +146,7 @@ Jetson 向けの公式 DeepStream 9.1 パフォーマンスページが扱うプ
 - [Jetson Linux r39.2 開発者ガイド — 電力とパフォーマンス](https://docs.nvidia.com/jetson/archives/r39.2/DeveloperGuide/SD/PlatformPowerAndPerformance/JetsonOrinNanoSeriesJetsonOrinNxSeriesAndJetsonAgxOrinSeries.html)(2026-09-26 確認)
 - [Ultralytics — NVIDIA Jetson ガイド(ベンダーベンチマーク)](https://docs.ultralytics.com/guides/nvidia-jetson/)(2026-09-26 確認)
 
-*ステータス:ドラフト、cheny によるレビュー待ち。記載した日付時点の NVIDIA 公式ドキュメントに基づいています。Juxi Technology による実機検証はまだ行われていません。*
+*ステータス: レビュー済み（2026-10-11）。記載した日付時点の NVIDIA 公式ドキュメントに基づいています。Juxi Technology による実機検証はまだ行われていません。*
 
 ---
 

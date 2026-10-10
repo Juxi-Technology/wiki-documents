@@ -110,7 +110,7 @@ Always check what a specific system actually runs: `cat /etc/nv_tegra_release`.
 - [NVIDIA Jetson apt repository — actual component versions](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages) (checked 2026-09-26) — via the `nvidia-jetpack` 7.2.1 dependency chain; the [JetPack downloads page](https://developer.nvidia.com/embedded/jetpack/downloads) summary table lags (still lists CUDA 13.2.1 / VPI 4.1.3)
 - [Jetson AGX Orin Developer Kit User Guide](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html) (checked 2026-09-24)
 
-*Status: draft, pending review by cheny. Definitions compiled from NVIDIA
+*Status: reviewed on 2026-10-11. Definitions compiled from NVIDIA
 documentation and standard industry usage; version numbers checked on the date
 listed.*
 

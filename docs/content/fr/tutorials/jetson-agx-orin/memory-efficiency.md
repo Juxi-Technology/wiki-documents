@@ -104,7 +104,7 @@ charge officielle.)*
 - [Blog technique NVIDIA — efficacité mémoire et compétences d'agent dans JetPack 7.2](https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2) (vérifié le 2026-09-24)
 - [Documentation TensorRT Edge-LLM](https://nvidia.github.io/TensorRT-Edge-LLM/) (fonctionnalités et matrice de prise en charge ; vérifié le 2026-09-24)
 
-*Statut : brouillon, en attente de relecture par cheny. Fondé sur la
+*Statut : relu le 2026-10-11. Fondé sur la
 documentation officielle NVIDIA à la date indiquée ; pas encore vérifié sur
 matériel physique par Juxi Technology.*
 

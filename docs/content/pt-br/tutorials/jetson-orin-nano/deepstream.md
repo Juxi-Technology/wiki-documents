@@ -235,7 +235,7 @@ TensorRT usam a GPU — outros formatos de exportação rodam na CPU.
 - [Guia do desenvolvedor do Jetson Linux r39.2 — Power and Performance](https://docs.nvidia.com/jetson/archives/r39.2/DeveloperGuide/SD/PlatformPowerAndPerformance/JetsonOrinNanoSeriesJetsonOrinNxSeriesAndJetsonAgxOrinSeries.html) (verificado em 2026-09-26)
 - [Ultralytics — guia NVIDIA Jetson (benchmarks do fabricante)](https://docs.ultralytics.com/guides/nvidia-jetson/) (verificado em 2026-09-26)
 
-*Status: rascunho, pendente de revisão por cheny. Baseado na documentação
+*Status: revisado em 2026-10-11. Baseado na documentação
 oficial da NVIDIA na data indicada; ainda não verificado em hardware físico
 pela Juxi Technology.*
 

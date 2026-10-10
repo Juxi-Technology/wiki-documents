@@ -84,7 +84,7 @@ NVIDIA 發行說明中的已知問題 **6236259**：在 AGX Orin 平台上，於
 - [快速開始](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/quick_start.html) · [BSP 安裝](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/setup_bsp.html) · [硬體佈局](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/hardware_layout.html)——Jetson AGX Orin 開發者套件使用者指南（已於 2026-09-23 核對）
 - [Jetson Linux 39.2.0 發行說明（PDF）](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf)（已於 2026-09-23 核對）
 
-*狀態：草稿，待 cheny 審核。客戶回報的硬體相關行為可能存在差異；請根據陸續收到的現場回報更新本頁。*
+*狀態：已於 2026-10-11 審核。客戶回報的硬體相關行為可能存在差異；請根據陸續收到的現場回報更新本頁。*
 
 ---
 

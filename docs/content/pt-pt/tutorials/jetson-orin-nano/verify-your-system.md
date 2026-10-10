@@ -232,7 +232,7 @@ alternativa com ficheiros de configuração. Apoio da Juxi:
 - [Fórum NVIDIA — 25W e MAXN SUPER não aparecem no JetPack 7.2](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627) · [problemas contínuos de modos de alimentação](https://forums.developer.nvidia.com/t/continuing-power-mode-issues-on-jetpack-7-2/375435) · [Modo Super não desbloqueia](https://forums.developer.nvidia.com/t/jetpack-7-2-l4t-39-2-gpu-frequency-stuck-at-624-mhz-on-orin-nano-8gb-p3767-0005-bpmp-hard-limit-super-mode-not-unlocking/377003) (verificado em 2026-09-26; inclui respostas de funcionários da NVIDIA)
 - [jetson-stats (jtop) no PyPI](https://pypi.org/project/jetson-stats/) · [Jetson AI Lab](https://www.jetson-ai-lab.com/) (verificado em 2026-09-26; fontes da comunidade para a instalação do jtop)
 
-*Estado: rascunho, pendente de revisão por cheny. Baseado na documentação
+*Estado: revisado em 2026-10-11. Baseado na documentação
 oficial da NVIDIA e em fontes dos fóruns da NVIDIA nas datas indicadas; ainda
 não verificado em hardware físico pela Juxi Technology.*
 

@@ -90,7 +90,7 @@ review_owner: cheny
 - [JetPack SDK 下载](https://developer.nvidia.com/embedded/jetpack/downloads)(检查于 2026-09-23)——⚠️ 其组件表在部分行上滞后;7.2.1 系统实际安装的版本请参见[验证你的系统](/zh-hans/tutorials/jetson-agx-orin/verify-your-system)
 - [Seeed Studio JetPack 7.2 资源中心](https://wiki.seeedstudio.com/jetpack_7_2_resource_hub/)——次要来源;仅用于迁移主题的组织(检查于 2026-09-23)
 
-*状态:草稿,待 cheny 审核。内容依据所列日期的 NVIDIA 官方
+*状态:已于 2026-10-11 审核。内容依据所列日期的 NVIDIA 官方
 文档;尚未由钜犀科技在实机上验证。重新构建清单描述的是平台层面的标准后果
 (内核/TensorRT/CUDA 版本变更)——请结合你自己的软件栈进行验证。*
 

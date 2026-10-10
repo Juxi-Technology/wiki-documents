@@ -230,7 +230,7 @@ Consulte [Flasheo y actualizaciones](/es/tutorials/jetson-orin-nano/flashing-and
 - [Foro de desarrolladores de NVIDIA — problema de aceleración por GPU en JetPack 7.2](https://forums.developer.nvidia.com/t/jetpack-7-2-gpu-acceleration-issue/372521) — el personal de NVIDIA: vía de degradación e índice de wheels de CUDA 13.2 (consultado el 2026-09-26)
 - [Foro de desarrolladores de NVIDIA — 25W y MAXN SUPER no aparecen en JetPack 7.2](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627) — personal y usuarios de NVIDIA: comprobación del TNSPEC `-super`, reflasheo desde host (consultado el 2026-09-26)
 
-*Estado: borrador, pendiente de revisión por cheny. Basado en la documentación
+*Estado: revisado el 2026-10-11. Basado en la documentación
 oficial de NVIDIA y en declaraciones del foro de desarrolladores a la fecha
 indicada; aún no verificado en hardware físico por Juxi Technology. La lista
 de recompilación describe consecuencias estándar de la plataforma — valídela

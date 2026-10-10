@@ -198,7 +198,7 @@ JP 6.2.2。”一位用户确认完成了往返（重刷到 6.2.2，再升级回
 - [NVIDIA 开发者论坛——JetPack 7.2 GPU 加速问题](https://forums.developer.nvidia.com/t/jetpack-7-2-gpu-acceleration-issue/372521) — NVIDIA 员工：降级路径与 CUDA 13.2 wheel 索引（核查于 2026-09-26）
 - [NVIDIA 开发者论坛——JetPack 7.2 中看不到 25W 和 MAXN SUPER](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627) — NVIDIA 员工与用户：`-super` TNSPEC 检查、主机重刷（核查于 2026-09-26）
 
-*状态：草稿，待 cheny 审核。内容依据所列日期的 NVIDIA 官方文档与开发者
+*状态：已于 2026-10-11 审核。内容依据所列日期的 NVIDIA 官方文档与开发者
 论坛发言；尚未由钜犀科技在实机上验证。重建清单描述的是平台层面的标准
 后果——请结合你自己的软件栈进行验证。*
 

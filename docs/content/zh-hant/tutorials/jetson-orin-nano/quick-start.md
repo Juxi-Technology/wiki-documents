@@ -207,7 +207,7 @@ apt list --installed | grep nvidia-jetpack
 - [JetPack SDK Downloads](https://developer.nvidia.com/embedded/jetpack/downloads)（查閱於 2026-09-26）
 - [Jetson Linux 39.2.1 Release Notes (PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf)（查閱於 2026-09-26）
 
-*狀態：草稿，待 cheny 審核。內容以所列日期的 NVIDIA 官方文件為依據；尚未由鉅犀科技在實體硬體上驗證。*
+*狀態：已於 2026-10-11 審核。內容以所列日期的 NVIDIA 官方文件為依據；尚未由鉅犀科技在實體硬體上驗證。*
 
 **圖片來源：** 本頁圖片來自 NVIDIA 官方 *Jetson Orin Nano Developer Kit User Guide*（下載於 2026-09-26），版權歸 © NVIDIA Corporation 所有。此處轉載用於說明官方設定流程。
 

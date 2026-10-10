@@ -123,7 +123,7 @@ NVIDIA® Jetson Orin Nano™ Super 開發者套件是 Jetson Orin 家族中精�
 - [Jetson Orin Nano Super 開發者套件資料表（PDF，連結位於 nvidia.com）](https://dam-cdn.nvd.orangelogic.com/AssetLink/2ug686w80406gxf6q8uv7r3l7265m2n8.pdf)（查閱於 2026-09-26）
 - [鉅犀科技商店產品頁](https://www.juxitech.com/products/nvidia-jetson-orin-nano-super-development-kit)（查閱於 2026-09-26）
 
-*狀態：草稿，待 cheny 審核。內容以所列日期的 NVIDIA 官方文件為依據；尚未經鉅犀科技在實體硬體上驗證。*
+*狀態：已於 2026-10-11 審核。內容以所列日期的 NVIDIA 官方文件為依據；尚未經鉅犀科技在實體硬體上驗證。*
 
 ---
 

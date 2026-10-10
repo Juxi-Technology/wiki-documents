@@ -286,7 +286,7 @@ JetPack 전용 호스트 구성을 적용합니다. 두 가지 주의 사항: �
 - [NVIDIA — Build a Claw("Install OpenClaw on Your NVIDIA Jetson Orin Nano™")](https://www.nvidia.com/en-us/ai/build-a-claw/) (2026-09-26 확인)
 - [JetPack 7.2.1 다운로드 페이지(구성 요소 매트릭스에 Isaac ROS가 "출시 예정"으로 기재)](https://developer.nvidia.com/embedded/jetpack/downloads) (2026-09-26 확인)
 
-*상태: 초안, cheny 검토 대기 중. 생태계 가용성은 빠르게 변합니다 — 이 표에
+*상태: 2026-10-11 검토 완료. 생태계 가용성은 빠르게 변합니다 — 이 표에
 의존하기 전에 링크된 NVIDIA 및 업스트림 페이지를 다시 확인하십시오. 아직
 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*
 

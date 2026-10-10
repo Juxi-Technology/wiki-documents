@@ -133,7 +133,7 @@ Ihr Design auf eine der beiden stützen.
 - [Jetson AGX Orin Developer Kit User Guide — Introduction](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html) (Modul-Emulation; geprüft am 2026-09-24)
 - [ROS 2 Jazzy Installationsdokumentation](https://docs.ros.org/en/jazzy/Installation.html)
 
-*Status: Entwurf, Überprüfung durch cheny steht aus. Die Verfügbarkeit im
+*Status: geprüft am 2026-10-11. Die Verfügbarkeit im
 Ökosystem ändert sich schnell — prüfen Sie die verlinkten NVIDIA-Seiten erneut,
 bevor Sie sich auf diese Tabelle verlassen. Noch nicht auf physischer Hardware
 durch Juxi Technology verifiziert.*

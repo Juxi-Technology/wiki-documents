@@ -108,7 +108,7 @@ Jetson の新しいユーザーが最初に出会う用語を、アルファベ�
 - [DeepStream SDK — インストール](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_Installation.html)(2026-09-26 確認)
 - [NVIDIA フォーラム — 「25W と MAXN_SUPER が JetPack 7.2 で表示されない」(NVIDIA スタッフの回答)](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627)(2026-09-26 確認)
 
-*ステータス:ドラフト、cheny によるレビュー待ち。定義は NVIDIA のドキュメントと
+*ステータス: レビュー済み（2026-10-11）。定義は NVIDIA のドキュメントと
 業界標準の用法に基づいてまとめたものです。バージョン番号は記載の日付時点で確認して
 います。Juxi Technology による実機検証はまだ行われていません。*
 

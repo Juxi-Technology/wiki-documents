@@ -120,7 +120,7 @@ Isaac ROS のドキュメントが示す apt リポジトリが、サポート�
 - [Jetson AGX Orin Developer Kit User Guide — Introduction](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html)(モジュールエミュレーション;2026-09-24 確認)
 - [ROS 2 Jazzy インストールドキュメント](https://docs.ros.org/en/jazzy/Installation.html)
 
-*ステータス: ドラフト、cheny によるレビュー待ち。エコシステムの可用性は急速に変化します——
+*ステータス: レビュー済み（2026-10-11）。エコシステムの可用性は急速に変化します——
 この表に依拠する前に、リンク先の NVIDIA ページを再確認してください。Juxi Technology
 による実機での検証はまだ行われていません。*
 

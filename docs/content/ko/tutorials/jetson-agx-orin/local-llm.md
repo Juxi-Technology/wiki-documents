@@ -125,7 +125,7 @@ vLLM 등)을 위한 실습 튜토리얼을 공개하고 있습니다. 오래된 
 - [TensorRT Edge-LLM 문서 홈](https://nvidia.github.io/TensorRT-Edge-LLM/)(v0.10.1, 2026-09-24 확인)
 - [NVIDIA 기술 블로그 — Deploy Agentic-Ready AI at the Edge with Memory Efficiency in JetPack 7.2](https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2)(성능 수치, 2026-09-24 확인)
 
-*상태: 초안, cheny의 검토 대기 중. 명시된 날짜 기준 NVIDIA 공식 문서에
+*상태: 2026-10-11 검토 완료. 명시된 날짜 기준 NVIDIA 공식 문서에
 근거하며, 아직 Juxi Technology가 실물 하드웨어에서 검증하지 않았습니다.*
 
 ---

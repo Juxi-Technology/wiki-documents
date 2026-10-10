@@ -104,7 +104,7 @@ Jetson Orin，并提供官方的 AGX Orin 设置教程。注意，NVIDIA 的 Jet
 - Jetson AGX Orin 开发者套件用户指南——[简介](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html)、[快速开始](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/quick_start.html)（查阅于 2026-09-23）
 - [JetPack SDK 下载](https://developer.nvidia.com/embedded/jetpack/downloads)（查阅于 2026-09-23）
 
-*状态：草稿，待 cheny 审阅。*
+*状态：已于 2026-10-11 审核。*
 
 ---
 

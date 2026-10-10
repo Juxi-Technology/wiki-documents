@@ -91,7 +91,7 @@ limitato a engine FP16/INT8/INT4 secondo la matrice di supporto ufficiale.)*
 - [Blog tecnico NVIDIA — efficienza della memoria e competenze agente in JetPack 7.2](https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2) (verificato il 2026-09-24)
 - [Documentazione di TensorRT Edge-LLM](https://nvidia.github.io/TensorRT-Edge-LLM/) (funzionalità e matrice di supporto; verificato il 2026-09-24)
 
-*Stato: bozza, in attesa di revisione da parte di cheny. Basato sulla
+*Stato: rivisto il 2026-10-11. Basato sulla
 documentazione ufficiale NVIDIA alla data indicata; non ancora verificato su
 hardware fisico da Juxi Technology.*
 

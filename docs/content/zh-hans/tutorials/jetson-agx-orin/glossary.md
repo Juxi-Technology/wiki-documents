@@ -108,7 +108,7 @@ review_owner: cheny
 - [NVIDIA Jetson apt 仓库——实际组件版本](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages)（核对于 2026-09-26）——经由 `nvidia-jetpack` 7.2.1 依赖链；[JetPack 下载页](https://developer.nvidia.com/embedded/jetpack/downloads)的汇总表滞后（仍列出 CUDA 13.2.1 / VPI 4.1.3）
 - [Jetson AGX Orin 开发者套件用户指南](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html)（核对于 2026-09-24）
 
-*状态：草稿，待 cheny 审核。定义整理自 NVIDIA 官方文档与行业通行用法；版本号核对于所列日期。*
+*状态：已于 2026-10-11 审核。定义整理自 NVIDIA 官方文档与行业通行用法；版本号核对于所列日期。*
 
 ---
 

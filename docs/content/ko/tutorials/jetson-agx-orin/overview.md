@@ -70,7 +70,7 @@ USB Type-C to USB Type-A 케이블이 포함되어 있습니다. 직접 준비�
 - [Jetson AGX Orin Developer Kit User Guide — Introduction](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html) (2026-09-23 확인)
 - [NVIDIA Jetson Orin 제품 페이지](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/) (2026-09-23 확인)
 
-*상태: 초안, cheny의 검토 대기 중. 전체 모듈 사양 표는 NVIDIA 공식 데이터시트에서 추가될
+*상태: 2026-10-11 검토 완료. 전체 모듈 사양 표는 NVIDIA 공식 데이터시트에서 추가될
 예정입니다. 그때까지는 NVIDIA 제품 페이지를 사양에 관한 권위 있는 출처로 간주하십시오.*
 
 **이미지 출처:** 제품 이미지는 NVIDIA 공식 *Jetson AGX Orin Developer Kit User Guide*에서

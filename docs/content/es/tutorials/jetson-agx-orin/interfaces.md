@@ -123,7 +123,7 @@ Se utiliza para el cableado de producción y automatización:
 - [Hardware Layout — Jetson AGX Orin Developer Kit User Guide](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/hardware_layout.html) (consultado el 2026-09-23)
 - Para obtener más detalles sobre la placa portadora, consulte la *NVIDIA Jetson AGX Orin Developer Kit Carrier Board Specification* (enlazada desde la [página de descargas](https://developer.nvidia.com/embedded/downloads) de NVIDIA)
 
-*Estado: borrador, pendiente de revisión por cheny. Los pasos y valores anteriores
+*Estado: revisado el 2026-10-11. Los pasos y valores anteriores
 se basan en la documentación oficial de NVIDIA a la fecha indicada; aún no han
 sido verificados en hardware físico por Juxi Technology.*
 

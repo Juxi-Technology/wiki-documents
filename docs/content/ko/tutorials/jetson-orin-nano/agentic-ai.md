@@ -277,7 +277,7 @@ Docker(Engine/Desktop/Colima, 위 요구 사항 기준)와 샌드박스 컨테�
 - [Isaac ROS — Getting Started](https://nvidia-isaac-ros.github.io/getting_started/index.html) 및 [릴리스 노트](https://nvidia-isaac-ros.github.io/releases/index.html) (2026-09-26 확인)
 - [Jetson Linux r39.2.1 릴리스 노트(PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) (2026-09-26 확인) — "Agent skills for video pipelines" What's New 항목.
 
-*상태: 초안, cheny 검토 대기 중. 기재된 날짜 기준 NVIDIA 공식 문서, NVIDIA
+*상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서, NVIDIA
 개발자 포럼 게시물, Jetson AI Lab 벤더 가이드에 근거하며, 아직 Juxi
 Technology가 실제 하드웨어에서 검증하지 않았습니다.*
 

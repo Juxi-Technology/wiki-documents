@@ -109,7 +109,7 @@ Para confirmar o que um sistema específico executa de facto: `cat /etc/nv_tegra
 - [DeepStream SDK — Installation](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_Installation.html) (verificado em 2026-09-26)
 - [NVIDIA forum — "25W and MAXN_SUPER not seen in JetPack 7.2" (NVIDIA staff answer)](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627) (verificado em 2026-09-26)
 
-*Estado: rascunho, pendente de revisão por cheny. Definições compiladas a partir
+*Estado: revisado em 2026-10-11. Definições compiladas a partir
 da documentação da NVIDIA e do uso padrão da indústria; os números de versão
 foram verificados nas datas indicadas. Não verificado em hardware físico pela
 Juxi Technology.*

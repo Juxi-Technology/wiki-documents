@@ -246,7 +246,7 @@ update, verify the result: **[Verify Your System](/tutorials/jetson-orin-nano/ve
 - [JetPack Downloads](https://developer.nvidia.com/embedded/jetpack/downloads) (checked 2026-09-26)
 - [SDK Manager — monitor-attached installation instructions](https://developer.nvidia.com/w/sdkmanager/resources/instructions/monitor_mode_installation_orin.html) (checked 2026-09-26)
 
-*Status: draft, pending review by cheny. Grounded in NVIDIA's official documentation as of the
+*Status: reviewed on 2026-10-11. Grounded in NVIDIA's official documentation as of the
 dates listed; not yet verified on physical hardware by Juxi Technology.*
 
 ---

@@ -129,7 +129,7 @@ pour L4T, CUDA et l'ensemble de la pile de composants JetPack.
 - [Notes de version Jetson Linux 39.2.0 (PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf) (vérifié le 2026-09-23)
 - [NVIDIA SDK Manager](https://developer.nvidia.com/sdk-manager)
 
-*Statut : brouillon, en attente de révision par cheny. Fondé sur la documentation
+*Statut : relu le 2026-10-11. Fondé sur la documentation
 officielle NVIDIA à la date indiquée ; pas encore vérifié sur matériel physique
 par Juxi Technology.*
 

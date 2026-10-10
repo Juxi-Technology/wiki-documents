@@ -52,7 +52,7 @@ review_owner: cheny
 - [JetPack SDK Downloads](https://developer.nvidia.com/embedded/jetpack/downloads)(2026-09-24 に確認)
 - [Jetson Linux 39.2.0 Release Notes (PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf)(2026-09-24 に確認)
 
-*ステータス:ドラフト、cheny によるレビュー待ち。*
+*ステータス: レビュー済み（2026-10-11）。*
 
 ---
 

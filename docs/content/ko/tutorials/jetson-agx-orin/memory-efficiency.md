@@ -79,7 +79,7 @@ Orin은 FP16/INT8/INT4 엔진으로 제한됩니다.)*
 - [NVIDIA 기술 블로그 — JetPack 7.2의 메모리 효율과 에이전트 스킬](https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2) (2026-09-24 확인)
 - [TensorRT Edge-LLM 문서](https://nvidia.github.io/TensorRT-Edge-LLM/) (기능과 지원 매트릭스, 2026-09-24 확인)
 
-*상태: 초안, cheny 검토 대기 중. 기재된 날짜 기준 NVIDIA 공식 문서에 근거하며,
+*상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서에 근거하며,
 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*
 
 ---

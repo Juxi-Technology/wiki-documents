@@ -92,7 +92,7 @@ Dalle note di rilascio di Jetson Linux 39.2:
 - [JetPack SDK Downloads](https://developer.nvidia.com/embedded/jetpack/downloads) (verificato il 2026-09-23) — ⚠️ la sua tabella dei componenti è in ritardo su alcune righe; per le versioni effettivamente installate da un sistema 7.2.1, vedere [Verificare il sistema](/it/tutorials/jetson-agx-orin/verify-your-system)
 - [Seeed Studio JetPack 7.2 Resource Hub](https://wiki.seeedstudio.com/jetpack_7_2_resource_hub/) — fonte secondaria; utilizzata solo per l'organizzazione degli argomenti di migrazione (verificato il 2026-09-23)
 
-*Stato: bozza, in attesa di revisione da parte di cheny. Basato sulla documentazione
+*Stato: rivisto il 2026-10-11. Basato sulla documentazione
 ufficiale NVIDIA alla data indicata; non ancora verificato su hardware fisico da
 Juxi Technology. L'elenco delle ricompilazioni descrive le conseguenze standard
 della piattaforma (variazioni di versione di kernel/TensorRT/CUDA) — da validare

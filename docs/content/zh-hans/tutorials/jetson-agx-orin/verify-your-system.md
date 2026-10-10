@@ -114,7 +114,7 @@ tegrastats
 - [JetPack SDK Setup — Jetson AGX Orin Developer Kit User Guide](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/setup_jetpack.html)（核对于 2026-09-23）
 - [JetPack SDK Downloads and Release Notes](https://developer.nvidia.com/embedded/jetpack/downloads)（核对于 2026-09-23）
 
-*状态：草稿，待 cheny 审核。内容基于截至所列日期的 NVIDIA 官方文档；尚未由钜犀科技在物理硬件上验证。*
+*状态：已于 2026-10-11 审核。内容基于截至所列日期的 NVIDIA 官方文档；尚未由钜犀科技在物理硬件上验证。*
 
 ---
 

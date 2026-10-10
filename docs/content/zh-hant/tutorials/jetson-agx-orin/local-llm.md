@@ -101,7 +101,7 @@ NVIDIA 公布了 64GB 模組在 JetPack 7.2 上的以下每秒 token 數據（20
 - [TensorRT Edge-LLM 文件首頁](https://nvidia.github.io/TensorRT-Edge-LLM/)（v0.10.1，查閱於 2026-09-24）
 - [NVIDIA 技術部落格——在 JetPack 7.2 中以記憶體效率在邊緣部署代理式 AI](https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2)（性能數據；查閱於 2026-09-24）
 
-*狀態：草稿，待 cheny 審閱。內容依據截至所列日期的 NVIDIA 官方文件；尚未由鉅犀科技在實體硬體上驗證。*
+*狀態：已於 2026-10-11 審核。內容依據截至所列日期的 NVIDIA 官方文件；尚未由鉅犀科技在實體硬體上驗證。*
 
 ---
 

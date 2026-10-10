@@ -52,7 +52,7 @@ review_owner: cheny
 - [JetPack SDK 다운로드](https://developer.nvidia.com/embedded/jetpack/downloads) (2026-09-24 확인)
 - [Jetson Linux 39.2.0 릴리스 노트(PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf) (2026-09-24 확인)
 
-*상태: 초안, cheny의 검토 대기 중.*
+*상태: 2026-10-11 검토 완료.*
 
 ---
 

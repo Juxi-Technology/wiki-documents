@@ -52,7 +52,7 @@ to check what you're running, see **[Verify Your System](/tutorials/jetson-agx-o
 - [JetPack SDK Downloads](https://developer.nvidia.com/embedded/jetpack/downloads) (checked 2026-09-24)
 - [Jetson Linux 39.2.0 Release Notes (PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf) (checked 2026-09-24)
 
-*Status: draft, pending review by cheny.*
+*Status: reviewed on 2026-10-11.*
 
 ---
 

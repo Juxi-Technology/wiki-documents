@@ -182,7 +182,7 @@ review_owner: cheny
 - [Jetson Orin product family — developer.nvidia.com](https://developer.nvidia.com/embedded/jetson-orin)（查閱於 2026-09-26）
 - [NVIDIA Developer Forums — "Slow Wi-Fi on Orin Nano DevKit (RTL8822CE)", community thread](https://forums.developer.nvidia.com/t/slow-wi-fi-on-orin-nano-devkit-rtl8822ce-802-11ac/368697)（查閱於 2026-09-26）
 
-*狀態：草稿，待 cheny 審核。以上步驟與數值依據所列日期的 NVIDIA 官方文件；尚未由鉅犀科技在實體硬件上驗證。*
+*狀態：已於 2026-10-11 審核。以上步驟與數值依據所列日期的 NVIDIA 官方文件；尚未由鉅犀科技在實體硬件上驗證。*
 
 **圖片來源：**佈局圖來自 NVIDIA 官方 *Jetson Orin Nano Developer Kit User Guide*（下載於 2026-09-26），版權歸 © NVIDIA Corporation 所有。
 

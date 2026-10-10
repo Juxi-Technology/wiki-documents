@@ -125,7 +125,7 @@ notes before following older tutorials.
 - [TensorRT Edge-LLM documentation home](https://nvidia.github.io/TensorRT-Edge-LLM/) (v0.10.1, checked 2026-09-24)
 - [NVIDIA Technical Blog — Deploy Agentic-Ready AI at the Edge with Memory Efficiency in JetPack 7.2](https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2) (performance figures; checked 2026-09-24)
 
-*Status: draft, pending review by cheny. Grounded in NVIDIA's official
+*Status: reviewed on 2026-10-11. Grounded in NVIDIA's official
 documentation as of the date listed; not yet verified on physical hardware by
 Juxi Technology.*
 

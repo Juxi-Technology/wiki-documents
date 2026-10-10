@@ -197,7 +197,7 @@ swap 文件（先禁用 ZRAM）。
 - [jetson-containers（GitHub）](https://github.com/dusty-nv/jetson-containers)（已于 2026-09-26 核查）
 - [Jetson AI Lab PyPI 索引——sbsa/cu130](https://pypi.jetson-ai-lab.io/sbsa/cu130)（已于 2026-09-26 核查）
 
-*状态：草稿，待 cheny 审核。内容依据所列日期的 NVIDIA 官方文档；尚未由钜犀科技在实体硬件上验证。*
+*状态：已于 2026-10-11 审核。内容依据所列日期的 NVIDIA 官方文档；尚未由钜犀科技在实体硬件上验证。*
 
 ---
 

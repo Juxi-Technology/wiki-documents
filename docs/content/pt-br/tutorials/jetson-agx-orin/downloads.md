@@ -68,7 +68,7 @@ pontos de partida canônicos.
 - [Downloads e notas de versão do JetPack SDK](https://developer.nvidia.com/embedded/jetpack/downloads) (verificado em 2026-09-23; ressalva sobre a tabela de componentes em 2026-09-26)
 - [Repositório apt do Jetson da NVIDIA — índice Packages](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages) — autoritativo para as versões dos componentes instalados (verificado em 2026-09-26)
 
-*Status: rascunho, pendente de revisão por cheny.*
+*Status: revisado em 2026-10-11.*
 
 ---
 

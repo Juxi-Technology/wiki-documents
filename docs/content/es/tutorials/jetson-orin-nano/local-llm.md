@@ -233,7 +233,7 @@ contexto deliberadamente — consulte [Eficiencia de memoria para 8 GB](/es/tuto
 - [jetson-containers (GitHub)](https://github.com/dusty-nv/jetson-containers) (consultado el 2026-09-26)
 - [Índice PyPI de Jetson AI Lab — sbsa/cu130](https://pypi.jetson-ai-lab.io/sbsa/cu130) (consultado el 2026-09-26)
 
-*Estado: borrador, pendiente de revisión por cheny. Basado en la documentación
+*Estado: revisado el 2026-10-11. Basado en la documentación
 oficial de NVIDIA a la fecha indicada; aún no verificado en hardware físico por
 Juxi Technology.*
 

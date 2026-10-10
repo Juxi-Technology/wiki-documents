@@ -139,7 +139,7 @@ https://pypi.jetson-ai-lab.io/sbsa/cu130
 - [jetson-containers（GitHub）](https://github.com/dusty-nv/jetson-containers)（查閱於 2026-09-26）
 - [Jetson AI Lab PyPI 索引——sbsa/cu130](https://pypi.jetson-ai-lab.io/sbsa/cu130)（查閱於 2026-09-26）
 
-*狀態：草稿，待 cheny 審核。內容以所列日期的 NVIDIA 官方文件為依據；尚未由鉅犀科技在實體硬體上驗證。*
+*狀態：已於 2026-10-11 審核。內容以所列日期的 NVIDIA 官方文件為依據；尚未由鉅犀科技在實體硬體上驗證。*
 
 ---
 

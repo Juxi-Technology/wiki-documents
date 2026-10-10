@@ -189,7 +189,7 @@ NVIDIA は Docker を推奨しています:「Docker はほとんどのユーザ
 - [NVIDIA — Build a Claw(「Install OpenClaw on Your NVIDIA Jetson Orin Nano™」)](https://www.nvidia.com/en-us/ai/build-a-claw/)(2026-09-26 確認)
 - [JetPack 7.2.1 ダウンロードページ(コンポーネントマトリクスでは Isaac ROS は「近日公開」)](https://developer.nvidia.com/embedded/jetpack/downloads)(2026-09-26 確認)
 
-*ステータス:ドラフト、cheny によるレビュー待ち。エコシステムの可用性は急速に変化します — この表に依拠する前に、リンク先の NVIDIA および上流のページを再確認してください。Juxi Technology による実機検証はまだ行われていません。*
+*ステータス: レビュー済み（2026-10-11）。エコシステムの可用性は急速に変化します — この表に依拠する前に、リンク先の NVIDIA および上流のページを再確認してください。Juxi Technology による実機検証はまだ行われていません。*
 
 ---
 

@@ -151,7 +151,7 @@ Force Recovery 模式（RCM）是主机 PC 刷机时需要的状态。NVIDIA 记
 - [JetPack 下载页](https://developer.nvidia.com/embedded/jetpack/downloads)（核对于 2026-09-26）
 - [SDK Manager——连接显示器的安装说明](https://developer.nvidia.com/w/sdkmanager/resources/instructions/monitor_mode_installation_orin.html)（核对于 2026-09-26）
 
-*状态：草稿，待 cheny 审核。内容依据所列日期的 NVIDIA 官方文档；尚未由钜犀科技在实体硬件上验证。*
+*状态：已于 2026-10-11 审核。内容依据所列日期的 NVIDIA 官方文档；尚未由钜犀科技在实体硬件上验证。*
 
 ---
 

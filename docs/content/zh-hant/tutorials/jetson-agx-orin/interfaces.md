@@ -110,7 +110,7 @@ Jetson ISO 安裝程式可將系統安裝至 eMMC 或 NVMe;SDK Manager 則可將
 - [硬件佈局——Jetson AGX Orin 開發者套件用戶指南](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/hardware_layout.html)(已於 2026-09-23 確認)
 - 載板相關細節請參閱 *NVIDIA Jetson AGX Orin Developer Kit Carrier Board Specification*(連結見 NVIDIA 的[下載頁面](https://developer.nvidia.com/embedded/downloads))
 
-*狀態:草稿,待 cheny 審核。以上步驟與數值依據所列日期的 NVIDIA 官方文件;尚未由鉅犀科技在實體硬件上驗證。*
+*狀態:已於 2026-10-11 審核。以上步驟與數值依據所列日期的 NVIDIA 官方文件;尚未由鉅犀科技在實體硬件上驗證。*
 
 **圖片來源:**佈局圖與引腳圖來自 NVIDIA 官方 *Jetson AGX Orin Developer Kit User Guide* 與 *Carrier Board Specification*(下載於 2026-09-23),版權歸 © NVIDIA Corporation 所有。
 

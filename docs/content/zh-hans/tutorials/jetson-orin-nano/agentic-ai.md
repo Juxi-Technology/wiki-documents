@@ -242,7 +242,7 @@ NemoClaw 是 alpha 软件（“Early preview”）；请把沙箱当作多层中
 - [Isaac ROS——Getting Started](https://nvidia-isaac-ros.github.io/getting_started/index.html)与[发布说明](https://nvidia-isaac-ros.github.io/releases/index.html)（已于 2026-09-26 核查）
 - [Jetson Linux r39.2.1 发布说明（PDF）](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf)（已于 2026-09-26 核查）——“视频流水线的智能体技能”这一 What's New 条目。
 
-*状态：草稿，待 cheny 审核。内容依据所列日期的 NVIDIA 官方文档、NVIDIA 开发者论坛帖子与 Jetson AI Lab 厂商指南；尚未由钜犀科技在实体硬件上验证。*
+*状态：已于 2026-10-11 审核。内容依据所列日期的 NVIDIA 官方文档、NVIDIA 开发者论坛帖子与 Jetson AI Lab 厂商指南；尚未由钜犀科技在实体硬件上验证。*
 
 ---
 

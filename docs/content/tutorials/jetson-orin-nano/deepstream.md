@@ -229,7 +229,7 @@ formats use the GPU — other export formats run on the CPU.
 - [Jetson Linux r39.2 Developer Guide — Power and Performance](https://docs.nvidia.com/jetson/archives/r39.2/DeveloperGuide/SD/PlatformPowerAndPerformance/JetsonOrinNanoSeriesJetsonOrinNxSeriesAndJetsonAgxOrinSeries.html) (checked 2026-09-26)
 - [Ultralytics — NVIDIA Jetson guide (vendor benchmarks)](https://docs.ultralytics.com/guides/nvidia-jetson/) (checked 2026-09-26)
 
-*Status: draft, pending review by cheny. Grounded in NVIDIA's official
+*Status: reviewed on 2026-10-11. Grounded in NVIDIA's official
 documentation as of the date listed; not yet verified on physical hardware
 by Juxi Technology.*
 

@@ -251,7 +251,7 @@ Aktualisierung das Ergebnis: **[System überprüfen](/de/tutorials/jetson-orin-n
 - [JetPack-Downloads](https://developer.nvidia.com/embedded/jetpack/downloads) (geprüft am 2026-09-26)
 - [SDK Manager — Anweisungen zur Installation mit angeschlossenem Monitor](https://developer.nvidia.com/w/sdkmanager/resources/instructions/monitor_mode_installation_orin.html) (geprüft am 2026-09-26)
 
-*Status: Entwurf, ausstehende Prüfung durch cheny. Basiert auf NVIDIAs offizieller Dokumentation mit Stand der
+*Status: geprüft am 2026-10-11. Basiert auf NVIDIAs offizieller Dokumentation mit Stand der
 oben genannten Daten; noch nicht von Juxi Technology auf physischer Hardware verifiziert.*
 
 ---

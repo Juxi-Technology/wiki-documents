@@ -219,7 +219,7 @@ Super 電力モードだけが欠けている場合は、より限定的な修�
 - [NVIDIA 開発者フォーラム — JetPack 7.2 の GPU アクセラレーション問題](https://forums.developer.nvidia.com/t/jetpack-7-2-gpu-acceleration-issue/372521) — NVIDIA スタッフ:ダウングレード経路と CUDA 13.2 ホイールインデックス(2026-09-26 確認)
 - [NVIDIA 開発者フォーラム — JetPack 7.2 で 25W と MAXN SUPER が表示されない](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627) — NVIDIA スタッフとユーザー:`-super` TNSPEC の確認、ホストからの再書き込み(2026-09-26 確認)
 
-*ステータス:ドラフト、cheny によるレビュー待ち。記載日時点の NVIDIA 公式
+*ステータス: レビュー済み（2026-10-11）。記載日時点の NVIDIA 公式
 ドキュメントおよび開発者フォーラムの発言に基づく内容であり、Juxi Technology による
 実機検証はまだ行われていません。再ビルド一覧は標準的なプラットフォーム上の帰結を
 述べたものです — ご自身のスタックで検証してください。*
