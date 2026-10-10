@@ -7,6 +7,10 @@
 if (typeof window !== 'undefined') {
   const URL_LANG_RE = /^\/(zh-hans|zh-hant|ja|ko|de|fr|es|it|pt-br|pt-pt|en)(?=\/|$)/
   const PREF_KEY = 'wiki-lang'
+  // 合法跳转目标集合(英文是根路径,不作为跳转目标)。
+  // 作用:①把历史脏偏好视为无偏好;②拼 URL 前终检 —— 目标必须在集合内,
+  // 保证 location.replace 入参永远是 '/<已知语言>/' 形式
+  const KNOWN_LANGS = new Set(['zh-hans', 'zh-hant', 'ja', 'ko', 'de', 'fr', 'es', 'it', 'pt-br', 'pt-pt'])
 
   // 手动切换语言时记录偏好
   document.addEventListener('click', (e) => {
@@ -32,23 +36,33 @@ if (typeof window !== 'undefined') {
     } catch {
       pref = null
     }
+    // 规范偏好值:旧版语言下拉曾把带前导斜杠的代码存入(如 '/zh-hans'),
+    // 若原样与 '/' 拼接会得到协议相对 URL '//zh-hans/' —— 浏览器把它当作
+    // 主机名 zh-hans 解析,整站跳飞出 wiki.juxitech.com(2026-10 线上 404 事故根因)
+    if (pref) pref = pref.replace(/^\/+|\/+$/g, '').toLowerCase()
+
     let target: string | null = null
-    if (pref && pref !== 'en') {
-      target = pref // 手选过非英文语言 → 按其回落
-    } else if (!pref) {
-      // 无手选偏好时按浏览器语言(手选过英文则停留英文,不再被浏览器语言覆盖)
-      if (/^(zh-HK|zh-TW|zh-Hant)/i.test(nav)) target = 'zh-hant'
-      else if (/^zh/i.test(nav)) target = 'zh-hans'
-      else if (/^ja/i.test(nav)) target = 'ja'
-      else if (/^ko/i.test(nav)) target = 'ko'
-      else if (/^de/i.test(nav)) target = 'de'
-      else if (/^fr/i.test(nav)) target = 'fr'
-      else if (/^es/i.test(nav)) target = 'es'
-      else if (/^it/i.test(nav)) target = 'it'
-      else if (/^pt[-_]BR|^pt[-_]br/i.test(nav)) target = 'pt-br'
-      else if (/^pt/i.test(nav)) target = 'pt-pt'
+    if (pref !== 'en') {
+      if (pref && KNOWN_LANGS.has(pref)) {
+        target = pref // 手选过非英文语言 → 按其回落
+      } else {
+        // 无偏好,或偏好值不可识别(历史脏值,视为无偏好)时按浏览器语言;
+        // 手选过英文(pref='en')则停留英文,不再被浏览器语言覆盖
+        if (/^(zh-HK|zh-TW|zh-Hant)/i.test(nav)) target = 'zh-hant'
+        else if (/^zh/i.test(nav)) target = 'zh-hans'
+        else if (/^ja/i.test(nav)) target = 'ja'
+        else if (/^ko/i.test(nav)) target = 'ko'
+        else if (/^de/i.test(nav)) target = 'de'
+        else if (/^fr/i.test(nav)) target = 'fr'
+        else if (/^es/i.test(nav)) target = 'es'
+        else if (/^it/i.test(nav)) target = 'it'
+        else if (/^pt[-_]BR|^pt[-_]br/i.test(nav)) target = 'pt-br'
+        else if (/^pt/i.test(nav)) target = 'pt-pt'
+      }
     }
-    if (target && target !== 'en') {
+    // 终检:目标必须是已知语言才跳转。任何异常值最坏只是不跳(停留英文首页),
+    // 天然兜底本次协议相对 URL 事故,也防未来再写入怪值
+    if (target && KNOWN_LANGS.has(target)) {
       try {
         localStorage.setItem(PREF_KEY, target)
       } catch {
