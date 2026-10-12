@@ -66,7 +66,7 @@ Orin"**을 제품군으로 표기하며, 이전 행(DS 6.3 ~ DS 7.1)은 "Orin na
 | 기능 | 사양 |
 |---|---|
 | 비디오 디코드(H.265) | 1x 4K60 · 2x 4K30 · 5x 1080p60 · 11x 1080p30 |
-| 비디오 인코드 | 하드웨어 인코더 없음 — "1080p30 supported by 1-2 CPU cores" |
+| 비디오 인코드 | 하드웨어 인코더 없음 — "1-2개 CPU 코어로 1080p30 지원" |
 | DLA · PVA | 없음 |
 
 추론은
@@ -86,8 +86,8 @@ CPU에서 실행됩니다.
 
 ## 3. 설치 — Docker 우선
 
-NVIDIA 가이드에서는 이렇게 안내합니다: "Recommended for new users: use Method
-4 (Docker container) for the quickest, dependency-free setup." Jetson의 네
+NVIDIA 가이드에서는 이렇게 안내합니다: "신규 사용자에게 권장: 가장 빠르고
+종속성 없는 설정을 위해 방법 4(Docker 컨테이너)를 사용하십시오." Jetson의 네
 가지 방법:
 
 | 방법 | 설명 |
@@ -104,10 +104,10 @@ Jetson 컨테이너는 `nvcr.io/nvidia/deepstream:9.1-samples-multiarch`(레퍼�
 계정, 그리고 `docker login nvcr.io`(사용자 이름 `$oauthtoken`, 비밀번호 =
 NGC API 키)입니다.
 
-> **중요**: NVIDIA는 이렇게 밝힙니다: "The Jetson Docker containers are for
-> deployment only. They do not support DeepStream software development
-> within a container." 애플리케이션은 키트에서 네이티브로 빌드하고
-> 바이너리를 자체 이미지에 추가하십시오.
+> **중요**: NVIDIA는 이렇게 밝힙니다: "Jetson Docker 컨테이너는 배포 전용이며,
+> 컨테이너 내에서의 DeepStream 소프트웨어 개발은 지원하지 않습니다."
+> 애플리케이션은 키트에서 네이티브로 빌드하고 바이너리를 자체 이미지에
+> 추가하십시오.
 
 Docker에서는 대신 `user_additional_install.sh`를 실행하십시오(아래 EOS 관련
 참고 참조). Triton 컨테이너의 "Failed to detect NVIDIA driver version"
@@ -126,10 +126,10 @@ sudo nvpmodel -m 2
 sudo jetson_clocks
 ```
 
-퀵 스타트 문서에서 인용: "For Jetson Orin Nano modules, use sudo nvpmodel -m
-2 instead of -m 0 to enable MAXN SUPER mode. For all other Jetson Orin modules
-(including Orin NX), use -m 0." DeepStream 애플리케이션을 실행하기 전에 이
-명령들을 실행하십시오. Super 구성으로 플래싱된 8 GB 키트에서 전원 모드는
+퀵 스타트 문서에서 인용: "Jetson Orin Nano 모듈에서는 MAXN SUPER 모드를
+활성화하려면 -m 0 대신 sudo nvpmodel -m 2를 사용하십시오. 그 외의 모든
+Jetson Orin 모듈(Orin NX 포함)은 -m 0을 사용하십시오." DeepStream 애플리케이션을
+실행하기 전에 이 명령들을 실행하십시오. Super 구성으로 플래싱된 8 GB 키트에서 전원 모드는
 **15W(모드 0)**, **25W(모드 1, 기본)**, **MAXN_SUPER(모드 2)**입니다.
 MAXN_SUPER는 Super로 플래싱된 기기에만 존재합니다.
 
@@ -144,11 +144,11 @@ cd /opt/nvidia/deepstream/deepstream-9.1/samples/configs/deepstream-app
 deepstream-app -c source30_1080p_dec_infer-resnet_tiled_display.txt
 ```
 
-퀵 스타트 문서에서 인용: 기존 엔진 파일이 없는 모델의 경우 "it may take up
-to a few minutes (depending on the platform and the model) for the file
-generation and the application launch. For later runs, these generated engine
-files can be reused for faster loading." FPS 지표가 터미널에 계속 출력됩니다.
-퀵 스타트의 "(~30 FPS for this configuration)"는 문서의 일반적인 수치이며 —
+퀵 스타트 문서에서 인용: 기존 엔진 파일이 없는 모델의 경우 "파일 생성과
+애플리케이션 실행에 플랫폼과 모델에 따라 몇 분 정도 걸릴 수 있습니다.
+이후 실행에서는 생성된 엔진 파일을 재사용해 더 빠르게 로드할 수 있습니다."
+FPS 지표가 터미널에 계속 출력됩니다.
+퀵 스타트의 "(이 구성에서 약 30 FPS)"는 문서의 일반적인 수치이며 —
 **Orin Nano 측정값이 아닙니다**. 애플리케이션이 Gst 요소를 생성할 수 없다면
 캐시를 지우고 다시 시도하십시오:
 `rm ${HOME}/.cache/gstreamer-1.0/registry.aarch64.bin`. 다른 샘플 구성은 USB
@@ -172,8 +172,8 @@ CPU에서 실행됩니다(2절: 하드웨어 인코더 없음).
 ## 7. 8 GB를 위한 메모리 계획
 
 NVIDIA의 메모리 효율 블로그는 이렇게 밝힙니다: "Jetson Orin Nano 8 GB
-module, of the 8 GB physical DRAM, roughly 7.6 GB is usable after firmware and
-kernel reservations." CPU와 GPU는 이 풀을 공유합니다. DeepStream 방식
+모듈에서는 8 GB 실제 DRAM 중 펌웨어와 커널 예약 영역을 제외하면 약 7.6 GB를
+사용할 수 있습니다." CPU와 GPU는 이 풀을 공유합니다. DeepStream 방식
 파이프라인을 위한 문서화된 수단:
 
 | 수단 | 회수할 수 있는 메모리 |
@@ -183,10 +183,10 @@ kernel reservations." CPU와 GPU는 이 풀을 공유합니다. DeepStream 방�
 | Tiler/OSD 비활성화 후 FakeSink 사용 | 최대 258 MB |
 | **합계** | **412 MB** |
 
-Tiler/OSD를 비활성화하고 FakeSink를 사용하면 "removes display stages needed
-for visualization but unnecessary in headless or production deployments. This
-saves memory, reduces GPU load, and improves throughput." 위의 헤드리스 RTSP
-경로와 함께 사용하십시오. 그래픽 데스크톱을 비활성화하면 최대 865 MB를
+Tiler/OSD를 비활성화하고 FakeSink를 사용하면 "시각화에는 필요하지만
+헤드리스 또는 프로덕션 배포에서는 불필요한 디스플레이 단계를 제거합니다.
+이는 메모리를 절약하고 GPU 부하를 줄이며 처리량을 향상시킵니다." 위의
+헤드리스 RTSP 경로와 함께 사용하십시오. 그래픽 데스크톱을 비활성화하면 최대 865 MB를
 확보할 수 있습니다. 전체 8 GB 플레이북은
 [8 GB에서의 메모리 효율](/ko/tutorials/jetson-orin-nano/memory-efficiency)을
 참조하십시오.
@@ -228,6 +228,9 @@ PyTorch, TorchScript, TensorRT 내보내기 형식만 GPU를 사용하며, 다�
 - [Maximizing memory efficiency to run bigger models on NVIDIA Jetson(개발자 블로그)](https://developer.nvidia.com/blog/maximizing-memory-efficiency-to-run-bigger-models-on-nvidia-jetson/) (2026-09-26 확인)
 - [Jetson Linux r39.2 Developer Guide — 전원 및 성능](https://docs.nvidia.com/jetson/archives/r39.2/DeveloperGuide/SD/PlatformPowerAndPerformance/JetsonOrinNanoSeriesJetsonOrinNxSeriesAndJetsonAgxOrinSeries.html) (2026-09-26 확인)
 - [Ultralytics — NVIDIA Jetson 가이드(벤더 벤치마크)](https://docs.ultralytics.com/guides/nvidia-jetson/) (2026-09-26 확인)
+
+*상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서에
+근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*
 
 *상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서에
 근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*

@@ -145,7 +145,7 @@ Diese Dokumentationsreihe behandelt **nur das 8GB-Developer-Kit**. Das kommerzie
   How-To)*
 - **Jetson AGX Orin — die Flaggschiff-Klasse.** Das AGX-Orin-32GB-Modul erreicht
   241 TOPS im Super-Modus *(JetPack-7.2-Release-Highlights)*. Siehe Juxis
-  [Jetson AGX Orin-Serie](/de/tutorials/jetson-agx-orin/quick-start).
+  [Jetson AGX Orin-Serie](https://wiki.juxitech.com/de/tutorials/jetson-agx-orin/quick-start).
 
 Die wichtigste Einschränkung, für die Sie planen müssen, sind die **8 GB Unified Memory**;
 da es weder DLA noch PVA gibt, laufen KI-Workloads allein auf der GPU — siehe **[Speicher-
@@ -221,6 +221,10 @@ Selbst bereitzustellen:
 - [L4T r38.2.1 Developer Guide — Partition Configuration (module SKUs)](https://docs.nvidia.com/jetson/archives/r38.2.1/DeveloperGuide/AR/BootArchitecture/PartitionConfiguration.html) (geprüft am 2026-09-26)
 - [Jetson Orin Nano Super Developer Kit Datasheet (PDF, linked from nvidia.com)](https://dam-cdn.nvd.orangelogic.com/AssetLink/2ug686w80406gxf6q8uv7r3l7265m2n8.pdf) (geprüft am 2026-09-26)
 - [Juxi Technology Shop-Eintrag für dieses Kit](https://www.juxitech.com/products/nvidia-jetson-orin-nano-super-development-kit) (geprüft am 2026-09-26)
+
+*Status: geprüft am 2026-10-11. Basiert auf NVIDIAs offizieller
+Dokumentation mit Stand der oben genannten Daten; noch nicht von Juxi Technology auf physischer
+Hardware verifiziert.*
 
 *Status: geprüft am 2026-10-11. Basiert auf NVIDIAs offizieller
 Dokumentation mit Stand der oben genannten Daten; noch nicht von Juxi Technology auf physischer

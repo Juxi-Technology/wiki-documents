@@ -25,7 +25,7 @@ review_owner: cheny
 
 | 日付 | 変更内容 |
 |---|---|
-| 2026-09-26 | ドキュメントセットをドラフトとして初公開:クイックスタート、書き込みと更新、システムの確認、製品概要、インターフェースとハードウェアレイアウト、FAQ、トラブルシューティング、ダウンロード、JetPack 6.x → 7.2 移行ガイド、5 つのチュートリアル(ローカル LLM、メモリ効率、DeepStream、ロボティクス、エージェント AI)、用語集、および本変更履歴。JetPack 7.2.1 に関する NVIDIA 公式ドキュメントに基づいて執筆。実機での検証はまだ行われていません。 |
+| 2026-09-26 | ドキュメントセットを初公開:クイックスタート、書き込みと更新、システムの確認、製品概要、インターフェースとハードウェアレイアウト、FAQ、トラブルシューティング、ダウンロード、JetPack 6.x → 7.2 移行ガイド、5 つのチュートリアル(ローカル LLM、メモリ効率、DeepStream、ロボティクス、エージェント AI)、用語集、および本変更履歴。JetPack 7.2.1 に関する NVIDIA 公式ドキュメントに基づいて執筆。実機での検証はまだ行われていません。 |
 
 ## 本キットの JetPack リリース
 
@@ -48,6 +48,9 @@ review_owner: cheny
 - [JetPack SDK ダウンロード](https://developer.nvidia.com/embedded/jetpack/downloads)(2026-09-26 確認)
 - [Jetson Linux 39.2.1 リリースノート(PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf)(2026-09-26 確認)
 - [NVIDIA JetPack 6.2 アナウンス — Jetson Orin Nano の Super モード](https://developer.nvidia.com/blog/nvidia-jetpack-6-2-brings-super-mode-to-nvidia-jetson-orin-nano-and-jetson-orin-nx-modules/)(Super 電力モードのベンダー発表としてリンク)
+
+*ステータス: レビュー済み（2026-10-11）。記載日時点の NVIDIA 公式
+ドキュメントに基づく内容であり、Juxi Technology による実機検証はまだ行われていません。*
 
 *ステータス: レビュー済み（2026-10-11）。記載日時点の NVIDIA 公式
 ドキュメントに基づく内容であり、Juxi Technology による実機検証はまだ行われていません。*

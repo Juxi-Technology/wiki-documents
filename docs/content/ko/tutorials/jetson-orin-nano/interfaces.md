@@ -115,7 +115,7 @@ review_owner: cheny
 
 ### 무선 모듈
 
-- Key-E 슬롯은 **모듈이 장착된 상태**로 출고됩니다. NVIDIA는 이 카드를 "802.11ac/ab/gn wireless network interface controller"로만 설명하며 칩 이름은 밝히지 않습니다.
+- Key-E 슬롯은 **모듈이 장착된 상태**로 출고됩니다. NVIDIA는 이 카드를 "802.11ac/ab/gn 무선 네트워크 인터페이스 컨트롤러"로만 설명하며 칩 이름은 밝히지 않습니다.
 - 커뮤니티 보고(미확인)는 기본 제공 카드를 **Realtek RTL8822CE**(AzureWave 모듈, PCI ID 10ec:c822)로 식별합니다. 이는 NVIDIA의 발표가 아닌 커뮤니티 정보입니다.
 - 공식 지원 NVMe 모델과 Key-E 모듈은 공개 페이지가 아니라 Jetson Download Center의 "Jetson supported components information" 목록에 있습니다. 구매 전에 그곳에서 부품을 확인하십시오.
 - 카드가 네트워크를 찾지 못한다면 — 예를 들어 MBSSID를 사용하는 6 GHz 라우터 — **[문제 해결 → Wi-Fi가 네트워크를 찾지 못함](/ko/tutorials/jetson-orin-nano/troubleshooting)**을 참조하십시오.
@@ -184,6 +184,8 @@ review_owner: cheny
 - [Jetson Orin NX/Nano Series — Module Adaptation and Bring-Up, L4T r39.2 Developer Guide](https://docs.nvidia.com/jetson/archives/r39.2/DeveloperGuide/HR/JetsonModuleAdaptationAndBringUp/JetsonOrinNxNanoSeries.html) (2026-09-26 확인)
 - [Jetson Orin product family — developer.nvidia.com](https://developer.nvidia.com/embedded/jetson-orin) (2026-09-26 확인)
 - [NVIDIA Developer Forums — "Slow Wi-Fi on Orin Nano DevKit (RTL8822CE)", community thread](https://forums.developer.nvidia.com/t/slow-wi-fi-on-orin-nano-devkit-rtl8822ce-802-11ac/368697) (2026-09-26 확인)
+
+*상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서에 근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*
 
 *상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서에 근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*
 

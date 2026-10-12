@@ -22,7 +22,7 @@ verified_against:
 
 # クイックスタート
 
-本ページでは、Jetson AGX Orin 開発キット(64GB)を箱から取り出した状態から、**JetPack 7.2.1** に完全更新されたシステムまで導きます。以下の手順は NVIDIA が現在推奨するセットアップフローに従っており、各ステップは本ページ下部に記載した日付時点で NVIDIA 公式の開発キットドキュメントと照合済みです。
+本ページでは、Jetson AGX Orin 開発キット(64GB)を箱から取り出した状態から、**JetPack 7.2.1** に完全更新されたシステムまで導きます。以下の手順は NVIDIA が現在推奨するセットアップフローに従っており、各ステップは NVIDIA 公式の開発キットドキュメントと照合済みです。
 
 **3 ステップの流れ:**
 
@@ -64,7 +64,7 @@ verified_against:
 
 ![初期設定後の Ubuntu デスクトップ](/images/jetson-agx-orin/ubuntu_initial_desktop_1280x720.png)
 
-ヘッドレスセットアップは別のコンピューターからも可能です — 正確な接続方法は NVIDIA の Quick Start Guide(下部のリンク)を参照してください。
+ヘッドレスセットアップは別のコンピューターからも可能です — 正確な接続方法は [NVIDIA の Quick Start Guide](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/quick_start.html)を参照してください。
 
 > **Juxi のヒント:** NVMe SSD からシステムを運用する予定がある場合は、ステップ 2
 > でその点を考慮してください — ISO インストーラーは NVMe ドライブに直接インストールできます。
@@ -80,14 +80,14 @@ cat /etc/nv_tegra_release
 JetPack 7.2.1 のシステムでは `# R39 (release), REVISION: 2.1` と表示されます。出力がこれより古いリリースの場合は、先に L4T r35.5 以降へ更新してください(後述の*注意点*を参照)。
 
 1. JetPack 7.2.1 / L4T r39.2.1 用の **Jetson ISO をダウンロード**します:
-   <https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/iso>
+   <https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/iso/jetsoninstaller-r39.2.1-2026-08-07-18-30-47-arm64.iso>
 2. **インストール用 USB を作成します。** [Balena Etcher](https://etcher.balena.io) で ISO を USB メモリに書き込みます("Flash from file" → ISO を選択 → USB ドライブを選択)。
    > ISO ファイルをファイルマネージャーでドライブにコピーするだけでは**いけません** —
    > ディスクイメージとして書き込む必要があり、そうしないと起動しません。
 3. **USB ドライブを開発キットに挿入**して電源を入れます。USB から自動的に起動しない場合は、起動中に UEFI ブートマネージャーを開き、USB ドライブを選択します。
 4. **起動してインストールします:**
    - **QSPI カプセルアップデート**の確認を求められたら、`Y` を押します。このファームウェア更新は ISO インストールの*前に*実行され、**2 回**実行されます。スキップしないでください — 互換性のために必須です。プロンプトを見逃した場合は、インストールをやり直し、確認が表示されたら承認してください。
-   - GRUB メニューで **Install Jetson ISO r39.2.1** を選択し、Enter キーを押します。
+   - GRUB メニューで **Install Jetson ISO** を選択し、Enter キーを押します。
    - 矢印キーでインストール先のストレージを選択します:**eMMC**(デフォルトの内蔵ストレージ)または **NVMe**(SSD を取り付けた場合に推奨)。
    - インストールにはおよそ 15 分かかり、画面上にテキスト出力が流れます。
 5. インストールが完了してシステムが再起動したら、**USB ドライブを取り外します** — 取り外さないと、キットが新しいシステムではなく再び USB メモリから起動してしまう可能性があります。
@@ -105,7 +105,7 @@ JetPack 7.2.1 のシステムでは `# R39 (release), REVISION: 2.1` と表示�
 *QSPI カプセルアップデートのプロンプト — `Y` を押します。互換性のために必須で、2 回実行されます。*
 
 ![Jetson ISO の GRUB メニュー](/images/jetson-agx-orin/jetson-iso_grub-menu-r39-top.png)
-*"Install Jetson ISO r39.2.1" を選択します。*
+*"Install Jetson ISO" を選択します。*
 
 ![GRUB メニューのインストール先選択肢](/images/jetson-agx-orin/jetson-iso_grub-menu-options.png)
 *インストール先として eMMC または NVMe を選択します。*

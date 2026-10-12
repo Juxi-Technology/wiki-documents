@@ -37,7 +37,7 @@ NeMo といった NVIDIA のコンポーネントをパッケージ化してい�
 セットアップは不要です。
 
 - NemoClaw 製品ページ: <https://www.nvidia.com/en-us/ai/nemoclaw>
-- GitHub 上の NemoClaw: <https://github.com/NemoClaw> · コミュニティの事例: <https://github.com/nemoclaw-community>
+- GitHub 上の NemoClaw: <https://github.com/NVIDIA/NemoClaw> · コミュニティの事例: <https://github.com/NVIDIA/nemoclaw-community>
 
 ## インストール(コマンド 1 つ、公式)
 
@@ -79,8 +79,8 @@ JetPack 7.2 には **エージェントスキル**が同梱されています:Je
 
 エコシステムにあるその他のエージェントスキル:
 
-- [Jetson デバイス側スキル](https://github.com/jetson-device-skills) · [Jetson BSP スキル](https://github.com/jetson-bsp-skills)
-- [DeepStream Coding Agent](https://github.com/DeepStream_Coding_Agent) — エージェント支援によるビジョンパイプライン構築([当社の DeepStream チュートリアル](/ja/tutorials/jetson-agx-orin/deepstream)を参照)
+- [Jetson デバイス側スキル](https://github.com/NVIDIA-AI-IOT/jetson-device-skills) · [Jetson BSP スキル](https://github.com/NVIDIA-AI-IOT/jetson-bsp-skills)
+- [DeepStream Coding Agent](https://github.com/NVIDIA-AI-IOT/DeepStream_Coding_Agent) — エージェント支援によるビジョンパイプライン構築([当社の DeepStream チュートリアル](/ja/tutorials/jetson-agx-orin/deepstream)を参照)
 - [Metropolis VSS ブループリントスキル](https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization/tree/main/skills) — 動画検索と要約のワークフロー
 
 ## AGX Orin キットの実用メモ

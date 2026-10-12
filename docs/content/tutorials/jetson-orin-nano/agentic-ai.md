@@ -139,6 +139,8 @@ NVIDIA staff debugged the Orin Nano + JetPack 7.2 + Ollama flow on its developer
 
 An always-on agent is a program with credentials and tool access that keeps working while you are not watching. On a device that holds your data, that is a real risk: an agent with tool and shell access here can read, change, or send anything it can reach.
 
+*Status: reviewed on 2026-10-11. Grounded in NVIDIA's official documentation, NVIDIA developer forum posts, and the Jetson AI Lab vendor guide, as of the dates listed; not yet verified on physical hardware by Juxi Technology.*
+
 **Use the policy layer.** NVIDIA describes OpenShell as "the secure runtime inside it that enforces what the agent can access: files, networks, credentials, and tools." During onboarding, pick the tightest sandbox policy tier that still does the job (the Jetson AI Lab walkthrough advises the tightest tier).
 
 **Credentials.** Give the agent scoped, revocable credentials — dedicated keys and accounts, never your personal ones. Anything the agent can read, it can copy; anything it can use, it can be tricked into using. Messaging integrations act with your identity: NVIDIA's Orin Nano page shows an OpenClaw + WhatsApp example, so use a dedicated account or number.

@@ -52,7 +52,7 @@ review_owner: cheny
 
 # Solução de problemas
 
-Encontre o seu sintoma no índice abaixo e depois leia a seção correspondente. Graus: **A** = documentação oficial da NVIDIA; **B** = fórum de desenvolvedores da NVIDIA (relatos de funcionários ou da comunidade). Itens apenas da comunidade estão marcados como *não confirmados*. A Juxi não tem uma unidade em mãos para esta série — esta página é apenas verificada em documentação, não testada em hardware.
+Encontre o seu sintoma no índice abaixo e depois leia a seção correspondente. Graus: **A** = documentação oficial da NVIDIA; **B** = fórum de desenvolvedores da NVIDIA (relatos de funcionários ou da comunidade). Itens apenas da comunidade estão marcados como *não confirmados*. A verificação de hardware desta série ainda está pendente — esta página foi verificada apenas com base na documentação, não testada em hardware.
 
 ## Comece pelo Guia de Solução de Problemas oficial da NVIDIA
 
@@ -127,6 +127,8 @@ Mesmo com o MAXN_SUPER ativo, a GPU pode permanecer fixada em 624.750.000 Hz (`b
 - Mitigação da NVIDIA: mude para MAXN (restaura o EMC para Fmax) antes de reiniciar; se já estiver no modo problemático, inicialize uma vez sem o display. (grau A, problema 6236259, [notas do r39.2](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf))
 
 ## Problemas com armazenamento NVMe
+
+*Status: revisado em 2026-10-11. Itens marcados como não confirmados vêm de relatos da comunidade em fóruns e podem mudar. Esta página é apenas verificada em documentação — a Juxi não testou este kit em hardware.*
 
 **O instalador não oferece a unidade / a etapa de particionamento falha** — *não confirmado*: o instalador pode não suportar unidades NVMe formatadas com setores de 4K; ele precisa de 512n/512e. Verifique com `nvme id-ns -H /dev/nvme0n1`; mude com `nvme format --lbaf=ID /dev/nvme0n1` — **destrutivo**; a postagem não discute preservação de dados. A NVIDIA não confirmou isso oficialmente. (grau B, não confirmado, [tópico 372151](https://forums.developer.nvidia.com/t/jetpack-7-2-jetson-linux-r39-2-on-jetson-orin-nano-developer-kit-getting-started-and-feedback-thread/372151))
 
@@ -219,7 +221,7 @@ Perguntas em aberto nas nossas fontes:
 - Notas de versão: [JetPack 7.2 / L4T r39.2 (PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf) · [JetPack 7.2.1 / L4T r39.2.1 (PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) — verificado em 2026-09-26
 - Tópicos do fórum de desenvolvedores da NVIDIA (verificado em 2026-09-26): [372151](https://forums.developer.nvidia.com/t/jetpack-7-2-jetson-linux-r39-2-on-jetson-orin-nano-developer-kit-getting-started-and-feedback-thread/372151) · [380410](https://forums.developer.nvidia.com/t/jetson-orin-nano-super-dev-kit-boot-hangs-after-jetpack-7-2-installation-on-nvme-ssd-installer-skips-username-password-setup/380410) · [372627](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627) · [377003](https://forums.developer.nvidia.com/t/jetpack-7-2-l4t-39-2-gpu-frequency-stuck-at-624-mhz-on-orin-nano-8gb-p3767-0005-bpmp-hard-limit-super-mode-not-unlocking/377003) · [377553](https://forums.developer.nvidia.com/t/jetson-orin-nano-missing-25w-power-mode-qspi-firmware-mismatch-after-missed-capsule-update/377553) · [375435](https://forums.developer.nvidia.com/t/continuing-power-mode-issues-on-jetpack-7-2/375435) · [372521](https://forums.developer.nvidia.com/t/jetpack-7-2-gpu-acceleration-issue/372521) · [383350](https://forums.developer.nvidia.com/t/ollama-not-supporting-jetson/383350) · [383858](https://forums.developer.nvidia.com/t/jetson-orin-nano-in-jetpack-7-2-r39-2-nvme-ssd-on-pcie-c7-is-not-detected-bootable-in-uefi-stage-but-works-normally-after-linux-boots/383858) · [379702](https://forums.developer.nvidia.com/t/jetson-orin-nano-repeated-ext4-nvme-filesystem-corruption-and-attempting-recovery-boot-on-jetpack-7-2/379702) · [372269](https://forums.developer.nvidia.com/t/nemoclaw-on-jetson-orin-super-with-jetpack-7-2/372269)
 
-*Status: revisado em 2026-10-11. Itens marcados como não confirmados vêm de relatos da comunidade em fóruns e podem mudar. Esta página é apenas verificada em documentação — a Juxi não testou este kit em hardware.*
+*Status: revisado em 2026-10-11. Itens marcados como não confirmados vêm de relatos da comunidade em fóruns e podem mudar. Esta página foi verificada apenas com base na documentação — a Juxi não testou este kit em hardware.*
 
 ---
 

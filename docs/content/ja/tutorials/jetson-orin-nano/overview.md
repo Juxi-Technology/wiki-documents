@@ -101,7 +101,7 @@ L4T r39.2 の電力モード表では、Super 構成は 15W(モード 0)、25W(�
 
 - **Jetson Orin Nano 8GB — このキット。** Orin ファミリーのエントリーポイント:67 INT8 TOPS、8GB の統合メモリ、7W～25W。
 - **Jetson Orin NX。** 同じキャリアボードで Orin NX モジュールの給電、テスト、開発ができます(専用のヒートシンクとファンが必要で、新品のモジュールは SDK Manager を使って Ubuntu ホストから書き込む必要があります)。*(Developer Kit User Guide — How-To)*
-- **Jetson AGX Orin — フラッグシップ層。** AGX Orin 32GB モジュールは Super Mode で 241 TOPS に達します*(JetPack 7.2 リリースハイライト)*。Juxi の [Jetson AGX Orin シリーズ](/ja/tutorials/jetson-agx-orin/quick-start)を参照してください。
+- **Jetson AGX Orin — フラッグシップ層。** AGX Orin 32GB モジュールは Super Mode で 241 TOPS に達します*(JetPack 7.2 リリースハイライト)*。Juxi の [Jetson AGX Orin シリーズ](https://wiki.juxitech.com/ja/tutorials/jetson-agx-orin/quick-start)を参照してください。
 
 計画で考慮すべき主な制約は **8GB の統合メモリ**です。DLA も PVA もないため、AI ワークロードは GPU のみで実行されます — **[メモリ効率](/ja/tutorials/jetson-orin-nano/memory-efficiency)** と **[ローカル LLM](/ja/tutorials/jetson-orin-nano/local-llm)** を参照してください。
 
@@ -154,6 +154,8 @@ L4T r39.2 の電力モード表では、Super 構成は 15W(モード 0)、25W(�
 - [L4T r38.2.1 Developer Guide — Partition Configuration (module SKUs)](https://docs.nvidia.com/jetson/archives/r38.2.1/DeveloperGuide/AR/BootArchitecture/PartitionConfiguration.html) (2026-09-26 確認)
 - [Jetson Orin Nano Super Developer Kit Datasheet (PDF, linked from nvidia.com)](https://dam-cdn.nvd.orangelogic.com/AssetLink/2ug686w80406gxf6q8uv7r3l7265m2n8.pdf) (2026-09-26 確認)
 - [Juxi Technology store listing for this kit](https://www.juxitech.com/products/nvidia-jetson-orin-nano-super-development-kit) (2026-09-26 確認)
+
+*ステータス: レビュー済み（2026-10-11）。記載日時点の NVIDIA 公式ドキュメントに基づく内容です。Juxi Technology による実機検証はまだ行われていません。*
 
 *ステータス: レビュー済み（2026-10-11）。記載日時点の NVIDIA 公式ドキュメントに基づく内容です。Juxi Technology による実機検証はまだ行われていません。*
 

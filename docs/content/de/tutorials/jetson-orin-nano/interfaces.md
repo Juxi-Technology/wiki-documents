@@ -217,6 +217,10 @@ Der Button-Header trägt die Funktionen serielle Konsole, Reset und Force-Recove
 Dokumentation mit Stand der oben genannten Daten; noch nicht von Juxi Technology auf physischer Hardware
 verifiziert.*
 
+*Status: geprüft am 2026-10-11. Basiert auf NVIDIAs offizieller
+Dokumentation mit Stand der oben genannten Daten; noch nicht von Juxi Technology auf physischer Hardware
+verifiziert.*
+
 **Bildnachweis:** Die Layout-Bilder stammen aus NVIDIAs offiziellem *Jetson Orin
 Nano Developer Kit User Guide* (heruntergeladen am 2026-09-26), © NVIDIA Corporation.
 

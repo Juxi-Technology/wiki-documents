@@ -25,7 +25,7 @@ review_owner: cheny
 
 | Date | Modification |
 |---|---|
-| 2026-09-26 | Publication initiale du jeu de documentation au statut de brouillon : Démarrage rapide, Flashage et mises à jour, Vérifier votre système, Présentation du produit, Interfaces et disposition matérielle, FAQ, Dépannage, Téléchargements, le guide de migration JetPack 6.x → 7.2, cinq tutoriels (LLM local, Efficacité mémoire, DeepStream, Robotique, IA agentique), le Glossaire et ce Journal des modifications. Rédigé d'après la documentation officielle de NVIDIA pour JetPack 7.2.1 ; pas encore vérifié sur matériel physique. |
+| 2026-09-26 | Publication initiale du jeu de documentation : Démarrage rapide, Flashage et mises à jour, Vérifier votre système, Présentation du produit, Interfaces et disposition matérielle, FAQ, Dépannage, Téléchargements, le guide de migration JetPack 6.x → 7.2, cinq tutoriels (LLM local, Efficacité mémoire, DeepStream, Robotique, IA agentique), le Glossaire et ce Journal des modifications. Rédigé d'après la documentation officielle de NVIDIA pour JetPack 7.2.1 ; pas encore vérifié sur matériel physique. |
 
 ## Versions de JetPack pour ce kit
 
@@ -47,6 +47,10 @@ pour savoir ce que vous exécutez, consultez **[Vérifier votre système](/fr/tu
 - [JetPack SDK Downloads](https://developer.nvidia.com/embedded/jetpack/downloads) (vérifié le 2026-09-26)
 - [Notes de version Jetson Linux 39.2.1 (PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) (vérifié le 2026-09-26)
 - [Annonce NVIDIA JetPack 6.2 — Super mode for Jetson Orin Nano](https://developer.nvidia.com/blog/nvidia-jetpack-6-2-brings-super-mode-to-nvidia-jetson-orin-nano-and-jetson-orin-nx-modules/) (lié comme l'annonce du mode d'alimentation Super par le fournisseur)
+
+*Statut : relu le 2026-10-11. Fondé sur la
+documentation officielle de NVIDIA aux dates indiquées ; pas encore vérifié
+sur matériel physique par Juxi Technology.*
 
 *Statut : relu le 2026-10-11. Fondé sur la
 documentation officielle de NVIDIA aux dates indiquées ; pas encore vérifié

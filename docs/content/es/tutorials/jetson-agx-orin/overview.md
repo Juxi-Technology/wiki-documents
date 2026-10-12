@@ -77,13 +77,13 @@ proporcionar usted mismo, consulte **[Inicio rápido](/es/tutorials/jetson-agx-o
 - [Jetson AGX Orin Developer Kit User Guide — Introduction](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/index.html) (consultado el 2026-09-23)
 - [Página de producto NVIDIA Jetson Orin](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/) (consultado el 2026-09-23)
 
+**Créditos de la imagen:** Imagen del producto procedente de la *Jetson AGX
+Orin Developer Kit User Guide* oficial de NVIDIA (descargada el 2026-09-23),
 *Estado: revisado el 2026-10-11. Se añadirá una tabla
 completa de especificaciones del módulo a partir de la hoja de datos oficial de
 NVIDIA; hasta entonces, tome la página de producto de NVIDIA como la fuente
 autorizada de las especificaciones.*
 
-**Créditos de la imagen:** Imagen del producto procedente de la *Jetson AGX
-Orin Developer Kit User Guide* oficial de NVIDIA (descargada el 2026-09-23),
 © NVIDIA Corporation.
 
 ---

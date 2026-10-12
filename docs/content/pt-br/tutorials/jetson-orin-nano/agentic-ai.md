@@ -238,6 +238,11 @@ que continua trabalhando enquanto você não está olhando. Em um dispositivo qu
 guarda seus dados, isso é um risco real: um agente com acesso a ferramentas e
 shell aqui pode ler, alterar ou enviar qualquer coisa que consiga alcançar.
 
+*Status: revisado em 2026-10-11. Baseado na documentação
+oficial da NVIDIA, em posts dos fóruns de desenvolvedores da NVIDIA e no guia
+do fabricante do Jetson AI Lab, nas datas indicadas; ainda não verificado em
+hardware físico pela Juxi Technology.*
+
 **Use a camada de política.** A NVIDIA descreve o OpenShell como "o runtime
 seguro dentro dele que impõe o que o agente pode acessar: arquivos, redes,
 credenciais e ferramentas." Durante o onboarding, escolha o nível mais restrito

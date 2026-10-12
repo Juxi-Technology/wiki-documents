@@ -45,7 +45,7 @@ L'objectif énoncé par NVIDIA : faire tenir des charges de travail plus
 exigeantes dans une empreinte mémoire plus réduite (c'est ainsi que le même
 matériel gagne en utilité au fil des versions logicielles). Commencez ici :
 
-- [Compétences Jetson côté appareil](https://github.com/jetson-device-skills) · [Compétences BSP Jetson](https://github.com/jetson-bsp-skills)
+- [Compétences Jetson côté appareil](https://github.com/NVIDIA-AI-IOT/jetson-device-skills) · [Compétences BSP Jetson](https://github.com/NVIDIA-AI-IOT/jetson-bsp-skills)
 - Contexte : [le blog de NVIDIA sur l'efficacité mémoire de JetPack 7.2](https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2)
 
 > **Attention :** les modifications de carveouts et de réservations touchent

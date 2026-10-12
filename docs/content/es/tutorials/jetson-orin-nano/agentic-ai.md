@@ -236,6 +236,11 @@ que guarda sus datos, eso es un riesgo real: un agente con acceso a
 herramientas y al shell aquí puede leer, cambiar o enviar cualquier cosa que
 esté a su alcance.
 
+*Estado: revisado el 2026-10-11. Basado en la documentación
+oficial de NVIDIA, publicaciones del foro de desarrolladores de NVIDIA y la
+guía del proveedor de Jetson AI Lab, en las fechas indicadas; aún no
+verificado en hardware físico por Juxi Technology.*
+
 **Use la capa de políticas.** NVIDIA describe OpenShell como «el entorno de
 ejecución seguro en su interior que impone a qué puede acceder el agente:
 archivos, redes, credenciales y herramientas». Durante la incorporación, elija

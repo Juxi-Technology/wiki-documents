@@ -48,7 +48,7 @@ NVIDIA® Jetson Orin Nano™ Super 개발자 키트는 Jetson Orin 제품군의 
 
 ## "Super"의 의미
 
-Super 성능 향상은 같은 하드웨어에서 GPU, 메모리, CPU 클록을 끌어올리는 소프트웨어 전원 모드로 제공되며, NVIDIA는 기존 키트도 JetPack을 업그레이드하면 얻을 수 있다고 말합니다: "Existing Jetson Orin Nano Developer Kit users can get the 'Super' performance boost with a software upgrade." *(Developer Kit User Guide; NVIDIA Super Boost 발표)*
+Super 성능 향상은 같은 하드웨어에서 GPU, 메모리, CPU 클록을 끌어올리는 소프트웨어 전원 모드로 제공되며, NVIDIA는 기존 키트도 JetPack을 업그레이드하면 얻을 수 있다고 말합니다: "기존 Jetson Orin Nano 개발자 키트 사용자는 소프트웨어 업그레이드로 'Super' 성능 향상을 얻을 수 있습니다." *(Developer Kit User Guide; NVIDIA Super Boost 발표)*
 
 아래 표는 원래 키트와 Super 구성을 비교합니다. *(NVIDIA Super Boost 발표)*
 
@@ -68,7 +68,7 @@ Super 성능 향상은 같은 하드웨어에서 GPU, 메모리, CPU 클록을 �
 
 JetPack 7.2.1부터 Jetson ISO는 기본적으로 키트를 Super 구성으로 플래싱합니다 *(JetPack 다운로드 페이지)*. JetPack 7.2 ISO로 처음 설치된 장치는 non-Super 프로파일을 유지할 수 있습니다; 25W나 MAXN SUPER가 없다면 **[문제 해결](/ko/tutorials/jetson-orin-nano/troubleshooting)**을 참조하십시오.
 
-L4T r39.2 전원 모드 표에서 Super 구성은 15W(모드 0), 25W(모드 1, 기본값), MAXN SUPER(모드 2, 실험적; Super 구성으로 플래싱된 키트에서만)를 기재합니다. MAXN SUPER는 CPU를 최대 1.7 GHz, GPU를 최대 1,020 MHz, 메모리 컨트롤러를 3,199 MHz로 동작시킵니다. 모드는 `sudo /usr/sbin/nvpmodel -q`로 확인하고, `sudo /usr/sbin/nvpmodel -m <mode_id>`로 설정하십시오. NVIDIA의 키트 페이지는 "7W to 25W"라고 표기하지만, r39.2 표에는 위의 세 가지 모드가 나옵니다 — **[시스템 검증](/ko/tutorials/jetson-orin-nano/verify-your-system)**에서 사용 중인 장치를 확인하십시오. *(L4T r39.2 Power and Performance 페이지)*
+L4T r39.2 전원 모드 표에서 Super 구성은 15W(모드 0), 25W(모드 1, 기본값), MAXN SUPER(모드 2, 실험적; Super 구성으로 플래싱된 키트에서만)를 기재합니다. MAXN SUPER는 CPU를 최대 1.7 GHz, GPU를 최대 1,020 MHz, 메모리 컨트롤러를 3,199 MHz로 동작시킵니다. 모드는 `sudo /usr/sbin/nvpmodel -q`로 확인하고, `sudo /usr/sbin/nvpmodel -m <mode_id>`로 설정하십시오. NVIDIA의 키트 페이지는 "7W~25W"라고 표기하지만, r39.2 표에는 위의 세 가지 모드가 나옵니다 — **[시스템 검증](/ko/tutorials/jetson-orin-nano/verify-your-system)**에서 사용 중인 장치를 확인하십시오. *(L4T r39.2 Power and Performance 페이지)*
 
 ## 모듈 사양
 
@@ -101,7 +101,7 @@ L4T r39.2 전원 모드 표에서 Super 구성은 15W(모드 0), 25W(모드 1, �
 
 - **Jetson Orin Nano 8GB — 이 키트.** Orin 제품군의 엔트리 포인트: 67 INT8 TOPS, 8GB 통합 메모리, 7W~25W.
 - **Jetson Orin NX.** 같은 캐리어로 Orin NX 모듈에 전원을 공급하고, 테스트하고, 개발할 수 있습니다(별도의 방열판과 팬 필요; 신품 모듈은 Ubuntu 호스트에서 SDK Manager로 플래싱해야 합니다). *(Developer Kit User Guide — How-To)*
-- **Jetson AGX Orin — 플래그십 등급.** AGX Orin 32GB 모듈은 Super Mode에서 241 TOPS에 도달합니다 *(JetPack 7.2 릴리스 하이라이트)*. Juxi의 [Jetson AGX Orin 시리즈](/ko/tutorials/jetson-agx-orin/quick-start)를 참조하십시오.
+- **Jetson AGX Orin — 플래그십 등급.** AGX Orin 32GB 모듈은 Super Mode에서 241 TOPS에 도달합니다 *(JetPack 7.2 릴리스 하이라이트)*. Juxi의 [Jetson AGX Orin 시리즈](https://wiki.juxitech.com/ko/tutorials/jetson-agx-orin/quick-start)를 참조하십시오.
 
 계획 시 고려해야 할 주요 제약은 **8GB 통합 메모리**입니다; DLA와 PVA가 없어 AI 워크로드는 GPU에서만 실행됩니다 — **[메모리 효율](/ko/tutorials/jetson-orin-nano/memory-efficiency)**과 **[로컬 LLM](/ko/tutorials/jetson-orin-nano/local-llm)**을 참조하십시오.
 
@@ -118,7 +118,7 @@ L4T r39.2 전원 모드 표에서 Super 구성은 15W(모드 0), 25W(모드 1, �
 
 ## 구성품
 
-박스에는 개발자 키트(레퍼런스 캐리어 보드에 장착된, 방열판 포함 Orin Nano 8GB 모듈), 19 V 전원 공급 장치, 동봉된 802.11ac/ab/gn 무선 카드, 빠른 시작 및 지원 카드가 들어 있습니다. NVIDIA는 이 키트가 "does not include removable storage in the box"라고 밝힙니다. *(데이터시트; 빠른 시작)*
+박스에는 개발자 키트(레퍼런스 캐리어 보드에 장착된, 방열판 포함 Orin Nano 8GB 모듈), 19 V 전원 공급 장치, 동봉된 802.11ac/ab/gn 무선 카드, 빠른 시작 및 지원 카드가 들어 있습니다. NVIDIA는 이 키트가 "박스에 탈착식 스토리지를 포함하지 않습니다"라고 밝힙니다. *(데이터시트; 빠른 시작)*
 
 직접 준비해야 하는 것:
 
@@ -155,6 +155,8 @@ L4T r39.2 전원 모드 표에서 Super 구성은 15W(모드 0), 25W(모드 1, �
 - [L4T r38.2.1 Developer Guide — Partition Configuration (module SKUs)](https://docs.nvidia.com/jetson/archives/r38.2.1/DeveloperGuide/AR/BootArchitecture/PartitionConfiguration.html) (2026-09-26 확인)
 - [Jetson Orin Nano Super Developer Kit Datasheet (PDF, linked from nvidia.com)](https://dam-cdn.nvd.orangelogic.com/AssetLink/2ug686w80406gxf6q8uv7r3l7265m2n8.pdf) (2026-09-26 확인)
 - [Juxi Technology store listing for this kit](https://www.juxitech.com/products/nvidia-jetson-orin-nano-super-development-kit) (2026-09-26 확인)
+
+*상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서에 근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*
 
 *상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서에 근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*
 

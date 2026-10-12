@@ -92,6 +92,12 @@ description: "Juxi Technology Wiki のチュートリアル一覧。ロボット
 - [トラブルシューティング](/ja/tutorials/jetson-agx-orin/troubleshooting)
 - [用語集](/ja/tutorials/jetson-agx-orin/glossary)
 - [変更履歴](/ja/tutorials/jetson-agx-orin/changelog)
+- [XLeRobot Docker — 01 · 概要](/ja/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview)
+- [XLeRobot Docker — 02 · 環境準備](/ja/tutorials/jetson-agx-orin/xlerobot-docker/deployment/02-Environment-Setup)
+- [XLeRobot Docker — 03 · デプロイ](/ja/tutorials/jetson-agx-orin/xlerobot-docker/deployment/03-Deployment)
+- [XLeRobot Docker — 原版 LeRobot の実行コマンド](/ja/tutorials/jetson-agx-orin/xlerobot-docker/lerobot/01-Operation)
+- [XLeRobot Docker — XLeRobot の実行コマンド](/ja/tutorials/jetson-agx-orin/xlerobot-docker/xlerobot/01-Operation)
+- [XLeRobot Docker — トラブルシューティングと早見表](/ja/tutorials/jetson-agx-orin/xlerobot-docker/troubleshooting/01-Troubleshooting)
 
 ### Jetson Orin Nano Super 開発キット
 
@@ -111,6 +117,12 @@ description: "Juxi Technology Wiki のチュートリアル一覧。ロボット
 - [トラブルシューティング](/ja/tutorials/jetson-orin-nano/troubleshooting)
 - [用語集](/ja/tutorials/jetson-orin-nano/glossary)
 - [変更履歴](/ja/tutorials/jetson-orin-nano/changelog)
+- [XLeRobot Docker — 01 · 概要](/ja/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview)
+- [XLeRobot Docker — 02 · 環境準備](/ja/tutorials/jetson-orin-nano/xlerobot-docker/deployment/02-Environment-Setup)
+- [XLeRobot Docker — 03 · デプロイ](/ja/tutorials/jetson-orin-nano/xlerobot-docker/deployment/03-Deployment)
+- [XLeRobot Docker — 原版 LeRobot の実行コマンド](/ja/tutorials/jetson-orin-nano/xlerobot-docker/lerobot/01-Operation)
+- [XLeRobot Docker — XLeRobot の実行コマンド](/ja/tutorials/jetson-orin-nano/xlerobot-docker/xlerobot/01-Operation)
+- [XLeRobot Docker — トラブルシューティングと早見表](/ja/tutorials/jetson-orin-nano/xlerobot-docker/troubleshooting/01-Troubleshooting)
 
 ### 学習リソース
 

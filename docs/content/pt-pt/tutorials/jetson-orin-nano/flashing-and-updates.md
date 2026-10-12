@@ -106,6 +106,10 @@ cabo série USB-para-TTL para o kit.
 > gravação. Confirme os requisitos do NVIDIA SDK Manager antes de preparar um
 > PC anfitrião.
 
+*Estado: revisado em 2026-10-11. Baseado na documentação
+oficial da NVIDIA nas datas indicadas; ainda não verificado em hardware físico
+pela Juxi Technology.*
+
 **Instale o SDK Manager no anfitrião.** A página de configuração da NVIDIA
 apresenta os comandos exatos para Ubuntu 22.04 e 20.04; inicie-o com
 `sdkmanager` e inicie sessão com as suas credenciais do NVIDIA Developer

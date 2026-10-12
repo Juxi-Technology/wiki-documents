@@ -26,7 +26,7 @@ review_owner: cheny
 ## JetPack 7.2.1 / Jetson Linux 39.2.1
 
 - [JetPack SDK 다운로드 및 릴리스 노트](https://developer.nvidia.com/embedded/jetpack/downloads) — 릴리스 정보와 다운로드를 위한 **정본 허브**. ⚠️ **해당 페이지의 구성 요소 표는 행마다 갱신이 뒤처져 있습니다**: 2026-09-26 기준으로 VPI와 PVA에는 여전히 JetPack **7.2** 값이 실려 있고, Isaac ROS 행은 여전히 "출시 예정"으로 표기되어 있습니다(4.6.0부터 출시됨). JetPack 7.2.1 시스템이 실제로 설치하는 버전은 NVIDIA의 [Jetson apt 저장소](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages)에서 확인하십시오 — [시스템 검증](/ko/tutorials/jetson-agx-orin/verify-your-system)을 참조하십시오.
-- [JetPack ISO 이미지(r39.2.1)](https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/iso) — 저희 [퀵 스타트](/ko/tutorials/jetson-agx-orin/quick-start)에서 사용하는 USB 설치 이미지
+- [JetPack ISO 이미지(r39.2.1)](https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/iso/jetsoninstaller-r39.2.1-2026-08-07-18-30-47-arm64.iso) — 저희 [퀵 스타트](/ko/tutorials/jetson-agx-orin/quick-start)에서 사용하는 USB 설치 이미지
 - [NVIDIA SDK Manager](https://developer.nvidia.com/sdk-manager) — 호스트 PC용 플래싱 도구
 - [Jetson AGX Orin용 Yocto 이미지](https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/yocto2) — 공식 Yocto/OpenEmbedded 레시피와 이미지
 - [JetPack 아카이브](https://developer.nvidia.com/embedded/jetpack-archive) · [Jetson Linux 아카이브](https://developer.nvidia.com/embedded/jetson-linux-archive) — 이전 릴리스
@@ -51,13 +51,12 @@ review_owner: cheny
 
 - [Jetson AI Lab](https://www.jetson-ai-lab.com) — Jetson에서 AI 모델을 실행하기 위한 실습 튜토리얼
 - [NVIDIA NemoClaw](https://www.nvidia.com/en-us/ai/nemoclaw) — Jetson의 에이전트 AI; JetPack 7.2부터 단일 명령 설치 지원
-- [Jetson 디바이스 측 스킬](https://github.com/jetson-device-skills) · [Jetson BSP 스킬](https://github.com/jetson-bsp-skills) — NVIDIA가 제공하는 재사용 가능한 에이전트 스킬
+- [Jetson 디바이스 측 스킬](https://github.com/NVIDIA-AI-IOT/jetson-device-skills) · [Jetson BSP 스킬](https://github.com/NVIDIA-AI-IOT/jetson-bsp-skills) — NVIDIA가 제공하는 재사용 가능한 에이전트 스킬
 
 ## Juxi Technology
 
 - **제품 카탈로그 및 액세서리:** <https://wiki.juxitech.com/products/> — 키트용 애드온(카메라, 로봇 암, 센서 등), 사양과 구매 링크 포함
 - **연락처:** 기술 지원 — support@juxitech.com · 영업 — sales@juxitech.com · 제품 문의 — pe@juxitech.com
-- Juxi의 시작하기 스크립트와 예제 코드는 준비되는 대로 여기에 추가됩니다.
 
 ## 출처
 

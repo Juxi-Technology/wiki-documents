@@ -44,7 +44,7 @@ Abhängigkeiten):
 
 - **Methode 4 — Docker (empfohlen für neue Nutzer):** Verwenden Sie die NGC-DeepStream-Container — siehe [Docker Containers](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_docker_containers.html).
 - **Methode 1 — SDK Manager:** Wählen Sie **DeepStreamSDK** unter „Additional SDKs“ zusammen mit den JetPack-7.2-GA-Komponenten aus.
-- **Methode 2 — tar-Paket:** Laden Sie `deepstream_sdk_v9.1.0_jetson.tbz2` herunter (von [NVIDIA/DeepStream releases](https://github.com/DeepStream/releases/tag)), dann:
+- **Methode 2 — tar-Paket:** Laden Sie `deepstream_sdk_v9.1.0_jetson.tbz2` herunter (von [NVIDIA/DeepStream releases](https://github.com/NVIDIA/DeepStream/releases)), dann:
   ```bash
   sudo tar -xvf deepstream_sdk_v9.1.0_jetson.tbz2 -C /
   cd /opt/nvidia/deepstream/deepstream-9.1
@@ -121,7 +121,7 @@ Hinweise aus der offiziellen Schnellstart-Anleitung:
 
 - **Agentengestützte Pipelines:** NVIDIA dokumentiert einen *DeepStream Coding
   Agent* (KI-Agenten-Unterstützung beim Aufbau von Pipelines) —
-  [Dokumentation](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_AI_Agent.html) · [GitHub](https://github.com/DeepStream_Coding_Agent).
+  [Dokumentation](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_AI_Agent.html) · [GitHub](https://github.com/NVIDIA-AI-IOT/DeepStream_Coding_Agent).
 - **LLM/VLM in der Pipeline:** Die Referenzanwendungen enthalten ein
   **deepstream-vllm-plugin**, mit dem sich Video-Pipelines mit dem Reasoning
   großer Modelle kombinieren lassen — siehe [die

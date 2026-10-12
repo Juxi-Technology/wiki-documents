@@ -21,7 +21,7 @@ verified_against:
 
 # 快速开始
 
-本页将带你把 Jetson AGX Orin 开发套件（64GB）从开箱一路装到完成全部更新的 **JetPack 7.2.1** 系统。以下流程遵循 NVIDIA 当前推荐的设置步骤；每个步骤都已对照 NVIDIA 官方开发套件文档核实，核实日期见本页底部。
+本页将带你把 Jetson AGX Orin 开发套件（64GB）从开箱一路装到完成全部更新的 **JetPack 7.2.1** 系统。以下流程遵循 NVIDIA 当前推荐的设置步骤；每个步骤都已对照 NVIDIA 官方开发套件文档核实。
 
 **三步流程：**
 
@@ -61,7 +61,7 @@ verified_against:
 
 ![初始设置完成后的 Ubuntu 桌面](/images/jetson-agx-orin/ubuntu_initial_desktop_1280x720.png)
 
-也可以从另一台电脑进行无头安装——具体接线方式见 NVIDIA 的快速入门指南（链接见本页底部）。
+也可以从另一台电脑进行无头安装——具体接线方式见 [NVIDIA 的快速入门指南](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/quick_start.html)。
 
 > **钜犀提示：** 如果你打算从 NVMe SSD 运行系统，请在第 2 步留意这一点——ISO 安装器可以直接安装到 NVMe 硬盘。
 
@@ -76,14 +76,14 @@ cat /etc/nv_tegra_release
 JetPack 7.2.1 系统会输出 `# R39 (release), REVISION: 2.1`。如果输出显示的是较旧的版本，请先更新到 L4T r35.5 或更高版本（见下方*注意事项*）。
 
 1. **下载 Jetson ISO**（对应 JetPack 7.2.1 / L4T r39.2.1）：
-   <https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/iso>
+   <https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/iso/jetsoninstaller-r39.2.1-2026-08-07-18-30-47-arm64.iso>
 2. **制作安装 U 盘。** 用 [Balena Etcher](https://etcher.balena.io) 将 ISO 写入 U 盘（“Flash from file” → 选择 ISO → 选择 U 盘）。
    > **不要**用文件管理器把 ISO 文件直接复制到 U 盘——
    > 必须按磁盘镜像写入，否则无法引导。
 3. **插入 U 盘**并给开发套件上电。如果套件没有自动从 U 盘引导，请在启动过程中打开 UEFI 引导管理器并选择该 U 盘。
 4. **引导并安装：**
    - 如果提示你确认 **QSPI capsule 更新**，请按 `Y`。该固件更新在 ISO 安装*之前*运行，并且会运行**两次**。不要跳过——它是兼容性所必需的。如果错过了该提示，请重新开始安装，并在再次提示时确认。
-   - 在 GRUB 菜单中，选择 **Install Jetson ISO r39.2.1**，然后按回车键。
+   - 在 GRUB 菜单中，选择 **Install Jetson ISO**，然后按回车键。
    - 用方向键选择存储目标：**eMMC**（默认内置存储）或 **NVMe**（如果加装了 SSD，推荐选它）。
    - 安装大约需要 15 分钟，屏幕上会滚动显示文本输出。
 5. 安装完成并重启后，**拔出 U 盘**——否则套件可能再次从 U 盘启动，而不是从新系统启动。
@@ -101,7 +101,7 @@ JetPack 7.2.1 系统会输出 `# R39 (release), REVISION: 2.1`。如果输出显
 *QSPI capsule 更新提示——按 `Y`。它是兼容性所必需的，并且会运行两次。*
 
 ![Jetson ISO 的 GRUB 菜单](/images/jetson-agx-orin/jetson-iso_grub-menu-r39-top.png)
-*选择 “Install Jetson ISO r39.2.1”。*
+*选择 “Install Jetson ISO”。*
 
 ![GRUB 菜单中的存储目标选项](/images/jetson-agx-orin/jetson-iso_grub-menu-options.png)
 *选择 eMMC 或 NVMe 作为安装目标。*

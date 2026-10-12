@@ -25,7 +25,7 @@ review_owner: cheny
 
 | Fecha | Cambio |
 |---|---|
-| 2026-09-26 | Conjunto de documentación inicial publicado como borrador: Inicio rápido, Flasheo y actualizaciones, Verificación del sistema, Descripción general del producto, Interfaces y disposición del hardware, FAQ, Solución de problemas, Descargas y la guía de migración de JetPack 6.x → 7.2, cinco tutoriales (Inferencia LLM local, Eficiencia de memoria, DeepStream, Robótica, IA agéntica), el Glosario y este Registro de cambios. Redactado a partir de la documentación oficial de NVIDIA para JetPack 7.2.1; aún no verificado en hardware físico. |
+| 2026-09-26 | Conjunto de documentación inicial publicado: Inicio rápido, Flasheo y actualizaciones, Verificación del sistema, Descripción general del producto, Interfaces y disposición del hardware, FAQ, Solución de problemas, Descargas y la guía de migración de JetPack 6.x → 7.2, cinco tutoriales (Inferencia LLM local, Eficiencia de memoria, DeepStream, Robótica, IA agéntica), el Glosario y este Registro de cambios. Redactado a partir de la documentación oficial de NVIDIA para JetPack 7.2.1; aún no verificado en hardware físico. |
 
 ## Versiones de JetPack para este kit
 
@@ -47,6 +47,10 @@ para comprobar qué está ejecutando, consulte **[Verificación del sistema](/es
 - [JetPack SDK Downloads](https://developer.nvidia.com/embedded/jetpack/downloads) (consultado el 2026-09-26)
 - [Jetson Linux 39.2.1 Release Notes (PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) (consultado el 2026-09-26)
 - [NVIDIA JetPack 6.2 announcement — Super mode for Jetson Orin Nano](https://developer.nvidia.com/blog/nvidia-jetpack-6-2-brings-super-mode-to-nvidia-jetson-orin-nano-and-jetson-orin-nx-modules/) (enlazado como el anuncio del fabricante del modo de alimentación Super)
+
+*Estado: revisado el 2026-10-11. Basado en la documentación
+oficial de NVIDIA a las fechas indicadas; aún no verificado en hardware físico
+por Juxi Technology.*
 
 *Estado: revisado el 2026-10-11. Basado en la documentación
 oficial de NVIDIA a las fechas indicadas; aún no verificado en hardware físico

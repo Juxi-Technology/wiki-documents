@@ -187,6 +187,8 @@ review_owner: cheny
 
 *ステータス: レビュー済み（2026-10-11）。上記の手順と数値は、記載の日付時点の NVIDIA 公式ドキュメントに基づくものです。Juxi Technology による実機検証はまだ行われていません。*
 
+*ステータス: レビュー済み（2026-10-11）。上記の手順と数値は、記載の日付時点の NVIDIA 公式ドキュメントに基づくものです。Juxi Technology による実機検証はまだ行われていません。*
+
 **画像クレジット:** レイアウト図は NVIDIA 公式の *Jetson Orin Nano Developer Kit User Guide*(2026-09-26 ダウンロード)からのもので、著作権は © NVIDIA Corporation に属します。
 
 ---

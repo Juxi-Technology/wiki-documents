@@ -85,6 +85,10 @@ block on the left, which is a separate host.
 
 ## Isaac ROS on JetPack 7.2 — what the official pages say today
 
+*Status: reviewed on 2026-10-11. Ecosystem availability changes
+quickly — re-check the linked NVIDIA and upstream pages before relying on
+this table. Not yet verified on physical hardware by Juxi Technology.*
+
 **The NVIDIA pages disagree with each other.** The JetPack 7.2.1 downloads
 page still lists "NVIDIA Isaac™ ROS — Coming soon". The Isaac ROS project
 pages say support has shipped. For Isaac ROS itself, the project pages are the

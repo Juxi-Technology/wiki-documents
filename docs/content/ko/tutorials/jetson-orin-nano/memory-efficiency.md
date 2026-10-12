@@ -185,7 +185,7 @@ NVIDIA의 8 GB 사례 연구(메모리 효율 블로그, 표 7): 전체 GNOME �
 | 도구 | 보여 주는 것 | 비고 |
 |---|---|---|
 | `sudo tegrastats` | CPU, GPU, 메모리, 온도, 전력 | 개발자 키트 사용자 가이드: nvidia-smi는 Jetson의 기본 모니터링 도구가 아닙니다 |
-| `nvidia-smi dmon` | GPU 사용률 | 릴리스 노트 5406663 기준; Jetson Power GUI의 GPU 사용률은 "still under evaluation"입니다 |
+| `nvidia-smi dmon` | GPU 사용률 | 릴리스 노트 5406663 기준; Jetson Power GUI의 GPU 사용률은 "아직 평가 중"입니다 |
 | `free -h` | 메모리에 대한 OS 관점 | GPU 워크로드가 얼마나 할당할 수 있는지는 알려 주지 않습니다 |
 | procrank | 프로세스별 물리 메모리(PSS) | `git clone https://github.com/csimmonds/procrank_linux.git`, `cd procrank_linux/`, `make`, `sudo ./procrank` |
 | nvmap clients | GPU/멀티미디어 버퍼를 보유한 프로세스 | `sudo cat /sys/kernel/debug/nvmap/iovmm/clients` |
@@ -227,6 +227,9 @@ NVIDIA의 8 GB 사례 연구(메모리 효율 블로그, 표 7): 전체 GNOME �
 - Jetson Linux 문서: [r39.2.1 릴리스 노트](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) (문제 5661165, 5699079, 5406663) · [Power and Performance, r39.2](https://docs.nvidia.com/jetson/archives/r39.2/DeveloperGuide/SD/PlatformPowerAndPerformance/JetsonOrinNanoSeriesJetsonOrinNxSeriesAndJetsonAgxOrinSeries.html) · [Dev Kit How-To](https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/howto.html) (2026-09-26 확인)
 - Jetson AI Lab: [TensorRT Edge-LLM 튜토리얼](https://www.jetson-ai-lab.com/tutorials/tensorrt-edge-llm/) · [RAM 최적화](https://www.jetson-ai-lab.com/tutorials/ram-optimization/) (Orin Nano 빌드 제한; NVMe 스왑; 2026-09-26 확인)
 - [NVIDIA 개발자 포럼 — Ollama on Jetson](https://forums.developer.nvidia.com/t/ollama-not-supporting-jetson/383350) (커뮤니티: free -h vs cudaMalloc; 등급 B; 2026-09-26 확인)
+
+*상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서에
+근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*
 
 *상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서에
 근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*

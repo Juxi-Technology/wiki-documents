@@ -55,7 +55,7 @@ Jetson Orin Nano Super 개발자 키트(8 GB)는 언어 모델을 로컬에서 �
 
 1. **Orin은 FP16, INT8, INT4 엔진만 실행합니다. FP8과 FP4 엔진은 이
    디바이스에서 실행되지 않습니다** — Thor/Blackwell급 기능입니다("Jetson
-   Orin does not run FP8 or FP4 model engines" — 지원 매트릭스).
+   Orin은 FP8 또는 FP4 모델 엔진을 실행하지 않습니다" — 지원 매트릭스).
 2. **엔진은 C++ 런타임이 디바이스에서 직접 빌드합니다.** ONNX 내보내기와
    양자화는 x86-64 Linux 호스트에서 실행되며 Orin에서는 실행되지 않습니다.
    엔진은 SM 단위로 정확히 일치해야 합니다: Thor(SM110)에서 빌드한 엔진은
@@ -80,9 +80,8 @@ TensorRT Edge-LLM은 엣지 플랫폼에서 LLM과 VLM을 위한 NVIDIA의 공�
 - **모델 범위:** 지원 checkpoint에는 Llama 3.2 1B/3B, Llama 3.1 8B,
   Qwen2.5(0.5B–14B), Qwen3(0.6B–8B), 그리고 Qwen2.5-VL 3B/7B와
   InternVL3/3.5(1B–14B) 같은 VLM이 포함됩니다 — 30B 파라미터 미만의 dense
-  checkpoint입니다. 이것은 검증 매트릭스가 아닙니다: "not every listed
-  checkpoint has been fully verified on every supported platform and
-  precision."
+  checkpoint입니다. 이것은 검증 매트릭스가 아닙니다: "나열된 모든
+  checkpoint가 모든 지원 플랫폼과 정밀도에서 완전히 검증된 것은 아닙니다."
 - **8 GB용 빌드 플래그:** Orin Nano에서 INT4 엔진을 빌드할 때는
   `--externalize-weights int4_ffn`(dense) 또는 `--externalize-weights
   int4_ffn int4_moe`(MoE)를 전달하여 엔진 빌드 메모리를 줄이십시오.
@@ -95,17 +94,17 @@ TensorRT Edge-LLM은 엣지 플랫폼에서 LLM과 VLM을 위한 NVIDIA의 공�
 > **Juxi 팁:** 권위 있는 단계는 NVIDIA의 문서에 있습니다 — [Quick Start](https://nvidia.github.io/TensorRT-Edge-LLM/user_guide/getting_started/quick-start-guide.html),
 > [설치](https://nvidia.github.io/TensorRT-Edge-LLM/user_guide/getting_started/installation.html),
 > [지원 모델](https://nvidia.github.io/TensorRT-Edge-LLM/user_guide/getting_started/supported-models.html).
-> 0.10.1 설치 페이지에는 이렇게 명시되어 있습니다: "Wheels are not published or the
-> default installation path in 0.10.1."
+> 0.10.1 설치 페이지에는 이렇게 명시되어 있습니다: "0.10.1에서는 휠(wheel)이
+> 게시되지 않으며 기본 설치 경로도 아닙니다."
 
 ## 8 GB에 실제로 들어가는 것
 
 - **NVIDIA가 이 모듈에서 벤치마크한 최대치는 2B 파라미터입니다.** Edge-LLM
   벤치마크 페이지에서 Orin Nano(8GB)의 가장 큰 행은 4,692 MB의 Qwen3.5-2B입니다:
-  "2B is the largest model NVIDIA benchmarked on Orin Nano 8 GB."
+  "2B가 NVIDIA가 Orin Nano 8 GB에서 벤치마크한 가장 큰 모델입니다."
 - **벤더 워크스루에서는 4B 모델을 실행합니다.** Jetson AI Lab 튜토리얼은
-  Qwen3-4B-Instruct INT4 AWQ(가중치 ~2 GB)가 "within Orin Nano's 8 GB unified
-  memory"에 들어간다고 보고합니다. InternVL3 1B/2B도 INT4 AWQ로 들어가며, 더 큰
+  Qwen3-4B-Instruct INT4 AWQ(가중치 ~2 GB)가 "Orin Nano의 8 GB 통합 메모리
+  안에" 들어간다고 보고합니다. InternVL3 1B/2B도 INT4 AWQ로 들어가며, 더 큰
   변형은 AGX Orin 또는 Thor를 대상으로 합니다. (벤더 자료.)
 - **NVIDIA 메모리 블로그가 제시하는 실용적 범위: LLM은 최대 ~10B, VLM은 최대
   ~4B 파라미터** — 4비트 양자화와 효율적인 런타임을 사용하는, 튜닝된 구성
@@ -132,8 +131,8 @@ JetPack 7.2 / CUDA 13.2 / TensorRT 10.16. MTBench(LLM)와 COCO(VLM)에서의 런
 | Qwen3.5-2B | VLM | 29.6 tok/s | 4,692 MB |
 
 Orin 행은 batch 1과 externalized INT4 가중치를 사용하며, 빌드 제한은
-maxInputLen 2048, maxKVCacheCapacity 2200입니다. "Production performance may vary
-with system-level tuning (power mode, memory configuration, thermal management)."
+maxInputLen 2048, maxKVCacheCapacity 2200입니다. "프로덕션 성능은 시스템 수준 튜닝(전원 모드,
+메모리 구성, 열 관리)에 따라 달라질 수 있습니다."
 
 > **중요:** NVIDIA가 공개한 **AGX Orin 64 GB**의 tokens/sec 표는 이 키트에
 > **적용되지 않습니다** — 모듈, 메모리 대역폭, 전력 범위가 다릅니다. AGX Orin에서
@@ -215,6 +214,9 @@ JetPack 6.2(CUDA 12.6)와 JetPack 7(CUDA 13.x)을 지원합니다. 주요 서빙
 - [Jetson AI Lab — 전체 문서 텍스트(컨테이너 이미지 표)](https://www.jetson-ai-lab.com/llms-full.txt) (2026-09-26 확인)
 - [jetson-containers (GitHub)](https://github.com/dusty-nv/jetson-containers) (2026-09-26 확인)
 - [Jetson AI Lab PyPI 인덱스 — sbsa/cu130](https://pypi.jetson-ai-lab.io/sbsa/cu130) (2026-09-26 확인)
+
+*상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서에
+근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*
 
 *상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서에
 근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*

@@ -126,6 +126,8 @@ que for:
 
 *Estado: revisado em 2026-10-11.*
 
+*Estado: revisado em 2026-10-11.*
+
 ---
 
 NVIDIA® e Jetson™ são marcas comerciais da NVIDIA Corporation. Esta página é

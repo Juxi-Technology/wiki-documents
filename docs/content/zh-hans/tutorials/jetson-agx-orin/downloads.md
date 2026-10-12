@@ -25,7 +25,7 @@ review_owner: cheny
 ## JetPack 7.2.1 / Jetson Linux 39.2.1
 
 - [JetPack SDK 下载与发布说明](https://developer.nvidia.com/embedded/jetpack/downloads) — **权威枢纽**：发布信息与下载。⚠️ **其组件表存在逐行滞后**：截至 2026-09-26，VPI 和 PVA 仍显示 JetPack **7.2** 的版本值，Isaac ROS 一行仍标注为“即将推出”(自 4.6.0 起便已发布)。如需确认 JetPack 7.2.1 系统实际安装的版本，请查阅 NVIDIA 的 [Jetson apt 仓库](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages)——参见[验证你的系统](/zh-hans/tutorials/jetson-agx-orin/verify-your-system)。
-- [JetPack ISO 镜像(r39.2.1)](https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/iso) — 我们在[快速开始](/zh-hans/tutorials/jetson-agx-orin/quick-start)中使用的 USB 安装镜像
+- [JetPack ISO 镜像(r39.2.1)](https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/iso/jetsoninstaller-r39.2.1-2026-08-07-18-30-47-arm64.iso) — 我们在[快速开始](/zh-hans/tutorials/jetson-agx-orin/quick-start)中使用的 USB 安装镜像
 - [NVIDIA SDK Manager](https://developer.nvidia.com/sdk-manager) — 主机 PC 刷机工具
 - [Jetson AGX Orin 的 Yocto 镜像](https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/yocto2) — 官方 Yocto/OpenEmbedded 配方与镜像
 - [JetPack 归档](https://developer.nvidia.com/embedded/jetpack-archive) · [Jetson Linux 归档](https://developer.nvidia.com/embedded/jetson-linux-archive) — 旧版本发布
@@ -50,13 +50,12 @@ review_owner: cheny
 
 - [Jetson AI Lab](https://www.jetson-ai-lab.com) — 在 Jetson 上运行 AI 模型的动手教程
 - [NVIDIA NemoClaw](https://www.nvidia.com/en-us/ai/nemoclaw) — Jetson 上的智能体 AI；自 JetPack 7.2 起支持单条命令安装
-- [Jetson 设备端技能](https://github.com/jetson-device-skills) · [Jetson BSP 技能](https://github.com/jetson-bsp-skills) — NVIDIA 提供的可复用智能体技能
+- [Jetson 设备端技能](https://github.com/NVIDIA-AI-IOT/jetson-device-skills) · [Jetson BSP 技能](https://github.com/NVIDIA-AI-IOT/jetson-bsp-skills) — NVIDIA 提供的可复用智能体技能
 
 ## 钜犀科技
 
 - **产品目录与配件：** <https://wiki.juxitech.com/products/> — 为你的套件准备的扩展配件(摄像头、机械臂、传感器等)，含规格参数与购买链接
 - **联系方式：** 技术支持 — support@juxitech.com · 销售 — sales@juxitech.com · 产品咨询 — pe@juxitech.com
-- 钜犀科技的入门脚本与示例代码将在就绪后陆续补充到这里。
 
 ## 来源
 

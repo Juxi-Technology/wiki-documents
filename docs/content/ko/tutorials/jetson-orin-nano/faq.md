@@ -38,8 +38,8 @@ Jetson Orin Nano 개발자 키트, 19 V 전원 공급 장치, 빠른 시작 및 
 
 **스토리지를 따로 사야 하나요?**
 예 — 64 GB microSD 카드가 이미 포함된 Juxi 스토어 번들을 구매한 경우가 아니라면요. 번들의 카드가 대상 스토리지 요구 사항을 충족하므로, 더 큰 용량을 원할 때만 NVMe SSD를 사면 됩니다. (동봉 카드는 이미지가 미리 기록되지 않은 빈 상태로 출고됩니다 — Jetson ISO로 카드에 시스템을 설치하십시오.) NVIDIA는 이렇게 밝힙니다:
-"Jetson Orin Nano Developer Kit does not include removable storage in the box,
-so choose either a microSD card or a NVMe SSD before starting setup." NVIDIA 박스만 받았다면 64GB UHS-1 이상의 microSD 카드(NVIDIA 권장)를, 또는 캐리어 보드의 M.2 Key-M 슬롯 중 하나에 쓸 PCIe NVMe SSD를 구매하십시오. 이 키트에는 eMMC가 없습니다: 카드나 SSD가 시스템의 주 스토리지가 됩니다. [빠른 시작](/ko/tutorials/jetson-orin-nano/quick-start)과
+"Jetson Orin Nano 개발자 키트에는 박스에 탈착식 스토리지가 포함되어 있지 않으므로,
+설정을 시작하기 전에 microSD 카드나 NVMe SSD를 선택하십시오." NVIDIA 박스만 받았다면 64GB UHS-1 이상의 microSD 카드(NVIDIA 권장)를, 또는 캐리어 보드의 M.2 Key-M 슬롯 중 하나에 쓸 PCIe NVMe SSD를 구매하십시오. 이 키트에는 eMMC가 없습니다: 카드나 SSD가 시스템의 주 스토리지가 됩니다. [빠른 시작](/ko/tutorials/jetson-orin-nano/quick-start)과
 [인터페이스 및 하드웨어 레이아웃](/ko/tutorials/jetson-orin-nano/interfaces)을 참조하십시오.
 
 **이전 JetPack 릴리스처럼 SD 카드 이미지를 플래싱할 수 있나요?**
@@ -81,14 +81,14 @@ NVIDIA는 총 설정 시간을 공개하지 않습니다. 공식 지침에 따�
 > **Y**를 누르십시오. NVIDIA는 이를 "가장 많이 놓치는 단계"라고 부릅니다.
 
 **시리얼 콘솔은 어떻게 사용하나요?**
-USB-to-TTL 시리얼 케이블을 버튼 헤더에 연결합니다: RXD 핀 3은 어댑터의 TX 선, TXD 핀 4는 어댑터의 RX 선, GND 핀 7은 어댑터의 접지 선에 연결합니다. 그런 다음 PC에서 시리얼 콘솔을 열고, 전원을 켜고, 부팅 전 화면에서 Esc를 눌러 UEFI / Boot Manager로 들어갑니다 — 이렇게 하면 ISO 설치 전체를 완료할 수 있습니다. 솔직히 말하면 한 가지 빈틈이 있습니다: NVIDIA의 페이지는 "open a serial console on your PC"라고만 하고 보드 레이트나 터미널 프로그램을 명시하지 않습니다. 키트를 USB-C로 PC에 장치 모드로 연결하면 "USB Serial device for serial terminal access"도 나타납니다.
+USB-to-TTL 시리얼 케이블을 버튼 헤더에 연결합니다: RXD 핀 3은 어댑터의 TX 선, TXD 핀 4는 어댑터의 RX 선, GND 핀 7은 어댑터의 접지 선에 연결합니다. 그런 다음 PC에서 시리얼 콘솔을 열고, 전원을 켜고, 부팅 전 화면에서 Esc를 눌러 UEFI / Boot Manager로 들어갑니다 — 이렇게 하면 ISO 설치 전체를 완료할 수 있습니다. 솔직히 말하면 한 가지 빈틈이 있습니다: NVIDIA의 페이지는 "PC에서 시리얼 콘솔을 여십시오"라고만 하고 보드 레이트나 터미널 프로그램을 명시하지 않습니다. 키트를 USB-C로 PC에 장치 모드로 연결하면 "USB Serial device for serial terminal access"도 나타납니다.
 [인터페이스 및 하드웨어 레이아웃](/ko/tutorials/jetson-orin-nano/interfaces)과
 [문제 해결](/ko/tutorials/jetson-orin-nano/troubleshooting)을 참조하십시오.
 
 ## 전원 및 성능
 
 **왜 25W / MAXN SUPER 옵션이 없나요?**
-키트가 non-Super 부팅 구성으로 플래싱되어 7W와 15W 모드만 나타납니다. 이는 JetPack 7.2 ISO의 알려진 문제 6279443으로 문서화되어 있습니다: ISO 설치는 "Super"로 전환하지 않고 업데이트 이전 프로파일을 유지했습니다. JetPack 7.2.1은 새 설치에 대해 이를 수정합니다 — ISO가 "now flashes the Jetson Orin Nano Developer Kit with Super Mode flashing configuration by default"; NVIDIA는 7.2.1 재설치가 7.2.0 ISO로 설치한 키트를 전환하는지 밝히지 않았습니다. `/etc/nv_boot_control.conf`를 확인하십시오: Super 구성에는 `-super` 접미사가 붙습니다. 기존 7.2 설치를 고치려면 Ubuntu 호스트(SDK Manager 또는 플래시 스크립트)에서 Super 구성으로 다시 플래싱하십시오; 그러면 Power Mode 메뉴가 15W, 25W(기본), MAXN SUPER를 제공합니다. [시스템 검증](/ko/tutorials/jetson-orin-nano/verify-your-system),
+키트가 non-Super 부팅 구성으로 플래싱되어 7W와 15W 모드만 나타납니다. 이는 JetPack 7.2 ISO의 알려진 문제 6279443으로 문서화되어 있습니다: ISO 설치는 "Super"로 전환하지 않고 업데이트 이전 프로파일을 유지했습니다. JetPack 7.2.1은 새 설치에 대해 이를 수정합니다 — ISO가 "이제 Jetson Orin Nano Developer Kit를 기본적으로 Super Mode 플래싱 구성으로 플래싱합니다"; NVIDIA는 7.2.1 재설치가 7.2.0 ISO로 설치한 키트를 전환하는지 밝히지 않았습니다. `/etc/nv_boot_control.conf`를 확인하십시오: Super 구성에는 `-super` 접미사가 붙습니다. 기존 7.2 설치를 고치려면 Ubuntu 호스트(SDK Manager 또는 플래시 스크립트)에서 Super 구성으로 다시 플래싱하십시오; 그러면 Power Mode 메뉴가 15W, 25W(기본), MAXN SUPER를 제공합니다. [시스템 검증](/ko/tutorials/jetson-orin-nano/verify-your-system),
 [문제 해결](/ko/tutorials/jetson-orin-nano/troubleshooting),
 [플래싱 및 업데이트](/ko/tutorials/jetson-orin-nano/flashing-and-updates)를 참조하십시오.
 
@@ -130,6 +130,8 @@ NVIDIA 공식 [문제 해결 페이지](https://docs.nvidia.com/jetson/orin-nano
 - [TensorRT Edge-LLM performance benchmarks](https://nvidia.github.io/TensorRT-Edge-LLM/user_guide/performance/performance-benchmarks.html) (2026-09-26 확인)
 - NVIDIA developer forums — [boot hang / skipped username setup thread](https://forums.developer.nvidia.com/t/jetson-orin-nano-super-dev-kit-boot-hangs-after-jetpack-7-2-installation-on-nvme-ssd-installer-skips-username-password-setup/380410), [25W / MAXN SUPER thread](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627) (2026-09-26 확인)
 - [Juxi Technology store listing — Jetson Orin Nano Super Developer Kit](https://www.juxitech.com/products/nvidia-jetson-orin-nano-super-development-kit) (2026-09-26 확인)
+
+*상태: 2026-10-11 검토 완료.*
 
 *상태: 2026-10-11 검토 완료.*
 

@@ -29,7 +29,7 @@ JetPack 7.2는 키트를 **에이전트 레디**로 만들어 줍니다. NVIDIA 
 NVIDIA에 따르면 NemoClaw는 **자율 에이전트** — 추론하고 계획하고 행동하는 상시 가동 AI 시스템 — 를 구축하기 위한 오픈 스택/블루프린트 모음입니다. OpenClaw 에이전트 생태계에 개인정보 보호 및 보안 제어(**OpenShell** 런타임 정책 제어를 통해)를 추가하고, Nemotron 모델과 NeMo 등 NVIDIA 구성 요소를 패키징합니다. JetPack 7.2에는 **필요한 종속성이 미리 구성되어** 있으므로 키트에서 수동 환경 설정이 필요하지 않습니다.
 
 - NemoClaw 제품 페이지: <https://www.nvidia.com/en-us/ai/nemoclaw>
-- GitHub의 NemoClaw: <https://github.com/NemoClaw> · 커뮤니티 예제: <https://github.com/nemoclaw-community>
+- GitHub의 NemoClaw: <https://github.com/NVIDIA/NemoClaw> · 커뮤니티 예제: <https://github.com/NVIDIA/nemoclaw-community>
 
 ## 설치(단일 명령, 공식)
 
@@ -63,8 +63,8 @@ JetPack 7.2에는 **에이전트 스킬**이 포함되어 있습니다. Jetson �
 
 생태계의 다른 에이전트 스킬:
 
-- [Jetson 디바이스 측 스킬](https://github.com/jetson-device-skills) · [Jetson BSP 스킬](https://github.com/jetson-bsp-skills)
-- [DeepStream Coding Agent](https://github.com/DeepStream_Coding_Agent) — 에이전트 보조 비전 파이프라인 구축([저희 DeepStream 튜토리얼](/ko/tutorials/jetson-agx-orin/deepstream) 참조)
+- [Jetson 디바이스 측 스킬](https://github.com/NVIDIA-AI-IOT/jetson-device-skills) · [Jetson BSP 스킬](https://github.com/NVIDIA-AI-IOT/jetson-bsp-skills)
+- [DeepStream Coding Agent](https://github.com/NVIDIA-AI-IOT/DeepStream_Coding_Agent) — 에이전트 보조 비전 파이프라인 구축([저희 DeepStream 튜토리얼](/ko/tutorials/jetson-agx-orin/deepstream) 참조)
 - [Metropolis VSS 블루프린트 스킬](https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization/tree/main/skills) — 영상 검색 및 요약 워크플로
 
 ## AGX Orin 키트를 위한 실전 참고 사항

@@ -62,6 +62,10 @@ NVIDIA のドキュメントからの要点:
 - eMMC とは**別の記憶媒体**(NVMe SSD、USB ドライブ、microSD カード)にベースの L4T BSP を書き込む場合、または
 - **直接インターネットに接続できない**キットに書き込む場合。
 
+*ステータス: レビュー済み（2026-10-11）。記載日時点の NVIDIA 公式
+ドキュメントに基づく内容です。Juxi Technology による実機での検証はまだ
+行われていません。*
+
 **ホスト PC の要件**(NVIDIA の SDK Manager ドキュメントに準拠):x86_64 上の Ubuntu
 Desktop **20.04 または 22.04**、8 GB のシステムメモリ、25 GB の空きディスク
 容量、およびツールのダウンロードとログインに必要な **NVIDIA Developer Program
@@ -121,10 +125,6 @@ GCC 13.2、ソースリリースタグ — `jetson_39.2_GA`。
 - [クイックスタート — 同じガイド](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/quick_start.html)(2026-09-23 確認)
 - [Jetson Linux 39.2.0 リリースノート(PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf)(2026-09-23 確認)
 - [NVIDIA SDK Manager](https://developer.nvidia.com/sdk-manager)
-
-*ステータス: レビュー済み（2026-10-11）。記載日時点の NVIDIA 公式
-ドキュメントに基づく内容です。Juxi Technology による実機での検証はまだ
-行われていません。*
 
 ---
 

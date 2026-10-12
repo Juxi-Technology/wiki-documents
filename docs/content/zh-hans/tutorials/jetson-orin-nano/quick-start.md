@@ -81,9 +81,6 @@ JetPack 7.2 及更高版本的安装**要求开发套件具备 JetPack 6.x 世�
 | 36.x 或更新 | 继续第 2 步 |
 | 低于 36.0 | 先完成 JetPack 6.x 更新路径（见下文） |
 
-![显示固件版本的 UEFI 菜单](/images/jetson-orin-nano/firmware-version-check.png)
-*固件版本显示在 UEFI 设置菜单顶部附近。*
-
 无头替代方案：将 USB 转 TTL 串口线接到按键排针（转接器的 TX 线接引脚 3 / RXD，RX 线接引脚 4 / TXD，接地线接引脚 7 / GND），在 PC 上打开串口控制台，并在显示预启动选项时于控制台中按 `Esc`。
 
 ![接在按键排针上的 USB 转 TTL 串口线](/images/jetson-orin-nano/jon_adafruit_uart_cable.jpg)
@@ -120,7 +117,7 @@ ISO 文件名遵循 `jetsoninstaller-r<L4T version>-<timestamp>-arm64.iso` 的�
 2. 将 U 盘插入你的 PC。
 3. 在 Etcher 中选择 ISO 文件、选择 U 盘，然后开始写入。
 
-![用 Balena Etcher 将 Jetson ISO 写入 U 盘](/images/jetson-orin-nano/jetson-iso_etcher-flash-start.gif)
+![用 Balena Etcher 将 Jetson ISO 写入 U 盘](/images/jetson-agx-orin/jetson-iso_etcher-flash-start.gif)
 *用 Balena Etcher 将 Jetson ISO 写入 U 盘。*
 
 > **注意**
@@ -199,6 +196,8 @@ apt list --installed | grep nvidia-jetpack
 - [Jetson Orin Nano 开发者套件用户指南——硬件布局](https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/hardware_layout.html)（核对于 2026-09-26）
 - [JetPack SDK 下载页](https://developer.nvidia.com/embedded/jetpack/downloads)（核对于 2026-09-26）
 - [Jetson Linux 39.2.1 发布说明（PDF）](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf)（核对于 2026-09-26）
+
+*状态：已于 2026-10-11 审核。内容依据所列日期的 NVIDIA 官方文档；尚未由钜犀科技在实体硬件上验证。*
 
 *状态：已于 2026-10-11 审核。内容依据所列日期的 NVIDIA 官方文档；尚未由钜犀科技在实体硬件上验证。*
 

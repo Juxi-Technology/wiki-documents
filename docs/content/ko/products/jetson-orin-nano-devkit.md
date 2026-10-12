@@ -79,7 +79,7 @@ NVIDIA® Jetson Orin Nano™ Super 개발자 키트는 Jetson Orin 패밀리의 
 | 치수 | NVIDIA 데이터시트: 103 x 90.5 x 34.77 mm, NVIDIA 제품군 사양 표: 100 x 79 x 21 mm(두 정의 모두 높이에 받침대, 캐리어 보드, 모듈 및 열 솔루션 포함). NVIDIA는 두 수치를 아직 조정하지 않았으며, 스토어에는 100 x 79 x 21 mm로 표기되어 있습니다 |
 | 소프트웨어 | 현재 릴리스: JetPack 7.2.1(Jetson Linux(L4T) r39.2.1 포함), Jetson ISO 방식으로 설치 *(NVIDIA)* |
 | 박스 구성품(Juxi 스토어 번들) | NVIDIA Jetson Orin Nano Super 개발자 키트 x1(공식 정품 박스), 19 V 전원 어댑터 x1, Type B(US, JP, CA, PH) 전원 케이블 x1, 64 GB microSD 카드 x1, M.2 Wi-Fi 모듈 x1 |
-| 박스 구성품(NVIDIA) | 개발자 키트(방열판이 포함된 Orin Nano 8GB 모듈 + 레퍼런스 캐리어 보드), 19 V 전원 공급 장치, 802.11ac/ab/gn 무선 네트워크 인터페이스 컨트롤러, Quick Start Guide *(NVIDIA)*. 탈착식 스토리지 없음: "Jetson Orin Nano Developer Kit does not include removable storage in the box" *(NVIDIA)* |
+| 박스 구성품(NVIDIA) | 개발자 키트(방열판이 포함된 Orin Nano 8GB 모듈 + 레퍼런스 캐리어 보드), 19 V 전원 공급 장치, 802.11ac/ab/gn 무선 네트워크 인터페이스 컨트롤러, Quick Start Guide *(NVIDIA)*. 탈착식 스토리지 없음: "Jetson Orin Nano 개발자 키트에는 박스에 탈착식 스토리지가 포함되어 있지 않습니다" *(NVIDIA)* |
 | 보증 | 1년, 개발용으로만 사용(스토어 표기) |
 
 *전체 사양: 키트에 대한 NVIDIA 공식 데이터시트(nvidia.com에서 링크)를 참조하십시오.*

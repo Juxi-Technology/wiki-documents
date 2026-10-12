@@ -88,9 +88,6 @@ JetPack 7.2 이상을 설치하려면 개발자 키트에 **JetPack 6.x 세대�
 | 36.x 이상 | 2단계를 계속 진행 |
 | 36.0보다 오래됨 | JetPack 6.x 업데이트 경로를 먼저 완료(아래 참조) |
 
-![펌웨어 버전이 표시된 UEFI 메뉴](/images/jetson-orin-nano/firmware-version-check.png)
-*펌웨어 버전은 UEFI 설정 메뉴 상단 근처에 표시됩니다.*
-
 헤드리스 대안: USB-to-TTL 시리얼 케이블을 버튼 헤더에 연결하고(어댑터 TX 선 → 핀 3 / RXD, 어댑터 RX 선 → 핀 4 / TXD, 어댑터 접지 선 → 핀 7 / GND), PC에서 시리얼 콘솔을 연 다음, 부팅 전 옵션이 표시되는 동안 콘솔에서 `Esc`를 누릅니다.
 
 ![버튼 헤더에 연결한 USB-to-TTL 시리얼 케이블](/images/jetson-orin-nano/jon_adafruit_uart_cable.jpg)
@@ -127,7 +124,7 @@ ISO 파일 이름은 `jetsoninstaller-r<L4T version>-<timestamp>-arm64.iso` 패�
 2. USB 플래시 드라이브를 PC에 삽입합니다.
 3. Etcher에서 ISO 파일을 선택하고, USB 드라이브를 선택한 뒤 기록을 시작합니다.
 
-![Balena Etcher로 Jetson ISO를 USB 플래시 드라이브에 기록하는 모습](/images/jetson-orin-nano/jetson-iso_etcher-flash-start.gif)
+![Balena Etcher로 Jetson ISO를 USB 플래시 드라이브에 기록하는 모습](/images/jetson-agx-orin/jetson-iso_etcher-flash-start.gif)
 *Balena Etcher로 Jetson ISO를 USB 플래시 드라이브에 기록하는 모습.*
 
 > **주의**
@@ -208,6 +205,8 @@ apt list --installed | grep nvidia-jetpack
 - [Jetson Orin Nano Developer Kit User Guide — Hardware Layout](https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/hardware_layout.html) (2026-09-26 확인)
 - [JetPack SDK Downloads](https://developer.nvidia.com/embedded/jetpack/downloads) (2026-09-26 확인)
 - [Jetson Linux 39.2.1 Release Notes (PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) (2026-09-26 확인)
+
+*상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서에 근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*
 
 *상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서에 근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*
 

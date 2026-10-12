@@ -68,6 +68,10 @@ Elija SDK Manager cuando quiera:
 - flashear el BSP L4T base a un **medio de almacenamiento distinto** de la eMMC (SSD NVMe, unidad USB o tarjeta microSD), o
 - flashear un kit que **no pueda conectarse directamente a internet**.
 
+*Estado: revisado el 2026-10-11. Basado en la documentación
+oficial de NVIDIA en la fecha indicada; aún no verificado en hardware físico
+por Juxi Technology.*
+
 **Requisitos del PC host** (según la documentación de SDK Manager de NVIDIA):
 Ubuntu Desktop **20.04 o 22.04** en x86_64, 8 GB de memoria del sistema, 25 GB
 de espacio libre en disco y una **membresía del NVIDIA Developer Program**
@@ -129,10 +133,6 @@ Verifique el resultado: **[Verifique su sistema](/es/tutorials/jetson-agx-orin/v
 - [Quick Start — la misma guía](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/quick_start.html) (consultado el 2026-09-23)
 - [Jetson Linux 39.2.0 Release Notes (PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf) (consultado el 2026-09-23)
 - [NVIDIA SDK Manager](https://developer.nvidia.com/sdk-manager)
-
-*Estado: revisado el 2026-10-11. Basado en la documentación
-oficial de NVIDIA en la fecha indicada; aún no verificado en hardware físico
-por Juxi Technology.*
 
 ---
 

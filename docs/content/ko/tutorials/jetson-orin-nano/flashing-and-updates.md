@@ -59,7 +59,7 @@ Jetson ISO는 NVIDIA가 권장하는 최초 설정 경로이며 Ubuntu 호스트
 
 성패를 가르는 두 가지 주의 사항이 있습니다: 펌웨어가 JetPack 6.x 세대여야 하며 — 화면이 계속 검은색이거나 UEFI 셸이 나타나면 아래의 JetPack 6.x 업데이트 경로를 먼저 실행하십시오 — QSPI 캡슐 프롬프트에서 30초 안에 `Y`를 눌러야 합니다. 프롬프트가 시간 초과되면 나중에 설치가 실패하므로, 설치를 다시 시작하고 `Y`를 누르십시오.
 
-> **중요** — ISO는 **USB 플래시 드라이브에 기록하고 microSD 카드에는 기록하지 마십시오**("Do not flash the Jetson ISO to a microSD card"). 설치는 또한 **선택한 대상 스토리지를 지웁니다**. 시작하기 전에 어떤 장치를 선택했는지 확인하십시오.
+> **중요** — ISO는 **USB 플래시 드라이브에 기록하고 microSD 카드에는 기록하지 마십시오**("Jetson ISO를 microSD 카드에 플래싱하지 마십시오"). 설치는 또한 **선택한 대상 스토리지를 지웁니다**. 시작하기 전에 어떤 장치를 선택했는지 확인하십시오.
 
 전체 단계별 절차 — ISO 다운로드, Balena Etcher, UEFI 부트 관리자, GRUB 메뉴, 스토리지 선택, 최초 부팅 시 Ubuntu 설정 — 는 **[빠른 시작](/ko/tutorials/jetson-orin-nano/quick-start)**에 있습니다. 설치 USB는 **"Live USB"가 아니며**(설치만 함), 설치 후 안내가 나타나면 제거하십시오.
 
@@ -67,9 +67,11 @@ Jetson ISO는 NVIDIA가 권장하는 최초 설정 경로이며 Ubuntu 호스트
 
 SDK Manager는 호스트 PC 방식입니다: USB-C를 통해 BSP를 플래싱하며, 키트의 펌웨어도 업데이트할 수 있습니다(아래 업데이트 경로 섹션 참조).
 
-**호스트 PC 요구 사항**(키트의 BSP 설정 페이지 기준): **Ubuntu 22.04 또는 Ubuntu 20.04를 실행하는 x86 PC**; **인터넷 연결과 무료 NVIDIA Developer Program 계정**; 키트의 USB-C 포트용 **USB 케이블**과 "a jumper pin or metal paper clip"; 그리고 키트용 디스플레이 또는 USB-to-TTL 시리얼 케이블.
+*상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서에 근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*
 
-> **Juxi 참고:** NVIDIA의 출처가 서로 다릅니다. 키트 설정 페이지에는 Ubuntu 22.04 또는 20.04가 적혀 있고; L4T r39.2.1 릴리스 노트에는 플래싱용 호스트 배포판으로 "Ubuntu 24.04 and 22.04"가 적혀 있습니다. 호스트 PC를 준비하기 전에 NVIDIA의 SDK Manager 요구 사항을 확인하십시오.
+**호스트 PC 요구 사항**(키트의 BSP 설정 페이지 기준): **Ubuntu 22.04 또는 Ubuntu 20.04를 실행하는 x86 PC**; **인터넷 연결과 무료 NVIDIA Developer Program 계정**; 키트의 USB-C 포트용 **USB 케이블**과 "점퍼 핀 또는 금속 클립"; 그리고 키트용 디스플레이 또는 USB-to-TTL 시리얼 케이블.
+
+> **Juxi 참고:** NVIDIA의 출처가 서로 다릅니다. 키트 설정 페이지에는 Ubuntu 22.04 또는 20.04가 적혀 있고; L4T r39.2.1 릴리스 노트에는 플래싱용 호스트 배포판으로 "Ubuntu 24.04와 22.04"가 적혀 있습니다. 호스트 PC를 준비하기 전에 NVIDIA의 SDK Manager 요구 사항을 확인하십시오.
 
 **호스트에 SDK Manager를 설치합니다.** NVIDIA의 설정 페이지에 Ubuntu 22.04와 20.04용 정확한 명령이 나와 있습니다. `sdkmanager`로 실행한 뒤 NVIDIA Developer 자격 증명으로 로그인합니다(브라우저 창이 열리며, 2단계 인증이 나타날 수 있습니다).
 
@@ -85,7 +87,7 @@ SDK Manager는 호스트 PC 방식입니다: USB-C를 통해 BSP를 플래싱하
 
 고급 사용자와 제품 개발자용: Jetson Linux Driver Package를 사용한 명령줄 플래싱입니다. NVIDIA의 설정 페이지 기준: JetPack 릴리스에 맞는 Driver Package와 샘플 루트 파일 시스템을 다운로드하고; Ubuntu x86_64 호스트에서 Driver Package의 압축을 풀고; 샘플 루트 파일 시스템을 `Linux_for_Tegra/rootfs`에 풀어 넣은 뒤 `Linux_for_Tegra`에서 `apply_binaries.sh`를 실행하고; 키트를 Force Recovery 모드(아래)로 전환한 다음; Jetson Orin Nano Developer Kit 타깃에 맞는 플래시 명령을 실행합니다. 타깃 이름과 자세한 명령은 Jetson Linux Developer Guide에 있습니다.
 
-- 이 키트의 타깃 이름은 `jetson-orin-nano-devkit`과 `jetson-orin-nano-devkit-super`입니다. NVIDIA는 Super 구성이 "a higher power budget and extended clock-frequency steps"를 갖는다고 설명합니다.
+- 이 키트의 타깃 이름은 `jetson-orin-nano-devkit`과 `jetson-orin-nano-devkit-super`입니다. NVIDIA는 Super 구성이 "더 높은 전력 예산과 확장된 클록 주파수 단계"를 갖는다고 설명합니다.
 - 이 키트에 대한 Developer Guide의 예시 — Super 구성의 NVMe: `sudo ./l4t_initrd_flash.sh --erase-all jetson-orin-nano-devkit-super internal` (`--erase-all` 옵션은 대상 스토리지의 데이터를 지웁니다).
 - L4T r39.2.1 릴리스 노트: 플래싱 호스트 — Ubuntu 24.04 / 22.04; 툴체인 — GCC 13.2; 소스 태그 — `jetson_39.2.1_GA`. JetPack 다운로드 페이지: BSP 패키지 — `Jetson_Linux_R39.2.1_aarch64.tbz2`.
 
@@ -108,7 +110,7 @@ SDK Manager는 호스트 PC 방식입니다: USB-C를 통해 BSP를 플래싱하
 NVIDIA가 문서화한 순서대로의 브리지 흐름:
 
 1. **JetPack 5.1.3 브리지 이미지**(`JP513-orin-nano-sd-card-image_b29.zip` — 업데이트된 이미지를 사용)를 microSD 카드에 기록하고, 카드에서 키트를 부팅해 최초 부팅 Ubuntu 설정을 완료한 다음, 키트를 인터넷에 연결합니다.
-2. 그러면 백그라운드 서비스가 부트로더 업데이트를 예약합니다(데스크톱 알림이 나타날 수 있습니다). `sudo systemctl status nv-l4t-bootloader-config`로 확인하십시오 — "A completed scheduling run shows the service as inactive with a successful exit status."
+2. 그러면 백그라운드 서비스가 부트로더 업데이트를 예약합니다(데스크톱 알림이 나타날 수 있습니다). `sudo systemctl status nv-l4t-bootloader-config`로 확인하십시오 — "예약 실행이 완료되면 서비스가 inactive 상태로, 종료 상태는 성공으로 표시됩니다."
 
    ![Jetson Linux 데스크톱의 부트로더 업데이트 알림](/images/jetson-orin-nano/nvidia-l4t-bootloader-post-install-notification.png)
 
@@ -135,9 +137,9 @@ RCM에 진입한 후, 호스트가 장치를 감지하면 점퍼를 제거하십
 
 **실행 중인 키트에서 JetPack 구성 요소를 업데이트하려면** `sudo apt update` 실행 후 `sudo apt install nvidia-jetpack` — [빠른 시작](/ko/tutorials/jetson-orin-nano/quick-start)을 참조하십시오.
 
-**BSP 재설치(동일하거나 더 새로운 JetPack).** 세 가지 경로 중 아무거나 다시 실행하면 됩니다; ISO 흐름이 키트 자체에서 가능한 옵션입니다. ISO 재설치에 대한 NVIDIA의 주의: "If you're re-installing JetPack 7.2.1 using ISO on an already installed system, please carefully follow the instructions in the Getting Started Guide." 재설치는 **대상 스토리지를 지우므로**(먼저 백업하십시오), QSPI 캡슐 프롬프트가 나타나면 30초 안에 `Y`를 누르십시오. 끝나면 USB 설치 프로그램을 제거하여 키트가 새 시스템으로 부팅되게 하십시오.
+**BSP 재설치(동일하거나 더 새로운 JetPack).** 세 가지 경로 중 아무거나 다시 실행하면 됩니다; ISO 흐름이 키트 자체에서 가능한 옵션입니다. ISO 재설치에 대한 NVIDIA의 주의: "이미 설치된 시스템에서 ISO로 JetPack 7.2.1을 재설치하는 경우, Getting Started Guide의 지침을 주의 깊게 따르십시오." 재설치는 **대상 스토리지를 지우므로**(먼저 백업하십시오), QSPI 캡슐 프롬프트가 나타나면 30초 안에 `Y`를 누르십시오. 끝나면 USB 설치 프로그램을 제거하여 키트가 새 시스템으로 부팅되게 하십시오.
 
-**재설치 후의 Super mode.** 7.2.1 ISO는 "flashes the Jetson Orin Nano Developer Kit with Super Mode flashing configuration by default"입니다. 이전 7.2 릴리스에서는 ISO로 업데이트한 키트가 이전 프로파일을 유지해 25 W / MAXN SUPER 모드가 없는 상태가 될 수 있었습니다(r39.2 알려진 문제 6279443; NVIDIA의 안내는 Linux 호스트나 SDK Manager에서 플래싱하라는 것이었습니다). NVIDIA는 7.2.1 ISO를 다시 실행하면 기존 non-Super 설치가 Super로 전환되는지 문서화하지 않았습니다. 키트에 25 W / MAXN SUPER 모드가 없다면 **[문제 해결](/ko/tutorials/jetson-orin-nano/troubleshooting)**을 참조하십시오.
+**재설치 후의 Super mode.** 7.2.1 ISO는 "기본적으로 Super Mode 플래싱 구성으로 Jetson Orin Nano Developer Kit를 플래싱합니다". 이전 7.2 릴리스에서는 ISO로 업데이트한 키트가 이전 프로파일을 유지해 25 W / MAXN SUPER 모드가 없는 상태가 될 수 있었습니다(r39.2 알려진 문제 6279443; NVIDIA의 안내는 Linux 호스트나 SDK Manager에서 플래싱하라는 것이었습니다). NVIDIA는 7.2.1 ISO를 다시 실행하면 기존 non-Super 설치가 Super로 전환되는지 문서화하지 않았습니다. 키트에 25 W / MAXN SUPER 모드가 없다면 **[문제 해결](/ko/tutorials/jetson-orin-nano/troubleshooting)**을 참조하십시오.
 
 **JetPack 메이저 버전 간 이동.** JetPack 6.x → 7.2.1 변경 목록과 롤백 참고 사항은 **[JetPack 6.x → 7.2.1](/ko/tutorials/jetson-orin-nano/jetpack-6-to-7)**을 참조하십시오. 설치나 업데이트 후에는 결과를 확인하십시오: **[시스템 검증](/ko/tutorials/jetson-orin-nano/verify-your-system)**.
 

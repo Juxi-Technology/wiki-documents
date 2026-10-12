@@ -136,8 +136,8 @@ sudo /usr/sbin/nvpmodel -q
 
 이것은 알려진 JetPack 7.2 문제이며, 7.2.1에서 설계상 수정되었습니다.
 
-- **JetPack 7.2 (L4T 39.2)**에서는 알려진 문제 **6279443**에 따르면 ISO 설치 프로그램으로 업데이트한 장치는 "will not default to 'Super' mode"입니다. NVIDIA의 안내는 Linux 호스트나 SDK Manager로 대상을 플래싱하라는 것이었습니다.
-- **JetPack 7.2.1**은 이를 바꿉니다: "ISO now flashes the Jetson Orin Nano Developer Kit with Super Mode flashing configuration by default." 이슈 6279443은 7.2.1 알려진 문제 목록에 없으며, NVIDIA 직원은 "This would be fixed in jp7.2.1."라고 밝혔습니다.
+- **JetPack 7.2 (L4T 39.2)**에서는 알려진 문제 **6279443**에 따르면 ISO 설치 프로그램으로 업데이트한 장치는 "기본적으로 'Super' 모드가 되지 않습니다". NVIDIA의 안내는 Linux 호스트나 SDK Manager로 대상을 플래싱하라는 것이었습니다.
+- **JetPack 7.2.1**은 이를 바꿉니다: "ISO가 이제 Jetson Orin Nano Developer Kit를 기본적으로 Super Mode 플래싱 구성으로 플래싱합니다." 이슈 6279443은 7.2.1 알려진 문제 목록에 없으며, NVIDIA 직원은 "이 문제는 jp7.2.1에서 수정될 예정입니다"라고 밝혔습니다.
 
 새로 7.2.1 ISO로 설치한 시스템은 25W와 MAXN SUPER를 표시해야 합니다. 그렇지 않다면:
 
@@ -167,6 +167,8 @@ sudo /usr/sbin/nvpmodel -q
 - [Jetson Linux 39.2.1 Release Notes (PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) · [39.2 Release Notes (PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf) (2026-09-26 확인)
 - [NVIDIA forum — 25W and MAXN SUPER not seen in JetPack 7.2](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627) · [continuing power-mode issues](https://forums.developer.nvidia.com/t/continuing-power-mode-issues-on-jetpack-7-2/375435) · [Super Mode not unlocking](https://forums.developer.nvidia.com/t/jetpack-7-2-l4t-39-2-gpu-frequency-stuck-at-624-mhz-on-orin-nano-8gb-p3767-0005-bpmp-hard-limit-super-mode-not-unlocking/377003) (2026-09-26 확인; NVIDIA 직원 답변 포함)
 - [jetson-stats (jtop) on PyPI](https://pypi.org/project/jetson-stats/) · [Jetson AI Lab](https://www.jetson-ai-lab.com/) (2026-09-26 확인; jtop 설치에 대한 커뮤니티 출처)
+
+*상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서와 NVIDIA 포럼 출처에 근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*
 
 *상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서와 NVIDIA 포럼 출처에 근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*
 

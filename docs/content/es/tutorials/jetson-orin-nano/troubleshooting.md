@@ -59,8 +59,8 @@ Busque su síntoma en el índice de abajo y lea la sección correspondiente.
 Grados: **A** = documentación oficial de NVIDIA; **B** = foro de
 desarrolladores de NVIDIA (informes del personal o de la comunidad). Los
 elementos que solo provienen de la comunidad se marcan como *sin confirmar*.
-Juxi no tiene ninguna unidad de esta serie en mano — esta página solo está
-verificada contra la documentación, no probada en hardware.
+La verificación de hardware de esta serie aún está pendiente — esta página
+solo está verificada contra la documentación, no probada en hardware.
 
 ## Empiece por la guía oficial de solución de problemas de NVIDIA
 
@@ -476,6 +476,11 @@ Preguntas abiertas en nuestras fuentes:
 - NVIDIA Jetson Orin Nano Developer Kit User Guide: [Troubleshooting Guide](https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/troubleshoot.html) · [Quick Start](https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/quick_start.html) · [JetPack 6.x Update Path](https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/update_firmware.html) · [Additional Docs](https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/additional_docs.html) · [Hardware Layout](https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/hardware_layout.html) — consultado el 2026-09-26
 - Notas de la versión: [JetPack 7.2 / L4T r39.2 (PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf) · [JetPack 7.2.1 / L4T r39.2.1 (PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) — consultado el 2026-09-26
 - Hilos del foro de desarrolladores de NVIDIA (consultado el 2026-09-26): [372151](https://forums.developer.nvidia.com/t/jetpack-7-2-jetson-linux-r39-2-on-jetson-orin-nano-developer-kit-getting-started-and-feedback-thread/372151) · [380410](https://forums.developer.nvidia.com/t/jetson-orin-nano-super-dev-kit-boot-hangs-after-jetpack-7-2-installation-on-nvme-ssd-installer-skips-username-password-setup/380410) · [372627](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627) · [377003](https://forums.developer.nvidia.com/t/jetpack-7-2-l4t-39-2-gpu-frequency-stuck-at-624-mhz-on-orin-nano-8gb-p3767-0005-bpmp-hard-limit-super-mode-not-unlocking/377003) · [377553](https://forums.developer.nvidia.com/t/jetson-orin-nano-missing-25w-power-mode-qspi-firmware-mismatch-after-missed-capsule-update/377553) · [375435](https://forums.developer.nvidia.com/t/continuing-power-mode-issues-on-jetpack-7-2/375435) · [372521](https://forums.developer.nvidia.com/t/jetpack-7-2-gpu-acceleration-issue/372521) · [383350](https://forums.developer.nvidia.com/t/ollama-not-supporting-jetson/383350) · [383858](https://forums.developer.nvidia.com/t/jetson-orin-nano-in-jetpack-7-2-r39-2-nvme-ssd-on-pcie-c7-is-not-detected-bootable-in-uefi-stage-but-works-normally-after-linux-boots/383858) · [379702](https://forums.developer.nvidia.com/t/jetson-orin-nano-repeated-ext4-nvme-filesystem-corruption-and-attempting-recovery-boot-on-jetpack-7-2/379702) · [372269](https://forums.developer.nvidia.com/t/nemoclaw-on-jetson-orin-super-with-jetpack-7-2/372269)
+
+*Estado: revisado el 2026-10-11. Los elementos etiquetados
+como sin confirmar provienen de informes de la comunidad y pueden cambiar. Esta
+página solo está verificada contra la documentación — Juxi no ha probado este
+kit en hardware.*
 
 *Estado: revisado el 2026-10-11. Los elementos etiquetados
 como sin confirmar provienen de informes de la comunidad y pueden cambiar. Esta

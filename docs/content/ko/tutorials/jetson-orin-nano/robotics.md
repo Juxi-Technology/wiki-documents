@@ -75,7 +75,7 @@ CUDA 13, 그리고 모든 AI 워크로드를 규정하는 8 GB 메모리 상한�
 
 | 필요한 항목 | JetPack 7.2.1 / Orin Nano(8GB)에서의 상태 | 비고 |
 |---|---|---|
-| **ROS 2(코어)** | ✅ 작동 | JetPack은 어떤 ROS 배포판도 설치하거나 요구하지 않습니다. ROS 2 **Jazzy**에는 공식 Ubuntu 24.04 arm64 패키지가 있습니다. NVIDIA 직원의 포럼 답변(2026-09-07)은 Jazzy를 "the recommended ROS distribution for JetPack 7.2.1"이라고 부릅니다. 포럼 답변은 공식 문서가 아닙니다. 설치 단계는 아래에 있습니다. |
+| **ROS 2(코어)** | ✅ 작동 | JetPack은 어떤 ROS 배포판도 설치하거나 요구하지 않습니다. ROS 2 **Jazzy**에는 공식 Ubuntu 24.04 arm64 패키지가 있습니다. NVIDIA 직원의 포럼 답변(2026-09-07)은 Jazzy를 "JetPack 7.2.1에 권장되는 ROS 배포판"이라고 부릅니다. 포럼 답변은 공식 문서가 아닙니다. 설치 단계는 아래에 있습니다. |
 | **Isaac ROS**(하드웨어 가속 ROS 2) | ⚠️ 2026년 8월 출시 — 실질적인 공백 있음 | Isaac ROS 4.6.0 릴리스 노트: "Added support for Jetson Orin", "Added support for JetPack 7.2". Orin Nano Super 8GB는 NVIDIA의 공식 벤치마크 표에 등장합니다. 하지만 워크스루에는 Orin Nano 섹션이 없고, 지원 표는 NVMe SSD를 전제로 하며, NVIDIA의 JetPack 페이지는 여전히 "출시 예정"이라고 표기합니다. 자세한 내용은 아래에 있습니다. |
 | **Isaac Sim / Isaac Lab**(시뮬레이션) | ⛔ 이 키트에서는 실행되지 않음 | RTX GPU를 갖춘 x86_64 호스트가 필요합니다(최소 GeForce RTX 4080, 16 GB VRAM, 32 GB RAM). RT 코어가 없는 GPU는 지원되지 않습니다. aarch64 빌드는 DGX Spark용으로만 존재합니다. 시뮬레이션 워크플로에서 시뮬레이터는 Jetson이 아니라 x86_64 머신에서 실행됩니다. |
 | **GR00T(휴머노이드 파운데이션 모델)** | ⛔ 이 키트에는 해당 없음 | GR00T 1.7 포스트 트레이닝에는 최소 48 GB VRAM의 GPU가 필요합니다. NVIDIA의 레퍼런스 워크플로는 Jetson AGX Thor를 실제 로봇의 엣지 컴퓨터로 사용합니다. 같은 워크플로가 시연 데이터를 LeRobot 형식으로 변환합니다 — 소프트웨어 방향은 맞지만 연산은 여기에 없습니다. |
@@ -86,6 +86,10 @@ CUDA 13, 그리고 모든 AI 워크로드를 규정하는 8 GB 메모리 상한�
 
 ## JetPack 7.2에서의 Isaac ROS — 공식 페이지가 오늘 말하는 것
 
+*상태: 2026-10-11 검토 완료. 생태계 가용성은 빠르게 변합니다 — 이 표에
+의존하기 전에 링크된 NVIDIA 및 업스트림 페이지를 다시 확인하십시오. 아직
+Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*
+
 **NVIDIA의 페이지들은 서로 모순됩니다.** JetPack 7.2.1 다운로드 페이지는
 여전히 "NVIDIA Isaac™ ROS — 출시 예정"으로 기재하고 있습니다. Isaac ROS
 프로젝트 페이지는 지원이 출시되었다고 말합니다. Isaac ROS 자체에 대해서는
@@ -94,9 +98,8 @@ CUDA 13, 그리고 모든 AI 워크로드를 규정하는 8 GB 메모리 상한�
 - **Isaac ROS 4.6.0(2026-08-18)** — 릴리스 노트: "Added support for Jetson
   Orin", "Added support for JetPack 7.2". 이 조합을 갖춘 최초의 4.x
   릴리스입니다.
-- **지원 플랫폼:** "The platforms defined in this table are the only
-  hardware and software combinations that Isaac ROS tests and officially
-  supports." Jetson 행: "Jetson Thor (T5000 and T4000) and Jetson Orin",
+- **지원 플랫폼:** "이 표에 정의된 플랫폼은 Isaac ROS가 테스트하고 공식적으로
+  지원하는 유일한 하드웨어 및 소프트웨어 조합입니다." Jetson 행: "Jetson Thor(T5000 및 T4000)와 Jetson Orin",
   JetPack 7.2, 스토리지 "128+ GB NVMe SSD". 표는 "Orin Nano"가 아니라 "Jetson
   Orin"(제품군)이라고 표기합니다.
 - **벤치마크:** 성능 표에는 실제 항목이 있는 "Orin Nano Super 8GB" 전용 열이
@@ -123,8 +126,8 @@ CUDA 13, 그리고 모든 AI 워크로드를 규정하는 8 GB 메모리 상한�
   (release), REVISION: 2.0"(L4T r39.2.0)을 확인하라고 요구합니다. 이 키트는
   JetPack 7.2.1 = L4T r39.2.1로 출고됩니다. 프로덕션 로봇을 마이그레이션하기
   전에 Docker에서 검증하십시오.
-- **카메라와 OpenCV.** Intel RealSense 카메라는 "supported only in Docker
-  mode. Virtual Environment and Bare Metal modes are not supported." 또한
+- **카메라와 OpenCV.** Intel RealSense 카메라는 "Docker 모드에서만
+  지원됩니다. Virtual Environment 및 Bare Metal 모드는 지원되지 않습니다." 또한
   JetPack 7.2는 OpenCV 4.8.0을 설치하지만 Isaac ROS는 4.6.0으로
   테스트되었습니다 — 해결 방법은 아래 설치 단계에 있습니다.
 - **5.0의 회귀.** Isaac ROS 5.0에서 DNN 이미지 인코더의 처리량이 4.6보다
@@ -141,10 +144,10 @@ CUDA 13, 그리고 모든 AI 워크로드를 규정하는 8 GB 메모리 상한�
 ## 시뮬레이션과 트레이닝 — 다른 머신
 
 Isaac Sim 6.0은 이 키트에서 실행할 수 없습니다. Linux x86_64 경로의 공개된
-최소 사양: GeForce RTX 4080, 16 GB VRAM, 32 GB RAM, 50 GB SSD. "GPUs without
-RT Cores (A100, H100) are not supported." aarch64 빌드는 "is currently only
-supported on DGX Spark system." Isaac ROS 시뮬레이션 워크플로에서 "Isaac Sim
-runs on a x86_64 machine providing sensor data and world information" —
+최소 사양: GeForce RTX 4080, 16 GB VRAM, 32 GB RAM, 50 GB SSD. "RT 코어가 없는
+GPU(A100, H100)는 지원되지 않습니다." aarch64 빌드는 "현재 DGX Spark
+시스템에서만 지원됩니다." Isaac ROS 시뮬레이션 워크플로에서 "Isaac Sim은
+센서 데이터와 월드 정보를 제공하는 x86_64 머신에서 실행됩니다" —
 Jetson은 배포 대상입니다.
 
 로봇 학습의 무거운 쪽도 구도는 같습니다: GR00T 1.7 포스트 트레이닝에는
@@ -214,8 +217,8 @@ Isaac ROS가 고정 버전인 OpenCV 4.6.0을 자동으로 설치합니다:
 sudo apt-get remove -y libopencv* opencv*
 ```
 
-NVIDIA는 Docker를 권장합니다: "Docker is the recommended option for most
-users. It provides the highest level of isolation from your host system." 이는
+NVIDIA는 Docker를 권장합니다: "Docker는 대부분의 사용자에게 권장되는
+옵션입니다. 호스트 시스템으로부터 최고 수준의 격리를 제공합니다." 이는
 RealSense 카메라 요구 사항(Docker 전용)과도 맞습니다.
 
 ### NemoClaw와 에이전트 스택

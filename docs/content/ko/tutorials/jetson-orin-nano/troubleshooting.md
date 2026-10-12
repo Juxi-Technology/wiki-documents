@@ -54,7 +54,7 @@ review_owner: cheny
 
 # 문제 해결
 
-아래 색인에서 증상을 찾은 다음 해당 섹션을 읽으십시오. 등급: **A** = NVIDIA 공식 문서; **B** = NVIDIA 개발자 포럼(직원 또는 커뮤니티 보고). 커뮤니티에만 있는 항목은 *미확인*으로 표시했습니다. Juxi에는 이 시리즈의 실물 장치가 없습니다 — 이 페이지는 문서 검증만 완료했으며, 하드웨어 테스트는 하지 않았습니다.
+아래 색인에서 증상을 찾은 다음 해당 섹션을 읽으십시오. 등급: **A** = NVIDIA 공식 문서; **B** = NVIDIA 개발자 포럼(직원 또는 커뮤니티 보고). 커뮤니티에만 있는 항목은 *미확인*으로 표시했습니다. 이 시리즈의 하드웨어 검증은 아직 완료되지 않았습니다 — 이 페이지는 문서로만 검증되었으며, 하드웨어 테스트는 거치지 않았습니다.
 
 ## NVIDIA 공식 문제 해결 가이드부터 시작하십시오
 
@@ -85,22 +85,22 @@ review_owner: cheny
 
 ISO 설치 중에 키트가 QSPI 펌웨어 캡슐 업데이트 확인을 요청합니다. NVIDIA는 이를 "가장 많이 놓치는 단계"라고 부릅니다: 프롬프트는 30초만 기다립니다. **Y를 누르십시오.**
 
-- 시간이 초과되면 "the install fails later". NVIDIA의 지침은 설치를 다시 시작하고 Y를 누르라는 것입니다. (등급 A; [빠른 시작](https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/quick_start.html) 5.1절; 릴리스 노트 이슈 6266271, [r39.2](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf)와 [r39.2.1](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf): "Skipping this step causes installation issues due to incompatibility of new ISO images with older QSPI images.")
+- 시간이 초과되면 "나중에 설치가 실패합니다". NVIDIA의 지침은 설치를 다시 시작하고 Y를 누르라는 것입니다. (등급 A; [빠른 시작](https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/quick_start.html) 5.1절; 릴리스 노트 이슈 6266271, [r39.2](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf)와 [r39.2.1](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf): "이 단계를 건너뛰면 새 ISO 이미지와 이전 QSPI 이미지의 호환성 문제로 설치 문제가 발생합니다.")
 - 업데이트는 두 번 실행되며, 키트는 그 사이에 재부팅될 수 있습니다. 이는 정상입니다. NVIDIA는 자동 부팅에 의존하지 말고 UEFI Boot Manager에서 USB 설치 프로그램을 명시적으로 선택하는 것도 권장합니다. (등급 A, [빠른 시작](https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/quick_start.html); 직원이 사용자의 우회 방법으로 가이드가 업데이트되었다고 확인 — 등급 B, [스레드 372151](https://forums.developer.nvidia.com/t/jetpack-7-2-jetson-linux-r39-2-on-jetson-orin-nano-developer-kit-getting-started-and-feedback-thread/372151))
 - 실패 양상(등급 B, 사용자 보고와 직원 확인, [스레드 380410](https://forums.developer.nvidia.com/t/jetson-orin-nano-super-dev-kit-boot-hangs-after-jetpack-7-2-installation-on-nvme-ssd-installer-skips-username-password-setup/380410)): 설치 프로그램이 언어, 네트워크, 사용자 이름 화면을 건너뛰고 "Finished installation and reboot"로 넘어간 뒤, 시스템이 커서만 있는 검은색 또는 회색 화면에서 멈춥니다. 어떤 기본 자격 증명도 동작하지 않습니다(nvidia/nvidia, ubuntu/ubuntu, root/빈 암호). 원인: 캡슐 프롬프트가 확인되지 않았습니다. Y를 누른 뒤에는 설정 화면이 나타나고 설치가 완료되었습니다. 같은 스레드의 다른 사용자는 SDK Manager로 플래싱해 해결했습니다. (등급 B)
 - 키트가 설치 프로그램에 도달하지 못한다면(검은 화면이거나 UEFI 셸로 떨어짐), QSPI 펌웨어가 너무 오래된 것일 가능성이 높습니다: JetPack 7.2/7.2.1은 JetPack 6.x 세대의 UEFI/QSPI 펌웨어를 요구합니다. [플래싱 및 업데이트](/ko/tutorials/jetson-orin-nano/flashing-and-updates)와 [JetPack 6에서 7로](/ko/tutorials/jetson-orin-nano/jetpack-6-to-7)를 참조하십시오. (등급 A, [빠른 시작](https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/quick_start.html))
 
 ## 특정 USB 주변 기기에서 설치 또는 플래싱이 실패합니다
 
-공식 이슈 **5424568**과 **5460707**([r39.2](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf)와 [r39.2.1](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) 노트에 존재): 설치 USB 드라이브를 **"USB3.0 4-port Portable Hub Model UH400"** 허브에 꽂으면 ISO 설치가 실패합니다 — "Other USB sticks or hubs work as expected" — 그리고 **TRENDnet TU2-ET100** USB-to-Ethernet 동글을 연결한 상태에서는 플래싱이 때때로 실패합니다. 다시 시도하기 전에 다른 스틱/허브나 직접 USB 포트를 사용하고 동글을 제거하십시오. (등급 A)
+공식 이슈 **5424568**과 **5460707**([r39.2](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf)와 [r39.2.1](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) 노트에 존재): 설치 USB 드라이브를 **"USB3.0 4-port Portable Hub Model UH400"** 허브에 꽂으면 ISO 설치가 실패합니다 — "다른 USB 스틱이나 허브는 정상적으로 동작합니다" — 그리고 **TRENDnet TU2-ET100** USB-to-Ethernet 동글을 연결한 상태에서는 플래싱이 때때로 실패합니다. 다시 시도하기 전에 다른 스틱/허브나 직접 USB 포트를 사용하고 동글을 제거하십시오. (등급 A)
 
 ## 25W와 MAXN SUPER가 없습니다
 
-증상: 7W와 15W만 나타나거나, `nvpmodel -m 2`가 bad-power-mode 오류를 반환합니다. 원인 — 공식 알려진 문제 **6279443**([r39.2 노트](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf)): ISO로 업데이트한 장치는 "will not default to 'Super' mode after the update. To use 'Super' mode, you must flash the target using a Linux host or SDKM." (등급 A)
+증상: 7W와 15W만 나타나거나, `nvpmodel -m 2`가 bad-power-mode 오류를 반환합니다. 원인 — 공식 알려진 문제 **6279443**([r39.2 노트](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf)): ISO로 업데이트한 장치는 "업데이트 후 기본적으로 'Super' 모드가 되지 않습니다. 'Super' 모드를 사용하려면 Linux 호스트 또는 SDKM으로 타깃을 플래싱해야 합니다." (등급 A)
 
-징후 — `/etc/nv_boot_control.conf`에 `-super` 접미사가 없습니다. 직원: "When Super Mode is enabled, the configuration should include the -super suffix … Currently, the ISO image cannot upgrade a device from non-Super Mode to Super Mode. Please use an x86 host to reflash the device with the Super Mode configuration." (등급 B, [스레드 372627](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627))
+징후 — `/etc/nv_boot_control.conf`에 `-super` 접미사가 없습니다. 직원: "Super Mode가 활성화되면 구성에 -super 접미사가 포함되어야 합니다 … 현재 ISO 이미지는 장치를 non-Super Mode에서 Super Mode로 업그레이드할 수 없습니다. x86 호스트로 장치를 Super Mode 구성으로 다시 플래싱하십시오." (등급 B, [스레드 372627](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627))
 
-7.2.1에서 설계로 수정됨 — 직원: "This would be fixed in jp7.2.1"; [r39.2.1 노트](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf)는 "ISO now flashes the Jetson Orin Nano Developer Kit with Super Mode flashing configuration by default"라고 하며, 이슈 6279443은 알려진 문제 목록에 없습니다. (등급 A)
+7.2.1에서 설계로 수정됨 — 직원: "이 문제는 jp7.2.1에서 수정될 예정입니다"; [r39.2.1 노트](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf)는 "ISO가 이제 Jetson Orin Nano Developer Kit를 기본적으로 Super Mode 플래싱 구성으로 플래싱합니다"라고 하며, 이슈 6279443은 알려진 문제 목록에 없습니다. (등급 A)
 
 해결 방법:
 
@@ -113,7 +113,7 @@ sudo ./flash.sh --no-systemimg -c bootloader/generic/cfg/flash_t234_qspi.xml jet
 sudo SKIP_EEPROM_CHECK=1 BOARDID=3767 BOARDSKU=0005 FAB=300 ./flash.sh --no-systemimg -c bootloader/generic/cfg/flash_t234_qspi.xml jetson-orin-nano-devkit-super internal
 ```
 
-3. 커뮤니티의 제자리 수정 — *미확인*, NVIDIA가 보증하지 않음(등급 B, [스레드 372627](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627), [스레드 375435](https://forums.developer.nvidia.com/t/continuing-power-mode-issues-on-jetpack-7-2/375435)). NVIDIA 직원은 그 파일을 편집하기 **전에** 상태를 캡처해 두라고 사용자에게 요청했습니다(`cat /etc/nv_tegra_release`, `cat /etc/nv_boot_control.conf`, `sudo /usr/sbin/nvpmodel -q --verbose`) — 편집은 점검에 필요한 실패 상태를 제거하므로("would remove the failed state we need to inspect"). 보고된 절차: `sudo -i`; `perl -i -0777 -pe 's/nano-devkit-\n/nano-devkit-super-\n/g' /etc/nv_boot_control.conf`; `dpkg-reconfigure nvidia-l4t-bootloader`; `rm /etc/nvpmodel.conf`; `reboot`; 그다음 `sudo nvpmodel -m 2 --verbose --force`. 여러 사용자가 이후 25W와 MAXN SUPER가 나타났다고 확인했습니다; SD 카드 설치 사용자 한 명은 부팅 루프를 겪고 재설치했습니다.
+3. 커뮤니티의 제자리 수정 — *미확인*, NVIDIA가 보증하지 않음(등급 B, [스레드 372627](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627), [스레드 375435](https://forums.developer.nvidia.com/t/continuing-power-mode-issues-on-jetpack-7-2/375435)). NVIDIA 직원은 그 파일을 편집하기 **전에** 상태를 캡처해 두라고 사용자에게 요청했습니다(`cat /etc/nv_tegra_release`, `cat /etc/nv_boot_control.conf`, `sudo /usr/sbin/nvpmodel -q --verbose`) — 편집은 점검에 필요한 실패 상태를 제거하므로("점검해야 할 실패 상태를 제거하게 됩니다"). 보고된 절차: `sudo -i`; `perl -i -0777 -pe 's/nano-devkit-\n/nano-devkit-super-\n/g' /etc/nv_boot_control.conf`; `dpkg-reconfigure nvidia-l4t-bootloader`; `rm /etc/nvpmodel.conf`; `reboot`; 그다음 `sudo nvpmodel -m 2 --verbose --force`. 여러 사용자가 이후 25W와 MAXN SUPER가 나타났다고 확인했습니다; SD 카드 설치 사용자 한 명은 부팅 루프를 겪고 재설치했습니다.
 
 맥락: 7.2 non-Super 설치에서는 `/etc/nvpmodel/nvpmodel_p3767_0003_super.conf`(15W, 25W, MAXN_SUPER)가 존재하지만, `/etc/nvpmodel.conf`는 15W와 7W만 있는 non-Super 파일을 가리킵니다. (등급 B, 커뮤니티, [스레드 372151](https://forums.developer.nvidia.com/t/jetpack-7-2-jetson-linux-r39-2-on-jetson-orin-nano-developer-kit-getting-started-and-feedback-thread/372151)). 전원 모드 확인 명령: [시스템 검증](/ko/tutorials/jetson-orin-nano/verify-your-system).
 
@@ -130,11 +130,13 @@ MAXN_SUPER가 활성화되어 있어도 GPU가 624,750,000 Hz(`bpmp/debug/clk/na
 
 ## NVMe 스토리지 문제
 
+*상태: 2026-10-11 검토 완료. 미확인으로 표시된 항목은 커뮤니티 포럼 보고에서 나온 것으로 바뀔 수 있습니다. 이 페이지는 문서 검증만 완료했습니다 — Juxi는 이 키트를 하드웨어에서 테스트하지 않았습니다.*
+
 **설치 프로그램이 드라이브를 제공하지 않음 / 파티션 단계 실패** — *미확인*: 설치 프로그램이 4K 섹터로 포맷된 NVMe 드라이브를 지원하지 않을 수 있습니다; 512n/512e가 필요합니다. `nvme id-ns -H /dev/nvme0n1`로 확인하십시오; `nvme format --lbaf=ID /dev/nvme0n1`로 변경합니다 — **데이터 파괴적**입니다; 게시글은 데이터 보존을 다루지 않습니다. NVIDIA는 이를 공식적으로 확인하지 않았습니다. (등급 B, 미확인, [스레드 372151](https://forums.developer.nvidia.com/t/jetpack-7-2-jetson-linux-r39-2-on-jetson-orin-nano-developer-kit-getting-started-and-feedback-thread/372151))
 
 **설치는 정상으로 보이지만 부팅이 멈춤** — *미확인*: 설치 프로그램이 100%에 도달한 뒤 검은 화면이나 깜빡이는 커서가 나타난다는 보고가 여러 건 있습니다. 한 사용자는 복구 모드 직접 플래싱으로만 해결했고, 다른 사용자는 위의 4K 섹터 문제로 추적했습니다. 확인된 근본 원인은 없습니다. (등급 B, 미확인, [스레드 372151](https://forums.developer.nvidia.com/t/jetpack-7-2-jetson-linux-r39-2-on-jetson-orin-nano-developer-kit-getting-started-and-feedback-thread/372151))
 
-**UEFI 단계에서 NVMe가 감지되지 않음(r39.2)** — PCIe C7의 드라이브가 R36.4에서는 동작했는데 UEFI 부팅 단계에서 보이지 않았습니다; 보고자는 기본 구성으로 복원하고 다시 플래싱해 해결했습니다. 직원: "for NV devkit, everything is already configured correctly in the default BSP. The more items you try to configure, it has more chance you make something not work." (등급 B, [스레드 383858](https://forums.developer.nvidia.com/t/jetson-orin-nano-in-jetpack-7-2-r39-2-nvme-ssd-on-pcie-c7-is-not-detected-bootable-in-uefi-stage-but-works-normally-after-linux-boots/383858)). 참고: JetPack 7.2부터 SD 카드 이미지는 없어졌습니다 — ISO를 USB 드라이브에 기록한 다음 microSD나 NVMe에 설치하십시오. (등급 A, [빠른 시작](https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/quick_start.html))
+**UEFI 단계에서 NVMe가 감지되지 않음(r39.2)** — PCIe C7의 드라이브가 R36.4에서는 동작했는데 UEFI 부팅 단계에서 보이지 않았습니다; 보고자는 기본 구성으로 복원하고 다시 플래싱해 해결했습니다. 직원: "NV devkit의 경우 기본 BSP에 모든 것이 이미 올바르게 구성되어 있습니다. 설정 항목을 많이 건드릴수록 무언가가 동작하지 않게 될 가능성이 커집니다." (등급 B, [스레드 383858](https://forums.developer.nvidia.com/t/jetson-orin-nano-in-jetpack-7-2-r39-2-nvme-ssd-on-pcie-c7-is-not-detected-bootable-in-uefi-stage-but-works-normally-after-linux-boots/383858)). 참고: JetPack 7.2부터 SD 카드 이미지는 없어졌습니다 — ISO를 USB 드라이브에 기록한 다음 microSD나 NVMe에 설치하십시오. (등급 A, [빠른 시작](https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/quick_start.html))
 
 ## "Step 9/13 Updating boot firmware"에서 설치가 중단됩니다(보드 이름 불일치)
 
@@ -154,9 +156,9 @@ ERROR. 3767--0005--1--jetson-orin-nx-devkit-16gb- does not match any known board
 
 ## Ollama와 GPU 가속
 
-이력: JetPack 7.2의 초기 Ollama 빌드는 Ollama의 사전 빌드 CUDA 라이브러리에 sm_87(Orin 컴퓨트 성능 8.7)이 없어서 CPU로 폴백했습니다. 직원이 로그 "skipping CUDA device — compute capability not in compiled architectures … device=Orin cc=870"을 인용하며 이렇게 밝혔습니다: "This is a known issue … We're working directly with the Ollama team to get native JP 7.2 support added." (등급 B, 직원, [스레드 372521](https://forums.developer.nvidia.com/t/jetpack-7-2-gpu-acceleration-issue/372521))
+이력: JetPack 7.2의 초기 Ollama 빌드는 Ollama의 사전 빌드 CUDA 라이브러리에 sm_87(Orin 컴퓨트 성능 8.7)이 없어서 CPU로 폴백했습니다. 직원이 로그 "skipping CUDA device — compute capability not in compiled architectures … device=Orin cc=870"을 인용하며 이렇게 밝혔습니다: "알려진 문제입니다 … 네이티브 JP 7.2 지원을 추가하기 위해 Ollama 팀과 직접 협력하고 있습니다." (등급 B, 직원, [스레드 372521](https://forums.developer.nvidia.com/t/jetpack-7-2-gpu-acceleration-issue/372521))
 
-현재 상태: 최신 업스트림 Ollama는 동작합니다. 직원이 JetPack 7.2.1에서 확인했습니다(2026-09-21): `curl -fsSL https://ollama.com/install.sh | sh`로 설치하고, 모델을 실행한 다음, `ollama ps`를 확인하십시오 — `100% GPU`가 표시되어야 합니다. "WARNING: Unsupported JetPack version detected" 줄은 무해한 메시지이며, 예전 `override.conf` 우회 방법은 "is no longer needed"입니다. (등급 B, 직원, [스레드 383350](https://forums.developer.nvidia.com/t/ollama-not-supporting-jetson/383350))
+현재 상태: 최신 업스트림 Ollama는 동작합니다. 직원이 JetPack 7.2.1에서 확인했습니다(2026-09-21): `curl -fsSL https://ollama.com/install.sh | sh`로 설치하고, 모델을 실행한 다음, `ollama ps`를 확인하십시오 — `100% GPU`가 표시되어야 합니다. "WARNING: Unsupported JetPack version detected" 줄은 무해한 메시지이며, 예전 `override.conf` 우회 방법은 "더 이상 필요하지 않습니다". (등급 B, 직원, [스레드 383350](https://forums.developer.nvidia.com/t/ollama-not-supporting-jetson/383350))
 
 오래된 빌드 수정: `find /usr/local/lib/ollama ... | grep -Ei 'cuda|cudart|runner'` 결과에 `cuda_v12`와 `cuda_v13` 트리가 모두 보이면 오래된 것을 삭제하십시오 — `sudo rm -rf /usr/local/lib/ollama/cuda_v12`. 그러면 로그에 "load_backend: loaded CUDA backend from /usr/local/lib/ollama/cuda_v13/libggml-cuda.so … compute capability 8.7"이 표시되었습니다. (등급 B, 직원 및 사용자, [스레드 372521](https://forums.developer.nvidia.com/t/jetpack-7-2-gpu-acceleration-issue/372521))
 
@@ -164,7 +166,7 @@ ERROR. 3767--0005--1--jetson-orin-nx-devkit-16gb- does not match any known board
 
 ## JetPack 7.2용 Python 휠
 
-JP 7.2 / CUDA 13.2에 대한 직원 답변: `https://pypi.jetson-ai-lab.io/sbsa/cu130`을 사용하십시오. (등급 B, 직원, [스레드 372521](https://forums.developer.nvidia.com/t/jetpack-7-2-gpu-acceleration-issue/372521)). 주의: 인덱스 루트를 확인했을 때(2026-09-26), `jp6/cu126`, `jp6/cu128`, `jp6/cu129`, `sbsa/cu130`, `sbsa/dev`가 나열되어 있었고 `jp7` 항목은 보이지 않았습니다; 커뮤니티 스레드는 `https://pypi.jetson-ai-lab.io/jp7/cu132`도 인용하는데, 그 목록에서는 보이지 않았습니다. (등급 C). 직원: "Downgrade: Yes, you can flash back to JP 6.2.2 via SDK Manager if needed." (등급 B)
+JP 7.2 / CUDA 13.2에 대한 직원 답변: `https://pypi.jetson-ai-lab.io/sbsa/cu130`을 사용하십시오. (등급 B, 직원, [스레드 372521](https://forums.developer.nvidia.com/t/jetpack-7-2-gpu-acceleration-issue/372521)). 주의: 인덱스 루트를 확인했을 때(2026-09-26), `jp6/cu126`, `jp6/cu128`, `jp6/cu129`, `sbsa/cu130`, `sbsa/dev`가 나열되어 있었고 `jp7` 항목은 보이지 않았습니다; 커뮤니티 스레드는 `https://pypi.jetson-ai-lab.io/jp7/cu132`도 인용하는데, 그 목록에서는 보이지 않았습니다. (등급 C). 직원: "다운그레이드: 예, 필요한 경우 SDK Manager를 통해 JP 6.2.2로 다시 플래싱할 수 있습니다." (등급 B)
 
 ## Wi-Fi가 네트워크를 찾지 못합니다
 
@@ -172,10 +174,10 @@ JP 7.2 / CUDA 13.2에 대한 직원 답변: `https://pypi.jetson-ai-lab.io/sbsa/
 
 ## 시리얼 콘솔(헤드리스 디버깅)
 
-배선(등급 A, [빠른 시작](https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/quick_start.html)): 버튼 헤더에 USB-to-TTL 시리얼 케이블 — RXD 핀 3은 어댑터의 TX 선, TXD 핀 4는 어댑터의 RX 선, GND 핀 7은 어댑터의 접지 선에 연결합니다. 그다음 "Open a serial console on your PC". 부팅 중 **Esc**를 반복해서 눌러 UEFI로 들어갑니다. 헤드리스 ISO 설치라면 부팅 전 옵션에서 Esc를 누르고 **Boot Manager**를 선택한 뒤 USB 디스크를 고르십시오.
+배선(등급 A, [빠른 시작](https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/quick_start.html)): 버튼 헤더에 USB-to-TTL 시리얼 케이블 — RXD 핀 3은 어댑터의 TX 선, TXD 핀 4는 어댑터의 RX 선, GND 핀 7은 어댑터의 접지 선에 연결합니다. 그다음 "PC에서 시리얼 콘솔을 여십시오". 부팅 중 **Esc**를 반복해서 눌러 UEFI로 들어갑니다. 헤드리스 ISO 설치라면 부팅 전 옵션에서 Esc를 누르고 **Boot Manager**를 선택한 뒤 USB 디스크를 고르십시오.
 
-- NVIDIA의 페이지에는 보드 레이트나 터미널 프로그램이 없습니다 — "Open a serial console on your PC"뿐입니다. (*확인하지 못한 것* 참조)
-- DisplayPort 디스플레이나 Debug UART가 없으면 헤드리스 ISO 설치는 실용적이지 않습니다 — 직원: "You'd need to use either the DP display output or the Debug UART … so if you don't have either it's practically impossible." (등급 B, 직원, [스레드 372151](https://forums.developer.nvidia.com/t/jetpack-7-2-jetson-linux-r39-2-on-jetson-orin-nano-developer-kit-getting-started-and-feedback-thread/372151))
+- NVIDIA의 페이지에는 보드 레이트나 터미널 프로그램이 없습니다 — "PC에서 시리얼 콘솔을 여십시오"뿐입니다. (*확인하지 못한 것* 참조)
+- DisplayPort 디스플레이나 Debug UART가 없으면 헤드리스 ISO 설치는 실용적이지 않습니다 — 직원: "DP 디스플레이 출력이나 Debug UART 중 하나를 사용해야 합니다 … 둘 다 없다면 사실상 불가능합니다." (등급 B, 직원, [스레드 372151](https://forums.developer.nvidia.com/t/jetpack-7-2-jetson-linux-r39-2-on-jetson-orin-nano-developer-kit-getting-started-and-feedback-thread/372151))
 - 헤드리스 ISO 설치에서 UEFI 콘솔은 `/dev/ttyACM1`이며, QSPI가 GA(38.2)로 업데이트될 때까지 출력이 쏟아집니다; 디스플레이를 연결하면 나타나지 않습니다([이슈 5463861](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf)). (등급 A)
 - 디버그 케이블을 다시 꽂으면 minicom에 접근할 수 없게 될 수 있습니다 — minicom을 재시작하십시오([이슈 5437763](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf), 두 릴리스 모두). (등급 A)
 
@@ -202,13 +204,13 @@ NVIDIA의 릴리스 노트에는 예기치 않은 리셋을 일으킬 수 있는
 
 출처에서 열려 있는 질문들:
 
-- 시리얼 콘솔의 보드 레이트와 터미널 프로그램 — NVIDIA는 "Open a serial console on your PC"라고만 합니다.
+- 시리얼 콘솔의 보드 레이트와 터미널 프로그램 — NVIDIA는 "PC에서 시리얼 콘솔을 여십시오"라고만 합니다.
 - 보드 이름 불일치(`command_34` 종료 코드 100)가 r39.2.1에서 수정되었는지; 스레드에 NVIDIA 답변이 없으며, 마지막 커뮤니티 재현은 2026-09-18입니다.
 - 7.2.1 ISO 설치가 원래 7.2 ISO로 플래싱된 장치의 Super 모드를 복원하는지 — 노트에는 7.2.1이 기본적으로 Super 구성으로 플래싱한다고만 적혀 있습니다.
 - 4K 섹터 NVMe 제한이 실제이며 공식 문서화되었는지 — 커뮤니티 보고뿐이며, 릴리스 노트나 사용자 가이드에는 없습니다.
 - 오래된 COMPATIBLE_SPEC/TNSPEC을 다시 각인하는 공식 절차는 없습니다; NVIDIA에 보낸 포럼 질문은 답변되지 않았습니다.
 - JP 7.2의 정본 휠 인덱스가 무엇인지: `/sbsa/cu130`(직원) 또는 `/jp7/cu132`(커뮤니티 인용).
-- 플래싱 호스트 요구 사항이 공식 출처마다 다릅니다: 릴리스 노트는 "Ubuntu 24.04 and 22.04"(아키텍처 없음)라고 하고; BSP 페이지는 SDK Manager에 x86_64라고 하며; 사용자는 Windows SDK Manager로 7.2.1 플래싱에 성공했다고도 보고합니다.
+- 플래싱 호스트 요구 사항이 공식 출처마다 다릅니다: 릴리스 노트는 "Ubuntu 24.04와 22.04"(아키텍처 없음)라고 하고; BSP 페이지는 SDK Manager에 x86_64라고 하며; 사용자는 Windows SDK Manager로 7.2.1 플래싱에 성공했다고도 보고합니다.
 - 커뮤니티의 `nv_boot_control.conf` 편집이 안전한지 — NVIDIA는 제자리 경로를 보증하지도, 수정하지도 않았습니다.
 - non-Super 설치에서 `sudo nvpmodel -m 2`가 재부팅 후에도 유지될 수 있는지(커뮤니티 보고는 아니라고 합니다).
 - EXT4/NVMe 손상 보고(저널 복구 실패, I/O 태그 타임아웃, "Attempting recovery boot") — 미해결; 스레드는 답변 없이 닫혔습니다.
@@ -221,7 +223,7 @@ NVIDIA의 릴리스 노트에는 예기치 않은 리셋을 일으킬 수 있는
 - 릴리스 노트: [JetPack 7.2 / L4T r39.2 (PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf) · [JetPack 7.2.1 / L4T r39.2.1 (PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) — 2026-09-26 확인
 - NVIDIA 개발자 포럼 스레드(2026-09-26 확인): [372151](https://forums.developer.nvidia.com/t/jetpack-7-2-jetson-linux-r39-2-on-jetson-orin-nano-developer-kit-getting-started-and-feedback-thread/372151) · [380410](https://forums.developer.nvidia.com/t/jetson-orin-nano-super-dev-kit-boot-hangs-after-jetpack-7-2-installation-on-nvme-ssd-installer-skips-username-password-setup/380410) · [372627](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627) · [377003](https://forums.developer.nvidia.com/t/jetpack-7-2-l4t-39-2-gpu-frequency-stuck-at-624-mhz-on-orin-nano-8gb-p3767-0005-bpmp-hard-limit-super-mode-not-unlocking/377003) · [377553](https://forums.developer.nvidia.com/t/jetson-orin-nano-missing-25w-power-mode-qspi-firmware-mismatch-after-missed-capsule-update/377553) · [375435](https://forums.developer.nvidia.com/t/continuing-power-mode-issues-on-jetpack-7-2/375435) · [372521](https://forums.developer.nvidia.com/t/jetpack-7-2-gpu-acceleration-issue/372521) · [383350](https://forums.developer.nvidia.com/t/ollama-not-supporting-jetson/383350) · [383858](https://forums.developer.nvidia.com/t/jetson-orin-nano-in-jetpack-7-2-r39-2-nvme-ssd-on-pcie-c7-is-not-detected-bootable-in-uefi-stage-but-works-normally-after-linux-boots/383858) · [379702](https://forums.developer.nvidia.com/t/jetson-orin-nano-repeated-ext4-nvme-filesystem-corruption-and-attempting-recovery-boot-on-jetpack-7-2/379702) · [372269](https://forums.developer.nvidia.com/t/nemoclaw-on-jetson-orin-super-with-jetpack-7-2/372269)
 
-*상태: 2026-10-11 검토 완료. 미확인으로 표시된 항목은 커뮤니티 포럼 보고에서 나온 것으로 바뀔 수 있습니다. 이 페이지는 문서 검증만 완료했습니다 — Juxi는 이 키트를 하드웨어에서 테스트하지 않았습니다.*
+*상태: 2026-10-11 검토 완료. 미확인으로 표시된 항목은 커뮤니티 포럼 보고에서 나온 것으로 바뀔 수 있습니다. 이 페이지는 문서로만 검증되었습니다 — Juxi는 이 키트를 하드웨어에서 테스트하지 않았습니다.*
 
 ---
 

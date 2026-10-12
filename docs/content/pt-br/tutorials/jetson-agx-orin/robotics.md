@@ -47,7 +47,7 @@ comprometer com uma arquitetura.
 | **Comportamentos agênticos / orquestração** | ✅ Funciona | NemoClaw + habilidades de agente do Jetson — consulte [IA agêntica](/pt-br/tutorials/jetson-agx-orin/agentic-ai). |
 | **Stacks de aprendizado de robô (frameworks Python no estilo LeRobot)** | ⚠️ Verifique antes de se comprometer | Esses stacks são fortemente baseados em Python; o Ubuntu 24.04 passou para o Python 3.12 e algumas dependências podem ficar para trás. Teste o seu stack específico no JP7.2 antes de projetar em cima dele — e observe que **não verificamos isso em hardware**. |
 | **GR00T (modelos de fundação para humanoides)** | ⚠️ Consulte as fontes oficiais | Acompanhe o repositório oficial do Isaac GR00T da NVIDIA e os anúncios de suporte à plataforma. Um passo a passo publicado por um parceiro relata uma implantação TensorRT de pesos completos no AGX Orin + JP7.2 *(terceiros, não verificado por nós)*. |
-| **Placas portadoras personalizadas / trabalho de BSP** | ✅ Novas ferramentas | As **habilidades de agente de personalização do Jetson Linux** do JetPack 7.2 automatizam tarefas de bring-up de BSP — consulte os [repositórios de habilidades de agente](https://github.com/jetson-bsp-skills). |
+| **Placas portadoras personalizadas / trabalho de BSP** | ✅ Novas ferramentas | As **habilidades de agente de personalização do Jetson Linux** do JetPack 7.2 automatizam tarefas de bring-up de BSP — consulte os [repositórios de habilidades de agente](https://github.com/NVIDIA-AI-IOT/jetson-bsp-skills). |
 
 ## Isaac ROS no JetPack 7.2
 

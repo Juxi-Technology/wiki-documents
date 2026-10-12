@@ -86,6 +86,11 @@ Omniverse a sinistra, che è un host separato.
 
 ## Isaac ROS su JetPack 7.2 — cosa dicono oggi le pagine ufficiali
 
+*Stato: rivisto il 2026-10-11. La disponibilità
+dell'ecosistema cambia rapidamente — ricontrolli le pagine NVIDIA e a monte
+collegate prima di fare affidamento su questa tabella. Non ancora verificato su
+hardware fisico da Juxi Technology.*
+
 **Le pagine di NVIDIA sono in disaccordo tra loro.** La pagina dei download di
 JetPack 7.2.1 elenca ancora "NVIDIA Isaac™ ROS — In arrivo". Le pagine del
 progetto Isaac ROS dicono che il supporto è stato rilasciato. Per Isaac ROS

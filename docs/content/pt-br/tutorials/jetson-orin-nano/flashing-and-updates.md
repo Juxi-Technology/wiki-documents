@@ -103,6 +103,9 @@ papel metálico"; e um display ou cabo serial USB para TTL para o kit.
 > distribuição do host para gravação. Verifique os requisitos do SDK Manager da NVIDIA antes de
 > preparar um PC host.
 
+*Status: revisado em 2026-10-11. Baseado na documentação oficial da NVIDIA nas
+datas indicadas; ainda não verificado em hardware físico pela Juxi Technology.*
+
 **Instale o SDK Manager no host.** A página de configuração da NVIDIA traz os comandos exatos
 para Ubuntu 22.04 e 20.04; inicie-o com `sdkmanager` e faça login com suas credenciais do NVIDIA
 Developer (uma janela do navegador abre; a autenticação de dois fatores pode aparecer).

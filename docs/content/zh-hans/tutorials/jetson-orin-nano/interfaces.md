@@ -185,6 +185,8 @@ review_owner: cheny
 
 *状态：已于 2026-10-11 审核。以上步骤与数值依据所列日期的 NVIDIA 官方文档；尚未由钜犀科技在实体硬件上验证。*
 
+*状态：已于 2026-10-11 审核。以上步骤与数值依据所列日期的 NVIDIA 官方文档；尚未由钜犀科技在实体硬件上验证。*
+
 **图片来源：** 布局图来自 NVIDIA 官方 *Jetson Orin Nano Developer Kit User Guide*（下载于 2026-09-26），版权归 © NVIDIA Corporation 所有。
 
 ---

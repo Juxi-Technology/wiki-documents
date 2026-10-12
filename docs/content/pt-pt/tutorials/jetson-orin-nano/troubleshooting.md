@@ -53,11 +53,15 @@ review_owner: cheny
 # Resolução de problemas
 
 Encontre o seu sintoma no índice abaixo e leia a secção correspondente. Graus:
+*Estado: revisado em 2026-10-11. Os itens marcados como não
+confirmados provêm de relatos do fórum da comunidade e podem mudar. Esta página
+baseia-se apenas na documentação — a Juxi não testou este kit em hardware.*
+
 **A** = documentação oficial da NVIDIA; **B** = fórum de desenvolvedores da
 NVIDIA (relatos de funcionários ou da comunidade). Os itens apenas da
-comunidade estão marcados como *não confirmado*. A Juxi não tem nenhuma unidade
-desta série em mãos — esta página baseia-se apenas na documentação, não foi
-testada em hardware.
+comunidade estão marcados como *não confirmado*. A verificação de hardware
+desta série ainda está pendente — esta página baseia-se apenas na
+documentação, não foi testada em hardware.
 
 ## Comece pelo guia oficial de resolução de problemas da NVIDIA
 

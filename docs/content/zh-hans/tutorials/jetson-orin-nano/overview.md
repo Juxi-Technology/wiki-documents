@@ -101,7 +101,7 @@ Super 性能提升来自一个软件电源模式：它在相同硬件上拉高 G
 
 - **Jetson Orin Nano 8GB——本套件。** Orin 家族的入门选择：67 INT8 TOPS、8GB 统一内存、7W 到 25W。
 - **Jetson Orin NX。** 同一块载板可为 Orin NX 模块供电、测试和开发（需要自备散热器和风扇；全新出厂模块必须通过 Ubuntu 主机用 SDK Manager 刷机）。*(Developer Kit User Guide — How-To)*
-- **Jetson AGX Orin——旗舰档。** AGX Orin 32GB 模块在 Super Mode 下可达 241 TOPS *(JetPack 7.2 release highlights)*。见钜犀的 [Jetson AGX Orin 系列](/zh-hans/tutorials/jetson-agx-orin/quick-start)。
+- **Jetson AGX Orin——旗舰档。** AGX Orin 32GB 模块在 Super Mode 下可达 241 TOPS *(JetPack 7.2 release highlights)*。见钜犀的 [Jetson AGX Orin 系列](https://wiki.juxitech.com/zh-hans/tutorials/jetson-agx-orin/quick-start)。
 
 规划时最大的约束是 **8GB 统一内存**；由于没有 DLA 和 PVA，AI 负载只能由 GPU 承担——见 **[内存效率](/zh-hans/tutorials/jetson-orin-nano/memory-efficiency)** 和 **[本地 LLM](/zh-hans/tutorials/jetson-orin-nano/local-llm)**。
 
@@ -150,6 +150,8 @@ Super 性能提升来自一个软件电源模式：它在相同硬件上拉高 G
 - [L4T r38.2.1 Developer Guide——分区配置（模块 SKU）](https://docs.nvidia.com/jetson/archives/r38.2.1/DeveloperGuide/AR/BootArchitecture/PartitionConfiguration.html)（核对于 2026-09-26）
 - [Jetson Orin Nano Super Developer Kit 数据手册（PDF，链接自 nvidia.com）](https://dam-cdn.nvd.orangelogic.com/AssetLink/2ug686w80406gxf6q8uv7r3l7265m2n8.pdf)（核对于 2026-09-26）
 - [钜犀科技该套件的商店页](https://www.juxitech.com/products/nvidia-jetson-orin-nano-super-development-kit)（核对于 2026-09-26）
+
+*状态：已于 2026-10-11 审核。内容依据所列日期的 NVIDIA 官方文档；尚未由钜犀科技在实体硬件上验证。*
 
 *状态：已于 2026-10-11 审核。内容依据所列日期的 NVIDIA 官方文档；尚未由钜犀科技在实体硬件上验证。*
 

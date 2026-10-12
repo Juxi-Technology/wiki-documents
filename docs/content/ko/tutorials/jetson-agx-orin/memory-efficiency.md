@@ -40,7 +40,7 @@ NVIDIA가 제시하는 목표는 다음과 같습니다: 더 강력한 워크로
 메모리 풋프린트에 담는 것(이것이 동일한 하드웨어가 소프트웨어 릴리스가
 거듭될수록 계속 더 유용해지는 방식입니다). 여기서 시작하십시오:
 
-- [Jetson device-side skills](https://github.com/jetson-device-skills) · [Jetson BSP skills](https://github.com/jetson-bsp-skills)
+- [Jetson device-side skills](https://github.com/NVIDIA-AI-IOT/jetson-device-skills) · [Jetson BSP skills](https://github.com/NVIDIA-AI-IOT/jetson-bsp-skills)
 - 배경 자료: [NVIDIA의 JetPack 7.2 메모리 효율 블로그](https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2)
 
 > **주의:** 카브아웃 및 예약 변경은 부팅 동작에 영향을 줍니다. 변경은 한 번에

@@ -38,7 +38,7 @@ NVIDIA 在 Jetson 上提供四种安装方式；官方说明推荐**新用户使
 
 - **方式 4——Docker（推荐新用户）：** 使用 NGC DeepStream 容器——参见 [Docker 容器](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_docker_containers.html)。
 - **方式 1——SDK Manager：** 在「Additional SDKs」中勾选 **DeepStreamSDK**，与 JetPack 7.2 GA 组件一起安装。
-- **方式 2——tar 包：** 下载 `deepstream_sdk_v9.1.0_jetson.tbz2`（来自 [NVIDIA/DeepStream releases](https://github.com/DeepStream/releases/tag)），然后：
+- **方式 2——tar 包：** 下载 `deepstream_sdk_v9.1.0_jetson.tbz2`（来自 [NVIDIA/DeepStream releases](https://github.com/NVIDIA/DeepStream/releases)），然后：
   ```bash
   sudo tar -xvf deepstream_sdk_v9.1.0_jetson.tbz2 -C /
   cd /opt/nvidia/deepstream/deepstream-9.1
@@ -103,7 +103,7 @@ deepstream-app -c source30_1080p_dec_infer-resnet_tiled_display.txt
 
 ## 4. JetPack 7.2 上 DeepStream 9.1 的新变化
 
-- **代理辅助构建流水线：** NVIDIA 文档介绍了 *DeepStream Coding Agent*（用 AI 代理辅助构建流水线）——[文档](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_AI_Agent.html) · [GitHub](https://github.com/DeepStream_Coding_Agent)。
+- **代理辅助构建流水线：** NVIDIA 文档介绍了 *DeepStream Coding Agent*（用 AI 代理辅助构建流水线）——[文档](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_AI_Agent.html) · [GitHub](https://github.com/NVIDIA-AI-IOT/DeepStream_Coding_Agent)。
 - **流水线中的 LLM/VLM：** 参考应用包含 **deepstream-vllm-plugin**，可将视频流水线与大模型推理结合——参见[官方文档](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_ref_app_vllm_plugin.html)。如需在 DeepStream 之外进行端侧模型推理，请参见 [本地 LLM 推理](/zh-hans/tutorials/jetson-agx-orin/local-llm)。
 - **设备端运行 Triton：** 如需以原生方式（不用 Docker）运行 Triton Inference Server，请在 samples 目录下执行 `sudo ./triton_backend_setup.sh`（会为 Jetson 安装 Triton 2.68.0）。
 

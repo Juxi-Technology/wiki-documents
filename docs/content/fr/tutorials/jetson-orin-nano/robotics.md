@@ -86,6 +86,11 @@ trouvent dans le bloc Omniverse à gauche, qui est un hôte séparé.
 
 ## Isaac ROS sous JetPack 7.2 — ce que disent les pages officielles aujourd'hui
 
+*Statut : relu le 2026-10-11. La disponibilité dans
+l'écosystème évolue rapidement — recontrôlez les pages NVIDIA et amont liées
+avant de vous fier à ce tableau. Pas encore vérifié sur matériel physique par
+Juxi Technology.*
+
 **Les pages de NVIDIA se contredisent.** La page de téléchargement de
 JetPack 7.2.1 liste encore « NVIDIA Isaac™ ROS — Coming soon ». Les pages du
 projet Isaac ROS disent que la prise en charge est livrée. Pour Isaac ROS

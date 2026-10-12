@@ -215,6 +215,11 @@ da NVIDIA e em declarações do fórum de desenvolvedores na data indicada; aind
 verificado em hardware físico pela Juxi Technology. A lista de recompilação descreve
 consequências padrão da plataforma — valide com a sua própria pilha.*
 
+*Status: revisado em 2026-10-11. Baseado na documentação oficial
+da NVIDIA e em declarações do fórum de desenvolvedores na data indicada; ainda não
+verificado em hardware físico pela Juxi Technology. A lista de recompilação descreve
+consequências padrão da plataforma — valide com a sua própria pilha.*
+
 ---
 
 NVIDIA® e Jetson™ são marcas registradas da NVIDIA Corporation. Esta página é

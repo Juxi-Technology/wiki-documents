@@ -125,7 +125,7 @@ Das notas de lançamento do Jetson Linux 39.2:
 
 - [Notas de lançamento do Jetson Linux 39.2.0 (PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf) — *What's New*, problemas conhecidos (verificado em 2026-09-23)
 - [Transferências do JetPack SDK](https://developer.nvidia.com/embedded/jetpack/downloads) (verificado em 2026-09-23) — ⚠️ a sua tabela de componentes está desatualizada em algumas linhas; para as versões que um sistema 7.2.1 instala efetivamente, consulte [Verifique o seu sistema](/pt-pt/tutorials/jetson-agx-orin/verify-your-system)
-- [Seeed Studio JetPack 7.2 Resource Hub](https://wiki.seeedstudio.com/jetpack_7_2_resource_hub/) — fonte secundária; utilizada para organizar os tópicos da migração (verificado em 2026-09-23)
+- [Seeed Studio JetPack 7.2 Resource Hub](https://wiki.seeedstudio.com/jetpack_7_2_resource_hub/) — fonte secundária (verificado em 2026-09-23)
 
 *Estado: revisado em 2026-10-11. Baseado na documentação
 oficial da NVIDIA na data indicada; ainda não verificado em hardware físico

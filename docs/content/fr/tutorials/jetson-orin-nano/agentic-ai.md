@@ -241,6 +241,11 @@ appareil qui contient vos données, c'est un risque réel : un agent avec accès
 aux outils et au shell ici peut lire, modifier ou envoyer tout ce qu'il peut
 atteindre.
 
+*Statut : relu le 2026-10-11. Fondé sur la
+documentation officielle NVIDIA, des posts des forums développeurs NVIDIA et le
+guide fournisseur Jetson AI Lab, aux dates indiquées ; pas encore vérifié sur
+matériel physique par Juxi Technology.*
+
 **Utilisez la couche de politiques.** NVIDIA décrit OpenShell comme « le
 runtime sécurisé à l'intérieur qui impose ce à quoi l'agent peut accéder :
 fichiers, réseaux, identifiants et outils ». Pendant l'onboarding, choisissez

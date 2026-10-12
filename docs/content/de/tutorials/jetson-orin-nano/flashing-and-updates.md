@@ -104,6 +104,9 @@ USB-TTL-Seriellkabel für das Kit.
 > die Release Notes zu L4T r39.2.1 nennen „Ubuntu 24.04 und 22.04“ als Host-Distribution zum
 > Flashen. Prüfen Sie NVIDIAs SDK-Manager-Anforderungen, bevor Sie einen Host-PC vorbereiten.
 
+*Status: geprüft am 2026-10-11. Basiert auf NVIDIAs offizieller Dokumentation mit Stand der
+oben genannten Daten; noch nicht von Juxi Technology auf physischer Hardware verifiziert.*
+
 **Installieren Sie den SDK Manager auf dem Host.** NVIDIAs Setup-Seite enthält die genauen Befehle für Ubuntu
 22.04 und 20.04; starten Sie ihn mit `sdkmanager` und melden Sie sich mit Ihren NVIDIA-Developer-Zugangsdaten an
 (ein Browserfenster öffnet sich; eventuell erscheint eine Zwei-Faktor-Authentifizierung).

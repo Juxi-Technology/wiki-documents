@@ -242,6 +242,11 @@ weiterarbeitet, während Sie nicht hinsehen. Auf einem Gerät, das Ihre Daten
 enthält, ist das ein echtes Risiko: Ein Agent mit Tool- und Shell-Zugriff kann
 hier alles lesen, ändern oder senden, was er erreichen kann.
 
+*Status: geprüft am 2026-10-11. Basiert auf NVIDIAs
+offizieller Dokumentation, Beiträgen in den NVIDIA-Entwicklerforen und dem
+Anbieter-Leitfaden von Jetson AI Lab, zum angegebenen Datum; noch nicht auf
+physischer Hardware durch Juxi Technology verifiziert.*
+
 **Nutzen Sie die Richtlinienschicht.** NVIDIA beschreibt OpenShell als „die
 sichere Runtime darin, die durchsetzt, worauf der Agent zugreifen kann:
 Dateien, Netzwerke, Anmeldedaten und Tools.“ Wählen Sie beim Onboarding die

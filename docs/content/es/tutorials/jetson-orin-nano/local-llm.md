@@ -237,6 +237,10 @@ contexto deliberadamente — consulte [Eficiencia de memoria para 8 GB](/es/tuto
 oficial de NVIDIA a la fecha indicada; aún no verificado en hardware físico por
 Juxi Technology.*
 
+*Estado: revisado el 2026-10-11. Basado en la documentación
+oficial de NVIDIA a la fecha indicada; aún no verificado en hardware físico por
+Juxi Technology.*
+
 ---
 
 NVIDIA® y Jetson™ son marcas comerciales de NVIDIA Corporation. Esta página es

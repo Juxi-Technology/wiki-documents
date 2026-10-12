@@ -25,7 +25,7 @@ review_owner: cheny
 
 | Datum | Änderung |
 |---|---|
-| 2026-09-26 | Erster Dokumentationssatz als Entwurf veröffentlicht: Schnellstart, Flashen & Updates, System überprüfen, Produktübersicht, Schnittstellen & Hardware-Layout, FAQ, Fehlerbehebung, Downloads, der Migrationsleitfaden JetPack 6.x → 7.2, fünf Tutorials (Lokale LLM-Inferenz, Speichereffizienz, DeepStream, Robotik, Agentische KI), Glossar und dieser Changelog. Verfasst anhand von NVIDIAs offizieller Dokumentation für JetPack 7.2.1; noch nicht auf physischer Hardware verifiziert. |
+| 2026-09-26 | Erster Dokumentationssatz veröffentlicht: Schnellstart, Flashen & Updates, System überprüfen, Produktübersicht, Schnittstellen & Hardware-Layout, FAQ, Fehlerbehebung, Downloads, der Migrationsleitfaden JetPack 6.x → 7.2, fünf Tutorials (Lokale LLM-Inferenz, Speichereffizienz, DeepStream, Robotik, Agentische KI), Glossar und dieser Changelog. Verfasst anhand von NVIDIAs offizieller Dokumentation für JetPack 7.2.1; noch nicht auf physischer Hardware verifiziert. |
 
 ## JetPack-Releases für dieses Kit
 
@@ -48,6 +48,10 @@ um zu prüfen, welche Version Sie einsetzen, siehe
 - [JetPack SDK Downloads](https://developer.nvidia.com/embedded/jetpack/downloads) (geprüft am 2026-09-26)
 - [Jetson Linux 39.2.1 Release Notes (PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) (geprüft am 2026-09-26)
 - [NVIDIA JetPack 6.2 announcement — Super mode for Jetson Orin Nano](https://developer.nvidia.com/blog/nvidia-jetpack-6-2-brings-super-mode-to-nvidia-jetson-orin-nano-and-jetson-orin-nx-modules/) (verlinkt als Herstellerankündigung des Super-Leistungsmodus)
+
+*Status: geprüft am 2026-10-11. Basiert auf NVIDIAs
+offizieller Dokumentation zum angegebenen Datum; noch nicht von Juxi Technology
+auf physischer Hardware verifiziert.*
 
 *Status: geprüft am 2026-10-11. Basiert auf NVIDIAs
 offizieller Dokumentation zum angegebenen Datum; noch nicht von Juxi Technology

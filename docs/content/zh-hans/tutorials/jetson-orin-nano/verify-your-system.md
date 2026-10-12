@@ -170,6 +170,8 @@ sudo /usr/sbin/nvpmodel -q
 
 *状态：已于 2026-10-11 审核。内容基于截至所列日期的 NVIDIA 官方文档与 NVIDIA 论坛来源；尚未由钜犀科技在实体硬件上验证。*
 
+*状态：已于 2026-10-11 审核。内容基于截至所列日期的 NVIDIA 官方文档与 NVIDIA 论坛来源；尚未由钜犀科技在实体硬件上验证。*
+
 ---
 
 NVIDIA® 和 Jetson™ 是 NVIDIA Corporation 的商标。本页由钜犀科技发布，并非 NVIDIA 官方出版物。

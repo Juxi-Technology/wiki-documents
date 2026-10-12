@@ -51,14 +51,14 @@ review_owner: cheny
 
 ## NemoClaw란
 
-NVIDIA는 NemoClaw를 "a collection of open blueprints for building autonomous
-agents"라고 설명합니다 — 추론하고 계획하고 실제 워크플로 전반에서 행동하는
+NVIDIA는 NemoClaw를 "자율 에이전트를 만들기 위한 오픈 블루프린트
+모음"이라고 설명합니다 — 추론하고 계획하고 실제 워크플로 전반에서 행동하는
 상시 가동 AI 시스템입니다. 에이전트 하네스(OpenClaw, Hermes, LangChain Deep
 Agents)와 NVIDIA Agent Toolkit 구성 요소(Nemotron 모델, NeMo, OpenShell
 런타임 정책 제어)를 함께 묶습니다.
 
-OpenShell은 보안 계층입니다: "the secure runtime inside it that enforces what
-the agent can access: files, networks, credentials, and tools."
+OpenShell은 보안 계층입니다: "에이전트가 접근할 수 있는 것(파일, 네트워크,
+자격 증명, 도구)을 강제하는 내부의 보안 런타임입니다."
 
 NemoClaw는 알파 소프트웨어입니다 — NVIDIA는 "Early preview"로
 표기합니다(2026-03-16부터). 제품 페이지:
@@ -85,11 +85,11 @@ curl -fsSL https://www.nvidia.com/nemoclaw.sh | NEMOCLAW_AGENT=langchain-deepage
 호스트 구성을 먼저 적용합니다. L4T 39.x에서는 `br_netfilter` 모듈이 없을
 때만 로드합니다(이것이 없으면 샌드박스의 DNS 확인이 실패하고 온보딩이
 "Setting up OpenClaw inside sandbox"에서 멈춥니다). Ollama를 선택하면 설치
-프로그램이 Ollama도 설치합니다: "The script also installs ollama (if ollama
-is selected) so you don't need to manually install it first"(NVIDIA 직원).
+프로그램이 Ollama도 설치합니다: "이 스크립트는 (ollama를 선택한 경우)
+ollama도 함께 설치하므로, 먼저 수동으로 설치할 필요가 없습니다"(NVIDIA 직원).
 NVIDIA 사이트는 이 디바이스를 문서화합니다: "Install OpenClaw on Your NVIDIA
-Jetson Orin Nano" — "a fully local AI personal assistant on Jetson … no cloud
-APIs needed."
+Jetson Orin Nano" — "Jetson에서 완전히 로컬로 동작하는 AI 퍼스널 어시스턴트 …
+클라우드 API 불필요."
 
 > **중요** — NemoClaw의 플랫폼 지원 매트릭스(v1.1, 2026-09-04)에는 Jetson
 > 행이 없으며, 테스트된 플랫폼은 Linux(Ubuntu 24.04)와 DGX OS Spark입니다.
@@ -148,14 +148,13 @@ Cursor, Codex)를 디바이스별 자동화로 확장하는, 개방형 Agent Ski
 상시 가동 에이전트, 로컬 모델, Ubuntu 데스크톱이 이 키트에서 동시에 편안하게
 들어가지 않습니다. 문서화된 예산:
 
-- **사용 가능한 메모리는 8 GB가 아니라 ~7.6 GB입니다.** NVIDIA: "of the 8 GB
-  physical DRAM, roughly 7.6 GB is usable after firmware and kernel
-  reservations."
+- **사용 가능한 메모리는 8 GB가 아니라 ~7.6 GB입니다.** NVIDIA: "8 GB 실제
+  DRAM 중 펌웨어와 커널 예약 영역을 제외하면 약 7.6 GB를 사용할 수
+  있습니다."
 - **8 GB는 NemoClaw의 최소선이지 편안한 영역이 아닙니다.** 전제 조건은 8 GB를
-  최소, 16 GB를 권장으로 기재합니다: "On machines with less than 8 GB of RAM,
-  this combined usage can trigger the OOM killer. If you cannot add memory,
-  configure at least 8 GB of swap to work around the issue at the cost of
-  slower performance." 이 키트의 메모리는 고정되어 있습니다 — 스왑 파일을
+  최소, 16 GB를 권장으로 기재합니다: "RAM이 8 GB 미만인 머신에서는 이 결합
+  사용량이 OOM killer를 유발할 수 있습니다. 메모리를 추가할 수 없다면
+  성능 저하를 감수하고 최소 8 GB의 스왑을 구성해 문제를 우회하십시오." 이 키트의 메모리는 고정되어 있습니다 — 스왑 파일을
   계획하십시오([메모리 효율](/ko/tutorials/jetson-orin-nano/memory-efficiency)).
   약 2.4 GB의 샌드박스 이미지 푸시는 이미 8 GB Orin Nano에서 OOM을 유발한
   적이 있습니다.
@@ -171,8 +170,8 @@ Cursor, Codex)를 디바이스별 자동화로 확장하는, 개방형 Agent Ski
 
 출처에 따르면 들어가는 것은: NVIDIA가 검증한 Ollama 기본값(`qwen3.6:35b`,
 `nemotron-3-nano:30b`, `qwen3.5:9b`)은 더 큰 머신에 맞춰져 있고, Jetson AI
-Lab 가이드는 4B급 도구 호출 모델로 시작하라고 말합니다 — "It can work, but
-do expect weaker performance than the 30B-class models"; NVIDIA의 메모리
+Lab 가이드는 4B급 도구 호출 모델로 시작하라고 말합니다 — "동작은 하겠지만
+30B급 모델보다 성능이 약할 것으로 예상하십시오"; NVIDIA의 메모리
 블로그는 튜닝된 4비트 범위를 LLM 최대 ~10B, VLM 최대 ~4B 파라미터로
 제시합니다 — 전용 구성의 상한이며, 데스크톱과 에이전트까지 함께 담는 예산은
 아닙니다.
@@ -213,8 +212,8 @@ NVIDIA 직원은 개발자 포럼에서 Orin Nano + JetPack 7.2 + Ollama 흐름�
   `.openclaw/openclaw.json`의 `contextWindow`를 32768로 올리고 구성 해시를
   갱신했습니다. 신고자는 이후 Ollama가 GPU에서 실행됨을 확인했습니다.
 - **현재 상태: 이 우회 방법은 필요하지 않아야 합니다.** 2026년 중반 직원:
-  "the issue is fixed in the latest ollama release. The workaround
-  (override.conf) is no longer needed." JetPack 7.2.1에서는 업스트림 설치
+  "이 문제는 최신 ollama 릴리스에서 수정되었습니다. 우회 방법
+  (override.conf)은 더 이상 필요하지 않습니다." JetPack 7.2.1에서는 업스트림 설치
   프로그램이 동작하고 `ollama ps`가 100% GPU를 보고합니다. "WARNING:
   Unsupported JetPack version detected" 줄은 무해합니다. 먼저 기본 설치를
   테스트하십시오.
@@ -231,9 +230,13 @@ NVIDIA 직원은 개발자 포럼에서 Orin Nano + JetPack 7.2 + Ollama 흐름�
 위험입니다: 여기서 도구와 셸 접근 권한을 가진 에이전트는 접근할 수 있는
 모든 것을 읽고, 변경하고, 전송할 수 있습니다.
 
-**정책 계층을 사용하십시오.** NVIDIA는 OpenShell을 "the secure runtime
-inside it that enforces what the agent can access: files, networks,
-credentials, and tools."라고 설명합니다. 온보딩 중에는 작업을 수행하면서
+*상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서, NVIDIA
+개발자 포럼 게시물, Jetson AI Lab 벤더 가이드에 근거하며, 아직 Juxi
+Technology가 실제 하드웨어에서 검증하지 않았습니다.*
+
+**정책 계층을 사용하십시오.** NVIDIA는 OpenShell을 "에이전트가 접근할 수
+있는 것(파일, 네트워크, 자격 증명, 도구)을 강제하는 내부의 보안
+런타임입니다"라고 설명합니다. 온보딩 중에는 작업을 수행하면서
 가장 엄격한 샌드박스 정책 등급을 고르십시오(Jetson AI Lab 워크스루는 가장
 엄격한 등급을 권장합니다).
 
@@ -259,7 +262,7 @@ Docker(Engine/Desktop/Colima, 위 요구 사항 기준)와 샌드박스 컨테�
 알파 소프트웨어("Early preview")입니다. 샌드박스를 여러 계층 중 하나로
 취급하고 유일한 계층으로 여기지 마십시오.
 
-> **주의** — 이 스택은 로컬에서 실행되므로("no cloud APIs needed"), 보안
+> **주의** — 이 스택은 로컬에서 실행되므로("클라우드 API 불필요"), 보안
 > 경계는 디바이스, 네트워크, 자격 증명입니다. 에이전트를 켜 두기 전에 세
 > 가지를 모두 점검하십시오.
 

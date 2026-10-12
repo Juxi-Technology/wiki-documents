@@ -45,7 +45,7 @@ JetPack 7.2는 Orin을 새로운 플랫폼 세대(Ubuntu 24.04, 커널 6.8, CUDA
 | **에이전틱 동작 / 오케스트레이션** | ✅ 작동 | NemoClaw + Jetson 에이전트 스킬 — [에이전틱 AI](/ko/tutorials/jetson-agx-orin/agentic-ai) 참조. |
 | **로봇 학습 스택(LeRobot 스타일 Python 프레임워크)** | ⚠️ 확정 전 검증 필요 | 이러한 스택은 Python 비중이 높습니다. Ubuntu 24.04는 Python 3.12로 전환했고 일부 의존성은 뒤처질 수 있습니다. 이를 전제로 설계하기 전에 JP7.2에서 해당 스택을 테스트하십시오 — 그리고 **당사가 이를 하드웨어에서 검증하지 않았음**을 유의하십시오. |
 | **GR00T(휴머노이드 파운데이션 모델)** | ⚠️ 공식 소스 확인 | 플랫폼 지원 여부는 NVIDIA 공식 Isaac GR00T 저장소와 발표를 따르십시오. 파트너가 게시한 워크스루에서는 AGX Orin + JP7.2에서 전체 가중치 TensorRT 배포를 보고합니다 *(제3자 정보, 당사 미검증)*. |
-| **커스텀 캐리어 보드 / BSP 작업** | ✅ 새 도구 | JetPack 7.2의 **Jetson Linux 커스터마이징 에이전트 스킬**은 BSP 브링업 작업을 자동화합니다 — [에이전트 스킬 저장소](https://github.com/jetson-bsp-skills) 참조. |
+| **커스텀 캐리어 보드 / BSP 작업** | ✅ 새 도구 | JetPack 7.2의 **Jetson Linux 커스터마이징 에이전트 스킬**은 BSP 브링업 작업을 자동화합니다 — [에이전트 스킬 저장소](https://github.com/NVIDIA-AI-IOT/jetson-bsp-skills) 참조. |
 
 ## JetPack 7.2에서의 Isaac ROS
 

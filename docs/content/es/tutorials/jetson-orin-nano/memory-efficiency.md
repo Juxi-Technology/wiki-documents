@@ -245,6 +245,10 @@ uno más pequeño, cuantice más, acorte el contexto o reduzca el batch — cons
 oficial de NVIDIA a la fecha indicada; aún no verificado en hardware físico por
 Juxi Technology.*
 
+*Estado: revisado el 2026-10-11. Basado en la documentación
+oficial de NVIDIA a la fecha indicada; aún no verificado en hardware físico por
+Juxi Technology.*
+
 ---
 
 NVIDIA® y Jetson™ son marcas comerciales de NVIDIA Corporation. Esta página es

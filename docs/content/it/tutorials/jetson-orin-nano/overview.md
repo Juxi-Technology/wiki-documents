@@ -147,7 +147,7 @@ Questa serie di documentazione copre **solo il kit di sviluppo da 8GB**. Il modu
   How-To)*
 - **Jetson AGX Orin — il livello di punta.** Il modulo AGX Orin 32GB raggiunge
   241 TOPS in Modalità Super *(punti salienti della release JetPack 7.2)*. Vedere la
-  [serie Jetson AGX Orin](/it/tutorials/jetson-agx-orin/quick-start) di Juxi.
+  [serie Jetson AGX Orin](https://wiki.juxitech.com/it/tutorials/jetson-agx-orin/quick-start) di Juxi.
 
 Il vincolo principale da pianificare sono gli **8GB di memoria unificata**; senza DLA
 né PVA, i carichi di lavoro di IA girano solo sulla GPU — vedere **[Efficienza della
@@ -227,6 +227,10 @@ ufficiale NVIDIA alle date indicate; non ancora verificato su hardware fisico da
 Juxi Technology.*
 
 **Crediti immagine:** Immagine del prodotto tratta dalla *Jetson Orin Nano
+*Stato: rivisto il 2026-10-11. Basato sulla documentazione
+ufficiale NVIDIA alle date indicate; non ancora verificato su hardware fisico da
+Juxi Technology.*
+
 Developer Kit User Guide* ufficiale NVIDIA (scaricata il 2026-09-26), © NVIDIA Corporation.
 
 ---

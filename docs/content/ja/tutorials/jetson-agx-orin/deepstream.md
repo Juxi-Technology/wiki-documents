@@ -41,7 +41,7 @@ NVIDIA は Jetson 向けに 4 つのインストール方法を提供してい�
 
 - **方法 4 — Docker(新規ユーザーに推奨):** NGC の DeepStream コンテナを使用します — [Docker Containers](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_docker_containers.html) を参照してください。
 - **方法 1 — SDK Manager:** 「Additional SDKs」で **DeepStreamSDK** を JetPack 7.2 GA のコンポーネントと一緒に選択します。
-- **方法 2 — tar パッケージ:** `deepstream_sdk_v9.1.0_jetson.tbz2` をダウンロードし([NVIDIA/DeepStream releases](https://github.com/DeepStream/releases/tag) から)、次のように実行します:
+- **方法 2 — tar パッケージ:** `deepstream_sdk_v9.1.0_jetson.tbz2` をダウンロードし([NVIDIA/DeepStream releases](https://github.com/NVIDIA/DeepStream/releases) から)、次のように実行します:
   ```bash
   sudo tar -xvf deepstream_sdk_v9.1.0_jetson.tbz2 -C /
   cd /opt/nvidia/deepstream/deepstream-9.1
@@ -108,7 +108,7 @@ NVIDIA によると、期待できる結果は次のとおりです。30 本の�
 
 ## 4. JetPack 7.2 上の DeepStream 9.1 周辺の新機能
 
-- **エージェント支援パイプライン:** NVIDIA は *DeepStream Coding Agent*(パイプライン構築を支援する AI エージェント)をドキュメント化しています — [ドキュメント](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_AI_Agent.html) · [GitHub](https://github.com/DeepStream_Coding_Agent)。
+- **エージェント支援パイプライン:** NVIDIA は *DeepStream Coding Agent*(パイプライン構築を支援する AI エージェント)をドキュメント化しています — [ドキュメント](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_AI_Agent.html) · [GitHub](https://github.com/NVIDIA-AI-IOT/DeepStream_Coding_Agent)。
 - **パイプラインでの LLM/VLM:** リファレンスアプリには、映像パイプラインと大規模モデルの推論を組み合わせるための **deepstream-vllm-plugin** が含まれています — [ドキュメント](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_ref_app_vllm_plugin.html) を参照してください。DeepStream の外でオンデバイスのモデル推論を行う方法は、[ローカル LLM 推論](/ja/tutorials/jetson-agx-orin/local-llm)をご覧ください。
 - **デバイス上の Triton:** Triton Inference Server をネイティブで(Docker なしで)実行するには、samples ディレクトリで `sudo ./triton_backend_setup.sh` を実行します(Jetson 用の Triton 2.68.0 がインストールされます)。
 

@@ -241,6 +241,10 @@ passi a uno più piccolo, quantizzi di più, accorci il contesto o riduca il bat
 documentazione ufficiale NVIDIA alla data indicata; non ancora verificato su
 hardware fisico da Juxi Technology.*
 
+*Stato: rivisto il 2026-10-11. Basato sulla
+documentazione ufficiale NVIDIA alla data indicata; non ancora verificato su
+hardware fisico da Juxi Technology.*
+
 ---
 
 NVIDIA® e Jetson™ sono marchi di NVIDIA Corporation. Questa pagina è pubblicata

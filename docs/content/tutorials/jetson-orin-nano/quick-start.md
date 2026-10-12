@@ -88,9 +88,6 @@ With a monitor connected:
 | 36.x or newer | Continue with Step 2 |
 | Older than 36.0 | Complete the JetPack 6.x Update Path first (see below) |
 
-![UEFI menu showing the firmware version](/images/jetson-orin-nano/firmware-version-check.png)
-*The firmware version is shown near the top of the UEFI setup menu.*
-
 Headless alternative: connect a USB-to-TTL serial cable to the Button Header (adapter TX wire to pin 3 / RXD, adapter RX wire to pin 4 / TXD, adapter ground wire to pin 7 / GND), open a serial console on your PC, and press `Esc` in the console while the pre-boot options are shown.
 
 ![USB-to-TTL serial cable on the Button Header](/images/jetson-orin-nano/jon_adafruit_uart_cable.jpg)
@@ -128,7 +125,7 @@ ISO file names follow the pattern `jetsoninstaller-r<L4T version>-<timestamp>-ar
 2. Insert the USB flash drive into your PC.
 3. In Etcher, select the ISO file, select the USB drive, and start the write.
 
-![Writing the Jetson ISO to a USB flash drive with Balena Etcher](/images/jetson-orin-nano/jetson-iso_etcher-flash-start.gif)
+![Writing the Jetson ISO to a USB flash drive with Balena Etcher](/images/jetson-agx-orin/jetson-iso_etcher-flash-start.gif)
 *Writing the Jetson ISO to the USB flash drive with Balena Etcher.*
 
 > **Attention**
@@ -209,6 +206,8 @@ The default power mode is typically **25W**. For maximum performance, click the 
 - [Jetson Orin Nano Developer Kit User Guide — Hardware Layout](https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/hardware_layout.html) (checked 2026-09-26)
 - [JetPack SDK Downloads](https://developer.nvidia.com/embedded/jetpack/downloads) (checked 2026-09-26)
 - [Jetson Linux 39.2.1 Release Notes (PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) (checked 2026-09-26)
+
+*Status: reviewed on 2026-10-11. Grounded in NVIDIA's official documentation as of the dates listed; not yet verified on physical hardware by Juxi Technology.*
 
 *Status: reviewed on 2026-10-11. Grounded in NVIDIA's official documentation as of the dates listed; not yet verified on physical hardware by Juxi Technology.*
 

@@ -252,6 +252,10 @@ locale](/fr/tutorials/jetson-orin-nano/local-llm) et la
 documentation officielle NVIDIA à la date indiquée ; pas encore vérifié sur
 matériel physique par Juxi Technology.*
 
+*Statut : relu le 2026-10-11. Fondé sur la
+documentation officielle NVIDIA à la date indiquée ; pas encore vérifié sur
+matériel physique par Juxi Technology.*
+
 ---
 
 NVIDIA® et Jetson™ sont des marques de NVIDIA Corporation. Cette page est

@@ -40,7 +40,7 @@ avec les dépendances requises**, aucune configuration manuelle de
 l'environnement n'est donc nécessaire sur votre kit.
 
 - Page produit NemoClaw : <https://www.nvidia.com/en-us/ai/nemoclaw>
-- NemoClaw sur GitHub : <https://github.com/NemoClaw> · exemples communautaires : <https://github.com/nemoclaw-community>
+- NemoClaw sur GitHub : <https://github.com/NVIDIA/NemoClaw> · exemples communautaires : <https://github.com/NVIDIA/nemoclaw-community>
 
 ## Installation (une seule commande, officielle)
 
@@ -83,8 +83,8 @@ Jetson. Trois catégories selon NVIDIA :
 
 D'autres compétences d'agent dans l'écosystème :
 
-- [Compétences côté appareil Jetson](https://github.com/jetson-device-skills) · [Compétences BSP Jetson](https://github.com/jetson-bsp-skills)
-- [DeepStream Coding Agent](https://github.com/DeepStream_Coding_Agent) — construction de pipelines de vision assistée par agent (voir [notre tutoriel DeepStream](/fr/tutorials/jetson-agx-orin/deepstream))
+- [Compétences côté appareil Jetson](https://github.com/NVIDIA-AI-IOT/jetson-device-skills) · [Compétences BSP Jetson](https://github.com/NVIDIA-AI-IOT/jetson-bsp-skills)
+- [DeepStream Coding Agent](https://github.com/NVIDIA-AI-IOT/DeepStream_Coding_Agent) — construction de pipelines de vision assistée par agent (voir [notre tutoriel DeepStream](/fr/tutorials/jetson-agx-orin/deepstream))
 - [Compétences du blueprint Metropolis VSS](https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization/tree/main/skills) — flux de travail de recherche et de synthèse vidéo
 
 ## Notes pratiques pour le kit AGX Orin

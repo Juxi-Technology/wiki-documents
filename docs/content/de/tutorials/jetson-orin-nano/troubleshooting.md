@@ -54,10 +54,14 @@ review_owner: cheny
 
 Finden Sie Ihr Symptom im unten stehenden Index und lesen Sie dann den
 passenden Abschnitt. Einstufungen: **A** = offizielle NVIDIA-Dokumentation;
+*Status: geprüft am 2026-10-11. Als unbestätigt gekennzeichnete
+Punkte stammen aus Community-Forum-Berichten und können sich ändern. Diese Seite ist
+ausschließlich dokumentationsgeprüft — Juxi hat dieses Kit nicht auf Hardware getestet.*
+
 **B** = NVIDIA-Entwicklerforum (Mitarbeiter- oder Community-Berichte). Nur auf
-die Community zurückgehende Punkte sind als *unbestätigt* markiert. Juxi hat
-für diese Serie kein Gerät vorliegen — diese Seite ist ausschließlich anhand
-der Dokumentation geprüft, nicht auf Hardware getestet.
+die Community zurückgehende Punkte sind als *unbestätigt* markiert. Die
+Hardware-Verifikation für diese Serie steht noch aus — diese Seite ist
+ausschließlich anhand der Dokumentation geprüft, nicht auf Hardware getestet.
 
 ## Beginnen Sie mit NVIDIAs offiziellem Troubleshooting Guide
 

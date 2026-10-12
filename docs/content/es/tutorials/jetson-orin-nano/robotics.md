@@ -87,6 +87,11 @@ host aparte.
 
 ## Isaac ROS en JetPack 7.2 — qué dicen hoy las páginas oficiales
 
+*Estado: revisado el 2026-10-11. La disponibilidad del
+ecosistema cambia rápidamente — vuelva a consultar las páginas de NVIDIA y
+upstream enlazadas antes de basarse en esta tabla. Aún no verificada en
+hardware físico por Juxi Technology.*
+
 **Las páginas de NVIDIA se contradicen entre sí.** La página de descargas de
 JetPack 7.2.1 sigue listando «NVIDIA Isaac™ ROS — Próximamente». Las páginas
 del proyecto Isaac ROS dicen que la compatibilidad ya se ha publicado. Para

@@ -92,6 +92,12 @@ Willkommen auf der Tutorials-Seite! Hier finden Sie alle Tutorials zur Produktnu
 - [Fehlerbehebung](/de/tutorials/jetson-agx-orin/troubleshooting)
 - [Glossar](/de/tutorials/jetson-agx-orin/glossary)
 - [Changelog](/de/tutorials/jetson-agx-orin/changelog)
+- [XLeRobot Docker — 01 · Überblick](/de/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview)
+- [XLeRobot Docker — 02 · Umgebung einrichten](/de/tutorials/jetson-agx-orin/xlerobot-docker/deployment/02-Environment-Setup)
+- [XLeRobot Docker — 03 · Bereitstellung](/de/tutorials/jetson-agx-orin/xlerobot-docker/deployment/03-Deployment)
+- [XLeRobot Docker — Original-LeRobot-Befehle](/de/tutorials/jetson-agx-orin/xlerobot-docker/lerobot/01-Operation)
+- [XLeRobot Docker — XLeRobot-Befehle](/de/tutorials/jetson-agx-orin/xlerobot-docker/xlerobot/01-Operation)
+- [XLeRobot Docker — Fehlerbehebung und Schnellreferenz](/de/tutorials/jetson-agx-orin/xlerobot-docker/troubleshooting/01-Troubleshooting)
 
 ### Jetson Orin Nano Super Developer Kit
 
@@ -111,6 +117,12 @@ Willkommen auf der Tutorials-Seite! Hier finden Sie alle Tutorials zur Produktnu
 - [Fehlerbehebung](/de/tutorials/jetson-orin-nano/troubleshooting)
 - [Glossar](/de/tutorials/jetson-orin-nano/glossary)
 - [Changelog](/de/tutorials/jetson-orin-nano/changelog)
+- [XLeRobot Docker — 01 · Überblick](/de/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview)
+- [XLeRobot Docker — 02 · Umgebung einrichten](/de/tutorials/jetson-orin-nano/xlerobot-docker/deployment/02-Environment-Setup)
+- [XLeRobot Docker — 03 · Bereitstellung](/de/tutorials/jetson-orin-nano/xlerobot-docker/deployment/03-Deployment)
+- [XLeRobot Docker — Original-LeRobot-Befehle](/de/tutorials/jetson-orin-nano/xlerobot-docker/lerobot/01-Operation)
+- [XLeRobot Docker — XLeRobot-Befehle](/de/tutorials/jetson-orin-nano/xlerobot-docker/xlerobot/01-Operation)
+- [XLeRobot Docker — Fehlerbehebung und Schnellreferenz](/de/tutorials/jetson-orin-nano/xlerobot-docker/troubleshooting/01-Troubleshooting)
 
 ### Lernressourcen
 

@@ -41,7 +41,7 @@ NVIDIA offers four install methods on Jetson; the official note recommends
 
 - **Method 4 — Docker (recommended for new users):** use the NGC DeepStream containers — see [Docker Containers](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_docker_containers.html).
 - **Method 1 — SDK Manager:** select **DeepStreamSDK** under "Additional SDKs" together with the JetPack 7.2 GA components.
-- **Method 2 — tar package:** download `deepstream_sdk_v9.1.0_jetson.tbz2` (from [NVIDIA/DeepStream releases](https://github.com/DeepStream/releases/tag)), then:
+- **Method 2 — tar package:** download `deepstream_sdk_v9.1.0_jetson.tbz2` (from [NVIDIA/DeepStream releases](https://github.com/NVIDIA/DeepStream/releases)), then:
   ```bash
   sudo tar -xvf deepstream_sdk_v9.1.0_jetson.tbz2 -C /
   cd /opt/nvidia/deepstream/deepstream-9.1
@@ -107,7 +107,7 @@ Notes from the official quickstart:
 
 ## 4. What's new around DeepStream 9.1 on JetPack 7.2
 
-- **Agent-assisted pipelines:** NVIDIA documents a *DeepStream Coding Agent* (AI agent support for building pipelines) — [docs](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_AI_Agent.html) · [GitHub](https://github.com/DeepStream_Coding_Agent).
+- **Agent-assisted pipelines:** NVIDIA documents a *DeepStream Coding Agent* (AI agent support for building pipelines) — [docs](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_AI_Agent.html) · [GitHub](https://github.com/NVIDIA-AI-IOT/DeepStream_Coding_Agent).
 - **LLM/VLM in the pipeline:** the reference apps include a **deepstream-vllm-plugin** for combining video pipelines with large-model reasoning — see [the docs](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_ref_app_vllm_plugin.html). For on-device model inference outside DeepStream, see [Local LLM Inference](/tutorials/jetson-agx-orin/local-llm).
 - **Triton on device:** to run Triton Inference Server natively (without Docker), run `sudo ./triton_backend_setup.sh` in the samples directory (installs Triton 2.68.0 for Jetson).
 

@@ -60,7 +60,7 @@ review_owner: cheny
 | **eMMC** | 일부 Jetson 모듈에서 시스템 디스크로 사용되는 내장 플래시 저장 장치입니다. 이 개발자 키트는 스토리지 없이 출고됩니다: 시작하기 전에 microSD 카드나 NVMe SSD를 준비하십시오([빠른 시작](/ko/tutorials/jetson-orin-nano/quick-start) 참조). |
 | **Force Recovery 모드(Force Recovery mode)** | 호스트 PC에서 키트를 플래싱할 때 사용하는 특수 부팅 모드입니다. 실행 중인 시스템에서 `sudo reboot --force forced-recovery`로 진입하거나, 키트 전원이 꺼진 상태에서 버튼 헤더의 핀 9와 10을 단락시킨 다음 전원을 연결해 진입합니다. 이 모드에서 USB-C 포트가 호스트 PC로의 플래싱 연결을 담당합니다. |
 | **JetPack** | Jetson용 NVIDIA SDK 번들: 운영 체제, 드라이버, CUDA 스택, 라이브러리를 포함합니다. 이 키트의 현재 릴리스는 JetPack 7.2.1이며, Jetson Linux (L4T) r39.2.1을 포함합니다. |
-| **JetPack 6.x 업데이트 경로** | 출하 UEFI/QSPI 펌웨어가 36.0보다 오래된 키트를 위한 펌웨어 브리지 절차입니다. JetPack 5.1.3 microSD 브리지 이미지로 부팅해 부트로더(펌웨어) 업데이트를 예약합니다; 그 뒤에는 키트가 JetPack 6.x나 JetPack 7.2.1 Jetson ISO를 부팅할 수 있습니다. 구형 펌웨어가 있는 키트는 ISO 설치 전에 이 경로를 완료해야 합니다([빠른 시작](/ko/tutorials/jetson-orin-nano/quick-start) 참조). |
+| **JetPack 6.x Update Path** | 출하 UEFI/QSPI 펌웨어가 36.0보다 오래된 키트를 위한 펌웨어 브리지 절차입니다. JetPack 5.1.3 microSD 브리지 이미지로 부팅해 부트로더(펌웨어) 업데이트를 예약합니다; 그 뒤에는 키트가 JetPack 6.x나 JetPack 7.2.1 Jetson ISO를 부팅할 수 있습니다. 구형 펌웨어가 있는 키트는 ISO 설치 전에 이 경로를 완료해야 합니다([빠른 시작](/ko/tutorials/jetson-orin-nano/quick-start) 참조). |
 | **Jetson ISO** | JetPack 7.2 이상을 위한 통합 USB 설치 이미지입니다. Balena Etcher 같은 도구로 USB 플래시 드라이브에 기록하십시오 — microSD 카드에는 기록하지 마십시오 — 그리고 이것이 라이브 USB가 아니라 설치 전용임을 기억하십시오. 설치 중에 대상을 선택합니다: microSD 카드 또는 NVMe SSD. |
 | **L4T** | Jetson Linux: JetPack 아래의 보드 지원 패키지로, UEFI 부트로더, 커널, 드라이버, Ubuntu 루트 파일 시스템을 포함합니다. JetPack 7.2.1에서는 r39.2.1이며, Linux 커널 6.8과 Ubuntu 24.04 루트 파일 시스템을 사용합니다. |
 | **MAXN SUPER** | 이 키트의 최상위 전원 모드(모드 2): CPU 1,728 MHz, GPU 1,020 MHz, 메모리 3,199 MHz. 실험적 모드이며, 키트가 Super 구성으로 플래싱된 경우에만 존재합니다. 데스크톱 Power Mode 메뉴에서 선택하거나 `sudo /usr/sbin/nvpmodel -m 2`를 실행하십시오. |
@@ -105,6 +105,10 @@ review_owner: cheny
 - [NVIDIA Jetson Orin family — specifications](https://developer.nvidia.com/embedded/jetson-orin) (2026-09-26 확인)
 - [DeepStream SDK — Installation](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_Installation.html) (2026-09-26 확인)
 - [NVIDIA forum — "25W and MAXN_SUPER not seen in JetPack 7.2" (NVIDIA staff answer)](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627) (2026-09-26 확인)
+
+*상태: 2026-10-11 검토 완료. 정의는 NVIDIA 문서와 업계 표준 용례를
+바탕으로 정리했으며, 버전 번호는 명시된 날짜에 확인했습니다. 아직 Juxi
+Technology가 실제 하드웨어에서 검증하지 않았습니다.*
 
 *상태: 2026-10-11 검토 완료. 정의는 NVIDIA 문서와 업계 표준 용례를
 바탕으로 정리했으며, 버전 번호는 명시된 날짜에 확인했습니다. 아직 Juxi

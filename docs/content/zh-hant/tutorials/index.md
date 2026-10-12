@@ -96,6 +96,12 @@ head:
 - [故障排除](/zh-hant/tutorials/jetson-agx-orin/troubleshooting)
 - [術語表](/zh-hant/tutorials/jetson-agx-orin/glossary)
 - [更新日誌](/zh-hant/tutorials/jetson-agx-orin/changelog)
+- [XLeRobot Docker — 01 · 總覽](/zh-hant/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview)
+- [XLeRobot Docker — 02 · 環境準備](/zh-hant/tutorials/jetson-agx-orin/xlerobot-docker/deployment/02-Environment-Setup)
+- [XLeRobot Docker — 03 · 部署](/zh-hant/tutorials/jetson-agx-orin/xlerobot-docker/deployment/03-Deployment)
+- [XLeRobot Docker — 原版 LeRobot 執行指令](/zh-hant/tutorials/jetson-agx-orin/xlerobot-docker/lerobot/01-Operation)
+- [XLeRobot Docker — XLeRobot 執行指令](/zh-hant/tutorials/jetson-agx-orin/xlerobot-docker/xlerobot/01-Operation)
+- [XLeRobot Docker — 常見問題與速查](/zh-hant/tutorials/jetson-agx-orin/xlerobot-docker/troubleshooting/01-Troubleshooting)
 
 ### Jetson Orin Nano 開發套件
 
@@ -115,6 +121,12 @@ head:
 - [故障排除](/zh-hant/tutorials/jetson-orin-nano/troubleshooting)
 - [術語表](/zh-hant/tutorials/jetson-orin-nano/glossary)
 - [更新日誌](/zh-hant/tutorials/jetson-orin-nano/changelog)
+- [XLeRobot Docker — 01 · 總覽](/zh-hant/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview)
+- [XLeRobot Docker — 02 · 環境準備](/zh-hant/tutorials/jetson-orin-nano/xlerobot-docker/deployment/02-Environment-Setup)
+- [XLeRobot Docker — 03 · 部署](/zh-hant/tutorials/jetson-orin-nano/xlerobot-docker/deployment/03-Deployment)
+- [XLeRobot Docker — 原版 LeRobot 執行指令](/zh-hant/tutorials/jetson-orin-nano/xlerobot-docker/lerobot/01-Operation)
+- [XLeRobot Docker — XLeRobot 執行指令](/zh-hant/tutorials/jetson-orin-nano/xlerobot-docker/xlerobot/01-Operation)
+- [XLeRobot Docker — 常見問題與速查](/zh-hant/tutorials/jetson-orin-nano/xlerobot-docker/troubleshooting/01-Troubleshooting)
 
 ### 學習資源
 

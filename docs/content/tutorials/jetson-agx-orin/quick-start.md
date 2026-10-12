@@ -25,7 +25,7 @@ verified_against:
 This page takes your Jetson AGX Orin Developer Kit (64GB) from the box to a fully
 updated **JetPack 7.2.1** system. The path below follows NVIDIA's recommended,
 current setup flow; every step has been checked against NVIDIA's official
-developer kit documentation on the date listed at the bottom of this page.
+developer kit documentation.
 
 **The three-step path:**
 
@@ -70,8 +70,7 @@ With a display attached:
 
 ![Ubuntu desktop after the initial setup](/images/jetson-agx-orin/ubuntu_initial_desktop_1280x720.png)
 
-Headless setup is also possible from another computer — see NVIDIA's Quick Start
-Guide (link at the bottom) for the exact wiring.
+Headless setup is also possible from another computer — see [NVIDIA's Quick Start Guide](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/quick_start.html) for the exact wiring.
 
 > **Juxi tip:** If you plan to run the system from an NVMe SSD, keep it in mind
 > for Step 2 — the ISO installer can install directly to the NVMe drive.
@@ -89,7 +88,7 @@ A JetPack 7.2.1 system reports `# R39 (release), REVISION: 2.1`. If the output
 shows an older release, update to L4T r35.5 or newer first (see *Caveats* below).
 
 1. **Download the Jetson ISO** for JetPack 7.2.1 / L4T r39.2.1:
-   <https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/iso>
+   <https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/iso/jetsoninstaller-r39.2.1-2026-08-07-18-30-47-arm64.iso>
 2. **Create the installation USB.** Write the ISO to a USB flash drive with
    [Balena Etcher](https://etcher.balena.io) ("Flash from file" → select the ISO
    → select the USB drive).
@@ -103,7 +102,7 @@ shows an older release, update to L4T r35.5 or newer first (see *Caveats* below)
      firmware update runs *before* the ISO installation and runs **twice**. Do
      not skip it — it is required for compatibility. If you miss the prompt,
      restart the installation and confirm it when prompted.
-   - In the GRUB menu, select **Install Jetson ISO r39.2.1** and press Enter.
+   - In the GRUB menu, select **Install Jetson ISO** and press Enter.
    - Choose the storage target with the arrow keys: **eMMC** (default internal
      storage) or **NVMe** (recommended if you installed an SSD).
    - Installation takes roughly 15 minutes, with text output scrolling on screen.
@@ -124,7 +123,7 @@ shows an older release, update to L4T r35.5 or newer first (see *Caveats* below)
 *The QSPI capsule update prompt — press `Y`. It is required for compatibility and runs twice.*
 
 ![Jetson ISO GRUB menu](/images/jetson-agx-orin/jetson-iso_grub-menu-r39-top.png)
-*Select "Install Jetson ISO r39.2.1".*
+*Select "Install Jetson ISO".*
 
 ![Storage target options in the GRUB menu](/images/jetson-agx-orin/jetson-iso_grub-menu-options.png)
 *Choose eMMC or NVMe as the installation target.*

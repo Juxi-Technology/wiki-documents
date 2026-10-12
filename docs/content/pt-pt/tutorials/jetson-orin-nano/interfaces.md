@@ -197,6 +197,10 @@ pela Juxi Technology.*
 
 **Créditos das imagens:** as imagens de layout provêm do *Jetson Orin Nano
 Developer Kit User Guide* oficial da NVIDIA (descarregado em 2026-09-26),
+*Estado: revisado em 2026-10-11. Baseado na documentação
+oficial da NVIDIA nas datas indicadas; ainda não verificado em hardware físico
+pela Juxi Technology.*
+
 © NVIDIA Corporation.
 
 ---

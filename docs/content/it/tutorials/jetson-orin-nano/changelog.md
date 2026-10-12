@@ -25,7 +25,7 @@ review_owner: cheny
 
 | Data | Modifica |
 |---|---|
-| 2026-09-26 | Set di documentazione iniziale pubblicato come bozza: Avvio rapido, Flashing e aggiornamenti, Verificare il sistema, Panoramica del prodotto, Interfacce e layout hardware, FAQ, Risoluzione dei problemi, Download, la guida alla migrazione da JetPack 6.x → 7.2, cinque tutorial (Inferenza LLM locale, Efficienza della memoria, DeepStream, Robotica, IA agentica), Glossario e questo Registro delle modifiche. Redatto sulla base della documentazione ufficiale di NVIDIA per JetPack 7.2.1; non ancora verificato su hardware fisico. |
+| 2026-09-26 | Set di documentazione iniziale pubblicato: Avvio rapido, Flashing e aggiornamenti, Verificare il sistema, Panoramica del prodotto, Interfacce e layout hardware, FAQ, Risoluzione dei problemi, Download, la guida alla migrazione da JetPack 6.x → 7.2, cinque tutorial (Inferenza LLM locale, Efficienza della memoria, DeepStream, Robotica, IA agentica), Glossario e questo Registro delle modifiche. Redatto sulla base della documentazione ufficiale di NVIDIA per JetPack 7.2.1; non ancora verificato su hardware fisico. |
 
 ## Versioni di JetPack per questo kit
 
@@ -47,6 +47,10 @@ per verificare cosa sta eseguendo, consulti **[Verificare il sistema](/it/tutori
 - [JetPack SDK Downloads](https://developer.nvidia.com/embedded/jetpack/downloads) (verificato il 2026-09-26)
 - [Jetson Linux 39.2.1 Release Notes (PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) (verificato il 2026-09-26)
 - [NVIDIA JetPack 6.2 announcement — Super mode for Jetson Orin Nano](https://developer.nvidia.com/blog/nvidia-jetpack-6-2-brings-super-mode-to-nvidia-jetson-orin-nano-and-jetson-orin-nx-modules/) (collegato come annuncio del produttore della modalità di alimentazione Super)
+
+*Stato: rivisto il 2026-10-11. Basato sulla
+documentazione ufficiale di NVIDIA alle date indicate; non ancora verificato su
+hardware fisico da Juxi Technology.*
 
 *Stato: rivisto il 2026-10-11. Basato sulla
 documentazione ufficiale di NVIDIA alle date indicate; non ancora verificato su

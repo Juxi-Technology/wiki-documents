@@ -92,6 +92,12 @@ Bienvenue sur la page Tutoriels ! Vous y trouverez tous les tutoriels d'utilisat
 - [Dépannage](/fr/tutorials/jetson-agx-orin/troubleshooting)
 - [Glossaire](/fr/tutorials/jetson-agx-orin/glossary)
 - [Journal des modifications](/fr/tutorials/jetson-agx-orin/changelog)
+- [XLeRobot Docker — 01 · Aperçu](/fr/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview)
+- [XLeRobot Docker — 02 · Préparation de l'environnement](/fr/tutorials/jetson-agx-orin/xlerobot-docker/deployment/02-Environment-Setup)
+- [XLeRobot Docker — 03 · Déploiement](/fr/tutorials/jetson-agx-orin/xlerobot-docker/deployment/03-Deployment)
+- [XLeRobot Docker — Commandes LeRobot d'origine](/fr/tutorials/jetson-agx-orin/xlerobot-docker/lerobot/01-Operation)
+- [XLeRobot Docker — Commandes XLeRobot](/fr/tutorials/jetson-agx-orin/xlerobot-docker/xlerobot/01-Operation)
+- [XLeRobot Docker — Dépannage et aide-mémoire](/fr/tutorials/jetson-agx-orin/xlerobot-docker/troubleshooting/01-Troubleshooting)
 
 ### Kit de développement Jetson Orin Nano Super
 
@@ -111,6 +117,12 @@ Bienvenue sur la page Tutoriels ! Vous y trouverez tous les tutoriels d'utilisat
 - [Dépannage](/fr/tutorials/jetson-orin-nano/troubleshooting)
 - [Glossaire](/fr/tutorials/jetson-orin-nano/glossary)
 - [Journal des modifications](/fr/tutorials/jetson-orin-nano/changelog)
+- [XLeRobot Docker — 01 · Aperçu](/fr/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview)
+- [XLeRobot Docker — 02 · Préparation de l'environnement](/fr/tutorials/jetson-orin-nano/xlerobot-docker/deployment/02-Environment-Setup)
+- [XLeRobot Docker — 03 · Déploiement](/fr/tutorials/jetson-orin-nano/xlerobot-docker/deployment/03-Deployment)
+- [XLeRobot Docker — Commandes LeRobot d'origine](/fr/tutorials/jetson-orin-nano/xlerobot-docker/lerobot/01-Operation)
+- [XLeRobot Docker — Commandes XLeRobot](/fr/tutorials/jetson-orin-nano/xlerobot-docker/xlerobot/01-Operation)
+- [XLeRobot Docker — Dépannage et aide-mémoire](/fr/tutorials/jetson-orin-nano/xlerobot-docker/troubleshooting/01-Troubleshooting)
 
 ### Ressources pédagogiques
 

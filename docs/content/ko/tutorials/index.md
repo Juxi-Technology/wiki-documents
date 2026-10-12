@@ -92,6 +92,12 @@ description: "Juxi Technology 튜토리얼 — 로봇 암과 액세서리, 센�
 - [문제 해결](/ko/tutorials/jetson-agx-orin/troubleshooting)
 - [용어집](/ko/tutorials/jetson-agx-orin/glossary)
 - [변경 이력](/ko/tutorials/jetson-agx-orin/changelog)
+- [XLeRobot Docker — 01 · 개요](/ko/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview)
+- [XLeRobot Docker — 02 · 환경 준비](/ko/tutorials/jetson-agx-orin/xlerobot-docker/deployment/02-Environment-Setup)
+- [XLeRobot Docker — 03 · 배포](/ko/tutorials/jetson-agx-orin/xlerobot-docker/deployment/03-Deployment)
+- [XLeRobot Docker — 원본 LeRobot 실행 명령](/ko/tutorials/jetson-agx-orin/xlerobot-docker/lerobot/01-Operation)
+- [XLeRobot Docker — XLeRobot 실행 명령](/ko/tutorials/jetson-agx-orin/xlerobot-docker/xlerobot/01-Operation)
+- [XLeRobot Docker — 문제 해결 및 빠른 참조](/ko/tutorials/jetson-agx-orin/xlerobot-docker/troubleshooting/01-Troubleshooting)
 
 ### Jetson Orin Nano
 
@@ -111,6 +117,12 @@ description: "Juxi Technology 튜토리얼 — 로봇 암과 액세서리, 센�
 - [문제 해결](/ko/tutorials/jetson-orin-nano/troubleshooting)
 - [용어집](/ko/tutorials/jetson-orin-nano/glossary)
 - [변경 이력](/ko/tutorials/jetson-orin-nano/changelog)
+- [XLeRobot Docker — 01 · 개요](/ko/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview)
+- [XLeRobot Docker — 02 · 환경 준비](/ko/tutorials/jetson-orin-nano/xlerobot-docker/deployment/02-Environment-Setup)
+- [XLeRobot Docker — 03 · 배포](/ko/tutorials/jetson-orin-nano/xlerobot-docker/deployment/03-Deployment)
+- [XLeRobot Docker — 원본 LeRobot 실행 명령](/ko/tutorials/jetson-orin-nano/xlerobot-docker/lerobot/01-Operation)
+- [XLeRobot Docker — XLeRobot 실행 명령](/ko/tutorials/jetson-orin-nano/xlerobot-docker/xlerobot/01-Operation)
+- [XLeRobot Docker — 문제 해결 및 빠른 참조](/ko/tutorials/jetson-orin-nano/xlerobot-docker/troubleshooting/01-Troubleshooting)
 
 ### 학습 리소스
 

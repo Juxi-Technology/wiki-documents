@@ -115,6 +115,8 @@ Zwei Orin-Nano-spezifische Fakten sind wichtig, bevor Sie etwas herunterladen:
 
 *Status: geprüft am 2026-10-11.*
 
+*Status: geprüft am 2026-10-11.*
+
 ---
 
 NVIDIA® und Jetson™ sind Marken der NVIDIA Corporation. Diese Seite wird von Juxi Technology

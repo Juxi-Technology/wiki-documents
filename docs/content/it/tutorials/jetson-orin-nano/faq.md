@@ -240,6 +240,8 @@ Download ufficiali e link di riferimento: [Download](/it/tutorials/jetson-orin-n
 
 *Stato: rivisto il 2026-10-11.*
 
+*Stato: rivisto il 2026-10-11.*
+
 ---
 
 NVIDIA® e Jetson™ sono marchi di NVIDIA Corporation. Questa pagina è pubblicata

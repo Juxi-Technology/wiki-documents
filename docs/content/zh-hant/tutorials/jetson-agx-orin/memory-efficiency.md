@@ -32,7 +32,7 @@ review_owner: cheny
 
 NVIDIA 陳述的目標:讓更強的工作負載裝進更小的記憶體佔用(這正是同一代硬件隨著軟件版本不斷變得更好用的原因)。從這裏開始:
 
-- [Jetson 裝置端技能](https://github.com/jetson-device-skills) · [Jetson BSP 技能](https://github.com/jetson-bsp-skills)
+- [Jetson 裝置端技能](https://github.com/NVIDIA-AI-IOT/jetson-device-skills) · [Jetson BSP 技能](https://github.com/NVIDIA-AI-IOT/jetson-bsp-skills)
 - 背景資料:[NVIDIA 的 JetPack 7.2 記憶體效率部落格](https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2)
 
 > **注意:** 預留區與預留記憶體的改動會影響開機行為。請一次只改一處,保留恢復路徑

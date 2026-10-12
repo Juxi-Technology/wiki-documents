@@ -25,7 +25,7 @@ review_owner: cheny
 
 | Date | Change |
 |---|---|
-| 2026-09-26 | Initial documentation set published as draft: Quick Start, Flashing & Updates, Verify Your System, Product Overview, Interfaces & Hardware Layout, FAQ, Troubleshooting, Downloads, the JetPack 6.x → 7.2 migration guide, five tutorials (Local LLM, Memory Efficiency, DeepStream, Robotics, Agentic AI), Glossary, and this Changelog. Written against NVIDIA's official documentation for JetPack 7.2.1; not yet verified on physical hardware. |
+| 2026-09-26 | Initial documentation set published: Quick Start, Flashing & Updates, Verify Your System, Product Overview, Interfaces & Hardware Layout, FAQ, Troubleshooting, Downloads, the JetPack 6.x → 7.2 migration guide, five tutorials (Local LLM, Memory Efficiency, DeepStream, Robotics, Agentic AI), Glossary, and this Changelog. Written against NVIDIA's official documentation for JetPack 7.2.1; not yet verified on physical hardware. |
 
 ## JetPack releases for this kit
 
@@ -47,6 +47,10 @@ to check what you are running, see **[Verify Your System](/tutorials/jetson-orin
 - [JetPack SDK Downloads](https://developer.nvidia.com/embedded/jetpack/downloads) (checked 2026-09-26)
 - [Jetson Linux 39.2.1 Release Notes (PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) (checked 2026-09-26)
 - [NVIDIA JetPack 6.2 announcement — Super mode for Jetson Orin Nano](https://developer.nvidia.com/blog/nvidia-jetpack-6-2-brings-super-mode-to-nvidia-jetson-orin-nano-and-jetson-orin-nx-modules/) (linked as the vendor announcement of the Super power mode)
+
+*Status: reviewed on 2026-10-11. Grounded in NVIDIA's official
+documentation as of the dates listed; not yet verified on physical hardware by
+Juxi Technology.*
 
 *Status: reviewed on 2026-10-11. Grounded in NVIDIA's official
 documentation as of the dates listed; not yet verified on physical hardware by

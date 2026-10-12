@@ -114,6 +114,11 @@ da documentação da NVIDIA e do uso padrão do setor; os números de versão fo
 verificados nas datas indicadas. Não verificado em hardware físico pela Juxi
 Technology.*
 
+*Status: revisado em 2026-10-11. Definições compiladas a partir
+da documentação da NVIDIA e do uso padrão do setor; os números de versão foram
+verificados nas datas indicadas. Não verificado em hardware físico pela Juxi
+Technology.*
+
 ---
 
 NVIDIA® e Jetson™ são marcas registradas da NVIDIA Corporation. Esta página é

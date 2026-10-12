@@ -53,6 +53,8 @@ NVIDIA 文檔中的重點:
 - 需要將基礎 L4T BSP 刷寫到 eMMC 之外的**其他儲存媒體**(NVMe SSD、USB 隨身碟或 microSD 卡),或
 - 需要刷寫**無法直接連接網路**的套件。
 
+*狀態:已於 2026-10-11 審核。內容依據所列日期的 NVIDIA 官方文檔;尚未由鉅犀科技在實體硬體上驗證。*
+
 **主機 PC 需求**(依據 NVIDIA SDK Manager 文檔):x86_64 上的 Ubuntu Desktop **20.04 或 22.04**、8 GB 系統記憶體、25 GB 可用磁碟空間,以及**NVIDIA Developer Program 會員資格**(免費),用於下載工具並登入。注意:L4T 39.2 發行說明將刷機用的主機 Linux 發行版列為 Ubuntu **24.04 和 22.04**——這方面變化較快,請以 NVIDIA SDK Manager 系統需求頁面上的最新清單為準。
 
 **安裝並登入:**
@@ -99,8 +101,6 @@ NVIDIA 文檔中的重點:
 - [快速開始——同一指南](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/quick_start.html)(已於 2026-09-23 核對)
 - [Jetson Linux 39.2.0 發行說明(PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf)(已於 2026-09-23 核對)
 - [NVIDIA SDK Manager](https://developer.nvidia.com/sdk-manager)
-
-*狀態:已於 2026-10-11 審核。內容依據所列日期的 NVIDIA 官方文檔;尚未由鉅犀科技在實體硬體上驗證。*
 
 ---
 

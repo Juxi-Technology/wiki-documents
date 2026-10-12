@@ -62,8 +62,8 @@ JetPack 7.2.1은 큰 도약입니다: 전체 재플래싱, 펌웨어 전제 조�
 > 표시됩니다 — [시스템 검증](/ko/tutorials/jetson-orin-nano/verify-your-system)의
 > 참고 사항을 보십시오.
 
-- **더 이상 SD 카드 이미지가 없습니다.** "Starting with JetPack 7.2, SD Card images are
-  no longer supported." 설치 프로그램은 USB 스틱용 ISO 하나입니다; microSD
+- **더 이상 SD 카드 이미지가 없습니다.** "JetPack 7.2부터 SD 카드 이미지는
+  더 이상 지원되지 않습니다." 설치 프로그램은 USB 스틱용 ISO 하나입니다; microSD
   카드는 여전히 유효한 설치 대상입니다.
 - **펌웨어 전제 조건.** JetPack 7.2 이상 설치는 JetPack 6.x 세대의 Jetson
   UEFI/QSPI 펌웨어를 요구합니다; 구형 출하 펌웨어가 있는 키트는 JetPack 6.x
@@ -79,8 +79,8 @@ JetPack 7.2.1은 큰 도약입니다: 전체 재플래싱, 펌웨어 전제 조�
   지원한다고 밝힙니다 — 출처가 서로 다릅니다. [로보틱스](/ko/tutorials/jetson-orin-nano/robotics)를
   참조하십시오.
 - **카메라 코드가 이전 SIPL API에 고정된 경우.** Jetson Linux 39.2.1의 SIPL API
-  v2.0.0에는 "breaking changes that affect API, ABI, JSON
-  schema, package layout, and driver loading"이 포함되어 있습니다. 커뮤니티
+  v2.0.0에는 "API, ABI, JSON 스키마, 패키지 레이아웃, 드라이버 로딩에
+  영향을 주는 breaking changes"가 포함되어 있습니다. 커뮤니티
   보고(NVIDIA 미확인)에 따르면 NITO 카메라 구성이 이제 기본이며 레거시
   `NVCAMERA_NITO_PATH=CONFIG` 모드는 더 이상 동작하지 않습니다.
 - **스택을 재검증할 수 없는 경우.** CUDA 13 휠, Python 패키지, 서드파티
@@ -117,7 +117,7 @@ JetPack 7.2.1은 큰 도약입니다: 전체 재플래싱, 펌웨어 전제 조�
 2. **펌웨어 관문을 통과하십시오.** 전원을 켜고 NVIDIA 스플래시에서 Esc를
    반복해서 눌러 UEFI 메뉴의 펌웨어 버전을 확인하십시오. 펌웨어 36.x
    이상이면 7.2.1을 설치할 준비가 된 것입니다. 36.0보다 오래되었다면
-   먼저 "JetPack 6.x 업데이트 경로"를 완료하십시오: 브리지로 JetPack 5.1.3
+   먼저 "JetPack 6.x Update Path"를 완료하십시오: 브리지로 JetPack 5.1.3
    SD 카드 이미지(`JP513-orin-nano-sd-card-image_b29.zip`)를 부팅하고,
    부트로더 업데이트가 예약되게 한 뒤, 재부팅하고, QSPI 업데이터를 설치하고
    (`sudo apt install nvidia-l4t-jetson-orin-nano-qspi-updater`), 다시
@@ -161,14 +161,14 @@ JetPack 7.2.1은 큰 도약입니다: 전체 재플래싱, 펌웨어 전제 조�
 7.2.0 ISO 설치에서는 장치가 기존 보드 구성을 유지했습니다: 25W와 MAXN
 SUPER 전원 모드가 없었고, `sudo nvpmodel -m 2`는 "bad power mode 2" 오류로
 실패했습니다. NVIDIA는 이를 r39.2 릴리스 노트에 알려진 문제 6279443으로
-문서화했습니다: "Units will not default to 'Super' mode after the
-update. To use 'Super' mode, you must flash the target using a Linux host
-or SDKM." NVIDIA 직원은 나중에 이를 ISO 버그라고 부르며 7.2.1에서
+문서화했습니다: "업데이트 후 장치는 기본적으로 'Super' 모드가 되지 않습니다.
+'Super' 모드를 사용하려면 Linux 호스트 또는 SDKM으로 타깃을 플래싱해야
+합니다." NVIDIA 직원은 나중에 이를 ISO 버그라고 부르며 7.2.1에서
 수정되었다고 밝혔습니다.
 
-JetPack 7.2.1은 기본적으로 Super 구성을 플래싱합니다: "ISO now flashes
-the Jetson Orin Nano Developer Kit with Super Mode flashing configuration
-by default." 이슈 6279443은 r39.2.1 알려진 문제 목록에 없습니다.
+JetPack 7.2.1은 기본적으로 Super 구성을 플래싱합니다: "ISO는 이제 Jetson
+Orin Nano 개발자 키트를 기본적으로 Super Mode 플래싱 구성으로
+플래싱합니다." 이슈 6279443은 r39.2.1 알려진 문제 목록에 없습니다.
 
 남아 있는 주의 사항 두 가지:
 
@@ -177,9 +177,9 @@ by default." 이슈 6279443은 r39.2.1 알려진 문제 목록에 없습니다.
   스크립트에서는 Super 모드를 활성화하려면 일반 타깃이 아니라
   `jetson-orin-nano-devkit-super` 타깃을 사용하십시오. 예시(개발자 가이드,
   NVMe): `sudo ./l4t_initrd_flash.sh --erase-all jetson-orin-nano-devkit-super internal`.
-- **기존 시스템 위에 7.2.1을 재설치하는 경우.** NVIDIA: "If you're
-  re-installing JetPack 7.2.1 using ISO on an already installed system,
-  please carefully follow the instructions in the Getting Started Guide."
+- **기존 시스템 위에 7.2.1을 재설치하는 경우.** NVIDIA: "이미 설치된
+  시스템에 ISO로 JetPack 7.2.1을 재설치하는 경우, Getting Started
+  Guide의 지침을 주의 깊게 따르십시오."
   NVIDIA는 7.2.1 재설치가 7.2.0 ISO로 인해 non-Super가 된 장치의 Super
   모드를 복원하는지 밝히지 않았습니다; 문서화된 경로는 Super 구성으로
   호스트에서 플래싱하는 것입니다. 커뮤니티의 제자리 수정
@@ -189,8 +189,8 @@ by default." 이슈 6279443은 r39.2.1 알려진 문제 목록에 없습니다.
 
 ## 롤백
 
-NVIDIA 직원은 이렇게 밝힙니다: "Downgrade: Yes, you can flash back to JP 6.2.2 via
-SDK Manager if needed." 한 사용자가 왕복(6.2.2로 재플래싱 후 7.2로
+NVIDIA 직원은 이렇게 밝힙니다: "다운그레이드: 예, 필요한 경우 SDK Manager를 통해
+JP 6.2.2로 다시 플래싱할 수 있습니다." 한 사용자가 왕복(6.2.2로 재플래싱 후 7.2로
 재업그레이드)을 확인했습니다. 솔직히 말하면 비용은 이렇습니다:
 
 - **제자리 다운그레이드는 없습니다.** x86 Ubuntu 호스트에서의 전체
@@ -217,6 +217,11 @@ Super 전원 모드만 없다면 더 좁은 해법은 Super 구성으로 호스�
 - [JetPack 6.2.3](https://developer.nvidia.com/embedded/jetpack-sdk-623) — JetPack 6.x 기준 버전 (2026-09-26 확인)
 - [NVIDIA developer forum — JetPack 7.2 GPU acceleration issue](https://forums.developer.nvidia.com/t/jetpack-7-2-gpu-acceleration-issue/372521) — NVIDIA 직원: 다운그레이드 경로와 CUDA 13.2 휠 인덱스 (2026-09-26 확인)
 - [NVIDIA developer forum — 25W and MAXN SUPER not seen in JetPack 7.2](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627) — NVIDIA 직원과 사용자: `-super` TNSPEC 확인, 호스트 재플래싱 (2026-09-26 확인)
+
+*상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식
+문서와 개발자 포럼 진술에 근거하며, 아직 Juxi Technology가 실제 하드웨어에서
+검증하지 않았습니다. 재빌드 목록은 일반적인 플랫폼 결과를 설명한 것입니다 —
+자체 스택과 대조해 검증하십시오.*
 
 *상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식
 문서와 개발자 포럼 진술에 근거하며, 아직 Juxi Technology가 실제 하드웨어에서

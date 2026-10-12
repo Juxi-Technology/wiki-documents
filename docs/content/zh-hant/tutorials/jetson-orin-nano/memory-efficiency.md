@@ -62,6 +62,8 @@ review_owner: cheny
 
 > **鉅犀提示：** 預留區修改屬於 BSP 原始碼變更：需要重新刷機，而且省下的不多。請一次只改一處，並保留一份可用的刷機映像——見[刷機與更新](/zh-hant/tutorials/jetson-orin-nano/flashing-and-updates)。
 
+*狀態：已於 2026-10-11 審核。內容依據所列日期的 NVIDIA 官方文件；尚未由鉅犀科技在實體硬體上驗證。*
+
 **swap 不是節省手段，而是洩壓閥。** 原廠的 RAM 最佳化教學以 **NVMe 上的 16 GB swap 檔案**取代 ZRAM（先執行 `sudo systemctl disable nvzramconfig`）；NVIDIA 的 8 GB 示範假設**尖峰時約使用 2 GB swap**。
 
 ### 停掉伺服器之後，釋放快取

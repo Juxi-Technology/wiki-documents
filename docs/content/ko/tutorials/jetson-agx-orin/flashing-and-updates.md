@@ -53,6 +53,8 @@ NVIDIA 문서의 주요 내용:
 - 기본 L4T BSP를 eMMC가 아닌 **다른 저장 매체**(NVMe SSD, USB 드라이브 또는 microSD 카드)에 플래싱하거나,
 - **인터넷에 직접 연결할 수 없는** 키트를 플래싱할 때.
 
+*상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서에 근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*
+
 **호스트 PC 요구 사항**(NVIDIA SDK Manager 문서 기준): x86_64의 Ubuntu Desktop **20.04 또는 22.04**, 8 GB 시스템 메모리, 25 GB의 여유 디스크 공간, 그리고 도구를 다운로드하고 로그인하기 위한 **NVIDIA Developer Program 멤버십**(무료)입니다. 참고: L4T 39.2 릴리스 노트에는 플래싱용 호스트 Linux 배포판이 Ubuntu **24.04 및 22.04**로 기재되어 있습니다 — 이 분야는 변화가 빠르므로 현재 목록은 NVIDIA SDK Manager 시스템 요구 사항 페이지에서 확인하십시오.
 
 **설치 및 로그인:**
@@ -98,8 +100,6 @@ L4T 39.2 릴리스 노트에 나온 호스트 및 툴체인 정보: 플래싱용
 - [퀵 스타트 — 동일 가이드](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/quick_start.html) (2026-09-23 확인)
 - [Jetson Linux 39.2.0 릴리스 노트(PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf) (2026-09-23 확인)
 - [NVIDIA SDK Manager](https://developer.nvidia.com/sdk-manager)
-
-*상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서에 근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*
 
 ---
 

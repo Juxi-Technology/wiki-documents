@@ -25,7 +25,7 @@ review_owner: cheny
 
 | 날짜 | 변경 내용 |
 |---|---|
-| 2026-09-26 | 최초 문서 세트를 초안으로 게시: 빠른 시작, 플래싱 및 업데이트, 시스템 검증, 제품 개요, 인터페이스 및 하드웨어 레이아웃, FAQ, 문제 해결, 다운로드, JetPack 6.x → 7.2 마이그레이션 가이드, 다섯 개의 튜토리얼(로컬 LLM, 메모리 효율, DeepStream, 로보틱스, 에이전틱 AI), 용어집, 그리고 이 변경 이력입니다. JetPack 7.2.1용 NVIDIA 공식 문서를 기준으로 작성했으며, 아직 실제 하드웨어에서 검증하지 않았습니다. |
+| 2026-09-26 | 최초 문서 세트 게시: 빠른 시작, 플래싱 및 업데이트, 시스템 검증, 제품 개요, 인터페이스 및 하드웨어 레이아웃, FAQ, 문제 해결, 다운로드, JetPack 6.x → 7.2 마이그레이션 가이드, 다섯 개의 튜토리얼(로컬 LLM, 메모리 효율, DeepStream, 로보틱스, 에이전틱 AI), 용어집, 그리고 이 변경 이력입니다. JetPack 7.2.1용 NVIDIA 공식 문서를 기준으로 작성했으며, 아직 실제 하드웨어에서 검증하지 않았습니다. |
 
 ## 이 키트의 JetPack 릴리스
 
@@ -47,6 +47,8 @@ review_owner: cheny
 - [JetPack SDK 다운로드](https://developer.nvidia.com/embedded/jetpack/downloads) (2026-09-26 확인)
 - [Jetson Linux 39.2.1 릴리스 노트(PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) (2026-09-26 확인)
 - [NVIDIA JetPack 6.2 발표 — Jetson Orin Nano용 Super 모드](https://developer.nvidia.com/blog/nvidia-jetpack-6-2-brings-super-mode-to-nvidia-jetson-orin-nano-and-jetson-orin-nx-modules/) (Super 전원 모드의 벤더 발표로 링크됨)
+
+*상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서에 근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*
 
 *상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서에 근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*
 

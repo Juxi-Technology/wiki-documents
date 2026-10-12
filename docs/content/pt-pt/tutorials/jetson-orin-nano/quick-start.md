@@ -98,9 +98,6 @@ Com um monitor ligado:
 | 36.x ou mais recente | Continue para a Etapa 2 |
 | Anterior a 36.0 | Conclua primeiro o percurso de atualização do JetPack 6.x (ver abaixo) |
 
-![Menu UEFI com a versão de firmware](/images/jetson-orin-nano/firmware-version-check.png)
-*A versão de firmware é apresentada perto do topo do menu de configuração UEFI.*
-
 Alternativa sem monitor: ligue um cabo série USB-para-TTL ao conector de
 botões (fio TX do adaptador no pino 3 / RXD, fio RX do adaptador no pino 4 /
 TXD, fio de terra do adaptador no pino 7 / GND), abra uma consola série no seu
@@ -157,7 +154,7 @@ verificação.
 2. Insira a unidade flash USB no seu PC.
 3. No Etcher, selecione o ficheiro ISO, selecione a unidade USB e inicie a gravação.
 
-![Gravação da Jetson ISO numa unidade flash USB com o Balena Etcher](/images/jetson-orin-nano/jetson-iso_etcher-flash-start.gif)
+![Gravação da Jetson ISO numa unidade flash USB com o Balena Etcher](/images/jetson-agx-orin/jetson-iso_etcher-flash-start.gif)
 *A gravar a Jetson ISO na unidade flash USB com o Balena Etcher.*
 
 > **Atenção**
@@ -259,6 +256,10 @@ pela Juxi Technology.*
 
 **Créditos das imagens:** As imagens desta página provêm do *Jetson Orin Nano
 Developer Kit User Guide* oficial da NVIDIA (descarregado em 2026-09-26) e
+*Estado: revisado em 2026-10-11. Baseado na documentação
+oficial da NVIDIA nas datas indicadas; ainda não verificado em hardware físico
+pela Juxi Technology.*
+
 continuam a ser © NVIDIA Corporation. São reproduzidas aqui para ilustrar o
 fluxo de configuração oficial.
 

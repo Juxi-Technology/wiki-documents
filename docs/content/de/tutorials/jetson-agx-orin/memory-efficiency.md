@@ -44,7 +44,7 @@ Das von NVIDIA formulierte Ziel: leistungsfähigere Workloads in kleinere
 Speicher-Footprints zu bringen (so wird dieselbe Hardware über die
 Softwareversionen hinweg immer nützlicher). Beginnen Sie hier:
 
-- [Jetson-Geräte-Skills](https://github.com/jetson-device-skills) · [Jetson-BSP-Skills](https://github.com/jetson-bsp-skills)
+- [Jetson-Geräte-Skills](https://github.com/NVIDIA-AI-IOT/jetson-device-skills) · [Jetson-BSP-Skills](https://github.com/NVIDIA-AI-IOT/jetson-bsp-skills)
 - Kontext: [NVIDIAs Blog zur Speichereffizienz in JetPack 7.2](https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2)
 
 > **Achtung:** Änderungen an Carveouts und Reservierungen berühren das

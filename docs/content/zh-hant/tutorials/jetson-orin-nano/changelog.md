@@ -25,7 +25,7 @@ review_owner: cheny
 
 | 日期 | 變更 |
 |---|---|
-| 2026-09-26 | 文檔集以草稿形式首次發布：快速開始、刷機與更新、驗證你的系統、產品概述、接口與硬件佈局、常見問題 FAQ、故障排除、下載、JetPack 6.x → 7.2 遷移指南、五篇教學（本地 LLM、記憶體效率、DeepStream、機器人開發、智能體 AI）、術語表，以及本更新日誌。內容依據 NVIDIA 為 JetPack 7.2.1 撰寫的官方文件；尚未在實體硬體上驗證。 |
+| 2026-09-26 | 文檔集首次發布：快速開始、刷機與更新、驗證你的系統、產品概述、接口與硬件佈局、常見問題 FAQ、故障排除、下載、JetPack 6.x → 7.2 遷移指南、五篇教學（本地 LLM、記憶體效率、DeepStream、機器人開發、智能體 AI）、術語表，以及本更新日誌。內容依據 NVIDIA 為 JetPack 7.2.1 撰寫的官方文件；尚未在實體硬體上驗證。 |
 
 ## 本套件的 JetPack 發布版本
 
@@ -47,6 +47,8 @@ review_owner: cheny
 - [JetPack SDK Downloads](https://developer.nvidia.com/embedded/jetpack/downloads)（查閱於 2026-09-26）
 - [Jetson Linux 39.2.1 Release Notes (PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf)（查閱於 2026-09-26）
 - [NVIDIA JetPack 6.2 發布公告 — Jetson Orin Nano 的 Super 模式](https://developer.nvidia.com/blog/nvidia-jetpack-6-2-brings-super-mode-to-nvidia-jetson-orin-nano-and-jetson-orin-nx-modules/)（做為 Super 電源模式的官方發布公告連結）
+
+*狀態：已於 2026-10-11 審核。內容以所列日期的 NVIDIA 官方文件為依據；尚未由鉅犀科技在實體硬體上驗證。*
 
 *狀態：已於 2026-10-11 審核。內容以所列日期的 NVIDIA 官方文件為依據；尚未由鉅犀科技在實體硬體上驗證。*
 

@@ -86,9 +86,6 @@ JetPack 7.2 以降のインストールには、開発キットに **JetPack 6.x
 | 36.x 以降 | ステップ 2 に進む |
 | 36.0 より古い | 先に JetPack 6.x アップデートパスを完了する(下記参照) |
 
-![ファームウェアバージョンを示す UEFI メニュー](/images/jetson-orin-nano/firmware-version-check.png)
-*ファームウェアバージョンは UEFI セットアップメニューの上部付近に表示されます。*
-
 ヘッドレスでの代替手段:USB-TTL シリアルケーブルをボタンヘッダーに接続し(アダプターの TX 線をピン 3 / RXD へ、RX 線をピン 4 / TXD へ、グラウンド線をピン 7 / GND へ)、PC でシリアルコンソールを開き、起動前オプションが表示されている間にコンソールで `Esc` キーを押します。
 
 ![ボタンヘッダーに接続した USB-TTL シリアルケーブル](/images/jetson-orin-nano/jon_adafruit_uart_cable.jpg)
@@ -126,7 +123,7 @@ ISO のファイル名は `jetsoninstaller-r<L4T version>-<timestamp>-arm64.iso`
 2. USB メモリを PC に挿入します。
 3. Etcher で ISO ファイルを選択し、USB ドライブを選択して、書き込みを開始します。
 
-![Balena Etcher で Jetson ISO を USB メモリに書き込む様子](/images/jetson-orin-nano/jetson-iso_etcher-flash-start.gif)
+![Balena Etcher で Jetson ISO を USB メモリに書き込む様子](/images/jetson-agx-orin/jetson-iso_etcher-flash-start.gif)
 *Balena Etcher で Jetson ISO を USB メモリに書き込みます。*
 
 > **注意**
@@ -207,6 +204,8 @@ apt list --installed | grep nvidia-jetpack
 - [Jetson Orin Nano Developer Kit User Guide — Hardware Layout](https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/hardware_layout.html) (2026-09-26 確認)
 - [JetPack SDK Downloads](https://developer.nvidia.com/embedded/jetpack/downloads) (2026-09-26 確認)
 - [Jetson Linux 39.2.1 Release Notes (PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) (2026-09-26 確認)
+
+*ステータス: レビュー済み（2026-10-11）。記載日時点の NVIDIA 公式ドキュメントに基づく内容です。Juxi Technology による実機検証はまだ行われていません。*
 
 *ステータス: レビュー済み（2026-10-11）。記載日時点の NVIDIA 公式ドキュメントに基づく内容です。Juxi Technology による実機検証はまだ行われていません。*
 

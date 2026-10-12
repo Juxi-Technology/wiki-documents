@@ -30,7 +30,7 @@ premiers liens comme les points de départ de référence.
 ## JetPack 7.2.1 / Jetson Linux 39.2.1
 
 - [JetPack SDK Downloads and Release Notes](https://developer.nvidia.com/embedded/jetpack/downloads) — **hub de référence** pour les informations de version et les téléchargements. ⚠️ **Son tableau des composants est en retard ligne par ligne** : à la date du 2026-09-26, il affiche encore des valeurs de JetPack **7.2** pour VPI et PVA, et sa ligne Isaac ROS indique toujours « coming soon » (publié depuis 4.6.0). Pour connaître les versions qu'un système JetPack 7.2.1 installe réellement, utilisez le [dépôt apt Jetson](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages) de NVIDIA — voir [Vérifier votre système](/fr/tutorials/jetson-agx-orin/verify-your-system).
-- [Image ISO JetPack (r39.2.1)](https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/iso) — l'image d'installation USB utilisée dans notre [Démarrage rapide](/fr/tutorials/jetson-agx-orin/quick-start)
+- [Image ISO JetPack (r39.2.1)](https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/iso/jetsoninstaller-r39.2.1-2026-08-07-18-30-47-arm64.iso) — l'image d'installation USB utilisée dans notre [Démarrage rapide](/fr/tutorials/jetson-agx-orin/quick-start)
 - [NVIDIA SDK Manager](https://developer.nvidia.com/sdk-manager) — outil de flashage depuis un PC hôte
 - [Images Yocto pour Jetson AGX Orin](https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/yocto2) — recettes et images Yocto/OpenEmbedded officielles
 - [JetPack Archive](https://developer.nvidia.com/embedded/jetpack-archive) · [Jetson Linux Archive](https://developer.nvidia.com/embedded/jetson-linux-archive) — versions antérieures
@@ -55,13 +55,12 @@ premiers liens comme les points de départ de référence.
 
 - [Jetson AI Lab](https://www.jetson-ai-lab.com) — tutoriels pratiques pour exécuter des modèles d'IA sur Jetson
 - [NVIDIA NemoClaw](https://www.nvidia.com/en-us/ai/nemoclaw) — IA agentique sur Jetson ; installation en une seule commande prise en charge depuis JetPack 7.2
-- [Compétences côté appareil Jetson](https://github.com/jetson-device-skills) · [Compétences BSP Jetson](https://github.com/jetson-bsp-skills) — compétences d'agent réutilisables de NVIDIA
+- [Compétences côté appareil Jetson](https://github.com/NVIDIA-AI-IOT/jetson-device-skills) · [Compétences BSP Jetson](https://github.com/NVIDIA-AI-IOT/jetson-bsp-skills) — compétences d'agent réutilisables de NVIDIA
 
 ## Juxi Technology
 
 - **Catalogue de produits et accessoires :** <https://wiki.juxitech.com/products/> — des modules complémentaires pour votre kit (caméras, bras robotiques, capteurs, et plus encore), avec caractéristiques techniques et liens d'achat
 - **Contacts :** support technique — support@juxitech.com · ventes — sales@juxitech.com · questions produits — pe@juxitech.com
-- Les scripts de démarrage et le code d'exemple de Juxi seront ajoutés ici dès qu'ils seront disponibles.
 
 ## Sources
 

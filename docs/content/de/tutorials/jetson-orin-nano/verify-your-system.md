@@ -217,6 +217,9 @@ Workarounds an Konfigurationsdateien an. Juxi-Support: **support@juxitech.com** 
 *Status: geprüft am 2026-10-11. Basiert auf NVIDIAs offizieller Dokumentation und NVIDIA-
 Forenquellen mit Stand der oben genannten Daten; noch nicht von Juxi Technology auf physischer Hardware verifiziert.*
 
+*Status: geprüft am 2026-10-11. Basiert auf NVIDIAs offizieller Dokumentation und NVIDIA-
+Forenquellen mit Stand der oben genannten Daten; noch nicht von Juxi Technology auf physischer Hardware verifiziert.*
+
 ---
 
 NVIDIA® und Jetson™ sind Marken der NVIDIA Corporation. Diese Seite wird

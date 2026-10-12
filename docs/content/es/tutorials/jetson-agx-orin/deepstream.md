@@ -42,7 +42,7 @@ recomienda **Docker para usuarios nuevos** (el más rápido, sin dependencias):
 
 - **Método 4 — Docker (recomendado para usuarios nuevos):** use los contenedores NGC DeepStream — consulte [Contenedores Docker](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_docker_containers.html).
 - **Método 1 — SDK Manager:** seleccione **DeepStreamSDK** en «Additional SDKs» junto con los componentes de JetPack 7.2 GA.
-- **Método 2 — paquete tar:** descargue `deepstream_sdk_v9.1.0_jetson.tbz2` (desde [NVIDIA/DeepStream releases](https://github.com/DeepStream/releases/tag)) y, a continuación:
+- **Método 2 — paquete tar:** descargue `deepstream_sdk_v9.1.0_jetson.tbz2` (desde [NVIDIA/DeepStream releases](https://github.com/NVIDIA/DeepStream/releases)) y, a continuación:
   ```bash
   sudo tar -xvf deepstream_sdk_v9.1.0_jetson.tbz2 -C /
   cd /opt/nvidia/deepstream/deepstream-9.1
@@ -110,7 +110,7 @@ Notas del inicio rápido oficial:
 
 ## 4. Novedades en torno a DeepStream 9.1 en JetPack 7.2
 
-- **Pipelines asistidos por agentes:** NVIDIA documenta un *DeepStream Coding Agent* (soporte de agentes de IA para construir pipelines) — [documentación](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_AI_Agent.html) · [GitHub](https://github.com/DeepStream_Coding_Agent).
+- **Pipelines asistidos por agentes:** NVIDIA documenta un *DeepStream Coding Agent* (soporte de agentes de IA para construir pipelines) — [documentación](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_AI_Agent.html) · [GitHub](https://github.com/NVIDIA-AI-IOT/DeepStream_Coding_Agent).
 - **LLM/VLM en el pipeline:** las aplicaciones de referencia incluyen un **deepstream-vllm-plugin** para combinar pipelines de video con razonamiento de grandes modelos — consulte [la documentación](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_ref_app_vllm_plugin.html). Para la inferencia de modelos en el propio dispositivo fuera de DeepStream, consulte [Inferencia de LLM local](/es/tutorials/jetson-agx-orin/local-llm).
 - **Triton en el dispositivo:** para ejecutar Triton Inference Server de forma nativa (sin Docker), ejecute `sudo ./triton_backend_setup.sh` en el directorio de ejemplos (instala Triton 2.68.0 para Jetson).
 

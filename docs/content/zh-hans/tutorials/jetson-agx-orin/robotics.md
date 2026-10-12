@@ -40,7 +40,7 @@ JetPack 7.2 将 Orin 带入了新一代平台(Ubuntu 24.04、内核 6.8、CUDA 1
 | **智能体行为 / 编排** | ✅ 可用 | NemoClaw + Jetson 智能体技能——见[智能体 AI](/zh-hans/tutorials/jetson-agx-orin/agentic-ai)。 |
 | **机器人学习技术栈(LeRobot 风格的 Python 框架)** | ⚠️ 采用前请先验证 | 这类技术栈重度依赖 Python;Ubuntu 24.04 已转向 Python 3.12,部分依赖可能滞后。在围绕它做设计之前,请先在 JP7.2 上测试你的具体技术栈——并注意**我们尚未在硬件上验证**。 |
 | **GR00T(人形基础模型)** | ⚠️ 请查阅官方来源 | 平台支持情况请关注 NVIDIA 官方的 Isaac GR00T 仓库与公告。一份由合作方发布的实操指南报告了在 AGX Orin + JP7.2 上的完整权重 TensorRT 部署*(第三方内容,未经我们验证)*。 |
-| **定制载板 / BSP 工作** | ✅ 新工具 | JetPack 7.2 的 **Jetson Linux 定制智能体技能** 可自动完成 BSP 点亮任务——见[智能体技能仓库](https://github.com/jetson-bsp-skills)。 |
+| **定制载板 / BSP 工作** | ✅ 新工具 | JetPack 7.2 的 **Jetson Linux 定制智能体技能** 可自动完成 BSP 点亮任务——见[智能体技能仓库](https://github.com/NVIDIA-AI-IOT/jetson-bsp-skills)。 |
 
 ## JetPack 7.2 上的 Isaac ROS
 

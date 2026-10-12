@@ -105,6 +105,9 @@ metálico»; y un monitor o un cable serie USB-TTL para el kit.
 > 22.04» como distribución del host para el flasheo. Consulte los requisitos de SDK Manager de
 > NVIDIA antes de preparar un PC host.
 
+*Estado: revisado el 2026-10-11. Basado en la documentación oficial de NVIDIA en las
+fechas indicadas; aún no verificado en hardware físico por Juxi Technology.*
+
 **Instale SDK Manager en el host.** La página de configuración de NVIDIA ofrece los comandos
 exactos para Ubuntu 22.04 y 20.04; ejecútelo con `sdkmanager` e inicie sesión con sus
 credenciales de NVIDIA Developer (se abre una ventana del navegador; puede aparecer la

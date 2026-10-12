@@ -236,6 +236,10 @@ alternativa com ficheiros de configuração. Apoio da Juxi:
 oficial da NVIDIA e em fontes dos fóruns da NVIDIA nas datas indicadas; ainda
 não verificado em hardware físico pela Juxi Technology.*
 
+*Estado: revisado em 2026-10-11. Baseado na documentação
+oficial da NVIDIA e em fontes dos fóruns da NVIDIA nas datas indicadas; ainda
+não verificado em hardware físico pela Juxi Technology.*
+
 ---
 
 NVIDIA® e Jetson™ são marcas comerciais da NVIDIA Corporation. Esta página é

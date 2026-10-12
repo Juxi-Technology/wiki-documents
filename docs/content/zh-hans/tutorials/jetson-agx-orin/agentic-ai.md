@@ -29,7 +29,7 @@ JetPack 7.2 让你的套件**智能体就绪**:NVIDIA NemoClaw 一条命令即�
 按 NVIDIA 的说法:NemoClaw 是一套用于构建**自主智能体**的开放栈/蓝图集合——即能够推理、规划并行动的常驻 AI 系统。它为 OpenClaw 智能体生态加入隐私与安全控制(通过 **OpenShell** 运行时策略控制),并打包 Nemotron 模型、NeMo 等 NVIDIA 组件。JetPack 7.2 **已预配置所需依赖**,因此你的套件无需手动搭建环境。
 
 - NemoClaw 产品页:<https://www.nvidia.com/en-us/ai/nemoclaw>
-- GitHub 上的 NemoClaw:<https://github.com/NemoClaw> · 社区示例:<https://github.com/nemoclaw-community>
+- GitHub 上的 NemoClaw:<https://github.com/NVIDIA/NemoClaw> · 社区示例:<https://github.com/NVIDIA/nemoclaw-community>
 
 ## 安装(单条命令,官方)
 
@@ -63,8 +63,8 @@ JetPack 7.2 内置**智能体技能**:面向 Jetson 开发的可重复、可由�
 
 生态中还有更多智能体技能:
 
-- [Jetson 设备端技能](https://github.com/jetson-device-skills) · [Jetson BSP 技能](https://github.com/jetson-bsp-skills)
-- [DeepStream Coding Agent](https://github.com/DeepStream_Coding_Agent)——智能体辅助的视觉流水线构建(见[我们的 DeepStream 教程](/zh-hans/tutorials/jetson-agx-orin/deepstream))
+- [Jetson 设备端技能](https://github.com/NVIDIA-AI-IOT/jetson-device-skills) · [Jetson BSP 技能](https://github.com/NVIDIA-AI-IOT/jetson-bsp-skills)
+- [DeepStream Coding Agent](https://github.com/NVIDIA-AI-IOT/DeepStream_Coding_Agent)——智能体辅助的视觉流水线构建(见[我们的 DeepStream 教程](/zh-hans/tutorials/jetson-agx-orin/deepstream))
 - [Metropolis VSS 蓝图技能](https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization/tree/main/skills)——视频搜索与摘要工作流
 
 ## AGX Orin 套件的实用提示

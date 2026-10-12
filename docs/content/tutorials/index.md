@@ -96,6 +96,12 @@ Welcome to the Tutorials page! Here, you can find all product usage tutorials, c
 - [Troubleshooting](/tutorials/jetson-agx-orin/troubleshooting)
 - [Glossary](/tutorials/jetson-agx-orin/glossary)
 - [Changelog](/tutorials/jetson-agx-orin/changelog)
+- [XLeRobot Docker — 01 · Overview](/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview)
+- [XLeRobot Docker — 02 · Environment Setup](/tutorials/jetson-agx-orin/xlerobot-docker/deployment/02-Environment-Setup)
+- [XLeRobot Docker — 03 · Deployment](/tutorials/jetson-agx-orin/xlerobot-docker/deployment/03-Deployment)
+- [XLeRobot Docker — Original LeRobot Operation](/tutorials/jetson-agx-orin/xlerobot-docker/lerobot/01-Operation)
+- [XLeRobot Docker — XLeRobot Operation](/tutorials/jetson-agx-orin/xlerobot-docker/xlerobot/01-Operation)
+- [XLeRobot Docker — Troubleshooting and Quick Reference](/tutorials/jetson-agx-orin/xlerobot-docker/troubleshooting/01-Troubleshooting)
 
 ### Jetson Orin Nano
 
@@ -115,6 +121,12 @@ Welcome to the Tutorials page! Here, you can find all product usage tutorials, c
 - [Troubleshooting](/tutorials/jetson-orin-nano/troubleshooting)
 - [Glossary](/tutorials/jetson-orin-nano/glossary)
 - [Changelog](/tutorials/jetson-orin-nano/changelog)
+- [XLeRobot Docker — 01 · Overview](/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview)
+- [XLeRobot Docker — 02 · Environment Setup](/tutorials/jetson-orin-nano/xlerobot-docker/deployment/02-Environment-Setup)
+- [XLeRobot Docker — 03 · Deployment](/tutorials/jetson-orin-nano/xlerobot-docker/deployment/03-Deployment)
+- [XLeRobot Docker — Original LeRobot Operation](/tutorials/jetson-orin-nano/xlerobot-docker/lerobot/01-Operation)
+- [XLeRobot Docker — XLeRobot Operation](/tutorials/jetson-orin-nano/xlerobot-docker/xlerobot/01-Operation)
+- [XLeRobot Docker — Troubleshooting and Quick Reference](/tutorials/jetson-orin-nano/xlerobot-docker/troubleshooting/01-Troubleshooting)
 
 ### Learning Resources
 

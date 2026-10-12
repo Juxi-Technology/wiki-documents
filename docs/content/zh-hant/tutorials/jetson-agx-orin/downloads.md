@@ -26,7 +26,7 @@ review_owner: cheny
 ## JetPack 7.2.1 / Jetson Linux 39.2.1
 
 - [JetPack SDK 下載與發佈說明](https://developer.nvidia.com/embedded/jetpack/downloads) — **權威樞紐**：發佈資訊與下載。⚠️ **其組件表逐列滯後**：截至 2026-09-26，VPI 與 PVA 兩列仍顯示 JetPack **7.2** 的數值，且 Isaac ROS 一列仍寫著「即將推出」(實際上自 4.6.0 起即已發布)。若要確認 JetPack 7.2.1 系統實際安裝的版本，請以 NVIDIA 的 [Jetson apt 套件倉庫](https://repo.download.nvidia.com/jetson/common/dists/r39.2/main/binary-arm64/Packages) 為準——參見[驗證你的系統](/zh-hant/tutorials/jetson-agx-orin/verify-your-system)。
-- [JetPack ISO 映像(r39.2.1)](https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/iso) — 我們在[快速入門](/zh-hant/tutorials/jetson-agx-orin/quick-start)中使用的 USB 安裝映像
+- [JetPack ISO 映像(r39.2.1)](https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/iso/jetsoninstaller-r39.2.1-2026-08-07-18-30-47-arm64.iso) — 我們在[快速入門](/zh-hant/tutorials/jetson-agx-orin/quick-start)中使用的 USB 安裝映像
 - [NVIDIA SDK Manager](https://developer.nvidia.com/sdk-manager) — 主機 PC 燒錄工具
 - [Jetson AGX Orin 的 Yocto 映像](https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/yocto2) — 官方 Yocto/OpenEmbedded 配方與映像
 - [JetPack 歸檔](https://developer.nvidia.com/embedded/jetpack-archive) · [Jetson Linux 歸檔](https://developer.nvidia.com/embedded/jetson-linux-archive) — 舊版本發佈
@@ -51,13 +51,12 @@ review_owner: cheny
 
 - [Jetson AI Lab](https://www.jetson-ai-lab.com) — 在 Jetson 上運行 AI 模型的動手教程
 - [NVIDIA NemoClaw](https://www.nvidia.com/en-us/ai/nemoclaw) — Jetson 上的智能體 AI；自 JetPack 7.2 起支援單一命令安裝
-- [Jetson 裝置端技能](https://github.com/jetson-device-skills) · [Jetson BSP 技能](https://github.com/jetson-bsp-skills) — NVIDIA 提供的可重用智能體技能
+- [Jetson 裝置端技能](https://github.com/NVIDIA-AI-IOT/jetson-device-skills) · [Jetson BSP 技能](https://github.com/NVIDIA-AI-IOT/jetson-bsp-skills) — NVIDIA 提供的可重用智能體技能
 
 ## 鉅犀科技
 
 - **產品目錄與配件：** <https://wiki.juxitech.com/products/> — 為你的套件準備的擴充配件(攝像頭、機械臂、傳感器等)，含規格參數與購買連結
 - **聯繫方式：** 技術支援 — support@juxitech.com · 銷售 — sales@juxitech.com · 產品諮詢 — pe@juxitech.com
-- 鉅犀科技的入門腳本與範例程式碼將在就緒後陸續補充到這裏。
 
 ## 來源
 

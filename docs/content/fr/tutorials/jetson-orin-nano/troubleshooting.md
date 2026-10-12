@@ -55,9 +55,9 @@ review_owner: cheny
 Trouvez votre symptôme dans l'index ci-dessous, puis lisez la section
 correspondante. Niveaux : **A** = documentation officielle NVIDIA ; **B** =
 forum des développeurs NVIDIA (personnel ou communauté). Les éléments issus
-uniquement de la communauté sont marqués *non confirmé*. Juxi n'a pas d'unité
-en main pour cette série — cette page n'est vérifiée que sur documentation,
-pas testée sur matériel.
+uniquement de la communauté sont marqués *non confirmé*. La vérification
+matérielle de cette série est encore en attente — cette page n'a été vérifiée
+que sur la base de la documentation, pas testée sur matériel.
 
 ## Commencez par le guide de dépannage officiel de NVIDIA
 
@@ -198,6 +198,11 @@ depuis un hôte Ubuntu ; corrigé selon eux dans 7.2.1. (niveau B, [fil 377003](
   fois sans écran. (niveau A, problème 6236259, [notes r39.2](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf))
 
 ## Problèmes de stockage NVMe
+
+*Statut : relu le 2026-10-11. Les éléments marqués
+comme non confirmés proviennent de signalements du forum communautaire et
+peuvent évoluer. Cette page n'est vérifiée que sur documentation — Juxi n'a
+pas testé ce kit sur matériel.*
 
 **L'installateur ne propose pas le disque / l'étape de partitionnement échoue** — *non confirmé* : l'installateur pourrait ne pas prendre en charge les disques NVMe formatés en secteurs 4K ; il lui faut du 512n/512e. Vérifiez avec `nvme id-ns -H /dev/nvme0n1` ; changez avec `nvme format --lbaf=ID /dev/nvme0n1` — **destructif** ; le message ne traite pas de la préservation des données. NVIDIA n'a pas confirmé cela officiellement. (niveau B, non confirmé, [fil 372151](https://forums.developer.nvidia.com/t/jetpack-7-2-jetson-linux-r39-2-on-jetson-orin-nano-developer-kit-getting-started-and-feedback-thread/372151))
 
@@ -387,8 +392,8 @@ Questions ouvertes dans nos sources :
 
 *Statut : relu le 2026-10-11. Les éléments marqués
 comme non confirmés proviennent de signalements du forum communautaire et
-peuvent évoluer. Cette page n'est vérifiée que sur documentation — Juxi n'a
-pas testé ce kit sur matériel.*
+peuvent évoluer. Cette page n'a été vérifiée que sur la base de la
+documentation — Juxi n'a pas testé ce kit sur matériel.*
 
 ---
 

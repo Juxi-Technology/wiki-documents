@@ -89,9 +89,6 @@ Com um monitor conectado:
 | 36.x ou mais recente | Continue para a Etapa 2 |
 | Mais antigo que 36.0 | Conclua primeiro o caminho de atualização do JetPack 6.x (veja abaixo) |
 
-![Menu da UEFI mostrando a versão de firmware](/images/jetson-orin-nano/firmware-version-check.png)
-*A versão de firmware aparece perto do topo do menu de configuração da UEFI.*
-
 Alternativa sem monitor: conecte um cabo serial USB para TTL ao header de botões (fio TX do adaptador no pino 3 / RXD, fio RX do adaptador no pino 4 / TXD, fio de terra do adaptador no pino 7 / GND), abra um console serial no seu PC e pressione `Esc` no console enquanto as opções de pré-inicialização estiverem visíveis.
 
 ![Cabo serial USB para TTL no header de botões](/images/jetson-orin-nano/jon_adafruit_uart_cable.jpg)
@@ -129,7 +126,7 @@ Os nomes de arquivo da ISO seguem o padrão `jetsoninstaller-r<L4T version>-<tim
 2. Insira o pen drive USB no seu PC.
 3. No Etcher, selecione o arquivo ISO, selecione a unidade USB e inicie a gravação.
 
-![Gravando a Jetson ISO em um pen drive USB com o Balena Etcher](/images/jetson-orin-nano/jetson-iso_etcher-flash-start.gif)
+![Gravando a Jetson ISO em um pen drive USB com o Balena Etcher](/images/jetson-agx-orin/jetson-iso_etcher-flash-start.gif)
 *Gravando a Jetson ISO no pen drive USB com o Balena Etcher.*
 
 > **Atenção**
@@ -210,6 +207,8 @@ O modo de energia padrão costuma ser **25W**. Para o desempenho máximo, clique
 - [Jetson Orin Nano Developer Kit User Guide — Hardware Layout](https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/hardware_layout.html) (verificado em 2026-09-26)
 - [JetPack SDK Downloads](https://developer.nvidia.com/embedded/jetpack/downloads) (verificado em 2026-09-26)
 - [Jetson Linux 39.2.1 Release Notes (PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) (verificado em 2026-09-26)
+
+*Status: revisado em 2026-10-11. Baseado na documentação oficial da NVIDIA nas datas indicadas; ainda não verificado em hardware físico pela Juxi Technology.*
 
 *Status: revisado em 2026-10-11. Baseado na documentação oficial da NVIDIA nas datas indicadas; ainda não verificado em hardware físico pela Juxi Technology.*
 

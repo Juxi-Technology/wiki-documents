@@ -45,7 +45,7 @@ it before you commit to an architecture.
 | **Agentic behaviors / orchestration** | ✅ Works | NemoClaw + Jetson agent skills — see [Agentic AI](/tutorials/jetson-agx-orin/agentic-ai). |
 | **Robot-learning stacks (LeRobot-style Python frameworks)** | ⚠️ Verify before committing | These stacks are Python-heavy; Ubuntu 24.04 moved to Python 3.12 and some dependencies may lag. Test your specific stack on JP7.2 before designing around it — and note **we have not verified this on hardware**. |
 | **GR00T (humanoid foundation models)** | ⚠️ Check official sources | Follow NVIDIA's official Isaac GR00T repository and announcements for platform support. A partner-published walkthrough reports a full-weight TensorRT deployment on AGX Orin + JP7.2 *(third-party, not verified by us)*. |
-| **Custom carrier boards / BSP work** | ✅ New tooling | JetPack 7.2's **Jetson Linux customization agent skills** automate BSP bring-up tasks — see the [agent skills repos](https://github.com/jetson-bsp-skills). |
+| **Custom carrier boards / BSP work** | ✅ New tooling | JetPack 7.2's **Jetson Linux customization agent skills** automate BSP bring-up tasks — see the [agent skills repos](https://github.com/NVIDIA-AI-IOT/jetson-bsp-skills). |
 
 ## Isaac ROS on JetPack 7.2
 

@@ -24,8 +24,7 @@ verified_against:
 
 Diese Seite führt Ihr Jetson AGX Orin Developer Kit (64GB) vom Karton bis zu
 einem vollständig aktualisierten **JetPack 7.2.1**-System. Der folgende Weg folgt
-dem von NVIDIA aktuell empfohlenen Einrichtungsablauf; jeder Schritt wurde an dem
-unten auf dieser Seite genannten Datum gegen die offizielle Developer-Kit-Dokumentation
+dem von NVIDIA aktuell empfohlenen Einrichtungsablauf; jeder Schritt wurde gegen die offizielle Developer-Kit-Dokumentation
 von NVIDIA geprüft.
 
 **Der Weg in drei Schritten:**
@@ -93,7 +92,7 @@ Ausgabe eine ältere Version, aktualisieren Sie zuerst auf L4T r35.5 oder neuer
 (siehe *Einschränkungen* unten).
 
 1. **Laden Sie das Jetson-ISO herunter** für JetPack 7.2.1 / L4T r39.2.1:
-   <https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/iso>
+   <https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/iso/jetsoninstaller-r39.2.1-2026-08-07-18-30-47-arm64.iso>
 2. **Erstellen Sie den Installations-USB-Stick.** Schreiben Sie das ISO mit
    [Balena Etcher](https://etcher.balena.io) auf einen USB-Stick („Flash from file" → ISO
    auswählen → USB-Laufwerk auswählen).
@@ -105,7 +104,7 @@ Ausgabe eine ältere Version, aktualisieren Sie zuerst auf L4T r35.5 oder neuer
    den UEFI-Boot-Manager und wählen Sie das USB-Laufwerk aus.
 4. **Booten und installieren:**
    - Wenn Sie aufgefordert werden, ein **QSPI-Capsule-Update** zu bestätigen, drücken Sie `Y`. Dieses Firmware-Update läuft *vor* der ISO-Installation und läuft **zweimal**. Überspringen Sie es nicht — es ist für die Kompatibilität erforderlich. Wenn Sie die Aufforderung verpassen, starten Sie die Installation neu und bestätigen Sie sie, wenn Sie dazu aufgefordert werden.
-   - Wählen Sie im GRUB-Menü **Install Jetson ISO r39.2.1** und drücken Sie Enter.
+   - Wählen Sie im GRUB-Menü **Install Jetson ISO** und drücken Sie Enter.
    - Wählen Sie das Speicherziel mit den Pfeiltasten: **eMMC** (standardmäßiger interner Speicher) oder **NVMe** (empfohlen, wenn Sie eine SSD installiert haben).
    - Die Installation dauert rund 15 Minuten, mit fortlaufender Textausgabe auf dem Bildschirm.
 5. **Entfernen Sie den USB-Stick**, sobald die Installation abgeschlossen ist und das System neu startet — andernfalls bootet das Kit möglicherweise erneut vom Stick statt vom neuen System.
@@ -123,7 +122,7 @@ Ausgabe eine ältere Version, aktualisieren Sie zuerst auf L4T r35.5 oder neuer
 *Die QSPI-Capsule-Update-Aufforderung — drücken Sie `Y`. Sie ist für die Kompatibilität erforderlich und läuft zweimal.*
 
 ![GRUB-Menü des Jetson-ISO](/images/jetson-agx-orin/jetson-iso_grub-menu-r39-top.png)
-*Wählen Sie „Install Jetson ISO r39.2.1".*
+*Wählen Sie „Install Jetson ISO".*
 
 ![Optionen für das Speicherziel im GRUB-Menü](/images/jetson-agx-orin/jetson-iso_grub-menu-options.png)
 *Wählen Sie eMMC oder NVMe als Installationsziel.*

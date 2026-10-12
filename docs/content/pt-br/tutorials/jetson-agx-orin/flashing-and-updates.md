@@ -66,6 +66,10 @@ Escolha o SDK Manager quando você quiser:
 - gravar o BSP L4T base em um **meio de armazenamento diferente** do eMMC (SSD NVMe, unidade USB ou cartão microSD), ou
 - gravar um kit que **não pode receber uma conexão direta com a internet**.
 
+*Status: revisado em 2026-10-11. Baseado na documentação
+oficial da NVIDIA na data indicada; ainda não verificado em hardware físico pela
+Juxi Technology.*
+
 **Requisitos do PC host** (conforme a documentação do SDK Manager da NVIDIA): Ubuntu
 Desktop **20.04 ou 22.04** em x86_64, 8 GB de memória do sistema, 25 GB de espaço livre em
 disco e uma **associação ao NVIDIA Developer Program** (gratuita) para baixar a
@@ -123,10 +127,6 @@ de versão do L4T, do CUDA e de toda a pilha de componentes do JetPack.
 - [Quick Start — mesmo guia](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/quick_start.html) (verificado em 2026-09-23)
 - [Jetson Linux 39.2.0 Release Notes (PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf) (verificado em 2026-09-23)
 - [NVIDIA SDK Manager](https://developer.nvidia.com/sdk-manager)
-
-*Status: revisado em 2026-10-11. Baseado na documentação
-oficial da NVIDIA na data indicada; ainda não verificado em hardware físico pela
-Juxi Technology.*
 
 ---
 

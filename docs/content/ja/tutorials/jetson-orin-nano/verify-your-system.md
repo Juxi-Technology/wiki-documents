@@ -185,6 +185,8 @@ sudo /usr/sbin/nvpmodel -q
 
 *ステータス: レビュー済み（2026-10-11）。記載日時点の NVIDIA 公式ドキュメントおよび NVIDIA フォーラムの情報に基づく内容です。Juxi Technology による実機検証はまだ行われていません。*
 
+*ステータス: レビュー済み（2026-10-11）。記載日時点の NVIDIA 公式ドキュメントおよび NVIDIA フォーラムの情報に基づく内容です。Juxi Technology による実機検証はまだ行われていません。*
+
 ---
 
 NVIDIA® および Jetson™ は NVIDIA Corporation の商標です。本ページは Juxi Technology によって公開されており、NVIDIA の公式出版物ではありません。

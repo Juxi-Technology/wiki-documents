@@ -25,7 +25,7 @@ review_owner: cheny
 
 | Data | Alteração |
 |---|---|
-| 2026-09-26 | Conjunto de documentação inicial publicado como rascunho: Início rápido, Gravação e atualizações, Verifique seu sistema, Visão geral do produto, Interfaces e Layout de Hardware, FAQ, Solução de problemas, Downloads, o guia de migração JetPack 6.x → 7.2, cinco tutoriais (Inferência de LLM local, Eficiência de memória, DeepStream, Robótica, IA agêntica), Glossário e este Registro de alterações. Escrito com base na documentação oficial da NVIDIA para o JetPack 7.2.1; ainda não verificado em hardware físico. |
+| 2026-09-26 | Conjunto de documentação inicial publicado: Início rápido, Gravação e atualizações, Verifique seu sistema, Visão geral do produto, Interfaces e Layout de Hardware, FAQ, Solução de problemas, Downloads, o guia de migração JetPack 6.x → 7.2, cinco tutoriais (Inferência de LLM local, Eficiência de memória, DeepStream, Robótica, IA agêntica), Glossário e este Registro de alterações. Escrito com base na documentação oficial da NVIDIA para o JetPack 7.2.1; ainda não verificado em hardware físico. |
 
 ## Versões do JetPack para este kit
 
@@ -47,6 +47,10 @@ para verificar o que está em execução, consulte **[Verifique seu sistema](/pt
 - [JetPack SDK Downloads](https://developer.nvidia.com/embedded/jetpack/downloads) (verificado em 2026-09-26)
 - [Notas de versão do Jetson Linux 39.2.1 (PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) (verificado em 2026-09-26)
 - [NVIDIA JetPack 6.2 traz o Super Mode para os módulos Jetson Orin Nano e Jetson Orin NX](https://developer.nvidia.com/blog/nvidia-jetpack-6-2-brings-super-mode-to-nvidia-jetson-orin-nano-and-jetson-orin-nx-modules/) (linkado como o anúncio do modo de energia Super)
+
+*Status: revisado em 2026-10-11. Baseado na documentação oficial
+da NVIDIA nas datas indicadas; ainda não verificado em hardware físico pela
+Juxi Technology.*
 
 *Status: revisado em 2026-10-11. Baseado na documentação oficial
 da NVIDIA nas datas indicadas; ainda não verificado em hardware físico pela

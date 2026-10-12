@@ -26,7 +26,7 @@ Esta página lleva su kit de desarrollo Jetson AGX Orin (64GB) desde la caja
 hasta un sistema **JetPack 7.2.1** totalmente actualizado. La ruta que se
 describe a continuación sigue el flujo de configuración actual recomendado por
 NVIDIA; cada paso se ha verificado con la documentación oficial del kit de
-desarrollo de NVIDIA en la fecha indicada al final de esta página.
+desarrollo de NVIDIA.
 
 **La ruta en tres pasos:**
 
@@ -74,7 +74,7 @@ Con un monitor conectado:
 ![Escritorio de Ubuntu después de la configuración inicial](/images/jetson-agx-orin/ubuntu_initial_desktop_1280x720.png)
 
 La configuración headless desde otro ordenador también es posible: consulte la
-Quick Start Guide de NVIDIA (enlace al final) para ver el conexionado exacto.
+[Quick Start Guide de NVIDIA](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/quick_start.html) para ver el conexionado exacto.
 
 > **Consejo de Juxi:** Si piensa ejecutar el sistema desde un SSD NVMe, téngalo
 > en cuenta para el paso 2: el instalador ISO puede instalar directamente en la
@@ -94,7 +94,7 @@ salida muestra una versión anterior, actualice primero a L4T r35.5 o posterior
 (véase *Advertencias y problemas conocidos* más abajo).
 
 1. **Descargue la Jetson ISO** para JetPack 7.2.1 / L4T r39.2.1:
-   <https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/iso>
+   <https://developer.nvidia.com/downloads/embedded/l4t/r39_release_v2.1/iso/jetsoninstaller-r39.2.1-2026-08-07-18-30-47-arm64.iso>
 2. **Cree la unidad USB de instalación.** Escriba la Jetson ISO en una unidad USB con
    [Balena Etcher](https://etcher.balena.io) ("Flash from file" → seleccione la ISO
    → seleccione la unidad USB).
@@ -109,7 +109,7 @@ salida muestra una versión anterior, actualice primero a L4T r35.5 o posterior
      ISO y se ejecuta **dos veces**. No la omita: es necesaria para la
      compatibilidad. Si deja pasar el aviso, reinicie la instalación y confírmela
      cuando se le solicite.
-   - En el menú GRUB, seleccione **Install Jetson ISO r39.2.1** y pulse Enter.
+   - En el menú GRUB, seleccione **Install Jetson ISO** y pulse Enter.
    - Elija el destino de almacenamiento con las teclas de flecha: **eMMC**
      (almacenamiento interno predeterminado) o **NVMe** (recomendado si ha
      instalado un SSD).
@@ -134,7 +134,7 @@ salida muestra una versión anterior, actualice primero a L4T r35.5 o posterior
 *El aviso de actualización de cápsula QSPI — pulse `Y`. Es necesario para la compatibilidad y se ejecuta dos veces.*
 
 ![Menú GRUB de la Jetson ISO](/images/jetson-agx-orin/jetson-iso_grub-menu-r39-top.png)
-*Seleccione "Install Jetson ISO r39.2.1".*
+*Seleccione "Install Jetson ISO".*
 
 ![Opciones de destino de almacenamiento en el menú GRUB](/images/jetson-agx-orin/jetson-iso_grub-menu-options.png)
 *Elija eMMC o NVMe como destino de la instalación.*
@@ -209,12 +209,12 @@ documentación oficial de NVIDIA:
 - [Jetson AGX Orin Developer Kit User Guide — JetPack SDK Setup](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/setup_jetpack.html) (consultado el 2026-09-23)
 - [BSP Installation (SDK Manager / flash script)](https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/setup_bsp.html)
 
+**Créditos de las imágenes:** Todas las capturas de pantalla de esta página
+provienen de la *Jetson AGX Orin Developer Kit User Guide* oficial de NVIDIA
 *Estado: revisado el 2026-10-11. Juxi Technology aún no ha verificado los pasos en hardware
 físico; se basan en la documentación oficial de NVIDIA en las fechas indicadas
 anteriormente.*
 
-**Créditos de las imágenes:** Todas las capturas de pantalla de esta página
-provienen de la *Jetson AGX Orin Developer Kit User Guide* oficial de NVIDIA
 (descargada el 2026-09-23) y siguen siendo © NVIDIA Corporation. Se reproducen
 aquí para ilustrar el flujo de configuración oficial.
 

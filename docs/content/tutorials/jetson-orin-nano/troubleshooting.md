@@ -52,7 +52,7 @@ review_owner: cheny
 
 # Troubleshooting
 
-Find your symptom in the index below, then read the matching section. Grades: **A** = NVIDIA official documentation; **B** = NVIDIA developer forum (staff or community reports). Community-only items are marked *unconfirmed*. Juxi has no unit in hand for this series — this page is documented-verified only, not hardware-tested.
+Find your symptom in the index below, then read the matching section. Grades: **A** = NVIDIA official documentation; **B** = NVIDIA developer forum (staff or community reports). Community-only items are marked *unconfirmed*. Hardware verification for this series is still pending — this page is documentation-verified only.
 
 ## Start with NVIDIA's official Troubleshooting Guide
 
@@ -127,6 +127,8 @@ Even with MAXN_SUPER active, the GPU can stay pinned at 624,750,000 Hz (`bpmp/de
 - NVIDIA's mitigation: switch to MAXN (restores EMC to Fmax) before rebooting; if already in the bad mode, boot once without the display. (grade A, issue 6236259, [r39.2 notes](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf))
 
 ## NVMe storage issues
+
+*Status: reviewed on 2026-10-11. Items labelled unconfirmed come from community forum reports and may change. This page is documented-verified only — Juxi has not tested this kit on hardware.*
 
 **Installer does not offer the drive / partition step fails** — *unconfirmed*: the installer may not support NVMe drives formatted with 4K sectors; it needs 512n/512e. Check `nvme id-ns -H /dev/nvme0n1`; change with `nvme format --lbaf=ID /dev/nvme0n1` — **destructive**; the post does not discuss data preservation. NVIDIA has not confirmed this officially. (grade B, unconfirmed, [thread 372151](https://forums.developer.nvidia.com/t/jetpack-7-2-jetson-linux-r39-2-on-jetson-orin-nano-developer-kit-getting-started-and-feedback-thread/372151))
 
@@ -219,7 +221,7 @@ Open questions in our sources:
 - Release notes: [JetPack 7.2 / L4T r39.2 (PDF)](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf) · [JetPack 7.2.1 / L4T r39.2.1 (PDF)](https://docs.nvidia.com/jetson/archives/r39.2.1/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.1.pdf) — checked 2026-09-26
 - NVIDIA developer forum threads (checked 2026-09-26): [372151](https://forums.developer.nvidia.com/t/jetpack-7-2-jetson-linux-r39-2-on-jetson-orin-nano-developer-kit-getting-started-and-feedback-thread/372151) · [380410](https://forums.developer.nvidia.com/t/jetson-orin-nano-super-dev-kit-boot-hangs-after-jetpack-7-2-installation-on-nvme-ssd-installer-skips-username-password-setup/380410) · [372627](https://forums.developer.nvidia.com/t/25w-and-maxn-super-not-seen-in-jetpack-7-2/372627) · [377003](https://forums.developer.nvidia.com/t/jetpack-7-2-l4t-39-2-gpu-frequency-stuck-at-624-mhz-on-orin-nano-8gb-p3767-0005-bpmp-hard-limit-super-mode-not-unlocking/377003) · [377553](https://forums.developer.nvidia.com/t/jetson-orin-nano-missing-25w-power-mode-qspi-firmware-mismatch-after-missed-capsule-update/377553) · [375435](https://forums.developer.nvidia.com/t/continuing-power-mode-issues-on-jetpack-7-2/375435) · [372521](https://forums.developer.nvidia.com/t/jetpack-7-2-gpu-acceleration-issue/372521) · [383350](https://forums.developer.nvidia.com/t/ollama-not-supporting-jetson/383350) · [383858](https://forums.developer.nvidia.com/t/jetson-orin-nano-in-jetpack-7-2-r39-2-nvme-ssd-on-pcie-c7-is-not-detected-bootable-in-uefi-stage-but-works-normally-after-linux-boots/383858) · [379702](https://forums.developer.nvidia.com/t/jetson-orin-nano-repeated-ext4-nvme-filesystem-corruption-and-attempting-recovery-boot-on-jetpack-7-2/379702) · [372269](https://forums.developer.nvidia.com/t/nemoclaw-on-jetson-orin-super-with-jetpack-7-2/372269)
 
-*Status: reviewed on 2026-10-11. Items labelled unconfirmed come from community forum reports and may change. This page is documented-verified only — Juxi has not tested this kit on hardware.*
+*Status: reviewed on 2026-10-11. Items labelled unconfirmed come from community forum reports and may change. This page is verified against documentation only — Juxi has not tested this kit on hardware.*
 
 ---
 

@@ -40,7 +40,7 @@ The goal NVIDIA states: fit more capable workloads into smaller memory
 footprints (which is how the same hardware keeps getting more useful across
 software releases). Start here:
 
-- [Jetson device-side skills](https://github.com/jetson-device-skills) · [Jetson BSP skills](https://github.com/jetson-bsp-skills)
+- [Jetson device-side skills](https://github.com/NVIDIA-AI-IOT/jetson-device-skills) · [Jetson BSP skills](https://github.com/NVIDIA-AI-IOT/jetson-bsp-skills)
 - Context: [NVIDIA's JetPack 7.2 memory-efficiency blog](https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2)
 
 > **Caution:** carveout and reservation changes touch boot behavior. Make the

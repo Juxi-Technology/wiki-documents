@@ -147,7 +147,7 @@ Esta série de documentação cobre **apenas o kit de desenvolvimento de 8GB**. 
 
 - **Jetson Orin Nano 8GB — este kit.** O ponto de entrada da família Orin: 67 TOPS INT8, 8GB de memória unificada, 7W a 25W.
 - **Jetson Orin NX.** A mesma placa portadora pode alimentar, testar e desenvolver com módulos Orin NX (requerem dissipador e ventoinha próprios; um módulo novo de fábrica tem de ser gravado a partir de um anfitrião Ubuntu com o SDK Manager). *(Guia do Utilizador do Kit de Desenvolvedor — How-To)*
-- **Jetson AGX Orin — o nível de topo.** O módulo AGX Orin 32GB atinge 241 TOPS em Modo Super *(destaques de lançamento do JetPack 7.2)*. Ver a [série Jetson AGX Orin](/pt-pt/tutorials/jetson-agx-orin/quick-start) da Juxi.
+- **Jetson AGX Orin — o nível de topo.** O módulo AGX Orin 32GB atinge 241 TOPS em Modo Super *(destaques de lançamento do JetPack 7.2)*. Ver a [série Jetson AGX Orin](https://wiki.juxitech.com/pt-pt/tutorials/jetson-agx-orin/quick-start) da Juxi.
 
 A principal restrição a planear é os **8GB de memória unificada**; sem DLA nem
 PVA, as cargas de trabalho de IA correm apenas na GPU — ver
@@ -216,6 +216,10 @@ pela Juxi Technology.*
 
 **Créditos das imagens:** imagem do produto proveniente do *Jetson Orin Nano
 Developer Kit User Guide* oficial da NVIDIA (descarregado em 2026-09-26),
+*Estado: revisado em 2026-10-11. Baseado na documentação
+oficial da NVIDIA nas datas indicadas; ainda não verificado em hardware físico
+pela Juxi Technology.*
+
 © NVIDIA Corporation.
 
 ---

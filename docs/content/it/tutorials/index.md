@@ -92,6 +92,12 @@ Benvenuto nella pagina dei tutorial! Qui puoi trovare tutti i tutorial d'uso dei
 - [Risoluzione dei problemi](/it/tutorials/jetson-agx-orin/troubleshooting)
 - [Glossario](/it/tutorials/jetson-agx-orin/glossary)
 - [Registro delle modifiche](/it/tutorials/jetson-agx-orin/changelog)
+- [XLeRobot Docker — 01 · Panoramica](/it/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview)
+- [XLeRobot Docker — 02 · Preparazione dell'ambiente](/it/tutorials/jetson-agx-orin/xlerobot-docker/deployment/02-Environment-Setup)
+- [XLeRobot Docker — 03 · Distribuzione](/it/tutorials/jetson-agx-orin/xlerobot-docker/deployment/03-Deployment)
+- [XLeRobot Docker — Comandi LeRobot originali](/it/tutorials/jetson-agx-orin/xlerobot-docker/lerobot/01-Operation)
+- [XLeRobot Docker — Comandi XLeRobot](/it/tutorials/jetson-agx-orin/xlerobot-docker/xlerobot/01-Operation)
+- [XLeRobot Docker — Risoluzione dei problemi e riferimento rapido](/it/tutorials/jetson-agx-orin/xlerobot-docker/troubleshooting/01-Troubleshooting)
 
 ### Kit di sviluppo Jetson Orin Nano Super
 
@@ -111,6 +117,12 @@ Benvenuto nella pagina dei tutorial! Qui puoi trovare tutti i tutorial d'uso dei
 - [Risoluzione dei problemi](/it/tutorials/jetson-orin-nano/troubleshooting)
 - [Glossario](/it/tutorials/jetson-orin-nano/glossary)
 - [Registro delle modifiche](/it/tutorials/jetson-orin-nano/changelog)
+- [XLeRobot Docker — 01 · Panoramica](/it/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview)
+- [XLeRobot Docker — 02 · Preparazione dell'ambiente](/it/tutorials/jetson-orin-nano/xlerobot-docker/deployment/02-Environment-Setup)
+- [XLeRobot Docker — 03 · Distribuzione](/it/tutorials/jetson-orin-nano/xlerobot-docker/deployment/03-Deployment)
+- [XLeRobot Docker — Comandi LeRobot originali](/it/tutorials/jetson-orin-nano/xlerobot-docker/lerobot/01-Operation)
+- [XLeRobot Docker — Comandi XLeRobot](/it/tutorials/jetson-orin-nano/xlerobot-docker/xlerobot/01-Operation)
+- [XLeRobot Docker — Risoluzione dei problemi e riferimento rapido](/it/tutorials/jetson-orin-nano/xlerobot-docker/troubleshooting/01-Troubleshooting)
 
 ### Risorse didattiche
 

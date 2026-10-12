@@ -33,7 +33,7 @@ NVIDIA によると、JetPack 7.2 の**メモリ最適化エージェントス�
 
 NVIDIA が示す目標は、より高性能なワークロードをより小さなメモリフットプリントに収めることです(これにより、同じハードウェアがソフトウェアリリースを重ねるごとに使い続けられるようになります)。まずはこちらから:
 
-- [Jetson デバイス側スキル](https://github.com/jetson-device-skills) · [Jetson BSP スキル](https://github.com/jetson-bsp-skills)
+- [Jetson デバイス側スキル](https://github.com/NVIDIA-AI-IOT/jetson-device-skills) · [Jetson BSP スキル](https://github.com/NVIDIA-AI-IOT/jetson-bsp-skills)
 - 背景:[NVIDIA の JetPack 7.2 メモリ効率ブログ](https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2)
 
 > **注意:** カーブアウトと予約の変更は起動動作に影響します。変更は一度に

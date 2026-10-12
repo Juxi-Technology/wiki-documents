@@ -88,7 +88,7 @@ review_owner: cheny
 
 - [Jetson Linux 39.2.0 發行說明（PDF）](https://docs.nvidia.com/jetson/archives/r39.2/ReleaseNotes/Jetson_Linux_Release_Notes_r39.2.pdf)——*What's New*、已知問題（已於 2026-09-23 確認）
 - [JetPack SDK 下載](https://developer.nvidia.com/embedded/jetpack/downloads)（已於 2026-09-23 確認）——⚠️ 其組件表部分行滯後；7.2.1 系統實際安裝的版本請參見[驗證你的系統](/zh-hant/tutorials/jetson-agx-orin/verify-your-system)
-- [Seeed Studio JetPack 7.2 資源中心](https://wiki.seeedstudio.com/jetpack_7_2_resource_hub/)——次要來源；僅用於遷移主題的組織（已於 2026-09-23 確認）
+- [Seeed Studio JetPack 7.2 資源中心](https://wiki.seeedstudio.com/jetpack_7_2_resource_hub/)——次要來源（已於 2026-09-23 確認）
 
 *狀態：已於 2026-10-11 審核。內容依據所列日期的 NVIDIA 官方
 文件；尚未由鉅犀科技在實體硬體上驗證。重新構建清單描述的是平台層面的標準後果

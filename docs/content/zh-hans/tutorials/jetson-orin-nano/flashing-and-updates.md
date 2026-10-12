@@ -66,6 +66,8 @@ Jetson ISO 是 NVIDIA 推荐的首次设置路径，也是唯一不需要 Ubuntu
 
 SDK Manager 是主机 PC 方式：它通过 USB-C 刷写 BSP，也能更新套件固件（见下文更新路径一节）。
 
+*状态：已于 2026-10-11 审核。内容依据所列日期的 NVIDIA 官方文档；尚未由钜犀科技在实体硬件上验证。*
+
 **主机 PC 要求**（依据套件的 BSP 设置页面）：一台**运行 Ubuntu 22.04 或 Ubuntu 20.04 的 x86 PC**；**互联网连接和一个免费的 NVIDIA Developer Program 账户**；一根接套件 USB-C 口的 **USB 线**，外加“一根跳线针或金属回形针”；以及用于套件的显示器或 USB 转 TTL 串口线。
 
 > **钜犀提示：** NVIDIA 的资料在这一点上说法不一。套件设置页面列出的是 Ubuntu 22.04 或 20.04；L4T r39.2.1 发布说明则将“Ubuntu 24.04 和 22.04”列为用于刷机的主机发行版。准备主机 PC 之前，请核对 NVIDIA 的 SDK Manager 要求。

@@ -235,6 +235,10 @@ per 8 GB](/it/tutorials/jetson-orin-nano/memory-efficiency).
 documentazione ufficiale NVIDIA alla data indicata; non ancora verificato su
 hardware fisico da Juxi Technology.*
 
+*Stato: rivisto il 2026-10-11. Basato sulla
+documentazione ufficiale NVIDIA alla data indicata; non ancora verificato su
+hardware fisico da Juxi Technology.*
+
 ---
 
 NVIDIA® e Jetson™ sono marchi di NVIDIA Corporation. Questa pagina è pubblicata
