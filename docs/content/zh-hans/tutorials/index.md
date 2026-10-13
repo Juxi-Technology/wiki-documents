@@ -138,6 +138,7 @@ head:
 - [机械臂总览](/zh-hans/tutorials/robot-arms/)
   - [选型指南](/zh-hans/tutorials/robot-arms/select-guide)
   - **SO-ARM101 系列**
+    - [SO-ARM101 机械臂教程总览](/zh-hans/tutorials/robot-arms/so-arm101/)
     - [SO-ARM101 使用教程](/zh-hans/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial)
     - [SO-ARM101 组装教程](/zh-hans/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly)
     - [SO-ARM101 Jetson Orin PyTorch 兼容性](/zh-hans/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility)
@@ -171,9 +172,12 @@ head:
             - [第五步:连接摄像头的遥操作(macOS)](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/MacOS)
           - **6. 采集数据集(真机)**
             - [第六步:采集数据集(真机)——示教采集](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording)
+            - [第六步:采集数据集(真机)——握手200 采集示例](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording-Handshake-200)
+            - [第六步:采集数据集(真机)——回看与回放](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Browse-and-Replay)
             - [第六步:采集数据集(真机)——注意事项](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes)
             - [第六步:采集数据集(真机)——注册 Hugging Face 账号(可选)](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account)
             - [第六步:采集数据集(真机)——上传数据集到 Hugging Face(可选)](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload)
+            - [第七步(仿真):采集数据集——光轮智能 LeIsaac 仿真遥操](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/LeIsaac-Sim)
           - **7. 训练模型**
             - [第七步:训练模型——本地 Ubuntu 训练](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Local-Ubuntu)
             - [第七步:训练模型——云 GPU 训练环境配置](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Cloud-GPU)
@@ -185,6 +189,11 @@ head:
             - [第七步:训练模型——pi0.5 训练命令](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5)
             - [第七步:训练模型——pi0fast 训练命令](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast)
             - [第七步:训练模型——smolvla 训练命令](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla)
+            - [第七步:训练模型——Diffusion 训练命令](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Diffusion)
+            - [第七步:训练模型——WALL-OSS 训练命令](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Wall-OSS)
+            - [第七步:训练模型——训练命令行](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Train-CLI)
+            - [第七步:训练模型——训练参数建议](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Training-Parameters)
+            - [第七步:训练模型——LeRobot 支持的模仿学习算法](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Imitation-Learning-Algorithms)
           - **8. 模型推理**
             - [第八步:模型推理——命令行说明](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/CLI-Reference)
             - [第八步:模型推理——常见 Bug 及解决](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Common-Bugs)
@@ -192,15 +201,28 @@ head:
             - [第八步:模型推理——pi0 推理命令](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0)
             - [第八步:模型推理——pi0.5 推理命令](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5)
             - [第八步:模型推理——smolvla 推理命令](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla)
+            - [第八步:模型推理——Diffusion 推理命令](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Diffusion)
+            - [第八步:模型推理——WALL-OSS 推理命令](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Wall-OSS)
+            - [第八步:模型推理——英伟达 DGX Spark](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/DGX-Spark)
+            - [第八步:模型推理——地瓜机器人 RDK S100](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/RDK-S100)
           - **基础知识**
             - [了解 LeRobot](/zh-hans/tutorials/robot-arms/so-arm101/basics/Understanding-LeRobot)
             - [Hugging Face 上的 LeRobot 数据集](/zh-hans/tutorials/robot-arms/so-arm101/basics/HF-Datasets)
             - [模型训练的资料](/zh-hans/tutorials/robot-arms/so-arm101/basics/Training-Resources)
             - [SO-ARM 100 机械臂官方 3D 打印文件](/zh-hans/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files)
             - [URDF 文件及资料参考](/zh-hans/tutorials/robot-arms/so-arm101/basics/URDF-Reference)
+            - [摄像头支架和安装座推荐](/zh-hans/tutorials/robot-arms/so-arm101/basics/Camera-Mounts-Recommended)
           - **专题与进阶**
             - [ROS2 仿真控制](/zh-hans/tutorials/robot-arms/so-arm101/ROS2-Simulation-Control)
             - [平行指夹爪安装教程](/zh-hans/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation)
+      - **LeLab 教程**
+        - [1 · 总览](/zh-hans/tutorials/robot-arms/so-arm101/lelab/01-Overview)
+        - [2 · 安装与启动](/zh-hans/tutorials/robot-arms/so-arm101/lelab/02-Install)
+        - [3 · 接线与校准](/zh-hans/tutorials/robot-arms/so-arm101/lelab/03-Calibration)
+        - [4 · 遥操作](/zh-hans/tutorials/robot-arms/so-arm101/lelab/04-Teleoperation)
+        - [5 · 录制数据集](/zh-hans/tutorials/robot-arms/so-arm101/lelab/05-Record-Dataset)
+        - [6 · 训练与推理](/zh-hans/tutorials/robot-arms/so-arm101/lelab/06-Train-and-Inference)
+        - [7 · 常见问题](/zh-hans/tutorials/robot-arms/so-arm101/lelab/07-Troubleshooting)
   - **SO-ARM101 + AmazingHand 教程**
     - [课程总览](/zh-hans/tutorials/robot-arms/so-arm-amazinghand/)
       - **Linux**

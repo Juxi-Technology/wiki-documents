@@ -31,39 +31,33 @@ LeRobot、XLeRobot 的機器人程式碼、舵機和相機驅動程式。你不�
 
 | 平台 | 支援情況 |
 |---|---|
-| **Jetson Orin 系列**（JetPack 7.2） | ✅ **目前正式支援的平台**，可用 GPU 加速 |
-| Jetson Nano（2019 原版） | ❌ 不支援——算力太低，見下 |
-| 樹莓派 / 一般 Ubuntu / x86 電腦 | ⏳ **暫未支援**，見下 |
-| Windows / macOS | ❌ 不支援（串口和攝影機直通在 Linux 上才順暢） |
+| **Jetson Orin 系列**（JetPack 7.2） | ✅ **唯一支援的平台**，可用 GPU 加速 |
+| 其他 | ❌ 不支援 |
 
-> 💡 **目前這份鏡像只面向 Jetson Orin 裝置。**
+> ⚠️ **這份鏡像只為 Jetson + JetPack 7.2 而建。** 樹莓派、一般 x86 電腦、
+> Windows、macOS 以及非 Orin 的 Jetson 板子都無法使用。
 >
 > - **Jetson Orin Nano / Orin NX / AGX Orin**：需要 **JetPack 7.2**
 >   （L4T 39.2 / CUDA 13.2）。AGX Orin 64GB 也是 7.2 才完整支援。
 > - **Jetson Nano（2019 原版）**：❌ 永遠不行。它是 Maxwell 架構（算力 5.3），
 >   而 CUDA 13 已經整個刪掉了 Maxwell 支援，torch 最低也要求 sm_80。
-> - **樹莓派 / x86 電腦**：鏡像設計上支援（通用 CPU 版基於 `python:3.12-slim`，
->   該基礎鏡像官方有 amd64 和 arm64 兩個版本），
->   但**目前發布出去的 CPU 版還沒有做成多架構**，
->   拉下來可能只有 amd64 或只有 arm64。等做了多架構建置再開放。
 >
 > 記憶體建議 4 GB 以上。Jetson Orin Nano 的 3.4 GB 也能跑遙操作，
 > 但訓練會吃力。
 
 ### 系統需求
 
-- Ubuntu 20.04 / 22.04 / 24.04，或 Debian 12+
-- 樹莓派：需要 64 位元系統（`uname -m` 顯示 `aarch64`）
-- 核心支援 USB 串口（一般都有）
+- **JetPack 7.2**（L4T r39 / Ubuntu 24.04）
+- 架構：`arm64`
+- 核心支援 USB 串口（幾乎所有系統都有）
 
-### 檢查你的架構
+### 檢查你的 JetPack 版本
 
 ```bash
-uname -m
+cat /etc/nv_tegra_release
 ```
 
-- `aarch64` → 樹莓派、Jetson（使用 arm64 鏡像）
-- `x86_64` → 一般電腦（使用 amd64 鏡像）
+看到 **R39** 就沒問題。其他版本——請先升級 JetPack，鏡像是為它建的。
 
 ---
 

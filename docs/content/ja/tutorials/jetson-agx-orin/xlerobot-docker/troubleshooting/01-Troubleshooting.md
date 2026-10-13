@@ -45,9 +45,11 @@ X11 ライブラリが不足しています。**ロボット本体には影響�
 
 ### コンテナ内で `torch.cuda.is_available()` が False になる
 
-- `cpu` / `cpu-slim` イメージを使用している → 正常です。これらのバージョンにはそもそも GPU がありません
-- `jetson` イメージを使用している → `--runtime nvidia` を使用していないか確認してください
-  （**`--device nvidia.com/gpu=all` が必須です**）。あわせて CDI 仕様が生成されているかも確認してください
+GPU は必須であるため、これは必ず設定の問題です——両方を確認してください：
+
+- コンテナを `--device nvidia.com/gpu=all` で起動している——**`--runtime nvidia` ではありません**。
+  こちらはデバイスノードを注入しません
+- ホストマシン上に CDI 仕様が存在する（`/etc/cdi/nvidia.yaml`）——[03-Deployment §4](../deployment/03-Deployment.md) を参照
 
 ### コンテナが起動せず、CDI エラーが出る
 
@@ -63,8 +65,7 @@ sudo rm -f /var/run/cdi/nvidia.yaml
 sudo systemctl restart docker
 ```
 
-（この問題は私たちのボードでは再起動のたびに再現します。詳細は
-developer/03-Board-Remote-Testing.md を参照してください。）
+（この問題は再起動のたびに再現します。）
 
 ### キャリブレーションを毎回やり直すことになる
 
@@ -155,12 +156,9 @@ lerobot-rollout \
 
 ```bash
 # イメージを取得
-docker pull chenyang310/xlerobot:cpu-slim
+docker pull chenyang310/xlerobot:jetson
 
-# 起動（汎用）
-bash scripts/run.sh cpu
-
-# 起動（Jetson、GPU 付き）
+# 起動
 bash scripts/run.sh jetson
 
 # コンテナに入った後 —— 初回セットアップ
@@ -258,8 +256,6 @@ lerobot-rollout \
 | HF_ENDPOINT の設定が必須 | `huggingface.co` は中国本土からは完全に到達不可で、`hf-mirror.com` は到達可能 |
 | Jetson では `--runtime nvidia` ではなく CDI を使用 | JetPack 6/7 の cgroup v2 環境では `--runtime nvidia` がデバイスノードを注入しない |
 | placo 運動学ライブラリをインストールしない | cp312/aarch64 向けのホイールが存在しない。XLeRobot は自前の解析的 IK を使用しており、依存していない |
-
-より詳しい技術的詳細は developer/01-Jetson-Environment.md を参照してください。
 
 ---
 

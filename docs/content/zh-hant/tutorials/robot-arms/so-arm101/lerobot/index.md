@@ -38,9 +38,12 @@ description: "本課程以 SO-ARM101 機械臂為例，涵蓋環境安裝、校�
 ## 6. 採集數據集(實機)
 
 - [第六步:示教採集數據集](/zh-hant/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording)
+- [第六步:示教採集資料集-握手200](/zh-hant/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording-Handshake-200)
+- [第六步:回看、回放資料集](/zh-hant/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Browse-and-Replay)
 - [第六步:數據集採集注意事項](/zh-hant/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes)
 - [第六步:註冊 Hugging Face 帳號(可選)](/zh-hant/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account)
 - [第六步:上傳數據集到 Hugging Face(可選)](/zh-hant/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload)
+- [第七步(仿真):採集資料集——光輪智能 LeIsaac 仿真遙操](/zh-hant/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/LeIsaac-Sim)
 
 ## 7. 訓練模型
 
@@ -54,6 +57,11 @@ description: "本課程以 SO-ARM101 機械臂為例，涵蓋環境安裝、校�
 - [第七步:pi0.5 訓練命令列](/zh-hant/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5)
 - [第七步:pi0fast 訓練命令列](/zh-hant/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast)
 - [第七步:SmolVLA 訓練命令列](/zh-hant/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla)
+- [第七步:Diffusion 訓練命令列](/zh-hant/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Diffusion)
+- [第七步:WALL-OSS 訓練命令列](/zh-hant/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Wall-OSS)
+- [第七步:訓練命令列](/zh-hant/tutorials/robot-arms/so-arm101/lerobot/07-Training/Train-CLI)
+- [第七步:訓練參數建議](/zh-hant/tutorials/robot-arms/so-arm101/lerobot/07-Training/Training-Parameters)
+- [第七步:LeRobot 支援的模仿學習演算法](/zh-hant/tutorials/robot-arms/so-arm101/lerobot/07-Training/Imitation-Learning-Algorithms)
 
 ## 8. 模型推論
 
@@ -63,6 +71,10 @@ description: "本課程以 SO-ARM101 機械臂為例，涵蓋環境安裝、校�
 - [第八步:pi0 推論命令列](/zh-hant/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0)
 - [第八步:pi0.5 推論命令列](/zh-hant/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5)
 - [第八步:SmolVLA 推論命令列](/zh-hant/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla)
+- [第八步:Diffusion 推論命令列](/zh-hant/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Diffusion)
+- [第八步:WALL-OSS 推論命令列](/zh-hant/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Wall-OSS)
+- [第八步:輝達 DGX Spark 推論](/zh-hant/tutorials/robot-arms/so-arm101/lerobot/08-Inference/DGX-Spark)
+- [第八步:地瓜機器人 RDK S100 推論](/zh-hant/tutorials/robot-arms/so-arm101/lerobot/08-Inference/RDK-S100)
 
 ## 基礎知識
 
@@ -71,6 +83,7 @@ description: "本課程以 SO-ARM101 機械臂為例，涵蓋環境安裝、校�
 - [模型訓練資源](/zh-hant/tutorials/robot-arms/so-arm101/basics/Training-Resources)
 - [SO-ARM 100 機械臂官方 3D 列印檔案](/zh-hant/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files)
 - [URDF 檔案及資料參考](/zh-hant/tutorials/robot-arms/so-arm101/basics/URDF-Reference)
+- [攝影機支架和安裝座推薦](/zh-hant/tutorials/robot-arms/so-arm101/basics/Camera-Mounts-Recommended)
 
 ## 其他與進階
 

@@ -38,9 +38,12 @@ description: "Il corso completo per il braccio SO-ARM101 con LeRobot: otto passi
 ## 6. Raccolta dataset
 
 - [Passo 6: Raccolta del dataset tramite insegnamento](/it/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording)
+- [Passo 6: Raccolta tramite dimostrazione — Handshake 200](/it/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording-Handshake-200)
+- [Passo 6: Visualizzare e riprodurre un dataset](/it/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Browse-and-Replay)
 - [Passo 6: Note sulla raccolta del dataset](/it/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes)
 - [Passo 6: Registrare un account Hugging Face (opzionale)](/it/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account)
 - [Passo 6: Caricare il dataset su HuggingFace (opzionale)](/it/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload)
+- [Passo 7 (simulazione): Raccogliere un dataset — teleoperazione Lightwheel LeIsaac](/it/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/LeIsaac-Sim)
 
 ## 7. Addestramento
 
@@ -54,6 +57,11 @@ description: "Il corso completo per il braccio SO-ARM101 con LeRobot: otto passi
 - [Passo 7: Comando di addestramento pi0.5](/it/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5)
 - [Passo 7: Comando di addestramento pi0fast](/it/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast)
 - [Passo 7: Comando di addestramento SmolVLA](/it/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla)
+- [Passo 7: Comando di addestramento Diffusion](/it/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Diffusion)
+- [Passo 7: Comando di addestramento WALL-OSS](/it/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Wall-OSS)
+- [Passo 7: Riga di comando di addestramento](/it/tutorials/robot-arms/so-arm101/lerobot/07-Training/Train-CLI)
+- [Passo 7: Consigli sui parametri di addestramento](/it/tutorials/robot-arms/so-arm101/lerobot/07-Training/Training-Parameters)
+- [Passo 7: Algoritmi di imitation learning supportati da LeRobot](/it/tutorials/robot-arms/so-arm101/lerobot/07-Training/Imitation-Learning-Algorithms)
 
 ## 8. Deployment
 
@@ -63,6 +71,10 @@ description: "Il corso completo per il braccio SO-ARM101 con LeRobot: otto passi
 - [Passo 8: Comando di deployment pi0](/it/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0)
 - [Passo 8: Comando di deployment pi0.5](/it/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5)
 - [Passo 8: Comando di deployment SmolVLA](/it/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla)
+- [Passo 8: Comando di deployment Diffusion](/it/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Diffusion)
+- [Passo 8: Comando di deployment WALL-OSS](/it/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Wall-OSS)
+- [Passo 8: Inferenza su NVIDIA DGX Spark](/it/tutorials/robot-arms/so-arm101/lerobot/08-Inference/DGX-Spark)
+- [Passo 8: Inferenza su D-Robotics RDK S100](/it/tutorials/robot-arms/so-arm101/lerobot/08-Inference/RDK-S100)
 
 ## Nozioni di base
 
@@ -71,6 +83,7 @@ description: "Il corso completo per il braccio SO-ARM101 con LeRobot: otto passi
 - [Materiali per l'addestramento del modello](/it/tutorials/robot-arms/so-arm101/basics/Training-Resources)
 - [File di stampa 3D ufficiali del braccio SO-ARM 100](/it/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files)
 - [File URDF e materiali di riferimento](/it/tutorials/robot-arms/so-arm101/basics/URDF-Reference)
+- [Staffe e supporti per telecamere consigliati](/it/tutorials/robot-arms/so-arm101/basics/Camera-Mounts-Recommended)
 
 ## Approfondimenti
 

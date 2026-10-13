@@ -45,9 +45,11 @@ X11 라이브러리가 없기 때문입니다. **로봇 자체에는 영향이 �
 
 ### 컨테이너에서 `torch.cuda.is_available()`이 False임
 
-- `cpu` / `cpu-slim` 이미지를 사용 중 → 정상입니다, 이 버전들은 애초에 GPU가 없습니다
-- `jetson` 이미지를 사용 중 → `--runtime nvidia`를 사용했는지 확인하세요
-  (**반드시 `--device nvidia.com/gpu=all`을 사용해야 합니다**), 그리고 CDI 스펙이 생성되었는지도 확인하세요
+GPU는 필수이므로 이것은 항상 설정 문제입니다 — 두 가지를 모두 확인하세요:
+
+- 컨테이너를 `--device nvidia.com/gpu=all`로 시작했는지 — **`--runtime nvidia`가 아닙니다**.
+  후자는 디바이스 노드를 주입하지 않습니다
+- 호스트에 CDI 스펙이 존재하는지(`/etc/cdi/nvidia.yaml`) — [03-Deployment §4](../deployment/03-Deployment.md) 참고
 
 ### 컨테이너가 시작되지 않고 CDI 오류가 발생함
 
@@ -63,8 +65,7 @@ sudo rm -f /var/run/cdi/nvidia.yaml
 sudo systemctl restart docker
 ```
 
-(이 문제는 자체 보드에서 재부팅할 때마다 재현됩니다. 자세한 내용은
-developer/03-Board-Remote-Testing.md를 참고하세요.)
+(이 문제는 재부팅할 때마다 재현됩니다.)
 
 ### 캘리브레이션을 매번 다시 해야 함
 
@@ -154,12 +155,9 @@ lerobot-rollout \
 
 ```bash
 # 이미지 받기
-docker pull chenyang310/xlerobot:cpu-slim
+docker pull chenyang310/xlerobot:jetson
 
-# 시작(범용)
-bash scripts/run.sh cpu
-
-# 시작(Jetson, GPU 포함)
+# 시작
 bash scripts/run.sh jetson
 
 # 컨테이너 진입 후 — 최초 설정
@@ -257,8 +255,6 @@ lerobot-rollout \
 | HF_ENDPOINT 필수 | 중국 본토에서는 `huggingface.co`에 전혀 접속할 수 없고, `hf-mirror.com`은 접속 가능합니다 |
 | Jetson은 `--runtime nvidia` 대신 CDI 사용 | JetPack 6/7의 cgroup v2 환경에서는 `--runtime nvidia`가 디바이스 노드를 주입하지 않습니다 |
 | placo 운동학 라이브러리를 설치하지 않음 | cp312/aarch64용 휠이 없습니다. XLeRobot은 자체 내장 해석적 IK를 사용하며 이 라이브러리에 의존하지 않습니다 |
-
-더 자세한 기술 내용은 developer/01-Jetson-Environment.md를 참고하세요.
 
 ---
 

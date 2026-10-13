@@ -14,21 +14,31 @@ title: 03 · 部署
 
 ## 1. 拿到镜像
 
-### 方式 A：直接拉取（推荐）
+镜像只有一个：
 
 ```bash
-docker pull chenyang310/xlerobot:cpu-slim
+docker pull chenyang310/xlerobot:jetson
 ```
 
-`cpu-slim` 是精简版（约 660 MB 下载量），包含遥操作、校准、录制数据所需的一切。
+| | |
+|---|---|
+| 架构 | `arm64` |
+| 运行环境 | Jetson + JetPack 7.2 |
+| 下载量 | 约 3.6 GB（解压后更大，建议留 20 GB 空闲） |
+| 包含 | 遥操作、校准、录制数据、训练、推理，**GPU 加速** |
 
-想要完整版（含可视化、训练、Diffusion 策略）：
+拉完确认一下：
 
 ```bash
-docker pull chenyang310/xlerobot:cpu
+docker images | grep xlerobot
 ```
 
-### 方式 B：自己构建
+应该看到 `chenyang310/xlerobot` 和 `jetson` 标签。
+
+> **国内网络**：实测可以直接拉，不需要额外配加速器。如果慢，见
+> [02-Environment-Setup](02-Environment-Setup.md) 第 2 节。
+
+### 自己构建（维护者）
 
 适合需要改动、或者想用最新源码的情况。
 
@@ -36,10 +46,6 @@ docker pull chenyang310/xlerobot:cpu
 git clone <本仓库地址> xlerobot-docker
 cd xlerobot-docker
 
-# 通用 CPU 版
-bash scripts/build.sh cpu
-
-# Jetson GPU 版（在 Jetson 上执行）
 bash scripts/build.sh jetson
 ```
 
@@ -51,13 +57,14 @@ bash scripts/build.sh jetson
 
 ---
 
-## 2. 各版本的区别
+## 2. 镜像里有什么
 
-| 镜像 | 体积 | 包含 | 适用 |
-|---|---|---|---|
-| `cpu-slim` | 约 660 MB | 遥操作、校准、ACT 策略推理 | 只要跑机器人 |
-| `cpu` | 约 1 GB | 上面 + 可视化、录制数据、训练、Diffusion | 要做完整流程 |
-| `jetson` | 约 3.6 GB | CPU 版 + **CUDA 加速** | Jetson，需要 GPU 推理 |
+一个镜像，东西全在里面：
+
+- **遥操作与校准** —— 手动拖动示教，保存校准
+- **录制与回放数据**
+- **训练** —— ACT、Diffusion Policy、SmolVLA、π₀、π₀.₅、Wall-OSS
+- **推理** —— 在机器人上跑训练好的策略，**GPU 加速**
 
 ---
 
@@ -68,15 +75,12 @@ bash scripts/build.sh jetson
 如果你克隆了仓库：
 
 ```bash
-# 通用版
-bash scripts/run.sh cpu
-
-# Jetson 版（会自动加上 GPU 参数）
 bash scripts/run.sh jetson
 ```
 
 脚本已经配好了这些：
 
+- **GPU** —— `--device nvidia.com/gpu=all`（CDI 方式）
 - **设备透传** —— 串口、摄像头、USB
 - **网络** —— `--network host`，VR 遥操作和 web 控制需要
 - **源码挂载** —— 改代码不用重建镜像
@@ -88,6 +92,8 @@ bash scripts/run.sh jetson
 
 ```bash
 docker run -it --rm \
+  --name xlerobot \
+  --device nvidia.com/gpu=all \
   --privileged \
   --network host \
   -v /dev:/dev \
@@ -95,26 +101,30 @@ docker run -it --rm \
   -v /tmp/.X11-unix:/tmp/.X11-unix \
   -e DISPLAY=$DISPLAY \
   -e HF_ENDPOINT=https://hf-mirror.com \
-  chenyang310/xlerobot:cpu-slim
+  chenyang310/xlerobot:jetson
 ```
 
 **每个参数的作用：**
 
 | 参数 | 为什么需要 |
 |---|---|
+| `--device nvidia.com/gpu=all` | **给容器 GPU**（CDI 方式）。少了这个容器里完全没有 GPU |
 | `--privileged` + `-v /dev:/dev` | 串口（SO-101 舵机）、摄像头、USB 透传 |
 | `--network host` | host/client 双进程通信（ZMQ），以及 VR 控制 |
 | `-v ~/.cache/huggingface` | **校准文件**和模型缓存。不挂的话每次重开容器都要重新校准 |
 | `-v /tmp/.X11-unix` + `-e DISPLAY` | 要跑可视化时用（rerun 开窗） |
 | `-e HF_ENDPOINT` | `huggingface.co` 国内完全不可达，必须走镜像 |
 
+> 挂载路径里的 `/home/jetson` 是**镜像里的**用户目录，写死是对的——
+> 这个镜像的用户就叫 `jetson`。
+
 进去之后是个 bash，工作目录 `/opt/xlerobot`。
 
 ---
 
-## 4. Jetson 的 GPU 参数 ⚠️ 与其它平台不同
+## 4. GPU 参数 —— 必须走 CDI
 
-Jetson 版**必须**用 CDI 给 GPU，**不能用 `--runtime nvidia`**：
+镜像**必须**用 CDI 给 GPU，**不能用 `--runtime nvidia`**：
 
 ```bash
 docker run -it --rm \
@@ -188,20 +198,14 @@ dpkg -l | grep nvidia-jetpack
    而 Jetson Nano 是 sm_53，既没有原生 kernel，PTX 即时编译也够不着。
 3. **平台已 EOL**（JetPack 4 于 2024 年 11 月停止维护）。
 
-### 树莓派 / 普通 Ubuntu / x86 电脑 —— ⏳ 暂未支持
+### 树莓派 / 普通 Ubuntu / x86 电脑 —— ❌ 不支持
 
-镜像**设计上**是支持的——通用 CPU 版基于 `python:3.12-slim`，
-这个基础镜像官方同时发布 amd64 和 arm64 两个版本。
+树莓派、普通 x86 电脑、Windows 和 macOS **都跑不了这个镜像**。
+它是针对 JetPack 7.2 的 CUDA 环境构建的，而且只发布 `arm64`，
+**没有 CPU 版可以退而求其次**。请用 Jetson Orin 板子。
 
-但**目前发布出去的 CPU 版还没有做成多架构**（构建脚本是普通的
-`docker build`，产出的只是构建机器那一个架构）。所以现在拉下来可能
-只有 amd64 或只有 arm64，另一半平台用不了。
-
-等做了多架构构建（`docker buildx build --platform linux/amd64,linux/arm64`）
-再开放这部分，那之前**请只在 Jetson Orin 上用**。
-
-> 不确定自己的镜像能不能用：<code v-pre>docker image inspect &lt;镜像&gt; --format '{{.Architecture}}'</code>，
-> 和 `uname -m` 对一下。
+> 确认一下手上的设备：`uname -m` 应该输出 `aarch64`，
+> `cat /etc/nv_tegra_release` 应该显示 **R39**。
 
 ---
 
@@ -216,7 +220,7 @@ python -c "import torch, lerobot; print('torch', torch.__version__); print('lero
 预期输出：
 
 ```
-torch 2.11.0+cu130     ← Jetson 版；CPU 版显示 +cpu
+torch 2.11.0+cu130
 lerobot 0.6.2
 ```
 

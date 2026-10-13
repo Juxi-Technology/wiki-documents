@@ -46,9 +46,13 @@ o ponto-chave é que o `docker exec` **tem obrigatoriamente de incluir `-u root`
 
 ### `torch.cuda.is_available()` devolve False no contendor
 
-- Se está a usar as imagens `cpu` / `cpu-slim` → normal; estas versões não têm GPU de origem
-- Se está a usar a imagem `jetson` → verifique se usou `--runtime nvidia`
-  (**é obrigatório usar `--device nvidia.com/gpu=all`**) e se a especificação CDI foi gerada
+A GPU é obrigatória, pelo que isto é sempre um problema de configuração —
+verifique as duas coisas:
+
+- Se iniciou o contendor com `--device nvidia.com/gpu=all` — **não com
+  `--runtime nvidia`**, que não injeta os nós dos dispositivos
+- Se a especificação CDI existe na máquina anfitriã (`/etc/cdi/nvidia.yaml`) — ver
+  [03-Deployment §4](../deployment/03-Deployment.md)
 
 ### O contendor não arranca e apresenta um erro de CDI
 
@@ -65,8 +69,7 @@ sudo rm -f /var/run/cdi/nvidia.yaml
 sudo systemctl restart docker
 ```
 
-(Este problema reproduz-se a cada reinício nas nossas próprias placas; consulte
-os detalhes em developer/03-Board-Remote-Testing.md.)
+(Este problema reproduz-se a cada reinício.)
 
 ### A calibração tem de ser repetida sempre
 
@@ -169,12 +172,9 @@ scripts em `examples/`.
 
 ```bash
 # Descarregar a imagem
-docker pull chenyang310/xlerobot:cpu-slim
+docker pull chenyang310/xlerobot:jetson
 
-# Iniciar (genérica)
-bash scripts/run.sh cpu
-
-# Iniciar (Jetson, com GPU)
+# Iniciar
 bash scripts/run.sh jetson
 
 # Depois de entrar no contendor — configuração inicial
@@ -272,8 +272,6 @@ A explicação completa consta de [xlerobot/](../xlerobot/01-Operation.md) secç
 | É obrigatório configurar o HF_ENDPOINT | O `huggingface.co` é completamente inacessível a partir da China continental; o `hf-mirror.com` está acessível |
 | Usar CDI em vez de `--runtime nvidia` no Jetson | Em ambientes cgroup v2 do JetPack 6/7, o `--runtime nvidia` não injeta os nós dos dispositivos |
 | Não instalar a biblioteca de cinemática placo | Não existem wheels cp312/aarch64; o XLeRobot usa a sua própria IK analítica, sem depender dela |
-
-Ver mais detalhes técnicos em developer/01-Jetson-Environment.md.
 
 ---
 

@@ -35,12 +35,11 @@ marcha el software), un ordenador y un cable USB.
 
 | Plataforma | Soporte |
 |---|---|
-| **Serie Jetson Orin** (JetPack 7.2) | ✅ **La plataforma con soporte oficial actual**, con aceleración por GPU |
-| Jetson Nano (2019, original) | ❌ No compatible: capacidad de cómputo demasiado baja; véase más abajo |
-| Raspberry Pi / Ubuntu normal / PC x86 | ⏳ **Aún no compatible**; véase más abajo |
-| Windows / macOS | ❌ No compatible (el paso del puerto serie y de la cámara solo funciona bien en Linux) |
+| **Serie Jetson Orin** (JetPack 7.2) | ✅ **La única plataforma compatible**, con aceleración por GPU |
+| Cualquier otra cosa | ❌ No compatible |
 
-> 💡 **Actualmente esta imagen está destinada únicamente a dispositivos Jetson Orin.**
+> ⚠️ **Esta imagen está creada únicamente para Jetson + JetPack 7.2.** Raspberry Pi, PC x86
+> normales, Windows, macOS y placas Jetson que no sean Orin no pueden usarla.
 >
 > - **Jetson Orin Nano / Orin NX / AGX Orin**: requieren **JetPack 7.2**
 >   (L4T 39.2 / CUDA 13.2). El AGX Orin de 64 GB también necesita 7.2 para
@@ -48,12 +47,6 @@ marcha el software), un ordenador y un cable USB.
 > - **Jetson Nano (2019, original)**: ❌ nunca funcionará. Es de arquitectura
 >   Maxwell (capacidad de cómputo 5.3), y CUDA 13 ha eliminado por completo
 >   el soporte de Maxwell; además, torch exige como mínimo sm_80.
-> - **Raspberry Pi / PC x86**: la imagen está diseñada para soportarlos (la
->   versión CPU genérica se basa en `python:3.12-slim`, una imagen base que
->   tiene versiones oficiales para amd64 y arm64), pero **la versión CPU
->   publicada actualmente aún no es multiarquitectura**: al descargarla
->   podría obtener solo amd64 o solo arm64. Se abrirá cuando se haga la
->   compilación multiarquitectura.
 >
 > Se recomiendan 4 GB de memoria o más. Los 3,4 GB de la Jetson Orin Nano
 > también pueden con la teleoperación, pero el entrenamiento se le hará
@@ -61,18 +54,17 @@ marcha el software), un ordenador y un cable USB.
 
 ### Requisitos del sistema
 
-- Ubuntu 20.04 / 22.04 / 24.04, o Debian 12+
-- Raspberry Pi: se requiere un sistema de 64 bits (`uname -m` debe mostrar `aarch64`)
+- **JetPack 7.2** (L4T r39 / Ubuntu 24.04)
+- Arquitectura: `arm64`
 - El kernel debe soportar puertos serie USB (lo habitual)
 
-### Compruebe su arquitectura
+### Compruebe su versión de JetPack
 
 ```bash
-uname -m
+cat /etc/nv_tegra_release
 ```
 
-- `aarch64` → Raspberry Pi, Jetson (use la imagen arm64)
-- `x86_64` → ordenador normal (use la imagen amd64)
+Si aparece **R39**, está todo listo. Cualquier otro valor significa que debe actualizar primero JetPack; la imagen está compilada para ello.
 
 ---
 

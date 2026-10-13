@@ -17,6 +17,7 @@ Welcome to the robot arm series tutorials! Here you'll find complete guides for 
 
 6-axis desktop open-source robotic arm, supporting LeRobot and other AI frameworks.
 
+- [SO-ARM101 Robotic Arm Tutorials](./so-arm101/index.md)
 - [SO-ARM101 Tutorial](./so-arm101/SO-ARM101-Tutorial.md)
 - [SO-ARM101 Assembly Guide](./so-arm101/SO-ARM101-Assembly.md)
 - [SO-ARM101 Jetson Orin PyTorch Compatibility](./so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility.md)
@@ -55,9 +56,12 @@ Welcome to the robot arm series tutorials! Here you'll find complete guides for 
 
 #### 6. Data Collection
 - [Step 6: Teaching & Recording a Dataset](./so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording.md)
+- [Step 6: Teaching & Recording a Dataset — Handshake 200](./so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording-Handshake-200.md)
+- [Step 6: Viewing & Replaying a Dataset](./so-arm101/lerobot/06-Data-Collection/Browse-and-Replay.md)
 - [Step 6: Dataset Collection Notes](./so-arm101/lerobot/06-Data-Collection/Collection-Notes.md)
 - [Step 6: Hugging Face Account (Optional)](./so-arm101/lerobot/06-Data-Collection/HF-Account.md)
 - [Step 6: Upload Dataset to Hugging Face (Optional)](./so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload.md)
+- [Step 7 (Simulation): Collecting a Dataset — Lightwheel LeIsaac Teleoperation](./so-arm101/lerobot/06-Data-Collection/LeIsaac-Sim.md)
 
 #### 7. Model Training
 - [Step 7: Training — Local Ubuntu](./so-arm101/lerobot/07-Training/Local-Ubuntu.md)
@@ -70,6 +74,11 @@ Welcome to the robot arm series tutorials! Here you'll find complete guides for 
 - [Step 7: Training — pi0.5 Command](./so-arm101/lerobot/07-Training/Command-pi0.5.md)
 - [Step 7: Training — pi0fast Command](./so-arm101/lerobot/07-Training/Command-pi0fast.md)
 - [Step 7: Training — smolvla Command](./so-arm101/lerobot/07-Training/Command-smolvla.md)
+- [Step 7: Training — Diffusion Command](./so-arm101/lerobot/07-Training/Command-Diffusion.md)
+- [Step 7: Training — WALL-OSS Command](./so-arm101/lerobot/07-Training/Command-Wall-OSS.md)
+- [Step 7: Training — Training Command Line](./so-arm101/lerobot/07-Training/Train-CLI.md)
+- [Step 7: Training — Parameter Tips](./so-arm101/lerobot/07-Training/Training-Parameters.md)
+- [Step 7: Training — Imitation Learning Algorithms](./so-arm101/lerobot/07-Training/Imitation-Learning-Algorithms.md)
 
 #### 8. Model Inference
 - [Step 8: Inference — CLI Reference](./so-arm101/lerobot/08-Inference/CLI-Reference.md)
@@ -78,6 +87,10 @@ Welcome to the robot arm series tutorials! Here you'll find complete guides for 
 - [Step 8: Inference — pi0 Command](./so-arm101/lerobot/08-Inference/Command-pi0.md)
 - [Step 8: Inference — pi0.5 Command](./so-arm101/lerobot/08-Inference/Command-pi0.5.md)
 - [Step 8: Inference — smolvla Command](./so-arm101/lerobot/08-Inference/Command-smolvla.md)
+- [Step 8: Inference — Diffusion Command](./so-arm101/lerobot/08-Inference/Command-Diffusion.md)
+- [Step 8: Inference — WALL-OSS Command](./so-arm101/lerobot/08-Inference/Command-Wall-OSS.md)
+- [Step 8: Inference — NVIDIA DGX Spark](./so-arm101/lerobot/08-Inference/DGX-Spark.md)
+- [Step 8: Inference — D-Robotics RDK S100](./so-arm101/lerobot/08-Inference/RDK-S100.md)
 
 #### Basics
 - [Understanding LeRobot](./so-arm101/basics/Understanding-LeRobot.md)
@@ -85,10 +98,20 @@ Welcome to the robot arm series tutorials! Here you'll find complete guides for 
 - [Model Training Resources](./so-arm101/basics/Training-Resources.md)
 - [SO-ARM100 Official 3D Print Files](./so-arm101/basics/Official-3D-Print-Files.md)
 - [URDF Files and Reference Materials](./so-arm101/basics/URDF-Reference.md)
+- [Recommended Camera Brackets and Mounts](./so-arm101/basics/Camera-Mounts-Recommended.md)
 
 #### Extras & Advanced
 - [ROS2 Simulation Control](./so-arm101/ROS2-Simulation-Control.md)
 - [Parallel Finger Gripper Installation](./so-arm101/Parallel-Finger-Gripper-Installation.md)
+
+#### LeLab Tutorial
+- [1 · Overview](./so-arm101/lelab/01-Overview.md)
+- [2 · Install and run](./so-arm101/lelab/02-Install.md)
+- [3 · Connect and calibrate](./so-arm101/lelab/03-Calibration.md)
+- [4 · Teleoperation](./so-arm101/lelab/04-Teleoperation.md)
+- [5 · Record a dataset](./so-arm101/lelab/05-Record-Dataset.md)
+- [6 · Train and run inference](./so-arm101/lelab/06-Train-and-Inference.md)
+- [7 · Troubleshooting](./so-arm101/lelab/07-Troubleshooting.md)
 
 
 ### SO-ARM101 Robotic Arm 7-DOF Tutorial
@@ -213,6 +236,8 @@ XLeRobot dual-arm mobile robot tutorials: environment setup, file deployment, an
 - [Move XLeRobot Files](./xlerobot/02-Move-Xlerobot-Files.md)
 - [Assembled-Kit Assembly](./xlerobot/03-Assembly-Assembled-Kit.md)
 - [Parts-Kit Assembly](./xlerobot/04-Assembly-Parts-Kit.md)
+- [XLeRobot Docker Tutorial — Jetson AGX Orin](/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview)
+- [XLeRobot Docker Tutorial — Jetson Orin Nano](/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview)
 
 ---
 

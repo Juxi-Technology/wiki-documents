@@ -235,6 +235,7 @@ const zhCN = {
               text: 'SO-ARM101 系列',
               collapsed: false,
               items: [
+                { text: 'SO-ARM101 机械臂教程总览', link: '/zh-hans/tutorials/robot-arms/so-arm101/' },
                 { text: 'SO-ARM101 使用教程', link: '/zh-hans/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial' },
                 { text: 'SO-ARM101 组装教程', link: '/zh-hans/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly' },
                 { text: 'SO-ARM101 Jetson Orin PyTorch 兼容性', link: '/zh-hans/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility' },
@@ -299,9 +300,12 @@ const zhCN = {
                       collapsed: true,
                       items: [
                         { text: '第六步:采集数据集(真机)——示教采集', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording' },
+                        { text: '第六步:采集数据集(真机)——握手200 采集示例', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording-Handshake-200' },
+                        { text: '第六步:采集数据集(真机)——回看与回放', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Browse-and-Replay' },
                         { text: '第六步:采集数据集(真机)——注意事项', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes' },
                         { text: '第六步:采集数据集(真机)——注册 Hugging Face 账号(可选)', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account' },
                         { text: '第六步:采集数据集(真机)——上传数据集到 Hugging Face(可选)', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload' },
+                        { text: '第七步(仿真):采集数据集——光轮智能 LeIsaac 仿真遥操', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/LeIsaac-Sim' },
                       ],
                     },
                     {
@@ -318,6 +322,11 @@ const zhCN = {
                         { text: '第七步:训练模型——pi0.5 训练命令', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5' },
                         { text: '第七步:训练模型——pi0fast 训练命令', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast' },
                         { text: '第七步:训练模型——smolvla 训练命令', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla' },
+                        { text: '第七步:训练模型——Diffusion 训练命令', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Diffusion' },
+                        { text: '第七步:训练模型——WALL-OSS 训练命令', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Wall-OSS' },
+                        { text: '第七步:训练模型——训练命令行', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Train-CLI' },
+                        { text: '第七步:训练模型——训练参数建议', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Training-Parameters' },
+                        { text: '第七步:训练模型——LeRobot 支持的模仿学习算法', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Imitation-Learning-Algorithms' },
                       ],
                     },
                     {
@@ -330,6 +339,10 @@ const zhCN = {
                         { text: '第八步:模型推理——pi0 推理命令', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0' },
                         { text: '第八步:模型推理——pi0.5 推理命令', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5' },
                         { text: '第八步:模型推理——smolvla 推理命令', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla' },
+                        { text: '第八步:模型推理——Diffusion 推理命令', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Diffusion' },
+                        { text: '第八步:模型推理——WALL-OSS 推理命令', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Wall-OSS' },
+                        { text: '第八步:模型推理——英伟达 DGX Spark', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/DGX-Spark' },
+                        { text: '第八步:模型推理——地瓜机器人 RDK S100', link: '/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/RDK-S100' },
                       ],
                     },
                     {
@@ -341,6 +354,7 @@ const zhCN = {
                         { text: '模型训练的资料', link: '/zh-hans/tutorials/robot-arms/so-arm101/basics/Training-Resources' },
                         { text: 'SO-ARM 100 机械臂官方 3D 打印文件', link: '/zh-hans/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files' },
                         { text: 'URDF 文件及资料参考', link: '/zh-hans/tutorials/robot-arms/so-arm101/basics/URDF-Reference' },
+                        { text: '摄像头支架和安装座推荐', link: '/zh-hans/tutorials/robot-arms/so-arm101/basics/Camera-Mounts-Recommended' },
                       ],
                     },
                     {
@@ -351,6 +365,19 @@ const zhCN = {
                         { text: '平行指夹爪安装教程', link: '/zh-hans/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation' },
                       ],
                     },
+                  ],
+                },
+                {
+                  text: 'LeLab 教程',
+                  collapsed: true,
+                  items: [
+                    { text: '1 · 总览', link: '/zh-hans/tutorials/robot-arms/so-arm101/lelab/01-Overview' },
+                    { text: '2 · 安装与启动', link: '/zh-hans/tutorials/robot-arms/so-arm101/lelab/02-Install' },
+                    { text: '3 · 接线与校准', link: '/zh-hans/tutorials/robot-arms/so-arm101/lelab/03-Calibration' },
+                    { text: '4 · 遥操作', link: '/zh-hans/tutorials/robot-arms/so-arm101/lelab/04-Teleoperation' },
+                    { text: '5 · 录制数据集', link: '/zh-hans/tutorials/robot-arms/so-arm101/lelab/05-Record-Dataset' },
+                    { text: '6 · 训练与推理', link: '/zh-hans/tutorials/robot-arms/so-arm101/lelab/06-Train-and-Inference' },
+                    { text: '7 · 常见问题', link: '/zh-hans/tutorials/robot-arms/so-arm101/lelab/07-Troubleshooting' },
                   ],
                 },
                 {
@@ -914,6 +941,7 @@ const en = {
               text: 'SO-ARM101 Series',
               collapsed: false,
               items: [
+                { text: 'SO-ARM101 Robotic Arm Tutorials', link: '/tutorials/robot-arms/so-arm101/' },
                 { text: 'SO-ARM101 Tutorial', link: '/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial' },
                 { text: 'SO-ARM101 Assembly', link: '/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly' },
                 { text: 'SO-ARM101 Jetson Orin PyTorch Compatibility', link: '/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility' },
@@ -978,9 +1006,12 @@ const en = {
                       collapsed: true,
                       items: [
                         { text: 'Step 6: Teaching & Recording a Dataset', link: '/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording' },
+                        { text: 'Step 6: Teaching & Recording a Dataset — Handshake 200', link: '/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording-Handshake-200' },
+                        { text: 'Step 6: Viewing & Replaying a Dataset', link: '/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Browse-and-Replay' },
                         { text: 'Step 6: Dataset Collection Notes', link: '/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes' },
                         { text: 'Step 6: Hugging Face Account (Optional)', link: '/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account' },
                         { text: 'Step 6: Upload Dataset to Hugging Face (Optional)', link: '/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload' },
+                        { text: 'Step 7 (Simulation): Collecting a Dataset — Lightwheel LeIsaac Teleoperation', link: '/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/LeIsaac-Sim' },
                       ],
                     },
                     {
@@ -997,6 +1028,11 @@ const en = {
                         { text: 'Step 7: Training — pi0.5 Command', link: '/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5' },
                         { text: 'Step 7: Training — pi0fast Command', link: '/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast' },
                         { text: 'Step 7: Training — smolvla Command', link: '/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla' },
+                        { text: 'Step 7: Training — Diffusion Command', link: '/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Diffusion' },
+                        { text: 'Step 7: Training — WALL-OSS Command', link: '/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Wall-OSS' },
+                        { text: 'Step 7: Training — Training Command Line', link: '/tutorials/robot-arms/so-arm101/lerobot/07-Training/Train-CLI' },
+                        { text: 'Step 7: Training — Parameter Tips', link: '/tutorials/robot-arms/so-arm101/lerobot/07-Training/Training-Parameters' },
+                        { text: 'Step 7: Training — Imitation Learning Algorithms', link: '/tutorials/robot-arms/so-arm101/lerobot/07-Training/Imitation-Learning-Algorithms' },
                       ],
                     },
                     {
@@ -1009,6 +1045,10 @@ const en = {
                         { text: 'Step 8: Inference — pi0 Command', link: '/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0' },
                         { text: 'Step 8: Inference — pi0.5 Command', link: '/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5' },
                         { text: 'Step 8: Inference — smolvla Command', link: '/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla' },
+                        { text: 'Step 8: Inference — Diffusion Command', link: '/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Diffusion' },
+                        { text: 'Step 8: Inference — WALL-OSS Command', link: '/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Wall-OSS' },
+                        { text: 'Step 8: Inference — NVIDIA DGX Spark', link: '/tutorials/robot-arms/so-arm101/lerobot/08-Inference/DGX-Spark' },
+                        { text: 'Step 8: Inference — D-Robotics RDK S100', link: '/tutorials/robot-arms/so-arm101/lerobot/08-Inference/RDK-S100' },
                       ],
                     },
                     {
@@ -1020,6 +1060,7 @@ const en = {
                         { text: 'Model Training Resources', link: '/tutorials/robot-arms/so-arm101/basics/Training-Resources' },
                         { text: 'SO-ARM100 Official 3D Print Files', link: '/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files' },
                         { text: 'URDF Files and Reference Materials', link: '/tutorials/robot-arms/so-arm101/basics/URDF-Reference' },
+                        { text: 'Recommended Camera Brackets and Mounts', link: '/tutorials/robot-arms/so-arm101/basics/Camera-Mounts-Recommended' },
                       ],
                     },
                     {
@@ -1030,6 +1071,19 @@ const en = {
                         { text: 'Parallel Finger Gripper Installation', link: '/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation' },
                       ],
                     },
+                  ],
+                },
+                {
+                  text: 'LeLab Tutorial',
+                  collapsed: true,
+                  items: [
+                    { text: '1 · Overview', link: '/tutorials/robot-arms/so-arm101/lelab/01-Overview' },
+                    { text: '2 · Install and run', link: '/tutorials/robot-arms/so-arm101/lelab/02-Install' },
+                    { text: '3 · Connect and calibrate', link: '/tutorials/robot-arms/so-arm101/lelab/03-Calibration' },
+                    { text: '4 · Teleoperation', link: '/tutorials/robot-arms/so-arm101/lelab/04-Teleoperation' },
+                    { text: '5 · Record a dataset', link: '/tutorials/robot-arms/so-arm101/lelab/05-Record-Dataset' },
+                    { text: '6 · Train and run inference', link: '/tutorials/robot-arms/so-arm101/lelab/06-Train-and-Inference' },
+                    { text: '7 · Troubleshooting', link: '/tutorials/robot-arms/so-arm101/lelab/07-Troubleshooting' },
                   ],
                 },
                 {
@@ -1593,6 +1647,7 @@ const zhHK = {
               text: 'SO-ARM101 系列',
               collapsed: false,
               items: [
+                { text: 'SO-ARM101 機械臂教程總覽', link: '/zh-hant/tutorials/robot-arms/so-arm101/' },
                 { text: 'SO-ARM101 使用教程', link: '/zh-hant/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial' },
                 { text: 'SO-ARM101 組裝教程', link: '/zh-hant/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly' },
                 { text: 'SO-ARM101 Jetson Orin PyTorch 相容性', link: '/zh-hant/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility' },
@@ -1657,9 +1712,12 @@ const zhHK = {
                       collapsed: true,
                       items: [
                         { text: '第六步:示教採集數據集', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording' },
+                        { text: '第六步:示教採集資料集-握手200', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording-Handshake-200' },
+                        { text: '第六步:回看、回放資料集', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Browse-and-Replay' },
                         { text: '第六步:數據集採集注意事項', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes' },
                         { text: '第六步:註冊 Hugging Face 帳號(可選)', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account' },
                         { text: '第六步:上傳數據集到 Hugging Face(可選)', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload' },
+                        { text: '第七步(仿真):採集資料集——光輪智能 LeIsaac 仿真遙操', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/LeIsaac-Sim' },
                       ],
                     },
                     {
@@ -1676,6 +1734,11 @@ const zhHK = {
                         { text: '第七步:pi0.5 訓練命令列', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5' },
                         { text: '第七步:pi0fast 訓練命令列', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast' },
                         { text: '第七步:SmolVLA 訓練命令列', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla' },
+                        { text: '第七步:Diffusion 訓練命令列', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Diffusion' },
+                        { text: '第七步:WALL-OSS 訓練命令列', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Wall-OSS' },
+                        { text: '第七步:訓練命令列', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/07-Training/Train-CLI' },
+                        { text: '第七步:訓練參數建議', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/07-Training/Training-Parameters' },
+                        { text: '第七步:LeRobot 支援的模仿學習演算法', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/07-Training/Imitation-Learning-Algorithms' },
                       ],
                     },
                     {
@@ -1688,6 +1751,10 @@ const zhHK = {
                         { text: '第八步:pi0 推論命令列', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0' },
                         { text: '第八步:pi0.5 推論命令列', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5' },
                         { text: '第八步:SmolVLA 推論命令列', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla' },
+                        { text: '第八步:Diffusion 推論命令列', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Diffusion' },
+                        { text: '第八步:WALL-OSS 推論命令列', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Wall-OSS' },
+                        { text: '第八步:輝達 DGX Spark 推論', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/08-Inference/DGX-Spark' },
+                        { text: '第八步:地瓜機器人 RDK S100 推論', link: '/zh-hant/tutorials/robot-arms/so-arm101/lerobot/08-Inference/RDK-S100' },
                       ],
                     },
                     {
@@ -1699,6 +1766,7 @@ const zhHK = {
                         { text: '模型訓練資源', link: '/zh-hant/tutorials/robot-arms/so-arm101/basics/Training-Resources' },
                         { text: 'SO-ARM 100 機械臂官方 3D 列印檔案', link: '/zh-hant/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files' },
                         { text: 'URDF 檔案及資料參考', link: '/zh-hant/tutorials/robot-arms/so-arm101/basics/URDF-Reference' },
+                        { text: '攝影機支架和安裝座推薦', link: '/zh-hant/tutorials/robot-arms/so-arm101/basics/Camera-Mounts-Recommended' },
                       ],
                     },
                     {
@@ -1709,6 +1777,19 @@ const zhHK = {
                         { text: '平行指夾爪安裝', link: '/zh-hant/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation' },
                       ],
                     },
+                  ],
+                },
+                {
+                  text: 'LeLab 教程',
+                  collapsed: true,
+                  items: [
+                    { text: '1 · 總覽', link: '/zh-hant/tutorials/robot-arms/so-arm101/lelab/01-Overview' },
+                    { text: '2 · 安裝與啟動', link: '/zh-hant/tutorials/robot-arms/so-arm101/lelab/02-Install' },
+                    { text: '3 · 連接與校準', link: '/zh-hant/tutorials/robot-arms/so-arm101/lelab/03-Calibration' },
+                    { text: '4 · 遙操作', link: '/zh-hant/tutorials/robot-arms/so-arm101/lelab/04-Teleoperation' },
+                    { text: '5 · 錄製資料集', link: '/zh-hant/tutorials/robot-arms/so-arm101/lelab/05-Record-Dataset' },
+                    { text: '6 · 訓練與推論', link: '/zh-hant/tutorials/robot-arms/so-arm101/lelab/06-Train-and-Inference' },
+                    { text: '7 · 疑難排解', link: '/zh-hant/tutorials/robot-arms/so-arm101/lelab/07-Troubleshooting' },
                   ],
                 },
                 {
@@ -2262,6 +2343,7 @@ export default defineConfig({
               text: 'SO-ARM101 シリーズ',
               collapsed: false,
               items: [
+                { text: 'SO-ARM101 ロボットアームチュートリアル', link: '/ja/tutorials/robot-arms/so-arm101/' },
                 { text: 'LeRobot ロボットアームチュートリアル', link: '/ja/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial' },
                 { text: 'Lerobot ロボットアーム組立ガイド', link: '/ja/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly' },
                 { text: 'Jetson Orin での PyTorch 非互換問題', link: '/ja/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility' },
@@ -2326,9 +2408,12 @@ export default defineConfig({
                       collapsed: true,
                       items: [
                         { text: 'ステップ6:教示によるデータセット収集', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording' },
+                        { text: 'ステップ6:教示データ収集-Handshake 200', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording-Handshake-200' },
+                        { text: 'ステップ6:データセットの表示と再生', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Browse-and-Replay' },
                         { text: 'ステップ6:データセット収集の注意事項', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes' },
                         { text: 'ステップ6:HuggingFaceアカウントの登録（任意）', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account' },
                         { text: 'ステップ6:データセットをHuggingFaceにアップロード（任意）', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload' },
+                        { text: 'ステップ7(シミュレーション):データセット収集 — Lightwheel LeIsaac シミュレーション・テレオペレーション', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/LeIsaac-Sim' },
                       ],
                     },
                     {
@@ -2345,6 +2430,11 @@ export default defineConfig({
                         { text: 'ステップ7:訓練コマンドライン-pi0.5', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5' },
                         { text: 'ステップ7:訓練コマンドライン-pi0fast', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast' },
                         { text: 'ステップ7:訓練コマンドライン-smolvla', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla' },
+                        { text: 'ステップ7:訓練コマンドライン-Diffusion', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Diffusion' },
+                        { text: 'ステップ7:訓練コマンドライン-WALL-OSS', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Wall-OSS' },
+                        { text: 'ステップ7:訓練コマンドライン', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/Train-CLI' },
+                        { text: 'ステップ7:訓練パラメーターの推奨', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/Training-Parameters' },
+                        { text: 'ステップ7:LeRobot がサポートする模倣学習アルゴリズム', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/Imitation-Learning-Algorithms' },
                       ],
                     },
                     {
@@ -2357,6 +2447,10 @@ export default defineConfig({
                         { text: 'ステップ8:デプロイコマンドライン-pi0', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0' },
                         { text: 'ステップ8:デプロイコマンドライン-pi0.5', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5' },
                         { text: 'ステップ8:デプロイコマンドライン-smolvla', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla' },
+                        { text: 'ステップ8:デプロイコマンドライン-Diffusion', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Diffusion' },
+                        { text: 'ステップ8:デプロイコマンドライン-WALL-OSS', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Wall-OSS' },
+                        { text: 'ステップ8:NVIDIA DGX Spark での推論', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/08-Inference/DGX-Spark' },
+                        { text: 'ステップ8:D-Robotics RDK S100 での推論', link: '/ja/tutorials/robot-arms/so-arm101/lerobot/08-Inference/RDK-S100' },
                       ],
                     },
                     {
@@ -2368,6 +2462,7 @@ export default defineConfig({
                         { text: 'モデルトレーニングの資料', link: '/ja/tutorials/robot-arms/so-arm101/basics/Training-Resources' },
                         { text: 'SO-ARM 100公式3Dプリントファイル', link: '/ja/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files' },
                         { text: 'URDFファイルおよび資料参考', link: '/ja/tutorials/robot-arms/so-arm101/basics/URDF-Reference' },
+                        { text: '推奨カメラブラケットとマウント', link: '/ja/tutorials/robot-arms/so-arm101/basics/Camera-Mounts-Recommended' },
                       ],
                     },
                     {
@@ -2378,6 +2473,19 @@ export default defineConfig({
                         { text: '平行指グリッパー取り付けチュートリアル', link: '/ja/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation' },
                       ],
                     },
+                  ],
+                },
+                {
+                  text: 'LeLab チュートリアル',
+                  collapsed: true,
+                  items: [
+                    { text: '1 · 概要', link: '/ja/tutorials/robot-arms/so-arm101/lelab/01-Overview' },
+                    { text: '2 · インストールと起動', link: '/ja/tutorials/robot-arms/so-arm101/lelab/02-Install' },
+                    { text: '3 · 接続とキャリブレーション', link: '/ja/tutorials/robot-arms/so-arm101/lelab/03-Calibration' },
+                    { text: '4 · テレオペレーション', link: '/ja/tutorials/robot-arms/so-arm101/lelab/04-Teleoperation' },
+                    { text: '5 · データセットの記録', link: '/ja/tutorials/robot-arms/so-arm101/lelab/05-Record-Dataset' },
+                    { text: '6 · 訓練と推論', link: '/ja/tutorials/robot-arms/so-arm101/lelab/06-Train-and-Inference' },
+                    { text: '7 · トラブルシューティング', link: '/ja/tutorials/robot-arms/so-arm101/lelab/07-Troubleshooting' },
                   ],
                 },
                 {
@@ -2836,6 +2944,7 @@ export default defineConfig({
               text: 'SO-ARM101 시리즈',
               collapsed: false,
               items: [
+                { text: 'SO-ARM101 로봇 암 튜토리얼', link: '/ko/tutorials/robot-arms/so-arm101/' },
                 { text: 'LeRobot 로봇팔 튜토리얼', link: '/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial' },
                 { text: 'Lerobot 로봇 암 조립 가이드', link: '/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly' },
                 { text: 'Jetson Orin에서 PyTorch 비호환 문제', link: '/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility' },
@@ -2900,9 +3009,12 @@ export default defineConfig({
                       collapsed: true,
                       items: [
                         { text: '6단계: 시연 데이터셋 수집', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording' },
+                        { text: '6단계: 시연 데이터셋 수집 — Handshake 200', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording-Handshake-200' },
+                        { text: '6단계: 데이터셋 보기 및 재생', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Browse-and-Replay' },
                         { text: '6단계: 데이터셋 수집 주의 사항', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes' },
                         { text: '6단계: Hugging Face 계정 등록(선택 사항)', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account' },
                         { text: '6단계: HuggingFace에 데이터셋 업로드(선택 사항)', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload' },
+                        { text: '7단계(시뮬레이션): 데이터셋 수집 — Lightwheel LeIsaac 시뮬레이션 원격조작', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/LeIsaac-Sim' },
                       ],
                     },
                     {
@@ -2919,6 +3031,11 @@ export default defineConfig({
                         { text: '7단계: pi0.5 학습 커맨드라인', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5' },
                         { text: '7단계: pi0fast 학습 커맨드라인', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast' },
                         { text: '7단계: smolvla 학습 커맨드라인', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla' },
+                        { text: '7단계: Diffusion 학습 커맨드라인', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Diffusion' },
+                        { text: '7단계: WALL-OSS 학습 커맨드라인', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Wall-OSS' },
+                        { text: '7단계: 학습 커맨드라인', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Train-CLI' },
+                        { text: '7단계: 학습 파라미터 권장 사항', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Training-Parameters' },
+                        { text: '7단계: LeRobot가 지원하는 모방 학습 알고리즘', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Imitation-Learning-Algorithms' },
                       ],
                     },
                     {
@@ -2931,6 +3048,10 @@ export default defineConfig({
                         { text: '8단계: pi0 배포 커맨드라인', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0' },
                         { text: '8단계: pi0.5 배포 커맨드라인', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5' },
                         { text: '8단계: smolvla 배포 커맨드라인', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla' },
+                        { text: '8단계: Diffusion 배포 커맨드라인', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Diffusion' },
+                        { text: '8단계: WALL-OSS 배포 커맨드라인', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Wall-OSS' },
+                        { text: '8단계: NVIDIA DGX Spark 추론', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/DGX-Spark' },
+                        { text: '8단계: D-Robotics RDK S100 추론', link: '/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/RDK-S100' },
                       ],
                     },
                     {
@@ -2942,6 +3063,7 @@ export default defineConfig({
                         { text: '모델 학습 자료', link: '/ko/tutorials/robot-arms/so-arm101/basics/Training-Resources' },
                         { text: 'SO-ARM 100 로봇 암 공식 3D 프린팅 파일', link: '/ko/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files' },
                         { text: 'URDF 파일 및 자료 참고', link: '/ko/tutorials/robot-arms/so-arm101/basics/URDF-Reference' },
+                        { text: '권장 카메라 브래킷 및 마운트', link: '/ko/tutorials/robot-arms/so-arm101/basics/Camera-Mounts-Recommended' },
                       ],
                     },
                     {
@@ -2952,6 +3074,19 @@ export default defineConfig({
                         { text: '평행 핑거 그리퍼 설치 튜토리얼', link: '/ko/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation' },
                       ],
                     },
+                  ],
+                },
+                {
+                  text: 'LeLab 튜토리얼',
+                  collapsed: true,
+                  items: [
+                    { text: '1 · 개요', link: '/ko/tutorials/robot-arms/so-arm101/lelab/01-Overview' },
+                    { text: '2 · 설치 및 실행', link: '/ko/tutorials/robot-arms/so-arm101/lelab/02-Install' },
+                    { text: '3 · 연결 및 캘리브레이션', link: '/ko/tutorials/robot-arms/so-arm101/lelab/03-Calibration' },
+                    { text: '4 · 텔레오퍼레이션', link: '/ko/tutorials/robot-arms/so-arm101/lelab/04-Teleoperation' },
+                    { text: '5 · 데이터셋 녹화', link: '/ko/tutorials/robot-arms/so-arm101/lelab/05-Record-Dataset' },
+                    { text: '6 · 학습과 추론', link: '/ko/tutorials/robot-arms/so-arm101/lelab/06-Train-and-Inference' },
+                    { text: '7 · 문제 해결', link: '/ko/tutorials/robot-arms/so-arm101/lelab/07-Troubleshooting' },
                   ],
                 },
                 {
@@ -3410,6 +3545,7 @@ export default defineConfig({
               text: 'SO-ARM101-Serie',
               collapsed: false,
               items: [
+                { text: 'SO-ARM101 Roboterarm-Tutorials', link: '/de/tutorials/robot-arms/so-arm101/' },
                 { text: 'LeRobot-Roboterarm-Tutorial', link: '/de/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial' },
                 { text: 'Lerobot-Roboterarm-Montageanleitung', link: '/de/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly' },
                 { text: 'PyTorch-Inkompatibilität auf Jetson Orin', link: '/de/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility' },
@@ -3474,9 +3610,12 @@ export default defineConfig({
                       collapsed: true,
                       items: [
                         { text: 'Schritt 6: Datensatz durch Demonstration erfassen', link: '/de/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording' },
+                        { text: 'Schritt 6: Datensatz durch Vorführen aufnehmen – Handshake 200', link: '/de/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording-Handshake-200' },
+                        { text: 'Schritt 6: Datensatz ansehen und wiedergeben', link: '/de/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Browse-and-Replay' },
                         { text: 'Schritt 6: Hinweise zum Erfassen von Datensätzen', link: '/de/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes' },
                         { text: 'Schritt 6: Hugging-Face-Konto registrieren (optional)', link: '/de/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account' },
                         { text: 'Schritt 6: Datensatz auf HuggingFace hochladen (optional)', link: '/de/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload' },
+                        { text: 'Schritt 7 (Simulation): Datensatz aufnehmen – Lightwheel-LeIsaac-Teleoperation', link: '/de/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/LeIsaac-Sim' },
                       ],
                     },
                     {
@@ -3493,6 +3632,11 @@ export default defineConfig({
                         { text: 'Schritt 7: Trainingsbefehl für pi0.5', link: '/de/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5' },
                         { text: 'Schritt 7: Trainingsbefehl für pi0fast', link: '/de/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast' },
                         { text: 'Schritt 7: Trainingsbefehl für SmolVLA', link: '/de/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla' },
+                        { text: 'Schritt 7: Trainingsbefehl für Diffusion', link: '/de/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Diffusion' },
+                        { text: 'Schritt 7: Trainingsbefehl für WALL-OSS', link: '/de/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Wall-OSS' },
+                        { text: 'Schritt 7: Trainings-Kommandozeile', link: '/de/tutorials/robot-arms/so-arm101/lerobot/07-Training/Train-CLI' },
+                        { text: 'Schritt 7: Empfehlungen für Trainingsparameter', link: '/de/tutorials/robot-arms/so-arm101/lerobot/07-Training/Training-Parameters' },
+                        { text: 'Schritt 7: Von LeRobot unterstützte Imitationslern-Algorithmen', link: '/de/tutorials/robot-arms/so-arm101/lerobot/07-Training/Imitation-Learning-Algorithms' },
                       ],
                     },
                     {
@@ -3505,6 +3649,10 @@ export default defineConfig({
                         { text: 'Schritt 8: Deploy-Befehl für pi0', link: '/de/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0' },
                         { text: 'Schritt 8: Deploy-Befehl für pi0.5', link: '/de/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5' },
                         { text: 'Schritt 8: Deploy-Befehl für SmolVLA', link: '/de/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla' },
+                        { text: 'Schritt 8: Inferenzbefehl für Diffusion', link: '/de/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Diffusion' },
+                        { text: 'Schritt 8: Inferenzbefehl für WALL-OSS', link: '/de/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Wall-OSS' },
+                        { text: 'Schritt 8: Inferenz auf NVIDIA DGX Spark', link: '/de/tutorials/robot-arms/so-arm101/lerobot/08-Inference/DGX-Spark' },
+                        { text: 'Schritt 8: Inferenz auf D-Robotics RDK S100', link: '/de/tutorials/robot-arms/so-arm101/lerobot/08-Inference/RDK-S100' },
                       ],
                     },
                     {
@@ -3516,6 +3664,7 @@ export default defineConfig({
                         { text: 'Materialien zum Modelltraining', link: '/de/tutorials/robot-arms/so-arm101/basics/Training-Resources' },
                         { text: 'Offizielle 3D-Druckdateien für den SO-ARM 100 Roboterarm', link: '/de/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files' },
                         { text: 'URDF-Dateien und Referenzmaterial', link: '/de/tutorials/robot-arms/so-arm101/basics/URDF-Reference' },
+                        { text: 'Empfohlene Kamera-Halterungen und -Montagevorrichtungen', link: '/de/tutorials/robot-arms/so-arm101/basics/Camera-Mounts-Recommended' },
                       ],
                     },
                     {
@@ -3526,6 +3675,19 @@ export default defineConfig({
                         { text: 'Montageanleitung für den Parallelbacken-Greifer', link: '/de/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation' },
                       ],
                     },
+                  ],
+                },
+                {
+                  text: 'LeLab-Tutorial',
+                  collapsed: true,
+                  items: [
+                    { text: '1 · Überblick', link: '/de/tutorials/robot-arms/so-arm101/lelab/01-Overview' },
+                    { text: '2 · Installation und Start', link: '/de/tutorials/robot-arms/so-arm101/lelab/02-Install' },
+                    { text: '3 · Verbinden und kalibrieren', link: '/de/tutorials/robot-arms/so-arm101/lelab/03-Calibration' },
+                    { text: '4 · Teleoperation', link: '/de/tutorials/robot-arms/so-arm101/lelab/04-Teleoperation' },
+                    { text: '5 · Ein Dataset aufzeichnen', link: '/de/tutorials/robot-arms/so-arm101/lelab/05-Record-Dataset' },
+                    { text: '6 · Trainieren und Inferenz ausführen', link: '/de/tutorials/robot-arms/so-arm101/lelab/06-Train-and-Inference' },
+                    { text: '7 · Fehlerbehebung', link: '/de/tutorials/robot-arms/so-arm101/lelab/07-Troubleshooting' },
                   ],
                 },
                 {
@@ -3984,6 +4146,7 @@ export default defineConfig({
               text: 'Série SO-ARM101',
               collapsed: false,
               items: [
+                { text: 'Tutoriels du bras robotique SO-ARM101', link: '/fr/tutorials/robot-arms/so-arm101/' },
                 { text: 'Tutoriel bras robotique LeRobot', link: '/fr/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial' },
                 { text: 'Guide de montage du bras robotique Lerobot', link: '/fr/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly' },
                 { text: 'Incompatibilité PyTorch sur Jetson Orin', link: '/fr/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility' },
@@ -4048,9 +4211,12 @@ export default defineConfig({
                       collapsed: true,
                       items: [
                         { text: 'Étape 6 : Collecte du jeu de données par démonstration', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording' },
+                        { text: 'Étape 6 : Collecte par démonstration — Handshake 200', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording-Handshake-200' },
+                        { text: 'Étape 6 : Visualiser et rejouer un jeu de données', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Browse-and-Replay' },
                         { text: 'Étape 6 : Points d\'attention pour la collecte', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes' },
                         { text: 'Étape 6 : Créer un compte Hugging Face (facultatif)', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account' },
                         { text: 'Étape 6 : Téléverser le jeu de données (facultatif)', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload' },
+                        { text: 'Étape 7 (simulation) : Collecter un jeu de données — téléopération Lightwheel LeIsaac', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/LeIsaac-Sim' },
                       ],
                     },
                     {
@@ -4067,6 +4233,11 @@ export default defineConfig({
                         { text: 'Étape 7 : Commande d\'entraînement pi0.5', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5' },
                         { text: 'Étape 7 : Commande d\'entraînement pi0fast', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast' },
                         { text: 'Étape 7 : Commande d\'entraînement smolvla', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla' },
+                        { text: 'Étape 7 : Commande d\'entraînement Diffusion', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Diffusion' },
+                        { text: 'Étape 7 : Commande d\'entraînement WALL-OSS', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Wall-OSS' },
+                        { text: 'Étape 7 : Ligne de commande d\'entraînement', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/Train-CLI' },
+                        { text: 'Étape 7 : Recommandations sur les paramètres d\'entraînement', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/Training-Parameters' },
+                        { text: 'Étape 7 : Algorithmes d\'apprentissage par imitation pris en charge par LeRobot', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/Imitation-Learning-Algorithms' },
                       ],
                     },
                     {
@@ -4079,6 +4250,10 @@ export default defineConfig({
                         { text: 'Étape 8 : Commande de déploiement pi0', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0' },
                         { text: 'Étape 8 : Commande de déploiement pi0.5', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5' },
                         { text: 'Étape 8 : Commande de déploiement smolvla', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla' },
+                        { text: 'Étape 8 : Commande de déploiement Diffusion', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Diffusion' },
+                        { text: 'Étape 8 : Commande de déploiement WALL-OSS', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Wall-OSS' },
+                        { text: 'Étape 8 : Inférence sur NVIDIA DGX Spark', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/08-Inference/DGX-Spark' },
+                        { text: 'Étape 8 : Inférence sur D-Robotics RDK S100', link: '/fr/tutorials/robot-arms/so-arm101/lerobot/08-Inference/RDK-S100' },
                       ],
                     },
                     {
@@ -4090,6 +4265,7 @@ export default defineConfig({
                         { text: 'Ressources pour l\'entraînement de modèles', link: '/fr/tutorials/robot-arms/so-arm101/basics/Training-Resources' },
                         { text: 'Fichiers d\'impression 3D officiels du bras SO-ARM 100', link: '/fr/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files' },
                         { text: 'Fichiers URDF et références', link: '/fr/tutorials/robot-arms/so-arm101/basics/URDF-Reference' },
+                        { text: 'Supports et fixations de caméra recommandés', link: '/fr/tutorials/robot-arms/so-arm101/basics/Camera-Mounts-Recommended' },
                       ],
                     },
                     {
@@ -4100,6 +4276,19 @@ export default defineConfig({
                         { text: 'Installation de la pince à doigts parallèles', link: '/fr/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation' },
                       ],
                     },
+                  ],
+                },
+                {
+                  text: 'Tutoriel LeLab',
+                  collapsed: true,
+                  items: [
+                    { text: '1 · Vue d\'ensemble', link: '/fr/tutorials/robot-arms/so-arm101/lelab/01-Overview' },
+                    { text: '2 · Installer et lancer', link: '/fr/tutorials/robot-arms/so-arm101/lelab/02-Install' },
+                    { text: '3 · Connexion et calibration', link: '/fr/tutorials/robot-arms/so-arm101/lelab/03-Calibration' },
+                    { text: '4 · Téléopération', link: '/fr/tutorials/robot-arms/so-arm101/lelab/04-Teleoperation' },
+                    { text: '5 · Enregistrer un jeu de données', link: '/fr/tutorials/robot-arms/so-arm101/lelab/05-Record-Dataset' },
+                    { text: '6 · Entraîner et exécuter l\'inférence', link: '/fr/tutorials/robot-arms/so-arm101/lelab/06-Train-and-Inference' },
+                    { text: '7 · Dépannage', link: '/fr/tutorials/robot-arms/so-arm101/lelab/07-Troubleshooting' },
                   ],
                 },
                 {
@@ -4558,6 +4747,7 @@ export default defineConfig({
               text: 'Serie SO-ARM101',
               collapsed: false,
               items: [
+                { text: 'Tutoriales del brazo robótico SO-ARM101', link: '/es/tutorials/robot-arms/so-arm101/' },
                 { text: 'Tutorial del brazo robótico LeRobot', link: '/es/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial' },
                 { text: 'Guía de montaje del brazo robótico Lerobot', link: '/es/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly' },
                 { text: 'Incompatibilidad de PyTorch en Jetson Orin', link: '/es/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility' },
@@ -4622,9 +4812,12 @@ export default defineConfig({
                       collapsed: true,
                       items: [
                         { text: 'Paso 6: Recopilación de datos por enseñanza', link: '/es/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording' },
+                        { text: 'Paso 6: Recopilación por demostración — Handshake 200', link: '/es/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording-Handshake-200' },
+                        { text: 'Paso 6: Ver y reproducir un conjunto de datos', link: '/es/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Browse-and-Replay' },
                         { text: 'Paso 6: Notas de la recopilación de datos', link: '/es/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes' },
                         { text: 'Paso 6: Cuenta de Hugging Face (opcional)', link: '/es/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account' },
                         { text: 'Paso 6: Subir el conjunto de datos (opcional)', link: '/es/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload' },
+                        { text: 'Paso 7 (simulación): Recopilar un conjunto de datos — teleoperación Lightwheel LeIsaac', link: '/es/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/LeIsaac-Sim' },
                       ],
                     },
                     {
@@ -4641,6 +4834,11 @@ export default defineConfig({
                         { text: 'Paso 7: Comando de entrenamiento pi0.5', link: '/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5' },
                         { text: 'Paso 7: Comando de entrenamiento pi0fast', link: '/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast' },
                         { text: 'Paso 7: Comando de entrenamiento smolvla', link: '/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla' },
+                        { text: 'Paso 7: Comando de entrenamiento Diffusion', link: '/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Diffusion' },
+                        { text: 'Paso 7: Comando de entrenamiento WALL-OSS', link: '/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Wall-OSS' },
+                        { text: 'Paso 7: Línea de comandos de entrenamiento', link: '/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/Train-CLI' },
+                        { text: 'Paso 7: Recomendaciones de parámetros de entrenamiento', link: '/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/Training-Parameters' },
+                        { text: 'Paso 7: Algoritmos de aprendizaje por imitación compatibles con LeRobot', link: '/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/Imitation-Learning-Algorithms' },
                       ],
                     },
                     {
@@ -4653,6 +4851,10 @@ export default defineConfig({
                         { text: 'Paso 8: Comando de despliegue pi0', link: '/es/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0' },
                         { text: 'Paso 8: Comando de despliegue pi0.5', link: '/es/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5' },
                         { text: 'Paso 8: Comando de despliegue smolvla', link: '/es/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla' },
+                        { text: 'Paso 8: Comando de despliegue Diffusion', link: '/es/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Diffusion' },
+                        { text: 'Paso 8: Comando de despliegue WALL-OSS', link: '/es/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Wall-OSS' },
+                        { text: 'Paso 8: Inferencia en NVIDIA DGX Spark', link: '/es/tutorials/robot-arms/so-arm101/lerobot/08-Inference/DGX-Spark' },
+                        { text: 'Paso 8: Inferencia en D-Robotics RDK S100', link: '/es/tutorials/robot-arms/so-arm101/lerobot/08-Inference/RDK-S100' },
                       ],
                     },
                     {
@@ -4664,6 +4866,7 @@ export default defineConfig({
                         { text: 'Materiales para el entrenamiento de modelos', link: '/es/tutorials/robot-arms/so-arm101/basics/Training-Resources' },
                         { text: 'Archivos oficiales de impresión 3D del SO-ARM 100', link: '/es/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files' },
                         { text: 'Archivos URDF y referencias de materiales', link: '/es/tutorials/robot-arms/so-arm101/basics/URDF-Reference' },
+                        { text: 'Soportes y monturas de cámara recomendados', link: '/es/tutorials/robot-arms/so-arm101/basics/Camera-Mounts-Recommended' },
                       ],
                     },
                     {
@@ -4674,6 +4877,19 @@ export default defineConfig({
                         { text: 'Instalación de la pinza de dedos paralelos', link: '/es/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation' },
                       ],
                     },
+                  ],
+                },
+                {
+                  text: 'Tutorial de LeLab',
+                  collapsed: true,
+                  items: [
+                    { text: '1 · Descripción general', link: '/es/tutorials/robot-arms/so-arm101/lelab/01-Overview' },
+                    { text: '2 · Instalar y ejecutar', link: '/es/tutorials/robot-arms/so-arm101/lelab/02-Install' },
+                    { text: '3 · Conectar y calibrar', link: '/es/tutorials/robot-arms/so-arm101/lelab/03-Calibration' },
+                    { text: '4 · Teleoperación', link: '/es/tutorials/robot-arms/so-arm101/lelab/04-Teleoperation' },
+                    { text: '5 · Grabar un dataset', link: '/es/tutorials/robot-arms/so-arm101/lelab/05-Record-Dataset' },
+                    { text: '6 · Entrenar y ejecutar la inferencia', link: '/es/tutorials/robot-arms/so-arm101/lelab/06-Train-and-Inference' },
+                    { text: '7 · Solución de problemas', link: '/es/tutorials/robot-arms/so-arm101/lelab/07-Troubleshooting' },
                   ],
                 },
                 {
@@ -5132,6 +5348,7 @@ export default defineConfig({
               text: 'Serie SO-ARM101',
               collapsed: false,
               items: [
+                { text: 'Tutorial del braccio robotico SO-ARM101', link: '/it/tutorials/robot-arms/so-arm101/' },
                 { text: 'Tutorial braccio robotico LeRobot', link: '/it/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial' },
                 { text: 'Guida di montaggio del braccio robotico Lerobot', link: '/it/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly' },
                 { text: 'Incompatibilità PyTorch su Jetson Orin', link: '/it/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility' },
@@ -5196,9 +5413,12 @@ export default defineConfig({
                       collapsed: true,
                       items: [
                         { text: 'Passo 6: Raccolta del dataset tramite insegnamento', link: '/it/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording' },
+                        { text: 'Passo 6: Raccolta tramite dimostrazione — Handshake 200', link: '/it/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording-Handshake-200' },
+                        { text: 'Passo 6: Visualizzare e riprodurre un dataset', link: '/it/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Browse-and-Replay' },
                         { text: 'Passo 6: Note sulla raccolta del dataset', link: '/it/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes' },
                         { text: 'Passo 6: Registrare un account Hugging Face (opzionale)', link: '/it/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account' },
                         { text: 'Passo 6: Caricare il dataset su HuggingFace (opzionale)', link: '/it/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload' },
+                        { text: 'Passo 7 (simulazione): Raccogliere un dataset — teleoperazione Lightwheel LeIsaac', link: '/it/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/LeIsaac-Sim' },
                       ],
                     },
                     {
@@ -5215,6 +5435,11 @@ export default defineConfig({
                         { text: 'Passo 7: Comando di addestramento pi0.5', link: '/it/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5' },
                         { text: 'Passo 7: Comando di addestramento pi0fast', link: '/it/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast' },
                         { text: 'Passo 7: Comando di addestramento SmolVLA', link: '/it/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla' },
+                        { text: 'Passo 7: Comando di addestramento Diffusion', link: '/it/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Diffusion' },
+                        { text: 'Passo 7: Comando di addestramento WALL-OSS', link: '/it/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Wall-OSS' },
+                        { text: 'Passo 7: Riga di comando di addestramento', link: '/it/tutorials/robot-arms/so-arm101/lerobot/07-Training/Train-CLI' },
+                        { text: 'Passo 7: Consigli sui parametri di addestramento', link: '/it/tutorials/robot-arms/so-arm101/lerobot/07-Training/Training-Parameters' },
+                        { text: 'Passo 7: Algoritmi di imitation learning supportati da LeRobot', link: '/it/tutorials/robot-arms/so-arm101/lerobot/07-Training/Imitation-Learning-Algorithms' },
                       ],
                     },
                     {
@@ -5227,6 +5452,10 @@ export default defineConfig({
                         { text: 'Passo 8: Comando di deployment pi0', link: '/it/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0' },
                         { text: 'Passo 8: Comando di deployment pi0.5', link: '/it/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5' },
                         { text: 'Passo 8: Comando di deployment SmolVLA', link: '/it/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla' },
+                        { text: 'Passo 8: Comando di deployment Diffusion', link: '/it/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Diffusion' },
+                        { text: 'Passo 8: Comando di deployment WALL-OSS', link: '/it/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Wall-OSS' },
+                        { text: 'Passo 8: Inferenza su NVIDIA DGX Spark', link: '/it/tutorials/robot-arms/so-arm101/lerobot/08-Inference/DGX-Spark' },
+                        { text: 'Passo 8: Inferenza su D-Robotics RDK S100', link: '/it/tutorials/robot-arms/so-arm101/lerobot/08-Inference/RDK-S100' },
                       ],
                     },
                     {
@@ -5238,6 +5467,7 @@ export default defineConfig({
                         { text: 'Materiali per l\'addestramento del modello', link: '/it/tutorials/robot-arms/so-arm101/basics/Training-Resources' },
                         { text: 'File di stampa 3D ufficiali del braccio SO-ARM 100', link: '/it/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files' },
                         { text: 'File URDF e materiali di riferimento', link: '/it/tutorials/robot-arms/so-arm101/basics/URDF-Reference' },
+                        { text: 'Staffe e supporti per telecamere consigliati', link: '/it/tutorials/robot-arms/so-arm101/basics/Camera-Mounts-Recommended' },
                       ],
                     },
                     {
@@ -5248,6 +5478,19 @@ export default defineConfig({
                         { text: 'Installazione della pinza a dita parallele', link: '/it/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation' },
                       ],
                     },
+                  ],
+                },
+                {
+                  text: 'Tutorial LeLab',
+                  collapsed: true,
+                  items: [
+                    { text: '1 · Panoramica', link: '/it/tutorials/robot-arms/so-arm101/lelab/01-Overview' },
+                    { text: '2 · Installazione e avvio', link: '/it/tutorials/robot-arms/so-arm101/lelab/02-Install' },
+                    { text: '3 · Collegamento e calibrazione', link: '/it/tutorials/robot-arms/so-arm101/lelab/03-Calibration' },
+                    { text: '4 · Teleoperazione', link: '/it/tutorials/robot-arms/so-arm101/lelab/04-Teleoperation' },
+                    { text: '5 · Registrare un dataset', link: '/it/tutorials/robot-arms/so-arm101/lelab/05-Record-Dataset' },
+                    { text: '6 · Addestrare ed eseguire l\'inferenza', link: '/it/tutorials/robot-arms/so-arm101/lelab/06-Train-and-Inference' },
+                    { text: '7 · Risoluzione dei problemi', link: '/it/tutorials/robot-arms/so-arm101/lelab/07-Troubleshooting' },
                   ],
                 },
                 {
@@ -6150,6 +6393,7 @@ export default defineConfig({
                 text: 'Série SO-ARM101',
                 collapsed: false,
                 items: [
+                  { text: 'Tutoriais do Braço Robótico SO-ARM101', link: '/pt-br/tutorials/robot-arms/so-arm101/' },
                   { text: 'Tutorial do Braço Robótico LeRobot', link: '/pt-br/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial' },
                   { text: 'Guia de Montagem do Braço Robótico Lerobot', link: '/pt-br/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly' },
                   { text: 'Compatibilidade PyTorch no Jetson Orin', link: '/pt-br/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility' },
@@ -6214,9 +6458,12 @@ export default defineConfig({
                         collapsed: true,
                         items: [
                           { text: 'Etapa 6: Coleta de dados por demonstração', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording' },
+                          { text: 'Etapa 6: Coleta por demonstração — Handshake 200', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording-Handshake-200' },
+                          { text: 'Etapa 6: Visualizar e reproduzir um dataset', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Browse-and-Replay' },
                           { text: 'Etapa 6: Observações sobre a coleta de dados', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes' },
                           { text: 'Etapa 6: Registrar conta no Hugging Face (opcional)', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account' },
                           { text: 'Etapa 6: Enviar o dataset ao Hugging Face (opcional)', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload' },
+                          { text: 'Etapa 7 (simulação): Coletar um dataset — teleoperação Lightwheel LeIsaac', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/LeIsaac-Sim' },
                         ],
                       },
                       {
@@ -6233,6 +6480,11 @@ export default defineConfig({
                           { text: 'Etapa 7: Comando de treinamento — pi0.5', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5' },
                           { text: 'Etapa 7: Comando de treinamento — pi0fast', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast' },
                           { text: 'Etapa 7: Comando de treinamento — SmolVLA', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla' },
+                          { text: 'Etapa 7: Comando de treinamento — Diffusion', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Diffusion' },
+                          { text: 'Etapa 7: Comando de treinamento — WALL-OSS', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Wall-OSS' },
+                          { text: 'Etapa 7: Linha de comando de treinamento', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/07-Training/Train-CLI' },
+                          { text: 'Etapa 7: Recomendações de parâmetros de treinamento', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/07-Training/Training-Parameters' },
+                          { text: 'Etapa 7: Algoritmos de aprendizado por imitação compatíveis com o LeRobot', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/07-Training/Imitation-Learning-Algorithms' },
                         ],
                       },
                       {
@@ -6245,6 +6497,10 @@ export default defineConfig({
                           { text: 'Etapa 8: Comando de inferência — pi0', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0' },
                           { text: 'Etapa 8: Comando de inferência — pi0.5', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5' },
                           { text: 'Etapa 8: Comando de inferência — SmolVLA', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla' },
+                          { text: 'Etapa 8: Comando de inferência — Diffusion', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Diffusion' },
+                          { text: 'Etapa 8: Comando de inferência — WALL-OSS', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Wall-OSS' },
+                          { text: 'Etapa 8: Inferência no NVIDIA DGX Spark', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/08-Inference/DGX-Spark' },
+                          { text: 'Etapa 8: Inferência no D-Robotics RDK S100', link: '/pt-br/tutorials/robot-arms/so-arm101/lerobot/08-Inference/RDK-S100' },
                         ],
                       },
                       {
@@ -6256,6 +6512,7 @@ export default defineConfig({
                           { text: 'Materiais para treinamento de modelos', link: '/pt-br/tutorials/robot-arms/so-arm101/basics/Training-Resources' },
                           { text: 'Arquivos oficiais de impressão 3D do SO-ARM 100', link: '/pt-br/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files' },
                           { text: 'Arquivos URDF e materiais de referência', link: '/pt-br/tutorials/robot-arms/so-arm101/basics/URDF-Reference' },
+                          { text: 'Brackets e suportes de câmera recomendados', link: '/pt-br/tutorials/robot-arms/so-arm101/basics/Camera-Mounts-Recommended' },
                         ],
                       },
                       {
@@ -6266,6 +6523,19 @@ export default defineConfig({
                           { text: 'Tutorial de instalação da garra de dedos paralelos', link: '/pt-br/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation' },
                         ],
                       },
+                    ],
+                  },
+                  {
+                    text: 'Tutorial do LeLab',
+                    collapsed: true,
+                    items: [
+                      { text: '1 · Visão geral', link: '/pt-br/tutorials/robot-arms/so-arm101/lelab/01-Overview' },
+                      { text: '2 · Instalar e executar', link: '/pt-br/tutorials/robot-arms/so-arm101/lelab/02-Install' },
+                      { text: '3 · Conectar e calibrar', link: '/pt-br/tutorials/robot-arms/so-arm101/lelab/03-Calibration' },
+                      { text: '4 · Teleoperação', link: '/pt-br/tutorials/robot-arms/so-arm101/lelab/04-Teleoperation' },
+                      { text: '5 · Gravar um dataset', link: '/pt-br/tutorials/robot-arms/so-arm101/lelab/05-Record-Dataset' },
+                      { text: '6 · Treinar e executar inferência', link: '/pt-br/tutorials/robot-arms/so-arm101/lelab/06-Train-and-Inference' },
+                      { text: '7 · Solução de problemas', link: '/pt-br/tutorials/robot-arms/so-arm101/lelab/07-Troubleshooting' },
                     ],
                   },
                   {
@@ -6815,6 +7085,7 @@ export default defineConfig({
                 text: 'Série SO-ARM101',
                 collapsed: false,
                 items: [
+                  { text: 'Tutoriais do Braço Robótico SO-ARM101', link: '/pt-pt/tutorials/robot-arms/so-arm101/' },
                   { text: 'Tutorial do Braço Robótico LeRobot', link: '/pt-pt/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial' },
                   { text: 'Guia de Montagem do Braço Robótico Lerobot', link: '/pt-pt/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly' },
                   { text: 'Compatibilidade PyTorch no Jetson Orin', link: '/pt-pt/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility' },
@@ -6879,9 +7150,12 @@ export default defineConfig({
                         collapsed: true,
                         items: [
                           { text: 'Etapa 6: Recolha de conjuntos de dados por ensino', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording' },
+                          { text: 'Etapa 6: Recolha por demonstração — Handshake 200', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording-Handshake-200' },
+                          { text: 'Etapa 6: Ver e reproduzir um conjunto de dados', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Browse-and-Replay' },
                           { text: 'Etapa 6: Notas sobre a recolha de conjuntos de dados', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes' },
                           { text: 'Etapa 6: Registar uma conta Hugging Face (opcional)', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account' },
                           { text: 'Etapa 6: Carregar dados para o HuggingFace (opcional)', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload' },
+                          { text: 'Etapa 7 (simulação): Recolher um conjunto de dados — teleoperação Lightwheel LeIsaac', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/LeIsaac-Sim' },
                         ],
                       },
                       {
@@ -6898,6 +7172,11 @@ export default defineConfig({
                           { text: 'Etapa 7: Comando de treino pi0.5', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5' },
                           { text: 'Etapa 7: Comando de treino pi0fast', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast' },
                           { text: 'Etapa 7: Comando de treino smolvla', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla' },
+                          { text: 'Etapa 7: Comando de treino Diffusion', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Diffusion' },
+                          { text: 'Etapa 7: Comando de treino WALL-OSS', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Wall-OSS' },
+                          { text: 'Etapa 7: Linha de comandos de treino', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/07-Training/Train-CLI' },
+                          { text: 'Etapa 7: Recomendações de parâmetros de treino', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/07-Training/Training-Parameters' },
+                          { text: 'Etapa 7: Algoritmos de aprendizagem por imitação suportados pelo LeRobot', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/07-Training/Imitation-Learning-Algorithms' },
                         ],
                       },
                       {
@@ -6910,6 +7189,10 @@ export default defineConfig({
                           { text: 'Etapa 8: Comando de implantação pi0', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0' },
                           { text: 'Etapa 8: Comando de implantação pi0.5', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5' },
                           { text: 'Etapa 8: Comando de implantação smolvla', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla' },
+                          { text: 'Etapa 8: Comando de implantação Diffusion', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Diffusion' },
+                          { text: 'Etapa 8: Comando de implantação WALL-OSS', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Wall-OSS' },
+                          { text: 'Etapa 8: Inferência NVIDIA DGX Spark', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/08-Inference/DGX-Spark' },
+                          { text: 'Etapa 8: Inferência D-Robotics RDK S100', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot/08-Inference/RDK-S100' },
                         ],
                       },
                       {
@@ -6921,6 +7204,7 @@ export default defineConfig({
                           { text: 'Materiais para o treino de modelos', link: '/pt-pt/tutorials/robot-arms/so-arm101/basics/Training-Resources' },
                           { text: 'Ficheiros oficiais de impressão 3D do SO-ARM 100', link: '/pt-pt/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files' },
                           { text: 'Ficheiros URDF e materiais de referência', link: '/pt-pt/tutorials/robot-arms/so-arm101/basics/URDF-Reference' },
+                          { text: 'Suportes e fixações de câmara recomendados', link: '/pt-pt/tutorials/robot-arms/so-arm101/basics/Camera-Mounts-Recommended' },
                         ],
                       },
                       {
@@ -6931,6 +7215,19 @@ export default defineConfig({
                           { text: 'Instalação da garra de dedos paralelos', link: '/pt-pt/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation' },
                         ],
                       },
+                    ],
+                  },
+                  {
+                    text: 'Tutorial do LeLab',
+                    collapsed: true,
+                    items: [
+                      { text: '1 · Visão geral', link: '/pt-pt/tutorials/robot-arms/so-arm101/lelab/01-Overview' },
+                      { text: '2 · Instalar e executar', link: '/pt-pt/tutorials/robot-arms/so-arm101/lelab/02-Install' },
+                      { text: '3 · Ligar e calibrar', link: '/pt-pt/tutorials/robot-arms/so-arm101/lelab/03-Calibration' },
+                      { text: '4 · Teleoperação', link: '/pt-pt/tutorials/robot-arms/so-arm101/lelab/04-Teleoperation' },
+                      { text: '5 · Gravar um conjunto de dados', link: '/pt-pt/tutorials/robot-arms/so-arm101/lelab/05-Record-Dataset' },
+                      { text: '6 · Treinar e executar inferência', link: '/pt-pt/tutorials/robot-arms/so-arm101/lelab/06-Train-and-Inference' },
+                      { text: '7 · Resolução de problemas', link: '/pt-pt/tutorials/robot-arms/so-arm101/lelab/07-Troubleshooting' },
                     ],
                   },
                   {

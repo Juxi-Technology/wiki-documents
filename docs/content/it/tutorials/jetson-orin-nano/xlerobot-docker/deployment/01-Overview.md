@@ -32,39 +32,33 @@ conflitti di versione.
 
 | Piattaforma | Supporto |
 |---|---|
-| **Serie Jetson Orin** (JetPack 7.2) | ✅ **piattaforma ufficialmente supportata al momento**, con accelerazione GPU |
-| Jetson Nano (2019, versione originale) | ❌ non supportato —— potenza di calcolo troppo bassa, vedere sotto |
-| Raspberry Pi / Ubuntu normale / PC x86 | ⏳ **non ancora supportati**, vedere sotto |
-| Windows / macOS | ❌ non supportati (il passthrough di porte seriali e telecamere funziona bene solo su Linux) |
+| **Serie Jetson Orin** (JetPack 7.2) | ✅ **l'unica piattaforma supportata**, con accelerazione GPU |
+| Tutto il resto | ❌ non supportato |
 
-> 💡 **Al momento questa immagine è destinata solo a dispositivi Jetson Orin.**
+> ⚠️ **Questa immagine è pensata esclusivamente per Jetson + JetPack 7.2.** Raspberry Pi, i normali PC x86,
+> Windows, macOS e le schede Jetson che non appartengono alla serie Orin non possono usarla.
 >
 > - **Jetson Orin Nano / Orin NX / AGX Orin**: richiede **JetPack 7.2**
 >   (L4T 39.2 / CUDA 13.2). Anche l'AGX Orin 64GB è pienamente supportato solo con la 7.2.
 > - **Jetson Nano (2019, versione originale)**: ❌ non funzionerà mai. È di architettura Maxwell (compute 5.3),
 >   e CUDA 13 ha rimosso del tutto il supporto a Maxwell; torch richiede come minimo sm_80.
-> - **Raspberry Pi / PC x86**: l'immagine è progettata per supportarli (la versione CPU generica si basa su `python:3.12-slim`,
->   immagine di base che è pubblicata ufficialmente in versione amd64 e in versione arm64),
->   ma **la versione CPU attualmente distribuita non è ancora multi-architettura**:
->   scaricandola si potrebbe ottenere solo amd64 o solo arm64. Si aprirà quando sarà stata fatta la build multi-architettura.
 >
 > Si consigliano almeno 4 GB di RAM. Anche i 3,4 GB del Jetson Orin Nano bastano per la teleoperazione,
 > ma l'addestramento diventa faticoso.
 
 ### Requisiti di sistema
 
-- Ubuntu 20.04 / 22.04 / 24.04, oppure Debian 12+
-- Raspberry Pi: serve un sistema a 64 bit (`uname -m` deve mostrare `aarch64`)
-- Kernel con supporto alle porte seriali USB (in genere è già presente)
+- **JetPack 7.2** (L4T r39 / Ubuntu 24.04)
+- Architettura: `arm64`
+- Kernel con supporto alle porte seriali USB (presente praticamente su tutti i sistemi)
 
-### Verificare l'architettura
+### Verificare la versione di JetPack
 
 ```bash
-uname -m
+cat /etc/nv_tegra_release
 ```
 
-- `aarch64` → Raspberry Pi, Jetson (usare l'immagine arm64)
-- `x86_64` → PC normali (usare l'immagine amd64)
+Se compare **R39**, va tutto bene. In tutti gli altri casi —— aggiorni prima JetPack; l'immagine è pensata per quello.
 
 ---
 

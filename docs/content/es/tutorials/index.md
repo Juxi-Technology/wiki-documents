@@ -138,6 +138,7 @@ head:
 - [Serie de brazos robóticos](/es/tutorials/robot-arms/)
 - [Guía de selección](/es/tutorials/robot-arms/select-guide)
   - **Serie SO-ARM101**
+    - [Tutoriales del brazo robótico SO-ARM101](/es/tutorials/robot-arms/so-arm101/)
     - [Tutorial del brazo robótico LeRobot](/es/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial)
     - [Guía de montaje del brazo robótico Lerobot](/es/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly)
     - [Incompatibilidad de PyTorch en Jetson Orin](/es/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility)
@@ -171,9 +172,12 @@ head:
             - [Paso 5: Teleoperación con cámara (macOS)](/es/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/MacOS)
           - **6. Conjunto de datos**
             - [Paso 6: Recopilación de datos por enseñanza](/es/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording)
+            - [Paso 6: Recopilación por demostración — Handshake 200](/es/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording-Handshake-200)
+            - [Paso 6: Ver y reproducir un conjunto de datos](/es/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Browse-and-Replay)
             - [Paso 6: Notas de la recopilación de datos](/es/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes)
             - [Paso 6: Cuenta de Hugging Face (opcional)](/es/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account)
             - [Paso 6: Subir el conjunto de datos (opcional)](/es/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload)
+            - [Paso 7 (simulación): Recopilar un conjunto de datos — teleoperación Lightwheel LeIsaac](/es/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/LeIsaac-Sim)
           - **7. Entrenamiento**
             - [Paso 7: Entrenamiento local en Ubuntu](/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/Local-Ubuntu)
             - [Paso 7: Entorno de entrenamiento con GPU en la nube](/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/Cloud-GPU)
@@ -185,6 +189,11 @@ head:
             - [Paso 7: Comando de entrenamiento pi0.5](/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5)
             - [Paso 7: Comando de entrenamiento pi0fast](/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast)
             - [Paso 7: Comando de entrenamiento smolvla](/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla)
+            - [Paso 7: Comando de entrenamiento Diffusion](/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Diffusion)
+            - [Paso 7: Comando de entrenamiento WALL-OSS](/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Wall-OSS)
+            - [Paso 7: Línea de comandos de entrenamiento](/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/Train-CLI)
+            - [Paso 7: Recomendaciones de parámetros de entrenamiento](/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/Training-Parameters)
+            - [Paso 7: Algoritmos de aprendizaje por imitación compatibles con LeRobot](/es/tutorials/robot-arms/so-arm101/lerobot/07-Training/Imitation-Learning-Algorithms)
           - **8. Inferencia**
             - [Paso 8: Descripción de la línea de comandos](/es/tutorials/robot-arms/so-arm101/lerobot/08-Inference/CLI-Reference)
             - [Paso 8: Bugs comunes y soluciones](/es/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Common-Bugs)
@@ -192,15 +201,28 @@ head:
             - [Paso 8: Comando de despliegue pi0](/es/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0)
             - [Paso 8: Comando de despliegue pi0.5](/es/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5)
             - [Paso 8: Comando de despliegue smolvla](/es/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla)
+            - [Paso 8: Comando de despliegue Diffusion](/es/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Diffusion)
+            - [Paso 8: Comando de despliegue WALL-OSS](/es/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Wall-OSS)
+            - [Paso 8: Inferencia en NVIDIA DGX Spark](/es/tutorials/robot-arms/so-arm101/lerobot/08-Inference/DGX-Spark)
+            - [Paso 8: Inferencia en D-Robotics RDK S100](/es/tutorials/robot-arms/so-arm101/lerobot/08-Inference/RDK-S100)
           - **Conceptos básicos**
             - [Conocer LeRobot y la inteligencia encarnada](/es/tutorials/robot-arms/so-arm101/basics/Understanding-LeRobot)
             - [Conjuntos de datos de LeRobot en HuggingFace](/es/tutorials/robot-arms/so-arm101/basics/HF-Datasets)
             - [Materiales para el entrenamiento de modelos](/es/tutorials/robot-arms/so-arm101/basics/Training-Resources)
             - [Archivos oficiales de impresión 3D del SO-ARM 100](/es/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files)
             - [Archivos URDF y referencias de materiales](/es/tutorials/robot-arms/so-arm101/basics/URDF-Reference)
+            - [Soportes y monturas de cámara recomendados](/es/tutorials/robot-arms/so-arm101/basics/Camera-Mounts-Recommended)
           - **Extras y avanzado**
             - [Control de simulación en ROS2](/es/tutorials/robot-arms/so-arm101/ROS2-Simulation-Control)
             - [Instalación de la pinza de dedos paralelos](/es/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation)
+      - **Tutorial de LeLab**
+        - [1 · Descripción general](/es/tutorials/robot-arms/so-arm101/lelab/01-Overview)
+        - [2 · Instalar y ejecutar](/es/tutorials/robot-arms/so-arm101/lelab/02-Install)
+        - [3 · Conectar y calibrar](/es/tutorials/robot-arms/so-arm101/lelab/03-Calibration)
+        - [4 · Teleoperación](/es/tutorials/robot-arms/so-arm101/lelab/04-Teleoperation)
+        - [5 · Grabar un dataset](/es/tutorials/robot-arms/so-arm101/lelab/05-Record-Dataset)
+        - [6 · Entrenar y ejecutar la inferencia](/es/tutorials/robot-arms/so-arm101/lelab/06-Train-and-Inference)
+        - [7 · Solución de problemas](/es/tutorials/robot-arms/so-arm101/lelab/07-Troubleshooting)
   - **Curso SO-ARM101 + AmazingHand**
     - [Resumen del curso](/es/tutorials/robot-arms/so-arm-amazinghand/)
       - **Linux**

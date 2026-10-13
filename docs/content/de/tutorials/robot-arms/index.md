@@ -17,6 +17,7 @@ Willkommen zur Tutorial-Serie Roboterarme! Hier finden Sie vollständige Anleitu
 
 6-Achsen-Desktop-Roboterarm, unterstützt KI-Frameworks wie LeRobot.
 
+- [SO-ARM101 Roboterarm-Tutorials](./so-arm101/index.md)
 - [SO-ARM101-Tutorial](./so-arm101/SO-ARM101-Tutorial.md)
 - [SO-ARM101-Montage](./so-arm101/SO-ARM101-Assembly.md)
 - [SO-ARM101 Jetson-Orin-PyTorch-Kompatibilität](./so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility.md)
@@ -55,9 +56,12 @@ Willkommen zur Tutorial-Serie Roboterarme! Hier finden Sie vollständige Anleitu
 
 #### 6. Datenerfassung
 - [Schritt 6: Datensatz durch Demonstration erfassen](./so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording.md)
+- [Schritt 6: Datensatz durch Vorführen aufnehmen – Handshake 200](./so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording-Handshake-200.md)
+- [Schritt 6: Datensatz ansehen und wiedergeben](./so-arm101/lerobot/06-Data-Collection/Browse-and-Replay.md)
 - [Schritt 6: Hinweise zum Erfassen von Datensätzen](./so-arm101/lerobot/06-Data-Collection/Collection-Notes.md)
 - [Schritt 6: Hugging-Face-Konto registrieren (optional)](./so-arm101/lerobot/06-Data-Collection/HF-Account.md)
 - [Schritt 6: Datensatz auf HuggingFace hochladen (optional)](./so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload.md)
+- [Schritt 7 (Simulation): Datensatz aufnehmen – Lightwheel-LeIsaac-Teleoperation](./so-arm101/lerobot/06-Data-Collection/LeIsaac-Sim.md)
 
 #### 7. Modelltraining
 - [Schritt 7: Lokales Training unter Ubuntu](./so-arm101/lerobot/07-Training/Local-Ubuntu.md)
@@ -70,6 +74,11 @@ Willkommen zur Tutorial-Serie Roboterarme! Hier finden Sie vollständige Anleitu
 - [Schritt 7: Trainingsbefehl für pi0.5](./so-arm101/lerobot/07-Training/Command-pi0.5.md)
 - [Schritt 7: Trainingsbefehl für pi0fast](./so-arm101/lerobot/07-Training/Command-pi0fast.md)
 - [Schritt 7: Trainingsbefehl für SmolVLA](./so-arm101/lerobot/07-Training/Command-smolvla.md)
+- [Schritt 7: Trainingsbefehl für Diffusion](./so-arm101/lerobot/07-Training/Command-Diffusion.md)
+- [Schritt 7: Trainingsbefehl für WALL-OSS](./so-arm101/lerobot/07-Training/Command-Wall-OSS.md)
+- [Schritt 7: Trainings-Kommandozeile](./so-arm101/lerobot/07-Training/Train-CLI.md)
+- [Schritt 7: Empfehlungen für Trainingsparameter](./so-arm101/lerobot/07-Training/Training-Parameters.md)
+- [Schritt 7: Von LeRobot unterstützte Imitationslern-Algorithmen](./so-arm101/lerobot/07-Training/Imitation-Learning-Algorithms.md)
 
 #### 8. Modell-Inferenz
 - [Schritt 8: Erläuterung der Befehle](./so-arm101/lerobot/08-Inference/CLI-Reference.md)
@@ -78,6 +87,10 @@ Willkommen zur Tutorial-Serie Roboterarme! Hier finden Sie vollständige Anleitu
 - [Schritt 8: Deploy-Befehl für pi0](./so-arm101/lerobot/08-Inference/Command-pi0.md)
 - [Schritt 8: Deploy-Befehl für pi0.5](./so-arm101/lerobot/08-Inference/Command-pi0.5.md)
 - [Schritt 8: Deploy-Befehl für SmolVLA](./so-arm101/lerobot/08-Inference/Command-smolvla.md)
+- [Schritt 8: Inferenzbefehl für Diffusion](./so-arm101/lerobot/08-Inference/Command-Diffusion.md)
+- [Schritt 8: Inferenzbefehl für WALL-OSS](./so-arm101/lerobot/08-Inference/Command-Wall-OSS.md)
+- [Schritt 8: Inferenz auf NVIDIA DGX Spark](./so-arm101/lerobot/08-Inference/DGX-Spark.md)
+- [Schritt 8: Inferenz auf D-Robotics RDK S100](./so-arm101/lerobot/08-Inference/RDK-S100.md)
 
 #### Grundlagen
 - [LeRobot kennenlernen](./so-arm101/basics/Understanding-LeRobot.md)
@@ -85,10 +98,20 @@ Willkommen zur Tutorial-Serie Roboterarme! Hier finden Sie vollständige Anleitu
 - [Materialien zum Modelltraining](./so-arm101/basics/Training-Resources.md)
 - [Offizielle 3D-Druckdateien für den SO-ARM 100 Roboterarm](./so-arm101/basics/Official-3D-Print-Files.md)
 - [URDF-Dateien und Referenzmaterial](./so-arm101/basics/URDF-Reference.md)
+- [Empfohlene Kamera-Halterungen und -Montagevorrichtungen](./so-arm101/basics/Camera-Mounts-Recommended.md)
 
 #### Weitere Themen
 - [ROS2-Simulationssteuerung](./so-arm101/ROS2-Simulation-Control.md)
 - [Montageanleitung für den Parallelbacken-Greifer](./so-arm101/Parallel-Finger-Gripper-Installation.md)
+
+#### LeLab-Tutorial
+- [1 · Überblick](./so-arm101/lelab/01-Overview.md)
+- [2 · Installation und Start](./so-arm101/lelab/02-Install.md)
+- [3 · Verbinden und kalibrieren](./so-arm101/lelab/03-Calibration.md)
+- [4 · Teleoperation](./so-arm101/lelab/04-Teleoperation.md)
+- [5 · Ein Dataset aufzeichnen](./so-arm101/lelab/05-Record-Dataset.md)
+- [6 · Trainieren und Inferenz ausführen](./so-arm101/lelab/06-Train-and-Inference.md)
+- [7 · Fehlerbehebung](./so-arm101/lelab/07-Troubleshooting.md)
 
 
 ### SO-ARM101 Roboterarm 7-Achsen Tutorial
@@ -213,6 +236,8 @@ XLeRobot-Tutorials: Umgebung einrichten, Dateien verteilen, Montage (fertig/Einz
 - [XLeRobot-Dateien verschieben](./xlerobot/02-Move-Xlerobot-Files.md)
 - [Montage (fertiger Bausatz)](./xlerobot/03-Assembly-Assembled-Kit.md)
 - [Montage (Einzelteile)](./xlerobot/04-Assembly-Parts-Kit.md)
+- [XLeRobot Docker Tutorial — Jetson AGX Orin Developer Kit](/de/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview)
+- [XLeRobot Docker Tutorial — Jetson Orin Nano Super Developer Kit](/de/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview)
 
 ---
 

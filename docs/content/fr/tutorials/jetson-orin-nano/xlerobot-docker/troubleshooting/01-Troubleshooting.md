@@ -45,9 +45,12 @@ le point clé : `docker exec` **doit inclure `-u root`**.
 
 ### Dans le conteneur, `torch.cuda.is_available()` renvoie False
 
-- Avec l'image `cpu` / `cpu-slim` → c'est normal, ces versions n'ont pas de GPU
-- Avec l'image `jetson` → vérifiez que vous n'avez pas utilisé `--runtime nvidia`
-  (**il faut `--device nvidia.com/gpu=all`**), et que la spécification CDI a bien été générée
+Le GPU est obligatoire, il s'agit donc toujours d'un problème de configuration — vérifiez les deux points :
+
+- Vous avez démarré le conteneur avec `--device nvidia.com/gpu=all` — **et non `--runtime nvidia`**,
+  qui n'injecte pas les nœuds de périphériques
+- La spécification CDI existe sur la machine hôte (`/etc/cdi/nvidia.yaml`) — voir
+  [03-Deployment §4](../deployment/03-Deployment.md)
 
 ### Le conteneur ne démarre pas, erreur CDI
 
@@ -63,8 +66,7 @@ sudo rm -f /var/run/cdi/nvidia.yaml
 sudo systemctl restart docker
 ```
 
-(Ce problème se reproduit à chaque redémarrage sur notre propre carte ; pour plus de détails, voir
-developer/03-Board-Remote-Testing.md.)
+(Ce problème se reproduit à chaque redémarrage.)
 
 ### La calibration doit être refaite à chaque fois
 
@@ -154,12 +156,9 @@ seuls ces 14 types d'origine sont acceptés. `xlerobot` n'en fait pas partie ; u
 
 ```bash
 # Télécharger l'image
-docker pull chenyang310/xlerobot:cpu-slim
+docker pull chenyang310/xlerobot:jetson
 
-# Démarrage (générique)
-bash scripts/run.sh cpu
-
-# Démarrage (Jetson, avec GPU)
+# Démarrage
 bash scripts/run.sh jetson
 
 # Après être entré dans le conteneur — première configuration
@@ -257,8 +256,6 @@ Explications complètes en [xlerobot/](../xlerobot/01-Operation.md), section 4.
 | HF_ENDPOINT obligatoire | `huggingface.co` est totalement inaccessible depuis la Chine continentale ; `hf-mirror.com` fonctionne |
 | CDI plutôt que `--runtime nvidia` sur Jetson | Dans l'environnement cgroup v2 de JetPack 6/7, `--runtime nvidia` n'injecte pas les nœuds de périphériques |
 | Pas d'installation de la bibliothèque de cinématique placo | Elle n'a pas de wheel cp312/aarch64 ; XLeRobot utilise sa propre IK analytique et n'en dépend pas |
-
-Pour plus de détails techniques, voir developer/01-Jetson-Environment.md.
 
 ---
 

@@ -45,9 +45,13 @@ o ponto principal é que o `docker exec` **precisa do `-u root`**.
 
 ### `torch.cuda.is_available()` retorna False no contêiner
 
-- Usando as imagens `cpu` / `cpu-slim` → normal; essas versões não têm GPU mesmo
-- Usando a imagem `jetson` → verifique se você usou `--runtime nvidia`
-  (**é obrigatório usar `--device nvidia.com/gpu=all`**) e se a especificação CDI foi gerada
+A GPU é obrigatória, então isso é sempre um problema de configuração — verifique
+as duas coisas:
+
+- Se você iniciou o contêiner com `--device nvidia.com/gpu=all` — **não com
+  `--runtime nvidia`**, que não injeta os nós de dispositivo
+- Se a especificação CDI existe na máquina host (`/etc/cdi/nvidia.yaml`) — veja
+  [03-Deployment §4](../deployment/03-Deployment.md)
 
 ### O contêiner não sobe e exibe um erro de CDI
 
@@ -64,8 +68,7 @@ sudo rm -f /var/run/cdi/nvidia.yaml
 sudo systemctl restart docker
 ```
 
-(Este problema se repete a cada reinicialização nas nossas próprias placas; veja
-detalhes em developer/03-Board-Remote-Testing.md.)
+(Este problema se repete a cada reinicialização.)
 
 ### A calibração precisa ser refeita toda vez
 
@@ -167,12 +170,9 @@ funcionam. `xlerobot` não está nela; para isso, use os scripts de `examples/`.
 
 ```bash
 # Baixar a imagem
-docker pull chenyang310/xlerobot:cpu-slim
+docker pull chenyang310/xlerobot:jetson
 
-# Iniciar (genérica)
-bash scripts/run.sh cpu
-
-# Iniciar (Jetson, com GPU)
+# Iniciar
 bash scripts/run.sh jetson
 
 # Depois de entrar no contêiner — configuração inicial
@@ -270,8 +270,6 @@ A explicação completa está em [xlerobot/](../xlerobot/01-Operation.md) seçã
 | É obrigatório configurar o HF_ENDPOINT | O `huggingface.co` é totalmente inacessível a partir da China continental; o `hf-mirror.com` funciona |
 | Usar CDI em vez de `--runtime nvidia` no Jetson | Em ambientes cgroup v2 do JetPack 6/7, o `--runtime nvidia` não injeta os nós de dispositivo |
 | Não instalar a biblioteca de cinemática placo | Ela não tem wheels para cp312/aarch64; o XLeRobot usa a própria IK analítica e não depende dela |
-
-Mais detalhes técnicos em developer/01-Jetson-Environment.md.
 
 ---
 

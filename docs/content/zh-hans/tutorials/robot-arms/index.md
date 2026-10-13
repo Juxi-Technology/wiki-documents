@@ -17,6 +17,7 @@ description: "钜犀科技机械臂系列教程首页——SO-ARM101、AmazingHa
 
 6轴桌面开源机器人机械臂，支持LeRobot等AI框架。
 
+- [SO-ARM101 机械臂教程总览](./so-arm101/index.md)
 - [SO-ARM101 使用教程](./so-arm101/SO-ARM101-Tutorial.md)
 - [SO-ARM101 组装指南](./so-arm101/SO-ARM101-Assembly.md)
 - [SO-ARM101 Jetson Orin PyTorch 兼容性](./so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility.md)
@@ -55,9 +56,12 @@ description: "钜犀科技机械臂系列教程首页——SO-ARM101、AmazingHa
 
 #### 6. 采集数据集(真机)
 - [第六步:采集数据集(真机)——示教采集](./so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording.md)
+- [第六步:采集数据集(真机)——握手200 采集示例](./so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording-Handshake-200.md)
+- [第六步:采集数据集(真机)——回看与回放](./so-arm101/lerobot/06-Data-Collection/Browse-and-Replay.md)
 - [第六步:采集数据集(真机)——注意事项](./so-arm101/lerobot/06-Data-Collection/Collection-Notes.md)
 - [第六步:采集数据集(真机)——注册 Hugging Face 账号(可选)](./so-arm101/lerobot/06-Data-Collection/HF-Account.md)
 - [第六步:采集数据集(真机)——上传数据集到 Hugging Face(可选)](./so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload.md)
+- [第七步(仿真):采集数据集——光轮智能 LeIsaac 仿真遥操](./so-arm101/lerobot/06-Data-Collection/LeIsaac-Sim.md)
 
 #### 7. 训练模型
 - [第七步:训练模型——本地 Ubuntu 训练](./so-arm101/lerobot/07-Training/Local-Ubuntu.md)
@@ -70,6 +74,11 @@ description: "钜犀科技机械臂系列教程首页——SO-ARM101、AmazingHa
 - [第七步:训练模型——pi0.5 训练命令](./so-arm101/lerobot/07-Training/Command-pi0.5.md)
 - [第七步:训练模型——pi0fast 训练命令](./so-arm101/lerobot/07-Training/Command-pi0fast.md)
 - [第七步:训练模型——smolvla 训练命令](./so-arm101/lerobot/07-Training/Command-smolvla.md)
+- [第七步:训练模型——Diffusion 训练命令](./so-arm101/lerobot/07-Training/Command-Diffusion.md)
+- [第七步:训练模型——WALL-OSS 训练命令](./so-arm101/lerobot/07-Training/Command-Wall-OSS.md)
+- [第七步:训练模型——训练命令行](./so-arm101/lerobot/07-Training/Train-CLI.md)
+- [第七步:训练模型——训练参数建议](./so-arm101/lerobot/07-Training/Training-Parameters.md)
+- [第七步:训练模型——LeRobot 支持的模仿学习算法](./so-arm101/lerobot/07-Training/Imitation-Learning-Algorithms.md)
 
 #### 8. 模型推理
 - [第八步:模型推理——命令行说明](./so-arm101/lerobot/08-Inference/CLI-Reference.md)
@@ -78,6 +87,10 @@ description: "钜犀科技机械臂系列教程首页——SO-ARM101、AmazingHa
 - [第八步:模型推理——pi0 推理命令](./so-arm101/lerobot/08-Inference/Command-pi0.md)
 - [第八步:模型推理——pi0.5 推理命令](./so-arm101/lerobot/08-Inference/Command-pi0.5.md)
 - [第八步:模型推理——smolvla 推理命令](./so-arm101/lerobot/08-Inference/Command-smolvla.md)
+- [第八步:模型推理——Diffusion 推理命令](./so-arm101/lerobot/08-Inference/Command-Diffusion.md)
+- [第八步:模型推理——WALL-OSS 推理命令](./so-arm101/lerobot/08-Inference/Command-Wall-OSS.md)
+- [第八步:模型推理——英伟达 DGX Spark](./so-arm101/lerobot/08-Inference/DGX-Spark.md)
+- [第八步:模型推理——地瓜机器人 RDK S100](./so-arm101/lerobot/08-Inference/RDK-S100.md)
 
 #### 基础知识
 - [了解 LeRobot](./so-arm101/basics/Understanding-LeRobot.md)
@@ -85,10 +98,20 @@ description: "钜犀科技机械臂系列教程首页——SO-ARM101、AmazingHa
 - [模型训练的资料](./so-arm101/basics/Training-Resources.md)
 - [SO-ARM 100 机械臂官方 3D 打印文件](./so-arm101/basics/Official-3D-Print-Files.md)
 - [URDF 文件及资料参考](./so-arm101/basics/URDF-Reference.md)
+- [摄像头支架和安装座推荐](./so-arm101/basics/Camera-Mounts-Recommended.md)
 
 #### 专题与进阶
 - [ROS2 仿真控制](./so-arm101/ROS2-Simulation-Control.md)
 - [平行指夹爪安装教程](./so-arm101/Parallel-Finger-Gripper-Installation.md)
+
+#### LeLab 教程
+- [1 · 总览](./so-arm101/lelab/01-Overview.md)
+- [2 · 安装与启动](./so-arm101/lelab/02-Install.md)
+- [3 · 接线与校准](./so-arm101/lelab/03-Calibration.md)
+- [4 · 遥操作](./so-arm101/lelab/04-Teleoperation.md)
+- [5 · 录制数据集](./so-arm101/lelab/05-Record-Dataset.md)
+- [6 · 训练与推理](./so-arm101/lelab/06-Train-and-Inference.md)
+- [7 · 常见问题](./so-arm101/lelab/07-Troubleshooting.md)
 
 
 ### SO-ARM101机械臂 7轴 教程
@@ -213,6 +236,8 @@ XLeRobot 双臂移动机器人教程:环境搭建(LeRobot + conda 镜像)、文�
 - [移动 XLeRobot 文件](./xlerobot/02-Move-Xlerobot-Files.md)
 - [成品组装教程](./xlerobot/03-Assembly-Assembled-Kit.md)
 - [散件组装教程](./xlerobot/04-Assembly-Parts-Kit.md)
+- [XLeRobot Docker 教程 — Jetson AGX Orin 开发者套件](/zh-hans/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview)
+- [XLeRobot Docker 教程 — Jetson Orin Nano 开发者套件](/zh-hans/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview)
 
 ---
 

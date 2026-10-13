@@ -138,6 +138,7 @@ Welcome to the Tutorials page! Here, you can find all product usage tutorials, c
 - [Robot Arms Overview](/tutorials/robot-arms/)
   - [Selection Guide](/tutorials/robot-arms/select-guide)
   - **SO-ARM101 Series**
+    - [SO-ARM101 Robotic Arm Tutorials](/tutorials/robot-arms/so-arm101/)
     - [SO-ARM101 Tutorial](/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial)
     - [SO-ARM101 Assembly](/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly)
     - [SO-ARM101 Jetson Orin PyTorch Compatibility](/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility)
@@ -171,9 +172,12 @@ Welcome to the Tutorials page! Here, you can find all product usage tutorials, c
             - [Step 5: Camera Teleoperation (macOS)](/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/MacOS)
           - **6. Data Collection**
             - [Step 6: Teaching & Recording a Dataset](/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording)
+            - [Step 6: Teaching & Recording a Dataset — Handshake 200](/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording-Handshake-200)
+            - [Step 6: Viewing & Replaying a Dataset](/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Browse-and-Replay)
             - [Step 6: Dataset Collection Notes](/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes)
             - [Step 6: Hugging Face Account (Optional)](/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account)
             - [Step 6: Upload Dataset to Hugging Face (Optional)](/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload)
+            - [Step 7 (Simulation): Collecting a Dataset — Lightwheel LeIsaac Teleoperation](/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/LeIsaac-Sim)
           - **7. Model Training**
             - [Step 7: Training — Local Ubuntu](/tutorials/robot-arms/so-arm101/lerobot/07-Training/Local-Ubuntu)
             - [Step 7: Training — Cloud GPU Setup](/tutorials/robot-arms/so-arm101/lerobot/07-Training/Cloud-GPU)
@@ -185,6 +189,11 @@ Welcome to the Tutorials page! Here, you can find all product usage tutorials, c
             - [Step 7: Training — pi0.5 Command](/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5)
             - [Step 7: Training — pi0fast Command](/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast)
             - [Step 7: Training — smolvla Command](/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla)
+            - [Step 7: Training — Diffusion Command](/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Diffusion)
+            - [Step 7: Training — WALL-OSS Command](/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Wall-OSS)
+            - [Step 7: Training — Training Command Line](/tutorials/robot-arms/so-arm101/lerobot/07-Training/Train-CLI)
+            - [Step 7: Training — Parameter Tips](/tutorials/robot-arms/so-arm101/lerobot/07-Training/Training-Parameters)
+            - [Step 7: Training — Imitation Learning Algorithms](/tutorials/robot-arms/so-arm101/lerobot/07-Training/Imitation-Learning-Algorithms)
           - **8. Model Inference**
             - [Step 8: Inference — CLI Reference](/tutorials/robot-arms/so-arm101/lerobot/08-Inference/CLI-Reference)
             - [Step 8: Inference — Common Bugs](/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Common-Bugs)
@@ -192,15 +201,28 @@ Welcome to the Tutorials page! Here, you can find all product usage tutorials, c
             - [Step 8: Inference — pi0 Command](/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0)
             - [Step 8: Inference — pi0.5 Command](/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5)
             - [Step 8: Inference — smolvla Command](/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla)
+            - [Step 8: Inference — Diffusion Command](/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Diffusion)
+            - [Step 8: Inference — WALL-OSS Command](/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Wall-OSS)
+            - [Step 8: Inference — NVIDIA DGX Spark](/tutorials/robot-arms/so-arm101/lerobot/08-Inference/DGX-Spark)
+            - [Step 8: Inference — D-Robotics RDK S100](/tutorials/robot-arms/so-arm101/lerobot/08-Inference/RDK-S100)
           - **Basics**
             - [Understanding LeRobot](/tutorials/robot-arms/so-arm101/basics/Understanding-LeRobot)
             - [LeRobot Datasets on Hugging Face](/tutorials/robot-arms/so-arm101/basics/HF-Datasets)
             - [Model Training Resources](/tutorials/robot-arms/so-arm101/basics/Training-Resources)
             - [SO-ARM100 Official 3D Print Files](/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files)
             - [URDF Files and Reference Materials](/tutorials/robot-arms/so-arm101/basics/URDF-Reference)
+            - [Recommended Camera Brackets and Mounts](/tutorials/robot-arms/so-arm101/basics/Camera-Mounts-Recommended)
           - **Extras & Advanced**
             - [ROS2 Simulation Control](/tutorials/robot-arms/so-arm101/ROS2-Simulation-Control)
             - [Parallel Finger Gripper Installation](/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation)
+      - **LeLab Tutorial**
+        - [1 · Overview](/tutorials/robot-arms/so-arm101/lelab/01-Overview)
+        - [2 · Install and run](/tutorials/robot-arms/so-arm101/lelab/02-Install)
+        - [3 · Connect and calibrate](/tutorials/robot-arms/so-arm101/lelab/03-Calibration)
+        - [4 · Teleoperation](/tutorials/robot-arms/so-arm101/lelab/04-Teleoperation)
+        - [5 · Record a dataset](/tutorials/robot-arms/so-arm101/lelab/05-Record-Dataset)
+        - [6 · Train and run inference](/tutorials/robot-arms/so-arm101/lelab/06-Train-and-Inference)
+        - [7 · Troubleshooting](/tutorials/robot-arms/so-arm101/lelab/07-Troubleshooting)
   - **SO-ARM101 + AmazingHand Course**
     - [Course Overview](/tutorials/robot-arms/so-arm-amazinghand/)
       - **Linux**

@@ -48,11 +48,13 @@ de [xlerobot/](../xlerobot/01-Operation.md): lo clave es que
 
 ### Dentro del contenedor, `torch.cuda.is_available()` devuelve False
 
-- Si usa la imagen `cpu` / `cpu-slim` → es normal; estas versiones no traen
-  GPU de por sí
-- Si usa la imagen `jetson` → compruebe si ha utilizado `--runtime nvidia`
-  (**hay que usar `--device nvidia.com/gpu=all`**) y si se ha generado la
-  especificación CDI
+La GPU es obligatoria, así que esto siempre es un problema de configuración;
+compruebe las dos cosas:
+
+- Que inició el contenedor con `--device nvidia.com/gpu=all`, **no con
+  `--runtime nvidia`**, que no inyecta los nodos de dispositivo
+- Que la especificación CDI existe en la máquina anfitriona (`/etc/cdi/nvidia.yaml`);
+  véase [03-Deployment §4](../deployment/03-Deployment.md)
 
 ### El contenedor no arranca y da un error de CDI
 
@@ -69,9 +71,7 @@ sudo rm -f /var/run/cdi/nvidia.yaml
 sudo systemctl restart docker
 ```
 
-(Este problema se reproduce en cada reinicio en nuestra propia placa; para
-más detalles, véase
-developer/03-Board-Remote-Testing.md.)
+(Este problema se reproduce en cada reinicio.)
 
 ### Hay que recalibrar cada vez
 
@@ -176,12 +176,9 @@ scripts de `examples/`.
 
 ```bash
 # Descargar la imagen
-docker pull chenyang310/xlerobot:cpu-slim
+docker pull chenyang310/xlerobot:jetson
 
-# Iniciar (genérica)
-bash scripts/run.sh cpu
-
-# Iniciar (Jetson, con GPU)
+# Iniciar
 bash scripts/run.sh jetson
 
 # Ya dentro del contenedor — configuración inicial
@@ -279,9 +276,6 @@ La explicación completa está en la sección 4 de [xlerobot/](../xlerobot/01-Op
 | Hay que configurar HF_ENDPOINT | `huggingface.co` es completamente inalcanzable desde China continental; `hf-mirror.com` sí responde |
 | En Jetson se usa CDI y no `--runtime nvidia` | En el entorno cgroup v2 de JetPack 6/7, `--runtime nvidia` no inyecta los nodos de dispositivo |
 | No se instala la biblioteca de cinemática placo | No tiene ruedas para cp312/aarch64; XLeRobot usa su propio IK analítico y no depende de ella |
-
-Para más detalles técnicos, véase
-developer/01-Jetson-Environment.md.
 
 ---
 

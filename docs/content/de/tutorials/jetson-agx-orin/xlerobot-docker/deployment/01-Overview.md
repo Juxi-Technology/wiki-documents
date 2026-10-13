@@ -31,39 +31,33 @@ LeRobot, den Roboter-Code von XLeRobot sowie Servo- und Kameratreiber. Sie müss
 
 | Plattform | Unterstützung |
 |---|---|
-| **Jetson Orin-Serie** (JetPack 7.2) | ✅ **Derzeit offiziell unterstützte Plattform**, GPU-Beschleunigung möglich |
-| Jetson Nano (2019, Original) | ❌ Nicht unterstützt – zu wenig Rechenleistung, siehe unten |
-| Raspberry Pi / normales Ubuntu / x86-PC | ⏳ **Noch nicht unterstützt**, siehe unten |
-| Windows / macOS | ❌ Nicht unterstützt (serielle Schnittstellen und Kamera-Passthrough funktionieren nur unter Linux reibungslos) |
+| **Jetson Orin-Serie** (JetPack 7.2) | ✅ **Die einzig unterstützte Plattform**, mit GPU-Beschleunigung |
+| Alles andere | ❌ Nicht unterstützt |
 
-> 💡 **Dieses Image richtet sich derzeit ausschließlich an Jetson-Orin-Geräte.**
+> ⚠️ **Dieses Image ist ausschließlich für Jetson + JetPack 7.2 gebaut.** Raspberry Pi, gewöhnliche
+> x86-PCs, Windows, macOS und Jetson-Boards, die nicht zur Orin-Reihe gehören, können es nicht verwenden.
 >
 > - **Jetson Orin Nano / Orin NX / AGX Orin**: erfordern **JetPack 7.2**
 >   (L4T 39.2 / CUDA 13.2). Auch das AGX Orin 64GB wird erst ab 7.2 vollständig unterstützt.
 > - **Jetson Nano (2019, Original)**: ❌ Nie möglich. Es ist Maxwell-Architektur (Compute 5.3),
 >   und CUDA 13 hat die Maxwell-Unterstützung vollständig entfernt; torch verlangt mindestens sm_80.
-> - **Raspberry Pi / x86-PC**: Vom Image-Design her unterstützt (die allgemeine CPU-Version basiert auf `python:3.12-slim`,
->   dieses Basis-Image erscheint offiziell für amd64 und arm64),
->   aber **die derzeit veröffentlichte CPU-Version wurde noch nicht Multi-Arch gebaut** –
->   was Sie herunterladen, ist möglicherweise nur amd64 oder nur arm64. Freigabe erfolgt, sobald der Multi-Arch-Build steht.
 >
 > Empfohlener Arbeitsspeicher: über 4 GB. Auch die 3,4 GB des Jetson Orin Nano reichen noch für die Teleoperation,
 > aber das Training wird zäh.
 
 ### Systemanforderungen
 
-- Ubuntu 20.04 / 22.04 / 24.04 oder Debian 12+
-- Raspberry Pi: 64-Bit-System erforderlich (`uname -m` zeigt `aarch64`)
-- Kernel-Unterstützung für USB-Seriell (normalerweise vorhanden)
+- **JetPack 7.2** (L4T r39 / Ubuntu 24.04)
+- Architektur: `arm64`
+- Kernel-Unterstützung für USB-Seriell (auf praktisch allen Systemen vorhanden)
 
-### Architektur prüfen
+### JetPack-Version prüfen
 
 ```bash
-uname -m
+cat /etc/nv_tegra_release
 ```
 
-- `aarch64` → Raspberry Pi, Jetson (arm64-Image verwenden)
-- `x86_64` → Gewöhnlicher PC (amd64-Image verwenden)
+Wenn **R39** erscheint, ist alles in Ordnung. Bei allem anderen – aktualisieren Sie zuerst JetPack; das Image ist dafür gebaut.
 
 ---
 

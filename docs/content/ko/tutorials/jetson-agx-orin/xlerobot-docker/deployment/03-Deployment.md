@@ -14,32 +14,38 @@ title: 03 · 배포
 
 ## 1. 이미지 받기
 
-### 방법 A: 직접 다운로드 (권장)
+이미지는 단 하나입니다:
 
 ```bash
-docker pull chenyang310/xlerobot:cpu-slim
+docker pull chenyang310/xlerobot:jetson
 ```
 
-`cpu-slim`은 슬림 버전(약 660 MB 다운로드)으로, 원격 조작, 캘리브레이션, 데이터 녹화에 필요한 모든 것이 포함되어 있습니다.
+| | |
+|---|---|
+| 아키텍처 | `arm64` |
+| 실행 환경 | Jetson + JetPack 7.2 |
+| 다운로드 크기 | 약 3.6 GB(압축 해제 후에는 더 큼 — 20 GB의 여유 공간을 확보하세요) |
+| 포함 내용 | 원격 조작, 캘리브레이션, 데이터 녹화, 학습, 추론, **GPU 가속** |
 
-풀 버전(시각화, 학습, Diffusion 정책 포함)을 원한다면:
+받았는지 확인:
 
 ```bash
-docker pull chenyang310/xlerobot:cpu
+docker images | grep xlerobot
 ```
 
-### 방법 B: 직접 빌드
+`chenyang310/xlerobot`에 `jetson` 태그가 붙어 있어야 합니다.
 
-수정이 필요하거나 최신 소스 코드를 사용하고 싶은 경우에 적합합니다.
+> **중국 본토**: 그대로 받으면 됩니다 — 미러 가속기가 필요하지 않습니다. 느리다면
+> [02-Environment-Setup](02-Environment-Setup.md) 2절을 참고하세요.
+
+### 직접 빌드하기 (메인테이너용)
+
+수정이 필요하거나 최신 소스 코드로 빌드하고 싶은 경우에 적합합니다.
 
 ```bash
 git clone <이 저장소 주소> xlerobot-docker
 cd xlerobot-docker
 
-# 범용 CPU 버전
-bash scripts/build.sh cpu
-
-# Jetson GPU 버전(Jetson에서 실행)
 bash scripts/build.sh jetson
 ```
 
@@ -51,13 +57,14 @@ bash scripts/build.sh jetson
 
 ---
 
-## 2. 버전별 차이
+## 2. 이미지에 포함된 것
 
-| 이미지 | 크기 | 포함 내용 | 용도 |
-|---|---|---|---|
-| `cpu-slim` | 약 660 MB | 원격 조작, 캘리브레이션, ACT 정책 추론 | 로봇 실행만 하려는 경우 |
-| `cpu` | 약 1 GB | 위 항목 + 시각화, 데이터 녹화, 학습, Diffusion | 전체 워크플로를 하려는 경우 |
-| `jetson` | 약 3.6 GB | CPU 버전 + **CUDA 가속** | Jetson, GPU 추론이 필요한 경우 |
+이미지 하나에 모든 것이 들어 있습니다:
+
+- **원격 조작과 캘리브레이션** — 손으로 로봇을 움직이고 그 캘리브레이션을 저장
+- **데이터 녹화와 재생**
+- **학습** — ACT, Diffusion Policy, SmolVLA, π₀, π₀.₅, Wall-OSS
+- **추론** — 학습된 정책을 로봇에서 실행, **GPU 가속**
 
 ---
 
@@ -68,15 +75,12 @@ bash scripts/build.sh jetson
 저장소를 클론했다면:
 
 ```bash
-# 범용 버전
-bash scripts/run.sh cpu
-
-# Jetson 버전(GPU 파라미터가 자동으로 추가됨)
 bash scripts/run.sh jetson
 ```
 
 스크립트에는 다음이 이미 설정되어 있습니다:
 
+- **GPU** — `--device nvidia.com/gpu=all`(CDI)
 - **디바이스 패스스루** — 시리얼 포트, 카메라, USB
 - **네트워크** — `--network host`, VR 원격 조작과 웹 제어에 필요
 - **소스 마운트** — 코드를 수정해도 이미지를 다시 빌드할 필요 없음
@@ -88,6 +92,8 @@ bash scripts/run.sh jetson
 
 ```bash
 docker run -it --rm \
+  --name xlerobot \
+  --device nvidia.com/gpu=all \
   --privileged \
   --network host \
   -v /dev:/dev \
@@ -95,26 +101,30 @@ docker run -it --rm \
   -v /tmp/.X11-unix:/tmp/.X11-unix \
   -e DISPLAY=$DISPLAY \
   -e HF_ENDPOINT=https://hf-mirror.com \
-  chenyang310/xlerobot:cpu-slim
+  chenyang310/xlerobot:jetson
 ```
 
 **각 파라미터의 역할:**
 
 | 파라미터 | 필요한 이유 |
 |---|---|
+| `--device nvidia.com/gpu=all` | **컨테이너에 GPU를 넘겨줍니다**(CDI를 통해). 이것이 없으면 GPU가 전혀 없습니다 |
 | `--privileged` + `-v /dev:/dev` | 시리얼 포트(SO-101 서보), 카메라, USB 패스스루 |
 | `--network host` | host/client 두 프로세스 통신(ZMQ) 및 VR 제어 |
 | `-v ~/.cache/huggingface` | **캘리브레이션 파일**과 모델 캐시. 마운트하지 않으면 컨테이너를 다시 열 때마다 재캘리브레이션해야 함 |
 | `-v /tmp/.X11-unix` + `-e DISPLAY` | 시각화를 실행할 때 사용(rerun 창 열기) |
 | `-e HF_ENDPOINT` | 중국 본토에서는 `huggingface.co`에 전혀 접속할 수 없어 미러를 거쳐야 함 |
 
+> 마운트 경로의 `/home/jetson`은 **이미지 내부**의 사용자 디렉터리입니다 — 하드코딩해도 맞습니다.
+> 그 이미지의 사용자 이름이 `jetson`이기 때문입니다.
+
 들어가면 bash 셸이 열리고, 작업 디렉터리는 `/opt/xlerobot`입니다.
 
 ---
 
-## 4. Jetson의 GPU 파라미터 ⚠️ 다른 플랫폼과 다름
+## 4. GPU 파라미터 —— CDI 방식
 
-Jetson 버전은 GPU를 **반드시** CDI로 할당해야 하며, **`--runtime nvidia`는 사용할 수 없습니다**:
+이미지는 GPU를 **반드시** CDI로 할당해야 하며, **`--runtime nvidia`는 사용할 수 없습니다**:
 
 ```bash
 docker run -it --rm \
@@ -188,20 +198,14 @@ dpkg -l | grep nvidia-jetpack
    Jetson Nano는 sm_53이라 네이티브 kernel도 없고 PTX 즉시 컴파일도 닿지 않습니다.
 3. **플랫폼이 EOL되었습니다**(JetPack 4는 2024년 11월에 유지보수가 종료되었습니다).
 
-### 라즈베리 파이 / 일반 Ubuntu / x86 PC —— ⏳ 아직 미지원
+### 기타 플랫폼 —— ❌ 미지원
 
-이미지는 **설계상으로는** 지원합니다 — 범용 CPU 버전은 `python:3.12-slim`을 기반으로 하고,
-이 베이스 이미지는 공식적으로 amd64와 arm64 두 버전을 함께 배포합니다.
+라즈베리 파이, 일반 x86 PC, Windows, macOS는 **이 이미지를 실행할 수 없습니다**. 이 이미지는
+JetPack 7.2의 CUDA 스택을 기준으로 빌드되었고 `arm64`로만 배포되므로,
+대신 사용할 수 있는 CPU 버전이 없습니다. Jetson Orin 보드를 사용하세요.
 
-하지만 **현재 배포된 CPU 버전은 아직 멀티 아키텍처로 만들어지지 않았습니다**(빌드 스크립트가 일반적인
-`docker build`라서, 산출물은 빌드 머신 하나의 아키텍처뿐입니다). 그래서 지금 받으면
-amd64만 있거나 arm64만 있어, 나머지 절반의 플랫폼에서는 쓸 수 없습니다.
-
-멀티 아키텍처 빌드(`docker buildx build --platform linux/amd64,linux/arm64`)를
-만든 뒤에 이 부분을 열겠습니다. 그 전까지는 **Jetson Orin에서만 사용하세요**.
-
-> 내 이미지가 쓸 수 있는지 확실하지 않다면: <code v-pre>docker image inspect &lt;이미지&gt; --format '{{.Architecture}}'</code>를
-> `uname -m`과 대조해 보세요.
+> 현재 환경을 확인: `uname -m`이 `aarch64`를 출력하고, `cat /etc/nv_tegra_release`가
+> **R39**를 보고해야 합니다.
 
 ---
 
@@ -216,7 +220,7 @@ python -c "import torch, lerobot; print('torch', torch.__version__); print('lero
 예상 출력:
 
 ```
-torch 2.11.0+cu130     ← Jetson 버전, CPU 버전은 +cpu로 표시
+torch 2.11.0+cu130
 lerobot 0.6.2
 ```
 

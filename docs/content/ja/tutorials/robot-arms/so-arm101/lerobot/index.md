@@ -38,9 +38,12 @@ description: "SO-ARM101ロボットアームを使い、環境のインストー
 ## 6. データセット収集（実機）
 
 - [ステップ6:教示によるデータセット収集](/ja/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording)
+- [ステップ6:教示データ収集-Handshake 200](/ja/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording-Handshake-200)
+- [ステップ6:データセットの表示と再生](/ja/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Browse-and-Replay)
 - [ステップ6:データセット収集の注意事項](/ja/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes)
 - [ステップ6:HuggingFaceアカウントの登録（任意）](/ja/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account)
 - [ステップ6:データセットをHuggingFaceにアップロード（任意）](/ja/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload)
+- [ステップ7(シミュレーション):データセット収集 — Lightwheel LeIsaac シミュレーション・テレオペレーション](/ja/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/LeIsaac-Sim)
 
 ## 7. モデルの訓練
 
@@ -54,6 +57,11 @@ description: "SO-ARM101ロボットアームを使い、環境のインストー
 - [ステップ7:訓練コマンドライン-pi0.5](/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5)
 - [ステップ7:訓練コマンドライン-pi0fast](/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast)
 - [ステップ7:訓練コマンドライン-smolvla](/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla)
+- [ステップ7:訓練コマンドライン-Diffusion](/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Diffusion)
+- [ステップ7:訓練コマンドライン-WALL-OSS](/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Wall-OSS)
+- [ステップ7:訓練コマンドライン](/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/Train-CLI)
+- [ステップ7:訓練パラメーターの推奨](/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/Training-Parameters)
+- [ステップ7:LeRobot がサポートする模倣学習アルゴリズム](/ja/tutorials/robot-arms/so-arm101/lerobot/07-Training/Imitation-Learning-Algorithms)
 
 ## 8. モデルのデプロイ
 
@@ -63,6 +71,10 @@ description: "SO-ARM101ロボットアームを使い、環境のインストー
 - [ステップ8:デプロイコマンドライン-pi0](/ja/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0)
 - [ステップ8:デプロイコマンドライン-pi0.5](/ja/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5)
 - [ステップ8:デプロイコマンドライン-smolvla](/ja/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla)
+- [ステップ8:デプロイコマンドライン-Diffusion](/ja/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Diffusion)
+- [ステップ8:デプロイコマンドライン-WALL-OSS](/ja/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Wall-OSS)
+- [ステップ8:NVIDIA DGX Spark での推論](/ja/tutorials/robot-arms/so-arm101/lerobot/08-Inference/DGX-Spark)
+- [ステップ8:D-Robotics RDK S100 での推論](/ja/tutorials/robot-arms/so-arm101/lerobot/08-Inference/RDK-S100)
 
 ## 基礎知識
 
@@ -71,6 +83,7 @@ description: "SO-ARM101ロボットアームを使い、環境のインストー
 - [モデルトレーニングの資料](/ja/tutorials/robot-arms/so-arm101/basics/Training-Resources)
 - [SO-ARM 100公式3Dプリントファイル](/ja/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files)
 - [URDFファイルおよび資料参考](/ja/tutorials/robot-arms/so-arm101/basics/URDF-Reference)
+- [推奨カメラブラケットとマウント](/ja/tutorials/robot-arms/so-arm101/basics/Camera-Mounts-Recommended)
 
 ## その他・応用
 

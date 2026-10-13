@@ -45,9 +45,12 @@ the key point is that `docker exec` **must include `-u root`**.
 
 ### `torch.cuda.is_available()` is False in the container
 
-- Using a `cpu` / `cpu-slim` image → normal; those images have no GPU to begin with
-- Using the `jetson` image → check whether you used `--runtime nvidia`
-  (**you must use `--device nvidia.com/gpu=all`**), and whether the CDI spec was generated
+The GPU is mandatory, so this is always a configuration problem — check both:
+
+- You started the container with `--device nvidia.com/gpu=all` — **not `--runtime nvidia`**,
+  which doesn't inject the device nodes
+- The CDI spec exists on the host (`/etc/cdi/nvidia.yaml`) — see
+  [03-Deployment §4](../deployment/03-Deployment.md)
 
 ### The container won't start, reporting a CDI error
 
@@ -63,8 +66,7 @@ sudo rm -f /var/run/cdi/nvidia.yaml
 sudo systemctl restart docker
 ```
 
-(This problem reproduces on our own board after every reboot; for details, see
-developer/03-Board-Remote-Testing.md.)
+(This problem reappears after every reboot.)
 
 ### Calibration has to be redone every time
 
@@ -154,12 +156,9 @@ only those 14 original types are accepted. `xlerobot` isn't among them; use the 
 
 ```bash
 # Pull the image
-docker pull chenyang310/xlerobot:cpu-slim
+docker pull chenyang310/xlerobot:jetson
 
-# Start (generic)
-bash scripts/run.sh cpu
-
-# Start (Jetson, with GPU)
+# Start
 bash scripts/run.sh jetson
 
 # After entering the container — first-time setup
@@ -257,8 +256,6 @@ Full details in [xlerobot/](../xlerobot/01-Operation.md), section 4.
 | HF_ENDPOINT must be configured | `huggingface.co` is completely unreachable from mainland China; `hf-mirror.com` works |
 | Jetson uses CDI instead of `--runtime nvidia` | Under JetPack 6/7's cgroup v2, `--runtime nvidia` doesn't inject device nodes |
 | The placo kinematics library isn't installed | It has no cp312/aarch64 wheels; XLeRobot uses its own analytic IK and doesn't depend on it |
-
-For more technical details, see developer/01-Jetson-Environment.md.
 
 ---
 

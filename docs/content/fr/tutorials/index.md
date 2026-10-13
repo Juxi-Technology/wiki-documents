@@ -134,6 +134,7 @@ Bienvenue sur la page Tutoriels ! Vous y trouverez tous les tutoriels d'utilisat
 - [Série bras robotiques](/fr/tutorials/robot-arms/)
 - [Guide de sélection](/fr/tutorials/robot-arms/select-guide)
   - **Série SO-ARM101**
+    - [Tutoriels du bras robotique SO-ARM101](/fr/tutorials/robot-arms/so-arm101/)
     - [Tutoriel bras robotique LeRobot](/fr/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial)
     - [Guide de montage du bras robotique Lerobot](/fr/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly)
     - [Incompatibilité PyTorch sur Jetson Orin](/fr/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility)
@@ -167,9 +168,12 @@ Bienvenue sur la page Tutoriels ! Vous y trouverez tous les tutoriels d'utilisat
             - [Étape 5 : Téléopération avec caméra (macOS)](/fr/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/MacOS)
           - **6. Collecte données**
             - [Étape 6 : Collecte du jeu de données par démonstration](/fr/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording)
+            - [Étape 6 : Collecte par démonstration — Handshake 200](/fr/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording-Handshake-200)
+            - [Étape 6 : Visualiser et rejouer un jeu de données](/fr/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Browse-and-Replay)
             - [Étape 6 : Points d'attention pour la collecte](/fr/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes)
             - [Étape 6 : Créer un compte Hugging Face (facultatif)](/fr/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account)
             - [Étape 6 : Téléverser le jeu de données (facultatif)](/fr/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload)
+            - [Étape 7 (simulation) : Collecter un jeu de données — téléopération Lightwheel LeIsaac](/fr/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/LeIsaac-Sim)
           - **7. Entraînement**
             - [Étape 7 : Entraînement local sur Ubuntu](/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/Local-Ubuntu)
             - [Étape 7 : Environnement d'entraînement cloud GPU](/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/Cloud-GPU)
@@ -181,6 +185,11 @@ Bienvenue sur la page Tutoriels ! Vous y trouverez tous les tutoriels d'utilisat
             - [Étape 7 : Commande d'entraînement pi0.5](/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5)
             - [Étape 7 : Commande d'entraînement pi0fast](/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast)
             - [Étape 7 : Commande d'entraînement smolvla](/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla)
+            - [Étape 7 : Commande d'entraînement Diffusion](/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Diffusion)
+            - [Étape 7 : Commande d'entraînement WALL-OSS](/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Wall-OSS)
+            - [Étape 7 : Ligne de commande d'entraînement](/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/Train-CLI)
+            - [Étape 7 : Recommandations sur les paramètres d'entraînement](/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/Training-Parameters)
+            - [Étape 7 : Algorithmes d'apprentissage par imitation pris en charge par LeRobot](/fr/tutorials/robot-arms/so-arm101/lerobot/07-Training/Imitation-Learning-Algorithms)
           - **8. Inférence**
             - [Étape 8 : Description de la ligne de commande](/fr/tutorials/robot-arms/so-arm101/lerobot/08-Inference/CLI-Reference)
             - [Étape 8 : Bugs courants et solutions](/fr/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Common-Bugs)
@@ -188,15 +197,28 @@ Bienvenue sur la page Tutoriels ! Vous y trouverez tous les tutoriels d'utilisat
             - [Étape 8 : Commande de déploiement pi0](/fr/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0)
             - [Étape 8 : Commande de déploiement pi0.5](/fr/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5)
             - [Étape 8 : Commande de déploiement smolvla](/fr/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla)
+            - [Étape 8 : Commande de déploiement Diffusion](/fr/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Diffusion)
+            - [Étape 8 : Commande de déploiement WALL-OSS](/fr/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Wall-OSS)
+            - [Étape 8 : Inférence sur NVIDIA DGX Spark](/fr/tutorials/robot-arms/so-arm101/lerobot/08-Inference/DGX-Spark)
+            - [Étape 8 : Inférence sur D-Robotics RDK S100](/fr/tutorials/robot-arms/so-arm101/lerobot/08-Inference/RDK-S100)
           - **Notions de base**
             - [Découvrir LeRobot](/fr/tutorials/robot-arms/so-arm101/basics/Understanding-LeRobot)
             - [Jeux de données LeRobot sur HuggingFace](/fr/tutorials/robot-arms/so-arm101/basics/HF-Datasets)
             - [Ressources pour l'entraînement de modèles](/fr/tutorials/robot-arms/so-arm101/basics/Training-Resources)
             - [Fichiers d'impression 3D officiels du bras SO-ARM 100](/fr/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files)
             - [Fichiers URDF et références](/fr/tutorials/robot-arms/so-arm101/basics/URDF-Reference)
+            - [Supports et fixations de caméra recommandés](/fr/tutorials/robot-arms/so-arm101/basics/Camera-Mounts-Recommended)
           - **Compléments**
             - [Simulation et contrôle ROS2](/fr/tutorials/robot-arms/so-arm101/ROS2-Simulation-Control)
             - [Installation de la pince à doigts parallèles](/fr/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation)
+      - **Tutoriel LeLab**
+        - [1 · Vue d'ensemble](/fr/tutorials/robot-arms/so-arm101/lelab/01-Overview)
+        - [2 · Installer et lancer](/fr/tutorials/robot-arms/so-arm101/lelab/02-Install)
+        - [3 · Connexion et calibration](/fr/tutorials/robot-arms/so-arm101/lelab/03-Calibration)
+        - [4 · Téléopération](/fr/tutorials/robot-arms/so-arm101/lelab/04-Teleoperation)
+        - [5 · Enregistrer un jeu de données](/fr/tutorials/robot-arms/so-arm101/lelab/05-Record-Dataset)
+        - [6 · Entraîner et exécuter l'inférence](/fr/tutorials/robot-arms/so-arm101/lelab/06-Train-and-Inference)
+        - [7 · Dépannage](/fr/tutorials/robot-arms/so-arm101/lelab/07-Troubleshooting)
   - **Cours SO-ARM101 + AmazingHand**
     - [Aperçu du cours](/fr/tutorials/robot-arms/so-arm-amazinghand/)
       - **Linux**

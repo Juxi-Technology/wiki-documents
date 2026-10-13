@@ -134,6 +134,7 @@ description: "Juxi Technology 튜토리얼 — 로봇 암과 액세서리, 센�
 - [로봇 팔 시리즈](/ko/tutorials/robot-arms/)
 - [선택 가이드](/ko/tutorials/robot-arms/select-guide)
   - **SO-ARM101 시리즈**
+    - [SO-ARM101 로봇 암 튜토리얼](/ko/tutorials/robot-arms/so-arm101/)
     - [LeRobot 로봇팔 튜토리얼](/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Tutorial)
     - [Lerobot 로봇 암 조립 가이드](/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Assembly)
     - [Jetson Orin에서 PyTorch 비호환 문제](/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility)
@@ -167,9 +168,12 @@ description: "Juxi Technology 튜토리얼 — 로봇 암과 액세서리, 센�
             - [5단계: 카메라 연결 원격조작 (macOS)](/ko/tutorials/robot-arms/so-arm101/lerobot/05-Camera-Teleoperation/MacOS)
           - **6. 데이터셋 수집**
             - [6단계: 시연 데이터셋 수집](/ko/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording)
+            - [6단계: 시연 데이터셋 수집 — Handshake 200](/ko/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording-Handshake-200)
+            - [6단계: 데이터셋 보기 및 재생](/ko/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Browse-and-Replay)
             - [6단계: 데이터셋 수집 주의 사항](/ko/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes)
             - [6단계: Hugging Face 계정 등록(선택 사항)](/ko/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account)
             - [6단계: HuggingFace에 데이터셋 업로드(선택 사항)](/ko/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload)
+            - [7단계(시뮬레이션): 데이터셋 수집 — Lightwheel LeIsaac 시뮬레이션 원격조작](/ko/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/LeIsaac-Sim)
           - **7. 모델 학습**
             - [7단계: 로컬 Ubuntu 학습](/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Local-Ubuntu)
             - [7단계: 클라우드 GPU 학습 환경 설정](/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Cloud-GPU)
@@ -181,6 +185,11 @@ description: "Juxi Technology 튜토리얼 — 로봇 암과 액세서리, 센�
             - [7단계: pi0.5 학습 커맨드라인](/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5)
             - [7단계: pi0fast 학습 커맨드라인](/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast)
             - [7단계: smolvla 학습 커맨드라인](/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla)
+            - [7단계: Diffusion 학습 커맨드라인](/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Diffusion)
+            - [7단계: WALL-OSS 학습 커맨드라인](/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Wall-OSS)
+            - [7단계: 학습 커맨드라인](/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Train-CLI)
+            - [7단계: 학습 파라미터 권장 사항](/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Training-Parameters)
+            - [7단계: LeRobot가 지원하는 모방 학습 알고리즘](/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Imitation-Learning-Algorithms)
           - **8. 모델 배포**
             - [8단계: 커맨드라인 설명](/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/CLI-Reference)
             - [8단계: 자주 발생하는 Bug 및 해결](/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Common-Bugs)
@@ -188,15 +197,28 @@ description: "Juxi Technology 튜토리얼 — 로봇 암과 액세서리, 센�
             - [8단계: pi0 배포 커맨드라인](/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0)
             - [8단계: pi0.5 배포 커맨드라인](/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5)
             - [8단계: smolvla 배포 커맨드라인](/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla)
+            - [8단계: Diffusion 배포 커맨드라인](/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Diffusion)
+            - [8단계: WALL-OSS 배포 커맨드라인](/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Wall-OSS)
+            - [8단계: NVIDIA DGX Spark 추론](/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/DGX-Spark)
+            - [8단계: D-Robotics RDK S100 추론](/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/RDK-S100)
           - **기초 지식**
             - [LeRobot 알아보기](/ko/tutorials/robot-arms/so-arm101/basics/Understanding-LeRobot)
             - [HuggingFace의 LeRobot 데이터셋](/ko/tutorials/robot-arms/so-arm101/basics/HF-Datasets)
             - [모델 학습 자료](/ko/tutorials/robot-arms/so-arm101/basics/Training-Resources)
             - [SO-ARM 100 로봇 암 공식 3D 프린팅 파일](/ko/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files)
             - [URDF 파일 및 자료 참고](/ko/tutorials/robot-arms/so-arm101/basics/URDF-Reference)
+            - [권장 카메라 브래킷 및 마운트](/ko/tutorials/robot-arms/so-arm101/basics/Camera-Mounts-Recommended)
           - **기타 및 심화**
             - [ROS2 시뮬레이션 제어](/ko/tutorials/robot-arms/so-arm101/ROS2-Simulation-Control)
             - [평행 핑거 그리퍼 설치 튜토리얼](/ko/tutorials/robot-arms/so-arm101/Parallel-Finger-Gripper-Installation)
+      - **LeLab 튜토리얼**
+        - [1 · 개요](/ko/tutorials/robot-arms/so-arm101/lelab/01-Overview)
+        - [2 · 설치 및 실행](/ko/tutorials/robot-arms/so-arm101/lelab/02-Install)
+        - [3 · 연결 및 캘리브레이션](/ko/tutorials/robot-arms/so-arm101/lelab/03-Calibration)
+        - [4 · 텔레오퍼레이션](/ko/tutorials/robot-arms/so-arm101/lelab/04-Teleoperation)
+        - [5 · 데이터셋 녹화](/ko/tutorials/robot-arms/so-arm101/lelab/05-Record-Dataset)
+        - [6 · 학습과 추론](/ko/tutorials/robot-arms/so-arm101/lelab/06-Train-and-Inference)
+        - [7 · 문제 해결](/ko/tutorials/robot-arms/so-arm101/lelab/07-Troubleshooting)
   - **SO-ARM101 + AmazingHand 튜토리얼**
     - [코스 개요](/ko/tutorials/robot-arms/so-arm-amazinghand/)
       - **Linux**

@@ -31,39 +31,33 @@ LeRobot、XLeRobot 的机器人代码、舵机和相机驱动。你不用再折�
 
 | 平台 | 支持情况 |
 |---|---|
-| **Jetson Orin 系列**（JetPack 7.2） | ✅ **当前正式支持的平台**，可用 GPU 加速 |
-| Jetson Nano（2019 原版） | ❌ 不支持——算力太低，见下 |
-| 树莓派 / 普通 Ubuntu / x86 电脑 | ⏳ **暂未支持**，见下 |
-| Windows / macOS | ❌ 不支持（串口和摄像头透传在 Linux 上才顺） |
+| **Jetson Orin 系列**（JetPack 7.2） | ✅ **唯一支持的平台**，可用 GPU 加速 |
+| 其它任何平台 | ❌ 不支持 |
 
-> 💡 **目前这份镜像只面向 Jetson Orin 设备。**
+> ⚠️ **这份镜像只为 Jetson + JetPack 7.2 构建。** 树莓派、普通 x86 电脑、
+> Windows、macOS，以及非 Orin 的 Jetson 板子，都用不了。
 >
 > - **Jetson Orin Nano / Orin NX / AGX Orin**：需要 **JetPack 7.2**
 >   （L4T 39.2 / CUDA 13.2）。AGX Orin 64GB 也是 7.2 才完整支持。
 > - **Jetson Nano（2019 原版）**：❌ 永远不行。它是 Maxwell 架构（算力 5.3），
 >   而 CUDA 13 已经整个删掉了 Maxwell 支持，torch 最低也要求 sm_80。
-> - **树莓派 / x86 电脑**：镜像设计上支持（通用 CPU 版基于 `python:3.12-slim`，
->   该基础镜像官方有 amd64 和 arm64 两个版本），
->   但**目前发布出去的 CPU 版还没有做成多架构**，
->   拉下来可能只有 amd64 或只有 arm64。等做了多架构构建再开放。
 >
 > 内存建议 4 GB 以上。Jetson Orin Nano 的 3.4 GB 也能跑遥操作，
 > 但训练会吃力。
 
 ### 系统要求
 
-- Ubuntu 20.04 / 22.04 / 24.04，或 Debian 12+
-- 树莓派：需要 64 位系统（`uname -m` 显示 `aarch64`）
+- **JetPack 7.2**（L4T r39 / Ubuntu 24.04）
+- 架构：`arm64`
 - 内核支持 USB 串口（一般都有）
 
-### 检查你的架构
+### 确认 JetPack 版本
 
 ```bash
-uname -m
+cat /etc/nv_tegra_release
 ```
 
-- `aarch64` → 树莓派、Jetson（用 arm64 镜像）
-- `x86_64` → 普通电脑（用 amd64 镜像）
+看到 **R39** 就对了。不是 R39 请先升级 JetPack——镜像是为它编的。
 
 ---
 

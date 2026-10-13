@@ -45,9 +45,12 @@ thread 'main' panicked at 'Library libxkbcommon-x11.so could not be loaded.'
 
 ### 容器裡 `torch.cuda.is_available()` 是 False
 
-- 使用的是 `cpu` / `cpu-slim` 鏡像 → 正常，這些版本本來就沒有 GPU
-- 使用的是 `jetson` 鏡像 → 檢查是不是用了 `--runtime nvidia`
-  （**必須使用 `--device nvidia.com/gpu=all`**），以及 CDI 規格是否已經產生
+GPU 是必需的，所以這一定是設定問題——兩項都檢查：
+
+- 你是用 `--device nvidia.com/gpu=all` 啟動容器的——**不是 `--runtime nvidia`**，
+  它不會注入裝置節點
+- 宿主機上存在 CDI 規格（`/etc/cdi/nvidia.yaml`）——見
+  [03-Deployment §4](../deployment/03-Deployment.md)
 
 ### 容器起不來，出現 CDI 錯誤
 
@@ -63,8 +66,7 @@ sudo rm -f /var/run/cdi/nvidia.yaml
 sudo systemctl restart docker
 ```
 
-（這個問題在我們自己的板子上每次重新啟動都會重現，詳見
-developer/03-Board-Remote-Testing.md。）
+（這個問題每次重新啟動都會重現。）
 
 ### 校準每次都要重做
 
@@ -154,12 +156,9 @@ lerobot-rollout \
 
 ```bash
 # 拉鏡像
-docker pull chenyang310/xlerobot:cpu-slim
+docker pull chenyang310/xlerobot:jetson
 
-# 啟動（通用）
-bash scripts/run.sh cpu
-
-# 啟動（Jetson，帶 GPU）
+# 啟動
 bash scripts/run.sh jetson
 
 # 進容器之後 —— 首次設定
@@ -257,8 +256,6 @@ lerobot-rollout \
 | 必須設定 HF_ENDPOINT | `huggingface.co` 從中國大陸完全無法連線，`hf-mirror.com` 可以連上 |
 | Jetson 使用 CDI 而不是 `--runtime nvidia` | 在 JetPack 6/7 的 cgroup v2 環境下，`--runtime nvidia` 不會注入裝置節點 |
 | 不安裝 placo 運動學函式庫 | 它沒有 cp312/aarch64 的輪子；XLeRobot 用的是內建的解析式 IK，不依賴它 |
-
-更多技術細節請見 developer/01-Jetson-Environment.md。
 
 ---
 

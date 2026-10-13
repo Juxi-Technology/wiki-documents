@@ -45,9 +45,12 @@ il punto chiave è che `docker exec` **deve includere `-u root`**.
 
 ### Nel container `torch.cuda.is_available()` restituisce False
 
-- Se si usa l'immagine `cpu` / `cpu-slim` → è normale, quelle versioni non hanno la GPU
-- Se si usa l'immagine `jetson` → verificare che non si sia usato `--runtime nvidia`
-  (**si deve usare `--device nvidia.com/gpu=all`**) e che la specifica CDI sia stata generata
+La GPU è obbligatoria, quindi si tratta sempre di un problema di configurazione —— verifichi entrambe le cose:
+
+- Ha avviato il container con `--device nvidia.com/gpu=all` —— **non con `--runtime nvidia`**,
+  che non inietta i nodi dei dispositivi
+- La specifica CDI esiste sull'host (`/etc/cdi/nvidia.yaml`) —— vedere
+  [03-Deployment §4](../deployment/03-Deployment.md)
 
 ### Il container non parte, con un errore CDI
 
@@ -63,8 +66,7 @@ sudo rm -f /var/run/cdi/nvidia.yaml
 sudo systemctl restart docker
 ```
 
-(Sulla nostra scheda questo problema si ripresenta a ogni riavvio; per i dettagli vedere
-developer/03-Board-Remote-Testing.md.)
+(Questo problema si ripresenta a ogni riavvio.)
 
 ### La calibrazione va rifatta ogni volta
 
@@ -156,12 +158,9 @@ funzionano solo i 14 tipi originali. `xlerobot` non è tra questi; per quello se
 
 ```bash
 # scaricare l'immagine
-docker pull chenyang310/xlerobot:cpu-slim
+docker pull chenyang310/xlerobot:jetson
 
-# avvio (versione generica)
-bash scripts/run.sh cpu
-
-# avvio (Jetson, con GPU)
+# avvio
 bash scripts/run.sh jetson
 
 # dopo essere entrati nel container — prima configurazione
@@ -259,8 +258,6 @@ Per la descrizione completa, vedere la sezione 4 di [xlerobot/](../xlerobot/01-O
 | HF_ENDPOINT è obbligatorio | `huggingface.co` è completamente irraggiungibile dalla Cina continentale, mentre `hf-mirror.com` è raggiungibile |
 | Su Jetson si usa CDI e non `--runtime nvidia` | negli ambienti cgroup v2 di JetPack 6/7, `--runtime nvidia` non inietta i nodi dei dispositivi |
 | La libreria di cinematica placo non viene installata | non ha wheel cp312/aarch64; XLeRobot usa la propria IK analitica e non ne ha bisogno |
-
-Per ulteriori dettagli tecnici, vedere developer/01-Jetson-Environment.md.
 
 ---
 

@@ -38,9 +38,12 @@ description: "Overview of the complete LeRobot course for the SO-ARM101 arm, cov
 ## 6. Data Collection
 
 - [Step 6: Teaching & Recording a Dataset](/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording)
+- [Step 6: Teaching & Recording a Dataset — Handshake 200](/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording-Handshake-200)
+- [Step 6: Viewing & Replaying a Dataset](/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Browse-and-Replay)
 - [Step 6: Dataset Collection Notes](/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes)
 - [Step 6: Hugging Face Account (Optional)](/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account)
 - [Step 6: Upload Dataset to Hugging Face (Optional)](/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload)
+- [Step 7 (Simulation): Collecting a Dataset — Lightwheel LeIsaac Teleoperation](/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/LeIsaac-Sim)
 
 ## 7. Model Training
 
@@ -54,6 +57,11 @@ description: "Overview of the complete LeRobot course for the SO-ARM101 arm, cov
 - [Step 7: Training — pi0.5 Command](/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5)
 - [Step 7: Training — pi0fast Command](/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast)
 - [Step 7: Training — smolvla Command](/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla)
+- [Step 7: Training — Diffusion Command](/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Diffusion)
+- [Step 7: Training — WALL-OSS Command](/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Wall-OSS)
+- [Step 7: Training — Training Command Line](/tutorials/robot-arms/so-arm101/lerobot/07-Training/Train-CLI)
+- [Step 7: Training — Parameter Tips](/tutorials/robot-arms/so-arm101/lerobot/07-Training/Training-Parameters)
+- [Step 7: Training — Imitation Learning Algorithms](/tutorials/robot-arms/so-arm101/lerobot/07-Training/Imitation-Learning-Algorithms)
 
 ## 8. Model Inference
 
@@ -63,6 +71,10 @@ description: "Overview of the complete LeRobot course for the SO-ARM101 arm, cov
 - [Step 8: Inference — pi0 Command](/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0)
 - [Step 8: Inference — pi0.5 Command](/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5)
 - [Step 8: Inference — smolvla Command](/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla)
+- [Step 8: Inference — Diffusion Command](/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Diffusion)
+- [Step 8: Inference — WALL-OSS Command](/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Wall-OSS)
+- [Step 8: Inference — NVIDIA DGX Spark](/tutorials/robot-arms/so-arm101/lerobot/08-Inference/DGX-Spark)
+- [Step 8: Inference — D-Robotics RDK S100](/tutorials/robot-arms/so-arm101/lerobot/08-Inference/RDK-S100)
 
 ## Basics
 
@@ -71,6 +83,7 @@ description: "Overview of the complete LeRobot course for the SO-ARM101 arm, cov
 - [Model Training Resources](/tutorials/robot-arms/so-arm101/basics/Training-Resources)
 - [SO-ARM100 Official 3D Print Files](/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files)
 - [URDF Files and Reference Materials](/tutorials/robot-arms/so-arm101/basics/URDF-Reference)
+- [Recommended Camera Brackets and Mounts](/tutorials/robot-arms/so-arm101/basics/Camera-Mounts-Recommended)
 
 ## Extras & Advanced
 

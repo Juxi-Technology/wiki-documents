@@ -14,21 +14,31 @@ Portare l'immagine sulla propria macchina e avviare il container. Al termine di 
 
 ## 1. Ottenere l'immagine
 
-### Metodo A: download diretto (consigliato)
+Esiste esattamente una sola immagine:
 
 ```bash
-docker pull chenyang310/xlerobot:cpu-slim
+docker pull chenyang310/xlerobot:jetson
 ```
 
-`cpu-slim` è la versione ridotta (circa 660 MB da scaricare) e contiene tutto ciò che serve per teleoperazione, calibrazione e registrazione dei dati.
+| | |
+|---|---|
+| Architettura | `arm64` |
+| Funziona su | Jetson + JetPack 7.2 |
+| Download | circa 3,6 GB (più grande una volta decompressa —— lasci 20 GB liberi) |
+| Contiene | teleoperazione, calibrazione, registrazione dei dati, addestramento e inferenza, **accelerati dalla GPU** |
 
-Per la versione completa (con visualizzazione, addestramento e policy Diffusion):
+Verifichi che sia arrivata:
 
 ```bash
-docker pull chenyang310/xlerobot:cpu
+docker images | grep xlerobot
 ```
 
-### Metodo B: costruire l'immagine da sé
+Dovrebbe vedere `chenyang310/xlerobot` con il tag `jetson`.
+
+> **Cina continentale**: questo pull funziona così com'è —— non serve alcun acceleratore di mirror. Se è lento, vedere
+> [02-Environment-Setup](02-Environment-Setup.md), sezione 2.
+
+### Costruire l'immagine da sé (maintainer)
 
 Adatto a chi ha bisogno di modifiche o vuole usare il codice sorgente più recente.
 
@@ -36,10 +46,6 @@ Adatto a chi ha bisogno di modifiche o vuole usare il codice sorgente più recen
 git clone <URL di questo repository> xlerobot-docker
 cd xlerobot-docker
 
-# versione CPU generica
-bash scripts/build.sh cpu
-
-# versione GPU per Jetson (eseguire sul Jetson)
 bash scripts/build.sh jetson
 ```
 
@@ -51,13 +57,14 @@ Gli script di build hanno già configurato i mirror per la Cina continentale (Py
 
 ---
 
-## 2. Differenze tra le versioni
+## 2. Cosa contiene l'immagine
 
-| Immagine | Dimensione | Contenuto | Adatta a |
-|---|---|---|---|
-| `cpu-slim` | circa 660 MB | teleoperazione, calibrazione, inferenza con policy ACT | far funzionare il robot e basta |
-| `cpu` | circa 1 GB | quanto sopra + visualizzazione, registrazione dati, addestramento, Diffusion | seguire il flusso completo |
-| `jetson` | circa 3,6 GB | versione CPU + **accelerazione CUDA** | Jetson, se serve l'inferenza su GPU |
+Una sola immagine, tutto incluso:
+
+- **Teleoperazione e calibrazione** —— guidare il robot a mano e salvarne la calibrazione
+- **Registrazione e riproduzione dei dati**
+- **Addestramento** —— ACT, Diffusion Policy, SmolVLA, π₀, π₀.₅, Wall-OSS
+- **Inferenza** —— eseguire una policy addestrata sul robot, **accelerata dalla GPU**
 
 ---
 
@@ -68,15 +75,12 @@ Gli script di build hanno già configurato i mirror per la Cina continentale (Py
 Se ha clonato il repository:
 
 ```bash
-# versione generica
-bash scripts/run.sh cpu
-
-# versione Jetson (aggiunge automaticamente i parametri GPU)
 bash scripts/run.sh jetson
 ```
 
 Lo script configura già tutto questo:
 
+- **GPU** —— `--device nvidia.com/gpu=all` (CDI)
 - **Passthrough dei dispositivi** —— porta seriale, telecamera, USB
 - **Rete** —— `--network host`, necessario per la teleoperazione VR e il controllo web
 - **Mount del codice sorgente** —— modificare il codice non richiede di ricostruire l'immagine
@@ -88,6 +92,8 @@ Se non si usa lo script, il comando minimo funzionante:
 
 ```bash
 docker run -it --rm \
+  --name xlerobot \
+  --device nvidia.com/gpu=all \
   --privileged \
   --network host \
   -v /dev:/dev \
@@ -95,26 +101,30 @@ docker run -it --rm \
   -v /tmp/.X11-unix:/tmp/.X11-unix \
   -e DISPLAY=$DISPLAY \
   -e HF_ENDPOINT=https://hf-mirror.com \
-  chenyang310/xlerobot:cpu-slim
+  chenyang310/xlerobot:jetson
 ```
 
 **A cosa serve ogni parametro:**
 
 | Parametro | Perché è necessario |
 |---|---|
+| `--device nvidia.com/gpu=all` | **dà la GPU al container** (via CDI). Senza questo parametro non c'è alcuna GPU |
 | `--privileged` + `-v /dev:/dev` | passthrough di porta seriale (servo SO-101), telecamera e USB |
 | `--network host` | comunicazione tra i due processi host/client (ZMQ) e controllo VR |
 | `-v ~/.cache/huggingface` | **file di calibrazione** e cache dei modelli. Senza questo mount bisogna ricalibrare a ogni riapertura del container |
 | `-v /tmp/.X11-unix` + `-e DISPLAY` | da usare quando serve la visualizzazione (finestra rerun) |
 | `-e HF_ENDPOINT` | `huggingface.co` è completamente irraggiungibile dalla Cina continentale: bisogna passare da un mirror |
 
+> Il `/home/jetson` nel percorso di mount è la directory utente **all'interno dell'immagine** —— fissarlo
+> direttamente è corretto, perché l'utente di quell'immagine si chiama `jetson`.
+
 Una volta entrati si apre una bash, con directory di lavoro `/opt/xlerobot`.
 
 ---
 
-## 4. Parametri GPU per Jetson ⚠️ diversi dalle altre piattaforme
+## 4. Parametri GPU —— il metodo CDI
 
-La versione Jetson **deve** ricevere la GPU tramite CDI, **non può usare `--runtime nvidia`**:
+L'immagine **deve** ricevere la GPU tramite CDI —— **`--runtime nvidia` non può essere usato**:
 
 ```bash
 docker run -it --rm \
@@ -189,20 +199,14 @@ Tre motivi indipendenti, e sono tutti vicoli ciechi:
    mentre il Jetson Nano è sm_53: non ha kernel nativi, e nemmeno la compilazione JIT del PTX arriva fin lì.
 3. **La piattaforma è EOL** (JetPack 4 non è più mantenuto da novembre 2024).
 
-### Raspberry Pi / Ubuntu normale / PC x86 —— ⏳ Non ancora supportati
+### Qualsiasi altra piattaforma —— ❌ Non supportata
 
-L'immagine, **per come è progettata**, li supporta —— la versione CPU generica si basa su `python:3.12-slim`,
-un'immagine di base che è pubblicata ufficialmente sia in versione amd64 sia in versione arm64.
+Raspberry Pi, i normali PC x86, Windows e macOS **non possono eseguire questa immagine**. È compilata contro lo
+stack CUDA di JetPack 7.2 ed è distribuita esclusivamente in `arm64`, quindi non esiste alcuna edizione CPU su cui
+ripiegare. Usi una scheda Jetson Orin.
 
-Ma **la versione CPU attualmente distribuita non è ancora multi-architettura** (lo script di build è un normale
-`docker build`, che produce solo l'architettura della macchina di build). Quindi oggi, scaricandola, si potrebbe
-ottenere solo amd64 o solo arm64; l'altra metà delle piattaforme non è utilizzabile.
-
-Questa parte sarà aperta quando sarà stata fatta la build multi-architettura (`docker buildx build --platform linux/amd64,linux/arm64`);
-fino a quel momento **la usi solo su Jetson Orin**.
-
-> Se non è sicuro che la propria immagine sia utilizzabile: <code v-pre>docker image inspect &lt;immagine&gt; --format '{{.Architecture}}'</code>,
-> e la confronti con `uname -m`.
+> Verifichi quello che ha: `uname -m` deve mostrare `aarch64`, e `cat /etc/nv_tegra_release`
+> deve riportare **R39**.
 
 ---
 
@@ -217,7 +221,7 @@ python -c "import torch, lerobot; print('torch', torch.__version__); print('lero
 Output previsto:
 
 ```
-torch 2.11.0+cu130     ← versione Jetson; la versione CPU mostra +cpu
+torch 2.11.0+cu130
 lerobot 0.6.2
 ```
 

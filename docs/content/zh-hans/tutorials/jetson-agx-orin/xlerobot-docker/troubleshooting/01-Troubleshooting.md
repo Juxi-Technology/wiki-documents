@@ -45,9 +45,12 @@ thread 'main' panicked at 'Library libxkbcommon-x11.so could not be loaded.'
 
 ### 容器里 `torch.cuda.is_available()` 是 False
 
-- 用的是 `cpu` / `cpu-slim` 镜像 → 正常，这些版本本来就没 GPU
-- 用的是 `jetson` 镜像 → 检查是不是用了 `--runtime nvidia`
-  （**必须用 `--device nvidia.com/gpu=all`**），以及 CDI 规范是否生成
+GPU 是必需的，所以这一定是配置问题，两处都查一下：
+
+- 启动容器时用了 `--device nvidia.com/gpu=all` —— **不是 `--runtime nvidia`**，
+  后者不注入设备节点
+- 宿主机上 CDI 规范存在（`/etc/cdi/nvidia.yaml`）—— 见
+  [03-Deployment §4](../deployment/03-Deployment.md)
 
 ### 容器起不来，报 CDI 错误
 
@@ -63,8 +66,7 @@ sudo rm -f /var/run/cdi/nvidia.yaml
 sudo systemctl restart docker
 ```
 
-（这台问题在我们自己的板子上每次重启都会复现，详见
-developer/03-Board-Remote-Testing.md。）
+（这个问题每次重启都会复现。）
 
 ### 校准每次都要重做
 
@@ -154,12 +156,9 @@ lerobot-rollout \
 
 ```bash
 # 拉镜像
-docker pull chenyang310/xlerobot:cpu-slim
+docker pull chenyang310/xlerobot:jetson
 
-# 启动（通用）
-bash scripts/run.sh cpu
-
-# 启动（Jetson，带 GPU）
+# 启动
 bash scripts/run.sh jetson
 
 # 进容器之后 —— 首次配置
@@ -258,15 +257,13 @@ lerobot-rollout \
 | Jetson 用 CDI 而不是 `--runtime nvidia` | JetPack 6/7 的 cgroup v2 环境下 `--runtime nvidia` 不注入设备节点 |
 | 不装 placo 运动学库 | 它没有 cp312/aarch64 的轮子；XLeRobot 用的是自带的解析式 IK，不依赖它 |
 
-更多技术细节见 developer/01-Jetson-Environment.md。
-
 ---
 
 ## 相关链接
 
 - [XLeRobot 项目](https://github.com/Vector-Wangel/XLeRobot)
 - [LeRobot 官方文档](https://huggingface.co/docs/lerobot)
-- [Docker Hub 使用量與限制](https://docs.docker.com/docker-hub/usage/)
+- [Docker Hub 使用量与限制](https://docs.docker.com/docker-hub/usage/)
 - [钜犀科技 Wiki](https://wiki.juxitech.com)
 
 ---

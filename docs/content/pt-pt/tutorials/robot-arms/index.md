@@ -17,6 +17,7 @@ Bem-vindo aos tutoriais da série de braços robóticos! Aqui você encontrará 
 
 Braço robótico de mesa open source de 6 eixos, com suporte ao LeRobot e a outros frameworks de IA.
 
+- [Tutoriais do Braço Robótico SO-ARM101](./so-arm101/index.md)
 - [Tutorial do SO-ARM101](./so-arm101/SO-ARM101-Tutorial.md)
 - [Guia de montagem do SO-ARM101](./so-arm101/SO-ARM101-Assembly.md)
 - [Compatibilidade do SO-ARM101 com PyTorch no Jetson Orin](./so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility.md)
@@ -55,9 +56,12 @@ Braço robótico de mesa open source de 6 eixos, com suporte ao LeRobot e a outr
 
 #### 6. Recolha de dados
 - [Etapa 6: Recolha de conjuntos de dados por ensino](./so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording.md)
+- [Etapa 6: Recolha por demonstração — Handshake 200](./so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording-Handshake-200.md)
+- [Etapa 6: Ver e reproduzir um conjunto de dados](./so-arm101/lerobot/06-Data-Collection/Browse-and-Replay.md)
 - [Etapa 6: Notas sobre a recolha de conjuntos de dados](./so-arm101/lerobot/06-Data-Collection/Collection-Notes.md)
 - [Etapa 6: Registar uma conta Hugging Face (opcional)](./so-arm101/lerobot/06-Data-Collection/HF-Account.md)
 - [Etapa 6: Carregar dados para o HuggingFace (opcional)](./so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload.md)
+- [Etapa 7 (simulação): Recolher um conjunto de dados — teleoperação Lightwheel LeIsaac](./so-arm101/lerobot/06-Data-Collection/LeIsaac-Sim.md)
 
 #### 7. Treino de modelos
 - [Etapa 7: Treino local em Ubuntu](./so-arm101/lerobot/07-Training/Local-Ubuntu.md)
@@ -70,6 +74,11 @@ Braço robótico de mesa open source de 6 eixos, com suporte ao LeRobot e a outr
 - [Etapa 7: Comando de treino pi0.5](./so-arm101/lerobot/07-Training/Command-pi0.5.md)
 - [Etapa 7: Comando de treino pi0fast](./so-arm101/lerobot/07-Training/Command-pi0fast.md)
 - [Etapa 7: Comando de treino smolvla](./so-arm101/lerobot/07-Training/Command-smolvla.md)
+- [Etapa 7: Comando de treino Diffusion](./so-arm101/lerobot/07-Training/Command-Diffusion.md)
+- [Etapa 7: Comando de treino WALL-OSS](./so-arm101/lerobot/07-Training/Command-Wall-OSS.md)
+- [Etapa 7: Linha de comandos de treino](./so-arm101/lerobot/07-Training/Train-CLI.md)
+- [Etapa 7: Recomendações de parâmetros de treino](./so-arm101/lerobot/07-Training/Training-Parameters.md)
+- [Etapa 7: Algoritmos de aprendizagem por imitação suportados pelo LeRobot](./so-arm101/lerobot/07-Training/Imitation-Learning-Algorithms.md)
 
 #### 8. Implantação
 - [Etapa 8: Descrição da linha de comando](./so-arm101/lerobot/08-Inference/CLI-Reference.md)
@@ -78,6 +87,10 @@ Braço robótico de mesa open source de 6 eixos, com suporte ao LeRobot e a outr
 - [Etapa 8: Comando de implantação pi0](./so-arm101/lerobot/08-Inference/Command-pi0.md)
 - [Etapa 8: Comando de implantação pi0.5](./so-arm101/lerobot/08-Inference/Command-pi0.5.md)
 - [Etapa 8: Comando de implantação smolvla](./so-arm101/lerobot/08-Inference/Command-smolvla.md)
+- [Etapa 8: Comando de implantação Diffusion](./so-arm101/lerobot/08-Inference/Command-Diffusion.md)
+- [Etapa 8: Comando de implantação WALL-OSS](./so-arm101/lerobot/08-Inference/Command-Wall-OSS.md)
+- [Etapa 8: Inferência NVIDIA DGX Spark](./so-arm101/lerobot/08-Inference/DGX-Spark.md)
+- [Etapa 8: Inferência D-Robotics RDK S100](./so-arm101/lerobot/08-Inference/RDK-S100.md)
 
 #### Noções básicas
 - [Conhecer o LeRobot](./so-arm101/basics/Understanding-LeRobot.md)
@@ -85,10 +98,20 @@ Braço robótico de mesa open source de 6 eixos, com suporte ao LeRobot e a outr
 - [Materiais para o treino de modelos](./so-arm101/basics/Training-Resources.md)
 - [Ficheiros oficiais de impressão 3D do SO-ARM 100](./so-arm101/basics/Official-3D-Print-Files.md)
 - [Ficheiros URDF e materiais de referência](./so-arm101/basics/URDF-Reference.md)
+- [Suportes e fixações de câmara recomendados](./so-arm101/basics/Camera-Mounts-Recommended.md)
 
 #### Tópicos adicionais
 - [Controlo de simulação ROS2](./so-arm101/ROS2-Simulation-Control.md)
 - [Instalação da garra de dedos paralelos](./so-arm101/Parallel-Finger-Gripper-Installation.md)
+
+#### Tutorial do LeLab
+- [1 · Visão geral](./so-arm101/lelab/01-Overview.md)
+- [2 · Instalar e executar](./so-arm101/lelab/02-Install.md)
+- [3 · Ligar e calibrar](./so-arm101/lelab/03-Calibration.md)
+- [4 · Teleoperação](./so-arm101/lelab/04-Teleoperation.md)
+- [5 · Gravar um conjunto de dados](./so-arm101/lelab/05-Record-Dataset.md)
+- [6 · Treinar e executar inferência](./so-arm101/lelab/06-Train-and-Inference.md)
+- [7 · Resolução de problemas](./so-arm101/lelab/07-Troubleshooting.md)
 
 
 ### Tutorial do braço robótico SO-ARM101 de 7 eixos
@@ -213,6 +236,8 @@ Tutoriais do XLeRobot: configuração, implementação de ficheiros e montagem (
 - [Mover ficheiros do XLeRobot](./xlerobot/02-Move-Xlerobot-Files.md)
 - [Montagem do kit montado](./xlerobot/03-Assembly-Assembled-Kit.md)
 - [Montagem do kit em peças](./xlerobot/04-Assembly-Parts-Kit.md)
+- [Tutorial do XLeRobot Docker — Kit de Desenvolvedor Jetson AGX Orin](/pt-pt/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview)
+- [Tutorial do XLeRobot Docker — Kit de Desenvolvedor Jetson Orin Nano Super](/pt-pt/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview)
 
 ---
 

@@ -38,9 +38,12 @@ description: "데이터 수집부터 모델 학습과 배포까지, SO-ARM101 �
 ## 6. 데이터셋 수집
 
 - [6단계: 시연 데이터셋 수집](/ko/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording)
+- [6단계: 시연 데이터셋 수집 — Handshake 200](/ko/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording-Handshake-200)
+- [6단계: 데이터셋 보기 및 재생](/ko/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Browse-and-Replay)
 - [6단계: 데이터셋 수집 주의 사항](/ko/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes)
 - [6단계: Hugging Face 계정 등록(선택 사항)](/ko/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account)
 - [6단계: HuggingFace에 데이터셋 업로드(선택 사항)](/ko/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload)
+- [7단계(시뮬레이션): 데이터셋 수집 — Lightwheel LeIsaac 시뮬레이션 원격조작](/ko/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/LeIsaac-Sim)
 
 ## 7. 모델 학습
 
@@ -54,6 +57,11 @@ description: "데이터 수집부터 모델 학습과 배포까지, SO-ARM101 �
 - [7단계: pi0.5 학습 커맨드라인](/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5)
 - [7단계: pi0fast 학습 커맨드라인](/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast)
 - [7단계: smolvla 학습 커맨드라인](/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla)
+- [7단계: Diffusion 학습 커맨드라인](/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Diffusion)
+- [7단계: WALL-OSS 학습 커맨드라인](/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Wall-OSS)
+- [7단계: 학습 커맨드라인](/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Train-CLI)
+- [7단계: 학습 파라미터 권장 사항](/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Training-Parameters)
+- [7단계: LeRobot가 지원하는 모방 학습 알고리즘](/ko/tutorials/robot-arms/so-arm101/lerobot/07-Training/Imitation-Learning-Algorithms)
 
 ## 8. 모델 배포
 
@@ -63,6 +71,10 @@ description: "데이터 수집부터 모델 학습과 배포까지, SO-ARM101 �
 - [8단계: pi0 배포 커맨드라인](/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0)
 - [8단계: pi0.5 배포 커맨드라인](/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5)
 - [8단계: smolvla 배포 커맨드라인](/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla)
+- [8단계: Diffusion 배포 커맨드라인](/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Diffusion)
+- [8단계: WALL-OSS 배포 커맨드라인](/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Wall-OSS)
+- [8단계: NVIDIA DGX Spark 추론](/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/DGX-Spark)
+- [8단계: D-Robotics RDK S100 추론](/ko/tutorials/robot-arms/so-arm101/lerobot/08-Inference/RDK-S100)
 
 ## 기초 지식
 
@@ -71,6 +83,7 @@ description: "데이터 수집부터 모델 학습과 배포까지, SO-ARM101 �
 - [모델 학습 자료](/ko/tutorials/robot-arms/so-arm101/basics/Training-Resources)
 - [SO-ARM 100 로봇 암 공식 3D 프린팅 파일](/ko/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files)
 - [URDF 파일 및 자료 참고](/ko/tutorials/robot-arms/so-arm101/basics/URDF-Reference)
+- [권장 카메라 브래킷 및 마운트](/ko/tutorials/robot-arms/so-arm101/basics/Camera-Mounts-Recommended)
 
 ## 기타 및 심화
 

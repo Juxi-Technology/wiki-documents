@@ -17,3 +17,9 @@ Tutorial https://xlerobot.readthedocs.io/zh-cn/latest/software/index.html
 - [Parts-Kit Assembly](./04-Assembly-Parts-Kit.md)
 
 <RelatedProducts slugs="xlerobot" />
+
+## XLeRobot Docker Image Tutorial
+
+- [XLeRobot Docker Tutorial — Jetson AGX Orin](/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview)
+- [XLeRobot Docker Tutorial — Jetson Orin Nano](/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview)
+

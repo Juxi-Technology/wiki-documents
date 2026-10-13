@@ -38,9 +38,12 @@ description: "SO-ARM101 机械臂 LeRobot 完整课程总览:从安装环境、�
 ## 6. 采集数据集(真机)
 
 - [第六步:采集数据集(真机)——示教采集](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording)
+- [第六步:采集数据集(真机)——握手200 采集示例](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording-Handshake-200)
+- [第六步:采集数据集(真机)——回看与回放](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Browse-and-Replay)
 - [第六步:采集数据集(真机)——注意事项](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes)
 - [第六步:采集数据集(真机)——注册 Hugging Face 账号(可选)](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account)
 - [第六步:采集数据集(真机)——上传数据集到 Hugging Face(可选)](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload)
+- [第七步(仿真):采集数据集——光轮智能 LeIsaac 仿真遥操](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/LeIsaac-Sim)
 
 ## 7. 训练模型
 
@@ -54,6 +57,11 @@ description: "SO-ARM101 机械臂 LeRobot 完整课程总览:从安装环境、�
 - [第七步:训练模型——pi0.5 训练命令](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5)
 - [第七步:训练模型——pi0fast 训练命令](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast)
 - [第七步:训练模型——smolvla 训练命令](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla)
+- [第七步:训练模型——Diffusion 训练命令](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Diffusion)
+- [第七步:训练模型——WALL-OSS 训练命令](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Wall-OSS)
+- [第七步:训练模型——训练命令行](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Train-CLI)
+- [第七步:训练模型——训练参数建议](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Training-Parameters)
+- [第七步:训练模型——LeRobot 支持的模仿学习算法](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/07-Training/Imitation-Learning-Algorithms)
 
 ## 8. 模型推理
 
@@ -63,6 +71,10 @@ description: "SO-ARM101 机械臂 LeRobot 完整课程总览:从安装环境、�
 - [第八步:模型推理——pi0 推理命令](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0)
 - [第八步:模型推理——pi0.5 推理命令](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5)
 - [第八步:模型推理——smolvla 推理命令](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla)
+- [第八步:模型推理——Diffusion 推理命令](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Diffusion)
+- [第八步:模型推理——WALL-OSS 推理命令](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Wall-OSS)
+- [第八步:模型推理——英伟达 DGX Spark](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/DGX-Spark)
+- [第八步:模型推理——地瓜机器人 RDK S100](/zh-hans/tutorials/robot-arms/so-arm101/lerobot/08-Inference/RDK-S100)
 
 ## 基础知识
 
@@ -71,6 +83,7 @@ description: "SO-ARM101 机械臂 LeRobot 完整课程总览:从安装环境、�
 - [模型训练的资料](/zh-hans/tutorials/robot-arms/so-arm101/basics/Training-Resources)
 - [SO-ARM 100 机械臂官方 3D 打印文件](/zh-hans/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files)
 - [URDF 文件及资料参考](/zh-hans/tutorials/robot-arms/so-arm101/basics/URDF-Reference)
+- [摄像头支架和安装座推荐](/zh-hans/tutorials/robot-arms/so-arm101/basics/Camera-Mounts-Recommended)
 
 ## 专题与进阶
 

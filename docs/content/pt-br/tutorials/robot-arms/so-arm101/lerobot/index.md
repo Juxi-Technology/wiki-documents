@@ -38,9 +38,12 @@ description: "Visão geral do curso do LeRobot com o braço SO-ARM101: oito etap
 ## 6. Coleta de dados
 
 - [Etapa 6: Coleta de dados por demonstração](/pt-br/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording)
+- [Etapa 6: Coleta por demonstração — Handshake 200](/pt-br/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording-Handshake-200)
+- [Etapa 6: Visualizar e reproduzir um dataset](/pt-br/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Browse-and-Replay)
 - [Etapa 6: Observações sobre a coleta de dados](/pt-br/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/Collection-Notes)
 - [Etapa 6: Registrar conta no Hugging Face (opcional)](/pt-br/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Account)
 - [Etapa 6: Enviar o dataset ao Hugging Face (opcional)](/pt-br/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload)
+- [Etapa 7 (simulação): Coletar um dataset — teleoperação Lightwheel LeIsaac](/pt-br/tutorials/robot-arms/so-arm101/lerobot/06-Data-Collection/LeIsaac-Sim)
 
 ## 7. Treinamento
 
@@ -54,6 +57,11 @@ description: "Visão geral do curso do LeRobot com o braço SO-ARM101: oito etap
 - [Etapa 7: Comando de treinamento — pi0.5](/pt-br/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0.5)
 - [Etapa 7: Comando de treinamento — pi0fast](/pt-br/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-pi0fast)
 - [Etapa 7: Comando de treinamento — SmolVLA](/pt-br/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-smolvla)
+- [Etapa 7: Comando de treinamento — Diffusion](/pt-br/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Diffusion)
+- [Etapa 7: Comando de treinamento — WALL-OSS](/pt-br/tutorials/robot-arms/so-arm101/lerobot/07-Training/Command-Wall-OSS)
+- [Etapa 7: Linha de comando de treinamento](/pt-br/tutorials/robot-arms/so-arm101/lerobot/07-Training/Train-CLI)
+- [Etapa 7: Recomendações de parâmetros de treinamento](/pt-br/tutorials/robot-arms/so-arm101/lerobot/07-Training/Training-Parameters)
+- [Etapa 7: Algoritmos de aprendizado por imitação compatíveis com o LeRobot](/pt-br/tutorials/robot-arms/so-arm101/lerobot/07-Training/Imitation-Learning-Algorithms)
 
 ## 8. Inferência
 
@@ -63,6 +71,10 @@ description: "Visão geral do curso do LeRobot com o braço SO-ARM101: oito etap
 - [Etapa 8: Comando de inferência — pi0](/pt-br/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0)
 - [Etapa 8: Comando de inferência — pi0.5](/pt-br/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-pi0.5)
 - [Etapa 8: Comando de inferência — SmolVLA](/pt-br/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-smolvla)
+- [Etapa 8: Comando de inferência — Diffusion](/pt-br/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Diffusion)
+- [Etapa 8: Comando de inferência — WALL-OSS](/pt-br/tutorials/robot-arms/so-arm101/lerobot/08-Inference/Command-Wall-OSS)
+- [Etapa 8: Inferência no NVIDIA DGX Spark](/pt-br/tutorials/robot-arms/so-arm101/lerobot/08-Inference/DGX-Spark)
+- [Etapa 8: Inferência no D-Robotics RDK S100](/pt-br/tutorials/robot-arms/so-arm101/lerobot/08-Inference/RDK-S100)
 
 ## Fundamentos
 
@@ -71,6 +83,7 @@ description: "Visão geral do curso do LeRobot com o braço SO-ARM101: oito etap
 - [Materiais para treinamento de modelos](/pt-br/tutorials/robot-arms/so-arm101/basics/Training-Resources)
 - [Arquivos oficiais de impressão 3D do SO-ARM 100](/pt-br/tutorials/robot-arms/so-arm101/basics/Official-3D-Print-Files)
 - [Arquivos URDF e materiais de referência](/pt-br/tutorials/robot-arms/so-arm101/basics/URDF-Reference)
+- [Brackets e suportes de câmera recomendados](/pt-br/tutorials/robot-arms/so-arm101/basics/Camera-Mounts-Recommended)
 
 ## Extras e avançado
 

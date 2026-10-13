@@ -31,39 +31,33 @@ LeRobot, the XLeRobot robot code, and the servo and camera drivers. You no longe
 
 | Platform | Support |
 |---|---|
-| **Jetson Orin series** (JetPack 7.2) | ✅ **Currently the officially supported platform**, with GPU acceleration |
-| Jetson Nano (2019 original) | ❌ Not supported — too little compute; see below |
-| Raspberry Pi / regular Ubuntu / x86 PC | ⏳ **Not supported yet** — see below |
-| Windows / macOS | ❌ Not supported (serial and camera passthrough only works smoothly on Linux) |
+| **Jetson Orin series** (JetPack 7.2) | ✅ **The only supported platform**, with GPU acceleration |
+| Anything else | ❌ Not supported |
 
-> 💡 **This image currently targets Jetson Orin devices only.**
+> ⚠️ **This image is built for Jetson + JetPack 7.2 only.** Raspberry Pi, ordinary x86 PCs,
+> Windows, macOS and non-Orin Jetson boards cannot use it.
 >
 > - **Jetson Orin Nano / Orin NX / AGX Orin**: requires **JetPack 7.2**
 >   (L4T 39.2 / CUDA 13.2). AGX Orin 64GB is only fully supported on 7.2 as well.
 > - **Jetson Nano (2019 original)**: ❌ never. It's Maxwell architecture (compute capability 5.3),
 >   and CUDA 13 dropped Maxwell support entirely, while torch requires at least sm_80.
-> - **Raspberry Pi / x86 PC**: supported by the image's design (the generic CPU edition is based on
->   `python:3.12-slim`, which upstream ships in both amd64 and arm64 versions),
->   but **the published CPU edition isn't multi-arch yet** —
->   a pull may get you amd64-only or arm64-only. That opens up once the multi-arch build is done.
 >
 > 4 GB of memory or more is recommended. The Jetson Orin Nano's 3.4 GB can run teleoperation,
 > but training will struggle.
 
 ### System requirements
 
-- Ubuntu 20.04 / 22.04 / 24.04, or Debian 12+
-- Raspberry Pi: requires a 64-bit OS (`uname -m` shows `aarch64`)
+- **JetPack 7.2** (L4T r39 / Ubuntu 24.04)
+- Architecture: `arm64`
 - Kernel support for USB serial (present on virtually all systems)
 
-### Check your architecture
+### Check your JetPack version
 
 ```bash
-uname -m
+cat /etc/nv_tegra_release
 ```
 
-- `aarch64` → Raspberry Pi, Jetson (use the arm64 image)
-- `x86_64` → regular PC (use the amd64 image)
+Seeing **R39** means you're good. Anything else — upgrade JetPack first; the image is built for it.
 
 ---
 

@@ -17,3 +17,9 @@ Tutoriel https://xlerobot.readthedocs.io/zh-cn/latest/software/index.html
 - [Assemblage du kit en pièces](./04-Assembly-Parts-Kit.md)
 
 <RelatedProducts slugs="xlerobot" />
+
+## Tutoriel de l'image Docker XLeRobot
+
+- [Tutoriel XLeRobot Docker — Kit de développement Jetson AGX Orin](/fr/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview)
+- [Tutoriel XLeRobot Docker — Kit de développement Jetson Orin Nano Super](/fr/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview)
+

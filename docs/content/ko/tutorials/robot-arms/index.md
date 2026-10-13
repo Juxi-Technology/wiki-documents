@@ -17,6 +17,7 @@ description: "Juxi Technology 로봇 팔 시리즈 튜토리얼 홈——SO-ARM1
 
 6축 데스크톱 오픈소스 로봇 팔. LeRobot 등 AI 프레임워크 지원.
 
+- [SO-ARM101 로봇 암 튜토리얼](./so-arm101/index.md)
 - [SO-ARM101 튜토리얼](./so-arm101/SO-ARM101-Tutorial.md)
 - [SO-ARM101 조립 가이드](./so-arm101/SO-ARM101-Assembly.md)
 - [SO-ARM101 Jetson Orin PyTorch 호환성](./so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility.md)
@@ -55,9 +56,12 @@ description: "Juxi Technology 로봇 팔 시리즈 튜토리얼 홈——SO-ARM1
 
 #### 6. 데이터셋 수집
 - [6단계: 시연 데이터셋 수집](./so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording.md)
+- [6단계: 시연 데이터셋 수집 — Handshake 200](./so-arm101/lerobot/06-Data-Collection/Teaching-and-Recording-Handshake-200.md)
+- [6단계: 데이터셋 보기 및 재생](./so-arm101/lerobot/06-Data-Collection/Browse-and-Replay.md)
 - [6단계: 데이터셋 수집 주의 사항](./so-arm101/lerobot/06-Data-Collection/Collection-Notes.md)
 - [6단계: Hugging Face 계정 등록(선택 사항)](./so-arm101/lerobot/06-Data-Collection/HF-Account.md)
 - [6단계: HuggingFace에 데이터셋 업로드(선택 사항)](./so-arm101/lerobot/06-Data-Collection/HF-Dataset-Upload.md)
+- [7단계(시뮬레이션): 데이터셋 수집 — Lightwheel LeIsaac 시뮬레이션 원격조작](./so-arm101/lerobot/06-Data-Collection/LeIsaac-Sim.md)
 
 #### 7. 모델 학습
 - [7단계: 로컬 Ubuntu 학습](./so-arm101/lerobot/07-Training/Local-Ubuntu.md)
@@ -70,6 +74,11 @@ description: "Juxi Technology 로봇 팔 시리즈 튜토리얼 홈——SO-ARM1
 - [7단계: pi0.5 학습 커맨드라인](./so-arm101/lerobot/07-Training/Command-pi0.5.md)
 - [7단계: pi0fast 학습 커맨드라인](./so-arm101/lerobot/07-Training/Command-pi0fast.md)
 - [7단계: smolvla 학습 커맨드라인](./so-arm101/lerobot/07-Training/Command-smolvla.md)
+- [7단계: Diffusion 학습 커맨드라인](./so-arm101/lerobot/07-Training/Command-Diffusion.md)
+- [7단계: WALL-OSS 학습 커맨드라인](./so-arm101/lerobot/07-Training/Command-Wall-OSS.md)
+- [7단계: 학습 커맨드라인](./so-arm101/lerobot/07-Training/Train-CLI.md)
+- [7단계: 학습 파라미터 권장 사항](./so-arm101/lerobot/07-Training/Training-Parameters.md)
+- [7단계: LeRobot가 지원하는 모방 학습 알고리즘](./so-arm101/lerobot/07-Training/Imitation-Learning-Algorithms.md)
 
 #### 8. 모델 배포
 - [8단계: 커맨드라인 설명](./so-arm101/lerobot/08-Inference/CLI-Reference.md)
@@ -78,6 +87,10 @@ description: "Juxi Technology 로봇 팔 시리즈 튜토리얼 홈——SO-ARM1
 - [8단계: pi0 배포 커맨드라인](./so-arm101/lerobot/08-Inference/Command-pi0.md)
 - [8단계: pi0.5 배포 커맨드라인](./so-arm101/lerobot/08-Inference/Command-pi0.5.md)
 - [8단계: smolvla 배포 커맨드라인](./so-arm101/lerobot/08-Inference/Command-smolvla.md)
+- [8단계: Diffusion 배포 커맨드라인](./so-arm101/lerobot/08-Inference/Command-Diffusion.md)
+- [8단계: WALL-OSS 배포 커맨드라인](./so-arm101/lerobot/08-Inference/Command-Wall-OSS.md)
+- [8단계: NVIDIA DGX Spark 추론](./so-arm101/lerobot/08-Inference/DGX-Spark.md)
+- [8단계: D-Robotics RDK S100 추론](./so-arm101/lerobot/08-Inference/RDK-S100.md)
 
 #### 기초 지식
 - [LeRobot 알아보기](./so-arm101/basics/Understanding-LeRobot.md)
@@ -85,10 +98,20 @@ description: "Juxi Technology 로봇 팔 시리즈 튜토리얼 홈——SO-ARM1
 - [모델 학습 자료](./so-arm101/basics/Training-Resources.md)
 - [SO-ARM 100 로봇 암 공식 3D 프린팅 파일](./so-arm101/basics/Official-3D-Print-Files.md)
 - [URDF 파일 및 자료 참고](./so-arm101/basics/URDF-Reference.md)
+- [권장 카메라 브래킷 및 마운트](./so-arm101/basics/Camera-Mounts-Recommended.md)
 
 #### 기타 및 심화
 - [ROS2 시뮬레이션 제어](./so-arm101/ROS2-Simulation-Control.md)
 - [평행 핑거 그리퍼 설치 튜토리얼](./so-arm101/Parallel-Finger-Gripper-Installation.md)
+
+#### LeLab 튜토리얼
+- [1 · 개요](./so-arm101/lelab/01-Overview.md)
+- [2 · 설치 및 실행](./so-arm101/lelab/02-Install.md)
+- [3 · 연결 및 캘리브레이션](./so-arm101/lelab/03-Calibration.md)
+- [4 · 텔레오퍼레이션](./so-arm101/lelab/04-Teleoperation.md)
+- [5 · 데이터셋 녹화](./so-arm101/lelab/05-Record-Dataset.md)
+- [6 · 학습과 추론](./so-arm101/lelab/06-Train-and-Inference.md)
+- [7 · 문제 해결](./so-arm101/lelab/07-Troubleshooting.md)
 
 
 ### SO-ARM101 로봇 암 7축 튜토리얼
@@ -213,6 +236,8 @@ XLeRobot 양팔 이동 로봇 튜토리얼: 환경 구축, 파일 배치, 완제
 - [XLeRobot 파일 이동](./xlerobot/02-Move-Xlerobot-Files.md)
 - [완제품 조립](./xlerobot/03-Assembly-Assembled-Kit.md)
 - [부품 키트 조립](./xlerobot/04-Assembly-Parts-Kit.md)
+- [XLeRobot Docker 튜토리얼 — Jetson AGX Orin](/ko/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview)
+- [XLeRobot Docker 튜토리얼 — Jetson Orin Nano](/ko/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview)
 
 ---
 
