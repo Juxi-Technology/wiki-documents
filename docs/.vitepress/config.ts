@@ -479,6 +479,36 @@ const zhCN = {
                     },
                   ],
                 },
+                {
+                  text: 'XLeRobot Docker 镜像教程',
+                  collapsed: true,
+                  items: [
+                    {
+                      text: 'Jetson AGX Orin 开发者套件',
+                      collapsed: true,
+                      items: [
+                        { text: '01 · 总览', link: '/zh-hans/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview' },
+                        { text: '02 · 环境准备', link: '/zh-hans/tutorials/jetson-agx-orin/xlerobot-docker/deployment/02-Environment-Setup' },
+                        { text: '03 · 部署', link: '/zh-hans/tutorials/jetson-agx-orin/xlerobot-docker/deployment/03-Deployment' },
+                        { text: '原版 LeRobot 运行指令', link: '/zh-hans/tutorials/jetson-agx-orin/xlerobot-docker/lerobot/01-Operation' },
+                        { text: 'XLeRobot 运行指令', link: '/zh-hans/tutorials/jetson-agx-orin/xlerobot-docker/xlerobot/01-Operation' },
+                        { text: '常见问题与速查', link: '/zh-hans/tutorials/jetson-agx-orin/xlerobot-docker/troubleshooting/01-Troubleshooting' },
+                      ],
+                    },
+                    {
+                      text: 'Jetson Orin Nano 开发者套件',
+                      collapsed: true,
+                      items: [
+                        { text: '01 · 总览', link: '/zh-hans/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview' },
+                        { text: '02 · 环境准备', link: '/zh-hans/tutorials/jetson-orin-nano/xlerobot-docker/deployment/02-Environment-Setup' },
+                        { text: '03 · 部署', link: '/zh-hans/tutorials/jetson-orin-nano/xlerobot-docker/deployment/03-Deployment' },
+                        { text: '原版 LeRobot 运行指令', link: '/zh-hans/tutorials/jetson-orin-nano/xlerobot-docker/lerobot/01-Operation' },
+                        { text: 'XLeRobot 运行指令', link: '/zh-hans/tutorials/jetson-orin-nano/xlerobot-docker/xlerobot/01-Operation' },
+                        { text: '常见问题与速查', link: '/zh-hans/tutorials/jetson-orin-nano/xlerobot-docker/troubleshooting/01-Troubleshooting' },
+                      ],
+                    },
+                  ],
+                },
               ],
             },
             {
@@ -1181,6 +1211,36 @@ const en = {
                         { text: 'Common Bugs and Fixes', link: '/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Common-Bugs' },
                         { text: 'NVIDIA DGX Spark Inference', link: '/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/DGX-Spark' },
                         { text: 'D-Robotics RDK S100 Inference', link: '/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/RDK-S100' },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  text: 'XLeRobot Docker Image Tutorial',
+                  collapsed: true,
+                  items: [
+                    {
+                      text: 'Jetson AGX Orin',
+                      collapsed: true,
+                      items: [
+                        { text: '01 · Overview', link: '/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview' },
+                        { text: '02 · Environment Setup', link: '/tutorials/jetson-agx-orin/xlerobot-docker/deployment/02-Environment-Setup' },
+                        { text: '03 · Deployment', link: '/tutorials/jetson-agx-orin/xlerobot-docker/deployment/03-Deployment' },
+                        { text: 'Original LeRobot Operation', link: '/tutorials/jetson-agx-orin/xlerobot-docker/lerobot/01-Operation' },
+                        { text: 'XLeRobot Operation', link: '/tutorials/jetson-agx-orin/xlerobot-docker/xlerobot/01-Operation' },
+                        { text: 'Troubleshooting and Quick Reference', link: '/tutorials/jetson-agx-orin/xlerobot-docker/troubleshooting/01-Troubleshooting' },
+                      ],
+                    },
+                    {
+                      text: 'Jetson Orin Nano',
+                      collapsed: true,
+                      items: [
+                        { text: '01 · Overview', link: '/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview' },
+                        { text: '02 · Environment Setup', link: '/tutorials/jetson-orin-nano/xlerobot-docker/deployment/02-Environment-Setup' },
+                        { text: '03 · Deployment', link: '/tutorials/jetson-orin-nano/xlerobot-docker/deployment/03-Deployment' },
+                        { text: 'Original LeRobot Operation', link: '/tutorials/jetson-orin-nano/xlerobot-docker/lerobot/01-Operation' },
+                        { text: 'XLeRobot Operation', link: '/tutorials/jetson-orin-nano/xlerobot-docker/xlerobot/01-Operation' },
+                        { text: 'Troubleshooting and Quick Reference', link: '/tutorials/jetson-orin-nano/xlerobot-docker/troubleshooting/01-Troubleshooting' },
                       ],
                     },
                   ],
@@ -1891,6 +1951,36 @@ const zhHK = {
                     },
                   ],
                 },
+                {
+                  text: 'XLeRobot Docker 映像教程',
+                  collapsed: true,
+                  items: [
+                    {
+                      text: 'Jetson AGX Orin 開發套件',
+                      collapsed: true,
+                      items: [
+                        { text: '01 · 總覽', link: '/zh-hant/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview' },
+                        { text: '02 · 環境準備', link: '/zh-hant/tutorials/jetson-agx-orin/xlerobot-docker/deployment/02-Environment-Setup' },
+                        { text: '03 · 部署', link: '/zh-hant/tutorials/jetson-agx-orin/xlerobot-docker/deployment/03-Deployment' },
+                        { text: '原版 LeRobot 執行指令', link: '/zh-hant/tutorials/jetson-agx-orin/xlerobot-docker/lerobot/01-Operation' },
+                        { text: 'XLeRobot 執行指令', link: '/zh-hant/tutorials/jetson-agx-orin/xlerobot-docker/xlerobot/01-Operation' },
+                        { text: '常見問題與速查', link: '/zh-hant/tutorials/jetson-agx-orin/xlerobot-docker/troubleshooting/01-Troubleshooting' },
+                      ],
+                    },
+                    {
+                      text: 'Jetson Orin Nano 開發套件',
+                      collapsed: true,
+                      items: [
+                        { text: '01 · 總覽', link: '/zh-hant/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview' },
+                        { text: '02 · 環境準備', link: '/zh-hant/tutorials/jetson-orin-nano/xlerobot-docker/deployment/02-Environment-Setup' },
+                        { text: '03 · 部署', link: '/zh-hant/tutorials/jetson-orin-nano/xlerobot-docker/deployment/03-Deployment' },
+                        { text: '原版 LeRobot 執行指令', link: '/zh-hant/tutorials/jetson-orin-nano/xlerobot-docker/lerobot/01-Operation' },
+                        { text: 'XLeRobot 執行指令', link: '/zh-hant/tutorials/jetson-orin-nano/xlerobot-docker/xlerobot/01-Operation' },
+                        { text: '常見問題與速查', link: '/zh-hant/tutorials/jetson-orin-nano/xlerobot-docker/troubleshooting/01-Troubleshooting' },
+                      ],
+                    },
+                  ],
+                },
               ],
             },
             {
@@ -2587,6 +2677,36 @@ export default defineConfig({
                     },
                   ],
                 },
+                {
+                  text: 'XLeRobot Docker イメージチュートリアル',
+                  collapsed: true,
+                  items: [
+                    {
+                      text: 'Jetson AGX Orin 開発キット',
+                      collapsed: true,
+                      items: [
+                        { text: '01 · 概要', link: '/ja/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview' },
+                        { text: '02 · 環境準備', link: '/ja/tutorials/jetson-agx-orin/xlerobot-docker/deployment/02-Environment-Setup' },
+                        { text: '03 · デプロイ', link: '/ja/tutorials/jetson-agx-orin/xlerobot-docker/deployment/03-Deployment' },
+                        { text: '原版 LeRobot の実行コマンド', link: '/ja/tutorials/jetson-agx-orin/xlerobot-docker/lerobot/01-Operation' },
+                        { text: 'XLeRobot の実行コマンド', link: '/ja/tutorials/jetson-agx-orin/xlerobot-docker/xlerobot/01-Operation' },
+                        { text: 'トラブルシューティングと早見表', link: '/ja/tutorials/jetson-agx-orin/xlerobot-docker/troubleshooting/01-Troubleshooting' },
+                      ],
+                    },
+                    {
+                      text: 'Jetson Orin Nano Super 開発キット',
+                      collapsed: true,
+                      items: [
+                        { text: '01 · 概要', link: '/ja/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview' },
+                        { text: '02 · 環境準備', link: '/ja/tutorials/jetson-orin-nano/xlerobot-docker/deployment/02-Environment-Setup' },
+                        { text: '03 · デプロイ', link: '/ja/tutorials/jetson-orin-nano/xlerobot-docker/deployment/03-Deployment' },
+                        { text: '原版 LeRobot の実行コマンド', link: '/ja/tutorials/jetson-orin-nano/xlerobot-docker/lerobot/01-Operation' },
+                        { text: 'XLeRobot の実行コマンド', link: '/ja/tutorials/jetson-orin-nano/xlerobot-docker/xlerobot/01-Operation' },
+                        { text: 'トラブルシューティングと早見表', link: '/ja/tutorials/jetson-orin-nano/xlerobot-docker/troubleshooting/01-Troubleshooting' },
+                      ],
+                    },
+                  ],
+                },
               ],
             },
             {
@@ -3184,6 +3304,36 @@ export default defineConfig({
                         { text: '자주 발생하는 Bug 및 해결', link: '/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Common-Bugs' },
                         { text: 'NVIDIA DGX Spark 추론', link: '/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/DGX-Spark' },
                         { text: 'D-Robotics RDK S100 추론', link: '/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/RDK-S100' },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  text: 'XLeRobot Docker 이미지 튜토리얼',
+                  collapsed: true,
+                  items: [
+                    {
+                      text: 'Jetson AGX Orin',
+                      collapsed: true,
+                      items: [
+                        { text: '01 · 개요', link: '/ko/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview' },
+                        { text: '02 · 환경 준비', link: '/ko/tutorials/jetson-agx-orin/xlerobot-docker/deployment/02-Environment-Setup' },
+                        { text: '03 · 배포', link: '/ko/tutorials/jetson-agx-orin/xlerobot-docker/deployment/03-Deployment' },
+                        { text: '원본 LeRobot 실행 명령', link: '/ko/tutorials/jetson-agx-orin/xlerobot-docker/lerobot/01-Operation' },
+                        { text: 'XLeRobot 실행 명령', link: '/ko/tutorials/jetson-agx-orin/xlerobot-docker/xlerobot/01-Operation' },
+                        { text: '문제 해결 및 빠른 참조', link: '/ko/tutorials/jetson-agx-orin/xlerobot-docker/troubleshooting/01-Troubleshooting' },
+                      ],
+                    },
+                    {
+                      text: 'Jetson Orin Nano',
+                      collapsed: true,
+                      items: [
+                        { text: '01 · 개요', link: '/ko/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview' },
+                        { text: '02 · 환경 준비', link: '/ko/tutorials/jetson-orin-nano/xlerobot-docker/deployment/02-Environment-Setup' },
+                        { text: '03 · 배포', link: '/ko/tutorials/jetson-orin-nano/xlerobot-docker/deployment/03-Deployment' },
+                        { text: '원본 LeRobot 실행 명령', link: '/ko/tutorials/jetson-orin-nano/xlerobot-docker/lerobot/01-Operation' },
+                        { text: 'XLeRobot 실행 명령', link: '/ko/tutorials/jetson-orin-nano/xlerobot-docker/xlerobot/01-Operation' },
+                        { text: '문제 해결 및 빠른 참조', link: '/ko/tutorials/jetson-orin-nano/xlerobot-docker/troubleshooting/01-Troubleshooting' },
                       ],
                     },
                   ],
@@ -3789,6 +3939,36 @@ export default defineConfig({
                     },
                   ],
                 },
+                {
+                  text: 'XLeRobot-Docker-Image-Tutorial',
+                  collapsed: true,
+                  items: [
+                    {
+                      text: 'Jetson AGX Orin Developer Kit',
+                      collapsed: true,
+                      items: [
+                        { text: '01 · Überblick', link: '/de/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview' },
+                        { text: '02 · Umgebung einrichten', link: '/de/tutorials/jetson-agx-orin/xlerobot-docker/deployment/02-Environment-Setup' },
+                        { text: '03 · Bereitstellung', link: '/de/tutorials/jetson-agx-orin/xlerobot-docker/deployment/03-Deployment' },
+                        { text: 'Original-LeRobot-Befehle', link: '/de/tutorials/jetson-agx-orin/xlerobot-docker/lerobot/01-Operation' },
+                        { text: 'XLeRobot-Befehle', link: '/de/tutorials/jetson-agx-orin/xlerobot-docker/xlerobot/01-Operation' },
+                        { text: 'Fehlerbehebung und Schnellreferenz', link: '/de/tutorials/jetson-agx-orin/xlerobot-docker/troubleshooting/01-Troubleshooting' },
+                      ],
+                    },
+                    {
+                      text: 'Jetson Orin Nano Super Developer Kit',
+                      collapsed: true,
+                      items: [
+                        { text: '01 · Überblick', link: '/de/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview' },
+                        { text: '02 · Umgebung einrichten', link: '/de/tutorials/jetson-orin-nano/xlerobot-docker/deployment/02-Environment-Setup' },
+                        { text: '03 · Bereitstellung', link: '/de/tutorials/jetson-orin-nano/xlerobot-docker/deployment/03-Deployment' },
+                        { text: 'Original-LeRobot-Befehle', link: '/de/tutorials/jetson-orin-nano/xlerobot-docker/lerobot/01-Operation' },
+                        { text: 'XLeRobot-Befehle', link: '/de/tutorials/jetson-orin-nano/xlerobot-docker/xlerobot/01-Operation' },
+                        { text: 'Fehlerbehebung und Schnellreferenz', link: '/de/tutorials/jetson-orin-nano/xlerobot-docker/troubleshooting/01-Troubleshooting' },
+                      ],
+                    },
+                  ],
+                },
               ],
             },
             {
@@ -4386,6 +4566,36 @@ export default defineConfig({
                         { text: 'Bugs courants et solutions', link: '/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Common-Bugs' },
                         { text: 'Inférence sur NVIDIA DGX Spark', link: '/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/DGX-Spark' },
                         { text: 'Inférence sur D-Robotics RDK S100', link: '/fr/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/RDK-S100' },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  text: 'Tutoriel de l\'image Docker XLeRobot',
+                  collapsed: true,
+                  items: [
+                    {
+                      text: 'Kit de développement Jetson AGX Orin',
+                      collapsed: true,
+                      items: [
+                        { text: '01 · Aperçu', link: '/fr/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview' },
+                        { text: '02 · Préparation de l\'environnement', link: '/fr/tutorials/jetson-agx-orin/xlerobot-docker/deployment/02-Environment-Setup' },
+                        { text: '03 · Déploiement', link: '/fr/tutorials/jetson-agx-orin/xlerobot-docker/deployment/03-Deployment' },
+                        { text: 'Commandes LeRobot d\'origine', link: '/fr/tutorials/jetson-agx-orin/xlerobot-docker/lerobot/01-Operation' },
+                        { text: 'Commandes XLeRobot', link: '/fr/tutorials/jetson-agx-orin/xlerobot-docker/xlerobot/01-Operation' },
+                        { text: 'Dépannage et aide-mémoire', link: '/fr/tutorials/jetson-agx-orin/xlerobot-docker/troubleshooting/01-Troubleshooting' },
+                      ],
+                    },
+                    {
+                      text: 'Kit de développement Jetson Orin Nano Super',
+                      collapsed: true,
+                      items: [
+                        { text: '01 · Aperçu', link: '/fr/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview' },
+                        { text: '02 · Préparation de l\'environnement', link: '/fr/tutorials/jetson-orin-nano/xlerobot-docker/deployment/02-Environment-Setup' },
+                        { text: '03 · Déploiement', link: '/fr/tutorials/jetson-orin-nano/xlerobot-docker/deployment/03-Deployment' },
+                        { text: 'Commandes LeRobot d\'origine', link: '/fr/tutorials/jetson-orin-nano/xlerobot-docker/lerobot/01-Operation' },
+                        { text: 'Commandes XLeRobot', link: '/fr/tutorials/jetson-orin-nano/xlerobot-docker/xlerobot/01-Operation' },
+                        { text: 'Dépannage et aide-mémoire', link: '/fr/tutorials/jetson-orin-nano/xlerobot-docker/troubleshooting/01-Troubleshooting' },
                       ],
                     },
                   ],
@@ -4991,6 +5201,36 @@ export default defineConfig({
                     },
                   ],
                 },
+                {
+                  text: 'Tutorial de la imagen Docker de XLeRobot',
+                  collapsed: true,
+                  items: [
+                    {
+                      text: 'Kit de desarrollo Jetson AGX Orin',
+                      collapsed: true,
+                      items: [
+                        { text: '01 · Resumen', link: '/es/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview' },
+                        { text: '02 · Preparación del entorno', link: '/es/tutorials/jetson-agx-orin/xlerobot-docker/deployment/02-Environment-Setup' },
+                        { text: '03 · Despliegue', link: '/es/tutorials/jetson-agx-orin/xlerobot-docker/deployment/03-Deployment' },
+                        { text: 'Comandos de LeRobot original', link: '/es/tutorials/jetson-agx-orin/xlerobot-docker/lerobot/01-Operation' },
+                        { text: 'Comandos de XLeRobot', link: '/es/tutorials/jetson-agx-orin/xlerobot-docker/xlerobot/01-Operation' },
+                        { text: 'Solución de problemas y referencia rápida', link: '/es/tutorials/jetson-agx-orin/xlerobot-docker/troubleshooting/01-Troubleshooting' },
+                      ],
+                    },
+                    {
+                      text: 'Kit de desarrollo Jetson Orin Nano Super',
+                      collapsed: true,
+                      items: [
+                        { text: '01 · Resumen', link: '/es/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview' },
+                        { text: '02 · Preparación del entorno', link: '/es/tutorials/jetson-orin-nano/xlerobot-docker/deployment/02-Environment-Setup' },
+                        { text: '03 · Despliegue', link: '/es/tutorials/jetson-orin-nano/xlerobot-docker/deployment/03-Deployment' },
+                        { text: 'Comandos de LeRobot original', link: '/es/tutorials/jetson-orin-nano/xlerobot-docker/lerobot/01-Operation' },
+                        { text: 'Comandos de XLeRobot', link: '/es/tutorials/jetson-orin-nano/xlerobot-docker/xlerobot/01-Operation' },
+                        { text: 'Solución de problemas y referencia rápida', link: '/es/tutorials/jetson-orin-nano/xlerobot-docker/troubleshooting/01-Troubleshooting' },
+                      ],
+                    },
+                  ],
+                },
               ],
             },
             {
@@ -5588,6 +5828,36 @@ export default defineConfig({
                         { text: 'Bug comuni e soluzioni', link: '/it/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Common-Bugs' },
                         { text: 'Inferenza su NVIDIA DGX Spark', link: '/it/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/DGX-Spark' },
                         { text: 'Inferenza su D-Robotics RDK S100', link: '/it/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/RDK-S100' },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  text: 'Tutorial dell\'immagine Docker XLeRobot',
+                  collapsed: true,
+                  items: [
+                    {
+                      text: 'Kit di sviluppo Jetson AGX Orin',
+                      collapsed: true,
+                      items: [
+                        { text: '01 · Panoramica', link: '/it/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview' },
+                        { text: '02 · Preparazione dell\'ambiente', link: '/it/tutorials/jetson-agx-orin/xlerobot-docker/deployment/02-Environment-Setup' },
+                        { text: '03 · Distribuzione', link: '/it/tutorials/jetson-agx-orin/xlerobot-docker/deployment/03-Deployment' },
+                        { text: 'Comandi LeRobot originali', link: '/it/tutorials/jetson-agx-orin/xlerobot-docker/lerobot/01-Operation' },
+                        { text: 'Comandi XLeRobot', link: '/it/tutorials/jetson-agx-orin/xlerobot-docker/xlerobot/01-Operation' },
+                        { text: 'Risoluzione dei problemi e riferimento rapido', link: '/it/tutorials/jetson-agx-orin/xlerobot-docker/troubleshooting/01-Troubleshooting' },
+                      ],
+                    },
+                    {
+                      text: 'Kit di sviluppo Jetson Orin Nano Super',
+                      collapsed: true,
+                      items: [
+                        { text: '01 · Panoramica', link: '/it/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview' },
+                        { text: '02 · Preparazione dell\'ambiente', link: '/it/tutorials/jetson-orin-nano/xlerobot-docker/deployment/02-Environment-Setup' },
+                        { text: '03 · Distribuzione', link: '/it/tutorials/jetson-orin-nano/xlerobot-docker/deployment/03-Deployment' },
+                        { text: 'Comandi LeRobot originali', link: '/it/tutorials/jetson-orin-nano/xlerobot-docker/lerobot/01-Operation' },
+                        { text: 'Comandi XLeRobot', link: '/it/tutorials/jetson-orin-nano/xlerobot-docker/xlerobot/01-Operation' },
+                        { text: 'Risoluzione dei problemi e riferimento rapido', link: '/it/tutorials/jetson-orin-nano/xlerobot-docker/troubleshooting/01-Troubleshooting' },
                       ],
                     },
                   ],
@@ -6637,6 +6907,36 @@ export default defineConfig({
                       },
                     ],
                   },
+                  {
+                    text: 'Tutorial da imagem Docker do XLeRobot',
+                    collapsed: true,
+                    items: [
+                      {
+                        text: 'Kit de Desenvolvedor Jetson AGX Orin',
+                        collapsed: true,
+                        items: [
+                          { text: '01 · Visão geral', link: '/pt-br/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview' },
+                          { text: '02 · Preparação do ambiente', link: '/pt-br/tutorials/jetson-agx-orin/xlerobot-docker/deployment/02-Environment-Setup' },
+                          { text: '03 · Implantação', link: '/pt-br/tutorials/jetson-agx-orin/xlerobot-docker/deployment/03-Deployment' },
+                          { text: 'Comandos do LeRobot original', link: '/pt-br/tutorials/jetson-agx-orin/xlerobot-docker/lerobot/01-Operation' },
+                          { text: 'Comandos do XLeRobot', link: '/pt-br/tutorials/jetson-agx-orin/xlerobot-docker/xlerobot/01-Operation' },
+                          { text: 'Solução de problemas e referência rápida', link: '/pt-br/tutorials/jetson-agx-orin/xlerobot-docker/troubleshooting/01-Troubleshooting' },
+                        ],
+                      },
+                      {
+                        text: 'Kit de Desenvolvedor Jetson Orin Nano Super',
+                        collapsed: true,
+                        items: [
+                          { text: '01 · Visão geral', link: '/pt-br/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview' },
+                          { text: '02 · Preparação do ambiente', link: '/pt-br/tutorials/jetson-orin-nano/xlerobot-docker/deployment/02-Environment-Setup' },
+                          { text: '03 · Implantação', link: '/pt-br/tutorials/jetson-orin-nano/xlerobot-docker/deployment/03-Deployment' },
+                          { text: 'Comandos do LeRobot original', link: '/pt-br/tutorials/jetson-orin-nano/xlerobot-docker/lerobot/01-Operation' },
+                          { text: 'Comandos do XLeRobot', link: '/pt-br/tutorials/jetson-orin-nano/xlerobot-docker/xlerobot/01-Operation' },
+                          { text: 'Solução de problemas e referência rápida', link: '/pt-br/tutorials/jetson-orin-nano/xlerobot-docker/troubleshooting/01-Troubleshooting' },
+                        ],
+                      },
+                    ],
+                  },
                 ],
               },
               {
@@ -7325,6 +7625,36 @@ export default defineConfig({
                           { text: 'Bugs comuns e soluções', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/Common-Bugs' },
                           { text: 'Inferência no NVIDIA DGX Spark', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/DGX-Spark' },
                           { text: 'Inferência no D-Robotics RDK S100', link: '/pt-pt/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/RDK-S100' },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    text: 'Tutorial da imagem Docker do XLeRobot',
+                    collapsed: true,
+                    items: [
+                      {
+                        text: 'Kit de Desenvolvedor Jetson AGX Orin',
+                        collapsed: true,
+                        items: [
+                          { text: '01 · Visão geral', link: '/pt-pt/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview' },
+                          { text: '02 · Preparação do ambiente', link: '/pt-pt/tutorials/jetson-agx-orin/xlerobot-docker/deployment/02-Environment-Setup' },
+                          { text: '03 · Implementação', link: '/pt-pt/tutorials/jetson-agx-orin/xlerobot-docker/deployment/03-Deployment' },
+                          { text: 'Comandos do LeRobot original', link: '/pt-pt/tutorials/jetson-agx-orin/xlerobot-docker/lerobot/01-Operation' },
+                          { text: 'Comandos do XLeRobot', link: '/pt-pt/tutorials/jetson-agx-orin/xlerobot-docker/xlerobot/01-Operation' },
+                          { text: 'Resolução de problemas e referência rápida', link: '/pt-pt/tutorials/jetson-agx-orin/xlerobot-docker/troubleshooting/01-Troubleshooting' },
+                        ],
+                      },
+                      {
+                        text: 'Kit de Desenvolvedor Jetson Orin Nano Super',
+                        collapsed: true,
+                        items: [
+                          { text: '01 · Visão geral', link: '/pt-pt/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview' },
+                          { text: '02 · Preparação do ambiente', link: '/pt-pt/tutorials/jetson-orin-nano/xlerobot-docker/deployment/02-Environment-Setup' },
+                          { text: '03 · Implementação', link: '/pt-pt/tutorials/jetson-orin-nano/xlerobot-docker/deployment/03-Deployment' },
+                          { text: 'Comandos do LeRobot original', link: '/pt-pt/tutorials/jetson-orin-nano/xlerobot-docker/lerobot/01-Operation' },
+                          { text: 'Comandos do XLeRobot', link: '/pt-pt/tutorials/jetson-orin-nano/xlerobot-docker/xlerobot/01-Operation' },
+                          { text: 'Resolução de problemas e referência rápida', link: '/pt-pt/tutorials/jetson-orin-nano/xlerobot-docker/troubleshooting/01-Troubleshooting' },
                         ],
                       },
                     ],
