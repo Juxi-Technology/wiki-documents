@@ -49,7 +49,13 @@ const matched = computed(() => {
   const path = page.value.relativePath
   return PRODUCT_MAP.find((p) => path.includes(p.match))
 })
-const productUrl = computed(() => `${SITE_URL}/${localePrefix.value}${matched.value ? matched.value.path : ''}`)
+// 商店链接带 UTM:wiki → 商店的下单归因(与产品中心卡片的购买按钮同一约定)
+const utm = computed(() =>
+  matched.value
+    ? `?utm_source=wiki&utm_medium=referral&utm_campaign=product-page&utm_content=${encodeURIComponent(matched.value.match)}`
+    : '',
+)
+const productUrl = computed(() => `${SITE_URL}/${localePrefix.value}${matched.value ? matched.value.path : ''}${utm.value}`)
 
 // 官网链接同样带语言前缀
 const siteUrl = computed(() => `${SITE_URL}/${localePrefix.value}`)

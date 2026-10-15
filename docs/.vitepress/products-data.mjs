@@ -31,6 +31,25 @@ export const HERO = {
   "pt-pt": "Dos braços robóticos open source à IA na borda com NVIDIA Jetson — manuais, especificações e tutoriais para todos os produtos da Juxi Technology num só lugar, com ligações diretas à loja oficial.",
 }
 
+// 官方商店(Shopify)链接:卡片购买按钮按语种前缀 + products/<handle> 拼装。
+// 前缀表与 theme/components/PurchaseLinks.vue 的 localePrefix 同一约定:
+// Shopify root 按访客浏览器语言 302,不能当静态链接;pt-pt 无欧洲葡语 → 英文店(root)。
+// shop 为 null 的商品未在售,不渲染购买按钮。
+export const SHOP_URL = "https://www.juxitech.com"
+export const SHOP_LOCALE_PREFIX = {
+  en: "",
+  "zh-hans": "zh-hans/",
+  "zh-hant": "zh-hant/",
+  ja: "ja/",
+  ko: "ko/",
+  de: "de/",
+  fr: "fr/",
+  es: "es/",
+  it: "it/",
+  "pt-br": "pt/",
+  "pt-pt": "",
+}
+
 export const PRODUCTS = [
   { slug: "so-arm101", category: "robot", img: "SO-ARM101.png", shop: "so-arm101-developers-kit" },
   { slug: "so-arm101-7dof", category: "robot", img: "SO-ARM101-7DOF.png", shop: "so-arm101-open-source-7-dof-robotic-arm" },

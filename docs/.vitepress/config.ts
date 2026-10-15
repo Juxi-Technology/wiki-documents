@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 import fs from 'node:fs'
 import path from 'node:path'
-import { PRODUCTS, NAMES, BLURBS } from './products-data.mjs'
+import { PRODUCTS, NAMES, BLURBS, SECTION_NAMES, CATEGORY_ORDER } from './products-data.mjs'
 
 // FAQ 页 → FAQPage JSON-LD:构建期解析各语 tutorials/faq.md 的 Q/A 对
 // (格式: **Q: xxx?** / **A:** yyy;fr 为 **Q :** 与 **A :**,正则兼容空白)
@@ -7997,6 +7997,12 @@ export default defineConfig({
     const faqLd = buildFaqPageLd(pageData.relativePath)
     const pageLang = langOf(pageData.relativePath)
     const breadcrumbLd = buildBreadcrumbLd(pageUrlOf(pageData.relativePath), pageData.title || '', pageLang)
+    // 产品页/产品中心的页面识别(og:image 与 Product/CollectionPage ld 共用)
+    const isProductsHub = /^(?:[a-z-]+\/)?products\/index\.md$/.test(pageData.relativePath)
+    const prodSlug = isProductsHub
+      ? undefined
+      : /^(?:[a-z-]+\/)?products\/([a-z0-9-]+)\.md$/.exec(pageData.relativePath)?.[1]
+    const prodDef = prodSlug ? PRODUCTS.find((p) => p.slug === prodSlug) : undefined
     let ld
     if (isHome) {
       ld = {
@@ -8046,6 +8052,21 @@ export default defineConfig({
           })),
         },
       }
+    } else if (prodDef) {
+      // 产品页:Product 结构化数据(不含 offers/价格——站点不展示价格,无富结果诉求)
+      const reSegsP = pageData.relativePath.split('/')
+      const dirKeyP = LANG_CODE[reSegsP[0]] ? reSegsP[0] : 'en'
+      ld = {
+        '@context': 'https://schema.org',
+        '@type': 'Product',
+        name: NAMES[prodDef.slug][dirKeyP] || pageData.title || prodDef.slug,
+        description: pageData.description || BLURBS[prodDef.slug][dirKeyP] || '',
+        image: `${base}/images/categories/${prodDef.img}`,
+        url: base + pageUrlOf(pageData.relativePath),
+        brand: { '@type': 'Brand', name: brandOf(pageData.relativePath) },
+        category: SECTION_NAMES[dirKeyP]?.[CATEGORY_ORDER.indexOf(prodDef.category)] || prodDef.category,
+        inLanguage: pageLang,
+      }
     } else {
       ld = {
         '@context': 'https://schema.org',
@@ -8090,13 +8111,7 @@ export default defineConfig({
         ['meta', { property: 'og:site_name', content: brandOf(pageData.relativePath) }],
       )
       // og:image/twitter:image 逐页:产品页=该产品卡图,产品中心=旗舰(SO-ARM101)卡图,其余=品牌 logo
-      const isProductsHub = /^(?:[a-z-]+\/)?products\/index\.md$/.test(pageData.relativePath)
-      const ogSlug = isProductsHub
-        ? undefined
-        : pageData.relativePath.match(/^(?:[a-z-]+\/)?products\/([a-z0-9-]+)\.md$/)?.[1]
-      const ogImg = ogSlug
-        ? PRODUCTS.find((p) => p.slug === ogSlug)?.img
-        : (isProductsHub ? 'SO-ARM101.png' : null)
+      const ogImg = prodDef ? prodDef.img : (isProductsHub ? 'SO-ARM101.png' : null)
       const ogImgUrl = ogImg ? `${base}/images/categories/${ogImg}` : `${base}/images/logos/logo-black.png`
       heads.push(
         ['meta', { property: 'og:image', content: ogImgUrl }],
