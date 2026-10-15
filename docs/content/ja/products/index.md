@@ -97,6 +97,22 @@ next: false
     </a>
     <a href="https://www.juxitech.com/ja/products/bus-servo-driver-board?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=servo-driver-board" target="_blank" rel="noopener" class="pc-buy">購入</a>
   </div>
+  <div class="product-card" data-cat="robot">
+    <a :href="withBase('/ja/products/pincopen')" class="pc-link">
+      <img :src="withBase('/images/categories/PincOpen.png')" alt="PincOpenオープンソースパラレルグリッパー" loading="lazy">
+      <span class="pc-title">PincOpenオープンソースパラレルグリッパー</span>
+      <p class="pc-desc">PincOpen オープンソースパラレルグリッパー— ロボット把持を誰にでも身近に！</p>
+    </a>
+    <a href="https://www.juxitech.com/ja/products/pincopen-open-source-parallel-gripper?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=pincopen" target="_blank" rel="noopener" class="pc-buy">購入</a>
+  </div>
+  <div class="product-card" data-cat="robot">
+    <a :href="withBase('/ja/products/so-arm101-amazinghand')" class="pc-link">
+      <img :src="withBase('/images/categories/SO-ARM101-AmazingHand.png')" alt="SO-ARM101 & AmazingHand オープンソース多指ハンドロボットアーム" loading="lazy">
+      <span class="pc-title">SO-ARM101 & AmazingHand オープンソース多指ハンドロボットアーム</span>
+      <p class="pc-desc">SO-ARM101 & AmazingHand は、SO-ARM101 6 軸ロボットアームと AmazingHand 8 自由度四指多指ハンドを組み合わせた、完全なオープンソースの身体性 AI プラットフォームです。</p>
+    </a>
+    <a href="https://www.juxitech.com/ja/products/so-arm101-amazinghand-open-source-dexterous-hand-robotic-arm?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=so-arm101-amazinghand" target="_blank" rel="noopener" class="pc-buy">購入</a>
+  </div>
 </div>
 
 ## AI コンピューティングとビジョン
@@ -177,6 +193,14 @@ next: false
     </a>
     <a href="https://www.juxitech.com/ja/products/gps-beidou-gnss-positioning-module?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=gps-beidou-module" target="_blank" rel="noopener" class="pc-buy">購入</a>
   </div>
+  <div class="product-card" data-cat="sensor">
+    <a :href="withBase('/ja/products/heart-rate-spo2')" class="pc-link">
+      <img :src="withBase('/images/categories/Heart-Rate-SpO2.png')" alt="心拍数 & SpO2 センサーモジュール" loading="lazy">
+      <span class="pc-title">心拍数 & SpO2 センサーモジュール</span>
+      <p class="pc-desc">心拍数 & SpO2 センサーモジュール — 高精度検出 | 心拍数 & SpO2 直接出力 | マルチプラットフォーム対応</p>
+    </a>
+    <a href="https://www.juxitech.com/ja/products/heart-rate-spo2-sensor-module?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=heart-rate-spo2" target="_blank" rel="noopener" class="pc-buy">購入</a>
+  </div>
 </div>
 
 ## アクセサリーとツール
@@ -237,6 +261,22 @@ next: false
       <p class="pc-desc">4-in-1 KVM。TTL シリアル + Bluetooth 拡張、複数デバイスをワンクリックで切替——ロボットデバッグ作業台の効率化ツールです。</p>
     </a>
     <a href="https://www.juxitech.com/ja/products/4-in-1-kvm-switch-hub-ttl-serial-bluetooth-docking-station?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=kvm-switch" target="_blank" rel="noopener" class="pc-buy">購入</a>
+  </div>
+  <div class="product-card" data-cat="accessory">
+    <a :href="withBase('/ja/products/jetson-orin-radiator')" class="pc-link">
+      <img :src="withBase('/images/categories/Jetson-Orin-Radiator.png')" alt="Jetson Orin ラジエーター" loading="lazy">
+      <span class="pc-title">Jetson Orin ラジエーター</span>
+      <p class="pc-desc">Jetson Orin ラジエーターは、NVIDIA Jetson Orin NX SUPER および Jetson Orin Nano SUPER 開発キット専用に設計された高性能オールメタル冷却ソリューションです。</p>
+    </a>
+    <a href="https://www.juxitech.com/ja/products/jetson-orin-radiator?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=jetson-orin-radiator" target="_blank" rel="noopener" class="pc-buy">購入</a>
+  </div>
+  <div class="product-card" data-cat="accessory">
+    <a :href="withBase('/ja/products/feetech-scs0009-servo')" class="pc-link">
+      <img :src="withBase('/images/categories/Feetech-SCS0009.png')" alt="FEETECH SCS0009 シリアルバスサーボ" loading="lazy">
+      <span class="pc-title">FEETECH SCS0009 シリアルバスサーボ</span>
+      <p class="pc-desc">この FEETECH SCS0009 シリアルバスサーボは、AmazingHand 器用ハンドに適合したロボットアクチュエータです。</p>
+    </a>
+    <a href="https://www.juxitech.com/ja/products/feetech-scs0009-serial-bus-servo?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=feetech-scs0009-servo" target="_blank" rel="noopener" class="pc-buy">購入</a>
   </div>
 </div>
 

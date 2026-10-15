@@ -97,6 +97,22 @@ next: false
     </a>
     <a href="https://www.juxitech.com/zh-hans/products/bus-servo-driver-board?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=servo-driver-board" target="_blank" rel="noopener" class="pc-buy">购买</a>
   </div>
+  <div class="product-card" data-cat="robot">
+    <a :href="withBase('/zh-hans/products/pincopen')" class="pc-link">
+      <img :src="withBase('/images/categories/PincOpen.png')" alt="PincOpen 开源并联夹具" loading="lazy">
+      <span class="pc-title">PincOpen 开源并联夹具</span>
+      <p class="pc-desc">PincOpen开源平行夹爪——让机器人抓取触手可及！</p>
+    </a>
+    <a href="https://www.juxitech.com/zh-hans/products/pincopen-open-source-parallel-gripper?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=pincopen" target="_blank" rel="noopener" class="pc-buy">购买</a>
+  </div>
+  <div class="product-card" data-cat="robot">
+    <a :href="withBase('/zh-hans/products/so-arm101-amazinghand')" class="pc-link">
+      <img :src="withBase('/images/categories/SO-ARM101-AmazingHand.png')" alt="SO-ARM101和AmazingHand开源灵巧机械臂" loading="lazy">
+      <span class="pc-title">SO-ARM101和AmazingHand开源灵巧机械臂</span>
+      <p class="pc-desc">SO-ARM101 & AmazingHand 是一个完整的开源具身智能平台，它将 SO-ARM101 六轴机械臂与 AmazingHand 8 自由度四指灵巧手相结合。</p>
+    </a>
+    <a href="https://www.juxitech.com/zh-hans/products/so-arm101-amazinghand-open-source-dexterous-hand-robotic-arm?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=so-arm101-amazinghand" target="_blank" rel="noopener" class="pc-buy">购买</a>
+  </div>
 </div>
 
 ## AI 计算与视觉
@@ -177,6 +193,14 @@ next: false
     </a>
     <a href="https://www.juxitech.com/zh-hans/products/gps-beidou-gnss-positioning-module?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=gps-beidou-module" target="_blank" rel="noopener" class="pc-buy">购买</a>
   </div>
+  <div class="product-card" data-cat="sensor">
+    <a :href="withBase('/zh-hans/products/heart-rate-spo2')" class="pc-link">
+      <img :src="withBase('/images/categories/Heart-Rate-SpO2.png')" alt="心率与血氧传感器模块" loading="lazy">
+      <span class="pc-title">心率与血氧传感器模块</span>
+      <p class="pc-desc">心率血氧传感器模块 — 高精度检测 | 直接输出心率血氧 | 多平台兼容</p>
+    </a>
+    <a href="https://www.juxitech.com/zh-hans/products/heart-rate-spo2-sensor-module?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=heart-rate-spo2" target="_blank" rel="noopener" class="pc-buy">购买</a>
+  </div>
 </div>
 
 ## 配件与工具
@@ -237,6 +261,22 @@ next: false
       <p class="pc-desc">4 合 1 KVM：TTL 串口 + 蓝牙扩展，多设备一键切换——机器人调试桌的效率工具。</p>
     </a>
     <a href="https://www.juxitech.com/zh-hans/products/4-in-1-kvm-switch-hub-ttl-serial-bluetooth-docking-station?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=kvm-switch" target="_blank" rel="noopener" class="pc-buy">购买</a>
+  </div>
+  <div class="product-card" data-cat="accessory">
+    <a :href="withBase('/zh-hans/products/jetson-orin-radiator')" class="pc-link">
+      <img :src="withBase('/images/categories/Jetson-Orin-Radiator.png')" alt="Jetson Orin 散热器" loading="lazy">
+      <span class="pc-title">Jetson Orin 散热器</span>
+      <p class="pc-desc">Jetson Orin散热器是一款高性能全金属散热解决方案，专为NVIDIA Jetson Orin NX SUPER和Jetson Orin Nano SUPER开发者套件而设计。</p>
+    </a>
+    <a href="https://www.juxitech.com/zh-hans/products/jetson-orin-radiator?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=jetson-orin-radiator" target="_blank" rel="noopener" class="pc-buy">购买</a>
+  </div>
+  <div class="product-card" data-cat="accessory">
+    <a :href="withBase('/zh-hans/products/feetech-scs0009-servo')" class="pc-link">
+      <img :src="withBase('/images/categories/Feetech-SCS0009.png')" alt="FEETECH SCS0009 串口总线舵机" loading="lazy">
+      <span class="pc-title">FEETECH SCS0009 串口总线舵机</span>
+      <p class="pc-desc">FEETECH SCS0009串口总线舵机是AmazingHand灵巧手的配套机械执行器。</p>
+    </a>
+    <a href="https://www.juxitech.com/zh-hans/products/feetech-scs0009-serial-bus-servo?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=feetech-scs0009-servo" target="_blank" rel="noopener" class="pc-buy">购买</a>
   </div>
 </div>
 

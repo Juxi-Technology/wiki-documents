@@ -97,6 +97,22 @@ next: false
     </a>
     <a href="https://www.juxitech.com/it/products/bus-servo-driver-board?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=servo-driver-board" target="_blank" rel="noopener" class="pc-buy">Acquista</a>
   </div>
+  <div class="product-card" data-cat="robot">
+    <a :href="withBase('/it/products/pincopen')" class="pc-link">
+      <img :src="withBase('/images/categories/PincOpen.png')" alt="Pinza parallela open source PincOpen" loading="lazy">
+      <span class="pc-title">Pinza parallela open source PincOpen</span>
+      <p class="pc-desc">PincOpen Pinza parallela open source— rendere la presa robotica accessibile a tutti!</p>
+    </a>
+    <a href="https://www.juxitech.com/it/products/pincopen-open-source-parallel-gripper?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=pincopen" target="_blank" rel="noopener" class="pc-buy">Acquista</a>
+  </div>
+  <div class="product-card" data-cat="robot">
+    <a :href="withBase('/it/products/so-arm101-amazinghand')" class="pc-link">
+      <img :src="withBase('/images/categories/SO-ARM101-AmazingHand.png')" alt="Braccio robotico open source SO-ARM101 e AmazingHand con mano destra" loading="lazy">
+      <span class="pc-title">Braccio robotico open source SO-ARM101 e AmazingHand con mano destra</span>
+      <p class="pc-desc">Il SO-ARM101 & AmazingHand è una piattaforma completa di IA incarnata open source che abbina il braccio robotico a 6 assi SO-ARM101 alla mano multi-dito a 4 dita e 8 gradi di libertà AmazingHand.</p>
+    </a>
+    <a href="https://www.juxitech.com/it/products/so-arm101-amazinghand-open-source-dexterous-hand-robotic-arm?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=so-arm101-amazinghand" target="_blank" rel="noopener" class="pc-buy">Acquista</a>
+  </div>
 </div>
 
 ## Calcolo AI e visione
@@ -177,6 +193,14 @@ next: false
     </a>
     <a href="https://www.juxitech.com/it/products/gps-beidou-gnss-positioning-module?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=gps-beidou-module" target="_blank" rel="noopener" class="pc-buy">Acquista</a>
   </div>
+  <div class="product-card" data-cat="sensor">
+    <a :href="withBase('/it/products/heart-rate-spo2')" class="pc-link">
+      <img :src="withBase('/images/categories/Heart-Rate-SpO2.png')" alt="Modulo sensore frequenza cardiaca e SpO2" loading="lazy">
+      <span class="pc-title">Modulo sensore frequenza cardiaca e SpO2</span>
+      <p class="pc-desc">Modulo sensore frequenza cardiaca & SpO2 — Rilevamento ad alta precisione | Uscita diretta frequenza cardiaca & SpO2 | Compatibile multipiattaforma</p>
+    </a>
+    <a href="https://www.juxitech.com/it/products/heart-rate-spo2-sensor-module?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=heart-rate-spo2" target="_blank" rel="noopener" class="pc-buy">Acquista</a>
+  </div>
 </div>
 
 ## Accessori e strumenti
@@ -237,6 +261,22 @@ next: false
       <p class="pc-desc">Switch KVM 4-in-1 con seriale TTL ed espansione Bluetooth: commutazione multi-dispositivo con un clic, lo strumento di produttività per il banco di debug robotico.</p>
     </a>
     <a href="https://www.juxitech.com/it/products/4-in-1-kvm-switch-hub-ttl-serial-bluetooth-docking-station?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=kvm-switch" target="_blank" rel="noopener" class="pc-buy">Acquista</a>
+  </div>
+  <div class="product-card" data-cat="accessory">
+    <a :href="withBase('/it/products/jetson-orin-radiator')" class="pc-link">
+      <img :src="withBase('/images/categories/Jetson-Orin-Radiator.png')" alt="Dissipatore Jetson Orin" loading="lazy">
+      <span class="pc-title">Dissipatore Jetson Orin</span>
+      <p class="pc-desc">Il Jetson Orin Radiator è una soluzione di raffreddamento interamente in metallo ad alte prestazioni, progettata appositamente per i kit di sviluppo NVIDIA Jetson Orin NX SUPER e Jetson Orin Nano…</p>
+    </a>
+    <a href="https://www.juxitech.com/it/products/jetson-orin-radiator?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=jetson-orin-radiator" target="_blank" rel="noopener" class="pc-buy">Acquista</a>
+  </div>
+  <div class="product-card" data-cat="accessory">
+    <a :href="withBase('/it/products/feetech-scs0009-servo')" class="pc-link">
+      <img :src="withBase('/images/categories/Feetech-SCS0009.png')" alt="Servomotore a bus seriale FEETECH SCS0009" loading="lazy">
+      <span class="pc-title">Servomotore a bus seriale FEETECH SCS0009</span>
+      <p class="pc-desc">Questo servomotore a bus seriale FEETECH SCS0009 è un attuatore robotico adattato alle mani abili di AmazingHand.</p>
+    </a>
+    <a href="https://www.juxitech.com/it/products/feetech-scs0009-serial-bus-servo?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=feetech-scs0009-servo" target="_blank" rel="noopener" class="pc-buy">Acquista</a>
   </div>
 </div>
 

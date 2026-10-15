@@ -8,15 +8,18 @@ const SITE_URL = 'https://www.juxitech.com'
 
 // 产品路径 → Shopify 商品路径映射(不含语言前缀,由 localePrefix 拼接)
 const PRODUCT_MAP = [
+  { match: 'so-arm101-amazinghand', path: 'products/so-arm101-amazinghand-open-source-dexterous-hand-robotic-arm' },
   { match: 'so-arm101', path: 'products/so-arm101-developers-kit' },
   { match: 'esp32-nanocam', path: 'products/esp32-s3-wifi-video-module' },
   { match: 'amazing-hand', path: 'products/amazinghand' },
   { match: 'lekiwi', path: 'products/lekiwi-embodied-intelligence-mobile-robotic-car' },
+  { match: 'pincopen', path: 'products/pincopen-open-source-parallel-gripper' },
+  { match: 'jetson-orin-radiator', path: 'products/jetson-orin-radiator' },
   { match: 'imu', path: 'products/imu-module-ahrs-attitude-and-heading-angle-sensor' },
   { match: 'KWS', path: 'products/ai-voice-recognition-module' },
   { match: 'feetech', path: 'products/feetech-scs0009-serial-bus-servo' },
   { match: '2dof-camera-gimbal', path: 'products/2-dof-servo-pan-tilt-unit' },
-  { match: 'heart-rate-spo2', path: 'collections/perception' },
+  { match: 'heart-rate-spo2', path: 'products/heart-rate-spo2-sensor-module' },
   { match: '0.91-oled', path: 'collections/all' },
   { match: '4k-hdmi', path: 'products/4k-hd-hdmi-capture-card' },
   { match: 'kvm-switch', path: 'products/4-in-1-kvm-switch-hub-ttl-serial-bluetooth-docking-station' },

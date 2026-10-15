@@ -25,6 +25,11 @@
 - [SO-ARM101 顶置相机支架](https://wiki.juxitech.com/zh-hans/products/overhead-camera-mount): 钜犀科技 SO-ARM101 顶置相机支架——俯视视角安装,兼容 RealSense,机械臂视觉数据采集
 - [SO-ARM101 开发套件](https://wiki.juxitech.com/zh-hans/products/so-arm101): 钜犀科技 SO-ARM101 双臂机器人开发套件——6 DOF 开源机械臂,LeRobot 生态,遥操作/模仿学习/AI 研究首选
 - [USB 免驱声卡](https://wiki.juxitech.com/zh-hans/products/usb-sound-card): 钜犀科技 USB 免驱声卡——板载麦克风+扬声器,即插即用,降噪,适配树莓派/Jetson/PC 语音交互
+- [Jetson Orin 散热器](https://wiki.juxitech.com/zh-hans/products/jetson-orin-radiator): Jetson Orin散热器是一款高性能全金属散热解决方案，专为NVIDIA Jetson Orin NX SUPER和Jetson Orin Nano…
+- [PincOpen 开源并联夹具](https://wiki.juxitech.com/zh-hans/products/pincopen): PincOpen开源平行夹爪——让机器人抓取触手可及！
+- [心率与血氧传感器模块](https://wiki.juxitech.com/zh-hans/products/heart-rate-spo2): 心率血氧传感器模块 — 高精度检测 | 直接输出心率血氧 | 多平台兼容
+- [FEETECH SCS0009 串口总线舵机](https://wiki.juxitech.com/zh-hans/products/feetech-scs0009-servo): FEETECH SCS0009串口总线舵机是AmazingHand灵巧手的配套机械执行器。它具有全维度实时反馈、金属齿轮传动、10位编码器以及标准的TTL串口总线通信，并内置多种智能保护机制。
+- [SO-ARM101和AmazingHand开源灵巧机械臂](https://wiki.juxitech.com/zh-hans/products/so-arm101-amazinghand): SO-ARM101 & AmazingHand 是一个完整的开源具身智能平台，它将 SO-ARM101 六轴机械臂与 AmazingHand 8 自由度四指灵巧手相结合。原有的平行夹持器被四指手取代，通过一个主臂舵机驱动，通过一个简单、可靠、工厂组装的机构实现同步的四指抓取和伸展。该平台基于 Hugging…
 - [/tech/api-reference](https://wiki.juxitech.com/zh-hans/tech/api-reference)
 - [/tech/dev-guide](https://wiki.juxitech.com/zh-hans/tech/dev-guide)
 - [树莓派/Jetson-OLED副屏教程](https://wiki.juxitech.com/zh-hans/tutorials/accessories/0.91-oled-screen-tutorial): 使用0.91寸OLED测试I2C通讯功能，按照下面接线进行连接：
@@ -106,6 +111,11 @@
 - [SO-ARM101 Overhead Camera Mount](https://wiki.juxitech.com/products/overhead-camera-mount): Juxi Technology SO-ARM101 overhead camera mount — top-down view, RealSense compatible, vision data collection
 - [SO-ARM101 Developer Kit](https://wiki.juxitech.com/products/so-arm101): Juxi Technology SO-ARM101 dual-arm robot dev kit — 6-DOF open-source arms, LeRobot ecosystem, teleoperation/imitation learning
 - [USB Driver-Free Sound Card](https://wiki.juxitech.com/products/usb-sound-card): Juxi Technology USB sound card — onboard mic + speaker, plug-and-play, noise-reduction, Raspberry Pi/Jetson/PC
+- [Jetson Orin Radiator](https://wiki.juxitech.com/products/jetson-orin-radiator): The Jetson Orin Radiator is a high-performance all-metal cooling solution purpose-built for the NVIDIA Jetson Orin NX SUPER and Jetson Orin Nano SUPER…
+- [PincOpen Open-Source Parallel Gripper](https://wiki.juxitech.com/products/pincopen): PincOpen Open-Source Parallel Gripper — making robotic grasping accessible to everyone!
+- [Heart Rate & SpO2 Sensor Module](https://wiki.juxitech.com/products/heart-rate-spo2): Heart Rate & SpO2 Sensor Module — High-Precision Detection | Direct Heart Rate & SpO2 Output | Multi-Platform Compatible
+- [FEETECH SCS0009 Serial Bus Servo](https://wiki.juxitech.com/products/feetech-scs0009-servo): This FEETECH SCS0009 serial bus servo is a robotic actuator adapted for AmazingHand dexterous hands. It features full-dimensional real-time feedback, metal…
+- [SO-ARM101 & AmazingHand Open Source Dexterous Hand Robotic Arm](https://wiki.juxitech.com/products/so-arm101-amazinghand): The SO-ARM101 & AmazingHand is a complete open-source embodied AI platform that pairs the SO-ARM101 6-axis robotic arm with the AmazingHand 8-DOF…
 
 - [/tech/api-reference](https://wiki.juxitech.com/tech/api-reference)
 - [/tech/dev-guide](https://wiki.juxitech.com/tech/dev-guide)
@@ -189,6 +199,11 @@
 - [SO-ARM101 頂置相機支架](https://wiki.juxitech.com/zh-hant/products/overhead-camera-mount): 鉅犀科技 SO-ARM101 頂置相機支架——俯視視角安裝,兼容 RealSense,機械臂視覺數據採集
 - [SO-ARM101 開發套件](https://wiki.juxitech.com/zh-hant/products/so-arm101): 鉅犀科技 SO-ARM101 雙臂機器人開發套件——6 DOF 開源機械臂,LeRobot 生態,遙操作/模仿學習/AI 研究首選
 - [USB 免驅聲卡](https://wiki.juxitech.com/zh-hant/products/usb-sound-card): 鉅犀科技 USB 免驅聲卡——板載麥克風+揚聲器,即插即用,降噪,適配樹莓派/Jetson/PC 語音交互
+- [Jetson Orin 散熱器](https://wiki.juxitech.com/zh-hant/products/jetson-orin-radiator): Jetson Orin散熱器是一款高效能全金屬散熱解決方案，專為NVIDIA Jetson Orin NX SUPER和Jetson Orin Nano…
+- [PincOpen 開源平行夾爪](https://wiki.juxitech.com/zh-hant/products/pincopen): PincOpen 開源平行夾爪—讓機械臂抓取變得觸手可及！
+- [心率與血氧飽和度感測器模組](https://wiki.juxitech.com/zh-hant/products/heart-rate-spo2): 心率血氧感測器模組 — 高精準檢測 | 直出心率血氧值 | 多平台相容
+- [飛特科技 SCS0009 串列匯流排伺服馬達](https://wiki.juxitech.com/zh-hant/products/feetech-scs0009-servo): 這款 FEETECH SCS0009 串行匯流排舵機是一款適用於 AmazingHand 靈巧手的機械人執行器。它具有全方位實時回饋、金屬齒輪傳動、10 位編碼器以及標準 TTL 串行匯流排通訊功能，內建多種智慧保護機制。
+- [SO-ARM101 與 AmazingHand 開源靈巧手機械臂](https://wiki.juxitech.com/zh-hant/products/so-arm101-amazinghand): SO-ARM101 & AmazingHand 是一個完整的開源具身智慧平台，它將 SO-ARM101 六軸機械臂與 AmazingHand 8 自由度四指靈巧手相結合。原有的平行夾持器被四指手取代，透過一個主臂舵機驅動，透過一個簡單、可靠、工廠組裝的機構實現同步的四指抓取和伸展。該平台基於 Hugging…
 - [/tech/api-reference](https://wiki.juxitech.com/zh-hant/tech/api-reference)
 - [/tech/dev-guide](https://wiki.juxitech.com/zh-hant/tech/dev-guide)
 - [樹莓派/Jetson-OLED副屏教程](https://wiki.juxitech.com/zh-hant/tutorials/accessories/0.91-oled-screen-tutorial): 使用0.91寸OLED測試I2C通訊功能，按照下面接線進行連接：

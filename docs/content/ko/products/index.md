@@ -97,6 +97,22 @@ next: false
     </a>
     <a href="https://www.juxitech.com/ko/products/bus-servo-driver-board?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=servo-driver-board" target="_blank" rel="noopener" class="pc-buy">구매</a>
   </div>
+  <div class="product-card" data-cat="robot">
+    <a :href="withBase('/ko/products/pincopen')" class="pc-link">
+      <img :src="withBase('/images/categories/PincOpen.png')" alt="PincOpen 오픈소스 패러럴 그리퍼" loading="lazy">
+      <span class="pc-title">PincOpen 오픈소스 패러럴 그리퍼</span>
+      <p class="pc-desc">PincOpen 오픈소스 병렬 그리퍼— 로봇 파지를 누구나 쉽게!</p>
+    </a>
+    <a href="https://www.juxitech.com/ko/products/pincopen-open-source-parallel-gripper?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=pincopen" target="_blank" rel="noopener" class="pc-buy">구매</a>
+  </div>
+  <div class="product-card" data-cat="robot">
+    <a :href="withBase('/ko/products/so-arm101-amazinghand')" class="pc-link">
+      <img :src="withBase('/images/categories/SO-ARM101-AmazingHand.png')" alt="SO-ARM101 & AmazingHand 오픈소스 다지 핸드 로봇 암" loading="lazy">
+      <span class="pc-title">SO-ARM101 & AmazingHand 오픈소스 다지 핸드 로봇 암</span>
+      <p class="pc-desc">SO-ARM101 & AmazingHand는 SO-ARM101 6축 로봇 암과 AmazingHand 8 자유도 사지 다지 핸드를 결합한 완전한 오픈소스 체화 AI 플랫폼입니다.</p>
+    </a>
+    <a href="https://www.juxitech.com/ko/products/so-arm101-amazinghand-open-source-dexterous-hand-robotic-arm?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=so-arm101-amazinghand" target="_blank" rel="noopener" class="pc-buy">구매</a>
+  </div>
 </div>
 
 ## AI 컴퓨팅 & 비전
@@ -177,6 +193,14 @@ next: false
     </a>
     <a href="https://www.juxitech.com/ko/products/gps-beidou-gnss-positioning-module?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=gps-beidou-module" target="_blank" rel="noopener" class="pc-buy">구매</a>
   </div>
+  <div class="product-card" data-cat="sensor">
+    <a :href="withBase('/ko/products/heart-rate-spo2')" class="pc-link">
+      <img :src="withBase('/images/categories/Heart-Rate-SpO2.png')" alt="심박수 및 SpO2 센서 모듈" loading="lazy">
+      <span class="pc-title">심박수 및 SpO2 센서 모듈</span>
+      <p class="pc-desc">심박수 & SpO2 센서 모듈 — 고정밀 감지 | 심박수 & SpO2 직접 출력 | 멀티 플랫폼 호환</p>
+    </a>
+    <a href="https://www.juxitech.com/ko/products/heart-rate-spo2-sensor-module?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=heart-rate-spo2" target="_blank" rel="noopener" class="pc-buy">구매</a>
+  </div>
 </div>
 
 ## 액세서리 & 도구
@@ -237,6 +261,22 @@ next: false
       <p class="pc-desc">4-in-1 KVM: TTL 시리얼 + 블루투스 확장, 다중 기기 원클릭 전환 — 로봇 디버깅 데스크를 위한 효율 도구.</p>
     </a>
     <a href="https://www.juxitech.com/ko/products/4-in-1-kvm-switch-hub-ttl-serial-bluetooth-docking-station?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=kvm-switch" target="_blank" rel="noopener" class="pc-buy">구매</a>
+  </div>
+  <div class="product-card" data-cat="accessory">
+    <a :href="withBase('/ko/products/jetson-orin-radiator')" class="pc-link">
+      <img :src="withBase('/images/categories/Jetson-Orin-Radiator.png')" alt="Jetson Orin 라디에이터" loading="lazy">
+      <span class="pc-title">Jetson Orin 라디에이터</span>
+      <p class="pc-desc">Jetson Orin 라디에이터는 NVIDIA Jetson Orin NX SUPER 및 Jetson Orin Nano SUPER 개발 키트 전용으로 설계된 고성능 올메탈 냉각 솔루션입니다.</p>
+    </a>
+    <a href="https://www.juxitech.com/ko/products/jetson-orin-radiator?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=jetson-orin-radiator" target="_blank" rel="noopener" class="pc-buy">구매</a>
+  </div>
+  <div class="product-card" data-cat="accessory">
+    <a :href="withBase('/ko/products/feetech-scs0009-servo')" class="pc-link">
+      <img :src="withBase('/images/categories/Feetech-SCS0009.png')" alt="FEETECH SCS0009 시리얼 버스 서보" loading="lazy">
+      <span class="pc-title">FEETECH SCS0009 시리얼 버스 서보</span>
+      <p class="pc-desc">이 FEETECH SCS0009 시리얼 버스 서보는 AmazingHand 정교한 손에 적용되는 로봇 액추에이터입니다.</p>
+    </a>
+    <a href="https://www.juxitech.com/ko/products/feetech-scs0009-serial-bus-servo?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=feetech-scs0009-servo" target="_blank" rel="noopener" class="pc-buy">구매</a>
   </div>
 </div>
 

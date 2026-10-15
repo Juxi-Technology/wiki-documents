@@ -809,6 +809,8 @@ const zhCN = {
           { text: 'Lekiwi 具身智能移动机器人', link: '/zh-hans/products/lekiwi' },
           { text: 'SO-ARM101 顶置相机支架', link: '/zh-hans/products/overhead-camera-mount' },
           { text: 'XLeRobot 双臂移动机器人', link: '/zh-hans/products/xlerobot' },
+          { text: 'PincOpen 开源并联夹具', link: '/zh-hans/products/pincopen' },
+          { text: 'SO-ARM101和AmazingHand开源灵巧机械臂', link: '/zh-hans/products/so-arm101-amazinghand' },
         ] },
         { text: '计算与视觉', items: [
           { text: 'Jetson AGX Orin 开发者套件(64GB)', link: '/zh-hans/products/jetson-agx-orin-devkit' },
@@ -822,6 +824,7 @@ const zhCN = {
         { text: '传感器', items: [
           { text: 'GPS & 北斗 GNSS 定位模块', link: '/zh-hans/products/gps-beidou-module' },
           { text: 'IMU 高精度惯导模块', link: '/zh-hans/products/imu-module' },
+          { text: '心率与血氧传感器模块', link: '/zh-hans/products/heart-rate-spo2' },
         ] },
         { text: '配件', items: [
           { text: '2 自由度舵机云台', link: '/zh-hans/products/2dof-gimbal' },
@@ -831,6 +834,8 @@ const zhCN = {
           { text: 'USB 免驱声卡', link: '/zh-hans/products/usb-sound-card' },
           { text: '4K HDMI 采集卡', link: '/zh-hans/products/4k-hdmi-capture' },
           { text: 'AI 语音交互模块', link: '/zh-hans/products/ai-voice-module' },
+          { text: 'Jetson Orin 散热器', link: '/zh-hans/products/jetson-orin-radiator' },
+          { text: 'FEETECH SCS0009 串口总线舵机', link: '/zh-hans/products/feetech-scs0009-servo' },
         ] },
       ],
       '/zh-hans/downloads/': [
@@ -1545,6 +1550,8 @@ const en = {
           { text: 'Lekiwi Embodied Intelligence Mobile Robot', link: '/products/lekiwi' },
           { text: 'SO-ARM101 Overhead Camera Mount', link: '/products/overhead-camera-mount' },
           { text: 'XLeRobot Dual-Arm Mobile Robot', link: '/products/xlerobot' },
+          { text: 'PincOpen Open-Source Parallel Gripper', link: '/products/pincopen' },
+          { text: 'SO-ARM101 & AmazingHand Open Source Dexterous Hand Robotic Arm', link: '/products/so-arm101-amazinghand' },
         ] },
         { text: 'Compute & Vision', items: [
           { text: 'Jetson AGX Orin Developer Kit (64GB)', link: '/products/jetson-agx-orin-devkit' },
@@ -1558,6 +1565,7 @@ const en = {
         { text: 'Sensors', items: [
           { text: 'GPS & BeiDou GNSS Positioning Module', link: '/products/gps-beidou-module' },
           { text: 'IMU High-Precision Inertial Module', link: '/products/imu-module' },
+          { text: 'Heart Rate & SpO2 Sensor Module', link: '/products/heart-rate-spo2' },
         ] },
         { text: 'Accessories', items: [
           { text: '2-DOF Servo Pan-Tilt Unit', link: '/products/2dof-gimbal' },
@@ -1567,6 +1575,8 @@ const en = {
           { text: 'USB Driver-Free Sound Card', link: '/products/usb-sound-card' },
           { text: '4K HDMI Capture Card', link: '/products/4k-hdmi-capture' },
           { text: 'AI Voice Interaction Module', link: '/products/ai-voice-module' },
+          { text: 'Jetson Orin Radiator', link: '/products/jetson-orin-radiator' },
+          { text: 'FEETECH SCS0009 Serial Bus Servo', link: '/products/feetech-scs0009-servo' },
         ] },
       ],
       '/downloads/': [
@@ -2281,6 +2291,8 @@ const zhHK = {
           { text: 'Lekiwi 具身智能移動機器人', link: '/zh-hant/products/lekiwi' },
           { text: 'SO-ARM101 頂置相機支架', link: '/zh-hant/products/overhead-camera-mount' },
           { text: 'XLeRobot 雙臂移動機器人', link: '/zh-hant/products/xlerobot' },
+          { text: 'PincOpen 開源平行夾爪', link: '/zh-hant/products/pincopen' },
+          { text: 'SO-ARM101 與 AmazingHand 開源靈巧手機械臂', link: '/zh-hant/products/so-arm101-amazinghand' },
         ] },
         { text: '計算與視覺', items: [
           { text: 'Jetson AGX Orin 開發者套件(64GB)', link: '/zh-hant/products/jetson-agx-orin-devkit' },
@@ -2294,6 +2306,7 @@ const zhHK = {
         { text: '傳感器', items: [
           { text: 'GPS & 北斗 GNSS 定位模組', link: '/zh-hant/products/gps-beidou-module' },
           { text: 'IMU 高精度慣導模組', link: '/zh-hant/products/imu-module' },
+          { text: '心率與血氧飽和度感測器模組', link: '/zh-hant/products/heart-rate-spo2' },
         ] },
         { text: '配件', items: [
           { text: '2 自由度舵機雲台', link: '/zh-hant/products/2dof-gimbal' },
@@ -2303,6 +2316,8 @@ const zhHK = {
           { text: 'USB 免驅聲卡', link: '/zh-hant/products/usb-sound-card' },
           { text: '4K HDMI 採集卡', link: '/zh-hant/products/4k-hdmi-capture' },
           { text: 'AI 語音交互模組', link: '/zh-hant/products/ai-voice-module' },
+          { text: 'Jetson Orin 散熱器', link: '/zh-hant/products/jetson-orin-radiator' },
+          { text: '飛特科技 SCS0009 串列匯流排伺服馬達', link: '/zh-hant/products/feetech-scs0009-servo' },
         ] },
       ],
       '/zh-hant/downloads/': [
@@ -2986,6 +3001,8 @@ export default defineConfig({
             { text: 'Lekiwi 具身知能モバイルロボット', link: '/ja/products/lekiwi' },
             { text: 'SO-ARM101 オーバーヘッドカメラマウント', link: '/ja/products/overhead-camera-mount' },
             { text: 'XLeRobot 双腕移動ロボット', link: '/ja/products/xlerobot' },
+            { text: 'PincOpenオープンソースパラレルグリッパー', link: '/ja/products/pincopen' },
+            { text: 'SO-ARM101 & AmazingHand オープンソース多指ハンドロボットアーム', link: '/ja/products/so-arm101-amazinghand' },
           ] },
           { text: '計算とビジョン', items: [
             { text: 'Jetson AGX Orin 開発キット(64GB)', link: '/ja/products/jetson-agx-orin-devkit' },
@@ -2998,6 +3015,7 @@ export default defineConfig({
           ] },
           { text: 'センサー', items: [
             { text: 'IMU 高精度慣性航法モジュール', link: '/ja/products/imu-module' },
+            { text: '心拍数 & SpO2 センサーモジュール', link: '/ja/products/heart-rate-spo2' },
             { text: 'GPS & 北斗 GNSS 測位モジュール', link: '/ja/products/gps-beidou-module' },
           ] },
           { text: 'アクセサリー', items: [
@@ -3008,6 +3026,8 @@ export default defineConfig({
             { text: 'USB ドライバ不要サウンドカード', link: '/ja/products/usb-sound-card' },
             { text: '4K HDMI キャプチャカード', link: '/ja/products/4k-hdmi-capture' },
             { text: 'AI 音声対話モジュール', link: '/ja/products/ai-voice-module' },
+            { text: 'Jetson Orin ラジエーター', link: '/ja/products/jetson-orin-radiator' },
+            { text: 'FEETECH SCS0009 シリアルバスサーボ', link: '/ja/products/feetech-scs0009-servo' },
           ] },
         ],
       },
@@ -3617,6 +3637,8 @@ export default defineConfig({
             { text: 'Lekiwi 구현 지능 모바일 로봇', link: '/ko/products/lekiwi' },
             { text: 'SO-ARM101 오버헤드 카메라 마운트', link: '/ko/products/overhead-camera-mount' },
             { text: 'XLeRobot 양팔 이동 로봇', link: '/ko/products/xlerobot' },
+            { text: 'PincOpen 오픈소스 패러럴 그리퍼', link: '/ko/products/pincopen' },
+            { text: 'SO-ARM101 & AmazingHand 오픈소스 다지 핸드 로봇 암', link: '/ko/products/so-arm101-amazinghand' },
           ] },
           { text: '컴퓨팅 & 비전', items: [
             { text: 'Jetson AGX Orin 개발자 키트(64GB)', link: '/ko/products/jetson-agx-orin-devkit' },
@@ -3629,6 +3651,7 @@ export default defineConfig({
           ] },
           { text: '센서', items: [
             { text: 'IMU 고정밀 관성항법 모듈', link: '/ko/products/imu-module' },
+            { text: '심박수 및 SpO2 센서 모듈', link: '/ko/products/heart-rate-spo2' },
             { text: 'GPS & 北斗 GNSS 측위 모듈', link: '/ko/products/gps-beidou-module' },
           ] },
           { text: '액세서리', items: [
@@ -3639,6 +3662,8 @@ export default defineConfig({
             { text: 'USB 드라이버 프리 사운드 카드', link: '/ko/products/usb-sound-card' },
             { text: '4K HDMI 캡처 카드', link: '/ko/products/4k-hdmi-capture' },
             { text: 'AI 음성 인터랙션 모듈', link: '/ko/products/ai-voice-module' },
+            { text: 'Jetson Orin 라디에이터', link: '/ko/products/jetson-orin-radiator' },
+            { text: 'FEETECH SCS0009 시리얼 버스 서보', link: '/ko/products/feetech-scs0009-servo' },
           ] },
         ],
       },
@@ -4248,6 +4273,8 @@ export default defineConfig({
             { text: 'Lekiwi Embodied-Intelligence-Mobileroboter', link: '/de/products/lekiwi' },
             { text: 'SO-ARM101 Overhead-Kamera-Halterung', link: '/de/products/overhead-camera-mount' },
             { text: 'XLeRobot Zweiarm-Mobilroboter', link: '/de/products/xlerobot' },
+            { text: 'PincOpen-Open-Source-Parallelgreifer', link: '/de/products/pincopen' },
+            { text: 'SO-ARM101 & AmazingHand Open-Source-Roboterarm mit Mehrfingerhand', link: '/de/products/so-arm101-amazinghand' },
           ] },
           { text: 'Computing & Vision', items: [
             { text: 'Jetson AGX Orin Developer Kit (64GB)', link: '/de/products/jetson-agx-orin-devkit' },
@@ -4260,6 +4287,7 @@ export default defineConfig({
           ] },
           { text: 'Sensoren', items: [
             { text: 'IMU Hochpräzisions-Trägheitsnavigationsmodul', link: '/de/products/imu-module' },
+            { text: 'Herzfrequenz-&-SpO2-Sensormodul', link: '/de/products/heart-rate-spo2' },
             { text: 'GPS- & Beidou-GNSS-Positionsmodul', link: '/de/products/gps-beidou-module' },
           ] },
           { text: 'Zubehör', items: [
@@ -4270,6 +4298,8 @@ export default defineConfig({
             { text: 'USB Soundkarte ohne Treiber', link: '/de/products/usb-sound-card' },
             { text: '4K-HDMI-Capture-Karte', link: '/de/products/4k-hdmi-capture' },
             { text: 'AI-Sprachinteraktionsmodul', link: '/de/products/ai-voice-module' },
+            { text: 'Jetson Orin Kühlkörper', link: '/de/products/jetson-orin-radiator' },
+            { text: 'FEETECH SCS0009 Serienbus-Servo', link: '/de/products/feetech-scs0009-servo' },
           ] },
         ],
       },
@@ -4879,6 +4909,8 @@ export default defineConfig({
             { text: 'Robot mobile à intelligence incarnée Lekiwi', link: '/fr/products/lekiwi' },
             { text: 'Support caméra aérienne SO-ARM101', link: '/fr/products/overhead-camera-mount' },
             { text: 'Robot mobile à deux bras XLeRobot', link: '/fr/products/xlerobot' },
+            { text: 'Préhenseur parallèle open source PincOpen', link: '/fr/products/pincopen' },
+            { text: 'Bras robotique avec main dextre open source SO-ARM101 & AmazingHand', link: '/fr/products/so-arm101-amazinghand' },
           ] },
           { text: 'Calcul & Vision', items: [
             { text: 'Kit de développement Jetson AGX Orin (64GB)', link: '/fr/products/jetson-agx-orin-devkit' },
@@ -4891,6 +4923,7 @@ export default defineConfig({
           ] },
           { text: 'Capteurs', items: [
             { text: 'Module IMU inertiel de haute précision', link: '/fr/products/imu-module' },
+            { text: 'Module capteur de fréquence cardiaque et SpO2', link: '/fr/products/heart-rate-spo2' },
             { text: 'Module de positionnement GNSS GPS & Beidou', link: '/fr/products/gps-beidou-module' },
           ] },
           { text: 'Accessoires', items: [
@@ -4901,6 +4934,8 @@ export default defineConfig({
             { text: 'Carte son USB sans pilote', link: '/fr/products/usb-sound-card' },
             { text: 'Carte de capture HDMI 4K', link: '/fr/products/4k-hdmi-capture' },
             { text: 'Module d\'interaction vocale IA', link: '/fr/products/ai-voice-module' },
+            { text: 'Radiateur Jetson Orin', link: '/fr/products/jetson-orin-radiator' },
+            { text: 'Servo à bus série FEETECH SCS0009', link: '/fr/products/feetech-scs0009-servo' },
           ] },
         ],
       },
@@ -5510,6 +5545,8 @@ export default defineConfig({
             { text: 'Robot móvil de inteligencia corporizada Lekiwi', link: '/es/products/lekiwi' },
             { text: 'Soporte de cámara superior SO-ARM101', link: '/es/products/overhead-camera-mount' },
             { text: 'Robot móvil de dos brazos XLeRobot', link: '/es/products/xlerobot' },
+            { text: 'Pinza paralela de código abierto PincOpen', link: '/es/products/pincopen' },
+            { text: 'Brazo robótico SO-ARM101 y AmazingHand con mano diestra de código abierto', link: '/es/products/so-arm101-amazinghand' },
           ] },
           { text: 'Cómputo y visión', items: [
             { text: 'Kit de desarrollo Jetson AGX Orin (64GB)', link: '/es/products/jetson-agx-orin-devkit' },
@@ -5522,6 +5559,7 @@ export default defineConfig({
           ] },
           { text: 'Sensores', items: [
             { text: 'Módulo IMU inercial de alta precisión', link: '/es/products/imu-module' },
+            { text: 'Módulo sensor de frecuencia cardíaca y SpO2', link: '/es/products/heart-rate-spo2' },
             { text: 'Módulo de posicionamiento GNSS GPS y Beidou', link: '/es/products/gps-beidou-module' },
           ] },
           { text: 'Accesorios', items: [
@@ -5532,6 +5570,8 @@ export default defineConfig({
             { text: 'Tarjeta de sonido USB sin controladores', link: '/es/products/usb-sound-card' },
             { text: 'Tarjeta de captura HDMI 4K', link: '/es/products/4k-hdmi-capture' },
             { text: 'Módulo de interacción de voz IA', link: '/es/products/ai-voice-module' },
+            { text: 'Radiador Jetson Orin', link: '/es/products/jetson-orin-radiator' },
+            { text: 'Servomotor de bus serie FEETECH SCS0009', link: '/es/products/feetech-scs0009-servo' },
           ] },
         ],
       },
@@ -6141,6 +6181,8 @@ export default defineConfig({
             { text: 'Robot mobile a intelligenza incarnata Lekiwi', link: '/it/products/lekiwi' },
             { text: 'Supporto fotocamera overhead SO-ARM101', link: '/it/products/overhead-camera-mount' },
             { text: 'Robot mobile a due bracci XLeRobot', link: '/it/products/xlerobot' },
+            { text: 'Pinza parallela open source PincOpen', link: '/it/products/pincopen' },
+            { text: 'Braccio robotico open source SO-ARM101 e AmazingHand con mano destra', link: '/it/products/so-arm101-amazinghand' },
           ] },
           { text: 'Calcolo e visione', items: [
             { text: 'Kit di sviluppo Jetson AGX Orin (64GB)', link: '/it/products/jetson-agx-orin-devkit' },
@@ -6153,6 +6195,7 @@ export default defineConfig({
           ] },
           { text: 'Sensori', items: [
             { text: 'Modulo IMU inerziale di alta precisione', link: '/it/products/imu-module' },
+            { text: 'Modulo sensore frequenza cardiaca e SpO2', link: '/it/products/heart-rate-spo2' },
             { text: 'Modulo di posizionamento GNSS GPS e Beidou', link: '/it/products/gps-beidou-module' },
           ] },
           { text: 'Accessori', items: [
@@ -6163,6 +6206,8 @@ export default defineConfig({
             { text: 'Scheda audio USB senza driver', link: '/it/products/usb-sound-card' },
             { text: 'Scheda di acquisizione HDMI 4K', link: '/it/products/4k-hdmi-capture' },
             { text: 'Modulo di interazione vocale IA', link: '/it/products/ai-voice-module' },
+            { text: 'Dissipatore Jetson Orin', link: '/it/products/jetson-orin-radiator' },
+            { text: 'Servomotore a bus seriale FEETECH SCS0009', link: '/it/products/feetech-scs0009-servo' },
           ] },
         ],
       },
@@ -7229,6 +7274,8 @@ export default defineConfig({
             { text: 'Robô Móvel de Inteligência Incorporada Lekiwi', link: '/pt-br/products/lekiwi' },
             { text: 'Suporte de Câmera Superior SO-ARM101', link: '/pt-br/products/overhead-camera-mount' },
             { text: 'Robô móvel de dois braços XLeRobot', link: '/pt-br/products/xlerobot' },
+            { text: 'Garra Paralela de Código Aberto PincOpen', link: '/pt-br/products/pincopen' },
+            { text: 'Braço Robótico SO-ARM101 e AmazingHand com Mão Destra de Código Aberto', link: '/pt-br/products/so-arm101-amazinghand' },
           ] },
           { text: 'Computação & Visão', items: [
             { text: 'Kit de Desenvolvedor Jetson AGX Orin (64GB)', link: '/pt-br/products/jetson-agx-orin-devkit' },
@@ -7241,6 +7288,7 @@ export default defineConfig({
           ] },
           { text: 'Sensores', items: [
             { text: 'Módulo Inercial IMU de Alta Precisão', link: '/pt-br/products/imu-module' },
+            { text: 'Módulo Sensor de Frequência Cardíaca e SpO2', link: '/pt-br/products/heart-rate-spo2' },
             { text: 'Módulo de Posicionamento GNSS GPS e BeiDou', link: '/pt-br/products/gps-beidou-module' },
           ] },
           { text: 'Acessórios', items: [
@@ -7251,6 +7299,8 @@ export default defineConfig({
             { text: 'Placa de Som USB sem Driver', link: '/pt-br/products/usb-sound-card' },
             { text: 'Capturadora HDMI 4K', link: '/pt-br/products/4k-hdmi-capture' },
             { text: 'Módulo de interação por voz IA', link: '/pt-br/products/ai-voice-module' },
+            { text: 'Radiador Jetson Orin', link: '/pt-br/products/jetson-orin-radiator' },
+            { text: 'Servo de Barramento Serial FEETECH SCS0009', link: '/pt-br/products/feetech-scs0009-servo' },
           ] },
         ],
         '/pt-br/downloads/': [{ text: 'Downloads', items: [{ text: 'Central de Downloads', link: '/pt-br/downloads/' }] }],
@@ -7951,6 +8001,8 @@ export default defineConfig({
             { text: 'Robô Móvel de Inteligência Incorporada Lekiwi', link: '/pt-pt/products/lekiwi' },
             { text: 'Suporte de Câmara Superior SO-ARM101', link: '/pt-pt/products/overhead-camera-mount' },
             { text: 'Robô móvel de dois braços XLeRobot', link: '/pt-pt/products/xlerobot' },
+            { text: 'Garra Paralela de Código Aberto PincOpen', link: '/pt-pt/products/pincopen' },
+            { text: 'Braço Robótico SO-ARM101 e AmazingHand com Mão Destra de Código Aberto', link: '/pt-pt/products/so-arm101-amazinghand' },
           ] },
           { text: 'Computação & Visão', items: [
             { text: 'Kit de Desenvolvedor Jetson AGX Orin (64GB)', link: '/pt-pt/products/jetson-agx-orin-devkit' },
@@ -7963,6 +8015,7 @@ export default defineConfig({
           ] },
           { text: 'Sensores', items: [
             { text: 'Módulo Inercial IMU de Alta Precisão', link: '/pt-pt/products/imu-module' },
+            { text: 'Módulo Sensor de Frequência Cardíaca e SpO2', link: '/pt-pt/products/heart-rate-spo2' },
             { text: 'Módulo de Posicionamento GNSS GPS e BeiDou', link: '/pt-pt/products/gps-beidou-module' },
           ] },
           { text: 'Acessórios', items: [
@@ -7973,6 +8026,8 @@ export default defineConfig({
             { text: 'Placa de Som USB sem Driver', link: '/pt-pt/products/usb-sound-card' },
             { text: 'Capturadora HDMI 4K', link: '/pt-pt/products/4k-hdmi-capture' },
             { text: 'Módulo de interação por voz IA', link: '/pt-pt/products/ai-voice-module' },
+            { text: 'Radiador Jetson Orin', link: '/pt-pt/products/jetson-orin-radiator' },
+            { text: 'Servo de Barramento Serial FEETECH SCS0009', link: '/pt-pt/products/feetech-scs0009-servo' },
           ] },
         ],
         '/pt-pt/downloads/': [{ text: 'Downloads', items: [{ text: 'Central de Downloads', link: '/pt-pt/downloads/' }] }],
