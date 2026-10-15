@@ -235,7 +235,7 @@ XLeRobot bietet zum Aufzeichnen nur den Weg über VR, und der hängt vom Modul `
 from lerobot.datasets.lerobot_dataset import LeRobotDataset
 
 ds = LeRobotDataset.create(
-    repo_id="<benutzername>/<datensatzname>", fps=30,
+    repo_id="<your-username>/<dataset-name>", fps=30,
     features={"observation.state": {"dtype": "float32", "shape": (6,), "names": None},
               "action": {"dtype": "float32", "shape": (6,), "names": None}},
     root="/data/ds")
@@ -286,7 +286,7 @@ Die ACT-Policy **benötigt keine zusätzlichen Abhängigkeiten** und lässt sich
 from lerobot.policies.act.configuration_act import ACTConfig
 from lerobot.policies.act.modeling_act import ACTPolicy
 
-policy = ACTPolicy.from_pretrained("<benutzername>/<modellname>")
+policy = ACTPolicy.from_pretrained("<your-username>/<model-name>")
 policy.eval()
 
 # Nach dem Anschließen des Roboters: Inferenz in einer Schleife
@@ -313,7 +313,7 @@ Die im Image bereits vorinstallierten Policies:
 ```bash
 lerobot-train \
   --policy.type=act \
-  --dataset.repo_id=<benutzername>/<datensatzname>
+  --dataset.repo_id=<your-username>/<my-dataset-name>
 ```
 
 > `lerobot-train` **benötigt kein `robot.type`** (es verarbeitet nur Datensatz und Policy-Typ),

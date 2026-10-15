@@ -131,7 +131,7 @@ Zum Ausführen einer trainierten Policy auf echter Hardware verwenden Sie **`ler
 ```bash
 lerobot-rollout \
   --robot.type=so101_follower --robot.port=/dev/ttyACM0 --robot.id=my_follower \
-  --policy.path=<benutzername>/<modellname> --strategy.type=base
+  --policy.path=<your-username>/<my-model> --strategy.type=base
 ```
 
 ### Unklar, ob `examples/` oder `lerobot-*` verwendet werden soll
@@ -169,7 +169,7 @@ lerobot-find-port                     # Serielle Schnittstelle suchen (interakti
 docker exec -u root -it xlerobot bash -c "apt-get update && apt-get install -y libxkbcommon-x11-0 libxinerama1"
 
 # Training (beide Wege nutzen ihn gemeinsam: robot.type ist nicht nötig)
-lerobot-train --policy.type=act --dataset.repo_id=<benutzername>/<datensatzname>
+lerobot-train --policy.type=act --dataset.repo_id=<username>/<dataset-name>
 
 # Selbsttest
 python -c "import torch, lerobot; print(torch.__version__, lerobot.__version__)"
@@ -214,17 +214,17 @@ lerobot-record \
   --robot.type=so101_follower --robot.port=/dev/ttyACM0 --robot.id=my_follower \
   --robot.cameras="{ front: {type: opencv, index_or_path: /dev/video0, width: 640, height: 480, fps: 30} }" \
   --teleop.type=keyboard \
-  --dataset.repo_id=<benutzername>/<datensatzname> --dataset.num_episodes=10 \
+  --dataset.repo_id=<username>/<dataset-name> --dataset.num_episodes=10 \
   --dataset.single_task="pick up the cube"
 
 # Wiedergabe zur Kontrolle
 lerobot-replay --robot.type=so101_follower --robot.port=/dev/ttyACM0 --robot.id=my_follower \
-  --dataset.repo_id=<benutzername>/<datensatzname> --dataset.episode=0
+  --dataset.repo_id=<username>/<dataset-name> --dataset.episode=0
 
 # Trainierte Policy auf echter Hardware ausführen (⚠️ nicht lerobot-eval, das ist für die Simulation)
 lerobot-rollout \
   --robot.type=so101_follower --robot.port=/dev/ttyACM0 --robot.id=my_follower \
-  --policy.path=<benutzername>/<modellname> --strategy.type=base
+  --policy.path=<username>/<model-name> --strategy.type=base
 ```
 
 Details siehe [lerobot/](../lerobot/01-Operation.md).

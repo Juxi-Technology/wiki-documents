@@ -235,7 +235,7 @@ XLeRobot 只有 VR 這一條錄製路徑，而它依賴 `XLeVR` 模組，不在�
 from lerobot.datasets.lerobot_dataset import LeRobotDataset
 
 ds = LeRobotDataset.create(
-    repo_id="你的使用者名稱/資料集名", fps=30,
+    repo_id="<your-username>/<dataset-name>", fps=30,
     features={"observation.state": {"dtype": "float32", "shape": (6,), "names": None},
               "action": {"dtype": "float32", "shape": (6,), "names": None}},
     root="/data/ds")
@@ -286,7 +286,7 @@ ACT 策略**不需要額外相依套件**，在鏡像裡直接就能用：
 from lerobot.policies.act.configuration_act import ACTConfig
 from lerobot.policies.act.modeling_act import ACTPolicy
 
-policy = ACTPolicy.from_pretrained("你的使用者名稱/模型名")
+policy = ACTPolicy.from_pretrained("<your-username>/<model-name>")
 policy.eval()
 
 # 接上機器人後迴圈推理

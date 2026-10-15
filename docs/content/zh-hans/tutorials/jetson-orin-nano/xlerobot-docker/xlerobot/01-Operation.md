@@ -235,7 +235,7 @@ XLeRobot 只有 VR 那条录制路径，而它依赖 `XLeVR` 模块，不在镜�
 from lerobot.datasets.lerobot_dataset import LeRobotDataset
 
 ds = LeRobotDataset.create(
-    repo_id="你的用户名/数据集名", fps=30,
+    repo_id="<your-username>/<dataset-name>", fps=30,
     features={"observation.state": {"dtype": "float32", "shape": (6,), "names": None},
               "action": {"dtype": "float32", "shape": (6,), "names": None}},
     root="/data/ds")
@@ -286,7 +286,7 @@ ACT 策略**不需要额外依赖**，镜像里直接能用：
 from lerobot.policies.act.configuration_act import ACTConfig
 from lerobot.policies.act.modeling_act import ACTPolicy
 
-policy = ACTPolicy.from_pretrained("你的用户名/模型名")
+policy = ACTPolicy.from_pretrained("<your-username>/<model-name>")
 policy.eval()
 
 # 接上机器人后循环推理

@@ -219,7 +219,7 @@ Optionale Policies (`--policy.type`): `act` (am gebräuchlichsten), `diffusion`,
 ```bash
 lerobot-rollout \
   --robot.type=so101_follower --robot.port=/dev/ttyACM0 --robot.id=my_follower \
-  --policy.path=<benutzername>/<modellname> \
+  --policy.path=<your-username>/<my-model> \
   --strategy.type=base
 ```
 
@@ -305,16 +305,16 @@ lerobot-record \
   --robot.type=so101_follower --robot.port=/dev/ttyACM0 --robot.id=my_follower \
   --robot.cameras="{ front: {type: opencv, index_or_path: /dev/video0, width: 640, height: 480, fps: 30} }" \
   --teleop.type=keyboard \
-  --dataset.repo_id=<benutzername>/my-first-dataset \
+  --dataset.repo_id=<your-username>/my-first-dataset \
   --dataset.num_episodes=10 --dataset.single_task="pick up the cube"
 
 # 6. Training
-lerobot-train --policy.type=act --dataset.repo_id=<benutzername>/my-first-dataset
+lerobot-train --policy.type=act --dataset.repo_id=<your-username>/my-first-dataset
 
 # 7. Den Roboterarm autonom laufen lassen
 lerobot-rollout \
   --robot.type=so101_follower --robot.port=/dev/ttyACM0 --robot.id=my_follower \
-  --policy.path=<benutzername>/my-first-dataset --strategy.type=base
+  --policy.path=<your-username>/my-first-dataset --strategy.type=base
 ```
 
 ---

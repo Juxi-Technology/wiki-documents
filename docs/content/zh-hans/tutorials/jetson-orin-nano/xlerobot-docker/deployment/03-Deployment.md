@@ -43,7 +43,7 @@ docker images | grep xlerobot
 适合需要改动、或者想用最新源码的情况。
 
 ```bash
-git clone <本仓库地址> xlerobot-docker
+git clone <repository-url> xlerobot-docker
 cd xlerobot-docker
 
 bash scripts/build.sh jetson

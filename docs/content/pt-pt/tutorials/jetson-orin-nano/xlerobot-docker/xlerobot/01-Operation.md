@@ -266,7 +266,7 @@ LeRobotDataset (a biblioteca está incluída na imagem):
 from lerobot.datasets.lerobot_dataset import LeRobotDataset
 
 ds = LeRobotDataset.create(
-    repo_id="<nome-de-utilizador>/<nome-do-dataset>", fps=30,
+    repo_id="<your-username>/<dataset-name>", fps=30,
     features={"observation.state": {"dtype": "float32", "shape": (6,), "names": None},
               "action": {"dtype": "float32", "shape": (6,), "names": None}},
     root="/data/ds")
@@ -322,7 +322,7 @@ imagem:
 from lerobot.policies.act.configuration_act import ACTConfig
 from lerobot.policies.act.modeling_act import ACTPolicy
 
-policy = ACTPolicy.from_pretrained("<nome-de-utilizador>/<nome-do-modelo>")
+policy = ACTPolicy.from_pretrained("<your-username>/<model-name>")
 policy.eval()
 
 # Depois de ligar o robô, inferir em ciclo

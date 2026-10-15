@@ -45,7 +45,7 @@ Para quando precisar de fazer alterações ou quiser compilar a partir do
 código-fonte mais recente.
 
 ```bash
-git clone <URL deste repositório> xlerobot-docker
+git clone <repository-url> xlerobot-docker
 cd xlerobot-docker
 
 bash scripts/build.sh jetson
