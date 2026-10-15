@@ -241,7 +241,6 @@ documentation officielle NVIDIA et les déclarations du forum des développeurs
 Technology. La liste de reconstruction décrit des conséquences standard de la
 plateforme — validez-la par rapport à votre propre pile.*
 
-*Statut : relu le 2026-10-11. Fondé sur la
 documentation officielle NVIDIA et les déclarations du forum des développeurs
 à la date indiquée ; pas encore vérifié sur matériel physique par Juxi
 Technology. La liste de reconstruction décrit des conséquences standard de la

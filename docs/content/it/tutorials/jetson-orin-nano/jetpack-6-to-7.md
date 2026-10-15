@@ -232,7 +232,6 @@ indicate; non ancora verificato su hardware fisico da Juxi Technology. L'elenco
 delle ricompilazioni descrive le conseguenze standard della piattaforma — da
 validare rispetto al proprio stack.*
 
-*Stato: rivisto il 2026-10-11. Basato sulla documentazione
 ufficiale di NVIDIA e su dichiarazioni del forum degli sviluppatori alle date
 indicate; non ancora verificato su hardware fisico da Juxi Technology. L'elenco
 delle ricompilazioni descrive le conseguenze standard della piattaforma — da

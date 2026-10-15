@@ -158,8 +158,6 @@ L4T r39.2 전원 모드 표에서 Super 구성은 15W(모드 0), 25W(모드 1, �
 
 *상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서에 근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*
 
-*상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서에 근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*
-
 **이미지 출처:** 제품 이미지는 NVIDIA 공식 *Jetson Orin Nano Developer Kit User Guide*(2026-09-26 다운로드)에서 가져왔으며, © NVIDIA Corporation.
 
 ---

@@ -68,8 +68,6 @@ Jetson ISO 是 NVIDIA 推薦的首次設定路徑，也是唯一不需要 Ubuntu
 
 SDK Manager 是主機 PC 路線：它透過 USB-C 刷寫 BSP，也能更新套件的固件（見下方更新路徑一節）。
 
-*狀態：已於 2026-10-11 審核。內容以所列日期的 NVIDIA 官方文件為依據；尚未由鉅犀科技在實體硬體上驗證。*
-
 **主機 PC 需求**（依套件的 BSP Setup 頁面）：一台**執行 Ubuntu 22.04 或 Ubuntu 20.04 的 x86 PC**；**網際網路連線與一個免費的 NVIDIA Developer Program 帳號**；一條連接套件 USB-C 接口的 **USB 線**，外加「一支跳線針或金屬迴紋針」；以及供套件使用的顯示器或 USB 轉 TTL 串口線。
 
 > **鉅犀提示：** NVIDIA 的說法互相矛盾。套件設定頁列出 Ubuntu 22.04 或 20.04；

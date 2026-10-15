@@ -105,8 +105,6 @@ review_owner: cheny
 
 *상태: 2026-10-11 검토 완료.*
 
-*상태: 2026-10-11 검토 완료.*
-
 ---
 
 NVIDIA® 및 Jetson™은 NVIDIA Corporation의 상표입니다. 이 페이지는 Juxi Technology가 게시하며 NVIDIA의 공식 발행물이 아닙니다.

@@ -223,7 +223,6 @@ smaller, quantize more, shorten the context, or reduce the batch — see [Local 
 documentation as of the date listed; not yet verified on physical hardware by
 Juxi Technology.*
 
-*Status: reviewed on 2026-10-11. Grounded in NVIDIA's official
 documentation as of the date listed; not yet verified on physical hardware by
 Juxi Technology.*
 

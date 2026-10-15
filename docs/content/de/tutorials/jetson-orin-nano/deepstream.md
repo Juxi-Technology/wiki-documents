@@ -246,7 +246,6 @@ der CPU.
 offiziellen NVIDIA-Dokumentation zum angegebenen Datum; noch nicht von Juxi
 Technology auf physischer Hardware verifiziert.*
 
-*Status: geprüft am 2026-10-11. Basiert auf der
 offiziellen NVIDIA-Dokumentation zum angegebenen Datum; noch nicht von Juxi
 Technology auf physischer Hardware verifiziert.*
 

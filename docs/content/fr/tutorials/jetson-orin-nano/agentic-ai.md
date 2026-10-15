@@ -241,7 +241,6 @@ appareil qui contient vos données, c'est un risque réel : un agent avec accès
 aux outils et au shell ici peut lire, modifier ou envoyer tout ce qu'il peut
 atteindre.
 
-*Statut : relu le 2026-10-11. Fondé sur la
 documentation officielle NVIDIA, des posts des forums développeurs NVIDIA et le
 guide fournisseur Jetson AI Lab, aux dates indiquées ; pas encore vérifié sur
 matériel physique par Juxi Technology.*

@@ -86,7 +86,6 @@ Lab sitzen im Omniverse-Block links, der ein separater Host ist.
 
 ## Isaac ROS auf JetPack 7.2 — was die offiziellen Seiten heute sagen
 
-*Status: geprüft am 2026-10-11. Die Verfügbarkeit im
 Ökosystem ändert sich schnell — prüfen Sie die verlinkten NVIDIA- und
 Upstream-Seiten erneut, bevor Sie sich auf diese Tabelle verlassen. Noch nicht
 auf physischer Hardware durch Juxi Technology verifiziert.*

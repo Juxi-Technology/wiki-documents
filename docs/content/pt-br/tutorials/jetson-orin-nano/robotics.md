@@ -86,7 +86,6 @@ Omniverse à esquerda, que é um host separado.
 
 ## Isaac ROS no JetPack 7.2 — o que as páginas oficiais dizem hoje
 
-*Status: revisado em 2026-10-11. A disponibilidade do
 ecossistema muda rapidamente — verifique novamente as páginas vinculadas da
 NVIDIA e do upstream antes de confiar nesta tabela. Ainda não verificado em
 hardware físico pela Juxi Technology.*

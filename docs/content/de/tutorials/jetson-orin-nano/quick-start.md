@@ -211,8 +211,6 @@ Der Standard-Leistungsmodus ist typischerweise **25W**. Klicken Sie für maximal
 
 *Status: geprüft am 2026-10-11. Basiert auf NVIDIAs offizieller Dokumentation mit Stand der oben genannten Daten; noch nicht von Juxi Technology auf physischer Hardware verifiziert.*
 
-*Status: geprüft am 2026-10-11. Basiert auf NVIDIAs offizieller Dokumentation mit Stand der oben genannten Daten; noch nicht von Juxi Technology auf physischer Hardware verifiziert.*
-
 **Bildnachweis:** Die Bilder auf dieser Seite stammen aus NVIDIAs offiziellem *Jetson Orin Nano Developer Kit User Guide* (heruntergeladen am 2026-09-26) und bleiben © NVIDIA Corporation. Sie sind hier wiedergegeben, um den offiziellen Einrichtungsablauf zu veranschaulichen.
 
 ---

@@ -218,7 +218,6 @@ O header de botões concentra as funções de console serial, reset e force reco
 datas indicadas; ainda não verificado em hardware físico pela Juxi Technology.*
 
 **Créditos das imagens:** as imagens de layout são do *Jetson Orin Nano
-*Status: revisado em 2026-10-11. Baseado na documentação oficial da NVIDIA nas
 datas indicadas; ainda não verificado em hardware físico pela Juxi Technology.*
 
 Developer Kit User Guide* oficial da NVIDIA (baixado em 2026-09-26), © NVIDIA Corporation.

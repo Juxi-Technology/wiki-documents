@@ -112,8 +112,6 @@ Super Developer Kit(8GB)** 向けの NVIDIA 公式ダウンロードとドキュ
 
 *ステータス: レビュー済み（2026-10-11）。*
 
-*ステータス: レビュー済み（2026-10-11）。*
-
 ---
 
 NVIDIA® および Jetson™ は NVIDIA Corporation の商標です。本ページは Juxi Technology

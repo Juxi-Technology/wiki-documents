@@ -223,8 +223,6 @@ Downloads e links de referência oficiais: [Downloads](/pt-br/tutorials/jetson-o
 
 *Status: revisado em 2026-10-11.*
 
-*Status: revisado em 2026-10-11.*
-
 ---
 
 NVIDIA® e Jetson™ são marcas registradas da NVIDIA Corporation. Esta página é

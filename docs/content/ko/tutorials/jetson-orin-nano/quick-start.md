@@ -208,8 +208,6 @@ apt list --installed | grep nvidia-jetpack
 
 *상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서에 근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*
 
-*상태: 2026-10-11 검토 완료. 기재된 날짜 기준 NVIDIA 공식 문서에 근거하며, 아직 Juxi Technology가 실제 하드웨어에서 검증하지 않았습니다.*
-
 **이미지 출처:** 이 페이지의 이미지는 NVIDIA 공식 *Jetson Orin Nano Developer Kit User Guide*(2026-09-26 다운로드)에서 가져온 것이며 저작권은 © NVIDIA Corporation에 있습니다. 공식 설정 흐름을 설명하기 위해 여기에 수록했습니다.
 
 ---

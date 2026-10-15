@@ -112,8 +112,6 @@ Dois fatos específicos do Orin Nano importam antes de você baixar qualquer coi
 
 *Status: revisado em 2026-10-11.*
 
-*Status: revisado em 2026-10-11.*
-
 ---
 
 NVIDIA® e Jetson™ são marcas registradas da NVIDIA Corporation. Esta página é

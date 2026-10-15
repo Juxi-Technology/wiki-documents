@@ -219,8 +219,6 @@ Official downloads and reference links: [Downloads](/tutorials/jetson-orin-nano/
 
 *Status: reviewed on 2026-10-11.*
 
-*Status: reviewed on 2026-10-11.*
-
 ---
 
 NVIDIA® and Jetson™ are trademarks of NVIDIA Corporation. This page is published

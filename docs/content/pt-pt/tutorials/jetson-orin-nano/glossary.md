@@ -114,7 +114,6 @@ da documentação da NVIDIA e do uso padrão da indústria; os números de vers�
 foram verificados nas datas indicadas. Não verificado em hardware físico pela
 Juxi Technology.*
 
-*Estado: revisado em 2026-10-11. Definições compiladas a partir
 da documentação da NVIDIA e do uso padrão da indústria; os números de versão
 foram verificados nas datas indicadas. Não verificado em hardware físico pela
 Juxi Technology.*

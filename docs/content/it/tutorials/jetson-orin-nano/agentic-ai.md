@@ -231,7 +231,6 @@ che continua a lavorare mentre lei non guarda. Su un dispositivo che contiene i
 suoi dati, è un rischio reale: un agente con accesso a strumenti e shell qui può
 leggere, modificare o inviare tutto ciò che riesce a raggiungere.
 
-*Stato: rivisto il 2026-10-11. Basato sulla
 documentazione ufficiale di NVIDIA, su post dei forum per sviluppatori NVIDIA e
 sulla guida del fornitore Jetson AI Lab, alle date indicate; non ancora
 verificato su hardware fisico da Juxi Technology.*

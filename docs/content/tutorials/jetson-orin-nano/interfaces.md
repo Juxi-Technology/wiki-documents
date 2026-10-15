@@ -216,7 +216,6 @@ The button header carries the serial console, reset, and force-recovery function
 documentation as of the dates listed; not yet verified on physical hardware by
 Juxi Technology.*
 
-*Status: reviewed on 2026-10-11. Grounded in NVIDIA's official
 documentation as of the dates listed; not yet verified on physical hardware by
 Juxi Technology.*
 

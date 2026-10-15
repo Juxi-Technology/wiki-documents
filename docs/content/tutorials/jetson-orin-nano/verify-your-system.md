@@ -215,7 +215,6 @@ configuration-file workarounds. Juxi support: **support@juxitech.com** with your
 *Status: reviewed on 2026-10-11. Grounded in NVIDIA's official documentation and NVIDIA
 forum sources as of the dates listed; not yet verified on physical hardware by Juxi Technology.*
 
-*Status: reviewed on 2026-10-11. Grounded in NVIDIA's official documentation and NVIDIA
 forum sources as of the dates listed; not yet verified on physical hardware by Juxi Technology.*
 
 ---

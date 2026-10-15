@@ -243,8 +243,6 @@ Téléchargements officiels et liens de référence : [Téléchargements](/fr/tu
 
 *Statut : relu le 2026-10-11.*
 
-*Statut : relu le 2026-10-11.*
-
 ---
 
 NVIDIA® et Jetson™ sont des marques de NVIDIA Corporation. Cette page est

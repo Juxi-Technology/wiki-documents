@@ -105,8 +105,6 @@ review_owner: cheny
 
 *狀態：已於 2026-10-11 審核。*
 
-*狀態：已於 2026-10-11 審核。*
-
 ---
 
 NVIDIA® 與 Jetson™ 是 NVIDIA Corporation 的商標。本頁面由鉅犀科技發布，並非 NVIDIA 官方出版物。

@@ -227,7 +227,6 @@ de qualquer solução alternativa de arquivo de configuração. Suporte da Juxi:
 em fontes do fórum da NVIDIA nas datas indicadas; ainda não verificado em hardware físico pela
 Juxi Technology.*
 
-*Status: revisado em 2026-10-11. Baseado na documentação oficial da NVIDIA e
 em fontes do fórum da NVIDIA nas datas indicadas; ainda não verificado em hardware físico pela
 Juxi Technology.*
 

@@ -36,8 +36,6 @@ review_owner: cheny
 
 **同梱物は何ですか?**
 Jetson Orin Nano Developer Kit、19 V 電源、クイックスタート/サポートカードです。
-*ステータス: レビュー済み（2026-10-11）。*
-
 **NVIDIA の箱にはストレージが含まれていません**:microSD カードまたは NVMe SSD、
 インストーラー用の USB メモリ、モニターとキーボードはご自身で用意します — ただし、
 このキットの Juxi ストアバンドルには 64 GB microSD カードが追加されます(ストアの

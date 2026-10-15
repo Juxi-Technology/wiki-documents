@@ -231,7 +231,6 @@ contexto com intenção — veja [Eficiência de memória para 8 GB](/pt-br/tuto
 oficial da NVIDIA na data indicada; ainda não verificado em hardware físico
 pela Juxi Technology.*
 
-*Status: revisado em 2026-10-11. Baseado na documentação
 oficial da NVIDIA na data indicada; ainda não verificado em hardware físico
 pela Juxi Technology.*
 

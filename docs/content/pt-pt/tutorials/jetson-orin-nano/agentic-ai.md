@@ -245,7 +245,6 @@ que continua a trabalhar enquanto não está a vigiar. Num dispositivo que
 guarda os seus dados, isso é um risco real: um agente com acesso a ferramentas
 e à shell pode aqui ler, alterar ou enviar tudo o que conseguir alcançar.
 
-*Estado: revisado em 2026-10-11. Baseado na documentação
 oficial da NVIDIA, em publicações dos fóruns de desenvolvedores da NVIDIA e no
 guia do fornecedor Jetson AI Lab, nas datas indicadas; ainda não verificado em
 hardware físico pela Juxi Technology.*

@@ -52,7 +52,6 @@ para verificar o que está a executar, consulte **[Verificar o sistema](/pt-pt/t
 da NVIDIA nas datas indicadas; ainda não verificado em hardware físico pela
 Juxi Technology.*
 
-*Estado: revisado em 2026-10-11. Baseado na documentação oficial
 da NVIDIA nas datas indicadas; ainda não verificado em hardware físico pela
 Juxi Technology.*
 

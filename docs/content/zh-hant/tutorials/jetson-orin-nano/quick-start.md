@@ -206,8 +206,6 @@ apt list --installed | grep nvidia-jetpack
 
 *狀態：已於 2026-10-11 審核。內容以所列日期的 NVIDIA 官方文件為依據；尚未由鉅犀科技在實體硬體上驗證。*
 
-*狀態：已於 2026-10-11 審核。內容以所列日期的 NVIDIA 官方文件為依據；尚未由鉅犀科技在實體硬體上驗證。*
-
 **圖片來源：** 本頁圖片來自 NVIDIA 官方 *Jetson Orin Nano Developer Kit User Guide*（下載於 2026-09-26），版權歸 © NVIDIA Corporation 所有。此處轉載用於說明官方設定流程。
 
 ---

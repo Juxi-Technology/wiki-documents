@@ -130,8 +130,6 @@ MAXN_SUPER가 활성화되어 있어도 GPU가 624,750,000 Hz(`bpmp/debug/clk/na
 
 ## NVMe 스토리지 문제
 
-*상태: 2026-10-11 검토 완료. 미확인으로 표시된 항목은 커뮤니티 포럼 보고에서 나온 것으로 바뀔 수 있습니다. 이 페이지는 문서 검증만 완료했습니다 — Juxi는 이 키트를 하드웨어에서 테스트하지 않았습니다.*
-
 **설치 프로그램이 드라이브를 제공하지 않음 / 파티션 단계 실패** — *미확인*: 설치 프로그램이 4K 섹터로 포맷된 NVMe 드라이브를 지원하지 않을 수 있습니다; 512n/512e가 필요합니다. `nvme id-ns -H /dev/nvme0n1`로 확인하십시오; `nvme format --lbaf=ID /dev/nvme0n1`로 변경합니다 — **데이터 파괴적**입니다; 게시글은 데이터 보존을 다루지 않습니다. NVIDIA는 이를 공식적으로 확인하지 않았습니다. (등급 B, 미확인, [스레드 372151](https://forums.developer.nvidia.com/t/jetpack-7-2-jetson-linux-r39-2-on-jetson-orin-nano-developer-kit-getting-started-and-feedback-thread/372151))
 
 **설치는 정상으로 보이지만 부팅이 멈춤** — *미확인*: 설치 프로그램이 100%에 도달한 뒤 검은 화면이나 깜빡이는 커서가 나타난다는 보고가 여러 건 있습니다. 한 사용자는 복구 모드 직접 플래싱으로만 해결했고, 다른 사용자는 위의 4K 섹터 문제로 추적했습니다. 확인된 근본 원인은 없습니다. (등급 B, 미확인, [스레드 372151](https://forums.developer.nvidia.com/t/jetpack-7-2-jetson-linux-r39-2-on-jetson-orin-nano-developer-kit-getting-started-and-feedback-thread/372151))

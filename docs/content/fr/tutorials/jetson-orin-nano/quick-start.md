@@ -215,8 +215,6 @@ Le mode d'alimentation par défaut est généralement **25W**. Pour des performa
 
 *Statut : relu le 2026-10-11. Fondé sur la documentation officielle NVIDIA aux dates indiquées ; pas encore vérifié sur matériel physique par Juxi Technology.*
 
-*Statut : relu le 2026-10-11. Fondé sur la documentation officielle NVIDIA aux dates indiquées ; pas encore vérifié sur matériel physique par Juxi Technology.*
-
 **Crédits images :** les images de cette page proviennent du *Jetson Orin Nano Developer Kit User Guide* officiel de NVIDIA (téléchargé le 2026-09-26) et restent © NVIDIA Corporation. Elles sont reproduites ici pour illustrer le flux de configuration officiel.
 
 ---

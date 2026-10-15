@@ -112,7 +112,6 @@ To check what a specific system actually runs: `cat /etc/nv_tegra_release`
 documentation and standard industry usage; version numbers checked on the dates
 listed. Not verified on physical hardware by Juxi Technology.*
 
-*Status: reviewed on 2026-10-11. Definitions compiled from NVIDIA
 documentation and standard industry usage; version numbers checked on the dates
 listed. Not verified on physical hardware by Juxi Technology.*
 

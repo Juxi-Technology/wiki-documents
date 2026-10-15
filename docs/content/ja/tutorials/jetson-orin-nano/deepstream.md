@@ -148,8 +148,6 @@ Jetson 向けの公式 DeepStream 9.1 パフォーマンスページが扱うプ
 
 *ステータス: レビュー済み（2026-10-11）。記載した日付時点の NVIDIA 公式ドキュメントに基づいています。Juxi Technology による実機検証はまだ行われていません。*
 
-*ステータス: レビュー済み（2026-10-11）。記載した日付時点の NVIDIA 公式ドキュメントに基づいています。Juxi Technology による実機検証はまだ行われていません。*
-
 ---
 
 NVIDIA® および Jetson™ は NVIDIA Corporation の商標です。本ページは Juxi Technology によって公開されており、NVIDIA の公式出版物ではありません。

@@ -99,7 +99,6 @@ per il kit.
 > le note di rilascio di L4T r39.2.1 elencano "Ubuntu 24.04 e 22.04" come distribuzione host per
 > il flashing. Controlli i requisiti di SDK Manager di NVIDIA prima di preparare un PC host.
 
-*Stato: rivisto il 2026-10-11. Basato sulla documentazione ufficiale NVIDIA alle date
 indicate; non ancora verificato su hardware fisico da Juxi Technology.*
 
 **Installi SDK Manager sul PC host.** La pagina di configurazione di NVIDIA fornisce i comandi esatti per Ubuntu

@@ -218,7 +218,6 @@ NVIDIA alle date indicate; non ancora verificato su hardware fisico da
 Juxi Technology.*
 
 **Crediti immagine:** le immagini di layout provengono dalla *Jetson Orin
-*Stato: rivisto il 2026-10-11. Basato sulla documentazione ufficiale
 NVIDIA alle date indicate; non ancora verificato su hardware fisico da
 Juxi Technology.*
 

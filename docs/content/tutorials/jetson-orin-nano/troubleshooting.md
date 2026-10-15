@@ -128,8 +128,6 @@ Even with MAXN_SUPER active, the GPU can stay pinned at 624,750,000 Hz (`bpmp/de
 
 ## NVMe storage issues
 
-*Status: reviewed on 2026-10-11. Items labelled unconfirmed come from community forum reports and may change. This page is documented-verified only — Juxi has not tested this kit on hardware.*
-
 **Installer does not offer the drive / partition step fails** — *unconfirmed*: the installer may not support NVMe drives formatted with 4K sectors; it needs 512n/512e. Check `nvme id-ns -H /dev/nvme0n1`; change with `nvme format --lbaf=ID /dev/nvme0n1` — **destructive**; the post does not discuss data preservation. NVIDIA has not confirmed this officially. (grade B, unconfirmed, [thread 372151](https://forums.developer.nvidia.com/t/jetpack-7-2-jetson-linux-r39-2-on-jetson-orin-nano-developer-kit-getting-started-and-feedback-thread/372151))
 
 **Boot hangs after a successful-looking install** — *unconfirmed*: several reports of a black screen or blinking cursor after the installer reaches 100%. One user fixed it only via recovery-mode direct flash; another traced it to the 4K-sector issue above. No confirmed root cause. (grade B, unconfirmed, [thread 372151](https://forums.developer.nvidia.com/t/jetpack-7-2-jetson-linux-r39-2-on-jetson-orin-nano-developer-kit-getting-started-and-feedback-thread/372151))

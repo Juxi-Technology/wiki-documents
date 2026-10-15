@@ -199,7 +199,6 @@ depuis un hôte Ubuntu ; corrigé selon eux dans 7.2.1. (niveau B, [fil 377003](
 
 ## Problèmes de stockage NVMe
 
-*Statut : relu le 2026-10-11. Les éléments marqués
 comme non confirmés proviennent de signalements du forum communautaire et
 peuvent évoluer. Cette page n'est vérifiée que sur documentation — Juxi n'a
 pas testé ce kit sur matériel.*

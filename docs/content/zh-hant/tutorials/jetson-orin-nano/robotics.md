@@ -76,8 +76,6 @@ JetPack 7.2 把本套件帶到了新一代平台：Ubuntu 24.04、CUDA 13，以�
 
 ## JetPack 7.2 上的 Isaac ROS——官方頁面目前的說法
 
-*狀態：已於 2026-10-11 審核。生態可用性變化很快——在依賴本表之前，請重新查核文中連結的 NVIDIA 與上游頁面。尚未由鉅犀科技在實體硬體上驗證。*
-
 **NVIDIA 的頁面彼此矛盾。** JetPack 7.2.1 下載頁仍列出「NVIDIA Isaac™ ROS — Coming soon」。Isaac ROS 專案頁面則說支援已經發布。就 Isaac ROS 本身而言，專案頁面是更具體、也更新的來源：
 
 - **Isaac ROS 4.6.0（2026-08-18）**——發行說明：「新增對 Jetson Orin 的支援」與「新增對 JetPack 7.2 的支援」。這是第一個具備該組合的 4.x 版本。

@@ -53,7 +53,6 @@ review_owner: cheny
 # Resolução de problemas
 
 Encontre o seu sintoma no índice abaixo e leia a secção correspondente. Graus:
-*Estado: revisado em 2026-10-11. Os itens marcados como não
 confirmados provêm de relatos do fórum da comunidade e podem mudar. Esta página
 baseia-se apenas na documentação — a Juxi não testou este kit em hardware.*
 

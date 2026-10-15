@@ -129,8 +129,6 @@ sudo SKIP_EEPROM_CHECK=1 BOARDID=3767 BOARDSKU=0005 FAB=300 ./flash.sh --no-syst
 
 ## NVMe 儲存問題
 
-*狀態：已於 2026-10-11 審核。標示為未經確認的項目來自社群論壇回報，可能有所變動。本頁僅經文件驗證——鉅犀科技尚未在硬體上測試本套件。*
-
 **安裝程式未提供硬碟／分割步驟失敗**——*未經確認*：安裝程式可能不支援格式化為 4K 磁區的 NVMe 硬碟；它需要 512n/512e。用 `nvme id-ns -H /dev/nvme0n1` 檢查；用 `nvme format --lbaf=ID /dev/nvme0n1` 變更——**具破壞性**；該貼文未討論資料保留。NVIDIA 尚未正式確認此事。（等級 B，未經確認，[討論串 372151](https://forums.developer.nvidia.com/t/jetpack-7-2-jetson-linux-r39-2-on-jetson-orin-nano-developer-kit-getting-started-and-feedback-thread/372151)）
 
 **安裝看似成功後開機卡住**——*未經確認*：多起回報指出安裝程式到達 100% 後黑屏或游標閃爍。一位使用者僅透過 recovery 模式直接刷機解決；另一位將其追溯到上述 4K 磁區問題。尚無確認的根本原因。（等級 B，未經確認，[討論串 372151](https://forums.developer.nvidia.com/t/jetpack-7-2-jetson-linux-r39-2-on-jetson-orin-nano-developer-kit-getting-started-and-feedback-thread/372151)）

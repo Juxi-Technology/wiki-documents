@@ -54,7 +54,6 @@ review_owner: cheny
 
 Finden Sie Ihr Symptom im unten stehenden Index und lesen Sie dann den
 passenden Abschnitt. Einstufungen: **A** = offizielle NVIDIA-Dokumentation;
-*Status: geprüft am 2026-10-11. Als unbestätigt gekennzeichnete
 Punkte stammen aus Community-Forum-Berichten und können sich ändern. Diese Seite ist
 ausschließlich dokumentationsgeprüft — Juxi hat dieses Kit nicht auf Hardware getestet.*
 

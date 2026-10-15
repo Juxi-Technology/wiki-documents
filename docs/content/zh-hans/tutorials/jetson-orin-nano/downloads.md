@@ -52,8 +52,6 @@ review_owner: cheny
 # 下载与官方链接
 
 本页汇总了 **Jetson Orin Nano Super Developer Kit（8GB）** 在
-*状态：已于 2026-10-11 审核。*
-
 **JetPack 7.2.1 / Jetson Linux（L4T）r39.2.1** 下的 NVIDIA 官方下载与文档，
 另附少量合作伙伴资源和钜犀科技的入口。所有链接均核查于 **2026-09-26**。
 

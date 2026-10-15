@@ -214,7 +214,6 @@ documentation and developer-forum statements as of the date listed; not yet
 verified on physical hardware by Juxi Technology. The rebuild list describes
 standard platform consequences — validate against your own stack.*
 
-*Status: reviewed on 2026-10-11. Grounded in NVIDIA's official
 documentation and developer-forum statements as of the date listed; not yet
 verified on physical hardware by Juxi Technology. The rebuild list describes
 standard platform consequences — validate against your own stack.*

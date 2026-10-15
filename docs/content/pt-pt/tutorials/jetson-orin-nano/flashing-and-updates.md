@@ -106,7 +106,6 @@ cabo série USB-para-TTL para o kit.
 > gravação. Confirme os requisitos do NVIDIA SDK Manager antes de preparar um
 > PC anfitrião.
 
-*Estado: revisado em 2026-10-11. Baseado na documentação
 oficial da NVIDIA nas datas indicadas; ainda não verificado em hardware físico
 pela Juxi Technology.*
 

@@ -215,7 +215,6 @@ soluzione alternativa sui file di configurazione. Supporto Juxi: **support@juxit
 *Stato: rivisto il 2026-10-11. Basato sulla documentazione ufficiale NVIDIA e su fonti del
 forum NVIDIA alle date indicate; non ancora verificato su hardware fisico da Juxi Technology.*
 
-*Stato: rivisto il 2026-10-11. Basato sulla documentazione ufficiale NVIDIA e su fonti del
 forum NVIDIA alle date indicate; non ancora verificato su hardware fisico da Juxi Technology.*
 
 ---

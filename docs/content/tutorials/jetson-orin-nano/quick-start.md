@@ -209,8 +209,6 @@ The default power mode is typically **25W**. For maximum performance, click the 
 
 *Status: reviewed on 2026-10-11. Grounded in NVIDIA's official documentation as of the dates listed; not yet verified on physical hardware by Juxi Technology.*
 
-*Status: reviewed on 2026-10-11. Grounded in NVIDIA's official documentation as of the dates listed; not yet verified on physical hardware by Juxi Technology.*
-
 **Image credits:** The images on this page are from NVIDIA's official *Jetson Orin Nano Developer Kit User Guide* (downloaded 2026-09-26) and remain © NVIDIA Corporation. They are reproduced here to illustrate the official setup flow.
 
 ---

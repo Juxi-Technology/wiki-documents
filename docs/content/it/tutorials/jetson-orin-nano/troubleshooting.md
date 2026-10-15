@@ -135,8 +135,6 @@ Anche con MAXN_SUPER attivo, la GPU può restare fissa a 624.750.000 Hz (`bpmp/d
 
 ## Problemi di archiviazione NVMe
 
-*Stato: rivisto il 2026-10-11. Le voci etichettate come non confermate provengono da segnalazioni del forum della community e possono cambiare. Questa pagina è verificata solo sulla documentazione — Juxi non ha testato questo kit su hardware.*
-
 **L'installer non offre l'unità / il passaggio di partizionamento fallisce** — *non confermato*: l'installer potrebbe non supportare unità NVMe formattate con settori da 4K; servono settori 512n/512e. Controlli con `nvme id-ns -H /dev/nvme0n1`; cambi con `nvme format --lbaf=ID /dev/nvme0n1` — **distruttivo**; il post non discute la conservazione dei dati. NVIDIA non l'ha confermato ufficialmente. (grado B, non confermato, [thread 372151](https://forums.developer.nvidia.com/t/jetpack-7-2-jetson-linux-r39-2-on-jetson-orin-nano-developer-kit-getting-started-and-feedback-thread/372151))
 
 **Il boot si blocca dopo un'installazione apparentemente riuscita** — *non confermato*: diverse segnalazioni di schermo nero o cursore lampeggiante dopo che l'installer raggiunge il 100%. Un utente l'ha risolto solo con un flash diretto in modalità recovery; un altro l'ha ricondotto al problema dei settori 4K di cui sopra. Nessuna causa principale confermata. (grado B, non confermato, [thread 372151](https://forums.developer.nvidia.com/t/jetpack-7-2-jetson-linux-r39-2-on-jetson-orin-nano-developer-kit-getting-started-and-feedback-thread/372151))

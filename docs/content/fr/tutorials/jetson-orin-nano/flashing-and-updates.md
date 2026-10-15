@@ -102,7 +102,6 @@ pour le kit.
 > les notes de version L4T r39.2.1 indiquent « Ubuntu 24.04 et 22.04 » comme distribution hôte pour
 > le flashage. Vérifiez les exigences de NVIDIA pour SDK Manager avant de préparer un PC hôte.
 
-*Statut : relu le 2026-10-11. Fondé sur la documentation officielle NVIDIA aux dates
 indiquées ; pas encore vérifié sur matériel physique par Juxi Technology.*
 
 **Installez SDK Manager sur l'hôte.** La page d'installation de NVIDIA donne les commandes exactes pour Ubuntu

@@ -87,7 +87,6 @@ host aparte.
 
 ## Isaac ROS en JetPack 7.2 — qué dicen hoy las páginas oficiales
 
-*Estado: revisado el 2026-10-11. La disponibilidad del
 ecosistema cambia rápidamente — vuelva a consultar las páginas de NVIDIA y
 upstream enlazadas antes de basarse en esta tabla. Aún no verificada en
 hardware físico por Juxi Technology.*

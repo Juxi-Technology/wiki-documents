@@ -210,8 +210,6 @@ O modo de energia padrão costuma ser **25W**. Para o desempenho máximo, clique
 
 *Status: revisado em 2026-10-11. Baseado na documentação oficial da NVIDIA nas datas indicadas; ainda não verificado em hardware físico pela Juxi Technology.*
 
-*Status: revisado em 2026-10-11. Baseado na documentação oficial da NVIDIA nas datas indicadas; ainda não verificado em hardware físico pela Juxi Technology.*
-
 **Créditos das imagens:** As imagens desta página são do *Jetson Orin Nano Developer Kit User Guide* oficial da NVIDIA (baixado em 2026-09-26) e permanecem © NVIDIA Corporation. Elas são reproduzidas aqui para ilustrar o fluxo de configuração oficial.
 
 ---

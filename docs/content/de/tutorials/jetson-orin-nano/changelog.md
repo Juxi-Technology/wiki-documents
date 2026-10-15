@@ -53,7 +53,6 @@ um zu prüfen, welche Version Sie einsetzen, siehe
 offizieller Dokumentation zum angegebenen Datum; noch nicht von Juxi Technology
 auf physischer Hardware verifiziert.*
 
-*Status: geprüft am 2026-10-11. Basiert auf NVIDIAs
 offizieller Dokumentation zum angegebenen Datum; noch nicht von Juxi Technology
 auf physischer Hardware verifiziert.*
 

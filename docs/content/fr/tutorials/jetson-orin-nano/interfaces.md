@@ -218,7 +218,6 @@ Le connecteur des boutons porte les fonctions de console série, de réinitialis
 aux dates indiquées ; pas encore vérifié sur matériel physique par Juxi Technology.*
 
 **Crédits images :** les schémas de disposition proviennent du *Jetson Orin
-*Statut : relu le 2026-10-11. Fondé sur la documentation officielle de NVIDIA
 aux dates indiquées ; pas encore vérifié sur matériel physique par Juxi Technology.*
 
 Nano Developer Kit User Guide* officiel de NVIDIA (téléchargé le 2026-09-26), © NVIDIA Corporation.

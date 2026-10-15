@@ -82,8 +82,6 @@ Isaac Sim 与 Isaac Lab 位于左侧的 Omniverse 区块，那是一台独立的
 
 ## JetPack 7.2 上的 Isaac ROS——官方页面如今怎么说
 
-*状态：已于 2026-10-11 审核。生态可用性变化很快——在依赖本表之前，请重新核查文中链接的 NVIDIA 与上游页面。尚未由钜犀科技在实体硬件上验证。*
-
 **NVIDIA 的页面彼此不一致。** JetPack 7.2.1 下载页仍然列着 “NVIDIA Isaac™
 ROS——即将推出”。Isaac ROS 项目页面则说支持已经发布。就 Isaac ROS 本身
 而言，项目页面是更具体的来源，而且更新：

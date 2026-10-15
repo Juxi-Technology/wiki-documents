@@ -241,7 +241,6 @@ para um menor, quantize mais, encurte o contexto ou reduza o batch — veja
 oficial da NVIDIA na data indicada; ainda não verificado em hardware físico
 pela Juxi Technology.*
 
-*Status: revisado em 2026-10-11. Baseado na documentação
 oficial da NVIDIA na data indicada; ainda não verificado em hardware físico
 pela Juxi Technology.*
 

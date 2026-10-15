@@ -234,7 +234,6 @@ indicada; ainda não verificado em hardware físico pela Juxi Technology. A list
 de recompilação descreve consequências padrão da plataforma — valide em função
 da sua própria pilha.*
 
-*Estado: revisado em 2026-10-11. Baseado na documentação
 oficial da NVIDIA e em declarações do fórum de desenvolvedores na data
 indicada; ainda não verificado em hardware físico pela Juxi Technology. A lista
 de recompilação descreve consequências padrão da plataforma — valide em função

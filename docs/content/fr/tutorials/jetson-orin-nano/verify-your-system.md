@@ -215,7 +215,6 @@ contournement par fichiers de configuration. Support Juxi : **support@juxitech.c
 *Statut : relu le 2026-10-11. Fondé sur la documentation officielle NVIDIA et des sources de forum
 NVIDIA aux dates indiquées ; pas encore vérifié sur matériel physique par Juxi Technology.*
 
-*Statut : relu le 2026-10-11. Fondé sur la documentation officielle NVIDIA et des sources de forum
 NVIDIA aux dates indiquées ; pas encore vérifié sur matériel physique par Juxi Technology.*
 
 ---

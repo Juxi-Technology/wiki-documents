@@ -482,7 +482,6 @@ como sin confirmar provienen de informes de la comunidad y pueden cambiar. Esta
 página solo está verificada contra la documentación — Juxi no ha probado este
 kit en hardware.*
 
-*Estado: revisado el 2026-10-11. Los elementos etiquetados
 como sin confirmar provienen de informes de la comunidad y pueden cambiar. Esta
 página solo está verificada contra la documentación — Juxi no ha probado este
 kit en hardware.*

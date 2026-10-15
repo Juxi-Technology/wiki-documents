@@ -52,7 +52,6 @@ pour savoir ce que vous exécutez, consultez **[Vérifier votre système](/fr/tu
 documentation officielle de NVIDIA aux dates indiquées ; pas encore vérifié
 sur matériel physique par Juxi Technology.*
 
-*Statut : relu le 2026-10-11. Fondé sur la
 documentation officielle de NVIDIA aux dates indiquées ; pas encore vérifié
 sur matériel physique par Juxi Technology.*
 

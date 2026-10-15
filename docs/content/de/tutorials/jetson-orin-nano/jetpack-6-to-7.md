@@ -237,7 +237,6 @@ Datum; noch nicht von Juxi Technology auf physischer Hardware verifiziert. Die
 Liste der Neuaufbauten beschreibt Standardfolgen der Plattform — validieren
 Sie sie gegen Ihren eigenen Stack.*
 
-*Status: geprüft am 2026-10-11. Basiert auf NVIDIAs
 offizieller Dokumentation und Aussagen im Entwicklerforum zum angegebenen
 Datum; noch nicht von Juxi Technology auf physischer Hardware verifiziert. Die
 Liste der Neuaufbauten beschreibt Standardfolgen der Plattform — validieren

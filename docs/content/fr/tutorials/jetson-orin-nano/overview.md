@@ -230,7 +230,6 @@ officielle de NVIDIA aux dates indiquées ; pas encore vérifié sur matériel p
 Juxi Technology.*
 
 **Crédits image :** image produit issue du *Jetson Orin Nano
-*Statut : relu le 2026-10-11. Fondé sur la documentation
 officielle de NVIDIA aux dates indiquées ; pas encore vérifié sur matériel physique par
 Juxi Technology.*
 
