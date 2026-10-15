@@ -130,7 +130,7 @@ Cannot register ... as xlerobot because ... is already registered
 ```bash
 lerobot-rollout \
   --robot.type=so101_follower --robot.port=/dev/ttyACM0 --robot.id=my_follower \
-  --policy.path=你的使用者名稱/我的模型 --strategy.type=base
+  --policy.path=<your-username>/<my-model> --strategy.type=base
 ```
 
 ### 分不清該用 `examples/` 還是 `lerobot-*`
@@ -168,7 +168,7 @@ lerobot-find-port                     # 找串口（互動式，依提示拔插�
 docker exec -u root -it xlerobot bash -c "apt-get update && apt-get install -y libxkbcommon-x11-0 libxinerama1"
 
 # 訓練（兩條路共用：不需要 robot.type）
-lerobot-train --policy.type=act --dataset.repo_id=使用者名稱/資料集名
+lerobot-train --policy.type=act --dataset.repo_id=<username>/<dataset-name>
 
 # 自檢
 python -c "import torch, lerobot; print(torch.__version__, lerobot.__version__)"
@@ -213,17 +213,17 @@ lerobot-record \
   --robot.type=so101_follower --robot.port=/dev/ttyACM0 --robot.id=my_follower \
   --robot.cameras="{ front: {type: opencv, index_or_path: /dev/video0, width: 640, height: 480, fps: 30} }" \
   --teleop.type=keyboard \
-  --dataset.repo_id=使用者名稱/資料集名 --dataset.num_episodes=10 \
+  --dataset.repo_id=<username>/<dataset-name> --dataset.num_episodes=10 \
   --dataset.single_task="pick up the cube"
 
 # 回放檢查
 lerobot-replay --robot.type=so101_follower --robot.port=/dev/ttyACM0 --robot.id=my_follower \
-  --dataset.repo_id=使用者名稱/資料集名 --dataset.episode=0
+  --dataset.repo_id=<username>/<dataset-name> --dataset.episode=0
 
 # 真機部署訓練好的策略（⚠️ 不是 lerobot-eval，那個是模擬用的）
 lerobot-rollout \
   --robot.type=so101_follower --robot.port=/dev/ttyACM0 --robot.id=my_follower \
-  --policy.path=使用者名稱/模型名 --strategy.type=base
+  --policy.path=<username>/<model-name> --strategy.type=base
 ```
 
 詳見 [lerobot/](../lerobot/01-Operation.md)。

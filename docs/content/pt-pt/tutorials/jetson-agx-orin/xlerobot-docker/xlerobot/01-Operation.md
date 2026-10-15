@@ -350,7 +350,7 @@ Políticas já incluídas na imagem:
 ```bash
 lerobot-train \
   --policy.type=act \
-  --dataset.repo_id=nome-de-utilizador/meu-dataset
+  --dataset.repo_id=<your-username>/<my-dataset-name>
 ```
 
 > O `lerobot-train` **não necessita de `robot.type`** (apenas consome o conjunto

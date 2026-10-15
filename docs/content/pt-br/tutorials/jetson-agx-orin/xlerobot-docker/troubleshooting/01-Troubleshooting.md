@@ -142,7 +142,7 @@ Para rodar uma política treinada em um robô real, use o **`lerobot-rollout`**:
 ```bash
 lerobot-rollout \
   --robot.type=so101_follower --robot.port=/dev/ttyACM0 --robot.id=my_follower \
-  --policy.path=seu-usuário/meu-modelo --strategy.type=base
+  --policy.path=<your-username>/<my-model> --strategy.type=base
 ```
 
 ### Não sei se devo usar `examples/` ou `lerobot-*`
@@ -182,7 +182,7 @@ lerobot-find-port                     # Localizar a porta serial (interativo; si
 docker exec -u root -it xlerobot bash -c "apt-get update && apt-get install -y libxkbcommon-x11-0 libxinerama1"
 
 # Treinamento (compartilhado pelos dois caminhos: não precisa de robot.type)
-lerobot-train --policy.type=act --dataset.repo_id=seu-usuário/meu-dataset
+lerobot-train --policy.type=act --dataset.repo_id=<username>/<dataset-name>
 
 # Autoverificação
 python -c "import torch, lerobot; print(torch.__version__, lerobot.__version__)"
@@ -227,17 +227,17 @@ lerobot-record \
   --robot.type=so101_follower --robot.port=/dev/ttyACM0 --robot.id=my_follower \
   --robot.cameras="{ front: {type: opencv, index_or_path: /dev/video0, width: 640, height: 480, fps: 30} }" \
   --teleop.type=keyboard \
-  --dataset.repo_id=seu-usuário/meu-dataset --dataset.num_episodes=10 \
+  --dataset.repo_id=<username>/<dataset-name> --dataset.num_episodes=10 \
   --dataset.single_task="pick up the cube"
 
 # Conferir com replay
 lerobot-replay --robot.type=so101_follower --robot.port=/dev/ttyACM0 --robot.id=my_follower \
-  --dataset.repo_id=seu-usuário/meu-dataset --dataset.episode=0
+  --dataset.repo_id=<username>/<dataset-name> --dataset.episode=0
 
 # Implantar a política treinada (⚠️ não é o lerobot-eval, aquele é para simulação)
 lerobot-rollout \
   --robot.type=so101_follower --robot.port=/dev/ttyACM0 --robot.id=my_follower \
-  --policy.path=seu-usuário/meu-modelo --strategy.type=base
+  --policy.path=<username>/<model-name> --strategy.type=base
 ```
 
 Detalhes em [lerobot/](../lerobot/01-Operation.md).

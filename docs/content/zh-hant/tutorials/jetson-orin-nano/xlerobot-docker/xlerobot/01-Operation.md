@@ -313,7 +313,7 @@ policy.eval()
 ```bash
 lerobot-train \
   --policy.type=act \
-  --dataset.repo_id=你的使用者名稱/我的資料集名
+  --dataset.repo_id=<your-username>/<my-dataset-name>
 ```
 
 > `lerobot-train` **不需要 `robot.type`**（只吃資料集和策略類型），

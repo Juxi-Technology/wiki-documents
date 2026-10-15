@@ -161,7 +161,7 @@ lerobot-record \
   --robot.type=so101_follower --robot.port=/dev/ttyACM0 --robot.id=my_follower \
   --robot.cameras="{ front: {type: opencv, index_or_path: /dev/video0, width: 640, height: 480, fps: 30} }" \
   --teleop.type=so101_leader  --teleop.port=/dev/ttyACM1 --teleop.id=my_leader \
-  --dataset.repo_id=nome-de-utilizador/meu-primeiro-dataset \
+  --dataset.repo_id=<your-username>/<my-first-dataset> \
   --dataset.num_episodes=10 \
   --dataset.single_task="pick up the cube"
 ```
@@ -202,7 +202,7 @@ antes do treino:
 ```bash
 lerobot-replay \
   --robot.type=so101_follower --robot.port=/dev/ttyACM0 --robot.id=my_follower \
-  --dataset.repo_id=nome-de-utilizador/meu-primeiro-dataset \
+  --dataset.repo_id=<your-username>/<my-first-dataset> \
   --dataset.episode=0
 ```
 
@@ -213,7 +213,7 @@ lerobot-replay \
 ```bash
 lerobot-train \
   --policy.type=act \
-  --dataset.repo_id=nome-de-utilizador/meu-primeiro-dataset
+  --dataset.repo_id=<your-username>/<my-first-dataset>
 ```
 
 > O `lerobot-train` **não necessita de `robot.type`** (apenas consome o conjunto
@@ -234,7 +234,7 @@ Políticas opcionais (`--policy.type`): `act` (a mais utilizada), `diffusion`,
 ```bash
 lerobot-rollout \
   --robot.type=so101_follower --robot.port=/dev/ttyACM0 --robot.id=my_follower \
-  --policy.path=nome-de-utilizador/meu-modelo \
+  --policy.path=<your-username>/<my-model> \
   --strategy.type=base
 ```
 
@@ -322,16 +322,16 @@ lerobot-record \
   --robot.type=so101_follower --robot.port=/dev/ttyACM0 --robot.id=my_follower \
   --robot.cameras="{ front: {type: opencv, index_or_path: /dev/video0, width: 640, height: 480, fps: 30} }" \
   --teleop.type=keyboard \
-  --dataset.repo_id=nome-de-utilizador/my-first-dataset \
+  --dataset.repo_id=<your-username>/my-first-dataset \
   --dataset.num_episodes=10 --dataset.single_task="pick up the cube"
 
 # 6. Treinar
-lerobot-train --policy.type=act --dataset.repo_id=nome-de-utilizador/my-first-dataset
+lerobot-train --policy.type=act --dataset.repo_id=<your-username>/my-first-dataset
 
 # 7. Deixar o braço funcionar sozinho
 lerobot-rollout \
   --robot.type=so101_follower --robot.port=/dev/ttyACM0 --robot.id=my_follower \
-  --policy.path=nome-de-utilizador/my-first-dataset --strategy.type=base
+  --policy.path=<your-username>/my-first-dataset --strategy.type=base
 ```
 
 ---

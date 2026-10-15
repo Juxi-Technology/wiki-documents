@@ -149,7 +149,7 @@ lerobot-record \
   --robot.type=so101_follower --robot.port=/dev/ttyACM0 --robot.id=my_follower \
   --robot.cameras="{ front: {type: opencv, index_or_path: /dev/video0, width: 640, height: 480, fps: 30} }" \
   --teleop.type=so101_leader  --teleop.port=/dev/ttyACM1 --teleop.id=my_leader \
-  --dataset.repo_id=你的用户名/我的第一个数据集 \
+  --dataset.repo_id=<your-username>/<my-first-dataset> \
   --dataset.num_episodes=10 \
   --dataset.single_task="pick up the cube"
 ```
@@ -189,7 +189,7 @@ lerobot-record \
 ```bash
 lerobot-replay \
   --robot.type=so101_follower --robot.port=/dev/ttyACM0 --robot.id=my_follower \
-  --dataset.repo_id=你的用户名/我的第一个数据集 \
+  --dataset.repo_id=<your-username>/<my-first-dataset> \
   --dataset.episode=0
 ```
 
@@ -200,7 +200,7 @@ lerobot-replay \
 ```bash
 lerobot-train \
   --policy.type=act \
-  --dataset.repo_id=你的用户名/我的第一个数据集
+  --dataset.repo_id=<your-username>/<my-first-dataset>
 ```
 
 > `lerobot-train` **不需要 `robot.type`**（只吃数据集和策略类型），
@@ -218,7 +218,7 @@ lerobot-train \
 ```bash
 lerobot-rollout \
   --robot.type=so101_follower --robot.port=/dev/ttyACM0 --robot.id=my_follower \
-  --policy.path=你的用户名/我的模型 \
+  --policy.path=<your-username>/<my-model> \
   --strategy.type=base
 ```
 
@@ -304,16 +304,16 @@ lerobot-record \
   --robot.type=so101_follower --robot.port=/dev/ttyACM0 --robot.id=my_follower \
   --robot.cameras="{ front: {type: opencv, index_or_path: /dev/video0, width: 640, height: 480, fps: 30} }" \
   --teleop.type=keyboard \
-  --dataset.repo_id=你的用户名/my-first-dataset \
+  --dataset.repo_id=<your-username>/my-first-dataset \
   --dataset.num_episodes=10 --dataset.single_task="pick up the cube"
 
 # 6. 训练
-lerobot-train --policy.type=act --dataset.repo_id=你的用户名/my-first-dataset
+lerobot-train --policy.type=act --dataset.repo_id=<your-username>/my-first-dataset
 
 # 7. 让机械臂自己跑
 lerobot-rollout \
   --robot.type=so101_follower --robot.port=/dev/ttyACM0 --robot.id=my_follower \
-  --policy.path=你的用户名/my-first-dataset --strategy.type=base
+  --policy.path=<your-username>/my-first-dataset --strategy.type=base
 ```
 
 ---

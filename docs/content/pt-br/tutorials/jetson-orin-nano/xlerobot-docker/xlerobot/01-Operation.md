@@ -349,7 +349,7 @@ Políticas já pré-instaladas na imagem:
 ```bash
 lerobot-train \
   --policy.type=act \
-  --dataset.repo_id=seu-usuário/meu-dataset
+  --dataset.repo_id=<your-username>/<my-dataset-name>
 ```
 
 > O `lerobot-train` **não precisa de `robot.type`** (consome apenas o conjunto

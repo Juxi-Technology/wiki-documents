@@ -150,7 +150,7 @@ lerobot-record \
   --robot.type=so101_follower --robot.port=/dev/ttyACM0 --robot.id=my_follower \
   --robot.cameras="{ front: {type: opencv, index_or_path: /dev/video0, width: 640, height: 480, fps: 30} }" \
   --teleop.type=so101_leader  --teleop.port=/dev/ttyACM1 --teleop.id=my_leader \
-  --dataset.repo_id=<benutzername>/mein-erster-datensatz \
+  --dataset.repo_id=<your-username>/<my-first-dataset> \
   --dataset.num_episodes=10 \
   --dataset.single_task="pick up the cube"
 ```
@@ -190,7 +190,7 @@ Spielen Sie die Aufzeichnung zuerst einmal ab, um die Daten zu prüfen, bevor Si
 ```bash
 lerobot-replay \
   --robot.type=so101_follower --robot.port=/dev/ttyACM0 --robot.id=my_follower \
-  --dataset.repo_id=<benutzername>/mein-erster-datensatz \
+  --dataset.repo_id=<your-username>/<my-first-dataset> \
   --dataset.episode=0
 ```
 
@@ -201,7 +201,7 @@ lerobot-replay \
 ```bash
 lerobot-train \
   --policy.type=act \
-  --dataset.repo_id=<benutzername>/mein-erster-datensatz
+  --dataset.repo_id=<your-username>/<my-first-dataset>
 ```
 
 > `lerobot-train` **benötigt kein `robot.type`** (es verarbeitet nur Datensatz und Policy-Typ),
