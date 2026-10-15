@@ -1,115 +1,162 @@
 ---
-title: Produkte
+title: Produkte — Roboterarme, Jetson-Kits & Sensoren
 description: "Juxi Technology Produktzentrum — Roboterarme, Hände, Sensoren und Zubehör"
+keywords: ["Robotersysteme", "KI-Computing & Vision", "Sensoren & Positionierung", "Zubehör & Werkzeuge", "Roboterarm", "Jetson", "LeRobot"]
 aside: false
 sidebar: false
 outline: false
+prev: false
+next: false
 ---
+
+<!-- 本文件由 scripts/gen-products-index.mjs 生成,请勿手改(数据源:docs/.vitepress/products-data.mjs) -->
 
 # Produkte
 
-<p class="hero-subtitle">Handbücher, Spezifikationen und Kauf-Links für alle Juxi-Hardware.</p>
+<p class="hero-subtitle">Von Open-Source-Roboterarmen bis zu NVIDIA Jetson Edge-KI — Handbücher, Spezifikationen und Tutorials für jede Juxi-Technology-Hardware an einem Ort, mit direktem Link zum offiziellen Shop.</p>
 
-<div class="category-grid">
-  <a :href="withBase('/de/products/2dof-gimbal')" class="category-card">
-    <span class="pc-title">2-DOF-Servo-Pan-Tilt-Einheit</span>
-    <p class="pc-desc">Juxi Technology 2-DOF-Servo-Pan-Tilt — SCS0009-Bus-Servos, 180° horizontal / 90° vertikal, 2M…</p>
-  </a>
-  <a :href="withBase('/de/products/4k-hdmi-capture')" class="category-card">
-    <span class="pc-title">4K-HDMI-Capture-Karte</span>
-    <p class="pc-desc">Juxi Technology 4K-Capture-Karte — 4K-Aufnahme, HDMI/Micro HDMI/DP, USB-Direktanschluss, Stre…</p>
-  </a>
-  <a :href="withBase('/de/products/ai-voice-module')" class="category-card">
-    <span class="pc-title">AI-Sprachinteraktionsmodul</span>
-    <p class="pc-desc">Juxi Technology AI-Sprachinteraktionsmodul (CI1302) — 110+ Offline-Sprachbefehle, 99 % Erkennungsrate im Umkreis von 5 m, benutzerdefinierte chinesische/englische Befehlswörter, serielle/IIC-Kommunikation, für Arduino/Jetson/RDK/Raspberry Pi/PC</p>
-  </a>
-  <a :href="withBase('/de/products/amazinghand')" class="category-card">
-    <span class="pc-title">AmazingHand 4-Finger-Greifhand</span>
-    <p class="pc-desc">Juxi Technology AmazingHand — 4-Finger-Greifhand…</p>
-  </a>
-  <a :href="withBase('/de/products/esp32-s3-wifi-module')" class="category-card">
-    <span class="pc-title">ESP32-S3 WiFi-Videomodul</span>
-    <p class="pc-desc">Juxi Technology ESP32-S3 WiFi-Videomodul (ESP32-NanoCam) — 2MP-Kamera, WiFi-Echtzeitübertragu…</p>
-  </a>
-  <a :href="withBase('/de/products/feetech-servo')" class="category-card">
-    <span class="pc-title">Feetech-Bus-Servos (SCS0009 / STS3215)</span>
-    <p class="pc-desc">Juxi Technology Feetech-Serienbus-Servos SCS0009 & STS3215 — SCS-Protokoll, Magnetencoder/Pot…</p>
-  </a>
-  <a :href="withBase('/de/products/gps-beidou-module')" class="category-card">
-    <span class="pc-title">GPS- & Beidou-GNSS-Positionsmodul</span>
-    <p class="pc-desc">Juxi Technology GNSS-Modul — ATGM336H-5N-Chip, Vier-Konstellation-Kombination, 2.5m Genauigke…</p>
-  </a>
-  <a :href="withBase('/de/products/imu-module')" class="category-card">
-    <span class="pc-title">IMU Hochpräzisions-Trägheitsnavigationsmodul</span>
-    <p class="pc-desc">Juxi Technology IMU — 100Hz-Attitüdenberechnung, 6/9/10-Achsen-Optionen, IIC+UART, ROS-Integr…</p>
-  </a>
-  <a :href="withBase('/de/products/imx219-csi-camera')" class="category-card">
-    <span class="pc-title">79° IMX219 CSI-Kamera</span>
-    <p class="pc-desc">Juxi Technology 79°-IMX219-CSI-Kamera — 8MP, natives CSI, 77° FOV, NVIDIA-Jetson-Vision mit g…</p>
-  </a>
-  <a :href="withBase('/de/products/jetson-agx-orin-devkit')" class="category-card">
-    <span class="pc-title">Jetson AGX Orin Developer Kit (64GB)</span>
-    <p class="pc-desc">NVIDIA Jetson AGX Orin Developer Kit (64GB) — bis zu 275 TOPS Edge-KI, ab Werk vorgeflasht un…</p>
-  </a>
-  <a :href="withBase('/de/products/jetson-orin-nano-devkit')" class="category-card">
-    <span class="pc-title">Jetson Orin Nano Super Developer Kit (8GB)</span>
-    <p class="pc-desc">NVIDIA Jetson Orin Nano Super Developer Kit (8GB) — bis zu 67 INT8 TOPS Edge-KI für den Einstieg, 8 GB Unified Memory, ohne vorinstalliertes System (Installation mit der Jetson-ISO), mit vollständiger JetPack-7.2.1-Dokumentation von Juxi Technology.</p>
-  </a>
-  <a :href="withBase('/de/products/jetson-orin-nx-super-kit')" class="category-card">
-    <span class="pc-title">Jetson Orin NX Super Developer Kit</span>
-    <p class="pc-desc">NVIDIA Jetson Orin NX SUPER Developer Kit — 117/157 TOPS Edge-AI-Plattform, vorinstalliert Ub…</p>
-  </a>
-  <a :href="withBase('/de/products/kvm-switch')" class="category-card">
-    <span class="pc-title">4-in-1-KVM-Switch</span>
-    <p class="pc-desc">Juxi Technology 4-in-1-KVM-Switch — TTL-Serial/Bluetooth-Dockingstation, Ein-Tasten-Umschaltu…</p>
-  </a>
-  <a :href="withBase('/de/products/kws-voice-module')" class="category-card">
-    <span class="pc-title">KWS-Sprachinteraktionsmodul</span>
-    <p class="pc-desc">Juxi Technology KWS-Spracherkennungsmodul — chinesische/englische Wake-Words, seriell/RViz2-V…</p>
-  </a>
-  <a :href="withBase('/de/products/lekiwi')" class="category-card">
-    <span class="pc-title">Lekiwi Embodied-Intelligence-Mobileroboter</span>
-    <p class="pc-desc">Juxi Technology Lekiwi — kostengünstiger Lehr-Roboterarm/Mobilroboter, Servosteuerung, ideal …</p>
-  </a>
-  <a :href="withBase('/de/products/overhead-camera-mount')" class="category-card">
-    <span class="pc-title">SO-ARM101 Overhead-Kamera-Halterung</span>
-    <p class="pc-desc">Juxi Technology SO-ARM101 Overhead-Kamera-Halterung — Draufsicht-Montage, RealSense-kompatibe…</p>
-  </a>
-  <a :href="withBase('/de/products/realsense-depth-camera')" class="category-card">
-    <span class="pc-title">3D-RealSense-Tiefenkamera</span>
-    <p class="pc-desc">Juxi Technology 3D-RealSense-Tiefenkamera — D435i/D405/D405CB, hochpräzise Tiefenwahrnehmung,…</p>
-  </a>
-  <a :href="withBase('/de/products/robot-vision-kit')" class="category-card">
-    <span class="pc-title">SO-ARM101 Robotik-Visions-Kit</span>
-    <p class="pc-desc">Juxi Technology SO-ARM101 Vision-Kit — Handgelenk/Seitlich/Draufsicht, 60FPS-Fixfokus oder 30…</p>
-  </a>
-  <a :href="withBase('/de/products/servo-driver-board')" class="category-card">
-    <span class="pc-title">JUXI-Bus-Servo-Treiberplatine</span>
-    <p class="pc-desc">Juxi Technology JUXI-Bus-Servo-Treiberplatine — 253 Servos an einem Bus, 7–12.6V, Type-C Plug…</p>
-  </a>
-  <a :href="withBase('/de/products/so-arm101')" class="category-card">
+## Robotersysteme
+
+<div class="product-grid">
+  <a :href="withBase('/de/products/so-arm101')" class="product-card" data-cat="robot">
+    <img :src="withBase('/images/categories/SO-ARM101.png')" alt="SO-ARM101 Entwicklungs-Kit" loading="lazy">
     <span class="pc-title">SO-ARM101 Entwicklungs-Kit</span>
-    <p class="pc-desc">Das Open-Source-Doppelarm-Robotik-Kit von Juxi Technology — 6-DOF-Arme, LeRobot-Ökosystem, Te…</p>
+    <p class="pc-desc">Open-Source-Roboterarm mit 6 DOF; nativ im LeRobot-Ökosystem — Teleoperation, Datenerfassung und Imitation Learning aus einer Hand.</p>
   </a>
-  <a :href="withBase('/de/products/so-arm101-7dof')" class="category-card">
+  <a :href="withBase('/de/products/so-arm101-7dof')" class="product-card" data-cat="robot">
+    <img :src="withBase('/images/categories/SO-ARM101-7DOF.png')" alt="SO-ARM101 7-DOF-Roboterarm" loading="lazy">
     <span class="pc-title">SO-ARM101 7-DOF-Roboterarm</span>
-    <p class="pc-desc">Juxi Technology SO-ARM101 7-DOF Roboterarm — 90°-Handgelenk-Gierung, 12V-Bus-Servos mit 30kg.cm, LeRobot-Integration</p>
+    <p class="pc-desc">Das klassische 6-Achsen-Design plus 90°-Handgelenk-Gierung; 12V-Bus-Servos, ab Werk montiert, inklusive kompletter Tutorial-Reihe.</p>
   </a>
-  <a :href="withBase('/de/products/tpu-flexible-gripper')" class="category-card">
-    <span class="pc-title">SO-ARM101 TPU-Flex-Greifer</span>
-    <p class="pc-desc">Juxi Technology SO-ARM101 TPU-Flex-Greifer — weiches TPU greift unregelmäßige/zerbrechliche O…</p>
+  <a :href="withBase('/de/products/amazinghand')" class="product-card" data-cat="robot">
+    <img :src="withBase('/images/categories/AmazingHand.png')" alt="AmazingHand 4-Finger-Greifhand" loading="lazy">
+    <span class="pc-title">AmazingHand 4-Finger-Greifhand</span>
+    <p class="pc-desc">Open-Source-4-Finger-Greifhand: TTL-Bussteuerung und offene CAD-Dateien — gebaut für die Embodied-Intelligence- und HRI-Forschung.</p>
   </a>
-  <a :href="withBase('/de/products/usb-auto-focus-camera')" class="category-card">
-    <span class="pc-title">USB-Kamera mit Autofokus</span>
-    <p class="pc-desc">Juxi Technology USB-Kamera mit Autofokus, treiberfrei — 86° Weitwinkel, 1080P 30FPS, UVC Plug-and-Play für Roboter-Vision und KI-Inferenz, kompatibel mit Windows/Linux/macOS/Jetson/Raspberry Pi</p>
-  </a>
-  <a :href="withBase('/de/products/usb-sound-card')" class="category-card">
-    <span class="pc-title">USB Soundkarte ohne Treiber</span>
-    <p class="pc-desc">Juxi Technology USB-Soundkarte — Onboard-Mikrofon + Lautsprecher, Plug-and-Play, Rauschunterd…</p>
-  </a>
-  <a :href="withBase('/de/products/xlerobot')" class="category-card">
+  <a :href="withBase('/de/products/xlerobot')" class="product-card" data-cat="robot">
+    <img :src="withBase('/images/categories/XLeRobot.png')" alt="XLeRobot Zweiarm-Mobilroboter" loading="lazy">
     <span class="pc-title">XLeRobot Zweiarm-Mobilroboter</span>
-    <p class="pc-desc">Juxi Technology XLeRobot Zweiarm-Mobilroboter — SO-ARM101-Doppelarm + Omnidirektionalrad-Fahrgestell + Kamera-Turm, zwei Servo-Treiberplatinen mit 12V-Stromversorgung, LeRobot-Ökosystem, als Fertigbaugruppe oder Bausatz erhältlich</p>
+    <p class="pc-desc">Zweiarm-Mobilroboter: zwei SO-ARM101-Arme auf Omnidirektionalrad-Fahrgestell; als Fertigbaugruppe oder Bausatz erhältlich, voll kompatibel mit dem LeRobot-Ökosystem.</p>
+  </a>
+  <a :href="withBase('/de/products/lekiwi')" class="product-card" data-cat="robot">
+    <img :src="withBase('/images/categories/Lekiwi.png')" alt="Lekiwi Embodied-Intelligence-Mobileroboter" loading="lazy">
+    <span class="pc-title">Lekiwi Embodied-Intelligence-Mobileroboter</span>
+    <p class="pc-desc">Kostengünstige Embodied-Intelligence-Mobilplattform mit omnidirektionaler Basis und Lehr-Roboterarm — der erschwingliche Einstieg in LeRobot.</p>
+  </a>
+  <a :href="withBase('/de/products/tpu-flexible-gripper')" class="product-card" data-cat="robot">
+    <img :src="withBase('/images/categories/TPU-Gripper.png')" alt="SO-ARM101 TPU-Flex-Greifer" loading="lazy">
+    <span class="pc-title">SO-ARM101 TPU-Flex-Greifer</span>
+    <p class="pc-desc">Flexibler TPU-Greifer für das sichere Greifen unregelmäßiger und zerbrechlicher Objekte, optional mit Armkamera.</p>
+  </a>
+  <a :href="withBase('/de/products/robot-vision-kit')" class="product-card" data-cat="robot">
+    <img :src="withBase('/images/categories/Robot-Vision-Kit.png')" alt="SO-ARM101 Robotik-Visions-Kit" loading="lazy">
+    <span class="pc-title">SO-ARM101 Robotik-Visions-Kit</span>
+    <p class="pc-desc">Montage am Handgelenk, seitlich oder in Draufsicht; 60FPS-Fixfokus oder Autofokus-Zoom zur Wahl — kompatibel mit ACT, SmolVLA, Pi0 und GR00T.</p>
+  </a>
+  <a :href="withBase('/de/products/overhead-camera-mount')" class="product-card" data-cat="robot">
+    <img :src="withBase('/images/categories/Overhead-Camera-Mount.png')" alt="SO-ARM101 Overhead-Kamera-Halterung" loading="lazy">
+    <span class="pc-title">SO-ARM101 Overhead-Kamera-Halterung</span>
+    <p class="pc-desc">Overhead-Halterung für die Datenerfassung, RealSense-kompatibel — ein blinder Fleck weniger beim Vision-Training des Roboterarms.</p>
+  </a>
+  <a :href="withBase('/de/products/servo-driver-board')" class="product-card" data-cat="robot">
+    <img :src="withBase('/images/categories/Servo-Driver-Board.png')" alt="JUXI-Bus-Servo-Treiberplatine" loading="lazy">
+    <span class="pc-title">JUXI-Bus-Servo-Treiberplatine</span>
+    <p class="pc-desc">Treibt bis zu 253 Bus-Servos über einen einzigen Bus, Type-C Plug-and-Play — speziell für LeRobot SO-ARM entwickelt.</p>
+  </a>
+</div>
+
+## KI-Computing & Vision
+
+<div class="product-grid">
+  <a :href="withBase('/de/products/jetson-agx-orin-devkit')" class="product-card" data-cat="compute-vision">
+    <img :src="withBase('/images/categories/Jetson-AGX-Orin.png')" alt="Jetson AGX Orin Developer Kit (64GB)" loading="lazy">
+    <span class="pc-title">Jetson AGX Orin Developer Kit (64GB)</span>
+    <p class="pc-desc">275-TOPS-Flaggschiff-Kit für Edge-KI; ab Werk vorgeflasht und sofort einsatzbereit, mit vollständiger JetPack-7.2-Dokumentation.</p>
+  </a>
+  <a :href="withBase('/de/products/jetson-orin-nano-devkit')" class="product-card" data-cat="compute-vision">
+    <img :src="withBase('/images/categories/Jetson-Orin-Nano.png')" alt="Jetson Orin Nano Super Developer Kit (8GB)" loading="lazy">
+    <span class="pc-title">Jetson Orin Nano Super Developer Kit (8GB)</span>
+    <p class="pc-desc">Edge-KI der Einstiegsklasse mit 67 TOPS und 8 GB Unified Memory; vom ersten Flashen bis zur agentischen KI durchgängig dokumentiert.</p>
+  </a>
+  <a :href="withBase('/de/products/jetson-orin-nx-super-kit')" class="product-card" data-cat="compute-vision">
+    <img :src="withBase('/images/categories/Jetson-Orin-NX.png')" alt="Jetson Orin NX Super Developer Kit" loading="lazy">
+    <span class="pc-title">Jetson Orin NX Super Developer Kit</span>
+    <p class="pc-desc">117/157-TOPS-Edge-Plattform mit vorinstalliertem Ubuntu 22.04 und 256 GB NVMe — große Modelle sofort an der Edge trainieren.</p>
+  </a>
+  <a :href="withBase('/de/products/realsense-depth-camera')" class="product-card" data-cat="compute-vision">
+    <img :src="withBase('/images/categories/RealSense-D435i.png')" alt="3D-RealSense-Tiefenkamera" loading="lazy">
+    <span class="pc-title">3D-RealSense-Tiefenkamera</span>
+    <p class="pc-desc">D435i, D405 oder D405CB zur Wahl; hochpräzise Tiefenwahrnehmung für XLeRobot und SO-ARM101.</p>
+  </a>
+  <a :href="withBase('/de/products/esp32-s3-wifi-module')" class="product-card" data-cat="compute-vision">
+    <img :src="withBase('/images/categories/ESP32-NanoCam.png')" alt="ESP32-S3 WiFi-Videomodul" loading="lazy">
+    <span class="pc-title">ESP32-S3 WiFi-Videomodul</span>
+    <p class="pc-desc">2MP-Kamera mit WiFi-Liveübertragung und 8 integrierten KI-Visionsmodi — die leichtgewichtige Ego-Perspektive für jeden Roboter.</p>
+  </a>
+  <a :href="withBase('/de/products/imx219-csi-camera')" class="product-card" data-cat="compute-vision">
+    <img :src="withBase('/images/categories/CSI-Camera.png')" alt="79° IMX219 CSI-Kamera" loading="lazy">
+    <span class="pc-title">79° IMX219 CSI-Kamera</span>
+    <p class="pc-desc">Natives CSI für den direkten Anschluss an den Jetson; 77° Sichtfeld, niedrige Latenz — Edge-Vision mit starkem Preis-Leistungs-Verhältnis.</p>
+  </a>
+  <a :href="withBase('/de/products/usb-auto-focus-camera')" class="product-card" data-cat="compute-vision">
+    <img :src="withBase('/images/categories/USB-AutoFocus-Camera.png')" alt="USB-Kamera mit Autofokus" loading="lazy">
+    <span class="pc-title">USB-Kamera mit Autofokus</span>
+    <p class="pc-desc">1080P-Kamera mit 86°-Weitwinkel, treiberfrei — Plug-and-Play unter Windows, Linux, Jetson und Raspberry Pi.</p>
+  </a>
+</div>
+
+## Sensoren & Positionierung
+
+<div class="product-grid">
+  <a :href="withBase('/de/products/imu-module')" class="product-card" data-cat="sensor">
+    <img :src="withBase('/images/categories/IMU.png')" alt="IMU Hochpräzisions-Trägheitsnavigationsmodul" loading="lazy">
+    <span class="pc-title">IMU Hochpräzisions-Trägheitsnavigationsmodul</span>
+    <p class="pc-desc">100Hz-Attitüdenberechnung, 6/9/10-Achsen-Optionen, IIC + UART; ROS-Integration ab Werk.</p>
+  </a>
+  <a :href="withBase('/de/products/gps-beidou-module')" class="product-card" data-cat="sensor">
+    <img :src="withBase('/images/categories/GPS.png')" alt="GPS- & Beidou-GNSS-Positionsmodul" loading="lazy">
+    <span class="pc-title">GPS- & Beidou-GNSS-Positionsmodul</span>
+    <p class="pc-desc">Vier-Konstellationen-Positionierung mit 2.5m Genauigkeit, ROS-ready — die erste Wahl für den Einstieg in die Outdoor-Lokalisierung von Robotern.</p>
+  </a>
+</div>
+
+## Zubehör & Werkzeuge
+
+<div class="product-grid">
+  <a :href="withBase('/de/products/ai-voice-module')" class="product-card" data-cat="accessory">
+    <img :src="withBase('/images/categories/AI-Voice-Module.png')" alt="AI-Sprachinteraktionsmodul" loading="lazy">
+    <span class="pc-title">AI-Sprachinteraktionsmodul</span>
+    <p class="pc-desc">110+ Offline-Befehle, 99 % Erkennungsrate im Umkreis von 5 m; Anbindung per UART/IIC an Arduino, Jetson und Raspberry Pi.</p>
+  </a>
+  <a :href="withBase('/de/products/kws-voice-module')" class="product-card" data-cat="accessory">
+    <img :src="withBase('/images/categories/KWS-Voice-Module.png')" alt="KWS-Sprachinteraktionsmodul" loading="lazy">
+    <span class="pc-title">KWS-Sprachinteraktionsmodul</span>
+    <p class="pc-desc">Wake-Word-Erkennung für Chinesisch und Englisch mit Open-Source-Firmware; UART-Ausgabe plus RViz2-Visualisierung.</p>
+  </a>
+  <a :href="withBase('/de/products/usb-sound-card')" class="product-card" data-cat="accessory">
+    <img :src="withBase('/images/categories/AI_SoundCard.png')" alt="USB Soundkarte ohne Treiber" loading="lazy">
+    <span class="pc-title">USB Soundkarte ohne Treiber</span>
+    <p class="pc-desc">Treiberfreie Soundkarte mit Onboard-Mikrofon und Lautsprecher — das letzte Puzzleteil für die Sprachinteraktion mit Raspberry Pi und Jetson.</p>
+  </a>
+  <a :href="withBase('/de/products/2dof-gimbal')" class="product-card" data-cat="accessory">
+    <img :src="withBase('/images/categories/2DOF-Gimbal.png')" alt="2-DOF-Servo-Pan-Tilt-Einheit" loading="lazy">
+    <span class="pc-title">2-DOF-Servo-Pan-Tilt-Einheit</span>
+    <p class="pc-desc">2-DOF-Pan-Tilt-Einheit mit 2MP-Kamera; Farbverfolgung, Gesichtserkennung und Auto-Follow — eigene Weiterentwicklung in reinem Python.</p>
+  </a>
+  <a :href="withBase('/de/products/4k-hdmi-capture')" class="product-card" data-cat="accessory">
+    <img :src="withBase('/images/categories/4K-HDMI-Capture.png')" alt="4K-HDMI-Capture-Karte" loading="lazy">
+    <span class="pc-title">4K-HDMI-Capture-Karte</span>
+    <p class="pc-desc">4K-Capture über HDMI/DP mit direktem USB-Anschluss — Live-Streaming, Bildschirmaufzeichnung und Vision-Datenerfassung.</p>
+  </a>
+  <a :href="withBase('/de/products/feetech-servo')" class="product-card" data-cat="accessory">
+    <img :src="withBase('/images/categories/Feetech-Servo.png')" alt="Feetech-Bus-Servos (SCS0009 / STS3215)" loading="lazy">
+    <span class="pc-title">Feetech-Bus-Servos (SCS0009 / STS3215)</span>
+    <p class="pc-desc">Zwei Bus-Servo-Modelle SCS0009 und STS3215, mit Magnetencoder- oder Potentiometer-Version, inklusive Debug-Tools für den Host-PC.</p>
+  </a>
+  <a :href="withBase('/de/products/kvm-switch')" class="product-card" data-cat="accessory">
+    <img :src="withBase('/images/categories/KVM-Switch.png')" alt="4-in-1-KVM-Switch" loading="lazy">
+    <span class="pc-title">4-in-1-KVM-Switch</span>
+    <p class="pc-desc">4-in-1-KVM mit TTL-Serial und Bluetooth-Erweiterung; Mehrgeräte-Umschaltung per Tastendruck — das Effizienz-Tool für den Roboter-Arbeitsplatz.</p>
   </a>
 </div>
 
@@ -118,20 +165,22 @@ import { withBase } from 'vitepress'
 </script>
 
 <style>
+
 .hero-subtitle {
-  font-size: 20px;
-  margin: 8px 0 4px;
+  font-size: 19px;
+  line-height: 1.8;
+  margin: 8px auto 8px;
+  max-width: 780px;
   color: var(--vp-c-text-2);
   display: block;
 }
-.category-grid {
+.product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 20px;
-  margin: 32px 0 64px 0;
+  margin: 24px 0 48px 0;
 }
-
-.category-card {
+.product-card {
   border: 1px solid var(--vp-c-gutter);
   border-radius: 12px;
   overflow: hidden;
@@ -141,34 +190,34 @@ import { withBase } from 'vitepress'
   color: inherit;
   display: block;
   background: var(--vp-c-bg-soft);
-  padding: 28px 20px;
 }
-
-.category-card:hover {
+.product-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   border-color: var(--vp-c-brand);
 }
-
+.product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  padding: 14px 16px 0;
+  background: var(--vp-c-bg);
+}
 .pc-title {
   display: block;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 15px;
+  line-height: 1.5;
   color: var(--vp-c-text-1);
-  margin-bottom: 10px;
-  padding: 0;
+  margin: 12px 16px 8px;
 }
-
 .pc-desc {
   font-size: 13px;
   line-height: 1.7;
   color: var(--vp-c-text-2);
-  margin: 0;
+  margin: 0 16px 20px;
 }
-
 @media (max-width: 767px) {
-  .category-grid {
-    grid-template-columns: 1fr;
-  }
+  .product-grid { grid-template-columns: 1fr; }
 }
 </style>

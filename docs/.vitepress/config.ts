@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import fs from 'node:fs'
 import path from 'node:path'
+import { PRODUCTS, NAMES, BLURBS } from './products-data.mjs'
 
 // FAQ 页 → FAQPage JSON-LD:构建期解析各语 tutorials/faq.md 的 Q/A 对
 // (格式: **Q: xxx?** / **A:** yyy;fr 为 **Q :** 与 **A :**,正则兼容空白)
@@ -71,7 +72,9 @@ function buildBreadcrumbLd(url: string, title: string, lang: string) {
   let acc = ''
   for (let i = 0; i < segs.length; i++) {
     acc += '/' + segs[i]
-    const name = i === segs.length - 1 ? title : (SEG_NAMES[segs[i]]?.[lang] || segs[i])
+    // 单段区页(/products/、/tutorials/ 等)末项用区名,与子页面包屑链一致;其余末项用页面 title
+    const isSectionRoot = i === segs.length - 1 && segs.length === 1 && !!SEG_NAMES[segs[i]]?.[lang]
+    const name = i === segs.length - 1 ? (isSectionRoot ? SEG_NAMES[segs[i]][lang] : title) : (SEG_NAMES[segs[i]]?.[lang] || segs[i])
     // 最后一项必须等于页面自身 URL(canonical):url 参数保留尾斜杠(index 页 /about/)
     const item = i === segs.length - 1 ? 'https://wiki.juxitech.com' + url
       : 'https://wiki.juxitech.com' + (langSeg ? '/' + langSeg : '') + acc
@@ -88,8 +91,7 @@ const globalHead = [
   ['link', { rel: 'icon', type: 'image/png', href: '/images/logos/logo-black.png' }],
   ['link', { rel: 'apple-touch-icon', href: '/images/logos/logo-black.png' }],
   ['meta', { property: 'og:type', content: 'website' }],
-  // og:site_name 逐页按语言注入(见 transformHead);静态 head 无法区分语言
-  ['meta', { property: 'og:image', content: 'https://wiki.juxitech.com/images/logos/logo-black.png' }],
+  // og:image 逐页注入(产品页=产品卡图,产品中心=旗舰图,其余=品牌 logo),见 transformHead
   ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
   ['meta', { name: 'robots', content: 'index, follow' }],
   // 百度统计:默认占位 ID 时 no-op(不发请求);替换 JUXI_BAIDU_ID 为真实统计 ID 后生效
@@ -8019,6 +8021,31 @@ export default defineConfig({
     } else if (faqLd) {
       // FAQ 页用 FAQPage 替代 Article(富媒体收割 + AI 引用,避免类型混杂)
       ld = faqLd
+    } else if (/^(?:[a-z-]+\/)?products\/index\.md$/.test(pageData.relativePath)) {
+      // 产品中心:CollectionPage + ItemList(聚合页语义 + 富结果;此前落进通用 Article)
+      const reSegs2 = pageData.relativePath.split('/')
+      const dirKey2 = LANG_CODE[reSegs2[0]] ? reSegs2[0] : 'en'
+      const langPrefix2 = dirKey2 === 'en' ? '' : '/' + dirKey2
+      ld = {
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: pageData.title || 'Products',
+        description: pageData.description || '',
+        url: base + pageUrlOf(pageData.relativePath),
+        inLanguage: pageLang,
+        mainEntity: {
+          '@type': 'ItemList',
+          numberOfItems: PRODUCTS.length,
+          itemListElement: PRODUCTS.map((p, i) => ({
+            '@type': 'ListItem',
+            position: i + 1,
+            name: NAMES[p.slug][dirKey2] || p.slug,
+            url: `${base}${langPrefix2}/products/${p.slug}`,
+            image: `${base}/images/categories/${p.img}`,
+            description: BLURBS[p.slug][dirKey2] || '',
+          })),
+        },
+      }
     } else {
       ld = {
         '@context': 'https://schema.org',
@@ -8062,7 +8089,23 @@ export default defineConfig({
         ['meta', { property: 'og:locale', content: OG_LOCALE[LANG_CODE[pageData.relativePath.split('/')[0]] || 'en'] || 'en_US' }],
         ['meta', { property: 'og:site_name', content: brandOf(pageData.relativePath) }],
       )
+      // og:image/twitter:image 逐页:产品页=该产品卡图,产品中心=旗舰(SO-ARM101)卡图,其余=品牌 logo
+      const isProductsHub = /^(?:[a-z-]+\/)?products\/index\.md$/.test(pageData.relativePath)
+      const ogSlug = isProductsHub
+        ? undefined
+        : pageData.relativePath.match(/^(?:[a-z-]+\/)?products\/([a-z0-9-]+)\.md$/)?.[1]
+      const ogImg = ogSlug
+        ? PRODUCTS.find((p) => p.slug === ogSlug)?.img
+        : (isProductsHub ? 'SO-ARM101.png' : null)
+      const ogImgUrl = ogImg ? `${base}/images/categories/${ogImg}` : `${base}/images/logos/logo-black.png`
+      heads.push(
+        ['meta', { property: 'og:image', content: ogImgUrl }],
+        ['meta', { name: 'twitter:image', content: ogImgUrl }],
+      )
     }
+    // keywords:frontmatter 带 keywords 的页面补 meta(百度等仍读取)
+    const kw = (pageData as any).frontmatter?.keywords
+    if (Array.isArray(kw) && kw.length) heads.push(['meta', { name: 'keywords', content: kw.join(', ') }])
     if (breadcrumbLd) heads.push(['script', { type: 'application/ld+json' }, JSON.stringify(breadcrumbLd)])
     return heads
   },
