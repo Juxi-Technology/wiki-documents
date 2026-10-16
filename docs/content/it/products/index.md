@@ -306,7 +306,7 @@ function applyFilter(cat) {
 
 <style>
 
-.hero-subtitle {
+.vp-doc .hero-subtitle {
   font-size: 19px;
   line-height: 1.8;
   margin: 8px auto 8px;
@@ -320,7 +320,7 @@ function applyFilter(cat) {
   gap: 20px;
   margin: 24px 0 48px 0;
 }
-.hub-filters {
+.vp-doc .hub-filters {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -357,8 +357,8 @@ function applyFilter(cat) {
   transition: transform 0.2s, box-shadow 0.2s;
   background: var(--vp-c-bg-soft);
 }
-/* 卡片链接/购买按钮须 .vp-doc 前缀:主题 .vp-doc a(0,1,1)会以品牌蓝+下划线+字重500
-   压过单类选择器(0,1,0) */
+/* 卡片内 a/p 元素样式须 .vp-doc 前缀:主题 .vp-doc a / .vp-doc p(0,1,1)会以
+   品牌蓝+下划线,或 margin:16px 0(清掉左右间距)压过单类选择器(0,1,0) */
 .vp-doc .pc-link {
   display: block;
   flex: 1;
@@ -385,7 +385,7 @@ function applyFilter(cat) {
   color: var(--vp-c-text-1);
   margin: 12px 16px 8px;
 }
-.pc-desc {
+.vp-doc .pc-desc {
   font-size: 13px;
   line-height: 1.7;
   color: var(--vp-c-text-2);
