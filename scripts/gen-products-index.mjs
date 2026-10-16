@@ -77,6 +77,22 @@ const BUY_WORD = {
   'pt-pt': 'Comprar',
 }
 
+// 淘宝店铺按钮文案:全 11 语(2026-10-17 用户拍板——海外用户可经淘宝海外进店;
+// 中文两语取首页既有措辞,其余按各语「官方商店」的既有词组风格拼装)
+const TAOBAO_WORD = {
+  en: '🛒 Taobao Store',
+  'zh-hans': '🛒 淘宝店铺',
+  'zh-hant': '🛒 淘寶店鋪',
+  ja: '🛒 Taobao ストア',
+  ko: '🛒 Taobao 스토어',
+  de: '🛒 Taobao Shop',
+  fr: '🛒 Boutique Taobao',
+  es: '🛒 Tienda Taobao',
+  it: '🛒 Negozio Taobao',
+  'pt-br': '🛒 Loja Taobao',
+  'pt-pt': '🛒 Loja Taobao',
+}
+
 // 侧边目录标题(分类导航栏;≥1280px 显示,窄屏回落 chips 行)
 const SIDE_TITLE = {
   en: 'Contents',
@@ -99,7 +115,7 @@ function keepDescription(file) {
   return m ? m[1] : '""'
 }
 
-// 淘宝/商城按钮文案:直接取各语首页 hero 上已上线的那对按钮(含 emoji,措辞零新写)
+// 官方商城按钮文案:直接取各语首页 hero 上已上线的那枚按钮(含 emoji,措辞零新写)
 function heroLabel(dir, cls) {
   const src = fs.readFileSync(path.join(dir, 'index.md'), 'utf8')
   const m = src.match(new RegExp(`class="hero-btn ${cls}"[^>]*>([^<]+)</a>`))
@@ -297,10 +313,8 @@ for (const loc of LOCALES) {
         `  <button class="hub-chip" aria-pressed="false" data-filter="${cat}" @click="applyFilter('${cat}')">${SECTION_NAMES[loc.key][i]}</button>`,
     ),
   ].join('\n')
-  // 主标语下:淘宝(仅中文两树,站内惯例)+ 官方商城按钮;样式复用首页 .hero-btn(全局主题)
-  const taobaoBtn = ['zh-hans', 'zh-hant'].includes(loc.key)
-    ? `  <a href="https://juxitechnology.taobao.com" target="_blank" rel="noopener" class="hero-btn taobao">${heroLabel(loc.dir, 'taobao')}</a>\n`
-    : ''
+  // 主标语下:淘宝(全语种,海外用户经淘宝海外进店)+ 官方商城按钮;样式复用首页 .hero-btn(全局主题)
+  const taobaoBtn = `  <a href="https://juxitechnology.taobao.com" target="_blank" rel="noopener" class="hero-btn taobao">${TAOBAO_WORD[loc.key]}</a>\n`
   const cta = `<p class="hub-cta">
 ${taobaoBtn}  <a href="${SHOP_URL}/${SHOP_LOCALE_PREFIX[loc.key]}?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=hero-store" target="_blank" rel="noopener" class="hero-btn shop">${heroLabel(loc.dir, 'shop')}</a>
 </p>`

@@ -16,6 +16,7 @@ next: false
 <p class="hero-subtitle">From open-source robot arms to NVIDIA Jetson edge AI — manuals, specifications and tutorials for every Juxi Technology product, with direct links to the official store.</p>
 
 <p class="hub-cta">
+  <a href="https://juxitechnology.taobao.com" target="_blank" rel="noopener" class="hero-btn taobao">🛒 Taobao Store</a>
   <a href="https://www.juxitech.com/?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=hero-store" target="_blank" rel="noopener" class="hero-btn shop">🛍️ Official Store</a>
 </p>
 

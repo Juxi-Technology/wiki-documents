@@ -16,6 +16,7 @@ next: false
 <p class="hero-subtitle">Du bras robotique open source au calcul en périphérie NVIDIA Jetson : retrouvez ici manuels, spécifications et tutoriels pour chaque produit Juxi Technology, avec un accès direct à la boutique officielle.</p>
 
 <p class="hub-cta">
+  <a href="https://juxitechnology.taobao.com" target="_blank" rel="noopener" class="hero-btn taobao">🛒 Boutique Taobao</a>
   <a href="https://www.juxitech.com/fr/?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=hero-store" target="_blank" rel="noopener" class="hero-btn shop">🛍️ Boutique officielle</a>
 </p>
 

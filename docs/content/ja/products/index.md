@@ -16,6 +16,7 @@ next: false
 <p class="hero-subtitle">オープンソースのロボットアームから NVIDIA Jetson のエッジ AI まで——Juxi Technology のすべてのハードウェア製品のマニュアル・仕様・チュートリアルがここにワンストップで揃い、公式ストアへのリンクも掲載しています。</p>
 
 <p class="hub-cta">
+  <a href="https://juxitechnology.taobao.com" target="_blank" rel="noopener" class="hero-btn taobao">🛒 Taobao ストア</a>
   <a href="https://www.juxitech.com/ja/?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=hero-store" target="_blank" rel="noopener" class="hero-btn shop">🛍️ 公式ストア</a>
 </p>
 

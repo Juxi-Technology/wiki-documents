@@ -16,6 +16,7 @@ next: false
 <p class="hero-subtitle">Von Open-Source-Roboterarmen bis zu NVIDIA Jetson Edge-KI — Handbücher, Spezifikationen und Tutorials für jede Juxi-Technology-Hardware an einem Ort, mit direktem Link zum offiziellen Shop.</p>
 
 <p class="hub-cta">
+  <a href="https://juxitechnology.taobao.com" target="_blank" rel="noopener" class="hero-btn taobao">🛒 Taobao Shop</a>
   <a href="https://www.juxitech.com/de/?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=hero-store" target="_blank" rel="noopener" class="hero-btn shop">🛍️ Offizieller Shop</a>
 </p>
 

@@ -16,6 +16,7 @@ next: false
 <p class="hero-subtitle">De los brazos robóticos open source a la IA perimetral de NVIDIA Jetson: manuales, especificaciones y tutoriales de cada producto de Juxi Technology, todo en un solo lugar y con acceso directo a la tienda oficial.</p>
 
 <p class="hub-cta">
+  <a href="https://juxitechnology.taobao.com" target="_blank" rel="noopener" class="hero-btn taobao">🛒 Tienda Taobao</a>
   <a href="https://www.juxitech.com/es/?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=hero-store" target="_blank" rel="noopener" class="hero-btn shop">🛍️ Tienda oficial</a>
 </p>
 

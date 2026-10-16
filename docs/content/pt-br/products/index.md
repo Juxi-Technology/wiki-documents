@@ -16,6 +16,7 @@ next: false
 <p class="hero-subtitle">De braços robóticos open source à computação de borda com NVIDIA Jetson — manuais, especificações e tutoriais de todos os produtos da Juxi Technology em um só lugar, com acesso direto à loja oficial.</p>
 
 <p class="hub-cta">
+  <a href="https://juxitechnology.taobao.com" target="_blank" rel="noopener" class="hero-btn taobao">🛒 Loja Taobao</a>
   <a href="https://www.juxitech.com/pt/?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=hero-store" target="_blank" rel="noopener" class="hero-btn shop">🛍️ Loja Oficial</a>
 </p>
 

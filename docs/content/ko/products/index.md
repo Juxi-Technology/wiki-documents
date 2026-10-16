@@ -16,6 +16,7 @@ next: false
 <p class="hero-subtitle">오픈소스 로봇 암부터 NVIDIA Jetson 엣지 컴퓨팅까지 — 모든 Juxi Technology 하드웨어의 매뉴얼, 사양과 튜토리얼을 한곳에서 바로 확인할 수 있으며, 공식 스토어 링크도 함께 제공합니다.</p>
 
 <p class="hub-cta">
+  <a href="https://juxitechnology.taobao.com" target="_blank" rel="noopener" class="hero-btn taobao">🛒 Taobao 스토어</a>
   <a href="https://www.juxitech.com/ko/?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=hero-store" target="_blank" rel="noopener" class="hero-btn shop">🛍️ 공식 스토어</a>
 </p>
 
