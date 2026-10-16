@@ -367,6 +367,13 @@ html .hero-btn.secondary:hover {
   content: none;
 }
 
+/* .vp-doc 内复用 hero-btn(产品中心 hub 等):压回被 .vp-doc a(0,1,1)夺走的
+   下划线与字重;配色仍由 html .hero-btn.* 变体决定 */
+.vp-doc a.hero-btn {
+  text-decoration: none;
+  font-weight: 600;
+}
+
 /* ============================================
    微交互(2026-09)
    ============================================ */

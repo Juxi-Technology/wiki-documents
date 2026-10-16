@@ -77,11 +77,34 @@ const BUY_WORD = {
   'pt-pt': 'Comprar',
 }
 
+// 侧边目录标题(分类导航栏;≥1280px 显示,窄屏回落 chips 行)
+const SIDE_TITLE = {
+  en: 'Contents',
+  'zh-hans': '目录',
+  'zh-hant': '目錄',
+  ja: '目次',
+  ko: '목차',
+  de: 'Inhalt',
+  fr: 'Sommaire',
+  es: 'Índice',
+  it: 'Indice',
+  'pt-br': 'Índice',
+  'pt-pt': 'Índice',
+}
+
 // 既有 description 保留(逐语从现文件读回)
 function keepDescription(file) {
   const src = fs.readFileSync(file, 'utf8')
   const m = src.match(/^description:\s*(.*)$/m)
   return m ? m[1] : '""'
+}
+
+// 淘宝/商城按钮文案:直接取各语首页 hero 上已上线的那对按钮(含 emoji,措辞零新写)
+function heroLabel(dir, cls) {
+  const src = fs.readFileSync(path.join(dir, 'index.md'), 'utf8')
+  const m = src.match(new RegExp(`class="hero-btn ${cls}"[^>]*>([^<]+)</a>`))
+  if (!m) throw new Error(`首页缺少 hero-btn.${cls} 按钮: ${dir}/index.md`)
+  return m[1].trim()
 }
 
 const STYLES = `
@@ -187,6 +210,58 @@ const STYLES = `
   background: #152a45;
   color: #ffffff;
 }
+.vp-doc .hub-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin: 12px 0 2px;
+}
+/* 侧边分类目录:≥1280px 固定竖排导航(左缘空白区),窄屏隐藏并回落 chips 行 */
+.vp-doc .hub-side {
+  display: none;
+}
+.hub-side-title {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--vp-c-text-3);
+  padding: 0 12px 6px;
+}
+.hub-side-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--vp-c-text-2);
+  font-size: 13.5px;
+  line-height: 1.5;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+.hub-side-btn:hover {
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+}
+.hub-side-btn.active {
+  background: #1e3a5f;
+  color: #ffffff;
+}
+@media (min-width: 1280px) {
+  .vp-doc .hub-side {
+    position: fixed;
+    left: 40px;
+    top: 150px;
+    width: 184px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .vp-doc .hub-filters {
+    display: none;
+  }
+}
 @media (max-width: 767px) {
   .product-grid { grid-template-columns: 1fr; }
 }
@@ -222,6 +297,20 @@ for (const loc of LOCALES) {
         `  <button class="hub-chip" aria-pressed="false" data-filter="${cat}" @click="applyFilter('${cat}')">${SECTION_NAMES[loc.key][i]}</button>`,
     ),
   ].join('\n')
+  // 主标语下:淘宝(仅中文两树,站内惯例)+ 官方商城按钮;样式复用首页 .hero-btn(全局主题)
+  const taobaoBtn = ['zh-hans', 'zh-hant'].includes(loc.key)
+    ? `  <a href="https://juxitechnology.taobao.com" target="_blank" rel="noopener" class="hero-btn taobao">${heroLabel(loc.dir, 'taobao')}</a>\n`
+    : ''
+  const cta = `<p class="hub-cta">
+${taobaoBtn}  <a href="${SHOP_URL}/${SHOP_LOCALE_PREFIX[loc.key]}?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=hero-store" target="_blank" rel="noopener" class="hero-btn shop">${heroLabel(loc.dir, 'shop')}</a>
+</p>`
+  const sideBtns = [
+    `  <button class="hub-side-btn active" aria-pressed="true" data-filter="all" @click="applyFilter('all')">${FILTER_ALL[loc.key]}</button>`,
+    ...CATEGORY_ORDER.map(
+      (cat, i) =>
+        `  <button class="hub-side-btn" aria-pressed="false" data-filter="${cat}" @click="applyFilter('${cat}')">${SECTION_NAMES[loc.key][i]}</button>`,
+    ),
+  ].join('\n')
   const sections = CATEGORY_ORDER.map((cat, i) => {
     const items = PRODUCTS.filter((p) => p.category === cat)
     return `## ${SECTION_NAMES[loc.key][i]}\n\n<div class="product-grid">\n${items.map((p) => card(loc, p, loc.key)).join('\n')}\n</div>`
@@ -244,6 +333,13 @@ next: false
 
 <p class="hero-subtitle">${HERO[loc.key]}</p>
 
+${cta}
+
+<nav class="hub-side">
+  <span class="hub-side-title">${SIDE_TITLE[loc.key]}</span>
+${sideBtns}
+</nav>
+
 <p class="hub-filters">
 ${chips}
 </p>
@@ -255,11 +351,12 @@ import { withBase } from 'vitepress'
 
 // 分类筛选:纯 DOM 切换(卡片是静态内容,不参与 Vue 重渲染;无 JS 时默认全部可见)
 function applyFilter(cat) {
-  document.querySelectorAll('.hub-chip').forEach((btn) => {
+  document.querySelectorAll('.hub-chip, .hub-side-btn').forEach((btn) => {
     const on = btn.dataset.filter === cat
     btn.classList.toggle('active', on)
     btn.setAttribute('aria-pressed', String(on))
   })
+  let firstVisible = null
   document.querySelectorAll('.product-grid').forEach((grid) => {
     let any = false
     grid.querySelectorAll('.product-card').forEach((cardEl) => {
@@ -269,8 +366,13 @@ function applyFilter(cat) {
     })
     grid.style.display = any ? '' : 'none'
     const h2 = grid.previousElementSibling
-    if (h2 && h2.tagName === 'H2') h2.style.display = any ? '' : 'none'
+    if (h2 && h2.tagName === 'H2') {
+      h2.style.display = any ? '' : 'none'
+      if (any && !firstVisible) firstVisible = h2
+    }
   })
+  // 过滤后滚动到首个可见分区(标题自带 scroll-margin,不会被固定导航遮住)
+  if (firstVisible) firstVisible.scrollIntoView({ behavior: 'smooth', block: 'start' })
 }
 </script>
 

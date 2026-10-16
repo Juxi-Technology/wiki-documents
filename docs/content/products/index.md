@@ -15,6 +15,19 @@ next: false
 
 <p class="hero-subtitle">From open-source robot arms to NVIDIA Jetson edge AI — manuals, specifications and tutorials for every Juxi Technology product, with direct links to the official store.</p>
 
+<p class="hub-cta">
+  <a href="https://www.juxitech.com/?utm_source=wiki&utm_medium=referral&utm_campaign=products-hub&utm_content=hero-store" target="_blank" rel="noopener" class="hero-btn shop">🛍️ Official Store</a>
+</p>
+
+<nav class="hub-side">
+  <span class="hub-side-title">Contents</span>
+  <button class="hub-side-btn active" aria-pressed="true" data-filter="all" @click="applyFilter('all')">All</button>
+  <button class="hub-side-btn" aria-pressed="false" data-filter="robot" @click="applyFilter('robot')">Robot Systems</button>
+  <button class="hub-side-btn" aria-pressed="false" data-filter="compute-vision" @click="applyFilter('compute-vision')">AI Compute & Vision</button>
+  <button class="hub-side-btn" aria-pressed="false" data-filter="sensor" @click="applyFilter('sensor')">Sensors & Positioning</button>
+  <button class="hub-side-btn" aria-pressed="false" data-filter="accessory" @click="applyFilter('accessory')">Accessories & Tools</button>
+</nav>
+
 <p class="hub-filters">
   <button class="hub-chip active" aria-pressed="true" data-filter="all" @click="applyFilter('all')">All</button>
   <button class="hub-chip" aria-pressed="false" data-filter="robot" @click="applyFilter('robot')">Robot Systems</button>
@@ -285,11 +298,12 @@ import { withBase } from 'vitepress'
 
 // 分类筛选:纯 DOM 切换(卡片是静态内容,不参与 Vue 重渲染;无 JS 时默认全部可见)
 function applyFilter(cat) {
-  document.querySelectorAll('.hub-chip').forEach((btn) => {
+  document.querySelectorAll('.hub-chip, .hub-side-btn').forEach((btn) => {
     const on = btn.dataset.filter === cat
     btn.classList.toggle('active', on)
     btn.setAttribute('aria-pressed', String(on))
   })
+  let firstVisible = null
   document.querySelectorAll('.product-grid').forEach((grid) => {
     let any = false
     grid.querySelectorAll('.product-card').forEach((cardEl) => {
@@ -299,8 +313,13 @@ function applyFilter(cat) {
     })
     grid.style.display = any ? '' : 'none'
     const h2 = grid.previousElementSibling
-    if (h2 && h2.tagName === 'H2') h2.style.display = any ? '' : 'none'
+    if (h2 && h2.tagName === 'H2') {
+      h2.style.display = any ? '' : 'none'
+      if (any && !firstVisible) firstVisible = h2
+    }
   })
+  // 过滤后滚动到首个可见分区(标题自带 scroll-margin,不会被固定导航遮住)
+  if (firstVisible) firstVisible.scrollIntoView({ behavior: 'smooth', block: 'start' })
 }
 </script>
 
@@ -407,6 +426,58 @@ function applyFilter(cat) {
 .vp-doc .pc-buy:hover {
   background: #152a45;
   color: #ffffff;
+}
+.vp-doc .hub-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin: 12px 0 2px;
+}
+/* 侧边分类目录:≥1280px 固定竖排导航(左缘空白区),窄屏隐藏并回落 chips 行 */
+.vp-doc .hub-side {
+  display: none;
+}
+.hub-side-title {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--vp-c-text-3);
+  padding: 0 12px 6px;
+}
+.hub-side-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--vp-c-text-2);
+  font-size: 13.5px;
+  line-height: 1.5;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+.hub-side-btn:hover {
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+}
+.hub-side-btn.active {
+  background: #1e3a5f;
+  color: #ffffff;
+}
+@media (min-width: 1280px) {
+  .vp-doc .hub-side {
+    position: fixed;
+    left: 40px;
+    top: 150px;
+    width: 184px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .vp-doc .hub-filters {
+    display: none;
+  }
 }
 @media (max-width: 767px) {
   .product-grid { grid-template-columns: 1fr; }
