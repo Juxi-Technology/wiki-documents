@@ -112,6 +112,7 @@ Braço robótico de mesa open source de 6 eixos, com suporte ao LeRobot e a outr
 - [5 · Gravar um dataset](./so-arm101/lelab/05-Record-Dataset.md)
 - [6 · Treinar e executar inferência](./so-arm101/lelab/06-Train-and-Inference.md)
 - [7 · Solução de problemas](./so-arm101/lelab/07-Troubleshooting.md)
+,#### Tutorial de simulação MuJoCo,- [Tutorial completo SO-ARM101 × MuJoCo (índice)](./so-arm101/mujoco/index.md),- [01 · Preparação do ambiente](./so-arm101/mujoco/01-Environment.md),- [02 · Verificação do modelo de simulação (carregamento e acionamento MJCF)](./so-arm101/mujoco/02-Sim-Model-Verification.md),- [03 · Conexão com o robô real e calibração](./so-arm101/mujoco/03-Hardware-Calibration.md),- [04 · Teleoperação por teclado](./so-arm101/mujoco/04-Keyboard-Teleop.md),- [05 · Gêmeo digital do braço líder (braço físico acionando o braço simulado)](./so-arm101/mujoco/05-Leader-Digital-Twin.md),- [06 · Gravação e reprodução de dados](./so-arm101/mujoco/06-Record-and-Replay.md),- [07 · Perguntas frequentes e experiências](./so-arm101/mujoco/07-Troubleshooting.md),- [08 · Roteiro futuro](./so-arm101/mujoco/08-Roadmap.md),- [09 · Tutorial de uso completo (iniciar o braço → conjunto de dados → assistir aos vídeos → treinamento → implantação)](./so-arm101/mujoco/09-Usage-Tutorial.md)
 
 
 ### Tutorial do braço robótico SO-ARM101 de 7 eixos
@@ -176,6 +177,7 @@ Braço robótico de mesa open source de 6 eixos, com suporte ao LeRobot e a outr
 Mão hábil biônica open source, que oferece operação com múltiplos dedos de alta precisão.
 
 - [Controle de interface do AmazingHand](./amazing-hand/AmazingHand-Interface-Control.md)
+- [AmazingHand Web Control](./amazing-hand/AmazingHand-Web-Control.md)
 - [Exemplo oficial do AmazingHand](./amazing-hand/AmazingHand-Official-Example.md)
 - [Depuração TTL do AmazingHand](./amazing-hand/AmazingHand-TTL-Debugging.md)
 

@@ -219,6 +219,7 @@ description: "Juxi Technology 튜토리얼 — 로봇 암과 액세서리, 센�
         - [5 · 데이터셋 녹화](/ko/tutorials/robot-arms/so-arm101/lelab/05-Record-Dataset)
         - [6 · 학습과 추론](/ko/tutorials/robot-arms/so-arm101/lelab/06-Train-and-Inference)
         - [7 · 문제 해결](/ko/tutorials/robot-arms/so-arm101/lelab/07-Troubleshooting)
+      - **MuJoCo 시뮬레이션 튜토리얼**,        - [SO-ARM101 × MuJoCo 전체 워크플로 튜토리얼(인덱스)](/ko/tutorials/robot-arms/so-arm101/mujoco/),        - [01 · 환경 준비](/ko/tutorials/robot-arms/so-arm101/mujoco/01-Environment),        - [02 · 시뮬레이션 모델 검증(MJCF 로드와 구동)](/ko/tutorials/robot-arms/so-arm101/mujoco/02-Sim-Model-Verification),        - [03 · 실기 연결과 캘리브레이션](/ko/tutorials/robot-arms/so-arm101/mujoco/03-Hardware-Calibration),        - [04 · 키보드 텔레오퍼레이션](/ko/tutorials/robot-arms/so-arm101/mujoco/04-Keyboard-Teleop),        - [05 · 리더 암 디지털 트윈(실물 암으로 시뮬레이션 암 구동)](/ko/tutorials/robot-arms/so-arm101/mujoco/05-Leader-Digital-Twin),        - [06 · 데이터 녹화와 리플레이](/ko/tutorials/robot-arms/so-arm101/mujoco/06-Record-and-Replay),        - [07 · 자주 발생하는 문제와 경험](/ko/tutorials/robot-arms/so-arm101/mujoco/07-Troubleshooting),        - [08 · 이후 로드맵](/ko/tutorials/robot-arms/so-arm101/mujoco/08-Roadmap),        - [09 · 전체 사용 튜토리얼(암 준비 → 데이터셋 → 영상 확인 → 학습 → 배포)](/ko/tutorials/robot-arms/so-arm101/mujoco/09-Usage-Tutorial)
   - **SO-ARM101 + AmazingHand 튜토리얼**
     - [코스 개요](/ko/tutorials/robot-arms/so-arm-amazinghand/)
       - **Linux**
@@ -245,6 +246,7 @@ description: "Juxi Technology 튜토리얼 — 로봇 암과 액세서리, 센�
     - [부품 키트 조립](/ko/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit)
   - **AmazingHand**
     - [로봇 핸드 인터페이스 제어](/ko/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control)
+    - [AmazingHand 웹 제어](/ko/tutorials/robot-arms/amazing-hand/AmazingHand-Web-Control)
     - [AmazingHand 로봇 손 제품 자료](/ko/tutorials/robot-arms/amazing-hand/product-info)
     - [로봇핸드 공식 예제 실행 튜토리얼](/ko/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example)
     - [로봇핸드(TTL 직렬 서보) 디버깅 튜토리얼](/ko/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging)
@@ -369,6 +371,7 @@ description: "Juxi Technology 튜토리얼 — 로봇 암과 액세서리, 센�
 - [0.91인치 OLED 화면](/ko/tutorials/accessories/0.91-oled-screen-tutorial)
 - [4K HDMI 캡처 카드](/ko/tutorials/accessories/4k-hdmi-capture-tutorial)
 - [KVM 스위치](/ko/tutorials/accessories/kvm-switch-tutorial)
+- [KVM 스위치 · 사용 튜토리얼 개요](/ko/tutorials/accessories/kvm-switch/00-Overview-and-Quick-Start),- [01 · 두 대 PC 전환(버튼 및 IR 리모컨)](/ko/tutorials/accessories/kvm-switch/01-Switching-Between-Two-Computers),- [02 · HUB 기능(1대3)](/ko/tutorials/accessories/kvm-switch/02-HUB-Function-One-to-Three),- [03 · 블루투스 기능](/ko/tutorials/accessories/kvm-switch/03-Bluetooth),- [04 · TTL 시리얼 포트(무선 시리얼)](/ko/tutorials/accessories/kvm-switch/04-TTL-Serial-Port),- [05 · 10핀 확장 헤더](/ko/tutorials/accessories/kvm-switch/05-10-Pin-Expansion-Header),- [06 · 모니터 없는 호스트(캡처 카드 + OBS)](/ko/tutorials/accessories/kvm-switch/06-Headless-Host-Capture-Card-and-OBS),- [07 · FAQ 및 주의사항](/ko/tutorials/accessories/kvm-switch/07-FAQ-and-Precautions)
 - [USB 무드라이버 사운드 카드](/ko/tutorials/accessories/usb-audio-card-tutorial)
 
 ## 사용 방법

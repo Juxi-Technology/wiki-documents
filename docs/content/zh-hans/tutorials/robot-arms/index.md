@@ -112,6 +112,7 @@ description: "钜犀科技机械臂系列教程首页——SO-ARM101、AmazingHa
 - [5 · 录制数据集](./so-arm101/lelab/05-Record-Dataset.md)
 - [6 · 训练与推理](./so-arm101/lelab/06-Train-and-Inference.md)
 - [7 · 常见问题](./so-arm101/lelab/07-Troubleshooting.md)
+,#### MuJoCo 仿真教程,- [SO-ARM101 × MuJoCo 全流程教程（索引）](./so-arm101/mujoco/index.md),- [01 · 环境准备](./so-arm101/mujoco/01-Environment.md),- [02 · 仿真模型验证（MJCF 加载与驱动）](./so-arm101/mujoco/02-Sim-Model-Verification.md),- [03 · 实机连接与标定](./so-arm101/mujoco/03-Hardware-Calibration.md),- [04 · 键盘遥操](./so-arm101/mujoco/04-Keyboard-Teleop.md),- [05 · 主动臂数字孪生（实体臂驱动仿真臂）](./so-arm101/mujoco/05-Leader-Digital-Twin.md),- [06 · 数据录制与回放](./so-arm101/mujoco/06-Record-and-Replay.md),- [07 · 常见问题与经验](./so-arm101/mujoco/07-Troubleshooting.md),- [08 · 后续路线](./so-arm101/mujoco/08-Roadmap.md),- [09 · 完整使用教程（开臂 → 数据集 → 看视频 → 训练 → 部署）](./so-arm101/mujoco/09-Usage-Tutorial.md)
 
 
 ### SO-ARM101机械臂 7轴 教程
@@ -176,6 +177,7 @@ description: "钜犀科技机械臂系列教程首页——SO-ARM101、AmazingHa
 开源仿生灵巧手，提供高精度的多指操作能力。
 
 - [AmazingHand 接口控制](./amazing-hand/AmazingHand-Interface-Control.md)
+- [AmazingHand 网页控制](./amazing-hand/AmazingHand-Web-Control.md)
 - [AmazingHand 官方示例](./amazing-hand/AmazingHand-Official-Example.md)
 - [AmazingHand TTL调试](./amazing-hand/AmazingHand-TTL-Debugging.md)
 

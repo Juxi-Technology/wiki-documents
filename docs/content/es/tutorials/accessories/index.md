@@ -96,6 +96,7 @@ Tutoriales del módulo de voz offline CI1302: inicio rápido, grabación de firm
 - [Tutorial de pantalla OLED 0.91"](./0.91-oled-screen-tutorial.md)
 - [Tutorial de captura HDMI 4K](./4k-hdmi-capture-tutorial.md)
 - [Tutorial del conmutador KVM](./kvm-switch-tutorial.md)
+- [Conmutador KVM · Descripción general del tutorial](./kvm-switch/00-Overview-and-Quick-Start.md),- [01 · Cambio entre dos ordenadores (botón y mando IR)](./kvm-switch/01-Switching-Between-Two-Computers.md),- [02 · Función HUB (uno a tres)](./kvm-switch/02-HUB-Function-One-to-Three.md),- [03 · Bluetooth](./kvm-switch/03-Bluetooth.md),- [04 · Puerto serie TTL (serie inalámbrica)](./kvm-switch/04-TTL-Serial-Port.md),- [05 · Conector de expansión de 10 pines](./kvm-switch/05-10-Pin-Expansion-Header.md),- [06 · Equipo sin monitor (tarjeta capturadora + OBS)](./kvm-switch/06-Headless-Host-Capture-Card-and-OBS.md),- [07 · Preguntas frecuentes y precauciones](./kvm-switch/07-FAQ-and-Precautions.md)
 - [Tutorial de tarjeta de sonido USB](./usb-audio-card-tutorial.md)
 
 ---

@@ -101,6 +101,7 @@ LeRobot이 주로 적용하는 알고리즘은 ACT, Diffusion Policy, SmolVLA, P
 - [5 · 데이터셋 녹화](/ko/tutorials/robot-arms/so-arm101/lelab/05-Record-Dataset)
 - [6 · 학습과 추론](/ko/tutorials/robot-arms/so-arm101/lelab/06-Train-and-Inference)
 - [7 · 문제 해결](/ko/tutorials/robot-arms/so-arm101/lelab/07-Troubleshooting)
+,### MuJoCo 시뮬레이션 튜토리얼,,- [SO-ARM101 × MuJoCo 전체 워크플로 튜토리얼(인덱스)](/ko/tutorials/robot-arms/so-arm101/mujoco/),- [01 · 환경 준비](/ko/tutorials/robot-arms/so-arm101/mujoco/01-Environment),- [02 · 시뮬레이션 모델 검증(MJCF 로드와 구동)](/ko/tutorials/robot-arms/so-arm101/mujoco/02-Sim-Model-Verification),- [03 · 실기 연결과 캘리브레이션](/ko/tutorials/robot-arms/so-arm101/mujoco/03-Hardware-Calibration),- [04 · 키보드 텔레오퍼레이션](/ko/tutorials/robot-arms/so-arm101/mujoco/04-Keyboard-Teleop),- [05 · 리더 암 디지털 트윈(실물 암으로 시뮬레이션 암 구동)](/ko/tutorials/robot-arms/so-arm101/mujoco/05-Leader-Digital-Twin),- [06 · 데이터 녹화와 리플레이](/ko/tutorials/robot-arms/so-arm101/mujoco/06-Record-and-Replay),- [07 · 자주 발생하는 문제와 경험](/ko/tutorials/robot-arms/so-arm101/mujoco/07-Troubleshooting),- [08 · 이후 로드맵](/ko/tutorials/robot-arms/so-arm101/mujoco/08-Roadmap),- [09 · 전체 사용 튜토리얼(암 준비 → 데이터셋 → 영상 확인 → 학습 → 배포)](/ko/tutorials/robot-arms/so-arm101/mujoco/09-Usage-Tutorial)
 
 ### XLeRobot Docker 이미지 튜토리얼
 

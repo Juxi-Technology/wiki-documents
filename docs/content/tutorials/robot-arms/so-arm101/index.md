@@ -101,6 +101,7 @@ The imitation learning in this tutorial is exclusively VLA.
 - [5 · Record a dataset](/tutorials/robot-arms/so-arm101/lelab/05-Record-Dataset)
 - [6 · Train and run inference](/tutorials/robot-arms/so-arm101/lelab/06-Train-and-Inference)
 - [7 · Troubleshooting](/tutorials/robot-arms/so-arm101/lelab/07-Troubleshooting)
+,### MuJoCo Simulation Tutorial,,- [SO-ARM101 × MuJoCo Full Workflow Tutorial (Index)](/tutorials/robot-arms/so-arm101/mujoco/),- [01 · Environment Setup](/tutorials/robot-arms/so-arm101/mujoco/01-Environment),- [02 · Simulation Model Verification (MJCF Loading and Driving)](/tutorials/robot-arms/so-arm101/mujoco/02-Sim-Model-Verification),- [03 · Real-Robot Connection and Calibration](/tutorials/robot-arms/so-arm101/mujoco/03-Hardware-Calibration),- [04 · Keyboard Teleoperation](/tutorials/robot-arms/so-arm101/mujoco/04-Keyboard-Teleop),- [05 · Leader-Arm Digital Twin (Physical Arm Driving the Simulated Arm)](/tutorials/robot-arms/so-arm101/mujoco/05-Leader-Digital-Twin),- [06 · Data Recording and Replay](/tutorials/robot-arms/so-arm101/mujoco/06-Record-and-Replay),- [07 · Troubleshooting and Lessons Learned](/tutorials/robot-arms/so-arm101/mujoco/07-Troubleshooting),- [08 · Roadmap](/tutorials/robot-arms/so-arm101/mujoco/08-Roadmap),- [09 · Complete Usage Tutorial (Arm Bring-Up → Dataset → Watching Videos → Training → Deployment)](/tutorials/robot-arms/so-arm101/mujoco/09-Usage-Tutorial)
 
 ### XLeRobot Docker Image Tutorial
 

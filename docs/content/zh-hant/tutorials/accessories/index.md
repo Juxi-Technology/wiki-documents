@@ -94,6 +94,7 @@ CI1302 離線語音交互模組全平台教程:快速上手、固件燒錄、喚
 - [0.91 OLED 螢幕教程](./0.91-oled-screen-tutorial.md)
 - [4K HDMI 擷取卡教程](./4k-hdmi-capture-tutorial.md)
 - [KVM 切換器教程](./kvm-switch-tutorial.md)
+- [KVM 切換器 · 使用教程總覽](./kvm-switch/00-Overview-and-Quick-Start.md),- [01 · 雙機切換（按鍵與紅外）](./kvm-switch/01-Switching-Between-Two-Computers.md),- [02 · HUB 功能（一分三）](./kvm-switch/02-HUB-Function-One-to-Three.md),- [03 · 藍牙功能](./kvm-switch/03-Bluetooth.md),- [04 · TTL 序列埠（無線序列埠）](./kvm-switch/04-TTL-Serial-Port.md),- [05 · 十針擴充埠](./kvm-switch/05-10-Pin-Expansion-Header.md),- [06 · 無顯示器主機（擷取卡 + OBS）](./kvm-switch/06-Headless-Host-Capture-Card-and-OBS.md),- [07 · 常見問題與注意事項](./kvm-switch/07-FAQ-and-Precautions.md)
 - [USB 聲卡教程](./usb-audio-card-tutorial.md)
 
 ---

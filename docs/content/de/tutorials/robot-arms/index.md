@@ -112,6 +112,7 @@ Willkommen zur Tutorial-Serie Roboterarme! Hier finden Sie vollständige Anleitu
 - [5 · Ein Dataset aufzeichnen](./so-arm101/lelab/05-Record-Dataset.md)
 - [6 · Trainieren und Inferenz ausführen](./so-arm101/lelab/06-Train-and-Inference.md)
 - [7 · Fehlerbehebung](./so-arm101/lelab/07-Troubleshooting.md)
+,#### MuJoCo-Simulations-Tutorial,- [SO-ARM101 × MuJoCo – Tutorial für den kompletten Workflow (Index)](./so-arm101/mujoco/index.md),- [01 · Umgebung einrichten](./so-arm101/mujoco/01-Environment.md),- [02 · Validierung des Simulationsmodells (MJCF laden und ansteuern)](./so-arm101/mujoco/02-Sim-Model-Verification.md),- [03 · Verbindung zum realen Roboter und Kalibrierung](./so-arm101/mujoco/03-Hardware-Calibration.md),- [04 · Tastatur-Teleoperation](./so-arm101/mujoco/04-Keyboard-Teleop.md),- [05 · Digitaler Zwilling des Leader-Arms (physischer Arm steuert simulierten Arm)](./so-arm101/mujoco/05-Leader-Digital-Twin.md),- [06 · Datenaufzeichnung und -wiedergabe](./so-arm101/mujoco/06-Record-and-Replay.md),- [07 · Häufige Probleme und Erfahrungen](./so-arm101/mujoco/07-Troubleshooting.md),- [08 · Weiterer Fahrplan](./so-arm101/mujoco/08-Roadmap.md),- [09 · Vollständiges Nutzungstutorial (Arm starten → Dataset → Videos ansehen → Training → Deployment)](./so-arm101/mujoco/09-Usage-Tutorial.md)
 
 
 ### SO-ARM101 Roboterarm 7-Achsen Tutorial
@@ -176,6 +177,7 @@ Willkommen zur Tutorial-Serie Roboterarme! Hier finden Sie vollständige Anleitu
 Open-Source-Greifhand mit hochpräziser Mehrfinger-Manipulation.
 
 - [AmazingHand-Schnittstellensteuerung](./amazing-hand/AmazingHand-Interface-Control.md)
+- [AmazingHand Web Control](./amazing-hand/AmazingHand-Web-Control.md)
 - [AmazingHand Offizielles Beispiel](./amazing-hand/AmazingHand-Official-Example.md)
 - [AmazingHand-TTL-Debugging](./amazing-hand/AmazingHand-TTL-Debugging.md)
 

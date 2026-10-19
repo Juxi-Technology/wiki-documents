@@ -101,6 +101,7 @@ LeRobot最主要適配的演算法就是模仿學習。比如ACT、Diffusion Pol
 - [5 · 錄製資料集](/zh-hant/tutorials/robot-arms/so-arm101/lelab/05-Record-Dataset)
 - [6 · 訓練與推論](/zh-hant/tutorials/robot-arms/so-arm101/lelab/06-Train-and-Inference)
 - [7 · 疑難排解](/zh-hant/tutorials/robot-arms/so-arm101/lelab/07-Troubleshooting)
+,### MuJoCo 仿真教程,,- [SO-ARM101 × MuJoCo 全流程教學（索引）](/zh-hant/tutorials/robot-arms/so-arm101/mujoco/),- [01 · 環境準備](/zh-hant/tutorials/robot-arms/so-arm101/mujoco/01-Environment),- [02 · 模擬模型驗證（MJCF 載入與驅動）](/zh-hant/tutorials/robot-arms/so-arm101/mujoco/02-Sim-Model-Verification),- [03 · 實機連線與校正](/zh-hant/tutorials/robot-arms/so-arm101/mujoco/03-Hardware-Calibration),- [04 · 鍵盤遙控操作](/zh-hant/tutorials/robot-arms/so-arm101/mujoco/04-Keyboard-Teleop),- [05 · 主動臂數位孿生（實體手臂驅動模擬手臂）](/zh-hant/tutorials/robot-arms/so-arm101/mujoco/05-Leader-Digital-Twin),- [06 · 資料錄製與回放](/zh-hant/tutorials/robot-arms/so-arm101/mujoco/06-Record-and-Replay),- [07 · 常見問題與經驗](/zh-hant/tutorials/robot-arms/so-arm101/mujoco/07-Troubleshooting),- [08 · 後續路線](/zh-hant/tutorials/robot-arms/so-arm101/mujoco/08-Roadmap),- [09 · 完整使用教學（開臂 → 資料集 → 看影片 → 訓練 → 部署）](/zh-hant/tutorials/robot-arms/so-arm101/mujoco/09-Usage-Tutorial)
 
 ### XLeRobot Docker 映像教程
 

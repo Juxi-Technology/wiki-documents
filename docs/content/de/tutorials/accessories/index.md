@@ -96,6 +96,7 @@ CI1302-Offline-Sprachmodul-Tutorials: Schnellstart, Firmware-Flashen, Wake-Word-
 - [0.91-OLED-Screen-Tutorial](./0.91-oled-screen-tutorial.md)
 - [4K-HDMI-Capture-Tutorial](./4k-hdmi-capture-tutorial.md)
 - [KVM-Switch-Tutorial](./kvm-switch-tutorial.md)
+- [KVM-Switch · Tutorial-Übersicht](./kvm-switch/00-Overview-and-Quick-Start.md),- [01 · Umschalten zwischen zwei Computern (Taste & IR-Fernbedienung)](./kvm-switch/01-Switching-Between-Two-Computers.md),- [02 · HUB-Funktion (eins zu drei)](./kvm-switch/02-HUB-Function-One-to-Three.md),- [03 · Bluetooth](./kvm-switch/03-Bluetooth.md),- [04 · TTL-Serieller Anschluss (drahtlose serielle Verbindung)](./kvm-switch/04-TTL-Serial-Port.md),- [05 · 10-Pin-Erweiterungsheader](./kvm-switch/05-10-Pin-Expansion-Header.md),- [06 · Host ohne Monitor (Capture-Card + OBS)](./kvm-switch/06-Headless-Host-Capture-Card-and-OBS.md),- [07 · FAQ und Hinweise](./kvm-switch/07-FAQ-and-Precautions.md)
 - [USB-Soundkarten-Tutorial](./usb-audio-card-tutorial.md)
 
 ---

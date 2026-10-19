@@ -223,6 +223,7 @@ head:
         - [5 · 录制数据集](/zh-hans/tutorials/robot-arms/so-arm101/lelab/05-Record-Dataset)
         - [6 · 训练与推理](/zh-hans/tutorials/robot-arms/so-arm101/lelab/06-Train-and-Inference)
         - [7 · 常见问题](/zh-hans/tutorials/robot-arms/so-arm101/lelab/07-Troubleshooting)
+      - **MuJoCo 仿真教程**,        - [SO-ARM101 × MuJoCo 全流程教程（索引）](/zh-hans/tutorials/robot-arms/so-arm101/mujoco/),        - [01 · 环境准备](/zh-hans/tutorials/robot-arms/so-arm101/mujoco/01-Environment),        - [02 · 仿真模型验证（MJCF 加载与驱动）](/zh-hans/tutorials/robot-arms/so-arm101/mujoco/02-Sim-Model-Verification),        - [03 · 实机连接与标定](/zh-hans/tutorials/robot-arms/so-arm101/mujoco/03-Hardware-Calibration),        - [04 · 键盘遥操](/zh-hans/tutorials/robot-arms/so-arm101/mujoco/04-Keyboard-Teleop),        - [05 · 主动臂数字孪生（实体臂驱动仿真臂）](/zh-hans/tutorials/robot-arms/so-arm101/mujoco/05-Leader-Digital-Twin),        - [06 · 数据录制与回放](/zh-hans/tutorials/robot-arms/so-arm101/mujoco/06-Record-and-Replay),        - [07 · 常见问题与经验](/zh-hans/tutorials/robot-arms/so-arm101/mujoco/07-Troubleshooting),        - [08 · 后续路线](/zh-hans/tutorials/robot-arms/so-arm101/mujoco/08-Roadmap),        - [09 · 完整使用教程（开臂 → 数据集 → 看视频 → 训练 → 部署）](/zh-hans/tutorials/robot-arms/so-arm101/mujoco/09-Usage-Tutorial)
   - **SO-ARM101 + AmazingHand 教程**
     - [课程总览](/zh-hans/tutorials/robot-arms/so-arm-amazinghand/)
       - **Linux**
@@ -249,6 +250,7 @@ head:
     - [散件组装教程](/zh-hans/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit)
   - **AmazingHand**
     - [界面控制教程](/zh-hans/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control)
+    - [AmazingHand 网页控制](/zh-hans/tutorials/robot-arms/amazing-hand/AmazingHand-Web-Control)
     - [AmazingHand灵巧手产品资料](/zh-hans/tutorials/robot-arms/amazing-hand/product-info)
     - [官方示例运行教程](/zh-hans/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example)
     - [TTL 调试教程](/zh-hans/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging)
@@ -331,6 +333,7 @@ head:
     - [0.91 寸 OLED 屏幕](/zh-hans/tutorials/accessories/0.91-oled-screen-tutorial)
     - [4K HDMI 采集器](/zh-hans/tutorials/accessories/4k-hdmi-capture-tutorial)
     - [KVM 切换器](/zh-hans/tutorials/accessories/kvm-switch-tutorial)
+    - [KVM 切换器 · 使用教程总览](/zh-hans/tutorials/accessories/kvm-switch/00-Overview-and-Quick-Start),    - [01 · 双机切换（按键与红外）](/zh-hans/tutorials/accessories/kvm-switch/01-Switching-Between-Two-Computers),    - [02 · HUB 功能（一分三）](/zh-hans/tutorials/accessories/kvm-switch/02-HUB-Function-One-to-Three),    - [03 · 蓝牙功能](/zh-hans/tutorials/accessories/kvm-switch/03-Bluetooth),    - [04 · TTL 串口（无线串口）](/zh-hans/tutorials/accessories/kvm-switch/04-TTL-Serial-Port),    - [05 · 十针扩展口](/zh-hans/tutorials/accessories/kvm-switch/05-10-Pin-Expansion-Header),    - [06 · 无显示器主机（采集卡 + OBS）](/zh-hans/tutorials/accessories/kvm-switch/06-Headless-Host-Capture-Card-and-OBS),    - [07 · 常见问题与注意事项](/zh-hans/tutorials/accessories/kvm-switch/07-FAQ-and-Precautions)
     - [USB 免驱声卡](/zh-hans/tutorials/accessories/usb-audio-card-tutorial)
 
 ### 传感器

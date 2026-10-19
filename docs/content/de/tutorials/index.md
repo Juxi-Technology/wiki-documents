@@ -219,6 +219,7 @@ Willkommen auf der Tutorials-Seite! Hier finden Sie alle Tutorials zur Produktnu
         - [5 · Ein Dataset aufzeichnen](/de/tutorials/robot-arms/so-arm101/lelab/05-Record-Dataset)
         - [6 · Trainieren und Inferenz ausführen](/de/tutorials/robot-arms/so-arm101/lelab/06-Train-and-Inference)
         - [7 · Fehlerbehebung](/de/tutorials/robot-arms/so-arm101/lelab/07-Troubleshooting)
+      - **MuJoCo-Simulations-Tutorial**,        - [SO-ARM101 × MuJoCo – Tutorial für den kompletten Workflow (Index)](/de/tutorials/robot-arms/so-arm101/mujoco/),        - [01 · Umgebung einrichten](/de/tutorials/robot-arms/so-arm101/mujoco/01-Environment),        - [02 · Validierung des Simulationsmodells (MJCF laden und ansteuern)](/de/tutorials/robot-arms/so-arm101/mujoco/02-Sim-Model-Verification),        - [03 · Verbindung zum realen Roboter und Kalibrierung](/de/tutorials/robot-arms/so-arm101/mujoco/03-Hardware-Calibration),        - [04 · Tastatur-Teleoperation](/de/tutorials/robot-arms/so-arm101/mujoco/04-Keyboard-Teleop),        - [05 · Digitaler Zwilling des Leader-Arms (physischer Arm steuert simulierten Arm)](/de/tutorials/robot-arms/so-arm101/mujoco/05-Leader-Digital-Twin),        - [06 · Datenaufzeichnung und -wiedergabe](/de/tutorials/robot-arms/so-arm101/mujoco/06-Record-and-Replay),        - [07 · Häufige Probleme und Erfahrungen](/de/tutorials/robot-arms/so-arm101/mujoco/07-Troubleshooting),        - [08 · Weiterer Fahrplan](/de/tutorials/robot-arms/so-arm101/mujoco/08-Roadmap),        - [09 · Vollständiges Nutzungstutorial (Arm starten → Dataset → Videos ansehen → Training → Deployment)](/de/tutorials/robot-arms/so-arm101/mujoco/09-Usage-Tutorial)
   - **SO-ARM101 + AmazingHand Kurs**
     - [Kursübersicht](/de/tutorials/robot-arms/so-arm-amazinghand/)
       - **Linux**
@@ -245,6 +246,7 @@ Willkommen auf der Tutorials-Seite! Hier finden Sie alle Tutorials zur Produktnu
     - [Montage (Einzelteile)](/de/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit)
   - **AmazingHand**
     - [Roboterhand Interface-Steuerung](/de/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control)
+    - [AmazingHand Web Control](/de/tutorials/robot-arms/amazing-hand/AmazingHand-Web-Control)
     - [AmazingHand Fingerhand Produktinformationen](/de/tutorials/robot-arms/amazing-hand/product-info)
     - [Tutorial zum offiziellen Beispiel der Roboterhand](/de/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example)
     - [Dexterous Hand (TTL-Servo) Debug-Tutorial](/de/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging)
@@ -369,6 +371,7 @@ Willkommen auf der Tutorials-Seite! Hier finden Sie alle Tutorials zur Produktnu
 - [0,91-Zoll-OLED-Display](/de/tutorials/accessories/0.91-oled-screen-tutorial)
 - [4K-HDMI-Capture-Karte](/de/tutorials/accessories/4k-hdmi-capture-tutorial)
 - [KVM-Switch](/de/tutorials/accessories/kvm-switch-tutorial)
+- [KVM-Switch · Tutorial-Übersicht](/de/tutorials/accessories/kvm-switch/00-Overview-and-Quick-Start),- [01 · Umschalten zwischen zwei Computern (Taste & IR-Fernbedienung)](/de/tutorials/accessories/kvm-switch/01-Switching-Between-Two-Computers),- [02 · HUB-Funktion (eins zu drei)](/de/tutorials/accessories/kvm-switch/02-HUB-Function-One-to-Three),- [03 · Bluetooth](/de/tutorials/accessories/kvm-switch/03-Bluetooth),- [04 · TTL-Serieller Anschluss (drahtlose serielle Verbindung)](/de/tutorials/accessories/kvm-switch/04-TTL-Serial-Port),- [05 · 10-Pin-Erweiterungsheader](/de/tutorials/accessories/kvm-switch/05-10-Pin-Expansion-Header),- [06 · Host ohne Monitor (Capture-Card + OBS)](/de/tutorials/accessories/kvm-switch/06-Headless-Host-Capture-Card-and-OBS),- [07 · FAQ und Hinweise](/de/tutorials/accessories/kvm-switch/07-FAQ-and-Precautions)
 - [USB-Soundkarte ohne Treiber](/de/tutorials/accessories/usb-audio-card-tutorial)
 
 ## So verwenden Sie die Seite

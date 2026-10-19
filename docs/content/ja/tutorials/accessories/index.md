@@ -96,6 +96,7 @@ CI1302 オフライン音声対話モジュールの全プラットフォーム 
 - [0.91 OLEDスクリーンチュートリアル](./0.91-oled-screen-tutorial.md)
 - [4K HDMIキャプチャチュートリアル](./4k-hdmi-capture-tutorial.md)
 - [KVMスイッチャーチュートリアル](./kvm-switch-tutorial.md)
+- [KVM スイッチ · チュートリアル概要](./kvm-switch/00-Overview-and-Quick-Start.md),- [01 · 2台のPC切替（ボタンと赤外線リモコン）](./kvm-switch/01-Switching-Between-Two-Computers.md),- [02 · HUB機能（1分3）](./kvm-switch/02-HUB-Function-One-to-Three.md),- [03 · Bluetooth機能](./kvm-switch/03-Bluetooth.md),- [04 · TTLシリアルポート（ワイヤレスシリアル）](./kvm-switch/04-TTL-Serial-Port.md),- [05 · 10ピン拡張ヘッダー](./kvm-switch/05-10-Pin-Expansion-Header.md),- [06 · ディスプレイなしホスト（キャプチャーカード + OBS）](./kvm-switch/06-Headless-Host-Capture-Card-and-OBS.md),- [07 · よくある質問と注意事項](./kvm-switch/07-FAQ-and-Precautions.md)
 - [USBサウンドカードチュートリアル](./usb-audio-card-tutorial.md)
 
 ---

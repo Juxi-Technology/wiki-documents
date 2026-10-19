@@ -111,6 +111,7 @@ Braccio robotico da scrivania open source a 6 assi, compatibile con framework IA
 - [5 · Registrare un dataset](./so-arm101/lelab/05-Record-Dataset.md)
 - [6 · Addestrare ed eseguire l'inferenza](./so-arm101/lelab/06-Train-and-Inference.md)
 - [7 · Risoluzione dei problemi](./so-arm101/lelab/07-Troubleshooting.md)
+,#### Tutorial di simulazione MuJoCo,- [SO-ARM101 × MuJoCo — Tutorial completo del flusso di lavoro (indice)](./so-arm101/mujoco/index.md),- [01 · Preparazione dell'ambiente](./so-arm101/mujoco/01-Environment.md),- [02 · Verifica del modello di simulazione (caricamento e azionamento MJCF)](./so-arm101/mujoco/02-Sim-Model-Verification.md),- [03 · Connessione al robot reale e calibrazione](./so-arm101/mujoco/03-Hardware-Calibration.md),- [04 · Teleoperazione da tastiera](./so-arm101/mujoco/04-Keyboard-Teleop.md),- [05 · Digital twin del braccio leader (braccio fisico che guida il braccio simulato)](./so-arm101/mujoco/05-Leader-Digital-Twin.md),- [06 · Registrazione e riproduzione dei dati](./so-arm101/mujoco/06-Record-and-Replay.md),- [07 · Problemi comuni ed esperienze](./so-arm101/mujoco/07-Troubleshooting.md),- [08 · Roadmap](./so-arm101/mujoco/08-Roadmap.md),- [09 · Tutorial d'uso completo (avvio del braccio → dataset → visione dei video → addestramento → deployment)](./so-arm101/mujoco/09-Usage-Tutorial.md)
 
 - [Supporto da braccio e kit camera ambientale SO-ARM100&101 – Tutorial di installazione](./so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation.md)
 
@@ -177,6 +178,7 @@ Braccio robotico da scrivania open source a 6 assi, compatibile con framework IA
 Mano dexterous open source con manipolazione multi-dito ad alta precisione.
 
 - [Controllo interfaccia AmazingHand](./amazing-hand/AmazingHand-Interface-Control.md)
+- [AmazingHand Web Control](./amazing-hand/AmazingHand-Web-Control.md)
 - [Esempio ufficiale AmazingHand](./amazing-hand/AmazingHand-Official-Example.md)
 - [Debug TTL AmazingHand](./amazing-hand/AmazingHand-TTL-Debugging.md)
 

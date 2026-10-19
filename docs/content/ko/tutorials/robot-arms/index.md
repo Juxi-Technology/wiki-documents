@@ -112,6 +112,7 @@ description: "Juxi Technology 로봇 팔 시리즈 튜토리얼 홈——SO-ARM1
 - [5 · 데이터셋 녹화](./so-arm101/lelab/05-Record-Dataset.md)
 - [6 · 학습과 추론](./so-arm101/lelab/06-Train-and-Inference.md)
 - [7 · 문제 해결](./so-arm101/lelab/07-Troubleshooting.md)
+,#### MuJoCo 시뮬레이션 튜토리얼,- [SO-ARM101 × MuJoCo 전체 워크플로 튜토리얼(인덱스)](./so-arm101/mujoco/index.md),- [01 · 환경 준비](./so-arm101/mujoco/01-Environment.md),- [02 · 시뮬레이션 모델 검증(MJCF 로드와 구동)](./so-arm101/mujoco/02-Sim-Model-Verification.md),- [03 · 실기 연결과 캘리브레이션](./so-arm101/mujoco/03-Hardware-Calibration.md),- [04 · 키보드 텔레오퍼레이션](./so-arm101/mujoco/04-Keyboard-Teleop.md),- [05 · 리더 암 디지털 트윈(실물 암으로 시뮬레이션 암 구동)](./so-arm101/mujoco/05-Leader-Digital-Twin.md),- [06 · 데이터 녹화와 리플레이](./so-arm101/mujoco/06-Record-and-Replay.md),- [07 · 자주 발생하는 문제와 경험](./so-arm101/mujoco/07-Troubleshooting.md),- [08 · 이후 로드맵](./so-arm101/mujoco/08-Roadmap.md),- [09 · 전체 사용 튜토리얼(암 준비 → 데이터셋 → 영상 확인 → 학습 → 배포)](./so-arm101/mujoco/09-Usage-Tutorial.md)
 
 
 ### SO-ARM101 로봇 암 7축 튜토리얼
@@ -176,6 +177,7 @@ description: "Juxi Technology 로봇 팔 시리즈 튜토리얼 홈——SO-ARM1
 오픈소스 바이오닉 정교 손. 고정밀 다중 손가락 조작 제공.
 
 - [AmazingHand 인터페이스 제어](./amazing-hand/AmazingHand-Interface-Control.md)
+- [AmazingHand 웹 제어](./amazing-hand/AmazingHand-Web-Control.md)
 - [AmazingHand 공식 예제](./amazing-hand/AmazingHand-Official-Example.md)
 - [AmazingHand TTL 디버깅](./amazing-hand/AmazingHand-TTL-Debugging.md)
 

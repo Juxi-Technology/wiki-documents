@@ -223,6 +223,7 @@ Bem-vindo à página de Tutoriais! Aqui você encontra todos os tutoriais de uso
         - [5 · Gravar um conjunto de dados](/pt-pt/tutorials/robot-arms/so-arm101/lelab/05-Record-Dataset)
         - [6 · Treinar e executar inferência](/pt-pt/tutorials/robot-arms/so-arm101/lelab/06-Train-and-Inference)
         - [7 · Resolução de problemas](/pt-pt/tutorials/robot-arms/so-arm101/lelab/07-Troubleshooting)
+      - **Tutorial de simulação MuJoCo**,        - [SO-ARM101 × MuJoCo — Tutorial do fluxo completo (índice)](/pt-pt/tutorials/robot-arms/so-arm101/mujoco/),        - [01 · Preparação do ambiente](/pt-pt/tutorials/robot-arms/so-arm101/mujoco/01-Environment),        - [02 · Verificação do modelo de simulação (carregamento e acionamento MJCF)](/pt-pt/tutorials/robot-arms/so-arm101/mujoco/02-Sim-Model-Verification),        - [03 · Ligação ao robô real e calibração](/pt-pt/tutorials/robot-arms/so-arm101/mujoco/03-Hardware-Calibration),        - [04 · Teleoperação por teclado](/pt-pt/tutorials/robot-arms/so-arm101/mujoco/04-Keyboard-Teleop),        - [05 · Gémeo digital do braço líder (braço físico a comandar o braço simulado)](/pt-pt/tutorials/robot-arms/so-arm101/mujoco/05-Leader-Digital-Twin),        - [06 · Gravação e reprodução de dados](/pt-pt/tutorials/robot-arms/so-arm101/mujoco/06-Record-and-Replay),        - [07 · Problemas comuns e lições aprendidas](/pt-pt/tutorials/robot-arms/so-arm101/mujoco/07-Troubleshooting),        - [08 · Próximos passos](/pt-pt/tutorials/robot-arms/so-arm101/mujoco/08-Roadmap),        - [09 · Tutorial de utilização completo (braço → conjunto de dados → ver vídeos → treino → implementação)](/pt-pt/tutorials/robot-arms/so-arm101/mujoco/09-Usage-Tutorial)
   - **Curso SO-ARM101 + AmazingHand**
     - [Visão geral do curso](/pt-pt/tutorials/robot-arms/so-arm-amazinghand/)
       - **Linux**
@@ -249,6 +250,7 @@ Bem-vindo à página de Tutoriais! Aqui você encontra todos os tutoriais de uso
     - [Montagem do kit em peças](/pt-pt/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit)
   - **AmazingHand**
     - [Controle de Interface da Mão Robótica](/pt-pt/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control)
+    - [Controlo Web do AmazingHand](/pt-pt/tutorials/robot-arms/amazing-hand/AmazingHand-Web-Control)
     - [AmazingHand Mão hábil — Informações do produto](/pt-pt/tutorials/robot-arms/amazing-hand/product-info)
     - [Tutorial do Exemplo Oficial da Mão Robótica](/pt-pt/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example)
     - [Tutorial de Depuração da Mão Hábil (servo TTL)](/pt-pt/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging)
@@ -331,6 +333,7 @@ Bem-vindo à página de Tutoriais! Aqui você encontra todos os tutoriais de uso
     - [Ecrã OLED de 0,91"](/pt-pt/tutorials/accessories/0.91-oled-screen-tutorial)
     - [Captura HDMI 4K](/pt-pt/tutorials/accessories/4k-hdmi-capture-tutorial)
     - [Chaveador KVM](/pt-pt/tutorials/accessories/kvm-switch-tutorial)
+    - [Comutador KVM · Visão geral do tutorial](/pt-pt/tutorials/accessories/kvm-switch/00-Overview-and-Quick-Start),    - [01 · Comutação entre dois computadores (botão e comando IR)](/pt-pt/tutorials/accessories/kvm-switch/01-Switching-Between-Two-Computers),    - [02 · Função HUB (um para três)](/pt-pt/tutorials/accessories/kvm-switch/02-HUB-Function-One-to-Three),    - [03 · Bluetooth](/pt-pt/tutorials/accessories/kvm-switch/03-Bluetooth),    - [04 · Porta série TTL (série sem fios)](/pt-pt/tutorials/accessories/kvm-switch/04-TTL-Serial-Port),    - [05 · Conector de expansão de 10 pinos](/pt-pt/tutorials/accessories/kvm-switch/05-10-Pin-Expansion-Header),    - [06 · Host sem monitor (placa de captura + OBS)](/pt-pt/tutorials/accessories/kvm-switch/06-Headless-Host-Capture-Card-and-OBS),    - [07 · Perguntas frequentes e avisos](/pt-pt/tutorials/accessories/kvm-switch/07-FAQ-and-Precautions)
     - [Placa de Som USB sem Driver](/pt-pt/tutorials/accessories/usb-audio-card-tutorial)
 
 ### Sensores

@@ -112,6 +112,7 @@ Brazo robótico de escritorio open source de 6 ejes, compatible con frameworks d
 - [5 · Grabar un dataset](./so-arm101/lelab/05-Record-Dataset.md)
 - [6 · Entrenar y ejecutar la inferencia](./so-arm101/lelab/06-Train-and-Inference.md)
 - [7 · Solución de problemas](./so-arm101/lelab/07-Troubleshooting.md)
+,#### Tutorial de simulación MuJoCo,- [SO-ARM101 × MuJoCo tutorial completo (índice)](./so-arm101/mujoco/index.md),- [01 · Preparación del entorno](./so-arm101/mujoco/01-Environment.md),- [02 · Verificación del modelo de simulación (carga y accionamiento de MJCF)](./so-arm101/mujoco/02-Sim-Model-Verification.md),- [03 · Conexión del robot real y calibración](./so-arm101/mujoco/03-Hardware-Calibration.md),- [04 · Teleoperación por teclado](./so-arm101/mujoco/04-Keyboard-Teleop.md),- [05 · Gemelo digital del brazo líder (el brazo físico acciona el brazo simulado)](./so-arm101/mujoco/05-Leader-Digital-Twin.md),- [06 · Grabación y reproducción de datos](./so-arm101/mujoco/06-Record-and-Replay.md),- [07 · Preguntas frecuentes y experiencias](./so-arm101/mujoco/07-Troubleshooting.md),- [08 · Hoja de ruta](./so-arm101/mujoco/08-Roadmap.md),- [09 · Tutorial de uso completo (arrancar el brazo → dataset → ver vídeos → entrenar → desplegar)](./so-arm101/mujoco/09-Usage-Tutorial.md)
 
 
 ### Tutorial del brazo robótico SO-ARM101 de 7 ejes
@@ -176,6 +177,7 @@ Brazo robótico de escritorio open source de 6 ejes, compatible con frameworks d
 Mano diestra open source con manipulación multi-dedo de alta precisión.
 
 - [Control de interfaz AmazingHand](./amazing-hand/AmazingHand-Interface-Control.md)
+- [Control web de AmazingHand](./amazing-hand/AmazingHand-Web-Control.md)
 - [Ejemplo oficial AmazingHand](./amazing-hand/AmazingHand-Official-Example.md)
 - [Depuración TTL AmazingHand](./amazing-hand/AmazingHand-TTL-Debugging.md)
 

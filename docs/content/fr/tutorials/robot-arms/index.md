@@ -111,6 +111,7 @@ Bras robotique de bureau open source 6 axes, compatible avec les frameworks IA c
 - [5 · Enregistrer un jeu de données](./so-arm101/lelab/05-Record-Dataset.md)
 - [6 · Entraîner et exécuter l'inférence](./so-arm101/lelab/06-Train-and-Inference.md)
 - [7 · Dépannage](./so-arm101/lelab/07-Troubleshooting.md)
+,#### Tutoriel de simulation MuJoCo,- [SO-ARM101 × MuJoCo — Tutoriel du parcours complet (index)](./so-arm101/mujoco/index.md),- [01 · Préparation de l'environnement](./so-arm101/mujoco/01-Environment.md),- [02 · Vérification du modèle de simulation (chargement et pilotage MJCF)](./so-arm101/mujoco/02-Sim-Model-Verification.md),- [03 · Connexion au robot réel et calibration](./so-arm101/mujoco/03-Hardware-Calibration.md),- [04 · Téléopération au clavier](./so-arm101/mujoco/04-Keyboard-Teleop.md),- [05 · Jumeau numérique du bras meneur (le bras physique pilote le bras simulé)](./so-arm101/mujoco/05-Leader-Digital-Twin.md),- [06 · Enregistrement et relecture de données](./so-arm101/mujoco/06-Record-and-Replay.md),- [07 · Problèmes fréquents et retours d'expérience](./so-arm101/mujoco/07-Troubleshooting.md),- [08 · Feuille de route](./so-arm101/mujoco/08-Roadmap.md),- [09 · Tutoriel d'utilisation complet (démarrage du bras → jeu de données → visionnage des vidéos → entraînement → déploiement)](./so-arm101/mujoco/09-Usage-Tutorial.md)
 
 - [Support de bras et kit caméra d'environnement SO-ARM100&101 – Tutoriel d'installation](./so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation.md)
 
@@ -177,6 +178,7 @@ Bras robotique de bureau open source 6 axes, compatible avec les frameworks IA c
 Main dexterous open source offrant une manipulation multi-doigts de haute précision.
 
 - [Contrôle d'interface AmazingHand](./amazing-hand/AmazingHand-Interface-Control.md)
+- [Contrôle web AmazingHand](./amazing-hand/AmazingHand-Web-Control.md)
 - [Exemple officiel AmazingHand](./amazing-hand/AmazingHand-Official-Example.md)
 - [Débogage TTL AmazingHand](./amazing-hand/AmazingHand-TTL-Debugging.md)
 

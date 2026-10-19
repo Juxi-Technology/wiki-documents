@@ -96,6 +96,7 @@ Tutoriels du module vocal hors ligne CI1302 : démarrage rapide, flashage, modif
 - [Tutoriel écran OLED 0.91"](./0.91-oled-screen-tutorial.md)
 - [Tutoriel capture HDMI 4K](./4k-hdmi-capture-tutorial.md)
 - [Tutoriel du switch KVM](./kvm-switch-tutorial.md)
+- [Commutateur KVM · Présentation du tutoriel](./kvm-switch/00-Overview-and-Quick-Start.md),- [01 · Commutation entre deux ordinateurs (bouton et télécommande IR)](./kvm-switch/01-Switching-Between-Two-Computers.md),- [02 · Fonction HUB (un vers trois)](./kvm-switch/02-HUB-Function-One-to-Three.md),- [03 · Bluetooth](./kvm-switch/03-Bluetooth.md),- [04 · Port série TTL (série sans fil)](./kvm-switch/04-TTL-Serial-Port.md),- [05 · Connecteur d'extension 10 broches](./kvm-switch/05-10-Pin-Expansion-Header.md),- [06 · Machine sans écran (carte de capture + OBS)](./kvm-switch/06-Headless-Host-Capture-Card-and-OBS.md),- [07 · FAQ et précautions](./kvm-switch/07-FAQ-and-Precautions.md)
 - [Tutoriel carte son USB](./usb-audio-card-tutorial.md)
 
 ---

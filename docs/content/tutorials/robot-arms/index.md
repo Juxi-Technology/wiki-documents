@@ -112,6 +112,7 @@ Welcome to the robot arm series tutorials! Here you'll find complete guides for 
 - [5 · Record a dataset](./so-arm101/lelab/05-Record-Dataset.md)
 - [6 · Train and run inference](./so-arm101/lelab/06-Train-and-Inference.md)
 - [7 · Troubleshooting](./so-arm101/lelab/07-Troubleshooting.md)
+,#### MuJoCo Simulation Tutorial,- [SO-ARM101 × MuJoCo Full Workflow Tutorial (Index)](./so-arm101/mujoco/index.md),- [01 · Environment Setup](./so-arm101/mujoco/01-Environment.md),- [02 · Simulation Model Verification (MJCF Loading and Driving)](./so-arm101/mujoco/02-Sim-Model-Verification.md),- [03 · Real-Robot Connection and Calibration](./so-arm101/mujoco/03-Hardware-Calibration.md),- [04 · Keyboard Teleoperation](./so-arm101/mujoco/04-Keyboard-Teleop.md),- [05 · Leader-Arm Digital Twin (Physical Arm Driving the Simulated Arm)](./so-arm101/mujoco/05-Leader-Digital-Twin.md),- [06 · Data Recording and Replay](./so-arm101/mujoco/06-Record-and-Replay.md),- [07 · Troubleshooting and Lessons Learned](./so-arm101/mujoco/07-Troubleshooting.md),- [08 · Roadmap](./so-arm101/mujoco/08-Roadmap.md),- [09 · Complete Usage Tutorial (Arm Bring-Up → Dataset → Watching Videos → Training → Deployment)](./so-arm101/mujoco/09-Usage-Tutorial.md)
 
 
 ### SO-ARM101 Robotic Arm 7-DOF Tutorial
@@ -176,6 +177,7 @@ Welcome to the robot arm series tutorials! Here you'll find complete guides for 
 Open-source bionic dexterous hand, providing high-precision multi-finger operation capability.
 
 - [AmazingHand Interface Control](./amazing-hand/AmazingHand-Interface-Control.md)
+- [AmazingHand Web Control](./amazing-hand/AmazingHand-Web-Control.md)
 - [AmazingHand Official Example](./amazing-hand/AmazingHand-Official-Example.md)
 - [AmazingHand TTL Debugging](./amazing-hand/AmazingHand-TTL-Debugging.md)
 

@@ -94,6 +94,7 @@ CI1302 offline voice module tutorials: quick start, firmware flashing, wake-word
 - [0.91 OLED Screen Tutorial](./0.91-oled-screen-tutorial.md)
 - [4K HDMI Capture Card Tutorial](./4k-hdmi-capture-tutorial.md)
 - [KVM Switcher Tutorial](./kvm-switch-tutorial.md)
+- [KVM Switch · Tutorial Overview](./kvm-switch/00-Overview-and-Quick-Start.md),- [01 · Switching Between Two Computers (Button & IR Remote)](./kvm-switch/01-Switching-Between-Two-Computers.md),- [02 · HUB Function (One to Three)](./kvm-switch/02-HUB-Function-One-to-Three.md),- [03 · Bluetooth](./kvm-switch/03-Bluetooth.md),- [04 · TTL Serial Port (Wireless Serial)](./kvm-switch/04-TTL-Serial-Port.md),- [05 · 10-Pin Expansion Header](./kvm-switch/05-10-Pin-Expansion-Header.md),- [06 · Headless Host (Capture Card + OBS)](./kvm-switch/06-Headless-Host-Capture-Card-and-OBS.md),- [07 · FAQ and Precautions](./kvm-switch/07-FAQ-and-Precautions.md)
 - [USB Sound Card Tutorial](./usb-audio-card-tutorial.md)
 
 ---

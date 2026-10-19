@@ -96,6 +96,7 @@ CI1302 오프라인 음성 인터랙션 모듈 전 플랫폼 튜토리얼: 퀵 �
 - [0.91 OLED 스크린 튜토리얼](./0.91-oled-screen-tutorial.md)
 - [4K HDMI 캡처 튜토리얼](./4k-hdmi-capture-tutorial.md)
 - [KVM 스위처 튜토리얼](./kvm-switch-tutorial.md)
+- [KVM 스위치 · 사용 튜토리얼 개요](./kvm-switch/00-Overview-and-Quick-Start.md),- [01 · 두 대 PC 전환(버튼 및 IR 리모컨)](./kvm-switch/01-Switching-Between-Two-Computers.md),- [02 · HUB 기능(1대3)](./kvm-switch/02-HUB-Function-One-to-Three.md),- [03 · 블루투스 기능](./kvm-switch/03-Bluetooth.md),- [04 · TTL 시리얼 포트(무선 시리얼)](./kvm-switch/04-TTL-Serial-Port.md),- [05 · 10핀 확장 헤더](./kvm-switch/05-10-Pin-Expansion-Header.md),- [06 · 모니터 없는 호스트(캡처 카드 + OBS)](./kvm-switch/06-Headless-Host-Capture-Card-and-OBS.md),- [07 · FAQ 및 주의사항](./kvm-switch/07-FAQ-and-Precautions.md)
 - [USB 사운드 카드 튜토리얼](./usb-audio-card-tutorial.md)
 
 ---

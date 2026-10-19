@@ -112,6 +112,7 @@ description: "鉅犀科技機械臂系列教程首頁——SO-ARM101、AmazingHa
 - [5 · 錄製資料集](./so-arm101/lelab/05-Record-Dataset.md)
 - [6 · 訓練與推論](./so-arm101/lelab/06-Train-and-Inference.md)
 - [7 · 疑難排解](./so-arm101/lelab/07-Troubleshooting.md)
+,#### MuJoCo 仿真教程,- [SO-ARM101 × MuJoCo 全流程教學（索引）](./so-arm101/mujoco/index.md),- [01 · 環境準備](./so-arm101/mujoco/01-Environment.md),- [02 · 模擬模型驗證（MJCF 載入與驅動）](./so-arm101/mujoco/02-Sim-Model-Verification.md),- [03 · 實機連線與校正](./so-arm101/mujoco/03-Hardware-Calibration.md),- [04 · 鍵盤遙控操作](./so-arm101/mujoco/04-Keyboard-Teleop.md),- [05 · 主動臂數位孿生（實體手臂驅動模擬手臂）](./so-arm101/mujoco/05-Leader-Digital-Twin.md),- [06 · 資料錄製與回放](./so-arm101/mujoco/06-Record-and-Replay.md),- [07 · 常見問題與經驗](./so-arm101/mujoco/07-Troubleshooting.md),- [08 · 後續路線](./so-arm101/mujoco/08-Roadmap.md),- [09 · 完整使用教學（開臂 → 資料集 → 看影片 → 訓練 → 部署）](./so-arm101/mujoco/09-Usage-Tutorial.md)
 
 
 ### SO-ARM101機械臂 7軸 教程
@@ -176,6 +177,7 @@ description: "鉅犀科技機械臂系列教程首頁——SO-ARM101、AmazingHa
 開源仿生靈巧手，提供高精度的多指操作能力。
 
 - [AmazingHand 接口控制](./amazing-hand/AmazingHand-Interface-Control.md)
+- [AmazingHand 網頁控制](./amazing-hand/AmazingHand-Web-Control.md)
 - [AmazingHand 官方示例](./amazing-hand/AmazingHand-Official-Example.md)
 - [AmazingHand TTL調試](./amazing-hand/AmazingHand-TTL-Debugging.md)
 
