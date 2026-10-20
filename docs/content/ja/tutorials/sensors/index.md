@@ -18,6 +18,7 @@ description: "Juxi Technologyセンサーシリーズチュートリアルホー
 - [IMUモジュールホーム](./imu/index.md)
 - [IMU製品情報](./imu/product-info.md)
 - [Web ホストコンソール](./imu/web-host-console.md)
+- [MicroDuck 連携](./imu/microduck-integration.md)
 - [ROS1サンプル](./imu/ros-examples/ros1.md)
 - [ROS2サンプル](./imu/ros-examples/ros2.md)
 - [マルチボードサンプル](./imu/multi-board-examples/overview.md)

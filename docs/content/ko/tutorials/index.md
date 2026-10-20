@@ -272,6 +272,7 @@ description: "Juxi Technology 튜토리얼 — 로봇 암과 액세서리, 센�
   - **IMU 관성 내비게이션**
     - [제품 정보](/ko/tutorials/sensors/imu/product-info)
     - [웹 호스트 콘솔](/ko/tutorials/sensors/imu/web-host-console)
+    - [MicroDuck 연동](/ko/tutorials/sensors/imu/microduck-integration)
       - **멀티 보드 예제**
         - [멀티 호스트 통신 케이스 개요](/ko/tutorials/sensors/imu/multi-board-examples/overview)
         - [PC 통신](/ko/tutorials/sensors/imu/multi-board-examples/pc-communication)

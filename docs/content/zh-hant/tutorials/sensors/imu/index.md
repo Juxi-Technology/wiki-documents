@@ -140,6 +140,7 @@ python calibration/calibrate.py --port /dev/ttyUSB0
 - **IMU 慣性導航模組**
   - [產品資料](./product-info.md)
   - [網頁上位機](./web-host-console.md)
+  - [MicroDuck 整合](./microduck-integration.md)
   - [IMU 校準](./calibration.md)
   - [檔案遠程傳輸](./remote-file-transfer.md)
   - [SSH檔案傳輸](./ssh-file-transfer.md)

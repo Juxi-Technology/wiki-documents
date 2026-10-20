@@ -18,6 +18,7 @@ description: "Juxi Technology 센서 시리즈 튜토리얼 홈——IMU 관성�
 - [IMU 모듈 홈](./imu/index.md)
 - [IMU 제품 정보](./imu/product-info.md)
 - [웹 호스트 콘솔](./imu/web-host-console.md)
+- [MicroDuck 연동](./imu/microduck-integration.md)
 - [ROS1 예제](./imu/ros-examples/ros1.md)
 - [ROS2 예제](./imu/ros-examples/ros2.md)
 - [멀티보드 예제](./imu/multi-board-examples/overview.md)

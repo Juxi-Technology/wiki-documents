@@ -755,6 +755,7 @@ const zhCN = {
               items: [
                 { text: '产品信息', link: '/zh-hans/tutorials/sensors/imu/product-info' },
                 { text: '网页上位机', link: '/zh-hans/tutorials/sensors/imu/web-host-console' },
+                { text: 'MicroDuck 集成', link: '/zh-hans/tutorials/sensors/imu/microduck-integration' },
                 { text: 'IMU 校准', link: '/zh-hans/tutorials/sensors/imu/calibration' },
                 { text: '文件远程传输', link: '/zh-hans/tutorials/sensors/imu/remote-file-transfer' },
                 { text: 'SSH文件传输', link: '/zh-hans/tutorials/sensors/imu/ssh-file-transfer' },
@@ -1528,6 +1529,7 @@ const en = {
               items: [
                 { text: 'Product Info', link: '/tutorials/sensors/imu/product-info' },
                 { text: 'Web Host Console', link: '/tutorials/sensors/imu/web-host-console' },
+                { text: 'MicroDuck Integration', link: '/tutorials/sensors/imu/microduck-integration' },
                 { text: 'IMU Calibration', link: '/tutorials/sensors/imu/calibration' },
                 { text: 'Remote File Transfer', link: '/tutorials/sensors/imu/remote-file-transfer' },
                 { text: 'SSH File Transfer', link: '/tutorials/sensors/imu/ssh-file-transfer' },
@@ -2301,6 +2303,7 @@ const zhHK = {
               items: [
                 { text: '產品資料', link: '/zh-hant/tutorials/sensors/imu/product-info' },
                 { text: '網頁上位機', link: '/zh-hant/tutorials/sensors/imu/web-host-console' },
+                { text: 'MicroDuck 整合', link: '/zh-hant/tutorials/sensors/imu/microduck-integration' },
                 { text: 'IMU 校準', link: '/zh-hant/tutorials/sensors/imu/calibration' },
                 { text: '檔案遠程傳輸', link: '/zh-hant/tutorials/sensors/imu/remote-file-transfer' },
                 { text: 'SSH檔案傳輸', link: '/zh-hant/tutorials/sensors/imu/ssh-file-transfer' },
@@ -2933,6 +2936,7 @@ export default defineConfig({
               items: [
                 { text: '製品情報', link: '/ja/tutorials/sensors/imu/product-info' },
                 { text: 'Web ホストコンソール', link: '/ja/tutorials/sensors/imu/web-host-console' },
+                { text: 'MicroDuck 連携', link: '/ja/tutorials/sensors/imu/microduck-integration' },
                 {
                   text: 'マルチボード例',
                   items: [
@@ -3601,6 +3605,7 @@ export default defineConfig({
               items: [
                 { text: '제품 정보', link: '/ko/tutorials/sensors/imu/product-info' },
                 { text: '웹 호스트 콘솔', link: '/ko/tutorials/sensors/imu/web-host-console' },
+                { text: 'MicroDuck 연동', link: '/ko/tutorials/sensors/imu/microduck-integration' },
                 {
                   text: '멀티 보드 예제',
                   items: [
@@ -4269,6 +4274,7 @@ export default defineConfig({
               items: [
                 { text: 'Produktinformation', link: '/de/tutorials/sensors/imu/product-info' },
                 { text: 'Web-Host-Konsole', link: '/de/tutorials/sensors/imu/web-host-console' },
+                { text: 'MicroDuck-Integration', link: '/de/tutorials/sensors/imu/microduck-integration' },
                 {
                   text: 'Multi-Board-Beispiele',
                   items: [
@@ -4937,6 +4943,7 @@ export default defineConfig({
               items: [
                 { text: 'Informations produit', link: '/fr/tutorials/sensors/imu/product-info' },
                 { text: 'Console hôte Web', link: '/fr/tutorials/sensors/imu/web-host-console' },
+                { text: 'Intégration MicroDuck', link: '/fr/tutorials/sensors/imu/microduck-integration' },
                 {
                   text: 'Exemples multi-cartes',
                   items: [
@@ -5605,6 +5612,7 @@ export default defineConfig({
               items: [
                 { text: 'Información del producto', link: '/es/tutorials/sensors/imu/product-info' },
                 { text: 'Consola web del host', link: '/es/tutorials/sensors/imu/web-host-console' },
+                { text: 'Integración MicroDuck', link: '/es/tutorials/sensors/imu/microduck-integration' },
                 {
                   text: 'Ejemplos multi-placa',
                   items: [
@@ -6273,6 +6281,7 @@ export default defineConfig({
               items: [
                 { text: 'Informazioni prodotto', link: '/it/tutorials/sensors/imu/product-info' },
                 { text: 'Console host Web', link: '/it/tutorials/sensors/imu/web-host-console' },
+                { text: 'Integrazione MicroDuck', link: '/it/tutorials/sensors/imu/microduck-integration' },
                 {
                   text: 'Esempi multi-scheda',
                   items: [
@@ -7516,6 +7525,7 @@ export default defineConfig({
                 items: [
                   { text: 'Informações do Produto', link: '/pt-br/tutorials/sensors/imu/product-info' },
                   { text: 'Console web do host', link: '/pt-br/tutorials/sensors/imu/web-host-console' },
+                  { text: 'Integração MicroDuck', link: '/pt-br/tutorials/sensors/imu/microduck-integration' },
                   { text: 'Calibração IMU', link: '/pt-br/tutorials/sensors/imu/calibration' },
                   { text: 'Transferência remota de arquivos', link: '/pt-br/tutorials/sensors/imu/remote-file-transfer' },
                   { text: 'Transferência de arquivos via SSH', link: '/pt-br/tutorials/sensors/imu/ssh-file-transfer' },
@@ -8275,6 +8285,7 @@ export default defineConfig({
                 items: [
                   { text: 'Informações do Produto', link: '/pt-pt/tutorials/sensors/imu/product-info' },
                   { text: 'Consola web do anfitrião', link: '/pt-pt/tutorials/sensors/imu/web-host-console' },
+                  { text: 'Integração MicroDuck', link: '/pt-pt/tutorials/sensors/imu/microduck-integration' },
                   { text: 'Calibração IMU', link: '/pt-pt/tutorials/sensors/imu/calibration' },
                   { text: 'Transferência remota de ficheiros', link: '/pt-pt/tutorials/sensors/imu/remote-file-transfer' },
                   { text: 'Transferência de ficheiros via SSH', link: '/pt-pt/tutorials/sensors/imu/ssh-file-transfer' },

@@ -276,6 +276,7 @@ head:
   - **Navegación inercial IMU**
     - [Información del producto](/es/tutorials/sensors/imu/product-info)
     - [Consola web del host](/es/tutorials/sensors/imu/web-host-console)
+    - [Integración MicroDuck](/es/tutorials/sensors/imu/microduck-integration)
       - **Ejemplos multi-placa**
         - [Resumen de casos multi-host](/es/tutorials/sensors/imu/multi-board-examples/overview)
         - [Comunicación PC](/es/tutorials/sensors/imu/multi-board-examples/pc-communication)

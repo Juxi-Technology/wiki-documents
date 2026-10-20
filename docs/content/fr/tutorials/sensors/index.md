@@ -18,6 +18,7 @@ Unité de mesure inertielle 6/9/10 axes haute précision, capteur fusion intégr
 - [Accueil du module IMU](./imu/index.md)
 - [Infos produit IMU](./imu/product-info.md)
 - [Console hôte Web](./imu/web-host-console.md)
+- [Intégration MicroDuck](./imu/microduck-integration.md)
 - [Exemple ROS1](./imu/ros-examples/ros1.md)
 - [Exemple ROS2](./imu/ros-examples/ros2.md)
 - [Exemples multi-cartes](./imu/multi-board-examples/overview.md)

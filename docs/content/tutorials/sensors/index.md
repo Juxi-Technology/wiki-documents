@@ -18,6 +18,7 @@ High-precision 6/9/10-axis inertial measurement unit, built-in sensor fusion alg
 - [IMU Module Home](./imu/index.md)
 - [IMU Product Info](./imu/product-info.md)
 - [Web Host Console](./imu/web-host-console.md)
+- [MicroDuck Integration](./imu/microduck-integration.md)
 - [ROS1 Example](./imu/ros-examples/ros1.md)
 - [ROS2 Example](./imu/ros-examples/ros2.md)
 - [Multi-Board Example](./imu/multi-board-examples/overview.md)

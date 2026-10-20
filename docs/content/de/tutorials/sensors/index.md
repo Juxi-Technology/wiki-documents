@@ -18,6 +18,7 @@ Hochpräzise 6/9/10-Achsen-IMU mit integrierter Sensor-Fusion für stabile Echtz
 - [IMU-Modul-Startseite](./imu/index.md)
 - [IMU-Produktinfo](./imu/product-info.md)
 - [Web-Host-Konsole](./imu/web-host-console.md)
+- [MicroDuck-Integration](./imu/microduck-integration.md)
 - [ROS1-Beispiel](./imu/ros-examples/ros1.md)
 - [ROS2-Beispiel](./imu/ros-examples/ros2.md)
 - [Multi-Board-Beispiele](./imu/multi-board-examples/overview.md)

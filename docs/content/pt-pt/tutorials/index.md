@@ -342,6 +342,7 @@ Bem-vindo à página de Tutoriais! Aqui você encontra todos os tutoriais de uso
   - **Módulo de Navegação Inercial IMU**
     - [Informações do Produto](/pt-pt/tutorials/sensors/imu/product-info)
     - [Consola web do anfitrião](/pt-pt/tutorials/sensors/imu/web-host-console)
+    - [Integração MicroDuck](/pt-pt/tutorials/sensors/imu/microduck-integration)
     - [Calibração IMU](/pt-pt/tutorials/sensors/imu/calibration)
     - [Transferência remota de ficheiros](/pt-pt/tutorials/sensors/imu/remote-file-transfer)
     - [Transferência de ficheiros via SSH](/pt-pt/tutorials/sensors/imu/ssh-file-transfer)

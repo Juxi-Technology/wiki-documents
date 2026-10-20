@@ -18,6 +18,7 @@ description: "钜犀科技传感器与感知教程首页：汇总 IMU 姿态传�
 - [IMU模块首页](./imu/index.md)
 - [IMU产品信息](./imu/product-info.md)
 - [网页上位机](./imu/web-host-console.md)
+- [MicroDuck 集成](./imu/microduck-integration.md)
 - [ROS1示例](./imu/ros-examples/ros1.md)
 - [ROS2示例](./imu/ros-examples/ros2.md)
 - [多板卡示例](./imu/multi-board-examples/overview.md)

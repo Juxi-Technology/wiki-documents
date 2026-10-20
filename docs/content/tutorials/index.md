@@ -342,6 +342,7 @@ Welcome to the Tutorials page! Here, you can find all product usage tutorials, c
   - **IMU Inertial Module**
     - [Product Info](/tutorials/sensors/imu/product-info)
     - [Web Host Console](/tutorials/sensors/imu/web-host-console)
+    - [MicroDuck Integration](/tutorials/sensors/imu/microduck-integration)
     - [IMU Calibration](/tutorials/sensors/imu/calibration)
     - [Remote File Transfer](/tutorials/sensors/imu/remote-file-transfer)
     - [SSH File Transfer](/tutorials/sensors/imu/ssh-file-transfer)

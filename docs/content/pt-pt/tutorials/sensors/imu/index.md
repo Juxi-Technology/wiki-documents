@@ -140,6 +140,7 @@ python calibration/calibrate.py --port /dev/ttyUSB0
 - **Módulo de Navegação Inercial IMU**
   - [Informações do Produto](./product-info.md)
   - [Consola web do anfitrião](./web-host-console.md)
+  - [Integração MicroDuck](./microduck-integration.md)
   - [Calibração IMU](./calibration.md)
   - [Transferência remota de ficheiros](./remote-file-transfer.md)
   - [Transferência de ficheiros via SSH](./ssh-file-transfer.md)

@@ -272,6 +272,7 @@ Bienvenue sur la page Tutoriels ! Vous y trouverez tous les tutoriels d'utilisat
   - **Navigation inertielle IMU**
     - [Informations produit](/fr/tutorials/sensors/imu/product-info)
     - [Console hôte Web](/fr/tutorials/sensors/imu/web-host-console)
+    - [Intégration MicroDuck](/fr/tutorials/sensors/imu/microduck-integration)
       - **Exemples multi-cartes**
         - [Aperçu des cas multi-hôtes](/fr/tutorials/sensors/imu/multi-board-examples/overview)
         - [Communication PC](/fr/tutorials/sensors/imu/multi-board-examples/pc-communication)

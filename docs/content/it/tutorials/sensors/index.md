@@ -18,6 +18,7 @@ Unità di misura inerziale 6/9/10 assi ad alta precisione, sensor fusion integra
 - [Home del modulo IMU](./imu/index.md)
 - [Informazioni prodotto IMU](./imu/product-info.md)
 - [Console host Web](./imu/web-host-console.md)
+- [Integrazione MicroDuck](./imu/microduck-integration.md)
 - [Esempio ROS1](./imu/ros-examples/ros1.md)
 - [Esempio ROS2](./imu/ros-examples/ros2.md)
 - [Esempi multi-scheda](./imu/multi-board-examples/overview.md)

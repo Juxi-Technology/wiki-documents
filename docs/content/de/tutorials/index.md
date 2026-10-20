@@ -272,6 +272,7 @@ Willkommen auf der Tutorials-Seite! Hier finden Sie alle Tutorials zur Produktnu
   - **IMU-Trägheitsnavigation**
     - [Produktinformation](/de/tutorials/sensors/imu/product-info)
     - [Web-Host-Konsole](/de/tutorials/sensors/imu/web-host-console)
+    - [MicroDuck-Integration](/de/tutorials/sensors/imu/microduck-integration)
       - **Multi-Board-Beispiele**
         - [Multi-Host-Kommunikationsfälle Übersicht](/de/tutorials/sensors/imu/multi-board-examples/overview)
         - [PC-Kommunikation](/de/tutorials/sensors/imu/multi-board-examples/pc-communication)

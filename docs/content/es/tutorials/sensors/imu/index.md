@@ -147,6 +147,7 @@ python calibration/calibrate.py --port /dev/ttyUSB0
 - **Navegación inercial IMU**
   - [Información del producto](./product-info.md)
   - [Consola web del host](./web-host-console.md)
+  - [Integración MicroDuck](./microduck-integration.md)
 - **Ejemplos multi-placa**
   - [Resumen de casos multi-host](./multi-board-examples/overview.md)
   - [Comunicación PC](./multi-board-examples/pc-communication.md)

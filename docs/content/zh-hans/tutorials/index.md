@@ -342,6 +342,7 @@ head:
   - **IMU 惯性导航模块**
     - [产品信息](/zh-hans/tutorials/sensors/imu/product-info)
     - [网页上位机](/zh-hans/tutorials/sensors/imu/web-host-console)
+    - [MicroDuck 集成](/zh-hans/tutorials/sensors/imu/microduck-integration)
     - [IMU 校准](/zh-hans/tutorials/sensors/imu/calibration)
     - [文件远程传输](/zh-hans/tutorials/sensors/imu/remote-file-transfer)
     - [SSH文件传输](/zh-hans/tutorials/sensors/imu/ssh-file-transfer)

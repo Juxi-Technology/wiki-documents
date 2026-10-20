@@ -18,6 +18,7 @@ Unidad de medición inercial 6/9/10 ejes de alta precisión, sensor fusion integ
 - [Inicio del módulo IMU](./imu/index.md)
 - [Información del producto IMU](./imu/product-info.md)
 - [Consola web del host](./imu/web-host-console.md)
+- [Integración MicroDuck](./imu/microduck-integration.md)
 - [Ejemplo ROS1](./imu/ros-examples/ros1.md)
 - [Ejemplo ROS2](./imu/ros-examples/ros2.md)
 - [Ejemplos multi-placa](./imu/multi-board-examples/overview.md)

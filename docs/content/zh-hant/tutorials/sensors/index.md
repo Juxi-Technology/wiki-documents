@@ -18,6 +18,7 @@ description: "鉅犀科技感測器系列教程首頁：IMU 慣導模組與 GPS 
 - [IMU模組首頁](./imu/index.md)
 - [IMU產品資訊](./imu/product-info.md)
 - [網頁上位機](./imu/web-host-console.md)
+- [MicroDuck 整合](./imu/microduck-integration.md)
 - [ROS1範例](./imu/ros-examples/ros1.md)
 - [ROS2範例](./imu/ros-examples/ros2.md)
 - [多板卡範例](./imu/multi-board-examples/overview.md)

@@ -18,6 +18,7 @@ Unidade de medição inercial de alta precisão de 6/9/10 eixos, com algoritmo d
 - [Início do Módulo IMU](./imu/index.md)
 - [Informações do Produto IMU](./imu/product-info.md)
 - [Console web do host](./imu/web-host-console.md)
+- [Integração MicroDuck](./imu/microduck-integration.md)
 - [Exemplo ROS1](./imu/ros-examples/ros1.md)
 - [Exemplo ROS2](./imu/ros-examples/ros2.md)
 - [Exemplo Multi-placa](./imu/multi-board-examples/overview.md)

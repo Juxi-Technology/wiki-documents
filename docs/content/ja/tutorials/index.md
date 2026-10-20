@@ -272,6 +272,7 @@ description: "Juxi Technology Wiki のチュートリアル一覧。ロボット
   - **IMU 慣性ナビゲーション**
     - [製品情報](/ja/tutorials/sensors/imu/product-info)
     - [Web ホストコンソール](/ja/tutorials/sensors/imu/web-host-console)
+    - [MicroDuck 連携](/ja/tutorials/sensors/imu/microduck-integration)
       - **マルチボード例**
         - [マルチホスト通信ケース概要](/ja/tutorials/sensors/imu/multi-board-examples/overview)
         - [PC 通信](/ja/tutorials/sensors/imu/multi-board-examples/pc-communication)

@@ -147,6 +147,7 @@ python calibration/calibrate.py --port /dev/ttyUSB0
 - **IMU 관성 내비게이션**
   - [제품 정보](./product-info.md)
   - [웹 호스트 콘솔](./web-host-console.md)
+  - [MicroDuck 연동](./microduck-integration.md)
 - **멀티 보드 예제**
   - [멀티 호스트 통신 케이스 개요](./multi-board-examples/overview.md)
   - [PC 통신](./multi-board-examples/pc-communication.md)

@@ -272,6 +272,7 @@ Benvenuto nella pagina dei tutorial! Qui puoi trovare tutti i tutorial d'uso dei
   - **Navigazione inerziale IMU**
     - [Informazioni prodotto](/it/tutorials/sensors/imu/product-info)
     - [Console host Web](/it/tutorials/sensors/imu/web-host-console)
+    - [Integrazione MicroDuck](/it/tutorials/sensors/imu/microduck-integration)
       - **Esempi multi-scheda**
         - [Panoramica dei casi multi-host](/it/tutorials/sensors/imu/multi-board-examples/overview)
         - [Comunicazione PC](/it/tutorials/sensors/imu/multi-board-examples/pc-communication)
