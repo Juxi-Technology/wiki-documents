@@ -5,7 +5,7 @@ description: "IMU 姿态传感器 PC 通信教程：通过 Type-C 连接电脑�
 
 # PC 通信
 
-**注意：如果无法识别串口，请安装ch34x驱动**
+**注意：如果无法识别串口，请安装ch340驱动**
 
 1. IMU姿态传感器通过type-c数据线连接电脑端
 
@@ -19,5 +19,4 @@ description: "IMU 姿态传感器 PC 通信教程：通过 Type-C 连接电脑�
 
 串口打印的是没有经过处理的数据，具体数据含义可参考 "**通信协议**" 文档。
 
-IMU模块-串口与I2C通信协议.xlsx
-
+[IMU模块-串口与I2C通信协议.xlsx](/downloads/IMU-Protocol.xlsx)

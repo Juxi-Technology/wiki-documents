@@ -1,9 +1,9 @@
 ---
-title: "RDK"
+title: "RDK系列"
 description: "IMU 慣導模組串列埠通訊教程(RDK X5 版)：設備連接、串列埠映射設定與驅動庫安裝校準。"
 ---
 
-# RDK
+# RDK系列
 
 ## 1.連接設備
 
@@ -71,8 +71,7 @@ sudo apt install -y python3-smbus2
 
 **3.2傳輸文件**
 
-IMU_ROS2.zip
-
+[IMU_ROS2.zip](/downloads/IMU_ROS2.zip)
 如果還不會使用MobaXterm傳輸文件的朋友，請查看以下網頁MobaXterm詳細安裝和操作方法：[文件遠程傳輸](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 
 通過MobaXterm軟件將 解壓後的文件 拖入 RDK X5 上。

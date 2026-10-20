@@ -1,11 +1,11 @@
 ---
 title: Comunicazione PC
-description: "Nota: se la porta seriale non viene riconosciuta, installare il driver ch34x"
+description: "Nota: se la porta seriale non viene riconosciuta, installare il driver ch340"
 ---
 
 # Comunicazione PC
 
-**Nota: se la porta seriale non viene riconosciuta, installare il driver ch34x**
+**Nota: se la porta seriale non viene riconosciuta, installare il driver ch340**
 
 1. Collegare il sensore di assetto IMU al PC tramite cavo Type-C
 
@@ -19,5 +19,4 @@ Configurare l'assistente seriale come mostrato sotto
 
 L'uscita seriale contiene dati grezzi; il loro significato è descritto nel documento « **Protocollo di comunicazione** ».
 
-Modulo IMU – protocollo di comunicazione seriale e I2C.xlsx
-
+[Modulo IMU – protocollo di comunicazione seriale e I2C.xlsx](/downloads/IMU-Protocol.xlsx)

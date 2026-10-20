@@ -56,7 +56,7 @@ lrwxrwxrwx 1 root root 7 1月 22 10:00 /dev/imu-serial -> ttyUSB0
 
 ### Serial Communication
 
-1. **Enter the ~/IMU_Library/IMU_Library directory and run the IMU_Serial_Library.py file **
+1. **Enter the ~/IMU_Library/IMU_Library directory and run the IMU_Serial_Library.py file**
 
 ```PowerShell
 cd ~/imu_ros1/src/IMU_ROS1/IMU_Library/IMU_Library 
@@ -69,7 +69,7 @@ python3 IMU_Serial_Library.py
 
 ### I2C Communication
 
-1. **Enter the ~/IMU_Library/IMU_Library directory and run the IMU_I2C_Library.py file **
+1. **Enter the ~/IMU_Library/IMU_Library directory and run the IMU_I2C_Library.py file**
 
 ```PowerShell
 cd ~/IMU_Library/IMU_Library
@@ -80,7 +80,7 @@ python3 IMU_I2C_Library.py
 
 ### IMU Calibration
 
-1. **Enter the ~/IMU_Library/IMU_Library directory and run the imu_calibration_tool.py file **
+1. **Enter the ~/IMU_Library/IMU_Library directory and run the imu_calibration_tool.py file**
 
 ```PowerShell
 cd ~/IMU_Library/IMU_Library
@@ -139,6 +139,7 @@ python calibration/calibrate.py --port /dev/ttyUSB0
 
 - **IMU Inertial Module**
   - [Product Info](./product-info.md)
+  - [Web Host Console](./web-host-console.md)
   - [IMU Calibration](./calibration.md)
   - [Remote File Transfer](./remote-file-transfer.md)
   - [SSH File Transfer](./ssh-file-transfer.md)
@@ -147,16 +148,16 @@ python calibration/calibrate.py --port /dev/ttyUSB0
   - [PC Communication](./multi-board-examples/pc-communication.md)
 - **I2C Communication**
   - [Arduino](./multi-board-examples/i2c-communication/arduino.md)
-  - [Jetson](./multi-board-examples/i2c-communication/jetson.md)
-  - [Raspberry Pi](./multi-board-examples/i2c-communication/raspberry-pi.md)
-  - [RDK](./multi-board-examples/i2c-communication/rdk.md)
-  - [STM32](./multi-board-examples/i2c-communication/stm32.md)
+  - [Jetson Series](./multi-board-examples/i2c-communication/jetson.md)
+  - [Raspberry Pi 5](./multi-board-examples/i2c-communication/raspberry-pi.md)
+  - [RDK Series](./multi-board-examples/i2c-communication/rdk.md)
+  - [STM32 F103C8T6](./multi-board-examples/i2c-communication/stm32.md)
 - **Serial Communication**
   - [Arduino](./multi-board-examples/serial-communication/arduino.md)
-  - [Jetson](./multi-board-examples/serial-communication/jetson.md)
-  - [Raspberry Pi](./multi-board-examples/serial-communication/raspberry-pi.md)
-  - [RDK](./multi-board-examples/serial-communication/rdk.md)
-  - [STM32](./multi-board-examples/serial-communication/stm32.md)
+  - [Jetson Series](./multi-board-examples/serial-communication/jetson.md)
+  - [Raspberry Pi 5](./multi-board-examples/serial-communication/raspberry-pi.md)
+  - [RDK Series](./multi-board-examples/serial-communication/rdk.md)
+  - [STM32 F103C8T6](./multi-board-examples/serial-communication/stm32.md)
 - **ROS Examples**
   - [ROS1 Application](./ros-examples/ros1.md)
   - [ROS2 Application](./ros-examples/ros2.md)

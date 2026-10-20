@@ -17,6 +17,7 @@ description: "钜犀科技传感器与感知教程首页：汇总 IMU 姿态传�
 
 - [IMU模块首页](./imu/index.md)
 - [IMU产品信息](./imu/product-info.md)
+- [网页上位机](./imu/web-host-console.md)
 - [ROS1示例](./imu/ros-examples/ros1.md)
 - [ROS2示例](./imu/ros-examples/ros2.md)
 - [多板卡示例](./imu/multi-board-examples/overview.md)
@@ -31,17 +32,17 @@ description: "钜犀科技传感器与感知教程首页：汇总 IMU 姿态传�
 
 #### I2C 通信
 - [Arduino](./imu/multi-board-examples/i2c-communication/arduino.md)
-- [Jetson](./imu/multi-board-examples/i2c-communication/jetson.md)
-- [树莓派](./imu/multi-board-examples/i2c-communication/raspberry-pi.md)
-- [RDK](./imu/multi-board-examples/i2c-communication/rdk.md)
-- [STM32](./imu/multi-board-examples/i2c-communication/stm32.md)
+- [Jetson系列](./imu/multi-board-examples/i2c-communication/jetson.md)
+- [树莓派5](./imu/multi-board-examples/i2c-communication/raspberry-pi.md)
+- [RDK系列](./imu/multi-board-examples/i2c-communication/rdk.md)
+- [STM32 F103C8T6](./imu/multi-board-examples/i2c-communication/stm32.md)
 
 #### 串口通信
 - [Arduino](./imu/multi-board-examples/serial-communication/arduino.md)
-- [Jetson](./imu/multi-board-examples/serial-communication/jetson.md)
-- [树莓派](./imu/multi-board-examples/serial-communication/raspberry-pi.md)
-- [RDK](./imu/multi-board-examples/serial-communication/rdk.md)
-- [STM32](./imu/multi-board-examples/serial-communication/stm32.md)
+- [Jetson系列](./imu/multi-board-examples/serial-communication/jetson.md)
+- [树莓派5](./imu/multi-board-examples/serial-communication/raspberry-pi.md)
+- [RDK系列](./imu/multi-board-examples/serial-communication/rdk.md)
+- [STM32 F103C8T6](./imu/multi-board-examples/serial-communication/stm32.md)
 
 ### GPS 北斗定位模块
 

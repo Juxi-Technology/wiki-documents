@@ -5,6 +5,18 @@ description: "MobaXterm es una potente herramienta remota que integra herramient
 
 # Transferencia remota de archivos
 
+[1. MobaXterm](https://juxitech.feishu.cn/docx/OAICdMDl9ozdDjx92uocVYrcnQq#doxcn6Xj5FnZdC8Xc7WirMMH1ob)
+
+[2. Instalación de MobaXterm](https://juxitech.feishu.cn/docx/OAICdMDl9ozdDjx92uocVYrcnQq#doxcnhziIgp0c1zlNjRYXoF8qQd)
+
+[2.1. Descarga de MobaXterm](https://juxitech.feishu.cn/docx/OAICdMDl9ozdDjx92uocVYrcnQq#doxcnKFBDKQBtCsUo6OslblLvRd)
+
+[2.2. Instalación de MobaXterm](https://juxitech.feishu.cn/docx/OAICdMDl9ozdDjx92uocVYrcnQq#doxcnShWWp90NBCbz0VWkpDMTjW)
+
+[3. Uso de MobaXterm](https://juxitech.feishu.cn/docx/OAICdMDl9ozdDjx92uocVYrcnQq#doxcnTFGoxRBZ8Eszi1NVvBXlGg)
+
+[4. MobaXterm: SFTP remoto](https://juxitech.feishu.cn/docx/OAICdMDl9ozdDjx92uocVYrcnQq#doxcnQj3cuCUnWzEuT4GNupwpeh)
+
 ## 1. MobaXterm
 
 MobaXterm es una potente herramienta remota que integra herramientas remotas como SHH, VNC, FTP, etc.

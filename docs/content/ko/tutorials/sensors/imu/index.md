@@ -56,7 +56,7 @@ lrwxrwxrwx 1 root root 7 1月 22 10:00 /dev/imu-serial -> ttyUSB0
 
 ### 시리얼 통신
 
-1. **~/IMU_Library 디렉토리로 이동해 IMU_Serial_Library.py 파일 실행**
+1. **~/IMU_Library/IMU_Library 디렉토리로 들어가 IMU_Serial_Library.py 파일을 실행합니다**
 
 ```PowerShell
 cd ~/imu_ros1/src/IMU_ROS1/IMU_Library/IMU_Library
@@ -69,7 +69,7 @@ python3 IMU_Serial_Library.py
 
 ### I2C 통신
 
-1. **~/IMU_Library 디렉토리로 이동해 IMU_I2C_Library.py 파일 실행**
+1. **~/IMU_Library/IMU_Library 디렉토리로 들어가 IMU_I2C_Library.py 파일을 실행합니다**
 
 ```PowerShell
 cd ~/IMU_Library/IMU_Library
@@ -80,7 +80,7 @@ python3 IMU_I2C_Library.py
 
 ### imu 보정
 
-1. **~/IMU_Library 디렉토리로 이동해 imu_calibration_tool.py 파일 실행**
+1. **~/IMU_Library/IMU_Library 디렉토리로 들어가 imu_calibration_tool.py 파일을 실행합니다**
 
 ```PowerShell
 cd ~/IMU_Library/IMU_Library
@@ -146,21 +146,22 @@ python calibration/calibrate.py --port /dev/ttyUSB0
   - [SSH 파일 전송](./ssh-file-transfer.md)
 - **IMU 관성 내비게이션**
   - [제품 정보](./product-info.md)
+  - [웹 호스트 콘솔](./web-host-console.md)
 - **멀티 보드 예제**
   - [멀티 호스트 통신 케이스 개요](./multi-board-examples/overview.md)
   - [PC 통신](./multi-board-examples/pc-communication.md)
 - **I2C 통신**
   - [Arduino](./multi-board-examples/i2c-communication/arduino.md)
-  - [Jetson](./multi-board-examples/i2c-communication/jetson.md)
-  - [라즈베리파이](./multi-board-examples/i2c-communication/raspberry-pi.md)
-  - [RDK](./multi-board-examples/i2c-communication/rdk.md)
-  - [STM32](./multi-board-examples/i2c-communication/stm32.md)
+  - [Jetson 시리즈](./multi-board-examples/i2c-communication/jetson.md)
+  - [Raspberry Pi 5](./multi-board-examples/i2c-communication/raspberry-pi.md)
+  - [RDK 시리즈](./multi-board-examples/i2c-communication/rdk.md)
+  - [STM32 F103C8T6](./multi-board-examples/i2c-communication/stm32.md)
 - **직렬 통신**
   - [Arduino](./multi-board-examples/serial-communication/arduino.md)
-  - [Jetson](./multi-board-examples/serial-communication/jetson.md)
-  - [라즈베리파이](./multi-board-examples/serial-communication/raspberry-pi.md)
-  - [RDK](./multi-board-examples/serial-communication/rdk.md)
-  - [STM32](./multi-board-examples/serial-communication/stm32.md)
+  - [Jetson 시리즈](./multi-board-examples/serial-communication/jetson.md)
+  - [Raspberry Pi 5](./multi-board-examples/serial-communication/raspberry-pi.md)
+  - [RDK 시리즈](./multi-board-examples/serial-communication/rdk.md)
+  - [STM32 F103C8T6](./multi-board-examples/serial-communication/stm32.md)
 - **ROS 예제**
   - [ROS1 응용](./ros-examples/ros1.md)
   - [ROS2 응용](./ros-examples/ros2.md)

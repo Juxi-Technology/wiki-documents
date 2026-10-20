@@ -341,6 +341,7 @@ head:
 - [传感器总览](/zh-hans/tutorials/sensors/)
   - **IMU 惯性导航模块**
     - [产品信息](/zh-hans/tutorials/sensors/imu/product-info)
+    - [网页上位机](/zh-hans/tutorials/sensors/imu/web-host-console)
     - [IMU 校准](/zh-hans/tutorials/sensors/imu/calibration)
     - [文件远程传输](/zh-hans/tutorials/sensors/imu/remote-file-transfer)
     - [SSH文件传输](/zh-hans/tutorials/sensors/imu/ssh-file-transfer)
@@ -349,16 +350,16 @@ head:
         - [PC 通信](/zh-hans/tutorials/sensors/imu/multi-board-examples/pc-communication)
           - **I2C 通信**
             - [Arduino](/zh-hans/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino)
-            - [Jetson](/zh-hans/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson)
-            - [树莓派](/zh-hans/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi)
-            - [RDK](/zh-hans/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk)
-            - [STM32](/zh-hans/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32)
+            - [Jetson系列](/zh-hans/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson)
+            - [树莓派5](/zh-hans/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi)
+            - [RDK系列](/zh-hans/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk)
+            - [STM32 F103C8T6](/zh-hans/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32)
           - **串口通信**
             - [Arduino](/zh-hans/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino)
-            - [Jetson](/zh-hans/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson)
-            - [树莓派](/zh-hans/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi)
-            - [RDK](/zh-hans/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk)
-            - [STM32](/zh-hans/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32)
+            - [Jetson系列](/zh-hans/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson)
+            - [树莓派5](/zh-hans/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi)
+            - [RDK系列](/zh-hans/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk)
+            - [STM32 F103C8T6](/zh-hans/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32)
       - **ROS 示例**
         - [ROS1 应用](/zh-hans/tutorials/sensors/imu/ros-examples/ros1)
         - [ROS2 应用](/zh-hans/tutorials/sensors/imu/ros-examples/ros2)

@@ -1,9 +1,9 @@
 ---
-title: "STM32"
+title: "STM32 F103C8T6"
 description: "Este exemplo usa um STM32F103C8T6, um computador Windows, alguns fios Dupont e um sensor de atitude IMU."
 ---
 
-# STM32
+# STM32 F103C8T6
 
 Este exemplo usa um STM32F103C8T6, um computador Windows, alguns fios Dupont e um sensor de atitude IMU. 
 

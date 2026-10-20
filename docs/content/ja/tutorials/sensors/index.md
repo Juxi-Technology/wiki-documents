@@ -17,6 +17,7 @@ description: "Juxi Technologyセンサーシリーズチュートリアルホー
 
 - [IMUモジュールホーム](./imu/index.md)
 - [IMU製品情報](./imu/product-info.md)
+- [Web ホストコンソール](./imu/web-host-console.md)
 - [ROS1サンプル](./imu/ros-examples/ros1.md)
 - [ROS2サンプル](./imu/ros-examples/ros2.md)
 - [マルチボードサンプル](./imu/multi-board-examples/overview.md)
@@ -31,17 +32,17 @@ description: "Juxi Technologyセンサーシリーズチュートリアルホー
 
 #### I2C 通信
 - [Arduino](./imu/multi-board-examples/i2c-communication/arduino.md)
-- [Jetson](./imu/multi-board-examples/i2c-communication/jetson.md)
-- [ラズベリーパイ](./imu/multi-board-examples/i2c-communication/raspberry-pi.md)
-- [RDK](./imu/multi-board-examples/i2c-communication/rdk.md)
-- [STM32](./imu/multi-board-examples/i2c-communication/stm32.md)
+- [Jetsonシリーズ](./imu/multi-board-examples/i2c-communication/jetson.md)
+- [Raspberry Pi 5](./imu/multi-board-examples/i2c-communication/raspberry-pi.md)
+- [RDKシリーズ](./imu/multi-board-examples/i2c-communication/rdk.md)
+- [STM32 F103C8T6](./imu/multi-board-examples/i2c-communication/stm32.md)
 
 #### シリアル通信
 - [Arduino](./imu/multi-board-examples/serial-communication/arduino.md)
-- [Jetson](./imu/multi-board-examples/serial-communication/jetson.md)
-- [ラズベリーパイ](./imu/multi-board-examples/serial-communication/raspberry-pi.md)
-- [RDK](./imu/multi-board-examples/serial-communication/rdk.md)
-- [STM32](./imu/multi-board-examples/serial-communication/stm32.md)
+- [Jetsonシリーズ](./imu/multi-board-examples/serial-communication/jetson.md)
+- [Raspberry Pi 5](./imu/multi-board-examples/serial-communication/raspberry-pi.md)
+- [RDKシリーズ](./imu/multi-board-examples/serial-communication/rdk.md)
+- [STM32 F103C8T6](./imu/multi-board-examples/serial-communication/stm32.md)
 
 ### GPS 北斗測位モジュール
 

@@ -5,6 +5,18 @@ description: "MobaXterm ist ein leistungsstarkes Remote-Tool, das Remote-Werkzeu
 
 # Remote-Dateiübertragung
 
+[1. MobaXterm](https://juxitech.feishu.cn/docx/OAICdMDl9ozdDjx92uocVYrcnQq#doxcn6Xj5FnZdC8Xc7WirMMH1ob)
+
+[2. MobaXterm-Installation](https://juxitech.feishu.cn/docx/OAICdMDl9ozdDjx92uocVYrcnQq#doxcnhziIgp0c1zlNjRYXoF8qQd)
+
+[2.1. MobaXterm herunterladen](https://juxitech.feishu.cn/docx/OAICdMDl9ozdDjx92uocVYrcnQq#doxcnKFBDKQBtCsUo6OslblLvRd)
+
+[2.2. MobaXterm installieren](https://juxitech.feishu.cn/docx/OAICdMDl9ozdDjx92uocVYrcnQq#doxcnShWWp90NBCbz0VWkpDMTjW)
+
+[3. Verwendung von MobaXterm](https://juxitech.feishu.cn/docx/OAICdMDl9ozdDjx92uocVYrcnQq#doxcnTFGoxRBZ8Eszi1NVvBXlGg)
+
+[4. MobaXterm: SFTP-Fernzugriff](https://juxitech.feishu.cn/docx/OAICdMDl9ozdDjx92uocVYrcnQq#doxcnQj3cuCUnWzEuT4GNupwpeh)
+
 ## 1. MobaXterm
 
 MobaXterm ist ein leistungsstarkes Remote-Tool, das Remote-Werkzeuge wie SHH, VNC, FTP und andere integriert.

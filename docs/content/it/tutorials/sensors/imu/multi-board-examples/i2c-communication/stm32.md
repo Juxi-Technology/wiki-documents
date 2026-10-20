@@ -1,9 +1,9 @@
 ---
-title: "STM32"
+title: "STM32 F103C8T6"
 description: "Questo esempio usa il STM32F103C8T6, un PC Windows, diversi cavi jumper e il sensore di assetto IMU."
 ---
 
-# STM32
+# STM32 F103C8T6
 
 Questo esempio usa il STM32F103C8T6, un PC Windows, diversi cavi jumper e il sensore di assetto IMU.
 

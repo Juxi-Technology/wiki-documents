@@ -17,6 +17,7 @@ Hochpräzise 6/9/10-Achsen-IMU mit integrierter Sensor-Fusion für stabile Echtz
 
 - [IMU-Modul-Startseite](./imu/index.md)
 - [IMU-Produktinfo](./imu/product-info.md)
+- [Web-Host-Konsole](./imu/web-host-console.md)
 - [ROS1-Beispiel](./imu/ros-examples/ros1.md)
 - [ROS2-Beispiel](./imu/ros-examples/ros2.md)
 - [Multi-Board-Beispiele](./imu/multi-board-examples/overview.md)
@@ -31,17 +32,17 @@ Hochpräzise 6/9/10-Achsen-IMU mit integrierter Sensor-Fusion für stabile Echtz
 
 #### I2C-Kommunikation
 - [Arduino](./imu/multi-board-examples/i2c-communication/arduino.md)
-- [Jetson](./imu/multi-board-examples/i2c-communication/jetson.md)
-- [Raspberry Pi](./imu/multi-board-examples/i2c-communication/raspberry-pi.md)
-- [RDK](./imu/multi-board-examples/i2c-communication/rdk.md)
-- [STM32](./imu/multi-board-examples/i2c-communication/stm32.md)
+- [Jetson-Serie](./imu/multi-board-examples/i2c-communication/jetson.md)
+- [Raspberry Pi 5](./imu/multi-board-examples/i2c-communication/raspberry-pi.md)
+- [RDK-Serie](./imu/multi-board-examples/i2c-communication/rdk.md)
+- [STM32 F103C8T6](./imu/multi-board-examples/i2c-communication/stm32.md)
 
 #### Serielle Kommunikation
 - [Arduino](./imu/multi-board-examples/serial-communication/arduino.md)
-- [Jetson](./imu/multi-board-examples/serial-communication/jetson.md)
-- [Raspberry Pi](./imu/multi-board-examples/serial-communication/raspberry-pi.md)
-- [RDK](./imu/multi-board-examples/serial-communication/rdk.md)
-- [STM32](./imu/multi-board-examples/serial-communication/stm32.md)
+- [Jetson-Serie](./imu/multi-board-examples/serial-communication/jetson.md)
+- [Raspberry Pi 5](./imu/multi-board-examples/serial-communication/raspberry-pi.md)
+- [RDK-Serie](./imu/multi-board-examples/serial-communication/rdk.md)
+- [STM32 F103C8T6](./imu/multi-board-examples/serial-communication/stm32.md)
 
 ### GPS- & BeiDou-Modul
 

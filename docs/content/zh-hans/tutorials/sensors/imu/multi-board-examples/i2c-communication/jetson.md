@@ -1,9 +1,9 @@
 ---
-title: "Jetson"
+title: "Jetson系列"
 description: "IMU 姿态传感器与 Jetson Orin NX 的 I2C 通信教程：连接 I2C 接口，查看设备状态并读取姿态数据。"
 ---
 
-# Jetson
+# Jetson系列
 
 ## 1. 连接设备
 
@@ -44,8 +44,7 @@ sudo apt install -y python3-smbus2
 
 3.2 传输文件
 
-IMU_ROS2.zip
-
+[IMU_ROS2.zip](/downloads/IMU_ROS2.zip)
 如果还不会使用MobaXterm传输文件的朋友，请查看以下网页MobaXterm详细安装和操作方法：[文件远程传输](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 
 通过MobaXterm软件将 解压后的文件 拖入 树莓派5 上。

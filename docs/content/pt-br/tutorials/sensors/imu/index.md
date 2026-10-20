@@ -139,6 +139,7 @@ python calibration/calibrate.py --port /dev/ttyUSB0
 
 - **Módulo de Navegação Inercial IMU**
   - [Informações do Produto](./product-info.md)
+  - [Console web do host](./web-host-console.md)
   - [Calibração IMU](./calibration.md)
   - [Transferência remota de arquivos](./remote-file-transfer.md)
   - [Transferência de arquivos via SSH](./ssh-file-transfer.md)
@@ -147,16 +148,16 @@ python calibration/calibrate.py --port /dev/ttyUSB0
   - [Comunicação PC](./multi-board-examples/pc-communication.md)
 - **Comunicação I2C**
   - [Arduino](./multi-board-examples/i2c-communication/arduino.md)
-  - [Jetson](./multi-board-examples/i2c-communication/jetson.md)
-  - [Raspberry Pi](./multi-board-examples/i2c-communication/raspberry-pi.md)
-  - [RDK](./multi-board-examples/i2c-communication/rdk.md)
-  - [STM32](./multi-board-examples/i2c-communication/stm32.md)
+  - [Série Jetson](./multi-board-examples/i2c-communication/jetson.md)
+  - [Raspberry Pi 5](./multi-board-examples/i2c-communication/raspberry-pi.md)
+  - [Série RDK](./multi-board-examples/i2c-communication/rdk.md)
+  - [STM32 F103C8T6](./multi-board-examples/i2c-communication/stm32.md)
 - **Comunicação Serial**
   - [Arduino](./multi-board-examples/serial-communication/arduino.md)
-  - [Jetson](./multi-board-examples/serial-communication/jetson.md)
-  - [Raspberry Pi](./multi-board-examples/serial-communication/raspberry-pi.md)
-  - [RDK](./multi-board-examples/serial-communication/rdk.md)
-  - [STM32](./multi-board-examples/serial-communication/stm32.md)
+  - [Série Jetson](./multi-board-examples/serial-communication/jetson.md)
+  - [Raspberry Pi 5](./multi-board-examples/serial-communication/raspberry-pi.md)
+  - [Série RDK](./multi-board-examples/serial-communication/rdk.md)
+  - [STM32 F103C8T6](./multi-board-examples/serial-communication/stm32.md)
 - **Exemplos ROS**
   - [Aplicação ROS1](./ros-examples/ros1.md)
   - [Aplicação ROS2](./ros-examples/ros2.md)

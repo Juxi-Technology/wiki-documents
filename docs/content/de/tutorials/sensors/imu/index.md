@@ -56,7 +56,7 @@ lrwxrwxrwx 1 root root 7 1月 22 10:00 /dev/imu-serial -> ttyUSB0
 
 ### Serielle Kommunikation
 
-1. **In ~/IMU_Library wechseln und IMU_Serial_Library.py ausführen**
+1. **Wechseln Sie in das Verzeichnis ~/IMU_Library/IMU_Library und führen Sie die Datei IMU_Serial_Library.py aus**
 
 ```PowerShell
 cd ~/imu_ros1/src/IMU_ROS1/IMU_Library/IMU_Library
@@ -69,7 +69,7 @@ python3 IMU_Serial_Library.py
 
 ### I2C-Kommunikation
 
-1. **In ~/IMU_Library wechseln und IMU_I2C_Library.py ausführen**
+1. **Wechseln Sie in das Verzeichnis ~/IMU_Library/IMU_Library und führen Sie die Datei IMU_I2C_Library.py aus**
 
 ```PowerShell
 cd ~/IMU_Library/IMU_Library
@@ -80,7 +80,7 @@ python3 IMU_I2C_Library.py
 
 ### imu-Kalibrierung
 
-1. **In ~/IMU_Library wechseln und imu_calibration_tool.py ausführen**
+1. **Wechseln Sie in das Verzeichnis ~/IMU_Library/IMU_Library und führen Sie die Datei imu_calibration_tool.py aus**
 
 ```PowerShell
 cd ~/IMU_Library/IMU_Library
@@ -146,21 +146,22 @@ python calibration/calibrate.py --port /dev/ttyUSB0
   - [SSH-Dateiübertragung](./ssh-file-transfer.md)
 - **IMU-Trägheitsnavigation**
   - [Produktinformation](./product-info.md)
+  - [Web-Host-Konsole](./web-host-console.md)
 - **Multi-Board-Beispiele**
   - [Multi-Host-Kommunikationsfälle Übersicht](./multi-board-examples/overview.md)
   - [PC-Kommunikation](./multi-board-examples/pc-communication.md)
 - **I2C-Kommunikation**
   - [Arduino](./multi-board-examples/i2c-communication/arduino.md)
-  - [Jetson](./multi-board-examples/i2c-communication/jetson.md)
-  - [Raspberry Pi](./multi-board-examples/i2c-communication/raspberry-pi.md)
-  - [RDK](./multi-board-examples/i2c-communication/rdk.md)
-  - [STM32](./multi-board-examples/i2c-communication/stm32.md)
+  - [Jetson-Serie](./multi-board-examples/i2c-communication/jetson.md)
+  - [Raspberry Pi 5](./multi-board-examples/i2c-communication/raspberry-pi.md)
+  - [RDK-Serie](./multi-board-examples/i2c-communication/rdk.md)
+  - [STM32 F103C8T6](./multi-board-examples/i2c-communication/stm32.md)
 - **Serielle Kommunikation**
   - [Arduino](./multi-board-examples/serial-communication/arduino.md)
-  - [Jetson](./multi-board-examples/serial-communication/jetson.md)
-  - [Raspberry Pi](./multi-board-examples/serial-communication/raspberry-pi.md)
-  - [RDK](./multi-board-examples/serial-communication/rdk.md)
-  - [STM32](./multi-board-examples/serial-communication/stm32.md)
+  - [Jetson-Serie](./multi-board-examples/serial-communication/jetson.md)
+  - [Raspberry Pi 5](./multi-board-examples/serial-communication/raspberry-pi.md)
+  - [RDK-Serie](./multi-board-examples/serial-communication/rdk.md)
+  - [STM32 F103C8T6](./multi-board-examples/serial-communication/stm32.md)
 - **ROS-Beispiele**
   - [ROS1-Anwendung](./ros-examples/ros1.md)
   - [ROS2-Anwendung](./ros-examples/ros2.md)

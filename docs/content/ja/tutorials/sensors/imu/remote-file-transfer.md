@@ -5,6 +5,18 @@ description: "MobaXtermは強力なリモートツールであり、SHH、VNC、
 
 # ファイルリモート転送
 
+[1. MobaXterm](https://juxitech.feishu.cn/docx/OAICdMDl9ozdDjx92uocVYrcnQq#doxcn6Xj5FnZdC8Xc7WirMMH1ob)
+
+[2. MobaXtermのインストール](https://juxitech.feishu.cn/docx/OAICdMDl9ozdDjx92uocVYrcnQq#doxcnhziIgp0c1zlNjRYXoF8qQd)
+
+[2.1. MobaXtermのダウンロード](https://juxitech.feishu.cn/docx/OAICdMDl9ozdDjx92uocVYrcnQq#doxcnKFBDKQBtCsUo6OslblLvRd)
+
+[2.2. MobaXtermのインストール](https://juxitech.feishu.cn/docx/OAICdMDl9ozdDjx92uocVYrcnQq#doxcnShWWp90NBCbz0VWkpDMTjW)
+
+[3. MobaXtermの使用](https://juxitech.feishu.cn/docx/OAICdMDl9ozdDjx92uocVYrcnQq#doxcnTFGoxRBZ8Eszi1NVvBXlGg)
+
+[4. MobaXterm：SFTPリモート](https://juxitech.feishu.cn/docx/OAICdMDl9ozdDjx92uocVYrcnQq#doxcnQj3cuCUnWzEuT4GNupwpeh)
+
 ## 1. MobaXterm
 
 MobaXtermは強力なリモートツールであり、SHH、VNC、FTPなどのリモートツールを統合しています。

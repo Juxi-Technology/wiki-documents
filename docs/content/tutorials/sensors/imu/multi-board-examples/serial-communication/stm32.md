@@ -1,9 +1,9 @@
 ---
-title: "STM32"
+title: "STM32 F103C8T6"
 description: "This routine uses an STM32F103C8T6 core board, a Windows computer, several DuPont wires, and an IMU attitude sensor."
 ---
 
-# STM32
+# STM32 F103C8T6
 
 This routine uses an STM32F103C8T6 core board, a Windows computer, several DuPont wires, and an IMU attitude sensor. 
 
@@ -22,7 +22,7 @@ Use Keil5 software to open USART.uvprojx, and burn the program into the STM32F10
 Please refer to the source code in the materials for the specific code.
 
 ```c++
-//Process RX ring buffer, parse frames and update internal cache
+//Parse the data in the ring buffer, extract complete frames and update the cache
 
 //Process RX ring buffer, parse frames and update internal cache
 

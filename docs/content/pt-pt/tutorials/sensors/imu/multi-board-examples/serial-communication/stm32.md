@@ -1,9 +1,9 @@
 ---
-title: "STM32"
+title: "STM32 F103C8T6"
 description: "Exemplo de comunicação por porta série do módulo IMU com uma placa STM32F103C8T6 num PC Windows, com cablagem, análise do código e leitura dos dados."
 ---
 
-# STM32
+# STM32 F103C8T6
 
 Este exemplo usa uma placa núcleo STM32F103C8T6, um computador Windows, alguns fios Dupont e um sensor de atitude IMU. 
 

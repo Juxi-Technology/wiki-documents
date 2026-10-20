@@ -56,7 +56,7 @@ lrwxrwxrwx 1 root root 7 1月 22 10:00 /dev/imu-serial -> ttyUSB0
 
 ### 串口通訊
 
-1. **進入 ~/IMU_Library/IMU_Library目錄，運行IMU_Serial_Library.py文件**
+1. **進入 ~/IMU_Library/IMU_Library目錄，運行IMU_Serial_Library.py檔案**
 
 ```PowerShell
 cd ~/imu_ros1/src/IMU_ROS1/IMU_Library/IMU_Library 
@@ -69,7 +69,7 @@ python3 IMU_Serial_Library.py
 
 ### I2C通訊
 
-1. **進入 ~/IMU_Library/IMU_Library目錄，運行IMU_I2C_Library.py文件**
+1. **進入 ~/IMU_Library/IMU_Library目錄，運行IMU_I2C_Library.py檔案**
 
 ```PowerShell
 cd ~/IMU_Library/IMU_Library
@@ -80,7 +80,7 @@ python3 IMU_I2C_Library.py
 
 ### imu校準
 
-1. **進入 ~/IMU_Library/IMU_Library目錄，運行imu_calibration_tool.py文件**
+1. **進入 ~/IMU_Library/IMU_Library目錄，運行imu_calibration_tool.py檔案**
 
 ```PowerShell
 cd ~/IMU_Library/IMU_Library
@@ -139,6 +139,7 @@ python calibration/calibrate.py --port /dev/ttyUSB0
 
 - **IMU 慣性導航模組**
   - [產品資料](./product-info.md)
+  - [網頁上位機](./web-host-console.md)
   - [IMU 校準](./calibration.md)
   - [檔案遠程傳輸](./remote-file-transfer.md)
   - [SSH檔案傳輸](./ssh-file-transfer.md)
@@ -147,16 +148,16 @@ python calibration/calibrate.py --port /dev/ttyUSB0
   - [PC 通信](./multi-board-examples/pc-communication.md)
 - **I2C 通信**
   - [Arduino](./multi-board-examples/i2c-communication/arduino.md)
-  - [Jetson](./multi-board-examples/i2c-communication/jetson.md)
-  - [樹莓派](./multi-board-examples/i2c-communication/raspberry-pi.md)
-  - [RDK](./multi-board-examples/i2c-communication/rdk.md)
-  - [STM32](./multi-board-examples/i2c-communication/stm32.md)
+  - [Jetson系列](./multi-board-examples/i2c-communication/jetson.md)
+  - [樹莓派5](./multi-board-examples/i2c-communication/raspberry-pi.md)
+  - [RDK系列](./multi-board-examples/i2c-communication/rdk.md)
+  - [STM32 F103C8T6](./multi-board-examples/i2c-communication/stm32.md)
 - **串口通信**
   - [Arduino](./multi-board-examples/serial-communication/arduino.md)
-  - [Jetson](./multi-board-examples/serial-communication/jetson.md)
-  - [樹莓派](./multi-board-examples/serial-communication/raspberry-pi.md)
-  - [RDK](./multi-board-examples/serial-communication/rdk.md)
-  - [STM32](./multi-board-examples/serial-communication/stm32.md)
+  - [Jetson系列](./multi-board-examples/serial-communication/jetson.md)
+  - [樹莓派5](./multi-board-examples/serial-communication/raspberry-pi.md)
+  - [RDK系列](./multi-board-examples/serial-communication/rdk.md)
+  - [STM32 F103C8T6](./multi-board-examples/serial-communication/stm32.md)
 - **ROS 示例**
   - [ROS1 應用](./ros-examples/ros1.md)
   - [ROS2 應用](./ros-examples/ros2.md)

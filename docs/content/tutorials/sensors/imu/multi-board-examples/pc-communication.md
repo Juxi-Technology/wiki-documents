@@ -19,7 +19,4 @@ Configure the serial port assistant as shown in the figure below,
 
 The data printed by the serial port is unprocessed, and for the specific meaning of the data, please refer to the ** Communication Protocol ** document. 
 
-Serial&amp;I2C Communication Protocol.xlsx
-
-
-
+[Serial&I2C Communication Protocol.xlsx](/downloads/IMU-Protocol.xlsx)

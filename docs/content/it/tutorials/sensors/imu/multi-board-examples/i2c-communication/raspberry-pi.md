@@ -1,9 +1,9 @@
 ---
-title: "Raspberry Pi"
+title: "Raspberry Pi 5"
 description: "Questo tutorial usa la scheda madre Raspberry Pi 5 con l'immagine ufficiale a 64 bit come esempio."
 ---
 
-# Raspberry Pi
+# Raspberry Pi 5
 
 ## 1. Collegare il dispositivo
 
@@ -44,8 +44,7 @@ sudo apt install -y python3-smbus2
 
 3.2 Trasferire i file
 
-IMU_ROS2.zip
-
+[IMU_ROS2.zip](/downloads/IMU_ROS2.zip)
 Se non hai ancora familiarità con l'uso di MobaXterm per trasferire file, consulta la seguente pagina per le istruzioni dettagliate di installazione e utilizzo di MobaXterm: [文件远程传输](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 
 Trascinare i file estratti su Raspberry Pi 5 con MobaXterm.

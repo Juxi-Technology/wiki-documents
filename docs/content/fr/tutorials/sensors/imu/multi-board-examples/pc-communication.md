@@ -1,11 +1,11 @@
 ---
 title: Communication PC
-description: "Attention : si le port série n'est pas reconnu, installer le pilote ch34x"
+description: "Attention : si le port série n'est pas reconnu, installer le pilote ch340"
 ---
 
 # Communication PC
 
-**Attention : si le port série n'est pas reconnu, installer le pilote ch34x**
+**Attention : si le port série n'est pas reconnu, installer le pilote ch340**
 
 1. Connecter le capteur d'attitude IMU au PC via un câble Type-C
 
@@ -19,5 +19,4 @@ Configurer l'assistant série comme illustré ci-dessous
 
 La sortie série contient des données brutes ; leur signification est détaillée dans le document « **Protocole de communication** ».
 
-Module IMU – protocole de communication série et I2C.xlsx
-
+[Module IMU – protocole de communication série et I2C.xlsx](/downloads/IMU-Protocol.xlsx)

@@ -1,9 +1,9 @@
 ---
-title: "Raspberry Pi"
+title: "Raspberry Pi 5"
 description: "IMU attitude sensor serial example on the Raspberry Pi 5: connect over a USB to TTL cable, set a udev port mapping, and print the attitude data."
 ---
 
-# Raspberry Pi
+# Raspberry Pi 5
 
 ## 1. Connect the device
 
@@ -71,8 +71,7 @@ sudo apt install -y python3-smbus2
 
 **3.2 Transfer Files**
 
-IMU_ROS2.zip
-
+[IMU_ROS2.zip](/downloads/IMU_ROS2.zip)
 Friends who are not yet familiar with using MobaXterm to transfer files, please refer to the following webpage for detailed installation and operation methods of MobaXterm:[文件远程传输](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 
 Drag the decompressed files onto Raspberry Pi 5 via MobaXterm software. 

@@ -271,21 +271,22 @@ description: "Juxi Technology 튜토리얼 — 로봇 암과 액세서리, 센�
 - [SSH 파일 전송](/ko/tutorials/sensors/imu/ssh-file-transfer)
   - **IMU 관성 내비게이션**
     - [제품 정보](/ko/tutorials/sensors/imu/product-info)
+    - [웹 호스트 콘솔](/ko/tutorials/sensors/imu/web-host-console)
       - **멀티 보드 예제**
         - [멀티 호스트 통신 케이스 개요](/ko/tutorials/sensors/imu/multi-board-examples/overview)
         - [PC 통신](/ko/tutorials/sensors/imu/multi-board-examples/pc-communication)
           - **I2C 통신**
             - [Arduino](/ko/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino)
-            - [Jetson](/ko/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson)
-            - [라즈베리파이](/ko/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi)
-            - [RDK](/ko/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk)
-            - [STM32](/ko/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32)
+            - [Jetson 시리즈](/ko/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson)
+            - [Raspberry Pi 5](/ko/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi)
+            - [RDK 시리즈](/ko/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk)
+            - [STM32 F103C8T6](/ko/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32)
           - **직렬 통신**
             - [Arduino](/ko/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino)
-            - [Jetson](/ko/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson)
-            - [라즈베리파이](/ko/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi)
-            - [RDK](/ko/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk)
-            - [STM32](/ko/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32)
+            - [Jetson 시리즈](/ko/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson)
+            - [Raspberry Pi 5](/ko/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi)
+            - [RDK 시리즈](/ko/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk)
+            - [STM32 F103C8T6](/ko/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32)
       - **ROS 예제**
         - [ROS1 응용](/ko/tutorials/sensors/imu/ros-examples/ros1)
         - [ROS2 응용](/ko/tutorials/sensors/imu/ros-examples/ros2)

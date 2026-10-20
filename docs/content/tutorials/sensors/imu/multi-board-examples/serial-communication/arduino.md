@@ -22,7 +22,7 @@ This routine uses an Arduino Nano development board, a Windows computer, several
 Please refer to the source code in the materials for the specific code.
 
 ```C++
-//Process RX ring buffer, parse frames and update internal cache
+//Parse the data in the ring buffer, extract complete frames and update the cache
 
 //Process RX ring buffer, parse frames and update internal cache
 

@@ -5,7 +5,7 @@ description: "IMU 자세 센서 PC 통신 예제 — Type-C 케이블로 PC에 �
 
 # PC 통신
 
-**주의: 시리얼 포트가 인식되지 않으면 ch34x 드라이버를 설치하세요**
+**주의: 시리얼 포트가 인식되지 않으면 ch340 드라이버를 설치하세요**
 
 1. IMU 자세 센서를 Type-C 케이블로 PC에 연결
 
@@ -19,5 +19,4 @@ description: "IMU 자세 센서 PC 통신 예제 — Type-C 케이블로 PC에 �
 
 시리얼로 출력되는 것은 처리되지 않은 데이터입니다. 데이터의 의미는 "**통신 프로토콜**" 문서를 참조하세요.
 
-IMU 모듈-시리얼 및 I2C 통신 프로토콜.xlsx
-
+[IMU 모듈-시리얼 및 I2C 통신 프로토콜.xlsx](/downloads/IMU-Protocol.xlsx)

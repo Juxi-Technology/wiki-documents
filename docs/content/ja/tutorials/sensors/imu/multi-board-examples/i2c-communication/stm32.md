@@ -1,9 +1,9 @@
 ---
-title: "STM32"
+title: "STM32 F103C8T6"
 description: "本例はSTM32F103C8T6、Windows PC 1台、ジャンパワイヤ数本、IMU姿勢センサーを使用します。"
 ---
 
-# STM32
+# STM32 F103C8T6
 
 本例はSTM32F103C8T6、Windows PC 1台、ジャンパワイヤ数本、IMU姿勢センサーを使用します。
 

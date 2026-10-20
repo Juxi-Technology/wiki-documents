@@ -17,6 +17,7 @@ Unidad de medición inercial 6/9/10 ejes de alta precisión, sensor fusion integ
 
 - [Inicio del módulo IMU](./imu/index.md)
 - [Información del producto IMU](./imu/product-info.md)
+- [Consola web del host](./imu/web-host-console.md)
 - [Ejemplo ROS1](./imu/ros-examples/ros1.md)
 - [Ejemplo ROS2](./imu/ros-examples/ros2.md)
 - [Ejemplos multi-placa](./imu/multi-board-examples/overview.md)
@@ -31,17 +32,17 @@ Unidad de medición inercial 6/9/10 ejes de alta precisión, sensor fusion integ
 
 #### Comunicación I2C
 - [Arduino](./imu/multi-board-examples/i2c-communication/arduino.md)
-- [Jetson](./imu/multi-board-examples/i2c-communication/jetson.md)
-- [Raspberry Pi](./imu/multi-board-examples/i2c-communication/raspberry-pi.md)
-- [RDK](./imu/multi-board-examples/i2c-communication/rdk.md)
-- [STM32](./imu/multi-board-examples/i2c-communication/stm32.md)
+- [Serie Jetson](./imu/multi-board-examples/i2c-communication/jetson.md)
+- [Raspberry Pi 5](./imu/multi-board-examples/i2c-communication/raspberry-pi.md)
+- [Serie RDK](./imu/multi-board-examples/i2c-communication/rdk.md)
+- [STM32 F103C8T6](./imu/multi-board-examples/i2c-communication/stm32.md)
 
 #### Comunicación serie
 - [Arduino](./imu/multi-board-examples/serial-communication/arduino.md)
-- [Jetson](./imu/multi-board-examples/serial-communication/jetson.md)
-- [Raspberry Pi](./imu/multi-board-examples/serial-communication/raspberry-pi.md)
-- [RDK](./imu/multi-board-examples/serial-communication/rdk.md)
-- [STM32](./imu/multi-board-examples/serial-communication/stm32.md)
+- [Serie Jetson](./imu/multi-board-examples/serial-communication/jetson.md)
+- [Raspberry Pi 5](./imu/multi-board-examples/serial-communication/raspberry-pi.md)
+- [Serie RDK](./imu/multi-board-examples/serial-communication/rdk.md)
+- [STM32 F103C8T6](./imu/multi-board-examples/serial-communication/stm32.md)
 
 ### Módulo GPS y BeiDou
 

@@ -1,9 +1,9 @@
 ---
-title: "Jetson"
+title: "Série Jetson"
 description: "Communication série du capteur d'attitude IMU avec la carte Jetson Orin NX : câblage USB Type-C, mappage des ports et affichage des données d'attitude."
 ---
 
-# Jetson
+# Série Jetson
 
 ## 1. Connecter le périphérique
 
@@ -65,8 +65,7 @@ sudo apt install -y python3-smbus2
 
 3.2 **Transférer les fichiers**
 
-IMU_ROS2.zip
-
+[IMU_ROS2.zip](/downloads/IMU_ROS2.zip)
 Si vous n'êtes pas encore familier avec l'utilisation de MobaXterm pour transférer des fichiers, consultez la page suivante pour l'installation détaillée et le mode d'emploi de MobaXterm : [文件远程传输](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 
 Glisser les fichiers décompressés sur la Jetson Orin NX avec MobaXterm.

@@ -19,7 +19,4 @@ Configure o assistente de porta serial conforme mostrado na figura abaixo,
 
 Os dados impressos pela porta serial não são processados; para o significado específico dos dados, consulte o documento **Protocolo de Comunicação**.
 
-Serial&amp;I2C Communication Protocol.xlsx
-
-
-
+[Serial&I2C Communication Protocol.xlsx](/downloads/IMU-Protocol.xlsx)

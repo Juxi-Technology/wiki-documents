@@ -1,11 +1,11 @@
 ---
 title: Comunicación PC
-description: "Nota: si el puerto serie no se reconoce, instale el controlador ch34x"
+description: "Nota: si el puerto serie no se reconoce, instale el controlador ch340"
 ---
 
 # Comunicación PC
 
-**Nota: si el puerto serie no se reconoce, instale el controlador ch34x**
+**Nota: si el puerto serie no se reconoce, instale el controlador ch340**
 
 1. Conectar el sensor de actitud IMU al PC mediante un cable Type-C
 
@@ -19,5 +19,4 @@ Configurar el asistente serie como se muestra a continuación
 
 La salida serie contiene datos sin procesar; su significado se detalla en el documento « **Protocolo de comunicación** ».
 
-Módulo IMU – protocolo de comunicación serie e I2C.xlsx
-
+[Módulo IMU – protocolo de comunicación serie e I2C.xlsx](/downloads/IMU-Protocol.xlsx)

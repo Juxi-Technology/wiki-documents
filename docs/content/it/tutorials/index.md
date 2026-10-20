@@ -271,21 +271,22 @@ Benvenuto nella pagina dei tutorial! Qui puoi trovare tutti i tutorial d'uso dei
 - [Trasferimento di file tramite SSH](/it/tutorials/sensors/imu/ssh-file-transfer)
   - **Navigazione inerziale IMU**
     - [Informazioni prodotto](/it/tutorials/sensors/imu/product-info)
+    - [Console host Web](/it/tutorials/sensors/imu/web-host-console)
       - **Esempi multi-scheda**
         - [Panoramica dei casi multi-host](/it/tutorials/sensors/imu/multi-board-examples/overview)
         - [Comunicazione PC](/it/tutorials/sensors/imu/multi-board-examples/pc-communication)
           - **Comunicazione I2C**
             - [Arduino](/it/tutorials/sensors/imu/multi-board-examples/i2c-communication/arduino)
-            - [Jetson](/it/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson)
-            - [Raspberry Pi](/it/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi)
-            - [RDK](/it/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk)
-            - [STM32](/it/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32)
+            - [Serie Jetson](/it/tutorials/sensors/imu/multi-board-examples/i2c-communication/jetson)
+            - [Raspberry Pi 5](/it/tutorials/sensors/imu/multi-board-examples/i2c-communication/raspberry-pi)
+            - [Serie RDK](/it/tutorials/sensors/imu/multi-board-examples/i2c-communication/rdk)
+            - [STM32 F103C8T6](/it/tutorials/sensors/imu/multi-board-examples/i2c-communication/stm32)
           - **Comunicazione seriale**
             - [Arduino](/it/tutorials/sensors/imu/multi-board-examples/serial-communication/arduino)
-            - [Jetson](/it/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson)
-            - [Raspberry Pi](/it/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi)
-            - [RDK](/it/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk)
-            - [STM32](/it/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32)
+            - [Serie Jetson](/it/tutorials/sensors/imu/multi-board-examples/serial-communication/jetson)
+            - [Raspberry Pi 5](/it/tutorials/sensors/imu/multi-board-examples/serial-communication/raspberry-pi)
+            - [Serie RDK](/it/tutorials/sensors/imu/multi-board-examples/serial-communication/rdk)
+            - [STM32 F103C8T6](/it/tutorials/sensors/imu/multi-board-examples/serial-communication/stm32)
       - **Esempi ROS**
         - [Applicazione ROS1](/it/tutorials/sensors/imu/ros-examples/ros1)
         - [Applicazione ROS2](/it/tutorials/sensors/imu/ros-examples/ros2)

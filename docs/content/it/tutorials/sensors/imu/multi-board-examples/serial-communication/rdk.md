@@ -1,9 +1,9 @@
 ---
-title: "RDK"
+title: "Serie RDK"
 description: "Sensore di assetto IMU e RDK X5 via porta seriale: collegamento USB, mappatura della porta e lettura dei dati di assetto."
 ---
 
-# RDK
+# Serie RDK
 
 ## 1. Collegare il dispositivo
 
@@ -63,8 +63,7 @@ sudo apt install -y python3-smbus2
 
 3.2 **Trasferire i file**
 
-IMU_ROS2.zip
-
+[IMU_ROS2.zip](/downloads/IMU_ROS2.zip)
 Se non hai ancora familiarità con l'uso di MobaXterm per trasferire file, consulta la seguente pagina per le istruzioni dettagliate di installazione e utilizzo di MobaXterm: [文件远程传输](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 
 Trascinare i file estratti su RDK X5 con MobaXterm.

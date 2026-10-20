@@ -1,9 +1,9 @@
 ---
-title: "Jetson"
+title: "Jetson Series"
 description: "IMU attitude sensor serial example on the Jetson Orin NX: connect over a USB to TTL cable, map the port with udev, and read attitude data in Python."
 ---
 
-# Jetson
+# Jetson Series
 
 ## 1. Connect the device
 
@@ -71,8 +71,7 @@ sudo apt install -y python3-smbus2
 
 **3.2 Transfer Files**
 
-IMU_ROS2.zip
-
+[IMU_ROS2.zip](/downloads/IMU_ROS2.zip)
 Friends who are not yet familiar with using MobaXterm to transfer files, please refer to the following webpage for detailed installation and operation methods of MobaXterm:[文件远程传输](https://juxitech.feishu.cn/wiki/KB0Jw2o6Wis9f0ksyeFceVmgnfd)
 
 Drag the extracted files onto Jetson via MobaXterm software. 

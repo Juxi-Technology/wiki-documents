@@ -1,11 +1,11 @@
 ---
 title: PC-Kommunikation
-description: "Hinweis: Wenn der serielle Port nicht erkannt wird, den ch34x-Treiber installieren"
+description: "Hinweis: Wenn der serielle Port nicht erkannt wird, den ch340-Treiber installieren"
 ---
 
 # PC-Kommunikation
 
-**Hinweis: Wenn der serielle Port nicht erkannt wird, den ch34x-Treiber installieren**
+**Hinweis: Wenn der serielle Port nicht erkannt wird, den ch340-Treiber installieren**
 
 1. IMU-Lagesensor per Typ-C-Kabel mit dem PC verbinden
 
@@ -19,5 +19,4 @@ Den seriellen Assistenten wie unten abgebildet konfigurieren
 
 Der serielle Ausgang enthält unverarbeitete Daten; die Bedeutung der Daten siehe Dokument „**Kommunikationsprotokoll**".
 
-IMU-Modul – serielles und I2C-Kommunikationsprotokoll.xlsx
-
+[IMU-Modul – serielles und I2C-Kommunikationsprotokoll.xlsx](/downloads/IMU-Protocol.xlsx)

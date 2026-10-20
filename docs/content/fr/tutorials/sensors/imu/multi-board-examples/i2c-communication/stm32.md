@@ -1,9 +1,9 @@
 ---
-title: "STM32"
+title: "STM32 F103C8T6"
 description: "Cet exemple utilise le STM32F103C8T6, un PC Windows, plusieurs câbles de liaison et le capteur d'attitude IMU."
 ---
 
-# STM32
+# STM32 F103C8T6
 
 Cet exemple utilise le STM32F103C8T6, un PC Windows, plusieurs câbles de liaison et le capteur d'attitude IMU.
 

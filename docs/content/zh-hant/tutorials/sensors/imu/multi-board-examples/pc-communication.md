@@ -19,5 +19,4 @@ description: "IMU 慣導模組 PC 通信教程：透過 Type-C 連接電腦並�
 
 串口打印的是沒有經過處理的數據，具體數據含義可參考 “**通信協議**” 文檔。
 
-
-
+[IMU模組-串口與I2C通訊協定.xlsx](/downloads/IMU-Protocol.xlsx)

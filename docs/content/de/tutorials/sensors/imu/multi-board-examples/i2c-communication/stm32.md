@@ -1,9 +1,9 @@
 ---
-title: "STM32"
+title: "STM32 F103C8T6"
 description: "Dieses Beispiel verwendet den STM32F103C8T6, einen Windows-PC, mehrere Jumper-Kabel und den IMU-Lagesensor."
 ---
 
-# STM32
+# STM32 F103C8T6
 
 Dieses Beispiel verwendet den STM32F103C8T6, einen Windows-PC, mehrere Jumper-Kabel und den IMU-Lagesensor.
 
