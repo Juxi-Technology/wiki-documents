@@ -22,7 +22,7 @@ description: "Juxi Technologyロボットアクセサリシリーズチュート
   - [トラブルシューティング](/ja/tutorials/accessories/2dof-camera-gimbal/05-Troubleshooting)
   - [製品情報](/ja/tutorials/accessories/2dof-camera-gimbal/Product-Info)
 
-- [心拍・血中酸素センサー](./heart-rate-spo2.md)
+- [心拍・血中酸素センサー](./heart-rate-spo2/index.md)
 
 ### KWS音声認識モジュール
 
@@ -107,6 +107,7 @@ CI1302 オフライン音声対話モジュールの全プラットフォーム 
 - [磁気エンコーダ STS サーボ - メモリテーブル解析](./feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis.md)
 - [ポテンショメータ SCSCL サーボ - メモリテーブル解析](./feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis.md)
 - [SCS0009 サーボデバッグツール使用チュートリアル](./feetech/SCS0009-Debug-Tool.md)
+- [Feetech バスサーボ Web デバッグ（SCS0009 / STS3215 / HD1910）](./feetech/Feetech-Web-Debugger.md)
 
 ## サポート
 

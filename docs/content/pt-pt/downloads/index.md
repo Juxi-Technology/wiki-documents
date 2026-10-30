@@ -26,6 +26,8 @@ Central de downloads para os produtos da Juxi Technology — firmware, SDK, soft
 ### AmazingHand
 
 - 📦 [Repositório Open Source AmazingHand](https://github.com/Juxi-Technology/AmazingHand)(código de controle Python + protocolo TTL)
+- 📦 [delivery_package.zip](/downloads/delivery_package.zip)（Pacote de entrega PWM）
+- 📦 [Amazinghand-web.zip](/downloads/Amazinghand-web.zip)（Pacote de implementação local）
 
 ---
 - 📦 [FD.rar](/downloads/FD.rar)

@@ -5,6 +5,10 @@ description: "ブラウザから AmazingHand 多指ハンドを操作 —— 左
 
 # AmazingHand Web コントロール
 
+> **オンライン版：** <https://juxi-technology.github.io/AmazingHand/Amazinghand-web-io/>（インストール不要。以下はローカルデプロイ方法です）
+
+> **ローカルデプロイパッケージ：** [Amazinghand-web.zip](/downloads/Amazinghand-web.zip)
+
 ブラウザから AmazingHand 多指ハンドを操作 —— **左手 / 右手**のどちらでも、操作方法は 2 通り：
 
 - **マニュアル** —— サーボスライダー 8 本 + プリセットポーズ 19 種 + ワンクリックで中間位置へ復帰

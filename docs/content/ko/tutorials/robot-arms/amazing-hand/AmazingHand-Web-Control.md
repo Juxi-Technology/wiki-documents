@@ -5,6 +5,10 @@ description: "브라우저에서 AmazingHand dexterous hand를 제어합니다 �
 
 # AmazingHand 웹 제어
 
+> **온라인 버전:** <https://juxi-technology.github.io/AmazingHand/Amazinghand-web-io/> (설치 없이 사용 가능하며, 아래는 로컬 배포 방법입니다)
+
+> **로컬 배포 패키지：** [Amazinghand-web.zip](/downloads/Amazinghand-web.zip)
+
 브라우저에서 AmazingHand dexterous hand를 제어합니다 — **왼손 또는 오른손**, 조작 방식은 두 가지입니다:
 
 - **Manual** — 서보 슬라이더 8개 + 프리셋 포즈 19개 + 클릭 한 번으로 중간 위치 복귀

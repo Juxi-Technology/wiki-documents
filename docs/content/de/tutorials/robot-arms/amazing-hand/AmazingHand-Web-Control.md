@@ -5,6 +5,10 @@ description: "Steuere die Dexterous Hand AmazingHand über einen Browser — lin
 
 # AmazingHand Web Control
 
+> **Online-Version:** <https://juxi-technology.github.io/AmazingHand/Amazinghand-web-io/> (keine Installation; unten folgt die lokale Bereitstellung)
+
+> **Lokales Bereitstellungspaket：** [Amazinghand-web.zip](/downloads/Amazinghand-web.zip)
+
 Steuere die Dexterous Hand AmazingHand über einen Browser — **linke oder rechte Hand**, mit zwei Steuerungsarten:
 
 - **Manuell** — 8 Servo-Schieberegler + 19 Preset-Posen + Rückkehr zur Mittelstellung mit einem Klick

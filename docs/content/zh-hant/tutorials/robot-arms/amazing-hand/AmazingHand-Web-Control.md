@@ -5,6 +5,10 @@ description: "用瀏覽器驅動 AmazingHand 靈巧手 —— 左手或右手皆
 
 # AmazingHand 網頁控制
 
+> **線上版：** <https://juxi-technology.github.io/AmazingHand/Amazinghand-web-io/>（無需安裝；以下為本地部署方式）
+
+> **本地部署包：** [Amazinghand-web.zip](/downloads/Amazinghand-web.zip)
+
 用瀏覽器驅動 AmazingHand 靈巧手 —— **左手或右手皆可**，並提供兩種操控方式：
 
 - **手動控制** —— 8 個伺服馬達滑桿 + 19 個預設姿態 + 一鍵回到中位

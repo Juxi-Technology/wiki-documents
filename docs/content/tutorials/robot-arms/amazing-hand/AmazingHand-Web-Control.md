@@ -5,6 +5,10 @@ description: "Drive the AmazingHand dexterous hand from a browser — left or ri
 
 # AmazingHand Web Control
 
+> **Online version:** <https://juxi-technology.github.io/AmazingHand/Amazinghand-web-io/> (no installation; the rest of this page describes local deployment)
+
+> **Local deployment package：** [Amazinghand-web.zip](/downloads/Amazinghand-web.zip)
+
 Drive the AmazingHand dexterous hand from a browser — **left or right hand**, with two ways to steer it:
 
 - **Manual** — 8 servo sliders + 19 preset poses + one-click return to middle

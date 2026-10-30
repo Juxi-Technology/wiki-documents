@@ -5,6 +5,10 @@ description: "Pilotez la main dextre AmazingHand depuis un navigateur — main g
 
 # Contrôle web AmazingHand
 
+> **Version en ligne :** <https://juxi-technology.github.io/AmazingHand/Amazinghand-web-io/> (aucune installation ; la suite décrit le déploiement local)
+
+> **Paquet de déploiement local：** [Amazinghand-web.zip](/downloads/Amazinghand-web.zip)
+
 Pilotez la main dextre AmazingHand depuis un navigateur — **main gauche ou droite**, avec deux façons de la commander :
 
 - **Manuel** — 8 curseurs de servo + 19 poses prédéfinies + retour au milieu en un clic

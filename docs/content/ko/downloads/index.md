@@ -26,6 +26,8 @@ description: "Juxi Technology 제품 펌웨어, SDK, 호스트 소프트웨어 �
 ### AmazingHand
 
 - 📦 [AmazingHand 오픈소스 저장소](https://github.com/Juxi-Technology/AmazingHand)(Python 제어 코드 + TTL 프로토콜)
+- 📦 [delivery_package.zip](/downloads/delivery_package.zip)（PWM 버전 배포 패키지）
+- 📦 [Amazinghand-web.zip](/downloads/Amazinghand-web.zip)（로컬 배포 패키지）
 
 ---
 - 📦 [FD.rar](/downloads/FD.rar)

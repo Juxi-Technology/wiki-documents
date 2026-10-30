@@ -80,6 +80,7 @@ A aprendizagem por imitação neste tutorial é exclusivamente VLA.
 - [Teleoperação sem fios do SO-ARM101 (versão ESP32-NanoCam)](/pt-pt/tutorials/robot-arms/so-arm101/SO-ARM101-NanoCam-Wireless-Teleop)
 - [Resolução de problemas de teleoperação](/pt-pt/tutorials/robot-arms/so-arm101/SO-ARM101-NanoCam-Troubleshooting)
 - [Tutorial de utilização da ferramenta de calibração de servos da série SoARM](/pt-pt/tutorials/robot-arms/so-arm101/SO-ARM101-Servo-Calibration-Tool)
+- [Série So-ARM – Calibração de servos STS3215 – versão Web](/pt-pt/tutorials/robot-arms/so-arm101/SO-ARM101-Web-Calibration)
 - [Controlo de simulação ROS2](/pt-pt/tutorials/robot-arms/so-arm101/ROS2-Simulation-Control)
 - [Compatibilidade PyTorch no Jetson Orin](/pt-pt/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility)
 

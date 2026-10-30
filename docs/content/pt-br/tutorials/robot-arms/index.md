@@ -24,6 +24,7 @@ Braço robótico de mesa open source de 6 eixos, com suporte ao LeRobot e a outr
 - [Teleoperação sem fio do SO-ARM101 (versão ESP32-NanoCam)](./so-arm101/SO-ARM101-NanoCam-Wireless-Teleop.md)
 - [Tutorial de dois braços (dois seguidores) do SO-ARM101](./so-arm101/SO-ARM101-Bi-Arm-Tutorial.md)
 - [Ferramenta de calibração de servos da série SoARM](./so-arm101/SO-ARM101-Servo-Calibration-Tool.md)
+- [Série So-ARM – Calibração de servos STS3215 – versão Web](./so-arm101/SO-ARM101-Web-Calibration.md)
 
 #### Série SO-ARM101
 - [Instalação do Suporte de Braço e Kit de Câmera SO-ARM100&101](./so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation.md)
@@ -176,19 +177,23 @@ Braço robótico de mesa open source de 6 eixos, com suporte ao LeRobot e a outr
 
 Mão hábil biônica open source, que oferece operação com múltiplos dedos de alta precisão.
 
+- [Tutorial AmazingHand](./amazing-hand/index.md)
 - [Controle de interface do AmazingHand](./amazing-hand/AmazingHand-Interface-Control.md)
+- [Guia Arduino Nano](./amazing-hand/Arduino-Nano-Tutorial.md)
 - [AmazingHand Web Control](./amazing-hand/AmazingHand-Web-Control.md)
 - [Exemplo oficial do AmazingHand](./amazing-hand/AmazingHand-Official-Example.md)
 - [Depuração TTL do AmazingHand](./amazing-hand/AmazingHand-TTL-Debugging.md)
 
 #### AmazingHand
 - [AmazingHand Mão hábil — Informações do produto](./amazing-hand/product-info.md)
+- [Instalação do kit de câmera de ambiente](./amazing-hand/Camera-Kit-Installation.md)
 
 #### Depuração servo PWM
 - [01-Controle visual por GUI](./amazing-hand/pwm-debugging/01-GUI-Visual-Control.md)
 - [02-Tutorial de rastreamento de gestos](./amazing-hand/pwm-debugging/02-Gesture-Tracking.md)
 - [03-Versão com servomotor PWM-Manual de uso](./amazing-hand/pwm-debugging/03-PWM-Servo-Manual.md)
 - [04-Versão de servomotor serial-Instruções de uso](./amazing-hand/pwm-debugging/04-Serial-Servo-Guide.md)
+- [Tutorial completo](./amazing-hand/pwm-debugging/05-Full-Workflow-Tutorial.md)
 
 #### Rastreamento de gestos
 - [Linux (Ubuntu) implantação e execução com um clique](./amazing-hand/gesture-tracking/01-Ubuntu.md)

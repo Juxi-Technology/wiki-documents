@@ -5,6 +5,8 @@ description: "Ce micrologiciel s'exécute sur une carte de développement ESP32-
 
 # 03-Version servomoteurs PWM - Manuel d'utilisation
 
+> **Paquet de livraison PWM：** [delivery_package.zip](/downloads/delivery_package.zip)（GUI / suivi des gestes / firmware / documentation）
+
 ## Sommaire
 
 1. Vue d'ensemble

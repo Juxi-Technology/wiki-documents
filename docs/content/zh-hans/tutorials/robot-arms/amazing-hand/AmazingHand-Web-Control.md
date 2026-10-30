@@ -5,6 +5,10 @@ description: "用浏览器控制 AmazingHand 灵巧手，左手 / 右手两种�
 
 # AmazingHand 网页控制
 
+> **在线版：** <https://juxi-technology.github.io/AmazingHand/Amazinghand-web-io/>（无需安装；下面为本地部署方式）
+
+> **本地部署包：** [Amazinghand-web.zip](/downloads/Amazinghand-web.zip)
+
 用浏览器控制 AmazingHand 灵巧手，**左手 / 右手两种模式**，两种操作方式：
 
 - **手动控制** —— 8 个舵机滑块 + 19 个预设姿态 + 一键回中位

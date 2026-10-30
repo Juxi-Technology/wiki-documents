@@ -15,8 +15,10 @@ AmazingHand-main.zip
 ## 硬件准备
 
 > 模型文件可在 [Onshape](https://cad.onshape.com/documents/430ff184cf3dd9557aaff2be/w/e3658b7152c139971d22c688/e/d79fbb3641873de0a515037e) 查看或自行下载（含 URDF）。
-> 
-> 
+
+灵巧手的 [MuJoCo 模型](https://github.com/pollen-robotics/AmazingHand/tree/main/Demo/AHSimulation/AHSimulation)
+
+![图示](../../../../../../public/images/tutorials/robot-arms/amazing-hand/gesture-tracking/ubuntu.png)
 
 ---
 

@@ -21,8 +21,10 @@ Ce tutoriel est basé sur la Demo officielle d'AmazingHand (main dextre de Polle
 |Caméra|Caméra intégrée au Mac ou caméra USB|
 
 > Les fichiers de modèle peuvent être consultés ou téléchargés sur [Onshape](https://cad.onshape.com/documents/430ff184cf3dd9557aaff2be/w/e3658b7152c139971d22c688/e/d79fbb3641873de0a515037e) (URDF inclus).
-> 
-> 
+
+Le [modèle MuJoCo](https://github.com/pollen-robotics/AmazingHand/tree/main/Demo/AHSimulation/AHSimulation) de la main
+
+![Illustration](../../../../../../public/images/tutorials/robot-arms/amazing-hand/gesture-tracking/macos.png)
 
 ---
 

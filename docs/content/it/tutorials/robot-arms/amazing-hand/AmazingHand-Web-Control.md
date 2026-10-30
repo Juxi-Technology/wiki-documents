@@ -5,6 +5,10 @@ description: "Pilota la mano robotica AmazingHand direttamente dal browser — m
 
 # AmazingHand Web Control
 
+> **Versione online:** <https://juxi-technology.github.io/AmazingHand/Amazinghand-web-io/> (nessuna installazione; di seguito la distribuzione locale)
+
+> **Pacchetto di distribuzione locale：** [Amazinghand-web.zip](/downloads/Amazinghand-web.zip)
+
 Pilota la mano robotica AmazingHand direttamente dal browser — **mano destra o sinistra**, con due modi per comandarla:
 
 - **Manuale** — 8 slider per i servo + 19 pose predefinite + ritorno alla posizione centrale con un clic

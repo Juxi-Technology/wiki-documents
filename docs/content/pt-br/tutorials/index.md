@@ -148,6 +148,7 @@ Bem-vindo à página de Tutoriais! Aqui você encontra todos os tutoriais de uso
     - [Solução de problemas de teleoperação](/pt-br/tutorials/robot-arms/so-arm101/SO-ARM101-NanoCam-Troubleshooting)
     - [Tutorial de dois braços (dois seguidores) do SO-ARM101](/pt-br/tutorials/robot-arms/so-arm101/SO-ARM101-Bi-Arm-Tutorial)
     - [Tutorial de uso da ferramenta de calibração de servos da série SoARM](/pt-br/tutorials/robot-arms/so-arm101/SO-ARM101-Servo-Calibration-Tool)
+    - [Série So-ARM – Calibração de servos STS3215 – versão Web](/pt-br/tutorials/robot-arms/so-arm101/SO-ARM101-Web-Calibration)
       - **Curso LeRobot**
         - [Curso completo LeRobot](/pt-br/tutorials/robot-arms/so-arm101/lerobot/)
           - **1. Ambiente LeRobot**
@@ -249,9 +250,12 @@ Bem-vindo à página de Tutoriais! Aqui você encontra todos os tutoriais de uso
     - [Montagem do kit montado](/pt-br/tutorials/robot-arms/xlerobot/03-Assembly-Assembled-Kit)
     - [Montagem do kit em peças](/pt-br/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit)
   - **AmazingHand**
+    - [Tutorial AmazingHand](/pt-br/tutorials/robot-arms/amazing-hand/)
     - [Controle de Interface da Mão Robótica](/pt-br/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control)
+    - [Guia Arduino Nano](/pt-br/tutorials/robot-arms/amazing-hand/Arduino-Nano-Tutorial)
     - [AmazingHand Web Control](/pt-br/tutorials/robot-arms/amazing-hand/AmazingHand-Web-Control)
     - [AmazingHand Mão hábil — Informações do produto](/pt-br/tutorials/robot-arms/amazing-hand/product-info)
+    - [Instalação do kit de câmera de ambiente](/pt-br/tutorials/robot-arms/amazing-hand/Camera-Kit-Installation)
     - [Tutorial do Exemplo Oficial da Mão Robótica](/pt-br/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example)
     - [Tutorial de Depuração da Mão Hábil (servo TTL)](/pt-br/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging)
       - **Depuração servo PWM**
@@ -259,6 +263,7 @@ Bem-vindo à página de Tutoriais! Aqui você encontra todos os tutoriais de uso
         - [02-Tutorial de rastreamento de gestos](/pt-br/tutorials/robot-arms/amazing-hand/pwm-debugging/02-Gesture-Tracking)
         - [03-Versão com servomotor PWM-Manual de uso](/pt-br/tutorials/robot-arms/amazing-hand/pwm-debugging/03-PWM-Servo-Manual)
         - [04-Versão de servomotor serial-Instruções de uso](/pt-br/tutorials/robot-arms/amazing-hand/pwm-debugging/04-Serial-Servo-Guide)
+        - [Tutorial completo](/pt-br/tutorials/robot-arms/amazing-hand/pwm-debugging/05-Full-Workflow-Tutorial)
       - **Rastreamento de gestos**
         - [Linux (Ubuntu) implantação e execução com um clique](/pt-br/tutorials/robot-arms/amazing-hand/gesture-tracking/01-Ubuntu)
         - [Implantação e execução com um clique no Windows](/pt-br/tutorials/robot-arms/amazing-hand/gesture-tracking/02-Windows)
@@ -284,6 +289,7 @@ Bem-vindo à página de Tutoriais! Aqui você encontra todos os tutoriais de uso
     - [Tabela de Memória do Servo STS com Encoder Magnético](/pt-br/tutorials/accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis)
     - [Tabela de Memória do Servo SCSCL com Potenciômetro](/pt-br/tutorials/accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis)
     - [Tutorial de uso da ferramenta de depuração do servo SCS0009](/pt-br/tutorials/accessories/feetech/SCS0009-Debug-Tool)
+    - [Depurador Web de servos de barramento Feetech (SCS0009 / STS3215 / HD1910)](/pt-br/tutorials/accessories/feetech/Feetech-Web-Debugger)
   - **Módulo de transmissão de vídeo ESP32-NanoCam**
     - [Início rápido do ESP32-NanoCam](/pt-br/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Quick-Start)
     - [Especificações de hardware do ESP32-NanoCam](/pt-br/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec)

@@ -80,6 +80,7 @@ LeRobot最主要适配的算法就是模仿学习。比如ACT、Diffusion Policy
 - [SO-ARM101 无线遥操作(ESP32-NanoCam 版)](/zh-hans/tutorials/robot-arms/so-arm101/SO-ARM101-NanoCam-Wireless-Teleop)
 - [无线遥操作排障指南](/zh-hans/tutorials/robot-arms/so-arm101/SO-ARM101-NanoCam-Troubleshooting)
 - [SoARM 系列舵机校准工具使用教程](/zh-hans/tutorials/robot-arms/so-arm101/SO-ARM101-Servo-Calibration-Tool)
+- [So-ARM 系列 STS3215 舵机校准-网页端](/zh-hans/tutorials/robot-arms/so-arm101/SO-ARM101-Web-Calibration)
 - [ROS2 仿真控制](/zh-hans/tutorials/robot-arms/so-arm101/ROS2-Simulation-Control)
 - [SO-ARM101 Jetson Orin PyTorch 兼容性](/zh-hans/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility)
 

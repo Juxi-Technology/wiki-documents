@@ -24,6 +24,7 @@ description: "钜犀科技机械臂系列教程首页——SO-ARM101、AmazingHa
 - [SO-ARM101 无线遥操作(ESP32-NanoCam 版)](./so-arm101/SO-ARM101-NanoCam-Wireless-Teleop.md)
 - [SO-ARM101 双臂(双从臂)教程](./so-arm101/SO-ARM101-Bi-Arm-Tutorial.md)
 - [SoARM 系列舵机校准工具](./so-arm101/SO-ARM101-Servo-Calibration-Tool.md)
+- [So-ARM 系列 STS3215 舵机校准-网页端](./so-arm101/SO-ARM101-Web-Calibration.md)
 
 #### SO-ARM101 系列
 - [臂载支架与环境相机套件安装](./so-arm101/SO-ARM101-100-Arm-Mount-Camera-Kit-Installation.md)
@@ -176,19 +177,23 @@ description: "钜犀科技机械臂系列教程首页——SO-ARM101、AmazingHa
 
 开源仿生灵巧手，提供高精度的多指操作能力。
 
+- [AmazingHand 灵巧手使用教程](./amazing-hand/index.md)
 - [AmazingHand 接口控制](./amazing-hand/AmazingHand-Interface-Control.md)
+- [Arduino Nano 使用教程](./amazing-hand/Arduino-Nano-Tutorial.md)
 - [AmazingHand 网页控制](./amazing-hand/AmazingHand-Web-Control.md)
 - [AmazingHand 官方示例](./amazing-hand/AmazingHand-Official-Example.md)
 - [AmazingHand TTL调试](./amazing-hand/AmazingHand-TTL-Debugging.md)
 
 #### AmazingHand
 - [AmazingHand灵巧手产品资料](./amazing-hand/product-info.md)
+- [环境相机套件安装](./amazing-hand/Camera-Kit-Installation.md)
 
 #### PWM 舵机调试教程
 - [01-GUI可视化控制](./amazing-hand/pwm-debugging/01-GUI-Visual-Control.md)
 - [02-手势追踪教程](./amazing-hand/pwm-debugging/02-Gesture-Tracking.md)
 - [03-PWM舵机版本-使用手册](./amazing-hand/pwm-debugging/03-PWM-Servo-Manual.md)
 - [04-串口舵机版本-使用说明](./amazing-hand/pwm-debugging/04-Serial-Servo-Guide.md)
+- [全流程使用教程](./amazing-hand/pwm-debugging/05-Full-Workflow-Tutorial.md)
 
 #### 手势追踪教程
 - [Linux（Ubuntu）一键部署运行](./amazing-hand/gesture-tracking/01-Ubuntu.md)

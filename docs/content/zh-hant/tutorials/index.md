@@ -148,6 +148,7 @@ head:
     - [無線遙操作排障指南](/zh-hant/tutorials/robot-arms/so-arm101/SO-ARM101-NanoCam-Troubleshooting)
     - [SO-ARM101 雙臂(雙從動臂)教程](/zh-hant/tutorials/robot-arms/so-arm101/SO-ARM101-Bi-Arm-Tutorial)
     - [SoARM 系列舵機校準工具使用教程](/zh-hant/tutorials/robot-arms/so-arm101/SO-ARM101-Servo-Calibration-Tool)
+    - [So-ARM 系列 STS3215 舵機校準-網頁端](/zh-hant/tutorials/robot-arms/so-arm101/SO-ARM101-Web-Calibration)
       - **LeRobot 完整課程**
         - [LeRobot 完整課程](/zh-hant/tutorials/robot-arms/so-arm101/lerobot/)
           - **1. 安裝 LeRobot 環境**
@@ -249,9 +250,12 @@ head:
     - [成品組裝教程](/zh-hant/tutorials/robot-arms/xlerobot/03-Assembly-Assembled-Kit)
     - [散件組裝教程](/zh-hant/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit)
   - **AmazingHand**
+    - [AmazingHand 靈巧手使用教程](/zh-hant/tutorials/robot-arms/amazing-hand/)
     - [界面控制教程](/zh-hant/tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control)
+    - [Arduino Nano 使用教程](/zh-hant/tutorials/robot-arms/amazing-hand/Arduino-Nano-Tutorial)
     - [AmazingHand 網頁控制](/zh-hant/tutorials/robot-arms/amazing-hand/AmazingHand-Web-Control)
     - [AmazingHand靈巧手產品資料](/zh-hant/tutorials/robot-arms/amazing-hand/product-info)
+    - [環境相機套件安裝](/zh-hant/tutorials/robot-arms/amazing-hand/Camera-Kit-Installation)
     - [官方示例運行教程](/zh-hant/tutorials/robot-arms/amazing-hand/AmazingHand-Official-Example)
     - [TTL 調試教程](/zh-hant/tutorials/robot-arms/amazing-hand/AmazingHand-TTL-Debugging)
       - **PWM 舵機調試教程**
@@ -259,6 +263,7 @@ head:
         - [02-手勢追蹤教程](/zh-hant/tutorials/robot-arms/amazing-hand/pwm-debugging/02-Gesture-Tracking)
         - [03-PWM舵機版本-使用手冊](/zh-hant/tutorials/robot-arms/amazing-hand/pwm-debugging/03-PWM-Servo-Manual)
         - [04-串口舵機版本-使用說明](/zh-hant/tutorials/robot-arms/amazing-hand/pwm-debugging/04-Serial-Servo-Guide)
+        - [全流程使用教程](/zh-hant/tutorials/robot-arms/amazing-hand/pwm-debugging/05-Full-Workflow-Tutorial)
       - **手勢追蹤教程**
         - [Linux（Ubuntu）一鍵部署執行](/zh-hant/tutorials/robot-arms/amazing-hand/gesture-tracking/01-Ubuntu)
         - [Windows一鍵部署執行](/zh-hant/tutorials/robot-arms/amazing-hand/gesture-tracking/02-Windows)
@@ -284,6 +289,7 @@ head:
     - [磁編碼 STS 舵機內存表解析](/zh-hant/tutorials/accessories/feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis)
     - [電位器 SCSCL 舵機內存表解析](/zh-hant/tutorials/accessories/feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis)
     - [SCS0009 舵機調試工具使用教程](/zh-hant/tutorials/accessories/feetech/SCS0009-Debug-Tool)
+    - [飛特總線舵機網頁版調試（SCS0009 / STS3215 / HD1910）](/zh-hant/tutorials/accessories/feetech/Feetech-Web-Debugger)
   - **ESP32-NanoCam 圖傳模組**
     - [ESP32-NanoCam 快速開始](/zh-hant/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Quick-Start)
     - [ESP32-NanoCam 硬體規格書](/zh-hant/tutorials/accessories/esp32-nanocam/ESP32-NanoCam-Hardware-Spec)

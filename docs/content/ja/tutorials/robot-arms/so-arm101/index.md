@@ -80,6 +80,7 @@ LeRobot が主に適合させるアルゴリズムは模倣学習のもので、
 - [SO-ARM101 ワイヤレス遠隔操作(ESP32-NanoCam 版)](/ja/tutorials/robot-arms/so-arm101/SO-ARM101-NanoCam-Wireless-Teleop)
 - [遠隔操作トラブルシューティング](/ja/tutorials/robot-arms/so-arm101/SO-ARM101-NanoCam-Troubleshooting)
 - [SoARM シリーズ サーボキャリブレーションツール使用チュートリアル](/ja/tutorials/robot-arms/so-arm101/SO-ARM101-Servo-Calibration-Tool)
+- [So-ARM シリーズ STS3215 サーボキャリブレーション – Web 版](/ja/tutorials/robot-arms/so-arm101/SO-ARM101-Web-Calibration)
 - [ROS2シミュレーション制御](/ja/tutorials/robot-arms/so-arm101/ROS2-Simulation-Control)
 - [Jetson Orin での PyTorch 非互換問題](/ja/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility)
 

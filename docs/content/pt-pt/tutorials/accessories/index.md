@@ -20,7 +20,7 @@ Bem-vindo aos tutoriais de acessórios robóticos! Aqui você encontrará guias 
   - [Funcionalidades avançadas e rastreio](/pt-pt/tutorials/accessories/2dof-camera-gimbal/04-Advanced-Features-and-Tracking)
   - [Resolução de problemas](/pt-pt/tutorials/accessories/2dof-camera-gimbal/05-Troubleshooting)
   - [Informações do produto](/pt-pt/tutorials/accessories/2dof-camera-gimbal/Product-Info)
-- [Sensor de Frequência Cardíaca e SpO2](./heart-rate-spo2.md)
+- [Sensor de Frequência Cardíaca e SpO2](./heart-rate-spo2/index.md)
 
 ### Módulo de reconhecimento de voz KWS
 
@@ -105,6 +105,7 @@ Tutoriais do módulo de voz offline CI1302: início rápido, gravação de firmw
 - [Tabela de Memória do Servo STS com Encoder Magnético](./feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis.md)
 - [Tabela de Memória do Servo SCSCL com Potenciômetro](./feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis.md)
 - [Tutorial de utilização da ferramenta de depuração do servo SCS0009](./feetech/SCS0009-Debug-Tool.md)
+- [Depurador Web de servos de barramento Feetech (SCS0009 / STS3215 / HD1910)](./feetech/Feetech-Web-Debugger.md)
 
 ## Suporte técnico
 

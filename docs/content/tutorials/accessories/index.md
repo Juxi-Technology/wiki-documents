@@ -20,7 +20,7 @@ Welcome to the robot accessory tutorials! Here you'll find guides for various ro
   - [Advanced Features and Tracking](/tutorials/accessories/2dof-camera-gimbal/04-Advanced-Features-and-Tracking)
   - [Troubleshooting](/tutorials/accessories/2dof-camera-gimbal/05-Troubleshooting)
   - [Product Info](/tutorials/accessories/2dof-camera-gimbal/Product-Info)
-- [Heart Rate & SpO2 Sensor](./heart-rate-spo2.md)
+- [Heart Rate & SpO2 Sensor](./heart-rate-spo2/index.md)
 
 ### KWS Speech Recognition Module
 
@@ -105,6 +105,7 @@ CI1302 offline voice module tutorials: quick start, firmware flashing, wake-word
 - [Magnetic Encoder STS Servo Memory Table](./feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis.md)
 - [Potentiometer SCSCL Servo Memory Table](./feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis.md)
 - [SCS0009 Servo Debug Tool Tutorial](./feetech/SCS0009-Debug-Tool.md)
+- [Feetech Bus Servo Web Debugger (SCS0009 / STS3215 / HD1910)](./feetech/Feetech-Web-Debugger.md)
 
 ## Technical Support
 

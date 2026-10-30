@@ -24,6 +24,7 @@ Bras robotique de bureau open source 6 axes, compatible avec les frameworks IA c
 - [Téléopération sans fil SO-ARM101 (version ESP32-NanoCam)](./so-arm101/SO-ARM101-NanoCam-Wireless-Teleop.md)
 - [Tutoriel SO-ARM101 bi-bras (double suiveur)](./so-arm101/SO-ARM101-Bi-Arm-Tutorial.md)
 - [Outil de calibration des servomoteurs série SoARM](./so-arm101/SO-ARM101-Servo-Calibration-Tool.md)
+- [Série So-ARM – Calibration des servos STS3215 – Version Web](./so-arm101/SO-ARM101-Web-Calibration.md)
 
 #### Série SO-ARM101
 - [Installation du support caméra plafond](./so-arm101/SO-ARM101-Overhead-Camera-Mount-Installation.md)
@@ -177,19 +178,23 @@ Bras robotique de bureau open source 6 axes, compatible avec les frameworks IA c
 
 Main dexterous open source offrant une manipulation multi-doigts de haute précision.
 
+- [Tutoriel AmazingHand](./amazing-hand/index.md)
 - [Contrôle d'interface AmazingHand](./amazing-hand/AmazingHand-Interface-Control.md)
+- [Guide Arduino Nano](./amazing-hand/Arduino-Nano-Tutorial.md)
 - [Contrôle web AmazingHand](./amazing-hand/AmazingHand-Web-Control.md)
 - [Exemple officiel AmazingHand](./amazing-hand/AmazingHand-Official-Example.md)
 - [Débogage TTL AmazingHand](./amazing-hand/AmazingHand-TTL-Debugging.md)
 
 #### AmazingHand
 - [Documentation produit AmazingHand](./amazing-hand/product-info.md)
+- [Installation du kit caméra d'environnement](./amazing-hand/Camera-Kit-Installation.md)
 
 #### Débogage servo PWM
 - [01-Contrôle visuel par GUI](./amazing-hand/pwm-debugging/01-GUI-Visual-Control.md)
 - [02-Tutoriel de suivi de gestes](./amazing-hand/pwm-debugging/02-Gesture-Tracking.md)
 - [03-Version servomoteurs PWM - Manuel d\'utilisation](./amazing-hand/pwm-debugging/03-PWM-Servo-Manual.md)
 - [04-Version servomoteurs série - Notice d\'utilisation](./amazing-hand/pwm-debugging/04-Serial-Servo-Guide.md)
+- [Tutoriel complet](./amazing-hand/pwm-debugging/05-Full-Workflow-Tutorial.md)
 
 #### Suivi des gestes
 - [Déploiement et exécution en un clic sous Linux (Ubuntu)](./amazing-hand/gesture-tracking/01-Ubuntu.md)

@@ -5,6 +5,8 @@ description: "Este firmware é executado na placa de desenvolvimento ESP32-S3 e,
 
 # 03-Versão com servomotor PWM-Manual de uso
 
+> **Pacote de entrega PWM：** [delivery_package.zip](/downloads/delivery_package.zip)（GUI / rastreamento de gestos / firmware / documentação）
+
 ## Índice
 
 1. Visão geral

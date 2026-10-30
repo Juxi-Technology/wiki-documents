@@ -80,6 +80,7 @@ The imitation learning in this tutorial is exclusively VLA.
 - [SO-ARM101 Wireless Teleoperation (ESP32-NanoCam Version)](/tutorials/robot-arms/so-arm101/SO-ARM101-NanoCam-Wireless-Teleop)
 - [Wireless Teleoperation Troubleshooting](/tutorials/robot-arms/so-arm101/SO-ARM101-NanoCam-Troubleshooting)
 - [SoARM Series Servo Calibration Tool Tutorial](/tutorials/robot-arms/so-arm101/SO-ARM101-Servo-Calibration-Tool)
+- [So-ARM Series STS3215 Servo Calibration – Web Version](/tutorials/robot-arms/so-arm101/SO-ARM101-Web-Calibration)
 - [ROS2 Simulation Control](/tutorials/robot-arms/so-arm101/ROS2-Simulation-Control)
 - [SO-ARM101 Jetson Orin PyTorch Compatibility](/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility)
 

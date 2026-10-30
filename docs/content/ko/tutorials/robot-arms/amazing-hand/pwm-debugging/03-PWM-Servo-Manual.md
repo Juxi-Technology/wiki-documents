@@ -5,6 +5,8 @@ description: "AmazingHand PWM 서보 버전 사용 매뉴얼: ESP32-S3 펌웨어
 
 # 03-PWM 서보 버전-사용 매뉴얼
 
+> **PWM 버전 배포 패키지：** [delivery_package.zip](/downloads/delivery_package.zip)（GUI / 제스처 트래킹 / 펌웨어 / 문서）
+
 ## 목차
 
 1. 개요

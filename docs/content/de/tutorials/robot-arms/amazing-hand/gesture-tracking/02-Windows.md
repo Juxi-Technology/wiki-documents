@@ -15,8 +15,10 @@ Führen Sie alles einfach in der Reihenfolge der Nummerierung aus. **Alle Skript
 ## Hardware-Vorbereitung
 
 > Die Modelldateien können Sie auf [Onshape](https://cad.onshape.com/documents/430ff184cf3dd9557aaff2be/w/e3658b7152c139971d22c688/e/d79fbb3641873de0a515037e) ansehen oder selbst herunterladen （inkl. URDF）.
-> 
-> 
+
+Das [MuJoCo-Modell](https://github.com/pollen-robotics/AmazingHand/tree/main/Demo/AHSimulation/AHSimulation) der Hand
+
+![Abbildung](../../../../../../public/images/tutorials/robot-arms/amazing-hand/gesture-tracking/windows.png)
 
 ---
 

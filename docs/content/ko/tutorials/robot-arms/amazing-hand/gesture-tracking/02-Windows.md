@@ -15,8 +15,10 @@ description: "AmazingHand 제스처 추적 원클릭 배포(Windows). 스크립�
 ## 하드웨어 준비
 
 > 모델 파일은 [Onshape](https://cad.onshape.com/documents/430ff184cf3dd9557aaff2be/w/e3658b7152c139971d22c688/e/d79fbb3641873de0a515037e)에서 보거나 직접 다운로드할 수 있습니다(URDF 포함).
-> 
-> 
+
+다관절 핸드의 [MuJoCo 모델](https://github.com/pollen-robotics/AmazingHand/tree/main/Demo/AHSimulation/AHSimulation)
+
+![그림](../../../../../../public/images/tutorials/robot-arms/amazing-hand/gesture-tracking/windows.png)
 
 ---
 

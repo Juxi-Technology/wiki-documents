@@ -20,7 +20,7 @@ description: "钜犀科技机器人配件系列教程首页——KWS 语音、ES
   - [高级功能与追踪](/zh-hans/tutorials/accessories/2dof-camera-gimbal/04-Advanced-Features-and-Tracking)
   - [故障排除](/zh-hans/tutorials/accessories/2dof-camera-gimbal/05-Troubleshooting)
   - [产品信息](/zh-hans/tutorials/accessories/2dof-camera-gimbal/Product-Info)
-- [心率血氧传感器](./heart-rate-spo2.md)
+- [心率血氧传感器](./heart-rate-spo2/index.md)
 
 ### KWS语音识别模块
 
@@ -105,6 +105,7 @@ CI1302 离线语音交互模块全平台教程:快速上手、固件烧录、唤
 - [磁编码 STS 舵机内存表解析](./feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis.md)
 - [电位器 SCSCL 舵机内存表解析](./feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis.md)
 - [SCS0009 舵机调试工具使用教程](./feetech/SCS0009-Debug-Tool.md)
+- [飞特总线舵机网页版调试（SCS0009 / STS3215 / HD1910）](./feetech/Feetech-Web-Debugger.md)
 
 ## 技术支持
 

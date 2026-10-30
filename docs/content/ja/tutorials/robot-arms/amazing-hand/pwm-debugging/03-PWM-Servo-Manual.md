@@ -5,6 +5,8 @@ description: "AmazingHand の PWM サーボ版マニュアル。ESP32-S3 で 8 �
 
 # 03-PWM サーボバージョン-使用マニュアル
 
+> **PWM 版配布パッケージ：** [delivery_package.zip](/downloads/delivery_package.zip)（GUI / ジェスチャートラッキング / ファームウェア / ドキュメント）
+
 ## 目次
 
 1. 概要

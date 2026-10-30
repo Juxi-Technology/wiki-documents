@@ -22,7 +22,7 @@ Benvenuti nei tutorial sugli accessori! Guide d'uso per accessori e periferiche 
   - [Risoluzione dei problemi](/it/tutorials/accessories/2dof-camera-gimbal/05-Troubleshooting)
   - [Informazioni sul prodotto](/it/tutorials/accessories/2dof-camera-gimbal/Product-Info)
 
-- [Sensore di frequenza cardiaca e SpO2](./heart-rate-spo2.md)
+- [Sensore di frequenza cardiaca e SpO2](./heart-rate-spo2/index.md)
 
 ### Modulo di riconoscimento vocale KWS
 
@@ -107,6 +107,7 @@ Tutorial del modulo vocale offline CI1302: avvio rapido, flash del firmware, mod
 - [Tabella di memoria del servo STS a encoder magnetico](./feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis.md)
 - [Tabella di memoria del servo SCSCL a potenziometro](./feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis.md)
 - [Tutorial d\'uso del tool di debug servo SCS0009](./feetech/SCS0009-Debug-Tool.md)
+- [Debugger Web servo bus Feetech (SCS0009 / STS3215 / HD1910)](./feetech/Feetech-Web-Debugger.md)
 
 ## Supporto
 

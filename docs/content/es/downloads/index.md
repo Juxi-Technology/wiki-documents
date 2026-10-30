@@ -26,6 +26,8 @@ Descargas centralizadas: firmware, SDK, software host y código open source.
 ### AmazingHand
 
 - 📦 [Repositorio open source AmazingHand](https://github.com/Juxi-Technology/AmazingHand)(código de control Python + protocolo TTL)
+- 📦 [delivery_package.zip](/downloads/delivery_package.zip)（Paquete de entrega PWM）
+- 📦 [Amazinghand-web.zip](/downloads/Amazinghand-web.zip)（Paquete de despliegue local）
 
 ---
 - 📦 [FD.rar](/downloads/FD.rar)

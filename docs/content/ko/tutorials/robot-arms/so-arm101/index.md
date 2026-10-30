@@ -80,6 +80,7 @@ LeRobot이 주로 적용하는 알고리즘은 ACT, Diffusion Policy, SmolVLA, P
 - [SO-ARM101 무선 텔레오퍼레이션(ESP32-NanoCam 버전)](/ko/tutorials/robot-arms/so-arm101/SO-ARM101-NanoCam-Wireless-Teleop)
 - [원격조작 문제 해결](/ko/tutorials/robot-arms/so-arm101/SO-ARM101-NanoCam-Troubleshooting)
 - [SoARM 시리즈 서보 캘리브레이션 도구 사용 튜토리얼](/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Servo-Calibration-Tool)
+- [So-ARM 시리즈 STS3215 서보 캘리브레이션 – 웹 버전](/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Web-Calibration)
 - [ROS2 시뮬레이션 제어](/ko/tutorials/robot-arms/so-arm101/ROS2-Simulation-Control)
 - [Jetson Orin에서 PyTorch 비호환 문제](/ko/tutorials/robot-arms/so-arm101/SO-ARM101-Jetson-Orin-PyTorch-Compatibility)
 

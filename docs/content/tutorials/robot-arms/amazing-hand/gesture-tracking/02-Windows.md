@@ -15,8 +15,10 @@ Just execute them in numerical order. **All scripts are located in the ****`Demo
 ## Hardware Preparation
 
 > The model files can be viewed or downloaded yourself on [Onshape](https://cad.onshape.com/documents/430ff184cf3dd9557aaff2be/w/e3658b7152c139971d22c688/e/d79fbb3641873de0a515037e) (URDF included).
-> 
-> 
+
+The hand's [MuJoCo model](https://github.com/pollen-robotics/AmazingHand/tree/main/Demo/AHSimulation/AHSimulation)
+
+![Illustration](../../../../../public/images/tutorials/robot-arms/amazing-hand/gesture-tracking/windows.png)
 
 ---
 

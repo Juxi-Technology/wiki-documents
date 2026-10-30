@@ -5,6 +5,8 @@ description: "AmazingHand PWM 舵機版使用手冊:ESP32-S3 固件以 PWM 信�
 
 # 03-PWM舵機版本-使用手冊
 
+> **PWM 版交付包：** [delivery_package.zip](/downloads/delivery_package.zip)（GUI / 手勢追蹤 / 韌體 / 文件）
+
 ## 目錄
 
 1. 概述

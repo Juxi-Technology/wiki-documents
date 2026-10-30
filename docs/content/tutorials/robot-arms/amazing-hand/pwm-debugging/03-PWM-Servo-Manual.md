@@ -5,6 +5,8 @@ description: "This firmware runs on an ESP32-S3 development board, and controls 
 
 # 03-PWM Servo Version-User Manual
 
+> **PWM delivery package：** [delivery_package.zip](/downloads/delivery_package.zip)（GUI / hand tracking / firmware / docs）
+
 ## Table of Contents
 
 1. Overview

@@ -26,6 +26,8 @@ description: "钜犀科技产品下载中心——机械臂、传感器与配件
 ### AmazingHand 4 指灵巧手
 
 - 📦 [AmazingHand 开源仓库](https://github.com/Juxi-Technology/AmazingHand)(Python 控制代码 + TTL 协议)
+- 📦 [delivery_package.zip](/downloads/delivery_package.zip)（PWM 版交付包）
+- 📦 [Amazinghand-web.zip](/downloads/Amazinghand-web.zip)（本地部署包）
 
 ---
 - 📦 [FD.rar](/downloads/FD.rar)

@@ -22,7 +22,7 @@ description: "Inicio de tutoriales de accesorios de Juxi Technology — KWS voz,
   - [Solución de problemas](/es/tutorials/accessories/2dof-camera-gimbal/05-Troubleshooting)
   - [Información del producto](/es/tutorials/accessories/2dof-camera-gimbal/Product-Info)
 
-- [Sensor de frecuencia cardíaca y SpO2](./heart-rate-spo2.md)
+- [Sensor de frecuencia cardíaca y SpO2](./heart-rate-spo2/index.md)
 
 ### Módulo de reconocimiento de voz KWS
 
@@ -107,6 +107,7 @@ Tutoriales del módulo de voz offline CI1302: inicio rápido, grabación de firm
 - [Tabla de memoria del servo STS con encoder magnético](./feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis.md)
 - [Tabla de memoria del servo SCSCL con potenciómetro](./feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis.md)
 - [Tutorial de uso de la herramienta de depuración del servo SCS0009](./feetech/SCS0009-Debug-Tool.md)
+- [Depurador web de servos bus Feetech (SCS0009 / STS3215 / HD1910)](./feetech/Feetech-Web-Debugger.md)
 
 ## Soporte
 

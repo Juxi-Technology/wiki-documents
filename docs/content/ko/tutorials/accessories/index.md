@@ -22,7 +22,7 @@ description: "Juxi Technology 로봇 액세서리 시리즈 튜토리얼 홈—�
   - [문제 해결](/ko/tutorials/accessories/2dof-camera-gimbal/05-Troubleshooting)
   - [제품 정보](/ko/tutorials/accessories/2dof-camera-gimbal/Product-Info)
 
-- [심박·혈중 산소 센서](./heart-rate-spo2.md)
+- [심박·혈중 산소 센서](./heart-rate-spo2/index.md)
 
 ### KWS 음성 인식 모듈
 
@@ -107,6 +107,7 @@ CI1302 오프라인 음성 인터랙션 모듈 전 플랫폼 튜토리얼: 퀵 �
 - [자기 엔코더 STS 서보 - 메모리 테이블 분석](./feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis.md)
 - [전위차계 SCSCL 서보 - 메모리 테이블 분석](./feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis.md)
 - [SCS0009 서보 디버깅 도구 사용 튜토리얼](./feetech/SCS0009-Debug-Tool.md)
+- [Feetech 버스 서보 웹 디버깅 (SCS0009 / STS3215 / HD1910)](./feetech/Feetech-Web-Debugger.md)
 
 ## 지원
 

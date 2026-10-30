@@ -5,6 +5,10 @@ description: "Controla a mão de destreza AmazingHand a partir do navegador — 
 
 # Controlo Web do AmazingHand
 
+> **Versão online:** <https://juxi-technology.github.io/AmazingHand/Amazinghand-web-io/> (sem instalação; abaixo, a implementação local)
+
+> **Pacote de implementação local：** [Amazinghand-web.zip](/downloads/Amazinghand-web.zip)
+
 Controla a mão de destreza AmazingHand a partir do navegador — **mão esquerda ou direita**, com duas formas de a comandar:
 
 - **Manual** — 8 sliders de servo + 19 poses predefinidas + regresso ao centro com um clique

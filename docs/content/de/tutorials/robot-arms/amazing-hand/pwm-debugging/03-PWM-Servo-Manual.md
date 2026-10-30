@@ -5,6 +5,8 @@ description: "Diese Firmware läuft auf dem Entwicklungsboard ESP32-S3 und steue
 
 # 03-PWM-Servo-Version - Handbuch
 
+> **PWM-Lieferpaket：** [delivery_package.zip](/downloads/delivery_package.zip)（GUI / Gestenverfolgung / Firmware / Dokumentation）
+
 ## Inhaltsverzeichnis
 
 1. Überblick

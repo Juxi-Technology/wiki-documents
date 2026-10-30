@@ -20,7 +20,7 @@ description: "鉅犀科技機器人配件系列教程首頁——KWS 語音、ES
   - [高級功能與追蹤](/zh-hant/tutorials/accessories/2dof-camera-gimbal/04-Advanced-Features-and-Tracking)
   - [疑難排解](/zh-hant/tutorials/accessories/2dof-camera-gimbal/05-Troubleshooting)
   - [產品資訊](/zh-hant/tutorials/accessories/2dof-camera-gimbal/Product-Info)
-- [心率血氧傳感器](./heart-rate-spo2.md)
+- [心率血氧傳感器](./heart-rate-spo2/index.md)
 
 ### KWS語音識別模組
 
@@ -105,6 +105,7 @@ CI1302 離線語音交互模組全平台教程:快速上手、固件燒錄、喚
 - [磁編碼 STS 舵機內存表解析](./feetech/Feetech-Magnetic_Encoder_STS_Servo-Memory_Table_Analysis.md)
 - [電位器 SCSCL 舵機內存表解析](./feetech/Feetech-Potentiometer_SCSCL_Servo-Memory_Table_Analysis.md)
 - [SCS0009 舵機調試工具使用教程](./feetech/SCS0009-Debug-Tool.md)
+- [飛特總線舵機網頁版調試（SCS0009 / STS3215 / HD1910）](./feetech/Feetech-Web-Debugger.md)
 
 ## 技術支援
 
