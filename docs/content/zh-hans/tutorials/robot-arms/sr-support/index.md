@@ -1,0 +1,62 @@
+---
+title: "SR-Support 自扶正装置教程"
+description: "SR-Support（2-DOF 自扶正装置）从基础知识、环境准备、烧录装配、定零标定到自扶正使用与故障排查的完整教程。"
+---
+
+# SR-Support 自扶正装置教程
+
+[简体中文](/zh-hans/tutorials/robot-arms/sr-support/) · [繁體中文](/zh-hant/tutorials/robot-arms/sr-support/) · [English](/tutorials/robot-arms/sr-support/) · [日本語](/ja/tutorials/robot-arms/sr-support/) · [한국어](/ko/tutorials/robot-arms/sr-support/) · [Deutsch](/de/tutorials/robot-arms/sr-support/) · [Français](/fr/tutorials/robot-arms/sr-support/) · [Español](/es/tutorials/robot-arms/sr-support/) · [Italiano](/it/tutorials/robot-arms/sr-support/) · [Português (BR)](/pt-br/tutorials/robot-arms/sr-support/) · [Português (PT)](/pt-pt/tutorials/robot-arms/sr-support/)
+
+
+SR-Support 是一个基于 2 自由度手臂的低成本主动自扶正装置：向任意方向倾倒后，能依靠一只
+两关节手臂撑地、翻转并撬起，自主回到直立姿态。本系列教程按阅读顺序组织，覆盖从零复现到
+实机验证的全过程。
+
+## 阅读顺序
+
+| # | 页面 | 内容 | 备注 |
+|---|---|---|---|
+| 01 | [基础知识](./01-basics.md) | 工作原理、整机参数与 BOM | 先读 |
+| 02 | [环境准备](./02-environment.md) | 创建并激活 `.venv`、预编译固件 + 烧录工具（Flash Download Tool / esptool）、电脑端工具与 MuJoCo 环境、可选 PlatformIO、确认串口 | **开工前完成** |
+| 03 | [烧录主固件](./03-build-flash.md) | 预编译 bin 烧录（推荐给客户）或 PlatformIO 源码构建、串口命令、上电行为 | 成品可跳过 |
+| 04 | [散件组装：打印、装配与接线](./04-assembly.md) | 打印件、舵盘齿位与中位、接线表、IMU 安装 | 成品可跳过 |
+| 05 | [中位零点校准](./05-zero-tool.md) | 方向键调臂 + `z` 定零（换齿/拆装后必做） | **DIY 必做**；成品已固化可跳过 |
+| 06 | [调试与标定](./06-debug-and-calibrate.md) | 整机自检与标定：遥测、IMU、舵机、中位核对、四躺姿与跌倒门 | |
+| 07 | [自扶正使用与监控](./07-self-righting.md) | 四个倒下方向的预期动作、监控与日志 | |
+| 08 | [WiFi 与仿真镜像](./08-wifi-twin.md) | 状态页、家庭网络配网、MuJoCo 无线实时镜像 | 可选 |
+| 09 | [故障排查](./09-troubleshooting.md) | 常见现象与处理 | 查阅 |
+| 10 | [参考：模型、参数与许可](./10-reference.md) | 模型文件（XML/STL）、参数表、参考序列、许可 | 查阅 |
+
+## 成品出厂状态（两条阅读路径）
+
+本套教程同时面向两类读者，请按自己的情况选路径：
+
+| 读者 | 出厂状态 | 建议路径 |
+|---|---|---|
+| **成品用户** | 已组装接线、已烧录固件、**已标定**（舵机零点与 IMU 加速度计零点已固化）、**已测试**（四方向扶正逐台验证通过） | 直接读 [07 自扶正使用](./07-self-righting.md)、[08 WiFi 与镜像](./08-wifi-twin.md)（可选）；[09](./09-troubleshooting.md)/[10](./10-reference.md) 备查。**02/03/04/05/06 仅在升级固件、更换舵机/IMU 或重装舵盘后需要**；要用 08 页的 Twin/遥测工具时，也需先按 02 页装电脑端工具环境。 |
+| **散件 / DIY 组装** | 从零件开始 | 按 [01](./01-basics.md) → [02](./02-environment.md) → [03 烧录](./03-build-flash.md) → [04 组装](./04-assembly.md) → [05 中位定零（必做）](./05-zero-tool.md) → [06 调试标定](./06-debug-and-calibrate.md) → [07](./07-self-righting.md) 走完整流程。中位定零（05）与调试标定（06）都在**整机组装完成、固件烧录之后**做：`z` 不依赖 IMU、任意姿态可定零；`c` 需整机站立在水平桌面。 |
+
+> 成品到手后推荐先做一次"首次使用检查"：直立上电 → 静置确认 `up≈(0,0,1)` → 按
+> [07 页](./07-self-righting.md) 把四个方向各放倒一次，确认自动起身正常。
+
+## 前置条件
+
+- SR-Support 机械件（底面板、肩舵机固定件、肘舵机固定件、顶部撑杆；打印与装配见 [04 页](./04-assembly.md)）；
+- ESP32-S3 开发板 + Juxi ICM42670P IMU + 无源直连舵机转接板；
+- 2× PTK7452MG（180° PWM 舵机）；
+- 舵机电源（5 V / ≥5 A）与 USB-C 数据线；
+- 电脑已按 [02 环境准备](./02-environment.md) 装好 PlatformIO 与电脑端工具。
+
+## 当前验证状态（2026-11-06）
+
+四个方向的跌倒—扶正均已在实机上验证通过，且均为**直接起身**（无需翻滚），约 1–6 秒；
+全部测试无舵机越界。此外已具备：方向键零点校准工具（[05 页](./05-zero-tool.md)）、
+WiFi 状态页与家庭网络配网、MuJoCo 无线实时镜像（[08 页](./08-wifi-twin.md)）。
+
+## 安全须知
+
+> - 第一次上电保持手扶，清空 30 cm 范围，异常立即发送 `x` 或断开舵机电源；
+> - 舵机堵转不超过 1 秒，外壳温度不超过 60 °C；
+> - 舵机电源 **5 V / ≥5 A**（已验证可完成四方向扶正）；
+> - 高于 5 V 的电源只能接舵机电源轨，**绝不能**接 ESP32 的 5V/3V3；
+> - 所有设备共地，上电顺序见 [04 组装页](./04-assembly.md)。

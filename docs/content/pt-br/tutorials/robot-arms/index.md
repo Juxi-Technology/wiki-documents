@@ -208,6 +208,22 @@ Carrinho robótico móvel totalmente open source, compatível com o framework de
 - [Guia de montagem do Lekiwi](./lekiwi/Lekiwi-Assembly.md)
 - [Informações do produto](./lekiwi/Lekiwi-Product-Info.md)
 
+### Tutorial do Robô de Auto-Endireitamento SR-Support
+
+Tutorial completo do dispositivo de auto-endireitamento SR-Support de 2 GDL, dos fundamentos e da configuração do ambiente à gravação, montagem, zeragem, calibração, uso do auto-endireitamento e solução de problemas.
+
+- [Tutorial do Robô de Auto-Endireitamento SR-Support](./sr-support/index.md)
+- [01 Fundamentos](./sr-support/01-basics.md)
+- [02 Configuração do ambiente (venv, ferramentas de gravação e firmware)](./sr-support/02-environment.md)
+- [03 Gravar o firmware principal](./sr-support/03-build-flash.md)
+- [04 Montagem: imprimir, montar e ligar](./sr-support/04-assembly.md)
+- [05 Calibração de zero (teclas de seta; obrigatório para builds DIY)](./sr-support/05-zero-tool.md)
+- [06 Depuração e calibração](./sr-support/06-debug-and-calibrate.md)
+- [07 Uso e monitoramento do auto-endireitamento](./sr-support/07-self-righting.md)
+- [08 WiFi e o gêmeo de simulação](./sr-support/08-wifi-twin.md)
+- [09 Solução de problemas](./sr-support/09-troubleshooting.md)
+- [10 Referência: modelo, parâmetros e licenciamento](./sr-support/10-reference.md)
+
 ### Curso SO-ARM101 + AmazingHand
 
 Fluxo completo SO-ARM101 + AmazingHand: configuração, calibração, teleoperação, coleta de dados, treinamento e implantação (Windows / Linux).

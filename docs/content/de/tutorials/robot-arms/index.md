@@ -208,6 +208,22 @@ Vollständig Open-Source-Mobilroboter, kompatibel mit LeRobot Imitation-Learning
 - [Lekiwi-Montage](./lekiwi/Lekiwi-Assembly.md)
 - [Produktinformationen](./lekiwi/Lekiwi-Product-Info.md)
 
+### SR-Support Selbstaufrichtender Roboter – Tutorial
+
+Vollständiges Tutorial für das SR-Support-2-DOF-Selbstaufrichtungsgerät, von den Grundlagen und der Umgebungseinrichtung über Flashen, Montage, Nullpunkt und Kalibrierung bis hin zur Selbstaufrichtungsanwendung und Fehlerbehebung.
+
+- [SR-Support Selbstaufrichtender Roboter – Tutorial](./sr-support/index.md)
+- [01 Grundlagen](./sr-support/01-basics.md)
+- [02 Umgebungseinrichtung (venv, Flash-Tools und Firmware)](./sr-support/02-environment.md)
+- [03 Hauptfirmware flashen](./sr-support/03-build-flash.md)
+- [04 Montage: Drucken, Bauen, Verkabeln](./sr-support/04-assembly.md)
+- [05 Nullpunkt-Kalibrierung (Pfeiltasten; erforderlich für DIY-Bauten)](./sr-support/05-zero-tool.md)
+- [06 Debug und Kalibrierung](./sr-support/06-debug-and-calibrate.md)
+- [07 Selbstaufrichtung: Anwendung und Überwachung](./sr-support/07-self-righting.md)
+- [08 WLAN und der Simulationszwilling](./sr-support/08-wifi-twin.md)
+- [09 Fehlerbehebung](./sr-support/09-troubleshooting.md)
+- [10 Referenz: Modell, Parameter und Lizenzierung](./sr-support/10-reference.md)
+
 ### SO-ARM101 + AmazingHand Kurs
 
 Kompletter Workflow für SO-ARM101-Folgearm + AmazingHand: Einrichtung, Kalibrierung, Teleoperation, Datenerfassung, Modelltraining und Deployment (Windows/Linux).

@@ -267,6 +267,18 @@ description: "Juxi Technology Wiki のチュートリアル一覧。ロボット
   - **Lekiwi**
     - [Lekiwi 移動ロボット使用チュートリアル](/ja/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial)
     - [Lekiwi 移動ロボット組み立てチュートリアル](/ja/tutorials/robot-arms/lekiwi/Lekiwi-Assembly)
+  - **SR-Support 自己起立ロボットチュートリアル**
+    - [SR-Support 自己起立ロボットチュートリアル](/ja/tutorials/robot-arms/sr-support/)
+    - [01 基礎知識](/ja/tutorials/robot-arms/sr-support/01-basics)
+    - [02 環境構築（venv、書き込みツール、ファームウェア）](/ja/tutorials/robot-arms/sr-support/02-environment)
+    - [03 メインファームウェアの書き込み](/ja/tutorials/robot-arms/sr-support/03-build-flash)
+    - [04 組立：プリント・組み立て・配線](/ja/tutorials/robot-arms/sr-support/04-assembly)
+    - [05 ゼロ点校正（矢印キー；DIY ビルドでは必須）](/ja/tutorials/robot-arms/sr-support/05-zero-tool)
+    - [06 デバッグとキャリブレーション](/ja/tutorials/robot-arms/sr-support/06-debug-and-calibrate)
+    - [07 自己起立の使用方法とモニタリング](/ja/tutorials/robot-arms/sr-support/07-self-righting)
+    - [08 WiFi とシミュレーションツイン](/ja/tutorials/robot-arms/sr-support/08-wifi-twin)
+    - [09 トラブルシューティング](/ja/tutorials/robot-arms/sr-support/09-troubleshooting)
+    - [10 リファレンス：モデル・パラメータ・ライセンス](/ja/tutorials/robot-arms/sr-support/10-reference)
 
 ### センサー
 

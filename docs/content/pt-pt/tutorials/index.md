@@ -271,6 +271,18 @@ Bem-vindo à página de Tutoriais! Aqui você encontra todos os tutoriais de uso
   - **Lekiwi**
     - [Tutorial de Uso do Robô Móvel Lekiwi](/pt-pt/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial)
     - [Tutorial de Montagem do Robô Móvel Lekiwi](/pt-pt/tutorials/robot-arms/lekiwi/Lekiwi-Assembly)
+  - **Tutorial do robô auto-endireitador SR-Support**
+    - [Tutorial do robô auto-endireitador SR-Support](/pt-pt/tutorials/robot-arms/sr-support/)
+    - [01 Fundamentos](/pt-pt/tutorials/robot-arms/sr-support/01-basics)
+    - [02 Preparação do ambiente (venv, ferramentas de gravação e firmware)](/pt-pt/tutorials/robot-arms/sr-support/02-environment)
+    - [03 Gravar o firmware principal](/pt-pt/tutorials/robot-arms/sr-support/03-build-flash)
+    - [04 Montagem: imprimir, montar, ligar](/pt-pt/tutorials/robot-arms/sr-support/04-assembly)
+    - [05 Calibração do ponto zero (teclas de seta; obrigatório para montagens DIY)](/pt-pt/tutorials/robot-arms/sr-support/05-zero-tool)
+    - [06 Depuração e calibração](/pt-pt/tutorials/robot-arms/sr-support/06-debug-and-calibrate)
+    - [07 Utilização e monitorização do auto-endireitamento](/pt-pt/tutorials/robot-arms/sr-support/07-self-righting)
+    - [08 WiFi e o gémeo de simulação](/pt-pt/tutorials/robot-arms/sr-support/08-wifi-twin)
+    - [09 Resolução de problemas](/pt-pt/tutorials/robot-arms/sr-support/09-troubleshooting)
+    - [10 Referência: modelo, parâmetros e licenciamento](/pt-pt/tutorials/robot-arms/sr-support/10-reference)
 
 ### Acessórios
 

@@ -271,6 +271,18 @@ Welcome to the Tutorials page! Here, you can find all product usage tutorials, c
   - **Lekiwi**
     - [Lekiwi Tutorial](/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial)
     - [Lekiwi Assembly](/tutorials/robot-arms/lekiwi/Lekiwi-Assembly)
+  - **SR-Support Self-Righting Robot Tutorial**
+    - [SR-Support Self-Righting Robot Tutorial](/tutorials/robot-arms/sr-support/)
+    - [01 Basics](/tutorials/robot-arms/sr-support/01-basics)
+    - [02 Environment setup (venv, flash tools and firmware)](/tutorials/robot-arms/sr-support/02-environment)
+    - [03 Flash the main firmware](/tutorials/robot-arms/sr-support/03-build-flash)
+    - [04 Assembly: print, build, wire](/tutorials/robot-arms/sr-support/04-assembly)
+    - [05 Zero-calibration (arrow keys; required for DIY builds)](/tutorials/robot-arms/sr-support/05-zero-tool)
+    - [06 Debug and calibration](/tutorials/robot-arms/sr-support/06-debug-and-calibrate)
+    - [07 Self-righting usage and monitoring](/tutorials/robot-arms/sr-support/07-self-righting)
+    - [08 WiFi and the simulation twin](/tutorials/robot-arms/sr-support/08-wifi-twin)
+    - [09 Troubleshooting](/tutorials/robot-arms/sr-support/09-troubleshooting)
+    - [10 Reference: model, parameters and licensing](/tutorials/robot-arms/sr-support/10-reference)
 
 ### Accessories
 

@@ -208,6 +208,22 @@ description: "钜犀科技机械臂系列教程首页——SO-ARM101、AmazingHa
 - [Lekiwi 组装教程](./lekiwi/Lekiwi-Assembly.md)
 - [产品资料](./lekiwi/Lekiwi-Product-Info.md)
 
+### SR-Support 自扶正装置教程
+
+SR-Support（2-DOF 自扶正装置）从基础知识、环境准备、烧录装配、定零标定到自扶正使用与故障排查的完整教程。
+
+- [SR-Support 自扶正装置教程](./sr-support/index.md)
+- [01 基础知识](./sr-support/01-basics.md)
+- [02 环境准备（虚拟环境、烧录工具与固件）](./sr-support/02-environment.md)
+- [03 烧录主固件](./sr-support/03-build-flash.md)
+- [04 散件组装：打印、装配与接线](./sr-support/04-assembly.md)
+- [05 中位零点校准（方向键；DIY 必做）](./sr-support/05-zero-tool.md)
+- [06 调试与标定](./sr-support/06-debug-and-calibrate.md)
+- [07 自扶正使用与监控](./sr-support/07-self-righting.md)
+- [08 WiFi 与仿真镜像](./sr-support/08-wifi-twin.md)
+- [09 故障排查](./sr-support/09-troubleshooting.md)
+- [10 参考：模型、参数与许可](./sr-support/10-reference.md)
+
 ### SO-ARM101 + AmazingHand 教程
 
 SO-ARM101 从动臂 + AmazingHand 灵巧手的完整工作流:环境搭建、校准、遥操作、数据采集、模型训练与部署(Windows / Linux 分册)。

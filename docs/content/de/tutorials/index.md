@@ -267,6 +267,18 @@ Willkommen auf der Tutorials-Seite! Hier finden Sie alle Tutorials zur Produktnu
   - **Lekiwi**
     - [Lekiwi-Mobilitätsroboter – Bedienungstutorial](/de/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial)
     - [Lekiwi-Mobilitätsroboter – Montage-Tutorial](/de/tutorials/robot-arms/lekiwi/Lekiwi-Assembly)
+  - **SR-Support Selbstaufrichtender Roboter – Tutorial**
+    - [SR-Support Selbstaufrichtender Roboter – Tutorial](/de/tutorials/robot-arms/sr-support/)
+    - [01 Grundlagen](/de/tutorials/robot-arms/sr-support/01-basics)
+    - [02 Umgebungseinrichtung (venv, Flash-Tools und Firmware)](/de/tutorials/robot-arms/sr-support/02-environment)
+    - [03 Hauptfirmware flashen](/de/tutorials/robot-arms/sr-support/03-build-flash)
+    - [04 Montage: Drucken, Bauen, Verkabeln](/de/tutorials/robot-arms/sr-support/04-assembly)
+    - [05 Nullpunkt-Kalibrierung (Pfeiltasten; erforderlich für DIY-Bauten)](/de/tutorials/robot-arms/sr-support/05-zero-tool)
+    - [06 Debug und Kalibrierung](/de/tutorials/robot-arms/sr-support/06-debug-and-calibrate)
+    - [07 Selbstaufrichtung: Anwendung und Überwachung](/de/tutorials/robot-arms/sr-support/07-self-righting)
+    - [08 WLAN und der Simulationszwilling](/de/tutorials/robot-arms/sr-support/08-wifi-twin)
+    - [09 Fehlerbehebung](/de/tutorials/robot-arms/sr-support/09-troubleshooting)
+    - [10 Referenz: Modell, Parameter und Lizenzierung](/de/tutorials/robot-arms/sr-support/10-reference)
 
 ### Sensoren
 

@@ -209,6 +209,22 @@ Robot mobile completamente open source, compatibile con LeRobot imitation learni
 - [Montaggio Lekiwi](./lekiwi/Lekiwi-Assembly.md)
 - [Informazioni sul prodotto](./lekiwi/Lekiwi-Product-Info.md)
 
+### Tutorial del robot auto-raddrizzante SR-Support
+
+Tutorial completo per il dispositivo auto-raddrizzante a 2-DOF SR-Support, dalle nozioni di base e dalla preparazione dell'ambiente al flash, all'assemblaggio, all'azzeramento, alla calibrazione, all'uso dell'auto-raddrizzamento e alla risoluzione dei problemi.
+
+- [Tutorial del robot auto-raddrizzante SR-Support](./sr-support/index.md)
+- [01 Nozioni di base](./sr-support/01-basics.md)
+- [02 Preparazione dell'ambiente (venv, strumenti di flash e firmware)](./sr-support/02-environment.md)
+- [03 Flash del firmware principale](./sr-support/03-build-flash.md)
+- [04 Assemblaggio: stampa, montaggio, cablaggio](./sr-support/04-assembly.md)
+- [05 Azzeramento (tasti freccia; obbligatorio per le build fai-da-te)](./sr-support/05-zero-tool.md)
+- [06 Debug e calibrazione](./sr-support/06-debug-and-calibrate.md)
+- [07 Uso dell'auto-raddrizzamento e monitoraggio](./sr-support/07-self-righting.md)
+- [08 WiFi e il gemello della simulazione](./sr-support/08-wifi-twin.md)
+- [09 Risoluzione dei problemi](./sr-support/09-troubleshooting.md)
+- [10 Riferimenti: modello, parametri e licenze](./sr-support/10-reference.md)
+
 ### Corso SO-ARM101 + AmazingHand
 
 Flusso completo SO-ARM101 + AmazingHand: configurazione, calibrazione, teleoperazione, raccolta dati, addestramento e deployment (Windows / Linux).

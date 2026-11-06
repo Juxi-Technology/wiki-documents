@@ -208,6 +208,22 @@ description: "Juxi Technologyロボットアームシリーズチュートリア
 - [Lekiwi 組み立てチュートリアル](./lekiwi/Lekiwi-Assembly.md)
 - [製品情報](./lekiwi/Lekiwi-Product-Info.md)
 
+### SR-Support 自己起立ロボットチュートリアル
+
+SR-Support 2-DOF 自己起立デバイスの完全チュートリアル。基礎知識と環境構築から、書き込み、組立、ゼロ点校正、キャリブレーション、自己起立の使用方法、トラブルシューティングまでを扱います。
+
+- [SR-Support 自己起立ロボットチュートリアル](./sr-support/index.md)
+- [01 基礎知識](./sr-support/01-basics.md)
+- [02 環境構築（venv、書き込みツール、ファームウェア）](./sr-support/02-environment.md)
+- [03 メインファームウェアの書き込み](./sr-support/03-build-flash.md)
+- [04 組立：プリント・組み立て・配線](./sr-support/04-assembly.md)
+- [05 ゼロ点校正（矢印キー；DIY ビルドでは必須）](./sr-support/05-zero-tool.md)
+- [06 デバッグとキャリブレーション](./sr-support/06-debug-and-calibrate.md)
+- [07 自己起立の使用方法とモニタリング](./sr-support/07-self-righting.md)
+- [08 WiFi とシミュレーションツイン](./sr-support/08-wifi-twin.md)
+- [09 トラブルシューティング](./sr-support/09-troubleshooting.md)
+- [10 リファレンス：モデル・パラメータ・ライセンス](./sr-support/10-reference.md)
+
 ### SO-ARM101 + AmazingHand チュートリアル
 
 SO-ARM101 フォロワーアーム + AmazingHand の全ワークフロー:環境構築、キャリブレーション、遠隔操作、データ収集、モデル訓練、デプロイ(Windows / Linux 別)。

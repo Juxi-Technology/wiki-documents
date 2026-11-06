@@ -208,6 +208,22 @@ description: "Juxi Technology 로봇 팔 시리즈 튜토리얼 홈——SO-ARM1
 - [Lekiwi 조립 튜토리얼](./lekiwi/Lekiwi-Assembly.md)
 - [제품 정보](./lekiwi/Lekiwi-Product-Info.md)
 
+### SR-Support 자기 기립 로봇 튜토리얼
+
+SR-Support 2자유도 자기 기립 장치의 전체 튜토리얼. 기초와 환경 설정부터 플래싱, 조립, 영점 조정, 캘리브레이션, 자기 기립 사용법, 문제 해결까지 다룹니다.
+
+- [SR-Support 자기 기립 로봇 튜토리얼](./sr-support/index.md)
+- [01 기초](./sr-support/01-basics.md)
+- [02 환경 설정 (venv, 플래시 도구와 펌웨어)](./sr-support/02-environment.md)
+- [03 메인 펌웨어 플래싱](./sr-support/03-build-flash.md)
+- [04 조립: 프린팅, 제작, 배선](./sr-support/04-assembly.md)
+- [05 영점 캘리브레이션 (화살표 키; DIY 제작 필수)](./sr-support/05-zero-tool.md)
+- [06 디버그와 캘리브레이션](./sr-support/06-debug-and-calibrate.md)
+- [07 자기 기립 사용법과 모니터링](./sr-support/07-self-righting.md)
+- [08 WiFi와 시뮬레이션 트윈](./sr-support/08-wifi-twin.md)
+- [09 문제 해결](./sr-support/09-troubleshooting.md)
+- [10 레퍼런스: 모델, 파라미터 및 라이선스](./sr-support/10-reference.md)
+
 ### SO-ARM101 + AmazingHand 튜토리얼
 
 SO-ARM101 팔로워 암 + AmazingHand 전체 워크플로: 환경 구축, 캘리브레이션, 원격 조작, 데이터 수집, 모델 학습 및 배포(Windows / Linux 별도).

@@ -271,6 +271,18 @@ head:
   - **Lekiwi**
     - [Lekiwi 使用教程](/zh-hant/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial)
     - [Lekiwi 組裝教程](/zh-hant/tutorials/robot-arms/lekiwi/Lekiwi-Assembly)
+  - **SR-Support 自扶正裝置教程**
+    - [SR-Support 自扶正裝置教程](/zh-hant/tutorials/robot-arms/sr-support/)
+    - [01 基礎知識](/zh-hant/tutorials/robot-arms/sr-support/01-basics)
+    - [02 環境準備（虛擬環境、燒錄工具與韌體）](/zh-hant/tutorials/robot-arms/sr-support/02-environment)
+    - [03 燒錄主韌體](/zh-hant/tutorials/robot-arms/sr-support/03-build-flash)
+    - [04 散件組裝：列印、裝配與接線](/zh-hant/tutorials/robot-arms/sr-support/04-assembly)
+    - [05 中位零點校準（方向鍵；DIY 必做）](/zh-hant/tutorials/robot-arms/sr-support/05-zero-tool)
+    - [06 除錯與標定](/zh-hant/tutorials/robot-arms/sr-support/06-debug-and-calibrate)
+    - [07 自扶正使用與監控](/zh-hant/tutorials/robot-arms/sr-support/07-self-righting)
+    - [08 WiFi 與模擬鏡像](/zh-hant/tutorials/robot-arms/sr-support/08-wifi-twin)
+    - [09 故障排查](/zh-hant/tutorials/robot-arms/sr-support/09-troubleshooting)
+    - [10 參考：模型、參數與許可](/zh-hant/tutorials/robot-arms/sr-support/10-reference)
 
 ### 配件
 

@@ -208,6 +208,22 @@ Fully open-source mobile robot cart, compatible with LeRobot imitation learning 
 - [Lekiwi Assembly Guide](./lekiwi/Lekiwi-Assembly.md)
 - [Product Information](./lekiwi/Lekiwi-Product-Info.md)
 
+### SR-Support Self-Righting Robot Tutorial
+
+Complete tutorial for the SR-Support 2-DOF self-righting device, from basics and environment setup to flashing, assembly, zeroing, calibration, self-righting usage and troubleshooting.
+
+- [SR-Support Self-Righting Robot Tutorial](./sr-support/index.md)
+- [01 Basics](./sr-support/01-basics.md)
+- [02 Environment setup (venv, flash tools and firmware)](./sr-support/02-environment.md)
+- [03 Flash the main firmware](./sr-support/03-build-flash.md)
+- [04 Assembly: print, build, wire](./sr-support/04-assembly.md)
+- [05 Zero-calibration (arrow keys; required for DIY builds)](./sr-support/05-zero-tool.md)
+- [06 Debug and calibration](./sr-support/06-debug-and-calibrate.md)
+- [07 Self-righting usage and monitoring](./sr-support/07-self-righting.md)
+- [08 WiFi and the simulation twin](./sr-support/08-wifi-twin.md)
+- [09 Troubleshooting](./sr-support/09-troubleshooting.md)
+- [10 Reference: model, parameters and licensing](./sr-support/10-reference.md)
+
 ### SO-ARM101 + AmazingHand Course
 
 Complete workflow for the SO-ARM101 follower + AmazingHand: setup, calibration, teleoperation, data collection, model training and deployment (Windows / Linux tracks).

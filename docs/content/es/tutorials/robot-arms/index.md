@@ -208,6 +208,22 @@ Robot móvil totalmente open source, compatible con LeRobot imitation learning y
 - [Montaje Lekiwi](./lekiwi/Lekiwi-Assembly.md)
 - [Información del producto](./lekiwi/Lekiwi-Product-Info.md)
 
+### Tutorial del robot auto-enderezante SR-Support
+
+Tutorial completo del dispositivo auto-enderezante SR-Support de 2 GDL, desde los conceptos básicos y la preparación del entorno hasta el flasheo, el montaje, el punto cero, la calibración, el uso del auto-enderezamiento y la resolución de problemas.
+
+- [Tutorial del robot auto-enderezante SR-Support](./sr-support/index.md)
+- [01 Conceptos básicos](./sr-support/01-basics.md)
+- [02 Preparación del entorno (venv, herramientas de flasheo y firmware)](./sr-support/02-environment.md)
+- [03 Flashear el firmware principal](./sr-support/03-build-flash.md)
+- [04 Montaje: imprimir, construir, cablear](./sr-support/04-assembly.md)
+- [05 Calibración de punto cero (teclas de flecha; obligatorio para montajes DIY)](./sr-support/05-zero-tool.md)
+- [06 Depuración y calibración](./sr-support/06-debug-and-calibrate.md)
+- [07 Uso y monitorización del auto-enderezamiento](./sr-support/07-self-righting.md)
+- [08 WiFi y el gemelo de simulación](./sr-support/08-wifi-twin.md)
+- [09 Resolución de problemas](./sr-support/09-troubleshooting.md)
+- [10 Referencia: modelo, parámetros y licencias](./sr-support/10-reference.md)
+
 ### Curso SO-ARM101 + AmazingHand
 
 Flujo completo SO-ARM101 + AmazingHand: configuración, calibración, teleoperación, recolección de datos, entrenamiento y despliegue (Windows / Linux).

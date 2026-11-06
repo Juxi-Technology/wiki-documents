@@ -271,6 +271,18 @@ head:
   - **Lekiwi**
     - [Tutorial de uso del robot móvil Lekiwi](/es/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial)
     - [Tutorial de ensamblaje del robot móvil Lekiwi](/es/tutorials/robot-arms/lekiwi/Lekiwi-Assembly)
+  - **Tutorial del robot auto-enderezante SR-Support**
+    - [Tutorial del robot auto-enderezante SR-Support](/es/tutorials/robot-arms/sr-support/)
+    - [01 Conceptos básicos](/es/tutorials/robot-arms/sr-support/01-basics)
+    - [02 Preparación del entorno (venv, herramientas de flasheo y firmware)](/es/tutorials/robot-arms/sr-support/02-environment)
+    - [03 Flashear el firmware principal](/es/tutorials/robot-arms/sr-support/03-build-flash)
+    - [04 Montaje: imprimir, construir, cablear](/es/tutorials/robot-arms/sr-support/04-assembly)
+    - [05 Calibración de punto cero (teclas de flecha; obligatorio para montajes DIY)](/es/tutorials/robot-arms/sr-support/05-zero-tool)
+    - [06 Depuración y calibración](/es/tutorials/robot-arms/sr-support/06-debug-and-calibrate)
+    - [07 Uso y monitorización del auto-enderezamiento](/es/tutorials/robot-arms/sr-support/07-self-righting)
+    - [08 WiFi y el gemelo de simulación](/es/tutorials/robot-arms/sr-support/08-wifi-twin)
+    - [09 Resolución de problemas](/es/tutorials/robot-arms/sr-support/09-troubleshooting)
+    - [10 Referencia: modelo, parámetros y licencias](/es/tutorials/robot-arms/sr-support/10-reference)
 
 ### Sensores
 

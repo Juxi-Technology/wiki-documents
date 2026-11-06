@@ -267,6 +267,18 @@ Benvenuto nella pagina dei tutorial! Qui puoi trovare tutti i tutorial d'uso dei
   - **Lekiwi**
     - [Tutorial d'uso del robot mobile Lekiwi](/it/tutorials/robot-arms/lekiwi/Lekiwi-Tutorial)
     - [Tutorial di assemblaggio del robot mobile Lekiwi](/it/tutorials/robot-arms/lekiwi/Lekiwi-Assembly)
+  - **Tutorial del robot auto-raddrizzante SR-Support**
+    - [Tutorial del robot auto-raddrizzante SR-Support](/it/tutorials/robot-arms/sr-support/)
+    - [01 Nozioni di base](/it/tutorials/robot-arms/sr-support/01-basics)
+    - [02 Preparazione dell'ambiente (venv, strumenti di flash e firmware)](/it/tutorials/robot-arms/sr-support/02-environment)
+    - [03 Flash del firmware principale](/it/tutorials/robot-arms/sr-support/03-build-flash)
+    - [04 Assemblaggio: stampa, montaggio, cablaggio](/it/tutorials/robot-arms/sr-support/04-assembly)
+    - [05 Azzeramento (tasti freccia; obbligatorio per le build fai-da-te)](/it/tutorials/robot-arms/sr-support/05-zero-tool)
+    - [06 Debug e calibrazione](/it/tutorials/robot-arms/sr-support/06-debug-and-calibrate)
+    - [07 Uso dell'auto-raddrizzamento e monitoraggio](/it/tutorials/robot-arms/sr-support/07-self-righting)
+    - [08 WiFi e il gemello della simulazione](/it/tutorials/robot-arms/sr-support/08-wifi-twin)
+    - [09 Risoluzione dei problemi](/it/tutorials/robot-arms/sr-support/09-troubleshooting)
+    - [10 Riferimenti: modello, parametri e licenze](/it/tutorials/robot-arms/sr-support/10-reference)
 
 ### Sensori
 
