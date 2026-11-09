@@ -220,9 +220,10 @@ SR-Support（2-DOF 自扶正装置）从基础知识、环境准备、烧录装�
 - [05 中位零点校准（方向键；DIY 必做）](./sr-support/05-zero-tool.md)
 - [06 调试与标定](./sr-support/06-debug-and-calibrate.md)
 - [07 自扶正使用与监控](./sr-support/07-self-righting.md)
-- [08 WiFi 与仿真镜像](./sr-support/08-wifi-twin.md)
-- [09 故障排查](./sr-support/09-troubleshooting.md)
-- [10 参考：模型、参数与许可](./sr-support/10-reference.md)
+- [08 WiFi 状态页与配网](./sr-support/08-wifi.md)
+- [09 MuJoCo 仿真与实机实时镜像](./sr-support/09-mujoco.md)
+- [10 故障排查](./sr-support/10-troubleshooting.md)
+- [11 参考：模型、参数与许可](./sr-support/11-reference.md)
 
 ### SO-ARM101 + AmazingHand 教程
 

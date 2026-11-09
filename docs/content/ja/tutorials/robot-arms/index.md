@@ -220,9 +220,10 @@ SR-Support 2-DOF 自己起立デバイスの完全チュートリアル。基礎
 - [05 ゼロ点校正（矢印キー；DIY ビルドでは必須）](./sr-support/05-zero-tool.md)
 - [06 デバッグとキャリブレーション](./sr-support/06-debug-and-calibrate.md)
 - [07 自己起立の使用方法とモニタリング](./sr-support/07-self-righting.md)
-- [08 WiFi とシミュレーションツイン](./sr-support/08-wifi-twin.md)
-- [09 トラブルシューティング](./sr-support/09-troubleshooting.md)
-- [10 リファレンス：モデル・パラメータ・ライセンス](./sr-support/10-reference.md)
+- [08 WiFi ステータスページとプロビジョニング](./sr-support/08-wifi.md)
+- [09 MuJoCo シミュレーションとライブツイン](./sr-support/09-mujoco.md)
+- [10 トラブルシューティング](./sr-support/10-troubleshooting.md)
+- [11 リファレンス：モデル・パラメータ・ライセンス](./sr-support/11-reference.md)
 
 ### SO-ARM101 + AmazingHand チュートリアル
 

@@ -221,9 +221,10 @@ Tutoriel complet du dispositif d'auto-redressement SR-Support à 2 DDL, des base
 - [05 Calibration du point zéro (flèches ; obligatoire pour les montages DIY)](./sr-support/05-zero-tool.md)
 - [06 Débogage et calibration](./sr-support/06-debug-and-calibrate.md)
 - [07 Utilisation de l'auto-redressement et surveillance](./sr-support/07-self-righting.md)
-- [08 WiFi et le jumeau de simulation](./sr-support/08-wifi-twin.md)
-- [09 Dépannage](./sr-support/09-troubleshooting.md)
-- [10 Référence : modèle, paramètres et licence](./sr-support/10-reference.md)
+- [08 Page d'état WiFi et provisionnement](./sr-support/08-wifi.md)
+- [09 Simulation MuJoCo et jumeau en direct](./sr-support/09-mujoco.md)
+- [10 Dépannage](./sr-support/10-troubleshooting.md)
+- [11 Référence : modèle, paramètres et licence](./sr-support/11-reference.md)
 
 ### Cours SO-ARM101 + AmazingHand
 

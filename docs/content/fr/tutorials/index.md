@@ -276,9 +276,10 @@ Bienvenue sur la page Tutoriels ! Vous y trouverez tous les tutoriels d'utilisat
     - [05 Calibration du point zéro (flèches ; obligatoire pour les montages DIY)](/fr/tutorials/robot-arms/sr-support/05-zero-tool)
     - [06 Débogage et calibration](/fr/tutorials/robot-arms/sr-support/06-debug-and-calibrate)
     - [07 Utilisation de l'auto-redressement et surveillance](/fr/tutorials/robot-arms/sr-support/07-self-righting)
-    - [08 WiFi et le jumeau de simulation](/fr/tutorials/robot-arms/sr-support/08-wifi-twin)
-    - [09 Dépannage](/fr/tutorials/robot-arms/sr-support/09-troubleshooting)
-    - [10 Référence : modèle, paramètres et licence](/fr/tutorials/robot-arms/sr-support/10-reference)
+    - [08 Page d'état WiFi et provisionnement](/fr/tutorials/robot-arms/sr-support/08-wifi)
+    - [09 Simulation MuJoCo et jumeau en direct](/fr/tutorials/robot-arms/sr-support/09-mujoco)
+    - [10 Dépannage](/fr/tutorials/robot-arms/sr-support/10-troubleshooting)
+    - [11 Référence : modèle, paramètres et licence](/fr/tutorials/robot-arms/sr-support/11-reference)
 
 ### Capteurs
 

@@ -276,9 +276,10 @@ Willkommen auf der Tutorials-Seite! Hier finden Sie alle Tutorials zur Produktnu
     - [05 Nullpunkt-Kalibrierung (Pfeiltasten; erforderlich für DIY-Bauten)](/de/tutorials/robot-arms/sr-support/05-zero-tool)
     - [06 Debug und Kalibrierung](/de/tutorials/robot-arms/sr-support/06-debug-and-calibrate)
     - [07 Selbstaufrichtung: Anwendung und Überwachung](/de/tutorials/robot-arms/sr-support/07-self-righting)
-    - [08 WLAN und der Simulationszwilling](/de/tutorials/robot-arms/sr-support/08-wifi-twin)
-    - [09 Fehlerbehebung](/de/tutorials/robot-arms/sr-support/09-troubleshooting)
-    - [10 Referenz: Modell, Parameter und Lizenzierung](/de/tutorials/robot-arms/sr-support/10-reference)
+    - [08 WLAN-Statusseite und Einrichtung im Heimnetz](/de/tutorials/robot-arms/sr-support/08-wifi)
+    - [09 MuJoCo-Simulation und der Live-Zwilling](/de/tutorials/robot-arms/sr-support/09-mujoco)
+    - [10 Fehlerbehebung](/de/tutorials/robot-arms/sr-support/10-troubleshooting)
+    - [11 Referenz: Modell, Parameter und Lizenzierung](/de/tutorials/robot-arms/sr-support/11-reference)
 
 ### Sensoren
 

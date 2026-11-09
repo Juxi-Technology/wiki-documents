@@ -220,9 +220,10 @@ Tutorial completo do dispositivo de auto-endireitamento SR-Support de 2 GDL, des
 - [05 Calibração do ponto zero (teclas de seta; obrigatório para montagens DIY)](./sr-support/05-zero-tool.md)
 - [06 Depuração e calibração](./sr-support/06-debug-and-calibrate.md)
 - [07 Utilização e monitorização do auto-endireitamento](./sr-support/07-self-righting.md)
-- [08 WiFi e o gémeo de simulação](./sr-support/08-wifi-twin.md)
-- [09 Resolução de problemas](./sr-support/09-troubleshooting.md)
-- [10 Referência: modelo, parâmetros e licenciamento](./sr-support/10-reference.md)
+- [08 Página de estado WiFi e aprovisionamento](./sr-support/08-wifi.md)
+- [09 Simulação MuJoCo e o gémeo ao vivo](./sr-support/09-mujoco.md)
+- [10 Resolução de problemas](./sr-support/10-troubleshooting.md)
+- [11 Referência: modelo, parâmetros e licenciamento](./sr-support/11-reference.md)
 
 ### Curso SO-ARM101 + AmazingHand
 

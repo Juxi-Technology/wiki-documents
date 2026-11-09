@@ -276,9 +276,10 @@ description: "Juxi Technology Wiki のチュートリアル一覧。ロボット
     - [05 ゼロ点校正（矢印キー；DIY ビルドでは必須）](/ja/tutorials/robot-arms/sr-support/05-zero-tool)
     - [06 デバッグとキャリブレーション](/ja/tutorials/robot-arms/sr-support/06-debug-and-calibrate)
     - [07 自己起立の使用方法とモニタリング](/ja/tutorials/robot-arms/sr-support/07-self-righting)
-    - [08 WiFi とシミュレーションツイン](/ja/tutorials/robot-arms/sr-support/08-wifi-twin)
-    - [09 トラブルシューティング](/ja/tutorials/robot-arms/sr-support/09-troubleshooting)
-    - [10 リファレンス：モデル・パラメータ・ライセンス](/ja/tutorials/robot-arms/sr-support/10-reference)
+    - [08 WiFi ステータスページとプロビジョニング](/ja/tutorials/robot-arms/sr-support/08-wifi)
+    - [09 MuJoCo シミュレーションとライブツイン](/ja/tutorials/robot-arms/sr-support/09-mujoco)
+    - [10 トラブルシューティング](/ja/tutorials/robot-arms/sr-support/10-troubleshooting)
+    - [11 リファレンス：モデル・パラメータ・ライセンス](/ja/tutorials/robot-arms/sr-support/11-reference)
 
 ### センサー
 

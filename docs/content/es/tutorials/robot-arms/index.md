@@ -220,9 +220,10 @@ Tutorial completo del dispositivo auto-enderezante SR-Support de 2 GDL, desde lo
 - [05 Calibración de punto cero (teclas de flecha; obligatorio para montajes DIY)](./sr-support/05-zero-tool.md)
 - [06 Depuración y calibración](./sr-support/06-debug-and-calibrate.md)
 - [07 Uso y monitorización del auto-enderezamiento](./sr-support/07-self-righting.md)
-- [08 WiFi y el gemelo de simulación](./sr-support/08-wifi-twin.md)
-- [09 Resolución de problemas](./sr-support/09-troubleshooting.md)
-- [10 Referencia: modelo, parámetros y licencias](./sr-support/10-reference.md)
+- [08 Página de estado WiFi y aprovisionamiento](./sr-support/08-wifi.md)
+- [09 Simulación MuJoCo y el gemelo en vivo](./sr-support/09-mujoco.md)
+- [10 Resolución de problemas](./sr-support/10-troubleshooting.md)
+- [11 Referencia: modelo, parámetros y licencias](./sr-support/11-reference.md)
 
 ### Curso SO-ARM101 + AmazingHand
 

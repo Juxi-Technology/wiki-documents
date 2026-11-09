@@ -280,9 +280,10 @@ Welcome to the Tutorials page! Here, you can find all product usage tutorials, c
     - [05 Zero-calibration (arrow keys; required for DIY builds)](/tutorials/robot-arms/sr-support/05-zero-tool)
     - [06 Debug and calibration](/tutorials/robot-arms/sr-support/06-debug-and-calibrate)
     - [07 Self-righting usage and monitoring](/tutorials/robot-arms/sr-support/07-self-righting)
-    - [08 WiFi and the simulation twin](/tutorials/robot-arms/sr-support/08-wifi-twin)
-    - [09 Troubleshooting](/tutorials/robot-arms/sr-support/09-troubleshooting)
-    - [10 Reference: model, parameters and licensing](/tutorials/robot-arms/sr-support/10-reference)
+    - [08 WiFi status page and provisioning](/tutorials/robot-arms/sr-support/08-wifi)
+    - [09 MuJoCo simulation and the live twin](/tutorials/robot-arms/sr-support/09-mujoco)
+    - [10 Troubleshooting](/tutorials/robot-arms/sr-support/10-troubleshooting)
+    - [11 Reference: model, parameters and licensing](/tutorials/robot-arms/sr-support/11-reference)
 
 ### Accessories
 

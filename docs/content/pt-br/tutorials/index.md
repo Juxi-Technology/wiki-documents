@@ -280,9 +280,10 @@ Bem-vindo à página de Tutoriais! Aqui você encontra todos os tutoriais de uso
     - [05 Calibração de zero (teclas de seta; obrigatório para builds DIY)](/pt-br/tutorials/robot-arms/sr-support/05-zero-tool)
     - [06 Depuração e calibração](/pt-br/tutorials/robot-arms/sr-support/06-debug-and-calibrate)
     - [07 Uso e monitoramento do auto-endireitamento](/pt-br/tutorials/robot-arms/sr-support/07-self-righting)
-    - [08 WiFi e o gêmeo de simulação](/pt-br/tutorials/robot-arms/sr-support/08-wifi-twin)
-    - [09 Solução de problemas](/pt-br/tutorials/robot-arms/sr-support/09-troubleshooting)
-    - [10 Referência: modelo, parâmetros e licenciamento](/pt-br/tutorials/robot-arms/sr-support/10-reference)
+    - [08 Página de status WiFi e provisionamento](/pt-br/tutorials/robot-arms/sr-support/08-wifi)
+    - [09 Simulação MuJoCo e o gêmeo ao vivo](/pt-br/tutorials/robot-arms/sr-support/09-mujoco)
+    - [10 Solução de problemas](/pt-br/tutorials/robot-arms/sr-support/10-troubleshooting)
+    - [11 Referência: modelo, parâmetros e licenciamento](/pt-br/tutorials/robot-arms/sr-support/11-reference)
 
 ### Acessórios
 

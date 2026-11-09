@@ -221,9 +221,10 @@ Tutorial completo per il dispositivo auto-raddrizzante a 2-DOF SR-Support, dalle
 - [05 Azzeramento (tasti freccia; obbligatorio per le build fai-da-te)](./sr-support/05-zero-tool.md)
 - [06 Debug e calibrazione](./sr-support/06-debug-and-calibrate.md)
 - [07 Uso dell'auto-raddrizzamento e monitoraggio](./sr-support/07-self-righting.md)
-- [08 WiFi e il gemello della simulazione](./sr-support/08-wifi-twin.md)
-- [09 Risoluzione dei problemi](./sr-support/09-troubleshooting.md)
-- [10 Riferimenti: modello, parametri e licenze](./sr-support/10-reference.md)
+- [08 Pagina di stato WiFi e provisioning](./sr-support/08-wifi.md)
+- [09 Simulazione MuJoCo e il gemello in tempo reale](./sr-support/09-mujoco.md)
+- [10 Risoluzione dei problemi](./sr-support/10-troubleshooting.md)
+- [11 Riferimenti: modello, parametri e licenze](./sr-support/11-reference.md)
 
 ### Corso SO-ARM101 + AmazingHand
 

@@ -280,9 +280,10 @@ head:
     - [05 中位零点校准（方向键；DIY 必做）](/zh-hans/tutorials/robot-arms/sr-support/05-zero-tool)
     - [06 调试与标定](/zh-hans/tutorials/robot-arms/sr-support/06-debug-and-calibrate)
     - [07 自扶正使用与监控](/zh-hans/tutorials/robot-arms/sr-support/07-self-righting)
-    - [08 WiFi 与仿真镜像](/zh-hans/tutorials/robot-arms/sr-support/08-wifi-twin)
-    - [09 故障排查](/zh-hans/tutorials/robot-arms/sr-support/09-troubleshooting)
-    - [10 参考：模型、参数与许可](/zh-hans/tutorials/robot-arms/sr-support/10-reference)
+    - [08 WiFi 状态页与配网](/zh-hans/tutorials/robot-arms/sr-support/08-wifi)
+    - [09 MuJoCo 仿真与实机实时镜像](/zh-hans/tutorials/robot-arms/sr-support/09-mujoco)
+    - [10 故障排查](/zh-hans/tutorials/robot-arms/sr-support/10-troubleshooting)
+    - [11 参考：模型、参数与许可](/zh-hans/tutorials/robot-arms/sr-support/11-reference)
 
 ### 配件
 

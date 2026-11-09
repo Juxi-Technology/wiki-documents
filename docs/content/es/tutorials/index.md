@@ -280,9 +280,10 @@ head:
     - [05 Calibración de punto cero (teclas de flecha; obligatorio para montajes DIY)](/es/tutorials/robot-arms/sr-support/05-zero-tool)
     - [06 Depuración y calibración](/es/tutorials/robot-arms/sr-support/06-debug-and-calibrate)
     - [07 Uso y monitorización del auto-enderezamiento](/es/tutorials/robot-arms/sr-support/07-self-righting)
-    - [08 WiFi y el gemelo de simulación](/es/tutorials/robot-arms/sr-support/08-wifi-twin)
-    - [09 Resolución de problemas](/es/tutorials/robot-arms/sr-support/09-troubleshooting)
-    - [10 Referencia: modelo, parámetros y licencias](/es/tutorials/robot-arms/sr-support/10-reference)
+    - [08 Página de estado WiFi y aprovisionamiento](/es/tutorials/robot-arms/sr-support/08-wifi)
+    - [09 Simulación MuJoCo y el gemelo en vivo](/es/tutorials/robot-arms/sr-support/09-mujoco)
+    - [10 Resolución de problemas](/es/tutorials/robot-arms/sr-support/10-troubleshooting)
+    - [11 Referencia: modelo, parámetros y licencias](/es/tutorials/robot-arms/sr-support/11-reference)
 
 ### Sensores
 

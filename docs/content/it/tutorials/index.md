@@ -276,9 +276,10 @@ Benvenuto nella pagina dei tutorial! Qui puoi trovare tutti i tutorial d'uso dei
     - [05 Azzeramento (tasti freccia; obbligatorio per le build fai-da-te)](/it/tutorials/robot-arms/sr-support/05-zero-tool)
     - [06 Debug e calibrazione](/it/tutorials/robot-arms/sr-support/06-debug-and-calibrate)
     - [07 Uso dell'auto-raddrizzamento e monitoraggio](/it/tutorials/robot-arms/sr-support/07-self-righting)
-    - [08 WiFi e il gemello della simulazione](/it/tutorials/robot-arms/sr-support/08-wifi-twin)
-    - [09 Risoluzione dei problemi](/it/tutorials/robot-arms/sr-support/09-troubleshooting)
-    - [10 Riferimenti: modello, parametri e licenze](/it/tutorials/robot-arms/sr-support/10-reference)
+    - [08 Pagina di stato WiFi e provisioning](/it/tutorials/robot-arms/sr-support/08-wifi)
+    - [09 Simulazione MuJoCo e il gemello in tempo reale](/it/tutorials/robot-arms/sr-support/09-mujoco)
+    - [10 Risoluzione dei problemi](/it/tutorials/robot-arms/sr-support/10-troubleshooting)
+    - [11 Riferimenti: modello, parametri e licenze](/it/tutorials/robot-arms/sr-support/11-reference)
 
 ### Sensori
 

@@ -276,9 +276,10 @@ description: "Juxi Technology 튜토리얼 — 로봇 암과 액세서리, 센�
     - [05 영점 캘리브레이션 (화살표 키; DIY 제작 필수)](/ko/tutorials/robot-arms/sr-support/05-zero-tool)
     - [06 디버그와 캘리브레이션](/ko/tutorials/robot-arms/sr-support/06-debug-and-calibrate)
     - [07 자기 기립 사용법과 모니터링](/ko/tutorials/robot-arms/sr-support/07-self-righting)
-    - [08 WiFi와 시뮬레이션 트윈](/ko/tutorials/robot-arms/sr-support/08-wifi-twin)
-    - [09 문제 해결](/ko/tutorials/robot-arms/sr-support/09-troubleshooting)
-    - [10 레퍼런스: 모델, 파라미터 및 라이선스](/ko/tutorials/robot-arms/sr-support/10-reference)
+    - [08 WiFi 상태 페이지와 프로비저닝](/ko/tutorials/robot-arms/sr-support/08-wifi)
+    - [09 MuJoCo 시뮬레이션과 라이브 트윈](/ko/tutorials/robot-arms/sr-support/09-mujoco)
+    - [10 문제 해결](/ko/tutorials/robot-arms/sr-support/10-troubleshooting)
+    - [11 레퍼런스: 모델, 파라미터 및 라이선스](/ko/tutorials/robot-arms/sr-support/11-reference)
 
 ### 센서
 

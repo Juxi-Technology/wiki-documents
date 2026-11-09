@@ -220,9 +220,10 @@ Complete tutorial for the SR-Support 2-DOF self-righting device, from basics and
 - [05 Zero-calibration (arrow keys; required for DIY builds)](./sr-support/05-zero-tool.md)
 - [06 Debug and calibration](./sr-support/06-debug-and-calibrate.md)
 - [07 Self-righting usage and monitoring](./sr-support/07-self-righting.md)
-- [08 WiFi and the simulation twin](./sr-support/08-wifi-twin.md)
-- [09 Troubleshooting](./sr-support/09-troubleshooting.md)
-- [10 Reference: model, parameters and licensing](./sr-support/10-reference.md)
+- [08 WiFi status page and provisioning](./sr-support/08-wifi.md)
+- [09 MuJoCo simulation and the live twin](./sr-support/09-mujoco.md)
+- [10 Troubleshooting](./sr-support/10-troubleshooting.md)
+- [11 Reference: model, parameters and licensing](./sr-support/11-reference.md)
 
 ### SO-ARM101 + AmazingHand Course
 

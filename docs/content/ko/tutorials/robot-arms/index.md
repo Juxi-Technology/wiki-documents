@@ -220,9 +220,10 @@ SR-Support 2자유도 자기 기립 장치의 전체 튜토리얼. 기초와 환
 - [05 영점 캘리브레이션 (화살표 키; DIY 제작 필수)](./sr-support/05-zero-tool.md)
 - [06 디버그와 캘리브레이션](./sr-support/06-debug-and-calibrate.md)
 - [07 자기 기립 사용법과 모니터링](./sr-support/07-self-righting.md)
-- [08 WiFi와 시뮬레이션 트윈](./sr-support/08-wifi-twin.md)
-- [09 문제 해결](./sr-support/09-troubleshooting.md)
-- [10 레퍼런스: 모델, 파라미터 및 라이선스](./sr-support/10-reference.md)
+- [08 WiFi 상태 페이지와 프로비저닝](./sr-support/08-wifi.md)
+- [09 MuJoCo 시뮬레이션과 라이브 트윈](./sr-support/09-mujoco.md)
+- [10 문제 해결](./sr-support/10-troubleshooting.md)
+- [11 레퍼런스: 모델, 파라미터 및 라이선스](./sr-support/11-reference.md)
 
 ### SO-ARM101 + AmazingHand 튜토리얼
 
