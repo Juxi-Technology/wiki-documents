@@ -173,32 +173,33 @@ description: "Juxi Technologyロボットアームシリーズチュートリア
   - [NVIDIA DGX Spark 推論](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/DGX-Spark)
   - [地瓜机器人（D-Robotics） RDK S100 推論](/ja/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/RDK-S100)
 
-### AmazingHand
+### AmazingHand 多指ハンドチュートリアル総覧
 
-オープンソースバイオニック器用ハンド。高精度の多指操作を提供。
+AmazingHand 多指ハンドの統合チュートリアル入口：SCS0009 シリアルバスサーボ版と PWM サーボ版の製品選定、ハードウェア配線、クイックスタート、ウェブコントロール、デスクトップツール、ハンドトラッキング、サーボ調整、FAQ。
 
-- [AmazingHand 器用ハンドチュートリアル](./amazing-hand/index.md)
-- [AmazingHand インターフェース制御](./amazing-hand/AmazingHand-Interface-Control.md)
-- [Arduino Nano チュートリアル](./amazing-hand/Arduino-Nano-Tutorial.md)
-- [AmazingHand Web コントロール](./amazing-hand/AmazingHand-Web-Control.md)
-- [AmazingHand 公式サンプル](./amazing-hand/AmazingHand-Official-Example.md)
-- [AmazingHand TTLデバッグ](./amazing-hand/AmazingHand-TTL-Debugging.md)
-
-#### AmazingHand
-- [AmazingHand 器用なハンド製品資料](./amazing-hand/product-info.md)
-- [環境カメラキットの取り付け](./amazing-hand/Camera-Kit-Installation.md)
-
-#### PWMサーボ デバッグ
-- [01-GUI 可視化制御](./amazing-hand/pwm-debugging/01-GUI-Visual-Control.md)
-- [02-ジェスチャートラッキングチュートリアル](./amazing-hand/pwm-debugging/02-Gesture-Tracking.md)
-- [03-PWM サーボバージョン-使用マニュアル](./amazing-hand/pwm-debugging/03-PWM-Servo-Manual.md)
-- [04-シリアルサーボバージョン-使用説明](./amazing-hand/pwm-debugging/04-Serial-Servo-Guide.md)
-- [全流程使用チュートリアル](./amazing-hand/pwm-debugging/05-Full-Workflow-Tutorial.md)
-
-#### ジェスチャー追跡
-- [Linux（Ubuntu）ワンクリックデプロイ実行](./amazing-hand/gesture-tracking/01-Ubuntu.md)
-- [Windows ワンクリックデプロイ実行](./amazing-hand/gesture-tracking/02-Windows.md)
-- [Mac ワンクリックデプロイ実行](./amazing-hand/gesture-tracking/03-macOS.md)
+- [チュートリアル索引（旧URL含む）](./amazing-hand/index.md)
+- [AmazingHand 多指ハンドチュートリアル総覧](./amazing-hand/README.md)
+- [AmazingHand 製品資料](./amazing-hand/00-product/product-info.md)
+- [SCS0009 と PWM のバージョン比較と選定](./amazing-hand/00-product/version-comparison.md)
+- [ダウンロードとリソース](./amazing-hand/00-product/downloads.md)
+- [ハードウェア概要：構造、CAD、組み立て](./amazing-hand/01-hardware/overview.md)
+- [SCS0009 配線、ID、給電](./amazing-hand/01-hardware/scs0009.md)
+- [PWM 配線、GPIO、給電](./amazing-hand/01-hardware/pwm.md)
+- [環境カメラキットの取り付け](./amazing-hand/01-hardware/camera-kit.md)
+- [SCS0009 クイックスタート](./amazing-hand/02-quick-start/scs0009.md)
+- [PWM クイックスタート](./amazing-hand/02-quick-start/pwm.md)
+- [AmazingHand ウェブコントロール](./amazing-hand/03-web-control/README.md)
+- [SCS0009 ウェブコントロール](./amazing-hand/03-web-control/scs0009.md)
+- [PWM ウェブコントロール](./amazing-hand/03-web-control/pwm.md)
+- [SCS0009 デスクトップツール（GUI と CLI）](./amazing-hand/04-desktop/scs0009.md)
+- [PWM デスクトップツール（Tkinter GUI）](./amazing-hand/04-desktop/pwm.md)
+- [SCS0009 ハンドトラッキング（公式 dora Demo）](./amazing-hand/05-hand-tracking/scs0009.md)
+- [PWM ハンドトラッキング（GUI 内蔵 MediaPipe）](./amazing-hand/05-hand-tracking/pwm.md)
+- [SCS0009 サーボ調整とキャリブレーション](./amazing-hand/06-servo-tuning/scs0009.md)
+- [PWM サーボのプロトコル、コマンド、キャリブレーション](./amazing-hand/06-servo-tuning/pwm.md)
+- [Arduino Nano の使い方](./amazing-hand/07-arduino/arduino-nano.md)
+- [Arduino と Python のサンプル](./amazing-hand/07-arduino/examples.md)
+- [よくある問題（FAQ）](./amazing-hand/08-faq/faq.md)
 
 ### Lekiwi
 

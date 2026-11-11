@@ -1,84 +1,42 @@
----
+# AmazingHand Dexterous Hand Tutorials Overview
 
-title: "AmazingHand Dexterous Hand Usage Tutorial"
+This tutorial has moved to [AmazingHand Dexterous Hand Tutorials Overview](./README.md).
 
-description: "Complete tutorial for the AmazingHand open-source dexterous hand: product information, camera kit, web gesture recognition, MuJoCo gesture tracking, interface control, Arduino Nano, and TTL / PWM debugging."
+## Legacy page addresses (kept for compatibility)
 
----
-
-
-
-# AmazingHand Dexterous Hand Usage Tutorial
-
-
-
-AmazingHand is an open-source humanoid hand project that costs under US$250, aimed at robotics enthusiasts, researchers and developers.
-
-
-
-## Project Overview
-
-
-
-- **Mechanical design**: 8 degrees of freedom across 4 fingers, with 2 linked knuckle joints per finger; the fingers use a parallel-linkage drive with no external cables, and all actuators are built into the hand; 3D-printed parts, about 400 g in weight and under 200 euros in cost.
-
-- **Control solutions**: Python serial-bus driver (supports Waveshare and other hardware); choose between the Arduino + Feetech TTL Linker solutions; Python and Arduino example code provided; supports feedback such as servo torque enable/disable, position sensing and temperature monitoring.
-
-- **Complete resources**: full BOM, CAD files and Onshape online documents, assembly tutorials and calibration scripts, basic and advanced demo examples, with inverse/forward kinematics support.
-
-- **Highlights**: fits robot wrists such as Reachy2; open design, community-driven; the roadmap includes tactile sensing, compliant joints, multiple finger lengths and a 5-finger version.
-
-
-
-## Tutorial Contents
-
-
-
-| Content | Description |
-|---|---|
-| [Product Information](./product-info.md) | Product specifications, BOM, structure and downloads |
-| [Environment Camera Kit Installation](./Camera-Kit-Installation.md) | Camera kit bracket installation steps |
-| [Web Gesture Recognition](./AmazingHand-Web-Control.md) | Online web control and local deployment |
-| [Gesture Tracking (MuJoCo Simulation)](./gesture-tracking/02-Windows.md) | One-click deployment and run on Windows / Linux / Mac |
-| [Interface Control Tutorial](./AmazingHand-Interface-Control.md) | Python GUI / command-line control, left/right hand calibration and protocol |
-| [Arduino Nano Tutorial](./Arduino-Nano-Tutorial.md) | Nano board wiring, library installation and demo program |
-| [TTL Serial Bus Servo Debugging: Assembly](./AmazingHand-TTL-Debugging.md) | TTL serial bus servo assembly and debugging |
-| [PWM Servo Debugging](./pwm-debugging/01-GUI-Visual-Control.md) | GUI visualization, gesture tracking and user manual |
-
-
-
-## Downloads
-
-
-
-- [AmazingHand.zip](https://juxitech.feishu.cn/wiki/EoLawIK31i3xNNkVX8WcENGfn2d) — one-click gesture-tracking deployment (Windows / Linux / Mac)
-
-- [SCS0009_ServoController.zip](https://juxitech.feishu.cn/wiki/Qp06wpL4HiALsMkWHsKchxvKnJc) — Feetech SCS0009 servo calibration tool
-
-- [AmazingHand Official Repository](https://github.com/pollen-robotics/AmazingHand)
-- [delivery_package.zip](/downloads/delivery_package.zip) — PWM delivery package（GUI / hand tracking / firmware / docs）
-- [Amazinghand-web.zip](/downloads/Amazinghand-web.zip) — Local deployment package
-- [Juxi_ServoController.zip](/downloads/Juxi_ServoController.zip) — Servo controller tool
-
-
-### All pages
-
-- [AmazingHand Dexterous Hand Product Information](./product-info.md)
-- [Environment Camera Kit Installation](./Camera-Kit-Installation.md)
-- [AmazingHand Web Control](./AmazingHand-Web-Control.md)
-- [Windows One-Click Deployment and Run](./gesture-tracking/02-Windows.md)
-- [Linux (Ubuntu) One-Click Deployment and Run](./gesture-tracking/01-Ubuntu.md)
-- [Mac One-Click Deployment and Run](./gesture-tracking/03-macOS.md)
-- [Official Example Tutorial](./AmazingHand-Official-Example.md)
-- [Interface Control Tutorial](./AmazingHand-Interface-Control.md)
-- [Arduino Nano Tutorial](./Arduino-Nano-Tutorial.md)
-- [TTL Debugging Tutorial](./AmazingHand-TTL-Debugging.md)
-- [01-GUI Visual Control](./pwm-debugging/01-GUI-Visual-Control.md)
-- [02-Gesture Tracking Tutorial](./pwm-debugging/02-Gesture-Tracking.md)
-- [03-PWM Servo Version-User Manual](./pwm-debugging/03-PWM-Servo-Manual.md)
-- [04-Serial Bus Servo Version-User Instructions](./pwm-debugging/04-Serial-Servo-Guide.md)
-- [Full Workflow Tutorial](./pwm-debugging/05-Full-Workflow-Tutorial.md)
-
-
-<RelatedProducts slugs="amazinghand" />
-
+- [AmazingHand Product Information](./00-product/product-info.md)
+- [SCS0009 vs PWM Version Comparison and Selection](./00-product/version-comparison.md)
+- [Downloads and Resources](./00-product/downloads.md)
+- [Hardware Overview: Mechanics, CAD and Assembly](./01-hardware/overview.md)
+- [SCS0009 Wiring, ID and Power](./01-hardware/scs0009.md)
+- [PWM Wiring, GPIO and Power](./01-hardware/pwm.md)
+- [Environmental Camera Kit Installation](./01-hardware/camera-kit.md)
+- [SCS0009 Quick Start](./02-quick-start/scs0009.md)
+- [PWM Quick Start](./02-quick-start/pwm.md)
+- [AmazingHand Web Control](./03-web-control/README.md)
+- [SCS0009 Web Control](./03-web-control/scs0009.md)
+- [PWM Web Control](./03-web-control/pwm.md)
+- [SCS0009 Desktop Host Software (GUI and CLI)](./04-desktop/scs0009.md)
+- [PWM Desktop Host Software (Tkinter GUI)](./04-desktop/pwm.md)
+- [SCS0009 Hand Tracking (Official dora Demo)](./05-hand-tracking/scs0009.md)
+- [PWM Hand Tracking (MediaPipe Built into the GUI)](./05-hand-tracking/pwm.md)
+- [SCS0009 Servo Debugging and Calibration](./06-servo-tuning/scs0009.md)
+- [PWM Servo Protocol, Commands and Calibration](./06-servo-tuning/pwm.md)
+- [Arduino Nano Tutorial](./07-arduino/arduino-nano.md)
+- [Arduino and Python Examples](./07-arduino/examples.md)
+- [Frequently Asked Questions (FAQ)](./08-faq/faq.md)
+- [AmazingHand-Web-Control.md](./AmazingHand-Web-Control.md)
+- [AmazingHand-Interface-Control.md](./AmazingHand-Interface-Control.md)
+- [AmazingHand-Official-Example.md](./AmazingHand-Official-Example.md)
+- [AmazingHand-TTL-Debugging.md](./AmazingHand-TTL-Debugging.md)
+- [Arduino-Nano-Tutorial.md](./Arduino-Nano-Tutorial.md)
+- [Camera-Kit-Installation.md](./Camera-Kit-Installation.md)
+- [product-info.md](./product-info.md)
+- [gesture-tracking/01-Ubuntu.md](./gesture-tracking/01-Ubuntu.md)
+- [gesture-tracking/02-Windows.md](./gesture-tracking/02-Windows.md)
+- [gesture-tracking/03-macOS.md](./gesture-tracking/03-macOS.md)
+- [pwm-debugging/01-GUI-Visual-Control.md](./pwm-debugging/01-GUI-Visual-Control.md)
+- [pwm-debugging/02-Gesture-Tracking.md](./pwm-debugging/02-Gesture-Tracking.md)
+- [pwm-debugging/03-PWM-Servo-Manual.md](./pwm-debugging/03-PWM-Servo-Manual.md)
+- [pwm-debugging/04-Serial-Servo-Guide.md](./pwm-debugging/04-Serial-Servo-Guide.md)
+- [pwm-debugging/05-Full-Workflow-Tutorial.md](./pwm-debugging/05-Full-Workflow-Tutorial.md)

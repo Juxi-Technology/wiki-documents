@@ -173,32 +173,33 @@ Welcome to the robot arm series tutorials! Here you'll find complete guides for 
   - [NVIDIA DGX Spark Inference](/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/DGX-Spark)
   - [D-Robotics RDK S100 Inference](/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/RDK-S100)
 
-### AmazingHand
+### AmazingHand Dexterous Hand Tutorials Overview
 
-Open-source bionic dexterous hand, providing high-precision multi-finger operation capability.
+Unified tutorial entry for the AmazingHand dexterous hand: product selection, hardware wiring, quick start, web control, desktop host software, hand tracking, servo tuning and FAQ for the SCS0009 serial bus version and the PWM servo version.
 
-- [AmazingHand Dexterous Hand Tutorial](./amazing-hand/index.md)
-- [AmazingHand Interface Control](./amazing-hand/AmazingHand-Interface-Control.md)
-- [Arduino Nano Tutorial](./amazing-hand/Arduino-Nano-Tutorial.md)
-- [AmazingHand Web Control](./amazing-hand/AmazingHand-Web-Control.md)
-- [AmazingHand Official Example](./amazing-hand/AmazingHand-Official-Example.md)
-- [AmazingHand TTL Debugging](./amazing-hand/AmazingHand-TTL-Debugging.md)
-
-#### AmazingHand
-- [AmazingHand Dexterous Hand Product Information](./amazing-hand/product-info.md)
-- [Camera Kit Installation](./amazing-hand/Camera-Kit-Installation.md)
-
-#### PWM Servo Debugging
-- [01-GUI Visual Control](./amazing-hand/pwm-debugging/01-GUI-Visual-Control.md)
-- [02-Gesture Tracking Tutorial](./amazing-hand/pwm-debugging/02-Gesture-Tracking.md)
-- [03-PWM Servo Version-User Manual](./amazing-hand/pwm-debugging/03-PWM-Servo-Manual.md)
-- [04-Serial Bus Servo Version-User Instructions](./amazing-hand/pwm-debugging/04-Serial-Servo-Guide.md)
-- [Full Workflow Tutorial](./amazing-hand/pwm-debugging/05-Full-Workflow-Tutorial.md)
-
-#### Gesture Tracking
-- [Linux (Ubuntu) One-Click Deployment and Run](./amazing-hand/gesture-tracking/01-Ubuntu.md)
-- [Windows One-Click Deployment and Run](./amazing-hand/gesture-tracking/02-Windows.md)
-- [Mac One-Click Deployment and Run](./amazing-hand/gesture-tracking/03-macOS.md)
+- [Tutorial index (incl. legacy URLs)](./amazing-hand/index.md)
+- [AmazingHand Dexterous Hand Tutorials Overview](./amazing-hand/README.md)
+- [AmazingHand Product Information](./amazing-hand/00-product/product-info.md)
+- [SCS0009 vs PWM Version Comparison and Selection](./amazing-hand/00-product/version-comparison.md)
+- [Downloads and Resources](./amazing-hand/00-product/downloads.md)
+- [Hardware Overview: Mechanics, CAD and Assembly](./amazing-hand/01-hardware/overview.md)
+- [SCS0009 Wiring, ID and Power](./amazing-hand/01-hardware/scs0009.md)
+- [PWM Wiring, GPIO and Power](./amazing-hand/01-hardware/pwm.md)
+- [Environmental Camera Kit Installation](./amazing-hand/01-hardware/camera-kit.md)
+- [SCS0009 Quick Start](./amazing-hand/02-quick-start/scs0009.md)
+- [PWM Quick Start](./amazing-hand/02-quick-start/pwm.md)
+- [AmazingHand Web Control](./amazing-hand/03-web-control/README.md)
+- [SCS0009 Web Control](./amazing-hand/03-web-control/scs0009.md)
+- [PWM Web Control](./amazing-hand/03-web-control/pwm.md)
+- [SCS0009 Desktop Host Software (GUI and CLI)](./amazing-hand/04-desktop/scs0009.md)
+- [PWM Desktop Host Software (Tkinter GUI)](./amazing-hand/04-desktop/pwm.md)
+- [SCS0009 Hand Tracking (Official dora Demo)](./amazing-hand/05-hand-tracking/scs0009.md)
+- [PWM Hand Tracking (MediaPipe Built into the GUI)](./amazing-hand/05-hand-tracking/pwm.md)
+- [SCS0009 Servo Debugging and Calibration](./amazing-hand/06-servo-tuning/scs0009.md)
+- [PWM Servo Protocol, Commands and Calibration](./amazing-hand/06-servo-tuning/pwm.md)
+- [Arduino Nano Tutorial](./amazing-hand/07-arduino/arduino-nano.md)
+- [Arduino and Python Examples](./amazing-hand/07-arduino/examples.md)
+- [Frequently Asked Questions (FAQ)](./amazing-hand/08-faq/faq.md)
 
 ### Lekiwi
 

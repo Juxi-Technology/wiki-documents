@@ -173,32 +173,33 @@ description: "Juxi Technology 로봇 팔 시리즈 튜토리얼 홈——SO-ARM1
   - [NVIDIA DGX Spark 추론](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/DGX-Spark)
   - [D-Robotics RDK S100 추론](/ko/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/RDK-S100)
 
-### AmazingHand
+### AmazingHand 로봇 손 튜토리얼 개요
 
-오픈소스 바이오닉 정교 손. 고정밀 다중 손가락 조작 제공.
+AmazingHand 로봇 손 통합 튜토리얼 입구: SCS0009 시리얼 서보 버전과 PWM 서보 버전의 제품 선택, 하드웨어 배선, 빠른 시작, 웹 제어, 데스크톱 제어 프로그램, 손 추적, 서보 디버깅과 FAQ.
 
-- [AmazingHand 다관절 핸드 가이드](./amazing-hand/index.md)
-- [AmazingHand 인터페이스 제어](./amazing-hand/AmazingHand-Interface-Control.md)
-- [Arduino Nano 가이드](./amazing-hand/Arduino-Nano-Tutorial.md)
-- [AmazingHand 웹 제어](./amazing-hand/AmazingHand-Web-Control.md)
-- [AmazingHand 공식 예제](./amazing-hand/AmazingHand-Official-Example.md)
-- [AmazingHand TTL 디버깅](./amazing-hand/AmazingHand-TTL-Debugging.md)
-
-#### AmazingHand
-- [AmazingHand 로봇 손 제품 자료](./amazing-hand/product-info.md)
-- [환경 카메라 키트 설치](./amazing-hand/Camera-Kit-Installation.md)
-
-#### PWM 서보 디버깅
-- [01-GUI 시각화 제어](./amazing-hand/pwm-debugging/01-GUI-Visual-Control.md)
-- [02-제스처 추적 튜토리얼](./amazing-hand/pwm-debugging/02-Gesture-Tracking.md)
-- [03-PWM 서보 버전-사용 매뉴얼](./amazing-hand/pwm-debugging/03-PWM-Servo-Manual.md)
-- [04-시리얼 서보 버전-사용 설명](./amazing-hand/pwm-debugging/04-Serial-Servo-Guide.md)
-- [전체 워크플로 가이드](./amazing-hand/pwm-debugging/05-Full-Workflow-Tutorial.md)
-
-#### 제스처 트래킹
-- [Linux(Ubuntu) 원클릭 배포 실행](./amazing-hand/gesture-tracking/01-Ubuntu.md)
-- [Windows 원클릭 배포 실행](./amazing-hand/gesture-tracking/02-Windows.md)
-- [Mac 원클릭 배포 실행](./amazing-hand/gesture-tracking/03-macOS.md)
+- [튜토리얼 색인(이전 URL 포함)](./amazing-hand/index.md)
+- [AmazingHand 로봇 손 튜토리얼 개요](./amazing-hand/README.md)
+- [AmazingHand 제품 자료](./amazing-hand/00-product/product-info.md)
+- [SCS0009와 PWM 버전 비교 및 선택](./amazing-hand/00-product/version-comparison.md)
+- [다운로드와 리소스](./amazing-hand/00-product/downloads.md)
+- [하드웨어 개요: 구조, CAD와 조립](./amazing-hand/01-hardware/overview.md)
+- [SCS0009 배선, ID와 전원 공급](./amazing-hand/01-hardware/scs0009.md)
+- [PWM 배선, GPIO와 전원 공급](./amazing-hand/01-hardware/pwm.md)
+- [환경 카메라 키트 설치](./amazing-hand/01-hardware/camera-kit.md)
+- [SCS0009 빠른 시작](./amazing-hand/02-quick-start/scs0009.md)
+- [PWM 빠른 시작](./amazing-hand/02-quick-start/pwm.md)
+- [AmazingHand 웹 제어](./amazing-hand/03-web-control/README.md)
+- [SCS0009 웹 제어](./amazing-hand/03-web-control/scs0009.md)
+- [PWM 웹 제어](./amazing-hand/03-web-control/pwm.md)
+- [SCS0009 데스크톱 제어 프로그램(GUI와 CLI)](./amazing-hand/04-desktop/scs0009.md)
+- [PWM 데스크톱 제어 프로그램(Tkinter GUI)](./amazing-hand/04-desktop/pwm.md)
+- [SCS0009 손 추적(공식 dora Demo)](./amazing-hand/05-hand-tracking/scs0009.md)
+- [PWM 손 추적(GUI 내장 MediaPipe)](./amazing-hand/05-hand-tracking/pwm.md)
+- [SCS0009 서보 디버깅과 캘리브레이션](./amazing-hand/06-servo-tuning/scs0009.md)
+- [PWM 서보 프로토콜, 명령과 캘리브레이션](./amazing-hand/06-servo-tuning/pwm.md)
+- [Arduino Nano 사용 튜토리얼](./amazing-hand/07-arduino/arduino-nano.md)
+- [Arduino와 Python 예제](./amazing-hand/07-arduino/examples.md)
+- [자주 묻는 질문(FAQ)](./amazing-hand/08-faq/faq.md)
 
 ### Lekiwi
 

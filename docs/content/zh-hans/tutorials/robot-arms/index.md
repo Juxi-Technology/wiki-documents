@@ -173,32 +173,33 @@ description: "钜犀科技机械臂系列教程首页——SO-ARM101、AmazingHa
   - [英伟达DGX Spark推理](/zh-hans/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/DGX-Spark)
   - [地瓜机器人 RDK S100推理](/zh-hans/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/RDK-S100)
 
-### AmazingHand
+### AmazingHand 灵巧手教程总览
 
-开源仿生灵巧手，提供高精度的多指操作能力。
+AmazingHand 灵巧手统一教程入口：SCS0009 串口舵机版与 PWM 舵机版的产品选型、硬件接线、快速上手、网页控制、桌面上位机、手势追踪、舵机调试和 FAQ。
 
-- [AmazingHand 灵巧手使用教程](./amazing-hand/index.md)
-- [AmazingHand 接口控制](./amazing-hand/AmazingHand-Interface-Control.md)
-- [Arduino Nano 使用教程](./amazing-hand/Arduino-Nano-Tutorial.md)
-- [AmazingHand 网页控制](./amazing-hand/AmazingHand-Web-Control.md)
-- [AmazingHand 官方示例](./amazing-hand/AmazingHand-Official-Example.md)
-- [AmazingHand TTL调试](./amazing-hand/AmazingHand-TTL-Debugging.md)
-
-#### AmazingHand
-- [AmazingHand灵巧手产品资料](./amazing-hand/product-info.md)
-- [环境相机套件安装](./amazing-hand/Camera-Kit-Installation.md)
-
-#### PWM 舵机调试教程
-- [01-GUI可视化控制](./amazing-hand/pwm-debugging/01-GUI-Visual-Control.md)
-- [02-手势追踪教程](./amazing-hand/pwm-debugging/02-Gesture-Tracking.md)
-- [03-PWM舵机版本-使用手册](./amazing-hand/pwm-debugging/03-PWM-Servo-Manual.md)
-- [04-串口舵机版本-使用说明](./amazing-hand/pwm-debugging/04-Serial-Servo-Guide.md)
-- [全流程使用教程](./amazing-hand/pwm-debugging/05-Full-Workflow-Tutorial.md)
-
-#### 手势追踪教程
-- [Linux（Ubuntu）一键部署运行](./amazing-hand/gesture-tracking/01-Ubuntu.md)
-- [Windows一键部署运行](./amazing-hand/gesture-tracking/02-Windows.md)
-- [Mac一键部署运行](./amazing-hand/gesture-tracking/03-macOS.md)
+- [教程索引（含旧版地址）](./amazing-hand/index.md)
+- [AmazingHand 灵巧手教程总览](./amazing-hand/README.md)
+- [AmazingHand 产品资料](./amazing-hand/00-product/product-info.md)
+- [SCS0009 与 PWM 版本对比与选型](./amazing-hand/00-product/version-comparison.md)
+- [下载与资源](./amazing-hand/00-product/downloads.md)
+- [硬件总览：结构、CAD 与组装](./amazing-hand/01-hardware/overview.md)
+- [SCS0009 接线、ID 与供电](./amazing-hand/01-hardware/scs0009.md)
+- [PWM 接线、GPIO 与供电](./amazing-hand/01-hardware/pwm.md)
+- [环境相机套件安装](./amazing-hand/01-hardware/camera-kit.md)
+- [SCS0009 快速上手](./amazing-hand/02-quick-start/scs0009.md)
+- [PWM 快速上手](./amazing-hand/02-quick-start/pwm.md)
+- [AmazingHand 网页控制](./amazing-hand/03-web-control/README.md)
+- [SCS0009 网页控制](./amazing-hand/03-web-control/scs0009.md)
+- [PWM 网页控制](./amazing-hand/03-web-control/pwm.md)
+- [SCS0009 桌面上位机（GUI 与 CLI）](./amazing-hand/04-desktop/scs0009.md)
+- [PWM 桌面上位机（Tkinter GUI）](./amazing-hand/04-desktop/pwm.md)
+- [SCS0009 手势追踪（官方 dora Demo）](./amazing-hand/05-hand-tracking/scs0009.md)
+- [PWM 手势追踪（GUI 内置 MediaPipe）](./amazing-hand/05-hand-tracking/pwm.md)
+- [SCS0009 舵机调试与标定](./amazing-hand/06-servo-tuning/scs0009.md)
+- [PWM 舵机协议、命令与标定](./amazing-hand/06-servo-tuning/pwm.md)
+- [Arduino Nano 使用教程](./amazing-hand/07-arduino/arduino-nano.md)
+- [Arduino 与 Python 示例](./amazing-hand/07-arduino/examples.md)
+- [常见问题（FAQ）](./amazing-hand/08-faq/faq.md)
 
 ### Lekiwi
 

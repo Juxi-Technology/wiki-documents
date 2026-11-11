@@ -173,32 +173,33 @@ Brazo robótico de escritorio open source de 6 ejes, compatible con frameworks d
   - [Inferencia en NVIDIA DGX Spark](/es/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/DGX-Spark)
   - [Inferencia en D-Robotics RDK S100](/es/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/RDK-S100)
 
-### AmazingHand
+### Descripción general de los tutoriales de AmazingHand
 
-Mano diestra open source con manipulación multi-dedo de alta precisión.
+Punto de entrada unificado a los tutoriales de AmazingHand: selección de producto, cableado de hardware, inicio rápido, control web, aplicación de escritorio, seguimiento de manos, depuración de servos y FAQ para las versiones con servos de bus serie SCS0009 y con servos PWM.
 
-- [Tutorial de AmazingHand](./amazing-hand/index.md)
-- [Control de interfaz AmazingHand](./amazing-hand/AmazingHand-Interface-Control.md)
-- [Guía Arduino Nano](./amazing-hand/Arduino-Nano-Tutorial.md)
-- [Control web de AmazingHand](./amazing-hand/AmazingHand-Web-Control.md)
-- [Ejemplo oficial AmazingHand](./amazing-hand/AmazingHand-Official-Example.md)
-- [Depuración TTL AmazingHand](./amazing-hand/AmazingHand-TTL-Debugging.md)
-
-#### AmazingHand
-- [Material de producto de la mano diestra AmazingHand](./amazing-hand/product-info.md)
-- [Instalación del kit de cámara de entorno](./amazing-hand/Camera-Kit-Installation.md)
-
-#### Depuración servo PWM
-- [01-Control visual por GUI](./amazing-hand/pwm-debugging/01-GUI-Visual-Control.md)
-- [02-Tutorial de seguimiento de gestos](./amazing-hand/pwm-debugging/02-Gesture-Tracking.md)
-- [03-Versión con servos PWM - Manual de uso](./amazing-hand/pwm-debugging/03-PWM-Servo-Manual.md)
-- [04-Versión con servos de puerto serie - Instrucciones de uso](./amazing-hand/pwm-debugging/04-Serial-Servo-Guide.md)
-- [Tutorial completo](./amazing-hand/pwm-debugging/05-Full-Workflow-Tutorial.md)
-
-#### Seguimiento de gestos
-- [Despliegue y ejecución en Linux (Ubuntu) en un clic](./amazing-hand/gesture-tracking/01-Ubuntu.md)
-- [Despliegue y ejecución en Windows en un clic](./amazing-hand/gesture-tracking/02-Windows.md)
-- [Despliegue y ejecución en Mac en un clic](./amazing-hand/gesture-tracking/03-macOS.md)
+- [Índice del tutorial (incl. URL antiguas)](./amazing-hand/index.md)
+- [Descripción general de los tutoriales de AmazingHand](./amazing-hand/README.md)
+- [Información del producto AmazingHand](./amazing-hand/00-product/product-info.md)
+- [Comparación y selección entre las versiones SCS0009 y PWM](./amazing-hand/00-product/version-comparison.md)
+- [Descargas y recursos](./amazing-hand/00-product/downloads.md)
+- [Descripción general del hardware: estructura, CAD y montaje](./amazing-hand/01-hardware/overview.md)
+- [Cableado, ID y alimentación SCS0009](./amazing-hand/01-hardware/scs0009.md)
+- [Cableado, GPIO y alimentación PWM](./amazing-hand/01-hardware/pwm.md)
+- [Instalación del kit de cámara de entorno](./amazing-hand/01-hardware/camera-kit.md)
+- [Inicio rápido con SCS0009](./amazing-hand/02-quick-start/scs0009.md)
+- [Inicio rápido con PWM](./amazing-hand/02-quick-start/pwm.md)
+- [Control web de AmazingHand](./amazing-hand/03-web-control/README.md)
+- [Control web SCS0009](./amazing-hand/03-web-control/scs0009.md)
+- [Control web PWM](./amazing-hand/03-web-control/pwm.md)
+- [Aplicación de escritorio SCS0009 (GUI y CLI)](./amazing-hand/04-desktop/scs0009.md)
+- [Aplicación de escritorio PWM (GUI Tkinter)](./amazing-hand/04-desktop/pwm.md)
+- [Seguimiento de manos SCS0009 (Demo oficial dora)](./amazing-hand/05-hand-tracking/scs0009.md)
+- [Seguimiento de manos PWM (MediaPipe integrado en la GUI)](./amazing-hand/05-hand-tracking/pwm.md)
+- [Depuración y calibración de servos SCS0009](./amazing-hand/06-servo-tuning/scs0009.md)
+- [Protocolo, comandos y calibración de los servos PWM](./amazing-hand/06-servo-tuning/pwm.md)
+- [Tutorial de uso de Arduino Nano](./amazing-hand/07-arduino/arduino-nano.md)
+- [Ejemplos de Arduino y Python](./amazing-hand/07-arduino/examples.md)
+- [Preguntas frecuentes (FAQ)](./amazing-hand/08-faq/faq.md)
 
 ### Lekiwi
 

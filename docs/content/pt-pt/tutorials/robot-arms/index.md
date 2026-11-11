@@ -173,32 +173,33 @@ Braço robótico de mesa open source de 6 eixos, com suporte ao LeRobot e a outr
   - [Inferência no NVIDIA DGX Spark](/pt-pt/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/DGX-Spark)
   - [Inferência no D-Robotics RDK S100](/pt-pt/tutorials/robot-arms/so-arm101/lerobot-7dof/09-Inference/RDK-S100)
 
-### AmazingHand
+### Visão geral dos tutoriais AmazingHand
 
-Mão hábil biônica open source, que oferece operação com múltiplos dedos de alta precisão.
+Entrada unificada dos tutoriais da mão robótica de destreza AmazingHand: seleção de produto, cablagem de hardware, início rápido, controlo web, aplicação de desktop, seguimento de mãos, afinação dos servos e FAQ para as versões com servos de barramento série SCS0009 e com servos PWM.
 
-- [Tutorial AmazingHand](./amazing-hand/index.md)
-- [Controle de interface do AmazingHand](./amazing-hand/AmazingHand-Interface-Control.md)
-- [Guia Arduino Nano](./amazing-hand/Arduino-Nano-Tutorial.md)
-- [Controlo Web do AmazingHand](./amazing-hand/AmazingHand-Web-Control.md)
-- [Exemplo oficial do AmazingHand](./amazing-hand/AmazingHand-Official-Example.md)
-- [Depuração TTL do AmazingHand](./amazing-hand/AmazingHand-TTL-Debugging.md)
-
-#### AmazingHand
-- [AmazingHand Mão hábil — Informações do produto](./amazing-hand/product-info.md)
-- [Instalação do kit de câmara de ambiente](./amazing-hand/Camera-Kit-Installation.md)
-
-#### Depuração servo PWM
-- [01-Controlo visual por GUI](./amazing-hand/pwm-debugging/01-GUI-Visual-Control.md)
-- [02-Tutorial de rastreamento de gestos](./amazing-hand/pwm-debugging/02-Gesture-Tracking.md)
-- [03-Versão com servomotor PWM-Manual de utilização](./amazing-hand/pwm-debugging/03-PWM-Servo-Manual.md)
-- [04-Versão de servomotor série-Instruções de utilização](./amazing-hand/pwm-debugging/04-Serial-Servo-Guide.md)
-- [Tutorial completo](./amazing-hand/pwm-debugging/05-Full-Workflow-Tutorial.md)
-
-#### Rastreamento de gestos
-- [Linux (Ubuntu) implementação e execução com um clique](./amazing-hand/gesture-tracking/01-Ubuntu.md)
-- [Implementação e execução com um clique no Windows](./amazing-hand/gesture-tracking/02-Windows.md)
-- [Mac implementação e execução com um clique](./amazing-hand/gesture-tracking/03-macOS.md)
+- [Índice do tutorial (incl. URLs antigas)](./amazing-hand/index.md)
+- [Visão geral dos tutoriais AmazingHand](./amazing-hand/README.md)
+- [Documentação do produto AmazingHand](./amazing-hand/00-product/product-info.md)
+- [Comparação e seleção entre as versões SCS0009 e PWM](./amazing-hand/00-product/version-comparison.md)
+- [Downloads e recursos](./amazing-hand/00-product/downloads.md)
+- [Visão geral do hardware: estrutura, CAD e montagem](./amazing-hand/01-hardware/overview.md)
+- [Cablagem, ID e alimentação SCS0009](./amazing-hand/01-hardware/scs0009.md)
+- [Cablagem, GPIO e alimentação PWM](./amazing-hand/01-hardware/pwm.md)
+- [Instalação do kit de câmara ambiente](./amazing-hand/01-hardware/camera-kit.md)
+- [Início rápido SCS0009](./amazing-hand/02-quick-start/scs0009.md)
+- [Início rápido PWM](./amazing-hand/02-quick-start/pwm.md)
+- [Controlo web do AmazingHand](./amazing-hand/03-web-control/README.md)
+- [Controlo web SCS0009](./amazing-hand/03-web-control/scs0009.md)
+- [Controlo web PWM](./amazing-hand/03-web-control/pwm.md)
+- [Aplicação de desktop SCS0009 (GUI e CLI)](./amazing-hand/04-desktop/scs0009.md)
+- [Aplicação de desktop PWM (GUI Tkinter)](./amazing-hand/04-desktop/pwm.md)
+- [Seguimento de mãos SCS0009 (Demo oficial dora)](./amazing-hand/05-hand-tracking/scs0009.md)
+- [Seguimento de mãos PWM (MediaPipe integrado na GUI)](./amazing-hand/05-hand-tracking/pwm.md)
+- [Depuração e calibração dos servos SCS0009](./amazing-hand/06-servo-tuning/scs0009.md)
+- [Protocolo, comandos e calibração dos servos PWM](./amazing-hand/06-servo-tuning/pwm.md)
+- [Tutorial de utilização do Arduino Nano](./amazing-hand/07-arduino/arduino-nano.md)
+- [Exemplos Arduino e Python](./amazing-hand/07-arduino/examples.md)
+- [Perguntas frequentes (FAQ)](./amazing-hand/08-faq/faq.md)
 
 ### Lekiwi
 
