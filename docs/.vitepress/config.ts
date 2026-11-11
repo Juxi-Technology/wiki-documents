@@ -579,27 +579,81 @@ const zhCN = {
               link: '/zh-hans/tutorials/robot-arms/amazing-hand/README',
               collapsed: true,
               items: [
-                { text: 'AmazingHand 产品资料', link: '/zh-hans/tutorials/robot-arms/amazing-hand/00-product/product-info' },
-                { text: 'SCS0009 与 PWM 版本对比与选型', link: '/zh-hans/tutorials/robot-arms/amazing-hand/00-product/version-comparison' },
-                { text: '下载与资源', link: '/zh-hans/tutorials/robot-arms/amazing-hand/00-product/downloads' },
-                { text: '硬件总览：结构、CAD 与组装', link: '/zh-hans/tutorials/robot-arms/amazing-hand/01-hardware/overview' },
-                { text: 'SCS0009 接线、ID 与供电', link: '/zh-hans/tutorials/robot-arms/amazing-hand/01-hardware/scs0009' },
-                { text: 'PWM 接线、GPIO 与供电', link: '/zh-hans/tutorials/robot-arms/amazing-hand/01-hardware/pwm' },
-                { text: '环境相机套件安装', link: '/zh-hans/tutorials/robot-arms/amazing-hand/01-hardware/camera-kit' },
-                { text: 'SCS0009 快速上手', link: '/zh-hans/tutorials/robot-arms/amazing-hand/02-quick-start/scs0009' },
-                { text: 'PWM 快速上手', link: '/zh-hans/tutorials/robot-arms/amazing-hand/02-quick-start/pwm' },
-                { text: 'AmazingHand 网页控制', link: '/zh-hans/tutorials/robot-arms/amazing-hand/03-web-control/README' },
-                { text: 'SCS0009 网页控制', link: '/zh-hans/tutorials/robot-arms/amazing-hand/03-web-control/scs0009' },
-                { text: 'PWM 网页控制', link: '/zh-hans/tutorials/robot-arms/amazing-hand/03-web-control/pwm' },
-                { text: 'SCS0009 桌面上位机（GUI 与 CLI）', link: '/zh-hans/tutorials/robot-arms/amazing-hand/04-desktop/scs0009' },
-                { text: 'PWM 桌面上位机（Tkinter GUI）', link: '/zh-hans/tutorials/robot-arms/amazing-hand/04-desktop/pwm' },
-                { text: 'SCS0009 手势追踪（官方 dora Demo）', link: '/zh-hans/tutorials/robot-arms/amazing-hand/05-hand-tracking/scs0009' },
-                { text: 'PWM 手势追踪（GUI 内置 MediaPipe）', link: '/zh-hans/tutorials/robot-arms/amazing-hand/05-hand-tracking/pwm' },
-                { text: 'SCS0009 舵机调试与标定', link: '/zh-hans/tutorials/robot-arms/amazing-hand/06-servo-tuning/scs0009' },
-                { text: 'PWM 舵机协议、命令与标定', link: '/zh-hans/tutorials/robot-arms/amazing-hand/06-servo-tuning/pwm' },
-                { text: 'Arduino Nano 使用教程', link: '/zh-hans/tutorials/robot-arms/amazing-hand/07-arduino/arduino-nano' },
-                { text: 'Arduino 与 Python 示例', link: '/zh-hans/tutorials/robot-arms/amazing-hand/07-arduino/examples' },
-                { text: '常见问题（FAQ）', link: '/zh-hans/tutorials/robot-arms/amazing-hand/08-faq/faq' },
+                {
+                  text: '00 产品资料',
+                  collapsed: true,
+                  items: [
+                    { text: 'AmazingHand 产品资料', link: '/zh-hans/tutorials/robot-arms/amazing-hand/00-product/product-info' },
+                    { text: 'SCS0009 与 PWM 版本对比与选型', link: '/zh-hans/tutorials/robot-arms/amazing-hand/00-product/version-comparison' },
+                    { text: '下载与资源', link: '/zh-hans/tutorials/robot-arms/amazing-hand/00-product/downloads' },
+                  ],
+                },
+                {
+                  text: '01 硬件与接线',
+                  collapsed: true,
+                  items: [
+                    { text: '硬件总览：结构、CAD 与组装', link: '/zh-hans/tutorials/robot-arms/amazing-hand/01-hardware/overview' },
+                    { text: 'SCS0009 接线、ID 与供电', link: '/zh-hans/tutorials/robot-arms/amazing-hand/01-hardware/scs0009' },
+                    { text: 'PWM 接线、GPIO 与供电', link: '/zh-hans/tutorials/robot-arms/amazing-hand/01-hardware/pwm' },
+                    { text: '环境相机套件安装', link: '/zh-hans/tutorials/robot-arms/amazing-hand/01-hardware/camera-kit' },
+                  ],
+                },
+                {
+                  text: '02 快速上手',
+                  collapsed: true,
+                  items: [
+                    { text: 'SCS0009 快速上手', link: '/zh-hans/tutorials/robot-arms/amazing-hand/02-quick-start/scs0009' },
+                    { text: 'PWM 快速上手', link: '/zh-hans/tutorials/robot-arms/amazing-hand/02-quick-start/pwm' },
+                  ],
+                },
+                {
+                  text: '03 网页控制',
+                  collapsed: true,
+                  items: [
+                    { text: 'AmazingHand 网页控制', link: '/zh-hans/tutorials/robot-arms/amazing-hand/03-web-control/README' },
+                    { text: 'SCS0009 网页控制', link: '/zh-hans/tutorials/robot-arms/amazing-hand/03-web-control/scs0009' },
+                    { text: 'PWM 网页控制', link: '/zh-hans/tutorials/robot-arms/amazing-hand/03-web-control/pwm' },
+                  ],
+                },
+                {
+                  text: '04 桌面上位机',
+                  collapsed: true,
+                  items: [
+                    { text: 'SCS0009 桌面上位机（GUI 与 CLI）', link: '/zh-hans/tutorials/robot-arms/amazing-hand/04-desktop/scs0009' },
+                    { text: 'PWM 桌面上位机（Tkinter GUI）', link: '/zh-hans/tutorials/robot-arms/amazing-hand/04-desktop/pwm' },
+                  ],
+                },
+                {
+                  text: '05 手势追踪',
+                  collapsed: true,
+                  items: [
+                    { text: 'SCS0009 手势追踪（官方 dora Demo）', link: '/zh-hans/tutorials/robot-arms/amazing-hand/05-hand-tracking/scs0009' },
+                    { text: 'PWM 手势追踪（GUI 内置 MediaPipe）', link: '/zh-hans/tutorials/robot-arms/amazing-hand/05-hand-tracking/pwm' },
+                  ],
+                },
+                {
+                  text: '06 舵机调试与标定',
+                  collapsed: true,
+                  items: [
+                    { text: 'SCS0009 舵机调试与标定', link: '/zh-hans/tutorials/robot-arms/amazing-hand/06-servo-tuning/scs0009' },
+                    { text: 'PWM 舵机协议、命令与标定', link: '/zh-hans/tutorials/robot-arms/amazing-hand/06-servo-tuning/pwm' },
+                  ],
+                },
+                {
+                  text: '07 Arduino 与示例',
+                  collapsed: true,
+                  items: [
+                    { text: 'Arduino Nano 使用教程', link: '/zh-hans/tutorials/robot-arms/amazing-hand/07-arduino/arduino-nano' },
+                    { text: 'Arduino 与 Python 示例', link: '/zh-hans/tutorials/robot-arms/amazing-hand/07-arduino/examples' },
+                  ],
+                },
+                {
+                  text: '08 常见问题',
+                  collapsed: true,
+                  items: [
+                    { text: '常见问题（FAQ）', link: '/zh-hans/tutorials/robot-arms/amazing-hand/08-faq/faq' },
+                  ],
+                },
               ],
             },
             {
@@ -1389,27 +1443,81 @@ const en = {
               link: '/tutorials/robot-arms/amazing-hand/README',
               collapsed: true,
               items: [
-                { text: 'AmazingHand Product Information', link: '/tutorials/robot-arms/amazing-hand/00-product/product-info' },
-                { text: 'SCS0009 vs PWM Version Comparison and Selection', link: '/tutorials/robot-arms/amazing-hand/00-product/version-comparison' },
-                { text: 'Downloads and Resources', link: '/tutorials/robot-arms/amazing-hand/00-product/downloads' },
-                { text: 'Hardware Overview: Mechanics, CAD and Assembly', link: '/tutorials/robot-arms/amazing-hand/01-hardware/overview' },
-                { text: 'SCS0009 Wiring, ID and Power', link: '/tutorials/robot-arms/amazing-hand/01-hardware/scs0009' },
-                { text: 'PWM Wiring, GPIO and Power', link: '/tutorials/robot-arms/amazing-hand/01-hardware/pwm' },
-                { text: 'Environmental Camera Kit Installation', link: '/tutorials/robot-arms/amazing-hand/01-hardware/camera-kit' },
-                { text: 'SCS0009 Quick Start', link: '/tutorials/robot-arms/amazing-hand/02-quick-start/scs0009' },
-                { text: 'PWM Quick Start', link: '/tutorials/robot-arms/amazing-hand/02-quick-start/pwm' },
-                { text: 'AmazingHand Web Control', link: '/tutorials/robot-arms/amazing-hand/03-web-control/README' },
-                { text: 'SCS0009 Web Control', link: '/tutorials/robot-arms/amazing-hand/03-web-control/scs0009' },
-                { text: 'PWM Web Control', link: '/tutorials/robot-arms/amazing-hand/03-web-control/pwm' },
-                { text: 'SCS0009 Desktop Host Software (GUI and CLI)', link: '/tutorials/robot-arms/amazing-hand/04-desktop/scs0009' },
-                { text: 'PWM Desktop Host Software (Tkinter GUI)', link: '/tutorials/robot-arms/amazing-hand/04-desktop/pwm' },
-                { text: 'SCS0009 Hand Tracking (Official dora Demo)', link: '/tutorials/robot-arms/amazing-hand/05-hand-tracking/scs0009' },
-                { text: 'PWM Hand Tracking (MediaPipe Built into the GUI)', link: '/tutorials/robot-arms/amazing-hand/05-hand-tracking/pwm' },
-                { text: 'SCS0009 Servo Debugging and Calibration', link: '/tutorials/robot-arms/amazing-hand/06-servo-tuning/scs0009' },
-                { text: 'PWM Servo Protocol, Commands and Calibration', link: '/tutorials/robot-arms/amazing-hand/06-servo-tuning/pwm' },
-                { text: 'Arduino Nano Tutorial', link: '/tutorials/robot-arms/amazing-hand/07-arduino/arduino-nano' },
-                { text: 'Arduino and Python Examples', link: '/tutorials/robot-arms/amazing-hand/07-arduino/examples' },
-                { text: 'Frequently Asked Questions (FAQ)', link: '/tutorials/robot-arms/amazing-hand/08-faq/faq' },
+                {
+                  text: '00 Product information',
+                  collapsed: true,
+                  items: [
+                    { text: 'AmazingHand Product Information', link: '/tutorials/robot-arms/amazing-hand/00-product/product-info' },
+                    { text: 'SCS0009 vs PWM Version Comparison and Selection', link: '/tutorials/robot-arms/amazing-hand/00-product/version-comparison' },
+                    { text: 'Downloads and Resources', link: '/tutorials/robot-arms/amazing-hand/00-product/downloads' },
+                  ],
+                },
+                {
+                  text: '01 Hardware & wiring',
+                  collapsed: true,
+                  items: [
+                    { text: 'Hardware Overview: Mechanics, CAD and Assembly', link: '/tutorials/robot-arms/amazing-hand/01-hardware/overview' },
+                    { text: 'SCS0009 Wiring, ID and Power', link: '/tutorials/robot-arms/amazing-hand/01-hardware/scs0009' },
+                    { text: 'PWM Wiring, GPIO and Power', link: '/tutorials/robot-arms/amazing-hand/01-hardware/pwm' },
+                    { text: 'Environmental Camera Kit Installation', link: '/tutorials/robot-arms/amazing-hand/01-hardware/camera-kit' },
+                  ],
+                },
+                {
+                  text: '02 Quick start',
+                  collapsed: true,
+                  items: [
+                    { text: 'SCS0009 Quick Start', link: '/tutorials/robot-arms/amazing-hand/02-quick-start/scs0009' },
+                    { text: 'PWM Quick Start', link: '/tutorials/robot-arms/amazing-hand/02-quick-start/pwm' },
+                  ],
+                },
+                {
+                  text: '03 Web control',
+                  collapsed: true,
+                  items: [
+                    { text: 'AmazingHand Web Control', link: '/tutorials/robot-arms/amazing-hand/03-web-control/README' },
+                    { text: 'SCS0009 Web Control', link: '/tutorials/robot-arms/amazing-hand/03-web-control/scs0009' },
+                    { text: 'PWM Web Control', link: '/tutorials/robot-arms/amazing-hand/03-web-control/pwm' },
+                  ],
+                },
+                {
+                  text: '04 Desktop software',
+                  collapsed: true,
+                  items: [
+                    { text: 'SCS0009 Desktop Host Software (GUI and CLI)', link: '/tutorials/robot-arms/amazing-hand/04-desktop/scs0009' },
+                    { text: 'PWM Desktop Host Software (Tkinter GUI)', link: '/tutorials/robot-arms/amazing-hand/04-desktop/pwm' },
+                  ],
+                },
+                {
+                  text: '05 Hand tracking',
+                  collapsed: true,
+                  items: [
+                    { text: 'SCS0009 Hand Tracking (Official dora Demo)', link: '/tutorials/robot-arms/amazing-hand/05-hand-tracking/scs0009' },
+                    { text: 'PWM Hand Tracking (MediaPipe Built into the GUI)', link: '/tutorials/robot-arms/amazing-hand/05-hand-tracking/pwm' },
+                  ],
+                },
+                {
+                  text: '06 Servo tuning & calibration',
+                  collapsed: true,
+                  items: [
+                    { text: 'SCS0009 Servo Debugging and Calibration', link: '/tutorials/robot-arms/amazing-hand/06-servo-tuning/scs0009' },
+                    { text: 'PWM Servo Protocol, Commands and Calibration', link: '/tutorials/robot-arms/amazing-hand/06-servo-tuning/pwm' },
+                  ],
+                },
+                {
+                  text: '07 Arduino & examples',
+                  collapsed: true,
+                  items: [
+                    { text: 'Arduino Nano Tutorial', link: '/tutorials/robot-arms/amazing-hand/07-arduino/arduino-nano' },
+                    { text: 'Arduino and Python Examples', link: '/tutorials/robot-arms/amazing-hand/07-arduino/examples' },
+                  ],
+                },
+                {
+                  text: '08 FAQ',
+                  collapsed: true,
+                  items: [
+                    { text: 'Frequently Asked Questions (FAQ)', link: '/tutorials/robot-arms/amazing-hand/08-faq/faq' },
+                  ],
+                },
               ],
             },
             {
@@ -2199,27 +2307,81 @@ const zhHK = {
               link: '/zh-hant/tutorials/robot-arms/amazing-hand/README',
               collapsed: true,
               items: [
-                { text: 'AmazingHand 產品資料', link: '/zh-hant/tutorials/robot-arms/amazing-hand/00-product/product-info' },
-                { text: 'SCS0009 與 PWM 版本比較與選型', link: '/zh-hant/tutorials/robot-arms/amazing-hand/00-product/version-comparison' },
-                { text: '下載與資源', link: '/zh-hant/tutorials/robot-arms/amazing-hand/00-product/downloads' },
-                { text: '硬體總覽：結構、CAD 與組裝', link: '/zh-hant/tutorials/robot-arms/amazing-hand/01-hardware/overview' },
-                { text: 'SCS0009 接線、ID 與供電', link: '/zh-hant/tutorials/robot-arms/amazing-hand/01-hardware/scs0009' },
-                { text: 'PWM 接線、GPIO 與供電', link: '/zh-hant/tutorials/robot-arms/amazing-hand/01-hardware/pwm' },
-                { text: '環境攝影機套件安裝', link: '/zh-hant/tutorials/robot-arms/amazing-hand/01-hardware/camera-kit' },
-                { text: 'SCS0009 快速上手', link: '/zh-hant/tutorials/robot-arms/amazing-hand/02-quick-start/scs0009' },
-                { text: 'PWM 快速上手', link: '/zh-hant/tutorials/robot-arms/amazing-hand/02-quick-start/pwm' },
-                { text: 'AmazingHand 網頁控制', link: '/zh-hant/tutorials/robot-arms/amazing-hand/03-web-control/README' },
-                { text: 'SCS0009 網頁控制', link: '/zh-hant/tutorials/robot-arms/amazing-hand/03-web-control/scs0009' },
-                { text: 'PWM 網頁控制', link: '/zh-hant/tutorials/robot-arms/amazing-hand/03-web-control/pwm' },
-                { text: 'SCS0009 桌面上位機（GUI 與 CLI）', link: '/zh-hant/tutorials/robot-arms/amazing-hand/04-desktop/scs0009' },
-                { text: 'PWM 桌面上位機（Tkinter GUI）', link: '/zh-hant/tutorials/robot-arms/amazing-hand/04-desktop/pwm' },
-                { text: 'SCS0009 手勢追蹤（官方 dora Demo）', link: '/zh-hant/tutorials/robot-arms/amazing-hand/05-hand-tracking/scs0009' },
-                { text: 'PWM 手勢追蹤（GUI 內建 MediaPipe）', link: '/zh-hant/tutorials/robot-arms/amazing-hand/05-hand-tracking/pwm' },
-                { text: 'SCS0009 伺服馬達調校與標定', link: '/zh-hant/tutorials/robot-arms/amazing-hand/06-servo-tuning/scs0009' },
-                { text: 'PWM 伺服馬達協定、命令與標定', link: '/zh-hant/tutorials/robot-arms/amazing-hand/06-servo-tuning/pwm' },
-                { text: 'Arduino Nano 使用教學', link: '/zh-hant/tutorials/robot-arms/amazing-hand/07-arduino/arduino-nano' },
-                { text: 'Arduino 與 Python 範例', link: '/zh-hant/tutorials/robot-arms/amazing-hand/07-arduino/examples' },
-                { text: '常見問題（FAQ）', link: '/zh-hant/tutorials/robot-arms/amazing-hand/08-faq/faq' },
+                {
+                  text: '00 產品資料',
+                  collapsed: true,
+                  items: [
+                    { text: 'AmazingHand 產品資料', link: '/zh-hant/tutorials/robot-arms/amazing-hand/00-product/product-info' },
+                    { text: 'SCS0009 與 PWM 版本比較與選型', link: '/zh-hant/tutorials/robot-arms/amazing-hand/00-product/version-comparison' },
+                    { text: '下載與資源', link: '/zh-hant/tutorials/robot-arms/amazing-hand/00-product/downloads' },
+                  ],
+                },
+                {
+                  text: '01 硬體與接線',
+                  collapsed: true,
+                  items: [
+                    { text: '硬體總覽：結構、CAD 與組裝', link: '/zh-hant/tutorials/robot-arms/amazing-hand/01-hardware/overview' },
+                    { text: 'SCS0009 接線、ID 與供電', link: '/zh-hant/tutorials/robot-arms/amazing-hand/01-hardware/scs0009' },
+                    { text: 'PWM 接線、GPIO 與供電', link: '/zh-hant/tutorials/robot-arms/amazing-hand/01-hardware/pwm' },
+                    { text: '環境攝影機套件安裝', link: '/zh-hant/tutorials/robot-arms/amazing-hand/01-hardware/camera-kit' },
+                  ],
+                },
+                {
+                  text: '02 快速上手',
+                  collapsed: true,
+                  items: [
+                    { text: 'SCS0009 快速上手', link: '/zh-hant/tutorials/robot-arms/amazing-hand/02-quick-start/scs0009' },
+                    { text: 'PWM 快速上手', link: '/zh-hant/tutorials/robot-arms/amazing-hand/02-quick-start/pwm' },
+                  ],
+                },
+                {
+                  text: '03 網頁控制',
+                  collapsed: true,
+                  items: [
+                    { text: 'AmazingHand 網頁控制', link: '/zh-hant/tutorials/robot-arms/amazing-hand/03-web-control/README' },
+                    { text: 'SCS0009 網頁控制', link: '/zh-hant/tutorials/robot-arms/amazing-hand/03-web-control/scs0009' },
+                    { text: 'PWM 網頁控制', link: '/zh-hant/tutorials/robot-arms/amazing-hand/03-web-control/pwm' },
+                  ],
+                },
+                {
+                  text: '04 桌面端軟體',
+                  collapsed: true,
+                  items: [
+                    { text: 'SCS0009 桌面上位機（GUI 與 CLI）', link: '/zh-hant/tutorials/robot-arms/amazing-hand/04-desktop/scs0009' },
+                    { text: 'PWM 桌面上位機（Tkinter GUI）', link: '/zh-hant/tutorials/robot-arms/amazing-hand/04-desktop/pwm' },
+                  ],
+                },
+                {
+                  text: '05 手勢追蹤',
+                  collapsed: true,
+                  items: [
+                    { text: 'SCS0009 手勢追蹤（官方 dora Demo）', link: '/zh-hant/tutorials/robot-arms/amazing-hand/05-hand-tracking/scs0009' },
+                    { text: 'PWM 手勢追蹤（GUI 內建 MediaPipe）', link: '/zh-hant/tutorials/robot-arms/amazing-hand/05-hand-tracking/pwm' },
+                  ],
+                },
+                {
+                  text: '06 舵機調試與校準',
+                  collapsed: true,
+                  items: [
+                    { text: 'SCS0009 伺服馬達調校與標定', link: '/zh-hant/tutorials/robot-arms/amazing-hand/06-servo-tuning/scs0009' },
+                    { text: 'PWM 伺服馬達協定、命令與標定', link: '/zh-hant/tutorials/robot-arms/amazing-hand/06-servo-tuning/pwm' },
+                  ],
+                },
+                {
+                  text: '07 Arduino 與範例',
+                  collapsed: true,
+                  items: [
+                    { text: 'Arduino Nano 使用教學', link: '/zh-hant/tutorials/robot-arms/amazing-hand/07-arduino/arduino-nano' },
+                    { text: 'Arduino 與 Python 範例', link: '/zh-hant/tutorials/robot-arms/amazing-hand/07-arduino/examples' },
+                  ],
+                },
+                {
+                  text: '08 常見問題',
+                  collapsed: true,
+                  items: [
+                    { text: '常見問題（FAQ）', link: '/zh-hant/tutorials/robot-arms/amazing-hand/08-faq/faq' },
+                  ],
+                },
               ],
             },
             {
@@ -2999,27 +3161,81 @@ export default defineConfig({
               link: '/ja/tutorials/robot-arms/amazing-hand/README',
               collapsed: true,
               items: [
-                { text: 'AmazingHand 製品資料', link: '/ja/tutorials/robot-arms/amazing-hand/00-product/product-info' },
-                { text: 'SCS0009 と PWM のバージョン比較と選定', link: '/ja/tutorials/robot-arms/amazing-hand/00-product/version-comparison' },
-                { text: 'ダウンロードとリソース', link: '/ja/tutorials/robot-arms/amazing-hand/00-product/downloads' },
-                { text: 'ハードウェア概要：構造、CAD、組み立て', link: '/ja/tutorials/robot-arms/amazing-hand/01-hardware/overview' },
-                { text: 'SCS0009 配線、ID、給電', link: '/ja/tutorials/robot-arms/amazing-hand/01-hardware/scs0009' },
-                { text: 'PWM 配線、GPIO、給電', link: '/ja/tutorials/robot-arms/amazing-hand/01-hardware/pwm' },
-                { text: '環境カメラキットの取り付け', link: '/ja/tutorials/robot-arms/amazing-hand/01-hardware/camera-kit' },
-                { text: 'SCS0009 クイックスタート', link: '/ja/tutorials/robot-arms/amazing-hand/02-quick-start/scs0009' },
-                { text: 'PWM クイックスタート', link: '/ja/tutorials/robot-arms/amazing-hand/02-quick-start/pwm' },
-                { text: 'AmazingHand ウェブコントロール', link: '/ja/tutorials/robot-arms/amazing-hand/03-web-control/README' },
-                { text: 'SCS0009 ウェブコントロール', link: '/ja/tutorials/robot-arms/amazing-hand/03-web-control/scs0009' },
-                { text: 'PWM ウェブコントロール', link: '/ja/tutorials/robot-arms/amazing-hand/03-web-control/pwm' },
-                { text: 'SCS0009 デスクトップツール（GUI と CLI）', link: '/ja/tutorials/robot-arms/amazing-hand/04-desktop/scs0009' },
-                { text: 'PWM デスクトップツール（Tkinter GUI）', link: '/ja/tutorials/robot-arms/amazing-hand/04-desktop/pwm' },
-                { text: 'SCS0009 ハンドトラッキング（公式 dora Demo）', link: '/ja/tutorials/robot-arms/amazing-hand/05-hand-tracking/scs0009' },
-                { text: 'PWM ハンドトラッキング（GUI 内蔵 MediaPipe）', link: '/ja/tutorials/robot-arms/amazing-hand/05-hand-tracking/pwm' },
-                { text: 'SCS0009 サーボ調整とキャリブレーション', link: '/ja/tutorials/robot-arms/amazing-hand/06-servo-tuning/scs0009' },
-                { text: 'PWM サーボのプロトコル、コマンド、キャリブレーション', link: '/ja/tutorials/robot-arms/amazing-hand/06-servo-tuning/pwm' },
-                { text: 'Arduino Nano の使い方', link: '/ja/tutorials/robot-arms/amazing-hand/07-arduino/arduino-nano' },
-                { text: 'Arduino と Python のサンプル', link: '/ja/tutorials/robot-arms/amazing-hand/07-arduino/examples' },
-                { text: 'よくある問題（FAQ）', link: '/ja/tutorials/robot-arms/amazing-hand/08-faq/faq' },
+                {
+                  text: '00 製品情報',
+                  collapsed: true,
+                  items: [
+                    { text: 'AmazingHand 製品資料', link: '/ja/tutorials/robot-arms/amazing-hand/00-product/product-info' },
+                    { text: 'SCS0009 と PWM のバージョン比較と選定', link: '/ja/tutorials/robot-arms/amazing-hand/00-product/version-comparison' },
+                    { text: 'ダウンロードとリソース', link: '/ja/tutorials/robot-arms/amazing-hand/00-product/downloads' },
+                  ],
+                },
+                {
+                  text: '01 ハードウェアと配線',
+                  collapsed: true,
+                  items: [
+                    { text: 'ハードウェア概要：構造、CAD、組み立て', link: '/ja/tutorials/robot-arms/amazing-hand/01-hardware/overview' },
+                    { text: 'SCS0009 配線、ID、給電', link: '/ja/tutorials/robot-arms/amazing-hand/01-hardware/scs0009' },
+                    { text: 'PWM 配線、GPIO、給電', link: '/ja/tutorials/robot-arms/amazing-hand/01-hardware/pwm' },
+                    { text: '環境カメラキットの取り付け', link: '/ja/tutorials/robot-arms/amazing-hand/01-hardware/camera-kit' },
+                  ],
+                },
+                {
+                  text: '02 クイックスタート',
+                  collapsed: true,
+                  items: [
+                    { text: 'SCS0009 クイックスタート', link: '/ja/tutorials/robot-arms/amazing-hand/02-quick-start/scs0009' },
+                    { text: 'PWM クイックスタート', link: '/ja/tutorials/robot-arms/amazing-hand/02-quick-start/pwm' },
+                  ],
+                },
+                {
+                  text: '03 Web 操作',
+                  collapsed: true,
+                  items: [
+                    { text: 'AmazingHand ウェブコントロール', link: '/ja/tutorials/robot-arms/amazing-hand/03-web-control/README' },
+                    { text: 'SCS0009 ウェブコントロール', link: '/ja/tutorials/robot-arms/amazing-hand/03-web-control/scs0009' },
+                    { text: 'PWM ウェブコントロール', link: '/ja/tutorials/robot-arms/amazing-hand/03-web-control/pwm' },
+                  ],
+                },
+                {
+                  text: '04 デスクトップソフト',
+                  collapsed: true,
+                  items: [
+                    { text: 'SCS0009 デスクトップツール（GUI と CLI）', link: '/ja/tutorials/robot-arms/amazing-hand/04-desktop/scs0009' },
+                    { text: 'PWM デスクトップツール（Tkinter GUI）', link: '/ja/tutorials/robot-arms/amazing-hand/04-desktop/pwm' },
+                  ],
+                },
+                {
+                  text: '05 ハンドトラッキング',
+                  collapsed: true,
+                  items: [
+                    { text: 'SCS0009 ハンドトラッキング（公式 dora Demo）', link: '/ja/tutorials/robot-arms/amazing-hand/05-hand-tracking/scs0009' },
+                    { text: 'PWM ハンドトラッキング（GUI 内蔵 MediaPipe）', link: '/ja/tutorials/robot-arms/amazing-hand/05-hand-tracking/pwm' },
+                  ],
+                },
+                {
+                  text: '06 サーボ調整とキャリブレーション',
+                  collapsed: true,
+                  items: [
+                    { text: 'SCS0009 サーボ調整とキャリブレーション', link: '/ja/tutorials/robot-arms/amazing-hand/06-servo-tuning/scs0009' },
+                    { text: 'PWM サーボのプロトコル、コマンド、キャリブレーション', link: '/ja/tutorials/robot-arms/amazing-hand/06-servo-tuning/pwm' },
+                  ],
+                },
+                {
+                  text: '07 Arduino とサンプル',
+                  collapsed: true,
+                  items: [
+                    { text: 'Arduino Nano の使い方', link: '/ja/tutorials/robot-arms/amazing-hand/07-arduino/arduino-nano' },
+                    { text: 'Arduino と Python のサンプル', link: '/ja/tutorials/robot-arms/amazing-hand/07-arduino/examples' },
+                  ],
+                },
+                {
+                  text: '08 よくある質問',
+                  collapsed: true,
+                  items: [
+                    { text: 'よくある問題（FAQ）', link: '/ja/tutorials/robot-arms/amazing-hand/08-faq/faq' },
+                  ],
+                },
               ],
             },
             {
@@ -3704,27 +3920,81 @@ export default defineConfig({
               link: '/ko/tutorials/robot-arms/amazing-hand/README',
               collapsed: true,
               items: [
-                { text: 'AmazingHand 제품 자료', link: '/ko/tutorials/robot-arms/amazing-hand/00-product/product-info' },
-                { text: 'SCS0009와 PWM 버전 비교 및 선택', link: '/ko/tutorials/robot-arms/amazing-hand/00-product/version-comparison' },
-                { text: '다운로드와 리소스', link: '/ko/tutorials/robot-arms/amazing-hand/00-product/downloads' },
-                { text: '하드웨어 개요: 구조, CAD와 조립', link: '/ko/tutorials/robot-arms/amazing-hand/01-hardware/overview' },
-                { text: 'SCS0009 배선, ID와 전원 공급', link: '/ko/tutorials/robot-arms/amazing-hand/01-hardware/scs0009' },
-                { text: 'PWM 배선, GPIO와 전원 공급', link: '/ko/tutorials/robot-arms/amazing-hand/01-hardware/pwm' },
-                { text: '환경 카메라 키트 설치', link: '/ko/tutorials/robot-arms/amazing-hand/01-hardware/camera-kit' },
-                { text: 'SCS0009 빠른 시작', link: '/ko/tutorials/robot-arms/amazing-hand/02-quick-start/scs0009' },
-                { text: 'PWM 빠른 시작', link: '/ko/tutorials/robot-arms/amazing-hand/02-quick-start/pwm' },
-                { text: 'AmazingHand 웹 제어', link: '/ko/tutorials/robot-arms/amazing-hand/03-web-control/README' },
-                { text: 'SCS0009 웹 제어', link: '/ko/tutorials/robot-arms/amazing-hand/03-web-control/scs0009' },
-                { text: 'PWM 웹 제어', link: '/ko/tutorials/robot-arms/amazing-hand/03-web-control/pwm' },
-                { text: 'SCS0009 데스크톱 제어 프로그램(GUI와 CLI)', link: '/ko/tutorials/robot-arms/amazing-hand/04-desktop/scs0009' },
-                { text: 'PWM 데스크톱 제어 프로그램(Tkinter GUI)', link: '/ko/tutorials/robot-arms/amazing-hand/04-desktop/pwm' },
-                { text: 'SCS0009 손 추적(공식 dora Demo)', link: '/ko/tutorials/robot-arms/amazing-hand/05-hand-tracking/scs0009' },
-                { text: 'PWM 손 추적(GUI 내장 MediaPipe)', link: '/ko/tutorials/robot-arms/amazing-hand/05-hand-tracking/pwm' },
-                { text: 'SCS0009 서보 디버깅과 캘리브레이션', link: '/ko/tutorials/robot-arms/amazing-hand/06-servo-tuning/scs0009' },
-                { text: 'PWM 서보 프로토콜, 명령과 캘리브레이션', link: '/ko/tutorials/robot-arms/amazing-hand/06-servo-tuning/pwm' },
-                { text: 'Arduino Nano 사용 튜토리얼', link: '/ko/tutorials/robot-arms/amazing-hand/07-arduino/arduino-nano' },
-                { text: 'Arduino와 Python 예제', link: '/ko/tutorials/robot-arms/amazing-hand/07-arduino/examples' },
-                { text: '자주 묻는 질문(FAQ)', link: '/ko/tutorials/robot-arms/amazing-hand/08-faq/faq' },
+                {
+                  text: '00 제품 정보',
+                  collapsed: true,
+                  items: [
+                    { text: 'AmazingHand 제품 자료', link: '/ko/tutorials/robot-arms/amazing-hand/00-product/product-info' },
+                    { text: 'SCS0009와 PWM 버전 비교 및 선택', link: '/ko/tutorials/robot-arms/amazing-hand/00-product/version-comparison' },
+                    { text: '다운로드와 리소스', link: '/ko/tutorials/robot-arms/amazing-hand/00-product/downloads' },
+                  ],
+                },
+                {
+                  text: '01 하드웨어 및 배선',
+                  collapsed: true,
+                  items: [
+                    { text: '하드웨어 개요: 구조, CAD와 조립', link: '/ko/tutorials/robot-arms/amazing-hand/01-hardware/overview' },
+                    { text: 'SCS0009 배선, ID와 전원 공급', link: '/ko/tutorials/robot-arms/amazing-hand/01-hardware/scs0009' },
+                    { text: 'PWM 배선, GPIO와 전원 공급', link: '/ko/tutorials/robot-arms/amazing-hand/01-hardware/pwm' },
+                    { text: '환경 카메라 키트 설치', link: '/ko/tutorials/robot-arms/amazing-hand/01-hardware/camera-kit' },
+                  ],
+                },
+                {
+                  text: '02 빠른 시작',
+                  collapsed: true,
+                  items: [
+                    { text: 'SCS0009 빠른 시작', link: '/ko/tutorials/robot-arms/amazing-hand/02-quick-start/scs0009' },
+                    { text: 'PWM 빠른 시작', link: '/ko/tutorials/robot-arms/amazing-hand/02-quick-start/pwm' },
+                  ],
+                },
+                {
+                  text: '03 웹 제어',
+                  collapsed: true,
+                  items: [
+                    { text: 'AmazingHand 웹 제어', link: '/ko/tutorials/robot-arms/amazing-hand/03-web-control/README' },
+                    { text: 'SCS0009 웹 제어', link: '/ko/tutorials/robot-arms/amazing-hand/03-web-control/scs0009' },
+                    { text: 'PWM 웹 제어', link: '/ko/tutorials/robot-arms/amazing-hand/03-web-control/pwm' },
+                  ],
+                },
+                {
+                  text: '04 데스크톱 소프트웨어',
+                  collapsed: true,
+                  items: [
+                    { text: 'SCS0009 데스크톱 제어 프로그램(GUI와 CLI)', link: '/ko/tutorials/robot-arms/amazing-hand/04-desktop/scs0009' },
+                    { text: 'PWM 데스크톱 제어 프로그램(Tkinter GUI)', link: '/ko/tutorials/robot-arms/amazing-hand/04-desktop/pwm' },
+                  ],
+                },
+                {
+                  text: '05 핸드 트래킹',
+                  collapsed: true,
+                  items: [
+                    { text: 'SCS0009 손 추적(공식 dora Demo)', link: '/ko/tutorials/robot-arms/amazing-hand/05-hand-tracking/scs0009' },
+                    { text: 'PWM 손 추적(GUI 내장 MediaPipe)', link: '/ko/tutorials/robot-arms/amazing-hand/05-hand-tracking/pwm' },
+                  ],
+                },
+                {
+                  text: '06 서보 튜닝 및 캘리브레이션',
+                  collapsed: true,
+                  items: [
+                    { text: 'SCS0009 서보 디버깅과 캘리브레이션', link: '/ko/tutorials/robot-arms/amazing-hand/06-servo-tuning/scs0009' },
+                    { text: 'PWM 서보 프로토콜, 명령과 캘리브레이션', link: '/ko/tutorials/robot-arms/amazing-hand/06-servo-tuning/pwm' },
+                  ],
+                },
+                {
+                  text: '07 Arduino 및 예제',
+                  collapsed: true,
+                  items: [
+                    { text: 'Arduino Nano 사용 튜토리얼', link: '/ko/tutorials/robot-arms/amazing-hand/07-arduino/arduino-nano' },
+                    { text: 'Arduino와 Python 예제', link: '/ko/tutorials/robot-arms/amazing-hand/07-arduino/examples' },
+                  ],
+                },
+                {
+                  text: '08 자주 묻는 질문',
+                  collapsed: true,
+                  items: [
+                    { text: '자주 묻는 질문(FAQ)', link: '/ko/tutorials/robot-arms/amazing-hand/08-faq/faq' },
+                  ],
+                },
               ],
             },
             {
@@ -4409,27 +4679,81 @@ export default defineConfig({
               link: '/de/tutorials/robot-arms/amazing-hand/README',
               collapsed: true,
               items: [
-                { text: 'AmazingHand-Produktinformationen', link: '/de/tutorials/robot-arms/amazing-hand/00-product/product-info' },
-                { text: 'SCS0009- und PWM-Version im Vergleich und Auswahl', link: '/de/tutorials/robot-arms/amazing-hand/00-product/version-comparison' },
-                { text: 'Downloads und Ressourcen', link: '/de/tutorials/robot-arms/amazing-hand/00-product/downloads' },
-                { text: 'Hardware-Übersicht: Struktur, CAD und Montage', link: '/de/tutorials/robot-arms/amazing-hand/01-hardware/overview' },
-                { text: 'SCS0009-Verkabelung, IDs und Stromversorgung', link: '/de/tutorials/robot-arms/amazing-hand/01-hardware/scs0009' },
-                { text: 'PWM-Verkabelung, GPIO und Stromversorgung', link: '/de/tutorials/robot-arms/amazing-hand/01-hardware/pwm' },
-                { text: 'Installation des Umgebungskamera-Kits', link: '/de/tutorials/robot-arms/amazing-hand/01-hardware/camera-kit' },
-                { text: 'SCS0009-Schnellstart', link: '/de/tutorials/robot-arms/amazing-hand/02-quick-start/scs0009' },
-                { text: 'PWM-Schnellstart', link: '/de/tutorials/robot-arms/amazing-hand/02-quick-start/pwm' },
-                { text: 'AmazingHand-Websteuerung', link: '/de/tutorials/robot-arms/amazing-hand/03-web-control/README' },
-                { text: 'SCS0009-Websteuerung', link: '/de/tutorials/robot-arms/amazing-hand/03-web-control/scs0009' },
-                { text: 'PWM-Websteuerung', link: '/de/tutorials/robot-arms/amazing-hand/03-web-control/pwm' },
-                { text: 'SCS0009-Desktop-GUI (GUI und CLI)', link: '/de/tutorials/robot-arms/amazing-hand/04-desktop/scs0009' },
-                { text: 'PWM-Desktop-GUI (Tkinter-GUI)', link: '/de/tutorials/robot-arms/amazing-hand/04-desktop/pwm' },
-                { text: 'SCS0009-Handtracking (offizielles dora-Demo)', link: '/de/tutorials/robot-arms/amazing-hand/05-hand-tracking/scs0009' },
-                { text: 'PWM-Handtracking (integriertes MediaPipe in der GUI)', link: '/de/tutorials/robot-arms/amazing-hand/05-hand-tracking/pwm' },
-                { text: 'SCS0009-Servo-Debugging und Kalibrierung', link: '/de/tutorials/robot-arms/amazing-hand/06-servo-tuning/scs0009' },
-                { text: 'PWM-Servo-Protokoll, Befehle und Kalibrierung', link: '/de/tutorials/robot-arms/amazing-hand/06-servo-tuning/pwm' },
-                { text: 'Arduino Nano – Anleitung', link: '/de/tutorials/robot-arms/amazing-hand/07-arduino/arduino-nano' },
-                { text: 'Arduino- und Python-Beispiele', link: '/de/tutorials/robot-arms/amazing-hand/07-arduino/examples' },
-                { text: 'Häufige Fragen (FAQ)', link: '/de/tutorials/robot-arms/amazing-hand/08-faq/faq' },
+                {
+                  text: '00 Produktinformationen',
+                  collapsed: true,
+                  items: [
+                    { text: 'AmazingHand-Produktinformationen', link: '/de/tutorials/robot-arms/amazing-hand/00-product/product-info' },
+                    { text: 'SCS0009- und PWM-Version im Vergleich und Auswahl', link: '/de/tutorials/robot-arms/amazing-hand/00-product/version-comparison' },
+                    { text: 'Downloads und Ressourcen', link: '/de/tutorials/robot-arms/amazing-hand/00-product/downloads' },
+                  ],
+                },
+                {
+                  text: '01 Hardware & Verkabelung',
+                  collapsed: true,
+                  items: [
+                    { text: 'Hardware-Übersicht: Struktur, CAD und Montage', link: '/de/tutorials/robot-arms/amazing-hand/01-hardware/overview' },
+                    { text: 'SCS0009-Verkabelung, IDs und Stromversorgung', link: '/de/tutorials/robot-arms/amazing-hand/01-hardware/scs0009' },
+                    { text: 'PWM-Verkabelung, GPIO und Stromversorgung', link: '/de/tutorials/robot-arms/amazing-hand/01-hardware/pwm' },
+                    { text: 'Installation des Umgebungskamera-Kits', link: '/de/tutorials/robot-arms/amazing-hand/01-hardware/camera-kit' },
+                  ],
+                },
+                {
+                  text: '02 Schnellstart',
+                  collapsed: true,
+                  items: [
+                    { text: 'SCS0009-Schnellstart', link: '/de/tutorials/robot-arms/amazing-hand/02-quick-start/scs0009' },
+                    { text: 'PWM-Schnellstart', link: '/de/tutorials/robot-arms/amazing-hand/02-quick-start/pwm' },
+                  ],
+                },
+                {
+                  text: '03 Web-Steuerung',
+                  collapsed: true,
+                  items: [
+                    { text: 'AmazingHand-Websteuerung', link: '/de/tutorials/robot-arms/amazing-hand/03-web-control/README' },
+                    { text: 'SCS0009-Websteuerung', link: '/de/tutorials/robot-arms/amazing-hand/03-web-control/scs0009' },
+                    { text: 'PWM-Websteuerung', link: '/de/tutorials/robot-arms/amazing-hand/03-web-control/pwm' },
+                  ],
+                },
+                {
+                  text: '04 Desktop-Software',
+                  collapsed: true,
+                  items: [
+                    { text: 'SCS0009-Desktop-GUI (GUI und CLI)', link: '/de/tutorials/robot-arms/amazing-hand/04-desktop/scs0009' },
+                    { text: 'PWM-Desktop-GUI (Tkinter-GUI)', link: '/de/tutorials/robot-arms/amazing-hand/04-desktop/pwm' },
+                  ],
+                },
+                {
+                  text: '05 Handtracking',
+                  collapsed: true,
+                  items: [
+                    { text: 'SCS0009-Handtracking (offizielles dora-Demo)', link: '/de/tutorials/robot-arms/amazing-hand/05-hand-tracking/scs0009' },
+                    { text: 'PWM-Handtracking (integriertes MediaPipe in der GUI)', link: '/de/tutorials/robot-arms/amazing-hand/05-hand-tracking/pwm' },
+                  ],
+                },
+                {
+                  text: '06 Servo-Einstellung & Kalibrierung',
+                  collapsed: true,
+                  items: [
+                    { text: 'SCS0009-Servo-Debugging und Kalibrierung', link: '/de/tutorials/robot-arms/amazing-hand/06-servo-tuning/scs0009' },
+                    { text: 'PWM-Servo-Protokoll, Befehle und Kalibrierung', link: '/de/tutorials/robot-arms/amazing-hand/06-servo-tuning/pwm' },
+                  ],
+                },
+                {
+                  text: '07 Arduino & Beispiele',
+                  collapsed: true,
+                  items: [
+                    { text: 'Arduino Nano – Anleitung', link: '/de/tutorials/robot-arms/amazing-hand/07-arduino/arduino-nano' },
+                    { text: 'Arduino- und Python-Beispiele', link: '/de/tutorials/robot-arms/amazing-hand/07-arduino/examples' },
+                  ],
+                },
+                {
+                  text: '08 FAQ',
+                  collapsed: true,
+                  items: [
+                    { text: 'Häufige Fragen (FAQ)', link: '/de/tutorials/robot-arms/amazing-hand/08-faq/faq' },
+                  ],
+                },
               ],
             },
             {
@@ -5114,27 +5438,81 @@ export default defineConfig({
               link: '/fr/tutorials/robot-arms/amazing-hand/README',
               collapsed: true,
               items: [
-                { text: 'Informations produit AmazingHand', link: '/fr/tutorials/robot-arms/amazing-hand/00-product/product-info' },
-                { text: 'Comparaison et choix entre les versions SCS0009 et PWM', link: '/fr/tutorials/robot-arms/amazing-hand/00-product/version-comparison' },
-                { text: 'Téléchargements et ressources', link: '/fr/tutorials/robot-arms/amazing-hand/00-product/downloads' },
-                { text: 'Vue d\'ensemble du matériel : structure, CAO et assemblage', link: '/fr/tutorials/robot-arms/amazing-hand/01-hardware/overview' },
-                { text: 'Câblage, ID et alimentation SCS0009', link: '/fr/tutorials/robot-arms/amazing-hand/01-hardware/scs0009' },
-                { text: 'Câblage, GPIO et alimentation PWM', link: '/fr/tutorials/robot-arms/amazing-hand/01-hardware/pwm' },
-                { text: 'Installation du kit caméra d\'environnement', link: '/fr/tutorials/robot-arms/amazing-hand/01-hardware/camera-kit' },
-                { text: 'Démarrage rapide SCS0009', link: '/fr/tutorials/robot-arms/amazing-hand/02-quick-start/scs0009' },
-                { text: 'Démarrage rapide PWM', link: '/fr/tutorials/robot-arms/amazing-hand/02-quick-start/pwm' },
-                { text: 'Contrôle web AmazingHand', link: '/fr/tutorials/robot-arms/amazing-hand/03-web-control/README' },
-                { text: 'Contrôle web SCS0009', link: '/fr/tutorials/robot-arms/amazing-hand/03-web-control/scs0009' },
-                { text: 'Contrôle web PWM', link: '/fr/tutorials/robot-arms/amazing-hand/03-web-control/pwm' },
-                { text: 'Outils de bureau SCS0009 (GUI et CLI)', link: '/fr/tutorials/robot-arms/amazing-hand/04-desktop/scs0009' },
-                { text: 'Outil de bureau PWM (GUI Tkinter)', link: '/fr/tutorials/robot-arms/amazing-hand/04-desktop/pwm' },
-                { text: 'Suivi de main SCS0009 (démo dora officielle)', link: '/fr/tutorials/robot-arms/amazing-hand/05-hand-tracking/scs0009' },
-                { text: 'Suivi de main PWM (MediaPipe intégré à la GUI)', link: '/fr/tutorials/robot-arms/amazing-hand/05-hand-tracking/pwm' },
-                { text: 'Débogage et calibration des servos SCS0009', link: '/fr/tutorials/robot-arms/amazing-hand/06-servo-tuning/scs0009' },
-                { text: 'Protocole, commandes et calibration des servos PWM', link: '/fr/tutorials/robot-arms/amazing-hand/06-servo-tuning/pwm' },
-                { text: 'Tutoriel Arduino Nano', link: '/fr/tutorials/robot-arms/amazing-hand/07-arduino/arduino-nano' },
-                { text: 'Exemples Arduino et Python', link: '/fr/tutorials/robot-arms/amazing-hand/07-arduino/examples' },
-                { text: 'Questions fréquentes (FAQ)', link: '/fr/tutorials/robot-arms/amazing-hand/08-faq/faq' },
+                {
+                  text: '00 Informations produit',
+                  collapsed: true,
+                  items: [
+                    { text: 'Informations produit AmazingHand', link: '/fr/tutorials/robot-arms/amazing-hand/00-product/product-info' },
+                    { text: 'Comparaison et choix entre les versions SCS0009 et PWM', link: '/fr/tutorials/robot-arms/amazing-hand/00-product/version-comparison' },
+                    { text: 'Téléchargements et ressources', link: '/fr/tutorials/robot-arms/amazing-hand/00-product/downloads' },
+                  ],
+                },
+                {
+                  text: '01 Matériel et câblage',
+                  collapsed: true,
+                  items: [
+                    { text: 'Vue d\'ensemble du matériel : structure, CAO et assemblage', link: '/fr/tutorials/robot-arms/amazing-hand/01-hardware/overview' },
+                    { text: 'Câblage, ID et alimentation SCS0009', link: '/fr/tutorials/robot-arms/amazing-hand/01-hardware/scs0009' },
+                    { text: 'Câblage, GPIO et alimentation PWM', link: '/fr/tutorials/robot-arms/amazing-hand/01-hardware/pwm' },
+                    { text: 'Installation du kit caméra d\'environnement', link: '/fr/tutorials/robot-arms/amazing-hand/01-hardware/camera-kit' },
+                  ],
+                },
+                {
+                  text: '02 Démarrage rapide',
+                  collapsed: true,
+                  items: [
+                    { text: 'Démarrage rapide SCS0009', link: '/fr/tutorials/robot-arms/amazing-hand/02-quick-start/scs0009' },
+                    { text: 'Démarrage rapide PWM', link: '/fr/tutorials/robot-arms/amazing-hand/02-quick-start/pwm' },
+                  ],
+                },
+                {
+                  text: '03 Contrôle web',
+                  collapsed: true,
+                  items: [
+                    { text: 'Contrôle web AmazingHand', link: '/fr/tutorials/robot-arms/amazing-hand/03-web-control/README' },
+                    { text: 'Contrôle web SCS0009', link: '/fr/tutorials/robot-arms/amazing-hand/03-web-control/scs0009' },
+                    { text: 'Contrôle web PWM', link: '/fr/tutorials/robot-arms/amazing-hand/03-web-control/pwm' },
+                  ],
+                },
+                {
+                  text: '04 Logiciel de bureau',
+                  collapsed: true,
+                  items: [
+                    { text: 'Outils de bureau SCS0009 (GUI et CLI)', link: '/fr/tutorials/robot-arms/amazing-hand/04-desktop/scs0009' },
+                    { text: 'Outil de bureau PWM (GUI Tkinter)', link: '/fr/tutorials/robot-arms/amazing-hand/04-desktop/pwm' },
+                  ],
+                },
+                {
+                  text: '05 Suivi des mains',
+                  collapsed: true,
+                  items: [
+                    { text: 'Suivi de main SCS0009 (démo dora officielle)', link: '/fr/tutorials/robot-arms/amazing-hand/05-hand-tracking/scs0009' },
+                    { text: 'Suivi de main PWM (MediaPipe intégré à la GUI)', link: '/fr/tutorials/robot-arms/amazing-hand/05-hand-tracking/pwm' },
+                  ],
+                },
+                {
+                  text: '06 Réglage et calibration des servos',
+                  collapsed: true,
+                  items: [
+                    { text: 'Débogage et calibration des servos SCS0009', link: '/fr/tutorials/robot-arms/amazing-hand/06-servo-tuning/scs0009' },
+                    { text: 'Protocole, commandes et calibration des servos PWM', link: '/fr/tutorials/robot-arms/amazing-hand/06-servo-tuning/pwm' },
+                  ],
+                },
+                {
+                  text: '07 Arduino et exemples',
+                  collapsed: true,
+                  items: [
+                    { text: 'Tutoriel Arduino Nano', link: '/fr/tutorials/robot-arms/amazing-hand/07-arduino/arduino-nano' },
+                    { text: 'Exemples Arduino et Python', link: '/fr/tutorials/robot-arms/amazing-hand/07-arduino/examples' },
+                  ],
+                },
+                {
+                  text: '08 FAQ',
+                  collapsed: true,
+                  items: [
+                    { text: 'Questions fréquentes (FAQ)', link: '/fr/tutorials/robot-arms/amazing-hand/08-faq/faq' },
+                  ],
+                },
               ],
             },
             {
@@ -5819,27 +6197,81 @@ export default defineConfig({
               link: '/es/tutorials/robot-arms/amazing-hand/README',
               collapsed: true,
               items: [
-                { text: 'Información del producto AmazingHand', link: '/es/tutorials/robot-arms/amazing-hand/00-product/product-info' },
-                { text: 'Comparación y selección entre las versiones SCS0009 y PWM', link: '/es/tutorials/robot-arms/amazing-hand/00-product/version-comparison' },
-                { text: 'Descargas y recursos', link: '/es/tutorials/robot-arms/amazing-hand/00-product/downloads' },
-                { text: 'Descripción general del hardware: estructura, CAD y montaje', link: '/es/tutorials/robot-arms/amazing-hand/01-hardware/overview' },
-                { text: 'Cableado, ID y alimentación SCS0009', link: '/es/tutorials/robot-arms/amazing-hand/01-hardware/scs0009' },
-                { text: 'Cableado, GPIO y alimentación PWM', link: '/es/tutorials/robot-arms/amazing-hand/01-hardware/pwm' },
-                { text: 'Instalación del kit de cámara de entorno', link: '/es/tutorials/robot-arms/amazing-hand/01-hardware/camera-kit' },
-                { text: 'Inicio rápido con SCS0009', link: '/es/tutorials/robot-arms/amazing-hand/02-quick-start/scs0009' },
-                { text: 'Inicio rápido con PWM', link: '/es/tutorials/robot-arms/amazing-hand/02-quick-start/pwm' },
-                { text: 'Control web de AmazingHand', link: '/es/tutorials/robot-arms/amazing-hand/03-web-control/README' },
-                { text: 'Control web SCS0009', link: '/es/tutorials/robot-arms/amazing-hand/03-web-control/scs0009' },
-                { text: 'Control web PWM', link: '/es/tutorials/robot-arms/amazing-hand/03-web-control/pwm' },
-                { text: 'Aplicación de escritorio SCS0009 (GUI y CLI)', link: '/es/tutorials/robot-arms/amazing-hand/04-desktop/scs0009' },
-                { text: 'Aplicación de escritorio PWM (GUI Tkinter)', link: '/es/tutorials/robot-arms/amazing-hand/04-desktop/pwm' },
-                { text: 'Seguimiento de manos SCS0009 (Demo oficial dora)', link: '/es/tutorials/robot-arms/amazing-hand/05-hand-tracking/scs0009' },
-                { text: 'Seguimiento de manos PWM (MediaPipe integrado en la GUI)', link: '/es/tutorials/robot-arms/amazing-hand/05-hand-tracking/pwm' },
-                { text: 'Depuración y calibración de servos SCS0009', link: '/es/tutorials/robot-arms/amazing-hand/06-servo-tuning/scs0009' },
-                { text: 'Protocolo, comandos y calibración de los servos PWM', link: '/es/tutorials/robot-arms/amazing-hand/06-servo-tuning/pwm' },
-                { text: 'Tutorial de uso de Arduino Nano', link: '/es/tutorials/robot-arms/amazing-hand/07-arduino/arduino-nano' },
-                { text: 'Ejemplos de Arduino y Python', link: '/es/tutorials/robot-arms/amazing-hand/07-arduino/examples' },
-                { text: 'Preguntas frecuentes (FAQ)', link: '/es/tutorials/robot-arms/amazing-hand/08-faq/faq' },
+                {
+                  text: '00 Información del producto',
+                  collapsed: true,
+                  items: [
+                    { text: 'Información del producto AmazingHand', link: '/es/tutorials/robot-arms/amazing-hand/00-product/product-info' },
+                    { text: 'Comparación y selección entre las versiones SCS0009 y PWM', link: '/es/tutorials/robot-arms/amazing-hand/00-product/version-comparison' },
+                    { text: 'Descargas y recursos', link: '/es/tutorials/robot-arms/amazing-hand/00-product/downloads' },
+                  ],
+                },
+                {
+                  text: '01 Hardware y cableado',
+                  collapsed: true,
+                  items: [
+                    { text: 'Descripción general del hardware: estructura, CAD y montaje', link: '/es/tutorials/robot-arms/amazing-hand/01-hardware/overview' },
+                    { text: 'Cableado, ID y alimentación SCS0009', link: '/es/tutorials/robot-arms/amazing-hand/01-hardware/scs0009' },
+                    { text: 'Cableado, GPIO y alimentación PWM', link: '/es/tutorials/robot-arms/amazing-hand/01-hardware/pwm' },
+                    { text: 'Instalación del kit de cámara de entorno', link: '/es/tutorials/robot-arms/amazing-hand/01-hardware/camera-kit' },
+                  ],
+                },
+                {
+                  text: '02 Inicio rápido',
+                  collapsed: true,
+                  items: [
+                    { text: 'Inicio rápido con SCS0009', link: '/es/tutorials/robot-arms/amazing-hand/02-quick-start/scs0009' },
+                    { text: 'Inicio rápido con PWM', link: '/es/tutorials/robot-arms/amazing-hand/02-quick-start/pwm' },
+                  ],
+                },
+                {
+                  text: '03 Control web',
+                  collapsed: true,
+                  items: [
+                    { text: 'Control web de AmazingHand', link: '/es/tutorials/robot-arms/amazing-hand/03-web-control/README' },
+                    { text: 'Control web SCS0009', link: '/es/tutorials/robot-arms/amazing-hand/03-web-control/scs0009' },
+                    { text: 'Control web PWM', link: '/es/tutorials/robot-arms/amazing-hand/03-web-control/pwm' },
+                  ],
+                },
+                {
+                  text: '04 Software de escritorio',
+                  collapsed: true,
+                  items: [
+                    { text: 'Aplicación de escritorio SCS0009 (GUI y CLI)', link: '/es/tutorials/robot-arms/amazing-hand/04-desktop/scs0009' },
+                    { text: 'Aplicación de escritorio PWM (GUI Tkinter)', link: '/es/tutorials/robot-arms/amazing-hand/04-desktop/pwm' },
+                  ],
+                },
+                {
+                  text: '05 Seguimiento de manos',
+                  collapsed: true,
+                  items: [
+                    { text: 'Seguimiento de manos SCS0009 (Demo oficial dora)', link: '/es/tutorials/robot-arms/amazing-hand/05-hand-tracking/scs0009' },
+                    { text: 'Seguimiento de manos PWM (MediaPipe integrado en la GUI)', link: '/es/tutorials/robot-arms/amazing-hand/05-hand-tracking/pwm' },
+                  ],
+                },
+                {
+                  text: '06 Ajuste y calibración de servos',
+                  collapsed: true,
+                  items: [
+                    { text: 'Depuración y calibración de servos SCS0009', link: '/es/tutorials/robot-arms/amazing-hand/06-servo-tuning/scs0009' },
+                    { text: 'Protocolo, comandos y calibración de los servos PWM', link: '/es/tutorials/robot-arms/amazing-hand/06-servo-tuning/pwm' },
+                  ],
+                },
+                {
+                  text: '07 Arduino y ejemplos',
+                  collapsed: true,
+                  items: [
+                    { text: 'Tutorial de uso de Arduino Nano', link: '/es/tutorials/robot-arms/amazing-hand/07-arduino/arduino-nano' },
+                    { text: 'Ejemplos de Arduino y Python', link: '/es/tutorials/robot-arms/amazing-hand/07-arduino/examples' },
+                  ],
+                },
+                {
+                  text: '08 Preguntas frecuentes',
+                  collapsed: true,
+                  items: [
+                    { text: 'Preguntas frecuentes (FAQ)', link: '/es/tutorials/robot-arms/amazing-hand/08-faq/faq' },
+                  ],
+                },
               ],
             },
             {
@@ -6524,27 +6956,81 @@ export default defineConfig({
               link: '/it/tutorials/robot-arms/amazing-hand/README',
               collapsed: true,
               items: [
-                { text: 'Scheda prodotto AmazingHand', link: '/it/tutorials/robot-arms/amazing-hand/00-product/product-info' },
-                { text: 'Confronto e scelta tra versioni SCS0009 e PWM', link: '/it/tutorials/robot-arms/amazing-hand/00-product/version-comparison' },
-                { text: 'Download e risorse', link: '/it/tutorials/robot-arms/amazing-hand/00-product/downloads' },
-                { text: 'Panoramica hardware: struttura, CAD e assemblaggio', link: '/it/tutorials/robot-arms/amazing-hand/01-hardware/overview' },
-                { text: 'Cablaggio, ID e alimentazione SCS0009', link: '/it/tutorials/robot-arms/amazing-hand/01-hardware/scs0009' },
-                { text: 'Cablaggio, GPIO e alimentazione PWM', link: '/it/tutorials/robot-arms/amazing-hand/01-hardware/pwm' },
-                { text: 'Installazione del kit telecamera ambientale', link: '/it/tutorials/robot-arms/amazing-hand/01-hardware/camera-kit' },
-                { text: 'Avvio rapido SCS0009', link: '/it/tutorials/robot-arms/amazing-hand/02-quick-start/scs0009' },
-                { text: 'Avvio rapido PWM', link: '/it/tutorials/robot-arms/amazing-hand/02-quick-start/pwm' },
-                { text: 'Controllo web AmazingHand', link: '/it/tutorials/robot-arms/amazing-hand/03-web-control/README' },
-                { text: 'Controllo web SCS0009', link: '/it/tutorials/robot-arms/amazing-hand/03-web-control/scs0009' },
-                { text: 'Controllo web PWM', link: '/it/tutorials/robot-arms/amazing-hand/03-web-control/pwm' },
-                { text: 'Applicazione desktop SCS0009 (GUI e CLI)', link: '/it/tutorials/robot-arms/amazing-hand/04-desktop/scs0009' },
-                { text: 'Applicazione desktop PWM (GUI Tkinter)', link: '/it/tutorials/robot-arms/amazing-hand/04-desktop/pwm' },
-                { text: 'Tracciamento delle mani SCS0009 (demo ufficiale dora)', link: '/it/tutorials/robot-arms/amazing-hand/05-hand-tracking/scs0009' },
-                { text: 'Tracciamento delle mani PWM (MediaPipe integrato nella GUI)', link: '/it/tutorials/robot-arms/amazing-hand/05-hand-tracking/pwm' },
-                { text: 'Messa a punto e calibrazione dei servo SCS0009', link: '/it/tutorials/robot-arms/amazing-hand/06-servo-tuning/scs0009' },
-                { text: 'Protocollo, comandi e calibrazione dei servo PWM', link: '/it/tutorials/robot-arms/amazing-hand/06-servo-tuning/pwm' },
-                { text: 'Tutorial di utilizzo di Arduino Nano', link: '/it/tutorials/robot-arms/amazing-hand/07-arduino/arduino-nano' },
-                { text: 'Esempi Arduino e Python', link: '/it/tutorials/robot-arms/amazing-hand/07-arduino/examples' },
-                { text: 'Domande frequenti (FAQ)', link: '/it/tutorials/robot-arms/amazing-hand/08-faq/faq' },
+                {
+                  text: '00 Informazioni sul prodotto',
+                  collapsed: true,
+                  items: [
+                    { text: 'Scheda prodotto AmazingHand', link: '/it/tutorials/robot-arms/amazing-hand/00-product/product-info' },
+                    { text: 'Confronto e scelta tra versioni SCS0009 e PWM', link: '/it/tutorials/robot-arms/amazing-hand/00-product/version-comparison' },
+                    { text: 'Download e risorse', link: '/it/tutorials/robot-arms/amazing-hand/00-product/downloads' },
+                  ],
+                },
+                {
+                  text: '01 Hardware e cablaggio',
+                  collapsed: true,
+                  items: [
+                    { text: 'Panoramica hardware: struttura, CAD e assemblaggio', link: '/it/tutorials/robot-arms/amazing-hand/01-hardware/overview' },
+                    { text: 'Cablaggio, ID e alimentazione SCS0009', link: '/it/tutorials/robot-arms/amazing-hand/01-hardware/scs0009' },
+                    { text: 'Cablaggio, GPIO e alimentazione PWM', link: '/it/tutorials/robot-arms/amazing-hand/01-hardware/pwm' },
+                    { text: 'Installazione del kit telecamera ambientale', link: '/it/tutorials/robot-arms/amazing-hand/01-hardware/camera-kit' },
+                  ],
+                },
+                {
+                  text: '02 Avvio rapido',
+                  collapsed: true,
+                  items: [
+                    { text: 'Avvio rapido SCS0009', link: '/it/tutorials/robot-arms/amazing-hand/02-quick-start/scs0009' },
+                    { text: 'Avvio rapido PWM', link: '/it/tutorials/robot-arms/amazing-hand/02-quick-start/pwm' },
+                  ],
+                },
+                {
+                  text: '03 Controllo web',
+                  collapsed: true,
+                  items: [
+                    { text: 'Controllo web AmazingHand', link: '/it/tutorials/robot-arms/amazing-hand/03-web-control/README' },
+                    { text: 'Controllo web SCS0009', link: '/it/tutorials/robot-arms/amazing-hand/03-web-control/scs0009' },
+                    { text: 'Controllo web PWM', link: '/it/tutorials/robot-arms/amazing-hand/03-web-control/pwm' },
+                  ],
+                },
+                {
+                  text: '04 Software desktop',
+                  collapsed: true,
+                  items: [
+                    { text: 'Applicazione desktop SCS0009 (GUI e CLI)', link: '/it/tutorials/robot-arms/amazing-hand/04-desktop/scs0009' },
+                    { text: 'Applicazione desktop PWM (GUI Tkinter)', link: '/it/tutorials/robot-arms/amazing-hand/04-desktop/pwm' },
+                  ],
+                },
+                {
+                  text: '05 Tracciamento mani',
+                  collapsed: true,
+                  items: [
+                    { text: 'Tracciamento delle mani SCS0009 (demo ufficiale dora)', link: '/it/tutorials/robot-arms/amazing-hand/05-hand-tracking/scs0009' },
+                    { text: 'Tracciamento delle mani PWM (MediaPipe integrato nella GUI)', link: '/it/tutorials/robot-arms/amazing-hand/05-hand-tracking/pwm' },
+                  ],
+                },
+                {
+                  text: '06 Regolazione e calibrazione servo',
+                  collapsed: true,
+                  items: [
+                    { text: 'Messa a punto e calibrazione dei servo SCS0009', link: '/it/tutorials/robot-arms/amazing-hand/06-servo-tuning/scs0009' },
+                    { text: 'Protocollo, comandi e calibrazione dei servo PWM', link: '/it/tutorials/robot-arms/amazing-hand/06-servo-tuning/pwm' },
+                  ],
+                },
+                {
+                  text: '07 Arduino ed esempi',
+                  collapsed: true,
+                  items: [
+                    { text: 'Tutorial di utilizzo di Arduino Nano', link: '/it/tutorials/robot-arms/amazing-hand/07-arduino/arduino-nano' },
+                    { text: 'Esempi Arduino e Python', link: '/it/tutorials/robot-arms/amazing-hand/07-arduino/examples' },
+                  ],
+                },
+                {
+                  text: '08 Domande frequenti',
+                  collapsed: true,
+                  items: [
+                    { text: 'Domande frequenti (FAQ)', link: '/it/tutorials/robot-arms/amazing-hand/08-faq/faq' },
+                  ],
+                },
               ],
             },
             {
@@ -7673,27 +8159,81 @@ export default defineConfig({
                 link: '/pt-br/tutorials/robot-arms/amazing-hand/README',
                 collapsed: true,
                 items: [
-                  { text: 'Informações do produto AmazingHand', link: '/pt-br/tutorials/robot-arms/amazing-hand/00-product/product-info' },
-                  { text: 'Comparação e escolha entre as versões SCS0009 e PWM', link: '/pt-br/tutorials/robot-arms/amazing-hand/00-product/version-comparison' },
-                  { text: 'Downloads e recursos', link: '/pt-br/tutorials/robot-arms/amazing-hand/00-product/downloads' },
-                  { text: 'Visão geral do hardware: estrutura, CAD e montagem', link: '/pt-br/tutorials/robot-arms/amazing-hand/01-hardware/overview' },
-                  { text: 'Fiação, ID e alimentação SCS0009', link: '/pt-br/tutorials/robot-arms/amazing-hand/01-hardware/scs0009' },
-                  { text: 'Fiação, GPIO e alimentação PWM', link: '/pt-br/tutorials/robot-arms/amazing-hand/01-hardware/pwm' },
-                  { text: 'Montagem do kit de câmera de ambiente', link: '/pt-br/tutorials/robot-arms/amazing-hand/01-hardware/camera-kit' },
-                  { text: 'Início rápido com SCS0009', link: '/pt-br/tutorials/robot-arms/amazing-hand/02-quick-start/scs0009' },
-                  { text: 'Início rápido com PWM', link: '/pt-br/tutorials/robot-arms/amazing-hand/02-quick-start/pwm' },
-                  { text: 'Controle web AmazingHand', link: '/pt-br/tutorials/robot-arms/amazing-hand/03-web-control/README' },
-                  { text: 'Controle web SCS0009', link: '/pt-br/tutorials/robot-arms/amazing-hand/03-web-control/scs0009' },
-                  { text: 'Controle web PWM', link: '/pt-br/tutorials/robot-arms/amazing-hand/03-web-control/pwm' },
-                  { text: 'Aplicativo de desktop SCS0009 (GUI e CLI)', link: '/pt-br/tutorials/robot-arms/amazing-hand/04-desktop/scs0009' },
-                  { text: 'Aplicativo de desktop PWM (GUI Tkinter)', link: '/pt-br/tutorials/robot-arms/amazing-hand/04-desktop/pwm' },
-                  { text: 'Rastreamento de mãos SCS0009 (Demo oficial dora)', link: '/pt-br/tutorials/robot-arms/amazing-hand/05-hand-tracking/scs0009' },
-                  { text: 'Rastreamento de mãos PWM (MediaPipe embutido na GUI)', link: '/pt-br/tutorials/robot-arms/amazing-hand/05-hand-tracking/pwm' },
-                  { text: 'Depuração e calibração de servos SCS0009', link: '/pt-br/tutorials/robot-arms/amazing-hand/06-servo-tuning/scs0009' },
-                  { text: 'Protocolo, comandos e calibração dos servos PWM', link: '/pt-br/tutorials/robot-arms/amazing-hand/06-servo-tuning/pwm' },
-                  { text: 'Tutorial de uso do Arduino Nano', link: '/pt-br/tutorials/robot-arms/amazing-hand/07-arduino/arduino-nano' },
-                  { text: 'Exemplos em Arduino e Python', link: '/pt-br/tutorials/robot-arms/amazing-hand/07-arduino/examples' },
-                  { text: 'Perguntas frequentes (FAQ)', link: '/pt-br/tutorials/robot-arms/amazing-hand/08-faq/faq' },
+                  {
+                    text: '00 Informações do produto',
+                    collapsed: true,
+                    items: [
+                      { text: 'Informações do produto AmazingHand', link: '/pt-br/tutorials/robot-arms/amazing-hand/00-product/product-info' },
+                      { text: 'Comparação e escolha entre as versões SCS0009 e PWM', link: '/pt-br/tutorials/robot-arms/amazing-hand/00-product/version-comparison' },
+                      { text: 'Downloads e recursos', link: '/pt-br/tutorials/robot-arms/amazing-hand/00-product/downloads' },
+                    ],
+                  },
+                  {
+                    text: '01 Hardware e cabeamento',
+                    collapsed: true,
+                    items: [
+                      { text: 'Visão geral do hardware: estrutura, CAD e montagem', link: '/pt-br/tutorials/robot-arms/amazing-hand/01-hardware/overview' },
+                      { text: 'Fiação, ID e alimentação SCS0009', link: '/pt-br/tutorials/robot-arms/amazing-hand/01-hardware/scs0009' },
+                      { text: 'Fiação, GPIO e alimentação PWM', link: '/pt-br/tutorials/robot-arms/amazing-hand/01-hardware/pwm' },
+                      { text: 'Montagem do kit de câmera de ambiente', link: '/pt-br/tutorials/robot-arms/amazing-hand/01-hardware/camera-kit' },
+                    ],
+                  },
+                  {
+                    text: '02 Início rápido',
+                    collapsed: true,
+                    items: [
+                      { text: 'Início rápido com SCS0009', link: '/pt-br/tutorials/robot-arms/amazing-hand/02-quick-start/scs0009' },
+                      { text: 'Início rápido com PWM', link: '/pt-br/tutorials/robot-arms/amazing-hand/02-quick-start/pwm' },
+                    ],
+                  },
+                  {
+                    text: '03 Controle web',
+                    collapsed: true,
+                    items: [
+                      { text: 'Controle web AmazingHand', link: '/pt-br/tutorials/robot-arms/amazing-hand/03-web-control/README' },
+                      { text: 'Controle web SCS0009', link: '/pt-br/tutorials/robot-arms/amazing-hand/03-web-control/scs0009' },
+                      { text: 'Controle web PWM', link: '/pt-br/tutorials/robot-arms/amazing-hand/03-web-control/pwm' },
+                    ],
+                  },
+                  {
+                    text: '04 Software de desktop',
+                    collapsed: true,
+                    items: [
+                      { text: 'Aplicativo de desktop SCS0009 (GUI e CLI)', link: '/pt-br/tutorials/robot-arms/amazing-hand/04-desktop/scs0009' },
+                      { text: 'Aplicativo de desktop PWM (GUI Tkinter)', link: '/pt-br/tutorials/robot-arms/amazing-hand/04-desktop/pwm' },
+                    ],
+                  },
+                  {
+                    text: '05 Rastreamento de mãos',
+                    collapsed: true,
+                    items: [
+                      { text: 'Rastreamento de mãos SCS0009 (Demo oficial dora)', link: '/pt-br/tutorials/robot-arms/amazing-hand/05-hand-tracking/scs0009' },
+                      { text: 'Rastreamento de mãos PWM (MediaPipe embutido na GUI)', link: '/pt-br/tutorials/robot-arms/amazing-hand/05-hand-tracking/pwm' },
+                    ],
+                  },
+                  {
+                    text: '06 Ajuste e calibração de servos',
+                    collapsed: true,
+                    items: [
+                      { text: 'Depuração e calibração de servos SCS0009', link: '/pt-br/tutorials/robot-arms/amazing-hand/06-servo-tuning/scs0009' },
+                      { text: 'Protocolo, comandos e calibração dos servos PWM', link: '/pt-br/tutorials/robot-arms/amazing-hand/06-servo-tuning/pwm' },
+                    ],
+                  },
+                  {
+                    text: '07 Arduino e exemplos',
+                    collapsed: true,
+                    items: [
+                      { text: 'Tutorial de uso do Arduino Nano', link: '/pt-br/tutorials/robot-arms/amazing-hand/07-arduino/arduino-nano' },
+                      { text: 'Exemplos em Arduino e Python', link: '/pt-br/tutorials/robot-arms/amazing-hand/07-arduino/examples' },
+                    ],
+                  },
+                  {
+                    text: '08 Perguntas frequentes',
+                    collapsed: true,
+                    items: [
+                      { text: 'Perguntas frequentes (FAQ)', link: '/pt-br/tutorials/robot-arms/amazing-hand/08-faq/faq' },
+                    ],
+                  },
                 ],
               },
               {
@@ -8469,27 +9009,81 @@ export default defineConfig({
                 link: '/pt-pt/tutorials/robot-arms/amazing-hand/README',
                 collapsed: true,
                 items: [
-                  { text: 'Documentação do produto AmazingHand', link: '/pt-pt/tutorials/robot-arms/amazing-hand/00-product/product-info' },
-                  { text: 'Comparação e seleção entre as versões SCS0009 e PWM', link: '/pt-pt/tutorials/robot-arms/amazing-hand/00-product/version-comparison' },
-                  { text: 'Downloads e recursos', link: '/pt-pt/tutorials/robot-arms/amazing-hand/00-product/downloads' },
-                  { text: 'Visão geral do hardware: estrutura, CAD e montagem', link: '/pt-pt/tutorials/robot-arms/amazing-hand/01-hardware/overview' },
-                  { text: 'Cablagem, ID e alimentação SCS0009', link: '/pt-pt/tutorials/robot-arms/amazing-hand/01-hardware/scs0009' },
-                  { text: 'Cablagem, GPIO e alimentação PWM', link: '/pt-pt/tutorials/robot-arms/amazing-hand/01-hardware/pwm' },
-                  { text: 'Instalação do kit de câmara ambiente', link: '/pt-pt/tutorials/robot-arms/amazing-hand/01-hardware/camera-kit' },
-                  { text: 'Início rápido SCS0009', link: '/pt-pt/tutorials/robot-arms/amazing-hand/02-quick-start/scs0009' },
-                  { text: 'Início rápido PWM', link: '/pt-pt/tutorials/robot-arms/amazing-hand/02-quick-start/pwm' },
-                  { text: 'Controlo web do AmazingHand', link: '/pt-pt/tutorials/robot-arms/amazing-hand/03-web-control/README' },
-                  { text: 'Controlo web SCS0009', link: '/pt-pt/tutorials/robot-arms/amazing-hand/03-web-control/scs0009' },
-                  { text: 'Controlo web PWM', link: '/pt-pt/tutorials/robot-arms/amazing-hand/03-web-control/pwm' },
-                  { text: 'Aplicação de desktop SCS0009 (GUI e CLI)', link: '/pt-pt/tutorials/robot-arms/amazing-hand/04-desktop/scs0009' },
-                  { text: 'Aplicação de desktop PWM (GUI Tkinter)', link: '/pt-pt/tutorials/robot-arms/amazing-hand/04-desktop/pwm' },
-                  { text: 'Seguimento de mãos SCS0009 (Demo oficial dora)', link: '/pt-pt/tutorials/robot-arms/amazing-hand/05-hand-tracking/scs0009' },
-                  { text: 'Seguimento de mãos PWM (MediaPipe integrado na GUI)', link: '/pt-pt/tutorials/robot-arms/amazing-hand/05-hand-tracking/pwm' },
-                  { text: 'Depuração e calibração dos servos SCS0009', link: '/pt-pt/tutorials/robot-arms/amazing-hand/06-servo-tuning/scs0009' },
-                  { text: 'Protocolo, comandos e calibração dos servos PWM', link: '/pt-pt/tutorials/robot-arms/amazing-hand/06-servo-tuning/pwm' },
-                  { text: 'Tutorial de utilização do Arduino Nano', link: '/pt-pt/tutorials/robot-arms/amazing-hand/07-arduino/arduino-nano' },
-                  { text: 'Exemplos Arduino e Python', link: '/pt-pt/tutorials/robot-arms/amazing-hand/07-arduino/examples' },
-                  { text: 'Perguntas frequentes (FAQ)', link: '/pt-pt/tutorials/robot-arms/amazing-hand/08-faq/faq' },
+                  {
+                    text: '00 Informações do produto',
+                    collapsed: true,
+                    items: [
+                      { text: 'Documentação do produto AmazingHand', link: '/pt-pt/tutorials/robot-arms/amazing-hand/00-product/product-info' },
+                      { text: 'Comparação e seleção entre as versões SCS0009 e PWM', link: '/pt-pt/tutorials/robot-arms/amazing-hand/00-product/version-comparison' },
+                      { text: 'Downloads e recursos', link: '/pt-pt/tutorials/robot-arms/amazing-hand/00-product/downloads' },
+                    ],
+                  },
+                  {
+                    text: '01 Hardware e cablagem',
+                    collapsed: true,
+                    items: [
+                      { text: 'Visão geral do hardware: estrutura, CAD e montagem', link: '/pt-pt/tutorials/robot-arms/amazing-hand/01-hardware/overview' },
+                      { text: 'Cablagem, ID e alimentação SCS0009', link: '/pt-pt/tutorials/robot-arms/amazing-hand/01-hardware/scs0009' },
+                      { text: 'Cablagem, GPIO e alimentação PWM', link: '/pt-pt/tutorials/robot-arms/amazing-hand/01-hardware/pwm' },
+                      { text: 'Instalação do kit de câmara ambiente', link: '/pt-pt/tutorials/robot-arms/amazing-hand/01-hardware/camera-kit' },
+                    ],
+                  },
+                  {
+                    text: '02 Início rápido',
+                    collapsed: true,
+                    items: [
+                      { text: 'Início rápido SCS0009', link: '/pt-pt/tutorials/robot-arms/amazing-hand/02-quick-start/scs0009' },
+                      { text: 'Início rápido PWM', link: '/pt-pt/tutorials/robot-arms/amazing-hand/02-quick-start/pwm' },
+                    ],
+                  },
+                  {
+                    text: '03 Controlo web',
+                    collapsed: true,
+                    items: [
+                      { text: 'Controlo web do AmazingHand', link: '/pt-pt/tutorials/robot-arms/amazing-hand/03-web-control/README' },
+                      { text: 'Controlo web SCS0009', link: '/pt-pt/tutorials/robot-arms/amazing-hand/03-web-control/scs0009' },
+                      { text: 'Controlo web PWM', link: '/pt-pt/tutorials/robot-arms/amazing-hand/03-web-control/pwm' },
+                    ],
+                  },
+                  {
+                    text: '04 Software de ambiente de trabalho',
+                    collapsed: true,
+                    items: [
+                      { text: 'Aplicação de desktop SCS0009 (GUI e CLI)', link: '/pt-pt/tutorials/robot-arms/amazing-hand/04-desktop/scs0009' },
+                      { text: 'Aplicação de desktop PWM (GUI Tkinter)', link: '/pt-pt/tutorials/robot-arms/amazing-hand/04-desktop/pwm' },
+                    ],
+                  },
+                  {
+                    text: '05 Rastreamento de mãos',
+                    collapsed: true,
+                    items: [
+                      { text: 'Seguimento de mãos SCS0009 (Demo oficial dora)', link: '/pt-pt/tutorials/robot-arms/amazing-hand/05-hand-tracking/scs0009' },
+                      { text: 'Seguimento de mãos PWM (MediaPipe integrado na GUI)', link: '/pt-pt/tutorials/robot-arms/amazing-hand/05-hand-tracking/pwm' },
+                    ],
+                  },
+                  {
+                    text: '06 Ajuste e calibração de servos',
+                    collapsed: true,
+                    items: [
+                      { text: 'Depuração e calibração dos servos SCS0009', link: '/pt-pt/tutorials/robot-arms/amazing-hand/06-servo-tuning/scs0009' },
+                      { text: 'Protocolo, comandos e calibração dos servos PWM', link: '/pt-pt/tutorials/robot-arms/amazing-hand/06-servo-tuning/pwm' },
+                    ],
+                  },
+                  {
+                    text: '07 Arduino e exemplos',
+                    collapsed: true,
+                    items: [
+                      { text: 'Tutorial de utilização do Arduino Nano', link: '/pt-pt/tutorials/robot-arms/amazing-hand/07-arduino/arduino-nano' },
+                      { text: 'Exemplos Arduino e Python', link: '/pt-pt/tutorials/robot-arms/amazing-hand/07-arduino/examples' },
+                    ],
+                  },
+                  {
+                    text: '08 Perguntas frequentes',
+                    collapsed: true,
+                    items: [
+                      { text: 'Perguntas frequentes (FAQ)', link: '/pt-pt/tutorials/robot-arms/amazing-hand/08-faq/faq' },
+                    ],
+                  },
                 ],
               },
               {
