@@ -34,6 +34,25 @@ const STORE_LABEL: Record<string, string> = {
 }
 const storeUrl = computed(() => STORE[lang.value] || STORE.en)
 const storeLabel = computed(() => STORE_LABEL[lang.value] || STORE_LABEL.en)
+
+// 淘宝店铺:中文版走国内店,其余语种走海外版(同一店铺 shopId=356616159)
+const TAOBAO_DOMESTIC = 'https://juxitechnology.taobao.com/'
+const TAOBAO_WORLD = 'https://juxitechnology.world.taobao.com/'
+const TAOBAO_LABEL: Record<string, string> = {
+  'zh-CN': '淘宝店铺',
+  'zh-HK': '淘寶店鋪',
+  ja: 'タオバオ',
+  ko: '타오바오',
+  de: 'Taobao',
+  fr: 'Taobao',
+  es: 'Taobao',
+  it: 'Taobao',
+  'pt-BR': 'Taobao',
+  'pt-PT': 'Taobao',
+  en: 'Taobao',
+}
+const taobaoUrl = computed(() => (lang.value === 'zh-CN' || lang.value === 'zh-HK' ? TAOBAO_DOMESTIC : TAOBAO_WORLD))
+const taobaoLabel = computed(() => TAOBAO_LABEL[lang.value] || TAOBAO_LABEL.en)
 </script>
 
 <template>
@@ -50,6 +69,9 @@ const storeLabel = computed(() => STORE_LABEL[lang.value] || STORE_LABEL.en)
     <a class="nav-store" :href="storeUrl" target="_blank" rel="noopener">
       <span class="store-emoji" aria-hidden="true">🛍️</span>
       <span class="store-text">{{ storeLabel }}</span>
+    </a>
+    <a class="nav-store nav-taobao" :href="taobaoUrl" target="_blank" rel="noopener">
+      <span class="store-text">{{ taobaoLabel }}</span>
     </a>
   </div>
 </template>

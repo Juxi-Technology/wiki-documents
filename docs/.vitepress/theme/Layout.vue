@@ -135,6 +135,17 @@ const is404 = computed(() => page.value.isNotFound === true || /404/.test(page.v
   line-height: 1;
 }
 
+/* 淘宝店铺:橙色描边,与官方商城并排区分 */
+.nav-taobao {
+  color: #ff5000;
+  border-color: rgba(255, 80, 0, 0.4);
+  padding: 4px 8px;
+}
+
+.nav-taobao:hover {
+  border-color: #ff5000;
+}
+
 /* 960-1279:菜单保持平铺,但收紧各元素间距(菜单项/图标组/搜索),
    使最长的语言(法语/英语)在 960 起也能容纳 */
 @media (min-width: 960px) and (max-width: 1279px) {
@@ -146,6 +157,10 @@ const is404 = computed(() => page.value.isNotFound === true || /404/.test(page.v
   .nav-icons {
     gap: 2px;
     margin: 0 2px 0 4px;
+  }
+
+  .nav-taobao {
+    padding: 4px 6px;
   }
 
   .nav-right {
