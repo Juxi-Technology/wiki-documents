@@ -450,3 +450,9 @@ html .hero-btn.secondary:hover {
     transition: none;
   }
 }
+
+/* ---- 正文链接不使用下划线(教程/文档/首页统一),悬停也不加下划线 ---- */
+.vp-doc a,
+.vp-doc a:hover {
+  text-decoration: none;
+}

@@ -4,6 +4,7 @@ description: "Juxi Technology 위키: SO-ARM101·AmazingHand·XLeRobot·ESP32-S3
 aside: false
 sidebar: false
 outline: false
+lastUpdated: false
 ---
 
 <div class="hero-section">
@@ -50,6 +51,10 @@ outline: false
   <a :href="withBase('/ko/products/xlerobot')" class="home-category-card">
     <img :src="withBase('/images/categories/XLeRobot.png')" alt="XLeRobot 이동 로봇">
     <span>XLeRobot 이동 로봇</span>
+  </a>
+  <a :href="withBase('/ko/tutorials/robot-arms/sr-support/')" class="home-category-card">
+    <img :src="withBase('/images/categories/SR-Support.png')" alt="SR-Support 자기 기립 장치">
+    <span>SR-Support 자기 기립 장치</span>
   </a>
   <a :href="withBase('/ko/products/esp32-s3-wifi-module')" class="home-category-card">
     <img :src="withBase('/images/categories/ESP32-NanoCam.png')" alt="ESP32-NanoCam 영상 전송">

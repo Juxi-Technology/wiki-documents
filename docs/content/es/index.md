@@ -4,6 +4,7 @@ description: "Centro de tutoriales y documentación de Juxi Technology: Kit de d
 aside: false
 sidebar: false
 outline: false
+lastUpdated: false
 ---
 
 <div class="hero-section">
@@ -50,6 +51,10 @@ outline: false
   <a :href="withBase('/es/products/xlerobot')" class="home-category-card">
     <img :src="withBase('/images/categories/XLeRobot.png')" alt="Robot móvil XLeRobot">
     <span>Robot móvil XLeRobot</span>
+  </a>
+  <a :href="withBase('/es/tutorials/robot-arms/sr-support/')" class="home-category-card">
+    <img :src="withBase('/images/categories/SR-Support.png')" alt="Dispositivo auto-enderezante SR-Support">
+    <span>Dispositivo auto-enderezante SR-Support</span>
   </a>
   <a :href="withBase('/es/products/esp32-s3-wifi-module')" class="home-category-card">
     <img :src="withBase('/images/categories/ESP32-NanoCam.png')" alt="Vídeo WiFi ESP32-NanoCam">

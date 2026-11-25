@@ -4,6 +4,7 @@ description: "Juxi Technology 公式 Wiki。SO-ARM101 などロボット製品�
 aside: false
 sidebar: false
 outline: false
+lastUpdated: false
 ---
 
 <div class="hero-section">
@@ -50,6 +51,10 @@ outline: false
   <a :href="withBase('/ja/products/xlerobot')" class="home-category-card">
     <img :src="withBase('/images/categories/XLeRobot.png')" alt="XLeRobot 移動ロボット">
     <span>XLeRobot 移動ロボット</span>
+  </a>
+  <a :href="withBase('/ja/tutorials/robot-arms/sr-support/')" class="home-category-card">
+    <img :src="withBase('/images/categories/SR-Support.png')" alt="SR-Support 自己起立装置">
+    <span>SR-Support 自己起立装置</span>
   </a>
   <a :href="withBase('/ja/products/esp32-s3-wifi-module')" class="home-category-card">
     <img :src="withBase('/images/categories/ESP32-NanoCam.png')" alt="ESP32-NanoCam 動画転送モジュール">

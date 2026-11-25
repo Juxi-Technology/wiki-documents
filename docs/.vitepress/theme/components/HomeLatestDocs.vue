@@ -23,17 +23,17 @@ const T: Record<string, { title: string; filterLabel: string; all: string; robot
 
 // 卡片标题(各语,与既有首页卡片一致)
 const TITLES: Record<string, string[]> = {
-  'zh-CN': ['Jetson AGX Orin 教程', 'Jetson Orin Nano Super 教程', 'LeRobot 完整课程', 'AmazingHand灵巧手', 'XLeRobot-使用教程', 'IMU惯导模块', 'GPS北斗定位', 'ESP32-NanoCam图传', 'AI语音交互模块', 'CSI摄像头'],
-  en: ['Jetson AGX Orin Tutorials', 'Jetson Orin Nano Super Tutorials', 'LeRobot Full Course', 'AmazingHand Dexterous Hand', 'XLeRobot-Tutorial', 'IMU Inertial Navigation Module', 'GPS & BeiDou Positioning Module', 'ESP32-NanoCam Video Module', 'AI Voice Interaction Module', 'IMX219 CSI Camera'],
-  'zh-HK': ['Jetson AGX Orin 教程', 'Jetson Orin Nano Super 教程', 'LeRobot 完整課程', 'AmazingHand-界面控制教程', 'XLeRobot-使用教程', 'IMU慣性導航模組', 'GPS北斗定位模組', 'ESP32-NanoCam圖傳模組', 'AI語音交互模組', 'CSI攝像頭使用教程'],
-  ja: ['Jetson AGX Orin チュートリアル', 'Jetson Orin Nano Super チュートリアル', 'LeRobot完全コース', 'AmazingHand 器用ハンド', 'XLeRobot 使用チュートリアル', 'IMU 慣性ナビゲーションモジュール', 'GPS 北斗測位モジュール', 'ESP32-NanoCam 動画転送モジュール', 'AI 音声対話モジュール', 'IMX219 CSI カメラ'],
-  ko: ['Jetson AGX Orin 튜토리얼', 'Jetson Orin Nano Super 튜토리얼', 'LeRobot 전체 코스', 'AmazingHand 정교 손', 'XLeRobot 튜토리얼', 'IMU 관성 내비게이션 모듈', 'GPS 北斗 측위 모듈', 'ESP32-NanoCam 영상 전송', 'AI 음성 인터랙션 모듈', 'CSI 카메라'],
-  de: ['Jetson AGX Orin Tutorials', 'Jetson Orin Nano Super Tutorials', 'LeRobot-Komplettkurs', 'AmazingHand Greifhand', 'XLeRobot-Tutorial', 'IMU-Trägheitsnavigationsmodul', 'GPS- & BeiDou-GNSS-Positionsmodul', 'ESP32-NanoCam Videomodul', 'AI-Sprachinteraktionsmodul', 'IMX219 CSI-Kamera'],
-  fr: ['Tutoriels Jetson AGX Orin', 'Tutoriels Jetson Orin Nano Super', 'Cours LeRobot', 'Main dexterous AmazingHand', 'Tutoriel XLeRobot', 'Navigation inertielle IMU', 'Module GPS & Beidou', 'Transmission vidéo ESP32-NanoCam', 'Module d\'interaction vocale IA', 'Tutoriels caméra CSI'],
-  es: ['Tutoriales de Jetson AGX Orin', 'Tutoriales de Jetson Orin Nano Super', 'Curso de LeRobot', 'Control de interfaz AmazingHand', 'Tutorial XLeRobot', 'Módulo de navegación inercial IMU', 'Posicionamiento GPS y BeiDou', 'Módulo de vídeo ESP32-NanoCam', 'Módulo de interacción de voz IA', 'Cámara CSI IMX219 79°'],
-  it: ['Tutorial Jetson AGX Orin', 'Tutorial Jetson Orin Nano Super', 'Corso LeRobot', 'Mano robotica AmazingHand', 'Tutorial XLeRobot', 'Navigazione inerziale IMU', 'Modulo GPS e Beidou', 'Modulo video ESP32-NanoCam', 'Modulo di interazione vocale IA', 'Fotocamera CSI IMX219'],
-  'pt-BR': ['Tutoriais do Jetson AGX Orin', 'Tutoriais do Jetson Orin Nano Super', 'Curso LeRobot', 'Mão hábil AmazingHand', 'Tutorial XLeRobot', 'Módulo de navegação inercial IMU', 'Posicionamento GPS e BeiDou', 'Módulo de vídeo ESP32-NanoCam', 'Módulo de interação por voz IA', 'Câmera CSI IMX219 79°'],
-  'pt-PT': ['Tutoriais do Jetson AGX Orin', 'Tutoriais do Jetson Orin Nano Super', 'Curso de LeRobot', 'AmazingHand Mão Hábil', 'Tutorial XLeRobot', 'Módulo de navegação inercial IMU', 'Módulo GNSS GPS e BeiDou', 'Módulo de Vídeo ESP32-NanoCam', 'Módulo de interação por voz IA', 'Câmara CSI IMX219'],
+  'zh-CN': ['Jetson AGX Orin 教程', 'Jetson Orin Nano Super 教程', 'LeRobot 完整课程', 'AmazingHand灵巧手', 'XLeRobot-使用教程', 'IMU惯导模块', 'GPS北斗定位', 'ESP32-NanoCam图传', 'AI语音交互模块', 'CSI摄像头', 'SR-Support 自扶正装置'],
+  en: ['Jetson AGX Orin Tutorials', 'Jetson Orin Nano Super Tutorials', 'LeRobot Full Course', 'AmazingHand Dexterous Hand', 'XLeRobot-Tutorial', 'IMU Inertial Navigation Module', 'GPS & BeiDou Positioning Module', 'ESP32-NanoCam Video Module', 'AI Voice Interaction Module', 'IMX219 CSI Camera', 'SR-Support Self-Righting Device'],
+  'zh-HK': ['Jetson AGX Orin 教程', 'Jetson Orin Nano Super 教程', 'LeRobot 完整課程', 'AmazingHand-界面控制教程', 'XLeRobot-使用教程', 'IMU慣性導航模組', 'GPS北斗定位模組', 'ESP32-NanoCam圖傳模組', 'AI語音交互模組', 'CSI攝像頭使用教程', 'SR-Support 自扶正裝置'],
+  ja: ['Jetson AGX Orin チュートリアル', 'Jetson Orin Nano Super チュートリアル', 'LeRobot完全コース', 'AmazingHand 器用ハンド', 'XLeRobot 使用チュートリアル', 'IMU 慣性ナビゲーションモジュール', 'GPS 北斗測位モジュール', 'ESP32-NanoCam 動画転送モジュール', 'AI 音声対話モジュール', 'IMX219 CSI カメラ', 'SR-Support 自己起立装置'],
+  ko: ['Jetson AGX Orin 튜토리얼', 'Jetson Orin Nano Super 튜토리얼', 'LeRobot 전체 코스', 'AmazingHand 정교 손', 'XLeRobot 튜토리얼', 'IMU 관성 내비게이션 모듈', 'GPS 北斗 측위 모듈', 'ESP32-NanoCam 영상 전송', 'AI 음성 인터랙션 모듈', 'CSI 카메라', 'SR-Support 자기 기립 장치'],
+  de: ['Jetson AGX Orin Tutorials', 'Jetson Orin Nano Super Tutorials', 'LeRobot-Komplettkurs', 'AmazingHand Greifhand', 'XLeRobot-Tutorial', 'IMU-Trägheitsnavigationsmodul', 'GPS- & BeiDou-GNSS-Positionsmodul', 'ESP32-NanoCam Videomodul', 'AI-Sprachinteraktionsmodul', 'IMX219 CSI-Kamera', 'SR-Support Selbstaufrichtungsvorrichtung'],
+  fr: ['Tutoriels Jetson AGX Orin', 'Tutoriels Jetson Orin Nano Super', 'Cours LeRobot', 'Main dexterous AmazingHand', 'Tutoriel XLeRobot', 'Navigation inertielle IMU', 'Module GPS & Beidou', 'Transmission vidéo ESP32-NanoCam', 'Module d\'interaction vocale IA', 'Tutoriels caméra CSI', 'Dispositif auto-redresseur SR-Support'],
+  es: ['Tutoriales de Jetson AGX Orin', 'Tutoriales de Jetson Orin Nano Super', 'Curso de LeRobot', 'Control de interfaz AmazingHand', 'Tutorial XLeRobot', 'Módulo de navegación inercial IMU', 'Posicionamiento GPS y BeiDou', 'Módulo de vídeo ESP32-NanoCam', 'Módulo de interacción de voz IA', 'Cámara CSI IMX219 79°', 'Dispositivo auto-enderezante SR-Support'],
+  it: ['Tutorial Jetson AGX Orin', 'Tutorial Jetson Orin Nano Super', 'Corso LeRobot', 'Mano robotica AmazingHand', 'Tutorial XLeRobot', 'Navigazione inerziale IMU', 'Modulo GPS e Beidou', 'Modulo video ESP32-NanoCam', 'Modulo di interazione vocale IA', 'Fotocamera CSI IMX219', 'Dispositivo auto-raddrizzante SR-Support'],
+  'pt-BR': ['Tutoriais do Jetson AGX Orin', 'Tutoriais do Jetson Orin Nano Super', 'Curso LeRobot', 'Mão hábil AmazingHand', 'Tutorial XLeRobot', 'Módulo de navegação inercial IMU', 'Posicionamento GPS e BeiDou', 'Módulo de vídeo ESP32-NanoCam', 'Módulo de interação por voz IA', 'Câmera CSI IMX219 79°', 'Dispositivo de auto-endireitamento SR-Support'],
+  'pt-PT': ['Tutoriais do Jetson AGX Orin', 'Tutoriais do Jetson Orin Nano Super', 'Curso de LeRobot', 'AmazingHand Mão Hábil', 'Tutorial XLeRobot', 'Módulo de navegação inercial IMU', 'Módulo GNSS GPS e BeiDou', 'Módulo de Vídeo ESP32-NanoCam', 'Módulo de interação por voz IA', 'Câmara CSI IMX219', 'Dispositivo auto-endireitador SR-Support'],
 }
 
 // 卡片:相对路径(语言前缀由组件拼接)、分类(与产品页 category 枚举对齐)、图片
@@ -41,13 +41,14 @@ const CARDS = [
   { href: 'tutorials/jetson-agx-orin/quick-start', cat: 'kit', img: 'Jetson-AGX-Orin.png' },
   { href: 'tutorials/jetson-orin-nano/quick-start', cat: 'kit', img: 'Jetson-Orin-Nano.png' },
   { href: 'tutorials/robot-arms/so-arm101/lerobot/', cat: 'robot', img: 'SO-ARM101.png' },
-  { href: 'tutorials/robot-arms/amazing-hand/AmazingHand-Interface-Control', cat: 'robot', img: 'AmazingHand.png' },
+  { href: 'tutorials/robot-arms/amazing-hand/README', cat: 'robot', img: 'AmazingHand.png' },
   { href: 'tutorials/robot-arms/xlerobot/', cat: 'robot', img: 'XLeRobot.png' },
   { href: 'tutorials/sensors/imu/', cat: 'sensor', img: 'IMU.png' },
   { href: 'tutorials/sensors/gps/GPS-Module-Info', cat: 'sensor', img: 'GPS.png' },
   { href: 'tutorials/accessories/esp32-nanocam/Ch02-Quick-Start', cat: 'accessory', img: 'ESP32-NanoCam.png' },
   { href: 'tutorials/accessories/ai-voice-module/Quick-Start', cat: 'accessory', img: 'AI-Voice-Module.png' },
   { href: 'tutorials/accessories/csi-camera/01-Jetson-CSI-Setup', cat: 'vision', img: 'CSI-Camera.png' },
+  { href: 'tutorials/robot-arms/sr-support/', cat: 'robot', img: 'SR-Support.png' },
 ]
 
 const t = computed(() => T[lang.value] || T.en)
@@ -131,17 +132,49 @@ const filtered = computed(() =>
   font-weight: 600;
 }
 
+.card {
+  text-align: left;
+}
+
+/* 标题做成按钮(左对齐),与卡片图片区分离 */
+.card-title {
+  display: inline-block;
+  margin: 14px 16px 0;
+  padding: 6px 12px;
+  border: 1px solid var(--vp-c-gutter);
+  border-radius: 8px;
+  background: var(--vp-c-bg);
+  color: var(--vp-c-text-1);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.card:hover .card-title {
+  border-color: var(--vp-c-brand);
+  color: var(--vp-c-brand);
+}
+
 .card-meta {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 8px;
+  margin: 10px 16px 16px;
   font-size: 12px;
   color: var(--vp-c-text-3);
 }
 
+/* 分类做成高对比小胶囊按钮 */
 .card-cat {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--vp-c-brand-soft);
   color: var(--vp-c-brand);
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .card-date {

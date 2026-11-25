@@ -4,6 +4,7 @@ description: "Juxi Technology Produkt-Tutorials und Dokumentationszentrum: SO-AR
 aside: false
 sidebar: false
 outline: false
+lastUpdated: false
 ---
 
 <div class="hero-section">
@@ -50,6 +51,10 @@ outline: false
   <a :href="withBase('/de/products/xlerobot')" class="home-category-card">
     <img :src="withBase('/images/categories/XLeRobot.png')" alt="XLeRobot Mobilroboter">
     <span>XLeRobot Mobilroboter</span>
+  </a>
+  <a :href="withBase('/de/tutorials/robot-arms/sr-support/')" class="home-category-card">
+    <img :src="withBase('/images/categories/SR-Support.png')" alt="SR-Support Selbstaufrichtungsvorrichtung">
+    <span>SR-Support Selbstaufrichtungsvorrichtung</span>
   </a>
   <a :href="withBase('/de/products/esp32-s3-wifi-module')" class="home-category-card">
     <img :src="withBase('/images/categories/ESP32-NanoCam.png')" alt="ESP32-NanoCam Videomodul">

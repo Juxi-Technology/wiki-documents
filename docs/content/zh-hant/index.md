@@ -4,6 +4,7 @@ description: "鉅犀科技官方文檔中心:彙整 SO-ARM101 機械臂、Amazin
 aside: false
 sidebar: false
 outline: false
+lastUpdated: false
 ---
 
 <div class="hero-section">
@@ -51,6 +52,10 @@ outline: false
   <a :href="withBase('/zh-hant/products/xlerobot')" class="home-category-card">
     <img :src="withBase('/images/categories/XLeRobot.png')" alt="XLeRobot 移動機器人">
     <span>XLeRobot 移動機器人</span>
+  </a>
+  <a :href="withBase('/zh-hant/tutorials/robot-arms/sr-support/')" class="home-category-card">
+    <img :src="withBase('/images/categories/SR-Support.png')" alt="SR-Support 自扶正裝置">
+    <span>SR-Support 自扶正裝置</span>
   </a>
   <a :href="withBase('/zh-hant/products/esp32-s3-wifi-module')" class="home-category-card">
     <img :src="withBase('/images/categories/ESP32-NanoCam.png')" alt="ESP32-NanoCam 圖傳">

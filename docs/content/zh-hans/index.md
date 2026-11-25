@@ -4,6 +4,7 @@ description: "钜犀科技官方 Wiki,机器人与 AI 硬件的开放文档平�
 aside: false
 sidebar: false
 outline: false
+lastUpdated: false
 ---
 
 <div class="hero-section">
@@ -51,6 +52,10 @@ outline: false
   <a :href="withBase('/zh-hans/products/xlerobot')" class="home-category-card">
     <img :src="withBase('/images/categories/XLeRobot.png')" alt="XLeRobot 移动机器人">
     <span>XLeRobot 移动机器人</span>
+  </a>
+  <a :href="withBase('/zh-hans/tutorials/robot-arms/sr-support/')" class="home-category-card">
+    <img :src="withBase('/images/categories/SR-Support.png')" alt="SR-Support 自扶正装置">
+    <span>SR-Support 自扶正装置</span>
   </a>
   <a :href="withBase('/zh-hans/products/esp32-s3-wifi-module')" class="home-category-card">
     <img :src="withBase('/images/categories/ESP32-NanoCam.png')" alt="ESP32-NanoCam 图传">

@@ -4,6 +4,7 @@ description: "Página inicial do Wiki da Juxi Technology: tutoriais, documentaç
 aside: false
 sidebar: false
 outline: false
+lastUpdated: false
 ---
 
 <div class="hero-section">
@@ -50,6 +51,10 @@ outline: false
   <a :href="withBase('/pt-pt/products/xlerobot')" class="home-category-card">
     <img :src="withBase('/images/categories/XLeRobot.png')" alt="XLeRobot Robô Móvel">
     <span>XLeRobot Robô Móvel</span>
+  </a>
+  <a :href="withBase('/pt-pt/tutorials/robot-arms/sr-support/')" class="home-category-card">
+    <img :src="withBase('/images/categories/SR-Support.png')" alt="Dispositivo auto-endireitador SR-Support">
+    <span>Dispositivo auto-endireitador SR-Support</span>
   </a>
   <a :href="withBase('/pt-pt/products/esp32-s3-wifi-module')" class="home-category-card">
     <img :src="withBase('/images/categories/ESP32-NanoCam.png')" alt="ESP32-NanoCam Vídeo WiFi">
