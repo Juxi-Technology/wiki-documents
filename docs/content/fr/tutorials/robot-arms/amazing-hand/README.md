@@ -6,6 +6,8 @@ version: both
 
 # Tutoriel de la main dextre AmazingHand
 
+<ServoSafetyNotice />
+
 AmazingHand est une main dextre humanoïde open source et imprimable en 3D : 4 doigts, 8 degrés de liberté, tous les actionneurs intégrés dans la main, environ 400 g. Deux architectures matérielles sont actuellement proposées ; la structure mécanique de la main est identique, seuls les servos, la carte de commande et le mode de communication diffèrent.
 
 ## Choisir d'abord la version

@@ -5,6 +5,8 @@ description: "Página inicial do tutorial do SO-ARM101: o que são inteligência
 
 # Tutoriais do Braço Robótico SO-ARM101
 
+<ServoSafetyNotice />
+
 ![image.png](../../../../../public/images/tutorials/robot-arms/so-arm101/so-arm101-index/d02-03.png)
 
 ## O que é a Inteligência Corporizada?

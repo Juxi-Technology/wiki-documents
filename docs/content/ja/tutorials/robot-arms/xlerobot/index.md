@@ -5,6 +5,8 @@ description: "XLeRobot 双腕移動ロボットのチュートリアル:環境�
 
 # XLeRobot チュートリアル
 
+<ServoSafetyNotice />
+
 使用チュートリアルhttps://xlerobot.readthedocs.io/zh-cn/latest/software/index.html
 
 ## チュートリアル一覧

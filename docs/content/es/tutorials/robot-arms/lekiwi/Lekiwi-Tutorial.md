@@ -5,6 +5,8 @@ description: "Guía completa del robot móvil Lekiwi basado en LeRobot: instalac
 
 # Tutorial de uso del robot móvil Lekiwi
 
+<ServoSafetyNotice />
+
 > **[Comprar en la tienda](https://www.juxitech.com/es/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
 
 El brazo líder negro utiliza un adaptador de alimentación de 5 V y 6 A, y el brazo seguidor blanco utiliza un adaptador de alimentación de 12 V y 5 A.

@@ -5,6 +5,8 @@ description: "SO-ARM101 教程首頁:從具身智慧與 LeRobot 講起,介紹機
 
 # SO-ARM101 機械臂教程總覽
 
+<ServoSafetyNotice />
+
 ![image.png](../../../../../public/images/tutorials/robot-arms/so-arm101/so-arm101-index/d02-03.png)
 
 ## 什麼是具身智慧？

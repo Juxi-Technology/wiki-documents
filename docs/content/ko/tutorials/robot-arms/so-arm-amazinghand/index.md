@@ -6,6 +6,8 @@ description: "SO-ARM101 팔로워 암과 AmazingHand 정교한 핸드를 LeRobot
 
 # SO-ARM101 + AmazingHand 사용 튜토리얼
 
+<ServoSafetyNotice />
+
 본 튜토리얼은 **SO-ARM101 팔로워 암 + AmazingHand 정교한 핸드**의 원격 조작, 데이터 수집, 학습 전 과정을 재현하기 위한 것입니다. LeRobot(공식 리포지토리 커스텀 버전)를 기반으로 합니다.
 
 튜토리얼은 **단계**별로 구성되어 있으며, 각 단계는 독립된 디렉터리로 되어 있고 내부는 운영체제에 따라 Windows와 Linux 두 문서로 나뉩니다. 사용하는 운영체제에 맞는 문서를 선택해 읽어 주세요.

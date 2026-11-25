@@ -5,6 +5,8 @@ description: "LeRobot ベースの Lekiwi 移動ロボットのセットアッ�
 
 # Lekiwi 移動ロボット使用チュートリアル
 
+<ServoSafetyNotice />
+
 > **[ストアで購入](https://www.juxitech.com/ja/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
 
 黒いリーダーアームは5V 6A電源アダプターを、白いフォロワーアームは12V 5A電源アダプターを使用します。

@@ -6,6 +6,8 @@ description: "本教程面向复现 SO-ARM101 从动臂 + AmazingHand 灵巧手 
 
 # SO-ARM101 + AmazingHand 使用教程
 
+<ServoSafetyNotice />
+
 本教程面向复现 **SO-ARM101 从动臂 + AmazingHand 灵巧手** 的遥操作、数据采集与训练全流程，基于 LeRobot（官方仓库定制版）。
 
 教程按**阶段**组织，每个阶段独立成目录，内部按操作系统拆分 Windows 与 Linux 两个文档。请根据你的操作系统选择对应文档阅读。

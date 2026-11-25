@@ -5,6 +5,8 @@ description: "XLeRobot-Tutorials: Umgebung einrichten, Dateien verteilen, Montag
 
 # XLeRobot-Tutorials
 
+<ServoSafetyNotice />
+
 Tutorial https://xlerobot.readthedocs.io/zh-cn/latest/software/index.html
 
 ## Tutorial-Liste

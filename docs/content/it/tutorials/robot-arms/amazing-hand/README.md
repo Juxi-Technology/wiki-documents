@@ -6,6 +6,8 @@ version: both
 
 # Tutorial della mano robotica AmazingHand
 
+<ServoSafetyNotice />
+
 AmazingHand è una mano robotica antropomorfa open source e stampabile in 3D: 4 dita, 8 gradi di libertà, tutti gli attuatori integrati nella mano, circa 400 g per l'intera mano. Sono attualmente disponibili due soluzioni hardware: la struttura della mano meccanica è identica, cambiano servo, scheda driver e metodo di comunicazione.
 
 ## Scegliere prima la versione

@@ -5,6 +5,8 @@ description: "Page d'accueil du tutoriel SO-ARM101 : ce que sont l'intelligence 
 
 # Tutoriels du bras robotique SO-ARM101
 
+<ServoSafetyNotice />
+
 ![image.png](../../../../../public/images/tutorials/robot-arms/so-arm101/so-arm101-index/d02-03.png)
 
 ## Qu'est-ce que l'intelligence incarnée ?

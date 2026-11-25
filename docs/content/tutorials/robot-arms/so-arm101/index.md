@@ -5,6 +5,8 @@ description: "Tutorial home for the SO-ARM101: what embodied intelligence and Le
 
 # SO-ARM101 Robotic Arm Tutorials
 
+<ServoSafetyNotice />
+
 ![image.png](../../../../public/images/tutorials/robot-arms/so-arm101/so-arm101-index/d02-03.png)
 
 ## What Is Embodied Intelligence?

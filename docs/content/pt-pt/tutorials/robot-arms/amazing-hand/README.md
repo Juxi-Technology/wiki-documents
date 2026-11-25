@@ -6,6 +6,8 @@ version: both
 
 # Tutoriais da mão robótica de destreza AmazingHand
 
+<ServoSafetyNotice />
+
 AmazingHand é uma mão robótica de destreza antropomórfica, de código aberto e imprimível em 3D: 4 dedos, 8 graus de liberdade, com todos os atuadores integrados na mão, pesando cerca de 400 g no total. Existem atualmente dois conjuntos de hardware; a estrutura mecânica é idêntica, mas os servos, as placas controladoras e o modo de comunicação são diferentes.
 
 ## Escolher primeiro a versão

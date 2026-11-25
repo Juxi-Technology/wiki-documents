@@ -6,6 +6,8 @@ version: both
 
 # AmazingHand-Dexterhand-Tutorial
 
+<ServoSafetyNotice />
+
 AmazingHand ist eine Open-Source-, 3D-druckbare humanoide Dexterhand: 4 Finger, 8 Freiheitsgrade, alle Antriebe sind in der Hand integriert, die gesamte Hand wiegt etwa 400 g. Derzeit gibt es zwei Hardware-Varianten; die mechanische Struktur der Hand ist identisch, aber Servos, Treiberplatine und Kommunikationsart unterscheiden sich.
 
 ## Zuerst die Version wählen

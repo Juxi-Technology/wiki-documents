@@ -5,6 +5,8 @@ description: "SO-ARM101 チュートリアルのトップページ:身体性知�
 
 # SO-ARM101 ロボットアームチュートリアル
 
+<ServoSafetyNotice />
+
 ![image.png](../../../../../public/images/tutorials/robot-arms/so-arm101/so-arm101-index/d02-03.png)
 
 ## 身体性知能とは何か？

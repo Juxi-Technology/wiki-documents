@@ -5,6 +5,8 @@ description: "O braço ativo preto usa um adaptador de energia de 5V 6A, enquant
 
 # Tutorial de Uso do Robô Móvel Lekiwi
 
+<ServoSafetyNotice />
+
 > **[Comprar na loja](https://www.juxitech.com/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
 
 O braço líder preto usa uma fonte de alimentação de 5V 6A, e o braço seguidor branco usa uma fonte de alimentação de 12V 5A.

@@ -5,6 +5,8 @@ description: "SO-ARM101 튜토리얼 홈: 구현 지능과 LeRobot 소개, 로�
 
 # SO-ARM101 로봇 암 튜토리얼
 
+<ServoSafetyNotice />
+
 ![image.png](../../../../../public/images/tutorials/robot-arms/so-arm101/so-arm101-index/d02-03.png)
 
 ## 체화 지능이란 무엇인가?

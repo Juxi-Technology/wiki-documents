@@ -5,6 +5,8 @@ description: "XLeRobot 双臂移动机器人教程:环境搭建(LeRobot + conda 
 
 # XLeRobot 教程
 
+<ServoSafetyNotice />
+
 使用教程https://xlerobot.readthedocs.io/zh-cn/latest/software/index.html
 
 ## 教程列表

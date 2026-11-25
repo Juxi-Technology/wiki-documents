@@ -6,6 +6,8 @@ description: "Visão geral do tutorial SO-ARM101 com a mão AmazingHand: configu
 
 # Tutorial de utilização do SO-ARM101 + AmazingHand
 
+<ServoSafetyNotice />
+
 Este tutorial aborda o fluxo completo de teleoperação, recolha de dados e treino para reproduzir o **braço seguidor SO-ARM101 + mão dextra AmazingHand**, com base no LeRobot (versão personalizada do repositório oficial).
 
 O tutorial está organizado por **etapas**, cada etapa num diretório próprio, com os documentos divididos por sistema operativo em Windows e Linux. Escolha o documento correspondente ao seu sistema operativo.

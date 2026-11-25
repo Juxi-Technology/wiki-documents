@@ -5,6 +5,8 @@ description: "SO-ARM101 教程首页:从具身智能与 LeRobot 讲起,介绍机
 
 # SO-ARM101 机械臂教程总览
 
+<ServoSafetyNotice />
+
 ![image.png](../../../../../public/images/tutorials/robot-arms/so-arm101/so-arm101-index/d02-03.png)
 
 ## 什么是具身智能？

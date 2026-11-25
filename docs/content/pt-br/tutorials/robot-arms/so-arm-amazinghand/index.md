@@ -6,6 +6,8 @@ description: "Tutorial do SO-ARM101 + AmazingHand da Juxi Technology — configu
 
 # Tutorial de uso do SO-ARM101 + AmazingHand
 
+<ServoSafetyNotice />
+
 Este tutorial aborda o fluxo completo de teleoperação, coleta de dados e treinamento para reproduzir o **braço seguidor SO-ARM101 + mão dextra AmazingHand**, com base no LeRobot (versão personalizada do repositório oficial).
 
 O tutorial é organizado por **etapas**, cada etapa em um diretório próprio, com os documentos divididos por sistema operacional em Windows e Linux. Escolha o documento correspondente ao seu sistema operacional para leitura.

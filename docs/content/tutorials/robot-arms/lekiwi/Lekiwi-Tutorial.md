@@ -5,6 +5,8 @@ description: "The black active arm uses a 5V 6A power adapter, while the white p
 
 # Lekiwi Tutorial
 
+<ServoSafetyNotice />
+
 > **[Buy in Store](https://www.juxitech.com/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
 
 The black leader arm uses a 5V 6A power adapter, and the white follower arm uses a 12V 5A power adapter.

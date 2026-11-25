@@ -5,6 +5,8 @@ description: "Lekiwi 开源移动机器人小车使用教程：基于 LeRobot �
 
 # Lekiwi 使用教程
 
+<ServoSafetyNotice />
+
 > **[ 淘宝店铺 ](https://juxitechnology.taobao.com)**
 
 黑色主动臂使用5V6A电源适配器，白色从动臂使用12V5A电源适配器

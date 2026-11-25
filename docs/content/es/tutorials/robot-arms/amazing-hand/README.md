@@ -6,6 +6,8 @@ version: both
 
 # Tutoriales de AmazingHand
 
+<ServoSafetyNotice />
+
 AmazingHand es una mano diestra humanoide de código abierto e imprimible en 3D: 4 dedos, 8 grados de libertad y todos los accionamientos integrados en la mano, con un peso total de unos 400 g. Actualmente se ofrecen dos soluciones de hardware; la estructura mecánica de la mano es idéntica, pero cambian los servos, la placa controladora y el método de comunicación.
 
 ## Elige primero la versión

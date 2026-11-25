@@ -5,6 +5,8 @@ description: "Tutoriais do XLeRobot: configuração, implementação de ficheiro
 
 # Tutoriais do XLeRobot
 
+<ServoSafetyNotice />
+
 Tutorial de utilização https://xlerobot.readthedocs.io/zh-cn/latest/software/index.html
 
 ## Lista de tutoriais

@@ -5,6 +5,8 @@ description: "Página de inicio del tutorial del SO-ARM101: qué son la intelige
 
 # Tutoriales del brazo robótico SO-ARM101
 
+<ServoSafetyNotice />
+
 ![image.png](../../../../../public/images/tutorials/robot-arms/so-arm101/so-arm101-index/d02-03.png)
 
 ## ¿Qué es la inteligencia encarnada?

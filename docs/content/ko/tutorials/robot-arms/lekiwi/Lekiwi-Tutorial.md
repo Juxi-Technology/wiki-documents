@@ -5,6 +5,8 @@ description: "LeRobot 기반 Lekiwi 이동 로봇의 설정, 모터 구성, 원�
 
 # Lekiwi 이동 로봇 사용 튜토리얼
 
+<ServoSafetyNotice />
+
 > **[스토어에서 구매](https://www.juxitech.com/ko/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
 
 검은색 리더 암은 5V 6A 전원 어댑터를 사용하고, 흰색 팔로워 암은 12V 5A 전원 어댑터를 사용합니다.

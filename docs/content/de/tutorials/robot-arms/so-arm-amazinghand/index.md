@@ -6,6 +6,8 @@ description: "Gesamtübersicht des SO-ARM101 und AmazingHand-Tutorials: Hardware
 
 # SO-ARM101 + AmazingHand Tutorial
 
+<ServoSafetyNotice />
+
 Dieses Tutorial dient der Reproduktion des gesamten Ablaufs aus Teleoperation, Datenerfassung und Training für den **SO-ARM101 Follower-Arm + die AmazingHand-Dexterous-Hand** und basiert auf LeRobot (angepasste Version des offiziellen Repositorys).
 
 Das Tutorial ist nach **Phasen** gegliedert; jede Phase bildet ein eigenes Verzeichnis und ist intern nach Betriebssystem in die beiden Dokumente Windows und Linux aufgeteilt. Bitte wählen Sie das zu Ihrem Betriebssystem passende Dokument zum Lesen.

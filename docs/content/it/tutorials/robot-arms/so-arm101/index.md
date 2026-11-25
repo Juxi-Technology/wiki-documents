@@ -5,6 +5,8 @@ description: "Pagina iniziale del tutorial SO-ARM101: cosa sono l'intelligenza i
 
 # Tutorial del braccio robotico SO-ARM101
 
+<ServoSafetyNotice />
+
 ![image.png](../../../../../public/images/tutorials/robot-arms/so-arm101/so-arm101-index/d02-03.png)
 
 ## Che cos'è l'intelligenza embodied?

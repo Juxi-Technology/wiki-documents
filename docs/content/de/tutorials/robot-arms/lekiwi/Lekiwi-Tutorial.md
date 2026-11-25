@@ -5,6 +5,8 @@ description: "Kompletter Leitfaden für den LeRobot-basierten Lekiwi-Mobilitäts
 
 # Lekiwi-Mobilitätsroboter – Bedienungstutorial
 
+<ServoSafetyNotice />
+
 > **[Im Shop kaufen](https://www.juxitech.com/de/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
 
 Der schwarze Leader-Arm verwendet ein 5-V-6-A-Netzteil, der weiße Follower-Arm ein 12-V-5-A-Netzteil.

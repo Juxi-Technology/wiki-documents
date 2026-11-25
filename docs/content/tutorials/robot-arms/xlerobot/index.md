@@ -5,6 +5,8 @@ description: "XLeRobot dual-arm mobile robot tutorials: environment setup, file 
 
 # XLeRobot Tutorials
 
+<ServoSafetyNotice />
+
 Tutorial https://xlerobot.readthedocs.io/zh-cn/latest/software/index.html
 
 ## Tutorial List

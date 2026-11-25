@@ -6,6 +6,8 @@ version: both
 
 # Tutoriais da mão dexterosa AmazingHand
 
+<ServoSafetyNotice />
+
 O AmazingHand é uma mão dexterosa antropomórfica de código aberto e imprimível em 3D: 4 dedos, 8 graus de liberdade, com todos os acionadores embutidos na mão e cerca de 400 g no total. Atualmente há duas opções de hardware; a estrutura da mão é a mesma, mas os servos, a placa driver e o método de comunicação são diferentes.
 
 ## Escolha a versão primeiro

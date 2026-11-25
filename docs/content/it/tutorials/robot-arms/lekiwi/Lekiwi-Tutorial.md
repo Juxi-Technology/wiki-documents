@@ -5,6 +5,8 @@ description: "Guida completa al robot mobile Lekiwi basato su LeRobot: setup, co
 
 # Tutorial d'uso del robot mobile Lekiwi
 
+<ServoSafetyNotice />
+
 > **[Acquista nel negozio](https://www.juxitech.com/it/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
 
 Il braccio leader nero utilizza un alimentatore da 5V 6A, mentre il braccio follower bianco utilizza un alimentatore da 12V 5A.

@@ -6,6 +6,8 @@ version: both
 
 # AmazingHand 灵巧手教程
 
+<ServoSafetyNotice />
+
 AmazingHand 是一款开源、可 3D 打印的仿人灵巧手：4 根手指、8 个自由度，所有驱动器内置在手部，整手约 400 g。目前提供两套硬件方案，机械手结构相同，舵机、驱动板和通信方式不同。
 
 ## 先选版本

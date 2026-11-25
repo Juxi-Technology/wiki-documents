@@ -6,6 +6,8 @@ description: "Tutoriel complet SO-ARM101 et AmazingHand sous LeRobot : configura
 
 # Tutoriel d'utilisation de SO-ARM101 + AmazingHand
 
+<ServoSafetyNotice />
+
 Ce tutoriel couvre l'ensemble du processus de téléopération, de collecte de données et d'entraînement pour reproduire le **bras esclave SO-ARM101 + la main dextre AmazingHand**, basé sur LeRobot (version personnalisée du dépôt officiel).
 
 Le tutoriel est organisé par **phases**. Chaque phase constitue un répertoire indépendant, à l'intérieur duquel la documentation est séparée par système d'exploitation en deux fichiers Windows et Linux. Veuillez choisir le document correspondant à votre système d'exploitation.

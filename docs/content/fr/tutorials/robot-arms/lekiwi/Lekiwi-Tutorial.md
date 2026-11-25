@@ -5,6 +5,8 @@ description: "Guide complet du robot mobile Lekiwi basé sur LeRobot : installat
 
 # Tutoriel d'utilisation du robot mobile Lekiwi
 
+<ServoSafetyNotice />
+
 > **[Acheter en boutique](https://www.juxitech.com/fr/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
 
 Le bras meneur noir utilise un adaptateur d'alimentation 5V 6A, et le bras suiveur blanc utilise un adaptateur d'alimentation 12V 5A.

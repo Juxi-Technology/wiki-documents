@@ -5,6 +5,8 @@ description: "Tutorial de utilização do robô Lekiwi: lista de materiais, guia
 
 # Tutorial de Uso do Robô Móvel Lekiwi
 
+<ServoSafetyNotice />
+
 > **[Comprar na loja](https://www.juxitech.com/products/lekiwi-embodied-intelligence-mobile-robotic-car)**
 
 O braço líder preto utiliza uma fonte de alimentação de 5V 6A e o braço seguidor branco utiliza uma fonte de alimentação de 12V 5A.

@@ -6,6 +6,8 @@ description: "SO-ARM101 + AmazingHand tutorial overview: the full LeRobot workfl
 
 # SO-ARM101 + AmazingHand Tutorial
 
+<ServoSafetyNotice />
+
 This tutorial covers the full workflow of teleoperation, data collection, and training for reproducing the **SO-ARM101 follower arm + AmazingHand dexterous hand**, based on LeRobot (a customized version of the official repository).
 
 The tutorial is organized by **stage**, with each stage in its own directory, split internally by operating system into two documents: Windows and Linux. Choose the document that matches your operating system.

@@ -5,6 +5,8 @@ description: "XLeRobot 양팔 이동 로봇 튜토리얼: 환경 구축, 파일 
 
 # XLeRobot 튜토리얼
 
+<ServoSafetyNotice />
+
 튜토리얼 https://xlerobot.readthedocs.io/zh-cn/latest/software/index.html
 
 ## 튜토리얼 목록

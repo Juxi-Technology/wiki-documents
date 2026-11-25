@@ -6,6 +6,8 @@ description: "Tutorial completo SO-ARM101 e AmazingHand: percorso in 6 fasi, da 
 
 # Tutorial d'uso di SO-ARM101 + AmazingHand
 
+<ServoSafetyNotice />
+
 Questo tutorial è pensato per riprodurre l'intero flusso di teleoperazione, acquisizione dati e addestramento di **SO-ARM101 braccio slave + mano robotica AmazingHand**, basato su LeRobot (versione personalizzata del repository ufficiale).
 
 Il tutorial è organizzato per **fasi**; ogni fase costituisce una directory indipendente e al suo interno è suddiviso per sistema operativo in due documenti: Windows e Linux. Scegli il documento corrispondente in base al tuo sistema operativo.

@@ -5,6 +5,8 @@ description: "Tutorial-Startseite zum SO-ARM101: Was embodied AI und LeRobot sin
 
 # SO-ARM101 Roboterarm-Tutorials
 
+<ServoSafetyNotice />
+
 ![image.png](../../../../../public/images/tutorials/robot-arms/so-arm101/so-arm101-index/d02-03.png)
 
 ## Was ist verkörperte Intelligenz?

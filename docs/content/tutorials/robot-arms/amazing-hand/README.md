@@ -6,6 +6,8 @@ version: both
 
 # AmazingHand Dexterous Hand Tutorials
 
+<ServoSafetyNotice />
+
 AmazingHand is an open-source, 3D-printable humanoid dexterous hand: 4 fingers and 8 degrees of freedom, with every actuator built into the hand and a total weight of about 400 g. Two hardware options are currently available; the hand mechanics are identical, but the servos, driver board and communication differ.
 
 ## Choose a version first

@@ -5,6 +5,8 @@ description: "Lekiwi 使用教程：物料清單、3D 列印、LeRobot 環境安
 
 # Lekiwi 使用教程
 
+<ServoSafetyNotice />
+
 > **[ 淘寶店鋪 ](https://juxitechnology.taobao.com)**
 
 黑色主動臂使用5V6A電源適配器，白色從動臂使用12V5A電源適配器
