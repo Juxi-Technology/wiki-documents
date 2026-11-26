@@ -7,9 +7,13 @@ description: "Su Windows calibrare follower e leader con le porte COM corrette, 
 
 È necessario collegare contemporaneamente il braccio attivo e il braccio passivo
 
+::: warning Avviso di calibrazione
+
 Prima di premere Invio per avviare la calibrazione, portare il braccio robotico in posizione centrale: ogni giunto al centro del proprio intervallo utilizzabile.
 
 Controllare i valori minimo e massimo di ogni giunto. Se un minimo supera 0 e inizia improvvisamente a decrescere da 4095, o un massimo supera 4095 e inizia a crescere da 0, eseguire una calibrazione della posizione centrale con il software PC Feetech, quindi ricalibrare il braccio robotico.
+
+:::
 
 ## Calibrare il braccio passivo Follower (nuovo giunto "wrist\_yaw")
 

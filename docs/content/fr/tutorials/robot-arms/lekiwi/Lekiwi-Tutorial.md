@@ -395,9 +395,13 @@ remote_ip : l'adresse IP du Raspberry Pi
 
 Nous devons maintenant calibrer le bras meneur et le bras suiveur. Les servos des roues omnidirectionnelles n'ont pas besoin d'être calibrés.
 
+::: warning Avertissement de calibration
+
 Avant d'appuyer sur Entrée pour lancer la calibration, placez le bras robotisé en position médiane : chaque articulation au centre de sa plage utilisable.
 
 Surveillez les valeurs minimale et maximale de chaque articulation. Si une valeur minimale dépasse 0 et se met soudain à décroître depuis 4095, ou si une valeur maximale dépasse 4095 et se met à croître depuis 0, effectuez une calibration de position médiane avec le logiciel PC Feetech, puis recalibrez le bras robotisé.
+
+:::
 
 ### Calibration du bras suiveur (monté sur la base du Lekiwi)
 

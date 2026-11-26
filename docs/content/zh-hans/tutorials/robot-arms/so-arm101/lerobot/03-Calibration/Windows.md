@@ -13,9 +13,13 @@ description: "在 Windows 下校准机械臂:同时接上主动臂与从动臂,�
 lerobot-calibrate --robot.type=so101_follower --robot.port=COM6 --robot.id=my_follower_arm
 ```
 
+::: warning 标定提醒
+
 按回车开始校准前，先让机械臂处于中位状态，即所有关节都处于可转动范围的中间位置。
 
 注意看每个关节的最小值和最大值。如果出现最小值越过0突然变成4095递减，或者最大值越过4095变成0递增的情况，请使用飞特上位机进行中位校准，再重新进行标定机械臂。
+
+:::
 
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-03-Calibration-Windows/1.png)
 
@@ -25,7 +29,11 @@ lerobot-calibrate --robot.type=so101_follower --robot.port=COM6 --robot.id=my_fo
 lerobot-calibrate --teleop.type=so101_leader --teleop.port=COM7 --teleop.id=my_leader_arm
 ```
 
+::: warning 标定提醒
+
 按回车开始校准前，先让机械臂处于中位状态，即所有关节都处于可转动范围的中间位置。
+
+:::
 
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-03-Calibration-Windows/2.png)
 

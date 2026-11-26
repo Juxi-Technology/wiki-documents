@@ -30,9 +30,13 @@ In dieser Phase werden drei Geräte kalibriert: Leader-Arm, Follower-Arm und Ama
 
 ## Schritt 1: Leader-Arm kalibrieren
 
+::: warning Kalibrierhinweis
+
 Bevor Sie die Kalibrierung mit Enter starten, bringen Sie den Roboterarm in die Mittelstellung – jedes Gelenk in der Mitte seines nutzbaren Bereichs.
 
 Achten Sie auf Minimal- und Maximalwert jedes Gelenks. Wenn ein Minimalwert über 0 springt und plötzlich von 4095 abwärts läuft oder ein Maximalwert 4095 überschreitet und von 0 aufwärts läuft, führen Sie mit der Feetech-PC-Software eine Mittelstellungskalibrierung durch und kalibrieren Sie den Roboterarm anschließend erneut.
+
+:::
 
 ```Bash
 lerobot-calibrate \

@@ -42,9 +42,13 @@ lerobot-calibrate \
 
 After the calibration command starts, the terminal first prompts for Middle Position. Put the arms in the middle pose — moving jaw up, fixed jaw down — then press Enter. Then move every joint through its maximum and minimum limits.
 
-> Before pressing Enter to start calibration, put the robot arm in its middle position — each joint at the center of its usable range.
->
-> Watch the minimum and maximum values of each joint. If a minimum jumps across 0 and starts decreasing from 4095, or a maximum passes 4095 and starts increasing from 0, perform a middle-position calibration with the Feetech host software, then calibrate the robot arm again.
+::: warning Calibration notice
+
+Before pressing Enter to start calibration, put the robot arm in its middle position — each joint at the center of its usable range.
+
+Watch the minimum and maximum values of each joint. If a minimum jumps across 0 and starts decreasing from 4095, or a maximum passes 4095 and starts increasing from 0, perform a middle-position calibration with the Feetech host software, then calibrate the robot arm again.
+
+:::
 
 The two servos on the camera tower work the same way: turn each through its maximum and minimum limits once.
 

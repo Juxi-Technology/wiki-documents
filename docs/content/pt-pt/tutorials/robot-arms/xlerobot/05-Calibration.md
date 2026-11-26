@@ -42,9 +42,13 @@ lerobot-calibrate \
 
 Após iniciar o comando de calibração, o terminal pede primeiro Middle Position. Coloque os braços na posição central — garra móvel para cima, garra fixa para baixo — e prima Enter. Em seguida, mova cada junta até aos limites máximo e mínimo.
 
-> Antes de premir Enter para iniciar a calibração, coloque o braço robótico na posição central: cada junta no centro da sua faixa utilizável.
->
-> Observe os valores mínimo e máximo de cada junta. Se um mínimo ultrapassar 0 e começar a diminuir a partir de 4095, ou um máximo ultrapassar 4095 e começar a aumentar a partir de 0, faça uma calibração de posição central com o software de PC da Feetech e calibre o braço robótico novamente.
+::: warning Aviso de calibração
+
+Antes de premir Enter para iniciar a calibração, coloque o braço robótico na posição central: cada junta no centro da sua faixa utilizável.
+
+Observe os valores mínimo e máximo de cada junta. Se um mínimo ultrapassar 0 e começar a diminuir a partir de 4095, ou um máximo ultrapassar 4095 e começar a aumentar a partir de 0, faça uma calibração de posição central com o software de PC da Feetech e calibre o braço robótico novamente.
+
+:::
 
 Os dois servos da torre de câmara funcionam da mesma forma: rode cada um uma vez até aos limites máximo e mínimo.
 

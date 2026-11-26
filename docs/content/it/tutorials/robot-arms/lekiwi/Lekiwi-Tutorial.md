@@ -395,9 +395,13 @@ remote_ip: l'indirizzo IP del Raspberry Pi
 
 Ora dobbiamo calibrare il braccio leader e il braccio follower. I servo delle ruote omnidirezionali non necessitano di calibrazione.
 
+::: warning Avviso di calibrazione
+
 Prima di premere Invio per avviare la calibrazione, portare il braccio robotico in posizione centrale: ogni giunto al centro del proprio intervallo utilizzabile.
 
 Controllare i valori minimo e massimo di ogni giunto. Se un minimo supera 0 e inizia improvvisamente a decrescere da 4095, o un massimo supera 4095 e inizia a crescere da 0, eseguire una calibrazione della posizione centrale con il software PC Feetech, quindi ricalibrare il braccio robotico.
+
+:::
 
 ### Calibrazione del braccio follower (montato sulla base del Lekiwi)
 

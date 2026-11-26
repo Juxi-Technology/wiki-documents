@@ -13,9 +13,13 @@ description: "本頁說明如何在 Windows 校準機械臂，包含以 COM 埠�
 lerobot-calibrate --robot.type=so101_follower --robot.port=COM6 --robot.id=my_follower_arm
 ```
 
+::: warning 標定提醒
+
 按 Enter 開始校準前，先讓機械臂處於中位狀態，即所有關節都處於可轉動範圍的中間位置。
 
 注意查看每個關節的最小值和最大值。如果出現最小值越過 0 突然變成 4095 遞減，或者最大值越過 4095 變成 0 遞增的情況，請使用飛特上位機進行中位校準，再重新進行標定機械臂。
+
+:::
 
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-03-Calibration-Windows/1.png)
 
@@ -25,7 +29,11 @@ lerobot-calibrate --robot.type=so101_follower --robot.port=COM6 --robot.id=my_fo
 lerobot-calibrate --teleop.type=so101_leader --teleop.port=COM7 --teleop.id=my_leader_arm
 ```
 
+::: warning 標定提醒
+
 按 Enter 開始校準前，先讓機械臂處於中位狀態，即所有關節都處於可轉動範圍的中間位置。
+
+:::
 
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-03-Calibration-Windows/2.png)
 

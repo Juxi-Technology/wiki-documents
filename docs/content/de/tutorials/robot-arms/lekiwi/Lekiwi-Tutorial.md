@@ -395,9 +395,13 @@ remote_ip: die IP-Adresse des Raspberry Pi
 
 Nun müssen wir den Leader-Arm und den Follower-Arm kalibrieren. Die Servos der Omni-Räder müssen nicht kalibriert werden.
 
+::: warning Kalibrierhinweis
+
 Bevor Sie die Kalibrierung mit Enter starten, bringen Sie den Roboterarm in die Mittelstellung – jedes Gelenk in der Mitte seines nutzbaren Bereichs.
 
 Achten Sie auf Minimal- und Maximalwert jedes Gelenks. Wenn ein Minimalwert über 0 springt und plötzlich von 4095 abwärts läuft oder ein Maximalwert 4095 überschreitet und von 0 aufwärts läuft, führen Sie mit der Feetech-PC-Software eine Mittelstellungskalibrierung durch und kalibrieren Sie den Roboterarm anschließend erneut.
+
+:::
 
 ### Kalibrieren des Follower-Arms (auf der Lekiwi-Basis montiert)
 

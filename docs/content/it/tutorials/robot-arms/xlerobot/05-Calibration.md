@@ -42,9 +42,13 @@ lerobot-calibrate \
 
 Dopo l'avvio del comando di calibrazione, il terminale chiede prima Middle Position. Portare i bracci in posizione centrale — ganascia mobile in alto, ganascia fissa in basso — e premere Invio. Poi muovere ogni giunto fino ai limiti massimo e minimo.
 
-> Prima di premere Invio per avviare la calibrazione, portare il braccio robotico in posizione centrale: ogni giunto al centro del proprio intervallo utilizzabile.
->
-> Controllare i valori minimo e massimo di ogni giunto. Se un minimo supera 0 e inizia improvvisamente a decrescere da 4095, o un massimo supera 4095 e inizia a crescere da 0, eseguire una calibrazione della posizione centrale con il software PC Feetech, quindi ricalibrare il braccio robotico.
+::: warning Avviso di calibrazione
+
+Prima di premere Invio per avviare la calibrazione, portare il braccio robotico in posizione centrale: ogni giunto al centro del proprio intervallo utilizzabile.
+
+Controllare i valori minimo e massimo di ogni giunto. Se un minimo supera 0 e inizia improvvisamente a decrescere da 4095, o un massimo supera 4095 e inizia a crescere da 0, eseguire una calibrazione della posizione centrale con il software PC Feetech, quindi ricalibrare il braccio robotico.
+
+:::
 
 I due servi della torre della telecamera funzionano allo stesso modo: ruotarli una volta fino ai limiti massimo e minimo.
 

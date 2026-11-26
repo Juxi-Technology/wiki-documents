@@ -22,9 +22,13 @@ lerobot-calibrate \
     --robot.id=my_follower_arm
 ```
 
+::: warning Calibration notice
+
 Before pressing Enter to start calibration, put the robot arm in its middle position — each joint at the center of its usable range.
 
 Watch the minimum and maximum values of each joint. If a minimum jumps across 0 and starts decreasing from 4095, or a maximum passes 4095 and starts increasing from 0, perform a middle-position calibration with the Feetech host software, then calibrate the robot arm again.
+
+:::
 
 ![image.png](../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-03-Calibration-Ubuntu/1.png)
 
@@ -37,7 +41,11 @@ lerobot-calibrate \
     --teleop.id=my_leader_arm
 ```
 
+::: warning Calibration notice
+
 Before pressing Enter to start calibration, put the robot arm in its middle position — each joint at the center of its usable range.
+
+:::
 
 ![image.png](../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-03-Calibration-Ubuntu/2.png)
 

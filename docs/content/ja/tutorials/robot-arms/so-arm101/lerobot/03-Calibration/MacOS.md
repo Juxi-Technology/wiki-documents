@@ -28,9 +28,13 @@ lerobot-calibrate \
     --robot.id=my_follower_arm
 ```
 
+::: warning キャリブレーションの注意
+
 Enter キーでキャリブレーションを開始する前に、ロボットアームを中間位置（各関節が可動範囲の中央）に合わせてください。
 
 各関節の最小値と最大値を確認してください。最小値が 0 を越えて突然 4095 から減少する場合、または最大値が 4095 を越えて 0 から増加する場合は、Feetech の上位ソフトで中間位置キャリブレーションを行ってから、ロボットアームのキャリブレーションをやり直してください。
+
+:::
 
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-03-Calibration-MacOS/1.png)
 
@@ -45,7 +49,11 @@ lerobot-calibrate \
     --teleop.id=my_leader_arm
 ```
 
+::: warning キャリブレーションの注意
+
 Enter キーでキャリブレーションを開始する前に、ロボットアームを中間位置（各関節が可動範囲の中央）に合わせてください。
+
+:::
 
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-03-Calibration-MacOS/3.png)
 

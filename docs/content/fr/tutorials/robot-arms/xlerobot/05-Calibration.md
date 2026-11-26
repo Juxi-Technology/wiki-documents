@@ -42,9 +42,13 @@ lerobot-calibrate \
 
 Après le lancement de la commande, le terminal demande d'abord la Middle Position. Placez les bras en position médiane — mâchoire mobile en haut, mâchoire fixe en bas — puis appuyez sur Entrée. Faites ensuite parcourir à chaque articulation ses limites maximale et minimale.
 
-> Avant d'appuyer sur Entrée pour lancer la calibration, placez le bras robotisé en position médiane : chaque articulation au centre de sa plage utilisable.
->
-> Surveillez les valeurs minimale et maximale de chaque articulation. Si une valeur minimale dépasse 0 et se met soudain à décroître depuis 4095, ou si une valeur maximale dépasse 4095 et se met à croître depuis 0, effectuez une calibration de position médiane avec le logiciel PC Feetech, puis recalibrez le bras robotisé.
+::: warning Avertissement de calibration
+
+Avant d'appuyer sur Entrée pour lancer la calibration, placez le bras robotisé en position médiane : chaque articulation au centre de sa plage utilisable.
+
+Surveillez les valeurs minimale et maximale de chaque articulation. Si une valeur minimale dépasse 0 et se met soudain à décroître depuis 4095, ou si une valeur maximale dépasse 4095 et se met à croître depuis 0, effectuez une calibration de position médiane avec le logiciel PC Feetech, puis recalibrez le bras robotisé.
+
+:::
 
 Les deux servos de la tour caméra fonctionnent de la même manière : faites-les parcourir une fois leurs limites maximale et minimale.
 

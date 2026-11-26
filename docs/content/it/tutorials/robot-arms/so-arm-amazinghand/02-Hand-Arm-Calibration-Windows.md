@@ -36,9 +36,13 @@ cd ../lerobot
 
 ## Passo 1: Calibrare il braccio master
 
+::: warning Avviso di calibrazione
+
 Prima di premere Invio per avviare la calibrazione, portare il braccio robotico in posizione centrale: ogni giunto al centro del proprio intervallo utilizzabile.
 
 Controllare i valori minimo e massimo di ogni giunto. Se un minimo supera 0 e inizia improvvisamente a decrescere da 4095, o un massimo supera 4095 e inizia a crescere da 0, eseguire una calibrazione della posizione centrale con il software PC Feetech, quindi ricalibrare il braccio robotico.
+
+:::
 
 ```PowerShell
 lerobot-calibrate --teleop.type=so101_leader --teleop.port=<leader_arm_com> --teleop.id=amazing_hand_leader
