@@ -261,6 +261,7 @@ XLeRobot-Tutorials: Umgebung einrichten, Dateien verteilen, Montage (fertig/Einz
 - [XLeRobot-Dateien verschieben](./xlerobot/02-Move-Xlerobot-Files.md)
 - [Montage (fertiger Bausatz)](./xlerobot/03-Assembly-Assembled-Kit.md)
 - [Montage (Einzelteile)](./xlerobot/04-Assembly-Parts-Kit.md)
+- [Kalibrierung der Roboterarme](./xlerobot/05-Calibration.md)
 - [XLeRobot Docker Tutorial — Jetson AGX Orin Developer Kit](/de/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview)
 - [XLeRobot Docker Tutorial — Jetson Orin Nano Super Developer Kit](/de/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview)
 

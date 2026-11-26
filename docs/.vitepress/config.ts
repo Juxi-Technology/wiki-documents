@@ -572,6 +572,7 @@ const zhCN = {
                 { text: '移动 XLeRobot 文件', link: '/zh-hans/tutorials/robot-arms/xlerobot/02-Move-Xlerobot-Files' },
                 { text: '成品组装教程', link: '/zh-hans/tutorials/robot-arms/xlerobot/03-Assembly-Assembled-Kit' },
                 { text: '散件组装教程', link: '/zh-hans/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit' },
+                { text: '标定机械臂', link: '/zh-hans/tutorials/robot-arms/xlerobot/05-Calibration' },
               ],
             },
             {
@@ -1436,6 +1437,7 @@ const en = {
                 { text: 'Move XLeRobot Files', link: '/tutorials/robot-arms/xlerobot/02-Move-Xlerobot-Files' },
                 { text: 'Assembled-Kit Assembly', link: '/tutorials/robot-arms/xlerobot/03-Assembly-Assembled-Kit' },
                 { text: 'Parts-Kit Assembly', link: '/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit' },
+                { text: 'Calibrating the Robot Arms', link: '/tutorials/robot-arms/xlerobot/05-Calibration' },
               ],
             },
             {
@@ -2300,6 +2302,7 @@ const zhHK = {
                 { text: '移動 XLeRobot 文件', link: '/zh-hant/tutorials/robot-arms/xlerobot/02-Move-Xlerobot-Files' },
                 { text: '成品組裝教程', link: '/zh-hant/tutorials/robot-arms/xlerobot/03-Assembly-Assembled-Kit' },
                 { text: '散件組裝教程', link: '/zh-hant/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit' },
+                { text: '標定機械臂', link: '/zh-hant/tutorials/robot-arms/xlerobot/05-Calibration' },
               ],
             },
             {
@@ -3154,6 +3157,7 @@ export default defineConfig({
                 { text: 'XLeRobot ファイルの移動', link: '/ja/tutorials/robot-arms/xlerobot/02-Move-Xlerobot-Files' },
                 { text: '完成品組み立て', link: '/ja/tutorials/robot-arms/xlerobot/03-Assembly-Assembled-Kit' },
                 { text: 'パーツキット組み立て', link: '/ja/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit' },
+                { text: 'ロボットアームのキャリブレーション', link: '/ja/tutorials/robot-arms/xlerobot/05-Calibration' },
               ],
             },
             {
@@ -3913,6 +3917,7 @@ export default defineConfig({
                 { text: 'XLeRobot 파일 이동', link: '/ko/tutorials/robot-arms/xlerobot/02-Move-Xlerobot-Files' },
                 { text: '완제품 조립', link: '/ko/tutorials/robot-arms/xlerobot/03-Assembly-Assembled-Kit' },
                 { text: '부품 키트 조립', link: '/ko/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit' },
+                { text: '로봇 암 캘리브레이션', link: '/ko/tutorials/robot-arms/xlerobot/05-Calibration' },
               ],
             },
             {
@@ -4672,6 +4677,7 @@ export default defineConfig({
                 { text: 'XLeRobot-Dateien verschieben', link: '/de/tutorials/robot-arms/xlerobot/02-Move-Xlerobot-Files' },
                 { text: 'Montage (fertiger Bausatz)', link: '/de/tutorials/robot-arms/xlerobot/03-Assembly-Assembled-Kit' },
                 { text: 'Montage (Einzelteile)', link: '/de/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit' },
+                { text: 'Kalibrierung der Roboterarme', link: '/de/tutorials/robot-arms/xlerobot/05-Calibration' },
               ],
             },
             {
@@ -5431,6 +5437,7 @@ export default defineConfig({
                 { text: 'Déplacer les fichiers XLeRobot', link: '/fr/tutorials/robot-arms/xlerobot/02-Move-Xlerobot-Files' },
                 { text: 'Assemblage du kit monté', link: '/fr/tutorials/robot-arms/xlerobot/03-Assembly-Assembled-Kit' },
                 { text: 'Assemblage du kit en pièces', link: '/fr/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit' },
+                { text: 'Calibration des bras robotisés', link: '/fr/tutorials/robot-arms/xlerobot/05-Calibration' },
               ],
             },
             {
@@ -6190,6 +6197,7 @@ export default defineConfig({
                 { text: 'Mover archivos de XLeRobot', link: '/es/tutorials/robot-arms/xlerobot/02-Move-Xlerobot-Files' },
                 { text: 'Montaje del kit ensamblado', link: '/es/tutorials/robot-arms/xlerobot/03-Assembly-Assembled-Kit' },
                 { text: 'Montaje del kit de piezas', link: '/es/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit' },
+                { text: 'Calibración de los brazos robóticos', link: '/es/tutorials/robot-arms/xlerobot/05-Calibration' },
               ],
             },
             {
@@ -6949,6 +6957,7 @@ export default defineConfig({
                 { text: 'Spostare i file XLeRobot', link: '/it/tutorials/robot-arms/xlerobot/02-Move-Xlerobot-Files' },
                 { text: 'Montaggio kit assemblato', link: '/it/tutorials/robot-arms/xlerobot/03-Assembly-Assembled-Kit' },
                 { text: 'Montaggio kit a pezzi', link: '/it/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit' },
+                { text: 'Calibrazione dei bracci robotici', link: '/it/tutorials/robot-arms/xlerobot/05-Calibration' },
               ],
             },
             {
@@ -8152,6 +8161,7 @@ export default defineConfig({
                   { text: 'Mover arquivos do XLeRobot', link: '/pt-br/tutorials/robot-arms/xlerobot/02-Move-Xlerobot-Files' },
                   { text: 'Montagem do kit montado', link: '/pt-br/tutorials/robot-arms/xlerobot/03-Assembly-Assembled-Kit' },
                   { text: 'Montagem do kit em peças', link: '/pt-br/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit' },
+                  { text: 'Calibração dos braços robóticos', link: '/pt-br/tutorials/robot-arms/xlerobot/05-Calibration' },
                 ],
               },
               {
@@ -9002,6 +9012,7 @@ export default defineConfig({
                   { text: 'Mover ficheiros do XLeRobot', link: '/pt-pt/tutorials/robot-arms/xlerobot/02-Move-Xlerobot-Files' },
                   { text: 'Montagem do kit montado', link: '/pt-pt/tutorials/robot-arms/xlerobot/03-Assembly-Assembled-Kit' },
                   { text: 'Montagem do kit em peças', link: '/pt-pt/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit' },
+                  { text: 'Calibração dos braços robóticos', link: '/pt-pt/tutorials/robot-arms/xlerobot/05-Calibration' },
                 ],
               },
               {

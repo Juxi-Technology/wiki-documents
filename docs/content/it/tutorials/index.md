@@ -245,6 +245,7 @@ Benvenuto nella pagina dei tutorial! Qui puoi trovare tutti i tutorial d'uso dei
     - [Spostare i file XLeRobot](/it/tutorials/robot-arms/xlerobot/02-Move-Xlerobot-Files)
     - [Montaggio kit assemblato](/it/tutorials/robot-arms/xlerobot/03-Assembly-Assembled-Kit)
     - [Montaggio kit a pezzi](/it/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit)
+    - [Calibrazione dei bracci robotici](/it/tutorials/robot-arms/xlerobot/05-Calibration)
   - **Panoramica del tutorial della mano robotica AmazingHand**
     - [Indice del tutorial (incl. URL precedenti)](/it/tutorials/robot-arms/amazing-hand/index.md)
     - [Panoramica del tutorial della mano robotica AmazingHand](/it/tutorials/robot-arms/amazing-hand/README)

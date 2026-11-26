@@ -245,6 +245,7 @@ Willkommen auf der Tutorials-Seite! Hier finden Sie alle Tutorials zur Produktnu
     - [XLeRobot-Dateien verschieben](/de/tutorials/robot-arms/xlerobot/02-Move-Xlerobot-Files)
     - [Montage (fertiger Bausatz)](/de/tutorials/robot-arms/xlerobot/03-Assembly-Assembled-Kit)
     - [Montage (Einzelteile)](/de/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit)
+    - [Kalibrierung der Roboterarme](/de/tutorials/robot-arms/xlerobot/05-Calibration)
   - **AmazingHand-Dexterhand-Tutorial – Übersicht**
     - [Tutorial-Index (inkl. alter URLs)](/de/tutorials/robot-arms/amazing-hand/index.md)
     - [AmazingHand-Dexterhand-Tutorial – Übersicht](/de/tutorials/robot-arms/amazing-hand/README)

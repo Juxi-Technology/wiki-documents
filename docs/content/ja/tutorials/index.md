@@ -245,6 +245,7 @@ description: "Juxi Technology Wiki のチュートリアル一覧。ロボット
     - [XLeRobot ファイルの移動](/ja/tutorials/robot-arms/xlerobot/02-Move-Xlerobot-Files)
     - [完成品組み立て](/ja/tutorials/robot-arms/xlerobot/03-Assembly-Assembled-Kit)
     - [パーツキット組み立て](/ja/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit)
+    - [ロボットアームのキャリブレーション](/ja/tutorials/robot-arms/xlerobot/05-Calibration)
   - **AmazingHand 多指ハンドチュートリアル総覧**
     - [チュートリアル索引（旧URL含む）](/ja/tutorials/robot-arms/amazing-hand/index.md)
     - [AmazingHand 多指ハンドチュートリアル総覧](/ja/tutorials/robot-arms/amazing-hand/README)

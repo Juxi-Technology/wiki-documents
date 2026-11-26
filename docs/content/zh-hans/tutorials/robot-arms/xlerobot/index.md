@@ -17,6 +17,7 @@ description: "XLeRobot 双臂移动机器人教程:环境搭建(LeRobot + conda 
 - [移动 XLeRobot 文件](./02-Move-Xlerobot-Files.md)
 - [成品组装教程](./03-Assembly-Assembled-Kit.md)
 - [散件组装教程](./04-Assembly-Parts-Kit.md)
+- [标定机械臂](./05-Calibration.md)
 
 <RelatedProducts slugs="xlerobot" />
 

@@ -17,6 +17,7 @@ Tutorial https://xlerobot.readthedocs.io/zh-cn/latest/software/index.html
 - [Spostare i file XLeRobot](./02-Move-Xlerobot-Files.md)
 - [Montaggio kit assemblato](./03-Assembly-Assembled-Kit.md)
 - [Montaggio kit a pezzi](./04-Assembly-Parts-Kit.md)
+- [Calibrazione dei bracci robotici](./05-Calibration.md)
 
 <RelatedProducts slugs="xlerobot" />
 

@@ -245,6 +245,7 @@ Bienvenue sur la page Tutoriels ! Vous y trouverez tous les tutoriels d'utilisat
     - [Déplacer les fichiers XLeRobot](/fr/tutorials/robot-arms/xlerobot/02-Move-Xlerobot-Files)
     - [Assemblage du kit monté](/fr/tutorials/robot-arms/xlerobot/03-Assembly-Assembled-Kit)
     - [Assemblage du kit en pièces](/fr/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit)
+    - [Calibration des bras robotisés](/fr/tutorials/robot-arms/xlerobot/05-Calibration)
   - **Vue d'ensemble du tutoriel AmazingHand**
     - [Index du tutoriel (y compris anciennes URL)](/fr/tutorials/robot-arms/amazing-hand/index.md)
     - [Vue d'ensemble du tutoriel AmazingHand](/fr/tutorials/robot-arms/amazing-hand/README)

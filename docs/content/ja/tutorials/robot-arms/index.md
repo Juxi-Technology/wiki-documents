@@ -261,6 +261,7 @@ XLeRobot 双腕移動ロボットのチュートリアル:環境構築、ファ�
 - [XLeRobot ファイルの移動](./xlerobot/02-Move-Xlerobot-Files.md)
 - [完成品組み立て](./xlerobot/03-Assembly-Assembled-Kit.md)
 - [パーツキット組み立て](./xlerobot/04-Assembly-Parts-Kit.md)
+- [ロボットアームのキャリブレーション](./xlerobot/05-Calibration.md)
 - [XLeRobot Docker チュートリアル — Jetson AGX Orin 開発キット](/ja/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview)
 - [XLeRobot Docker チュートリアル — Jetson Orin Nano Super 開発キット](/ja/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview)
 

@@ -262,6 +262,7 @@ Tutoriels XLeRobot : configuration, déploiement des fichiers, assemblage (kit m
 - [Déplacer les fichiers XLeRobot](./xlerobot/02-Move-Xlerobot-Files.md)
 - [Assemblage du kit monté](./xlerobot/03-Assembly-Assembled-Kit.md)
 - [Assemblage du kit en pièces](./xlerobot/04-Assembly-Parts-Kit.md)
+- [Calibration des bras robotisés](./xlerobot/05-Calibration.md)
 - [Tutoriel XLeRobot Docker — Kit de développement Jetson AGX Orin](/fr/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview)
 - [Tutoriel XLeRobot Docker — Kit de développement Jetson Orin Nano Super](/fr/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview)
 

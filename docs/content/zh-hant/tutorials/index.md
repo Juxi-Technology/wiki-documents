@@ -249,6 +249,7 @@ head:
     - [移動 XLeRobot 文件](/zh-hant/tutorials/robot-arms/xlerobot/02-Move-Xlerobot-Files)
     - [成品組裝教程](/zh-hant/tutorials/robot-arms/xlerobot/03-Assembly-Assembled-Kit)
     - [散件組裝教程](/zh-hant/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit)
+    - [標定機械臂](/zh-hant/tutorials/robot-arms/xlerobot/05-Calibration)
   - **AmazingHand 靈巧手教學總覽**
     - [教學索引（含舊版位址）](/zh-hant/tutorials/robot-arms/amazing-hand/index.md)
     - [AmazingHand 靈巧手教學總覽](/zh-hant/tutorials/robot-arms/amazing-hand/README)

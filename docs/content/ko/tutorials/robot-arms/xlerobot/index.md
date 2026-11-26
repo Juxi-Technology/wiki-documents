@@ -17,6 +17,7 @@ description: "XLeRobot 양팔 이동 로봇 튜토리얼: 환경 구축, 파일 
 - [XLeRobot 파일 이동](./02-Move-Xlerobot-Files.md)
 - [완제품 조립](./03-Assembly-Assembled-Kit.md)
 - [부품 키트 조립](./04-Assembly-Parts-Kit.md)
+- [로봇 암 캘리브레이션](./05-Calibration.md)
 
 <RelatedProducts slugs="xlerobot" />
 

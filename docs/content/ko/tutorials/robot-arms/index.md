@@ -261,6 +261,7 @@ XLeRobot 양팔 이동 로봇 튜토리얼: 환경 구축, 파일 배치, 완제
 - [XLeRobot 파일 이동](./xlerobot/02-Move-Xlerobot-Files.md)
 - [완제품 조립](./xlerobot/03-Assembly-Assembled-Kit.md)
 - [부품 키트 조립](./xlerobot/04-Assembly-Parts-Kit.md)
+- [로봇 암 캘리브레이션](./xlerobot/05-Calibration.md)
 - [XLeRobot Docker 튜토리얼 — Jetson AGX Orin](/ko/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview)
 - [XLeRobot Docker 튜토리얼 — Jetson Orin Nano](/ko/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview)
 

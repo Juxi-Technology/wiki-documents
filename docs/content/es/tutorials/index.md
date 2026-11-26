@@ -249,6 +249,7 @@ head:
     - [Mover archivos de XLeRobot](/es/tutorials/robot-arms/xlerobot/02-Move-Xlerobot-Files)
     - [Montaje del kit ensamblado](/es/tutorials/robot-arms/xlerobot/03-Assembly-Assembled-Kit)
     - [Montaje del kit de piezas](/es/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit)
+    - [Calibración de los brazos robóticos](/es/tutorials/robot-arms/xlerobot/05-Calibration)
   - **Descripción general de los tutoriales de AmazingHand**
     - [Índice del tutorial (incl. URL antiguas)](/es/tutorials/robot-arms/amazing-hand/index.md)
     - [Descripción general de los tutoriales de AmazingHand](/es/tutorials/robot-arms/amazing-hand/README)

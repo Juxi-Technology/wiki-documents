@@ -261,6 +261,7 @@ XLeRobot 雙臂移動機器人教程:環境搭建(LeRobot + conda 鏡像)、文�
 - [移動 XLeRobot 文件](./xlerobot/02-Move-Xlerobot-Files.md)
 - [成品組裝教程](./xlerobot/03-Assembly-Assembled-Kit.md)
 - [散件組裝教程](./xlerobot/04-Assembly-Parts-Kit.md)
+- [標定機械臂](./xlerobot/05-Calibration.md)
 - [XLeRobot Docker 教程 — Jetson AGX Orin 開發套件](/zh-hant/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview)
 - [XLeRobot Docker 教程 — Jetson Orin Nano 開發套件](/zh-hant/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview)
 

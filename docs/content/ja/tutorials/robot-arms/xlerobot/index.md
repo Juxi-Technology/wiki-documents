@@ -17,6 +17,7 @@ description: "XLeRobot 双腕移動ロボットのチュートリアル:環境�
 - [XLeRobot ファイルの移動](./02-Move-Xlerobot-Files.md)
 - [完成品組み立て](./03-Assembly-Assembled-Kit.md)
 - [パーツキット組み立て](./04-Assembly-Parts-Kit.md)
+- [ロボットアームのキャリブレーション](./05-Calibration.md)
 
 <RelatedProducts slugs="xlerobot" />
 

@@ -261,6 +261,7 @@ XLeRobot dual-arm mobile robot tutorials: environment setup, file deployment, an
 - [Move XLeRobot Files](./xlerobot/02-Move-Xlerobot-Files.md)
 - [Assembled-Kit Assembly](./xlerobot/03-Assembly-Assembled-Kit.md)
 - [Parts-Kit Assembly](./xlerobot/04-Assembly-Parts-Kit.md)
+- [Calibrating the Robot Arms](./xlerobot/05-Calibration.md)
 - [XLeRobot Docker Tutorial — Jetson AGX Orin](/tutorials/jetson-agx-orin/xlerobot-docker/deployment/01-Overview)
 - [XLeRobot Docker Tutorial — Jetson Orin Nano](/tutorials/jetson-orin-nano/xlerobot-docker/deployment/01-Overview)
 

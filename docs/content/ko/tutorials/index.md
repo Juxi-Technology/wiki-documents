@@ -245,6 +245,7 @@ description: "Juxi Technology 튜토리얼 — 로봇 암과 액세서리, 센�
     - [XLeRobot 파일 이동](/ko/tutorials/robot-arms/xlerobot/02-Move-Xlerobot-Files)
     - [완제품 조립](/ko/tutorials/robot-arms/xlerobot/03-Assembly-Assembled-Kit)
     - [부품 키트 조립](/ko/tutorials/robot-arms/xlerobot/04-Assembly-Parts-Kit)
+    - [로봇 암 캘리브레이션](/ko/tutorials/robot-arms/xlerobot/05-Calibration)
   - **AmazingHand 로봇 손 튜토리얼 개요**
     - [튜토리얼 색인(이전 URL 포함)](/ko/tutorials/robot-arms/amazing-hand/index.md)
     - [AmazingHand 로봇 손 튜토리얼 개요](/ko/tutorials/robot-arms/amazing-hand/README)
