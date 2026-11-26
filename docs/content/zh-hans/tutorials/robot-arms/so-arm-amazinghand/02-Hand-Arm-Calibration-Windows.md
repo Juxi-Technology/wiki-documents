@@ -36,6 +36,10 @@ cd ../lerobot
 
 ## 步骤 1：标定主动臂
 
+按回车开始校准前，先让机械臂处于中位状态，即所有关节都处于可转动范围的中间位置。
+
+注意看每个关节的最小值和最大值。如果出现最小值越过0突然变成4095递减，或者最大值越过4095变成0递增的情况，请使用飞特上位机进行中位校准，再重新进行标定机械臂。
+
 ```PowerShell
 lerobot-calibrate --teleop.type=so101_leader --teleop.port=<主动臂COM> --teleop.id=amazing_hand_leader
 ```

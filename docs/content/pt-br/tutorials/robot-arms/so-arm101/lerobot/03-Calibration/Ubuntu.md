@@ -22,6 +22,10 @@ lerobot-calibrate \
     --robot.id=my_follower_arm
 ```
 
+Antes de pressionar Enter para iniciar a calibração, coloque o braço robótico na posição central: cada junta no centro da sua faixa utilizável.
+
+Observe os valores mínimo e máximo de cada junta. Se um mínimo ultrapassar 0 e começar a diminuir a partir de 4095, ou um máximo ultrapassar 4095 e começar a aumentar a partir de 0, faça uma calibração de posição central com o software de PC da Feetech e calibre o braço robótico novamente.
+
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-03-Calibration-Ubuntu/1.png)
 
 ## Calibrar o braço líder (Leader)
@@ -32,6 +36,8 @@ lerobot-calibrate \
     --teleop.port=/dev/ttyACM1 \
     --teleop.id=my_leader_arm
 ```
+
+Antes de pressionar Enter para iniciar a calibração, coloque o braço robótico na posição central: cada junta no centro da sua faixa utilizável.
 
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-03-Calibration-Ubuntu/2.png)
 

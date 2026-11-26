@@ -395,6 +395,10 @@ remote_ip: la dirección IP de la Raspberry Pi
 
 Ahora debemos calibrar el brazo líder y el brazo seguidor. Los servos de las ruedas omnidireccionales no necesitan calibración.
 
+Antes de pulsar Enter para iniciar la calibración, coloque el brazo robótico en la posición media: cada articulación en el centro de su rango utilizable.
+
+Observe los valores mínimo y máximo de cada articulación. Si un mínimo cruza 0 y empieza a decrecer desde 4095, o un máximo supera 4095 y empieza a crecer desde 0, realice una calibración de posición media con el software de PC de Feetech y vuelva a calibrar el brazo robótico.
+
 ### Calibración del brazo seguidor (montado en la base del Lekiwi)
 
 Ejecute el siguiente comando en su ordenador para calibrar el brazo líder. Nota: las imágenes que se muestran aquí son ejemplos para el modelo SO101.

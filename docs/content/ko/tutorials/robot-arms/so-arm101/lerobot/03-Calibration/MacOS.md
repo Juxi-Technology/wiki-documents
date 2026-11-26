@@ -28,6 +28,10 @@ lerobot-calibrate \
     --robot.id=my_follower_arm
 ```
 
+Enter 키로 캘리브레이션을 시작하기 전에 로봇 암을 중간 위치(모든 관절이 가동 범위의 중앙)에 두십시오.
+
+각 관절의 최솟값과 최댓값을 확인하십시오. 최솟값이 0을 넘어 갑자기 4095에서 감소하거나, 최댓값이 4095를 넘어 0에서 증가하는 경우 Feetech 상위 소프트웨어로 중간 위치 캘리브레이션을 수행한 뒤 로봇 암 캘리브레이션을 다시 진행하십시오.
+
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-03-Calibration-MacOS/1.png)
 
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-03-Calibration-MacOS/2.png)
@@ -40,6 +44,8 @@ lerobot-calibrate \
     --teleop.port=/dev/tty.usbmodem5AAF2194741 \
     --teleop.id=my_leader_arm
 ```
+
+Enter 키로 캘리브레이션을 시작하기 전에 로봇 암을 중간 위치(모든 관절이 가동 범위의 중앙)에 두십시오.
 
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-03-Calibration-MacOS/3.png)
 

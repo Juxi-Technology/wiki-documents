@@ -13,6 +13,10 @@ description: "Su Windows calibrare follower e leader con le porte COM corrette, 
 lerobot-calibrate --robot.type=so101_follower --robot.port=COM6 --robot.id=my_follower_arm
 ```
 
+Prima di premere Invio per avviare la calibrazione, portare il braccio robotico in posizione centrale: ogni giunto al centro del proprio intervallo utilizzabile.
+
+Controllare i valori minimo e massimo di ogni giunto. Se un minimo supera 0 e inizia improvvisamente a decrescere da 4095, o un massimo supera 4095 e inizia a crescere da 0, eseguire una calibrazione della posizione centrale con il software PC Feetech, quindi ricalibrare il braccio robotico.
+
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-03-Calibration-Windows/1.png)
 
 ## Calibrare il braccio attivo Leader
@@ -20,6 +24,8 @@ lerobot-calibrate --robot.type=so101_follower --robot.port=COM6 --robot.id=my_fo
 ```Shell
 lerobot-calibrate --teleop.type=so101_leader --teleop.port=COM7 --teleop.id=my_leader_arm
 ```
+
+Prima di premere Invio per avviare la calibrazione, portare il braccio robotico in posizione centrale: ogni giunto al centro del proprio intervallo utilizzabile.
 
 ![image.png](../../../../../../../public/images/tutorials/robot-arms/so-arm101/lerobot-03-Calibration-Windows/2.png)
 

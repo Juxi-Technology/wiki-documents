@@ -36,6 +36,10 @@ cd ../lerobot
 
 ## Step 1: Calibrate the Leader Arm
 
+Before pressing Enter to start calibration, put the robot arm in its middle position — each joint at the center of its usable range.
+
+Watch the minimum and maximum values of each joint. If a minimum jumps across 0 and starts decreasing from 4095, or a maximum passes 4095 and starts increasing from 0, perform a middle-position calibration with the Feetech host software, then calibrate the robot arm again.
+
 ```PowerShell
 lerobot-calibrate --teleop.type=so101_leader --teleop.port=<leader_arm_com> --teleop.id=amazing_hand_leader
 ```

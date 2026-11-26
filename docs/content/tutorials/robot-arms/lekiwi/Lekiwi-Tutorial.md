@@ -395,6 +395,10 @@ remote_ip: the Raspberry Pi's IP address
 
 Now we need to calibrate the leader arm and the follower arm. The omni-wheel servos do not need calibration.
 
+Before pressing Enter to start calibration, put the robot arm in its middle position — each joint at the center of its usable range.
+
+Watch the minimum and maximum values of each joint. If a minimum jumps across 0 and starts decreasing from 4095, or a maximum passes 4095 and starts increasing from 0, perform a middle-position calibration with the Feetech host software, then calibrate the robot arm again.
+
 ### Calibrating the follower arm (mounted on the Lekiwi base)
 
 Run the following command on your computer to calibrate the leader arm. Note: the images shown here are examples for the SO101 model.

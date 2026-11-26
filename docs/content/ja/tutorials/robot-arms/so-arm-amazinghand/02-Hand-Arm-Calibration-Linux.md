@@ -30,6 +30,10 @@ description: "SO-ARM101 と AmazingHand のキャリブレーション(Linux 版
 
 ## ステップ 1：リーダーアームのキャリブレーション
 
+Enter キーでキャリブレーションを開始する前に、ロボットアームを中間位置（各関節が可動範囲の中央）に合わせてください。
+
+各関節の最小値と最大値を確認してください。最小値が 0 を越えて突然 4095 から減少する場合、または最大値が 4095 を越えて 0 から増加する場合は、Feetech の上位ソフトで中間位置キャリブレーションを行ってから、ロボットアームのキャリブレーションをやり直してください。
+
 ```Bash
 lerobot-calibrate \
   --teleop.type=so101_leader --teleop.port=<leader_arm_port> --teleop.id=amazing_hand_leader

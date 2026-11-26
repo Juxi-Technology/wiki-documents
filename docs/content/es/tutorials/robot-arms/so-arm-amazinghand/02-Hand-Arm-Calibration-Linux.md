@@ -30,6 +30,10 @@ En esta fase se calibran los tres dispositivos: el brazo maestro, el brazo escla
 
 ## Paso 1: Calibrar el brazo maestro
 
+Antes de pulsar Enter para iniciar la calibración, coloque el brazo robótico en la posición media: cada articulación en el centro de su rango utilizable.
+
+Observe los valores mínimo y máximo de cada articulación. Si un mínimo cruza 0 y empieza a decrecer desde 4095, o un máximo supera 4095 y empieza a crecer desde 0, realice una calibración de posición media con el software de PC de Feetech y vuelva a calibrar el brazo robótico.
+
 ```Bash
 lerobot-calibrate \
   --teleop.type=so101_leader --teleop.port=<leader_arm_port> --teleop.id=amazing_hand_leader

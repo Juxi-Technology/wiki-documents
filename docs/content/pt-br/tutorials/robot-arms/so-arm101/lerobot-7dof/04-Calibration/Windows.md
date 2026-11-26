@@ -7,6 +7,10 @@ description: "No Windows, calibre os braços líder e seguidor pelas portas COM,
 
 É necessário conectar ao mesmo tempo o braço líder e o braço seguidor
 
+Antes de pressionar Enter para iniciar a calibração, coloque o braço robótico na posição central: cada junta no centro da sua faixa utilizável.
+
+Observe os valores mínimo e máximo de cada junta. Se um mínimo ultrapassar 0 e começar a diminuir a partir de 4095, ou um máximo ultrapassar 4095 e começar a aumentar a partir de 0, faça uma calibração de posição central com o software de PC da Feetech e calibre o braço robótico novamente.
+
 ## Calibrar o braço seguidor Follower (nova articulação "wrist\_yaw")
 
 ```Shell

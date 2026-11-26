@@ -7,6 +7,10 @@ description: "Calibra ambos brazos en Windows con la herramienta de LeRobot, con
 
 Es necesario conectar al mismo tiempo el brazo líder y el brazo seguidor
 
+Antes de pulsar Enter para iniciar la calibración, coloque el brazo robótico en la posición media: cada articulación en el centro de su rango utilizable.
+
+Observe los valores mínimo y máximo de cada articulación. Si un mínimo cruza 0 y empieza a decrecer desde 4095, o un máximo supera 4095 y empieza a crecer desde 0, realice una calibración de posición media con el software de PC de Feetech y vuelva a calibrar el brazo robótico.
+
 ## Calibrar el brazo seguidor Follower (con la nueva articulación "wrist\_yaw")
 
 ```Shell
